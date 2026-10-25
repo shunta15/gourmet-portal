@@ -1,0 +1,141 @@
+{
+  "key": "tri-activity-175",
+  "headline": "静岡県熱海市上多賀にある、SUP(スタンドアップパドルボード)のツアーを行う店。南熱海の長浜海水浴場を出発点に、完全貸切のツアーを行っている。",
+  "lede": "熱海市にある「海の音色」です。SUP(スタンドアップパドルボード)に乗って南熱海の海をめぐるツアーを、完全貸切で行っています。出発場所は長浜海水浴場です。",
+  "sections": [
+    {
+      "heading": "ツアーの内容",
+      "body": "SUP(スタンドアップパドルボード)に乗って、南熱海の海をめぐるツアーです。ツアーは完全貸切で行われ、ほかの参加者と一緒になることはありません。インストラクターが初心者から経験者までサポートし、初心者の参加が9割以上を占めています。ライフジャケットの着用率は100%で、写真・動画の撮影サービスもあります。扱っているのは、初心者向けSUP、ドッグSUP、貸切SUPツアーです。"
+    },
+    {
+      "heading": "出発場所とアクセス",
+      "body": "ツアーの出発場所は長浜海水浴場です。住所は静岡県熱海市上多賀203-6で、JR熱海駅から車で約15分の立地にあります。"
+    },
+    {
+      "heading": "参加できる人",
+      "body": "9歳以下の子どもは、大人と一緒にタンデム(2人乗り)で参加します。海に慣れている犬も、タンデムで一緒に参加できます。愛犬を連れてのドッグSUPにも対応しています。企業の社員旅行やチームビルディング研修など、団体での利用にも対応しています。"
+    }
+  ],
+  "menus": [
+    {
+      "name": "初心者向けSUP"
+    },
+    {
+      "name": "ドッグSUP"
+    },
+    {
+      "name": "貸切SUPツアー"
+    }
+  ],
+  "tags": [
+    {
+      "tag": "子連れ",
+      "factIndex": 8
+    },
+    {
+      "tag": "初心者歓迎",
+      "factIndex": 12
+    }
+  ],
+  "facts": [
+    {
+      "claim": "業種の表示はツアー業者",
+      "source": "https://maps.google.com/?cid=5280472783725508324",
+      "quote": "ツアー業者",
+      "checkedAt": "2026-10-25"
+    },
+    {
+      "claim": "営業時間は月曜から日曜まで9時から17時",
+      "source": "https://maps.google.com/?cid=5280472783725508324",
+      "quote": "09:00–17:00",
+      "checkedAt": "2026-10-25"
+    },
+    {
+      "claim": "住所は静岡県熱海市上多賀203-6",
+      "source": "https://uminoneiro.jimdofree.com/",
+      "quote": "熱海市上多賀",
+      "checkedAt": "2026-10-25"
+    },
+    {
+      "claim": "ツアーは長浜海水浴場から出発する",
+      "source": "https://uminoneiro.jimdofree.com/",
+      "quote": "長浜海水浴場",
+      "checkedAt": "2026-10-25"
+    },
+    {
+      "claim": "ツアーは完全貸切で行われる",
+      "source": "https://uminoneiro.jimdofree.com/",
+      "quote": "完全貸切だから安心",
+      "checkedAt": "2026-10-25"
+    },
+    {
+      "claim": "初心者の参加が9割以上を占める",
+      "source": "https://uminoneiro.jimdofree.com/",
+      "quote": "初心者率90%以上",
+      "checkedAt": "2026-10-25"
+    },
+    {
+      "claim": "愛犬を連れてのドッグSUPに対応する",
+      "source": "https://uminoneiro.jimdofree.com/",
+      "quote": "愛犬参加OK",
+      "checkedAt": "2026-10-25"
+    },
+    {
+      "claim": "JR熱海駅から車で約15分の立地にある",
+      "source": "https://www.atami-biz.jp/activity/127/",
+      "quote": "JR熱海駅から車で約15分",
+      "checkedAt": "2026-10-25"
+    },
+    {
+      "claim": "9歳以下の子どもは大人とタンデムで参加する",
+      "source": "https://www.atami-biz.jp/activity/127/",
+      "quote": "9歳以下のお子様は",
+      "checkedAt": "2026-10-25"
+    },
+    {
+      "claim": "海に慣れている犬はタンデムで参加できる",
+      "source": "https://www.atami-biz.jp/activity/127/",
+      "quote": "海に慣れているワンちゃん",
+      "checkedAt": "2026-10-25"
+    },
+    {
+      "claim": "企業の社員旅行やチームビルディング研修に対応する",
+      "source": "https://www.atami-biz.jp/activity/127/",
+      "quote": "企業の社員旅行やチームビルディング研修",
+      "checkedAt": "2026-10-25"
+    },
+    {
+      "claim": "写真・動画撮影のサービスがある",
+      "source": "https://www.atami-biz.jp/activity/127/",
+      "quote": "写真・動画撮影サービス",
+      "checkedAt": "2026-10-25"
+    },
+    {
+      "claim": "初心者から経験者までインストラクターがサポートする",
+      "source": "https://www.atami-biz.jp/activity/127/",
+      "quote": "インストラクターが丁寧にサポート",
+      "checkedAt": "2026-10-25"
+    },
+    {
+      "claim": "初心者向けSUP、ドッグSUP、貸切SUPツアーを扱う",
+      "source": "https://uminoneiro.jimdofree.com/",
+      "quote": "初心者向けSUP、ドッグSUP、貸切SUPツアー",
+      "checkedAt": "2026-10-25"
+    }
+  ],
+  "sources": [
+    {
+      "label": "公式サイト",
+      "url": "https://uminoneiro.jimdofree.com/"
+    },
+    {
+      "label": "地域情報サイト",
+      "url": "https://www.atami-biz.jp/activity/127/"
+    },
+    {
+      "label": "Google マップ",
+      "url": "https://maps.google.com/?cid=5280472783725508324"
+    }
+  ],
+  "notes": "automation/v2/write.mjs が 2026-10-25 に claude -p --model sonnet で作成。事実の裏取り: 14/15 件(quote が出どころにあるもの)。裏取りに通らなかった facts は載せていない。"
+}

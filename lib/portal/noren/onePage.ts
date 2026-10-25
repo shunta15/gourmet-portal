@@ -419,6 +419,31 @@ export const ONE_PAGE_SHOP_OF_FEATURE: Readonly<Record<string, string>> = {
   "KiKi": "r690", // KiKi
   "焼肉なが井": "r691", // 焼肉なが井
   "マル信緑香園": "r692", // マル信 緑香園
+  "むぎぞう": "r693", // むぎぞう
+  "GATEAUORANGE（ガトーオランジュ）": "r694", // ＧＡＴＥＡＵ ＯＲＡＮＧＥ（ガトー オランジュ）
+  "TiBURONCAFE": "r695", // TiBURON CAFE
+  "満天や": "r696", // 満天や
+  "DiningBarMarib四条烏丸": "r697", // Dining Bar Marib 四条烏丸
+  "ボードゲームカフェCARIVAN": "r698", // ボードゲームカフェCARIVAN
+  "カナデアンコーヒーハウスメイプル": "r699", // カナデアンコーヒーハウス メイプル
+  "焼き鳥居酒屋さつき": "r700", // 焼き鳥居酒屋 さつき
+  "キッチンカーKAMUI（カムイ）": "r701", // キッチンカーKAMUI（カムイ）
+  "西荻ペッコリーノ": "r702", // 西荻ペッコリーノ
+  "おもちびより": "r703", // おもちびより
+  "くろしお弁当": "r704", // くろしお弁当
+  "FOGcoffee": "r705", // FOGcoffee
+  "我が家おてちき屋": "r706", // 我が家 おてちき屋
+  "璃夢Rim": "r707", // 璃夢 Rim
+  "おにCafe": "r708", // おにCafe
+  "天ぷらえび福": "r709", // 天ぷら えび福
+  "ダモンデ": "r710", // ダモンデ
+  "シャトークワナ": "r711", // シャトークワナ
+  "BarNEWYORKMIDTOWN44STREET": "r712", // Bar NEWYORK MIDTOWN 44 STREET
+  "BarDOPENESS": "r713", // Bar DOPENESS
+  "BarDiningJammin": "r714", // Bar & Dining Jammin
+  "BoulangerieReve想": "r715", // Ｂｏｕｌａｎｇｅｒｉｅ Ｒｅｖｅ想
+  "おうち酒場BoNono": "r716", // おうち酒場 BoNono
+  "BeachbarCalypso": "r717", // Beach bar Calypso
 };
 
 const NFC = (s: string) => s.normalize("NFC");

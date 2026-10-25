@@ -2982,5 +2982,197 @@
     "warnings": [
       "cuisine は GBPカテゴリ"
     ]
+  },
+  "r693": {
+    "articleId": "むぎぞう",
+    "name": "むぎぞう",
+    "warnings": [
+      "desc は lede から事実の文を選べず、事実から作った定型文",
+      "cuisine は GBPカテゴリ"
+    ]
+  },
+  "r694": {
+    "articleId": "GATEAUORANGE（ガトーオランジュ）",
+    "name": "ＧＡＴＥＡＵ ＯＲＡＮＧＥ（ガトー オランジュ）",
+    "warnings": [
+      "desc は lede から事実の文を選べず、事実から作った定型文",
+      "cuisine は GBPカテゴリ"
+    ]
+  },
+  "r695": {
+    "articleId": "TiBURONCAFE",
+    "name": "TiBURON CAFE",
+    "warnings": [
+      "desc は lede から事実の文を選べず、事実から作った定型文",
+      "cuisine は GBPカテゴリ"
+    ]
+  },
+  "r696": {
+    "articleId": "満天や",
+    "name": "満天や",
+    "warnings": [
+      "desc は lede から事実の文を選べず、事実から作った定型文"
+    ]
+  },
+  "r697": {
+    "articleId": "DiningBarMarib四条烏丸",
+    "name": "Dining Bar Marib 四条烏丸",
+    "warnings": [
+      "desc は lede から事実の文を選べず、事実から作った定型文",
+      "cuisine は GBPカテゴリ"
+    ]
+  },
+  "r698": {
+    "articleId": "ボードゲームカフェCARIVAN",
+    "name": "ボードゲームカフェCARIVAN",
+    "warnings": [
+      "desc は lede から事実の文を選べず、事実から作った定型文",
+      "cuisine は GBPカテゴリ"
+    ]
+  },
+  "r699": {
+    "articleId": "カナデアンコーヒーハウスメイプル",
+    "name": "カナデアンコーヒーハウス メイプル",
+    "warnings": [
+      "desc は lede から事実の文を選べず、事実から作った定型文"
+    ]
+  },
+  "r700": {
+    "articleId": "焼き鳥居酒屋さつき",
+    "name": "焼き鳥居酒屋 さつき",
+    "warnings": [
+      "cuisine は GBPカテゴリ"
+    ]
+  },
+  "r701": {
+    "articleId": "キッチンカーKAMUI（カムイ）",
+    "name": "キッチンカーKAMUI（カムイ）",
+    "warnings": [
+      "desc は lede から事実の文を選べず、事実から作った定型文",
+      "cuisine は GBPカテゴリ"
+    ]
+  },
+  "r702": {
+    "articleId": "西荻ペッコリーノ",
+    "name": "西荻ペッコリーノ",
+    "warnings": [
+      "desc は lede から事実の文を選べず、事実から作った定型文",
+      "cuisine は GBPカテゴリ"
+    ]
+  },
+  "r703": {
+    "articleId": "おもちびより",
+    "name": "おもちびより",
+    "warnings": [
+      "desc は lede から事実の文を選べず、事実から作った定型文",
+      "cuisine は GBPカテゴリ"
+    ]
+  },
+  "r704": {
+    "articleId": "くろしお弁当",
+    "name": "くろしお弁当",
+    "warnings": [
+      "desc は lede から事実の文を選べず、事実から作った定型文",
+      "cuisine は GBPカテゴリ"
+    ]
+  },
+  "r705": {
+    "articleId": "FOGcoffee",
+    "name": "FOGcoffee",
+    "warnings": [
+      "desc は lede から事実の文を選べず、事実から作った定型文"
+    ]
+  },
+  "r706": {
+    "articleId": "我が家おてちき屋",
+    "name": "我が家 おてちき屋",
+    "warnings": [
+      "desc は lede から事実の文を選べず、事実から作った定型文",
+      "cuisine は GBPカテゴリ"
+    ]
+  },
+  "r707": {
+    "articleId": "璃夢Rim",
+    "name": "璃夢 Rim",
+    "warnings": [
+      "desc は lede から事実の文を選べず、事実から作った定型文"
+    ]
+  },
+  "r708": {
+    "articleId": "おにCafe",
+    "name": "おにCafe",
+    "warnings": [
+      "desc は lede から事実の文を選べず、事実から作った定型文",
+      "cuisine は GBPカテゴリ"
+    ]
+  },
+  "r709": {
+    "articleId": "天ぷらえび福",
+    "name": "天ぷら えび福",
+    "warnings": [
+      "desc は lede から事実の文を選べず、事実から作った定型文"
+    ]
+  },
+  "r710": {
+    "articleId": "ダモンデ",
+    "name": "ダモンデ",
+    "warnings": [
+      "desc は lede から事実の文を選べず、事実から作った定型文",
+      "cuisine は GBPカテゴリ"
+    ]
+  },
+  "r711": {
+    "articleId": "シャトークワナ",
+    "name": "シャトークワナ",
+    "warnings": [
+      "desc は lede から事実の文を選べず、事実から作った定型文",
+      "cuisine は GBPカテゴリ"
+    ]
+  },
+  "r712": {
+    "articleId": "BarNEWYORKMIDTOWN44STREET",
+    "name": "Bar NEWYORK MIDTOWN 44 STREET",
+    "warnings": [
+      "desc は lede から事実の文を選べず、事実から作った定型文",
+      "cuisine は GBPカテゴリ"
+    ]
+  },
+  "r713": {
+    "articleId": "BarDOPENESS",
+    "name": "Bar DOPENESS",
+    "warnings": [
+      "desc は lede から事実の文を選べず、事実から作った定型文"
+    ]
+  },
+  "r714": {
+    "articleId": "BarDiningJammin",
+    "name": "Bar & Dining Jammin",
+    "warnings": [
+      "desc は lede から事実の文を選べず、事実から作った定型文"
+    ]
+  },
+  "r715": {
+    "articleId": "BoulangerieReve想",
+    "name": "Ｂｏｕｌａｎｇｅｒｉｅ Ｒｅｖｅ想",
+    "warnings": [
+      "desc は lede から事実の文を選べず、事実から作った定型文",
+      "cuisine は GBPカテゴリ"
+    ]
+  },
+  "r716": {
+    "articleId": "おうち酒場BoNono",
+    "name": "おうち酒場 BoNono",
+    "warnings": [
+      "desc は lede から事実の文を選べず、事実から作った定型文",
+      "cuisine は GBPカテゴリ"
+    ]
+  },
+  "r717": {
+    "articleId": "BeachbarCalypso",
+    "name": "Beach bar Calypso",
+    "warnings": [
+      "desc は lede から事実の文を選べず、事実から作った定型文",
+      "cuisine は GBPカテゴリ"
+    ]
   }
 }

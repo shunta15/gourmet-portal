@@ -1,0 +1,177 @@
+{
+  "key": "tri-bodycare-172",
+  "headline": "三重県亀山市川崎町にある整体院です。理学療法士の資格を持つ院長が、オステオパシーや東洋医学の手技を用いた施術を行っています。",
+  "lede": "亀山市にある「整体院Derive」です。院長の岡本涼さんは理学療法士免許を取得したのち、オステオパシーと東洋医学の子午流注の考え方を徒手療法に応用した施術を行っています。施術拠点は亀山本院のほか、四日市・名古屋にもあります。",
+  "sections": [
+    {
+      "heading": "アクセスと拠点",
+      "body": "亀山本院は三重県亀山市川崎町3088にあります。施術拠点は亀山本院のほかに、四日市市内の2か所と、名古屋市中区の金山総合駅から徒歩3分の場所にもあります。予約は電話のほか、LINEでの申し込みも受け付けています。"
+    },
+    {
+      "heading": "院長について",
+      "body": "院長の岡本涼さんは理学療法士免許を取得したのち、病院で脊柱管狭窄症や椎間板ヘルニアなどの理学療法、脳卒中リハビリテーションなどに取り組んできました。セラピストとして4年目に自費整体の分野へ移り、オステオパシーと東洋医学の子午流注の考え方を手技に取り入れています。"
+    },
+    {
+      "heading": "施術の進め方",
+      "body": "施術は問診から始まり、施術を行える状態かどうかを判断するレッドフラッグの確認、全体観の確認、問題点に対する施術という流れで進みます。手技にはオステオパシーや子午流注(東洋医学)の考え方が用いられ、施術は理学療法士の国家資格を持つ院長が担当します。"
+    },
+    {
+      "heading": "施術メニューと来院の案内",
+      "body": "メニューは全身コース(45分)です。カイロプラクティックやオステオパシー、中医学を用いたアプローチが組み合わされています。お着替えの持参、またはお着替えの必要のない服装での来院が案内されており、支払いは現金のみです。"
+    }
+  ],
+  "menus": [
+    {
+      "name": "全身コース"
+    }
+  ],
+  "tags": [
+    {
+      "tag": "夜遅くまで営業",
+      "factIndex": 0
+    },
+    {
+      "tag": "土日営業",
+      "factIndex": 0
+    }
+  ],
+  "facts": [
+    {
+      "claim": "営業時間は24時間",
+      "source": "https://maps.google.com/?cid=7523553987694133174",
+      "quote": "24時間営業",
+      "checkedAt": "2026-10-25"
+    },
+    {
+      "claim": "院長は岡本涼さん",
+      "source": "https://derive-seitai.com/greeting/",
+      "quote": "院長 岡本 涼",
+      "checkedAt": "2026-10-25"
+    },
+    {
+      "claim": "理学療法士免許を取得している",
+      "source": "https://derive-seitai.com/greeting/",
+      "quote": "理学療法士免許を取得後",
+      "checkedAt": "2026-10-25"
+    },
+    {
+      "claim": "病院で脊柱管狭窄症などの理学療法に携わった",
+      "source": "https://derive-seitai.com/greeting/",
+      "quote": "脊柱管狭窄症",
+      "checkedAt": "2026-10-25"
+    },
+    {
+      "claim": "脳卒中リハビリテーションに取り組んだ",
+      "source": "https://derive-seitai.com/greeting/",
+      "quote": "脳卒中リハビリテーション",
+      "checkedAt": "2026-10-25"
+    },
+    {
+      "claim": "セラピスト4年目に自費整体の分野へ移行した",
+      "source": "https://derive-seitai.com/greeting/",
+      "quote": "自費整体の分野へ移行",
+      "checkedAt": "2026-10-25"
+    },
+    {
+      "claim": "オステオパシーと子午流注(東洋医学)の思想を徒手療法に応用した手技を用いる",
+      "source": "https://derive-seitai.com/greeting/",
+      "quote": "オステオパシー、子午流注",
+      "checkedAt": "2026-10-25"
+    },
+    {
+      "claim": "施術は問診から始まる",
+      "source": "https://derive-seitai.com/about/",
+      "quote": "現在お困りの症状やその経過、既往歴、食生活など",
+      "checkedAt": "2026-10-25"
+    },
+    {
+      "claim": "施術の流れにはレッドフラッグの判断が含まれる",
+      "source": "https://derive-seitai.com/about/",
+      "quote": "レッドフラッグの判断",
+      "checkedAt": "2026-10-25"
+    },
+    {
+      "claim": "メニューは全身コースがある",
+      "source": "https://derive-seitai.com/",
+      "quote": "全身コース",
+      "checkedAt": "2026-10-25"
+    },
+    {
+      "claim": "全身コースは45分",
+      "source": "https://derive-seitai.com/",
+      "quote": "45分",
+      "checkedAt": "2026-10-25"
+    },
+    {
+      "claim": "施術拠点は亀山・四日市・名古屋の3拠点",
+      "source": "https://derive-seitai.com/",
+      "quote": "施術拠点（亀山・四日市・名古屋）",
+      "checkedAt": "2026-10-25"
+    },
+    {
+      "claim": "亀山本院の住所は三重県亀山市川崎町3088",
+      "source": "https://derive-seitai.com/",
+      "quote": "三重県亀山市川崎町3088",
+      "checkedAt": "2026-10-25"
+    },
+    {
+      "claim": "名古屋拠点は金山総合駅から徒歩3分",
+      "source": "https://derive-seitai.com/",
+      "quote": "金山総合駅 徒歩3分",
+      "checkedAt": "2026-10-25"
+    },
+    {
+      "claim": "電話予約も受け付けている",
+      "source": "https://derive-seitai.com/price/",
+      "quote": "お電話での予約も受け付けています。",
+      "checkedAt": "2026-10-25"
+    },
+    {
+      "claim": "予約はLINEでも受け付けている",
+      "source": "https://derive-seitai.com/price/",
+      "quote": "LINEでのご予約方法",
+      "checkedAt": "2026-10-25"
+    },
+    {
+      "claim": "支払いは現金のみ",
+      "source": "https://derive-seitai.com/price/",
+      "quote": "お支払いは現金のみとなります。",
+      "checkedAt": "2026-10-25"
+    },
+    {
+      "claim": "国家資格所有者(理学療法士)による施術が行われる",
+      "source": "https://derive-seitai.com/",
+      "quote": "国家資格所有者による施術",
+      "checkedAt": "2026-10-25"
+    },
+    {
+      "claim": "お着替えの持参、またはお着替えの必要のない服装が案内されている",
+      "source": "https://derive-seitai.com/price/",
+      "quote": "お着替えの必要のない服装",
+      "checkedAt": "2026-10-25"
+    }
+  ],
+  "sources": [
+    {
+      "label": "公式サイト",
+      "url": "https://derive-seitai.com/"
+    },
+    {
+      "label": "公式サイト(施術方針)",
+      "url": "https://derive-seitai.com/about/"
+    },
+    {
+      "label": "公式サイト(ご挨拶・沿革)",
+      "url": "https://derive-seitai.com/greeting/"
+    },
+    {
+      "label": "公式サイト(料金・予約方法)",
+      "url": "https://derive-seitai.com/price/"
+    },
+    {
+      "label": "Google マップ",
+      "url": "https://maps.google.com/?cid=7523553987694133174"
+    }
+  ],
+  "notes": "automation/v2/write.mjs が 2026-10-25 に claude -p --model sonnet で作成。事実の裏取り: 19/19 件(quote が出どころにあるもの)。裏取りに通らなかった facts は載せていない。"
+}

@@ -2365,6 +2365,258 @@
         ],
         "checkedAt": "2026-10-25"
       }
+    },
+    {
+      "id": "ac0018",
+      "vertical": "activity",
+      "category": "sea-river",
+      "name": "Blue Corn",
+      "pref": "nagasaki",
+      "cityName": "佐世保市",
+      "address": "長崎県佐世保市鹿子前町798-2",
+      "lat": 33.1626256,
+      "lng": 129.6862846,
+      "hours": "毎日 10:00 - 17:00",
+      "phone": "090-3323-3498",
+      "facebook": "https://www.facebook.com/bluecorn99",
+      "mapUrl": "https://maps.google.com/?cid=4382569925399837524",
+      "image": "/_portal/vshops/tri-activity-142/g01.jpg",
+      "images": [
+        "/_portal/vshops/tri-activity-142/g01.jpg",
+        "/_portal/vshops/tri-activity-142/g02.jpg",
+        "/_portal/vshops/tri-activity-142/g03.jpg",
+        "/_portal/vshops/tri-activity-142/g04.jpg",
+        "/_portal/vshops/tri-activity-142/g05.jpg",
+        "/_portal/vshops/tri-activity-142/g06.jpg"
+      ],
+      "photos": [
+        {
+          "path": "/_portal/vshops/tri-activity-142/g01.jpg",
+          "what": "ライフジャケットを着た6人が浜辺でカヤックと並ぶ",
+          "kind": "common",
+          "width": 1200,
+          "height": 800
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-142/g02.jpg",
+          "what": "海の上でカヤックをこぐ人と黄色い旗の目印",
+          "kind": "view",
+          "width": 1200,
+          "height": 800
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-142/g03.jpg",
+          "what": "砂浜に置かれたカヤックと静かな入り江",
+          "kind": "view",
+          "width": 1200,
+          "height": 800
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-142/g04.jpg",
+          "what": "緑の島々に囲まれた入り江でカヤックをこぐ人たち",
+          "kind": "view",
+          "width": 1200,
+          "height": 800
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-142/g05.jpg",
+          "what": "浜辺でグリルに肉や魚介を並べて焼く人",
+          "kind": "meal",
+          "width": 1200,
+          "height": 800
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-142/g06.jpg",
+          "what": "浜辺のグリルを囲んで立つ数人の人たち",
+          "kind": "meal",
+          "width": 1200,
+          "height": 800
+        }
+      ],
+      "tags": [],
+      "article": {
+        "headline": "長崎県佐世保市鹿子前町にある、カヌー・カヤックツアーの店。九十九島の海でカヤックツアーを行っている。",
+        "lede": "佐世保市にある「Blue Corn」です。九十九島パールシーリゾートを集合場所に、カヤックで九十九島の無人島へ向かうツアーを行っています。営業時間は10時から17時です。",
+        "sections": [
+          {
+            "heading": "ツアーの内容",
+            "body": "「九十九島でカヤック＆BBQ」という名前のツアーがあり、カヤックで九十九島の無人島へ向かいます。所要時間は5時間です。"
+          },
+          {
+            "heading": "集合場所とアクセス",
+            "body": "集合場所は長崎県佐世保市鹿子前町にある九十九島パールシーリゾートです。店の所在地は佐世保市鹿子前町798-2で、電話は090-3323-3498です。"
+          }
+        ],
+        "menus": [
+          {
+            "name": "九十九島でカヤック＆BBQ"
+          }
+        ],
+        "sources": [
+          {
+            "label": "情報サイト(じゃらん・ツアー詳細)",
+            "url": "https://www.jalan.net/kankou/spt_guide000000189704/activity/l0000130E1/"
+          },
+          {
+            "label": "情報サイト(じゃらん・店の基本情報)",
+            "url": "https://www.jalan.net/kankou/spt_guide000000189704/"
+          },
+          {
+            "label": "Google マップ",
+            "url": "https://maps.google.com/?cid=4382569925399837524"
+          }
+        ],
+        "checkedAt": "2026-10-25"
+      }
+    },
+    {
+      "id": "ac0019",
+      "vertical": "activity",
+      "category": "sea-river",
+      "name": "海の音色",
+      "pref": "shizuoka",
+      "cityName": "熱海市",
+      "address": "静岡県熱海市",
+      "lat": 35.0599961,
+      "lng": 139.069635,
+      "hours": "毎日 09:00 - 17:00",
+      "phone": "090-5453-1173",
+      "url": "https://uminoneiro.jimdofree.com/",
+      "website": "https://uminoneiro.jimdofree.com/",
+      "mapUrl": "https://maps.google.com/?cid=5280472783725508324",
+      "image": "/_portal/vshops/tri-activity-175/g01.jpg",
+      "images": [
+        "/_portal/vshops/tri-activity-175/g01.jpg",
+        "/_portal/vshops/tri-activity-175/g02.jpg",
+        "/_portal/vshops/tri-activity-175/g03.jpg",
+        "/_portal/vshops/tri-activity-175/g04.jpg",
+        "/_portal/vshops/tri-activity-175/g05.jpg",
+        "/_portal/vshops/tri-activity-175/g06.jpg",
+        "/_portal/vshops/tri-activity-175/g07.jpg",
+        "/_portal/vshops/tri-activity-175/g08.jpg",
+        "/_portal/vshops/tri-activity-175/g09.jpg",
+        "/_portal/vshops/tri-activity-175/g10.jpg"
+      ],
+      "photos": [
+        {
+          "path": "/_portal/vshops/tri-activity-175/g01.jpg",
+          "what": "海食洞をSUPで進む人の後ろ姿",
+          "kind": "view",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-175/g02.jpg",
+          "what": "SUPに乗る人と遠くの山並み",
+          "kind": "view",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-175/g03.jpg",
+          "what": "SUPに立つ人と岸の崖",
+          "kind": "view",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-175/g04.jpg",
+          "what": "夕日を背にSUPに乗る人のシルエット",
+          "kind": "view",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-175/g05.jpg",
+          "what": "入り江でSUPに乗る人と澄んだ海",
+          "kind": "view",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-175/g06.jpg",
+          "what": "海面でSUPのそばにいる人",
+          "kind": "view",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-175/g07.jpg",
+          "what": "海にせり出す岩と遠くの人",
+          "kind": "view",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-175/g08.jpg",
+          "what": "「SUP体験受付中」の看板がある建物",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 675
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-175/g09.jpg",
+          "what": "カラフルな板壁の小屋",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 675
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-175/g10.jpg",
+          "what": "海で並んでSUPに乗る複数の人",
+          "kind": "view",
+          "width": 1200,
+          "height": 900
+        }
+      ],
+      "tags": [
+        "子連れ",
+        "初心者歓迎"
+      ],
+      "article": {
+        "headline": "静岡県熱海市上多賀にある、SUP(スタンドアップパドルボード)のツアーを行う店。南熱海の長浜海水浴場を出発点に、完全貸切のツアーを行っている。",
+        "lede": "熱海市にある「海の音色」です。SUP(スタンドアップパドルボード)に乗って南熱海の海をめぐるツアーを、完全貸切で行っています。出発場所は長浜海水浴場です。",
+        "sections": [
+          {
+            "heading": "ツアーの内容",
+            "body": "SUP(スタンドアップパドルボード)に乗って、南熱海の海をめぐるツアーです。ツアーは完全貸切で行われ、ほかの参加者と一緒になることはありません。インストラクターが初心者から経験者までサポートし、初心者の参加が9割以上を占めています。ライフジャケットの着用率は100%で、写真・動画の撮影サービスもあります。扱っているのは、初心者向けSUP、ドッグSUP、貸切SUPツアーです。"
+          },
+          {
+            "heading": "出発場所とアクセス",
+            "body": "ツアーの出発場所は長浜海水浴場です。住所は静岡県熱海市上多賀203-6で、JR熱海駅から車で約15分の立地にあります。"
+          },
+          {
+            "heading": "参加できる人",
+            "body": "9歳以下の子どもは、大人と一緒にタンデム(2人乗り)で参加します。海に慣れている犬も、タンデムで一緒に参加できます。愛犬を連れてのドッグSUPにも対応しています。企業の社員旅行やチームビルディング研修など、団体での利用にも対応しています。"
+          }
+        ],
+        "menus": [
+          {
+            "name": "初心者向けSUP"
+          },
+          {
+            "name": "ドッグSUP"
+          },
+          {
+            "name": "貸切SUPツアー"
+          }
+        ],
+        "sources": [
+          {
+            "label": "公式サイト",
+            "url": "https://uminoneiro.jimdofree.com/"
+          },
+          {
+            "label": "地域情報サイト",
+            "url": "https://www.atami-biz.jp/activity/127/"
+          },
+          {
+            "label": "Google マップ",
+            "url": "https://maps.google.com/?cid=5280472783725508324"
+          }
+        ],
+        "checkedAt": "2026-10-25"
+      }
     }
   ]
 }

@@ -18233,6 +18233,1246 @@ export const ARTICLE_STORES: Restaurant[] = [
       "ランチ"
     ],
     "featureId": "マル信緑香園"
+  },
+  {
+    "id": "r693",
+    "name": "むぎぞう",
+    "cuisine": "ベーカリー",
+    "area": "三重県・桑名市",
+    "region": "mie",
+    "shape": "square",
+    "image": "/restaurants/teleapo-むぎぞう/hero.jpg",
+    "heroImages": [
+      "/restaurants/teleapo-むぎぞう/hero.jpg",
+      "/restaurants/teleapo-むぎぞう/point1.jpg",
+      "/restaurants/teleapo-むぎぞう/point2.jpg",
+      "/restaurants/teleapo-むぎぞう/point3.jpg"
+    ],
+    "gallery": [
+      "/restaurants/teleapo-むぎぞう/hero.jpg",
+      "/restaurants/teleapo-むぎぞう/point1.jpg",
+      "/restaurants/teleapo-むぎぞう/point2.jpg",
+      "/restaurants/teleapo-むぎぞう/point3.jpg"
+    ],
+    "desc": "三重県桑名市のベーカリー。",
+    "address": "三重県桑名市新西方2丁目308",
+    "hours": "木〜日 08:30–19:00",
+    "closed": "月曜・火曜・水曜",
+    "seats": "—（訪問前に公式確認）",
+    "nearest": "—",
+    "phone": "0594-23-6577",
+    "instagram": "https://www.instagram.com/panyamugizou",
+    "source": {
+      "label": "Google ビジネスプロフィール",
+      "url": "https://maps.google.com/?cid=16934948029660796439"
+    },
+    "body": [
+      "むぎぞうは、三重県桑名市にあるお店です。業態は「ベーカリー」、所在地は三重県桑名市新西方2丁目308です。マチノワ編集部の特集記事では、「生ドーナツやクロックムッシュが並ぶ焼きたてパンの数々」・「木立に囲まれた絵本のような店構え」などを取り上げています。",
+      "営業時間は木〜日 08:30–19:00、定休日は月曜・火曜・水曜です。営業時間は変わることがあるため、訪問前に公式サイトやSNS、お電話でご確認ください。"
+    ],
+    "highlights": [
+      "生ドーナツやクロックムッシュが並ぶ焼きたてパンの数々",
+      "木立に囲まれた絵本のような店構え",
+      "絵本のような可愛らしい店内",
+      "木曜から日曜営業、イオンモール桑名近くのベーカリー"
+    ],
+    "tags": [
+      "ベーカリー",
+      "パン",
+      "桑名市",
+      "ランチ"
+    ],
+    "featureId": "むぎぞう"
+  },
+  {
+    "id": "r694",
+    "name": "ＧＡＴＥＡＵ ＯＲＡＮＧＥ（ガトー オランジュ）",
+    "cuisine": "スイーツ店",
+    "area": "北海道・札幌市豊平区",
+    "region": "hokkaido",
+    "shape": "square",
+    "image": "/restaurants/teleapo-GATEAUORANGE（ガトーオランジュ）/hero.jpg",
+    "heroImages": [
+      "/restaurants/teleapo-GATEAUORANGE（ガトーオランジュ）/hero.jpg",
+      "/restaurants/teleapo-GATEAUORANGE（ガトーオランジュ）/point1.jpg",
+      "/restaurants/teleapo-GATEAUORANGE（ガトーオランジュ）/point2.jpg",
+      "/restaurants/teleapo-GATEAUORANGE（ガトーオランジュ）/point3.jpg",
+      "/restaurants/teleapo-GATEAUORANGE（ガトーオランジュ）/point4.jpg"
+    ],
+    "gallery": [
+      "/restaurants/teleapo-GATEAUORANGE（ガトーオランジュ）/hero.jpg",
+      "/restaurants/teleapo-GATEAUORANGE（ガトーオランジュ）/point1.jpg",
+      "/restaurants/teleapo-GATEAUORANGE（ガトーオランジュ）/point2.jpg",
+      "/restaurants/teleapo-GATEAUORANGE（ガトーオランジュ）/point3.jpg",
+      "/restaurants/teleapo-GATEAUORANGE（ガトーオランジュ）/point4.jpg",
+      "/restaurants/teleapo-GATEAUORANGE（ガトーオランジュ）/point5.jpg"
+    ],
+    "desc": "北海道札幌市豊平区のスイーツ店。最寄りは豊水すすきの駅・学園前駅から徒歩13〜14分。",
+    "address": "北海道札幌市豊平区豊平5条1丁目2-13",
+    "hours": "水〜土 11:00–19:00 / 日 10:00–18:00",
+    "closed": "月曜・火曜",
+    "seats": "—（訪問前に公式確認）",
+    "nearest": "豊水すすきの駅・学園前駅から徒歩13〜14分",
+    "phone": "011-795-2456",
+    "source": {
+      "label": "Google ビジネスプロフィール",
+      "url": "https://maps.google.com/?cid=9635892720285127296"
+    },
+    "body": [
+      "ＧＡＴＥＡＵ ＯＲＡＮＧＥ（ガトー オランジュ）は、北海道札幌市豊平区にあるお店です。業態は「スイーツ店」、所在地は北海道札幌市豊平区豊平5条1丁目2-13、最寄りは豊水すすきの駅・学園前駅から徒歩13〜14分です。マチノワ編集部の特集記事では、「約30年の経験を持つパティシエが手づくりするフィナンシェ」・「2023年5月21日に開業したフィナンシェ専門店」などを取り上げています。",
+      "営業時間は水〜土 11:00–19:00 / 日 10:00–18:00、定休日は月曜・火曜です。営業時間は変わることがあるため、訪問前に公式サイトやSNS、お電話でご確認ください。"
+    ],
+    "highlights": [
+      "約30年の経験を持つパティシエが手づくりするフィナンシェ",
+      "2023年5月21日に開業したフィナンシェ専門店",
+      "路地裏ショコラや瀬戸内レモンのベイクドチーズなどのラインナップ",
+      "オレンジを基調とした店内と多様な決済への対応",
+      "豊水すすきの駅・学園前駅から徒歩圏のアクセス"
+    ],
+    "tags": [
+      "スイーツ店",
+      "豊平区",
+      "学園前駅",
+      "ランチ"
+    ],
+    "featureId": "GATEAUORANGE（ガトーオランジュ）"
+  },
+  {
+    "id": "r695",
+    "name": "TiBURON CAFE",
+    "cuisine": "カフェ・喫茶",
+    "area": "大阪府・茨木市",
+    "region": "osaka",
+    "shape": "square",
+    "image": "/restaurants/teleapo-TiBURONCAFE/hero.jpg",
+    "heroImages": [
+      "/restaurants/teleapo-TiBURONCAFE/hero.jpg",
+      "/restaurants/teleapo-TiBURONCAFE/point1.jpg",
+      "/restaurants/teleapo-TiBURONCAFE/point2.jpg",
+      "/restaurants/teleapo-TiBURONCAFE/point3.jpg"
+    ],
+    "gallery": [
+      "/restaurants/teleapo-TiBURONCAFE/hero.jpg",
+      "/restaurants/teleapo-TiBURONCAFE/point1.jpg",
+      "/restaurants/teleapo-TiBURONCAFE/point2.jpg",
+      "/restaurants/teleapo-TiBURONCAFE/point3.jpg"
+    ],
+    "desc": "大阪府茨木市のカフェ・喫茶。",
+    "address": "大阪府茨木市本町2-21 環2 2階",
+    "hours": "月〜木・土・日 11:00–18:00",
+    "closed": "金曜日",
+    "seats": "カウンター席あり",
+    "nearest": "—",
+    "phone": "072-648-7848",
+    "source": {
+      "label": "Google ビジネスプロフィール",
+      "url": "https://maps.google.com/?cid=18218935047123084469"
+    },
+    "body": [
+      "TiBURON CAFEは、大阪府茨木市にあるお店です。業態は「カフェ・喫茶」、所在地は大阪府茨木市本町2-21 環2 2階です。マチノワ編集部の特集記事では、「健康と美容を意識したフードとドリンク」・「グレーを基調にした店内とカウンター席」などを取り上げています。",
+      "営業時間は月〜木・土・日 11:00–18:00、定休日は金曜日です。席はカウンター席あり。営業時間は変わることがあるため、訪問前に公式サイトやSNS、お電話でご確認ください。"
+    ],
+    "highlights": [
+      "健康と美容を意識したフードとドリンク",
+      "グレーを基調にした店内とカウンター席",
+      "茨木市本町、ビル2階のアクセスと営業時間"
+    ],
+    "tags": [
+      "カフェ・喫茶",
+      "茨木市",
+      "ランチ"
+    ],
+    "featureId": "TiBURONCAFE"
+  },
+  {
+    "id": "r696",
+    "name": "満天や",
+    "cuisine": "沖縄料理・海鮮料理",
+    "area": "三重県・松阪市",
+    "region": "mie",
+    "shape": "square",
+    "image": "/restaurants/teleapo-満天や/hero.jpg",
+    "heroImages": [
+      "/restaurants/teleapo-満天や/hero.jpg",
+      "/restaurants/teleapo-満天や/point1.jpg",
+      "/restaurants/teleapo-満天や/point2.jpg",
+      "/restaurants/teleapo-満天や/point3.jpg",
+      "/restaurants/teleapo-満天や/point4.jpg"
+    ],
+    "gallery": [
+      "/restaurants/teleapo-満天や/hero.jpg",
+      "/restaurants/teleapo-満天や/point1.jpg",
+      "/restaurants/teleapo-満天や/point2.jpg",
+      "/restaurants/teleapo-満天や/point3.jpg",
+      "/restaurants/teleapo-満天や/point4.jpg"
+    ],
+    "desc": "三重県松阪市の沖縄料理・海鮮料理。",
+    "address": "三重県松阪市湊町189-1 壱ビル 1階",
+    "hours": "月・火・木・金 11:30–14:00, 18:00–23:00 / 土 11:00–14:00, 18:00–23:00",
+    "closed": "水曜・日曜",
+    "seats": "20席(カウンター6席)",
+    "nearest": "—",
+    "phone": "0598-67-7838",
+    "source": {
+      "label": "Google ビジネスプロフィール",
+      "url": "https://maps.google.com/?cid=14117594088464248245"
+    },
+    "body": [
+      "満天やは、三重県松阪市にあるお店です。業態は「沖縄料理・海鮮料理」、所在地は三重県松阪市湊町189-1 壱ビル 1階です。マチノワ編集部の特集記事では、「ソーキ焼きやチャンプルーなど沖縄料理を並べるメニュー」・「介護士から沖縄修行を経て独立した店主の歩み」などを取り上げています。",
+      "営業時間は月・火・木・金 11:30–14:00, 18:00–23:00 / 土 11:00–14:00, 18:00–23:00、定休日は水曜・日曜です。席は20席(カウンター6席)。営業時間は変わることがあるため、訪問前に公式サイトやSNS、お電話でご確認ください。"
+    ],
+    "highlights": [
+      "ソーキ焼きやチャンプルーなど沖縄料理を並べるメニュー",
+      "介護士から沖縄修行を経て独立した店主の歩み",
+      "伊勢湾の魚や答志島のワカメなど地元の食材を使う構成",
+      "カウンター6席を含む総席数20席、全席禁煙の店内",
+      "松阪市湊町での営業時間と定休日"
+    ],
+    "tags": [
+      "沖縄料理・海鮮料理",
+      "居酒屋",
+      "松阪市",
+      "ランチ"
+    ],
+    "featureId": "満天や"
+  },
+  {
+    "id": "r697",
+    "name": "Dining Bar Marib 四条烏丸",
+    "cuisine": "居酒屋",
+    "area": "京都府・京都市下京区",
+    "region": "kyoto",
+    "shape": "square",
+    "image": "/restaurants/teleapo-DiningBarMarib四条烏丸/hero.jpg",
+    "heroImages": [
+      "/restaurants/teleapo-DiningBarMarib四条烏丸/hero.jpg",
+      "/restaurants/teleapo-DiningBarMarib四条烏丸/point1.jpg",
+      "/restaurants/teleapo-DiningBarMarib四条烏丸/point2.jpg",
+      "/restaurants/teleapo-DiningBarMarib四条烏丸/point3.jpg",
+      "/restaurants/teleapo-DiningBarMarib四条烏丸/point4.jpg"
+    ],
+    "gallery": [
+      "/restaurants/teleapo-DiningBarMarib四条烏丸/hero.jpg",
+      "/restaurants/teleapo-DiningBarMarib四条烏丸/point1.jpg",
+      "/restaurants/teleapo-DiningBarMarib四条烏丸/point2.jpg",
+      "/restaurants/teleapo-DiningBarMarib四条烏丸/point3.jpg",
+      "/restaurants/teleapo-DiningBarMarib四条烏丸/point4.jpg"
+    ],
+    "desc": "京都府京都市下京区の居酒屋。",
+    "address": "京都府京都市下京区元悪王子町52",
+    "hours": "月〜土 18:00–01:00",
+    "closed": "日曜日",
+    "seats": "33席(カウンター8席、掘りごたつ3卓、テーブル6名席×2)",
+    "nearest": "—",
+    "phone": "075-371-5369",
+    "source": {
+      "label": "Google ビジネスプロフィール",
+      "url": "https://maps.google.com/?cid=1381370542087534842"
+    },
+    "body": [
+      "Dining Bar Marib 四条烏丸は、京都府京都市下京区にあるお店です。業態は「居酒屋」、所在地は京都府京都市下京区元悪王子町52です。マチノワ編集部の特集記事では、「アーリオ枝豆やmaribのとり天などの豊富な一品料理」・「自家製スモークや和牛赤身肉のステーキなどの一品」などを取り上げています。",
+      "営業時間は月〜土 18:00–01:00、定休日は日曜日です。席は33席(カウンター8席、掘りごたつ3卓、テーブル6名席×2)。営業時間は変わることがあるため、訪問前に公式サイトやSNS、お電話でご確認ください。"
+    ],
+    "highlights": [
+      "アーリオ枝豆やmaribのとり天などの豊富な一品料理",
+      "自家製スモークや和牛赤身肉のステーキなどの一品",
+      "クラフトビールからアードベック10年まで並ぶ酒類",
+      "カウンターや掘りごたつ、個室まで備える33席",
+      "烏丸駅近く、月曜から土曜18時から営業"
+    ],
+    "tags": [
+      "居酒屋",
+      "下京区",
+      "個室",
+      "深夜営業"
+    ],
+    "featureId": "DiningBarMarib四条烏丸"
+  },
+  {
+    "id": "r698",
+    "name": "ボードゲームカフェCARIVAN",
+    "cuisine": "カフェ・喫茶",
+    "area": "奈良県・香芝市",
+    "region": "nara",
+    "shape": "square",
+    "image": "/restaurants/teleapo-ボードゲームカフェCARIVAN/hero.jpg",
+    "heroImages": [
+      "/restaurants/teleapo-ボードゲームカフェCARIVAN/hero.jpg",
+      "/restaurants/teleapo-ボードゲームカフェCARIVAN/point1.jpg",
+      "/restaurants/teleapo-ボードゲームカフェCARIVAN/point2.jpg",
+      "/restaurants/teleapo-ボードゲームカフェCARIVAN/point3.jpg",
+      "/restaurants/teleapo-ボードゲームカフェCARIVAN/point4.jpg"
+    ],
+    "gallery": [
+      "/restaurants/teleapo-ボードゲームカフェCARIVAN/hero.jpg",
+      "/restaurants/teleapo-ボードゲームカフェCARIVAN/point1.jpg",
+      "/restaurants/teleapo-ボードゲームカフェCARIVAN/point2.jpg",
+      "/restaurants/teleapo-ボードゲームカフェCARIVAN/point3.jpg",
+      "/restaurants/teleapo-ボードゲームカフェCARIVAN/point4.jpg",
+      "/restaurants/teleapo-ボードゲームカフェCARIVAN/point5.jpg"
+    ],
+    "desc": "奈良県香芝市のカフェ・喫茶。",
+    "address": "奈良県香芝市真美ヶ丘2丁目13-8",
+    "hours": "火〜日 11:00–22:00",
+    "closed": "月曜日",
+    "seats": "5卓20席",
+    "nearest": "—",
+    "phone": "090-8143-1594",
+    "instagram": "https://www.instagram.com/bgc_carivan",
+    "source": {
+      "label": "Google ビジネスプロフィール",
+      "url": "https://maps.google.com/?cid=5642740225649162464"
+    },
+    "body": [
+      "ボードゲームカフェCARIVANは、奈良県香芝市にあるお店です。業態は「カフェ・喫茶」、所在地は奈良県香芝市真美ヶ丘2丁目13-8です。マチノワ編集部の特集記事では、「200個を超えるボードゲームを揃える品ぞろえ」・「1人利用から貸切まで対応する座席」などを取り上げています。",
+      "営業時間は火〜日 11:00–22:00、定休日は月曜日です。席は5卓20席。営業時間は変わることがあるため、訪問前に公式サイトやSNS、お電話でご確認ください。"
+    ],
+    "highlights": [
+      "200個を超えるボードゲームを揃える品ぞろえ",
+      "1人利用から貸切まで対応する座席",
+      "ゲームの合間に楽しめる軽食とスイーツ",
+      "木目を基調とした店内のつくり",
+      "近鉄五位堂駅徒歩9分、駐車場7台を備えたアクセス"
+    ],
+    "tags": [
+      "カフェ・喫茶",
+      "香芝市",
+      "ランチ"
+    ],
+    "featureId": "ボードゲームカフェCARIVAN"
+  },
+  {
+    "id": "r699",
+    "name": "カナデアンコーヒーハウス メイプル",
+    "cuisine": "喫茶店・カフェ",
+    "area": "宮城県・遠田郡美里町",
+    "region": "miyagi",
+    "shape": "square",
+    "image": "/restaurants/teleapo-カナデアンコーヒーハウスメイプル/hero.jpg",
+    "heroImages": [
+      "/restaurants/teleapo-カナデアンコーヒーハウスメイプル/hero.jpg",
+      "/restaurants/teleapo-カナデアンコーヒーハウスメイプル/point1.jpg",
+      "/restaurants/teleapo-カナデアンコーヒーハウスメイプル/point2.jpg"
+    ],
+    "gallery": [
+      "/restaurants/teleapo-カナデアンコーヒーハウスメイプル/hero.jpg",
+      "/restaurants/teleapo-カナデアンコーヒーハウスメイプル/point1.jpg",
+      "/restaurants/teleapo-カナデアンコーヒーハウスメイプル/point2.jpg"
+    ],
+    "desc": "宮城県遠田郡美里町の喫茶店・カフェ。",
+    "address": "宮城県遠田郡美里町練牛二十号39",
+    "hours": "月〜水 10:00–17:00 / 木〜土 10:00–22:00 / 日 10:00–21:00",
+    "closed": "なし",
+    "seats": "—（訪問前に公式確認）",
+    "nearest": "—",
+    "phone": "0229-58-0511",
+    "instagram": "https://www.instagram.com/maple_with_canadeannight",
+    "source": {
+      "label": "Google ビジネスプロフィール",
+      "url": "https://maps.google.com/?cid=9862580239340839119"
+    },
+    "body": [
+      "カナデアンコーヒーハウス メイプルは、宮城県遠田郡美里町にあるお店です。業態は「喫茶店・カフェ」、所在地は宮城県遠田郡美里町練牛二十号39です。マチノワ編集部の特集記事では、「ハンバーグやカレー、スパゲティがそろう食事メニュー」・「木で作られた外観と三角屋根の建物」などを取り上げています。",
+      "営業時間は月〜水 10:00–17:00 / 木〜土 10:00–22:00 / 日 10:00–21:00で、定休日はありません。営業時間は変わることがあるため、訪問前に公式サイトやSNS、お電話でご確認ください。"
+    ],
+    "highlights": [
+      "ハンバーグやカレー、スパゲティがそろう食事メニュー",
+      "木で作られた外観と三角屋根の建物",
+      "曜日によって異なる営業時間"
+    ],
+    "tags": [
+      "喫茶店・カフェ",
+      "コーヒーショップ・喫茶店",
+      "美里町",
+      "ランチ"
+    ],
+    "featureId": "カナデアンコーヒーハウスメイプル"
+  },
+  {
+    "id": "r700",
+    "name": "焼き鳥居酒屋 さつき",
+    "cuisine": "焼き鳥店",
+    "area": "愛媛県・松山市",
+    "region": "ehime",
+    "shape": "square",
+    "image": "/restaurants/teleapo-焼き鳥居酒屋さつき/hero.jpg",
+    "heroImages": [
+      "/restaurants/teleapo-焼き鳥居酒屋さつき/hero.jpg",
+      "/restaurants/teleapo-焼き鳥居酒屋さつき/point1.jpg",
+      "/restaurants/teleapo-焼き鳥居酒屋さつき/point2.jpg",
+      "/restaurants/teleapo-焼き鳥居酒屋さつき/point3.jpg",
+      "/restaurants/teleapo-焼き鳥居酒屋さつき/point4.jpg"
+    ],
+    "gallery": [
+      "/restaurants/teleapo-焼き鳥居酒屋さつき/hero.jpg",
+      "/restaurants/teleapo-焼き鳥居酒屋さつき/point1.jpg",
+      "/restaurants/teleapo-焼き鳥居酒屋さつき/point2.jpg",
+      "/restaurants/teleapo-焼き鳥居酒屋さつき/point3.jpg",
+      "/restaurants/teleapo-焼き鳥居酒屋さつき/point4.jpg",
+      "/restaurants/teleapo-焼き鳥居酒屋さつき/point5.jpg"
+    ],
+    "desc": "焼き鳥居酒屋さつきは、松山市駅から徒歩2分の場所に店を構える、鶏肉を中心とした串焼きの店だ。",
+    "address": "愛媛県松山市湊町6丁目4-16 高須賀ビル",
+    "hours": "月〜土 17:00–22:30",
+    "closed": "日曜日",
+    "seats": "15席(カウンター席・個室)",
+    "nearest": "松山市駅 徒歩2分",
+    "phone": "089-945-0009",
+    "source": {
+      "label": "Google ビジネスプロフィール",
+      "url": "https://maps.google.com/?cid=5997875336075517593"
+    },
+    "body": [
+      "焼き鳥居酒屋 さつきは、愛媛県松山市にあるお店です。業態は「焼き鳥店」、所在地は愛媛県松山市湊町6丁目4-16 高須賀ビル、最寄りは松山市駅 徒歩2分です。マチノワ編集部の特集記事では、「鶏の部位を串焼きにした豊富なラインナップ」・「カプレーゼ串など野菜やうずらの卵を使った串」などを取り上げています。",
+      "営業時間は月〜土 17:00–22:30、定休日は日曜日です。席は15席(カウンター席・個室)。営業時間は変わることがあるため、訪問前に公式サイトやSNS、お電話でご確認ください。"
+    ],
+    "highlights": [
+      "鶏の部位を串焼きにした豊富なラインナップ",
+      "カプレーゼ串など野菜やうずらの卵を使った串",
+      "一品料理や揚げ物、ごはんものまでそろうメニュー",
+      "カウンター席と掘りごたつの個室がある店内",
+      "松山市駅から徒歩2分のアクセス"
+    ],
+    "tags": [
+      "焼き鳥店",
+      "松山市",
+      "松山市駅",
+      "個室"
+    ],
+    "featureId": "焼き鳥居酒屋さつき"
+  },
+  {
+    "id": "r701",
+    "name": "キッチンカーKAMUI（カムイ）",
+    "cuisine": "カフェ・喫茶",
+    "area": "愛媛県・今治市",
+    "region": "ehime",
+    "shape": "square",
+    "image": "/restaurants/teleapo-キッチンカーKAMUI（カムイ）/hero.jpg",
+    "heroImages": [
+      "/restaurants/teleapo-キッチンカーKAMUI（カムイ）/hero.jpg",
+      "/restaurants/teleapo-キッチンカーKAMUI（カムイ）/point1.jpg",
+      "/restaurants/teleapo-キッチンカーKAMUI（カムイ）/point3.jpg",
+      "/restaurants/teleapo-キッチンカーKAMUI（カムイ）/point4.jpg"
+    ],
+    "gallery": [
+      "/restaurants/teleapo-キッチンカーKAMUI（カムイ）/hero.jpg",
+      "/restaurants/teleapo-キッチンカーKAMUI（カムイ）/point1.jpg",
+      "/restaurants/teleapo-キッチンカーKAMUI（カムイ）/point3.jpg",
+      "/restaurants/teleapo-キッチンカーKAMUI（カムイ）/point4.jpg"
+    ],
+    "desc": "愛媛県今治市のカフェ・喫茶。",
+    "address": "愛媛県今治市大三島町宮浦3260 道の駅御島駐車場",
+    "hours": "毎日 11:00–17:00",
+    "closed": "なし",
+    "seats": "—（訪問前に公式確認）",
+    "nearest": "—",
+    "phone": "0897-72-8777",
+    "instagram": "https://www.instagram.com/omisima.kamui",
+    "source": {
+      "label": "Google ビジネスプロフィール",
+      "url": "https://maps.google.com/?cid=3279381412426499805"
+    },
+    "body": [
+      "キッチンカーKAMUI（カムイ）は、愛媛県今治市にあるお店です。業態は「カフェ・喫茶」、所在地は愛媛県今治市大三島町宮浦3260 道の駅御島駐車場です。マチノワ編集部の特集記事では、「定番のイチゴに加え夕張メロンやハスカップ味もそろうふわとろかき氷」・「新聞配達の仕事から生まれたキッチンカー開業」などを取り上げています。",
+      "営業時間は毎日 11:00–17:00で、定休日はありません。営業時間は変わることがあるため、訪問前に公式サイトやSNS、お電話でご確認ください。"
+    ],
+    "highlights": [
+      "定番のイチゴに加え夕張メロンやハスカップ味もそろうふわとろかき氷",
+      "新聞配達の仕事から生まれたキッチンカー開業",
+      "ラーメンサラダやぶた丼、牛トロ丼などのフードメニュー",
+      "北海道出身の店主がしまなみ海道で出会った大三島",
+      "道の駅しまなみの駅御島を拠点にした営業"
+    ],
+    "tags": [
+      "カフェ・喫茶",
+      "今治市",
+      "ランチ"
+    ],
+    "featureId": "キッチンカーKAMUI（カムイ）"
+  },
+  {
+    "id": "r702",
+    "name": "西荻ペッコリーノ",
+    "cuisine": "イタリア料理店",
+    "area": "東京都・杉並区",
+    "region": "tokyo",
+    "shape": "square",
+    "image": "/restaurants/teleapo-西荻ペッコリーノ/hero.jpg",
+    "heroImages": [
+      "/restaurants/teleapo-西荻ペッコリーノ/hero.jpg",
+      "/restaurants/teleapo-西荻ペッコリーノ/point1.jpg",
+      "/restaurants/teleapo-西荻ペッコリーノ/point2.jpg",
+      "/restaurants/teleapo-西荻ペッコリーノ/point3.jpg"
+    ],
+    "gallery": [
+      "/restaurants/teleapo-西荻ペッコリーノ/hero.jpg",
+      "/restaurants/teleapo-西荻ペッコリーノ/point1.jpg",
+      "/restaurants/teleapo-西荻ペッコリーノ/point2.jpg",
+      "/restaurants/teleapo-西荻ペッコリーノ/point3.jpg"
+    ],
+    "desc": "東京都杉並区のイタリア料理店。",
+    "address": "東京都杉並区西荻南3丁目14-12",
+    "hours": "月〜水・日 18:00–03:00 / 金・土 18:00–05:00",
+    "closed": "木曜日",
+    "seats": "—（訪問前に公式確認）",
+    "nearest": "—",
+    "phone": "03-5941-6961",
+    "source": {
+      "label": "Google ビジネスプロフィール",
+      "url": "https://maps.google.com/?cid=2902442305468313755"
+    },
+    "body": [
+      "西荻ペッコリーノは、東京都杉並区にあるお店です。業態は「イタリア料理店」、所在地は東京都杉並区西荻南3丁目14-12です。マチノワ編集部の特集記事では、「和の食材をイタリアンに仕上げた創作料理」・「サワーから日本酒まで幅広くそろえるドリンク」などを取り上げています。",
+      "営業時間は月〜水・日 18:00–03:00 / 金・土 18:00–05:00、定休日は木曜日です。営業時間は変わることがあるため、訪問前に公式サイトやSNS、お電話でご確認ください。"
+    ],
+    "highlights": [
+      "和の食材をイタリアンに仕上げた創作料理",
+      "サワーから日本酒まで幅広くそろえるドリンク",
+      "一人客から大人数グループまで使える店内と貸切対応",
+      "杉並区西荻南、週末は深夜まで営業"
+    ],
+    "tags": [
+      "イタリア料理店",
+      "杉並区",
+      "宴会",
+      "深夜営業"
+    ],
+    "featureId": "西荻ペッコリーノ"
+  },
+  {
+    "id": "r703",
+    "name": "おもちびより",
+    "cuisine": "ファースト フード店",
+    "area": "新潟県・東蒲原郡阿賀町",
+    "region": "niigata",
+    "shape": "square",
+    "image": "/restaurants/teleapo-おもちびより/hero.jpg",
+    "heroImages": [
+      "/restaurants/teleapo-おもちびより/hero.jpg",
+      "/restaurants/teleapo-おもちびより/point1.jpg",
+      "/restaurants/teleapo-おもちびより/point2.jpg",
+      "/restaurants/teleapo-おもちびより/point3.jpg"
+    ],
+    "gallery": [
+      "/restaurants/teleapo-おもちびより/hero.jpg",
+      "/restaurants/teleapo-おもちびより/point1.jpg",
+      "/restaurants/teleapo-おもちびより/point2.jpg",
+      "/restaurants/teleapo-おもちびより/point3.jpg"
+    ],
+    "desc": "新潟県東蒲原郡阿賀町のファースト フード店。",
+    "address": "新潟県東蒲原郡阿賀町天満6-10",
+    "hours": "火・水 11:00–16:00 / 木 10:00–17:00 / 金〜日 11:00–17:00",
+    "closed": "月曜日",
+    "seats": "—（訪問前に公式確認）",
+    "nearest": "—",
+    "phone": "080-8190-4441",
+    "instagram": "https://www.instagram.com/omochibiyori1",
+    "source": {
+      "label": "Google ビジネスプロフィール",
+      "url": "https://maps.google.com/?cid=854612725855970375"
+    },
+    "body": [
+      "おもちびよりは、新潟県東蒲原郡阿賀町にあるお店です。業態は「ファースト フード店」、所在地は新潟県東蒲原郡阿賀町天満6-10です。マチノワ編集部の特集記事では、「開業当初の4種類から20種類以上に増えた揚げ餅のフレーバー」・「店主夫婦が手づくりした店舗、積雪に耐える造り」などを取り上げています。",
+      "営業時間は火・水 11:00–16:00 / 木 10:00–17:00 / 金〜日 11:00–17:00、定休日は月曜日です。営業時間は変わることがあるため、訪問前に公式サイトやSNS、お電話でご確認ください。"
+    ],
+    "highlights": [
+      "開業当初の4種類から20種類以上に増えた揚げ餅のフレーバー",
+      "店主夫婦が手づくりした店舗、積雪に耐える造り",
+      "蝉しぐれが降り注ぐウッドデッキと店内の薪ストーブ",
+      "火曜から日曜に営業、月曜定休の天満の一軒"
+    ],
+    "tags": [
+      "ファースト フード店",
+      "阿賀町",
+      "ランチ"
+    ],
+    "featureId": "おもちびより"
+  },
+  {
+    "id": "r704",
+    "name": "くろしお弁当",
+    "cuisine": "コーヒーショップ・喫茶店",
+    "area": "神奈川県・横浜市港南区",
+    "region": "kanagawa",
+    "shape": "square",
+    "image": "/restaurants/teleapo-くろしお弁当/hero.jpg",
+    "heroImages": [
+      "/restaurants/teleapo-くろしお弁当/hero.jpg",
+      "/restaurants/teleapo-くろしお弁当/point1.jpg",
+      "/restaurants/teleapo-くろしお弁当/point3.jpg"
+    ],
+    "gallery": [
+      "/restaurants/teleapo-くろしお弁当/hero.jpg",
+      "/restaurants/teleapo-くろしお弁当/point1.jpg",
+      "/restaurants/teleapo-くろしお弁当/point3.jpg"
+    ],
+    "desc": "神奈川県横浜市港南区のコーヒーショップ・喫茶店。",
+    "address": "神奈川県横浜市港南区野庭町611-1 107",
+    "hours": "月〜金 06:00–14:00",
+    "closed": "土曜・日曜",
+    "seats": "—（訪問前に公式確認）",
+    "nearest": "—",
+    "phone": "045-374-5424",
+    "instagram": "https://www.instagram.com/kuroshio584",
+    "source": {
+      "label": "Google ビジネスプロフィール",
+      "url": "https://maps.google.com/?cid=18430214818219460166"
+    },
+    "body": [
+      "くろしお弁当は、神奈川県横浜市港南区にあるお店です。業態は「コーヒーショップ・喫茶店」、所在地は神奈川県横浜市港南区野庭町611-1 107です。マチノワ編集部の特集記事では、「管理栄養士が栄養バランスを考える日替わり弁当」・「弁当1個からの配達とLINEでの注文」などを取り上げています。",
+      "営業時間は月〜金 06:00–14:00、定休日は土曜・日曜です。営業時間は変わることがあるため、訪問前に公式サイトやSNS、お電話でご確認ください。"
+    ],
+    "highlights": [
+      "管理栄養士が栄養バランスを考える日替わり弁当",
+      "弁当1個からの配達とLINEでの注文",
+      "野庭ショッピングセンターパレッテ隣の弁当店",
+      "平日のみの営業、電話とFAXでの問い合わせ"
+    ],
+    "tags": [
+      "コーヒーショップ・喫茶店",
+      "港南区",
+      "ランチ"
+    ],
+    "featureId": "くろしお弁当"
+  },
+  {
+    "id": "r705",
+    "name": "FOGcoffee",
+    "cuisine": "自家焙煎コーヒースタンド",
+    "area": "秋田県・大仙市",
+    "region": "akita",
+    "shape": "square",
+    "image": "/restaurants/teleapo-FOGcoffee/hero.jpg",
+    "heroImages": [
+      "/restaurants/teleapo-FOGcoffee/hero.jpg",
+      "/restaurants/teleapo-FOGcoffee/point1.jpg",
+      "/restaurants/teleapo-FOGcoffee/point2.jpg",
+      "/restaurants/teleapo-FOGcoffee/point3.jpg",
+      "/restaurants/teleapo-FOGcoffee/point4.jpg"
+    ],
+    "gallery": [
+      "/restaurants/teleapo-FOGcoffee/hero.jpg",
+      "/restaurants/teleapo-FOGcoffee/point1.jpg",
+      "/restaurants/teleapo-FOGcoffee/point2.jpg",
+      "/restaurants/teleapo-FOGcoffee/point3.jpg",
+      "/restaurants/teleapo-FOGcoffee/point4.jpg"
+    ],
+    "desc": "秋田県大仙市の自家焙煎コーヒースタンド。最寄りは大曲駅から徒歩7分。",
+    "address": "秋田県大仙市大曲大町2-24",
+    "hours": "月・水・土・日 10:00–19:00",
+    "closed": "火曜・木曜・金曜",
+    "seats": "カウンター6名程度",
+    "nearest": "大曲駅から徒歩7分",
+    "phone": "0187-64-9044",
+    "instagram": "https://www.instagram.com/fog_coffee",
+    "source": {
+      "label": "Google ビジネスプロフィール",
+      "url": "https://maps.google.com/?cid=8717067375636120019"
+    },
+    "body": [
+      "FOGcoffeeは、秋田県大仙市にあるお店です。業態は「自家焙煎コーヒースタンド」、所在地は秋田県大仙市大曲大町2-24、最寄りは大曲駅から徒歩7分です。マチノワ編集部の特集記事では、「自家焙煎のコーヒーをたくさんの種類で用意」・「コーヒー豆の販売と卸売りに対応」などを取り上げています。",
+      "営業時間は月・水・土・日 10:00–19:00、定休日は火曜・木曜・金曜です。席はカウンター6名程度。営業時間は変わることがあるため、訪問前に公式サイトやSNS、お電話でご確認ください。"
+    ],
+    "highlights": [
+      "自家焙煎のコーヒーをたくさんの種類で用意",
+      "コーヒー豆の販売と卸売りに対応",
+      "カウンター6席ほどの水色の内装",
+      "大曲駅から徒歩7分、火・木・金が定休"
+    ],
+    "tags": [
+      "自家焙煎コーヒースタンド",
+      "コーヒー ショップ",
+      "大仙市",
+      "大曲駅",
+      "ランチ"
+    ],
+    "featureId": "FOGcoffee"
+  },
+  {
+    "id": "r706",
+    "name": "我が家 おてちき屋",
+    "cuisine": "居酒屋",
+    "area": "鹿児島県・鹿児島市",
+    "region": "kagoshima",
+    "shape": "square",
+    "image": "/restaurants/teleapo-我が家おてちき屋/hero.jpg",
+    "heroImages": [
+      "/restaurants/teleapo-我が家おてちき屋/hero.jpg",
+      "/restaurants/teleapo-我が家おてちき屋/point1.jpg",
+      "/restaurants/teleapo-我が家おてちき屋/point2.jpg",
+      "/restaurants/teleapo-我が家おてちき屋/point3.jpg"
+    ],
+    "gallery": [
+      "/restaurants/teleapo-我が家おてちき屋/hero.jpg",
+      "/restaurants/teleapo-我が家おてちき屋/point1.jpg",
+      "/restaurants/teleapo-我が家おてちき屋/point2.jpg",
+      "/restaurants/teleapo-我が家おてちき屋/point3.jpg"
+    ],
+    "desc": "鹿児島県鹿児島市の居酒屋。",
+    "address": "鹿児島県鹿児島市坂之上4丁目19-24",
+    "hours": "月 11:00–14:30 / 火〜土 11:00–14:30, 18:00–23:00 / 日 18:00–23:00",
+    "closed": "なし",
+    "seats": "カウンター席、4人用の堀りごたつ席",
+    "nearest": "—",
+    "phone": "080-1750-2462",
+    "instagram": "https://www.instagram.com/wagaya_otechikiya",
+    "source": {
+      "label": "Google ビジネスプロフィール",
+      "url": "https://maps.google.com/?cid=12098168027926485359"
+    },
+    "body": [
+      "我が家 おてちき屋は、鹿児島県鹿児島市にあるお店です。業態は「居酒屋」、所在地は鹿児島県鹿児島市坂之上4丁目19-24です。マチノワ編集部の特集記事では、「昼は定食屋、夜は居酒屋という二部制の営業」・「入口に日替わりのメインを掲示」などを取り上げています。",
+      "営業時間は月 11:00–14:30 / 火〜土 11:00–14:30, 18:00–23:00 / 日 18:00–23:00で、定休日はありません。席はカウンター席、4人用の堀りごたつ席。営業時間は変わることがあるため、訪問前に公式サイトやSNS、お電話でご確認ください。"
+    ],
+    "highlights": [
+      "昼は定食屋、夜は居酒屋という二部制の営業",
+      "入口に日替わりのメインを掲示",
+      "焼き魚定食と食後のコーヒー・アイス",
+      "カウンター席と四人掛けの堀りごたつ席",
+      "坂之上四丁目の住所と曜日ごとの営業時間"
+    ],
+    "tags": [
+      "居酒屋",
+      "鹿児島市",
+      "ランチ"
+    ],
+    "featureId": "我が家おてちき屋"
+  },
+  {
+    "id": "r707",
+    "name": "璃夢 Rim",
+    "cuisine": "バー、日本酒バー、焼酎バー",
+    "area": "千葉県・四街道市",
+    "region": "chiba",
+    "shape": "square",
+    "image": "/restaurants/teleapo-璃夢Rim/hero.jpg",
+    "heroImages": [
+      "/restaurants/teleapo-璃夢Rim/hero.jpg",
+      "/restaurants/teleapo-璃夢Rim/point1.jpg",
+      "/restaurants/teleapo-璃夢Rim/point2.jpg"
+    ],
+    "gallery": [
+      "/restaurants/teleapo-璃夢Rim/hero.jpg",
+      "/restaurants/teleapo-璃夢Rim/point1.jpg",
+      "/restaurants/teleapo-璃夢Rim/point2.jpg"
+    ],
+    "desc": "千葉県四街道市のバー、日本酒バー、焼酎バー。",
+    "address": "千葉県四街道市鹿渡2002-11 濱田ビル2F F3",
+    "hours": "火〜土 18:00–00:00",
+    "closed": "月曜・日曜",
+    "seats": "12席(カウンター席)",
+    "nearest": "—",
+    "phone": "043-312-5252",
+    "instagram": "https://www.instagram.com/choco24518",
+    "source": {
+      "label": "Google ビジネスプロフィール",
+      "url": "https://maps.google.com/?cid=12742459572822139104"
+    },
+    "body": [
+      "璃夢 Rimは、千葉県四街道市にあるお店です。業態は「バー、日本酒バー、焼酎バー」、所在地は千葉県四街道市鹿渡2002-11 濱田ビル2F F3です。マチノワ編集部の特集記事では、「日本酒・焼酎・ワインを扱う酒の品ぞろえ」・「12席のカウンターがある店内」などを取り上げています。",
+      "営業時間は火〜土 18:00–00:00、定休日は月曜・日曜です。席は12席(カウンター席)。営業時間は変わることがあるため、訪問前に公式サイトやSNS、お電話でご確認ください。"
+    ],
+    "highlights": [
+      "日本酒・焼酎・ワインを扱う酒の品ぞろえ",
+      "12席のカウンターがある店内",
+      "四街道市鹿渡で火曜から土曜の夜に営業"
+    ],
+    "tags": [
+      "バー、日本酒バー、焼酎バー",
+      "バー",
+      "四街道市",
+      "深夜営業"
+    ],
+    "featureId": "璃夢Rim"
+  },
+  {
+    "id": "r708",
+    "name": "おにCafe",
+    "cuisine": "カフェ・喫茶",
+    "area": "新潟県・佐渡市",
+    "region": "niigata",
+    "shape": "square",
+    "image": "/restaurants/teleapo-おにCafe/hero.jpg",
+    "heroImages": [
+      "/restaurants/teleapo-おにCafe/hero.jpg",
+      "/restaurants/teleapo-おにCafe/point1.jpg",
+      "/restaurants/teleapo-おにCafe/point2.jpg",
+      "/restaurants/teleapo-おにCafe/point5.jpg"
+    ],
+    "gallery": [
+      "/restaurants/teleapo-おにCafe/hero.jpg",
+      "/restaurants/teleapo-おにCafe/point1.jpg",
+      "/restaurants/teleapo-おにCafe/point2.jpg",
+      "/restaurants/teleapo-おにCafe/point5.jpg"
+    ],
+    "desc": "新潟県佐渡市のカフェ・喫茶。",
+    "address": "新潟県佐渡市両津湊110",
+    "hours": "月・火・金 11:00–17:00 / 木 11:00–15:00",
+    "closed": "水曜・土曜・日曜",
+    "seats": "—（訪問前に公式確認）",
+    "nearest": "—",
+    "phone": "0259-27-2420",
+    "instagram": "https://www.instagram.com/explore/locations/845168649204163/cafe",
+    "source": {
+      "label": "Google ビジネスプロフィール",
+      "url": "https://maps.google.com/?cid=873413461264187730"
+    },
+    "body": [
+      "おにCafeは、新潟県佐渡市にあるお店です。業態は「カフェ・喫茶」、所在地は新潟県佐渡市両津湊110です。マチノワ編集部の特集記事では、「鬼太鼓の鬼をデザインしたワッフル「おにきん」」・「前の店から受け継いだ餃子と2022年のリニューアル」などを取り上げています。",
+      "営業時間は月・火・金 11:00–17:00 / 木 11:00–15:00、定休日は水曜・土曜・日曜です。営業時間は変わることがあるため、訪問前に公式サイトやSNS、お電話でご確認ください。"
+    ],
+    "highlights": [
+      "鬼太鼓の鬼をデザインしたワッフル「おにきん」",
+      "前の店から受け継いだ餃子と2022年のリニューアル",
+      "佐渡産コーヒーやクラフトドリンクのメニュー",
+      "鬼太鼓の写真が飾られた落ち着いた店内",
+      "両津港から歩いてすぐのアクセスと営業時間"
+    ],
+    "tags": [
+      "カフェ・喫茶",
+      "佐渡市",
+      "ランチ"
+    ],
+    "featureId": "おにCafe"
+  },
+  {
+    "id": "r709",
+    "name": "天ぷら えび福",
+    "cuisine": "天ぷら店",
+    "area": "大分県・大分市",
+    "region": "oita",
+    "shape": "square",
+    "image": "/restaurants/teleapo-天ぷらえび福/hero.jpg",
+    "heroImages": [
+      "/restaurants/teleapo-天ぷらえび福/hero.jpg",
+      "/restaurants/teleapo-天ぷらえび福/point1.jpg"
+    ],
+    "gallery": [
+      "/restaurants/teleapo-天ぷらえび福/hero.jpg",
+      "/restaurants/teleapo-天ぷらえび福/point1.jpg"
+    ],
+    "desc": "大分県大分市の天ぷら店。最寄りは大分駅北口から徒歩約8分。",
+    "address": "大分県大分市中央町3丁目6-15",
+    "hours": "月・火・木〜日 11:45–14:00, 18:00–21:00",
+    "closed": "水曜日",
+    "seats": "30席",
+    "nearest": "大分駅北口から徒歩約8分",
+    "phone": "097-536-4416",
+    "instagram": "https://www.instagram.com/tempura.ebifuku.0415",
+    "source": {
+      "label": "Google ビジネスプロフィール",
+      "url": "https://maps.google.com/?cid=1609172289613639156"
+    },
+    "body": [
+      "天ぷら えび福は、大分県大分市にあるお店です。業態は「天ぷら店」、所在地は大分県大分市中央町3丁目6-15、最寄りは大分駅北口から徒歩約8分です。マチノワ編集部の特集記事では、「天ぷら専門の天ぷら店という業態」・「掘りごたつ席を備えた総席数30席の店内」などを取り上げています。",
+      "営業時間は月・火・木〜日 11:45–14:00, 18:00–21:00、定休日は水曜日です。席は30席。営業時間は変わることがあるため、訪問前に公式サイトやSNS、お電話でご確認ください。"
+    ],
+    "highlights": [
+      "天ぷら専門の天ぷら店という業態",
+      "掘りごたつ席を備えた総席数30席の店内",
+      "大分駅北口から徒歩約8分、駐車場は近隣のコインパーキング",
+      "昼夜2部制、水曜定休の営業時間"
+    ],
+    "tags": [
+      "天ぷら店",
+      "大分市",
+      "大分駅",
+      "ランチ"
+    ],
+    "featureId": "天ぷらえび福"
+  },
+  {
+    "id": "r710",
+    "name": "ダモンデ",
+    "cuisine": "和食店",
+    "area": "東京都・文京区",
+    "region": "tokyo",
+    "shape": "square",
+    "image": "/restaurants/teleapo-ダモンデ/hero.jpg",
+    "heroImages": [
+      "/restaurants/teleapo-ダモンデ/hero.jpg",
+      "/restaurants/teleapo-ダモンデ/point1.jpg",
+      "/restaurants/teleapo-ダモンデ/point3.jpg",
+      "/restaurants/teleapo-ダモンデ/point4.jpg"
+    ],
+    "gallery": [
+      "/restaurants/teleapo-ダモンデ/hero.jpg",
+      "/restaurants/teleapo-ダモンデ/point1.jpg",
+      "/restaurants/teleapo-ダモンデ/point3.jpg",
+      "/restaurants/teleapo-ダモンデ/point4.jpg"
+    ],
+    "desc": "東京都文京区の和食店。最寄りは千代田線千駄木駅1番出口から徒歩4分。",
+    "address": "東京都文京区千駄木2丁目11-17 モンテベルデ千駄木 101",
+    "hours": "月〜金 18:00–23:00 / 土・日 17:00–23:00",
+    "closed": "なし",
+    "seats": "16席(カウンター6席/テーブル10席)",
+    "nearest": "千代田線千駄木駅1番出口から徒歩4分",
+    "phone": "070-2328-6830",
+    "instagram": "https://www.instagram.com/__damonde__",
+    "source": {
+      "label": "Google ビジネスプロフィール",
+      "url": "https://maps.google.com/?cid=17104365281806661710"
+    },
+    "body": [
+      "ダモンデは、東京都文京区にあるお店です。業態は「和食店」、所在地は東京都文京区千駄木2丁目11-17 モンテベルデ千駄木 101、最寄りは千代田線千駄木駅1番出口から徒歩4分です。マチノワ編集部の特集記事では、「牡蠣の煮びたしと魚の酒蒸しに加える独自の仕立て」・「サワラをゴマ餡で仕上げる季節の魚の酒蒸し」などを取り上げています。",
+      "営業時間は月〜金 18:00–23:00 / 土・日 17:00–23:00で、定休日はありません。席は16席(カウンター6席/テーブル10席)。営業時間は変わることがあるため、訪問前に公式サイトやSNS、お電話でご確認ください。"
+    ],
+    "highlights": [
+      "牡蠣の煮びたしと魚の酒蒸しに加える独自の仕立て",
+      "サワラをゴマ餡で仕上げる季節の魚の酒蒸し",
+      "燗酒向きの濃醇系からナチュラルワインまでそろうドリンク",
+      "カウンター6席とテーブル10席、16席の店内",
+      "千駄木駅から徒歩4分のアクセス"
+    ],
+    "tags": [
+      "和食店",
+      "文京区",
+      "千駄木駅"
+    ],
+    "featureId": "ダモンデ"
+  },
+  {
+    "id": "r711",
+    "name": "シャトークワナ",
+    "cuisine": "カフェ・喫茶",
+    "area": "三重県・桑名市",
+    "region": "mie",
+    "shape": "square",
+    "image": "/restaurants/teleapo-シャトークワナ/hero.jpg",
+    "heroImages": [
+      "/restaurants/teleapo-シャトークワナ/hero.jpg",
+      "/restaurants/teleapo-シャトークワナ/point1.jpg",
+      "/restaurants/teleapo-シャトークワナ/point2.jpg",
+      "/restaurants/teleapo-シャトークワナ/point3.jpg",
+      "/restaurants/teleapo-シャトークワナ/point4.jpg"
+    ],
+    "gallery": [
+      "/restaurants/teleapo-シャトークワナ/hero.jpg",
+      "/restaurants/teleapo-シャトークワナ/point1.jpg",
+      "/restaurants/teleapo-シャトークワナ/point2.jpg",
+      "/restaurants/teleapo-シャトークワナ/point3.jpg",
+      "/restaurants/teleapo-シャトークワナ/point4.jpg"
+    ],
+    "desc": "三重県桑名市のカフェ・喫茶。",
+    "address": "三重県桑名市内堀124",
+    "hours": "月・火・木〜日 09:00–17:00",
+    "closed": "水曜日",
+    "seats": "カウンター席・テーブル席",
+    "nearest": "—",
+    "phone": "0594-21-4188",
+    "source": {
+      "label": "Google ビジネスプロフィール",
+      "url": "https://maps.google.com/?cid=16162484020602275770"
+    },
+    "body": [
+      "シャトークワナは、三重県桑名市にあるお店です。業態は「カフェ・喫茶」、所在地は三重県桑名市内堀124です。マチノワ編集部の特集記事では、「創業50年、昔ながらの鉄板スパゲッティー」・「内堀に建つ全面ガラス張りの建物」などを取り上げています。",
+      "営業時間は月・火・木〜日 09:00–17:00、定休日は水曜日です。席はカウンター席・テーブル席。営業時間は変わることがあるため、訪問前に公式サイトやSNS、お電話でご確認ください。"
+    ],
+    "highlights": [
+      "創業50年、昔ながらの鉄板スパゲッティー",
+      "内堀に建つ全面ガラス張りの建物",
+      "カウンター席とテーブル席のある店内",
+      "おにぎり定食やお茶漬定食、11時までのモーニング",
+      "水曜定休、月火木金土日9時から17時の営業"
+    ],
+    "tags": [
+      "カフェ・喫茶",
+      "桑名市",
+      "ランチ"
+    ],
+    "featureId": "シャトークワナ"
+  },
+  {
+    "id": "r712",
+    "name": "Bar NEWYORK MIDTOWN 44 STREET",
+    "cuisine": "バー",
+    "area": "青森県・弘前市",
+    "region": "aomori",
+    "shape": "square",
+    "image": "/restaurants/teleapo-BarNEWYORKMIDTOWN44STREET/hero.jpg",
+    "heroImages": [
+      "/restaurants/teleapo-BarNEWYORKMIDTOWN44STREET/hero.jpg",
+      "/restaurants/teleapo-BarNEWYORKMIDTOWN44STREET/point1.jpg",
+      "/restaurants/teleapo-BarNEWYORKMIDTOWN44STREET/point2.jpg",
+      "/restaurants/teleapo-BarNEWYORKMIDTOWN44STREET/point3.jpg"
+    ],
+    "gallery": [
+      "/restaurants/teleapo-BarNEWYORKMIDTOWN44STREET/hero.jpg",
+      "/restaurants/teleapo-BarNEWYORKMIDTOWN44STREET/point1.jpg",
+      "/restaurants/teleapo-BarNEWYORKMIDTOWN44STREET/point2.jpg",
+      "/restaurants/teleapo-BarNEWYORKMIDTOWN44STREET/point3.jpg"
+    ],
+    "desc": "青森県弘前市のバー。",
+    "address": "青森県弘前市鍛冶町21 OTTOビル 4F",
+    "hours": "火〜日 18:00–02:00",
+    "closed": "月曜日",
+    "seats": "カウンター5席、4名テーブル1卓、6名テーブル1卓",
+    "nearest": "—",
+    "phone": "080-1800-0919",
+    "instagram": "https://www.instagram.com/barnewyorkmidtown44",
+    "source": {
+      "label": "Google ビジネスプロフィール",
+      "url": "https://maps.google.com/?cid=4374743201201833721"
+    },
+    "body": [
+      "Bar NEWYORK MIDTOWN 44 STREETは、青森県弘前市にあるお店です。業態は「バー」、所在地は青森県弘前市鍛冶町21 OTTOビル 4Fです。マチノワ編集部の特集記事では、「ベルギービールと約100種類のカクテルがそろうバーメニュー」・「ニューヨークソーセージなど洋風のおつまみ」などを取り上げています。",
+      "営業時間は火〜日 18:00–02:00、定休日は月曜日です。席はカウンター5席、4名テーブル1卓、6名テーブル1卓。営業時間は変わることがあるため、訪問前に公式サイトやSNS、お電話でご確認ください。"
+    ],
+    "highlights": [
+      "ベルギービールと約100種類のカクテルがそろうバーメニュー",
+      "ニューヨークソーセージなど洋風のおつまみ",
+      "カウンター席とソファー付きのテーブル席",
+      "OTTOビル4階、火曜から日曜まで営業"
+    ],
+    "tags": [
+      "バー",
+      "弘前市",
+      "深夜営業"
+    ],
+    "featureId": "BarNEWYORKMIDTOWN44STREET"
+  },
+  {
+    "id": "r713",
+    "name": "Bar DOPENESS",
+    "cuisine": "バー、ダイニングバー",
+    "area": "富山県・富山市",
+    "region": "toyama",
+    "shape": "square",
+    "image": "/restaurants/teleapo-BarDOPENESS/hero.jpg",
+    "heroImages": [
+      "/restaurants/teleapo-BarDOPENESS/hero.jpg",
+      "/restaurants/teleapo-BarDOPENESS/point1.jpg",
+      "/restaurants/teleapo-BarDOPENESS/point2.jpg",
+      "/restaurants/teleapo-BarDOPENESS/point4.jpg"
+    ],
+    "gallery": [
+      "/restaurants/teleapo-BarDOPENESS/hero.jpg",
+      "/restaurants/teleapo-BarDOPENESS/point1.jpg",
+      "/restaurants/teleapo-BarDOPENESS/point2.jpg",
+      "/restaurants/teleapo-BarDOPENESS/point4.jpg"
+    ],
+    "desc": "富山県富山市のバー、ダイニングバー。最寄りは電気ビル前駅から78m。",
+    "address": "富山県富山市新桜町5-14 新桜町ビル 2F",
+    "hours": "毎日 19:00–04:00",
+    "closed": "なし",
+    "seats": "カウンター席あり",
+    "nearest": "電気ビル前駅から78m",
+    "phone": "050-8896-6890",
+    "instagram": "https://www.instagram.com/dopeness_toyama",
+    "source": {
+      "label": "Google ビジネスプロフィール",
+      "url": "https://maps.google.com/?cid=16879324476395401065"
+    },
+    "body": [
+      "Bar DOPENESSは、富山県富山市にあるお店です。業態は「バー、ダイニングバー」、所在地は富山県富山市新桜町5-14 新桜町ビル 2F、最寄りは電気ビル前駅から78mです。マチノワ編集部の特集記事では、「緩やかな曲線を描く雲形のカウンター」・「バー、ダイニングバーとして営業する予約可の店」などを取り上げています。",
+      "営業時間は毎日 19:00–04:00で、定休日はありません。席はカウンター席あり。営業時間は変わることがあるため、訪問前に公式サイトやSNS、お電話でご確認ください。"
+    ],
+    "highlights": [
+      "緩やかな曲線を描く雲形のカウンター",
+      "バー、ダイニングバーとして営業する予約可の店",
+      "カウンター席を中心とした店内",
+      "新桜町ビル2Fにあり徒歩で通いやすい立地"
+    ],
+    "tags": [
+      "バー、ダイニングバー",
+      "バー",
+      "富山市",
+      "電気ビル前駅",
+      "深夜営業"
+    ],
+    "featureId": "BarDOPENESS"
+  },
+  {
+    "id": "r714",
+    "name": "Bar & Dining Jammin",
+    "cuisine": "バー",
+    "area": "京都府・京都市東山区",
+    "region": "kyoto",
+    "shape": "square",
+    "image": "/restaurants/teleapo-BarDiningJammin/hero.jpg",
+    "heroImages": [
+      "/restaurants/teleapo-BarDiningJammin/hero.jpg",
+      "/restaurants/teleapo-BarDiningJammin/point1.jpg",
+      "/restaurants/teleapo-BarDiningJammin/point2.jpg",
+      "/restaurants/teleapo-BarDiningJammin/point3.jpg",
+      "/restaurants/teleapo-BarDiningJammin/point4.jpg"
+    ],
+    "gallery": [
+      "/restaurants/teleapo-BarDiningJammin/hero.jpg",
+      "/restaurants/teleapo-BarDiningJammin/point1.jpg",
+      "/restaurants/teleapo-BarDiningJammin/point2.jpg",
+      "/restaurants/teleapo-BarDiningJammin/point3.jpg",
+      "/restaurants/teleapo-BarDiningJammin/point4.jpg",
+      "/restaurants/teleapo-BarDiningJammin/point5.jpg"
+    ],
+    "desc": "京都府京都市東山区のバー。",
+    "address": "京都府京都市東山区弁財天町8, 今京都市東山区四条縄手通上る 1番館ビル3F",
+    "hours": "月 17:00–02:00 / 火〜土 19:00–02:00 / 日 18:00–00:00",
+    "closed": "なし",
+    "seats": "カウンター席・ソファー席・テーブル席",
+    "nearest": "—",
+    "phone": "075-533-3155",
+    "source": {
+      "label": "Google ビジネスプロフィール",
+      "url": "https://maps.google.com/?cid=8583551172780153422"
+    },
+    "body": [
+      "Bar & Dining Jamminは、京都府京都市東山区にあるお店です。業態は「バー」、所在地は京都府京都市東山区弁財天町8, 今京都市東山区四条縄手通上る 1番館ビル3Fです。マチノワ編集部の特集記事では、「ビール・バーボン・焼酎にマスターオリジナルのカクテル」・「マスターがミュージシャン、週末にはライブも」などを取り上げています。",
+      "営業時間は月 17:00–02:00 / 火〜土 19:00–02:00 / 日 18:00–00:00で、定休日はありません。席はカウンター席・ソファー席・テーブル席。営業時間は変わることがあるため、訪問前に公式サイトやSNS、お電話でご確認ください。"
+    ],
+    "highlights": [
+      "ビール・バーボン・焼酎にマスターオリジナルのカクテル",
+      "マスターがミュージシャン、週末にはライブも",
+      "パスタやピザ、グリーンカレーなど酒に合うフード",
+      "ダウンライトの落ち着いた店内、カウンター・ソファー・テーブル席",
+      "祇園一番館ビル3階、大和大路通沿いのアクセス"
+    ],
+    "tags": [
+      "バー",
+      "東山区",
+      "深夜営業"
+    ],
+    "featureId": "BarDiningJammin"
+  },
+  {
+    "id": "r715",
+    "name": "Ｂｏｕｌａｎｇｅｒｉｅ Ｒｅｖｅ想",
+    "cuisine": "ベーカリー",
+    "area": "新潟県・燕市",
+    "region": "niigata",
+    "shape": "square",
+    "image": "/restaurants/teleapo-BoulangerieReve想/hero.jpg",
+    "heroImages": [
+      "/restaurants/teleapo-BoulangerieReve想/hero.jpg",
+      "/restaurants/teleapo-BoulangerieReve想/point3.jpg",
+      "/restaurants/teleapo-BoulangerieReve想/point4.jpg"
+    ],
+    "gallery": [
+      "/restaurants/teleapo-BoulangerieReve想/hero.jpg",
+      "/restaurants/teleapo-BoulangerieReve想/point3.jpg",
+      "/restaurants/teleapo-BoulangerieReve想/point4.jpg"
+    ],
+    "desc": "新潟県燕市のベーカリー。",
+    "address": "新潟県燕市吉田西太田773-6",
+    "hours": "月・水〜金 08:30–17:00 / 土・日 08:00–16:00",
+    "closed": "火曜日",
+    "seats": "—（訪問前に公式確認）",
+    "nearest": "—",
+    "phone": "0256-94-0155",
+    "source": {
+      "label": "Google ビジネスプロフィール",
+      "url": "https://maps.google.com/?cid=8609915493784848163"
+    },
+    "body": [
+      "Ｂｏｕｌａｎｇｅｒｉｅ Ｒｅｖｅ想は、新潟県燕市にあるお店です。業態は「ベーカリー」、所在地は新潟県燕市吉田西太田773-6です。マチノワ編集部の特集記事では、「牛乳とハチミツでコクを出すもっちり食パン」・「燕市の農家が育てた小麦と地元野菜を使う」などを取り上げています。",
+      "営業時間は月・水〜金 08:30–17:00 / 土・日 08:00–16:00、定休日は火曜日です。営業時間は変わることがあるため、訪問前に公式サイトやSNS、お電話でご確認ください。"
+    ],
+    "highlights": [
+      "牛乳とハチミツでコクを出すもっちり食パン",
+      "燕市の農家が育てた小麦と地元野菜を使う",
+      "和栗とフランボワーズを合わせた季節のデニッシュ",
+      "ムーミンの世界をイメージした店内とキャラクターパン",
+      "火曜と第3月曜が定休日のパン屋"
+    ],
+    "tags": [
+      "ベーカリー",
+      "パン",
+      "燕市",
+      "ランチ"
+    ],
+    "featureId": "BoulangerieReve想"
+  },
+  {
+    "id": "r716",
+    "name": "おうち酒場 BoNono",
+    "cuisine": "居酒屋",
+    "area": "宮城県・仙台市青葉区",
+    "region": "miyagi",
+    "shape": "square",
+    "image": "/restaurants/teleapo-おうち酒場BoNono/hero.jpg",
+    "heroImages": [
+      "/restaurants/teleapo-おうち酒場BoNono/hero.jpg",
+      "/restaurants/teleapo-おうち酒場BoNono/point1.jpg",
+      "/restaurants/teleapo-おうち酒場BoNono/point2.jpg"
+    ],
+    "gallery": [
+      "/restaurants/teleapo-おうち酒場BoNono/hero.jpg",
+      "/restaurants/teleapo-おうち酒場BoNono/point1.jpg",
+      "/restaurants/teleapo-おうち酒場BoNono/point2.jpg"
+    ],
+    "desc": "宮城県仙台市青葉区の居酒屋。",
+    "address": "宮城県仙台市青葉区国分町2丁目5-7 6F",
+    "hours": "毎日 19:00–00:00",
+    "closed": "なし",
+    "seats": "—（訪問前に公式確認）",
+    "nearest": "—",
+    "phone": "022-796-9179",
+    "source": {
+      "label": "Google ビジネスプロフィール",
+      "url": "https://maps.google.com/?cid=1592648533724618650"
+    },
+    "body": [
+      "おうち酒場 BoNonoは、宮城県仙台市青葉区にあるお店です。業態は「居酒屋」、所在地は宮城県仙台市青葉区国分町2丁目5-7 6Fです。マチノワ編集部の特集記事では、「肉料理とドリンクを提供する一軒」・「雑貨やノートが並ぶ店内の本棚」などを取り上げています。",
+      "営業時間は毎日 19:00–00:00で、定休日はありません。営業時間は変わることがあるため、訪問前に公式サイトやSNS、お電話でご確認ください。"
+    ],
+    "highlights": [
+      "肉料理とドリンクを提供する一軒",
+      "雑貨やノートが並ぶ店内の本棚",
+      "国分町のビルで夜から深夜まで営業"
+    ],
+    "tags": [
+      "居酒屋",
+      "青葉区",
+      "深夜営業"
+    ],
+    "featureId": "おうち酒場BoNono"
+  },
+  {
+    "id": "r717",
+    "name": "Beach bar Calypso",
+    "cuisine": "バー",
+    "area": "東京都・新宿区",
+    "region": "tokyo",
+    "shape": "square",
+    "image": "/restaurants/teleapo-BeachbarCalypso/hero.jpg",
+    "heroImages": [
+      "/restaurants/teleapo-BeachbarCalypso/hero.jpg",
+      "/restaurants/teleapo-BeachbarCalypso/point1.jpg",
+      "/restaurants/teleapo-BeachbarCalypso/point2.jpg"
+    ],
+    "gallery": [
+      "/restaurants/teleapo-BeachbarCalypso/hero.jpg",
+      "/restaurants/teleapo-BeachbarCalypso/point1.jpg",
+      "/restaurants/teleapo-BeachbarCalypso/point2.jpg"
+    ],
+    "desc": "東京都新宿区のバー。",
+    "address": "東京都新宿区新宿3丁目11-2 村木ビル B1F",
+    "hours": "月〜土 20:00–03:00",
+    "closed": "日曜日",
+    "seats": "—（訪問前に公式確認）",
+    "nearest": "—",
+    "phone": "03-6457-4857",
+    "source": {
+      "label": "Google ビジネスプロフィール",
+      "url": "https://maps.google.com/?cid=17998488442923651462"
+    },
+    "body": [
+      "Beach bar Calypsoは、東京都新宿区にあるお店です。業態は「バー」、所在地は東京都新宿区新宿3丁目11-2 村木ビル B1Fです。マチノワ編集部の特集記事では、「タコスと酒を軸にしたメニュー」・「地下に広がる小さなカリブ海をイメージした空間」などを取り上げています。",
+      "営業時間は月〜土 20:00–03:00、定休日は日曜日です。営業時間は変わることがあるため、訪問前に公式サイトやSNS、お電話でご確認ください。"
+    ],
+    "highlights": [
+      "タコスと酒を軸にしたメニュー",
+      "地下に広がる小さなカリブ海をイメージした空間",
+      "2020年の海の日に開業",
+      "アクセスと営業情報"
+    ],
+    "tags": [
+      "バー",
+      "新宿区",
+      "深夜営業"
+    ],
+    "featureId": "BeachbarCalypso"
   }
 ];
 
@@ -18626,7 +19866,32 @@ export const ARTICLE_STORE_FEATURE_IDS: Record<string, string> = {
   "r689": "炭火焼内灘市場",
   "r690": "KiKi",
   "r691": "焼肉なが井",
-  "r692": "マル信緑香園"
+  "r692": "マル信緑香園",
+  "r693": "むぎぞう",
+  "r694": "GATEAUORANGE（ガトーオランジュ）",
+  "r695": "TiBURONCAFE",
+  "r696": "満天や",
+  "r697": "DiningBarMarib四条烏丸",
+  "r698": "ボードゲームカフェCARIVAN",
+  "r699": "カナデアンコーヒーハウスメイプル",
+  "r700": "焼き鳥居酒屋さつき",
+  "r701": "キッチンカーKAMUI（カムイ）",
+  "r702": "西荻ペッコリーノ",
+  "r703": "おもちびより",
+  "r704": "くろしお弁当",
+  "r705": "FOGcoffee",
+  "r706": "我が家おてちき屋",
+  "r707": "璃夢Rim",
+  "r708": "おにCafe",
+  "r709": "天ぷらえび福",
+  "r710": "ダモンデ",
+  "r711": "シャトークワナ",
+  "r712": "BarNEWYORKMIDTOWN44STREET",
+  "r713": "BarDOPENESS",
+  "r714": "BarDiningJammin",
+  "r715": "BoulangerieReve想",
+  "r716": "おうち酒場BoNono",
+  "r717": "BeachbarCalypso"
 };
 
 /** 特集記事ID → 店舗ID */
@@ -19019,5 +20284,30 @@ export const ARTICLE_STORE_ID_BY_FEATURE: Record<string, string> = {
   "炭火焼内灘市場": "r689",
   "KiKi": "r690",
   "焼肉なが井": "r691",
-  "マル信緑香園": "r692"
+  "マル信緑香園": "r692",
+  "むぎぞう": "r693",
+  "GATEAUORANGE（ガトーオランジュ）": "r694",
+  "TiBURONCAFE": "r695",
+  "満天や": "r696",
+  "DiningBarMarib四条烏丸": "r697",
+  "ボードゲームカフェCARIVAN": "r698",
+  "カナデアンコーヒーハウスメイプル": "r699",
+  "焼き鳥居酒屋さつき": "r700",
+  "キッチンカーKAMUI（カムイ）": "r701",
+  "西荻ペッコリーノ": "r702",
+  "おもちびより": "r703",
+  "くろしお弁当": "r704",
+  "FOGcoffee": "r705",
+  "我が家おてちき屋": "r706",
+  "璃夢Rim": "r707",
+  "おにCafe": "r708",
+  "天ぷらえび福": "r709",
+  "ダモンデ": "r710",
+  "シャトークワナ": "r711",
+  "BarNEWYORKMIDTOWN44STREET": "r712",
+  "BarDOPENESS": "r713",
+  "BarDiningJammin": "r714",
+  "BoulangerieReve想": "r715",
+  "おうち酒場BoNono": "r716",
+  "BeachbarCalypso": "r717"
 };

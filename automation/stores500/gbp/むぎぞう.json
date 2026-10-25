@@ -1,0 +1,22 @@
+{
+  "name": "むぎぞう",
+  "address": "三重県桑名市新西方２丁目３０８",
+  "lat": 35.0730633,
+  "lng": 136.6577047,
+  "category": "ベーカリー",
+  "hours": {
+    "月": "定休日",
+    "火": "定休日",
+    "水": "定休日",
+    "木": "08:30–19:00",
+    "金": "08:30–19:00",
+    "土": "08:30–19:00",
+    "日": "08:30–19:00"
+  },
+  "phone": "0594-23-6577",
+  "website": "https://www.instagram.com/panyamugizou/",
+  "priceRange": null,
+  "status": null,
+  "gbpUrl": "https://maps.google.com/?cid=16934948029660796439",
+  "fetchedAt": "2026-10-25T00:23:10.233Z"
+}

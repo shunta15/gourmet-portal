@@ -1,0 +1,22 @@
+{
+  "name": "璃夢 Rim",
+  "address": "千葉県四街道市鹿渡２００２−１１ 濱田ビル2F F3",
+  "lat": 35.663814,
+  "lng": 140.165621,
+  "category": "バー",
+  "hours": {
+    "月": "定休日",
+    "火": "18:00–00:00",
+    "水": "18:00–00:00",
+    "木": "18:00–00:00",
+    "金": "18:00–00:00",
+    "土": "18:00–00:00",
+    "日": "定休日"
+  },
+  "phone": "043-312-5252",
+  "website": "https://www.instagram.com/choco24518?igsh=cndremFqMmp2cGI=",
+  "priceRange": null,
+  "status": null,
+  "gbpUrl": "https://maps.google.com/?cid=12742459572822139104",
+  "fetchedAt": "2026-10-25T01:02:04.408Z"
+}

@@ -1,0 +1,40 @@
+{
+  "tab": "トリニティアポ",
+  "tabEn": "tri-activity",
+  "row": 142,
+  "sheet": {
+    "name": "Blue Corn",
+    "address": "",
+    "url": "https://www.google.com/search?q=090-3323-3498+Blue+Corn+%E3%80%92858-0922+%E9%95%B7%E5%B4%8E%E7%9C%8C%E4%BD%90%E4%B8%96%E4%BF%9D%E5%B8%82%E9%B9%BF%E5%AD%90%E5%89%8D%E7%94%BA%EF%BC%97%EF%BC%99%EF%BC%98%E2%88%92%EF%BC%92&sca_esv=52bfc3f059da9228&aep=1&cs=0&biw=1068&bih=1256&prmd=ivns&sxsrf=APpeQnszXet960Dfwet3yX8DWjKEMSroQg:1792487600055&source=lnms&fbs=ABfTbFWk9gWDhLue0OoUA3T3RP22UL16OPe0VWxK-FP4LXaQy3vdYXrxlstb3dwvL5J6DmDIcNDR1_Gkv5wKvpPf5-Ys50uPrNkzFM80PQsG38wJbX_FNQ6lIMT8L9c1Dow-6eGPF2-29pEm9qBnzMEGae0wCujZ6ATEcbpEBPOL1wi5W9rNwwDD7RKsCT6O4e7CGmLwR1iImRyA-soTtZu34gj_5a7NFYLBLj4Ctm7IVK_unq1QdV4&sa=X&ved=2ahUKEwibhKnVoMiXAxUDgVYBHWsnIXUQ0pQJegQIBxAF",
+    "type": "体験",
+    "d1": "",
+    "d2": ""
+  },
+  "urlKind": "search",
+  "route": "第1段(verify-gbp.mjs)で確認済み",
+  "verdict": "一致",
+  "verdictReason": "電話が一致／店名: exact(シート「Blue Corn」/ マップ「Blue Corn」)／住所(検索URL): exact・町名・番地とも一致",
+  "place": {
+    "name": "Blue Corn",
+    "address": "長崎県佐世保市鹿子前町７９８−２",
+    "category": "カヌー / カヤックツアー代理店",
+    "lat": 33.1626256,
+    "lng": 129.6862846,
+    "gbpUrl": "https://maps.google.com/?cid=4382569925399837524",
+    "phone": "090-3323-3498",
+    "website": "https://www.facebook.com/bluecorn99",
+    "hours": {
+      "月": "10:00–17:00",
+      "火": "10:00–17:00",
+      "水": "10:00–17:00",
+      "木": "10:00–17:00",
+      "金": "10:00–17:00",
+      "土": "10:00–17:00",
+      "日": "10:00–17:00"
+    },
+    "reserveLinks": [],
+    "statusSignals": [],
+    "closedSignal": false
+  },
+  "fetchedAt": "2026-10-25T00:52:39.851Z"
+}

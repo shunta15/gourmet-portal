@@ -1,0 +1,32 @@
+{
+  "tab": "トリニティアポ",
+  "tabEn": "tri-stay",
+  "row": 116,
+  "sheet": {
+    "name": "湯平温泉　旅館いづもや",
+    "address": "",
+    "url": "https://www.google.com/search?q=%E6%B9%AF%E5%B9%B3%E6%B8%A9%E6%B3%89+%E6%97%85%E9%A4%A8%E3%81%84%E3%81%A5%E3%82%82%E3%82%84&oq=%E6%B9%AF%E5%B9%B3%E6%B8%A9%E6%B3%89%E3%80%80%E6%97%85%E9%A4%A8%E3%81%84%E3%81%A5%E3%82%82%E3%82%84&gs_lcrp=EgZjaHJvbWUyBggAEEUYOdIBBjE1ajBqNKgCALACAQ&sourceid=chrome&source=chrome.ob&ie=UTF-8",
+    "type": "宿泊",
+    "d1": "",
+    "d2": ""
+  },
+  "urlKind": "search",
+  "route": "第1段(verify-gbp.mjs)で確認済み",
+  "verdict": "一致",
+  "verdictReason": "電話が一致／店名: contains(シート「湯平温泉　旅館いづもや」/ マップ「旅館いづもや」)",
+  "place": {
+    "name": "旅館いづもや",
+    "address": "大分県由布市湯布院町湯平３１１",
+    "category": null,
+    "lat": 33.1922548,
+    "lng": 131.3263039,
+    "gbpUrl": "https://maps.google.com/?cid=8750848353216529969",
+    "phone": "0977-86-2045",
+    "website": null,
+    "hours": null,
+    "reserveLinks": [],
+    "statusSignals": [],
+    "closedSignal": false
+  },
+  "fetchedAt": "2026-10-25T00:44:16.831Z"
+}

@@ -2521,6 +2521,143 @@
           "和室"
         ]
       }
+    },
+    {
+      "id": "st0014",
+      "vertical": "stay",
+      "category": "ryokan",
+      "name": "旅館いづもや",
+      "pref": "oita",
+      "cityName": "由布市",
+      "address": "大分県由布市湯布院町湯平311",
+      "lat": 33.1922548,
+      "lng": 131.3263039,
+      "phone": "0977-86-2045",
+      "mapUrl": "https://maps.google.com/?cid=8750848353216529969",
+      "image": "/_portal/vshops/tri-stay-116/g01.jpg",
+      "images": [
+        "/_portal/vshops/tri-stay-116/g01.jpg",
+        "/_portal/vshops/tri-stay-116/g02.jpg",
+        "/_portal/vshops/tri-stay-116/g03.jpg",
+        "/_portal/vshops/tri-stay-116/g04.jpg",
+        "/_portal/vshops/tri-stay-116/g05.jpg",
+        "/_portal/vshops/tri-stay-116/g06.jpg",
+        "/_portal/vshops/tri-stay-116/g07.jpg",
+        "/_portal/vshops/tri-stay-116/g08.jpg",
+        "/_portal/vshops/tri-stay-116/g09.jpg",
+        "/_portal/vshops/tri-stay-116/g10.jpg"
+      ],
+      "photos": [
+        {
+          "path": "/_portal/vshops/tri-stay-116/g01.jpg",
+          "what": "瓦屋根の和風建築の旅館の外観",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 675
+        },
+        {
+          "path": "/_portal/vshops/tri-stay-116/g02.jpg",
+          "what": "木々に囲まれた旅館の建物を見下ろす景色",
+          "kind": "view",
+          "width": 1200,
+          "height": 675
+        },
+        {
+          "path": "/_portal/vshops/tri-stay-116/g03.jpg",
+          "what": "布団が敷かれた二間続きの和室",
+          "kind": "room",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-stay-116/g04.jpg",
+          "what": "窓際に椅子とテーブルがある和室",
+          "kind": "room",
+          "width": 678,
+          "height": 452
+        },
+        {
+          "path": "/_portal/vshops/tri-stay-116/g05.jpg",
+          "what": "木の梁がある階段と廊下",
+          "kind": "common",
+          "width": 680,
+          "height": 451
+        },
+        {
+          "path": "/_portal/vshops/tri-stay-116/g06.jpg",
+          "what": "夜に灯りがともる旅館の玄関",
+          "kind": "exterior",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-stay-116/g07.jpg",
+          "what": "薄切り肉が並ぶ料理の皿",
+          "kind": "meal",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-stay-116/g08.jpg",
+          "what": "石造りの露天風呂",
+          "kind": "bath",
+          "width": 1200,
+          "height": 675
+        },
+        {
+          "path": "/_portal/vshops/tri-stay-116/g09.jpg",
+          "what": "刺身と巻き寿司が盛られた皿",
+          "kind": "meal",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-stay-116/g10.jpg",
+          "what": "魚介の串焼きが盛られた皿",
+          "kind": "meal",
+          "width": 900,
+          "height": 1200
+        }
+      ],
+      "tags": [
+        "温泉"
+      ],
+      "article": {
+        "headline": "大分県由布市、湯平温泉にある旅館。1日３組までの小さな宿で、客室は本館の「紅葉」「蘭」と、内湯付きの離れ「沙羅」の3室",
+        "lede": "由布市にある「旅館いづもや」です。湯平温泉に位置し、1日３組までの小さな旅館です。客室は、本館の「紅葉」「蘭」と、内湯付き離れの「沙羅」の3室があります。",
+        "sections": [
+          {
+            "heading": "旅館について",
+            "body": "湯平温泉にある、1日３組までの小さな旅館です。泉質はナトリウム－塩化物・炭酸水素塩泉です。"
+          },
+          {
+            "heading": "客室",
+            "body": "客室は３つあります。「沙羅」のほか、本館に「紅葉」「蘭」の２室があります。二間続きの広い和室は、昔懐かしい日本らしさに満たされています。離れの「沙羅」は、内湯付きのスタイルです。"
+          },
+          {
+            "heading": "お風呂とアクセス",
+            "body": "風呂は内湯、露天、客室付がそれぞれ１つずつあります。JR湯平駅から車で10分の場所にあります。"
+          }
+        ],
+        "sources": [
+          {
+            "label": "大分県の観光情報サイト",
+            "url": "https://www.visit-oita.jp/spots/detail/9396"
+          },
+          {
+            "label": "Google マップ",
+            "url": "https://maps.google.com/?cid=8750848353216529969"
+          }
+        ],
+        "checkedAt": "2026-10-25"
+      },
+      "attributes": {
+        "roomTypes": [
+          "紅葉",
+          "蘭",
+          "沙羅"
+        ]
+      }
     }
   ]
 }

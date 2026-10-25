@@ -1,0 +1,22 @@
+{
+  "name": "カナデアンコーヒーハウス メイプル",
+  "address": "宮城県遠田郡美里町練牛二十号３９",
+  "lat": 38.5076286,
+  "lng": 141.1206525,
+  "category": "コーヒーショップ・喫茶店",
+  "hours": {
+    "月": "10:00–17:00",
+    "火": "10:00–17:00",
+    "水": "10:00–17:00",
+    "木": "10:00–22:00",
+    "金": "10:00–22:00",
+    "土": "10:00–22:00",
+    "日": "10:00–21:00"
+  },
+  "phone": "0229-58-0511",
+  "website": "https://www.instagram.com/maple_with_canadeannight?stkn=MWJwejN5dzZpbXVmaQ==&utm_source=qr",
+  "priceRange": null,
+  "status": null,
+  "gbpUrl": "https://maps.google.com/?cid=9862580239340839119",
+  "fetchedAt": "2026-10-25T00:46:46.428Z"
+}

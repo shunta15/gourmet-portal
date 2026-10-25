@@ -1,0 +1,116 @@
+{
+  "key": "tri-bodycare-172",
+  "images": [
+    {
+      "path": "/_portal/vshops/tri-bodycare-172/g01.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9SGCYGhjFkWHhvrifh1-FpykfTNWOgrRbHHFCAyAXRn3bcklbkS9g31tjADuBeKuzUdvgxEjCOtNNzgesqL44_5fF_TeY62pGfLumugz6gGopLn5Kc597KK51na3GP_5_4yyzaGiItCtqQ=s1200",
+      "pageUrl": "https://maps.google.com/?cid=7523553987694133174",
+      "what": "白い外壁の二階建て住宅の外観",
+      "kind": "exterior",
+      "width": 1200,
+      "height": 900,
+      "source": "Google マップ"
+    },
+    {
+      "path": "/_portal/vshops/tri-bodycare-172/g02.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9RFSmFvZtOH8W0_O5lvhgb-5gq75tC7SvP5UUXXfvKOkBVU2_1KYfsAOKw48k7ZcoBjb_z5LRd7IBKXSC6woggnd28jKidb3YqJGFrzR0NpyHwNPHkhQnIhPwFvGYECZxyzTcNlqLKzCM0=s1200",
+      "pageUrl": "https://maps.google.com/?cid=7523553987694133174",
+      "what": "木目の床と棚がある院内の通路",
+      "kind": "common",
+      "width": 1200,
+      "height": 900,
+      "source": "Google マップ"
+    },
+    {
+      "path": "/_portal/vshops/tri-bodycare-172/g03.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9TF-_q0MmjL63ttW0-Bu0i7aM4TBkKjjRIyVuLFUDGL3Bo4XJsUDBGFZMS5nA_qANuV_cY2FP4urMzJZERfE793k0fdoa8bOv_7PzmwoOZxhV6UoMLct5O5EIdXIBeaUmBdwzo24tOUBRU=s1200",
+      "pageUrl": "https://maps.google.com/?cid=7523553987694133174",
+      "what": "窓のある施術室で座った人に施術する様子",
+      "kind": "room",
+      "width": 1200,
+      "height": 800,
+      "source": "Google マップ"
+    },
+    {
+      "path": "/_portal/vshops/tri-bodycare-172/g04.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9R5qiXs_Bz4sVzTPpZJXV8GibeC6ZSCbGd16qqTZKsbYIMPc7c5Tf8tvATaLzQMmjXNb-h_A5e3XiZUklW9ClZj37EEEfUqaGRPi7MoY4s-54WI8CxbM86kEIgMiKI7MB8y4_ZNf_wZqNY=s1200",
+      "pageUrl": "https://maps.google.com/?cid=7523553987694133174",
+      "what": "施術ベッドに横になった人へ施術する様子",
+      "kind": "room",
+      "width": 1200,
+      "height": 800,
+      "source": "Google マップ"
+    },
+    {
+      "path": "/_portal/vshops/tri-bodycare-172/g05.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9SylayfQnxboLI177CCBAYKdEdFQv7RHRQZVDNnEh6RgiD9uLF4BVNahP9wSrkCg0vBnkC9DbLyBTEYpabX9Qv6BgYjDOtDurgcXamhXuk59eXGdQDFzLIuJdlFDHub8M0yOUCQ6rc43BQt=s1200",
+      "pageUrl": "https://maps.google.com/?cid=7523553987694133174",
+      "what": "白い壁の施術室で横になった人へ施術する様子",
+      "kind": "room",
+      "width": 871,
+      "height": 1200,
+      "source": "Google マップ"
+    },
+    {
+      "path": "/_portal/vshops/tri-bodycare-172/s02.jpg",
+      "imageUrl": "https://derive-seitai.com/wp-content/uploads/2026/07/hero_back1.jpg",
+      "pageUrl": "https://derive-seitai.com/",
+      "what": "施術ベッドに横になった人へ施術する様子",
+      "kind": "room",
+      "width": 1280,
+      "height": 996,
+      "source": "公式サイト"
+    },
+    {
+      "path": "/_portal/vshops/tri-bodycare-172/s03.jpg",
+      "imageUrl": "https://derive-seitai.com/wp-content/uploads/2026/07/hero_neck2.jpg",
+      "pageUrl": "https://derive-seitai.com/",
+      "what": "座った人の首に手を添えて施術する様子",
+      "kind": "room",
+      "width": 1280,
+      "height": 992,
+      "source": "公式サイト"
+    },
+    {
+      "path": "/_portal/vshops/tri-bodycare-172/s06.jpg",
+      "imageUrl": "https://derive-seitai.com/wp-content/themes/derive/img/top/fv_04.jpg",
+      "pageUrl": "https://derive-seitai.com/",
+      "what": "施術ベッドに横になった人へ施術する様子",
+      "kind": "room",
+      "width": 1280,
+      "height": 853,
+      "source": "公式サイト"
+    },
+    {
+      "path": "/_portal/vshops/tri-bodycare-172/s07.jpg",
+      "imageUrl": "https://derive-seitai.com/wp-content/uploads/2026/07/treatment_02-opt.webp",
+      "pageUrl": "https://derive-seitai.com/",
+      "what": "施術ベッドで足を上げてストレッチする様子",
+      "kind": "room",
+      "width": 1200,
+      "height": 800,
+      "source": "公式サイト"
+    },
+    {
+      "path": "/_portal/vshops/tri-bodycare-172/s08.jpg",
+      "imageUrl": "https://derive-seitai.com/wp-content/uploads/2026/07/treatment_03-opt.webp",
+      "pageUrl": "https://derive-seitai.com/",
+      "what": "施術ベッドで背中に手を当てる様子",
+      "kind": "room",
+      "width": 1200,
+      "height": 800,
+      "source": "公式サイト"
+    },
+    {
+      "path": "/_portal/vshops/tri-bodycare-172/s18.jpg",
+      "imageUrl": "https://derive-seitai.com/wp-content/uploads/2026/09/greeting-okamoto.jpg",
+      "pageUrl": "https://derive-seitai.com/greeting/",
+      "what": "施術ベッドに横になった人へ施術する様子",
+      "kind": "room",
+      "width": 835,
+      "height": 1048,
+      "source": "公式サイト"
+    }
+  ],
+  "note": "automation/v2/write.mjs が 2026-10-25T02:28:42.441Z に取得。店の実写だけ(AI 画像・汎用画像・地図・ロゴ・顔が大きい画像は除外)。"
+}

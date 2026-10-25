@@ -1,0 +1,22 @@
+{
+  "name": "Bar DOPENESS",
+  "address": "富山県富山市新桜町５−１４ 新桜町ビル 2F",
+  "lat": 36.6968292,
+  "lng": 137.2151602,
+  "category": "バー",
+  "hours": {
+    "月": "19:00–04:00",
+    "火": "19:00–04:00",
+    "水": "19:00–04:00",
+    "木": "19:00–04:00",
+    "金": "19:00–04:00",
+    "土": "19:00–04:00",
+    "日": "19:00–04:00"
+  },
+  "phone": "050-8896-6890",
+  "website": "https://instagram.com/dopeness_toyama?igshid=YmMyMTA2M2Y=",
+  "priceRange": null,
+  "status": null,
+  "gbpUrl": "https://maps.google.com/?cid=16879324476395401065",
+  "fetchedAt": "2026-10-25T01:10:21.117Z"
+}

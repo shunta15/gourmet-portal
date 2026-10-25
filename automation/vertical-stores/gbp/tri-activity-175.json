@@ -1,0 +1,40 @@
+{
+  "tab": "トリニティアポ",
+  "tabEn": "tri-activity",
+  "row": 175,
+  "sheet": {
+    "name": "海の音色",
+    "address": "",
+    "url": "https://www.google.com/search?q=%E6%B5%B7%E3%81%AE%E9%9F%B3%E8%89%B2%E3%80%80%E9%9D%99%E5%B2%A1&sca_esv=1de6a5064e96f472&biw=1536&bih=703&sxsrf=APpeQnsBmyJ5vvJkVQGAZRaTQSCAI3sM5w%3A1792646676607&ei=FJ7ZatLEJKKl2roPpdDI-AI&uact=5&oq=%E6%B5%B7%E3%81%AE%E9%9F%B3%E8%89%B2%E3%80%80%E9%9D%99%E5%B2%A1&gs_lp=Egxnd3Mtd2l6LXNlcnAiFea1t-OBrumfs-iJsuOAgOmdmeWyoTIFEAAY7wUyCBAAGIAEGKIEMggQABiABBiiBEibG1COAljyGXAFeACQAQCYAWGgAaUIqgECMTK4AQPIAQD4AQL4AQGYAg6gAocIwgIFEAAYgATCAgcQABiABBgEwgIGEAAYBBgewgIIEAAYCBgEGB7CAgIQJpgDAIgGAZIHBDEyLjKgB9sWsgcDOS4yuAf7B8IHBTAuOS41yAcmgAgB&sclient=gws-wiz-serp",
+    "type": "レジャー",
+    "d1": "",
+    "d2": ""
+  },
+  "urlKind": "search",
+  "route": "第1段(verify-gbp.mjs)で確認済み",
+  "verdict": "一致",
+  "verdictReason": "電話が一致／店名: exact(シート「海の音色」/ マップ「海の音色」)",
+  "place": {
+    "name": "海の音色",
+    "address": "静岡県熱海市",
+    "category": "ツアー業者",
+    "lat": 35.0599961,
+    "lng": 139.069635,
+    "gbpUrl": "https://maps.google.com/?cid=5280472783725508324",
+    "phone": "090-5453-1173",
+    "website": "https://uminoneiro.jimdofree.com/",
+    "hours": {
+      "月": "09:00–17:00",
+      "火": "09:00–17:00",
+      "水": "09:00–17:00",
+      "木": "09:00–17:00",
+      "金": "09:00–17:00",
+      "土": "09:00–17:00",
+      "日": "09:00–17:00"
+    },
+    "reserveLinks": [],
+    "statusSignals": [],
+    "closedSignal": false
+  },
+  "fetchedAt": "2026-10-25T01:05:27.130Z"
+}

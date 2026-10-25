@@ -3,8 +3,8 @@
     "date": "2026-10-25",
     "startedAt": "2026-10-24T23:00:28.191Z",
     "verifyFile": "automation/v2/out/verify-2026-10-25.json",
-    "args": "--from-row 80",
-    "updatedAt": "2026-10-25T01:22:11.161Z"
+    "args": "--only-row 84,85,86,87,102,110,116,118,125,128,135,137,142,151,154,158,160,164,168,172,173,175,176,178,182,192,196,197,198,199,200",
+    "updatedAt": "2026-10-25T02:33:09.471Z"
   },
   "environment": null,
   "results": {
@@ -225,7 +225,7 @@
         "official": 0,
         "rejectedByMachine": 0
       },
-      "reason": "書き手が失敗の出口で終了: 公式サイトの文字情報が取得できず(SNSのみで公式サイトなし)、Googleマップの情報も店名・住所・電話・業種表示のみで営業時間も登録がない。メニューや店の特徴を示す文字の材料が無く、quoteで裏付けられる事実だけでPOINT3〜5個の記事本文を書けない。"
+      "reason": "書き手が失敗の出口で終了: 公式サイトの文字が無く、store.jsonにも営業時間の記載が無い。WebSearchを複数パターンで行ったが、住所・電話番号が一致する実在ページ(店の公式SNS・自治体・新聞記事・グルメサイトの個別店舗ページ)を1件も見つけられず、確認できる事実が店名・住所・電話・業種のみにとどまったため、記事を書くための事実が不足している。"
     },
     "tri-gourmet-85": {
       "key": "tri-gourmet-85",
@@ -233,19 +233,39 @@
       "name": "むぎぞう",
       "vertical": "グルメ",
       "articleId": "むぎぞう",
-      "status": "失敗",
-      "stage": "claude",
+      "status": "成功",
+      "stage": "done",
       "startedAt": "2026-10-25T00:22:56.141Z",
       "seconds": {
-        "total": 0
+        "total": 1
       },
       "photos": {
         "candidates": 10,
         "maps": 10,
         "official": 0,
-        "rejectedByMachine": 0
+        "rejectedByMachine": 0,
+        "used": 4,
+        "emptyFrames": 1
       },
-      "reason": "書き手が失敗の出口で終了: 公式サイトの文字が取得できておらず(SNSのみで未取得)、事実として使えるのはGoogleマップのstore.json(店名・住所・電話・業種・営業時間)のみ。写真候補はあるが、メニューや素材・技術など記事の核になる事実を裏付けるquote可能な文字情報が無く、POINTを3〜5個とも事実だけで構成できないため執筆を見送る。"
+      "check": {
+        "rewrote": false,
+        "shapeProblems": [],
+        "sentenceProblems": 0,
+        "facts": {
+          "total": 13,
+          "verified": 12
+        }
+      },
+      "memo": "裏取りに通らない facts 1 件は載せていない",
+      "storeId": "r693",
+      "onePage": "表に追加(/feature/<記事ID> は /restaurant/<店ID> へ転送)",
+      "storeBuilt": true,
+      "storeNote": null,
+      "urls": {
+        "article": "/feature/むぎぞう",
+        "shop": "/restaurant/r693"
+      },
+      "finishedAt": "2026-10-25T02:19:50.135Z"
     },
     "tri-gourmet-86": {
       "key": "tri-gourmet-86",
@@ -253,32 +273,42 @@
       "name": "ＧＡＴＥＡＵ ＯＲＡＮＧＥ（ガトー オランジュ）",
       "vertical": "グルメ",
       "articleId": "GATEAUORANGE（ガトーオランジュ）",
-      "status": "失敗",
-      "stage": "check",
+      "status": "成功",
+      "stage": "done",
       "startedAt": "2026-10-25T00:23:30.210Z",
       "seconds": {
-        "total": 51,
+        "total": 1,
         "claude": 51
       },
       "photos": {
         "candidates": 20,
         "maps": 10,
         "official": 10,
-        "rejectedByMachine": 8
+        "rejectedByMachine": 8,
+        "used": 6,
+        "emptyFrames": 0
       },
       "check": {
-        "rewrote": true,
+        "rewrote": false,
         "shapeProblems": [],
-        "sentenceProblems": 1,
+        "sentenceProblems": 0,
         "facts": {
-          "total": 22,
-          "verified": 22
+          "total": 17,
+          "verified": 17
         }
       },
-      "reason": "検査に通らない(1 件・書き直し後も): article.ranking[1].specs[1].k「その他」W:その他",
       "checkDetail": [
         "article.ranking[1].specs[1].k「その他」W:その他"
-      ]
+      ],
+      "storeId": "r694",
+      "onePage": "表に追加(/feature/<記事ID> は /restaurant/<店ID> へ転送)",
+      "storeBuilt": true,
+      "storeNote": null,
+      "urls": {
+        "article": "/feature/GATEAUORANGE（ガトーオランジュ）",
+        "shop": "/restaurant/r694"
+      },
+      "finishedAt": "2026-10-25T02:19:51.376Z"
     },
     "tri-gourmet-87": {
       "key": "tri-gourmet-87",
@@ -286,19 +316,39 @@
       "name": "TiBURON Cafe",
       "vertical": "グルメ",
       "articleId": "TiBURONCAFE",
-      "status": "失敗",
-      "stage": "claude",
+      "status": "成功",
+      "stage": "done",
       "startedAt": "2026-10-25T00:24:13.543Z",
       "seconds": {
-        "total": 0
+        "total": 50,
+        "claude": 50
       },
       "photos": {
         "candidates": 10,
         "maps": 10,
         "official": 0,
-        "rejectedByMachine": 0
+        "rejectedByMachine": 0,
+        "used": 4,
+        "emptyFrames": 0
       },
-      "reason": "書き手が失敗の出口で終了: 公式サイトの文字が取得できず、Googleマップの情報も店名・住所・電話・営業時間・業種表示のみで、メニューや内装などグルメ記事のPOINTを3つ以上事実だけで構成できる材料が無いため。"
+      "check": {
+        "rewrote": true,
+        "shapeProblems": [],
+        "sentenceProblems": 0,
+        "facts": {
+          "total": 8,
+          "verified": 8
+        }
+      },
+      "storeId": "r695",
+      "onePage": "表に追加(/feature/<記事ID> は /restaurant/<店ID> へ転送)",
+      "storeBuilt": true,
+      "storeNote": null,
+      "urls": {
+        "article": "/feature/TiBURONCAFE",
+        "shop": "/restaurant/r695"
+      },
+      "finishedAt": "2026-10-25T02:20:41.702Z"
     },
     "tri-pet-91": {
       "key": "tri-pet-91",
@@ -382,19 +432,39 @@
       "name": "満天や",
       "vertical": "グルメ",
       "articleId": "満天や",
-      "status": "失敗",
-      "stage": "claude",
+      "status": "成功",
+      "stage": "done",
       "startedAt": "2026-10-25T00:25:54.120Z",
       "seconds": {
-        "total": 0
+        "total": 105,
+        "claude": 102
       },
       "photos": {
         "candidates": 10,
         "maps": 10,
         "official": 0,
-        "rejectedByMachine": 0
+        "rejectedByMachine": 0,
+        "used": 5,
+        "emptyFrames": 1
       },
-      "reason": "書き手が失敗の出口で終了: 公式サイトなし。Google マップ(store.json)から得られる事実は店名・住所・電話・営業時間・定休日・業種表示(居酒屋)のみで、メニューや料理内容を示すテキストの出どころが無い。写真には料理が写るが、仕様上GBPに出ていない料理内容・雰囲気の具体描写は割愛すべきもので、facts化(quote裏付け)もできない。残る住所・営業時間・電話だけでは、水増しせずに3〜5個の具体的なPOINTを組み立てる材料が不足している。"
+      "check": {
+        "rewrote": true,
+        "shapeProblems": [],
+        "sentenceProblems": 0,
+        "facts": {
+          "total": 23,
+          "verified": 23
+        }
+      },
+      "storeId": "r696",
+      "onePage": "表に追加(/feature/<記事ID> は /restaurant/<店ID> へ転送)",
+      "storeBuilt": true,
+      "storeNote": null,
+      "urls": {
+        "article": "/feature/満天や",
+        "shop": "/restaurant/r696"
+      },
+      "finishedAt": "2026-10-25T02:22:26.506Z"
     },
     "tri-gourmet-104": {
       "key": "tri-gourmet-104",
@@ -557,19 +627,38 @@
       "name": "Dining Bar marib",
       "vertical": "グルメ",
       "articleId": "DiningBarMarib四条烏丸",
-      "status": "失敗",
-      "stage": "claude",
+      "status": "成功",
+      "stage": "done",
       "startedAt": "2026-10-25T00:29:12.701Z",
       "seconds": {
-        "total": 0
+        "total": 1
       },
       "photos": {
         "candidates": 10,
         "maps": 10,
         "official": 0,
-        "rejectedByMachine": 0
+        "rejectedByMachine": 0,
+        "used": 5,
+        "emptyFrames": 1
       },
-      "reason": "書き手が失敗の出口で終了: 公式サイトなし。store.jsonには住所・電話・業種表示・営業時間のみでメニューや店の特徴を示す文章情報が無く、POINTを3〜5個、事実とquote裏付けで埋められない。"
+      "check": {
+        "rewrote": false,
+        "shapeProblems": [],
+        "sentenceProblems": 0,
+        "facts": {
+          "total": 21,
+          "verified": 21
+        }
+      },
+      "storeId": "r697",
+      "onePage": "表に追加(/feature/<記事ID> は /restaurant/<店ID> へ転送)",
+      "storeBuilt": true,
+      "storeNote": null,
+      "urls": {
+        "article": "/feature/DiningBarMarib四条烏丸",
+        "shop": "/restaurant/r697"
+      },
+      "finishedAt": "2026-10-25T02:22:27.534Z"
     },
     "tri-activity-112": {
       "key": "tri-activity-112",
@@ -729,19 +818,37 @@
       "row": 116,
       "name": "湯平温泉　旅館いづもや",
       "vertical": "ステイ",
-      "status": "失敗",
-      "stage": "claude",
+      "status": "成功",
+      "stage": "done",
       "startedAt": "2026-10-25T00:30:40.376Z",
       "seconds": {
-        "total": 0
+        "total": 2
       },
-      "reason": "書き手が失敗の出口で終了: 公式サイトの文字が無く、Google マップの情報も店名・住所・電話・cidのみで営業時間や業種の表示も無い。客室・風呂・食事・予約などを事実として書ける文章の出どころが無く、記事の節を水増しせずに埋められない。",
       "photos": {
         "candidates": 10,
         "maps": 10,
         "official": 0,
-        "rejectedByMachine": 0
-      }
+        "rejectedByMachine": 0,
+        "used": 10,
+        "emptyFrames": 0
+      },
+      "check": {
+        "rewrote": false,
+        "shapeProblems": [],
+        "sentenceProblems": 0,
+        "facts": {
+          "total": 9,
+          "verified": 9
+        }
+      },
+      "placeId": "st0014",
+      "featureInGenerated": false,
+      "featureNote": null,
+      "urls": {
+        "shop": "/stay/shop/st0014",
+        "article": null
+      },
+      "finishedAt": "2026-10-25T02:22:29.519Z"
     },
     "tri-gourmet-118": {
       "key": "tri-gourmet-118",
@@ -749,19 +856,39 @@
       "name": "ボードゲームカフェCARIVAN",
       "vertical": "グルメ",
       "articleId": "ボードゲームカフェCARIVAN",
-      "status": "失敗",
-      "stage": "claude",
+      "status": "成功",
+      "stage": "done",
       "startedAt": "2026-10-25T00:30:50.335Z",
       "seconds": {
-        "total": 0
+        "total": 58,
+        "claude": 54
       },
-      "reason": "書き手が失敗の出口で終了: 公式サイトが無く(SNSのみ)、Google マップ(store.json)にも店名・住所・営業時間・業種表示以外の文字情報が無いため、facts で裏付けられる事実が不足し、3〜5個のPOINTを水増しせずに書けない。",
       "photos": {
         "candidates": 10,
         "maps": 10,
         "official": 0,
-        "rejectedByMachine": 0
-      }
+        "rejectedByMachine": 0,
+        "used": 6,
+        "emptyFrames": 0
+      },
+      "check": {
+        "rewrote": true,
+        "shapeProblems": [],
+        "sentenceProblems": 0,
+        "facts": {
+          "total": 11,
+          "verified": 11
+        }
+      },
+      "storeId": "r698",
+      "onePage": "表に追加(/feature/<記事ID> は /restaurant/<店ID> へ転送)",
+      "storeBuilt": true,
+      "storeNote": null,
+      "urls": {
+        "article": "/feature/ボードゲームカフェCARIVAN",
+        "shop": "/restaurant/r698"
+      },
+      "finishedAt": "2026-10-25T02:23:27.856Z"
     },
     "tri-stay-122": {
       "key": "tri-stay-122",
@@ -846,19 +973,39 @@
       "name": "メイプル",
       "vertical": "グルメ",
       "articleId": "カナデアンコーヒーハウスメイプル",
-      "status": "失敗",
-      "stage": "claude",
+      "status": "成功",
+      "stage": "done",
       "startedAt": "2026-10-25T00:31:16.188Z",
       "seconds": {
-        "total": 0
+        "total": 46,
+        "claude": 40
       },
-      "reason": "書き手が失敗の出口で終了: 公式サイトの文字情報が無く(SNSのみ)、store.jsonも店名・住所・電話・業種表示・営業時間のみで、3〜5個のPOINTを独立した事実で構成できるだけの材料が無い",
       "photos": {
         "candidates": 10,
         "maps": 10,
         "official": 0,
-        "rejectedByMachine": 0
-      }
+        "rejectedByMachine": 0,
+        "used": 3,
+        "emptyFrames": 1
+      },
+      "check": {
+        "rewrote": true,
+        "shapeProblems": [],
+        "sentenceProblems": 0,
+        "facts": {
+          "total": 11,
+          "verified": 11
+        }
+      },
+      "storeId": "r699",
+      "onePage": "表に追加(/feature/<記事ID> は /restaurant/<店ID> へ転送)",
+      "storeBuilt": true,
+      "storeNote": null,
+      "urls": {
+        "article": "/feature/カナデアンコーヒーハウスメイプル",
+        "shop": "/restaurant/r699"
+      },
+      "finishedAt": "2026-10-25T02:24:14.141Z"
     },
     "tri-gourmet-126": {
       "key": "tri-gourmet-126",
@@ -945,19 +1092,38 @@
       "name": "焼き鳥居酒屋 さつき",
       "vertical": "グルメ",
       "articleId": "焼き鳥居酒屋さつき",
-      "status": "失敗",
-      "stage": "claude",
+      "status": "成功",
+      "stage": "done",
       "startedAt": "2026-10-25T00:31:43.961Z",
       "seconds": {
-        "total": 0
+        "total": 1
       },
-      "reason": "書き手が失敗の出口で終了: 公式サイトの文字情報が取得できておらず、store.jsonにも店名・住所・電話・営業時間・業種表示(焼き鳥店)以外の事実がないため、POINTを3つ以上、意味のある内容で構成できない",
       "photos": {
         "candidates": 10,
         "maps": 10,
         "official": 0,
-        "rejectedByMachine": 0
-      }
+        "rejectedByMachine": 0,
+        "used": 6,
+        "emptyFrames": 0
+      },
+      "check": {
+        "rewrote": false,
+        "shapeProblems": [],
+        "sentenceProblems": 0,
+        "facts": {
+          "total": 19,
+          "verified": 19
+        }
+      },
+      "storeId": "r700",
+      "onePage": "表に追加(/feature/<記事ID> は /restaurant/<店ID> へ転送)",
+      "storeBuilt": true,
+      "storeNote": null,
+      "urls": {
+        "article": "/feature/焼き鳥居酒屋さつき",
+        "shop": "/restaurant/r700"
+      },
+      "finishedAt": "2026-10-25T02:24:15.563Z"
     },
     "tri-gourmet-129": {
       "key": "tri-gourmet-129",
@@ -1087,7 +1253,7 @@
       "seconds": {
         "total": 0
       },
-      "reason": "書き手が失敗の出口で終了: 公式サイトの文字が取れておらず、Google マップの情報も店名・住所・電話のみで営業時間や業種の表示もないため、客室・食事・予約など紹介記事に必要な事実が足りない",
+      "reason": "書き手が失敗の出口で終了: 公式サイト(iorimocco.jp)が終始503で本文を取得できず、site/page*.txtも無いため、Googleマップの店名・住所・電話以外に記事本文を裏付ける事実が得られなかった",
       "photos": {
         "candidates": 9,
         "maps": 9,
@@ -1141,38 +1307,77 @@
       "name": "キッチンカーKAMUI（カムイ）",
       "vertical": "グルメ",
       "articleId": "キッチンカーKAMUI（カムイ）",
-      "status": "失敗",
-      "stage": "claude",
+      "status": "成功",
+      "stage": "done",
       "startedAt": "2026-10-25T00:32:26.201Z",
       "seconds": {
-        "total": 0
+        "total": 62,
+        "claude": 60
       },
-      "reason": "書き手が失敗の出口で終了: 公式サイトがなく(SNSのみで事実の出どころに使えない)、Googleマップの情報も店名・住所・電話・業種表示・営業時間のみで、メニューや店の特徴を裏付ける事実が足りず、POINTを3つ以上事実だけで書けないため。",
       "photos": {
         "candidates": 10,
         "maps": 10,
         "official": 0,
-        "rejectedByMachine": 0
-      }
+        "rejectedByMachine": 0,
+        "used": 4,
+        "emptyFrames": 2
+      },
+      "check": {
+        "rewrote": true,
+        "shapeProblems": [],
+        "sentenceProblems": 0,
+        "facts": {
+          "total": 11,
+          "verified": 11
+        }
+      },
+      "storeId": "r701",
+      "onePage": "表に追加(/feature/<記事ID> は /restaurant/<店ID> へ転送)",
+      "storeBuilt": true,
+      "storeNote": null,
+      "urls": {
+        "article": "/feature/キッチンカーKAMUI（カムイ）",
+        "shop": "/restaurant/r701"
+      },
+      "finishedAt": "2026-10-25T02:25:17.427Z"
     },
     "tri-activity-142": {
       "key": "tri-activity-142",
       "row": 142,
       "name": "Blue Corn",
       "vertical": "アクティビティ",
-      "status": "失敗",
-      "stage": "claude",
+      "status": "成功",
+      "stage": "done",
       "startedAt": "2026-10-25T00:32:35.584Z",
       "seconds": {
-        "total": 0
+        "total": 31,
+        "claude": 30
       },
-      "reason": "書き手が失敗の出口で終了: 公式サイトの文字が取れておらず(SNSのみ扱い)、store.jsonにも店名・住所・電話・業種の表示(カヌー/カヤックツアー代理店)・営業時間しかなく、ツアー内容・集合場所・持ち物などの実質的な事実が無いため、水増しせずに書ける紹介記事・特集記事の分量に足りない。",
       "photos": {
         "candidates": 6,
         "maps": 6,
         "official": 0,
-        "rejectedByMachine": 0
-      }
+        "rejectedByMachine": 0,
+        "used": 6,
+        "emptyFrames": 0
+      },
+      "check": {
+        "rewrote": true,
+        "shapeProblems": [],
+        "sentenceProblems": 0,
+        "facts": {
+          "total": 7,
+          "verified": 7
+        }
+      },
+      "placeId": "ac0018",
+      "featureInGenerated": false,
+      "featureNote": null,
+      "urls": {
+        "shop": "/activity/shop/ac0018",
+        "article": null
+      },
+      "finishedAt": "2026-10-25T02:25:48.046Z"
     },
     "tri-gourmet-146": {
       "key": "tri-gourmet-146",
@@ -1296,19 +1501,39 @@
       "name": "腹ペコ酒場西荻ペッコリーノ",
       "vertical": "グルメ",
       "articleId": "西荻ペッコリーノ",
-      "status": "失敗",
-      "stage": "claude",
+      "status": "成功",
+      "stage": "done",
       "startedAt": "2026-10-25T00:33:11.003Z",
       "seconds": {
-        "total": 0
+        "total": 103,
+        "claude": 100
       },
-      "reason": "書き手が失敗の出口で終了: 公式サイトの文字情報が取得できておらず、Googleマップの情報も店名・住所・電話・営業時間・業種分類のみで、料理内容や店の特徴を事実として裏付けられる材料が不足しているため",
       "photos": {
         "candidates": 10,
         "maps": 10,
         "official": 0,
-        "rejectedByMachine": 0
-      }
+        "rejectedByMachine": 0,
+        "used": 4,
+        "emptyFrames": 1
+      },
+      "check": {
+        "rewrote": true,
+        "shapeProblems": [],
+        "sentenceProblems": 0,
+        "facts": {
+          "total": 11,
+          "verified": 11
+        }
+      },
+      "storeId": "r702",
+      "onePage": "表に追加(/feature/<記事ID> は /restaurant/<店ID> へ転送)",
+      "storeBuilt": true,
+      "storeNote": null,
+      "urls": {
+        "article": "/feature/西荻ペッコリーノ",
+        "shop": "/restaurant/r702"
+      },
+      "finishedAt": "2026-10-25T02:27:30.588Z"
     },
     "tri-gourmet-154": {
       "key": "tri-gourmet-154",
@@ -1316,19 +1541,38 @@
       "name": "おもちびより",
       "vertical": "グルメ",
       "articleId": "おもちびより",
-      "status": "失敗",
-      "stage": "claude",
+      "status": "成功",
+      "stage": "done",
       "startedAt": "2026-10-25T00:33:19.871Z",
       "seconds": {
-        "total": 0
+        "total": 2
       },
-      "reason": "書き手が失敗の出口で終了: 公式サイトの文字が取得できず(SNSのみで公式サイトURLなし)、site/page*.txt も無い。Google マップ由来の store.json には店名・住所・電話・営業時間・業種表示しかなく、メニューや店の特徴を裏付けるテキスト出典が無い。写真(cand/*.jpg)は事実の出どころ(quote の確認対象)として使えないため、POINT 3〜5個分の事実に基づいた記事を水増しせずに書くための材料が不足している。",
       "photos": {
         "candidates": 10,
         "maps": 10,
         "official": 0,
-        "rejectedByMachine": 0
-      }
+        "rejectedByMachine": 0,
+        "used": 4,
+        "emptyFrames": 1
+      },
+      "check": {
+        "rewrote": false,
+        "shapeProblems": [],
+        "sentenceProblems": 0,
+        "facts": {
+          "total": 19,
+          "verified": 19
+        }
+      },
+      "storeId": "r703",
+      "onePage": "表に追加(/feature/<記事ID> は /restaurant/<店ID> へ転送)",
+      "storeBuilt": true,
+      "storeNote": null,
+      "urls": {
+        "article": "/feature/おもちびより",
+        "shop": "/restaurant/r703"
+      },
+      "finishedAt": "2026-10-25T02:27:32.473Z"
     },
     "tri-sports-155": {
       "key": "tri-sports-155",
@@ -1411,19 +1655,38 @@
       "name": "くろしお弁当",
       "vertical": "グルメ",
       "articleId": "くろしお弁当",
-      "status": "失敗",
-      "stage": "claude",
+      "status": "成功",
+      "stage": "done",
       "startedAt": "2026-10-25T00:33:46.359Z",
       "seconds": {
-        "total": 0
+        "total": 1
       },
-      "reason": "書き手が失敗の出口で終了: 公式サイトの文字が取れておらず、Googleマップの情報も店名・住所・電話・営業時間のみで、メニューや店の特徴に関する事実がないため、POINTを3〜5個、事実だけで構成できない",
       "photos": {
         "candidates": 6,
         "maps": 6,
         "official": 0,
-        "rejectedByMachine": 0
-      }
+        "rejectedByMachine": 0,
+        "used": 3,
+        "emptyFrames": 2
+      },
+      "check": {
+        "rewrote": false,
+        "shapeProblems": [],
+        "sentenceProblems": 0,
+        "facts": {
+          "total": 12,
+          "verified": 12
+        }
+      },
+      "storeId": "r704",
+      "onePage": "表に追加(/feature/<記事ID> は /restaurant/<店ID> へ転送)",
+      "storeBuilt": true,
+      "storeNote": null,
+      "urls": {
+        "article": "/feature/くろしお弁当",
+        "shop": "/restaurant/r704"
+      },
+      "finishedAt": "2026-10-25T02:27:33.588Z"
     },
     "tri-gourmet-159": {
       "key": "tri-gourmet-159",
@@ -1470,19 +1733,38 @@
       "name": "FOGcoffee",
       "vertical": "グルメ",
       "articleId": "FOGcoffee",
-      "status": "失敗",
-      "stage": "claude",
+      "status": "成功",
+      "stage": "done",
       "startedAt": "2026-10-25T00:34:03.931Z",
       "seconds": {
-        "total": 0
+        "total": 1
       },
-      "reason": "書き手が失敗の出口で終了: 公式サイトの文字情報が取得できず(公式サイトの扱いはSNSのみ)、Googleマップの情報も店名・住所・電話・営業時間・業種の表示のみで、メニューや店の特徴を裏付ける出どころが無いため、事実に基づくPOINTを3件以上書けない",
       "photos": {
         "candidates": 10,
         "maps": 10,
         "official": 0,
-        "rejectedByMachine": 0
-      }
+        "rejectedByMachine": 0,
+        "used": 5,
+        "emptyFrames": 0
+      },
+      "check": {
+        "rewrote": false,
+        "shapeProblems": [],
+        "sentenceProblems": 0,
+        "facts": {
+          "total": 11,
+          "verified": 11
+        }
+      },
+      "storeId": "r705",
+      "onePage": "表に追加(/feature/<記事ID> は /restaurant/<店ID> へ転送)",
+      "storeBuilt": true,
+      "storeNote": null,
+      "urls": {
+        "article": "/feature/FOGcoffee",
+        "shop": "/restaurant/r705"
+      },
+      "finishedAt": "2026-10-25T02:27:34.872Z"
     },
     "tri-gourmet-162": {
       "key": "tri-gourmet-162",
@@ -1567,19 +1849,38 @@
       "name": "我が家 おてちき屋",
       "vertical": "グルメ",
       "articleId": "我が家おてちき屋",
-      "status": "失敗",
-      "stage": "claude",
+      "status": "成功",
+      "stage": "done",
       "startedAt": "2026-10-25T00:34:28.920Z",
       "seconds": {
-        "total": 0
+        "total": 1
       },
-      "reason": "書き手が失敗の出口で終了: 公式サイトの文字が取得できず、Google マップの情報も住所・電話・営業時間・業種表示(居酒屋)のみで、料理や店の特徴を裏付ける事実が無い。POINT(3〜5個)を事実だけで構成できないため記事化を見送る。",
       "photos": {
         "candidates": 10,
         "maps": 10,
         "official": 0,
-        "rejectedByMachine": 0
-      }
+        "rejectedByMachine": 0,
+        "used": 4,
+        "emptyFrames": 2
+      },
+      "check": {
+        "rewrote": false,
+        "shapeProblems": [],
+        "sentenceProblems": 0,
+        "facts": {
+          "total": 11,
+          "verified": 11
+        }
+      },
+      "storeId": "r706",
+      "onePage": "表に追加(/feature/<記事ID> は /restaurant/<店ID> へ転送)",
+      "storeBuilt": true,
+      "storeNote": null,
+      "urls": {
+        "article": "/feature/我が家おてちき屋",
+        "shop": "/restaurant/r706"
+      },
+      "finishedAt": "2026-10-25T02:27:35.483Z"
     },
     "tri-activity-167": {
       "key": "tri-activity-167",
@@ -1624,19 +1925,39 @@
       "name": "璃夢 -Rim-",
       "vertical": "グルメ",
       "articleId": "璃夢Rim",
-      "status": "失敗",
-      "stage": "claude",
+      "status": "成功",
+      "stage": "done",
       "startedAt": "2026-10-25T00:34:44.249Z",
       "seconds": {
-        "total": 0
+        "total": 1
       },
-      "reason": "書き手が失敗の出口で終了: 公式サイトの文字が取れておらずGoogleマップの情報も住所・電話・営業時間のみで、メニューや店の特徴など記事化できる具体的事実が無いため。",
       "photos": {
         "candidates": 10,
         "maps": 10,
         "official": 0,
-        "rejectedByMachine": 0
-      }
+        "rejectedByMachine": 0,
+        "used": 3,
+        "emptyFrames": 1
+      },
+      "check": {
+        "rewrote": false,
+        "shapeProblems": [],
+        "sentenceProblems": 0,
+        "facts": {
+          "total": 11,
+          "verified": 10
+        }
+      },
+      "memo": "裏取りに通らない facts 1 件は載せていない",
+      "storeId": "r707",
+      "onePage": "表に追加(/feature/<記事ID> は /restaurant/<店ID> へ転送)",
+      "storeBuilt": true,
+      "storeNote": null,
+      "urls": {
+        "article": "/feature/璃夢Rim",
+        "shop": "/restaurant/r707"
+      },
+      "finishedAt": "2026-10-25T02:27:36.351Z"
     },
     "tri-activity-169": {
       "key": "tri-activity-169",
@@ -1700,19 +2021,39 @@
       "name": "餃子＆珈琲 おにCafe",
       "vertical": "グルメ",
       "articleId": "おにCafe",
-      "status": "失敗",
-      "stage": "claude",
+      "status": "成功",
+      "stage": "done",
       "startedAt": "2026-10-25T00:35:09.781Z",
       "seconds": {
-        "total": 0
+        "total": 1
       },
-      "reason": "書き手が失敗の出口で終了: 公式サイト・SNSのテキスト資料が無く、store.jsonに記載された所在地・電話・業種・営業時間以外の事実(メニューや店の特徴など)の裏付けが取れないため、POINTを3つ以上事実のみで構成できない",
       "photos": {
         "candidates": 10,
         "maps": 10,
         "official": 0,
-        "rejectedByMachine": 0
-      }
+        "rejectedByMachine": 0,
+        "used": 4,
+        "emptyFrames": 2
+      },
+      "check": {
+        "rewrote": false,
+        "shapeProblems": [],
+        "sentenceProblems": 0,
+        "facts": {
+          "total": 19,
+          "verified": 18
+        }
+      },
+      "memo": "裏取りに通らない facts 1 件は載せていない",
+      "storeId": "r708",
+      "onePage": "表に追加(/feature/<記事ID> は /restaurant/<店ID> へ転送)",
+      "storeBuilt": true,
+      "storeNote": null,
+      "urls": {
+        "article": "/feature/おにCafe",
+        "shop": "/restaurant/r708"
+      },
+      "finishedAt": "2026-10-25T02:28:43.858Z"
     },
     "tri-gourmet-174": {
       "key": "tri-gourmet-174",
@@ -1758,19 +2099,38 @@
       "row": 175,
       "name": "海の音色",
       "vertical": "アクティビティ",
-      "status": "失敗",
-      "stage": "claude",
+      "status": "成功",
+      "stage": "done",
       "startedAt": "2026-10-25T00:35:28.318Z",
       "seconds": {
-        "total": 0
+        "total": 1
       },
-      "reason": "書き手が失敗の出口で終了: 公式サイトの文字が取得できておらず、store.jsonの事実も店名・住所・電話・営業時間・業種表示(ツアー業者)のみで、出どころを引用できる事実が足りず記事を書けない",
       "photos": {
         "candidates": 10,
         "maps": 10,
         "official": 0,
-        "rejectedByMachine": 0
-      }
+        "rejectedByMachine": 0,
+        "used": 10,
+        "emptyFrames": 1
+      },
+      "check": {
+        "rewrote": false,
+        "shapeProblems": [],
+        "sentenceProblems": 0,
+        "facts": {
+          "total": 15,
+          "verified": 14
+        }
+      },
+      "memo": "裏取りに通らない facts 1 件は載せていない",
+      "placeId": "ac0019",
+      "featureInGenerated": true,
+      "featureNote": null,
+      "urls": {
+        "shop": "/activity/shop/ac0019",
+        "article": "/activity/article/ac0019"
+      },
+      "finishedAt": "2026-10-25T02:28:44.817Z"
     },
     "tri-gourmet-176": {
       "key": "tri-gourmet-176",
@@ -1778,19 +2138,39 @@
       "name": "えび福",
       "vertical": "グルメ",
       "articleId": "天ぷらえび福",
-      "status": "失敗",
-      "stage": "claude",
+      "status": "成功",
+      "stage": "done",
       "startedAt": "2026-10-25T00:35:36.987Z",
       "seconds": {
-        "total": 0
+        "total": 68,
+        "claude": 66
       },
-      "reason": "書き手が失敗の出口で終了: 公式サイトの文字が取得できず(SNS扱いのみ)、store.jsonの事実も店名・住所・電話・営業時間・業種表示(天ぷら店)に限られ、POINTを3〜5個、事実だけで構成するには材料が不足している",
       "photos": {
         "candidates": 10,
         "maps": 10,
         "official": 0,
-        "rejectedByMachine": 0
-      }
+        "rejectedByMachine": 0,
+        "used": 2,
+        "emptyFrames": 3
+      },
+      "check": {
+        "rewrote": true,
+        "shapeProblems": [],
+        "sentenceProblems": 0,
+        "facts": {
+          "total": 9,
+          "verified": 9
+        }
+      },
+      "storeId": "r709",
+      "onePage": "表に追加(/feature/<記事ID> は /restaurant/<店ID> へ転送)",
+      "storeBuilt": true,
+      "storeNote": null,
+      "urls": {
+        "article": "/feature/天ぷらえび福",
+        "shop": "/restaurant/r709"
+      },
+      "finishedAt": "2026-10-25T02:29:52.797Z"
     },
     "tri-gourmet-178": {
       "key": "tri-gourmet-178",
@@ -1798,19 +2178,38 @@
       "name": "ダモンデ",
       "vertical": "グルメ",
       "articleId": "ダモンデ",
-      "status": "失敗",
-      "stage": "claude",
+      "status": "成功",
+      "stage": "done",
       "startedAt": "2026-10-25T00:35:43.134Z",
       "seconds": {
-        "total": 0
+        "total": 1
       },
-      "reason": "書き手が失敗の出口で終了: 公式サイトの文字が取得できておらず、Googleマップの情報も店名・住所・電話・営業時間・業種表示(和食店)のみで、料理やメニューを示す文字の裏付けがない。写真には料理が写っているが文字で裏付けられるquoteにできないため、3〜5個のPOINTを事実だけで水増しせずに書くための材料が足りない。",
       "photos": {
         "candidates": 10,
         "maps": 10,
         "official": 0,
-        "rejectedByMachine": 0
-      }
+        "rejectedByMachine": 0,
+        "used": 4,
+        "emptyFrames": 2
+      },
+      "check": {
+        "rewrote": false,
+        "shapeProblems": [],
+        "sentenceProblems": 0,
+        "facts": {
+          "total": 13,
+          "verified": 13
+        }
+      },
+      "storeId": "r710",
+      "onePage": "表に追加(/feature/<記事ID> は /restaurant/<店ID> へ転送)",
+      "storeBuilt": true,
+      "storeNote": null,
+      "urls": {
+        "article": "/feature/ダモンデ",
+        "shop": "/restaurant/r710"
+      },
+      "finishedAt": "2026-10-25T02:29:53.416Z"
     },
     "tri-gourmet-180": {
       "key": "tri-gourmet-180",
@@ -1857,19 +2256,38 @@
       "name": "シャトー クワナ",
       "vertical": "グルメ",
       "articleId": "シャトークワナ",
-      "status": "失敗",
-      "stage": "claude",
+      "status": "成功",
+      "stage": "done",
       "startedAt": "2026-10-25T00:36:01.519Z",
       "seconds": {
-        "total": 0
+        "total": 11
       },
-      "reason": "書き手が失敗の出口で終了: 公式サイトなし。Googleマップの文字情報は店名・住所・電話・営業時間・業種表示(カフェ・喫茶)のみで、料理や店の特徴を示す文字情報が一切ない。写真に鉄板カレーやエビフライ定食等は写っているが、文字の出どころ(quoteで裏付けられるページ)がなく事実として本文に使えないため、300〜450字のleadeや400字前後のPOINTを3〜5個、事実だけで構成する材料が足りない。",
       "photos": {
         "candidates": 10,
         "maps": 10,
         "official": 0,
-        "rejectedByMachine": 0
-      }
+        "rejectedByMachine": 0,
+        "used": 5,
+        "emptyFrames": 1
+      },
+      "check": {
+        "rewrote": false,
+        "shapeProblems": [],
+        "sentenceProblems": 0,
+        "facts": {
+          "total": 11,
+          "verified": 11
+        }
+      },
+      "storeId": "r711",
+      "onePage": "表に追加(/feature/<記事ID> は /restaurant/<店ID> へ転送)",
+      "storeBuilt": true,
+      "storeNote": null,
+      "urls": {
+        "article": "/feature/シャトークワナ",
+        "shop": "/restaurant/r711"
+      },
+      "finishedAt": "2026-10-25T02:30:04.472Z"
     },
     "tri-bodycare-188": {
       "key": "tri-bodycare-188",
@@ -1914,19 +2332,39 @@
       "name": "Bar NEWYORK MIDTOWN 44 STREET",
       "vertical": "グルメ",
       "articleId": "BarNEWYORKMIDTOWN44STREET",
-      "status": "失敗",
-      "stage": "claude",
+      "status": "成功",
+      "stage": "done",
       "startedAt": "2026-10-25T00:36:15.040Z",
       "seconds": {
-        "total": 0
+        "total": 2
       },
-      "reason": "書き手が失敗の出口で終了: 公式サイトの文字が取得できず(SNSのみ)、Googleマップの情報も店名・住所・電話・業種表示(バー)・営業時間に限られ、メニューや店内を裏付ける文字の事実が無いため、quoteで裏付けられるPOINTを3個以上書けない",
       "photos": {
         "candidates": 10,
         "maps": 10,
         "official": 0,
-        "rejectedByMachine": 0
-      }
+        "rejectedByMachine": 0,
+        "used": 4,
+        "emptyFrames": 1
+      },
+      "check": {
+        "rewrote": false,
+        "shapeProblems": [],
+        "sentenceProblems": 0,
+        "facts": {
+          "total": 16,
+          "verified": 15
+        }
+      },
+      "memo": "裏取りに通らない facts 1 件は載せていない",
+      "storeId": "r712",
+      "onePage": "表に追加(/feature/<記事ID> は /restaurant/<店ID> へ転送)",
+      "storeBuilt": true,
+      "storeNote": null,
+      "urls": {
+        "article": "/feature/BarNEWYORKMIDTOWN44STREET",
+        "shop": "/restaurant/r712"
+      },
+      "finishedAt": "2026-10-25T02:30:06.173Z"
     },
     "tri-gourmet-195": {
       "key": "tri-gourmet-195",
@@ -1973,19 +2411,39 @@
       "name": "Bar DOPENESS",
       "vertical": "グルメ",
       "articleId": "BarDOPENESS",
-      "status": "失敗",
-      "stage": "claude",
+      "status": "成功",
+      "stage": "done",
       "startedAt": "2026-10-25T00:36:27.508Z",
       "seconds": {
-        "total": 0
+        "total": 70,
+        "claude": 66
       },
-      "reason": "書き手が失敗の出口で終了: 公式サイトの文字が取得できず(SNSのみ)、Google マップの情報も店名・住所・電話・業種表示・営業時間のみで、メニューや業態を語る事実の出どころが無い。POINT を事実の裏付け(quote)だけで3〜5個埋められないため記事化できない。",
       "photos": {
         "candidates": 10,
         "maps": 10,
         "official": 0,
-        "rejectedByMachine": 0
-      }
+        "rejectedByMachine": 0,
+        "used": 4,
+        "emptyFrames": 1
+      },
+      "check": {
+        "rewrote": true,
+        "shapeProblems": [],
+        "sentenceProblems": 0,
+        "facts": {
+          "total": 9,
+          "verified": 9
+        }
+      },
+      "storeId": "r713",
+      "onePage": "表に追加(/feature/<記事ID> は /restaurant/<店ID> へ転送)",
+      "storeBuilt": true,
+      "storeNote": null,
+      "urls": {
+        "article": "/feature/BarDOPENESS",
+        "shop": "/restaurant/r713"
+      },
+      "finishedAt": "2026-10-25T02:31:15.740Z"
     },
     "tri-gourmet-197": {
       "key": "tri-gourmet-197",
@@ -1993,19 +2451,39 @@
       "name": "Bar & Dining Jammin",
       "vertical": "グルメ",
       "articleId": "BarDiningJammin",
-      "status": "失敗",
-      "stage": "claude",
+      "status": "成功",
+      "stage": "done",
       "startedAt": "2026-10-25T00:36:36.193Z",
       "seconds": {
-        "total": 0
+        "total": 1
       },
-      "reason": "書き手が失敗の出口で終了: 公式サイトの文字が無く、store.jsonに住所・電話・営業時間・Googleマップの業種表示(バー)以外の事実が無いため、グルメ記事に必要なPOINT(3〜5個、料理や店の特徴の具体事実)を裏付けのある形で書けない。写真はあるが、文字の出どころ(quote)で裏付けられる料理・コンセプトの事実が存在しない。",
       "photos": {
         "candidates": 10,
         "maps": 10,
         "official": 0,
-        "rejectedByMachine": 0
-      }
+        "rejectedByMachine": 0,
+        "used": 6,
+        "emptyFrames": 0
+      },
+      "check": {
+        "rewrote": false,
+        "shapeProblems": [],
+        "sentenceProblems": 0,
+        "facts": {
+          "total": 14,
+          "verified": 13
+        }
+      },
+      "memo": "裏取りに通らない facts 1 件は載せていない",
+      "storeId": "r714",
+      "onePage": "表に追加(/feature/<記事ID> は /restaurant/<店ID> へ転送)",
+      "storeBuilt": true,
+      "storeNote": null,
+      "urls": {
+        "article": "/feature/BarDiningJammin",
+        "shop": "/restaurant/r714"
+      },
+      "finishedAt": "2026-10-25T02:31:17.184Z"
     },
     "tri-gourmet-198": {
       "key": "tri-gourmet-198",
@@ -2013,19 +2491,38 @@
       "name": "Boulangerie Reve想",
       "vertical": "グルメ",
       "articleId": "BoulangerieReve想",
-      "status": "失敗",
-      "stage": "claude",
+      "status": "成功",
+      "stage": "done",
       "startedAt": "2026-10-25T00:36:45.622Z",
       "seconds": {
-        "total": 0
+        "total": 1
       },
-      "reason": "書き手が失敗の出口で終了: 公式サイトが無く、Google マップの情報も店名・住所・電話・営業時間・業種(ベーカリー)のみで、商品やメニューを裏付ける文字情報が無いため、事実だけで3点以上のPOINTを構成できない",
       "photos": {
         "candidates": 10,
         "maps": 10,
         "official": 0,
-        "rejectedByMachine": 0
-      }
+        "rejectedByMachine": 0,
+        "used": 3,
+        "emptyFrames": 3
+      },
+      "check": {
+        "rewrote": false,
+        "shapeProblems": [],
+        "sentenceProblems": 0,
+        "facts": {
+          "total": 17,
+          "verified": 17
+        }
+      },
+      "storeId": "r715",
+      "onePage": "表に追加(/feature/<記事ID> は /restaurant/<店ID> へ転送)",
+      "storeBuilt": true,
+      "storeNote": null,
+      "urls": {
+        "article": "/feature/BoulangerieReve想",
+        "shop": "/restaurant/r715"
+      },
+      "finishedAt": "2026-10-25T02:31:18.382Z"
     },
     "tri-gourmet-199": {
       "key": "tri-gourmet-199",
@@ -2033,19 +2530,39 @@
       "name": "おうち酒場BoNono",
       "vertical": "グルメ",
       "articleId": "おうち酒場BoNono",
-      "status": "失敗",
-      "stage": "claude",
+      "status": "成功",
+      "stage": "done",
       "startedAt": "2026-10-25T00:36:52.586Z",
       "seconds": {
-        "total": 0
+        "total": 39,
+        "claude": 38
       },
-      "reason": "書き手が失敗の出口で終了: 公式サイトの文字が取得できず(SNSのみ)、Googleマップの情報も店名・住所・電話・業種表示・営業時間のみで、メニューや内装など記事のPOINTを3つ以上事実だけで組み立てるための材料が不足しているため。",
       "photos": {
         "candidates": 3,
         "maps": 3,
         "official": 0,
-        "rejectedByMachine": 0
-      }
+        "rejectedByMachine": 0,
+        "used": 3,
+        "emptyFrames": 1
+      },
+      "check": {
+        "rewrote": true,
+        "shapeProblems": [],
+        "sentenceProblems": 0,
+        "facts": {
+          "total": 8,
+          "verified": 8
+        }
+      },
+      "storeId": "r716",
+      "onePage": "表に追加(/feature/<記事ID> は /restaurant/<店ID> へ転送)",
+      "storeBuilt": true,
+      "storeNote": null,
+      "urls": {
+        "article": "/feature/おうち酒場BoNono",
+        "shop": "/restaurant/r716"
+      },
+      "finishedAt": "2026-10-25T02:31:57.468Z"
     },
     "tri-gourmet-200": {
       "key": "tri-gourmet-200",
@@ -2053,19 +2570,77 @@
       "name": "Beach bar Calypso",
       "vertical": "グルメ",
       "articleId": "BeachbarCalypso",
-      "status": "失敗",
-      "stage": "claude",
+      "status": "成功",
+      "stage": "done",
       "startedAt": "2026-10-25T00:37:00.611Z",
       "seconds": {
-        "total": 0
+        "total": 72,
+        "claude": 69
       },
-      "reason": "書き手が失敗の出口で終了: 公式サイトの文字が取得できず、Googleマップの情報も住所・電話・営業時間・業種(バー)のみで、料理やメニューなど記事のPOINTを3つ以上成立させるための裏付け可能な事実が無いため。",
       "photos": {
         "candidates": 10,
         "maps": 10,
         "official": 0,
-        "rejectedByMachine": 0
-      }
+        "rejectedByMachine": 0,
+        "used": 3,
+        "emptyFrames": 2
+      },
+      "check": {
+        "rewrote": true,
+        "shapeProblems": [],
+        "sentenceProblems": 0,
+        "facts": {
+          "total": 8,
+          "verified": 8
+        }
+      },
+      "storeId": "r717",
+      "onePage": "表に追加(/feature/<記事ID> は /restaurant/<店ID> へ転送)",
+      "storeBuilt": true,
+      "storeNote": null,
+      "urls": {
+        "article": "/feature/BeachbarCalypso",
+        "shop": "/restaurant/r717"
+      },
+      "finishedAt": "2026-10-25T02:33:09.470Z"
+    },
+    "tri-bodycare-172": {
+      "key": "tri-bodycare-172",
+      "row": 172,
+      "name": "整体院Derive",
+      "vertical": "ボディケア",
+      "status": "成功",
+      "stage": "done",
+      "startedAt": "2026-10-25T01:51:48.877Z",
+      "seconds": {
+        "total": 66,
+        "claude": 66
+      },
+      "photos": {
+        "candidates": 20,
+        "maps": 6,
+        "official": 14,
+        "rejectedByMachine": 4,
+        "used": 11,
+        "emptyFrames": 0
+      },
+      "check": {
+        "rewrote": true,
+        "shapeProblems": [],
+        "sentenceProblems": 0,
+        "facts": {
+          "total": 19,
+          "verified": 19
+        }
+      },
+      "placeId": "bo0115",
+      "featureInGenerated": false,
+      "featureNote": null,
+      "urls": {
+        "shop": "/bodycare/shop/bo0115",
+        "article": null
+      },
+      "finishedAt": "2026-10-25T02:28:42.576Z"
     }
   }
 }

@@ -5454,5 +5454,304 @@
         "evidence": "月 09:00–17:00"
       }
     ]
+  },
+  "r693": {
+    "articleId": "むぎぞう",
+    "name": "むぎぞう",
+    "tags": [
+      {
+        "tag": "パン",
+        "rule": "業態がシーン語彙に一致",
+        "evidence": "ベーカリー（パン）"
+      },
+      {
+        "tag": "ベーカリー",
+        "rule": "業態がシーン語彙に一致",
+        "evidence": "ベーカリー（ベーカリー）"
+      },
+      {
+        "tag": "ランチ",
+        "rule": "hours: 開店が14:00以前（11:00以降にかかる営業）",
+        "evidence": "木 08:30–19:00"
+      }
+    ]
+  },
+  "r694": {
+    "articleId": "GATEAUORANGE（ガトーオランジュ）",
+    "name": "ＧＡＴＥＡＵ ＯＲＡＮＧＥ（ガトー オランジュ）",
+    "tags": [
+      {
+        "tag": "ランチ",
+        "rule": "hours: 開店が14:00以前（11:00以降にかかる営業）",
+        "evidence": "水 11:00–19:00"
+      }
+    ]
+  },
+  "r695": {
+    "articleId": "TiBURONCAFE",
+    "name": "TiBURON CAFE",
+    "tags": [
+      {
+        "tag": "ランチ",
+        "rule": "hours: 開店が14:00以前（11:00以降にかかる営業）",
+        "evidence": "月 11:00–18:00"
+      }
+    ]
+  },
+  "r696": {
+    "articleId": "満天や",
+    "name": "満天や",
+    "tags": [
+      {
+        "tag": "ランチ",
+        "rule": "hours: 開店が14:00以前（11:00以降にかかる営業）",
+        "evidence": "月 11:30–14:00"
+      }
+    ]
+  },
+  "r697": {
+    "articleId": "DiningBarMarib四条烏丸",
+    "name": "Dining Bar Marib 四条烏丸",
+    "tags": [
+      {
+        "tag": "個室",
+        "rule": "記事 specs「個室」項目が肯定",
+        "evidence": "個室: 8人可、10〜20人可、20〜30人可"
+      },
+      {
+        "tag": "深夜営業",
+        "rule": "hours: 閉店が24:00以降",
+        "evidence": "月 18:00–01:00"
+      }
+    ]
+  },
+  "r698": {
+    "articleId": "ボードゲームカフェCARIVAN",
+    "name": "ボードゲームカフェCARIVAN",
+    "tags": [
+      {
+        "tag": "ランチ",
+        "rule": "hours: 開店が14:00以前（11:00以降にかかる営業）",
+        "evidence": "火 11:00–22:00"
+      }
+    ]
+  },
+  "r699": {
+    "articleId": "カナデアンコーヒーハウスメイプル",
+    "name": "カナデアンコーヒーハウス メイプル",
+    "tags": [
+      {
+        "tag": "ランチ",
+        "rule": "hours: 開店が14:00以前（11:00以降にかかる営業）",
+        "evidence": "月 10:00–17:00"
+      }
+    ]
+  },
+  "r700": {
+    "articleId": "焼き鳥居酒屋さつき",
+    "name": "焼き鳥居酒屋 さつき",
+    "tags": [
+      {
+        "tag": "個室",
+        "rule": "席表記に「個室」",
+        "evidence": "座席数: 15席(カウンター席・個室)"
+      }
+    ]
+  },
+  "r701": {
+    "articleId": "キッチンカーKAMUI（カムイ）",
+    "name": "キッチンカーKAMUI（カムイ）",
+    "tags": [
+      {
+        "tag": "ランチ",
+        "rule": "hours: 開店が14:00以前（11:00以降にかかる営業）",
+        "evidence": "月 11:00–17:00"
+      }
+    ]
+  },
+  "r702": {
+    "articleId": "西荻ペッコリーノ",
+    "name": "西荻ペッコリーノ",
+    "tags": [
+      {
+        "tag": "宴会",
+        "rule": "記事 specs「宴会」項目が肯定",
+        "evidence": "宴会: 飲み放題付き宴会コース、貸切は要予約"
+      },
+      {
+        "tag": "深夜営業",
+        "rule": "hours: 閉店が24:00以降",
+        "evidence": "月 18:00–03:00"
+      }
+    ]
+  },
+  "r703": {
+    "articleId": "おもちびより",
+    "name": "おもちびより",
+    "tags": [
+      {
+        "tag": "ランチ",
+        "rule": "hours: 開店が14:00以前（11:00以降にかかる営業）",
+        "evidence": "火 11:00–16:00"
+      }
+    ]
+  },
+  "r704": {
+    "articleId": "くろしお弁当",
+    "name": "くろしお弁当",
+    "tags": [
+      {
+        "tag": "ランチ",
+        "rule": "hours: 開店が14:00以前（11:00以降にかかる営業）",
+        "evidence": "月 06:00–14:00"
+      }
+    ]
+  },
+  "r705": {
+    "articleId": "FOGcoffee",
+    "name": "FOGcoffee",
+    "tags": [
+      {
+        "tag": "ランチ",
+        "rule": "hours: 開店が14:00以前（11:00以降にかかる営業）",
+        "evidence": "月 10:00–19:00"
+      }
+    ]
+  },
+  "r706": {
+    "articleId": "我が家おてちき屋",
+    "name": "我が家 おてちき屋",
+    "tags": [
+      {
+        "tag": "ランチ",
+        "rule": "hours: 開店が14:00以前（11:00以降にかかる営業）",
+        "evidence": "月 11:00–14:30"
+      }
+    ]
+  },
+  "r707": {
+    "articleId": "璃夢Rim",
+    "name": "璃夢 Rim",
+    "tags": [
+      {
+        "tag": "深夜営業",
+        "rule": "hours: 閉店が24:00以降",
+        "evidence": "火 18:00–00:00"
+      }
+    ]
+  },
+  "r708": {
+    "articleId": "おにCafe",
+    "name": "おにCafe",
+    "tags": [
+      {
+        "tag": "ランチ",
+        "rule": "hours: 開店が14:00以前（11:00以降にかかる営業）",
+        "evidence": "月 11:00–17:00"
+      }
+    ]
+  },
+  "r709": {
+    "articleId": "天ぷらえび福",
+    "name": "天ぷら えび福",
+    "tags": [
+      {
+        "tag": "ランチ",
+        "rule": "hours: 開店が14:00以前（11:00以降にかかる営業）",
+        "evidence": "月 11:45–14:00"
+      }
+    ]
+  },
+  "r710": {
+    "articleId": "ダモンデ",
+    "name": "ダモンデ",
+    "tags": []
+  },
+  "r711": {
+    "articleId": "シャトークワナ",
+    "name": "シャトークワナ",
+    "tags": [
+      {
+        "tag": "ランチ",
+        "rule": "hours: 開店が14:00以前（11:00以降にかかる営業）",
+        "evidence": "月 09:00–17:00"
+      }
+    ]
+  },
+  "r712": {
+    "articleId": "BarNEWYORKMIDTOWN44STREET",
+    "name": "Bar NEWYORK MIDTOWN 44 STREET",
+    "tags": [
+      {
+        "tag": "深夜営業",
+        "rule": "hours: 閉店が24:00以降",
+        "evidence": "火 18:00–02:00"
+      }
+    ]
+  },
+  "r713": {
+    "articleId": "BarDOPENESS",
+    "name": "Bar DOPENESS",
+    "tags": [
+      {
+        "tag": "深夜営業",
+        "rule": "hours: 閉店が24:00以降",
+        "evidence": "月 19:00–04:00"
+      }
+    ]
+  },
+  "r714": {
+    "articleId": "BarDiningJammin",
+    "name": "Bar & Dining Jammin",
+    "tags": [
+      {
+        "tag": "深夜営業",
+        "rule": "hours: 閉店が24:00以降",
+        "evidence": "月 17:00–02:00"
+      }
+    ]
+  },
+  "r715": {
+    "articleId": "BoulangerieReve想",
+    "name": "Ｂｏｕｌａｎｇｅｒｉｅ Ｒｅｖｅ想",
+    "tags": [
+      {
+        "tag": "パン",
+        "rule": "業態がシーン語彙に一致",
+        "evidence": "ベーカリー（パン）"
+      },
+      {
+        "tag": "ベーカリー",
+        "rule": "業態がシーン語彙に一致",
+        "evidence": "ベーカリー（ベーカリー）"
+      },
+      {
+        "tag": "ランチ",
+        "rule": "hours: 開店が14:00以前（11:00以降にかかる営業）",
+        "evidence": "月 08:30–17:00"
+      }
+    ]
+  },
+  "r716": {
+    "articleId": "おうち酒場BoNono",
+    "name": "おうち酒場 BoNono",
+    "tags": [
+      {
+        "tag": "深夜営業",
+        "rule": "hours: 閉店が24:00以降",
+        "evidence": "月 19:00–00:00"
+      }
+    ]
+  },
+  "r717": {
+    "articleId": "BeachbarCalypso",
+    "name": "Beach bar Calypso",
+    "tags": [
+      {
+        "tag": "深夜営業",
+        "rule": "hours: 閉店が24:00以降",
+        "evidence": "月 20:00–03:00"
+      }
+    ]
   }
 }

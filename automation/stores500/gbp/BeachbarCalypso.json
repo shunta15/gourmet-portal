@@ -1,0 +1,22 @@
+{
+  "name": "Beach bar Calypso",
+  "address": "東京都新宿区新宿３丁目１１−２ 村木ビル B1F",
+  "lat": 35.6915872,
+  "lng": 139.7064224,
+  "category": "バー",
+  "hours": {
+    "月": "20:00–03:00",
+    "火": "20:00–03:00",
+    "水": "20:00–03:00",
+    "木": "20:00–03:00",
+    "金": "20:00–03:00",
+    "土": "20:00–03:00",
+    "日": "定休日"
+  },
+  "phone": "03-6457-4857",
+  "website": "https://beachbar-calypso.simdif.com/",
+  "priceRange": null,
+  "status": null,
+  "gbpUrl": "https://maps.google.com/?cid=17998488442923651462",
+  "fetchedAt": "2026-10-25T01:12:24.289Z"
+}

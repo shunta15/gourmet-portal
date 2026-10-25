@@ -1,0 +1,22 @@
+{
+  "name": "おにCafe",
+  "address": "新潟県佐渡市両津湊１１０",
+  "lat": 38.0797344,
+  "lng": 138.4376401,
+  "category": "カフェ・喫茶",
+  "hours": {
+    "月": "11:00–17:00",
+    "火": "11:00–17:00",
+    "水": "定休日",
+    "木": "11:00–15:00",
+    "金": "11:00–17:00",
+    "土": "定休日",
+    "日": "定休日"
+  },
+  "phone": "0259-27-2420",
+  "website": "https://www.instagram.com/explore/locations/845168649204163/cafe?igshid=MDJmNzVkMjY=",
+  "priceRange": null,
+  "status": null,
+  "gbpUrl": "https://maps.google.com/?cid=873413461264187730",
+  "fetchedAt": "2026-10-25T01:04:06.392Z"
+}
