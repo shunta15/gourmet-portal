@@ -1792,6 +1792,344 @@
         ],
         "checkedAt": "2026-10-22"
       }
+    },
+    {
+      "id": "pe0021",
+      "vertical": "pet",
+      "category": "trimming",
+      "name": "BARBER DOG PRECIOUS WAN",
+      "pref": "miyagi",
+      "cityName": "多賀城市",
+      "address": "宮城県多賀城市中央3丁目9-27",
+      "lat": 38.2929626,
+      "lng": 141.0082502,
+      "hours": "月-土 09:30 - 17:00",
+      "holidays": "日曜",
+      "phone": "070-8971-1139",
+      "instagram": "https://www.instagram.com/barberdogpreciouswan?igsh=Y3RhNHBnd2FoeXo1",
+      "mapUrl": "https://maps.google.com/?cid=2789450396352068285",
+      "image": "/_portal/vshops/tri-pet-91/g01.jpg",
+      "images": [
+        "/_portal/vshops/tri-pet-91/g01.jpg",
+        "/_portal/vshops/tri-pet-91/g02.jpg",
+        "/_portal/vshops/tri-pet-91/g03.jpg",
+        "/_portal/vshops/tri-pet-91/g04.jpg",
+        "/_portal/vshops/tri-pet-91/g05.jpg",
+        "/_portal/vshops/tri-pet-91/g06.jpg",
+        "/_portal/vshops/tri-pet-91/g07.jpg",
+        "/_portal/vshops/tri-pet-91/g08.jpg",
+        "/_portal/vshops/tri-pet-91/g09.jpg",
+        "/_portal/vshops/tri-pet-91/g10.jpg"
+      ],
+      "photos": [
+        {
+          "path": "/_portal/vshops/tri-pet-91/g01.jpg",
+          "what": "白い犬がケージの中のクッションに座っている",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-pet-91/g02.jpg",
+          "what": "リボンを付けた犬がテーブルの上に立っている",
+          "width": 960,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-pet-91/g03.jpg",
+          "what": "白い犬がテーブルの上に座っている",
+          "width": 959,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-pet-91/g04.jpg",
+          "what": "茶色い犬が室内で立っている",
+          "width": 1108,
+          "height": 1108
+        },
+        {
+          "path": "/_portal/vshops/tri-pet-91/g05.jpg",
+          "what": "グレーの犬がテーブルの上に座っている",
+          "width": 960,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-pet-91/g06.jpg",
+          "what": "白い犬がテーブルの上で舌を出している",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-pet-91/g07.jpg",
+          "what": "緑のバンダナを付けた犬がテーブルの上に座っている",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-pet-91/g08.jpg",
+          "what": "黒い犬が木目調の床に伏せている",
+          "width": 1200,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-pet-91/g09.jpg",
+          "what": "黒い犬の顔がテーブルの上で近くに写っている",
+          "width": 1108,
+          "height": 1108
+        },
+        {
+          "path": "/_portal/vshops/tri-pet-91/g10.jpg",
+          "what": "黒い犬がテーブルの上で舌を出している",
+          "width": 1108,
+          "height": 1108
+        }
+      ],
+      "tags": [],
+      "article": {
+        "headline": "宮城県多賀城市中央3丁目にある、犬のトリミングサロン。",
+        "lede": "多賀城市にある「BARBER DOG PRECIOUS WAN」です。宮城県多賀城市中央3丁目に店を構え、犬のトリミングを行っている。営業は月曜から土曜の9時30分から17時まで、日曜日は定休日。",
+        "sections": [
+          {
+            "heading": "トリミングサロン",
+            "body": "店は宮城県多賀城市中央3丁目にあり、犬のトリミングを行っている。"
+          },
+          {
+            "heading": "営業時間",
+            "body": "営業は月曜から土曜の9時30分から17時まで。日曜日は定休日となっている。"
+          }
+        ],
+        "sources": [
+          {
+            "label": "Google マップ",
+            "url": "https://maps.google.com/?cid=2789450396352068285"
+          }
+        ],
+        "checkedAt": "2026-10-25"
+      }
+    },
+    {
+      "id": "pe0022",
+      "vertical": "pet",
+      "category": "pet-hotel",
+      "name": "ペットホテル ALOHA MIMITAN アロハミミタン",
+      "pref": "osaka",
+      "cityName": "大阪市東住吉区",
+      "address": "大阪府大阪市東住吉区駒川1丁目20-8",
+      "lat": 34.6342967,
+      "lng": 135.5308169,
+      "hours": "毎日 07:00 - 20:00",
+      "phone": "090-1895-1255",
+      "url": "https://www.alohamimitan.co.jp/",
+      "website": "https://www.alohamimitan.co.jp/",
+      "mapUrl": "https://maps.google.com/?cid=12506116750951527123",
+      "image": "/_portal/vshops/tri-pet-109/g03.jpg",
+      "images": [
+        "/_portal/vshops/tri-pet-109/g03.jpg",
+        "/_portal/vshops/tri-pet-109/g04.jpg",
+        "/_portal/vshops/tri-pet-109/g05.jpg",
+        "/_portal/vshops/tri-pet-109/g06.jpg",
+        "/_portal/vshops/tri-pet-109/g07.jpg",
+        "/_portal/vshops/tri-pet-109/g08.jpg",
+        "/_portal/vshops/tri-pet-109/g09.jpg",
+        "/_portal/vshops/tri-pet-109/g10.jpg",
+        "/_portal/vshops/tri-pet-109/s02.jpg",
+        "/_portal/vshops/tri-pet-109/s04.jpg",
+        "/_portal/vshops/tri-pet-109/s06.jpg",
+        "/_portal/vshops/tri-pet-109/s11.jpg",
+        "/_portal/vshops/tri-pet-109/s12.jpg",
+        "/_portal/vshops/tri-pet-109/s13.jpg",
+        "/_portal/vshops/tri-pet-109/s15.jpg",
+        "/_portal/vshops/tri-pet-109/s16.jpg",
+        "/_portal/vshops/tri-pet-109/s17.jpg",
+        "/_portal/vshops/tri-pet-109/s18.jpg"
+      ],
+      "photos": [
+        {
+          "path": "/_portal/vshops/tri-pet-109/g03.jpg",
+          "what": "クリスマスツリーとALOHAの看板がある室内",
+          "kind": "common",
+          "width": 1200,
+          "height": 1167
+        },
+        {
+          "path": "/_portal/vshops/tri-pet-109/g04.jpg",
+          "what": "屋上の人工芝にトンネル型遊具と複数の犬",
+          "kind": "common",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-pet-109/g05.jpg",
+          "what": "屋上にバナナ型のベッドと複数の犬",
+          "kind": "common",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-pet-109/g06.jpg",
+          "what": "黄色いベッドに2匹の犬",
+          "kind": "room",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-pet-109/g07.jpg",
+          "what": "ALOHA MIMITANの看板と犬用ベッドが並ぶ室内",
+          "kind": "common",
+          "width": 1154,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-pet-109/g08.jpg",
+          "what": "室内の床に並ぶ犬用ベッドと犬たち",
+          "kind": "room",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-pet-109/g09.jpg",
+          "what": "屋上の装飾と複数の犬",
+          "kind": "common",
+          "width": 1200,
+          "height": 1012
+        },
+        {
+          "path": "/_portal/vshops/tri-pet-109/g10.jpg",
+          "what": "黄色いベッドに白い犬が1匹",
+          "kind": "room",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-pet-109/s02.jpg",
+          "what": "白い寝具の上で眠る犬と猫",
+          "kind": "room",
+          "width": 1280,
+          "height": 500
+        },
+        {
+          "path": "/_portal/vshops/tri-pet-109/s04.jpg",
+          "what": "室内の床にいる2匹の犬",
+          "kind": "room",
+          "width": 960,
+          "height": 500
+        },
+        {
+          "path": "/_portal/vshops/tri-pet-109/s06.jpg",
+          "what": "室内で人の手に触れる犬",
+          "kind": "common",
+          "width": 960,
+          "height": 500
+        },
+        {
+          "path": "/_portal/vshops/tri-pet-109/s11.jpg",
+          "what": "室内にケージと椅子が並ぶ部屋",
+          "kind": "room",
+          "width": 800,
+          "height": 533
+        },
+        {
+          "path": "/_portal/vshops/tri-pet-109/s12.jpg",
+          "what": "ボールが入ったプールにいる犬",
+          "kind": "room",
+          "width": 800,
+          "height": 533
+        },
+        {
+          "path": "/_portal/vshops/tri-pet-109/s13.jpg",
+          "what": "屋上の人工芝に複数の犬",
+          "kind": "common",
+          "width": 800,
+          "height": 533
+        },
+        {
+          "path": "/_portal/vshops/tri-pet-109/s15.jpg",
+          "what": "手に抱かれる犬",
+          "kind": "room",
+          "width": 923,
+          "height": 922
+        },
+        {
+          "path": "/_portal/vshops/tri-pet-109/s16.jpg",
+          "what": "おもちゃを咥える犬",
+          "kind": "room",
+          "width": 923,
+          "height": 922
+        },
+        {
+          "path": "/_portal/vshops/tri-pet-109/s17.jpg",
+          "what": "青いバンダナをつけた犬",
+          "kind": "room",
+          "width": 923,
+          "height": 922
+        },
+        {
+          "path": "/_portal/vshops/tri-pet-109/s18.jpg",
+          "what": "ブランケットの上の子犬",
+          "kind": "room",
+          "width": 923,
+          "height": 922
+        }
+      ],
+      "tags": [],
+      "article": {
+        "headline": "大阪市東住吉区、近鉄南大阪線北田辺駅から徒歩約5分にあるペットホテル。24時間スタッフが常駐し、犬の保育園・ペットシッター・老犬介護も行う",
+        "lede": "大阪市東住吉区にある「ペットホテル ALOHA MIMITAN アロハミミタン」です。近鉄南大阪線北田辺駅から徒歩約5分、自宅兼店舗で24時間スタッフが常駐しています。営業は7時から20時までの完全予約制です。",
+        "sections": [
+          {
+            "heading": "場所と利用のしかた",
+            "body": "最寄り駅は近鉄南大阪線北田辺駅で、徒歩約5分です。駐車場は2台分あります。営業は7時から20時までの完全予約制で、時間外は応相談です。ホテルの利用には事前の見学とカウンセリングが必要で、各種ワクチン・予防接種の証明書の提出も求められます。"
+          },
+          {
+            "heading": "設備と環境",
+            "body": "自宅兼店舗で、24時間スタッフが常駐しています。屋上には室内のドッグランがあり、ペットランニングマシーンとボールプールを備えています。日中はケージフリーでもケージ内でも預かりに対応します。施設から5分圏内に動物病院・ドッグカフェ・提携トリミングサロンがあり、隣には駒川北公園があります。"
+          },
+          {
+            "heading": "サービスの種類",
+            "body": "お泊まりのペットホテルのほか、7時から20時の間で最大12時間まで預かる犬の保育園、ペットシッター、老犬老猫向けの訪問介護を行っています。ペットシッターはベテランの女性スタッフ2名が担当し、10歳以上の老犬・老猫を対象とした訪問介護にも対応します。"
+          }
+        ],
+        "menus": [
+          {
+            "name": "犬の保育園"
+          },
+          {
+            "name": "ペットホテル"
+          },
+          {
+            "name": "ペットシッター"
+          },
+          {
+            "name": "老犬介護"
+          }
+        ],
+        "sources": [
+          {
+            "label": "公式サイト",
+            "url": "https://www.alohamimitan.co.jp/"
+          },
+          {
+            "label": "公式サイト(施設案内)",
+            "url": "https://www.alohamimitan.co.jp/about"
+          },
+          {
+            "label": "公式サイト(犬の保育園)",
+            "url": "https://www.alohamimitan.co.jp/preschool"
+          },
+          {
+            "label": "公式サイト(ペットホテル)",
+            "url": "https://www.alohamimitan.co.jp/hotel"
+          },
+          {
+            "label": "公式サイト(ペットシッター)",
+            "url": "https://www.alohamimitan.co.jp/sitter"
+          },
+          {
+            "label": "Google マップ",
+            "url": "https://maps.google.com/?cid=12506116750951527123"
+          }
+        ],
+        "checkedAt": "2026-10-25"
+      }
     }
   ]
 }

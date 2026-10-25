@@ -1,0 +1,32 @@
+{
+  "tab": "トリニティアポ",
+  "tabEn": "tri-stay",
+  "row": 163,
+  "sheet": {
+    "name": "渓流の宿 蔵之助",
+    "address": "",
+    "url": "https://www.google.com/search?q=%E6%B8%93%E6%B5%81%E3%81%AE%E5%AE%BF+%E8%94%B5%E4%B9%8B%E5%8A%A9%0D%0A%0D%0A059-392-2509%0D%0A%0D%0A%E4%BD%8F%E6%89%80%0D%0A%E4%B8%89%E9%87%8D%E7%9C%8C%E4%B8%89%E9%87%8D%E9%83%A1%E8%8F%B0%E9%87%8E%E7%94%BA%E8%8F%B0%E9%87%8E%EF%BC%98%EF%BC%96%EF%BC%92%EF%BC%95&sca_esv=83ead707634fba89&hl=ja&biw=1134&bih=1281&sxsrf=APpeQns1RK05716p90OB6xKFnYecee9CFQ%3A1792568955275&ei=e27YauSMEKT31e8Pi-7ZqQg&uact=5&oq=%E6%B8%93%E6%B5%81%E3%81%AE%E5%AE%BF+%E8%94%B5%E4%B9%8B%E5%8A%A9%0D%0A%0D%0A059-392-2509%0D%0A%0D%0A%E4%BD%8F%E6%89%80%0D%0A%E4%B8%89%E9%87%8D%E7%9C%8C%E4%B8%89%E9%87%8D%E9%83%A1%E8%8F%B0%E9%87%8E%E7%94%BA%E8%8F%B0%E9%87%8E%EF%BC%98%EF%BC%96%EF%BC%92%EF%BC%95&gs_lp=Egxnd3Mtd2l6LXNlcnAiWua4k-a1geOBruWuvyDolLXkuYvliqkKCjA1OS0zOTItMjUwOQoK5L2P5omACuS4iemHjeecjOS4iemHjemDoeiPsOmHjueUuuiPsOmHju-8mO-8lu-8ku-8lTIKEAAYRxjWBBiwAzIKEAAYRxjWBBiwAzIKEAAYRxjWBBiwAzIKEAAYRxjWBBiwAzIKEAAYRxjWBBiwAzIKEAAYRxjWBBiwAzIKEAAYRxjWBBiwAzIKEAAYRxjWBBiwAzIKEAAYRxjWBBiwAzIKEAAYRxjWBBiwA0icDlDuCFjuCHABeACQAQCYAWKgAWKqAQExuAEDyAEA-AEC-AEBmAIBoAIFmAMAiAYBkAYKkgcBMaAH9wWyBwC4BwDCBwMyLTHIBwOACAE&sclient=gws-wiz-serp",
+    "type": "旅館",
+    "d1": "",
+    "d2": ""
+  },
+  "urlKind": "search",
+  "route": "第1段(verify-gbp.mjs)で確認済み",
+  "verdict": "一致",
+  "verdictReason": "電話が一致／店名: exact(シート「渓流の宿 蔵之助」/ マップ「渓流の宿 蔵之助」)／住所(検索URL): exact・町名・番地とも一致",
+  "place": {
+    "name": "渓流の宿 蔵之助",
+    "address": "三重県三重郡菰野町菰野８６２５",
+    "category": null,
+    "lat": 35.0147302,
+    "lng": 136.4417407,
+    "gbpUrl": "https://maps.google.com/?cid=7885744359790044800",
+    "phone": "059-392-2509",
+    "website": "http://kuranosuke.com/",
+    "hours": null,
+    "reserveLinks": [],
+    "statusSignals": [],
+    "closedSignal": false
+  },
+  "fetchedAt": "2026-10-25T01:00:06.668Z"
+}

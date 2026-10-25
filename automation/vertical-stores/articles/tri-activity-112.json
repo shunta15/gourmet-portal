@@ -1,0 +1,269 @@
+{
+  "key": "tri-activity-112",
+  "headline": "熊本県上天草市大矢野町中の港から出港する遊漁船。エサ釣り・ルアー・タイラバ釣りができ、1人からでも乗船できる",
+  "lede": "上天草市にある「遊漁船 美羽」です。大矢野町中の港から出港し、天草の海でエサ釣りやルアー、タイラバ釣りを楽しめます。ライフジャケットや釣り具の貸し出しがあり、事前予約制です。",
+  "sections": [
+    {
+      "heading": "釣りの内容と対象区域",
+      "body": "エサ釣り、ルアー、タイラバ釣りができ、いずれも要相談です。ロックフィッシュ(根魚系)の釣りも扱っています。通常の釣行範囲は湯島・鬼池手前までで、それ以外の区域や特殊な釣りは別途の相談になります。天草は八代海、有明海、東シナ海に囲まれ、豊富な種類の釣りが楽しめる海域です。釣りは老若男女誰もが楽しめ、ファミリーフィッシングにも対応しています。"
+    },
+    {
+      "heading": "集合場所とアクセス",
+      "body": "出港場所は上天草市大矢野町中の港で、乗船場は熊本県上天草市大矢野町中7080の坂田鉄工横です。車は県道107号線を利用します。最寄りのバス停は「小瀬戸」停留所です。"
+    },
+    {
+      "heading": "持ち物と準備",
+      "body": "釣り道具のレンタルがあります。ライフジャケットの貸し出しもあり、着用は必須です。足元が濡れてもよい長靴やサンダルが推奨され、スパイクブーツでの乗船はできません。持ち物の目安として、クーラー・氷などが挙げられています。出航日当日は出発時刻の30分前から準備ができます。"
+    },
+    {
+      "heading": "予約と利用の流れ",
+      "body": "利用は事前予約制で、1人からでも出港できます。チャーターでの予約や、接待・社員旅行のプランの相談も受け付けています。予約後は、出船日の前日に出船確認の電話が必要です。問い合わせはメールより電話のほうが早く対応してもらえます。"
+    }
+  ],
+  "menus": [
+    {
+      "name": "エサ釣り"
+    },
+    {
+      "name": "ルアー釣り"
+    },
+    {
+      "name": "タイラバ釣り"
+    },
+    {
+      "name": "ロックフィッシュ釣り"
+    },
+    {
+      "name": "チャーター"
+    }
+  ],
+  "tags": [
+    {
+      "tag": "初心者歓迎",
+      "factIndex": 27
+    },
+    {
+      "tag": "子連れ",
+      "factIndex": 22
+    },
+    {
+      "tag": "手ぶらでOK",
+      "factIndex": 28
+    }
+  ],
+  "facts": [
+    {
+      "claim": "出港場所は上天草市大矢野町中の港",
+      "source": "https://amakusamiu.com/access/",
+      "quote": "上天草市大矢野町中の港より遊漁船を出港しております。",
+      "checkedAt": "2026-10-25"
+    },
+    {
+      "claim": "乗船場は熊本県上天草市大矢野町中7080坂田鉄工横",
+      "source": "https://amakusamiu.com/access/",
+      "quote": "熊本県上天草市大矢野町中 7080 坂田鉄工横",
+      "checkedAt": "2026-10-25"
+    },
+    {
+      "claim": "最寄りのバス停は「小瀬戸」停留所",
+      "source": "https://amakusamiu.com/",
+      "quote": "最寄りのバス停「小瀬戸」停留所にて下車ください。",
+      "checkedAt": "2026-10-25"
+    },
+    {
+      "claim": "車でのアクセスは県道107号線",
+      "source": "https://amakusamiu.com/access/",
+      "quote": "車でお越しのお客様は、県道107号線をご利用ください。",
+      "checkedAt": "2026-10-25"
+    },
+    {
+      "claim": "船長は池田拡光",
+      "source": "https://amakusamiu.com/access/",
+      "quote": "池田 拡光",
+      "checkedAt": "2026-10-25"
+    },
+    {
+      "claim": "事業内容は船釣り遊漁船の運営",
+      "source": "https://amakusamiu.com/access/",
+      "quote": "船釣り遊漁船の運営",
+      "checkedAt": "2026-10-25"
+    },
+    {
+      "claim": "利用は1人からでも出港できる",
+      "source": "https://amakusamiu.com/access/",
+      "quote": "お一人様から出港可能です。",
+      "checkedAt": "2026-10-25"
+    },
+    {
+      "claim": "出航日当日は出発時刻の30分前から準備ができる",
+      "source": "https://amakusamiu.com/access/",
+      "quote": "出発時刻の30分前よりご準備いただけます。",
+      "checkedAt": "2026-10-25"
+    },
+    {
+      "claim": "ライフジャケットの貸し出しがある",
+      "source": "https://amakusamiu.com/access/",
+      "quote": "ライフジャケットの貸し出しを行っております。",
+      "checkedAt": "2026-10-25"
+    },
+    {
+      "claim": "足元が濡れてもよい長靴やサンダルが推奨される",
+      "source": "https://amakusamiu.com/access/",
+      "quote": "長靴やサンダルなど、足元が濡れても良い履き物を推奨します。",
+      "checkedAt": "2026-10-25"
+    },
+    {
+      "claim": "エサ釣り・ルアー・タイラバ釣りができ、要相談",
+      "source": "https://amakusamiu.com/",
+      "quote": "エサ釣り(エサ別)・ルアー・タイラバ釣り要相談",
+      "checkedAt": "2026-10-25"
+    },
+    {
+      "claim": "ロックフィッシュ(根魚系)の釣りもできる",
+      "source": "https://amakusamiu.com/",
+      "quote": "ロックフィッシュ(根魚系)もできます。",
+      "checkedAt": "2026-10-25"
+    },
+    {
+      "claim": "通常の釣行範囲は湯島・鬼池手前まで",
+      "source": "https://amakusamiu.com/",
+      "quote": "湯島・鬼池手前までが通常料金の釣行範囲となります。",
+      "checkedAt": "2026-10-25"
+    },
+    {
+      "claim": "釣り道具はレンタルがある",
+      "source": "https://amakusamiu.com/beginner/",
+      "quote": "釣り道具はレンタルもあります。",
+      "checkedAt": "2026-10-25"
+    },
+    {
+      "claim": "エサ代はレンタル代に含まれる",
+      "source": "https://amakusamiu.com/beginner/",
+      "quote": "エサ代はレンタル代に含まれています。",
+      "checkedAt": "2026-10-25"
+    },
+    {
+      "claim": "持ち物の目安にクーラー・氷が挙げられている",
+      "source": "https://amakusamiu.com/beginner/",
+      "quote": "クーラー・氷",
+      "checkedAt": "2026-10-25"
+    },
+    {
+      "claim": "釣り座は早く来た順に決める",
+      "source": "https://amakusamiu.com/price/",
+      "quote": "釣り座は早く来られた方から順番にお取りください。",
+      "checkedAt": "2026-10-25"
+    },
+    {
+      "claim": "ゴミは各自持ち帰る決まり",
+      "source": "https://amakusamiu.com/price/",
+      "quote": "自分で出したゴミは各自お持ち帰りください。",
+      "checkedAt": "2026-10-25"
+    },
+    {
+      "claim": "ライフジャケットの着用は必須",
+      "source": "https://amakusamiu.com/price/",
+      "quote": "ライフジャケットは必ず着用してください。",
+      "checkedAt": "2026-10-25"
+    },
+    {
+      "claim": "スパイクブーツでの乗船は不可",
+      "source": "https://amakusamiu.com/price/",
+      "quote": "スパイクブーツを履いての乗船はお断りいたします。",
+      "checkedAt": "2026-10-25"
+    },
+    {
+      "claim": "出船日の前日に出船確認の電話が必要",
+      "source": "https://amakusamiu.com/price/",
+      "quote": "出船日の前日に必ず出船確認のお電話をお願いいたします。",
+      "checkedAt": "2026-10-25"
+    },
+    {
+      "claim": "釣りは老若男女誰もが楽しめる",
+      "source": "https://amakusamiu.com/",
+      "quote": "釣りは老若男女誰もが楽しむことができます。",
+      "checkedAt": "2026-10-25"
+    },
+    {
+      "claim": "ファミリーフィッシングに対応",
+      "source": "https://amakusamiu.com/",
+      "quote": "ファミリーフィッシングもお任せください",
+      "checkedAt": "2026-10-25"
+    },
+    {
+      "claim": "チャーターでの予約や接待、社員旅行のプランの相談ができる",
+      "source": "https://amakusamiu.com/",
+      "quote": "チャーターでのご予約や接待、社員旅行のプランなどのご相談も承ります。",
+      "checkedAt": "2026-10-25"
+    },
+    {
+      "claim": "問い合わせはメールより電話のほうが早い",
+      "source": "https://amakusamiu.com/contact/",
+      "quote": "お急ぎの方はお電話にて直接お問い合わせください。",
+      "checkedAt": "2026-10-25"
+    },
+    {
+      "claim": "業種の表示は釣船チャーター",
+      "source": "https://maps.google.com/?cid=17266455911645587890",
+      "quote": "釣船チャーター",
+      "checkedAt": "2026-10-25"
+    },
+    {
+      "claim": "所在地は熊本県上天草市大矢野町中3011-3",
+      "source": "https://amakusamiu.com/access/",
+      "quote": "熊本県上天草市大矢野町中3011-3",
+      "checkedAt": "2026-10-25"
+    },
+    {
+      "claim": "初心者やお子様連れでも利用できる",
+      "source": "https://amakusamiu.com/",
+      "quote": "初心者の方やお子様連れでも",
+      "checkedAt": "2026-10-25"
+    },
+    {
+      "claim": "ライフジャケットや釣り具の用意があり特別な準備なく乗船できる",
+      "source": "https://amakusamiu.com/",
+      "quote": "特別な準備なく乗船いただけます。",
+      "checkedAt": "2026-10-25"
+    },
+    {
+      "claim": "天草は八代海、有明海、東シナ海に囲まれ豊富な種類の釣りが楽しめる",
+      "source": "https://amakusamiu.com/",
+      "quote": "天草は八代海、有明海、東シナ海に囲まれており",
+      "checkedAt": "2026-10-25"
+    },
+    {
+      "claim": "利用には事前の予約が必要",
+      "source": "https://amakusamiu.com/access/",
+      "quote": "事前のご予約をお願いしております。",
+      "checkedAt": "2026-10-25"
+    }
+  ],
+  "sources": [
+    {
+      "label": "公式サイト",
+      "url": "https://amakusamiu.com/"
+    },
+    {
+      "label": "公式サイト(アクセス)",
+      "url": "https://amakusamiu.com/access/"
+    },
+    {
+      "label": "公式サイト(ご利用料金)",
+      "url": "https://amakusamiu.com/price/"
+    },
+    {
+      "label": "公式サイト(お問い合わせ)",
+      "url": "https://amakusamiu.com/contact/"
+    },
+    {
+      "label": "公式サイト(初めての方へ)",
+      "url": "https://amakusamiu.com/beginner/"
+    },
+    {
+      "label": "Google マップ",
+      "url": "https://maps.google.com/?cid=17266455911645587890"
+    }
+  ],
+  "notes": "automation/v2/write.mjs が 2026-10-25 に claude -p --model sonnet で作成。事実の裏取り: 31/31 件(quote が出どころにあるもの)。裏取りに通らなかった facts は載せていない。"
+}

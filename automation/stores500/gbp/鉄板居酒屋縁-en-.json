@@ -1,0 +1,22 @@
+{
+  "name": "鉄板居酒屋 縁-en-",
+  "address": "静岡県浜松市中央区和合町５−４",
+  "lat": 34.7314971,
+  "lng": 137.7155977,
+  "category": "居酒屋",
+  "hours": {
+    "月": "17:00–00:00",
+    "火": "定休日",
+    "水": "17:00–00:00",
+    "木": "17:00–00:00",
+    "金": "17:00–00:00",
+    "土": "17:00–00:00",
+    "日": "17:00–00:00"
+  },
+  "phone": "053-401-2332",
+  "website": "https://www.instagram.com/izakaya_en0425?igsh=MTd2aGYxaDU3cWlrcw==&utm_source=qr",
+  "priceRange": null,
+  "status": null,
+  "gbpUrl": "https://maps.google.com/?cid=16308242439795550891",
+  "fetchedAt": "2026-10-25T00:27:25.117Z"
+}

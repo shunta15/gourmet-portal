@@ -1,0 +1,40 @@
+{
+  "tab": "トリニティアポ",
+  "tabEn": "tri-beauty",
+  "row": 83,
+  "sheet": {
+    "name": "脱毛×エステサロン Nefer",
+    "address": "",
+    "url": "https://www.google.com/maps/place/%E8%84%B1%E6%AF%9B%C3%97%E3%82%A8%E3%82%B9%E3%83%86%E3%82%B5%E3%83%AD%E3%83%B3+Nefer/@34.6085281,135.5266089,833m/data=!3m1!1e3!4m15!1m8!3m7!1s0x6000df47aba7567f:0x69026ef7f2361d2a!2z6ISx5q-bw5fjgqjjgrnjg4bjgrXjg63jg7MgTmVmZXI!8m2!3d34.6084309!4d135.529098!10e5!16s%2Fg%2F11njn7cx1l!3m5!1s0x6000df47aba7567f:0x69026ef7f2361d2a!8m2!3d34.6084309!4d135.529098!16s%2Fg%2F11njn7cx1l?entry=ttu&g_ep=EgoyMDI2MTAxMy4wIKXMDSoASAFQAw%3D%3D",
+    "type": "美容",
+    "d1": "",
+    "d2": ""
+  },
+  "urlKind": "place",
+  "route": "第1段(verify-gbp.mjs)で確認済み",
+  "verdict": "一致",
+  "verdictReason": "電話が一致／店名: exact(シート「脱毛×エステサロン Nefer」/ マップ「脱毛×エステサロン Nefer」)",
+  "place": {
+    "name": "脱毛×エステサロン Nefer",
+    "address": "大阪府大阪市東住吉区矢田１丁目１８−２２ プレアール長居公園 Ⅱ303号室",
+    "category": "脱毛サービス",
+    "lat": 34.6084309,
+    "lng": 135.529098,
+    "gbpUrl": "https://maps.google.com/?cid=7566732335135464746",
+    "phone": "090-4280-8737",
+    "website": "https://nefer.jp/?utm_source=GBP&utm_medium=GBP&utm_term=GBP&utm_content=GBP&utm_campaign=GBP",
+    "hours": {
+      "月": "11:00–20:00",
+      "火": "11:00–20:00",
+      "水": "11:00–20:00",
+      "木": "11:00–20:00",
+      "金": "11:00–20:00",
+      "土": "11:00–20:00",
+      "日": "11:00–20:00"
+    },
+    "reserveLinks": [],
+    "statusSignals": [],
+    "closedSignal": false
+  },
+  "fetchedAt": "2026-10-25T00:21:42.313Z"
+}

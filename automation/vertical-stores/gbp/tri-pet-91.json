@@ -1,0 +1,40 @@
+{
+  "tab": "トリニティアポ",
+  "tabEn": "tri-pet",
+  "row": 91,
+  "sheet": {
+    "name": "BARBER DOG PRECIOUS WAN",
+    "address": "",
+    "url": "https://www.google.com/search?q=BARBER+DOG+PRECIOUS+WAN&oq=BARBER+DOG+PRECIOUS+WAN&gs_lcrp=EgZjaHJvbWUqBggAEEUYOzIGCAAQRRg7MgYIARBFGDsyBggCECMYJzIGCAMQABgeMgcIBBAAGO8FMgcIBRAAGO8FMgYIBhBFGDwyBggHEEUYPNIBBzEzOGowajeoAgCwAgA&sourceid=chrome&source=chrome.ob&ie=UTF-8",
+    "type": "その他",
+    "d1": "",
+    "d2": ""
+  },
+  "urlKind": "search",
+  "route": "第1段(verify-gbp.mjs)で確認済み",
+  "verdict": "一致",
+  "verdictReason": "電話が一致／店名: exact(シート「BARBER DOG PRECIOUS WAN」/ マップ「BARBER DOG PRECIOUS WAN」)",
+  "place": {
+    "name": "BARBER DOG PRECIOUS WAN",
+    "address": "宮城県多賀城市中央３丁目９−２７",
+    "category": "トリミングサロン",
+    "lat": 38.2929626,
+    "lng": 141.0082502,
+    "gbpUrl": "https://maps.google.com/?cid=2789450396352068285",
+    "phone": "070-8971-1139",
+    "website": "https://www.instagram.com/barberdogpreciouswan?igsh=Y3RhNHBnd2FoeXo1",
+    "hours": {
+      "月": "09:30–17:00",
+      "火": "09:30–17:00",
+      "水": "09:30–17:00",
+      "木": "09:30–17:00",
+      "金": "09:30–17:00",
+      "土": "09:30–17:00",
+      "日": "定休日"
+    },
+    "reserveLinks": [],
+    "statusSignals": [],
+    "closedSignal": false
+  },
+  "fetchedAt": "2026-10-25T00:25:03.344Z"
+}

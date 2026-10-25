@@ -3,8 +3,8 @@
     "date": "2026-10-25",
     "startedAt": "2026-10-24T23:00:28.191Z",
     "verifyFile": "automation/v2/out/verify-2026-10-25.json",
-    "args": "--from-row 80 --prepare-only",
-    "updatedAt": "2026-10-25T00:37:07.764Z"
+    "args": "--from-row 80",
+    "updatedAt": "2026-10-25T01:22:11.161Z"
   },
   "environment": null,
   "results": {
@@ -136,36 +136,76 @@
       "name": "伊酒家 VERDE",
       "vertical": "グルメ",
       "articleId": "伊酒家VERDE",
-      "status": "準備のみ",
-      "stage": "prepared",
+      "status": "成功",
+      "stage": "done",
       "startedAt": "2026-10-25T00:20:42.736Z",
       "seconds": {
-        "total": 46
+        "total": 0
       },
       "photos": {
         "candidates": 27,
         "maps": 10,
         "official": 17,
-        "rejectedByMachine": 1
-      }
+        "rejectedByMachine": 1,
+        "used": 5,
+        "emptyFrames": 1
+      },
+      "check": {
+        "rewrote": false,
+        "shapeProblems": [],
+        "sentenceProblems": 0,
+        "facts": {
+          "total": 32,
+          "verified": 31
+        }
+      },
+      "memo": "裏取りに通らない facts 1 件は載せていない",
+      "storeId": "r673",
+      "onePage": "表に追加(/feature/<記事ID> は /restaurant/<店ID> へ転送)",
+      "storeBuilt": true,
+      "storeNote": null,
+      "urls": {
+        "article": "/feature/伊酒家VERDE",
+        "shop": "/restaurant/r673"
+      },
+      "finishedAt": "2026-10-25T01:15:46.691Z"
     },
     "tri-beauty-83": {
       "key": "tri-beauty-83",
       "row": 83,
       "name": "脱毛×エステサロン Nefer",
       "vertical": "ビューティー",
-      "status": "準備のみ",
-      "stage": "prepared",
+      "status": "成功",
+      "stage": "done",
       "startedAt": "2026-10-25T00:21:28.443Z",
       "seconds": {
-        "total": 52
+        "total": 0
       },
       "photos": {
         "candidates": 23,
         "maps": 10,
         "official": 13,
-        "rejectedByMachine": 5
-      }
+        "rejectedByMachine": 5,
+        "used": 2,
+        "emptyFrames": 0
+      },
+      "check": {
+        "rewrote": false,
+        "shapeProblems": [],
+        "sentenceProblems": 0,
+        "facts": {
+          "total": 18,
+          "verified": 18
+        }
+      },
+      "placeId": "be0106",
+      "featureInGenerated": false,
+      "featureNote": null,
+      "urls": {
+        "shop": "/beauty/shop/be0106",
+        "article": "/beauty/article/be0106"
+      },
+      "finishedAt": "2026-10-25T01:15:46.911Z"
     },
     "tri-gourmet-84": {
       "key": "tri-gourmet-84",
@@ -173,18 +213,19 @@
       "name": "宿カフェ Hale Liko",
       "vertical": "グルメ",
       "articleId": "宿カフェHaleLiko",
-      "status": "準備のみ",
-      "stage": "prepared",
+      "status": "失敗",
+      "stage": "claude",
       "startedAt": "2026-10-25T00:22:20.242Z",
       "seconds": {
-        "total": 36
+        "total": 0
       },
       "photos": {
         "candidates": 10,
         "maps": 10,
         "official": 0,
         "rejectedByMachine": 0
-      }
+      },
+      "reason": "書き手が失敗の出口で終了: 公式サイトの文字情報が取得できず(SNSのみで公式サイトなし)、Googleマップの情報も店名・住所・電話・業種表示のみで営業時間も登録がない。メニューや店の特徴を示す文字の材料が無く、quoteで裏付けられる事実だけでPOINT3〜5個の記事本文を書けない。"
     },
     "tri-gourmet-85": {
       "key": "tri-gourmet-85",
@@ -192,18 +233,19 @@
       "name": "むぎぞう",
       "vertical": "グルメ",
       "articleId": "むぎぞう",
-      "status": "準備のみ",
-      "stage": "prepared",
+      "status": "失敗",
+      "stage": "claude",
       "startedAt": "2026-10-25T00:22:56.141Z",
       "seconds": {
-        "total": 34
+        "total": 0
       },
       "photos": {
         "candidates": 10,
         "maps": 10,
         "official": 0,
         "rejectedByMachine": 0
-      }
+      },
+      "reason": "書き手が失敗の出口で終了: 公式サイトの文字が取得できておらず(SNSのみで未取得)、事実として使えるのはGoogleマップのstore.json(店名・住所・電話・業種・営業時間)のみ。写真候補はあるが、メニューや素材・技術など記事の核になる事実を裏付けるquote可能な文字情報が無く、POINTを3〜5個とも事実だけで構成できないため執筆を見送る。"
     },
     "tri-gourmet-86": {
       "key": "tri-gourmet-86",
@@ -211,18 +253,32 @@
       "name": "ＧＡＴＥＡＵ ＯＲＡＮＧＥ（ガトー オランジュ）",
       "vertical": "グルメ",
       "articleId": "GATEAUORANGE（ガトーオランジュ）",
-      "status": "準備のみ",
-      "stage": "prepared",
+      "status": "失敗",
+      "stage": "check",
       "startedAt": "2026-10-25T00:23:30.210Z",
       "seconds": {
-        "total": 43
+        "total": 51,
+        "claude": 51
       },
       "photos": {
         "candidates": 20,
         "maps": 10,
         "official": 10,
         "rejectedByMachine": 8
-      }
+      },
+      "check": {
+        "rewrote": true,
+        "shapeProblems": [],
+        "sentenceProblems": 1,
+        "facts": {
+          "total": 22,
+          "verified": 22
+        }
+      },
+      "reason": "検査に通らない(1 件・書き直し後も): article.ranking[1].specs[1].k「その他」W:その他",
+      "checkDetail": [
+        "article.ranking[1].specs[1].k「その他」W:その他"
+      ]
     },
     "tri-gourmet-87": {
       "key": "tri-gourmet-87",
@@ -230,36 +286,56 @@
       "name": "TiBURON Cafe",
       "vertical": "グルメ",
       "articleId": "TiBURONCAFE",
-      "status": "準備のみ",
-      "stage": "prepared",
+      "status": "失敗",
+      "stage": "claude",
       "startedAt": "2026-10-25T00:24:13.543Z",
       "seconds": {
-        "total": 37
+        "total": 0
       },
       "photos": {
         "candidates": 10,
         "maps": 10,
         "official": 0,
         "rejectedByMachine": 0
-      }
+      },
+      "reason": "書き手が失敗の出口で終了: 公式サイトの文字が取得できず、Googleマップの情報も店名・住所・電話・営業時間・業種表示のみで、メニューや内装などグルメ記事のPOINTを3つ以上事実だけで構成できる材料が無いため。"
     },
     "tri-pet-91": {
       "key": "tri-pet-91",
       "row": 91,
       "name": "BARBER DOG PRECIOUS WAN",
       "vertical": "ペット",
-      "status": "準備のみ",
-      "stage": "prepared",
+      "status": "成功",
+      "stage": "done",
       "startedAt": "2026-10-25T00:24:50.696Z",
       "seconds": {
-        "total": 32
+        "total": 0
       },
       "photos": {
         "candidates": 10,
         "maps": 10,
         "official": 0,
-        "rejectedByMachine": 0
-      }
+        "rejectedByMachine": 0,
+        "used": 10,
+        "emptyFrames": 0
+      },
+      "check": {
+        "rewrote": false,
+        "shapeProblems": [],
+        "sentenceProblems": 0,
+        "facts": {
+          "total": 4,
+          "verified": 4
+        }
+      },
+      "placeId": "pe0021",
+      "featureInGenerated": false,
+      "featureNote": null,
+      "urls": {
+        "shop": "/pet/shop/pe0021",
+        "article": "/pet/article/pe0021"
+      },
+      "finishedAt": "2026-10-25T01:16:37.694Z"
     },
     "tri-gourmet-94": {
       "key": "tri-gourmet-94",
@@ -267,18 +343,38 @@
       "name": "居酒屋宝泉北区王子駅前店",
       "vertical": "グルメ",
       "articleId": "居酒屋宝泉北区王子駅前店",
-      "status": "準備のみ",
-      "stage": "prepared",
+      "status": "成功",
+      "stage": "done",
       "startedAt": "2026-10-25T00:25:22.247Z",
       "seconds": {
-        "total": 32
+        "total": 0
       },
       "photos": {
         "candidates": 10,
         "maps": 10,
         "official": 0,
-        "rejectedByMachine": 0
-      }
+        "rejectedByMachine": 0,
+        "used": 3,
+        "emptyFrames": 1
+      },
+      "check": {
+        "rewrote": false,
+        "shapeProblems": [],
+        "sentenceProblems": 0,
+        "facts": {
+          "total": 7,
+          "verified": 7
+        }
+      },
+      "storeId": "r674",
+      "onePage": "表に追加(/feature/<記事ID> は /restaurant/<店ID> へ転送)",
+      "storeBuilt": true,
+      "storeNote": null,
+      "urls": {
+        "article": "/feature/居酒屋宝泉北区王子駅前店",
+        "shop": "/restaurant/r674"
+      },
+      "finishedAt": "2026-10-25T01:16:38.145Z"
     },
     "tri-gourmet-102": {
       "key": "tri-gourmet-102",
@@ -286,18 +382,19 @@
       "name": "満天や",
       "vertical": "グルメ",
       "articleId": "満天や",
-      "status": "準備のみ",
-      "stage": "prepared",
+      "status": "失敗",
+      "stage": "claude",
       "startedAt": "2026-10-25T00:25:54.120Z",
       "seconds": {
-        "total": 31
+        "total": 0
       },
       "photos": {
         "candidates": 10,
         "maps": 10,
         "official": 0,
         "rejectedByMachine": 0
-      }
+      },
+      "reason": "書き手が失敗の出口で終了: 公式サイトなし。Google マップ(store.json)から得られる事実は店名・住所・電話・営業時間・定休日・業種表示(居酒屋)のみで、メニューや料理内容を示すテキストの出どころが無い。写真には料理が写るが、仕様上GBPに出ていない料理内容・雰囲気の具体描写は割愛すべきもので、facts化(quote裏付け)もできない。残る住所・営業時間・電話だけでは、水増しせずに3〜5個の具体的なPOINTを組み立てる材料が不足している。"
     },
     "tri-gourmet-104": {
       "key": "tri-gourmet-104",
@@ -305,18 +402,38 @@
       "name": "Dining&Bar CURIOUS キュリアス",
       "vertical": "グルメ",
       "articleId": "DiningBarCURIOUSキュリアス",
-      "status": "準備のみ",
-      "stage": "prepared",
+      "status": "成功",
+      "stage": "done",
       "startedAt": "2026-10-25T00:26:24.852Z",
       "seconds": {
-        "total": 45
+        "total": 0
       },
       "photos": {
         "candidates": 15,
         "maps": 10,
         "official": 5,
-        "rejectedByMachine": 13
-      }
+        "rejectedByMachine": 13,
+        "used": 5,
+        "emptyFrames": 1
+      },
+      "check": {
+        "rewrote": false,
+        "shapeProblems": [],
+        "sentenceProblems": 0,
+        "facts": {
+          "total": 23,
+          "verified": 23
+        }
+      },
+      "storeId": "r675",
+      "onePage": "表に追加(/feature/<記事ID> は /restaurant/<店ID> へ転送)",
+      "storeBuilt": true,
+      "storeNote": null,
+      "urls": {
+        "article": "/feature/DiningBarCURIOUSキュリアス",
+        "shop": "/restaurant/r675"
+      },
+      "finishedAt": "2026-10-25T01:16:38.610Z"
     },
     "tri-gourmet-105": {
       "key": "tri-gourmet-105",
@@ -324,18 +441,39 @@
       "name": "鉄板居酒屋 縁 en",
       "vertical": "グルメ",
       "articleId": "鉄板居酒屋縁-en-",
-      "status": "準備のみ",
-      "stage": "prepared",
+      "status": "成功",
+      "stage": "done",
       "startedAt": "2026-10-25T00:27:09.980Z",
       "seconds": {
-        "total": 34
+        "total": 41,
+        "claude": 40
       },
       "photos": {
         "candidates": 10,
         "maps": 10,
         "official": 0,
-        "rejectedByMachine": 0
-      }
+        "rejectedByMachine": 0,
+        "used": 4,
+        "emptyFrames": 1
+      },
+      "check": {
+        "rewrote": true,
+        "shapeProblems": [],
+        "sentenceProblems": 0,
+        "facts": {
+          "total": 6,
+          "verified": 6
+        }
+      },
+      "storeId": "r676",
+      "onePage": "表に追加(/feature/<記事ID> は /restaurant/<店ID> へ転送)",
+      "storeBuilt": true,
+      "storeNote": null,
+      "urls": {
+        "article": "/feature/鉄板居酒屋縁-en-",
+        "shop": "/restaurant/r676"
+      },
+      "finishedAt": "2026-10-25T01:17:19.255Z"
     },
     "tri-gourmet-108": {
       "key": "tri-gourmet-108",
@@ -343,36 +481,75 @@
       "name": "鉄板焼 輝",
       "vertical": "グルメ",
       "articleId": "鉄板焼輝",
-      "status": "準備のみ",
-      "stage": "prepared",
+      "status": "成功",
+      "stage": "done",
       "startedAt": "2026-10-25T00:27:43.900Z",
       "seconds": {
-        "total": 43
+        "total": 0
       },
       "photos": {
         "candidates": 11,
         "maps": 10,
         "official": 1,
-        "rejectedByMachine": 0
-      }
+        "rejectedByMachine": 0,
+        "used": 5,
+        "emptyFrames": 1
+      },
+      "check": {
+        "rewrote": false,
+        "shapeProblems": [],
+        "sentenceProblems": 0,
+        "facts": {
+          "total": 12,
+          "verified": 12
+        }
+      },
+      "storeId": "r677",
+      "onePage": "表に追加(/feature/<記事ID> は /restaurant/<店ID> へ転送)",
+      "storeBuilt": true,
+      "storeNote": null,
+      "urls": {
+        "article": "/feature/鉄板焼輝",
+        "shop": "/restaurant/r677"
+      },
+      "finishedAt": "2026-10-25T01:17:19.711Z"
     },
     "tri-pet-109": {
       "key": "tri-pet-109",
       "row": 109,
       "name": "ペットホテル ALOHA MIMITAN アロハミミタン",
       "vertical": "ペット",
-      "status": "準備のみ",
-      "stage": "prepared",
+      "status": "成功",
+      "stage": "done",
       "startedAt": "2026-10-25T00:28:26.942Z",
       "seconds": {
-        "total": 46
+        "total": 0
       },
       "photos": {
         "candidates": 24,
         "maps": 10,
         "official": 14,
-        "rejectedByMachine": 4
-      }
+        "rejectedByMachine": 4,
+        "used": 18,
+        "emptyFrames": 0
+      },
+      "check": {
+        "rewrote": false,
+        "shapeProblems": [],
+        "sentenceProblems": 0,
+        "facts": {
+          "total": 19,
+          "verified": 19
+        }
+      },
+      "placeId": "pe0022",
+      "featureInGenerated": false,
+      "featureNote": null,
+      "urls": {
+        "shop": "/pet/shop/pe0022",
+        "article": "/pet/article/pe0022"
+      },
+      "finishedAt": "2026-10-25T01:17:19.845Z"
     },
     "tri-gourmet-110": {
       "key": "tri-gourmet-110",
@@ -380,31 +557,57 @@
       "name": "Dining Bar marib",
       "vertical": "グルメ",
       "articleId": "DiningBarMarib四条烏丸",
-      "status": "準備のみ",
-      "stage": "prepared",
+      "status": "失敗",
+      "stage": "claude",
       "startedAt": "2026-10-25T00:29:12.701Z",
       "seconds": {
-        "total": 36
+        "total": 0
       },
       "photos": {
         "candidates": 10,
         "maps": 10,
         "official": 0,
         "rejectedByMachine": 0
-      }
+      },
+      "reason": "書き手が失敗の出口で終了: 公式サイトなし。store.jsonには住所・電話・業種表示・営業時間のみでメニューや店の特徴を示す文章情報が無く、POINTを3〜5個、事実とquote裏付けで埋められない。"
     },
     "tri-activity-112": {
       "key": "tri-activity-112",
       "row": 112,
       "name": "遊漁船美羽",
       "vertical": "アクティビティ",
-      "status": "失敗",
-      "stage": "maps",
+      "status": "成功",
+      "stage": "done",
       "startedAt": "2026-10-25T00:29:48.925Z",
       "seconds": {
-        "total": 25
+        "total": 61,
+        "claude": 61
       },
-      "reason": "Google マップを読めなかった: page.waitForTimeout: Target page, context or browser has been closed"
+      "photos": {
+        "candidates": 20,
+        "maps": 10,
+        "official": 10,
+        "rejectedByMachine": 8,
+        "used": 11,
+        "emptyFrames": 0
+      },
+      "check": {
+        "rewrote": true,
+        "shapeProblems": [],
+        "sentenceProblems": 0,
+        "facts": {
+          "total": 31,
+          "verified": 31
+        }
+      },
+      "placeId": "ac0013",
+      "featureInGenerated": true,
+      "featureNote": null,
+      "urls": {
+        "shop": "/activity/shop/ac0013",
+        "article": "/activity/article/ac0013"
+      },
+      "finishedAt": "2026-10-25T01:18:21.286Z"
     },
     "tri-gourmet-113": {
       "key": "tri-gourmet-113",
@@ -412,39 +615,114 @@
       "name": "cafe温",
       "vertical": "グルメ",
       "articleId": "cafe温−on−",
-      "status": "失敗",
-      "stage": "maps",
+      "status": "成功",
+      "stage": "done",
       "startedAt": "2026-10-25T00:30:13.989Z",
       "seconds": {
-        "total": 9
+        "total": 0
       },
-      "reason": "Google マップを読めなかった: browserContext.newPage: Target page, context or browser has been closed"
+      "photos": {
+        "candidates": 23,
+        "maps": 10,
+        "official": 13,
+        "rejectedByMachine": 5,
+        "used": 5,
+        "emptyFrames": 1
+      },
+      "check": {
+        "rewrote": false,
+        "shapeProblems": [],
+        "sentenceProblems": 0,
+        "facts": {
+          "total": 29,
+          "verified": 28
+        }
+      },
+      "memo": "裏取りに通らない facts 1 件は載せていない",
+      "storeId": "r678",
+      "onePage": "表に追加(/feature/<記事ID> は /restaurant/<店ID> へ転送)",
+      "storeBuilt": true,
+      "storeNote": null,
+      "urls": {
+        "article": "/feature/cafe温−on−",
+        "shop": "/restaurant/r678"
+      },
+      "finishedAt": "2026-10-25T01:18:21.747Z"
     },
     "tri-activity-114": {
       "key": "tri-activity-114",
       "row": 114,
       "name": "AriHana Kyoto -Japanese traditional play experience in Kyoto",
       "vertical": "アクティビティ",
-      "status": "失敗",
-      "stage": "maps",
+      "status": "成功",
+      "stage": "done",
       "startedAt": "2026-10-25T00:30:22.929Z",
       "seconds": {
-        "total": 9
+        "total": 0
       },
-      "reason": "Google マップを読めなかった: browserContext.newPage: Target page, context or browser has been closed"
+      "photos": {
+        "candidates": 13,
+        "maps": 9,
+        "official": 4,
+        "rejectedByMachine": 15,
+        "used": 10,
+        "emptyFrames": 1
+      },
+      "check": {
+        "rewrote": false,
+        "shapeProblems": [],
+        "sentenceProblems": 0,
+        "facts": {
+          "total": 34,
+          "verified": 34
+        }
+      },
+      "placeId": "ac0014",
+      "featureInGenerated": true,
+      "featureNote": null,
+      "urls": {
+        "shop": "/activity/shop/ac0014",
+        "article": "/activity/article/ac0014"
+      },
+      "finishedAt": "2026-10-25T01:18:21.873Z"
     },
     "tri-stay-115": {
       "key": "tri-stay-115",
       "row": 115,
       "name": "民泊 セカンドライフ",
       "vertical": "ステイ",
-      "status": "失敗",
-      "stage": "maps",
+      "status": "成功",
+      "stage": "done",
       "startedAt": "2026-10-25T00:30:31.875Z",
       "seconds": {
-        "total": 8
+        "total": 48,
+        "claude": 48
       },
-      "reason": "Google マップを読めなかった: browserContext.newPage: Target page, context or browser has been closed"
+      "photos": {
+        "candidates": 11,
+        "maps": 10,
+        "official": 1,
+        "rejectedByMachine": 17,
+        "used": 8,
+        "emptyFrames": 0
+      },
+      "check": {
+        "rewrote": true,
+        "shapeProblems": [],
+        "sentenceProblems": 0,
+        "facts": {
+          "total": 17,
+          "verified": 17
+        }
+      },
+      "placeId": "st0010",
+      "featureInGenerated": false,
+      "featureNote": null,
+      "urls": {
+        "shop": "/stay/shop/st0010",
+        "article": "/stay/article/st0010"
+      },
+      "finishedAt": "2026-10-25T01:19:09.737Z"
     },
     "tri-stay-116": {
       "key": "tri-stay-116",
@@ -452,12 +730,18 @@
       "name": "湯平温泉　旅館いづもや",
       "vertical": "ステイ",
       "status": "失敗",
-      "stage": "maps",
+      "stage": "claude",
       "startedAt": "2026-10-25T00:30:40.376Z",
       "seconds": {
-        "total": 10
+        "total": 0
       },
-      "reason": "Google マップを読めなかった: browserContext.newPage: Target page, context or browser has been closed"
+      "reason": "書き手が失敗の出口で終了: 公式サイトの文字が無く、Google マップの情報も店名・住所・電話・cidのみで営業時間や業種の表示も無い。客室・風呂・食事・予約などを事実として書ける文章の出どころが無く、記事の節を水増しせずに埋められない。",
+      "photos": {
+        "candidates": 10,
+        "maps": 10,
+        "official": 0,
+        "rejectedByMachine": 0
+      }
     },
     "tri-gourmet-118": {
       "key": "tri-gourmet-118",
@@ -466,25 +750,55 @@
       "vertical": "グルメ",
       "articleId": "ボードゲームカフェCARIVAN",
       "status": "失敗",
-      "stage": "maps",
+      "stage": "claude",
       "startedAt": "2026-10-25T00:30:50.335Z",
       "seconds": {
-        "total": 9
+        "total": 0
       },
-      "reason": "Google マップを読めなかった: browserContext.newPage: Target page, context or browser has been closed"
+      "reason": "書き手が失敗の出口で終了: 公式サイトが無く(SNSのみ)、Google マップ(store.json)にも店名・住所・営業時間・業種表示以外の文字情報が無いため、facts で裏付けられる事実が不足し、3〜5個のPOINTを水増しせずに書けない。",
+      "photos": {
+        "candidates": 10,
+        "maps": 10,
+        "official": 0,
+        "rejectedByMachine": 0
+      }
     },
     "tri-stay-122": {
       "key": "tri-stay-122",
       "row": 122,
       "name": "旬魚と地どりの宿 料理旅館井筒屋",
       "vertical": "ステイ",
-      "status": "失敗",
-      "stage": "maps",
+      "status": "成功",
+      "stage": "done",
       "startedAt": "2026-10-25T00:30:59.543Z",
       "seconds": {
-        "total": 9
+        "total": 0
       },
-      "reason": "Google マップを読めなかった: browserContext.newPage: Target page, context or browser has been closed"
+      "photos": {
+        "candidates": 14,
+        "maps": 10,
+        "official": 4,
+        "rejectedByMachine": 14,
+        "used": 13,
+        "emptyFrames": 0
+      },
+      "check": {
+        "rewrote": false,
+        "shapeProblems": [],
+        "sentenceProblems": 0,
+        "facts": {
+          "total": 19,
+          "verified": 19
+        }
+      },
+      "placeId": "st0011",
+      "featureInGenerated": false,
+      "featureNote": null,
+      "urls": {
+        "shop": "/stay/shop/st0011",
+        "article": "/stay/article/st0011"
+      },
+      "finishedAt": "2026-10-25T01:19:09.869Z"
     },
     "tri-gourmet-124": {
       "key": "tri-gourmet-124",
@@ -492,13 +806,39 @@
       "name": "ツバメ珈琲 -swallow coffee-",
       "vertical": "グルメ",
       "articleId": "ツバメ珈琲-swallowcoffee-",
-      "status": "失敗",
-      "stage": "maps",
+      "status": "成功",
+      "stage": "done",
       "startedAt": "2026-10-25T00:31:08.579Z",
       "seconds": {
-        "total": 8
+        "total": 35,
+        "claude": 35
       },
-      "reason": "Google マップを読めなかった: browserContext.newPage: Target page, context or browser has been closed"
+      "photos": {
+        "candidates": 10,
+        "maps": 10,
+        "official": 0,
+        "rejectedByMachine": 0,
+        "used": 3,
+        "emptyFrames": 1
+      },
+      "check": {
+        "rewrote": true,
+        "shapeProblems": [],
+        "sentenceProblems": 0,
+        "facts": {
+          "total": 8,
+          "verified": 8
+        }
+      },
+      "storeId": "r679",
+      "onePage": "表に追加(/feature/<記事ID> は /restaurant/<店ID> へ転送)",
+      "storeBuilt": true,
+      "storeNote": null,
+      "urls": {
+        "article": "/feature/ツバメ珈琲-swallowcoffee-",
+        "shop": "/restaurant/r679"
+      },
+      "finishedAt": "2026-10-25T01:19:45.260Z"
     },
     "tri-gourmet-125": {
       "key": "tri-gourmet-125",
@@ -507,12 +847,18 @@
       "vertical": "グルメ",
       "articleId": "カナデアンコーヒーハウスメイプル",
       "status": "失敗",
-      "stage": "maps",
+      "stage": "claude",
       "startedAt": "2026-10-25T00:31:16.188Z",
       "seconds": {
-        "total": 9
+        "total": 0
       },
-      "reason": "Google マップを読めなかった: browserContext.newPage: Target page, context or browser has been closed"
+      "reason": "書き手が失敗の出口で終了: 公式サイトの文字情報が無く(SNSのみ)、store.jsonも店名・住所・電話・業種表示・営業時間のみで、3〜5個のPOINTを独立した事実で構成できるだけの材料が無い",
+      "photos": {
+        "candidates": 10,
+        "maps": 10,
+        "official": 0,
+        "rejectedByMachine": 0
+      }
     },
     "tri-gourmet-126": {
       "key": "tri-gourmet-126",
@@ -520,13 +866,38 @@
       "name": "そば処 ひふみ",
       "vertical": "グルメ",
       "articleId": "そば処ひふみ",
-      "status": "失敗",
-      "stage": "maps",
+      "status": "成功",
+      "stage": "done",
       "startedAt": "2026-10-25T00:31:25.473Z",
       "seconds": {
-        "total": 9
+        "total": 0
       },
-      "reason": "Google マップを読めなかった: browserContext.newPage: Target page, context or browser has been closed"
+      "photos": {
+        "candidates": 13,
+        "maps": 10,
+        "official": 3,
+        "rejectedByMachine": 5,
+        "used": 5,
+        "emptyFrames": 1
+      },
+      "check": {
+        "rewrote": false,
+        "shapeProblems": [],
+        "sentenceProblems": 0,
+        "facts": {
+          "total": 22,
+          "verified": 22
+        }
+      },
+      "storeId": "r680",
+      "onePage": "表に追加(/feature/<記事ID> は /restaurant/<店ID> へ転送)",
+      "storeBuilt": true,
+      "storeNote": null,
+      "urls": {
+        "article": "/feature/そば処ひふみ",
+        "shop": "/restaurant/r680"
+      },
+      "finishedAt": "2026-10-25T01:19:45.721Z"
     },
     "tri-gourmet-127": {
       "key": "tri-gourmet-127",
@@ -534,13 +905,39 @@
       "name": "ヒツジとビール",
       "vertical": "グルメ",
       "articleId": "HITSUJItoBEER（ヒツジとビール）",
-      "status": "失敗",
-      "stage": "maps",
+      "status": "成功",
+      "stage": "done",
       "startedAt": "2026-10-25T00:31:34.282Z",
       "seconds": {
-        "total": 10
+        "total": 38,
+        "claude": 37
       },
-      "reason": "Google マップを読めなかった: browserContext.newPage: Target page, context or browser has been closed"
+      "photos": {
+        "candidates": 10,
+        "maps": 10,
+        "official": 0,
+        "rejectedByMachine": 0,
+        "used": 2,
+        "emptyFrames": 2
+      },
+      "check": {
+        "rewrote": true,
+        "shapeProblems": [],
+        "sentenceProblems": 0,
+        "facts": {
+          "total": 6,
+          "verified": 6
+        }
+      },
+      "storeId": "r681",
+      "onePage": "表に追加(/feature/<記事ID> は /restaurant/<店ID> へ転送)",
+      "storeBuilt": true,
+      "storeNote": null,
+      "urls": {
+        "article": "/feature/HITSUJItoBEER（ヒツジとビール）",
+        "shop": "/restaurant/r681"
+      },
+      "finishedAt": "2026-10-25T01:20:23.622Z"
     },
     "tri-gourmet-128": {
       "key": "tri-gourmet-128",
@@ -549,12 +946,18 @@
       "vertical": "グルメ",
       "articleId": "焼き鳥居酒屋さつき",
       "status": "失敗",
-      "stage": "maps",
+      "stage": "claude",
       "startedAt": "2026-10-25T00:31:43.961Z",
       "seconds": {
-        "total": 7
+        "total": 0
       },
-      "reason": "Google マップを読めなかった: browserContext.newPage: Target page, context or browser has been closed"
+      "reason": "書き手が失敗の出口で終了: 公式サイトの文字情報が取得できておらず、store.jsonにも店名・住所・電話・営業時間・業種表示(焼き鳥店)以外の事実がないため、POINTを3つ以上、意味のある内容で構成できない",
+      "photos": {
+        "candidates": 10,
+        "maps": 10,
+        "official": 0,
+        "rejectedByMachine": 0
+      }
     },
     "tri-gourmet-129": {
       "key": "tri-gourmet-129",
@@ -562,13 +965,38 @@
       "name": "炭火串焼きとおばんざい鶏ぴん",
       "vertical": "グルメ",
       "articleId": "炭火串焼きとおばんざい鶏ぴん",
-      "status": "失敗",
-      "stage": "maps",
+      "status": "成功",
+      "stage": "done",
       "startedAt": "2026-10-25T00:31:50.867Z",
       "seconds": {
-        "total": 7
+        "total": 0
       },
-      "reason": "Google マップを読めなかった: browserContext.newPage: Target page, context or browser has been closed"
+      "photos": {
+        "candidates": 10,
+        "maps": 10,
+        "official": 0,
+        "rejectedByMachine": 0,
+        "used": 4,
+        "emptyFrames": 0
+      },
+      "check": {
+        "rewrote": false,
+        "shapeProblems": [],
+        "sentenceProblems": 0,
+        "facts": {
+          "total": 5,
+          "verified": 5
+        }
+      },
+      "storeId": "r682",
+      "onePage": "表に追加(/feature/<記事ID> は /restaurant/<店ID> へ転送)",
+      "storeBuilt": true,
+      "storeNote": null,
+      "urls": {
+        "article": "/feature/炭火串焼きとおばんざい鶏ぴん",
+        "shop": "/restaurant/r682"
+      },
+      "finishedAt": "2026-10-25T01:20:24.083Z"
     },
     "tri-gourmet-131": {
       "key": "tri-gourmet-131",
@@ -576,13 +1004,38 @@
       "name": "日本料理 蓮 Ren (れん)",
       "vertical": "グルメ",
       "articleId": "日本料理蓮Ren(れん)",
-      "status": "失敗",
-      "stage": "maps",
+      "status": "成功",
+      "stage": "done",
       "startedAt": "2026-10-25T00:31:57.930Z",
       "seconds": {
-        "total": 7
+        "total": 0
       },
-      "reason": "Google マップを読めなかった: browserContext.newPage: Target page, context or browser has been closed"
+      "photos": {
+        "candidates": 27,
+        "maps": 10,
+        "official": 17,
+        "rejectedByMachine": 1,
+        "used": 5,
+        "emptyFrames": 1
+      },
+      "check": {
+        "rewrote": false,
+        "shapeProblems": [],
+        "sentenceProblems": 0,
+        "facts": {
+          "total": 17,
+          "verified": 17
+        }
+      },
+      "storeId": "r683",
+      "onePage": "表に追加(/feature/<記事ID> は /restaurant/<店ID> へ転送)",
+      "storeBuilt": true,
+      "storeNote": null,
+      "urls": {
+        "article": "/feature/日本料理蓮Ren(れん)",
+        "shop": "/restaurant/r683"
+      },
+      "finishedAt": "2026-10-25T01:20:24.547Z"
     },
     "tri-gourmet-134": {
       "key": "tri-gourmet-134",
@@ -590,13 +1043,38 @@
       "name": "たこ焼き酒場 TARVO",
       "vertical": "グルメ",
       "articleId": "たこ焼き酒場TARVO",
-      "status": "失敗",
-      "stage": "maps",
+      "status": "成功",
+      "stage": "done",
       "startedAt": "2026-10-25T00:32:04.971Z",
       "seconds": {
-        "total": 8
+        "total": 0
       },
-      "reason": "Google マップを読めなかった: browserContext.newPage: Target page, context or browser has been closed"
+      "photos": {
+        "candidates": 10,
+        "maps": 10,
+        "official": 0,
+        "rejectedByMachine": 0,
+        "used": 3,
+        "emptyFrames": 2
+      },
+      "check": {
+        "rewrote": false,
+        "shapeProblems": [],
+        "sentenceProblems": 0,
+        "facts": {
+          "total": 7,
+          "verified": 7
+        }
+      },
+      "storeId": "r684",
+      "onePage": "表に追加(/feature/<記事ID> は /restaurant/<店ID> へ転送)",
+      "storeBuilt": true,
+      "storeNote": null,
+      "urls": {
+        "article": "/feature/たこ焼き酒場TARVO",
+        "shop": "/restaurant/r684"
+      },
+      "finishedAt": "2026-10-25T01:20:25.004Z"
     },
     "tri-stay-135": {
       "key": "tri-stay-135",
@@ -604,12 +1082,18 @@
       "name": "古民家宿&お食事処-庵木瓜 Iorimokkou",
       "vertical": "ステイ",
       "status": "失敗",
-      "stage": "maps",
+      "stage": "claude",
       "startedAt": "2026-10-25T00:32:12.768Z",
       "seconds": {
-        "total": 6
+        "total": 0
       },
-      "reason": "Google マップを読めなかった: browserContext.newPage: Target page, context or browser has been closed"
+      "reason": "書き手が失敗の出口で終了: 公式サイトの文字が取れておらず、Google マップの情報も店名・住所・電話のみで営業時間や業種の表示もないため、客室・食事・予約など紹介記事に必要な事実が足りない",
+      "photos": {
+        "candidates": 9,
+        "maps": 9,
+        "official": 0,
+        "rejectedByMachine": 0
+      }
     },
     "tri-gourmet-136": {
       "key": "tri-gourmet-136",
@@ -617,13 +1101,39 @@
       "name": "和食処つきやま",
       "vertical": "グルメ",
       "articleId": "和食処つきやま",
-      "status": "失敗",
-      "stage": "maps",
+      "status": "成功",
+      "stage": "done",
       "startedAt": "2026-10-25T00:32:19.075Z",
       "seconds": {
-        "total": 7
+        "total": 0
       },
-      "reason": "Google マップを読めなかった: browserContext.newPage: Target page, context or browser has been closed"
+      "photos": {
+        "candidates": 24,
+        "maps": 10,
+        "official": 14,
+        "rejectedByMachine": 4,
+        "used": 6,
+        "emptyFrames": 0
+      },
+      "check": {
+        "rewrote": false,
+        "shapeProblems": [],
+        "sentenceProblems": 0,
+        "facts": {
+          "total": 16,
+          "verified": 15
+        }
+      },
+      "memo": "裏取りに通らない facts 1 件は載せていない",
+      "storeId": "r685",
+      "onePage": "表に追加(/feature/<記事ID> は /restaurant/<店ID> へ転送)",
+      "storeBuilt": true,
+      "storeNote": null,
+      "urls": {
+        "article": "/feature/和食処つきやま",
+        "shop": "/restaurant/r685"
+      },
+      "finishedAt": "2026-10-25T01:20:25.478Z"
     },
     "tri-gourmet-137": {
       "key": "tri-gourmet-137",
@@ -632,12 +1142,18 @@
       "vertical": "グルメ",
       "articleId": "キッチンカーKAMUI（カムイ）",
       "status": "失敗",
-      "stage": "maps",
+      "stage": "claude",
       "startedAt": "2026-10-25T00:32:26.201Z",
       "seconds": {
-        "total": 9
+        "total": 0
       },
-      "reason": "Google マップを読めなかった: browserContext.newPage: Target page, context or browser has been closed"
+      "reason": "書き手が失敗の出口で終了: 公式サイトがなく(SNSのみで事実の出どころに使えない)、Googleマップの情報も店名・住所・電話・業種表示・営業時間のみで、メニューや店の特徴を裏付ける事実が足りず、POINTを3つ以上事実だけで書けないため。",
+      "photos": {
+        "candidates": 10,
+        "maps": 10,
+        "official": 0,
+        "rejectedByMachine": 0
+      }
     },
     "tri-activity-142": {
       "key": "tri-activity-142",
@@ -645,12 +1161,18 @@
       "name": "Blue Corn",
       "vertical": "アクティビティ",
       "status": "失敗",
-      "stage": "maps",
+      "stage": "claude",
       "startedAt": "2026-10-25T00:32:35.584Z",
       "seconds": {
-        "total": 9
+        "total": 0
       },
-      "reason": "Google マップを読めなかった: browserContext.newPage: Target page, context or browser has been closed"
+      "reason": "書き手が失敗の出口で終了: 公式サイトの文字が取れておらず(SNSのみ扱い)、store.jsonにも店名・住所・電話・業種の表示(カヌー/カヤックツアー代理店)・営業時間しかなく、ツアー内容・集合場所・持ち物などの実質的な事実が無いため、水増しせずに書ける紹介記事・特集記事の分量に足りない。",
+      "photos": {
+        "candidates": 6,
+        "maps": 6,
+        "official": 0,
+        "rejectedByMachine": 0
+      }
     },
     "tri-gourmet-146": {
       "key": "tri-gourmet-146",
@@ -658,26 +1180,75 @@
       "name": "BAR Lyric",
       "vertical": "グルメ",
       "articleId": "BARLyric",
-      "status": "失敗",
-      "stage": "maps",
+      "status": "成功",
+      "stage": "done",
       "startedAt": "2026-10-25T00:32:44.646Z",
       "seconds": {
-        "total": 9
+        "total": 0
       },
-      "reason": "Google マップを読めなかった: browserContext.newPage: Target page, context or browser has been closed"
+      "photos": {
+        "candidates": 10,
+        "maps": 9,
+        "official": 1,
+        "rejectedByMachine": 17,
+        "used": 3,
+        "emptyFrames": 1
+      },
+      "check": {
+        "rewrote": false,
+        "shapeProblems": [],
+        "sentenceProblems": 0,
+        "facts": {
+          "total": 15,
+          "verified": 15
+        }
+      },
+      "storeId": "r686",
+      "onePage": "表に入れない(検索に出す条件 実写・住所・営業時間 のどれかが無い。記事は /feature/<記事ID> のまま)",
+      "storeBuilt": true,
+      "storeNote": null,
+      "urls": {
+        "article": "/feature/BARLyric",
+        "shop": "/restaurant/r686"
+      },
+      "finishedAt": "2026-10-25T01:20:25.933Z"
     },
     "tri-stay-149": {
       "key": "tri-stay-149",
       "row": 149,
       "name": "離れの宿 和楽",
       "vertical": "ステイ",
-      "status": "失敗",
-      "stage": "maps",
+      "status": "成功",
+      "stage": "done",
       "startedAt": "2026-10-25T00:32:53.404Z",
       "seconds": {
-        "total": 8
+        "total": 0
       },
-      "reason": "Google マップを読めなかった: browserContext.newPage: Target page, context or browser has been closed"
+      "photos": {
+        "candidates": 23,
+        "maps": 10,
+        "official": 13,
+        "rejectedByMachine": 5,
+        "used": 23,
+        "emptyFrames": 0
+      },
+      "check": {
+        "rewrote": false,
+        "shapeProblems": [],
+        "sentenceProblems": 0,
+        "facts": {
+          "total": 11,
+          "verified": 11
+        }
+      },
+      "placeId": "st0012",
+      "featureInGenerated": false,
+      "featureNote": null,
+      "urls": {
+        "shop": "/stay/shop/st0012",
+        "article": "/stay/article/st0012"
+      },
+      "finishedAt": "2026-10-25T01:20:26.071Z"
     },
     "tri-gourmet-150": {
       "key": "tri-gourmet-150",
@@ -685,13 +1256,39 @@
       "name": "食パン本舗",
       "vertical": "グルメ",
       "articleId": "食パン本舗",
-      "status": "失敗",
-      "stage": "maps",
+      "status": "成功",
+      "stage": "done",
       "startedAt": "2026-10-25T00:33:01.487Z",
       "seconds": {
-        "total": 10
+        "total": 40,
+        "claude": 39
       },
-      "reason": "Google マップを読めなかった: browserContext.newPage: Target page, context or browser has been closed"
+      "photos": {
+        "candidates": 12,
+        "maps": 10,
+        "official": 2,
+        "rejectedByMachine": 16,
+        "used": 4,
+        "emptyFrames": 1
+      },
+      "check": {
+        "rewrote": true,
+        "shapeProblems": [],
+        "sentenceProblems": 0,
+        "facts": {
+          "total": 20,
+          "verified": 20
+        }
+      },
+      "storeId": "r687",
+      "onePage": "表に追加(/feature/<記事ID> は /restaurant/<店ID> へ転送)",
+      "storeBuilt": true,
+      "storeNote": null,
+      "urls": {
+        "article": "/feature/食パン本舗",
+        "shop": "/restaurant/r687"
+      },
+      "finishedAt": "2026-10-25T01:21:05.784Z"
     },
     "tri-gourmet-151": {
       "key": "tri-gourmet-151",
@@ -700,12 +1297,18 @@
       "vertical": "グルメ",
       "articleId": "西荻ペッコリーノ",
       "status": "失敗",
-      "stage": "maps",
+      "stage": "claude",
       "startedAt": "2026-10-25T00:33:11.003Z",
       "seconds": {
-        "total": 9
+        "total": 0
       },
-      "reason": "Google マップを読めなかった: browserContext.newPage: Target page, context or browser has been closed"
+      "reason": "書き手が失敗の出口で終了: 公式サイトの文字情報が取得できておらず、Googleマップの情報も店名・住所・電話・営業時間・業種分類のみで、料理内容や店の特徴を事実として裏付けられる材料が不足しているため",
+      "photos": {
+        "candidates": 10,
+        "maps": 10,
+        "official": 0,
+        "rejectedByMachine": 0
+      }
     },
     "tri-gourmet-154": {
       "key": "tri-gourmet-154",
@@ -714,38 +1317,93 @@
       "vertical": "グルメ",
       "articleId": "おもちびより",
       "status": "失敗",
-      "stage": "maps",
+      "stage": "claude",
       "startedAt": "2026-10-25T00:33:19.871Z",
       "seconds": {
-        "total": 9
+        "total": 0
       },
-      "reason": "Google マップを読めなかった: browserContext.newPage: Target page, context or browser has been closed"
+      "reason": "書き手が失敗の出口で終了: 公式サイトの文字が取得できず(SNSのみで公式サイトURLなし)、site/page*.txt も無い。Google マップ由来の store.json には店名・住所・電話・営業時間・業種表示しかなく、メニューや店の特徴を裏付けるテキスト出典が無い。写真(cand/*.jpg)は事実の出どころ(quote の確認対象)として使えないため、POINT 3〜5個分の事実に基づいた記事を水増しせずに書くための材料が不足している。",
+      "photos": {
+        "candidates": 10,
+        "maps": 10,
+        "official": 0,
+        "rejectedByMachine": 0
+      }
     },
     "tri-sports-155": {
       "key": "tri-sports-155",
       "row": 155,
       "name": "MAPLE LEAF HOCKEY SCHOOL",
       "vertical": "スポーツ",
-      "status": "失敗",
-      "stage": "maps",
+      "status": "成功",
+      "stage": "done",
       "startedAt": "2026-10-25T00:33:28.512Z",
       "seconds": {
-        "total": 8
+        "total": 0
       },
-      "reason": "Google マップを読めなかった: browserContext.newPage: Target page, context or browser has been closed"
+      "photos": {
+        "candidates": 0,
+        "maps": 0,
+        "official": 0,
+        "rejectedByMachine": 18,
+        "used": 0,
+        "emptyFrames": 0
+      },
+      "memo": "写真の候補が 0 枚(Google マップ・公式サイトとも取れなかった)。写真なしで続ける",
+      "check": {
+        "rewrote": false,
+        "shapeProblems": [],
+        "sentenceProblems": 0,
+        "facts": {
+          "total": 25,
+          "verified": 25
+        }
+      },
+      "placeId": "sp0004",
+      "featureInGenerated": false,
+      "featureNote": "特集記事の主役の写真が無い(使える写真なし)ため、特集記事は作らず店の紹介記事だけにした",
+      "urls": {
+        "shop": "/sports/shop/sp0004",
+        "article": "/sports/article/sp0004"
+      },
+      "finishedAt": "2026-10-25T01:21:05.908Z"
     },
     "tri-activity-156": {
       "key": "tri-activity-156",
       "row": 156,
       "name": "Rakuoli（ラクオリ）",
       "vertical": "アクティビティ",
-      "status": "失敗",
-      "stage": "maps",
+      "status": "成功",
+      "stage": "done",
       "startedAt": "2026-10-25T00:33:36.571Z",
       "seconds": {
-        "total": 10
+        "total": 0
       },
-      "reason": "Google マップを読めなかった: browserContext.newPage: Target page, context or browser has been closed"
+      "photos": {
+        "candidates": 10,
+        "maps": 10,
+        "official": 0,
+        "rejectedByMachine": 18,
+        "used": 9,
+        "emptyFrames": 2
+      },
+      "check": {
+        "rewrote": false,
+        "shapeProblems": [],
+        "sentenceProblems": 0,
+        "facts": {
+          "total": 21,
+          "verified": 21
+        }
+      },
+      "placeId": "ac0015",
+      "featureInGenerated": true,
+      "featureNote": null,
+      "urls": {
+        "shop": "/activity/shop/ac0015",
+        "article": "/activity/article/ac0015"
+      },
+      "finishedAt": "2026-10-25T01:21:06.031Z"
     },
     "tri-gourmet-158": {
       "key": "tri-gourmet-158",
@@ -754,12 +1412,18 @@
       "vertical": "グルメ",
       "articleId": "くろしお弁当",
       "status": "失敗",
-      "stage": "maps",
+      "stage": "claude",
       "startedAt": "2026-10-25T00:33:46.359Z",
       "seconds": {
-        "total": 10
+        "total": 0
       },
-      "reason": "Google マップを読めなかった: browserContext.newPage: Target page, context or browser has been closed"
+      "reason": "書き手が失敗の出口で終了: 公式サイトの文字が取れておらず、Googleマップの情報も店名・住所・電話・営業時間のみで、メニューや店の特徴に関する事実がないため、POINTを3〜5個、事実だけで構成できない",
+      "photos": {
+        "candidates": 6,
+        "maps": 6,
+        "official": 0,
+        "rejectedByMachine": 0
+      }
     },
     "tri-gourmet-159": {
       "key": "tri-gourmet-159",
@@ -767,13 +1431,38 @@
       "name": "日常のパン、aqui",
       "vertical": "グルメ",
       "articleId": "aqui",
-      "status": "失敗",
-      "stage": "maps",
+      "status": "成功",
+      "stage": "done",
       "startedAt": "2026-10-25T00:33:55.909Z",
       "seconds": {
-        "total": 8
+        "total": 0
       },
-      "reason": "Google マップを読めなかった: browserContext.newPage: Target page, context or browser has been closed"
+      "photos": {
+        "candidates": 10,
+        "maps": 10,
+        "official": 0,
+        "rejectedByMachine": 0,
+        "used": 2,
+        "emptyFrames": 2
+      },
+      "check": {
+        "rewrote": false,
+        "shapeProblems": [],
+        "sentenceProblems": 0,
+        "facts": {
+          "total": 6,
+          "verified": 6
+        }
+      },
+      "storeId": "r688",
+      "onePage": "表に追加(/feature/<記事ID> は /restaurant/<店ID> へ転送)",
+      "storeBuilt": true,
+      "storeNote": null,
+      "urls": {
+        "article": "/feature/aqui",
+        "shop": "/restaurant/r688"
+      },
+      "finishedAt": "2026-10-25T01:21:06.485Z"
     },
     "tri-gourmet-160": {
       "key": "tri-gourmet-160",
@@ -782,12 +1471,18 @@
       "vertical": "グルメ",
       "articleId": "FOGcoffee",
       "status": "失敗",
-      "stage": "maps",
+      "stage": "claude",
       "startedAt": "2026-10-25T00:34:03.931Z",
       "seconds": {
-        "total": 10
+        "total": 0
       },
-      "reason": "Google マップを読めなかった: browserContext.newPage: Target page, context or browser has been closed"
+      "reason": "書き手が失敗の出口で終了: 公式サイトの文字情報が取得できず(公式サイトの扱いはSNSのみ)、Googleマップの情報も店名・住所・電話・営業時間・業種の表示のみで、メニューや店の特徴を裏付ける出どころが無いため、事実に基づくPOINTを3件以上書けない",
+      "photos": {
+        "candidates": 10,
+        "maps": 10,
+        "official": 0,
+        "rejectedByMachine": 0
+      }
     },
     "tri-gourmet-162": {
       "key": "tri-gourmet-162",
@@ -795,26 +1490,76 @@
       "name": "内灘市場",
       "vertical": "グルメ",
       "articleId": "炭火焼内灘市場",
-      "status": "失敗",
-      "stage": "maps",
+      "status": "成功",
+      "stage": "done",
       "startedAt": "2026-10-25T00:34:13.799Z",
       "seconds": {
-        "total": 7
+        "total": 0
       },
-      "reason": "Google マップを読めなかった: browserContext.newPage: Target page, context or browser has been closed"
+      "photos": {
+        "candidates": 10,
+        "maps": 10,
+        "official": 0,
+        "rejectedByMachine": 0,
+        "used": 2,
+        "emptyFrames": 2
+      },
+      "check": {
+        "rewrote": false,
+        "shapeProblems": [],
+        "sentenceProblems": 0,
+        "facts": {
+          "total": 5,
+          "verified": 5
+        }
+      },
+      "storeId": "r689",
+      "onePage": "表に追加(/feature/<記事ID> は /restaurant/<店ID> へ転送)",
+      "storeBuilt": true,
+      "storeNote": null,
+      "urls": {
+        "article": "/feature/炭火焼内灘市場",
+        "shop": "/restaurant/r689"
+      },
+      "finishedAt": "2026-10-25T01:21:06.943Z"
     },
     "tri-stay-163": {
       "key": "tri-stay-163",
       "row": 163,
       "name": "渓流の宿 蔵之助",
       "vertical": "ステイ",
-      "status": "失敗",
-      "stage": "maps",
+      "status": "成功",
+      "stage": "done",
       "startedAt": "2026-10-25T00:34:20.611Z",
       "seconds": {
-        "total": 8
+        "total": 62,
+        "claude": 62
       },
-      "reason": "Google マップを読めなかった: browserContext.newPage: Target page, context or browser has been closed"
+      "photos": {
+        "candidates": 10,
+        "maps": 10,
+        "official": 0,
+        "rejectedByMachine": 15,
+        "used": 10,
+        "emptyFrames": 0
+      },
+      "check": {
+        "rewrote": true,
+        "shapeProblems": [],
+        "sentenceProblems": 0,
+        "facts": {
+          "total": 21,
+          "verified": 21
+        }
+      },
+      "placeId": "st0013",
+      "featureInGenerated": false,
+      "featureNote": null,
+      "urls": {
+        "shop": "/stay/shop/st0013",
+        "article": "/stay/article/st0013"
+      },
+      "finishedAt": "2026-10-25T01:22:09.322Z"
     },
     "tri-gourmet-164": {
       "key": "tri-gourmet-164",
@@ -823,25 +1568,55 @@
       "vertical": "グルメ",
       "articleId": "我が家おてちき屋",
       "status": "失敗",
-      "stage": "maps",
+      "stage": "claude",
       "startedAt": "2026-10-25T00:34:28.920Z",
       "seconds": {
-        "total": 6
+        "total": 0
       },
-      "reason": "Google マップを読めなかった: browserContext.newPage: Target page, context or browser has been closed"
+      "reason": "書き手が失敗の出口で終了: 公式サイトの文字が取得できず、Google マップの情報も住所・電話・営業時間・業種表示(居酒屋)のみで、料理や店の特徴を裏付ける事実が無い。POINT(3〜5個)を事実だけで構成できないため記事化を見送る。",
+      "photos": {
+        "candidates": 10,
+        "maps": 10,
+        "official": 0,
+        "rejectedByMachine": 0
+      }
     },
     "tri-activity-167": {
       "key": "tri-activity-167",
       "row": 167,
       "name": "ダイブハウス富戸",
       "vertical": "アクティビティ",
-      "status": "失敗",
-      "stage": "maps",
+      "status": "成功",
+      "stage": "done",
       "startedAt": "2026-10-25T00:34:35.297Z",
       "seconds": {
-        "total": 9
+        "total": 0
       },
-      "reason": "Google マップを読めなかった: browserContext.newPage: Target page, context or browser has been closed"
+      "photos": {
+        "candidates": 11,
+        "maps": 10,
+        "official": 1,
+        "rejectedByMachine": 17,
+        "used": 7,
+        "emptyFrames": 0
+      },
+      "check": {
+        "rewrote": false,
+        "shapeProblems": [],
+        "sentenceProblems": 0,
+        "facts": {
+          "total": 25,
+          "verified": 25
+        }
+      },
+      "placeId": "ac0016",
+      "featureInGenerated": true,
+      "featureNote": null,
+      "urls": {
+        "shop": "/activity/shop/ac0016",
+        "article": "/activity/article/ac0016"
+      },
+      "finishedAt": "2026-10-25T01:22:09.452Z"
     },
     "tri-gourmet-168": {
       "key": "tri-gourmet-168",
@@ -850,25 +1625,55 @@
       "vertical": "グルメ",
       "articleId": "璃夢Rim",
       "status": "失敗",
-      "stage": "maps",
+      "stage": "claude",
       "startedAt": "2026-10-25T00:34:44.249Z",
       "seconds": {
-        "total": 9
+        "total": 0
       },
-      "reason": "Google マップを読めなかった: browserContext.newPage: Target page, context or browser has been closed"
+      "reason": "書き手が失敗の出口で終了: 公式サイトの文字が取れておらずGoogleマップの情報も住所・電話・営業時間のみで、メニューや店の特徴など記事化できる具体的事実が無いため。",
+      "photos": {
+        "candidates": 10,
+        "maps": 10,
+        "official": 0,
+        "rejectedByMachine": 0
+      }
     },
     "tri-activity-169": {
       "key": "tri-activity-169",
       "row": 169,
       "name": "スキューバプロショップ　富戸",
       "vertical": "アクティビティ",
-      "status": "失敗",
-      "stage": "maps",
+      "status": "成功",
+      "stage": "done",
       "startedAt": "2026-10-25T00:34:53.357Z",
       "seconds": {
-        "total": 7
+        "total": 0
       },
-      "reason": "Google マップを読めなかった: browserContext.newPage: Target page, context or browser has been closed"
+      "photos": {
+        "candidates": 14,
+        "maps": 10,
+        "official": 4,
+        "rejectedByMachine": 14,
+        "used": 11,
+        "emptyFrames": 1
+      },
+      "check": {
+        "rewrote": false,
+        "shapeProblems": [],
+        "sentenceProblems": 0,
+        "facts": {
+          "total": 24,
+          "verified": 24
+        }
+      },
+      "placeId": "ac0017",
+      "featureInGenerated": true,
+      "featureNote": null,
+      "urls": {
+        "shop": "/activity/shop/ac0017",
+        "article": "/activity/article/ac0017"
+      },
+      "finishedAt": "2026-10-25T01:22:09.584Z"
     },
     "tri-beauty-172": {
       "key": "tri-beauty-172",
@@ -876,12 +1681,18 @@
       "name": "整体院Derive",
       "vertical": "ビューティー",
       "status": "失敗",
-      "stage": "maps",
+      "stage": "claude",
       "startedAt": "2026-10-25T00:35:00.398Z",
       "seconds": {
-        "total": 9
+        "total": 0
       },
-      "reason": "Google マップを読めなかった: browserContext.newPage: Target page, context or browser has been closed"
+      "reason": "書き手が失敗の出口で終了: 整体院Deriveは腰痛・しびれ等への施術を理学療法士が行う整体院(骨格矯正・オステオパシー・中医学的アプローチ)であり、公式サイト・Googleマップの業種表示のいずれにも、指定されたcategory slug(hair/nail/eyelash/esthetic/hair-removal/headspa)に該当する美容系メニュー(フェイシャル・ボディエステ、ヘッドスパ、ネイル、まつげ、脱毛、ヘア)の記述がなく、カテゴリを決められない。",
+      "photos": {
+        "candidates": 20,
+        "maps": 6,
+        "official": 14,
+        "rejectedByMachine": 4
+      }
     },
     "tri-gourmet-173": {
       "key": "tri-gourmet-173",
@@ -890,12 +1701,18 @@
       "vertical": "グルメ",
       "articleId": "おにCafe",
       "status": "失敗",
-      "stage": "maps",
+      "stage": "claude",
       "startedAt": "2026-10-25T00:35:09.781Z",
       "seconds": {
-        "total": 9
+        "total": 0
       },
-      "reason": "Google マップを読めなかった: browserContext.newPage: Target page, context or browser has been closed"
+      "reason": "書き手が失敗の出口で終了: 公式サイト・SNSのテキスト資料が無く、store.jsonに記載された所在地・電話・業種・営業時間以外の事実(メニューや店の特徴など)の裏付けが取れないため、POINTを3つ以上事実のみで構成できない",
+      "photos": {
+        "candidates": 10,
+        "maps": 10,
+        "official": 0,
+        "rejectedByMachine": 0
+      }
     },
     "tri-gourmet-174": {
       "key": "tri-gourmet-174",
@@ -903,13 +1720,38 @@
       "name": "KiKi",
       "vertical": "グルメ",
       "articleId": "KiKi",
-      "status": "失敗",
-      "stage": "maps",
+      "status": "成功",
+      "stage": "done",
       "startedAt": "2026-10-25T00:35:19.082Z",
       "seconds": {
-        "total": 9
+        "total": 0
       },
-      "reason": "Google マップを読めなかった: browserContext.newPage: Target page, context or browser has been closed"
+      "photos": {
+        "candidates": 23,
+        "maps": 10,
+        "official": 13,
+        "rejectedByMachine": 5,
+        "used": 5,
+        "emptyFrames": 1
+      },
+      "check": {
+        "rewrote": false,
+        "shapeProblems": [],
+        "sentenceProblems": 0,
+        "facts": {
+          "total": 15,
+          "verified": 15
+        }
+      },
+      "storeId": "r690",
+      "onePage": "表に追加(/feature/<記事ID> は /restaurant/<店ID> へ転送)",
+      "storeBuilt": true,
+      "storeNote": null,
+      "urls": {
+        "article": "/feature/KiKi",
+        "shop": "/restaurant/r690"
+      },
+      "finishedAt": "2026-10-25T01:22:10.063Z"
     },
     "tri-activity-175": {
       "key": "tri-activity-175",
@@ -917,12 +1759,18 @@
       "name": "海の音色",
       "vertical": "アクティビティ",
       "status": "失敗",
-      "stage": "maps",
+      "stage": "claude",
       "startedAt": "2026-10-25T00:35:28.318Z",
       "seconds": {
-        "total": 9
+        "total": 0
       },
-      "reason": "Google マップを読めなかった: browserContext.newPage: Target page, context or browser has been closed"
+      "reason": "書き手が失敗の出口で終了: 公式サイトの文字が取得できておらず、store.jsonの事実も店名・住所・電話・営業時間・業種表示(ツアー業者)のみで、出どころを引用できる事実が足りず記事を書けない",
+      "photos": {
+        "candidates": 10,
+        "maps": 10,
+        "official": 0,
+        "rejectedByMachine": 0
+      }
     },
     "tri-gourmet-176": {
       "key": "tri-gourmet-176",
@@ -931,12 +1779,18 @@
       "vertical": "グルメ",
       "articleId": "天ぷらえび福",
       "status": "失敗",
-      "stage": "maps",
+      "stage": "claude",
       "startedAt": "2026-10-25T00:35:36.987Z",
       "seconds": {
-        "total": 6
+        "total": 0
       },
-      "reason": "Google マップを読めなかった: browserContext.newPage: Target page, context or browser has been closed"
+      "reason": "書き手が失敗の出口で終了: 公式サイトの文字が取得できず(SNS扱いのみ)、store.jsonの事実も店名・住所・電話・営業時間・業種表示(天ぷら店)に限られ、POINTを3〜5個、事実だけで構成するには材料が不足している",
+      "photos": {
+        "candidates": 10,
+        "maps": 10,
+        "official": 0,
+        "rejectedByMachine": 0
+      }
     },
     "tri-gourmet-178": {
       "key": "tri-gourmet-178",
@@ -945,12 +1799,18 @@
       "vertical": "グルメ",
       "articleId": "ダモンデ",
       "status": "失敗",
-      "stage": "maps",
+      "stage": "claude",
       "startedAt": "2026-10-25T00:35:43.134Z",
       "seconds": {
-        "total": 10
+        "total": 0
       },
-      "reason": "Google マップを読めなかった: browserContext.newPage: Target page, context or browser has been closed"
+      "reason": "書き手が失敗の出口で終了: 公式サイトの文字が取得できておらず、Googleマップの情報も店名・住所・電話・営業時間・業種表示(和食店)のみで、料理やメニューを示す文字の裏付けがない。写真には料理が写っているが文字で裏付けられるquoteにできないため、3〜5個のPOINTを事実だけで水増しせずに書くための材料が足りない。",
+      "photos": {
+        "candidates": 10,
+        "maps": 10,
+        "official": 0,
+        "rejectedByMachine": 0
+      }
     },
     "tri-gourmet-180": {
       "key": "tri-gourmet-180",
@@ -958,13 +1818,38 @@
       "name": "焼肉なが井",
       "vertical": "グルメ",
       "articleId": "焼肉なが井",
-      "status": "失敗",
-      "stage": "maps",
+      "status": "成功",
+      "stage": "done",
       "startedAt": "2026-10-25T00:35:53.014Z",
       "seconds": {
-        "total": 9
+        "total": 0
       },
-      "reason": "Google マップを読めなかった: browserContext.newPage: Target page, context or browser has been closed"
+      "photos": {
+        "candidates": 19,
+        "maps": 10,
+        "official": 9,
+        "rejectedByMachine": 9,
+        "used": 4,
+        "emptyFrames": 1
+      },
+      "check": {
+        "rewrote": false,
+        "shapeProblems": [],
+        "sentenceProblems": 0,
+        "facts": {
+          "total": 11,
+          "verified": 11
+        }
+      },
+      "storeId": "r691",
+      "onePage": "表に追加(/feature/<記事ID> は /restaurant/<店ID> へ転送)",
+      "storeBuilt": true,
+      "storeNote": null,
+      "urls": {
+        "article": "/feature/焼肉なが井",
+        "shop": "/restaurant/r691"
+      },
+      "finishedAt": "2026-10-25T01:22:10.535Z"
     },
     "tri-gourmet-182": {
       "key": "tri-gourmet-182",
@@ -973,25 +1858,55 @@
       "vertical": "グルメ",
       "articleId": "シャトークワナ",
       "status": "失敗",
-      "stage": "maps",
+      "stage": "claude",
       "startedAt": "2026-10-25T00:36:01.519Z",
       "seconds": {
-        "total": 7
+        "total": 0
       },
-      "reason": "Google マップを読めなかった: browserContext.newPage: Target page, context or browser has been closed"
+      "reason": "書き手が失敗の出口で終了: 公式サイトなし。Googleマップの文字情報は店名・住所・電話・営業時間・業種表示(カフェ・喫茶)のみで、料理や店の特徴を示す文字情報が一切ない。写真に鉄板カレーやエビフライ定食等は写っているが、文字の出どころ(quoteで裏付けられるページ)がなく事実として本文に使えないため、300〜450字のleadeや400字前後のPOINTを3〜5個、事実だけで構成する材料が足りない。",
+      "photos": {
+        "candidates": 10,
+        "maps": 10,
+        "official": 0,
+        "rejectedByMachine": 0
+      }
     },
     "tri-bodycare-188": {
       "key": "tri-bodycare-188",
       "row": 188,
       "name": "BASE溝の口接骨院",
       "vertical": "ボディケア",
-      "status": "失敗",
-      "stage": "maps",
+      "status": "成功",
+      "stage": "done",
       "startedAt": "2026-10-25T00:36:08.500Z",
       "seconds": {
-        "total": 7
+        "total": 0
       },
-      "reason": "Google マップを読めなかった: browserContext.newPage: Target page, context or browser has been closed"
+      "photos": {
+        "candidates": 10,
+        "maps": 10,
+        "official": 0,
+        "rejectedByMachine": 0,
+        "used": 8,
+        "emptyFrames": 0
+      },
+      "check": {
+        "rewrote": false,
+        "shapeProblems": [],
+        "sentenceProblems": 0,
+        "facts": {
+          "total": 7,
+          "verified": 7
+        }
+      },
+      "placeId": "bo0114",
+      "featureInGenerated": false,
+      "featureNote": null,
+      "urls": {
+        "shop": "/bodycare/shop/bo0114",
+        "article": "/bodycare/article/bo0114"
+      },
+      "finishedAt": "2026-10-25T01:22:10.662Z"
     },
     "tri-gourmet-192": {
       "key": "tri-gourmet-192",
@@ -1000,12 +1915,18 @@
       "vertical": "グルメ",
       "articleId": "BarNEWYORKMIDTOWN44STREET",
       "status": "失敗",
-      "stage": "maps",
+      "stage": "claude",
       "startedAt": "2026-10-25T00:36:15.040Z",
       "seconds": {
-        "total": 6
+        "total": 0
       },
-      "reason": "Google マップを読めなかった: browserContext.newPage: Target page, context or browser has been closed"
+      "reason": "書き手が失敗の出口で終了: 公式サイトの文字が取得できず(SNSのみ)、Googleマップの情報も店名・住所・電話・業種表示(バー)・営業時間に限られ、メニューや店内を裏付ける文字の事実が無いため、quoteで裏付けられるPOINTを3個以上書けない",
+      "photos": {
+        "candidates": 10,
+        "maps": 10,
+        "official": 0,
+        "rejectedByMachine": 0
+      }
     },
     "tri-gourmet-195": {
       "key": "tri-gourmet-195",
@@ -1013,13 +1934,38 @@
       "name": "マル信 緑香園",
       "vertical": "グルメ",
       "articleId": "マル信緑香園",
-      "status": "失敗",
-      "stage": "maps",
+      "status": "成功",
+      "stage": "done",
       "startedAt": "2026-10-25T00:36:21.308Z",
       "seconds": {
-        "total": 6
+        "total": 0
       },
-      "reason": "Google マップを読めなかった: browserContext.newPage: Target page, context or browser has been closed"
+      "photos": {
+        "candidates": 27,
+        "maps": 10,
+        "official": 17,
+        "rejectedByMachine": 1,
+        "used": 6,
+        "emptyFrames": 0
+      },
+      "check": {
+        "rewrote": false,
+        "shapeProblems": [],
+        "sentenceProblems": 0,
+        "facts": {
+          "total": 28,
+          "verified": 28
+        }
+      },
+      "storeId": "r692",
+      "onePage": "表に追加(/feature/<記事ID> は /restaurant/<店ID> へ転送)",
+      "storeBuilt": true,
+      "storeNote": null,
+      "urls": {
+        "article": "/feature/マル信緑香園",
+        "shop": "/restaurant/r692"
+      },
+      "finishedAt": "2026-10-25T01:22:11.152Z"
     },
     "tri-gourmet-196": {
       "key": "tri-gourmet-196",
@@ -1028,12 +1974,18 @@
       "vertical": "グルメ",
       "articleId": "BarDOPENESS",
       "status": "失敗",
-      "stage": "maps",
+      "stage": "claude",
       "startedAt": "2026-10-25T00:36:27.508Z",
       "seconds": {
-        "total": 9
+        "total": 0
       },
-      "reason": "Google マップを読めなかった: browserContext.newPage: Target page, context or browser has been closed"
+      "reason": "書き手が失敗の出口で終了: 公式サイトの文字が取得できず(SNSのみ)、Google マップの情報も店名・住所・電話・業種表示・営業時間のみで、メニューや業態を語る事実の出どころが無い。POINT を事実の裏付け(quote)だけで3〜5個埋められないため記事化できない。",
+      "photos": {
+        "candidates": 10,
+        "maps": 10,
+        "official": 0,
+        "rejectedByMachine": 0
+      }
     },
     "tri-gourmet-197": {
       "key": "tri-gourmet-197",
@@ -1042,12 +1994,18 @@
       "vertical": "グルメ",
       "articleId": "BarDiningJammin",
       "status": "失敗",
-      "stage": "maps",
+      "stage": "claude",
       "startedAt": "2026-10-25T00:36:36.193Z",
       "seconds": {
-        "total": 9
+        "total": 0
       },
-      "reason": "Google マップを読めなかった: browserContext.newPage: Target page, context or browser has been closed"
+      "reason": "書き手が失敗の出口で終了: 公式サイトの文字が無く、store.jsonに住所・電話・営業時間・Googleマップの業種表示(バー)以外の事実が無いため、グルメ記事に必要なPOINT(3〜5個、料理や店の特徴の具体事実)を裏付けのある形で書けない。写真はあるが、文字の出どころ(quote)で裏付けられる料理・コンセプトの事実が存在しない。",
+      "photos": {
+        "candidates": 10,
+        "maps": 10,
+        "official": 0,
+        "rejectedByMachine": 0
+      }
     },
     "tri-gourmet-198": {
       "key": "tri-gourmet-198",
@@ -1056,12 +2014,18 @@
       "vertical": "グルメ",
       "articleId": "BoulangerieReve想",
       "status": "失敗",
-      "stage": "maps",
+      "stage": "claude",
       "startedAt": "2026-10-25T00:36:45.622Z",
       "seconds": {
-        "total": 7
+        "total": 0
       },
-      "reason": "Google マップを読めなかった: browserContext.newPage: Target page, context or browser has been closed"
+      "reason": "書き手が失敗の出口で終了: 公式サイトが無く、Google マップの情報も店名・住所・電話・営業時間・業種(ベーカリー)のみで、商品やメニューを裏付ける文字情報が無いため、事実だけで3点以上のPOINTを構成できない",
+      "photos": {
+        "candidates": 10,
+        "maps": 10,
+        "official": 0,
+        "rejectedByMachine": 0
+      }
     },
     "tri-gourmet-199": {
       "key": "tri-gourmet-199",
@@ -1070,12 +2034,18 @@
       "vertical": "グルメ",
       "articleId": "おうち酒場BoNono",
       "status": "失敗",
-      "stage": "maps",
+      "stage": "claude",
       "startedAt": "2026-10-25T00:36:52.586Z",
       "seconds": {
-        "total": 8
+        "total": 0
       },
-      "reason": "Google マップを読めなかった: browserContext.newPage: Target page, context or browser has been closed"
+      "reason": "書き手が失敗の出口で終了: 公式サイトの文字が取得できず(SNSのみ)、Googleマップの情報も店名・住所・電話・業種表示・営業時間のみで、メニューや内装など記事のPOINTを3つ以上事実だけで組み立てるための材料が不足しているため。",
+      "photos": {
+        "candidates": 3,
+        "maps": 3,
+        "official": 0,
+        "rejectedByMachine": 0
+      }
     },
     "tri-gourmet-200": {
       "key": "tri-gourmet-200",
@@ -1084,12 +2054,18 @@
       "vertical": "グルメ",
       "articleId": "BeachbarCalypso",
       "status": "失敗",
-      "stage": "maps",
+      "stage": "claude",
       "startedAt": "2026-10-25T00:37:00.611Z",
       "seconds": {
-        "total": 7
+        "total": 0
       },
-      "reason": "Google マップを読めなかった: browserContext.newPage: Target page, context or browser has been closed"
+      "reason": "書き手が失敗の出口で終了: 公式サイトの文字が取得できず、Googleマップの情報も住所・電話・営業時間・業種(バー)のみで、料理やメニューなど記事のPOINTを3つ以上成立させるための裏付け可能な事実が無いため。",
+      "photos": {
+        "candidates": 10,
+        "maps": 10,
+        "official": 0,
+        "rejectedByMachine": 0
+      }
     }
   }
 }

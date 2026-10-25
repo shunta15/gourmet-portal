@@ -1,0 +1,40 @@
+{
+  "tab": "トリニティアポ",
+  "tabEn": "tri-activity",
+  "row": 169,
+  "sheet": {
+    "name": "スキューバプロショップ　富戸",
+    "address": "",
+    "url": "https://www.google.com/search?q=%E3%82%B9%E3%82%AD%E3%83%A5%E3%83%BC%E3%83%90%E3%83%97%E3%83%AD%E3%82%B7%E3%83%A7%E3%83%83%E3%83%97+%E5%AF%8C%E6%88%B8%0D%0A&sca_esv=c26373f3b23c5d40&biw=1536&bih=703&sxsrf=APpeQnuwcOMZaWXR95JXP4QhsbhuF9QcRg%3A1792574390837&ei=toPYaqfZMs_vrfcPtJjjCQ&uact=5&oq=%E3%82%B9%E3%82%AD%E3%83%A5%E3%83%BC%E3%83%90%E3%83%97%E3%83%AD%E3%82%B7%E3%83%A7%E3%83%83%E3%83%97+%E5%AF%8C%E6%88%B8%0D%0A&gs_lp=Egxnd3Mtd2l6LXNlcnAiKeOCueOCreODpeODvOODkOODl-ODreOCt-ODp-ODg-ODlyDlr4zmiLgKSKwGUKoCWKoCcAJ4AJABAZgBcKABcKoBAzAuMbgBA8gBAPgBAvgBAZgCAKACAJgDAIgGAZIHAKAHJLIHALgHAMIHAMgHAIAIAQ&sclient=gws-wiz-serp",
+    "type": "レジャー",
+    "d1": "",
+    "d2": ""
+  },
+  "urlKind": "search",
+  "route": "第1段(verify-gbp.mjs)で確認済み",
+  "verdict": "一致",
+  "verdictReason": "電話が一致／店名: exact(シート「スキューバプロショップ　富戸」/ マップ「スキューバプロショップ 富戸」)",
+  "place": {
+    "name": "スキューバプロショップ 富戸",
+    "address": "静岡県伊東市富戸９８５−２",
+    "category": "ダイビング ショップ",
+    "lat": 34.8984143,
+    "lng": 139.1310385,
+    "gbpUrl": "https://maps.google.com/?cid=2988792243424078954",
+    "phone": "0557-51-7844",
+    "website": "https://scubaproshop.co.jp/Futo",
+    "hours": {
+      "月": "08:00–18:00",
+      "火": "08:00–18:00",
+      "水": "08:00–18:00",
+      "木": "08:00–18:00",
+      "金": "08:00–18:00",
+      "土": "08:00–18:00",
+      "日": "08:00–18:00"
+    },
+    "reserveLinks": [],
+    "statusSignals": [],
+    "closedSignal": false
+  },
+  "fetchedAt": "2026-10-25T01:02:38.012Z"
+}

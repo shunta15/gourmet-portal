@@ -1,0 +1,205 @@
+{
+  "key": "tri-stay-163",
+  "headline": "三重県菰野町、湯の山温泉にある旅館。客室は全室和室10室で、男女入れ替えの露天風呂と内湯、貸切露天風呂がある。",
+  "lede": "三重郡菰野町にある「渓流の宿 蔵之助」です。御在所岳を背に三滝川の清流に沿って並ぶ温泉街の宿で、全客室から渓流と御在所岳の景観を望めます。客室は全室和室10室、浴室は露天2つと内湯1つが男女入れ替えで使え、貸切露天風呂もあります。",
+  "sections": [
+    {
+      "heading": "場所と予約",
+      "body": "温泉街の最奥地にひっそりと佇む宿で、宿名は東下りの際に大石公園に立ち寄った大石内蔵之助にちなみます。御在所岳を背に三滝川の清流に沿って並び、駐車場は30台分あります。客室は2階から3階にあり、エレベーターはありません。予約の照会・キャンセルや会員情報の変更はウェブサイトで行え、館内にはWi-Fiがあります。"
+    },
+    {
+      "heading": "客室とお風呂",
+      "body": "客室は全室和室10室で定員は50名、宴会場は50畳で2分割できます。客室には浴衣のほか、冷暖房、テレビ、冷蔵庫、シャワートイレ、ドライヤーが備わり、子供用のおむつバケツや専用の食器の貸し出しもあります。浴室は露天2つと内湯1つが男女入れ替え制で、貸切の露天風呂が1つあります。日帰り入浴の時間は11時から17時(不定休)です。"
+    },
+    {
+      "heading": "食事",
+      "body": "会席料理には御在所岳の山の幸と伊勢湾の海の幸を使います。日帰りプランにはミニ会席コースと本格会席コースがあり、リクエストに応じて猪鹿鳥料理や三重黒毛和牛しゃぶしゃぶ、ボタン鍋に内容を変えることもできます。飲み物は地酒や焼酎のほか、ワインやチューハイも揃います。"
+    }
+  ],
+  "rooms": [
+    {
+      "name": "和室"
+    }
+  ],
+  "menus": [
+    {
+      "name": "会席料理"
+    },
+    {
+      "name": "ミニ会席コース"
+    },
+    {
+      "name": "本格会席コース"
+    },
+    {
+      "name": "猪鹿鳥料理"
+    },
+    {
+      "name": "三重黒毛和牛しゃぶしゃぶ"
+    },
+    {
+      "name": "ボタン鍋"
+    }
+  ],
+  "tags": [
+    {
+      "tag": "温泉",
+      "factIndex": 0
+    }
+  ],
+  "facts": [
+    {
+      "claim": "湯の山温泉にある宿で日帰り温泉も行う",
+      "source": "http://kuranosuke.com/",
+      "quote": "湯の山温泉,旅館 [ 蔵之助 ] 宿泊や日帰り温泉,貸切風呂",
+      "checkedAt": "2026-10-25"
+    },
+    {
+      "claim": "客室は全室和室10室",
+      "source": "http://kuranosuke.com/about.html",
+      "quote": "客室：全室和室10室",
+      "checkedAt": "2026-10-25"
+    },
+    {
+      "claim": "定員は50名",
+      "source": "http://kuranosuke.com/about.html",
+      "quote": "定員50名",
+      "checkedAt": "2026-10-25"
+    },
+    {
+      "claim": "浴室は露天2つと内湯1つが男女入れ替え制で、貸切露天が1つある",
+      "source": "http://kuranosuke.com/about.html",
+      "quote": "浴室：露天２、内湯１（共に男女入れ替え）、貸切露天１",
+      "checkedAt": "2026-10-25"
+    },
+    {
+      "claim": "宴会場は50畳で2分割できる",
+      "source": "http://kuranosuke.com/about.html",
+      "quote": "宴会場：50畳（2分割可能）",
+      "checkedAt": "2026-10-25"
+    },
+    {
+      "claim": "駐車場は30台",
+      "source": "http://kuranosuke.com/about.html",
+      "quote": "駐車場：30台",
+      "checkedAt": "2026-10-25"
+    },
+    {
+      "claim": "温泉街の最奥地に佇む宿",
+      "source": "http://kuranosuke.com/about.html",
+      "quote": "温泉街の最奥地にひっそりと佇む",
+      "checkedAt": "2026-10-25"
+    },
+    {
+      "claim": "宿名は東下りの際に大石公園に立ち寄った大石内蔵之助にちなむ",
+      "source": "http://kuranosuke.com/about.html",
+      "quote": "東下りの際に立ち寄った大石内蔵之助",
+      "checkedAt": "2026-10-25"
+    },
+    {
+      "claim": "御在所岳を背に三滝川の清流に沿って並ぶ温泉街の宿",
+      "source": "http://kuranosuke.com/room.html",
+      "quote": "御在所岳を背に三滝川の清流に沿って並ぶ温泉街の宿",
+      "checkedAt": "2026-10-25"
+    },
+    {
+      "claim": "全客室から三滝川の渓流と御在所岳の景観が見える",
+      "source": "http://kuranosuke.com/room.html",
+      "quote": "全客室からは三滝川の渓流、そして御在所岳の壮大な景観を望む",
+      "checkedAt": "2026-10-25"
+    },
+    {
+      "claim": "客室は2階から3階にありエレベーターはない",
+      "source": "http://kuranosuke.com/room.html",
+      "quote": "当館の客室は2F～3Fとなります",
+      "checkedAt": "2026-10-25"
+    },
+    {
+      "claim": "客室にはシャワートイレとドライヤーが備わる",
+      "source": "http://kuranosuke.com/room.html",
+      "quote": "シャワートイレ、ドライヤー",
+      "checkedAt": "2026-10-25"
+    },
+    {
+      "claim": "子供用のおむつバケツや専用の食器の貸し出しがある",
+      "source": "http://kuranosuke.com/room.html",
+      "quote": "おむつバケツ、子供用フォーク・スプーン・お皿",
+      "checkedAt": "2026-10-25"
+    },
+    {
+      "claim": "会席料理には御在所岳の山の幸と伊勢湾の海の幸を使う",
+      "source": "http://kuranosuke.com/food.html",
+      "quote": "御在所岳の山の幸、伊勢湾の海の幸",
+      "checkedAt": "2026-10-25"
+    },
+    {
+      "claim": "地酒や焼酎のほかワインやチューハイも揃う",
+      "source": "http://kuranosuke.com/food.html",
+      "quote": "ワイン、チューハイ各種取りそろえております",
+      "checkedAt": "2026-10-25"
+    },
+    {
+      "claim": "日帰りプランにはミニ会席コースがある",
+      "source": "http://kuranosuke.com/dayplan.html",
+      "quote": "ミニ会席コース",
+      "checkedAt": "2026-10-25"
+    },
+    {
+      "claim": "日帰りプランには本格会席コースがある",
+      "source": "http://kuranosuke.com/dayplan.html",
+      "quote": "本格会席コース",
+      "checkedAt": "2026-10-25"
+    },
+    {
+      "claim": "リクエストに応じて猪鹿鳥料理や三重黒毛和牛しゃぶしゃぶ、ボタン鍋に内容を変えられる",
+      "source": "http://kuranosuke.com/dayplan.html",
+      "quote": "猪鹿鳥料理、三重黒毛和牛しゃぶしゃぶ、ボタン鍋",
+      "checkedAt": "2026-10-25"
+    },
+    {
+      "claim": "日帰り入浴の時間は11時から17時(不定休)",
+      "source": "http://kuranosuke.com/dayplan.html",
+      "quote": "11:00～17:00（不定休）",
+      "checkedAt": "2026-10-25"
+    },
+    {
+      "claim": "Wi-Fiが利用できる",
+      "source": "http://kuranosuke.com/",
+      "quote": "Wi-Fi完備しました",
+      "checkedAt": "2026-10-25"
+    },
+    {
+      "claim": "予約の照会やキャンセル、会員情報の変更は公式サイトから行える",
+      "source": "http://kuranosuke.com/",
+      "quote": "予約の照会・キャンセルならびに、登録済みの会員情報の変更",
+      "checkedAt": "2026-10-25"
+    }
+  ],
+  "sources": [
+    {
+      "label": "公式サイト",
+      "url": "http://kuranosuke.com/"
+    },
+    {
+      "label": "公式サイト(館内)",
+      "url": "http://kuranosuke.com/about.html"
+    },
+    {
+      "label": "公式サイト(客室)",
+      "url": "http://kuranosuke.com/room.html"
+    },
+    {
+      "label": "公式サイト(料理)",
+      "url": "http://kuranosuke.com/food.html"
+    },
+    {
+      "label": "公式サイト(日帰りプラン)",
+      "url": "http://kuranosuke.com/dayplan.html"
+    },
+    {
+      "label": "Google マップ",
+      "url": "https://maps.google.com/?cid=7885744359790044800"
+    }
+  ],
+  "notes": "automation/v2/write.mjs が 2026-10-25 に claude -p --model sonnet で作成。事実の裏取り: 21/21 件(quote が出どころにあるもの)。裏取りに通らなかった facts は載せていない。"
+}

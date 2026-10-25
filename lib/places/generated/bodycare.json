@@ -7453,6 +7453,115 @@
         }
       ],
       "tags": []
+    },
+    {
+      "id": "bo0114",
+      "vertical": "bodycare",
+      "category": "sekkotsu",
+      "name": "BASE溝の口接骨院",
+      "pref": "kanagawa",
+      "cityName": "川崎市高津区",
+      "address": "神奈川県川崎市高津区久地2丁目16-1 2F バッティングモンスター内",
+      "lat": 35.6107472,
+      "lng": 139.6122255,
+      "hours": "月-金 12:00 - 21:00 / 土日 10:00 - 20:00",
+      "phone": "070-3207-6466",
+      "url": "https://tsuku2.jp/base-mizonokuchi",
+      "website": "https://tsuku2.jp/base-mizonokuchi",
+      "mapUrl": "https://maps.google.com/?cid=2359959176203572094",
+      "image": "/_portal/vshops/tri-bodycare-188/g01.jpg",
+      "images": [
+        "/_portal/vshops/tri-bodycare-188/g01.jpg",
+        "/_portal/vshops/tri-bodycare-188/g03.jpg",
+        "/_portal/vshops/tri-bodycare-188/g04.jpg",
+        "/_portal/vshops/tri-bodycare-188/g05.jpg",
+        "/_portal/vshops/tri-bodycare-188/g06.jpg",
+        "/_portal/vshops/tri-bodycare-188/g07.jpg",
+        "/_portal/vshops/tri-bodycare-188/g09.jpg",
+        "/_portal/vshops/tri-bodycare-188/g10.jpg"
+      ],
+      "photos": [
+        {
+          "path": "/_portal/vshops/tri-bodycare-188/g01.jpg",
+          "what": "施術ベッドに横になる人に施術をする室内",
+          "kind": "room",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-bodycare-188/g03.jpg",
+          "what": "施術ベッドでトレーニングをする人が写る、窓のある室内",
+          "kind": "room",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-bodycare-188/g04.jpg",
+          "what": "施術ベッドが置かれた黒い壁の室内",
+          "kind": "room",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-bodycare-188/g05.jpg",
+          "what": "ネット状の器具が置かれた室内のトレーニングスペース",
+          "kind": "room",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-bodycare-188/g06.jpg",
+          "what": "運動器具とヨガマットが並ぶ緑の壁の室内",
+          "kind": "room",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-bodycare-188/g07.jpg",
+          "what": "ステップ台に乗って運動をする人が写る室内",
+          "kind": "room",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-bodycare-188/g09.jpg",
+          "what": "夜の外観、看板と植栽が見える建物の入り口",
+          "kind": "exterior",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-bodycare-188/g10.jpg",
+          "what": "バットを振る人とネットが見える室内",
+          "kind": "room",
+          "width": 1096,
+          "height": 1200
+        }
+      ],
+      "tags": [
+        "土日営業"
+      ],
+      "article": {
+        "headline": "神奈川県川崎市高津区久地、バッティングモンスター内の2階にある接骨院。土曜と日曜も10時から営業する",
+        "lede": "川崎市にある「BASE溝の口接骨院」です。住所は神奈川県川崎市高津区久地２丁目１６−１、バッティングモンスター内の2階にあります。電話番号は070-3207-6466です。",
+        "sections": [
+          {
+            "heading": "アクセスと連絡先",
+            "body": "住所は神奈川県川崎市高津区久地２丁目１６−１で、バッティングモンスター内の2階にあります。電話番号は070-3207-6466です。業種は接骨院です。"
+          },
+          {
+            "heading": "営業時間",
+            "body": "営業時間は月曜から金曜が12:00から21:00、土曜と日曜が10:00から20:00です。営業日については電話で確認してください。"
+          }
+        ],
+        "sources": [
+          {
+            "label": "Google マップ",
+            "url": "https://maps.google.com/?cid=2359959176203572094"
+          }
+        ],
+        "checkedAt": "2026-10-25"
+      }
     }
   ]
 }

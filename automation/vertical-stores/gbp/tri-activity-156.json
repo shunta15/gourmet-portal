@@ -1,0 +1,40 @@
+{
+  "tab": "トリニティアポ",
+  "tabEn": "tri-activity",
+  "row": 156,
+  "sheet": {
+    "name": "Rakuoli（ラクオリ）",
+    "address": "",
+    "url": "https://www.google.com/search?q=Rakuoli%EF%BC%88%EF%BC%B3%EF%BC%B5%EF%BC%B0%E3%82%B9%E3%82%AF%E3%83%BC%E3%83%AB%EF%BC%89%0D%0A&sca_esv=882e2611175d5c4b&biw=1536&bih=703&sxsrf=APpeQnsiOjRa-rSXc9k_Qz6l6hM4bvgY8A%3A1792557090030&ei=IkDYapqeAda9rfcPxbCDoA8&uact=5&oq=Rakuoli%EF%BC%88%EF%BC%B3%EF%BC%B5%EF%BC%B0%E3%82%B9%E3%82%AF%E3%83%BC%E3%83%AB%EF%BC%89%0D%0A&gs_lp=Egxnd3Mtd2l6LXNlcnAiI1Jha3VvbGnvvIjvvLPvvLXvvLDjgrnjgq_jg7zjg6vvvIkKSM0SUN0CWN0CcAN4AJABAJgBWKABWKoBATG4AQPIAQD4AQL4AQGYAgCgAgCYAwCIBgGSBwCgByWyBwC4BwDCBwDIBwCACAE&sclient=gws-wiz-serp",
+    "type": "レジャー",
+    "d1": "",
+    "d2": ""
+  },
+  "urlKind": "search",
+  "route": "第1段(verify-gbp.mjs)で確認済み",
+  "verdict": "一致",
+  "verdictReason": "電話が一致／店名: exact(シート「Rakuoli（ラクオリ）」/ マップ「Rakuoli（ＳＵＰスクール）」)",
+  "place": {
+    "name": "Rakuoli（ＳＵＰスクール）",
+    "address": "広島県尾道市百島町２６２５",
+    "category": "アウトドア スポーツ用品店",
+    "lat": 34.3735807,
+    "lng": 133.2606609,
+    "gbpUrl": "https://maps.google.com/?cid=15739240359472874353",
+    "phone": "050-3557-9371",
+    "website": "http://rakuoli.com/",
+    "hours": {
+      "月": "08:00–18:00",
+      "火": "08:00–18:00",
+      "水": "08:00–18:00",
+      "木": "08:00–18:00",
+      "金": "08:00–18:00",
+      "土": "08:00–18:00",
+      "日": "08:00–18:00"
+    },
+    "reserveLinks": [],
+    "statusSignals": [],
+    "closedSignal": false
+  },
+  "fetchedAt": "2026-10-25T00:57:14.655Z"
+}

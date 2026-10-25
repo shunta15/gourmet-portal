@@ -1,0 +1,190 @@
+{
+  "key": "tri-stay-115",
+  "headline": "茨城県鹿嶋市にある、オーナーが敷地内に住む一棟貸切のログハウス民泊。1日1組限定で、最大7名まで宿泊できる",
+  "lede": "鹿嶋市にある「民泊 セカンドライフ」です。オーナーが同じ敷地内に住む一棟貸切のログハウスで、最大7名まで宿泊できます。敷地内にはバレル型サウナや露天風呂があり、食事は持参した食材をキッチンで自由に調理します。",
+  "sections": [
+    {
+      "heading": "宿泊棟とお部屋",
+      "body": "一棟貸切の「はまなすログ」は最大7名まで宿泊できます。8名以上の場合は、オーナーの居宅でもある「母屋ログ」に宿泊でき、浴室と洗濯機があります。チェックインは13時以降、チェックアウトは11時までです。Wi-Fiや温水洗浄トイレ、エアコンなどの設備があります。"
+    },
+    {
+      "heading": "食事とアクティビティ",
+      "body": "食事の提供はなく、持参した食材をキッチンで自由に調理します。敷地内ではバレル型サウナや露天風呂、ドラム缶風呂、農作物の収穫体験など11種の体験ができます。ピザ焼き体験やBBQ、薪割り、流しソーメンなども用意されています。"
+    },
+    {
+      "heading": "場所と予約",
+      "body": "住所は茨城県鹿嶋市棚木302-1、電話は080-6549-1020です。東関東自動車道の潮来インターチェンジから車で約20分で、敷地内に7台分の駐車場があります。カシマスタジアムからの送迎もあります。予約はネットの予約フォームか電話で受け付けています。"
+    },
+    {
+      "heading": "民泊としての特徴",
+      "body": "オーナーは同じ敷地内に住んでおり、2017年に鹿嶋市に土地を見つけてログハウスを建てました。友人を招くうちに宿泊客を受け入れるようになり、都心から約2時間でアクセスできる立地で、1日1組限定の宿泊を続けています。"
+    }
+  ],
+  "rooms": [
+    {
+      "name": "はまなすログ"
+    },
+    {
+      "name": "母屋ログ"
+    }
+  ],
+  "menus": [
+    {
+      "name": "バレル型サウナ"
+    },
+    {
+      "name": "露天風呂"
+    },
+    {
+      "name": "ドラム缶風呂"
+    },
+    {
+      "name": "農作物の収穫体験"
+    },
+    {
+      "name": "BBQ"
+    },
+    {
+      "name": "ピザ焼き体験"
+    },
+    {
+      "name": "薪割り"
+    },
+    {
+      "name": "流しソーメン(夏季)"
+    }
+  ],
+  "tags": [
+    {
+      "tag": "素泊まり",
+      "factIndex": 5
+    }
+  ],
+  "facts": [
+    {
+      "claim": "一棟貸切で最大7名まで宿泊できるログハウスである",
+      "source": "https://maru-secondlife.com/facility",
+      "quote": "一棟貸切で最大7名まで",
+      "checkedAt": "2026-10-25"
+    },
+    {
+      "claim": "8名以上の場合はオーナーの居宅でもある母屋ログに宿泊できる",
+      "source": "https://maru-secondlife.com/facility",
+      "quote": "7名以上でご利用の場合、母屋ログに",
+      "checkedAt": "2026-10-25"
+    },
+    {
+      "claim": "母屋ログには浴室と洗濯機がある",
+      "source": "https://maru-secondlife.com/facility",
+      "quote": "ログハウス内には浴室や洗濯機があり",
+      "checkedAt": "2026-10-25"
+    },
+    {
+      "claim": "チェックインは13時以降",
+      "source": "https://maru-secondlife.com/facility",
+      "quote": "13:00以降",
+      "checkedAt": "2026-10-25"
+    },
+    {
+      "claim": "チェックアウトは11時まで",
+      "source": "https://maru-secondlife.com/facility",
+      "quote": "11:00まで",
+      "checkedAt": "2026-10-25"
+    },
+    {
+      "claim": "食事の提供はなく、持参した食材をキッチンで自由に調理する",
+      "source": "https://maru-secondlife.com/fee_access",
+      "quote": "お食事の提供はしておりません",
+      "checkedAt": "2026-10-25"
+    },
+    {
+      "claim": "Wi-Fiや温水洗浄トイレ、エアコンなどの設備が無料で使える",
+      "source": "https://maru-secondlife.com/facility",
+      "quote": "Wi-Fi / 温水洗浄トイレ / エアコン",
+      "checkedAt": "2026-10-25"
+    },
+    {
+      "claim": "バレル型サウナや露天風呂など11種の体験ができる",
+      "source": "https://maru-secondlife.com/experience",
+      "quote": "11種の体験",
+      "checkedAt": "2026-10-25"
+    },
+    {
+      "claim": "オーナーが同じ敷地内に住んでいる",
+      "source": "https://maru-secondlife.com/",
+      "quote": "オーナーの丸ちゃんが同じ敷地内に住んでいる",
+      "checkedAt": "2026-10-25"
+    },
+    {
+      "claim": "宿泊は1日1組限定である",
+      "source": "https://maru-secondlife.com/",
+      "quote": "1日1組 限定",
+      "checkedAt": "2026-10-25"
+    },
+    {
+      "claim": "2017年に鹿嶋市に土地を見つけてログハウスを建てた",
+      "source": "https://maru-secondlife.com/",
+      "quote": "2017年に鹿嶋市に土地を見つけ",
+      "checkedAt": "2026-10-25"
+    },
+    {
+      "claim": "都心から約2時間でアクセスできる",
+      "source": "https://maru-secondlife.com/",
+      "quote": "都心から約2時間のアクセス",
+      "checkedAt": "2026-10-25"
+    },
+    {
+      "claim": "敷地内に無料駐車場があり7台まで駐車できる",
+      "source": "https://maru-secondlife.com/fee_access",
+      "quote": "敷地内に無料駐車場がございます。7台まで駐車いただけます",
+      "checkedAt": "2026-10-25"
+    },
+    {
+      "claim": "東関東自動車道の潮来インターチェンジから車で約20分",
+      "source": "https://maru-secondlife.com/fee_access",
+      "quote": "【潮来IC】より約20分",
+      "checkedAt": "2026-10-25"
+    },
+    {
+      "claim": "カシマスタジアムまでの送迎がある",
+      "source": "https://maru-secondlife.com/fee_access",
+      "quote": "スタジアムまで無料で送迎いたします",
+      "checkedAt": "2026-10-25"
+    },
+    {
+      "claim": "予約はネットの予約フォームか電話で受け付ける",
+      "source": "https://maru-secondlife.com/",
+      "quote": "ネットでの宿泊ご予約",
+      "checkedAt": "2026-10-25"
+    },
+    {
+      "claim": "友人を招くうちに宿泊客を受け入れるようになった",
+      "source": "https://maru-secondlife.com/",
+      "quote": "友人を招いているうちに",
+      "checkedAt": "2026-10-25"
+    }
+  ],
+  "sources": [
+    {
+      "label": "公式サイト",
+      "url": "https://maru-secondlife.com/"
+    },
+    {
+      "label": "公式サイト(施設案内)",
+      "url": "https://maru-secondlife.com/facility"
+    },
+    {
+      "label": "公式サイト(体験)",
+      "url": "https://maru-secondlife.com/experience"
+    },
+    {
+      "label": "公式サイト(料金/アクセス)",
+      "url": "https://maru-secondlife.com/fee_access"
+    },
+    {
+      "label": "Google マップ",
+      "url": "https://maps.google.com/?cid=16012889078296844831"
+    }
+  ],
+  "notes": "automation/v2/write.mjs が 2026-10-25 に claude -p --model sonnet で作成。事実の裏取り: 17/17 件(quote が出どころにあるもの)。裏取りに通らなかった facts は載せていない。"
+}

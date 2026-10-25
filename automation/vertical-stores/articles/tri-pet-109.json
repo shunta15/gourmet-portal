@@ -1,0 +1,177 @@
+{
+  "key": "tri-pet-109",
+  "headline": "大阪市東住吉区、近鉄南大阪線北田辺駅から徒歩約5分にあるペットホテル。24時間スタッフが常駐し、犬の保育園・ペットシッター・老犬介護も行う",
+  "lede": "大阪市東住吉区にある「ペットホテル ALOHA MIMITAN アロハミミタン」です。近鉄南大阪線北田辺駅から徒歩約5分、自宅兼店舗で24時間スタッフが常駐しています。営業は7時から20時までの完全予約制です。",
+  "sections": [
+    {
+      "heading": "場所と利用のしかた",
+      "body": "最寄り駅は近鉄南大阪線北田辺駅で、徒歩約5分です。駐車場は2台分あります。営業は7時から20時までの完全予約制で、時間外は応相談です。ホテルの利用には事前の見学とカウンセリングが必要で、各種ワクチン・予防接種の証明書の提出も求められます。"
+    },
+    {
+      "heading": "設備と環境",
+      "body": "自宅兼店舗で、24時間スタッフが常駐しています。屋上には室内のドッグランがあり、ペットランニングマシーンとボールプールを備えています。日中はケージフリーでもケージ内でも預かりに対応します。施設から5分圏内に動物病院・ドッグカフェ・提携トリミングサロンがあり、隣には駒川北公園があります。"
+    },
+    {
+      "heading": "サービスの種類",
+      "body": "お泊まりのペットホテルのほか、7時から20時の間で最大12時間まで預かる犬の保育園、ペットシッター、老犬老猫向けの訪問介護を行っています。ペットシッターはベテランの女性スタッフ2名が担当し、10歳以上の老犬・老猫を対象とした訪問介護にも対応します。"
+    }
+  ],
+  "menus": [
+    {
+      "name": "犬の保育園"
+    },
+    {
+      "name": "ペットホテル"
+    },
+    {
+      "name": "ペットシッター"
+    },
+    {
+      "name": "老犬介護"
+    }
+  ],
+  "tags": [],
+  "facts": [
+    {
+      "claim": "犬の保育園・ペットホテル・ペットシッター・老犬介護を行う",
+      "source": "https://www.alohamimitan.co.jp/",
+      "quote": "犬の保育園・ペットホテル・ペットシッター・老犬介護",
+      "checkedAt": "2026-10-25"
+    },
+    {
+      "claim": "近鉄南大阪線北田辺駅から徒歩約5分",
+      "source": "https://www.alohamimitan.co.jp/",
+      "quote": "近鉄南大阪線北田辺駅から徒歩で約5分",
+      "checkedAt": "2026-10-25"
+    },
+    {
+      "claim": "駐車場が2台分ある",
+      "source": "https://www.alohamimitan.co.jp/about",
+      "quote": "有り（2台）",
+      "checkedAt": "2026-10-25"
+    },
+    {
+      "claim": "営業は7時から20時までの完全予約制",
+      "source": "https://www.alohamimitan.co.jp/",
+      "quote": "7:00～20:00（完全予約制）",
+      "checkedAt": "2026-10-25"
+    },
+    {
+      "claim": "営業時間外は応相談",
+      "source": "https://www.alohamimitan.co.jp/",
+      "quote": "※時間外は応相談",
+      "checkedAt": "2026-10-25"
+    },
+    {
+      "claim": "ホテル利用には見学とカウンセリングが必要",
+      "source": "https://www.alohamimitan.co.jp/preschool",
+      "quote": "見学、ご来訪いただきカウンセリングが必要",
+      "checkedAt": "2026-10-25"
+    },
+    {
+      "claim": "利用には各種ワクチン・予防接種の証明書の提出が必要",
+      "source": "https://www.alohamimitan.co.jp/hotel",
+      "quote": "各種ワクチン・予防接種の証明書をご提出いただきます",
+      "checkedAt": "2026-10-25"
+    },
+    {
+      "claim": "自宅兼店舗で24時間スタッフが常駐するペットホテル",
+      "source": "https://www.alohamimitan.co.jp/about",
+      "quote": "自宅兼店舗のため、24時間スタッフ常駐のペットホテル",
+      "checkedAt": "2026-10-25"
+    },
+    {
+      "claim": "屋上に室内のドッグランがある",
+      "source": "https://www.alohamimitan.co.jp/",
+      "quote": "屋上の室内ドッグランがあり",
+      "checkedAt": "2026-10-25"
+    },
+    {
+      "claim": "ペットランニングマシーンがある",
+      "source": "https://www.alohamimitan.co.jp/about",
+      "quote": "ペットランニングマシーン有り",
+      "checkedAt": "2026-10-25"
+    },
+    {
+      "claim": "ボールプールがある",
+      "source": "https://www.alohamimitan.co.jp/about",
+      "quote": "ボールプール有り",
+      "checkedAt": "2026-10-25"
+    },
+    {
+      "claim": "日中はケージフリーまたはケージ内での預かりに対応する",
+      "source": "https://www.alohamimitan.co.jp/about",
+      "quote": "日中はケージフリーでもケージ内でもお預かりでも対応可能",
+      "checkedAt": "2026-10-25"
+    },
+    {
+      "claim": "施設から5分圏内に動物病院・ドッグカフェ・提携トリミングサロンがある",
+      "source": "https://www.alohamimitan.co.jp/about",
+      "quote": "施設5分圏内に動物病院、ドッグカフェ、提携トリミングサロン",
+      "checkedAt": "2026-10-25"
+    },
+    {
+      "claim": "隣に駒川北公園がある",
+      "source": "https://www.alohamimitan.co.jp/about",
+      "quote": "隣には広い駒川北公園",
+      "checkedAt": "2026-10-25"
+    },
+    {
+      "claim": "最大12時間まで預かる犬の保育園がある",
+      "source": "https://www.alohamimitan.co.jp/about",
+      "quote": "最大12時間までお預かり可能な犬の保育園",
+      "checkedAt": "2026-10-25"
+    },
+    {
+      "claim": "10歳以上の老犬・老猫を対象とした訪問介護に対応する",
+      "source": "https://www.alohamimitan.co.jp/",
+      "quote": "10歳以上の老犬・老猫を対象とした訪問介護",
+      "checkedAt": "2026-10-25"
+    },
+    {
+      "claim": "ベテランの女性ペットシッター2名が在籍する",
+      "source": "https://www.alohamimitan.co.jp/sitter",
+      "quote": "ベテランの女性ペットシッター2名を迎え",
+      "checkedAt": "2026-10-25"
+    },
+    {
+      "claim": "営業は月曜から日曜まで7時から20時",
+      "source": "https://maps.google.com/?cid=12506116750951527123",
+      "quote": "月: 07:00–20:00",
+      "checkedAt": "2026-10-25"
+    },
+    {
+      "claim": "業種の表示はペットホテル業",
+      "source": "https://maps.google.com/?cid=12506116750951527123",
+      "quote": "ペット ホテル業",
+      "checkedAt": "2026-10-25"
+    }
+  ],
+  "sources": [
+    {
+      "label": "公式サイト",
+      "url": "https://www.alohamimitan.co.jp/"
+    },
+    {
+      "label": "公式サイト(施設案内)",
+      "url": "https://www.alohamimitan.co.jp/about"
+    },
+    {
+      "label": "公式サイト(犬の保育園)",
+      "url": "https://www.alohamimitan.co.jp/preschool"
+    },
+    {
+      "label": "公式サイト(ペットホテル)",
+      "url": "https://www.alohamimitan.co.jp/hotel"
+    },
+    {
+      "label": "公式サイト(ペットシッター)",
+      "url": "https://www.alohamimitan.co.jp/sitter"
+    },
+    {
+      "label": "Google マップ",
+      "url": "https://maps.google.com/?cid=12506116750951527123"
+    }
+  ],
+  "notes": "automation/v2/write.mjs が 2026-10-25 に claude -p --model sonnet で作成。事実の裏取り: 19/19 件(quote が出どころにあるもの)。裏取りに通らなかった facts は載せていない。"
+}

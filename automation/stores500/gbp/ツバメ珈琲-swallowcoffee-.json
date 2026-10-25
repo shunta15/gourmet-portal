@@ -1,0 +1,22 @@
+{
+  "name": "ツバメ珈琲 -swallow coffee-",
+  "address": "栃木県佐野市堀米町６４０",
+  "lat": 36.3308661,
+  "lng": 139.5848931,
+  "category": "コーヒーショップ・喫茶店",
+  "hours": {
+    "月": "13:00–19:30",
+    "火": "13:00–19:30",
+    "水": "定休日",
+    "木": "定休日",
+    "金": "13:00–19:30",
+    "土": "11:00–19:30",
+    "日": "11:00–19:30"
+  },
+  "phone": "090-3339-8733",
+  "website": "https://swallowcoff.official.ec/?fbclid=PAZXh0bgNhZW0CMTEAAaY4ROD51m2VVXdYigiRv6HW0TIiIfaBh_hqK8mtYUF-ZJmvoquggNgAPDM_aem_ASSp2Ql3sDUmLDuN1imPODXpG6ZR4ifMO1ig63RHS33hD30WE2WlqgZnG2A_DmGFqKX03zYVYDEJqdIWaUdo2oYr",
+  "priceRange": null,
+  "status": null,
+  "gbpUrl": "https://maps.google.com/?cid=14030541947421321122",
+  "fetchedAt": "2026-10-25T00:46:11.778Z"
+}

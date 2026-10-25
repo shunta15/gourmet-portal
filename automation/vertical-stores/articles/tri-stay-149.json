@@ -1,0 +1,137 @@
+{
+  "key": "tri-stay-149",
+  "headline": "京都府京丹後市網野町浜詰、夕日ヶ浦温泉にある宿。客室は古民家風和室6室で、部屋ごとに内湯と露天風呂がある",
+  "lede": "京丹後市にある「離れの宿 和楽」です。夕日ヶ浦温泉のそばに建ち、古民家風の和室6室には、それぞれ内湯と露天風呂が備わっています。食事は部屋食か母屋の食事処でいただけます。",
+  "sections": [
+    {
+      "heading": "客室とお風呂",
+      "body": "離れの客室は、丹後ちりめんの織物にちなんで「綸子」「綾」「錦」「綴」「紗」「斜子」の名がついています。古民家風の和室6室で、部屋ごとに内湯と露天風呂が1つずつあり、天然の夕日ヶ浦温泉を楽しめます。客室には堀り炬燵や冷蔵庫、WiFiなどが備わっています。"
+    },
+    {
+      "heading": "食事",
+      "body": "食事は部屋食か、母屋にある食事処でいただけます。母屋は昔ながらの吹き抜けで天井が高いつくりです。多家族や多人数での食事は、この食事処を利用します。"
+    },
+    {
+      "heading": "場所と予約",
+      "body": "住所は京都府京丹後市網野町浜詰30-33です。チェックインは15時から(最終17時)、チェックアウトは11時です。送迎は要予約です。予約は公式サイトの予約ページから行えます。"
+    }
+  ],
+  "rooms": [
+    {
+      "name": "綸子"
+    },
+    {
+      "name": "綾"
+    },
+    {
+      "name": "錦"
+    },
+    {
+      "name": "綴"
+    },
+    {
+      "name": "紗"
+    },
+    {
+      "name": "斜子"
+    }
+  ],
+  "menus": [],
+  "tags": [
+    {
+      "tag": "温泉",
+      "factIndex": 9
+    }
+  ],
+  "facts": [
+    {
+      "claim": "客室は古民家風和室6室",
+      "source": "https://www.waraku-yado.jp/about/",
+      "quote": "古民家風和室6室",
+      "checkedAt": "2026-10-25"
+    },
+    {
+      "claim": "部屋ごとに内湯1と露天風呂1がある",
+      "source": "https://www.waraku-yado.jp/about/",
+      "quote": "お部屋ごとに内湯1と露天風呂1",
+      "checkedAt": "2026-10-25"
+    },
+    {
+      "claim": "食事場所は部屋食もしくは食事処",
+      "source": "https://www.waraku-yado.jp/about/",
+      "quote": "部屋食もしくは食事処",
+      "checkedAt": "2026-10-25"
+    },
+    {
+      "claim": "チェックインは15時から(最終17時)、チェックアウトは11時",
+      "source": "https://www.waraku-yado.jp/about/",
+      "quote": "IN15:00〜 （最終チェックイン17:00） / OUT11:00",
+      "checkedAt": "2026-10-25"
+    },
+    {
+      "claim": "送迎は要予約",
+      "source": "https://www.waraku-yado.jp/about/",
+      "quote": "有（要予約）",
+      "checkedAt": "2026-10-25"
+    },
+    {
+      "claim": "客室には丹後ちりめんにちなんだ名がある",
+      "source": "https://www.waraku-yado.jp/room/",
+      "quote": "「 綸子 りんず 」「 綾 あや 」",
+      "checkedAt": "2026-10-25"
+    },
+    {
+      "claim": "母屋に食事処がある",
+      "source": "https://www.waraku-yado.jp/room/",
+      "quote": "母屋の食事処",
+      "checkedAt": "2026-10-25"
+    },
+    {
+      "claim": "多家族、多人数での食事は母屋の食事処を利用する",
+      "source": "https://www.waraku-yado.jp/room/",
+      "quote": "多家族、多人数で揃ってのお食事はこちらでお願いしております。",
+      "checkedAt": "2026-10-25"
+    },
+    {
+      "claim": "離れの客室全てに内風呂・露天風呂がある",
+      "source": "https://www.waraku-yado.jp/bath/",
+      "quote": "離れの客室全てに内風呂・露天風呂を",
+      "checkedAt": "2026-10-25"
+    },
+    {
+      "claim": "天然の夕日ヶ浦温泉の湯を楽しめる",
+      "source": "https://www.waraku-yado.jp/bath/",
+      "quote": "天然夕日ヶ浦温泉の",
+      "checkedAt": "2026-10-25"
+    },
+    {
+      "claim": "住所は京都府京丹後市網野町浜詰30-33",
+      "source": "https://www.waraku-yado.jp/",
+      "quote": "京都府京丹後市網野町浜詰30-33",
+      "checkedAt": "2026-10-25"
+    }
+  ],
+  "sources": [
+    {
+      "label": "公式サイト",
+      "url": "https://www.waraku-yado.jp/"
+    },
+    {
+      "label": "公式サイト(ご案内)",
+      "url": "https://www.waraku-yado.jp/about/"
+    },
+    {
+      "label": "公式サイト(客室)",
+      "url": "https://www.waraku-yado.jp/room/"
+    },
+    {
+      "label": "公式サイト(温泉)",
+      "url": "https://www.waraku-yado.jp/bath/"
+    },
+    {
+      "label": "Google マップ",
+      "url": "https://maps.google.com/?cid=3460619192667560591"
+    }
+  ],
+  "notes": "automation/v2/write.mjs が 2026-10-25 に claude -p --model sonnet で作成。事実の裏取り: 11/11 件(quote が出どころにあるもの)。裏取りに通らなかった facts は載せていない。"
+}

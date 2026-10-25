@@ -1,0 +1,282 @@
+{
+  "key": "tri-activity-114",
+  "headline": "京都市東山区の長屋を使った屋内の遊び場。剣玉や折り紙など、日本の伝統的な遊びを自由に体験できる。",
+  "lede": "京都市にある「AriHana Kyoto」です。隣家と壁を共有する「長屋」と呼ばれる建物の中にあり、剣玉や折り紙、だるま落としなど、日本の伝統的な遊びを自由に体験できます。簡単な着物や法被を着て遊んだり、写真を撮ったりすることもできます。",
+  "sections": [
+    {
+      "heading": "体験できること",
+      "body": "剣玉や折り紙、だるま落としなど、複数の伝統的な遊びを自由に体験できます。簡単な着物や法被を着て、遊びながら写真を撮ることもできます。玩具作りや扇子作りといった、オプションのメニューもあります。靴を脱ぎ、荷物を下ろして過ごす造りで、セルフサービスのドリンクのサービスもあります。授乳室とおむつ替えスペースも備えています。"
+    },
+    {
+      "heading": "建物について",
+      "body": "店舗は、隣家と壁を共有する「長屋」と呼ばれる伝統的な建物の中にあります。長屋が連なって細い路地を作る一角にあり、古い日本家屋のため、入り口の戸は低く、階段もとても急な造りです。足を伸ばして座れる畳の部屋があります。"
+    },
+    {
+      "heading": "行き方",
+      "body": "清水寺や三十三間堂、鴨川、京都国立博物館から徒歩圏内にあります。京阪本線の清水五条駅から徒歩11分、七条駅から徒歩16分です。専用の駐車場はなく、近くのコインパーキングを利用します。駐輪場はあります。営業は月曜と水曜から日曜の10時から18時で、火曜日は定休日です。"
+    },
+    {
+      "heading": "運営について",
+      "body": "代表はEMIKO OKUMURAさんで、保育士として長年働いていました。開業日は2024年10月1日です。店名の「AriHana」は、「ありがとうの花」を意味する名前です。事業内容は、伝統的な遊びの時間を体験するプロジェクトです。毎週土曜日には、西山旅館の宿泊者向けに伝統的な遊び体験も提供しています。"
+    }
+  ],
+  "menus": [
+    {
+      "name": "剣玉"
+    },
+    {
+      "name": "折り紙"
+    },
+    {
+      "name": "だるま落とし"
+    },
+    {
+      "name": "玩具作り"
+    },
+    {
+      "name": "扇子作り"
+    },
+    {
+      "name": "着物・法被の試着"
+    }
+  ],
+  "tags": [
+    {
+      "tag": "子連れ",
+      "factIndex": 5
+    },
+    {
+      "tag": "雨の日",
+      "factIndex": 0
+    }
+  ],
+  "facts": [
+    {
+      "claim": "家族向けの屋内の遊び場で、伝統的な日本文化を体験できる。",
+      "source": "https://arihana-kyoto.com/index_en.html",
+      "quote": "indoor play space in Kyoto",
+      "checkedAt": "2026-10-25"
+    },
+    {
+      "claim": "剣玉や折り紙などの伝統的な日本の遊びを自由に楽しめる。",
+      "source": "https://arihana-kyoto.com/index_en.html",
+      "quote": "Kendama and Origami",
+      "checkedAt": "2026-10-25"
+    },
+    {
+      "claim": "剣玉・折り紙・だるま落としなどの伝統的な遊びを体験できる。",
+      "source": "https://arihana-kyoto.com/index_en.html",
+      "quote": "Kendama, Origami, Daruma-drop",
+      "checkedAt": "2026-10-25"
+    },
+    {
+      "claim": "簡単な着物や法被を着て遊んだり写真を撮ったりできる。",
+      "source": "https://arihana-kyoto.com/index_en.html",
+      "quote": "simple kimonos or happi coats",
+      "checkedAt": "2026-10-25"
+    },
+    {
+      "claim": "玩具作りや扇子作りなどのオプションのメニューがある。",
+      "source": "https://arihana-kyoto.com/index_en.html",
+      "quote": "making toys and fans",
+      "checkedAt": "2026-10-25"
+    },
+    {
+      "claim": "授乳室とおむつ替えスペースがある。",
+      "source": "https://arihana-kyoto.com/index_en.html",
+      "quote": "nursing room and diaper",
+      "checkedAt": "2026-10-25"
+    },
+    {
+      "claim": "靴を脱いで荷物を下ろして過ごせる。",
+      "source": "https://arihana-kyoto.com/index_en.html",
+      "quote": "take off your shoes",
+      "checkedAt": "2026-10-25"
+    },
+    {
+      "claim": "店舗は隣家と壁を共有する「長屋」と呼ばれる建物にある。",
+      "source": "https://arihana-kyoto.com/en_aboutus/index.html",
+      "quote": "shares a wall with",
+      "checkedAt": "2026-10-25"
+    },
+    {
+      "claim": "階段がとても急な造りになっている。",
+      "source": "https://arihana-kyoto.com/en_aboutus/index.html",
+      "quote": "the stairs are very steep",
+      "checkedAt": "2026-10-25"
+    },
+    {
+      "claim": "足を伸ばして座れる畳の部屋がある。",
+      "source": "https://arihana-kyoto.com/en_aboutus/index.html",
+      "quote": "sit in a tatami room",
+      "checkedAt": "2026-10-25"
+    },
+    {
+      "claim": "代表者はEMIKO OKUMURA。",
+      "source": "https://arihana-kyoto.com/en_aboutus/index.html",
+      "quote": "EMIKO OKUMURA",
+      "checkedAt": "2026-10-25"
+    },
+    {
+      "claim": "開業日は2024年10月1日。",
+      "source": "https://arihana-kyoto.com/en_aboutus/index.html",
+      "quote": "October 1, 2024",
+      "checkedAt": "2026-10-25"
+    },
+    {
+      "claim": "代表は保育士として長年働いていた。",
+      "source": "https://arihana-kyoto.com/en_aboutus/index.html",
+      "quote": "nursery teacher for many years",
+      "checkedAt": "2026-10-25"
+    },
+    {
+      "claim": "清水寺・三十三間堂・鴨川・京都国立博物館から徒歩圏内にある。",
+      "source": "https://arihana-kyoto.com/en_access/index.html",
+      "quote": "Kiyomizu Temple, Sanjusangendo",
+      "checkedAt": "2026-10-25"
+    },
+    {
+      "claim": "京阪本線清水五条駅から徒歩11分。",
+      "source": "https://arihana-kyoto.com/index_en.html",
+      "quote": "11 min. walk from Kiyomizu",
+      "checkedAt": "2026-10-25"
+    },
+    {
+      "claim": "京阪本線七条駅から徒歩16分。",
+      "source": "https://arihana-kyoto.com/index_en.html",
+      "quote": "16 min. walk from Shichijo",
+      "checkedAt": "2026-10-25"
+    },
+    {
+      "claim": "専用の駐車場はない。",
+      "source": "https://arihana-kyoto.com/en_access/index.html",
+      "quote": "do not have a private parking",
+      "checkedAt": "2026-10-25"
+    },
+    {
+      "claim": "駐輪場がある。",
+      "source": "https://arihana-kyoto.com/en_access/index.html",
+      "quote": "Bicycle parking is available",
+      "checkedAt": "2026-10-25"
+    },
+    {
+      "claim": "営業は月・水〜日の10時から18時、火曜日は定休日。",
+      "source": "https://maps.google.com/?cid=8906768726769736500",
+      "quote": "10:00–18:00",
+      "checkedAt": "2026-10-25"
+    },
+    {
+      "claim": "長屋が連なって細い路地を作っている。",
+      "source": "https://arihana-kyoto.com/en_aboutus/index.html",
+      "quote": "forming narrow alleys",
+      "checkedAt": "2026-10-25"
+    },
+    {
+      "claim": "店名の「AriHana」は「ありがとうの花」を意味する。",
+      "source": "https://arihana-kyoto.com/en_aboutus/index.html",
+      "quote": "Arigatou no Hana",
+      "checkedAt": "2026-10-25"
+    },
+    {
+      "claim": "事業内容は伝統的な遊びの時間を体験するプロジェクト。",
+      "source": "https://arihana-kyoto.com/en_aboutus/index.html",
+      "quote": "the traditional playtime",
+      "checkedAt": "2026-10-25"
+    },
+    {
+      "claim": "入り口の戸に頭をぶつけないよう、階段の上り下りにも注意が必要。",
+      "source": "https://arihana-kyoto.com/en_aboutus/index.html",
+      "quote": "going up and down the stairs",
+      "checkedAt": "2026-10-25"
+    },
+    {
+      "claim": "長屋は複数の住戸が一つにまとまった建物である。",
+      "source": "https://arihana-kyoto.com/en_aboutus/index.html",
+      "quote": "several dwellings being",
+      "checkedAt": "2026-10-25"
+    },
+    {
+      "claim": "セルフサービスのドリンクのサービスがある。",
+      "source": "https://arihana-kyoto.com/index_en.html",
+      "quote": "Free drinks (self-service)",
+      "checkedAt": "2026-10-25"
+    },
+    {
+      "claim": "京都を訪れる人が伝統的な遊びを気軽に体験できる場所として開業した。",
+      "source": "https://arihana-kyoto.com/en_aboutus/index.html",
+      "quote": "easily experience the",
+      "checkedAt": "2026-10-25"
+    },
+    {
+      "claim": "毎週土曜日、西山旅館の宿泊者向けに伝統的な遊び体験を提供している。",
+      "source": "https://arihana-kyoto.com/event/en/traditional-japanese-play-experience-event-at-nishiyama-ryokan/",
+      "quote": "every Saturday",
+      "checkedAt": "2026-10-25"
+    },
+    {
+      "claim": "代表は海外旅行が好きで、訪れた国の文化を体験することを楽しんでいる。",
+      "source": "https://arihana-kyoto.com/en_aboutus/index.html",
+      "quote": "enjoy traveling abroad",
+      "checkedAt": "2026-10-25"
+    },
+    {
+      "claim": "2026年10月11日に開業2周年を迎えた。",
+      "source": "https://arihana-kyoto.com/index_en.html",
+      "quote": "2nd Anniversary",
+      "checkedAt": "2026-10-25"
+    },
+    {
+      "claim": "「ありがとう」は代表の好きな言葉である。",
+      "source": "https://arihana-kyoto.com/en_aboutus/index.html",
+      "quote": "favorite word",
+      "checkedAt": "2026-10-25"
+    },
+    {
+      "claim": "市バス馬町バス停から徒歩約2分。",
+      "source": "https://arihana-kyoto.com/index_en.html",
+      "quote": "Umamachi bus stop",
+      "checkedAt": "2026-10-25"
+    },
+    {
+      "claim": "京阪バス五条坂バス停から徒歩約3分。",
+      "source": "https://arihana-kyoto.com/index_en.html",
+      "quote": "Gojozaka bus stop",
+      "checkedAt": "2026-10-25"
+    },
+    {
+      "claim": "京都駅へは徒歩約29分。",
+      "source": "https://arihana-kyoto.com/en_access/index.html",
+      "quote": "29minutes on foot",
+      "checkedAt": "2026-10-25"
+    },
+    {
+      "claim": "予約はウェブサイトから行える。",
+      "source": "https://arihana-kyoto.com/index_en.html",
+      "quote": "You can book your spot",
+      "checkedAt": "2026-10-25"
+    }
+  ],
+  "sources": [
+    {
+      "label": "公式サイト(トップ)",
+      "url": "https://arihana-kyoto.com/index_en.html"
+    },
+    {
+      "label": "公式サイト(About Us)",
+      "url": "https://arihana-kyoto.com/en_aboutus/index.html"
+    },
+    {
+      "label": "公式サイト(Access)",
+      "url": "https://arihana-kyoto.com/en_access/index.html"
+    },
+    {
+      "label": "公式サイト(イベント)",
+      "url": "https://arihana-kyoto.com/event/en/traditional-japanese-play-experience-event-at-nishiyama-ryokan/"
+    },
+    {
+      "label": "Google マップ",
+      "url": "https://maps.google.com/?cid=8906768726769736500"
+    }
+  ],
+  "notes": "automation/v2/write.mjs が 2026-10-25 に claude -p --model sonnet で作成。事実の裏取り: 34/34 件(quote が出どころにあるもの)。裏取りに通らなかった facts は載せていない。"
+}

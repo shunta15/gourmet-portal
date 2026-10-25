@@ -1,0 +1,32 @@
+{
+  "tab": "トリニティアポ",
+  "tabEn": "tri-activity",
+  "row": 112,
+  "sheet": {
+    "name": "遊漁船美羽",
+    "address": "",
+    "url": "https://www.google.com/search?q=%E9%81%8A%E6%BC%81%E8%88%B9%E7%BE%8E%E7%BE%BD%09%E3%80%92869-3603+%E7%86%8A%E6%9C%AC%E7%9C%8C%E4%B8%8A%E5%A4%A9%E8%8D%89%E5%B8%82%E5%A4%A7%E7%9F%A2%E9%87%8E%E7%94%BA%E4%B8%AD3011-3&sca_esv=1089ed97ad3346dd&biw=740&bih=663&sxsrf=APpeQnvJJ7o0ZCUd9sLBwMZ2tmCPPSKahQ%3A1792401320860&ei=qN_Vavr6M4yp1e8PwL6u-Qg&uact=5&oq=%E9%81%8A%E6%BC%81%E8%88%B9%E7%BE%8E%E7%BE%BD%09%E3%80%92869-3603+%E7%86%8A%E6%9C%AC%E7%9C%8C%E4%B8%8A%E5%A4%A9%E8%8D%89%E5%B8%82%E5%A4%A7%E7%9F%A2%E9%87%8E%E7%94%BA%E4%B8%AD3011-3&gs_lp=Egxnd3Mtd2l6LXNlcnAiRumBiua8geiIuee-jue-vQnjgJI4NjktMzYwMyDnhormnKznnIzkuIrlpKnojYnluILlpKfnn6Lph47nlLrkuK0zMDExLTMyBxAjGOoCGCcyBxAjGOoCGCcyDRAjGPAFGMkCGOoCGCcyBxAjGOoCGCcyBxAjGOoCGCcyBxAjGOoCGCcyBxAjGOoCGCcyBxAjGOoCGCcyBxAjGOoCGCcyBxAjGOoCGCdIiARQ_AFY_AFwAXgBkAEAmAEAoAEAqgEAuAEDyAEA-AEC-AEBmAIBoAIXqAIKmAMX8QXDrdEHHfTFu5IHATGgBwCyBwC4BwDCBwMzLTHIBwmACAE&sclient=gws-wiz-serp#lpg=cid:CgIgAQ%3D%3D,ik:CAoSHENJQUJJaER2QWFSOElSTnNFcE5aQ3ZFaThaQTA%3D",
+    "type": "レジャー",
+    "d1": "",
+    "d2": ""
+  },
+  "urlKind": "search",
+  "route": "第1段(verify-gbp.mjs)で確認済み",
+  "verdict": "一致",
+  "verdictReason": "電話が一致／店名: exact(シート「遊漁船美羽」/ マップ「遊漁船 美羽」)／住所(検索URL): near・番地一致（丁目なしの番地に枝番の差: シート3011-3 / マップ）",
+  "place": {
+    "name": "遊漁船 美羽",
+    "address": "熊本県上天草市大矢野町中",
+    "category": "釣船チャーター",
+    "lat": 32.5572554,
+    "lng": 130.4478331,
+    "gbpUrl": "https://maps.google.com/?cid=17266455911645587890",
+    "phone": "090-1973-4545",
+    "website": "https://amakusamiu.com/",
+    "hours": null,
+    "reserveLinks": [],
+    "statusSignals": [],
+    "closedSignal": false
+  },
+  "fetchedAt": "2026-10-25T00:41:06.396Z"
+}

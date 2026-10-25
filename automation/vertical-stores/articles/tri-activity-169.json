@@ -1,0 +1,228 @@
+{
+  "key": "tri-activity-169",
+  "headline": "静岡県伊東市富戸にあるダイビングショップ。エントリーポイントまで歩いて10秒の立地で、ファンダイビングや体験ダイビング、各種ライセンス講習を行う",
+  "lede": "伊東市にある「スキューバプロショップ富戸」です。クラブハウスには更衣室や休憩スペース、源泉掛け流しの「温泉丸」を備え、宿泊もできます。電車利用の場合は伊豆急行富戸駅から送迎があります。",
+  "sections": [
+    {
+      "heading": "体験の内容",
+      "body": "ファンダイビングは通常2ダイブで、ビーチやボートなど10カ所以上のポイントがあります。体験ダイビングは所要時間が約半日(約3時間)で、足のつく浅場でじっくり練習してから海へ向かいます。シュノーケリングコースは半日(約2〜3時間)と、昼食付きの1日プランがあります。"
+    },
+    {
+      "heading": "集合場所とアクセス",
+      "body": "所在地は静岡県伊東市富戸985-2です。電車は伊豆急行富戸駅から車で5分で、送迎があります。エントリーポイントまで歩いて10秒の立地です。駐車場は5台利用可能です。"
+    },
+    {
+      "heading": "準備と注意",
+      "body": "体験ダイビングの参加条件は10歳以上の健康な方で、未成年は保護者の同意が必要です。器材はレンタルに含まれるため手ぶらで参加できます。シュノーケリングコースは6歳以上から参加できます。更衣室は男女別の個室があります。すべてのプログラムは雨天でも海況悪化がない限り開催します。"
+    },
+    {
+      "heading": "宿泊とクラブハウス",
+      "body": "クラブハウスには源泉掛け流しの温泉丸があり、ダイビング後に利用できます。宿泊施設にはWi-Fiや個室バスルームを備えます。ファンダイビングの昼食には特製カレーライスが用意されます。解散は15:00〜16:00ごろです。"
+    }
+  ],
+  "menus": [
+    {
+      "name": "ファンダイビング"
+    },
+    {
+      "name": "体験ダイビング"
+    },
+    {
+      "name": "シュノーケリングコース"
+    },
+    {
+      "name": "富戸スキンダイビングコース"
+    },
+    {
+      "name": "PADIアドバンスコース"
+    },
+    {
+      "name": "PADIエンリッチド・エアコース"
+    },
+    {
+      "name": "PADIオープンウォーターコース"
+    },
+    {
+      "name": "伊豆遠征ミニツアー"
+    }
+  ],
+  "tags": [
+    {
+      "tag": "子連れ",
+      "factIndex": 16
+    },
+    {
+      "tag": "初心者歓迎",
+      "factIndex": 14
+    },
+    {
+      "tag": "手ぶらでOK",
+      "factIndex": 15
+    },
+    {
+      "tag": "雨の日",
+      "factIndex": 21
+    },
+    {
+      "tag": "駐車場あり",
+      "factIndex": 3
+    }
+  ],
+  "facts": [
+    {
+      "claim": "業種の表示はダイビング ショップ",
+      "source": "https://maps.google.com/?cid=2988792243424078954",
+      "quote": "ダイビング ショップ",
+      "checkedAt": "2026-10-25"
+    },
+    {
+      "claim": "所在地は静岡県伊東市富戸985-2",
+      "source": "https://scubaproshop.co.jp/Futo",
+      "quote": "静岡県伊東市富戸985-2",
+      "checkedAt": "2026-10-25"
+    },
+    {
+      "claim": "電話番号は0557-51-7844",
+      "source": "https://scubaproshop.co.jp/Futo",
+      "quote": "0557-51-7844",
+      "checkedAt": "2026-10-25"
+    },
+    {
+      "claim": "駐車場は5台利用可能",
+      "source": "https://scubaproshop.co.jp/Futo",
+      "quote": "5台利用可能",
+      "checkedAt": "2026-10-25"
+    },
+    {
+      "claim": "伊豆急行富戸駅から車で5分の場所にあり、送迎がある",
+      "source": "https://scubaproshop.co.jp/Futo",
+      "quote": "伊豆急行富戸駅より車で5分（無料送迎あり）",
+      "checkedAt": "2026-10-25"
+    },
+    {
+      "claim": "エントリーポイントまで歩いて10秒",
+      "source": "https://scubaproshop.co.jp/Futo",
+      "quote": "エントリーポイントまで歩いてわずか10秒",
+      "checkedAt": "2026-10-25"
+    },
+    {
+      "claim": "更衣室は男女別の個室がある",
+      "source": "https://scubaproshop.co.jp/Futo",
+      "quote": "更衣室で着替え（男女別・個室あり）",
+      "checkedAt": "2026-10-25"
+    },
+    {
+      "claim": "源泉掛け流しの温泉丸がある",
+      "source": "https://scubaproshop.co.jp/Futo",
+      "quote": "源泉掛け流し『温泉丸』",
+      "checkedAt": "2026-10-25"
+    },
+    {
+      "claim": "ファンダイビングは通常2ダイブ",
+      "source": "https://scubaproshop.co.jp/Futo",
+      "quote": "通常2ダイブ（ビーチ or ボート）",
+      "checkedAt": "2026-10-25"
+    },
+    {
+      "claim": "ビーチやボートなど10カ所以上のポイントがある",
+      "source": "https://scubaproshop.co.jp/Futo",
+      "quote": "10カ所以上のスポットが揃い",
+      "checkedAt": "2026-10-25"
+    },
+    {
+      "claim": "ファンダイビングの昼食に特製カレーライスが用意される",
+      "source": "https://scubaproshop.co.jp/Futo",
+      "quote": "特製カレーライスをご用意（無料）",
+      "checkedAt": "2026-10-25"
+    },
+    {
+      "claim": "ファンダイビングの解散は15:00〜16:00ごろ",
+      "source": "https://scubaproshop.co.jp/Futo",
+      "quote": "15:00〜16:00ごろを目安に解散",
+      "checkedAt": "2026-10-25"
+    },
+    {
+      "claim": "体験ダイビングの所要時間は約半日(約3時間)",
+      "source": "https://scubaproshop.co.jp/Futo",
+      "quote": "所要時間：約半日（約3時間）",
+      "checkedAt": "2026-10-25"
+    },
+    {
+      "claim": "体験ダイビングの参加条件は10歳以上の健康な方",
+      "source": "https://scubaproshop.co.jp/Futo",
+      "quote": "10歳以上の健康な方（未成年の方は保護者同意が必要です）",
+      "checkedAt": "2026-10-25"
+    },
+    {
+      "claim": "体験ダイビングは足のつく浅場でじっくり練習してから海へ向かう",
+      "source": "https://scubaproshop.co.jp/Futo",
+      "quote": "足のつく浅場でじっくり練習してから",
+      "checkedAt": "2026-10-25"
+    },
+    {
+      "claim": "器材はレンタルに含まれ、手ぶらで参加できる",
+      "source": "https://scubaproshop.co.jp/Futo",
+      "quote": "器材はすべてレンタル込みなので手ぶらでもOK",
+      "checkedAt": "2026-10-25"
+    },
+    {
+      "claim": "シュノーケリングコースは6歳以上から参加できる",
+      "source": "https://scubaproshop.co.jp/Futo",
+      "quote": "6歳以上から参加可能です",
+      "checkedAt": "2026-10-25"
+    },
+    {
+      "claim": "シュノーケリングコースには半日(約2〜3時間)のプランがある",
+      "source": "https://scubaproshop.co.jp/Futo",
+      "quote": "半日コース（約2〜3時間）",
+      "checkedAt": "2026-10-25"
+    },
+    {
+      "claim": "シュノーケリングコースには昼食付きの1日プランがある",
+      "source": "https://scubaproshop.co.jp/Futo",
+      "quote": "1日コース（昼食付き）",
+      "checkedAt": "2026-10-25"
+    },
+    {
+      "claim": "宿泊施設にWi-Fiが完備されている",
+      "source": "https://scubaproshop.co.jp/Futo",
+      "quote": "Wi-Fi完備",
+      "checkedAt": "2026-10-25"
+    },
+    {
+      "claim": "宿泊施設に個室バスルームがある",
+      "source": "https://scubaproshop.co.jp/Futo",
+      "quote": "個室バスルーム",
+      "checkedAt": "2026-10-25"
+    },
+    {
+      "claim": "すべてのプログラムは雨天でも海況悪化がない限り開催する",
+      "source": "https://scubaproshop.co.jp/Futo",
+      "quote": "雨天でも海況悪化がない限り開催いたします",
+      "checkedAt": "2026-10-25"
+    },
+    {
+      "claim": "伊豆遠征ミニツアーは西伊豆・東伊豆・南伊豆へ日帰りまたは1泊で案内する",
+      "source": "https://scubaproshop.co.jp/Futo",
+      "quote": "西伊豆・東伊豆・南伊豆へ、日帰りor1泊でご案内",
+      "checkedAt": "2026-10-25"
+    },
+    {
+      "claim": "電車利用の場合、富戸駅9:06着の便に合わせて迎えがある",
+      "source": "https://scubaproshop.co.jp/Futo",
+      "quote": "伊豆急「富戸駅」9:06着",
+      "checkedAt": "2026-10-25"
+    }
+  ],
+  "sources": [
+    {
+      "label": "公式サイト",
+      "url": "https://scubaproshop.co.jp/Futo"
+    },
+    {
+      "label": "Google マップ",
+      "url": "https://maps.google.com/?cid=2988792243424078954"
+    }
+  ],
+  "notes": "automation/v2/write.mjs が 2026-10-25 に claude -p --model sonnet で作成。事実の裏取り: 24/24 件(quote が出どころにあるもの)。裏取りに通らなかった facts は載せていない。"
+}

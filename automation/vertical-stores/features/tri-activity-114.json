@@ -1,0 +1,409 @@
+{
+  "key": "tri-activity-114",
+  "vertical": "activity",
+  "storeName": "AriHana Kyoto",
+  "article": {
+    "id": "AriHanaKyoto",
+    "no": "",
+    "articleType": "guide",
+    "kicker": "ARIHANA KYOTO HIGASHIYAMA",
+    "title": "京都市東山区の長屋を使った屋内遊び場、AriHana Kyotoの伝統的な遊びと建物",
+    "titleHTML": "京都市東山区の長屋を使った屋内遊び場<br><em>AriHana Kyoto</em>の伝統的な遊びと建物",
+    "subtitle": "ものづくり体験 / 京都府京都市東山区 / 剣玉・折り紙など伝統的な遊びの体験",
+    "lede": "京都市東山区の長屋の中にあるAriHana Kyotoは、剣玉や折り紙、だるま落としなど、日本の伝統的な遊びを自由に体験できる屋内の遊び場だ。簡単な着物や法被を着て遊ぶこともでき、玩具作りや扇子作りのメニューもある。隣家と壁を共有する長屋の建物で、入り口の戸は低く、階段もとても急な造りになっている。",
+    "date": "2026-10-25",
+    "reading": "",
+    "author": "マチノワ編集部",
+    "heroImage": "/_portal/vshops/tri-activity-114/g01.jpg",
+    "ogImage": "/_portal/vshops/tri-activity-114/g01.jpg",
+    "ranking": [
+      {
+        "rank": "POINT 01",
+        "rankNum": 1,
+        "name": "剣玉・折り紙・だるま落とし。自由に楽しめる伝統的な遊び",
+        "cuisine": "遊びの体験",
+        "area": "東山区",
+        "purpose": "どんな遊びができるのかを知りたい人へ",
+        "desc": "京都にある家族向けの屋内の遊び場で、剣玉や折り紙、だるま落としといった、複数の伝統的な日本の遊びを自由に体験できる。簡単な着物や法被も用意されており、それらを着て遊んだり、写真を撮ったりすることもできる。玩具作りや扇子作りといった、オプションのメニューも用意されている。入り口で靴を脱ぎ、荷物を下ろしてから過ごす造りで、セルフサービスのドリンクのサービスもある。授乳室とおむつ替えスペースも備えており、足を伸ばして座れる畳の部屋もある。",
+        "images": [
+          "/_portal/vshops/tri-activity-114/s04.jpg"
+        ],
+        "specs": [
+          {
+            "k": "遊び",
+            "v": "剣玉・折り紙・だるま落とし"
+          },
+          {
+            "k": "衣装",
+            "v": "簡単な着物・法被の試着"
+          }
+        ]
+      },
+      {
+        "rank": "POINT 02",
+        "rankNum": 2,
+        "name": "隣家と壁を共有する「長屋」の建物",
+        "cuisine": "建物",
+        "area": "東山区",
+        "purpose": "建物の特徴を知りたい人へ",
+        "desc": "店舗は、隣家と壁を共有する「長屋」と呼ばれる伝統的な建物の中にある。長屋は、複数の住戸が一つにまとまった建物で、長屋が連なって細い路地を作る一角に位置している。古い日本家屋のため、入り口の戸は低く、階段もとても急な造りになっている。入り口の戸に頭をぶつけないよう、また階段の上り下りにも、注意が必要である。足を伸ばして座れる畳の部屋があり、靴を脱いで荷物を下ろしてから過ごす造りになっている。",
+        "images": [
+          "/_portal/vshops/tri-activity-114/g09.jpg"
+        ],
+        "specs": [
+          {
+            "k": "建物",
+            "v": "長屋(隣家と壁を共有)"
+          },
+          {
+            "k": "造り",
+            "v": "低い入り口・急な階段・畳の部屋"
+          }
+        ]
+      },
+      {
+        "rank": "POINT 03",
+        "rankNum": 3,
+        "name": "代表EMIKO OKUMURAと店名の由来",
+        "cuisine": "店について",
+        "area": "東山区",
+        "purpose": "運営者や店名の意味を知りたい人へ",
+        "desc": "代表はEMIKO OKUMURAさんで、保育士として長年働いていた。京都を訪れる人が伝統的な遊びを気軽に体験できる場所として、2024年10月1日に開業した。店名の「AriHana」は「ありがとうの花」を意味する言葉で、「ありがとう」は代表の好きな言葉である。事業内容は、伝統的な遊びの時間を体験するプロジェクトである。代表は海外旅行が好きで、訪れた国の文化を体験することを楽しんでいる。2026年10月11日には、開業2周年を迎えた。毎週土曜日には、西山旅館の宿泊者向けに伝統的な遊び体験も提供している。",
+        "images": [],
+        "specs": [
+          {
+            "k": "代表",
+            "v": "EMIKO OKUMURA"
+          },
+          {
+            "k": "開業日",
+            "v": "2024年10月1日"
+          }
+        ]
+      },
+      {
+        "rank": "POINT 04",
+        "rankNum": 4,
+        "name": "清水五条駅・七条駅からの行き方と営業時間",
+        "cuisine": "アクセス",
+        "area": "東山区",
+        "purpose": "行き方や営業時間を知りたい人へ",
+        "desc": "清水寺や三十三間堂、鴨川、京都国立博物館から徒歩圏内にある。京阪本線の清水五条駅から徒歩11分、七条駅から徒歩16分で、市バスの馬町バス停からは徒歩約2分、京阪バスの五条坂バス停からは徒歩約3分である。京都駅へは徒歩約29分である。専用の駐車場はなく、近くのコインパーキングを利用する。駐輪場は用意されている。営業は月曜と水曜から日曜の10時から18時で、火曜日は定休日である。予約はウェブサイトから行える。",
+        "images": [
+          "/_portal/vshops/tri-activity-114/s06.jpg"
+        ],
+        "specs": [
+          {
+            "k": "最寄り駅",
+            "v": "清水五条駅徒歩11分・七条駅徒歩16分"
+          },
+          {
+            "k": "営業時間",
+            "v": "月・水〜日 10:00–18:00(火曜定休)"
+          }
+        ]
+      }
+    ],
+    "sideArticles": [],
+    "quote": "AriHana Kyotoは、京都市東山区の長屋の中にある屋内の遊び場で、剣玉や折り紙、だるま落としなど、複数の伝統的な遊びを自由に体験できる。建物は隣家と壁を共有する長屋で、入り口の戸が低く、階段も急な造りになっている。",
+    "quoteCite": "マチノワ編集部",
+    "closing": "営業は月曜と水曜から日曜の10時から18時で、火曜日は定休日である。京阪本線の清水五条駅から徒歩11分、七条駅から徒歩16分で、専用の駐車場はないため、近くのコインパーキングを利用する。駐輪場は用意されている。予約はウェブサイトから行える。"
+  },
+  "summary": "京都市東山区の長屋にあるAriHana Kyotoの情報を整理。剣玉や折り紙など伝統的な遊びの体験、着物・法被での撮影、玩具作り・扇子作りのメニュー、長屋の建物の特徴と行き方をまとめた特集。",
+  "tags": [
+    "ものづくり体験",
+    "京都市"
+  ],
+  "charCount": 1249,
+  "facts": [
+    {
+      "claim": "家族向けの屋内の遊び場で、伝統的な日本文化を体験できる。",
+      "source": "https://arihana-kyoto.com/index_en.html",
+      "quote": "indoor play space in Kyoto",
+      "checkedAt": "2026-10-25"
+    },
+    {
+      "claim": "剣玉や折り紙などの伝統的な日本の遊びを自由に楽しめる。",
+      "source": "https://arihana-kyoto.com/index_en.html",
+      "quote": "Kendama and Origami",
+      "checkedAt": "2026-10-25"
+    },
+    {
+      "claim": "剣玉・折り紙・だるま落としなどの伝統的な遊びを体験できる。",
+      "source": "https://arihana-kyoto.com/index_en.html",
+      "quote": "Kendama, Origami, Daruma-drop",
+      "checkedAt": "2026-10-25"
+    },
+    {
+      "claim": "簡単な着物や法被を着て遊んだり写真を撮ったりできる。",
+      "source": "https://arihana-kyoto.com/index_en.html",
+      "quote": "simple kimonos or happi coats",
+      "checkedAt": "2026-10-25"
+    },
+    {
+      "claim": "玩具作りや扇子作りなどのオプションのメニューがある。",
+      "source": "https://arihana-kyoto.com/index_en.html",
+      "quote": "making toys and fans",
+      "checkedAt": "2026-10-25"
+    },
+    {
+      "claim": "授乳室とおむつ替えスペースがある。",
+      "source": "https://arihana-kyoto.com/index_en.html",
+      "quote": "nursing room and diaper",
+      "checkedAt": "2026-10-25"
+    },
+    {
+      "claim": "靴を脱いで荷物を下ろして過ごせる。",
+      "source": "https://arihana-kyoto.com/index_en.html",
+      "quote": "take off your shoes",
+      "checkedAt": "2026-10-25"
+    },
+    {
+      "claim": "店舗は隣家と壁を共有する「長屋」と呼ばれる建物にある。",
+      "source": "https://arihana-kyoto.com/en_aboutus/index.html",
+      "quote": "shares a wall with",
+      "checkedAt": "2026-10-25"
+    },
+    {
+      "claim": "階段がとても急な造りになっている。",
+      "source": "https://arihana-kyoto.com/en_aboutus/index.html",
+      "quote": "the stairs are very steep",
+      "checkedAt": "2026-10-25"
+    },
+    {
+      "claim": "足を伸ばして座れる畳の部屋がある。",
+      "source": "https://arihana-kyoto.com/en_aboutus/index.html",
+      "quote": "sit in a tatami room",
+      "checkedAt": "2026-10-25"
+    },
+    {
+      "claim": "代表者はEMIKO OKUMURA。",
+      "source": "https://arihana-kyoto.com/en_aboutus/index.html",
+      "quote": "EMIKO OKUMURA",
+      "checkedAt": "2026-10-25"
+    },
+    {
+      "claim": "開業日は2024年10月1日。",
+      "source": "https://arihana-kyoto.com/en_aboutus/index.html",
+      "quote": "October 1, 2024",
+      "checkedAt": "2026-10-25"
+    },
+    {
+      "claim": "代表は保育士として長年働いていた。",
+      "source": "https://arihana-kyoto.com/en_aboutus/index.html",
+      "quote": "nursery teacher for many years",
+      "checkedAt": "2026-10-25"
+    },
+    {
+      "claim": "清水寺・三十三間堂・鴨川・京都国立博物館から徒歩圏内にある。",
+      "source": "https://arihana-kyoto.com/en_access/index.html",
+      "quote": "Kiyomizu Temple, Sanjusangendo",
+      "checkedAt": "2026-10-25"
+    },
+    {
+      "claim": "京阪本線清水五条駅から徒歩11分。",
+      "source": "https://arihana-kyoto.com/index_en.html",
+      "quote": "11 min. walk from Kiyomizu",
+      "checkedAt": "2026-10-25"
+    },
+    {
+      "claim": "京阪本線七条駅から徒歩16分。",
+      "source": "https://arihana-kyoto.com/index_en.html",
+      "quote": "16 min. walk from Shichijo",
+      "checkedAt": "2026-10-25"
+    },
+    {
+      "claim": "専用の駐車場はない。",
+      "source": "https://arihana-kyoto.com/en_access/index.html",
+      "quote": "do not have a private parking",
+      "checkedAt": "2026-10-25"
+    },
+    {
+      "claim": "駐輪場がある。",
+      "source": "https://arihana-kyoto.com/en_access/index.html",
+      "quote": "Bicycle parking is available",
+      "checkedAt": "2026-10-25"
+    },
+    {
+      "claim": "営業は月・水〜日の10時から18時、火曜日は定休日。",
+      "source": "https://maps.google.com/?cid=8906768726769736500",
+      "quote": "10:00–18:00",
+      "checkedAt": "2026-10-25"
+    },
+    {
+      "claim": "長屋が連なって細い路地を作っている。",
+      "source": "https://arihana-kyoto.com/en_aboutus/index.html",
+      "quote": "forming narrow alleys",
+      "checkedAt": "2026-10-25"
+    },
+    {
+      "claim": "店名の「AriHana」は「ありがとうの花」を意味する。",
+      "source": "https://arihana-kyoto.com/en_aboutus/index.html",
+      "quote": "Arigatou no Hana",
+      "checkedAt": "2026-10-25"
+    },
+    {
+      "claim": "事業内容は伝統的な遊びの時間を体験するプロジェクト。",
+      "source": "https://arihana-kyoto.com/en_aboutus/index.html",
+      "quote": "the traditional playtime",
+      "checkedAt": "2026-10-25"
+    },
+    {
+      "claim": "入り口の戸に頭をぶつけないよう、階段の上り下りにも注意が必要。",
+      "source": "https://arihana-kyoto.com/en_aboutus/index.html",
+      "quote": "going up and down the stairs",
+      "checkedAt": "2026-10-25"
+    },
+    {
+      "claim": "長屋は複数の住戸が一つにまとまった建物である。",
+      "source": "https://arihana-kyoto.com/en_aboutus/index.html",
+      "quote": "several dwellings being",
+      "checkedAt": "2026-10-25"
+    },
+    {
+      "claim": "セルフサービスのドリンクのサービスがある。",
+      "source": "https://arihana-kyoto.com/index_en.html",
+      "quote": "Free drinks (self-service)",
+      "checkedAt": "2026-10-25"
+    },
+    {
+      "claim": "京都を訪れる人が伝統的な遊びを気軽に体験できる場所として開業した。",
+      "source": "https://arihana-kyoto.com/en_aboutus/index.html",
+      "quote": "easily experience the",
+      "checkedAt": "2026-10-25"
+    },
+    {
+      "claim": "毎週土曜日、西山旅館の宿泊者向けに伝統的な遊び体験を提供している。",
+      "source": "https://arihana-kyoto.com/event/en/traditional-japanese-play-experience-event-at-nishiyama-ryokan/",
+      "quote": "every Saturday",
+      "checkedAt": "2026-10-25"
+    },
+    {
+      "claim": "代表は海外旅行が好きで、訪れた国の文化を体験することを楽しんでいる。",
+      "source": "https://arihana-kyoto.com/en_aboutus/index.html",
+      "quote": "enjoy traveling abroad",
+      "checkedAt": "2026-10-25"
+    },
+    {
+      "claim": "2026年10月11日に開業2周年を迎えた。",
+      "source": "https://arihana-kyoto.com/index_en.html",
+      "quote": "2nd Anniversary",
+      "checkedAt": "2026-10-25"
+    },
+    {
+      "claim": "「ありがとう」は代表の好きな言葉である。",
+      "source": "https://arihana-kyoto.com/en_aboutus/index.html",
+      "quote": "favorite word",
+      "checkedAt": "2026-10-25"
+    },
+    {
+      "claim": "市バス馬町バス停から徒歩約2分。",
+      "source": "https://arihana-kyoto.com/index_en.html",
+      "quote": "Umamachi bus stop",
+      "checkedAt": "2026-10-25"
+    },
+    {
+      "claim": "京阪バス五条坂バス停から徒歩約3分。",
+      "source": "https://arihana-kyoto.com/index_en.html",
+      "quote": "Gojozaka bus stop",
+      "checkedAt": "2026-10-25"
+    },
+    {
+      "claim": "京都駅へは徒歩約29分。",
+      "source": "https://arihana-kyoto.com/en_access/index.html",
+      "quote": "29minutes on foot",
+      "checkedAt": "2026-10-25"
+    },
+    {
+      "claim": "予約はウェブサイトから行える。",
+      "source": "https://arihana-kyoto.com/index_en.html",
+      "quote": "You can book your spot",
+      "checkedAt": "2026-10-25"
+    }
+  ],
+  "images": [
+    {
+      "path": "/_portal/vshops/tri-activity-114/g01.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9S4tRMHUsPGd_Jbfd7xDBi2YbS0Cr9Ej3-2S-3GzhnGkN9DZJcaMeGibV6qZZZkspmLMLPwGffDGXti-RtBeNMdH9NOYrBjWVi31GT7Ji9id0mnaiVT1rutHBHKuZTh_82FG7gMIK1cYhAp=s1200",
+      "pageUrl": "https://maps.google.com/?cid=8906768726769736500",
+      "what": "観葉植物と暖簾のある店の入り口"
+    },
+    {
+      "path": "/_portal/vshops/tri-activity-114/g05.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9T1zwEga8hJi0qrWEGLLgMwfyrZc2H7gHw6FiS9H2HzDgf6n3SafIfh6LAUTBdXLMf5dSLYXKVlStjwg0obSf_urcCyOImMnUmplnrHoMHMF73IMV5qd3NhH9KSWWgwl9KfMIn9tNkLX9WJ=s1200",
+      "pageUrl": "https://maps.google.com/?cid=8906768726769736500",
+      "what": "折り紙で作った鶴や花などの作品"
+    },
+    {
+      "path": "/_portal/vshops/tri-activity-114/g06.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9RGd36GoBtgh8Z8tbVitzNTvX4O6KrQdiGoYi-kzSUROpa8MNJD3UtFbWr5dZyOkcoN8MmLj8_XUdps9g8suxx_3MY5Qc_u96qkPW7262TpkVXQmeHPCC9sUTOB5UNUz_f2p1CjLhqxpY9U=s1200",
+      "pageUrl": "https://maps.google.com/?cid=8906768726769736500",
+      "what": "お面と着物のような衣装をまとった人物2人"
+    },
+    {
+      "path": "/_portal/vshops/tri-activity-114/g07.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9T9WpUUmYZ1_e2d7YiBZq5ClGXjx8jEywFX1dstJqLyTbjco0O3jGy__KA6TZGcx97xM290BgLTws5WTBo8Yg6lvwTl8OfnftOX-_MCK_jaXI-2jiUzCit5Wt0Xd7w4fvRVxXDgq7N3FNWE=s1200",
+      "pageUrl": "https://maps.google.com/?cid=8906768726769736500",
+      "what": "低いテーブルを囲んで座る大人と子ども"
+    },
+    {
+      "path": "/_portal/vshops/tri-activity-114/g08.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9TYpEQ9bihKjVzDxkmJOTlvbniGTqzcL84mgP1aYkfcwfgjH2g9IUw3wTrSWvQKDSWeHduhHuc5LD9Lj_VUtBOZQBq2zl0rP-ffxwSr_t0i9z81Ut7GPEohB_Ls6rJaAuIEUAohn3hi9zg=s1200",
+      "pageUrl": "https://maps.google.com/?cid=8906768726769736500",
+      "what": "低いテーブルで玩具を使って遊ぶ様子"
+    },
+    {
+      "path": "/_portal/vshops/tri-activity-114/g09.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9RxswSAArsjcmfQrigmyX4k8MD6m0cqYGNZJh5hcSB9sbbQd_rMhFOjLR7nv7TSYq2iLmFQurHXmGwF3Uev6IEeWGsW0O0ZX0HE9gSuj-Fsh3_DXtcihlcerPUf0rKUS3KvZCjk=s1200",
+      "pageUrl": "https://maps.google.com/?cid=8906768726769736500",
+      "what": "格子戸と青いタイル張りの建物外観"
+    },
+    {
+      "path": "/_portal/vshops/tri-activity-114/g10.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9SPJoCI3FKaTMyo8DfwMDBYlgoaKomvD3KweLWAja280IJ_68X4Upl6PKkxZ_1EVmye5FIz0SnHlvcNkkPpW4VH_z5o2gcgvyRd-KsI5EXsEjESRYOPQ5fvlwGwSZftmVJMtPoI4YcChTg5=s1200",
+      "pageUrl": "https://maps.google.com/?cid=8906768726769736500",
+      "what": "畳の部屋に立つ人物2人"
+    },
+    {
+      "path": "/_portal/vshops/tri-activity-114/s04.jpg",
+      "imageUrl": "https://arihana-kyoto.com/top_images/slider02.jpg",
+      "pageUrl": "https://arihana-kyoto.com/index_en.html",
+      "what": "剣玉やコマ、折り紙が並ぶテーブル"
+    },
+    {
+      "path": "/_portal/vshops/tri-activity-114/s05.jpg",
+      "imageUrl": "https://arihana-kyoto.com/top_images/slider03.jpg",
+      "pageUrl": "https://arihana-kyoto.com/index_en.html",
+      "what": "テーブルで手を動かす子ども"
+    },
+    {
+      "path": "/_portal/vshops/tri-activity-114/s06.jpg",
+      "imageUrl": "https://arihana-kyoto.com/top_images/slider04.jpg",
+      "pageUrl": "https://arihana-kyoto.com/index_en.html",
+      "what": "格子戸の建物の正面"
+    }
+  ],
+  "sources": [
+    {
+      "label": "公式サイト(トップ)",
+      "url": "https://arihana-kyoto.com/index_en.html"
+    },
+    {
+      "label": "公式サイト(About Us)",
+      "url": "https://arihana-kyoto.com/en_aboutus/index.html"
+    },
+    {
+      "label": "公式サイト(Access)",
+      "url": "https://arihana-kyoto.com/en_access/index.html"
+    },
+    {
+      "label": "公式サイト(イベント)",
+      "url": "https://arihana-kyoto.com/event/en/traditional-japanese-play-experience-event-at-nishiyama-ryokan/"
+    },
+    {
+      "label": "Google マップ",
+      "url": "https://maps.google.com/?cid=8906768726769736500"
+    }
+  ],
+  "notes": "automation/v2/write.mjs が 2026-10-25 に作成。"
+}

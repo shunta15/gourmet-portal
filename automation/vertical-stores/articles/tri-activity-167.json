@@ -1,0 +1,224 @@
+{
+  "key": "tri-activity-167",
+  "headline": "静岡県伊東市富戸、富戸港の目の前にあるダイビングショップ。体験ダイビングとスノーケリングを扱う",
+  "lede": "伊東市富戸にある「ダイブ＆ハウス富戸」です。富戸港の目の前、ビーチまで徒歩10秒の場所にあり、体験ダイビングとスノーケリングを行っています。施設の多くはスタッフの手作りで、休憩スペースのほかプライベートの温泉も備えています。",
+  "sections": [
+    {
+      "heading": "体験ダイビングの内容",
+      "body": "体験ダイビングは少人数制のガイドで、経験豊富なインストラクターが丁寧にサポートします。浅いエリアから始め、呼吸や耳抜きの練習をしたうえで海へ出ます。対象年齢は10歳(小学5年生)以上で、16歳未満は保護者の同伴が必要です。お子様からご年配の方まで楽しめるスノーケリングも扱っています。"
+    },
+    {
+      "heading": "施設と温泉",
+      "body": "店は富戸港の目の前にあり、ビーチまでは徒歩10秒です。施設の多くはスタッフの手作りで、冷暖房完備の休憩スペースと、大人4人が入れる広さの源泉掛け流しの温泉を備えています。ダイビングポイント「ヨコバマ」までは徒歩1分、屋根付きの器材干し場もあります。"
+    },
+    {
+      "heading": "集合とアクセス",
+      "body": "電車の場合は富戸駅に8時34分着の電車で来ると、予約のうえスタッフが駅まで送迎します。体験ダイビングは夏タイムが5月16日から9月14日、冬タイムが9月15日から5月15日で、雨天決行です。営業時間は毎日8時から18時です。"
+    },
+    {
+      "heading": "参加できる方・持ち物",
+      "body": "お持ち物は水着だけで、タオルやサンダルは店で用意しています。夏場はウェットスーツ、冬場はドライスーツを使用します。対象年齢は10歳(小学5年生)以上で、16歳未満は保護者の同伴、18歳未満は保護者の同意が必要です。65歳以上の方は医師の診断書が必要です。"
+    }
+  ],
+  "menus": [
+    {
+      "name": "体験ダイビング"
+    },
+    {
+      "name": "スノーケリング"
+    }
+  ],
+  "tags": [
+    {
+      "tag": "手ぶらでOK",
+      "factIndex": 9
+    },
+    {
+      "tag": "初心者歓迎",
+      "factIndex": 12
+    },
+    {
+      "tag": "子連れ",
+      "factIndex": 11
+    },
+    {
+      "tag": "雨の日",
+      "factIndex": 13
+    }
+  ],
+  "facts": [
+    {
+      "claim": "営業は毎日8時から18時",
+      "source": "https://maps.google.com/?cid=8052179356069506109",
+      "quote": "08:00–18:00",
+      "checkedAt": "2026-10-25"
+    },
+    {
+      "claim": "店は富戸港の目の前、ビーチまで徒歩10秒",
+      "source": "http://xn--eckya9b6d1h.biz/divehousefuto/",
+      "quote": "お店は富戸港の目の前、ビーチまでは徒歩10秒",
+      "checkedAt": "2026-10-25"
+    },
+    {
+      "claim": "施設の多くをスタッフが手作り",
+      "source": "http://xn--eckya9b6d1h.biz/divehousefuto/",
+      "quote": "施設のほとんどをスタッフが手作りしており",
+      "checkedAt": "2026-10-25"
+    },
+    {
+      "claim": "休憩スペースのほかプライベートの温泉がある",
+      "source": "http://xn--eckya9b6d1h.biz/divehousefuto/",
+      "quote": "プライベートの温泉も兼ね備えています",
+      "checkedAt": "2026-10-25"
+    },
+    {
+      "claim": "体験ダイビングは少人数制のガイドで案内",
+      "source": "http://xn--eckya9b6d1h.biz/divehousefuto/",
+      "quote": "少人数制のガイドで",
+      "checkedAt": "2026-10-25"
+    },
+    {
+      "claim": "気軽に楽しめるスノーケリングも扱う",
+      "source": "http://xn--eckya9b6d1h.biz/divehousefuto/",
+      "quote": "気軽に海を楽しめるスノーケリング",
+      "checkedAt": "2026-10-25"
+    },
+    {
+      "claim": "ダイビングポイント「ヨコバマ」まで徒歩1分",
+      "source": "http://xn--eckya9b6d1h.biz/divehousefuto/shisetsu.html",
+      "quote": "人気のヨコバマビーチまでは徒歩1分",
+      "checkedAt": "2026-10-25"
+    },
+    {
+      "claim": "源泉掛け流しの温泉は大人4人が入れる広さ",
+      "source": "http://xn--eckya9b6d1h.biz/divehousefuto/shisetsu.html",
+      "quote": "源泉掛け流し温泉！大人４人でも入れる広さ",
+      "checkedAt": "2026-10-25"
+    },
+    {
+      "claim": "屋根付きの器材干し場がある",
+      "source": "http://xn--eckya9b6d1h.biz/divehousefuto/shisetsu.html",
+      "quote": "屋根付き器材干場",
+      "checkedAt": "2026-10-25"
+    },
+    {
+      "claim": "体験ダイビングは水着１枚で手ぶらでOK",
+      "source": "http://xn--eckya9b6d1h.biz/divehousefuto/taiken.html",
+      "quote": "水着１枚！手ぶらでOK",
+      "checkedAt": "2026-10-25"
+    },
+    {
+      "claim": "体験ダイビングの対象年齢は10歳(小学5年生)以上",
+      "source": "http://xn--eckya9b6d1h.biz/divehousefuto/taiken.html",
+      "quote": "対象年齢：10 歳（小学5年生）以上",
+      "checkedAt": "2026-10-25"
+    },
+    {
+      "claim": "16歳未満は保護者の同伴が必要",
+      "source": "http://xn--eckya9b6d1h.biz/divehousefuto/taiken.html",
+      "quote": "16歳未満は必ず保護者もご一緒に",
+      "checkedAt": "2026-10-25"
+    },
+    {
+      "claim": "初めての方でも安心して参加できる",
+      "source": "http://xn--eckya9b6d1h.biz/divehousefuto/",
+      "quote": "初めての方でも安心",
+      "checkedAt": "2026-10-25"
+    },
+    {
+      "claim": "体験ダイビングは雨天決行",
+      "source": "http://xn--eckya9b6d1h.biz/divehousefuto/taiken.html",
+      "quote": "雨天決行",
+      "checkedAt": "2026-10-25"
+    },
+    {
+      "claim": "経験豊富なインストラクターが丁寧にサポート",
+      "source": "http://xn--eckya9b6d1h.biz/divehousefuto/taiken.html",
+      "quote": "経験豊富なインストラクターが優しく丁寧にサポート",
+      "checkedAt": "2026-10-25"
+    },
+    {
+      "claim": "夏の体験ダイビングは5月16日から9月14日",
+      "source": "http://xn--eckya9b6d1h.biz/divehousefuto/taiken.html",
+      "quote": "夏タイム：5/16〜9/14",
+      "checkedAt": "2026-10-25"
+    },
+    {
+      "claim": "冬の体験ダイビングは9月15日から5月15日",
+      "source": "http://xn--eckya9b6d1h.biz/divehousefuto/taiken.html",
+      "quote": "冬タイム：9/15〜5/15",
+      "checkedAt": "2026-10-25"
+    },
+    {
+      "claim": "電車は富戸駅に8時34分着の電車を利用すると送迎を受けられる",
+      "source": "http://xn--eckya9b6d1h.biz/divehousefuto/taiken.html",
+      "quote": "電車でお越しのお客様は８：３４富戸駅着",
+      "checkedAt": "2026-10-25"
+    },
+    {
+      "claim": "持ち物は水着だけでよい",
+      "source": "http://xn--eckya9b6d1h.biz/divehousefuto/taiken.html",
+      "quote": "お持ち物は水着だけ",
+      "checkedAt": "2026-10-25"
+    },
+    {
+      "claim": "夏場はウェットスーツ、冬場はドライスーツを使用",
+      "source": "http://xn--eckya9b6d1h.biz/divehousefuto/taiken.html",
+      "quote": "夏場はウェットスーツ、冬場はドライスーツ",
+      "checkedAt": "2026-10-25"
+    },
+    {
+      "claim": "18歳未満は保護者の同意が必要",
+      "source": "http://xn--eckya9b6d1h.biz/divehousefuto/taiken.html",
+      "quote": "18歳未満は保護者の同意が必要",
+      "checkedAt": "2026-10-25"
+    },
+    {
+      "claim": "65歳以上は医師の診断書が必要",
+      "source": "http://xn--eckya9b6d1h.biz/divehousefuto/taiken.html",
+      "quote": "65歳以上の方はお医者様の診断書のご用意",
+      "checkedAt": "2026-10-25"
+    },
+    {
+      "claim": "代表は伊豆半島ジオパークガイドの資格を持つ",
+      "source": "http://xn--eckya9b6d1h.biz/divehousefuto/staff.html",
+      "quote": "伊豆半島ジオパークガイド",
+      "checkedAt": "2026-10-25"
+    },
+    {
+      "claim": "水中で撮影した写真・動画は当日中に渡される",
+      "source": "http://xn--eckya9b6d1h.biz/divehousefuto/taiken.html",
+      "quote": "当日中にお渡ししております",
+      "checkedAt": "2026-10-25"
+    },
+    {
+      "claim": "更衣室は冷暖房完備",
+      "source": "http://xn--eckya9b6d1h.biz/divehousefuto/taiken.html",
+      "quote": "更衣室は冷暖房完備",
+      "checkedAt": "2026-10-25"
+    }
+  ],
+  "sources": [
+    {
+      "label": "公式サイト",
+      "url": "http://xn--eckya9b6d1h.biz/divehousefuto/"
+    },
+    {
+      "label": "公式サイト(施設紹介)",
+      "url": "http://xn--eckya9b6d1h.biz/divehousefuto/shisetsu.html"
+    },
+    {
+      "label": "公式サイト(スタッフ紹介)",
+      "url": "http://xn--eckya9b6d1h.biz/divehousefuto/staff.html"
+    },
+    {
+      "label": "公式サイト(体験ダイビング)",
+      "url": "http://xn--eckya9b6d1h.biz/divehousefuto/taiken.html"
+    },
+    {
+      "label": "Google マップ",
+      "url": "https://maps.google.com/?cid=8052179356069506109"
+    }
+  ],
+  "notes": "automation/v2/write.mjs が 2026-10-25 に claude -p --model sonnet で作成。事実の裏取り: 25/25 件(quote が出どころにあるもの)。裏取りに通らなかった facts は載せていない。"
+}

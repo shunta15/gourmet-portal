@@ -1,0 +1,195 @@
+{
+  "key": "tri-stay-122",
+  "headline": "京都府与謝野町のちりめん街道にある、明治23年創業の料理旅館。客室は和室が中心で、一棟貸切の古民家や明治期の離れもある。",
+  "lede": "与謝郡与謝野町にある「旬魚と地どりの宿 料理旅館井筒屋」です。明治23年創業で、一日3組だけの小さな旅館です。食事は全室個室で出されます。",
+  "sections": [
+    {
+      "heading": "場所と予約",
+      "body": "住所は京都府与謝郡与謝野町加悦1050番地、電話は0772-42-2012です。最寄りはKTR与謝野駅で、バスで約20分かかります。チェックインは16時から、チェックアウトは10時までです。駐車場とWiFiが使えます。"
+    },
+    {
+      "heading": "客室",
+      "body": "客室は和室が中心です。中庭と五右衛門風呂がある明治期の離れ「小濱」、築約100年の一棟貸切古民家「赤野邸」、三間続きの和室がある昭和の大広間「旧館22畳」、わんこ同伴で1フロアを貸し切れる別館離れなどがあります。"
+    },
+    {
+      "heading": "食事",
+      "body": "食事は会席料理です。炭火焼きを使う会席や、自家飼育の地どりを使った昼の会席があります。炭火会席の営業時間は18時から22時まで、昼のガラ焼き御膳の営業時間は12時から14時までです。"
+    },
+    {
+      "heading": "子ども連れ・ペットについて",
+      "body": "食事をとる部屋は全室個室で、子ども連れやわんこ同伴でも泊まれます。別館離れはわんこ同伴で1フロアを貸し切れるプランがあります。昭和の大広間「旧館22畳」の和室はペット不可です。"
+    }
+  ],
+  "rooms": [
+    {
+      "name": "明治の離れ・小濱"
+    },
+    {
+      "name": "一棟貸切古民家「赤野邸」"
+    },
+    {
+      "name": "昭和の大広間 旧館22畳"
+    },
+    {
+      "name": "別館離れ"
+    }
+  ],
+  "menus": [
+    {
+      "name": "マッチョ京地どりガラ焼き御膳"
+    },
+    {
+      "name": "医食同源・炭火会席"
+    },
+    {
+      "name": "マッチョ京地どり里山会席"
+    },
+    {
+      "name": "医食同源・火入れ会席"
+    },
+    {
+      "name": "ご法要会席・季節のおもてなし会席"
+    }
+  ],
+  "tags": [
+    {
+      "tag": "ペット同伴",
+      "factIndex": 9
+    }
+  ],
+  "facts": [
+    {
+      "claim": "創業は明治23年",
+      "source": "http://www.chirimenkaido-idutsuya.jp/",
+      "quote": "創業明治23年",
+      "checkedAt": "2026-10-25"
+    },
+    {
+      "claim": "チェックインは16時から",
+      "source": "http://www.chirimenkaido-idutsuya.jp/",
+      "quote": "チェックイン 16：00～",
+      "checkedAt": "2026-10-25"
+    },
+    {
+      "claim": "チェックアウトは10時まで",
+      "source": "http://www.chirimenkaido-idutsuya.jp/",
+      "quote": "チェックアウト ～10：00",
+      "checkedAt": "2026-10-25"
+    },
+    {
+      "claim": "住所は京都府与謝郡与謝野町加悦1050番地",
+      "source": "http://www.chirimenkaido-idutsuya.jp/",
+      "quote": "加悦1050番地",
+      "checkedAt": "2026-10-25"
+    },
+    {
+      "claim": "無料WiFiがある",
+      "source": "http://www.chirimenkaido-idutsuya.jp/",
+      "quote": "無料WiFi有り",
+      "checkedAt": "2026-10-25"
+    },
+    {
+      "claim": "無料駐車場がある",
+      "source": "http://www.chirimenkaido-idutsuya.jp/",
+      "quote": "無料駐車場有り",
+      "checkedAt": "2026-10-25"
+    },
+    {
+      "claim": "最寄り駅はKTR与謝野駅でバスで約20分",
+      "source": "http://www.chirimenkaido-idutsuya.jp/",
+      "quote": "KTR与謝野駅（バスで約20分）",
+      "checkedAt": "2026-10-25"
+    },
+    {
+      "claim": "一日3組だけの小さな旅館",
+      "source": "http://www.chirimenkaido-idutsuya.jp/",
+      "quote": "一日3組だけの小さな旅館なので",
+      "checkedAt": "2026-10-25"
+    },
+    {
+      "claim": "食事は全室個室で出される",
+      "source": "https://www.chirimenkaido-idutsuya.jp/food",
+      "quote": "お食事は全室個室なので",
+      "checkedAt": "2026-10-25"
+    },
+    {
+      "claim": "子ども連れやわんこ同伴でも泊まれる",
+      "source": "https://www.chirimenkaido-idutsuya.jp/food",
+      "quote": "子ども連れやわんこ同伴でも気楽に楽しめる",
+      "checkedAt": "2026-10-25"
+    },
+    {
+      "claim": "地どりを自家飼育している",
+      "source": "https://www.chirimenkaido-idutsuya.jp/food",
+      "quote": "自ら地どりを育てています",
+      "checkedAt": "2026-10-25"
+    },
+    {
+      "claim": "炭火会席は夜限定",
+      "source": "https://www.chirimenkaido-idutsuya.jp/food",
+      "quote": "炭火会席は夜限定になります",
+      "checkedAt": "2026-10-25"
+    },
+    {
+      "claim": "炭火会席の営業時間は18時から22時まで",
+      "source": "https://www.chirimenkaido-idutsuya.jp/food",
+      "quote": "夜の営業時間 18：00～22：00（LO21：30）",
+      "checkedAt": "2026-10-25"
+    },
+    {
+      "claim": "昼のガラ焼き御膳の営業時間は12時から14時まで",
+      "source": "https://www.chirimenkaido-idutsuya.jp/food",
+      "quote": "昼の営業時間 12：00～14：00（LO13：30）",
+      "checkedAt": "2026-10-25"
+    },
+    {
+      "claim": "明治期の離れ「小濱」には中庭と五右衛門風呂がある",
+      "source": "https://www.chirimenkaido-idutsuya.jp/about",
+      "quote": "明治の離れ・小濱。中庭と五右衛門風呂を愛でる。",
+      "checkedAt": "2026-10-25"
+    },
+    {
+      "claim": "築約100年の一棟貸切古民家「赤野邸」がある",
+      "source": "https://www.chirimenkaido-idutsuya.jp/about",
+      "quote": "築約100年 一棟貸切古民家「赤野邸」",
+      "checkedAt": "2026-10-25"
+    },
+    {
+      "claim": "昭和の大広間「旧館22畳」は三間続きの和室でペット不可",
+      "source": "https://www.chirimenkaido-idutsuya.jp/about",
+      "quote": "昭和の大広間 旧館22畳｜三間続き和室・ペット不可",
+      "checkedAt": "2026-10-25"
+    },
+    {
+      "claim": "別館離れはわんこ同伴で1フロアを貸し切れる",
+      "source": "https://www.chirimenkaido-idutsuya.jp/about",
+      "quote": "わんこOK！別館離れ１フロア貸切プランのご案内",
+      "checkedAt": "2026-10-25"
+    },
+    {
+      "claim": "駐車場は井筒屋から徒歩2分",
+      "source": "https://www.chirimenkaido-idutsuya.jp/about",
+      "quote": "井筒屋から徒歩２分、スーパーにしがき向かい側の無料駐車場をご利用いただけます。",
+      "checkedAt": "2026-10-25"
+    }
+  ],
+  "sources": [
+    {
+      "label": "公式サイト",
+      "url": "http://www.chirimenkaido-idutsuya.jp/"
+    },
+    {
+      "label": "公式サイト(アクセス)",
+      "url": "https://www.chirimenkaido-idutsuya.jp/about"
+    },
+    {
+      "label": "公式サイト(お料理)",
+      "url": "https://www.chirimenkaido-idutsuya.jp/food"
+    },
+    {
+      "label": "Google マップ",
+      "url": "https://maps.google.com/?cid=14080703440525588483"
+    }
+  ],
+  "notes": "automation/v2/write.mjs が 2026-10-25 に claude -p --model sonnet で作成。事実の裏取り: 19/19 件(quote が出どころにあるもの)。裏取りに通らなかった facts は載せていない。"
+}
