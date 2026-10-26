@@ -3,8 +3,8 @@
     "date": "2026-10-26",
     "startedAt": "2026-10-26T06:12:17.040Z",
     "verifyFile": "automation/v2/out/verify-2026-10-26.json",
-    "args": "--only-row 84,143",
-    "updatedAt": "2026-10-26T09:20:09.654Z"
+    "args": "--only-row 219,227,229",
+    "updatedAt": "2026-10-26T10:08:04.103Z"
   },
   "environment": null,
   "results": {
@@ -2350,6 +2350,123 @@
         "article": "/stay/article/st0015"
       },
       "finishedAt": "2026-10-26T08:57:31.846Z"
+    },
+    "tri-gourmet-219": {
+      "key": "tri-gourmet-219",
+      "row": 219,
+      "name": "北沢三丁目",
+      "vertical": "グルメ",
+      "articleId": "やき鳥ツギノキタザワ",
+      "status": "成功",
+      "stage": "done",
+      "startedAt": "2026-10-26T09:59:33.808Z",
+      "seconds": {
+        "total": 1
+      },
+      "photos": {
+        "candidates": 10,
+        "maps": 10,
+        "official": 0,
+        "rejectedByMachine": 0,
+        "used": 3,
+        "emptyFrames": 1
+      },
+      "check": {
+        "rewrote": false,
+        "shapeProblems": [],
+        "sentenceProblems": 0,
+        "facts": {
+          "total": 6,
+          "verified": 6
+        }
+      },
+      "storeId": "r733",
+      "onePage": "表に追加(/feature/<記事ID> は /restaurant/<店ID> へ転送)",
+      "storeBuilt": true,
+      "storeNote": null,
+      "urls": {
+        "article": "/feature/やき鳥ツギノキタザワ",
+        "shop": "/restaurant/r733"
+      },
+      "finishedAt": "2026-10-26T10:07:00.852Z"
+    },
+    "tri-life-227": {
+      "key": "tri-life-227",
+      "row": 227,
+      "name": "雲仙湯せんぺい 遠江屋本舗",
+      "vertical": "くらし",
+      "status": "成功",
+      "stage": "done",
+      "startedAt": "2026-10-26T10:00:05.362Z",
+      "seconds": {
+        "total": 0
+      },
+      "photos": {
+        "candidates": 22,
+        "maps": 10,
+        "official": 12,
+        "rejectedByMachine": 6,
+        "used": 18,
+        "emptyFrames": 0
+      },
+      "check": {
+        "rewrote": false,
+        "shapeProblems": [],
+        "sentenceProblems": 0,
+        "facts": {
+          "total": 16,
+          "verified": 15
+        }
+      },
+      "memo": "裏取りに通らない facts 1 件は載せていない",
+      "placeId": "li0046",
+      "featureInGenerated": false,
+      "featureNote": null,
+      "urls": {
+        "shop": "/life/shop/li0046",
+        "article": "/life/article/li0046"
+      },
+      "finishedAt": "2026-10-26T10:07:01.151Z"
+    },
+    "tri-gourmet-229": {
+      "key": "tri-gourmet-229",
+      "row": 229,
+      "name": "ビア酒場　生",
+      "vertical": "グルメ",
+      "articleId": "生",
+      "status": "成功",
+      "stage": "done",
+      "startedAt": "2026-10-26T10:01:16.894Z",
+      "seconds": {
+        "total": 63,
+        "claude": 62
+      },
+      "photos": {
+        "candidates": 10,
+        "maps": 10,
+        "official": 0,
+        "rejectedByMachine": 18,
+        "used": 4,
+        "emptyFrames": 2
+      },
+      "check": {
+        "rewrote": true,
+        "shapeProblems": [],
+        "sentenceProblems": 0,
+        "facts": {
+          "total": 24,
+          "verified": 24
+        }
+      },
+      "storeId": "r734",
+      "onePage": "表に追加(/feature/<記事ID> は /restaurant/<店ID> へ転送)",
+      "storeBuilt": true,
+      "storeNote": null,
+      "urls": {
+        "article": "/feature/生",
+        "shop": "/restaurant/r734"
+      },
+      "finishedAt": "2026-10-26T10:08:04.102Z"
     }
   }
 }

@@ -7127,6 +7127,240 @@
         ],
         "checkedAt": "2026-10-26"
       }
+    },
+    {
+      "id": "li0046",
+      "vertical": "life",
+      "category": "fashion-craft",
+      "name": "雲仙湯せんぺい 遠江屋 (とおとうみや) 本舗",
+      "pref": "nagasaki",
+      "cityName": "雲仙市",
+      "address": "長崎県雲仙市小浜町雲仙317",
+      "lat": 32.7420472,
+      "lng": 130.2607269,
+      "hours": "月-水金-日 08:30 - 19:00",
+      "holidays": "木曜",
+      "phone": "0957-73-2155",
+      "url": "https://tohtoumiya.theshop.jp/",
+      "website": "https://tohtoumiya.theshop.jp/",
+      "mapUrl": "https://maps.google.com/?cid=81602590403749157",
+      "image": "/_portal/vshops/tri-life-227/g01.jpg",
+      "images": [
+        "/_portal/vshops/tri-life-227/g01.jpg",
+        "/_portal/vshops/tri-life-227/g02.jpg",
+        "/_portal/vshops/tri-life-227/g04.jpg",
+        "/_portal/vshops/tri-life-227/g05.jpg",
+        "/_portal/vshops/tri-life-227/g06.jpg",
+        "/_portal/vshops/tri-life-227/g07.jpg",
+        "/_portal/vshops/tri-life-227/g09.jpg",
+        "/_portal/vshops/tri-life-227/g10.jpg",
+        "/_portal/vshops/tri-life-227/s03.jpg",
+        "/_portal/vshops/tri-life-227/s05.jpg",
+        "/_portal/vshops/tri-life-227/s06.jpg",
+        "/_portal/vshops/tri-life-227/s07.jpg",
+        "/_portal/vshops/tri-life-227/s08.jpg",
+        "/_portal/vshops/tri-life-227/s09.jpg",
+        "/_portal/vshops/tri-life-227/s10.jpg",
+        "/_portal/vshops/tri-life-227/s12.jpg",
+        "/_portal/vshops/tri-life-227/s17.jpg",
+        "/_portal/vshops/tri-life-227/s18.jpg"
+      ],
+      "photos": [
+        {
+          "path": "/_portal/vshops/tri-life-227/g01.jpg",
+          "what": "格子戸と商品棚が見える店の入り口",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 675
+        },
+        {
+          "path": "/_portal/vshops/tri-life-227/g02.jpg",
+          "what": "焼き型で湯せんぺいを一枚ずつ焼く職人の手元",
+          "kind": "common",
+          "width": 1200,
+          "height": 675
+        },
+        {
+          "path": "/_portal/vshops/tri-life-227/g04.jpg",
+          "what": "値札とともに商品が並ぶレジカウンター周辺",
+          "kind": "common",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-life-227/g05.jpg",
+          "what": "黒い外壁の建物が通りの角に立つ外観",
+          "kind": "exterior",
+          "width": 960,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-life-227/g06.jpg",
+          "what": "黒板の案内板と商品棚がある店内",
+          "kind": "common",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-life-227/g07.jpg",
+          "what": "丸い湯せんぺいをトングでつまむ接写",
+          "kind": "meal",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-life-227/g09.jpg",
+          "what": "抹茶色のソフトクリームを手に持つ接写",
+          "kind": "meal",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-life-227/g10.jpg",
+          "what": "白壁に「湯せんぺい」の文字看板がある三階建ての外観",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-life-227/s03.jpg",
+          "what": "化粧箱に個包装の菓子が並ぶ詰め合わせ",
+          "kind": "meal",
+          "width": 640,
+          "height": 480
+        },
+        {
+          "path": "/_portal/vshops/tri-life-227/s05.jpg",
+          "what": "個包装のせんぺいと円筒形の缶",
+          "kind": "meal",
+          "width": 640,
+          "height": 427
+        },
+        {
+          "path": "/_portal/vshops/tri-life-227/s06.jpg",
+          "what": "個包装のせんぺいと模様入りの六角形の箱",
+          "kind": "meal",
+          "width": 640,
+          "height": 427
+        },
+        {
+          "path": "/_portal/vshops/tri-life-227/s07.jpg",
+          "what": "個包装のせんぺいと化粧箱",
+          "kind": "meal",
+          "width": 640,
+          "height": 427
+        },
+        {
+          "path": "/_portal/vshops/tri-life-227/s08.jpg",
+          "what": "個包装のせんぺいと縦長の化粧箱",
+          "kind": "meal",
+          "width": 640,
+          "height": 427
+        },
+        {
+          "path": "/_portal/vshops/tri-life-227/s09.jpg",
+          "what": "個包装のせんぺいとやや大きめの化粧箱",
+          "kind": "meal",
+          "width": 640,
+          "height": 427
+        },
+        {
+          "path": "/_portal/vshops/tri-life-227/s10.jpg",
+          "what": "黒い皿に並ぶ俵形の焼き菓子",
+          "kind": "meal",
+          "width": 640,
+          "height": 427
+        },
+        {
+          "path": "/_portal/vshops/tri-life-227/s12.jpg",
+          "what": "黒い皿に並ぶ二切れの羊羹",
+          "kind": "meal",
+          "width": 640,
+          "height": 427
+        },
+        {
+          "path": "/_portal/vshops/tri-life-227/s17.jpg",
+          "what": "白いクリームを挟んだ丸いウエハース菓子",
+          "kind": "meal",
+          "width": 640,
+          "height": 427
+        },
+        {
+          "path": "/_portal/vshops/tri-life-227/s18.jpg",
+          "what": "緑色のクリームを挟んだ丸いウエハース菓子",
+          "kind": "meal",
+          "width": 640,
+          "height": 427
+        }
+      ],
+      "tags": [],
+      "article": {
+        "headline": "長崎県雲仙市小浜町雲仙にある土産物店。明治初期創業で、一丁型の金型で一枚ずつ焼く「純一枚手焼き製法」を今も続ける",
+        "lede": "雲仙市にある「雲仙湯せんぺい 遠江屋 (とおとうみや) 本舗」です。明治初期、木賃宿として創業し、昭和20年代に土産品店を開業、ほどなく湯せんぺいの製造を始めました。現在も一丁型の金型で一枚ずつ焼く「純一枚手焼き製法」を続けています。",
+        "sections": [
+          {
+            "heading": "場所と営業時間",
+            "body": "正式名称は「雲仙温泉 遠江屋本舗」で、長崎県雲仙市小浜町雲仙317にあります。電話番号は0957-73-2155です。営業は木曜定休で、それ以外の曜日は8時30分から19時までです。"
+          },
+          {
+            "heading": "創業の歴史",
+            "body": "遠江屋は明治初期、雲仙地獄にほど近い現在地で旅人や行商人のための木賃宿として創業しました。その後食堂となり、昭和20年代に土産品店を開業し、ほどなく湯せんぺいの製造を始めました。湯せんぺいは、旧島原藩主松平公が考案したものです。"
+          },
+          {
+            "heading": "純一枚手焼き製法",
+            "body": "遠江屋は現在も、一丁型の金型で一枚一枚焼き上げる「純一枚手焼き製法」を残す店です。小麦粉は厳選した2種類の中力粉を使用し、生地には雲仙市内の源泉から職人自らがくみ取った食塩泉を練り込んでいます。"
+          },
+          {
+            "heading": "取り扱う商品",
+            "body": "湯せんぺいのほか、上品なクリームをサンドした温泉ゴーフレット、長崎県産のじゃが芋を白餡とブレンドしたじゃが玉、湯せんぺいのシャリシャリ感を生かしたグラノーラ、ヌガータイプの湯せんぺいチョコバーなど、雲仙の素材を使った菓子を扱っています。"
+          }
+        ],
+        "menus": [
+          {
+            "name": "湯せんぺい"
+          },
+          {
+            "name": "純一枚手焼き湯せんぺい"
+          },
+          {
+            "name": "温泉ゴーフレット"
+          },
+          {
+            "name": "UNZENハイカラセット"
+          },
+          {
+            "name": "じゃが玉"
+          },
+          {
+            "name": "じゃが芋羊羹"
+          },
+          {
+            "name": "湯せんぺいグラノーラ"
+          },
+          {
+            "name": "湯せんぺいチョコバー"
+          }
+        ],
+        "sources": [
+          {
+            "label": "公式サイト",
+            "url": "https://tohtoumiya.theshop.jp/"
+          },
+          {
+            "label": "公式サイト(ABOUT)",
+            "url": "https://tohtoumiya.theshop.jp/about"
+          },
+          {
+            "label": "公式サイト(カテゴリ)",
+            "url": "https://tohtoumiya.theshop.jp/categories/834292"
+          },
+          {
+            "label": "Google マップ",
+            "url": "https://maps.google.com/?cid=81602590403749157"
+          }
+        ],
+        "checkedAt": "2026-10-26"
+      }
     }
   ]
 }

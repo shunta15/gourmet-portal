@@ -20209,6 +20209,99 @@ export const ARTICLE_STORES: Restaurant[] = [
       "深夜営業"
     ],
     "featureId": "創作鉄板一Hajime"
+  },
+  {
+    "id": "r733",
+    "name": "やき鳥 ツギノキタザワ",
+    "cuisine": "焼き鳥店",
+    "area": "長崎県・長崎市",
+    "region": "nagasaki",
+    "shape": "square",
+    "image": "/restaurants/teleapo-やき鳥ツギノキタザワ/hero.jpg",
+    "heroImages": [
+      "/restaurants/teleapo-やき鳥ツギノキタザワ/hero.jpg",
+      "/restaurants/teleapo-やき鳥ツギノキタザワ/point1.jpg",
+      "/restaurants/teleapo-やき鳥ツギノキタザワ/point2.jpg"
+    ],
+    "gallery": [
+      "/restaurants/teleapo-やき鳥ツギノキタザワ/hero.jpg",
+      "/restaurants/teleapo-やき鳥ツギノキタザワ/point1.jpg",
+      "/restaurants/teleapo-やき鳥ツギノキタザワ/point2.jpg"
+    ],
+    "desc": "長崎県長崎市の焼き鳥店。",
+    "address": "長崎県長崎市銅座町10-3 クレイン銅座ビル 201号",
+    "hours": "月〜土 18:00–23:00",
+    "closed": "日曜日",
+    "seats": "—（訪問前に公式確認）",
+    "nearest": "—",
+    "phone": "050-8883-4415",
+    "source": {
+      "label": "Google ビジネスプロフィール",
+      "url": "https://maps.google.com/?cid=8745812055375620778"
+    },
+    "body": [
+      "やき鳥 ツギノキタザワは、長崎県長崎市にあるお店です。業態は「焼き鳥店」、所在地は長崎県長崎市銅座町10-3 クレイン銅座ビル 201号です。マチノワ編集部の特集記事では、「焼き鳥店としての営業」・「夜営業、日曜定休のスケジュール」などを取り上げています。",
+      "営業時間は月〜土 18:00–23:00、定休日は日曜日です。営業時間は変わることがあるため、訪問前に公式サイトやSNS、お電話でご確認ください。"
+    ],
+    "highlights": [
+      "焼き鳥店としての営業",
+      "夜営業、日曜定休のスケジュール",
+      "電話での問い合わせ"
+    ],
+    "tags": [
+      "焼き鳥店",
+      "長崎市"
+    ],
+    "featureId": "やき鳥ツギノキタザワ"
+  },
+  {
+    "id": "r734",
+    "name": "生",
+    "cuisine": "ビアホール",
+    "area": "愛媛県・松山市",
+    "region": "ehime",
+    "shape": "square",
+    "image": "/restaurants/teleapo-生/hero.jpg",
+    "heroImages": [
+      "/restaurants/teleapo-生/hero.jpg",
+      "/restaurants/teleapo-生/point1.jpg",
+      "/restaurants/teleapo-生/point2.jpg",
+      "/restaurants/teleapo-生/point4.jpg"
+    ],
+    "gallery": [
+      "/restaurants/teleapo-生/hero.jpg",
+      "/restaurants/teleapo-生/point1.jpg",
+      "/restaurants/teleapo-生/point2.jpg",
+      "/restaurants/teleapo-生/point4.jpg"
+    ],
+    "desc": "愛媛県松山市のビアホール。最寄りは市内電車「大街道」「勝山町」より徒歩約10分。",
+    "address": "愛媛県松山市二番町1丁目4-11 城戸ビル",
+    "hours": "月〜木 17:30–23:30 / 金・土 17:30–00:00",
+    "closed": "日曜日",
+    "seats": "カウンター6席・テーブル2脚・掘りごたつ席",
+    "nearest": "市内電車「大街道」「勝山町」より徒歩約10分",
+    "phone": "089-934-8360",
+    "source": {
+      "label": "Google ビジネスプロフィール",
+      "url": "https://maps.google.com/?cid=2677230119480793845"
+    },
+    "body": [
+      "生は、愛媛県松山市にあるお店です。業態は「ビアホール」、所在地は愛媛県松山市二番町1丁目4-11 城戸ビル、最寄りは市内電車「大街道」「勝山町」より徒歩約10分です。マチノワ編集部の特集記事では、「世界各国のクラフトビールと生ビール」・「ビールに合う料理の数々」などを取り上げています。",
+      "営業時間は月〜木 17:30–23:30 / 金・土 17:30–00:00、定休日は日曜日です。席はカウンター6席・テーブル2脚・掘りごたつ席。営業時間は変わることがあるため、訪問前に公式サイトやSNS、お電話でご確認ください。"
+    ],
+    "highlights": [
+      "世界各国のクラフトビールと生ビール",
+      "ビールに合う料理の数々",
+      "ビール専門店ならではの焼酎の品ぞろえ",
+      "カウンターから掘りごたつまでの席",
+      "市内電車からのアクセス"
+    ],
+    "tags": [
+      "ビアホール",
+      "松山市",
+      "深夜営業"
+    ],
+    "featureId": "生"
   }
 ];
 
@@ -20642,7 +20735,9 @@ export const ARTICLE_STORE_FEATURE_IDS: Record<string, string> = {
   "r729": "音羽寿司",
   "r730": "割烹天野",
   "r731": "麺sBLAND文蔵BLACK",
-  "r732": "創作鉄板一Hajime"
+  "r732": "創作鉄板一Hajime",
+  "r733": "やき鳥ツギノキタザワ",
+  "r734": "生"
 };
 
 /** 特集記事ID → 店舗ID */
@@ -21075,5 +21170,7 @@ export const ARTICLE_STORE_ID_BY_FEATURE: Record<string, string> = {
   "音羽寿司": "r729",
   "割烹天野": "r730",
   "麺sBLAND文蔵BLACK": "r731",
-  "創作鉄板一Hajime": "r732"
+  "創作鉄板一Hajime": "r732",
+  "やき鳥ツギノキタザワ": "r733",
+  "生": "r734"
 };

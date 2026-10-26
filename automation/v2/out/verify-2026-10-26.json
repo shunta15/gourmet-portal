@@ -2,8 +2,8 @@
   "meta": {
     "date": "2026-10-25",
     "startedAt": "2026-10-24T17:56:30.089Z",
-    "updatedAt": "2026-10-26T08:27:30.679Z",
-    "decisionsAppliedAt": "2026-10-26T08:27:47.543Z",
+    "updatedAt": "2026-10-26T09:59:12.199Z",
+    "decisionsAppliedAt": "2026-10-26T09:59:25.415Z",
     "decisionsNote": "行 80〜201 の「要確認」にオーナーの決定(2026-10-26)を反映。確定にした店は decision に D1/D2/D3 を記録、元の判定は verdictOriginal"
   },
   "results": {
@@ -11196,7 +11196,7 @@
           "addressLevel": null
         }
       ],
-      "verdict": "要確認",
+      "verdict": "確認済み",
       "cid": "2677230119480793845",
       "mapName": "生",
       "mapAddress": "愛媛県松山市二番町１丁目４−１１ 城戸ビル",
@@ -11211,11 +11211,131 @@
         "addressDetail": null,
         "addressSource": null
       },
-      "reason": "電話は一致したが店名が合わない(一方の店名が他方を含む短い名前)。電話が一致／店名: different(シート「ビア酒場　生」/ マップ「生」)",
+      "reason": "電話が一致・マップの店名「生」 → 同じ店として作る(店名・記事IDはマップの店名)。元の判定の理由: 電話は一致したが店名が合わない(一方の店名が他方を含む短い名前)。電話が一致／店名: different(シート「ビア酒場　生」/ マップ「生」)",
       "fetchedAt": "2026-10-26T08:27:30.679Z",
       "kgmidHint": null,
       "statusSignals": [],
-      "seconds": 15
+      "seconds": 15,
+      "verdictOriginal": "要確認",
+      "reasonOriginal": "電話は一致したが店名が合わない(一方の店名が他方を含む短い名前)。電話が一致／店名: different(シート「ビア酒場　生」/ マップ「生」)",
+      "decision": {
+        "rule": "D4",
+        "label": "電話が一致・マップの店名「生」 → 同じ店として作る(店名・記事IDはマップの店名)",
+        "at": "2026-10-26",
+        "by": "オーナー 2026-10-26(行を名指しの決定)"
+      }
+    },
+    "トリニティアポ:219": {
+      "tab": "トリニティアポ",
+      "row": 219,
+      "name": "北沢三丁目",
+      "vertical": "グルメ",
+      "industryRaw": "",
+      "sheetPhone": "05088834415",
+      "sheetUrl": "https://www.google.com/search?q=%E3%82%84%E3%81%8D%E9%B3%A5+%E3%83%84%E3%82%AE%E3%83%8E%E3%82%AD%E3%82%BF%E3%82%B6%E3%83%AF%0D%0A&sca_esv=fcec258e40cbfe56&biw=1536&bih=703&sxsrf=APpeQntrSwGpwbtcVlwuG_ErnF5VPiLPmg%3A1792997650588&ei=Evneatm2I4z02roP8O-YmAc&uact=5&oq=%E3%82%84%E3%81%8D%E9%B3%A5+%E3%83%84%E3%82%AE%E3%83%8E%E3%82%AD%E3%82%BF%E3%82%B6%E3%83%AF%0D%0A&gs_lp=Egxnd3Mtd2l6LXNlcnAiIOOChOOBjemzpSDjg4Tjgq7jg47jgq3jgr_jgrbjg68KSPsDUIICWIICcAJ4AJABAJgBAKABAKoBALgBA8gBAPgBAvgBAZgCAKACAJgDAIgGAZIHAKAHALIHALgHAMIHAMgHAIAIAQ&sclient=gws-wiz-serp",
+      "urlKind": "search",
+      "route": "電話・店名で検索",
+      "queries": [
+        "05088834415",
+        "やき鳥 ツギノキタザワ",
+        "北沢三丁目"
+      ],
+      "candidates": [
+        {
+          "name": "やき鳥 ツギノキタザワ",
+          "address": "長崎県長崎市銅座町１０−３ クレイン銅座ビル 201号",
+          "phone": "050-8883-4415",
+          "cid": "8745812055375620778",
+          "url": "https://www.google.com/maps/place/%E3%82%84%E3%81%8D%E9%B3%A5+%E3%83%84%E3%82%AE%E3%83%8E%E3%82%AD%E3%82%BF%E3%82%B6%E3%83%AF/@32.7425852,129.8774927,17z/data=!3m1!4b1!4m6!3m5!1s0x3515532ec62cfd95:0x795f5dba20fe2aaa!8m2!3d32.7425852!4d129.8774927!16s%2Fg%2F11z6sdmhsz",
+          "phoneMatch": true,
+          "nameRelation": "different",
+          "addressLevel": null
+        },
+        {
+          "name": "〒155-0031 東京都世田谷区北沢３丁目",
+          "address": null,
+          "phone": null,
+          "cid": "15610960105784680846",
+          "url": "https://www.google.com/maps/place/%E3%80%92155-0031+%E6%9D%B1%E4%BA%AC%E9%83%BD%E4%B8%96%E7%94%B0%E8%B0%B7%E5%8C%BA%E5%8C%97%E6%B2%A2%EF%BC%93%E4%B8%81%E7%9B%AE/@35.6651439,139.6695799,17z/data=!3m1!4b1!4m6!3m5!1s0x6018f36ab7a5beb3:0xd8a545817c17218e!8m2!3d35.6652233!4d139.6700826!16s%2Fg%2F1pxyhfdg9",
+          "phoneMatch": null,
+          "nameRelation": "different",
+          "addressLevel": null
+        }
+      ],
+      "verdict": "確認済み",
+      "cid": "8745812055375620778",
+      "mapName": "やき鳥 ツギノキタザワ",
+      "mapAddress": "長崎県長崎市銅座町１０−３ クレイン銅座ビル 201号",
+      "mapPhone": "050-8883-4415",
+      "website": "https://www.hotpepper.jp/strJ004612474/",
+      "category": "焼き鳥店",
+      "mapUrl": "https://maps.google.com/?cid=8745812055375620778",
+      "signals": {
+        "phoneMatch": true,
+        "nameRelation": "different",
+        "addressLevel": null,
+        "addressDetail": null,
+        "addressSource": null
+      },
+      "reason": "シートの検索文字「やき鳥 ツギノキタザワ」のマップの店と電話(05088834415)が一致 → 同じ店(店名・記事IDはマップの店名)。元の判定の理由: 電話は一致したが店名が合わない(改称・屋号ちがいの可能性)。電話が一致／店名: different(シート「北沢三丁目」/ マップ「やき鳥 ツギノキタザワ」)",
+      "fetchedAt": "2026-10-26T09:58:57.218Z",
+      "kgmidHint": null,
+      "statusSignals": [],
+      "seconds": 43.9,
+      "verdictOriginal": "要確認",
+      "reasonOriginal": "電話は一致したが店名が合わない(改称・屋号ちがいの可能性)。電話が一致／店名: different(シート「北沢三丁目」/ マップ「やき鳥 ツギノキタザワ」)",
+      "decision": {
+        "rule": "D4",
+        "label": "シートの検索文字「やき鳥 ツギノキタザワ」のマップの店と電話(05088834415)が一致 → 同じ店(店名・記事IDはマップの店名)",
+        "at": "2026-10-26",
+        "by": "オーナー 2026-10-26(行を名指しの決定)"
+      }
+    },
+    "トリニティアポ:227": {
+      "tab": "トリニティアポ",
+      "row": 227,
+      "name": "雲仙湯せんぺい 遠江屋本舗",
+      "vertical": "くらし",
+      "industryRaw": "雲仙市の土産物店",
+      "sheetPhone": "095-773-2155",
+      "sheetUrl": "https://www.google.com/search?q=%E9%9B%B2%E4%BB%99%E6%B9%AF%E3%81%9B%E3%82%93%E3%81%BA%E3%81%84+%E9%81%A0%E6%B1%9F%E5%B1%8B%E6%9C%AC%E8%88%97+%E9%95%B7%E5%B4%8E%E7%9C%8C%E9%9B%B2%E4%BB%99%E5%B8%82%E5%B0%8F%E6%B5%9C%E7%94%BA%E9%9B%B2%E4%BB%99317+0957-73-2155&oq=%E9%9B%B2%E4%BB%99%E6%B9%AF%E3%81%9B%E3%82%93%E3%81%BA%E3%81%84+%E9%81%A0%E6%B1%9F%E5%B1%8B%E6%9C%AC%E8%88%97%09%E9%95%B7%E5%B4%8E%E7%9C%8C%E9%9B%B2%E4%BB%99%E5%B8%82%E5%B0%8F%E6%B5%9C%E7%94%BA%E9%9B%B2%E4%BB%99317%090957-73-2155&gs_lcrp=EgZjaHJvbWUyBggAEEUYOdIBBzE0MGowajmoAgawAgE&sourceid=chrome&source=chrome.ob&ie=UTF-8",
+      "urlKind": "search",
+      "route": "電話・店名で検索",
+      "queries": [
+        "095-773-2155"
+      ],
+      "candidates": [
+        {
+          "name": "雲仙湯せんぺい 遠江屋 (とおとうみや) 本舗",
+          "address": "長崎県雲仙市小浜町雲仙３１７",
+          "phone": "0957-73-2155",
+          "cid": "81602590403749157",
+          "url": "https://www.google.com/maps/place/%E9%9B%B2%E4%BB%99%E6%B9%AF%E3%81%9B%E3%82%93%E3%81%BA%E3%81%84+%E9%81%A0%E6%B1%9F%E5%B1%8B+(%E3%81%A8%E3%81%8A%E3%81%A8%E3%81%86%E3%81%BF%E3%82%84)+%E6%9C%AC%E8%88%97/@32.7420472,130.2607269,17z/data=!3m1!4b1!4m6!3m5!1s0x35400da4646bc74d:0x121e91fa5c46525!8m2!3d32.7420472!4d130.2607269!16s%2Fg%2F11c1n_lc0_",
+          "phoneMatch": true,
+          "nameRelation": "exact",
+          "addressLevel": "exact"
+        }
+      ],
+      "verdict": "確認済み",
+      "cid": "81602590403749157",
+      "mapName": "雲仙湯せんぺい 遠江屋 (とおとうみや) 本舗",
+      "mapAddress": "長崎県雲仙市小浜町雲仙３１７",
+      "mapPhone": "0957-73-2155",
+      "website": "https://tohtoumiya.theshop.jp/",
+      "category": "土産物店",
+      "mapUrl": "https://maps.google.com/?cid=81602590403749157",
+      "signals": {
+        "phoneMatch": true,
+        "nameRelation": "exact",
+        "addressLevel": "exact",
+        "addressDetail": "町名・番地とも一致",
+        "addressSource": "検索URL"
+      },
+      "reason": "電話が一致／店名: exact(シート「雲仙湯せんぺい 遠江屋本舗」/ マップ「雲仙湯せんぺい 遠江屋 (とおとうみや) 本舗」)／住所(検索URL): exact・町名・番地とも一致",
+      "fetchedAt": "2026-10-26T09:59:12.199Z",
+      "kgmidHint": null,
+      "statusSignals": [],
+      "seconds": 6
     }
   }
 }

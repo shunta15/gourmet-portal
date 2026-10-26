@@ -48,7 +48,22 @@ function whyNot(r) {
 }
 
 const out = [];
+// D4: 行を名指しした決定(オーナー 2026-10-26 の2回目)。電話が一致していることを条件にする
+const D4 = {
+  219: "シートの検索文字「やき鳥 ツギノキタザワ」のマップの店と電話(05088834415)が一致 → 同じ店(店名・記事IDはマップの店名)",
+  229: "電話が一致・マップの店名「生」 → 同じ店として作る(店名・記事IDはマップの店名)",
+};
 for (const r of Object.values(store.results)) {
+  if (r.tab === "トリニティアポ" && D4[r.row] && r.verdict === "要確認" && r.verdictOriginal === undefined) {
+    if (r.signals?.phoneMatch !== true) { out.push({ row: r.row, name: r.name, applied: "対象外", why: "電話が一致していない" }); continue; }
+    r.verdictOriginal = r.verdict;
+    r.reasonOriginal = r.reason;
+    r.verdict = "確認済み";
+    r.decision = { rule: "D4", label: D4[r.row], at: AT, by: "オーナー 2026-10-26(行を名指しの決定)" };
+    r.reason = `${D4[r.row]}。元の判定の理由: ${r.reasonOriginal}`;
+    out.push({ row: r.row, name: r.name, mapName: r.mapName, applied: "D4", label: D4[r.row] });
+    continue;
+  }
   if (r.tab !== "トリニティアポ" || r.row < 80 || r.row > 201) continue;
   if (r.verdictOriginal !== undefined || r.decisionReview) {
     out.push({ row: r.row, name: r.name, applied: r.decision ? r.decision.rule : "対象外", already: true });

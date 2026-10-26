@@ -1,0 +1,40 @@
+{
+  "tab": "トリニティアポ",
+  "tabEn": "tri-life",
+  "row": 227,
+  "sheet": {
+    "name": "雲仙湯せんぺい 遠江屋本舗",
+    "address": "",
+    "url": "https://www.google.com/search?q=%E9%9B%B2%E4%BB%99%E6%B9%AF%E3%81%9B%E3%82%93%E3%81%BA%E3%81%84+%E9%81%A0%E6%B1%9F%E5%B1%8B%E6%9C%AC%E8%88%97+%E9%95%B7%E5%B4%8E%E7%9C%8C%E9%9B%B2%E4%BB%99%E5%B8%82%E5%B0%8F%E6%B5%9C%E7%94%BA%E9%9B%B2%E4%BB%99317+0957-73-2155&oq=%E9%9B%B2%E4%BB%99%E6%B9%AF%E3%81%9B%E3%82%93%E3%81%BA%E3%81%84+%E9%81%A0%E6%B1%9F%E5%B1%8B%E6%9C%AC%E8%88%97%09%E9%95%B7%E5%B4%8E%E7%9C%8C%E9%9B%B2%E4%BB%99%E5%B8%82%E5%B0%8F%E6%B5%9C%E7%94%BA%E9%9B%B2%E4%BB%99317%090957-73-2155&gs_lcrp=EgZjaHJvbWUyBggAEEUYOdIBBzE0MGowajmoAgawAgE&sourceid=chrome&source=chrome.ob&ie=UTF-8",
+    "type": "雲仙市の土産物店",
+    "d1": "",
+    "d2": ""
+  },
+  "urlKind": "search",
+  "route": "第1段(verify-gbp.mjs)で確認済み",
+  "verdict": "一致",
+  "verdictReason": "電話が一致／店名: exact(シート「雲仙湯せんぺい 遠江屋本舗」/ マップ「雲仙湯せんぺい 遠江屋 (とおとうみや) 本舗」)／住所(検索URL): exact・町名・番地とも一致",
+  "place": {
+    "name": "雲仙湯せんぺい 遠江屋 (とおとうみや) 本舗",
+    "address": "長崎県雲仙市小浜町雲仙３１７",
+    "category": "土産物店",
+    "lat": 32.7420472,
+    "lng": 130.2607269,
+    "gbpUrl": "https://maps.google.com/?cid=81602590403749157",
+    "phone": "0957-73-2155",
+    "website": "https://tohtoumiya.theshop.jp/",
+    "hours": {
+      "月": "08:30–19:00",
+      "火": "08:30–19:00",
+      "水": "08:30–19:00",
+      "木": "定休日",
+      "金": "08:30–19:00",
+      "土": "08:30–19:00",
+      "日": "08:30–19:00"
+    },
+    "reserveLinks": [],
+    "statusSignals": [],
+    "closedSignal": false
+  },
+  "fetchedAt": "2026-10-26T10:00:20.706Z"
+}

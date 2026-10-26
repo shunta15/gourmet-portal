@@ -459,6 +459,8 @@ export const ONE_PAGE_SHOP_OF_FEATURE: Readonly<Record<string, string>> = {
   "割烹天野": "r730", // 割烹天野
   "麺sBLAND文蔵BLACK": "r731", // 麺'sBLAND 文蔵BLACK
   "創作鉄板一Hajime": "r732", // 創作鉄板一 Hajime
+  "やき鳥ツギノキタザワ": "r733", // やき鳥 ツギノキタザワ
+  "生": "r734", // 生
 };
 
 const NFC = (s: string) => s.normalize("NFC");
