@@ -1,15 +1,9 @@
 import { notFoundMetadata } from "@/components/portal/pages/data";
-import VkFrame from "@/components/portal/vkit/common/VkFrame";
-import VkNotFound from "@/components/portal/vkit/common/VkNotFound";
-import { lifeCfg } from "@/components/portal/vkit/configs";
+import { LifeNotFoundPage } from "@/components/portal/life/pages";
 
-// 最初・探す・店・記事(決定デザインのページ)の 404。外枠は VkFrame。
-// 種類・エリア・利用シーンのページの 404 は app/life/(sub)/not-found.tsx。検索エンジンには載せない
+// 最初・探す・店・特集・記事(オーナーが決めたデザイン。2026-10-26 の見本)の 404。外枠は LifeFrame(components/portal/life/pages.tsx の LifeNotFoundPage)。
+// 種類・エリア・利用シーンのページの 404 も app/life/(sub)/not-found.tsx で同じ見た目。検索エンジンには載せない
 export const metadata = notFoundMetadata();
 export default function NotFound() {
-  return (
-    <VkFrame cfg={lifeCfg}>
-      <VkNotFound cfg={lifeCfg} />
-    </VkFrame>
-  );
+  return <LifeNotFoundPage />;
 }
