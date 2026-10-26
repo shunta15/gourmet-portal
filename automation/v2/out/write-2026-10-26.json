@@ -3,8 +3,8 @@
     "date": "2026-10-26",
     "startedAt": "2026-10-26T06:12:17.040Z",
     "verifyFile": "automation/v2/out/verify-2026-10-26.json",
-    "args": "--only-row 204,206,213",
-    "updatedAt": "2026-10-26T09:14:04.378Z"
+    "args": "--only-row 214,228",
+    "updatedAt": "2026-10-26T09:19:36.085Z"
   },
   "environment": null,
   "results": {
@@ -1927,18 +1927,38 @@
       "row": 214,
       "name": "長谷寺",
       "vertical": "くらし",
-      "status": "準備のみ",
-      "stage": "prepared",
+      "status": "成功",
+      "stage": "done",
       "startedAt": "2026-10-26T08:43:32.198Z",
       "seconds": {
-        "total": 37
+        "total": 64,
+        "claude": 62
       },
       "photos": {
         "candidates": 10,
         "maps": 10,
         "official": 0,
-        "rejectedByMachine": 0
-      }
+        "rejectedByMachine": 0,
+        "used": 9,
+        "emptyFrames": 0
+      },
+      "check": {
+        "rewrote": true,
+        "shapeProblems": [],
+        "sentenceProblems": 0,
+        "facts": {
+          "total": 14,
+          "verified": 14
+        }
+      },
+      "placeId": "li0045",
+      "featureInGenerated": false,
+      "featureNote": null,
+      "urls": {
+        "shop": "/life/shop/li0045",
+        "article": "/life/article/li0045"
+      },
+      "finishedAt": "2026-10-26T09:19:36.081Z"
     },
     "tri-gourmet-215": {
       "key": "tri-gourmet-215",
@@ -1946,18 +1966,39 @@
       "name": "まんざいらく",
       "vertical": "グルメ",
       "articleId": "食堂cafeまんざいらく",
-      "status": "準備のみ",
-      "stage": "prepared",
+      "status": "成功",
+      "stage": "done",
       "startedAt": "2026-10-26T08:44:09.113Z",
       "seconds": {
-        "total": 32
+        "total": 37,
+        "claude": 37
       },
       "photos": {
         "candidates": 10,
         "maps": 10,
         "official": 0,
-        "rejectedByMachine": 0
-      }
+        "rejectedByMachine": 0,
+        "used": 3,
+        "emptyFrames": 1
+      },
+      "check": {
+        "rewrote": true,
+        "shapeProblems": [],
+        "sentenceProblems": 0,
+        "facts": {
+          "total": 5,
+          "verified": 5
+        }
+      },
+      "storeId": "r725",
+      "onePage": "表に追加(/feature/<記事ID> は /restaurant/<店ID> へ転送)",
+      "storeBuilt": true,
+      "storeNote": null,
+      "urls": {
+        "article": "/feature/食堂cafeまんざいらく",
+        "shop": "/restaurant/r725"
+      },
+      "finishedAt": "2026-10-26T09:14:58.424Z"
     },
     "tri-gourmet-216": {
       "key": "tri-gourmet-216",
@@ -1965,18 +2006,38 @@
       "name": "てんぷら天英",
       "vertical": "グルメ",
       "articleId": "てんぷら天英",
-      "status": "準備のみ",
-      "stage": "prepared",
+      "status": "成功",
+      "stage": "done",
       "startedAt": "2026-10-26T08:44:41.185Z",
       "seconds": {
-        "total": 47
+        "total": 1
       },
       "photos": {
         "candidates": 26,
         "maps": 10,
         "official": 16,
-        "rejectedByMachine": 2
-      }
+        "rejectedByMachine": 2,
+        "used": 6,
+        "emptyFrames": 0
+      },
+      "check": {
+        "rewrote": false,
+        "shapeProblems": [],
+        "sentenceProblems": 0,
+        "facts": {
+          "total": 14,
+          "verified": 14
+        }
+      },
+      "storeId": "r726",
+      "onePage": "表に追加(/feature/<記事ID> は /restaurant/<店ID> へ転送)",
+      "storeBuilt": true,
+      "storeNote": null,
+      "urls": {
+        "article": "/feature/てんぷら天英",
+        "shop": "/restaurant/r726"
+      },
+      "finishedAt": "2026-10-26T09:14:58.991Z"
     },
     "tri-gourmet-217": {
       "key": "tri-gourmet-217",
@@ -1984,18 +2045,39 @@
       "name": "ジンギスカン日光",
       "vertical": "グルメ",
       "articleId": "ジンギスカン日光",
-      "status": "準備のみ",
-      "stage": "prepared",
+      "status": "成功",
+      "stage": "done",
       "startedAt": "2026-10-26T08:45:28.597Z",
       "seconds": {
-        "total": 40
+        "total": 62,
+        "claude": 61
       },
       "photos": {
         "candidates": 9,
         "maps": 9,
         "official": 0,
-        "rejectedByMachine": 19
-      }
+        "rejectedByMachine": 19,
+        "used": 6,
+        "emptyFrames": 0
+      },
+      "check": {
+        "rewrote": true,
+        "shapeProblems": [],
+        "sentenceProblems": 0,
+        "facts": {
+          "total": 24,
+          "verified": 24
+        }
+      },
+      "storeId": "r727",
+      "onePage": "表に追加(/feature/<記事ID> は /restaurant/<店ID> へ転送)",
+      "storeBuilt": true,
+      "storeNote": null,
+      "urls": {
+        "article": "/feature/ジンギスカン日光",
+        "shop": "/restaurant/r727"
+      },
+      "finishedAt": "2026-10-26T09:16:00.894Z"
     },
     "tri-gourmet-218": {
       "key": "tri-gourmet-218",
@@ -2003,18 +2085,38 @@
       "name": "焼焼 きんぐ",
       "vertical": "グルメ",
       "articleId": "焼焼きんぐ",
-      "status": "準備のみ",
-      "stage": "prepared",
+      "status": "成功",
+      "stage": "done",
       "startedAt": "2026-10-26T08:46:09.074Z",
       "seconds": {
-        "total": 32
+        "total": 1
       },
       "photos": {
         "candidates": 10,
         "maps": 10,
         "official": 0,
-        "rejectedByMachine": 0
-      }
+        "rejectedByMachine": 0,
+        "used": 4,
+        "emptyFrames": 0
+      },
+      "check": {
+        "rewrote": false,
+        "shapeProblems": [],
+        "sentenceProblems": 0,
+        "facts": {
+          "total": 6,
+          "verified": 6
+        }
+      },
+      "storeId": "r728",
+      "onePage": "表に追加(/feature/<記事ID> は /restaurant/<店ID> へ転送)",
+      "storeBuilt": true,
+      "storeNote": null,
+      "urls": {
+        "article": "/feature/焼焼きんぐ",
+        "shop": "/restaurant/r728"
+      },
+      "finishedAt": "2026-10-26T09:16:01.494Z"
     },
     "tri-gourmet-221": {
       "key": "tri-gourmet-221",
@@ -2022,18 +2124,38 @@
       "name": "音羽寿司",
       "vertical": "グルメ",
       "articleId": "音羽寿司",
-      "status": "準備のみ",
-      "stage": "prepared",
+      "status": "成功",
+      "stage": "done",
       "startedAt": "2026-10-26T08:46:40.766Z",
       "seconds": {
-        "total": 33
+        "total": 1
       },
       "photos": {
         "candidates": 10,
         "maps": 10,
         "official": 0,
-        "rejectedByMachine": 0
-      }
+        "rejectedByMachine": 0,
+        "used": 3,
+        "emptyFrames": 1
+      },
+      "check": {
+        "rewrote": false,
+        "shapeProblems": [],
+        "sentenceProblems": 0,
+        "facts": {
+          "total": 5,
+          "verified": 5
+        }
+      },
+      "storeId": "r729",
+      "onePage": "表に追加(/feature/<記事ID> は /restaurant/<店ID> へ転送)",
+      "storeBuilt": true,
+      "storeNote": null,
+      "urls": {
+        "article": "/feature/音羽寿司",
+        "shop": "/restaurant/r729"
+      },
+      "finishedAt": "2026-10-26T09:16:02.065Z"
     },
     "tri-gourmet-222": {
       "key": "tri-gourmet-222",
@@ -2041,18 +2163,38 @@
       "name": "割烹天野",
       "vertical": "グルメ",
       "articleId": "割烹天野",
-      "status": "準備のみ",
-      "stage": "prepared",
+      "status": "成功",
+      "stage": "done",
       "startedAt": "2026-10-26T08:47:13.760Z",
       "seconds": {
-        "total": 33
+        "total": 1
       },
       "photos": {
         "candidates": 10,
         "maps": 10,
         "official": 0,
-        "rejectedByMachine": 0
-      }
+        "rejectedByMachine": 0,
+        "used": 2,
+        "emptyFrames": 2
+      },
+      "check": {
+        "rewrote": false,
+        "shapeProblems": [],
+        "sentenceProblems": 0,
+        "facts": {
+          "total": 6,
+          "verified": 6
+        }
+      },
+      "storeId": "r730",
+      "onePage": "表に追加(/feature/<記事ID> は /restaurant/<店ID> へ転送)",
+      "storeBuilt": true,
+      "storeNote": null,
+      "urls": {
+        "article": "/feature/割烹天野",
+        "shop": "/restaurant/r730"
+      },
+      "finishedAt": "2026-10-26T09:16:02.640Z"
     },
     "tri-gourmet-223": {
       "key": "tri-gourmet-223",
@@ -2060,18 +2202,38 @@
       "name": "文蔵ＢＬＡＣＫ",
       "vertical": "グルメ",
       "articleId": "麺sBLAND文蔵BLACK",
-      "status": "準備のみ",
-      "stage": "prepared",
+      "status": "成功",
+      "stage": "done",
       "startedAt": "2026-10-26T08:47:47.062Z",
       "seconds": {
-        "total": 31
+        "total": 1
       },
       "photos": {
         "candidates": 10,
         "maps": 10,
         "official": 0,
-        "rejectedByMachine": 0
-      }
+        "rejectedByMachine": 0,
+        "used": 4,
+        "emptyFrames": 0
+      },
+      "check": {
+        "rewrote": false,
+        "shapeProblems": [],
+        "sentenceProblems": 0,
+        "facts": {
+          "total": 7,
+          "verified": 7
+        }
+      },
+      "storeId": "r731",
+      "onePage": "表に追加(/feature/<記事ID> は /restaurant/<店ID> へ転送)",
+      "storeBuilt": true,
+      "storeNote": null,
+      "urls": {
+        "article": "/feature/麺sBLAND文蔵BLACK",
+        "shop": "/restaurant/r731"
+      },
+      "finishedAt": "2026-10-26T09:16:03.225Z"
     },
     "tri-gourmet-226": {
       "key": "tri-gourmet-226",
@@ -2079,18 +2241,38 @@
       "name": "創作鉄板一 Hajime",
       "vertical": "グルメ",
       "articleId": "創作鉄板一Hajime",
-      "status": "準備のみ",
-      "stage": "prepared",
+      "status": "成功",
+      "stage": "done",
       "startedAt": "2026-10-26T08:48:18.560Z",
       "seconds": {
-        "total": 42
+        "total": 1
       },
       "photos": {
         "candidates": 10,
         "maps": 10,
         "official": 0,
-        "rejectedByMachine": 18
-      }
+        "rejectedByMachine": 18,
+        "used": 5,
+        "emptyFrames": 0
+      },
+      "check": {
+        "rewrote": false,
+        "shapeProblems": [],
+        "sentenceProblems": 0,
+        "facts": {
+          "total": 13,
+          "verified": 13
+        }
+      },
+      "storeId": "r732",
+      "onePage": "表に追加(/feature/<記事ID> は /restaurant/<店ID> へ転送)",
+      "storeBuilt": true,
+      "storeNote": null,
+      "urls": {
+        "article": "/feature/創作鉄板一Hajime",
+        "shop": "/restaurant/r732"
+      },
+      "finishedAt": "2026-10-26T09:16:03.814Z"
     },
     "tri-gourmet-228": {
       "key": "tri-gourmet-228",
@@ -2098,18 +2280,19 @@
       "name": "AMBER329",
       "vertical": "グルメ",
       "articleId": "AMBER329【南区バー】",
-      "status": "準備のみ",
-      "stage": "prepared",
+      "status": "失敗",
+      "stage": "claude",
       "startedAt": "2026-10-26T08:49:00.951Z",
       "seconds": {
-        "total": 31
+        "total": 0
       },
       "photos": {
         "candidates": 9,
         "maps": 9,
         "official": 0,
         "rejectedByMachine": 1
-      }
+      },
+      "reason": "書き手が失敗の出口で終了: 公式サイト・公式SNSの文字が取得できず、WebSearchでも住所(熊本市南区出仲間)・電話番号(090-9791-1088)と一致する公開ページが見つからなかった。得られた事実は店名・住所・営業時間のみで、POINTを3つ以上事実だけで書けない。"
     },
     "tri-gourmet-84": {
       "key": "tri-gourmet-84",

@@ -7003,6 +7003,130 @@
         ],
         "checkedAt": "2026-10-26"
       }
+    },
+    {
+      "id": "li0045",
+      "vertical": "life",
+      "category": "shrine-temple",
+      "name": "長谷寺",
+      "pref": "yamanashi",
+      "cityName": "笛吹市",
+      "address": "山梨県笛吹市春日居町鎮目3681",
+      "lat": 35.674498,
+      "lng": 138.6306579,
+      "phone": "090-1451-6722",
+      "mapUrl": "https://maps.google.com/?cid=9651143539839819891",
+      "image": "/_portal/vshops/tri-life-214/g02.jpg",
+      "images": [
+        "/_portal/vshops/tri-life-214/g02.jpg",
+        "/_portal/vshops/tri-life-214/g03.jpg",
+        "/_portal/vshops/tri-life-214/g04.jpg",
+        "/_portal/vshops/tri-life-214/g05.jpg",
+        "/_portal/vshops/tri-life-214/g06.jpg",
+        "/_portal/vshops/tri-life-214/g07.jpg",
+        "/_portal/vshops/tri-life-214/g08.jpg",
+        "/_portal/vshops/tri-life-214/g09.jpg",
+        "/_portal/vshops/tri-life-214/g10.jpg"
+      ],
+      "photos": [
+        {
+          "path": "/_portal/vshops/tri-life-214/g02.jpg",
+          "what": "瓦屋根の本堂の外観",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 801
+        },
+        {
+          "path": "/_portal/vshops/tri-life-214/g03.jpg",
+          "what": "甲府盆地を見渡せる展望デッキ",
+          "kind": "view",
+          "width": 801,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-life-214/g04.jpg",
+          "what": "木立の中に並ぶ石仏と石積み",
+          "kind": "common",
+          "width": 1080,
+          "height": 1080
+        },
+        {
+          "path": "/_portal/vshops/tri-life-214/g05.jpg",
+          "what": "寺号の看板がかかる木造の建物",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-life-214/g06.jpg",
+          "what": "木々に囲まれた石段の参道に並ぶ石像",
+          "kind": "common",
+          "width": 1200,
+          "height": 675
+        },
+        {
+          "path": "/_portal/vshops/tri-life-214/g07.jpg",
+          "what": "案内標識が立つ山道の参道",
+          "kind": "common",
+          "width": 1200,
+          "height": 675
+        },
+        {
+          "path": "/_portal/vshops/tri-life-214/g08.jpg",
+          "what": "石積みが残る山道沿いの一角",
+          "kind": "common",
+          "width": 1200,
+          "height": 675
+        },
+        {
+          "path": "/_portal/vshops/tri-life-214/g09.jpg",
+          "what": "木立を背にした石造りの像",
+          "kind": "common",
+          "width": 1200,
+          "height": 610
+        },
+        {
+          "path": "/_portal/vshops/tri-life-214/g10.jpg",
+          "what": "紅葉した木々に囲まれた本堂建物の外観",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 900
+        }
+      ],
+      "tags": [],
+      "article": {
+        "headline": "山梨県笛吹市春日居町鎮目にある真言宗の寺院。行基が開いたと伝わり、本尊の十一面観世音菩薩にちなんで「女人高野」と呼ばれる。",
+        "lede": "笛吹市にある「長谷寺」です。養老6年(722年)に行基が開いたと伝わる古寺で、本尊の十一面観世音菩薩への信仰から「女人高野」と呼ばれてきました。甲斐三十三観音霊場の礼所でもあります。",
+        "sections": [
+          {
+            "heading": "場所と連絡先",
+            "body": "所在地は山梨県笛吹市春日居町鎮目字菩提地内、電話は090-1451-6722です。本堂までは500段ほどの石階段の参道が続き、参道の途中には甲府盆地を見下ろすことのできるデッキがあります。"
+          },
+          {
+            "heading": "由緒",
+            "body": "養老6年(722年)に行基が開いたと伝わる寺院で、平安時代後期には周囲に建物が建ち並び「千坊」と称されるほど栄えました。本尊の十一面観世音菩薩が女人信仰に厚い仏様であることから「女人高野」と呼ばれ、甲斐三十三観音霊場の礼所でもあります。"
+          },
+          {
+            "heading": "境内の見どころ",
+            "body": "参道には、直径37.7センチの穴を妊婦がくぐると安産になると伝わる「胎内くぐりの石」があります。石階段の参道からは甲府盆地を見下ろすことができ、秋には石段沿いの木々が紅く色づきます。境内は笛吹市指定文化財(史跡)の「菩提山長谷寺」に指定されています。"
+          }
+        ],
+        "sources": [
+          {
+            "label": "笛吹市観光情報サイト",
+            "url": "https://www.fuefuki-kanko.jp/detail/233/"
+          },
+          {
+            "label": "笛吹市観光情報サイト(アクセス)",
+            "url": "https://www.fuefuki-kanko.jp/detail/233/access.html"
+          },
+          {
+            "label": "Google マップ",
+            "url": "https://maps.google.com/?cid=9651143539839819891"
+          }
+        ],
+        "checkedAt": "2026-10-26"
+      }
     }
   ]
 }

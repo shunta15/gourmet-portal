@@ -19822,6 +19822,393 @@ export const ARTICLE_STORES: Restaurant[] = [
       "ランチ"
     ],
     "featureId": "高山お好み焼きあんと"
+  },
+  {
+    "id": "r725",
+    "name": "食堂cafeまんざいらく",
+    "cuisine": "レストラン",
+    "area": "愛知県・豊川市",
+    "region": "nagoya",
+    "shape": "square",
+    "image": "/restaurants/teleapo-食堂cafeまんざいらく/hero.jpg",
+    "heroImages": [
+      "/restaurants/teleapo-食堂cafeまんざいらく/hero.jpg",
+      "/restaurants/teleapo-食堂cafeまんざいらく/point1.jpg",
+      "/restaurants/teleapo-食堂cafeまんざいらく/point2.jpg"
+    ],
+    "gallery": [
+      "/restaurants/teleapo-食堂cafeまんざいらく/hero.jpg",
+      "/restaurants/teleapo-食堂cafeまんざいらく/point1.jpg",
+      "/restaurants/teleapo-食堂cafeまんざいらく/point2.jpg"
+    ],
+    "desc": "愛知県豊川市のレストラン。",
+    "address": "愛知県豊川市上野2丁目14-1-2",
+    "hours": "水〜日 11:30–15:30",
+    "closed": "月曜・火曜",
+    "seats": "—（訪問前に公式確認）",
+    "nearest": "—",
+    "phone": "0533-56-3591",
+    "instagram": "https://www.instagram.com/n.manzairaku",
+    "source": {
+      "label": "Google ビジネスプロフィール",
+      "url": "https://maps.google.com/?cid=13902492423345895600"
+    },
+    "body": [
+      "食堂cafeまんざいらくは、愛知県豊川市にあるお店です。業態は「レストラン」、所在地は愛知県豊川市上野2丁目14-1-2です。マチノワ編集部の特集記事では、「上野二丁目に構える食堂cafeの所在地」・「営業は水曜から日曜の昼の時間帯」などを取り上げています。",
+      "営業時間は水〜日 11:30–15:30、定休日は月曜・火曜です。営業時間は変わることがあるため、訪問前に公式サイトやSNS、お電話でご確認ください。"
+    ],
+    "highlights": [
+      "上野二丁目に構える食堂cafeの所在地",
+      "営業は水曜から日曜の昼の時間帯",
+      "電話での問い合わせ先"
+    ],
+    "tags": [
+      "レストラン",
+      "豊川市",
+      "ランチ"
+    ],
+    "featureId": "食堂cafeまんざいらく"
+  },
+  {
+    "id": "r726",
+    "name": "てんぷら天英",
+    "cuisine": "天ぷら店",
+    "area": "三重県・四日市市",
+    "region": "mie",
+    "shape": "square",
+    "image": "/restaurants/teleapo-てんぷら天英/hero.jpg",
+    "heroImages": [
+      "/restaurants/teleapo-てんぷら天英/hero.jpg",
+      "/restaurants/teleapo-てんぷら天英/point1.jpg",
+      "/restaurants/teleapo-てんぷら天英/point2.jpg",
+      "/restaurants/teleapo-てんぷら天英/point3.jpg",
+      "/restaurants/teleapo-てんぷら天英/point4.jpg"
+    ],
+    "gallery": [
+      "/restaurants/teleapo-てんぷら天英/hero.jpg",
+      "/restaurants/teleapo-てんぷら天英/point1.jpg",
+      "/restaurants/teleapo-てんぷら天英/point2.jpg",
+      "/restaurants/teleapo-てんぷら天英/point3.jpg",
+      "/restaurants/teleapo-てんぷら天英/point4.jpg",
+      "/restaurants/teleapo-てんぷら天英/point5.jpg"
+    ],
+    "desc": "三重県四日市市の天ぷら店。",
+    "address": "三重県四日市市富士町4-9",
+    "hours": "月〜水・金〜日 11:30–13:00, 17:30–20:00",
+    "closed": "木曜日",
+    "seats": "カウンター中心",
+    "nearest": "—",
+    "phone": "059-333-0688",
+    "source": {
+      "label": "Google ビジネスプロフィール",
+      "url": "https://maps.google.com/?cid=7951926339512145386"
+    },
+    "body": [
+      "てんぷら天英は、三重県四日市市にあるお店です。業態は「天ぷら店」、所在地は三重県四日市市富士町4-9です。マチノワ編集部の特集記事では、「旬の食材をその場で揚げる天ぷら」・「6人まで使える個室と貸切対応」などを取り上げています。",
+      "営業時間は月〜水・金〜日 11:30–13:00, 17:30–20:00、定休日は木曜日です。席はカウンター中心。営業時間は変わることがあるため、訪問前に公式サイトやSNS、お電話でご確認ください。"
+    ],
+    "highlights": [
+      "旬の食材をその場で揚げる天ぷら",
+      "6人まで使える個室と貸切対応",
+      "天丼と持ち帰りの天バラ飯・天巻き",
+      "カウンター中心の店内",
+      "アクセスと営業情報"
+    ],
+    "tags": [
+      "天ぷら店",
+      "四日市市",
+      "個室",
+      "貸切可",
+      "ランチ"
+    ],
+    "featureId": "てんぷら天英"
+  },
+  {
+    "id": "r727",
+    "name": "ジンギスカン日光",
+    "cuisine": "焼肉店",
+    "area": "東京都・江戸川区",
+    "region": "tokyo",
+    "shape": "square",
+    "image": "/restaurants/teleapo-ジンギスカン日光/hero.jpg",
+    "heroImages": [
+      "/restaurants/teleapo-ジンギスカン日光/hero.jpg",
+      "/restaurants/teleapo-ジンギスカン日光/point1.jpg",
+      "/restaurants/teleapo-ジンギスカン日光/point2.jpg",
+      "/restaurants/teleapo-ジンギスカン日光/point3.jpg",
+      "/restaurants/teleapo-ジンギスカン日光/point4.jpg"
+    ],
+    "gallery": [
+      "/restaurants/teleapo-ジンギスカン日光/hero.jpg",
+      "/restaurants/teleapo-ジンギスカン日光/point1.jpg",
+      "/restaurants/teleapo-ジンギスカン日光/point2.jpg",
+      "/restaurants/teleapo-ジンギスカン日光/point3.jpg",
+      "/restaurants/teleapo-ジンギスカン日光/point4.jpg",
+      "/restaurants/teleapo-ジンギスカン日光/point5.jpg"
+    ],
+    "desc": "東京都江戸川区の焼肉店。",
+    "address": "東京都江戸川区南小岩6丁目26-12 フラワーロード",
+    "hours": "火〜金 18:00–22:00 / 土・日 17:00–22:00",
+    "closed": "月曜日",
+    "seats": "—（訪問前に公式確認）",
+    "nearest": "—",
+    "phone": "03-5876-8129",
+    "source": {
+      "label": "Google ビジネスプロフィール",
+      "url": "https://maps.google.com/?cid=6695523126171227086"
+    },
+    "body": [
+      "ジンギスカン日光は、東京都江戸川区にあるお店です。業態は「焼肉店」、所在地は東京都江戸川区南小岩6丁目26-12 フラワーロードです。マチノワ編集部の特集記事では、「炭火焼きで仕上げる熟成ラムチャック」・「ラムタンやラムチョップなど希少部位がそろうメニュー」などを取り上げています。",
+      "営業時間は火〜金 18:00–22:00 / 土・日 17:00–22:00、定休日は月曜日です。営業時間は変わることがあるため、訪問前に公式サイトやSNS、お電話でご確認ください。"
+    ],
+    "highlights": [
+      "炭火焼きで仕上げる熟成ラムチャック",
+      "ラムタンやラムチョップなど希少部位がそろうメニュー",
+      "野菜セットとドリンクのサイドメニュー",
+      "テーブル席とカウンター席を備えた店内",
+      "アクセスと営業情報"
+    ],
+    "tags": [
+      "焼肉店",
+      "江戸川区"
+    ],
+    "featureId": "ジンギスカン日光"
+  },
+  {
+    "id": "r728",
+    "name": "焼焼 きんぐ",
+    "cuisine": "焼肉店",
+    "area": "大阪府・大阪市城東区",
+    "region": "osaka",
+    "shape": "square",
+    "image": "/restaurants/teleapo-焼焼きんぐ/hero.jpg",
+    "heroImages": [
+      "/restaurants/teleapo-焼焼きんぐ/hero.jpg",
+      "/restaurants/teleapo-焼焼きんぐ/point1.jpg",
+      "/restaurants/teleapo-焼焼きんぐ/point2.jpg",
+      "/restaurants/teleapo-焼焼きんぐ/point3.jpg"
+    ],
+    "gallery": [
+      "/restaurants/teleapo-焼焼きんぐ/hero.jpg",
+      "/restaurants/teleapo-焼焼きんぐ/point1.jpg",
+      "/restaurants/teleapo-焼焼きんぐ/point2.jpg",
+      "/restaurants/teleapo-焼焼きんぐ/point3.jpg"
+    ],
+    "desc": "大阪府大阪市城東区の焼肉店。",
+    "address": "大阪府大阪市城東区鴫野東2丁目1-1 西田ビル 1F",
+    "hours": "毎日 11:30–14:30, 18:00–02:00",
+    "closed": "なし",
+    "seats": "—（訪問前に公式確認）",
+    "nearest": "—",
+    "phone": "06-7173-5786",
+    "source": {
+      "label": "Google ビジネスプロフィール",
+      "url": "https://maps.google.com/?cid=11795380622205640687"
+    },
+    "body": [
+      "焼焼 きんぐは、大阪府大阪市城東区にあるお店です。業態は「焼肉店」、所在地は大阪府大阪市城東区鴫野東2丁目1-1 西田ビル 1Fです。マチノワ編集部の特集記事では、「焼肉店としての営業」・「深夜2時まで続く夜の営業」などを取り上げています。",
+      "営業時間は毎日 11:30–14:30, 18:00–02:00で、定休日はありません。営業時間は変わることがあるため、訪問前に公式サイトやSNS、お電話でご確認ください。"
+    ],
+    "highlights": [
+      "焼肉店としての営業",
+      "深夜2時まで続く夜の営業",
+      "西田ビル1階の立地とアクセス"
+    ],
+    "tags": [
+      "焼肉店",
+      "城東区",
+      "ランチ",
+      "深夜営業"
+    ],
+    "featureId": "焼焼きんぐ"
+  },
+  {
+    "id": "r729",
+    "name": "音羽寿司",
+    "cuisine": "寿司店",
+    "area": "茨城県・古河市",
+    "region": "ibaraki",
+    "shape": "square",
+    "image": "/restaurants/teleapo-音羽寿司/hero.jpg",
+    "heroImages": [
+      "/restaurants/teleapo-音羽寿司/hero.jpg",
+      "/restaurants/teleapo-音羽寿司/point1.jpg",
+      "/restaurants/teleapo-音羽寿司/point3.jpg"
+    ],
+    "gallery": [
+      "/restaurants/teleapo-音羽寿司/hero.jpg",
+      "/restaurants/teleapo-音羽寿司/point1.jpg",
+      "/restaurants/teleapo-音羽寿司/point3.jpg"
+    ],
+    "desc": "茨城県古河市の寿司店。",
+    "address": "茨城県古河市東4丁目3-2",
+    "hours": "月・水〜日 11:30–20:00",
+    "closed": "火曜日",
+    "seats": "—（訪問前に公式確認）",
+    "nearest": "—",
+    "phone": "0280-32-1786",
+    "source": {
+      "label": "Google ビジネスプロフィール",
+      "url": "https://maps.google.com/?cid=12583279862136392206"
+    },
+    "body": [
+      "音羽寿司は、茨城県古河市にあるお店です。業態は「寿司店」、所在地は茨城県古河市東4丁目3-2です。マチノワ編集部の特集記事では、「寿司店としての業種と立地」・「営業時間と定休日」などを取り上げています。",
+      "営業時間は月・水〜日 11:30–20:00、定休日は火曜日です。営業時間は変わることがあるため、訪問前に公式サイトやSNS、お電話でご確認ください。"
+    ],
+    "highlights": [
+      "寿司店としての業種と立地",
+      "営業時間と定休日",
+      "電話での問い合わせ先"
+    ],
+    "tags": [
+      "寿司店",
+      "古河市",
+      "ランチ"
+    ],
+    "featureId": "音羽寿司"
+  },
+  {
+    "id": "r730",
+    "name": "割烹天野",
+    "cuisine": "和食店",
+    "area": "山梨県・南都留郡富士河口湖町",
+    "region": "yamanashi",
+    "shape": "square",
+    "image": "/restaurants/teleapo-割烹天野/hero.jpg",
+    "heroImages": [
+      "/restaurants/teleapo-割烹天野/hero.jpg",
+      "/restaurants/teleapo-割烹天野/point1.jpg"
+    ],
+    "gallery": [
+      "/restaurants/teleapo-割烹天野/hero.jpg",
+      "/restaurants/teleapo-割烹天野/point1.jpg"
+    ],
+    "desc": "山梨県南都留郡富士河口湖町の和食店。",
+    "address": "山梨県南都留郡富士河口湖町船津3595-1",
+    "hours": "月〜金 17:00–22:00",
+    "closed": "土曜・日曜",
+    "seats": "—（訪問前に公式確認）",
+    "nearest": "—",
+    "phone": "0555-73-1131",
+    "instagram": "https://www.instagram.com/amano_kappo",
+    "source": {
+      "label": "Google ビジネスプロフィール",
+      "url": "https://maps.google.com/?cid=8863730175989677359"
+    },
+    "body": [
+      "割烹天野は、山梨県南都留郡富士河口湖町にあるお店です。業態は「和食店」、所在地は山梨県南都留郡富士河口湖町船津3595-1です。マチノワ編集部の特集記事では、「和食店としての営業形態」・「平日の夜に営業する時間帯」などを取り上げています。",
+      "営業時間は月〜金 17:00–22:00、定休日は土曜・日曜です。営業時間は変わることがあるため、訪問前に公式サイトやSNS、お電話でご確認ください。"
+    ],
+    "highlights": [
+      "和食店としての営業形態",
+      "平日の夜に営業する時間帯",
+      "連絡先とアクセス"
+    ],
+    "tags": [
+      "和食店",
+      "富士河口湖町"
+    ],
+    "featureId": "割烹天野"
+  },
+  {
+    "id": "r731",
+    "name": "麺'sBLAND 文蔵BLACK",
+    "cuisine": "ラーメン屋",
+    "area": "長野県・佐久市",
+    "region": "nagano",
+    "shape": "square",
+    "image": "/restaurants/teleapo-麺sBLAND文蔵BLACK/hero.jpg",
+    "heroImages": [
+      "/restaurants/teleapo-麺sBLAND文蔵BLACK/hero.jpg",
+      "/restaurants/teleapo-麺sBLAND文蔵BLACK/point1.jpg",
+      "/restaurants/teleapo-麺sBLAND文蔵BLACK/point2.jpg",
+      "/restaurants/teleapo-麺sBLAND文蔵BLACK/point3.jpg"
+    ],
+    "gallery": [
+      "/restaurants/teleapo-麺sBLAND文蔵BLACK/hero.jpg",
+      "/restaurants/teleapo-麺sBLAND文蔵BLACK/point1.jpg",
+      "/restaurants/teleapo-麺sBLAND文蔵BLACK/point2.jpg",
+      "/restaurants/teleapo-麺sBLAND文蔵BLACK/point3.jpg"
+    ],
+    "desc": "長野県佐久市のラーメン屋。",
+    "address": "長野県佐久市小田井703-1",
+    "hours": "毎日 11:00–14:30, 17:30–21:00",
+    "closed": "なし",
+    "seats": "—（訪問前に公式確認）",
+    "nearest": "—",
+    "phone": "0267-68-8123",
+    "source": {
+      "label": "Google ビジネスプロフィール",
+      "url": "https://maps.google.com/?cid=12642673135269250030"
+    },
+    "body": [
+      "麺'sBLAND 文蔵BLACKは、長野県佐久市にあるお店です。業態は「ラーメン屋」、所在地は長野県佐久市小田井703-1です。マチノワ編集部の特集記事では、「ラーメン屋として佐久市小田井に構える店」・「昼と夜の二部制の営業時間」などを取り上げています。",
+      "営業時間は毎日 11:00–14:30, 17:30–21:00で、定休日はありません。営業時間は変わることがあるため、訪問前に公式サイトやSNS、お電話でご確認ください。"
+    ],
+    "highlights": [
+      "ラーメン屋として佐久市小田井に構える店",
+      "昼と夜の二部制の営業時間",
+      "電話番号とアクセス"
+    ],
+    "tags": [
+      "ラーメン屋",
+      "佐久市",
+      "ランチ"
+    ],
+    "featureId": "麺sBLAND文蔵BLACK"
+  },
+  {
+    "id": "r732",
+    "name": "創作鉄板一 Hajime",
+    "cuisine": "鉄板焼き店",
+    "area": "静岡県・三島市",
+    "region": "shizuoka",
+    "shape": "square",
+    "image": "/restaurants/teleapo-創作鉄板一Hajime/hero.jpg",
+    "heroImages": [
+      "/restaurants/teleapo-創作鉄板一Hajime/hero.jpg",
+      "/restaurants/teleapo-創作鉄板一Hajime/point1.jpg",
+      "/restaurants/teleapo-創作鉄板一Hajime/point2.jpg",
+      "/restaurants/teleapo-創作鉄板一Hajime/point3.jpg",
+      "/restaurants/teleapo-創作鉄板一Hajime/point4.jpg"
+    ],
+    "gallery": [
+      "/restaurants/teleapo-創作鉄板一Hajime/hero.jpg",
+      "/restaurants/teleapo-創作鉄板一Hajime/point1.jpg",
+      "/restaurants/teleapo-創作鉄板一Hajime/point2.jpg",
+      "/restaurants/teleapo-創作鉄板一Hajime/point3.jpg",
+      "/restaurants/teleapo-創作鉄板一Hajime/point4.jpg"
+    ],
+    "desc": "静岡県三島市の鉄板焼き店。最寄りは三島広小路駅より徒歩3分。",
+    "address": "静岡県三島市広小路町8-13 Sビル 3階",
+    "hours": "月・火・木〜日 18:00–00:00",
+    "closed": "水曜日",
+    "seats": "カウンター席・個室2室",
+    "nearest": "三島広小路駅より徒歩3分",
+    "phone": "050-8887-2419",
+    "source": {
+      "label": "Google ビジネスプロフィール",
+      "url": "https://maps.google.com/?cid=13846704088862714709"
+    },
+    "body": [
+      "創作鉄板一 Hajimeは、静岡県三島市にあるお店です。業態は「鉄板焼き店」、所在地は静岡県三島市広小路町8-13 Sビル 3階、最寄りは三島広小路駅より徒歩3分です。マチノワ編集部の特集記事では、「伊豆牛を使った創作鉄板料理」・「カウンター席と個室、一人から宴会まで」などを取り上げています。",
+      "営業時間は月・火・木〜日 18:00–00:00、定休日は水曜日です。席はカウンター席・個室2室。営業時間は変わることがあるため、訪問前に公式サイトやSNS、お電話でご確認ください。"
+    ],
+    "highlights": [
+      "伊豆牛を使った創作鉄板料理",
+      "カウンター席と個室、一人から宴会まで",
+      "地元野菜や海鮮を使った季節の鉄板焼き",
+      "三島広小路駅から徒歩3分、テイクアウト弁当も"
+    ],
+    "tags": [
+      "鉄板焼き店",
+      "三島市",
+      "三島広小路駅",
+      "個室",
+      "接待",
+      "深夜営業"
+    ],
+    "featureId": "創作鉄板一Hajime"
   }
 ];
 
@@ -20247,7 +20634,15 @@ export const ARTICLE_STORE_FEATURE_IDS: Record<string, string> = {
   "r721": "ティース",
   "r722": "MOSH宮古島",
   "r723": "居酒屋いっき豊洲店",
-  "r724": "高山お好み焼きあんと"
+  "r724": "高山お好み焼きあんと",
+  "r725": "食堂cafeまんざいらく",
+  "r726": "てんぷら天英",
+  "r727": "ジンギスカン日光",
+  "r728": "焼焼きんぐ",
+  "r729": "音羽寿司",
+  "r730": "割烹天野",
+  "r731": "麺sBLAND文蔵BLACK",
+  "r732": "創作鉄板一Hajime"
 };
 
 /** 特集記事ID → 店舗ID */
@@ -20672,5 +21067,13 @@ export const ARTICLE_STORE_ID_BY_FEATURE: Record<string, string> = {
   "ティース": "r721",
   "MOSH宮古島": "r722",
   "居酒屋いっき豊洲店": "r723",
-  "高山お好み焼きあんと": "r724"
+  "高山お好み焼きあんと": "r724",
+  "食堂cafeまんざいらく": "r725",
+  "てんぷら天英": "r726",
+  "ジンギスカン日光": "r727",
+  "焼焼きんぐ": "r728",
+  "音羽寿司": "r729",
+  "割烹天野": "r730",
+  "麺sBLAND文蔵BLACK": "r731",
+  "創作鉄板一Hajime": "r732"
 };
