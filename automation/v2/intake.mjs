@@ -103,7 +103,8 @@ export function buildCandidates(raw, { includeRegistered = false } = {}) {
   for (const [tab, def] of Object.entries(TABS)) {
     const { rows, ledger } = raw[tab];
     // 済み = 台帳の D 列(URL)が空でない店だけ。台帳は 2026-10-26 にアポのシートと同じ行の並びに作り直され、記事の無い行にも店名(B列)が入っているため、店名だけでは済みと見なさない
-    const ledNames = new Set(ledger.slice(1).filter((r) => nfc(r[3])).map((r) => nfc(r[1])).filter(Boolean));
+    // D 列に「保留: …」「作成不可: …」の理由が入った行は済みではない(2026-10-26 オーナー「理由を書いといて URL の代わりに」)。URL(http〜)の行だけを済みとする
+    const ledNames = new Set(ledger.slice(1).filter((r) => /^https?:/.test(nfc(r[3]))).map((r) => nfc(r[1])).filter(Boolean));
     const c = def.cols;
     const stat = { rows: 0, registered: 0, excluded: 0, candidates: 0, duplicateNames: [] };
     const seen = new Set();
