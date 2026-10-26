@@ -71,8 +71,9 @@
 .sh-o-tx > span svg { width: calc(10 * var(--u)); height: calc(10 * var(--u)); color: #f08a73; }
 
 /* 特集の記事・店の特集記事 */
-.st-hero { height: calc(250 * var(--u)); }
-.st-card { top: calc(48 * var(--u)); min-height: 0; width: calc(430 * var(--u)); padding-right: calc(30 * var(--u)); }
+/* 2026-10-26: 見出しが 3 行以上になる長い店名でも札の下が切れないよう、札は絶対位置でなく流し込み(位置は今までと同じ: 左 37・上 48)。高さは最低 250 で、札に合わせて伸びる */
+.st-hero { height: auto; min-height: calc(250 * var(--u)); padding-bottom: calc(48 * var(--u)); box-sizing: border-box; }
+.st-card { position: relative; left: auto; top: auto; margin: calc(48 * var(--u)) 0 0 calc(37 * var(--u)); min-height: 0; width: calc(430 * var(--u)); padding-right: calc(30 * var(--u)); }
 .st-card h1 { font-size: calc(22 * var(--u)); line-height: 1.45; letter-spacing: 0.08em; }
 .st-lead { font-size: calc(13.5 * var(--u)); line-height: 2.1; letter-spacing: 0.08em; color: #3b3029; border-left: calc(3 * var(--u)) solid var(--lf-red); padding-left: calc(14 * var(--u)); }
 .st-sec { margin-top: calc(34 * var(--u)); }
@@ -169,7 +170,8 @@
   .sh-o-tx b { font-size: 19px; }
   .sh-o-tx > span { font-size: 12px; }
   .sh-o-tx > span svg { width: 13px; height: 13px; }
-  .st-hero { height: 190px; }
+  /* 2026-10-26: 店名が長くて見出しが 3 行以上になっても札の下が切れないよう、高さは固定でなく「札に合わせて伸びる」(最低 190px。札は今までどおり上から 110px の位置) */
+  .st-hero { height: auto; min-height: 190px; padding-bottom: 0; }
   .st-card { margin-top: 110px; width: calc(100% - 28px); }
   .st-card h1 { font-size: 18px !important; line-height: 1.5; }
   .st-lead { font-size: 14px; line-height: 2; padding-left: 12px; }

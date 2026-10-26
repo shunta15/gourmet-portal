@@ -7148,13 +7148,10 @@
       "images": [
         "/_portal/vshops/tri-life-227/g01.jpg",
         "/_portal/vshops/tri-life-227/g02.jpg",
-        "/_portal/vshops/tri-life-227/g04.jpg",
         "/_portal/vshops/tri-life-227/g05.jpg",
-        "/_portal/vshops/tri-life-227/g06.jpg",
         "/_portal/vshops/tri-life-227/g07.jpg",
         "/_portal/vshops/tri-life-227/g09.jpg",
         "/_portal/vshops/tri-life-227/g10.jpg",
-        "/_portal/vshops/tri-life-227/s03.jpg",
         "/_portal/vshops/tri-life-227/s05.jpg",
         "/_portal/vshops/tri-life-227/s06.jpg",
         "/_portal/vshops/tri-life-227/s07.jpg",
@@ -7181,25 +7178,11 @@
           "height": 675
         },
         {
-          "path": "/_portal/vshops/tri-life-227/g04.jpg",
-          "what": "値札とともに商品が並ぶレジカウンター周辺",
-          "kind": "common",
-          "width": 1200,
-          "height": 900
-        },
-        {
           "path": "/_portal/vshops/tri-life-227/g05.jpg",
           "what": "黒い外壁の建物が通りの角に立つ外観",
           "kind": "exterior",
           "width": 960,
           "height": 1200
-        },
-        {
-          "path": "/_portal/vshops/tri-life-227/g06.jpg",
-          "what": "黒板の案内板と商品棚がある店内",
-          "kind": "common",
-          "width": 1200,
-          "height": 900
         },
         {
           "path": "/_portal/vshops/tri-life-227/g07.jpg",
@@ -7221,13 +7204,6 @@
           "kind": "exterior",
           "width": 1200,
           "height": 900
-        },
-        {
-          "path": "/_portal/vshops/tri-life-227/s03.jpg",
-          "what": "化粧箱に個包装の菓子が並ぶ詰め合わせ",
-          "kind": "meal",
-          "width": 640,
-          "height": 480
         },
         {
           "path": "/_portal/vshops/tri-life-227/s05.jpg",
