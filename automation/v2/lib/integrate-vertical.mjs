@@ -219,8 +219,8 @@ export async function integrateVertical({ store, result, manifest, work, verifie
     featureSkipped: empty.featureSkipped,
     urls: {
       shop: `/${vEn}/shop/${place.id}`,
-      // 店の特集記事のページがあるのはアクティビティ・スポーツ・ステイ・くらしだけ(ビューティー・ボディケア・ペットは店のページ 1 枚)
-      article: hasFeature && ["activity", "sports", "stay", "life"].includes(vEn) ? `/${vEn}/article/${place.id}` : null,
+      // 店の特集記事のページ: ステイ・くらしは店の紹介記事から必ずある。アクティビティ・スポーツは特集記事を作れたときだけ。ビューティー・ボディケア・ペットは店のページ 1 枚
+      article: ["stay", "life"].includes(vEn) || (hasFeature && ["activity", "sports"].includes(vEn)) ? `/${vEn}/article/${place.id}` : null,
     },
   };
 }

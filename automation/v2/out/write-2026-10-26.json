@@ -41,7 +41,7 @@
       "featureNote": null,
       "urls": {
         "shop": "/life/shop/li0005",
-        "article": null
+        "article": "/life/article/li0005"
       },
       "finishedAt": "2026-10-26T06:35:54.081Z"
     },
@@ -79,7 +79,7 @@
       "featureNote": null,
       "urls": {
         "shop": "/life/shop/li0006",
-        "article": null
+        "article": "/life/article/li0006"
       },
       "finishedAt": "2026-10-26T06:35:54.212Z"
     },
@@ -116,7 +116,7 @@
       "featureNote": null,
       "urls": {
         "shop": "/life/shop/li0007",
-        "article": null
+        "article": "/life/article/li0007"
       },
       "finishedAt": "2026-10-26T06:35:54.353Z"
     },
@@ -154,7 +154,7 @@
       "featureNote": null,
       "urls": {
         "shop": "/life/shop/li0008",
-        "article": null
+        "article": "/life/article/li0008"
       },
       "finishedAt": "2026-10-26T06:36:47.506Z"
     },
@@ -210,7 +210,7 @@
       "featureNote": null,
       "urls": {
         "shop": "/life/shop/li0009",
-        "article": null
+        "article": "/life/article/li0009"
       },
       "finishedAt": "2026-10-26T06:36:47.636Z"
     },
@@ -247,7 +247,7 @@
       "featureNote": null,
       "urls": {
         "shop": "/life/shop/li0010",
-        "article": null
+        "article": "/life/article/li0010"
       },
       "finishedAt": "2026-10-26T06:36:47.766Z"
     },
@@ -285,7 +285,7 @@
       "featureNote": null,
       "urls": {
         "shop": "/life/shop/li0011",
-        "article": null
+        "article": "/life/article/li0011"
       },
       "finishedAt": "2026-10-26T06:36:47.896Z"
     },
@@ -322,7 +322,7 @@
       "featureNote": null,
       "urls": {
         "shop": "/life/shop/li0012",
-        "article": null
+        "article": "/life/article/li0012"
       },
       "finishedAt": "2026-10-26T06:36:48.026Z"
     },
@@ -360,7 +360,7 @@
       "featureNote": null,
       "urls": {
         "shop": "/life/shop/li0028",
-        "article": null
+        "article": "/life/article/li0028"
       },
       "finishedAt": "2026-10-26T06:50:21.275Z"
     },
@@ -398,7 +398,7 @@
       "featureNote": null,
       "urls": {
         "shop": "/life/shop/li0013",
-        "article": null
+        "article": "/life/article/li0013"
       },
       "finishedAt": "2026-10-26T06:36:48.168Z"
     },
@@ -435,7 +435,7 @@
       "featureNote": null,
       "urls": {
         "shop": "/life/shop/li0014",
-        "article": null
+        "article": "/life/article/li0014"
       },
       "finishedAt": "2026-10-26T06:36:48.301Z"
     },
@@ -476,7 +476,7 @@
       "featureNote": null,
       "urls": {
         "shop": "/life/shop/li0029",
-        "article": null
+        "article": "/life/article/li0029"
       },
       "finishedAt": "2026-10-26T06:52:33.370Z"
     },
@@ -514,7 +514,7 @@
       "featureNote": null,
       "urls": {
         "shop": "/life/shop/li0015",
-        "article": null
+        "article": "/life/article/li0015"
       },
       "finishedAt": "2026-10-26T06:37:55.875Z"
     },
@@ -552,7 +552,7 @@
       "featureNote": null,
       "urls": {
         "shop": "/life/shop/li0016",
-        "article": null
+        "article": "/life/article/li0016"
       },
       "finishedAt": "2026-10-26T06:39:08.427Z"
     },
@@ -590,7 +590,7 @@
       "featureNote": null,
       "urls": {
         "shop": "/life/shop/li0030",
-        "article": null
+        "article": "/life/article/li0030"
       },
       "finishedAt": "2026-10-26T06:53:03.487Z"
     },
@@ -647,7 +647,7 @@
       "featureNote": null,
       "urls": {
         "shop": "/life/shop/li0017",
-        "article": null
+        "article": "/life/article/li0017"
       },
       "finishedAt": "2026-10-26T06:39:08.566Z"
     },
@@ -684,7 +684,7 @@
       "featureNote": null,
       "urls": {
         "shop": "/life/shop/li0031",
-        "article": null
+        "article": "/life/article/li0031"
       },
       "finishedAt": "2026-10-26T06:53:03.631Z"
     },
@@ -721,7 +721,7 @@
       "featureNote": null,
       "urls": {
         "shop": "/life/shop/li0018",
-        "article": null
+        "article": "/life/article/li0018"
       },
       "finishedAt": "2026-10-26T06:39:08.705Z"
     },
@@ -759,7 +759,7 @@
       "featureNote": null,
       "urls": {
         "shop": "/life/shop/li0019",
-        "article": null
+        "article": "/life/article/li0019"
       },
       "finishedAt": "2026-10-26T06:39:45.556Z"
     },
@@ -797,7 +797,7 @@
       "featureNote": null,
       "urls": {
         "shop": "/life/shop/li0020",
-        "article": null
+        "article": "/life/article/li0020"
       },
       "finishedAt": "2026-10-26T06:40:18.567Z"
     },
@@ -834,7 +834,7 @@
       "featureNote": null,
       "urls": {
         "shop": "/life/shop/li0021",
-        "article": null
+        "article": "/life/article/li0021"
       },
       "finishedAt": "2026-10-26T06:40:18.705Z"
     },
@@ -872,7 +872,7 @@
       "featureNote": null,
       "urls": {
         "shop": "/life/shop/li0022",
-        "article": null
+        "article": "/life/article/li0022"
       },
       "finishedAt": "2026-10-26T06:41:34.443Z"
     },
@@ -909,7 +909,7 @@
       "featureNote": null,
       "urls": {
         "shop": "/life/shop/li0023",
-        "article": null
+        "article": "/life/article/li0023"
       },
       "finishedAt": "2026-10-26T06:41:34.598Z"
     },
@@ -947,7 +947,7 @@
       "featureNote": null,
       "urls": {
         "shop": "/life/shop/li0032",
-        "article": null
+        "article": "/life/article/li0032"
       },
       "finishedAt": "2026-10-26T06:54:39.944Z"
     },
@@ -984,7 +984,7 @@
       "featureNote": null,
       "urls": {
         "shop": "/life/shop/li0024",
-        "article": null
+        "article": "/life/article/li0024"
       },
       "finishedAt": "2026-10-26T06:41:34.749Z"
     },
@@ -1022,7 +1022,7 @@
       "featureNote": null,
       "urls": {
         "shop": "/life/shop/li0025",
-        "article": null
+        "article": "/life/article/li0025"
       },
       "finishedAt": "2026-10-26T06:41:58.454Z"
     },
@@ -1059,7 +1059,7 @@
       "featureNote": null,
       "urls": {
         "shop": "/life/shop/li0026",
-        "article": null
+        "article": "/life/article/li0026"
       },
       "finishedAt": "2026-10-26T06:41:58.584Z"
     },
@@ -1096,7 +1096,7 @@
       "featureNote": null,
       "urls": {
         "shop": "/life/shop/li0027",
-        "article": null
+        "article": "/life/article/li0027"
       },
       "finishedAt": "2026-10-26T06:41:58.721Z"
     }
