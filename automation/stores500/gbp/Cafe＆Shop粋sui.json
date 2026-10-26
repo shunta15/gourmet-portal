@@ -1,0 +1,22 @@
+{
+  "name": "Cafe＆Shop粋 ｓｕｉ",
+  "address": "宮城県白石市福岡蔵本 字鎌先1-58-4",
+  "lat": 38.0251508,
+  "lng": 140.5760567,
+  "category": "コーヒーショップ・喫茶店",
+  "hours": {
+    "月": "09:00–17:00",
+    "火": "定休日",
+    "水": "定休日",
+    "木": "定休日",
+    "金": "09:00–17:00",
+    "土": "09:00–17:00",
+    "日": "09:00–17:00"
+  },
+  "phone": "0224-26-8100",
+  "website": "https://www.sui2018.com/?utm_source=GBP&utm_medium=GBP&utm_term=GBP&utm_content=GBP&utm_campaign=GBP",
+  "priceRange": null,
+  "status": null,
+  "gbpUrl": "https://maps.google.com/?cid=16128210279766534638",
+  "fetchedAt": "2026-10-26T08:29:25.450Z"
+}

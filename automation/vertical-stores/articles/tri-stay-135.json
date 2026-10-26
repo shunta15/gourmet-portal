@@ -1,0 +1,70 @@
+{
+  "key": "tri-stay-135",
+  "headline": "長野県上水内郡小川村にある、古民家を改装した宿とカフェ。和食・中華・洋食のメニューがある",
+  "lede": "長野県上水内郡小川村にある「古民家宿&お食事処-庵木瓜 Iorimokkou」です。古民家を改装した宿とカフェで、冷蔵コンテナを改造したサウナやレーザーディスクのカラオケを備えます。",
+  "sections": [
+    {
+      "heading": "建物と設備",
+      "body": "古民家を改装した宿とカフェです。冷蔵コンテナを改造したサウナがあり、レーザーディスクのカラオケといった珍しい設備も備えます。"
+    },
+    {
+      "heading": "食事",
+      "body": "食事は和食・中華・洋食と幅広いメニューです。"
+    },
+    {
+      "heading": "場所",
+      "body": "住所は長野県上水内郡小川村瀬戸川５０２８−１、電話は090-3142-8436です。営業日は電話で確認できます。"
+    }
+  ],
+  "menus": [],
+  "tags": [],
+  "facts": [
+    {
+      "claim": "住所は長野県上水内郡小川村瀬戸川５０２８−１",
+      "source": "https://maps.google.com/?cid=2979927375064449920",
+      "quote": "長野県上水内郡小川村瀬戸川５０２８−１",
+      "checkedAt": "2026-10-26"
+    },
+    {
+      "claim": "電話は090-3142-8436",
+      "source": "https://maps.google.com/?cid=2979927375064449920",
+      "quote": "090-3142-8436",
+      "checkedAt": "2026-10-26"
+    },
+    {
+      "claim": "古民家を改装した宿とカフェ",
+      "source": "https://www.vill.ogawa.nagano.jp/kankou/docs/64713.html",
+      "quote": "古民家を改装した宿とカフェ",
+      "checkedAt": "2026-10-26"
+    },
+    {
+      "claim": "食事は和食・中華・洋食と幅広いメニュー",
+      "source": "https://www.vill.ogawa.nagano.jp/kankou/docs/64713.html",
+      "quote": "和食・中華・洋食と幅広いメニューがあります",
+      "checkedAt": "2026-10-26"
+    },
+    {
+      "claim": "冷蔵コンテナを改造したサウナがある",
+      "source": "https://www.vill.ogawa.nagano.jp/kankou/docs/64713.html",
+      "quote": "冷蔵コンテナを改造したサウナ",
+      "checkedAt": "2026-10-26"
+    },
+    {
+      "claim": "レーザーディスクのカラオケがある",
+      "source": "https://www.vill.ogawa.nagano.jp/kankou/docs/64713.html",
+      "quote": "レーザーディスクのカラオケ",
+      "checkedAt": "2026-10-26"
+    }
+  ],
+  "sources": [
+    {
+      "label": "小川村観光サイト(庵木瓜紹介ページ)",
+      "url": "https://www.vill.ogawa.nagano.jp/kankou/docs/64713.html"
+    },
+    {
+      "label": "Google マップ",
+      "url": "https://maps.google.com/?cid=2979927375064449920"
+    }
+  ],
+  "notes": "automation/v2/write.mjs が 2026-10-26 に claude -p --model sonnet で作成。事実の裏取り: 6/6 件(quote が出どころにあるもの)。裏取りに通らなかった facts は載せていない。"
+}

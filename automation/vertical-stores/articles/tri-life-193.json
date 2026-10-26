@@ -1,0 +1,78 @@
+{
+  "key": "tri-life-193",
+  "headline": "宮城県栗原市栗駒沼倉にある神社。例祭日は4月29日と9月23日",
+  "lede": "栗原市にある「駒形根神社」です。古来は日宮・大日社・駒形社と称し、俗に「お駒様」と呼ばれてきました。主祭神は大日孁尊、天常立尊、吾勝尊、國常立尊など六柱です。",
+  "sections": [
+    {
+      "heading": "由緒",
+      "body": "古来、日宮・大日社・駒形社と称し、俗に「お駒様」と呼ばれてきました。駒形嶽(栗駒山の古名)を奥宮、沼倉の地に里宮を祀ったと伝えられ、延喜式(901年以降編さん)の神名帳に登載されています。昭和62年には栗駒山の山頂に奥宮が再建されました。"
+    },
+    {
+      "heading": "祭神と例祭",
+      "body": "主祭神は大日孁尊、天常立尊、吾勝尊、國常立尊、天津彦番邇々藝尊、神日本磐余彦火々出見尊の六柱です。例祭日は4月29日と9月23日です。"
+    }
+  ],
+  "menus": [],
+  "tags": [],
+  "facts": [
+    {
+      "claim": "鎮座地は宮城県栗原市栗駒沼倉一ノ宮11",
+      "source": "https://miyagi-jinjacho.or.jp/jinja-search/detail.php?code=310030646",
+      "quote": "宮城県栗原市栗駒沼倉一ノ宮11",
+      "checkedAt": "2026-10-26"
+    },
+    {
+      "claim": "電話番号は0228-45-4866",
+      "source": "https://miyagi-jinjacho.or.jp/jinja-search/detail.php?code=310030646",
+      "quote": "0228-45-4866",
+      "checkedAt": "2026-10-26"
+    },
+    {
+      "claim": "例祭日は4月29日と9月23日",
+      "source": "https://miyagi-jinjacho.or.jp/jinja-search/detail.php?code=310030646",
+      "quote": "例祭日: 4月29日、9月23日",
+      "checkedAt": "2026-10-26"
+    },
+    {
+      "claim": "主祭神は大日孁尊、天常立尊、吾勝尊、國常立尊など六柱",
+      "source": "https://miyagi-jinjacho.or.jp/jinja-search/detail.php?code=310030646",
+      "quote": "大日孁尊、天常立尊、吾勝尊、國常立尊",
+      "checkedAt": "2026-10-26"
+    },
+    {
+      "claim": "古来は日宮・大日社・駒形社と称し、俗にお駒様と親しまれてきた",
+      "source": "https://miyagi-jinjacho.or.jp/jinja-search/detail.php?code=310030646",
+      "quote": "俗にお駒様と親しまれている",
+      "checkedAt": "2026-10-26"
+    },
+    {
+      "claim": "栗駒山の古名である駒形嶽を奥宮、沼倉の地を里宮として祀ったと伝わる",
+      "source": "https://miyagi-jinjacho.or.jp/jinja-search/detail.php?code=310030646",
+      "quote": "駒形嶽（栗駒山の古名）を奥宮",
+      "checkedAt": "2026-10-26"
+    },
+    {
+      "claim": "延喜式(901年以降編さん)の神名帳に登載されている",
+      "source": "https://miyagi-jinjacho.or.jp/jinja-search/detail.php?code=310030646",
+      "quote": "延喜式（901～）神名帳登載",
+      "checkedAt": "2026-10-26"
+    },
+    {
+      "claim": "昭和62年に栗駒山の山頂に奥宮が再建された",
+      "source": "https://miyagi-jinjacho.or.jp/jinja-search/detail.php?code=310030646",
+      "quote": "昭和62年、山頂に奥宮再建",
+      "checkedAt": "2026-10-26"
+    }
+  ],
+  "sources": [
+    {
+      "label": "公式サイト",
+      "url": "https://miyagi-jinjacho.or.jp/jinja-search/detail.php?code=310030646"
+    },
+    {
+      "label": "Google マップ",
+      "url": "https://maps.google.com/?cid=1394474270629022504"
+    }
+  ],
+  "notes": "automation/v2/write.mjs が 2026-10-26 に claude -p --model sonnet で作成。事実の裏取り: 8/8 件(quote が出どころにあるもの)。裏取りに通らなかった facts は載せていない。"
+}

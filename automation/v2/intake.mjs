@@ -7,7 +7,8 @@
  *   トリニティアポ : A=日時 B=店舗名 C=電話 D=URL E=業種 F=ステータス G=備考(住所なし) (H=記事URL)
  *   台帳           : Linkate記事台帳 / トリニティ記事台帳  (A=顧客管理ID/受付日時 B=店舗名 C=記事ID D=URL)
  *
- * 候補 = 台帳に「店名が完全一致(前後の空白を除く・NFC)」で載っていない店。中間一致は使わない。
+ * 候補 = 台帳に「店名が完全一致(前後の空白を除く・NFC)」で載り、かつ D 列(URL)が空でない店(=済み)ではない店。中間一致は使わない。
+ *   (2026-10-26: 台帳をアポのシートと同じ行の並びに作り直したため、店名の有無では済みを判定しない)
  * 業種は vertical-map.json で付ける。決まらなければ「要確認」。
  * 備考(G/H列)は個人情報を含むので読まない・保存しない。
  *
@@ -101,7 +102,8 @@ export function buildCandidates(raw, { includeRegistered = false } = {}) {
   const result = { tabs: {}, candidates: [], excluded: [], registered: {} };
   for (const [tab, def] of Object.entries(TABS)) {
     const { rows, ledger } = raw[tab];
-    const ledNames = new Set(ledger.slice(1).map((r) => nfc(r[1])).filter(Boolean));
+    // 済み = 台帳の D 列(URL)が空でない店だけ。台帳は 2026-10-26 にアポのシートと同じ行の並びに作り直され、記事の無い行にも店名(B列)が入っているため、店名だけでは済みと見なさない
+    const ledNames = new Set(ledger.slice(1).filter((r) => nfc(r[3])).map((r) => nfc(r[1])).filter(Boolean));
     const c = def.cols;
     const stat = { rows: 0, registered: 0, excluded: 0, candidates: 0, duplicateNames: [] };
     const seen = new Set();
@@ -155,7 +157,7 @@ async function main() {
   const raw = await readSheets();
   const res = buildCandidates(raw, { includeRegistered });
   res.generatedAt = new Date().toISOString();
-  res.note = "読むだけ。備考は保存していない。候補=台帳に店名の完全一致(NFC・前後空白除く)で載っていない店";
+  res.note = "読むだけ。備考は保存していない。候補=台帳に店名の完全一致(NFC・前後空白除く)で載り、かつ D列(URL)が空でない店(済み)ではない店";
   mkdirSync(OUT_DIR, { recursive: true });
   const file = path.join(OUT_DIR, `intake-${today()}.json`);
   if (!includeRegistered) writeFileSync(file, JSON.stringify(res, null, 2) + "\n");

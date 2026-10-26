@@ -1,0 +1,22 @@
+{
+  "name": "お福ちゃん",
+  "address": "宮崎県延岡市構口町１丁目81−４",
+  "lat": 32.559699,
+  "lng": 131.6762911,
+  "category": "焼肉店",
+  "hours": {
+    "月": "定休日",
+    "火": "11:00–14:00",
+    "水": "11:00–14:00, 18:00–21:00",
+    "木": "11:00–14:00, 18:00–21:00",
+    "金": "11:00–14:00, 18:00–21:00",
+    "土": "17:00–21:00",
+    "日": "17:00–21:00"
+  },
+  "phone": "080-6168-1589",
+  "website": "https://tabelog.com/miyazaki/A4505/A450501/45010952/?utm_source=GBP&utm_medium=GBP&utm_term=GBP&utm_content=GBP&utm_campaign=GBP",
+  "priceRange": null,
+  "status": null,
+  "gbpUrl": "https://maps.google.com/?cid=14667460119811706196",
+  "fetchedAt": "2026-10-26T08:30:46.132Z"
+}

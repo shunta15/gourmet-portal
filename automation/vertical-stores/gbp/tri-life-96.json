@@ -1,0 +1,40 @@
+{
+  "tab": "トリニティアポ",
+  "tabEn": "tri-life",
+  "row": 96,
+  "sheet": {
+    "name": "救馬溪観音",
+    "address": "",
+    "url": "https://www.google.com/search?q=%E6%95%91%E9%A6%AC%E6%BA%AA%E8%A6%B3%E9%9F%B3+%E5%92%8C%E6%AD%8C%E5%B1%B1%E7%9C%8C%E8%A5%BF%E7%89%9F%E5%A9%81%E9%83%A1%E4%B8%8A%E5%AF%8C%E7%94%B0%E7%94%BA%E7%94%9F%E9%A6%AC313+%E3%82%88%E3%81%BF&sca_esv=4dc8063a2e18b58e&rlz=1C1HKFL_jaJP1236JP1236&biw=1249&bih=906&sxsrf=APpeQnvjU4Z_c38-70yChvAAskiRguCeSA%3A1792385452188&ei=rKHVarP_CtrS2roPkdLM8Q8&uact=5&oq=%E6%95%91%E9%A6%AC%E6%BA%AA%E8%A6%B3%E9%9F%B3+%E5%92%8C%E6%AD%8C%E5%B1%B1%E7%9C%8C%E8%A5%BF%E7%89%9F%E5%A9%81%E9%83%A1%E4%B8%8A%E5%AF%8C%E7%94%B0%E7%94%BA%E7%94%9F%E9%A6%AC313+%E3%82%88%E3%81%BF&gs_lp=Egxnd3Mtd2l6LXNlcnAiROaVkemmrOa6quims-mfsyDlkozmrYzlsbHnnIzopb_niZ_lqYHpg6HkuIrlr4znlLDnlLrnlJ_ppqwzMTMg44KI44G_MgUQIRigAUi0SVDADljmQXADeAGQAQCYAWmgAZwFqgEDNy4xuAEDyAEA-AEBmAIKoALnBsICChAAGEcY1gQYsAPCAgQQIxgnwgIFEAAY7wXCAggQABiABBiiBJgDAIgGAZAGCpIHAzMuN6AHjiGyBwMwLje4B_4FwgcEMy0xMMgHaYAIAQ&sclient=gws-wiz-serp",
+    "type": "お寺",
+    "d1": "",
+    "d2": ""
+  },
+  "urlKind": "search",
+  "route": "第1段(verify-gbp.mjs)で確認済み",
+  "verdict": "一致",
+  "verdictReason": "電話と住所の両方が一致・店名の書き方だけちがう(オーナー 2026-10-26「OK進めていいよ」)。元の判定の理由: 電話は一致したが店名が合わない(電話・住所とも一致なので店名の書き分けの可能性が高い)。電話が一致／店名: different(シート「救馬溪観音」/ マップ「瀧尾山 救馬渓観音」)／住所(検索URL): exact・町名・番地とも一致",
+  "place": {
+    "name": "瀧尾山 救馬渓観音",
+    "address": "和歌山県西牟婁郡上富田町生馬３１３",
+    "category": "仏教寺院",
+    "lat": 33.713966,
+    "lng": 135.428255,
+    "gbpUrl": "https://maps.google.com/?cid=3247570144227406348",
+    "phone": "0739-47-1140",
+    "website": "https://www.sukuma.jp/",
+    "hours": {
+      "月": "07:00–17:00",
+      "火": "07:00–17:00",
+      "水": "07:00–17:00",
+      "木": "07:00–17:00",
+      "金": "07:00–17:00",
+      "土": "07:00–17:00",
+      "日": "07:00–17:00"
+    },
+    "reserveLinks": [],
+    "statusSignals": [],
+    "closedSignal": false
+  },
+  "fetchedAt": "2026-10-26T08:28:43.254Z"
+}

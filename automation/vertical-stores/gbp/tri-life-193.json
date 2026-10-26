@@ -1,0 +1,32 @@
+{
+  "tab": "トリニティアポ",
+  "tabEn": "tri-life",
+  "row": 193,
+  "sheet": {
+    "name": "0228454866",
+    "address": "",
+    "url": "https://www.google.com/search?q=%E9%A7%92%E5%BD%A2%E6%A0%B9%E7%A5%9E%E7%A4%BE+%E5%AE%AE%E5%9F%8E%E7%9C%8C%E6%A0%97%E5%8E%9F%E5%B8%82%E6%A0%97%E9%A7%92%E6%B2%BC%E5%80%89%E5%AD%97%E4%B8%80%E3%81%AE%E5%AE%AE7&oq=%E9%A7%92%E5%BD%A2%E6%A0%B9%E7%A5%9E%E7%A4%BE%09%E5%AE%AE%E5%9F%8E%E7%9C%8C%E6%A0%97%E5%8E%9F%E5%B8%82%E6%A0%97%E9%A7%92%E6%B2%BC%E5%80%89%E5%AD%97%E4%B8%80%E3%81%AE%E5%AE%AE7&gs_lcrp=EgZjaHJvbWUyBggAEEUYOTIHCAEQABjvBTIHCAIQABjvBTIKCAMQABiABBiiBNIBBzE5NmowajmoAgawAgHxBVOn3PYqd61W&sourceid=chrome&source=chrome.ob&ie=UTF-8",
+    "type": "神社",
+    "d1": "",
+    "d2": ""
+  },
+  "urlKind": "search",
+  "route": "第1段(verify-gbp.mjs)で確認済み",
+  "verdict": "一致",
+  "verdictReason": "店名が電話番号・第1段で電話が一致(店名は Google マップの店名)(オーナー 2026-10-26「OK進めていいよ」)。元の判定の理由: シートの店名が電話番号(0228454866)。電話で出たマップの店は「駒形根神社」(電話一致)。店名をオーナーに確認",
+  "place": {
+    "name": "駒形根神社",
+    "address": "宮城県栗原市栗駒沼倉一ノ宮１１",
+    "category": "神社",
+    "lat": 38.8718354,
+    "lng": 140.9448256,
+    "gbpUrl": "https://maps.google.com/?cid=1394474270629022504",
+    "phone": "0228-45-4866",
+    "website": "https://miyagi-jinjacho.or.jp/jinja-search/detail.php?code=310030646",
+    "hours": null,
+    "reserveLinks": [],
+    "statusSignals": [],
+    "closedSignal": false
+  },
+  "fetchedAt": "2026-10-26T08:34:43.345Z"
+}

@@ -1,0 +1,32 @@
+{
+  "tab": "トリニティアポ",
+  "tabEn": "tri-life",
+  "row": 93,
+  "sheet": {
+    "name": "清伝寺",
+    "address": "",
+    "url": "https://www.google.com/search?q=%E6%B8%85%E4%BC%9D%E5%AF%BA%09%E5%A4%A7%E9%98%AA%E5%BA%9C%E6%9E%9A%E6%96%B9%E5%B8%82%E4%B8%89%E6%A0%97%EF%BC%91-%EF%BC%95-%EF%BC%91%EF%BC%94&sca_esv=a25cef74e7aab009&biw=740&bih=663&sxsrf=APpeQnunPKpxSkwWt6G9BikryAPleB8l5w%3A1792378016268&ei=oITVaormD4Xm2roP_s7OqQk&uact=5&oq=%E6%B8%85%E4%BC%9D%E5%AF%BA%09%E5%A4%A7%E9%98%AA%E5%BA%9C%E6%9E%9A%E6%96%B9%E5%B8%82%E4%B8%89%E6%A0%97%EF%BC%91-%EF%BC%95-%EF%BC%91%EF%BC%94&gs_lp=Egxnd3Mtd2l6LXNlcnAiMOa4heS8neWvugnlpKfpmKrlupzmnprmlrnluILkuInmoJfvvJEt77yVLe-8ke-8lDIFEAAY7wUyBRAAGO8FMgUQABjvBUiiBFCYAliYAnABeAGQAQCYAbIBoAGyAaoBAzAuMbgBA8gBAPgBAvgBAZgCAqACwgGoAgrCAgcQIxjqAhgnmAMJ8QXQTw4yi7jOJ5IHAzEuMaAHowGyBwMwLjG4B7gBwgcDMi0yyAcJgAgB&sclient=gws-wiz-serp",
+    "type": "寺",
+    "d1": "",
+    "d2": ""
+  },
+  "urlKind": "search",
+  "route": "第1段(verify-gbp.mjs)で確認済み",
+  "verdict": "一致",
+  "verdictReason": "電話が一致／店名: exact(シート「清伝寺」/ マップ「清伝寺」)／住所(検索URL): exact・町名・番地とも一致",
+  "place": {
+    "name": "清伝寺",
+    "address": "大阪府枚方市三栗１丁目５−１４",
+    "category": "仏教寺院",
+    "lat": 34.8369835,
+    "lng": 135.6585699,
+    "gbpUrl": "https://maps.google.com/?cid=11727493490032615594",
+    "phone": "072-857-7148",
+    "website": null,
+    "hours": null,
+    "reserveLinks": [],
+    "statusSignals": [],
+    "closedSignal": false
+  },
+  "fetchedAt": "2026-10-26T06:15:11.002Z"
+}

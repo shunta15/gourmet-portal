@@ -7,6 +7,8 @@
  *   2. node automation/v2/write-parallel.mjs --concurrency 4        … prompt.md があり result.json が無い店を同時に書く
  *   3. node automation/v2/write.mjs --from-row 80                   … 検査(必要なら 1 回書き直し)と組み込み
  *
+ * --research --max-web N: 材料不足の店を Web 検索で書き直す(Web の道具の回数の上限 N、既定 8)。
+ *
  * 書くのは作業フォルダの result.json だけ。データへの組み込み・記録は 3 の write.mjs が行う。
  */
 import { existsSync, readFileSync, readdirSync, writeFileSync } from "node:fs";
@@ -42,12 +44,13 @@ const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
 console.log(`[${t()}] 認証: ${usingApiKey() ? "API キー(Console のクレジット)" : "端末の claude のログイン"}・予算 ${budget === Infinity ? "なし" : "$" + budget}`);
 console.log(`[${t()}] 開始(同時 ${conc}${watch ? "・取得の完了を待ちながら" : ""})`);
 
+const maxWeb = argv.includes("--max-web") ? Number(argv[argv.indexOf("--max-web") + 1]) || 8 : 8;
 const RESEARCH = `- この店は公式サイトが無く、材料のフォルダだけでは事実が足りなかった店です。今回は WebSearch と WebFetch で、今ネットで分かる事実を集めて書きます(下の「食べログ・ホットペッパー…は使わない」の決まりは、この節の決まりに置き換えます)。
 - 検索は必ず「店名 市区町村」か「電話番号」で行います。ページの住所か電話番号が store.json と一致したページだけを使います(どちらも無いページ・違うページは同名の別の店として無視)。
 - 使ってよい出どころ: 店の公式の SNS・ブログの公開ページ、自治体・観光協会・商店街・地域の情報サイト・新聞の記事、グルメ・予約サイトの店の基本情報(ジャンル・メニューの名前・席・設備・営業の形)。
 - 使ってはいけないもの: 口コミ・評価・点数・ランキング・料金・価格、ほかのサイトの文の書き写し(事実だけ拾い、文は自分で書く)。
 - facts の source には、実際に開いたページの URL を入れ、quote にはそのページの文字をそのまま入れます(あとで機械がそのページを開いて照合します)。
-- WebSearch と WebFetch は合わせて 8 回までにします。事実が少なければ、そのぶん短い記事にします(POINT などの数は事実がある分だけ。足りない所は水増しせず空にする)。それでも書ける事実が店名・住所・営業時間しか無いときだけ、失敗の出口で終えます。
+- WebSearch と WebFetch は合わせて ${maxWeb} 回までにします。事実が少なければ、そのぶん短い記事にします(POINT などの数は事実がある分だけ。足りない所は水増しせず空にする)。それでも書ける事実が店名・住所・営業時間しか無いときだけ、失敗の出口で終えます。
 `;
 
 let ok = 0;

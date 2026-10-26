@@ -5753,5 +5753,60 @@
         "evidence": "月 20:00–03:00"
       }
     ]
+  },
+  "r718": {
+    "articleId": "Cafe＆Shop粋sui",
+    "name": "Cafe＆Shop粋 ｓｕｉ",
+    "tags": [
+      {
+        "tag": "ランチ",
+        "rule": "hours: 開店が14:00以前（11:00以降にかかる営業）",
+        "evidence": "月 09:00–17:00"
+      }
+    ]
+  },
+  "r719": {
+    "articleId": "お福ちゃん",
+    "name": "お福ちゃん",
+    "tags": [
+      {
+        "tag": "ランチ",
+        "rule": "hours: 開店が14:00以前（11:00以降にかかる営業）",
+        "evidence": "火 11:00–14:00"
+      }
+    ]
+  },
+  "r720": {
+    "articleId": "NANNAICYA",
+    "name": "NANNAICYA",
+    "tags": [
+      {
+        "tag": "ランチ",
+        "rule": "hours: 開店が14:00以前（11:00以降にかかる営業）",
+        "evidence": "月 11:00–20:00"
+      }
+    ]
+  },
+  "r721": {
+    "articleId": "ティース",
+    "name": "ティース",
+    "tags": [
+      {
+        "tag": "ランチ",
+        "rule": "hours: 開店が14:00以前（11:00以降にかかる営業）",
+        "evidence": "木 12:00–20:00"
+      }
+    ]
+  },
+  "r722": {
+    "articleId": "MOSH宮古島",
+    "name": "MOSH 宮古島",
+    "tags": [
+      {
+        "tag": "深夜営業",
+        "rule": "hours: 閉店が24:00以降",
+        "evidence": "月 21:00–04:00"
+      }
+    ]
   }
 }

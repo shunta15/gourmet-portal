@@ -1,0 +1,22 @@
+{
+  "name": "NANNAICYA",
+  "address": "石川県金沢市武蔵町１５−１ 金沢スカイホテル B1F CORONA ROAD",
+  "lat": 36.5728035,
+  "lng": 136.6548505,
+  "category": "インド料理店",
+  "hours": {
+    "月": "11:00–20:00",
+    "火": "11:00–20:00",
+    "水": "11:00–20:00",
+    "木": "定休日",
+    "金": "11:00–20:00",
+    "土": "11:00–20:00",
+    "日": "11:00–20:00"
+  },
+  "phone": "050-8881-4962",
+  "website": "https://www.instagram.com/nannaicya/",
+  "priceRange": null,
+  "status": null,
+  "gbpUrl": "https://maps.google.com/?cid=16763836376792413079",
+  "fetchedAt": "2026-10-26T08:32:40.139Z"
+}

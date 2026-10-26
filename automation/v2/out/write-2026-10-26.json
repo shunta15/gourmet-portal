@@ -2,9 +2,9 @@
   "meta": {
     "date": "2026-10-26",
     "startedAt": "2026-10-26T06:12:17.040Z",
-    "verifyFile": "automation/v2/out/verify-2026-10-25.json",
-    "args": "--only-row 93,103,117,138,143,147,187",
-    "updatedAt": "2026-10-26T06:54:39.945Z"
+    "verifyFile": "automation/v2/out/verify-2026-10-26.json",
+    "args": "--only-row 183,193",
+    "updatedAt": "2026-10-26T09:04:10.155Z"
   },
   "environment": null,
   "results": {
@@ -163,19 +163,38 @@
       "row": 93,
       "name": "清伝寺",
       "vertical": "くらし",
-      "status": "失敗",
-      "stage": "claude",
+      "status": "成功",
+      "stage": "done",
       "startedAt": "2026-10-26T06:14:56.299Z",
       "seconds": {
-        "total": 0
+        "total": 50,
+        "claude": 29
       },
       "photos": {
         "candidates": 10,
         "maps": 10,
         "official": 0,
-        "rejectedByMachine": 0
+        "rejectedByMachine": 0,
+        "used": 9,
+        "emptyFrames": 0
       },
-      "reason": "書き手が失敗の出口で終了: 公式サイトなし・Google マップに営業時間表示もなし。外部検索で得られた情報(宗派・河内西国霊場の札所番号など)は複数の出どころで食い違い、裏付けできる確かな事実が店名・住所・電話・業種表示(仏教寺院)のみで、記事本文を書くには材料が足りない。"
+      "check": {
+        "rewrote": true,
+        "shapeProblems": [],
+        "sentenceProblems": 0,
+        "facts": {
+          "total": 4,
+          "verified": 4
+        }
+      },
+      "placeId": "li0033",
+      "featureInGenerated": false,
+      "featureNote": null,
+      "urls": {
+        "shop": "/life/shop/li0033",
+        "article": "/life/article/li0033"
+      },
+      "finishedAt": "2026-10-26T08:57:30.850Z"
     },
     "tri-life-97": {
       "key": "tri-life-97",
@@ -599,8 +618,8 @@
       "row": 143,
       "name": "便利屋 愛三和",
       "vertical": "くらし",
-      "status": "失敗",
-      "stage": "claude",
+      "status": "準備のみ",
+      "stage": "prepared",
       "startedAt": "2026-10-26T06:23:17.732Z",
       "seconds": {
         "total": 0
@@ -1099,6 +1118,816 @@
         "article": "/life/article/li0027"
       },
       "finishedAt": "2026-10-26T06:41:58.721Z"
+    },
+    "tri-life-96": {
+      "key": "tri-life-96",
+      "row": 96,
+      "name": "救馬溪観音",
+      "vertical": "くらし",
+      "status": "成功",
+      "stage": "done",
+      "startedAt": "2026-10-26T08:28:34.867Z",
+      "seconds": {
+        "total": 0
+      },
+      "photos": {
+        "candidates": 14,
+        "maps": 10,
+        "official": 4,
+        "rejectedByMachine": 14,
+        "used": 13,
+        "emptyFrames": 0
+      },
+      "check": {
+        "rewrote": false,
+        "shapeProblems": [],
+        "sentenceProblems": 0,
+        "facts": {
+          "total": 20,
+          "verified": 20
+        }
+      },
+      "placeId": "li0034",
+      "featureInGenerated": false,
+      "featureNote": null,
+      "urls": {
+        "shop": "/life/shop/li0034",
+        "article": "/life/article/li0034"
+      },
+      "finishedAt": "2026-10-26T08:57:30.991Z"
+    },
+    "tri-gourmet-99": {
+      "key": "tri-gourmet-99",
+      "row": 99,
+      "name": "粋",
+      "vertical": "グルメ",
+      "articleId": "Cafe＆Shop粋sui",
+      "status": "成功",
+      "stage": "done",
+      "startedAt": "2026-10-26T08:29:11.794Z",
+      "seconds": {
+        "total": 1
+      },
+      "photos": {
+        "candidates": 24,
+        "maps": 10,
+        "official": 14,
+        "rejectedByMachine": 4,
+        "used": 5,
+        "emptyFrames": 0
+      },
+      "check": {
+        "rewrote": false,
+        "shapeProblems": [],
+        "sentenceProblems": 0,
+        "facts": {
+          "total": 23,
+          "verified": 23
+        }
+      },
+      "storeId": "r718",
+      "onePage": "表に追加(/feature/<記事ID> は /restaurant/<店ID> へ転送)",
+      "storeBuilt": true,
+      "storeNote": null,
+      "urls": {
+        "article": "/feature/Cafe＆Shop粋sui",
+        "shop": "/restaurant/r718"
+      },
+      "finishedAt": "2026-10-26T08:57:31.535Z"
+    },
+    "tri-activity-123": {
+      "key": "tri-activity-123",
+      "row": 123,
+      "name": "IWANOKO",
+      "vertical": "アクティビティ",
+      "status": "失敗",
+      "stage": "claude",
+      "startedAt": "2026-10-26T08:30:00.563Z",
+      "seconds": {
+        "total": 0
+      },
+      "photos": {
+        "candidates": 0,
+        "maps": 0,
+        "official": 0,
+        "rejectedByMachine": 0
+      },
+      "memo": "写真の候補が 0 枚(Google マップ・公式サイトとも取れなかった)。写真なしで続ける",
+      "reason": "書き手が失敗の出口で終了: 公式サイトの文字が無く、Googleマップの情報も店名・住所・業種の表示(スポーツジム)のみで営業時間・電話・写真候補も無いため、事実に基づく記事とカテゴリ判定ができない"
+    },
+    "tri-gourmet-141": {
+      "key": "tri-gourmet-141",
+      "row": 141,
+      "name": "080-6168-1589",
+      "vertical": "グルメ",
+      "articleId": "お福ちゃん",
+      "status": "成功",
+      "stage": "done",
+      "startedAt": "2026-10-26T08:30:30.023Z",
+      "seconds": {
+        "total": 1
+      },
+      "photos": {
+        "candidates": 10,
+        "maps": 10,
+        "official": 0,
+        "rejectedByMachine": 0,
+        "used": 5,
+        "emptyFrames": 0
+      },
+      "check": {
+        "rewrote": false,
+        "shapeProblems": [],
+        "sentenceProblems": 0,
+        "facts": {
+          "total": 7,
+          "verified": 7
+        }
+      },
+      "storeId": "r719",
+      "onePage": "表に追加(/feature/<記事ID> は /restaurant/<店ID> へ転送)",
+      "storeBuilt": true,
+      "storeNote": null,
+      "urls": {
+        "article": "/feature/お福ちゃん",
+        "shop": "/restaurant/r719"
+      },
+      "finishedAt": "2026-10-26T08:57:32.430Z"
+    },
+    "tri-gourmet-144": {
+      "key": "tri-gourmet-144",
+      "row": 144,
+      "name": "Bar MOSH",
+      "vertical": "グルメ",
+      "articleId": "MOSH宮古島",
+      "status": "成功",
+      "stage": "done",
+      "startedAt": "2026-10-26T08:31:07.269Z",
+      "seconds": {
+        "total": 1
+      },
+      "photos": {
+        "candidates": 9,
+        "maps": 9,
+        "official": 0,
+        "rejectedByMachine": 1,
+        "used": 5,
+        "emptyFrames": 0
+      },
+      "check": {
+        "rewrote": false,
+        "shapeProblems": [],
+        "sentenceProblems": 0,
+        "facts": {
+          "total": 12,
+          "verified": 12
+        }
+      },
+      "storeId": "r722",
+      "onePage": "表に追加(/feature/<記事ID> は /restaurant/<店ID> へ転送)",
+      "storeBuilt": true,
+      "storeNote": null,
+      "urls": {
+        "article": "/feature/MOSH宮古島",
+        "shop": "/restaurant/r722"
+      },
+      "finishedAt": "2026-10-26T09:02:22.781Z"
+    },
+    "tri-life-148": {
+      "key": "tri-life-148",
+      "row": 148,
+      "name": "06-6441-6449",
+      "vertical": "くらし",
+      "status": "成功",
+      "stage": "done",
+      "startedAt": "2026-10-26T08:31:39.171Z",
+      "seconds": {
+        "total": 0
+      },
+      "photos": {
+        "candidates": 20,
+        "maps": 10,
+        "official": 10,
+        "rejectedByMachine": 8,
+        "used": 16,
+        "emptyFrames": 0
+      },
+      "check": {
+        "rewrote": false,
+        "shapeProblems": [],
+        "sentenceProblems": 0,
+        "facts": {
+          "total": 10,
+          "verified": 10
+        }
+      },
+      "placeId": "li0035",
+      "featureInGenerated": false,
+      "featureNote": null,
+      "urls": {
+        "shop": "/life/shop/li0035",
+        "article": "/life/article/li0035"
+      },
+      "finishedAt": "2026-10-26T08:57:32.595Z"
+    },
+    "tri-gourmet-152": {
+      "key": "tri-gourmet-152",
+      "row": 152,
+      "name": "ナンナイチャ",
+      "vertical": "グルメ",
+      "articleId": "NANNAICYA",
+      "status": "成功",
+      "stage": "done",
+      "startedAt": "2026-10-26T08:32:25.634Z",
+      "seconds": {
+        "total": 1
+      },
+      "photos": {
+        "candidates": 10,
+        "maps": 10,
+        "official": 0,
+        "rejectedByMachine": 0,
+        "used": 3,
+        "emptyFrames": 1
+      },
+      "check": {
+        "rewrote": false,
+        "shapeProblems": [],
+        "sentenceProblems": 0,
+        "facts": {
+          "total": 5,
+          "verified": 5
+        }
+      },
+      "storeId": "r720",
+      "onePage": "表に追加(/feature/<記事ID> は /restaurant/<店ID> へ転送)",
+      "storeBuilt": true,
+      "storeNote": null,
+      "urls": {
+        "article": "/feature/NANNAICYA",
+        "shop": "/restaurant/r720"
+      },
+      "finishedAt": "2026-10-26T08:57:33.201Z"
+    },
+    "tri-gourmet-181": {
+      "key": "tri-gourmet-181",
+      "row": 181,
+      "name": "TEACE Teasalon&Interior",
+      "vertical": "グルメ",
+      "articleId": "ティース",
+      "status": "成功",
+      "stage": "done",
+      "startedAt": "2026-10-26T08:32:59.174Z",
+      "seconds": {
+        "total": 1
+      },
+      "photos": {
+        "candidates": 25,
+        "maps": 10,
+        "official": 15,
+        "rejectedByMachine": 3,
+        "used": 5,
+        "emptyFrames": 1
+      },
+      "check": {
+        "rewrote": false,
+        "shapeProblems": [],
+        "sentenceProblems": 0,
+        "facts": {
+          "total": 19,
+          "verified": 19
+        }
+      },
+      "storeId": "r721",
+      "onePage": "表に追加(/feature/<記事ID> は /restaurant/<店ID> へ転送)",
+      "storeBuilt": true,
+      "storeNote": null,
+      "urls": {
+        "article": "/feature/ティース",
+        "shop": "/restaurant/r721"
+      },
+      "finishedAt": "2026-10-26T08:57:33.780Z"
+    },
+    "tri-gourmet-183": {
+      "key": "tri-gourmet-183",
+      "row": 183,
+      "name": "090-2248-3568",
+      "vertical": "グルメ",
+      "articleId": ".tenn",
+      "status": "失敗",
+      "stage": "claude",
+      "startedAt": "2026-10-26T08:33:49.237Z",
+      "seconds": {
+        "total": 0
+      },
+      "photos": {
+        "candidates": 10,
+        "maps": 10,
+        "official": 0,
+        "rejectedByMachine": 0
+      },
+      "reason": "書き手が失敗の出口で終了: 公式サイト・SNSが特定できず、住所または電話番号が一致する外部ページも見つからなかった。事実は店名・住所・営業時間のみでPOINTを3つ以上書けない。さらに候補写真(g01〜g10)はすべて「Black Pool Hamburger Cafe」という別店舗の看板が写っており、この店の実写として使用できない。"
+    },
+    "tri-life-193": {
+      "key": "tri-life-193",
+      "row": 193,
+      "name": "0228454866",
+      "vertical": "くらし",
+      "status": "成功",
+      "stage": "done",
+      "startedAt": "2026-10-26T08:34:27.272Z",
+      "seconds": {
+        "total": 41,
+        "claude": 41
+      },
+      "photos": {
+        "candidates": 10,
+        "maps": 10,
+        "official": 0,
+        "rejectedByMachine": 18,
+        "used": 10,
+        "emptyFrames": 0
+      },
+      "check": {
+        "rewrote": true,
+        "shapeProblems": [],
+        "sentenceProblems": 0,
+        "facts": {
+          "total": 8,
+          "verified": 8
+        }
+      },
+      "placeId": "li0036",
+      "featureInGenerated": false,
+      "featureNote": null,
+      "urls": {
+        "shop": "/life/shop/li0036",
+        "article": "/life/article/li0036"
+      },
+      "finishedAt": "2026-10-26T09:04:10.154Z"
+    },
+    "tri-life-202": {
+      "key": "tri-life-202",
+      "row": 202,
+      "name": "四條畷神社",
+      "vertical": "くらし",
+      "status": "準備のみ",
+      "stage": "prepared",
+      "startedAt": "2026-10-26T08:35:09.915Z",
+      "seconds": {
+        "total": 47
+      },
+      "photos": {
+        "candidates": 23,
+        "maps": 10,
+        "official": 13,
+        "rejectedByMachine": 5
+      }
+    },
+    "tri-life-203": {
+      "key": "tri-life-203",
+      "row": 203,
+      "name": "胎蔵寺",
+      "vertical": "くらし",
+      "status": "準備のみ",
+      "stage": "prepared",
+      "startedAt": "2026-10-26T08:35:56.937Z",
+      "seconds": {
+        "total": 49
+      },
+      "photos": {
+        "candidates": 28,
+        "maps": 10,
+        "official": 18,
+        "rejectedByMachine": 0
+      }
+    },
+    "tri-life-204": {
+      "key": "tri-life-204",
+      "row": 204,
+      "name": "安国寺",
+      "vertical": "くらし",
+      "status": "準備のみ",
+      "stage": "prepared",
+      "startedAt": "2026-10-26T08:36:45.980Z",
+      "seconds": {
+        "total": 34
+      },
+      "photos": {
+        "candidates": 10,
+        "maps": 10,
+        "official": 0,
+        "rejectedByMachine": 0
+      }
+    },
+    "tri-life-205": {
+      "key": "tri-life-205",
+      "row": 205,
+      "name": "大阪護國神社",
+      "vertical": "くらし",
+      "status": "準備のみ",
+      "stage": "prepared",
+      "startedAt": "2026-10-26T08:37:19.858Z",
+      "seconds": {
+        "total": 45
+      },
+      "photos": {
+        "candidates": 15,
+        "maps": 10,
+        "official": 5,
+        "rejectedByMachine": 13
+      }
+    },
+    "tri-activity-206": {
+      "key": "tri-activity-206",
+      "row": 206,
+      "name": "高山スカイセーリングクラブ",
+      "vertical": "アクティビティ",
+      "status": "準備のみ",
+      "stage": "prepared",
+      "startedAt": "2026-10-26T08:38:05.078Z",
+      "seconds": {
+        "total": 45
+      },
+      "photos": {
+        "candidates": 13,
+        "maps": 10,
+        "official": 3,
+        "rejectedByMachine": 1
+      }
+    },
+    "tri-life-207": {
+      "key": "tri-life-207",
+      "row": 207,
+      "name": "八坂神社",
+      "vertical": "くらし",
+      "status": "準備のみ",
+      "stage": "prepared",
+      "startedAt": "2026-10-26T08:38:50.500Z",
+      "seconds": {
+        "total": 42
+      },
+      "photos": {
+        "candidates": 12,
+        "maps": 10,
+        "official": 2,
+        "rejectedByMachine": 16
+      }
+    },
+    "tri-life-208": {
+      "key": "tri-life-208",
+      "row": 208,
+      "name": "日吉神社",
+      "vertical": "くらし",
+      "status": "準備のみ",
+      "stage": "prepared",
+      "startedAt": "2026-10-26T08:39:32.929Z",
+      "seconds": {
+        "total": 38
+      },
+      "photos": {
+        "candidates": 10,
+        "maps": 10,
+        "official": 0,
+        "rejectedByMachine": 18
+      }
+    },
+    "tri-life-209": {
+      "key": "tri-life-209",
+      "row": 209,
+      "name": "飯津佐和乃神社",
+      "vertical": "くらし",
+      "status": "準備のみ",
+      "stage": "prepared",
+      "startedAt": "2026-10-26T08:40:11.236Z",
+      "seconds": {
+        "total": 42
+      },
+      "photos": {
+        "candidates": 13,
+        "maps": 10,
+        "official": 3,
+        "rejectedByMachine": 15
+      }
+    },
+    "tri-beauty-210": {
+      "key": "tri-beauty-210",
+      "row": 210,
+      "name": "Ｍ’s labo. エムズラボ",
+      "vertical": "ビューティー",
+      "status": "準備のみ",
+      "stage": "prepared",
+      "startedAt": "2026-10-26T08:40:53.209Z",
+      "seconds": {
+        "total": 42
+      },
+      "photos": {
+        "candidates": 15,
+        "maps": 9,
+        "official": 6,
+        "rejectedByMachine": 13
+      }
+    },
+    "tri-life-211": {
+      "key": "tri-life-211",
+      "row": 211,
+      "name": "十楽寺(湖国甲賀三大仏)...",
+      "vertical": "くらし",
+      "status": "準備のみ",
+      "stage": "prepared",
+      "startedAt": "2026-10-26T08:41:35.237Z",
+      "seconds": {
+        "total": 44
+      },
+      "photos": {
+        "candidates": 10,
+        "maps": 10,
+        "official": 0,
+        "rejectedByMachine": 18
+      }
+    },
+    "tri-gourmet-212": {
+      "key": "tri-gourmet-212",
+      "row": 212,
+      "name": "居酒屋いっき豊洲店",
+      "vertical": "グルメ",
+      "articleId": "居酒屋いっき豊洲店",
+      "status": "準備のみ",
+      "stage": "prepared",
+      "startedAt": "2026-10-26T08:42:19.162Z",
+      "seconds": {
+        "total": 41
+      },
+      "photos": {
+        "candidates": 11,
+        "maps": 10,
+        "official": 1,
+        "rejectedByMachine": 1
+      }
+    },
+    "tri-gourmet-213": {
+      "key": "tri-gourmet-213",
+      "row": 213,
+      "name": "高山お好み焼き あんと",
+      "vertical": "グルメ",
+      "articleId": "高山お好み焼きあんと",
+      "status": "準備のみ",
+      "stage": "prepared",
+      "startedAt": "2026-10-26T08:42:59.850Z",
+      "seconds": {
+        "total": 32
+      },
+      "photos": {
+        "candidates": 10,
+        "maps": 10,
+        "official": 0,
+        "rejectedByMachine": 0
+      }
+    },
+    "tri-life-214": {
+      "key": "tri-life-214",
+      "row": 214,
+      "name": "長谷寺",
+      "vertical": "くらし",
+      "status": "準備のみ",
+      "stage": "prepared",
+      "startedAt": "2026-10-26T08:43:32.198Z",
+      "seconds": {
+        "total": 37
+      },
+      "photos": {
+        "candidates": 10,
+        "maps": 10,
+        "official": 0,
+        "rejectedByMachine": 0
+      }
+    },
+    "tri-gourmet-215": {
+      "key": "tri-gourmet-215",
+      "row": 215,
+      "name": "まんざいらく",
+      "vertical": "グルメ",
+      "articleId": "食堂cafeまんざいらく",
+      "status": "準備のみ",
+      "stage": "prepared",
+      "startedAt": "2026-10-26T08:44:09.113Z",
+      "seconds": {
+        "total": 32
+      },
+      "photos": {
+        "candidates": 10,
+        "maps": 10,
+        "official": 0,
+        "rejectedByMachine": 0
+      }
+    },
+    "tri-gourmet-216": {
+      "key": "tri-gourmet-216",
+      "row": 216,
+      "name": "てんぷら天英",
+      "vertical": "グルメ",
+      "articleId": "てんぷら天英",
+      "status": "準備のみ",
+      "stage": "prepared",
+      "startedAt": "2026-10-26T08:44:41.185Z",
+      "seconds": {
+        "total": 47
+      },
+      "photos": {
+        "candidates": 26,
+        "maps": 10,
+        "official": 16,
+        "rejectedByMachine": 2
+      }
+    },
+    "tri-gourmet-217": {
+      "key": "tri-gourmet-217",
+      "row": 217,
+      "name": "ジンギスカン日光",
+      "vertical": "グルメ",
+      "articleId": "ジンギスカン日光",
+      "status": "準備のみ",
+      "stage": "prepared",
+      "startedAt": "2026-10-26T08:45:28.597Z",
+      "seconds": {
+        "total": 40
+      },
+      "photos": {
+        "candidates": 9,
+        "maps": 9,
+        "official": 0,
+        "rejectedByMachine": 19
+      }
+    },
+    "tri-gourmet-218": {
+      "key": "tri-gourmet-218",
+      "row": 218,
+      "name": "焼焼 きんぐ",
+      "vertical": "グルメ",
+      "articleId": "焼焼きんぐ",
+      "status": "準備のみ",
+      "stage": "prepared",
+      "startedAt": "2026-10-26T08:46:09.074Z",
+      "seconds": {
+        "total": 32
+      },
+      "photos": {
+        "candidates": 10,
+        "maps": 10,
+        "official": 0,
+        "rejectedByMachine": 0
+      }
+    },
+    "tri-gourmet-221": {
+      "key": "tri-gourmet-221",
+      "row": 221,
+      "name": "音羽寿司",
+      "vertical": "グルメ",
+      "articleId": "音羽寿司",
+      "status": "準備のみ",
+      "stage": "prepared",
+      "startedAt": "2026-10-26T08:46:40.766Z",
+      "seconds": {
+        "total": 33
+      },
+      "photos": {
+        "candidates": 10,
+        "maps": 10,
+        "official": 0,
+        "rejectedByMachine": 0
+      }
+    },
+    "tri-gourmet-222": {
+      "key": "tri-gourmet-222",
+      "row": 222,
+      "name": "割烹天野",
+      "vertical": "グルメ",
+      "articleId": "割烹天野",
+      "status": "準備のみ",
+      "stage": "prepared",
+      "startedAt": "2026-10-26T08:47:13.760Z",
+      "seconds": {
+        "total": 33
+      },
+      "photos": {
+        "candidates": 10,
+        "maps": 10,
+        "official": 0,
+        "rejectedByMachine": 0
+      }
+    },
+    "tri-gourmet-223": {
+      "key": "tri-gourmet-223",
+      "row": 223,
+      "name": "文蔵ＢＬＡＣＫ",
+      "vertical": "グルメ",
+      "articleId": "麺sBLAND文蔵BLACK",
+      "status": "準備のみ",
+      "stage": "prepared",
+      "startedAt": "2026-10-26T08:47:47.062Z",
+      "seconds": {
+        "total": 31
+      },
+      "photos": {
+        "candidates": 10,
+        "maps": 10,
+        "official": 0,
+        "rejectedByMachine": 0
+      }
+    },
+    "tri-gourmet-226": {
+      "key": "tri-gourmet-226",
+      "row": 226,
+      "name": "創作鉄板一 Hajime",
+      "vertical": "グルメ",
+      "articleId": "創作鉄板一Hajime",
+      "status": "準備のみ",
+      "stage": "prepared",
+      "startedAt": "2026-10-26T08:48:18.560Z",
+      "seconds": {
+        "total": 42
+      },
+      "photos": {
+        "candidates": 10,
+        "maps": 10,
+        "official": 0,
+        "rejectedByMachine": 18
+      }
+    },
+    "tri-gourmet-228": {
+      "key": "tri-gourmet-228",
+      "row": 228,
+      "name": "AMBER329",
+      "vertical": "グルメ",
+      "articleId": "AMBER329【南区バー】",
+      "status": "準備のみ",
+      "stage": "prepared",
+      "startedAt": "2026-10-26T08:49:00.951Z",
+      "seconds": {
+        "total": 31
+      },
+      "photos": {
+        "candidates": 9,
+        "maps": 9,
+        "official": 0,
+        "rejectedByMachine": 1
+      }
+    },
+    "tri-gourmet-84": {
+      "key": "tri-gourmet-84",
+      "row": 84,
+      "name": "宿カフェ Hale Liko",
+      "vertical": "グルメ",
+      "articleId": "宿カフェHaleLiko",
+      "status": "準備のみ",
+      "stage": "prepared",
+      "startedAt": "2026-10-26T08:50:44.147Z",
+      "seconds": {
+        "total": 0
+      },
+      "photos": {
+        "candidates": 10,
+        "maps": 10,
+        "official": 0,
+        "rejectedByMachine": 0
+      }
+    },
+    "tri-stay-135": {
+      "key": "tri-stay-135",
+      "row": 135,
+      "name": "古民家宿&お食事処-庵木瓜 Iorimokkou",
+      "vertical": "ステイ",
+      "status": "成功",
+      "stage": "done",
+      "startedAt": "2026-10-26T08:50:44.269Z",
+      "seconds": {
+        "total": 0
+      },
+      "photos": {
+        "candidates": 9,
+        "maps": 9,
+        "official": 0,
+        "rejectedByMachine": 0,
+        "used": 9,
+        "emptyFrames": 0
+      },
+      "check": {
+        "rewrote": false,
+        "shapeProblems": [],
+        "sentenceProblems": 0,
+        "facts": {
+          "total": 6,
+          "verified": 6
+        }
+      },
+      "placeId": "st0015",
+      "featureInGenerated": false,
+      "featureNote": null,
+      "urls": {
+        "shop": "/stay/shop/st0015",
+        "article": "/stay/article/st0015"
+      },
+      "finishedAt": "2026-10-26T08:57:31.846Z"
     }
   }
 }

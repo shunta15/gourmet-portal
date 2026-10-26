@@ -444,6 +444,11 @@ export const ONE_PAGE_SHOP_OF_FEATURE: Readonly<Record<string, string>> = {
   "BoulangerieReve想": "r715", // Ｂｏｕｌａｎｇｅｒｉｅ Ｒｅｖｅ想
   "おうち酒場BoNono": "r716", // おうち酒場 BoNono
   "BeachbarCalypso": "r717", // Beach bar Calypso
+  "Cafe＆Shop粋sui": "r718", // Cafe＆Shop粋 ｓｕｉ
+  "お福ちゃん": "r719", // お福ちゃん
+  "NANNAICYA": "r720", // NANNAICYA
+  "ティース": "r721", // ティース
+  "MOSH宮古島": "r722", // MOSH 宮古島
 };
 
 const NFC = (s: string) => s.normalize("NFC");

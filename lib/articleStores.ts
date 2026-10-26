@@ -19473,6 +19473,254 @@ export const ARTICLE_STORES: Restaurant[] = [
       "深夜営業"
     ],
     "featureId": "BeachbarCalypso"
+  },
+  {
+    "id": "r718",
+    "name": "Cafe＆Shop粋 ｓｕｉ",
+    "cuisine": "コーヒーショップ・喫茶店",
+    "area": "宮城県・白石市",
+    "region": "miyagi",
+    "shape": "square",
+    "image": "/restaurants/teleapo-Cafe＆Shop粋sui/hero.jpg",
+    "heroImages": [
+      "/restaurants/teleapo-Cafe＆Shop粋sui/hero.jpg",
+      "/restaurants/teleapo-Cafe＆Shop粋sui/point1.jpg",
+      "/restaurants/teleapo-Cafe＆Shop粋sui/point2.jpg",
+      "/restaurants/teleapo-Cafe＆Shop粋sui/point3.jpg",
+      "/restaurants/teleapo-Cafe＆Shop粋sui/point4.jpg"
+    ],
+    "gallery": [
+      "/restaurants/teleapo-Cafe＆Shop粋sui/hero.jpg",
+      "/restaurants/teleapo-Cafe＆Shop粋sui/point1.jpg",
+      "/restaurants/teleapo-Cafe＆Shop粋sui/point2.jpg",
+      "/restaurants/teleapo-Cafe＆Shop粋sui/point3.jpg",
+      "/restaurants/teleapo-Cafe＆Shop粋sui/point4.jpg"
+    ],
+    "desc": "宮城県白石市のコーヒーショップ・喫茶店。",
+    "address": "宮城県白石市福岡蔵本 字鎌先1-58-4",
+    "hours": "月・金〜日 09:00–17:00",
+    "closed": "火曜・水曜・木曜",
+    "seats": "—（訪問前に公式確認）",
+    "nearest": "—",
+    "phone": "0224-26-8100",
+    "source": {
+      "label": "Google ビジネスプロフィール",
+      "url": "https://maps.google.com/?cid=16128210279766534638"
+    },
+    "body": [
+      "Cafe＆Shop粋 ｓｕｉは、宮城県白石市にあるお店です。業態は「コーヒーショップ・喫茶店」、所在地は宮城県白石市福岡蔵本 字鎌先1-58-4です。マチノワ編集部の特集記事では、「「すぐれたものを集める」という店名と宮城県・白石市の名産品」・「杉の木を使用した店内と20席のカフェスペース」などを取り上げています。",
+      "営業時間は月・金〜日 09:00–17:00、定休日は火曜・水曜・木曜です。営業時間は変わることがあるため、訪問前に公式サイトやSNS、お電話でご確認ください。"
+    ],
+    "highlights": [
+      "「すぐれたものを集める」という店名と宮城県・白石市の名産品",
+      "杉の木を使用した店内と20席のカフェスペース",
+      "白石温麺やコッペパン、手作りケーキのカフェメニュー",
+      "アクセスと営業情報"
+    ],
+    "tags": [
+      "コーヒーショップ・喫茶店",
+      "白石市",
+      "ランチ"
+    ],
+    "featureId": "Cafe＆Shop粋sui"
+  },
+  {
+    "id": "r719",
+    "name": "お福ちゃん",
+    "cuisine": "焼肉店",
+    "area": "宮崎県・延岡市",
+    "region": "miyazaki",
+    "shape": "square",
+    "image": "/restaurants/teleapo-お福ちゃん/hero.jpg",
+    "heroImages": [
+      "/restaurants/teleapo-お福ちゃん/hero.jpg",
+      "/restaurants/teleapo-お福ちゃん/point1.jpg",
+      "/restaurants/teleapo-お福ちゃん/point2.jpg",
+      "/restaurants/teleapo-お福ちゃん/point3.jpg",
+      "/restaurants/teleapo-お福ちゃん/point4.jpg"
+    ],
+    "gallery": [
+      "/restaurants/teleapo-お福ちゃん/hero.jpg",
+      "/restaurants/teleapo-お福ちゃん/point1.jpg",
+      "/restaurants/teleapo-お福ちゃん/point2.jpg",
+      "/restaurants/teleapo-お福ちゃん/point3.jpg",
+      "/restaurants/teleapo-お福ちゃん/point4.jpg"
+    ],
+    "desc": "宮崎県延岡市の焼肉店。",
+    "address": "宮崎県延岡市構口町1丁目81-4",
+    "hours": "火 11:00–14:00 / 水〜金 11:00–14:00, 18:00–21:00 / 土・日 17:00–21:00",
+    "closed": "月曜日",
+    "seats": "—（訪問前に公式確認）",
+    "nearest": "—",
+    "phone": "080-6168-1589",
+    "source": {
+      "label": "Google ビジネスプロフィール",
+      "url": "https://maps.google.com/?cid=14667460119811706196"
+    },
+    "body": [
+      "お福ちゃんは、宮崎県延岡市にあるお店です。業態は「焼肉店」、所在地は宮崎県延岡市構口町1丁目81-4です。マチノワ編集部の特集記事では、「構口町で営業する焼肉店」・「火曜から金曜は昼の時間帯に営業」などを取り上げています。",
+      "営業時間は火 11:00–14:00 / 水〜金 11:00–14:00, 18:00–21:00 / 土・日 17:00–21:00、定休日は月曜日です。営業時間は変わることがあるため、訪問前に公式サイトやSNS、お電話でご確認ください。"
+    ],
+    "highlights": [
+      "構口町で営業する焼肉店",
+      "火曜から金曜は昼の時間帯に営業",
+      "土曜と日曜は夜のみの営業",
+      "電話での問い合わせ先"
+    ],
+    "tags": [
+      "焼肉店",
+      "延岡市",
+      "ランチ"
+    ],
+    "featureId": "お福ちゃん"
+  },
+  {
+    "id": "r720",
+    "name": "NANNAICYA",
+    "cuisine": "インド料理店",
+    "area": "石川県・金沢市",
+    "region": "ishikawa",
+    "shape": "square",
+    "image": "/restaurants/teleapo-NANNAICYA/hero.jpg",
+    "heroImages": [
+      "/restaurants/teleapo-NANNAICYA/hero.jpg",
+      "/restaurants/teleapo-NANNAICYA/point1.jpg",
+      "/restaurants/teleapo-NANNAICYA/point2.jpg"
+    ],
+    "gallery": [
+      "/restaurants/teleapo-NANNAICYA/hero.jpg",
+      "/restaurants/teleapo-NANNAICYA/point1.jpg",
+      "/restaurants/teleapo-NANNAICYA/point2.jpg"
+    ],
+    "desc": "石川県金沢市のインド料理店。",
+    "address": "石川県金沢市武蔵町15-1 金沢スカイホテル B1F CORONA ROAD",
+    "hours": "月〜水・金〜日 11:00–20:00",
+    "closed": "木曜日",
+    "seats": "—（訪問前に公式確認）",
+    "nearest": "—",
+    "phone": "050-8881-4962",
+    "instagram": "https://www.instagram.com/nannaicya",
+    "source": {
+      "label": "Google ビジネスプロフィール",
+      "url": "https://maps.google.com/?cid=16763836376792413079"
+    },
+    "body": [
+      "NANNAICYAは、石川県金沢市にあるお店です。業態は「インド料理店」、所在地は石川県金沢市武蔵町15-1 金沢スカイホテル B1F CORONA ROADです。マチノワ編集部の特集記事では、「インド料理店として営業」・「金沢スカイホテル地下のCORONA ROADに立地」などを取り上げています。",
+      "営業時間は月〜水・金〜日 11:00–20:00、定休日は木曜日です。営業時間は変わることがあるため、訪問前に公式サイトやSNS、お電話でご確認ください。"
+    ],
+    "highlights": [
+      "インド料理店として営業",
+      "金沢スカイホテル地下のCORONA ROADに立地",
+      "営業時間とアクセス"
+    ],
+    "tags": [
+      "インド料理店",
+      "金沢市",
+      "ランチ"
+    ],
+    "featureId": "NANNAICYA"
+  },
+  {
+    "id": "r721",
+    "name": "ティース",
+    "cuisine": "茶葉販売店",
+    "area": "兵庫県・川西市",
+    "region": "hyogo",
+    "shape": "square",
+    "image": "/restaurants/teleapo-ティース/hero.jpg",
+    "heroImages": [
+      "/restaurants/teleapo-ティース/hero.jpg",
+      "/restaurants/teleapo-ティース/point1.jpg",
+      "/restaurants/teleapo-ティース/point2.jpg",
+      "/restaurants/teleapo-ティース/point4.jpg",
+      "/restaurants/teleapo-ティース/point5.jpg"
+    ],
+    "gallery": [
+      "/restaurants/teleapo-ティース/hero.jpg",
+      "/restaurants/teleapo-ティース/point1.jpg",
+      "/restaurants/teleapo-ティース/point2.jpg",
+      "/restaurants/teleapo-ティース/point4.jpg",
+      "/restaurants/teleapo-ティース/point5.jpg"
+    ],
+    "desc": "兵庫県川西市の茶葉販売店。",
+    "address": "兵庫県川西市火打1丁目21-13 1F",
+    "hours": "木〜日 12:00–20:00",
+    "closed": "月曜・火曜・水曜",
+    "seats": "—（訪問前に公式確認）",
+    "nearest": "—",
+    "phone": "072-703-3683",
+    "source": {
+      "label": "Google ビジネスプロフィール",
+      "url": "https://maps.google.com/?cid=4017399311631213505"
+    },
+    "body": [
+      "ティースは、兵庫県川西市にあるお店です。業態は「茶葉販売店」、所在地は兵庫県川西市火打1丁目21-13 1Fです。マチノワ編集部の特集記事では、「1000種類以上の茶葉をそろえる専門店」・「中国茶茶文化協会認定の中国茶教室・煎茶道教室」などを取り上げています。",
+      "営業時間は木〜日 12:00–20:00、定休日は月曜・火曜・水曜です。営業時間は変わることがあるため、訪問前に公式サイトやSNS、お電話でご確認ください。"
+    ],
+    "highlights": [
+      "1000種類以上の茶葉をそろえる専門店",
+      "中国茶茶文化協会認定の中国茶教室・煎茶道教室",
+      "筆ペンで楽しむ文人趣味・中国書画のARTレッスン",
+      "2017年開業、2023年から文化教室を軸にした店づくり",
+      "アクセスと営業情報"
+    ],
+    "tags": [
+      "茶葉販売店",
+      "川西市",
+      "ランチ"
+    ],
+    "featureId": "ティース"
+  },
+  {
+    "id": "r722",
+    "name": "MOSH 宮古島",
+    "cuisine": "バー",
+    "area": "沖縄県・宮古島市",
+    "region": "okinawa",
+    "shape": "square",
+    "image": "/restaurants/teleapo-MOSH宮古島/hero.jpg",
+    "heroImages": [
+      "/restaurants/teleapo-MOSH宮古島/hero.jpg",
+      "/restaurants/teleapo-MOSH宮古島/point1.jpg",
+      "/restaurants/teleapo-MOSH宮古島/point2.jpg",
+      "/restaurants/teleapo-MOSH宮古島/point3.jpg",
+      "/restaurants/teleapo-MOSH宮古島/point4.jpg"
+    ],
+    "gallery": [
+      "/restaurants/teleapo-MOSH宮古島/hero.jpg",
+      "/restaurants/teleapo-MOSH宮古島/point1.jpg",
+      "/restaurants/teleapo-MOSH宮古島/point2.jpg",
+      "/restaurants/teleapo-MOSH宮古島/point3.jpg",
+      "/restaurants/teleapo-MOSH宮古島/point4.jpg"
+    ],
+    "desc": "沖縄県宮古島市のバー。",
+    "address": "沖縄県宮古島市平良西里175-1 大見謝ビルII 1階",
+    "hours": "毎日 21:00–04:00",
+    "closed": "なし",
+    "seats": "49席(カウンター5・ソファ44)",
+    "nearest": "—",
+    "phone": "090-3797-4871",
+    "instagram": "https://www.instagram.com/mosh_miyakojima",
+    "source": {
+      "label": "Google ビジネスプロフィール",
+      "url": "https://maps.google.com/?cid=18284788418056153322"
+    },
+    "body": [
+      "MOSH 宮古島は、沖縄県宮古島市にあるお店です。業態は「バー」、所在地は沖縄県宮古島市平良西里175-1 大見謝ビルII 1階です。マチノワ編集部の特集記事では、「カラオケ・ダーツ・ビリヤードを備えた店内」・「49席、着席80人・立席120人の客席」などを取り上げています。",
+      "営業時間は毎日 21:00–04:00で、定休日はありません。席は49席(カウンター5・ソファ44)。営業時間は変わることがあるため、訪問前に公式サイトやSNS、お電話でご確認ください。"
+    ],
+    "highlights": [
+      "カラオケ・ダーツ・ビリヤードを備えた店内",
+      "49席、着席80人・立席120人の客席",
+      "毎日21時から翌4時まで営業",
+      "大見謝ビルⅡ1階、平良西里のアクセス"
+    ],
+    "tags": [
+      "バー",
+      "宮古島市",
+      "深夜営業"
+    ],
+    "featureId": "MOSH宮古島"
   }
 ];
 
@@ -19891,7 +20139,12 @@ export const ARTICLE_STORE_FEATURE_IDS: Record<string, string> = {
   "r714": "BarDiningJammin",
   "r715": "BoulangerieReve想",
   "r716": "おうち酒場BoNono",
-  "r717": "BeachbarCalypso"
+  "r717": "BeachbarCalypso",
+  "r718": "Cafe＆Shop粋sui",
+  "r719": "お福ちゃん",
+  "r720": "NANNAICYA",
+  "r721": "ティース",
+  "r722": "MOSH宮古島"
 };
 
 /** 特集記事ID → 店舗ID */
@@ -20309,5 +20562,10 @@ export const ARTICLE_STORE_ID_BY_FEATURE: Record<string, string> = {
   "BarDiningJammin": "r714",
   "BoulangerieReve想": "r715",
   "おうち酒場BoNono": "r716",
-  "BeachbarCalypso": "r717"
+  "BeachbarCalypso": "r717",
+  "Cafe＆Shop粋sui": "r718",
+  "お福ちゃん": "r719",
+  "NANNAICYA": "r720",
+  "ティース": "r721",
+  "MOSH宮古島": "r722"
 };
