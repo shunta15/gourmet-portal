@@ -1,0 +1,40 @@
+{
+  "tab": "トリニティアポ",
+  "tabEn": "tri-life",
+  "row": 89,
+  "sheet": {
+    "name": "藤森神社",
+    "address": "",
+    "url": "https://www.google.com/search?q=%E8%97%A4%E6%A3%AE%E7%A5%9E%E7%A4%BE%09%E5%A4%A7%E9%98%AA%E5%BA%9C%E6%91%82%E6%B4%A5%E5%B8%82%E9%B3%A5%E9%A3%BC%E8%A5%BF%EF%BC%92-%EF%BC%91-%EF%BC%91&sca_esv=819a18b629ad402e&biw=1422&bih=650&sxsrf=APpeQnuIKWqjJqajUftt0TFYa_MAmgSN5Q%3A1792374878102&ei=XnjVavHpBeKdhvcP0Pa2yQY&uact=5&oq=%E8%97%A4%E6%A3%AE%E7%A5%9E%E7%A4%BE%09%E5%A4%A7%E9%98%AA%E5%BA%9C%E6%91%82%E6%B4%A5%E5%B8%82%E9%B3%A5%E9%A3%BC%E8%A5%BF%EF%BC%92-%EF%BC%91-%EF%BC%91&gs_lp=Egxnd3Mtd2l6LXNlcnAiM-iXpOajruelnuekvgnlpKfpmKrlupzmkYLmtKXluILps6Xpo7zopb_vvJIt77yRLe-8kTIHECMY6gIYJzIHECMY6gIYJzIHECMY6gIYJzIHECMY6gIYJzIHECMY6gIYJzIHECMY6gIYJzIHECMY6gIYJzIHECMY6gIYJzIHECMY6gIYJzIHECMY6gIYJzIQEAAYAxiPARjqAhi0AtgBATIQEAAYAxiPARjqAhi0AtgBATIQEAAYAxiPARjqAhi0AtgBATIQEAAYAxiPARjqAhi0AtgBATIQEAAYAxiPARjqAhi0AtgBATIQEAAYAxiPARjqAhi0AtgBATIQEAAYAxiPARjqAhi0AtgBATIQEAAYAxiPARjqAhi0AtgBATIQEAAYAxiPARjqAhi0AtgBATIQEAAYAxiPARjqAhi0AtgBAUiLCVD_B1j_B3ABeAGQAQCYAQCgAQCqAQC4AQPIAQD4AQL4AQGYAgGgAhWoAhSYAxXxBfTeOhQqC5jiugYGCAEQARgKkgcBMaAHALIHALgHAMIHAzMtMcgHCIAIAQ&sclient=gws-wiz-serp",
+    "type": "神社",
+    "d1": "",
+    "d2": ""
+  },
+  "urlKind": "search",
+  "route": "第1段(verify-gbp.mjs)で確認済み",
+  "verdict": "一致",
+  "verdictReason": "電話が一致／店名: exact(シート「藤森神社」/ マップ「藤森神社」)／住所(検索URL): exact・町名・番地とも一致",
+  "place": {
+    "name": "藤森神社",
+    "address": "大阪府摂津市鳥飼西２丁目１−１",
+    "category": "神社",
+    "lat": 34.7720862,
+    "lng": 135.582386,
+    "gbpUrl": "https://maps.google.com/?cid=9903908332713633904",
+    "phone": "072-654-5767",
+    "website": "http://www.fujimori.ed.jp/jinjya/",
+    "hours": {
+      "月": "24時間営業",
+      "火": "24時間営業",
+      "水": "24時間営業",
+      "木": "24時間営業",
+      "金": "24時間営業",
+      "土": "24時間営業",
+      "日": "24時間営業"
+    },
+    "reserveLinks": [],
+    "statusSignals": [],
+    "closedSignal": false
+  },
+  "fetchedAt": "2026-10-26T06:13:03.459Z"
+}

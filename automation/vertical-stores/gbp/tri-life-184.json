@@ -1,0 +1,32 @@
+{
+  "tab": "トリニティアポ",
+  "tabEn": "tri-life",
+  "row": 184,
+  "sheet": {
+    "name": "上行寺",
+    "address": "",
+    "url": "https://www.google.com/search?q=0551-38-2551&sca_esv=2351a38461d14f4c&biw=767&bih=663&sxsrf=APpeQnuJdMHbLpE_Z9id1iKNHV1aTu23Zw%3A1792662342519&ei=RtvZareZH-TCvr0P0e-5oAM&uact=5&oq=0551-38-2551&gs_lp=Egxnd3Mtd2l6LXNlcnAiDDA1NTEtMzgtMjU1MUihBlDvAVjvAXABeAGQAQCYAawBoAGsAaoBAzAuMbgBA8gBAPgBAvgBAZgCAaACCKgCCsICBxAjGOoCGCeYAwjxBagjFwUFyDRlkgcBMaAHJLIHALgHAMIHAzItMcgHBYAIAQ&sclient=gws-wiz-serp",
+    "type": "寺",
+    "d1": "",
+    "d2": ""
+  },
+  "urlKind": "search",
+  "route": "第1段(verify-gbp.mjs)で確認済み",
+  "verdict": "一致",
+  "verdictReason": "電話が一致／店名: exact(シート「上行寺」/ マップ「上行寺」)",
+  "place": {
+    "name": "上行寺",
+    "address": "山梨県北杜市大泉町西井出２６６",
+    "category": "仏教寺院",
+    "lat": 35.8499897,
+    "lng": 138.3892883,
+    "gbpUrl": "https://maps.google.com/?cid=7635059331888835225",
+    "phone": "0551-38-2551",
+    "website": "https://www.jogyoji.com/",
+    "hours": null,
+    "reserveLinks": [],
+    "statusSignals": [],
+    "closedSignal": false
+  },
+  "fetchedAt": "2026-10-26T06:29:05.651Z"
+}

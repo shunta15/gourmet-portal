@@ -1,0 +1,40 @@
+{
+  "tab": "トリニティアポ",
+  "tabEn": "tri-life",
+  "row": 88,
+  "sheet": {
+    "name": "雑貨牧場GAYU（がゆ）",
+    "address": "",
+    "url": "https://www.google.com/search?q=%E9%9B%91%E8%B2%A8%E7%89%A7%E5%A0%B4GAYU%EF%BC%88%E3%81%8C%E3%82%86%EF%BC%89%09%E3%80%92820-0016+%E7%A6%8F%E5%B2%A1%E7%9C%8C%E9%A3%AF%E5%A1%9A%E5%B8%82%E8%8F%B0%E7%94%B0%E6%9D%B1%EF%BC%92%E4%B8%81%E7%9B%AE%EF%BC%92%EF%BC%92%E2%88%92%EF%BC%91%EF%BC%93&sca_esv=90fe058dfec7447b&biw=1422&bih=650&sxsrf=APpeQnttDmlzuMsJUG-JhKEea9APJopsXg%3A1792143916558&ei=LPLRavLMIZShvr0PosmQoQU&uact=5&oq=%E9%9B%91%E8%B2%A8%E7%89%A7%E5%A0%B4GAYU%EF%BC%88%E3%81%8C%E3%82%86%EF%BC%89%09%E3%80%92820-0016+%E7%A6%8F%E5%B2%A1%E7%9C%8C%E9%A3%AF%E5%A1%9A%E5%B8%82%E8%8F%B0%E7%94%B0%E6%9D%B1%EF%BC%92%E4%B8%81%E7%9B%AE%EF%BC%92%EF%BC%92%E2%88%92%EF%BC%91%EF%BC%93&gs_lp=Egxnd3Mtd2l6LXNlcnAiXOmbkeiyqOeJp-WgtEdBWVXvvIjjgYzjgobvvIkJ44CSODIwLTAwMTYg56aP5bKh55yM6aOv5aGa5biC6I-w55Sw5p2x77yS5LiB55uu77yS77yS4oiS77yR77yTMgUQABjvBUiEB1CRBViRBXABeAGQAQCYAXWgAXWqAQMwLjG4AQPIAQD4AQL4AQGYAgKgAoABqAIUwgIHECMY6gIYJ8ICEBAAGAMYjwEY6gIYtALYAQGYAwbxBXWL7TDJc020ugYGCAEQARgKkgcDMS4xoAeWAbIHAzAuMbgHecIHBTAuMS4xyAcIgAgB&sclient=gws-wiz-serp",
+    "type": "小売り",
+    "d1": "",
+    "d2": ""
+  },
+  "urlKind": "search",
+  "route": "第1段(verify-gbp.mjs)で確認済み",
+  "verdict": "一致",
+  "verdictReason": "電話が一致／店名: exact(シート「雑貨牧場GAYU（がゆ）」/ マップ「雑貨牧場GAYU（がゆ）」)／住所(検索URL): exact・町名・番地とも一致",
+  "place": {
+    "name": "雑貨牧場GAYU（がゆ）",
+    "address": "福岡県飯塚市菰田東２丁目２２−１３",
+    "category": "雑貨店",
+    "lat": 33.630485,
+    "lng": 130.6938279,
+    "gbpUrl": "https://maps.google.com/?cid=490633358266085264",
+    "phone": "080-4271-6660",
+    "website": "https://zakkagayu.com/",
+    "hours": {
+      "月": "定休日",
+      "火": "定休日",
+      "水": "定休日",
+      "木": "定休日",
+      "金": "定休日",
+      "土": "11:00–17:00",
+      "日": "11:00–17:00"
+    },
+    "reserveLinks": [],
+    "statusSignals": [],
+    "closedSignal": false
+  },
+  "fetchedAt": "2026-10-26T06:12:26.529Z"
+}

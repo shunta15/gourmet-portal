@@ -1,0 +1,40 @@
+{
+  "tab": "トリニティアポ",
+  "tabEn": "tri-life",
+  "row": 157,
+  "sheet": {
+    "name": "九重白蛇参拝所 龍昇院",
+    "address": "",
+    "url": "https://www.google.com/search?q=%E4%B9%9D%E9%87%8D%E7%99%BD%E8%9B%87%E5%8F%82%E6%8B%9D%E6%89%80+%E9%BE%8D%E6%98%87%E9%99%A2%09%E5%A4%A7%E5%88%86%E7%9C%8C%E7%8E%96%E7%8F%A0%E9%83%A1%E4%B9%9D%E9%87%8D%E7%94%BA%E7%94%B0%E9%87%8E1999%5D&sca_esv=882e2611175d5c4b&biw=1365&bih=848&sxsrf=APpeQnt0HZYiKSaMfHEFBUPKRvNsnbidNw%3A1792557797450&ei=5ULYapTQGt-Wvr0P87PjqA0&uact=5&oq=%E4%B9%9D%E9%87%8D%E7%99%BD%E8%9B%87%E5%8F%82%E6%8B%9D%E6%89%80+%E9%BE%8D%E6%98%87%E9%99%A2%09%E5%A4%A7%E5%88%86%E7%9C%8C%E7%8E%96%E7%8F%A0%E9%83%A1%E4%B9%9D%E9%87%8D%E7%94%BA%E7%94%B0%E9%87%8E1999%5D&gs_lp=Egxnd3Mtd2l6LXNlcnAiRuS5nemHjeeZveibh-WPguaLneaJgCDpvo3mmIfpmaIJ5aSn5YiG55yM546W54-g6YOh5Lmd6YeN55S655Sw6YeOMTk5OV0yBRAAGO8FMggQABiABBiiBDIIEAAYgAQYogRIngJQAFiOAnAAeAGQAQCYAWygAWyqAQMwLjG4AQPIAQD4AQL4AQGYAgGgAnGYAwCSBwMwLjGgB_oBsgcDMC4xuAdxwgcDMC4xyAcCgAgB&sclient=gws-wiz-serp",
+    "type": "神社？",
+    "d1": "",
+    "d2": ""
+  },
+  "urlKind": "search",
+  "route": "第1段(verify-gbp.mjs)で確認済み",
+  "verdict": "一致",
+  "verdictReason": "電話が一致／店名: exact(シート「九重白蛇参拝所 龍昇院」/ マップ「九重白蛇参拝所・龍昇院」)／住所(検索URL): exact・町名・番地とも一致",
+  "place": {
+    "name": "九重白蛇参拝所・龍昇院",
+    "address": "大分県玖珠郡九重町田野１９９９",
+    "category": "神社",
+    "lat": 33.1750729,
+    "lng": 131.2308328,
+    "gbpUrl": "https://maps.google.com/?cid=2523295651855289686",
+    "phone": "0973-79-3151",
+    "website": null,
+    "hours": {
+      "月": "定休日",
+      "火": "定休日",
+      "水": "09:00–17:00",
+      "木": "09:00–17:00",
+      "金": "09:00–17:00",
+      "土": "09:00–17:00",
+      "日": "09:00–17:00"
+    },
+    "reserveLinks": [],
+    "statusSignals": [],
+    "closedSignal": false
+  },
+  "fetchedAt": "2026-10-26T06:26:25.611Z"
+}

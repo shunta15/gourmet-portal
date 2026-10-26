@@ -1,0 +1,40 @@
+{
+  "tab": "トリニティアポ",
+  "tabEn": "tri-life",
+  "row": 90,
+  "sheet": {
+    "name": "來宮神社",
+    "address": "",
+    "url": "https://www.google.com/search?q=%E4%BE%86%E5%AE%AE%E7%A5%9E%E7%A4%BE+%E7%86%B1%E6%B5%B7&sca_esv=819a18b629ad402e&biw=1536&bih=703&sxsrf=APpeQnu-xg3_zpG_cVvlpBUtqey1ZERuiw%3A1792375501221&ei=zXrVauaADeni2roPt-CLEA&oq=%E4%BE%86%E5%AE%AE%E7%A5%9E%E7%A4%BE%E3%80%80&gs_lp=Egxnd3Mtd2l6LXNlcnAiD-S-huWuruelnuekvuOAgCoECAAYJzIEECMYJzIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABEjG7glQwtgJWN7qCXAFeACQAQCYAWGgAYcCqgEBM7gBA8gBAPgBAvgBAZgCBKAC7ALCAgcQABiABBgEwgIGEAAYBBgemAMAiAYBkgcDMS4zoAfaDLIHAzAuM7gH1wLCBwMzLTTIByiACAE&sclient=gws-wiz-serp",
+    "type": "その他",
+    "d1": "",
+    "d2": ""
+  },
+  "urlKind": "search",
+  "route": "第1段(verify-gbp.mjs)で確認済み",
+  "verdict": "一致",
+  "verdictReason": "電話が一致／店名: exact(シート「來宮神社」/ マップ「來宮神社」)",
+  "place": {
+    "name": "來宮神社",
+    "address": "静岡県熱海市西山町４３−１",
+    "category": "神社",
+    "lat": 35.1003967,
+    "lng": 139.0678814,
+    "gbpUrl": "https://maps.google.com/?cid=4219953056217248155",
+    "phone": "0557-82-2241",
+    "website": "http://www.kinomiya.or.jp/",
+    "hours": {
+      "月": "24時間営業",
+      "火": "24時間営業",
+      "水": "24時間営業",
+      "木": "24時間営業",
+      "金": "24時間営業",
+      "土": "24時間営業",
+      "日": "24時間営業"
+    },
+    "reserveLinks": [],
+    "statusSignals": [],
+    "closedSignal": false
+  },
+  "fetchedAt": "2026-10-26T06:13:42.684Z"
+}

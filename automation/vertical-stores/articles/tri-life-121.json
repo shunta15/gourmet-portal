@@ -1,0 +1,222 @@
+{
+  "key": "tri-life-121",
+  "headline": "和歌山市新堀東にある日蓮宗の寺院。寛永年間の創立で、正徳二年(1712年)に徳川吉宗公からこの地を拝領し、「堀止の妙見さん」とも呼ばれている。",
+  "lede": "和歌山市にある「日蓮宗 妙宣寺」です。寛永年間に創立された日蓮宗の寺院で、総本山は山梨県の身延山久遠寺です。正徳二年(1712年)に徳川吉宗公からこの地を拝領し、「堀止の妙見さん」とも呼ばれています。",
+  "sections": [
+    {
+      "heading": "由緒",
+      "body": "覚王山 妙宣寺は日蓮宗の寺院で、寛永年間(1624〜1644年)の創立と伝えられています。正徳二年(1712年)に徳川吉宗公からこの地を拝領し、「堀止の妙見さん」とも呼ばれています。総本山は日蓮聖人がひらいた身延山久遠寺(山梨県)です。幕末から明治の和歌山を日記に書き残した川合小梅が眠る寺でもあります。"
+    },
+    {
+      "heading": "ご供養",
+      "body": "「みんな、仏様の子」という考えのもと、永代供養・水子供養を宗旨・宗派を問わず受け付けています。水子供養は慈母観音さまのもと、本堂で一霊ずつ個別に行います。境内はバリアフリーに配慮し、車椅子でもお参りできます。"
+    },
+    {
+      "heading": "ご祈願と年中行事",
+      "body": "安産祈願・虫封じ・きうりふうじ・ぢふうじなどの祈願を承っています。きうりふうじは土用の丑の日に行う五百年以上続く秘法、ぢふうじはお月見の日に行う痔を封じる祈祷です。慈母観音さま大祭は毎年5月第一日曜日の11時から行われ、あわせて水子供養も営みます。"
+    },
+    {
+      "heading": "場所とアクセス",
+      "body": "所在地は和歌山県和歌山市新堀東2丁目1番8号です。JR和歌山駅・和歌山市駅から和歌山バス「堀止」下車、東へ徒歩約5分で、バス通りから一本入った場所にあります。駐車場は25台あります。"
+    }
+  ],
+  "menus": [
+    {
+      "name": "永代供養"
+    },
+    {
+      "name": "水子供養"
+    },
+    {
+      "name": "水子永代供養"
+    },
+    {
+      "name": "のうこつぼ"
+    },
+    {
+      "name": "安産祈願"
+    },
+    {
+      "name": "虫封じ"
+    },
+    {
+      "name": "きうりふうじ"
+    },
+    {
+      "name": "ぢふうじ"
+    }
+  ],
+  "tags": [
+    {
+      "tag": "駐車場あり",
+      "factIndex": 20
+    },
+    {
+      "tag": "予約制",
+      "factIndex": 22
+    }
+  ],
+  "facts": [
+    {
+      "claim": "和歌山市新堀東にある日蓮宗の寺院",
+      "source": "https://wakayama-myosenji.com/about/",
+      "quote": "和歌山市新堀東にある日蓮宗の寺院です",
+      "checkedAt": "2026-10-26"
+    },
+    {
+      "claim": "創立は寛永年間(1624〜1644年)",
+      "source": "https://wakayama-myosenji.com/about/",
+      "quote": "創立 寛永年間（1624〜1644年）",
+      "checkedAt": "2026-10-26"
+    },
+    {
+      "claim": "正徳二年(1712年)に徳川吉宗公からこの地を拝領した",
+      "source": "https://wakayama-myosenji.com/about/",
+      "quote": "正徳二年（1712年）に徳川吉宗公よりこの地を拝領し",
+      "checkedAt": "2026-10-26"
+    },
+    {
+      "claim": "「堀止の妙見さん」として親しまれてきた",
+      "source": "https://wakayama-myosenji.com/about/",
+      "quote": "堀止の妙見さん」として親しまれてきました",
+      "checkedAt": "2026-10-26"
+    },
+    {
+      "claim": "総本山は身延山久遠寺(山梨県)",
+      "source": "https://wakayama-myosenji.com/about/",
+      "quote": "総本山 身延山久遠寺（山梨県）",
+      "checkedAt": "2026-10-26"
+    },
+    {
+      "claim": "川合小梅が眠る寺",
+      "source": "https://wakayama-myosenji.com/about/",
+      "quote": "川合小梅が眠るお寺です",
+      "checkedAt": "2026-10-26"
+    },
+    {
+      "claim": "住職は蘆田恵教",
+      "source": "https://wakayama-myosenji.com/about/",
+      "quote": "住職は蘆田恵教（あしだ・えきょう）",
+      "checkedAt": "2026-10-26"
+    },
+    {
+      "claim": "「みんな、仏様の子」という考えを大切にしている",
+      "source": "https://wakayama-myosenji.com/",
+      "quote": "「みんな、仏様の子」という考えです。",
+      "checkedAt": "2026-10-26"
+    },
+    {
+      "claim": "永代供養・水子供養・ご祈願・人生相談などを宗旨・宗派を問わず受け付けている",
+      "source": "https://wakayama-myosenji.com/about/",
+      "quote": "宗旨・宗派を問わずお受けしています",
+      "checkedAt": "2026-10-26"
+    },
+    {
+      "claim": "水子供養は本堂で一霊ずつ個別に行う",
+      "source": "https://wakayama-myosenji.com/mizuko-kuyo/",
+      "quote": "本堂にて一霊ずつ、個別にお勤めします",
+      "checkedAt": "2026-10-26"
+    },
+    {
+      "claim": "境内はバリアフリーに配慮している",
+      "source": "https://wakayama-myosenji.com/",
+      "quote": "バリアフリーに配慮しています。",
+      "checkedAt": "2026-10-26"
+    },
+    {
+      "claim": "車椅子でもお参りできる",
+      "source": "https://wakayama-myosenji.com/",
+      "quote": "車椅子でもお参りできます",
+      "checkedAt": "2026-10-26"
+    },
+    {
+      "claim": "安産祈願・虫封じ・きうりふうじ・ぢふうじなどの祈願を行っている",
+      "source": "https://wakayama-myosenji.com/",
+      "quote": "安産祈願・虫封じ・きうりふうじ・ぢふうじなど",
+      "checkedAt": "2026-10-26"
+    },
+    {
+      "claim": "きうりふうじは五百年以上続くと伝わる秘法",
+      "source": "https://wakayama-myosenji.com/about/",
+      "quote": "五百年以上続くと伝わる秘法",
+      "checkedAt": "2026-10-26"
+    },
+    {
+      "claim": "きうりふうじは毎年土用の丑の日に行う",
+      "source": "https://wakayama-myosenji.com/about/",
+      "quote": "きうりふうじ ― 毎年 土用の丑の日",
+      "checkedAt": "2026-10-26"
+    },
+    {
+      "claim": "ぢふうじは痔を封じる祈祷",
+      "source": "https://wakayama-myosenji.com/about/",
+      "quote": "痔を封じる大祈祷会",
+      "checkedAt": "2026-10-26"
+    },
+    {
+      "claim": "ぢふうじは毎年お月見の日に行う",
+      "source": "https://wakayama-myosenji.com/about/",
+      "quote": "ぢふうじ ― 毎年 お月見の日",
+      "checkedAt": "2026-10-26"
+    },
+    {
+      "claim": "慈母観音さま大祭は毎年5月第一日曜日の11時から行い、あわせて水子供養も行う",
+      "source": "https://wakayama-myosenji.com/mizuko-kuyo/",
+      "quote": "毎年5月第一日曜日の11時より、慈母観音さまの大祭",
+      "checkedAt": "2026-10-26"
+    },
+    {
+      "claim": "所在地は和歌山県和歌山市新堀東2丁目1番8号",
+      "source": "https://wakayama-myosenji.com/about/",
+      "quote": "和歌山県和歌山市新堀東2丁目1番8号",
+      "checkedAt": "2026-10-26"
+    },
+    {
+      "claim": "JR和歌山駅・和歌山市駅から和歌山バス「堀止」下車、東へ徒歩約5分",
+      "source": "https://wakayama-myosenji.com/about/",
+      "quote": "和歌山バス「堀止」下車、東へ徒歩約5分",
+      "checkedAt": "2026-10-26"
+    },
+    {
+      "claim": "駐車場は25台",
+      "source": "https://wakayama-myosenji.com/about/",
+      "quote": "駐車場 25台",
+      "checkedAt": "2026-10-26"
+    },
+    {
+      "claim": "バス通りから一本入った場所にある",
+      "source": "https://wakayama-myosenji.com/access/",
+      "quote": "バス通りから一本入ったところにあります",
+      "checkedAt": "2026-10-26"
+    },
+    {
+      "claim": "水子供養はご予約をお願いしている",
+      "source": "https://wakayama-myosenji.com/mizuko-kuyo/",
+      "quote": "はい、ご予約をお願いしています。",
+      "checkedAt": "2026-10-26"
+    }
+  ],
+  "sources": [
+    {
+      "label": "公式サイト",
+      "url": "https://wakayama-myosenji.com/"
+    },
+    {
+      "label": "公式サイト(アクセス)",
+      "url": "https://wakayama-myosenji.com/access/"
+    },
+    {
+      "label": "公式サイト(妙宣寺について)",
+      "url": "https://wakayama-myosenji.com/about/"
+    },
+    {
+      "label": "公式サイト(水子供養)",
+      "url": "https://wakayama-myosenji.com/mizuko-kuyo/"
+    },
+    {
+      "label": "Google マップ",
+      "url": "https://maps.google.com/?cid=17716851611011573937"
+    }
+  ],
+  "notes": "automation/v2/write.mjs が 2026-10-26 に claude -p --model sonnet で作成。事実の裏取り: 23/23 件(quote が出どころにあるもの)。裏取りに通らなかった facts は載せていない。"
+}

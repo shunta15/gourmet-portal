@@ -1,0 +1,32 @@
+{
+  "tab": "トリニティアポ",
+  "tabEn": "tri-life",
+  "row": 100,
+  "sheet": {
+    "name": "善福院釈迦堂",
+    "address": "",
+    "url": "https://www.google.com/search?sca_esv=498448c4cd10282a&rlz=1C1HKFL_jaJP1236JP1236&sxsrf=APpeQnuiWvvWLKyMMF4-jmIE2d0o79d6BA:1792387442395&q=%E5%96%84%E7%A6%8F%E9%99%A2+%E9%87%88%E8%BF%A6%E5%A0%82&si=APenkKn5T4YN59srr511wD6k6Pufj9DEzRUvB1XJSwUeeT5afn8IZHqDganYrhXG-TATwck6koN5NDnuAMlwCz-DzA__4Kdf0by_fZrZvu93XP8fKFp3ZLGyZ_JYvfFJTo3Soga2cdamGuh_vqZooOugAIfjRGOM7g%3D%3D&sa=X&ved=2ahUKEwiM3LbGq8WXAxVwga8BHcFwArYQmJ0LegQILhAA&biw=1249&bih=898&dpr=1",
+    "type": "院",
+    "d1": "",
+    "d2": ""
+  },
+  "urlKind": "search",
+  "route": "第1段(verify-gbp.mjs)で確認済み",
+  "verdict": "一致",
+  "verdictReason": "電話が一致／店名: exact(シート「善福院釈迦堂」/ マップ「善福院 釈迦堂」)",
+  "place": {
+    "name": "善福院 釈迦堂",
+    "address": "和歌山県海南市下津町梅田２７１",
+    "category": "仏教寺院",
+    "lat": 34.1305328,
+    "lng": 135.1772545,
+    "gbpUrl": "https://maps.google.com/?cid=17265377560436211691",
+    "phone": "073-492-2188",
+    "website": "https://www.city.kainan.lg.jp/kanko/midokoro/bunkazai/zenpukuinshakado.html",
+    "hours": null,
+    "reserveLinks": [],
+    "statusSignals": [],
+    "closedSignal": false
+  },
+  "fetchedAt": "2026-10-26T06:17:01.302Z"
+}

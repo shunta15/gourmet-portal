@@ -1,0 +1,142 @@
+{
+  "key": "tri-life-92",
+  "headline": "大阪府枚方市楠葉丘の神社。延暦六年、桓武天皇が父・光仁天皇を配祀したことが起源と伝えられ、本殿は一間社流れ造りで国内最古のものとされる。",
+  "lede": "枚方市にある「交野天神社」です。延暦六年十一月五日、桓武天皇が交野で昊天を郊祀した際に、父の光仁天皇を配祀したことが起源と伝えられています。元は交野天津神と称し、樟葉神社、天神宮、天神社と名を変えた後、明治二十一年二月に今の社名となりました。",
+  "sections": [
+    {
+      "heading": "御祭神と由緒",
+      "body": "御祭神は光仁天皇、天児屋根命、菅原道真公です。慶長の頃に町村が分離して二社が建てられ、天児屋根命をまつる春日神社と菅原道真公をまつる天満宮に分かれました。明治五年、両社はふたたび当社に合祀されています。例祭は10月17日です。"
+    },
+    {
+      "heading": "本殿と文化財",
+      "body": "本殿と末社八幡神社の社殿は、共に一間社流れ造りで、国内で最も古い建築例とされています。小規模ながら他に類例のない特殊な構造を持つ建物として、大正六年四月五日に特別保護建造物となり、昭和二十五年八月二十九日には重要文化財に指定されました。"
+    },
+    {
+      "heading": "境内の貴船神社",
+      "body": "境内東北の壇上には末社の貴船神社があります。貴船神社はもとは当郷の氏神でした。この場所は継体天皇の即位の跡、すなわち樟葉の宮とされ、大阪府と教育委員会により標石が建てられています。"
+    }
+  ],
+  "menus": [],
+  "tags": [],
+  "facts": [
+    {
+      "claim": "元は交野天津神と称した",
+      "source": "http://osakadai3shibu.kilo.jp/jinja/hirakata/jinja/katanoamatukami.html",
+      "quote": "当社は元交野天津神と称した",
+      "checkedAt": "2026-10-26"
+    },
+    {
+      "claim": "樟葉神社、天神宮、天神社と名を変えた",
+      "source": "http://osakadai3shibu.kilo.jp/jinja/hirakata/jinja/katanoamatukami.html",
+      "quote": "樟葉神社と改め、後に天神宮と改め、その後天神社と称した",
+      "checkedAt": "2026-10-26"
+    },
+    {
+      "claim": "明治二十一年二月に今の社名に改称された",
+      "source": "http://osakadai3shibu.kilo.jp/jinja/hirakata/jinja/katanoamatukami.html",
+      "quote": "明治二十一年二月更に今の社名に改称された",
+      "checkedAt": "2026-10-26"
+    },
+    {
+      "claim": "創建は延暦六年十一月五日、桓武天皇が交野で昊天を郊祀した際と伝えられる",
+      "source": "http://osakadai3shibu.kilo.jp/jinja/hirakata/jinja/katanoamatukami.html",
+      "quote": "延暦六年十一月五日桓武天皇の交野に昊天を郊祀あるに際し",
+      "checkedAt": "2026-10-26"
+    },
+    {
+      "claim": "父の光仁天皇を配祀したことが起源と伝えられている",
+      "source": "http://osakadai3shibu.kilo.jp/jinja/hirakata/jinja/katanoamatukami.html",
+      "quote": "即ち当社の起源であると伝えられている",
+      "checkedAt": "2026-10-26"
+    },
+    {
+      "claim": "御祭神は光仁天皇、天児屋根命、菅原道真公",
+      "source": "http://osakadai3shibu.kilo.jp/jinja/hirakata/jinja/katanoamatukami.html",
+      "quote": "光仁天皇、天児屋根命、菅原道真公",
+      "checkedAt": "2026-10-26"
+    },
+    {
+      "claim": "慶長の頃、町村の分離により二社が建てられた",
+      "source": "http://osakadai3shibu.kilo.jp/jinja/hirakata/jinja/katanoamatukami.html",
+      "quote": "慶長の頃町村が分離して二社を建立し",
+      "checkedAt": "2026-10-26"
+    },
+    {
+      "claim": "二社は天児屋根命をまつる春日神社と菅原道真公をまつる天満宮だった",
+      "source": "http://osakadai3shibu.kilo.jp/jinja/hirakata/jinja/katanoamatukami.html",
+      "quote": "天児屋根命（春日神社）、一社には菅原道真公（天満宮）",
+      "checkedAt": "2026-10-26"
+    },
+    {
+      "claim": "明治五年に両社が当社へ合祀された",
+      "source": "http://osakadai3shibu.kilo.jp/jinja/hirakata/jinja/katanoamatukami.html",
+      "quote": "明治五年に再び当社に合祀された",
+      "checkedAt": "2026-10-26"
+    },
+    {
+      "claim": "例祭は10月17日",
+      "source": "http://osakadai3shibu.kilo.jp/jinja/hirakata/jinja/katanoamatukami.html",
+      "quote": "例祭 10月17日",
+      "checkedAt": "2026-10-26"
+    },
+    {
+      "claim": "本殿と末社八幡神社の社殿は共に一間社流れ造りで国内最古のものとされる",
+      "source": "http://osakadai3shibu.kilo.jp/jinja/hirakata/jinja/katanoamatukami.html",
+      "quote": "一間社流れ造り（我国最古のもの）",
+      "checkedAt": "2026-10-26"
+    },
+    {
+      "claim": "他に類例のない特殊な構造を持つ建物とされる",
+      "source": "http://osakadai3shibu.kilo.jp/jinja/hirakata/jinja/katanoamatukami.html",
+      "quote": "他にその類例を見ない特殊な構造を有している",
+      "checkedAt": "2026-10-26"
+    },
+    {
+      "claim": "大正六年四月五日に特別保護建造物となった",
+      "source": "http://osakadai3shibu.kilo.jp/jinja/hirakata/jinja/katanoamatukami.html",
+      "quote": "大正六年四月五日付を以って特別保護建造物に",
+      "checkedAt": "2026-10-26"
+    },
+    {
+      "claim": "本殿は昭和二十五年八月二十九日に重要文化財に指定された",
+      "source": "http://osakadai3shibu.kilo.jp/jinja/hirakata/jinja/katanoamatukami.html",
+      "quote": "昭和二十五年八月二十九日重要文化財に指定された",
+      "checkedAt": "2026-10-26"
+    },
+    {
+      "claim": "境内東北の壇上に末社貴船神社がある",
+      "source": "http://osakadai3shibu.kilo.jp/jinja/hirakata/jinja/katanoamatukami.html",
+      "quote": "境内東北壇上の末社貴船神社は",
+      "checkedAt": "2026-10-26"
+    },
+    {
+      "claim": "貴船神社はもとは当郷の氏神だった",
+      "source": "http://osakadai3shibu.kilo.jp/jinja/hirakata/jinja/katanoamatukami.html",
+      "quote": "太古より当郷の氏神であったが",
+      "checkedAt": "2026-10-26"
+    },
+    {
+      "claim": "この地は継体天皇の即位の跡、樟葉の宮とされる",
+      "source": "http://osakadai3shibu.kilo.jp/jinja/hirakata/jinja/katanoamatukami.html",
+      "quote": "継体天皇御即位の跡（即ち樟葉の宮）",
+      "checkedAt": "2026-10-26"
+    },
+    {
+      "claim": "大阪府と教育委員会により標石が建てられた",
+      "source": "http://osakadai3shibu.kilo.jp/jinja/hirakata/jinja/katanoamatukami.html",
+      "quote": "大阪府及び教育委員会より標石を建立された",
+      "checkedAt": "2026-10-26"
+    }
+  ],
+  "sources": [
+    {
+      "label": "公式サイト",
+      "url": "http://osakadai3shibu.kilo.jp/jinja/hirakata/jinja/katanoamatukami.html"
+    },
+    {
+      "label": "Google マップ",
+      "url": "https://maps.google.com/?cid=10079227691047330108"
+    }
+  ],
+  "notes": "automation/v2/write.mjs が 2026-10-26 に claude -p --model sonnet で作成。事実の裏取り: 18/18 件(quote が出どころにあるもの)。裏取りに通らなかった facts は載せていない。"
+}

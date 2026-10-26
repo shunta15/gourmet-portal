@@ -1,0 +1,76 @@
+{
+  "key": "tri-life-111",
+  "images": [
+    {
+      "path": "/_portal/vshops/tri-life-111/g01.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9Sl5ybtMctKjhrR_aZDxfpKa1omIYv21qyirIDPfyxJ0b8lxEw_Z6nggZTFDHEmbLViykyAXLFQoo7oo3QzTZ_DbfhaHzUPzcBJfaHc7NSia8Hkj9eNLXlia0o-zCe_gMHjiRvL9JXM8dQa=s1200",
+      "pageUrl": "https://maps.google.com/?cid=16468765391982797720",
+      "what": "赤い花柄のソファと木製テーブルが並ぶ室内",
+      "kind": "room",
+      "width": 1200,
+      "height": 900,
+      "source": "Google マップ"
+    },
+    {
+      "path": "/_portal/vshops/tri-life-111/g03.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9TOiRusXWpNljw7TOnVtgZiB-obMFbPeMAHvuL15benGX9zWFFfm79Nlb6oVadNU3Og_YwfJfS4P8HRTpqVSas8gyyI2N37PjFM3fTfj9uK28LpWzudrwAz0N3ZQoA9ech81cCC1uIzNElW=s1200",
+      "pageUrl": "https://maps.google.com/?cid=16468765391982797720",
+      "what": "ビルの一角にある外観",
+      "kind": "exterior",
+      "width": 900,
+      "height": 1200,
+      "source": "Google マップ"
+    },
+    {
+      "path": "/_portal/vshops/tri-life-111/g04.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9SS3CsB1RM6iVSq5VkF1bh7Bx-mX_Qobs7C4QM_pa_NSDrpFOrSKAGwayVeNxDCheSRLNbv6k1cIFbJdSAinolH5eKOUXUtR9TS7jiEbZJZ-IehDRjUifhcc00jTJEzdrgdqnFE3A284z4=s1200",
+      "pageUrl": "https://maps.google.com/?cid=16468765391982797720",
+      "what": "ソファと丸テーブルが置かれた室内",
+      "kind": "room",
+      "width": 982,
+      "height": 1200,
+      "source": "Google マップ"
+    },
+    {
+      "path": "/_portal/vshops/tri-life-111/g05.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9TlcoDr-mLkTGq79Qp3F0ub2V-jg9AjX2wIzlEXaePOcty7N96NkCveTU04oiE_xvAgh07PIeH8njqOktU3GgWtUhCqST515vRc862niCizQRtWs1V86CjkxQJpyUArGJxsJ-LoqXq3DUA=s1200",
+      "pageUrl": "https://maps.google.com/?cid=16468765391982797720",
+      "what": "緑色の扉がある入り口",
+      "kind": "common",
+      "width": 900,
+      "height": 1200,
+      "source": "Google マップ"
+    },
+    {
+      "path": "/_portal/vshops/tri-life-111/g06.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9TBCp6ED0_LlQQrT01X1sOb1tAHN2M6gaqxRMOQ6z1aefgOyMaTL0tqbCO4vzAZuwmTASUa2g-9VU0OrDEo48nBzXMUUakPrpoajDk9QgnvSgHhXpIFi5GDL1jUYJquHpHCzQ-cKrXEvhI=s1200",
+      "pageUrl": "https://maps.google.com/?cid=16468765391982797720",
+      "what": "赤い花柄のソファが置かれた室内",
+      "kind": "room",
+      "width": 675,
+      "height": 1200,
+      "source": "Google マップ"
+    },
+    {
+      "path": "/_portal/vshops/tri-life-111/g08.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9QEXxFzbuTpvv2CpLkHL37U-KwVScFNtdw8q_8qcn8FHprFjW28aQPIFK7oIoo7IKamnmTqyx_7ORZvIXvY7dBz3WIeRVBqxe8xFbglKP5OIMkxAO7axpCvDvSTl8yRMiL6E1KZey2ESQ8=s1200",
+      "pageUrl": "https://maps.google.com/?cid=16468765391982797720",
+      "what": "緑色の扉が開いた入り口",
+      "kind": "common",
+      "width": 900,
+      "height": 1200,
+      "source": "Google マップ"
+    },
+    {
+      "path": "/_portal/vshops/tri-life-111/g09.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9SiiWWPU3W4wFCQ54dXsZpWxcuj8l3kqH-7VmyESFl8M_NvGZ7BVGgInZoDkZeS3DS8l32O4qblqsPnYHAp940gzh7NV0BPuotRJN8ozGZcWAPcwVdVITibSwvx1UBDaskb2krJrB2YQxuJ=s1200",
+      "pageUrl": "https://maps.google.com/?cid=16468765391982797720",
+      "what": "丸テーブルと椅子が置かれた室内",
+      "kind": "room",
+      "width": 1200,
+      "height": 900,
+      "source": "Google マップ"
+    }
+  ],
+  "note": "automation/v2/write.mjs が 2026-10-26T06:36:48.176Z に取得。店の実写だけ(AI 画像・汎用画像・地図・ロゴ・顔が大きい画像は除外)。"
+}

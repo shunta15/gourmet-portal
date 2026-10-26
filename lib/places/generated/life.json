@@ -533,6 +533,3761 @@
         ],
         "checkedAt": "2026-10-22"
       }
+    },
+    {
+      "id": "li0005",
+      "vertical": "life",
+      "category": "fashion-craft",
+      "name": "雑貨牧場GAYU（がゆ）",
+      "pref": "fukuoka",
+      "cityName": "飯塚市",
+      "address": "福岡県飯塚市菰田東2丁目22-13",
+      "lat": 33.630485,
+      "lng": 130.6938279,
+      "hours": "土日 11:00 - 17:00",
+      "holidays": "月曜・火曜・水曜・木曜・金曜",
+      "phone": "080-4271-6660",
+      "url": "https://zakkagayu.com/",
+      "website": "https://zakkagayu.com/",
+      "mapUrl": "https://maps.google.com/?cid=490633358266085264",
+      "image": "/_portal/vshops/tri-life-88/g01.jpg",
+      "images": [
+        "/_portal/vshops/tri-life-88/g01.jpg",
+        "/_portal/vshops/tri-life-88/g02.jpg",
+        "/_portal/vshops/tri-life-88/g03.jpg",
+        "/_portal/vshops/tri-life-88/g05.jpg",
+        "/_portal/vshops/tri-life-88/g06.jpg",
+        "/_portal/vshops/tri-life-88/g07.jpg",
+        "/_portal/vshops/tri-life-88/g08.jpg",
+        "/_portal/vshops/tri-life-88/g09.jpg",
+        "/_portal/vshops/tri-life-88/g10.jpg",
+        "/_portal/vshops/tri-life-88/s01.jpg"
+      ],
+      "photos": [
+        {
+          "path": "/_portal/vshops/tri-life-88/g01.jpg",
+          "what": "看板のある雑貨牧場GAYUの店舗入り口",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-life-88/g02.jpg",
+          "what": "青い看板がある2階建ての店舗外観",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 675
+        },
+        {
+          "path": "/_portal/vshops/tri-life-88/g03.jpg",
+          "what": "雑貨が並ぶ棚のある店内の様子",
+          "kind": "common",
+          "width": 1200,
+          "height": 758
+        },
+        {
+          "path": "/_portal/vshops/tri-life-88/g05.jpg",
+          "what": "木のテーブルに並ぶアクセサリーなどの雑貨",
+          "kind": "meal",
+          "width": 1195,
+          "height": 896
+        },
+        {
+          "path": "/_portal/vshops/tri-life-88/g06.jpg",
+          "what": "屋外に置かれた小物入れのような雑貨",
+          "kind": "meal",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-life-88/g07.jpg",
+          "what": "チェック柄の席がある店内の一角",
+          "kind": "common",
+          "width": 1195,
+          "height": 896
+        },
+        {
+          "path": "/_portal/vshops/tri-life-88/g08.jpg",
+          "what": "陶器が並ぶ店先の棚",
+          "kind": "common",
+          "width": 960,
+          "height": 638
+        },
+        {
+          "path": "/_portal/vshops/tri-life-88/g09.jpg",
+          "what": "猫の絵が描かれた小さなキャンバス",
+          "kind": "meal",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-life-88/g10.jpg",
+          "what": "いちご柄のマグカップなどの陶器",
+          "kind": "meal",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-life-88/s01.jpg",
+          "what": "青空の下の2階建ての店舗外観",
+          "kind": "exterior",
+          "width": 1280,
+          "height": 960
+        }
+      ],
+      "tags": [],
+      "article": {
+        "headline": "福岡県飯塚市菰田東にある雑貨店。営業は土曜と日曜の11時から17時のみ。",
+        "lede": "福岡県飯塚市にある「雑貨牧場GAYU（がゆ）」です。業種はGoogleマップで雑貨店、営業は土曜と日曜の11時から17時です。",
+        "sections": [
+          {
+            "heading": "アクセス",
+            "body": "住所は福岡県飯塚市菰田東２丁目２２−１３、電話は080-4271-6660です。"
+          },
+          {
+            "heading": "店の説明",
+            "body": "屋号は雑貨牧場GAYUです。公式サイトの説明は「雑貨屋です。……たぶん。」です。"
+          }
+        ],
+        "sources": [
+          {
+            "label": "公式サイト",
+            "url": "https://zakkagayu.com/"
+          },
+          {
+            "label": "Google マップ",
+            "url": "https://maps.google.com/?cid=490633358266085264"
+          }
+        ],
+        "checkedAt": "2026-10-26"
+      }
+    },
+    {
+      "id": "li0006",
+      "vertical": "life",
+      "category": "shrine-temple",
+      "name": "藤森神社",
+      "pref": "osaka",
+      "cityName": "摂津市",
+      "address": "大阪府摂津市鳥飼西2丁目1-1",
+      "lat": 34.7720862,
+      "lng": 135.582386,
+      "phone": "072-654-5767",
+      "url": "http://www.fujimori.ed.jp/jinjya/",
+      "website": "http://www.fujimori.ed.jp/jinjya/",
+      "mapUrl": "https://maps.google.com/?cid=9903908332713633904",
+      "image": "/_portal/vshops/tri-life-89/g01.jpg",
+      "images": [
+        "/_portal/vshops/tri-life-89/g01.jpg",
+        "/_portal/vshops/tri-life-89/g02.jpg",
+        "/_portal/vshops/tri-life-89/g03.jpg",
+        "/_portal/vshops/tri-life-89/g06.jpg",
+        "/_portal/vshops/tri-life-89/g07.jpg",
+        "/_portal/vshops/tri-life-89/g08.jpg",
+        "/_portal/vshops/tri-life-89/g09.jpg",
+        "/_portal/vshops/tri-life-89/g10.jpg"
+      ],
+      "photos": [
+        {
+          "path": "/_portal/vshops/tri-life-89/g01.jpg",
+          "what": "瓦屋根の木造社殿が建つ神社の外観",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 675
+        },
+        {
+          "path": "/_portal/vshops/tri-life-89/g02.jpg",
+          "what": "紫の幕がかかる木造社殿の軒先",
+          "kind": "exterior",
+          "width": 1088,
+          "height": 1088
+        },
+        {
+          "path": "/_portal/vshops/tri-life-89/g03.jpg",
+          "what": "階段と鳥居の先に社殿が見える参道",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-life-89/g06.jpg",
+          "what": "木々に囲まれた参道の奥に鳥居が見える",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-life-89/g07.jpg",
+          "what": "幕がかかった黒い像が置かれた境内の一角",
+          "kind": "common",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-life-89/g08.jpg",
+          "what": "石鳥居の奥に社殿と停まった車が見える境内",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 675
+        },
+        {
+          "path": "/_portal/vshops/tri-life-89/g09.jpg",
+          "what": "社殿前に置かれた狛犬の像",
+          "kind": "common",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-life-89/g10.jpg",
+          "what": "木々に囲まれた境内の広場に遊具がある",
+          "kind": "common",
+          "width": 1200,
+          "height": 900
+        }
+      ],
+      "tags": [
+        "駐車場あり"
+      ],
+      "article": {
+        "headline": "大阪府摂津市鳥飼西にある神社。舎人親王と菅原道真公を主祭神とし、本殿は寛文四(1664)年の建立",
+        "lede": "摂津市にある「藤森神社」です。淀川の畔にある鳥飼地域の氏神として祀られ、通称「ふじもりさん」と呼ばれています。主祭神は舎人親王と菅原道真公の二柱です。",
+        "sections": [
+          {
+            "heading": "御由緒",
+            "body": "藤森神社は淀川の畔にある鳥飼地域の氏神です。現在の神社の形態は天正五(1577)年にでき、本殿は寛文四(1664)年の建立です。主祭神は舎人親王と菅原道真公の二柱で、境内には稲荷神社、國狭槌神社、市杵島神社の末社があります。"
+          },
+          {
+            "heading": "例祭と年中行事",
+            "body": "例祭は十月十八日です。前日十七日の宵宮には、大人の背丈よりも大きな提灯が鳥居前に集まる「ねりこみ」と呼ばれる提灯行列が行われます。年間行事には一月一日の歳旦祭、一月十五日のどんど焼き、二月三日の節分祭、四月十七日の春祭り、八月一日の夏祭りがあります。"
+          },
+          {
+            "heading": "御祈祷",
+            "body": "御祈祷には初宮参り、七五三参り、安産祈願、家内安全祈願、厄祓、合格祈願、交通安全祈願、地鎮祭があります。七五三まいりは九月から十二月に日時を予約してのお参りで、御祈祷時間は約二十分です。予約と問い合わせは電話で受け付けています。"
+          },
+          {
+            "heading": "場所と駐車場",
+            "body": "住所は大阪府摂津市鳥飼西二丁目一番一号です。最寄りバス停は西鳥飼停留所で、南へ徒歩約二分です。大阪モノレール南摂津駅からはバスで約五分、徒歩では約十五分です。自動車でお越しの場合は境内に駐車できます。"
+          }
+        ],
+        "menus": [
+          {
+            "name": "初宮参り"
+          },
+          {
+            "name": "七五三参り"
+          },
+          {
+            "name": "安産祈願"
+          },
+          {
+            "name": "家内安全祈願"
+          },
+          {
+            "name": "厄祓"
+          },
+          {
+            "name": "合格祈願"
+          },
+          {
+            "name": "交通安全祈願"
+          },
+          {
+            "name": "地鎮祭"
+          }
+        ],
+        "sources": [
+          {
+            "label": "公式サイト",
+            "url": "http://www.fujimori.ed.jp/jinjya/"
+          },
+          {
+            "label": "公式サイト(御由緒)",
+            "url": "http://www.fujimori.ed.jp/jinjya/concept.html"
+          },
+          {
+            "label": "公式サイト(御祈祷)",
+            "url": "http://www.fujimori.ed.jp/jinjya/menu.html"
+          },
+          {
+            "label": "公式サイト(交通案内)",
+            "url": "http://www.fujimori.ed.jp/jinjya/access.html"
+          },
+          {
+            "label": "公式サイト(年中行事)",
+            "url": "http://www.fujimori.ed.jp/jinjya/news.html"
+          },
+          {
+            "label": "Google マップ",
+            "url": "https://maps.google.com/?cid=9903908332713633904"
+          }
+        ],
+        "checkedAt": "2026-10-26"
+      }
+    },
+    {
+      "id": "li0007",
+      "vertical": "life",
+      "category": "shrine-temple",
+      "name": "來宮神社",
+      "pref": "shizuoka",
+      "cityName": "熱海市",
+      "address": "静岡県熱海市西山町43-1",
+      "lat": 35.1003967,
+      "lng": 139.0678814,
+      "phone": "0557-82-2241",
+      "url": "http://www.kinomiya.or.jp/",
+      "website": "http://www.kinomiya.or.jp/",
+      "mapUrl": "https://maps.google.com/?cid=4219953056217248155",
+      "image": "/_portal/vshops/tri-life-90/g01.jpg",
+      "images": [
+        "/_portal/vshops/tri-life-90/g01.jpg",
+        "/_portal/vshops/tri-life-90/g02.jpg",
+        "/_portal/vshops/tri-life-90/g03.jpg",
+        "/_portal/vshops/tri-life-90/g04.jpg",
+        "/_portal/vshops/tri-life-90/g05.jpg",
+        "/_portal/vshops/tri-life-90/g06.jpg",
+        "/_portal/vshops/tri-life-90/g07.jpg",
+        "/_portal/vshops/tri-life-90/g08.jpg",
+        "/_portal/vshops/tri-life-90/g09.jpg",
+        "/_portal/vshops/tri-life-90/g10.jpg",
+        "/_portal/vshops/tri-life-90/s13.jpg",
+        "/_portal/vshops/tri-life-90/s15.jpg",
+        "/_portal/vshops/tri-life-90/s17.jpg"
+      ],
+      "photos": [
+        {
+          "path": "/_portal/vshops/tri-life-90/g01.jpg",
+          "what": "木々に囲まれた参道の先に社殿が見える境内入口",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 800
+        },
+        {
+          "path": "/_portal/vshops/tri-life-90/g02.jpg",
+          "what": "石灯籠が並ぶ参道を参拝者が歩いている",
+          "kind": "common",
+          "width": 1200,
+          "height": 675
+        },
+        {
+          "path": "/_portal/vshops/tri-life-90/g03.jpg",
+          "what": "石段の先に朱色の社殿が建つ正面の眺め",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-life-90/g04.jpg",
+          "what": "朱色の鳥居が連なる参道",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-life-90/g05.jpg",
+          "what": "白い幟が並ぶ参道の奥に鳥居が見える",
+          "kind": "common",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-life-90/g06.jpg",
+          "what": "根元に祠が設けられた巨木と石段の参道",
+          "kind": "common",
+          "width": 1200,
+          "height": 675
+        },
+        {
+          "path": "/_portal/vshops/tri-life-90/g07.jpg",
+          "what": "太い幹の巨木を見上げる参道",
+          "kind": "common",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-life-90/g08.jpg",
+          "what": "瓦屋根の社殿前に参拝者が集まっている",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 675
+        },
+        {
+          "path": "/_portal/vshops/tri-life-90/g09.jpg",
+          "what": "赤い房のついた金色の装飾品が屋内に展示されている",
+          "kind": "common",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-life-90/g10.jpg",
+          "what": "剣の飾りが付いた金色の神具が暗い室内に置かれている",
+          "kind": "common",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-life-90/s13.jpg",
+          "what": "木々の並木道を参拝者が歩いている",
+          "kind": "common",
+          "width": 1280,
+          "height": 720
+        },
+        {
+          "path": "/_portal/vshops/tri-life-90/s15.jpg",
+          "what": "狛犬の像が並ぶ参道の入口",
+          "kind": "exterior",
+          "width": 1024,
+          "height": 768
+        },
+        {
+          "path": "/_portal/vshops/tri-life-90/s17.jpg",
+          "what": "夜に灯りで照らされた境内の木々",
+          "kind": "common",
+          "width": 1024,
+          "height": 683
+        }
+      ],
+      "tags": [
+        "駅近",
+        "駐車場あり"
+      ],
+      "article": {
+        "headline": "静岡県熱海市西山町にある神社。国指定天然記念物の大楠を御神木とし、全国四十四社のキノミヤジンジャの総社とされる。",
+        "lede": "熱海市にある「來宮神社」です。御祭神は日本武尊・五十猛命・大己貴命の三柱で、境内には樹齢2千年を超えるご神木「大楠」があります。最寄り駅はJR伊東線の来宮駅です。",
+        "sections": [
+          {
+            "heading": "御祭神とご神木",
+            "body": "御祭神は日本武尊・五十猛命・大己貴命の三柱です。境内のご神木「大楠」は国指定天然記念物で、樹齢は2千年を超えます。平成4年度の環境省の調査で全国２位の巨樹の認定を受け、幹周りは約24メートルです。本殿向かって左奥にあります。"
+          },
+          {
+            "heading": "境内のようす",
+            "body": "鳥居をくぐって5メートルほどで手水舎があり、参道をはさんだ向かいに第二大楠、その奥に三峯神社、手水舎の左脇奥に来宮稲荷明神があります。手水舎を過ぎた右手には御神水があり、階段を上ると本殿です。"
+          },
+          {
+            "heading": "場所とアクセス",
+            "body": "住所は静岡県熱海市西山町43-1、電話は0557-82-2241です。最寄り駅はJR伊東線の来宮駅で、神社までの道のりは約400メートルです。JR熱海駅からは十国峠行または西山循環バスに乗り『來宮神社』前で下車すると目の前です。御祈祷の受付は9時から16時30分までです。駐車場もあります。"
+          },
+          {
+            "heading": "年中行事",
+            "body": "年中行事は元日の初詣から大晦日の大祓神札焼納祭まで、四季折々におこなわれます。例大祭は毎年7月14日から16日で、こがし祭とも呼ばれます。"
+          }
+        ],
+        "menus": [
+          {
+            "name": "御祈祷"
+          },
+          {
+            "name": "結婚式"
+          },
+          {
+            "name": "授与品（お守り・お札）"
+          },
+          {
+            "name": "お砂・お水（お水取り）"
+          }
+        ],
+        "sources": [
+          {
+            "label": "公式サイト",
+            "url": "https://kinomiya.or.jp/"
+          },
+          {
+            "label": "公式サイト(アクセス・交通)",
+            "url": "https://kinomiya.or.jp/top/praying/access/"
+          },
+          {
+            "label": "公式サイト(來宮神社について)",
+            "url": "https://kinomiya.or.jp/top/overview/"
+          },
+          {
+            "label": "公式サイト(御祭神縁起)",
+            "url": "https://kinomiya.or.jp/top/overview/deity/"
+          },
+          {
+            "label": "公式サイト(境内図)",
+            "url": "https://kinomiya.or.jp/top/overview/precinct_map/"
+          },
+          {
+            "label": "Google マップ",
+            "url": "https://maps.google.com/?cid=4219953056217248155"
+          }
+        ],
+        "checkedAt": "2026-10-26"
+      }
+    },
+    {
+      "id": "li0008",
+      "vertical": "life",
+      "category": "shrine-temple",
+      "name": "交野天神社",
+      "pref": "osaka",
+      "cityName": "枚方市",
+      "address": "大阪府枚方市楠葉丘2丁目19-1",
+      "lat": 34.8676417,
+      "lng": 135.6898667,
+      "phone": "072-857-7332",
+      "url": "http://osakadai3shibu.kilo.jp/jinja/hirakata/jinja/katanoamatukami.html",
+      "website": "http://osakadai3shibu.kilo.jp/jinja/hirakata/jinja/katanoamatukami.html",
+      "mapUrl": "https://maps.google.com/?cid=10079227691047330108",
+      "image": "/_portal/vshops/tri-life-92/g01.jpg",
+      "images": [
+        "/_portal/vshops/tri-life-92/g01.jpg",
+        "/_portal/vshops/tri-life-92/g02.jpg",
+        "/_portal/vshops/tri-life-92/g03.jpg",
+        "/_portal/vshops/tri-life-92/g04.jpg",
+        "/_portal/vshops/tri-life-92/g05.jpg",
+        "/_portal/vshops/tri-life-92/g06.jpg",
+        "/_portal/vshops/tri-life-92/g07.jpg",
+        "/_portal/vshops/tri-life-92/g08.jpg",
+        "/_portal/vshops/tri-life-92/g09.jpg",
+        "/_portal/vshops/tri-life-92/g10.jpg"
+      ],
+      "photos": [
+        {
+          "path": "/_portal/vshops/tri-life-92/g01.jpg",
+          "what": "朱塗りの社殿が木の柵越しに並ぶ境内",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 800
+        },
+        {
+          "path": "/_portal/vshops/tri-life-92/g02.jpg",
+          "what": "瓦屋根の小さな覆屋の下に石の台がある一角",
+          "kind": "common",
+          "width": 1200,
+          "height": 675
+        },
+        {
+          "path": "/_portal/vshops/tri-life-92/g03.jpg",
+          "what": "木の鳥居から社殿へ続く石畳の参道",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-life-92/g04.jpg",
+          "what": "石灯籠が並ぶ鳥居のある境内",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-life-92/g05.jpg",
+          "what": "文字が刻まれた石碑が立つ一角",
+          "kind": "common",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-life-92/g06.jpg",
+          "what": "しめ縄を巻いた石と小さな社がある境内",
+          "kind": "common",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-life-92/g07.jpg",
+          "what": "白壁に朱色の屋根を持つ小さな社殿",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 676
+        },
+        {
+          "path": "/_portal/vshops/tri-life-92/g08.jpg",
+          "what": "石碑と石灯籠が並ぶ木立の中の境内",
+          "kind": "common",
+          "width": 1200,
+          "height": 675
+        },
+        {
+          "path": "/_portal/vshops/tri-life-92/g09.jpg",
+          "what": "木の鳥居と石灯籠が立つ参道の入り口",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 800
+        },
+        {
+          "path": "/_portal/vshops/tri-life-92/g10.jpg",
+          "what": "黒い木造の社殿と石灯籠がある境内",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 900
+        }
+      ],
+      "tags": [],
+      "article": {
+        "headline": "大阪府枚方市楠葉丘の神社。延暦六年、桓武天皇が父・光仁天皇を配祀したことが起源と伝えられ、本殿は一間社流れ造りで国内最古のものとされる。",
+        "lede": "枚方市にある「交野天神社」です。延暦六年十一月五日、桓武天皇が交野で昊天を郊祀した際に、父の光仁天皇を配祀したことが起源と伝えられています。元は交野天津神と称し、樟葉神社、天神宮、天神社と名を変えた後、明治二十一年二月に今の社名となりました。",
+        "sections": [
+          {
+            "heading": "御祭神と由緒",
+            "body": "御祭神は光仁天皇、天児屋根命、菅原道真公です。慶長の頃に町村が分離して二社が建てられ、天児屋根命をまつる春日神社と菅原道真公をまつる天満宮に分かれました。明治五年、両社はふたたび当社に合祀されています。例祭は10月17日です。"
+          },
+          {
+            "heading": "本殿と文化財",
+            "body": "本殿と末社八幡神社の社殿は、共に一間社流れ造りで、国内で最も古い建築例とされています。小規模ながら他に類例のない特殊な構造を持つ建物として、大正六年四月五日に特別保護建造物となり、昭和二十五年八月二十九日には重要文化財に指定されました。"
+          },
+          {
+            "heading": "境内の貴船神社",
+            "body": "境内東北の壇上には末社の貴船神社があります。貴船神社はもとは当郷の氏神でした。この場所は継体天皇の即位の跡、すなわち樟葉の宮とされ、大阪府と教育委員会により標石が建てられています。"
+          }
+        ],
+        "sources": [
+          {
+            "label": "公式サイト",
+            "url": "http://osakadai3shibu.kilo.jp/jinja/hirakata/jinja/katanoamatukami.html"
+          },
+          {
+            "label": "Google マップ",
+            "url": "https://maps.google.com/?cid=10079227691047330108"
+          }
+        ],
+        "checkedAt": "2026-10-26"
+      }
+    },
+    {
+      "id": "li0009",
+      "vertical": "life",
+      "category": "shrine-temple",
+      "name": "雲雷寺",
+      "pref": "osaka",
+      "cityName": "大阪市中央区",
+      "address": "大阪府大阪市中央区中寺1丁目4-4",
+      "lat": 34.6697394,
+      "lng": 135.5149084,
+      "phone": "06-6761-2484",
+      "url": "http://unraiji.or.jp/",
+      "website": "http://unraiji.or.jp/",
+      "mapUrl": "https://maps.google.com/?cid=557010297210272337",
+      "image": "/_portal/vshops/tri-life-97/g01.jpg",
+      "images": [
+        "/_portal/vshops/tri-life-97/g01.jpg",
+        "/_portal/vshops/tri-life-97/g02.jpg",
+        "/_portal/vshops/tri-life-97/g03.jpg",
+        "/_portal/vshops/tri-life-97/g05.jpg",
+        "/_portal/vshops/tri-life-97/g06.jpg",
+        "/_portal/vshops/tri-life-97/g07.jpg",
+        "/_portal/vshops/tri-life-97/g08.jpg",
+        "/_portal/vshops/tri-life-97/g09.jpg",
+        "/_portal/vshops/tri-life-97/g10.jpg",
+        "/_portal/vshops/tri-life-97/s02.jpg",
+        "/_portal/vshops/tri-life-97/s03.jpg",
+        "/_portal/vshops/tri-life-97/s04.jpg"
+      ],
+      "photos": [
+        {
+          "path": "/_portal/vshops/tri-life-97/g01.jpg",
+          "what": "瓦屋根の山門が建っている",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-life-97/g02.jpg",
+          "what": "白い塔状の建物が建っている",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-life-97/g03.jpg",
+          "what": "文字が刻まれた石碑が立っている",
+          "width": 925,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-life-97/g05.jpg",
+          "what": "白壁沿いの道から見える塔のある建物",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 800
+        },
+        {
+          "path": "/_portal/vshops/tri-life-97/g06.jpg",
+          "what": "本堂内に祭壇と集まった人々の様子",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-life-97/g07.jpg",
+          "what": "塀のそばに咲く桜の木",
+          "kind": "exterior",
+          "width": 675,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-life-97/g08.jpg",
+          "what": "紫の花と白い石が配された植え込み",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-life-97/g09.jpg",
+          "what": "山門の柱と手水舎がある入り口",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-life-97/g10.jpg",
+          "what": "白壁に囲まれた建物群の外観",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 800
+        },
+        {
+          "path": "/_portal/vshops/tri-life-97/s02.jpg",
+          "what": "山門の屋根と吊り下げられた提灯",
+          "kind": "exterior",
+          "width": 1280,
+          "height": 520
+        },
+        {
+          "path": "/_portal/vshops/tri-life-97/s03.jpg",
+          "what": "白い塔状の建物とビル群",
+          "kind": "exterior",
+          "width": 1280,
+          "height": 520
+        },
+        {
+          "path": "/_portal/vshops/tri-life-97/s04.jpg",
+          "what": "錦鯉が泳ぐ庭園の池",
+          "kind": "exterior",
+          "width": 1280,
+          "height": 520
+        }
+      ],
+      "tags": [],
+      "article": {
+        "headline": "大阪市中央区中寺にある日蓮宗の寺院。創建は天正年間（1573～91年）にさかのぼり、慶長3年（1598年）に現在の地へ移った。",
+        "lede": "大阪市にある「雲雷寺」です。創建は約四百年以上前の天正年間（1573～91年）で、慶長3年（1598年）に豊臣秀吉の政策により現在の大阪市中央区中寺の地へ移りました。本堂は昭和20年（1945年）の大阪大空襲で焼失し、昭和32年（1957年）に再建されたものです。",
+        "sections": [
+          {
+            "heading": "沿革",
+            "body": "雲雷房・日宝上人が両替商加嶋屋作兵衛とともに天正年間に一宇を建立したのが始まりです。慶長3年（1598年）、豊臣秀吉の政策で現在の大阪市中央区中寺の地へ移りました。昭和20年（1945年）の大阪大空襲で山門を除く境内が焼失し、本堂は昭和32年（1957年）に再建されました。内陣にはご本尊の十界曼荼羅と日蓮聖人像が安置され、本堂は一般の方にも開放されています。"
+          },
+          {
+            "heading": "境内",
+            "body": "境内には、平成16年の境内改修の際に建立された鐘楼があり、山門を入ってすぐの場所には雷虎（らいこ）の岩と呼ばれる大きな岩があります。身延山久遠寺から譲り受けた枝垂れ桜や、錦鯉と亀が住む池も見られます。"
+          },
+          {
+            "heading": "お寺でJAZZ",
+            "body": "境内では、平成19年に「空堀まちアートフェスタ」のイベントとして始まった「お寺でJAZZ」がおこなわれています。関西のJAZZシーンで活躍するTommy氏を中心にプロの演奏者を迎え、5月の野外公演と10月末の堂内公演の年2回開催されています。"
+          }
+        ],
+        "menus": [
+          {
+            "name": "報恩卒塔婆"
+          },
+          {
+            "name": "供養卒塔婆"
+          },
+          {
+            "name": "祈願特別祈祷"
+          },
+          {
+            "name": "お寺でJAZZ"
+          }
+        ],
+        "sources": [
+          {
+            "label": "公式サイト",
+            "url": "https://www.unraiji.or.jp/"
+          },
+          {
+            "label": "公式サイト(雲雷寺について)",
+            "url": "https://www.unraiji.or.jp/about/"
+          },
+          {
+            "label": "公式サイト(境内探訪)",
+            "url": "https://www.unraiji.or.jp/area/"
+          },
+          {
+            "label": "公式サイト(お寺でJAZZ)",
+            "url": "https://www.unraiji.or.jp/jazz/"
+          },
+          {
+            "label": "Google マップ",
+            "url": "https://maps.google.com/?cid=557010297210272337"
+          }
+        ],
+        "checkedAt": "2026-10-26"
+      }
+    },
+    {
+      "id": "li0010",
+      "vertical": "life",
+      "category": "shrine-temple",
+      "name": "出石寺",
+      "pref": "ehime",
+      "cityName": "大洲市",
+      "address": "愛媛県大洲市豊茂乙1",
+      "lat": 33.5354587,
+      "lng": 132.4658144,
+      "hours": "毎日 07:00 - 17:00",
+      "phone": "0893-57-0011",
+      "url": "https://syussekiji-no7in20.jimdofree.com/",
+      "website": "https://syussekiji-no7in20.jimdofree.com/",
+      "mapUrl": "https://maps.google.com/?cid=8538771730742450309",
+      "image": "/_portal/vshops/tri-life-98/g01.jpg",
+      "images": [
+        "/_portal/vshops/tri-life-98/g01.jpg",
+        "/_portal/vshops/tri-life-98/g02.jpg",
+        "/_portal/vshops/tri-life-98/g03.jpg",
+        "/_portal/vshops/tri-life-98/g04.jpg",
+        "/_portal/vshops/tri-life-98/g05.jpg",
+        "/_portal/vshops/tri-life-98/g06.jpg",
+        "/_portal/vshops/tri-life-98/g07.jpg",
+        "/_portal/vshops/tri-life-98/g09.jpg",
+        "/_portal/vshops/tri-life-98/g10.jpg"
+      ],
+      "photos": [
+        {
+          "path": "/_portal/vshops/tri-life-98/g01.jpg",
+          "what": "唐破風の屋根を持つ木造の本堂",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 904
+        },
+        {
+          "path": "/_portal/vshops/tri-life-98/g02.jpg",
+          "what": "霧の中、牛の像と鳥居が並ぶ参道",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 675
+        },
+        {
+          "path": "/_portal/vshops/tri-life-98/g03.jpg",
+          "what": "石灯籠と鳥居の前に立つ僧侶の像",
+          "kind": "exterior",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-life-98/g04.jpg",
+          "what": "杉林に囲まれた石段の参道",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-life-98/g05.jpg",
+          "what": "山上から山々を望む眺め、手前にツツジ",
+          "kind": "view",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-life-98/g06.jpg",
+          "what": "鐘楼と社殿の屋根が重なる境内",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-life-98/g07.jpg",
+          "what": "多宝塔と鹿の像が並ぶ境内",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 675
+        },
+        {
+          "path": "/_portal/vshops/tri-life-98/g09.jpg",
+          "what": "紫陽花と石碑の先に広がる山並みの眺め",
+          "kind": "view",
+          "width": 1200,
+          "height": 904
+        },
+        {
+          "path": "/_portal/vshops/tri-life-98/g10.jpg",
+          "what": "台座に乗る牛の像、奥に建物",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 900
+        }
+      ],
+      "tags": [],
+      "article": {
+        "headline": "愛媛県大洲市豊茂にある寺院「出石寺」。参拝時間は月曜から日曜まで7時から17時です",
+        "lede": "愛媛県大洲市にある「出石寺」です。仏教寺院です。参拝時間は毎日7時から17時です。",
+        "sections": [
+          {
+            "heading": "場所と連絡先",
+            "body": "住所は愛媛県大洲市豊茂乙１です。電話は0893-57-0011です。"
+          },
+          {
+            "heading": "参拝時間",
+            "body": "参拝時間は月曜から日曜まで毎日7時から17時です。"
+          }
+        ],
+        "sources": [
+          {
+            "label": "Google マップ",
+            "url": "https://maps.google.com/?cid=8538771730742450309"
+          }
+        ],
+        "checkedAt": "2026-10-26"
+      }
+    },
+    {
+      "id": "li0011",
+      "vertical": "life",
+      "category": "shrine-temple",
+      "name": "善福院 釈迦堂",
+      "pref": "wakayama",
+      "cityName": "海南市",
+      "address": "和歌山県海南市下津町梅田271",
+      "lat": 34.1305328,
+      "lng": 135.1772545,
+      "phone": "073-492-2188",
+      "url": "https://www.city.kainan.lg.jp/kanko/midokoro/bunkazai/zenpukuinshakado.html",
+      "website": "https://www.city.kainan.lg.jp/kanko/midokoro/bunkazai/zenpukuinshakado.html",
+      "mapUrl": "https://maps.google.com/?cid=17265377560436211691",
+      "image": "/_portal/vshops/tri-life-100/g01.jpg",
+      "images": [
+        "/_portal/vshops/tri-life-100/g01.jpg",
+        "/_portal/vshops/tri-life-100/g03.jpg",
+        "/_portal/vshops/tri-life-100/g04.jpg",
+        "/_portal/vshops/tri-life-100/g05.jpg",
+        "/_portal/vshops/tri-life-100/g06.jpg",
+        "/_portal/vshops/tri-life-100/g07.jpg",
+        "/_portal/vshops/tri-life-100/g09.jpg",
+        "/_portal/vshops/tri-life-100/g10.jpg"
+      ],
+      "photos": [
+        {
+          "path": "/_portal/vshops/tri-life-100/g01.jpg",
+          "what": "木造の仏堂と石畳の境内",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-life-100/g03.jpg",
+          "what": "本尊を安置する堂内の仏壇",
+          "kind": "common",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-life-100/g04.jpg",
+          "what": "木々に囲まれた石段の参道",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 800
+        },
+        {
+          "path": "/_portal/vshops/tri-life-100/g05.jpg",
+          "what": "高台から見た境内の甍と周囲の家並み",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-life-100/g06.jpg",
+          "what": "石段の参道と奥に見える本堂",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-life-100/g07.jpg",
+          "what": "本瓦葺の屋根を支える木組み",
+          "kind": "common",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-life-100/g09.jpg",
+          "what": "木造建築の縁側と格子戸",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-life-100/g10.jpg",
+          "what": "軒先と木造回廊の軒下",
+          "kind": "exterior",
+          "width": 676,
+          "height": 1200
+        }
+      ],
+      "tags": [],
+      "article": {
+        "headline": "和歌山県海南市下津町梅田にある寺院。本尊釈迦如来坐像を安置する釈迦堂は鎌倉時代後期の禅宗様式の建築で、国宝に指定されている",
+        "lede": "海南市下津町梅田にある「善福院 釈迦堂」です。善福院は健保2年(1214)に栄西禅師が創設したと伝わる広福寺五ヶ院の一つで、現在は三ヶ院のうち善福院だけが残っています。本尊釈迦如来坐像を安置する釈迦堂は嘉暦2年(1327)ごろの再建とされ、鎌倉時代後期の禅宗様式の典型的な建築として国宝に指定されています。",
+        "sections": [
+          {
+            "heading": "沿革",
+            "body": "善福院は健保2年(1214)、栄西禅師が創設したと伝わる広福寺五ヶ院の一つです。広福禅寺はかつて七堂伽藍を備えていましたが、大旦那の加茂氏の没落とともに荒廃しました。その後、高野山に頼って真言宗に転宗し伽藍を修復し、紀州藩の時代には天台宗に転宗しました。明治初期までは三ヶ院がありましたが、現在は善福院だけが残っています。"
+          },
+          {
+            "heading": "釈迦堂の建築",
+            "body": "釈迦堂は、本尊釈迦如来坐像の胎内の修理銘に嘉暦2年(1327)とあることから、この頃の再建とされています。桁行三間梁間三間、一重裳階付き寄棟造り、本瓦葺の二重仏殿で、木割が太くがっしりとした印象を与えます。床は布敷、組物は二手先で、禅宗様式が定着する前の様式がよくあらわれており、鎌倉時代後期の禅宗様式の典型的な建築として国宝に指定されています。"
+          },
+          {
+            "heading": "場所と駐車場",
+            "body": "所在地は海南市下津町梅田271番地、電話は073-492-2188です。境内には駐車場があります。"
+          }
+        ],
+        "sources": [
+          {
+            "label": "公式サイト",
+            "url": "https://www.city.kainan.lg.jp/kanko/midokoro/bunkazai/zenpukuinshakado.html"
+          },
+          {
+            "label": "Google マップ",
+            "url": "https://maps.google.com/?cid=17265377560436211691"
+          }
+        ],
+        "checkedAt": "2026-10-26"
+      }
+    },
+    {
+      "id": "li0012",
+      "vertical": "life",
+      "category": "flower-farm",
+      "name": "阿波ツクヨミファーム",
+      "pref": "tokushima",
+      "cityName": "阿波市",
+      "address": "徳島県阿波市阿波町下喜来南97-1",
+      "lat": 34.0909705,
+      "lng": 134.269665,
+      "hours": "月火木金 09:00 - 18:00",
+      "holidays": "水曜・土曜・日曜",
+      "phone": "090-2825-0423",
+      "url": "https://awatsukuyomi.com/",
+      "website": "https://awatsukuyomi.com/",
+      "mapUrl": "https://maps.google.com/?cid=11862403452607498171",
+      "image": "/_portal/vshops/tri-life-101/g02.jpg",
+      "images": [
+        "/_portal/vshops/tri-life-101/g02.jpg",
+        "/_portal/vshops/tri-life-101/g03.jpg",
+        "/_portal/vshops/tri-life-101/g04.jpg",
+        "/_portal/vshops/tri-life-101/g05.jpg",
+        "/_portal/vshops/tri-life-101/g06.jpg",
+        "/_portal/vshops/tri-life-101/g07.jpg",
+        "/_portal/vshops/tri-life-101/g08.jpg",
+        "/_portal/vshops/tri-life-101/g09.jpg",
+        "/_portal/vshops/tri-life-101/g10.jpg",
+        "/_portal/vshops/tri-life-101/s01.jpg",
+        "/_portal/vshops/tri-life-101/s02.jpg",
+        "/_portal/vshops/tri-life-101/s03.jpg",
+        "/_portal/vshops/tri-life-101/s04.jpg",
+        "/_portal/vshops/tri-life-101/s05.jpg"
+      ],
+      "photos": [
+        {
+          "path": "/_portal/vshops/tri-life-101/g02.jpg",
+          "what": "木箱に並んだ白菜やセロリなどの野菜",
+          "kind": "meal",
+          "width": 1200,
+          "height": 800
+        },
+        {
+          "path": "/_portal/vshops/tri-life-101/g03.jpg",
+          "what": "ゆで卵とトマトが盛られたサラダ",
+          "kind": "meal",
+          "width": 675,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-life-101/g04.jpg",
+          "what": "ビニール袋に入った葉物野菜",
+          "kind": "meal",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-life-101/g05.jpg",
+          "what": "土から生えた白いきのこ",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-life-101/g06.jpg",
+          "what": "土の中から野菜を掘り出す手元",
+          "width": 1200,
+          "height": 800
+        },
+        {
+          "path": "/_portal/vshops/tri-life-101/g07.jpg",
+          "what": "畑に茂るブロッコリーなどの葉物野菜",
+          "kind": "view",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-life-101/g08.jpg",
+          "what": "段ボール箱に詰められた野菜",
+          "kind": "meal",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-life-101/g09.jpg",
+          "what": "袋詰めされた豆のような農産物",
+          "kind": "meal",
+          "width": 675,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-life-101/g10.jpg",
+          "what": "器に盛られた茶色いきのこ",
+          "kind": "meal",
+          "width": 675,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-life-101/s01.jpg",
+          "what": "白菜やネギ、みかんなどが並ぶ野菜",
+          "kind": "meal",
+          "width": 1280,
+          "height": 640
+        },
+        {
+          "path": "/_portal/vshops/tri-life-101/s02.jpg",
+          "what": "畑の土に触れる手元",
+          "width": 1280,
+          "height": 640
+        },
+        {
+          "path": "/_portal/vshops/tri-life-101/s03.jpg",
+          "what": "収穫されたばかりの玉ねぎ",
+          "kind": "meal",
+          "width": 1280,
+          "height": 640
+        },
+        {
+          "path": "/_portal/vshops/tri-life-101/s04.jpg",
+          "what": "畑に立つ複数の人々",
+          "kind": "view",
+          "width": 1280,
+          "height": 640
+        },
+        {
+          "path": "/_portal/vshops/tri-life-101/s05.jpg",
+          "what": "木箱に並んだ野菜",
+          "kind": "meal",
+          "width": 1280,
+          "height": 854
+        }
+      ],
+      "tags": [
+        "体験あり",
+        "予約制"
+      ],
+      "article": {
+        "headline": "阿波市阿波町下喜来南にある、不耕起型の混植生態系栽培で野菜を育てる農園。収穫した野菜や加工品をオンラインショップで販売している",
+        "lede": "阿波市にある「阿波ツクヨミファーム」です。植物性有機物・堆肥を利用した農薬不使用有機栽培、または自然栽培で野菜を育て、収穫した野菜や加工品をオンラインショップで販売しています。農業体験や研修プログラムも受け入れています。",
+        "sections": [
+          {
+            "heading": "栽培のしかた",
+            "body": "阿波ツクヨミファームの野菜は、植物性有機物・堆肥を利用した農薬不使用有機栽培、または自然栽培で育てています。基本的な栽培体系は不耕起型の混植生態系栽培で、化学農薬や化学肥料は使用していません。"
+          },
+          {
+            "heading": "商品ラインアップ",
+            "body": "季節の野菜を詰めた『橙（だいだい）ツクヨミお任せ野菜セット』をはじめ、お米やたまご、お肉、海産物、調味料、加工品やキノコなどの商品を扱っています。スキンケア商品の取り扱いもあります。"
+          },
+          {
+            "heading": "体験・研修プログラム",
+            "body": "ツクヨミファームの農作業や袋詰め、EC関連の業務などを半日もしくは1日から体験できます。2ヶ月以上かけてリジェネラティブ農業を実践する長期滞在の研修プログラムも受け入れています。日帰り体験の予約はじゃらんの予約ページからできます。"
+          },
+          {
+            "heading": "運営会社",
+            "body": "阿波ツクヨミファームを運営するのは株式会社経親で、2014年4月8日に設立されました。代表取締役社長は芝橋宏治です。事業内容はリジェネラティブ農業によるD2Cです。所在地は徳島県阿波市阿波町下喜来南97番地1です。"
+          }
+        ],
+        "menus": [
+          {
+            "name": "橙（だいだい）ツクヨミお任せ野菜セット"
+          },
+          {
+            "name": "徳島新鮮野菜セット"
+          },
+          {
+            "name": "CSA定期便"
+          },
+          {
+            "name": "短期滞在（体験）"
+          },
+          {
+            "name": "長期滞在・研修プラン"
+          },
+          {
+            "name": "日帰り農業体験・徳島留学"
+          }
+        ],
+        "sources": [
+          {
+            "label": "公式サイト",
+            "url": "https://awatsukuyomi.com/"
+          },
+          {
+            "label": "公式サイト(会社概要)",
+            "url": "https://awatsukuyomi.com/pages/aboutus"
+          },
+          {
+            "label": "公式サイト(体験・研修)",
+            "url": "https://awatsukuyomi.com/pages/agricultural-experience"
+          },
+          {
+            "label": "公式サイト(栽培体系ブログ)",
+            "url": "https://awatsukuyomi.com/blogs/magazine/experience-program"
+          },
+          {
+            "label": "公式サイト(加工品一覧)",
+            "url": "https://awatsukuyomi.com/collections/processed-products-mushrooms-others"
+          },
+          {
+            "label": "Google マップ",
+            "url": "https://maps.google.com/?cid=11862403452607498171"
+          }
+        ],
+        "checkedAt": "2026-10-26"
+      }
+    },
+    {
+      "id": "li0013",
+      "vertical": "life",
+      "category": "shrine-temple",
+      "name": "咸古神社",
+      "pref": "osaka",
+      "cityName": "富田林市",
+      "address": "大阪府富田林市龍泉886",
+      "lat": 34.4627364,
+      "lng": 135.5977865,
+      "phone": "0721-23-3007",
+      "url": "https://osaka-jinjacho.jp/funai_jinja/dai11shibu/tondabayashi-city/11036konkujinja.html",
+      "website": "https://osaka-jinjacho.jp/funai_jinja/dai11shibu/tondabayashi-city/11036konkujinja.html",
+      "mapUrl": "https://maps.google.com/?cid=11279119064413728312",
+      "image": "/_portal/vshops/tri-life-107/g01.jpg",
+      "images": [
+        "/_portal/vshops/tri-life-107/g01.jpg",
+        "/_portal/vshops/tri-life-107/g02.jpg",
+        "/_portal/vshops/tri-life-107/g03.jpg",
+        "/_portal/vshops/tri-life-107/g04.jpg",
+        "/_portal/vshops/tri-life-107/g05.jpg",
+        "/_portal/vshops/tri-life-107/g06.jpg",
+        "/_portal/vshops/tri-life-107/g07.jpg",
+        "/_portal/vshops/tri-life-107/g08.jpg",
+        "/_portal/vshops/tri-life-107/g09.jpg",
+        "/_portal/vshops/tri-life-107/g10.jpg"
+      ],
+      "photos": [
+        {
+          "path": "/_portal/vshops/tri-life-107/g01.jpg",
+          "what": "石段の先、木々に囲まれて建つ社殿",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-life-107/g02.jpg",
+          "what": "赤い鳥居と「咸古神社」と刻まれた石柱",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-life-107/g03.jpg",
+          "what": "大きな石造りの鳥居",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-life-107/g04.jpg",
+          "what": "「咸古神社」と刻まれた石柱と奥の鳥居",
+          "kind": "exterior",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-life-107/g05.jpg",
+          "what": "苔に覆われた石積み",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-life-107/g06.jpg",
+          "what": "朱色の屋根の社殿と石造りの狛犬",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 800
+        },
+        {
+          "path": "/_portal/vshops/tri-life-107/g07.jpg",
+          "what": "石段の先にある鳥居と社殿",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 799
+        },
+        {
+          "path": "/_portal/vshops/tri-life-107/g08.jpg",
+          "what": "木々の中に立つ石造りの狛犬",
+          "kind": "common",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-life-107/g09.jpg",
+          "what": "木々に囲まれた池の風景",
+          "kind": "view",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-life-107/g10.jpg",
+          "what": "屋根のある手水舎",
+          "kind": "common",
+          "width": 1200,
+          "height": 799
+        }
+      ],
+      "tags": [],
+      "article": {
+        "headline": "富田林市龍泉、嶽山の中腹に鎮座する神社です。読み方は「こんくじんじゃ」、通称は「咸古さん」といいます。",
+        "lede": "富田林市にある「咸古神社」です。鎮座地は龍泉886で、近鉄長野線富田林駅から金剛バスに乗り、蒲停で下車して500mほどの嶽山中腹にあります。神社本庁加盟神社で、登録コードは11036です。",
+        "sections": [
+          {
+            "heading": "場所と交通手段",
+            "body": "住所は富田林市龍泉886です。近鉄長野線富田林駅から金剛バスに乗り、蒲停で下車して500mほど歩くと、嶽山中腹の境内に着きます。参拝は24時間可能です。"
+          },
+          {
+            "heading": "問い合わせ先と登録",
+            "body": "電話による問い合わせ先は美具久留御魂神社で、電話番号は0721-23-3007です。神社本庁加盟神社として登録されており、登録コードは11036です。公式サイトの最終更新日は令和元年7月1日です。"
+          }
+        ],
+        "sources": [
+          {
+            "label": "公式サイト",
+            "url": "https://osaka-jinjacho.jp/funai_jinja/dai11shibu/tondabayashi-city/11036konkujinja.html"
+          },
+          {
+            "label": "Google マップ",
+            "url": "https://maps.google.com/?cid=11279119064413728312"
+          }
+        ],
+        "checkedAt": "2026-10-26"
+      }
+    },
+    {
+      "id": "li0014",
+      "vertical": "life",
+      "category": "fortune",
+      "name": "占い空間 花の瞳",
+      "pref": "okayama",
+      "cityName": "岡山市北区",
+      "address": "岡山県岡山市北区錦町6-10 久世ビル 4階",
+      "lat": 34.6630275,
+      "lng": 133.9201844,
+      "hours": "毎日 13:00 - 21:00",
+      "phone": "080-1487-9103",
+      "mapUrl": "https://maps.google.com/?cid=16468765391982797720",
+      "image": "/_portal/vshops/tri-life-111/g01.jpg",
+      "images": [
+        "/_portal/vshops/tri-life-111/g01.jpg",
+        "/_portal/vshops/tri-life-111/g03.jpg",
+        "/_portal/vshops/tri-life-111/g04.jpg",
+        "/_portal/vshops/tri-life-111/g05.jpg",
+        "/_portal/vshops/tri-life-111/g06.jpg",
+        "/_portal/vshops/tri-life-111/g08.jpg",
+        "/_portal/vshops/tri-life-111/g09.jpg"
+      ],
+      "photos": [
+        {
+          "path": "/_portal/vshops/tri-life-111/g01.jpg",
+          "what": "赤い花柄のソファと木製テーブルが並ぶ室内",
+          "kind": "room",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-life-111/g03.jpg",
+          "what": "ビルの一角にある外観",
+          "kind": "exterior",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-life-111/g04.jpg",
+          "what": "ソファと丸テーブルが置かれた室内",
+          "kind": "room",
+          "width": 982,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-life-111/g05.jpg",
+          "what": "緑色の扉がある入り口",
+          "kind": "common",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-life-111/g06.jpg",
+          "what": "赤い花柄のソファが置かれた室内",
+          "kind": "room",
+          "width": 675,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-life-111/g08.jpg",
+          "what": "緑色の扉が開いた入り口",
+          "kind": "common",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-life-111/g09.jpg",
+          "what": "丸テーブルと椅子が置かれた室内",
+          "kind": "room",
+          "width": 1200,
+          "height": 900
+        }
+      ],
+      "tags": [],
+      "article": {
+        "headline": "岡山市北区錦町にある「占い空間 花の瞳」。久世ビル4階にある占いサービスの店です。",
+        "lede": "岡山市にある「占い空間 花の瞳」です。岡山県岡山市北区錦町６−１０ 久世ビル4階にあり、業種は占いサービスです。",
+        "sections": [
+          {
+            "heading": "場所と連絡先",
+            "body": "住所は岡山県岡山市北区錦町６−１０ 久世ビル4階です。電話番号は080-1487-9103です。"
+          },
+          {
+            "heading": "営業時間",
+            "body": "営業時間は月曜から日曜まで13:00から21:00までです。"
+          }
+        ],
+        "sources": [
+          {
+            "label": "Google マップ",
+            "url": "https://maps.google.com/?cid=16468765391982797720"
+          }
+        ],
+        "checkedAt": "2026-10-26"
+      }
+    },
+    {
+      "id": "li0015",
+      "vertical": "life",
+      "category": "shrine-temple",
+      "name": "泉州磐船神社 航空神社",
+      "pref": "osaka",
+      "cityName": "泉佐野市",
+      "address": "大阪府泉佐野市上瓦屋392-1",
+      "lat": 34.4135208,
+      "lng": 135.3370972,
+      "hours": "毎日 09:00 - 17:00",
+      "phone": "072-462-5900",
+      "url": "http://www.senshuiwafune.jp/",
+      "website": "http://www.senshuiwafune.jp/",
+      "mapUrl": "https://maps.google.com/?cid=247100835819611395",
+      "image": "/_portal/vshops/tri-life-120/g01.jpg",
+      "images": [
+        "/_portal/vshops/tri-life-120/g01.jpg",
+        "/_portal/vshops/tri-life-120/g02.jpg",
+        "/_portal/vshops/tri-life-120/g03.jpg",
+        "/_portal/vshops/tri-life-120/g04.jpg",
+        "/_portal/vshops/tri-life-120/g05.jpg",
+        "/_portal/vshops/tri-life-120/g06.jpg",
+        "/_portal/vshops/tri-life-120/g07.jpg",
+        "/_portal/vshops/tri-life-120/g09.jpg",
+        "/_portal/vshops/tri-life-120/g10.jpg",
+        "/_portal/vshops/tri-life-120/s01.jpg",
+        "/_portal/vshops/tri-life-120/s08.jpg",
+        "/_portal/vshops/tri-life-120/s12.jpg",
+        "/_portal/vshops/tri-life-120/s18.jpg"
+      ],
+      "photos": [
+        {
+          "path": "/_portal/vshops/tri-life-120/g01.jpg",
+          "what": "石段の先に社殿がある神社の正面",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-life-120/g02.jpg",
+          "what": "赤い鳥居とプロペラ、奥に広がる住宅地",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 675
+        },
+        {
+          "path": "/_portal/vshops/tri-life-120/g03.jpg",
+          "what": "鳥居の奥に境内と駐車中の車が見える",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-life-120/g04.jpg",
+          "what": "境内に設置されたヘリコプターの模型",
+          "kind": "common",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-life-120/g05.jpg",
+          "what": "「航空神社」の案内板",
+          "kind": "exterior",
+          "width": 901,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-life-120/g06.jpg",
+          "what": "プロペラのついたヘリコプターの模型",
+          "kind": "common",
+          "width": 1200,
+          "height": 675
+        },
+        {
+          "path": "/_portal/vshops/tri-life-120/g07.jpg",
+          "what": "木の看板が立つ小さな建物と砂利の庭",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 800
+        },
+        {
+          "path": "/_portal/vshops/tri-life-120/g09.jpg",
+          "what": "天井から飾りが下がる室内",
+          "kind": "common",
+          "width": 675,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-life-120/g10.jpg",
+          "what": "「航空神社」と彫られた木製の扁額",
+          "kind": "common",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-life-120/s01.jpg",
+          "what": "赤い鳥居とプロペラ",
+          "kind": "exterior",
+          "width": 1280,
+          "height": 956
+        },
+        {
+          "path": "/_portal/vshops/tri-life-120/s08.jpg",
+          "what": "石段の先にある社殿",
+          "kind": "exterior",
+          "width": 1280,
+          "height": 956
+        },
+        {
+          "path": "/_portal/vshops/tri-life-120/s12.jpg",
+          "what": "人物が描かれた彩色の装飾パネル",
+          "kind": "common",
+          "width": 1280,
+          "height": 956
+        },
+        {
+          "path": "/_portal/vshops/tri-life-120/s18.jpg",
+          "what": "瓦屋根の建物と庭木",
+          "kind": "exterior",
+          "width": 1280,
+          "height": 956
+        }
+      ],
+      "tags": [
+        "予約制",
+        "駐車場あり",
+        "子ども向け"
+      ],
+      "article": {
+        "headline": "大阪府泉佐野市上瓦屋にある神社。関西国際空港建設を契機として昭和58年に設立され、御祭神は饒速日命",
+        "lede": "泉佐野市にある「泉州磐船神社 航空神社」です。関西国際空港建設を契機として昭和58年12月10日に設立された神社で、御祭神は饒速日命です。航空安全や旅行安全、合格祈願などの祈願を執り行っています。",
+        "sections": [
+          {
+            "heading": "由緒",
+            "body": "御祭神は饒速日命(にぎはやひのみこと)です。兵庫県神戸市の北野天満宮の次男として生まれた佐藤匡英が新空港の守護神社創建を志し、構想・準備に10年を費やした後に建立しました。交野市の磐船神社より御分霊を戴き、昭和58年12月10日に鎮座祭を斎行しています。御利益として航空安全、旅行安全・交通安全、大願成就、合格祈願が挙げられています。"
+          },
+          {
+            "heading": "祈願とお守り",
+            "body": "航空安全祈願、旅行安全祈願、合格祈願をはじめ、初宮、七五三、厄除けなどの祈願を執り行っています。地鎮祭をはじめとした出張の安全祈願祭も執り行っており、こちらは要予約です。御朱印は正式名称の「磐船神社」と通称の「航空神社」の2種類を用意しています。"
+          },
+          {
+            "heading": "行事と施設",
+            "body": "例大祭は毎年9月20日に斎行され、祝賀飛行や餅撒きが行われるほか、茶室「飛雲庵」でお茶席が開かれます。境内の航空資料館には約4000点の資料・展示物があり、社務所受付への申し出で観覧できます。日本書藝美術院名誉教授である宮司による龍玉書道教室も開かれており、学生部は中学3年生までを対象としています。"
+          },
+          {
+            "heading": "アクセス",
+            "body": "住所は大阪府泉佐野市上瓦屋392-1、電話は072-462-5900です。車では泉佐野北インターから170号線を南へ5分、駐車場は3台分です。電車ではJR阪和線熊取駅、南海本線井原里駅のいずれからも徒歩10分です。"
+          }
+        ],
+        "menus": [
+          {
+            "name": "航空安全祈願"
+          },
+          {
+            "name": "旅行安全祈願"
+          },
+          {
+            "name": "合格祈願"
+          },
+          {
+            "name": "初宮"
+          },
+          {
+            "name": "七五三"
+          },
+          {
+            "name": "厄除け"
+          },
+          {
+            "name": "地鎮祭"
+          },
+          {
+            "name": "龍玉書道教室"
+          }
+        ],
+        "sources": [
+          {
+            "label": "公式サイト",
+            "url": "https://www.senshuiwafune.jp/"
+          },
+          {
+            "label": "公式サイト(アクセス)",
+            "url": "https://www.senshuiwafune.jp/access/"
+          },
+          {
+            "label": "公式サイト(当神社について)",
+            "url": "https://www.senshuiwafune.jp/about/"
+          },
+          {
+            "label": "公式サイト(祭典・行事)",
+            "url": "https://www.senshuiwafune.jp/event/"
+          },
+          {
+            "label": "公式サイト(ご祈願・授与品)",
+            "url": "https://www.senshuiwafune.jp/prayer/"
+          },
+          {
+            "label": "Google マップ",
+            "url": "https://maps.google.com/?cid=247100835819611395"
+          }
+        ],
+        "checkedAt": "2026-10-26"
+      }
+    },
+    {
+      "id": "li0016",
+      "vertical": "life",
+      "category": "shrine-temple",
+      "name": "日蓮宗 妙宣寺",
+      "pref": "wakayama",
+      "cityName": "和歌山市",
+      "address": "和歌山県和歌山市新堀東2丁目1-8",
+      "lat": 34.2145786,
+      "lng": 135.1744531,
+      "hours": "毎日 08:00 - 17:00",
+      "phone": "073-422-7968",
+      "url": "https://wakayama-myosenji.com/",
+      "website": "https://wakayama-myosenji.com/",
+      "mapUrl": "https://maps.google.com/?cid=17716851611011573937",
+      "image": "/_portal/vshops/tri-life-121/g01.jpg",
+      "images": [
+        "/_portal/vshops/tri-life-121/g01.jpg",
+        "/_portal/vshops/tri-life-121/g02.jpg",
+        "/_portal/vshops/tri-life-121/g03.jpg",
+        "/_portal/vshops/tri-life-121/g04.jpg",
+        "/_portal/vshops/tri-life-121/g05.jpg",
+        "/_portal/vshops/tri-life-121/g07.jpg",
+        "/_portal/vshops/tri-life-121/g08.jpg",
+        "/_portal/vshops/tri-life-121/g10.jpg",
+        "/_portal/vshops/tri-life-121/s02.jpg",
+        "/_portal/vshops/tri-life-121/s03.jpg",
+        "/_portal/vshops/tri-life-121/s04.jpg",
+        "/_portal/vshops/tri-life-121/s05.jpg",
+        "/_portal/vshops/tri-life-121/s06.jpg",
+        "/_portal/vshops/tri-life-121/s07.jpg",
+        "/_portal/vshops/tri-life-121/s08.jpg",
+        "/_portal/vshops/tri-life-121/s09.jpg",
+        "/_portal/vshops/tri-life-121/s10.jpg",
+        "/_portal/vshops/tri-life-121/s11.jpg",
+        "/_portal/vshops/tri-life-121/s12.jpg",
+        "/_portal/vshops/tri-life-121/s13.jpg",
+        "/_portal/vshops/tri-life-121/s14.jpg",
+        "/_portal/vshops/tri-life-121/s17.jpg"
+      ],
+      "photos": [
+        {
+          "path": "/_portal/vshops/tri-life-121/g01.jpg",
+          "what": "参道の先に本堂が見える境内のようす",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-life-121/g02.jpg",
+          "what": "子どもを抱いた観音像の石像",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-life-121/g03.jpg",
+          "what": "赤ちゃんを抱く観音像の彫刻",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-life-121/g04.jpg",
+          "what": "花が供えられた屋外の祠のような設備",
+          "kind": "common",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-life-121/g05.jpg",
+          "what": "台座に小さな像が供えられた観音像",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-life-121/g07.jpg",
+          "what": "石塔や墓石が並ぶ境内の一角",
+          "kind": "common",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-life-121/g08.jpg",
+          "what": "大きな木と本堂のある境内",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-life-121/g10.jpg",
+          "what": "花が供えられた石碑",
+          "kind": "common",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-life-121/s02.jpg",
+          "what": "瓦屋根の本堂を正面から見た外観",
+          "kind": "exterior",
+          "width": 1280,
+          "height": 815
+        },
+        {
+          "path": "/_portal/vshops/tri-life-121/s03.jpg",
+          "what": "本堂脇に立つ観音像の石像",
+          "width": 1280,
+          "height": 815
+        },
+        {
+          "path": "/_portal/vshops/tri-life-121/s04.jpg",
+          "what": "瓦屋根の小さなお堂の外観",
+          "kind": "exterior",
+          "width": 1280,
+          "height": 815
+        },
+        {
+          "path": "/_portal/vshops/tri-life-121/s05.jpg",
+          "what": "幕が下がる本堂内部のようす",
+          "kind": "common",
+          "width": 1280,
+          "height": 853
+        },
+        {
+          "path": "/_portal/vshops/tri-life-121/s06.jpg",
+          "what": "観音像と本堂の屋根",
+          "width": 862,
+          "height": 574
+        },
+        {
+          "path": "/_portal/vshops/tri-life-121/s07.jpg",
+          "what": "ろうそくが灯る本堂内陣の仏壇",
+          "kind": "common",
+          "width": 1280,
+          "height": 853
+        },
+        {
+          "path": "/_portal/vshops/tri-life-121/s08.jpg",
+          "what": "テーブルと椅子が並ぶ和室の客間",
+          "kind": "room",
+          "width": 1280,
+          "height": 853
+        },
+        {
+          "path": "/_portal/vshops/tri-life-121/s09.jpg",
+          "what": "幕の下がる本堂で僧侶が法要を行うようす",
+          "kind": "common",
+          "width": 853,
+          "height": 1280
+        },
+        {
+          "path": "/_portal/vshops/tri-life-121/s10.jpg",
+          "what": "本堂と周囲の木々のある境内",
+          "kind": "exterior",
+          "width": 1280,
+          "height": 853
+        },
+        {
+          "path": "/_portal/vshops/tri-life-121/s11.jpg",
+          "what": "台座の上に座る石像",
+          "width": 853,
+          "height": 1280
+        },
+        {
+          "path": "/_portal/vshops/tri-life-121/s12.jpg",
+          "what": "瓦屋根の小さな建物の外観",
+          "kind": "exterior",
+          "width": 853,
+          "height": 1280
+        },
+        {
+          "path": "/_portal/vshops/tri-life-121/s13.jpg",
+          "what": "ピンクの花飾りで飾られた本堂内陣",
+          "kind": "common",
+          "width": 1280,
+          "height": 853
+        },
+        {
+          "path": "/_portal/vshops/tri-life-121/s14.jpg",
+          "what": "松の木と灯籠のある本堂の外観",
+          "kind": "exterior",
+          "width": 1280,
+          "height": 853
+        },
+        {
+          "path": "/_portal/vshops/tri-life-121/s17.jpg",
+          "what": "灯籠と本堂のある境内の外観",
+          "kind": "exterior",
+          "width": 1280,
+          "height": 853
+        }
+      ],
+      "tags": [
+        "駐車場あり",
+        "予約制"
+      ],
+      "article": {
+        "headline": "和歌山市新堀東にある日蓮宗の寺院。寛永年間の創立で、正徳二年(1712年)に徳川吉宗公からこの地を拝領し、「堀止の妙見さん」とも呼ばれている。",
+        "lede": "和歌山市にある「日蓮宗 妙宣寺」です。寛永年間に創立された日蓮宗の寺院で、総本山は山梨県の身延山久遠寺です。正徳二年(1712年)に徳川吉宗公からこの地を拝領し、「堀止の妙見さん」とも呼ばれています。",
+        "sections": [
+          {
+            "heading": "由緒",
+            "body": "覚王山 妙宣寺は日蓮宗の寺院で、寛永年間(1624〜1644年)の創立と伝えられています。正徳二年(1712年)に徳川吉宗公からこの地を拝領し、「堀止の妙見さん」とも呼ばれています。総本山は日蓮聖人がひらいた身延山久遠寺(山梨県)です。幕末から明治の和歌山を日記に書き残した川合小梅が眠る寺でもあります。"
+          },
+          {
+            "heading": "ご供養",
+            "body": "「みんな、仏様の子」という考えのもと、永代供養・水子供養を宗旨・宗派を問わず受け付けています。水子供養は慈母観音さまのもと、本堂で一霊ずつ個別に行います。境内はバリアフリーに配慮し、車椅子でもお参りできます。"
+          },
+          {
+            "heading": "ご祈願と年中行事",
+            "body": "安産祈願・虫封じ・きうりふうじ・ぢふうじなどの祈願を承っています。きうりふうじは土用の丑の日に行う五百年以上続く秘法、ぢふうじはお月見の日に行う痔を封じる祈祷です。慈母観音さま大祭は毎年5月第一日曜日の11時から行われ、あわせて水子供養も営みます。"
+          },
+          {
+            "heading": "場所とアクセス",
+            "body": "所在地は和歌山県和歌山市新堀東2丁目1番8号です。JR和歌山駅・和歌山市駅から和歌山バス「堀止」下車、東へ徒歩約5分で、バス通りから一本入った場所にあります。駐車場は25台あります。"
+          }
+        ],
+        "menus": [
+          {
+            "name": "永代供養"
+          },
+          {
+            "name": "水子供養"
+          },
+          {
+            "name": "水子永代供養"
+          },
+          {
+            "name": "のうこつぼ"
+          },
+          {
+            "name": "安産祈願"
+          },
+          {
+            "name": "虫封じ"
+          },
+          {
+            "name": "きうりふうじ"
+          },
+          {
+            "name": "ぢふうじ"
+          }
+        ],
+        "sources": [
+          {
+            "label": "公式サイト",
+            "url": "https://wakayama-myosenji.com/"
+          },
+          {
+            "label": "公式サイト(アクセス)",
+            "url": "https://wakayama-myosenji.com/access/"
+          },
+          {
+            "label": "公式サイト(妙宣寺について)",
+            "url": "https://wakayama-myosenji.com/about/"
+          },
+          {
+            "label": "公式サイト(水子供養)",
+            "url": "https://wakayama-myosenji.com/mizuko-kuyo/"
+          },
+          {
+            "label": "Google マップ",
+            "url": "https://maps.google.com/?cid=17716851611011573937"
+          }
+        ],
+        "checkedAt": "2026-10-26"
+      }
+    },
+    {
+      "id": "li0017",
+      "vertical": "life",
+      "category": "fashion-craft",
+      "name": "レンタル衣装ドレスルーチェ",
+      "pref": "kanagawa",
+      "cityName": "藤沢市",
+      "address": "神奈川県藤沢市大庭5011-4 アゼリアコート湘南 101",
+      "lat": 35.3540083,
+      "lng": 139.4464286,
+      "hours": "水-日 11:00 - 19:00",
+      "holidays": "月曜・火曜",
+      "phone": "090-1850-1338",
+      "url": "https://dress-luce.com/",
+      "website": "https://dress-luce.com/",
+      "mapUrl": "https://maps.google.com/?cid=106090870437496033",
+      "image": "/_portal/vshops/tri-life-145/g01.jpg",
+      "images": [
+        "/_portal/vshops/tri-life-145/g01.jpg",
+        "/_portal/vshops/tri-life-145/g02.jpg",
+        "/_portal/vshops/tri-life-145/g03.jpg",
+        "/_portal/vshops/tri-life-145/g04.jpg",
+        "/_portal/vshops/tri-life-145/g05.jpg",
+        "/_portal/vshops/tri-life-145/g06.jpg",
+        "/_portal/vshops/tri-life-145/g07.jpg",
+        "/_portal/vshops/tri-life-145/g08.jpg",
+        "/_portal/vshops/tri-life-145/g09.jpg",
+        "/_portal/vshops/tri-life-145/g10.jpg"
+      ],
+      "photos": [
+        {
+          "path": "/_portal/vshops/tri-life-145/g01.jpg",
+          "what": "教会で並ぶ新郎新婦のうしろ姿",
+          "width": 1200,
+          "height": 800
+        },
+        {
+          "path": "/_portal/vshops/tri-life-145/g02.jpg",
+          "what": "着物姿の女性が庭を望む廊下に立つ",
+          "width": 1200,
+          "height": 675
+        },
+        {
+          "path": "/_portal/vshops/tri-life-145/g03.jpg",
+          "what": "桜の下で着物姿の女性が花を見上げる",
+          "width": 1200,
+          "height": 800
+        },
+        {
+          "path": "/_portal/vshops/tri-life-145/g04.jpg",
+          "what": "ウェディンググローブをつけた手がハート型を作る",
+          "width": 800,
+          "height": 500
+        },
+        {
+          "path": "/_portal/vshops/tri-life-145/g05.jpg",
+          "what": "海辺で着物姿の女性が立つ",
+          "width": 1200,
+          "height": 800
+        },
+        {
+          "path": "/_portal/vshops/tri-life-145/g06.jpg",
+          "what": "砂浜でベールを広げる新郎新婦",
+          "width": 1200,
+          "height": 800
+        },
+        {
+          "path": "/_portal/vshops/tri-life-145/g07.jpg",
+          "what": "夕焼けの浜辺に立つウェディングドレス姿の女性と男性",
+          "width": 1000,
+          "height": 564
+        },
+        {
+          "path": "/_portal/vshops/tri-life-145/g08.jpg",
+          "what": "茅葺き屋根の前で赤い着物に傘を差す女性",
+          "width": 1200,
+          "height": 800
+        },
+        {
+          "path": "/_portal/vshops/tri-life-145/g09.jpg",
+          "what": "装飾のアーチの前に立つ新郎新婦",
+          "width": 800,
+          "height": 500
+        },
+        {
+          "path": "/_portal/vshops/tri-life-145/g10.jpg",
+          "what": "門の前で着物姿の女性が立つ",
+          "width": 1200,
+          "height": 800
+        }
+      ],
+      "tags": [
+        "予約制",
+        "駐車場あり",
+        "子ども向け"
+      ],
+      "article": {
+        "headline": "神奈川県藤沢市大庭にある衣装レンタル専門店。ウェディングドレスや和装、七五三・成人式の衣装を完全予約制で扱う",
+        "lede": "藤沢市大庭にある「レンタル衣装ドレスルーチェ」です。ウェディングドレスやタキシード、和装など婚礼衣装のほか、七五三や成人式の衣装もレンタルしています。来店は完全予約制で、ドレスコーディネーターに相談しながら選べます。",
+        "sections": [
+          {
+            "heading": "扱う衣装",
+            "body": "ウェディングドレスやタキシード、留袖、モーニングなど婚礼衣装をそろえ、選んだドレスをセミオーダーでカスタマイズすることもできます。七五三や成人式、卒業袴、お子さまドレスのレンタルも扱っており、アクセサリーなど衣装小物だけのレンタルも可能です。"
+          },
+          {
+            "heading": "お直し・サイズ変更",
+            "body": "技術に長けたスタッフが、レンタル衣装のカスタマイズやお直し、リフォームを手がけています。サイズが合わない場合のお直しのほか、インターネットで購入したドレスや譲り受けたドレスのお直し、着物のリメイクドレス、車椅子ドレスの相談にも対応しています。"
+          },
+          {
+            "heading": "来店予約",
+            "body": "来店は完全予約制で、1日4組までの受け付けです。予約枠は12時から13時、13時30分から14時30分、15時から16時、16時30分から17時30分の4枠があり、フィッティングは3着までとなっています。支払いはPayPayまたは現金のみです。店舗はアゼリアコート湘南にあり、駐車場は1台分、定休日は月曜日と火曜日です。"
+          }
+        ],
+        "menus": [
+          {
+            "name": "ウエディングドレス・和装"
+          },
+          {
+            "name": "オーダーメイドドレス"
+          },
+          {
+            "name": "フォーマルロングドレス"
+          },
+          {
+            "name": "七五三"
+          },
+          {
+            "name": "成人式"
+          },
+          {
+            "name": "卒業袴・お子さまドレス"
+          }
+        ],
+        "sources": [
+          {
+            "label": "公式サイト",
+            "url": "https://dress-luce.com/"
+          },
+          {
+            "label": "公式サイト(ショップについて)",
+            "url": "https://dress-luce.com/about"
+          },
+          {
+            "label": "公式サイト(来店予約)",
+            "url": "https://dress-luce.com/reservation"
+          },
+          {
+            "label": "Google マップ",
+            "url": "https://maps.google.com/?cid=106090870437496033"
+          }
+        ],
+        "checkedAt": "2026-10-26"
+      }
+    },
+    {
+      "id": "li0018",
+      "vertical": "life",
+      "category": "shrine-temple",
+      "name": "仏日山 盛松寺・盛松寺霊苑",
+      "pref": "osaka",
+      "cityName": "河内長野市",
+      "address": "大阪府河内長野市楠町西1211",
+      "lat": 34.470308,
+      "lng": 135.5603237,
+      "hours": "毎日 09:00 - 16:00",
+      "phone": "0721-53-3037",
+      "url": "https://seishoji.org/",
+      "website": "https://seishoji.org/",
+      "mapUrl": "https://maps.google.com/?cid=1248330775721601245",
+      "image": "/_portal/vshops/tri-life-153/g01.jpg",
+      "images": [
+        "/_portal/vshops/tri-life-153/g01.jpg",
+        "/_portal/vshops/tri-life-153/g02.jpg",
+        "/_portal/vshops/tri-life-153/g03.jpg",
+        "/_portal/vshops/tri-life-153/g04.jpg",
+        "/_portal/vshops/tri-life-153/g05.jpg",
+        "/_portal/vshops/tri-life-153/g06.jpg",
+        "/_portal/vshops/tri-life-153/g07.jpg",
+        "/_portal/vshops/tri-life-153/g10.jpg",
+        "/_portal/vshops/tri-life-153/s05.jpg",
+        "/_portal/vshops/tri-life-153/s06.jpg",
+        "/_portal/vshops/tri-life-153/s07.jpg",
+        "/_portal/vshops/tri-life-153/s09.jpg",
+        "/_portal/vshops/tri-life-153/s10.jpg",
+        "/_portal/vshops/tri-life-153/s11.jpg",
+        "/_portal/vshops/tri-life-153/s12.jpg",
+        "/_portal/vshops/tri-life-153/s13.jpg",
+        "/_portal/vshops/tri-life-153/s14.jpg",
+        "/_portal/vshops/tri-life-153/s15.jpg",
+        "/_portal/vshops/tri-life-153/s17.jpg"
+      ],
+      "photos": [
+        {
+          "path": "/_portal/vshops/tri-life-153/g01.jpg",
+          "what": "鉢植えの蓮と奥に見える建物",
+          "kind": "view",
+          "width": 960,
+          "height": 541
+        },
+        {
+          "path": "/_portal/vshops/tri-life-153/g02.jpg",
+          "what": "白い蓮の花",
+          "kind": "view",
+          "width": 675,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-life-153/g03.jpg",
+          "what": "本堂の建物と石段のある境内",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-life-153/g04.jpg",
+          "what": "瓦屋根の建物と手前の蓮の花",
+          "kind": "exterior",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-life-153/g05.jpg",
+          "what": "鉢植えの蓮が並ぶ境内",
+          "kind": "view",
+          "width": 960,
+          "height": 540
+        },
+        {
+          "path": "/_portal/vshops/tri-life-153/g06.jpg",
+          "what": "紫色の花が咲く植え込み",
+          "kind": "view",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-life-153/g07.jpg",
+          "what": "木々と空が広がる参道",
+          "kind": "view",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-life-153/g10.jpg",
+          "what": "多数の地蔵像が並ぶ堂内",
+          "kind": "room",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-life-153/s05.jpg",
+          "what": "小瓶に入った柚子みそ",
+          "kind": "meal",
+          "width": 640,
+          "height": 426
+        },
+        {
+          "path": "/_portal/vshops/tri-life-153/s06.jpg",
+          "what": "黄色い丸い品が並ぶ箱",
+          "kind": "meal",
+          "width": 640,
+          "height": 426
+        },
+        {
+          "path": "/_portal/vshops/tri-life-153/s07.jpg",
+          "what": "柚子の形をした置物とマスコット人形",
+          "kind": "common",
+          "width": 640,
+          "height": 480
+        },
+        {
+          "path": "/_portal/vshops/tri-life-153/s09.jpg",
+          "what": "黄色いマスコット人形",
+          "kind": "common",
+          "width": 905,
+          "height": 1280
+        },
+        {
+          "path": "/_portal/vshops/tri-life-153/s10.jpg",
+          "what": "間接照明の落ち着いた室内",
+          "kind": "room",
+          "width": 780,
+          "height": 520
+        },
+        {
+          "path": "/_portal/vshops/tri-life-153/s11.jpg",
+          "what": "小瓶や匙が並ぶトレー",
+          "width": 1280,
+          "height": 852
+        },
+        {
+          "path": "/_portal/vshops/tri-life-153/s12.jpg",
+          "what": "布の上の丸い粒と黄色い実",
+          "width": 1280,
+          "height": 852
+        },
+        {
+          "path": "/_portal/vshops/tri-life-153/s13.jpg",
+          "what": "赤い山門と石灯籠のある参道",
+          "kind": "exterior",
+          "width": 672,
+          "height": 504
+        },
+        {
+          "path": "/_portal/vshops/tri-life-153/s14.jpg",
+          "what": "灯籠が連なる夜の通路",
+          "kind": "common",
+          "width": 640,
+          "height": 564
+        },
+        {
+          "path": "/_portal/vshops/tri-life-153/s15.jpg",
+          "what": "墓石が並ぶ敷地",
+          "kind": "view",
+          "width": 640,
+          "height": 480
+        },
+        {
+          "path": "/_portal/vshops/tri-life-153/s17.jpg",
+          "what": "黄色いマスコット人形と札が並ぶ盆",
+          "kind": "common",
+          "width": 1280,
+          "height": 960
+        }
+      ],
+      "tags": [
+        "体験あり",
+        "予約制"
+      ],
+      "article": {
+        "headline": "大阪府河内長野市楠町西にある高野山真言宗準別格本山の寺院。弘法大師ゆかりの柚子みそが伝わり、お香作り・お抹茶体験や写経・写仏もおこなわれる。",
+        "lede": "大阪府河内長野市にある「仏日山 盛松寺」です。弘法大師が唐への留学から帰る途中にこの地へ立ち寄り、柚子みその製法を村人に伝えたと伝わります。創建は享保七年(一七二二)で、高野山真言宗の準別格本山です。",
+        "sections": [
+          {
+            "heading": "由来",
+            "body": "弘法大師が唐への留学から帰る途中にこの地へ立ち寄り、冬至に柚子と味噌で柚子味噌をつくる製法を村人に伝えたという伝承が残ります。弘法大師の像を本尊として迎え、創建されましたのが享保七年(一七二二)のことです。高野山真言宗の準別格本山です。"
+          },
+          {
+            "heading": "境内のお堂",
+            "body": "境内の六角堂は河内新四国八十八カ所霊場で、各霊場の本尊と弘法大師を祀ります。お堂の正面には立江地蔵菩薩があり、河泉24地蔵霊場第10番札所です。お堂の中央には子安地蔵尊も安置されています。"
+          },
+          {
+            "heading": "体験と行事",
+            "body": "盛松寺寺子屋では、法話付きのお香作り・お抹茶体験を予約サイトOtonamiから申し込めます。写経と写仏は毎月21日の午前10時から午後1時まで、供養堂2階でおこなわれます。12月21日の終い弘法では、弘法大師ゆかりの柚子みそが限定で配られます。"
+          },
+          {
+            "heading": "霊苑と永代供養、アクセス",
+            "body": "霊苑墓地・納骨塔・ペット納骨塔があり、盛松寺が管理しています。永代供養堂では月命日や法事等の供養がおこなわれます。参道入り口は大阪千代田短期大学附属幼稚園の左横にあります。営業時間は9時から16時です。"
+          }
+        ],
+        "menus": [
+          {
+            "name": "法話付きお香作り・お抹茶体験"
+          },
+          {
+            "name": "写経・写仏"
+          },
+          {
+            "name": "御朱印"
+          },
+          {
+            "name": "ゆず守"
+          }
+        ],
+        "sources": [
+          {
+            "label": "公式サイト",
+            "url": "https://seishoji.org/"
+          },
+          {
+            "label": "公式サイト(盛松寺について)",
+            "url": "https://seishoji.org/entry1.html"
+          },
+          {
+            "label": "公式サイト(お問合せ・アクセス)",
+            "url": "https://seishoji.org/entry2.html"
+          },
+          {
+            "label": "公式サイト(お香作り・お抹茶体験)",
+            "url": "https://seishoji.org/entry13.html"
+          },
+          {
+            "label": "Google マップ",
+            "url": "https://maps.google.com/?cid=1248330775721601245"
+          }
+        ],
+        "checkedAt": "2026-10-26"
+      }
+    },
+    {
+      "id": "li0019",
+      "vertical": "life",
+      "category": "shrine-temple",
+      "name": "九重白蛇参拝所・龍昇院",
+      "pref": "oita",
+      "cityName": "九重町",
+      "address": "大分県玖珠郡九重町田野1999",
+      "lat": 33.1750729,
+      "lng": 131.2308328,
+      "hours": "水-日 09:00 - 17:00",
+      "holidays": "月曜・火曜",
+      "phone": "0973-79-3151",
+      "mapUrl": "https://maps.google.com/?cid=2523295651855289686",
+      "image": "/_portal/vshops/tri-life-157/g01.jpg",
+      "images": [
+        "/_portal/vshops/tri-life-157/g01.jpg",
+        "/_portal/vshops/tri-life-157/g03.jpg",
+        "/_portal/vshops/tri-life-157/g09.jpg"
+      ],
+      "photos": [
+        {
+          "path": "/_portal/vshops/tri-life-157/g01.jpg",
+          "what": "白い像が置かれた木造の建物の入り口",
+          "kind": "exterior",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-life-157/g03.jpg",
+          "what": "花や供え物とともに二体の像が並ぶ祭壇",
+          "kind": "common",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-life-157/g09.jpg",
+          "what": "石像が並んで置かれている屋外の一角",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 900
+        }
+      ],
+      "tags": [],
+      "article": {
+        "headline": "大分県玖珠郡九重町田野にある神社「九重白蛇参拝所・龍昇院」。営業は水曜から日曜の9時から17時で、月曜と火曜は定休日。",
+        "lede": "玖珠郡九重町にある「九重白蛇参拝所・龍昇院」です。所在地は田野です。営業時間は水曜から日曜の9時から17時、月曜と火曜は定休日です。",
+        "sections": [
+          {
+            "heading": "場所と連絡先",
+            "body": "住所は大分県玖珠郡九重町田野１９９９、電話は0973-79-3151です。"
+          },
+          {
+            "heading": "参拝できる時間",
+            "body": "参拝できるのは水曜から日曜の9時から17時です。月曜と火曜は定休日です。"
+          }
+        ],
+        "sources": [
+          {
+            "label": "Google マップ",
+            "url": "https://maps.google.com/?cid=2523295651855289686"
+          }
+        ],
+        "checkedAt": "2026-10-26"
+      }
+    },
+    {
+      "id": "li0020",
+      "vertical": "life",
+      "category": "shrine-temple",
+      "name": "日限地蔵院",
+      "pref": "osaka",
+      "cityName": "大阪市中央区",
+      "address": "大阪府大阪市中央区釣鐘町2丁目3-15",
+      "lat": 34.688125,
+      "lng": 135.512984,
+      "hours": "水金 10:00 - 18:00 / 土 10:00 - 17:00",
+      "holidays": "月曜・火曜・木曜・日曜",
+      "phone": "06-6941-6527",
+      "url": "https://e-ojizosan.jimdofree.com/",
+      "website": "https://e-ojizosan.jimdofree.com/",
+      "mapUrl": "https://maps.google.com/?cid=4430061806563021507",
+      "image": "/_portal/vshops/tri-life-165/g01.jpg",
+      "images": [
+        "/_portal/vshops/tri-life-165/g01.jpg",
+        "/_portal/vshops/tri-life-165/g02.jpg",
+        "/_portal/vshops/tri-life-165/g03.jpg",
+        "/_portal/vshops/tri-life-165/g04.jpg",
+        "/_portal/vshops/tri-life-165/g05.jpg",
+        "/_portal/vshops/tri-life-165/g06.jpg",
+        "/_portal/vshops/tri-life-165/g07.jpg",
+        "/_portal/vshops/tri-life-165/g09.jpg",
+        "/_portal/vshops/tri-life-165/g10.jpg"
+      ],
+      "photos": [
+        {
+          "path": "/_portal/vshops/tri-life-165/g01.jpg",
+          "what": "金色の仏壇と色とりどりの幕が下がる堂内",
+          "kind": "common",
+          "width": 1080,
+          "height": 609
+        },
+        {
+          "path": "/_portal/vshops/tri-life-165/g02.jpg",
+          "what": "多数の提灯が下がる本堂内の祭壇",
+          "kind": "common",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-life-165/g03.jpg",
+          "what": "提灯が並ぶ通路に地蔵像と花が供えられている",
+          "kind": "exterior",
+          "width": 857,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-life-165/g04.jpg",
+          "what": "白壁の建物の外観と入り口",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-life-165/g05.jpg",
+          "what": "赤い前掛けの地蔵像が並ぶ祭壇",
+          "kind": "common",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-life-165/g06.jpg",
+          "what": "「地蔵尊」の提灯が連なる様子",
+          "kind": "common",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-life-165/g07.jpg",
+          "what": "提灯としめ縄が下がる入り口の通路",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 675
+        },
+        {
+          "path": "/_portal/vshops/tri-life-165/g09.jpg",
+          "what": "提灯の明かりの下に地蔵像が並ぶ祭壇",
+          "kind": "common",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-life-165/g10.jpg",
+          "what": "提灯が下がる入り口と路地の小さな祭壇",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 900
+        }
+      ],
+      "tags": [],
+      "article": {
+        "headline": "大阪市中央区釣鐘町二丁目にある仏教寺院「日限地蔵院」です。",
+        "lede": "大阪市にある「日限地蔵院」です。住所は大阪府大阪市中央区釣鐘町二丁目3-15です。地図上の業種表示は仏教寺院です。",
+        "sections": [
+          {
+            "heading": "場所と連絡先",
+            "body": "住所は大阪府大阪市中央区釣鐘町二丁目3-15です。電話は06-6941-6527です。地図上の業種表示は仏教寺院です。"
+          },
+          {
+            "heading": "拝観時間",
+            "body": "水曜日と金曜日は10時から18時、土曜日は10時から17時です。月曜日、火曜日、木曜日、日曜日は定休日です。"
+          }
+        ],
+        "sources": [
+          {
+            "label": "Google マップ",
+            "url": "https://maps.google.com/?cid=4430061806563021507"
+          }
+        ],
+        "checkedAt": "2026-10-26"
+      }
+    },
+    {
+      "id": "li0021",
+      "vertical": "life",
+      "category": "shrine-temple",
+      "name": "宝池寺 八大竜王宮",
+      "pref": "osaka",
+      "cityName": "茨木市",
+      "address": "大阪府茨木市忍頂寺304",
+      "lat": 34.898955,
+      "lng": 135.54718,
+      "phone": "072-665-8400",
+      "url": "https://www.houtiji.com/",
+      "website": "https://www.houtiji.com/",
+      "mapUrl": "https://maps.google.com/?cid=2608654665194226077",
+      "image": "/_portal/vshops/tri-life-171/g01.jpg",
+      "images": [
+        "/_portal/vshops/tri-life-171/g01.jpg",
+        "/_portal/vshops/tri-life-171/g02.jpg",
+        "/_portal/vshops/tri-life-171/g03.jpg",
+        "/_portal/vshops/tri-life-171/g04.jpg",
+        "/_portal/vshops/tri-life-171/g05.jpg",
+        "/_portal/vshops/tri-life-171/g06.jpg",
+        "/_portal/vshops/tri-life-171/g07.jpg",
+        "/_portal/vshops/tri-life-171/g08.jpg",
+        "/_portal/vshops/tri-life-171/g09.jpg",
+        "/_portal/vshops/tri-life-171/g10.jpg",
+        "/_portal/vshops/tri-life-171/s13.jpg"
+      ],
+      "photos": [
+        {
+          "path": "/_portal/vshops/tri-life-171/g01.jpg",
+          "what": "瓦屋根の本堂前に石の鳥居と灯籠が並ぶ",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-life-171/g02.jpg",
+          "what": "木造の小さな社と建物が並ぶ境内",
+          "kind": "common",
+          "width": 1200,
+          "height": 675
+        },
+        {
+          "path": "/_portal/vshops/tri-life-171/g03.jpg",
+          "what": "池の中に立つ石の鳥居と灯籠",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 901
+        },
+        {
+          "path": "/_portal/vshops/tri-life-171/g04.jpg",
+          "what": "木々の中に立つ緑青色の仏像",
+          "width": 675,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-life-171/g05.jpg",
+          "what": "水面に鳥居と灯籠が映る境内の池",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-life-171/g06.jpg",
+          "what": "説明板と鳥居がある境内への道",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-life-171/g07.jpg",
+          "what": "小さな祠に供え物が置かれている",
+          "kind": "common",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-life-171/g08.jpg",
+          "what": "苔むした緑青色の石塔",
+          "width": 675,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-life-171/g09.jpg",
+          "what": "木々に囲まれた木造の社殿群",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-life-171/g10.jpg",
+          "what": "青空の下に広がる境内と建物",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 904
+        },
+        {
+          "path": "/_portal/vshops/tri-life-171/s13.jpg",
+          "what": "池の中に立つ石の鳥居",
+          "kind": "exterior",
+          "width": 666,
+          "height": 500
+        }
+      ],
+      "tags": [
+        "体験あり",
+        "予約制"
+      ],
+      "article": {
+        "headline": "大阪府茨木市忍頂寺の竜王山山頂近くにある融通念仏宗の寺院。宝亀年間の干ばつの際、八大竜王を迎えて雨乞いをしたという言い伝えがある",
+        "lede": "茨木市にある「宝池寺 八大竜王宮」です。竜王山の山頂近くにある融通念仏宗の寺院で、宝亀年間の干ばつの際に八大竜王を迎えて雨乞いをしたという言い伝えがあります。当時と同じ池のほとりで、護摩祈祷がおこなわれています。",
+        "sections": [
+          {
+            "heading": "由来",
+            "body": "宝池寺 八大竜王宮は、大阪府茨木市の竜王山の山頂近くにある融通念仏宗の寺院です。宝亀年間の干ばつの際、開成皇子が竜王山に池を掘り八大竜王を迎えて雨乞いをしたところ雨に恵まれたという言い伝えがあり、当時と同じ池のほとりで護摩祈祷がおこなわれています。"
+          },
+          {
+            "heading": "護摩祈祷",
+            "body": "御縁日には、修験道による龍神護摩祈祷が、八大竜王宮にて11時30分からおこなわれます。一般の人も拝見しながら願いを炎に託すことができます。服装は自由で、見学に予約は不要です。作法が分からない場合は、お経のプリントが渡されます。"
+          },
+          {
+            "heading": "写経と滝行",
+            "body": "山寺での写経体験ができ、所要時間は90分程度です。お茶とお菓子が付きます。滝行体験もでき、八大竜王の滝で修行者の案内のもと、白衣を借りて滝に入ります。滝行の所要時間も90分程度です。"
+          },
+          {
+            "heading": "場所と行き方",
+            "body": "JR茨木駅や阪急京都本線茨木市駅から忍頂寺行きのバスに乗り、寿命院前または忍頂寺小学校前で降りて竜王山山頂の方向へ歩きます。車の場合は大阪府道1号茨木摂津線から林道竜王山線へ進みます。来訪して相談したい場合は、メールなどでの予約がすすめられています。"
+          }
+        ],
+        "menus": [
+          {
+            "name": "龍神護摩祈祷"
+          },
+          {
+            "name": "お写経"
+          },
+          {
+            "name": "滝行体験"
+          },
+          {
+            "name": "加持祈祷・供養・占い相談"
+          }
+        ],
+        "sources": [
+          {
+            "label": "公式サイト",
+            "url": "https://www.houtiji.com/"
+          },
+          {
+            "label": "公式サイト(宝池寺について)",
+            "url": "https://www.houtiji.com/about/"
+          },
+          {
+            "label": "公式サイト(龍神護摩のご案内)",
+            "url": "https://www.houtiji.com/kitou/"
+          },
+          {
+            "label": "公式サイト(お写経 滝行 ご案内)",
+            "url": "https://www.houtiji.com/shakyou/"
+          },
+          {
+            "label": "Google マップ",
+            "url": "https://maps.google.com/?cid=2608654665194226077"
+          }
+        ],
+        "checkedAt": "2026-10-26"
+      }
+    },
+    {
+      "id": "li0022",
+      "vertical": "life",
+      "category": "shrine-temple",
+      "name": "小戸神社",
+      "pref": "miyazaki",
+      "cityName": "宮崎市",
+      "address": "宮崎県宮崎市鶴島3丁目93",
+      "lat": 31.9135688,
+      "lng": 131.4080439,
+      "phone": "0985-23-6684",
+      "url": "http://www.odo-jinja.jp/",
+      "website": "http://www.odo-jinja.jp/",
+      "mapUrl": "https://maps.google.com/?cid=1461403156650605163",
+      "image": "/_portal/vshops/tri-life-179/g01.jpg",
+      "images": [
+        "/_portal/vshops/tri-life-179/g01.jpg",
+        "/_portal/vshops/tri-life-179/g02.jpg",
+        "/_portal/vshops/tri-life-179/g03.jpg",
+        "/_portal/vshops/tri-life-179/g04.jpg",
+        "/_portal/vshops/tri-life-179/g05.jpg",
+        "/_portal/vshops/tri-life-179/g06.jpg",
+        "/_portal/vshops/tri-life-179/g08.jpg",
+        "/_portal/vshops/tri-life-179/g09.jpg",
+        "/_portal/vshops/tri-life-179/g10.jpg",
+        "/_portal/vshops/tri-life-179/s05.jpg",
+        "/_portal/vshops/tri-life-179/s06.jpg",
+        "/_portal/vshops/tri-life-179/s07.jpg",
+        "/_portal/vshops/tri-life-179/s17.jpg",
+        "/_portal/vshops/tri-life-179/s18.jpg"
+      ],
+      "photos": [
+        {
+          "path": "/_portal/vshops/tri-life-179/g01.jpg",
+          "what": "赤い鳥居が立つ参道の入り口",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 800
+        },
+        {
+          "path": "/_portal/vshops/tri-life-179/g02.jpg",
+          "what": "砂利の参道の先に社殿が見える境内",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 675
+        },
+        {
+          "path": "/_portal/vshops/tri-life-179/g03.jpg",
+          "what": "紫の幕がかかる社殿正面と参道",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-life-179/g04.jpg",
+          "what": "注連縄と鈴がかかる社殿の軒先",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 901
+        },
+        {
+          "path": "/_portal/vshops/tri-life-179/g05.jpg",
+          "what": "木々に囲まれた境内の鳥居と灯籠",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-life-179/g06.jpg",
+          "what": "狛犬の像がある社殿の軒下",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-life-179/g08.jpg",
+          "what": "境内に茂る大きな木々",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 675
+        },
+        {
+          "path": "/_portal/vshops/tri-life-179/g09.jpg",
+          "what": "鈴のかかる鳥居と砂利の参道",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-life-179/g10.jpg",
+          "what": "「小戸神社」と刻まれた社号標",
+          "kind": "exterior",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-life-179/s05.jpg",
+          "what": "祭礼で参列者が並ぶ境内の様子",
+          "kind": "common",
+          "width": 1280,
+          "height": 821
+        },
+        {
+          "path": "/_portal/vshops/tri-life-179/s06.jpg",
+          "what": "神門越しに見える装束姿の神職",
+          "kind": "exterior",
+          "width": 1280,
+          "height": 821
+        },
+        {
+          "path": "/_portal/vshops/tri-life-179/s07.jpg",
+          "what": "木札のお守りが並ぶ様子",
+          "kind": "common",
+          "width": 1280,
+          "height": 960
+        },
+        {
+          "path": "/_portal/vshops/tri-life-179/s17.jpg",
+          "what": "上空から見た社殿の屋根と境内の木々",
+          "kind": "exterior",
+          "width": 1280,
+          "height": 494
+        },
+        {
+          "path": "/_portal/vshops/tri-life-179/s18.jpg",
+          "what": "白黒写真に写る昔の社殿の建物",
+          "kind": "exterior",
+          "width": 1280,
+          "height": 531
+        }
+      ],
+      "tags": [],
+      "article": {
+        "headline": "宮崎市鶴島３丁目に鎮座する神社。主祭神は伊弉諾大神で、第12代景行天皇の勅により創建と伝えられる。",
+        "lede": "宮崎市にある「小戸神社」です。主祭神は伊弉諾大神で、天照皇大神・大己貴大神・素盞鳴大神・奇稲田姫大神が合祀されています。昭和7年(1932年)の橘通り拡張にともない、現在の鶴島の地へ遷座しました。",
+        "sections": [
+          {
+            "heading": "御祭神と社名の由来",
+            "body": "主祭神は伊弉諾大神で、天照皇大神・大己貴大神・素盞鳴大神・奇稲田姫大神が合祀されています。伊弉諾大神は筑紫の日向の橘の小戸の阿波岐原で禊祓をされたと伝えられ、その「小戸」の地名が社名の由来になっています。創建は第12代景行天皇の勅によるものと伝えられています。"
+          },
+          {
+            "heading": "鎮座地の移り変わり",
+            "body": "創建当時は日向灘に面した場所に祀られ、航海の安全を守る神として船会社から篤く信仰されました。寛文2年(1662年)の西海大地震にともない上別府へ移り、翌年には上野邑(のちの上野町)に遷座しました。昭和7年(1932年)の橘通り拡張により現在の鶴島の地へ遷り、昭和9年(1934年)5月27日に本殿正遷座祭が斎行されています。"
+          },
+          {
+            "heading": "夏越祭と年間の祭礼",
+            "body": "最も盛大な祭りは7月18日から19日におこなわれる夏越祭(御神幸祭)で、獅子八頭を先陣に旗差物・子供神輿・大神輿の御神幸行列があります。例祭は10月15日で、神社において最も重要な祭祀とされています。このほか毎月1日・15日の朔日祭・月次祭なども営まれています。"
+          },
+          {
+            "heading": "祈願とお祓い",
+            "body": "安産祈願・初宮詣・七五三詣・厄祓・自動車祓といった人生儀礼のお祓いのほか、地鎮祭・家祓・開業・開店清祓など土地や建物に関するお祭りも受け付けています。七五三詣は男の子が3歳と5歳、女の子が3歳と7歳におこないます。神葬祭や年忌祭など、御霊を慰めるお祭りもおこなわれています。"
+          }
+        ],
+        "menus": [
+          {
+            "name": "安産祈願"
+          },
+          {
+            "name": "初宮詣"
+          },
+          {
+            "name": "七五三詣"
+          },
+          {
+            "name": "厄祓"
+          },
+          {
+            "name": "自動車祓"
+          },
+          {
+            "name": "地鎮祭"
+          },
+          {
+            "name": "家祓"
+          },
+          {
+            "name": "開業・開店清祓"
+          }
+        ],
+        "sources": [
+          {
+            "label": "公式サイト",
+            "url": "http://www.odo-jinja.jp/"
+          },
+          {
+            "label": "公式サイト(歴史)",
+            "url": "http://www.odo-jinja.jp/history/"
+          },
+          {
+            "label": "公式サイト(アクセス)",
+            "url": "http://www.odo-jinja.jp/access/"
+          },
+          {
+            "label": "公式サイト(お祭り)",
+            "url": "http://www.odo-jinja.jp/schedule/"
+          },
+          {
+            "label": "公式サイト(各種祈願・お祓い)",
+            "url": "http://www.odo-jinja.jp/kigan/"
+          },
+          {
+            "label": "Google マップ",
+            "url": "https://maps.google.com/?cid=1461403156650605163"
+          }
+        ],
+        "checkedAt": "2026-10-26"
+      }
+    },
+    {
+      "id": "li0023",
+      "vertical": "life",
+      "category": "shrine-temple",
+      "name": "上行寺",
+      "pref": "yamanashi",
+      "cityName": "北杜市",
+      "address": "山梨県北杜市大泉町西井出266",
+      "lat": 35.8499897,
+      "lng": 138.3892883,
+      "phone": "0551-38-2551",
+      "url": "https://www.jogyoji.com/",
+      "website": "https://www.jogyoji.com/",
+      "mapUrl": "https://maps.google.com/?cid=7635059331888835225",
+      "image": "/_portal/vshops/tri-life-184/g01.jpg",
+      "images": [
+        "/_portal/vshops/tri-life-184/g01.jpg",
+        "/_portal/vshops/tri-life-184/g02.jpg",
+        "/_portal/vshops/tri-life-184/g03.jpg",
+        "/_portal/vshops/tri-life-184/g04.jpg",
+        "/_portal/vshops/tri-life-184/g05.jpg",
+        "/_portal/vshops/tri-life-184/g06.jpg",
+        "/_portal/vshops/tri-life-184/g07.jpg",
+        "/_portal/vshops/tri-life-184/g08.jpg",
+        "/_portal/vshops/tri-life-184/g09.jpg",
+        "/_portal/vshops/tri-life-184/g10.jpg",
+        "/_portal/vshops/tri-life-184/s01.jpg",
+        "/_portal/vshops/tri-life-184/s02.jpg",
+        "/_portal/vshops/tri-life-184/s03.jpg",
+        "/_portal/vshops/tri-life-184/s04.jpg",
+        "/_portal/vshops/tri-life-184/s05.jpg",
+        "/_portal/vshops/tri-life-184/s06.jpg",
+        "/_portal/vshops/tri-life-184/s07.jpg",
+        "/_portal/vshops/tri-life-184/s08.jpg",
+        "/_portal/vshops/tri-life-184/s10.jpg",
+        "/_portal/vshops/tri-life-184/s11.jpg",
+        "/_portal/vshops/tri-life-184/s12.jpg",
+        "/_portal/vshops/tri-life-184/s15.jpg",
+        "/_portal/vshops/tri-life-184/s16.jpg",
+        "/_portal/vshops/tri-life-184/s17.jpg"
+      ],
+      "photos": [
+        {
+          "path": "/_portal/vshops/tri-life-184/g01.jpg",
+          "what": "苔むした石灯籠が据えられた境内の一角",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-life-184/g02.jpg",
+          "what": "満開の夜桜に包まれた本堂前",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 800
+        },
+        {
+          "path": "/_portal/vshops/tri-life-184/g03.jpg",
+          "what": "「上行寺」と刻まれた看板が立つ参道入口",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-life-184/g04.jpg",
+          "what": "桜並木と石灯籠が連なる境内の参道",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 800
+        },
+        {
+          "path": "/_portal/vshops/tri-life-184/g05.jpg",
+          "what": "多宝塔や鐘楼が並ぶ境内の全景",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-life-184/g06.jpg",
+          "what": "瓦屋根の本堂正面",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-life-184/g07.jpg",
+          "what": "木々に囲まれた石造りの塔",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-life-184/g08.jpg",
+          "what": "注連縄と紙垂が下がる社の屋根",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-life-184/g09.jpg",
+          "what": "境内に立つ満開の大きな桜の木",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 800
+        },
+        {
+          "path": "/_portal/vshops/tri-life-184/g10.jpg",
+          "what": "灯籠が並ぶ夜の境内の参道",
+          "kind": "exterior",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-life-184/s01.jpg",
+          "what": "本堂に施された木彫りの装飾彫刻",
+          "kind": "common",
+          "width": 1280,
+          "height": 836
+        },
+        {
+          "path": "/_portal/vshops/tri-life-184/s02.jpg",
+          "what": "唐破風の屋根に施された彫刻の軒先",
+          "kind": "exterior",
+          "width": 1280,
+          "height": 836
+        },
+        {
+          "path": "/_portal/vshops/tri-life-184/s03.jpg",
+          "what": "満開の夜桜と星空が広がる境内",
+          "kind": "exterior",
+          "width": 1280,
+          "height": 836
+        },
+        {
+          "path": "/_portal/vshops/tri-life-184/s04.jpg",
+          "what": "堂内に連なる金色の吊り飾り",
+          "kind": "common",
+          "width": 1280,
+          "height": 836
+        },
+        {
+          "path": "/_portal/vshops/tri-life-184/s05.jpg",
+          "what": "青空を背にした本堂屋根の意匠",
+          "kind": "exterior",
+          "width": 1280,
+          "height": 522
+        },
+        {
+          "path": "/_portal/vshops/tri-life-184/s06.jpg",
+          "what": "夜に浮かび上がる白い桜の花",
+          "kind": "exterior",
+          "width": 720,
+          "height": 587
+        },
+        {
+          "path": "/_portal/vshops/tri-life-184/s07.jpg",
+          "what": "白い装束の僧侶が堂内で儀式をおこなう様子",
+          "kind": "common",
+          "width": 720,
+          "height": 587
+        },
+        {
+          "path": "/_portal/vshops/tri-life-184/s08.jpg",
+          "what": "御朱題帳に記された文字と朱印",
+          "width": 936,
+          "height": 409
+        },
+        {
+          "path": "/_portal/vshops/tri-life-184/s10.jpg",
+          "what": "夜の境内で鐘を鳴らす僧侶の後ろ姿",
+          "kind": "exterior",
+          "width": 1280,
+          "height": 720
+        },
+        {
+          "path": "/_portal/vshops/tri-life-184/s11.jpg",
+          "what": "枝越しに見える夜空の満月",
+          "kind": "view",
+          "width": 1280,
+          "height": 720
+        },
+        {
+          "path": "/_portal/vshops/tri-life-184/s12.jpg",
+          "what": "提灯が灯る本堂内の座敷",
+          "kind": "common",
+          "width": 1280,
+          "height": 720
+        },
+        {
+          "path": "/_portal/vshops/tri-life-184/s15.jpg",
+          "what": "夜の境内に咲く桜の木",
+          "kind": "exterior",
+          "width": 1280,
+          "height": 720
+        },
+        {
+          "path": "/_portal/vshops/tri-life-184/s16.jpg",
+          "what": "赤い提灯と夜桜に彩られた境内",
+          "kind": "exterior",
+          "width": 1280,
+          "height": 720
+        },
+        {
+          "path": "/_portal/vshops/tri-life-184/s17.jpg",
+          "what": "青空に映える満開の白い桜",
+          "kind": "exterior",
+          "width": 1280,
+          "height": 720
+        }
+      ],
+      "tags": [],
+      "article": {
+        "headline": "山梨県北杜市大泉町にある日蓮宗の寺院「来佛山 上行寺」。文永11年(1274年)当時は西井出村新井地区にあり「真言宗 城東山鬼門寺」という名前でした",
+        "lede": "北杜市にある「上行寺」です。日蓮宗の寺院で、正式には「日蓮宗 来佛山 上行寺」といいます。文永11年(1274年)当時は西井出村新井地区にあり「真言宗 城東山鬼門寺」という名前でしたが、日蓮大聖人の教化を受けた住職が日蓮宗に改宗し、現在の山寺号を賜りました。",
+        "sections": [
+          {
+            "heading": "由緒",
+            "body": "文永11年(1274年)当時、上行寺は西井出村新井地区にあり「真言宗 城東山鬼門寺」という名前で、住職は加賀阿闍梨日真でした。宗祖である日蓮大聖人が教化・説法のために鬼門寺を訪れて高座説法をおこない、教化を受けた日真上人が日蓮宗に改宗して現在の山寺号を賜りました。開山は六老僧の一人、佐渡阿闍梨日向上人とされています。"
+          },
+          {
+            "heading": "住職と「てらど珈琲」",
+            "body": "上行寺第41世の住職は小林竜嗣です。生まれ育ちは上行寺がある八ヶ岳の麓、北杜市大泉町で、身延山大学で4年間の修行をおこない、平成27年に卒業しました。住職は地域のご縁に感謝を込めて自家焙煎珈琲「てらど珈琲」を始め、オンラインショップで販売しています。"
+          },
+          {
+            "heading": "年間の行事",
+            "body": "春は4月上旬の19時から22時にかけて桜のライトアップがおこなわれ、4月8日の花まつりの日に満開を迎えます。大晦日には本堂前で21時から御焚き上げ、本堂内で23時から歳末報恩会、鐘撞堂で23時50分から除夜の鐘がおこなわれます。"
+          },
+          {
+            "heading": "場所と御朱題帳",
+            "body": "住所は山梨県北杜市大泉町西井出266、電話は0551-38-2551です。中央自動車道長坂ICから車で約5分、中央本線長坂駅からタクシーで約10分です。御朱題帳は常時受け付けており、希望する場合は事前の問い合わせが必要です。"
+          }
+        ],
+        "menus": [
+          {
+            "name": "御朱題帳"
+          },
+          {
+            "name": "てらど珈琲"
+          },
+          {
+            "name": "春の桜ライトアップ"
+          },
+          {
+            "name": "除夜の鐘"
+          },
+          {
+            "name": "歳末報恩会"
+          }
+        ],
+        "sources": [
+          {
+            "label": "公式サイト",
+            "url": "https://www.jogyoji.com/"
+          },
+          {
+            "label": "Google マップ",
+            "url": "https://maps.google.com/?cid=7635059331888835225"
+          }
+        ],
+        "checkedAt": "2026-10-26"
+      }
+    },
+    {
+      "id": "li0024",
+      "vertical": "life",
+      "category": "shrine-temple",
+      "name": "佛乘山 往生院 浄土寺",
+      "pref": "mie",
+      "cityName": "多気町",
+      "address": "三重県多気郡多気町相可198",
+      "lat": 34.5059242,
+      "lng": 136.5428072,
+      "phone": "090-9890-1939",
+      "url": "http://jyodoji.com/",
+      "website": "http://jyodoji.com/",
+      "mapUrl": "https://maps.google.com/?cid=859207222809324403",
+      "image": "/_portal/vshops/tri-life-189/g01.jpg",
+      "images": [
+        "/_portal/vshops/tri-life-189/g01.jpg",
+        "/_portal/vshops/tri-life-189/g02.jpg",
+        "/_portal/vshops/tri-life-189/g03.jpg",
+        "/_portal/vshops/tri-life-189/g04.jpg",
+        "/_portal/vshops/tri-life-189/g05.jpg",
+        "/_portal/vshops/tri-life-189/g06.jpg",
+        "/_portal/vshops/tri-life-189/g07.jpg",
+        "/_portal/vshops/tri-life-189/g08.jpg",
+        "/_portal/vshops/tri-life-189/g10.jpg",
+        "/_portal/vshops/tri-life-189/s03.jpg",
+        "/_portal/vshops/tri-life-189/s07.jpg",
+        "/_portal/vshops/tri-life-189/s09.jpg",
+        "/_portal/vshops/tri-life-189/s10.jpg",
+        "/_portal/vshops/tri-life-189/s11.jpg",
+        "/_portal/vshops/tri-life-189/s12.jpg",
+        "/_portal/vshops/tri-life-189/s13.jpg",
+        "/_portal/vshops/tri-life-189/s14.jpg",
+        "/_portal/vshops/tri-life-189/s15.jpg",
+        "/_portal/vshops/tri-life-189/s16.jpg"
+      ],
+      "photos": [
+        {
+          "path": "/_portal/vshops/tri-life-189/g01.jpg",
+          "what": "瓦屋根の本堂の外観",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-life-189/g02.jpg",
+          "what": "住宅地を背にした金色の仏像",
+          "kind": "exterior",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-life-189/g03.jpg",
+          "what": "灯りで照らされた夜の境内の参道",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-life-189/g04.jpg",
+          "what": "花が供えられた金色の仏像の石碑",
+          "kind": "exterior",
+          "width": 490,
+          "height": 490
+        },
+        {
+          "path": "/_portal/vshops/tri-life-189/g05.jpg",
+          "what": "墨書きの紙が下がる堂内の机",
+          "kind": "common",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-life-189/g06.jpg",
+          "what": "灯籠と仏像が並ぶ参道と住宅の並び",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 800
+        },
+        {
+          "path": "/_portal/vshops/tri-life-189/g07.jpg",
+          "what": "生け花が供えられた堂内の祭壇",
+          "kind": "common",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-life-189/g08.jpg",
+          "what": "瓦屋根の軒先の意匠",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-life-189/g10.jpg",
+          "what": "山門越しに見える本堂と木々",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 800
+        },
+        {
+          "path": "/_portal/vshops/tri-life-189/s03.jpg",
+          "what": "五色の幕が飾られた本堂の屋根と境内",
+          "kind": "exterior",
+          "width": 1280,
+          "height": 960
+        },
+        {
+          "path": "/_portal/vshops/tri-life-189/s07.jpg",
+          "what": "半紙に文字を書く手元",
+          "kind": "common",
+          "width": 960,
+          "height": 1280
+        },
+        {
+          "path": "/_portal/vshops/tri-life-189/s09.jpg",
+          "what": "文字が書かれた半紙と畳の机",
+          "kind": "common",
+          "width": 960,
+          "height": 1280
+        },
+        {
+          "path": "/_portal/vshops/tri-life-189/s10.jpg",
+          "what": "袈裟姿の僧侶が参加者に向けて話す堂内",
+          "kind": "common",
+          "width": 960,
+          "height": 1280
+        },
+        {
+          "path": "/_portal/vshops/tri-life-189/s11.jpg",
+          "what": "低い机を囲む参加者の手と紙",
+          "kind": "common",
+          "width": 960,
+          "height": 1280
+        },
+        {
+          "path": "/_portal/vshops/tri-life-189/s12.jpg",
+          "what": "紙に文字を書く手元",
+          "kind": "common",
+          "width": 960,
+          "height": 1280
+        },
+        {
+          "path": "/_portal/vshops/tri-life-189/s13.jpg",
+          "what": "赤い袈裟の僧侶が祭壇に向かう堂内の様子",
+          "kind": "common",
+          "width": 960,
+          "height": 1280
+        },
+        {
+          "path": "/_portal/vshops/tri-life-189/s14.jpg",
+          "what": "仏具が並ぶ堂内の祭壇",
+          "kind": "common",
+          "width": 960,
+          "height": 1280
+        },
+        {
+          "path": "/_portal/vshops/tri-life-189/s15.jpg",
+          "what": "蓮の花と仏具が並ぶ机上",
+          "kind": "common",
+          "width": 960,
+          "height": 1280
+        },
+        {
+          "path": "/_portal/vshops/tri-life-189/s16.jpg",
+          "what": "格子窓越しに見える堂内の様子",
+          "kind": "common",
+          "width": 1280,
+          "height": 960
+        }
+      ],
+      "tags": [],
+      "article": {
+        "headline": "三重県多気郡多気町相可にある天台眞盛宗の寺院。宗派を問わない永代供養を行っている。",
+        "lede": "多気郡多気町にある「佛乘山 往生院 浄土寺」です。天台眞盛宗の寺院で、境内には百を超える仏像仏画があります。永代供養として偲恩堂、慈縁堂、久遠樹木葬の三つを行っています。",
+        "sections": [
+          {
+            "heading": "場所と寺院の概要",
+            "body": "浄土寺は三重県多気郡多気町相可にある天台眞盛宗の寺院です。天台系の宗門であるとともに多気町相可のまちかど博物館でもあり、境内には百を超える仏像仏画を有しています。"
+          },
+          {
+            "heading": "三つの永代供養",
+            "body": "永代供養には三つの形があります。偲恩堂は、お寺に建てる永代のお墓で、納骨墓として合祀することもでき、宗派を問いません。慈縁堂は、浄土寺内の納骨堂にお位牌と遺骨を一緒に納め、十三回忌(最大二十七回忌)まで堂内に安置したのち合祀墓に埋葬します。久遠は、お寺の入り口に一番近い永代樹木葬で、樹木の成長とともに時を刻みます。永代供養は宗派を問わず、管理費も不要です。"
+          }
+        ],
+        "menus": [
+          {
+            "name": "偲恩堂"
+          },
+          {
+            "name": "慈縁堂"
+          },
+          {
+            "name": "久遠"
+          }
+        ],
+        "sources": [
+          {
+            "label": "公式サイト",
+            "url": "http://jyodoji.com/"
+          },
+          {
+            "label": "公式サイト(永代供養)",
+            "url": "http://jyodoji.com/?page_id=6"
+          },
+          {
+            "label": "公式サイト(まちかど博物館)",
+            "url": "http://jyodoji.com/?page_id=42"
+          },
+          {
+            "label": "Google マップ",
+            "url": "https://maps.google.com/?cid=859207222809324403"
+          }
+        ],
+        "checkedAt": "2026-10-26"
+      }
+    },
+    {
+      "id": "li0025",
+      "vertical": "life",
+      "category": "shrine-temple",
+      "name": "中川八幡神社",
+      "pref": "nagasaki",
+      "cityName": "長崎市",
+      "address": "長崎県長崎市中川2丁目9-21",
+      "lat": 32.7525018,
+      "lng": 129.893176,
+      "hours": "月-木土 09:00 - 12:00, 13:00 - 17:00 / 金日 09:00 - 19:00",
+      "phone": "095-825-0685",
+      "x": "https://x.com/nakagawa_8man",
+      "mapUrl": "https://maps.google.com/?cid=17543042819641556902",
+      "image": "/_portal/vshops/tri-life-190/g01.jpg",
+      "images": [
+        "/_portal/vshops/tri-life-190/g01.jpg",
+        "/_portal/vshops/tri-life-190/g02.jpg",
+        "/_portal/vshops/tri-life-190/g03.jpg",
+        "/_portal/vshops/tri-life-190/g04.jpg",
+        "/_portal/vshops/tri-life-190/g05.jpg",
+        "/_portal/vshops/tri-life-190/g06.jpg",
+        "/_portal/vshops/tri-life-190/g07.jpg",
+        "/_portal/vshops/tri-life-190/g08.jpg",
+        "/_portal/vshops/tri-life-190/g09.jpg",
+        "/_portal/vshops/tri-life-190/g10.jpg"
+      ],
+      "photos": [
+        {
+          "path": "/_portal/vshops/tri-life-190/g01.jpg",
+          "what": "瓦屋根の社殿と石段のある境内",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 803
+        },
+        {
+          "path": "/_portal/vshops/tri-life-190/g02.jpg",
+          "what": "注連縄のかかる社殿の正面",
+          "kind": "exterior",
+          "width": 675,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-life-190/g03.jpg",
+          "what": "鳥居が二つ重なる石段の参道",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-life-190/g04.jpg",
+          "what": "台座に乗る狛犬の石像",
+          "kind": "exterior",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-life-190/g05.jpg",
+          "what": "赤い社殿と赤い提灯",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 800
+        },
+        {
+          "path": "/_portal/vshops/tri-life-190/g06.jpg",
+          "what": "石段を上った先にある鳥居と社殿",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-life-190/g07.jpg",
+          "what": "色とりどりの花が浮かぶ手水鉢",
+          "kind": "common",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-life-190/g08.jpg",
+          "what": "「中川八幡神社」の文字と花が入った手水鉢",
+          "kind": "common",
+          "width": 1200,
+          "height": 675
+        },
+        {
+          "path": "/_portal/vshops/tri-life-190/g09.jpg",
+          "what": "木々に囲まれた石段の参道",
+          "kind": "exterior",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-life-190/g10.jpg",
+          "what": "絵馬掛けと石造りの水鉢",
+          "kind": "common",
+          "width": 1200,
+          "height": 675
+        }
+      ],
+      "tags": [],
+      "article": {
+        "headline": "長崎市中川二丁目にある神社。参拝の時間は曜日によって異なる",
+        "lede": "長崎市にある「中川八幡神社」です。住所は長崎県長崎市中川２丁目９−２１、電話は095-825-0685です。",
+        "sections": [
+          {
+            "heading": "場所と連絡先",
+            "body": "住所は長崎県長崎市中川２丁目９−２１で、電話は095-825-0685です。"
+          },
+          {
+            "heading": "参拝の時間",
+            "body": "参拝の時間は月曜から木曜と土曜が9時から12時、13時から17時です。金曜と日曜は9時から19時です。"
+          }
+        ],
+        "sources": [
+          {
+            "label": "Google マップ",
+            "url": "https://maps.google.com/?cid=17543042819641556902"
+          }
+        ],
+        "checkedAt": "2026-10-26"
+      }
+    },
+    {
+      "id": "li0026",
+      "vertical": "life",
+      "category": "car-repair",
+      "name": "ひまわり洗浄",
+      "pref": "hokkaido",
+      "cityName": "函館市",
+      "address": "北海道函館市赤川町572-4",
+      "lat": 41.8547294,
+      "lng": 140.7796054,
+      "hours": "毎日 09:00 - 18:00",
+      "phone": "090-1207-5296",
+      "url": "https://himawarisenjyo.jimdofree.com/",
+      "website": "https://himawarisenjyo.jimdofree.com/",
+      "mapUrl": "https://maps.google.com/?cid=17470799570140945198",
+      "image": "/_portal/vshops/tri-life-191/g01.jpg",
+      "images": [
+        "/_portal/vshops/tri-life-191/g01.jpg",
+        "/_portal/vshops/tri-life-191/g02.jpg",
+        "/_portal/vshops/tri-life-191/g03.jpg",
+        "/_portal/vshops/tri-life-191/g04.jpg",
+        "/_portal/vshops/tri-life-191/g05.jpg",
+        "/_portal/vshops/tri-life-191/g06.jpg",
+        "/_portal/vshops/tri-life-191/g07.jpg",
+        "/_portal/vshops/tri-life-191/g09.jpg",
+        "/_portal/vshops/tri-life-191/g10.jpg"
+      ],
+      "photos": [
+        {
+          "path": "/_portal/vshops/tri-life-191/g01.jpg",
+          "what": "分解された黒い洗濯機のドラム部品が並ぶ写真",
+          "width": 901,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-life-191/g02.jpg",
+          "what": "浴室の脱衣所で作業をする人の後ろ姿",
+          "kind": "bath",
+          "width": 675,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-life-191/g03.jpg",
+          "what": "取り外された白い洗濯槽の内部",
+          "width": 901,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-life-191/g04.jpg",
+          "what": "分解された洗濯機のドラムとパネルが並ぶ写真",
+          "width": 1024,
+          "height": 1024
+        },
+        {
+          "path": "/_portal/vshops/tri-life-191/g05.jpg",
+          "what": "洗濯機のフィルターや部品が並ぶ写真",
+          "width": 1024,
+          "height": 1024
+        },
+        {
+          "path": "/_portal/vshops/tri-life-191/g06.jpg",
+          "what": "青いシートの上に置かれた洗濯機本体",
+          "kind": "common",
+          "width": 901,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-life-191/g07.jpg",
+          "what": "洗濯機の送風ファンとドラムの部品",
+          "width": 901,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-life-191/g09.jpg",
+          "what": "青いシートの上の黒く汚れた水が入ったバケツ",
+          "width": 901,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-life-191/g10.jpg",
+          "what": "ホースや道具が置かれた室内の作業スペース",
+          "kind": "common",
+          "width": 901,
+          "height": 1200
+        }
+      ],
+      "tags": [],
+      "article": {
+        "headline": "北海道函館市赤川町にあるハウスクリーニング業者。営業は毎日9時から18時までです。",
+        "lede": "函館市にある「ひまわり洗浄」です。業種はハウスクリーニング業です。営業は毎日9時から18時までです。",
+        "sections": [
+          {
+            "heading": "場所と連絡先",
+            "body": "住所は北海道函館市赤川町572-4です。電話番号は090-1207-5296です。"
+          },
+          {
+            "heading": "営業時間",
+            "body": "営業時間は月曜から日曜まで、毎日9時から18時までです。"
+          }
+        ],
+        "sources": [
+          {
+            "label": "Google マップ",
+            "url": "https://maps.google.com/?cid=17470799570140945198"
+          }
+        ],
+        "checkedAt": "2026-10-26"
+      }
+    },
+    {
+      "id": "li0027",
+      "vertical": "life",
+      "category": "shrine-temple",
+      "name": "慈恩禅寺・てっ草園",
+      "pref": "gifu",
+      "cityName": "郡上市",
+      "address": "岐阜県郡上市八幡町島谷339",
+      "lat": 35.7478502,
+      "lng": 136.9617127,
+      "hours": "月水-日 10:00 - 16:00",
+      "holidays": "火曜",
+      "phone": "0575-65-2711",
+      "url": "https://www.jionzenji.com/",
+      "website": "https://www.jionzenji.com/",
+      "mapUrl": "https://maps.google.com/?cid=11808432505301428117",
+      "image": "/_portal/vshops/tri-life-194/g01.jpg",
+      "images": [
+        "/_portal/vshops/tri-life-194/g01.jpg",
+        "/_portal/vshops/tri-life-194/g02.jpg",
+        "/_portal/vshops/tri-life-194/g03.jpg",
+        "/_portal/vshops/tri-life-194/g04.jpg",
+        "/_portal/vshops/tri-life-194/g05.jpg",
+        "/_portal/vshops/tri-life-194/g06.jpg",
+        "/_portal/vshops/tri-life-194/g07.jpg",
+        "/_portal/vshops/tri-life-194/g08.jpg",
+        "/_portal/vshops/tri-life-194/g09.jpg",
+        "/_portal/vshops/tri-life-194/g10.jpg",
+        "/_portal/vshops/tri-life-194/s01.jpg",
+        "/_portal/vshops/tri-life-194/s02.jpg",
+        "/_portal/vshops/tri-life-194/s03.jpg"
+      ],
+      "photos": [
+        {
+          "path": "/_portal/vshops/tri-life-194/g01.jpg",
+          "what": "座敷の窓から見える紅葉した庭園",
+          "kind": "room",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-life-194/g02.jpg",
+          "what": "紅葉と苔に囲まれた池と滝のある庭園",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 675
+        },
+        {
+          "path": "/_portal/vshops/tri-life-194/g03.jpg",
+          "what": "紅葉した庭園の中に続く石畳の小道",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-life-194/g04.jpg",
+          "what": "白砂と岩を配した庭と建物の縁側",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-life-194/g05.jpg",
+          "what": "瓦屋根の山門と石段",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-life-194/g06.jpg",
+          "what": "手水鉢と木々、灯籠のある庭",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-life-194/g07.jpg",
+          "what": "緑の木々に囲まれた小さな祠",
+          "kind": "exterior",
+          "width": 675,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-life-194/g08.jpg",
+          "what": "紅葉と滝、池のある庭園",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 675
+        },
+        {
+          "path": "/_portal/vshops/tri-life-194/g09.jpg",
+          "what": "畳敷きの本堂内部と金色の装飾",
+          "kind": "room",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-life-194/g10.jpg",
+          "what": "岩組みと小さな滝のある庭の一角",
+          "kind": "exterior",
+          "width": 905,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-life-194/s01.jpg",
+          "what": "本堂の外観と石畳の参道",
+          "kind": "exterior",
+          "width": 800,
+          "height": 450
+        },
+        {
+          "path": "/_portal/vshops/tri-life-194/s02.jpg",
+          "what": "新緑に包まれた庭園と池",
+          "kind": "exterior",
+          "width": 800,
+          "height": 450
+        },
+        {
+          "path": "/_portal/vshops/tri-life-194/s03.jpg",
+          "what": "紅葉した庭園と池に架かる橋",
+          "kind": "exterior",
+          "width": 800,
+          "height": 450
+        }
+      ],
+      "tags": [
+        "駐車場あり"
+      ],
+      "article": {
+        "headline": "岐阜県郡上市八幡町にある臨済宗妙心寺派の禅寺。慶長11年(1606)の創建で、市指定名勝庭園「てっ草園」がある",
+        "lede": "岐阜県郡上市にある「慈恩禅寺・てっ草園」です。慶長11年(1606)、八幡城主・遠藤但馬守慶隆を開基として創建された臨済宗妙心寺派の禅寺で、境内には江戸時代初期に初代半山禅師が作庭した市指定名勝庭園「てっ草園」があります。",
+        "sections": [
+          {
+            "heading": "由緒",
+            "body": "慶長11年(1606)、八幡城主・遠藤但馬守慶隆を開基として創建された臨済宗妙心寺派の禅寺です。元文3年(1738)には桜町天皇の御代に「護国」の称号を賜り、「慈恩護国禅寺」が正式な寺号となりました。現在の本堂・書院は明治29年に再建され、庫裏は平成27年に改築されています。"
+          },
+          {
+            "heading": "庭園「てっ草園」",
+            "body": "江戸時代初期に初代半山禅師によって作庭された庭園「てっ草園」は、昭和44年に市の名勝に指定されています。苔むす園内には多数のもみじが配され、池の中央には弁財天が祀られています。明治後期には松尾半古宗匠により水琴窟が設置されました。"
+          },
+          {
+            "heading": "拝観とアクセス",
+            "body": "拝観時間は午前10時から午後4時で、定休日は火曜日です。個人的に楽しむための撮影は他の参拝者への配慮があれば可能ですが、商用撮影を希望する場合は寺務所への連絡が必要です。境内には「山門Ｐ」と「参拝者専用Ｐ」の2か所の駐車場があり、長良川鉄道の郡上八幡駅からはタクシーで5分です。"
+          }
+        ],
+        "menus": [
+          {
+            "name": "ご祈祷・お念寿"
+          },
+          {
+            "name": "交通安全祈願"
+          },
+          {
+            "name": "厄除け祈願"
+          },
+          {
+            "name": "御朱印"
+          },
+          {
+            "name": "永代供養合祀墓「観音塔」"
+          }
+        ],
+        "sources": [
+          {
+            "label": "公式サイト",
+            "url": "https://www.jionzenji.com/"
+          },
+          {
+            "label": "公式サイト(由緒)",
+            "url": "https://www.jionzenji.com/jionzenji.html"
+          },
+          {
+            "label": "公式サイト(てっ草園)",
+            "url": "https://www.jionzenji.com/tetsusoen/index.html"
+          },
+          {
+            "label": "公式サイト(拝観案内)",
+            "url": "https://www.jionzenji.com/visit.html"
+          },
+          {
+            "label": "公式サイト(交通アクセス・駐車場)",
+            "url": "https://www.jionzenji.com/info.html"
+          },
+          {
+            "label": "Google マップ",
+            "url": "https://maps.google.com/?cid=11808432505301428117"
+          }
+        ],
+        "checkedAt": "2026-10-26"
+      }
     }
   ]
 }

@@ -1,0 +1,40 @@
+{
+  "tab": "トリニティアポ",
+  "tabEn": "tri-life",
+  "row": 191,
+  "sheet": {
+    "name": "ひまわり洗浄",
+    "address": "",
+    "url": "https://www.google.com/search?q=090-1207-5296+%E3%81%B2%E3%81%BE%E3%82%8F%E3%82%8A%E6%B4%97%E6%B5%84+%E5%87%BD%E9%A4%A8%E5%B8%82%E8%B5%A4%E5%B7%9D%E7%94%BA572-4&rlz=1C1PWSB_jaJP1026JP1029&oq=090-1207-5296%09%E3%81%B2%E3%81%BE%E3%82%8F%E3%82%8A%E6%B4%97%E6%B5%84%09%E5%87%BD%E9%A4%A8%E5%B8%82%E8%B5%A4%E5%B7%9D%E7%94%BA572-4&gs_lcrp=EgZjaHJvbWUyBggAEEUYOdIBBjgyajBqOagCALACAA&sourceid=chrome&source=chrome.ob&ie=UTF-8",
+    "type": "クリーニング",
+    "d1": "",
+    "d2": ""
+  },
+  "urlKind": "search",
+  "route": "第1段(verify-gbp.mjs)で確認済み",
+  "verdict": "一致",
+  "verdictReason": "電話が一致／店名: exact(シート「ひまわり洗浄」/ マップ「ひまわり洗浄」)",
+  "place": {
+    "name": "ひまわり洗浄",
+    "address": "北海道函館市赤川町５７２−４",
+    "category": "ハウス クリーニング業",
+    "lat": 41.8547294,
+    "lng": 140.7796054,
+    "gbpUrl": "https://maps.google.com/?cid=17470799570140945198",
+    "phone": "090-1207-5296",
+    "website": "https://himawarisenjyo.jimdofree.com/",
+    "hours": {
+      "月": "09:00–18:00",
+      "火": "09:00–18:00",
+      "水": "09:00–18:00",
+      "木": "09:00–18:00",
+      "金": "09:00–18:00",
+      "土": "09:00–18:00",
+      "日": "09:00–18:00"
+    },
+    "reserveLinks": [],
+    "statusSignals": [],
+    "closedSignal": false
+  },
+  "fetchedAt": "2026-10-26T06:31:56.321Z"
+}

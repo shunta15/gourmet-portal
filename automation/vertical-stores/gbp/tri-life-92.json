@@ -1,0 +1,32 @@
+{
+  "tab": "トリニティアポ",
+  "tabEn": "tri-life",
+  "row": 92,
+  "sheet": {
+    "name": "交野天神社",
+    "address": "",
+    "url": "https://www.google.com/search?q=%E4%BA%A4%E9%87%8E%E5%A4%A9%E7%A5%9E%E7%A4%BE%20%E5%A4%A7%E9%98%AA%E5%BA%9C%E6%9E%9A%E6%96%B9%E5%B8%82%E6%A5%A0%E8%91%89%E4%B8%982-19-1%20%E9%9B%BB%E8%A9%B1%E7%95%AA%E5%8F%B7&sec_src=editors",
+    "type": "その他",
+    "d1": "",
+    "d2": ""
+  },
+  "urlKind": "search",
+  "route": "第1段(verify-gbp.mjs)で確認済み",
+  "verdict": "一致",
+  "verdictReason": "電話が一致／店名: exact(シート「交野天神社」/ マップ「交野天神社」)／住所(検索URL): exact・町名・番地とも一致",
+  "place": {
+    "name": "交野天神社",
+    "address": "大阪府枚方市楠葉丘２丁目１９−１",
+    "category": "神社",
+    "lat": 34.8676417,
+    "lng": 135.6898667,
+    "gbpUrl": "https://maps.google.com/?cid=10079227691047330108",
+    "phone": "072-857-7332",
+    "website": "http://osakadai3shibu.kilo.jp/jinja/hirakata/jinja/katanoamatukami.html",
+    "hours": null,
+    "reserveLinks": [],
+    "statusSignals": [],
+    "closedSignal": false
+  },
+  "fetchedAt": "2026-10-26T06:14:29.754Z"
+}

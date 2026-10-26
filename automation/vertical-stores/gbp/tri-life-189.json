@@ -1,0 +1,32 @@
+{
+  "tab": "トリニティアポ",
+  "tabEn": "tri-life",
+  "row": 189,
+  "sheet": {
+    "name": "浄土寺",
+    "address": "",
+    "url": "https://www.google.com/search?q=%E6%B5%84%E5%9C%9F%E5%AF%BA+%E4%B8%89%E9%87%8D%E7%9C%8C%E5%A4%9A%E6%B0%97%E9%83%A1%E5%A4%9A%E6%B0%97%E7%94%BA%E7%9B%B8%E5%8F%AF%EF%BC%91%EF%BC%99%EF%BC%98%E8%AA%AD%E3%81%BF%E6%96%B9&sca_esv=6d5c5642e715f1b4&sxsrf=APpeQnssEVdnd5c2j0vFjue1iL8uVpKFXw%3A1792728912565&ei=UN_aapeFIpSpvr0PlpyO6AY&biw=940&bih=695&uact=5&oq=%E6%B5%84%E5%9C%9F%E5%AF%BA+%E4%B8%89%E9%87%8D%E7%9C%8C%E5%A4%9A%E6%B0%97%E9%83%A1%E5%A4%9A%E6%B0%97%E7%94%BA%E7%9B%B8%E5%8F%AF%EF%BC%91%EF%BC%99%EF%BC%98%E8%AA%AD%E3%81%BF%E6%96%B9&gs_lp=Egxnd3Mtd2l6LXNlcnAiPea1hOWcn-WvuiDkuInph43nnIzlpJrmsJfpg6HlpJrmsJfnlLrnm7jlj6_vvJHvvJnvvJjoqq3jgb_mlrkyBRAAGO8FMgUQABjvBTIFEAAY7wUyBRAAGO8FSNgyUIMRWLgucAF4AZABAJgBmgGgAa8HqgEDNS40uAEDyAEA-AEBmAIGoAKdBMICChAAGEcY1gQYsAPCAgUQIRigAcICCRAhGAoYoAEYKsICBhAhGAoYKpgDAIgGAZAGApIHAzIuNKAHkRWyBwMxLjS4B5QEwgcFMC40LjLIBw-ACAE&sclient=gws-wiz-serp",
+    "type": "寺",
+    "d1": "",
+    "d2": ""
+  },
+  "urlKind": "search",
+  "route": "第1段(verify-gbp.mjs)で確認済み",
+  "verdict": "一致",
+  "verdictReason": "電話が一致／店名: contains(シート「浄土寺」/ マップ「佛乘山 往生院 浄土寺」)／住所(検索URL): exact・町名・番地とも一致",
+  "place": {
+    "name": "佛乘山 往生院 浄土寺",
+    "address": "三重県多気郡多気町相可１９８",
+    "category": "仏教寺院",
+    "lat": 34.5059242,
+    "lng": 136.5428072,
+    "gbpUrl": "https://maps.google.com/?cid=859207222809324403",
+    "phone": "090-9890-1939",
+    "website": "http://jyodoji.com/",
+    "hours": null,
+    "reserveLinks": [],
+    "statusSignals": [],
+    "closedSignal": false
+  },
+  "fetchedAt": "2026-10-26T06:30:28.849Z"
+}

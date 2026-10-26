@@ -1,0 +1,32 @@
+{
+  "tab": "トリニティアポ",
+  "tabEn": "tri-life",
+  "row": 97,
+  "sheet": {
+    "name": "雲雷寺",
+    "address": "",
+    "url": "https://www.google.com/search?sca_esv=4dc8063a2e18b58e&sxsrf=APpeQnvT-SStpnCtAbmQWNH7OJwFnmKfGA:1792386007121&q=%E9%9B%B2%E9%9B%B7%E5%AF%BA+%E3%83%AC%E3%83%93%E3%83%A5%E3%83%BC&source=lnms&fbs=ABfTbFXifkC0hIiH2vQX6dk0RwIEyzUKo4y2W7yfY_SeFMKav_cgHK-M3FKBSfYe_Fz1V-yXV82-FsYHY2dVfLOsljbgXUSAseoRn5EedYTBw4fMgZ6ybHMGcTJDtj2ekwx95h5nrUnzrBJePHf-ggHVVpGw7khxvdgzEOgCVziwXG6weX3_j00Qeiorg9bDUWiCH-uHmmpRY-L_IeHD0BjGfaDXPLHg4_f1gLmaxeNw6nvyVHcw9m2D4ZZY88oGr0bFlYBtMs0j&sa=X&ved=2ahUKEwiSuISapsWXAxXrsFYBHYHFM0AQ0pQJegQIDhAB&biw=740&bih=663&dpr=1.38#lpg=cid:CgIgAQ%3D%3D,ik:CAoSF0NJSE0wb2dLRUlDQWdJRGMxLW5scWdF",
+    "type": "寺",
+    "d1": "",
+    "d2": ""
+  },
+  "urlKind": "search",
+  "route": "第1段(verify-gbp.mjs)で確認済み",
+  "verdict": "一致",
+  "verdictReason": "電話が一致／店名: exact(シート「雲雷寺」/ マップ「雲雷寺」)",
+  "place": {
+    "name": "雲雷寺",
+    "address": "大阪府大阪市中央区中寺１丁目４−４",
+    "category": "仏教寺院",
+    "lat": 34.6697394,
+    "lng": 135.5149084,
+    "gbpUrl": "https://maps.google.com/?cid=557010297210272337",
+    "phone": "06-6761-2484",
+    "website": "http://unraiji.or.jp/",
+    "hours": null,
+    "reserveLinks": [],
+    "statusSignals": [],
+    "closedSignal": false
+  },
+  "fetchedAt": "2026-10-26T06:15:45.490Z"
+}

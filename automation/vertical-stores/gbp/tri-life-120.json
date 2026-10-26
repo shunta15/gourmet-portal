@@ -1,0 +1,40 @@
+{
+  "tab": "トリニティアポ",
+  "tabEn": "tri-life",
+  "row": 120,
+  "sheet": {
+    "name": "泉州磐船神社",
+    "address": "",
+    "url": "https://www.google.com/search?q=072-462-5900&rlz=1C1PWSB_jaJP1026JP1029&oq=072-462-5900&gs_lcrp=EgZjaHJvbWUyBggAEEUYOdIBBzE2NWowajmoAgawAgHxBQOYKV8dREZu&sourceid=chrome&source=chrome.ob&ie=UTF-8",
+    "type": "神社",
+    "d1": "",
+    "d2": ""
+  },
+  "urlKind": "search",
+  "route": "第1段(verify-gbp.mjs)で確認済み",
+  "verdict": "一致",
+  "verdictReason": "電話が一致／店名: contains(シート「泉州磐船神社」/ マップ「泉州磐船神社 航空神社」)",
+  "place": {
+    "name": "泉州磐船神社 航空神社",
+    "address": "大阪府泉佐野市上瓦屋３９２−１",
+    "category": "神社",
+    "lat": 34.4135208,
+    "lng": 135.3370972,
+    "gbpUrl": "https://maps.google.com/?cid=247100835819611395",
+    "phone": "072-462-5900",
+    "website": "http://www.senshuiwafune.jp/",
+    "hours": {
+      "月": "09:00–17:00",
+      "火": "09:00–17:00",
+      "水": "09:00–17:00",
+      "木": "09:00–17:00",
+      "金": "09:00–17:00",
+      "土": "09:00–17:00",
+      "日": "09:00–17:00"
+    },
+    "reserveLinks": [],
+    "statusSignals": [],
+    "closedSignal": false
+  },
+  "fetchedAt": "2026-10-26T06:21:12.410Z"
+}

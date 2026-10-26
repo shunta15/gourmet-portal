@@ -1,0 +1,1019 @@
+{
+  "meta": {
+    "date": "2026-10-26",
+    "startedAt": "2026-10-26T06:12:17.040Z",
+    "verifyFile": "automation/v2/out/verify-2026-10-25.json",
+    "args": "--from-row 80 --vertical くらし",
+    "updatedAt": "2026-10-26T06:41:58.721Z"
+  },
+  "environment": null,
+  "results": {
+    "tri-life-88": {
+      "key": "tri-life-88",
+      "row": 88,
+      "name": "雑貨牧場GAYU（がゆ）",
+      "vertical": "くらし",
+      "status": "成功",
+      "stage": "done",
+      "startedAt": "2026-10-26T06:12:17.175Z",
+      "seconds": {
+        "total": 0
+      },
+      "photos": {
+        "candidates": 11,
+        "maps": 10,
+        "official": 1,
+        "rejectedByMachine": 0,
+        "used": 10,
+        "emptyFrames": 0
+      },
+      "check": {
+        "rewrote": false,
+        "shapeProblems": [],
+        "sentenceProblems": 0,
+        "facts": {
+          "total": 7,
+          "verified": 7
+        }
+      },
+      "placeId": "li0005",
+      "featureInGenerated": false,
+      "featureNote": null,
+      "urls": {
+        "shop": "/life/shop/li0005",
+        "article": null
+      },
+      "finishedAt": "2026-10-26T06:35:54.081Z"
+    },
+    "tri-life-89": {
+      "key": "tri-life-89",
+      "row": 89,
+      "name": "藤森神社",
+      "vertical": "くらし",
+      "status": "成功",
+      "stage": "done",
+      "startedAt": "2026-10-26T06:12:48.272Z",
+      "seconds": {
+        "total": 0
+      },
+      "photos": {
+        "candidates": 10,
+        "maps": 10,
+        "official": 0,
+        "rejectedByMachine": 11,
+        "used": 8,
+        "emptyFrames": 0
+      },
+      "check": {
+        "rewrote": false,
+        "shapeProblems": [],
+        "sentenceProblems": 0,
+        "facts": {
+          "total": 30,
+          "verified": 29
+        }
+      },
+      "memo": "裏取りに通らない facts 1 件は載せていない",
+      "placeId": "li0006",
+      "featureInGenerated": false,
+      "featureNote": null,
+      "urls": {
+        "shop": "/life/shop/li0006",
+        "article": null
+      },
+      "finishedAt": "2026-10-26T06:35:54.212Z"
+    },
+    "tri-life-90": {
+      "key": "tri-life-90",
+      "row": 90,
+      "name": "來宮神社",
+      "vertical": "くらし",
+      "status": "成功",
+      "stage": "done",
+      "startedAt": "2026-10-26T06:13:28.410Z",
+      "seconds": {
+        "total": 0
+      },
+      "photos": {
+        "candidates": 14,
+        "maps": 10,
+        "official": 4,
+        "rejectedByMachine": 14,
+        "used": 13,
+        "emptyFrames": 0
+      },
+      "check": {
+        "rewrote": false,
+        "shapeProblems": [],
+        "sentenceProblems": 0,
+        "facts": {
+          "total": 20,
+          "verified": 20
+        }
+      },
+      "placeId": "li0007",
+      "featureInGenerated": false,
+      "featureNote": null,
+      "urls": {
+        "shop": "/life/shop/li0007",
+        "article": null
+      },
+      "finishedAt": "2026-10-26T06:35:54.353Z"
+    },
+    "tri-life-92": {
+      "key": "tri-life-92",
+      "row": 92,
+      "name": "交野天神社",
+      "vertical": "くらし",
+      "status": "成功",
+      "stage": "done",
+      "startedAt": "2026-10-26T06:14:14.621Z",
+      "seconds": {
+        "total": 53,
+        "claude": 53
+      },
+      "photos": {
+        "candidates": 10,
+        "maps": 10,
+        "official": 0,
+        "rejectedByMachine": 18,
+        "used": 10,
+        "emptyFrames": 0
+      },
+      "check": {
+        "rewrote": true,
+        "shapeProblems": [],
+        "sentenceProblems": 0,
+        "facts": {
+          "total": 18,
+          "verified": 18
+        }
+      },
+      "placeId": "li0008",
+      "featureInGenerated": false,
+      "featureNote": null,
+      "urls": {
+        "shop": "/life/shop/li0008",
+        "article": null
+      },
+      "finishedAt": "2026-10-26T06:36:47.506Z"
+    },
+    "tri-life-93": {
+      "key": "tri-life-93",
+      "row": 93,
+      "name": "清伝寺",
+      "vertical": "くらし",
+      "status": "失敗",
+      "stage": "claude",
+      "startedAt": "2026-10-26T06:14:56.299Z",
+      "seconds": {
+        "total": 0
+      },
+      "photos": {
+        "candidates": 10,
+        "maps": 10,
+        "official": 0,
+        "rejectedByMachine": 0
+      },
+      "reason": "書き手が失敗の出口で終了: 公式サイトが無く、Google マップの情報も住所・電話・業種表示のみで営業時間も無いため、事実だけで記事の複数セクションを組み立てるだけの材料が無い"
+    },
+    "tri-life-97": {
+      "key": "tri-life-97",
+      "row": 97,
+      "name": "雲雷寺",
+      "vertical": "くらし",
+      "status": "成功",
+      "stage": "done",
+      "startedAt": "2026-10-26T06:15:31.289Z",
+      "seconds": {
+        "total": 0
+      },
+      "photos": {
+        "candidates": 13,
+        "maps": 10,
+        "official": 3,
+        "rejectedByMachine": 15,
+        "used": 12,
+        "emptyFrames": 0
+      },
+      "check": {
+        "rewrote": false,
+        "shapeProblems": [],
+        "sentenceProblems": 0,
+        "facts": {
+          "total": 18,
+          "verified": 18
+        }
+      },
+      "placeId": "li0009",
+      "featureInGenerated": false,
+      "featureNote": null,
+      "urls": {
+        "shop": "/life/shop/li0009",
+        "article": null
+      },
+      "finishedAt": "2026-10-26T06:36:47.636Z"
+    },
+    "tri-life-98": {
+      "key": "tri-life-98",
+      "row": 98,
+      "name": "別格第7番 出石寺",
+      "vertical": "くらし",
+      "status": "成功",
+      "stage": "done",
+      "startedAt": "2026-10-26T06:16:16.362Z",
+      "seconds": {
+        "total": 0
+      },
+      "photos": {
+        "candidates": 10,
+        "maps": 10,
+        "official": 0,
+        "rejectedByMachine": 0,
+        "used": 9,
+        "emptyFrames": 0
+      },
+      "check": {
+        "rewrote": false,
+        "shapeProblems": [],
+        "sentenceProblems": 0,
+        "facts": {
+          "total": 4,
+          "verified": 4
+        }
+      },
+      "placeId": "li0010",
+      "featureInGenerated": false,
+      "featureNote": null,
+      "urls": {
+        "shop": "/life/shop/li0010",
+        "article": null
+      },
+      "finishedAt": "2026-10-26T06:36:47.766Z"
+    },
+    "tri-life-100": {
+      "key": "tri-life-100",
+      "row": 100,
+      "name": "善福院釈迦堂",
+      "vertical": "くらし",
+      "status": "成功",
+      "stage": "done",
+      "startedAt": "2026-10-26T06:16:47.833Z",
+      "seconds": {
+        "total": 0
+      },
+      "photos": {
+        "candidates": 11,
+        "maps": 10,
+        "official": 1,
+        "rejectedByMachine": 17,
+        "used": 8,
+        "emptyFrames": 0
+      },
+      "check": {
+        "rewrote": false,
+        "shapeProblems": [],
+        "sentenceProblems": 0,
+        "facts": {
+          "total": 11,
+          "verified": 10
+        }
+      },
+      "memo": "裏取りに通らない facts 1 件は載せていない",
+      "placeId": "li0011",
+      "featureInGenerated": false,
+      "featureNote": null,
+      "urls": {
+        "shop": "/life/shop/li0011",
+        "article": null
+      },
+      "finishedAt": "2026-10-26T06:36:47.896Z"
+    },
+    "tri-life-101": {
+      "key": "tri-life-101",
+      "row": 101,
+      "name": "阿波ツクヨミファーム",
+      "vertical": "くらし",
+      "status": "成功",
+      "stage": "done",
+      "startedAt": "2026-10-26T06:17:29.598Z",
+      "seconds": {
+        "total": 0
+      },
+      "photos": {
+        "candidates": 19,
+        "maps": 10,
+        "official": 9,
+        "rejectedByMachine": 9,
+        "used": 14,
+        "emptyFrames": 0
+      },
+      "check": {
+        "rewrote": false,
+        "shapeProblems": [],
+        "sentenceProblems": 0,
+        "facts": {
+          "total": 13,
+          "verified": 13
+        }
+      },
+      "placeId": "li0012",
+      "featureInGenerated": false,
+      "featureNote": null,
+      "urls": {
+        "shop": "/life/shop/li0012",
+        "article": null
+      },
+      "finishedAt": "2026-10-26T06:36:48.026Z"
+    },
+    "tri-life-103": {
+      "key": "tri-life-103",
+      "row": 103,
+      "name": "長慶寺",
+      "vertical": "くらし",
+      "status": "失敗",
+      "stage": "claude",
+      "startedAt": "2026-10-26T06:18:28.014Z",
+      "seconds": {
+        "total": 0
+      },
+      "photos": {
+        "candidates": 10,
+        "maps": 10,
+        "official": 0,
+        "rejectedByMachine": 0
+      },
+      "reason": "書き手が失敗の出口で終了: 公式サイトの文字が取得できておらず、store.json(Googleマップ)の情報も住所・電話・24時間営業・業種表示(仏教寺院)のみで、由緒や堂宇の説明などsectionsを事実で埋める材料が無いため。"
+    },
+    "tri-life-107": {
+      "key": "tri-life-107",
+      "row": 107,
+      "name": "咸古神社",
+      "vertical": "くらし",
+      "status": "成功",
+      "stage": "done",
+      "startedAt": "2026-10-26T06:19:04.046Z",
+      "seconds": {
+        "total": 0
+      },
+      "photos": {
+        "candidates": 11,
+        "maps": 10,
+        "official": 1,
+        "rejectedByMachine": 17,
+        "used": 10,
+        "emptyFrames": 0
+      },
+      "check": {
+        "rewrote": false,
+        "shapeProblems": [],
+        "sentenceProblems": 0,
+        "facts": {
+          "total": 11,
+          "verified": 10
+        }
+      },
+      "memo": "裏取りに通らない facts 1 件は載せていない",
+      "placeId": "li0013",
+      "featureInGenerated": false,
+      "featureNote": null,
+      "urls": {
+        "shop": "/life/shop/li0013",
+        "article": null
+      },
+      "finishedAt": "2026-10-26T06:36:48.168Z"
+    },
+    "tri-life-111": {
+      "key": "tri-life-111",
+      "row": 111,
+      "name": "占い空間 花の瞳",
+      "vertical": "くらし",
+      "status": "成功",
+      "stage": "done",
+      "startedAt": "2026-10-26T06:19:46.168Z",
+      "seconds": {
+        "total": 0
+      },
+      "photos": {
+        "candidates": 10,
+        "maps": 10,
+        "official": 0,
+        "rejectedByMachine": 0,
+        "used": 7,
+        "emptyFrames": 0
+      },
+      "check": {
+        "rewrote": false,
+        "shapeProblems": [],
+        "sentenceProblems": 0,
+        "facts": {
+          "total": 4,
+          "verified": 4
+        }
+      },
+      "placeId": "li0014",
+      "featureInGenerated": false,
+      "featureNote": null,
+      "urls": {
+        "shop": "/life/shop/li0014",
+        "article": null
+      },
+      "finishedAt": "2026-10-26T06:36:48.301Z"
+    },
+    "tri-life-117": {
+      "key": "tri-life-117",
+      "row": 117,
+      "name": "加支多神社",
+      "vertical": "くらし",
+      "status": "失敗",
+      "stage": "check",
+      "startedAt": "2026-10-26T06:20:23.165Z",
+      "seconds": {
+        "total": 33,
+        "claude": 33
+      },
+      "photos": {
+        "candidates": 10,
+        "maps": 10,
+        "official": 0,
+        "rejectedByMachine": 0
+      },
+      "check": {
+        "rewrote": true,
+        "shapeProblems": [
+          "facts が少なすぎる(3 件・4 件以上)"
+        ],
+        "sentenceProblems": 0,
+        "facts": null
+      },
+      "reason": "検査に通らない(1 件・書き直し後も): facts が少なすぎる(3 件・4 件以上)",
+      "checkDetail": [
+        "facts が少なすぎる(3 件・4 件以上)"
+      ]
+    },
+    "tri-life-120": {
+      "key": "tri-life-120",
+      "row": 120,
+      "name": "泉州磐船神社",
+      "vertical": "くらし",
+      "status": "成功",
+      "stage": "done",
+      "startedAt": "2026-10-26T06:20:58.940Z",
+      "seconds": {
+        "total": 35,
+        "claude": 35
+      },
+      "photos": {
+        "candidates": 15,
+        "maps": 10,
+        "official": 5,
+        "rejectedByMachine": 13,
+        "used": 13,
+        "emptyFrames": 0
+      },
+      "check": {
+        "rewrote": true,
+        "shapeProblems": [],
+        "sentenceProblems": 0,
+        "facts": {
+          "total": 18,
+          "verified": 18
+        }
+      },
+      "placeId": "li0015",
+      "featureInGenerated": false,
+      "featureNote": null,
+      "urls": {
+        "shop": "/life/shop/li0015",
+        "article": null
+      },
+      "finishedAt": "2026-10-26T06:37:55.875Z"
+    },
+    "tri-life-121": {
+      "key": "tri-life-121",
+      "row": 121,
+      "name": "妙宣寺",
+      "vertical": "くらし",
+      "status": "成功",
+      "stage": "done",
+      "startedAt": "2026-10-26T06:21:49.828Z",
+      "seconds": {
+        "total": 73,
+        "claude": 72
+      },
+      "photos": {
+        "candidates": 25,
+        "maps": 10,
+        "official": 15,
+        "rejectedByMachine": 3,
+        "used": 22,
+        "emptyFrames": 0
+      },
+      "check": {
+        "rewrote": true,
+        "shapeProblems": [],
+        "sentenceProblems": 0,
+        "facts": {
+          "total": 23,
+          "verified": 23
+        }
+      },
+      "placeId": "li0016",
+      "featureInGenerated": false,
+      "featureNote": null,
+      "urls": {
+        "shop": "/life/shop/li0016",
+        "article": null
+      },
+      "finishedAt": "2026-10-26T06:39:08.427Z"
+    },
+    "tri-life-138": {
+      "key": "tri-life-138",
+      "row": 138,
+      "name": "逢坂八幡神社",
+      "vertical": "くらし",
+      "status": "失敗",
+      "stage": "claude",
+      "startedAt": "2026-10-26T06:22:39.089Z",
+      "seconds": {
+        "total": 0
+      },
+      "photos": {
+        "candidates": 10,
+        "maps": 10,
+        "official": 0,
+        "rejectedByMachine": 0
+      },
+      "reason": "書き手が失敗の出口で終了: 公式サイトの文字が取得できておらず、Google マップの情報も店名・住所・電話・業種表示のみで営業時間や由緒などの事実が無く、記事を事実だけで書くには材料が不足している"
+    },
+    "tri-life-143": {
+      "key": "tri-life-143",
+      "row": 143,
+      "name": "便利屋 愛三和",
+      "vertical": "くらし",
+      "status": "失敗",
+      "stage": "claude",
+      "startedAt": "2026-10-26T06:23:17.732Z",
+      "seconds": {
+        "total": 0
+      },
+      "photos": {
+        "candidates": 0,
+        "maps": 0,
+        "official": 0,
+        "rejectedByMachine": 0
+      },
+      "memo": "写真の候補が 0 枚(Google マップ・公式サイトとも取れなかった)。写真なしで続ける",
+      "reason": "書き手が失敗の出口で終了: 公式サイトの文字がタイトルのみで本文が無く、写真候補も0枚のため記事を書く材料が足りない。加えて業種「便利屋」が用意されたカテゴリ(lesson/shrine-temple/fashion-craft/photo-marriage/car-repair/flower-farm/fortune)のいずれにも当たらない。"
+    },
+    "tri-life-145": {
+      "key": "tri-life-145",
+      "row": 145,
+      "name": "レンタル衣装ドレスルーチェ",
+      "vertical": "くらし",
+      "status": "成功",
+      "stage": "done",
+      "startedAt": "2026-10-26T06:23:46.154Z",
+      "seconds": {
+        "total": 0
+      },
+      "photos": {
+        "candidates": 14,
+        "maps": 10,
+        "official": 4,
+        "rejectedByMachine": 13,
+        "used": 10,
+        "emptyFrames": 0
+      },
+      "check": {
+        "rewrote": false,
+        "shapeProblems": [],
+        "sentenceProblems": 0,
+        "facts": {
+          "total": 13,
+          "verified": 13
+        }
+      },
+      "placeId": "li0017",
+      "featureInGenerated": false,
+      "featureNote": null,
+      "urls": {
+        "shop": "/life/shop/li0017",
+        "article": null
+      },
+      "finishedAt": "2026-10-26T06:39:08.566Z"
+    },
+    "tri-life-147": {
+      "key": "tri-life-147",
+      "row": 147,
+      "name": "便利関工房",
+      "vertical": "くらし",
+      "status": "失敗",
+      "stage": "claude",
+      "startedAt": "2026-10-26T06:24:27.531Z",
+      "seconds": {
+        "total": 0
+      },
+      "photos": {
+        "candidates": 22,
+        "maps": 10,
+        "official": 12,
+        "rejectedByMachine": 6
+      },
+      "reason": "書き手が失敗の出口で終了: 店の実態は住宅の補修・リフォーム・清掃・除草・家具製作を行う便利屋/工務店で、用意されたcategoryスラッグ(lesson/shrine-temple/fashion-craft/photo-marriage/car-repair/flower-farm/fortune)のどれにも当てはまらない"
+    },
+    "tri-life-153": {
+      "key": "tri-life-153",
+      "row": 153,
+      "name": "盛松寺",
+      "vertical": "くらし",
+      "status": "成功",
+      "stage": "done",
+      "startedAt": "2026-10-26T06:25:22.646Z",
+      "seconds": {
+        "total": 0
+      },
+      "photos": {
+        "candidates": 24,
+        "maps": 10,
+        "official": 14,
+        "rejectedByMachine": 4,
+        "used": 19,
+        "emptyFrames": 0
+      },
+      "check": {
+        "rewrote": false,
+        "shapeProblems": [],
+        "sentenceProblems": 0,
+        "facts": {
+          "total": 12,
+          "verified": 12
+        }
+      },
+      "placeId": "li0018",
+      "featureInGenerated": false,
+      "featureNote": null,
+      "urls": {
+        "shop": "/life/shop/li0018",
+        "article": null
+      },
+      "finishedAt": "2026-10-26T06:39:08.705Z"
+    },
+    "tri-life-157": {
+      "key": "tri-life-157",
+      "row": 157,
+      "name": "九重白蛇参拝所 龍昇院",
+      "vertical": "くらし",
+      "status": "成功",
+      "stage": "done",
+      "startedAt": "2026-10-26T06:26:10.283Z",
+      "seconds": {
+        "total": 37,
+        "claude": 37
+      },
+      "photos": {
+        "candidates": 10,
+        "maps": 10,
+        "official": 0,
+        "rejectedByMachine": 0,
+        "used": 3,
+        "emptyFrames": 0
+      },
+      "check": {
+        "rewrote": true,
+        "shapeProblems": [],
+        "sentenceProblems": 0,
+        "facts": {
+          "total": 4,
+          "verified": 4
+        }
+      },
+      "placeId": "li0019",
+      "featureInGenerated": false,
+      "featureNote": null,
+      "urls": {
+        "shop": "/life/shop/li0019",
+        "article": null
+      },
+      "finishedAt": "2026-10-26T06:39:45.556Z"
+    },
+    "tri-life-165": {
+      "key": "tri-life-165",
+      "row": 165,
+      "name": "日限地蔵院(ひぎりじぞういん)",
+      "vertical": "くらし",
+      "status": "成功",
+      "stage": "done",
+      "startedAt": "2026-10-26T06:26:44.539Z",
+      "seconds": {
+        "total": 33,
+        "claude": 33
+      },
+      "photos": {
+        "candidates": 10,
+        "maps": 10,
+        "official": 0,
+        "rejectedByMachine": 0,
+        "used": 9,
+        "emptyFrames": 0
+      },
+      "check": {
+        "rewrote": true,
+        "shapeProblems": [],
+        "sentenceProblems": 0,
+        "facts": {
+          "total": 7,
+          "verified": 7
+        }
+      },
+      "placeId": "li0020",
+      "featureInGenerated": false,
+      "featureNote": null,
+      "urls": {
+        "shop": "/life/shop/li0020",
+        "article": null
+      },
+      "finishedAt": "2026-10-26T06:40:18.567Z"
+    },
+    "tri-life-171": {
+      "key": "tri-life-171",
+      "row": 171,
+      "name": "宝池寺",
+      "vertical": "くらし",
+      "status": "成功",
+      "stage": "done",
+      "startedAt": "2026-10-26T06:27:16.156Z",
+      "seconds": {
+        "total": 0
+      },
+      "photos": {
+        "candidates": 16,
+        "maps": 10,
+        "official": 6,
+        "rejectedByMachine": 12,
+        "used": 11,
+        "emptyFrames": 0
+      },
+      "check": {
+        "rewrote": false,
+        "shapeProblems": [],
+        "sentenceProblems": 0,
+        "facts": {
+          "total": 20,
+          "verified": 20
+        }
+      },
+      "placeId": "li0021",
+      "featureInGenerated": false,
+      "featureNote": null,
+      "urls": {
+        "shop": "/life/shop/li0021",
+        "article": null
+      },
+      "finishedAt": "2026-10-26T06:40:18.705Z"
+    },
+    "tri-life-179": {
+      "key": "tri-life-179",
+      "row": 179,
+      "name": "小戸神社",
+      "vertical": "くらし",
+      "status": "成功",
+      "stage": "done",
+      "startedAt": "2026-10-26T06:27:59.401Z",
+      "seconds": {
+        "total": 76,
+        "claude": 75
+      },
+      "photos": {
+        "candidates": 15,
+        "maps": 10,
+        "official": 5,
+        "rejectedByMachine": 13,
+        "used": 14,
+        "emptyFrames": 0
+      },
+      "check": {
+        "rewrote": true,
+        "shapeProblems": [],
+        "sentenceProblems": 0,
+        "facts": {
+          "total": 23,
+          "verified": 23
+        }
+      },
+      "placeId": "li0022",
+      "featureInGenerated": false,
+      "featureNote": null,
+      "urls": {
+        "shop": "/life/shop/li0022",
+        "article": null
+      },
+      "finishedAt": "2026-10-26T06:41:34.443Z"
+    },
+    "tri-life-184": {
+      "key": "tri-life-184",
+      "row": 184,
+      "name": "上行寺",
+      "vertical": "くらし",
+      "status": "成功",
+      "stage": "done",
+      "startedAt": "2026-10-26T06:28:49.135Z",
+      "seconds": {
+        "total": 0
+      },
+      "photos": {
+        "candidates": 26,
+        "maps": 10,
+        "official": 16,
+        "rejectedByMachine": 2,
+        "used": 24,
+        "emptyFrames": 0
+      },
+      "check": {
+        "rewrote": false,
+        "shapeProblems": [],
+        "sentenceProblems": 0,
+        "facts": {
+          "total": 18,
+          "verified": 18
+        }
+      },
+      "placeId": "li0023",
+      "featureInGenerated": false,
+      "featureNote": null,
+      "urls": {
+        "shop": "/life/shop/li0023",
+        "article": null
+      },
+      "finishedAt": "2026-10-26T06:41:34.598Z"
+    },
+    "tri-life-187": {
+      "key": "tri-life-187",
+      "row": 187,
+      "name": "高積神社",
+      "vertical": "くらし",
+      "status": "失敗",
+      "stage": "claude",
+      "startedAt": "2026-10-26T06:29:39.058Z",
+      "seconds": {
+        "total": 0
+      },
+      "photos": {
+        "candidates": 10,
+        "maps": 10,
+        "official": 0,
+        "rejectedByMachine": 0
+      },
+      "reason": "書き手が失敗の出口で終了: 公式サイトは文字が取れずデータベースのエラー表示のみで、store.json(Google マップ)には店名・住所・電話・業種の表示しかなく営業時間も無い。由緒・祭事・内容など記事の節を事実だけで書くための材料が無い。"
+    },
+    "tri-life-189": {
+      "key": "tri-life-189",
+      "row": 189,
+      "name": "浄土寺",
+      "vertical": "くらし",
+      "status": "成功",
+      "stage": "done",
+      "startedAt": "2026-10-26T06:30:15.534Z",
+      "seconds": {
+        "total": 0
+      },
+      "photos": {
+        "candidates": 23,
+        "maps": 10,
+        "official": 13,
+        "rejectedByMachine": 5,
+        "used": 19,
+        "emptyFrames": 0
+      },
+      "check": {
+        "rewrote": false,
+        "shapeProblems": [],
+        "sentenceProblems": 0,
+        "facts": {
+          "total": 10,
+          "verified": 10
+        }
+      },
+      "placeId": "li0024",
+      "featureInGenerated": false,
+      "featureNote": null,
+      "urls": {
+        "shop": "/life/shop/li0024",
+        "article": null
+      },
+      "finishedAt": "2026-10-26T06:41:34.749Z"
+    },
+    "tri-life-190": {
+      "key": "tri-life-190",
+      "row": 190,
+      "name": "中川八幡神社",
+      "vertical": "くらし",
+      "status": "成功",
+      "stage": "done",
+      "startedAt": "2026-10-26T06:31:06.739Z",
+      "seconds": {
+        "total": 24,
+        "claude": 23
+      },
+      "photos": {
+        "candidates": 10,
+        "maps": 10,
+        "official": 0,
+        "rejectedByMachine": 0,
+        "used": 10,
+        "emptyFrames": 0
+      },
+      "check": {
+        "rewrote": true,
+        "shapeProblems": [],
+        "sentenceProblems": 0,
+        "facts": {
+          "total": 4,
+          "verified": 4
+        }
+      },
+      "placeId": "li0025",
+      "featureInGenerated": false,
+      "featureNote": null,
+      "urls": {
+        "shop": "/life/shop/li0025",
+        "article": null
+      },
+      "finishedAt": "2026-10-26T06:41:58.454Z"
+    },
+    "tri-life-191": {
+      "key": "tri-life-191",
+      "row": 191,
+      "name": "ひまわり洗浄",
+      "vertical": "くらし",
+      "status": "成功",
+      "stage": "done",
+      "startedAt": "2026-10-26T06:31:42.170Z",
+      "seconds": {
+        "total": 0
+      },
+      "photos": {
+        "candidates": 10,
+        "maps": 10,
+        "official": 0,
+        "rejectedByMachine": 0,
+        "used": 9,
+        "emptyFrames": 0
+      },
+      "check": {
+        "rewrote": false,
+        "shapeProblems": [],
+        "sentenceProblems": 0,
+        "facts": {
+          "total": 4,
+          "verified": 4
+        }
+      },
+      "placeId": "li0026",
+      "featureInGenerated": false,
+      "featureNote": null,
+      "urls": {
+        "shop": "/life/shop/li0026",
+        "article": null
+      },
+      "finishedAt": "2026-10-26T06:41:58.584Z"
+    },
+    "tri-life-194": {
+      "key": "tri-life-194",
+      "row": 194,
+      "name": "慈恩禅寺",
+      "vertical": "くらし",
+      "status": "成功",
+      "stage": "done",
+      "startedAt": "2026-10-26T06:32:18.043Z",
+      "seconds": {
+        "total": 0
+      },
+      "photos": {
+        "candidates": 13,
+        "maps": 10,
+        "official": 3,
+        "rejectedByMachine": 11,
+        "used": 13,
+        "emptyFrames": 0
+      },
+      "check": {
+        "rewrote": false,
+        "shapeProblems": [],
+        "sentenceProblems": 0,
+        "facts": {
+          "total": 13,
+          "verified": 13
+        }
+      },
+      "placeId": "li0027",
+      "featureInGenerated": false,
+      "featureNote": null,
+      "urls": {
+        "shop": "/life/shop/li0027",
+        "article": null
+      },
+      "finishedAt": "2026-10-26T06:41:58.721Z"
+    }
+  }
+}
