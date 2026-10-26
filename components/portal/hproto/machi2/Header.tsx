@@ -3,7 +3,7 @@
 import Link from "next/link";
 import { useEffect, useRef, useState } from "react";
 import { IMG } from "./const";
-import { PROD_MENU, PROD_NAV, PROD_SEARCH } from "./prodData";
+import { PROD_MENU } from "./prodData";
 import "./header.css";
 
 /** ヘッダー(見本の座標・1182 基準)。絵の上に重なる。スクロールすると白い帯になり、下へ進むと隠れ、上へ戻ると現れる。 */
@@ -42,11 +42,7 @@ export default function Header() {
         <Link href="/" className="h2-logo h2-press" aria-label="マチノワ トップへ">
           <img src={`${IMG}/common/logo-foot.webp`} alt="マチノワ Machinowa" width={264} height={85} />
         </Link>
-        <nav className="h2-nav" aria-label="メインメニュー">
-          {PROD_NAV.map(([t, h]) => <Link key={t} href={h} className="h2-press">{t}</Link>)}
-        </nav>
         <div className="h2-head-r">
-          <Link href={PROD_SEARCH} className="h2-hsearch h2-press" aria-label="検索"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.4" fill="none" stroke="#2c6fb0" strokeWidth="2.4" /><path d="m15.4 15.4 5 5" stroke="#2c6fb0" strokeWidth="2.6" strokeLinecap="round" /></svg></Link>
           <div className="h2-menuwrap">
             <button type="button" className="h2-menu h2-press" aria-label="メニュー" aria-expanded={menu} aria-controls="h2-menupanel" onClick={() => setMenu((v) => !v)}><svg viewBox="0 0 20 16" aria-hidden="true"><path d="M2 2h16M2 8h16M2 14h16" stroke="#2c3a5c" strokeWidth="2.2" strokeLinecap="round" /></svg></button>
             <nav id="h2-menupanel" className={`h2-menupanel${menu ? " is-open" : ""}`} aria-label="サイトメニュー" aria-hidden={!menu}>

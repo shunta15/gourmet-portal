@@ -4,7 +4,7 @@ import Slider from "./Slider";
 import { CARD_FEATURE, IMG } from "./const";
 import type { CardPhotos } from "./cards";
 import type { NewsRow } from "./news";
-import { PROD_FOOT } from "./prodData";
+import { PROD_FOOT_COPY } from "./prodData";
 import { CATS } from "./catsData";
 import "./lower.css";
 
@@ -41,9 +41,8 @@ const ph = (k: string, cards?: CardPhotos) => (k === "story" || k === "family" ?
 
 const NEWS_Y = [722, 764, 806, 850];
 
-/** news = 「まちの最新情報」(特集記事の実データ。news.ts の latestNews)。フッターは実在するページだけ(prodData.ts の PROD_FOOT)。 */
+/** news = 「まちの最新情報」(特集記事の実データ。news.ts の latestNews)。フッターは著作表記だけ(prodData.ts の PROD_FOOT_COPY)。 */
 export default function Lower({ news, cards }: { news: NewsRow[]; cards?: CardPhotos }) {
-  const foot = PROD_FOOT;
   const rows = news.slice(0, 4).map((n, i) => ({ src: n.img, date: n.date, t: [n.title], y: NEWS_Y[i], href: n.href }));
   return (
     <>
@@ -79,7 +78,6 @@ export default function Lower({ news, cards }: { news: NewsRow[]; cards?: CardPh
         <div className="h2-a h2-news" data-io-early style={P(697, 692, 451, 201)}>
           <img className="h2-a h2-nicon" style={P(0, 692, 38, 36)} src={`${B}news-icon.webp`} alt="" />
           <b className="h2-a h2-nt" style={P(44, 695, 200, 24)}>まちの最新情報</b>
-          <Link href="/feature" className="h2-a h2-more h2-press" style={P(333, 697, 100, 20)}>もっと見る <span aria-hidden>→</span></Link>
           <ul>
             {rows.map((n, i) => (
               <li key={i} className="h2-a h2-nrow" style={{ ...P(7, n.y, 436, 40), ["--i" as string]: i }}>
@@ -107,18 +105,6 @@ export default function Lower({ news, cards }: { news: NewsRow[]; cards?: CardPh
               <i className="h2-carr" aria-hidden="true">→</i>
             </Link>
           ))}
-          <Link href="/videos" className="h2-a h2-card h2-vcard h2-press" style={{ ...P(876, 902, 266, CH), ["--i" as string]: 3 }}>
-            {/* 写真(card-video.webp・Wikimedia Commons。出典は credits.json)を枠いっぱいに敷き、見出し・説明・「動画で見る」のボタン・再生アイコンは HTML で重ねる(2026-10-21。以前はオーナー作の正方形の画像に文字まで描かれていた)。
-                下 55% の黒→透明のグラデーション(.h2-vshade)で白い文字を読めるようにする。光の輪(.h2-vring)は再生アイコンの中心に重ねる */}
-            <span className="h2-cph h2-vph">
-              <span className="h2-vbox"><img src={`${B}card-video.webp`} alt="" /></span>
-              <span className="h2-vshade" aria-hidden="true" />
-              <i className="h2-vplay" aria-hidden="true"><svg viewBox="0 0 40 40"><circle cx="20" cy="20" r="19" fill="#fff" /><path d="M16 12.500 29 20l-13 7.500Z" fill="#f26a2a" /></svg><i className="h2-vring" /></i>
-              <b className="h2-vt"><span>動画で見つかる</span><span>まちの新しい魅力</span></b>
-              <span className="h2-vsub">まちの魅力を動画でチェック</span>
-              <span className="h2-vbtn"><span>動画で見る</span><em aria-hidden="true">→</em></span>
-            </span>
-          </Link>
         </div>
       </section>
 
@@ -145,11 +131,7 @@ export default function Lower({ news, cards }: { news: NewsRow[]; cards?: CardPh
       <footer className="h2-foot" style={OY(1228 + D)}>
         <img className="h2-a h2-flogo" style={PD(40, 1244, 164, 42)} src={`${IMG}/common/logo-foot.webp`} alt="マチノワ Machinowa" />
         <p className="h2-a h2-fsub" style={PD(219, 1250, 220, 40)}>まちの人・お店・くらしがつながる<br />ローカルポータルサイト</p>
-        <i className="h2-a h2-fvr" style={PD(440, 1245, 1, 55)} />
-        <ul className="h2-a h2-fl" style={PD(502, 1240, 220, 70)}>{foot.l.map(([t, h]) => <li key={t}><Link href={h}>{t}</Link></li>)}</ul>
-        <i className="h2-a h2-fvr" style={PD(743, 1245, 1, 55)} />
-        <ul className="h2-a h2-fl" style={PD(789, 1240, 220, 70)}>{foot.r.map(([t, h]) => <li key={t}><Link href={h}>{t}</Link></li>)}</ul>
-        <p className="h2-a h2-copy" style={PD(291, 1305, 600, 16)}>{foot.copy}</p>
+        <p className="h2-a h2-copy" style={PD(291, 1305, 600, 16)}>{PROD_FOOT_COPY}</p>
       </footer>
     </>
   );

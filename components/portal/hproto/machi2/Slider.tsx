@@ -15,7 +15,7 @@ const B = `${IMG}/lower/`;
  */
 type Slide = {
   img: string; side: "l" | "r"; op: number; col: string; ink?: string;
-  t1: string; t1b: string; t2: string; sub: [string, string]; btn: string; href: string;
+  t1: string; t1b: string; t2: string; sub: [string, string]; btn?: string; href?: string; // btn・href が無いスライドはボタンを出さない(2026-10-26 総合トップから業種以外への行き先 /feature を外した)
 };
 
 // 季節の色は最初の画面の季節の札(hero.css .h2-st-*)と同じ
@@ -23,10 +23,10 @@ const SEASON_SLIDE: Record<Season, Slide> = {
   spring: { img: "sl-s-spring.webp", side: "r", op: 70, col: "#e8648e", t1: "春", t1b: "のまちで、", t2: "新しい好きに出会う。", sub: ["東京・中目黒、目黒川の桜並木へ。", "見頃は3月末から4月初旬が目安。"], btn: "春の特集を見る", href: "/feature/new-nakameguro-walk" },
   summer: { img: "sl-s-summer.webp", side: "r", op: 40, col: "#1f86dc", t1: "夏", t1b: "のまちで、", t2: "浴衣で夜のまちへ。", sub: ["兵庫・城崎温泉、柳並木の川ぞいを", "浴衣で歩く、七つの外湯めぐり。"], btn: "夏の特集を見る", href: "/feature/hyogo-kinosaki-onsen-soto" },
   autumn: { img: "sl-s-autumn.webp", side: "r", op: 45, col: "#e0502a", t1: "秋", t1b: "のまちで、", t2: "紅葉の道をたどろう。", sub: ["大阪・箕面、渓谷ぞいの滝みち。", "紅葉の盛りは11月後半から12月初旬が目安。"], btn: "秋の特集を見る", href: "/feature/osaka-minoo-falls" },
-  winter: { img: "sl-s-winter.webp", side: "r", op: 12, col: "#3aa6d4", t1: "冬", t1b: "のまちで、", t2: "ぬくもりに出会う。", sub: ["湯けむりの町を歩く特集など、", "まち歩きの記事を一覧から探せます。"], btn: "冬の特集を見る", href: "/feature" },
+  winter: { img: "sl-s-winter.webp", side: "r", op: 12, col: "#3aa6d4", t1: "冬", t1b: "のまちで、", t2: "ぬくもりに出会う。", sub: ["湯けむりの町を歩く特集など、", "まち歩きの記事を一覧から探せます。"] },
 };
 const VSL: Slide[] = [
-  { img: "sl-v-gourmet.webp", side: "r", op: 60, col: "#f27b2f", t1: "グルメ", t1b: "で、", t2: "今日の一軒を探そう。", sub: ["ランチ・個室・宴会など、シーン別の", "まとめ記事と街歩きを読めます。"], btn: "グルメの特集を見る", href: "/feature" },
+  { img: "sl-v-gourmet.webp", side: "r", op: 60, col: "#f27b2f", t1: "グルメ", t1b: "で、", t2: "今日の一軒を探そう。", sub: ["ランチ・個室・宴会など、シーン別の", "まとめ記事と街歩きを読めます。"] },
   { img: "sl-v-beauty.webp", side: "r", op: 15, col: "#ee5d8e", t1: "ビューティー", t1b: "で、", t2: "ヘッドスパを知る。", sub: ["鹿児島・上之園町の美容室を紹介。", "カットやカラーのほか、ヘッドスパも。"], btn: "美容室の特集を見る", href: "/beauty/shop/be0001" },
   { img: "sl-v-bodycare.webp", side: "l", op: 10, col: "#4aa84a", t1: "ボディケア", t1b: "で、", t2: "個室の整体を知る。", sub: ["新潟・長岡市の整体サロンを紹介。", "施術はオール個室と案内する店です。"], btn: "整体の特集を見る", href: "/bodycare/shop/bo0018" },
   { img: "sl-v-pet.webp", side: "r", op: 50, col: "#8b6cf0", t1: "ペット", t1b: "と、", t2: "過ごす場所を探す。", sub: ["トリミングやペットホテルなどを、", "種類とエリアから探せます。"], btn: "ペットを見る", href: "/pet" },
@@ -90,7 +90,7 @@ export default function Slider() {
             <img className="h2-slhaze" src={`${B}slide-haze.webp`} alt="" />
             <h2 key={k === 0 ? `h${top.season}` : undefined} className="h2-sh h2-press"><span className="h2-sh1"><b>{s.t1}</b>{s.t1b}</span><span className="h2-sh2">{s.t2}</span></h2>
             <p key={k === 0 ? `p${top.season}` : undefined} className="h2-ssub">{s.sub[0]}<br />{s.sub[1]}</p>
-            <a key={k === 0 ? `a${top.season}` : undefined} className="h2-sbtn h2-press" href={s.href} tabIndex={i === k ? 0 : -1}>{s.btn} <span aria-hidden>→</span></a>
+            {s.href && <a key={k === 0 ? `a${top.season}` : undefined} className="h2-sbtn h2-press" href={s.href} tabIndex={i === k ? 0 : -1}>{s.btn} <span aria-hidden>→</span></a>}
           </div>
         );
       })}

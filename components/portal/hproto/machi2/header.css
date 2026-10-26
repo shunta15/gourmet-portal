@@ -10,7 +10,7 @@
 .h2-nav a { position: relative; padding: calc(3 * var(--u)) 0 calc(5 * var(--u)); }
 .h2-nav a::after { content: ""; position: absolute; left: 0; right: 0; bottom: 0; height: calc(2 * var(--u)); border-radius: 2px; background: #ee5a7a; transform: scaleX(0); transform-origin: left; transition: transform .3s cubic-bezier(.3,1.2,.5,1); }
 .h2-nav a:hover::after { transform: scaleX(1); }
-.h2-head-r { position: absolute; left: calc(810 * var(--u)); top: calc(10 * var(--u)); height: calc(30 * var(--u)); display: flex; align-items: center; gap: calc(9 * var(--u)); }
+.h2-head-r { position: absolute; left: calc(846 * var(--u)); /* 検索アイコン(27 + 隙間 9)を外した分、三本線の位置は今までと同じ */ top: calc(10 * var(--u)); height: calc(30 * var(--u)); display: flex; align-items: center; gap: calc(9 * var(--u)); }
 .h2-hsearch { width: calc(27 * var(--u)); height: calc(27 * var(--u)); border-radius: 50%; background: #fff; border: calc(1.8 * var(--u)) solid #d6a35c; display: grid; place-items: center; box-shadow: 0 calc(1 * var(--u)) calc(4 * var(--u)) rgba(0,0,0,.12); }
 .h2-hsearch svg { width: calc(14 * var(--u)); height: calc(14 * var(--u)); }
 .h2-menu svg { width: calc(17 * var(--u)); height: calc(14 * var(--u)); display: block; }

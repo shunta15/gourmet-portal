@@ -1,12 +1,10 @@
 /* eslint-disable @next/next/no-img-element */
 import { Fragment } from "react";
-import Link from "next/link";
 import { preload } from "react-dom";
 import { IMG } from "./const";
 import SeasonStage from "./SeasonStage";
 import { seasonSrc, type Season } from "./season";
 import { HEAD, P1_ONE, P3_ONE } from "./copy";
-import { PROD_SEARCH } from "./prodData";
 import "./hero.css";
 
 const H = `${IMG}/hero`;
@@ -68,25 +66,6 @@ export default function Hero({ season }: { season: Season }) {
             ))}</span>
           ))}
         </p>
-        <form className="h2-search" role="search" action={PROD_SEARCH}>
-          <svg className="h2-s-ico" viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.6" fill="none" stroke="#7f95b4" strokeWidth="2" /><path d="m15.4 15.4 5 5" stroke="#7f95b4" strokeWidth="2.2" strokeLinecap="round" /></svg>
-          <input type="search" name="q" placeholder="エリア・駅名・お店やスポットの名前などで検索" aria-label="検索" />
-          <button type="submit" className="h2-s-go h2-press"><span>検索</span></button>
-        </form>
-        <div className="h2-pills">
-          <Link href="/map" className="h2-pill h2-p-map h2-press">
-            <svg viewBox="0 0 40 40" aria-hidden="true"><path d="M3 12 13 9l12 3 11-3v21l-11 3-12-3-10 3Z" fill="#fff" stroke="#2f9a5a" strokeWidth="2.6" strokeLinejoin="round" /><path d="M13 9v21M25 12v21" stroke="#2f9a5a" strokeWidth="2.2" /><path d="M20 22s-6-5.4-6-9.6a6 6 0 0 1 12 0C26 16.600 20 22 20 22Z" fill="#2f9a5a" /><circle cx="20" cy="12.300" r="2.300" fill="#fff" /></svg>
-            <span><b>地図から探す</b><small>地図でお店やスポットを見つけよう</small></span>
-          </Link>
-          <Link href="/station" className="h2-pill h2-p-stn h2-press">
-            <svg viewBox="0 0 40 40" aria-hidden="true"><rect x="8" y="4" width="24" height="28" rx="6" fill="#1d6fc4" /><rect x="12" y="9" width="16" height="9" rx="2" fill="#fff" /><circle cx="14" cy="25" r="2.200" fill="#fff" /><circle cx="26" cy="25" r="2.200" fill="#fff" /><path d="M13 32 9 38M27 32l4 6M16 4l1.500-2h5L24 4" stroke="#1d6fc4" strokeWidth="2.600" strokeLinecap="round" fill="none" /></svg>
-            <span><b>駅から探す</b><small>よく利用する駅の周辺から探せる</small></span>
-          </Link>
-          <Link href="/videos" className="h2-pill h2-p-mov h2-press">
-            <svg viewBox="0 0 40 40" aria-hidden="true"><circle cx="20" cy="20" r="18" fill="#f26a2a" /><path d="M16 12.500 29 20l-13 7.500Z" fill="#fff" /></svg>
-            <span><b>動画で探す</b><small>まちの魅力を動画でチェック</small></span>
-          </Link>
-        </div>
       </div>
     </section>
   );
