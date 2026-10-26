@@ -83,3 +83,6 @@ export const onePageUnlistedShopOf = (featureId: string): string | null => (NORE
 
 /** 店 ID → 記事 ID(限定公開の対応だけ) */
 export const onePageUnlistedFeatureOf = (shopId: string): string | null => (NOREN_ONE_PAGE ? FEATURE_OF.get(shopId) ?? null : null);
+
+/** 限定公開の記事が、写真が主役の形で出す記事か(切り替え NOREN_ONE_PAGE に依らない。ID の完全一致) */
+export const isUnlistedPhotoFeature = (featureId: string): boolean => SHOP_OF.has(NFC(featureId));

@@ -130,6 +130,8 @@ export async function loadArticleItems(site: CpSite): Promise<CpArticleItem[]> {
     // 本文(導入か節)が 1 つも残らない店は記事にしない
     const hasBody = lede || p.article.sections.some((s) => cleanLine(s.heading, strict) && firstSentence(s.body, strict));
     if (!hasBody) continue;
+    // 【2026-10-26 試作】店の特集記事は店のページと別ページ。記事が薄い店(見出しつきの節が点検後に 2 つ未満。特集記事のある店は対象外)は、記事のページを作らず店のページだけ
+    if (p.article.sections.filter((s) => cleanLine(s.heading, strict) && cleanParagraphs(s.body, strict).length > 0).length < 2) continue;
     intro.push({ id: p.id, shop, featured: false, title: headline || `${p.name}の紹介`, lede, photo: shop.main });
   }
   const kindOrder = site.kinds.map((k) => k.slug);
