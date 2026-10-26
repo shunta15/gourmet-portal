@@ -1,0 +1,161 @@
+{
+  "key": "tri-life-227",
+  "headline": "長崎県雲仙市小浜町雲仙にある土産物店。明治初期創業で、一丁型の金型で一枚ずつ焼く「純一枚手焼き製法」を今も続ける",
+  "lede": "雲仙市にある「雲仙湯せんぺい 遠江屋 (とおとうみや) 本舗」です。明治初期、木賃宿として創業し、昭和20年代に土産品店を開業、ほどなく湯せんぺいの製造を始めました。現在も一丁型の金型で一枚ずつ焼く「純一枚手焼き製法」を続けています。",
+  "sections": [
+    {
+      "heading": "場所と営業時間",
+      "body": "正式名称は「雲仙温泉 遠江屋本舗」で、長崎県雲仙市小浜町雲仙317にあります。電話番号は0957-73-2155です。営業は木曜定休で、それ以外の曜日は8時30分から19時までです。"
+    },
+    {
+      "heading": "創業の歴史",
+      "body": "遠江屋は明治初期、雲仙地獄にほど近い現在地で旅人や行商人のための木賃宿として創業しました。その後食堂となり、昭和20年代に土産品店を開業し、ほどなく湯せんぺいの製造を始めました。湯せんぺいは、旧島原藩主松平公が考案したものです。"
+    },
+    {
+      "heading": "純一枚手焼き製法",
+      "body": "遠江屋は現在も、一丁型の金型で一枚一枚焼き上げる「純一枚手焼き製法」を残す店です。小麦粉は厳選した2種類の中力粉を使用し、生地には雲仙市内の源泉から職人自らがくみ取った食塩泉を練り込んでいます。"
+    },
+    {
+      "heading": "取り扱う商品",
+      "body": "湯せんぺいのほか、上品なクリームをサンドした温泉ゴーフレット、長崎県産のじゃが芋を白餡とブレンドしたじゃが玉、湯せんぺいのシャリシャリ感を生かしたグラノーラ、ヌガータイプの湯せんぺいチョコバーなど、雲仙の素材を使った菓子を扱っています。"
+    }
+  ],
+  "menus": [
+    {
+      "name": "湯せんぺい"
+    },
+    {
+      "name": "純一枚手焼き湯せんぺい"
+    },
+    {
+      "name": "温泉ゴーフレット"
+    },
+    {
+      "name": "UNZENハイカラセット"
+    },
+    {
+      "name": "じゃが玉"
+    },
+    {
+      "name": "じゃが芋羊羹"
+    },
+    {
+      "name": "湯せんぺいグラノーラ"
+    },
+    {
+      "name": "湯せんぺいチョコバー"
+    }
+  ],
+  "tags": [],
+  "facts": [
+    {
+      "claim": "正式な店名表記は「雲仙温泉 遠江屋本舗」",
+      "source": "https://tohtoumiya.theshop.jp/",
+      "quote": "雲仙温泉 遠江屋本舗",
+      "checkedAt": "2026-10-26"
+    },
+    {
+      "claim": "住所は長崎県雲仙市小浜町雲仙317",
+      "source": "https://maps.google.com/?cid=81602590403749157",
+      "quote": "長崎県雲仙市小浜町雲仙３１７",
+      "checkedAt": "2026-10-26"
+    },
+    {
+      "claim": "電話番号は0957-73-2155",
+      "source": "https://maps.google.com/?cid=81602590403749157",
+      "quote": "0957-73-2155",
+      "checkedAt": "2026-10-26"
+    },
+    {
+      "claim": "木曜日は定休日",
+      "source": "https://maps.google.com/?cid=81602590403749157",
+      "quote": "木: 定休日",
+      "checkedAt": "2026-10-26"
+    },
+    {
+      "claim": "営業時間は8時30分から19時まで",
+      "source": "https://maps.google.com/?cid=81602590403749157",
+      "quote": "08:30–19:00",
+      "checkedAt": "2026-10-26"
+    },
+    {
+      "claim": "遠江屋は明治初期、木賃宿として創業した",
+      "source": "https://tohtoumiya.theshop.jp/about",
+      "quote": "旅人や行商人の疲れを癒す木賃宿として創業しました",
+      "checkedAt": "2026-10-26"
+    },
+    {
+      "claim": "ほどなく湯せんぺいの製造を始めた",
+      "source": "https://tohtoumiya.theshop.jp/about",
+      "quote": "ほどなくして湯せんぺいの製造を始めました",
+      "checkedAt": "2026-10-26"
+    },
+    {
+      "claim": "湯せんぺいは旧島原藩主松平公が考案したもの",
+      "source": "https://tohtoumiya.theshop.jp/",
+      "quote": "旧島原藩主松平公が考案したもの",
+      "checkedAt": "2026-10-26"
+    },
+    {
+      "claim": "遠江屋は現在も一丁型の金型で一枚一枚焼き上げる純一枚手焼き製法を残す店である",
+      "source": "https://tohtoumiya.theshop.jp/about",
+      "quote": "一丁型の金型で一枚一枚湯せんぺいを焼き上げる",
+      "checkedAt": "2026-10-26"
+    },
+    {
+      "claim": "小麦粉は厳選した2種類の中力粉を使用している",
+      "source": "https://tohtoumiya.theshop.jp/about",
+      "quote": "厳選した2種類の中力粉を使用",
+      "checkedAt": "2026-10-26"
+    },
+    {
+      "claim": "生地には職人自らがくみ取った源泉の食塩泉を練り込んでいる",
+      "source": "https://tohtoumiya.theshop.jp/about",
+      "quote": "職人自らがくみ取りに行きます",
+      "checkedAt": "2026-10-26"
+    },
+    {
+      "claim": "温泉ゴーフレットは上品なクリームをサンドしている",
+      "source": "https://tohtoumiya.theshop.jp/",
+      "quote": "上品なクリームをサンドしました",
+      "checkedAt": "2026-10-26"
+    },
+    {
+      "claim": "じゃが玉は長崎県産のじゃが芋を白餡とブレンドしている",
+      "source": "https://tohtoumiya.theshop.jp/",
+      "quote": "長崎県産の美味しいじゃが芋を白餡とブレンド",
+      "checkedAt": "2026-10-26"
+    },
+    {
+      "claim": "湯せんぺいグラノーラは湯せんぺいのシャリシャリ感が特徴",
+      "source": "https://tohtoumiya.theshop.jp/",
+      "quote": "湯せんぺいのシャリシャリ感",
+      "checkedAt": "2026-10-26"
+    },
+    {
+      "claim": "湯せんぺいチョコバーはヌガータイプのチョコバーである",
+      "source": "https://tohtoumiya.theshop.jp/",
+      "quote": "ヌガータイプのお洒落なチョコバー",
+      "checkedAt": "2026-10-26"
+    }
+  ],
+  "sources": [
+    {
+      "label": "公式サイト",
+      "url": "https://tohtoumiya.theshop.jp/"
+    },
+    {
+      "label": "公式サイト(ABOUT)",
+      "url": "https://tohtoumiya.theshop.jp/about"
+    },
+    {
+      "label": "公式サイト(カテゴリ)",
+      "url": "https://tohtoumiya.theshop.jp/categories/834292"
+    },
+    {
+      "label": "Google マップ",
+      "url": "https://maps.google.com/?cid=81602590403749157"
+    }
+  ],
+  "notes": "automation/v2/write.mjs が 2026-10-26 に claude -p --model sonnet で作成。事実の裏取り: 15/16 件(quote が出どころにあるもの)。裏取りに通らなかった facts は載せていない。"
+}

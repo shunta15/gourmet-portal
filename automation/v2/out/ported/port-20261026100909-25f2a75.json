@@ -1,0 +1,41 @@
+{
+  "commit": "25f2a75da3c5b926beb209b3b8ecf47f27678c28",
+  "source": "/Users/shunta/claude/gp-k-auto2",
+  "count": 3,
+  "added": [
+    {
+      "row": 219,
+      "name": "北沢三丁目",
+      "key": "tri-gourmet-219",
+      "vertical": "グルメ",
+      "id": "r733",
+      "articleId": "やき鳥ツギノキタザワ",
+      "shopUrl": "https://machinowa.tokyo/restaurant/r733",
+      "articleUrl": "https://machinowa.tokyo/feature/やき鳥ツギノキタザワ",
+      "sheetUrl": "https://machinowa.tokyo/feature/やき鳥ツギノキタザワ"
+    },
+    {
+      "row": 227,
+      "name": "雲仙湯せんぺい 遠江屋本舗",
+      "key": "tri-life-227",
+      "vertical": "くらし",
+      "id": "li0046",
+      "articleId": "li0046",
+      "shopUrl": "https://machinowa.tokyo/life/shop/li0046",
+      "articleUrl": "https://machinowa.tokyo/life/article/li0046",
+      "sheetUrl": "https://machinowa.tokyo/life/article/li0046"
+    },
+    {
+      "row": 229,
+      "name": "ビア酒場　生",
+      "key": "tri-gourmet-229",
+      "vertical": "グルメ",
+      "id": "r734",
+      "articleId": "生",
+      "shopUrl": "https://machinowa.tokyo/restaurant/r734",
+      "articleUrl": "https://machinowa.tokyo/feature/生",
+      "sheetUrl": "https://machinowa.tokyo/feature/生"
+    }
+  ],
+  "skipped": []
+}
