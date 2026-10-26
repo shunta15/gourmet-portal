@@ -1,0 +1,32 @@
+{
+  "tab": "トリニティアポ",
+  "tabEn": "tri-life",
+  "row": 204,
+  "sheet": {
+    "name": "安国寺",
+    "address": "",
+    "url": "https://www.google.com/search?q=0978-72-1620&sca_esv=9948e7446e21ec55&biw=776&bih=663&sxsrf=APpeQnuAO3O0RDs_Lt6jYrWZR3IZJhC3ZA%3A1792981799350&ei=J7veaqHpFMfDvr0PnbqqwQI&uact=5&oq=0978-72-1620&gs_lp=Egxnd3Mtd2l6LXNlcnAiDDA5NzgtNzItMTYyMEj5A1C9AVi9AXABeACQAQCYAWCgAWCqAQExuAEDyAEA-AEC-AEBmAIBoAIVqAIKwgIHECMY6gIYJ5gDFfEFV42LExH80oKSBwExoAcksgcAuAcAwgcDMy0xyAcIgAgB&sclient=gws-wiz-serp",
+    "type": "寺",
+    "d1": "",
+    "d2": ""
+  },
+  "urlKind": "search",
+  "route": "第1段(verify-gbp.mjs)で確認済み",
+  "verdict": "一致",
+  "verdictReason": "電話が一致／店名: exact(シート「安国寺」/ マップ「安国寺」)",
+  "place": {
+    "name": "安国寺",
+    "address": "大分県国東市国東町安国寺２２４５",
+    "category": "仏教寺院",
+    "lat": 33.561502,
+    "lng": 131.71978,
+    "gbpUrl": "https://maps.google.com/?cid=6076551854910773409",
+    "phone": "0978-72-1620",
+    "website": null,
+    "hours": null,
+    "reserveLinks": [],
+    "statusSignals": [],
+    "closedSignal": false
+  },
+  "fetchedAt": "2026-10-26T08:36:59.004Z"
+}

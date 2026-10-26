@@ -1,0 +1,40 @@
+{
+  "tab": "トリニティアポ",
+  "tabEn": "tri-life",
+  "row": 211,
+  "sheet": {
+    "name": "十楽寺(湖国甲賀三大仏)...",
+    "address": "",
+    "url": "https://www.google.com/search?q=%E5%8D%81%E6%A5%BD%E5%AF%BA%28%E6%B9%96%E5%9B%BD%E7%94%B2%E8%B3%80%E4%B8%89%E5%A4%A7%E4%BB%8F%29...+%E6%BB%8B%E8%B3%80%E7%9C%8C%E7%94%B2%E8%B3%80%E5%B8%82%E5%9C%9F%E5%B1%B1%E7%94%BA%E5%B1%B1%E4%B8%AD%EF%BC%93%EF%BC%95%EF%BC%91+%E8%AA%AD%E3%81%BF&sca_esv=60c478df29d3e95c&rlz=1C1HKFL_jaJP1236JP1236&biw=1188&bih=827&sxsrf=APpeQnv8vPesUITu4_SWXsIYy-XGxJ54AA%3A1792988618026&ei=ytXearKBAYLU1e8P2Pqx4QM&uact=5&oq=%E5%8D%81%E6%A5%BD%E5%AF%BA%28%E6%B9%96%E5%9B%BD%E7%94%B2%E8%B3%80%E4%B8%89%E5%A4%A7%E4%BB%8F%29...+%E6%BB%8B%E8%B3%80%E7%9C%8C%E7%94%B2%E8%B3%80%E5%B8%82%E5%9C%9F%E5%B1%B1%E7%94%BA%E5%B1%B1%E4%B8%AD%EF%BC%93%EF%BC%95%EF%BC%91+%E8%AA%AD%E3%81%BF&gs_lp=Egxnd3Mtd2l6LXNlcnAiVeWNgealveWvuijmuZblm73nlLLos4DkuInlpKfku48pLi4uIOa7i-izgOecjOeUsuizgOW4guWcn-WxseeUuuWxseS4re-8k--8le-8kSDoqq3jgb8yBRAAGO8FMgUQABjvBTIFEAAY7wVIwxxQ4wNYkBpwAXgBkAEAmAFsoAG6BKoBAzUuMbgBA8gBAPgBAZgCB6AC2gTCAgoQABhHGNYEGLADmAMAiAYBkAYKkgcDNi4xoAfEDLIHAzUuMbgH0QTCBwUwLjYuMcgHEYAIAQ&sclient=gws-wiz-serp",
+    "type": "寺",
+    "d1": "",
+    "d2": ""
+  },
+  "urlKind": "search",
+  "route": "第1段(verify-gbp.mjs)で確認済み",
+  "verdict": "一致",
+  "verdictReason": "電話が一致／店名: contains(シート「十楽寺(湖国甲賀三大仏)...」/ マップ「清浄山 十楽寺(湖国甲賀三大仏)」)／住所(検索URL): exact・町名・番地とも一致",
+  "place": {
+    "name": "清浄山 十楽寺(湖国甲賀三大仏)",
+    "address": "滋賀県甲賀市土山町山中３５１",
+    "category": "仏教寺院",
+    "lat": 34.909172,
+    "lng": 136.324385,
+    "gbpUrl": "https://maps.google.com/?cid=12821318119350655243",
+    "phone": "0748-68-0364",
+    "website": "http://www.jyurakuji.jp/",
+    "hours": {
+      "月": "09:00–16:00",
+      "火": "09:00–16:00",
+      "水": "09:00–16:00",
+      "木": "09:00–16:00",
+      "金": "09:00–16:00",
+      "土": "09:00–16:00",
+      "日": "09:00–16:00"
+    },
+    "reserveLinks": [],
+    "statusSignals": [],
+    "closedSignal": false
+  },
+  "fetchedAt": "2026-10-26T08:41:49.967Z"
+}

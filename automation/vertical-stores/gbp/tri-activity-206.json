@@ -1,0 +1,40 @@
+{
+  "tab": "トリニティアポ",
+  "tabEn": "tri-activity",
+  "row": 206,
+  "sheet": {
+    "name": "高山スカイセーリングクラブ",
+    "address": "",
+    "url": "https://www.google.com/search?q=%E9%AB%98%E5%B1%B1%E3%82%B9%E3%82%AB%E3%82%A4%E3%82%BB%E3%83%BC%E3%83%AA%E3%83%B3%E3%82%B0%E3%82%AF%E3%83%A9%E3%83%96%09%E9%AB%98%E5%B1%B1%E5%B8%82%E3%83%BB%E4%B8%B9%E7%94%9F%E5%B7%9D%E3%83%BB%E5%A5%A5%E9%A3%9B%E9%A8%A8&sca_esv=9948e7446e21ec55&biw=822&bih=630&sxsrf=APpeQnsrgHGS8MeVJkpOx6twknAoNBg3EQ%3A1792981632139&ei=gLreaqn5B6OjhvcP44v1gQc&uact=5&oq=%E9%AB%98%E5%B1%B1%E3%82%B9%E3%82%AB%E3%82%A4%E3%82%BB%E3%83%BC%E3%83%AA%E3%83%B3%E3%82%B0%E3%82%AF%E3%83%A9%E3%83%96%09%E9%AB%98%E5%B1%B1%E5%B8%82%E3%83%BB%E4%B8%B9%E7%94%9F%E5%B7%9D%E3%83%BB%E5%A5%A5%E9%A3%9B%E9%A8%A8&gs_lp=Egxnd3Mtd2l6LXNlcnAiSemrmOWxseOCueOCq-OCpOOCu-ODvOODquODs-OCsOOCr-ODqeODlgnpq5jlsbHluILjg7vkuLnnlJ_lt53jg7vlpaXpo5vpqKgyBxAjGOoCGCcyBxAjGOoCGCcyBxAjGOoCGCcyBxAjGOoCGCcyBxAjGOoCGCcyBxAjGOoCGCcyBxAjGOoCGCcyBxAjGOoCGCcyBxAjGOoCGCcyBxAjGOoCGCdI_QhQpANYpANwAXgAkAEAmAEAoAEAqgEAuAEDyAEA-AEC-AEBmAIBoAIHqAIKmAMH8QX4fIugT7dGLJIHATGgBwCyBwC4BwDCBwMyLTHIBwWACAE&sclient=gws-wiz-serp#lpg=cid:CgIgAQ%3D%3D,ik:CAoSFkNJSE0wb2dLRUlDQWdJRGFvZW5pRVE",
+    "type": "体験",
+    "d1": "",
+    "d2": ""
+  },
+  "urlKind": "search",
+  "route": "第1段(verify-gbp.mjs)で確認済み",
+  "verdict": "一致",
+  "verdictReason": "電話が一致／店名: exact(シート「高山スカイセーリングクラブ」/ マップ「高山スカイセーリングクラブ」)",
+  "place": {
+    "name": "高山スカイセーリングクラブ",
+    "address": "岐阜県高山市新宮町３３９１−６",
+    "category": "スポーツ複合施設",
+    "lat": 36.1312819,
+    "lng": 137.2194538,
+    "gbpUrl": "https://maps.google.com/?cid=12744535757556978204",
+    "phone": "090-9339-9008",
+    "website": "https://takayama-skysailing.com/",
+    "hours": {
+      "月": "09:00–17:00",
+      "火": "09:00–17:00",
+      "水": "09:00–17:00",
+      "木": "09:00–17:00",
+      "金": "09:00–17:00",
+      "土": "09:00–17:00",
+      "日": "09:00–17:00"
+    },
+    "reserveLinks": [],
+    "statusSignals": [],
+    "closedSignal": false
+  },
+  "fetchedAt": "2026-10-26T08:38:19.703Z"
+}

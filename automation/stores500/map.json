@@ -2118,5 +2118,15 @@
     "articleId": "MOSH宮古島",
     "sheetName": "Bar MOSH",
     "mapsUrl": "https://maps.google.com/?cid=18284788418056153322"
+  },
+  {
+    "articleId": "居酒屋いっき豊洲店",
+    "sheetName": "居酒屋いっき豊洲店",
+    "mapsUrl": "https://maps.google.com/?cid=16736592234388441724"
+  },
+  {
+    "articleId": "高山お好み焼きあんと",
+    "sheetName": "高山お好み焼き あんと",
+    "mapsUrl": "https://maps.google.com/?cid=14073621503470871259"
   }
 ]

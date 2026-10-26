@@ -1,0 +1,176 @@
+{
+  "key": "tri-life-203",
+  "headline": "大分県国東市国見町岐部にある西山浄土宗の寺院。養老4年（720年）の開基と伝えられ、境内の地蔵堂には大分県指定文化財の仏像が安置されている。",
+  "lede": "国東市にある「西山浄土宗 天地山胎蔵寺」です。養老4年（720年）、仁聞菩薩の開基と伝えられる寺院で、天文二年（1533年）に了閑上人によって西山浄土宗に改宗されました。岐部氏の菩提寺として深い縁があります。",
+  "sections": [
+    {
+      "heading": "場所と連絡先",
+      "body": "住所は大分県国東市国見町岐部1806、電話は0978-83-0302です。大分空港から車で約40分、宇佐駅（JR日豊本線）から車で約50分です。境内は常時開放しており、法要やご相談は電話またはLINEで受け付けています。"
+    },
+    {
+      "heading": "由緒",
+      "body": "養老4年（720年）、仁聞菩薩の開基と伝えられており、天文二年（1533年）に了閑上人によって西山浄土宗に改宗されました。岐部氏の菩提寺として深い縁があり、かつては海に面していたと伝えられています。境内の地蔵堂には、大分県指定文化財の木造地蔵菩薩立像と木造大日如来座像が安置されており、毎年5月の地蔵まつりで開帳されます。"
+    },
+    {
+      "heading": "祈願",
+      "body": "大願成就・良縁吉祥・子宝恵受・試験合格・災厄消除・心願成就・安産祈願の法要をおこなっており、子宝恵受・安産祈願は古くから続けられています。"
+    },
+    {
+      "heading": "納骨堂・宿坊・体験",
+      "body": "境内には納骨堂があり、24時間365日、冷暖房を完備した堂内で参拝できます。宿坊は檀家以外の一般の方も利用でき、風呂・水洗トイレなどの設備があります。体験メニューには、断食をおこなうファスティング体験と、坐禅・勤行・デジタルデトックスなどをおこなう修行体験があります。"
+    }
+  ],
+  "menus": [
+    {
+      "name": "納骨堂"
+    },
+    {
+      "name": "宿坊"
+    },
+    {
+      "name": "ファスティング体験"
+    },
+    {
+      "name": "修行体験"
+    }
+  ],
+  "tags": [
+    {
+      "tag": "体験あり",
+      "factIndex": 14
+    }
+  ],
+  "facts": [
+    {
+      "claim": "住所は大分県国東市国見町岐部1806",
+      "source": "https://maps.google.com/?cid=14544165906720232398",
+      "quote": "大分県国東市国見町岐部１８０６",
+      "checkedAt": "2026-10-26"
+    },
+    {
+      "claim": "電話は0978-83-0302",
+      "source": "https://maps.google.com/?cid=14544165906720232398",
+      "quote": "0978-83-0302",
+      "checkedAt": "2026-10-26"
+    },
+    {
+      "claim": "Google マップの業種表示は仏教寺院",
+      "source": "https://maps.google.com/?cid=14544165906720232398",
+      "quote": "仏教寺院",
+      "checkedAt": "2026-10-26"
+    },
+    {
+      "claim": "養老4年（720年）、仁聞菩薩の開基と伝えられる",
+      "source": "https://workspace-ui-kit-bice-seven.vercel.app/otera",
+      "quote": "養老4年（720年）、仁聞菩薩の開基と伝えられており",
+      "checkedAt": "2026-10-26"
+    },
+    {
+      "claim": "天文二年（1533年）に了閑上人によって西山浄土宗に改宗された",
+      "source": "https://workspace-ui-kit-bice-seven.vercel.app/otera",
+      "quote": "天文二年（1533年）に了閑上人によって西山浄土宗に改宗",
+      "checkedAt": "2026-10-26"
+    },
+    {
+      "claim": "岐部氏の菩提寺として深い縁がある",
+      "source": "https://workspace-ui-kit-bice-seven.vercel.app/otera",
+      "quote": "岐部氏の菩提寺として深い縁があり",
+      "checkedAt": "2026-10-26"
+    },
+    {
+      "claim": "境内の地蔵堂に大分県指定文化財の仏像が安置されている",
+      "source": "https://workspace-ui-kit-bice-seven.vercel.app/otera",
+      "quote": "境内の地蔵堂には、大分県指定文化財である",
+      "checkedAt": "2026-10-26"
+    },
+    {
+      "claim": "安置されているのは木造地蔵菩薩立像と木造大日如来座像",
+      "source": "https://workspace-ui-kit-bice-seven.vercel.app/otera",
+      "quote": "木造地蔵菩薩立像",
+      "checkedAt": "2026-10-26"
+    },
+    {
+      "claim": "毎年5月の地蔵まつりで開帳される",
+      "source": "https://workspace-ui-kit-bice-seven.vercel.app/otera",
+      "quote": "毎年5月の【地蔵まつり】にてご開帳しており",
+      "checkedAt": "2026-10-26"
+    },
+    {
+      "claim": "大願成就・良縁吉祥・子宝恵受・試験合格などの法要をおこなっている",
+      "source": "https://workspace-ui-kit-bice-seven.vercel.app/otera",
+      "quote": "大願成就・良縁吉祥・子宝恵受・試験合格",
+      "checkedAt": "2026-10-26"
+    },
+    {
+      "claim": "子宝恵受・安産祈願を古くからおこなっている",
+      "source": "https://workspace-ui-kit-bice-seven.vercel.app/otera",
+      "quote": "子宝恵受・安産祈願",
+      "checkedAt": "2026-10-26"
+    },
+    {
+      "claim": "納骨堂は24時間365日、冷暖房を完備した堂内で参拝できる",
+      "source": "https://workspace-ui-kit-bice-seven.vercel.app/otera",
+      "quote": "24時間365日、冷暖房を完備した堂内で",
+      "checkedAt": "2026-10-26"
+    },
+    {
+      "claim": "宿坊は檀家以外の一般の方も利用できる",
+      "source": "https://workspace-ui-kit-bice-seven.vercel.app/otera",
+      "quote": "檀家さんだけでなく、一般の方もお気軽にご利用いただけます。",
+      "checkedAt": "2026-10-26"
+    },
+    {
+      "claim": "宿坊には風呂・水洗トイレがある",
+      "source": "https://workspace-ui-kit-bice-seven.vercel.app/otera",
+      "quote": "風呂・水洗トイレ",
+      "checkedAt": "2026-10-26"
+    },
+    {
+      "claim": "ファスティング体験ができる",
+      "source": "https://workspace-ui-kit-bice-seven.vercel.app/otera",
+      "quote": "お寺の静寂な環境の中で、ファスティング（断食）を体験",
+      "checkedAt": "2026-10-26"
+    },
+    {
+      "claim": "修行体験では坐禅・勤行・デジタルデトックスができる",
+      "source": "https://workspace-ui-kit-bice-seven.vercel.app/otera",
+      "quote": "坐禅・勤行・デジタルデトックスなど",
+      "checkedAt": "2026-10-26"
+    },
+    {
+      "claim": "大分空港から車で約40分",
+      "source": "https://workspace-ui-kit-bice-seven.vercel.app/otera",
+      "quote": "大分空港から",
+      "checkedAt": "2026-10-26"
+    },
+    {
+      "claim": "宇佐駅（JR日豊本線）から車で約50分",
+      "source": "https://workspace-ui-kit-bice-seven.vercel.app/otera",
+      "quote": "宇佐駅（JR日豊本線）から",
+      "checkedAt": "2026-10-26"
+    },
+    {
+      "claim": "境内は常時開放している",
+      "source": "https://workspace-ui-kit-bice-seven.vercel.app/otera",
+      "quote": "境内は常時開放しております。",
+      "checkedAt": "2026-10-26"
+    },
+    {
+      "claim": "法要・ご相談は電話またはLINEで受け付けている",
+      "source": "https://workspace-ui-kit-bice-seven.vercel.app/otera",
+      "quote": "法要・ご相談はお電話またはLINEにてご連絡ください。",
+      "checkedAt": "2026-10-26"
+    }
+  ],
+  "sources": [
+    {
+      "label": "公式サイト",
+      "url": "https://workspace-ui-kit-bice-seven.vercel.app/otera"
+    },
+    {
+      "label": "Google マップ",
+      "url": "https://maps.google.com/?cid=14544165906720232398"
+    }
+  ],
+  "notes": "automation/v2/write.mjs が 2026-10-26 に claude -p --model sonnet で作成。事実の裏取り: 20/20 件(quote が出どころにあるもの)。裏取りに通らなかった facts は載せていない。"
+}

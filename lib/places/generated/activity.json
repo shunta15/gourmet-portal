@@ -2617,6 +2617,142 @@
         ],
         "checkedAt": "2026-10-25"
       }
+    },
+    {
+      "id": "ac0020",
+      "vertical": "activity",
+      "category": "mountain-sky",
+      "name": "高山スカイセーリングクラブ",
+      "pref": "gifu",
+      "cityName": "高山市",
+      "address": "岐阜県高山市新宮町3391-6",
+      "lat": 36.1312819,
+      "lng": 137.2194538,
+      "hours": "毎日 09:00 - 17:00",
+      "phone": "090-9339-9008",
+      "url": "https://takayama-skysailing.com/",
+      "website": "https://takayama-skysailing.com/",
+      "mapUrl": "https://maps.google.com/?cid=12744535757556978204",
+      "image": "/_portal/vshops/tri-activity-206/g01.jpg",
+      "images": [
+        "/_portal/vshops/tri-activity-206/g01.jpg",
+        "/_portal/vshops/tri-activity-206/g02.jpg",
+        "/_portal/vshops/tri-activity-206/g03.jpg",
+        "/_portal/vshops/tri-activity-206/g04.jpg",
+        "/_portal/vshops/tri-activity-206/g05.jpg",
+        "/_portal/vshops/tri-activity-206/g06.jpg",
+        "/_portal/vshops/tri-activity-206/g07.jpg",
+        "/_portal/vshops/tri-activity-206/g08.jpg",
+        "/_portal/vshops/tri-activity-206/g09.jpg"
+      ],
+      "photos": [
+        {
+          "path": "/_portal/vshops/tri-activity-206/g01.jpg",
+          "what": "森の中に建つ木造ログハウス風の建物",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 800
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-206/g02.jpg",
+          "what": "雨の中、草の斜面に置かれたグライダーの翼",
+          "kind": "common",
+          "width": 1200,
+          "height": 675
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-206/g03.jpg",
+          "what": "上空から見下ろす高山の町と山並みの景色",
+          "kind": "view",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-206/g04.jpg",
+          "what": "芝生の広場に並ぶ3台の四輪バギー",
+          "kind": "common",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-206/g05.jpg",
+          "what": "草の斜面を飛ぶオレンジ色のパラグライダー",
+          "kind": "view",
+          "width": 1200,
+          "height": 800
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-206/g06.jpg",
+          "what": "雪の残る山並みと町並みを望む景色",
+          "kind": "view",
+          "width": 1200,
+          "height": 795
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-206/g07.jpg",
+          "what": "雪上で一人乗りの雪上車に乗る人と看板",
+          "kind": "common",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-206/g08.jpg",
+          "what": "曇り空の下に広がる緑の草地",
+          "kind": "view",
+          "width": 1200,
+          "height": 675
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-206/g09.jpg",
+          "what": "雪道を走る2台の雪上車と乗る人",
+          "kind": "common",
+          "width": 900,
+          "height": 1200
+        }
+      ],
+      "tags": [
+        "初心者歓迎"
+      ],
+      "article": {
+        "headline": "岐阜県高山市新宮町、原山市民公園内にあるパラグライダーの体験施設。日本ハング・パラグライディング公認インストラクターが指導し、タンデム（二人乗り）での飛行体験ができる",
+        "lede": "高山市にある「高山スカイセーリングクラブ」です。原山市民公園内にあり、パラグライダーのタンデム（二人乗り）飛行体験を、日本ハング・パラグライディング公認インストラクターの指導で行っています。北アルプスの山並みを望みながら飛べるロケーションです。",
+        "sections": [
+          {
+            "heading": "体験の内容",
+            "body": "パラグライダーのタンデム（二人乗り）飛行体験を行っています。パラグライダーは自然の風を利用して空を飛ぶ乗り物で、指導するのは日本ハング・パラグライディング公認インストラクターです。初心者の方でもタンデム（2人乗り）飛行体験ができる案内になっており、北アルプスの山並みを望みながら飛べるロケーションです。四輪バギーの体験も行っています。"
+          },
+          {
+            "heading": "場所とアクセス",
+            "body": "施設は原山市民公園内にあり、住所は岐阜県高山市新宮町3391-6です。最寄りはJR高山本線高山駅で、車で10分の距離です。送迎があり、希望する場合は事前に伝える案内になっています。"
+          }
+        ],
+        "menus": [
+          {
+            "name": "パラグライダー"
+          },
+          {
+            "name": "タンデム（二人乗り）飛行体験"
+          },
+          {
+            "name": "バギー・四輪バギー"
+          }
+        ],
+        "sources": [
+          {
+            "label": "施設情報(アソビュー)",
+            "url": "https://www.asoview.com/base/1346/"
+          },
+          {
+            "label": "地域情報(FM岐阜)",
+            "url": "https://www.fmgifu.com/blog/detail_8939_0_0_201907.html"
+          },
+          {
+            "label": "Google マップ",
+            "url": "https://maps.google.com/?cid=12744535757556978204"
+          }
+        ],
+        "checkedAt": "2026-10-26"
+      }
     }
   ]
 }

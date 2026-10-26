@@ -19721,6 +19721,107 @@ export const ARTICLE_STORES: Restaurant[] = [
       "深夜営業"
     ],
     "featureId": "MOSH宮古島"
+  },
+  {
+    "id": "r723",
+    "name": "居酒屋いっき 豊洲店",
+    "cuisine": "居酒屋",
+    "area": "東京都・江東区",
+    "region": "tokyo",
+    "shape": "square",
+    "image": "/restaurants/teleapo-居酒屋いっき豊洲店/hero.jpg",
+    "heroImages": [
+      "/restaurants/teleapo-居酒屋いっき豊洲店/hero.jpg",
+      "/restaurants/teleapo-居酒屋いっき豊洲店/point1.jpg",
+      "/restaurants/teleapo-居酒屋いっき豊洲店/point2.jpg",
+      "/restaurants/teleapo-居酒屋いっき豊洲店/point4.jpg"
+    ],
+    "gallery": [
+      "/restaurants/teleapo-居酒屋いっき豊洲店/hero.jpg",
+      "/restaurants/teleapo-居酒屋いっき豊洲店/point1.jpg",
+      "/restaurants/teleapo-居酒屋いっき豊洲店/point2.jpg",
+      "/restaurants/teleapo-居酒屋いっき豊洲店/point4.jpg"
+    ],
+    "desc": "東京都江東区の居酒屋。最寄りは豊洲駅から徒歩1分。",
+    "address": "東京都江東区豊洲4丁目1-1",
+    "hours": "毎日 17:00–00:00",
+    "closed": "なし",
+    "seats": "85席",
+    "nearest": "豊洲駅から徒歩1分",
+    "phone": "050-1725-2338",
+    "source": {
+      "label": "Google ビジネスプロフィール",
+      "url": "https://maps.google.com/?cid=16736592234388441724"
+    },
+    "body": [
+      "居酒屋いっき 豊洲店は、東京都江東区にあるお店です。業態は「居酒屋」、所在地は東京都江東区豊洲4丁目1-1、最寄りは豊洲駅から徒歩1分です。マチノワ編集部の特集記事では、「豊洲直送の鮮魚を使った刺身」・「座敷と個室を備えた宴会向けの造り」などを取り上げています。",
+      "営業時間は毎日 17:00–00:00で、定休日はありません。席は85席。営業時間は変わることがあるため、訪問前に公式サイトやSNS、お電話でご確認ください。"
+    ],
+    "highlights": [
+      "豊洲直送の鮮魚を使った刺身",
+      "座敷と個室を備えた宴会向けの造り",
+      "日本酒や焼酎などそろう飲み物",
+      "夜景が見える座敷や掘りごたつ席",
+      "豊洲駅から徒歩1分のアクセス"
+    ],
+    "tags": [
+      "居酒屋",
+      "江東区",
+      "豊洲駅",
+      "宴会",
+      "深夜営業"
+    ],
+    "featureId": "居酒屋いっき豊洲店"
+  },
+  {
+    "id": "r724",
+    "name": "高山お好み焼き あんと",
+    "cuisine": "お好み焼き・もんじゃ",
+    "area": "岐阜県・高山市",
+    "region": "gifu",
+    "shape": "square",
+    "image": "/restaurants/teleapo-高山お好み焼きあんと/hero.jpg",
+    "heroImages": [
+      "/restaurants/teleapo-高山お好み焼きあんと/hero.jpg",
+      "/restaurants/teleapo-高山お好み焼きあんと/point1.jpg",
+      "/restaurants/teleapo-高山お好み焼きあんと/point2.jpg",
+      "/restaurants/teleapo-高山お好み焼きあんと/point3.jpg"
+    ],
+    "gallery": [
+      "/restaurants/teleapo-高山お好み焼きあんと/hero.jpg",
+      "/restaurants/teleapo-高山お好み焼きあんと/point1.jpg",
+      "/restaurants/teleapo-高山お好み焼きあんと/point2.jpg",
+      "/restaurants/teleapo-高山お好み焼きあんと/point3.jpg"
+    ],
+    "desc": "岐阜県高山市のお好み焼き・もんじゃ。",
+    "address": "岐阜県高山市岡本町2丁目106-1",
+    "hours": "月・火・金〜日 11:30–13:45, 17:00–22:00",
+    "closed": "水曜・木曜",
+    "seats": "テーブル3卓・座敷5卓・カウンター6席",
+    "nearest": "—",
+    "phone": "0577-32-1535",
+    "source": {
+      "label": "Google ビジネスプロフィール",
+      "url": "https://maps.google.com/?cid=14073621503470871259"
+    },
+    "body": [
+      "高山お好み焼き あんとは、岐阜県高山市にあるお店です。業態は「お好み焼き・もんじゃ」、所在地は岐阜県高山市岡本町2丁目106-1です。マチノワ編集部の特集記事では、「お好み焼き・もんじゃを看板にした鉄板焼き」・「雪見オムそばなど名物のメニュー」などを取り上げています。",
+      "営業時間は月・火・金〜日 11:30–13:45, 17:00–22:00、定休日は水曜・木曜です。席はテーブル3卓・座敷5卓・カウンター6席。営業時間は変わることがあるため、訪問前に公式サイトやSNS、お電話でご確認ください。"
+    ],
+    "highlights": [
+      "お好み焼き・もんじゃを看板にした鉄板焼き",
+      "雪見オムそばなど名物のメニュー",
+      "テーブル・座敷・カウンターを備えた店内",
+      "岡本町でのアクセスと営業情報"
+    ],
+    "tags": [
+      "お好み焼き・もんじゃ",
+      "お好み焼き店",
+      "高山市",
+      "宴会",
+      "ランチ"
+    ],
+    "featureId": "高山お好み焼きあんと"
   }
 ];
 
@@ -20144,7 +20245,9 @@ export const ARTICLE_STORE_FEATURE_IDS: Record<string, string> = {
   "r719": "お福ちゃん",
   "r720": "NANNAICYA",
   "r721": "ティース",
-  "r722": "MOSH宮古島"
+  "r722": "MOSH宮古島",
+  "r723": "居酒屋いっき豊洲店",
+  "r724": "高山お好み焼きあんと"
 };
 
 /** 特集記事ID → 店舗ID */
@@ -20567,5 +20670,7 @@ export const ARTICLE_STORE_ID_BY_FEATURE: Record<string, string> = {
   "お福ちゃん": "r719",
   "NANNAICYA": "r720",
   "ティース": "r721",
-  "MOSH宮古島": "r722"
+  "MOSH宮古島": "r722",
+  "居酒屋いっき豊洲店": "r723",
+  "高山お好み焼きあんと": "r724"
 };

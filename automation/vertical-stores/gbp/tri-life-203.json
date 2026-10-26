@@ -1,0 +1,32 @@
+{
+  "tab": "トリニティアポ",
+  "tabEn": "tri-life",
+  "row": 203,
+  "sheet": {
+    "name": "胎蔵寺",
+    "address": "",
+    "url": "https://www.google.com/search?q=0978-83-0302&sca_esv=9948e7446e21ec55&biw=776&bih=663&sxsrf=APpeQnvjfGQRNWTl-A7nIMQrMLE_mbc3Sw%3A1792980765766&ei=HbfeaqKeLsPlosUP5Y30-Aw&uact=5&oq=0978-83-0302&gs_lp=Egxnd3Mtd2l6LXNlcnAiDDA5NzgtODMtMDMwMkixBVDRAljRAnABeACQAQCYAV-gAV-qAQExuAEDyAEA-AEC-AEBmAIBoAIVqAIKwgIHECMY6gIYJ8ICDRAjGMkCGPAFGOoCGCeYAxXxBceZTbS55cUMkgcBMaAHJLIHALgHAMIHAzMtMcgHCIAIAQ&sclient=gws-wiz-serp#lpg=cid:CgIgAQ%3D%3D,ik:CAoSF0NJSE0wb2dLRUlDQWdJQ0NfZVR6bEFF&lrd=0x35444246140fa3af:0xc9d741d5786813ce,1,,,,",
+    "type": "寺",
+    "d1": "",
+    "d2": ""
+  },
+  "urlKind": "search",
+  "route": "第1段(verify-gbp.mjs)で確認済み",
+  "verdict": "一致",
+  "verdictReason": "電話が一致／店名: contains(シート「胎蔵寺」/ マップ「西山浄土宗 天地山胎蔵寺」)",
+  "place": {
+    "name": "西山浄土宗 天地山胎蔵寺",
+    "address": "大分県国東市国見町岐部１８０６",
+    "category": "仏教寺院",
+    "lat": 33.6663009,
+    "lng": 131.6301368,
+    "gbpUrl": "https://maps.google.com/?cid=14544165906720232398",
+    "phone": "0978-83-0302",
+    "website": "https://workspace-ui-kit-bice-seven.vercel.app/otera",
+    "hours": null,
+    "reserveLinks": [],
+    "statusSignals": [],
+    "closedSignal": false
+  },
+  "fetchedAt": "2026-10-26T08:36:13.327Z"
+}

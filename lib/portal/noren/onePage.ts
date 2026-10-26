@@ -449,6 +449,8 @@ export const ONE_PAGE_SHOP_OF_FEATURE: Readonly<Record<string, string>> = {
   "NANNAICYA": "r720", // NANNAICYA
   "ティース": "r721", // ティース
   "MOSH宮古島": "r722", // MOSH 宮古島
+  "居酒屋いっき豊洲店": "r723", // 居酒屋いっき 豊洲店
+  "高山お好み焼きあんと": "r724", // 高山お好み焼き あんと
 };
 
 const NFC = (s: string) => s.normalize("NFC");

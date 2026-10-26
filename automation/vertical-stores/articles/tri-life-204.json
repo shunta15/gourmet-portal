@@ -1,0 +1,94 @@
+{
+  "key": "tri-life-204",
+  "headline": "国東市国東町にある禅寺。応永元年(1394)、全国68カ所の安国寺のうち68番目として豊後国に創建され、木造足利尊氏坐像などの重要文化財がある",
+  "lede": "国東市にある「安国寺」です。応永元年(1394)、名僧絶海中津を開山に迎えて建立されたと伝わり、全国68カ所に建立された安国寺のうち68番目、豊後国の安国寺として創建された禅寺です。境内には木造足利尊氏坐像を始め、重要文化財があります。",
+  "sections": [
+    {
+      "heading": "由緒",
+      "body": "安国寺は応永元年(1394)、名僧絶海中津を開山に迎えて建立されたと伝わります。全国68カ所に建立された安国寺のうち、68番目として豊後国の安国寺に創建された禅寺です。宗派は臨済宗妙心寺派、ご本尊は釈迦牟尼如来です。"
+    },
+    {
+      "heading": "木造足利尊氏坐像",
+      "body": "境内には国の重要文化財である木造足利尊氏坐像があり、平成24年9月6日に指定されました。尊氏の分骨墓塔や地蔵寺の本尊延命地蔵尊なども、京都山科地蔵寺から移されて安国寺にあります。"
+    }
+  ],
+  "menus": [],
+  "tags": [],
+  "facts": [
+    {
+      "claim": "住所は大分県国東市国東町安国寺2245",
+      "source": "https://visit-kunisaki.com/spot/%E5%AE%89%E5%9B%BD%E5%AF%BA/",
+      "quote": "国東市国東町安国寺2245",
+      "checkedAt": "2026-10-26"
+    },
+    {
+      "claim": "電話は0978-72-1620",
+      "source": "https://visit-kunisaki.com/spot/%E5%AE%89%E5%9B%BD%E5%AF%BA/",
+      "quote": "0978-72-1620",
+      "checkedAt": "2026-10-26"
+    },
+    {
+      "claim": "応永元年(1394)、名僧絶海中津を開山に迎えて建立されたと伝わる",
+      "source": "https://visit-kunisaki.com/spot/%E5%AE%89%E5%9B%BD%E5%AF%BA/",
+      "quote": "応永元年（1394）、名僧絶海中津を開山に迎えて建立したと伝えられています。",
+      "checkedAt": "2026-10-26"
+    },
+    {
+      "claim": "全国68カ所の安国寺のうち68番目として豊後国の安国寺に創建された",
+      "source": "https://visit-kunisaki.com/spot/%E5%AE%89%E5%9B%BD%E5%AF%BA/",
+      "quote": "全国68カ所に建立された安国寺のうち、68番目に豊後の国の安国寺として創建された禅寺",
+      "checkedAt": "2026-10-26"
+    },
+    {
+      "claim": "宗派は臨済宗妙心寺派",
+      "source": "https://visit-kunisaki.com/spot/%E5%AE%89%E5%9B%BD%E5%AF%BA/",
+      "quote": "臨済宗妙心寺派",
+      "checkedAt": "2026-10-26"
+    },
+    {
+      "claim": "ご本尊は釈迦牟尼如来",
+      "source": "https://visit-kunisaki.com/spot/%E5%AE%89%E5%9B%BD%E5%AF%BA/",
+      "quote": "釈迦牟尼如来",
+      "checkedAt": "2026-10-26"
+    },
+    {
+      "claim": "境内には木造足利尊氏坐像を始め、重要文化財がある",
+      "source": "https://visit-kunisaki.com/spot/%E5%AE%89%E5%9B%BD%E5%AF%BA/",
+      "quote": "木造足利尊氏坐像を始め、重要文化財を有しています。",
+      "checkedAt": "2026-10-26"
+    },
+    {
+      "claim": "木造足利尊氏坐像は平成24年9月6日に国の重要文化財に指定された",
+      "source": "https://www.city.kunisaki.oita.jp/soshiki/bunkazai/bukazaiankokuji.html",
+      "quote": "平成24年9月6日",
+      "checkedAt": "2026-10-26"
+    },
+    {
+      "claim": "尊氏の分骨墓塔や地蔵寺の本尊延命地蔵尊なども京都山科地蔵寺から移されて安国寺にある",
+      "source": "https://www.city.kunisaki.oita.jp/soshiki/bunkazai/bukazaiankokuji.html",
+      "quote": "京都山科地蔵寺から移されて安国寺にある",
+      "checkedAt": "2026-10-26"
+    },
+    {
+      "claim": "Googleマップの業種表示は仏教寺院",
+      "source": "https://maps.google.com/?cid=6076551854910773409",
+      "quote": "仏教寺院",
+      "checkedAt": "2026-10-26"
+    }
+  ],
+  "sources": [
+    {
+      "label": "国東市観光協会",
+      "url": "https://visit-kunisaki.com/spot/%E5%AE%89%E5%9B%BD%E5%AF%BA/"
+    },
+    {
+      "label": "国東市公式サイト(文化財)",
+      "url": "https://www.city.kunisaki.oita.jp/soshiki/bunkazai/bukazaiankokuji.html"
+    },
+    {
+      "label": "Google マップ",
+      "url": "https://maps.google.com/?cid=6076551854910773409"
+    }
+  ],
+  "notes": "automation/v2/write.mjs が 2026-10-26 に claude -p --model sonnet で作成。事実の裏取り: 10/10 件(quote が出どころにあるもの)。裏取りに通らなかった facts は載せていない。"
+}

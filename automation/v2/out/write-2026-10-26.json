@@ -3,8 +3,8 @@
     "date": "2026-10-26",
     "startedAt": "2026-10-26T06:12:17.040Z",
     "verifyFile": "automation/v2/out/verify-2026-10-26.json",
-    "args": "--only-row 183,193",
-    "updatedAt": "2026-10-26T09:04:10.155Z"
+    "args": "--only-row 204,206,213",
+    "updatedAt": "2026-10-26T09:14:04.378Z"
   },
   "environment": null,
   "results": {
@@ -1471,180 +1471,377 @@
       "row": 202,
       "name": "四條畷神社",
       "vertical": "くらし",
-      "status": "準備のみ",
-      "stage": "prepared",
+      "status": "成功",
+      "stage": "done",
       "startedAt": "2026-10-26T08:35:09.915Z",
       "seconds": {
-        "total": 47
+        "total": 0
       },
       "photos": {
         "candidates": 23,
         "maps": 10,
         "official": 13,
-        "rejectedByMachine": 5
-      }
+        "rejectedByMachine": 5,
+        "used": 19,
+        "emptyFrames": 0
+      },
+      "check": {
+        "rewrote": false,
+        "shapeProblems": [],
+        "sentenceProblems": 0,
+        "facts": {
+          "total": 23,
+          "verified": 23
+        }
+      },
+      "placeId": "li0037",
+      "featureInGenerated": false,
+      "featureNote": null,
+      "urls": {
+        "shop": "/life/shop/li0037",
+        "article": "/life/article/li0037"
+      },
+      "finishedAt": "2026-10-26T09:04:45.852Z"
     },
     "tri-life-203": {
       "key": "tri-life-203",
       "row": 203,
       "name": "胎蔵寺",
       "vertical": "くらし",
-      "status": "準備のみ",
-      "stage": "prepared",
+      "status": "成功",
+      "stage": "done",
       "startedAt": "2026-10-26T08:35:56.937Z",
       "seconds": {
-        "total": 49
+        "total": 0
       },
       "photos": {
         "candidates": 28,
         "maps": 10,
         "official": 18,
-        "rejectedByMachine": 0
-      }
+        "rejectedByMachine": 0,
+        "used": 28,
+        "emptyFrames": 0
+      },
+      "check": {
+        "rewrote": false,
+        "shapeProblems": [],
+        "sentenceProblems": 0,
+        "facts": {
+          "total": 20,
+          "verified": 20
+        }
+      },
+      "placeId": "li0038",
+      "featureInGenerated": false,
+      "featureNote": null,
+      "urls": {
+        "shop": "/life/shop/li0038",
+        "article": "/life/article/li0038"
+      },
+      "finishedAt": "2026-10-26T09:04:46.008Z"
     },
     "tri-life-204": {
       "key": "tri-life-204",
       "row": 204,
       "name": "安国寺",
       "vertical": "くらし",
-      "status": "準備のみ",
-      "stage": "prepared",
+      "status": "成功",
+      "stage": "done",
       "startedAt": "2026-10-26T08:36:45.980Z",
       "seconds": {
-        "total": 34
+        "total": 2,
+        "claude": 40
       },
       "photos": {
         "candidates": 10,
         "maps": 10,
         "official": 0,
-        "rejectedByMachine": 0
-      }
+        "rejectedByMachine": 0,
+        "used": 8,
+        "emptyFrames": 0
+      },
+      "check": {
+        "rewrote": false,
+        "shapeProblems": [],
+        "sentenceProblems": 0,
+        "facts": {
+          "total": 10,
+          "verified": 10
+        }
+      },
+      "checkDetail": [
+        "article.sections[0].body「Googleマップの分類では仏教寺院です。」Q:Googleマップの分類では"
+      ],
+      "placeId": "li0044",
+      "featureInGenerated": false,
+      "featureNote": null,
+      "urls": {
+        "shop": "/life/shop/li0044",
+        "article": "/life/article/li0044"
+      },
+      "finishedAt": "2026-10-26T09:14:01.130Z"
     },
     "tri-life-205": {
       "key": "tri-life-205",
       "row": 205,
       "name": "大阪護國神社",
       "vertical": "くらし",
-      "status": "準備のみ",
-      "stage": "prepared",
+      "status": "成功",
+      "stage": "done",
       "startedAt": "2026-10-26T08:37:19.858Z",
       "seconds": {
-        "total": 45
+        "total": 53,
+        "claude": 53
       },
       "photos": {
         "candidates": 15,
         "maps": 10,
         "official": 5,
-        "rejectedByMachine": 13
-      }
+        "rejectedByMachine": 13,
+        "used": 14,
+        "emptyFrames": 0
+      },
+      "check": {
+        "rewrote": true,
+        "shapeProblems": [],
+        "sentenceProblems": 0,
+        "facts": {
+          "total": 16,
+          "verified": 16
+        }
+      },
+      "placeId": "li0039",
+      "featureInGenerated": false,
+      "featureNote": null,
+      "urls": {
+        "shop": "/life/shop/li0039",
+        "article": "/life/article/li0039"
+      },
+      "finishedAt": "2026-10-26T09:06:19.313Z"
     },
     "tri-activity-206": {
       "key": "tri-activity-206",
       "row": 206,
       "name": "高山スカイセーリングクラブ",
       "vertical": "アクティビティ",
-      "status": "準備のみ",
-      "stage": "prepared",
+      "status": "成功",
+      "stage": "done",
       "startedAt": "2026-10-26T08:38:05.078Z",
       "seconds": {
-        "total": 45
+        "total": 2
       },
       "photos": {
         "candidates": 13,
         "maps": 10,
         "official": 3,
-        "rejectedByMachine": 1
-      }
+        "rejectedByMachine": 1,
+        "used": 9,
+        "emptyFrames": 0
+      },
+      "check": {
+        "rewrote": false,
+        "shapeProblems": [],
+        "sentenceProblems": 0,
+        "facts": {
+          "total": 12,
+          "verified": 12
+        }
+      },
+      "placeId": "ac0020",
+      "featureInGenerated": true,
+      "featureNote": null,
+      "urls": {
+        "shop": "/activity/shop/ac0020",
+        "article": "/activity/article/ac0020"
+      },
+      "finishedAt": "2026-10-26T09:14:02.742Z"
     },
     "tri-life-207": {
       "key": "tri-life-207",
       "row": 207,
       "name": "八坂神社",
       "vertical": "くらし",
-      "status": "準備のみ",
-      "stage": "prepared",
+      "status": "成功",
+      "stage": "done",
       "startedAt": "2026-10-26T08:38:50.500Z",
       "seconds": {
-        "total": 42
+        "total": 0
       },
       "photos": {
         "candidates": 12,
         "maps": 10,
         "official": 2,
-        "rejectedByMachine": 16
-      }
+        "rejectedByMachine": 16,
+        "used": 11,
+        "emptyFrames": 0
+      },
+      "check": {
+        "rewrote": false,
+        "shapeProblems": [],
+        "sentenceProblems": 0,
+        "facts": {
+          "total": 7,
+          "verified": 7
+        }
+      },
+      "placeId": "li0040",
+      "featureInGenerated": false,
+      "featureNote": null,
+      "urls": {
+        "shop": "/life/shop/li0040",
+        "article": "/life/article/li0040"
+      },
+      "finishedAt": "2026-10-26T09:06:19.460Z"
     },
     "tri-life-208": {
       "key": "tri-life-208",
       "row": 208,
       "name": "日吉神社",
       "vertical": "くらし",
-      "status": "準備のみ",
-      "stage": "prepared",
+      "status": "成功",
+      "stage": "done",
       "startedAt": "2026-10-26T08:39:32.929Z",
       "seconds": {
-        "total": 38
+        "total": 0
       },
       "photos": {
         "candidates": 10,
         "maps": 10,
         "official": 0,
-        "rejectedByMachine": 18
-      }
+        "rejectedByMachine": 18,
+        "used": 9,
+        "emptyFrames": 0
+      },
+      "check": {
+        "rewrote": false,
+        "shapeProblems": [],
+        "sentenceProblems": 0,
+        "facts": {
+          "total": 21,
+          "verified": 21
+        }
+      },
+      "placeId": "li0041",
+      "featureInGenerated": false,
+      "featureNote": null,
+      "urls": {
+        "shop": "/life/shop/li0041",
+        "article": "/life/article/li0041"
+      },
+      "finishedAt": "2026-10-26T09:06:19.602Z"
     },
     "tri-life-209": {
       "key": "tri-life-209",
       "row": 209,
       "name": "飯津佐和乃神社",
       "vertical": "くらし",
-      "status": "準備のみ",
-      "stage": "prepared",
+      "status": "成功",
+      "stage": "done",
       "startedAt": "2026-10-26T08:40:11.236Z",
       "seconds": {
-        "total": 42
+        "total": 35,
+        "claude": 35
       },
       "photos": {
         "candidates": 13,
         "maps": 10,
         "official": 3,
-        "rejectedByMachine": 15
-      }
+        "rejectedByMachine": 15,
+        "used": 7,
+        "emptyFrames": 0
+      },
+      "check": {
+        "rewrote": true,
+        "shapeProblems": [],
+        "sentenceProblems": 0,
+        "facts": {
+          "total": 5,
+          "verified": 5
+        }
+      },
+      "placeId": "li0042",
+      "featureInGenerated": false,
+      "featureNote": null,
+      "urls": {
+        "shop": "/life/shop/li0042",
+        "article": "/life/article/li0042"
+      },
+      "finishedAt": "2026-10-26T09:06:54.326Z"
     },
     "tri-beauty-210": {
       "key": "tri-beauty-210",
       "row": 210,
       "name": "Ｍ’s labo. エムズラボ",
       "vertical": "ビューティー",
-      "status": "準備のみ",
-      "stage": "prepared",
+      "status": "成功",
+      "stage": "done",
       "startedAt": "2026-10-26T08:40:53.209Z",
       "seconds": {
-        "total": 42
+        "total": 0
       },
       "photos": {
         "candidates": 15,
         "maps": 9,
         "official": 6,
-        "rejectedByMachine": 13
-      }
+        "rejectedByMachine": 13,
+        "used": 11,
+        "emptyFrames": 0
+      },
+      "check": {
+        "rewrote": false,
+        "shapeProblems": [],
+        "sentenceProblems": 0,
+        "facts": {
+          "total": 21,
+          "verified": 21
+        }
+      },
+      "placeId": "be0107",
+      "featureInGenerated": false,
+      "featureNote": null,
+      "urls": {
+        "shop": "/beauty/shop/be0107",
+        "article": null
+      },
+      "finishedAt": "2026-10-26T09:06:54.464Z"
     },
     "tri-life-211": {
       "key": "tri-life-211",
       "row": 211,
       "name": "十楽寺(湖国甲賀三大仏)...",
       "vertical": "くらし",
-      "status": "準備のみ",
-      "stage": "prepared",
+      "status": "成功",
+      "stage": "done",
       "startedAt": "2026-10-26T08:41:35.237Z",
       "seconds": {
-        "total": 44
+        "total": 45,
+        "claude": 45
       },
       "photos": {
         "candidates": 10,
         "maps": 10,
         "official": 0,
-        "rejectedByMachine": 18
-      }
+        "rejectedByMachine": 18,
+        "used": 10,
+        "emptyFrames": 0
+      },
+      "check": {
+        "rewrote": true,
+        "shapeProblems": [],
+        "sentenceProblems": 0,
+        "facts": {
+          "total": 18,
+          "verified": 18
+        }
+      },
+      "placeId": "li0043",
+      "featureInGenerated": false,
+      "featureNote": null,
+      "urls": {
+        "shop": "/life/shop/li0043",
+        "article": "/life/article/li0043"
+      },
+      "finishedAt": "2026-10-26T09:07:39.576Z"
     },
     "tri-gourmet-212": {
       "key": "tri-gourmet-212",
@@ -1652,18 +1849,39 @@
       "name": "居酒屋いっき豊洲店",
       "vertical": "グルメ",
       "articleId": "居酒屋いっき豊洲店",
-      "status": "準備のみ",
-      "stage": "prepared",
+      "status": "成功",
+      "stage": "done",
       "startedAt": "2026-10-26T08:42:19.162Z",
       "seconds": {
-        "total": 41
+        "total": 52,
+        "claude": 51
       },
       "photos": {
         "candidates": 11,
         "maps": 10,
         "official": 1,
-        "rejectedByMachine": 1
-      }
+        "rejectedByMachine": 1,
+        "used": 4,
+        "emptyFrames": 2
+      },
+      "check": {
+        "rewrote": true,
+        "shapeProblems": [],
+        "sentenceProblems": 0,
+        "facts": {
+          "total": 20,
+          "verified": 20
+        }
+      },
+      "storeId": "r723",
+      "onePage": "表に追加(/feature/<記事ID> は /restaurant/<店ID> へ転送)",
+      "storeBuilt": true,
+      "storeNote": null,
+      "urls": {
+        "article": "/feature/居酒屋いっき豊洲店",
+        "shop": "/restaurant/r723"
+      },
+      "finishedAt": "2026-10-26T09:08:31.126Z"
     },
     "tri-gourmet-213": {
       "key": "tri-gourmet-213",
@@ -1671,18 +1889,38 @@
       "name": "高山お好み焼き あんと",
       "vertical": "グルメ",
       "articleId": "高山お好み焼きあんと",
-      "status": "準備のみ",
-      "stage": "prepared",
+      "status": "成功",
+      "stage": "done",
       "startedAt": "2026-10-26T08:42:59.850Z",
       "seconds": {
-        "total": 32
+        "total": 2
       },
       "photos": {
         "candidates": 10,
         "maps": 10,
         "official": 0,
-        "rejectedByMachine": 0
-      }
+        "rejectedByMachine": 0,
+        "used": 4,
+        "emptyFrames": 1
+      },
+      "check": {
+        "rewrote": false,
+        "shapeProblems": [],
+        "sentenceProblems": 0,
+        "facts": {
+          "total": 12,
+          "verified": 12
+        }
+      },
+      "storeId": "r724",
+      "onePage": "表に追加(/feature/<記事ID> は /restaurant/<店ID> へ転送)",
+      "storeBuilt": true,
+      "storeNote": null,
+      "urls": {
+        "article": "/feature/高山お好み焼きあんと",
+        "shop": "/restaurant/r724"
+      },
+      "finishedAt": "2026-10-26T09:14:04.376Z"
     },
     "tri-life-214": {
       "key": "tri-life-214",

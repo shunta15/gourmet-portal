@@ -1,0 +1,72 @@
+{
+  "key": "tri-life-207",
+  "headline": "大阪府池田市神田にある神社。通称は「早苗の森・神田の宮」で、神社本庁に加盟する",
+  "lede": "池田市にある「八坂神社」です。通称は「早苗の森・神田の宮」といい、神社本庁に加盟しています。阪急宝塚線池田駅から南へ1kmの場所にあります。",
+  "sections": [
+    {
+      "heading": "名称と由緒",
+      "body": "正式名称は八坂神社(やさかじんじゃ)で、通称は「早苗の森・神田の宮」といいます。神社本庁に加盟する神社です。"
+    },
+    {
+      "heading": "場所と連絡先",
+      "body": "鎮座地は池田市神田4-7-1です。阪急宝塚線池田駅から南へ1kmの場所にあります。電話は072-751-3790です。"
+    }
+  ],
+  "menus": [],
+  "tags": [],
+  "facts": [
+    {
+      "claim": "名称は八坂神社(やさかじんじゃ)",
+      "source": "https://www.osaka-jinjacho.jp/funai_jinja/dai1shibu/ikeda-city/01006yasakajinja.html",
+      "quote": "八坂神社（やさかじんじゃ）",
+      "checkedAt": "2026-10-26"
+    },
+    {
+      "claim": "通称は早苗の森・神田の宮",
+      "source": "https://www.osaka-jinjacho.jp/funai_jinja/dai1shibu/ikeda-city/01006yasakajinja.html",
+      "quote": "早苗の森・神田の宮",
+      "checkedAt": "2026-10-26"
+    },
+    {
+      "claim": "鎮座地は池田市神田4-7-1",
+      "source": "https://www.osaka-jinjacho.jp/funai_jinja/dai1shibu/ikeda-city/01006yasakajinja.html",
+      "quote": "池田市神田4-7-1",
+      "checkedAt": "2026-10-26"
+    },
+    {
+      "claim": "阪急宝塚線池田駅から南へ1km",
+      "source": "https://www.osaka-jinjacho.jp/funai_jinja/dai1shibu/ikeda-city/01006yasakajinja.html",
+      "quote": "阪急宝塚線池田駅南へ1ｋｍ",
+      "checkedAt": "2026-10-26"
+    },
+    {
+      "claim": "電話は072-751-3790",
+      "source": "https://www.osaka-jinjacho.jp/funai_jinja/dai1shibu/ikeda-city/01006yasakajinja.html",
+      "quote": "Tel.072-751-3790",
+      "checkedAt": "2026-10-26"
+    },
+    {
+      "claim": "神社本庁に加盟する神社",
+      "source": "https://www.osaka-jinjacho.jp/funai_jinja/dai1shibu/ikeda-city/01006yasakajinja.html",
+      "quote": "神社本庁加盟神社",
+      "checkedAt": "2026-10-26"
+    },
+    {
+      "claim": "営業は24時間営業",
+      "source": "https://maps.google.com/?cid=15441250696571800482",
+      "quote": "24時間営業",
+      "checkedAt": "2026-10-26"
+    }
+  ],
+  "sources": [
+    {
+      "label": "公式サイト",
+      "url": "https://www.osaka-jinjacho.jp/funai_jinja/dai1shibu/ikeda-city/01006yasakajinja.html"
+    },
+    {
+      "label": "Google マップ",
+      "url": "https://maps.google.com/?cid=15441250696571800482"
+    }
+  ],
+  "notes": "automation/v2/write.mjs が 2026-10-26 に claude -p --model sonnet で作成。事実の裏取り: 7/7 件(quote が出どころにあるもの)。裏取りに通らなかった facts は載せていない。"
+}
