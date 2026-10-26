@@ -470,4 +470,9 @@ function main() {
   }
 }
 
-main();
+try {
+  main();
+} catch (e) {
+  console.error("失敗: " + e.message);
+  process.exit(1);
+}
