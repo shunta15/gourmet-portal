@@ -3,8 +3,8 @@
     "date": "2026-10-26",
     "startedAt": "2026-10-26T06:12:17.040Z",
     "verifyFile": "automation/v2/out/verify-2026-10-26.json",
-    "args": "--only-row 214,228",
-    "updatedAt": "2026-10-26T09:19:36.085Z"
+    "args": "--only-row 84,143",
+    "updatedAt": "2026-10-26T09:20:09.654Z"
   },
   "environment": null,
   "results": {
@@ -618,8 +618,8 @@
       "row": 143,
       "name": "便利屋 愛三和",
       "vertical": "くらし",
-      "status": "準備のみ",
-      "stage": "prepared",
+      "status": "失敗",
+      "stage": "claude",
       "startedAt": "2026-10-26T06:23:17.732Z",
       "seconds": {
         "total": 0
@@ -631,7 +631,7 @@
         "rejectedByMachine": 0
       },
       "memo": "写真の候補が 0 枚(Google マップ・公式サイトとも取れなかった)。写真なしで続ける",
-      "reason": "書き手が失敗の出口で終了: 公式サイトの文字がタイトル1行のみで、業務内容などの具体的な事実が無く、写真候補も0枚のため、記事を書くための材料が不足している"
+      "reason": "書き手が失敗の出口で終了: 公式サイトの文字がタイトルタグ1行のみで本文が無く、Google マップの情報も店名・住所・電話・営業時間・業種表示(便利屋)のみ。具体的なサービス内容を示す事実が無いため、事実だけで記事の節を書けない。"
     },
     "tri-life-145": {
       "key": "tri-life-145",
@@ -2300,8 +2300,8 @@
       "name": "宿カフェ Hale Liko",
       "vertical": "グルメ",
       "articleId": "宿カフェHaleLiko",
-      "status": "準備のみ",
-      "stage": "prepared",
+      "status": "失敗",
+      "stage": "claude",
       "startedAt": "2026-10-26T08:50:44.147Z",
       "seconds": {
         "total": 0
@@ -2311,7 +2311,8 @@
         "maps": 10,
         "official": 0,
         "rejectedByMachine": 0
-      }
+      },
+      "reason": "書き手が失敗の出口で終了: 公式サイトの文字が取れておらず、Google マップにも営業時間の情報が無い。WebSearch・WebFetchでも店名・住所と一致する裏付け可能な出どころ(公式SNS・地域情報サイト・新聞記事など)が見つからず、事実が店名・住所・電話番号・業種表示のみにとどまるため、記事に必要な事実量(POINT 3個分)を確保できない。"
     },
     "tri-stay-135": {
       "key": "tri-stay-135",
