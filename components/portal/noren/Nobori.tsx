@@ -1,6 +1,6 @@
 "use client";
 import Link from "next/link";
-import { sized } from "@/lib/imageUrl";
+import { sizedBgStyle } from "@/lib/imageUrl";
 import { useEffect, useRef, useState } from "react";
 import { regionHref } from "@/lib/portal/noren/areaLinks";
 
@@ -92,7 +92,7 @@ export default function Nobori({ flags, total, shopBase }: { flags: FlagProp[]; 
               aria-label={`${f.name}（${f.count}軒）`}
             >
               <i className="vN-nb-bar" />
-              {f.shop && <span className="vN-nb-ph" style={{ backgroundImage: `url(${sized(f.shop.img, 480)})` }} />}
+              {f.shop && <span className="vN-nb-ph" style={sizedBgStyle(f.shop.img, 900)} />}
               <span className="vN-nb-wv" />
               <b>{f.name}</b>
               <span className="vN-nb-c">
