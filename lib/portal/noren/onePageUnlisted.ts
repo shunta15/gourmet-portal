@@ -60,6 +60,16 @@ export const ONE_PAGE_UNLISTED_SHOP_OF_FEATURE: Readonly<Record<string, string>>
   "MOSH宮古島": "r722", // MOSH 宮古島
   "NANNAICYA": "r720", // NANNAICYA
   "ティース": "r721", // ティース
+  "居酒屋いっき豊洲店": "r723", // 居酒屋いっき 豊洲店
+  "高山お好み焼きあんと": "r724", // 高山お好み焼き あんと
+  "食堂cafeまんざいらく": "r725", // 食堂cafeまんざいらく
+  "てんぷら天英": "r726", // てんぷら天英
+  "ジンギスカン日光": "r727", // ジンギスカン日光
+  "焼焼きんぐ": "r728", // 焼焼 きんぐ
+  "音羽寿司": "r729", // 音羽寿司
+  "割烹天野": "r730", // 割烹天野
+  "麺sBLAND文蔵BLACK": "r731", // 麺'sBLAND 文蔵BLACK
+  "創作鉄板一Hajime": "r732", // 創作鉄板一 Hajime
 };
 
 const NFC = (s: string) => s.normalize("NFC");

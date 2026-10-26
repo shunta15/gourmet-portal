@@ -1,0 +1,210 @@
+{
+  "key": "tri-beauty-210",
+  "headline": "愛媛県松山市南久米町にある、完全予約制のネイルサロン。ワンカラーの施術に加え、アニメや漫画のキャラクターの絵柄を描く痛ネイルに対応している。",
+  "lede": "松山市にある「Ｍ’s labo. エムズラボ」です。完全予約制のネイルサロンで、ワンカラーなどの基本的なアートのほか、アニメや漫画のキャラクターの絵柄を描く痛ネイルにも対応しています。最寄りは久米駅で、徒歩５分の場所にあります。",
+  "sections": [
+    {
+      "heading": "アクセスと連絡先",
+      "body": "最寄りは久米駅で、徒歩５分の距離です。駐車場は⑦⑨⑪のいずれかに停めます。完全予約制のため、電話090-2247-0238での連絡が必要です。最終受付は18時00分で、定休日は水曜日です。"
+    },
+    {
+      "heading": "メニューの内容",
+      "body": "メニューにはハンドとフットのワンカラー、ストーンやスタッズを使ったアート、3Dアートがあります。アニメや漫画のキャラクターの絵柄を描く痛ネイルやネイルチップの注文にも対応し、メンズネイルの施術も行っています。"
+    },
+    {
+      "heading": "店の特色",
+      "body": "施術を担当するのはオーナーネイリストの石丸愛美さんです。ナチュラルなネイルアートを中心に、松山市内でも珍しい痛ネイルの施術も行っています。ギャラリーにはハンドネイルやフットネイルの作品例があります。"
+    }
+  ],
+  "menus": [
+    {
+      "name": "HAND NAIL ワンカラー"
+    },
+    {
+      "name": "FOOT NAIL ワンカラー"
+    },
+    {
+      "name": "HAND/FOOT アート（1本）"
+    },
+    {
+      "name": "HAND/FOOT 痛ネイル（1本）"
+    },
+    {
+      "name": "HAND/FOOT ストーン/スタッズ等（1個）"
+    },
+    {
+      "name": "ハンドケア+クリアジェル"
+    },
+    {
+      "name": "ネイルチップ"
+    },
+    {
+      "name": "HAND/FOOT 3Dアート（1本）"
+    }
+  ],
+  "tags": [
+    {
+      "tag": "駅近",
+      "factIndex": 3
+    },
+    {
+      "tag": "メンズ歓迎",
+      "factIndex": 13
+    }
+  ],
+  "facts": [
+    {
+      "claim": "業種はネイルサロン",
+      "source": "https://maps.google.com/?cid=10180198837453230306",
+      "quote": "ネイルサロン",
+      "checkedAt": "2026-10-26"
+    },
+    {
+      "claim": "完全予約制で営業している",
+      "source": "https://ms-labo-77.jp/access/",
+      "quote": "完全予約制",
+      "checkedAt": "2026-10-26"
+    },
+    {
+      "claim": "痛ネイルと呼ばれるアートに対応している",
+      "source": "https://ms-labo-77.jp/",
+      "quote": "痛ネイル",
+      "checkedAt": "2026-10-26"
+    },
+    {
+      "claim": "最寄りは久米駅で徒歩５分",
+      "source": "https://ms-labo-77.jp/access/",
+      "quote": "久米駅より徒歩５分",
+      "checkedAt": "2026-10-26"
+    },
+    {
+      "claim": "駐車場は⑦⑨⑪のいずれかを利用する",
+      "source": "https://ms-labo-77.jp/access/",
+      "quote": "駐車場⑦⑨⑪のいずれかにお停め下さい！",
+      "checkedAt": "2026-10-26"
+    },
+    {
+      "claim": "電話番号は090-2247-0238",
+      "source": "https://ms-labo-77.jp/",
+      "quote": "090-2247-0238",
+      "checkedAt": "2026-10-26"
+    },
+    {
+      "claim": "最終受付は18時00分",
+      "source": "https://ms-labo-77.jp/access/",
+      "quote": "最終受付 18：00",
+      "checkedAt": "2026-10-26"
+    },
+    {
+      "claim": "定休日は水曜日",
+      "source": "https://maps.google.com/?cid=10180198837453230306",
+      "quote": "定休日",
+      "checkedAt": "2026-10-26"
+    },
+    {
+      "claim": "ハンドネイルのワンカラーがある",
+      "source": "https://ms-labo-77.jp/menu/",
+      "quote": "HAND NAIL ワンカラー",
+      "checkedAt": "2026-10-26"
+    },
+    {
+      "claim": "フットネイルのワンカラーがある",
+      "source": "https://ms-labo-77.jp/menu/",
+      "quote": "FOOT NAIL ワンカラー",
+      "checkedAt": "2026-10-26"
+    },
+    {
+      "claim": "ストーンやスタッズを使ったアートがある",
+      "source": "https://ms-labo-77.jp/menu/",
+      "quote": "HAND/FOOT ストーン/スタッズ等（1個）",
+      "checkedAt": "2026-10-26"
+    },
+    {
+      "claim": "3Dアートがある",
+      "source": "https://ms-labo-77.jp/menu/",
+      "quote": "HAND/FOOT 3Dアート（1本）",
+      "checkedAt": "2026-10-26"
+    },
+    {
+      "claim": "ネイルチップの注文を受け付けている",
+      "source": "https://ms-labo-77.jp/menu/",
+      "quote": "ネイルチップのご注文も承っている",
+      "checkedAt": "2026-10-26"
+    },
+    {
+      "claim": "メンズネイルの施術も行っている",
+      "source": "https://ms-labo-77.jp/menu/",
+      "quote": "メンズネイルの施術も行っております",
+      "checkedAt": "2026-10-26"
+    },
+    {
+      "claim": "ハンドケアとクリアジェルを組み合わせたメニューがある",
+      "source": "https://ms-labo-77.jp/menu/",
+      "quote": "ハンドケア+クリアジェル",
+      "checkedAt": "2026-10-26"
+    },
+    {
+      "claim": "オーナーネイリストは石丸愛美",
+      "source": "https://ms-labo-77.jp/staff/",
+      "quote": "石丸 愛美",
+      "checkedAt": "2026-10-26"
+    },
+    {
+      "claim": "石丸愛美はオーナーネイリスト",
+      "source": "https://ms-labo-77.jp/staff/",
+      "quote": "オーナーネイリスト",
+      "checkedAt": "2026-10-26"
+    },
+    {
+      "claim": "ナチュラルなネイルアートを中心に施術している",
+      "source": "https://ms-labo-77.jp/staff/",
+      "quote": "ナチュラルなネイルアートをメインに",
+      "checkedAt": "2026-10-26"
+    },
+    {
+      "claim": "松山市内でも珍しい痛ネイルの施術を行っている",
+      "source": "https://ms-labo-77.jp/staff/",
+      "quote": "市内でも珍しい",
+      "checkedAt": "2026-10-26"
+    },
+    {
+      "claim": "ギャラリーにハンドネイルの作品例がある",
+      "source": "https://ms-labo-77.jp/gallery/",
+      "quote": "★ハンドネイル★",
+      "checkedAt": "2026-10-26"
+    },
+    {
+      "claim": "ギャラリーにフットネイルの作品例がある",
+      "source": "https://ms-labo-77.jp/gallery/",
+      "quote": "☆フットネイル☆",
+      "checkedAt": "2026-10-26"
+    }
+  ],
+  "sources": [
+    {
+      "label": "公式サイト",
+      "url": "https://ms-labo-77.jp/"
+    },
+    {
+      "label": "公式サイト(メニュー)",
+      "url": "https://ms-labo-77.jp/menu/"
+    },
+    {
+      "label": "公式サイト(アクセス)",
+      "url": "https://ms-labo-77.jp/access/"
+    },
+    {
+      "label": "公式サイト(ギャラリー)",
+      "url": "https://ms-labo-77.jp/gallery/"
+    },
+    {
+      "label": "公式サイト(スタッフ)",
+      "url": "https://ms-labo-77.jp/staff/"
+    },
+    {
+      "label": "Google マップ",
+      "url": "https://maps.google.com/?cid=10180198837453230306"
+    }
+  ],
+  "notes": "automation/v2/write.mjs が 2026-10-26 に claude -p --model sonnet で作成。事実の裏取り: 21/21 件(quote が出どころにあるもの)。裏取りに通らなかった facts は載せていない。"
+}

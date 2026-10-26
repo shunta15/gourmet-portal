@@ -1,0 +1,188 @@
+{
+  "key": "tri-life-208",
+  "headline": "大阪府高槻市古曽部町の高台に鎮座する神社。戦国武将・荒木村重が創建し、祭神に大山咋命・天照大神・住吉大神を祀る",
+  "lede": "高槻市にある「日吉神社」です。天正元年(1573)、武将・荒木村重が近江国滋賀郡の日吉神社から分霊を勧請して創建しました。現在の社殿は慶長十九年(1614)に再建されたものです。",
+  "sections": [
+    {
+      "heading": "由緒",
+      "body": "大阪府高槻市古曽部の高台に鎮座します。天正元年(1573)七月、武将・荒木村重が摂津守に任じられた折、古曽部の地に正倉を創立し、近江国滋賀郡の日吉神社から分霊を勧請して祭典を執り行ったのが起源です。社名はもとは三王権現と称し、のちに日吉神社と改められ、明治五年には村社に列せられました。"
+    },
+    {
+      "heading": "御祭神",
+      "body": "祭神は大山咋命・天照大神・住吉大神の三柱です。主神の大山咋命は滋賀県比叡山のふもとにある日吉大社を総本山とし、「山王権現」とも呼ばれます。現在の社殿は江戸時代の慶長十九年(1614)一月十一日に再建されたもので、本殿は神明造・檜皮葺きです。境内は三百八十五坪です。"
+    },
+    {
+      "heading": "アクセス",
+      "body": "JR高槻駅から徒歩約18分です。JR高槻駅南のりば6番のりばから高槻市営バスに乗車し、「別所」下車後徒歩7分、または「古曽部台」下車後徒歩4分です。阪急高槻市駅からも同じ系統のバスが利用できます。専用駐車場はありません。"
+    },
+    {
+      "heading": "御祈祷と年間行事",
+      "body": "拝殿での御祈願は事前予約が必要で、祝詞は申し込み後に宮司が作ります。地鎮祭や竣工式などの出張祭祀も承っています。年間行事には、歳旦祭(1月2日10時30分より)、とんど祭(1月15日9時から10時)、祈年祭(3月春分の日10時30分より)、例大祭(5月5日10時より)、新嘗祭(10月第4日曜10時30分より)があります。"
+    }
+  ],
+  "menus": [
+    {
+      "name": "拝殿での御祈願"
+    },
+    {
+      "name": "出張祭祀(地鎮祭・竣工式など)"
+    }
+  ],
+  "tags": [
+    {
+      "tag": "予約制",
+      "factIndex": 9
+    }
+  ],
+  "facts": [
+    {
+      "claim": "祭神は大山咋命・天照大神・住吉大神の三柱です",
+      "source": "https://hiyoshijinja.jpn.org/about.html",
+      "quote": "以上三柱の神様をお祀りしています",
+      "checkedAt": "2026-10-26"
+    },
+    {
+      "claim": "戦国時代に武将・荒木村重によって創建されました",
+      "source": "https://hiyoshijinja.jpn.org/about.html",
+      "quote": "武将・荒木村重によって創建されて",
+      "checkedAt": "2026-10-26"
+    },
+    {
+      "claim": "近江国滋賀郡の日吉神社から分霊を勧請しました",
+      "source": "https://hiyoshijinja.jpn.org/about.html",
+      "quote": "近江国滋賀郡の日吉神社から分霊を勧請",
+      "checkedAt": "2026-10-26"
+    },
+    {
+      "claim": "現在の社殿は慶長十九年(1614)一月十一日に再建されました",
+      "source": "https://hiyoshijinja.jpn.org/about.html",
+      "quote": "慶長十九年（一六一四）一月十一日に再建された",
+      "checkedAt": "2026-10-26"
+    },
+    {
+      "claim": "本殿は神明造・檜皮葺きです",
+      "source": "https://hiyoshijinja.jpn.org/about.html",
+      "quote": "本殿は神明造・檜皮葺き",
+      "checkedAt": "2026-10-26"
+    },
+    {
+      "claim": "境内は三百八十五坪です",
+      "source": "https://hiyoshijinja.jpn.org/about.html",
+      "quote": "境内は三百八十五坪を有し",
+      "checkedAt": "2026-10-26"
+    },
+    {
+      "claim": "明治五年には村社に列せられました",
+      "source": "https://hiyoshijinja.jpn.org/about.html",
+      "quote": "明治五年には村社（旧社格）に列せられました",
+      "checkedAt": "2026-10-26"
+    },
+    {
+      "claim": "JR高槻駅から徒歩約18分です",
+      "source": "https://hiyoshijinja.jpn.org/access.html",
+      "quote": "ＪＲ高槻駅から徒歩約18分です",
+      "checkedAt": "2026-10-26"
+    },
+    {
+      "claim": "専用駐車場はありません",
+      "source": "https://hiyoshijinja.jpn.org/access.html",
+      "quote": "日吉神社には専用駐車場がございません",
+      "checkedAt": "2026-10-26"
+    },
+    {
+      "claim": "拝殿での御祈願は事前予約が必要です",
+      "source": "https://hiyoshijinja.jpn.org/ceremony.html",
+      "quote": "事前に ご予約 をして頂く必要がございます",
+      "checkedAt": "2026-10-26"
+    },
+    {
+      "claim": "地鎮祭や竣工式などの出張祭祀も承っています",
+      "source": "https://hiyoshijinja.jpn.org/ceremony.html",
+      "quote": "地鎮祭や竣工式など、各種出張祭祀も承っております",
+      "checkedAt": "2026-10-26"
+    },
+    {
+      "claim": "例大祭は5月5日10時より行われます",
+      "source": "https://hiyoshijinja.jpn.org/",
+      "quote": "5月5日 10時より",
+      "checkedAt": "2026-10-26"
+    },
+    {
+      "claim": "営業は24時間営業です",
+      "source": "https://maps.google.com/?cid=3600969331885457873",
+      "quote": "24時間営業",
+      "checkedAt": "2026-10-26"
+    },
+    {
+      "claim": "主神の大山咋命は滋賀県比叡山の日吉大社を総本山とし山王権現とも呼ばれます",
+      "source": "https://hiyoshijinja.jpn.org/about.html",
+      "quote": "日吉大社を総本山としており",
+      "checkedAt": "2026-10-26"
+    },
+    {
+      "claim": "歳旦祭は1月2日10時30分より行われます",
+      "source": "https://hiyoshijinja.jpn.org/",
+      "quote": "1月2日 10時30分より",
+      "checkedAt": "2026-10-26"
+    },
+    {
+      "claim": "とんど祭は1月15日9時から10時に行われます",
+      "source": "https://hiyoshijinja.jpn.org/",
+      "quote": "1月15日 9時から10時",
+      "checkedAt": "2026-10-26"
+    },
+    {
+      "claim": "祈年祭は3月春分の日10時30分より行われます",
+      "source": "https://hiyoshijinja.jpn.org/",
+      "quote": "3月春分の日 10時30分より",
+      "checkedAt": "2026-10-26"
+    },
+    {
+      "claim": "新嘗祭は10月第4日曜10時30分より行われます",
+      "source": "https://hiyoshijinja.jpn.org/",
+      "quote": "10月第4日曜 10時30分より",
+      "checkedAt": "2026-10-26"
+    },
+    {
+      "claim": "荒木村重は織田信長に謁見し武功を賞されて摂津守に任じられました",
+      "source": "https://hiyoshijinja.jpn.org/about.html",
+      "quote": "摂津守（せっつのかみ）に任じられました",
+      "checkedAt": "2026-10-26"
+    },
+    {
+      "claim": "市営バスで『別所』下車後徒歩7分です",
+      "source": "https://hiyoshijinja.jpn.org/access.html",
+      "quote": "『別所』駅下車後、徒歩７分",
+      "checkedAt": "2026-10-26"
+    },
+    {
+      "claim": "祝詞は申し込み後に宮司が作ります",
+      "source": "https://hiyoshijinja.jpn.org/ceremony.html",
+      "quote": "祝詞は申し込みの完了後に宮司が",
+      "checkedAt": "2026-10-26"
+    }
+  ],
+  "sources": [
+    {
+      "label": "公式サイト",
+      "url": "https://hiyoshijinja.jpn.org/"
+    },
+    {
+      "label": "公式サイト(日吉神社について)",
+      "url": "https://hiyoshijinja.jpn.org/about.html"
+    },
+    {
+      "label": "公式サイト(交通の御案内)",
+      "url": "https://hiyoshijinja.jpn.org/access.html"
+    },
+    {
+      "label": "公式サイト(御祈祷の御案内)",
+      "url": "https://hiyoshijinja.jpn.org/ceremony.html"
+    },
+    {
+      "label": "Google マップ",
+      "url": "https://maps.google.com/?cid=3600969331885457873"
+    }
+  ],
+  "notes": "automation/v2/write.mjs が 2026-10-26 に claude -p --model sonnet で作成。事実の裏取り: 21/21 件(quote が出どころにあるもの)。裏取りに通らなかった facts は載せていない。"
+}

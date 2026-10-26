@@ -1,0 +1,40 @@
+{
+  "tab": "トリニティアポ",
+  "tabEn": "tri-life",
+  "row": 209,
+  "sheet": {
+    "name": "飯津佐和乃神社",
+    "address": "",
+    "url": "https://www.google.com/search?q=%E9%A3%AF%E6%B4%A5%E4%BD%90%E5%92%8C%E4%B9%83%E7%A5%9E%E7%A4%BE%09%E9%9D%99%E5%B2%A1%E7%9C%8C%E7%89%A7%E4%B9%8B%E5%8E%9F%E5%B8%82%E6%B3%A2%E6%B4%A51000-1&sca_esv=8d839dc4c1007e25&biw=1422&bih=650&sxsrf=APpeQnv4NG6ghdkyU-ISDqwXI1jezwAnwA%3A1792984473664&ei=mcXeavn-J_Ok2roPjM3HyA0&uact=5&oq=%E9%A3%AF%E6%B4%A5%E4%BD%90%E5%92%8C%E4%B9%83%E7%A5%9E%E7%A4%BE%09%E9%9D%99%E5%B2%A1%E7%9C%8C%E7%89%A7%E4%B9%8B%E5%8E%9F%E5%B8%82%E6%B3%A2%E6%B4%A51000-1&gs_lp=Egxnd3Mtd2l6LXNlcnAiN-mjr-a0peS9kOWSjOS5g-elnuekvgnpnZnlsqHnnIzniafkuYvljp_luILms6LmtKUxMDAwLTEyBRAAGO8FMgUQABjvBTIFEAAY7wUyBRAAGO8FSIgHUMgFWMgFcAF4AZABAJgBiwGgAYsBqgEDMC4xuAEDyAEA-AEC-AEBmAICoAKXAagCFMICBxAjGOoCGCfCAhAQABgDGI8BGOoCGLQC2AEBmAMI8QUCvzfCjWFVSboGBggBEAEYCpIHAzEuMaAHlwKyBwMwLjG4B44BwgcFMC4xLjHIBwiACAE&sclient=gws-wiz-serp",
+    "type": "神社",
+    "d1": "",
+    "d2": ""
+  },
+  "urlKind": "search",
+  "route": "第1段(verify-gbp.mjs)で確認済み",
+  "verdict": "一致",
+  "verdictReason": "電話が一致／店名: exact(シート「飯津佐和乃神社」/ マップ「飯津佐和乃神社」)／住所(検索URL): exact・町名・番地とも一致",
+  "place": {
+    "name": "飯津佐和乃神社",
+    "address": "静岡県牧之原市波津１０００−１",
+    "category": "神社",
+    "lat": 34.6786715,
+    "lng": 138.1963448,
+    "gbpUrl": "https://maps.google.com/?cid=5914990011140923047",
+    "phone": "0548-52-0474",
+    "website": "http://www.shizuoka-jinjacho.or.jp/shokai/jinja.php?id=4408009",
+    "hours": {
+      "月": "24時間営業",
+      "火": "24時間営業",
+      "水": "24時間営業",
+      "木": "24時間営業",
+      "金": "24時間営業",
+      "土": "24時間営業",
+      "日": "24時間営業"
+    },
+    "reserveLinks": [],
+    "statusSignals": [],
+    "closedSignal": false
+  },
+  "fetchedAt": "2026-10-26T08:40:22.934Z"
+}

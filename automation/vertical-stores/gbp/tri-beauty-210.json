@@ -1,0 +1,40 @@
+{
+  "tab": "トリニティアポ",
+  "tabEn": "tri-beauty",
+  "row": 210,
+  "sheet": {
+    "name": "Ｍ’s labo. エムズラボ",
+    "address": "",
+    "url": "https://www.google.com/search?q=%EF%BC%AD%E2%80%99s+labo.+%E3%82%A8%E3%83%A0%E3%82%BA%E3%83%A9%E3%83%9C&sca_esv=8d839dc4c1007e25&biw=1536&bih=703&sxsrf=APpeQnvofIEB9XYPWY4Kvs4XZTI_aKWoSg%3A1792988242766&ei=UtTeaqyhLvT31e8P69TjqAk&uact=5&oq=%EF%BC%AD%E2%80%99s+labo.+%E3%82%A8%E3%83%A0%E3%82%BA%E3%83%A9%E3%83%9C&gs_lp=Egxnd3Mtd2l6LXNlcnAiHe-8reKAmXMgbGFiby4g44Ko44Og44K644Op44OcMgoQABhHGNYEGLADMgoQABhHGNYEGLADMgoQABhHGNYEGLADMgoQABhHGNYEGLADSNkfUPgLWOMbcAV4AZABAJgBAKABAKoBALgBA8gBAPgBAvgBAZgCBaACGJgDAIgGAZAGBJIHATWgBwCyBwC4BwDCBwUwLjQuMcgHDYAIAQ&sclient=gws-wiz-serp",
+    "type": "美容",
+    "d1": "",
+    "d2": ""
+  },
+  "urlKind": "search",
+  "route": "第1段(verify-gbp.mjs)で確認済み",
+  "verdict": "一致",
+  "verdictReason": "電話が一致／店名: exact(シート「Ｍ’s labo. エムズラボ」/ マップ「Ｍ’s labo. エムズラボ」)",
+  "place": {
+    "name": "Ｍ’s labo. エムズラボ",
+    "address": "愛媛県松山市南久米町４１２ ドエル東山 B棟 203号室",
+    "category": "ネイルサロン",
+    "lat": 33.8168636,
+    "lng": 132.8007925,
+    "gbpUrl": "https://maps.google.com/?cid=10180198837453230306",
+    "phone": "090-2247-0238",
+    "website": "http://ms-labo-77.jp/",
+    "hours": {
+      "月": "10:00–20:00",
+      "火": "10:00–20:00",
+      "水": "定休日",
+      "木": "10:00–20:00",
+      "金": "10:00–20:00",
+      "土": "10:00–20:00",
+      "日": "10:00–20:00"
+    },
+    "reserveLinks": [],
+    "statusSignals": [],
+    "closedSignal": false
+  },
+  "fetchedAt": "2026-10-26T08:41:07.998Z"
+}

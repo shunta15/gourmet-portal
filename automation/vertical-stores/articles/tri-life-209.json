@@ -1,0 +1,60 @@
+{
+  "key": "tri-life-209",
+  "headline": "牧之原市波津にある神社。正式名称は飯津佐和乃神社(はづさわのじんじゃ)で、静岡県の神社のうち大井・東遠地域に数えられる。",
+  "lede": "牧之原市にある「飯津佐和乃神社」です。読みは「はづさわのじんじゃ」で、鎮座地は波津1000-1です。静岡県の神社のうち、大井・東遠地域に数えられます。",
+  "sections": [
+    {
+      "heading": "場所と連絡先",
+      "body": "鎮座地は牧之原市波津1000-1です。電話は0548-52-0474です。参拝は24時間行えます。"
+    },
+    {
+      "heading": "静岡県の神社としての位置づけ",
+      "body": "静岡県の神社のうち、大井・東遠地域に属する牧之原市の神社です。"
+    }
+  ],
+  "menus": [],
+  "tags": [],
+  "facts": [
+    {
+      "claim": "正式名称は飯津佐和乃神社(はづさわのじんじゃ)",
+      "source": "http://www.shizuoka-jinjacho.or.jp/shokai/jinja.php?id=4408009",
+      "quote": "飯津佐和乃神社（はづさわのじんじゃ）",
+      "checkedAt": "2026-10-26"
+    },
+    {
+      "claim": "鎮座地は牧之原市波津1000-1",
+      "source": "http://www.shizuoka-jinjacho.or.jp/shokai/jinja.php?id=4408009",
+      "quote": "牧之原市波津1000-1",
+      "checkedAt": "2026-10-26"
+    },
+    {
+      "claim": "大井・東遠地域の牧之原市に属する",
+      "source": "http://www.shizuoka-jinjacho.or.jp/shokai/jinja.php?id=4408009",
+      "quote": "大井・東遠地域 > 牧之原市",
+      "checkedAt": "2026-10-26"
+    },
+    {
+      "claim": "営業は24時間",
+      "source": "https://maps.google.com/?cid=5914990011140923047",
+      "quote": "24時間営業",
+      "checkedAt": "2026-10-26"
+    },
+    {
+      "claim": "電話番号は0548-52-0474",
+      "source": "https://maps.google.com/?cid=5914990011140923047",
+      "quote": "0548-52-0474",
+      "checkedAt": "2026-10-26"
+    }
+  ],
+  "sources": [
+    {
+      "label": "公式サイト",
+      "url": "http://www.shizuoka-jinjacho.or.jp/shokai/jinja.php?id=4408009"
+    },
+    {
+      "label": "Google マップ",
+      "url": "https://maps.google.com/?cid=5914990011140923047"
+    }
+  ],
+  "notes": "automation/v2/write.mjs が 2026-10-26 に claude -p --model sonnet で作成。事実の裏取り: 5/5 件(quote が出どころにあるもの)。裏取りに通らなかった facts は載せていない。"
+}

@@ -1,0 +1,239 @@
+{
+  "commit": "0093df65329db37a125f0f45559f22a83d822440",
+  "source": "/Users/shunta/claude/gp-k-auto2",
+  "count": 21,
+  "added": [
+    {
+      "row": 202,
+      "name": "四條畷神社",
+      "key": "tri-life-202",
+      "vertical": "くらし",
+      "id": "li0037",
+      "articleId": "li0037",
+      "shopUrl": "https://machinowa.tokyo/life/shop/li0037",
+      "articleUrl": "https://machinowa.tokyo/life/article/li0037",
+      "sheetUrl": "https://machinowa.tokyo/life/article/li0037"
+    },
+    {
+      "row": 203,
+      "name": "胎蔵寺",
+      "key": "tri-life-203",
+      "vertical": "くらし",
+      "id": "li0038",
+      "articleId": "li0038",
+      "shopUrl": "https://machinowa.tokyo/life/shop/li0038",
+      "articleUrl": "https://machinowa.tokyo/life/article/li0038",
+      "sheetUrl": "https://machinowa.tokyo/life/article/li0038"
+    },
+    {
+      "row": 204,
+      "name": "安国寺",
+      "key": "tri-life-204",
+      "vertical": "くらし",
+      "id": "li0044",
+      "articleId": "li0044",
+      "shopUrl": "https://machinowa.tokyo/life/shop/li0044",
+      "articleUrl": "https://machinowa.tokyo/life/article/li0044",
+      "sheetUrl": "https://machinowa.tokyo/life/article/li0044"
+    },
+    {
+      "row": 205,
+      "name": "大阪護國神社",
+      "key": "tri-life-205",
+      "vertical": "くらし",
+      "id": "li0039",
+      "articleId": "li0039",
+      "shopUrl": "https://machinowa.tokyo/life/shop/li0039",
+      "articleUrl": "https://machinowa.tokyo/life/article/li0039",
+      "sheetUrl": "https://machinowa.tokyo/life/article/li0039"
+    },
+    {
+      "row": 206,
+      "name": "高山スカイセーリングクラブ",
+      "key": "tri-activity-206",
+      "vertical": "アクティビティ",
+      "id": "ac0020",
+      "articleId": "ac0020",
+      "shopUrl": "https://machinowa.tokyo/activity/shop/ac0020",
+      "articleUrl": "https://machinowa.tokyo/activity/article/ac0020",
+      "sheetUrl": "https://machinowa.tokyo/activity/article/ac0020"
+    },
+    {
+      "row": 207,
+      "name": "八坂神社",
+      "key": "tri-life-207",
+      "vertical": "くらし",
+      "id": "li0040",
+      "articleId": "li0040",
+      "shopUrl": "https://machinowa.tokyo/life/shop/li0040",
+      "articleUrl": "https://machinowa.tokyo/life/article/li0040",
+      "sheetUrl": "https://machinowa.tokyo/life/article/li0040"
+    },
+    {
+      "row": 208,
+      "name": "日吉神社",
+      "key": "tri-life-208",
+      "vertical": "くらし",
+      "id": "li0041",
+      "articleId": "li0041",
+      "shopUrl": "https://machinowa.tokyo/life/shop/li0041",
+      "articleUrl": "https://machinowa.tokyo/life/article/li0041",
+      "sheetUrl": "https://machinowa.tokyo/life/article/li0041"
+    },
+    {
+      "row": 209,
+      "name": "飯津佐和乃神社",
+      "key": "tri-life-209",
+      "vertical": "くらし",
+      "id": "li0042",
+      "articleId": "li0042",
+      "shopUrl": "https://machinowa.tokyo/life/shop/li0042",
+      "articleUrl": "https://machinowa.tokyo/life/article/li0042",
+      "sheetUrl": "https://machinowa.tokyo/life/article/li0042"
+    },
+    {
+      "row": 210,
+      "name": "Ｍ’s labo. エムズラボ",
+      "key": "tri-beauty-210",
+      "vertical": "ビューティー",
+      "id": "be0107",
+      "articleId": null,
+      "shopUrl": "https://machinowa.tokyo/beauty/shop/be0107",
+      "articleUrl": null,
+      "sheetUrl": "https://machinowa.tokyo/beauty/shop/be0107"
+    },
+    {
+      "row": 211,
+      "name": "十楽寺(湖国甲賀三大仏)...",
+      "key": "tri-life-211",
+      "vertical": "くらし",
+      "id": "li0043",
+      "articleId": "li0043",
+      "shopUrl": "https://machinowa.tokyo/life/shop/li0043",
+      "articleUrl": "https://machinowa.tokyo/life/article/li0043",
+      "sheetUrl": "https://machinowa.tokyo/life/article/li0043"
+    },
+    {
+      "row": 212,
+      "name": "居酒屋いっき豊洲店",
+      "key": "tri-gourmet-212",
+      "vertical": "グルメ",
+      "id": "r723",
+      "articleId": "居酒屋いっき豊洲店",
+      "shopUrl": "https://machinowa.tokyo/restaurant/r723",
+      "articleUrl": "https://machinowa.tokyo/feature/居酒屋いっき豊洲店",
+      "sheetUrl": "https://machinowa.tokyo/feature/居酒屋いっき豊洲店"
+    },
+    {
+      "row": 213,
+      "name": "高山お好み焼き あんと",
+      "key": "tri-gourmet-213",
+      "vertical": "グルメ",
+      "id": "r724",
+      "articleId": "高山お好み焼きあんと",
+      "shopUrl": "https://machinowa.tokyo/restaurant/r724",
+      "articleUrl": "https://machinowa.tokyo/feature/高山お好み焼きあんと",
+      "sheetUrl": "https://machinowa.tokyo/feature/高山お好み焼きあんと"
+    },
+    {
+      "row": 214,
+      "name": "長谷寺",
+      "key": "tri-life-214",
+      "vertical": "くらし",
+      "id": "li0045",
+      "articleId": "li0045",
+      "shopUrl": "https://machinowa.tokyo/life/shop/li0045",
+      "articleUrl": "https://machinowa.tokyo/life/article/li0045",
+      "sheetUrl": "https://machinowa.tokyo/life/article/li0045"
+    },
+    {
+      "row": 215,
+      "name": "まんざいらく",
+      "key": "tri-gourmet-215",
+      "vertical": "グルメ",
+      "id": "r725",
+      "articleId": "食堂cafeまんざいらく",
+      "shopUrl": "https://machinowa.tokyo/restaurant/r725",
+      "articleUrl": "https://machinowa.tokyo/feature/食堂cafeまんざいらく",
+      "sheetUrl": "https://machinowa.tokyo/feature/食堂cafeまんざいらく"
+    },
+    {
+      "row": 216,
+      "name": "てんぷら天英",
+      "key": "tri-gourmet-216",
+      "vertical": "グルメ",
+      "id": "r726",
+      "articleId": "てんぷら天英",
+      "shopUrl": "https://machinowa.tokyo/restaurant/r726",
+      "articleUrl": "https://machinowa.tokyo/feature/てんぷら天英",
+      "sheetUrl": "https://machinowa.tokyo/feature/てんぷら天英"
+    },
+    {
+      "row": 217,
+      "name": "ジンギスカン日光",
+      "key": "tri-gourmet-217",
+      "vertical": "グルメ",
+      "id": "r727",
+      "articleId": "ジンギスカン日光",
+      "shopUrl": "https://machinowa.tokyo/restaurant/r727",
+      "articleUrl": "https://machinowa.tokyo/feature/ジンギスカン日光",
+      "sheetUrl": "https://machinowa.tokyo/feature/ジンギスカン日光"
+    },
+    {
+      "row": 218,
+      "name": "焼焼 きんぐ",
+      "key": "tri-gourmet-218",
+      "vertical": "グルメ",
+      "id": "r728",
+      "articleId": "焼焼きんぐ",
+      "shopUrl": "https://machinowa.tokyo/restaurant/r728",
+      "articleUrl": "https://machinowa.tokyo/feature/焼焼きんぐ",
+      "sheetUrl": "https://machinowa.tokyo/feature/焼焼きんぐ"
+    },
+    {
+      "row": 221,
+      "name": "音羽寿司",
+      "key": "tri-gourmet-221",
+      "vertical": "グルメ",
+      "id": "r729",
+      "articleId": "音羽寿司",
+      "shopUrl": "https://machinowa.tokyo/restaurant/r729",
+      "articleUrl": "https://machinowa.tokyo/feature/音羽寿司",
+      "sheetUrl": "https://machinowa.tokyo/feature/音羽寿司"
+    },
+    {
+      "row": 222,
+      "name": "割烹天野",
+      "key": "tri-gourmet-222",
+      "vertical": "グルメ",
+      "id": "r730",
+      "articleId": "割烹天野",
+      "shopUrl": "https://machinowa.tokyo/restaurant/r730",
+      "articleUrl": "https://machinowa.tokyo/feature/割烹天野",
+      "sheetUrl": "https://machinowa.tokyo/feature/割烹天野"
+    },
+    {
+      "row": 223,
+      "name": "文蔵ＢＬＡＣＫ",
+      "key": "tri-gourmet-223",
+      "vertical": "グルメ",
+      "id": "r731",
+      "articleId": "麺sBLAND文蔵BLACK",
+      "shopUrl": "https://machinowa.tokyo/restaurant/r731",
+      "articleUrl": "https://machinowa.tokyo/feature/麺sBLAND文蔵BLACK",
+      "sheetUrl": "https://machinowa.tokyo/feature/麺sBLAND文蔵BLACK"
+    },
+    {
+      "row": 226,
+      "name": "創作鉄板一 Hajime",
+      "key": "tri-gourmet-226",
+      "vertical": "グルメ",
+      "id": "r732",
+      "articleId": "創作鉄板一Hajime",
+      "shopUrl": "https://machinowa.tokyo/restaurant/r732",
+      "articleUrl": "https://machinowa.tokyo/feature/創作鉄板一Hajime",
+      "sheetUrl": "https://machinowa.tokyo/feature/創作鉄板一Hajime"
+    }
+  ],
+  "skipped": []
+}

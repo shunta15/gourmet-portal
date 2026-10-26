@@ -1,0 +1,22 @@
+{
+  "name": "食堂cafeまんざいらく",
+  "address": "愛知県豊川市上野２丁目14−１−２",
+  "lat": 34.8394236,
+  "lng": 137.4116215,
+  "category": "レストラン",
+  "hours": {
+    "月": "定休日",
+    "火": "定休日",
+    "水": "11:30–15:30",
+    "木": "11:30–15:30",
+    "金": "11:30–15:30",
+    "土": "11:30–15:30",
+    "日": "11:30–15:30"
+  },
+  "phone": "0533-56-3591",
+  "website": "https://www.instagram.com/n.manzairaku?igsh=ZXN2YXpqdXZ0cG15",
+  "priceRange": null,
+  "status": null,
+  "gbpUrl": "https://maps.google.com/?cid=13902492423345895600",
+  "fetchedAt": "2026-10-26T08:44:21.130Z"
+}

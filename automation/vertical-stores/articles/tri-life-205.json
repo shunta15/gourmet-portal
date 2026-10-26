@@ -1,0 +1,184 @@
+{
+  "key": "tri-life-205",
+  "headline": "大阪市住之江区にある神社。明治維新前後から大東亜戦争に至るまでの、大阪府出身・縁故の英霊105665柱を祀り、昭和十五年に創建された。",
+  "lede": "大阪市住之江区にある「大阪護國神社」です。明治維新前後から大東亜戦争に至るまでの、大阪府出身・縁故の英霊105665柱を祀っています。大阪メトロ四つ橋線・ニュートラム「住之江公園」駅が最寄りで、参拝者用の駐車場があります。",
+  "sections": [
+    {
+      "heading": "場所と連絡先",
+      "body": "住所は大阪市住之江区南加賀屋1-1-77、電話は06-6681-2372です。参拝可能時間は9時から17時です。大阪メトロ四つ橋線・南港ポートタウン線（ニュートラム）「住之江公園」駅が最寄りで、四つ橋線ホーム北改札1番出口を出ると目の前が神社の入り口です。参拝者用の駐車場もあります。"
+    },
+    {
+      "heading": "由緒",
+      "body": "昭和十五年に創建されました。御祭神は、明治維新前後から大東亜戦争に至るまでの、大阪府出身・縁故の英霊105665柱です。本殿前にはご神鏡が据えられ、戦前の研磨技術で制作可能な最大サイズの和鏡です。"
+    },
+    {
+      "heading": "祈願",
+      "body": "七五三・厄除・お宮参り・車のお祓いなどの祈願を受け付けています。結婚式、安産、交通安全、地鎮祭なども祈願の対象です。事前の予約は必要なく、当日は受付順にご祈祷がおこなわれます。"
+    },
+    {
+      "heading": "年中の祭儀",
+      "body": "春季例大祭は5月20日、秋季例大祭は10月20日に斎行されます。8月14日・15日には献灯みたままつりがあり、11月には七五三詣がおこなわれます。"
+    }
+  ],
+  "menus": [
+    {
+      "name": "厄除"
+    },
+    {
+      "name": "結婚式"
+    },
+    {
+      "name": "安産"
+    },
+    {
+      "name": "お宮参り"
+    },
+    {
+      "name": "七五三"
+    },
+    {
+      "name": "交通安全"
+    },
+    {
+      "name": "地鎮祭"
+    },
+    {
+      "name": "車のお祓い"
+    }
+  ],
+  "tags": [
+    {
+      "tag": "駐車場あり",
+      "factIndex": 0
+    },
+    {
+      "tag": "駅近",
+      "factIndex": 2
+    }
+  ],
+  "facts": [
+    {
+      "claim": "参拝者用の無料駐車場が用意されている",
+      "source": "https://www.osakagokoku.or.jp/",
+      "quote": "参拝者の方用の無料駐車場",
+      "checkedAt": "2026-10-26"
+    },
+    {
+      "claim": "大阪メトロ四つ橋線・ニュートラム「住之江公園」駅が最寄り",
+      "source": "https://www.osakagokoku.or.jp/pages/5/",
+      "quote": "最寄り駅は大阪メトロ四つ橋線",
+      "checkedAt": "2026-10-26"
+    },
+    {
+      "claim": "四つ橋線ホーム北改札1番出口を出ると神社の入り口がある",
+      "source": "https://www.osakagokoku.or.jp/pages/5/",
+      "quote": "目の前が神社の入り口です",
+      "checkedAt": "2026-10-26"
+    },
+    {
+      "claim": "昭和十五年に創建された",
+      "source": "https://www.osakagokoku.or.jp/pages/7/",
+      "quote": "昭和十五年に創建された",
+      "checkedAt": "2026-10-26"
+    },
+    {
+      "claim": "大阪府出身・縁故の英霊105665柱を祀る",
+      "source": "https://www.osakagokoku.or.jp/pages/80/",
+      "quote": "105665柱",
+      "checkedAt": "2026-10-26"
+    },
+    {
+      "claim": "ご神鏡は戦前の研磨技術で制作可能な最大サイズの和鏡である",
+      "source": "https://www.osakagokoku.or.jp/",
+      "quote": "戦前の研磨技術で制作可能な最大サイズ",
+      "checkedAt": "2026-10-26"
+    },
+    {
+      "claim": "事前の予約は不要で、当日は受付順にご祈祷する",
+      "source": "https://www.osakagokoku.or.jp/",
+      "quote": "事前の予約等の必要はございません",
+      "checkedAt": "2026-10-26"
+    },
+    {
+      "claim": "七五三・厄除・お宮参り・車のお祓いの祈願を受け付けている",
+      "source": "https://www.osakagokoku.or.jp/",
+      "quote": "七五三・厄除・お宮参り",
+      "checkedAt": "2026-10-26"
+    },
+    {
+      "claim": "厄除祈願祭をはじめ結婚式、安産などの祈願を受け付けている",
+      "source": "https://www.osakagokoku.or.jp/",
+      "quote": "厄除祈願祭をはじめ結婚式、安産",
+      "checkedAt": "2026-10-26"
+    },
+    {
+      "claim": "春季例大祭は5月20日に斎行される",
+      "source": "https://www.osakagokoku.or.jp/pages/71/",
+      "quote": "春季例大祭",
+      "checkedAt": "2026-10-26"
+    },
+    {
+      "claim": "秋季例大祭は10月20日に斎行される",
+      "source": "https://www.osakagokoku.or.jp/pages/71/",
+      "quote": "秋季例大祭",
+      "checkedAt": "2026-10-26"
+    },
+    {
+      "claim": "8月14日・15日には献灯みたままつりがある",
+      "source": "https://www.osakagokoku.or.jp/pages/71/",
+      "quote": "献灯みたままつり",
+      "checkedAt": "2026-10-26"
+    },
+    {
+      "claim": "11月には七五三詣がおこなわれる",
+      "source": "https://www.osakagokoku.or.jp/pages/71/",
+      "quote": "七五三詣",
+      "checkedAt": "2026-10-26"
+    },
+    {
+      "claim": "住所は大阪市住之江区南加賀屋1-1-77",
+      "source": "https://maps.google.com/?cid=4595344197524720300",
+      "quote": "南加賀屋１丁目１−７７",
+      "checkedAt": "2026-10-26"
+    },
+    {
+      "claim": "電話は06-6681-2372",
+      "source": "https://maps.google.com/?cid=4595344197524720300",
+      "quote": "06-6681-2372",
+      "checkedAt": "2026-10-26"
+    },
+    {
+      "claim": "参拝可能時間は9時から17時",
+      "source": "https://maps.google.com/?cid=4595344197524720300",
+      "quote": "09:00–17:00",
+      "checkedAt": "2026-10-26"
+    }
+  ],
+  "sources": [
+    {
+      "label": "公式サイト",
+      "url": "https://www.osakagokoku.or.jp/"
+    },
+    {
+      "label": "公式サイト(交通アクセス)",
+      "url": "https://www.osakagokoku.or.jp/pages/5/"
+    },
+    {
+      "label": "公式サイト(大阪護國神社について)",
+      "url": "https://www.osakagokoku.or.jp/pages/80/"
+    },
+    {
+      "label": "公式サイト(ご由緒)",
+      "url": "https://www.osakagokoku.or.jp/pages/7/"
+    },
+    {
+      "label": "公式サイト(祭儀・年中行事)",
+      "url": "https://www.osakagokoku.or.jp/pages/71/"
+    },
+    {
+      "label": "Google マップ",
+      "url": "https://maps.google.com/?cid=4595344197524720300"
+    }
+  ],
+  "notes": "automation/v2/write.mjs が 2026-10-26 に claude -p --model sonnet で作成。事実の裏取り: 16/16 件(quote が出どころにあるもの)。裏取りに通らなかった facts は載せていない。"
+}

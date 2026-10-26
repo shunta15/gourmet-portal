@@ -1,0 +1,169 @@
+{
+  "key": "tri-life-211",
+  "headline": "滋賀県甲賀市土山町山中にある浄土宗の寺院。山号は清浄山、本尊の丈六阿弥陀如来坐像は甲賀三大仏の一つに数えられる",
+  "lede": "甲賀市にある「清浄山 十楽寺」です。文明十八年(1486年)の創建と伝わり、宗派は浄土宗、本尊は丈六阿弥陀如来坐像です。十一面千手観音や摩耶夫人立像なども安置され、甲賀三大仏の一つに数えられています。",
+  "sections": [
+    {
+      "heading": "山号と沿革",
+      "body": "山号は清浄山、院号は二尊院、寺号は十楽寺で、宗派は浄土宗です。文明十八年(1486年)の創建と伝わり、寛文年間(1661年〜)に本堂・庫裏・茶所を完成し、浄土宗総本山知恩院の直轄末寺となりました。"
+    },
+    {
+      "heading": "本尊と安置仏像",
+      "body": "本尊は日本最大級の丈六阿弥陀如来坐像で、重要文化財に指定されています。十一面千手観音や救世観音坐像、摩耶夫人立像なども安置され、甲賀三大仏の一つに数えられています。"
+    },
+    {
+      "heading": "お寺体験",
+      "body": "座禅・写経・念仏を通じた体験ができます。体験には5名以上での予約が必要で、必要な道具は寺が用意します。"
+    }
+  ],
+  "menus": [
+    {
+      "name": "座禅"
+    },
+    {
+      "name": "写経"
+    },
+    {
+      "name": "念仏"
+    }
+  ],
+  "tags": [
+    {
+      "tag": "体験あり",
+      "factIndex": 12
+    },
+    {
+      "tag": "予約制",
+      "factIndex": 13
+    }
+  ],
+  "facts": [
+    {
+      "claim": "山号は清浄山",
+      "source": "http://www.jyurakuji.jp/index.php?data=./data/l2/",
+      "quote": "清浄山 (せいじょうざん)",
+      "checkedAt": "2026-10-26"
+    },
+    {
+      "claim": "院号は二尊院",
+      "source": "http://www.jyurakuji.jp/index.php?data=./data/l2/",
+      "quote": "二尊院 (にそんいん)",
+      "checkedAt": "2026-10-26"
+    },
+    {
+      "claim": "寺号は十楽寺",
+      "source": "http://www.jyurakuji.jp/index.php?data=./data/l2/",
+      "quote": "十楽寺 (じゅうらくじ）",
+      "checkedAt": "2026-10-26"
+    },
+    {
+      "claim": "宗派は浄土宗",
+      "source": "http://www.jyurakuji.jp/index.php?data=./data/l2/",
+      "quote": "浄土宗 (じょうどしゅう)",
+      "checkedAt": "2026-10-26"
+    },
+    {
+      "claim": "創建は文明十八年(1486年)",
+      "source": "http://www.jyurakuji.jp/index.php?data=./data/l2/",
+      "quote": "文明十八年 (1486年)",
+      "checkedAt": "2026-10-26"
+    },
+    {
+      "claim": "寛文年間(1661年〜)に本堂・庫裏・茶所を完成した",
+      "source": "http://www.jyurakuji.jp/index.php?data=./data/l2/",
+      "quote": "本堂、庫裏、茶所を完成し",
+      "checkedAt": "2026-10-26"
+    },
+    {
+      "claim": "浄土宗総本山知恩院の直轄末寺となった",
+      "source": "http://www.jyurakuji.jp/index.php?data=./data/l2/",
+      "quote": "浄土宗総本山知恩院の直轄末寺となり",
+      "checkedAt": "2026-10-26"
+    },
+    {
+      "claim": "本尊は日本最大級の丈六阿弥陀如来坐像",
+      "source": "http://www.jyurakuji.jp/index.php?data=./data/l2/",
+      "quote": "本尊は日本最大級の丈六阿弥陀如来座像",
+      "checkedAt": "2026-10-26"
+    },
+    {
+      "claim": "本尊の阿弥陀如来坐像は重要文化財",
+      "source": "http://www.jyurakuji.jp/index.php?data=./data/l2/",
+      "quote": "阿弥陀如来坐像 (重文)",
+      "checkedAt": "2026-10-26"
+    },
+    {
+      "claim": "十一面千手観音や救世観音坐像も安置されている",
+      "source": "http://www.jyurakuji.jp/",
+      "quote": "十一面千手観音、救世観音坐像",
+      "checkedAt": "2026-10-26"
+    },
+    {
+      "claim": "摩耶夫人立像も安置されている",
+      "source": "http://www.jyurakuji.jp/",
+      "quote": "摩耶夫人立像",
+      "checkedAt": "2026-10-26"
+    },
+    {
+      "claim": "甲賀三大仏の一つに数えられる",
+      "source": "http://www.jyurakuji.jp/",
+      "quote": "甲賀三大佛の1つで、本尊は日本最大級の丈六阿弥陀如来坐像",
+      "checkedAt": "2026-10-26"
+    },
+    {
+      "claim": "座禅・写経・念仏の体験ができる",
+      "source": "http://www.jyurakuji.jp/index.php?data=./data/l4/",
+      "quote": "座禅・写経・念仏を通じて無心になり",
+      "checkedAt": "2026-10-26"
+    },
+    {
+      "claim": "体験には5名以上での予約が必要",
+      "source": "http://www.jyurakuji.jp/index.php?data=./data/l4/",
+      "quote": "※要予約5名以上",
+      "checkedAt": "2026-10-26"
+    },
+    {
+      "claim": "体験に必要な道具は寺が用意する",
+      "source": "http://www.jyurakuji.jp/index.php?data=./data/l4/",
+      "quote": "必要な道具等はこちらでご用意しています。",
+      "checkedAt": "2026-10-26"
+    },
+    {
+      "claim": "住所は滋賀県甲賀市土山町山中351",
+      "source": "https://maps.google.com/?cid=12821318119350655243",
+      "quote": "滋賀県甲賀市土山町山中３５１",
+      "checkedAt": "2026-10-26"
+    },
+    {
+      "claim": "電話は0748-68-0364",
+      "source": "https://maps.google.com/?cid=12821318119350655243",
+      "quote": "0748-68-0364",
+      "checkedAt": "2026-10-26"
+    },
+    {
+      "claim": "営業時間は9時から16時",
+      "source": "https://maps.google.com/?cid=12821318119350655243",
+      "quote": "09:00–16:00",
+      "checkedAt": "2026-10-26"
+    }
+  ],
+  "sources": [
+    {
+      "label": "公式サイト",
+      "url": "http://www.jyurakuji.jp/"
+    },
+    {
+      "label": "公式サイト(十楽寺について)",
+      "url": "http://www.jyurakuji.jp/index.php?data=./data/l2/"
+    },
+    {
+      "label": "公式サイト(お寺体験)",
+      "url": "http://www.jyurakuji.jp/index.php?data=./data/l4/"
+    },
+    {
+      "label": "Google マップ",
+      "url": "https://maps.google.com/?cid=12821318119350655243"
+    }
+  ],
+  "notes": "automation/v2/write.mjs が 2026-10-26 に claude -p --model sonnet で作成。事実の裏取り: 18/18 件(quote が出どころにあるもの)。裏取りに通らなかった facts は載せていない。"
+}

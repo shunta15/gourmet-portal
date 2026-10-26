@@ -1,0 +1,40 @@
+{
+  "tab": "トリニティアポ",
+  "tabEn": "tri-life",
+  "row": 205,
+  "sheet": {
+    "name": "大阪護國神社",
+    "address": "",
+    "url": "https://www.google.com/search?q=06-6681-2372+%E5%A4%A7%E9%98%AA%E8%AD%B7%E5%9C%8B%E7%A5%9E%E7%A4%BE+%E5%A4%A7%E9%98%AA%E5%BA%9C%E5%A4%A7%E9%98%AA%E5%B8%82%E4%BD%8F%E4%B9%8B%E6%B1%9F%E5%8C%BA%E5%8D%97%E5%8A%A0%E8%B3%80%E5%B1%8B1-1-77&sca_esv=8d839dc4c1007e25&aep=1&cs=0&biw=645&bih=735&prmd=ivns&sxsrf=APpeQnvthma_EDW2DjvaFZhc0IU74hykDw:1792982500164&source=lnms&fbs=ABfTbFVDw6J1-MKhgvYpD2fHgkjDxhst1bYHHHZp-tn1ALM81_K73mtzjdSRu_PjhREJyLKj5jQtqJc6JteE3ljFHdMwlTDSEHPQHPWDVgagjtj9HeLTy3DD19c-f8fKwOMfKAUp6Z-F9IPg1Zj_hBwG4J9nEkKxwT-F1p4n7_0FIxzqCxtOOuSk7dOHOoDxku2HL5n3kJQYDNaVV6vdgoEpyzCW3j3c6HpSbwbqJ0cPck8U3EL-HFs&sa=X&ved=2ahUKEwjRwoqo1NaXAxUrj-EIHQLCCNYQ0pQJegQICBAF",
+    "type": "神社",
+    "d1": "",
+    "d2": ""
+  },
+  "urlKind": "search",
+  "route": "第1段(verify-gbp.mjs)で確認済み",
+  "verdict": "一致",
+  "verdictReason": "電話が一致／店名: exact(シート「大阪護國神社」/ マップ「大阪護國神社」)／住所(検索URL): exact・町名・番地とも一致",
+  "place": {
+    "name": "大阪護國神社",
+    "address": "大阪府大阪市住之江区南加賀屋１丁目１−７７",
+    "category": "神社",
+    "lat": 34.6101988,
+    "lng": 135.4739628,
+    "gbpUrl": "https://maps.google.com/?cid=4595344197524720300",
+    "phone": "06-6681-2372",
+    "website": "https://www.osakagokoku.or.jp/",
+    "hours": {
+      "月": "09:00–17:00",
+      "火": "09:00–17:00",
+      "水": "09:00–17:00",
+      "木": "09:00–17:00",
+      "金": "09:00–17:00",
+      "土": "09:00–17:00",
+      "日": "09:00–17:00"
+    },
+    "reserveLinks": [],
+    "statusSignals": [],
+    "closedSignal": false
+  },
+  "fetchedAt": "2026-10-26T08:37:34.051Z"
+}

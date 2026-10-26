@@ -2177,5 +2177,84 @@
       "desc は lede から事実の文を選べず、事実から作った定型文",
       "cuisine は GBPカテゴリ"
     ]
+  },
+  "r723": {
+    "articleId": "居酒屋いっき豊洲店",
+    "name": "居酒屋いっき 豊洲店",
+    "warnings": [
+      "desc は lede から事実の文を選べず、事実から作った定型文",
+      "cuisine は GBPカテゴリ"
+    ]
+  },
+  "r724": {
+    "articleId": "高山お好み焼きあんと",
+    "name": "高山お好み焼き あんと",
+    "warnings": [
+      "desc は lede から事実の文を選べず、事実から作った定型文"
+    ]
+  },
+  "r725": {
+    "articleId": "食堂cafeまんざいらく",
+    "name": "食堂cafeまんざいらく",
+    "warnings": [
+      "desc は lede から事実の文を選べず、事実から作った定型文",
+      "cuisine は GBPカテゴリ"
+    ]
+  },
+  "r726": {
+    "articleId": "てんぷら天英",
+    "name": "てんぷら天英",
+    "warnings": [
+      "desc は lede から事実の文を選べず、事実から作った定型文",
+      "cuisine は GBPカテゴリ"
+    ]
+  },
+  "r727": {
+    "articleId": "ジンギスカン日光",
+    "name": "ジンギスカン日光",
+    "warnings": [
+      "desc は lede から事実の文を選べず、事実から作った定型文",
+      "cuisine は GBPカテゴリ"
+    ]
+  },
+  "r728": {
+    "articleId": "焼焼きんぐ",
+    "name": "焼焼 きんぐ",
+    "warnings": [
+      "desc は lede から事実の文を選べず、事実から作った定型文",
+      "cuisine は GBPカテゴリ"
+    ]
+  },
+  "r729": {
+    "articleId": "音羽寿司",
+    "name": "音羽寿司",
+    "warnings": [
+      "desc は lede から事実の文を選べず、事実から作った定型文",
+      "cuisine は GBPカテゴリ"
+    ]
+  },
+  "r730": {
+    "articleId": "割烹天野",
+    "name": "割烹天野",
+    "warnings": [
+      "desc は lede から事実の文を選べず、事実から作った定型文",
+      "cuisine は GBPカテゴリ"
+    ]
+  },
+  "r731": {
+    "articleId": "麺sBLAND文蔵BLACK",
+    "name": "麺'sBLAND 文蔵BLACK",
+    "warnings": [
+      "desc は lede から事実の文を選べず、事実から作った定型文",
+      "cuisine は GBPカテゴリ"
+    ]
+  },
+  "r732": {
+    "articleId": "創作鉄板一Hajime",
+    "name": "創作鉄板一 Hajime",
+    "warnings": [
+      "desc は lede から事実の文を選べず、事実から作った定型文",
+      "cuisine は GBPカテゴリ"
+    ]
   }
 }

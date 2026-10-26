@@ -1,0 +1,40 @@
+{
+  "tab": "トリニティアポ",
+  "tabEn": "tri-life",
+  "row": 207,
+  "sheet": {
+    "name": "八坂神社",
+    "address": "",
+    "url": "https://www.google.com/search?q=%E5%85%AB%E5%9D%82%E7%A5%9E%E7%A4%BE%09%E5%A4%A7%E9%98%AA%E5%BA%9C%E6%B1%A0%E7%94%B0%E5%B8%82%E7%A5%9E%E7%94%B04%E4%B8%81%E7%9B%AE7-1&sca_esv=a25cef74e7aab009&biw=740&bih=663&sxsrf=APpeQnvsJ-4EiGtNvK2dHpH5MD7fvjkcmQ%3A1792375870147&ei=PnzVasu7CNu1vr0Pv9SI8QQ&uact=5&oq=%E5%85%AB%E5%9D%82%E7%A5%9E%E7%A4%BE%09%E5%A4%A7%E9%98%AA%E5%BA%9C%E6%B1%A0%E7%94%B0%E5%B8%82%E7%A5%9E%E7%94%B04%E4%B8%81%E7%9B%AE7-1&gs_lp=Egxnd3Mtd2l6LXNlcnAiL-WFq-WdguelnuekvgnlpKfpmKrlupzmsaDnlLDluILnpZ7nlLA05LiB55uuNy0xMgUQABjvBTIIEAAYgAQYogQyBRAAGO8FMgUQABjvBUilBFCSAliSAnABeAGQAQCYAaEBoAGhAaoBAzAuMbgBA8gBAPgBAvgBAZgCAqAC5AGoAgrCAgcQIxjqAhgnmAMl8QWOzbl4steQqpIHAzEuMaAH6wGyBwMwLjG4B78BwgcDMy0yyAcYgAgB&sclient=gws-wiz-serp",
+    "type": "神社",
+    "d1": "",
+    "d2": ""
+  },
+  "urlKind": "search",
+  "route": "第1段(verify-gbp.mjs)で確認済み",
+  "verdict": "一致",
+  "verdictReason": "電話が一致／店名: exact(シート「八坂神社」/ マップ「八坂神社」)／住所(検索URL): exact・町名・番地とも一致",
+  "place": {
+    "name": "八坂神社",
+    "address": "大阪府池田市神田４丁目７−１",
+    "category": "神社",
+    "lat": 34.8125385,
+    "lng": 135.4219894,
+    "gbpUrl": "https://maps.google.com/?cid=15441250696571800482",
+    "phone": "072-751-3790",
+    "website": "https://www.osaka-jinjacho.jp/funai_jinja/dai1shibu/ikeda-city/01006yasakajinja.html",
+    "hours": {
+      "月": "24時間営業",
+      "火": "24時間営業",
+      "水": "24時間営業",
+      "木": "24時間営業",
+      "金": "24時間営業",
+      "土": "24時間営業",
+      "日": "24時間営業"
+    },
+    "reserveLinks": [],
+    "statusSignals": [],
+    "closedSignal": false
+  },
+  "fetchedAt": "2026-10-26T08:39:05.896Z"
+}

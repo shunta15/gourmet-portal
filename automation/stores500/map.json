@@ -1413,5 +1413,55 @@
     "articleId": "ティース",
     "sheetName": "TEACE Teasalon&Interior",
     "mapsUrl": "https://maps.google.com/?cid=4017399311631213505"
+  },
+  {
+    "articleId": "居酒屋いっき豊洲店",
+    "sheetName": "居酒屋いっき豊洲店",
+    "mapsUrl": "https://maps.google.com/?cid=16736592234388441724"
+  },
+  {
+    "articleId": "高山お好み焼きあんと",
+    "sheetName": "高山お好み焼き あんと",
+    "mapsUrl": "https://maps.google.com/?cid=14073621503470871259"
+  },
+  {
+    "articleId": "食堂cafeまんざいらく",
+    "sheetName": "まんざいらく",
+    "mapsUrl": "https://maps.google.com/?cid=13902492423345895600"
+  },
+  {
+    "articleId": "てんぷら天英",
+    "sheetName": "てんぷら天英",
+    "mapsUrl": "https://maps.google.com/?cid=7951926339512145386"
+  },
+  {
+    "articleId": "ジンギスカン日光",
+    "sheetName": "ジンギスカン日光",
+    "mapsUrl": "https://maps.google.com/?cid=6695523126171227086"
+  },
+  {
+    "articleId": "焼焼きんぐ",
+    "sheetName": "焼焼 きんぐ",
+    "mapsUrl": "https://maps.google.com/?cid=11795380622205640687"
+  },
+  {
+    "articleId": "音羽寿司",
+    "sheetName": "音羽寿司",
+    "mapsUrl": "https://maps.google.com/?cid=12583279862136392206"
+  },
+  {
+    "articleId": "割烹天野",
+    "sheetName": "割烹天野",
+    "mapsUrl": "https://maps.google.com/?cid=8863730175989677359"
+  },
+  {
+    "articleId": "麺sBLAND文蔵BLACK",
+    "sheetName": "文蔵ＢＬＡＣＫ",
+    "mapsUrl": "https://maps.google.com/?cid=12642673135269250030"
+  },
+  {
+    "articleId": "創作鉄板一Hajime",
+    "sheetName": "創作鉄板一 Hajime",
+    "mapsUrl": "https://maps.google.com/?cid=13846704088862714709"
   }
 ]
