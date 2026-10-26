@@ -1,0 +1,32 @@
+{
+  "tab": "トリニティアポ",
+  "tabEn": "tri-life",
+  "row": 187,
+  "sheet": {
+    "name": "高積神社",
+    "address": "",
+    "url": "https://www.google.com/search?q=%E9%AB%98%E7%A9%8D%E7%A5%9E%E7%A4%BE%E5%92%8C%E6%AD%8C%E5%B1%B1%E7%9C%8C%E5%92%8C%E6%AD%8C%E5%B1%B1%E5%B8%82%E7%A5%A2%E5%AE%9C%EF%BC%91%EF%BC%95%EF%BC%95%EF%BC%97+%E8%AA%AD%E3%81%BF%E6%96%B9&oq=%E9%AB%98%E7%A9%8D%E7%A5%9E%E7%A4%BE%E5%92%8C%E6%AD%8C%E5%B1%B1%E7%9C%8C%E5%92%8C%E6%AD%8C%E5%B1%B1%E5%B8%82%E7%A5%A2%E5%AE%9C%EF%BC%91%EF%BC%95%EF%BC%95%EF%BC%97%E3%80%80%E8%AA%AD%E3%81%BF%E6%96%B9&gs_lcrp=EgZjaHJvbWUyBggAEEUYOTIHCAEQABjvBTIKCAIQABiABBiiBDIHCAMQABjvBdIBCDQzOTdqMGo3qAIAsAIA&sourceid=chrome&source=chrome.ob&ie=UTF-8",
+    "type": "神社",
+    "d1": "",
+    "d2": ""
+  },
+  "urlKind": "search",
+  "route": "第1段(verify-gbp.mjs)で確認済み",
+  "verdict": "一致",
+  "verdictReason": "電話が一致／店名: contains(シート「高積神社」/ マップ「高積神社 下ノ宮」)／住所(検索URL): exact・町名・番地とも一致",
+  "place": {
+    "name": "高積神社 下ノ宮",
+    "address": "和歌山県和歌山市祢宜１５５７",
+    "category": "神社",
+    "lat": 34.233949,
+    "lng": 135.2547212,
+    "gbpUrl": "https://maps.google.com/?cid=12278031432626160506",
+    "phone": "073-477-0860",
+    "website": "http://www.wakayama-jinjacho.or.jp/jdb/sys/user/GetWjtTbl.php?JinjyaNo=1034",
+    "hours": null,
+    "reserveLinks": [],
+    "statusSignals": [],
+    "closedSignal": false
+  },
+  "fetchedAt": "2026-10-26T06:29:52.851Z"
+}

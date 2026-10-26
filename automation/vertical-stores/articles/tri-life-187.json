@@ -1,0 +1,72 @@
+{
+  "key": "tri-life-187",
+  "headline": "和歌山市祢宜の高積山山麓に鎮座する神社。山頂の上ノ宮に対する下ノ宮にあたり、都麻都比売命・五十猛命・大屋津比売命を祭神とする",
+  "lede": "和歌山市にある「高積神社 下ノ宮」です。高積山(標高237メートル、通称和佐山)の山頂に上ノ宮、山麓に下ノ宮が鎮座し、都麻都比売命・五十猛命・大屋津比売命を祭神としています。下ノ宮の例祭は10月10日です。",
+  "sections": [
+    {
+      "heading": "由緒",
+      "body": "『続日本紀』の大宝2年(702年)の記事に、伊太祁曽・大屋都比売・都麻都比売の3社を分けて遷したとする記事があり、これが初見とされます。"
+    },
+    {
+      "heading": "社殿と祭神",
+      "body": "高積山の山頂に上ノ宮、山麓に下ノ宮が鎮座しています。祭神は都麻都比売命・五十猛命・大屋津比売命で、下ノ宮の例祭は10月10日です。"
+    }
+  ],
+  "menus": [],
+  "tags": [],
+  "facts": [
+    {
+      "claim": "下ノ宮の住所は和歌山県和歌山市禰宜1557",
+      "source": "https://ja.wikipedia.org/wiki/%E9%AB%98%E7%A9%8D%E7%A5%9E%E7%A4%BE",
+      "quote": "和歌山県和歌山市禰宜1557",
+      "checkedAt": "2026-10-26"
+    },
+    {
+      "claim": "祭神は都麻都比売命・五十猛命・大屋津比売命",
+      "source": "https://ja.wikipedia.org/wiki/%E9%AB%98%E7%A9%8D%E7%A5%9E%E7%A4%BE",
+      "quote": "都麻都比売命（つまつひめのみこと）",
+      "checkedAt": "2026-10-26"
+    },
+    {
+      "claim": "高積山の山頂に上ノ宮、山麓に下ノ宮が鎮座する",
+      "source": "https://ja.wikipedia.org/wiki/%E9%AB%98%E7%A9%8D%E7%A5%9E%E7%A4%BE",
+      "quote": "山頂に上ノ宮、山麓に下ノ宮が鎮座",
+      "checkedAt": "2026-10-26"
+    },
+    {
+      "claim": "下ノ宮の例祭は10月10日",
+      "source": "https://ja.wikipedia.org/wiki/%E9%AB%98%E7%A9%8D%E7%A5%9E%E7%A4%BE",
+      "quote": "下ノ宮：10月10日",
+      "checkedAt": "2026-10-26"
+    },
+    {
+      "claim": "『続日本紀』大宝2年(702年)の記事に3社を分けて遷したとする記事がある",
+      "source": "https://ja.wikipedia.org/wiki/%E9%AB%98%E7%A9%8D%E7%A5%9E%E7%A4%BE",
+      "quote": "大宝2年（702年）の記事",
+      "checkedAt": "2026-10-26"
+    },
+    {
+      "claim": "住所は和歌山県和歌山市祢宜１５５７",
+      "source": "https://maps.google.com/?cid=12278031432626160506",
+      "quote": "和歌山県和歌山市祢宜１５５７",
+      "checkedAt": "2026-10-26"
+    },
+    {
+      "claim": "電話番号は073-477-0860",
+      "source": "https://maps.google.com/?cid=12278031432626160506",
+      "quote": "073-477-0860",
+      "checkedAt": "2026-10-26"
+    }
+  ],
+  "sources": [
+    {
+      "label": "参考サイト(Wikipedia)",
+      "url": "https://ja.wikipedia.org/wiki/%E9%AB%98%E7%A9%8D%E7%A5%9E%E7%A4%BE"
+    },
+    {
+      "label": "Google マップ",
+      "url": "https://maps.google.com/?cid=12278031432626160506"
+    }
+  ],
+  "notes": "automation/v2/write.mjs が 2026-10-26 に claude -p --model sonnet で作成。事実の裏取り: 7/7 件(quote が出どころにあるもの)。裏取りに通らなかった facts は載せていない。"
+}

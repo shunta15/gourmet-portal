@@ -1,0 +1,32 @@
+{
+  "tab": "トリニティアポ",
+  "tabEn": "tri-life",
+  "row": 138,
+  "sheet": {
+    "name": "逢坂八幡神社",
+    "address": "",
+    "url": "https://www.google.com/search?q=%E9%80%A2%E5%9D%82%E5%85%AB%E5%B9%A1%E7%A5%9E%E7%A4%BE&oq=%E9%80%A2%E5%9D%82%E5%85%AB%E5%B9%A1%E7%A5%9E%E7%A4%BE&gs_lcrp=EgZjaHJvbWUqBggAEEUYOzIGCAAQRRg7MggIARBFGCcYOzIGCAIQABgeMgcIAxAAGO8FMgYIBBBFGDzSAQcyNThqMGo3qAIAsAIA&sourceid=chrome&source=chrome.ob&ie=UTF-8",
+    "type": "神社",
+    "d1": "",
+    "d2": ""
+  },
+  "urlKind": "search",
+  "route": "第1段(verify-gbp.mjs)で確認済み",
+  "verdict": "一致",
+  "verdictReason": "電話が一致／店名: exact(シート「逢坂八幡神社」/ マップ「逢坂八幡神社」)",
+  "place": {
+    "name": "逢坂八幡神社",
+    "address": "鳥取県西伯郡大山町松河原２３３",
+    "category": "神社",
+    "lat": 35.5187604,
+    "lng": 133.5520628,
+    "gbpUrl": "https://maps.google.com/?cid=3538489856674212815",
+    "phone": "0858-58-2743",
+    "website": "http://www.ousaka-hachiman-shrine.com/",
+    "hours": null,
+    "reserveLinks": [],
+    "statusSignals": [],
+    "closedSignal": false
+  },
+  "fetchedAt": "2026-10-26T06:22:55.758Z"
+}

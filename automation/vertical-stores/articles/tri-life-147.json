@@ -1,0 +1,178 @@
+{
+  "key": "tri-life-147",
+  "headline": "大阪府豊中市にある便利屋の便利関工房。水栓交換や建具調整といった住まいの修理から、ハウスクリーニング、庭木の剪定まで幅広く手がけています。",
+  "lede": "豊中市にある「便利関工房」です。水回りの修理や建具の調整、クロス張り替えといった住まいの困りごとに加え、庭木の剪定・除草やハウスクリーニングにも対応しています。年中無休で、事前の連絡があれば営業時間外の作業にも応じています。",
+  "sections": [
+    {
+      "heading": "対応エリアと体制",
+      "body": "豊中市内はもちろん近畿全域からの依頼に対応しています。定休日を設けず年中無休で依頼を受け付けており、事前の連絡があれば営業時間外の作業にも応じています。スケジュールの空き状況によっては、当日中の出張も可能です。"
+    },
+    {
+      "heading": "住まいの修理",
+      "body": "水栓交換や建具調整、クロス張り替え、手すり取り付けなど、住まいの困りごとに幅広く対応しています。水漏れや雨漏りといった急を要するトラブルには、深夜でも迅速に出張して対応します。"
+    },
+    {
+      "heading": "庭木・清掃",
+      "body": "除草・草刈り、ハウスクリーニング、庭木剪定・お手入れを行っています。いずれも常時受け付けており、庭木や室内の状態に応じて作業内容を相談できます。"
+    },
+    {
+      "heading": "オリジナル家具製作",
+      "body": "既製品ではサイズが合わない場合や、部屋の雰囲気に合う棚がほしい場合に向けて、オリジナル家具製作も行っています。修理や補修で培った木材加工の技術を生かし、建具製作では水平・垂直の調整にこだわっています。"
+    }
+  ],
+  "menus": [
+    {
+      "name": "内装リフォーム"
+    },
+    {
+      "name": "除草・草刈り"
+    },
+    {
+      "name": "ハウスクリーニング"
+    },
+    {
+      "name": "庭木剪定・お手入れ"
+    }
+  ],
+  "tags": [
+    {
+      "tag": "予約制",
+      "factIndex": 18
+    }
+  ],
+  "facts": [
+    {
+      "claim": "Google マップの業種表示は「工務店」",
+      "source": "https://maps.google.com/?cid=7388807391289546718",
+      "quote": "工務店",
+      "checkedAt": "2026-10-26"
+    },
+    {
+      "claim": "電話番号は080-7118-1006",
+      "source": "https://kwan-studio.com/",
+      "quote": "080-7118-1006",
+      "checkedAt": "2026-10-26"
+    },
+    {
+      "claim": "定休日を設けず年中無休で依頼を受け付けている",
+      "source": "https://kwan-studio.com/about",
+      "quote": "定休日を設けず年中無休でご依頼を受付けております",
+      "checkedAt": "2026-10-26"
+    },
+    {
+      "claim": "事前の連絡があれば営業時間外の作業にも対応する",
+      "source": "https://kwan-studio.com/about",
+      "quote": "事前のご連絡で営業時間外の作業にも柔軟に対応",
+      "checkedAt": "2026-10-26"
+    },
+    {
+      "claim": "スケジュールの空き状況によっては当日中の出張も可能",
+      "source": "https://kwan-studio.com/about",
+      "quote": "当日中に出張することも可能",
+      "checkedAt": "2026-10-26"
+    },
+    {
+      "claim": "豊中市内はもちろん近畿全域からの依頼に対応している",
+      "source": "https://kwan-studio.com/menu",
+      "quote": "豊中市内はもちろん近畿全域からのご依頼にも対応",
+      "checkedAt": "2026-10-26"
+    },
+    {
+      "claim": "水漏れや雨漏りには深夜でも迅速に出張して対応する",
+      "source": "https://kwan-studio.com/menu",
+      "quote": "深夜でも迅速に出張",
+      "checkedAt": "2026-10-26"
+    },
+    {
+      "claim": "内装リフォームの対応サービスに水栓交換がある",
+      "source": "https://kwan-studio.com/menu",
+      "quote": "水栓交換",
+      "checkedAt": "2026-10-26"
+    },
+    {
+      "claim": "内装リフォームの対応サービスに建具調整がある",
+      "source": "https://kwan-studio.com/menu",
+      "quote": "建具調整",
+      "checkedAt": "2026-10-26"
+    },
+    {
+      "claim": "内装リフォームの対応サービスにクロス張り替えがある",
+      "source": "https://kwan-studio.com/menu",
+      "quote": "クロス張り替え",
+      "checkedAt": "2026-10-26"
+    },
+    {
+      "claim": "内装リフォームの対応サービスに手すり取り付けがある",
+      "source": "https://kwan-studio.com/menu",
+      "quote": "手すり取り付け",
+      "checkedAt": "2026-10-26"
+    },
+    {
+      "claim": "除草・草刈りのサービスがある",
+      "source": "https://kwan-studio.com/menu",
+      "quote": "除草・草刈り",
+      "checkedAt": "2026-10-26"
+    },
+    {
+      "claim": "ハウスクリーニングのサービスがある",
+      "source": "https://kwan-studio.com/menu",
+      "quote": "ハウスクリーニング",
+      "checkedAt": "2026-10-26"
+    },
+    {
+      "claim": "庭木剪定・お手入れのサービスがある",
+      "source": "https://kwan-studio.com/menu",
+      "quote": "庭木剪定・お手入れ",
+      "checkedAt": "2026-10-26"
+    },
+    {
+      "claim": "オリジナル家具製作を行っている",
+      "source": "https://kwan-studio.com/about",
+      "quote": "当店のオリジナル家具製作",
+      "checkedAt": "2026-10-26"
+    },
+    {
+      "claim": "建具製作では水平・垂直の調整にこだわっている",
+      "source": "https://kwan-studio.com/about",
+      "quote": "建具製作では水平・垂直の調整にこだわる",
+      "checkedAt": "2026-10-26"
+    },
+    {
+      "claim": "既製品ではサイズが合わない要望に応えている",
+      "source": "https://kwan-studio.com/about",
+      "quote": "既製品ではサイズが合わない",
+      "checkedAt": "2026-10-26"
+    },
+    {
+      "claim": "部屋の雰囲気に合う棚がほしいという要望に応えている",
+      "source": "https://kwan-studio.com/about",
+      "quote": "部屋の雰囲気にぴったりの棚がほしい",
+      "checkedAt": "2026-10-26"
+    },
+    {
+      "claim": "公式サイトにネット予約のページがある",
+      "source": "https://kwan-studio.com/",
+      "quote": "ネット予約",
+      "checkedAt": "2026-10-26"
+    }
+  ],
+  "sources": [
+    {
+      "label": "公式サイト",
+      "url": "https://kwan-studio.com/"
+    },
+    {
+      "label": "公式サイト(About us)",
+      "url": "https://kwan-studio.com/about"
+    },
+    {
+      "label": "公式サイト(Price & Service)",
+      "url": "https://kwan-studio.com/menu"
+    },
+    {
+      "label": "Google マップ",
+      "url": "https://maps.google.com/?cid=7388807391289546718"
+    }
+  ],
+  "notes": "automation/v2/write.mjs が 2026-10-26 に claude -p --model sonnet で作成。事実の裏取り: 19/19 件(quote が出どころにあるもの)。裏取りに通らなかった facts は載せていない。"
+}

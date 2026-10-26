@@ -3,8 +3,8 @@
     "date": "2026-10-26",
     "startedAt": "2026-10-26T06:12:17.040Z",
     "verifyFile": "automation/v2/out/verify-2026-10-25.json",
-    "args": "--from-row 80 --vertical くらし",
-    "updatedAt": "2026-10-26T06:41:58.721Z"
+    "args": "--only-row 93,103,117,138,143,147,187",
+    "updatedAt": "2026-10-26T06:54:39.945Z"
   },
   "environment": null,
   "results": {
@@ -175,7 +175,7 @@
         "official": 0,
         "rejectedByMachine": 0
       },
-      "reason": "書き手が失敗の出口で終了: 公式サイトが無く、Google マップの情報も住所・電話・業種表示のみで営業時間も無いため、事実だけで記事の複数セクションを組み立てるだけの材料が無い"
+      "reason": "書き手が失敗の出口で終了: 公式サイトなし・Google マップに営業時間表示もなし。外部検索で得られた情報(宗派・河内西国霊場の札所番号など)は複数の出どころで食い違い、裏付けできる確かな事実が店名・住所・電話・業種表示(仏教寺院)のみで、記事本文を書くには材料が足りない。"
     },
     "tri-life-97": {
       "key": "tri-life-97",
@@ -331,19 +331,38 @@
       "row": 103,
       "name": "長慶寺",
       "vertical": "くらし",
-      "status": "失敗",
-      "stage": "claude",
+      "status": "成功",
+      "stage": "done",
       "startedAt": "2026-10-26T06:18:28.014Z",
       "seconds": {
-        "total": 0
+        "total": 1
       },
       "photos": {
         "candidates": 10,
         "maps": 10,
         "official": 0,
-        "rejectedByMachine": 0
+        "rejectedByMachine": 0,
+        "used": 10,
+        "emptyFrames": 0
       },
-      "reason": "書き手が失敗の出口で終了: 公式サイトの文字が取得できておらず、store.json(Googleマップ)の情報も住所・電話・24時間営業・業種表示(仏教寺院)のみで、由緒や堂宇の説明などsectionsを事実で埋める材料が無いため。"
+      "check": {
+        "rewrote": false,
+        "shapeProblems": [],
+        "sentenceProblems": 0,
+        "facts": {
+          "total": 21,
+          "verified": 20
+        }
+      },
+      "memo": "裏取りに通らない facts 1 件は載せていない",
+      "placeId": "li0028",
+      "featureInGenerated": false,
+      "featureNote": null,
+      "urls": {
+        "shop": "/life/shop/li0028",
+        "article": null
+      },
+      "finishedAt": "2026-10-26T06:50:21.275Z"
     },
     "tri-life-107": {
       "key": "tri-life-107",
@@ -425,31 +444,41 @@
       "row": 117,
       "name": "加支多神社",
       "vertical": "くらし",
-      "status": "失敗",
-      "stage": "check",
+      "status": "成功",
+      "stage": "done",
       "startedAt": "2026-10-26T06:20:23.165Z",
       "seconds": {
-        "total": 33,
-        "claude": 33
+        "total": 132,
+        "claude": 141
       },
       "photos": {
         "candidates": 10,
         "maps": 10,
         "official": 0,
-        "rejectedByMachine": 0
+        "rejectedByMachine": 0,
+        "used": 10,
+        "emptyFrames": 0
       },
       "check": {
         "rewrote": true,
-        "shapeProblems": [
-          "facts が少なすぎる(3 件・4 件以上)"
-        ],
+        "shapeProblems": [],
         "sentenceProblems": 0,
-        "facts": null
+        "facts": {
+          "total": 8,
+          "verified": 8
+        }
       },
-      "reason": "検査に通らない(1 件・書き直し後も): facts が少なすぎる(3 件・4 件以上)",
       "checkDetail": [
         "facts が少なすぎる(3 件・4 件以上)"
-      ]
+      ],
+      "placeId": "li0029",
+      "featureInGenerated": false,
+      "featureNote": null,
+      "urls": {
+        "shop": "/life/shop/li0029",
+        "article": null
+      },
+      "finishedAt": "2026-10-26T06:52:33.370Z"
     },
     "tri-life-120": {
       "key": "tri-life-120",
@@ -532,19 +561,38 @@
       "row": 138,
       "name": "逢坂八幡神社",
       "vertical": "くらし",
-      "status": "失敗",
-      "stage": "claude",
+      "status": "成功",
+      "stage": "done",
       "startedAt": "2026-10-26T06:22:39.089Z",
       "seconds": {
-        "total": 0
+        "total": 30,
+        "claude": 29
       },
       "photos": {
         "candidates": 10,
         "maps": 10,
         "official": 0,
-        "rejectedByMachine": 0
+        "rejectedByMachine": 0,
+        "used": 10,
+        "emptyFrames": 0
       },
-      "reason": "書き手が失敗の出口で終了: 公式サイトの文字が取得できておらず、Google マップの情報も店名・住所・電話・業種表示のみで営業時間や由緒などの事実が無く、記事を事実だけで書くには材料が不足している"
+      "check": {
+        "rewrote": true,
+        "shapeProblems": [],
+        "sentenceProblems": 0,
+        "facts": {
+          "total": 9,
+          "verified": 9
+        }
+      },
+      "placeId": "li0030",
+      "featureInGenerated": false,
+      "featureNote": null,
+      "urls": {
+        "shop": "/life/shop/li0030",
+        "article": null
+      },
+      "finishedAt": "2026-10-26T06:53:03.487Z"
     },
     "tri-life-143": {
       "key": "tri-life-143",
@@ -564,7 +612,7 @@
         "rejectedByMachine": 0
       },
       "memo": "写真の候補が 0 枚(Google マップ・公式サイトとも取れなかった)。写真なしで続ける",
-      "reason": "書き手が失敗の出口で終了: 公式サイトの文字がタイトルのみで本文が無く、写真候補も0枚のため記事を書く材料が足りない。加えて業種「便利屋」が用意されたカテゴリ(lesson/shrine-temple/fashion-craft/photo-marriage/car-repair/flower-farm/fortune)のいずれにも当たらない。"
+      "reason": "書き手が失敗の出口で終了: 公式サイトの文字がタイトル1行のみで、業務内容などの具体的な事実が無く、写真候補も0枚のため、記事を書くための材料が不足している"
     },
     "tri-life-145": {
       "key": "tri-life-145",
@@ -608,8 +656,8 @@
       "row": 147,
       "name": "便利関工房",
       "vertical": "くらし",
-      "status": "失敗",
-      "stage": "claude",
+      "status": "成功",
+      "stage": "done",
       "startedAt": "2026-10-26T06:24:27.531Z",
       "seconds": {
         "total": 0
@@ -618,9 +666,27 @@
         "candidates": 22,
         "maps": 10,
         "official": 12,
-        "rejectedByMachine": 6
+        "rejectedByMachine": 6,
+        "used": 14,
+        "emptyFrames": 0
       },
-      "reason": "書き手が失敗の出口で終了: 店の実態は住宅の補修・リフォーム・清掃・除草・家具製作を行う便利屋/工務店で、用意されたcategoryスラッグ(lesson/shrine-temple/fashion-craft/photo-marriage/car-repair/flower-farm/fortune)のどれにも当てはまらない"
+      "check": {
+        "rewrote": false,
+        "shapeProblems": [],
+        "sentenceProblems": 0,
+        "facts": {
+          "total": 19,
+          "verified": 19
+        }
+      },
+      "placeId": "li0031",
+      "featureInGenerated": false,
+      "featureNote": null,
+      "urls": {
+        "shop": "/life/shop/li0031",
+        "article": null
+      },
+      "finishedAt": "2026-10-26T06:53:03.631Z"
     },
     "tri-life-153": {
       "key": "tri-life-153",
@@ -852,19 +918,38 @@
       "row": 187,
       "name": "高積神社",
       "vertical": "くらし",
-      "status": "失敗",
-      "stage": "claude",
+      "status": "成功",
+      "stage": "done",
       "startedAt": "2026-10-26T06:29:39.058Z",
       "seconds": {
-        "total": 0
+        "total": 96,
+        "claude": 95
       },
       "photos": {
         "candidates": 10,
         "maps": 10,
         "official": 0,
-        "rejectedByMachine": 0
+        "rejectedByMachine": 0,
+        "used": 10,
+        "emptyFrames": 0
       },
-      "reason": "書き手が失敗の出口で終了: 公式サイトは文字が取れずデータベースのエラー表示のみで、store.json(Google マップ)には店名・住所・電話・業種の表示しかなく営業時間も無い。由緒・祭事・内容など記事の節を事実だけで書くための材料が無い。"
+      "check": {
+        "rewrote": true,
+        "shapeProblems": [],
+        "sentenceProblems": 0,
+        "facts": {
+          "total": 7,
+          "verified": 7
+        }
+      },
+      "placeId": "li0032",
+      "featureInGenerated": false,
+      "featureNote": null,
+      "urls": {
+        "shop": "/life/shop/li0032",
+        "article": null
+      },
+      "finishedAt": "2026-10-26T06:54:39.944Z"
     },
     "tri-life-189": {
       "key": "tri-life-189",

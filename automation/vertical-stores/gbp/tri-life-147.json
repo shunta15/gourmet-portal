@@ -1,0 +1,32 @@
+{
+  "tab": "トリニティアポ",
+  "tabEn": "tri-life",
+  "row": 147,
+  "sheet": {
+    "name": "便利関工房",
+    "address": "",
+    "url": "https://www.google.com/search?q=%E4%BE%BF%E5%88%A9%E9%96%A2%E5%B7%A5%E6%88%BF%09%E3%80%92561-0826+%E5%A4%A7%E9%98%AA%E5%BA%9C%E8%B1%8A%E4%B8%AD%E5%B8%82%E5%B3%B6%E6%B1%9F%E7%94%BA%EF%BC%92%E4%B8%81%E7%9B%AE&sca_esv=81ee190d3896ba19&biw=748&bih=663&sxsrf=APpeQnvsvFly_LAIt9Qkafq8SDm0RyW_Zw%3A1792490251747&ei=CzvXasunLMaM2roPr5vt2Ak&uact=5&oq=%E4%BE%BF%E5%88%A9%E9%96%A2%E5%B7%A5%E6%88%BF%09%E3%80%92561-0826+%E5%A4%A7%E9%98%AA%E5%BA%9C%E8%B1%8A%E4%B8%AD%E5%B8%82%E5%B3%B6%E6%B1%9F%E7%94%BA%EF%BC%92%E4%B8%81%E7%9B%AE&gs_lp=Egxnd3Mtd2l6LXNlcnAiQOS-v-WIqemWouW3peaIvwnjgJI1NjEtMDgyNiDlpKfpmKrlupzosYrkuK3luILls7bmsZ_nlLrvvJLkuIHnm64yBxAjGOoCGCcyBxAjGOoCGCcyBxAjGOoCGCcyBxAjGOoCGCcyBxAjGOoCGCcyBxAjGOoCGCcyBxAjGOoCGCcyBxAjGOoCGCcyBxAjGOoCGCcyBxAjGOoCGCdIjARQxAFYxAFwAXgAkAEAmAEAoAEAqgEAuAEDyAEA-AEC-AEBmAIBoAIRqAIKmAMR8QX24DhYHlurrpIHATGgBwCyBwC4BwDCBwMyLTHIBweACAE&sclient=gws-wiz-serp#lrd=0x6000fbc3d9a87fa3:0x668a512cbf9817de,1,,,,",
+    "type": "小売り",
+    "d1": "",
+    "d2": ""
+  },
+  "urlKind": "search",
+  "route": "第1段(verify-gbp.mjs)で確認済み",
+  "verdict": "一致",
+  "verdictReason": "電話が一致／店名: exact(シート「便利関工房」/ マップ「便利関工房」)／住所(検索URL): coarse・シート側が2までで番地まで確認できない（マップ:2-25）",
+  "place": {
+    "name": "便利関工房",
+    "address": "大阪府豊中市島江町２丁目２５",
+    "category": "工務店",
+    "lat": 34.7411095,
+    "lng": 135.4649938,
+    "gbpUrl": "https://maps.google.com/?cid=7388807391289546718",
+    "phone": "080-7118-1006",
+    "website": "https://kwan-studio.com/",
+    "hours": null,
+    "reserveLinks": [],
+    "statusSignals": [],
+    "closedSignal": false
+  },
+  "fetchedAt": "2026-10-26T06:24:43.014Z"
+}

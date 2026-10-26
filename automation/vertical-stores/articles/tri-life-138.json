@@ -1,0 +1,84 @@
+{
+  "key": "tri-life-138",
+  "headline": "鳥取県西伯郡大山町松河原にある神社。清和天皇の貞観7年(865年)3月、豊前国宇佐八幡宮から勧請して創建された。",
+  "lede": "西伯郡大山町にある「逢坂八幡神社」です。清和天皇の貞観7年(865年)3月、豊前国宇佐八幡宮から勧請して創建されました。祭神は十六柱で、例祭は5月4日です。",
+  "sections": [
+    {
+      "heading": "由緒",
+      "body": "清和天皇の貞観7年(865年)3月、豊前国宇佐八幡宮から勧請して創建されました。天文12年(1543年)6月5日には、尼子晴久が祈願して霊感があったとして、神田120石を寄附しています。明治元年に「逢坂神社」と改称し、大正9年12月に現在の「逢坂八幡神社」という名前になりました。"
+    },
+    {
+      "heading": "祭神と例祭",
+      "body": "祭神は十六柱で、譽田別尊、天照皇大神、素盞嗚尊、大山祇尊、木花咲耶姫尊、倉稲魂命、武内宿禰命などが祀られています。例祭は5月4日です。"
+    }
+  ],
+  "menus": [],
+  "tags": [],
+  "facts": [
+    {
+      "claim": "住所は大山町松河原233",
+      "source": "https://tottori-jinjacho.jp/pages/541/",
+      "quote": "大山町松河原233",
+      "checkedAt": "2026-10-26"
+    },
+    {
+      "claim": "例祭は5月4日",
+      "source": "https://tottori-jinjacho.jp/pages/541/",
+      "quote": "例祭5月4日",
+      "checkedAt": "2026-10-26"
+    },
+    {
+      "claim": "貞観7年(865年)3月に豊前国宇佐八幡宮から勧請された",
+      "source": "https://tottori-jinjacho.jp/pages/541/",
+      "quote": "豊前国宇佐八幡宮より勧請",
+      "checkedAt": "2026-10-26"
+    },
+    {
+      "claim": "天文12年(1543年)6月5日に尼子晴久が神田120石を寄附した",
+      "source": "https://tottori-jinjacho.jp/pages/541/",
+      "quote": "神田120石を寄附",
+      "checkedAt": "2026-10-26"
+    },
+    {
+      "claim": "明治元年に逢坂神社と改称した",
+      "source": "https://tottori-jinjacho.jp/pages/541/",
+      "quote": "明治元年逢坂神社と改称",
+      "checkedAt": "2026-10-26"
+    },
+    {
+      "claim": "大正9年12月に逢坂八幡神社と改称した",
+      "source": "https://tottori-jinjacho.jp/pages/541/",
+      "quote": "大正9年12月、逢坂八幡神社と改称",
+      "checkedAt": "2026-10-26"
+    },
+    {
+      "claim": "祭神に譽田別尊が含まれる",
+      "source": "https://tottori-jinjacho.jp/pages/541/",
+      "quote": "譽田別尊",
+      "checkedAt": "2026-10-26"
+    },
+    {
+      "claim": "祭神に武内宿禰命が含まれる",
+      "source": "https://tottori-jinjacho.jp/pages/541/",
+      "quote": "武内宿禰命",
+      "checkedAt": "2026-10-26"
+    },
+    {
+      "claim": "電話は0858-58-2743",
+      "source": "https://maps.google.com/?cid=3538489856674212815",
+      "quote": "0858-58-2743",
+      "checkedAt": "2026-10-26"
+    }
+  ],
+  "sources": [
+    {
+      "label": "鳥取県神社庁(逢坂八幡神社)",
+      "url": "https://tottori-jinjacho.jp/pages/541/"
+    },
+    {
+      "label": "Google マップ",
+      "url": "https://maps.google.com/?cid=3538489856674212815"
+    }
+  ],
+  "notes": "automation/v2/write.mjs が 2026-10-26 に claude -p --model sonnet で作成。事実の裏取り: 9/9 件(quote が出どころにあるもの)。裏取りに通らなかった facts は載せていない。"
+}
