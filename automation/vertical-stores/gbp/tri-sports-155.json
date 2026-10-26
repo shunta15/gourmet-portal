@@ -1,0 +1,32 @@
+{
+  "tab": "トリニティアポ",
+  "tabEn": "tri-sports",
+  "row": 155,
+  "sheet": {
+    "name": "MAPLE LEAF HOCKEY SCHOOL",
+    "address": "",
+    "url": "https://www.google.com/search?q=090-6267-4337+MAPLE+LEAF+HOCKEY+SCHOOL&oq=090-6267-4337%09MAPLE+LEAF+HOCKEY+SCHOOL&gs_lcrp=EgZjaHJvbWUyBggAEEUYOTIHCAEQABjvBTIHCAIQABjvBTIHCAMQABjvBTIHCAQQABjvBTIHCAUQABjvBdIBBzQ4N2owajSoAgCwAgE&sourceid=chrome&source=chrome.ob&ie=UTF-8",
+    "type": "アイスホッケースクール",
+    "d1": "",
+    "d2": ""
+  },
+  "urlKind": "search",
+  "route": "第1段(verify-gbp.mjs)で確認済み",
+  "verdict": "一致",
+  "verdictReason": "電話が一致／店名: exact(シート「MAPLE LEAF HOCKEY SCHOOL」/ マップ「MAPLE LEAF HOCKEY SCHOOL」)",
+  "place": {
+    "name": "MAPLE LEAF HOCKEY SCHOOL",
+    "address": "北海道札幌市清田区清田４丁目３−３−１４",
+    "category": "アイスホッケー クラブ",
+    "lat": 42.9965497,
+    "lng": 141.432073,
+    "gbpUrl": "https://maps.google.com/?cid=17114586077196303330",
+    "phone": "090-6267-4337",
+    "website": "http://mapleleafhs.com/",
+    "hours": null,
+    "reserveLinks": [],
+    "statusSignals": [],
+    "closedSignal": false
+  },
+  "fetchedAt": "2026-10-25T00:56:31.086Z"
+}

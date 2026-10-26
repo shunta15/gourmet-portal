@@ -1,0 +1,80 @@
+{
+  "key": "tri-activity-142",
+  "headline": "長崎県佐世保市鹿子前町にある、カヌー・カヤックツアーの店。九十九島の海でカヤックツアーを行っている。",
+  "lede": "佐世保市にある「Blue Corn」です。九十九島パールシーリゾートを集合場所に、カヤックで九十九島の無人島へ向かうツアーを行っています。営業時間は10時から17時です。",
+  "sections": [
+    {
+      "heading": "ツアーの内容",
+      "body": "「九十九島でカヤック＆BBQ」という名前のツアーがあり、カヤックで九十九島の無人島へ向かいます。所要時間は5時間です。"
+    },
+    {
+      "heading": "集合場所とアクセス",
+      "body": "集合場所は長崎県佐世保市鹿子前町にある九十九島パールシーリゾートです。店の所在地は佐世保市鹿子前町798-2で、電話は090-3323-3498です。"
+    }
+  ],
+  "menus": [
+    {
+      "name": "九十九島でカヤック＆BBQ"
+    }
+  ],
+  "tags": [],
+  "facts": [
+    {
+      "claim": "営業時間は毎日10:00から17:00",
+      "source": "https://maps.google.com/?cid=4382569925399837524",
+      "quote": "10:00–17:00",
+      "checkedAt": "2026-10-25"
+    },
+    {
+      "claim": "住所は長崎県佐世保市鹿子前町798-2",
+      "source": "https://maps.google.com/?cid=4382569925399837524",
+      "quote": "長崎県佐世保市鹿子前町７９８−２",
+      "checkedAt": "2026-10-25"
+    },
+    {
+      "claim": "電話番号は090-3323-3498",
+      "source": "https://maps.google.com/?cid=4382569925399837524",
+      "quote": "090-3323-3498",
+      "checkedAt": "2026-10-25"
+    },
+    {
+      "claim": "業種はカヌー・カヤックツアー代理店",
+      "source": "https://maps.google.com/?cid=4382569925399837524",
+      "quote": "カヌー / カヤックツアー代理店",
+      "checkedAt": "2026-10-25"
+    },
+    {
+      "claim": "「九十九島でカヤック＆BBQ」という名前のツアーがある",
+      "source": "https://www.jalan.net/kankou/spt_guide000000189704/activity/l0000130E1/",
+      "quote": "九十九島でカヤック＆BBQ",
+      "checkedAt": "2026-10-25"
+    },
+    {
+      "claim": "ツアーの所要時間は5時間",
+      "source": "https://www.jalan.net/kankou/spt_guide000000189704/activity/l0000130E1/",
+      "quote": "5時間",
+      "checkedAt": "2026-10-25"
+    },
+    {
+      "claim": "集合場所は九十九島パールシーリゾート",
+      "source": "https://www.jalan.net/kankou/spt_guide000000189704/activity/l0000130E1/",
+      "quote": "九十九島パールシーリゾート",
+      "checkedAt": "2026-10-25"
+    }
+  ],
+  "sources": [
+    {
+      "label": "情報サイト(じゃらん・ツアー詳細)",
+      "url": "https://www.jalan.net/kankou/spt_guide000000189704/activity/l0000130E1/"
+    },
+    {
+      "label": "情報サイト(じゃらん・店の基本情報)",
+      "url": "https://www.jalan.net/kankou/spt_guide000000189704/"
+    },
+    {
+      "label": "Google マップ",
+      "url": "https://maps.google.com/?cid=4382569925399837524"
+    }
+  ],
+  "notes": "automation/v2/write.mjs が 2026-10-25 に claude -p --model sonnet で作成。事実の裏取り: 7/7 件(quote が出どころにあるもの)。裏取りに通らなかった facts は載せていない。"
+}

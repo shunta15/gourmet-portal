@@ -1,0 +1,40 @@
+{
+  "tab": "トリニティアポ",
+  "tabEn": "tri-bodycare",
+  "row": 172,
+  "sheet": {
+    "name": "整体院Derive",
+    "address": "",
+    "url": "https://www.google.com/search?q=080-1560-8594+%E6%95%B4%E4%BD%93%E9%99%A2Derive+%E3%80%92519-0211+%E4%B8%89%E9%87%8D%E7%9C%8C%E4%BA%80%E5%B1%B1%E5%B8%82%E5%B7%9D%E5%B4%8E%E7%94%BA%EF%BC%93%EF%BC%90%EF%BC%98%EF%BC%98&oq=080-1560-8594%09%E6%95%B4%E4%BD%93%E9%99%A2Derive%09%E3%80%92519-0211+%E4%B8%89%E9%87%8D%E7%9C%8C%E4%BA%80%E5%B1%B1%E5%B8%82%E5%B7%9D%E5%B4%8E%E7%94%BA%EF%BC%93%EF%BC%90%EF%BC%98%EF%BC%98&gs_lcrp=EgZjaHJvbWUyBggAEEUYOdIBBzIwNmowajmoAgawAgHxBRtEP1RCqVQ-&sourceid=chrome&source=chrome.ob&ie=UTF-8",
+    "type": "美容",
+    "d1": "",
+    "d2": ""
+  },
+  "urlKind": "search",
+  "route": "第1段(verify-gbp.mjs)で確認済み",
+  "verdict": "一致",
+  "verdictReason": "電話が一致／店名: exact(シート「整体院Derive」/ マップ「整体院Derive」)／住所(検索URL): exact・町名・番地とも一致",
+  "place": {
+    "name": "整体院Derive",
+    "address": "三重県亀山市川崎町３０８８",
+    "category": "整体",
+    "lat": 34.8973323,
+    "lng": 136.4749948,
+    "gbpUrl": "https://maps.google.com/?cid=7523553987694133174",
+    "phone": "080-1560-8594",
+    "website": "https://derive-seitai.com/",
+    "hours": {
+      "月": "24時間営業",
+      "火": "24時間営業",
+      "水": "24時間営業",
+      "木": "24時間営業",
+      "金": "24時間営業",
+      "土": "24時間営業",
+      "日": "24時間営業"
+    },
+    "reserveLinks": [],
+    "statusSignals": [],
+    "closedSignal": false
+  },
+  "fetchedAt": "2026-10-25T01:51:57.414Z"
+}

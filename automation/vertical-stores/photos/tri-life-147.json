@@ -1,0 +1,146 @@
+{
+  "key": "tri-life-147",
+  "images": [
+    {
+      "path": "/_portal/vshops/tri-life-147/g03.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9T3WBFf_3uuydV4lEFvHSgb-wExaembLSPmMubwWoo061wPJvrs_DNNfZtR9rvbZYQTSYmpndP2hCX4QJpgN0clP3Xc4j-kWoa50fCLGtTarY-OwRh4pUckwhmk8UTLhn4YiVyFPpDKXdzQ=s1200",
+      "pageUrl": "https://maps.google.com/?cid=7388807391289546718",
+      "what": "木目調の壁がある廊下でモップをかける作業員",
+      "kind": "common",
+      "width": 675,
+      "height": 1200,
+      "source": "Google マップ"
+    },
+    {
+      "path": "/_portal/vshops/tri-life-147/g04.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9TfsozKw9-ENB4KOO5CExD7b8moCMiq39UqK0HhAg_ofBknLjRxjUGblVjzWpTd_d8K5OzN7QVn301HPEeKSQwBMcniNBWghD-n7D2-kjFB2MZAXSpSuo56-QtbuBa-6z-y4luj4Aop9Z7T=s1200",
+      "pageUrl": "https://maps.google.com/?cid=7388807391289546718",
+      "what": "フローリングと障子がある空の部屋",
+      "kind": "room",
+      "width": 675,
+      "height": 1200,
+      "source": "Google マップ"
+    },
+    {
+      "path": "/_portal/vshops/tri-life-147/g06.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9SdF5ZB0MftAOA7RtuDCQf2TEH8OONAb5-iJrkaggeM99BRfIVcrzhvZOjVT48xHsc79-RwRTIq_EUR8gtki-eHv-CWslX45jf9hW82VbMEaoHZkql5vP7sja_WA4YSrGGqXa8jRS8s_ZKD=s1200",
+      "pageUrl": "https://maps.google.com/?cid=7388807391289546718",
+      "what": "畳と襖がある和室",
+      "kind": "room",
+      "width": 898,
+      "height": 1200,
+      "source": "Google マップ"
+    },
+    {
+      "path": "/_portal/vshops/tri-life-147/g08.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9R0o_xeonSPmBf6K49krfUhbTW-BbKO3L8ou6iIHgTlDpaEQGxGRZ7gyA4EdJdzMaD-FWUaBykenq7FVKnvjZBrQJI9lESq7OKMQ4lGrsv4N0bV0sm-_Cety7c1n5NfrrOPs-2X7IV-eaLM=s1200",
+      "pageUrl": "https://maps.google.com/?cid=7388807391289546718",
+      "what": "足場に乗って外壁を塗装する作業員二人",
+      "kind": "exterior",
+      "width": 1200,
+      "height": 960,
+      "source": "Google マップ"
+    },
+    {
+      "path": "/_portal/vshops/tri-life-147/s09.jpg",
+      "imageUrl": "https://kwan-studio.com/static/image/main/sp/20260606135218_57305674.JPG",
+      "pageUrl": "https://kwan-studio.com/",
+      "what": "キッチンのシンク付近で作業する作業員",
+      "kind": "common",
+      "width": 800,
+      "height": 600,
+      "source": "公式サイト"
+    },
+    {
+      "path": "/_portal/vshops/tri-life-147/s10.jpg",
+      "imageUrl": "https://kwan-studio.com/static/image/main/sp/20260417152535_60473499.jpeg",
+      "pageUrl": "https://kwan-studio.com/",
+      "what": "木製の階段を取り付ける作業員",
+      "kind": "common",
+      "width": 800,
+      "height": 600,
+      "source": "公式サイト"
+    },
+    {
+      "path": "/_portal/vshops/tri-life-147/s11.jpg",
+      "imageUrl": "https://kwan-studio.com/static/image/main/sp/20260417152535_50173216.jpeg",
+      "pageUrl": "https://kwan-studio.com/",
+      "what": "壁の高い位置で作業する作業員",
+      "kind": "common",
+      "width": 800,
+      "height": 600,
+      "source": "公式サイト"
+    },
+    {
+      "path": "/_portal/vshops/tri-life-147/s12.jpg",
+      "imageUrl": "https://kwan-studio.com/static/image/main/sp/20260417152535_96967159.jpeg",
+      "pageUrl": "https://kwan-studio.com/",
+      "what": "ドア枠付近で作業する作業員",
+      "kind": "common",
+      "width": 800,
+      "height": 600,
+      "source": "公式サイト"
+    },
+    {
+      "path": "/_portal/vshops/tri-life-147/s13.jpg",
+      "imageUrl": "https://kwan-studio.com/static/image/main/sp/20260417152535_44855405.jpeg",
+      "pageUrl": "https://kwan-studio.com/",
+      "what": "トイレのドア付近で作業する作業員",
+      "kind": "common",
+      "width": 800,
+      "height": 600,
+      "source": "公式サイト"
+    },
+    {
+      "path": "/_portal/vshops/tri-life-147/s14.jpg",
+      "imageUrl": "https://kwan-studio.com/static/image/introduction/20260417140002_21656956.jpg",
+      "pageUrl": "https://kwan-studio.com/",
+      "what": "引き戸の枠を作業する作業員",
+      "kind": "common",
+      "width": 960,
+      "height": 1280,
+      "source": "公式サイト"
+    },
+    {
+      "path": "/_portal/vshops/tri-life-147/s15.jpg",
+      "imageUrl": "https://kwan-studio.com/static/image/appeal/20260416115519_19759666.jpg",
+      "pageUrl": "https://kwan-studio.com/",
+      "what": "デスクでノートパソコンを使う男性",
+      "kind": "common",
+      "width": 960,
+      "height": 1280,
+      "source": "公式サイト"
+    },
+    {
+      "path": "/_portal/vshops/tri-life-147/s16.jpg",
+      "imageUrl": "https://kwan-studio.com/static/image/appeal/20260416120840_90523933.JPG",
+      "pageUrl": "https://kwan-studio.com/",
+      "what": "トイレ付近でかがんで作業する作業員",
+      "kind": "common",
+      "width": 960,
+      "height": 1280,
+      "source": "公式サイト"
+    },
+    {
+      "path": "/_portal/vshops/tri-life-147/s17.jpg",
+      "imageUrl": "https://kwan-studio.com/static/image/appeal/20260417093422_60254044.JPG",
+      "pageUrl": "https://kwan-studio.com/",
+      "what": "玄関付近の壁で作業する作業員",
+      "kind": "common",
+      "width": 960,
+      "height": 1280,
+      "source": "公式サイト"
+    },
+    {
+      "path": "/_portal/vshops/tri-life-147/s18.jpg",
+      "imageUrl": "https://kwan-studio.com/static/image/appeal/20260417140522_85633839.jpg",
+      "pageUrl": "https://kwan-studio.com/",
+      "what": "収納の枠を作業する作業員",
+      "kind": "common",
+      "width": 960,
+      "height": 1280,
+      "source": "公式サイト"
+    }
+  ],
+  "note": "automation/v2/write.mjs が 2026-10-26T06:53:03.505Z に取得。店の実写だけ(AI 画像・汎用画像・地図・ロゴ・顔が大きい画像は除外)。"
+}

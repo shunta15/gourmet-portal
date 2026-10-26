@@ -1,0 +1,40 @@
+{
+  "tab": "トリニティアポ",
+  "tabEn": "tri-life",
+  "row": 98,
+  "sheet": {
+    "name": "別格第7番 出石寺",
+    "address": "",
+    "url": "https://www.google.com/search?q=%E5%87%BA%E7%9F%B3%E5%AF%BA+%E6%84%9B%E5%AA%9B%E7%9C%8C%E5%A4%A7%E6%B4%B2%E5%B8%82%E8%B1%8A%E8%8C%82%E4%B9%99%EF%BC%91&oq=%E5%87%BA%E7%9F%B3%E5%AF%BA%09%E6%84%9B%E5%AA%9B%E7%9C%8C%E5%A4%A7%E6%B4%B2%E5%B8%82%E8%B1%8A%E8%8C%82%E4%B9%99%EF%BC%91&gs_lcrp=EgZjaHJvbWUyBggAEEUYOTIHCAEQABjvBTIHCAIQABjvBTIKCAMQABiABBiiBDIKCAQQABiABBiiBNIBBzI4NGowajeoAgCwAgA&sourceid=chrome&source=chrome.ob&ie=UTF-8",
+    "type": "寺",
+    "d1": "",
+    "d2": ""
+  },
+  "urlKind": "search",
+  "route": "第1段(verify-gbp.mjs)で確認済み",
+  "verdict": "一致",
+  "verdictReason": "電話が一致／店名: contains(シート「別格第7番 出石寺」/ マップ「出石寺」)／住所(検索URL): exact・町名・番地とも一致",
+  "place": {
+    "name": "出石寺",
+    "address": "愛媛県大洲市豊茂乙１",
+    "category": "仏教寺院",
+    "lat": 33.5354587,
+    "lng": 132.4658144,
+    "gbpUrl": "https://maps.google.com/?cid=8538771730742450309",
+    "phone": "0893-57-0011",
+    "website": "https://syussekiji-no7in20.jimdofree.com/",
+    "hours": {
+      "月": "07:00–17:00",
+      "火": "07:00–17:00",
+      "水": "07:00–17:00",
+      "木": "07:00–17:00",
+      "金": "07:00–17:00",
+      "土": "07:00–17:00",
+      "日": "07:00–17:00"
+    },
+    "reserveLinks": [],
+    "statusSignals": [],
+    "closedSignal": false
+  },
+  "fetchedAt": "2026-10-26T06:16:28.326Z"
+}

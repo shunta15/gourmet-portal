@@ -1,0 +1,40 @@
+{
+  "tab": "トリニティアポ",
+  "tabEn": "tri-life",
+  "row": 121,
+  "sheet": {
+    "name": "妙宣寺",
+    "address": "",
+    "url": "https://www.google.com/search?q=%E5%A6%99%E5%AE%A3%E5%AF%BA+%E5%92%8C%E6%AD%8C%E5%B1%B1%E7%9C%8C%E5%92%8C%E6%AD%8C%E5%B1%B1%E5%B8%82%E6%96%B0%E5%A0%80%E6%9D%B1%EF%BC%92-%EF%BC%91-%EF%BC%98+%E8%AA%AD%E3%81%BF%E6%96%B9&sca_esv=c9b655d7b11e91c2&sxsrf=APpeQntXBZQViN08VIemfKg8MadhCslRfA%3A1792465420777&ei=DNrWavf2LvLt1e8P2f7w6Qk&biw=1231&bih=816&uact=5&oq=%E5%A6%99%E5%AE%A3%E5%AF%BA+%E5%92%8C%E6%AD%8C%E5%B1%B1%E7%9C%8C%E5%92%8C%E6%AD%8C%E5%B1%B1%E5%B8%82%E6%96%B0%E5%A0%80%E6%9D%B1%EF%BC%92-%EF%BC%91-%EF%BC%98+%E8%AA%AD%E3%81%BF%E6%96%B9&gs_lp=Egxnd3Mtd2l6LXNlcnAiQOWmmeWuo-WvuiDlkozmrYzlsbHnnIzlkozmrYzlsbHluILmlrDloIDmnbHvvJIt77yRLe-8mCDoqq3jgb_mlrkyBRAAGO8FMgUQABjvBTIFEAAY7wUyBRAAGO8FSLwUUNoBWJIScAF4AJABAJgBiwGgAf0HqgEDNS41uAEDyAEA-AEBmAIIoAKDBsICCBAAGO8FGLADwgILEAAYgAQYogQYsAPCAgUQIRigAcICCRAhGAoYoAEYKsICBhAhGAoYKpgDAIgGAZAGBJIHAzIuNqAH2BayBwMxLja4B_wFwgcFMC40LjTIBxOACAE&sclient=gws-wiz-serp",
+    "type": "寺",
+    "d1": "",
+    "d2": ""
+  },
+  "urlKind": "search",
+  "route": "第1段(verify-gbp.mjs)で確認済み",
+  "verdict": "一致",
+  "verdictReason": "電話が一致／店名: contains(シート「妙宣寺」/ マップ「日蓮宗 妙宣寺」)／住所(検索URL): exact・町名・番地とも一致",
+  "place": {
+    "name": "日蓮宗 妙宣寺",
+    "address": "和歌山県和歌山市新堀東２丁目１−８",
+    "category": "仏教寺院",
+    "lat": 34.2145786,
+    "lng": 135.1744531,
+    "gbpUrl": "https://maps.google.com/?cid=17716851611011573937",
+    "phone": "073-422-7968",
+    "website": "https://wakayama-myosenji.com/",
+    "hours": {
+      "月": "08:00–17:00",
+      "火": "08:00–17:00",
+      "水": "08:00–17:00",
+      "木": "08:00–17:00",
+      "金": "08:00–17:00",
+      "土": "08:00–17:00",
+      "日": "08:00–17:00"
+    },
+    "reserveLinks": [],
+    "statusSignals": [],
+    "closedSignal": false
+  },
+  "fetchedAt": "2026-10-26T06:22:05.045Z"
+}

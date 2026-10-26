@@ -1,3 +1,4 @@
+import { withUnlisted } from "@/lib/unlistedScope";
 import { shopPage } from "@/components/portal/pages/shop";
 import { SportsShopPage } from "@/components/portal/sports/pages";
 
@@ -8,8 +9,8 @@ const common = shopPage("sports");
 export const revalidate = 3600;
 export const dynamicParams = true;
 export const generateStaticParams = common.generateStaticParams;
-export const generateMetadata = common.generateMetadata;
+export const generateMetadata = withUnlisted(common.generateMetadata);
 
-export default async function Page(props: { params: Promise<{ id: string }> }) {
+export default withUnlisted(async function Page(props: { params: Promise<{ id: string }> }) {
   return <SportsShopPage id={(await props.params).id} />;
-}
+});

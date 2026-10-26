@@ -1,7 +1,7 @@
 // Light types and constants for client components
 // Extracted from lib/data.ts to reduce bundle size
 
-import { ARTICLE_REGIONS, type ArticleRegionKey } from "./articleRegions";
+import { ARTICLE_REGIONS, UNLISTED_ONLY_REGION_NAMES, type ArticleRegionKey, type UnlistedOnlyRegionKey } from "./articleRegions";
 import { isBlockedImage } from "./imageBlocklist";
 
 export type Stat = { n: string; l: string };
@@ -29,7 +29,7 @@ export type BaseRegionKey =
  * 地域キー = 手書きの16地域 + 記事由来の店がある都道府県（lib/articleRegions.ts・自動生成）。
  * 新しい県は都道府県単位（例: mie=三重県）。愛知県全体は従来どおり nagoya。
  */
-export type RegionKey = BaseRegionKey | ArticleRegionKey;
+export type RegionKey = BaseRegionKey | ArticleRegionKey | UnlistedOnlyRegionKey;
 
 export type Region = {
   name: string;
@@ -413,6 +413,9 @@ export const REGIONS: Record<RegionKey, Region> = Object.fromEntries(
     r.heroImages ? { ...r, heroImages: withoutBlocked(r.heroImages) } : r,
   ]),
 ) as Record<RegionKey, Region>;
+
+/** 地域の名前。限定公開の店(lib/unlisted.ts)だけが載る県(REGIONS に無い)も引ける。一覧には REGIONS を使い、これは 1 店のページだけで使う */
+export const regionNameOf = (key: RegionKey): string => REGIONS[key]?.name ?? (UNLISTED_ONLY_REGION_NAMES as Record<string, string>)[key] ?? key;
 
 export const NEIGHBORHOODS: Neighborhood[] = [];
 

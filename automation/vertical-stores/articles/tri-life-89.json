@@ -1,0 +1,258 @@
+{
+  "key": "tri-life-89",
+  "headline": "大阪府摂津市鳥飼西にある神社。舎人親王と菅原道真公を主祭神とし、本殿は寛文四(1664)年の建立",
+  "lede": "摂津市にある「藤森神社」です。淀川の畔にある鳥飼地域の氏神として祀られ、通称「ふじもりさん」と呼ばれています。主祭神は舎人親王と菅原道真公の二柱です。",
+  "sections": [
+    {
+      "heading": "御由緒",
+      "body": "藤森神社は淀川の畔にある鳥飼地域の氏神です。現在の神社の形態は天正五(1577)年にでき、本殿は寛文四(1664)年の建立です。主祭神は舎人親王と菅原道真公の二柱で、境内には稲荷神社、國狭槌神社、市杵島神社の末社があります。"
+    },
+    {
+      "heading": "例祭と年中行事",
+      "body": "例祭は十月十八日です。前日十七日の宵宮には、大人の背丈よりも大きな提灯が鳥居前に集まる「ねりこみ」と呼ばれる提灯行列が行われます。年間行事には一月一日の歳旦祭、一月十五日のどんど焼き、二月三日の節分祭、四月十七日の春祭り、八月一日の夏祭りがあります。"
+    },
+    {
+      "heading": "御祈祷",
+      "body": "御祈祷には初宮参り、七五三参り、安産祈願、家内安全祈願、厄祓、合格祈願、交通安全祈願、地鎮祭があります。七五三まいりは九月から十二月に日時を予約してのお参りで、御祈祷時間は約二十分です。予約と問い合わせは電話で受け付けています。"
+    },
+    {
+      "heading": "場所と駐車場",
+      "body": "住所は大阪府摂津市鳥飼西二丁目一番一号です。最寄りバス停は西鳥飼停留所で、南へ徒歩約二分です。大阪モノレール南摂津駅からはバスで約五分、徒歩では約十五分です。自動車でお越しの場合は境内に駐車できます。"
+    }
+  ],
+  "menus": [
+    {
+      "name": "初宮参り"
+    },
+    {
+      "name": "七五三参り"
+    },
+    {
+      "name": "安産祈願"
+    },
+    {
+      "name": "家内安全祈願"
+    },
+    {
+      "name": "厄祓"
+    },
+    {
+      "name": "合格祈願"
+    },
+    {
+      "name": "交通安全祈願"
+    },
+    {
+      "name": "地鎮祭"
+    }
+  ],
+  "tags": [
+    {
+      "tag": "駐車場あり",
+      "factIndex": 28
+    }
+  ],
+  "facts": [
+    {
+      "claim": "藤森神社は大阪府摂津市の神社です。",
+      "source": "http://www.fujimori.ed.jp/jinjya/",
+      "quote": "藤森神社は、大阪府摂津市の神社です。",
+      "checkedAt": "2026-10-26"
+    },
+    {
+      "claim": "通称はふじもりさんです。",
+      "source": "http://www.fujimori.ed.jp/jinjya/",
+      "quote": "通称 ふじもりさん",
+      "checkedAt": "2026-10-26"
+    },
+    {
+      "claim": "藤森神社は淀川の畔にある鳥飼地域の氏神です。",
+      "source": "http://www.fujimori.ed.jp/jinjya/",
+      "quote": "淀川の畔にある鳥飼（鳥養）地域の氏神",
+      "checkedAt": "2026-10-26"
+    },
+    {
+      "claim": "主祭神は舎人親王と菅原道真公です。",
+      "source": "http://www.fujimori.ed.jp/jinjya/",
+      "quote": "舎人親王、菅原道真公二柱を主祭神として",
+      "checkedAt": "2026-10-26"
+    },
+    {
+      "claim": "住所は大阪府摂津市鳥飼西2-1-1です。",
+      "source": "http://www.fujimori.ed.jp/jinjya/",
+      "quote": "大阪府摂津市鳥飼西２－１－１",
+      "checkedAt": "2026-10-26"
+    },
+    {
+      "claim": "現在の神社の形態ができたのは天正五(1577)年です。",
+      "source": "http://www.fujimori.ed.jp/jinjya/concept.html",
+      "quote": "現神社の形態が出来たのは天正五（1577）年とあり",
+      "checkedAt": "2026-10-26"
+    },
+    {
+      "claim": "本殿は寛文四(1664)年の建立です。",
+      "source": "http://www.fujimori.ed.jp/jinjya/concept.html",
+      "quote": "本殿は寛文四（1664）年の建立であります。",
+      "checkedAt": "2026-10-26"
+    },
+    {
+      "claim": "境内末社に稲荷神社があります。",
+      "source": "http://www.fujimori.ed.jp/jinjya/concept.html",
+      "quote": "稲荷神社",
+      "checkedAt": "2026-10-26"
+    },
+    {
+      "claim": "境内末社に國狭槌神社があります。",
+      "source": "http://www.fujimori.ed.jp/jinjya/concept.html",
+      "quote": "國狭槌神社",
+      "checkedAt": "2026-10-26"
+    },
+    {
+      "claim": "境内末社に市杵島神社があります。",
+      "source": "http://www.fujimori.ed.jp/jinjya/concept.html",
+      "quote": "市杵島神社",
+      "checkedAt": "2026-10-26"
+    },
+    {
+      "claim": "例祭は十月十八日です。",
+      "source": "http://www.fujimori.ed.jp/jinjya/",
+      "quote": "例祭(十月十八日)の宵宮",
+      "checkedAt": "2026-10-26"
+    },
+    {
+      "claim": "宵宮(十七日夕刻)には提灯行列のねりこみが行われます。",
+      "source": "http://www.fujimori.ed.jp/jinjya/",
+      "quote": "壮観な提灯行列の『ねりこみ』が行われ",
+      "checkedAt": "2026-10-26"
+    },
+    {
+      "claim": "歳旦祭は一月一日に行われます。",
+      "source": "http://www.fujimori.ed.jp/jinjya/news.html",
+      "quote": "歳旦祭",
+      "checkedAt": "2026-10-26"
+    },
+    {
+      "claim": "どんど焼きは一月十五日に行われます。",
+      "source": "http://www.fujimori.ed.jp/jinjya/news.html",
+      "quote": "どんど焼き",
+      "checkedAt": "2026-10-26"
+    },
+    {
+      "claim": "節分祭は二月三日に行われます。",
+      "source": "http://www.fujimori.ed.jp/jinjya/news.html",
+      "quote": "節分祭",
+      "checkedAt": "2026-10-26"
+    },
+    {
+      "claim": "春祭りは四月十七日に行われます。",
+      "source": "http://www.fujimori.ed.jp/jinjya/news.html",
+      "quote": "春祭り",
+      "checkedAt": "2026-10-26"
+    },
+    {
+      "claim": "夏祭りは八月一日に行われます。",
+      "source": "http://www.fujimori.ed.jp/jinjya/news.html",
+      "quote": "夏祭り",
+      "checkedAt": "2026-10-26"
+    },
+    {
+      "claim": "御祈祷に初宮参りがあります。",
+      "source": "http://www.fujimori.ed.jp/jinjya/menu.html",
+      "quote": "初宮参り",
+      "checkedAt": "2026-10-26"
+    },
+    {
+      "claim": "御祈祷に七五三参りがあります。",
+      "source": "http://www.fujimori.ed.jp/jinjya/menu.html",
+      "quote": "七五三参り",
+      "checkedAt": "2026-10-26"
+    },
+    {
+      "claim": "御祈祷に安産祈願があります。",
+      "source": "http://www.fujimori.ed.jp/jinjya/menu.html",
+      "quote": "安産祈願",
+      "checkedAt": "2026-10-26"
+    },
+    {
+      "claim": "御祈祷に家内安全祈願があります。",
+      "source": "http://www.fujimori.ed.jp/jinjya/menu.html",
+      "quote": "家内安全祈願",
+      "checkedAt": "2026-10-26"
+    },
+    {
+      "claim": "御祈祷に合格祈願があります。",
+      "source": "http://www.fujimori.ed.jp/jinjya/menu.html",
+      "quote": "合格祈願",
+      "checkedAt": "2026-10-26"
+    },
+    {
+      "claim": "御祈祷に交通安全祈願があります。",
+      "source": "http://www.fujimori.ed.jp/jinjya/menu.html",
+      "quote": "交通安全祈願",
+      "checkedAt": "2026-10-26"
+    },
+    {
+      "claim": "御祈祷に地鎮祭があります。",
+      "source": "http://www.fujimori.ed.jp/jinjya/menu.html",
+      "quote": "地鎮祭",
+      "checkedAt": "2026-10-26"
+    },
+    {
+      "claim": "七五三まいりは九月から十二月に日時を予約してお参りします。",
+      "source": "http://www.fujimori.ed.jp/jinjya/",
+      "quote": "９月～１２月、日時をご予約の上お参り下さい。",
+      "checkedAt": "2026-10-26"
+    },
+    {
+      "claim": "御祈祷時間は約20分です。",
+      "source": "http://www.fujimori.ed.jp/jinjya/",
+      "quote": "御祈祷時間は約20分です",
+      "checkedAt": "2026-10-26"
+    },
+    {
+      "claim": "最寄りバス停は西鳥飼停留所で南へ徒歩約2分です。",
+      "source": "http://www.fujimori.ed.jp/jinjya/access.html",
+      "quote": "『西鳥飼停留所』から南へ徒歩約2分",
+      "checkedAt": "2026-10-26"
+    },
+    {
+      "claim": "大阪モノレール南摂津駅からバスで約5分、徒歩約15分です。",
+      "source": "http://www.fujimori.ed.jp/jinjya/access.html",
+      "quote": "南摂津駅からバスで約5分。(徒歩約15分)",
+      "checkedAt": "2026-10-26"
+    },
+    {
+      "claim": "自動車でお越しの場合は境内に駐車できます。",
+      "source": "http://www.fujimori.ed.jp/jinjya/access.html",
+      "quote": "境内へ停めて頂けます",
+      "checkedAt": "2026-10-26"
+    }
+  ],
+  "sources": [
+    {
+      "label": "公式サイト",
+      "url": "http://www.fujimori.ed.jp/jinjya/"
+    },
+    {
+      "label": "公式サイト(御由緒)",
+      "url": "http://www.fujimori.ed.jp/jinjya/concept.html"
+    },
+    {
+      "label": "公式サイト(御祈祷)",
+      "url": "http://www.fujimori.ed.jp/jinjya/menu.html"
+    },
+    {
+      "label": "公式サイト(交通案内)",
+      "url": "http://www.fujimori.ed.jp/jinjya/access.html"
+    },
+    {
+      "label": "公式サイト(年中行事)",
+      "url": "http://www.fujimori.ed.jp/jinjya/news.html"
+    },
+    {
+      "label": "Google マップ",
+      "url": "https://maps.google.com/?cid=9903908332713633904"
+    }
+  ],
+  "notes": "automation/v2/write.mjs が 2026-10-26 に claude -p --model sonnet で作成。事実の裏取り: 29/30 件(quote が出どころにあるもの)。裏取りに通らなかった facts は載せていない。"
+}

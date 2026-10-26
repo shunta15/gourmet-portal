@@ -48,6 +48,8 @@ const map = readJson(abs("automation/stores500/map.json"), []);
 const articles = (await import(new URL("../../lib/teleapo-features.ts", import.meta.url).href))
   .TELEAPO_FEATURE_ARTICLES;
 const SCENES = (await import(new URL("../../lib/scenes.ts", import.meta.url).href)).SCENES;
+// 限定公開の店(lib/unlisted.ts)は、地域の定義(紹介文・街の並び・写真)の材料に使わない(地域のページに店の情報が出ないように)
+const isUnlistedStore = (await import(new URL("../../lib/unlisted.ts", import.meta.url).href)).isUnlistedStore;
 const SCENE_VOCAB = new Set(SCENES.flatMap((s) => s.matchTags));
 
 const ids = readJson(abs("automation/stores500/ids.json"), {});
@@ -806,7 +808,7 @@ const existingMuni = (e) => {
   return a ? { pref: a.pref, muni: a.muni } : null;
 };
 const regionMembers = (p) => [
-  ...stores.filter((s) => s.region === p.key).map((s) => ({ city: s.area.split("・")[1], photo: s.image })),
+  ...stores.filter((s) => s.region === p.key && !isUnlistedStore(s.id)).map((s) => ({ city: s.area.split("・")[1], photo: s.image })),
   ...existing
     .map((e) => ({ e, a: existingMuni(e) }))
     .filter(({ a }) => a && a.pref === p.pref)
@@ -834,6 +836,8 @@ for (const p of PREFS.filter((x) => !x.base)) {
     stats: [],
   };
 }
+// 限定公開の店(lib/unlisted.ts)だけが載る県: 地域の定義は作らない(地域の一覧・sitemap・検索の地域欄に出さないため)。型の RegionKey にだけ入れる(lib/regions.ts)
+const unlistedOnlyRegions = [...new Set(stores.map((s) => s.region))].filter((k) => !regionDefs[k] && !PREFS.some((p) => p.base && p.key === k));
 const regionCounts = Object.fromEntries(
   Object.keys(regionDefs).map((k) => [k, regionMembers(PREFS.find((p) => p.key === k)).length]),
 );
@@ -876,7 +880,22 @@ import type { Region } from "./regions";
 export const ARTICLE_REGIONS = ${JSON.stringify(regionDefs, null, 2)} satisfies Record<string, Region>;
 
 export type ArticleRegionKey = keyof typeof ARTICLE_REGIONS;
-`;
+${
+  unlistedOnlyRegions.length
+    ? `
+/** 限定公開の店(lib/unlisted.ts)だけが載る県。地域の定義(ARTICLE_REGIONS)は作らない(地域の一覧・sitemap・検索の地域欄に出さない)。正式公開して店が一覧に出るようになったら build-stores.mjs を実行すると、定義が作られてここから消える */
+export type UnlistedOnlyRegionKey = ${unlistedOnlyRegions.map((k) => JSON.stringify(k)).join(" | ")};
+
+/** その県の名前(店のページのパンくず・「〇〇の他の名店」に使う。一覧には使わない) */
+export const UNLISTED_ONLY_REGION_NAMES: Record<UnlistedOnlyRegionKey, string> = ${JSON.stringify(Object.fromEntries(unlistedOnlyRegions.map((k) => [k, PREFS.find((p) => p.key === k).name])), null, 2)};
+`
+    : `
+/** 限定公開の店(lib/unlisted.ts)だけが載る県は、いまは無い */
+export type UnlistedOnlyRegionKey = never;
+
+export const UNLISTED_ONLY_REGION_NAMES: Record<UnlistedOnlyRegionKey, string> = {};
+`
+}`;
 
 // geo.ts: 既存の内容に、今回の店だけをマージ（過去に ids.json で払い出した ID は一度消してから入れ直す）
 const geoPath = abs("lib/geo.ts");

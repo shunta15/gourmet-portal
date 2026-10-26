@@ -1,0 +1,40 @@
+{
+  "tab": "トリニティアポ",
+  "tabEn": "tri-life",
+  "row": 103,
+  "sheet": {
+    "name": "長慶寺",
+    "address": "",
+    "url": "https://www.google.com/search?q=0724832692&oq=&gs_lcrp=EgZjaHJvbWUqCQgAECMYJxjqAjIJCAAQIxgnGOoCMgkIARAjGCcY6gIyCQgCECMYJxjqAjIJCAMQIxgnGOoCMgkIBBAjGCcY6gIyCQgFECMYJxjqAjIJCAYQIxgnGOoCMgkIBxAjGCcY6gLSAQ0xOTg3NTExOGowajE1qAIIsAIB&sourceid=chrome&source=chrome.rb&ie=UTF-8",
+    "type": "寺",
+    "d1": "",
+    "d2": ""
+  },
+  "urlKind": "search",
+  "route": "第1段(verify-gbp.mjs)で確認済み",
+  "verdict": "一致",
+  "verdictReason": "電話が一致／店名: contains(シート「長慶寺」/ マップ「金泉山 長慶寺」)",
+  "place": {
+    "name": "金泉山 長慶寺",
+    "address": "大阪府泉南市信達市場８１５",
+    "category": "仏教寺院",
+    "lat": 34.3665604,
+    "lng": 135.2865187,
+    "gbpUrl": "https://maps.google.com/?cid=11293692154256326892",
+    "phone": "072-483-2692",
+    "website": "https://mai-ru.jp/shrines_and_temples/chokeiji/",
+    "hours": {
+      "月": "24時間営業",
+      "火": "24時間営業",
+      "水": "24時間営業",
+      "木": "24時間営業",
+      "金": "24時間営業",
+      "土": "24時間営業",
+      "日": "24時間営業"
+    },
+    "reserveLinks": [],
+    "statusSignals": [],
+    "closedSignal": false
+  },
+  "fetchedAt": "2026-10-26T06:18:43.171Z"
+}

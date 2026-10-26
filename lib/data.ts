@@ -58,6 +58,7 @@ import {
 } from "./newGuideFeatures10";
 import { TELEAPO_RESTAURANTS } from "./teleapo-restaurants";
 import { ARTICLE_STORES } from "./articleStores";
+import { isUnlistedFeature, isUnlistedStore } from "./unlisted";
 import { SCENE_FEATURES, SCENE_FEATURE_ARTICLES } from "./sceneFeatures";
 
 
@@ -10261,8 +10262,11 @@ export const RESTAURANTS: Restaurant[] = [
     ],
   },
   ...TELEAPO_RESTAURANTS,  // テレアポ経由 店舗紹介（自動生成）
-  ...ARTICLE_STORES,       // 記事（/feature）由来の店舗ページ r299〜（node automation/stores500/build-stores.mjs で自動生成）
+  ...ARTICLE_STORES.filter((s) => !isUnlistedStore(s.id)), // 記事（/feature）由来の店舗ページ r299〜（node automation/stores500/build-stores.mjs で自動生成）。限定公開の店(lib/unlisted.ts)は一覧に出さない
 ];
+
+/** 限定公開の店(lib/unlisted.ts)。RESTAURANTS には入れない。ID を指定して 1 件を引く入口(lib/db/restaurants.ts)だけが使う */
+export const UNLISTED_RESTAURANTS: Restaurant[] = ARTICLE_STORES.filter((s) => isUnlistedStore(s.id));
 
 
 const GENERATED_FEATURES: Feature[] = [];
@@ -10316,8 +10320,13 @@ export const FEATURE_ARTICLES: Record<string, FeatureArticle> = {
   ...NEWGUIDE9_FEATURE_ARTICLES, // 街ガイド第9弾24本（index対象）
   ...NEWGUIDE10_FEATURE_ARTICLES, // 街ガイド第10弾15本（index対象）
   ...SCENE_FEATURE_ARTICLES,    // 利用シーン別特集（index対象）
-  ...TELEAPO_FEATURE_ARTICLES,  // テレアポ経由 特集記事（品質基準を満たす分のみ index。teleapoIndexable.ts 参照）
+  ...Object.fromEntries(Object.entries(TELEAPO_FEATURE_ARTICLES).filter(([id]) => !isUnlistedFeature(id))),  // テレアポ経由 特集記事（品質基準を満たす分のみ index。teleapoIndexable.ts 参照）。限定公開の記事(lib/unlisted.ts)は入れない
 };
+
+/** 限定公開の記事(lib/unlisted.ts)。FEATURE_ARTICLES には入れない。ID を指定して 1 件を引く入口(lib/db/features.ts)だけが使う */
+export const UNLISTED_FEATURE_ARTICLES: Record<string, FeatureArticle> = Object.fromEntries(
+  Object.entries(TELEAPO_FEATURE_ARTICLES).filter(([id]) => isUnlistedFeature(id)),
+);
 
 
 /* ===================================================== */

@@ -1,0 +1,50 @@
+{
+  "key": "tri-pet-91",
+  "headline": "宮城県多賀城市中央3丁目にある、犬のトリミングサロン。",
+  "lede": "多賀城市にある「BARBER DOG PRECIOUS WAN」です。宮城県多賀城市中央3丁目に店を構え、犬のトリミングを行っている。営業は月曜から土曜の9時30分から17時まで、日曜日は定休日。",
+  "sections": [
+    {
+      "heading": "トリミングサロン",
+      "body": "店は宮城県多賀城市中央3丁目にあり、犬のトリミングを行っている。"
+    },
+    {
+      "heading": "営業時間",
+      "body": "営業は月曜から土曜の9時30分から17時まで。日曜日は定休日となっている。"
+    }
+  ],
+  "menus": [],
+  "tags": [],
+  "facts": [
+    {
+      "claim": "業種はトリミングサロン",
+      "source": "https://maps.google.com/?cid=2789450396352068285",
+      "quote": "トリミングサロン",
+      "checkedAt": "2026-10-25"
+    },
+    {
+      "claim": "住所は宮城県多賀城市中央３丁目９−２７",
+      "source": "https://maps.google.com/?cid=2789450396352068285",
+      "quote": "宮城県多賀城市中央３丁目９−２７",
+      "checkedAt": "2026-10-25"
+    },
+    {
+      "claim": "営業時間は月曜から土曜が9時30分から17時まで",
+      "source": "https://maps.google.com/?cid=2789450396352068285",
+      "quote": "09:30–17:00",
+      "checkedAt": "2026-10-25"
+    },
+    {
+      "claim": "日曜日は定休日",
+      "source": "https://maps.google.com/?cid=2789450396352068285",
+      "quote": "日: 定休日",
+      "checkedAt": "2026-10-25"
+    }
+  ],
+  "sources": [
+    {
+      "label": "Google マップ",
+      "url": "https://maps.google.com/?cid=2789450396352068285"
+    }
+  ],
+  "notes": "automation/v2/write.mjs が 2026-10-25 に claude -p --model sonnet で作成。事実の裏取り: 4/4 件(quote が出どころにあるもの)。裏取りに通らなかった facts は載せていない。"
+}

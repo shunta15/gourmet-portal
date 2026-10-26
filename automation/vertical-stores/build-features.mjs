@@ -148,6 +148,9 @@ function safeTitleHTML(html) {
 
 /** キー（beauty-98・leisure-85 など）→ 業種。形が違えば null */
 function verticalOfKey(key) {
+  // 記事の自動作成(新)の店のキー: tri-<業種>-<行>(automation/v2/write.mjs)
+  const t = /^tri-(beauty|bodycare|activity|sports|life)-\d+$/.exec(key);
+  if (t) return t[1];
   const m = /^([a-z]+)-\d+$/.exec(key);
   return m ? (KEY_PREFIX_TO_VERTICAL[m[1]] ?? null) : null;
 }

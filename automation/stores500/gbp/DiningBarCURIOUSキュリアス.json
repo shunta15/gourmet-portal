@@ -1,0 +1,22 @@
+{
+  "name": "Dining&Bar CURIOUS キュリアス",
+  "address": "福岡県大牟田市大正町１丁目９−２",
+  "lat": 33.0369448,
+  "lng": 130.4454684,
+  "category": "居酒屋",
+  "hours": {
+    "月": "18:00–02:00",
+    "火": "18:00–02:00",
+    "水": "18:00–02:00",
+    "木": "18:00–02:00",
+    "金": "18:00–02:00",
+    "土": "18:00–02:00",
+    "日": "定休日"
+  },
+  "phone": "080-1795-5560",
+  "website": "https://www.curious-omuta.com/?utm_source=GBP&utm_medium=organic",
+  "priceRange": null,
+  "status": null,
+  "gbpUrl": "https://maps.google.com/?cid=17468238284980099462",
+  "fetchedAt": "2026-10-25T00:26:39.542Z"
+}

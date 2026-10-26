@@ -1,0 +1,40 @@
+{
+  "tab": "トリニティアポ",
+  "tabEn": "tri-life",
+  "row": 107,
+  "sheet": {
+    "name": "咸古神社",
+    "address": "",
+    "url": "https://www.google.com/search?q=%E5%92%B8%E5%8F%A4%E7%A5%9E%E7%A4%BE%09%E5%A4%A7%E9%98%AA%E5%BA%9C%E5%AF%8C%E7%94%B0%E6%9E%97%E5%B8%82%E7%AB%9C%E6%B3%89886%E7%95%AA%E5%9C%B0%09&sca_esv=a25cef74e7aab009&biw=740&bih=663&sxsrf=APpeQnsOvB2ZjJpWWS6ELWVkSyG261WJWQ%3A1792373928658&ei=qHTVaprRJ-3D1e8PyqmNkQI&uact=5&oq=%E5%92%B8%E5%8F%A4%E7%A5%9E%E7%A4%BE%09%E5%A4%A7%E9%98%AA%E5%BA%9C%E5%AF%8C%E7%94%B0%E6%9E%97%E5%B8%82%E7%AB%9C%E6%B3%89886%E7%95%AA%E5%9C%B0%09&gs_lp=Egxnd3Mtd2l6LXNlcnAiMuWSuOWPpOelnuekvgnlpKfpmKrlupzlr4znlLDmnpfluILnq5zms4k4ODbnlarlnLAJMgUQIRigAUjmA1DrAVjrAXABeAGQAQCYAaIBoAGiAaoBAzAuMbgBA8gBAPgBAvgBAZgCAqACsQGoAgrCAgcQIxjqAhgnmAMI8QX4lLb326Cc9JIHAzEuMaAH9AGyBwMwLjG4B6gBwgcFMC4xLjHIBweACAE&sclient=gws-wiz-serp#lpg=cid:CgIgAQ%3D%3D,ik:CAoSHENJQUJJaEFBM2lsV1lBR2xMR2dRUm04QUJaLUQ%3D",
+    "type": "神社",
+    "d1": "",
+    "d2": ""
+  },
+  "urlKind": "search",
+  "route": "第1段(verify-gbp.mjs)で確認済み",
+  "verdict": "一致",
+  "verdictReason": "電話が一致／店名: exact(シート「咸古神社」/ マップ「咸古神社」)／住所(検索URL): exact・町名・番地とも一致",
+  "place": {
+    "name": "咸古神社",
+    "address": "大阪府富田林市龍泉８８６",
+    "category": "神社",
+    "lat": 34.4627364,
+    "lng": 135.5977865,
+    "gbpUrl": "https://maps.google.com/?cid=11279119064413728312",
+    "phone": "0721-23-3007",
+    "website": "https://osaka-jinjacho.jp/funai_jinja/dai11shibu/tondabayashi-city/11036konkujinja.html",
+    "hours": {
+      "月": "24時間営業",
+      "火": "24時間営業",
+      "水": "24時間営業",
+      "木": "24時間営業",
+      "金": "24時間営業",
+      "土": "24時間営業",
+      "日": "24時間営業"
+    },
+    "reserveLinks": [],
+    "statusSignals": [],
+    "closedSignal": false
+  },
+  "fetchedAt": "2026-10-26T06:19:17.286Z"
+}

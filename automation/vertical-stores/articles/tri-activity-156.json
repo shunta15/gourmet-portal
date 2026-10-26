@@ -1,0 +1,201 @@
+{
+  "key": "tri-activity-156",
+  "headline": "広島県尾道市の離島・百島と、愛媛県の離島・生名島でSUP(スタンドアップパドルボード)の体験スクールを開く「Rakuoli」。未経験者向けの半日コースがある",
+  "lede": "尾道市百島町にある「Rakuoli(ラクオリ)」です。瀬戸内海に浮かぶ島、百島と生名島でSUP(スタンドアップパドルボード)の体験スクールを開いています。SUPA・SIJ公認のインストラクターが、道具の使い方や海での注意点を教えています。",
+  "sections": [
+    {
+      "heading": "体験の内容",
+      "body": "体験コースは、陸上での基本レクチャーのあと海に出る、未経験者を対象にしたコースです。砂浜に集合して準備運動をし、SUPの乗り方と漕ぎ方を練習したあと浅瀬でボードに乗り、沖へ漕ぎ出します。その後は自由時間を挟み、最初のビーチへ戻って終了です。対象年齢は10歳からで、10歳から16歳未満は保護者の同伴が必要です。"
+    },
+    {
+      "heading": "開催日と集合場所",
+      "body": "開催日は土・日・祝日で、平日の予約は電話での問い合わせが必要です。開催時間は午前が9時から11時、午後が12時30分から14時30分までの2枠です。集合場所は百島の福田港、または生名島のサウンド波間田です。多少の雨でも開催されますが、気象状況により中止になる場合があります。"
+    },
+    {
+      "heading": "持ち物と道具",
+      "body": "SUPに必要なボード、パドル、リーシュコード、ライフジャケットは一式用意されており、水着とタオルを準備すれば参加できます。持ち物にはバスタオル、ビーチサンダル、水着、着替え、日焼け止め、昼食などが挙げられています。ウェットスーツのレンタルもあります。"
+    },
+    {
+      "heading": "島へのアクセス",
+      "body": "百島は広島県尾道市の離島で、常石港から備後商船のフェリー「フェリーびんご」または高速艇「ニューびんご」で福田港へ渡ります。常石港には駐車場があります。生名島は愛媛県北東部の離島で、因島土生港から上島町営のフェリーで立石港へ渡ります。"
+    }
+  ],
+  "menus": [
+    {
+      "name": "体験コース"
+    },
+    {
+      "name": "リピートコース"
+    },
+    {
+      "name": "1dayコース【百島】"
+    },
+    {
+      "name": "1dayコース【生名島】"
+    },
+    {
+      "name": "SUPボードレンタル"
+    }
+  ],
+  "tags": [
+    {
+      "tag": "初心者歓迎",
+      "factIndex": 15
+    },
+    {
+      "tag": "手ぶらでOK",
+      "factIndex": 10
+    },
+    {
+      "tag": "雨の日",
+      "factIndex": 16
+    }
+  ],
+  "facts": [
+    {
+      "claim": "Rakuoliは瀬戸内海に浮かぶ島「百島」でSUP体験スクールとSUP関連商品の販売を行っている",
+      "source": "https://www.rakuoli.com/",
+      "quote": "瀬戸内海に浮かぶ小さな島「百島」で",
+      "checkedAt": "2026-10-25"
+    },
+    {
+      "claim": "インストラクターはSUPA・SIJ公認",
+      "source": "https://www.rakuoli.com/",
+      "quote": "SUPA・SIJ公認のインストラクター",
+      "checkedAt": "2026-10-25"
+    },
+    {
+      "claim": "スクールは百島と生名島の2つの島で開催している",
+      "source": "https://www.rakuoli.com/sup%E3%81%A8%E3%81%AF",
+      "quote": "1つは, 百島。もう1つは生名島。",
+      "checkedAt": "2026-10-25"
+    },
+    {
+      "claim": "百島は広島県尾道市の離島",
+      "source": "https://www.rakuoli.com/sup%E3%81%A8%E3%81%AF",
+      "quote": "広島県尾道市の離島。",
+      "checkedAt": "2026-10-25"
+    },
+    {
+      "claim": "生名島は愛媛県北東部の離島",
+      "source": "https://www.rakuoli.com/sup%E3%81%A8%E3%81%AF",
+      "quote": "愛媛県北東部に位置する離島",
+      "checkedAt": "2026-10-25"
+    },
+    {
+      "claim": "対象年齢は10歳から(10〜16歳未満は保護者の同伴が必要)",
+      "source": "https://www.rakuoli.com/book-online",
+      "quote": "10歳〜",
+      "checkedAt": "2026-10-25"
+    },
+    {
+      "claim": "開催日は土・日・祝日(平日の予約は電話)",
+      "source": "https://www.rakuoli.com/book-online",
+      "quote": "土・日・祝日",
+      "checkedAt": "2026-10-25"
+    },
+    {
+      "claim": "開催時間は午前9時から11時、午後12時30分から14時30分",
+      "source": "https://www.rakuoli.com/book-online",
+      "quote": "午前 (9：00～11：00)",
+      "checkedAt": "2026-10-25"
+    },
+    {
+      "claim": "集合場所は百島の福田港、または生名島のサウンド波間田",
+      "source": "https://www.rakuoli.com/book-online",
+      "quote": "百島 (福田港)",
+      "checkedAt": "2026-10-25"
+    },
+    {
+      "claim": "持ち物はバスタオル、ビーチサンダル、水着、着替え、日焼け止め、昼食など",
+      "source": "https://www.rakuoli.com/book-online",
+      "quote": "バスタオル，ビーチサンダル，水着",
+      "checkedAt": "2026-10-25"
+    },
+    {
+      "claim": "SUPの道具は用意されており、水着やタオルの準備で参加できる",
+      "source": "https://www.rakuoli.com/",
+      "quote": "水着やタオルなどの準備だけ",
+      "checkedAt": "2026-10-25"
+    },
+    {
+      "claim": "レンタル品にウェットスーツがある",
+      "source": "https://www.rakuoli.com/book-online",
+      "quote": "ウェットスーツ",
+      "checkedAt": "2026-10-25"
+    },
+    {
+      "claim": "半日コースは準備運動とSUPの乗り方・漕ぎ方の練習をしてから海に出る流れ",
+      "source": "https://www.rakuoli.com/book-online",
+      "quote": "SUPの乗り方・漕ぎ方を練習",
+      "checkedAt": "2026-10-25"
+    },
+    {
+      "claim": "海に出る際は船の航路や漁業区域、船の往来が多い場所に立ち入らない",
+      "source": "https://www.rakuoli.com/",
+      "quote": "船の航路，漁業区域，船の往来が多い場所へ立ち入らない",
+      "checkedAt": "2026-10-25"
+    },
+    {
+      "claim": "海に出る際の必須携帯品はライフジャケット",
+      "source": "https://www.rakuoli.com/",
+      "quote": "ライフジャケット",
+      "checkedAt": "2026-10-25"
+    },
+    {
+      "claim": "体験コースは未経験者を対象にしている",
+      "source": "https://www.rakuoli.com/book-online",
+      "quote": "未経験者の方を対象とした",
+      "checkedAt": "2026-10-25"
+    },
+    {
+      "claim": "多少の雨でも開催される(気象状況により中止の場合あり)",
+      "source": "https://www.rakuoli.com/book-online",
+      "quote": "多少の雨でも開催します",
+      "checkedAt": "2026-10-25"
+    },
+    {
+      "claim": "百島へは常石港から備後商船のフェリーびんごかニューびんごでアクセスする",
+      "source": "https://www.rakuoli.com/sup%E3%81%A8%E3%81%AF",
+      "quote": "フェリーびんご",
+      "checkedAt": "2026-10-25"
+    },
+    {
+      "claim": "常石港には駐車場がある",
+      "source": "https://www.rakuoli.com/sup%E3%81%A8%E3%81%AF",
+      "quote": "無料駐車場あります",
+      "checkedAt": "2026-10-25"
+    },
+    {
+      "claim": "生名島へは因島土生港から上島町営のフェリーで立石港へ渡る",
+      "source": "https://www.rakuoli.com/sup%E3%81%A8%E3%81%AF",
+      "quote": "上島町営のフェリー",
+      "checkedAt": "2026-10-25"
+    },
+    {
+      "claim": "営業時間は8時から18時",
+      "source": "https://maps.google.com/?cid=15739240359472874353",
+      "quote": "08:00–18:00",
+      "checkedAt": "2026-10-25"
+    }
+  ],
+  "sources": [
+    {
+      "label": "公式サイト",
+      "url": "https://www.rakuoli.com/"
+    },
+    {
+      "label": "公式サイト(コース・予約)",
+      "url": "https://www.rakuoli.com/book-online"
+    },
+    {
+      "label": "公式サイト(どこでSUP)",
+      "url": "https://www.rakuoli.com/sup%E3%81%A8%E3%81%AF"
+    },
+    {
+      "label": "Google マップ",
+      "url": "https://maps.google.com/?cid=15739240359472874353"
+    }
+  ],
+  "notes": "automation/v2/write.mjs が 2026-10-25 に claude -p --model sonnet で作成。事実の裏取り: 21/21 件(quote が出どころにあるもの)。裏取りに通らなかった facts は載せていない。"
+}

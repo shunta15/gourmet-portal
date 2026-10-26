@@ -1,0 +1,66 @@
+{
+  "key": "tri-activity-142",
+  "images": [
+    {
+      "path": "/_portal/vshops/tri-activity-142/g01.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9Rr-D1XdhTBgdN_8kps4dbpAUIn_6ID6_KYPrFg5w4fcSAncH6FqXRcP5Qd30UB-4CKWQXK8f0XwjYGT0FkyXzrGEaYUs1v4n1_7NufAuxkncN3OpXfoV2urHX_q7EtcACiHOHj=s1200",
+      "pageUrl": "https://maps.google.com/?cid=4382569925399837524",
+      "what": "ライフジャケットを着た6人が浜辺でカヤックと並ぶ",
+      "kind": "common",
+      "width": 1200,
+      "height": 800,
+      "source": "Google マップ"
+    },
+    {
+      "path": "/_portal/vshops/tri-activity-142/g02.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9SOdRnC1fIb7bCr1Sd-HpCVZ8rj5bc1iHVoMUZed0hFjiLZ0oEoVeo8kyeXaZKuF7fjv571HmoAEKjd0Tbw8QUa3c9T231ljrcYjF9CzLqdiP-9qjyaj_wW8lZNv_lmzV9wftU=s1200",
+      "pageUrl": "https://maps.google.com/?cid=4382569925399837524",
+      "what": "海の上でカヤックをこぐ人と黄色い旗の目印",
+      "kind": "view",
+      "width": 1200,
+      "height": 800,
+      "source": "Google マップ"
+    },
+    {
+      "path": "/_portal/vshops/tri-activity-142/g03.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9R2dm675Okj_0t55pTRBjKjycsxdqQD7VeUWnKHu5nTDfbBtdNKDo3thC8MjYKWsYDiyFWw-zKuCdOZ_m9hFyNd3rfGYGXN5sZjh0r0COaEXCkIXN0PcgetFaAToBIsw8pvFz4z9w=s1200",
+      "pageUrl": "https://maps.google.com/?cid=4382569925399837524",
+      "what": "砂浜に置かれたカヤックと静かな入り江",
+      "kind": "view",
+      "width": 1200,
+      "height": 800,
+      "source": "Google マップ"
+    },
+    {
+      "path": "/_portal/vshops/tri-activity-142/g04.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9RL3C0x6dHpP5oKfiH_e8uHcAKLnM8VepWCvIoC3NZndrGcbMFaDYwS8Z9P5wwjLo5w1KkdIf2g0_-5MaN2gdP0KN-20hroYo42d_N5kVMRLT4Vwe_9qugJpK7TaDEmc8hffxpR=s1200",
+      "pageUrl": "https://maps.google.com/?cid=4382569925399837524",
+      "what": "緑の島々に囲まれた入り江でカヤックをこぐ人たち",
+      "kind": "view",
+      "width": 1200,
+      "height": 800,
+      "source": "Google マップ"
+    },
+    {
+      "path": "/_portal/vshops/tri-activity-142/g05.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9S8ZiBB_TneS_K2zLtHcZs73Q5NER3q-O3h3CmceECOcB_jrnw5eEnSuvI6pjia68RlEEWKREYoYZRZpkzzskud7jV7tdoeNKtOdslnA-vmKgFlwj6pzsLtnASKaSXSLX8TGwJuSg=s1200",
+      "pageUrl": "https://maps.google.com/?cid=4382569925399837524",
+      "what": "浜辺でグリルに肉や魚介を並べて焼く人",
+      "kind": "meal",
+      "width": 1200,
+      "height": 800,
+      "source": "Google マップ"
+    },
+    {
+      "path": "/_portal/vshops/tri-activity-142/g06.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9RbB9PBNdcmTIE--pmI84HYK7SAY5nGaQfYtnnvR2jms4nk5FYqKZm0Bs50hOFo_r2lS9w8gzDmikxra9DZyXzpPKSBV1Y8M9Z3HBboD7nruXWwclBz9p4IZJN914aKo3h2v_nX=s1200",
+      "pageUrl": "https://maps.google.com/?cid=4382569925399837524",
+      "what": "浜辺のグリルを囲んで立つ数人の人たち",
+      "kind": "meal",
+      "width": 1200,
+      "height": 800,
+      "source": "Google マップ"
+    }
+  ],
+  "note": "automation/v2/write.mjs が 2026-10-25T02:25:47.903Z に取得。店の実写だけ(AI 画像・汎用画像・地図・ロゴ・顔が大きい画像は除外)。"
+}

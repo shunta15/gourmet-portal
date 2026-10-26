@@ -1,0 +1,32 @@
+{
+  "tab": "トリニティアポ",
+  "tabEn": "tri-life",
+  "row": 171,
+  "sheet": {
+    "name": "宝池寺",
+    "address": "",
+    "url": "https://www.google.com/search?q=%E5%AE%9D%E6%B1%A0%E5%AF%BA+%E5%A4%A7%E9%98%AA%E5%BA%9C%E8%8C%A8%E6%9C%A8%E5%B8%82%E5%BF%8D%E9%A0%82%E5%AF%BA%EF%BC%93%EF%BC%90%EF%BC%94+%E3%81%8A%E5%AF%BA&sca_esv=7813f5e1c6c72345&sxsrf=APpeQnuVgebgJfepTbe9EREK2HYFnS5yTw%3A1792633240032&ei=mGnZaoGdAdbS1e8Poe61iQc&biw=1422&bih=621&uact=5&oq=%E5%AE%9D%E6%B1%A0%E5%AF%BA+%E5%A4%A7%E9%98%AA%E5%BA%9C%E8%8C%A8%E6%9C%A8%E5%B8%82%E5%BF%8D%E9%A0%82%E5%AF%BA%EF%BC%93%EF%BC%90%EF%BC%94+%E3%81%8A%E5%AF%BA&gs_lp=Egxnd3Mtd2l6LXNlcnAiNeWuneaxoOWvuiDlpKfpmKrlupzojKjmnKjluILlv43poILlr7rvvJPvvJDvvJQg44GK5a-6MgUQABjvBTIFEAAY7wUyBRAAGO8FSPo1UL0IWKsqcAF4AZABAJgBeqAByAeqAQM2LjS4AQPIAQD4AQGYAgugAsoJwgIKEAAYRxjWBBiwA8ICBBAjGCfCAggQABiJBRiiBMICCBAAGIAEGKIEwgIFECEYoAGYAwCIBgGQBgGSBwQxLjEwoAfyHLIHBDAuMTC4B7UJwgcFMi01LjbIB1qACAE&sclient=gws-wiz-serp#lrd=0x6000fe94f125b835:0x2433cd98c491419d,1,,,,",
+    "type": "寺",
+    "d1": "",
+    "d2": ""
+  },
+  "urlKind": "search",
+  "route": "第1段(verify-gbp.mjs)で確認済み",
+  "verdict": "一致",
+  "verdictReason": "電話が一致／店名: contains(シート「宝池寺」/ マップ「宝池寺 八大竜王宮」)／住所(検索URL): exact・町名・番地とも一致",
+  "place": {
+    "name": "宝池寺 八大竜王宮",
+    "address": "大阪府茨木市忍頂寺３０４",
+    "category": "仏教寺院",
+    "lat": 34.898955,
+    "lng": 135.54718,
+    "gbpUrl": "https://maps.google.com/?cid=2608654665194226077",
+    "phone": "072-665-8400",
+    "website": "https://www.houtiji.com/",
+    "hours": null,
+    "reserveLinks": [],
+    "statusSignals": [],
+    "closedSignal": false
+  },
+  "fetchedAt": "2026-10-26T06:27:29.038Z"
+}

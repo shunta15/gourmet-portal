@@ -1,0 +1,159 @@
+{
+  "key": "tri-life-103",
+  "headline": "大阪府泉南市信達市場にある真言宗泉涌寺派の寺院。神亀年間（724年頃）に行基が創建し、「あじさい寺」としても知られる。",
+  "lede": "泉南市にある「金泉山 長慶寺」です。神亀年間（724年頃）に、聖武天皇の勅願寺として行基が創建した寺院です。本尊は如意輪観音で、山号は金泉山、院号は慈昌院です。",
+  "sections": [
+    {
+      "heading": "場所と参拝",
+      "body": "住所は大阪府泉南市信達市場815、電話は072-483-2692です。参拝は24時間可能で、寺務所の窓口は午前9時から午後4時まで開いています。JR阪和線和泉砂川駅から徒歩12分、泉南インターチェンジから車で8分の距離にあります。境内には駐車場があります。"
+    },
+    {
+      "heading": "境内の見どころ",
+      "body": "境内には三重塔と多宝塔が建っています。本堂へと続く石段には、西国三十三所、坂東三十三所、秩父三十四所の各本尊を表す石仏が祀られ、和泉西国三十三箇所28番の札所にもなっています。長慶寺は「あじさい寺」とも呼ばれ、毎年6月中旬から下旬にかけて紫陽花が見ごろを迎えます。"
+    }
+  ],
+  "menus": [],
+  "tags": [
+    {
+      "tag": "駐車場あり",
+      "factIndex": 13
+    }
+  ],
+  "facts": [
+    {
+      "claim": "住所は大阪府泉南市信達市場815",
+      "source": "https://maps.google.com/?cid=11293692154256326892",
+      "quote": "大阪府泉南市信達市場８１５",
+      "checkedAt": "2026-10-26"
+    },
+    {
+      "claim": "電話番号は072-483-2692",
+      "source": "https://maps.google.com/?cid=11293692154256326892",
+      "quote": "072-483-2692",
+      "checkedAt": "2026-10-26"
+    },
+    {
+      "claim": "Google マップの業種表示は仏教寺院",
+      "source": "https://maps.google.com/?cid=11293692154256326892",
+      "quote": "仏教寺院",
+      "checkedAt": "2026-10-26"
+    },
+    {
+      "claim": "参拝は24時間可能",
+      "source": "https://maps.google.com/?cid=11293692154256326892",
+      "quote": "24時間営業",
+      "checkedAt": "2026-10-26"
+    },
+    {
+      "claim": "宗派は真言宗泉涌寺派",
+      "source": "https://hotokami.jp/area/osaka/Hmats/Hmatstr/Datz/9410/",
+      "quote": "真言宗泉涌寺派",
+      "checkedAt": "2026-10-26"
+    },
+    {
+      "claim": "本尊は如意輪観音",
+      "source": "https://hotokami.jp/area/osaka/Hmats/Hmatstr/Datz/9410/",
+      "quote": "如意輪観音",
+      "checkedAt": "2026-10-26"
+    },
+    {
+      "claim": "山号は金泉山",
+      "source": "https://hotokami.jp/area/osaka/Hmats/Hmatstr/Datz/9410/",
+      "quote": "金泉山",
+      "checkedAt": "2026-10-26"
+    },
+    {
+      "claim": "創建は724年（神亀元年）",
+      "source": "https://hotokami.jp/area/osaka/Hmats/Hmatstr/Datz/9410/",
+      "quote": "724年（神亀元年）",
+      "checkedAt": "2026-10-26"
+    },
+    {
+      "claim": "行基により創建された",
+      "source": "https://hotokami.jp/area/osaka/Hmats/Hmatstr/Datz/9410/",
+      "quote": "行基により創建",
+      "checkedAt": "2026-10-26"
+    },
+    {
+      "claim": "通称はあじさい寺",
+      "source": "https://hotokami.jp/area/osaka/Hmats/Hmatstr/Datz/9410/",
+      "quote": "あじさい寺",
+      "checkedAt": "2026-10-26"
+    },
+    {
+      "claim": "JR阪和線和泉砂川駅から徒歩12分",
+      "source": "https://hotokami.jp/area/osaka/Hmats/Hmatstr/Datz/9410/",
+      "quote": "JR阪和線和泉砂川駅より徒歩12分",
+      "checkedAt": "2026-10-26"
+    },
+    {
+      "claim": "寺務所の窓口は午前9時から午後4時",
+      "source": "https://hotokami.jp/area/osaka/Hmats/Hmatstr/Datz/9410/",
+      "quote": "寺務所窓口開設時間 午前9時〜午後4時",
+      "checkedAt": "2026-10-26"
+    },
+    {
+      "claim": "泉南ICから車で8分",
+      "source": "https://hotokami.jp/area/osaka/Hmats/Hmatstr/Datz/9410/",
+      "quote": "泉南ICより車で８分",
+      "checkedAt": "2026-10-26"
+    },
+    {
+      "claim": "駐車場がある",
+      "source": "https://hotokami.jp/area/osaka/Hmats/Hmatstr/Datz/9410/",
+      "quote": "無料🅿あり",
+      "checkedAt": "2026-10-26"
+    },
+    {
+      "claim": "境内に三重塔がある",
+      "source": "https://kansaiotera.com/osakaotera/sennanshi/choukeiji",
+      "quote": "三重塔",
+      "checkedAt": "2026-10-26"
+    },
+    {
+      "claim": "境内に多宝塔がある",
+      "source": "https://kansaiotera.com/osakaotera/sennanshi/choukeiji",
+      "quote": "多宝塔",
+      "checkedAt": "2026-10-26"
+    },
+    {
+      "claim": "石段に西国三十三所などの石仏が祀られている",
+      "source": "https://kansaiotera.com/osakaotera/sennanshi/choukeiji",
+      "quote": "西国三十三所、坂東三十三所、秩父三十四所",
+      "checkedAt": "2026-10-26"
+    },
+    {
+      "claim": "和泉西国三十三箇所28番の札所",
+      "source": "https://kansaiotera.com/osakaotera/sennanshi/choukeiji",
+      "quote": "和泉西国三十三箇所28番",
+      "checkedAt": "2026-10-26"
+    },
+    {
+      "claim": "聖武天皇の勅願寺として創建された",
+      "source": "https://kansaiotera.com/osakaotera/sennanshi/choukeiji",
+      "quote": "聖武天皇の勅願寺として",
+      "checkedAt": "2026-10-26"
+    },
+    {
+      "claim": "院号は慈昌院",
+      "source": "https://kansaiotera.com/osakaotera/sennanshi/choukeiji",
+      "quote": "慈昌院",
+      "checkedAt": "2026-10-26"
+    }
+  ],
+  "sources": [
+    {
+      "label": "寺院紹介サイト（ほとかみ）",
+      "url": "https://hotokami.jp/area/osaka/Hmats/Hmatstr/Datz/9410/"
+    },
+    {
+      "label": "寺院紹介サイト（関西のお寺）",
+      "url": "https://kansaiotera.com/osakaotera/sennanshi/choukeiji"
+    },
+    {
+      "label": "Google マップ",
+      "url": "https://maps.google.com/?cid=11293692154256326892"
+    }
+  ],
+  "notes": "automation/v2/write.mjs が 2026-10-26 に claude -p --model sonnet で作成。事実の裏取り: 20/21 件(quote が出どころにあるもの)。裏取りに通らなかった facts は載せていない。"
+}

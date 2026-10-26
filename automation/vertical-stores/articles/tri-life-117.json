@@ -1,0 +1,91 @@
+{
+  "key": "tri-life-117",
+  "headline": "泉佐野市鶴原にある神社。延喜式内社で、本殿・拝殿及び幣殿・神饌所（権本殿）が国の登録有形文化財です",
+  "lede": "泉佐野市にある「⛩️加支多神社（加支多えびす）」です。延喜式内社に数えられ、本殿・拝殿及び幣殿・神饌所（権本殿）は国の登録有形文化財です。南海本線鶴原駅から徒歩5分の場所にあります。",
+  "sections": [
+    {
+      "heading": "場所とアクセス",
+      "body": "住所は大阪府泉佐野市鶴原1834です。南海本線の鶴原駅から徒歩5分の距離にあります。参拝できる時間は9時から17時です。"
+    },
+    {
+      "heading": "祭神と由緒",
+      "body": "延喜式内社に数えられる神社です。祭神として、文武の神、音楽の神、祈祷の神が祀られています。"
+    },
+    {
+      "heading": "社殿と境内",
+      "body": "本殿は流造桧皮葺です。本殿、拝殿および幣殿、神饌所（権本殿）は国の登録有形文化財です。境内には、元宮司が私財を投じて建設された弓道場があります。"
+    }
+  ],
+  "menus": [],
+  "tags": [
+    {
+      "tag": "駅近",
+      "factIndex": 6
+    }
+  ],
+  "facts": [
+    {
+      "claim": "営業(参拝)は月曜から日曜とも9時から17時",
+      "source": "https://maps.google.com/?cid=14033196862432004459",
+      "quote": "09:00–17:00",
+      "checkedAt": "2026-10-26"
+    },
+    {
+      "claim": "祭神は誉田別命、市杵島姫命、天児屋根命",
+      "source": "https://hotokami.jp/area/osaka/Hmats/Hmatstr/Dpyya/94059/",
+      "quote": "誉田別命,市杵島姫命,天児屋根命",
+      "checkedAt": "2026-10-26"
+    },
+    {
+      "claim": "延喜式内社である",
+      "source": "https://hotokami.jp/area/osaka/Hmats/Hmatstr/Dpyya/94059/",
+      "quote": "式内社",
+      "checkedAt": "2026-10-26"
+    },
+    {
+      "claim": "本殿は流造桧皮葺",
+      "source": "https://hotokami.jp/area/osaka/Hmats/Hmatstr/Dpyya/94059/",
+      "quote": "本殿は流造桧皮葺",
+      "checkedAt": "2026-10-26"
+    },
+    {
+      "claim": "本殿、拝殿および幣殿、神饌所（権本殿）が国の登録有形文化財",
+      "source": "https://www.homemate-research-religious-building.com/dtl/75000000000000215284",
+      "quote": "本殿、拝殿および幣殿、神饌所（権本殿）",
+      "checkedAt": "2026-10-26"
+    },
+    {
+      "claim": "境内に元宮司が私財を投じて建設した弓道場がある",
+      "source": "https://www.homemate-research-religious-building.com/dtl/75000000000000215284",
+      "quote": "元宮司が私財を投じて建設された弓道場があります。",
+      "checkedAt": "2026-10-26"
+    },
+    {
+      "claim": "南海本線鶴原駅から徒歩5分",
+      "source": "https://www.homemate-research-religious-building.com/dtl/75000000000000215284",
+      "quote": "南海本線鶴原駅から徒歩5分",
+      "checkedAt": "2026-10-26"
+    },
+    {
+      "claim": "住所は大阪府泉佐野市鶴原1834",
+      "source": "https://maps.google.com/?cid=14033196862432004459",
+      "quote": "鶴原１８３４",
+      "checkedAt": "2026-10-26"
+    }
+  ],
+  "sources": [
+    {
+      "label": "参考情報(由緒・祭神・文化財)",
+      "url": "https://hotokami.jp/area/osaka/Hmats/Hmatstr/Dpyya/94059/"
+    },
+    {
+      "label": "参考情報(文化財・アクセス)",
+      "url": "https://www.homemate-research-religious-building.com/dtl/75000000000000215284"
+    },
+    {
+      "label": "Google マップ",
+      "url": "https://maps.google.com/?cid=14033196862432004459"
+    }
+  ],
+  "notes": "automation/v2/write.mjs が 2026-10-26 に claude -p --model sonnet で作成。事実の裏取り: 8/8 件(quote が出どころにあるもの)。裏取りに通らなかった facts は載せていない。"
+}

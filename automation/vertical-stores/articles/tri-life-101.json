@@ -1,0 +1,160 @@
+{
+  "key": "tri-life-101",
+  "headline": "阿波市阿波町下喜来南にある、不耕起型の混植生態系栽培で野菜を育てる農園。収穫した野菜や加工品をオンラインショップで販売している",
+  "lede": "阿波市にある「阿波ツクヨミファーム」です。植物性有機物・堆肥を利用した農薬不使用有機栽培、または自然栽培で野菜を育て、収穫した野菜や加工品をオンラインショップで販売しています。農業体験や研修プログラムも受け入れています。",
+  "sections": [
+    {
+      "heading": "栽培のしかた",
+      "body": "阿波ツクヨミファームの野菜は、植物性有機物・堆肥を利用した農薬不使用有機栽培、または自然栽培で育てています。基本的な栽培体系は不耕起型の混植生態系栽培で、化学農薬や化学肥料は使用していません。"
+    },
+    {
+      "heading": "商品ラインアップ",
+      "body": "季節の野菜を詰めた『橙（だいだい）ツクヨミお任せ野菜セット』をはじめ、お米やたまご、お肉、海産物、調味料、加工品やキノコなどの商品を扱っています。スキンケア商品の取り扱いもあります。"
+    },
+    {
+      "heading": "体験・研修プログラム",
+      "body": "ツクヨミファームの農作業や袋詰め、EC関連の業務などを半日もしくは1日から体験できます。2ヶ月以上かけてリジェネラティブ農業を実践する長期滞在の研修プログラムも受け入れています。日帰り体験の予約はじゃらんの予約ページからできます。"
+    },
+    {
+      "heading": "運営会社",
+      "body": "阿波ツクヨミファームを運営するのは株式会社経親で、2014年4月8日に設立されました。代表取締役社長は芝橋宏治です。事業内容はリジェネラティブ農業によるD2Cです。所在地は徳島県阿波市阿波町下喜来南97番地1です。"
+    }
+  ],
+  "menus": [
+    {
+      "name": "橙（だいだい）ツクヨミお任せ野菜セット"
+    },
+    {
+      "name": "徳島新鮮野菜セット"
+    },
+    {
+      "name": "CSA定期便"
+    },
+    {
+      "name": "短期滞在（体験）"
+    },
+    {
+      "name": "長期滞在・研修プラン"
+    },
+    {
+      "name": "日帰り農業体験・徳島留学"
+    }
+  ],
+  "tags": [
+    {
+      "tag": "体験あり",
+      "factIndex": 10
+    },
+    {
+      "tag": "予約制",
+      "factIndex": 12
+    }
+  ],
+  "facts": [
+    {
+      "claim": "所在地は徳島県阿波市阿波町下喜来南97番地1です。",
+      "source": "https://awatsukuyomi.com/pages/aboutus",
+      "quote": "下喜来南97番地1",
+      "checkedAt": "2026-10-26"
+    },
+    {
+      "claim": "運営会社は株式会社経親です。",
+      "source": "https://awatsukuyomi.com/pages/aboutus",
+      "quote": "株式会社経親",
+      "checkedAt": "2026-10-26"
+    },
+    {
+      "claim": "設立は2014年4月8日です。",
+      "source": "https://awatsukuyomi.com/pages/aboutus",
+      "quote": "2014年4月8日",
+      "checkedAt": "2026-10-26"
+    },
+    {
+      "claim": "代表取締役社長は芝橋宏治です。",
+      "source": "https://awatsukuyomi.com/pages/aboutus",
+      "quote": "芝橋宏治",
+      "checkedAt": "2026-10-26"
+    },
+    {
+      "claim": "事業内容はリジェネラティブ農業によるD2Cです。",
+      "source": "https://awatsukuyomi.com/pages/aboutus",
+      "quote": "リジェネラティブ農業によるD2C",
+      "checkedAt": "2026-10-26"
+    },
+    {
+      "claim": "野菜は植物性有機物・堆肥を利用した農薬不使用有機栽培、または自然栽培で育てています。",
+      "source": "https://awatsukuyomi.com/",
+      "quote": "植物性有機物・堆肥を利用した農薬不使用有機栽培",
+      "checkedAt": "2026-10-26"
+    },
+    {
+      "claim": "基本的な栽培体系は不耕起型の混植生態系栽培です。",
+      "source": "https://awatsukuyomi.com/blogs/magazine/experience-program",
+      "quote": "不耕起型の混植生態系栽培",
+      "checkedAt": "2026-10-26"
+    },
+    {
+      "claim": "お野菜セットは、お野菜の旬に応じてセット内容が変わります。",
+      "source": "https://awatsukuyomi.com/",
+      "quote": "お野菜の旬に応じてセット内容が変わります",
+      "checkedAt": "2026-10-26"
+    },
+    {
+      "claim": "加工品やキノコなどの商品も扱っています。",
+      "source": "https://awatsukuyomi.com/collections/processed-products-mushrooms-others",
+      "quote": "加工品・キノコ",
+      "checkedAt": "2026-10-26"
+    },
+    {
+      "claim": "スキンケア商品も取り扱っています。",
+      "source": "https://awatsukuyomi.com/collections/processed-products-mushrooms-others",
+      "quote": "スキンケア",
+      "checkedAt": "2026-10-26"
+    },
+    {
+      "claim": "農業体験は半日もしくは1日から体験できます。",
+      "source": "https://awatsukuyomi.com/pages/agricultural-experience",
+      "quote": "半日もしくは１日〜体験していただく",
+      "checkedAt": "2026-10-26"
+    },
+    {
+      "claim": "長期滞在研修は2ヶ月以上から長期的に受け入れています。",
+      "source": "https://awatsukuyomi.com/pages/agricultural-experience",
+      "quote": "２ヶ月以上から長期的に研修していただく",
+      "checkedAt": "2026-10-26"
+    },
+    {
+      "claim": "日帰り体験の予約はじゃらんでできます。",
+      "source": "https://awatsukuyomi.com/pages/agricultural-experience",
+      "quote": "じゃらんでご案内しています",
+      "checkedAt": "2026-10-26"
+    }
+  ],
+  "sources": [
+    {
+      "label": "公式サイト",
+      "url": "https://awatsukuyomi.com/"
+    },
+    {
+      "label": "公式サイト(会社概要)",
+      "url": "https://awatsukuyomi.com/pages/aboutus"
+    },
+    {
+      "label": "公式サイト(体験・研修)",
+      "url": "https://awatsukuyomi.com/pages/agricultural-experience"
+    },
+    {
+      "label": "公式サイト(栽培体系ブログ)",
+      "url": "https://awatsukuyomi.com/blogs/magazine/experience-program"
+    },
+    {
+      "label": "公式サイト(加工品一覧)",
+      "url": "https://awatsukuyomi.com/collections/processed-products-mushrooms-others"
+    },
+    {
+      "label": "Google マップ",
+      "url": "https://maps.google.com/?cid=11862403452607498171"
+    }
+  ],
+  "notes": "automation/v2/write.mjs が 2026-10-26 に claude -p --model sonnet で作成。事実の裏取り: 13/13 件(quote が出どころにあるもの)。裏取りに通らなかった facts は載せていない。"
+}

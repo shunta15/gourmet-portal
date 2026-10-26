@@ -8,6 +8,7 @@ import { createClient } from "@supabase/supabase-js";
 import {
   FEATURE_ARTICLES,
   FEATURE_INDEXABLE_IDS,
+  UNLISTED_FEATURE_ARTICLES,
   type FeatureArticle,
   type RankItem,
 } from "@/lib/data";
@@ -135,7 +136,8 @@ export async function getFeatureArticleById(rawId: string): Promise<FeatureArtic
     console.warn(`[db] getFeatureArticleById(${id}) fallback:`, e);
   }
 
-  const fallback = FEATURE_ARTICLES[id];
+  // 限定公開の記事(lib/unlisted.ts)は、ID を指定して引くときだけ返す(一覧・sitemap には出さない)
+  const fallback = FEATURE_ARTICLES[id] ?? UNLISTED_FEATURE_ARTICLES[id];
 
   // どちらもない
   if (!dbArticle && !fallback) return null;

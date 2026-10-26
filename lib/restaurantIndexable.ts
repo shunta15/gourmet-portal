@@ -14,6 +14,7 @@
  */
 import { ARTICLE_STORES } from "./articleStores";
 import type { Restaurant } from "./regions";
+import { UNLISTED_STORE_IDS } from "./unlisted";
 
 const PLACEHOLDER_DIR = "/restaurants/_placeholder/";
 /** 「—」「—（訪問前に公式確認）」は、取れなかった値の印 */
@@ -24,7 +25,7 @@ export function passesStoreQualityGate(r: Pick<Restaurant, "image" | "address" |
 }
 
 const NOINDEX_IDS: ReadonlySet<string> = new Set(
-  ARTICLE_STORES.filter((s) => !passesStoreQualityGate(s)).map((s) => s.id),
+  [...ARTICLE_STORES.filter((s) => !passesStoreQualityGate(s)).map((s) => s.id), ...UNLISTED_STORE_IDS], // 限定公開の店(lib/unlisted.ts)は常に noindex
 );
 
 export function isRestaurantIndexable(id: string): boolean {

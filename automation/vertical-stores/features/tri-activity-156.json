@@ -1,0 +1,319 @@
+{
+  "key": "tri-activity-156",
+  "vertical": "activity",
+  "storeName": "Rakuoli（ＳＵＰスクール）",
+  "article": {
+    "id": "Rakuoli（ＳＵＰスクール）",
+    "no": "",
+    "articleType": "guide",
+    "kicker": "RAKUOLI MOMOSHIMA ONOMICHI",
+    "title": "広島県尾道市・百島のSUPスクール Rakuoli。瀬戸内海の2つの島で体験できるコースと持ち物",
+    "titleHTML": "広島県尾道市百島のSUPスクール<br><em>Rakuoli</em>の、瀬戸内海2島で楽しむコースと持ち物",
+    "subtitle": "SUP体験スクール / 広島県尾道市百島町 / 瀬戸内海の2つの島で開催",
+    "lede": "広島県尾道市の離島・百島にあるRakuoliは、瀬戸内海に浮かぶ百島と生名島の2つの島で、SUP(スタンドアップパドルボード)の体験スクールを開いている。SUPA・SIJ公認のインストラクターが道具の使い方や海での注意点を教え、未経験者でも参加できる半日コースを用意している。",
+    "date": "2026-10-25",
+    "reading": "",
+    "author": "マチノワ編集部",
+    "heroImage": "/_portal/vshops/tri-activity-156/g03.jpg",
+    "ogImage": "/_portal/vshops/tri-activity-156/g03.jpg",
+    "ranking": [
+      {
+        "rank": "POINT 01",
+        "rankNum": 1,
+        "name": "砂浜集合から沖へ。未経験者向け半日コースの流れ",
+        "cuisine": "体験コース",
+        "area": "尾道市",
+        "purpose": "コースの流れを先に知りたい人へ",
+        "desc": "体験コースは、陸上での基本レクチャーのあと海に出る、未経験者を対象にしたコースだ。砂浜に集合して準備運動をし、SUPの乗り方と漕ぎ方を練習したあと浅瀬でボードに乗り、沖へ漕ぎ出す。その後は自由時間を挟み、最初のビーチへ戻って終了する。対象年齢は10歳からで、10歳から16歳未満は保護者の同伴が必要になる。",
+        "images": [
+          "/_portal/vshops/tri-activity-156/g02.jpg"
+        ],
+        "specs": [
+          {
+            "k": "対象年齢",
+            "v": "10歳から(10〜16歳未満は保護者同伴)"
+          },
+          {
+            "k": "流れ",
+            "v": "砂浜集合→準備運動→練習→沖へ→自由時間→終了"
+          }
+        ]
+      },
+      {
+        "rank": "POINT 02",
+        "rankNum": 2,
+        "name": "土・日・祝日開催。開催時間と集合場所",
+        "cuisine": "開催日時",
+        "area": "尾道市",
+        "purpose": "開催日と集合場所を知りたい人へ",
+        "desc": "開催日は土・日・祝日で、平日の予約は電話での問い合わせが必要になる。開催時間は午前が9時から11時、午後が12時30分から14時30分までの2枠だ。集合場所は百島の福田港、または生名島のサウンド波間田になる。多少の雨でも開催されるが、気象状況により中止になる場合がある。",
+        "images": [],
+        "specs": [
+          {
+            "k": "開催日",
+            "v": "土・日・祝日(平日は電話予約)"
+          },
+          {
+            "k": "時間",
+            "v": "午前9:00〜11:00/午後12:30〜14:30"
+          }
+        ]
+      },
+      {
+        "rank": "POINT 03",
+        "rankNum": 3,
+        "name": "道具は一式用意。持ち物とレンタル品",
+        "cuisine": "持ち物",
+        "area": "尾道市",
+        "purpose": "持ち物と道具を知りたい人へ",
+        "desc": "SUPに必要なボード、パドル、リーシュコード、ライフジャケットは一式用意されており、水着とタオルを準備すれば参加できる。持ち物には、バスタオル、ビーチサンダル、水着、着替え、日焼け止め、昼食などが挙げられている。ウェットスーツのレンタルもある。",
+        "images": [
+          "/_portal/vshops/tri-activity-156/g04.jpg"
+        ],
+        "specs": [
+          {
+            "k": "道具",
+            "v": "ボード・パドル・リーシュコード・ライフジャケット(用意あり)"
+          },
+          {
+            "k": "レンタル",
+            "v": "ウェットスーツ"
+          }
+        ]
+      },
+      {
+        "rank": "POINT 04",
+        "rankNum": 4,
+        "name": "瀬戸内海の2つの島。百島と生名島へのアクセス",
+        "cuisine": "アクセス",
+        "area": "尾道市",
+        "purpose": "島への行き方を知りたい人へ",
+        "desc": "百島は広島県尾道市の離島で、常石港から備後商船のフェリー「フェリーびんご」または高速艇「ニューびんご」で福田港へ渡る。常石港には駐車場がある。生名島は愛媛県北東部の離島で、因島土生港から上島町営のフェリーで立石港へ渡る。",
+        "images": [],
+        "specs": [
+          {
+            "k": "百島へ",
+            "v": "常石港からフェリーびんご/ニューびんご"
+          },
+          {
+            "k": "生名島へ",
+            "v": "因島土生港から上島町営フェリー"
+          }
+        ]
+      }
+    ],
+    "sideArticles": [],
+    "quote": "瀬戸内海に浮かぶ百島と生名島の2つの島で、SUPの体験スクールを開いているRakuoli。道具は一式用意され、水着とタオルの準備で参加できる。対象年齢は10歳からで、未経験者向けの半日コースがある。",
+    "quoteCite": "マチノワ編集部",
+    "closing": "開催日は土・日・祝日で、平日は電話での予約が必要になる。開催時間は午前9時から11時、午後12時30分から14時30分までの2枠だ。集合は百島の福田港、または生名島のサウンド波間田になる。百島へは常石港からフェリーびんごまたはニューびんごで、生名島へは因島土生港から上島町営のフェリーで渡る。多少の雨でも開催されるが、気象状況により中止になる場合がある。"
+  },
+  "summary": "Rakuoliの瀬戸内海でのSUP体験スクールについて、コースの流れ、開催日時と集合場所、持ち物と道具、百島・生名島へのアクセスをまとめた特集。未経験者向けの半日コースの内容を知りたい人に向けて整理した。",
+  "tags": [
+    "海・川",
+    "尾道市"
+  ],
+  "charCount": 934,
+  "facts": [
+    {
+      "claim": "Rakuoliは瀬戸内海に浮かぶ島「百島」でSUP体験スクールとSUP関連商品の販売を行っている",
+      "source": "https://www.rakuoli.com/",
+      "quote": "瀬戸内海に浮かぶ小さな島「百島」で",
+      "checkedAt": "2026-10-25"
+    },
+    {
+      "claim": "インストラクターはSUPA・SIJ公認",
+      "source": "https://www.rakuoli.com/",
+      "quote": "SUPA・SIJ公認のインストラクター",
+      "checkedAt": "2026-10-25"
+    },
+    {
+      "claim": "スクールは百島と生名島の2つの島で開催している",
+      "source": "https://www.rakuoli.com/sup%E3%81%A8%E3%81%AF",
+      "quote": "1つは, 百島。もう1つは生名島。",
+      "checkedAt": "2026-10-25"
+    },
+    {
+      "claim": "百島は広島県尾道市の離島",
+      "source": "https://www.rakuoli.com/sup%E3%81%A8%E3%81%AF",
+      "quote": "広島県尾道市の離島。",
+      "checkedAt": "2026-10-25"
+    },
+    {
+      "claim": "生名島は愛媛県北東部の離島",
+      "source": "https://www.rakuoli.com/sup%E3%81%A8%E3%81%AF",
+      "quote": "愛媛県北東部に位置する離島",
+      "checkedAt": "2026-10-25"
+    },
+    {
+      "claim": "対象年齢は10歳から(10〜16歳未満は保護者の同伴が必要)",
+      "source": "https://www.rakuoli.com/book-online",
+      "quote": "10歳〜",
+      "checkedAt": "2026-10-25"
+    },
+    {
+      "claim": "開催日は土・日・祝日(平日の予約は電話)",
+      "source": "https://www.rakuoli.com/book-online",
+      "quote": "土・日・祝日",
+      "checkedAt": "2026-10-25"
+    },
+    {
+      "claim": "開催時間は午前9時から11時、午後12時30分から14時30分",
+      "source": "https://www.rakuoli.com/book-online",
+      "quote": "午前 (9：00～11：00)",
+      "checkedAt": "2026-10-25"
+    },
+    {
+      "claim": "集合場所は百島の福田港、または生名島のサウンド波間田",
+      "source": "https://www.rakuoli.com/book-online",
+      "quote": "百島 (福田港)",
+      "checkedAt": "2026-10-25"
+    },
+    {
+      "claim": "持ち物はバスタオル、ビーチサンダル、水着、着替え、日焼け止め、昼食など",
+      "source": "https://www.rakuoli.com/book-online",
+      "quote": "バスタオル，ビーチサンダル，水着",
+      "checkedAt": "2026-10-25"
+    },
+    {
+      "claim": "SUPの道具は用意されており、水着やタオルの準備で参加できる",
+      "source": "https://www.rakuoli.com/",
+      "quote": "水着やタオルなどの準備だけ",
+      "checkedAt": "2026-10-25"
+    },
+    {
+      "claim": "レンタル品にウェットスーツがある",
+      "source": "https://www.rakuoli.com/book-online",
+      "quote": "ウェットスーツ",
+      "checkedAt": "2026-10-25"
+    },
+    {
+      "claim": "半日コースは準備運動とSUPの乗り方・漕ぎ方の練習をしてから海に出る流れ",
+      "source": "https://www.rakuoli.com/book-online",
+      "quote": "SUPの乗り方・漕ぎ方を練習",
+      "checkedAt": "2026-10-25"
+    },
+    {
+      "claim": "海に出る際は船の航路や漁業区域、船の往来が多い場所に立ち入らない",
+      "source": "https://www.rakuoli.com/",
+      "quote": "船の航路，漁業区域，船の往来が多い場所へ立ち入らない",
+      "checkedAt": "2026-10-25"
+    },
+    {
+      "claim": "海に出る際の必須携帯品はライフジャケット",
+      "source": "https://www.rakuoli.com/",
+      "quote": "ライフジャケット",
+      "checkedAt": "2026-10-25"
+    },
+    {
+      "claim": "体験コースは未経験者を対象にしている",
+      "source": "https://www.rakuoli.com/book-online",
+      "quote": "未経験者の方を対象とした",
+      "checkedAt": "2026-10-25"
+    },
+    {
+      "claim": "多少の雨でも開催される(気象状況により中止の場合あり)",
+      "source": "https://www.rakuoli.com/book-online",
+      "quote": "多少の雨でも開催します",
+      "checkedAt": "2026-10-25"
+    },
+    {
+      "claim": "百島へは常石港から備後商船のフェリーびんごかニューびんごでアクセスする",
+      "source": "https://www.rakuoli.com/sup%E3%81%A8%E3%81%AF",
+      "quote": "フェリーびんご",
+      "checkedAt": "2026-10-25"
+    },
+    {
+      "claim": "常石港には駐車場がある",
+      "source": "https://www.rakuoli.com/sup%E3%81%A8%E3%81%AF",
+      "quote": "無料駐車場あります",
+      "checkedAt": "2026-10-25"
+    },
+    {
+      "claim": "生名島へは因島土生港から上島町営のフェリーで立石港へ渡る",
+      "source": "https://www.rakuoli.com/sup%E3%81%A8%E3%81%AF",
+      "quote": "上島町営のフェリー",
+      "checkedAt": "2026-10-25"
+    },
+    {
+      "claim": "営業時間は8時から18時",
+      "source": "https://maps.google.com/?cid=15739240359472874353",
+      "quote": "08:00–18:00",
+      "checkedAt": "2026-10-25"
+    }
+  ],
+  "images": [
+    {
+      "path": "/_portal/vshops/tri-activity-156/g01.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9RmyvtV3z8uf5RZmK5XoHpfqpA0srRvTuspT9RH366psA9QZesj9MQACqh5W2KSswqNJ9VnX_EO5kVnShqhfvaw8O5HmFJub5vV9fkuyhPSbjAeeIrDlvVtNONKdD6RrUx4GoFN=s1200",
+      "pageUrl": "https://maps.google.com/?cid=15739240359472874353",
+      "what": "屋根付きウッドデッキに置かれたSUPボードと海の眺め"
+    },
+    {
+      "path": "/_portal/vshops/tri-activity-156/g02.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9Q5hBAS2KHHfOZL-ryDWW8txH-YWhaXxHg0krv9kNELede62QZr_Q77xQYuybvXpFfO-DmfzV8cByLJUMoFPh26M7SLSZqi6Xwytlj5T-LQV20SenJKcpRSxZVJ1Wh2Y8IpDcGHIg=s1200",
+      "pageUrl": "https://maps.google.com/?cid=15739240359472874353",
+      "what": "穏やかな海でSUPに乗る2人の後ろ姿"
+    },
+    {
+      "path": "/_portal/vshops/tri-activity-156/g03.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9QjrmQ2EiQGlnJHlJLdL0LdzPhniKNgg6Da6YKKjSZBRZnAoRtwJdcpwU9gIJ9jQBJo-_w2nKninBf8C-TmzxU5n_4rGp-kQGqVyZzhQhNfggDVSjTlMuyRJPZdvIkrV729bP_T=s1200",
+      "pageUrl": "https://maps.google.com/?cid=15739240359472874353",
+      "what": "砂浜に並ぶSUPボードと体験者5人"
+    },
+    {
+      "path": "/_portal/vshops/tri-activity-156/g04.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9RJwgkds1HlNS01LposZ92A_qHAZDlWpBV8HiDwZ_DVlYrqi67dp5p2ZHt7DuEfUFownRE_C1ADm-ONnk3KxYtlVliDlWsDpKs-A1gwGrYZYQ1QB51v4nZbI4i03x0EBglxbhF52w=s1200",
+      "pageUrl": "https://maps.google.com/?cid=15739240359472874353",
+      "what": "ウッドデッキに立てかけられたパドル"
+    },
+    {
+      "path": "/_portal/vshops/tri-activity-156/g06.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9SkWyS1wbvD_RkCKoJirSqo8mzx8JTfgmM_alTy_mU6vxYrf58FbRMfhfLTsb2OSrweMyJexPTqeq4ZXK2hAuhrGePRNcIfTGWRuq4zG_c4LoL6ChX-Jgv6bP99PxeD0oyOVcgkYA=s1200",
+      "pageUrl": "https://maps.google.com/?cid=15739240359472874353",
+      "what": "緑に囲まれた入江でSUPに乗る人"
+    },
+    {
+      "path": "/_portal/vshops/tri-activity-156/g07.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9Rh_JjilmH4jT4bmu5RegVYtGly9MdxUruszohG8qnXS1gYtkqkyhUE97mo2pyvWxBkM-22LLrLHgU50OOYHF-efIzozDOaxrJUwjUZjphmOTkDj7UlqhruCu-KcAynyPSYwRLa=s1200",
+      "pageUrl": "https://maps.google.com/?cid=15739240359472874353",
+      "what": "青い海とSUPボードの先端"
+    },
+    {
+      "path": "/_portal/vshops/tri-activity-156/g08.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9Tt7u5yCTiNi3dkPOHiWHEFYzSvl5F7OCL1dHtHfqooASYQBXFaL6ecqp6QBdHyuHlCpu58Q8bAJCp9uNKeS1T5jJe7fr6OEfWfz7opiPXuBQzdrvXFKh3b2g2juHCe2euy4skJ=s1200",
+      "pageUrl": "https://maps.google.com/?cid=15739240359472874353",
+      "what": "海上でSUPに乗る2人の後ろ姿"
+    },
+    {
+      "path": "/_portal/vshops/tri-activity-156/g09.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9T9L73czGQENFaiu41vwZexfXttZ63uKb-AgGKsfzSFJ51xYTbfkNqE_hm50qVxCp-KPOB-UcXDZXy4yjMihlc3vg-5HasL-J179Ca9CDQ5sI12NA5gmUldmY0j-cwXLdZm4LNo=s1200",
+      "pageUrl": "https://maps.google.com/?cid=15739240359472874353",
+      "what": "デッキに並ぶSUPボード越しの瀬戸内海の眺め"
+    },
+    {
+      "path": "/_portal/vshops/tri-activity-156/g10.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9Sa79UO7IcOyYncAIkqABtvdbgg38jfWZvgx0uf8yXSnL5NIVFw2AU8YKX8P08Q8szH0ZC9hg5pFHNMMdT-jA1urIbll_OEGa_UjkZUP2wCxLPZJMbO4MRdVB6F6zoPKzlOvoI=s1200",
+      "pageUrl": "https://maps.google.com/?cid=15739240359472874353",
+      "what": "砂浜に仰向けで寝る2人"
+    }
+  ],
+  "sources": [
+    {
+      "label": "公式サイト",
+      "url": "https://www.rakuoli.com/"
+    },
+    {
+      "label": "公式サイト(コース・予約)",
+      "url": "https://www.rakuoli.com/book-online"
+    },
+    {
+      "label": "公式サイト(どこでSUP)",
+      "url": "https://www.rakuoli.com/sup%E3%81%A8%E3%81%AF"
+    },
+    {
+      "label": "Google マップ",
+      "url": "https://maps.google.com/?cid=15739240359472874353"
+    }
+  ],
+  "notes": "automation/v2/write.mjs が 2026-10-25 に作成。"
+}

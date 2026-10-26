@@ -1,0 +1,192 @@
+{
+  "key": "tri-life-171",
+  "headline": "大阪府茨木市忍頂寺の竜王山山頂近くにある融通念仏宗の寺院。宝亀年間の干ばつの際、八大竜王を迎えて雨乞いをしたという言い伝えがある",
+  "lede": "茨木市にある「宝池寺 八大竜王宮」です。竜王山の山頂近くにある融通念仏宗の寺院で、宝亀年間の干ばつの際に八大竜王を迎えて雨乞いをしたという言い伝えがあります。当時と同じ池のほとりで、護摩祈祷がおこなわれています。",
+  "sections": [
+    {
+      "heading": "由来",
+      "body": "宝池寺 八大竜王宮は、大阪府茨木市の竜王山の山頂近くにある融通念仏宗の寺院です。宝亀年間の干ばつの際、開成皇子が竜王山に池を掘り八大竜王を迎えて雨乞いをしたところ雨に恵まれたという言い伝えがあり、当時と同じ池のほとりで護摩祈祷がおこなわれています。"
+    },
+    {
+      "heading": "護摩祈祷",
+      "body": "御縁日には、修験道による龍神護摩祈祷が、八大竜王宮にて11時30分からおこなわれます。一般の人も拝見しながら願いを炎に託すことができます。服装は自由で、見学に予約は不要です。作法が分からない場合は、お経のプリントが渡されます。"
+    },
+    {
+      "heading": "写経と滝行",
+      "body": "山寺での写経体験ができ、所要時間は90分程度です。お茶とお菓子が付きます。滝行体験もでき、八大竜王の滝で修行者の案内のもと、白衣を借りて滝に入ります。滝行の所要時間も90分程度です。"
+    },
+    {
+      "heading": "場所と行き方",
+      "body": "JR茨木駅や阪急京都本線茨木市駅から忍頂寺行きのバスに乗り、寿命院前または忍頂寺小学校前で降りて竜王山山頂の方向へ歩きます。車の場合は大阪府道1号茨木摂津線から林道竜王山線へ進みます。来訪して相談したい場合は、メールなどでの予約がすすめられています。"
+    }
+  ],
+  "menus": [
+    {
+      "name": "龍神護摩祈祷"
+    },
+    {
+      "name": "お写経"
+    },
+    {
+      "name": "滝行体験"
+    },
+    {
+      "name": "加持祈祷・供養・占い相談"
+    }
+  ],
+  "tags": [
+    {
+      "tag": "体験あり",
+      "factIndex": 8
+    },
+    {
+      "tag": "予約制",
+      "factIndex": 16
+    }
+  ],
+  "facts": [
+    {
+      "claim": "竜王山の山頂近くにある融通念仏宗の寺院です。",
+      "source": "https://www.houtiji.com/",
+      "quote": "竜王山の山頂近くにある融通念仏宗のお寺です",
+      "checkedAt": "2026-10-26"
+    },
+    {
+      "claim": "宝亀年間の干ばつの際、八大竜王を迎えて雨乞いをしたという言い伝えがあります。",
+      "source": "https://www.houtiji.com/",
+      "quote": "八大竜王」を召請し雨乞いをしたところ",
+      "checkedAt": "2026-10-26"
+    },
+    {
+      "claim": "言い伝えと同じ池のほとりで護摩祈祷がおこなわれています。",
+      "source": "https://www.houtiji.com/",
+      "quote": "池のほとりにての",
+      "checkedAt": "2026-10-26"
+    },
+    {
+      "claim": "御縁日護摩は八大竜王宮でおこなわれます。",
+      "source": "https://www.houtiji.com/",
+      "quote": "八大龍王宮にて行います",
+      "checkedAt": "2026-10-26"
+    },
+    {
+      "claim": "御縁日護摩は11時30分から始まります。",
+      "source": "https://www.houtiji.com/kitou/",
+      "quote": "11時30分〜開始いたします",
+      "checkedAt": "2026-10-26"
+    },
+    {
+      "claim": "一般の人も護摩を拝見しながら願いを炎に託すことができます。",
+      "source": "https://www.houtiji.com/kitou/",
+      "quote": "一般の方も拝見し願いを炎に託すことができます",
+      "checkedAt": "2026-10-26"
+    },
+    {
+      "claim": "護摩祈祷を見る際の服装は自由です。",
+      "source": "https://www.houtiji.com/kitou/",
+      "quote": "服装は自由です",
+      "checkedAt": "2026-10-26"
+    },
+    {
+      "claim": "護摩祈祷の見学に予約は不要です。",
+      "source": "https://www.houtiji.com/kitou/",
+      "quote": "予約不要",
+      "checkedAt": "2026-10-26"
+    },
+    {
+      "claim": "山寺での写経体験ができます。",
+      "source": "https://www.houtiji.com/shakyou/",
+      "quote": "山寺での写経体験",
+      "checkedAt": "2026-10-26"
+    },
+    {
+      "claim": "写経の所要時間は90分程度です。",
+      "source": "https://www.houtiji.com/shakyou/",
+      "quote": "９０分程度",
+      "checkedAt": "2026-10-26"
+    },
+    {
+      "claim": "写経はお茶とお菓子付きでおこなわれます。",
+      "source": "https://www.houtiji.com/shakyou/",
+      "quote": "お茶・お菓子付き",
+      "checkedAt": "2026-10-26"
+    },
+    {
+      "claim": "自然の中で八大竜王の滝行を体験できます。",
+      "source": "https://www.houtiji.com/shakyou/",
+      "quote": "自然の中で八大龍王の滝行を体験しませんか",
+      "checkedAt": "2026-10-26"
+    },
+    {
+      "claim": "滝行には白衣の貸し出しが含まれます。",
+      "source": "https://www.houtiji.com/shakyou/",
+      "quote": "白衣貸し出しを含みます",
+      "checkedAt": "2026-10-26"
+    },
+    {
+      "claim": "JR茨木駅や阪急京都本線茨木市駅から忍頂寺行きのバスに乗れます。",
+      "source": "https://www.houtiji.com/",
+      "quote": "忍頂寺行きバス乗車",
+      "checkedAt": "2026-10-26"
+    },
+    {
+      "claim": "車の場合は大阪府道1号茨木摂津線から林道竜王山線へ進みます。",
+      "source": "https://www.houtiji.com/",
+      "quote": "林道竜王山線へ進む",
+      "checkedAt": "2026-10-26"
+    },
+    {
+      "claim": "住職が祈祷を勤めています。",
+      "source": "https://www.houtiji.com/about/",
+      "quote": "祈祷を勤めております",
+      "checkedAt": "2026-10-26"
+    },
+    {
+      "claim": "来訪して相談したい場合はメールなどでの予約がすすめられています。",
+      "source": "https://www.houtiji.com/about/",
+      "quote": "メールなどで予約をお願いいたします",
+      "checkedAt": "2026-10-26"
+    },
+    {
+      "claim": "Google マップの業種表示は仏教寺院です。",
+      "source": "https://maps.google.com/?cid=2608654665194226077",
+      "quote": "仏教寺院",
+      "checkedAt": "2026-10-26"
+    },
+    {
+      "claim": "御縁日の護摩祈祷は修験道によるものです。",
+      "source": "https://www.houtiji.com/kitou/",
+      "quote": "修験道による龍神さまの炎の行を",
+      "checkedAt": "2026-10-26"
+    },
+    {
+      "claim": "作法が分からない場合でもお経のプリントが渡されます。",
+      "source": "https://www.houtiji.com/kitou/",
+      "quote": "お経のプリントをお渡しします",
+      "checkedAt": "2026-10-26"
+    }
+  ],
+  "sources": [
+    {
+      "label": "公式サイト",
+      "url": "https://www.houtiji.com/"
+    },
+    {
+      "label": "公式サイト(宝池寺について)",
+      "url": "https://www.houtiji.com/about/"
+    },
+    {
+      "label": "公式サイト(龍神護摩のご案内)",
+      "url": "https://www.houtiji.com/kitou/"
+    },
+    {
+      "label": "公式サイト(お写経 滝行 ご案内)",
+      "url": "https://www.houtiji.com/shakyou/"
+    },
+    {
+      "label": "Google マップ",
+      "url": "https://maps.google.com/?cid=2608654665194226077"
+    }
+  ],
+  "notes": "automation/v2/write.mjs が 2026-10-26 に claude -p --model sonnet で作成。事実の裏取り: 20/20 件(quote が出どころにあるもの)。裏取りに通らなかった facts は載せていない。"
+}

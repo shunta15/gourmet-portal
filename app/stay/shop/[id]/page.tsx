@@ -1,3 +1,4 @@
+import { withUnlisted } from "@/lib/unlistedScope";
 import { shopPage } from "@/components/portal/pages/shop";
 import StayFrame from "@/components/portal/stayproto/decided/common/StayFrame";
 import { stayShopPage } from "@/components/portal/stayproto/decided/shop/ShopPage";
@@ -10,8 +11,8 @@ const live = stayShopPage();
 export const revalidate = 3600;
 export const dynamicParams = true;
 export const generateStaticParams = common.generateStaticParams;
-export const generateMetadata = common.generateMetadata;
+export const generateMetadata = withUnlisted(common.generateMetadata);
 
-export default async function Page(props: Parameters<typeof live.Page>[0]) {
+export default withUnlisted(async function Page(props: Parameters<typeof live.Page>[0]) {
   return <StayFrame>{await live.Page(props)}</StayFrame>;
-}
+});

@@ -6,6 +6,8 @@
  */
 import type { FeatureArticle } from '@/lib/regions';
 import { HELD_PLACE_IDS, type GeneratedVertical } from './newVerticals';
+import { isUnlistedPlace, isUnlistedPlaceFeature } from '../unlisted';
+import { isUnlistedAllowed } from '../unlistedScope';
 
 /** 特集の写真 1 枚の寸法と説明（<img> の width / height / alt に使う） */
 export interface FeaturePhoto {
@@ -59,7 +61,12 @@ export async function getGeneratedFeatures(vertical: GeneratedVertical): Promise
               ? await import('./generated/features-life.json')
               : await import('./generated/features-pet.json');
   // 保留の店(newVerticals.ts の HELD_PLACE_IDS)の特集は出さない
-  return (mod.default as unknown as { features: PlaceFeature[] }).features.filter((f) => !(f.placeId && HELD_PLACE_IDS.includes(f.placeId)));
+  // 限定公開の店(lib/unlisted.ts)の特集も外す(その店自身のページを描いているあいだだけ通る。lib/unlistedScope.ts)
+  return (mod.default as unknown as { features: PlaceFeature[] }).features.filter((f) => {
+    if (f.placeId && HELD_PLACE_IDS.includes(f.placeId)) return false;
+    const unlisted = (!!f.placeId && isUnlistedPlace(f.placeId)) || isUnlistedPlaceFeature(f.id);
+    return !unlisted || (!!f.placeId && isUnlistedAllowed(f.placeId));
+  });
 }
 
 /** URL の ID（日本語。パーセントエンコードのままでも可）から特集を探す */

@@ -1,0 +1,22 @@
+{
+  "name": "おもちびより",
+  "address": "新潟県東蒲原郡阿賀町天満6−１０",
+  "lat": 37.6562875,
+  "lng": 139.4788665,
+  "category": "ファースト フード店",
+  "hours": {
+    "月": "定休日",
+    "火": "11:00–16:00",
+    "水": "11:00–16:00",
+    "木": "10:00–17:00",
+    "金": "11:00–17:00",
+    "土": "11:00–17:00",
+    "日": "11:00–17:00"
+  },
+  "phone": "080-8190-4441",
+  "website": "https://www.instagram.com/omochibiyori1?igsh=MWg2NTBjb25lbnJjYg==",
+  "priceRange": null,
+  "status": null,
+  "gbpUrl": "https://maps.google.com/?cid=854612725855970375",
+  "fetchedAt": "2026-10-25T00:55:58.811Z"
+}

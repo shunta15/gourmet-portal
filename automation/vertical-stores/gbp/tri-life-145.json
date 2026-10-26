@@ -1,0 +1,40 @@
+{
+  "tab": "トリニティアポ",
+  "tabEn": "tri-life",
+  "row": 145,
+  "sheet": {
+    "name": "レンタル衣装ドレスルーチェ",
+    "address": "",
+    "url": "https://www.google.com/search?q=090-1850-1338%09%E3%83%AC%E3%83%B3%E3%82%BF%E3%83%AB%E8%A1%A3%E8%A3%85%E3%83%89%E3%83%AC%E3%82%B9%E3%83%AB%E3%83%BC%E3%83%81%E3%82%A7&sca_esv=52bfc3f059da9228&rlz=1C1HKFL_jaJP1236JP1236&sxsrf=APpeQnuPJ34ujooQByv7WEYguwyKWV2JZw%3A1792489048467&ei=WDbXapKBHOTh2roPvMGugQg&biw=1111&bih=827&uact=5&oq=090-1850-1338%09%E3%83%AC%E3%83%B3%E3%82%BF%E3%83%AB%E8%A1%A3%E8%A3%85%E3%83%89%E3%83%AC%E3%82%B9%E3%83%AB%E3%83%BC%E3%83%81%E3%82%A7&gs_lp=Egxnd3Mtd2l6LXNlcnAiNTA5MC0xODUwLTEzMzgJ44Os44Oz44K_44Or6KGj6KOF44OJ44Os44K544Or44O844OB44KnMgUQABjvBTIFEAAY7wUyCBAAGIAEGKIESMzpBFDl5wRY5ecEcAN4AZABAJgBa6ABa6oBAzAuMbgBA8gBAPgBAvgBAZgCBKACfMICChAAGEcY1gQYsAOYAwCIBgGQBgGSBwMzLjGgB_UBsgcDMC4xuAdvwgcDMC40yAcIgAgB&sclient=gws-wiz-serp#sv=CAESzQEKuQEStgEKd0FKaVQ0dElXcFZwdjY2X183V2JENmxNa3BhWnJuNEpvT0lJbnpXZ3hjRkktZ3o3VWhHTGtGZW94X2p5dnNGandBbWkxaEhIZENfdDNVS085VHZJYjZFUk9QUWl1WWc3elhFQ1U3WmVoZGk1U2Q2OHdRZTBQRy1jEhd2VGJYYXBLeEdQckJyZmNQdXNmQ3dBURoiQURzcjlmUmY2UElIaXI0YVRTVVZ6ZUFmX2Z0MEF2OGJpURIEODA1MRoBMyoAMAA4AUAAGAAgoMe_9QdKAhAB",
+    "type": "レンタル",
+    "d1": "",
+    "d2": ""
+  },
+  "urlKind": "search",
+  "route": "第1段(verify-gbp.mjs)で確認済み",
+  "verdict": "一致",
+  "verdictReason": "電話が一致／店名: exact(シート「レンタル衣装ドレスルーチェ」/ マップ「レンタル衣装ドレスルーチェ」)",
+  "place": {
+    "name": "レンタル衣装ドレスルーチェ",
+    "address": "神奈川県藤沢市大庭５０１１−４ アゼリアコート湘南 101",
+    "category": "衣装レンタル業",
+    "lat": 35.3540083,
+    "lng": 139.4464286,
+    "gbpUrl": "https://maps.google.com/?cid=106090870437496033",
+    "phone": "090-1850-1338",
+    "website": "https://dress-luce.com/",
+    "hours": {
+      "月": "定休日",
+      "火": "定休日",
+      "水": "11:00–19:00",
+      "木": "11:00–19:00",
+      "金": "11:00–19:00",
+      "土": "11:00–19:00",
+      "日": "11:00–19:00"
+    },
+    "reserveLinks": [],
+    "statusSignals": [],
+    "closedSignal": false
+  },
+  "fetchedAt": "2026-10-26T06:23:58.575Z"
+}

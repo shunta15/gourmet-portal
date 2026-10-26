@@ -1,0 +1,32 @@
+{
+  "tab": "トリニティアポ",
+  "tabEn": "tri-stay",
+  "row": 149,
+  "sheet": {
+    "name": "離れの宿 和楽",
+    "address": "",
+    "url": "https://www.google.com/search?q=%E9%9B%A2%E3%82%8C%E3%81%AE%E5%AE%BF+%E5%92%8C%E6%A5%BD&oq=%E9%9B%A2%E3%82%8C%E3%81%AE%E5%AE%BF+%E5%92%8C%E6%A5%BD&gs_lcrp=EgZjaHJvbWUyBggAEEUYOTIHCAEQABiABDIHCAIQABiABDIHCAMQABiABDIHCAQQABiABDIGCAUQRRg8MgYIBhBFGDwyBggHEEUYPdIBBzM1OWowajeoAgCwAgA&sourceid=chrome&source=chrome.ob&ie=UTF-8",
+    "type": "宿泊",
+    "d1": "",
+    "d2": ""
+  },
+  "urlKind": "search",
+  "route": "第1段(verify-gbp.mjs)で確認済み",
+  "verdict": "一致",
+  "verdictReason": "電話が一致／店名: exact(シート「離れの宿 和楽」/ マップ「離れの宿 和楽」)",
+  "place": {
+    "name": "離れの宿 和楽",
+    "address": "京都府京丹後市網野町浜詰３０−３３",
+    "category": null,
+    "lat": 35.654479,
+    "lng": 134.95406,
+    "gbpUrl": "https://maps.google.com/?cid=3460619192667560591",
+    "phone": "0772-74-1601",
+    "website": "https://www.waraku-yado.jp/",
+    "hours": null,
+    "reserveLinks": [],
+    "statusSignals": [],
+    "closedSignal": false
+  },
+  "fetchedAt": "2026-10-25T00:53:57.189Z"
+}

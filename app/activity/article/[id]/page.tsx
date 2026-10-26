@@ -1,3 +1,4 @@
+import { withUnlisted } from "@/lib/unlistedScope";
 import { activityCfg } from "@/components/portal/vkit/configs";
 import { vkArticleRoute } from "@/components/portal/vkit/article/route";
 import { ActivityStoryPage } from "@/components/portal/activity/pages";
@@ -10,8 +11,8 @@ const route = vkArticleRoute(activityCfg);
 export const revalidate = 3600;
 export const dynamicParams = true;
 export const generateStaticParams = route.generateStaticParams;
-export const generateMetadata = route.generateMetadata;
+export const generateMetadata = withUnlisted(route.generateMetadata);
 
-export default async function Page({ params }: { params: Promise<{ id: string }> }) {
+export default withUnlisted(async function Page({ params }: { params: Promise<{ id: string }> }) {
   return <ActivityStoryPage id={(await params).id} />;
-}
+});

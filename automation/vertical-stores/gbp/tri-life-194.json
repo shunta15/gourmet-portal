@@ -1,0 +1,40 @@
+{
+  "tab": "トリニティアポ",
+  "tabEn": "tri-life",
+  "row": 194,
+  "sheet": {
+    "name": "慈恩禅寺",
+    "address": "",
+    "url": "https://www.google.com/search?q=%E6%85%88%E6%81%A9%E7%A6%85%E5%AF%BA+%E5%B2%90%E9%98%9C%E7%9C%8C%E9%83%A1%E4%B8%8A%E5%B8%82%E5%85%AB%E5%B9%A1%E7%94%BA%E5%B3%B6%E8%B0%B7%EF%BC%93%EF%BC%93%EF%BC%99&sca_esv=725b7f6d48bff6dc&rlz=1C1PWSB_jaJP999JP999&biw=1204&bih=805&sxsrf=APpeQnvRZ0rf1_ouY_9IV6LNdbsH_ur7vw%3A1792729265113&ei=seDaauS2BsKbvr0PqPCKuAE&uact=5&oq=%E6%85%88%E6%81%A9%E7%A6%85%E5%AF%BA+%E5%B2%90%E9%98%9C%E7%9C%8C%E9%83%A1%E4%B8%8A%E5%B8%82%E5%85%AB%E5%B9%A1%E7%94%BA%E5%B3%B6%E8%B0%B7%EF%BC%93%EF%BC%93%EF%BC%99&gs_lp=Egxnd3Mtd2l6LXNlcnAiN-aFiOaBqeemheWvuiDlspDpmJznnIzpg6HkuIrluILlhavluaHnlLrls7bosLfvvJPvvJPvvJkyCBAAGIAEGKIEMggQABiABBiiBDIFEAAY7wVIvz1QAFgAcAB4AZABAJgBhAGgAfIBqgEDMC4yuAEDyAEA-AEC-AEBmAICoAKeApgDAJIHAzAuMqAHogOyBwMwLjK4B54CwgcFMi0xLjHIBxCACAE&sclient=gws-wiz-serp",
+    "type": "寺",
+    "d1": "",
+    "d2": ""
+  },
+  "urlKind": "search",
+  "route": "第1段(verify-gbp.mjs)で確認済み",
+  "verdict": "一致",
+  "verdictReason": "電話が一致／店名: contains(シート「慈恩禅寺」/ マップ「慈恩禅寺・てっ草園」)／住所(検索URL): exact・町名・番地とも一致",
+  "place": {
+    "name": "慈恩禅寺・てっ草園",
+    "address": "岐阜県郡上市八幡町島谷３３９",
+    "category": "庭園",
+    "lat": 35.7478502,
+    "lng": 136.9617127,
+    "gbpUrl": "https://maps.google.com/?cid=11808432505301428117",
+    "phone": "0575-65-2711",
+    "website": "https://www.jionzenji.com/",
+    "hours": {
+      "月": "10:00–16:00",
+      "火": "定休日",
+      "水": "10:00–16:00",
+      "木": "10:00–16:00",
+      "金": "10:00–16:00",
+      "土": "10:00–16:00",
+      "日": "10:00–16:00"
+    },
+    "reserveLinks": [],
+    "statusSignals": [],
+    "closedSignal": false
+  },
+  "fetchedAt": "2026-10-26T06:32:31.544Z"
+}

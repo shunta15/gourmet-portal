@@ -7,6 +7,7 @@ import { notFoundMetadata } from "@/components/portal/pages/data";
 import { assertPortalLive, liveStaticParams } from "@/lib/portal/launch";
 import { countPlaces, getPlaces } from "@/lib/places";
 import { buildMetadata } from "@/lib/seo/meta";
+import { allowUnlisted } from "@/lib/unlistedScope";
 import { VERTICALS } from "@/lib/verticals";
 
 // 宿の記事(決定デザイン ①。実在の宿 1 軒ずつの紹介記事)。/stay/article/{id}(id = 宿の ID。リンク先の宿ページは /stay/shop/{id})
@@ -31,6 +32,7 @@ function decode(id: string): string {
 export async function generateMetadata({ params }: Props) {
   assertPortalLive();
   const id = decode((await params).id);
+  allowUnlisted(id); // 限定公開の宿(lib/unlisted.ts)は、自分のページを描くあいだだけ通す
   const v = await loadStayArticle(id);
   if (!v) return notFoundMetadata();
   const b = VERTICALS.stay;
@@ -49,6 +51,7 @@ export async function generateMetadata({ params }: Props) {
 export default async function Page({ params }: Props) {
   assertPortalLive();
   const id = decode((await params).id);
+  allowUnlisted(id); // 限定公開の宿(lib/unlisted.ts)は、自分のページを描くあいだだけ通す
   const v = await loadStayArticle(id);
   if (!v) notFound();
   return (

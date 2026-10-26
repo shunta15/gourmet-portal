@@ -1,5 +1,5 @@
 import "server-only";
-import { REGIONS, SHORT_VIDEOS, toCardItem, type Restaurant, type ShortVideo } from "@/lib/regions";
+import { REGIONS, SHORT_VIDEOS, regionNameOf, toCardItem, type Restaurant, type ShortVideo } from "@/lib/regions";
 import { getRestaurantsByRegion } from "@/lib/db/restaurants";
 import { getTownOfRestaurant } from "@/lib/db/towns";
 import { GEO } from "@/lib/geo";
@@ -72,7 +72,7 @@ export async function getShopInfo(r: Restaurant, links: NorenLinks, page: string
     featureId,
     // 地域・街へのリンクは、/region/… ではなく「さがす」（/search?region=<キー>・&town=<街>）を指す（2026-10-12 オーナー決定: 地域・街・利用シーンのページは /search へ統合）
     town: town ? { name: town.town, href: `/search?region=${encodeURIComponent(r.region)}&town=${encodeURIComponent(town.town)}`, count: town.count } : null,
-    region: { name: region.name, href: `/search?region=${encodeURIComponent(r.region)}` },
+    region: { name: regionNameOf(r.region), href: `/search?region=${encodeURIComponent(r.region)}` },
   });
   // 「この店の特集記事を読む」は、いま読んでいるこの記事への行き先なので、ここでは出さない（そのほかの出し分けは店ページと同じ）
   model.secondary = model.secondary.filter((s) => s.id !== "feature");
@@ -88,7 +88,7 @@ export async function getShopInfo(r: Restaurant, links: NorenLinks, page: string
     mapsUrl,
     geo: geo ? { lat: geo.lat, lng: geo.lng } : null,
     video: SHORT_VIDEOS.find((v) => v.restaurantId === r.id) ?? null,
-    regionName: region.name,
+    regionName: regionNameOf(r.region),
     note: noteOf(r),
     tags: r.tags ? [...r.tags] : [],
     more: more.map((x) => ({ id: x.id, href: `${links.shopBase}/${x.id}`, name: x.name, area: x.area, cuisine: x.cuisine, image: x.image })),

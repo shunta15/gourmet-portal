@@ -1,0 +1,200 @@
+{
+  "key": "tri-life-120",
+  "headline": "大阪府泉佐野市上瓦屋にある神社。関西国際空港建設を契機として昭和58年に設立され、御祭神は饒速日命",
+  "lede": "泉佐野市にある「泉州磐船神社 航空神社」です。関西国際空港建設を契機として昭和58年12月10日に設立された神社で、御祭神は饒速日命です。航空安全や旅行安全、合格祈願などの祈願を執り行っています。",
+  "sections": [
+    {
+      "heading": "由緒",
+      "body": "御祭神は饒速日命(にぎはやひのみこと)です。兵庫県神戸市の北野天満宮の次男として生まれた佐藤匡英が新空港の守護神社創建を志し、構想・準備に10年を費やした後に建立しました。交野市の磐船神社より御分霊を戴き、昭和58年12月10日に鎮座祭を斎行しています。御利益として航空安全、旅行安全・交通安全、大願成就、合格祈願が挙げられています。"
+    },
+    {
+      "heading": "祈願とお守り",
+      "body": "航空安全祈願、旅行安全祈願、合格祈願をはじめ、初宮、七五三、厄除けなどの祈願を執り行っています。地鎮祭をはじめとした出張の安全祈願祭も執り行っており、こちらは要予約です。御朱印は正式名称の「磐船神社」と通称の「航空神社」の2種類を用意しています。"
+    },
+    {
+      "heading": "行事と施設",
+      "body": "例大祭は毎年9月20日に斎行され、祝賀飛行や餅撒きが行われるほか、茶室「飛雲庵」でお茶席が開かれます。境内の航空資料館には約4000点の資料・展示物があり、社務所受付への申し出で観覧できます。日本書藝美術院名誉教授である宮司による龍玉書道教室も開かれており、学生部は中学3年生までを対象としています。"
+    },
+    {
+      "heading": "アクセス",
+      "body": "住所は大阪府泉佐野市上瓦屋392-1、電話は072-462-5900です。車では泉佐野北インターから170号線を南へ5分、駐車場は3台分です。電車ではJR阪和線熊取駅、南海本線井原里駅のいずれからも徒歩10分です。"
+    }
+  ],
+  "menus": [
+    {
+      "name": "航空安全祈願"
+    },
+    {
+      "name": "旅行安全祈願"
+    },
+    {
+      "name": "合格祈願"
+    },
+    {
+      "name": "初宮"
+    },
+    {
+      "name": "七五三"
+    },
+    {
+      "name": "厄除け"
+    },
+    {
+      "name": "地鎮祭"
+    },
+    {
+      "name": "龍玉書道教室"
+    }
+  ],
+  "tags": [
+    {
+      "tag": "予約制",
+      "factIndex": 10
+    },
+    {
+      "tag": "駐車場あり",
+      "factIndex": 15
+    },
+    {
+      "tag": "子ども向け",
+      "factIndex": 13
+    }
+  ],
+  "facts": [
+    {
+      "claim": "参拝時間は午前9時から午後5時",
+      "source": "https://www.senshuiwafune.jp/",
+      "quote": "午前9時00分〜午後5時00分",
+      "checkedAt": "2026-10-26"
+    },
+    {
+      "claim": "住所は大阪府泉佐野市上瓦屋392-1",
+      "source": "https://www.senshuiwafune.jp/access/",
+      "quote": "大阪府泉佐野市上瓦屋392-1",
+      "checkedAt": "2026-10-26"
+    },
+    {
+      "claim": "電話番号は072-462-5900",
+      "source": "https://www.senshuiwafune.jp/access/",
+      "quote": "072-462-5900",
+      "checkedAt": "2026-10-26"
+    },
+    {
+      "claim": "関西国際空港建設を契機として設立された",
+      "source": "https://www.senshuiwafune.jp/",
+      "quote": "関西国際空港建設を契機として",
+      "checkedAt": "2026-10-26"
+    },
+    {
+      "claim": "御祭神は饒速日命",
+      "source": "https://www.senshuiwafune.jp/about/",
+      "quote": "饒速日命（にぎはやひのみこと）",
+      "checkedAt": "2026-10-26"
+    },
+    {
+      "claim": "昭和58年12月10日に鎮座祭を斎行した",
+      "source": "https://www.senshuiwafune.jp/about/",
+      "quote": "昭和５８年１２月１０日に鎮座祭を斎行しました。",
+      "checkedAt": "2026-10-26"
+    },
+    {
+      "claim": "航空資料館には約4000点の資料・展示物がある",
+      "source": "https://www.senshuiwafune.jp/about/",
+      "quote": "約4000点の資料、展示物を随時",
+      "checkedAt": "2026-10-26"
+    },
+    {
+      "claim": "例大祭は毎年9月20日に斎行される",
+      "source": "https://www.senshuiwafune.jp/event/",
+      "quote": "毎年9月20日に例大祭を斎行し",
+      "checkedAt": "2026-10-26"
+    },
+    {
+      "claim": "例大祭の日には茶室飛雲庵でお茶席が開かれる",
+      "source": "https://www.senshuiwafune.jp/about/",
+      "quote": "こちらでお茶席が開かれます。",
+      "checkedAt": "2026-10-26"
+    },
+    {
+      "claim": "航空安全祈願・旅行安全祈願・合格祈願・初宮・七五三等を執り行う",
+      "source": "https://www.senshuiwafune.jp/",
+      "quote": "航空安全祈願、旅行安全祈願、合格祈願、",
+      "checkedAt": "2026-10-26"
+    },
+    {
+      "claim": "地鎮祭等の出張祭も執り行っており要予約",
+      "source": "https://www.senshuiwafune.jp/prayer/",
+      "quote": "出張祭を執り行っております。要予約",
+      "checkedAt": "2026-10-26"
+    },
+    {
+      "claim": "御朱印は磐船神社と航空神社の2種類がある",
+      "source": "https://www.senshuiwafune.jp/prayer/",
+      "quote": "２種類の御朱印をご用意しております。",
+      "checkedAt": "2026-10-26"
+    },
+    {
+      "claim": "宮司による龍玉書道教室が開かれている",
+      "source": "https://www.senshuiwafune.jp/about/",
+      "quote": "書道教室を開いております。",
+      "checkedAt": "2026-10-26"
+    },
+    {
+      "claim": "書道教室の学生部は中学3年生までが対象",
+      "source": "https://www.senshuiwafune.jp/about/",
+      "quote": "学生部（～中3）",
+      "checkedAt": "2026-10-26"
+    },
+    {
+      "claim": "泉佐野北インターから170号線を南へ5分",
+      "source": "https://www.senshuiwafune.jp/access/",
+      "quote": "泉佐野北インターから170号線を南へ5分。",
+      "checkedAt": "2026-10-26"
+    },
+    {
+      "claim": "駐車場は3台駐車可能",
+      "source": "https://www.senshuiwafune.jp/access/",
+      "quote": "3台駐車可能。",
+      "checkedAt": "2026-10-26"
+    },
+    {
+      "claim": "JR阪和線熊取駅から徒歩10分",
+      "source": "https://www.senshuiwafune.jp/access/",
+      "quote": "JR阪和線熊取駅",
+      "checkedAt": "2026-10-26"
+    },
+    {
+      "claim": "御利益は航空安全・旅行安全交通安全・大願成就・合格祈願",
+      "source": "https://www.senshuiwafune.jp/about/",
+      "quote": "旅行安全・交通安全",
+      "checkedAt": "2026-10-26"
+    }
+  ],
+  "sources": [
+    {
+      "label": "公式サイト",
+      "url": "https://www.senshuiwafune.jp/"
+    },
+    {
+      "label": "公式サイト(アクセス)",
+      "url": "https://www.senshuiwafune.jp/access/"
+    },
+    {
+      "label": "公式サイト(当神社について)",
+      "url": "https://www.senshuiwafune.jp/about/"
+    },
+    {
+      "label": "公式サイト(祭典・行事)",
+      "url": "https://www.senshuiwafune.jp/event/"
+    },
+    {
+      "label": "公式サイト(ご祈願・授与品)",
+      "url": "https://www.senshuiwafune.jp/prayer/"
+    },
+    {
+      "label": "Google マップ",
+      "url": "https://maps.google.com/?cid=247100835819611395"
+    }
+  ],
+  "notes": "automation/v2/write.mjs が 2026-10-26 に claude -p --model sonnet で作成。事実の裏取り: 18/18 件(quote が出どころにあるもの)。裏取りに通らなかった facts は載せていない。"
+}

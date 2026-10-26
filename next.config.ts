@@ -2,6 +2,7 @@ import type { NextConfig } from "next";
 import { portalLiveFromEnv } from "./lib/portal/launchEnv";
 import { FEATURE_REGION_KEYS_OLD, NOREN_FEATURE_INDEX_REWRITE, NOREN_FEATURE_REWRITE, NOREN_SHOP_REWRITE } from "./lib/portal/noren/rewrites";
 import { NOREN_ONE_PAGE, ONE_PAGE_SHOP_OF_FEATURE } from "./lib/portal/noren/onePage";
+import { ONE_PAGE_UNLISTED_SHOP_OF_FEATURE } from "./lib/portal/noren/onePageUnlisted";
 // ── scene ここから
 import { NOREN_SCENE_TO_SEARCH, NOREN_SEARCH_REWRITE } from "./lib/portal/noren/rewrites";
 // ── scene ここまで
@@ -80,7 +81,7 @@ const nextConfig: NextConfig = {
       // source は path-to-regexp の書き方なので、百分率エンコードしたあと、( ) { } : * + ? が残っていたら \\ で打ち消す（今の 53 本の ID には無い。入れ忘れの保険）。
       // 切り替え NOREN_ONE_PAGE（RELEASE_REST）が false のとき・公開スイッチ OFF のときは 1 行も出ない。
       ...(PORTAL_LIVE && NOREN_FEATURE_REWRITE && NOREN_ONE_PAGE
-        ? Object.entries(ONE_PAGE_SHOP_OF_FEATURE).map(([fid, sid]) => ({
+        ? Object.entries({ ...ONE_PAGE_SHOP_OF_FEATURE, ...ONE_PAGE_UNLISTED_SHOP_OF_FEATURE }).map(([fid, sid]) => ({
             source: `/feature/${encodeURIComponent(fid).replace(/[(){}:*+?]/g, "\\$&")}`,
             destination: `/restaurant/${sid}`,
             permanent: true,

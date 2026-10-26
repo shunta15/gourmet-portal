@@ -27,6 +27,7 @@ import { buildPhotoFeature } from "@/lib/portal/photoFeature/build";
 import { isFeaturedPhotoId } from "@/lib/portal/photoFeature/featured";
 import { getRelatedFeatured } from "@/lib/portal/photoFeature/related";
 import { onePageShopOf } from "@/lib/portal/noren/onePage";
+import { onePageUnlistedShopOf } from "@/lib/portal/noren/onePageUnlisted";
 import { NOREN_FEATURE_SCENE, isSceneShopFeature } from "@/lib/portal/noren/featureScene";
 import { NOREN_FEATURE_ROUNDUP_PHOTO } from "@/lib/portal/noren/featureScene";
 import RoundupArticle from "@/components/portal/photoFeature/roundup/RoundupArticle";
@@ -91,7 +92,7 @@ export default async function Page({
   // 書き換え（rewrites）経由だと params.id が百分率エンコードのまま届く（日本語・& の ID）ので、元の ID に戻す
   const id = decodeRewrittenId((await params).id);
   // 1 店 1 ページにした記事（lib/portal/noren/onePage.ts の表）: /feature/<ID> は next.config.ts の redirects で /restaurant/<店の ID> へ恒久転送される。ここへ来たとき（設定を通らない呼び方）も同じ行き先へ
-  const onePageShop = onePageShopOf(id);
+  const onePageShop = onePageShopOf(id) ?? onePageUnlistedShopOf(id);
   if (onePageShop) permanentRedirect(`/restaurant/${onePageShop}`);
   const article = await getFeatureArticleById(id);
   if (!article) notFound();

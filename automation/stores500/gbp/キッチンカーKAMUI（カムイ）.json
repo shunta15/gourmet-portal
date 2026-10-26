@@ -1,0 +1,22 @@
+{
+  "name": "キッチンカーKAMUI（カムイ）",
+  "address": "愛媛県今治市大三島町宮浦３２６０ 道の駅御島駐車場",
+  "lat": 34.2488634,
+  "lng": 133.0056979,
+  "category": "カフェ・喫茶",
+  "hours": {
+    "月": "11:00–17:00",
+    "火": "11:00–17:00",
+    "水": "11:00–17:00",
+    "木": "11:00–17:00",
+    "金": "11:00–17:00",
+    "土": "11:00–17:00",
+    "日": "11:00–17:00"
+  },
+  "phone": "0897-72-8777",
+  "website": "https://www.instagram.com/omisima.kamui?igsh=emJuNHI5MjZxMXV4",
+  "priceRange": null,
+  "status": null,
+  "gbpUrl": "https://maps.google.com/?cid=3279381412426499805",
+  "fetchedAt": "2026-10-25T00:52:09.326Z"
+}

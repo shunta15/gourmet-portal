@@ -1,3 +1,4 @@
+import { withUnlisted } from "@/lib/unlistedScope";
 import { shopPage } from "@/components/portal/pages/shop";
 import PetFrame from "@/components/portal/petproto/decided/common/PetFrame";
 import { petShopPage } from "@/components/portal/petproto/decided/shop/live/LiveShop";
@@ -10,8 +11,8 @@ const live = petShopPage();
 export const revalidate = 3600;
 export const dynamicParams = true;
 export const generateStaticParams = common.generateStaticParams;
-export const generateMetadata = common.generateMetadata;
+export const generateMetadata = withUnlisted(common.generateMetadata);
 
-export default async function Page(props: Parameters<typeof live.Page>[0]) {
+export default withUnlisted(async function Page(props: Parameters<typeof live.Page>[0]) {
   return <PetFrame>{await live.Page(props)}</PetFrame>;
-}
+});

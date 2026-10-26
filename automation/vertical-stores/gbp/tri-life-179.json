@@ -1,0 +1,32 @@
+{
+  "tab": "トリニティアポ",
+  "tabEn": "tri-life",
+  "row": 179,
+  "sheet": {
+    "name": "小戸神社",
+    "address": "",
+    "url": "https://www.google.com/search?q=%E5%B0%8F%E6%88%B8%E7%A5%9E%E7%A4%BE+%E5%AE%AE%E5%B4%8E%E7%9C%8C%E5%AE%AE%E5%B4%8E%E5%B8%82%E9%B6%B4%E5%B3%B63%E4%B8%81%E7%9B%AE93%25e3%2580%2580%E8%AA%AD%E3%81%BF%E6%96%B9&sca_esv=83ead707634fba89&biw=952&bih=695&sxsrf=APpeQntQ5PSlwn_yZnrrhCye2BuznPBvFw%3A1792566228630&ei=1GPYavCPJunWrfcP8qma2Aw&oq=%E5%B0%8F%E6%88%B8%E7%A5%9E%E7%A4%BE&gs_lp=Egxnd3Mtd2l6LXNlcnAiDOWwj-aIuOelnuekvioECAAYJzIEECMYJzIEECMYJzIEECMYJzIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgARIiDhQvw1Y1y5wBHgAkAEAmAFToAFTqgEBMbgBAcgBAPgBAfgBApgCA6ACZqgCCsICBxAjGOoCGCeYAwfxBVaAZjlAM690iAYBkgcBM6AHtwmyBwExuAdawgcDMi0zyAcNgAgB&sclient=gws-wiz-serp",
+    "type": "",
+    "d1": "",
+    "d2": ""
+  },
+  "urlKind": "search",
+  "route": "第1段(verify-gbp.mjs)で確認済み",
+  "verdict": "一致",
+  "verdictReason": "電話が一致／店名: exact(シート「小戸神社」/ マップ「小戸神社」)／住所(検索URL): exact・町名・番地とも一致",
+  "place": {
+    "name": "小戸神社",
+    "address": "宮崎県宮崎市鶴島３丁目９３",
+    "category": "神社",
+    "lat": 31.9135688,
+    "lng": 131.4080439,
+    "gbpUrl": "https://maps.google.com/?cid=1461403156650605163",
+    "phone": "0985-23-6684",
+    "website": "http://www.odo-jinja.jp/",
+    "hours": null,
+    "reserveLinks": [],
+    "statusSignals": [],
+    "closedSignal": false
+  },
+  "fetchedAt": "2026-10-26T06:28:16.101Z"
+}

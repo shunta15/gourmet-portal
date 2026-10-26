@@ -1,0 +1,40 @@
+{
+  "tab": "トリニティアポ",
+  "tabEn": "tri-life",
+  "row": 101,
+  "sheet": {
+    "name": "阿波ツクヨミファーム",
+    "address": "",
+    "url": "https://www.google.com/search?q=%E9%98%BF%E6%B3%A2%E3%83%84%E3%82%AF%E3%83%A8%E3%83%9F%E3%83%95%E3%82%A1%E3%83%BC%E3%83%A0%09%E3%80%92771-1701+%E5%BE%B3%E5%B3%B6%E7%9C%8C%E9%98%BF%E6%B3%A2%E5%B8%82%E9%98%BF%E6%B3%A2%E7%94%BA%E4%B8%8B%E5%96%9C%E6%9D%A5%E5%8D%97%EF%BC%99%EF%BC%97%E2%88%92%EF%BC%91&sca_esv=498448c4cd10282a&biw=1422&bih=650&sxsrf=APpeQnsOen5istkT8OHFSwJ0kIsfaHgD1Q%3A1792388328694&ei=6KzVasn0KZWf0-kP0vWeoA4&uact=5&oq=%E9%98%BF%E6%B3%A2%E3%83%84%E3%82%AF%E3%83%A8%E3%83%9F%E3%83%95%E3%82%A1%E3%83%BC%E3%83%A0%09%E3%80%92771-1701+%E5%BE%B3%E5%B3%B6%E7%9C%8C%E9%98%BF%E6%B3%A2%E5%B8%82%E9%98%BF%E6%B3%A2%E7%94%BA%E4%B8%8B%E5%96%9C%E6%9D%A5%E5%8D%97%EF%BC%99%EF%BC%97%E2%88%92%EF%BC%91&gs_lp=Egxnd3Mtd2l6LXNlcnAiXumYv-azouODhOOCr-ODqOODn-ODleOCoeODvOODoAnjgJI3NzEtMTcwMSDlvrPls7bnnIzpmL_ms6LluILpmL_ms6LnlLrkuIvllpzmnaXljZfvvJnvvJfiiJLvvJEyBRAAGO8FMgUQABjvBTIIEAAYiQUYogQyBRAAGO8FMggQABiABBiiBEiHC1DuCVjuCXABeAGQAQCYAWagAWaqAQMwLjG4AQPIAQD4AQL4AQGYAgKgAnKoAhTCAgcQIxjqAhgnwgIQEAAYAxiPARjqAhi0AtgBAZgDBvEF-yV1_BTw9BC6BgYIARABGAqSBwMxLjGgB5QDsgcDMC4xuAdrwgcDMi0yyAcIgAgB&sclient=gws-wiz-serp",
+    "type": "農家",
+    "d1": "",
+    "d2": ""
+  },
+  "urlKind": "search",
+  "route": "第1段(verify-gbp.mjs)で確認済み",
+  "verdict": "一致",
+  "verdictReason": "電話が一致／店名: exact(シート「阿波ツクヨミファーム」/ マップ「阿波ツクヨミファーム」)／住所(検索URL): exact・町名・番地とも一致",
+  "place": {
+    "name": "阿波ツクヨミファーム",
+    "address": "徳島県阿波市阿波町下喜来南９７−１",
+    "category": "有機農場",
+    "lat": 34.0909705,
+    "lng": 134.269665,
+    "gbpUrl": "https://maps.google.com/?cid=11862403452607498171",
+    "phone": "090-2825-0423",
+    "website": "https://awatsukuyomi.com/",
+    "hours": {
+      "月": "09:00–18:00",
+      "火": "09:00–18:00",
+      "水": "定休日",
+      "木": "09:00–18:00",
+      "金": "09:00–18:00",
+      "土": "定休日",
+      "日": "定休日"
+    },
+    "reserveLinks": [],
+    "statusSignals": [],
+    "closedSignal": false
+  },
+  "fetchedAt": "2026-10-26T06:17:41.957Z"
+}

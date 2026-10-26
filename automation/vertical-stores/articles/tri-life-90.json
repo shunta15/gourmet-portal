@@ -1,0 +1,196 @@
+{
+  "key": "tri-life-90",
+  "headline": "静岡県熱海市西山町にある神社。国指定天然記念物の大楠を御神木とし、全国四十四社のキノミヤジンジャの総社とされる。",
+  "lede": "熱海市にある「來宮神社」です。御祭神は日本武尊・五十猛命・大己貴命の三柱で、境内には樹齢2千年を超えるご神木「大楠」があります。最寄り駅はJR伊東線の来宮駅です。",
+  "sections": [
+    {
+      "heading": "御祭神とご神木",
+      "body": "御祭神は日本武尊・五十猛命・大己貴命の三柱です。境内のご神木「大楠」は国指定天然記念物で、樹齢は2千年を超えます。平成4年度の環境省の調査で全国２位の巨樹の認定を受け、幹周りは約24メートルです。本殿向かって左奥にあります。"
+    },
+    {
+      "heading": "境内のようす",
+      "body": "鳥居をくぐって5メートルほどで手水舎があり、参道をはさんだ向かいに第二大楠、その奥に三峯神社、手水舎の左脇奥に来宮稲荷明神があります。手水舎を過ぎた右手には御神水があり、階段を上ると本殿です。"
+    },
+    {
+      "heading": "場所とアクセス",
+      "body": "住所は静岡県熱海市西山町43-1、電話は0557-82-2241です。最寄り駅はJR伊東線の来宮駅で、神社までの道のりは約400メートルです。JR熱海駅からは十国峠行または西山循環バスに乗り『來宮神社』前で下車すると目の前です。御祈祷の受付は9時から16時30分までです。駐車場もあります。"
+    },
+    {
+      "heading": "年中行事",
+      "body": "年中行事は元日の初詣から大晦日の大祓神札焼納祭まで、四季折々におこなわれます。例大祭は毎年7月14日から16日で、こがし祭とも呼ばれます。"
+    }
+  ],
+  "menus": [
+    {
+      "name": "御祈祷"
+    },
+    {
+      "name": "結婚式"
+    },
+    {
+      "name": "授与品（お守り・お札）"
+    },
+    {
+      "name": "お砂・お水（お水取り）"
+    }
+  ],
+  "tags": [
+    {
+      "tag": "駅近",
+      "factIndex": 13
+    },
+    {
+      "tag": "駐車場あり",
+      "factIndex": 16
+    }
+  ],
+  "facts": [
+    {
+      "claim": "御祭神の一柱は日本武尊",
+      "source": "https://kinomiya.or.jp/top/overview/deity/",
+      "quote": "日本武尊（やまとたけるのみこと）",
+      "checkedAt": "2026-10-26"
+    },
+    {
+      "claim": "御祭神の一柱は五十猛命",
+      "source": "https://kinomiya.or.jp/top/overview/deity/",
+      "quote": "五十猛命（いたけるのみこと）",
+      "checkedAt": "2026-10-26"
+    },
+    {
+      "claim": "御祭神の一柱は大己貴命",
+      "source": "https://kinomiya.or.jp/top/overview/deity/",
+      "quote": "大己貴命（おおなもちのみこと）",
+      "checkedAt": "2026-10-26"
+    },
+    {
+      "claim": "大楠は国指定天然記念物である",
+      "source": "https://kinomiya.or.jp/",
+      "quote": "国指定天然記念物に選定されております",
+      "checkedAt": "2026-10-26"
+    },
+    {
+      "claim": "大楠の樹齢は2千年を超える",
+      "source": "https://kinomiya.or.jp/",
+      "quote": "ご神木「大楠」は樹齢2千年を超え",
+      "checkedAt": "2026-10-26"
+    },
+    {
+      "claim": "大楠は平成4年度の環境省調査で全国２位の巨樹の認定を受けた",
+      "source": "https://kinomiya.or.jp/",
+      "quote": "全国２位の巨樹の認定を受けており",
+      "checkedAt": "2026-10-26"
+    },
+    {
+      "claim": "大楠の幹周りは約24メートル",
+      "source": "https://kinomiya.or.jp/",
+      "quote": "幹周り約24米の迫力に",
+      "checkedAt": "2026-10-26"
+    },
+    {
+      "claim": "全国にある四十四社のキノミヤジンジャの総社とされる",
+      "source": "https://kinomiya.or.jp/",
+      "quote": "全国四十四社のキノミヤジンジャの総社",
+      "checkedAt": "2026-10-26"
+    },
+    {
+      "claim": "境内には手水舎・第二大楠・三峯神社・来宮稲荷明神がある",
+      "source": "https://kinomiya.or.jp/top/overview/precinct_map/",
+      "quote": "手水舎の左脇奥に「来宮稲荷明神」がございます",
+      "checkedAt": "2026-10-26"
+    },
+    {
+      "claim": "本殿向かって左奥に天然記念物の大楠がある",
+      "source": "https://kinomiya.or.jp/top/overview/precinct_map/",
+      "quote": "本殿向かって左奥に「天然記念物 大楠」がございます",
+      "checkedAt": "2026-10-26"
+    },
+    {
+      "claim": "住所は静岡県熱海市西山町43-1",
+      "source": "https://kinomiya.or.jp/top/praying/access/",
+      "quote": "静岡県熱海市西山町４３－１",
+      "checkedAt": "2026-10-26"
+    },
+    {
+      "claim": "電話番号は0557-82-2241",
+      "source": "https://kinomiya.or.jp/top/praying/access/",
+      "quote": "０５５７－８２－２２４１",
+      "checkedAt": "2026-10-26"
+    },
+    {
+      "claim": "最寄り駅はJR伊東線の来宮駅",
+      "source": "https://kinomiya.or.jp/top/praying/access/",
+      "quote": "JR伊東線（熱海～伊東）の「来宮駅」",
+      "checkedAt": "2026-10-26"
+    },
+    {
+      "claim": "JR来宮駅から神社までの道のりは約400メートル",
+      "source": "https://kinomiya.or.jp/top/praying/access/",
+      "quote": "約４００ｍ",
+      "checkedAt": "2026-10-26"
+    },
+    {
+      "claim": "JR熱海駅からバスで『來宮神社』前下車、目の前",
+      "source": "https://kinomiya.or.jp/top/praying/access/",
+      "quote": "『來宮神社』前で下車、目の前",
+      "checkedAt": "2026-10-26"
+    },
+    {
+      "claim": "御祈祷の受付時間は9時から16時30分",
+      "source": "https://kinomiya.or.jp/top/praying/access/",
+      "quote": "ご祈祷の受付は16：30まで",
+      "checkedAt": "2026-10-26"
+    },
+    {
+      "claim": "神社に駐車場がある",
+      "source": "https://kinomiya.or.jp/top/praying/access/",
+      "quote": "駐車場は数に限りがございますので",
+      "checkedAt": "2026-10-26"
+    },
+    {
+      "claim": "年中行事は元日の初詣から大晦日の大祓神札焼納祭までおこなわれる",
+      "source": "https://kinomiya.or.jp/top/overview/",
+      "quote": "元日の初詣から大晦日の大祓神札焼納祭まで",
+      "checkedAt": "2026-10-26"
+    },
+    {
+      "claim": "例大祭は毎年7月14日から16日",
+      "source": "https://kinomiya.or.jp/top/overview/",
+      "quote": "毎年七月十四日～十六日",
+      "checkedAt": "2026-10-26"
+    },
+    {
+      "claim": "例大祭はこがし祭とも呼ばれる",
+      "source": "https://kinomiya.or.jp/top/overview/deity/",
+      "quote": "七月の例大祭。こがし祭",
+      "checkedAt": "2026-10-26"
+    }
+  ],
+  "sources": [
+    {
+      "label": "公式サイト",
+      "url": "https://kinomiya.or.jp/"
+    },
+    {
+      "label": "公式サイト(アクセス・交通)",
+      "url": "https://kinomiya.or.jp/top/praying/access/"
+    },
+    {
+      "label": "公式サイト(來宮神社について)",
+      "url": "https://kinomiya.or.jp/top/overview/"
+    },
+    {
+      "label": "公式サイト(御祭神縁起)",
+      "url": "https://kinomiya.or.jp/top/overview/deity/"
+    },
+    {
+      "label": "公式サイト(境内図)",
+      "url": "https://kinomiya.or.jp/top/overview/precinct_map/"
+    },
+    {
+      "label": "Google マップ",
+      "url": "https://maps.google.com/?cid=4219953056217248155"
+    }
+  ],
+  "notes": "automation/v2/write.mjs が 2026-10-26 に claude -p --model sonnet で作成。事実の裏取り: 20/20 件(quote が出どころにあるもの)。裏取りに通らなかった facts は載せていない。"
+}

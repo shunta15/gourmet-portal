@@ -10,6 +10,7 @@ import { getFeatureArticleById } from "@/lib/db/features";
 import { ARTICLE_STORE_FEATURE_IDS, ARTICLE_STORE_ID_BY_FEATURE } from "@/lib/articleStores";
 import { featuresOfShop } from "@/lib/portal/noren/shopFeatures";
 import { NOREN_SHOP_ONE_PAGE, onePageFeatureOf, shopOnePageEligible } from "@/lib/portal/noren/onePage";
+import { onePageUnlistedFeatureOf } from "@/lib/portal/noren/onePageUnlisted";
 import { NOREN_FEATURE_PHOTO, isDummyFeatureImage, isSingleShopFeature } from "@/lib/portal/noren/featureSingle";
 import { RELEASE_FEATURE } from "@/lib/portal/noren/release";
 import { buildPhotoFeature, buildShopPage } from "@/lib/portal/photoFeature/build";
@@ -88,7 +89,7 @@ export default async function Page({ params }: { params: Promise<{ id: string }>
 
   // 1 店 1 ページ（見本。lib/portal/noren/onePage.ts）: 対象（lib/portal/noren/onePage.ts の表）の特集記事の店は、/restaurant/<店の ID> で「写真が主役の特集記事 + 記事の終わりの店舗情報」を 1 ページで出す。
   // 店と記事の対応は ID の完全一致（onePageFeatureOf）。既存の対応表 ARTICLE_STORE_ID_BY_FEATURE と食い違うとき・記事が店 1 軒の記事でないときは、1 ページ化せず今までの店ページを出す。
-  const featureId = NOREN_FEATURE_PHOTO ? onePageFeatureOf(r.id) : null;
+  const featureId = NOREN_FEATURE_PHOTO ? (onePageFeatureOf(r.id) ?? onePageUnlistedFeatureOf(r.id)) : null;
   const article = featureId && ARTICLE_STORE_ID_BY_FEATURE[featureId] === r.id ? await getFeatureArticleById(featureId) : null;
   if (featureId && article && isSingleShopFeature(article)) {
     const page = `/restaurant/${r.id}`;

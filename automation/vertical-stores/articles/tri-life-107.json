@@ -1,0 +1,90 @@
+{
+  "key": "tri-life-107",
+  "headline": "富田林市龍泉、嶽山の中腹に鎮座する神社です。読み方は「こんくじんじゃ」、通称は「咸古さん」といいます。",
+  "lede": "富田林市にある「咸古神社」です。鎮座地は龍泉886で、近鉄長野線富田林駅から金剛バスに乗り、蒲停で下車して500mほどの嶽山中腹にあります。神社本庁加盟神社で、登録コードは11036です。",
+  "sections": [
+    {
+      "heading": "場所と交通手段",
+      "body": "住所は富田林市龍泉886です。近鉄長野線富田林駅から金剛バスに乗り、蒲停で下車して500mほど歩くと、嶽山中腹の境内に着きます。参拝は24時間可能です。"
+    },
+    {
+      "heading": "問い合わせ先と登録",
+      "body": "電話による問い合わせ先は美具久留御魂神社で、電話番号は0721-23-3007です。神社本庁加盟神社として登録されており、登録コードは11036です。公式サイトの最終更新日は令和元年7月1日です。"
+    }
+  ],
+  "menus": [],
+  "tags": [],
+  "facts": [
+    {
+      "claim": "咸古神社は富田林市龍泉886にある",
+      "source": "https://osaka-jinjacho.jp/funai_jinja/dai11shibu/tondabayashi-city/11036konkujinja.html",
+      "quote": "富田林市龍泉886",
+      "checkedAt": "2026-10-26"
+    },
+    {
+      "claim": "読み方は「こんくじんじゃ」",
+      "source": "https://osaka-jinjacho.jp/funai_jinja/dai11shibu/tondabayashi-city/11036konkujinja.html",
+      "quote": "咸古神社（こんくじんじゃ）",
+      "checkedAt": "2026-10-26"
+    },
+    {
+      "claim": "通称は「咸古さん」",
+      "source": "https://osaka-jinjacho.jp/funai_jinja/dai11shibu/tondabayashi-city/11036konkujinja.html",
+      "quote": "咸古さん",
+      "checkedAt": "2026-10-26"
+    },
+    {
+      "claim": "近鉄長野線富田林駅から金剛バスに乗り蒲停で下車して500m",
+      "source": "https://osaka-jinjacho.jp/funai_jinja/dai11shibu/tondabayashi-city/11036konkujinja.html",
+      "quote": "近鉄長野線富田林駅より金剛バス蒲停500ｍ",
+      "checkedAt": "2026-10-26"
+    },
+    {
+      "claim": "嶽山の中腹にある",
+      "source": "https://osaka-jinjacho.jp/funai_jinja/dai11shibu/tondabayashi-city/11036konkujinja.html",
+      "quote": "嶽山中腹",
+      "checkedAt": "2026-10-26"
+    },
+    {
+      "claim": "電話の問い合わせ先は美具久留御魂神社",
+      "source": "https://osaka-jinjacho.jp/funai_jinja/dai11shibu/tondabayashi-city/11036konkujinja.html",
+      "quote": "美具久留御魂神社",
+      "checkedAt": "2026-10-26"
+    },
+    {
+      "claim": "電話番号は0721-23-3007",
+      "source": "https://osaka-jinjacho.jp/funai_jinja/dai11shibu/tondabayashi-city/11036konkujinja.html",
+      "quote": "0721-23-3007",
+      "checkedAt": "2026-10-26"
+    },
+    {
+      "claim": "神社本庁加盟神社としてコード11036で登録されている",
+      "source": "https://osaka-jinjacho.jp/funai_jinja/dai11shibu/tondabayashi-city/11036konkujinja.html",
+      "quote": "コード：11036",
+      "checkedAt": "2026-10-26"
+    },
+    {
+      "claim": "公式サイトの最終更新日は令和元年7月1日",
+      "source": "https://osaka-jinjacho.jp/funai_jinja/dai11shibu/tondabayashi-city/11036konkujinja.html",
+      "quote": "最終更新日：令和元年7月1日",
+      "checkedAt": "2026-10-26"
+    },
+    {
+      "claim": "参拝は24時間可能",
+      "source": "https://maps.google.com/?cid=11279119064413728312",
+      "quote": "24時間営業",
+      "checkedAt": "2026-10-26"
+    }
+  ],
+  "sources": [
+    {
+      "label": "公式サイト",
+      "url": "https://osaka-jinjacho.jp/funai_jinja/dai11shibu/tondabayashi-city/11036konkujinja.html"
+    },
+    {
+      "label": "Google マップ",
+      "url": "https://maps.google.com/?cid=11279119064413728312"
+    }
+  ],
+  "notes": "automation/v2/write.mjs が 2026-10-26 に claude -p --model sonnet で作成。事実の裏取り: 10/11 件(quote が出どころにあるもの)。裏取りに通らなかった facts は載せていない。"
+}

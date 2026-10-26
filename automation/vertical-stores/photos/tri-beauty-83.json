@@ -1,0 +1,26 @@
+{
+  "key": "tri-beauty-83",
+  "images": [
+    {
+      "path": "/_portal/vshops/tri-beauty-83/g08.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9S13KdgN2cMtR5bKrsRo3Aq5MJc9rDc6kAdy0i6Xhl2OcEZxgTNFTot7FY09hPNntsF_qMXI6r6kwSJRdmHYtunKbn2_hyhgwmSHyKE_ubayhc5OuBbVyWOu8oIe1PwTqF13uVRZAOUsdU6=s1200",
+      "pageUrl": "https://maps.google.com/?cid=7566732335135464746",
+      "what": "紺色のカーテンと黒いソファ、ぬいぐるみが置かれた部屋",
+      "kind": "common",
+      "width": 438,
+      "height": 328,
+      "source": "Google マップ"
+    },
+    {
+      "path": "/_portal/vshops/tri-beauty-83/s10.jpg",
+      "imageUrl": "https://nefer.jp/_img/ja/cms/6387/image/_/image.webp?1792864728",
+      "pageUrl": "https://nefer.jp/",
+      "what": "プレアール長居公園Ⅱの看板が見える建物の入口付近の通り",
+      "kind": "exterior",
+      "width": 1200,
+      "height": 800,
+      "source": "公式サイト"
+    }
+  ],
+  "note": "automation/v2/write.mjs が 2026-10-25T01:15:46.698Z に取得。店の実写だけ(AI 画像・汎用画像・地図・ロゴ・顔が大きい画像は除外)。"
+}

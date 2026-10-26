@@ -1,0 +1,40 @@
+{
+  "tab": "トリニティアポ",
+  "tabEn": "tri-life",
+  "row": 190,
+  "sheet": {
+    "name": "中川八幡神社",
+    "address": "",
+    "url": "https://www.google.com/search?q=%E4%B8%AD%E5%B7%9D%E5%85%AB%E5%B9%A1%E7%A5%9E%E7%A4%BE%20%E9%95%B7%E5%B4%8E%E7%9C%8C%E9%95%B7%E5%B4%8E%E5%B8%82%E4%B8%AD%E5%B7%9D2-9-21%20%E9%9B%BB%E8%A9%B1%E7%95%AA%E5%8F%B7&sec_src=editors",
+    "type": "その他",
+    "d1": "",
+    "d2": ""
+  },
+  "urlKind": "search",
+  "route": "第1段(verify-gbp.mjs)で確認済み",
+  "verdict": "一致",
+  "verdictReason": "電話が一致／店名: exact(シート「中川八幡神社」/ マップ「中川八幡神社」)／住所(検索URL): exact・町名・番地とも一致",
+  "place": {
+    "name": "中川八幡神社",
+    "address": "長崎県長崎市中川２丁目９−２１",
+    "category": "神社",
+    "lat": 32.7525018,
+    "lng": 129.893176,
+    "gbpUrl": "https://maps.google.com/?cid=17543042819641556902",
+    "phone": "095-825-0685",
+    "website": "https://x.com/nakagawa_8man",
+    "hours": {
+      "月": "09:00–12:00, 13:00–17:00",
+      "火": "09:00–12:00, 13:00–17:00",
+      "水": "09:00–12:00, 13:00–17:00",
+      "木": "09:00–12:00, 13:00–17:00",
+      "金": "09:00–19:00",
+      "土": "09:00–12:00, 13:00–17:00",
+      "日": "09:00–19:00"
+    },
+    "reserveLinks": [],
+    "statusSignals": [],
+    "closedSignal": false
+  },
+  "fetchedAt": "2026-10-26T06:31:22.204Z"
+}

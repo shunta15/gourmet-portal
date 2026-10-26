@@ -1,0 +1,94 @@
+{
+  "key": "tri-life-100",
+  "headline": "和歌山県海南市下津町梅田にある寺院。本尊釈迦如来坐像を安置する釈迦堂は鎌倉時代後期の禅宗様式の建築で、国宝に指定されている",
+  "lede": "海南市下津町梅田にある「善福院 釈迦堂」です。善福院は健保2年(1214)に栄西禅師が創設したと伝わる広福寺五ヶ院の一つで、現在は三ヶ院のうち善福院だけが残っています。本尊釈迦如来坐像を安置する釈迦堂は嘉暦2年(1327)ごろの再建とされ、鎌倉時代後期の禅宗様式の典型的な建築として国宝に指定されています。",
+  "sections": [
+    {
+      "heading": "沿革",
+      "body": "善福院は健保2年(1214)、栄西禅師が創設したと伝わる広福寺五ヶ院の一つです。広福禅寺はかつて七堂伽藍を備えていましたが、大旦那の加茂氏の没落とともに荒廃しました。その後、高野山に頼って真言宗に転宗し伽藍を修復し、紀州藩の時代には天台宗に転宗しました。明治初期までは三ヶ院がありましたが、現在は善福院だけが残っています。"
+    },
+    {
+      "heading": "釈迦堂の建築",
+      "body": "釈迦堂は、本尊釈迦如来坐像の胎内の修理銘に嘉暦2年(1327)とあることから、この頃の再建とされています。桁行三間梁間三間、一重裳階付き寄棟造り、本瓦葺の二重仏殿で、木割が太くがっしりとした印象を与えます。床は布敷、組物は二手先で、禅宗様式が定着する前の様式がよくあらわれており、鎌倉時代後期の禅宗様式の典型的な建築として国宝に指定されています。"
+    },
+    {
+      "heading": "場所と駐車場",
+      "body": "所在地は海南市下津町梅田271番地、電話は073-492-2188です。境内には駐車場があります。"
+    }
+  ],
+  "menus": [],
+  "tags": [],
+  "facts": [
+    {
+      "claim": "善福院は健保2年(1214)に栄西禅師が創設したと伝わる広福寺五ヶ院の一つ",
+      "source": "https://www.city.kainan.lg.jp/kanko/midokoro/bunkazai/zenpukuinshakado.html",
+      "quote": "健保2年(1214)栄西禅師によって創設された",
+      "checkedAt": "2026-10-26"
+    },
+    {
+      "claim": "荒廃後、高野山に頼って真言宗に転宗し伽藍を修復した",
+      "source": "https://www.city.kainan.lg.jp/kanko/midokoro/bunkazai/zenpukuinshakado.html",
+      "quote": "高野山に頼り真言宗に転宗し伽藍を修復",
+      "checkedAt": "2026-10-26"
+    },
+    {
+      "claim": "紀州藩の時代には天台宗に転宗した",
+      "source": "https://www.city.kainan.lg.jp/kanko/midokoro/bunkazai/zenpukuinshakado.html",
+      "quote": "紀州藩となってからは天台宗に転宗しました",
+      "checkedAt": "2026-10-26"
+    },
+    {
+      "claim": "明治初期までは三ヶ院があったが現在は善福院だけが残っている",
+      "source": "https://www.city.kainan.lg.jp/kanko/midokoro/bunkazai/zenpukuinshakado.html",
+      "quote": "明治初期までは三ヶ院がありましたが現在は善福院だけ",
+      "checkedAt": "2026-10-26"
+    },
+    {
+      "claim": "本尊釈迦如来坐像の胎内の修理銘に嘉暦2年(1327)とあり、この頃の再建とされる",
+      "source": "https://www.city.kainan.lg.jp/kanko/midokoro/bunkazai/zenpukuinshakado.html",
+      "quote": "釈迦如来坐像の胎内の修理銘に嘉暦2年(1327)とある",
+      "checkedAt": "2026-10-26"
+    },
+    {
+      "claim": "釈迦堂は桁行三間梁間三間、一重裳階付き寄棟造り、本瓦葺の二重仏殿",
+      "source": "https://www.city.kainan.lg.jp/kanko/midokoro/bunkazai/zenpukuinshakado.html",
+      "quote": "桁行三間梁間三間、一重裳階附き寄棟造り、本瓦葺の二重仏殿",
+      "checkedAt": "2026-10-26"
+    },
+    {
+      "claim": "鎌倉時代後期の禅宗様式の典型的な建築として国宝に指定されている",
+      "source": "https://www.city.kainan.lg.jp/kanko/midokoro/bunkazai/zenpukuinshakado.html",
+      "quote": "鎌倉時代後期の禅宗様式の典型的な建築として国宝に指定",
+      "checkedAt": "2026-10-26"
+    },
+    {
+      "claim": "所在地は海南市下津町梅田271番地",
+      "source": "https://www.city.kainan.lg.jp/kanko/midokoro/bunkazai/zenpukuinshakado.html",
+      "quote": "海南市下津町梅田271番地",
+      "checkedAt": "2026-10-26"
+    },
+    {
+      "claim": "Google マップの業種表示は仏教寺院",
+      "source": "https://maps.google.com/?cid=17265377560436211691",
+      "quote": "仏教寺院",
+      "checkedAt": "2026-10-26"
+    },
+    {
+      "claim": "電話番号は073-492-2188",
+      "source": "https://maps.google.com/?cid=17265377560436211691",
+      "quote": "073-492-2188",
+      "checkedAt": "2026-10-26"
+    }
+  ],
+  "sources": [
+    {
+      "label": "公式サイト",
+      "url": "https://www.city.kainan.lg.jp/kanko/midokoro/bunkazai/zenpukuinshakado.html"
+    },
+    {
+      "label": "Google マップ",
+      "url": "https://maps.google.com/?cid=17265377560436211691"
+    }
+  ],
+  "notes": "automation/v2/write.mjs が 2026-10-26 に claude -p --model sonnet で作成。事実の裏取り: 10/11 件(quote が出どころにあるもの)。裏取りに通らなかった facts は載せていない。"
+}

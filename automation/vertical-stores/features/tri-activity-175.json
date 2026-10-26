@@ -1,0 +1,259 @@
+{
+  "key": "tri-activity-175",
+  "vertical": "activity",
+  "storeName": "海の音色",
+  "article": {
+    "id": "海の音色",
+    "no": "",
+    "articleType": "guide",
+    "kicker": "UMI NO NEIRO ATAMI",
+    "title": "静岡県熱海市・海の音色。長浜海水浴場から出発する完全貸切のSUPツアー",
+    "titleHTML": "静岡県熱海市上多賀の完全貸切SUPツアー<br><em>海の音色</em>の出発場所と参加できる人",
+    "subtitle": "海・川 / 静岡県熱海市 / 完全貸切のSUPツアー",
+    "lede": "静岡県熱海市上多賀の海の音色は、SUP(スタンドアップパドルボード)で南熱海の海をめぐるツアーを、完全貸切で行う店だ。出発場所は長浜海水浴場で、JR熱海駅から車で約15分の立地にある。初心者の参加が9割以上を占め、9歳以下の子どもや海に慣れた犬もタンデムで参加できる。",
+    "date": "2026-10-25",
+    "reading": "",
+    "author": "マチノワ編集部",
+    "heroImage": "/_portal/vshops/tri-activity-175/g01.jpg",
+    "ogImage": "/_portal/vshops/tri-activity-175/g01.jpg",
+    "ranking": [
+      {
+        "rank": "POINT 01",
+        "rankNum": 1,
+        "name": "完全貸切で行う、南熱海のSUPツアー",
+        "cuisine": "SUPツアー",
+        "area": "熱海市",
+        "purpose": "ツアーのしくみを先に知りたい人へ",
+        "desc": "SUP(スタンドアップパドルボード)に乗って、南熱海の静かな海をめぐるツアーだ。ツアーは完全貸切で行われ、ほかの参加者と一緒になることはない。出発場所は長浜海水浴場で、インストラクターが初心者から経験者までサポートする。初心者の参加が9割以上を占めていて、ライフジャケットの着用率は100%だ。参加中は写真・動画の撮影サービスも利用できる。扱っているのは、初心者向けSUP、ドッグSUP、貸切SUPツアーだ。",
+        "images": [
+          "/_portal/vshops/tri-activity-175/g03.jpg"
+        ],
+        "specs": [
+          {
+            "k": "出発場所",
+            "v": "長浜海水浴場"
+          },
+          {
+            "k": "ライフジャケット",
+            "v": "着用率100%"
+          }
+        ]
+      },
+      {
+        "rank": "POINT 02",
+        "rankNum": 2,
+        "name": "9歳以下の子どもと、海に慣れた犬のタンデム参加",
+        "cuisine": "参加の条件",
+        "area": "熱海市",
+        "purpose": "子どもや犬と参加できるか知りたい人へ",
+        "desc": "9歳以下の子どもは、大人と一緒にタンデム(2人乗り)で参加する。海に慣れている犬も、タンデムで一緒に参加できる。愛犬を連れてのドッグSUPにも対応している。企業の社員旅行やチームビルディング研修など、団体での利用にも対応している。",
+        "images": [],
+        "specs": [
+          {
+            "k": "子どもの参加",
+            "v": "9歳以下はタンデムで参加"
+          },
+          {
+            "k": "犬の参加",
+            "v": "海に慣れた犬はタンデムで参加可"
+          }
+        ]
+      },
+      {
+        "rank": "POINT 03",
+        "rankNum": 3,
+        "name": "長浜海水浴場とJR熱海駅からのアクセス",
+        "cuisine": "アクセス",
+        "area": "熱海市上多賀",
+        "purpose": "行き方を知りたい人へ",
+        "desc": "住所は静岡県熱海市上多賀203-6で、JR熱海駅から車で約15分の立地にある。ツアーの出発場所は長浜海水浴場だ。営業時間は月曜から日曜まで9時から17時となっている。",
+        "images": [
+          "/_portal/vshops/tri-activity-175/g08.jpg"
+        ],
+        "specs": [
+          {
+            "k": "住所",
+            "v": "静岡県熱海市上多賀203-6"
+          },
+          {
+            "k": "営業時間",
+            "v": "9:00〜17:00(月〜日)"
+          }
+        ]
+      }
+    ],
+    "sideArticles": [],
+    "quote": "出発場所は長浜海水浴場で、ツアーは完全貸切で行われる。初心者の参加が9割以上を占め、9歳以下の子どもや海に慣れた犬もタンデムで参加できる。",
+    "quoteCite": "マチノワ編集部",
+    "closing": "住所は静岡県熱海市上多賀203-6、JR熱海駅から車で約15分の立地にある。営業時間は月曜から日曜まで9時から17時だ。ツアーの出発場所は長浜海水浴場で、ライフジャケットの着用率は100%となっている。"
+  },
+  "summary": "静岡県熱海市上多賀の海の音色の情報を整理。長浜海水浴場から出発する完全貸切のSUPツアーのしくみ、初心者や子ども、犬の参加条件、ライフジャケットの着用、JR熱海駅からのアクセスをまとめた特集。",
+  "tags": [
+    "海・川",
+    "熱海市"
+  ],
+  "charCount": 706,
+  "facts": [
+    {
+      "claim": "業種の表示はツアー業者",
+      "source": "https://maps.google.com/?cid=5280472783725508324",
+      "quote": "ツアー業者",
+      "checkedAt": "2026-10-25"
+    },
+    {
+      "claim": "営業時間は月曜から日曜まで9時から17時",
+      "source": "https://maps.google.com/?cid=5280472783725508324",
+      "quote": "09:00–17:00",
+      "checkedAt": "2026-10-25"
+    },
+    {
+      "claim": "住所は静岡県熱海市上多賀203-6",
+      "source": "https://uminoneiro.jimdofree.com/",
+      "quote": "熱海市上多賀",
+      "checkedAt": "2026-10-25"
+    },
+    {
+      "claim": "ツアーは長浜海水浴場から出発する",
+      "source": "https://uminoneiro.jimdofree.com/",
+      "quote": "長浜海水浴場",
+      "checkedAt": "2026-10-25"
+    },
+    {
+      "claim": "ツアーは完全貸切で行われる",
+      "source": "https://uminoneiro.jimdofree.com/",
+      "quote": "完全貸切だから安心",
+      "checkedAt": "2026-10-25"
+    },
+    {
+      "claim": "初心者の参加が9割以上を占める",
+      "source": "https://uminoneiro.jimdofree.com/",
+      "quote": "初心者率90%以上",
+      "checkedAt": "2026-10-25"
+    },
+    {
+      "claim": "愛犬を連れてのドッグSUPに対応する",
+      "source": "https://uminoneiro.jimdofree.com/",
+      "quote": "愛犬参加OK",
+      "checkedAt": "2026-10-25"
+    },
+    {
+      "claim": "JR熱海駅から車で約15分の立地にある",
+      "source": "https://www.atami-biz.jp/activity/127/",
+      "quote": "JR熱海駅から車で約15分",
+      "checkedAt": "2026-10-25"
+    },
+    {
+      "claim": "9歳以下の子どもは大人とタンデムで参加する",
+      "source": "https://www.atami-biz.jp/activity/127/",
+      "quote": "9歳以下のお子様は",
+      "checkedAt": "2026-10-25"
+    },
+    {
+      "claim": "海に慣れている犬はタンデムで参加できる",
+      "source": "https://www.atami-biz.jp/activity/127/",
+      "quote": "海に慣れているワンちゃん",
+      "checkedAt": "2026-10-25"
+    },
+    {
+      "claim": "企業の社員旅行やチームビルディング研修に対応する",
+      "source": "https://www.atami-biz.jp/activity/127/",
+      "quote": "企業の社員旅行やチームビルディング研修",
+      "checkedAt": "2026-10-25"
+    },
+    {
+      "claim": "写真・動画撮影のサービスがある",
+      "source": "https://www.atami-biz.jp/activity/127/",
+      "quote": "写真・動画撮影サービス",
+      "checkedAt": "2026-10-25"
+    },
+    {
+      "claim": "初心者から経験者までインストラクターがサポートする",
+      "source": "https://www.atami-biz.jp/activity/127/",
+      "quote": "インストラクターが丁寧にサポート",
+      "checkedAt": "2026-10-25"
+    },
+    {
+      "claim": "初心者向けSUP、ドッグSUP、貸切SUPツアーを扱う",
+      "source": "https://uminoneiro.jimdofree.com/",
+      "quote": "初心者向けSUP、ドッグSUP、貸切SUPツアー",
+      "checkedAt": "2026-10-25"
+    }
+  ],
+  "images": [
+    {
+      "path": "/_portal/vshops/tri-activity-175/g01.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9TfX1nkyzKDQDzlIuGbNb45MkI80HASBpJTCs2ua9KGKR88qk3Nm1mxSUd3FikEiJTbsY3XuMTHyOhYEmbydvIoKDNfFyM8apPSqAZsZmzRx57Yzh4AsfhgGuWKm3y-DttIGDe1=s1200",
+      "pageUrl": "https://maps.google.com/?cid=5280472783725508324",
+      "what": "海食洞をSUPで進む人の後ろ姿"
+    },
+    {
+      "path": "/_portal/vshops/tri-activity-175/g02.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9QPfPyAHVG6iK6vkfPf6s5ApSYq8-ZmQ7OZVCyo3ul-DUiJP8vMv8jj5BXjPw687hijhaabMLYrEf9XLNczObbcxRfnZ72E6jLO0o0KTeu2SkfEXmohQAdELF4dI_fsbS0ItQSwEg=s1200",
+      "pageUrl": "https://maps.google.com/?cid=5280472783725508324",
+      "what": "SUPに乗る人と遠くの山並み"
+    },
+    {
+      "path": "/_portal/vshops/tri-activity-175/g03.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9Q9nWf0qxIEZ3At0bnoSKbWZMBkCT0q0L8Fvor-tRCnbhrxQqISTALhg3qn-DjmnbDMT0DaQctjyOCQXL2uwuOd1apaOM67pwAwk74iIzwoFgaB_uxe2TFfWhL6abnDm-p0ZLN5=s1200",
+      "pageUrl": "https://maps.google.com/?cid=5280472783725508324",
+      "what": "SUPに立つ人と岸の崖"
+    },
+    {
+      "path": "/_portal/vshops/tri-activity-175/g04.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9TxlHrKw_Ng7UnEbA7Z7GLWJB0ZhDXQfOhitTpEJuN_-37prme04ipkyb-wlL8wyGZaClAv_xWoR0S7O-SWW4w1Uvwp_KUafD6uIT80_3hVAHEgnYfcdH1PT9uqLrbdHXUb6Z7coA=s1200",
+      "pageUrl": "https://maps.google.com/?cid=5280472783725508324",
+      "what": "夕日を背にSUPに乗る人のシルエット"
+    },
+    {
+      "path": "/_portal/vshops/tri-activity-175/g05.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9QUwfDS8ZVBqd2P65--gOdmqZxHmXRln1v2ClJ2bquUHZC4jIEfppbuleQ1sAPXZWoQaoVnwZ5POtVFEQKOFBtjqjcIYQFG6nVeJ7VZ6xgQtCP9iEn5z5vO9YnSwgQQ_0wdHAY88A=s1200",
+      "pageUrl": "https://maps.google.com/?cid=5280472783725508324",
+      "what": "入り江でSUPに乗る人と澄んだ海"
+    },
+    {
+      "path": "/_portal/vshops/tri-activity-175/g06.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9TrLRDZFoJ5SXF_Z3Siqj7BoDtYovWZV7kUasfAUK6hn5ZfbQ-Il5M16Rga7VBp7nZVFG3zpM7v7yk8lHlH7vw_XYlc4Lu4WXmNqUz8qplG-Gn3mNBaktddBBwTBK2veBr_1e0=s1200",
+      "pageUrl": "https://maps.google.com/?cid=5280472783725508324",
+      "what": "海面でSUPのそばにいる人"
+    },
+    {
+      "path": "/_portal/vshops/tri-activity-175/g07.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9RgICEBqMA4BCd7OcmhQM-IceGDOg05mYA4K1J_n-ZdhLXgIzA7Abk-vxbtivk23hAs6dO5k9_ta0ivGJdjfNldQ9HC8XoM-X5pbbUSMOZJxMTfdWcs5Yc9lDtZ-f4QElT1pcIH=s1200",
+      "pageUrl": "https://maps.google.com/?cid=5280472783725508324",
+      "what": "海にせり出す岩と遠くの人"
+    },
+    {
+      "path": "/_portal/vshops/tri-activity-175/g08.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9T3ZoL4kuza-X657ESzomFBMVmSgVpgeePm8sZkVE35Cuq6A8EkzxKeDzJqTW-42wrwU3Wmc7Ufjvfyaq7K-8l9Gu6PcJ8AY_6W1OS2xUKTfX2-spIWQwKOSUMKFUIbwLlVYp4T=s1200",
+      "pageUrl": "https://maps.google.com/?cid=5280472783725508324",
+      "what": "「SUP体験受付中」の看板がある建物"
+    },
+    {
+      "path": "/_portal/vshops/tri-activity-175/g09.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9TF6J-HkWQRxo_NYgbH9UKhe_xedyFZcJCICTQyNnCI2MTZVH--R_P31MNNTAD2PpqeU4G6IviJwZ4ENwefzBwYJnrlEW33e8wowiVXXfea0g_btMz6B3H-Mpb0yjfF53olX_y3WQ=s1200",
+      "pageUrl": "https://maps.google.com/?cid=5280472783725508324",
+      "what": "カラフルな板壁の小屋"
+    },
+    {
+      "path": "/_portal/vshops/tri-activity-175/g10.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9S22aobkE5FwVvMShJE5v1jDlsznCYtgef4qyIozQimrnjzReGYqjBQ3Do4qwNeSdCwYpt-IjOb5lA8GYCJXfNAcJk-aOIvVzaQIlGTaZoWnta98g-_QHdmOHAXTpO-M10xRm3w=s1200",
+      "pageUrl": "https://maps.google.com/?cid=5280472783725508324",
+      "what": "海で並んでSUPに乗る複数の人"
+    }
+  ],
+  "sources": [
+    {
+      "label": "公式サイト",
+      "url": "https://uminoneiro.jimdofree.com/"
+    },
+    {
+      "label": "地域情報サイト",
+      "url": "https://www.atami-biz.jp/activity/127/"
+    },
+    {
+      "label": "Google マップ",
+      "url": "https://maps.google.com/?cid=5280472783725508324"
+    }
+  ],
+  "notes": "automation/v2/write.mjs が 2026-10-25 に作成。"
+}

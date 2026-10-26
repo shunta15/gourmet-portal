@@ -1,0 +1,32 @@
+{
+  "tab": "トリニティアポ",
+  "tabEn": "tri-stay",
+  "row": 115,
+  "sheet": {
+    "name": "民泊 セカンドライフ",
+    "address": "",
+    "url": "https://www.google.com/search?q=080-6549-1020+%E6%B0%91%E6%B3%8A+%E3%82%BB%E3%82%AB%E3%83%B3%E3%83%89%E3%83%A9%E3%82%A4%E3%83%95+%E3%80%92311-2214+%E8%8C%A8%E5%9F%8E%E7%9C%8C%E9%B9%BF%E5%B6%8B%E5%B8%82%E6%A3%9A%E6%9C%A8%EF%BC%93%EF%BC%90%EF%BC%92%E2%88%92%EF%BC%91&oq=080-6549-1020%09%E6%B0%91%E6%B3%8A+%E3%82%BB%E3%82%AB%E3%83%B3%E3%83%89%E3%83%A9%E3%82%A4%E3%83%95%09%E3%80%92311-2214+%E8%8C%A8%E5%9F%8E%E7%9C%8C%E9%B9%BF%E5%B6%8B%E5%B8%82%E6%A3%9A%E6%9C%A8%EF%BC%93%EF%BC%90%EF%BC%92%E2%88%92%EF%BC%91&gs_lcrp=EgZjaHJvbWUyBggAEEUYOTIHCAEQABjvBTIHCAIQABjvBTIHCAMQABjvBTIHCAQQABjvBTIHCAUQABjvBdIBBzE5OWowajeoAgCwAgA&sourceid=chrome&source=chrome.ob&ie=UTF-8",
+    "type": "宿泊",
+    "d1": "",
+    "d2": ""
+  },
+  "urlKind": "search",
+  "route": "第1段(verify-gbp.mjs)で確認済み",
+  "verdict": "一致",
+  "verdictReason": "電話が一致／店名: exact(シート「民泊 セカンドライフ」/ マップ「民泊 セカンドライフ」)／住所(検索URL): exact・町名・番地とも一致",
+  "place": {
+    "name": "民泊 セカンドライフ",
+    "address": "茨城県鹿嶋市棚木３０２−１",
+    "category": "家具付き宿泊施設",
+    "lat": 36.030697,
+    "lng": 140.6031661,
+    "gbpUrl": "https://maps.google.com/?cid=16012889078296844831",
+    "phone": "080-6549-1020",
+    "website": "https://maru-secondlife.com/",
+    "hours": null,
+    "reserveLinks": [],
+    "statusSignals": [],
+    "closedSignal": false
+  },
+  "fetchedAt": "2026-10-25T00:43:30.622Z"
+}

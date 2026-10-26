@@ -4,6 +4,7 @@
 
 import type { Metadata } from 'next';
 import { robotsFor } from './gate';
+import { isUnlistedPlace, isUnlistedPlaceFeature } from '../unlisted';
 import { ogImage } from './og';
 
 export interface MetadataParams {
@@ -23,6 +24,17 @@ export interface MetadataParams {
  * - openGraph（画像は lib/seo/og.ts の共有画像）・twitter
  * - robots（件数に基づいて index/noindex）
  */
+/** /<業種>/shop/<ID>・/<業種>/article/<ID>・/<業種>/feature/<ID> が、限定公開(lib/unlisted.ts)の店・記事か */
+function isUnlistedPath(path: string): boolean {
+  const m = /^\/[a-z]+\/(?:shop|article|feature)\/([^/?#]+)$/.exec(path);
+  if (!m) return false;
+  let id = m[1];
+  try {
+    id = decodeURIComponent(id);
+  } catch {}
+  return isUnlistedPlace(id) || isUnlistedPlaceFeature(id);
+}
+
 export function buildMetadata(params: MetadataParams): Metadata {
   const { vertical, title, description, path, count = 0, image } = params;
   const og = image ? { url: image.url, ...(image.width && image.height ? { width: image.width, height: image.height } : {}), alt: image.alt } : ogImage(path, title);
@@ -53,6 +65,7 @@ export function buildMetadata(params: MetadataParams): Metadata {
       description,
       images: [og.url],
     },
-    robots: robotsFor(count),
+    // 限定公開の店・記事(lib/unlisted.ts)は常に noindex(canonical は自分の URL)
+    robots: isUnlistedPath(path) ? { index: false, follow: true } : robotsFor(count),
   };
 }

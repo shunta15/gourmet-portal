@@ -1,3 +1,4 @@
+import { withUnlisted } from "@/lib/unlistedScope";
 import { lifeCfg } from "@/components/portal/vkit/configs";
 import { vkArticleRoute } from "@/components/portal/vkit/article/route";
 import { LifeArticlePage } from "@/components/portal/life/pages";
@@ -9,8 +10,8 @@ const route = vkArticleRoute(lifeCfg);
 export const revalidate = 3600;
 export const dynamicParams = true;
 export const generateStaticParams = route.generateStaticParams;
-export const generateMetadata = route.generateMetadata;
+export const generateMetadata = withUnlisted(route.generateMetadata);
 
-export default async function Page(props: { params: Promise<{ id: string }> }) {
+export default withUnlisted(async function Page(props: { params: Promise<{ id: string }> }) {
   return <LifeArticlePage id={(await props.params).id} />;
-}
+});

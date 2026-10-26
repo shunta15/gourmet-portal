@@ -1,0 +1,22 @@
+{
+  "name": "HITSUJI to BEER（ヒツジとビール）",
+  "address": "北海道帯広市西１条南１１丁目１１−２",
+  "lat": 42.9196673,
+  "lng": 143.2038158,
+  "category": "マトン焼き肉店",
+  "hours": {
+    "月": "10:30–22:00",
+    "火": "10:30–22:00",
+    "水": "定休日",
+    "木": "10:30–22:00",
+    "金": "10:30–22:00",
+    "土": "10:30–22:00",
+    "日": "10:30–22:00"
+  },
+  "phone": "050-8885-3329",
+  "website": "https://www.instagram.com/hitsujitobeer?igsh=bmN1NGlzcTdsd3I2",
+  "priceRange": null,
+  "status": null,
+  "gbpUrl": "https://maps.google.com/?cid=12944922899900480563",
+  "fetchedAt": "2026-10-25T00:47:54.502Z"
+}

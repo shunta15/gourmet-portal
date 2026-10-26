@@ -1,0 +1,40 @@
+{
+  "tab": "トリニティアポ",
+  "tabEn": "tri-activity",
+  "row": 167,
+  "sheet": {
+    "name": "ダイブハウス富戸",
+    "address": "",
+    "url": "https://www.google.com/search?q=%E3%83%80%E3%82%A4%E3%83%96%EF%BC%86%E3%83%8F%E3%82%A6%E3%82%B9%E5%AF%8C%E6%88%B8%0D%0A&sca_esv=c26373f3b23c5d40&biw=1536&bih=703&sxsrf=APpeQntgknoocqdF2sMh5Ib8-55HfiTE1A%3A1792573400530&ei=2H_YavHvH8Sk2roP3pSZgAc&uact=5&oq=%E3%83%80%E3%82%A4%E3%83%96%EF%BC%86%E3%83%8F%E3%82%A6%E3%82%B9%E5%AF%8C%E6%88%B8%0D%0A&gs_lp=Egxnd3Mtd2l6LXNlcnAiHOODgOOCpOODlu-8huODj-OCpuOCueWvjOaIuApIzQhQpwRYpwRwBHgAkAEAmAEAoAEAqgEAuAEDyAEA-AEC-AEBmAIAoAIAmAMAiAYBkgcAoAcAsgcAuAcAwgcAyAcAgAgB&sclient=gws-wiz-serp",
+    "type": "レジャー",
+    "d1": "",
+    "d2": ""
+  },
+  "urlKind": "search",
+  "route": "第1段(verify-gbp.mjs)で確認済み",
+  "verdict": "一致",
+  "verdictReason": "電話が一致／店名: exact(シート「ダイブハウス富戸」/ マップ「ダイブ＆ハウス富戸」)",
+  "place": {
+    "name": "ダイブ＆ハウス富戸",
+    "address": "静岡県伊東市富戸８５５−３",
+    "category": "ダイビング ショップ",
+    "lat": 34.8951668,
+    "lng": 139.1325139,
+    "gbpUrl": "https://maps.google.com/?cid=8052179356069506109",
+    "phone": "0557-51-8113",
+    "website": "http://xn--eckya9b6d1h.biz/divehousefuto",
+    "hours": {
+      "月": "08:00–18:00",
+      "火": "08:00–18:00",
+      "水": "08:00–18:00",
+      "木": "08:00–18:00",
+      "金": "08:00–18:00",
+      "土": "08:00–18:00",
+      "日": "08:00–18:00"
+    },
+    "reserveLinks": [],
+    "statusSignals": [],
+    "closedSignal": false
+  },
+  "fetchedAt": "2026-10-25T01:01:23.363Z"
+}

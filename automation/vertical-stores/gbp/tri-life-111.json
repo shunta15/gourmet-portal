@@ -1,0 +1,40 @@
+{
+  "tab": "トリニティアポ",
+  "tabEn": "tri-life",
+  "row": 111,
+  "sheet": {
+    "name": "占い空間 花の瞳",
+    "address": "",
+    "url": "https://www.google.com/search?q=%E5%8D%A0%E3%81%84%E7%A9%BA%E9%96%93+%E8%8A%B1%E3%81%AE%E7%9E%B3%09%E3%80%92700-0902+%E5%B2%A1%E5%B1%B1%E7%9C%8C%E5%B2%A1%E5%B1%B1%E5%B8%82%E5%8C%97%E5%8C%BA%E9%8C%A6%E7%94%BA%EF%BC%96%E2%88%92%EF%BC%91%EF%BC%90+%E4%B9%85%E4%B8%96%E3%83%93%E3%83%AB+4%E9%9A%8E&sca_esv=d3b75dd3f8b2c6d3&biw=1422&bih=650&sxsrf=APpeQnuucZNwgHIDk1cuwEg2wU_aHu3AGQ%3A1792400239113&ei=b9vVasu3BtXM1e8P6fWK0QY&uact=5&oq=%E5%8D%A0%E3%81%84%E7%A9%BA%E9%96%93+%E8%8A%B1%E3%81%AE%E7%9E%B3%09%E3%80%92700-0902+%E5%B2%A1%E5%B1%B1%E7%9C%8C%E5%B2%A1%E5%B1%B1%E5%B8%82%E5%8C%97%E5%8C%BA%E9%8C%A6%E7%94%BA%EF%BC%96%E2%88%92%EF%BC%91%EF%BC%90+%E4%B9%85%E4%B8%96%E3%83%93%E3%83%AB+4%E9%9A%8E&gs_lp=Egxnd3Mtd2l6LXNlcnAiX-WNoOOBhOepuumWkyDoirHjga7nnrMJ44CSNzAwLTA5MDIg5bKh5bGx55yM5bKh5bGx5biC5YyX5Yy66Yym55S677yW4oiS77yR77yQIOS5heS4luODk-ODqyA06ZqOMgUQABjvBTIFEAAY7wUyCBAAGIAEGKIESP8IUI4HWI4HcAF4AZABAJgBcaABcaoBAzAuMbgBA8gBAPgBAvgBAZgCAqAChAGoAhTCAgcQIxjqAhgnwgIQEAAYAxiPARjqAhi0AtgBAZgDDPEFgYyVgK4HAyi6BgYIARABGAqSBwMxLjGgB98BsgcDMC4xuAd4wgcFMi0xLjHIBw6ACAE&sclient=gws-wiz-serp",
+    "type": "ライフスタイル",
+    "d1": "",
+    "d2": ""
+  },
+  "urlKind": "search",
+  "route": "第1段(verify-gbp.mjs)で確認済み",
+  "verdict": "一致",
+  "verdictReason": "電話が一致／店名: exact(シート「占い空間 花の瞳」/ マップ「占い空間 花の瞳」)／住所(検索URL): exact・町名・番地とも一致",
+  "place": {
+    "name": "占い空間 花の瞳",
+    "address": "岡山県岡山市北区錦町６−１０ 久世ビル 4階",
+    "category": "占いサービス",
+    "lat": 34.6630275,
+    "lng": 133.9201844,
+    "gbpUrl": "https://maps.google.com/?cid=16468765391982797720",
+    "phone": "080-1487-9103",
+    "website": null,
+    "hours": {
+      "月": "13:00–21:00",
+      "火": "13:00–21:00",
+      "水": "13:00–21:00",
+      "木": "13:00–21:00",
+      "金": "13:00–21:00",
+      "土": "13:00–21:00",
+      "日": "13:00–21:00"
+    },
+    "reserveLinks": [],
+    "statusSignals": [],
+    "closedSignal": false
+  },
+  "fetchedAt": "2026-10-26T06:20:02.230Z"
+}

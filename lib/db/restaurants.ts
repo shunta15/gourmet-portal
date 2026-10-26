@@ -10,10 +10,11 @@
  *   トップ・地域一覧・シーン・検索から漏れていた（個別ページとサイトマップは和集合なので出ていた）。
  *   DB に行がある店（公開・非公開を問わない）は DB を優先し、非公開行はコード側から復活させない。
  *   ※ 非公開行を見分けるには service role キーが必要（anon だと RLS で非公開行が見えず、コード側の店として出てしまう）。
+ * - 限定公開の店（lib/unlisted.ts。UNLISTED_RESTAURANTS）は、一覧系・ID 一覧・sitemap には出さず、getRestaurantById だけが返す。
  * - 非表示の店（lib/hiddenStores.ts。2026-10-12 オーナー決定の 4 店。ID の完全一致）は、DB の行もコード側の店も、ここで外す（データは消さない・DB には書かない）。
  */
 import { createClient } from "@supabase/supabase-js";
-import { RESTAURANTS, type Restaurant, type RegionKey } from "@/lib/data";
+import { RESTAURANTS, UNLISTED_RESTAURANTS, type Restaurant, type RegionKey } from "@/lib/data";
 import { sanitizeRestaurant } from "@/lib/imageBlocklist";
 import { applyShopPhotos } from "@/lib/shopPhotos";
 import { cleanRestaurantText } from "@/lib/otherSiteRatings";
@@ -170,7 +171,8 @@ export async function getRestaurantById(id: string): Promise<Restaurant | null> 
   } catch (e) {
     console.warn(`[db] getRestaurantById(${id}) fallback to data.ts:`, e);
   }
-  const fallback = CODE_RESTAURANTS.find((r) => r.id === id);
+  // 限定公開の店(lib/unlisted.ts)は、ID を指定して引くときだけ返す(一覧・件数・sitemap には出さない)
+  const fallback = CODE_RESTAURANTS.find((r) => r.id === id) ?? UNLISTED_RESTAURANTS.find((r) => r.id === id);
   return fallback ? finish(fallback) : null;
 }
 

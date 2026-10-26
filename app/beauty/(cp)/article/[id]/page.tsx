@@ -1,3 +1,4 @@
+import { withUnlisted } from "@/lib/unlistedScope";
 import { cpArticlePage } from "@/components/portal/colorplay/pages/article";
 import { BEAUTY_SITE } from "@/lib/portal/colorplay/site";
 import { assertPortalLive, liveStaticParams } from "@/lib/portal/launch";
@@ -11,12 +12,12 @@ export const revalidate = 3600;
 export const dynamicParams = true;
 export const generateStaticParams = liveStaticParams(async () => cp.staticParams());
 
-export async function generateMetadata(props: Parameters<typeof cp.generateMetadata>[0]) {
+export const generateMetadata = withUnlisted(async function generateMetadata(props: Parameters<typeof cp.generateMetadata>[0]) {
   assertPortalLive();
   return cp.generateMetadata(props);
-}
+});
 
-export default async function Page(props: Parameters<typeof cp.Page>[0]) {
+export default withUnlisted(async function Page(props: Parameters<typeof cp.Page>[0]) {
   assertPortalLive();
   return cp.Page(props);
-}
+});

@@ -1,0 +1,40 @@
+{
+  "tab": "トリニティアポ",
+  "tabEn": "tri-life",
+  "row": 117,
+  "sheet": {
+    "name": "加支多神社",
+    "address": "",
+    "url": "https://www.google.com/search?q=%E5%8A%A0%E6%94%AF%E5%A4%9A%E7%A5%9E%E7%A4%BE%09%E5%A4%A7%E9%98%AA%E5%BA%9C%E6%B3%89%E4%BD%90%E9%87%8E%E5%B8%82%E9%B6%B4%E5%8E%9F1834%E7%95%AA%E5%9C%B02&sca_esv=884dd6fe85adf28f&biw=742&bih=663&sxsrf=APpeQnvs0SklsrKRRAbUjJRPBuqTdhyDpw%3A1792460760683&ei=2MfWauufKeuihvcPrLm42QI&uact=5&oq=%E5%8A%A0%E6%94%AF%E5%A4%9A%E7%A5%9E%E7%A4%BE%09%E5%A4%A7%E9%98%AA%E5%BA%9C%E6%B3%89%E4%BD%90%E9%87%8E%E5%B8%82%E9%B6%B4%E5%8E%9F1834%E7%95%AA%E5%9C%B02&gs_lp=Egxnd3Mtd2l6LXNlcnAiNuWKoOaUr-WkmuelnuekvgnlpKfpmKrlupzms4nkvZDph47luILptrTljp8xODM055Wq5ZywMjIFECEYoAFI3QNQxAFYxAFwAXgBkAEAmAGjAaABowGqAQMwLjG4AQPIAQD4AQL4AQGYAgKgAq0BqAIKwgIHECMY6gIYJ5gDBfEF4bJUFTEm1PuSBwMxLjGgB4ECsgcDMC4xuAeoAcIHBTEuMC4xyAcEgAgB&sclient=gws-wiz-serp",
+    "type": "神社",
+    "d1": "",
+    "d2": ""
+  },
+  "urlKind": "search",
+  "route": "第1段(verify-gbp.mjs)で確認済み",
+  "verdict": "一致",
+  "verdictReason": "電話が一致／店名: exact(シート「加支多神社」/ マップ「⛩️加支多神社（加支多えびす）」)／住所(検索URL): near・番地一致（丁目なしの番地に枝番の差: シート1834-2 / マップ1834）",
+  "place": {
+    "name": "⛩️加支多神社（加支多えびす）",
+    "address": "大阪府泉佐野市鶴原１８３４",
+    "category": "神社",
+    "lat": 34.4260813,
+    "lng": 135.3422428,
+    "gbpUrl": "https://maps.google.com/?cid=14033196862432004459",
+    "phone": "072-462-1506",
+    "website": "https://mai-ru.jp/shrines_and_temples/kashitajinja/",
+    "hours": {
+      "月": "09:00–17:00",
+      "火": "09:00–17:00",
+      "水": "09:00–17:00",
+      "木": "09:00–17:00",
+      "金": "09:00–17:00",
+      "土": "09:00–17:00",
+      "日": "09:00–17:00"
+    },
+    "reserveLinks": [],
+    "statusSignals": [],
+    "closedSignal": false
+  },
+  "fetchedAt": "2026-10-26T06:20:36.979Z"
+}

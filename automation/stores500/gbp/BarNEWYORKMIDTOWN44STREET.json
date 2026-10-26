@@ -1,0 +1,22 @@
+{
+  "name": "Bar NEWYORK MIDTOWN 44 STREET",
+  "address": "青森県弘前市鍛冶町２１ OTTOビル 4F",
+  "lat": 40.6011537,
+  "lng": 140.469808,
+  "category": "バー",
+  "hours": {
+    "月": "定休日",
+    "火": "18:00–02:00",
+    "水": "18:00–02:00",
+    "木": "18:00–02:00",
+    "金": "18:00–02:00",
+    "土": "18:00–02:00",
+    "日": "18:00–02:00"
+  },
+  "phone": "080-1800-0919",
+  "website": "https://www.instagram.com/barnewyorkmidtown44",
+  "priceRange": null,
+  "status": null,
+  "gbpUrl": "https://maps.google.com/?cid=4374743201201833721",
+  "fetchedAt": "2026-10-25T01:09:02.085Z"
+}

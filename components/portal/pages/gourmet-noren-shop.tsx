@@ -10,7 +10,7 @@ import ShopBar from "@/components/portal/noren/ShopBar";
 import ShopMapLink from "@/components/portal/noren/ShopMapLink";
 import SaveSeal from "@/components/portal/noren/SaveSeal";
 import KanjiCut from "@/components/portal/noren/KanjiCut";
-import { REGIONS, SHORT_VIDEOS, toCardItem, type Restaurant } from "@/lib/regions";
+import { REGIONS, SHORT_VIDEOS, regionNameOf, toCardItem, type Restaurant } from "@/lib/regions";
 import { getRestaurantById, getRestaurantsByRegion } from "@/lib/db/restaurants";
 import { getTownOfRestaurant } from "@/lib/db/towns";
 import { GEO } from "@/lib/geo";
@@ -375,7 +375,7 @@ export default async function GourmetNorenShop({ id, links, shop }: { id: string
             <div className="vS-sechead vN-rv">
               <span className="vS-no" aria-hidden="true"><i>{no()}</i></span>
               <h2 id="vS-h-more" className="vS-h2">
-                {region.name}の、<em>他の名店。</em>
+                {regionNameOf(r.region)}の、<em>他の名店。</em>
               </h2>
             </div>
             <ul className="vS-more-l">

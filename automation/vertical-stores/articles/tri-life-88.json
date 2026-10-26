@@ -1,0 +1,72 @@
+{
+  "key": "tri-life-88",
+  "headline": "福岡県飯塚市菰田東にある雑貨店。営業は土曜と日曜の11時から17時のみ。",
+  "lede": "福岡県飯塚市にある「雑貨牧場GAYU（がゆ）」です。業種はGoogleマップで雑貨店、営業は土曜と日曜の11時から17時です。",
+  "sections": [
+    {
+      "heading": "アクセス",
+      "body": "住所は福岡県飯塚市菰田東２丁目２２−１３、電話は080-4271-6660です。"
+    },
+    {
+      "heading": "店の説明",
+      "body": "屋号は雑貨牧場GAYUです。公式サイトの説明は「雑貨屋です。……たぶん。」です。"
+    }
+  ],
+  "menus": [],
+  "tags": [],
+  "facts": [
+    {
+      "claim": "Googleマップの業種表示は雑貨店",
+      "source": "https://maps.google.com/?cid=490633358266085264",
+      "quote": "雑貨店",
+      "checkedAt": "2026-10-26"
+    },
+    {
+      "claim": "土曜と日曜は11時から17時営業",
+      "source": "https://maps.google.com/?cid=490633358266085264",
+      "quote": "土: 11:00–17:00",
+      "checkedAt": "2026-10-26"
+    },
+    {
+      "claim": "月曜から金曜は定休日",
+      "source": "https://maps.google.com/?cid=490633358266085264",
+      "quote": "月: 定休日",
+      "checkedAt": "2026-10-26"
+    },
+    {
+      "claim": "住所は福岡県飯塚市菰田東２丁目２２−１３",
+      "source": "https://maps.google.com/?cid=490633358266085264",
+      "quote": "福岡県飯塚市菰田東２丁目２２−１３",
+      "checkedAt": "2026-10-26"
+    },
+    {
+      "claim": "電話は080-4271-6660",
+      "source": "https://maps.google.com/?cid=490633358266085264",
+      "quote": "080-4271-6660",
+      "checkedAt": "2026-10-26"
+    },
+    {
+      "claim": "公式サイトの説明は雑貨屋です",
+      "source": "https://zakkagayu.com/",
+      "quote": "雑貨屋です。",
+      "checkedAt": "2026-10-26"
+    },
+    {
+      "claim": "屋号は雑貨牧場GAYU",
+      "source": "https://zakkagayu.com/",
+      "quote": "雑貨牧場GAYU",
+      "checkedAt": "2026-10-26"
+    }
+  ],
+  "sources": [
+    {
+      "label": "公式サイト",
+      "url": "https://zakkagayu.com/"
+    },
+    {
+      "label": "Google マップ",
+      "url": "https://maps.google.com/?cid=490633358266085264"
+    }
+  ],
+  "notes": "automation/v2/write.mjs が 2026-10-26 に claude -p --model sonnet で作成。事実の裏取り: 7/7 件(quote が出どころにあるもの)。裏取りに通らなかった facts は載せていない。"
+}

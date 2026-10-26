@@ -1,0 +1,22 @@
+{
+  "name": "FOGcoffee",
+  "address": "秋田県大仙市大曲大町２−２４",
+  "lat": 39.4600712,
+  "lng": 140.4782271,
+  "category": "コーヒー ショップ",
+  "hours": {
+    "月": "10:00–19:00",
+    "火": "定休日",
+    "水": "10:00–19:00",
+    "木": "定休日",
+    "金": "定休日",
+    "土": "10:00–19:00",
+    "日": "10:00–19:00"
+  },
+  "phone": "0187-64-9044",
+  "website": "https://instagram.com/fog_coffee",
+  "priceRange": null,
+  "status": null,
+  "gbpUrl": "https://maps.google.com/?cid=8717067375636120019",
+  "fetchedAt": "2026-10-25T00:59:00.741Z"
+}

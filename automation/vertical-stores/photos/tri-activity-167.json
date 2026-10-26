@@ -1,0 +1,75 @@
+{
+  "key": "tri-activity-167",
+  "images": [
+    {
+      "path": "/_portal/vshops/tri-activity-167/g01.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9Tv-AEjJ6b5kgCSXbEj30b7MHs6CivOSGahkBE1TKEEdbuE5HNwkPuepNN7wwjscbJ83nCdy3Cd8s11WivfhPUrDLH3lE1C5zZhfKavrHONbdn3VYjaLP_eemjXewOeihpZLIhH=s1200",
+      "pageUrl": "https://maps.google.com/?cid=8052179356069506109",
+      "what": "ピンク色の外壁の店舗の正面",
+      "kind": "exterior",
+      "width": 1200,
+      "height": 722,
+      "source": "Google マップ"
+    },
+    {
+      "path": "/_portal/vshops/tri-activity-167/g03.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9SIccZwoVjYUYZnk10jHlkzDd9rW31Cq9BHQ5atjo6V0y0B8t2P9_lfhwzI0FoGf7atlv_gjrpXHstQjB9-OxNPXVudjH8XaIICDV0cP7Fi79mWJ3J8-3tvucwmlWwAG4twGaA9T04LtnCY=s1200",
+      "pageUrl": "https://maps.google.com/?cid=8052179356069506109",
+      "what": "サンゴ礁の上を泳ぐダイバー",
+      "width": 1200,
+      "height": 900,
+      "source": "Google マップ"
+    },
+    {
+      "path": "/_portal/vshops/tri-activity-167/g04.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9QQKqCX1O7Ypw-PVehWZK7iHDdopAh8wTy6aYjbDtTxYNnOqgbC9xwFy_ea5j3Uhn293hXmUdsVe3Xap1P9eFGhclaDdmDO4DeroKYPquaD-9mq83RoVB7RiNTUfSd6gMDEQXm7=s1200",
+      "pageUrl": "https://maps.google.com/?cid=8052179356069506109",
+      "what": "木製デッキで犬が座り奥に器材が掛かる",
+      "kind": "common",
+      "width": 1200,
+      "height": 900,
+      "source": "Google マップ"
+    },
+    {
+      "path": "/_portal/vshops/tri-activity-167/g05.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9Qh8qLAP5S6D5WXf7yhx4a2fIdMB8uwebIF61qWRfvzDzXN2Wl90gGGhGvqeOycfIpVkFmaN_JUsWZxAXaUaekgDJkEN45E_HBZOCgsqdDKrVFufgDr4a310erJhmBQiFYShSjQ-HPh5vsw=s1200",
+      "pageUrl": "https://maps.google.com/?cid=8052179356069506109",
+      "what": "港を見下ろす高台からの景色",
+      "kind": "view",
+      "width": 1200,
+      "height": 900,
+      "source": "Google マップ"
+    },
+    {
+      "path": "/_portal/vshops/tri-activity-167/g06.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9RcRsofmBNzaDoZZjB8i4CM9hx6sjbp-42VThZFMBmyoByxrRt-V6rgirlcG4df6-EVjwO5DJay9pE6eYfB70b--2wNiwpB67rNi9DV3ph30JW9eYYc34EzG9Z0w4K26Qb_RM3l_8-B84Tv=s1200",
+      "pageUrl": "https://maps.google.com/?cid=8052179356069506109",
+      "what": "海沿いの道から見る岬の景色",
+      "kind": "view",
+      "width": 900,
+      "height": 1200,
+      "source": "Google マップ"
+    },
+    {
+      "path": "/_portal/vshops/tri-activity-167/g08.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9RwP1b8rFxSt1QINIrep1BwvLsIs9dI9PK-SdzNlVwAd5iNadkIWMy-J5Dr-1YyBHrSTmZRmLTFRcvhLOpy3F2uCoqH6bxAaSkF3SjkcUXD4ZGJGWdB7pvaq14Gf5RWmA9NRW4LeaWPX5sO=s1200",
+      "pageUrl": "https://maps.google.com/?cid=8052179356069506109",
+      "what": "港に停泊する漁船",
+      "kind": "view",
+      "width": 675,
+      "height": 1200,
+      "source": "Google マップ"
+    },
+    {
+      "path": "/_portal/vshops/tri-activity-167/g09.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9S2dt3c5jggAlHYc8kT_Tjim9gmrWutARkPEgMFUINsxClbc0Raf0KnII7pCR3vZq5IU467qEyNNh_ss8vtScZstny5UgDLTfuRdD9FO25fpvNPWHba6BE6H_89QjDwRMur5OUlEHd3XUHI=s1200",
+      "pageUrl": "https://maps.google.com/?cid=8052179356069506109",
+      "what": "木々に囲まれた階段の小道",
+      "kind": "exterior",
+      "width": 900,
+      "height": 1200,
+      "source": "Google マップ"
+    }
+  ],
+  "note": "automation/v2/write.mjs が 2026-10-25T01:22:09.335Z に取得。店の実写だけ(AI 画像・汎用画像・地図・ロゴ・顔が大きい画像は除外)。"
+}

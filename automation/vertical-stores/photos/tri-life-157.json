@@ -1,0 +1,36 @@
+{
+  "key": "tri-life-157",
+  "images": [
+    {
+      "path": "/_portal/vshops/tri-life-157/g01.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9SXqPx7rGM825q2IuSyQJo3TfXNP3-4mfs_r_K3qB7Vt5j8N8AM_dZ3yOWeTemdYdnRkNG7iei0Y1sAOPNpTr4H1M2bexlgU_zLiSsl_vFZOsn4EJ1NUaBEM1sdQmmEHByB5_xiMA=s1200",
+      "pageUrl": "https://maps.google.com/?cid=2523295651855289686",
+      "what": "白い像が置かれた木造の建物の入り口",
+      "kind": "exterior",
+      "width": 900,
+      "height": 1200,
+      "source": "Google マップ"
+    },
+    {
+      "path": "/_portal/vshops/tri-life-157/g03.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9SoIdtlHaML6XOgePOvpHbHRw_7TXkpExmEQlDhQc8kGEnSB_RPkEUk4-rgKCVz_0PYJIGDcqiVutgFZn2MkcQ-U99xg1KDxwQgC0bYZrxtNigRpDtGDJR4wS0hKyGzvb-z7as=s1200",
+      "pageUrl": "https://maps.google.com/?cid=2523295651855289686",
+      "what": "花や供え物とともに二体の像が並ぶ祭壇",
+      "kind": "common",
+      "width": 900,
+      "height": 1200,
+      "source": "Google マップ"
+    },
+    {
+      "path": "/_portal/vshops/tri-life-157/g09.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9TQoTbFmQlPH31TccZBkxxm1VXORZWhd3XM3Zqo5_RFsz_o6Ifisrb9mMfibWAFulUCUcQPKj8e-b2GLs0fJIhmr91CB50im0orAEVUHEq8OPWGuzTxGiE8bEtpYKJeoXS2XESBhQ=s1200",
+      "pageUrl": "https://maps.google.com/?cid=2523295651855289686",
+      "what": "石像が並んで置かれている屋外の一角",
+      "kind": "exterior",
+      "width": 1200,
+      "height": 900,
+      "source": "Google マップ"
+    }
+  ],
+  "note": "automation/v2/write.mjs が 2026-10-26T06:39:45.275Z に取得。店の実写だけ(AI 画像・汎用画像・地図・ロゴ・顔が大きい画像は除外)。"
+}

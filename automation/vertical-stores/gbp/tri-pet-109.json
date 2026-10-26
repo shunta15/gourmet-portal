@@ -1,0 +1,40 @@
+{
+  "tab": "トリニティアポ",
+  "tabEn": "tri-pet",
+  "row": 109,
+  "sheet": {
+    "name": "ペットホテル ALOHA MIMITAN アロハミミタン",
+    "address": "",
+    "url": "https://www.google.com/search?q=090-1895-1255+%E3%83%9A%E3%83%83%E3%83%88%E3%83%9B%E3%83%86%E3%83%AB+ALOHA+MIMITAN+%E3%82%A2%E3%83%AD%E3%83%8F%E3%83%9F%E3%83%9F%E3%82%BF%E3%83%B3+%E3%80%92546-0043+%E5%A4%A7%E9%98%AA%E5%BA%9C%E5%A4%A7%E9%98%AA%E5%B8%82%E6%9D%B1%E4%BD%8F%E5%90%89%E5%8C%BA%E9%A7%92%E5%B7%9D%EF%BC%91%E4%B8%81%E7%9B%AE%EF%BC%92%EF%BC%90%E2%88%92%EF%BC%98&oq=090-1895-1255%09%E3%83%9A%E3%83%83%E3%83%88%E3%83%9B%E3%83%86%E3%83%AB+ALOHA+MIMITAN+%E3%82%A2%E3%83%AD%E3%83%8F%E3%83%9F%E3%83%9F%E3%82%BF%E3%83%B3%09%E3%80%92546-0043+%E5%A4%A7%E9%98%AA%E5%BA%9C%E5%A4%A7%E9%98%AA%E5%B8%82%E6%9D%B1%E4%BD%8F%E5%90%89%E5%8C%BA%E9%A7%92%E5%B7%9D%EF%BC%91%E4%B8%81%E7%9B%AE%EF%BC%92%EF%BC%90%E2%88%92%EF%BC%98&gs_lcrp=EgZjaHJvbWUyBggAEEUYOdIBBzIwMmowajeoAgCwAgA&sourceid=chrome&source=chrome.ob&ie=UTF-8",
+    "type": "ペット",
+    "d1": "",
+    "d2": ""
+  },
+  "urlKind": "search",
+  "route": "第1段(verify-gbp.mjs)で確認済み",
+  "verdict": "一致",
+  "verdictReason": "電話が一致／店名: exact(シート「ペットホテル ALOHA MIMITAN アロハミミタン」/ マップ「ペットホテル ALOHA MIMITAN アロハミミタン」)／住所(検索URL): exact・町名・番地とも一致",
+  "place": {
+    "name": "ペットホテル ALOHA MIMITAN アロハミミタン",
+    "address": "大阪府大阪市東住吉区駒川１丁目２０−８",
+    "category": "ペット ホテル業",
+    "lat": 34.6342967,
+    "lng": 135.5308169,
+    "gbpUrl": "https://maps.google.com/?cid=12506116750951527123",
+    "phone": "090-1895-1255",
+    "website": "https://www.alohamimitan.co.jp/",
+    "hours": {
+      "月": "07:00–20:00",
+      "火": "07:00–20:00",
+      "水": "07:00–20:00",
+      "木": "07:00–20:00",
+      "金": "07:00–20:00",
+      "土": "07:00–20:00",
+      "日": "07:00–20:00"
+    },
+    "reserveLinks": [],
+    "statusSignals": [],
+    "closedSignal": false
+  },
+  "fetchedAt": "2026-10-25T00:28:40.753Z"
+}

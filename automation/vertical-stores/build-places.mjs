@@ -116,7 +116,11 @@ const VERTICALS = {
 };
 // gbp の tabEn（シートのタブの英名）→ 店データの業種。ここに無いものは tabEn がそのまま業種
 const TAB_TO_VERTICAL = { lodging: "stay", leisure: "activity" };
-const verticalOfTab = (tabEn) => TAB_TO_VERTICAL[tabEn] ?? tabEn;
+// 記事の自動作成(新・automation/v2/write.mjs)で作る店は、tabEn が「tri-<業種>」(キーは tri-<業種>-<トリニティアポの行>)。
+// オーナーのシートの行(beauty-<行> など)とキーが重ならないようにするための接頭辞。種類は category-overrides/<キー>.json で決める
+const V2_TAB = /^tri-(beauty|bodycare|pet|stay|activity|sports|life)$/;
+const isV2Tab = (tabEn) => V2_TAB.test(String(tabEn));
+const verticalOfTab = (tabEn) => (isV2Tab(tabEn) ? tabEn.slice(4) : (TAB_TO_VERTICAL[tabEn] ?? tabEn));
 // ペットの種類と店 ID（pet-resolve.json）。無ければ空（その場合ペットは全店が unmapped になる）
 const PET_RESOLVE_FILE = path.join(HERE, "pet-resolve.json");
 const PET_RESOLVE = existsSync(PET_RESOLVE_FILE) ? JSON.parse(readFileSync(PET_RESOLVE_FILE, "utf8")) : { decisions: [], idLedger: {} };
@@ -234,6 +238,8 @@ const BODYCARE_RULES = [
 /** 種類を決める。決められなければ { reason }（理由つきで除外） */
 export function categoryOf(vertical, d) {
   const placeCat = d.place?.category || "";
+  // 記事の自動作成(新)の店は、種類を自動で決めない(行の番号が pet-resolve.json / stay-resolve.json の別の店と重なるため)。category-overrides/<キー>.json で決める
+  if (isV2Tab(d.tabEn)) return { reason: `category-overrides/${d.tabEn}-${d.row}.json（{ key, category, evidence }）で決める` };
   if (vertical === "pet") {
     const dec = PET_DECISIONS.get(`pet-${d.row}`);
     if (!dec) return { reason: "pet-resolve.json に この行の判定が無く、種類を決められない" };
@@ -281,6 +287,7 @@ function loadCategorySlugs(vertical) {
 }
 const CATEGORY_SLUGS = {
   beauty: loadCategorySlugs("beauty"),
+  pet: loadCategorySlugs("pet"),
   bodycare: loadCategorySlugs("bodycare"),
   stay: loadCategorySlugs("stay"),
   activity: loadCategorySlugs("activity"),

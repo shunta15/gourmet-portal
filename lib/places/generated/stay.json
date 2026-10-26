@@ -1540,6 +1540,1124 @@
           "2階 ロフト付き洋室ツイン"
         ]
       }
+    },
+    {
+      "id": "st0009",
+      "vertical": "stay",
+      "category": "ryokan",
+      "name": "旅館 なかや",
+      "pref": "hyogo",
+      "cityName": "香美町",
+      "address": "兵庫県美方郡香美町村岡区大笹755-1",
+      "lat": 35.404539,
+      "lng": 134.558449,
+      "phone": "0796-96-0231",
+      "url": "https://h-nakaya.com/",
+      "website": "https://h-nakaya.com/",
+      "mapUrl": "https://maps.google.com/?cid=5568108720677451699",
+      "image": "/_portal/vshops/tri-stay-140/g01.jpg",
+      "images": [
+        "/_portal/vshops/tri-stay-140/g01.jpg",
+        "/_portal/vshops/tri-stay-140/g02.jpg",
+        "/_portal/vshops/tri-stay-140/g03.jpg",
+        "/_portal/vshops/tri-stay-140/g04.jpg",
+        "/_portal/vshops/tri-stay-140/g05.jpg",
+        "/_portal/vshops/tri-stay-140/g06.jpg",
+        "/_portal/vshops/tri-stay-140/g07.jpg",
+        "/_portal/vshops/tri-stay-140/g08.jpg",
+        "/_portal/vshops/tri-stay-140/g09.jpg",
+        "/_portal/vshops/tri-stay-140/g10.jpg",
+        "/_portal/vshops/tri-stay-140/s02.jpg",
+        "/_portal/vshops/tri-stay-140/s05.jpg"
+      ],
+      "photos": [
+        {
+          "path": "/_portal/vshops/tri-stay-140/g01.jpg",
+          "what": "オレンジ色の瓦屋根の庇と看板がある旅館の外観",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 800
+        },
+        {
+          "path": "/_portal/vshops/tri-stay-140/g02.jpg",
+          "what": "炬燵とテレビがある畳敷きの和室",
+          "kind": "room",
+          "width": 1200,
+          "height": 800
+        },
+        {
+          "path": "/_portal/vshops/tri-stay-140/g03.jpg",
+          "what": "白いタイル張りの広い浴槽と洗い場が並ぶ浴室",
+          "kind": "bath",
+          "width": 1200,
+          "height": 800
+        },
+        {
+          "path": "/_portal/vshops/tri-stay-140/g04.jpg",
+          "what": "洗面台が3つ並ぶ明るい洗面所",
+          "kind": "common",
+          "width": 1200,
+          "height": 800
+        },
+        {
+          "path": "/_portal/vshops/tri-stay-140/g05.jpg",
+          "what": "受付カウンターと木のテーブルがあるロビー",
+          "kind": "common",
+          "width": 1200,
+          "height": 800
+        },
+        {
+          "path": "/_portal/vshops/tri-stay-140/g06.jpg",
+          "what": "革張りのソファとレンガ壁のテレビがあるくつろぎ空間",
+          "kind": "common",
+          "width": 1200,
+          "height": 800
+        },
+        {
+          "path": "/_portal/vshops/tri-stay-140/g07.jpg",
+          "what": "棚に漫画が並ぶ漫画スペース",
+          "kind": "common",
+          "width": 1200,
+          "height": 800
+        },
+        {
+          "path": "/_portal/vshops/tri-stay-140/g08.jpg",
+          "what": "飲料やカップ麺の自動販売機が並ぶコーナー",
+          "kind": "common",
+          "width": 1200,
+          "height": 800
+        },
+        {
+          "path": "/_portal/vshops/tri-stay-140/g09.jpg",
+          "what": "木の絵が壁に描かれた窓のある浴室",
+          "kind": "bath",
+          "width": 1200,
+          "height": 800
+        },
+        {
+          "path": "/_portal/vshops/tri-stay-140/g10.jpg",
+          "what": "シャワーと風呂椅子が並ぶ洗い場と浴槽",
+          "kind": "bath",
+          "width": 1200,
+          "height": 800
+        },
+        {
+          "path": "/_portal/vshops/tri-stay-140/s02.jpg",
+          "what": "階段と赤い瓦屋根の入口がある旅館の外観",
+          "kind": "exterior",
+          "width": 1280,
+          "height": 720
+        },
+        {
+          "path": "/_portal/vshops/tri-stay-140/s05.jpg",
+          "what": "皿に盛った薄切りの牛肉と薬味入りのたれ",
+          "kind": "meal",
+          "width": 1200,
+          "height": 1200
+        }
+      ],
+      "tags": [],
+      "article": {
+        "headline": "兵庫県香美町、ハチ北高原のリフト乗り場まで徒歩1分にある旅館。但馬牛のすき焼きやしゃぶしゃぶなど、鍋料理を出す和室の宿",
+        "lede": "兵庫県美方郡香美町にある「旅館 なかや」です。ハチ北高原にあり、冬季はスキー・スノーボードのリフト乗り場まで徒歩1分です。客室は和室で、食事は但馬牛を使ったすき焼き、しゃぶしゃぶを中心に、いろいろな鍋料理があります。",
+        "sections": [
+          {
+            "heading": "場所とアクセス",
+            "body": "ハチ北高原にあり、冬季はリフト乗り場まで徒歩1分です。車の場合は、八鹿氷ノ山ICで降りて最初の信号を左折し、鳥取方面へ向かいます。公共交通機関の場合は、JR山陰本線の八鹿駅で降り、村岡方面行きのバスで「ハチ北口」で下車して、乗り換えて「ハチ北」へ向かいます。周辺は、たじま高原植物園まで車で約5分、猿尾滝まで約10分、竹田城まで約40分です。"
+          },
+          {
+            "heading": "客室とお風呂",
+            "body": "客室は、人数に合わせて案内される和室です。グリーンシーズンには炬燵はありません。備品には、湯沸かしポット、羽毛布団、シャンプー・リンス、ボディーソープがあり、コインロッカーもあります。お風呂は男女各1ヶ所で、温泉ではありません。入浴時間は16時から22時までです。館内には、ロビー、寛ぎコーナー、自販機、漫画スペース、洗面所があります。"
+          },
+          {
+            "heading": "食事",
+            "body": "食事は、但馬牛を使ったすき焼き、しゃぶしゃぶが中心です。すき焼きとしゃぶしゃぶは、和牛・但馬牛・特選但馬牛の3種類から選べます。ほかに、かも鍋(しょうゆ・みそ)、ぶた鍋(みそ)、ぶたしゃぶ、とり鍋があり、秘伝の味噌だれで食べる鍋もあります。春から秋にかけては、BBQプランも実施しています。"
+          },
+          {
+            "heading": "予約と利用",
+            "body": "チェックインは15時から、チェックアウトは10時までです。予約は、公式サイトのオンライン予約から行えます。ビジネスや林間学校、さまざまな合宿にも使えます。スキー、スノーボードのレンタルショップが併設されています。"
+          }
+        ],
+        "menus": [
+          {
+            "name": "すき焼き"
+          },
+          {
+            "name": "しゃぶしゃぶ"
+          },
+          {
+            "name": "かも鍋(しょうゆ)"
+          },
+          {
+            "name": "かも鍋(みそ)"
+          },
+          {
+            "name": "ぶた鍋(みそ)"
+          },
+          {
+            "name": "ぶたしゃぶ"
+          },
+          {
+            "name": "とり鍋"
+          },
+          {
+            "name": "BBQ"
+          }
+        ],
+        "sources": [
+          {
+            "label": "公式サイト",
+            "url": "https://h-nakaya.com/"
+          },
+          {
+            "label": "公式サイト(お食事)",
+            "url": "https://h-nakaya.com/cuisine.php"
+          },
+          {
+            "label": "公式サイト(館内の案内)",
+            "url": "https://h-nakaya.com/facilities.php"
+          },
+          {
+            "label": "公式サイト(アクセス・観光)",
+            "url": "https://h-nakaya.com/access.php"
+          },
+          {
+            "label": "Google マップ",
+            "url": "https://maps.google.com/?cid=5568108720677451699"
+          }
+        ],
+        "checkedAt": "2026-10-25"
+      },
+      "attributes": {
+        "roomTypes": [
+          "和室"
+        ]
+      }
+    },
+    {
+      "id": "st0010",
+      "vertical": "stay",
+      "category": "rental",
+      "name": "民泊 セカンドライフ",
+      "pref": "ibaraki",
+      "cityName": "鹿嶋市",
+      "address": "茨城県鹿嶋市棚木302-1",
+      "lat": 36.030697,
+      "lng": 140.6031661,
+      "phone": "080-6549-1020",
+      "url": "https://maru-secondlife.com/",
+      "website": "https://maru-secondlife.com/",
+      "mapUrl": "https://maps.google.com/?cid=16012889078296844831",
+      "image": "/_portal/vshops/tri-stay-115/g01.jpg",
+      "images": [
+        "/_portal/vshops/tri-stay-115/g01.jpg",
+        "/_portal/vshops/tri-stay-115/g02.jpg",
+        "/_portal/vshops/tri-stay-115/g03.jpg",
+        "/_portal/vshops/tri-stay-115/g04.jpg",
+        "/_portal/vshops/tri-stay-115/g05.jpg",
+        "/_portal/vshops/tri-stay-115/g06.jpg",
+        "/_portal/vshops/tri-stay-115/g07.jpg",
+        "/_portal/vshops/tri-stay-115/g08.jpg"
+      ],
+      "photos": [
+        {
+          "path": "/_portal/vshops/tri-stay-115/g01.jpg",
+          "what": "木造の建物と展望用のやぐらが見える外観",
+          "kind": "exterior",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-stay-115/g02.jpg",
+          "what": "三角屋根のロフトに布団が並ぶ客室",
+          "kind": "room",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-stay-115/g03.jpg",
+          "what": "木製デッキに囲まれた四角い露天風呂",
+          "kind": "bath",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-stay-115/g04.jpg",
+          "what": "バレル型サウナとドラム缶が置かれた庭",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-stay-115/g05.jpg",
+          "what": "観覧用のやぐらが付いた木造建物の外観",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-stay-115/g06.jpg",
+          "what": "白い花のつるに覆われた建物と入口の小道",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-stay-115/g07.jpg",
+          "what": "夜に灯りがともる露天風呂とカラフルなマット",
+          "kind": "bath",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-stay-115/g08.jpg",
+          "what": "カラフルな座面のベンチが並ぶ屋内サウナ",
+          "kind": "common",
+          "width": 1200,
+          "height": 800
+        }
+      ],
+      "tags": [
+        "素泊まり"
+      ],
+      "article": {
+        "headline": "茨城県鹿嶋市にある、オーナーが敷地内に住む一棟貸切のログハウス民泊。1日1組限定で、最大7名まで宿泊できる",
+        "lede": "鹿嶋市にある「民泊 セカンドライフ」です。オーナーが同じ敷地内に住む一棟貸切のログハウスで、最大7名まで宿泊できます。敷地内にはバレル型サウナや露天風呂があり、食事は持参した食材をキッチンで自由に調理します。",
+        "sections": [
+          {
+            "heading": "宿泊棟とお部屋",
+            "body": "一棟貸切の「はまなすログ」は最大7名まで宿泊できます。8名以上の場合は、オーナーの居宅でもある「母屋ログ」に宿泊でき、浴室と洗濯機があります。チェックインは13時以降、チェックアウトは11時までです。Wi-Fiや温水洗浄トイレ、エアコンなどの設備があります。"
+          },
+          {
+            "heading": "食事とアクティビティ",
+            "body": "食事の提供はなく、持参した食材をキッチンで自由に調理します。敷地内ではバレル型サウナや露天風呂、ドラム缶風呂、農作物の収穫体験など11種の体験ができます。ピザ焼き体験やBBQ、薪割り、流しソーメンなども用意されています。"
+          },
+          {
+            "heading": "場所と予約",
+            "body": "住所は茨城県鹿嶋市棚木302-1、電話は080-6549-1020です。東関東自動車道の潮来インターチェンジから車で約20分で、敷地内に7台分の駐車場があります。カシマスタジアムからの送迎もあります。予約はネットの予約フォームか電話で受け付けています。"
+          },
+          {
+            "heading": "民泊としての特徴",
+            "body": "オーナーは同じ敷地内に住んでおり、2017年に鹿嶋市に土地を見つけてログハウスを建てました。友人を招くうちに宿泊客を受け入れるようになり、都心から約2時間でアクセスできる立地で、1日1組限定の宿泊を続けています。"
+          }
+        ],
+        "menus": [
+          {
+            "name": "バレル型サウナ"
+          },
+          {
+            "name": "露天風呂"
+          },
+          {
+            "name": "ドラム缶風呂"
+          },
+          {
+            "name": "農作物の収穫体験"
+          },
+          {
+            "name": "BBQ"
+          },
+          {
+            "name": "ピザ焼き体験"
+          },
+          {
+            "name": "薪割り"
+          },
+          {
+            "name": "流しソーメン(夏季)"
+          }
+        ],
+        "sources": [
+          {
+            "label": "公式サイト",
+            "url": "https://maru-secondlife.com/"
+          },
+          {
+            "label": "公式サイト(施設案内)",
+            "url": "https://maru-secondlife.com/facility"
+          },
+          {
+            "label": "公式サイト(体験)",
+            "url": "https://maru-secondlife.com/experience"
+          },
+          {
+            "label": "公式サイト(料金/アクセス)",
+            "url": "https://maru-secondlife.com/fee_access"
+          },
+          {
+            "label": "Google マップ",
+            "url": "https://maps.google.com/?cid=16012889078296844831"
+          }
+        ],
+        "checkedAt": "2026-10-25"
+      },
+      "attributes": {
+        "roomTypes": [
+          "はまなすログ",
+          "母屋ログ"
+        ]
+      }
+    },
+    {
+      "id": "st0011",
+      "vertical": "stay",
+      "category": "ryokan",
+      "name": "旬魚と地どりの宿 料理旅館井筒屋",
+      "pref": "kyoto",
+      "cityName": "与謝野町",
+      "address": "京都府与謝郡与謝野町加悦1050",
+      "lat": 35.505487,
+      "lng": 135.092459,
+      "phone": "0772-42-2012",
+      "url": "http://www.chirimenkaido-idutsuya.jp/",
+      "website": "http://www.chirimenkaido-idutsuya.jp/",
+      "mapUrl": "https://maps.google.com/?cid=14080703440525588483",
+      "image": "/_portal/vshops/tri-stay-122/g01.jpg",
+      "images": [
+        "/_portal/vshops/tri-stay-122/g01.jpg",
+        "/_portal/vshops/tri-stay-122/g02.jpg",
+        "/_portal/vshops/tri-stay-122/g03.jpg",
+        "/_portal/vshops/tri-stay-122/g04.jpg",
+        "/_portal/vshops/tri-stay-122/g05.jpg",
+        "/_portal/vshops/tri-stay-122/g06.jpg",
+        "/_portal/vshops/tri-stay-122/g07.jpg",
+        "/_portal/vshops/tri-stay-122/g08.jpg",
+        "/_portal/vshops/tri-stay-122/g09.jpg",
+        "/_portal/vshops/tri-stay-122/g10.jpg",
+        "/_portal/vshops/tri-stay-122/s01.jpg",
+        "/_portal/vshops/tri-stay-122/s02.jpg",
+        "/_portal/vshops/tri-stay-122/s03.jpg"
+      ],
+      "photos": [
+        {
+          "path": "/_portal/vshops/tri-stay-122/g01.jpg",
+          "what": "松の木と瓦屋根の建物の外観",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 729
+        },
+        {
+          "path": "/_portal/vshops/tri-stay-122/g02.jpg",
+          "what": "畳の上に着物が並べて置かれた展示",
+          "kind": "common",
+          "width": 1200,
+          "height": 987
+        },
+        {
+          "path": "/_portal/vshops/tri-stay-122/g03.jpg",
+          "what": "窓越しに町並みが見える座敷の一角",
+          "kind": "view",
+          "width": 1200,
+          "height": 811
+        },
+        {
+          "path": "/_portal/vshops/tri-stay-122/g04.jpg",
+          "what": "ソファが並ぶレトロな内装の共用スペース",
+          "kind": "common",
+          "width": 1200,
+          "height": 800
+        },
+        {
+          "path": "/_portal/vshops/tri-stay-122/g05.jpg",
+          "what": "床の間に掛け軸と生け花がある和室",
+          "kind": "room",
+          "width": 799,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-stay-122/g06.jpg",
+          "what": "テーブルが置かれた広い和室",
+          "kind": "room",
+          "width": 1200,
+          "height": 800
+        },
+        {
+          "path": "/_portal/vshops/tri-stay-122/g07.jpg",
+          "what": "障子窓が並ぶ広い和室",
+          "kind": "room",
+          "width": 1200,
+          "height": 793
+        },
+        {
+          "path": "/_portal/vshops/tri-stay-122/g08.jpg",
+          "what": "古い道具が飾られた部屋の一角",
+          "kind": "common",
+          "width": 1200,
+          "height": 800
+        },
+        {
+          "path": "/_portal/vshops/tri-stay-122/g09.jpg",
+          "what": "テレビと掛け軸がある和室",
+          "kind": "room",
+          "width": 1200,
+          "height": 800
+        },
+        {
+          "path": "/_portal/vshops/tri-stay-122/g10.jpg",
+          "what": "着物が飾られたテーブル付きの和室",
+          "kind": "room",
+          "width": 1200,
+          "height": 819
+        },
+        {
+          "path": "/_portal/vshops/tri-stay-122/s01.jpg",
+          "what": "草木に囲まれた玄関の外観",
+          "kind": "exterior",
+          "width": 1280,
+          "height": 653
+        },
+        {
+          "path": "/_portal/vshops/tri-stay-122/s02.jpg",
+          "what": "刺身や小鉢が並ぶ会席の膳",
+          "kind": "meal",
+          "width": 1280,
+          "height": 547
+        },
+        {
+          "path": "/_portal/vshops/tri-stay-122/s03.jpg",
+          "what": "棚と座卓がある和室",
+          "kind": "room",
+          "width": 1280,
+          "height": 547
+        }
+      ],
+      "tags": [
+        "ペット同伴"
+      ],
+      "article": {
+        "headline": "京都府与謝野町のちりめん街道にある、明治23年創業の料理旅館。客室は和室が中心で、一棟貸切の古民家や明治期の離れもある。",
+        "lede": "与謝郡与謝野町にある「旬魚と地どりの宿 料理旅館井筒屋」です。明治23年創業で、一日3組だけの小さな旅館です。食事は全室個室で出されます。",
+        "sections": [
+          {
+            "heading": "場所と予約",
+            "body": "住所は京都府与謝郡与謝野町加悦1050番地、電話は0772-42-2012です。最寄りはKTR与謝野駅で、バスで約20分かかります。チェックインは16時から、チェックアウトは10時までです。駐車場とWiFiが使えます。"
+          },
+          {
+            "heading": "客室",
+            "body": "客室は和室が中心です。中庭と五右衛門風呂がある明治期の離れ「小濱」、築約100年の一棟貸切古民家「赤野邸」、三間続きの和室がある昭和の大広間「旧館22畳」、わんこ同伴で1フロアを貸し切れる別館離れなどがあります。"
+          },
+          {
+            "heading": "食事",
+            "body": "食事は会席料理です。炭火焼きを使う会席や、自家飼育の地どりを使った昼の会席があります。炭火会席の営業時間は18時から22時まで、昼のガラ焼き御膳の営業時間は12時から14時までです。"
+          },
+          {
+            "heading": "子ども連れ・ペットについて",
+            "body": "食事をとる部屋は全室個室で、子ども連れやわんこ同伴でも泊まれます。別館離れはわんこ同伴で1フロアを貸し切れるプランがあります。昭和の大広間「旧館22畳」の和室はペット不可です。"
+          }
+        ],
+        "menus": [
+          {
+            "name": "マッチョ京地どりガラ焼き御膳"
+          },
+          {
+            "name": "医食同源・炭火会席"
+          },
+          {
+            "name": "マッチョ京地どり里山会席"
+          },
+          {
+            "name": "医食同源・火入れ会席"
+          },
+          {
+            "name": "ご法要会席・季節のおもてなし会席"
+          }
+        ],
+        "sources": [
+          {
+            "label": "公式サイト",
+            "url": "http://www.chirimenkaido-idutsuya.jp/"
+          },
+          {
+            "label": "公式サイト(アクセス)",
+            "url": "https://www.chirimenkaido-idutsuya.jp/about"
+          },
+          {
+            "label": "公式サイト(お料理)",
+            "url": "https://www.chirimenkaido-idutsuya.jp/food"
+          },
+          {
+            "label": "Google マップ",
+            "url": "https://maps.google.com/?cid=14080703440525588483"
+          }
+        ],
+        "checkedAt": "2026-10-25"
+      },
+      "attributes": {
+        "roomTypes": [
+          "明治の離れ・小濱",
+          "一棟貸切古民家「赤野邸」",
+          "昭和の大広間 旧館22畳",
+          "別館離れ"
+        ]
+      }
+    },
+    {
+      "id": "st0012",
+      "vertical": "stay",
+      "category": "ryokan",
+      "name": "離れの宿 和楽",
+      "pref": "kyoto",
+      "cityName": "京丹後市",
+      "address": "京都府京丹後市網野町浜詰30-33",
+      "lat": 35.654479,
+      "lng": 134.95406,
+      "phone": "0772-74-1601",
+      "url": "https://www.waraku-yado.jp/",
+      "website": "https://www.waraku-yado.jp/",
+      "mapUrl": "https://maps.google.com/?cid=3460619192667560591",
+      "image": "/_portal/vshops/tri-stay-149/g01.jpg",
+      "images": [
+        "/_portal/vshops/tri-stay-149/g01.jpg",
+        "/_portal/vshops/tri-stay-149/g02.jpg",
+        "/_portal/vshops/tri-stay-149/g03.jpg",
+        "/_portal/vshops/tri-stay-149/g04.jpg",
+        "/_portal/vshops/tri-stay-149/g05.jpg",
+        "/_portal/vshops/tri-stay-149/g06.jpg",
+        "/_portal/vshops/tri-stay-149/g07.jpg",
+        "/_portal/vshops/tri-stay-149/g08.jpg",
+        "/_portal/vshops/tri-stay-149/g09.jpg",
+        "/_portal/vshops/tri-stay-149/g10.jpg",
+        "/_portal/vshops/tri-stay-149/s01.jpg",
+        "/_portal/vshops/tri-stay-149/s02.jpg",
+        "/_portal/vshops/tri-stay-149/s03.jpg",
+        "/_portal/vshops/tri-stay-149/s04.jpg",
+        "/_portal/vshops/tri-stay-149/s05.jpg",
+        "/_portal/vshops/tri-stay-149/s06.jpg",
+        "/_portal/vshops/tri-stay-149/s07.jpg",
+        "/_portal/vshops/tri-stay-149/s08.jpg",
+        "/_portal/vshops/tri-stay-149/s09.jpg",
+        "/_portal/vshops/tri-stay-149/s13.jpg",
+        "/_portal/vshops/tri-stay-149/s14.jpg",
+        "/_portal/vshops/tri-stay-149/s15.jpg",
+        "/_portal/vshops/tri-stay-149/s16.jpg"
+      ],
+      "photos": [
+        {
+          "path": "/_portal/vshops/tri-stay-149/g01.jpg",
+          "what": "小川沿いの小径と灯りのある夜の外観",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 800
+        },
+        {
+          "path": "/_portal/vshops/tri-stay-149/g02.jpg",
+          "what": "布団が敷かれた和室",
+          "kind": "room",
+          "width": 675,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-stay-149/g03.jpg",
+          "what": "二組の布団が並ぶ和室",
+          "kind": "room",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-stay-149/g04.jpg",
+          "what": "庭に面した丸い露天風呂",
+          "kind": "bath",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-stay-149/g05.jpg",
+          "what": "木枠の浴槽がある内風呂",
+          "kind": "bath",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-stay-149/g06.jpg",
+          "what": "座卓のある畳敷きの部屋",
+          "kind": "room",
+          "width": 1200,
+          "height": 800
+        },
+        {
+          "path": "/_portal/vshops/tri-stay-149/g07.jpg",
+          "what": "氷に入った日本酒の瓶が2本並ぶ",
+          "kind": "meal",
+          "width": 1200,
+          "height": 800
+        },
+        {
+          "path": "/_portal/vshops/tri-stay-149/g08.jpg",
+          "what": "小川沿いに建つ建物の外観",
+          "kind": "exterior",
+          "width": 675,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-stay-149/g09.jpg",
+          "what": "蟹や刺身が盛られた料理",
+          "kind": "meal",
+          "width": 1200,
+          "height": 798
+        },
+        {
+          "path": "/_portal/vshops/tri-stay-149/g10.jpg",
+          "what": "蒸し蟹が器に盛られている",
+          "kind": "meal",
+          "width": 678,
+          "height": 452
+        },
+        {
+          "path": "/_portal/vshops/tri-stay-149/s01.jpg",
+          "what": "看板のある建物の外観",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 630
+        },
+        {
+          "path": "/_portal/vshops/tri-stay-149/s02.jpg",
+          "what": "入口の看板と木々",
+          "kind": "exterior",
+          "width": 1280,
+          "height": 759
+        },
+        {
+          "path": "/_portal/vshops/tri-stay-149/s03.jpg",
+          "what": "庭のある建物の外観",
+          "kind": "exterior",
+          "width": 1280,
+          "height": 759
+        },
+        {
+          "path": "/_portal/vshops/tri-stay-149/s04.jpg",
+          "what": "緑に囲まれた小径の奥に建物が見える",
+          "kind": "exterior",
+          "width": 1280,
+          "height": 759
+        },
+        {
+          "path": "/_portal/vshops/tri-stay-149/s05.jpg",
+          "what": "池と石組みのある庭",
+          "kind": "common",
+          "width": 1280,
+          "height": 759
+        },
+        {
+          "path": "/_portal/vshops/tri-stay-149/s06.jpg",
+          "what": "窓明かりと庭木のある外観",
+          "kind": "exterior",
+          "width": 1280,
+          "height": 759
+        },
+        {
+          "path": "/_portal/vshops/tri-stay-149/s07.jpg",
+          "what": "縁側に置かれた椅子と庭",
+          "kind": "common",
+          "width": 1280,
+          "height": 759
+        },
+        {
+          "path": "/_portal/vshops/tri-stay-149/s08.jpg",
+          "what": "灯りが灯る夜の小径と建物",
+          "kind": "exterior",
+          "width": 1280,
+          "height": 759
+        },
+        {
+          "path": "/_portal/vshops/tri-stay-149/s09.jpg",
+          "what": "暖簾が下がる夜の入口",
+          "kind": "exterior",
+          "width": 1280,
+          "height": 759
+        },
+        {
+          "path": "/_portal/vshops/tri-stay-149/s13.jpg",
+          "what": "建物全体の外観",
+          "kind": "exterior",
+          "width": 1280,
+          "height": 501
+        },
+        {
+          "path": "/_portal/vshops/tri-stay-149/s14.jpg",
+          "what": "茶と緑色の和菓子が並ぶ",
+          "kind": "meal",
+          "width": 750,
+          "height": 510
+        },
+        {
+          "path": "/_portal/vshops/tri-stay-149/s15.jpg",
+          "what": "白い料理に餡がかかった一品",
+          "kind": "meal",
+          "width": 750,
+          "height": 500
+        },
+        {
+          "path": "/_portal/vshops/tri-stay-149/s16.jpg",
+          "what": "魚の干物のような料理が2尾並ぶ",
+          "kind": "meal",
+          "width": 600,
+          "height": 450
+        }
+      ],
+      "tags": [
+        "温泉"
+      ],
+      "article": {
+        "headline": "京都府京丹後市網野町浜詰、夕日ヶ浦温泉にある宿。客室は古民家風和室6室で、部屋ごとに内湯と露天風呂がある",
+        "lede": "京丹後市にある「離れの宿 和楽」です。夕日ヶ浦温泉のそばに建ち、古民家風の和室6室には、それぞれ内湯と露天風呂が備わっています。食事は部屋食か母屋の食事処でいただけます。",
+        "sections": [
+          {
+            "heading": "客室とお風呂",
+            "body": "離れの客室は、丹後ちりめんの織物にちなんで「綸子」「綾」「錦」「綴」「紗」「斜子」の名がついています。古民家風の和室6室で、部屋ごとに内湯と露天風呂が1つずつあり、天然の夕日ヶ浦温泉を楽しめます。客室には堀り炬燵や冷蔵庫、WiFiなどが備わっています。"
+          },
+          {
+            "heading": "食事",
+            "body": "食事は部屋食か、母屋にある食事処でいただけます。母屋は昔ながらの吹き抜けで天井が高いつくりです。多家族や多人数での食事は、この食事処を利用します。"
+          },
+          {
+            "heading": "場所と予約",
+            "body": "住所は京都府京丹後市網野町浜詰30-33です。チェックインは15時から(最終17時)、チェックアウトは11時です。送迎は要予約です。予約は公式サイトの予約ページから行えます。"
+          }
+        ],
+        "sources": [
+          {
+            "label": "公式サイト",
+            "url": "https://www.waraku-yado.jp/"
+          },
+          {
+            "label": "公式サイト(ご案内)",
+            "url": "https://www.waraku-yado.jp/about/"
+          },
+          {
+            "label": "公式サイト(客室)",
+            "url": "https://www.waraku-yado.jp/room/"
+          },
+          {
+            "label": "公式サイト(温泉)",
+            "url": "https://www.waraku-yado.jp/bath/"
+          },
+          {
+            "label": "Google マップ",
+            "url": "https://maps.google.com/?cid=3460619192667560591"
+          }
+        ],
+        "checkedAt": "2026-10-25"
+      },
+      "attributes": {
+        "roomTypes": [
+          "綸子",
+          "綾",
+          "錦",
+          "綴",
+          "紗",
+          "斜子"
+        ]
+      }
+    },
+    {
+      "id": "st0013",
+      "vertical": "stay",
+      "category": "ryokan",
+      "name": "渓流の宿 蔵之助",
+      "pref": "mie",
+      "cityName": "菰野町",
+      "address": "三重県三重郡菰野町菰野8625",
+      "lat": 35.0147302,
+      "lng": 136.4417407,
+      "phone": "059-392-2509",
+      "url": "http://kuranosuke.com/",
+      "website": "http://kuranosuke.com/",
+      "mapUrl": "https://maps.google.com/?cid=7885744359790044800",
+      "image": "/_portal/vshops/tri-stay-163/g01.jpg",
+      "images": [
+        "/_portal/vshops/tri-stay-163/g01.jpg",
+        "/_portal/vshops/tri-stay-163/g02.jpg",
+        "/_portal/vshops/tri-stay-163/g03.jpg",
+        "/_portal/vshops/tri-stay-163/g04.jpg",
+        "/_portal/vshops/tri-stay-163/g05.jpg",
+        "/_portal/vshops/tri-stay-163/g06.jpg",
+        "/_portal/vshops/tri-stay-163/g07.jpg",
+        "/_portal/vshops/tri-stay-163/g08.jpg",
+        "/_portal/vshops/tri-stay-163/g09.jpg",
+        "/_portal/vshops/tri-stay-163/g10.jpg"
+      ],
+      "photos": [
+        {
+          "path": "/_portal/vshops/tri-stay-163/g01.jpg",
+          "what": "灯りがついた玄関先の外観",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 675
+        },
+        {
+          "path": "/_portal/vshops/tri-stay-163/g02.jpg",
+          "what": "木々に囲まれた渓流の眺め",
+          "kind": "view",
+          "width": 675,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-stay-163/g03.jpg",
+          "what": "庭の緑に面した屋外の岩風呂",
+          "kind": "bath",
+          "width": 1200,
+          "height": 675
+        },
+        {
+          "path": "/_portal/vshops/tri-stay-163/g04.jpg",
+          "what": "刺身や小鉢が並ぶ会席料理の膳",
+          "kind": "meal",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-stay-163/g05.jpg",
+          "what": "木製の丸い浴槽がある室内の風呂",
+          "kind": "bath",
+          "width": 640,
+          "height": 480
+        },
+        {
+          "path": "/_portal/vshops/tri-stay-163/g06.jpg",
+          "what": "駐車場越しに見る旅館の外観",
+          "kind": "exterior",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-stay-163/g07.jpg",
+          "what": "川沿いの岩に囲まれた露天風呂",
+          "kind": "bath",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-stay-163/g08.jpg",
+          "what": "川沿いに建つ旅館群の遠景",
+          "kind": "view",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-stay-163/g09.jpg",
+          "what": "小鉢に盛られた前菜",
+          "kind": "meal",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-stay-163/g10.jpg",
+          "what": "看板「蔵之助」がある建物の外観",
+          "kind": "exterior",
+          "width": 900,
+          "height": 1200
+        }
+      ],
+      "tags": [
+        "温泉"
+      ],
+      "article": {
+        "headline": "三重県菰野町、湯の山温泉にある旅館。客室は全室和室10室で、男女入れ替えの露天風呂と内湯、貸切露天風呂がある。",
+        "lede": "三重郡菰野町にある「渓流の宿 蔵之助」です。御在所岳を背に三滝川の清流に沿って並ぶ温泉街の宿で、全客室から渓流と御在所岳の景観を望めます。客室は全室和室10室、浴室は露天2つと内湯1つが男女入れ替えで使え、貸切露天風呂もあります。",
+        "sections": [
+          {
+            "heading": "場所と予約",
+            "body": "温泉街の最奥地にひっそりと佇む宿で、宿名は東下りの際に大石公園に立ち寄った大石内蔵之助にちなみます。御在所岳を背に三滝川の清流に沿って並び、駐車場は30台分あります。客室は2階から3階にあり、エレベーターはありません。予約の照会・キャンセルや会員情報の変更はウェブサイトで行え、館内にはWi-Fiがあります。"
+          },
+          {
+            "heading": "客室とお風呂",
+            "body": "客室は全室和室10室で定員は50名、宴会場は50畳で2分割できます。客室には浴衣のほか、冷暖房、テレビ、冷蔵庫、シャワートイレ、ドライヤーが備わり、子供用のおむつバケツや専用の食器の貸し出しもあります。浴室は露天2つと内湯1つが男女入れ替え制で、貸切の露天風呂が1つあります。日帰り入浴の時間は11時から17時(不定休)です。"
+          },
+          {
+            "heading": "食事",
+            "body": "会席料理には御在所岳の山の幸と伊勢湾の海の幸を使います。日帰りプランにはミニ会席コースと本格会席コースがあり、リクエストに応じて猪鹿鳥料理や三重黒毛和牛しゃぶしゃぶ、ボタン鍋に内容を変えることもできます。飲み物は地酒や焼酎のほか、ワインやチューハイも揃います。"
+          }
+        ],
+        "menus": [
+          {
+            "name": "会席料理"
+          },
+          {
+            "name": "ミニ会席コース"
+          },
+          {
+            "name": "本格会席コース"
+          },
+          {
+            "name": "猪鹿鳥料理"
+          },
+          {
+            "name": "三重黒毛和牛しゃぶしゃぶ"
+          },
+          {
+            "name": "ボタン鍋"
+          }
+        ],
+        "sources": [
+          {
+            "label": "公式サイト",
+            "url": "http://kuranosuke.com/"
+          },
+          {
+            "label": "公式サイト(館内)",
+            "url": "http://kuranosuke.com/about.html"
+          },
+          {
+            "label": "公式サイト(客室)",
+            "url": "http://kuranosuke.com/room.html"
+          },
+          {
+            "label": "公式サイト(料理)",
+            "url": "http://kuranosuke.com/food.html"
+          },
+          {
+            "label": "公式サイト(日帰りプラン)",
+            "url": "http://kuranosuke.com/dayplan.html"
+          },
+          {
+            "label": "Google マップ",
+            "url": "https://maps.google.com/?cid=7885744359790044800"
+          }
+        ],
+        "checkedAt": "2026-10-25"
+      },
+      "attributes": {
+        "roomTypes": [
+          "和室"
+        ]
+      }
+    },
+    {
+      "id": "st0014",
+      "vertical": "stay",
+      "category": "ryokan",
+      "name": "旅館いづもや",
+      "pref": "oita",
+      "cityName": "由布市",
+      "address": "大分県由布市湯布院町湯平311",
+      "lat": 33.1922548,
+      "lng": 131.3263039,
+      "phone": "0977-86-2045",
+      "mapUrl": "https://maps.google.com/?cid=8750848353216529969",
+      "image": "/_portal/vshops/tri-stay-116/g01.jpg",
+      "images": [
+        "/_portal/vshops/tri-stay-116/g01.jpg",
+        "/_portal/vshops/tri-stay-116/g02.jpg",
+        "/_portal/vshops/tri-stay-116/g03.jpg",
+        "/_portal/vshops/tri-stay-116/g04.jpg",
+        "/_portal/vshops/tri-stay-116/g05.jpg",
+        "/_portal/vshops/tri-stay-116/g06.jpg",
+        "/_portal/vshops/tri-stay-116/g07.jpg",
+        "/_portal/vshops/tri-stay-116/g08.jpg",
+        "/_portal/vshops/tri-stay-116/g09.jpg",
+        "/_portal/vshops/tri-stay-116/g10.jpg"
+      ],
+      "photos": [
+        {
+          "path": "/_portal/vshops/tri-stay-116/g01.jpg",
+          "what": "瓦屋根の和風建築の旅館の外観",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 675
+        },
+        {
+          "path": "/_portal/vshops/tri-stay-116/g02.jpg",
+          "what": "木々に囲まれた旅館の建物を見下ろす景色",
+          "kind": "view",
+          "width": 1200,
+          "height": 675
+        },
+        {
+          "path": "/_portal/vshops/tri-stay-116/g03.jpg",
+          "what": "布団が敷かれた二間続きの和室",
+          "kind": "room",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-stay-116/g04.jpg",
+          "what": "窓際に椅子とテーブルがある和室",
+          "kind": "room",
+          "width": 678,
+          "height": 452
+        },
+        {
+          "path": "/_portal/vshops/tri-stay-116/g05.jpg",
+          "what": "木の梁がある階段と廊下",
+          "kind": "common",
+          "width": 680,
+          "height": 451
+        },
+        {
+          "path": "/_portal/vshops/tri-stay-116/g06.jpg",
+          "what": "夜に灯りがともる旅館の玄関",
+          "kind": "exterior",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-stay-116/g07.jpg",
+          "what": "薄切り肉が並ぶ料理の皿",
+          "kind": "meal",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-stay-116/g08.jpg",
+          "what": "石造りの露天風呂",
+          "kind": "bath",
+          "width": 1200,
+          "height": 675
+        },
+        {
+          "path": "/_portal/vshops/tri-stay-116/g09.jpg",
+          "what": "刺身と巻き寿司が盛られた皿",
+          "kind": "meal",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-stay-116/g10.jpg",
+          "what": "魚介の串焼きが盛られた皿",
+          "kind": "meal",
+          "width": 900,
+          "height": 1200
+        }
+      ],
+      "tags": [
+        "温泉"
+      ],
+      "article": {
+        "headline": "大分県由布市、湯平温泉にある旅館。1日３組までの小さな宿で、客室は本館の「紅葉」「蘭」と、内湯付きの離れ「沙羅」の3室",
+        "lede": "由布市にある「旅館いづもや」です。湯平温泉に位置し、1日３組までの小さな旅館です。客室は、本館の「紅葉」「蘭」と、内湯付き離れの「沙羅」の3室があります。",
+        "sections": [
+          {
+            "heading": "旅館について",
+            "body": "湯平温泉にある、1日３組までの小さな旅館です。泉質はナトリウム－塩化物・炭酸水素塩泉です。"
+          },
+          {
+            "heading": "客室",
+            "body": "客室は３つあります。「沙羅」のほか、本館に「紅葉」「蘭」の２室があります。二間続きの広い和室は、昔懐かしい日本らしさに満たされています。離れの「沙羅」は、内湯付きのスタイルです。"
+          },
+          {
+            "heading": "お風呂とアクセス",
+            "body": "風呂は内湯、露天、客室付がそれぞれ１つずつあります。JR湯平駅から車で10分の場所にあります。"
+          }
+        ],
+        "sources": [
+          {
+            "label": "大分県の観光情報サイト",
+            "url": "https://www.visit-oita.jp/spots/detail/9396"
+          },
+          {
+            "label": "Google マップ",
+            "url": "https://maps.google.com/?cid=8750848353216529969"
+          }
+        ],
+        "checkedAt": "2026-10-25"
+      },
+      "attributes": {
+        "roomTypes": [
+          "紅葉",
+          "蘭",
+          "沙羅"
+        ]
+      }
     }
   ]
 }

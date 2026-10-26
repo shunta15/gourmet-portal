@@ -1,0 +1,32 @@
+{
+  "tab": "トリニティアポ",
+  "tabEn": "tri-stay",
+  "row": 122,
+  "sheet": {
+    "name": "旬魚と地どりの宿 料理旅館井筒屋",
+    "address": "",
+    "url": "https://www.google.com/maps/place/%E6%97%AC%E9%AD%9A%E3%81%A8%E5%9C%B0%E3%81%A9%E3%82%8A%E3%81%AE%E5%AE%BF+%E6%96%99%E7%90%86%E6%97%85%E9%A4%A8%E4%BA%95%E7%AD%92%E5%B1%8B/@35.505487,135.0898841,824m/data=!3m1!1e3!4m9!3m8!1s0x5fff934b753bf8f5:0xc368b52d2825f803!5m2!4m1!1i2!8m2!3d35.505487!4d135.092459!16s%2Fg%2F1th81t8w?entry=ttu&g_ep=EgoyMDI2MTAxNC4wIKXMDSoASAFQAw%3D%3D",
+    "type": "宿泊",
+    "d1": "",
+    "d2": ""
+  },
+  "urlKind": "place",
+  "route": "第1段(verify-gbp.mjs)で確認済み",
+  "verdict": "一致",
+  "verdictReason": "電話が一致／店名: exact(シート「旬魚と地どりの宿 料理旅館井筒屋」/ マップ「旬魚と地どりの宿 料理旅館井筒屋」)",
+  "place": {
+    "name": "旬魚と地どりの宿 料理旅館井筒屋",
+    "address": "京都府与謝郡与謝野町加悦１０５０",
+    "category": null,
+    "lat": 35.505487,
+    "lng": 135.092459,
+    "gbpUrl": "https://maps.google.com/?cid=14080703440525588483",
+    "phone": "0772-42-2012",
+    "website": "http://www.chirimenkaido-idutsuya.jp/",
+    "hours": null,
+    "reserveLinks": [],
+    "statusSignals": [],
+    "closedSignal": false
+  },
+  "fetchedAt": "2026-10-25T00:45:29.646Z"
+}

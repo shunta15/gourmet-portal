@@ -1,0 +1,149 @@
+{
+  "key": "tri-life-194",
+  "headline": "岐阜県郡上市八幡町にある臨済宗妙心寺派の禅寺。慶長11年(1606)の創建で、市指定名勝庭園「てっ草園」がある",
+  "lede": "岐阜県郡上市にある「慈恩禅寺・てっ草園」です。慶長11年(1606)、八幡城主・遠藤但馬守慶隆を開基として創建された臨済宗妙心寺派の禅寺で、境内には江戸時代初期に初代半山禅師が作庭した市指定名勝庭園「てっ草園」があります。",
+  "sections": [
+    {
+      "heading": "由緒",
+      "body": "慶長11年(1606)、八幡城主・遠藤但馬守慶隆を開基として創建された臨済宗妙心寺派の禅寺です。元文3年(1738)には桜町天皇の御代に「護国」の称号を賜り、「慈恩護国禅寺」が正式な寺号となりました。現在の本堂・書院は明治29年に再建され、庫裏は平成27年に改築されています。"
+    },
+    {
+      "heading": "庭園「てっ草園」",
+      "body": "江戸時代初期に初代半山禅師によって作庭された庭園「てっ草園」は、昭和44年に市の名勝に指定されています。苔むす園内には多数のもみじが配され、池の中央には弁財天が祀られています。明治後期には松尾半古宗匠により水琴窟が設置されました。"
+    },
+    {
+      "heading": "拝観とアクセス",
+      "body": "拝観時間は午前10時から午後4時で、定休日は火曜日です。個人的に楽しむための撮影は他の参拝者への配慮があれば可能ですが、商用撮影を希望する場合は寺務所への連絡が必要です。境内には「山門Ｐ」と「参拝者専用Ｐ」の2か所の駐車場があり、長良川鉄道の郡上八幡駅からはタクシーで5分です。"
+    }
+  ],
+  "menus": [
+    {
+      "name": "ご祈祷・お念寿"
+    },
+    {
+      "name": "交通安全祈願"
+    },
+    {
+      "name": "厄除け祈願"
+    },
+    {
+      "name": "御朱印"
+    },
+    {
+      "name": "永代供養合祀墓「観音塔」"
+    }
+  ],
+  "tags": [
+    {
+      "tag": "駐車場あり",
+      "factIndex": 11
+    }
+  ],
+  "facts": [
+    {
+      "claim": "慶長11年(1606)、八幡城主・遠藤但馬守慶隆を開基として創建された禅寺",
+      "source": "https://www.jionzenji.com/jionzenji.html",
+      "quote": "慶長11年(1606) 八幡城主 遠藤但馬守慶隆公が開基",
+      "checkedAt": "2026-10-26"
+    },
+    {
+      "claim": "寺号は「慈恩護国禅寺」",
+      "source": "https://www.jionzenji.com/jionzenji.html",
+      "quote": "「慈恩護国禅寺」 が正式な寺号となりました",
+      "checkedAt": "2026-10-26"
+    },
+    {
+      "claim": "臨済宗妙心寺派の寺院",
+      "source": "https://www.jionzenji.com/",
+      "quote": "臨済宗妙心寺派",
+      "checkedAt": "2026-10-26"
+    },
+    {
+      "claim": "本堂・書院は明治29年に再建",
+      "source": "https://www.jionzenji.com/jionzenji.html",
+      "quote": "本堂・書院は、明治29年に再建",
+      "checkedAt": "2026-10-26"
+    },
+    {
+      "claim": "てっ草園は江戸時代初期に初代半山禅師が作庭",
+      "source": "https://www.jionzenji.com/tetsusoen/index.html",
+      "quote": "初代半山禅師によって作庭されました",
+      "checkedAt": "2026-10-26"
+    },
+    {
+      "claim": "てっ草園は昭和44年に市の名勝に指定",
+      "source": "https://www.jionzenji.com/tetsusoen/index.html",
+      "quote": "（昭和44年：市指定・名勝）",
+      "checkedAt": "2026-10-26"
+    },
+    {
+      "claim": "水琴窟は明治後期に松尾半古宗匠により設置",
+      "source": "https://www.jionzenji.com/tetsusoen/index.html",
+      "quote": "明治後期、松尾半古宗匠(茶道松尾流) により設置され",
+      "checkedAt": "2026-10-26"
+    },
+    {
+      "claim": "拝観時間は午前10時から午後4時",
+      "source": "https://www.jionzenji.com/visit.html",
+      "quote": "午前10:00～午後4:00",
+      "checkedAt": "2026-10-26"
+    },
+    {
+      "claim": "定休日は火曜日",
+      "source": "https://www.jionzenji.com/visit.html",
+      "quote": "火曜日 定休",
+      "checkedAt": "2026-10-26"
+    },
+    {
+      "claim": "個人で楽しむための撮影は配慮があれば可能",
+      "source": "https://www.jionzenji.com/visit.html",
+      "quote": "個人的に お楽しみ頂くためであれば",
+      "checkedAt": "2026-10-26"
+    },
+    {
+      "claim": "商用撮影を希望する場合は寺務所への連絡が必要",
+      "source": "https://www.jionzenji.com/visit.html",
+      "quote": "商用撮影をご希望の方は、寺務所までご連絡ください",
+      "checkedAt": "2026-10-26"
+    },
+    {
+      "claim": "境内に「山門Ｐ」駐車場がある",
+      "source": "https://www.jionzenji.com/info.html",
+      "quote": "「山門 Ｐ 」駐車場",
+      "checkedAt": "2026-10-26"
+    },
+    {
+      "claim": "長良川鉄道の郡上八幡駅からタクシーで5分",
+      "source": "https://www.jionzenji.com/info.html",
+      "quote": "長良川鉄道・郡上八幡駅 下車 タクシー5分",
+      "checkedAt": "2026-10-26"
+    }
+  ],
+  "sources": [
+    {
+      "label": "公式サイト",
+      "url": "https://www.jionzenji.com/"
+    },
+    {
+      "label": "公式サイト(由緒)",
+      "url": "https://www.jionzenji.com/jionzenji.html"
+    },
+    {
+      "label": "公式サイト(てっ草園)",
+      "url": "https://www.jionzenji.com/tetsusoen/index.html"
+    },
+    {
+      "label": "公式サイト(拝観案内)",
+      "url": "https://www.jionzenji.com/visit.html"
+    },
+    {
+      "label": "公式サイト(交通アクセス・駐車場)",
+      "url": "https://www.jionzenji.com/info.html"
+    },
+    {
+      "label": "Google マップ",
+      "url": "https://maps.google.com/?cid=11808432505301428117"
+    }
+  ],
+  "notes": "automation/v2/write.mjs が 2026-10-26 に claude -p --model sonnet で作成。事実の裏取り: 13/13 件(quote が出どころにあるもの)。裏取りに通らなかった facts は載せていない。"
+}

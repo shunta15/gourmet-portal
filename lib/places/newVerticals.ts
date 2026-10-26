@@ -4,6 +4,7 @@
  * 全店を出すと大きくなるので、使うときに動的 import で読む（サーバー専用。クライアントから import しない）。
  */
 import type { Place } from './types';
+import { dropUnlistedPlaces } from '../unlistedScope';
 
 export type GeneratedVertical = 'beauty' | 'bodycare' | 'pet' | 'stay' | 'activity' | 'sports' | 'life';
 
@@ -33,5 +34,6 @@ export async function getGeneratedPlaces(vertical: GeneratedVertical): Promise<P
               : vertical === 'life'
                 ? await import('./generated/life.json')
                 : await import('./generated/stay.json');
-  return (mod.default as unknown as { places: Place[] }).places.filter((p) => !HELD_PLACE_IDS.includes(p.id));
+  // 限定公開の店(lib/unlisted.ts)も外す。店自身のページを描いているあいだだけ、その 1 店が通る(lib/unlistedScope.ts)
+  return dropUnlistedPlaces((mod.default as unknown as { places: Place[] }).places.filter((p) => !HELD_PLACE_IDS.includes(p.id)));
 }

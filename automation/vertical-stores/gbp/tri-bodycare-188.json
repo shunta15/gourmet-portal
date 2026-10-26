@@ -1,0 +1,40 @@
+{
+  "tab": "トリニティアポ",
+  "tabEn": "tri-bodycare",
+  "row": 188,
+  "sheet": {
+    "name": "BASE溝の口接骨院",
+    "address": "",
+    "url": "https://www.google.com/search?q=070-3207-6466%09BASE%E6%BA%9D%E3%81%AE%E5%8F%A3%E6%8E%A5%E9%AA%A8%E9%99%A2&sca_esv=cbcfff1caab717ac&rlz=1C1HKFL_jaJP1236JP1236&sxsrf=APpeQntxiSZg-I5NQPrT4L53k7H9LGEumw%3A1792486441768&ei=KSzXao-3Lrehvr0P1er0wQI&biw=1111&bih=822&uact=5&oq=070-3207-6466%09BASE%E6%BA%9D%E3%81%AE%E5%8F%A3%E6%8E%A5%E9%AA%A8%E9%99%A2&gs_lp=Egxnd3Mtd2l6LXNlcnAiJDA3MC0zMjA3LTY0NjYJQkFTRea6neOBruWPo-aOpemqqOmZojIFEAAY7wUyBRAAGO8FSJ8CUABYAHAAeACQAQCYAXmgAXmqAQMwLjG4AQPIAQD4AQL4AQGYAgGgAn2YAwCSBwMwLjGgB3OyBwMwLjG4B33CBwMwLjHIBwKACAE&sclient=gws-wiz-serp",
+    "type": "整体",
+    "d1": "",
+    "d2": ""
+  },
+  "urlKind": "search",
+  "route": "第1段(verify-gbp.mjs)で確認済み",
+  "verdict": "一致",
+  "verdictReason": "電話が一致／店名: exact(シート「BASE溝の口接骨院」/ マップ「BASE溝の口接骨院」)",
+  "place": {
+    "name": "BASE溝の口接骨院",
+    "address": "神奈川県川崎市高津区久地２丁目１６−１ 2F バッティングモンスター内",
+    "category": "接骨院",
+    "lat": 35.6107472,
+    "lng": 139.6122255,
+    "gbpUrl": "https://maps.google.com/?cid=2359959176203572094",
+    "phone": "070-3207-6466",
+    "website": "https://tsuku2.jp/base-mizonokuchi",
+    "hours": {
+      "月": "12:00–21:00",
+      "火": "12:00–21:00",
+      "水": "12:00–21:00",
+      "木": "12:00–21:00",
+      "金": "12:00–21:00",
+      "土": "10:00–20:00",
+      "日": "10:00–20:00"
+    },
+    "reserveLinks": [],
+    "statusSignals": [],
+    "closedSignal": false
+  },
+  "fetchedAt": "2026-10-25T01:08:27.278Z"
+}

@@ -1,0 +1,50 @@
+{
+  "key": "tri-life-98",
+  "headline": "愛媛県大洲市豊茂にある寺院「出石寺」。参拝時間は月曜から日曜まで7時から17時です",
+  "lede": "愛媛県大洲市にある「出石寺」です。仏教寺院です。参拝時間は毎日7時から17時です。",
+  "sections": [
+    {
+      "heading": "場所と連絡先",
+      "body": "住所は愛媛県大洲市豊茂乙１です。電話は0893-57-0011です。"
+    },
+    {
+      "heading": "参拝時間",
+      "body": "参拝時間は月曜から日曜まで毎日7時から17時です。"
+    }
+  ],
+  "menus": [],
+  "tags": [],
+  "facts": [
+    {
+      "claim": "住所は愛媛県大洲市豊茂乙１",
+      "source": "https://maps.google.com/?cid=8538771730742450309",
+      "quote": "愛媛県大洲市豊茂乙１",
+      "checkedAt": "2026-10-26"
+    },
+    {
+      "claim": "電話番号は0893-57-0011",
+      "source": "https://maps.google.com/?cid=8538771730742450309",
+      "quote": "0893-57-0011",
+      "checkedAt": "2026-10-26"
+    },
+    {
+      "claim": "業種の表示は仏教寺院",
+      "source": "https://maps.google.com/?cid=8538771730742450309",
+      "quote": "仏教寺院",
+      "checkedAt": "2026-10-26"
+    },
+    {
+      "claim": "参拝時間は月曜から日曜まで7時から17時",
+      "source": "https://maps.google.com/?cid=8538771730742450309",
+      "quote": "07:00–17:00",
+      "checkedAt": "2026-10-26"
+    }
+  ],
+  "sources": [
+    {
+      "label": "Google マップ",
+      "url": "https://maps.google.com/?cid=8538771730742450309"
+    }
+  ],
+  "notes": "automation/v2/write.mjs が 2026-10-26 に claude -p --model sonnet で作成。事実の裏取り: 4/4 件(quote が出どころにあるもの)。裏取りに通らなかった facts は載せていない。"
+}

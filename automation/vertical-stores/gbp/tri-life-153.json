@@ -1,0 +1,40 @@
+{
+  "tab": "トリニティアポ",
+  "tabEn": "tri-life",
+  "row": 153,
+  "sheet": {
+    "name": "盛松寺",
+    "address": "",
+    "url": "https://www.google.com/search?q=%E7%9B%9B%E6%9D%BE%E5%AF%BA%09%E5%A4%A7%E9%98%AA%E5%BA%9C%E6%B2%B3%E5%86%85%E9%95%B7%E9%87%8E%E5%B8%82%E6%A5%A0%E7%94%BA%E8%A5%BF%EF%BC%91%EF%BC%92%EF%BC%91%EF%BC%91&sca_esv=884dd6fe85adf28f&biw=748&bih=663&sxsrf=APpeQnvDEk4-u7kLFR4sXKwAJkH1qc90bw%3A1792462656113&ei=QM_WatvfBduqhvcPnIrriQs&uact=5&oq=%E7%9B%9B%E6%9D%BE%E5%AF%BA%09%E5%A4%A7%E9%98%AA%E5%BA%9C%E6%B2%B3%E5%86%85%E9%95%B7%E9%87%8E%E5%B8%82%E6%A5%A0%E7%94%BA%E8%A5%BF%EF%BC%91%EF%BC%92%EF%BC%91%EF%BC%91&gs_lp=Egxnd3Mtd2l6LXNlcnAiN-ebm-advuWvugnlpKfpmKrlupzmsrPlhoXplbfph47luILmpaDnlLropb_vvJHvvJLvvJHvvJEyCBAAGIAEGKIEMgUQABjvBUi8BFCnAlinAnABeACQAQCYAZQBoAGUAaoBAzAuMbgBA8gBAPgBAvgBAZgCAqACogGoAgrCAgcQIxjqAhgnmAMH8QWUjzXvbC6LOZIHAzEuMaAHpgGyBwMwLjG4B5sBwgcFMC4xLjHIBwWACAE&sclient=gws-wiz-serp&sec_src=editors",
+    "type": "寺",
+    "d1": "",
+    "d2": ""
+  },
+  "urlKind": "search",
+  "route": "第1段(verify-gbp.mjs)で確認済み",
+  "verdict": "一致",
+  "verdictReason": "電話が一致／店名: contains(シート「盛松寺」/ マップ「仏日山 盛松寺・盛松寺霊苑」)／住所(検索URL): exact・町名・番地とも一致",
+  "place": {
+    "name": "仏日山 盛松寺・盛松寺霊苑",
+    "address": "大阪府河内長野市楠町西１２１１",
+    "category": "仏教寺院",
+    "lat": 34.470308,
+    "lng": 135.5603237,
+    "gbpUrl": "https://maps.google.com/?cid=1248330775721601245",
+    "phone": "0721-53-3037",
+    "website": "https://seishoji.org/",
+    "hours": {
+      "月": "09:00–16:00",
+      "火": "09:00–16:00",
+      "水": "09:00–16:00",
+      "木": "09:00–16:00",
+      "金": "09:00–16:00",
+      "土": "09:00–16:00",
+      "日": "09:00–16:00"
+    },
+    "reserveLinks": [],
+    "statusSignals": [],
+    "closedSignal": false
+  },
+  "fetchedAt": "2026-10-26T06:25:37.667Z"
+}

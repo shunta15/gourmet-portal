@@ -1,0 +1,104 @@
+{
+  "key": "tri-stay-116",
+  "headline": "大分県由布市、湯平温泉にある旅館。1日３組までの小さな宿で、客室は本館の「紅葉」「蘭」と、内湯付きの離れ「沙羅」の3室",
+  "lede": "由布市にある「旅館いづもや」です。湯平温泉に位置し、1日３組までの小さな旅館です。客室は、本館の「紅葉」「蘭」と、内湯付き離れの「沙羅」の3室があります。",
+  "sections": [
+    {
+      "heading": "旅館について",
+      "body": "湯平温泉にある、1日３組までの小さな旅館です。泉質はナトリウム－塩化物・炭酸水素塩泉です。"
+    },
+    {
+      "heading": "客室",
+      "body": "客室は３つあります。「沙羅」のほか、本館に「紅葉」「蘭」の２室があります。二間続きの広い和室は、昔懐かしい日本らしさに満たされています。離れの「沙羅」は、内湯付きのスタイルです。"
+    },
+    {
+      "heading": "お風呂とアクセス",
+      "body": "風呂は内湯、露天、客室付がそれぞれ１つずつあります。JR湯平駅から車で10分の場所にあります。"
+    }
+  ],
+  "rooms": [
+    {
+      "name": "紅葉"
+    },
+    {
+      "name": "蘭"
+    },
+    {
+      "name": "沙羅"
+    }
+  ],
+  "menus": [],
+  "tags": [
+    {
+      "tag": "温泉",
+      "factIndex": 1
+    }
+  ],
+  "facts": [
+    {
+      "claim": "湯平温泉にある、1日３組までの小さな旅館",
+      "source": "https://www.visit-oita.jp/spots/detail/9396",
+      "quote": "1日３組までの小さな旅館",
+      "checkedAt": "2026-10-25"
+    },
+    {
+      "claim": "泉質はナトリウム－塩化物・炭酸水素塩泉",
+      "source": "https://www.visit-oita.jp/spots/detail/9396",
+      "quote": "ナトリウム－塩化物・炭酸水素塩泉",
+      "checkedAt": "2026-10-25"
+    },
+    {
+      "claim": "客室は３つある",
+      "source": "https://www.visit-oita.jp/spots/detail/9396",
+      "quote": "３つの客室",
+      "checkedAt": "2026-10-25"
+    },
+    {
+      "claim": "本館に「紅葉」「蘭」の2室がある",
+      "source": "https://www.visit-oita.jp/spots/detail/9396",
+      "quote": "「沙羅」のほか、本館に「紅葉」「蘭」の２室がある",
+      "checkedAt": "2026-10-25"
+    },
+    {
+      "claim": "二間続きの広い和室は昔懐かしい日本らしさに満たされている",
+      "source": "https://www.visit-oita.jp/spots/detail/9396",
+      "quote": "二間続きの広い和室は昔懐かしい日本らしさに満たされており",
+      "checkedAt": "2026-10-25"
+    },
+    {
+      "claim": "離れの「沙羅」は内湯付きのスタイル",
+      "source": "https://www.visit-oita.jp/spots/detail/9396",
+      "quote": "「沙羅」は内湯付き離れのスタイル",
+      "checkedAt": "2026-10-25"
+    },
+    {
+      "claim": "風呂は内湯、露天、客室付がそれぞれ1つずつある",
+      "source": "https://www.visit-oita.jp/spots/detail/9396",
+      "quote": "内湯（１）、露天（１）、客室付（１）",
+      "checkedAt": "2026-10-25"
+    },
+    {
+      "claim": "JR湯平駅から車で10分の場所にある",
+      "source": "https://www.visit-oita.jp/spots/detail/9396",
+      "quote": "JR湯平駅より車で10分",
+      "checkedAt": "2026-10-25"
+    },
+    {
+      "claim": "住所は大分県由布市湯布院町湯平311",
+      "source": "https://maps.google.com/?cid=8750848353216529969",
+      "quote": "大分県由布市湯布院町湯平３１１",
+      "checkedAt": "2026-10-25"
+    }
+  ],
+  "sources": [
+    {
+      "label": "大分県の観光情報サイト",
+      "url": "https://www.visit-oita.jp/spots/detail/9396"
+    },
+    {
+      "label": "Google マップ",
+      "url": "https://maps.google.com/?cid=8750848353216529969"
+    }
+  ],
+  "notes": "automation/v2/write.mjs が 2026-10-25 に claude -p --model sonnet で作成。事実の裏取り: 9/9 件(quote が出どころにあるもの)。裏取りに通らなかった facts は載せていない。"
+}

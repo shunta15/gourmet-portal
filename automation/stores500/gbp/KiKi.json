@@ -1,0 +1,22 @@
+{
+  "name": "KiKi",
+  "address": "三重県桑名市東方５６３−１１",
+  "lat": 35.07329,
+  "lng": 136.680845,
+  "category": "レストラン",
+  "hours": {
+    "月": "12:00–14:00, 17:30–21:00",
+    "火": "12:00–14:00, 17:30–21:00",
+    "水": "12:00–14:00, 17:30–21:00",
+    "木": "12:00–14:00, 17:30–21:00",
+    "金": "12:00–14:00, 17:30–21:00",
+    "土": "12:00–14:00, 17:30–21:00",
+    "日": "定休日"
+  },
+  "phone": "0594-25-8777",
+  "website": "https://kiki140420.com/?utm_source=GBP&utm_medium=GBP&utm_term=GBP&utm_content=GBP&utm_campaign=GBP",
+  "priceRange": null,
+  "status": null,
+  "gbpUrl": "https://maps.google.com/?cid=12655492289697823682",
+  "fetchedAt": "2026-10-25T01:04:39.642Z"
+}
