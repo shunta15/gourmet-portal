@@ -2138,5 +2138,44 @@
       "desc は lede から事実の文を選べず、事実から作った定型文",
       "cuisine は GBPカテゴリ"
     ]
+  },
+  "r718": {
+    "articleId": "Cafe＆Shop粋sui",
+    "name": "Cafe＆Shop粋 ｓｕｉ",
+    "warnings": [
+      "desc は lede から事実の文を選べず、事実から作った定型文",
+      "cuisine は GBPカテゴリ"
+    ]
+  },
+  "r719": {
+    "articleId": "お福ちゃん",
+    "name": "お福ちゃん",
+    "warnings": [
+      "desc は lede から事実の文を選べず、事実から作った定型文",
+      "cuisine は GBPカテゴリ"
+    ]
+  },
+  "r722": {
+    "articleId": "MOSH宮古島",
+    "name": "MOSH 宮古島",
+    "warnings": [
+      "desc は lede から事実の文を選べず、事実から作った定型文"
+    ]
+  },
+  "r720": {
+    "articleId": "NANNAICYA",
+    "name": "NANNAICYA",
+    "warnings": [
+      "desc は lede から事実の文を選べず、事実から作った定型文",
+      "cuisine は GBPカテゴリ"
+    ]
+  },
+  "r721": {
+    "articleId": "ティース",
+    "name": "ティース",
+    "warnings": [
+      "desc は lede から事実の文を選べず、事実から作った定型文",
+      "cuisine は GBPカテゴリ"
+    ]
   }
 }

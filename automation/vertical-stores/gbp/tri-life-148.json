@@ -1,0 +1,40 @@
+{
+  "tab": "トリニティアポ",
+  "tabEn": "tri-life",
+  "row": 148,
+  "sheet": {
+    "name": "06-6441-6449",
+    "address": "",
+    "url": "https://www.google.com/search?q=06-6441-6449&rlz=1C1PWSB_jaJP1026JP1029&oq=06-6441-6449&gs_lcrp=EgZjaHJvbWUyBggAEEUYOdIBBzExNGowajeoAgiwAgHxBW_uMPjGO8OZ&sourceid=chrome&source=chrome.ob&ie=UTF-8",
+    "type": "神社",
+    "d1": "",
+    "d2": ""
+  },
+  "urlKind": "search",
+  "route": "第1段(verify-gbp.mjs)で確認済み",
+  "verdict": "一致",
+  "verdictReason": "店名が電話番号・第1段で電話が一致(店名は Google マップの店名)(オーナー 2026-10-26「OK進めていいよ」)。元の判定の理由: シートの店名が電話番号(06-6441-6449)。電話で出たマップの店は「春日神社」(電話一致)。店名をオーナーに確認",
+  "place": {
+    "name": "春日神社",
+    "address": "大阪府大阪市福島区玉川２丁目２−７",
+    "category": "神社",
+    "lat": 34.6898019,
+    "lng": 135.4798372,
+    "gbpUrl": "https://maps.google.com/?cid=13235720631349648128",
+    "phone": "06-6441-6449",
+    "website": "https://nodafuji.net/",
+    "hours": {
+      "月": "24時間営業",
+      "火": "24時間営業",
+      "水": "24時間営業",
+      "木": "24時間営業",
+      "金": "24時間営業",
+      "土": "24時間営業",
+      "日": "24時間営業"
+    },
+    "reserveLinks": [],
+    "statusSignals": [],
+    "closedSignal": false
+  },
+  "fetchedAt": "2026-10-26T08:31:51.769Z"
+}

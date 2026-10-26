@@ -2658,6 +2658,128 @@
           "沙羅"
         ]
       }
+    },
+    {
+      "id": "st0015",
+      "vertical": "stay",
+      "category": "pension",
+      "name": "古民家宿&お食事処-庵木瓜 Iorimokkou",
+      "pref": "nagano",
+      "cityName": "小川村",
+      "address": "長野県上水内郡小川村瀬戸川5028-1",
+      "lat": 36.6600138,
+      "lng": 137.9781719,
+      "phone": "090-3142-8436",
+      "url": "https://iorimocco.jp/",
+      "website": "https://iorimocco.jp/",
+      "mapUrl": "https://maps.google.com/?cid=2979927375064449920",
+      "image": "/_portal/vshops/tri-stay-135/g01.jpg",
+      "images": [
+        "/_portal/vshops/tri-stay-135/g01.jpg",
+        "/_portal/vshops/tri-stay-135/g02.jpg",
+        "/_portal/vshops/tri-stay-135/g03.jpg",
+        "/_portal/vshops/tri-stay-135/g04.jpg",
+        "/_portal/vshops/tri-stay-135/g05.jpg",
+        "/_portal/vshops/tri-stay-135/g06.jpg",
+        "/_portal/vshops/tri-stay-135/g07.jpg",
+        "/_portal/vshops/tri-stay-135/g08.jpg",
+        "/_portal/vshops/tri-stay-135/g09.jpg"
+      ],
+      "photos": [
+        {
+          "path": "/_portal/vshops/tri-stay-135/g01.jpg",
+          "what": "雪の残る庭先から見た古民家の外観",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 675
+        },
+        {
+          "path": "/_portal/vshops/tri-stay-135/g02.jpg",
+          "what": "雪景色の中に建つ古民家の外観",
+          "kind": "exterior",
+          "width": 675,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-stay-135/g03.jpg",
+          "what": "星空の下に明かりが灯る古民家の夜景",
+          "kind": "view",
+          "width": 1200,
+          "height": 800
+        },
+        {
+          "path": "/_portal/vshops/tri-stay-135/g04.jpg",
+          "what": "雪をかぶった山並みが望める景色",
+          "kind": "view",
+          "width": 1200,
+          "height": 676
+        },
+        {
+          "path": "/_portal/vshops/tri-stay-135/g05.jpg",
+          "what": "夕焼け空の下に建つ古民家の外観",
+          "kind": "exterior",
+          "width": 959,
+          "height": 539
+        },
+        {
+          "path": "/_portal/vshops/tri-stay-135/g06.jpg",
+          "what": "雪山が連なる稜線の景色",
+          "kind": "view",
+          "width": 1200,
+          "height": 675
+        },
+        {
+          "path": "/_portal/vshops/tri-stay-135/g07.jpg",
+          "what": "手すり越しに見える夕暮れの空の景色",
+          "kind": "view",
+          "width": 959,
+          "height": 539
+        },
+        {
+          "path": "/_portal/vshops/tri-stay-135/g08.jpg",
+          "what": "薪ストーブが置かれた木づくりの室内",
+          "kind": "common",
+          "width": 675,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-stay-135/g09.jpg",
+          "what": "窓際に椅子とテーブルが置かれた室内",
+          "kind": "room",
+          "width": 1200,
+          "height": 900
+        }
+      ],
+      "tags": [],
+      "article": {
+        "headline": "長野県上水内郡小川村にある、古民家を改装した宿とカフェ。和食・中華・洋食のメニューがある",
+        "lede": "長野県上水内郡小川村にある「古民家宿&お食事処-庵木瓜 Iorimokkou」です。古民家を改装した宿とカフェで、冷蔵コンテナを改造したサウナやレーザーディスクのカラオケを備えます。",
+        "sections": [
+          {
+            "heading": "建物と設備",
+            "body": "古民家を改装した宿とカフェです。冷蔵コンテナを改造したサウナがあり、レーザーディスクのカラオケといった珍しい設備も備えます。"
+          },
+          {
+            "heading": "食事",
+            "body": "食事は和食・中華・洋食と幅広いメニューです。"
+          },
+          {
+            "heading": "場所",
+            "body": "住所は長野県上水内郡小川村瀬戸川５０２８−１、電話は090-3142-8436です。営業日は電話で確認できます。"
+          }
+        ],
+        "sources": [
+          {
+            "label": "小川村観光サイト(庵木瓜紹介ページ)",
+            "url": "https://www.vill.ogawa.nagano.jp/kankou/docs/64713.html"
+          },
+          {
+            "label": "Google マップ",
+            "url": "https://maps.google.com/?cid=2979927375064449920"
+          }
+        ],
+        "checkedAt": "2026-10-26"
+      }
     }
   ]
 }

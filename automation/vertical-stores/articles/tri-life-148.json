@@ -1,0 +1,107 @@
+{
+  "key": "tri-life-148",
+  "headline": "大阪市福島区玉川に鎮座する神社。「野田藤発祥の地」とされ、境内の末社に「白藤社」「影藤社」がある",
+  "lede": "大阪市福島区にある「春日神社」です。主祭神は天兒屋根命、天照大神、宇賀御魂神で、境内には末社として「白藤社」「影藤社」が鎮座しています。",
+  "sections": [
+    {
+      "heading": "場所と連絡先",
+      "body": "住所は大阪市福島区玉川2丁目2-7で、電話は06-6441-6449です。大阪メトロ千日前線「玉川駅」4号出口から徒歩約5分の距離にあります。駐車場の用意はなく、近隣の駐車場か公共交通機関の利用が案内されています。"
+    },
+    {
+      "heading": "祭神と由緒",
+      "body": "主祭神は天兒屋根命、天照大神、宇賀御魂神です。天兒屋根命は中臣氏・藤原氏の祖神として知られています。境内には末社として「白藤社」および「影藤社」が鎮座しています。"
+    },
+    {
+      "heading": "野田藤発祥の地",
+      "body": "「野田藤発祥の地」とされ、「のだふじ」は大阪市福島区の花に指定されています。毎年四月二十九日には春の例祭がおこなわれます。御朱印は、藤の花が咲く時期で、かつ対応できる場合のみ受け付けています。"
+    }
+  ],
+  "menus": [],
+  "tags": [
+    {
+      "tag": "駅近",
+      "factIndex": 4
+    }
+  ],
+  "facts": [
+    {
+      "claim": "住所は大阪府大阪市福島区玉川2丁目2-7",
+      "source": "https://maps.google.com/?cid=13235720631349648128",
+      "quote": "大阪府大阪市福島区玉川２丁目２−７",
+      "checkedAt": "2026-10-26"
+    },
+    {
+      "claim": "主祭神は天兒屋根命、天照大神、宇賀御魂神",
+      "source": "https://nodafuji.net/kasuga/",
+      "quote": "天照大神、宇賀御魂神を祀り",
+      "checkedAt": "2026-10-26"
+    },
+    {
+      "claim": "天兒屋根命は中臣氏・藤原氏の祖神として知られる",
+      "source": "https://nodafuji.net/kasuga/",
+      "quote": "天兒屋根命は中臣氏・藤原氏の祖神として知られ",
+      "checkedAt": "2026-10-26"
+    },
+    {
+      "claim": "境内には末社として白藤社・影藤社が鎮座している",
+      "source": "https://nodafuji.net/kasuga/",
+      "quote": "末社として「白藤社」および「影藤社」が鎮座",
+      "checkedAt": "2026-10-26"
+    },
+    {
+      "claim": "大阪メトロ千日前線「玉川駅」4号出口より徒歩約5分",
+      "source": "https://nodafuji.net/",
+      "quote": "「玉川駅」4号出口より 徒歩約5分",
+      "checkedAt": "2026-10-26"
+    },
+    {
+      "claim": "駐車場の用意はない",
+      "source": "https://nodafuji.net/info/",
+      "quote": "駐車場のご用意はございません",
+      "checkedAt": "2026-10-26"
+    },
+    {
+      "claim": "野田藤発祥の地とされる",
+      "source": "https://nodafuji.net/",
+      "quote": "野田藤発祥の地",
+      "checkedAt": "2026-10-26"
+    },
+    {
+      "claim": "のだふじは大阪市福島区の花に指定されている",
+      "source": "https://nodafuji.net/kasuga/",
+      "quote": "「のだふじ」は大阪市福島区の花に指定され",
+      "checkedAt": "2026-10-26"
+    },
+    {
+      "claim": "毎年四月二十九日に春の例祭がおこなわれる",
+      "source": "https://nodafuji.net/kasuga/",
+      "quote": "毎年四月二十九日には春の例祭が斎行され",
+      "checkedAt": "2026-10-26"
+    },
+    {
+      "claim": "御朱印は藤の花が咲く時期で対応できる場合のみ受け付け",
+      "source": "https://nodafuji.net/info/",
+      "quote": "藤の花が咲く時期で、かつ対応できる場合のみお受けしています",
+      "checkedAt": "2026-10-26"
+    }
+  ],
+  "sources": [
+    {
+      "label": "公式サイト",
+      "url": "https://nodafuji.net/"
+    },
+    {
+      "label": "公式サイト(由緒)",
+      "url": "https://nodafuji.net/kasuga/"
+    },
+    {
+      "label": "公式サイト(ご案内)",
+      "url": "https://nodafuji.net/info/"
+    },
+    {
+      "label": "Google マップ",
+      "url": "https://maps.google.com/?cid=13235720631349648128"
+    }
+  ],
+  "notes": "automation/v2/write.mjs が 2026-10-26 に claude -p --model sonnet で作成。事実の裏取り: 10/10 件(quote が出どころにあるもの)。裏取りに通らなかった facts は載せていない。"
+}

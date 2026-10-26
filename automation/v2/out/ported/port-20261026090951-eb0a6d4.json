@@ -1,0 +1,118 @@
+{
+  "commit": "eb0a6d4d1f3c19b87bccc4752307b196b979c78f",
+  "source": "/Users/shunta/claude/gp-k-auto2",
+  "count": 10,
+  "added": [
+    {
+      "row": 135,
+      "name": "古民家宿&お食事処-庵木瓜 Iorimokkou",
+      "key": "tri-stay-135",
+      "vertical": "ステイ",
+      "id": "st0015",
+      "articleId": "st0015",
+      "shopUrl": "https://machinowa.tokyo/stay/shop/st0015",
+      "articleUrl": "https://machinowa.tokyo/stay/article/st0015",
+      "sheetUrl": "https://machinowa.tokyo/stay/article/st0015"
+    },
+    {
+      "row": 93,
+      "name": "清伝寺",
+      "key": "tri-life-93",
+      "vertical": "くらし",
+      "id": "li0033",
+      "articleId": "li0033",
+      "shopUrl": "https://machinowa.tokyo/life/shop/li0033",
+      "articleUrl": "https://machinowa.tokyo/life/article/li0033",
+      "sheetUrl": "https://machinowa.tokyo/life/article/li0033"
+    },
+    {
+      "row": 96,
+      "name": "救馬溪観音",
+      "key": "tri-life-96",
+      "vertical": "くらし",
+      "id": "li0034",
+      "articleId": "li0034",
+      "shopUrl": "https://machinowa.tokyo/life/shop/li0034",
+      "articleUrl": "https://machinowa.tokyo/life/article/li0034",
+      "sheetUrl": "https://machinowa.tokyo/life/article/li0034"
+    },
+    {
+      "row": 99,
+      "name": "粋",
+      "key": "tri-gourmet-99",
+      "vertical": "グルメ",
+      "id": "r718",
+      "articleId": "Cafe＆Shop粋sui",
+      "shopUrl": "https://machinowa.tokyo/restaurant/r718",
+      "articleUrl": "https://machinowa.tokyo/feature/Cafe＆Shop粋sui",
+      "sheetUrl": "https://machinowa.tokyo/feature/Cafe＆Shop粋sui"
+    },
+    {
+      "row": 141,
+      "name": "080-6168-1589",
+      "key": "tri-gourmet-141",
+      "vertical": "グルメ",
+      "id": "r719",
+      "articleId": "お福ちゃん",
+      "shopUrl": "https://machinowa.tokyo/restaurant/r719",
+      "articleUrl": "https://machinowa.tokyo/feature/お福ちゃん",
+      "sheetUrl": "https://machinowa.tokyo/feature/お福ちゃん"
+    },
+    {
+      "row": 144,
+      "name": "Bar MOSH",
+      "key": "tri-gourmet-144",
+      "vertical": "グルメ",
+      "id": "r722",
+      "articleId": "MOSH宮古島",
+      "shopUrl": "https://machinowa.tokyo/restaurant/r722",
+      "articleUrl": "https://machinowa.tokyo/feature/MOSH宮古島",
+      "sheetUrl": "https://machinowa.tokyo/feature/MOSH宮古島"
+    },
+    {
+      "row": 148,
+      "name": "06-6441-6449",
+      "key": "tri-life-148",
+      "vertical": "くらし",
+      "id": "li0035",
+      "articleId": "li0035",
+      "shopUrl": "https://machinowa.tokyo/life/shop/li0035",
+      "articleUrl": "https://machinowa.tokyo/life/article/li0035",
+      "sheetUrl": "https://machinowa.tokyo/life/article/li0035"
+    },
+    {
+      "row": 152,
+      "name": "ナンナイチャ",
+      "key": "tri-gourmet-152",
+      "vertical": "グルメ",
+      "id": "r720",
+      "articleId": "NANNAICYA",
+      "shopUrl": "https://machinowa.tokyo/restaurant/r720",
+      "articleUrl": "https://machinowa.tokyo/feature/NANNAICYA",
+      "sheetUrl": "https://machinowa.tokyo/feature/NANNAICYA"
+    },
+    {
+      "row": 181,
+      "name": "TEACE Teasalon&Interior",
+      "key": "tri-gourmet-181",
+      "vertical": "グルメ",
+      "id": "r721",
+      "articleId": "ティース",
+      "shopUrl": "https://machinowa.tokyo/restaurant/r721",
+      "articleUrl": "https://machinowa.tokyo/feature/ティース",
+      "sheetUrl": "https://machinowa.tokyo/feature/ティース"
+    },
+    {
+      "row": 193,
+      "name": "0228454866",
+      "key": "tri-life-193",
+      "vertical": "くらし",
+      "id": "li0036",
+      "articleId": "li0036",
+      "shopUrl": "https://machinowa.tokyo/life/shop/li0036",
+      "articleUrl": "https://machinowa.tokyo/life/article/li0036",
+      "sheetUrl": "https://machinowa.tokyo/life/article/li0036"
+    }
+  ],
+  "skipped": []
+}

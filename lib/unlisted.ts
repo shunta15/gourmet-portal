@@ -13,10 +13,10 @@
  */
 
 /** グルメの店 ID(lib/articleStores.ts・r671〜) */
-export const UNLISTED_STORE_IDS: readonly string[] = ["r671","r672","r673","r674","r675","r676","r677","r678","r679","r680","r681","r682","r683","r684","r685","r686","r687","r688","r689","r690","r691","r692","r693","r694","r695","r696","r697","r698","r699","r700","r701","r702","r703","r704","r705","r706","r707","r708","r709","r710","r711","r712","r713","r714","r715","r716","r717"];
+export const UNLISTED_STORE_IDS: readonly string[] = ["r671","r672","r673","r674","r675","r676","r677","r678","r679","r680","r681","r682","r683","r684","r685","r686","r687","r688","r689","r690","r691","r692","r693","r694","r695","r696","r697","r698","r699","r700","r701","r702","r703","r704","r705","r706","r707","r708","r709","r710","r711","r712","r713","r714","r715","r716","r717","r718","r719","r720","r721","r722"];
 
 /** グルメの特集記事 ID(lib/teleapo-features.ts。/feature/<記事ID> は /restaurant/<店ID> へ 308) */
-export const UNLISTED_FEATURE_IDS: readonly string[] = ["季節料理はせ部","洋菓子素材工房ぴゅあハウス","伊酒家VERDE","むぎぞう","GATEAUORANGE（ガトーオランジュ）","TiBURONCAFE","居酒屋宝泉北区王子駅前店","満天や","DiningBarCURIOUSキュリアス","鉄板居酒屋縁-en-","鉄板焼輝","DiningBarMarib四条烏丸","cafe温−on−","ボードゲームカフェCARIVAN","ツバメ珈琲-swallowcoffee-","カナデアンコーヒーハウスメイプル","そば処ひふみ","HITSUJItoBEER（ヒツジとビール）","焼き鳥居酒屋さつき","炭火串焼きとおばんざい鶏ぴん","日本料理蓮Ren(れん)","たこ焼き酒場TARVO","和食処つきやま","キッチンカーKAMUI（カムイ）","BARLyric","食パン本舗","西荻ペッコリーノ","おもちびより","くろしお弁当","aqui","FOGcoffee","炭火焼内灘市場","我が家おてちき屋","璃夢Rim","おにCafe","KiKi","天ぷらえび福","ダモンデ","焼肉なが井","シャトークワナ","BarNEWYORKMIDTOWN44STREET","マル信緑香園","BarDOPENESS","BarDiningJammin","BoulangerieReve想","おうち酒場BoNono","BeachbarCalypso"];
+export const UNLISTED_FEATURE_IDS: readonly string[] = ["季節料理はせ部","洋菓子素材工房ぴゅあハウス","伊酒家VERDE","むぎぞう","GATEAUORANGE（ガトーオランジュ）","TiBURONCAFE","居酒屋宝泉北区王子駅前店","満天や","DiningBarCURIOUSキュリアス","鉄板居酒屋縁-en-","鉄板焼輝","DiningBarMarib四条烏丸","cafe温−on−","ボードゲームカフェCARIVAN","ツバメ珈琲-swallowcoffee-","カナデアンコーヒーハウスメイプル","そば処ひふみ","HITSUJItoBEER（ヒツジとビール）","焼き鳥居酒屋さつき","炭火串焼きとおばんざい鶏ぴん","日本料理蓮Ren(れん)","たこ焼き酒場TARVO","和食処つきやま","キッチンカーKAMUI（カムイ）","BARLyric","食パン本舗","西荻ペッコリーノ","おもちびより","くろしお弁当","aqui","FOGcoffee","炭火焼内灘市場","我が家おてちき屋","璃夢Rim","おにCafe","KiKi","天ぷらえび福","ダモンデ","焼肉なが井","シャトークワナ","BarNEWYORKMIDTOWN44STREET","マル信緑香園","BarDOPENESS","BarDiningJammin","BoulangerieReve想","おうち酒場BoNono","BeachbarCalypso","Cafe＆Shop粋sui","お福ちゃん","MOSH宮古島","NANNAICYA","ティース"];
 
 /** グルメ以外の業種の店 ID(lib/places/generated/<業種>.json。店の紹介記事 /<業種>/article/<ID> も同じ ID) */
 export const UNLISTED_PLACE_IDS: Readonly<Record<string, readonly string[]>> = {
@@ -26,7 +26,8 @@ export const UNLISTED_PLACE_IDS: Readonly<Record<string, readonly string[]>> = {
     "st0011",
     "st0012",
     "st0013",
-    "st0014"
+    "st0014",
+    "st0015"
   ],
   "beauty": [
     "be0106"
@@ -79,7 +80,11 @@ export const UNLISTED_PLACE_IDS: Readonly<Record<string, readonly string[]>> = {
     "li0029",
     "li0030",
     "li0031",
-    "li0032"
+    "li0032",
+    "li0033",
+    "li0034",
+    "li0035",
+    "li0036"
   ]
 };
 

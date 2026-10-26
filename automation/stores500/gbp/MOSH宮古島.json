@@ -1,0 +1,22 @@
+{
+  "name": "MOSH 宮古島",
+  "address": "沖縄県宮古島市平良西里１７５−１ 大見謝ビルⅡ 1階",
+  "lat": 24.8056511,
+  "lng": 125.2797936,
+  "category": "バー",
+  "hours": {
+    "月": "21:00–04:00",
+    "火": "21:00–04:00",
+    "水": "21:00–04:00",
+    "木": "21:00–04:00",
+    "金": "21:00–04:00",
+    "土": "21:00–04:00",
+    "日": "21:00–04:00"
+  },
+  "phone": "090-3797-4871",
+  "website": "https://instagram.com/mosh_miyakojima?igshid=YmMyMTA2M2Y=",
+  "priceRange": null,
+  "status": null,
+  "gbpUrl": "https://maps.google.com/?cid=18284788418056153322",
+  "fetchedAt": "2026-10-26T08:31:21.077Z"
+}

@@ -1,0 +1,54 @@
+{
+  "key": "tri-life-93",
+  "headline": "大阪府枚方市三栗にある浄土宗の寺院です。",
+  "lede": "枚方市にある「清伝寺」です。三栗一丁目にあり、宗派は浄土宗です。",
+  "sections": [
+    {
+      "heading": "場所と連絡先",
+      "body": "住所は大阪府枚方市三栗１丁目５−１４、電話は072-857-7148です。"
+    },
+    {
+      "heading": "宗派",
+      "body": "宗派は浄土宗です。"
+    }
+  ],
+  "menus": [],
+  "tags": [],
+  "facts": [
+    {
+      "claim": "住所は大阪府枚方市三栗１丁目５−１４",
+      "source": "https://maps.google.com/?cid=11727493490032615594",
+      "quote": "大阪府枚方市三栗１丁目５−１４",
+      "checkedAt": "2026-10-26"
+    },
+    {
+      "claim": "電話番号は072-857-7148",
+      "source": "https://maps.google.com/?cid=11727493490032615594",
+      "quote": "072-857-7148",
+      "checkedAt": "2026-10-26"
+    },
+    {
+      "claim": "Google マップの業種の表示は仏教寺院",
+      "source": "https://maps.google.com/?cid=11727493490032615594",
+      "quote": "仏教寺院",
+      "checkedAt": "2026-10-26"
+    },
+    {
+      "claim": "宗派は浄土宗",
+      "source": "https://www.e-ohaka.com/temple_list/id27210.html",
+      "quote": "浄土宗大阪府枚方市三栗1-5-14",
+      "checkedAt": "2026-10-26"
+    }
+  ],
+  "sources": [
+    {
+      "label": "寺院情報サイト(宗派)",
+      "url": "https://www.e-ohaka.com/temple_list/id27210.html"
+    },
+    {
+      "label": "Google マップ",
+      "url": "https://maps.google.com/?cid=11727493490032615594"
+    }
+  ],
+  "notes": "automation/v2/write.mjs が 2026-10-26 に claude -p --model sonnet で作成。事実の裏取り: 4/4 件(quote が出どころにあるもの)。裏取りに通らなかった facts は載せていない。"
+}

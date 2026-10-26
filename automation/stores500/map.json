@@ -1388,5 +1388,30 @@
     "articleId": "BeachbarCalypso",
     "sheetName": "Beach bar Calypso",
     "mapsUrl": "https://maps.google.com/?cid=17998488442923651462"
+  },
+  {
+    "articleId": "Cafe＆Shop粋sui",
+    "sheetName": "粋",
+    "mapsUrl": "https://maps.google.com/?cid=16128210279766534638"
+  },
+  {
+    "articleId": "お福ちゃん",
+    "sheetName": "080-6168-1589",
+    "mapsUrl": "https://maps.google.com/?cid=14667460119811706196"
+  },
+  {
+    "articleId": "MOSH宮古島",
+    "sheetName": "Bar MOSH",
+    "mapsUrl": "https://maps.google.com/?cid=18284788418056153322"
+  },
+  {
+    "articleId": "NANNAICYA",
+    "sheetName": "ナンナイチャ",
+    "mapsUrl": "https://maps.google.com/?cid=16763836376792413079"
+  },
+  {
+    "articleId": "ティース",
+    "sheetName": "TEACE Teasalon&Interior",
+    "mapsUrl": "https://maps.google.com/?cid=4017399311631213505"
   }
 ]
