@@ -46,7 +46,8 @@ export const VERTICAL_EN = {
   くらし: "life",
 };
 /** 作らない業種(オーナー指示 2026-10-25「暮らしはデザインないので作成しなくていいよ」) */
-export const SKIP_VERTICALS = new Set(["くらし", "要確認"]);
+// くらしは 2026-10-26 オーナー「その後暮らしの記事も作成してください」で作る対象に戻した
+export const SKIP_VERTICALS = new Set(["要確認"]);
 
 /** 店のキー(作業フォルダ名)。グルメ以外は build-places / build-features が読む「tri-<業種>-<行>」 */
 export const keyOf = (vEn, row) => `tri-${vEn}-${row}`;
