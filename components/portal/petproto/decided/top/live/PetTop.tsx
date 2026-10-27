@@ -169,7 +169,7 @@ function Feature({ items }: { items: LiveArticle[] }) {
           <p className="tp-feat-desc io">
             掲載しているお店を、一軒ずつ記事で紹介します。
             <br />
-            メニューや設備、行き方など、確認できた情報をまとめています。
+            メニューや設備、行き方など、お店の情報をまとめています。
           </p>
           <Link className="pt-more tp-more pt-press pt-magnet io" href={L.shops} data-magnet="0.5" data-magnet-r="60">
             すべての店舗紹介を見る

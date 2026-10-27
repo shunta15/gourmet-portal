@@ -23,7 +23,7 @@ export default function Footer({ site }: { site: CpSite }) {
           <li><Link href="/editorial/guidelines">掲載基準</Link></li>
           <li><Link href="/contact">お問い合わせ</Link></li>
         </ul>
-        <p className="cp-note">店の写真・情報は、各店の公式サイトなどをもとにしています。営業時間などは変わることがあります。お出かけの前に公式サイトでご確認ください。</p>
+        <p className="cp-note">掲載の情報は確認日の時点のものです。営業時間などは変わることがあります。お出かけの前に公式サイトでご確認ください。</p>
         <p className="cp-note cp-copy">© マチノワ</p>
       </div>
     </footer>

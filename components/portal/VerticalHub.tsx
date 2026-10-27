@@ -165,7 +165,7 @@ export default async function VerticalHub({ vertical }: { vertical: VerticalKey 
             )}
             {HAS_CLAIM_POLICY.has(vertical) && (
               <p className="mp-note-p sub">
-                掲載方針：効果・効能をうたう表現は使わず、確認できた事実（メニュー・営業時間・設備など）だけを載せます。
+                掲載方針：効果・効能をうたう表現は使わず、事実（メニュー・営業時間・設備など）だけを載せます。
               </p>
             )}
             <p className="mp-note-links">
