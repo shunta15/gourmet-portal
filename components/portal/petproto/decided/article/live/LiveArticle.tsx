@@ -4,179 +4,112 @@ import type { Metadata } from "next";
 import JsonLd from "@/components/portal/JsonLd";
 import { notFoundMetadata } from "@/components/portal/pages/data";
 import Shell from "../../common/Shell";
-import { MaskLines, FillHeading, PawTrail } from "../../common/Motion";
-import { IconArrow, IconChevron, Paw } from "../../common/Icons";
+import { IconArrow } from "../../common/Icons";
 import { ptLinks } from "../../common/site";
-import { IconPawLine } from "../../search/live/LiveIcons";
+import TrackedA from "../../shop/live/LiveTrack";
 import { articleHref, loadPetArticleItems, loadPetShopDetail, petArticleTitle, petHasArticle, japaneseDate, type ShopDetail } from "../../shop/live/liveShopData";
-import { shopHref } from "../../search/live/liveData";
 import { sized } from "@/lib/imageUrl";
 import { breadcrumb } from "@/lib/seo/jsonld";
 import { absUrl } from "@/lib/seo/util";
 import { buildMetadata } from "@/lib/seo/meta";
 import { getVertical } from "@/lib/verticals";
-import "../../shop/live/shop-live.css";
+import "../../special/special.css";
 import "./art-live.css";
 
 /**
- * 店の特集記事(本番 /pet/article/{店の ID})。【2026-10-26 試作】見本 記事.webp(「ARTICLE」の小さな字・明朝の大見出し・右に大きな写真・白い札の並び)の見た目で、実在の店の記事を出す。
- * 文は店のデータの紹介記事・特集記事(liveShopData.ts の点検済みの文)だけ。足さない・言い換えない。店のページ(/pet/shop/{id})へは「店舗詳細を見る」で戻れる。
- * 見本は記事の「一覧」なので、1 本の記事の本文・店の札は、店のページの部品(lsp-)の見た目に合わせてある。
+ * 店の特集記事(本番 /pet/article/{店の ID})。【2026-10-28】ペットの特集の記事(/pet/special/{slug}。special/PetSpecial.tsx)と同じ作り・同じ CSS(psp-)で組む。
+ * 組み: 見出しの帯(クリーム色・パンくず・小さな英字・明朝の題) → この記事の内容(目次) → 番号つきの節(茶の下線) → おわりの文 → この記事のお店(店舗詳細・公式サイト・情報の出どころ) → あわせて読む → 戻る導線。
+ * 文は店のデータの紹介記事・特集記事(liveShopData.ts の点検済みの文)だけ。足さない・言い換えない。写真も店の実際の写真だけ(店のデータの順に、記事の頭と各節に置く)。
+ * 店のページ(/pet/shop/{id})へは、パンくず・「店舗詳細を見る」で戻れる。
  */
 
-function Crumb({ d }: { d: ShopDetail }) {
-  const L = ptLinks("live");
+const L = ptLinks("live");
+
+function Crumbs({ d }: { d: ShopDetail }) {
+  const items: Array<{ label: string; href?: string }> = [
+    { label: "マチノワペット", href: L.home },
+    { label: "店舗紹介", href: L.shops },
+    { label: d.shop.name, href: L.shop(d.place.id) },
+    { label: d.story ? "特集記事" : "紹介記事" },
+  ];
   return (
-    <nav className="lsp-bc" aria-label="パンくず">
-      <Link href={L.home}>ホーム</Link>
-      <IconChevron aria-hidden="true" />
-      <Link href={L.shops}>店舗紹介</Link>
-      <IconChevron aria-hidden="true" />
-      <Link href={shopHref(d.place.id)} prefetch={false}>
-        {d.shop.name}
-      </Link>
-      <IconChevron aria-hidden="true" />
-      <span aria-current="page">{d.story ? "特集記事" : "紹介記事"}</span>
+    <nav className="psp-crumb" aria-label="パンくず">
+      {items.map((c, i) => (
+        <span key={c.label} className="psp-crumb-i">
+          {i > 0 ? <i aria-hidden="true">&gt;</i> : null}
+          {c.href ? (
+            <Link href={c.href} prefetch={false}>
+              {c.label}
+            </Link>
+          ) : (
+            <span aria-current="page">{c.label}</span>
+          )}
+        </span>
+      ))}
     </nav>
   );
 }
 
-function Hero({ d }: { d: ShopDetail }) {
-  const ph = d.photos[0];
-  const title = petArticleTitle(d);
-  const size = title.length <= 18 ? "l" : title.length <= 30 ? "m" : "s";
+type Block = { heading: string; sub: string; body: string[]; specs: { k: string; v: string }[] };
+
+function blocksOf(d: ShopDetail): Block[] {
+  const st = d.story;
+  return st ? st.points.map((p) => ({ heading: p.name, sub: p.purpose, body: p.body, specs: p.specs })) : d.sections.map((s) => ({ heading: s.heading, sub: "", body: s.body, specs: [] }));
+}
+
+function Fig({ ph, eager, sz = 900 }: { ph: ShopDetail["photos"][number]; eager?: boolean; sz?: number }) {
   return (
-    <section className={`pta-hero${ph ? "" : " pta-hero--none"}`} aria-label="記事の見出し">
-      {ph ? (
-        <div className="pta-hero-ph">
-          <img src={sized(ph.src, 1024)} width={ph.w ?? 1200} height={ph.h ?? 800} alt={ph.alt} fetchPriority="high" decoding="async" />
-        </div>
-      ) : (
-        <div className="pta-hero-ph pta-hero-ph--none" role="img" aria-label="この店の写真はまだありません">
-          <Paw className="lsp-nophoto-paw" />
-        </div>
-      )}
-      <div className="pta-hero-tx">
-        <p className="pta-lab">{d.story ? "FEATURE" : "ARTICLE"}</p>
-        <h1 className={`pta-h1 pta-h1--${size}`}>
-          <MaskLines lines={[title]} delay={150} />
-        </h1>
-        <p className="pta-shopname">
-          {d.shop.name}　<span>{d.shop.kindName}　{d.shop.place}</span>
-        </p>
-        {d.story?.subtitle ? <p className="pta-sub">{d.story.subtitle}</p> : null}
-        <Link href={shopHref(d.place.id)} prefetch={false} className="lsp-ghost pta-btn pt-press pt-hov pt-magnet">
-          <span>店舗詳細を見る</span>
-          <IconArrow aria-hidden="true" />
-        </Link>
-      </div>
-    </section>
+    <figure className="pta-fig">
+      {/* eslint-disable-next-line @next/next/no-img-element */}
+      <img src={sized(ph.src, sz)} width={ph.w ?? 1200} height={ph.h ?? 800} alt={ph.alt} loading={eager ? "eager" : "lazy"} decoding="async" {...(eager ? { fetchPriority: "high" as const } : {})} />
+    </figure>
   );
 }
 
-function Body({ d }: { d: ShopDetail }) {
-  const st = d.story;
-  const blocks = st ? st.points.map((p) => ({ heading: p.name, sub: p.purpose, body: p.body, specs: p.specs })) : d.sections.map((s) => ({ heading: s.heading, sub: "", body: s.body, specs: [] as { k: string; v: string }[] }));
-  const lede = st ? st.lede : d.about;
+const ctaLabel = (kind: string) => (kind === "reserve" ? "予約ページを開く" : kind === "website" ? "公式サイトを見る" : kind === "phone" ? "電話する" : "地図を開く");
+
+function ShopBox({ d }: { d: ShopDetail }) {
+  // 公式サイトと予約ページだけ(電話・地図は店のページにある)
+  const links = d.cta.filter((l) => l.kind === "website" || l.kind === "reserve");
   return (
-    <section className="lsp-card lsp-art pta-art" id="story" aria-label={st ? "特集記事" : "紹介記事"}>
-      <div className="lsp-art-hd io" data-io="left">
-        <p className="lsp-lab">{st ? "Feature" : "Article"}</p>
-        <FillHeading as="h2" className="lsp-ttl lsp-ttl--art">
-          {st ? st.title || "特集記事" : "お店の紹介"}
-        </FillHeading>
-      </div>
-      <div className="lsp-art-body">
-        {lede.length > 0 ? (
-          <div className="lsp-art-lede io">
-            {lede.map((t, i) => (
-              <p key={i}>{t}</p>
-            ))}
-          </div>
-        ) : null}
-        {blocks.map((b, i) => (
-          <section key={i} className="lsp-art-sec io" aria-labelledby={`pta-art-${i}`}>
-            <h3 id={`pta-art-${i}`} className="lsp-art-h">
-              {b.heading}
-            </h3>
-            {b.sub ? <p className="lsp-art-purpose">{b.sub}</p> : null}
-            {b.body.map((t, j) => (
-              <p key={j}>{t}</p>
-            ))}
-            {b.specs.length > 0 ? (
-              <dl className="lsp-art-specs">
-                {b.specs.map((x) => (
-                  <div key={x.k}>
-                    <dt>{x.k}</dt>
-                    <dd>{x.v}</dd>
-                  </div>
-                ))}
-              </dl>
-            ) : null}
-          </section>
-        ))}
-        {st?.quote ? (
-          <blockquote className="lsp-art-bq io">
-            <p>{st.quote}</p>
-            {st.quoteCite ? <cite>{st.quoteCite}</cite> : null}
-          </blockquote>
-        ) : null}
-        {st && st.closing.length > 0 ? (
-          <div className="lsp-art-close io">
-            {st.closing.map((t, i) => (
-              <p key={i}>{t}</p>
-            ))}
-          </div>
-        ) : null}
-        {d.menus.length > 0 && !blocks.some((b) => /メニュー/.test(b.heading)) ? (
-          <div className="pta-menus io">
-            <h3 className="lsp-art-h">メニュー</h3>
+    <section className="psp-sec pta-shop io" aria-labelledby="pta-shop-h">
+      <h2 id="pta-shop-h" className="psp-h2">
+        <span>この記事のお店</span>
+      </h2>
+      <div className="pta-shop-box">
+        <p className="pta-shop-n">{d.shop.name}</p>
+        <p className="pta-shop-a">
+          {d.shop.kindName ? <span className="psp-store-k">{d.shop.kindName}</span> : null}
+          {d.address}
+        </p>
+        <div className="pta-shop-btns">
+          <Link href={L.shop(d.place.id)} prefetch={false} className="psp-btn pt-press">
+            店舗詳細を見る
+            <IconArrow />
+          </Link>
+          {links.map((l) => (
+            <TrackedA key={l.kind} href={l.href} kind={l.kind} storeId={d.place.id} page={d.path} external={l.external} className="psp-btn psp-btn--line pt-press">
+              {ctaLabel(l.kind)}
+              <IconArrow />
+            </TrackedA>
+          ))}
+        </div>
+        {d.sources.length > 0 ? (
+          <div className="pta-src">
+            <p className="psp-stores-h">情報の出どころ</p>
             <ul>
-              {d.menus.map((m, i) => (
-                <li key={`${m.name}-${i}`}>
-                  {m.name}
-                  {m.minutes ? <span>　{m.minutes}分</span> : null}
+              {d.sources.map((src) => (
+                <li key={src.url}>
+                  <a href={src.url} target="_blank" rel="noopener noreferrer">
+                    {src.label}
+                    <span className="pta-sr">（別のタブで開きます）</span>
+                  </a>
                 </li>
               ))}
             </ul>
+            {d.checkedAt ? <p className="pta-src-d">確認日 {japaneseDate(d.checkedAt)}</p> : null}
           </div>
         ) : null}
-        <PawTrail count={6} direction="right" size={13} gap="calc(9 * var(--u))" className="lsp-paws-art" />
-      </div>
-    </section>
-  );
-}
-
-function ShopBand({ d }: { d: ShopDetail }) {
-  const ph = d.photos[1] ?? d.photos[0];
-  return (
-    <section className="pta-shop" aria-label="この記事のお店">
-      <div className={`pta-shop-ph${ph ? "" : " pta-shop-ph--none"}`}>{ph ? <img src={sized(ph.src, 480)} width={ph.w ?? 480} height={ph.h ?? 320} alt="" loading="lazy" decoding="async" /> : <Paw className="lsp-nophoto-paw" />}</div>
-      <div className="pta-shop-tx">
-        <p className="lsp-lab">Shop</p>
-        <h2 className="pta-shop-n">{d.shop.name}</h2>
-        <p className="pta-shop-a">
-          {d.shop.kindName}　{d.address}
-        </p>
-        {d.sources.length > 0 ? (
-          <p className="pta-shop-s">
-            情報の出どころ：
-            {d.sources.map((src, i) => (
-              <span key={src.url}>
-                {i > 0 ? "・" : ""}
-                <a href={src.url} target="_blank" rel="noopener noreferrer">
-                  {src.label}
-                  <span className="lsp-sr">（別のタブで開きます）</span>
-                </a>
-              </span>
-            ))}
-            {d.checkedAt ? <span>　確認日 {japaneseDate(d.checkedAt)}</span> : null}
-          </p>
-        ) : null}
-        <Link href={shopHref(d.place.id)} prefetch={false} className="lsp-ghost pta-btn pt-press pt-hov pt-magnet">
-          <span>店舗詳細を見る</span>
-          <IconArrow aria-hidden="true" />
-        </Link>
       </div>
     </section>
   );
@@ -184,31 +117,180 @@ function ShopBand({ d }: { d: ShopDetail }) {
 
 async function Related({ d }: { d: ShopDetail }) {
   const all = (await loadPetArticleItems()).filter((x) => x.shop.id !== d.place.id);
-  const items = [...all].sort((a, b) => Number(b.shop.kind === d.shop.kind) * 2 + Number(b.shop.pref === d.shop.pref) - (Number(a.shop.kind === d.shop.kind) * 2 + Number(a.shop.pref === d.shop.pref))).slice(0, 4);
+  const items = [...all].sort((a, b) => Number(b.shop.kind === d.shop.kind) * 2 + Number(b.shop.pref === d.shop.pref) - (Number(a.shop.kind === d.shop.kind) * 2 + Number(a.shop.pref === d.shop.pref))).slice(0, 3);
   if (items.length === 0) return null;
   return (
-    <section className="lsp-rel pta-rel" id="related" aria-label="こんな記事もおすすめ" data-io-group>
-      <div className="lsp-rel-l io">
-        <p className="lsp-lab">Related</p>
-        <FillHeading as="h2" className="lsp-ttl lsp-ttl--rel">
-          こんな記事もおすすめ
-        </FillHeading>
-      </div>
-      <div className="lsp-items">
-        {items.map((r) => (
-          <Link key={r.shop.id} href={articleHref(r.shop.id)} prefetch={false} className="lsp-ra pt-lift pt-tilt io" data-tilt="6">
-            <div className={`lsp-ra-ph pt-zoom pt-wipe ${r.shop.photo ? "" : "lsp-ra-ph--none"}`} data-wipe="right">
-              {r.shop.photo ? <img src={sized(r.shop.photo.src, 480)} width={r.shop.photo.w ?? 350} height={r.shop.photo.h ?? 233} alt={r.shop.photo.alt} loading="lazy" decoding="async" /> : <span className="lsp-ra-none"><IconPawLine aria-hidden="true" />写真なし</span>}
-            </div>
-            <h3 className="lsp-ra-t pta-rel-t">{r.title}</h3>
-            <p className="lsp-ra-d">
-              {r.shop.name}
-              {r.shop.place ? `　${r.shop.place}` : ""}
-            </p>
-          </Link>
+    <section className="psp-in psp-rel" aria-labelledby="psp-rel-h">
+      <h2 id="psp-rel-h" className="psp-rel-h io">
+        あわせて読む
+      </h2>
+      <ul data-io-group>
+        {items.map((r, i) => (
+          <li key={r.shop.id} className="io">
+            <Link href={articleHref(r.shop.id)} prefetch={false} className="psp-card pt-lift pt-hov">
+              <span className="psp-card-n" aria-hidden="true">
+                {String(i + 1).padStart(2, "0")}
+              </span>
+              <span className="psp-card-b">
+                <span className="psp-card-k">店の特集記事</span>
+                <h3 className="psp-card-t">{r.title}</h3>
+                <span className="psp-card-d">
+                  {r.shop.name}
+                  {r.shop.place ? `　${r.shop.place}` : ""}
+                </span>
+                <span className="psp-card-go">
+                  記事を読む
+                  <span className="pt-arrow psp-card-ar" aria-hidden="true">
+                    <IconArrow />
+                  </span>
+                </span>
+              </span>
+            </Link>
+          </li>
         ))}
-      </div>
+      </ul>
     </section>
+  );
+}
+
+function Back({ d }: { d: ShopDetail }) {
+  return (
+    <p className="psp-back io">
+      <span className="psp-back-l">ほかのページへ</span>
+      <Link href={L.shop(d.place.id)} prefetch={false} className="psp-btn pt-press">
+        店舗詳細を見る
+        <IconArrow />
+      </Link>
+      <Link href={L.shops} className="psp-btn psp-btn--line pt-press">
+        店舗紹介を見る
+        <IconArrow />
+      </Link>
+      <Link href={L.specials} className="psp-btn psp-btn--line pt-press">
+        特集記事を見る
+        <IconArrow />
+      </Link>
+    </p>
+  );
+}
+
+function ArticleBody({ d, rel }: { d: ShopDetail; rel: React.ReactNode }) {
+  const st = d.story;
+  const blocks = blocksOf(d);
+  const lede = st ? st.lede : d.about;
+  const title = petArticleTitle(d);
+  const ids = (n: number) => `pta-s${n + 1}`;
+  const [first, ...rest] = d.photos;
+  return (
+    <article className="psp pta">
+      <header className="psp-hero">
+        <div className="psp-in">
+          <Crumbs d={d} />
+          <p className="psp-label">{st ? "FEATURE" : "ARTICLE"}</p>
+          <h1 className="psp-h1">{title}</h1>
+          <p className="psp-meta">
+            <span>{d.shop.name}</span>
+            <span>
+              {d.shop.kindName}
+              {d.shop.place ? `　${d.shop.place}` : ""}
+            </span>
+          </p>
+          {st?.subtitle ? <p className="psp-lead">{st.subtitle}</p> : null}
+        </div>
+      </header>
+
+      <div className="psp-in psp-body">
+        {first ? <Fig ph={first} eager sz={1024} /> : null}
+        {lede.length > 0 ? (
+          <div className="pta-lede io">
+            {lede.map((t, i) => (
+              <p key={i} className="psp-p">
+                {t}
+              </p>
+            ))}
+          </div>
+        ) : null}
+
+        <nav className="psp-toc io" aria-label="この記事の内容">
+          <h2 className="psp-toc-h">この記事の内容</h2>
+          <ol>
+            {blocks.map((b, i) => (
+              <li key={ids(i)}>
+                <a href={`#${ids(i)}`} className="pt-hov">
+                  <span className="psp-no">{String(i + 1).padStart(2, "0")}</span>
+                  <span className="psp-toc-t">{b.heading}</span>
+                </a>
+              </li>
+            ))}
+          </ol>
+        </nav>
+
+        {blocks.map((b, i) => {
+          const ph = rest[i];
+          return (
+            <section key={ids(i)} id={ids(i)} className="psp-sec io" aria-labelledby={`${ids(i)}-h`}>
+              <h2 id={`${ids(i)}-h`} className="psp-h2">
+                <span className="psp-no">{String(i + 1).padStart(2, "0")}</span>
+                <span>{b.heading}</span>
+              </h2>
+              {b.sub ? <p className="pta-sub">{b.sub}</p> : null}
+              {b.body.map((t, j) => (
+                <p key={j} className="psp-p">
+                  {t}
+                </p>
+              ))}
+              {b.specs.length > 0 ? (
+                <dl className="pta-specs">
+                  {b.specs.map((x) => (
+                    <div key={x.k}>
+                      <dt>{x.k}</dt>
+                      <dd>{x.v}</dd>
+                    </div>
+                  ))}
+                </dl>
+              ) : null}
+              {ph ? <Fig ph={ph} /> : null}
+            </section>
+          );
+        })}
+
+        {st?.quote ? (
+          <blockquote className="psp-closing io">
+            {st.quote}
+            {st.quoteCite ? <cite className="pta-cite">{st.quoteCite}</cite> : null}
+          </blockquote>
+        ) : null}
+        {st && st.closing.length > 0
+          ? st.closing.map((t, i) => (
+              <p key={i} className="psp-closing io">
+                {t}
+              </p>
+            ))
+          : null}
+
+        {d.menus.length > 0 && !blocks.some((b) => /メニュー/.test(b.heading)) ? (
+          <section className="psp-sec io" aria-labelledby="pta-menu-h">
+            <h2 id="pta-menu-h" className="psp-h2">
+              <span>メニュー</span>
+            </h2>
+            <ul className="pta-menus">
+              {d.menus.map((m, i) => (
+                <li key={`${m.name}-${i}`}>
+                  {m.name}
+                  {m.minutes ? <span>　{m.minutes}分</span> : null}
+                </li>
+              ))}
+            </ul>
+          </section>
+        ) : null}
+
+        <ShopBox d={d} />
+      </div>
+
+      {rel}
+      <div className="psp-in">
+        <Back d={d} />
+      </div>
+    </article>
   );
 }
 
@@ -240,9 +322,8 @@ export function petArticlePage() {
       const d = await load((await params).id);
       if (!d) notFound();
       const v = getVertical("pet");
-      const L = ptLinks("live");
       return (
-        <Shell page="shop" mode="live">
+        <Shell page="article" mode="live">
           <JsonLd
             data={breadcrumb([
               { name: "マチノワ", url: absUrl("/") },
@@ -262,17 +343,7 @@ export function petArticlePage() {
               about: { "@type": "LocalBusiness", name: d.shop.name, address: d.address },
             }}
           />
-          <div className="lsp-bg">
-            <div className="lsp pta">
-              <Crumb d={d} />
-              <Hero d={d} />
-              <div className="lsp-body">
-                <Body d={d} />
-                <ShopBand d={d} />
-                <Related d={d} />
-              </div>
-            </div>
-          </div>
+          <ArticleBody d={d} rel={<Related d={d} />} />
         </Shell>
       );
     },

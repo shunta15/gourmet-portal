@@ -1,76 +1,40 @@
-/* ペット 店の特集記事(本番 /pet/article/{店の ID})。【2026-10-26 試作】接頭辞 pta-。見本 記事.webp の見出し帯(ARTICLE の小さな字・明朝の大見出し・右に大きな写真)と、
-   店のページ(shop-live.css の lsp-)の部品を使う。デスクトップ(860px〜)は見本の px を calc(N * var(--u))、スマホ(〜859px)は縦積みで px。 */
+/* ペット 店の特集記事(本番 /pet/article/{店の ID})。【2026-10-28】ペットの特集の記事(../../special/special.css の psp-)と同じ作りで、写真・店の札・仕様の表だけを足す。接頭辞 pta-。色・書体は共通の --pt-*。 */
 
-.pta .pta-hero { position: relative; overflow: hidden; background: #efeae0; }
-.pta .pta-hero-ph img { display: block; width: 100%; height: 100%; object-fit: cover; }
-.pta .pta-hero-ph--none { display: grid; place-items: center; background: linear-gradient(160deg, #f3ece0 0%, #e6d9c6 100%); }
-.pta .pta-lab { margin: 0; font-family: var(--pt-ff-en); letter-spacing: 0.14em; color: #6a645c; }
-.pta .pta-h1 { margin: 0; font-family: var(--pt-ff-min); font-weight: 500; color: #26221e; overflow-wrap: anywhere; }
-.pta .pta-shopname { margin: 0; font-weight: 700; color: #2f2b27; }
-.pta .pta-shopname span { font-weight: 500; color: #6a645c; }
-.pta .pta-sub { margin: 0; font-weight: 500; color: #4f4943; }
-.pta .pta-btn { align-self: flex-start; }
-.pta .pta-menus ul { margin: 0; display: flex; flex-wrap: wrap; gap: 6px 10px; }
-.pta .pta-menus li { padding: 4px 12px; border-radius: 999px; background: #f3efe8; color: #4a4640; }
-.pta .pta-shop { display: grid; background: #fefefe; box-shadow: var(--lsp-shadow); }
-.pta .pta-shop-ph { overflow: hidden; background: #e7e1d6; }
-.pta .pta-shop-ph img { display: block; width: 100%; height: 100%; object-fit: cover; }
-.pta .pta-shop-ph--none { display: grid; place-items: center; background: linear-gradient(160deg, #f3ece0 0%, #e6d9c6 100%); }
-.pta .pta-shop-tx { display: flex; flex-direction: column; align-items: flex-start; }
-.pta .pta-shop-n { margin: 0; font-family: var(--pt-ff-min); font-weight: 500; color: #1f1d1a; overflow-wrap: anywhere; }
-.pta .pta-shop-a { margin: 0; color: #57524b; font-weight: 500; overflow-wrap: anywhere; }
-.pta .pta-shop-s { margin: 0; color: #7a756e; }
-.pta .pta-shop-s a { text-decoration: underline; text-underline-offset: 2px; }
-.pta .pta-rel-t { overflow-wrap: anywhere; display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 3; line-clamp: 3; overflow: hidden; white-space: normal; }
+.pta .pta-fig { margin: 0; border-radius: 10px; overflow: hidden; background: var(--pt-brown-bg); aspect-ratio: 16 / 9; }
+.pta .pta-fig img { display: block; width: 100%; height: 100%; object-fit: cover; }
+.pta .psp-sec .pta-fig { margin-top: 20px; }
+.pta .psp-body > .pta-fig { margin-bottom: 28px; }
+.pta .pta-lede { margin-bottom: 26px; }
+.pta .pta-lede .psp-p:first-child { margin-top: 0; }
+.pta .pta-sub { margin: 12px 0 0; font-size: 13px; line-height: 1.9; letter-spacing: 0.05em; color: var(--pt-mut); overflow-wrap: anywhere; }
+.pta .pta-specs { display: grid; gap: 0; margin: 18px 0 0; border-top: 1px solid var(--pt-line); }
+.pta .pta-specs > div { display: grid; grid-template-columns: 8em minmax(0, 1fr); gap: 4px 14px; padding: 10px 2px; border-bottom: 1px solid var(--pt-line); font-size: 14px; line-height: 1.8; letter-spacing: 0.03em; }
+.pta .pta-specs dt { font-weight: 700; color: var(--pt-brown-d); }
+.pta .pta-specs dd { margin: 0; color: #3a342e; overflow-wrap: anywhere; }
+.pta .pta-cite { display: block; margin-top: 8px; font-family: inherit; font-style: normal; font-size: 12.5px; letter-spacing: 0.06em; color: var(--pt-mut); }
+.pta .pta-menus { display: flex; flex-wrap: wrap; gap: 8px 10px; margin: 16px 0 0; }
+.pta .pta-menus li { padding: 4px 14px; border-radius: 999px; background: var(--pt-brown-bg); color: var(--pt-brown-d); font-size: 13.5px; line-height: 1.8; letter-spacing: 0.04em; }
+
+.pta .pta-shop-box { margin-top: 18px; padding: 20px 20px 18px; background: var(--pt-sec); border: 1px solid var(--pt-line); border-radius: 10px; }
+.pta .pta-shop-n { margin: 0; font-family: var(--pt-ff-min); font-weight: 700; font-size: 20px; line-height: 1.6; letter-spacing: 0.06em; color: #26221e; overflow-wrap: anywhere; }
+.pta .pta-shop-a { display: flex; flex-wrap: wrap; align-items: center; gap: 4px 10px; margin: 6px 0 0; font-size: 13.5px; line-height: 1.8; letter-spacing: 0.04em; color: var(--pt-ink2); overflow-wrap: anywhere; }
+.pta .pta-shop-btns { display: flex; flex-wrap: wrap; gap: 10px 12px; margin-top: 18px; }
+.pta .pta-src { margin-top: 20px; padding-top: 14px; border-top: 1px solid var(--pt-line); }
+.pta .pta-src .psp-stores-h { margin-bottom: 6px; }
+.pta .pta-src ul { display: flex; flex-wrap: wrap; gap: 2px 18px; }
+.pta .pta-src a { font-size: 13px; line-height: 2; letter-spacing: 0.03em; color: var(--pt-brown-d); text-decoration: underline; text-underline-offset: 3px; }
+.pta .pta-src-d { margin: 6px 0 0; font-size: 12.5px; letter-spacing: 0.06em; color: var(--pt-mut); }
+.pta .psp-card-t { font-size: 16px; }
+.pta .psp-meta span + span::before { content: none; }
 
 @media (min-width: 860px) {
-  .pta .pta-hero { height: calc(168 * var(--u)); }
-  .pta .pta-hero-ph { position: absolute; right: 0; top: 0; bottom: 0; width: 56%; -webkit-mask-image: linear-gradient(90deg, transparent 0, #000 22%); mask-image: linear-gradient(90deg, transparent 0, #000 22%); }
-  .pta .pta-hero-tx { position: relative; z-index: 3; width: 56%; height: 100%; padding: calc(24 * var(--u)) 0 0 calc(55 * var(--u)); display: flex; flex-direction: column; gap: calc(7 * var(--u)); }
-  .pta .pta-lab { font-size: calc(8.5 * var(--u)); line-height: calc(12 * var(--u)); }
-  .pta .pta-h1--l { font-size: calc(22 * var(--u)); line-height: calc(32 * var(--u)); letter-spacing: 0.1em; }
-  .pta .pta-h1--m { font-size: calc(17 * var(--u)); line-height: calc(26 * var(--u)); letter-spacing: 0.08em; }
-  .pta .pta-h1--s { font-size: calc(13.5 * var(--u)); line-height: calc(21 * var(--u)); letter-spacing: 0.06em; }
-  .pta .pta-shopname { font-size: calc(8.6 * var(--u)); line-height: calc(14 * var(--u)); letter-spacing: 0.12em; }
-  .pta .pta-sub { font-size: calc(8.4 * var(--u)); line-height: calc(14 * var(--u)); letter-spacing: 0.1em; }
-  .pta .pta-hero .pta-btn { margin-top: auto; margin-bottom: calc(18 * var(--u)); min-width: calc(150 * var(--u)); height: calc(26 * var(--u)); padding: 0 calc(30 * var(--u)) 0 calc(18 * var(--u)); font-size: calc(7.8 * var(--u)); }
-  .pta .pta-hero .pta-btn svg, .pta .pta-shop .pta-btn svg { width: calc(8 * var(--u)); height: auto; right: calc(13 * var(--u)); }
-  .pta .pta-hero--none .pta-hero-tx { width: 100%; }
-  .pta .lsp-body { padding-bottom: calc(30 * var(--u)); }
-  .pta .pta-art { margin-top: calc(14 * var(--u)); }
-  .pta .lsp-art-lede { margin-bottom: calc(4 * var(--u)); }
-  .pta .pta-menus { margin-top: calc(16 * var(--u)); padding-top: calc(14 * var(--u)); border-top: 1px solid #ece9e4; }
-  .pta .pta-menus li { font-size: calc(8.2 * var(--u)); line-height: calc(14 * var(--u)); letter-spacing: 0.06em; }
-  .pta .pta-shop { grid-template-columns: calc(250 * var(--u)) 1fr; margin: calc(14 * var(--u)) 0 0 calc(37 * var(--u)); width: calc(876 * var(--u)); border-radius: calc(7 * var(--u)); overflow: hidden; }
-  .pta .pta-shop-ph { position: relative; min-height: calc(130 * var(--u)); }
-  .pta .pta-shop-ph img { position: absolute; inset: 0; }
-  .pta .pta-shop-ph .lsp-nophoto-paw { width: 20%; height: auto; opacity: 0.55; color: #bcab94; }
-  .pta .pta-shop-tx { padding: calc(18 * var(--u)) calc(24 * var(--u)) calc(20 * var(--u)); gap: calc(6 * var(--u)); }
-  .pta .pta-shop-n { font-size: calc(14 * var(--u)); line-height: calc(21 * var(--u)); letter-spacing: 0.08em; }
-  .pta .pta-shop-a { font-size: calc(8.4 * var(--u)); line-height: calc(14 * var(--u)); letter-spacing: 0.08em; }
-  .pta .pta-shop-s { font-size: calc(7.4 * var(--u)); line-height: calc(12 * var(--u)); letter-spacing: 0.06em; }
-  .pta .pta-shop .pta-btn { margin-top: calc(6 * var(--u)); min-width: calc(150 * var(--u)); height: calc(26 * var(--u)); padding: 0 calc(30 * var(--u)) 0 calc(18 * var(--u)); font-size: calc(7.8 * var(--u)); }
-  .pta .pta-rel { margin-top: calc(14 * var(--u)); }
+  .pta .pta-shop-box { padding: 26px 30px 22px; }
+  .pta .pta-shop-n { font-size: 22px; }
+  .pta .psp-card-t { font-size: 19px; }
+  .pta .pta-specs > div { font-size: 14.5px; }
 }
-
 @media (max-width: 859px) {
-  .pta .pta-hero { display: flex; flex-direction: column-reverse; }
-  .pta .pta-hero-ph { aspect-ratio: 16 / 9; width: 100%; }
-  .pta .pta-hero-ph--none .lsp-nophoto-paw { width: 18%; height: auto; opacity: 0.55; color: #bcab94; }
-  .pta .pta-hero-tx { padding: 18px 16px 20px; display: flex; flex-direction: column; gap: 8px; }
-  .pta .pta-lab { font-size: 11px; }
-  .pta .pta-h1 { font-size: 22px; line-height: 1.55; letter-spacing: 0.06em; }
-  .pta .pta-shopname { font-size: 12.5px; line-height: 1.7; letter-spacing: 0.06em; }
-  .pta .pta-sub { font-size: 12.5px; line-height: 1.8; }
-  .pta .pta-hero .pta-btn { margin-top: 6px; }
-  .pta .pta-art { margin: 12px 16px 0; padding: 20px 16px 22px; }
-  .pta .pta-menus { margin-top: 18px; padding-top: 14px; border-top: 1px solid #ece9e4; }
-  .pta .pta-menus li { font-size: 12.5px; }
-  .pta .pta-shop { margin: 12px 16px 0; border-radius: 12px; overflow: hidden; }
-  .pta .pta-shop-ph { aspect-ratio: 16 / 9; }
-  .pta .pta-shop-ph .lsp-nophoto-paw { width: 16%; height: auto; opacity: 0.55; color: #bcab94; }
-  .pta .pta-shop-tx { padding: 16px 16px 18px; gap: 8px; }
-  .pta .pta-shop-n { font-size: 19px; line-height: 1.5; letter-spacing: 0.06em; }
-  .pta .pta-shop-a { font-size: 12.5px; line-height: 1.7; }
-  .pta .pta-shop-s { font-size: 11.5px; line-height: 1.7; }
+  .pta .pta-specs > div { grid-template-columns: 1fr; gap: 0; }
+  .pta .pta-shop-btns .psp-btn { width: 100%; }
 }
+.pta .pta-sr, .pta .lsp-sr { position: absolute; width: 1px; height: 1px; margin: -1px; padding: 0; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; border: 0; }

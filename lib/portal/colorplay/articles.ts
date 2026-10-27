@@ -12,6 +12,7 @@ import { getGeneratedFeatures, type PlaceFeature } from "@/lib/places/features";
 import { getGeneratedPlaces } from "@/lib/places/newVerticals";
 import { isUsableImage } from "@/lib/portal/photoRules";
 import { loadDetail, loadShops } from "./data";
+import { shopLinks, type ShopLink } from "@/lib/portal/sns";
 import type { CpSite } from "./site";
 import { cleanLine, cleanParagraphs, firstSentence } from "./text";
 import type { CpPhoto, CpShop } from "./types";
@@ -55,6 +56,8 @@ export type CpArticle = {
   menus: string[];
   sources: { label: string; url: string }[];
   checkedAt?: string;
+  /** 公式サイト・予約ページのリンク(店のデータにあるものだけ。電話・地図は店のページ) */
+  links: ShopLink[];
   /** メタデータの説明文 */
   description: string;
   /** ほかの記事(同じ種類・同じ県を先に) */
@@ -206,6 +209,7 @@ export async function loadArticle(site: CpSite, id: string): Promise<CpArticle |
     menus: d.menus.map((m) => m.name),
     sources,
     checkedAt,
+    links: shopLinks({ reservationUrl: d.place.reservationUrl, website: d.place.website ?? d.place.url }).filter((l) => l.kind === "website" || l.kind === "reserve"),
     description,
     more,
   };

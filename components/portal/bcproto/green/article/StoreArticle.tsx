@@ -53,6 +53,7 @@ export default function StoreArticle({ shop, more }: { shop: BsShop; more: BsArt
   const hours = shop.facts.find((f) => f.k === "営業時間")?.v[0] ?? "";
   const closed = shop.facts.find((f) => f.k === "定休日")?.v[0] ?? "";
   const toShop = shopHref(shop.id);
+  const officialLinks = shop.links.filter((l) => (l.kind === "website" || l.kind === "reserve") && httpOnly(l.href));
 
   const points = [
     { id: "a-intro", no: "序", title: "はじめに", tab: "はじめに" },
@@ -124,6 +125,13 @@ export default function StoreArticle({ shop, more }: { shop: BsShop; more: BsArt
               店舗詳細を見る
               <Arrow />
             </Link>
+            {officialLinks.map((l) => (
+              <a key={l.kind} href={l.href} target="_blank" rel="noopener noreferrer" className="gr-btn gr-btn--line gr-press">
+                {l.kind === "reserve" ? "予約ページを開く" : "公式サイトを見る"}
+                <Arrow />
+                <span className="gr-sr">(別のタブで開きます)</span>
+              </a>
+            ))}
           </div>
           <p className="ar-small">営業時間や電話・予約・地図は、店舗詳細のページにまとめています。</p>
         </div>
@@ -195,6 +203,13 @@ export default function StoreArticle({ shop, more }: { shop: BsShop; more: BsArt
                   店舗詳細を見る
                   <Arrow />
                 </Link>
+                {officialLinks.map((l) => (
+                  <a key={l.kind} href={l.href} target="_blank" rel="noopener noreferrer" className="gr-btn gr-btn--line gr-press">
+                    {l.kind === "reserve" ? "予約ページを開く" : "公式サイトを見る"}
+                    <Arrow />
+                    <span className="gr-sr">(別のタブで開きます)</span>
+                  </a>
+                ))}
               </div>
             </div>
           </section>

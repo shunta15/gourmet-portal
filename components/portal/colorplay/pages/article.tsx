@@ -15,6 +15,7 @@ import JsonLd from "@/components/portal/JsonLd";
 import Header from "../Header";
 import Footer from "../Footer";
 import { ArticleMini } from "../ArticleCards";
+import CpLinks from "../CpLinks";
 import { IconArrow, IconChevron, IconPin } from "@/components/portal/bproto/colorplay/Icons";
 import { articleHref, loadArticle, loadArticleItems, type CpArticle, type CpArticleSection } from "@/lib/portal/colorplay/articles";
 import { shopHref } from "@/lib/portal/colorplay/search";
@@ -188,6 +189,7 @@ function Body({ site, a }: { site: CpSite; a: CpArticle }) {
               <div className="cp-cta art-end-cta">
                 <Link href={shopUrl} className="cp-red">店舗詳細を見る<IconArrow size={18} /></Link>
               </div>
+              {a.links.length > 0 && <div className="art-end-links"><CpLinks links={a.links} storeId={item.id} page={articleHref(site, item.id)} variant="row" /></div>}
             </div>
             {a.sources.length > 0 && (
               <div className="sh-src">
@@ -207,7 +209,10 @@ function Body({ site, a }: { site: CpSite; a: CpArticle }) {
           <section className="cp-wrap cp-more-shops" aria-labelledby="art-more-h">
             <h2 className="cp-h2 cp-rv" id="art-more-h">ほかの記事</h2>
             <div className="cp-minis">{a.more.map((x, i) => (<ArticleMini key={x.id} site={site} a={x} i={i} />))}</div>
-            <p className="cp-more"><Link href={shopListHref(site)}>店舗紹介の一覧を見る</Link></p>
+            <p className="cp-more cp-more-pair">
+              <Link href={shopListHref(site)}>店舗紹介を見る</Link>
+              <Link href={`${site.base}/special`}>特集の一覧を見る</Link>
+            </p>
           </section>
         )}
       </main>
