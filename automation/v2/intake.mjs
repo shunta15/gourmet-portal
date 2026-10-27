@@ -27,8 +27,8 @@ export const SHEET_ID = "1ap-xd7DaW0dd8L11aoA7GAWltN0h7jGawyadtczwQgk";
 
 export const TABS = {
   Linkateアポ: { ledger: "Linkate記事台帳", cols: { name: 1, phone: 2, address: 3, url: 4, industry: 5, date: 6 } },
-  // 2026-10-27 オーナーがシートの列を変更: A 日時・B 店名・C 電話・D 郵便番号・住所・E GoogleURL・F 業種・G ステータス・H 備考・I 特集記事
-  トリニティアポ: { ledger: "トリニティ記事台帳", cols: { date: 0, name: 1, phone: 2, address: 3, url: 4, industry: 5, status: 6 } },
+  // 2026-10-28 オーナーがシートの列を変更: A 日時・B 店名・C 電話・D 郵便番号・住所・E URL(店名+住所の Google 検索。q= に店名・住所が入る)・F GoogleURL(マップ検索)・G 業種・H ステータス・I 備考(個人情報・読まない)・J 特集記事
+  トリニティアポ: { ledger: "トリニティ記事台帳", cols: { date: 0, name: 1, phone: 2, address: 3, search: 4, url: 5, industry: 6, status: 7 }, range: "A1:H3000" },
 };
 
 export const today = () => new Date(Date.now() + 9 * 3600e3).toISOString().slice(0, 10);
@@ -67,6 +67,23 @@ export function classify(tab, name, industryRaw, map = loadMap()) {
   return { vertical: null, source: "要確認", reason: `業種の欄「${ind || "空"}」を振り分け表のルールで決められない` };
 }
 
+/** E 列(店名+住所の Google 検索 URL)の q= を取り出す。{ q, address } 。address は q の中の都道府県から後ろ(電話・余計な語は落とす)。無ければ null */
+export function searchInfo(u) {
+  u = String(u ?? "").trim();
+  const m = /[?&]q=([^&]*)/.exec(u);
+  if (!m) return { q: null, address: null };
+  let q = "";
+  try { q = decodeURIComponent(m[1].replace(/\+/g, " ")); } catch { q = m[1]; }
+  q = q.replace(/\s+/g, " ").trim();
+  const pm = PREF_RE.exec(q);
+  let address = null;
+  if (pm) {
+    address = q.slice(pm.index).replace(/\s*(電話番号|電話|TEL)\s*$/i, "").replace(/\s+0\d{1,4}-\d{1,4}-\d{3,4}\s*$/, "").trim() || null;
+  }
+  return { q, address };
+}
+const PREF_RE = /(北海道|青森県|岩手県|宮城県|秋田県|山形県|福島県|茨城県|栃木県|群馬県|埼玉県|千葉県|東京都|神奈川県|新潟県|富山県|石川県|福井県|山梨県|長野県|岐阜県|静岡県|愛知県|三重県|滋賀県|京都府|大阪府|兵庫県|奈良県|和歌山県|鳥取県|島根県|岡山県|広島県|山口県|徳島県|香川県|愛媛県|高知県|福岡県|佐賀県|長崎県|熊本県|大分県|宮崎県|鹿児島県|沖縄県)/;
+
 export function urlKind(u) {
   u = String(u ?? "").trim();
   if (!u) return "empty";
@@ -89,7 +106,7 @@ export async function readSheets() {
   const out = {};
   for (const [tab, def] of Object.entries(TABS)) {
     // 備考(Linkate は G・トリニティは H 以降)は読まない
-    const apoRange = "A1:G3000"; // トリニティは 2026-10-27 から G=ステータスまで(H=備考は読まない)
+    const apoRange = def.range || "A1:G3000"; // トリニティは H=ステータスまで(I=備考は読まない)
     const [apo, led] = await Promise.all([
       sheets.spreadsheets.values.get({ spreadsheetId: SHEET_ID, range: `'${tab}'!${apoRange}` }),
       sheets.spreadsheets.values.get({ spreadsheetId: SHEET_ID, range: `'${def.ledger}'!A1:D3000` }),
@@ -133,13 +150,18 @@ export function buildCandidates(raw, { includeRegistered = false } = {}) {
       const cls = classify(tab, name, industryRaw, map);
       const url = String(r[c.url] ?? "").trim();
       const phone = String(r[c.phone] ?? "").trim();
+      // トリニティの D 列は「郵便番号・住所」。先頭の郵便番号(〒123-4567 / 123-4567)は落として住所だけにする
+      const addrD = c.address != null ? String(r[c.address] ?? "").replace(/^\s*〒?\s*\d{3}[-ー－]?\d{4}\s*/, "").trim() || null : null;
+      // E 列(店名+住所の Google 検索 URL・オーナーが店を調べて書いた)の q= から住所を取る。D があれば D が優先
+      const sInfo = c.search != null ? searchInfo(String(r[c.search] ?? "")) : { q: null, address: null };
       const cand = {
         tab,
         row: rowNo,
         name,
         phone,
-        // トリニティの D 列は「郵便番号・住所」。先頭の郵便番号(〒123-4567 / 123-4567)は落として住所だけにする
-        address: c.address != null ? String(r[c.address] ?? "").replace(/^\s*〒?\s*\d{3}[-ー－]?\d{4}\s*/, "").trim() || null : null,
+        address: addrD || sInfo.address || null,
+        addressSource: addrD ? "D列" : sInfo.address ? "E列(検索URLのq=)" : null,
+        searchQ: sInfo.q,
         ledgerNote: ledNotes.get(name) || null,
         url,
         urlKind: urlKind(url),

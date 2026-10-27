@@ -8005,6 +8005,138 @@
         ],
         "checkedAt": "2026-10-28"
       }
+    },
+    {
+      "id": "be0109",
+      "vertical": "beauty",
+      "category": "eyelash",
+      "name": "アイラッシュ&ネイルサロン アイリス",
+      "pref": "osaka",
+      "cityName": "大阪市平野区",
+      "address": "大阪府大阪市平野区平野西6丁目3-22 カサ・エルドラード弐番館",
+      "lat": 34.6183043,
+      "lng": 135.5484051,
+      "phone": "06-6700-3022",
+      "mapUrl": "https://maps.google.com/?cid=2929045056350726918",
+      "image": "/_portal/vshops/tri-beauty-74/g01.jpg",
+      "images": [
+        "/_portal/vshops/tri-beauty-74/g01.jpg",
+        "/_portal/vshops/tri-beauty-74/g02.jpg",
+        "/_portal/vshops/tri-beauty-74/g03.jpg",
+        "/_portal/vshops/tri-beauty-74/g04.jpg",
+        "/_portal/vshops/tri-beauty-74/g05.jpg",
+        "/_portal/vshops/tri-beauty-74/g06.jpg",
+        "/_portal/vshops/tri-beauty-74/g07.jpg",
+        "/_portal/vshops/tri-beauty-74/g08.jpg",
+        "/_portal/vshops/tri-beauty-74/g09.jpg",
+        "/_portal/vshops/tri-beauty-74/g10.jpg"
+      ],
+      "photos": [
+        {
+          "path": "/_portal/vshops/tri-beauty-74/g01.jpg",
+          "what": "グリッターとラインストーンをあしらったネイルアート",
+          "width": 879,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-beauty-74/g02.jpg",
+          "what": "ピンクと白を基調にしたドットのネイルアート",
+          "width": 1015,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-beauty-74/g03.jpg",
+          "what": "まつげエクステを施した目元のアップ",
+          "width": 1200,
+          "height": 960
+        },
+        {
+          "path": "/_portal/vshops/tri-beauty-74/g04.jpg",
+          "what": "シルバーと水玉模様のフットネイル",
+          "width": 834,
+          "height": 687
+        },
+        {
+          "path": "/_portal/vshops/tri-beauty-74/g05.jpg",
+          "what": "ボリュームのあるまつげエクステの目元",
+          "width": 1200,
+          "height": 816
+        },
+        {
+          "path": "/_portal/vshops/tri-beauty-74/g06.jpg",
+          "what": "グレーのグラデーションネイル",
+          "width": 971,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-beauty-74/g07.jpg",
+          "what": "ベージュのシンプルなネイル",
+          "width": 938,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-beauty-74/g08.jpg",
+          "what": "指ごとに異なる柄を施したネイルアート",
+          "width": 1000,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-beauty-74/g09.jpg",
+          "what": "赤いフレンチネイル",
+          "width": 899,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-beauty-74/g10.jpg",
+          "what": "白い内装にチェアとデスクが並ぶ店内",
+          "kind": "common",
+          "width": 1200,
+          "height": 900
+        }
+      ],
+      "tags": [],
+      "article": {
+        "headline": "大阪市平野区平野西にある、LEDエクステ専門店のアイラッシュ&ネイルサロン。地下鉄谷町線「平野駅」６番出口が最寄り駅。",
+        "lede": "大阪市にある「アイラッシュ&ネイルサロン アイリス」です。LEDエクステを専門にしたまつげとネイルの店です。最寄り駅は地下鉄谷町線「平野駅」で、６番出口が近くにあります。",
+        "sections": [
+          {
+            "heading": "アクセス",
+            "body": "最寄り駅は地下鉄谷町線「平野駅」６番出口です。出口を出て内環を教育大付属幼稚園の方向に進み、２つ目の信号の角にあるローソンの並びにあります。住所は大阪市平野区平野西６丁目３−２２、カサ・エルドラード弐番館です。"
+          },
+          {
+            "heading": "メニューと店の特色",
+            "body": "ネイルとまつげの施術を扱うLEDエクステ専門店です。メニューにはワンカラーネイル、LEDマツエク、パリジェンヌラッシュリフト、美眉スタイリング、まつ毛パーマがあります。席数は総数6で、女性専用の店です。"
+          }
+        ],
+        "menus": [
+          {
+            "name": "ワンカラーネイル"
+          },
+          {
+            "name": "LEDマツエク"
+          },
+          {
+            "name": "パリジェンヌラッシュリフト"
+          },
+          {
+            "name": "美眉スタイリング"
+          },
+          {
+            "name": "まつ毛パーマ"
+          }
+        ],
+        "sources": [
+          {
+            "label": "掲載ページ(ホットペッパービューティー)",
+            "url": "https://beauty.hotpepper.jp/kr/slnH000285287/"
+          },
+          {
+            "label": "Google マップ",
+            "url": "https://maps.google.com/?cid=2929045056350726918"
+          }
+        ],
+        "checkedAt": "2026-10-28"
+      }
     }
   ]
 }

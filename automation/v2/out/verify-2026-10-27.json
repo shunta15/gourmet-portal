@@ -2,7 +2,7 @@
   "meta": {
     "date": "2026-10-25",
     "startedAt": "2026-10-24T17:56:30.089Z",
-    "updatedAt": "2026-10-27T10:34:05.301Z",
+    "updatedAt": "2026-10-27T16:42:34.622Z",
     "decisionsAppliedAt": "2026-10-27T02:45:40.958Z",
     "decisionsNote": "行 80〜201 の「要確認」にオーナーの決定(2026-10-26)を反映。確定にした店は decision に D1/D2/D3 を記録、元の判定は verdictOriginal"
   },
@@ -2698,12 +2698,11 @@
       "vertical": "グルメ",
       "industryRaw": "飲食",
       "sheetPhone": "06-4791-2004",
-      "sheetUrl": "https://www.google.com/search?q=%E9%AE%AE%E9%AD%9A%E6%96%99%E7%90%86+%E8%8B%A5%E9%B0%A4%0D%0A&sca_esv=9b409f63e8a1ac33&biw=1536&bih=703&sxsrf=APpeQnu49XIRBiFAVNAIr9J9U0lr4k21kg%3A1792048885257&ei=9X7QapiDD9Tn2roPvMfvyAM&uact=5&oq=%E9%AE%AE%E9%AD%9A%E6%96%99%E7%90%86+%E8%8B%A5%E9%B0%A4%0D%0A&gs_lp=Egxnd3Mtd2l6LXNlcnAiFOmurumtmuaWmeeQhiDoi6XpsKQKMgoQABhHGNYEGLADMgoQABhHGNYEGLADMgoQABhHGNYEGLADSNYDUNABWNABcAJ4AZABAJgBAKABAKoBALgBA8gBAPgBAvgBAZgCAqACDZgDAIgGAZAGA5IHATKgBwCyBwC4BwDCBwUwLjEuMcgHCIAIAQ&sclient=gws-wiz-serp",
-      "urlKind": "search",
+      "sheetUrl": "https://www.google.com/maps/search/?api=1&query=%E8%8B%A5%E9%B0%A4%2006-4791-2004%20",
+      "urlKind": "mapsApi",
       "route": "電話・店名で検索",
       "queries": [
         "06-4791-2004",
-        "鮮魚料理 若鰤",
         "若鰤"
       ],
       "candidates": [
@@ -2726,19 +2725,9 @@
           "phoneMatch": true,
           "nameRelation": "different",
           "addressLevel": null
-        },
-        {
-          "name": "鮮魚料理 若鰤",
-          "address": "大阪府大阪市中央区谷町２丁目８−４",
-          "phone": "06-4791-2004",
-          "cid": "10836096327672804884",
-          "url": "https://www.google.com/maps/place/%E9%AE%AE%E9%AD%9A%E6%96%99%E7%90%86+%E8%8B%A5%E9%B0%A4/@34.6866894,135.5170746,17z/data=!3m1!4b1!4m6!3m5!1s0x6000e72f366ae7d7:0x96618c32aada3614!8m2!3d34.6866894!4d135.5170746!16s%2Fg%2F1tj57nxp",
-          "phoneMatch": true,
-          "nameRelation": "different",
-          "addressLevel": null
         }
       ],
-      "verdict": "要確認",
+      "verdict": "確認済み",
       "cid": "10836096327672804884",
       "mapName": "鮮魚料理 若鰤",
       "mapAddress": "大阪府大阪市中央区谷町２丁目８−４",
@@ -2751,18 +2740,21 @@
         "nameRelation": "different",
         "addressLevel": null,
         "addressDetail": null,
-        "addressSource": null
+        "addressSource": null,
+        "clues": [
+          "E2: E 列の店名「鮮魚料理 若鰤」がマップの店名と同じ・シートの電話がマップの電話と一致"
+        ]
       },
-      "reason": "電話は一致したが店名が合わない(一方の店名が他方を含む短い名前)。電話が一致／店名: different(シート「若鰤」/ マップ「鮮魚料理 若鰤」)",
-      "fetchedAt": "2026-10-24T19:24:10.429Z",
-      "kgmidHint": null,
+      "reason": "オーナー 2026-10-28(E 列=オーナーが調べた店名+住所を手がかりにしてよい・電話のちがいは可): E 列の店名「鮮魚料理 若鰤」がマップの店名と同じ・シートの電話がマップの電話と一致(第1段の元の判定: 電話は一致したが店名が合わない(一方の店名が他方を含む短い名前)。電話が一致／店名: different(シート「若鰤」/ マップ「鮮魚料理 若鰤」))",
+      "fetchedAt": "2026-10-27T16:33:36.387Z",
       "statusSignals": [],
-      "seconds": 22,
-      "decisionReview": {
-        "at": "2026-10-27",
-        "result": "対象外(作らない)",
-        "why": "電話は一致・住所は照合できず(シートに住所なし)",
-        "by": "オーナー 2026-10-26「OK進めていいよ」/ 2026-10-27「50〜79行目も同じ決まりで」"
+      "seconds": 14,
+      "verdictOriginal": "要確認",
+      "reasonOriginal": "電話は一致したが店名が合わない(一方の店名が他方を含む短い名前)。電話が一致／店名: different(シート「若鰤」/ マップ「鮮魚料理 若鰤」)",
+      "decisionE": {
+        "rule": "E2",
+        "label": "E 列の店名「鮮魚料理 若鰤」がマップの店名と同じ・シートの電話がマップの電話と一致",
+        "by": "オーナー 2026-10-28(E 列=オーナーが調べた店名+住所を手がかりにしてよい・電話のちがいは可)"
       }
     },
     "トリニティアポ:59": {
@@ -3132,35 +3124,13 @@
       "vertical": "グルメ",
       "industryRaw": "飲食",
       "sheetPhone": "070-1073-6339",
-      "sheetUrl": "https://www.google.com/search?q=Cocktall+Bar+Pulsar+%E3%80%92514-0027+%E4%B8%89%E9%87%8D%E7%9C%8C%E6%B4%A5%E5%B8%82%E5%A4%A7%E9%96%80%EF%BC%92%EF%BC%92%E2%88%92%EF%BC%91%EF%BC%97+%E7%AC%AC%E4%BA%8C%E3%82%A2%E3%83%BC%E3%83%90%E3%83%B3%E3%83%95%E3%83%A9%E3%83%83%E3%83%88%E3%83%93%E3%83%AB+2%E9%9A%8E%E5%8C%97&oq=Cocktall+Bar+Pulsar%09%E3%80%92514-0027+%E4%B8%89%E9%87%8D%E7%9C%8C%E6%B4%A5%E5%B8%82%E5%A4%A7%E9%96%80%EF%BC%92%EF%BC%92%E2%88%92%EF%BC%91%EF%BC%97+%E7%AC%AC%E4%BA%8C%E3%82%A2%E3%83%BC%E3%83%90%E3%83%B3%E3%83%95%E3%83%A9%E3%83%83%E3%83%88%E3%83%93%E3%83%AB+2%E9%9A%8E%E5%8C%97&gs_lcrp=EgZjaHJvbWUyBggAEEUYOTIHCAEQABjvBTIHCAIQABjvBTIHCAMQABjvBTIKCAQQABiiBBiJBdIBBzMxMmowajmoAgawAgHxBSRDkZKeDX8E&sourceid=chrome&source=chrome.ob&ie=UTF-8",
-      "urlKind": "search",
+      "sheetUrl": "https://www.google.com/maps/search/?api=1&query=Cocktall%20Bar%20Pulsar%20070-1073-6339%20",
+      "urlKind": "mapsApi",
       "route": "電話・店名で検索",
       "queries": [
-        "070-1073-6339",
-        "Cocktall Bar Pulsar 〒514-0027 三重県津市大門22−17 第二アーバンフラットビル 2階北",
-        "Cocktall Bar Pulsar"
+        "070-1073-6339"
       ],
       "candidates": [
-        {
-          "name": "cocktail bar pulsar",
-          "address": "三重県津市大門２２−１７ 第二アーバンフラットビル 2階北",
-          "phone": "070-1073-6339",
-          "cid": "2062324525844063548",
-          "url": "https://www.google.com/maps/place/cocktail+bar+pulsar/@34.7202843,136.5121585,17z/data=!3m1!4b1!4m6!3m5!1s0x60040d909d5d1d95:0x1c9ed93ac682e53c!8m2!3d34.7202843!4d136.5121585!16s%2Fg%2F11jz4dv1sy",
-          "phoneMatch": true,
-          "nameRelation": "different",
-          "addressLevel": "exact"
-        },
-        {
-          "name": "cocktail bar pulsar",
-          "address": "三重県津市大門２２−１７ 第二アーバンフラットビル 2階北",
-          "phone": "070-1073-6339",
-          "cid": "2062324525844063548",
-          "url": "https://www.google.com/maps/place/cocktail+bar+pulsar/@34.7202843,136.5121585,17z/data=!3m1!4b1!4m6!3m5!1s0x60040d909d5d1d95:0x1c9ed93ac682e53c!8m2!3d34.7202843!4d136.5121585!16s%2Fg%2F11jz4dv1sy",
-          "phoneMatch": true,
-          "nameRelation": "different",
-          "addressLevel": "exact"
-        },
         {
           "name": "cocktail bar pulsar",
           "address": "三重県津市大門２２−１７ 第二アーバンフラットビル 2階北",
@@ -3185,21 +3155,18 @@
         "nameRelation": "different",
         "addressLevel": "exact",
         "addressDetail": "町名・番地とも一致",
-        "addressSource": "検索URL"
+        "addressSource": "シート",
+        "clues": [
+          "電話",
+          "住所(番地まで)"
+        ]
       },
-      "reason": "電話は一致したが店名が合わない(電話・住所とも一致なので店名の書き分けの可能性が高い)。電話が一致／店名: different(シート「Cocktall Bar Pulsar」/ マップ「cocktail bar pulsar」)／住所(検索URL): exact・町名・番地とも一致／画面に「臨時休業」の表示(臨時休業・一時休業。再開しているか確認)",
-      "fetchedAt": "2026-10-24T19:25:10.695Z",
-      "kgmidHint": null,
+      "reason": "同じ店と確認できたが、画面に「臨時休業」の表示(臨時休業・一時休業)。再開しているか確認。電話が一致／店名: different(シート「Cocktall Bar Pulsar」/ マップ「cocktail bar pulsar」)／住所(シート): exact・町名・番地とも一致",
+      "fetchedAt": "2026-10-27T16:33:50.309Z",
       "statusSignals": [
         "臨時休業"
       ],
-      "seconds": 22.6,
-      "decisionReview": {
-        "at": "2026-10-27",
-        "result": "対象外(作らない)",
-        "why": "電話は一致・住所は一致",
-        "by": "オーナー 2026-10-26「OK進めていいよ」/ 2026-10-27「50〜79行目も同じ決まりで」"
-      }
+      "seconds": 6.2
     },
     "トリニティアポ:67": {
       "tab": "トリニティアポ",
@@ -3525,8 +3492,8 @@
       "vertical": "ビューティー",
       "industryRaw": "美容",
       "sheetPhone": "090-8792-2292",
-      "sheetUrl": "https://www.google.com/search?q=%E3%82%A2%E3%82%A4%E3%83%A9%E3%83%83%E3%82%B7%E3%83%A5%E3%82%A2%E3%83%B3%E3%83%89%E3%83%8D%E3%82%A4%E3%83%AB%E3%82%B5%E3%83%AD%E3%83%B3Airis%E5%A4%A7%E9%98%AA%E5%BA%9C%E5%A4%A7%E9%98%AA%E5%B8%82%E5%B9%B3%E9%87%8E%E5%8C%BA%E5%B9%B3%E9%87%8E%E8%A5%BF6%E4%B8%81%E7%9B%AE3%E2%80%90%EF%BC%92%EF%BC%92&sca_esv=487308b4cea01bf4&biw=1232&bih=910&sxsrf=APpeQnuDcmHVjuCIc1kOiJdpJAqT-4JRlQ%3A1792128741221&ei=5bbRaqeADZ6Q1e8P4uC4yQ0&uact=5&oq=%E3%82%A2%E3%82%A4%E3%83%A9%E3%83%83%E3%82%B7%E3%83%A5%E3%82%A2%E3%83%B3%E3%83%89%E3%83%8D%E3%82%A4%E3%83%AB%E3%82%B5%E3%83%AD%E3%83%B3Airis%E5%A4%A7%E9%98%AA%E5%BA%9C%E5%A4%A7%E9%98%AA%E5%B8%82%E5%B9%B3%E9%87%8E%E5%8C%BA%E5%B9%B3%E9%87%8E%E8%A5%BF6%E4%B8%81%E7%9B%AE3%E2%80%90%EF%BC%92%EF%BC%92&gs_lp=Egxnd3Mtd2l6LXNlcnAiZ-OCouOCpOODqeODg-OCt-ODpeOCouODs-ODieODjeOCpOODq-OCteODreODs0Fpcmlz5aSn6Ziq5bqc5aSn6Ziq5biC5bmz6YeO5Yy65bmz6YeO6KW_NuS4geebrjPigJDvvJLvvJIyChAAGEcY1gQYsAMyChAAGEcY1gQYsAMyChAAGEcY1gQYsAMyChAAGEcY1gQYsAMyChAAGEcY1gQYsAMyChAAGEcY1gQYsAMyChAAGEcY1gQYsAMyChAAGEcY1gQYsAMyChAAGEcY1gQYsAMyChAAGEcY1gQYsANIiBBQ_ghY_ghwAXgBkAEAmAEAoAEAqgEAuAEDyAEA-AEC-AEBmAIBoAIDmAMAiAYBkAYKkgcBMaAHALIHALgHAMIHAzAuMcgHAoAIAQ&sclient=gws-wiz-serp",
-      "urlKind": "search",
+      "sheetUrl": "https://www.google.com/maps/search/?api=1&query=%E3%82%A2%E3%82%A4%E3%83%A9%E3%83%83%E3%82%B7%E3%83%A5%E3%82%A2%E3%83%B3%E3%83%89%E3%83%8D%E3%82%A4%E3%83%AB%E3%82%B5%E3%83%AD%E3%83%B3Airis%20090-8792-2292%20",
+      "urlKind": "mapsApi",
       "route": "電話・店名で検索",
       "queries": [
         "090-8792-2292",
@@ -3545,21 +3512,11 @@
           "addressLevel": "exact"
         },
         {
-          "name": "LYRA body&eye",
-          "address": "東京都大田区大森北１丁目１３−１３ ヤマ二ビル 3A",
-          "phone": "03-6809-9933",
-          "cid": "9072952395706304230",
-          "url": "https://www.google.com/maps/place/LYRA+body%26eye/data=!4m7!3m6!1s0x60186169109fa4a3:0x7de99a22221a86e6!8m2!3d35.585856!4d139.728592!16s%2Fg%2F11mw70rddr!19sChIJo6SfEGlhGGAR5oYaIiKa6X0",
-          "phoneMatch": false,
-          "nameRelation": "different",
-          "addressLevel": "none"
-        },
-        {
-          "name": "Nail salon LUMIERE (ネイルサロンルミエール)【目黒/白金店】",
-          "address": "東京都品川区上大崎２丁目１３−２０ 高砂ビル白金 ２Ｆ",
-          "phone": "03-4400-5665",
-          "cid": "6714284122553714396",
-          "url": "https://www.google.com/maps/place/Nail+salon+LUMIERE+%28%E3%83%8D%E3%82%A4%E3%83%AB%E3%82%B5%E3%83%AD%E3%83%B3%E3%83%AB%E3%83%9F%E3%82%A8%E3%83%BC%E3%83%AB%29%E3%80%90%E7%9B%AE%E9%BB%92%2F%E7%99%BD%E9%87%91%E5%BA%97%E3%80%91/data=!4m7!3m6!1s0x60188b94ad30a1af:0x5d2dedd5eddc06dc!8m2!3d35.635179!4d139.718758!16s%2Fg%2F11n9drhw5q!19sChIJr6EwrZSLGGAR3Abc7dXtLV0",
+          "name": "amii.川崎店",
+          "address": "神奈川県川崎市川崎区小川町１２−１４ 一ノ木 店舗",
+          "phone": "044-223-8177",
+          "cid": "3655957789817932448",
+          "url": "https://www.google.com/maps/place/amii.%E5%B7%9D%E5%B4%8E%E5%BA%97/data=!4m7!3m6!1s0x601861f7828455d7:0x32bc923d5feb8aa0!8m2!3d35.5272961!4d139.697712!16s%2Fg%2F11z8h45lw4!19sChIJ11WEgvdhGGARoIrrXz2SvDI",
           "phoneMatch": false,
           "nameRelation": "different",
           "addressLevel": "none"
@@ -3573,9 +3530,19 @@
           "phoneMatch": false,
           "nameRelation": "different",
           "addressLevel": "none"
+        },
+        {
+          "name": "ars",
+          "address": "神奈川県川崎市幸区大宮町１１−２ ホワイトマンション 304号室",
+          "phone": "070-9100-9998",
+          "cid": "2680259349896881310",
+          "url": "https://www.google.com/maps/place/ars/data=!4m7!3m6!1s0x601861f0ac5038fb:0x253231ad9885e49e!8m2!3d35.5308974!4d139.6929479!16s%2Fg%2F11w3qgs942!19sChIJ-zhQrPBhGGARnuSFmK0xMiU",
+          "phoneMatch": false,
+          "nameRelation": "different",
+          "addressLevel": "none"
         }
       ],
-      "verdict": "要確認",
+      "verdict": "確認済み",
       "cid": "2929045056350726918",
       "mapName": "アイラッシュ&ネイルサロン アイリス",
       "mapAddress": "大阪府大阪市平野区平野西６丁目３−２２ カサ・エルドラード弐番館",
@@ -3588,18 +3555,21 @@
         "nameRelation": "different",
         "addressLevel": "exact",
         "addressDetail": "町名・番地とも一致",
-        "addressSource": "検索URL"
+        "addressSource": "シート",
+        "clues": [
+          "E1: 店名(Airis=アイリス・アンド=&)+住所(番地まで)が E 列と一致"
+        ]
       },
-      "reason": "店名・電話とも合う店が見つからず、最も近い候補を記録。電話がちがう(シート 090-8792-2292 / マップ 06-6700-3022)／店名: different(シート「アイラッシュアンドネイルサロンAiris」/ マップ「アイラッシュ&ネイルサロン アイリス」)／住所(検索URL): exact・町名・番地とも一致",
-      "fetchedAt": "2026-10-24T19:26:02.590Z",
-      "kgmidHint": null,
+      "reason": "オーナー 2026-10-28(E 列=オーナーが調べた店名+住所を手がかりにしてよい・電話のちがいは可): 店名(Airis=アイリス・アンド=&)+住所(番地まで)が E 列と一致(第1段の元の判定: 店名・電話とも合う店が見つからず、最も近い候補を記録。電話がちがう(シート 090-8792-2292 / マップ 06-6700-3022)／店名: different(シート「アイラッシュアンドネイルサロンAiris」/ マップ「アイラッシュ&ネイルサロン アイリス」)／住所(シート): exact・町名・番地とも一致)",
+      "fetchedAt": "2026-10-27T16:34:41.883Z",
       "statusSignals": [],
-      "seconds": 42.1,
-      "decisionReview": {
-        "at": "2026-10-27",
-        "result": "対象外(作らない)",
-        "why": "電話が不一致・住所は一致",
-        "by": "オーナー 2026-10-26「OK進めていいよ」/ 2026-10-27「50〜79行目も同じ決まりで」"
+      "seconds": 43.4,
+      "verdictOriginal": "要確認",
+      "reasonOriginal": "店名・電話とも合う店が見つからず、最も近い候補を記録。電話がちがう(シート 090-8792-2292 / マップ 06-6700-3022)／店名: different(シート「アイラッシュアンドネイルサロンAiris」/ マップ「アイラッシュ&ネイルサロン アイリス」)／住所(シート): exact・町名・番地とも一致",
+      "decisionE": {
+        "rule": "E1",
+        "label": "店名(Airis=アイリス・アンド=&)+住所(番地まで)が E 列と一致",
+        "by": "オーナー 2026-10-28(E 列=オーナーが調べた店名+住所を手がかりにしてよい・電話のちがいは可)"
       }
     },
     "トリニティアポ:75": {
@@ -5729,6 +5699,7 @@
       "route": "電話・店名で検索",
       "queries": [
         "080-3265-7982",
+        "から揚げドラゴンチキンハイボールきむにぃ 北海道札幌市手稲区星置一条3-3-6ウィングA",
         "から揚げドラゴンチキンハイボールきむにぃ"
       ],
       "candidates": [
@@ -5741,9 +5712,19 @@
           "phoneMatch": false,
           "nameRelation": "different",
           "addressLevel": "exact"
+        },
+        {
+          "name": "から揚げドラゴンチキン ハイボール キムにい",
+          "address": "北海道札幌市手稲区星置１条３丁目３−６ Wing1 階左",
+          "phone": "011-213-7993",
+          "cid": "7224301355860667034",
+          "url": "https://www.google.com/maps/place/%E3%81%8B%E3%82%89%E6%8F%9A%E3%81%92%E3%83%89%E3%83%A9%E3%82%B4%E3%83%B3%E3%83%81%E3%82%AD%E3%83%B3+%E3%83%8F%E3%82%A4%E3%83%9C%E3%83%BC%E3%83%AB+%E3%82%AD%E3%83%A0%E3%81%AB%E3%81%84/@43.1333485,141.2115148,17z/data=!3m1!4b1!4m6!3m5!1s0x5f0b27ec78c5881f:0x6441dfcea272aa9a!8m2!3d43.1333485!4d141.2115148!16s%2Fg%2F11s2nrswmh",
+          "phoneMatch": false,
+          "nameRelation": "different",
+          "addressLevel": "exact"
         }
       ],
-      "verdict": "要確認",
+      "verdict": "確認済み",
       "cid": "7224301355860667034",
       "mapName": "から揚げドラゴンチキン ハイボール キムにい",
       "mapAddress": "北海道札幌市手稲区星置１条３丁目３−６ Wing1 階左",
@@ -5758,13 +5739,20 @@
         "addressDetail": "町名・番地とも一致",
         "addressSource": "シート",
         "clues": [
-          "住所(番地まで)"
+          "E1: 店名(ひらがな/カタカナの違い)+住所(番地まで)が E 列と一致"
         ]
       },
-      "reason": "店名・電話とも合う店が見つからず、最も近い候補を記録。電話がちがう(シート 080-3265-7982 / マップ 011-213-7993)／店名: different(シート「から揚げドラゴンチキンハイボールきむにぃ」/ マップ「から揚げドラゴンチキン ハイボール キムにい」)／住所(シート): exact・町名・番地とも一致",
-      "fetchedAt": "2026-10-27T08:59:37.661Z",
+      "reason": "オーナー 2026-10-28(E 列=オーナーが調べた店名+住所を手がかりにしてよい・電話のちがいは可): 店名(ひらがな/カタカナの違い)+住所(番地まで)が E 列と一致(第1段の元の判定: 店名・電話とも合う店が見つからず、最も近い候補を記録。電話がちがう(シート 080-3265-7982 / マップ 011-213-7993)／店名: different(シート「から揚げドラゴンチキンハイボールきむにぃ」/ マップ「から揚げドラゴンチキン ハイボール キムにい」)／住所(シート): exact・町名・番地とも一致)",
+      "fetchedAt": "2026-10-27T16:35:24.287Z",
       "statusSignals": [],
-      "seconds": 27.6
+      "seconds": 34.7,
+      "verdictOriginal": "要確認",
+      "reasonOriginal": "店名・電話とも合う店が見つからず、最も近い候補を記録。電話がちがう(シート 080-3265-7982 / マップ 011-213-7993)／店名: different(シート「から揚げドラゴンチキンハイボールきむにぃ」/ マップ「から揚げドラゴンチキン ハイボール キムにい」)／住所(シート): exact・町名・番地とも一致",
+      "decisionE": {
+        "rule": "E1",
+        "label": "店名(ひらがな/カタカナの違い)+住所(番地まで)が E 列と一致",
+        "by": "オーナー 2026-10-28(E 列=オーナーが調べた店名+住所を手がかりにしてよい・電話のちがいは可)"
+      }
     },
     "トリニティアポ:120": {
       "tab": "トリニティアポ",
@@ -7970,12 +7958,12 @@
       "vertical": "グルメ",
       "industryRaw": "飲食、バー",
       "sheetPhone": "090-1128-8345",
-      "sheetUrl": "https://www.google.com/search?q=%E9%99%BD%E6%9C%88%20%E3%80%92262-0025%20%E5%8D%83%E8%91%89%E7%9C%8C%E5%8D%83%E8%91%89%E5%B8%82%E8%8A%B1%E8%A6%8B%E5%B7%9D%E5%8C%BA%E8%8A%B1%E5%9C%92%EF%BC%91%E4%B8%81%E7%9B%AE%EF%BC%96%E2%88%92%EF%BC%95%20%E8%8A%B1%E5%9C%92%E9%99%B8%E6%A9%8B%E3%83%93%E3%83%AB%20102%20%E9%9B%BB%E8%A9%B1%E7%95%AA%E5%8F%B7",
-      "urlKind": "search",
+      "sheetUrl": "https://www.google.com/maps/search/?api=1&query=%E9%99%BD%E6%9C%88%20090-1128-8345%20",
+      "urlKind": "mapsApi",
       "route": "電話・店名で検索",
       "queries": [
         "090-1128-8345",
-        "陽月 〒262-0025 千葉県千葉市花見川区花園1丁目6−5 花園陸橋ビル 102 電話番号",
+        "陽月 千葉県千葉市花見川区花園1丁目6−5 花園陸橋ビル 102",
         "陽月"
       ],
       "candidates": [
@@ -7984,20 +7972,10 @@
           "address": "千葉県千葉市花見川区花園１丁目６−５ 花園陸橋ビル 102",
           "phone": null,
           "cid": "2359388906071726402",
-          "url": "https://www.google.com/maps/place/%E9%99%BD%E6%9C%88+kagezuki/@35.651913,140.0742776,17z/data=!3m1!4b1!4m6!3m5!1s0x602283c4b0d72609:0x20be3bb5a1671942!8m2!3d35.651913!4d140.0742776!16s%2Fg%2F12qh0nq66!5m1!1e4",
+          "url": "https://www.google.com/maps/place/%E9%99%BD%E6%9C%88+kagezuki/@35.651913,140.0742776,17z/data=!3m1!4b1!4m6!3m5!1s0x602283c4b0d72609:0x20be3bb5a1671942!8m2!3d35.651913!4d140.0742776!16s%2Fg%2F12qh0nq66",
           "phoneMatch": null,
           "nameRelation": "different",
           "addressLevel": "exact"
-        },
-        {
-          "name": "月兎",
-          "address": "神奈川県川崎市川崎区貝塚１丁目１４−８",
-          "phone": "044-381-9906",
-          "cid": "3675327250222610658",
-          "url": "https://www.google.com/maps/place/%E6%9C%88%E5%85%8E/data=!4m7!3m6!1s0x601861a85e784753:0x330162a94ed4f8e2!8m2!3d35.5255485!4d139.703689!16s%2Fg%2F11jsw_5wcy!19sChIJU0d4XqhhGGAR4vjUTqliATM",
-          "phoneMatch": false,
-          "nameRelation": "different",
-          "addressLevel": "none"
         },
         {
           "name": "陽月 kagezuki",
@@ -8018,33 +7996,46 @@
           "phoneMatch": false,
           "nameRelation": "different",
           "addressLevel": "none"
+        },
+        {
+          "name": "陽月",
+          "address": "埼玉県入間郡毛呂山町下川原１７７−２",
+          "phone": null,
+          "cid": "12515106048188290057",
+          "url": "https://www.google.com/maps/place/%E9%99%BD%E6%9C%88/data=!4m7!3m6!1s0x60192981c2318fc7:0xadae96a4989b1409!8m2!3d35.9368074!4d139.3474522!16s%2Fg%2F11q8gb4b50!19sChIJx48xwoEpGWARCRSbmKSWrq0",
+          "phoneMatch": null,
+          "nameRelation": "exact",
+          "addressLevel": "none"
         }
       ],
-      "verdict": "要確認",
+      "verdict": "確認済み",
       "cid": "2359388906071726402",
       "mapName": "陽月 kagezuki",
       "mapAddress": "千葉県千葉市花見川区花園１丁目６−５ 花園陸橋ビル 102",
       "mapPhone": null,
       "website": null,
-      "category": "バー＆グリル",
+      "category": "居酒屋",
       "mapUrl": "https://maps.google.com/?cid=2359388906071726402",
       "signals": {
         "phoneMatch": null,
         "nameRelation": "different",
         "addressLevel": "exact",
-        "addressDetail": "町名・番地とも一致",
-        "addressSource": "検索URL"
+        "addressDetail": "町名までがちがう（シート:千葉県千葉市花見川区花園 / マップ:埼玉県入間郡毛呂山町下川原）",
+        "addressSource": "シート",
+        "clues": [
+          "E1: 店名「陽月 kagezuki」+住所(千葉市花見川区花園1-6-5)が E 列と一致(同名の埼玉の店は住所がちがうので除く)"
+        ]
       },
-      "reason": "店名・電話とも合う店が見つからず、最も近い候補を記録。マップに電話の表示なし／店名: different(シート「陽月」/ マップ「陽月 kagezuki」)／住所(検索URL): exact・町名・番地とも一致",
-      "fetchedAt": "2026-10-24T19:36:25.815Z",
-      "kgmidHint": null,
+      "reason": "オーナー 2026-10-28(E 列=オーナーが調べた店名+住所を手がかりにしてよい・電話のちがいは可): 店名「陽月 kagezuki」+住所(千葉市花見川区花園1-6-5)が E 列と一致(同名の埼玉の店は住所がちがうので除く)(第1段の元の判定: 店名は似ているが電話・住所で裏が取れない。マップに電話の表示なし／店名: exact(シート「陽月」/ マップ「陽月」)／住所(シート): none・町名までがちがう（シート:千葉県千葉市花見川区花園 / マップ:埼玉県入間郡毛呂山町下川原）)",
+      "fetchedAt": "2026-10-27T16:36:14.717Z",
       "statusSignals": [],
-      "seconds": 42.3,
-      "decisionReview": {
-        "at": "2026-10-26",
-        "result": "対象外(作らない)",
-        "why": "電話は照合できず(マップに電話の表示なし)・住所は一致",
-        "by": "オーナー 2026-10-26「OK進めていいよ」"
+      "seconds": 43.6,
+      "verdictOriginal": "要確認",
+      "reasonOriginal": "店名は似ているが電話・住所で裏が取れない。マップに電話の表示なし／店名: exact(シート「陽月」/ マップ「陽月」)／住所(シート): none・町名までがちがう（シート:千葉県千葉市花見川区花園 / マップ:埼玉県入間郡毛呂山町下川原）",
+      "decisionE": {
+        "rule": "E1",
+        "label": "店名「陽月 kagezuki」+住所(千葉市花見川区花園1-6-5)が E 列と一致(同名の埼玉の店は住所がちがうので除く)",
+        "by": "オーナー 2026-10-28(E 列=オーナーが調べた店名+住所を手がかりにしてよい・電話のちがいは可)"
       }
     },
     "トリニティアポ:167": {
@@ -8511,12 +8502,12 @@
       "vertical": "グルメ",
       "industryRaw": "飲食",
       "sheetPhone": "080-4761-9151",
-      "sheetUrl": "https://www.google.com/search?q=%E9%8A%80%E5%BA%A7%E3%81%8C%E3%81%A1%E9%B6%8F%09%E5%A4%A7%E9%98%AA%E5%BA%9C%E5%A4%A7%E9%98%AA%E5%B8%82%E4%B8%AD%E5%A4%AE%E5%8C%BA%E9%9B%A3%E6%B3%A238202&sca_esv=ce771d9c6ef7deea&biw=1130&bih=630&sxsrf=APpeQnsuqBCprm6C2HMrdpa2k_DzVGVIjw%3A1792648195572&ei=A6TZavO5Iofn1e8P8oHpuAE&uact=5&oq=%E9%8A%80%E5%BA%A7%E3%81%8C%E3%81%A1%E9%B6%8F%09%E5%A4%A7%E9%98%AA%E5%BA%9C%E5%A4%A7%E9%98%AA%E5%B8%82%E4%B8%AD%E5%A4%AE%E5%8C%BA%E9%9B%A3%E6%B3%A238202&gs_lp=Egxnd3Mtd2l6LXNlcnAiNumKgOW6p-OBjOOBoem2jwnlpKfpmKrlupzlpKfpmKrluILkuK3lpK7ljLrpm6Pms6IzODIwMjIEECMYJzIIEAAYgAQYogQyBRAAGO8FMggQABiJBRiiBEikDlD8A1j8A3ABeAGQAQCYAXGgAXGqAQMwLjG4AQPIAQD4AQL4AQGYAgKgAqABqAIKwgIHECMY6gIYJ5gDF_EF820LBNzIDbCSBwMxLjGgB4IEsgcDMC4xuAeIAcIHAzMtMsgHEIAIAQ&sclient=gws-wiz-serp",
-      "urlKind": "search",
+      "sheetUrl": "https://www.google.com/maps/search/?api=1&query=%E9%8A%80%E5%BA%A7%E3%81%8C%E3%81%A1%E9%B6%8F%20080-4761-9151%20",
+      "urlKind": "mapsApi",
       "route": "電話・店名で検索",
       "queries": [
         "080-4761-9151",
-        "銀座がち鶏\t大阪府大阪市中央区難波38202",
+        "銀座がち鶏 大阪府大阪市中央区難波38202",
         "銀座がち鶏"
       ],
       "candidates": [
@@ -8525,7 +8516,7 @@
           "address": "大阪府大阪市中央区難波４丁目８−３",
           "phone": "06-6630-7580",
           "cid": "2834776972205820422",
-          "url": "https://www.google.com/maps/place/%E9%8A%80%E5%BA%A7+%E3%81%8C%E3%81%A1%E9%B6%8F/@34.6666732,135.4985967,17z/data=!3m1!4b1!4m6!3m5!1s0x6000e712ef72847d:0x275726a30dc90a06!8m2!3d34.6666732!4d135.4985967!16s%2Fg%2F1ptw3kzjc!5m1!1e4",
+          "url": "https://www.google.com/maps/place/%E9%8A%80%E5%BA%A7+%E3%81%8C%E3%81%A1%E9%B6%8F/@34.6666732,135.4985967,17z/data=!3m1!4b1!4m6!3m5!1s0x6000e712ef72847d:0x275726a30dc90a06!8m2!3d34.6666732!4d135.4985967!16s%2Fg%2F1ptw3kzjc",
           "phoneMatch": false,
           "nameRelation": "exact",
           "addressLevel": "none"
@@ -8535,7 +8526,7 @@
           "address": "大阪府大阪市中央区難波４丁目８−３",
           "phone": "06-6630-7580",
           "cid": "2834776972205820422",
-          "url": "https://www.google.com/maps/place/%E9%8A%80%E5%BA%A7+%E3%81%8C%E3%81%A1%E9%B6%8F/@34.6666732,135.4985967,17z/data=!3m1!4b1!4m6!3m5!1s0x6000e712ef72847d:0x275726a30dc90a06!8m2!3d34.6666732!4d135.4985967!16s%2Fg%2F1ptw3kzjc!5m1!1e4",
+          "url": "https://www.google.com/maps/place/%E9%8A%80%E5%BA%A7+%E3%81%8C%E3%81%A1%E9%B6%8F/@34.6666732,135.4985967,17z/data=!3m1!4b1!4m6!3m5!1s0x6000e712ef72847d:0x275726a30dc90a06!8m2!3d34.6666732!4d135.4985967!16s%2Fg%2F1ptw3kzjc",
           "phoneMatch": false,
           "nameRelation": "exact",
           "addressLevel": "none"
@@ -8554,19 +8545,15 @@
         "nameRelation": "exact",
         "addressLevel": "none",
         "addressDetail": "番地がちがう（シート:38202 / マップ:4-8-3）",
-        "addressSource": "検索URL"
+        "addressSource": "シート",
+        "clues": [
+          "店名"
+        ]
       },
-      "reason": "店名は似ているが電話・住所で裏が取れない。電話がちがう(シート 080-4761-9151 / マップ 06-6630-7580)／店名: exact(シート「銀座がち鶏」/ マップ「銀座 がち鶏」)／住所(検索URL): none・番地がちがう（シート:38202 / マップ:4-8-3）",
-      "fetchedAt": "2026-10-24T19:37:52.265Z",
-      "kgmidHint": null,
+      "reason": "店名は似ているが電話・住所で裏が取れない。電話がちがう(シート 080-4761-9151 / マップ 06-6630-7580)／店名: exact(シート「銀座がち鶏」/ マップ「銀座 がち鶏」)／住所(シート): none・番地がちがう（シート:38202 / マップ:4-8-3）",
+      "fetchedAt": "2026-10-27T16:36:58.651Z",
       "statusSignals": [],
-      "seconds": 35.8,
-      "decisionReview": {
-        "at": "2026-10-26",
-        "result": "対象外(作らない)",
-        "why": "電話が不一致・住所が不一致(番地がちがう（シート:38202 / マップ:4-8-3）)",
-        "by": "オーナー 2026-10-26「OK進めていいよ」"
-      }
+      "seconds": 35.2
     },
     "トリニティアポ:178": {
       "tab": "トリニティアポ",
@@ -8833,12 +8820,11 @@
       "vertical": "グルメ",
       "industryRaw": "飲食",
       "sheetPhone": "090-2248-3568",
-      "sheetUrl": "https://www.google.com/search?q=090-2248-3568%09%E3%83%96%E3%83%A9%E3%83%83%E3%82%AF%E3%83%97%E3%83%BC%E3%83%AB+%E3%83%8F%E3%83%B3%E3%83%90%E3%83%BC%E3%82%AC%E3%83%BC+%E3%82%AB%E3%83%95%E3%82%A7%09%E3%80%92561-0859+%E5%A4%A7%E9%98%AA%E5%BA%9C%E8%B1%8A%E4%B8%AD%E5%B8%82%E6%9C%8D%E9%83%A8%E8%B1%8A%E7%94%BA2-1-7&sca_esv=45d061d4175d1694&rlz=1C1PWSB_jaJP1026JP1029&sxsrf=APpeQntMti1ePvKJc0ZLr8zk6D3xACtnUA%3A1792651323125&ei=O7DZavX1Btar0-kPs9ak6QU&biw=645&bih=621&uact=5&oq=090-2248-3568%09%E3%83%96%E3%83%A9%E3%83%83%E3%82%AF%E3%83%97%E3%83%BC%E3%83%AB+%E3%83%8F%E3%83%B3%E3%83%90%E3%83%BC%E3%82%AC%E3%83%BC+%E3%82%AB%E3%83%95%E3%82%A7%09%E3%80%92561-0859+%E5%A4%A7%E9%98%AA%E5%BA%9C%E8%B1%8A%E4%B8%AD%E5%B8%82%E6%9C%8D%E9%83%A8%E8%B1%8A%E7%94%BA2-1-7&gs_lp=Egxnd3Mtd2l6LXNlcnAicDA5MC0yMjQ4LTM1NjgJ44OW44Op44OD44Kv44OX44O844OrIOODj-ODs-ODkOODvOOCrOODvCDjgqvjg5XjgqcJ44CSNTYxLTA4NTkg5aSn6Ziq5bqc6LGK5Lit5biC5pyN6YOo6LGK55S6Mi0xLTdIoQNQ8gFY8gFwAXgAkAEAmAEAoAEAqgEAuAEDyAEA-AEC-AEBmAIAoAIAmAMAiAYBkgcAoAcAsgcAuAcAwgcAyAcAgAgB&sclient=gws-wiz-serp",
-      "urlKind": "search",
+      "sheetUrl": "https://www.google.com/maps/search/?api=1&query=090-2248-3568%20090-2248-3568%20",
+      "urlKind": "mapsApi",
       "route": "電話・店名で検索",
       "queries": [
-        "090-2248-3568",
-        "090-2248-3568\tブラックプール ハンバーガー カフェ\t〒561-0859 大阪府豊中市服部豊町2-1-7"
+        "090-2248-3568"
       ],
       "candidates": [
         {
@@ -8846,17 +8832,7 @@
           "address": "大阪府豊中市服部豊町２丁目１−７",
           "phone": "090-2248-3568",
           "cid": "7138451587001236648",
-          "url": "https://www.google.com/maps/place/.tenn/@34.763951,135.4712702,17z/data=!3m1!4b1!4m6!3m5!1s0x6000e5006ef51d39:0x6310dfe5b1883ca8!8m2!3d34.763951!4d135.4712702!16s%2Fg%2F11nqy5fsdy!5m1!1e4",
-          "phoneMatch": true,
-          "nameRelation": "n/a",
-          "addressLevel": "exact"
-        },
-        {
-          "name": "BlackPooL Hamburger cafe/ブラックプールハンバーガーカフェ",
-          "address": "大阪府豊中市服部豊町２丁目１−７",
-          "phone": "090-2248-3568",
-          "cid": "1793478043585534328",
-          "url": "https://www.google.com/maps/place/BlackPooL+Hamburger+cafe%2F%E3%83%96%E3%83%A9%E3%83%83%E3%82%AF%E3%83%97%E3%83%BC%E3%83%AB%E3%83%8F%E3%83%B3%E3%83%90%E3%83%BC%E3%82%AC%E3%83%BC%E3%82%AB%E3%83%95%E3%82%A7/@34.763927,135.4712742,17z/data=!3m1!4b1!4m6!3m5!1s0x6000e5dd70e10a3f:0x18e3b6c74460d978!8m2!3d34.763927!4d135.4712742!16s%2Fg%2F11nnr0qs28!5m1!1e4",
+          "url": "https://www.google.com/maps/place/.tenn/@34.763951,135.4712702,17z/data=!3m1!4b1!4m6!3m5!1s0x6000e5006ef51d39:0x6310dfe5b1883ca8!8m2!3d34.763951!4d135.4712702!16s%2Fg%2F11nqy5fsdy",
           "phoneMatch": true,
           "nameRelation": "n/a",
           "addressLevel": "exact"
@@ -8875,21 +8851,16 @@
         "nameRelation": "n/a",
         "addressLevel": "exact",
         "addressDetail": "町名・番地とも一致",
-        "addressSource": "検索URL"
+        "addressSource": "シート",
+        "clues": [
+          "電話",
+          "住所(番地まで)"
+        ]
       },
-      "reason": "店名が電話番号・第1段で電話が一致(店名は Google マップの店名)(オーナー 2026-10-26「OK進めていいよ」)。元の判定の理由: シートの店名が電話番号(090-2248-3568)。電話で出たマップの店は「.tenn」(電話一致)。店名をオーナーに確認",
-      "fetchedAt": "2026-10-24T19:38:45.495Z",
-      "kgmidHint": null,
+      "reason": "手がかり: 電話＋住所(番地まで)。電話が一致／店名: n/a(シート「090-2248-3568」/ マップ「.tenn」)／住所(シート): exact・町名・番地とも一致",
+      "fetchedAt": "2026-10-27T16:25:26.433Z",
       "statusSignals": [],
-      "seconds": 14.7,
-      "verdictOriginal": "要確認",
-      "reasonOriginal": "シートの店名が電話番号(090-2248-3568)。電話で出たマップの店は「.tenn」(電話一致)。店名をオーナーに確認",
-      "decision": {
-        "rule": "D3",
-        "label": "店名が電話番号・第1段で電話が一致(店名は Google マップの店名)",
-        "at": "2026-10-26",
-        "by": "オーナー 2026-10-26「OK進めていいよ」"
-      }
+      "seconds": 5.5
     },
     "トリニティアポ:184": {
       "tab": "トリニティアポ",
@@ -8943,12 +8914,12 @@
       "vertical": "グルメ",
       "industryRaw": "飲食",
       "sheetPhone": "080-4638-4869",
-      "sheetUrl": "https://www.google.com/search?q=KOGUMACOFFEE%09%E5%A4%A7%E9%98%AA%E5%BA%9C%E5%A4%A7%E9%98%AA%E5%B8%82%E5%A4%A9%E7%8E%8B%E5%AF%BA%E5%8C%BA%E4%B8%8B%E5%AF%BA%E7%94%BA1-3-68&sca_esv=ce771d9c6ef7deea&biw=1130&bih=630&sxsrf=APpeQns_Lo9Ta7gD_qMdgsDCiW8XOYchSQ%3A1792659696965&ei=8NDZav-UOuz21e8PuOjwoAQ&uact=5&oq=KOGUMACOFFEE%09%E5%A4%A7%E9%98%AA%E5%BA%9C%E5%A4%A7%E9%98%AA%E5%B8%82%E5%A4%A9%E7%8E%8B%E5%AF%BA%E5%8C%BA%E4%B8%8B%E5%AF%BA%E7%94%BA1-3-68&gs_lp=Egxnd3Mtd2l6LXNlcnAiOktPR1VNQUNPRkZFRQnlpKfpmKrlupzlpKfpmKrluILlpKnnjovlr7rljLrkuIvlr7rnlLoxLTMtNjgyBRAAGO8FMggQABiJBRiiBDIIEAAYgAQYogQyCBAAGIkFGKIEMggQABiJBRiiBEiOB1CwAViwAXABeAGQAQCYAakBoAGpAaoBAzAuMbgBA8gBAPgBAvgBAZgCAqAC2wGoAgrCAgcQIxjqAhgnmAMa8QVk1eVDwr4a35IHAzEuMaAHgAKyBwMwLjG4B8EBwgcDMy0yyAcSgAgB&sclient=gws-wiz-serp",
-      "urlKind": "search",
+      "sheetUrl": "https://www.google.com/maps/search/?api=1&query=KOGUMACOFFEE%20080-4638-4869%20",
+      "urlKind": "mapsApi",
       "route": "電話・店名で検索",
       "queries": [
         "080-4638-4869",
-        "KOGUMACOFFEE\t大阪府大阪市天王寺区下寺町1-3-68",
+        "KOGUMACOFFEE 大阪府大阪市天王寺区下寺町1-3-68",
         "KOGUMACOFFEE"
       ],
       "candidates": [
@@ -8957,7 +8928,7 @@
           "address": "大阪府大阪市天王寺区下寺町１丁目３−６８",
           "phone": null,
           "cid": "7587709339952533767",
-          "url": "https://www.google.com/maps/place/%E3%82%B3%E3%82%B0%E3%83%9E%E3%82%B3%E3%83%BC%E3%83%92%E3%83%BC/@34.6618212,135.5112146,17z/data=!3m1!4b1!4m6!3m5!1s0x6000e7000790e471:0x694cf5717ac8d107!8m2!3d34.6618212!4d135.5112146!16s%2Fg%2F11yftbbjs6!5m1!1e4",
+          "url": "https://www.google.com/maps/place/%E3%82%B3%E3%82%B0%E3%83%9E%E3%82%B3%E3%83%BC%E3%83%92%E3%83%BC/@34.6618212,135.5112146,17z/data=!3m1!4b1!4m6!3m5!1s0x6000e7000790e471:0x694cf5717ac8d107!8m2!3d34.6618212!4d135.5112146!16s%2Fg%2F11yftbbjs6",
           "phoneMatch": null,
           "nameRelation": "different",
           "addressLevel": "exact"
@@ -8967,37 +8938,40 @@
           "address": "東京都立川市柴崎町３丁目５−９ 伊藤ビル 101",
           "phone": null,
           "cid": "5627759923099039831",
-          "url": "https://www.google.com/maps/place/KOGUMACOFFEE+%E3%82%B3%E3%82%B0%E3%83%9E%E3%82%B3%E3%83%BC%E3%83%92%E3%83%BC/@35.6959601,139.4144179,17z/data=!3m1!4b1!4m6!3m5!1s0x6018e19496582c45:0x4e19d1d5397f7857!8m2!3d35.6959601!4d139.4144179!16s%2Fg%2F11rz2s80fp!5m1!1e4",
+          "url": "https://www.google.com/maps/place/KOGUMACOFFEE+%E3%82%B3%E3%82%B0%E3%83%9E%E3%82%B3%E3%83%BC%E3%83%92%E3%83%BC/@35.6959601,139.4144179,17z/data=!3m1!4b1!4m6!3m5!1s0x6018e19496582c45:0x4e19d1d5397f7857!8m2!3d35.6959601!4d139.4144179!16s%2Fg%2F11rz2s80fp",
           "phoneMatch": null,
           "nameRelation": "contains",
           "addressLevel": "none"
         }
       ],
-      "verdict": "要確認",
-      "cid": "5627759923099039831",
-      "mapName": "KOGUMACOFFEE コグマコーヒー",
-      "mapAddress": "東京都立川市柴崎町３丁目５−９ 伊藤ビル 101",
+      "verdict": "確認済み",
+      "cid": "7587709339952533767",
+      "mapName": "コグマコーヒー",
+      "mapAddress": "大阪府大阪市天王寺区下寺町１丁目３−６８",
       "mapPhone": null,
       "website": "https://kogumacoffee.com/",
       "category": "コーヒー焙煎所",
-      "mapUrl": "https://maps.google.com/?cid=5627759923099039831",
+      "mapUrl": "https://maps.google.com/?cid=7587709339952533767",
       "signals": {
         "phoneMatch": null,
-        "nameRelation": "contains",
-        "addressLevel": "none",
+        "nameRelation": "different",
+        "addressLevel": "exact",
         "addressDetail": "町名までがちがう（シート:大阪府大阪市天王寺区下寺町 / マップ:東京都立川市柴崎町）",
-        "addressSource": "検索URL"
+        "addressSource": "シート",
+        "clues": [
+          "E4: 店名(ローマ字/カタカナの違い)+住所(天王寺区下寺町1-3-68)が E 列と一致(同名の立川の店は住所がちがうので除く)"
+        ]
       },
-      "reason": "店名は似ているが電話・住所で裏が取れない。マップに電話の表示なし／店名: contains(シート「KOGUMACOFFEE」/ マップ「KOGUMACOFFEE コグマコーヒー」)／住所(検索URL): none・町名までがちがう（シート:大阪府大阪市天王寺区下寺町 / マップ:東京都立川市柴崎町）",
-      "fetchedAt": "2026-10-24T19:39:30.510Z",
-      "kgmidHint": null,
+      "reason": "オーナー 2026-10-28(E 列=オーナーが調べた店名+住所を手がかりにしてよい・電話のちがいは可): 店名(ローマ字/カタカナの違い)+住所(天王寺区下寺町1-3-68)が E 列と一致(同名の立川の店は住所がちがうので除く)(第1段の元の判定: 店名は似ているが電話・住所で裏が取れない。マップに電話の表示なし／店名: contains(シート「KOGUMACOFFEE」/ マップ「KOGUMACOFFEE コグマコーヒー」)／住所(シート): none・町名までがちがう（シート:大阪府大阪市天王寺区下寺町 / マップ:東京都立川市柴崎町）)",
+      "fetchedAt": "2026-10-27T16:37:40.872Z",
       "statusSignals": [],
-      "seconds": 36.8,
-      "decisionReview": {
-        "at": "2026-10-26",
-        "result": "対象外(作らない)",
-        "why": "電話は照合できず(マップに電話の表示なし)・住所が不一致(町名までがちがう（シート:大阪府大阪市天王寺区下寺町 / マップ:東京都立川市柴崎町）)",
-        "by": "オーナー 2026-10-26「OK進めていいよ」"
+      "seconds": 34.2,
+      "verdictOriginal": "要確認",
+      "reasonOriginal": "店名は似ているが電話・住所で裏が取れない。マップに電話の表示なし／店名: contains(シート「KOGUMACOFFEE」/ マップ「KOGUMACOFFEE コグマコーヒー」)／住所(シート): none・町名までがちがう（シート:大阪府大阪市天王寺区下寺町 / マップ:東京都立川市柴崎町）",
+      "decisionE": {
+        "rule": "E4",
+        "label": "店名(ローマ字/カタカナの違い)+住所(天王寺区下寺町1-3-68)が E 列と一致(同名の立川の店は住所がちがうので除く)",
+        "by": "オーナー 2026-10-28(E 列=オーナーが調べた店名+住所を手がかりにしてよい・電話のちがいは可)"
       }
     },
     "トリニティアポ:186": {
@@ -9007,45 +8981,14 @@
       "vertical": "グルメ",
       "industryRaw": "飲食",
       "sheetPhone": "090-3682-2606",
-      "sheetUrl": "https://www.google.com/search?q=%E9%BA%BA%E5%87%A6%E6%B8%85%E6%B0%B4%09025-788-0882&sca_esv=118da6435649b682&rlz=1C1HKFL_jaJP1236JP1236&sxsrf=APpeQns7PADtUV061NZoENPAB1265SH0aA%3A1792462254893&ei=rs3Wasj_Nb-Yvr0PzoupqAw&biw=1129&bih=816&uact=5&oq=%E9%BA%BA%E5%87%A6%E6%B8%85%E6%B0%B4%09025-788-0882&gs_lp=Egxnd3Mtd2l6LXNlcnAiGem6uuWHpua4heawtAkwMjUtNzg4LTA4ODIyCBAAGIAEGKIEMgUQABjvBTIFEAAY7wVIggNQAFgAcAB4AZABAJgBbKABbKoBAzAuMbgBA8gBAPgBAvgBAZgCAaACdJgDAJIHAzAuMaAHoQGyBwMwLjG4B3TCBwMyLTHIBwSACAE&sclient=gws-wiz-serp",
-      "urlKind": "search",
+      "sheetUrl": "https://www.google.com/maps/search/?api=1&query=%E9%BA%BA%E5%87%A6%E6%B8%85%E6%B0%B4%20090-3682-2606%20",
+      "urlKind": "mapsApi",
       "route": "電話・店名で検索",
       "queries": [
         "090-3682-2606",
-        "麺処清水\t025-788-0882",
         "麺処清水"
       ],
       "candidates": [
-        {
-          "name": "麺処 清水",
-          "address": "新潟県南魚沼市四十日２９３５−１",
-          "phone": "025-788-0882",
-          "cid": "4097848910233356703",
-          "url": "https://www.google.com/maps/place/%E9%BA%BA%E5%87%A6+%E6%B8%85%E6%B0%B4/data=!4m7!3m6!1s0x5ff5f3bfaf2236c7:0x38de7bdf5dae499f!8m2!3d37.0871335!4d138.8883598!16s%2Fg%2F11c0pxc5yb!19sChIJxzYir7_z9V8Rn0muXd973jg",
-          "phoneMatch": false,
-          "nameRelation": "exact",
-          "addressLevel": null
-        },
-        {
-          "name": "清水",
-          "address": "新潟県三条市上保内乙２８９",
-          "phone": "0256-64-8813",
-          "cid": "7194716986146186669",
-          "url": "https://www.google.com/maps/place/%E6%B8%85%E6%B0%B4/data=!4m7!3m6!1s0x5ff4e1ee41895555:0x63d8c4facab665ad!8m2!3d37.6401524!4d139.0145611!16s%2Fg%2F11f50t2whv!19sChIJVVWJQe7h9F8RrWW2yvrE2GM",
-          "phoneMatch": false,
-          "nameRelation": "different",
-          "addressLevel": null
-        },
-        {
-          "name": "麺屋清水",
-          "address": "東京都江戸川区西小岩４丁目１−５",
-          "phone": null,
-          "cid": "10962998430001919446",
-          "url": "https://www.google.com/maps/place/%E9%BA%BA%E5%B1%8B%E6%B8%85%E6%B0%B4/data=!4m7!3m6!1s0x601885d94d3cbcc5:0x982464fcd56df5d6!8m2!3d35.7357424!4d139.8803394!16s%2Fg%2F1td_h6wp!19sChIJxbw8TdmFGGAR1vVt1fxkJJg",
-          "phoneMatch": null,
-          "nameRelation": "different",
-          "addressLevel": null
-        },
         {
           "name": "麺処 清水",
           "address": "静岡県静岡市駿河区大谷４６１０−１",
@@ -9077,12 +9020,12 @@
           "addressLevel": null
         }
       ],
-      "verdict": "要確認",
+      "verdict": "確認済み",
       "cid": "4097848910233356703",
       "mapName": "麺処 清水",
       "mapAddress": "新潟県南魚沼市四十日２９３５−１",
       "mapPhone": "025-788-0882",
-      "website": "https://mobile.twitter.com/mendokoroshimiz",
+      "website": "https://www.facebook.com/%E9%BA%BA%E5%87%A6%E6%B8%85%E6%B0%B4-1245346188849103/",
       "category": "ラーメン屋",
       "mapUrl": "https://maps.google.com/?cid=4097848910233356703",
       "signals": {
@@ -9090,18 +9033,21 @@
         "nameRelation": "exact",
         "addressLevel": null,
         "addressDetail": null,
-        "addressSource": null
+        "addressSource": null,
+        "clues": [
+          "E3: E 列の電話 025-788-0882 がマップ(新潟県南魚沼市の「麺処 清水」)の電話と一致+店名(スペースの違いだけ)"
+        ]
       },
-      "reason": "店名は似ているが電話・住所で裏が取れない。電話がちがう(シート 090-3682-2606 / マップ 025-788-0882)／店名: exact(シート「麺処清水」/ マップ「麺処 清水」)",
-      "fetchedAt": "2026-10-24T19:40:25.595Z",
-      "kgmidHint": null,
+      "reason": "オーナー 2026-10-28(E 列=オーナーが調べた店名+住所を手がかりにしてよい・電話のちがいは可): E 列の電話 025-788-0882 がマップ(新潟県南魚沼市の「麺処 清水」)の電話と一致+店名(スペースの違いだけ)(第1段の元の判定: 店名は似ているが電話・住所で裏が取れない。マップに電話の表示なし／店名: exact(シート「麺処清水」/ マップ「麺処 清水」))",
+      "fetchedAt": "2026-10-27T16:38:22.316Z",
       "statusSignals": [],
-      "seconds": 48.9,
-      "decisionReview": {
-        "at": "2026-10-26",
-        "result": "対象外(作らない)",
-        "why": "電話が不一致・住所は照合できず(シートに住所なし)",
-        "by": "オーナー 2026-10-26「OK進めていいよ」"
+      "seconds": 34.3,
+      "verdictOriginal": "要確認",
+      "reasonOriginal": "店名は似ているが電話・住所で裏が取れない。マップに電話の表示なし／店名: exact(シート「麺処清水」/ マップ「麺処 清水」)",
+      "decisionE": {
+        "rule": "E3",
+        "label": "E 列の電話 025-788-0882 がマップ(新潟県南魚沼市の「麺処 清水」)の電話と一致+店名(スペースの違いだけ)",
+        "by": "オーナー 2026-10-28(E 列=オーナーが調べた店名+住所を手がかりにしてよい・電話のちがいは可)"
       }
     },
     "トリニティアポ:187": {
@@ -9764,8 +9710,8 @@
       "vertical": "ビューティー",
       "industryRaw": "美容",
       "sheetPhone": "090-4484-3296",
-      "sheetUrl": "https://www.google.com/search?q=%E3%83%97%E3%83%AC%E3%83%9F%E3%83%89%E3%83%BC%E3%83%AB+%E5%A4%A7%E5%88%86%E7%9C%8C%E5%A4%A7%E5%88%86%E5%B8%82%E4%B8%AD%E5%B3%B6%E8%A5%BF1-7-19+%E3%83%AC%E3%82%B9%E3%82%B3%E4%B8%AD%E5%B3%B6+%EF%BC%A6704&oq=%E3%83%97%E3%83%AC%E3%83%9F%E3%83%89%E3%83%BC%E3%83%AB%09%E5%A4%A7%E5%88%86%E7%9C%8C%E5%A4%A7%E5%88%86%E5%B8%82%E4%B8%AD%E5%B3%B6%E8%A5%BF1-7-19+%E3%83%AC%E3%82%B9%E3%82%B3%E4%B8%AD%E5%B3%B6+%EF%BC%A6704&gs_lcrp=EgZjaHJvbWUyBggAEEUYOdIBBzM3N2owajmoAgawAgHxBTGIY5rFPVOJ&sourceid=chrome&source=chrome.ob&ie=UTF-8",
-      "urlKind": "search",
+      "sheetUrl": "https://www.google.com/maps/search/?api=1&query=%E3%83%97%E3%83%AC%E3%83%9F%E3%83%89%E3%83%BC%E3%83%AB%20090-4484-3296%20",
+      "urlKind": "mapsApi",
       "route": "電話・店名で検索",
       "queries": [
         "090-4484-3296",
@@ -9778,7 +9724,7 @@
           "address": "大分県大分市中島東３丁目１−２５ プライムコート中島 106",
           "phone": "090-8441-9173",
           "cid": "17326842719675205099",
-          "url": "https://www.google.com/maps/place/%E3%83%90%E3%82%B9%E3%83%88%E3%82%B1%E3%82%A2%E5%B0%82%E9%96%80%E5%BA%97+%E3%83%97%E3%83%AC%E3%83%9F%E3%83%89%E3%83%BC%E3%83%AB/@33.2455018,131.616509,17z/data=!3m1!4b1!4m6!3m5!1s0x35469f7473ac001d:0xf0754fa6e94dc5eb!8m2!3d33.2455018!4d131.616509!16s%2Fg%2F11st9_nyfk!5m1!1e4",
+          "url": "https://www.google.com/maps/place/%E3%83%90%E3%82%B9%E3%83%88%E3%82%B1%E3%82%A2%E5%B0%82%E9%96%80%E5%BA%97+%E3%83%97%E3%83%AC%E3%83%9F%E3%83%89%E3%83%BC%E3%83%AB/@33.2455018,131.616509,17z/data=!3m1!4b1!4m6!3m5!1s0x35469f7473ac001d:0xf0754fa6e94dc5eb!8m2!3d33.2455018!4d131.616509!16s%2Fg%2F11st9_nyfk",
           "phoneMatch": false,
           "nameRelation": "contains",
           "addressLevel": "none"
@@ -9788,7 +9734,7 @@
           "address": "大分県大分市中島東３丁目１−２５ プライムコート中島 106",
           "phone": "090-8441-9173",
           "cid": "17326842719675205099",
-          "url": "https://www.google.com/maps/place/%E3%83%90%E3%82%B9%E3%83%88%E3%82%B1%E3%82%A2%E5%B0%82%E9%96%80%E5%BA%97+%E3%83%97%E3%83%AC%E3%83%9F%E3%83%89%E3%83%BC%E3%83%AB/@33.2455018,131.616509,17z/data=!3m1!4b1!4m6!3m5!1s0x35469f7473ac001d:0xf0754fa6e94dc5eb!8m2!3d33.2455018!4d131.616509!16s%2Fg%2F11st9_nyfk!5m1!1e4",
+          "url": "https://www.google.com/maps/place/%E3%83%90%E3%82%B9%E3%83%88%E3%82%B1%E3%82%A2%E5%B0%82%E9%96%80%E5%BA%97+%E3%83%97%E3%83%AC%E3%83%9F%E3%83%89%E3%83%BC%E3%83%AB/@33.2455018,131.616509,17z/data=!3m1!4b1!4m6!3m5!1s0x35469f7473ac001d:0xf0754fa6e94dc5eb!8m2!3d33.2455018!4d131.616509!16s%2Fg%2F11st9_nyfk",
           "phoneMatch": false,
           "nameRelation": "contains",
           "addressLevel": "none"
@@ -9807,19 +9753,15 @@
         "nameRelation": "contains",
         "addressLevel": "none",
         "addressDetail": "町名までがちがう（シート:大分県大分市中島西 / マップ:大分県大分市中島東）",
-        "addressSource": "検索URL"
+        "addressSource": "シート",
+        "clues": [
+          "店名"
+        ]
       },
-      "reason": "店名は似ているが電話・住所で裏が取れない。電話がちがう(シート 090-4484-3296 / マップ 090-8441-9173)／店名: contains(シート「プレミドール」/ マップ「バストケア専門店 プレミドール」)／住所(検索URL): none・町名までがちがう（シート:大分県大分市中島西 / マップ:大分県大分市中島東）",
-      "fetchedAt": "2026-10-24T19:41:48.798Z",
-      "kgmidHint": null,
+      "reason": "店名は似ているが電話・住所で裏が取れない。電話がちがう(シート 090-4484-3296 / マップ 090-8441-9173)／店名: contains(シート「プレミドール」/ マップ「バストケア専門店 プレミドール」)／住所(シート): none・町名までがちがう（シート:大分県大分市中島西 / マップ:大分県大分市中島東）",
+      "fetchedAt": "2026-10-27T16:39:04.625Z",
       "statusSignals": [],
-      "seconds": 35.9,
-      "decisionReview": {
-        "at": "2026-10-26",
-        "result": "対象外(作らない)",
-        "why": "電話が不一致・住所が不一致(町名までがちがう（シート:大分県大分市中島西 / マップ:大分県大分市中島東）)",
-        "by": "オーナー 2026-10-26「OK進めていいよ」"
-      }
+      "seconds": 36.1
     },
     "トリニティアポ:202": {
       "tab": "トリニティアポ",
@@ -10649,12 +10591,12 @@
       "vertical": "グルメ",
       "industryRaw": "飲食",
       "sheetPhone": "090-8692-6688",
-      "sheetUrl": "https://www.google.com/search?q=%E5%A3%B1%09%E6%84%9B%E5%AA%9B%E7%9C%8C%E6%9D%BE%E5%B1%B1%E5%B8%82%E8%90%B1%E7%94%BA1-2-6&sca_esv=cf4bcfcbc4bd22ce&rlz=1C1HKFL_jaJP1236JP1236&biw=1188&bih=827&sxsrf=APpeQnsI99u5egD6JMcyT_8VxqruM9cKVQ%3A1792996711945&ei=Z_XearOUOfDi2roPwuXNuQg&uact=5&oq=%E5%A3%B1%09%E6%84%9B%E5%AA%9B%E7%9C%8C%E6%9D%BE%E5%B1%B1%E5%B8%82%E8%90%B1%E7%94%BA1-2-6&gs_lp=Egxnd3Mtd2l6LXNlcnAiIeWjsQnmhJvlqpvnnIzmnb7lsbHluILokLHnlLoxLTItNjIFEAAY7wUyCBAAGIkFGKIEMgUQABjvBTIFEAAY7wUyCBAAGIAEGKIESL8CUABYAHAAeAGQAQCYAZsBoAGbAaoBAzAuMbgBA8gBAPgBAvgBAZgCAaACvAGYAwCSBwMwLjGgB7MCsgcDMC4xuAe8AcIHAzMtMcgHD4AIAQ&sclient=gws-wiz-serp",
-      "urlKind": "search",
+      "sheetUrl": "https://www.google.com/maps/search/?api=1&query=%E5%A3%B1%20090-8692-6688%20",
+      "urlKind": "mapsApi",
       "route": "電話・店名で検索",
       "queries": [
         "090-8692-6688",
-        "壱\t愛媛県松山市萱町1-2-6",
+        "壱 愛媛県松山市萱町1-2-6",
         "壱"
       ],
       "candidates": [
@@ -10699,7 +10641,7 @@
           "addressLevel": "none"
         }
       ],
-      "verdict": "要確認",
+      "verdict": "確認済み",
       "cid": "2765329769999657002",
       "mapName": "一汁おにぎり 壱",
       "mapAddress": "愛媛県松山市萱町１丁目２−６",
@@ -10712,13 +10654,22 @@
         "nameRelation": "different",
         "addressLevel": "exact",
         "addressDetail": "町名・番地とも一致",
-        "addressSource": "検索URL"
+        "addressSource": "シート",
+        "clues": [
+          "E1: 店名(「一汁おにぎり 壱」に「壱」を含む)+住所(松山市萱町1-2-6)が E 列と一致"
+        ]
       },
-      "reason": "店名・電話とも合う店が見つからず、最も近い候補を記録。電話がちがう(シート 090-8692-6688 / マップ 080-1305-0101)／店名: different(シート「壱」/ マップ「一汁おにぎり 壱」)／住所(検索URL): exact・町名・番地とも一致",
-      "fetchedAt": "2026-10-26T08:23:21.097Z",
-      "kgmidHint": null,
+      "reason": "オーナー 2026-10-28(E 列=オーナーが調べた店名+住所を手がかりにしてよい・電話のちがいは可): 店名(「一汁おにぎり 壱」に「壱」を含む)+住所(松山市萱町1-2-6)が E 列と一致(第1段の元の判定: 店名・電話とも合う店が見つからず、最も近い候補を記録。電話がちがう(シート 090-8692-6688 / マップ 080-1305-0101)／店名: different(シート「壱」/ マップ「一汁おにぎり 壱」)／住所(シート): exact・町名・番地とも一致)",
+      "fetchedAt": "2026-10-27T16:39:54.194Z",
       "statusSignals": [],
-      "seconds": 44.3
+      "seconds": 41.2,
+      "verdictOriginal": "要確認",
+      "reasonOriginal": "店名・電話とも合う店が見つからず、最も近い候補を記録。電話がちがう(シート 090-8692-6688 / マップ 080-1305-0101)／店名: different(シート「壱」/ マップ「一汁おにぎり 壱」)／住所(シート): exact・町名・番地とも一致",
+      "decisionE": {
+        "rule": "E1",
+        "label": "店名(「一汁おにぎり 壱」に「壱」を含む)+住所(松山市萱町1-2-6)が E 列と一致",
+        "by": "オーナー 2026-10-28(E 列=オーナーが調べた店名+住所を手がかりにしてよい・電話のちがいは可)"
+      }
     },
     "トリニティアポ:221": {
       "tab": "トリニティアポ",
@@ -10863,16 +10814,16 @@
     "トリニティアポ:224": {
       "tab": "トリニティアポ",
       "row": 224,
-      "name": "090-8679-6626",
+      "name": "ノーズ（ｎｏｚ）ＣＡＦＥ",
       "vertical": "グルメ",
       "industryRaw": "飲食",
       "sheetPhone": "090-8679-6626",
-      "sheetUrl": "https://www.google.com/search?q=%E3%83%8E%E3%83%BC%E3%82%BA%E3%82%AB%E3%83%95%E3%82%A7+%E4%B8%89%E9%87%8D%E7%9C%8C%E9%88%B4%E9%B9%BF%E5%B8%82%E9%81%93%E4%BC%AF%EF%BC%95%E4%B8%81%E7%9B%AE%EF%BC%92%EF%BC%94%E2%88%92%EF%BC%92%EF%BC%93+059-379-5005&sca_esv=487308b4cea01bf4&biw=2098&bih=1149&sxsrf=APpeQnuYpxyftVexQe-XXzNreVl6njLgXw%3A1792132717741&ei=bcbRarfVLIyA1e8P-NSEsAY&uact=5&oq=%E3%83%8E%E3%83%BC%E3%82%BA%E3%82%AB%E3%83%95%E3%82%A7+%E4%B8%89%E9%87%8D%E7%9C%8C%E9%88%B4%E9%B9%BF%E5%B8%82%E9%81%93%E4%BC%AF%EF%BC%95%E4%B8%81%E7%9B%AE%EF%BC%92%EF%BC%94%E2%88%92%EF%BC%92%EF%BC%93+059-379-5005&gs_lp=Egxnd3Mtd2l6LXNlcnAiUOODjuODvOOCuuOCq-ODleOCpyDkuInph43nnIzpiLTpub_luILpgZPkvK_vvJXkuIHnm67vvJLvvJTiiJLvvJLvvJMgMDU5LTM3OS01MDA1MgQQIxgnMgUQABjvBTIFEAAY7wUyBRAAGO8FSNsHUJkEWJkEcAF4AZABAJgBcqABcqoBAzAuMbgBA8gBAPgBAvgBAZgCAqAChQGoAhTCAgcQIxjqAhgnwgIQEAAYAxiPARjqAhi0AtgBAZgDDPEFwHUenuHSu-W6BgYIARABGAqSBwMxLjGgB9QEsgcDMC4xuAd5wgcFMi0xLjHIBw2ACAE&sclient=gws-wiz-serp",
-      "urlKind": "search",
+      "sheetUrl": "https://www.google.com/maps/search/?api=1&query=%E3%83%8E%E3%83%BC%E3%82%BA%EF%BC%88%EF%BD%8E%EF%BD%8F%EF%BD%9A%EF%BC%89%EF%BC%A3%EF%BC%A1%EF%BC%A6%EF%BC%A5%20090-8679-6626%20",
+      "urlKind": "mapsApi",
       "route": "電話・店名で検索",
       "queries": [
         "090-8679-6626",
-        "ノーズカフェ 三重県鈴鹿市道伯5丁目24−23 059-379-5005"
+        "ノーズ（ｎｏｚ）ＣＡＦＥ"
       ],
       "candidates": [
         {
@@ -10882,11 +10833,11 @@
           "cid": "982946403638376993",
           "url": "https://www.google.com/maps/place/%E3%83%8E%E3%83%BC%E3%82%BA%EF%BC%88%EF%BD%8E%EF%BD%8F%EF%BD%9A%EF%BC%89%EF%BC%A3%EF%BC%A1%EF%BC%A6%EF%BC%A5/@34.8627789,136.5474802,17z/data=!3m1!4b1!4m6!3m5!1s0x60038afa7e5553fd:0xda4208bd61cfa21!8m2!3d34.8627789!4d136.5474802!16s%2Fg%2F11fnmnl34t",
           "phoneMatch": false,
-          "nameRelation": "n/a",
+          "nameRelation": "exact",
           "addressLevel": "exact"
         }
       ],
-      "verdict": "要確認",
+      "verdict": "確認済み",
       "cid": "982946403638376993",
       "mapName": "ノーズ（ｎｏｚ）ＣＡＦＥ",
       "mapAddress": "三重県鈴鹿市道伯５丁目２４−２３",
@@ -10896,16 +10847,19 @@
       "mapUrl": "https://maps.google.com/?cid=982946403638376993",
       "signals": {
         "phoneMatch": false,
-        "nameRelation": "n/a",
+        "nameRelation": "exact",
         "addressLevel": "exact",
         "addressDetail": "町名・番地とも一致",
-        "addressSource": "検索URL"
+        "addressSource": "シート",
+        "clues": [
+          "店名",
+          "住所(番地まで)"
+        ]
       },
-      "reason": "シートの店名が電話番号(090-8679-6626)。電話で出たマップの店は「ノーズ（ｎｏｚ）ＣＡＦＥ」(電話不一致/不明)。店名をオーナーに確認",
-      "fetchedAt": "2026-10-26T08:25:24.871Z",
-      "kgmidHint": null,
+      "reason": "手がかり: 店名＋住所(番地まで)。電話がちがう(シート 090-8679-6626 / マップ 059-379-5005)／店名: exact(シート「ノーズ（ｎｏｚ）ＣＡＦＥ」/ マップ「ノーズ（ｎｏｚ）ＣＡＦＥ」)／住所(シート): exact・町名・番地とも一致",
+      "fetchedAt": "2026-10-27T16:28:39.276Z",
       "statusSignals": [],
-      "seconds": 27.8
+      "seconds": 28
     },
     "トリニティアポ:225": {
       "tab": "トリニティアポ",
@@ -10914,8 +10868,8 @@
       "vertical": "グルメ",
       "industryRaw": "飲食",
       "sheetPhone": "090-8606-0457",
-      "sheetUrl": "https://www.google.com/search?q=%E7%84%BC%E3%81%8D%E8%8F%93%E5%AD%90%E3%81%BB%E3%81%A4%E3%81%BB%E3%81%A4+%E5%B2%A1%E5%B1%B1%E7%9C%8C%E5%B2%A1%E5%B1%B1%E5%B8%82%E5%8C%97%E5%8C%BA%E8%A1%A8%E7%94%BA1%E4%B8%81%E7%9B%AE10-23%EF%BC%AF%EF%BC%AD%EF%BC%AF%EF%BC%B4%EF%BC%A5%EF%BC%A3%EF%BC%A8%EF%BC%AF%EF%BC%AC%EF%BC%A9%EF%BC%A6%EF%BC%A51%EF%BC%A6&oq=%E7%84%BC%E3%81%8D%E8%8F%93%E5%AD%90%E3%81%BB%E3%81%A4%E3%81%BB%E3%81%A4%09%E5%B2%A1%E5%B1%B1%E7%9C%8C%E5%B2%A1%E5%B1%B1%E5%B8%82%E5%8C%97%E5%8C%BA%E8%A1%A8%E7%94%BA1%E4%B8%81%E7%9B%AE10-23%EF%BC%AF%EF%BC%AD%EF%BC%AF%EF%BC%B4%EF%BC%A5%EF%BC%A3%EF%BC%A8%EF%BC%AF%EF%BC%AC%EF%BC%A9%EF%BC%A6%EF%BC%A51%EF%BC%A6&gs_lcrp=EgZjaHJvbWUyBggAEEUYOTIHCAEQABjvBTIHCAIQABjvBTIHCAMQABjvBTIHCAQQABjvBTIHCAUQABjvBdIBBzUyN2owajmoAgawAgHxBTSa_pNhIBd1&sourceid=chrome&source=chrome.ob&ie=UTF-8",
-      "urlKind": "search",
+      "sheetUrl": "https://www.google.com/maps/search/?api=1&query=%E7%84%BC%E3%81%8D%E8%8F%93%E5%AD%90%E3%81%BB%E3%81%A4%E3%81%BB%E3%81%A4%20090-8606-0457%20",
+      "urlKind": "mapsApi",
       "route": "電話・店名で検索",
       "queries": [
         "090-8606-0457",
@@ -10934,42 +10888,22 @@
           "addressLevel": "exact"
         },
         {
-          "name": "HONOKA COFFEE & BAKE ラゾーナ川崎プラザ店",
-          "address": "神奈川県川崎市幸区堀川町７２−１ グラン・フード 1階 内",
-          "phone": "044-589-8300",
-          "cid": "4008807965524483530",
-          "url": "https://www.google.com/maps/place/HONOKA+COFFEE+%26+BAKE+%E3%83%A9%E3%82%BE%E3%83%BC%E3%83%8A%E5%B7%9D%E5%B4%8E%E3%83%97%E3%83%A9%E3%82%B6%E5%BA%97/data=!4m7!3m6!1s0x601861e713755515:0x37a2259ae5d7ddca!8m2!3d35.5324731!4d139.6963225!16s%2Fg%2F11n9cl26pz!19sChIJFVV1E-dhGGARyt3X5Zolojc",
-          "phoneMatch": false,
-          "nameRelation": "different",
-          "addressLevel": "none"
-        },
-        {
-          "name": "菓寮東照(とうてる)本店／茶寮木の実(このみ)",
-          "address": "神奈川県川崎市川崎区本町１丁目8−９ 東照ビル",
-          "phone": "044-244-5221",
-          "cid": "7956756954034675855",
-          "url": "https://www.google.com/maps/place/%E8%8F%93%E5%AF%AE%E6%9D%B1%E7%85%A7%28%E3%81%A8%E3%81%86%E3%81%A6%E3%82%8B%29%E6%9C%AC%E5%BA%97%EF%BC%8F%E8%8C%B6%E5%AF%AE%E6%9C%A8%E3%81%AE%E5%AE%9F%28%E3%81%93%E3%81%AE%E3%81%BF%29/data=!4m7!3m6!1s0x60186097c556a03d:0x6e6c144b015b208f!8m2!3d35.5326895!4d139.7032729!16s%2Fg%2F1w8w9_69!19sChIJPaBWxZdgGGARjyBbAUsUbG4",
-          "phoneMatch": false,
-          "nameRelation": "different",
-          "addressLevel": "none"
-        },
-        {
-          "name": "菓子Hotsu Hotsu",
-          "address": "岡山県岡山市北区表町１丁目１０−２３ LIFE",
+          "name": "やました 焼き菓子",
+          "address": "岡山県岡山市北区表町１丁目１０−２３",
           "phone": null,
-          "cid": "3931386595416995587",
-          "url": "https://www.google.com/maps/place/%E8%8F%93%E5%AD%90Hotsu+Hotsu/data=!4m7!3m6!1s0x355407f32eff83ff:0x368f1747768ff703!8m2!3d34.6630262!4d133.9290544!16s%2Fg%2F11nc5s98w_!19sChIJ_4P_LvMHVDURA_ePdkcXjzY",
+          "cid": "16202930777134269166",
+          "url": "https://www.google.com/maps/place/%E3%82%84%E3%81%BE%E3%81%97%E3%81%9F+%E7%84%BC%E3%81%8D%E8%8F%93%E5%AD%90/@34.6630299,133.929045,17z/data=!3m1!4b1!4m6!3m5!1s0x3554071db977d825:0xe0dc5fb1eb5502ee!8m2!3d34.6630299!4d133.929045!16s%2Fg%2F11r12t3lch",
           "phoneMatch": null,
           "nameRelation": "different",
           "addressLevel": "exact"
         }
       ],
-      "verdict": "要確認",
+      "verdict": "確認済み",
       "cid": "3931386595416995587",
       "mapName": "菓子Hotsu Hotsu",
       "mapAddress": "岡山県岡山市北区表町１丁目１０−２３ LIFE",
       "mapPhone": null,
-      "website": null,
+      "website": "https://www.instagram.com/hotsuhotsupan?cplk=MTgwNThtdGYxMTh5",
       "category": "菓子店",
       "mapUrl": "https://maps.google.com/?cid=3931386595416995587",
       "signals": {
@@ -10977,13 +10911,22 @@
         "nameRelation": "different",
         "addressLevel": "exact",
         "addressDetail": "町名・番地とも一致",
-        "addressSource": "検索URL"
+        "addressSource": "シート",
+        "clues": [
+          "E4: 店名「菓子Hotsu Hotsu」(読みが同じ)+住所(表町1-10-23)が E 列と一致・マップに電話の表示なし(オーナー決定)"
+        ]
       },
-      "reason": "店名・電話とも合う店が見つからず、最も近い候補を記録。マップに電話の表示なし／店名: different(シート「焼き菓子ほつほつ」/ マップ「菓子Hotsu Hotsu」)／住所(検索URL): exact・町名・番地とも一致",
-      "fetchedAt": "2026-10-26T08:26:15.717Z",
-      "kgmidHint": null,
+      "reason": "オーナー 2026-10-28(E 列=オーナーが調べた店名+住所を手がかりにしてよい・電話のちがいは可): 店名「菓子Hotsu Hotsu」(読みが同じ)+住所(表町1-10-23)が E 列と一致・マップに電話の表示なし(オーナー決定)(第1段の元の判定: 店名・電話とも合う店が見つからず、最も近い候補を記録。マップに電話の表示なし／店名: different(シート「焼き菓子ほつほつ」/ マップ「菓子Hotsu Hotsu」)／住所(シート): exact・町名・番地とも一致)",
+      "fetchedAt": "2026-10-27T16:40:35.999Z",
       "statusSignals": [],
-      "seconds": 43.4
+      "seconds": 34.7,
+      "verdictOriginal": "要確認",
+      "reasonOriginal": "店名・電話とも合う店が見つからず、最も近い候補を記録。マップに電話の表示なし／店名: different(シート「焼き菓子ほつほつ」/ マップ「菓子Hotsu Hotsu」)／住所(シート): exact・町名・番地とも一致",
+      "decisionE": {
+        "rule": "E4",
+        "label": "店名「菓子Hotsu Hotsu」(読みが同じ)+住所(表町1-10-23)が E 列と一致・マップに電話の表示なし(オーナー決定)",
+        "by": "オーナー 2026-10-28(E 列=オーナーが調べた店名+住所を手がかりにしてよい・電話のちがいは可)"
+      }
     },
     "トリニティアポ:226": {
       "tab": "トリニティアポ",
@@ -11278,30 +11221,10 @@
           "url": "https://www.google.com/maps/place/%E7%AB%B9%E7%94%B0%E3%82%AB%E3%83%95%E3%82%A7/data=!4m7!3m6!1s0x3546cfce2e4ba8f7:0x5ae9bb21f0f11d24!8m2!3d32.9662203!4d131.3925437!16s%2Fg%2F11t2ybz5w6!19sChIJ96hLLs7PRjURJB3x8CG76Vo",
           "phoneMatch": false,
           "nameRelation": "exact",
-          "addressLevel": null
-        },
-        {
-          "name": "Cafe 風と土",
-          "address": "大分県竹田市直入町大字長湯戸ノ上７７５９",
-          "phone": "0974-75-3131",
-          "cid": "14542720051136897899",
-          "url": "https://www.google.com/maps/place/Cafe+%E9%A2%A8%E3%81%A8%E5%9C%9F/data=!4m7!3m6!1s0x3546c9ef757d888b:0xc9d21ed5fbf7236b!8m2!3d33.0674432!4d131.3881181!16s%2Fg%2F11txcf866d!19sChIJi4h9de_JRjURayP3-9Ue0sk",
-          "phoneMatch": false,
-          "nameRelation": "different",
-          "addressLevel": null
-        },
-        {
-          "name": "Cafe Boi Boi",
-          "address": "大分県竹田市久住町大字久住４０５０−２３",
-          "phone": "0974-76-0333",
-          "cid": "5354014763943788983",
-          "url": "https://www.google.com/maps/place/Cafe+Boi+Boi/data=!4m7!3m6!1s0x354133709dabd0b9:0x4a4d480f9f1101b7!8m2!3d33.0462192!4d131.2472861!16s%2Fg%2F1tf2vks5!19sChIJudCrnXAzQTURtwERnw9ITUo",
-          "phoneMatch": false,
-          "nameRelation": "different",
-          "addressLevel": null
+          "addressLevel": "exact"
         }
       ],
-      "verdict": "要確認",
+      "verdict": "確認済み",
       "cid": "6550972887437745444",
       "mapName": "竹田カフェ",
       "mapAddress": "大分県竹田市竹田町４０５−３",
@@ -11312,17 +11235,18 @@
       "signals": {
         "phoneMatch": false,
         "nameRelation": "exact",
-        "addressLevel": null,
-        "addressDetail": null,
-        "addressSource": null,
+        "addressLevel": "exact",
+        "addressDetail": "町名・番地とも一致",
+        "addressSource": "シート",
         "clues": [
-          "店名"
+          "店名",
+          "住所(番地まで)"
         ]
       },
-      "reason": "店名は似ているが電話・住所で裏が取れない。電話がちがう(シート 080-9794-6585 / マップ 070-8938-0401)／店名: exact(シート「竹田カフェ」/ マップ「竹田カフェ」)",
-      "fetchedAt": "2026-10-27T00:48:35.424Z",
+      "reason": "手がかり: 店名＋住所(番地まで)。電話がちがう(シート 080-9794-6585 / マップ 070-8938-0401)／店名: exact(シート「竹田カフェ」/ マップ「竹田カフェ」)／住所(シート): exact・町名・番地とも一致",
+      "fetchedAt": "2026-10-27T16:29:48.886Z",
       "statusSignals": [],
-      "seconds": 34.7
+      "seconds": 24.9
     },
     "トリニティアポ:231": {
       "tab": "トリニティアポ",
@@ -11396,20 +11320,10 @@
           "url": "https://www.google.com/maps/place/Dog+Cafe+Eight+%E3%83%89%E3%83%83%E3%82%B0+%E3%82%AB%E3%83%95%E3%82%A7+%E3%82%A8%E3%82%A4%E3%83%88/data=!4m7!3m6!1s0x60222958824eada9:0x918aeb5482eec96!8m2!3d36.4499823!4d140.5724507!16s%2Fg%2F11v1bfykdn!19sChIJqa1OglgpImARluwuSLWuGAk",
           "phoneMatch": false,
           "nameRelation": "contains",
-          "addressLevel": null
-        },
-        {
-          "name": "（10/8：オープン）ドッグカフェ エイト",
-          "address": "茨城県那珂郡東海村村松２４１５−２",
-          "phone": "029-229-3933",
-          "cid": "17824477522975256314",
-          "url": "https://www.google.com/maps/place/%EF%BC%8810%2F8%EF%BC%9A%E3%82%AA%E3%83%BC%E3%83%97%E3%83%B3%EF%BC%89%E3%83%89%E3%83%83%E3%82%B0%E3%82%AB%E3%83%95%E3%82%A7+%E3%82%A8%E3%82%A4%E3%83%88/data=!4m7!3m6!1s0x602229b23493db25:0xf75d43de77dfeefa!8m2!3d36.4499823!4d140.5724507!16s%2Fg%2F11vfb2qgql!19sChIJJduTNLIpImAR-u7fd95DXfc",
-          "phoneMatch": false,
-          "nameRelation": "different",
-          "addressLevel": null
+          "addressLevel": "exact"
         }
       ],
-      "verdict": "要確認",
+      "verdict": "確認済み",
       "cid": "655465839405755542",
       "mapName": "Dog Cafe Eight ドッグ カフェ エイト",
       "mapAddress": "茨城県那珂郡東海村村松２４１５−２",
@@ -11420,17 +11334,18 @@
       "signals": {
         "phoneMatch": false,
         "nameRelation": "contains",
-        "addressLevel": null,
-        "addressDetail": null,
-        "addressSource": null,
+        "addressLevel": "exact",
+        "addressDetail": "町名・番地とも一致",
+        "addressSource": "シート",
         "clues": [
-          "店名"
+          "店名",
+          "住所(番地まで)"
         ]
       },
-      "reason": "店名は似ているが電話・住所で裏が取れない。電話がちがう(シート 090-2222-3505 / マップ 029-229-3933)／店名: contains(シート「DogCafeEight」/ マップ「Dog Cafe Eight ドッグ カフェ エイト」)",
-      "fetchedAt": "2026-10-27T00:49:26.890Z",
+      "reason": "手がかり: 店名＋住所(番地まで)。電話がちがう(シート 090-2222-3505 / マップ 029-229-3933)／店名: contains(シート「DogCafeEight」/ マップ「Dog Cafe Eight ドッグ カフェ エイト」)／住所(シート): exact・町名・番地とも一致",
+      "fetchedAt": "2026-10-27T16:30:21.493Z",
       "statusSignals": [],
-      "seconds": 29.9
+      "seconds": 26.1
     },
     "トリニティアポ:233": {
       "tab": "トリニティアポ",
@@ -11592,21 +11507,44 @@
       "urlKind": "mapsApi",
       "route": "電話・店名で検索",
       "queries": [
-        "090-1909-3550"
+        "090-1909-3550",
+        "090-1909-3550 久久比神社 くくひじんじゃ 兵庫県豊岡市下宮318番地2"
       ],
-      "candidates": [],
-      "verdict": "見つからない",
-      "cid": null,
-      "mapName": null,
-      "mapAddress": null,
-      "mapPhone": null,
-      "website": null,
-      "category": null,
-      "mapUrl": null,
-      "signals": null,
-      "reason": "マップ検索で候補が出なかった/店の画面に到達できなかった",
-      "fetchedAt": "2026-10-27T09:02:13.155Z",
-      "seconds": 18.6
+      "candidates": [
+        {
+          "name": "久久比神社",
+          "address": "兵庫県豊岡市下宮３１８−２",
+          "phone": "090-1909-3550",
+          "cid": "10012132461561465567",
+          "url": "https://www.google.com/maps/place/%E4%B9%85%E4%B9%85%E6%AF%94%E7%A5%9E%E7%A4%BE/@35.5573752,134.8436074,17z/data=!3m1!4b1!4m6!3m5!1s0x5fffc6a49df6a8df:0x8af23d6d5f874adf!8m2!3d35.5573752!4d134.8436074!16s%2Fg%2F122k64fc",
+          "phoneMatch": true,
+          "nameRelation": "n/a",
+          "addressLevel": "exact"
+        }
+      ],
+      "verdict": "確認済み",
+      "cid": "10012132461561465567",
+      "mapName": "久久比神社",
+      "mapAddress": "兵庫県豊岡市下宮３１８−２",
+      "mapPhone": "090-1909-3550",
+      "website": "http://www.happywing.jp/kukuhi.html",
+      "category": "神社",
+      "mapUrl": "https://maps.google.com/?cid=10012132461561465567",
+      "signals": {
+        "phoneMatch": true,
+        "nameRelation": "n/a",
+        "addressLevel": "exact",
+        "addressDetail": "町名・番地とも一致",
+        "addressSource": "シート",
+        "clues": [
+          "電話",
+          "住所(番地まで)"
+        ]
+      },
+      "reason": "手がかり: 電話＋住所(番地まで)。電話が一致／店名: n/a(シート「090-1909-3550」/ マップ「久久比神社」)／住所(シート): exact・町名・番地とも一致",
+      "fetchedAt": "2026-10-27T16:41:12.255Z",
+      "statusSignals": [],
+      "seconds": 27.1
     },
     "トリニティアポ:237": {
       "tab": "トリニティアポ",
@@ -12228,10 +12166,10 @@
           "url": "https://www.google.com/maps/place/%E3%81%86%E3%81%A9%E3%82%93bar+%E3%82%82%E3%81%86%E3%81%84%E3%81%A3%E3%81%91%E3%82%93/@26.2571078,127.7507918,17z/data=!3m1!4b1!4m6!3m5!1s0x34e56d725ea9dbff:0xea09bc9e10530e5f!8m2!3d26.2571078!4d127.7507918!16s%2Fg%2F11x8vml3jx",
           "phoneMatch": false,
           "nameRelation": "contains",
-          "addressLevel": null
+          "addressLevel": "near"
         }
       ],
-      "verdict": "要確認",
+      "verdict": "確認済み",
       "cid": "16864217666730266207",
       "mapName": "うどんbar もういっけん",
       "mapAddress": "沖縄県宜野湾市我如古４丁目５−７",
@@ -12242,17 +12180,18 @@
       "signals": {
         "phoneMatch": false,
         "nameRelation": "contains",
-        "addressLevel": null,
-        "addressDetail": null,
-        "addressSource": null,
+        "addressLevel": "near",
+        "addressDetail": "番地一致（末尾の差: シート4-5-7-101 / マップ4-5-7）",
+        "addressSource": "シート",
         "clues": [
-          "店名"
+          "店名",
+          "住所(番地まで)"
         ]
       },
-      "reason": "店名は似ているが電話・住所で裏が取れない。電話がちがう(シート 080-4021-3040 / マップ 080-3228-3040)／店名: contains(シート「もういっけん」/ マップ「うどんbar もういっけん」)",
-      "fetchedAt": "2026-10-27T09:05:47.036Z",
+      "reason": "手がかり: 店名＋住所(番地まで)。電話がちがう(シート 080-4021-3040 / マップ 080-3228-3040)／店名: contains(シート「もういっけん」/ マップ「うどんbar もういっけん」)／住所(シート): near・番地一致（末尾の差: シート4-5-7-101 / マップ4-5-7）",
+      "fetchedAt": "2026-10-27T16:31:23.659Z",
       "statusSignals": [],
-      "seconds": 28.1
+      "seconds": 26.2
     },
     "トリニティアポ:250": {
       "tab": "トリニティアポ",
@@ -12266,18 +12205,19 @@
       "route": "電話・店名で検索",
       "queries": [
         "090-6588-1767",
+        "一丸 愛知県名古屋市名東区一社4-1第二名昭ビル1F",
         "一丸"
       ],
       "candidates": [
         {
-          "name": "一龍",
-          "address": "神奈川県川崎市川崎区浜町２丁目１４−３",
-          "phone": null,
-          "cid": "1662667489339375317",
-          "url": "https://www.google.com/maps/place/%E4%B8%80%E9%BE%8D/data=!4m7!3m6!1s0x601867312fe70001:0x1712fb45b9a9fed5!8m2!3d35.5130099!4d139.7172682!16s%2Fg%2F11cmrtc3y9!19sChIJAQDnLzFnGGAR1f6puUX7Ehc",
-          "phoneMatch": null,
+          "name": "餃子らーめん一丸本店",
+          "address": "愛知県名古屋市名東区一社４丁目１−１ 第二名昭ビル 1F",
+          "phone": "052-888-1110",
+          "cid": "18318890463871576176",
+          "url": "https://www.google.com/maps/place/%E9%A4%83%E5%AD%90%E3%82%89%E3%83%BC%E3%82%81%E3%82%93%E4%B8%80%E4%B8%B8%E6%9C%AC%E5%BA%97/@35.1673031,137.0005664,17z/data=!3m1!4b1!4m6!3m5!1s0x60036569c5346375:0xfe39c5d1ba5b2870!8m2!3d35.1673031!4d137.0005664!16s%2Fg%2F11btrrzn7f",
+          "phoneMatch": false,
           "nameRelation": "different",
-          "addressLevel": "none"
+          "addressLevel": "exact"
         },
         {
           "name": "中華そば 一丸 KAZU-MARU",
@@ -12298,28 +12238,47 @@
           "phoneMatch": false,
           "nameRelation": "different",
           "addressLevel": "none"
+        },
+        {
+          "name": "餃子らーめん一丸本店",
+          "address": "愛知県名古屋市名東区一社４丁目１−１ 第二名昭ビル 1F",
+          "phone": "052-888-1110",
+          "cid": "18318890463871576176",
+          "url": "https://www.google.com/maps/place/%E9%A4%83%E5%AD%90%E3%82%89%E3%83%BC%E3%82%81%E3%82%93%E4%B8%80%E4%B8%B8%E6%9C%AC%E5%BA%97/data=!4m7!3m6!1s0x60036569c5346375:0xfe39c5d1ba5b2870!8m2!3d35.1673031!4d137.0005664!16s%2Fg%2F11btrrzn7f!19sChIJdWM0xWllA2ARcChbutHFOf4",
+          "phoneMatch": false,
+          "nameRelation": "different",
+          "addressLevel": "exact"
         }
       ],
-      "verdict": "要確認",
-      "cid": "1662667489339375317",
-      "mapName": "一龍",
-      "mapAddress": "神奈川県川崎市川崎区浜町２丁目１４−３",
-      "mapPhone": null,
-      "website": null,
+      "verdict": "確認済み",
+      "cid": "18318890463871576176",
+      "mapName": "餃子らーめん一丸本店",
+      "mapAddress": "愛知県名古屋市名東区一社４丁目１−１ 第二名昭ビル 1F",
+      "mapPhone": "052-888-1110",
+      "website": "https://www.instagram.com/1110ichimaru/",
       "category": "ラーメン屋",
-      "mapUrl": "https://maps.google.com/?cid=1662667489339375317",
+      "mapUrl": "https://maps.google.com/?cid=18318890463871576176",
       "signals": {
-        "phoneMatch": null,
+        "phoneMatch": false,
         "nameRelation": "different",
-        "addressLevel": "none",
-        "addressDetail": "町名までがちがう（シート:愛知県名古屋市名東区一社 / マップ:神奈川県川崎市川崎区浜町）",
+        "addressLevel": "exact",
+        "addressDetail": "町名・番地とも一致",
         "addressSource": "シート",
-        "clues": []
+        "clues": [
+          "E1: 店名(「餃子らーめん一丸本店」に「一丸」を含む)+住所(名東区一社4-1-1 第二名昭ビル1F)が E 列と一致"
+        ]
       },
-      "reason": "店名・電話とも合う店が見つからず、最も近い候補を記録。マップに電話の表示なし／店名: different(シート「一丸」/ マップ「一龍」)／住所(シート): none・町名までがちがう（シート:愛知県名古屋市名東区一社 / マップ:神奈川県川崎市川崎区浜町）",
-      "fetchedAt": "2026-10-27T09:21:59.360Z",
+      "reason": "オーナー 2026-10-28(E 列=オーナーが調べた店名+住所を手がかりにしてよい・電話のちがいは可): 店名(「餃子らーめん一丸本店」に「一丸」を含む)+住所(名東区一社4-1-1 第二名昭ビル1F)が E 列と一致(第1段の元の判定: 店名・電話とも合う店が見つからず、最も近い候補を記録。電話がちがう(シート 090-6588-1767 / マップ 052-888-1110)／店名: different(シート「一丸」/ マップ「餃子らーめん一丸本店」)／住所(シート): exact・町名・番地とも一致)",
+      "fetchedAt": "2026-10-27T16:41:59.930Z",
       "statusSignals": [],
-      "seconds": 34.8
+      "seconds": 41.5,
+      "verdictOriginal": "要確認",
+      "reasonOriginal": "店名・電話とも合う店が見つからず、最も近い候補を記録。電話がちがう(シート 090-6588-1767 / マップ 052-888-1110)／店名: different(シート「一丸」/ マップ「餃子らーめん一丸本店」)／住所(シート): exact・町名・番地とも一致",
+      "decisionE": {
+        "rule": "E1",
+        "label": "店名(「餃子らーめん一丸本店」に「一丸」を含む)+住所(名東区一社4-1-1 第二名昭ビル1F)が E 列と一致",
+        "by": "オーナー 2026-10-28(E 列=オーナーが調べた店名+住所を手がかりにしてよい・電話のちがいは可)"
+      }
     },
     "トリニティアポ:251": {
       "tab": "トリニティアポ",
@@ -12333,60 +12292,43 @@
       "route": "電話・店名で検索",
       "queries": [
         "080-2425-8462",
-        "楽"
+        "楽 大阪府大阪市福島区福島5丁目13-7"
       ],
       "candidates": [
         {
-          "name": "名門芝浦ホルモン 楽",
-          "address": "神奈川県川崎市川崎区京町３丁目２９−７",
-          "phone": "044-223-7667",
-          "cid": "15039301135166657554",
-          "url": "https://www.google.com/maps/place/%E5%90%8D%E9%96%80%E8%8A%9D%E6%B5%A6%E3%83%9B%E3%83%AB%E3%83%A2%E3%83%B3+%E6%A5%BD/data=!4m7!3m6!1s0x601867c6f334676f:0xd0b654b367bcd412!8m2!3d35.5075673!4d139.6984596!16s%2Fg%2F11m80hz0xk!19sChIJb2c088ZnGGAREtS8Z7NUttA",
+          "name": "楽",
+          "address": "大阪府大阪市福島区福島５丁目１３−７",
+          "phone": "06-6451-3187",
+          "cid": "1188632426218574658",
+          "url": "https://www.google.com/maps/place/%E6%A5%BD/@34.6964416,135.4861685,17z/data=!3m1!4b1!4m6!3m5!1s0x6000e72b11f36b3d:0x107edee4dd44d342!8m2!3d34.6964416!4d135.4861685!16s%2Fg%2F11h2ngy8t1",
           "phoneMatch": false,
-          "nameRelation": "different",
-          "addressLevel": "none"
-        },
-        {
-          "name": "酒楽",
-          "address": "神奈川県川崎市川崎区大島３丁目１６−１２ 台湾料理 麗華楼",
-          "phone": "044-222-6711",
-          "cid": "11244450717668074157",
-          "url": "https://www.google.com/maps/place/%E9%85%92%E6%A5%BD/data=!4m7!3m6!1s0x601867334e3c7287:0x9c0c505a20fde2ad!8m2!3d35.5190603!4d139.7173967!16s%2Fg%2F1tcy48jy!19sChIJh3I8TjNnGGARreL9IFpQDJw",
-          "phoneMatch": false,
-          "nameRelation": "different",
-          "addressLevel": "none"
-        },
-        {
-          "name": "WA Dining 楽",
-          "address": "神奈川県横浜市鶴見区元宮２丁目１−３９ RAKU SPA 鶴見 1階",
-          "phone": null,
-          "cid": "8111905991526344120",
-          "url": "https://www.google.com/maps/place/WA+Dining+%E6%A5%BD/data=!4m7!3m6!1s0x60185f027462a47d:0x70934785444a65b8!8m2!3d35.5233005!4d139.677754!16s%2Fg%2F11s7dy7chd!19sChIJfaRidAJfGGARuGVKRIVHk3A",
-          "phoneMatch": null,
-          "nameRelation": "different",
-          "addressLevel": "none"
+          "nameRelation": "exact",
+          "addressLevel": "exact"
         }
       ],
-      "verdict": "要確認",
-      "cid": "15039301135166657554",
-      "mapName": "名門芝浦ホルモン 楽",
-      "mapAddress": "神奈川県川崎市川崎区京町３丁目２９−７",
-      "mapPhone": "044-223-7667",
-      "website": "https://hitosara.com/0004037794/?cid=gm_hp",
-      "category": "ホルモン焼肉店",
-      "mapUrl": "https://maps.google.com/?cid=15039301135166657554",
+      "verdict": "確認済み",
+      "cid": "1188632426218574658",
+      "mapName": "楽",
+      "mapAddress": "大阪府大阪市福島区福島５丁目１３−７",
+      "mapPhone": "06-6451-3187",
+      "website": "https://subsaku.com/raku/",
+      "category": "居酒屋",
+      "mapUrl": "https://maps.google.com/?cid=1188632426218574658",
       "signals": {
         "phoneMatch": false,
-        "nameRelation": "different",
-        "addressLevel": "none",
-        "addressDetail": "町名までがちがう（シート:大阪府大阪市福島区福島 / マップ:神奈川県川崎市川崎区京町）",
+        "nameRelation": "exact",
+        "addressLevel": "exact",
+        "addressDetail": "町名・番地とも一致",
         "addressSource": "シート",
-        "clues": []
+        "clues": [
+          "店名",
+          "住所(番地まで)"
+        ]
       },
-      "reason": "店名・電話とも合う店が見つからず、最も近い候補を記録。電話がちがう(シート 080-2425-8462 / マップ 044-223-7667)／店名: different(シート「楽」/ マップ「名門芝浦ホルモン 楽」)／住所(シート): none・町名までがちがう（シート:大阪府大阪市福島区福島 / マップ:神奈川県川崎市川崎区京町）",
-      "fetchedAt": "2026-10-27T09:22:42.972Z",
+      "reason": "手がかり: 店名＋住所(番地まで)。電話がちがう(シート 080-2425-8462 / マップ 06-6451-3187)／店名: exact(シート「楽」/ マップ「楽」)／住所(シート): exact・町名・番地とも一致",
+      "fetchedAt": "2026-10-27T16:42:34.622Z",
       "statusSignals": [],
-      "seconds": 34
+      "seconds": 26.3
     },
     "トリニティアポ:252": {
       "tab": "トリニティアポ",

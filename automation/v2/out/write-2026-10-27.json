@@ -3,8 +3,8 @@
     "date": "2026-10-27",
     "startedAt": "2026-10-27T00:49:47.306Z",
     "verifyFile": "automation/v2/out/verify-2026-10-27.json",
-    "args": "--date 2026-10-27 --only-row 235",
-    "updatedAt": "2026-10-27T16:13:34.307Z"
+    "args": "--date 2026-10-27 --only-row 58,74,119,166,183,185,186,220,224,225,230,232,236,249,250,251",
+    "updatedAt": "2026-10-27T17:24:49.292Z"
   },
   "environment": null,
   "results": {
@@ -2036,6 +2036,631 @@
         "article": "/life/article/li0063"
       },
       "finishedAt": "2026-10-27T10:38:34.465Z"
+    },
+    "tri-gourmet-58": {
+      "key": "tri-gourmet-58",
+      "row": 58,
+      "name": "若鰤",
+      "vertical": "グルメ",
+      "articleId": "鮮魚料理若鰤",
+      "status": "成功",
+      "stage": "done",
+      "startedAt": "2026-10-27T16:43:55.273Z",
+      "seconds": {
+        "total": 98,
+        "claude": 96
+      },
+      "photos": {
+        "candidates": 10,
+        "maps": 10,
+        "official": 0,
+        "rejectedByMachine": 0,
+        "used": 3,
+        "emptyFrames": 1
+      },
+      "check": {
+        "rewrote": true,
+        "shapeProblems": [],
+        "sentenceProblems": 0,
+        "facts": {
+          "total": 13,
+          "verified": 13
+        }
+      },
+      "storeId": "r764",
+      "onePage": "表に入れない(検索に出す条件 実写・住所・営業時間 のどれかが無い。記事は /feature/<記事ID> のまま)",
+      "storeBuilt": true,
+      "storeNote": null,
+      "urls": {
+        "article": "/feature/鮮魚料理若鰤",
+        "shop": "/restaurant/r764"
+      },
+      "finishedAt": "2026-10-27T17:19:50.169Z"
+    },
+    "tri-beauty-74": {
+      "key": "tri-beauty-74",
+      "row": 74,
+      "name": "アイラッシュアンドネイルサロンAiris",
+      "vertical": "ビューティー",
+      "status": "成功",
+      "stage": "done",
+      "startedAt": "2026-10-27T16:44:49.089Z",
+      "seconds": {
+        "total": 0
+      },
+      "photos": {
+        "candidates": 10,
+        "maps": 10,
+        "official": 0,
+        "rejectedByMachine": 0,
+        "used": 10,
+        "emptyFrames": 0
+      },
+      "check": {
+        "rewrote": false,
+        "shapeProblems": [],
+        "sentenceProblems": 0,
+        "facts": {
+          "total": 13,
+          "verified": 13
+        }
+      },
+      "placeId": "be0109",
+      "featureInGenerated": false,
+      "featureNote": null,
+      "urls": {
+        "shop": "/beauty/shop/be0109",
+        "article": null
+      },
+      "finishedAt": "2026-10-27T17:19:50.632Z"
+    },
+    "tri-gourmet-119": {
+      "key": "tri-gourmet-119",
+      "row": 119,
+      "name": "から揚げドラゴンチキンハイボールきむにぃ",
+      "vertical": "グルメ",
+      "articleId": "から揚げドラゴンチキンハイボールキムにい",
+      "status": "成功",
+      "stage": "done",
+      "startedAt": "2026-10-27T16:45:49.177Z",
+      "seconds": {
+        "total": 1
+      },
+      "photos": {
+        "candidates": 12,
+        "maps": 10,
+        "official": 2,
+        "rejectedByMachine": 16,
+        "used": 5,
+        "emptyFrames": 1
+      },
+      "check": {
+        "rewrote": false,
+        "shapeProblems": [],
+        "sentenceProblems": 0,
+        "facts": {
+          "total": 19,
+          "verified": 19
+        }
+      },
+      "storeId": "r757",
+      "onePage": "表に入れない(検索に出す条件 実写・住所・営業時間 のどれかが無い。記事は /feature/<記事ID> のまま)",
+      "storeBuilt": true,
+      "storeNote": null,
+      "urls": {
+        "article": "/feature/から揚げドラゴンチキンハイボールキムにい",
+        "shop": "/restaurant/r757"
+      },
+      "finishedAt": "2026-10-27T17:07:43.744Z"
+    },
+    "tri-gourmet-166": {
+      "key": "tri-gourmet-166",
+      "row": 166,
+      "name": "陽月",
+      "vertical": "グルメ",
+      "articleId": "陽月kagezuki",
+      "status": "成功",
+      "stage": "done",
+      "startedAt": "2026-10-27T16:46:57.932Z",
+      "seconds": {
+        "total": 68,
+        "claude": 67
+      },
+      "photos": {
+        "candidates": 9,
+        "maps": 9,
+        "official": 0,
+        "rejectedByMachine": 1,
+        "used": 4,
+        "emptyFrames": 0
+      },
+      "check": {
+        "rewrote": true,
+        "shapeProblems": [],
+        "sentenceProblems": 0,
+        "facts": {
+          "total": 6,
+          "verified": 6
+        }
+      },
+      "storeId": "r765",
+      "onePage": "表に入れない(検索に出す条件 実写・住所・営業時間 のどれかが無い。記事は /feature/<記事ID> のまま)",
+      "storeBuilt": true,
+      "storeNote": null,
+      "urls": {
+        "article": "/feature/陽月kagezuki",
+        "shop": "/restaurant/r765"
+      },
+      "finishedAt": "2026-10-27T17:20:58.961Z"
+    },
+    "tri-gourmet-183": {
+      "key": "tri-gourmet-183",
+      "row": 183,
+      "name": "090-2248-3568",
+      "vertical": "グルメ",
+      "articleId": ".tenn",
+      "status": "成功",
+      "stage": "done",
+      "startedAt": "2026-10-27T16:47:31.217Z",
+      "seconds": {
+        "total": 1
+      },
+      "photos": {
+        "candidates": 10,
+        "maps": 10,
+        "official": 0,
+        "rejectedByMachine": 0,
+        "used": 4,
+        "emptyFrames": 0
+      },
+      "check": {
+        "rewrote": false,
+        "shapeProblems": [],
+        "sentenceProblems": 0,
+        "facts": {
+          "total": 5,
+          "verified": 5
+        }
+      },
+      "storeId": "r758",
+      "onePage": "表に追加(/feature/<記事ID> は /restaurant/<店ID> へ転送)",
+      "storeBuilt": true,
+      "storeNote": null,
+      "urls": {
+        "article": "/feature/.tenn",
+        "shop": "/restaurant/r758"
+      },
+      "finishedAt": "2026-10-27T17:07:44.339Z"
+    },
+    "tri-gourmet-185": {
+      "key": "tri-gourmet-185",
+      "row": 185,
+      "name": "KOGUMACOFFEE",
+      "vertical": "グルメ",
+      "articleId": "コグマコーヒー",
+      "status": "成功",
+      "stage": "done",
+      "startedAt": "2026-10-27T16:47:31.740Z",
+      "seconds": {
+        "total": 2
+      },
+      "photos": {
+        "candidates": 10,
+        "maps": 10,
+        "official": 0,
+        "rejectedByMachine": 0,
+        "used": 5,
+        "emptyFrames": 0
+      },
+      "check": {
+        "rewrote": false,
+        "shapeProblems": [],
+        "sentenceProblems": 0,
+        "facts": {
+          "total": 14,
+          "verified": 14
+        }
+      },
+      "storeId": null,
+      "onePage": "対象外(店のデータが出なかった)",
+      "storeBuilt": false,
+      "storeNote": "記事の住所と GBP の市区町村が違う",
+      "urls": {
+        "article": "/feature/コグマコーヒー",
+        "shop": null
+      },
+      "finishedAt": "2026-10-27T17:21:01.015Z"
+    },
+    "tri-gourmet-186": {
+      "key": "tri-gourmet-186",
+      "row": 186,
+      "name": "麺処清水",
+      "vertical": "グルメ",
+      "articleId": "麺処清水",
+      "status": "成功",
+      "stage": "done",
+      "startedAt": "2026-10-27T16:48:30.981Z",
+      "seconds": {
+        "total": 64,
+        "claude": 62
+      },
+      "photos": {
+        "candidates": 10,
+        "maps": 10,
+        "official": 0,
+        "rejectedByMachine": 0,
+        "used": 5,
+        "emptyFrames": 1
+      },
+      "check": {
+        "rewrote": true,
+        "shapeProblems": [],
+        "sentenceProblems": 0,
+        "facts": {
+          "total": 11,
+          "verified": 11
+        }
+      },
+      "storeId": "r766",
+      "onePage": "表に入れない(検索に出す条件 実写・住所・営業時間 のどれかが無い。記事は /feature/<記事ID> のまま)",
+      "storeBuilt": true,
+      "storeNote": null,
+      "urls": {
+        "article": "/feature/麺処清水",
+        "shop": "/restaurant/r766"
+      },
+      "finishedAt": "2026-10-27T17:22:05.229Z"
+    },
+    "tri-gourmet-220": {
+      "key": "tri-gourmet-220",
+      "row": 220,
+      "name": "壱",
+      "vertical": "グルメ",
+      "articleId": "一汁おにぎり壱",
+      "status": "成功",
+      "stage": "done",
+      "startedAt": "2026-10-27T16:49:29.485Z",
+      "seconds": {
+        "total": 1
+      },
+      "photos": {
+        "candidates": 26,
+        "maps": 10,
+        "official": 16,
+        "rejectedByMachine": 2,
+        "used": 6,
+        "emptyFrames": 0
+      },
+      "check": {
+        "rewrote": false,
+        "shapeProblems": [],
+        "sentenceProblems": 0,
+        "facts": {
+          "total": 20,
+          "verified": 20
+        }
+      },
+      "storeId": "r759",
+      "onePage": "表に入れない(検索に出す条件 実写・住所・営業時間 のどれかが無い。記事は /feature/<記事ID> のまま)",
+      "storeBuilt": true,
+      "storeNote": null,
+      "urls": {
+        "article": "/feature/一汁おにぎり壱",
+        "shop": "/restaurant/r759"
+      },
+      "finishedAt": "2026-10-27T17:07:44.925Z"
+    },
+    "tri-gourmet-224": {
+      "key": "tri-gourmet-224",
+      "row": 224,
+      "name": "ノーズ（ｎｏｚ）ＣＡＦＥ",
+      "vertical": "グルメ",
+      "articleId": "ノーズ（noz）CAFE",
+      "status": "成功",
+      "stage": "done",
+      "startedAt": "2026-10-27T16:50:44.065Z",
+      "seconds": {
+        "total": 1
+      },
+      "photos": {
+        "candidates": 9,
+        "maps": 8,
+        "official": 1,
+        "rejectedByMachine": 19,
+        "used": 4,
+        "emptyFrames": 1
+      },
+      "check": {
+        "rewrote": false,
+        "shapeProblems": [],
+        "sentenceProblems": 0,
+        "facts": {
+          "total": 11,
+          "verified": 11
+        }
+      },
+      "storeId": "r760",
+      "onePage": "表に入れない(検索に出す条件 実写・住所・営業時間 のどれかが無い。記事は /feature/<記事ID> のまま)",
+      "storeBuilt": true,
+      "storeNote": null,
+      "urls": {
+        "article": "/feature/ノーズ（noz）CAFE",
+        "shop": "/restaurant/r760"
+      },
+      "finishedAt": "2026-10-27T17:07:45.587Z"
+    },
+    "tri-gourmet-225": {
+      "key": "tri-gourmet-225",
+      "row": 225,
+      "name": "焼き菓子ほつほつ",
+      "vertical": "グルメ",
+      "articleId": "菓子HotsuHotsu",
+      "status": "成功",
+      "stage": "done",
+      "startedAt": "2026-10-27T16:51:54.664Z",
+      "seconds": {
+        "total": 2
+      },
+      "photos": {
+        "candidates": 10,
+        "maps": 10,
+        "official": 0,
+        "rejectedByMachine": 0,
+        "used": 4,
+        "emptyFrames": 2
+      },
+      "check": {
+        "rewrote": false,
+        "shapeProblems": [],
+        "sentenceProblems": 0,
+        "facts": {
+          "total": 13,
+          "verified": 13
+        }
+      },
+      "storeId": "r767",
+      "onePage": "表に入れない(検索に出す条件 実写・住所・営業時間 のどれかが無い。記事は /feature/<記事ID> のまま)",
+      "storeBuilt": true,
+      "storeNote": null,
+      "urls": {
+        "article": "/feature/菓子HotsuHotsu",
+        "shop": "/restaurant/r767"
+      },
+      "finishedAt": "2026-10-27T17:22:07.582Z"
+    },
+    "tri-gourmet-230": {
+      "key": "tri-gourmet-230",
+      "row": 230,
+      "name": "竹田カフェ",
+      "vertical": "グルメ",
+      "articleId": "竹田カフェ",
+      "status": "成功",
+      "stage": "done",
+      "startedAt": "2026-10-27T16:52:29.281Z",
+      "seconds": {
+        "total": 1
+      },
+      "photos": {
+        "candidates": 22,
+        "maps": 10,
+        "official": 12,
+        "rejectedByMachine": 6,
+        "used": 6,
+        "emptyFrames": 0
+      },
+      "check": {
+        "rewrote": false,
+        "shapeProblems": [],
+        "sentenceProblems": 0,
+        "facts": {
+          "total": 18,
+          "verified": 18
+        }
+      },
+      "storeId": "r761",
+      "onePage": "表に入れない(検索に出す条件 実写・住所・営業時間 のどれかが無い。記事は /feature/<記事ID> のまま)",
+      "storeBuilt": true,
+      "storeNote": null,
+      "urls": {
+        "article": "/feature/竹田カフェ",
+        "shop": "/restaurant/r761"
+      },
+      "finishedAt": "2026-10-27T17:07:46.207Z"
+    },
+    "tri-gourmet-232": {
+      "key": "tri-gourmet-232",
+      "row": 232,
+      "name": "DogCafeEight",
+      "vertical": "グルメ",
+      "articleId": "DogCafeEightドッグカフェエイト",
+      "status": "成功",
+      "stage": "done",
+      "startedAt": "2026-10-27T16:53:43.839Z",
+      "seconds": {
+        "total": 160,
+        "claude": 158
+      },
+      "photos": {
+        "candidates": 10,
+        "maps": 10,
+        "official": 0,
+        "rejectedByMachine": 0,
+        "used": 5,
+        "emptyFrames": 1
+      },
+      "check": {
+        "rewrote": true,
+        "shapeProblems": [],
+        "sentenceProblems": 0,
+        "facts": {
+          "total": 21,
+          "verified": 21
+        }
+      },
+      "storeId": "r768",
+      "onePage": "表に入れない(検索に出す条件 実写・住所・営業時間 のどれかが無い。記事は /feature/<記事ID> のまま)",
+      "storeBuilt": true,
+      "storeNote": null,
+      "urls": {
+        "article": "/feature/DogCafeEightドッグカフェエイト",
+        "shop": "/restaurant/r768"
+      },
+      "finishedAt": "2026-10-27T17:24:48.002Z"
+    },
+    "tri-life-236": {
+      "key": "tri-life-236",
+      "row": 236,
+      "name": "090-1909-3550",
+      "vertical": "くらし",
+      "status": "成功",
+      "stage": "done",
+      "startedAt": "2026-10-27T16:54:42.493Z",
+      "seconds": {
+        "total": 87,
+        "claude": 86
+      },
+      "photos": {
+        "candidates": 11,
+        "maps": 10,
+        "official": 1,
+        "rejectedByMachine": 17,
+        "used": 11,
+        "emptyFrames": 0
+      },
+      "check": {
+        "rewrote": true,
+        "shapeProblems": [],
+        "sentenceProblems": 0,
+        "facts": {
+          "total": 17,
+          "verified": 17
+        }
+      },
+      "placeId": "li0064",
+      "featureInGenerated": false,
+      "featureNote": null,
+      "urls": {
+        "shop": "/life/shop/li0064",
+        "article": "/life/article/li0064"
+      },
+      "finishedAt": "2026-10-27T17:09:12.752Z"
+    },
+    "tri-gourmet-249": {
+      "key": "tri-gourmet-249",
+      "row": 249,
+      "name": "もういっけん",
+      "vertical": "グルメ",
+      "articleId": "うどんbarもういっけん",
+      "status": "成功",
+      "stage": "done",
+      "startedAt": "2026-10-27T16:55:21.220Z",
+      "seconds": {
+        "total": 1
+      },
+      "photos": {
+        "candidates": 10,
+        "maps": 10,
+        "official": 0,
+        "rejectedByMachine": 0,
+        "used": 4,
+        "emptyFrames": 0
+      },
+      "check": {
+        "rewrote": false,
+        "shapeProblems": [],
+        "sentenceProblems": 0,
+        "facts": {
+          "total": 7,
+          "verified": 7
+        }
+      },
+      "storeId": "r762",
+      "onePage": "表に追加(/feature/<記事ID> は /restaurant/<店ID> へ転送)",
+      "storeBuilt": true,
+      "storeNote": null,
+      "urls": {
+        "article": "/feature/うどんbarもういっけん",
+        "shop": "/restaurant/r762"
+      },
+      "finishedAt": "2026-10-27T17:09:13.424Z"
+    },
+    "tri-gourmet-250": {
+      "key": "tri-gourmet-250",
+      "row": 250,
+      "name": "一丸",
+      "vertical": "グルメ",
+      "articleId": "餃子らーめん一丸本店",
+      "status": "成功",
+      "stage": "done",
+      "startedAt": "2026-10-27T16:55:58.541Z",
+      "seconds": {
+        "total": 1
+      },
+      "photos": {
+        "candidates": 10,
+        "maps": 10,
+        "official": 0,
+        "rejectedByMachine": 0,
+        "used": 3,
+        "emptyFrames": 1
+      },
+      "check": {
+        "rewrote": false,
+        "shapeProblems": [],
+        "sentenceProblems": 0,
+        "facts": {
+          "total": 12,
+          "verified": 12
+        }
+      },
+      "storeId": "r769",
+      "onePage": "表に入れない(検索に出す条件 実写・住所・営業時間 のどれかが無い。記事は /feature/<記事ID> のまま)",
+      "storeBuilt": true,
+      "storeNote": null,
+      "urls": {
+        "article": "/feature/餃子らーめん一丸本店",
+        "shop": "/restaurant/r769"
+      },
+      "finishedAt": "2026-10-27T17:24:49.291Z"
+    },
+    "tri-gourmet-251": {
+      "key": "tri-gourmet-251",
+      "row": 251,
+      "name": "楽",
+      "vertical": "グルメ",
+      "articleId": "楽",
+      "status": "成功",
+      "stage": "done",
+      "startedAt": "2026-10-27T16:56:56.500Z",
+      "seconds": {
+        "total": 1
+      },
+      "photos": {
+        "candidates": 13,
+        "maps": 10,
+        "official": 3,
+        "rejectedByMachine": 4,
+        "used": 5,
+        "emptyFrames": 1
+      },
+      "check": {
+        "rewrote": false,
+        "shapeProblems": [],
+        "sentenceProblems": 0,
+        "facts": {
+          "total": 13,
+          "verified": 13
+        }
+      },
+      "storeId": "r763",
+      "onePage": "表に追加(/feature/<記事ID> は /restaurant/<店ID> へ転送)",
+      "storeBuilt": true,
+      "storeNote": null,
+      "urls": {
+        "article": "/feature/楽",
+        "shop": "/restaurant/r763"
+      },
+      "finishedAt": "2026-10-27T17:09:14.052Z"
     }
   }
 }

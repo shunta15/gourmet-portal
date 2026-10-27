@@ -481,6 +481,9 @@ export const ONE_PAGE_SHOP_OF_FEATURE: Readonly<Record<string, string>> = {
   "MELUCAFE": "r754", // MELU CAFE
   "雅珈": "r755", // 雅珈
   "cafebarmiyami": "r756", // cafebar miyami
+  ".tenn": "r758", // .tenn
+  "うどんbarもういっけん": "r762", // うどんbar もういっけん
+  "楽": "r763", // 楽
 };
 
 const NFC = (s: string) => s.normalize("NFC");

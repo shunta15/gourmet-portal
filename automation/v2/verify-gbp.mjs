@@ -357,6 +357,11 @@ async function verifyOne(ctx, store) {
       if (store.phone) queries.push(store.phone);
       const hq = hintQ ? hintQ.normalize("NFKC").trim() : null;
       if (hq && phoneDigits(hq) !== phoneDigits(store.phone) && !/^[\d\-\s]+$/.test(hq)) queries.push(hq);
+      // 2026-10-28 E 列(店名+住所の Google 検索 URL)の q=: オーナーが店を調べて書いた「店名+住所(+電話)」。住所が入っているものを検索に足す
+      if (store.searchQ) {
+        const sq = store.searchQ.normalize("NFKC").replace(/〒\s*\d{3}-?\d{4}/g, "").replace(/\s*電話番号\s*$/, "").replace(/\s+/g, " ").trim();
+        if (sq && PREF_RE.test(sq) && !queries.includes(sq)) queries.push(sq);
+      }
       if (!store.nameIsPhone) {
         const nm = store.name.replace(/\s+/g, " ");
         if (!queries.includes(nm)) queries.push(nm);
