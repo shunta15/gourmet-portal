@@ -1,0 +1,170 @@
+{
+  "key": "tri-life-233",
+  "headline": "豊中市にある革製品の修理店。バッグや財布、靴、小物のクリーニングとリペアを扱い、郵送でも依頼を受け付けています",
+  "lede": "豊中市にある「彩洗工房」です。バッグ、財布、靴、小物など革製品のクリーニングとリペアを扱っています。大阪への持ち込みのほか郵送でのお預かりにも対応しており、全国から依頼できます。",
+  "sections": [
+    {
+      "heading": "場所とアクセス",
+      "body": "豊中市春日町のマンションの一室に店舗を構えています。牧落駅・箕面船場阪大前駅から車で約7分、千里中央駅から車で約9分の場所にあり、近隣にコインパーキングがあります。来店のほか、郵送でのお預かりにも対応しており、全国から依頼できます。"
+    },
+    {
+      "heading": "修理とクリーニングの内容",
+      "body": "バッグ、財布、靴、小物など革製品を中心に、クリーニングとリペアを扱っています。クリーニング&染め直し、メッキ処理、スエードの起毛復活・染色撥水、パイピング・コバ・レザー破れの再生修理、クリーニング・クレンジング・シミ抜き、リペア(修理、補色)、消臭・除菌などのメニューがあります。革製品のほか、ブランド品の小物類からスポーツ用品まで幅広い品の修理・リペアに対応しています。"
+    },
+    {
+      "heading": "依頼の方法",
+      "body": "直せるかどうかわからない段階でも相談を受け付けており、LINEや電話での問い合わせができます。来店前に事前の予約をお願いしています。ブランド品や革製品の買取サービスも行っており、リペアを施してから販売する取り組みもしています。"
+    }
+  ],
+  "menus": [
+    {
+      "name": "クリーニング&染め直し"
+    },
+    {
+      "name": "メッキ処理"
+    },
+    {
+      "name": "スエード(起毛復活、染色・撥水)"
+    },
+    {
+      "name": "クリーニング"
+    },
+    {
+      "name": "パイピング・コバ・レザー破れ再生修理"
+    },
+    {
+      "name": "クリーニング・クレンジング・シミ抜き"
+    },
+    {
+      "name": "リペア(修理、補色)"
+    },
+    {
+      "name": "消臭、除菌"
+    }
+  ],
+  "tags": [
+    {
+      "tag": "予約制",
+      "factIndex": 9
+    }
+  ],
+  "facts": [
+    {
+      "claim": "業種の表示は革製品修理業",
+      "source": "https://maps.google.com/?cid=11988301879438038098",
+      "quote": "革製品修理業",
+      "checkedAt": "2026-10-27"
+    },
+    {
+      "claim": "所在地はサンパレス21永楽荘101号室",
+      "source": "https://saisen-koubou.com/about/",
+      "quote": "サンパレス２１永楽荘 101号室",
+      "checkedAt": "2026-10-27"
+    },
+    {
+      "claim": "電話番号は090-5245-8354",
+      "source": "https://saisen-koubou.com/about/",
+      "quote": "090-5245-8354",
+      "checkedAt": "2026-10-27"
+    },
+    {
+      "claim": "営業時間は10:00から18:00",
+      "source": "https://saisen-koubou.com/about/",
+      "quote": "10:00～18:00",
+      "checkedAt": "2026-10-27"
+    },
+    {
+      "claim": "定休日は不定休",
+      "source": "https://saisen-koubou.com/about/",
+      "quote": "不定休",
+      "checkedAt": "2026-10-27"
+    },
+    {
+      "claim": "牧落駅・箕面船場阪大前駅から車で約7分の場所にある",
+      "source": "https://saisen-koubou.com/about/",
+      "quote": "牧落駅・箕面船場阪大前駅から車で約7分",
+      "checkedAt": "2026-10-27"
+    },
+    {
+      "claim": "近隣にコインパーキングがある",
+      "source": "https://saisen-koubou.com/about/",
+      "quote": "近隣にコインパーキングがあります",
+      "checkedAt": "2026-10-27"
+    },
+    {
+      "claim": "業務内容はバッグ、財布、靴、小物、その他のクリーニング・リペア",
+      "source": "https://saisen-koubou.com/about/",
+      "quote": "バッグ、財布、靴、小物、その他のクリーニング・リペア",
+      "checkedAt": "2026-10-27"
+    },
+    {
+      "claim": "郵送でのお預かりにも対応している",
+      "source": "https://saisen-koubou.com/about/",
+      "quote": "郵送でのお預かりにも対応しており",
+      "checkedAt": "2026-10-27"
+    },
+    {
+      "claim": "事前に予約をお願いしている",
+      "source": "https://saisen-koubou.com/feature/",
+      "quote": "事前に予約をお願いしており",
+      "checkedAt": "2026-10-27"
+    },
+    {
+      "claim": "ブランド品や革製品の買取サービスも行っている",
+      "source": "https://saisen-koubou.com/concept/",
+      "quote": "ブランド品や革製品の買取サービスも行っており",
+      "checkedAt": "2026-10-27"
+    },
+    {
+      "claim": "革製品をはじめ、ブランド品の小物類からスポーツ用品まで幅広い品の修理・リペアに対応",
+      "source": "https://saisen-koubou.com/concept/",
+      "quote": "革製品をはじめ、ブランド品の小物類からスポーツ用品まで",
+      "checkedAt": "2026-10-27"
+    },
+    {
+      "claim": "メニューにクリーニング&染め直しがある",
+      "source": "https://saisen-koubou.com/menu/",
+      "quote": "クリーニング&染め直し",
+      "checkedAt": "2026-10-27"
+    },
+    {
+      "claim": "パイピング・コバ・レザー破れ再生修理にも対応",
+      "source": "https://saisen-koubou.com/menu/",
+      "quote": "パイピング・コバ・レザー破れ再生修理",
+      "checkedAt": "2026-10-27"
+    },
+    {
+      "claim": "消臭、除菌にも対応",
+      "source": "https://saisen-koubou.com/menu/",
+      "quote": "消臭、除菌",
+      "checkedAt": "2026-10-27"
+    }
+  ],
+  "sources": [
+    {
+      "label": "公式サイト",
+      "url": "https://saisen-koubou.com/"
+    },
+    {
+      "label": "公式サイト(コンセプト)",
+      "url": "https://saisen-koubou.com/concept/"
+    },
+    {
+      "label": "公式サイト(料金表)",
+      "url": "https://saisen-koubou.com/menu/"
+    },
+    {
+      "label": "公式サイト(彩洗工房の特徴)",
+      "url": "https://saisen-koubou.com/feature/"
+    },
+    {
+      "label": "公式サイト(会社概要)",
+      "url": "https://saisen-koubou.com/about/"
+    },
+    {
+      "label": "Google マップ",
+      "url": "https://maps.google.com/?cid=11988301879438038098"
+    }
+  ],
+  "notes": "automation/v2/write.mjs が 2026-10-27 に claude -p --model sonnet で作成。事実の裏取り: 15/15 件(quote が出どころにあるもの)。裏取りに通らなかった facts は載せていない。"
+}
