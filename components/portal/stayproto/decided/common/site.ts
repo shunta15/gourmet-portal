@@ -40,8 +40,6 @@ export type SyLinks = {
   specials: string;
   /** 特集の記事 1 本。proto は一覧と同じ(slug は無視)、live は /stay/special/{slug} */
   special: (slug?: string) => string;
-  /** 編集部について(総合サイトの /about。proto は行き先が無いので #) */
-  about: string;
   /** 探すページ(引数つき。空の項目は付けない) */
   searchWith: (f: SySearchArgs) => string;
   /** 宿のページ。proto は見本の 1 枚(id は無視)、live は /stay/shop/{id} */
@@ -59,7 +57,6 @@ export function syLinks(mode: SyMode = "proto"): SyLinks {
       shops: `${LIVE_BASE}/shop`,
       specials: `${LIVE_BASE}/special`,
       special: (slug) => (slug ? `${LIVE_BASE}/special/${encodeURIComponent(slug)}` : `${LIVE_BASE}/special`),
-      about: "/about",
       searchWith: (f) => {
         const p = new URLSearchParams();
         if (f.kind) p.set("kind", f.kind);
@@ -78,7 +75,6 @@ export function syLinks(mode: SyMode = "proto"): SyLinks {
     shops: SHOPS_HREF,
     specials: SPECIALS_HREF,
     special: () => SPECIALS_HREF,
-    about: "#",
     searchWith: () => SEARCH_HREF,
     shop: () => SHOP_HREF,
     article: () => ARTICLE_HREF,

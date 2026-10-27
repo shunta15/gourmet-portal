@@ -9,7 +9,6 @@ export const SPL = {
   shops: "/sports/shop",
   special: "/sports/special",
   map: "/map",
-  about: "/about",
   shop: (id: string) => `/sports/shop/${encodeURIComponent(id)}`,
   article: (id: string) => `/sports/article/${encodeURIComponent(id)}`,
   specialArticle: (slug: string) => `/sports/special/${encodeURIComponent(slug)}`,

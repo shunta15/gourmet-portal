@@ -25,9 +25,6 @@ export default function Header() {
             <IcHeart />
             <span>お気に入り</span>
           </Link>
-          <Link href={aLinks.contact} className="apa-signup">
-            掲載相談
-          </Link>
         </div>
         <details className="apa-burger">
           <summary aria-label="メニューを開く">
@@ -39,7 +36,6 @@ export default function Header() {
             <MenuRows />
             <div className="apa-burger-sub">
               <Link href={aLinks.favs}>お気に入り</Link>
-              <Link href={aLinks.contact}>掲載の相談</Link>
             </div>
           </div>
         </details>

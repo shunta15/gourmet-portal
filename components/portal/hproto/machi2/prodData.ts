@@ -1,6 +1,6 @@
 /**
  * 総合トップのリンク先。2026-10-26 オーナー指示「総合トップから各業種以外に飛べるようになってるところは全て一旦消す。このあとページ動線を考える」で、
- * 業種 8 つ以外への行き先(お店を探す /search・特集 /feature・地図 /map・駅 /station・動画 /videos・検索 /find・マチノワについて /about・お問い合わせ /contact・掲載基準 /editorial/guidelines)を外した。
+ * 業種 8 つ以外への行き先(お店を探す /search・特集 /feature・地図 /map・駅 /station・動画 /videos・検索 /find・マチノワについて・お問い合わせ・掲載基準(2026-10-28 に /about・/contact・/editorial/guidelines を削除))を外した。
  * 動線が決まったら、ここに足し直す(元の一覧は git の履歴: 31aebd5f の prodData.ts)。
  */
 /** メニュー（ヘッダー右の三本線）。業種 8 つだけ */

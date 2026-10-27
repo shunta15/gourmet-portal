@@ -47,9 +47,6 @@ export default function Footer({ mode = "proto" }: { mode?: SyMode }) {
             {live ? (
               <>
                 <a href={PORTAL_HREF}>マチノワ トップ</a>
-                <a href="/about">編集部について</a>
-                <a href="/editorial/guidelines">掲載基準</a>
-                <a href="/contact">お問い合わせ</a>
               </>
             ) : (
               <>

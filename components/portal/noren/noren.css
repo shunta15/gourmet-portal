@@ -108,18 +108,8 @@
 .vN-ft-logo{display:flex;align-items:baseline;gap:.5em;flex-wrap:wrap;margin-bottom:5vh}
 .vN-ft-logo .ja{font:700 clamp(46px,6.4vw,104px)/1.1 var(--f-min);letter-spacing:.12em}
 .vN-ft-logo em{font:italic 300 clamp(20px,2.4vw,40px)/1 var(--f-lat);letter-spacing:.2em;color:var(--kinari-2)}
-.vN-ft-nlk{font:700 13px/1 var(--f-min);letter-spacing:.5em;color:var(--shu-hi);padding-left:.5em}
 .vN-ft-nlh{font:700 clamp(20px,1.9vw,28px)/1.6 var(--f-min);letter-spacing:.08em;margin-top:14px}
 .vN-ft-nlh em{color:var(--shu-hi);display:inline-block}
-.vN-ft-nls{font:400 15px/1.9 var(--f-sans);letter-spacing:.06em;color:var(--kinari-2);margin-top:8px}
-.vN-nl{display:flex;gap:10px;flex-wrap:wrap;margin-top:20px}
-.vN-nl input{flex:1 1 220px;min-width:0;min-height:48px;padding:0 16px;background:rgba(239,230,214,.06);border:1px solid var(--line-2);border-radius:0;color:var(--kinari);font:400 16px/1 var(--f-sans)}
-.vN-nl input::placeholder{color:var(--kinari-3)}
-.vN-nl button{min-height:48px;padding:0 26px;background:var(--shu);color:#fff7ee;font:700 14px/1 var(--f-min);letter-spacing:.24em;cursor:pointer;transition:background .3s}
-.vN-nl button:hover{background:#d8452a}
-.vN-nl button:disabled{opacity:.6}
-.vN-nl-err{flex-basis:100%;font:400 14px/1.6 var(--f-sans);color:#ff9a86}
-.vN-nl-done{margin-top:20px;font:400 15px/1.8 var(--f-sans);color:var(--shu-hi)}
 .vN-ft-cols{display:grid;grid-template-columns:minmax(0,300px);justify-content:end;gap:clamp(18px,3vw,50px)}
 .vN-ft-cols h2{font:700 13px/1 var(--f-min);letter-spacing:.4em;color:var(--kinari-3);padding:0 0 14px .4em;border-bottom:1px solid var(--line);margin-bottom:6px}
 .vN-ft-cols a{display:flex;align-items:center;min-height:44px;font:500 15px/1.4 var(--f-min);letter-spacing:.18em;color:var(--kinari);transition:color .3s}

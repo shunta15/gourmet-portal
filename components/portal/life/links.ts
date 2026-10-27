@@ -9,7 +9,6 @@ export const LFL = {
   shops: "/life/shop",
   special: "/life/special",
   map: "/map",
-  about: "/about",
   shop: (id: string) => `/life/shop/${encodeURIComponent(id)}`,
   article: (id: string) => `/life/article/${encodeURIComponent(id)}`,
   specialArticle: (slug: string) => `/life/special/${encodeURIComponent(slug)}`,

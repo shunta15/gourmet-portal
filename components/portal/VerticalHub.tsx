@@ -168,10 +168,6 @@ export default async function VerticalHub({ vertical }: { vertical: VerticalKey 
                 掲載方針：効果・効能をうたう表現は使わず、確認できた事実（メニュー・営業時間・設備など）だけを載せます。
               </p>
             )}
-            <p className="mp-note-links">
-              <Link href="/editorial/guidelines">掲載基準</Link>
-              <Link href="/contact">掲載のご相談</Link>
-            </p>
           </div>
         </div>
       </section>

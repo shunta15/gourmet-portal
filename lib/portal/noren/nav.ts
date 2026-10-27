@@ -59,16 +59,13 @@ export const FOOT_NAV = GOURMET_MENU;
 
 /**
  * フッターの小さな文字の 1 行（メニューではない。components/portal/FootSmall が全ページのフッターに出す）。
- * 2026-10-23 オーナー決定「各業種 4 ページに収める」: ヘッダー・フッターのメニューは GOURMET_MENU の 4 つだけにし、サイトとして必要なこの 5 つだけを小さな案内として残す。
+ * 2026-10-23 オーナー決定「各業種 4 ページに収める」: ヘッダー・フッターのメニューは GOURMET_MENU の 4 つだけにし、サイトとして必要なものだけを小さな案内として残す。
+ * 2026-10-28 オーナー指示「現状の古いものは削除でOK」: 編集部（/about）・掲載基準（/editorial/guidelines）・お問い合わせ（/contact）・店舗登録（/owner）のページと行き先を削除し、「マチノワ トップ」だけが残った。
  * 「マチノワ トップ」は総合トップ（/）。グルメのトップ（/gourmet）はメニュー（ロゴ・FOOT_NAV の先頭）。
  * 外したもの（ページは消えていない）: 章の暖簾 5（麺・鮨・肉・酒・蕎）・地域 5（さがすの絞り込みと同じ行き先）・おまかせ提案・写真から探す・ショート動画（入口は「さがす」のページの中。lib/portal/noren/searchOther.ts）。
  */
 export const FOOT_SMALL = [
   { href: "/", ja: "マチノワ トップ" },
-  { href: "/about", ja: "編集部について" },
-  { href: "/editorial/guidelines", ja: "掲載基準" },
-  { href: "/contact", ja: "お問い合わせ" },
-  { href: "/owner", ja: "店舗登録" },
 ] as const;
 
 /**

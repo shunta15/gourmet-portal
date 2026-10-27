@@ -19,9 +19,6 @@ export default function Footer({ site }: { site: CpSite }) {
         </ul>
         <ul className="cp-foot-sub" aria-label="サイトの案内">
           <li><Link href="/">マチノワ トップ</Link></li>
-          <li><Link href="/about">編集部について</Link></li>
-          <li><Link href="/editorial/guidelines">掲載基準</Link></li>
-          <li><Link href="/contact">お問い合わせ</Link></li>
         </ul>
         <p className="cp-note">店の写真・情報は、各店の公式サイトなどをもとにしています。営業時間などは変わることがあります。お出かけの前に公式サイトでご確認ください。</p>
         <p className="cp-note cp-copy">© マチノワ</p>
