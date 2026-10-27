@@ -510,7 +510,11 @@ function shopOf(base: LiveShop, p: Place, f: PlaceFeature | undefined): AShop {
     course: cur?.course ?? { title: base.name, badge: "", tags: [], place: base.area },
     // 番地を伏せる店は、位置が分かる Google マップのリンクを出どころに出さない
     // 出どころの名前に「その他」(公式サイトのページ名)があれば「ほか」に(「その他」の語は使わない決まり)
-    sources: (p.article?.sources ?? f?.sources ?? []).filter((x) => !(hide && /google\.com\/maps|maps\.google\./.test(x.url))).map((x) => ({ ...x, label: x.label.replace(/その他/g, "ほか") })).slice(0, 6),
+    // 6 件で打ち切るとき、Google マップのリンクは落とさない（公式サイトのページが多い店で、末尾のマップが消えていた）
+    sources: capSources(
+      (p.article?.sources ?? f?.sources ?? []).filter((x) => !(hide && /google\.com\/maps|maps\.google\./.test(x.url))).map((x) => ({ ...x, label: x.label.replace(/その他/g, "ほか") })),
+      6,
+    ),
     checkedAt: p.article?.checkedAt ?? f?.checkedAt ?? "",
     feat,
     mapLabel: mapHref ? "MAP" : "",
@@ -525,6 +529,16 @@ function shopOf(base: LiveShop, p: Place, f: PlaceFeature | undefined): AShop {
     // 店データに無い定休日(年中無休など)は、紹介記事の事実から足した行(CURATED の extraRows)を使う
     open: openDayOf(base.hours, base.holidays || cur?.extraRows?.find((r) => r.k === "holidays")?.lines[0] || ""),
   };
+}
+
+/** 出どころを max 件までにする。Google マップのリンクがあれば 1 件は必ず残す（順番は元のまま） */
+function capSources<T extends { url: string }>(list: T[], max: number): T[] {
+  if (list.length <= max) return list;
+  const isMap = (x: T) => /google\.com\/maps|maps\.google\./.test(x.url);
+  const map = list.find(isMap);
+  if (!map) return list.slice(0, max);
+  const rest = list.filter((x) => x !== map).slice(0, max - 1);
+  return list.indexOf(map) < max ? list.slice(0, max) : [...rest, map];
 }
 
 export type AData = {

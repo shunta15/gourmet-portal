@@ -383,6 +383,7 @@ function cleanUrl(raw) {
 /** place.website を 公式サイト か SNS のどれかに分ける。ポータル・読めない URL は捨てる */
 function classifyWebsite(raw, key) {
   if (!raw) return {};
+  raw = String(raw).replace(/(?:%20|\s)+https?:\/\/.*$/i, ""); // URL の後ろに別の URL が空白でつながっている登録（beauty-90）は、最初の URL だけ使う
   const u = cleanUrl(raw);
   if (!u) {
     warn(key, `website を URL として読めません: ${raw}`);
@@ -699,7 +700,7 @@ for (const key of wanted) {
     id,
     vertical: r.vertical,
     category: r.category,
-    name: (typeof ov.name === "string" && ov.name.trim() ? ov.name : String(p.name)).trim(),
+    name: (typeof ov.name === "string" && ov.name.trim() ? ov.name : String(p.name)).replace(/\s*https?:\/\/\S+/g, "").trim(), // Google の登録名に URL が混じる店（beauty-90 など）は URL だけ外す
     pref: r.area.pref,
     ...(r.area.cityName ? { cityName: r.area.cityName } : {}),
     address: normalizeAddress(p.address),

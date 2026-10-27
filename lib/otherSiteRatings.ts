@@ -209,8 +209,22 @@ export function cleanRestaurantText<T extends Restaurant>(r: T): T {
   const desc = stripOtherSiteRating(r.desc);
   const body = stripOtherSiteRatingList(r.body);
   const highlights = stripOtherSiteRatingList(r.highlights);
-  if (desc === r.desc && body === r.body && highlights === r.highlights) return r;
-  return { ...r, desc, body, highlights };
+  // 営業時間・定休日・席数・最寄りの欄の値に付いた、出どころを語る注記（「（媒体により20:00表記あり、要確認）」「（資料により差あり・詳細は要確認）」）。
+  // 注記の前半（媒体／資料によって〜）だけを取り、「（要確認）」「（詳細は要確認）」を残す。
+  const hours = stripSourceNote(r.hours);
+  const closed = stripSourceNote(r.closed);
+  const seats = stripSourceNote(r.seats);
+  const nearest = stripSourceNote(r.nearest);
+  if (desc === r.desc && body === r.body && highlights === r.highlights && hours === r.hours && closed === r.closed && seats === r.seats && nearest === r.nearest) return r;
+  return { ...r, desc, body, highlights, hours, closed, seats, nearest };
+}
+
+/** 欄の値の括弧の中の「媒体により〜」「資料によって〜」の部分を取る（「（媒体により20:00表記あり、要確認）」→「（要確認）」）。無ければそのまま */
+const SOURCE_NOTE = /（(?:媒体|資料|情報|サイト)(?:により|によって)[^、・）]*(?:[、・])?/g;
+function stripSourceNote<T extends string | undefined>(v: T): T {
+  if (typeof v !== "string" || !SOURCE_NOTE.test(v)) return v;
+  SOURCE_NOTE.lastIndex = 0;
+  return v.replace(SOURCE_NOTE, "（").replace(/（）/g, "").trim() as T;
 }
 
 /** 項目の「口コミ平均 3.66」のような、評価の数字を載せる表の行か（見出しが評価の語で、値が点数・件数の形） */

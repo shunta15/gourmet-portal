@@ -17,6 +17,7 @@ import {
 } from "@/lib/db/features";
 import { FEATURES } from "@/lib/data";
 import { ARTICLE_STORE_ID_BY_FEATURE } from "@/lib/articleStores";
+import { isHiddenStore } from "@/lib/hiddenStores";
 import { getRestaurantById } from "@/lib/db/restaurants";
 import type { FeatureArticle } from "@/lib/regions";
 import { assertPortalLive, liveStaticParams } from "@/lib/portal/launch";
@@ -173,7 +174,7 @@ export default async function Page({
         <FeaturePage
           article={article}
           features={FEATURES}
-          storeId={storeId}
+          storeId={storeId && !isHiddenStore(storeId) ? storeId : undefined} // 非表示の店（店ページが 404）へは「店舗情報」のリンクを出さない
           fmap={fmap}
           links={LIVE_LINKS}
           href={(h) => h}
