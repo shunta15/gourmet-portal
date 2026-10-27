@@ -3,8 +3,8 @@
     "date": "2026-10-27",
     "startedAt": "2026-10-27T00:49:47.306Z",
     "verifyFile": "automation/v2/out/verify-2026-10-27.json",
-    "args": "--only-row 255",
-    "updatedAt": "2026-10-27T10:38:34.467Z"
+    "args": "--date 2026-10-27 --only-row 235",
+    "updatedAt": "2026-10-27T16:13:34.307Z"
   },
   "environment": null,
   "results": {
@@ -1427,19 +1427,37 @@
       "row": 235,
       "name": "ベニフィット",
       "vertical": "ビューティー",
-      "status": "失敗",
-      "stage": "claude",
+      "status": "成功",
+      "stage": "done",
       "startedAt": "2026-10-27T09:11:51.386Z",
       "seconds": {
-        "total": 0
+        "total": 1
       },
       "photos": {
         "candidates": 10,
         "maps": 10,
         "official": 0,
-        "rejectedByMachine": 0
+        "rejectedByMachine": 0,
+        "used": 6,
+        "emptyFrames": 0
       },
-      "reason": "書き手が失敗の出口で終了: この店は美容室等への美容材料の卸売会社(美容卸)で、hair/nail/eyelash/esthetic/hair-removal/headspaのいずれの消費者向けサービス業種にも該当しないため、カテゴリを決められない"
+      "check": {
+        "rewrote": false,
+        "shapeProblems": [],
+        "sentenceProblems": 0,
+        "facts": {
+          "total": 10,
+          "verified": 10
+        }
+      },
+      "placeId": "be0108",
+      "featureInGenerated": false,
+      "featureNote": null,
+      "urls": {
+        "shop": "/beauty/shop/be0108",
+        "article": null
+      },
+      "finishedAt": "2026-10-27T16:13:34.306Z"
     },
     "tri-life-237": {
       "key": "tri-life-237",
