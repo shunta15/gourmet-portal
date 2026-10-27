@@ -89,6 +89,7 @@ function classifyUrl(u) {
   if (/^https?:\/\/(x\.gd|bit\.ly|t\.co|goo\.gl|tinyurl\.com|is\.gd|lin\.ee|ow\.ly)\//i.test(u)) return "short";
   if (/google\.[a-z.]+\/maps\/place/.test(u)) return "place";
   if (/(google\.[a-z.]+\/maps\?|maps\.google\.[a-z.]+\/)/.test(u) && /cid=\d+/.test(u)) return "cid";
+  if (/google\.[a-z.]+\/maps\/search\/\?api=/.test(u)) return "mapsApi"; // 2026-10-27 シートの E 列は「店名 電話」の検索リンク(店の特定の手がかりにならない)
   if (/google\.[a-z.]+\/search/.test(u)) return "search";
   return "official";
 }
@@ -239,9 +240,11 @@ function judge(store, place, hintAddr) {
   const addr = addrSrc && place.address ? compareAddr(addrSrc, place.address) : null;
   const addrOk = addr ? addr.level === "exact" || addr.level === "near" : null;
   const nameOk = nameRel === "exact" || nameRel === "contains";
-  const confirmed = nameOk && (phoneMatch === true || addrOk === true);
+  // 手がかりは 3 つ(店名・電話・住所の番地まで)のうち 2 つ以上そろったときだけ確認済み(名前と町名だけでは確定しない)
+  const clues = [nameOk && "店名", phoneMatch === true && "電話", addrOk === true && "住所(番地まで)"].filter(Boolean);
+  const confirmed = clues.length >= 2;
   const rank = confirmed ? 3 : phoneMatch === true ? 2 : nameOk ? 1 : 0;
-  return { phoneMatch, nameRel, addrLevel: addr?.level ?? null, addrDetail: addr?.detail ?? null, addrSource: store.address ? "シート" : hintAddr ? "検索URL" : null, confirmed, rank };
+  return { phoneMatch, nameRel, addrLevel: addr?.level ?? null, addrDetail: addr?.detail ?? null, addrSource: store.address ? "シート" : hintAddr ? "検索URL" : null, confirmed, clues, rank };
 }
 
 const brief = (p, j) => ({
@@ -392,7 +395,7 @@ async function verifyOne(ctx, store) {
       rec.website = p.website;
       rec.category = p.category;
       rec.mapUrl = p.cid ? `https://maps.google.com/?cid=${p.cid}` : p.url.replace(/\?.*$/, "");
-      rec.signals = { phoneMatch: j.phoneMatch, nameRelation: j.nameRel, addressLevel: j.addrLevel, addressDetail: j.addrDetail, addressSource: j.addrSource };
+      rec.signals = { phoneMatch: j.phoneMatch, nameRelation: j.nameRel, addressLevel: j.addrLevel, addressDetail: j.addrDetail, addressSource: j.addrSource, clues: j.clues };
       if (hintWebsite && p.website) {
         try {
           const a = new URL(hintWebsite).hostname.replace(/^www\./, "");
@@ -417,7 +420,7 @@ async function verifyOne(ctx, store) {
         rec.reason = `同じ店と確認できたが、画面に「${p.statusSignals.join(" / ")}」の表示(臨時休業・一時休業)。再開しているか確認。${sig.join("／")}`;
       } else if (j.confirmed) {
         rec.verdict = "確認済み";
-        rec.reason = sig.join("／");
+        rec.reason = `手がかり: ${j.clues.join("＋")}。${sig.join("／")}`;
       } else if (store.nameIsPhone) {
         rec.verdict = "要確認";
         rec.reason = `シートの店名が電話番号(${store.name})。電話で出たマップの店は「${p.name}」(電話${j.phoneMatch === true ? "一致" : "不一致/不明"})。店名をオーナーに確認`;

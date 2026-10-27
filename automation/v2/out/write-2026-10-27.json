@@ -1,0 +1,88 @@
+{
+  "meta": {
+    "date": "2026-10-27",
+    "startedAt": "2026-10-27T00:49:47.306Z",
+    "verifyFile": "automation/v2/out/verify-2026-10-27.json",
+    "args": "--only-row 231,233",
+    "updatedAt": "2026-10-27T00:56:26.148Z"
+  },
+  "environment": null,
+  "results": {
+    "tri-life-231": {
+      "key": "tri-life-231",
+      "row": 231,
+      "name": "長光寺",
+      "vertical": "くらし",
+      "status": "成功",
+      "stage": "done",
+      "startedAt": "2026-10-27T00:49:47.455Z",
+      "seconds": {
+        "total": 49,
+        "claude": 49
+      },
+      "photos": {
+        "candidates": 17,
+        "maps": 10,
+        "official": 7,
+        "rejectedByMachine": 5,
+        "used": 12,
+        "emptyFrames": 0
+      },
+      "check": {
+        "rewrote": true,
+        "shapeProblems": [],
+        "sentenceProblems": 0,
+        "facts": {
+          "total": 17,
+          "verified": 17
+        }
+      },
+      "placeId": "li0047",
+      "featureInGenerated": false,
+      "featureNote": null,
+      "urls": {
+        "shop": "/life/shop/li0047",
+        "article": "/life/article/li0047"
+      },
+      "finishedAt": "2026-10-27T00:55:37.043Z"
+    },
+    "tri-life-233": {
+      "key": "tri-life-233",
+      "row": 233,
+      "name": "彩洗工房",
+      "vertical": "くらし",
+      "status": "成功",
+      "stage": "done",
+      "startedAt": "2026-10-27T00:50:35.579Z",
+      "seconds": {
+        "total": 49,
+        "claude": 49
+      },
+      "photos": {
+        "candidates": 21,
+        "maps": 10,
+        "official": 11,
+        "rejectedByMachine": 7,
+        "used": 19,
+        "emptyFrames": 0
+      },
+      "check": {
+        "rewrote": true,
+        "shapeProblems": [],
+        "sentenceProblems": 0,
+        "facts": {
+          "total": 15,
+          "verified": 15
+        }
+      },
+      "placeId": "li0048",
+      "featureInGenerated": false,
+      "featureNote": null,
+      "urls": {
+        "shop": "/life/shop/li0048",
+        "article": "/life/article/li0048"
+      },
+      "finishedAt": "2026-10-27T00:56:26.148Z"
+    }
+  }
+}

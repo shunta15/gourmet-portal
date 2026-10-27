@@ -1,0 +1,40 @@
+{
+  "tab": "トリニティアポ",
+  "tabEn": "tri-life",
+  "row": 231,
+  "sheet": {
+    "name": "長光寺",
+    "address": "",
+    "url": "https://www.google.com/maps/search/?api=1&query=%E9%95%B7%E5%85%89%E5%AF%BA%20059-655-3476%20",
+    "type": "寺",
+    "d1": "",
+    "d2": ""
+  },
+  "urlKind": "mapsApi",
+  "route": "第1段(verify-gbp.mjs)で確認済み",
+  "verdict": "一致",
+  "verdictReason": "手がかり: 店名＋電話。電話が一致／店名: exact(シート「長光寺」/ マップ「長光寺」)",
+  "place": {
+    "name": "長光寺",
+    "address": "三重県多気郡明和町大淀乙７４９",
+    "category": "仏教寺院",
+    "lat": 34.5612702,
+    "lng": 136.6553431,
+    "gbpUrl": "https://maps.google.com/?cid=14807385752750230677",
+    "phone": "0596-55-3476",
+    "website": "https://choukoujitemple.netlify.app/",
+    "hours": {
+      "月": "24時間営業",
+      "火": "24時間営業",
+      "水": "24時間営業",
+      "木": "24時間営業",
+      "金": "24時間営業",
+      "土": "24時間営業",
+      "日": "24時間営業"
+    },
+    "reserveLinks": [],
+    "statusSignals": [],
+    "closedSignal": false
+  },
+  "fetchedAt": "2026-10-27T00:49:56.257Z"
+}

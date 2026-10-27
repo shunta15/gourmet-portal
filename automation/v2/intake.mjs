@@ -76,6 +76,7 @@ export function urlKind(u) {
   if (/^https?:\/\/(x\.gd|bit\.ly|t\.co|goo\.gl|tinyurl\.com|is\.gd|lin\.ee|ow\.ly)\//i.test(u)) return "short";
   if (/(google\.[a-z.]+\/maps\?cid=|maps\.google\.[a-z.]+\/\?cid=|[?&]cid=\d+)/.test(u) && /google\./.test(u)) return "cid";
   if (/google\.[a-z.]+\/maps\/place/.test(u)) return "place";
+  if (/google\.[a-z.]+\/maps\/search\/\?api=/.test(u)) return "mapsApi";
   if (/google\.[a-z.]+\/search/.test(u)) return "search";
   return "official";
 }
@@ -87,8 +88,8 @@ export async function readSheets() {
   const sheets = google.sheets({ version: "v4", auth: await auth.getClient() });
   const out = {};
   for (const [tab, def] of Object.entries(TABS)) {
-    // 備考(G/H以降)は読まない。アポタブは A:F(トリニティ) / A:G(Linkate) まで
-    const apoRange = tab === "Linkateアポ" ? "A1:G3000" : "A1:F3000";
+    // 備考(Linkate は G・トリニティは H 以降)は読まない
+    const apoRange = "A1:G3000"; // トリニティは 2026-10-27 から G=ステータスまで(H=備考は読まない)
     const [apo, led] = await Promise.all([
       sheets.spreadsheets.values.get({ spreadsheetId: SHEET_ID, range: `'${tab}'!${apoRange}` }),
       sheets.spreadsheets.values.get({ spreadsheetId: SHEET_ID, range: `'${def.ledger}'!A1:D3000` }),
@@ -105,6 +106,8 @@ export function buildCandidates(raw, { includeRegistered = false } = {}) {
     const { rows, ledger } = raw[tab];
     // 済み = 台帳の D 列(URL)が空でない店だけ。台帳は 2026-10-26 にアポのシートと同じ行の並びに作り直され、記事の無い行にも店名(B列)が入っているため、店名だけでは済みと見なさない
     // D 列に「保留: …」「作成不可: …」の理由が入った行は済みではない(2026-10-26 オーナー「理由を書いといて URL の代わりに」)。URL(http〜)の行だけを済みとする
+    // 台帳 D 列の理由(保留・作成不可)。候補に ledgerNote として付ける(備考ではなく台帳の記録)
+    const ledNotes = new Map(ledger.slice(1).filter((r) => nfc(r[1]) && nfc(r[3]) && !/^https?:/.test(nfc(r[3]))).map((r) => [nfc(r[1]), nfc(r[3])]));
     const ledNames = new Set(ledger.slice(1).filter((r) => /^https?:/.test(nfc(r[3]))).map((r) => nfc(r[1])).filter(Boolean));
     const c = def.cols;
     const stat = { rows: 0, registered: 0, excluded: 0, candidates: 0, duplicateNames: [] };
@@ -135,7 +138,9 @@ export function buildCandidates(raw, { includeRegistered = false } = {}) {
         row: rowNo,
         name,
         phone,
-        address: c.address != null ? String(r[c.address] ?? "").trim() || null : null,
+        // トリニティの D 列は「郵便番号・住所」。先頭の郵便番号(〒123-4567 / 123-4567)は落として住所だけにする
+        address: c.address != null ? String(r[c.address] ?? "").replace(/^\s*〒?\s*\d{3}[-ー－]?\d{4}\s*/, "").trim() || null : null,
+        ledgerNote: ledNotes.get(name) || null,
         url,
         urlKind: urlKind(url),
         industryRaw,
