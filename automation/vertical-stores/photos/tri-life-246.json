@@ -1,0 +1,16 @@
+{
+  "key": "tri-life-246",
+  "images": [
+    {
+      "path": "/_portal/vshops/tri-life-246/g01.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9RKe40MU4nzAVI4DhwcxD9QiAg6NL75E7fexX5yL-4U0FLH3sd1z3YfOVqSJGoWxWIHgONsPX2QBEOptrge4-fpPIbTe4FVvwV5QpiMebweqN4HYYMwZOZ_8LIXvG6PHCwUeW8cv_mwkiAT=s1200",
+      "pageUrl": "https://maps.google.com/?cid=7625250891900571824",
+      "what": "瓦屋根の木造のお堂が建つ境内の様子",
+      "kind": "exterior",
+      "width": 960,
+      "height": 635,
+      "source": "Google マップ"
+    }
+  ],
+  "note": "automation/v2/write.mjs が 2026-10-27T09:58:36.317Z に取得。店の実写だけ(AI 画像・汎用画像・地図・ロゴ・顔が大きい画像は除外)。"
+}

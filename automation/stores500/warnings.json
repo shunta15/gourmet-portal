@@ -2394,5 +2394,52 @@
     "warnings": [
       "desc は lede から事実の文を選べず、事実から作った定型文"
     ]
+  },
+  "r751": {
+    "articleId": "台湾市場食堂美蘭",
+    "name": "台湾市場食堂美蘭",
+    "warnings": [
+      "desc は lede から事実の文を選べず、事実から作った定型文",
+      "cuisine は GBPカテゴリ"
+    ]
+  },
+  "r752": {
+    "articleId": "甘露肉汁",
+    "name": "甘露肉汁",
+    "warnings": [
+      "desc は lede から事実の文を選べず、事実から作った定型文",
+      "cuisine は GBPカテゴリ"
+    ]
+  },
+  "r756": {
+    "articleId": "cafebarmiyami",
+    "name": "cafebar miyami",
+    "warnings": [
+      "desc は lede から事実の文を選べず、事実から作った定型文"
+    ]
+  },
+  "r753": {
+    "articleId": "和醸良酒〇たけ",
+    "name": "和醸良酒 〇たけ",
+    "warnings": [
+      "desc は lede から事実の文を選べず、事実から作った定型文",
+      "cuisine は GBPカテゴリ"
+    ]
+  },
+  "r754": {
+    "articleId": "MELUCAFE",
+    "name": "MELU CAFE",
+    "warnings": [
+      "desc は lede から事実の文を選べず、事実から作った定型文",
+      "cuisine は GBPカテゴリ"
+    ]
+  },
+  "r755": {
+    "articleId": "雅珈",
+    "name": "雅珈",
+    "warnings": [
+      "desc は lede から事実の文を選べず、事実から作った定型文",
+      "cuisine は GBPカテゴリ"
+    ]
   }
 }

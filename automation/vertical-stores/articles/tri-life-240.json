@@ -1,0 +1,151 @@
+{
+  "key": "tri-life-240",
+  "headline": "神奈川県横須賀市衣笠町、衣笠城址の麓に建つ曹洞宗の寺院です。創建は729年（天平元年）、本尊は不動明王像です。",
+  "lede": "横須賀市にある「大善寺」です。平安時代に三浦一族の本拠地として築かれた衣笠城址の麓に建つ、曹洞宗の寺院です。大善寺の歴史は衣笠城よりも古く、奈良時代の729年（天平元年）、行基の開山によって創建されました。",
+  "sections": [
+    {
+      "heading": "歴史",
+      "body": "大善寺の歴史は衣笠城よりも古く、奈良時代までさかのぼります。諸国を行脚していた行基がこの地を訪れ、自ら彫刻した不動明王を祀る不動堂と、蔵王権現を祀る社を建てました。この二つを管理する別当寺として創建されたのが大善寺のはじまりで、創建は729年（天平元年）、開山は行基です。山号は金峯山、宗派は曹洞宗、本尊は不動明王像です。"
+    },
+    {
+      "heading": "伝わる仏像",
+      "body": "大善寺にある阿弥陀三尊像は平安時代の作と見られ、三浦半島でも貴重な平安仏です。大善寺で発見された毘沙門天立像は、奥州・平泉の中尊寺金色堂にある増長天像との類似性が認められ、平泉の仏教文化と鎌倉幕府周辺との関係を示す貴重な存在として注目されています。この毘沙門天立像は神奈川県立金沢文庫に寄託されています。"
+    },
+    {
+      "heading": "矢取不動の伝説",
+      "body": "平安時代後期、三浦氏第2代当主・三浦為継が後三年の役に出陣した際、戦場に大善寺の不動明王像が現れて為継を矢から守ったという伝説が残っています。このことから、大善寺の不動明王像は「矢取不動」とも呼ばれています。"
+    },
+    {
+      "heading": "アクセス",
+      "body": "JR横須賀線「衣笠駅」から徒歩約6分の「衣笠十字路」バス停、または京急線「横須賀中央駅」から京急バスの林方面行きに乗り、「衣笠城址」バス停で下車して徒歩約15分です。駐車場があります。境内前には、行基の逸話が残る不動井戸が湧いています。"
+    }
+  ],
+  "menus": [],
+  "tags": [
+    {
+      "tag": "駐車場あり",
+      "factIndex": 13
+    }
+  ],
+  "facts": [
+    {
+      "claim": "大善寺は衣笠城址の麓に建つ曹洞宗の寺院",
+      "source": "https://miurahantou.jp/daizenji/",
+      "quote": "の麓に建つ、曹洞宗の寺院です。",
+      "checkedAt": "2026-10-27"
+    },
+    {
+      "claim": "大善寺の歴史は奈良時代までさかのぼる",
+      "source": "https://miurahantou.jp/daizenji/",
+      "quote": "よりも古く、奈良時代までさかのぼります。",
+      "checkedAt": "2026-10-27"
+    },
+    {
+      "claim": "行基がこの地を訪れた",
+      "source": "https://miurahantou.jp/daizenji/",
+      "quote": "が諸国行脚中にこの地を訪れ、",
+      "checkedAt": "2026-10-27"
+    },
+    {
+      "claim": "阿弥陀三尊像は平安時代の作と見られる貴重な平安仏",
+      "source": "https://miurahantou.jp/daizenji/",
+      "quote": "は平安時代の作と見られ、三浦半島でも貴重な平安仏です。",
+      "checkedAt": "2026-10-27"
+    },
+    {
+      "claim": "毘沙門天立像は平泉の仏教文化と鎌倉幕府周辺との関係を示す貴重な存在",
+      "source": "https://miurahantou.jp/daizenji/",
+      "quote": "平泉の仏教文化と鎌倉幕府周辺との関係を明確に示す",
+      "checkedAt": "2026-10-27"
+    },
+    {
+      "claim": "毘沙門天立像(天王立像)は神奈川県立金沢文庫に寄託されている",
+      "source": "https://miurahantou.jp/daizenji/",
+      "quote": "神奈川県立金沢文庫",
+      "checkedAt": "2026-10-27"
+    },
+    {
+      "claim": "山号は金峯山",
+      "source": "https://miurahantou.jp/daizenji/",
+      "quote": "山号 金峯山",
+      "checkedAt": "2026-10-27"
+    },
+    {
+      "claim": "宗派は曹洞宗",
+      "source": "https://miurahantou.jp/daizenji/",
+      "quote": "宗派 曹洞宗",
+      "checkedAt": "2026-10-27"
+    },
+    {
+      "claim": "本尊は不動明王像",
+      "source": "https://miurahantou.jp/daizenji/",
+      "quote": "本尊 不動明王像",
+      "checkedAt": "2026-10-27"
+    },
+    {
+      "claim": "創建は729年（天平元年）",
+      "source": "https://miurahantou.jp/daizenji/",
+      "quote": "創建 729年（天平元年）",
+      "checkedAt": "2026-10-27"
+    },
+    {
+      "claim": "開山は行基",
+      "source": "https://miurahantou.jp/daizenji/",
+      "quote": "開山 行基",
+      "checkedAt": "2026-10-27"
+    },
+    {
+      "claim": "戦場で不動明王像が現れて三浦為継を矢から守ったという伝説が残る",
+      "source": "https://miurahantou.jp/daizenji/",
+      "quote": "が現われて敵の矢から",
+      "checkedAt": "2026-10-27"
+    },
+    {
+      "claim": "大善寺の境内前に不動井戸が湧いている",
+      "source": "https://miurahantou.jp/daizenji/",
+      "quote": "の境内の前に湧く",
+      "checkedAt": "2026-10-27"
+    },
+    {
+      "claim": "駐車場がある",
+      "source": "https://miurahantou.jp/daizenji/",
+      "quote": "駐車場あり",
+      "checkedAt": "2026-10-27"
+    },
+    {
+      "claim": "JR横須賀線「衣笠駅」から徒歩約6分の「衣笠十字路」バス停を利用できる",
+      "source": "https://miurahantou.jp/daizenji/",
+      "quote": "JR横須賀線「衣笠駅」から徒歩約6分",
+      "checkedAt": "2026-10-27"
+    },
+    {
+      "claim": "「衣笠城址」バス停から徒歩約15分",
+      "source": "https://miurahantou.jp/daizenji/",
+      "quote": "にて『衣笠城址』下車、徒歩約15分",
+      "checkedAt": "2026-10-27"
+    },
+    {
+      "claim": "Googleマップの業種は仏教寺院",
+      "source": "https://maps.google.com/?cid=15135237767568212540",
+      "quote": "仏教寺院",
+      "checkedAt": "2026-10-27"
+    },
+    {
+      "claim": "営業時間は09:00–17:00",
+      "source": "https://maps.google.com/?cid=15135237767568212540",
+      "quote": "09:00–17:00",
+      "checkedAt": "2026-10-27"
+    }
+  ],
+  "sources": [
+    {
+      "label": "公式サイト",
+      "url": "https://miurahantou.jp/daizenji/"
+    },
+    {
+      "label": "Google マップ",
+      "url": "https://maps.google.com/?cid=15135237767568212540"
+    }
+  ],
+  "notes": "automation/v2/write.mjs が 2026-10-27 に claude -p --model sonnet で作成。事実の裏取り: 18/18 件(quote が出どころにあるもの)。裏取りに通らなかった facts は載せていない。"
+}

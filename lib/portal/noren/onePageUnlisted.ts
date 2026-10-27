@@ -87,6 +87,12 @@ export const ONE_PAGE_UNLISTED_SHOP_OF_FEATURE: Readonly<Record<string, string>>
   "大玉ふわとろたこ焼き縁-en-": "r744", // 大玉ふわとろたこ焼き 縁-en-
   "浜焼ノ栄友": "r745", // 浜焼ノ栄友
   "和食みよし": "r746", // 和食 みよし
+  "台湾市場食堂美蘭": "r751", // 台湾市場食堂美蘭
+  "甘露肉汁": "r752", // 甘露肉汁
+  "cafebarmiyami": "r756", // cafebar miyami
+  "和醸良酒〇たけ": "r753", // 和醸良酒 〇たけ
+  "MELUCAFE": "r754", // MELU CAFE
+  "雅珈": "r755", // 雅珈
 };
 
 const NFC = (s: string) => s.normalize("NFC");

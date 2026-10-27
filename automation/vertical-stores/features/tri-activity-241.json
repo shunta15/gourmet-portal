@@ -1,0 +1,393 @@
+{
+  "key": "tri-activity-241",
+  "vertical": "activity",
+  "storeName": "ナシレラスター 釣り船 遊覧船クルージング",
+  "article": {
+    "id": "ナシレラスター釣り船遊覧船クルージング",
+    "no": "",
+    "articleType": "guide",
+    "kicker": "NASHIRERA STAR NIIGATA",
+    "title": "新潟市中央区川岸町、信濃川沿いから出船する釣り船・遊覧船クルージング「ナシレラスター」の遊覧・釣り・遠征便のプランと船の設備",
+    "titleHTML": "信濃川沿いから出船する釣り船・遊覧船クルージング<br><em>ナシレラスター</em>の遊覧・釣り・遠征便のプランと船の設備",
+    "subtitle": "海・川のアクティビティ / 新潟県新潟市中央区 / 遊覧・釣り・遠征便のプラン",
+    "lede": "新潟市中央区川岸町、信濃川沿いの出港場所から出る釣り船・遊覧船クルージング「ナシレラスター」。プランは「遊覧」「釣り」「遠征便」の3つで、水洗トイレやキャビンのある小型船で信濃川や日本海へ向かいます。",
+    "date": "2026-10-27",
+    "reading": "",
+    "author": "マチノワ編集部",
+    "heroImage": "/_portal/vshops/tri-activity-241/s01.jpg",
+    "ogImage": "/_portal/vshops/tri-activity-241/s01.jpg",
+    "ranking": [
+      {
+        "rank": "POINT 01",
+        "rankNum": 1,
+        "name": "遊覧・釣り・遠征便、3つのプランの内容",
+        "cuisine": "プラン",
+        "area": "新潟市",
+        "purpose": "どんなプランがあるかを先に知りたい人へ",
+        "desc": "プランは「遊覧」「釣り」「遠征便」の3つがある。遊覧は行きたい時間に行きたい場所へ向かうクルージングで、気軽な乗合から、パーティーや誕生日などの貸切まで利用できる。釣りは、自分の好きな場所で釣ってみたいという要望に応える内容で、行ってみたいポイントへ連れて行ってもらえる。遠征便は、沿岸以外のポイントへ向かうプランだ。道具のレンタルがあるため、手ぶらでも釣りを楽しめる。当日の連絡で利用できる暇つぶしプランもある。",
+        "images": [
+          "/_portal/vshops/tri-activity-241/g03.jpg"
+        ],
+        "specs": [
+          {
+            "k": "プラン",
+            "v": "遊覧・釣り・遠征便"
+          },
+          {
+            "k": "レンタル",
+            "v": "手ぶらで釣りが可能"
+          }
+        ]
+      },
+      {
+        "rank": "POINT 02",
+        "rankNum": 2,
+        "name": "出港場所とアクセス",
+        "cuisine": "出港場所",
+        "area": "新潟市中央区",
+        "purpose": "乗船場所への行き方を知りたい人へ",
+        "desc": "出港場所は新潟市信濃川左岸、白山神社やすらぎ堤の近くだ。信濃川は新潟市の中心地を流れる川で、中心地からアクセスがよい水上タクシーだ。もう一つの場所として、万代テラスハジマリヒロバ（右岸）での乗船・下船、途中での送迎もできる。係留場所前には有料駐車場があり、船からすぐの距離にある。予約は7日以上前までが基本で、当日の連絡で利用できる暇つぶしプランも別にある。",
+        "images": [
+          "/_portal/vshops/tri-activity-241/g04.jpg"
+        ],
+        "specs": [
+          {
+            "k": "出港場所",
+            "v": "信濃川左岸・白山神社やすらぎ堤近く"
+          },
+          {
+            "k": "もう一つの場所",
+            "v": "万代テラスハジマリヒロバ（右岸）"
+          }
+        ]
+      },
+      {
+        "rank": "POINT 03",
+        "rankNum": 3,
+        "name": "船の大きさと設備",
+        "cuisine": "船・設備",
+        "area": "新潟市",
+        "purpose": "船のつくりや安全面を知りたい人へ",
+        "desc": "船は最大乗船人数12人乗り、全長約10m、幅約3mだ。安全のため、乗船人数は最大11人までとしている。水洗トイレ、手洗い洗浄水タンク、キャビン内の仮眠休憩室があり、魚探・レーダー・GPSなどの装備も備えている。船内でWi-Fiも使える。遊漁船（新潟県庁 農林水産部水産課）と、一般不定期航路事業・旅客船（国土交通省北陸信越運輸局新潟運輸支局）の登録を受けている。漁船総合保険・船客傷害賠償保険にも加入している。",
+        "images": [
+          "/_portal/vshops/tri-activity-241/g01.jpg"
+        ],
+        "specs": [
+          {
+            "k": "船の大きさ",
+            "v": "最大12人乗り・全長約10m・幅約3m"
+          },
+          {
+            "k": "設備",
+            "v": "水洗トイレ・キャビン・魚探・GPS・Wi-Fi"
+          }
+        ]
+      },
+      {
+        "rank": "POINT 04",
+        "rankNum": 4,
+        "name": "ペット・車椅子・多言語への対応",
+        "cuisine": "対応",
+        "area": "新潟市",
+        "purpose": "家族やペット、体の不自由な方との利用を知りたい人へ",
+        "desc": "ペットは全プランで乗船できる。車椅子の方には、事前の連絡で車椅子固定台等を準備する。聴覚障がいの方には手話・筆談、視覚障がいの方には点字の案内で対応し、英語表記の案内もある。子どもの乗船には保護者の同伴が必要で、親子の釣り・クルージング体験には優遇もある。初心者、子ども、カップル向けのプランもあり、船に乗ったことがない人も利用できる内容だ。",
+        "images": [
+          "/_portal/vshops/tri-activity-241/g05.jpg"
+        ],
+        "specs": [
+          {
+            "k": "ペット",
+            "v": "全プランで乗船可能"
+          },
+          {
+            "k": "対応",
+            "v": "車椅子・手話筆談・点字・英語案内"
+          }
+        ]
+      }
+    ],
+    "sideArticles": [],
+    "quote": "プランは「遊覧」「釣り」「遠征便」の3つで、信濃川沿いの出港場所から新潟市中心地へのアクセスもよい。水洗トイレやキャビンを備えた小型船で、ペットや車椅子の方への対応も用意されている。",
+    "quoteCite": "マチノワ編集部",
+    "closing": "出港場所は新潟市信濃川左岸、白山神社やすらぎ堤の近くで、万代テラスハジマリヒロバでの乗下船や途中送迎もできる。予約は7日以上前までが基本だが、当日の連絡で利用できる暇つぶしプランもある。船内でWi-Fiが使え、水洗トイレやキャビン内の仮眠休憩室もある。"
+  },
+  "summary": "新潟市中央区川岸町、信濃川沿いから出船するナシレラスターの情報を整理。遊覧・釣り・遠征便の3つのプラン、出港場所とアクセス、船の設備、ペットや車椅子への対応、予約のしかたをまとめた特集。",
+  "tags": [
+    "海・川",
+    "新潟市"
+  ],
+  "charCount": 1078,
+  "facts": [
+    {
+      "claim": "釣船チャーターとしてGoogleマップに表示されている",
+      "source": "https://maps.google.com/?cid=4779570644850174289",
+      "quote": "釣船チャーター",
+      "checkedAt": "2026-10-27"
+    },
+    {
+      "claim": "新潟市西港から出船の釣り船",
+      "source": "https://nashirera-star.jp/",
+      "quote": "新潟市西港から出船の釣り船",
+      "checkedAt": "2026-10-27"
+    },
+    {
+      "claim": "信濃川沿いから出船している",
+      "source": "https://nashirera-star.jp/aboutus/",
+      "quote": "信濃川沿いから出船していますので",
+      "checkedAt": "2026-10-27"
+    },
+    {
+      "claim": "新潟市の中心地からアクセスがよい水上タクシー",
+      "source": "https://nashirera-star.jp/aboutus/",
+      "quote": "新潟市の中心地からアクセスがとてもよい水上タクシーです",
+      "checkedAt": "2026-10-27"
+    },
+    {
+      "claim": "プランは遊覧・釣り・遠征便の3つがある",
+      "source": "https://nashirera-star.jp/plan/",
+      "quote": "行きたい時間に行きたい場所へ。気軽にクルージング",
+      "checkedAt": "2026-10-27"
+    },
+    {
+      "claim": "釣りは自分の好きな場所で釣るという要望に応える",
+      "source": "https://nashirera-star.jp/plan/",
+      "quote": "自分の好きな場所で釣ってみたい",
+      "checkedAt": "2026-10-27"
+    },
+    {
+      "claim": "遠征便は沿岸以外のポイントへ連れて行く",
+      "source": "https://nashirera-star.jp/plan/",
+      "quote": "沿岸以外のポイントへお連れします",
+      "checkedAt": "2026-10-27"
+    },
+    {
+      "claim": "手ぶらで釣りを楽しめる",
+      "source": "https://nashirera-star.jp/",
+      "quote": "手ぶらで釣りを楽しめる",
+      "checkedAt": "2026-10-27"
+    },
+    {
+      "claim": "最大乗船人数12人乗り、全長約10m、幅約3m",
+      "source": "https://nashirera-star.jp/aboutus/",
+      "quote": "最大乗船人数１２人乗り",
+      "checkedAt": "2026-10-27"
+    },
+    {
+      "claim": "安全のため乗船人数は最大11人まで",
+      "source": "https://nashirera-star.jp/aboutus/",
+      "quote": "乗船人数は最大１１人までにしております",
+      "checkedAt": "2026-10-27"
+    },
+    {
+      "claim": "水洗トイレ、手洗い洗浄水タンク、キャビン内仮眠休憩室がある",
+      "source": "https://nashirera-star.jp/aboutus/",
+      "quote": "水洗トイレ、手洗い洗浄水タンク、キャビン内仮眠休憩室",
+      "checkedAt": "2026-10-27"
+    },
+    {
+      "claim": "魚探・レーダー・GPSなどの装備がある",
+      "source": "https://nashirera-star.jp/aboutus/",
+      "quote": "魚探、レーダー、GPS",
+      "checkedAt": "2026-10-27"
+    },
+    {
+      "claim": "船内でWi-Fiが使える",
+      "source": "https://nashirera-star.jp/",
+      "quote": "Wi-Fiでも船内で使えます",
+      "checkedAt": "2026-10-27"
+    },
+    {
+      "claim": "出港場所は白山神社やすらぎ堤の近く",
+      "source": "https://nashirera-star.jp/aboutus/",
+      "quote": "白山神社 やすらぎ堤",
+      "checkedAt": "2026-10-27"
+    },
+    {
+      "claim": "万代テラスハジマリヒロバでも出港・帰港・途中送迎ができる",
+      "source": "https://nashirera-star.jp/aboutus/",
+      "quote": "万代テラスハジマリヒロバ（右岸）は出港、帰港、途中",
+      "checkedAt": "2026-10-27"
+    },
+    {
+      "claim": "ペットの乗船は全プランで可能",
+      "source": "https://nashirera-star.jp/price/",
+      "quote": "ペットの乗船も全プラン可能です",
+      "checkedAt": "2026-10-27"
+    },
+    {
+      "claim": "車椅子の方には車椅子固定台等を準備する",
+      "source": "https://nashirera-star.jp/aboutus/",
+      "quote": "車椅子固定台等の準備致します",
+      "checkedAt": "2026-10-27"
+    },
+    {
+      "claim": "聴覚障がい者には手話・筆談で対応する",
+      "source": "https://nashirera-star.jp/aboutus/",
+      "quote": "手話、筆談での対応も可能です",
+      "checkedAt": "2026-10-27"
+    },
+    {
+      "claim": "英語表記案内がある",
+      "source": "https://nashirera-star.jp/aboutus/",
+      "quote": "英語表記案内ございます",
+      "checkedAt": "2026-10-27"
+    },
+    {
+      "claim": "漁船総合保険・船客傷害賠償保険に加入している",
+      "source": "https://nashirera-star.jp/aboutus/",
+      "quote": "漁船総合保険（遊漁船）・船客傷害賠償保険",
+      "checkedAt": "2026-10-27"
+    },
+    {
+      "claim": "遊漁船・一般不定期航路事業の登録を受けている",
+      "source": "https://nashirera-star.jp/aboutus/",
+      "quote": "遊漁船（新潟県庁 農林水産部水産課）",
+      "checkedAt": "2026-10-27"
+    },
+    {
+      "claim": "予約は7日以上前までが基本",
+      "source": "https://nashirera-star.jp/",
+      "quote": "ご予約は７日以上前までにお願いしております",
+      "checkedAt": "2026-10-27"
+    },
+    {
+      "claim": "暇つぶしプランは当日連絡で釣り体験やクルージングができる",
+      "source": "https://nashirera-star.jp/price/",
+      "quote": "当日、思いたったら、連絡いただければ釣り体験",
+      "checkedAt": "2026-10-27"
+    },
+    {
+      "claim": "初心者、子ども、カップル向けのプランがある",
+      "source": "https://nashirera-star.jp/",
+      "quote": "初心者、子ども、カップルプランあります",
+      "checkedAt": "2026-10-27"
+    },
+    {
+      "claim": "親子の釣り・クルージング体験には優遇がある",
+      "source": "https://nashirera-star.jp/",
+      "quote": "親子の釣り、クルージング体験待遇",
+      "checkedAt": "2026-10-27"
+    },
+    {
+      "claim": "係留場所前に有料駐車場がある",
+      "source": "https://nashirera-star.jp/",
+      "quote": "係留場所前の有料駐車場です",
+      "checkedAt": "2026-10-27"
+    },
+    {
+      "claim": "子どもの乗船には保護者の同伴が必要",
+      "source": "https://nashirera-star.jp/price/",
+      "quote": "お子様の乗船は保護者の同伴をお願いしております",
+      "checkedAt": "2026-10-27"
+    },
+    {
+      "claim": "営業時間は毎日24時間",
+      "source": "https://maps.google.com/?cid=4779570644850174289",
+      "quote": "24時間営業",
+      "checkedAt": "2026-10-27"
+    }
+  ],
+  "images": [
+    {
+      "path": "/_portal/vshops/tri-activity-241/g01.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9TVOTWpojMkAO3G4P-qNKnk3rq6CLPpzvRosv0O1m2LsSPoTakAF7Zln5Gp396bJqGMoehmKfO3OcnvW9X_FcCoYAEmm0Af15HQLV6ra8H-316oUM42SgkkbhEt58IijSt3plY-fITcFY_I=s1200",
+      "pageUrl": "https://maps.google.com/?cid=4779570644850174289",
+      "what": "海上に浮かぶ船の上で釣り竿を持つ人物"
+    },
+    {
+      "path": "/_portal/vshops/tri-activity-241/g02.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9TWzo8-7oXYqGNJpcJ1hySdkCzJ1LX12-ih9rCoNA4eZXVz5xVJrQciW6PQRvNzv0FpuXu7n87GgFQXU3K7_Qh1Sjp4z5j9BuwGinAxHbN5aMzGuv61NNe2hf38MkWpbx05ppD6lw=s1200",
+      "pageUrl": "https://maps.google.com/?cid=4779570644850174289",
+      "what": "海上で小型の釣り用ボートに乗る人物"
+    },
+    {
+      "path": "/_portal/vshops/tri-activity-241/g03.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9Tda6CR1sQrz47p4YK9t9ST1U3G9fOBNGbm_qrGd_gHBafaLEbfcJxdX_Cxecclx07ZX430zcp34qqRElmlsQdkOvXzJgVqRQ8hYxIrphETt5yTDK7Z5daiBF0Oj8Sp99CwgLu6=s1200",
+      "pageUrl": "https://maps.google.com/?cid=4779570644850174289",
+      "what": "船上で釣った魚を持つ二人の人物"
+    },
+    {
+      "path": "/_portal/vshops/tri-activity-241/g04.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9RCMC3YPjHNKKNIstRGM__eSHzt5u4BzHGccpQcdj_ecKqNwXsEOrjyc4KWm38Y9pf0HQaO8RGwrA03F2Mb4x0IBElzMlhgl1JDx59cq3XDoge8HKelUR4PVt2ps23A9nwttSf3KbyIw8cY=s1200",
+      "pageUrl": "https://maps.google.com/?cid=4779570644850174289",
+      "what": "船上から見える橋と街並み"
+    },
+    {
+      "path": "/_portal/vshops/tri-activity-241/g05.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9T5YYihme3WESZz-nIfH2-2JJJxopqMRq3-oqA8G1p-0kFOwt3nBadICF1KRbNUhdEpVZmhdXQWwotWkirUTM8XWbmj-hGO8kSrskJVVyiodNOrZHwxYO1qgdcSM6IvOH5e_wzim9mk-wc=s1200",
+      "pageUrl": "https://maps.google.com/?cid=4779570644850174289",
+      "what": "船上で釣り竿を持つ親子"
+    },
+    {
+      "path": "/_portal/vshops/tri-activity-241/g06.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9RtpBIrANMcLUPnlGIiZN3AsBwNRT10IMl9WlMLkT_i8xtjwlIBsZAVMqLzT8bVzOdJVComfqBXZoDxtx57Nu5_BS3IpvvyXU6Y1t5CUfde7vGbURztl4OPNUisDZEJ8OTAh6EZJVaBVlE=s1200",
+      "pageUrl": "https://maps.google.com/?cid=4779570644850174289",
+      "what": "航行する船が立てる白い航跡と海"
+    },
+    {
+      "path": "/_portal/vshops/tri-activity-241/g07.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9TUmj7MigweA7aOG2pqoG-yR64gFqu8okLTykRIsi5jE0n0u8KBY-OVWZny_A_APT6zafbmTfztxF-MVjCnkUWia5zFeYDdFtWSHE93bbSAkU7iSSqRAeYb3wxeVuZLv0U92KLX_Ub4Dqy8=s1200",
+      "pageUrl": "https://maps.google.com/?cid=4779570644850174289",
+      "what": "船上で大きな魚を持つ人物"
+    },
+    {
+      "path": "/_portal/vshops/tri-activity-241/g08.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9QEThJEX1WlwpRwbwEkMylKFd1Wpo1IYAm-23tn--THvANLtkEMNaK11NDBPpXcbR85HyDyKj0BQY6xNNQI3_5VbGdyUiKfoiScpss5gODNA8_YW45LmfLXztDU0ohwOtCJBc0=s1200",
+      "pageUrl": "https://maps.google.com/?cid=4779570644850174289",
+      "what": "海上で小型の釣り用ボートに乗る人物と遠くの陸地"
+    },
+    {
+      "path": "/_portal/vshops/tri-activity-241/g09.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9S8QIeNwNrddKv3QX5paXo-nNkXoUtsfU4lXQE4h-eADc4LQCouDVP4Qx9LF9L8vkWdYLNZsUWDUjLqgt9mYZA4Cur7BJdUs6WNxNQzgYI5w-WMZM_QqTTt3hejn5oEdfKNZJcMjw=s1200",
+      "pageUrl": "https://maps.google.com/?cid=4779570644850174289",
+      "what": "川岸に乗り上げた小型艇と奥に見える橋"
+    },
+    {
+      "path": "/_portal/vshops/tri-activity-241/s01.jpg",
+      "imageUrl": "https://nashirera-star.jp/wp-content/uploads/2022/10/main3.jpg",
+      "pageUrl": "https://nashirera-star.jp/",
+      "what": "操縦席越しに見える新潟市街地と橋"
+    },
+    {
+      "path": "/_portal/vshops/tri-activity-241/s02.jpg",
+      "imageUrl": "https://nashirera-star.jp/wp-content/uploads/2022/10/night.jpg",
+      "pageUrl": "https://nashirera-star.jp/",
+      "what": "川面に明かりが映る夜景"
+    },
+    {
+      "path": "/_portal/vshops/tri-activity-241/s04.jpg",
+      "imageUrl": "https://nashirera-star.jp/wp-content/uploads/2022/10/gal27.jpg",
+      "pageUrl": "https://nashirera-star.jp/",
+      "what": "広がる海と空の景色"
+    },
+    {
+      "path": "/_portal/vshops/tri-activity-241/s08.jpg",
+      "imageUrl": "https://nashirera-star.jp/wp-content/uploads/2022/10/gal33-768x576.jpg",
+      "pageUrl": "https://nashirera-star.jp/plan/",
+      "what": "操縦席から見る日の出のシルエット"
+    }
+  ],
+  "sources": [
+    {
+      "label": "公式サイト",
+      "url": "https://nashirera-star.jp/"
+    },
+    {
+      "label": "公式サイト(プラン)",
+      "url": "https://nashirera-star.jp/plan/"
+    },
+    {
+      "label": "公式サイト(料金)",
+      "url": "https://nashirera-star.jp/price/"
+    },
+    {
+      "label": "公式サイト(ナシレラスターについて)",
+      "url": "https://nashirera-star.jp/aboutus/"
+    },
+    {
+      "label": "Google マップ",
+      "url": "https://maps.google.com/?cid=4779570644850174289"
+    }
+  ],
+  "notes": "automation/v2/write.mjs が 2026-10-27 に作成。"
+}

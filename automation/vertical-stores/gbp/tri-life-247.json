@@ -1,0 +1,40 @@
+{
+  "tab": "トリニティアポ",
+  "tabEn": "tri-life",
+  "row": 247,
+  "sheet": {
+    "name": "藤心陶芸教室",
+    "address": "",
+    "url": "https://www.google.com/maps/search/?api=1&query=%E8%97%A4%E5%BF%83%E9%99%B6%E8%8A%B8%E6%95%99%E5%AE%A4%20047-137-9922%20%E3%80%92277-0921%20%E5%8D%83%E8%91%89%E7%9C%8C%E6%9F%8F%E5%B8%82%E5%A4%A7%E6%B4%A5%E3%82%B1%E4%B8%98%EF%BC%93%E4%B8%81%E7%9B%AE%EF%BC%95%E2%88%92%EF%BC%91%20%EF%BC%95%E7%95%AA%E5%9C%B01%20%E5%8F%B7%E6%A3%9F102",
+    "type": "陶芸教室",
+    "d1": "",
+    "d2": ""
+  },
+  "urlKind": "mapsApi",
+  "route": "第1段(verify-gbp.mjs)で確認済み",
+  "verdict": "一致",
+  "verdictReason": "手がかり: 電話＋住所(番地まで)。電話が一致／店名: different(シート「藤心陶芸教室」/ マップ「藤心陶芸センター」)／住所(シート): exact・町名・番地とも一致",
+  "place": {
+    "name": "藤心陶芸センター",
+    "address": "千葉県柏市大津ケ丘３丁目５−１ ５番地1 号棟102",
+    "category": "カルチャー スクール",
+    "lat": 35.8388432,
+    "lng": 139.9980155,
+    "gbpUrl": "https://maps.google.com/?cid=3782250707216948295",
+    "phone": "04-7137-9922",
+    "website": "https://www.tougei-school.jp/",
+    "hours": {
+      "月": "10:00–15:00",
+      "火": "10:00–15:00",
+      "水": "10:00–15:00",
+      "木": "10:00–15:00",
+      "金": "10:00–15:00",
+      "土": "10:00–15:00",
+      "日": "10:00–15:00"
+    },
+    "reserveLinks": [],
+    "statusSignals": [],
+    "closedSignal": false
+  },
+  "fetchedAt": "2026-10-27T09:19:13.666Z"
+}

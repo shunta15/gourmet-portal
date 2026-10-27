@@ -1,0 +1,41 @@
+{
+  "commit": "d34a688f707cbc73e345d58b195d26b33f09d2ec",
+  "source": "/Users/shunta/claude/gp-k-auto2",
+  "count": 3,
+  "added": [
+    {
+      "row": 252,
+      "name": "CHP仙台",
+      "key": "tri-activity-252",
+      "vertical": "アクティビティ",
+      "id": "ac0027",
+      "articleId": "ac0027",
+      "shopUrl": "https://machinowa.tokyo/activity/shop/ac0027",
+      "articleUrl": "https://machinowa.tokyo/activity/article/ac0027",
+      "sheetUrl": "https://machinowa.tokyo/activity/article/ac0027"
+    },
+    {
+      "row": 253,
+      "name": "持法院",
+      "key": "tri-life-253",
+      "vertical": "くらし",
+      "id": "li0061",
+      "articleId": "li0061",
+      "shopUrl": "https://machinowa.tokyo/life/shop/li0061",
+      "articleUrl": "https://machinowa.tokyo/life/article/li0061",
+      "sheetUrl": "https://machinowa.tokyo/life/article/li0061"
+    },
+    {
+      "row": 254,
+      "name": "菅生神社",
+      "key": "tri-life-254",
+      "vertical": "くらし",
+      "id": "li0062",
+      "articleId": "li0062",
+      "shopUrl": "https://machinowa.tokyo/life/shop/li0062",
+      "articleUrl": "https://machinowa.tokyo/life/article/li0062",
+      "sheetUrl": "https://machinowa.tokyo/life/article/li0062"
+    }
+  ],
+  "skipped": []
+}

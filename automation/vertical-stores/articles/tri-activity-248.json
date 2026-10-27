@@ -1,0 +1,202 @@
+{
+  "key": "tri-activity-248",
+  "headline": "鹿児島県熊毛郡屋久島町宮之浦にあるツアー会社。体験ダイビングやシュノーケリング、白谷雲水峡や縄文杉のトレッキングなど、屋久島の海と山を案内している",
+  "lede": "鹿児島県熊毛郡屋久島町にある「屋久島自然案内」です。体験ダイビングやシュノーケリング、白谷雲水峡や縄文杉のトレッキングなど、屋久島の海と山をガイドが案内するツアー会社です。体験ダイビングはライセンスが無くても参加できます。",
+  "sections": [
+    {
+      "heading": "体験ダイビングの内容",
+      "body": "体験ダイビングには１ダイブコース、スペシャル１ダイブコース、２ダイブコースがあり、いずれもダイビングのライセンスは不要で、対象年齢は10歳から65歳です。１ダイブコースの所要時間は約3時間、ウミガメとの出会いを目的としたスペシャル１ダイブコースは約3.5時間で、潜水時間を長めに設定することでウミガメと出会う確率が高まります。ツアー中はインストラクターが写真や動画を撮影します。"
+    },
+    {
+      "heading": "集合場所と参加条件",
+      "body": "体験ダイビングの開催地は一湊・元浦海岸、集合場所は一湊海水浴場駐車場です。予約時に相談すれば、可能な限り送迎にも対応します。対象年齢は10歳から65歳で、13歳未満の参加者は保護者と一緒の参加が必要です。雨の日でもツアーは開催されます。"
+    },
+    {
+      "heading": "トレッキングツアー",
+      "body": "屋久島自然案内は白谷雲水峡（苔むす森コース・太鼓岩ノーマルコース・太鼓岩原生林歩道コース）や縄文杉を巡るトレッキングツアーも扱っています。登山用品のレンタルは行っていないため、事前に島内のレンタル店などで用意しておく必要があります。"
+    }
+  ],
+  "menus": [
+    {
+      "name": "ウミガメと泳ぐシュノーケリング・ツアー"
+    },
+    {
+      "name": "体験ダイビング / １ダイブコース"
+    },
+    {
+      "name": "体験ダイビング / スペシャル１ダイブコース"
+    },
+    {
+      "name": "体験ダイビング / ２ダイブコース"
+    },
+    {
+      "name": "白谷雲水峡トレッキング（苔むす森）"
+    },
+    {
+      "name": "白谷雲水峡トレッキング（太鼓岩・ノーマルコース）"
+    },
+    {
+      "name": "白谷雲水峡トレッキング（太鼓岩・原生林歩道コース）"
+    },
+    {
+      "name": "縄文杉トレッキング"
+    }
+  ],
+  "tags": [
+    {
+      "tag": "初心者歓迎",
+      "factIndex": 17
+    },
+    {
+      "tag": "雨の日",
+      "factIndex": 14
+    },
+    {
+      "tag": "子連れ",
+      "factIndex": 13
+    }
+  ],
+  "facts": [
+    {
+      "claim": "住所は鹿児島県熊毛郡屋久島町宮之浦２４７３−２９４",
+      "source": "https://maps.google.com/?cid=2302839970852483402",
+      "quote": "鹿児島県熊毛郡屋久島町宮之浦２４７３−２９４",
+      "checkedAt": "2026-10-27"
+    },
+    {
+      "claim": "電話番号は0997-49-1260",
+      "source": "https://maps.google.com/?cid=2302839970852483402",
+      "quote": "0997-49-1260",
+      "checkedAt": "2026-10-27"
+    },
+    {
+      "claim": "営業時間は08:00から20:00",
+      "source": "https://maps.google.com/?cid=2302839970852483402",
+      "quote": "08:00–20:00",
+      "checkedAt": "2026-10-27"
+    },
+    {
+      "claim": "Googleマップの業種表示はツアー業者",
+      "source": "https://maps.google.com/?cid=2302839970852483402",
+      "quote": "ツアー業者",
+      "checkedAt": "2026-10-27"
+    },
+    {
+      "claim": "トレッキングやダイビング、シュノーケリング、カヌー・サップ、釣り、工芸体験など様々なアクティビティを案内している",
+      "source": "https://yakushima-nature.jp/about-us/",
+      "quote": "様々なアクティビティを通して屋久島の自然をご案内",
+      "checkedAt": "2026-10-27"
+    },
+    {
+      "claim": "体験ダイビングはダイビングのライセンスが不要",
+      "source": "https://yakushima-nature.jp/tours/discover-scuba-1dive/",
+      "quote": "ダイビングのライセンスは不要",
+      "checkedAt": "2026-10-27"
+    },
+    {
+      "claim": "体験ダイビングの対象年齢は10歳から65歳",
+      "source": "https://yakushima-nature.jp/tours/discover-scuba-1dive/",
+      "quote": "10歳〜65歳",
+      "checkedAt": "2026-10-27"
+    },
+    {
+      "claim": "体験ダイビング１ダイブコースの所要時間は約3時間",
+      "source": "https://yakushima-nature.jp/tours/discover-scuba-1dive/",
+      "quote": "約3時間",
+      "checkedAt": "2026-10-27"
+    },
+    {
+      "claim": "体験ダイビング・スペシャル１ダイブコースの所要時間は約3.5時間",
+      "source": "https://yakushima-nature.jp/tours/discover-scuba-1dive-sp/",
+      "quote": "約3.5時間",
+      "checkedAt": "2026-10-27"
+    },
+    {
+      "claim": "スペシャル１ダイブコースは潜水時間を長めに設定しウミガメと出会う確率が高まる",
+      "source": "https://yakushima-nature.jp/tours/discover-scuba-1dive-sp/",
+      "quote": "ウミガメと出会う確率が高まります",
+      "checkedAt": "2026-10-27"
+    },
+    {
+      "claim": "ツアー中はインストラクターが写真や動画を撮影する",
+      "source": "https://yakushima-nature.jp/tours/discover-scuba-1dive/",
+      "quote": "インストラクターがツアー中に撮影する",
+      "checkedAt": "2026-10-27"
+    },
+    {
+      "claim": "体験ダイビングの集合場所は一湊海水浴場駐車場",
+      "source": "https://yakushima-nature.jp/tours/discover-scuba-1dive/",
+      "quote": "一湊海水浴場駐車場",
+      "checkedAt": "2026-10-27"
+    },
+    {
+      "claim": "体験ダイビングの開催地は一湊・元浦海岸",
+      "source": "https://yakushima-nature.jp/tours/discover-scuba-1dive/",
+      "quote": "一湊・元浦海岸",
+      "checkedAt": "2026-10-27"
+    },
+    {
+      "claim": "13歳未満の参加者は保護者と一緒の参加が必要",
+      "source": "https://yakushima-nature.jp/tours/discover-scuba-1dive/",
+      "quote": "13歳未満の方（小学生）は基本的に保護者の方と一緒に",
+      "checkedAt": "2026-10-27"
+    },
+    {
+      "claim": "雨の日でもツアーは開催される",
+      "source": "https://yakushima-nature.jp/tours/discover-scuba-1dive/",
+      "quote": "雨の日でもツアーは開催いたします",
+      "checkedAt": "2026-10-27"
+    },
+    {
+      "claim": "白谷雲水峡や縄文杉を巡るトレッキングツアーを扱っている",
+      "source": "https://yakushima-nature.jp/",
+      "quote": "白谷雲水峡トレッキング（苔むす森）",
+      "checkedAt": "2026-10-27"
+    },
+    {
+      "claim": "登山用品のレンタルは行っていない",
+      "source": "https://yakushima-nature.jp/useful-information/",
+      "quote": "登山用品のレンタルは行っておりません",
+      "checkedAt": "2026-10-27"
+    },
+    {
+      "claim": "体験ダイビングは初めての方を対象としている",
+      "source": "https://yakushima-nature.jp/tours/discover-scuba-1dive/",
+      "quote": "初めての方を対象に",
+      "checkedAt": "2026-10-27"
+    },
+    {
+      "claim": "予約時に相談すれば可能な限り送迎にも対応する",
+      "source": "https://yakushima-nature.jp/tours/discover-scuba-1dive/",
+      "quote": "可能な限り送迎も行っております",
+      "checkedAt": "2026-10-27"
+    }
+  ],
+  "sources": [
+    {
+      "label": "公式サイト(トップ)",
+      "url": "https://yakushima-nature.jp/"
+    },
+    {
+      "label": "公式サイト(当店について)",
+      "url": "https://yakushima-nature.jp/about-us/"
+    },
+    {
+      "label": "公式サイト(体験ダイビング１ダイブコース)",
+      "url": "https://yakushima-nature.jp/tours/discover-scuba-1dive/"
+    },
+    {
+      "label": "公式サイト(体験ダイビング・スペシャル１ダイブコース)",
+      "url": "https://yakushima-nature.jp/tours/discover-scuba-1dive-sp/"
+    },
+    {
+      "label": "公式サイト(島内のレンタル店一覧)",
+      "url": "https://yakushima-nature.jp/useful-information/"
+    },
+    {
+      "label": "Google マップ",
+      "url": "https://maps.google.com/?cid=2302839970852483402"
+    }
+  ],
+  "notes": "automation/v2/write.mjs が 2026-10-27 に claude -p --model sonnet で作成。事実の裏取り: 19/19 件(quote が出どころにあるもの)。裏取りに通らなかった facts は載せていない。"
+}

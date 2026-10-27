@@ -1,0 +1,206 @@
+{
+  "commit": "5c9e0ed984781d33b1d08ab2aba0db72dcfba938",
+  "source": "/Users/shunta/claude/gp-k-auto2",
+  "count": 18,
+  "added": [
+    {
+      "row": 81,
+      "name": "台湾市場食堂美蘭",
+      "key": "tri-gourmet-81",
+      "vertical": "グルメ",
+      "id": "r751",
+      "articleId": "台湾市場食堂美蘭",
+      "shopUrl": "https://machinowa.tokyo/restaurant/r751",
+      "articleUrl": "https://machinowa.tokyo/feature/台湾市場食堂美蘭",
+      "sheetUrl": "https://machinowa.tokyo/feature/台湾市場食堂美蘭"
+    },
+    {
+      "row": 95,
+      "name": "甘露肉汁",
+      "key": "tri-gourmet-95",
+      "vertical": "グルメ",
+      "id": "r752",
+      "articleId": "甘露肉汁",
+      "shopUrl": "https://machinowa.tokyo/restaurant/r752",
+      "articleUrl": "https://machinowa.tokyo/feature/甘露肉汁",
+      "sheetUrl": "https://machinowa.tokyo/feature/甘露肉汁"
+    },
+    {
+      "row": 106,
+      "name": "カフェバーミヤミ",
+      "key": "tri-gourmet-106",
+      "vertical": "グルメ",
+      "id": "r756",
+      "articleId": "cafebarmiyami",
+      "shopUrl": "https://machinowa.tokyo/restaurant/r756",
+      "articleUrl": "https://machinowa.tokyo/feature/cafebarmiyami",
+      "sheetUrl": "https://machinowa.tokyo/feature/cafebarmiyami"
+    },
+    {
+      "row": 133,
+      "name": "和醸良酒○たけ(まるたけ)",
+      "key": "tri-gourmet-133",
+      "vertical": "グルメ",
+      "id": "r753",
+      "articleId": "和醸良酒〇たけ",
+      "shopUrl": "https://machinowa.tokyo/restaurant/r753",
+      "articleUrl": "https://machinowa.tokyo/feature/和醸良酒〇たけ",
+      "sheetUrl": "https://machinowa.tokyo/feature/和醸良酒〇たけ"
+    },
+    {
+      "row": 139,
+      "name": "MELUCAFE",
+      "key": "tri-gourmet-139",
+      "vertical": "グルメ",
+      "id": "r754",
+      "articleId": "MELUCAFE",
+      "shopUrl": "https://machinowa.tokyo/restaurant/r754",
+      "articleUrl": "https://machinowa.tokyo/feature/MELUCAFE",
+      "sheetUrl": "https://machinowa.tokyo/feature/MELUCAFE"
+    },
+    {
+      "row": 161,
+      "name": "雅珈",
+      "key": "tri-gourmet-161",
+      "vertical": "グルメ",
+      "id": "r755",
+      "articleId": "雅珈",
+      "shopUrl": "https://machinowa.tokyo/restaurant/r755",
+      "articleUrl": "https://machinowa.tokyo/feature/雅珈",
+      "sheetUrl": "https://machinowa.tokyo/feature/雅珈"
+    },
+    {
+      "row": 170,
+      "name": "サニーディッパークライミング 玉城店",
+      "key": "tri-activity-170",
+      "vertical": "アクティビティ",
+      "id": "ac0021",
+      "articleId": "ac0021",
+      "shopUrl": "https://machinowa.tokyo/activity/shop/ac0021",
+      "articleUrl": "https://machinowa.tokyo/activity/article/ac0021",
+      "sheetUrl": "https://machinowa.tokyo/activity/article/ac0021"
+    },
+    {
+      "row": 237,
+      "name": "徳善寺 (横浜市)",
+      "key": "tri-life-237",
+      "vertical": "くらし",
+      "id": "li0055",
+      "articleId": "li0055",
+      "shopUrl": "https://machinowa.tokyo/life/shop/li0055",
+      "articleUrl": "https://machinowa.tokyo/life/article/li0055",
+      "sheetUrl": "https://machinowa.tokyo/life/article/li0055"
+    },
+    {
+      "row": 239,
+      "name": "二川伏見いなり",
+      "key": "tri-life-239",
+      "vertical": "くらし",
+      "id": "li0056",
+      "articleId": "li0056",
+      "shopUrl": "https://machinowa.tokyo/life/shop/li0056",
+      "articleUrl": "https://machinowa.tokyo/life/article/li0056",
+      "sheetUrl": "https://machinowa.tokyo/life/article/li0056"
+    },
+    {
+      "row": 240,
+      "name": "大善寺",
+      "key": "tri-life-240",
+      "vertical": "くらし",
+      "id": "li0057",
+      "articleId": "li0057",
+      "shopUrl": "https://machinowa.tokyo/life/shop/li0057",
+      "articleUrl": "https://machinowa.tokyo/life/article/li0057",
+      "sheetUrl": "https://machinowa.tokyo/life/article/li0057"
+    },
+    {
+      "row": 241,
+      "name": "ナシレラスター",
+      "key": "tri-activity-241",
+      "vertical": "アクティビティ",
+      "id": "ac0022",
+      "articleId": "ac0022",
+      "shopUrl": "https://machinowa.tokyo/activity/shop/ac0022",
+      "articleUrl": "https://machinowa.tokyo/activity/article/ac0022",
+      "sheetUrl": "https://machinowa.tokyo/activity/article/ac0022"
+    },
+    {
+      "row": 242,
+      "name": "工房ヤマセン辻佛檀",
+      "key": "tri-activity-242",
+      "vertical": "アクティビティ",
+      "id": "ac0026",
+      "articleId": "ac0026",
+      "shopUrl": "https://machinowa.tokyo/activity/shop/ac0026",
+      "articleUrl": "https://machinowa.tokyo/activity/article/ac0026",
+      "sheetUrl": "https://machinowa.tokyo/activity/article/ac0026"
+    },
+    {
+      "row": 243,
+      "name": "八ヶ岳アドベンチャーツアーズ",
+      "key": "tri-activity-243",
+      "vertical": "アクティビティ",
+      "id": "ac0023",
+      "articleId": "ac0023",
+      "shopUrl": "https://machinowa.tokyo/activity/shop/ac0023",
+      "articleUrl": "https://machinowa.tokyo/activity/article/ac0023",
+      "sheetUrl": "https://machinowa.tokyo/activity/article/ac0023"
+    },
+    {
+      "row": 244,
+      "name": "丸和まくら工房/枕づくり体験",
+      "key": "tri-activity-244",
+      "vertical": "アクティビティ",
+      "id": "ac0024",
+      "articleId": "ac0024",
+      "shopUrl": "https://machinowa.tokyo/activity/shop/ac0024",
+      "articleUrl": "https://machinowa.tokyo/activity/article/ac0024",
+      "sheetUrl": "https://machinowa.tokyo/activity/article/ac0024"
+    },
+    {
+      "row": 246,
+      "name": "舊城寺(旧城寺)",
+      "key": "tri-life-246",
+      "vertical": "くらし",
+      "id": "li0060",
+      "articleId": "li0060",
+      "shopUrl": "https://machinowa.tokyo/life/shop/li0060",
+      "articleUrl": "https://machinowa.tokyo/life/article/li0060",
+      "sheetUrl": "https://machinowa.tokyo/life/article/li0060"
+    },
+    {
+      "row": 247,
+      "name": "藤心陶芸教室",
+      "key": "tri-life-247",
+      "vertical": "くらし",
+      "id": "li0059",
+      "articleId": "li0059",
+      "shopUrl": "https://machinowa.tokyo/life/shop/li0059",
+      "articleUrl": "https://machinowa.tokyo/life/article/li0059",
+      "sheetUrl": "https://machinowa.tokyo/life/article/li0059"
+    },
+    {
+      "row": 248,
+      "name": "屋久島自然案内",
+      "key": "tri-activity-248",
+      "vertical": "アクティビティ",
+      "id": "ac0025",
+      "articleId": "ac0025",
+      "shopUrl": "https://machinowa.tokyo/activity/shop/ac0025",
+      "articleUrl": "https://machinowa.tokyo/activity/article/ac0025",
+      "sheetUrl": "https://machinowa.tokyo/activity/article/ac0025"
+    },
+    {
+      "row": 245,
+      "name": "着付蓮花",
+      "key": "tri-life-245",
+      "vertical": "くらし",
+      "id": "li0058",
+      "articleId": "li0058",
+      "shopUrl": "https://machinowa.tokyo/life/shop/li0058",
+      "articleUrl": "https://machinowa.tokyo/life/article/li0058",
+      "sheetUrl": "https://machinowa.tokyo/life/article/li0058"
+    }
+  ],
+  "skipped": []
+}

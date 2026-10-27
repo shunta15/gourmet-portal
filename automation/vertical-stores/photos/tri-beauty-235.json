@@ -1,0 +1,66 @@
+{
+  "key": "tri-beauty-235",
+  "images": [
+    {
+      "path": "/_portal/vshops/tri-beauty-235/g01.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9TS4TAqpBW_TGy_TCNrQ_XtqvcMlS1nXVqT9Plo_pq6ltTOcjQ6jdb8BFsceCAHJN8ViMpLrR-pl538YdPw_go3PdLOdjU-l9C-MI3sVsrs6ya0EU03Z1_zIGDdHJVw80WES-WQ=s1200",
+      "pageUrl": "https://maps.google.com/?cid=13073551530782587182",
+      "what": "ヘアエマルジョン商品のボトルが並ぶ写真",
+      "kind": "meal",
+      "width": 750,
+      "height": 422,
+      "source": "Google マップ"
+    },
+    {
+      "path": "/_portal/vshops/tri-beauty-235/g03.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9QSHNfHvtDej4LIRI9X4Ae75uN86mH9IT_5In3-BRCTBpKBF-OTr2cl4Pbn_ReI-w9LF0RZYdQsk6U5Cv7L2NLsP0hP_J7lezZ6fqDwu-2iMDWHCdLyMbvz8XSLQSjG43quMa7R=s1200",
+      "pageUrl": "https://maps.google.com/?cid=13073551530782587182",
+      "what": "美容材料のボトルや道具が並ぶ店内のカート",
+      "kind": "common",
+      "width": 900,
+      "height": 1200,
+      "source": "Google マップ"
+    },
+    {
+      "path": "/_portal/vshops/tri-beauty-235/g04.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9SAnCKDfJsWPSZXQBYv45rz2-S4YKrOUYX0oeNLfoifKVeETaOOXONLIuEbeBWUbge1DBOGssZ1CvSR5wwKhnW3FMLF4WcliZI02SIfLEI7Z0XDPapx04P5qs_GBW16mPRrsgSe=s1200",
+      "pageUrl": "https://maps.google.com/?cid=13073551530782587182",
+      "what": "青い扉と看板プレートのある建物の外観",
+      "kind": "exterior",
+      "width": 920,
+      "height": 613,
+      "source": "Google マップ"
+    },
+    {
+      "path": "/_portal/vshops/tri-beauty-235/g05.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9TIi7R0t5mq7NwiYeg3vBuZ976Bew0v-tegQLG3l_VEYJ04oYzii1UTP2F1Jysp0BKeQ1dSr3pPPABR8JzNYwed4-ZlyjhpgIslHTqC-momVDrq9yudCZZWWpbYInkFwuOZU3L4=s1200",
+      "pageUrl": "https://maps.google.com/?cid=13073551530782587182",
+      "what": "ボトル商品が並ぶ店内の棚",
+      "kind": "common",
+      "width": 900,
+      "height": 1200,
+      "source": "Google マップ"
+    },
+    {
+      "path": "/_portal/vshops/tri-beauty-235/g06.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9SPzSkTA79HF3YycIeIrsYBY_QXqVhUC5HVv119IyucZRZaFH-LHj0DGqrI5-XmB2RyLGR07_MZP-K6fO2YORIiK7XoHds43QlOntCD3l5h9zjacIEk5sJSYanB8Ctb_XmlhDnP=s1200",
+      "pageUrl": "https://maps.google.com/?cid=13073551530782587182",
+      "what": "ヘアエマルジョン商品のボトル2本が置かれたカウンター",
+      "kind": "meal",
+      "width": 900,
+      "height": 1200,
+      "source": "Google マップ"
+    },
+    {
+      "path": "/_portal/vshops/tri-beauty-235/g07.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9SH-Kprs3qLmm3oY9gaimayvr_Ia0cYMxffAi704_nmWzEc6Ln1PSBOM7SaaWcau7BGDAJ68K0e8COJVuyZaEwMpewsrcRmHYkft7V7ws1mJE5GsU5Y20YKqgDEg6K-9uxtvGrYQg=s1200",
+      "pageUrl": "https://maps.google.com/?cid=13073551530782587182",
+      "what": "駐車場と建物が写る外観",
+      "kind": "exterior",
+      "width": 920,
+      "height": 650,
+      "source": "Google マップ"
+    }
+  ],
+  "note": "automation/v2/write.mjs が 2026-10-27T16:13:33.913Z に取得。店の実写だけ(AI 画像・汎用画像・地図・ロゴ・顔が大きい画像は除外)。"
+}
