@@ -47,7 +47,7 @@ function Hero() {
         </Reveal>
       </div>
       <Reveal as="p" variant="fade" className="sal-hero-note" delay={800}>
-        宿ごとに、確認できた
+        宿ごとに、
         <br />
         情報をまとめています。
       </Reveal>
@@ -108,7 +108,7 @@ function Empty() {
   return (
     <div className="sal-empty">
       <p className="sal-empty-t">宿の掲載は、いま準備をしています。</p>
-      <p className="sal-empty-d">確認できた宿から、順に載せていきます。</p>
+      <p className="sal-empty-d">準備ができた宿から、順に載せていきます。</p>
       <Link href={L.search} className="sy-more">
         <span>宿を探す</span>
         <IconArrow />
@@ -167,7 +167,7 @@ export async function stayShopListMetadata(): Promise<Metadata> {
   return buildMetadata({
     vertical: "stay",
     title: `店舗紹介 | ${v.brand}`,
-    description: `実在の宿${count > 0 ? `${count}軒` : ""}の紹介の一覧です。所在地やチェックイン・チェックアウトなど、確認できた情報をまとめています。`,
+    description: `実在の宿${count > 0 ? `${count}軒` : ""}の紹介の一覧です。所在地やチェックイン・チェックアウトなどの情報をまとめています。`,
     path: syLinks("live").shops,
     count,
   });
