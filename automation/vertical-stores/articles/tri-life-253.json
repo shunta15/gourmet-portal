@@ -1,0 +1,78 @@
+{
+  "key": "tri-life-253",
+  "headline": "愛知県岡崎市井田町にある真言宗醍醐派の寺院。延宝元年(1673年)に開かれた。",
+  "lede": "岡崎市にある「龍北山 持法院」です。真言宗醍醐派の寺院で、延宝元年(1673年)に開かれました。",
+  "sections": [
+    {
+      "heading": "本尊と札所",
+      "body": "本尊は十三仏です。三河新四国霊場の二十五番・二十六番の札所になっています。"
+    },
+    {
+      "heading": "アクセス",
+      "body": "名鉄バス「井田観音前」バス停から徒歩7分です。"
+    }
+  ],
+  "menus": [],
+  "tags": [],
+  "facts": [
+    {
+      "claim": "業種の表示は仏教寺院",
+      "source": "https://maps.google.com/?cid=3247420836602917102",
+      "quote": "仏教寺院",
+      "checkedAt": "2026-10-27"
+    },
+    {
+      "claim": "住所は愛知県岡崎市井田町１丁目１０７",
+      "source": "https://maps.google.com/?cid=3247420836602917102",
+      "quote": "愛知県岡崎市井田町１丁目１０７",
+      "checkedAt": "2026-10-27"
+    },
+    {
+      "claim": "電話は0564-21-4007",
+      "source": "https://maps.google.com/?cid=3247420836602917102",
+      "quote": "0564-21-4007",
+      "checkedAt": "2026-10-27"
+    },
+    {
+      "claim": "宗派は真言宗醍醐派",
+      "source": "https://jinja.dr-leather.com/jihouin-ida-okazaki/",
+      "quote": "真言宗醍醐派",
+      "checkedAt": "2026-10-27"
+    },
+    {
+      "claim": "開創は延宝元年(1673年)",
+      "source": "https://jinja.dr-leather.com/jihouin-ida-okazaki/",
+      "quote": "延宝元年(1673年)",
+      "checkedAt": "2026-10-27"
+    },
+    {
+      "claim": "本尊は十三仏",
+      "source": "https://jinja.dr-leather.com/jihouin-ida-okazaki/",
+      "quote": "十三佛",
+      "checkedAt": "2026-10-27"
+    },
+    {
+      "claim": "三河新四国霊場の二十五番・二十六番の札所である",
+      "source": "https://jinja.dr-leather.com/jihouin-ida-okazaki/",
+      "quote": "三河新四国霊場　二十五,二十六番札所",
+      "checkedAt": "2026-10-27"
+    },
+    {
+      "claim": "名鉄バス「井田観音前」バス停から徒歩7分",
+      "source": "https://jinja.dr-leather.com/jihouin-ida-okazaki/",
+      "quote": "名鉄バス　「井田観音前」バス停　徒歩7分",
+      "checkedAt": "2026-10-27"
+    }
+  ],
+  "sources": [
+    {
+      "label": "寺院紹介ページ",
+      "url": "https://jinja.dr-leather.com/jihouin-ida-okazaki/"
+    },
+    {
+      "label": "Google マップ",
+      "url": "https://maps.google.com/?cid=3247420836602917102"
+    }
+  ],
+  "notes": "automation/v2/write.mjs が 2026-10-27 に claude -p --model sonnet で作成。事実の裏取り: 8/8 件(quote が出どころにあるもの)。裏取りに通らなかった facts は載せていない。"
+}

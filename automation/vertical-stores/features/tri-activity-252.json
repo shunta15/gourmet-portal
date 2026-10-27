@@ -1,0 +1,301 @@
+{
+  "key": "tri-activity-252",
+  "vertical": "activity",
+  "storeName": "CHP仙台サーフショップ",
+  "article": {
+    "id": "CHP仙台サーフショップ",
+    "no": "",
+    "articleType": "guide",
+    "kicker": "CHP SENDAI SURF SHOP, WAKABAYASHI-KU",
+    "title": "宮城県仙台市若林区・CHP仙台サーフショップ。仙台新港で行う体験サーフィンの3段階プログラムと持ち物",
+    "titleHTML": "宮城県仙台市若林区のサーフィンショップ<br><em>CHP仙台サーフショップ</em>の体験サーフィンの進め方と持ち物",
+    "subtitle": "サーフィンスクール / 宮城県仙台市若林区 / 仙台新港での体験サーフィン",
+    "lede": "CHP仙台サーフショップは、宮城県仙台市若林区にあるサーフィンショップ兼サーフィンスクールだ。仙台新港を拠点に、体験サーフィンのスクールを毎日開催している。体験は1回で終わらせない3段階のステップアッププログラムで、サーフボードとウェットスーツのレンタルも備えているため、手ぶらで参加できる。",
+    "date": "2026-10-27",
+    "reading": "",
+    "author": "マチノワ編集部",
+    "heroImage": "/_portal/vshops/tri-activity-252/g01.jpg",
+    "ogImage": "/_portal/vshops/tri-activity-252/g01.jpg",
+    "ranking": [
+      {
+        "rank": "POINT 01",
+        "rankNum": 1,
+        "name": "1回で終わらせない、体験サーフィンの3段階プログラム",
+        "cuisine": "体験サーフィンのしくみ",
+        "area": "若林区",
+        "purpose": "どう上達していくのかを、先に知りたい人へ",
+        "desc": "体験サーフィンは1回ごとに参加でき、1回で終わらせないための3段階のステップアッププログラムが用意されている。1回目は海に慣れて立つ感覚をつかみ、2回目はパドリングを練習し、3回目で波に乗る感覚を身につける構成だ。指導にあたるのは、ISAレベル2サーフコーチの国際資格を持つインストラクターで、仙台新港を中心に体験スクールを毎日開催している。受講する人の8割はまったくの未経験者で、ひとりで参加する人も多い。",
+        "images": [
+          "/_portal/vshops/tri-activity-252/g05.jpg"
+        ],
+        "specs": [
+          {
+            "k": "プログラム",
+            "v": "3段階のステップアップ(1回目〜3回目)"
+          },
+          {
+            "k": "指導",
+            "v": "ISAレベル2サーフコーチの国際資格"
+          }
+        ]
+      },
+      {
+        "rank": "POINT 02",
+        "rankNum": 2,
+        "name": "持ち物はバスタオルと水着だけ。レンタルで手ぶら参加",
+        "cuisine": "持ち物とレンタル",
+        "area": "若林区",
+        "purpose": "何を持っていけばいいかを、知りたい人へ",
+        "desc": "体験スクールのサーフボードとウエットスーツはレンタルでき、持ち物はバスタオルと水着だけで参加できる。ショップでは国内外のシェイパーが手掛けるサーフボードや、フルオーダーと既製品のウェットスーツも扱っており、購入後の道具選びにも対応している。サーフボードの修理は自社工場で受け付けていて、小さなキズからノーズ折れまで対応する。初めての人には、乗りやすく上達しやすいオリジナルのセットも用意されている。",
+        "images": [
+          "/_portal/vshops/tri-activity-252/g02.jpg"
+        ],
+        "specs": [
+          {
+            "k": "持ち物",
+            "v": "バスタオルと水着(サーフボード・ウエットスーツはレンタル)"
+          },
+          {
+            "k": "扱う道具",
+            "v": "サーフボード・ウェットスーツ・修理(自社工場)"
+          }
+        ]
+      },
+      {
+        "rank": "POINT 03",
+        "rankNum": 3,
+        "name": "参加できる年齢とひとり参加",
+        "cuisine": "参加条件",
+        "area": "若林区",
+        "purpose": "自分でも参加できるか、知りたい人へ",
+        "desc": "参加する年齢は10歳くらいから60歳くらいまでが目安になっている。受講する人の8割はまったくの未経験者で、ひとりで参加する女性も多い。体験サーフィンは1回だけの参加もでき、3回まとめて申し込むこともできる。海に入るのが初めての人も対象で、年齢や経験を問わず受け付けている環境がある。前日までの連絡であれば、キャンセル料はかからない。",
+        "images": [
+          "/_portal/vshops/tri-activity-252/g09.jpg"
+        ],
+        "specs": [
+          {
+            "k": "年齢の目安",
+            "v": "10歳くらい〜60歳くらい"
+          },
+          {
+            "k": "未経験者の割合",
+            "v": "受講者の8割"
+          }
+        ]
+      },
+      {
+        "rank": "POINT 04",
+        "rankNum": 4,
+        "name": "仙台新港での集合とショップへのアクセス",
+        "cuisine": "集合場所とアクセス",
+        "area": "若林区",
+        "purpose": "どこに行けばいいかを、知りたい人へ",
+        "desc": "体験サーフィンは仙台新港を中心に行われ、集合時間は午前8時、1〜2時間ほどで現地解散になる。ショップは宮城県仙台市若林区大和町4-10-5にあり、地下鉄東西線卸町駅から徒歩約2分、国道4号線バイパス六丁目交差点から仙台駅方面に向かう道沿いだ。店の裏には駐車場が3台分ある。定休日は毎週水曜日と第3木曜日で、そのほかに不定休もある。",
+        "images": [
+          "/_portal/vshops/tri-activity-252/g04.jpg"
+        ],
+        "specs": [
+          {
+            "k": "集合",
+            "v": "仙台新港・午前8時集合・1〜2時間"
+          },
+          {
+            "k": "ショップへのアクセス",
+            "v": "地下鉄東西線卸町駅から徒歩約2分"
+          }
+        ]
+      }
+    ],
+    "sideArticles": [],
+    "quote": "体験サーフィンは1回で終わらせない3段階のステップアッププログラムで、ISAレベル2サーフコーチの国際資格を持つインストラクターが指導にあたる。持ち物はバスタオルと水着だけで、サーフボードとウエットスーツはレンタルできる。",
+    "quoteCite": "マチノワ編集部",
+    "closing": "体験サーフィンは仙台新港を中心に、午前8時集合で1〜2時間ほど行われる。参加する年齢は10歳くらいから60歳くらいまでが目安で、受講する人の8割はまったくの未経験者だ。ショップは地下鉄東西線卸町駅から徒歩約2分、店の裏に駐車場が3台分ある。定休日は毎週水曜日と第3木曜日で、そのほかに不定休もある。"
+  },
+  "summary": "宮城県仙台市若林区のCHP仙台サーフショップの情報を整理。仙台新港で行う体験サーフィンの3段階プログラム、参加できる年齢や持ち物、ショップで扱うサーフボードとウェットスーツ、アクセスの決まりをまとめた特集。",
+  "tags": [
+    "海・川",
+    "仙台市"
+  ],
+  "charCount": 1140,
+  "facts": [
+    {
+      "claim": "宮城県仙台市若林区にある初心者歓迎のサーフィンスクール・サーフショップ",
+      "source": "https://chp-northpoint.com/",
+      "quote": "初心者歓迎のサーフィンスクール・サーフショップです",
+      "checkedAt": "2026-10-27"
+    },
+    {
+      "claim": "2000年創業で4,000名以上の体験スクール実績がある",
+      "source": "https://chp-northpoint.com/",
+      "quote": "2000年創業、4,000名以上の体験スクール実績があり",
+      "checkedAt": "2026-10-27"
+    },
+    {
+      "claim": "ISA(国際サーフィン連盟)公認インストラクターが在籍している",
+      "source": "https://chp-northpoint.com/",
+      "quote": "ISA（国際サーフィン連盟）公認インストラクターが在籍し",
+      "checkedAt": "2026-10-27"
+    },
+    {
+      "claim": "仙台新港を中心に体験スクールを毎日開催している",
+      "source": "https://chp-northpoint.com/",
+      "quote": "仙台新港を中心に体験スクールを毎日開催しています",
+      "checkedAt": "2026-10-27"
+    },
+    {
+      "claim": "サーフボードとウェットスーツのレンタルを完備している",
+      "source": "https://chp-northpoint.com/",
+      "quote": "サーフボード・ウェットスーツのレンタルも完備しており",
+      "checkedAt": "2026-10-27"
+    },
+    {
+      "claim": "体験は1回で終わらせない3段階のステップアッププログラム",
+      "source": "https://chp-northpoint.com/",
+      "quote": "確実に上達する3段階プログラム",
+      "checkedAt": "2026-10-27"
+    },
+    {
+      "claim": "参加する年齢は10歳くらいから60歳くらいまでが目安",
+      "source": "https://chp-northpoint.com/",
+      "quote": "10歳くらいから60歳くらいまでを目安にしてください",
+      "checkedAt": "2026-10-27"
+    },
+    {
+      "claim": "持ち物はバスタオルと水着だけで参加できる",
+      "source": "https://chp-northpoint.com/",
+      "quote": "バスタオルと水着だけでOKです",
+      "checkedAt": "2026-10-27"
+    },
+    {
+      "claim": "体験スクールは仙台新港で行われ、午前8時現地集合で1〜2時間ほど",
+      "source": "https://chp-northpoint.com/",
+      "quote": "時間はAM8:00から現地集合で1〜2時間くらい",
+      "checkedAt": "2026-10-27"
+    },
+    {
+      "claim": "受講する人の8割はまったくの未経験者",
+      "source": "https://chp-northpoint.com/",
+      "quote": "8割の方はまったくの未経験者で",
+      "checkedAt": "2026-10-27"
+    },
+    {
+      "claim": "ひとりで参加する女性も多い",
+      "source": "https://chp-northpoint.com/",
+      "quote": "ひとりで参加される女性の方もたくさんいらっしゃいますし",
+      "checkedAt": "2026-10-27"
+    },
+    {
+      "claim": "国内外のシェイパーが手掛けるサーフボードを扱う",
+      "source": "https://chp-northpoint.com/",
+      "quote": "国内外のトップシェイパー陣が手掛ける多彩なサーフボード",
+      "checkedAt": "2026-10-27"
+    },
+    {
+      "claim": "サーフボードの修理は自社工場で対応している",
+      "source": "https://chp-northpoint.com/",
+      "quote": "自社工場を持つメーカーならではの確かな技術で",
+      "checkedAt": "2026-10-27"
+    },
+    {
+      "claim": "初めての人向けのオリジナルセットは乗りやすく上達しやすい作り",
+      "source": "https://chp-northpoint.com/",
+      "quote": "乗りやすく・上達しやすいセット",
+      "checkedAt": "2026-10-27"
+    },
+    {
+      "claim": "営業時間は平日・土日祝とも12時から19時",
+      "source": "https://chp-northpoint.com/shop/",
+      "quote": "平日 12：00〜19：00 土日祝 12：00〜19：00",
+      "checkedAt": "2026-10-27"
+    },
+    {
+      "claim": "定休日は毎週水曜日と第3木曜日で、そのほかに不定休もある",
+      "source": "https://chp-northpoint.com/shop/",
+      "quote": "毎週水曜日・第3木曜日定休・不定休有",
+      "checkedAt": "2026-10-27"
+    },
+    {
+      "claim": "店の裏に駐車場が3台分ある",
+      "source": "https://chp-northpoint.com/shop/",
+      "quote": "店裏駐車場 ３台完備",
+      "checkedAt": "2026-10-27"
+    },
+    {
+      "claim": "地下鉄東西線卸町駅から徒歩約2分",
+      "source": "https://chp-northpoint.com/shop/",
+      "quote": "地下鉄東西線「卸町駅」より徒歩約2分",
+      "checkedAt": "2026-10-27"
+    },
+    {
+      "claim": "オーナーは熊谷英明氏",
+      "source": "https://chp-northpoint.com/shop/",
+      "quote": "オーナー：熊谷 英明",
+      "checkedAt": "2026-10-27"
+    },
+    {
+      "claim": "オーナーのサーフィン歴は40年以上",
+      "source": "https://chp-northpoint.com/shop/",
+      "quote": "サーフィン歴40年以上のオーナーを始め",
+      "checkedAt": "2026-10-27"
+    }
+  ],
+  "images": [
+    {
+      "path": "/_portal/vshops/tri-activity-252/g01.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9QAYfRZUjv7BJ49QLET20vbssagOYIJIHPHsJt_iYzKjCF_XK2x-7d3H0GRZCzD9C2coG-MFH06Dj1bZtXZTOxPd68Jt9c7BWR2enG_oPG2SjwDky1tpINoH9Z0oipkncB3kFBzjw=s1200",
+      "pageUrl": "https://maps.google.com/?cid=441852394059215483",
+      "what": "サーフボードが並ぶ店舗の外観(夜)"
+    },
+    {
+      "path": "/_portal/vshops/tri-activity-252/g02.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9RKdjsYpd9VeYwUyTKYB-5Em7WG2kA3gG82QA9Ddl4FWIGCnWXvBv8OIegBHI33uZoV2PuD6e7ZDd2dv7tsHK1PfKXOsyr9gIwveKaNyaK566JPyaWrsBalk9vQh7I1I_j6BfNH=s1200",
+      "pageUrl": "https://maps.google.com/?cid=441852394059215483",
+      "what": "ウェットスーツや道具が並ぶ店内の棚"
+    },
+    {
+      "path": "/_portal/vshops/tri-activity-252/g04.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9QibLuC3t6tzC6uJ-CLphLr18dc2SknIIBLlRDbNQujxebY9yimczORT9b9m5eWQzMOXCHBjrM9Ff3QdD25lbJWb2sjXouFe1NmLzE-LqZB4djfeR9G1HXi1ZECJbVdFC5-kDRaCg=s1200",
+      "pageUrl": "https://maps.google.com/?cid=441852394059215483",
+      "what": "波打ち際へボードを抱えて走る人の後ろ姿"
+    },
+    {
+      "path": "/_portal/vshops/tri-activity-252/g05.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9QAnYEgBwYBTpjiWCIf8eFmVhnqhgtqOmD30Zc90W6ALuJu0fP_Hx20uVizBr67aVszBmjMTsKBGXJYTdIbt_HXyVs661pCSO-RosT3pDnuNkgF_CJAWT1gr8lDFnQBAQWid4cO=s1200",
+      "pageUrl": "https://maps.google.com/?cid=441852394059215483",
+      "what": "沖で波に乗るサーファーを遠くから捉えた海"
+    },
+    {
+      "path": "/_portal/vshops/tri-activity-252/g07.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9SinbZ_MkXCvgnx6d8CN3pmYaqX3BP6MGle2mbh9Vxh3xaz6SRHwzS8nnCmnVwVnC_wfsh4I-4-56ImJK0NcHn33sz3rqvwQ2kKs1rBX9b3O4CnAJS4EQWZeIpL_PG8g4B9nyfI=s1200",
+      "pageUrl": "https://maps.google.com/?cid=441852394059215483",
+      "what": "海岸に大勢の人が立ち並ぶ様子"
+    },
+    {
+      "path": "/_portal/vshops/tri-activity-252/g09.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9RScfr5xFja3j5bpgL_B2ZYbG-a-I389ExR7RLoQE82pp2YYVm7Kk1Yq0Q6LfdPMWvpf4V54lg262UK4Ue90ku3MK-6TVkHeSYLRxoCcsMW7iQyDw1fT5j-AHxCup2UM_yN7CHo=s1200",
+      "pageUrl": "https://maps.google.com/?cid=441852394059215483",
+      "what": "海岸に大勢が集合した様子"
+    },
+    {
+      "path": "/_portal/vshops/tri-activity-252/s16.jpg",
+      "imageUrl": "https://chp-northpoint.com/wp-content/uploads/2026/07/IMG_4403-600x600.jpeg",
+      "pageUrl": "https://chp-northpoint.com/",
+      "what": "サーフボードに取り付けられたフィンのアップ"
+    }
+  ],
+  "sources": [
+    {
+      "label": "公式サイト",
+      "url": "https://chp-northpoint.com/"
+    },
+    {
+      "label": "公式サイト(ショップ)",
+      "url": "https://chp-northpoint.com/shop/"
+    },
+    {
+      "label": "Google マップ",
+      "url": "https://maps.google.com/?cid=441852394059215483"
+    }
+  ],
+  "notes": "automation/v2/write.mjs が 2026-10-27 に作成。"
+}

@@ -56,7 +56,8 @@ export const UNLISTED_PLACE_IDS: Readonly<Record<string, readonly string[]>> = {
     "ac0023",
     "ac0024",
     "ac0025",
-    "ac0026"
+    "ac0026",
+    "ac0027"
   ],
   "sports": [
     "sp0004"
@@ -121,7 +122,9 @@ export const UNLISTED_PLACE_IDS: Readonly<Record<string, readonly string[]>> = {
     "li0057",
     "li0058",
     "li0059",
-    "li0060"
+    "li0060",
+    "li0061",
+    "li0062"
   ]
 };
 
@@ -140,7 +143,8 @@ export const UNLISTED_PLACE_FEATURE_IDS: Readonly<Record<string, readonly string
     "(株)工房ヤマセン辻佛檀",
     "八ヶ岳アドベンチャーツアーズ",
     "丸和まくら工房枕づくり体験",
-    "屋久島自然案内"
+    "屋久島自然案内",
+    "CHP仙台サーフショップ"
   ]
 };
 
