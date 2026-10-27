@@ -8,10 +8,10 @@
       "duplicateNames": []
     },
     "トリニティアポ": {
-      "rows": 253,
-      "registered": 175,
+      "rows": 254,
+      "registered": 178,
       "excluded": 2,
-      "candidates": 76,
+      "candidates": 74,
       "duplicateNames": []
     }
   },
@@ -1497,51 +1497,17 @@
     },
     {
       "tab": "トリニティアポ",
-      "row": 252,
-      "name": "CHP仙台",
-      "phone": "022-782-6777",
-      "address": "宮城県仙台市若林区大和町４丁目１０−５",
+      "row": 255,
+      "name": "浜本山　源光寺",
+      "phone": "06-6375-0070",
+      "address": "大阪府大阪市北区豊崎２丁目３−２３",
       "ledgerNote": null,
-      "url": "https://www.google.com/maps/search/?api=1&query=CHP%E4%BB%99%E5%8F%B0%20022-782-6777%20%E3%80%92984-0042%20%E5%AE%AE%E5%9F%8E%E7%9C%8C%E4%BB%99%E5%8F%B0%E5%B8%82%E8%8B%A5%E6%9E%97%E5%8C%BA%E5%A4%A7%E5%92%8C%E7%94%BA%EF%BC%94%E4%B8%81%E7%9B%AE%EF%BC%91%EF%BC%90%E2%88%92%EF%BC%95",
-      "urlKind": "mapsApi",
-      "industryRaw": "アクティビティ",
-      "vertical": "アクティビティ",
-      "verticalSource": "業種の欄",
-      "verticalReason": "業種の欄「アクティビティ」",
-      "nameIsPhone": false,
-      "registered": false,
-      "status": "詰め直しOK"
-    },
-    {
-      "tab": "トリニティアポ",
-      "row": 253,
-      "name": "持法院",
-      "phone": "056-421-4007",
-      "address": "愛知県岡崎市井田町１丁目１０７",
-      "ledgerNote": null,
-      "url": "https://www.google.com/maps/search/?api=1&query=%E6%8C%81%E6%B3%95%E9%99%A2%20056-421-4007%20%E3%80%92444-0076%20%E6%84%9B%E7%9F%A5%E7%9C%8C%E5%B2%A1%E5%B4%8E%E5%B8%82%E4%BA%95%E7%94%B0%E7%94%BA%EF%BC%91%E4%B8%81%E7%9B%AE%EF%BC%91%EF%BC%90%EF%BC%97",
+      "url": "https://www.google.com/maps/search/?api=1&query=%E6%B5%9C%E6%9C%AC%E5%B1%B1%E3%80%80%E6%BA%90%E5%85%89%E5%AF%BA%2006-6375-0070%20%E3%80%92531-0072%20%E5%A4%A7%E9%98%AA%E5%BA%9C%E5%A4%A7%E9%98%AA%E5%B8%82%E5%8C%97%E5%8C%BA%E8%B1%8A%E5%B4%8E%EF%BC%92%E4%B8%81%E7%9B%AE%EF%BC%93%E2%88%92%EF%BC%92%EF%BC%93",
       "urlKind": "mapsApi",
       "industryRaw": "寺",
       "vertical": "くらし",
       "verticalSource": "業種の欄",
       "verticalReason": "業種の欄「寺」",
-      "nameIsPhone": false,
-      "registered": false,
-      "status": "詰め直しOK"
-    },
-    {
-      "tab": "トリニティアポ",
-      "row": 254,
-      "name": "菅生神社",
-      "phone": "056-423-2506",
-      "address": "愛知県岡崎市康生町６３０−１",
-      "ledgerNote": null,
-      "url": "https://www.google.com/maps/search/?api=1&query=%E8%8F%85%E7%94%9F%E7%A5%9E%E7%A4%BE%20056-423-2506%20%E3%80%92444-0052%20%E6%84%9B%E7%9F%A5%E7%9C%8C%E5%B2%A1%E5%B4%8E%E5%B8%82%E5%BA%B7%E7%94%9F%E7%94%BA%EF%BC%96%EF%BC%93%EF%BC%90%E2%88%92%EF%BC%91",
-      "urlKind": "mapsApi",
-      "industryRaw": "神社",
-      "vertical": "くらし",
-      "verticalSource": "業種の欄",
-      "verticalReason": "業種の欄「神社」",
       "nameIsPhone": false,
       "registered": false,
       "status": "詰め直しOK"
@@ -1562,6 +1528,6 @@
     }
   ],
   "registered": {},
-  "generatedAt": "2026-10-27T10:10:42.130Z",
+  "generatedAt": "2026-10-27T10:33:54.777Z",
   "note": "読むだけ。備考は保存していない。候補=台帳に店名の完全一致(NFC・前後空白除く)で載り、かつ D列(URL)が空でない店(済み)ではない店"
 }

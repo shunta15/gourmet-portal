@@ -3,8 +3,8 @@
     "date": "2026-10-27",
     "startedAt": "2026-10-27T00:49:47.306Z",
     "verifyFile": "automation/v2/out/verify-2026-10-27.json",
-    "args": "--only-row 252,253,254",
-    "updatedAt": "2026-10-27T10:23:38.339Z"
+    "args": "--only-row 255",
+    "updatedAt": "2026-10-27T10:38:34.467Z"
   },
   "environment": null,
   "results": {
@@ -1981,6 +1981,43 @@
         "article": "/life/article/li0062"
       },
       "finishedAt": "2026-10-27T10:23:38.338Z"
+    },
+    "tri-life-255": {
+      "key": "tri-life-255",
+      "row": 255,
+      "name": "浜本山　源光寺",
+      "vertical": "くらし",
+      "status": "成功",
+      "stage": "done",
+      "startedAt": "2026-10-27T10:34:09.035Z",
+      "seconds": {
+        "total": 0
+      },
+      "photos": {
+        "candidates": 11,
+        "maps": 10,
+        "official": 1,
+        "rejectedByMachine": 17,
+        "used": 10,
+        "emptyFrames": 0
+      },
+      "check": {
+        "rewrote": false,
+        "shapeProblems": [],
+        "sentenceProblems": 0,
+        "facts": {
+          "total": 21,
+          "verified": 21
+        }
+      },
+      "placeId": "li0063",
+      "featureInGenerated": false,
+      "featureNote": null,
+      "urls": {
+        "shop": "/life/shop/li0063",
+        "article": "/life/article/li0063"
+      },
+      "finishedAt": "2026-10-27T10:38:34.465Z"
     }
   }
 }
