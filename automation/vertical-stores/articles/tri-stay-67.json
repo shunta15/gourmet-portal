@@ -1,0 +1,225 @@
+{
+  "key": "tri-stay-67",
+  "headline": "鹿児島県伊佐市にある、大正七年創業の旅館。客室は和室シングルTYPE・洋室シングルTYPE・和室ツインTYPEの3タイプがある。",
+  "lede": "伊佐市にある「松栄館」です。大正七年創業の宿で、客室は和室シングルTYPE、洋室シングルTYPE、和室ツインTYPEの3タイプがあります。",
+  "sections": [
+    {
+      "heading": "場所とアクセス",
+      "body": "住所は〒895-2513 鹿児島県伊佐市大口上町16-5、電話は0995-22-0035です。九州縦貫自動車道の栗野インターから20キロ（約25分）、横川インターから25キロ（約30分）、人吉インターから30キロ（約35分）の距離にあります。チェックインは16時から21時30分、チェックアウトは10時までです。"
+    },
+    {
+      "heading": "客室とお風呂",
+      "body": "客室は、1名用の和室シングルTYPE（6畳、全3部屋）、1名用の洋室シングルTYPE（8.2平方メートルのベッドタイプ、全3部屋）、1〜2名用の和室ツインTYPE（8畳）の3タイプです。お風呂はバスタブを2つ繋げた広い洗い場があり、入浴時間は16時から22時までです。"
+    },
+    {
+      "heading": "食事",
+      "body": "夕食には、黒毛和牛の「すき焼き」が中心の「四代目スペシャル」、黒豚のタレ料理を中心にした「四代目御膳」、観光客向けの「四代目ライト」の3コースがあります。朝食は「朝の贅沢和朝食」です。食事会場は1階のカフェですが、現在は休業しています。"
+    }
+  ],
+  "rooms": [
+    {
+      "name": "和室シングルTYPE"
+    },
+    {
+      "name": "洋室シングルTYPE"
+    },
+    {
+      "name": "和室ツインTYPE"
+    }
+  ],
+  "menus": [
+    {
+      "name": "四代目スペシャル"
+    },
+    {
+      "name": "四代目御膳"
+    },
+    {
+      "name": "四代目ライト"
+    },
+    {
+      "name": "朝の贅沢和朝食"
+    }
+  ],
+  "tags": [
+    {
+      "tag": "一人旅",
+      "factIndex": 7
+    }
+  ],
+  "facts": [
+    {
+      "claim": "大正7年創業の宿である",
+      "source": "https://shoeikan-isa.com/",
+      "quote": "大正7年創業の老舗宿",
+      "checkedAt": "2026-10-27"
+    },
+    {
+      "claim": "客室ページの名称は「シンプル旅館」である",
+      "source": "https://shoeikan-isa.com/facilities.html",
+      "quote": "シンプル旅館",
+      "checkedAt": "2026-10-27"
+    },
+    {
+      "claim": "住所は〒895-2513 鹿児島県伊佐市大口上町16-5である",
+      "source": "https://shoeikan-isa.com/",
+      "quote": "〒895-2513 鹿児島県伊佐市大口上町16-5",
+      "checkedAt": "2026-10-27"
+    },
+    {
+      "claim": "電話は0995-22-0035である",
+      "source": "https://shoeikan-isa.com/",
+      "quote": "TEL：0995-22-0035",
+      "checkedAt": "2026-10-27"
+    },
+    {
+      "claim": "チェックインは16時から21時30分である",
+      "source": "https://shoeikan-isa.com/",
+      "quote": "チェックイン 16：00～21：30",
+      "checkedAt": "2026-10-27"
+    },
+    {
+      "claim": "チェックアウトは10時までである",
+      "source": "https://shoeikan-isa.com/",
+      "quote": "チェックアウト ～10：00",
+      "checkedAt": "2026-10-27"
+    },
+    {
+      "claim": "客室の一つに和室シングルTYPEがある",
+      "source": "https://shoeikan-isa.com/facilities.html",
+      "quote": "和室シングルTYPE",
+      "checkedAt": "2026-10-27"
+    },
+    {
+      "claim": "和室シングルTYPEの受入人数は1名である",
+      "source": "https://shoeikan-isa.com/facilities.html",
+      "quote": "受入人数 1名",
+      "checkedAt": "2026-10-27"
+    },
+    {
+      "claim": "和室シングルTYPEは6畳で全3部屋である",
+      "source": "https://shoeikan-isa.com/facilities.html",
+      "quote": "6畳の広さです（全3部屋）",
+      "checkedAt": "2026-10-27"
+    },
+    {
+      "claim": "客室の一つに洋室シングルTYPEがある",
+      "source": "https://shoeikan-isa.com/facilities.html",
+      "quote": "洋室シングルTYPE",
+      "checkedAt": "2026-10-27"
+    },
+    {
+      "claim": "洋室シングルTYPEは8.2平方メートルのシングルルームである",
+      "source": "https://shoeikan-isa.com/facilities.html",
+      "quote": "8.2平方メートルのシンプルなシングルルーム",
+      "checkedAt": "2026-10-27"
+    },
+    {
+      "claim": "洋室シングルTYPEはベッドタイプで全3部屋である",
+      "source": "https://shoeikan-isa.com/facilities.html",
+      "quote": "（ベッドタイプ）です（全3部屋）",
+      "checkedAt": "2026-10-27"
+    },
+    {
+      "claim": "客室の一つに和室ツインTYPEがある",
+      "source": "https://shoeikan-isa.com/facilities.html",
+      "quote": "和室ツインTYPE",
+      "checkedAt": "2026-10-27"
+    },
+    {
+      "claim": "和室ツインTYPEは2名まで泊まれる8畳和室である",
+      "source": "https://shoeikan-isa.com/facilities.html",
+      "quote": "2名様までお泊りいただける8畳和室",
+      "checkedAt": "2026-10-27"
+    },
+    {
+      "claim": "お風呂は広々とした洗い場である",
+      "source": "https://shoeikan-isa.com/facilities.html",
+      "quote": "広々とした洗い場です。",
+      "checkedAt": "2026-10-27"
+    },
+    {
+      "claim": "入浴時間は16時から22時までである",
+      "source": "https://shoeikan-isa.com/facilities.html",
+      "quote": "入浴時間 16:00～22:00",
+      "checkedAt": "2026-10-27"
+    },
+    {
+      "claim": "四代目スペシャルは「すき焼き」がメインのコースである",
+      "source": "https://shoeikan-isa.com/cuisine.html",
+      "quote": "「すき焼き」がメインのコース",
+      "checkedAt": "2026-10-27"
+    },
+    {
+      "claim": "四代目御膳は黒豚のタレ料理を中心にしたコースである",
+      "source": "https://shoeikan-isa.com/cuisine.html",
+      "quote": "黒豚」のタレ料理を中心に",
+      "checkedAt": "2026-10-27"
+    },
+    {
+      "claim": "四代目ライトは観光したい方向けのコースである",
+      "source": "https://shoeikan-isa.com/cuisine.html",
+      "quote": "観光したい方におすすめのコース",
+      "checkedAt": "2026-10-27"
+    },
+    {
+      "claim": "朝食には朝の贅沢和朝食がある",
+      "source": "https://shoeikan-isa.com/cuisine.html",
+      "quote": "朝の贅沢和朝食",
+      "checkedAt": "2026-10-27"
+    },
+    {
+      "claim": "食事は朝夕ともに1階のカフェを利用する",
+      "source": "https://shoeikan-isa.com/facilities.html",
+      "quote": "朝夕ともに1階のカフェをご利用いただきます",
+      "checkedAt": "2026-10-27"
+    },
+    {
+      "claim": "カフェは現在休業している",
+      "source": "https://shoeikan-isa.com/facilities.html",
+      "quote": "現在、カフェは休業しております",
+      "checkedAt": "2026-10-27"
+    },
+    {
+      "claim": "栗野インターから20キロ、約25分である",
+      "source": "https://shoeikan-isa.com/about.html",
+      "quote": "栗野インターから 20キロ（約25分）",
+      "checkedAt": "2026-10-27"
+    },
+    {
+      "claim": "横川インターから25キロ、約30分である",
+      "source": "https://shoeikan-isa.com/about.html",
+      "quote": "横川インターから 25キロ（約30分）",
+      "checkedAt": "2026-10-27"
+    },
+    {
+      "claim": "人吉インターから30キロ、約35分である",
+      "source": "https://shoeikan-isa.com/about.html",
+      "quote": "人吉インターから 30キロ（約35分）",
+      "checkedAt": "2026-10-27"
+    }
+  ],
+  "sources": [
+    {
+      "label": "公式サイト",
+      "url": "https://shoeikan-isa.com/"
+    },
+    {
+      "label": "公式サイト(シンプル旅館)",
+      "url": "https://shoeikan-isa.com/facilities.html"
+    },
+    {
+      "label": "公式サイト(コスパ最強食事)",
+      "url": "https://shoeikan-isa.com/cuisine.html"
+    },
+    {
+      "label": "公式サイト(伊佐って・アクセス)",
+      "url": "https://shoeikan-isa.com/about.html"
+    },
+    {
+      "label": "Google マップ",
+      "url": "https://maps.google.com/?cid=17827085928200923952"
+    }
+  ],
+  "notes": "automation/v2/write.mjs が 2026-10-27 に claude -p --model sonnet で作成。事実の裏取り: 25/25 件(quote が出どころにあるもの)。裏取りに通らなかった facts は載せていない。"
+}

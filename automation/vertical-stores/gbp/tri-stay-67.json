@@ -1,0 +1,32 @@
+{
+  "tab": "トリニティアポ",
+  "tabEn": "tri-stay",
+  "row": 67,
+  "sheet": {
+    "name": "松栄館",
+    "address": "",
+    "url": "https://www.google.com/search?q=0995-22-0035%09%E6%9D%BE%E6%A6%AE%E9%A4%A8%09%E9%B9%BF%E5%85%90%E5%B3%B6%E7%9C%8C%E4%BC%8A%E4%BD%90%E5%B8%82%E5%A4%A7%E5%8F%A3%E4%B8%8A%E7%94%BA%EF%BC%91%EF%BC%96%E2%80%90%EF%BC%95&sca_esv=7c1e84b1a6318645&biw=1068&bih=1256&sxsrf=APpeQnuKJ3FC9YaVjmUu-Q4KftTWr83UzQ%3A1792116111222&ei=j4XRaq6ODcjS2roPxeTQwQU&uact=5&oq=0995-22-0035%09%E6%9D%BE%E6%A6%AE%E9%A4%A8%09%E9%B9%BF%E5%85%90%E5%B3%B6%E7%9C%8C%E4%BC%8A%E4%BD%90%E5%B8%82%E5%A4%A7%E5%8F%A3%E4%B8%8A%E7%94%BA%EF%BC%91%EF%BC%96%E2%80%90%EF%BC%95&gs_lp=Egxnd3Mtd2l6LXNlcnAiRDA5OTUtMjItMDAzNQnmnb7mpq7ppKgJ6bm_5YWQ5bO255yM5LyK5L2Q5biC5aSn5Y-j5LiK55S677yR77yW4oCQ77yVMgUQABjvBTIFEAAY7wUyBRAAGO8FMgUQABjvBTIFEAAY7wVInwVQvwJYvwJwAXgAkAEAmAFnoAFnqgEDMC4xuAEDyAEA-AEC-AEBmAICoAJwqAIJwgIHECMY6gIYJ8ICEBAjGPAFGJ4GGKIHGOoCGCfCAhAQIxiiBxieBhjwBRjqAhgnmAMF8QUHEgikc-3roZIHAzEuMaAH1gKyBwMwLjG4B2vCBwUwLjEuMcgHBoAIAQ&sclient=gws-wiz-serp",
+    "type": "宿泊、飲食",
+    "d1": "",
+    "d2": ""
+  },
+  "urlKind": "search",
+  "route": "第1段(verify-gbp.mjs)で確認済み",
+  "verdict": "一致",
+  "verdictReason": "電話が一致／店名: exact(シート「松栄館」/ マップ「松栄館」)／住所(検索URL): none・町名までがちがう（シート:鹿児島県伊佐市大口上町 / マップ:鹿児島県伊佐市）",
+  "place": {
+    "name": "松栄館",
+    "address": "鹿児島県伊佐市１６",
+    "category": null,
+    "lat": 32.0606914,
+    "lng": 130.6072691,
+    "gbpUrl": "https://maps.google.com/?cid=17827085928200923952",
+    "phone": "0995-22-0035",
+    "website": "https://shoeikan-isa.com/",
+    "hours": null,
+    "reserveLinks": [],
+    "statusSignals": [],
+    "closedSignal": false
+  },
+  "fetchedAt": "2026-10-27T03:02:23.791Z"
+}

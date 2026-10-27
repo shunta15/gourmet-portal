@@ -1,0 +1,32 @@
+{
+  "tab": "トリニティアポ",
+  "tabEn": "tri-stay",
+  "row": 53,
+  "sheet": {
+    "name": "guesthouse&cafe",
+    "address": "",
+    "url": "https://www.google.com/search?q=guesthouse+%26cafe+%E3%83%8F%E3%83%AC%E3%83%86%E3%83%AB&sca_esv=9b409f63e8a1ac33&biw=1536&bih=703&sxsrf=APpeQntSZ1tcD5ipoxw91qup0A0Hh_8u7Q%3A1792045266209&ei=0nDQaqScDMTavr0P0PG7qQY&uact=5&oq=guesthouse+%26cafe+%E3%83%8F%E3%83%AC%E3%83%86%E3%83%AB&gs_lp=Egxnd3Mtd2l6LXNlcnAiHWd1ZXN0aG91c2UgJmNhZmUg44OP44Os44OG44OrMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGO8FSJkEUKECWKECcAJ4AJABAJgBYKABYKoBATG4AQPIAQD4AQL4AQGYAgGgAmWYAwCIBgGSBwMwLjGgB-MCsgcDMC4xuAdlwgcDMi0xyAcDgAgB&sclient=gws-wiz-serp",
+    "type": "宿泊",
+    "d1": "",
+    "d2": ""
+  },
+  "urlKind": "search",
+  "route": "第1段(verify-gbp.mjs)で確認済み",
+  "verdict": "一致",
+  "verdictReason": "電話が一致／店名: contains(シート「guesthouse&cafe」/ マップ「guesthouse &cafe ハレテル」)",
+  "place": {
+    "name": "guesthouse &cafe ハレテル",
+    "address": "島根県益田市高津町イ2577",
+    "category": null,
+    "lat": 34.6879384,
+    "lng": 131.7988783,
+    "gbpUrl": "https://maps.google.com/?cid=15808842378922007248",
+    "phone": "080-1928-3946",
+    "website": "https://haretel.com/",
+    "hours": null,
+    "reserveLinks": [],
+    "statusSignals": [],
+    "closedSignal": false
+  },
+  "fetchedAt": "2026-10-27T02:53:45.562Z"
+}

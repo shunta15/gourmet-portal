@@ -3991,17 +3991,113 @@ export const GEO: Record<string, GeoPoint> = {
     "src": "maps",
     "precision": "exact"
   },
+  "r735": {
+    "lat": 31.362536,
+    "lng": 130.431497,
+    "src": "maps",
+    "precision": "exact"
+  },
+  "r736": {
+    "lat": 35.160969,
+    "lng": 138.71558,
+    "src": "maps",
+    "precision": "exact"
+  },
+  "r737": {
+    "lat": 34.575441,
+    "lng": 136.535031,
+    "src": "maps",
+    "precision": "exact"
+  },
+  "r738": {
+    "lat": 34.888477,
+    "lng": 137.100167,
+    "src": "maps",
+    "precision": "exact"
+  },
+  "r739": {
+    "lat": 37.372076,
+    "lng": 140.365652,
+    "src": "maps",
+    "precision": "exact"
+  },
   "r74": {
     "lat": 35.801746,
     "lng": 139.721588,
     "src": "gsi",
     "precision": "block"
   },
+  "r740": {
+    "lat": 35.056215,
+    "lng": 136.596687,
+    "src": "maps",
+    "precision": "exact"
+  },
+  "r741": {
+    "lat": 37.205637,
+    "lng": 140.324701,
+    "src": "maps",
+    "precision": "exact"
+  },
+  "r742": {
+    "lat": 34.852656,
+    "lng": 136.455904,
+    "src": "maps",
+    "precision": "exact"
+  },
+  "r743": {
+    "lat": 35.014265,
+    "lng": 136.47775,
+    "src": "maps",
+    "precision": "exact"
+  },
+  "r744": {
+    "lat": 34.866711,
+    "lng": 135.680372,
+    "src": "maps",
+    "precision": "exact"
+  },
+  "r745": {
+    "lat": 35.066183,
+    "lng": 136.685567,
+    "src": "maps",
+    "precision": "exact"
+  },
+  "r746": {
+    "lat": 33.836762,
+    "lng": 132.769083,
+    "src": "maps",
+    "precision": "exact"
+  },
+  "r747": {
+    "lat": 35.172262,
+    "lng": 136.90316,
+    "src": "maps",
+    "precision": "exact"
+  },
+  "r748": {
+    "lat": 35.660805,
+    "lng": 139.583256,
+    "src": "maps",
+    "precision": "exact"
+  },
+  "r749": {
+    "lat": 35.710093,
+    "lng": 138.45063,
+    "src": "maps",
+    "precision": "exact"
+  },
   "r75": {
     "lat": 34.821507,
     "lng": 135.223007,
     "src": "gsi",
     "precision": "block"
+  },
+  "r750": {
+    "lat": 35.069776,
+    "lng": 136.687173,
+    "src": "maps",
+    "precision": "exact"
   },
   "r76": {
     "lat": 34.694096,

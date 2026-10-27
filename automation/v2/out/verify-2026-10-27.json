@@ -2,8 +2,8 @@
   "meta": {
     "date": "2026-10-25",
     "startedAt": "2026-10-24T17:56:30.089Z",
-    "updatedAt": "2026-10-27T00:49:38.981Z",
-    "decisionsAppliedAt": "2026-10-26T09:59:25.415Z",
+    "updatedAt": "2026-10-27T02:45:40.862Z",
+    "decisionsAppliedAt": "2026-10-27T02:45:40.958Z",
     "decisionsNote": "行 80〜201 の「要確認」にオーナーの決定(2026-10-26)を反映。確定にした店は decision に D1/D2/D3 を記録、元の判定は verdictOriginal"
   },
   "results": {
@@ -2757,7 +2757,13 @@
       "fetchedAt": "2026-10-24T19:24:10.429Z",
       "kgmidHint": null,
       "statusSignals": [],
-      "seconds": 22
+      "seconds": 22,
+      "decisionReview": {
+        "at": "2026-10-27",
+        "result": "対象外(作らない)",
+        "why": "電話は一致・住所は照合できず(シートに住所なし)",
+        "by": "オーナー 2026-10-26「OK進めていいよ」/ 2026-10-27「50〜79行目も同じ決まりで」"
+      }
     },
     "トリニティアポ:59": {
       "tab": "トリニティアポ",
@@ -2998,7 +3004,7 @@
           "addressLevel": "exact"
         }
       ],
-      "verdict": "要確認",
+      "verdict": "確認済み",
       "cid": "3016985849391715679",
       "mapName": "とんかつグラッソ",
       "mapAddress": "三重県員弁郡東員町中上２８０−１",
@@ -3013,11 +3019,19 @@
         "addressDetail": "町名・番地とも一致",
         "addressSource": "検索URL"
       },
-      "reason": "電話は一致したが店名が合わない(電話・住所とも一致なので店名の書き分けの可能性が高い)。電話が一致／店名: different(シート「とんかつ Grasso」/ マップ「とんかつグラッソ」)／住所(検索URL): exact・町名・番地とも一致",
+      "reason": "電話と住所の両方が一致・店名の書き方だけちがう(オーナー 2026-10-26「OK進めていいよ」/ 2026-10-27「50〜79行目も同じ決まりで」)。元の判定の理由: 電話は一致したが店名が合わない(電話・住所とも一致なので店名の書き分けの可能性が高い)。電話が一致／店名: different(シート「とんかつ Grasso」/ マップ「とんかつグラッソ」)／住所(検索URL): exact・町名・番地とも一致",
       "fetchedAt": "2026-10-24T19:24:40.237Z",
       "kgmidHint": null,
       "statusSignals": [],
-      "seconds": 21.8
+      "seconds": 21.8,
+      "verdictOriginal": "要確認",
+      "reasonOriginal": "電話は一致したが店名が合わない(電話・住所とも一致なので店名の書き分けの可能性が高い)。電話が一致／店名: different(シート「とんかつ Grasso」/ マップ「とんかつグラッソ」)／住所(検索URL): exact・町名・番地とも一致",
+      "decision": {
+        "rule": "D2",
+        "label": "電話と住所の両方が一致・店名の書き方だけちがう",
+        "at": "2026-10-27",
+        "by": "オーナー 2026-10-26「OK進めていいよ」/ 2026-10-27「50〜79行目も同じ決まりで」"
+      }
     },
     "トリニティアポ:64": {
       "tab": "トリニティアポ",
@@ -3179,7 +3193,13 @@
       "statusSignals": [
         "臨時休業"
       ],
-      "seconds": 22.6
+      "seconds": 22.6,
+      "decisionReview": {
+        "at": "2026-10-27",
+        "result": "対象外(作らない)",
+        "why": "電話は一致・住所は一致",
+        "by": "オーナー 2026-10-26「OK進めていいよ」/ 2026-10-27「50〜79行目も同じ決まりで」"
+      }
     },
     "トリニティアポ:67": {
       "tab": "トリニティアポ",
@@ -3574,7 +3594,13 @@
       "fetchedAt": "2026-10-24T19:26:02.590Z",
       "kgmidHint": null,
       "statusSignals": [],
-      "seconds": 42.1
+      "seconds": 42.1,
+      "decisionReview": {
+        "at": "2026-10-27",
+        "result": "対象外(作らない)",
+        "why": "電話が不一致・住所は一致",
+        "by": "オーナー 2026-10-26「OK進めていいよ」/ 2026-10-27「50〜79行目も同じ決まりで」"
+      }
     },
     "トリニティアポ:75": {
       "tab": "トリニティアポ",
@@ -3780,7 +3806,13 @@
       "statusSignals": [
         "閉業"
       ],
-      "seconds": 38.7
+      "seconds": 38.7,
+      "decisionReview": {
+        "at": "2026-10-27",
+        "result": "対象外(作らない)",
+        "why": "電話が不一致・住所が不一致(番地がちがう（シート:2092 / マップ:2089）)",
+        "by": "オーナー 2026-10-26「OK進めていいよ」/ 2026-10-27「50〜79行目も同じ決まりで」"
+      }
     },
     "トリニティアポ:79": {
       "tab": "トリニティアポ",
@@ -11562,6 +11594,56 @@
       "fetchedAt": "2026-10-27T00:49:38.981Z",
       "statusSignals": [],
       "seconds": 6
+    },
+    "トリニティアポ:234": {
+      "tab": "トリニティアポ",
+      "row": 234,
+      "name": "マルシェノグチ",
+      "vertical": "くらし",
+      "industryRaw": "小売り",
+      "sheetPhone": "075-432-7243",
+      "sheetUrl": "https://www.google.com/maps/search/?api=1&query=%E3%83%9E%E3%83%AB%E3%82%B7%E3%82%A7%E3%83%8E%E3%82%B0%E3%83%81%20075-432-7243%20%E3%80%92604-8381%20%E4%BA%AC%E9%83%BD%E5%BA%9C%E4%BA%AC%E9%83%BD%E5%B8%82%E4%B8%AD%E4%BA%AC%E5%8C%BA%E8%A5%BF%E3%83%8E%E4%BA%AC%E8%81%B7%E5%8F%B8%E7%94%BA%EF%BC%96%EF%BC%99%20%EF%BC%A9%EF%BC%AD%EF%BC%B0%EF%BC%A1%EF%BC%A3%EF%BC%B4%20%EF%BC%A9%EF%BC%AB%EF%BC%B5%20%E5%8C%97%201F",
+      "urlKind": "mapsApi",
+      "route": "電話・店名で検索",
+      "queries": [
+        "075-432-7243"
+      ],
+      "candidates": [
+        {
+          "name": "野菜専門店 マルシェノグチ",
+          "address": "京都府京都市中京区西ノ京職司町６９ ＩＭＰＡＣＴ ＩＫＵ 北 1F",
+          "phone": "075-432-7243",
+          "cid": "6141782586603461053",
+          "url": "https://www.google.com/maps/place/%E9%87%8E%E8%8F%9C%E5%B0%82%E9%96%80%E5%BA%97+%E3%83%9E%E3%83%AB%E3%82%B7%E3%82%A7%E3%83%8E%E3%82%B0%E3%83%81/@35.0111455,135.7447952,17z/data=!3m1!4b1!4m6!3m5!1s0x600107d31f8db909:0x553bfeb8d22dd9bd!8m2!3d35.0111455!4d135.7447952!16s%2Fg%2F11b6d9n84s",
+          "phoneMatch": true,
+          "nameRelation": "contains",
+          "addressLevel": "exact"
+        }
+      ],
+      "verdict": "確認済み",
+      "cid": "6141782586603461053",
+      "mapName": "野菜専門店 マルシェノグチ",
+      "mapAddress": "京都府京都市中京区西ノ京職司町６９ ＩＭＰＡＣＴ ＩＫＵ 北 1F",
+      "mapPhone": "075-432-7243",
+      "website": "https://home.tsuku2.jp/storeDetail.php?scd=0000214958&pv=1%252523",
+      "category": "青果卸売業者",
+      "mapUrl": "https://maps.google.com/?cid=6141782586603461053",
+      "signals": {
+        "phoneMatch": true,
+        "nameRelation": "contains",
+        "addressLevel": "exact",
+        "addressDetail": "町名・番地とも一致",
+        "addressSource": "シート",
+        "clues": [
+          "店名",
+          "電話",
+          "住所(番地まで)"
+        ]
+      },
+      "reason": "手がかり: 店名＋電話＋住所(番地まで)。電話が一致／店名: contains(シート「マルシェノグチ」/ マップ「野菜専門店 マルシェノグチ」)／住所(シート): exact・町名・番地とも一致",
+      "fetchedAt": "2026-10-27T02:45:40.862Z",
+      "statusSignals": [],
+      "seconds": 6.1
     }
   }
 }

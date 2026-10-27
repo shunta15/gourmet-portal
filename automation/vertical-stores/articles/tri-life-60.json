@@ -1,0 +1,71 @@
+{
+  "key": "tri-life-60",
+  "headline": "大阪市旭区清水にある神社。通称は「不焼宮」で、京阪本線千林駅から北へ500メートルの場所にある",
+  "lede": "大阪市旭区にある「八幡大神宮」です。通称は不焼宮（やけづのみや）といい、神社本庁に加盟する神社です。最寄りは京阪本線千林駅で、北へ500メートルの距離にあります。",
+  "sections": [
+    {
+      "heading": "場所と連絡先",
+      "body": "鎮座地は大阪市旭区清水3-20-19です。電話は06-6952-2125、ファックスは06-6952-2129です。交通手段は京阪本線千林駅から北へ500メートルです。"
+    },
+    {
+      "heading": "名称と祈祷の案内",
+      "body": "正式名称は八幡大神宮（はちまんだいじんぐう）、通称は不焼宮（やけづのみや）です。神社本庁加盟神社で、大阪府神社庁の管理コードは04020です。祈祷を受ける場合は予約が必要な場合があるため、事前に神社へ問い合わせる案内がされています。"
+    }
+  ],
+  "menus": [],
+  "tags": [
+    {
+      "tag": "予約制",
+      "factIndex": 5
+    }
+  ],
+  "facts": [
+    {
+      "claim": "正式名称は八幡大神宮（はちまんだいじんぐう）で、通称は不焼宮（やけづのみや）と呼ばれている",
+      "source": "http://www.osaka-jinjacho.jp/funai_jinja/dai4shibu/asahi-ku/04020hachimandaijingu.html",
+      "quote": "不焼宮（やけづのみや）",
+      "checkedAt": "2026-10-27"
+    },
+    {
+      "claim": "鎮座地は大阪市旭区清水3-20-19",
+      "source": "http://www.osaka-jinjacho.jp/funai_jinja/dai4shibu/asahi-ku/04020hachimandaijingu.html",
+      "quote": "大阪市旭区清水3-20-19",
+      "checkedAt": "2026-10-27"
+    },
+    {
+      "claim": "交通手段は京阪本線千林駅から北へ500メートル",
+      "source": "http://www.osaka-jinjacho.jp/funai_jinja/dai4shibu/asahi-ku/04020hachimandaijingu.html",
+      "quote": "京阪本線千林駅北へ500ｍ",
+      "checkedAt": "2026-10-27"
+    },
+    {
+      "claim": "電話は06-6952-2125、ファックスは06-6952-2129",
+      "source": "http://www.osaka-jinjacho.jp/funai_jinja/dai4shibu/asahi-ku/04020hachimandaijingu.html",
+      "quote": "Tel.06-6952-2125",
+      "checkedAt": "2026-10-27"
+    },
+    {
+      "claim": "神社本庁加盟神社で、管理コードは04020",
+      "source": "http://www.osaka-jinjacho.jp/funai_jinja/dai4shibu/asahi-ku/04020hachimandaijingu.html",
+      "quote": "神社本庁加盟神社",
+      "checkedAt": "2026-10-27"
+    },
+    {
+      "claim": "祈祷を受ける場合は予約が必要な場合がある",
+      "source": "http://www.osaka-jinjacho.jp/funai_jinja/dai4shibu/asahi-ku/04020hachimandaijingu.html",
+      "quote": "祈祷を受ける場合予約が必要な場合もあります",
+      "checkedAt": "2026-10-27"
+    }
+  ],
+  "sources": [
+    {
+      "label": "公式サイト",
+      "url": "http://www.osaka-jinjacho.jp/funai_jinja/dai4shibu/asahi-ku/04020hachimandaijingu.html"
+    },
+    {
+      "label": "Google マップ",
+      "url": "https://maps.google.com/?cid=1931964434004925049"
+    }
+  ],
+  "notes": "automation/v2/write.mjs が 2026-10-27 に claude -p --model sonnet で作成。事実の裏取り: 6/6 件(quote が出どころにあるもの)。裏取りに通らなかった facts は載せていない。"
+}

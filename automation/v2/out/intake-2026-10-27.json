@@ -8,10 +8,10 @@
       "duplicateNames": []
     },
     "トリニティアポ": {
-      "rows": 232,
-      "registered": 128,
+      "rows": 233,
+      "registered": 130,
       "excluded": 2,
-      "candidates": 102,
+      "candidates": 101,
       "duplicateNames": []
     }
   },
@@ -1807,7 +1807,7 @@
       "name": "竹田カフェ",
       "phone": "080-9794-6585",
       "address": null,
-      "ledgerNote": null,
+      "ledgerNote": "保留: 店舗判断不可(シートの電話とGoogleマップの店が一致しない)・住所の追加待ち",
       "url": "https://www.google.com/maps/search/?api=1&query=%E7%AB%B9%E7%94%B0%E3%82%AB%E3%83%95%E3%82%A7%20080-9794-6585%20",
       "urlKind": "mapsApi",
       "industryRaw": "飲食",
@@ -1820,28 +1820,11 @@
     },
     {
       "tab": "トリニティアポ",
-      "row": 231,
-      "name": "長光寺",
-      "phone": "059-655-3476",
-      "address": null,
-      "ledgerNote": null,
-      "url": "https://www.google.com/maps/search/?api=1&query=%E9%95%B7%E5%85%89%E5%AF%BA%20059-655-3476%20",
-      "urlKind": "mapsApi",
-      "industryRaw": "寺",
-      "vertical": "くらし",
-      "verticalSource": "業種の欄",
-      "verticalReason": "業種の欄「寺」",
-      "nameIsPhone": false,
-      "registered": false,
-      "status": "詰め直しOK"
-    },
-    {
-      "tab": "トリニティアポ",
       "row": 232,
       "name": "DogCafeEight",
       "phone": "090-2222-3505",
       "address": null,
-      "ledgerNote": null,
+      "ledgerNote": "保留: 店舗判断不可(シートの電話とGoogleマップの店が一致しない)・住所の追加待ち・業種の確認待ち(グルメ/ペット)",
       "url": "https://www.google.com/maps/search/?api=1&query=DogCafeEight%20090-2222-3505%20",
       "urlKind": "mapsApi",
       "industryRaw": "飲食",
@@ -1854,12 +1837,12 @@
     },
     {
       "tab": "トリニティアポ",
-      "row": 233,
-      "name": "彩洗工房",
-      "phone": "090-5245-8354",
-      "address": null,
+      "row": 234,
+      "name": "マルシェノグチ",
+      "phone": "075-432-7243",
+      "address": "京都府京都市中京区西ノ京職司町６９ ＩＭＰＡＣＴ ＩＫＵ 北 1F",
       "ledgerNote": null,
-      "url": "https://www.google.com/maps/search/?api=1&query=%E5%BD%A9%E6%B4%97%E5%B7%A5%E6%88%BF%20090-5245-8354%20",
+      "url": "https://www.google.com/maps/search/?api=1&query=%E3%83%9E%E3%83%AB%E3%82%B7%E3%82%A7%E3%83%8E%E3%82%B0%E3%83%81%20075-432-7243%20%E3%80%92604-8381%20%E4%BA%AC%E9%83%BD%E5%BA%9C%E4%BA%AC%E9%83%BD%E5%B8%82%E4%B8%AD%E4%BA%AC%E5%8C%BA%E8%A5%BF%E3%83%8E%E4%BA%AC%E8%81%B7%E5%8F%B8%E7%94%BA%EF%BC%96%EF%BC%99%20%EF%BC%A9%EF%BC%AD%EF%BC%B0%EF%BC%A1%EF%BC%A3%EF%BC%B4%20%EF%BC%A9%EF%BC%AB%EF%BC%B5%20%E5%8C%97%201F",
       "urlKind": "mapsApi",
       "industryRaw": "小売り",
       "vertical": "くらし",
@@ -1885,6 +1868,6 @@
     }
   ],
   "registered": {},
-  "generatedAt": "2026-10-27T00:56:42.664Z",
+  "generatedAt": "2026-10-27T02:44:52.035Z",
   "note": "読むだけ。備考は保存していない。候補=台帳に店名の完全一致(NFC・前後空白除く)で載り、かつ D列(URL)が空でない店(済み)ではない店"
 }

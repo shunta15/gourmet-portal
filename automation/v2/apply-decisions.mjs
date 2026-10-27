@@ -2,7 +2,7 @@
 /**
  * apply-decisions.mjs — 第1段の「要確認」に、オーナーの決定(2026-10-26「OK進めていいよ」)を判定として反映する
  *
- * 対象: 行 80〜201 の verdict が「要確認」の店(24 店)。シート・マップには触らない(第1段の結果ファイルだけを書き換える)。
+ * 対象: 行 50〜201 の verdict が「要確認」の店(80〜201 は 24 店、50〜79 は 2026-10-27 に追加)。シート・マップには触らない(第1段の結果ファイルだけを書き換える)。
  * 決定:
  *   D1 シートの URL が Google マップの店のページへの直接のリンク(シートのマップURLの経路)で、店名が一致 → 確定
  *   D2 電話と住所の両方が第1段で一致(電話一致 かつ 住所 exact/near)で、店名の書き方だけちがう → 確定
@@ -14,13 +14,13 @@
  * 使い方: node automation/v2/apply-decisions.mjs [--file out/verify-2026-10-26.json] [--dry]
  */
 import path from "node:path";
-import { OUT_DIR, readJson, writeJson, parseArgs } from "./lib/util.mjs";
+import { OUT_DIR, readJson, writeJson, parseArgs, today } from "./lib/util.mjs";
 
 const args = parseArgs(process.argv.slice(2));
-const file = path.resolve(args.file || path.join(OUT_DIR, "verify-2026-10-26.json"));
+const file = path.resolve(args.file || path.join(OUT_DIR, "verify-2026-10-27.json"));
 const store = readJson(file);
-const AT = "2026-10-26";
-const BY = "オーナー 2026-10-26「OK進めていいよ」";
+const AT = today();
+const BY = "オーナー 2026-10-26「OK進めていいよ」/ 2026-10-27「50〜79行目も同じ決まりで」";
 const isPhoneName = (n) => /^[\d\-－ー\s()（）+]{9,}$/.test(String(n ?? ""));
 
 function decide(r) {
@@ -32,6 +32,7 @@ function decide(r) {
     if (sg.phoneMatch === true) return { rule: "D3", label: "店名が電話番号・第1段で電話が一致(店名は Google マップの店名)" };
     return null;
   }
+  if (/臨時休業|一時休業|移転準備|閉業/.test(`${r.reason} ${(r.statusSignals || []).join(" ")}`)) return null; // 休業・移転の表示がある店は確定にしない
   if (sg.phoneMatch === true && addrBoth) return { rule: "D2", label: "電話と住所の両方が一致・店名の書き方だけちがう" };
   return null;
 }
@@ -64,7 +65,7 @@ for (const r of Object.values(store.results)) {
     out.push({ row: r.row, name: r.name, mapName: r.mapName, applied: "D4", label: D4[r.row] });
     continue;
   }
-  if (r.tab !== "トリニティアポ" || r.row < 80 || r.row > 201) continue;
+  if (r.tab !== "トリニティアポ" || r.row < 50 || r.row > 201) continue;
   if (r.verdictOriginal !== undefined || r.decisionReview) {
     out.push({ row: r.row, name: r.name, applied: r.decision ? r.decision.rule : "対象外", already: true });
     continue;

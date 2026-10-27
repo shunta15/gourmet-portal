@@ -2130,6 +2130,118 @@
         ],
         "checkedAt": "2026-10-25"
       }
+    },
+    {
+      "id": "pe0023",
+      "vertical": "pet",
+      "category": "trimming",
+      "name": "トリミングサロン little",
+      "pref": "aichi",
+      "cityName": "春日井市",
+      "address": "愛知県春日井市松河戸町4丁目2-12",
+      "lat": 35.2236854,
+      "lng": 136.9668342,
+      "hours": "月火木-日 09:00 - 17:00",
+      "holidays": "水曜",
+      "phone": "090-8187-9677",
+      "url": "https://www.trimmingsalon-little.com/",
+      "website": "https://www.trimmingsalon-little.com/",
+      "mapUrl": "https://maps.google.com/?cid=6563524553501464319",
+      "image": "/_portal/vshops/tri-pet-59/g01.jpg",
+      "images": [
+        "/_portal/vshops/tri-pet-59/g01.jpg",
+        "/_portal/vshops/tri-pet-59/g02.jpg",
+        "/_portal/vshops/tri-pet-59/g03.jpg",
+        "/_portal/vshops/tri-pet-59/g04.jpg",
+        "/_portal/vshops/tri-pet-59/g05.jpg",
+        "/_portal/vshops/tri-pet-59/g06.jpg",
+        "/_portal/vshops/tri-pet-59/g07.jpg",
+        "/_portal/vshops/tri-pet-59/g08.jpg",
+        "/_portal/vshops/tri-pet-59/g10.jpg"
+      ],
+      "photos": [
+        {
+          "path": "/_portal/vshops/tri-pet-59/g01.jpg",
+          "what": "紺色の外壁に花を飾った店舗の外観",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-pet-59/g02.jpg",
+          "what": "浴槽のふちに両足をかけた犬",
+          "kind": "bath",
+          "width": 1200,
+          "height": 800
+        },
+        {
+          "path": "/_portal/vshops/tri-pet-59/g03.jpg",
+          "what": "丸くカットされた犬がテーブルの上に座っている",
+          "kind": "room",
+          "width": 1200,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-pet-59/g04.jpg",
+          "what": "施術台の上に座る犬と室内の設備",
+          "kind": "room",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-pet-59/g05.jpg",
+          "what": "舌を出す犬の顔のアップ",
+          "width": 959,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-pet-59/g06.jpg",
+          "what": "鼻を正面から写した犬の顔",
+          "width": 1174,
+          "height": 1071
+        },
+        {
+          "path": "/_portal/vshops/tri-pet-59/g07.jpg",
+          "what": "床に伏せて顔を上げる犬",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-pet-59/g08.jpg",
+          "what": "伏せた犬の顔のアップ",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-pet-59/g10.jpg",
+          "what": "紺色の外壁に「little」の看板がある店舗外観",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 900
+        }
+      ],
+      "tags": [],
+      "article": {
+        "headline": "愛知県春日井市松河戸町にあるトリミングサロン。犬のトリミングを扱う",
+        "lede": "愛知県春日井市にある「トリミングサロン little」です。営業は月・火・木・金・土・日の9時から17時で、水曜日が定休日です。",
+        "sections": [
+          {
+            "heading": "場所と営業時間",
+            "body": "愛知県春日井市松河戸町で営業しているトリミングサロンです。営業時間は月曜・火曜・木曜・金曜・土曜・日曜の9時から17時までで、水曜日は定休日です。"
+          },
+          {
+            "heading": "店の特色",
+            "body": "トリミングサロンとして、犬のトリミングを扱っています。"
+          }
+        ],
+        "sources": [
+          {
+            "label": "Google マップ",
+            "url": "https://maps.google.com/?cid=6563524553501464319"
+          }
+        ],
+        "checkedAt": "2026-10-27"
+      }
     }
   ]
 }

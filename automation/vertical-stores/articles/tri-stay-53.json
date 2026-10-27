@@ -1,0 +1,166 @@
+{
+  "key": "tri-stay-53",
+  "headline": "島根県益田市、海と山に囲まれた土地に建つゲストハウス&カフェ。客室はシングルと女性専用・男女兼用のドミトリーの3タイプ",
+  "lede": "益田市にある「guesthouse &cafe ハレテル」です。海と山に囲まれた高津町に建ち、客室はシングル、女性専用ドミトリー、男女兼用ドミトリーの3タイプです。敷地内にはオーシャンビューのカフェとシェアオフィス、サウナがあります。",
+  "sections": [
+    {
+      "heading": "客室",
+      "body": "客室はシングル、女性専用ドミトリー「KANOA」、男女兼用ドミトリー「MAHINA」の3タイプです。受け入れ人数は女性専用ドミトリーが4名、男女兼用ドミトリーが8名、シングルが1名です。マットレスとピローはオーストラリア発のブランド「Ecosa」を使用しています。一人旅でも利用できます。"
+    },
+    {
+      "heading": "共用設備とカフェ",
+      "body": "共用のシャワールームは施錠できる個室が2室です。カフェは海を望むヴィンテージナチュラルな内装です。敷地内には海を望むシェアオフィスと、サウナ「SAUNA BREEZE」があります。"
+    },
+    {
+      "heading": "アクセスとチェックイン",
+      "body": "JR益田駅からはバス小浜江崎線で約11分の「持石上」から徒歩約5分です。萩・石見空港からは車で約3分です。チェックインは14時から、18時以降は要連絡です。チェックアウトは11時までです。"
+    }
+  ],
+  "rooms": [
+    {
+      "name": "シングル"
+    },
+    {
+      "name": "女性専用ドミトリー KANOA"
+    },
+    {
+      "name": "男女兼用ドミトリー MAHINA"
+    }
+  ],
+  "menus": [],
+  "tags": [
+    {
+      "tag": "一人旅",
+      "factIndex": 3
+    }
+  ],
+  "facts": [
+    {
+      "claim": "海と山に囲まれた益田市に建つ",
+      "source": "https://haretel.com/",
+      "quote": "海と山に囲まれた、島根県益田市の",
+      "checkedAt": "2026-10-27"
+    },
+    {
+      "claim": "客室はシングル、女性専用ドミトリー、男女兼用ドミトリーの3タイプ",
+      "source": "https://haretel.com/",
+      "quote": "3タイプをご用意。",
+      "checkedAt": "2026-10-27"
+    },
+    {
+      "claim": "敷地内にオーシャンビューのカフェがある",
+      "source": "https://haretel.com/",
+      "quote": "オーシャンビューのカフェ",
+      "checkedAt": "2026-10-27"
+    },
+    {
+      "claim": "一人旅でも利用できる",
+      "source": "https://haretel.com/",
+      "quote": "一人旅から気兼ねなくご利用いただけます。",
+      "checkedAt": "2026-10-27"
+    },
+    {
+      "claim": "男女兼用ドミトリーの名称はMAHINA",
+      "source": "https://haretel.com/guestroom.php",
+      "quote": "男女兼用ドミトリー MAHINA",
+      "checkedAt": "2026-10-27"
+    },
+    {
+      "claim": "女性専用ドミトリーの名称はKANOA",
+      "source": "https://haretel.com/guestroom.php",
+      "quote": "女性専用ドミトリー KANOA",
+      "checkedAt": "2026-10-27"
+    },
+    {
+      "claim": "女性専用ドミトリーは4名、男女兼用ドミトリーは8名",
+      "source": "https://haretel.com/guestroom.php",
+      "quote": "4名 （女性専用）/ 8名 （男女兼用）",
+      "checkedAt": "2026-10-27"
+    },
+    {
+      "claim": "シングルの受け入れ人数は1名",
+      "source": "https://haretel.com/guestroom.php",
+      "quote": "受入人数：1名",
+      "checkedAt": "2026-10-27"
+    },
+    {
+      "claim": "マットレスとピローはオーストラリア発のブランド「Ecosa」を使用",
+      "source": "https://haretel.com/guestroom.php",
+      "quote": "オーストラリア発のこだわりブランド「Ecosa」",
+      "checkedAt": "2026-10-27"
+    },
+    {
+      "claim": "共用シャワールームは施錠できる個室が2室",
+      "source": "https://haretel.com/guestroom.php",
+      "quote": "施錠できる共用シャワールームを2室",
+      "checkedAt": "2026-10-27"
+    },
+    {
+      "claim": "カフェはヴィンテージナチュラルな内装",
+      "source": "https://haretel.com/",
+      "quote": "ヴィンテージナチュラルなインテリア空間。",
+      "checkedAt": "2026-10-27"
+    },
+    {
+      "claim": "敷地内には海を望むシェアオフィスがある",
+      "source": "https://haretel.com/guestroom.php",
+      "quote": "海を望む絶景のシェアオフィス。",
+      "checkedAt": "2026-10-27"
+    },
+    {
+      "claim": "サウナは「SAUNA BREEZE」",
+      "source": "https://haretel.com/guestroom.php",
+      "quote": "細部までこだわり抜いた「SAUNA BREEZE」。",
+      "checkedAt": "2026-10-27"
+    },
+    {
+      "claim": "JR益田駅からバス小浜江崎線で持石上まで約11分",
+      "source": "https://haretel.com/access.php",
+      "quote": "バス小浜江崎線 約11分",
+      "checkedAt": "2026-10-27"
+    },
+    {
+      "claim": "持石上から徒歩約5分",
+      "source": "https://haretel.com/access.php",
+      "quote": "徒歩 約5分",
+      "checkedAt": "2026-10-27"
+    },
+    {
+      "claim": "萩・石見空港から車で約3分",
+      "source": "https://haretel.com/access.php",
+      "quote": "車 約3分",
+      "checkedAt": "2026-10-27"
+    },
+    {
+      "claim": "チェックインは14時から、18時以降は要連絡",
+      "source": "https://haretel.com/",
+      "quote": "チェックイン 14：00〜（最終〜18：00）",
+      "checkedAt": "2026-10-27"
+    },
+    {
+      "claim": "チェックアウトは11時まで",
+      "source": "https://haretel.com/",
+      "quote": "チェックアウト 〜11：00まで",
+      "checkedAt": "2026-10-27"
+    }
+  ],
+  "sources": [
+    {
+      "label": "公式サイト",
+      "url": "https://haretel.com/"
+    },
+    {
+      "label": "公式サイト(客室・施設)",
+      "url": "https://haretel.com/guestroom.php"
+    },
+    {
+      "label": "公式サイト(道のり&観光)",
+      "url": "https://haretel.com/access.php"
+    },
+    {
+      "label": "Google マップ",
+      "url": "https://maps.google.com/?cid=15808842378922007248"
+    }
+  ],
+  "notes": "automation/v2/write.mjs が 2026-10-27 に claude -p --model sonnet で作成。事実の裏取り: 18/18 件(quote が出どころにあるもの)。裏取りに通らなかった facts は載せていない。"
+}

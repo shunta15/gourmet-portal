@@ -1,0 +1,40 @@
+{
+  "tab": "トリニティアポ",
+  "tabEn": "tri-life",
+  "row": 60,
+  "sheet": {
+    "name": "八幡大神宮",
+    "address": "",
+    "url": "https://www.google.com/search?q=%E5%85%AB%E5%B9%A1%E5%A4%A7%E7%A5%9E%E5%AE%AE+%E5%A4%A7%E9%98%AA%E5%BA%9C%E5%A4%A7%E9%98%AA%E5%B8%82%E6%97%AD%E5%8C%BA%E6%B8%85%E6%B0%B43-20-19&rlz=1C1HKFL_jaJP1236JP1236&oq=%E5%85%AB%E5%B9%A1%E5%A4%A7%E7%A5%9E%E5%AE%AE%09%E5%A4%A7%E9%98%AA%E5%BA%9C%E5%A4%A7%E9%98%AA%E5%B8%82%E6%97%AD%E5%8C%BA%E6%B8%85%E6%B0%B43-20-19&gs_lcrp=EgZjaHJvbWUyBggAEEUYOdIBBzU2NWowajeoAgCwAgA&sourceid=chrome&source=chrome.ob&ie=UTF-8",
+    "type": "神社",
+    "d1": "",
+    "d2": ""
+  },
+  "urlKind": "search",
+  "route": "第1段(verify-gbp.mjs)で確認済み",
+  "verdict": "一致",
+  "verdictReason": "電話が一致／店名: exact(シート「八幡大神宮」/ マップ「八幡大神宮（旭区）」)／住所(検索URL): exact・町名・番地とも一致",
+  "place": {
+    "name": "八幡大神宮（旭区）",
+    "address": "大阪府大阪市旭区清水３丁目２０−１９",
+    "category": "神社",
+    "lat": 34.7256924,
+    "lng": 135.559564,
+    "gbpUrl": "https://maps.google.com/?cid=1931964434004925049",
+    "phone": "06-6952-2125",
+    "website": "http://www.osaka-jinjacho.jp/funai_jinja/dai4shibu/asahi-ku/04020hachimandaijingu.html",
+    "hours": {
+      "月": "24時間営業",
+      "火": "24時間営業",
+      "水": "24時間営業",
+      "木": "24時間営業",
+      "金": "24時間営業",
+      "土": "24時間営業",
+      "日": "24時間営業"
+    },
+    "reserveLinks": [],
+    "statusSignals": [],
+    "closedSignal": false
+  },
+  "fetchedAt": "2026-10-27T02:58:04.831Z"
+}

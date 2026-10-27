@@ -1,0 +1,150 @@
+{
+  "key": "tri-stay-70",
+  "headline": "石川県金沢市十一屋町にある小さな和風旅館。客室は和室・和洋室の全8室で、大浴場は男女別に1カ所ずつある。",
+  "lede": "金沢市にある「旅館 橋本屋」です。加賀料理の創作会席を提供する和風旅館で、客室は和室・和洋室の全8室、すべて禁煙です。金沢の観光スポットへは車で10〜15分の立地にあります。",
+  "sections": [
+    {
+      "heading": "場所と客室",
+      "body": "隣には八幡神社があり、金沢の観光スポットへは車で10〜15分の立地です。客室は和室8畳、和室10畳(バス・トイレ付き)、和室16畳、シモンズベッドセミダブルツイン和洋室10畳(2室限定)の4タイプで、全8室はすべて禁煙です。すべての客室に温水洗浄便座トイレと洗面台が備わります。"
+    },
+    {
+      "heading": "お風呂と食事",
+      "body": "大浴場は男女別に1カ所ずつあり、入浴時間は15時から23時、朝は6時から9時です。温泉ではありません。和室10畳タイプには専用のお風呂が備わります。夕食と朝食は1階のお食事処で提供されます。"
+    },
+    {
+      "heading": "予約とアクセス",
+      "body": "チェックインは15時から(最終チェックインは21時)、チェックアウトは10時までです。駐車場は10台分あり、送迎サービスはありません。支払いは現金またはカード(VISA・Master Card・JCB)が使えます。館内は全館Wi-Fiが使えます。予約は公式サイトの予約ページから行えます。"
+    }
+  ],
+  "rooms": [
+    {
+      "name": "シモンズベッドセミダブルツイン 和洋室 10畳"
+    },
+    {
+      "name": "和室 8畳"
+    },
+    {
+      "name": "和室 10畳"
+    },
+    {
+      "name": "和室 16畳"
+    }
+  ],
+  "menus": [],
+  "tags": [],
+  "facts": [
+    {
+      "claim": "加賀料理の創作会席を提供する和風旅館",
+      "source": "https://hashimotoya-kanazawa.com/",
+      "quote": "加賀料理の創作会席",
+      "checkedAt": "2026-10-27"
+    },
+    {
+      "claim": "客室は全8室で、禁煙",
+      "source": "https://hashimotoya-kanazawa.com/access.php",
+      "quote": "客室 全８室・禁煙",
+      "checkedAt": "2026-10-27"
+    },
+    {
+      "claim": "すべての客室に温水洗浄便座トイレと洗面台が備わる",
+      "source": "https://hashimotoya-kanazawa.com/stay.php",
+      "quote": "すべての客室に温水洗浄便座トイレと洗面台がございます。",
+      "checkedAt": "2026-10-27"
+    },
+    {
+      "claim": "和室10畳タイプには専用のお風呂が備わる",
+      "source": "https://hashimotoya-kanazawa.com/stay.php",
+      "quote": "専用のお風呂がそなわった広めタイプ",
+      "checkedAt": "2026-10-27"
+    },
+    {
+      "claim": "大浴場は男女別に1カ所ずつある",
+      "source": "https://hashimotoya-kanazawa.com/stay.php",
+      "quote": "大浴場が男女別に１カ所ずつございます",
+      "checkedAt": "2026-10-27"
+    },
+    {
+      "claim": "大浴場の入浴時間は15時から23時、朝は6時から9時",
+      "source": "https://hashimotoya-kanazawa.com/stay.php",
+      "quote": "入浴時間 15：00～23：00、朝6：00～9：00",
+      "checkedAt": "2026-10-27"
+    },
+    {
+      "claim": "夕食と朝食は1階のお食事処で提供される",
+      "source": "https://hashimotoya-kanazawa.com/stay.php",
+      "quote": "夕食と朝食は、１階のお食事処でご用意いたします。",
+      "checkedAt": "2026-10-27"
+    },
+    {
+      "claim": "チェックインは15時から、最終チェックインは21時",
+      "source": "https://hashimotoya-kanazawa.com/access.php",
+      "quote": "チェックイン 15：00～（最終チェックイン21：00）",
+      "checkedAt": "2026-10-27"
+    },
+    {
+      "claim": "チェックアウトは10時まで",
+      "source": "https://hashimotoya-kanazawa.com/access.php",
+      "quote": "チェックアウト ～10：00",
+      "checkedAt": "2026-10-27"
+    },
+    {
+      "claim": "駐車場は10台分ある",
+      "source": "https://hashimotoya-kanazawa.com/access.php",
+      "quote": "駐車場 無料 ／ 10台",
+      "checkedAt": "2026-10-27"
+    },
+    {
+      "claim": "送迎サービスはない",
+      "source": "https://hashimotoya-kanazawa.com/access.php",
+      "quote": "送迎サービスはございません。",
+      "checkedAt": "2026-10-27"
+    },
+    {
+      "claim": "館内は全館Wi-Fiが使える",
+      "source": "https://hashimotoya-kanazawa.com/access.php",
+      "quote": "全館Wi-Fi",
+      "checkedAt": "2026-10-27"
+    },
+    {
+      "claim": "支払いは現金またはカード(VISA・Master Card・JCB)が使える",
+      "source": "https://hashimotoya-kanazawa.com/access.php",
+      "quote": "現金、カード（VISA・Master Card・JCB）",
+      "checkedAt": "2026-10-27"
+    },
+    {
+      "claim": "金沢の観光スポットへは車で10〜15分の立地",
+      "source": "https://hashimotoya-kanazawa.com/guide.php",
+      "quote": "金沢の有名な観光スポットへ車で10～15分と便利な立地",
+      "checkedAt": "2026-10-27"
+    },
+    {
+      "claim": "隣には八幡神社がある",
+      "source": "https://hashimotoya-kanazawa.com/guide.php",
+      "quote": "当館の隣には「八幡さん」があります",
+      "checkedAt": "2026-10-27"
+    }
+  ],
+  "sources": [
+    {
+      "label": "公式サイト",
+      "url": "https://hashimotoya-kanazawa.com/"
+    },
+    {
+      "label": "公式サイト(客室・館内)",
+      "url": "https://hashimotoya-kanazawa.com/stay.php"
+    },
+    {
+      "label": "公式サイト(周辺観光)",
+      "url": "https://hashimotoya-kanazawa.com/guide.php"
+    },
+    {
+      "label": "公式サイト(アクセス)",
+      "url": "https://hashimotoya-kanazawa.com/access.php"
+    },
+    {
+      "label": "Google マップ",
+      "url": "https://maps.google.com/?cid=10177181657520906533"
+    }
+  ],
+  "notes": "automation/v2/write.mjs が 2026-10-27 に claude -p --model sonnet で作成。事実の裏取り: 15/15 件(quote が出どころにあるもの)。裏取りに通らなかった facts は載せていない。"
+}

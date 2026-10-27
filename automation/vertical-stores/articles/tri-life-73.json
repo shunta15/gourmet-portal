@@ -1,0 +1,104 @@
+{
+  "key": "tri-life-73",
+  "headline": "愛媛県八幡浜市五反田にある臨済宗の寺院で、山号は林鳳山、明暦三年(1657年)の創建。境内には約300年前に植えられた枝垂れ桜がある。",
+  "lede": "八幡浜市にある「宝厳寺」です。山号は林鳳山、宗派は臨済宗で、明暦三年(1657年)に創建されました。本尊は阿弥陀如来です。",
+  "sections": [
+    {
+      "heading": "由緒",
+      "body": "宝厳寺は愛媛県八幡浜市五反田にある臨済宗の寺院です。山号は林鳳山で、明暦三年(1657年)に創建されました。本尊は阿弥陀如来で、学問の神様・合格祈願、安産祈願・子宝のご利益があります。"
+    },
+    {
+      "heading": "境内の枝垂れ桜",
+      "body": "境内には枝垂れ桜があります。約300年前にこの地に植えられ、大正末期に強風で折れたものの、そこから再び芽吹いた木です。"
+    },
+    {
+      "heading": "場所と参拝の時間",
+      "body": "住所は愛媛県八幡浜市五反田２−２１２、電話は0894-23-0849です。参拝の時間は毎日8時から17時です。"
+    }
+  ],
+  "menus": [],
+  "tags": [],
+  "facts": [
+    {
+      "claim": "住所は愛媛県八幡浜市五反田２−２１２",
+      "source": "https://maps.google.com/?cid=5042233088645635993",
+      "quote": "愛媛県八幡浜市五反田２−２１２",
+      "checkedAt": "2026-10-27"
+    },
+    {
+      "claim": "電話番号は0894-23-0849",
+      "source": "https://maps.google.com/?cid=5042233088645635993",
+      "quote": "0894-23-0849",
+      "checkedAt": "2026-10-27"
+    },
+    {
+      "claim": "参拝の時間は毎日8時から17時",
+      "source": "https://maps.google.com/?cid=5042233088645635993",
+      "quote": "08:00–17:00",
+      "checkedAt": "2026-10-27"
+    },
+    {
+      "claim": "宗派は臨済宗",
+      "source": "https://hotokami.jp/area/ehime/Hrztr/Hrztrtm/Dktrma/25039/",
+      "quote": "臨済宗",
+      "checkedAt": "2026-10-27"
+    },
+    {
+      "claim": "山号は林鳳山",
+      "source": "https://hotokami.jp/area/ehime/Hrztr/Hrztrtm/Dktrma/25039/",
+      "quote": "林鳳山",
+      "checkedAt": "2026-10-27"
+    },
+    {
+      "claim": "明暦三年(1657年)に創建",
+      "source": "https://hotokami.jp/area/ehime/Hrztr/Hrztrtm/Dktrma/25039/",
+      "quote": "1657年(明暦三年)",
+      "checkedAt": "2026-10-27"
+    },
+    {
+      "claim": "本尊は阿弥陀如来",
+      "source": "https://hotokami.jp/area/ehime/Hrztr/Hrztrtm/Dktrma/25039/",
+      "quote": "阿弥陀如来",
+      "checkedAt": "2026-10-27"
+    },
+    {
+      "claim": "ご利益は学問の神様・合格祈願",
+      "source": "https://hotokami.jp/area/ehime/Hrztr/Hrztrtm/Dktrma/25039/",
+      "quote": "学問の神様・合格祈願",
+      "checkedAt": "2026-10-27"
+    },
+    {
+      "claim": "ご利益は安産祈願・子宝",
+      "source": "https://hotokami.jp/area/ehime/Hrztr/Hrztrtm/Dktrma/25039/",
+      "quote": "安産祈願・子宝",
+      "checkedAt": "2026-10-27"
+    },
+    {
+      "claim": "枝垂れ桜は約300年前にこの地に植えられた",
+      "source": "https://yawatahama-iju.com/news/13238/",
+      "quote": "約300年前にこの地に植えられ",
+      "checkedAt": "2026-10-27"
+    },
+    {
+      "claim": "大正末期に強風で折れたが再び芽吹いた",
+      "source": "https://yawatahama-iju.com/news/13238/",
+      "quote": "大正末期に強風で折れたものの",
+      "checkedAt": "2026-10-27"
+    }
+  ],
+  "sources": [
+    {
+      "label": "寺院情報サイト(由緒)",
+      "url": "https://hotokami.jp/area/ehime/Hrztr/Hrztrtm/Dktrma/25039/"
+    },
+    {
+      "label": "八幡浜市移住・定住支援ポータルサイト(桜)",
+      "url": "https://yawatahama-iju.com/news/13238/"
+    },
+    {
+      "label": "Google マップ",
+      "url": "https://maps.google.com/?cid=5042233088645635993"
+    }
+  ],
+  "notes": "automation/v2/write.mjs が 2026-10-27 に claude -p --model sonnet で作成。事実の裏取り: 11/11 件(quote が出どころにあるもの)。裏取りに通らなかった facts は載せていない。"
+}
