@@ -46,22 +46,22 @@ export const EDITS: Record<string, ArticleEdit> = {
   st0001: {
     sections: [
       { kicker: "お部屋", heading: ["一棟貸しの", "3つの宿"], pick: ["MAGOICHIは、", "MAGONIは、", "MAGOSANは、"], kind: "room" },
-      { kicker: "お食事", heading: ["自炊と", "カフェの案内"], pick: ["公式サイトでは、近くの市場", "カフェ情報として"], kind: "food" },
-      { kicker: "設備", heading: ["設備と", "ご利用の決まり"], pick: ["公式サイトの設備の欄", "ペットと喫煙は不可"], kind: "common" },
+      { kicker: "お食事", heading: ["自炊と", "カフェの案内"], pick: ["近くの市場", "カフェは、"], kind: "food" },
+      { kicker: "設備", heading: ["設備と", "ご利用の決まり"], pick: ["設備は、キッチン", "ペットと喫煙は不可"], kind: "common" },
     ],
     quote: "チェックインは15時からで、滞在は1泊から30泊までです",
     times: [
       { t: "9:00〜18:00", l: "電話の受付", need: "電話の受付は9時から18時まで" },
-      { t: "10:00〜16:00", l: "MAGONDOカフェ", s: "定休日は月曜と金曜", need: "「MAGONDOカフェ」は10時から16時まで(定休日は月曜と金曜)" },
+      { t: "10:00〜16:00", l: "MAGONDOカフェ", s: "定休日は月曜と金曜", need: "「MAGONDOカフェ」が10時から16時まで(定休日は月曜と金曜)" },
       { t: "15:00", l: "チェックイン", need: "チェックインは15時から" },
-      { t: "19:00〜23:00", l: "MAGONDO夜カフェ", s: "要予約", need: "「MAGONDO夜カフェ」は19時から23時までで、要予約" },
+      { t: "19:00〜23:00", l: "MAGONDO夜カフェ", s: "要予約", need: "「MAGONDO夜カフェ」が19時から23時までで、要予約" },
     ],
   },
 
   // 富士見の丘オートキャンプ場(静岡県富士市)
   st0002: {
     sections: [
-      { kicker: "コテージ", heading: ["露天風呂付きの", "コテージ2棟"], pick: ["コテージは「GRAND HILLS駿河」", "公式サイトによると、露天風呂から"], kind: "bath" },
+      { kicker: "コテージ", heading: ["露天風呂付きの", "コテージ2棟"], pick: ["コテージは「GRAND HILLS駿河」", "露天風呂からは"], kind: "bath" },
       { kicker: "キャンプサイト", heading: ["区画サイトは", "3種類"], pick: ["区画サイトは、コンセント", "区画の中に収まれば"], kind: "view" },
       { kicker: "場内の設備", heading: ["場内の設備と", "レンタル"], pick: ["場内には、温水便座", "管理棟では薪や花火"], kind: "common" },
     ],
@@ -95,7 +95,7 @@ export const EDITS: Record<string, ArticleEdit> = {
     sections: [
       { kicker: "離れ", heading: ["天然温泉付きの", "離れ5棟"], pick: ["離れ水分村は、一棟貸しの", "客室は、半露天の岩風呂"], kind: "bath" },
       { kicker: "旧館", heading: ["旧館の", "客室とお風呂"], pick: ["民宿水分(旧館)は、温泉マーク", "客室は、和室(4畳"], kind: "room" },
-      { kicker: "ペット", heading: ["ペットと", "泊まる宿"], pick: ["公式サイトでは、室内で飼えるペット", "種類によっては断る場合"], kind: "exterior" },
+      { kicker: "ペット", heading: ["ペットと", "泊まる宿"], pick: ["室内で飼えるペット", "種類によっては断る場合"], kind: "exterior" },
     ],
     quote: "旧館は小型犬のみの受け入れです",
     times: [
@@ -157,7 +157,7 @@ export const EDITS: Record<string, ArticleEdit> = {
   // 滝の湯旅館(福島県須賀川市・旅館)
   st0008: {
     sections: [
-      { kicker: "お風呂", heading: ["薪で沸かす", "湧水のお風呂"], pick: ["お風呂は、旅館の水が自然に湧き出る", "公式サイトでは、温泉成分の基準には"], kind: "bath" },
+      { kicker: "お風呂", heading: ["薪で沸かす", "湧水のお風呂"], pick: ["お風呂は、旅館の水が自然に湧き出る", "温泉成分の基準には"], kind: "bath" },
       { kicker: "お料理", heading: ["地産地消の", "お料理"], pick: ["旅館で採れた野菜や山菜、福島県川俣町", "10月から3月の冬期間"], kind: "food" },
       { kicker: "お部屋", heading: ["4つの", "客室"], pick: ["客室は、1階の、お風呂に近く"], kind: "room" },
     ],

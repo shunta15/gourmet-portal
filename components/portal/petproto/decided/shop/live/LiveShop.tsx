@@ -269,7 +269,7 @@ function Menu({ d }: { d: ShopDetail }) {
           メニュー
         </FillHeading>
         <p className="lsp-ldesc">
-          <span>公式サイトに載っているメニューです。</span>
+          <span>お店のメニューです。</span>
           <span>内容は変わることがあります。</span>
         </p>
         {d.website ? (
@@ -301,7 +301,7 @@ function Facility({ d }: { d: ShopDetail }) {
           施設・サービス
         </FillHeading>
         <p className="lsp-ldesc">
-          <span>店が案内している対応・サービスです。</span>
+          <span>お店の対応・サービスです。</span>
         </p>
       </div>
       <div className="lsp-items">

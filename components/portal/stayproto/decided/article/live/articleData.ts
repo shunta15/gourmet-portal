@@ -351,7 +351,7 @@ export async function loadStayArticle(id: string, given?: Place[]): Promise<Arti
     .map((t) => ({ a: t.t, b: t.l, ...(t.s ? { c: t.s } : {}) }));
   let row4: Row4;
   if (times.length >= 2) {
-    row4 = { mode: "times", no: row4No, id: "sy-a-row4", kicker: "時刻", heading: ["時間の", "ご案内"], note: "公式サイトに載っている時刻です。", items: times };
+    row4 = { mode: "times", no: row4No, id: "sy-a-row4", kicker: "時刻", heading: ["時間の", "ご案内"], note: "時刻のまとめです。", items: times };
   } else {
     const items: Row4Item[] = [];
     if (shop.address) items.push({ a: "所在地", b: shop.area || shop.prefName, c: shop.address });
@@ -365,7 +365,7 @@ export async function loadStayArticle(id: string, given?: Place[]): Promise<Arti
       if (hol) items.push({ a: "休館日", b: hol.length <= 16 ? hol : "定休日あり", ...(hol.length > 16 ? { c: hol } : {}) });
       if (shop.officialUrl) items.push({ a: "公式サイト", b: httpHost(shop.officialUrl) });
     }
-    row4 = { mode: "basics", no: row4No, id: "sy-a-row4", kicker: "基本", heading: ["宿の", "基本情報"], note: "公式サイトなどで確認できた内容です。", items: items.slice(0, 5) };
+    row4 = { mode: "basics", no: row4No, id: "sy-a-row4", kicker: "基本", heading: ["宿の", "基本情報"], note: "宿の基本情報のまとめです。", items: items.slice(0, 5) };
   }
 
   // ---- 掲載している宿 ----

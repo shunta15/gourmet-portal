@@ -329,11 +329,11 @@ export async function loadArticle(cfg: VkConfig, id: string, given?: Place[]): P
   const items: Row4Item[] = [];
   if (shop.address) items.push({ a: "所在地", b: shop.area || shop.prefName, c: shop.address });
   if (shop.station) items.push({ a: "最寄り駅", b: shop.station });
-  if (shop.hours && vkLineOk(shop.hours)) items.push({ a: "営業時間", b: shop.hours.length <= 16 ? shop.hours : "公式サイトに記載", ...(shop.hours.length > 16 ? { c: shop.hours } : {}) });
+  if (shop.hours && vkLineOk(shop.hours)) items.push({ a: "営業時間", b: shop.hours.length <= 16 ? shop.hours : "下記のとおり", ...(shop.hours.length > 16 ? { c: shop.hours } : {}) });
   if (shop.holidays && vkLineOk(shop.holidays)) items.push({ a: "定休日", b: shop.holidays.length <= 16 ? shop.holidays : "あり", ...(shop.holidays.length > 16 ? { c: shop.holidays } : {}) });
   if (shop.phone) items.push({ a: "電話", b: shop.phone });
   if (shop.officialUrl) items.push({ a: "公式サイト", b: httpHost(shop.officialUrl) });
-  const row4: Row4 = { mode: "basics", no: row4No, id: "vk-a-row4", kicker: "基本", heading: ["基本", "情報"], note: "公式サイトなどで確認できた内容です。", items: items.slice(0, 5) };
+  const row4: Row4 = { mode: "basics", no: row4No, id: "vk-a-row4", kicker: "基本", heading: ["基本", "情報"], note: "基本の情報のまとめです。", items: items.slice(0, 5) };
 
   // ---- 掲載している店 ----
   const infoPh =
