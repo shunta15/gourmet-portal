@@ -10,7 +10,7 @@
  * 候補 = 台帳に「店名が完全一致(前後の空白を除く・NFC)」で載り、かつ D 列(URL)が空でない店(=済み)ではない店。中間一致は使わない。
  *   (2026-10-26: 台帳をアポのシートと同じ行の並びに作り直したため、店名の有無では済みを判定しない)
  * 業種は vertical-map.json で付ける。決まらなければ「要確認」。
- * 備考(G/H列)は個人情報を含むので読まない・保存しない。
+ * 備考(トリニティは H 列)は個人情報を含むので読まない・保存しない。
  *
  * 使い方:
  *   node automation/v2/intake.mjs                  → out/intake-<日付>.json を書き、件数を表示
@@ -27,7 +27,8 @@ export const SHEET_ID = "1ap-xd7DaW0dd8L11aoA7GAWltN0h7jGawyadtczwQgk";
 
 export const TABS = {
   Linkateアポ: { ledger: "Linkate記事台帳", cols: { name: 1, phone: 2, address: 3, url: 4, industry: 5, date: 6 } },
-  トリニティアポ: { ledger: "トリニティ記事台帳", cols: { date: 0, name: 1, phone: 2, url: 3, industry: 4, status: 5 } },
+  // 2026-10-27 オーナーがシートの列を変更: A 日時・B 店名・C 電話・D 郵便番号・住所・E GoogleURL・F 業種・G ステータス・H 備考・I 特集記事
+  トリニティアポ: { ledger: "トリニティ記事台帳", cols: { date: 0, name: 1, phone: 2, address: 3, url: 4, industry: 5, status: 6 } },
 };
 
 export const today = () => new Date(Date.now() + 9 * 3600e3).toISOString().slice(0, 10);
