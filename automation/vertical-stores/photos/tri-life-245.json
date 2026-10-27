@@ -1,0 +1,55 @@
+{
+  "key": "tri-life-245",
+  "images": [
+    {
+      "path": "/_portal/vshops/tri-life-245/g01.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9QCLEYI5wnza1LTJk24Gv3DKaB4lGEAKSItqB1z0GkCPmXKh7O12e6UaC7pKCt0PSPWeDp6OaXwFjrUaCc-0wPPFoziPSotFrho9xGayHUq_TIDVBB1gocLa0IPoI1SXJL2AUI3766R4mQH=s1200",
+      "pageUrl": "https://maps.google.com/?cid=5739332030974325762",
+      "what": "「着付蓮花」の看板が出た店舗の外観",
+      "kind": "exterior",
+      "width": 1200,
+      "height": 675,
+      "source": "Google マップ"
+    },
+    {
+      "path": "/_portal/vshops/tri-life-245/g02.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9R65-AX9RgPptVEXjjTTnxAq9CA5lf9Pw_Kym-XyYUPiSyI0_ut3cjrXBFx_1OgKjXatByaTkTT0h_D6fV0R-RGjYJ19YuNOCkRZgmAEYJzwJU48MS71-BS6_sd5Yaigb_hK9z8jCOGUDkV=s1200",
+      "pageUrl": "https://maps.google.com/?cid=5739332030974325762",
+      "what": "棚に帯留めや巾着などの小物が並ぶ店内",
+      "kind": "common",
+      "width": 1200,
+      "height": 800,
+      "source": "Google マップ"
+    },
+    {
+      "path": "/_portal/vshops/tri-life-245/g03.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9TAiO3L9gaRrp0j6G-8yNp9f4QBIxePl7omxPDnvw4Rklin11GuNFyogdf6iGPb-5Yq0f12iv1QG8FpDlSuWM4HDluFop8AlXAKts5lac42AjkxLUEYwnU1QiEOw0G8AVC7hA5fYn77z4Q=s1200",
+      "pageUrl": "https://maps.google.com/?cid=5739332030974325762",
+      "what": "棚に巾着やポーチなどの小物が並ぶ店内",
+      "kind": "common",
+      "width": 900,
+      "height": 1200,
+      "source": "Google マップ"
+    },
+    {
+      "path": "/_portal/vshops/tri-life-245/g04.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9QES5_AHlpHJlzRne6mBEYiLBsYir8CWvBUiilTiSikLh_2svZwaKngeU3YwEwErD_71zDBj4JGmIxC6A2LIzLrp7m_n7j_ytvByqP-oDxR5LcX5P_TZoCy4B3SqAWh-ISb4CVMaUZ3ZZ0=s1200",
+      "pageUrl": "https://maps.google.com/?cid=5739332030974325762",
+      "what": "棚に髪飾りや小物、造花が並ぶ店内",
+      "kind": "common",
+      "width": 1200,
+      "height": 800,
+      "source": "Google マップ"
+    },
+    {
+      "path": "/_portal/vshops/tri-life-245/g05.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9SosX1HJrSe99raZjuCPsUyN8nBmGVU9t9nGciyXa9uF72GRFRiX2-fKQB6c49331h3JKTC5X3CE4d_lIQ4UGsiI3xZ39LDnkpMa8YEAtSCgXLG0X-xd04O2aMoHUMH4RGK1BGLdJthlTA=s1200",
+      "pageUrl": "https://maps.google.com/?cid=5739332030974325762",
+      "what": "着物の帯の柄を見せる後ろ姿",
+      "width": 800,
+      "height": 1200,
+      "source": "Google マップ"
+    }
+  ],
+  "note": "automation/v2/write.mjs が 2026-10-27T09:45:23.442Z に取得。店の実写だけ(AI 画像・汎用画像・地図・ロゴ・顔が大きい画像は除外)。"
+}

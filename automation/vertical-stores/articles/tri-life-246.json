@@ -1,0 +1,150 @@
+{
+  "key": "tri-life-246",
+  "headline": "横浜市緑区三保町にある高野山真言宗の寺院。本尊は無眼薬師如来で、武相寅歳薬師霊場の第一番札所です",
+  "lede": "横浜市緑区にある「薬師堂」です。高野山真言宗の寺院・舊城寺の境内にあり、本尊は無眼薬師如来です。中世の砦である榎下城の跡地に創建されました。",
+  "sections": [
+    {
+      "heading": "場所と連絡先",
+      "body": "住所は神奈川県横浜市緑区三保町2038、電話は045-931-1435です。最寄り駅はJR横浜線・横浜市営地下鉄グリーンラインの中山駅で、徒歩18分(約1.4km)です。中山駅南口のバスロータリーからバスを利用すると、バス停「榎下城址裏」で下車して3分程度です。参拝者用の駐車場があります。"
+    },
+    {
+      "heading": "由緒と本尊",
+      "body": "高野山真言宗の寺院で、中世の砦である榎下城の跡地に創建されました。本尊は無眼薬師如来で、室町時代より眼に特にご利益があると信仰されてきました。眼の悪い人々に自身の両目を与えたと伝えられ、そのお姿に両目はありません。武相寅歳薬師霊場の第一番札所です。"
+    },
+    {
+      "heading": "行事",
+      "body": "こぼんさん修行体験や花まつりなどの行事が行われています。花まつりは4月8日です。"
+    }
+  ],
+  "menus": [
+    {
+      "name": "阿字観会"
+    },
+    {
+      "name": "写経会"
+    },
+    {
+      "name": "薬師護摩祈祷会"
+    },
+    {
+      "name": "大施餓鬼盂蘭盆会"
+    },
+    {
+      "name": "こぼんさん修行体験"
+    },
+    {
+      "name": "花まつり"
+    }
+  ],
+  "tags": [
+    {
+      "tag": "体験あり",
+      "factIndex": 8
+    },
+    {
+      "tag": "駐車場あり",
+      "factIndex": 13
+    }
+  ],
+  "facts": [
+    {
+      "claim": "高野山真言宗の寺院「舊城寺」である",
+      "source": "https://kyujoji.wixsite.com/website",
+      "quote": "高野山真言宗　舊城寺（旧城寺）",
+      "checkedAt": "2026-10-27"
+    },
+    {
+      "claim": "所在地は神奈川県横浜市緑区三保町2038",
+      "source": "https://kyujoji.wixsite.com/website",
+      "quote": "神奈川県横浜市緑区三保町2038",
+      "checkedAt": "2026-10-27"
+    },
+    {
+      "claim": "電話番号は045-931-1435",
+      "source": "https://kyujoji.wixsite.com/website",
+      "quote": "045-931-1435",
+      "checkedAt": "2026-10-27"
+    },
+    {
+      "claim": "本尊は無眼薬師如来",
+      "source": "https://kyujoji.wixsite.com/website",
+      "quote": "無眼薬師如来",
+      "checkedAt": "2026-10-27"
+    },
+    {
+      "claim": "室町時代より眼に特にご利益があると信仰されてきた",
+      "source": "https://kyujoji.wixsite.com/website",
+      "quote": "眼に特にご利益があると信仰されてきました",
+      "checkedAt": "2026-10-27"
+    },
+    {
+      "claim": "眼の悪い人々に自身の両目を与えたと伝えられ、そのお姿に両目はない",
+      "source": "https://kyujoji.wixsite.com/website",
+      "quote": "そのお姿に両目はありません",
+      "checkedAt": "2026-10-27"
+    },
+    {
+      "claim": "中世の砦である榎下城の跡地に創建された",
+      "source": "https://kyujoji.wixsite.com/website",
+      "quote": "榎下城の跡地に創建されました",
+      "checkedAt": "2026-10-27"
+    },
+    {
+      "claim": "武相寅歳薬師霊場の第一番札所である",
+      "source": "https://kyujoji.wixsite.com/website",
+      "quote": "武相寅歳薬師霊場の第一番札所",
+      "checkedAt": "2026-10-27"
+    },
+    {
+      "claim": "こぼんさん修行体験という行事が行われている",
+      "source": "https://kyujoji.wixsite.com/website",
+      "quote": "こぼんさん修行体験",
+      "checkedAt": "2026-10-27"
+    },
+    {
+      "claim": "花まつりは4月8日",
+      "source": "https://kyujoji.wixsite.com/website",
+      "quote": "4月8日　花まつり（お釈迦様の誕生日）",
+      "checkedAt": "2026-10-27"
+    },
+    {
+      "claim": "最寄り駅はJR横浜線中山駅・グリーンライン中山駅",
+      "source": "https://kyujoji.wixsite.com/website/%E5%A0%B4%E6%89%80-%E4%BA%A4%E9%80%9A%E6%A9%9F%E9%96%A2",
+      "quote": "JR横浜線中山駅、グリーンライン中山駅",
+      "checkedAt": "2026-10-27"
+    },
+    {
+      "claim": "中山駅から徒歩18分(約1.4km)",
+      "source": "https://kyujoji.wixsite.com/website/%E5%A0%B4%E6%89%80-%E4%BA%A4%E9%80%9A%E6%A9%9F%E9%96%A2",
+      "quote": "18分（中山駅より1.4ｋｍ）",
+      "checkedAt": "2026-10-27"
+    },
+    {
+      "claim": "中山駅南口バスロータリーからバスが利用でき、バス停「榎下城址裏」で下車する",
+      "source": "https://kyujoji.wixsite.com/website/%E5%A0%B4%E6%89%80-%E4%BA%A4%E9%80%9A%E6%A9%9F%E9%96%A2",
+      "quote": "バス：榎下城址裏（下車3分程度）",
+      "checkedAt": "2026-10-27"
+    },
+    {
+      "claim": "参拝者用の駐車場がある",
+      "source": "https://kyujoji.wixsite.com/website/%E5%A0%B4%E6%89%80-%E4%BA%A4%E9%80%9A%E6%A9%9F%E9%96%A2",
+      "quote": "参拝者用駐車場がございます",
+      "checkedAt": "2026-10-27"
+    }
+  ],
+  "sources": [
+    {
+      "label": "公式サイト",
+      "url": "https://kyujoji.wixsite.com/website"
+    },
+    {
+      "label": "公式サイト(場所・交通機関)",
+      "url": "https://kyujoji.wixsite.com/website/%E5%A0%B4%E6%89%80-%E4%BA%A4%E9%80%9A%E6%A9%9F%E9%96%A2"
+    },
+    {
+      "label": "Google マップ",
+      "url": "https://maps.google.com/?cid=7625250891900571824"
+    }
+  ],
+  "notes": "automation/v2/write.mjs が 2026-10-27 に claude -p --model sonnet で作成。事実の裏取り: 14/14 件(quote が出どころにあるもの)。裏取りに通らなかった facts は載せていない。"
+}

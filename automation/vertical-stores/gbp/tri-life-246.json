@@ -1,0 +1,32 @@
+{
+  "tab": "トリニティアポ",
+  "tabEn": "tri-life",
+  "row": 246,
+  "sheet": {
+    "name": "舊城寺(旧城寺)",
+    "address": "",
+    "url": "https://www.google.com/maps/search/?api=1&query=%E8%88%8A%E5%9F%8E%E5%AF%BA%28%E6%97%A7%E5%9F%8E%E5%AF%BA%29%20045-931-1435%20%E3%80%92226-0015%20%E7%A5%9E%E5%A5%88%E5%B7%9D%E7%9C%8C%E6%A8%AA%E6%B5%9C%E5%B8%82%E7%B7%91%E5%8C%BA%E4%B8%89%E4%BF%9D%E7%94%BA%EF%BC%92%EF%BC%90%EF%BC%93%EF%BC%98%20%E8%88%8A%E5%9F%8E%E5%AF%BA",
+    "type": "寺",
+    "d1": "",
+    "d2": ""
+  },
+  "urlKind": "mapsApi",
+  "route": "第1段(verify-gbp.mjs)で確認済み",
+  "verdict": "一致",
+  "verdictReason": "手がかり: 電話＋住所(番地まで)。電話が一致／店名: different(シート「舊城寺(旧城寺)」/ マップ「薬師堂」)／住所(シート): exact・町名・番地とも一致",
+  "place": {
+    "name": "薬師堂",
+    "address": "神奈川県横浜市緑区三保町２０３８",
+    "category": "寺院・礼拝所",
+    "lat": 35.5174939,
+    "lng": 139.529927,
+    "gbpUrl": "https://maps.google.com/?cid=7625250891900571824",
+    "phone": "045-931-1435",
+    "website": null,
+    "hours": null,
+    "reserveLinks": [],
+    "statusSignals": [],
+    "closedSignal": false
+  },
+  "fetchedAt": "2026-10-27T09:18:45.146Z"
+}

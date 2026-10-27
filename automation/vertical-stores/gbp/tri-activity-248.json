@@ -1,0 +1,40 @@
+{
+  "tab": "トリニティアポ",
+  "tabEn": "tri-activity",
+  "row": 248,
+  "sheet": {
+    "name": "屋久島自然案内",
+    "address": "",
+    "url": "https://www.google.com/maps/search/?api=1&query=%E5%B1%8B%E4%B9%85%E5%B3%B6%E8%87%AA%E7%84%B6%E6%A1%88%E5%86%85%20099-749-1260%20%E3%80%92891-4205%20%E9%B9%BF%E5%85%90%E5%B3%B6%E7%9C%8C%E7%86%8A%E6%AF%9B%E9%83%A1%E5%B1%8B%E4%B9%85%E5%B3%B6%E7%94%BA%E5%AE%AE%E4%B9%8B%E6%B5%A6%EF%BC%92%EF%BC%94%EF%BC%97%EF%BC%93%E2%88%92%EF%BC%92%EF%BC%99%EF%BC%94",
+    "type": "アクティビティ",
+    "d1": "",
+    "d2": ""
+  },
+  "urlKind": "mapsApi",
+  "route": "第1段(verify-gbp.mjs)で確認済み",
+  "verdict": "一致",
+  "verdictReason": "手がかり: 店名＋電話＋住所(番地まで)。電話が一致／店名: exact(シート「屋久島自然案内」/ マップ「屋久島自然案内」)／住所(シート): exact・町名・番地とも一致",
+  "place": {
+    "name": "屋久島自然案内",
+    "address": "鹿児島県熊毛郡屋久島町宮之浦２４７３−２９４",
+    "category": "ツアー業者",
+    "lat": 30.4157815,
+    "lng": 130.5801079,
+    "gbpUrl": "https://maps.google.com/?cid=2302839970852483402",
+    "phone": "0997-49-1260",
+    "website": "http://yakushima-nature.jp/",
+    "hours": {
+      "月": "08:00–20:00",
+      "火": "08:00–20:00",
+      "水": "08:00–20:00",
+      "木": "08:00–20:00",
+      "金": "08:00–20:00",
+      "土": "08:00–20:00",
+      "日": "08:00–20:00"
+    },
+    "reserveLinks": [],
+    "statusSignals": [],
+    "closedSignal": false
+  },
+  "fetchedAt": "2026-10-27T09:19:52.660Z"
+}

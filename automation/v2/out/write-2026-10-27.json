@@ -3,8 +3,8 @@
     "date": "2026-10-27",
     "startedAt": "2026-10-27T00:49:47.306Z",
     "verifyFile": "automation/v2/out/verify-2026-10-27.json",
-    "args": "--only-row 52,55,59,65,71,73",
-    "updatedAt": "2026-10-27T03:34:30.035Z"
+    "args": "--only-row 81,95,106,132,133,139,161,170,235,237,238,239,240,241,242,243,244,245,246,247,248",
+    "updatedAt": "2026-10-27T09:58:36.696Z"
   },
   "environment": null,
   "results": {
@@ -1125,6 +1125,749 @@
         "article": "/life/article/li0053"
       },
       "finishedAt": "2026-10-27T03:24:35.268Z"
+    },
+    "tri-gourmet-81": {
+      "key": "tri-gourmet-81",
+      "row": 81,
+      "name": "台湾市場食堂美蘭",
+      "vertical": "グルメ",
+      "articleId": "台湾市場食堂美蘭",
+      "status": "成功",
+      "stage": "done",
+      "startedAt": "2026-10-27T09:06:39.112Z",
+      "seconds": {
+        "total": 114,
+        "claude": 113
+      },
+      "photos": {
+        "candidates": 24,
+        "maps": 10,
+        "official": 14,
+        "rejectedByMachine": 4,
+        "used": 6,
+        "emptyFrames": 0
+      },
+      "check": {
+        "rewrote": true,
+        "shapeProblems": [],
+        "sentenceProblems": 0,
+        "facts": {
+          "total": 18,
+          "verified": 18
+        }
+      },
+      "storeId": "r751",
+      "onePage": "表に追加(/feature/<記事ID> は /restaurant/<店ID> へ転送)",
+      "storeBuilt": true,
+      "storeNote": null,
+      "urls": {
+        "article": "/feature/台湾市場食堂美蘭",
+        "shop": "/restaurant/r751"
+      },
+      "finishedAt": "2026-10-27T09:42:48.246Z"
+    },
+    "tri-gourmet-95": {
+      "key": "tri-gourmet-95",
+      "row": 95,
+      "name": "甘露肉汁",
+      "vertical": "グルメ",
+      "articleId": "甘露肉汁",
+      "status": "成功",
+      "stage": "done",
+      "startedAt": "2026-10-27T09:07:20.173Z",
+      "seconds": {
+        "total": 45,
+        "claude": 44
+      },
+      "photos": {
+        "candidates": 10,
+        "maps": 10,
+        "official": 0,
+        "rejectedByMachine": 0,
+        "used": 3,
+        "emptyFrames": 1
+      },
+      "check": {
+        "rewrote": true,
+        "shapeProblems": [],
+        "sentenceProblems": 0,
+        "facts": {
+          "total": 6,
+          "verified": 6
+        }
+      },
+      "storeId": "r752",
+      "onePage": "表に追加(/feature/<記事ID> は /restaurant/<店ID> へ転送)",
+      "storeBuilt": true,
+      "storeNote": null,
+      "urls": {
+        "article": "/feature/甘露肉汁",
+        "shop": "/restaurant/r752"
+      },
+      "finishedAt": "2026-10-27T09:43:33.434Z"
+    },
+    "tri-gourmet-106": {
+      "key": "tri-gourmet-106",
+      "row": 106,
+      "name": "カフェバーミヤミ",
+      "vertical": "グルメ",
+      "articleId": "cafebarmiyami",
+      "status": "成功",
+      "stage": "done",
+      "startedAt": "2026-10-27T09:07:52.891Z",
+      "seconds": {
+        "total": 59,
+        "claude": 56
+      },
+      "photos": {
+        "candidates": 10,
+        "maps": 10,
+        "official": 0,
+        "rejectedByMachine": 0,
+        "used": 3,
+        "emptyFrames": 2
+      },
+      "check": {
+        "rewrote": true,
+        "shapeProblems": [],
+        "sentenceProblems": 0,
+        "facts": {
+          "total": 13,
+          "verified": 13
+        }
+      },
+      "storeId": "r756",
+      "onePage": "表に追加(/feature/<記事ID> は /restaurant/<店ID> へ転送)",
+      "storeBuilt": true,
+      "storeNote": null,
+      "urls": {
+        "article": "/feature/cafebarmiyami",
+        "shop": "/restaurant/r756"
+      },
+      "finishedAt": "2026-10-27T09:54:16.301Z"
+    },
+    "tri-gourmet-132": {
+      "key": "tri-gourmet-132",
+      "row": 132,
+      "name": "amusement flare BAR HINNA",
+      "vertical": "グルメ",
+      "articleId": "amusementflairBARHINNA",
+      "status": "失敗",
+      "stage": "claude",
+      "startedAt": "2026-10-27T09:08:28.000Z",
+      "seconds": {
+        "total": 0
+      },
+      "photos": {
+        "candidates": 10,
+        "maps": 10,
+        "official": 0,
+        "rejectedByMachine": 0
+      },
+      "reason": "書き手が失敗の出口で終了: 公式サイトの文字が取得できず、WebSearchでも店名・住所が一致する公開ページが見つからなかったため、書ける事実がGoogleマップの店名・住所・電話・営業時間・業種表示のみに限られ、記事本文(POINT 3〜5個分)を裏付けできる具体的な事実が不足している。"
+    },
+    "tri-gourmet-133": {
+      "key": "tri-gourmet-133",
+      "row": 133,
+      "name": "和醸良酒○たけ(まるたけ)",
+      "vertical": "グルメ",
+      "articleId": "和醸良酒〇たけ",
+      "status": "成功",
+      "stage": "done",
+      "startedAt": "2026-10-27T09:09:00.178Z",
+      "seconds": {
+        "total": 70,
+        "claude": 69
+      },
+      "photos": {
+        "candidates": 15,
+        "maps": 10,
+        "official": 5,
+        "rejectedByMachine": 13,
+        "used": 5,
+        "emptyFrames": 1
+      },
+      "check": {
+        "rewrote": true,
+        "shapeProblems": [],
+        "sentenceProblems": 0,
+        "facts": {
+          "total": 28,
+          "verified": 28
+        }
+      },
+      "storeId": "r753",
+      "onePage": "表に追加(/feature/<記事ID> は /restaurant/<店ID> へ転送)",
+      "storeBuilt": true,
+      "storeNote": null,
+      "urls": {
+        "article": "/feature/和醸良酒〇たけ",
+        "shop": "/restaurant/r753"
+      },
+      "finishedAt": "2026-10-27T09:44:43.610Z"
+    },
+    "tri-gourmet-139": {
+      "key": "tri-gourmet-139",
+      "row": 139,
+      "name": "MELUCAFE",
+      "vertical": "グルメ",
+      "articleId": "MELUCAFE",
+      "status": "成功",
+      "stage": "done",
+      "startedAt": "2026-10-27T09:09:43.223Z",
+      "seconds": {
+        "total": 1
+      },
+      "photos": {
+        "candidates": 25,
+        "maps": 10,
+        "official": 15,
+        "rejectedByMachine": 3,
+        "used": 4,
+        "emptyFrames": 1
+      },
+      "check": {
+        "rewrote": false,
+        "shapeProblems": [],
+        "sentenceProblems": 0,
+        "facts": {
+          "total": 11,
+          "verified": 11
+        }
+      },
+      "storeId": "r754",
+      "onePage": "表に追加(/feature/<記事ID> は /restaurant/<店ID> へ転送)",
+      "storeBuilt": true,
+      "storeNote": null,
+      "urls": {
+        "article": "/feature/MELUCAFE",
+        "shop": "/restaurant/r754"
+      },
+      "finishedAt": "2026-10-27T09:44:44.414Z"
+    },
+    "tri-gourmet-161": {
+      "key": "tri-gourmet-161",
+      "row": 161,
+      "name": "雅珈",
+      "vertical": "グルメ",
+      "articleId": "雅珈",
+      "status": "成功",
+      "stage": "done",
+      "startedAt": "2026-10-27T09:10:29.934Z",
+      "seconds": {
+        "total": 37,
+        "claude": 37
+      },
+      "photos": {
+        "candidates": 10,
+        "maps": 10,
+        "official": 0,
+        "rejectedByMachine": 0,
+        "used": 2,
+        "emptyFrames": 2
+      },
+      "check": {
+        "rewrote": true,
+        "shapeProblems": [],
+        "sentenceProblems": 0,
+        "facts": {
+          "total": 6,
+          "verified": 6
+        }
+      },
+      "storeId": "r755",
+      "onePage": "表に追加(/feature/<記事ID> は /restaurant/<店ID> へ転送)",
+      "storeBuilt": true,
+      "storeNote": null,
+      "urls": {
+        "article": "/feature/雅珈",
+        "shop": "/restaurant/r755"
+      },
+      "finishedAt": "2026-10-27T09:45:21.841Z"
+    },
+    "tri-activity-170": {
+      "key": "tri-activity-170",
+      "row": 170,
+      "name": "サニーディッパークライミング 玉城店",
+      "vertical": "アクティビティ",
+      "status": "成功",
+      "stage": "done",
+      "startedAt": "2026-10-27T09:11:01.829Z",
+      "seconds": {
+        "total": 0
+      },
+      "photos": {
+        "candidates": 13,
+        "maps": 10,
+        "official": 3,
+        "rejectedByMachine": 11,
+        "used": 12,
+        "emptyFrames": 1
+      },
+      "check": {
+        "rewrote": false,
+        "shapeProblems": [],
+        "sentenceProblems": 0,
+        "facts": {
+          "total": 21,
+          "verified": 21
+        }
+      },
+      "placeId": "ac0021",
+      "featureInGenerated": true,
+      "featureNote": null,
+      "urls": {
+        "shop": "/activity/shop/ac0021",
+        "article": "/activity/article/ac0021"
+      },
+      "finishedAt": "2026-10-27T09:45:22.236Z"
+    },
+    "tri-beauty-235": {
+      "key": "tri-beauty-235",
+      "row": 235,
+      "name": "ベニフィット",
+      "vertical": "ビューティー",
+      "status": "失敗",
+      "stage": "claude",
+      "startedAt": "2026-10-27T09:11:51.386Z",
+      "seconds": {
+        "total": 0
+      },
+      "photos": {
+        "candidates": 10,
+        "maps": 10,
+        "official": 0,
+        "rejectedByMachine": 0
+      },
+      "reason": "書き手が失敗の出口で終了: この店は美容室等への美容材料の卸売会社(美容卸)で、hair/nail/eyelash/esthetic/hair-removal/headspaのいずれの消費者向けサービス業種にも該当しないため、カテゴリを決められない"
+    },
+    "tri-life-237": {
+      "key": "tri-life-237",
+      "row": 237,
+      "name": "徳善寺 (横浜市)",
+      "vertical": "くらし",
+      "status": "成功",
+      "stage": "done",
+      "startedAt": "2026-10-27T09:12:25.192Z",
+      "seconds": {
+        "total": 0
+      },
+      "photos": {
+        "candidates": 10,
+        "maps": 10,
+        "official": 0,
+        "rejectedByMachine": 18,
+        "used": 10,
+        "emptyFrames": 0
+      },
+      "check": {
+        "rewrote": false,
+        "shapeProblems": [],
+        "sentenceProblems": 0,
+        "facts": {
+          "total": 8,
+          "verified": 8
+        }
+      },
+      "placeId": "li0055",
+      "featureInGenerated": false,
+      "featureNote": null,
+      "urls": {
+        "shop": "/life/shop/li0055",
+        "article": "/life/article/li0055"
+      },
+      "finishedAt": "2026-10-27T09:45:22.434Z"
+    },
+    "tri-life-238": {
+      "key": "tri-life-238",
+      "row": 238,
+      "name": "福応寺",
+      "vertical": "くらし",
+      "status": "失敗",
+      "stage": "claude",
+      "startedAt": "2026-10-27T09:13:06.830Z",
+      "seconds": {
+        "total": 0
+      },
+      "photos": {
+        "candidates": 10,
+        "maps": 10,
+        "official": 0,
+        "rejectedByMachine": 0
+      },
+      "reason": "書き手が失敗の出口で終了: 公式サイトなし、Google マップの情報も店名・住所・電話・業種表示(仏教寺院)のみで営業時間も無し。WebSearch で候補の寺院紹介ページ(ohako.osohshiki.jp)を見つけたが、WebFetch で4回試みても503で本文を取得できず、quote で裏付けできる由緒・アクセス等の事実が一切確保できなかったため、記事本文を書けるだけの事実がない。"
+    },
+    "tri-life-239": {
+      "key": "tri-life-239",
+      "row": 239,
+      "name": "二川伏見いなり",
+      "vertical": "くらし",
+      "status": "成功",
+      "stage": "done",
+      "startedAt": "2026-10-27T09:13:44.311Z",
+      "seconds": {
+        "total": 0
+      },
+      "photos": {
+        "candidates": 17,
+        "maps": 10,
+        "official": 7,
+        "rejectedByMachine": 11,
+        "used": 15,
+        "emptyFrames": 0
+      },
+      "check": {
+        "rewrote": false,
+        "shapeProblems": [],
+        "sentenceProblems": 0,
+        "facts": {
+          "total": 16,
+          "verified": 16
+        }
+      },
+      "placeId": "li0056",
+      "featureInGenerated": false,
+      "featureNote": null,
+      "urls": {
+        "shop": "/life/shop/li0056",
+        "article": "/life/article/li0056"
+      },
+      "finishedAt": "2026-10-27T09:45:22.634Z"
+    },
+    "tri-life-240": {
+      "key": "tri-life-240",
+      "row": 240,
+      "name": "大善寺",
+      "vertical": "くらし",
+      "status": "成功",
+      "stage": "done",
+      "startedAt": "2026-10-27T09:14:27.858Z",
+      "seconds": {
+        "total": 0
+      },
+      "photos": {
+        "candidates": 28,
+        "maps": 10,
+        "official": 18,
+        "rejectedByMachine": 0,
+        "used": 13,
+        "emptyFrames": 0
+      },
+      "check": {
+        "rewrote": false,
+        "shapeProblems": [],
+        "sentenceProblems": 0,
+        "facts": {
+          "total": 18,
+          "verified": 18
+        }
+      },
+      "placeId": "li0057",
+      "featureInGenerated": false,
+      "featureNote": null,
+      "urls": {
+        "shop": "/life/shop/li0057",
+        "article": "/life/article/li0057"
+      },
+      "finishedAt": "2026-10-27T09:45:22.830Z"
+    },
+    "tri-activity-241": {
+      "key": "tri-activity-241",
+      "row": 241,
+      "name": "ナシレラスター",
+      "vertical": "アクティビティ",
+      "status": "成功",
+      "stage": "done",
+      "startedAt": "2026-10-27T09:15:18.686Z",
+      "seconds": {
+        "total": 0
+      },
+      "photos": {
+        "candidates": 15,
+        "maps": 10,
+        "official": 5,
+        "rejectedByMachine": 4,
+        "used": 13,
+        "emptyFrames": 0
+      },
+      "check": {
+        "rewrote": false,
+        "shapeProblems": [],
+        "sentenceProblems": 0,
+        "facts": {
+          "total": 28,
+          "verified": 28
+        }
+      },
+      "placeId": "ac0022",
+      "featureInGenerated": true,
+      "featureNote": null,
+      "urls": {
+        "shop": "/activity/shop/ac0022",
+        "article": "/activity/article/ac0022"
+      },
+      "finishedAt": "2026-10-27T09:45:23.026Z"
+    },
+    "tri-activity-242": {
+      "key": "tri-activity-242",
+      "row": 242,
+      "name": "工房ヤマセン辻佛檀",
+      "vertical": "アクティビティ",
+      "status": "成功",
+      "stage": "done",
+      "startedAt": "2026-10-27T09:16:01.432Z",
+      "seconds": {
+        "total": 2
+      },
+      "photos": {
+        "candidates": 10,
+        "maps": 10,
+        "official": 0,
+        "rejectedByMachine": 0,
+        "used": 7,
+        "emptyFrames": 0
+      },
+      "check": {
+        "rewrote": false,
+        "shapeProblems": [],
+        "sentenceProblems": 0,
+        "facts": {
+          "total": 26,
+          "verified": 26
+        }
+      },
+      "placeId": "ac0026",
+      "featureInGenerated": true,
+      "featureNote": null,
+      "urls": {
+        "shop": "/activity/shop/ac0026",
+        "article": "/activity/article/ac0026"
+      },
+      "finishedAt": "2026-10-27T09:54:17.911Z"
+    },
+    "tri-activity-243": {
+      "key": "tri-activity-243",
+      "row": 243,
+      "name": "八ヶ岳アドベンチャーツアーズ",
+      "vertical": "アクティビティ",
+      "status": "成功",
+      "stage": "done",
+      "startedAt": "2026-10-27T09:16:35.463Z",
+      "seconds": {
+        "total": 0
+      },
+      "photos": {
+        "candidates": 25,
+        "maps": 10,
+        "official": 15,
+        "rejectedByMachine": 3,
+        "used": 15,
+        "emptyFrames": 0
+      },
+      "check": {
+        "rewrote": false,
+        "shapeProblems": [],
+        "sentenceProblems": 0,
+        "facts": {
+          "total": 35,
+          "verified": 35
+        }
+      },
+      "placeId": "ac0023",
+      "featureInGenerated": true,
+      "featureNote": null,
+      "urls": {
+        "shop": "/activity/shop/ac0023",
+        "article": "/activity/article/ac0023"
+      },
+      "finishedAt": "2026-10-27T09:45:23.233Z"
+    },
+    "tri-activity-244": {
+      "key": "tri-activity-244",
+      "row": 244,
+      "name": "丸和まくら工房/枕づくり体験",
+      "vertical": "アクティビティ",
+      "status": "成功",
+      "stage": "done",
+      "startedAt": "2026-10-27T09:17:27.707Z",
+      "seconds": {
+        "total": 0
+      },
+      "photos": {
+        "candidates": 21,
+        "maps": 10,
+        "official": 11,
+        "rejectedByMachine": 7,
+        "used": 16,
+        "emptyFrames": 0
+      },
+      "check": {
+        "rewrote": false,
+        "shapeProblems": [],
+        "sentenceProblems": 0,
+        "facts": {
+          "total": 15,
+          "verified": 15
+        }
+      },
+      "placeId": "ac0024",
+      "featureInGenerated": true,
+      "featureNote": null,
+      "urls": {
+        "shop": "/activity/shop/ac0024",
+        "article": "/activity/article/ac0024"
+      },
+      "finishedAt": "2026-10-27T09:45:23.433Z"
+    },
+    "tri-life-246": {
+      "key": "tri-life-246",
+      "row": 246,
+      "name": "舊城寺(旧城寺)",
+      "vertical": "くらし",
+      "status": "成功",
+      "stage": "done",
+      "startedAt": "2026-10-27T09:18:28.583Z",
+      "seconds": {
+        "total": 259,
+        "claude": 258
+      },
+      "photos": {
+        "candidates": 1,
+        "maps": 1,
+        "official": 0,
+        "rejectedByMachine": 0,
+        "used": 1,
+        "emptyFrames": 0
+      },
+      "check": {
+        "rewrote": true,
+        "shapeProblems": [],
+        "sentenceProblems": 0,
+        "facts": {
+          "total": 14,
+          "verified": 14
+        }
+      },
+      "placeId": "li0060",
+      "featureInGenerated": false,
+      "featureNote": null,
+      "urls": {
+        "shop": "/life/shop/li0060",
+        "article": "/life/article/li0060"
+      },
+      "finishedAt": "2026-10-27T09:58:36.694Z"
+    },
+    "tri-life-247": {
+      "key": "tri-life-247",
+      "row": 247,
+      "name": "藤心陶芸教室",
+      "vertical": "くらし",
+      "status": "成功",
+      "stage": "done",
+      "startedAt": "2026-10-27T09:18:59.730Z",
+      "seconds": {
+        "total": 85,
+        "claude": 84
+      },
+      "photos": {
+        "candidates": 11,
+        "maps": 5,
+        "official": 6,
+        "rejectedByMachine": 12,
+        "used": 9,
+        "emptyFrames": 0
+      },
+      "check": {
+        "rewrote": true,
+        "shapeProblems": [],
+        "sentenceProblems": 0,
+        "facts": {
+          "total": 14,
+          "verified": 14
+        }
+      },
+      "placeId": "li0059",
+      "featureInGenerated": false,
+      "featureNote": null,
+      "urls": {
+        "shop": "/life/shop/li0059",
+        "article": "/life/article/li0059"
+      },
+      "finishedAt": "2026-10-27T09:46:48.187Z"
+    },
+    "tri-activity-248": {
+      "key": "tri-activity-248",
+      "row": 248,
+      "name": "屋久島自然案内",
+      "vertical": "アクティビティ",
+      "status": "成功",
+      "stage": "done",
+      "startedAt": "2026-10-27T09:19:38.298Z",
+      "seconds": {
+        "total": 0
+      },
+      "photos": {
+        "candidates": 20,
+        "maps": 10,
+        "official": 10,
+        "rejectedByMachine": 8,
+        "used": 18,
+        "emptyFrames": 0
+      },
+      "check": {
+        "rewrote": false,
+        "shapeProblems": [],
+        "sentenceProblems": 0,
+        "facts": {
+          "total": 19,
+          "verified": 19
+        }
+      },
+      "placeId": "ac0025",
+      "featureInGenerated": true,
+      "featureNote": null,
+      "urls": {
+        "shop": "/activity/shop/ac0025",
+        "article": "/activity/article/ac0025"
+      },
+      "finishedAt": "2026-10-27T09:46:48.665Z"
+    },
+    "tri-life-245": {
+      "key": "tri-life-245",
+      "row": 245,
+      "name": "着付蓮花",
+      "vertical": "くらし",
+      "status": "成功",
+      "stage": "done",
+      "startedAt": "2026-10-27T09:22:48.438Z",
+      "seconds": {
+        "total": 0
+      },
+      "photos": {
+        "candidates": 10,
+        "maps": 10,
+        "official": 0,
+        "rejectedByMachine": 0,
+        "used": 5,
+        "emptyFrames": 0
+      },
+      "check": {
+        "rewrote": false,
+        "shapeProblems": [],
+        "sentenceProblems": 0,
+        "facts": {
+          "total": 4,
+          "verified": 4
+        }
+      },
+      "placeId": "li0058",
+      "featureInGenerated": false,
+      "featureNote": null,
+      "urls": {
+        "shop": "/life/shop/li0058",
+        "article": "/life/article/li0058"
+      },
+      "finishedAt": "2026-10-27T09:45:23.628Z"
     }
   }
 }

@@ -1,0 +1,40 @@
+{
+  "tab": "トリニティアポ",
+  "tabEn": "tri-life",
+  "row": 245,
+  "sheet": {
+    "name": "着付蓮花",
+    "address": "",
+    "url": "https://www.google.com/maps/search/?api=1&query=%E7%9D%80%E4%BB%98%E8%93%AE%E8%8A%B1%20070-8997-8265%20",
+    "type": "着物着付け",
+    "d1": "",
+    "d2": ""
+  },
+  "urlKind": "mapsApi",
+  "route": "第1段(verify-gbp.mjs)で確認済み",
+  "verdict": "一致",
+  "verdictReason": "手がかり: 店名＋電話。電話が一致／店名: exact(シート「着付蓮花」/ マップ「着付蓮花」)",
+  "place": {
+    "name": "着付蓮花",
+    "address": "秋田県秋田市大町２丁目４−２３",
+    "category": "着物販売店",
+    "lat": 39.719329,
+    "lng": 140.1155557,
+    "gbpUrl": "https://maps.google.com/?cid=5739332030974325762",
+    "phone": "070-8997-8265",
+    "website": "https://www.instagram.com/kitsuke_renka/",
+    "hours": {
+      "月": "10:00–18:00",
+      "火": "10:00–18:00",
+      "水": "10:00–18:00",
+      "木": "10:00–18:00",
+      "金": "10:00–18:00",
+      "土": "10:00–18:00",
+      "日": "10:00–18:00"
+    },
+    "reserveLinks": [],
+    "statusSignals": [],
+    "closedSignal": false
+  },
+  "fetchedAt": "2026-10-27T09:22:57.088Z"
+}

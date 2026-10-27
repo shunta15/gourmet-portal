@@ -21082,6 +21082,294 @@ export const ARTICLE_STORES: Restaurant[] = [
       "ランチ"
     ],
     "featureId": "呑処喰処泉"
+  },
+  {
+    "id": "r751",
+    "name": "台湾市場食堂美蘭",
+    "cuisine": "中華料理店",
+    "area": "石川県・金沢市",
+    "region": "ishikawa",
+    "shape": "square",
+    "image": "/restaurants/teleapo-台湾市場食堂美蘭/hero.jpg",
+    "heroImages": [
+      "/restaurants/teleapo-台湾市場食堂美蘭/hero.jpg",
+      "/restaurants/teleapo-台湾市場食堂美蘭/point1.jpg",
+      "/restaurants/teleapo-台湾市場食堂美蘭/point2.jpg",
+      "/restaurants/teleapo-台湾市場食堂美蘭/point3.jpg",
+      "/restaurants/teleapo-台湾市場食堂美蘭/point4.jpg"
+    ],
+    "gallery": [
+      "/restaurants/teleapo-台湾市場食堂美蘭/hero.jpg",
+      "/restaurants/teleapo-台湾市場食堂美蘭/point1.jpg",
+      "/restaurants/teleapo-台湾市場食堂美蘭/point2.jpg",
+      "/restaurants/teleapo-台湾市場食堂美蘭/point3.jpg",
+      "/restaurants/teleapo-台湾市場食堂美蘭/point4.jpg",
+      "/restaurants/teleapo-台湾市場食堂美蘭/point5.jpg"
+    ],
+    "desc": "石川県金沢市の中華料理店。",
+    "address": "石川県金沢市西念4丁目7-14",
+    "hours": "火〜金 11:00–14:00 / 土・日 11:00–15:00",
+    "closed": "月曜日",
+    "seats": "—（訪問前に公式確認）",
+    "nearest": "—",
+    "source": {
+      "label": "Google ビジネスプロフィール",
+      "url": "https://maps.google.com/?cid=16481208515846188634"
+    },
+    "body": [
+      "台湾市場食堂美蘭は、石川県金沢市にあるお店です。業態は「中華料理店」、所在地は石川県金沢市西念4丁目7-14です。マチノワ編集部の特集記事では、「日本人向けにアレンジしていない本場の台湾料理」・「油っこすぎず軽やかな後味」などを取り上げています。",
+      "営業時間は火〜金 11:00–14:00 / 土・日 11:00–15:00、定休日は月曜日です。営業時間は変わることがあるため、訪問前に公式サイトやSNS、お電話でご確認ください。"
+    ],
+    "highlights": [
+      "日本人向けにアレンジしていない本場の台湾料理",
+      "油っこすぎず軽やかな後味",
+      "手作り点心と多彩な台湾ビール",
+      "明るく開放感のある店内",
+      "西念の店舗、駐車場とカード利用に対応"
+    ],
+    "tags": [
+      "中華料理店",
+      "金沢市",
+      "ランチ"
+    ],
+    "featureId": "台湾市場食堂美蘭"
+  },
+  {
+    "id": "r752",
+    "name": "甘露肉汁",
+    "cuisine": "もつ鍋料理店",
+    "area": "神奈川県・横浜市中区",
+    "region": "kanagawa",
+    "shape": "square",
+    "image": "/restaurants/teleapo-甘露肉汁/hero.jpg",
+    "heroImages": [
+      "/restaurants/teleapo-甘露肉汁/hero.jpg",
+      "/restaurants/teleapo-甘露肉汁/point1.jpg",
+      "/restaurants/teleapo-甘露肉汁/point3.jpg"
+    ],
+    "gallery": [
+      "/restaurants/teleapo-甘露肉汁/hero.jpg",
+      "/restaurants/teleapo-甘露肉汁/point1.jpg",
+      "/restaurants/teleapo-甘露肉汁/point3.jpg"
+    ],
+    "desc": "神奈川県横浜市中区のもつ鍋料理店。",
+    "address": "神奈川県横浜市中区福富町仲通38-3 福仲ビル 2F",
+    "hours": "月 19:00–00:00 / 火〜土 00:00–07:00, 19:00–00:00 / 日 00:00–07:00",
+    "closed": "なし",
+    "seats": "—（訪問前に公式確認）",
+    "nearest": "—",
+    "phone": "045-309-7199",
+    "source": {
+      "label": "Google ビジネスプロフィール",
+      "url": "https://maps.google.com/?cid=3708346908153394643"
+    },
+    "body": [
+      "甘露肉汁は、神奈川県横浜市中区にあるお店です。業態は「もつ鍋料理店」、所在地は神奈川県横浜市中区福富町仲通38-3 福仲ビル 2Fです。マチノワ編集部の特集記事では、「もつ鍋料理店としての営業」・「深夜から早朝にかけての営業時間」などを取り上げています。",
+      "営業時間は月 19:00–00:00 / 火〜土 00:00–07:00, 19:00–00:00 / 日 00:00–07:00で、定休日はありません。営業時間は変わることがあるため、訪問前に公式サイトやSNS、お電話でご確認ください。"
+    ],
+    "highlights": [
+      "もつ鍋料理店としての営業",
+      "深夜から早朝にかけての営業時間",
+      "福富町仲通のビル2階"
+    ],
+    "tags": [
+      "もつ鍋料理店",
+      "中区",
+      "深夜営業"
+    ],
+    "featureId": "甘露肉汁"
+  },
+  {
+    "id": "r753",
+    "name": "和醸良酒 〇たけ",
+    "cuisine": "居酒屋",
+    "area": "宮城県・仙台市青葉区",
+    "region": "miyagi",
+    "shape": "square",
+    "image": "/restaurants/teleapo-和醸良酒〇たけ/hero.jpg",
+    "heroImages": [
+      "/restaurants/teleapo-和醸良酒〇たけ/hero.jpg",
+      "/restaurants/teleapo-和醸良酒〇たけ/point1.jpg",
+      "/restaurants/teleapo-和醸良酒〇たけ/point3.jpg",
+      "/restaurants/teleapo-和醸良酒〇たけ/point4.jpg",
+      "/restaurants/teleapo-和醸良酒〇たけ/point5.jpg"
+    ],
+    "gallery": [
+      "/restaurants/teleapo-和醸良酒〇たけ/hero.jpg",
+      "/restaurants/teleapo-和醸良酒〇たけ/point1.jpg",
+      "/restaurants/teleapo-和醸良酒〇たけ/point3.jpg",
+      "/restaurants/teleapo-和醸良酒〇たけ/point4.jpg",
+      "/restaurants/teleapo-和醸良酒〇たけ/point5.jpg"
+    ],
+    "desc": "宮城県仙台市青葉区の居酒屋。最寄りは大町西公園駅 東1番出口より徒歩3分。",
+    "address": "宮城県仙台市青葉区大町2丁目4-1 グランドソレイユ大町 1F",
+    "hours": "月〜土 17:00–00:00 / 日 15:00–22:00",
+    "closed": "なし",
+    "seats": "テーブル席・お座敷席 計36席",
+    "nearest": "大町西公園駅 東1番出口より徒歩3分",
+    "phone": "022-266-5541",
+    "source": {
+      "label": "Google ビジネスプロフィール",
+      "url": "https://maps.google.com/?cid=15386181217083429347"
+    },
+    "body": [
+      "和醸良酒 〇たけは、宮城県仙台市青葉区にあるお店です。業態は「居酒屋」、所在地は宮城県仙台市青葉区大町2丁目4-1 グランドソレイユ大町 1F、最寄りは大町西公園駅 東1番出口より徒歩3分です。マチノワ編集部の特集記事では、「造り酒屋出身の店主が選ぶ200銘柄以上の日本酒」・「長期熟成や常温放置、外気晒しといった独自の手法」などを取り上げています。",
+      "営業時間は月〜土 17:00–00:00 / 日 15:00–22:00で、定休日はありません。席はテーブル席・お座敷席 計36席。営業時間は変わることがあるため、訪問前に公式サイトやSNS、お電話でご確認ください。"
+    ],
+    "highlights": [
+      "造り酒屋出身の店主が選ぶ200銘柄以上の日本酒",
+      "長期熟成や常温放置、外気晒しといった独自の手法",
+      "宮城の旬菜と仙台名物の牛タンを使う酒肴",
+      "土間風の1階と屋形船をイメージした2階の店内",
+      "大町西公園駅徒歩3分、複数路線からのアクセス"
+    ],
+    "tags": [
+      "居酒屋",
+      "青葉区",
+      "大町西公園駅",
+      "宴会",
+      "個室",
+      "深夜営業"
+    ],
+    "featureId": "和醸良酒〇たけ"
+  },
+  {
+    "id": "r754",
+    "name": "MELU CAFE",
+    "cuisine": "カフェ・喫茶",
+    "area": "神奈川県・横浜市南区",
+    "region": "kanagawa",
+    "shape": "square",
+    "image": "/restaurants/teleapo-MELUCAFE/hero.jpg",
+    "heroImages": [
+      "/restaurants/teleapo-MELUCAFE/hero.jpg",
+      "/restaurants/teleapo-MELUCAFE/point1.jpg",
+      "/restaurants/teleapo-MELUCAFE/point2.jpg",
+      "/restaurants/teleapo-MELUCAFE/point3.jpg"
+    ],
+    "gallery": [
+      "/restaurants/teleapo-MELUCAFE/hero.jpg",
+      "/restaurants/teleapo-MELUCAFE/point1.jpg",
+      "/restaurants/teleapo-MELUCAFE/point2.jpg",
+      "/restaurants/teleapo-MELUCAFE/point3.jpg"
+    ],
+    "desc": "神奈川県横浜市南区のカフェ・喫茶。",
+    "address": "神奈川県横浜市南区中島町4丁目89 ルーセントビル",
+    "hours": "月〜金 08:30–20:30 / 土 08:30–20:00 / 日 11:00–20:00",
+    "closed": "なし",
+    "seats": "—（訪問前に公式確認）",
+    "nearest": "—",
+    "source": {
+      "label": "Google ビジネスプロフィール",
+      "url": "https://maps.google.com/?cid=17478748512467998491"
+    },
+    "body": [
+      "MELU CAFEは、神奈川県横浜市南区にあるお店です。業態は「カフェ・喫茶」、所在地は神奈川県横浜市南区中島町4丁目89 ルーセントビルです。マチノワ編集部の特集記事では、「50年以上続く老舗の喫茶メニュー」・「1階禁煙席・2階喫煙席の2フロア」などを取り上げています。",
+      "営業時間は月〜金 08:30–20:30 / 土 08:30–20:00 / 日 11:00–20:00で、定休日はありません。営業時間は変わることがあるため、訪問前に公式サイトやSNS、お電話でご確認ください。"
+    ],
+    "highlights": [
+      "50年以上続く老舗の喫茶メニュー",
+      "1階禁煙席・2階喫煙席の2フロア",
+      "弘明寺かんのん通り商店街の中の立地",
+      "曜日ごとに異なる営業時間"
+    ],
+    "tags": [
+      "カフェ・喫茶",
+      "南区",
+      "ランチ"
+    ],
+    "featureId": "MELUCAFE"
+  },
+  {
+    "id": "r755",
+    "name": "雅珈",
+    "cuisine": "コーヒーショップ・喫茶店",
+    "area": "愛媛県・松山市",
+    "region": "ehime",
+    "shape": "square",
+    "image": "/restaurants/teleapo-雅珈/hero.jpg",
+    "heroImages": [
+      "/restaurants/teleapo-雅珈/hero.jpg",
+      "/restaurants/teleapo-雅珈/point1.jpg"
+    ],
+    "gallery": [
+      "/restaurants/teleapo-雅珈/hero.jpg",
+      "/restaurants/teleapo-雅珈/point1.jpg"
+    ],
+    "desc": "愛媛県松山市のコーヒーショップ・喫茶店。",
+    "address": "愛媛県松山市南高井町1694-2",
+    "hours": "月〜土 09:00–19:30",
+    "closed": "日曜日",
+    "seats": "—（訪問前に公式確認）",
+    "nearest": "—",
+    "phone": "089-970-2002",
+    "source": {
+      "label": "Google ビジネスプロフィール",
+      "url": "https://maps.google.com/?cid=14181060755063353605"
+    },
+    "body": [
+      "雅珈は、愛媛県松山市にあるお店です。業態は「コーヒーショップ・喫茶店」、所在地は愛媛県松山市南高井町1694-2です。マチノワ編集部の特集記事では、「コーヒーショップ・喫茶店としての業種」・「月曜から土曜、9時から19時30分までの営業時間」などを取り上げています。",
+      "営業時間は月〜土 09:00–19:30、定休日は日曜日です。営業時間は変わることがあるため、訪問前に公式サイトやSNS、お電話でご確認ください。"
+    ],
+    "highlights": [
+      "コーヒーショップ・喫茶店としての業種",
+      "月曜から土曜、9時から19時30分までの営業時間",
+      "電話番号とGoogleマップでの所在地"
+    ],
+    "tags": [
+      "コーヒーショップ・喫茶店",
+      "松山市",
+      "ランチ"
+    ],
+    "featureId": "雅珈"
+  },
+  {
+    "id": "r756",
+    "name": "cafebar miyami",
+    "cuisine": "かき氷、カフェ、居酒屋",
+    "area": "東京都・台東区",
+    "region": "tokyo",
+    "shape": "square",
+    "image": "/restaurants/teleapo-cafebarmiyami/hero.jpg",
+    "heroImages": [
+      "/restaurants/teleapo-cafebarmiyami/hero.jpg",
+      "/restaurants/teleapo-cafebarmiyami/point1.jpg",
+      "/restaurants/teleapo-cafebarmiyami/point3.jpg"
+    ],
+    "gallery": [
+      "/restaurants/teleapo-cafebarmiyami/hero.jpg",
+      "/restaurants/teleapo-cafebarmiyami/point1.jpg",
+      "/restaurants/teleapo-cafebarmiyami/point3.jpg"
+    ],
+    "desc": "東京都台東区のかき氷、カフェ、居酒屋。最寄りはつくばエクスプレス浅草駅A2出口より徒歩約4分。",
+    "address": "東京都台東区西浅草2丁目16-7 鞠子ビル 101",
+    "hours": "月〜水・土・日 08:00–11:00, 12:00–18:00 / 金 08:00–11:00, 12:00–16:00",
+    "closed": "木曜日",
+    "seats": "総席数11席(カウンター7席・テーブル4席)",
+    "nearest": "つくばエクスプレス浅草駅A2出口より徒歩約4分",
+    "phone": "080-6934-7732",
+    "source": {
+      "label": "Google ビジネスプロフィール",
+      "url": "https://maps.google.com/?cid=3954027337332115507"
+    },
+    "body": [
+      "cafebar miyamiは、東京都台東区にあるお店です。業態は「かき氷、カフェ、居酒屋」、所在地は東京都台東区西浅草2丁目16-7 鞠子ビル 101、最寄りはつくばエクスプレス浅草駅A2出口より徒歩約4分です。マチノワ編集部の特集記事では、「かき氷を軸にしたメニュー」・「ケフタグラタンやチキンタジン鍋などの創作料理」などを取り上げています。",
+      "営業時間は月〜水・土・日 08:00–11:00, 12:00–18:00 / 金 08:00–11:00, 12:00–16:00、定休日は木曜日です。席は総席数11席(カウンター7席・テーブル4席)。営業時間は変わることがあるため、訪問前に公式サイトやSNS、お電話でご確認ください。"
+    ],
+    "highlights": [
+      "かき氷を軸にしたメニュー",
+      "ケフタグラタンやチキンタジン鍋などの創作料理",
+      "カウンター7席とテーブル4席の店内",
+      "つくばエクスプレス浅草駅から徒歩4分のアクセス"
+    ],
+    "tags": [
+      "かき氷、カフェ、居酒屋",
+      "カフェ・喫茶",
+      "台東区",
+      "エクスプレス浅草駅",
+      "ランチ"
+    ],
+    "featureId": "cafebarmiyami"
   }
 ];
 
@@ -21533,7 +21821,13 @@ export const ARTICLE_STORE_FEATURE_IDS: Record<string, string> = {
   "r747": "玉ゆら",
   "r748": "PetitParc",
   "r749": "ヴァレルンガ",
-  "r750": "呑処喰処泉"
+  "r750": "呑処喰処泉",
+  "r751": "台湾市場食堂美蘭",
+  "r752": "甘露肉汁",
+  "r753": "和醸良酒〇たけ",
+  "r754": "MELUCAFE",
+  "r755": "雅珈",
+  "r756": "cafebarmiyami"
 };
 
 /** 特集記事ID → 店舗ID */
@@ -21984,5 +22278,11 @@ export const ARTICLE_STORE_ID_BY_FEATURE: Record<string, string> = {
   "玉ゆら": "r747",
   "PetitParc": "r748",
   "ヴァレルンガ": "r749",
-  "呑処喰処泉": "r750"
+  "呑処喰処泉": "r750",
+  "台湾市場食堂美蘭": "r751",
+  "甘露肉汁": "r752",
+  "和醸良酒〇たけ": "r753",
+  "MELUCAFE": "r754",
+  "雅珈": "r755",
+  "cafebarmiyami": "r756"
 };

@@ -1,0 +1,149 @@
+{
+  "key": "tri-activity-244",
+  "headline": "京都府亀岡市篠町、寝具メーカーの工房で枕を手作りする体験。45分で完成し、10種類以上の素材から選べる",
+  "lede": "亀岡市にある「丸和まくら工房/枕づくり体験」です。寝具メーカーの専用工房で、プロのスタッフのサポートを受けながら、45分で自分だけの枕を手作りします。素材は10種類以上から選べ、手ぶらで参加できます。",
+  "sections": [
+    {
+      "heading": "体験の内容",
+      "body": "寝具メーカーの専用工房で、プロのスタッフのサポートを受けながら枕を手作りする体験です。45分で完成し、10種類以上の素材から香りや硬さ、素材感を選んで組み合わせます。サイズはレギュラーとラージの2種類から選べます。手ぶらで来店でき、完成した枕は専用ケースに入れて持ち帰れるほか、ホテルへの配送や海外への直送にも対応しています。まくら手作り体験に加えて、茶道・折り紙・和菓子作りなど、日本文化を体験できるオプションも用意しています。"
+    },
+    {
+      "heading": "体験の流れ",
+      "body": "体験はオンライン予約システムで申し込みます。予約には5〜10分かかり、来店後にスタッフから体験の流れの説明を受けます(10〜15分)。制作時間は20〜40分で、初めての方でも安心して利用できます。完成までの所要時間は合わせて5分ほどで、完成した枕はその日のうちに専用ケースに入れて持ち帰れます。"
+    },
+    {
+      "heading": "アクセスと送迎",
+      "body": "体験の場所は、JR馬堀駅から車で5分、亀岡コミュニティバスの篠村八幡宮から徒歩3分です。平日限定でJR馬堀駅までの送迎があり、4名まで利用できます。送迎を希望する場合は、電話での連絡が必要です。"
+    }
+  ],
+  "menus": [
+    {
+      "name": "まくら手作り体験 レギュラーサイズ"
+    },
+    {
+      "name": "まくら手作り体験 ラージサイズ"
+    },
+    {
+      "name": "茶道"
+    },
+    {
+      "name": "折り紙"
+    },
+    {
+      "name": "和菓子作り"
+    }
+  ],
+  "tags": [
+    {
+      "tag": "手ぶらでOK",
+      "factIndex": 3
+    },
+    {
+      "tag": "初心者歓迎",
+      "factIndex": 9
+    }
+  ],
+  "facts": [
+    {
+      "claim": "寝具メーカーの専用工房で枕を手作りする体験",
+      "source": "https://maruwa-makuraworkshop.com/",
+      "quote": "寝具メーカーの専用工房で",
+      "checkedAt": "2026-10-27"
+    },
+    {
+      "claim": "体験は45分で完成する",
+      "source": "https://maruwa-makuraworkshop.com/",
+      "quote": "45分で完成!",
+      "checkedAt": "2026-10-27"
+    },
+    {
+      "claim": "10種類以上の素材から選べる",
+      "source": "https://maruwa-makuraworkshop.com/",
+      "quote": "10種類以上の素材から好みの組み合わせ",
+      "checkedAt": "2026-10-27"
+    },
+    {
+      "claim": "手ぶらで来店できる",
+      "source": "https://maruwa-makuraworkshop.com/",
+      "quote": "手ぶら観光OK",
+      "checkedAt": "2026-10-27"
+    },
+    {
+      "claim": "完成した枕はホテルへの配送や海外への直送に対応する",
+      "source": "https://maruwa-makuraworkshop.com/",
+      "quote": "ホテルへのお届けや海外への直送にも対応しています",
+      "checkedAt": "2026-10-27"
+    },
+    {
+      "claim": "予約はオンライン予約システムを利用する",
+      "source": "https://maruwa-makuraworkshop.com/",
+      "quote": "オンライン予約システムを利用して",
+      "checkedAt": "2026-10-27"
+    },
+    {
+      "claim": "予約には5〜10分かかる",
+      "source": "https://maruwa-makuraworkshop.com/",
+      "quote": "所要時間: 5～10分",
+      "checkedAt": "2026-10-27"
+    },
+    {
+      "claim": "来店後の説明には10〜15分かかる",
+      "source": "https://maruwa-makuraworkshop.com/",
+      "quote": "所要時間: 10～15分",
+      "checkedAt": "2026-10-27"
+    },
+    {
+      "claim": "制作時間は20〜40分",
+      "source": "https://maruwa-makuraworkshop.com/",
+      "quote": "所要時間: 20～40分",
+      "checkedAt": "2026-10-27"
+    },
+    {
+      "claim": "初めての方でも安心して利用できる",
+      "source": "https://maruwa-makuraworkshop.com/",
+      "quote": "初めての方でも安心してご利用いただけます",
+      "checkedAt": "2026-10-27"
+    },
+    {
+      "claim": "完成(オプション)の所要時間は5分",
+      "source": "https://maruwa-makuraworkshop.com/",
+      "quote": "所要時間: 5分",
+      "checkedAt": "2026-10-27"
+    },
+    {
+      "claim": "日本文化を体験できるオプションがある",
+      "source": "https://maruwa-makuraworkshop.com/",
+      "quote": "日本文化を体験できる",
+      "checkedAt": "2026-10-27"
+    },
+    {
+      "claim": "JR馬堀駅から車で5分",
+      "source": "https://maruwa-makuraworkshop.com/",
+      "quote": "JR馬堀駅から車で5分",
+      "checkedAt": "2026-10-27"
+    },
+    {
+      "claim": "篠村八幡宮から徒歩3分",
+      "source": "https://maruwa-makuraworkshop.com/",
+      "quote": "篠村八幡宮から徒歩3分",
+      "checkedAt": "2026-10-27"
+    },
+    {
+      "claim": "平日限定でJR馬堀駅までの送迎がある(4名まで)",
+      "source": "https://maruwa-makuraworkshop.com/",
+      "quote": "JR馬堀駅までの送迎を承ります",
+      "checkedAt": "2026-10-27"
+    }
+  ],
+  "sources": [
+    {
+      "label": "公式サイト",
+      "url": "https://maruwa-makuraworkshop.com/"
+    },
+    {
+      "label": "Google マップ",
+      "url": "https://maps.google.com/?cid=10162595614009284132"
+    }
+  ],
+  "notes": "automation/v2/write.mjs が 2026-10-27 に claude -p --model sonnet で作成。事実の裏取り: 15/15 件(quote が出どころにあるもの)。裏取りに通らなかった facts は載せていない。"
+}

@@ -475,6 +475,12 @@ export const ONE_PAGE_SHOP_OF_FEATURE: Readonly<Record<string, string>> = {
   "和食みよし": "r746", // 和食 みよし
   "PetitParc": "r748", // Petit Parc
   "呑処喰処泉": "r750", // 呑処喰処 泉
+  "台湾市場食堂美蘭": "r751", // 台湾市場食堂美蘭
+  "甘露肉汁": "r752", // 甘露肉汁
+  "和醸良酒〇たけ": "r753", // 和醸良酒 〇たけ
+  "MELUCAFE": "r754", // MELU CAFE
+  "雅珈": "r755", // 雅珈
+  "cafebarmiyami": "r756", // cafebar miyami
 };
 
 const NFC = (s: string) => s.normalize("NFC");

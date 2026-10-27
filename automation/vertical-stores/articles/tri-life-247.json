@@ -1,0 +1,162 @@
+{
+  "key": "tri-life-247",
+  "headline": "柏市大津ケ丘にある陶芸教室。1日体験コースでは電動ロクロと手びねりを選べる。",
+  "lede": "柏市にある「藤心陶芸センター」です。大津ケ丘にあり、月曜日から日曜日まで10時から15時に開講しています。マンツーマンの指導で、1ヶ月に2回から4回通う継続コースのほか、1日体験コースと半日体験コースもあります。",
+  "sections": [
+    {
+      "heading": "場所と開講時間",
+      "body": "住所は千葉県柏市大津ケ丘３丁目５−１ ５番地1号棟102、電話は04-7137-9922です。東武野田線増尾駅から車で約7分の場所にあり、駐車場があります。開講は月曜日から日曜日までの週7日で、時間は10時から15時です。"
+    },
+    {
+      "heading": "講習の内容",
+      "body": "ベテランの講師陣がマンツーマンで指導する陶芸教室です。1ヶ月に2回から4回通う継続コースのほか、電動ロクロと手びねりから選べる1日体験コースと半日体験コースがあります。体験コースは小学校低学年から参加できます。"
+    },
+    {
+      "heading": "焼成と工房",
+      "body": "工房では電気窯・ガス窯・薪窯を使った酸化焼成や還元焼成、塩釉焼成を請け負っています。塩釉は薪窯で1250度から1300度の高温焼成中に塩を投入し、ガラス状の膜をつくる技法です。薪窯のレンタルもおこなっています。"
+    }
+  ],
+  "menus": [
+    {
+      "name": "1ヶ月4回制"
+    },
+    {
+      "name": "1ヶ月2回制"
+    },
+    {
+      "name": "1ヶ月3回制"
+    },
+    {
+      "name": "1日体験コース"
+    },
+    {
+      "name": "半日体験コース"
+    },
+    {
+      "name": "団体コース"
+    }
+  ],
+  "tags": [
+    {
+      "tag": "体験あり",
+      "factIndex": 8
+    },
+    {
+      "tag": "子ども向け",
+      "factIndex": 10
+    },
+    {
+      "tag": "駐車場あり",
+      "factIndex": 3
+    }
+  ],
+  "facts": [
+    {
+      "claim": "住所は千葉県柏市大津ケ丘３丁目５−１ ５番地1号棟102",
+      "source": "https://maps.google.com/?cid=3782250707216948295",
+      "quote": "柏市大津ケ丘３丁目５−１ ５番地1 号棟102",
+      "checkedAt": "2026-10-27"
+    },
+    {
+      "claim": "電話番号は04-7137-9922",
+      "source": "https://maps.google.com/?cid=3782250707216948295",
+      "quote": "04-7137-9922",
+      "checkedAt": "2026-10-27"
+    },
+    {
+      "claim": "東武野田線増尾駅から車で約7分の場所にある",
+      "source": "https://www.tougei-school.jp/",
+      "quote": "東武野田線増尾駅より車で約7分",
+      "checkedAt": "2026-10-27"
+    },
+    {
+      "claim": "駐車場がある",
+      "source": "https://www.tougei-school.jp/",
+      "quote": "駐車場",
+      "checkedAt": "2026-10-27"
+    },
+    {
+      "claim": "営業は10時から15時",
+      "source": "https://maps.google.com/?cid=3782250707216948295",
+      "quote": "10:00–15:00",
+      "checkedAt": "2026-10-27"
+    },
+    {
+      "claim": "月曜日から日曜日まで開講している",
+      "source": "https://www.tougei-school.jp/course",
+      "quote": "月曜日～日曜日",
+      "checkedAt": "2026-10-27"
+    },
+    {
+      "claim": "講師陣がマンツーマンで指導する",
+      "source": "https://www.tougei-school.jp/course",
+      "quote": "マンツーマンで丁寧に指導いたします",
+      "checkedAt": "2026-10-27"
+    },
+    {
+      "claim": "1ヶ月に2回から4回通う継続コースがある",
+      "source": "https://www.tougei-school.jp/course",
+      "quote": "1ヶ月4回制",
+      "checkedAt": "2026-10-27"
+    },
+    {
+      "claim": "1日体験コースでは電動ロクロと手びねりから選べる",
+      "source": "https://www.tougei-school.jp/course",
+      "quote": "ロクロコース・手びねりコース",
+      "checkedAt": "2026-10-27"
+    },
+    {
+      "claim": "半日体験コースがある",
+      "source": "https://www.tougei-school.jp/course",
+      "quote": "■半日体験コース",
+      "checkedAt": "2026-10-27"
+    },
+    {
+      "claim": "体験コースは小学校低学年から参加できる",
+      "source": "https://www.tougei-school.jp/course",
+      "quote": "（小学低学年生から）",
+      "checkedAt": "2026-10-27"
+    },
+    {
+      "claim": "電気窯・ガス窯・薪窯を使った焼成作業を請け負っている",
+      "source": "https://www.tougei-school.jp/workshop",
+      "quote": "電気窯・ガス窯・薪窯を使った酸化と還元・塩釉",
+      "checkedAt": "2026-10-27"
+    },
+    {
+      "claim": "塩釉は薪窯で1250度から1300度の高温焼成中に塩を投入してつくる技法",
+      "source": "https://www.tougei-school.jp/about",
+      "quote": "薪窯で高温焼成中（1250℃～1300℃）に火口から塩",
+      "checkedAt": "2026-10-27"
+    },
+    {
+      "claim": "薪窯のレンタルをおこなっている",
+      "source": "https://www.tougei-school.jp/about",
+      "quote": "薪窯のレンタルもいたしております",
+      "checkedAt": "2026-10-27"
+    }
+  ],
+  "sources": [
+    {
+      "label": "公式サイト",
+      "url": "https://www.tougei-school.jp/"
+    },
+    {
+      "label": "公式サイト(講習案内)",
+      "url": "https://www.tougei-school.jp/course"
+    },
+    {
+      "label": "公式サイト(工房案内)",
+      "url": "https://www.tougei-school.jp/workshop"
+    },
+    {
+      "label": "公式サイト(工房について)",
+      "url": "https://www.tougei-school.jp/about"
+    },
+    {
+      "label": "Google マップ",
+      "url": "https://maps.google.com/?cid=3782250707216948295"
+    }
+  ],
+  "notes": "automation/v2/write.mjs が 2026-10-27 に claude -p --model sonnet で作成。事実の裏取り: 14/14 件(quote が出どころにあるもの)。裏取りに通らなかった facts は載せていない。"
+}

@@ -1,0 +1,260 @@
+{
+  "key": "tri-activity-241",
+  "headline": "新潟市中央区川岸町、信濃川沿いから出船する釣り船・遊覧船クルージングの店。プランは「遊覧」「釣り」「遠征便」の3つ",
+  "lede": "新潟市にある「ナシレラスター」です。信濃川沿いから出船し、新潟市の中心地からアクセスがよい水上タクシーです。プランは、行きたい場所へ向かう「遊覧」、自分の好きな場所で釣る「釣り」、沿岸以外のポイントへ向かう「遠征便」の3つです。",
+  "sections": [
+    {
+      "heading": "プランの内容",
+      "body": "プランは「遊覧」「釣り」「遠征便」の3つです。遊覧は行きたい時間に行きたい場所へ向かうクルージングで、釣りは自分の好きな場所で釣ってみたいという要望に応える内容です。遠征便は、沿岸以外のポイントへ連れて行くプランです。道具のレンタルもあるため、手ぶらで釣りを楽しめます。"
+    },
+    {
+      "heading": "出港場所とアクセス",
+      "body": "出港場所は新潟市信濃川左岸、白山神社やすらぎ堤の近くです。もう一つの場所として、万代テラスハジマリヒロバ（右岸）での乗下船や途中送迎もできます。新潟市の中心地を流れる信濃川沿いからの出船のため、中心地からのアクセスがよい水上タクシーです。"
+    },
+    {
+      "heading": "船と設備",
+      "body": "船は最大乗船人数12人乗り、全長約10m、幅約3mで、安全のため乗船人数は最大11人までとしています。水洗トイレ、手洗い洗浄水タンク、キャビン内仮眠休憩室があり、魚探・レーダー・GPSなどの装備を備えています。船内でWi-Fiも使えます。遊漁船と一般不定期航路事業・旅客船の登録を受けています。"
+    },
+    {
+      "heading": "対応と予約",
+      "body": "ペットは全プランで乗船できます。車椅子の方には事前連絡で車椅子固定台等を準備し、聴覚障がいの方には手話・筆談、視覚障がいの方には点字の案内で対応します。英語表記の案内もあります。予約は7日以上前までが基本ですが、暇つぶしプランは当日の連絡で釣り体験やクルージングができます。子どもの乗船には保護者の同伴が必要です。"
+    }
+  ],
+  "menus": [
+    {
+      "name": "遊覧"
+    },
+    {
+      "name": "釣り"
+    },
+    {
+      "name": "遠征便"
+    },
+    {
+      "name": "手ぶら釣り体験"
+    },
+    {
+      "name": "暇つぶしプラン"
+    },
+    {
+      "name": "川釣りプラン"
+    },
+    {
+      "name": "水中撮影"
+    },
+    {
+      "name": "落水体験"
+    }
+  ],
+  "tags": [
+    {
+      "tag": "手ぶらでOK",
+      "factIndex": 7
+    },
+    {
+      "tag": "初心者歓迎",
+      "factIndex": 23
+    },
+    {
+      "tag": "子連れ",
+      "factIndex": 26
+    },
+    {
+      "tag": "駐車場あり",
+      "factIndex": 25
+    }
+  ],
+  "facts": [
+    {
+      "claim": "釣船チャーターとしてGoogleマップに表示されている",
+      "source": "https://maps.google.com/?cid=4779570644850174289",
+      "quote": "釣船チャーター",
+      "checkedAt": "2026-10-27"
+    },
+    {
+      "claim": "新潟市西港から出船の釣り船",
+      "source": "https://nashirera-star.jp/",
+      "quote": "新潟市西港から出船の釣り船",
+      "checkedAt": "2026-10-27"
+    },
+    {
+      "claim": "信濃川沿いから出船している",
+      "source": "https://nashirera-star.jp/aboutus/",
+      "quote": "信濃川沿いから出船していますので",
+      "checkedAt": "2026-10-27"
+    },
+    {
+      "claim": "新潟市の中心地からアクセスがよい水上タクシー",
+      "source": "https://nashirera-star.jp/aboutus/",
+      "quote": "新潟市の中心地からアクセスがとてもよい水上タクシーです",
+      "checkedAt": "2026-10-27"
+    },
+    {
+      "claim": "プランは遊覧・釣り・遠征便の3つがある",
+      "source": "https://nashirera-star.jp/plan/",
+      "quote": "行きたい時間に行きたい場所へ。気軽にクルージング",
+      "checkedAt": "2026-10-27"
+    },
+    {
+      "claim": "釣りは自分の好きな場所で釣るという要望に応える",
+      "source": "https://nashirera-star.jp/plan/",
+      "quote": "自分の好きな場所で釣ってみたい",
+      "checkedAt": "2026-10-27"
+    },
+    {
+      "claim": "遠征便は沿岸以外のポイントへ連れて行く",
+      "source": "https://nashirera-star.jp/plan/",
+      "quote": "沿岸以外のポイントへお連れします",
+      "checkedAt": "2026-10-27"
+    },
+    {
+      "claim": "手ぶらで釣りを楽しめる",
+      "source": "https://nashirera-star.jp/",
+      "quote": "手ぶらで釣りを楽しめる",
+      "checkedAt": "2026-10-27"
+    },
+    {
+      "claim": "最大乗船人数12人乗り、全長約10m、幅約3m",
+      "source": "https://nashirera-star.jp/aboutus/",
+      "quote": "最大乗船人数１２人乗り",
+      "checkedAt": "2026-10-27"
+    },
+    {
+      "claim": "安全のため乗船人数は最大11人まで",
+      "source": "https://nashirera-star.jp/aboutus/",
+      "quote": "乗船人数は最大１１人までにしております",
+      "checkedAt": "2026-10-27"
+    },
+    {
+      "claim": "水洗トイレ、手洗い洗浄水タンク、キャビン内仮眠休憩室がある",
+      "source": "https://nashirera-star.jp/aboutus/",
+      "quote": "水洗トイレ、手洗い洗浄水タンク、キャビン内仮眠休憩室",
+      "checkedAt": "2026-10-27"
+    },
+    {
+      "claim": "魚探・レーダー・GPSなどの装備がある",
+      "source": "https://nashirera-star.jp/aboutus/",
+      "quote": "魚探、レーダー、GPS",
+      "checkedAt": "2026-10-27"
+    },
+    {
+      "claim": "船内でWi-Fiが使える",
+      "source": "https://nashirera-star.jp/",
+      "quote": "Wi-Fiでも船内で使えます",
+      "checkedAt": "2026-10-27"
+    },
+    {
+      "claim": "出港場所は白山神社やすらぎ堤の近く",
+      "source": "https://nashirera-star.jp/aboutus/",
+      "quote": "白山神社 やすらぎ堤",
+      "checkedAt": "2026-10-27"
+    },
+    {
+      "claim": "万代テラスハジマリヒロバでも出港・帰港・途中送迎ができる",
+      "source": "https://nashirera-star.jp/aboutus/",
+      "quote": "万代テラスハジマリヒロバ（右岸）は出港、帰港、途中",
+      "checkedAt": "2026-10-27"
+    },
+    {
+      "claim": "ペットの乗船は全プランで可能",
+      "source": "https://nashirera-star.jp/price/",
+      "quote": "ペットの乗船も全プラン可能です",
+      "checkedAt": "2026-10-27"
+    },
+    {
+      "claim": "車椅子の方には車椅子固定台等を準備する",
+      "source": "https://nashirera-star.jp/aboutus/",
+      "quote": "車椅子固定台等の準備致します",
+      "checkedAt": "2026-10-27"
+    },
+    {
+      "claim": "聴覚障がい者には手話・筆談で対応する",
+      "source": "https://nashirera-star.jp/aboutus/",
+      "quote": "手話、筆談での対応も可能です",
+      "checkedAt": "2026-10-27"
+    },
+    {
+      "claim": "英語表記案内がある",
+      "source": "https://nashirera-star.jp/aboutus/",
+      "quote": "英語表記案内ございます",
+      "checkedAt": "2026-10-27"
+    },
+    {
+      "claim": "漁船総合保険・船客傷害賠償保険に加入している",
+      "source": "https://nashirera-star.jp/aboutus/",
+      "quote": "漁船総合保険（遊漁船）・船客傷害賠償保険",
+      "checkedAt": "2026-10-27"
+    },
+    {
+      "claim": "遊漁船・一般不定期航路事業の登録を受けている",
+      "source": "https://nashirera-star.jp/aboutus/",
+      "quote": "遊漁船（新潟県庁 農林水産部水産課）",
+      "checkedAt": "2026-10-27"
+    },
+    {
+      "claim": "予約は7日以上前までが基本",
+      "source": "https://nashirera-star.jp/",
+      "quote": "ご予約は７日以上前までにお願いしております",
+      "checkedAt": "2026-10-27"
+    },
+    {
+      "claim": "暇つぶしプランは当日連絡で釣り体験やクルージングができる",
+      "source": "https://nashirera-star.jp/price/",
+      "quote": "当日、思いたったら、連絡いただければ釣り体験",
+      "checkedAt": "2026-10-27"
+    },
+    {
+      "claim": "初心者、子ども、カップル向けのプランがある",
+      "source": "https://nashirera-star.jp/",
+      "quote": "初心者、子ども、カップルプランあります",
+      "checkedAt": "2026-10-27"
+    },
+    {
+      "claim": "親子の釣り・クルージング体験には優遇がある",
+      "source": "https://nashirera-star.jp/",
+      "quote": "親子の釣り、クルージング体験待遇",
+      "checkedAt": "2026-10-27"
+    },
+    {
+      "claim": "係留場所前に有料駐車場がある",
+      "source": "https://nashirera-star.jp/",
+      "quote": "係留場所前の有料駐車場です",
+      "checkedAt": "2026-10-27"
+    },
+    {
+      "claim": "子どもの乗船には保護者の同伴が必要",
+      "source": "https://nashirera-star.jp/price/",
+      "quote": "お子様の乗船は保護者の同伴をお願いしております",
+      "checkedAt": "2026-10-27"
+    },
+    {
+      "claim": "営業時間は毎日24時間",
+      "source": "https://maps.google.com/?cid=4779570644850174289",
+      "quote": "24時間営業",
+      "checkedAt": "2026-10-27"
+    }
+  ],
+  "sources": [
+    {
+      "label": "公式サイト",
+      "url": "https://nashirera-star.jp/"
+    },
+    {
+      "label": "公式サイト(プラン)",
+      "url": "https://nashirera-star.jp/plan/"
+    },
+    {
+      "label": "公式サイト(料金)",
+      "url": "https://nashirera-star.jp/price/"
+    },
+    {
+      "label": "公式サイト(ナシレラスターについて)",
+      "url": "https://nashirera-star.jp/aboutus/"
+    },
+    {
+      "label": "Google マップ",
+      "url": "https://maps.google.com/?cid=4779570644850174289"
+    }
+  ],
+  "notes": "automation/v2/write.mjs が 2026-10-27 に claude -p --model sonnet で作成。事実の裏取り: 28/28 件(quote が出どころにあるもの)。裏取りに通らなかった facts は載せていない。"
+}

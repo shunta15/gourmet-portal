@@ -1,0 +1,78 @@
+{
+  "key": "tri-life-237",
+  "headline": "横浜市瀬谷区本郷三丁目にある仏教寺院。瀬谷八福神のひとつで、毘沙門天をまつる。",
+  "lede": "横浜市にある「徳善寺」です。瀬谷駅から徒歩10分の場所にあり、瀬谷八福神のひとつとして毘沙門天をまつっています。",
+  "sections": [
+    {
+      "heading": "アクセス",
+      "body": "瀬谷駅から徒歩10分の場所にあります。写真撮影には事前の確認が必要です。"
+    },
+    {
+      "heading": "瀬谷八福神と毘沙門天",
+      "body": "徳善寺は瀬谷八福神のひとつで、毘沙門天をまつっています。毘沙門天は財富、福徳、消災の神とされます。瀬谷八福神は昭和59年正月から始まり、七福神に達磨大師を加えた全国でも珍しい八福神です。"
+    }
+  ],
+  "menus": [],
+  "tags": [],
+  "facts": [
+    {
+      "claim": "業種の表示は仏教寺院です。",
+      "source": "https://maps.google.com/?cid=548383050747907751",
+      "quote": "仏教寺院",
+      "checkedAt": "2026-10-27"
+    },
+    {
+      "claim": "瀬谷駅から徒歩10分の場所にあります。",
+      "source": "https://www.city.yokohama.lg.jp/seya/shokai/bunkazai/seyahatihukujin.html",
+      "quote": "瀬谷駅から徒歩10分",
+      "checkedAt": "2026-10-27"
+    },
+    {
+      "claim": "住所は本郷三丁目36－6です。",
+      "source": "https://www.city.yokohama.lg.jp/seya/shokai/bunkazai/seyahatihukujin.html",
+      "quote": "本郷三丁目36－6",
+      "checkedAt": "2026-10-27"
+    },
+    {
+      "claim": "写真撮影を行う際は、各寺院への事前確認が必要です。",
+      "source": "https://www.city.yokohama.lg.jp/seya/shokai/bunkazai/seyahatihukujin.html",
+      "quote": "寺院の写真撮影を行う際は、各寺院にご確認いただきますよう",
+      "checkedAt": "2026-10-27"
+    },
+    {
+      "claim": "徳善寺は瀬谷八福神のひとつで、毘沙門天をまつっています。",
+      "source": "https://www.city.yokohama.lg.jp/seya/shokai/bunkazai/seyahatihukujin.html",
+      "quote": "毘沙門天",
+      "checkedAt": "2026-10-27"
+    },
+    {
+      "claim": "毘沙門天は財富、福徳、消災の神とされます。",
+      "source": "https://www.city.yokohama.lg.jp/seya/shokai/bunkazai/seyahatihukujin.html",
+      "quote": "財富、福徳、消災の神",
+      "checkedAt": "2026-10-27"
+    },
+    {
+      "claim": "瀬谷八福神は昭和59年正月から始まりました。",
+      "source": "https://www.city.yokohama.lg.jp/seya/shokai/bunkazai/seyahatihukujin.html",
+      "quote": "昭和59年正月より、七福神に達磨大師を加えて",
+      "checkedAt": "2026-10-27"
+    },
+    {
+      "claim": "瀬谷八福神は七福神に達磨大師を加えた全国でも珍しい八福神です。",
+      "source": "https://www.city.yokohama.lg.jp/seya/shokai/bunkazai/seyahatihukujin.html",
+      "quote": "全国でも珍しい「瀬谷八福神」となった",
+      "checkedAt": "2026-10-27"
+    }
+  ],
+  "sources": [
+    {
+      "label": "公式サイト",
+      "url": "https://www.city.yokohama.lg.jp/seya/shokai/bunkazai/seyahatihukujin.html"
+    },
+    {
+      "label": "Google マップ",
+      "url": "https://maps.google.com/?cid=548383050747907751"
+    }
+  ],
+  "notes": "automation/v2/write.mjs が 2026-10-27 に claude -p --model sonnet で作成。事実の裏取り: 8/8 件(quote が出どころにあるもの)。裏取りに通らなかった facts は載せていない。"
+}

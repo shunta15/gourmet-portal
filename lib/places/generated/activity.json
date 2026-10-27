@@ -2753,6 +2753,1157 @@
         ],
         "checkedAt": "2026-10-26"
       }
+    },
+    {
+      "id": "ac0021",
+      "vertical": "activity",
+      "category": "mountain-sky",
+      "name": "サニーディッパークライミング 玉城店",
+      "pref": "mie",
+      "cityName": "玉城町",
+      "address": "三重県度会郡玉城町井倉115-2",
+      "lat": 34.5118997,
+      "lng": 136.6427435,
+      "hours": "火-金 14:00 - 22:30 / 土日 11:00 - 20:00",
+      "holidays": "月曜",
+      "phone": "0596-65-6392",
+      "url": "http://sunnydipper.com/",
+      "website": "http://sunnydipper.com/",
+      "mapUrl": "https://maps.google.com/?cid=11141207762476098701",
+      "image": "/_portal/vshops/tri-activity-170/g01.jpg",
+      "images": [
+        "/_portal/vshops/tri-activity-170/g01.jpg",
+        "/_portal/vshops/tri-activity-170/g02.jpg",
+        "/_portal/vshops/tri-activity-170/g03.jpg",
+        "/_portal/vshops/tri-activity-170/g04.jpg",
+        "/_portal/vshops/tri-activity-170/g05.jpg",
+        "/_portal/vshops/tri-activity-170/g06.jpg",
+        "/_portal/vshops/tri-activity-170/g07.jpg",
+        "/_portal/vshops/tri-activity-170/g08.jpg",
+        "/_portal/vshops/tri-activity-170/g09.jpg",
+        "/_portal/vshops/tri-activity-170/g10.jpg",
+        "/_portal/vshops/tri-activity-170/s01.jpg",
+        "/_portal/vshops/tri-activity-170/s12.jpg"
+      ],
+      "photos": [
+        {
+          "path": "/_portal/vshops/tri-activity-170/g01.jpg",
+          "what": "カラフルなホールドが並ぶボルダリングウォール",
+          "kind": "common",
+          "width": 640,
+          "height": 743
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-170/g02.jpg",
+          "what": "壁を登る人とボルダリングウォール",
+          "kind": "common",
+          "width": 675,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-170/g03.jpg",
+          "what": "倉庫のようなジム内のボルダリングウォール",
+          "kind": "common",
+          "width": 640,
+          "height": 461
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-170/g04.jpg",
+          "what": "複数のクライミングウォールがあるジム内",
+          "kind": "common",
+          "width": 1200,
+          "height": 798
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-170/g05.jpg",
+          "what": "木製の台に取り付けられたムーンボード",
+          "kind": "common",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-170/g06.jpg",
+          "what": "暗い色の壁を登る人",
+          "kind": "common",
+          "width": 675,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-170/g07.jpg",
+          "what": "ロープを使って壁を登る人",
+          "kind": "common",
+          "width": 638,
+          "height": 831
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-170/g08.jpg",
+          "what": "マットの上に立つ人とクライミングウォール",
+          "kind": "common",
+          "width": 675,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-170/g09.jpg",
+          "what": "赤い壁を登る人",
+          "kind": "common",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-170/g10.jpg",
+          "what": "天井の高いクライミングウォールとジム内の様子",
+          "kind": "common",
+          "width": 640,
+          "height": 388
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-170/s01.jpg",
+          "what": "マットが敷かれたボルダリングエリアとジム内の様子",
+          "kind": "common",
+          "width": 780,
+          "height": 520
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-170/s12.jpg",
+          "what": "天井の高い壁を登る人とジム内の様子",
+          "kind": "common",
+          "width": 1216,
+          "height": 1280
+        }
+      ],
+      "tags": [
+        "子連れ",
+        "初心者歓迎",
+        "手ぶらでOK",
+        "雨の日",
+        "駐車場あり"
+      ],
+      "article": {
+        "headline": "三重県度会郡玉城町にある屋内クライミングジム。ボルダリングウォール10面と、三重県内で唯一のリードクライミングウォールを備える",
+        "lede": "度会郡玉城町にある「サニーディッパークライミング 玉城店」です。屋内のボルダリングウォールが10面あり、三重県内で唯一のリードクライミングウォールを併設しています。予約なしの来店や見学もできます。",
+        "sections": [
+          {
+            "heading": "体験できること",
+            "body": "ボルダリングはロープなどの道具を使わずに、高さ5m以下の壁をクライミングシューズと滑り止めのチョークで登ります。リードクライミングはボルダリングウォールより高さがあり、ロープを使って安全を確保しながら基本的に2人1組で登ります。ボルダリングウォールは10面、三重県内で唯一のリードクライミングウォールも併設しています。屋内の施設のため、天候を気にせず楽しめます。"
+          },
+          {
+            "heading": "持ち物と初めての方へ",
+            "body": "用意するものは動きやすい服装と靴下です。クライミングシューズを履くため、靴下は厚手ではなく薄手のものを使います。クライミングシューズや滑り止めのチョークなどはレンタルできます。クライミング初めての方やクライミングを始めて間もない方へのルール・アドバイスも行われています。"
+          },
+          {
+            "heading": "集合場所とアクセス",
+            "body": "住所は三重県度会郡玉城町井倉115-2、電話は0596-65-6392です。伊勢自動車道の玉城ICから約13分で、駐車場は約30台あります。予約なしの来店や見学もできます。"
+          },
+          {
+            "heading": "営業時間とキッズスクール",
+            "body": "営業は火曜から金曜が14:00から22:30、土曜と日曜が11:00から20:00で、月曜は定休日です。小学生の利用には保護者、又は責任者の付き添いが必要で、年齢の制限はありません。毎週土曜日には小学1年から6年を対象にしたキッズスクールが開催されています。"
+          }
+        ],
+        "menus": [
+          {
+            "name": "スタートパック"
+          },
+          {
+            "name": "キッズスクール"
+          },
+          {
+            "name": "ビレイ講習"
+          }
+        ],
+        "sources": [
+          {
+            "label": "公式サイト(トップ)",
+            "url": "https://sunnydipper.com/"
+          },
+          {
+            "label": "公式サイト(料金・営業時間)",
+            "url": "https://sunnydipper.com/%e3%81%94%e5%88%a9%e7%94%a8%e6%96%99%e9%87%91%e3%83%bb%e5%96%b6%e6%a5%ad%e6%99%82%e9%96%93/"
+          },
+          {
+            "label": "公式サイト(アクセス)",
+            "url": "https://sunnydipper.com/%e3%82%a2%e3%82%af%e3%82%bb%e3%82%b9/"
+          },
+          {
+            "label": "公式サイト(初めての方へ)",
+            "url": "https://sunnydipper.com/%e5%88%9d%e3%82%81%e3%81%a6%e3%81%ae%e6%96%b9%e3%81%b8/"
+          },
+          {
+            "label": "公式サイト(キッズスクール)",
+            "url": "https://sunnydipper.com/%e3%82%ad%e3%83%83%e3%82%ba%e3%82%b9%e3%82%af%e3%83%bc%e3%83%ab/"
+          },
+          {
+            "label": "Google マップ",
+            "url": "https://maps.google.com/?cid=11141207762476098701"
+          }
+        ],
+        "checkedAt": "2026-10-27"
+      }
+    },
+    {
+      "id": "ac0022",
+      "vertical": "activity",
+      "category": "sea-river",
+      "name": "ナシレラスター 釣り船 遊覧船クルージング",
+      "pref": "niigata",
+      "cityName": "新潟市中央区",
+      "address": "新潟県新潟市中央区川岸町2",
+      "lat": 37.9097574,
+      "lng": 139.0353153,
+      "phone": "080-3246-5385",
+      "url": "https://nashirera-star.jp/",
+      "website": "https://nashirera-star.jp/",
+      "mapUrl": "https://maps.google.com/?cid=4779570644850174289",
+      "image": "/_portal/vshops/tri-activity-241/g01.jpg",
+      "images": [
+        "/_portal/vshops/tri-activity-241/g01.jpg",
+        "/_portal/vshops/tri-activity-241/g02.jpg",
+        "/_portal/vshops/tri-activity-241/g03.jpg",
+        "/_portal/vshops/tri-activity-241/g04.jpg",
+        "/_portal/vshops/tri-activity-241/g05.jpg",
+        "/_portal/vshops/tri-activity-241/g06.jpg",
+        "/_portal/vshops/tri-activity-241/g07.jpg",
+        "/_portal/vshops/tri-activity-241/g08.jpg",
+        "/_portal/vshops/tri-activity-241/g09.jpg",
+        "/_portal/vshops/tri-activity-241/s01.jpg",
+        "/_portal/vshops/tri-activity-241/s02.jpg",
+        "/_portal/vshops/tri-activity-241/s04.jpg",
+        "/_portal/vshops/tri-activity-241/s08.jpg"
+      ],
+      "photos": [
+        {
+          "path": "/_portal/vshops/tri-activity-241/g01.jpg",
+          "what": "海上に浮かぶ船の上で釣り竿を持つ人物",
+          "width": 1031,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-241/g02.jpg",
+          "what": "海上で小型の釣り用ボートに乗る人物",
+          "width": 1200,
+          "height": 675
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-241/g03.jpg",
+          "what": "船上で釣った魚を持つ二人の人物",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-241/g04.jpg",
+          "what": "船上から見える橋と街並み",
+          "kind": "view",
+          "width": 1200,
+          "height": 675
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-241/g05.jpg",
+          "what": "船上で釣り竿を持つ親子",
+          "width": 1200,
+          "height": 1047
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-241/g06.jpg",
+          "what": "航行する船が立てる白い航跡と海",
+          "kind": "view",
+          "width": 1200,
+          "height": 675
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-241/g07.jpg",
+          "what": "船上で大きな魚を持つ人物",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-241/g08.jpg",
+          "what": "海上で小型の釣り用ボートに乗る人物と遠くの陸地",
+          "kind": "view",
+          "width": 1200,
+          "height": 675
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-241/g09.jpg",
+          "what": "川岸に乗り上げた小型艇と奥に見える橋",
+          "kind": "view",
+          "width": 1200,
+          "height": 641
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-241/s01.jpg",
+          "what": "操縦席越しに見える新潟市街地と橋",
+          "kind": "view",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-241/s02.jpg",
+          "what": "川面に明かりが映る夜景",
+          "kind": "view",
+          "width": 722,
+          "height": 542
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-241/s04.jpg",
+          "what": "広がる海と空の景色",
+          "kind": "view",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-241/s08.jpg",
+          "what": "操縦席から見る日の出のシルエット",
+          "kind": "view",
+          "width": 768,
+          "height": 576
+        }
+      ],
+      "tags": [
+        "手ぶらでOK",
+        "初心者歓迎",
+        "子連れ",
+        "駐車場あり"
+      ],
+      "article": {
+        "headline": "新潟市中央区川岸町、信濃川沿いから出船する釣り船・遊覧船クルージングの店。プランは「遊覧」「釣り」「遠征便」の3つ",
+        "lede": "新潟市にある「ナシレラスター」です。信濃川沿いから出船し、新潟市の中心地からアクセスがよい水上タクシーです。プランは、行きたい場所へ向かう「遊覧」、自分の好きな場所で釣る「釣り」、沿岸以外のポイントへ向かう「遠征便」の3つです。",
+        "sections": [
+          {
+            "heading": "プランの内容",
+            "body": "プランは「遊覧」「釣り」「遠征便」の3つです。遊覧は行きたい時間に行きたい場所へ向かうクルージングで、釣りは自分の好きな場所で釣ってみたいという要望に応える内容です。遠征便は、沿岸以外のポイントへ連れて行くプランです。道具のレンタルもあるため、手ぶらで釣りを楽しめます。"
+          },
+          {
+            "heading": "出港場所とアクセス",
+            "body": "出港場所は新潟市信濃川左岸、白山神社やすらぎ堤の近くです。もう一つの場所として、万代テラスハジマリヒロバ（右岸）での乗下船や途中送迎もできます。新潟市の中心地を流れる信濃川沿いからの出船のため、中心地からのアクセスがよい水上タクシーです。"
+          },
+          {
+            "heading": "船と設備",
+            "body": "船は最大乗船人数12人乗り、全長約10m、幅約3mで、安全のため乗船人数は最大11人までとしています。水洗トイレ、手洗い洗浄水タンク、キャビン内仮眠休憩室があり、魚探・レーダー・GPSなどの装備を備えています。船内でWi-Fiも使えます。遊漁船と一般不定期航路事業・旅客船の登録を受けています。"
+          },
+          {
+            "heading": "対応と予約",
+            "body": "ペットは全プランで乗船できます。車椅子の方には事前連絡で車椅子固定台等を準備し、聴覚障がいの方には手話・筆談、視覚障がいの方には点字の案内で対応します。英語表記の案内もあります。予約は7日以上前までが基本ですが、暇つぶしプランは当日の連絡で釣り体験やクルージングができます。子どもの乗船には保護者の同伴が必要です。"
+          }
+        ],
+        "menus": [
+          {
+            "name": "遊覧"
+          },
+          {
+            "name": "釣り"
+          },
+          {
+            "name": "遠征便"
+          },
+          {
+            "name": "手ぶら釣り体験"
+          },
+          {
+            "name": "暇つぶしプラン"
+          },
+          {
+            "name": "川釣りプラン"
+          },
+          {
+            "name": "水中撮影"
+          },
+          {
+            "name": "落水体験"
+          }
+        ],
+        "sources": [
+          {
+            "label": "公式サイト",
+            "url": "https://nashirera-star.jp/"
+          },
+          {
+            "label": "公式サイト(プラン)",
+            "url": "https://nashirera-star.jp/plan/"
+          },
+          {
+            "label": "公式サイト(料金)",
+            "url": "https://nashirera-star.jp/price/"
+          },
+          {
+            "label": "公式サイト(ナシレラスターについて)",
+            "url": "https://nashirera-star.jp/aboutus/"
+          },
+          {
+            "label": "Google マップ",
+            "url": "https://maps.google.com/?cid=4779570644850174289"
+          }
+        ],
+        "checkedAt": "2026-10-27"
+      }
+    },
+    {
+      "id": "ac0023",
+      "vertical": "activity",
+      "category": "sea-river",
+      "name": "八ヶ岳アドベンチャーツアーズ",
+      "pref": "nagano",
+      "cityName": "茅野市",
+      "address": "長野県茅野市北山3419-1",
+      "lat": 36.1048167,
+      "lng": 138.2394161,
+      "hours": "毎日 08:00 - 20:00",
+      "phone": "0266-68-1007",
+      "url": "https://www.yatsugatakeadventure.com/",
+      "website": "https://www.yatsugatakeadventure.com/",
+      "mapUrl": "https://maps.google.com/?cid=4639685202121787001",
+      "image": "/_portal/vshops/tri-activity-243/g01.jpg",
+      "images": [
+        "/_portal/vshops/tri-activity-243/g01.jpg",
+        "/_portal/vshops/tri-activity-243/g03.jpg",
+        "/_portal/vshops/tri-activity-243/g04.jpg",
+        "/_portal/vshops/tri-activity-243/g05.jpg",
+        "/_portal/vshops/tri-activity-243/g06.jpg",
+        "/_portal/vshops/tri-activity-243/g07.jpg",
+        "/_portal/vshops/tri-activity-243/g08.jpg",
+        "/_portal/vshops/tri-activity-243/g09.jpg",
+        "/_portal/vshops/tri-activity-243/g10.jpg",
+        "/_portal/vshops/tri-activity-243/s01.jpg",
+        "/_portal/vshops/tri-activity-243/s06.jpg",
+        "/_portal/vshops/tri-activity-243/s09.jpg",
+        "/_portal/vshops/tri-activity-243/s11.jpg",
+        "/_portal/vshops/tri-activity-243/s12.jpg",
+        "/_portal/vshops/tri-activity-243/s13.jpg"
+      ],
+      "photos": [
+        {
+          "path": "/_portal/vshops/tri-activity-243/g01.jpg",
+          "what": "親子で赤いタンデムカヌーに乗り水上を進む様子",
+          "width": 1200,
+          "height": 800
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-243/g03.jpg",
+          "what": "木々の間から見える、カヌーを漕ぐ人の様子",
+          "width": 1200,
+          "height": 800
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-243/g04.jpg",
+          "what": "赤いカヌーに乗る人と奥に建物が並ぶ湖畔",
+          "kind": "view",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-243/g05.jpg",
+          "what": "山を背景に数艘のカヌーが浮かぶ湖",
+          "kind": "view",
+          "width": 1200,
+          "height": 801
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-243/g06.jpg",
+          "what": "紅葉した木々のそばでカヌーを漕ぐ人たち",
+          "kind": "view",
+          "width": 1200,
+          "height": 801
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-243/g07.jpg",
+          "what": "黄色いカヌーにパドルと犬が乗る様子",
+          "width": 1200,
+          "height": 800
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-243/g08.jpg",
+          "what": "桟橋の上に並べられたカラフルなカヌー",
+          "kind": "common",
+          "width": 1200,
+          "height": 675
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-243/g09.jpg",
+          "what": "電動アシスト自転車と高原を眺める人の後ろ姿",
+          "kind": "view",
+          "width": 1000,
+          "height": 667
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-243/g10.jpg",
+          "what": "桟橋にずらりと並ぶ色とりどりのカヌー",
+          "kind": "common",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-243/s01.jpg",
+          "what": "山に囲まれた湖でSUPに立つ2人",
+          "width": 1000,
+          "height": 750
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-243/s06.jpg",
+          "what": "桟橋に置かれた緑色のSUPボードとバッグ",
+          "kind": "common",
+          "width": 768,
+          "height": 576
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-243/s09.jpg",
+          "what": "穏やかな湖面に浮かぶ数艘のカヌー",
+          "kind": "view",
+          "width": 1095,
+          "height": 675
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-243/s11.jpg",
+          "what": "山を望む湖畔の静かな風景",
+          "kind": "view",
+          "width": 1095,
+          "height": 675
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-243/s12.jpg",
+          "what": "山を背に湖上を進む人たちの後ろ姿",
+          "kind": "view",
+          "width": 1280,
+          "height": 498
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-243/s13.jpg",
+          "what": "並んでカヌーを漕ぐ2人と山の稜線",
+          "width": 750,
+          "height": 480
+        }
+      ],
+      "tags": [
+        "子連れ",
+        "初心者歓迎",
+        "手ぶらでOK",
+        "雨の日",
+        "駐車場あり"
+      ],
+      "article": {
+        "headline": "長野県茅野市、白樺湖のほとりでカヌーとSUPの体験ツアーを行う。カヌーは3歳から参加でき、愛犬と一緒に乗れるプランもある",
+        "lede": "長野県茅野市にある「八ヶ岳アドベンチャーツアーズ」です。白樺湖を舞台にカヌーとSUPの体験ツアーを行っています。カヌーは3歳から参加でき、愛犬と一緒に乗れるプランや、ガイドなしで楽しめるレンタルSUPも用意されています。",
+        "sections": [
+          {
+            "heading": "体験の内容",
+            "body": "カヌー体験は所要約120分で、開催は10時と13時、7〜8月は15時にも行われます。特別なウェアがなくても普段着のまま参加でき、3歳から家族で乗れます。愛犬と一緒に乗れるカヌーのプランもあります。SUP体験は7・9・10月は白樺湖、8月は女神湖で開催され、濡れてもよい服装と着替えの用意が要ります。ガイドなしで楽しめるレンタルSUPは10時30分と13時30分に利用でき、電動アシスト付きのe-バイクで白樺湖周辺を巡るツアーもあります。"
+          },
+          {
+            "heading": "初めての方へ",
+            "body": "カヌー・SUPともに初心者の方も安心して参加できます。ガイドが漕ぎ方から丁寧にサポートし、経験豊富なガイドが事前に安全講習を行います。使用する装備は専門機関の基準を満たしたものを採用しています。受付と安全説明は英語でもサポートできます。"
+          },
+          {
+            "heading": "集合場所とアクセス",
+            "body": "住所は長野県茅野市北山3419-1ですが、白樺湖は住所検索が正確に反映されない場合があります。集合は白樺湖畔の桟橋付近で、到着後にガイドが声をかけます。駐車はカヌーハウス両側30mの湖側にある公共駐車場を利用でき、トイレは西へ300m先の大駐車場にあります。個人のSUPやカヌーの持ち込みでの利用はできません。"
+          },
+          {
+            "heading": "雨天時の扱い",
+            "body": "基本的には雨が降っていても開催します。ツアー開始の時間に雨が降っている場合は、その場でキャンセルしてもキャンセル料はかかりません。カヌーは濡れにくいため、スニーカーなど普段の靴でも参加できます。"
+          }
+        ],
+        "menus": [
+          {
+            "name": "カヌー体験"
+          },
+          {
+            "name": "SUP体験"
+          },
+          {
+            "name": "ワンちゃんとカヌー"
+          },
+          {
+            "name": "白樺湖レンタルSUP"
+          },
+          {
+            "name": "e-バイクツアー"
+          }
+        ],
+        "sources": [
+          {
+            "label": "公式サイト",
+            "url": "https://www.yatsugatakeadventure.com/"
+          },
+          {
+            "label": "公式サイト(わたしたちについて)",
+            "url": "https://www.yatsugatakeadventure.com/about/"
+          },
+          {
+            "label": "公式サイト(アクセス)",
+            "url": "https://www.yatsugatakeadventure.com/access/"
+          },
+          {
+            "label": "Google マップ",
+            "url": "https://maps.google.com/?cid=4639685202121787001"
+          }
+        ],
+        "checkedAt": "2026-10-27"
+      }
+    },
+    {
+      "id": "ac0024",
+      "vertical": "activity",
+      "category": "craft",
+      "name": "丸和まくら工房/枕づくり体験",
+      "pref": "kyoto",
+      "cityName": "亀岡市",
+      "address": "京都府亀岡市篠町篠新畑田45-4",
+      "lat": 35.0005498,
+      "lng": 135.6103847,
+      "hours": "毎日 10:00 - 17:00",
+      "phone": "080-3475-8891",
+      "url": "https://maruwa-makuraworkshop.com/",
+      "website": "https://maruwa-makuraworkshop.com/",
+      "mapUrl": "https://maps.google.com/?cid=10162595614009284132",
+      "image": "/_portal/vshops/tri-activity-244/g01.jpg",
+      "images": [
+        "/_portal/vshops/tri-activity-244/g01.jpg",
+        "/_portal/vshops/tri-activity-244/g02.jpg",
+        "/_portal/vshops/tri-activity-244/g03.jpg",
+        "/_portal/vshops/tri-activity-244/g04.jpg",
+        "/_portal/vshops/tri-activity-244/g05.jpg",
+        "/_portal/vshops/tri-activity-244/g06.jpg",
+        "/_portal/vshops/tri-activity-244/g07.jpg",
+        "/_portal/vshops/tri-activity-244/g08.jpg",
+        "/_portal/vshops/tri-activity-244/g10.jpg",
+        "/_portal/vshops/tri-activity-244/s01.jpg",
+        "/_portal/vshops/tri-activity-244/s02.jpg",
+        "/_portal/vshops/tri-activity-244/s04.jpg",
+        "/_portal/vshops/tri-activity-244/s05.jpg",
+        "/_portal/vshops/tri-activity-244/s06.jpg",
+        "/_portal/vshops/tri-activity-244/s10.jpg",
+        "/_portal/vshops/tri-activity-244/s11.jpg"
+      ],
+      "photos": [
+        {
+          "path": "/_portal/vshops/tri-activity-244/g01.jpg",
+          "what": "入口の扉の前に立つ「まくら工房」の案内看板",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-244/g02.jpg",
+          "what": "作業台で向かい合い、枕作りの作業をする二人",
+          "kind": "common",
+          "width": 675,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-244/g03.jpg",
+          "what": "畳敷きの部屋に並ぶ、素材を入れた透明な箱",
+          "kind": "common",
+          "width": 1200,
+          "height": 901
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-244/g04.jpg",
+          "what": "白いテーブルと木箱に入った詰め物の素材",
+          "kind": "common",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-244/g05.jpg",
+          "what": "素材の入った箱が並ぶ作業用のテーブル",
+          "kind": "common",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-244/g06.jpg",
+          "what": "完成した白い生地の枕が二つ並んでいる",
+          "kind": "meal",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-244/g07.jpg",
+          "what": "木目の外壁に「まくら工房」の看板がある入口",
+          "kind": "exterior",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-244/g08.jpg",
+          "what": "詰め物の素材が入った木箱が棚に並んでいる",
+          "kind": "common",
+          "width": 675,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-244/g10.jpg",
+          "what": "作業台で詰め物を枕に詰める複数の人たち",
+          "kind": "common",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-244/s01.jpg",
+          "what": "スタッフと客が向かい合い枕を作る様子",
+          "kind": "common",
+          "width": 1280,
+          "height": 941
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-244/s02.jpg",
+          "what": "色とりどりの詰め物の素材が木箱に入っている",
+          "kind": "common",
+          "width": 854,
+          "height": 1280
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-244/s04.jpg",
+          "what": "緑・グレー・ピンクの配色の完成した枕",
+          "kind": "meal",
+          "width": 1000,
+          "height": 600
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-244/s05.jpg",
+          "what": "ピンク・グレー・緑の配色の完成した枕",
+          "kind": "meal",
+          "width": 1000,
+          "height": 600
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-244/s06.jpg",
+          "what": "包まれた枕が四つ、巾着袋に入っている",
+          "kind": "meal",
+          "width": 1280,
+          "height": 853
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-244/s10.jpg",
+          "what": "素材の木箱と椅子が並ぶ無人の作業スペース",
+          "kind": "common",
+          "width": 1280,
+          "height": 853
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-244/s11.jpg",
+          "what": "作業台で詰め物を枕に詰める二人",
+          "kind": "common",
+          "width": 1280,
+          "height": 853
+        }
+      ],
+      "tags": [
+        "手ぶらでOK",
+        "初心者歓迎"
+      ],
+      "article": {
+        "headline": "京都府亀岡市篠町、寝具メーカーの工房で枕を手作りする体験。45分で完成し、10種類以上の素材から選べる",
+        "lede": "亀岡市にある「丸和まくら工房/枕づくり体験」です。寝具メーカーの専用工房で、プロのスタッフのサポートを受けながら、45分で自分だけの枕を手作りします。素材は10種類以上から選べ、手ぶらで参加できます。",
+        "sections": [
+          {
+            "heading": "体験の内容",
+            "body": "寝具メーカーの専用工房で、プロのスタッフのサポートを受けながら枕を手作りする体験です。45分で完成し、10種類以上の素材から香りや硬さ、素材感を選んで組み合わせます。サイズはレギュラーとラージの2種類から選べます。手ぶらで来店でき、完成した枕は専用ケースに入れて持ち帰れるほか、ホテルへの配送や海外への直送にも対応しています。まくら手作り体験に加えて、茶道・折り紙・和菓子作りなど、日本文化を体験できるオプションも用意しています。"
+          },
+          {
+            "heading": "体験の流れ",
+            "body": "体験はオンライン予約システムで申し込みます。予約には5〜10分かかり、来店後にスタッフから体験の流れの説明を受けます(10〜15分)。制作時間は20〜40分で、初めての方でも安心して利用できます。完成までの所要時間は合わせて5分ほどで、完成した枕はその日のうちに専用ケースに入れて持ち帰れます。"
+          },
+          {
+            "heading": "アクセスと送迎",
+            "body": "体験の場所は、JR馬堀駅から車で5分、亀岡コミュニティバスの篠村八幡宮から徒歩3分です。平日限定でJR馬堀駅までの送迎があり、4名まで利用できます。送迎を希望する場合は、電話での連絡が必要です。"
+          }
+        ],
+        "menus": [
+          {
+            "name": "まくら手作り体験 レギュラーサイズ"
+          },
+          {
+            "name": "まくら手作り体験 ラージサイズ"
+          },
+          {
+            "name": "茶道"
+          },
+          {
+            "name": "折り紙"
+          },
+          {
+            "name": "和菓子作り"
+          }
+        ],
+        "sources": [
+          {
+            "label": "公式サイト",
+            "url": "https://maruwa-makuraworkshop.com/"
+          },
+          {
+            "label": "Google マップ",
+            "url": "https://maps.google.com/?cid=10162595614009284132"
+          }
+        ],
+        "checkedAt": "2026-10-27"
+      }
+    },
+    {
+      "id": "ac0025",
+      "vertical": "activity",
+      "category": "sea-river",
+      "name": "屋久島自然案内",
+      "pref": "kagoshima",
+      "cityName": "屋久島町",
+      "address": "鹿児島県熊毛郡屋久島町宮之浦2473-294",
+      "lat": 30.4157815,
+      "lng": 130.5801079,
+      "hours": "毎日 08:00 - 20:00",
+      "phone": "0997-49-1260",
+      "url": "http://yakushima-nature.jp/",
+      "website": "http://yakushima-nature.jp/",
+      "mapUrl": "https://maps.google.com/?cid=2302839970852483402",
+      "image": "/_portal/vshops/tri-activity-248/g01.jpg",
+      "images": [
+        "/_portal/vshops/tri-activity-248/g01.jpg",
+        "/_portal/vshops/tri-activity-248/g02.jpg",
+        "/_portal/vshops/tri-activity-248/g03.jpg",
+        "/_portal/vshops/tri-activity-248/g04.jpg",
+        "/_portal/vshops/tri-activity-248/g05.jpg",
+        "/_portal/vshops/tri-activity-248/g06.jpg",
+        "/_portal/vshops/tri-activity-248/g07.jpg",
+        "/_portal/vshops/tri-activity-248/g08.jpg",
+        "/_portal/vshops/tri-activity-248/g09.jpg",
+        "/_portal/vshops/tri-activity-248/s01.jpg",
+        "/_portal/vshops/tri-activity-248/s02.jpg",
+        "/_portal/vshops/tri-activity-248/s03.jpg",
+        "/_portal/vshops/tri-activity-248/s04.jpg",
+        "/_portal/vshops/tri-activity-248/s05.jpg",
+        "/_portal/vshops/tri-activity-248/s06.jpg",
+        "/_portal/vshops/tri-activity-248/s07.jpg",
+        "/_portal/vshops/tri-activity-248/s08.jpg",
+        "/_portal/vshops/tri-activity-248/s18.jpg"
+      ],
+      "photos": [
+        {
+          "path": "/_portal/vshops/tri-activity-248/g01.jpg",
+          "what": "岩場の上を泳ぐ人影が見える水中の景色",
+          "kind": "view",
+          "width": 1200,
+          "height": 500
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-248/g02.jpg",
+          "what": "ウミガメの横を泳ぐダイバーの水中写真",
+          "kind": "view",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-248/g03.jpg",
+          "what": "青い海を泳ぐウミガメの水中写真",
+          "kind": "view",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-248/g04.jpg",
+          "what": "海面近くを泳ぐ2人のシュノーケラー",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-248/g05.jpg",
+          "what": "並んで泳ぐ3人のシュノーケラー",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-248/g06.jpg",
+          "what": "サンゴ礁の上を泳ぐ魚の群れ",
+          "kind": "view",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-248/g07.jpg",
+          "what": "大きく羽ばたくように泳ぐウミガメの水中写真",
+          "kind": "view",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-248/g08.jpg",
+          "what": "山を背にした海に浮かぶ3人のシュノーケラー",
+          "kind": "view",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-248/g09.jpg",
+          "what": "苔に覆われた岩と木の根が広がる森",
+          "kind": "view",
+          "width": 1200,
+          "height": 750
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-248/s01.jpg",
+          "what": "太い根が張った巨木が写る森の写真",
+          "kind": "view",
+          "width": 800,
+          "height": 533
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-248/s02.jpg",
+          "what": "岩場から望む緑の山々の眺め",
+          "kind": "view",
+          "width": 800,
+          "height": 533
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-248/s03.jpg",
+          "what": "太い幹の木が立つ森の写真",
+          "kind": "view",
+          "width": 800,
+          "height": 533
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-248/s04.jpg",
+          "what": "苔に覆われた根が広がる森の写真",
+          "kind": "view",
+          "width": 800,
+          "height": 533
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-248/s05.jpg",
+          "what": "寄り添って泳ぐ2匹のウミガメの写真",
+          "kind": "view",
+          "width": 800,
+          "height": 533
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-248/s06.jpg",
+          "what": "マスクをつけたダイバー3人が水中でポーズをとる写真",
+          "width": 800,
+          "height": 533
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-248/s07.jpg",
+          "what": "ウミガメの隣を泳ぐダイバーの写真",
+          "kind": "view",
+          "width": 800,
+          "height": 533
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-248/s08.jpg",
+          "what": "魚の群れに囲まれて泳ぐダイバーの写真",
+          "kind": "view",
+          "width": 800,
+          "height": 533
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-248/s18.jpg",
+          "what": "広い海を泳ぐシュノーケラーの遠景",
+          "kind": "view",
+          "width": 1280,
+          "height": 800
+        }
+      ],
+      "tags": [
+        "初心者歓迎",
+        "雨の日",
+        "子連れ"
+      ],
+      "article": {
+        "headline": "鹿児島県熊毛郡屋久島町宮之浦にあるツアー会社。体験ダイビングやシュノーケリング、白谷雲水峡や縄文杉のトレッキングなど、屋久島の海と山を案内している",
+        "lede": "鹿児島県熊毛郡屋久島町にある「屋久島自然案内」です。体験ダイビングやシュノーケリング、白谷雲水峡や縄文杉のトレッキングなど、屋久島の海と山をガイドが案内するツアー会社です。体験ダイビングはライセンスが無くても参加できます。",
+        "sections": [
+          {
+            "heading": "体験ダイビングの内容",
+            "body": "体験ダイビングには１ダイブコース、スペシャル１ダイブコース、２ダイブコースがあり、いずれもダイビングのライセンスは不要で、対象年齢は10歳から65歳です。１ダイブコースの所要時間は約3時間、ウミガメとの出会いを目的としたスペシャル１ダイブコースは約3.5時間で、潜水時間を長めに設定することでウミガメと出会う確率が高まります。ツアー中はインストラクターが写真や動画を撮影します。"
+          },
+          {
+            "heading": "集合場所と参加条件",
+            "body": "体験ダイビングの開催地は一湊・元浦海岸、集合場所は一湊海水浴場駐車場です。予約時に相談すれば、可能な限り送迎にも対応します。対象年齢は10歳から65歳で、13歳未満の参加者は保護者と一緒の参加が必要です。雨の日でもツアーは開催されます。"
+          },
+          {
+            "heading": "トレッキングツアー",
+            "body": "屋久島自然案内は白谷雲水峡（苔むす森コース・太鼓岩ノーマルコース・太鼓岩原生林歩道コース）や縄文杉を巡るトレッキングツアーも扱っています。登山用品のレンタルは行っていないため、事前に島内のレンタル店などで用意しておく必要があります。"
+          }
+        ],
+        "menus": [
+          {
+            "name": "ウミガメと泳ぐシュノーケリング・ツアー"
+          },
+          {
+            "name": "体験ダイビング / １ダイブコース"
+          },
+          {
+            "name": "体験ダイビング / スペシャル１ダイブコース"
+          },
+          {
+            "name": "体験ダイビング / ２ダイブコース"
+          },
+          {
+            "name": "白谷雲水峡トレッキング（苔むす森）"
+          },
+          {
+            "name": "白谷雲水峡トレッキング（太鼓岩・ノーマルコース）"
+          },
+          {
+            "name": "白谷雲水峡トレッキング（太鼓岩・原生林歩道コース）"
+          },
+          {
+            "name": "縄文杉トレッキング"
+          }
+        ],
+        "sources": [
+          {
+            "label": "公式サイト(トップ)",
+            "url": "https://yakushima-nature.jp/"
+          },
+          {
+            "label": "公式サイト(当店について)",
+            "url": "https://yakushima-nature.jp/about-us/"
+          },
+          {
+            "label": "公式サイト(体験ダイビング１ダイブコース)",
+            "url": "https://yakushima-nature.jp/tours/discover-scuba-1dive/"
+          },
+          {
+            "label": "公式サイト(体験ダイビング・スペシャル１ダイブコース)",
+            "url": "https://yakushima-nature.jp/tours/discover-scuba-1dive-sp/"
+          },
+          {
+            "label": "公式サイト(島内のレンタル店一覧)",
+            "url": "https://yakushima-nature.jp/useful-information/"
+          },
+          {
+            "label": "Google マップ",
+            "url": "https://maps.google.com/?cid=2302839970852483402"
+          }
+        ],
+        "checkedAt": "2026-10-27"
+      }
+    },
+    {
+      "id": "ac0026",
+      "vertical": "activity",
+      "category": "craft",
+      "name": "(株)工房ヤマセン辻佛檀",
+      "pref": "toyama",
+      "cityName": "魚津市",
+      "address": "富山県魚津市金浦町4-10",
+      "lat": 36.8191766,
+      "lng": 137.4002364,
+      "hours": "毎日 08:00 - 19:00",
+      "phone": "0765-22-2094",
+      "url": "https://red094024.studio.site/",
+      "website": "https://red094024.studio.site/",
+      "mapUrl": "https://maps.google.com/?cid=829131605857744042",
+      "image": "/_portal/vshops/tri-activity-242/g01.jpg",
+      "images": [
+        "/_portal/vshops/tri-activity-242/g01.jpg",
+        "/_portal/vshops/tri-activity-242/g03.jpg",
+        "/_portal/vshops/tri-activity-242/g04.jpg",
+        "/_portal/vshops/tri-activity-242/g05.jpg",
+        "/_portal/vshops/tri-activity-242/g06.jpg",
+        "/_portal/vshops/tri-activity-242/g08.jpg",
+        "/_portal/vshops/tri-activity-242/g10.jpg"
+      ],
+      "photos": [
+        {
+          "path": "/_portal/vshops/tri-activity-242/g01.jpg",
+          "what": "シャッターと看板のある店舗の外観",
+          "kind": "exterior",
+          "width": 981,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-242/g03.jpg",
+          "what": "仏壇が並ぶ店内のショールーム",
+          "kind": "common",
+          "width": 640,
+          "height": 480
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-242/g04.jpg",
+          "what": "漆器に絵付けをする作業台の様子",
+          "kind": "common",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-242/g05.jpg",
+          "what": "赤い布の上に並ぶ漆器の小物",
+          "width": 1200,
+          "height": 675
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-242/g06.jpg",
+          "what": "「辻佛檀店」の看板がある店舗の外観",
+          "kind": "exterior",
+          "width": 489,
+          "height": 314
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-242/g08.jpg",
+          "what": "透明なガラスの器",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-242/g10.jpg",
+          "what": "三日月と星をかたどった木製の置物",
+          "width": 1200,
+          "height": 900
+        }
+      ],
+      "tags": [
+        "子連れ"
+      ],
+      "article": {
+        "headline": "富山県魚津市金浦町にある、大正2年以前から続く仏壇店が営む工房。漆器の消蒔絵やミニパネル作りの体験ができる",
+        "lede": "魚津市にある「工房ヤマセン辻佛檀」です。大正2年以前から続く仏壇店で、輪島塗・井波彫刻の技法を加え、製材から加飾まで一貫して手がけています。兄弟でティースプーンやぐい呑み、ミニパネルなどに消蒔絵を施す体験のワークショップを行っています。",
+        "sections": [
+          {
+            "heading": "体験の内容",
+            "body": "ティースプーン・アクセサリー・ぐい呑みなどに消蒔絵を施す体験のほか、銀杏のミニパネルに本黒漆を施した器物へ蒔絵筆で模様を描く体験があります。純金消粉・純銀消粉を施して仕上げ、螺鈿を施すこともできます。対象年齢に制限はなく、小学生以下は保護者が同伴します。"
+          },
+          {
+            "heading": "時間と持ち物",
+            "body": "ティースプーンの蒔絵体験は約90分、ミニパネル作り体験は約1時間30分からで、集合から解散までは約2時間からです。持ち物は、施したいデザインがあれば持参し、当日は使い捨てエプロンなど多少汚れてもよい服装で参加します。"
+          },
+          {
+            "heading": "予約とお店",
+            "body": "体験は要予約で、実施日の1日前までに申し込みます。受付時間は8時から19時です。大正2年以前から続く仏壇店で、輪島塗・井波彫刻の技法を加え、製材から加飾まで一貫して手がけています。兄が塗師、弟が彫刻師として携わっています。"
+          }
+        ],
+        "menus": [
+          {
+            "name": "ティースプーン消蒔絵体験"
+          },
+          {
+            "name": "アクセサリー消蒔絵体験"
+          },
+          {
+            "name": "ぐい呑み消蒔絵体験"
+          },
+          {
+            "name": "ミニパネル作り体験"
+          }
+        ],
+        "sources": [
+          {
+            "label": "公式サイト",
+            "url": "https://red094024.studio.site/"
+          },
+          {
+            "label": "魚津市観光案内公式サイト(体験)",
+            "url": "https://uozu-kanko.jp/plan/shitugei-spoon/"
+          },
+          {
+            "label": "アソビュー(体験予約)",
+            "url": "https://www.asoview.com/item/activity/pln3000032873/"
+          },
+          {
+            "label": "店の紹介記事",
+            "url": "https://www.kintarouonsen.co.jp/news/601?c=&y=2022&m=01"
+          },
+          {
+            "label": "Google マップ",
+            "url": "https://maps.google.com/?cid=829131605857744042"
+          }
+        ],
+        "checkedAt": "2026-10-27"
+      }
     }
   ]
 }
