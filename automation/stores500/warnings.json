@@ -3551,6 +3551,14 @@
       "営業時間が取れていない（noindex）"
     ]
   },
+  "r770": {
+    "articleId": "コグマコーヒー",
+    "name": "コグマコーヒー",
+    "warnings": [
+      "営業時間が取れていない（noindex）",
+      "cuisine は GBPカテゴリ"
+    ]
+  },
   "r766": {
     "articleId": "麺処清水",
     "name": "麺処 清水",
