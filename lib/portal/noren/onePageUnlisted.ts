@@ -70,6 +70,7 @@ export const ONE_PAGE_UNLISTED_SHOP_OF_FEATURE: Readonly<Record<string, string>>
   "割烹天野": "r730", // 割烹天野
   "麺sBLAND文蔵BLACK": "r731", // 麺'sBLAND 文蔵BLACK
   "創作鉄板一Hajime": "r732", // 創作鉄板一 Hajime
+  "ヴァレルンガ": "r749", // ヴァレルンガ(営業時間が無く自動では1ページ化されず、旧型の店ページで落ちていた・2026-10-27 手で追加)
   "やき鳥ツギノキタザワ": "r733", // やき鳥 ツギノキタザワ
   "生": "r734", // 生
   "知覧桜見亭": "r735", // 知覧桜見亭
