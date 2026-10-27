@@ -1,0 +1,50 @@
+{
+  "key": "tri-pet-59",
+  "headline": "愛知県春日井市松河戸町にあるトリミングサロン。犬のトリミングを扱う",
+  "lede": "愛知県春日井市にある「トリミングサロン little」です。営業は月・火・木・金・土・日の9時から17時で、水曜日が定休日です。",
+  "sections": [
+    {
+      "heading": "場所と営業時間",
+      "body": "愛知県春日井市松河戸町で営業しているトリミングサロンです。営業時間は月曜・火曜・木曜・金曜・土曜・日曜の9時から17時までで、水曜日は定休日です。"
+    },
+    {
+      "heading": "店の特色",
+      "body": "トリミングサロンとして、犬のトリミングを扱っています。"
+    }
+  ],
+  "menus": [],
+  "tags": [],
+  "facts": [
+    {
+      "claim": "住所は愛知県春日井市松河戸町4丁目2-12",
+      "source": "https://maps.google.com/?cid=6563524553501464319",
+      "quote": "愛知県春日井市松河戸町４丁目２−１２",
+      "checkedAt": "2026-10-27"
+    },
+    {
+      "claim": "営業時間は9時から17時",
+      "source": "https://maps.google.com/?cid=6563524553501464319",
+      "quote": "09:00–17:00",
+      "checkedAt": "2026-10-27"
+    },
+    {
+      "claim": "水曜日は定休日",
+      "source": "https://maps.google.com/?cid=6563524553501464319",
+      "quote": "定休日",
+      "checkedAt": "2026-10-27"
+    },
+    {
+      "claim": "業種の表示はトリミングサロン",
+      "source": "https://maps.google.com/?cid=6563524553501464319",
+      "quote": "トリミングサロン",
+      "checkedAt": "2026-10-27"
+    }
+  ],
+  "sources": [
+    {
+      "label": "Google マップ",
+      "url": "https://maps.google.com/?cid=6563524553501464319"
+    }
+  ],
+  "notes": "automation/v2/write.mjs が 2026-10-27 に claude -p --model sonnet で作成。事実の裏取り: 4/4 件(quote が出どころにあるもの)。裏取りに通らなかった facts は載せていない。"
+}

@@ -1,0 +1,40 @@
+{
+  "tab": "トリニティアポ",
+  "tabEn": "tri-life",
+  "row": 51,
+  "sheet": {
+    "name": "石薬師寺",
+    "address": "",
+    "url": "https://www.google.com/search?q=%E7%9F%B3%E8%96%AC%E5%B8%AB%E5%AF%BA+%E4%B8%89%E9%87%8D%E7%9C%8C%E9%88%B4%E9%B9%BF%E5%B8%82%E7%9F%B3%E8%96%AC%E5%B8%AB%E7%94%BA1+%E8%AA%AD%E3%81%BF%E6%96%B9&sca_esv=b806ac0cce3d6a6a&sxsrf=APpeQnt1QDsdLtmEFEGJ-PNTYAt7V4Xj3w%3A1792034804361&ei=9EfQas_DFayeseMPsfCYgQI&biw=1070&bih=708&oq=%E7%9F%B3%E8%96%AC%E5%B8%AB%E5%AF%BA&gs_lp=Egxnd3Mtd2l6LXNlcnAiDOefs-iWrOW4q-WvuioHCAAYsAMYJzIHECMYsAMYJzIHECMYsAMYJzIKEAAYRxjWBBiwAzIKEAAYRxjWBBiwAzIKEAAYRxjWBBiwAzIKEAAYRxjWBBiwAzIKEAAYRxjWBBiwAzIKEAAYRxjWBBiwAzIKEAAYRxjWBBiwAzIKEAAYRxjWBBiwA0ikClAAWABwAXgBkAEAmAEAoAEAqgEAuAEByAEAmAIBoAILmAMAiAYBkAYKkgcBMaAHALIHALgHAMIHAzItMcgHBYAIAQ&sclient=gws-wiz-serp",
+    "type": "寺",
+    "d1": "",
+    "d2": ""
+  },
+  "urlKind": "search",
+  "route": "第1段(verify-gbp.mjs)で確認済み",
+  "verdict": "一致",
+  "verdictReason": "電話が一致／店名: contains(シート「石薬師寺」/ マップ「高富山 瑠璃光院 石薬師寺」)／住所(検索URL): exact・町名・番地とも一致",
+  "place": {
+    "name": "高富山 瑠璃光院 石薬師寺",
+    "address": "三重県鈴鹿市石薬師町１",
+    "category": "仏教寺院",
+    "lat": 34.8982666,
+    "lng": 136.5484727,
+    "gbpUrl": "https://maps.google.com/?cid=17507182047051127046",
+    "phone": "059-374-0394",
+    "website": "https://sites.google.com/view/ishiyakushiji",
+    "hours": {
+      "月": "08:00–17:00",
+      "火": "08:00–17:00",
+      "水": "08:00–17:00",
+      "木": "08:00–17:00",
+      "金": "08:00–17:00",
+      "土": "08:00–17:00",
+      "日": "08:00–17:00"
+    },
+    "reserveLinks": [],
+    "statusSignals": [],
+    "closedSignal": false
+  },
+  "fetchedAt": "2026-10-27T02:46:57.382Z"
+}

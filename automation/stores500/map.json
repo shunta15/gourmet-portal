@@ -1473,5 +1473,85 @@
     "articleId": "生",
     "sheetName": "ビア酒場　生",
     "mapsUrl": "https://maps.google.com/?cid=2677230119480793845"
+  },
+  {
+    "articleId": "玉ゆら",
+    "sheetName": "おばんざい 玉ゆら",
+    "mapsUrl": "https://maps.google.com/?cid=12472045085893164268"
+  },
+  {
+    "articleId": "知覧桜見亭",
+    "sheetName": "知覧桜見亭",
+    "mapsUrl": "https://maps.google.com/?cid=8266157921974279353"
+  },
+  {
+    "articleId": "PetitParc",
+    "sheetName": "Petit Parc",
+    "mapsUrl": "https://maps.google.com/?cid=16102889700900607581"
+  },
+  {
+    "articleId": "HINA-CAFE(ヒナカフェ)",
+    "sheetName": "HINA-CAFE(ヒナカフェ)",
+    "mapsUrl": "https://maps.google.com/?cid=4962894786156715600"
+  },
+  {
+    "articleId": "居酒屋割烹新粋",
+    "sheetName": "居酒屋割烹 新粋",
+    "mapsUrl": "https://maps.google.com/?cid=8354051705811490647"
+  },
+  {
+    "articleId": "ベーカリーミトロンド",
+    "sheetName": "BAKERY MITROND ベーカリーミトロンド",
+    "mapsUrl": "https://maps.google.com/?cid=12849769357441598727"
+  },
+  {
+    "articleId": "焼肉炭処道楽",
+    "sheetName": "焼肉 炭処道楽",
+    "mapsUrl": "https://maps.google.com/?cid=16640661242864859196"
+  },
+  {
+    "articleId": "とんかつグラッソ",
+    "sheetName": "とんかつ Grasso",
+    "mapsUrl": "https://maps.google.com/?cid=3016985849391715679"
+  },
+  {
+    "articleId": "なんちゃってBAR・Dream",
+    "sheetName": "なんちゃってBAR Dream",
+    "mapsUrl": "https://maps.google.com/?cid=14945588667376605278"
+  },
+  {
+    "articleId": "ヴァレルンガ",
+    "sheetName": "ヴァレルンガ",
+    "mapsUrl": "https://maps.google.com/?cid=4554927009685734302"
+  },
+  {
+    "articleId": "ななつ星",
+    "sheetName": "ななつ星",
+    "mapsUrl": "https://maps.google.com/?cid=3470208913944565974"
+  },
+  {
+    "articleId": "呑処喰処泉",
+    "sheetName": "呑処喰処 泉",
+    "mapsUrl": "https://maps.google.com/?cid=645380817922318342"
+  },
+  {
+    "articleId": "保護猫かふぇまたたび庵",
+    "sheetName": "保護猫かふぇ またたび庵",
+    "mapsUrl": "https://maps.google.com/?cid=8106345535357329860"
+  },
+  {
+    "articleId": "大玉ふわとろたこ焼き縁-en-",
+    "sheetName": "大玉ふわとろたこ焼き縁",
+    "mapsUrl": "https://maps.google.com/?cid=14216970150944813601"
+  },
+  {
+    "articleId": "浜焼ノ栄友",
+    "sheetName": "浜焼ノ栄友",
+    "mapsUrl": "https://maps.google.com/?cid=1422432562160429081"
+  },
+  {
+    "articleId": "和食みよし",
+    "sheetName": "和食みよし",
+    "mapsUrl": "https://maps.google.com/?cid=7449730329753015368"
   }
 ]

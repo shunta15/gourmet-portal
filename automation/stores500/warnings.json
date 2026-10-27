@@ -2272,5 +2272,127 @@
       "desc は lede から事実の文を選べず、事実から作った定型文",
       "cuisine は GBPカテゴリ"
     ]
+  },
+  "r747": {
+    "articleId": "玉ゆら",
+    "name": "玉ゆら",
+    "warnings": [
+      "desc は lede から事実の文を選べず、事実から作った定型文",
+      "営業時間が取れていない（noindex）"
+    ]
+  },
+  "r735": {
+    "articleId": "知覧桜見亭",
+    "name": "知覧桜見亭",
+    "warnings": [
+      "cuisine は GBPカテゴリ"
+    ]
+  },
+  "r748": {
+    "articleId": "PetitParc",
+    "name": "Petit Parc",
+    "warnings": [
+      "cuisine は GBPカテゴリ"
+    ]
+  },
+  "r736": {
+    "articleId": "HINA-CAFE(ヒナカフェ)",
+    "name": "HINA-CAFE(ヒナカフェ)",
+    "warnings": [
+      "desc は lede から事実の文を選べず、事実から作った定型文",
+      "cuisine は GBPカテゴリ"
+    ]
+  },
+  "r737": {
+    "articleId": "居酒屋割烹新粋",
+    "name": "居酒屋割烹新粋",
+    "warnings": [
+      "desc は lede から事実の文を選べず、事実から作った定型文",
+      "cuisine は GBPカテゴリ"
+    ]
+  },
+  "r738": {
+    "articleId": "ベーカリーミトロンド",
+    "name": "ベーカリーミトロンド",
+    "warnings": [
+      "desc は lede から事実の文を選べず、事実から作った定型文",
+      "cuisine は GBPカテゴリ"
+    ]
+  },
+  "r739": {
+    "articleId": "焼肉炭処道楽",
+    "name": "焼肉 炭処道楽",
+    "warnings": [
+      "cuisine は GBPカテゴリ"
+    ]
+  },
+  "r740": {
+    "articleId": "とんかつグラッソ",
+    "name": "とんかつグラッソ",
+    "warnings": [
+      "desc は lede から事実の文を選べず、事実から作った定型文",
+      "cuisine は GBPカテゴリ"
+    ]
+  },
+  "r741": {
+    "articleId": "なんちゃってBAR・Dream",
+    "name": "なんちゃってＢＡＲ・Ｄｒｅａｍ",
+    "warnings": [
+      "desc は lede から事実の文を選べず、事実から作った定型文"
+    ]
+  },
+  "r749": {
+    "articleId": "ヴァレルンガ",
+    "name": "ヴァレルンガ",
+    "warnings": [
+      "desc は lede から事実の文を選べず、事実から作った定型文",
+      "営業時間が取れていない（noindex）",
+      "cuisine は GBPカテゴリ"
+    ]
+  },
+  "r742": {
+    "articleId": "ななつ星",
+    "name": "ななつ星",
+    "warnings": [
+      "desc は lede から事実の文を選べず、事実から作った定型文",
+      "cuisine は GBPカテゴリ"
+    ]
+  },
+  "r750": {
+    "articleId": "呑処喰処泉",
+    "name": "呑処喰処 泉",
+    "warnings": [
+      "desc は lede から事実の文を選べず、事実から作った定型文"
+    ]
+  },
+  "r743": {
+    "articleId": "保護猫かふぇまたたび庵",
+    "name": "保護猫かふぇ またたび庵",
+    "warnings": [
+      "desc は lede から事実の文を選べず、事実から作った定型文",
+      "cuisine は GBPカテゴリ"
+    ]
+  },
+  "r744": {
+    "articleId": "大玉ふわとろたこ焼き縁-en-",
+    "name": "大玉ふわとろたこ焼き 縁-en-",
+    "warnings": [
+      "desc は lede から事実の文を選べず、事実から作った定型文"
+    ]
+  },
+  "r745": {
+    "articleId": "浜焼ノ栄友",
+    "name": "浜焼ノ栄友",
+    "warnings": [
+      "desc は lede から事実の文を選べず、事実から作った定型文",
+      "cuisine は GBPカテゴリ"
+    ]
+  },
+  "r746": {
+    "articleId": "和食みよし",
+    "name": "和食 みよし",
+    "warnings": [
+      "desc は lede から事実の文を選べず、事実から作った定型文"
+    ]
   }
 }

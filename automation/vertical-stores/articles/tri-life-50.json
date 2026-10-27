@@ -1,0 +1,124 @@
+{
+  "key": "tri-life-50",
+  "headline": "大阪府羽曳野市誉田にある神社で、応神天皇陵の後円部に鎮座しています。本殿には応神天皇・仲哀天皇・神功皇后を祀り、安産・厄除けの神としてまつられています。",
+  "lede": "大阪府羽曳野市にある「誉田八幡宮」です。応神天皇陵の後円部に鎮座し、古くから御陵の祭祀を司ってきました。中座に応神天皇、左座に仲哀天皇、右座に神功皇后をまつっています。",
+  "sections": [
+    {
+      "heading": "鎮座の由来とご祭神",
+      "body": "誉田八幡宮は、応神天皇陵の後円部に鎮座し、古くから御陵の祭祀を司ってきた神社です。本殿の中座には応神天皇、左座には仲哀天皇、右座には神功皇后をまつっています。欽明天皇の勅願によって御陵前に社殿が建立されたと、宝物「誉田宗廟縁起」に記されています。"
+    },
+    {
+      "heading": "宝物と文化財",
+      "body": "源頼朝は社殿と伽藍を修復し、国宝の塵地螺鈿金銅装神輿などを寄進しました。室町幕府六代将軍足利義教は、重要文化財「誉田宗廟縁起」と「神功皇后縁起」を奉納しています。かつて併存した長野山護国寺は明治の廃仏毀釈でほとんどが取りこわされ、現在は南大門のみが遺構として残っています。"
+    },
+    {
+      "heading": "安産の神様",
+      "body": "本殿向かって左の御扉には、安産の神様である神功皇后をまつっています。境内の安産社には、安産の力があると伝わる槐(えんじゅ)の木が植えられています。安産祈願は、新しい命が宿ってから5カ月目の戌の日におこないます。"
+    },
+    {
+      "heading": "応神天皇陵",
+      "body": "誉田八幡宮は、応神天皇陵(惠我藻伏崗陵)の後円部に鎮座しています。御陵は墳丘長約425メートル、高さ36メートルの前方後円墳です。拝所へは神社の境内から出て東側か南側へ向かい、前方部まで徒歩で片道20分ほどかかります。"
+    }
+  ],
+  "menus": [
+    {
+      "name": "安産祈願"
+    },
+    {
+      "name": "神前結婚式"
+    },
+    {
+      "name": "お神札・お守り"
+    }
+  ],
+  "tags": [],
+  "facts": [
+    {
+      "claim": "誉田八幡宮は応神天皇陵後円部に鎮座し、古くから御陵の祭祀を司ってきた神社",
+      "source": "https://kondahachimangu.com/information/about/",
+      "quote": "応神天皇陵後円部に鎮座し、古くから御陵の祭祀を司ってきた神社",
+      "checkedAt": "2026-10-27"
+    },
+    {
+      "claim": "本殿の中座に応神天皇をまつる",
+      "source": "https://kondahachimangu.com/information/about/",
+      "quote": "中座 第十五代 応神天皇",
+      "checkedAt": "2026-10-27"
+    },
+    {
+      "claim": "本殿向かって左の御扉に安産の神様である神功皇后をまつる",
+      "source": "https://kondahachimangu.com/information/pregnant/",
+      "quote": "本殿向かって左の御扉に安産の神様である神功皇后",
+      "checkedAt": "2026-10-27"
+    },
+    {
+      "claim": "境内の安産社には安産の力があると伝わる槐の木が植えられている",
+      "source": "https://kondahachimangu.com/information/pregnant/",
+      "quote": "安産社に槐の木が植えられ",
+      "checkedAt": "2026-10-27"
+    },
+    {
+      "claim": "安産祈願は新しい命が宿ってから5カ月目の戌の日におこなう",
+      "source": "https://kondahachimangu.com/information/pregnant/",
+      "quote": "5カ月目の戌（いぬ）の日に",
+      "checkedAt": "2026-10-27"
+    },
+    {
+      "claim": "源頼朝は社殿・伽藍を修復し国宝の塵地螺鈿金銅装神輿などを寄進した",
+      "source": "https://kondahachimangu.com/information/history/",
+      "quote": "塵地螺鈿金銅装神輿",
+      "checkedAt": "2026-10-27"
+    },
+    {
+      "claim": "足利義教は重要文化財「誉田宗廟縁起」「神功皇后縁起」を奉納した",
+      "source": "https://kondahachimangu.com/information/history/",
+      "quote": "誉田宗廟縁起",
+      "checkedAt": "2026-10-27"
+    },
+    {
+      "claim": "長野山護国寺は明治の廃仏毀釈でほとんどが取りこわされ南大門のみが遺構として残る",
+      "source": "https://kondahachimangu.com/information/history/",
+      "quote": "南大門を残すのみ",
+      "checkedAt": "2026-10-27"
+    },
+    {
+      "claim": "応神天皇陵は墳丘長約425m、高さ36mの前方後円墳",
+      "source": "https://kondahachimangu.com/information/emperorojinmausoleum/",
+      "quote": "墳丘長約 425ｍ",
+      "checkedAt": "2026-10-27"
+    },
+    {
+      "claim": "拝所へは神社の境内から出て、前方部まで徒歩で片道20分ほどかかる",
+      "source": "https://kondahachimangu.com/information/emperorojinmausoleum/",
+      "quote": "片道20分程度といったところです",
+      "checkedAt": "2026-10-27"
+    }
+  ],
+  "sources": [
+    {
+      "label": "公式サイト",
+      "url": "https://kondahachimangu.com/"
+    },
+    {
+      "label": "公式サイト(誉田八幡宮について)",
+      "url": "https://kondahachimangu.com/information/about/"
+    },
+    {
+      "label": "公式サイト(歴史)",
+      "url": "https://kondahachimangu.com/information/history/"
+    },
+    {
+      "label": "公式サイト(応神天皇陵について)",
+      "url": "https://kondahachimangu.com/information/emperorojinmausoleum/"
+    },
+    {
+      "label": "公式サイト(安産の神様)",
+      "url": "https://kondahachimangu.com/information/pregnant/"
+    },
+    {
+      "label": "Google マップ",
+      "url": "https://maps.google.com/?cid=4117450220773174653"
+    }
+  ],
+  "notes": "automation/v2/write.mjs が 2026-10-27 に claude -p --model sonnet で作成。事実の裏取り: 10/10 件(quote が出どころにあるもの)。裏取りに通らなかった facts は載せていない。"
+}

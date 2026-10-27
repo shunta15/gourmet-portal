@@ -1,0 +1,40 @@
+{
+  "tab": "トリニティアポ",
+  "tabEn": "tri-life",
+  "row": 69,
+  "sheet": {
+    "name": "専念寺",
+    "address": "",
+    "url": "https://www.google.com/search?q=%E5%B0%82%E5%BF%B5%E5%AF%BA%20%E5%A4%A7%E9%98%AA%E5%BA%9C%E5%A4%A7%E9%98%AA%E5%B8%82%E5%B9%B3%E9%87%8E%E5%8C%BA%E5%96%9C%E9%80%A3%EF%BC%94-%EF%BC%95-%EF%BC%97%20%E9%9B%BB%E8%A9%B1%E7%95%AA%E5%8F%B7&sec_src=editors#cso=_3aLRauflFq-A1e8P88KE6AU_98:0",
+    "type": "その他",
+    "d1": "",
+    "d2": ""
+  },
+  "urlKind": "search",
+  "route": "第1段(verify-gbp.mjs)で確認済み",
+  "verdict": "一致",
+  "verdictReason": "電話が一致／店名: contains(シート「専念寺」/ マップ「専念寺 人形供養」)／住所(検索URL): exact・町名・番地とも一致",
+  "place": {
+    "name": "専念寺 人形供養",
+    "address": "大阪府大阪市平野区喜連４丁目５−７",
+    "category": "仏教寺院",
+    "lat": 34.612332,
+    "lng": 135.5551144,
+    "gbpUrl": "https://maps.google.com/?cid=17717155789979894597",
+    "phone": "06-6709-7221",
+    "website": "https://www.sennenji1597.com/",
+    "hours": {
+      "月": "08:00–18:00",
+      "火": "08:00–18:00",
+      "水": "08:00–18:00",
+      "木": "08:00–18:00",
+      "金": "08:00–18:00",
+      "土": "08:00–18:00",
+      "日": "08:00–18:00"
+    },
+    "reserveLinks": [],
+    "statusSignals": [],
+    "closedSignal": false
+  },
+  "fetchedAt": "2026-10-27T03:04:04.296Z"
+}

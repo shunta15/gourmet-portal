@@ -1,0 +1,22 @@
+{
+  "name": "Petit Parc",
+  "address": "東京都調布市仙川町１丁目7−１",
+  "lat": 35.6608045,
+  "lng": 139.5832558,
+  "category": "カフェ・喫茶",
+  "hours": {
+    "月": "定休日",
+    "火": "11:00–16:00",
+    "水": "11:00–20:00",
+    "木": "11:00–20:00",
+    "金": "11:00–20:00",
+    "土": "10:00–20:00",
+    "日": "10:00–20:00"
+  },
+  "phone": "03-4362-5584",
+  "website": "https://www.instagram.com/petit.parc/",
+  "priceRange": null,
+  "status": null,
+  "gbpUrl": "https://maps.google.com/?cid=16102889700900607581",
+  "fetchedAt": "2026-10-27T02:55:10.380Z"
+}

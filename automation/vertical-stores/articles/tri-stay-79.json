@@ -1,0 +1,255 @@
+{
+  "key": "tri-stay-79",
+  "headline": "岩手県花巻市の花巻南温泉峡「鉛温泉」にある一軒宿「藤三旅館」。総けやき造りの本館と鉄筋造りの別館からなり、5本の源泉を持つ温泉旅館です。",
+  "lede": "花巻市にある「鉛温泉 藤三旅館」です。1786年に長屋を建てて温泉旅館として開業したのが始まりで、花巻南温泉峡「鉛温泉」唯一の一軒宿として豊沢川畔に建っています。",
+  "sections": [
+    {
+      "heading": "歴史",
+      "body": "鉛温泉株式会社(藤三旅館)の創業は天保12年(1841年)で、昭和17年に株式会社へ組織変更しました。温泉名「白猿の湯」は、白猿が泉で手足を洗う姿を見たことに由来します。文豪・田宮虎彦は本館玄関3階の20号室に逗留して小説「銀心中」を執筆し、宮沢賢治の童話「なめとこ山の熊」にも「鉛の湯」の一節が残ります。"
+    },
+    {
+      "heading": "温泉と風呂",
+      "body": "鉛温泉は5本の源泉を持ち、館内全4浴場はすべて源泉100%掛け流しです。温泉は沸かさず、薄めず、循環させずに届けられています。本館は総けやき造りの三階建てで、客室の多くはトイレ・洗面なしの和室です。隣接する別館は鉄筋造りで、和洋室8畳はトイレ・洗面付きです。"
+    },
+    {
+      "heading": "客室",
+      "body": "本館には和室8帖+6帖をはじめ、和室中心の客室があります。別館は鉄筋造りで、和室12畳の客室もあります。湯治部にはレトロな和室6~8畳の客室があります。和室7帖の客室は定員1~2名です。"
+    },
+    {
+      "heading": "食事",
+      "body": "夕食は梅膳・竹膳・松膳の3種類から選べます。梅膳には花巻産白金豚の季節鍋が付き、竹膳はA5ランクの岩手和牛をしゃぶしゃぶまたはすき焼きで楽しめます。朝食はごはんやお魚、お漬物など地産品を使います。食事処「灯」は格子の間仕切りがある半個室感覚の空間です。"
+    }
+  ],
+  "rooms": [
+    {
+      "name": "和室8帖+6帖"
+    },
+    {
+      "name": "和室8畳+4畳"
+    },
+    {
+      "name": "和室2階18号室12畳、3階31号室10畳"
+    },
+    {
+      "name": "和室7帖"
+    },
+    {
+      "name": "和室8帖+2帖"
+    },
+    {
+      "name": "和室12帖+2帖"
+    },
+    {
+      "name": "渓流を望む【和室8畳】鉄筋建築"
+    },
+    {
+      "name": "「湯治部」レトロな【和室6～8畳】"
+    }
+  ],
+  "menus": [
+    {
+      "name": "梅膳"
+    },
+    {
+      "name": "竹膳"
+    },
+    {
+      "name": "松膳"
+    }
+  ],
+  "tags": [
+    {
+      "tag": "温泉",
+      "factIndex": 2
+    },
+    {
+      "tag": "記念日",
+      "factIndex": 24
+    },
+    {
+      "tag": "一人旅",
+      "factIndex": 25
+    }
+  ],
+  "facts": [
+    {
+      "claim": "所在地は花巻市である。",
+      "source": "https://maps.google.com/?cid=2285549910079157501",
+      "quote": "花巻市",
+      "checkedAt": "2026-10-27"
+    },
+    {
+      "claim": "鉛温泉は5本の源泉を持つ。",
+      "source": "https://namari-onsen-ryokan.com/about/",
+      "quote": "源泉５本を有し",
+      "checkedAt": "2026-10-27"
+    },
+    {
+      "claim": "館内全4浴場はすべて源泉100%掛け流しである。",
+      "source": "https://namari-onsen-ryokan.com/about/",
+      "quote": "館内全4浴場すべて「源泉100％掛流し」",
+      "checkedAt": "2026-10-27"
+    },
+    {
+      "claim": "温泉は沸かさず、薄めず、循環させずに提供される。",
+      "source": "https://namari-onsen-ryokan.com/about/",
+      "quote": "「沸かさず（加熱）」、「薄めず（加水）」、「循環させず",
+      "checkedAt": "2026-10-27"
+    },
+    {
+      "claim": "本館は総けやき造りの三階建てである。",
+      "source": "https://namari-onsen-ryokan.com//",
+      "quote": "総けやきづくりの三階建ての建物は",
+      "checkedAt": "2026-10-27"
+    },
+    {
+      "claim": "本館の隣にある別館は鉄筋造りである。",
+      "source": "https://namari-onsen-ryokan.com/room/",
+      "quote": "木造建築の建物の隣にある、鉄筋造りの建物。",
+      "checkedAt": "2026-10-27"
+    },
+    {
+      "claim": "藤三旅館は花巻南温泉峡「鉛温泉」唯一の一軒宿である。",
+      "source": "https://namari-onsen-ryokan.com/about/",
+      "quote": "花巻南温泉峡「鉛温泉」唯一の一軒宿です。",
+      "checkedAt": "2026-10-27"
+    },
+    {
+      "claim": "当館は豊沢川畔に建つ。",
+      "source": "https://namari-onsen-ryokan.com/about/",
+      "quote": "豊沢川畔に建つ当館",
+      "checkedAt": "2026-10-27"
+    },
+    {
+      "claim": "鉛温泉株式会社(藤三旅館)の創業は天保12年(1841年)である。",
+      "source": "https://namari-onsen-ryokan.com/about/",
+      "quote": "創業 天保12年（1841年）",
+      "checkedAt": "2026-10-27"
+    },
+    {
+      "claim": "1786年に長屋を建て、温泉旅館として開業した。",
+      "source": "https://namari-onsen-ryokan.com/about/",
+      "quote": "1786年に長屋を建て、温泉旅館として開業",
+      "checkedAt": "2026-10-27"
+    },
+    {
+      "claim": "昭和17年に株式会社へ組織変更した。",
+      "source": "https://namari-onsen-ryokan.com/about/",
+      "quote": "昭和17年に株式会社へ組織変更",
+      "checkedAt": "2026-10-27"
+    },
+    {
+      "claim": "白猿がカツラの木の根元から湧き出る泉で手足を洗う姿を見たことで発見されたと言い伝えられている。",
+      "source": "https://namari-onsen-ryokan.com/about/",
+      "quote": "白猿がカツラの木の根元から湧き出る泉で手足の傷を",
+      "checkedAt": "2026-10-27"
+    },
+    {
+      "claim": "田宮虎彦は本館玄関3階の20号室に逗留して「銀心中」を執筆した。",
+      "source": "https://namari-onsen-ryokan.com/about/",
+      "quote": "藤三旅館玄関の3階お部屋(20号室)に逗留して執筆されました",
+      "checkedAt": "2026-10-27"
+    },
+    {
+      "claim": "宮沢賢治の童話「なめとこ山の熊」に「鉛の湯」の一節がある。",
+      "source": "https://namari-onsen-ryokan.com/about/",
+      "quote": "腹の痛いのにも利けば傷も治る。鉛の湯・・・・・",
+      "checkedAt": "2026-10-27"
+    },
+    {
+      "claim": "本館の客室の多くはトイレ・洗面なしの和室である。",
+      "source": "https://namari-onsen-ryokan.com/room/",
+      "quote": "（トイレ洗面なし）",
+      "checkedAt": "2026-10-27"
+    },
+    {
+      "claim": "別館の和洋室8畳はトイレ・洗面付きである。",
+      "source": "https://namari-onsen-ryokan.com/room/",
+      "quote": "（洗面トイレ付き）",
+      "checkedAt": "2026-10-27"
+    },
+    {
+      "claim": "本館には和室8帖+6帖の客室がある。",
+      "source": "https://namari-onsen-ryokan.com/room/",
+      "quote": "和室8帖+6帖",
+      "checkedAt": "2026-10-27"
+    },
+    {
+      "claim": "別館には和室12畳の客室がある。",
+      "source": "https://namari-onsen-ryokan.com/room/",
+      "quote": "和室12帖+2帖",
+      "checkedAt": "2026-10-27"
+    },
+    {
+      "claim": "湯治部にはレトロな和室6~8畳の客室がある。",
+      "source": "https://namari-onsen-ryokan.com/room/",
+      "quote": "「湯治部」レトロな【和室6～8畳】",
+      "checkedAt": "2026-10-27"
+    },
+    {
+      "claim": "夕食は梅膳・竹膳・松膳の3種類から選べる。",
+      "source": "https://namari-onsen-ryokan.com/menu/",
+      "quote": "夕食は3種類のコースからお選びいただけます。",
+      "checkedAt": "2026-10-27"
+    },
+    {
+      "claim": "梅膳には花巻産白金豚の季節鍋が付く。",
+      "source": "https://namari-onsen-ryokan.com/menu/",
+      "quote": "花巻産白金豚の季節鍋",
+      "checkedAt": "2026-10-27"
+    },
+    {
+      "claim": "竹膳はA5ランクの岩手和牛をしゃぶしゃぶまたはすき焼きで楽しめる。",
+      "source": "https://namari-onsen-ryokan.com/menu/",
+      "quote": "A5ランクの霜降り岩手和牛",
+      "checkedAt": "2026-10-27"
+    },
+    {
+      "claim": "朝食はごはんやお魚、お漬物など地産品を使う。",
+      "source": "https://namari-onsen-ryokan.com/menu/",
+      "quote": "地産品を数多く使用した朝食になります",
+      "checkedAt": "2026-10-27"
+    },
+    {
+      "claim": "食事処「灯」は格子の間仕切りがある半個室感覚の空間である。",
+      "source": "https://namari-onsen-ryokan.com/menu/",
+      "quote": "格子調の間仕切りある半個室感覚の空間",
+      "checkedAt": "2026-10-27"
+    },
+    {
+      "claim": "宿泊客には家族の祝い事や記念日に利用する人もいる。",
+      "source": "https://namari-onsen-ryokan.com/about/",
+      "quote": "お祝い事や記念日に宿泊いただくお客様",
+      "checkedAt": "2026-10-27"
+    },
+    {
+      "claim": "和室7帖の客室は定員1~2名である。",
+      "source": "https://namari-onsen-ryokan.com/room/",
+      "quote": "定員： 1～2名",
+      "checkedAt": "2026-10-27"
+    }
+  ],
+  "sources": [
+    {
+      "label": "公式サイト",
+      "url": "https://namari-onsen-ryokan.com//"
+    },
+    {
+      "label": "公式サイト(藤三旅館について)",
+      "url": "https://namari-onsen-ryokan.com/about/"
+    },
+    {
+      "label": "公式サイト(部屋)",
+      "url": "https://namari-onsen-ryokan.com/room/"
+    },
+    {
+      "label": "公式サイト(お料理)",
+      "url": "https://namari-onsen-ryokan.com/menu/"
+    },
+    {
+      "label": "Google マップ",
+      "url": "https://maps.google.com/?cid=2285549910079157501"
+    }
+  ],
+  "notes": "automation/v2/write.mjs が 2026-10-27 に claude -p --model sonnet で作成。事実の裏取り: 26/26 件(quote が出どころにあるもの)。裏取りに通らなかった facts は載せていない。"
+}

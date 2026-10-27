@@ -1,0 +1,40 @@
+{
+  "tab": "トリニティアポ",
+  "tabEn": "tri-life",
+  "row": 234,
+  "sheet": {
+    "name": "マルシェノグチ",
+    "address": "",
+    "url": "https://www.google.com/maps/search/?api=1&query=%E3%83%9E%E3%83%AB%E3%82%B7%E3%82%A7%E3%83%8E%E3%82%B0%E3%83%81%20075-432-7243%20%E3%80%92604-8381%20%E4%BA%AC%E9%83%BD%E5%BA%9C%E4%BA%AC%E9%83%BD%E5%B8%82%E4%B8%AD%E4%BA%AC%E5%8C%BA%E8%A5%BF%E3%83%8E%E4%BA%AC%E8%81%B7%E5%8F%B8%E7%94%BA%EF%BC%96%EF%BC%99%20%EF%BC%A9%EF%BC%AD%EF%BC%B0%EF%BC%A1%EF%BC%A3%EF%BC%B4%20%EF%BC%A9%EF%BC%AB%EF%BC%B5%20%E5%8C%97%201F",
+    "type": "小売り",
+    "d1": "",
+    "d2": ""
+  },
+  "urlKind": "mapsApi",
+  "route": "第1段(verify-gbp.mjs)で確認済み",
+  "verdict": "一致",
+  "verdictReason": "手がかり: 店名＋電話＋住所(番地まで)。電話が一致／店名: contains(シート「マルシェノグチ」/ マップ「野菜専門店 マルシェノグチ」)／住所(シート): exact・町名・番地とも一致",
+  "place": {
+    "name": "野菜専門店 マルシェノグチ",
+    "address": "京都府京都市中京区西ノ京職司町６９ ＩＭＰＡＣＴ ＩＫＵ 北 1F",
+    "category": "青果卸売業者",
+    "lat": 35.0111455,
+    "lng": 135.7447952,
+    "gbpUrl": "https://maps.google.com/?cid=6141782586603461053",
+    "phone": "075-432-7243",
+    "website": "https://home.tsuku2.jp/storeDetail.php?scd=0000214958&pv=1%252523",
+    "hours": {
+      "月": "10:00–19:00",
+      "火": "10:00–19:00",
+      "水": "10:00–19:00",
+      "木": "10:00–19:00",
+      "金": "10:00–19:00",
+      "土": "10:00–19:00",
+      "日": "定休日"
+    },
+    "reserveLinks": [],
+    "statusSignals": [],
+    "closedSignal": false
+  },
+  "fetchedAt": "2026-10-27T03:09:58.630Z"
+}
