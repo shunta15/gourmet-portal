@@ -1,6 +1,8 @@
 import { categoryAreaPage } from "@/components/portal/pages/category-area";
+import { lifeLegacy } from "@/components/portal/life/redirects";
 
-const page = categoryAreaPage("life");
+// 探すの絞り込みへ恒久の転送(308)。業種のページは 4 種類にまとめた(2026-10-23 オーナー決定。2026-10-27「探すで行こうでOK」)。知らない種類・県は今までどおり 404。
+const page = lifeLegacy.categoryAreaRedirectPage(categoryAreaPage("life"));
 
 export const revalidate = 3600;
 export const dynamicParams = true;
