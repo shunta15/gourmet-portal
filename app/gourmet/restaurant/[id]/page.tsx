@@ -170,9 +170,12 @@ export default async function Page({ params }: { params: Promise<{ id: string }>
     );
   }
 
+  // 画面に評価の数字を出さないので、構造化データにも評価（aggregateRating）を入れない（2026-10-24 オーナー決定）
+  const { aggregateRating: _omitRating, ...restaurantLdNoRating } = restaurantJsonLd as Record<string, unknown>;
+  void _omitRating;
   return (
     <>
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(restaurantJsonLd) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(restaurantLdNoRating) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
       <GourmetNorenShop id={r.id} links={LIVE_LINKS} shop={r} />
     </>

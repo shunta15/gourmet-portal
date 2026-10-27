@@ -8,7 +8,7 @@ import { buildChapters, buildFlags, HERO_PICK, photoFor } from "@/lib/portal/nor
 import NorenHeroReal from "./NorenHeroReal";
 import Chapter from "@/components/portal/noren/Chapter";
 import Nobori from "@/components/portal/noren/Nobori";
-import { RELEASE_FEATURE, RELEASE_REST } from "@/lib/portal/noren/release";
+import { RELEASE_FEATURE } from "@/lib/portal/noren/release";
 import { FEATURE_KIND_ROUNDUP, FEATURE_ROUNDUP_WALK } from "@/lib/portal/noren/featureKinds";
 import OpenSearchBlock from "@/components/portal/noren/OpenSearchBlock";
 import { buildOpenSearchData } from "@/lib/portal/noren/openSearch";
@@ -33,7 +33,7 @@ function splitTitle(t: string): [string, string] {
 const PRINCIPLES = [
   { k: "誇張しない", en: "No exaggeration", body: "「最高」「絶品」といった言葉は使いません。住所、営業時間、写真など、確かめられることを書きます。" },
   { k: "順位をつけない", en: "No rankings", body: "点数や星、ランキングで店を並べません。このページの並びも、順位ではありません。" },
-  { k: "口コミを転載しない", en: "No reposted reviews", body: RELEASE_REST ? "口コミの文章は転載しません。評価の数字は、出典（Google）を明記したものだけを載せます。" : "ほかのサイトの口コミや評価は、掲載しません。" },
+  { k: "口コミを転載しない", en: "No reposted reviews", body: "ほかのサイトの口コミや評価は、掲載しません。" },
 ];
 
 export default async function GourmetNorenHomeReal({
