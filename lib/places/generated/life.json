@@ -9750,6 +9750,179 @@
         ],
         "checkedAt": "2026-10-27"
       }
+    },
+    {
+      "id": "li0063",
+      "vertical": "life",
+      "category": "shrine-temple",
+      "name": "源光寺",
+      "pref": "osaka",
+      "cityName": "大阪市北区",
+      "address": "大阪府大阪市北区豊崎2丁目3-23",
+      "lat": 34.709953,
+      "lng": 135.501256,
+      "phone": "06-6375-0070",
+      "url": "https://genkousyouja.wixsite.com/-site",
+      "website": "https://genkousyouja.wixsite.com/-site",
+      "mapUrl": "https://maps.google.com/?cid=843196533450944665",
+      "image": "/_portal/vshops/tri-life-255/g01.jpg",
+      "images": [
+        "/_portal/vshops/tri-life-255/g01.jpg",
+        "/_portal/vshops/tri-life-255/g02.jpg",
+        "/_portal/vshops/tri-life-255/g03.jpg",
+        "/_portal/vshops/tri-life-255/g04.jpg",
+        "/_portal/vshops/tri-life-255/g05.jpg",
+        "/_portal/vshops/tri-life-255/g06.jpg",
+        "/_portal/vshops/tri-life-255/g07.jpg",
+        "/_portal/vshops/tri-life-255/g08.jpg",
+        "/_portal/vshops/tri-life-255/g09.jpg",
+        "/_portal/vshops/tri-life-255/g10.jpg"
+      ],
+      "photos": [
+        {
+          "path": "/_portal/vshops/tri-life-255/g01.jpg",
+          "what": "瓦屋根の本堂と参道の石畳",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-life-255/g02.jpg",
+          "what": "山門と石碑のある境内の入り口",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-life-255/g03.jpg",
+          "what": "文字の書かれた細長い紙片を手に持つ様子",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-life-255/g04.jpg",
+          "what": "彫刻が施された軒下と扁額",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-life-255/g05.jpg",
+          "what": "樹木と石碑が並ぶ境内の様子",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-life-255/g06.jpg",
+          "what": "木製の引き戸がある裏口のような入り口",
+          "kind": "exterior",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-life-255/g07.jpg",
+          "what": "石造りの多重塔と周囲の石碑",
+          "kind": "exterior",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-life-255/g08.jpg",
+          "what": "木々に囲まれた石仏が並ぶ一角",
+          "kind": "exterior",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-life-255/g09.jpg",
+          "what": "屋根付きの回廊と石碑のある境内",
+          "kind": "exterior",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-life-255/g10.jpg",
+          "what": "寺号が彫られた木製の扁額",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 900
+        }
+      ],
+      "tags": [
+        "予約制"
+      ],
+      "article": {
+        "headline": "大阪市北区豊崎にある浄土宗の寺院。天平19年(747年)に行基菩薩が開山し、法然上人の再興を経て浄土宗に改められた",
+        "lede": "大阪市北区豊崎にある「源光寺」です。清浄瑠璃山念佛三昧院と号する浄土宗の寺院で、本尊は阿弥陀如来像です。大阪新四十八願所阿弥陀巡礼の第二番札所にもなっています。",
+        "sections": [
+          {
+            "heading": "場所と拝観",
+            "body": "住所は大阪府大阪市北区豊崎２丁目３−２３、電話は06-6375-0070です。堂内の拝観や御朱印を希望する場合は、事前に電話での連絡が必要です。拝観時間は全日9時から18時ですが、法事などにより拝観できないことがあります。"
+          },
+          {
+            "heading": "由緒",
+            "body": "天平19年(747年)、聖武天皇の勅願により行基菩薩が開山し、もとは平生寺と号しました。天治元年(1124年)に良忍上人が中興し、建永元年(1206年)には法然上人が荒廃していた旧跡の再興に尽力しています。承元3年(1209)に法然上人が詠んだ歌から「源光寺」の名がつき、浄土宗の寺院として復興しました。文政3年(1830)の火災で堂宇を焼失しましたが本尊は難を免れ、現在の堂宇は文久元年(1861)の再建によるものです。大阪新四十八願所阿弥陀巡礼の第二番札所にもなっています。"
+          },
+          {
+            "heading": "本尊と寺宝",
+            "body": "本尊の阿弥陀如来像は鎌倉後期の作と推測される立像で、大阪府有形文化財に指定されています。秘仏のため、開帳は両彼岸の中日のみです。御旅姿の法然上人像も所蔵しています。境内には西国三十三カ所観音堂や鐘楼も残っています。"
+          },
+          {
+            "heading": "法要と永代供養",
+            "body": "月参りや祥月参り、お盆参りのほか、一周忌や三回忌などの年忌法要、安産祈願や七五三、仏前結婚式も受け付けています。彼岸会や盂蘭盆会などの年間行事もおこなっています。永代供養墓『結縁墓』を建立しており、個人墓と合祀墓の二種類があります。"
+          }
+        ],
+        "menus": [
+          {
+            "name": "月参り"
+          },
+          {
+            "name": "祥月参り"
+          },
+          {
+            "name": "お盆参り"
+          },
+          {
+            "name": "年忌法要"
+          },
+          {
+            "name": "安産祈願"
+          },
+          {
+            "name": "七五三"
+          },
+          {
+            "name": "仏前結婚式"
+          },
+          {
+            "name": "永代供養墓「結縁墓」"
+          }
+        ],
+        "sources": [
+          {
+            "label": "公式サイト",
+            "url": "https://genkousyouja.wixsite.com/-site"
+          },
+          {
+            "label": "公式サイト(源光寺の歴史)",
+            "url": "https://genkousyouja.wixsite.com/-site/blank-5"
+          },
+          {
+            "label": "公式サイト(各種法要)",
+            "url": "https://genkousyouja.wixsite.com/-site/blank-3"
+          },
+          {
+            "label": "公式サイト(永代供養墓)",
+            "url": "https://genkousyouja.wixsite.com/-site/blank-2"
+          },
+          {
+            "label": "Google マップ",
+            "url": "https://maps.google.com/?cid=843196533450944665"
+          }
+        ],
+        "checkedAt": "2026-10-27"
+      }
     }
   ]
 }
