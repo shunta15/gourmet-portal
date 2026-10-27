@@ -1,0 +1,40 @@
+{
+  "tab": "トリニティアポ",
+  "tabEn": "tri-activity",
+  "row": 242,
+  "sheet": {
+    "name": "工房ヤマセン辻佛檀",
+    "address": "",
+    "url": "https://www.google.com/maps/search/?api=1&query=%E5%B7%A5%E6%88%BF%E3%83%A4%E3%83%9E%E3%82%BB%E3%83%B3%E8%BE%BB%E4%BD%9B%E6%AA%80%20076-522-2094%20%E3%80%92937-0054%20%E5%AF%8C%E5%B1%B1%E7%9C%8C%E9%AD%9A%E6%B4%A5%E5%B8%82%E9%87%91%E6%B5%A6%E7%94%BA%EF%BC%94%E2%88%92%EF%BC%91%EF%BC%90",
+    "type": "体験",
+    "d1": "",
+    "d2": ""
+  },
+  "urlKind": "mapsApi",
+  "route": "第1段(verify-gbp.mjs)で確認済み",
+  "verdict": "一致",
+  "verdictReason": "手がかり: 店名＋電話＋住所(番地まで)。電話が一致／店名: exact(シート「工房ヤマセン辻佛檀」/ マップ「(株)工房ヤマセン辻佛檀」)／住所(シート): exact・町名・番地とも一致",
+  "place": {
+    "name": "(株)工房ヤマセン辻佛檀",
+    "address": "富山県魚津市金浦町４−１０",
+    "category": "仏壇販売店",
+    "lat": 36.8191766,
+    "lng": 137.4002364,
+    "gbpUrl": "https://maps.google.com/?cid=829131605857744042",
+    "phone": "0765-22-2094",
+    "website": "https://red094024.studio.site/",
+    "hours": {
+      "月": "08:00–19:00",
+      "火": "08:00–19:00",
+      "水": "08:00–19:00",
+      "木": "08:00–19:00",
+      "金": "08:00–19:00",
+      "土": "08:00–19:00",
+      "日": "08:00–19:00"
+    },
+    "reserveLinks": [],
+    "statusSignals": [],
+    "closedSignal": false
+  },
+  "fetchedAt": "2026-10-27T09:16:16.278Z"
+}

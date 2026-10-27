@@ -2780,6 +2780,833 @@
         ],
         "checkedAt": "2026-10-26"
       }
+    },
+    {
+      "id": "st0016",
+      "vertical": "stay",
+      "category": "pension",
+      "name": "guesthouse &cafe ハレテル",
+      "pref": "shimane",
+      "cityName": "益田市",
+      "address": "島根県益田市高津町イ2577",
+      "lat": 34.6879384,
+      "lng": 131.7988783,
+      "phone": "080-1928-3946",
+      "url": "https://haretel.com/",
+      "website": "https://haretel.com/",
+      "mapUrl": "https://maps.google.com/?cid=15808842378922007248",
+      "image": "/_portal/vshops/tri-stay-53/g01.jpg",
+      "images": [
+        "/_portal/vshops/tri-stay-53/g01.jpg",
+        "/_portal/vshops/tri-stay-53/g02.jpg",
+        "/_portal/vshops/tri-stay-53/g03.jpg",
+        "/_portal/vshops/tri-stay-53/g04.jpg",
+        "/_portal/vshops/tri-stay-53/g06.jpg",
+        "/_portal/vshops/tri-stay-53/g07.jpg",
+        "/_portal/vshops/tri-stay-53/g08.jpg",
+        "/_portal/vshops/tri-stay-53/g09.jpg",
+        "/_portal/vshops/tri-stay-53/g10.jpg",
+        "/_portal/vshops/tri-stay-53/s01.jpg"
+      ],
+      "photos": [
+        {
+          "path": "/_portal/vshops/tri-stay-53/g01.jpg",
+          "what": "夕景の中に建つ建物の外観",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-stay-53/g02.jpg",
+          "what": "砂利の小径が続く建物の入り口",
+          "kind": "exterior",
+          "width": 675,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-stay-53/g03.jpg",
+          "what": "木製パーテーションで仕切られた二段ベッドの部屋",
+          "kind": "room",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-stay-53/g04.jpg",
+          "what": "洗面台が並ぶ共用の洗面スペース",
+          "kind": "common",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-stay-53/g06.jpg",
+          "what": "海を望むウッドデッキからの夕景",
+          "kind": "view",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-stay-53/g07.jpg",
+          "what": "夜に照明がともる建物の外観",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-stay-53/g08.jpg",
+          "what": "土鍋に盛られた料理",
+          "kind": "meal",
+          "width": 1200,
+          "height": 675
+        },
+        {
+          "path": "/_portal/vshops/tri-stay-53/g09.jpg",
+          "what": "テーブル席が並ぶ店内の共用スペース",
+          "kind": "common",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-stay-53/g10.jpg",
+          "what": "夜の海と空を望む景色",
+          "kind": "view",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-stay-53/s01.jpg",
+          "what": "木製パーテーションの二段ベッドが並ぶ客室",
+          "kind": "room",
+          "width": 960,
+          "height": 640
+        }
+      ],
+      "tags": [
+        "一人旅"
+      ],
+      "article": {
+        "headline": "島根県益田市、海と山に囲まれた土地に建つゲストハウス&カフェ。客室はシングルと女性専用・男女兼用のドミトリーの3タイプ",
+        "lede": "益田市にある「guesthouse &cafe ハレテル」です。海と山に囲まれた高津町に建ち、客室はシングル、女性専用ドミトリー、男女兼用ドミトリーの3タイプです。敷地内にはオーシャンビューのカフェとシェアオフィス、サウナがあります。",
+        "sections": [
+          {
+            "heading": "客室",
+            "body": "客室はシングル、女性専用ドミトリー「KANOA」、男女兼用ドミトリー「MAHINA」の3タイプです。受け入れ人数は女性専用ドミトリーが4名、男女兼用ドミトリーが8名、シングルが1名です。マットレスとピローはオーストラリア発のブランド「Ecosa」を使用しています。一人旅でも利用できます。"
+          },
+          {
+            "heading": "共用設備とカフェ",
+            "body": "共用のシャワールームは施錠できる個室が2室です。カフェは海を望むヴィンテージナチュラルな内装です。敷地内には海を望むシェアオフィスと、サウナ「SAUNA BREEZE」があります。"
+          },
+          {
+            "heading": "アクセスとチェックイン",
+            "body": "JR益田駅からはバス小浜江崎線で約11分の「持石上」から徒歩約5分です。萩・石見空港からは車で約3分です。チェックインは14時から、18時以降は要連絡です。チェックアウトは11時までです。"
+          }
+        ],
+        "sources": [
+          {
+            "label": "公式サイト",
+            "url": "https://haretel.com/"
+          },
+          {
+            "label": "公式サイト(客室・施設)",
+            "url": "https://haretel.com/guestroom.php"
+          },
+          {
+            "label": "公式サイト(道のり&観光)",
+            "url": "https://haretel.com/access.php"
+          },
+          {
+            "label": "Google マップ",
+            "url": "https://maps.google.com/?cid=15808842378922007248"
+          }
+        ],
+        "checkedAt": "2026-10-27"
+      },
+      "attributes": {
+        "roomTypes": [
+          "シングル",
+          "女性専用ドミトリー KANOA",
+          "男女兼用ドミトリー MAHINA"
+        ]
+      }
+    },
+    {
+      "id": "st0017",
+      "vertical": "stay",
+      "category": "ryokan",
+      "name": "松栄館",
+      "pref": "kagoshima",
+      "cityName": "伊佐市",
+      "address": "鹿児島県伊佐市16",
+      "lat": 32.0606914,
+      "lng": 130.6072691,
+      "phone": "0995-22-0035",
+      "url": "https://shoeikan-isa.com/",
+      "website": "https://shoeikan-isa.com/",
+      "mapUrl": "https://maps.google.com/?cid=17827085928200923952",
+      "image": "/_portal/vshops/tri-stay-67/g01.jpg",
+      "images": [
+        "/_portal/vshops/tri-stay-67/g01.jpg",
+        "/_portal/vshops/tri-stay-67/g02.jpg",
+        "/_portal/vshops/tri-stay-67/g04.jpg",
+        "/_portal/vshops/tri-stay-67/g05.jpg",
+        "/_portal/vshops/tri-stay-67/g06.jpg",
+        "/_portal/vshops/tri-stay-67/g07.jpg",
+        "/_portal/vshops/tri-stay-67/g08.jpg",
+        "/_portal/vshops/tri-stay-67/g09.jpg",
+        "/_portal/vshops/tri-stay-67/s01.jpg",
+        "/_portal/vshops/tri-stay-67/s10.jpg",
+        "/_portal/vshops/tri-stay-67/s11.jpg",
+        "/_portal/vshops/tri-stay-67/s12.jpg",
+        "/_portal/vshops/tri-stay-67/s13.jpg",
+        "/_portal/vshops/tri-stay-67/s14.jpg",
+        "/_portal/vshops/tri-stay-67/s15.jpg"
+      ],
+      "photos": [
+        {
+          "path": "/_portal/vshops/tri-stay-67/g01.jpg",
+          "what": "赤い外壁の2階建ての建物外観",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-stay-67/g02.jpg",
+          "what": "ベッドと机のある洋室",
+          "kind": "room",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-stay-67/g04.jpg",
+          "what": "彩り豊かな二段の御膳",
+          "kind": "meal",
+          "width": 1200,
+          "height": 871
+        },
+        {
+          "path": "/_portal/vshops/tri-stay-67/g05.jpg",
+          "what": "布団を敷いた畳の和室",
+          "kind": "room",
+          "width": 679,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-stay-67/g06.jpg",
+          "what": "長テーブルと椅子が並ぶ室内",
+          "kind": "common",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-stay-67/g07.jpg",
+          "what": "赤い外壁の旅館の建物外観",
+          "kind": "exterior",
+          "width": 550,
+          "height": 412
+        },
+        {
+          "path": "/_portal/vshops/tri-stay-67/g08.jpg",
+          "what": "木目調のカウンターがあるロビー",
+          "kind": "common",
+          "width": 1200,
+          "height": 679
+        },
+        {
+          "path": "/_portal/vshops/tri-stay-67/g09.jpg",
+          "what": "格子戸と植栽のある玄関先",
+          "kind": "exterior",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-stay-67/s01.jpg",
+          "what": "タレのかかった肉料理と小鉢の膳",
+          "kind": "meal",
+          "width": 1280,
+          "height": 834
+        },
+        {
+          "path": "/_portal/vshops/tri-stay-67/s10.jpg",
+          "what": "天ぷらとご飯、汁物がそろった膳",
+          "kind": "meal",
+          "width": 1280,
+          "height": 834
+        },
+        {
+          "path": "/_portal/vshops/tri-stay-67/s11.jpg",
+          "what": "薬味をのせた肉料理と小鉢の膳",
+          "kind": "meal",
+          "width": 1280,
+          "height": 834
+        },
+        {
+          "path": "/_portal/vshops/tri-stay-67/s12.jpg",
+          "what": "籠盛りの天ぷらと刺身がのった膳",
+          "kind": "meal",
+          "width": 1280,
+          "height": 834
+        },
+        {
+          "path": "/_portal/vshops/tri-stay-67/s13.jpg",
+          "what": "籠に盛られた天ぷらと小鉢の膳",
+          "kind": "meal",
+          "width": 1280,
+          "height": 834
+        },
+        {
+          "path": "/_portal/vshops/tri-stay-67/s14.jpg",
+          "what": "煮卵と肉料理がのった朱塗りの膳",
+          "kind": "meal",
+          "width": 1280,
+          "height": 834
+        },
+        {
+          "path": "/_portal/vshops/tri-stay-67/s15.jpg",
+          "what": "白身魚にハーブを添えた皿と小鉢",
+          "kind": "meal",
+          "width": 1280,
+          "height": 834
+        }
+      ],
+      "tags": [
+        "一人旅"
+      ],
+      "article": {
+        "headline": "鹿児島県伊佐市にある、大正七年創業の旅館。客室は和室シングルTYPE・洋室シングルTYPE・和室ツインTYPEの3タイプがある。",
+        "lede": "伊佐市にある「松栄館」です。大正七年創業の宿で、客室は和室シングルTYPE、洋室シングルTYPE、和室ツインTYPEの3タイプがあります。",
+        "sections": [
+          {
+            "heading": "場所とアクセス",
+            "body": "住所は〒895-2513 鹿児島県伊佐市大口上町16-5、電話は0995-22-0035です。九州縦貫自動車道の栗野インターから20キロ（約25分）、横川インターから25キロ（約30分）、人吉インターから30キロ（約35分）の距離にあります。チェックインは16時から21時30分、チェックアウトは10時までです。"
+          },
+          {
+            "heading": "客室とお風呂",
+            "body": "客室は、1名用の和室シングルTYPE（6畳、全3部屋）、1名用の洋室シングルTYPE（8.2平方メートルのベッドタイプ、全3部屋）、1〜2名用の和室ツインTYPE（8畳）の3タイプです。お風呂はバスタブを2つ繋げた広い洗い場があり、入浴時間は16時から22時までです。"
+          },
+          {
+            "heading": "食事",
+            "body": "夕食には、黒毛和牛の「すき焼き」が中心の「四代目スペシャル」、黒豚のタレ料理を中心にした「四代目御膳」、観光客向けの「四代目ライト」の3コースがあります。朝食は「朝の贅沢和朝食」です。食事会場は1階のカフェですが、現在は休業しています。"
+          }
+        ],
+        "menus": [
+          {
+            "name": "四代目スペシャル"
+          },
+          {
+            "name": "四代目御膳"
+          },
+          {
+            "name": "四代目ライト"
+          },
+          {
+            "name": "朝の贅沢和朝食"
+          }
+        ],
+        "sources": [
+          {
+            "label": "公式サイト",
+            "url": "https://shoeikan-isa.com/"
+          },
+          {
+            "label": "公式サイト(シンプル旅館)",
+            "url": "https://shoeikan-isa.com/facilities.html"
+          },
+          {
+            "label": "公式サイト(コスパ最強食事)",
+            "url": "https://shoeikan-isa.com/cuisine.html"
+          },
+          {
+            "label": "公式サイト(伊佐って・アクセス)",
+            "url": "https://shoeikan-isa.com/about.html"
+          },
+          {
+            "label": "Google マップ",
+            "url": "https://maps.google.com/?cid=17827085928200923952"
+          }
+        ],
+        "checkedAt": "2026-10-27"
+      },
+      "attributes": {
+        "roomTypes": [
+          "和室シングルTYPE",
+          "洋室シングルTYPE",
+          "和室ツインTYPE"
+        ]
+      }
+    },
+    {
+      "id": "st0018",
+      "vertical": "stay",
+      "category": "ryokan",
+      "name": "橋本屋旅館",
+      "pref": "ishikawa",
+      "cityName": "金沢市",
+      "address": "石川県金沢市十一屋町3-30 旅館橋本屋",
+      "lat": 36.544479,
+      "lng": 136.66122,
+      "phone": "076-243-1631",
+      "url": "http://hashimotoya-kanazawa.com/",
+      "website": "http://hashimotoya-kanazawa.com/",
+      "mapUrl": "https://maps.google.com/?cid=10177181657520906533",
+      "image": "/_portal/vshops/tri-stay-70/g01.jpg",
+      "images": [
+        "/_portal/vshops/tri-stay-70/g01.jpg",
+        "/_portal/vshops/tri-stay-70/g02.jpg",
+        "/_portal/vshops/tri-stay-70/g03.jpg",
+        "/_portal/vshops/tri-stay-70/g04.jpg",
+        "/_portal/vshops/tri-stay-70/g05.jpg",
+        "/_portal/vshops/tri-stay-70/g06.jpg",
+        "/_portal/vshops/tri-stay-70/g07.jpg",
+        "/_portal/vshops/tri-stay-70/g08.jpg",
+        "/_portal/vshops/tri-stay-70/g09.jpg",
+        "/_portal/vshops/tri-stay-70/g10.jpg",
+        "/_portal/vshops/tri-stay-70/s01.jpg",
+        "/_portal/vshops/tri-stay-70/s03.jpg",
+        "/_portal/vshops/tri-stay-70/s04.jpg",
+        "/_portal/vshops/tri-stay-70/s15.jpg",
+        "/_portal/vshops/tri-stay-70/s16.jpg",
+        "/_portal/vshops/tri-stay-70/s17.jpg",
+        "/_portal/vshops/tri-stay-70/s18.jpg"
+      ],
+      "photos": [
+        {
+          "path": "/_portal/vshops/tri-stay-70/g01.jpg",
+          "what": "夜に明かりがともる建物の外観",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-stay-70/g02.jpg",
+          "what": "ベッドと座卓がある和洋室",
+          "kind": "room",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-stay-70/g03.jpg",
+          "what": "木目調の床と浴槽のある浴室",
+          "kind": "bath",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-stay-70/g04.jpg",
+          "what": "洗面台とバスタブのある浴室",
+          "kind": "bath",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-stay-70/g05.jpg",
+          "what": "障子のある畳の部屋に座卓と椅子",
+          "kind": "room",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-stay-70/g06.jpg",
+          "what": "畳敷きのベンチが並ぶ館内の通路",
+          "kind": "common",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-stay-70/g07.jpg",
+          "what": "「旅館橋本屋」の看板がある入り口",
+          "kind": "exterior",
+          "width": 640,
+          "height": 479
+        },
+        {
+          "path": "/_portal/vshops/tri-stay-70/g08.jpg",
+          "what": "赤い絨毯の階段がある館内",
+          "kind": "common",
+          "width": 640,
+          "height": 480
+        },
+        {
+          "path": "/_portal/vshops/tri-stay-70/g09.jpg",
+          "what": "紅葉が水面に映る公園の風景",
+          "kind": "view",
+          "width": 1200,
+          "height": 790
+        },
+        {
+          "path": "/_portal/vshops/tri-stay-70/g10.jpg",
+          "what": "木目調の壁とベンチがあるサウナ室",
+          "kind": "bath",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-stay-70/s01.jpg",
+          "what": "木々に囲まれた建物の外観",
+          "kind": "exterior",
+          "width": 1280,
+          "height": 720
+        },
+        {
+          "path": "/_portal/vshops/tri-stay-70/s03.jpg",
+          "what": "灯りがともる石灯籠と入り口付近",
+          "kind": "exterior",
+          "width": 800,
+          "height": 476
+        },
+        {
+          "path": "/_portal/vshops/tri-stay-70/s04.jpg",
+          "what": "カニを使った料理",
+          "kind": "meal",
+          "width": 800,
+          "height": 476
+        },
+        {
+          "path": "/_portal/vshops/tri-stay-70/s15.jpg",
+          "what": "百合の花をいけた飾り",
+          "kind": "common",
+          "width": 800,
+          "height": 476
+        },
+        {
+          "path": "/_portal/vshops/tri-stay-70/s16.jpg",
+          "what": "ベッドが2台並ぶ和洋室",
+          "kind": "room",
+          "width": 800,
+          "height": 476
+        },
+        {
+          "path": "/_portal/vshops/tri-stay-70/s17.jpg",
+          "what": "夜桜が並ぶ川沿いの風景",
+          "kind": "view",
+          "width": 800,
+          "height": 476
+        },
+        {
+          "path": "/_portal/vshops/tri-stay-70/s18.jpg",
+          "what": "お茶と和菓子が並ぶ盆",
+          "kind": "meal",
+          "width": 800,
+          "height": 476
+        }
+      ],
+      "tags": [],
+      "article": {
+        "headline": "石川県金沢市十一屋町にある小さな和風旅館。客室は和室・和洋室の全8室で、大浴場は男女別に1カ所ずつある。",
+        "lede": "金沢市にある「旅館 橋本屋」です。加賀料理の創作会席を提供する和風旅館で、客室は和室・和洋室の全8室、すべて禁煙です。金沢の観光スポットへは車で10〜15分の立地にあります。",
+        "sections": [
+          {
+            "heading": "場所と客室",
+            "body": "隣には八幡神社があり、金沢の観光スポットへは車で10〜15分の立地です。客室は和室8畳、和室10畳(バス・トイレ付き)、和室16畳、シモンズベッドセミダブルツイン和洋室10畳(2室限定)の4タイプで、全8室はすべて禁煙です。すべての客室に温水洗浄便座トイレと洗面台が備わります。"
+          },
+          {
+            "heading": "お風呂と食事",
+            "body": "大浴場は男女別に1カ所ずつあり、入浴時間は15時から23時、朝は6時から9時です。温泉ではありません。和室10畳タイプには専用のお風呂が備わります。夕食と朝食は1階のお食事処で提供されます。"
+          },
+          {
+            "heading": "予約とアクセス",
+            "body": "チェックインは15時から(最終チェックインは21時)、チェックアウトは10時までです。駐車場は10台分あり、送迎サービスはありません。支払いは現金またはカード(VISA・Master Card・JCB)が使えます。館内は全館Wi-Fiが使えます。予約は公式サイトの予約ページから行えます。"
+          }
+        ],
+        "sources": [
+          {
+            "label": "公式サイト",
+            "url": "https://hashimotoya-kanazawa.com/"
+          },
+          {
+            "label": "公式サイト(客室・館内)",
+            "url": "https://hashimotoya-kanazawa.com/stay.php"
+          },
+          {
+            "label": "公式サイト(周辺観光)",
+            "url": "https://hashimotoya-kanazawa.com/guide.php"
+          },
+          {
+            "label": "公式サイト(アクセス)",
+            "url": "https://hashimotoya-kanazawa.com/access.php"
+          },
+          {
+            "label": "Google マップ",
+            "url": "https://maps.google.com/?cid=10177181657520906533"
+          }
+        ],
+        "checkedAt": "2026-10-27"
+      },
+      "attributes": {
+        "roomTypes": [
+          "シモンズベッドセミダブルツイン 和洋室 10畳",
+          "和室 8畳",
+          "和室 10畳",
+          "和室 16畳"
+        ]
+      }
+    },
+    {
+      "id": "st0019",
+      "vertical": "stay",
+      "category": "ryokan",
+      "name": "鉛温泉 藤三旅館",
+      "pref": "iwate",
+      "cityName": "花巻市",
+      "address": "岩手県花巻市鉛中平75-1",
+      "lat": 39.4655517,
+      "lng": 140.9917488,
+      "phone": "0198-25-2311",
+      "url": "https://namari-onsen-ryokan.com//",
+      "website": "https://namari-onsen-ryokan.com//",
+      "mapUrl": "https://maps.google.com/?cid=2285549910079157501",
+      "image": "/_portal/vshops/tri-stay-79/g01.jpg",
+      "images": [
+        "/_portal/vshops/tri-stay-79/g01.jpg",
+        "/_portal/vshops/tri-stay-79/g02.jpg",
+        "/_portal/vshops/tri-stay-79/g03.jpg",
+        "/_portal/vshops/tri-stay-79/g04.jpg",
+        "/_portal/vshops/tri-stay-79/g05.jpg",
+        "/_portal/vshops/tri-stay-79/g06.jpg",
+        "/_portal/vshops/tri-stay-79/g07.jpg",
+        "/_portal/vshops/tri-stay-79/g08.jpg",
+        "/_portal/vshops/tri-stay-79/g09.jpg",
+        "/_portal/vshops/tri-stay-79/g10.jpg",
+        "/_portal/vshops/tri-stay-79/s01.jpg",
+        "/_portal/vshops/tri-stay-79/s02.jpg",
+        "/_portal/vshops/tri-stay-79/s03.jpg",
+        "/_portal/vshops/tri-stay-79/s04.jpg",
+        "/_portal/vshops/tri-stay-79/s05.jpg",
+        "/_portal/vshops/tri-stay-79/s06.jpg",
+        "/_portal/vshops/tri-stay-79/s07.jpg",
+        "/_portal/vshops/tri-stay-79/s08.jpg",
+        "/_portal/vshops/tri-stay-79/s10.jpg",
+        "/_portal/vshops/tri-stay-79/s11.jpg",
+        "/_portal/vshops/tri-stay-79/s12.jpg",
+        "/_portal/vshops/tri-stay-79/s18.jpg"
+      ],
+      "photos": [
+        {
+          "path": "/_portal/vshops/tri-stay-79/g01.jpg",
+          "what": "雪が積もる夜の旅館の外観",
+          "kind": "exterior",
+          "width": 767,
+          "height": 1020
+        },
+        {
+          "path": "/_portal/vshops/tri-stay-79/g02.jpg",
+          "what": "緑を望む大きな窓のある広間",
+          "kind": "common",
+          "width": 1200,
+          "height": 675
+        },
+        {
+          "path": "/_portal/vshops/tri-stay-79/g03.jpg",
+          "what": "布団が敷かれた和室の客室",
+          "kind": "room",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-stay-79/g04.jpg",
+          "what": "石を組んだ丸い浴槽の風呂",
+          "kind": "bath",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-stay-79/g05.jpg",
+          "what": "窓際に椅子を置いた和室の客室",
+          "kind": "room",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-stay-79/g06.jpg",
+          "what": "大きな窓から緑を望む岩造りの浴室",
+          "kind": "bath",
+          "width": 1200,
+          "height": 801
+        },
+        {
+          "path": "/_portal/vshops/tri-stay-79/g07.jpg",
+          "what": "ソファとテレビのある和室の客室",
+          "kind": "room",
+          "width": 1200,
+          "height": 801
+        },
+        {
+          "path": "/_portal/vshops/tri-stay-79/g08.jpg",
+          "what": "緑に囲まれた渓流の風景",
+          "kind": "view",
+          "width": 1200,
+          "height": 675
+        },
+        {
+          "path": "/_portal/vshops/tri-stay-79/g09.jpg",
+          "what": "刺身や鍋が並ぶ夕食の膳",
+          "kind": "meal",
+          "width": 1200,
+          "height": 801
+        },
+        {
+          "path": "/_portal/vshops/tri-stay-79/g10.jpg",
+          "what": "ご飯や卵が並ぶ朝食の膳",
+          "kind": "meal",
+          "width": 1200,
+          "height": 801
+        },
+        {
+          "path": "/_portal/vshops/tri-stay-79/s01.jpg",
+          "what": "暗がりに渓流の滝が浮かぶ風景",
+          "kind": "view",
+          "width": 1280,
+          "height": 690
+        },
+        {
+          "path": "/_portal/vshops/tri-stay-79/s02.jpg",
+          "what": "渓流の滝を写した風景",
+          "kind": "view",
+          "width": 1105,
+          "height": 473
+        },
+        {
+          "path": "/_portal/vshops/tri-stay-79/s03.jpg",
+          "what": "木造の高い天井がある浴室",
+          "kind": "bath",
+          "width": 810,
+          "height": 465
+        },
+        {
+          "path": "/_portal/vshops/tri-stay-79/s04.jpg",
+          "what": "石造りの浴槽と高い木組みの天井",
+          "kind": "bath",
+          "width": 1280,
+          "height": 720
+        },
+        {
+          "path": "/_portal/vshops/tri-stay-79/s05.jpg",
+          "what": "障子と椅子のある和室の一角",
+          "kind": "room",
+          "width": 1280,
+          "height": 800
+        },
+        {
+          "path": "/_portal/vshops/tri-stay-79/s06.jpg",
+          "what": "雪景色を望む露天風呂",
+          "kind": "bath",
+          "width": 1280,
+          "height": 802
+        },
+        {
+          "path": "/_portal/vshops/tri-stay-79/s07.jpg",
+          "what": "窓辺に椅子を置いた和室の客室",
+          "kind": "room",
+          "width": 1280,
+          "height": 463
+        },
+        {
+          "path": "/_portal/vshops/tri-stay-79/s08.jpg",
+          "what": "蟹や鍋が並ぶ会席料理",
+          "kind": "meal",
+          "width": 1200,
+          "height": 678
+        },
+        {
+          "path": "/_portal/vshops/tri-stay-79/s10.jpg",
+          "what": "大きな窓のある畳敷きのラウンジ",
+          "kind": "common",
+          "width": 1105,
+          "height": 716
+        },
+        {
+          "path": "/_portal/vshops/tri-stay-79/s11.jpg",
+          "what": "赤い絨毯が敷かれたロビー",
+          "kind": "common",
+          "width": 1280,
+          "height": 761
+        },
+        {
+          "path": "/_portal/vshops/tri-stay-79/s12.jpg",
+          "what": "障子で仕切られた続き間の和室",
+          "kind": "room",
+          "width": 1280,
+          "height": 768
+        },
+        {
+          "path": "/_portal/vshops/tri-stay-79/s18.jpg",
+          "what": "川沿いに建つ旅館の夜景",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 610
+        }
+      ],
+      "tags": [
+        "温泉",
+        "記念日",
+        "一人旅"
+      ],
+      "article": {
+        "headline": "岩手県花巻市の花巻南温泉峡「鉛温泉」にある一軒宿「藤三旅館」。総けやき造りの本館と鉄筋造りの別館からなり、5本の源泉を持つ温泉旅館です。",
+        "lede": "花巻市にある「鉛温泉 藤三旅館」です。1786年に長屋を建てて温泉旅館として開業したのが始まりで、花巻南温泉峡「鉛温泉」唯一の一軒宿として豊沢川畔に建っています。",
+        "sections": [
+          {
+            "heading": "歴史",
+            "body": "鉛温泉株式会社(藤三旅館)の創業は天保12年(1841年)で、昭和17年に株式会社へ組織変更しました。温泉名「白猿の湯」は、白猿が泉で手足を洗う姿を見たことに由来します。文豪・田宮虎彦は本館玄関3階の20号室に逗留して小説「銀心中」を執筆し、宮沢賢治の童話「なめとこ山の熊」にも「鉛の湯」の一節が残ります。"
+          },
+          {
+            "heading": "温泉と風呂",
+            "body": "鉛温泉は5本の源泉を持ち、館内全4浴場はすべて源泉100%掛け流しです。温泉は沸かさず、薄めず、循環させずに届けられています。本館は総けやき造りの三階建てで、客室の多くはトイレ・洗面なしの和室です。隣接する別館は鉄筋造りで、和洋室8畳はトイレ・洗面付きです。"
+          },
+          {
+            "heading": "客室",
+            "body": "本館には和室8帖+6帖をはじめ、和室中心の客室があります。別館は鉄筋造りで、和室12畳の客室もあります。湯治部にはレトロな和室6~8畳の客室があります。和室7帖の客室は定員1~2名です。"
+          },
+          {
+            "heading": "食事",
+            "body": "夕食は梅膳・竹膳・松膳の3種類から選べます。梅膳には花巻産白金豚の季節鍋が付き、竹膳はA5ランクの岩手和牛をしゃぶしゃぶまたはすき焼きで楽しめます。朝食はごはんやお魚、お漬物など地産品を使います。食事処「灯」は格子の間仕切りがある半個室感覚の空間です。"
+          }
+        ],
+        "menus": [
+          {
+            "name": "梅膳"
+          },
+          {
+            "name": "竹膳"
+          },
+          {
+            "name": "松膳"
+          }
+        ],
+        "sources": [
+          {
+            "label": "公式サイト",
+            "url": "https://namari-onsen-ryokan.com//"
+          },
+          {
+            "label": "公式サイト(藤三旅館について)",
+            "url": "https://namari-onsen-ryokan.com/about/"
+          },
+          {
+            "label": "公式サイト(部屋)",
+            "url": "https://namari-onsen-ryokan.com/room/"
+          },
+          {
+            "label": "公式サイト(お料理)",
+            "url": "https://namari-onsen-ryokan.com/menu/"
+          },
+          {
+            "label": "Google マップ",
+            "url": "https://maps.google.com/?cid=2285549910079157501"
+          }
+        ],
+        "checkedAt": "2026-10-27"
+      },
+      "attributes": {
+        "roomTypes": [
+          "和室8帖+6帖",
+          "和室8畳+4畳",
+          "和室2階18号室12畳、3階31号室10畳",
+          "和室7帖",
+          "和室8帖+2帖",
+          "和室12帖+2帖",
+          "渓流を望む【和室8畳】鉄筋建築",
+          "「湯治部」レトロな【和室6～8畳】"
+        ]
+      }
     }
   ]
 }

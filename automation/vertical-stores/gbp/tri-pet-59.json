@@ -1,0 +1,40 @@
+{
+  "tab": "トリニティアポ",
+  "tabEn": "tri-pet",
+  "row": 59,
+  "sheet": {
+    "name": "トリミングサロン little",
+    "address": "",
+    "url": "https://www.google.com/search?q=090-8187-9677%09Trimming+salon+little%09%E6%84%9B%E7%9F%A5%E7%9C%8C&sca_esv=3d2c9b4d72a2561a&sxsrf=APpeQnsnxRkjwJS18SyDGEZzsN04vw1NDQ%3A1792037846326&ei=1lPQari-E8iPseMPjILI4QI&biw=1060&bih=1253&uact=5&oq=090-8187-9677%09Trimming+salon+little%09%E6%84%9B%E7%9F%A5%E7%9C%8C&gs_lp=Egxnd3Mtd2l6LXNlcnAiLTA5MC04MTg3LTk2NzcJVHJpbW1pbmcgc2Fsb24gbGl0dGxlCeaEm-efpeecjDIFEAAY7wUyCBAAGIAEGKIEMgUQABjvBTIFEAAY7wUyCBAAGIAEGKIESOAGUIkFWIkFcAF4AZABAJgBbqABbqoBAzAuMbgBA8gBAPgBAvgBAZgCAqACeKgCCsICEBAjGKIHGJ4GGPAFGOoCGCfCAhAQIxjwBRieBhiiBxjqAhgnwgIHECMY6gIYJ8ICDRAjGKIHGJ4GGOoCGCeYAwXxBWkqni_2yO9-kgcDMS4xoAeMArIHAzAuMbgHc8IHAzItMsgHB4AIAQ&sclient=gws-wiz-serp#sv=CCYSiwMKEgoDdGJzEgtscmY6ITNzSUFFPQoyCgFxEi0wOTAtODE4Ny05Njc3CVRyaW1taW5nIHNhbG9uIGxpdHRsZQnmhJvnn6XnnIwKBwoDdWRtEgAQARoQcHYtL2cvMTFxOXJyOWRfaCpECg0vZy8xMXE5cnI5ZF9oIikKIzA5MC04MTg3LTk2NzcgVHJpbW1pbmcgc2Fsb24gbGl0dGxlEAIYA4kB_1YCbs5SFlsy3QEKLTA5MC04MTg3LTk2NzcJVHJpbW1pbmcgc2Fsb24gbGl0dGxlCeaEm-efpeecjEjv59L7praAgAhaRhAAEAEQAhADEAQQBRgDGAQYBRgGGAciLjA5MCA4MTg3IDk2NzcgdHJpbW1pbmcgc2Fsb24gbGl0dGxlIOaEm-efpSDnnIySAQtwZXRfZ3Jvb21lcpoBRENpOURRVWxSUVVOdlpFTm9kSGxqUmpsdlQyeEpNR1JxYXpCVlZFSm9XV3QzZUZkck5WSlNNbFpDVkcxV2VHSnJSUkFC-gEECA8QIRgKILHJytAJ",
+    "type": "ペット",
+    "d1": "",
+    "d2": ""
+  },
+  "urlKind": "search",
+  "route": "第1段(verify-gbp.mjs)で確認済み",
+  "verdict": "一致",
+  "verdictReason": "電話が一致／店名: exact(シート「トリミングサロン little」/ マップ「トリミングサロン little」)／住所(検索URL): none・町名までがちがう（シート:愛知県 / マップ:愛知県春日井市松河戸町）",
+  "place": {
+    "name": "トリミングサロン little",
+    "address": "愛知県春日井市松河戸町４丁目２−１２",
+    "category": "トリミングサロン",
+    "lat": 35.2236854,
+    "lng": 136.9668342,
+    "gbpUrl": "https://maps.google.com/?cid=6563524553501464319",
+    "phone": "090-8187-9677",
+    "website": "https://www.trimmingsalon-little.com/",
+    "hours": {
+      "月": "09:00–17:00",
+      "火": "09:00–17:00",
+      "水": "定休日",
+      "木": "09:00–17:00",
+      "金": "09:00–17:00",
+      "土": "09:00–17:00",
+      "日": "09:00–17:00"
+    },
+    "reserveLinks": [],
+    "statusSignals": [],
+    "closedSignal": false
+  },
+  "fetchedAt": "2026-10-27T02:57:23.553Z"
+}

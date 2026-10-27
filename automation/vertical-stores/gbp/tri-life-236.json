@@ -1,0 +1,32 @@
+{
+  "tab": "トリニティアポ",
+  "tabEn": "tri-life",
+  "row": 236,
+  "sheet": {
+    "name": "090-1909-3550",
+    "address": "",
+    "url": "https://www.google.com/maps/search/?api=1&query=090-1909-3550%20090-1909-3550%20%E3%80%92668-0813%20%E5%85%B5%E5%BA%AB%E7%9C%8C%E8%B1%8A%E5%B2%A1%E5%B8%82%E4%B8%8B%E5%AE%AE%EF%BC%93%EF%BC%91%EF%BC%98%E2%88%92%EF%BC%92",
+    "type": "神社",
+    "d1": "",
+    "d2": ""
+  },
+  "urlKind": "mapsApi",
+  "route": "第1段(verify-gbp.mjs)で確認済み",
+  "verdict": "一致",
+  "verdictReason": "手がかり: 電話＋住所(番地まで)。電話が一致／店名: n/a(シート「090-1909-3550」/ マップ「久久比神社」)／住所(シート): exact・町名・番地とも一致",
+  "place": {
+    "name": "久久比神社",
+    "address": "兵庫県豊岡市下宮３１８−２",
+    "category": "神社",
+    "lat": 35.5573752,
+    "lng": 134.8436074,
+    "gbpUrl": "https://maps.google.com/?cid=10012132461561465567",
+    "phone": "090-1909-3550",
+    "website": "http://www.happywing.jp/kukuhi.html",
+    "hours": null,
+    "reserveLinks": [],
+    "statusSignals": [],
+    "closedSignal": false
+  },
+  "fetchedAt": "2026-10-27T16:54:55.939Z"
+}

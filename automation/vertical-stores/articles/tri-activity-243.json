@@ -1,0 +1,293 @@
+{
+  "key": "tri-activity-243",
+  "headline": "長野県茅野市、白樺湖のほとりでカヌーとSUPの体験ツアーを行う。カヌーは3歳から参加でき、愛犬と一緒に乗れるプランもある",
+  "lede": "長野県茅野市にある「八ヶ岳アドベンチャーツアーズ」です。白樺湖を舞台にカヌーとSUPの体験ツアーを行っています。カヌーは3歳から参加でき、愛犬と一緒に乗れるプランや、ガイドなしで楽しめるレンタルSUPも用意されています。",
+  "sections": [
+    {
+      "heading": "体験の内容",
+      "body": "カヌー体験は所要約120分で、開催は10時と13時、7〜8月は15時にも行われます。特別なウェアがなくても普段着のまま参加でき、3歳から家族で乗れます。愛犬と一緒に乗れるカヌーのプランもあります。SUP体験は7・9・10月は白樺湖、8月は女神湖で開催され、濡れてもよい服装と着替えの用意が要ります。ガイドなしで楽しめるレンタルSUPは10時30分と13時30分に利用でき、電動アシスト付きのe-バイクで白樺湖周辺を巡るツアーもあります。"
+    },
+    {
+      "heading": "初めての方へ",
+      "body": "カヌー・SUPともに初心者の方も安心して参加できます。ガイドが漕ぎ方から丁寧にサポートし、経験豊富なガイドが事前に安全講習を行います。使用する装備は専門機関の基準を満たしたものを採用しています。受付と安全説明は英語でもサポートできます。"
+    },
+    {
+      "heading": "集合場所とアクセス",
+      "body": "住所は長野県茅野市北山3419-1ですが、白樺湖は住所検索が正確に反映されない場合があります。集合は白樺湖畔の桟橋付近で、到着後にガイドが声をかけます。駐車はカヌーハウス両側30mの湖側にある公共駐車場を利用でき、トイレは西へ300m先の大駐車場にあります。個人のSUPやカヌーの持ち込みでの利用はできません。"
+    },
+    {
+      "heading": "雨天時の扱い",
+      "body": "基本的には雨が降っていても開催します。ツアー開始の時間に雨が降っている場合は、その場でキャンセルしてもキャンセル料はかかりません。カヌーは濡れにくいため、スニーカーなど普段の靴でも参加できます。"
+    }
+  ],
+  "menus": [
+    {
+      "name": "カヌー体験"
+    },
+    {
+      "name": "SUP体験"
+    },
+    {
+      "name": "ワンちゃんとカヌー"
+    },
+    {
+      "name": "白樺湖レンタルSUP"
+    },
+    {
+      "name": "e-バイクツアー"
+    }
+  ],
+  "tags": [
+    {
+      "tag": "子連れ",
+      "factIndex": 3
+    },
+    {
+      "tag": "初心者歓迎",
+      "factIndex": 11
+    },
+    {
+      "tag": "手ぶらでOK",
+      "factIndex": 9
+    },
+    {
+      "tag": "雨の日",
+      "factIndex": 20
+    },
+    {
+      "tag": "駐車場あり",
+      "factIndex": 27
+    }
+  ],
+  "facts": [
+    {
+      "claim": "業種の表示はカヌースポット",
+      "source": "https://maps.google.com/?cid=4639685202121787001",
+      "quote": "カヌースポット",
+      "checkedAt": "2026-10-27"
+    },
+    {
+      "claim": "住所は長野県茅野市北山3419-1",
+      "source": "https://www.yatsugatakeadventure.com/access/",
+      "quote": "長野県茅野市北山3419-1",
+      "checkedAt": "2026-10-27"
+    },
+    {
+      "claim": "電話受付は8時から20時",
+      "source": "https://www.yatsugatakeadventure.com/",
+      "quote": "受付 8:00〜20:00",
+      "checkedAt": "2026-10-27"
+    },
+    {
+      "claim": "カヌーは3歳から参加できる",
+      "source": "https://www.yatsugatakeadventure.com/",
+      "quote": "3歳から参加OK",
+      "checkedAt": "2026-10-27"
+    },
+    {
+      "claim": "カヌーは普段着のまま参加できる",
+      "source": "https://www.yatsugatakeadventure.com/",
+      "quote": "カヌーは普段着OK",
+      "checkedAt": "2026-10-27"
+    },
+    {
+      "claim": "雨天時はキャンセル料がかからない",
+      "source": "https://www.yatsugatakeadventure.com/",
+      "quote": "雨天キャンセル無料",
+      "checkedAt": "2026-10-27"
+    },
+    {
+      "claim": "カヌー体験は10時と13時に開催し、7〜8月は15時にも行う",
+      "source": "https://www.yatsugatakeadventure.com/",
+      "quote": "10:00／13:00／15:00",
+      "checkedAt": "2026-10-27"
+    },
+    {
+      "claim": "カヌー体験の所要時間は約120分",
+      "source": "https://www.yatsugatakeadventure.com/",
+      "quote": "約120分",
+      "checkedAt": "2026-10-27"
+    },
+    {
+      "claim": "カヌー体験は穏やかな白樺湖を水上散歩する内容",
+      "source": "https://www.yatsugatakeadventure.com/",
+      "quote": "穏やかな白樺湖をゆったり水上散歩。",
+      "checkedAt": "2026-10-27"
+    },
+    {
+      "claim": "カヌーは特別なウェアがなくても普段着で参加できる",
+      "source": "https://www.yatsugatakeadventure.com/",
+      "quote": "普段着で参加OK",
+      "checkedAt": "2026-10-27"
+    },
+    {
+      "claim": "安定したカヌーで3歳の子どもも家族で乗れる",
+      "source": "https://www.yatsugatakeadventure.com/",
+      "quote": "3歳から家族で",
+      "checkedAt": "2026-10-27"
+    },
+    {
+      "claim": "ガイドが漕ぎ方からサポートし初心者も参加できる",
+      "source": "https://www.yatsugatakeadventure.com/",
+      "quote": "初心者も安心",
+      "checkedAt": "2026-10-27"
+    },
+    {
+      "claim": "SUP体験は7・9・10月は白樺湖で開催",
+      "source": "https://www.yatsugatakeadventure.com/",
+      "quote": "7・9・10月 白樺湖で開催",
+      "checkedAt": "2026-10-27"
+    },
+    {
+      "claim": "SUP体験は8月は女神湖で開催",
+      "source": "https://www.yatsugatakeadventure.com/",
+      "quote": "8月 女神湖で開催",
+      "checkedAt": "2026-10-27"
+    },
+    {
+      "claim": "SUP体験は穏やかな湖面で楽しめる",
+      "source": "https://www.yatsugatakeadventure.com/",
+      "quote": "穏やかな湖面で水上散歩を楽しめます。",
+      "checkedAt": "2026-10-27"
+    },
+    {
+      "claim": "SUPは濡れてもよい服装と着替えが必要",
+      "source": "https://www.yatsugatakeadventure.com/",
+      "quote": "濡れてもよい服装と着替えをご用意ください。",
+      "checkedAt": "2026-10-27"
+    },
+    {
+      "claim": "愛犬と一緒にカヌーに参加できるプランがある",
+      "source": "https://www.yatsugatakeadventure.com/",
+      "quote": "愛犬と一緒に白樺湖を水上散歩。",
+      "checkedAt": "2026-10-27"
+    },
+    {
+      "claim": "レンタルSUPはガイドなしで利用でき、初心者には基本操作を案内する",
+      "source": "https://www.yatsugatakeadventure.com/",
+      "quote": "ガイドなしで自由に楽しめるSUPレンタル。",
+      "checkedAt": "2026-10-27"
+    },
+    {
+      "claim": "e-バイクツアーは電動アシスト付きで白樺湖周辺を巡る",
+      "source": "https://www.yatsugatakeadventure.com/",
+      "quote": "電動アシスト付きのe-バイクで白樺湖周辺を巡るガイドツアー。",
+      "checkedAt": "2026-10-27"
+    },
+    {
+      "claim": "レンタルSUPは10時30分と13時30分に利用できる",
+      "source": "https://www.yatsugatakeadventure.com/",
+      "quote": "10:30／13:30",
+      "checkedAt": "2026-10-27"
+    },
+    {
+      "claim": "基本的に雨天でも開催する",
+      "source": "https://www.yatsugatakeadventure.com/access/",
+      "quote": "基本的には雨でも開催しています。",
+      "checkedAt": "2026-10-27"
+    },
+    {
+      "claim": "ツアー開始時に雨が降っていればその場でキャンセルしてもキャンセル料はかからない",
+      "source": "https://www.yatsugatakeadventure.com/",
+      "quote": "その場でキャンセルされてもキャンセル料はいただきません。",
+      "checkedAt": "2026-10-27"
+    },
+    {
+      "claim": "白樺湖は湖面が穏やかでカヌーやSUPに向く",
+      "source": "https://www.yatsugatakeadventure.com/about/",
+      "quote": "湖面が穏やかでカヤックやSUPなどの湖上アクティビティ",
+      "checkedAt": "2026-10-27"
+    },
+    {
+      "claim": "ガイドは事前に安全講習を行う",
+      "source": "https://www.yatsugatakeadventure.com/about/",
+      "quote": "経験豊富なガイドが事前の安全講習を行い",
+      "checkedAt": "2026-10-27"
+    },
+    {
+      "claim": "装備は専門機関の基準を満たしたものを使用している",
+      "source": "https://www.yatsugatakeadventure.com/about/",
+      "quote": "使用する装備はすべて専門機関の基準を満たしたものを採用し",
+      "checkedAt": "2026-10-27"
+    },
+    {
+      "claim": "受付・安全説明は英語でも対応できる",
+      "source": "https://www.yatsugatakeadventure.com/access/",
+      "quote": "英語でもサポートできます。",
+      "checkedAt": "2026-10-27"
+    },
+    {
+      "claim": "集合場所は白樺湖畔の桟橋付近",
+      "source": "https://www.yatsugatakeadventure.com/access/",
+      "quote": "白樺湖畔の桟橋付近までお越しください。",
+      "checkedAt": "2026-10-27"
+    },
+    {
+      "claim": "駐車は近くの公共駐車場を利用できる",
+      "source": "https://www.yatsugatakeadventure.com/access/",
+      "quote": "近くの公共駐車場をご利用いただけます。",
+      "checkedAt": "2026-10-27"
+    },
+    {
+      "claim": "駐車場はカヌーハウス両側30mの湖側にある公共駐車場",
+      "source": "https://www.yatsugatakeadventure.com/access/",
+      "quote": "カヌーハウスの両側30ｍの湖側、公共駐車場をご利用ください。",
+      "checkedAt": "2026-10-27"
+    },
+    {
+      "claim": "トイレは西へ300m先の大駐車場にある",
+      "source": "https://www.yatsugatakeadventure.com/access/",
+      "quote": "トイレは西へ300ｍ大駐車場にある公衆トイレをご利用ください。",
+      "checkedAt": "2026-10-27"
+    },
+    {
+      "claim": "カヌー体験は基本的に濡れにくい",
+      "source": "https://www.yatsugatakeadventure.com/access/",
+      "quote": "カヌー体験は基本的に濡れにくいため",
+      "checkedAt": "2026-10-27"
+    },
+    {
+      "claim": "スニーカーなど普段の靴でも参加できる",
+      "source": "https://www.yatsugatakeadventure.com/access/",
+      "quote": "スニーカーなど普段の靴でも参加できます。",
+      "checkedAt": "2026-10-27"
+    },
+    {
+      "claim": "個人のSUPやカヌーの持ち込みでの利用はできない",
+      "source": "https://www.yatsugatakeadventure.com/access/",
+      "quote": "の持ち込みでのご利用はお断りしております。",
+      "checkedAt": "2026-10-27"
+    },
+    {
+      "claim": "カヌーは愛犬と一緒に参加できるプランがある",
+      "source": "https://www.yatsugatakeadventure.com/access/",
+      "quote": "カヌーは愛犬と一緒に参加できるプランがあります。",
+      "checkedAt": "2026-10-27"
+    },
+    {
+      "claim": "犬用ライフジャケットの数には限りがある",
+      "source": "https://www.yatsugatakeadventure.com/access/",
+      "quote": "犬用ライフジャケットの数には限りがあるため",
+      "checkedAt": "2026-10-27"
+    }
+  ],
+  "sources": [
+    {
+      "label": "公式サイト",
+      "url": "https://www.yatsugatakeadventure.com/"
+    },
+    {
+      "label": "公式サイト(わたしたちについて)",
+      "url": "https://www.yatsugatakeadventure.com/about/"
+    },
+    {
+      "label": "公式サイト(アクセス)",
+      "url": "https://www.yatsugatakeadventure.com/access/"
+    },
+    {
+      "label": "Google マップ",
+      "url": "https://maps.google.com/?cid=4639685202121787001"
+    }
+  ],
+  "notes": "automation/v2/write.mjs が 2026-10-27 に claude -p --model sonnet で作成。事実の裏取り: 35/35 件(quote が出どころにあるもの)。裏取りに通らなかった facts は載せていない。"
+}

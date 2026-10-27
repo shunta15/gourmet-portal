@@ -282,3 +282,8 @@
 @media (prefers-reduced-motion:reduce){
   .vN-cue-l::after{animation:none !important}
 }
+
+/* 2026-10-26 画質: 高精細な画面（デバイスピクセル比 1.5 以上）では、背景の写真を 1600 の縮小版にする（普通の画面は今までどおり 960）。配置・大きさは変えない */
+@media (min-resolution: 1.5dppx){
+  .vN-kj--img[style*="--bg-hi"],.vN-nb-ph[style*="--bg-hi"]{background-image:var(--bg-hi) !important}
+}

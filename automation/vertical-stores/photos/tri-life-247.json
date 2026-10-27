@@ -1,0 +1,92 @@
+{
+  "key": "tri-life-247",
+  "images": [
+    {
+      "path": "/_portal/vshops/tri-life-247/g01.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9QK0u88XdoBn7M7ktwPZd5AV7vzkxyk7XDO01SuAKHSQU7tgHsa2Qsolcl2Nev0zCrG4UCJWUySb6kGXj1XK-lEdGky9PSghJ7t3-4lbkKmgsPrAcP-cTjMH8QNL7he2N7HyIxC=s1200",
+      "pageUrl": "https://maps.google.com/?cid=3782250707216948295",
+      "what": "のぼり旗が立つ店舗前の駐車スペース",
+      "kind": "exterior",
+      "width": 1200,
+      "height": 675,
+      "source": "Google マップ"
+    },
+    {
+      "path": "/_portal/vshops/tri-life-247/g02.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9R0s4Lae12yv2TTbfoBPcjyrcl3EXHW6xH9KEBwtIXd23_8eCkJZLFkP2cAk7XWqnvP4yHIkMXTB8ZagGN1t5-WlRPbfQq_CxcmsMx4d2RSJbiK5o44DtTAFCyUQVIFpuizhMq_4g=s1200",
+      "pageUrl": "https://maps.google.com/?cid=3782250707216948295",
+      "what": "「陶芸教室」ののぼり旗が立つ店舗入口",
+      "kind": "exterior",
+      "width": 675,
+      "height": 1200,
+      "source": "Google マップ"
+    },
+    {
+      "path": "/_portal/vshops/tri-life-247/g03.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9S94DD59w03ntOwU7oaVGcCBqZ-uxAHLsDI0-8Fv4SEBm5ILiUo5I_vvy8MCk9v9bGW5Nsi3ynn6glqpp1p02een7F9eVIpAkzTDAWq4F6-RXPoN1mgZg817wbobXhxwcTbTm6D=s1200",
+      "pageUrl": "https://maps.google.com/?cid=3782250707216948295",
+      "what": "テーブルに並ぶタタラ皿など陶芸作品",
+      "kind": "common",
+      "width": 960,
+      "height": 1200,
+      "source": "Google マップ"
+    },
+    {
+      "path": "/_portal/vshops/tri-life-247/g04.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9SR2AmbBFhG17r3QtFvVGyAR4h1rpnkhkRZj6DwzbmCwgrD6vcnjPC97vH8hzd85XGOrBKF7kiffoZsQ4YYk78INRCwWltg-eHME5iJ4Dcnd4Db0mn3m39uGj_JJN0NLDj-KG_q=s1200",
+      "pageUrl": "https://maps.google.com/?cid=3782250707216948295",
+      "what": "陶器が並ぶ窯の内部",
+      "kind": "common",
+      "width": 904,
+      "height": 1200,
+      "source": "Google マップ"
+    },
+    {
+      "path": "/_portal/vshops/tri-life-247/g05.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9RDWUr063H0FyrcwvyHu8vNp3WIvLF7JN1fPeo-Ot8HyqZEBspPwr6QDnvJx4a7tGApCenwiS6-s9VgU9sjhSbUGZYPA5sIcecP2MQJh71wcoleCkilrMRI-WYC-ido2D_woSn_=s1200",
+      "pageUrl": "https://maps.google.com/?cid=3782250707216948295",
+      "what": "看板が並ぶ2階建ての建物の外観",
+      "kind": "exterior",
+      "width": 1200,
+      "height": 675,
+      "source": "Google マップ"
+    },
+    {
+      "path": "/_portal/vshops/tri-life-247/s03.jpg",
+      "imageUrl": "https://www.tougei-school.jp/wp-content/uploads/image2.jpg",
+      "pageUrl": "https://www.tougei-school.jp/",
+      "what": "ろくろで陶器を成形する手元",
+      "width": 1280,
+      "height": 400,
+      "source": "公式サイト"
+    },
+    {
+      "path": "/_portal/vshops/tri-life-247/s04.jpg",
+      "imageUrl": "https://www.tougei-school.jp/wp-content/uploads/sp_image2.jpg",
+      "pageUrl": "https://www.tougei-school.jp/",
+      "what": "ろくろで粘土の器を成形する両手",
+      "width": 640,
+      "height": 700,
+      "source": "公式サイト"
+    },
+    {
+      "path": "/_portal/vshops/tri-life-247/s05.jpg",
+      "imageUrl": "https://www.tougei-school.jp/wp-content/uploads/image3.jpg",
+      "pageUrl": "https://www.tougei-school.jp/",
+      "what": "青色と白色の釉薬の陶器",
+      "width": 1280,
+      "height": 400,
+      "source": "公式サイト"
+    },
+    {
+      "path": "/_portal/vshops/tri-life-247/s06.jpg",
+      "imageUrl": "https://www.tougei-school.jp/wp-content/uploads/sp_image3.jpg",
+      "pageUrl": "https://www.tougei-school.jp/",
+      "what": "青い釉薬の鉢と白い花瓶",
+      "width": 640,
+      "height": 700,
+      "source": "公式サイト"
+    }
+  ],
+  "note": "automation/v2/write.mjs が 2026-10-27T09:46:47.505Z に取得。店の実写だけ(AI 画像・汎用画像・地図・ロゴ・顔が大きい画像は除外)。"
+}

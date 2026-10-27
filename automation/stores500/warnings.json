@@ -2272,5 +2272,289 @@
       "desc は lede から事実の文を選べず、事実から作った定型文",
       "cuisine は GBPカテゴリ"
     ]
+  },
+  "r747": {
+    "articleId": "玉ゆら",
+    "name": "玉ゆら",
+    "warnings": [
+      "desc は lede から事実の文を選べず、事実から作った定型文",
+      "営業時間が取れていない（noindex）"
+    ]
+  },
+  "r735": {
+    "articleId": "知覧桜見亭",
+    "name": "知覧桜見亭",
+    "warnings": [
+      "cuisine は GBPカテゴリ"
+    ]
+  },
+  "r748": {
+    "articleId": "PetitParc",
+    "name": "Petit Parc",
+    "warnings": [
+      "cuisine は GBPカテゴリ"
+    ]
+  },
+  "r736": {
+    "articleId": "HINA-CAFE(ヒナカフェ)",
+    "name": "HINA-CAFE(ヒナカフェ)",
+    "warnings": [
+      "desc は lede から事実の文を選べず、事実から作った定型文",
+      "cuisine は GBPカテゴリ"
+    ]
+  },
+  "r737": {
+    "articleId": "居酒屋割烹新粋",
+    "name": "居酒屋割烹新粋",
+    "warnings": [
+      "desc は lede から事実の文を選べず、事実から作った定型文",
+      "cuisine は GBPカテゴリ"
+    ]
+  },
+  "r738": {
+    "articleId": "ベーカリーミトロンド",
+    "name": "ベーカリーミトロンド",
+    "warnings": [
+      "desc は lede から事実の文を選べず、事実から作った定型文",
+      "cuisine は GBPカテゴリ"
+    ]
+  },
+  "r739": {
+    "articleId": "焼肉炭処道楽",
+    "name": "焼肉 炭処道楽",
+    "warnings": [
+      "cuisine は GBPカテゴリ"
+    ]
+  },
+  "r740": {
+    "articleId": "とんかつグラッソ",
+    "name": "とんかつグラッソ",
+    "warnings": [
+      "desc は lede から事実の文を選べず、事実から作った定型文",
+      "cuisine は GBPカテゴリ"
+    ]
+  },
+  "r741": {
+    "articleId": "なんちゃってBAR・Dream",
+    "name": "なんちゃってＢＡＲ・Ｄｒｅａｍ",
+    "warnings": [
+      "desc は lede から事実の文を選べず、事実から作った定型文"
+    ]
+  },
+  "r749": {
+    "articleId": "ヴァレルンガ",
+    "name": "ヴァレルンガ",
+    "warnings": [
+      "desc は lede から事実の文を選べず、事実から作った定型文",
+      "営業時間が取れていない（noindex）",
+      "cuisine は GBPカテゴリ"
+    ]
+  },
+  "r742": {
+    "articleId": "ななつ星",
+    "name": "ななつ星",
+    "warnings": [
+      "desc は lede から事実の文を選べず、事実から作った定型文",
+      "cuisine は GBPカテゴリ"
+    ]
+  },
+  "r750": {
+    "articleId": "呑処喰処泉",
+    "name": "呑処喰処 泉",
+    "warnings": [
+      "desc は lede から事実の文を選べず、事実から作った定型文"
+    ]
+  },
+  "r743": {
+    "articleId": "保護猫かふぇまたたび庵",
+    "name": "保護猫かふぇ またたび庵",
+    "warnings": [
+      "desc は lede から事実の文を選べず、事実から作った定型文",
+      "cuisine は GBPカテゴリ"
+    ]
+  },
+  "r744": {
+    "articleId": "大玉ふわとろたこ焼き縁-en-",
+    "name": "大玉ふわとろたこ焼き 縁-en-",
+    "warnings": [
+      "desc は lede から事実の文を選べず、事実から作った定型文"
+    ]
+  },
+  "r745": {
+    "articleId": "浜焼ノ栄友",
+    "name": "浜焼ノ栄友",
+    "warnings": [
+      "desc は lede から事実の文を選べず、事実から作った定型文",
+      "cuisine は GBPカテゴリ"
+    ]
+  },
+  "r746": {
+    "articleId": "和食みよし",
+    "name": "和食 みよし",
+    "warnings": [
+      "desc は lede から事実の文を選べず、事実から作った定型文"
+    ]
+  },
+  "r751": {
+    "articleId": "台湾市場食堂美蘭",
+    "name": "台湾市場食堂美蘭",
+    "warnings": [
+      "desc は lede から事実の文を選べず、事実から作った定型文",
+      "cuisine は GBPカテゴリ"
+    ]
+  },
+  "r752": {
+    "articleId": "甘露肉汁",
+    "name": "甘露肉汁",
+    "warnings": [
+      "desc は lede から事実の文を選べず、事実から作った定型文",
+      "cuisine は GBPカテゴリ"
+    ]
+  },
+  "r756": {
+    "articleId": "cafebarmiyami",
+    "name": "cafebar miyami",
+    "warnings": [
+      "desc は lede から事実の文を選べず、事実から作った定型文"
+    ]
+  },
+  "r753": {
+    "articleId": "和醸良酒〇たけ",
+    "name": "和醸良酒 〇たけ",
+    "warnings": [
+      "desc は lede から事実の文を選べず、事実から作った定型文",
+      "cuisine は GBPカテゴリ"
+    ]
+  },
+  "r754": {
+    "articleId": "MELUCAFE",
+    "name": "MELU CAFE",
+    "warnings": [
+      "desc は lede から事実の文を選べず、事実から作った定型文",
+      "cuisine は GBPカテゴリ"
+    ]
+  },
+  "r755": {
+    "articleId": "雅珈",
+    "name": "雅珈",
+    "warnings": [
+      "desc は lede から事実の文を選べず、事実から作った定型文",
+      "cuisine は GBPカテゴリ"
+    ]
+  },
+  "r758": {
+    "articleId": ".tenn",
+    "name": ".tenn",
+    "warnings": [
+      "desc は lede から事実の文を選べず、事実から作った定型文",
+      "cuisine は GBPカテゴリ"
+    ]
+  },
+  "r764": {
+    "articleId": "鮮魚料理若鰤",
+    "name": "鮮魚料理 若鰤",
+    "warnings": [
+      "desc は lede から事実の文を選べず、事実から作った定型文",
+      "営業時間が取れていない（noindex）"
+    ]
+  },
+  "r757": {
+    "articleId": "から揚げドラゴンチキンハイボールキムにい",
+    "name": "から揚げドラゴンチキン ハイボール キムにい",
+    "warnings": [
+      "営業時間が取れていない（noindex）",
+      "cuisine は GBPカテゴリ"
+    ]
+  },
+  "r765": {
+    "articleId": "陽月kagezuki",
+    "name": "陽月 kagezuki",
+    "warnings": [
+      "desc は lede から事実の文を選べず、事実から作った定型文",
+      "営業時間が取れていない（noindex）"
+    ]
+  },
+  "r770": {
+    "articleId": "コグマコーヒー",
+    "name": "コグマコーヒー",
+    "warnings": [
+      "営業時間が取れていない（noindex）",
+      "cuisine は GBPカテゴリ"
+    ]
+  },
+  "r766": {
+    "articleId": "麺処清水",
+    "name": "麺処 清水",
+    "warnings": [
+      "desc は lede から事実の文を選べず、事実から作った定型文",
+      "営業時間が取れていない（noindex）"
+    ]
+  },
+  "r759": {
+    "articleId": "一汁おにぎり壱",
+    "name": "一汁おにぎり 壱",
+    "warnings": [
+      "desc は lede から事実の文を選べず、事実から作った定型文",
+      "営業時間が取れていない（noindex）",
+      "cuisine は GBPカテゴリ"
+    ]
+  },
+  "r760": {
+    "articleId": "ノーズ（noz）CAFE",
+    "name": "ノーズ（ｎｏｚ）ＣＡＦＥ",
+    "warnings": [
+      "desc は lede から事実の文を選べず、事実から作った定型文",
+      "営業時間が取れていない（noindex）",
+      "cuisine は GBPカテゴリ"
+    ]
+  },
+  "r767": {
+    "articleId": "菓子HotsuHotsu",
+    "name": "菓子Hotsu Hotsu",
+    "warnings": [
+      "desc は lede から事実の文を選べず、事実から作った定型文",
+      "営業時間が取れていない（noindex）",
+      "cuisine は GBPカテゴリ"
+    ]
+  },
+  "r761": {
+    "articleId": "竹田カフェ",
+    "name": "竹田カフェ",
+    "warnings": [
+      "営業時間が取れていない（noindex）",
+      "cuisine は GBPカテゴリ"
+    ]
+  },
+  "r768": {
+    "articleId": "DogCafeEightドッグカフェエイト",
+    "name": "Dog Cafe Eight ドッグ カフェ エイト",
+    "warnings": [
+      "desc は lede から事実の文を選べず、事実から作った定型文",
+      "営業時間が取れていない（noindex）",
+      "cuisine は GBPカテゴリ"
+    ]
+  },
+  "r762": {
+    "articleId": "うどんbarもういっけん",
+    "name": "うどんbar もういっけん",
+    "warnings": [
+      "desc は lede から事実の文を選べず、事実から作った定型文",
+      "cuisine は GBPカテゴリ"
+    ]
+  },
+  "r769": {
+    "articleId": "餃子らーめん一丸本店",
+    "name": "餃子らーめん一丸本店",
+    "warnings": [
+      "desc は lede から事実の文を選べず、事実から作った定型文",
+      "営業時間が取れていない（noindex）"
+    ]
+  },
+  "r763": {
+    "articleId": "楽",
+    "name": "楽",
+    "warnings": [
+      "desc は lede から事実の文を選べず、事実から作った定型文"
+    ]
   }
 }

@@ -1,0 +1,477 @@
+{
+  "key": "tri-activity-243",
+  "vertical": "activity",
+  "storeName": "八ヶ岳アドベンチャーツアーズ",
+  "article": {
+    "id": "八ヶ岳アドベンチャーツアーズ",
+    "no": "",
+    "articleType": "guide",
+    "kicker": "YATSUGATAKE ADVENTURE TOURS, CHINO NAGANO",
+    "title": "長野県茅野市・白樺湖でカヌーとSUPを体験する「八ヶ岳アドベンチャーツアーズ」のツアー内容とアクセス",
+    "titleHTML": "長野県茅野市・白樺湖でカヌーとSUPを体験する<br><em>八ヶ岳アドベンチャーツアーズ</em>のツアー内容とアクセス",
+    "subtitle": "海・川 / 長野県茅野市 / 初心者歓迎",
+    "lede": "長野県茅野市の白樺湖を舞台に、八ヶ岳アドベンチャーツアーズがカヌーとSUPの体験ツアーを行っている。カヌーは3歳から参加でき、愛犬と一緒に乗れるプランもある。集合は白樺湖畔の桟橋付近で、ガイドが漕ぎ方や安全について案内してから出発する。",
+    "date": "2026-10-27",
+    "reading": "",
+    "author": "マチノワ編集部",
+    "heroImage": "/_portal/vshops/tri-activity-243/g01.jpg",
+    "ogImage": "/_portal/vshops/tri-activity-243/g01.jpg",
+    "ranking": [
+      {
+        "rank": "POINT 01",
+        "rankNum": 1,
+        "name": "初心者も3歳から参加できるカヌー体験",
+        "cuisine": "カヌー",
+        "area": "茅野市",
+        "purpose": "カヌー体験の内容を知りたい人へ",
+        "desc": "白樺湖の穏やかな水面を水上散歩するカヌー体験は、開催が10時と13時で、7〜8月は15時にも行われる。所要時間は約120分で、特別なウェアがなくても普段着のまま参加できる。3歳から参加でき、安定したカヌーで小さな子どもも家族と一緒に乗れる。ガイドが漕ぎ方から丁寧にサポートするため、初心者も安心して参加できる。",
+        "images": [
+          "/_portal/vshops/tri-activity-243/g03.jpg"
+        ],
+        "specs": [
+          {
+            "k": "開催",
+            "v": "10:00／13:00（7〜8月は15:00も）"
+          },
+          {
+            "k": "所要",
+            "v": "約120分"
+          },
+          {
+            "k": "参加条件",
+            "v": "3歳から・普段着で参加OK"
+          }
+        ]
+      },
+      {
+        "rank": "POINT 02",
+        "rankNum": 2,
+        "name": "白樺湖と女神湖で楽しむSUP体験",
+        "cuisine": "SUP",
+        "area": "茅野市",
+        "purpose": "SUP体験の開催場所と内容を知りたい人へ",
+        "desc": "SUP体験は7・9・10月は白樺湖、8月は女神湖で開催される。穏やかな湖面を水上散歩する内容で、初めての方もガイドが丁寧にサポートする。濡れてもよい服装と着替えの用意が要る。ガイドなしで楽しめるレンタルSUPも用意されており、初心者には出発前に基本操作を案内する。",
+        "images": [
+          "/_portal/vshops/tri-activity-243/s01.jpg"
+        ],
+        "specs": [
+          {
+            "k": "開催場所",
+            "v": "白樺湖(7・9・10月)／女神湖(8月)"
+          },
+          {
+            "k": "レンタルSUP",
+            "v": "10:30／13:30"
+          },
+          {
+            "k": "持ち物",
+            "v": "濡れてもよい服装と着替え"
+          }
+        ]
+      },
+      {
+        "rank": "POINT 03",
+        "rankNum": 3,
+        "name": "愛犬と一緒に乗れるカヌープラン",
+        "cuisine": "ワンちゃんとカヌー",
+        "area": "茅野市",
+        "purpose": "愛犬と一緒に参加したい人へ",
+        "desc": "愛犬と一緒に白樺湖を水上散歩できるカヌープランがある。安定感のあるカヌーとガイドのサポートで、初めての方も安心して参加できる。犬用ライフジャケットの数には限りがあるため、予約時に知らせる必要がある。",
+        "images": [
+          "/_portal/vshops/tri-activity-243/g07.jpg"
+        ],
+        "specs": [
+          {
+            "k": "内容",
+            "v": "愛犬と一緒に乗るカヌー"
+          },
+          {
+            "k": "注意",
+            "v": "犬用ライフジャケットは数に限りあり"
+          }
+        ]
+      },
+      {
+        "rank": "POINT 04",
+        "rankNum": 4,
+        "name": "集合場所と駐車場、アクセスの案内",
+        "cuisine": "アクセス",
+        "area": "茅野市",
+        "purpose": "行き方と集合場所を知りたい人へ",
+        "desc": "住所は長野県茅野市北山3419-1だが、白樺湖は住所検索が正確に反映されない場合があるため、カーナビやGoogle Mapsでのアクセスが案内されている。集合は白樺湖畔の桟橋付近で、現地のガイドが到着後に駐車場の場所も案内する。駐車場は近くの公共駐車場を利用でき、カヌーハウス両側30mの湖側にある。トイレは西へ300m先の大駐車場にある。個人のSUPやカヌーの持ち込みでの利用はできない。",
+        "images": [
+          "/_portal/vshops/tri-activity-243/g10.jpg"
+        ],
+        "specs": [
+          {
+            "k": "住所",
+            "v": "長野県茅野市北山3419-1"
+          },
+          {
+            "k": "集合",
+            "v": "白樺湖畔の桟橋付近"
+          },
+          {
+            "k": "駐車場",
+            "v": "カヌーハウス両側30mの湖側"
+          }
+        ]
+      },
+      {
+        "rank": "POINT 05",
+        "rankNum": 5,
+        "name": "雨天時のキャンセルと開催の扱い",
+        "cuisine": "雨天対応",
+        "area": "茅野市",
+        "purpose": "雨の日の対応を知りたい人へ",
+        "desc": "基本的には雨が降っていても開催する。ツアー開始の時間に雨が降っている場合は、その場でキャンセルしてもキャンセル料はかからない。カヌーは濡れにくいため、スニーカーなど普段の靴でも参加できる。SUPは濡れてもよい服装と着替えを用意しておくと安心だ。",
+        "images": [
+          "/_portal/vshops/tri-activity-243/s11.jpg"
+        ],
+        "specs": [
+          {
+            "k": "雨天時",
+            "v": "基本的に開催・開始時に雨ならキャンセル料なし"
+          },
+          {
+            "k": "カヌーの服装",
+            "v": "普段の靴でも参加可"
+          }
+        ]
+      }
+    ],
+    "sideArticles": [],
+    "quote": "カヌーは3歳から、SUPは初めての方もガイドのサポートで参加でき、愛犬と一緒に乗れるプランもある。集合は白樺湖畔の桟橋付近で、雨が降っていても基本的に開催する。",
+    "quoteCite": "マチノワ編集部",
+    "closing": "住所は長野県茅野市北山3419-1で、白樺湖は住所検索が正確に反映されない場合があるため、カーナビやGoogle Mapsでのアクセスが案内されている。集合は白樺湖畔の桟橋付近、駐車場はカヌーハウス両側30mの湖側にある公共駐車場だ。電話の受付は8時から20時まで。"
+  },
+  "summary": "長野県茅野市の白樺湖で行われる八ヶ岳アドベンチャーツアーズのカヌー・SUP体験、愛犬と参加できるプラン、集合場所とアクセス、雨天時の扱いを、公式サイトの情報からまとめた特集記事。",
+  "tags": [
+    "海・川",
+    "茅野市"
+  ],
+  "charCount": 1032,
+  "facts": [
+    {
+      "claim": "業種の表示はカヌースポット",
+      "source": "https://maps.google.com/?cid=4639685202121787001",
+      "quote": "カヌースポット",
+      "checkedAt": "2026-10-27"
+    },
+    {
+      "claim": "住所は長野県茅野市北山3419-1",
+      "source": "https://www.yatsugatakeadventure.com/access/",
+      "quote": "長野県茅野市北山3419-1",
+      "checkedAt": "2026-10-27"
+    },
+    {
+      "claim": "電話受付は8時から20時",
+      "source": "https://www.yatsugatakeadventure.com/",
+      "quote": "受付 8:00〜20:00",
+      "checkedAt": "2026-10-27"
+    },
+    {
+      "claim": "カヌーは3歳から参加できる",
+      "source": "https://www.yatsugatakeadventure.com/",
+      "quote": "3歳から参加OK",
+      "checkedAt": "2026-10-27"
+    },
+    {
+      "claim": "カヌーは普段着のまま参加できる",
+      "source": "https://www.yatsugatakeadventure.com/",
+      "quote": "カヌーは普段着OK",
+      "checkedAt": "2026-10-27"
+    },
+    {
+      "claim": "雨天時はキャンセル料がかからない",
+      "source": "https://www.yatsugatakeadventure.com/",
+      "quote": "雨天キャンセル無料",
+      "checkedAt": "2026-10-27"
+    },
+    {
+      "claim": "カヌー体験は10時と13時に開催し、7〜8月は15時にも行う",
+      "source": "https://www.yatsugatakeadventure.com/",
+      "quote": "10:00／13:00／15:00",
+      "checkedAt": "2026-10-27"
+    },
+    {
+      "claim": "カヌー体験の所要時間は約120分",
+      "source": "https://www.yatsugatakeadventure.com/",
+      "quote": "約120分",
+      "checkedAt": "2026-10-27"
+    },
+    {
+      "claim": "カヌー体験は穏やかな白樺湖を水上散歩する内容",
+      "source": "https://www.yatsugatakeadventure.com/",
+      "quote": "穏やかな白樺湖をゆったり水上散歩。",
+      "checkedAt": "2026-10-27"
+    },
+    {
+      "claim": "カヌーは特別なウェアがなくても普段着で参加できる",
+      "source": "https://www.yatsugatakeadventure.com/",
+      "quote": "普段着で参加OK",
+      "checkedAt": "2026-10-27"
+    },
+    {
+      "claim": "安定したカヌーで3歳の子どもも家族で乗れる",
+      "source": "https://www.yatsugatakeadventure.com/",
+      "quote": "3歳から家族で",
+      "checkedAt": "2026-10-27"
+    },
+    {
+      "claim": "ガイドが漕ぎ方からサポートし初心者も参加できる",
+      "source": "https://www.yatsugatakeadventure.com/",
+      "quote": "初心者も安心",
+      "checkedAt": "2026-10-27"
+    },
+    {
+      "claim": "SUP体験は7・9・10月は白樺湖で開催",
+      "source": "https://www.yatsugatakeadventure.com/",
+      "quote": "7・9・10月 白樺湖で開催",
+      "checkedAt": "2026-10-27"
+    },
+    {
+      "claim": "SUP体験は8月は女神湖で開催",
+      "source": "https://www.yatsugatakeadventure.com/",
+      "quote": "8月 女神湖で開催",
+      "checkedAt": "2026-10-27"
+    },
+    {
+      "claim": "SUP体験は穏やかな湖面で楽しめる",
+      "source": "https://www.yatsugatakeadventure.com/",
+      "quote": "穏やかな湖面で水上散歩を楽しめます。",
+      "checkedAt": "2026-10-27"
+    },
+    {
+      "claim": "SUPは濡れてもよい服装と着替えが必要",
+      "source": "https://www.yatsugatakeadventure.com/",
+      "quote": "濡れてもよい服装と着替えをご用意ください。",
+      "checkedAt": "2026-10-27"
+    },
+    {
+      "claim": "愛犬と一緒にカヌーに参加できるプランがある",
+      "source": "https://www.yatsugatakeadventure.com/",
+      "quote": "愛犬と一緒に白樺湖を水上散歩。",
+      "checkedAt": "2026-10-27"
+    },
+    {
+      "claim": "レンタルSUPはガイドなしで利用でき、初心者には基本操作を案内する",
+      "source": "https://www.yatsugatakeadventure.com/",
+      "quote": "ガイドなしで自由に楽しめるSUPレンタル。",
+      "checkedAt": "2026-10-27"
+    },
+    {
+      "claim": "e-バイクツアーは電動アシスト付きで白樺湖周辺を巡る",
+      "source": "https://www.yatsugatakeadventure.com/",
+      "quote": "電動アシスト付きのe-バイクで白樺湖周辺を巡るガイドツアー。",
+      "checkedAt": "2026-10-27"
+    },
+    {
+      "claim": "レンタルSUPは10時30分と13時30分に利用できる",
+      "source": "https://www.yatsugatakeadventure.com/",
+      "quote": "10:30／13:30",
+      "checkedAt": "2026-10-27"
+    },
+    {
+      "claim": "基本的に雨天でも開催する",
+      "source": "https://www.yatsugatakeadventure.com/access/",
+      "quote": "基本的には雨でも開催しています。",
+      "checkedAt": "2026-10-27"
+    },
+    {
+      "claim": "ツアー開始時に雨が降っていればその場でキャンセルしてもキャンセル料はかからない",
+      "source": "https://www.yatsugatakeadventure.com/",
+      "quote": "その場でキャンセルされてもキャンセル料はいただきません。",
+      "checkedAt": "2026-10-27"
+    },
+    {
+      "claim": "白樺湖は湖面が穏やかでカヌーやSUPに向く",
+      "source": "https://www.yatsugatakeadventure.com/about/",
+      "quote": "湖面が穏やかでカヤックやSUPなどの湖上アクティビティ",
+      "checkedAt": "2026-10-27"
+    },
+    {
+      "claim": "ガイドは事前に安全講習を行う",
+      "source": "https://www.yatsugatakeadventure.com/about/",
+      "quote": "経験豊富なガイドが事前の安全講習を行い",
+      "checkedAt": "2026-10-27"
+    },
+    {
+      "claim": "装備は専門機関の基準を満たしたものを使用している",
+      "source": "https://www.yatsugatakeadventure.com/about/",
+      "quote": "使用する装備はすべて専門機関の基準を満たしたものを採用し",
+      "checkedAt": "2026-10-27"
+    },
+    {
+      "claim": "受付・安全説明は英語でも対応できる",
+      "source": "https://www.yatsugatakeadventure.com/access/",
+      "quote": "英語でもサポートできます。",
+      "checkedAt": "2026-10-27"
+    },
+    {
+      "claim": "集合場所は白樺湖畔の桟橋付近",
+      "source": "https://www.yatsugatakeadventure.com/access/",
+      "quote": "白樺湖畔の桟橋付近までお越しください。",
+      "checkedAt": "2026-10-27"
+    },
+    {
+      "claim": "駐車は近くの公共駐車場を利用できる",
+      "source": "https://www.yatsugatakeadventure.com/access/",
+      "quote": "近くの公共駐車場をご利用いただけます。",
+      "checkedAt": "2026-10-27"
+    },
+    {
+      "claim": "駐車場はカヌーハウス両側30mの湖側にある公共駐車場",
+      "source": "https://www.yatsugatakeadventure.com/access/",
+      "quote": "カヌーハウスの両側30ｍの湖側、公共駐車場をご利用ください。",
+      "checkedAt": "2026-10-27"
+    },
+    {
+      "claim": "トイレは西へ300m先の大駐車場にある",
+      "source": "https://www.yatsugatakeadventure.com/access/",
+      "quote": "トイレは西へ300ｍ大駐車場にある公衆トイレをご利用ください。",
+      "checkedAt": "2026-10-27"
+    },
+    {
+      "claim": "カヌー体験は基本的に濡れにくい",
+      "source": "https://www.yatsugatakeadventure.com/access/",
+      "quote": "カヌー体験は基本的に濡れにくいため",
+      "checkedAt": "2026-10-27"
+    },
+    {
+      "claim": "スニーカーなど普段の靴でも参加できる",
+      "source": "https://www.yatsugatakeadventure.com/access/",
+      "quote": "スニーカーなど普段の靴でも参加できます。",
+      "checkedAt": "2026-10-27"
+    },
+    {
+      "claim": "個人のSUPやカヌーの持ち込みでの利用はできない",
+      "source": "https://www.yatsugatakeadventure.com/access/",
+      "quote": "の持ち込みでのご利用はお断りしております。",
+      "checkedAt": "2026-10-27"
+    },
+    {
+      "claim": "カヌーは愛犬と一緒に参加できるプランがある",
+      "source": "https://www.yatsugatakeadventure.com/access/",
+      "quote": "カヌーは愛犬と一緒に参加できるプランがあります。",
+      "checkedAt": "2026-10-27"
+    },
+    {
+      "claim": "犬用ライフジャケットの数には限りがある",
+      "source": "https://www.yatsugatakeadventure.com/access/",
+      "quote": "犬用ライフジャケットの数には限りがあるため",
+      "checkedAt": "2026-10-27"
+    }
+  ],
+  "images": [
+    {
+      "path": "/_portal/vshops/tri-activity-243/g01.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9RD8ZWXQc6dyrkb1SP7Qq_Rio6erP6DucYuVXSL59-cj6pzfu4dKOZT7vKea0bCDun2CC_lKq4PaILheB27qZmLM_DyZ7RDV-c-HFw1BU61ohNmmt_W9_YBG1l7jTzQEc4tOPVm=s1200",
+      "pageUrl": "https://maps.google.com/?cid=4639685202121787001",
+      "what": "親子で赤いタンデムカヌーに乗り水上を進む様子"
+    },
+    {
+      "path": "/_portal/vshops/tri-activity-243/g03.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9TQHblhmTgIf8R-ZjmRnC4E0OrmrpVzEPDjzGdRzriEKhj_PRVeJvCkyxIxYPV1Ine1VMn--I4iNNOlfiJ_iIzN7XUnSq1q-zLSy9XkzPYeXfyXT7-U8-yjMjYEuVylFfLNizwZ=s1200",
+      "pageUrl": "https://maps.google.com/?cid=4639685202121787001",
+      "what": "木々の間から見える、カヌーを漕ぐ人の様子"
+    },
+    {
+      "path": "/_portal/vshops/tri-activity-243/g04.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9Qr1Ds5SBsbnxeNCypIBbcWYKVoBxCKZCzuxYzuqFhqiVlbDQDzDey0wNbzI7gQsQHQBprJlue6cLMbZAJ8ez7KqbVnrDfuU5M706AXgS_eEdSuH4jzS_MNvAycGM0Hu-t6HWV3lweLq68=s1200",
+      "pageUrl": "https://maps.google.com/?cid=4639685202121787001",
+      "what": "赤いカヌーに乗る人と奥に建物が並ぶ湖畔"
+    },
+    {
+      "path": "/_portal/vshops/tri-activity-243/g05.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9Q_O_p5wWOU6pHluR1Ri_mKIxyJ5aKnDnb7bh8XkypO7XeqiYfKVYGssYu1cWw55JXnjoTYPC6mUZ6DNqSOs9Su_t3pc4IWtx1TILJOYk6QX0ylabLNTdLWJy7tFFOuvxsePNvr=s1200",
+      "pageUrl": "https://maps.google.com/?cid=4639685202121787001",
+      "what": "山を背景に数艘のカヌーが浮かぶ湖"
+    },
+    {
+      "path": "/_portal/vshops/tri-activity-243/g06.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9RlY1jNh2KfAfZ3UG5qfvy3ICQgOUROZK7lNweIO5Ynh55jx8bCdL1lqNtY-3NZCf0g7bZgP-PSswHR4cU6qOuFJTfBDXBZbVAxO4vm-G49y-8LrX8ot_3FT2c3zRPDOcsTjYoaMw=s1200",
+      "pageUrl": "https://maps.google.com/?cid=4639685202121787001",
+      "what": "紅葉した木々のそばでカヌーを漕ぐ人たち"
+    },
+    {
+      "path": "/_portal/vshops/tri-activity-243/g07.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9QUjMytaVSRmMoNlQ27MvZ1E4KO6AfBy17zYPUlIeI4SO2SZ7Q5bYX2ffqoiJd-RLT2SrytClnM4VCVc2xt9Wuf3plb88N7Iqut0ih5NnQ1eQOb4zC_gDCVoEcjQXuKx0PS_aA4=s1200",
+      "pageUrl": "https://maps.google.com/?cid=4639685202121787001",
+      "what": "黄色いカヌーにパドルと犬が乗る様子"
+    },
+    {
+      "path": "/_portal/vshops/tri-activity-243/g08.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9RbTRsOxT5BeKRdlaFXVCbjRSY-cW5SSK6QRPHfIFZ4hG_6NnsZkmABzNwFK7_GLPFppde-iMF--zEdtbAozfeFM8Igq0NxnIALQhEWnRdWWNiwbS4Q8Zal2UJuf9a5-FnJAPIz=s1200",
+      "pageUrl": "https://maps.google.com/?cid=4639685202121787001",
+      "what": "桟橋の上に並べられたカラフルなカヌー"
+    },
+    {
+      "path": "/_portal/vshops/tri-activity-243/g09.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9T9w5sWA9Nk-kynBLRq1UMfZnh5LLe8x5qEM9l04mSNIqHCShdzKygbjnw1PLfsyT5IKq-QW_Yc-evUZ1ENULkpC0d245CjtfiJuDUFAgBS-zkrM9wYu1gluGrmDG-kku9YFbFd=s1200",
+      "pageUrl": "https://maps.google.com/?cid=4639685202121787001",
+      "what": "電動アシスト自転車と高原を眺める人の後ろ姿"
+    },
+    {
+      "path": "/_portal/vshops/tri-activity-243/g10.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9SZucFBrPKXsTVfjvcAu--5EDt5KISW9D7J_JWJHyZA8fBWZ4YR5mDXqVgLQWJ_YE-I036OYFf3oZ1v9or1U52d_CcMyPmrUgGOMxqx2ck_WvTcvrI8Rm-qfJBjNpZrjPSXgVobxThCqXnz=s1200",
+      "pageUrl": "https://maps.google.com/?cid=4639685202121787001",
+      "what": "桟橋にずらりと並ぶ色とりどりのカヌー"
+    },
+    {
+      "path": "/_portal/vshops/tri-activity-243/s01.jpg",
+      "imageUrl": "https://www.yatsugatakeadventure.com/wp-content/uploads/2026/08/Codex-%E7%94%BB%E5%83%8F-2026%E5%B9%B48%E6%9C%8824%E6%97%A5-18_43_26.jpg",
+      "pageUrl": "https://www.yatsugatakeadventure.com/",
+      "what": "山に囲まれた湖でSUPに立つ2人"
+    },
+    {
+      "path": "/_portal/vshops/tri-activity-243/s06.jpg",
+      "imageUrl": "https://www.yatsugatakeadventure.com/wp-content/uploads/2026/08/IMG_5234-768x576.jpg",
+      "pageUrl": "https://www.yatsugatakeadventure.com/",
+      "what": "桟橋に置かれた緑色のSUPボードとバッグ"
+    },
+    {
+      "path": "/_portal/vshops/tri-activity-243/s09.jpg",
+      "imageUrl": "https://www.yatsugatakeadventure.com/wp-content/themes/yatsugatakeadventure/img/top/img-pickup01.jpg",
+      "pageUrl": "https://www.yatsugatakeadventure.com/",
+      "what": "穏やかな湖面に浮かぶ数艘のカヌー"
+    },
+    {
+      "path": "/_portal/vshops/tri-activity-243/s11.jpg",
+      "imageUrl": "https://www.yatsugatakeadventure.com/wp-content/themes/yatsugatakeadventure/img/top/img-pickup03.jpg",
+      "pageUrl": "https://www.yatsugatakeadventure.com/",
+      "what": "山を望む湖畔の静かな風景"
+    },
+    {
+      "path": "/_portal/vshops/tri-activity-243/s12.jpg",
+      "imageUrl": "https://www.yatsugatakeadventure.com/wp-content/themes/yatsugatakeadventure/img/about/img_01.jpg",
+      "pageUrl": "https://www.yatsugatakeadventure.com/about/",
+      "what": "山を背に湖上を進む人たちの後ろ姿"
+    },
+    {
+      "path": "/_portal/vshops/tri-activity-243/s13.jpg",
+      "imageUrl": "https://www.yatsugatakeadventure.com/wp-content/themes/yatsugatakeadventure/img/mobile/about/img_01.jpg",
+      "pageUrl": "https://www.yatsugatakeadventure.com/about/",
+      "what": "並んでカヌーを漕ぐ2人と山の稜線"
+    }
+  ],
+  "sources": [
+    {
+      "label": "公式サイト",
+      "url": "https://www.yatsugatakeadventure.com/"
+    },
+    {
+      "label": "公式サイト(わたしたちについて)",
+      "url": "https://www.yatsugatakeadventure.com/about/"
+    },
+    {
+      "label": "公式サイト(アクセス)",
+      "url": "https://www.yatsugatakeadventure.com/access/"
+    },
+    {
+      "label": "Google マップ",
+      "url": "https://maps.google.com/?cid=4639685202121787001"
+    }
+  ],
+  "notes": "automation/v2/write.mjs が 2026-10-27 に作成。"
+}

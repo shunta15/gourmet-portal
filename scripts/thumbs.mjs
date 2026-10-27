@@ -5,9 +5,9 @@
 //
 // 対象: カード・巻頭で使う画像（と、scripts/thumbs-extra.json の画像）（店の image・heroImages の先頭・特集記事の heroImage・最初の視点の先頭の写真・sideArticles）。
 //       ギャラリーの写真（記事・店ページの大きな写真）は対象外（大きく出すので、元の画像のまま）。
-// 作るもの: public/_thumbs/480/restaurants/<元の相対パス>.webp（幅 480）と public/_thumbs/960/…（幅 960）。webp（quality 74）。
+// 作るもの: public/_thumbs/480/restaurants/<元の相対パス>.webp（幅 480）と public/_thumbs/960/…（幅 960）と public/_thumbs/1600/…（幅 1600）。webp（quality 74）。
 //       元の幅が狭いとき（幅 < 360）・元が小さいとき（40KB 未満）は作らない。元より大きくしない（幅は min(元の幅, 480 / 960)）。
-//       向き（EXIF）は rotate() で直して焼き込む。元の幅が 600 以下のときは 960 は作らない（480 だけ）。
+//       向き（EXIF）は rotate() で直して焼き込む。元の幅が 600 以下のときは 960 は作らない（480 だけ）。元の幅が 1000 を超えるときは 1600 も作る（デバイスピクセル比 2 の画面で、表示幅 700 前後までの枠に足りる幅。2026-10-26 追加。min(元の幅, 1600) なので元より大きくしない）。
 // 表: lib/localThumbs.ts（縮小版がある画像の一覧。sized() が引く。生成物 = 手で編集しない）
 import fs from "fs";
 import path from "path";
@@ -17,7 +17,7 @@ const ROOT = process.cwd();
 const require = createRequire(import.meta.url);
 const sharp = require(path.join(ROOT, "node_modules/sharp"));
 const DRY = process.argv.includes("--dry");
-const W1 = 480, W2 = 960, MIN_W = 360, MIN_BYTES = 40000, Q = 74;
+const W1 = 480, W2 = 960, W3 = 1600, MIN_W = 360, MIN_BYTES = 40000, Q = 74;
 
 // ───── データを読む（TS を、その場で JS にして読む。ページの中の処理ではない） ─────
 const ts = require(path.join(ROOT, "node_modules/typescript"));
@@ -71,7 +71,7 @@ for (const u of [...set].sort()) {
   let meta;
   try { meta = await sharp(src).metadata(); } catch { skipped++; continue; }
   if (!meta.width || meta.width < MIN_W || st.size < MIN_BYTES) { skipped++; continue; }
-  const tiers = meta.width > 600 ? [W1, W2] : [W1];
+  const tiers = meta.width > 1000 ? [W1, W2, W3] : meta.width > 600 ? [W1, W2] : [W1];
   for (const w of tiers) {
     const out = outOf(w, u.slice(1));
     if (!fs.existsSync(out)) {
@@ -88,9 +88,9 @@ for (const u of [...set].sort()) {
 }
 
 // ───── 表（lib/localThumbs.ts）。client の部品からも呼ばれる sized() が引くので、小さく保つ（1 行 = 相対パス + 段） ─────
-const body = table.map(([p, t]) => (t === 2 ? p : p + "\t1")).join("\n");
+const body = table.map(([p, t]) => (t === 2 ? p : p + "\t" + t)).join("\n");
 const ts_ = `// 生成物（scripts/thumbs.mjs）。手で編集しない。縮小版（public/_thumbs/<幅>/restaurants/<相対パス>.webp）がある画像の一覧。
-// 1 行 = /restaurants/ から先の相対パス（デコード済み）。行末に \\t1 があるものは 480 だけ、無いものは 480 と 960 の両方。
+// 1 行 = /restaurants/ から先の相対パス（デコード済み）。行末に \\t1 があるものは 480 だけ、\\t3 があるものは 480・960・1600 の 3 つ、無いものは 480 と 960 の両方。
 // 軽く保つ（client の部品から import される lib/imageUrl.ts が使う）。数 = ${table.length}
 export const LOCAL_THUMBS = ${JSON.stringify(body)};
 `;

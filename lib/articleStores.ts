@@ -13737,6 +13737,1765 @@ export const ARTICLE_STORES: Restaurant[] = [
       "深夜営業"
     ],
     "featureId": "生"
+  },
+  {
+    "id": "r735",
+    "name": "知覧桜見亭",
+    "cuisine": "和食店",
+    "area": "鹿児島県・南九州市",
+    "region": "kagoshima",
+    "shape": "square",
+    "image": "/restaurants/teleapo-知覧桜見亭/hero.jpg",
+    "heroImages": [
+      "/restaurants/teleapo-知覧桜見亭/hero.jpg",
+      "/restaurants/teleapo-知覧桜見亭/point1.jpg",
+      "/restaurants/teleapo-知覧桜見亭/point2.jpg",
+      "/restaurants/teleapo-知覧桜見亭/point3.jpg",
+      "/restaurants/teleapo-知覧桜見亭/point4.jpg"
+    ],
+    "gallery": [
+      "/restaurants/teleapo-知覧桜見亭/hero.jpg",
+      "/restaurants/teleapo-知覧桜見亭/point1.jpg",
+      "/restaurants/teleapo-知覧桜見亭/point2.jpg",
+      "/restaurants/teleapo-知覧桜見亭/point3.jpg",
+      "/restaurants/teleapo-知覧桜見亭/point4.jpg",
+      "/restaurants/teleapo-知覧桜見亭/point5.jpg"
+    ],
+    "desc": "鹿児島県南九州市知覧町郡は、知覧特攻平和公園を擁する地域である。知覧桜見亭は、この公園の敷地内に店を構える、和食を中心とした食事処だ。",
+    "address": "鹿児島県南九州市知覧町郡17851",
+    "hours": "毎日 09:00–17:00",
+    "closed": "なし（Googleマップの営業時間による）",
+    "seats": "テーブル席・個室",
+    "nearest": "—",
+    "phone": "0993-83-3211",
+    "source": {
+      "label": "Google ビジネスプロフィール",
+      "url": "https://maps.google.com/?cid=8266157921974279353"
+    },
+    "body": [
+      "知覧桜見亭は、鹿児島県南九州市にあるお店です。業態は「和食店」、所在地は鹿児島県南九州市知覧町郡17851です。マチノワ編集部の特集記事では、「地元食材を生かした和食の定食」・「知覧の郷土料理「といのずし」」などを取り上げています。",
+      "営業時間は毎日 09:00–17:00で、定休日はありません（Googleマップの営業時間による）。席はテーブル席・個室。営業時間や価格は変わることがあるため、訪問前に公式サイトやSNS、お電話でご確認ください。"
+    ],
+    "highlights": [
+      "地元食材を生かした和食の定食",
+      "知覧の郷土料理「といのずし」",
+      "奄美の鶏飯定食と茶美豚のしゃぶしゃぶ",
+      "テーブル席と個室を備えた店内",
+      "知覧特攻平和公園内のアクセスと営業情報"
+    ],
+    "tags": [
+      "和食店",
+      "南九州市",
+      "個室",
+      "ランチ"
+    ],
+    "featureId": "知覧桜見亭"
+  },
+  {
+    "id": "r736",
+    "name": "HINA-CAFE(ヒナカフェ)",
+    "cuisine": "カフェ・喫茶",
+    "area": "静岡県・富士市",
+    "region": "shizuoka",
+    "shape": "square",
+    "image": "/restaurants/teleapo-HINA-CAFE(ヒナカフェ)/hero.jpg",
+    "heroImages": [
+      "/restaurants/teleapo-HINA-CAFE(ヒナカフェ)/hero.jpg",
+      "/restaurants/teleapo-HINA-CAFE(ヒナカフェ)/point1.jpg",
+      "/restaurants/teleapo-HINA-CAFE(ヒナカフェ)/point3.jpg"
+    ],
+    "gallery": [
+      "/restaurants/teleapo-HINA-CAFE(ヒナカフェ)/hero.jpg",
+      "/restaurants/teleapo-HINA-CAFE(ヒナカフェ)/point1.jpg",
+      "/restaurants/teleapo-HINA-CAFE(ヒナカフェ)/point3.jpg"
+    ],
+    "desc": "静岡県富士市のカフェ・喫茶。",
+    "address": "静岡県富士市比奈628-9",
+    "hours": "月・水〜日 11:00–18:00",
+    "closed": "火曜日",
+    "seats": "—（訪問前に公式確認）",
+    "nearest": "—",
+    "phone": "0545-38-3008",
+    "source": {
+      "label": "Google ビジネスプロフィール",
+      "url": "https://maps.google.com/?cid=4962894786156715600"
+    },
+    "body": [
+      "HINA-CAFE(ヒナカフェ)は、静岡県富士市にあるお店です。業態は「カフェ・喫茶」、所在地は静岡県富士市比奈628-9です。マチノワ編集部の特集記事では、「物置から見つかった一脚の椅子と店づくり」・「工場地帯にひっそりと佇む立地」などを取り上げています。",
+      "営業時間は月・水〜日 11:00–18:00、定休日は火曜日です（Googleマップの営業時間による）。営業時間や価格は変わることがあるため、訪問前に公式サイトやSNS、お電話でご確認ください。"
+    ],
+    "highlights": [
+      "物置から見つかった一脚の椅子と店づくり",
+      "工場地帯にひっそりと佇む立地",
+      "15名からの貸し切りとパーティー利用",
+      "富士市比奈628-9、営業時間と定休日"
+    ],
+    "tags": [
+      "カフェ・喫茶",
+      "富士市",
+      "ランチ"
+    ],
+    "featureId": "HINA-CAFE(ヒナカフェ)"
+  },
+  {
+    "id": "r737",
+    "name": "居酒屋割烹新粋",
+    "cuisine": "居酒屋",
+    "area": "三重県・松阪市",
+    "region": "mie",
+    "shape": "square",
+    "image": "/restaurants/teleapo-居酒屋割烹新粋/hero.jpg",
+    "heroImages": [
+      "/restaurants/teleapo-居酒屋割烹新粋/hero.jpg",
+      "/restaurants/teleapo-居酒屋割烹新粋/point1.jpg",
+      "/restaurants/teleapo-居酒屋割烹新粋/point2.jpg",
+      "/restaurants/teleapo-居酒屋割烹新粋/point3.jpg",
+      "/restaurants/teleapo-居酒屋割烹新粋/point4.jpg"
+    ],
+    "gallery": [
+      "/restaurants/teleapo-居酒屋割烹新粋/hero.jpg",
+      "/restaurants/teleapo-居酒屋割烹新粋/point1.jpg",
+      "/restaurants/teleapo-居酒屋割烹新粋/point2.jpg",
+      "/restaurants/teleapo-居酒屋割烹新粋/point3.jpg",
+      "/restaurants/teleapo-居酒屋割烹新粋/point4.jpg",
+      "/restaurants/teleapo-居酒屋割烹新粋/point5.jpg"
+    ],
+    "desc": "三重県松阪市の居酒屋。最寄りは松阪駅から徒歩2分。",
+    "address": "三重県松阪市京町515-19 サンライズビル 2F",
+    "hours": "月・水〜金 11:30–14:30, 17:30–22:00 / 土 11:30–22:00 / 日 11:30–14:30",
+    "closed": "火曜日",
+    "seats": "個室・テラス席",
+    "nearest": "松阪駅から徒歩2分",
+    "phone": "0598-26-8785",
+    "source": {
+      "label": "Google ビジネスプロフィール",
+      "url": "https://maps.google.com/?cid=8354051705811490647"
+    },
+    "body": [
+      "居酒屋割烹新粋は、三重県松阪市にあるお店です。業態は「居酒屋」、所在地は三重県松阪市京町515-19 サンライズビル 2F、最寄りは松阪駅から徒歩2分です。マチノワ編集部の特集記事では、「松阪の地産食材と手間を惜しまないだし」・「松阪牛を使ったひつまぶしやステーキ」などを取り上げています。",
+      "営業時間は月・水〜金 11:30–14:30, 17:30–22:00 / 土 11:30–22:00 / 日 11:30–14:30、定休日は火曜日です（Googleマップの営業時間による）。席は個室・テラス席。営業時間や価格は変わることがあるため、訪問前に公式サイトやSNS、お電話でご確認ください。"
+    ],
+    "highlights": [
+      "松阪の地産食材と手間を惜しまないだし",
+      "松阪牛を使ったひつまぶしやステーキ",
+      "うなぎ料理と持ち帰り・仕出し弁当",
+      "個室とテラス席を備えた店内",
+      "松阪駅から徒歩2分のアクセス"
+    ],
+    "tags": [
+      "居酒屋",
+      "松阪市",
+      "松阪駅",
+      "個室",
+      "ランチ"
+    ],
+    "featureId": "居酒屋割烹新粋"
+  },
+  {
+    "id": "r738",
+    "name": "ベーカリーミトロンド",
+    "cuisine": "ベーカリー",
+    "area": "愛知県・西尾市",
+    "region": "nagoya",
+    "shape": "square",
+    "image": "/restaurants/teleapo-ベーカリーミトロンド/hero.jpg",
+    "heroImages": [
+      "/restaurants/teleapo-ベーカリーミトロンド/hero.jpg",
+      "/restaurants/teleapo-ベーカリーミトロンド/point1.jpg",
+      "/restaurants/teleapo-ベーカリーミトロンド/point2.jpg",
+      "/restaurants/teleapo-ベーカリーミトロンド/point3.jpg",
+      "/restaurants/teleapo-ベーカリーミトロンド/point4.jpg"
+    ],
+    "gallery": [
+      "/restaurants/teleapo-ベーカリーミトロンド/hero.jpg",
+      "/restaurants/teleapo-ベーカリーミトロンド/point1.jpg",
+      "/restaurants/teleapo-ベーカリーミトロンド/point2.jpg",
+      "/restaurants/teleapo-ベーカリーミトロンド/point3.jpg",
+      "/restaurants/teleapo-ベーカリーミトロンド/point4.jpg",
+      "/restaurants/teleapo-ベーカリーミトロンド/point5.jpg"
+    ],
+    "desc": "愛知県西尾市のベーカリー。最寄りは名鉄西尾線南桜井駅より車で約9分。",
+    "address": "愛知県西尾市西浅井町郷内103-3",
+    "hours": "水〜日 11:00–18:00",
+    "closed": "月曜・火曜",
+    "seats": "—（訪問前に公式確認）",
+    "nearest": "名鉄西尾線南桜井駅より車で約9分/岡崎バイパス藤井ICより約7分",
+    "phone": "0563-77-7633",
+    "source": {
+      "label": "Google ビジネスプロフィール",
+      "url": "https://maps.google.com/?cid=12849769357441598727"
+    },
+    "body": [
+      "ベーカリーミトロンドは、愛知県西尾市にあるお店です。業態は「ベーカリー」、所在地は愛知県西尾市西浅井町郷内103-3、最寄りは名鉄西尾線南桜井駅より車で約9分/岡崎バイパス藤井ICより約7分です。マチノワ編集部の特集記事では、「看板の明太子フランスパン」・「独自配合による口どけの良い生地」などを取り上げています。",
+      "営業時間は水〜日 11:00–18:00、定休日は月曜・火曜です（Googleマップの営業時間による）。営業時間や価格は変わることがあるため、訪問前に公式サイトやSNS、お電話でご確認ください。"
+    ],
+    "highlights": [
+      "看板の明太子フランスパン",
+      "独自配合による口どけの良い生地",
+      "総菜パンから食パンまで約25種類",
+      "一品一品丁寧に焼き上げる店内",
+      "アクセスと営業情報"
+    ],
+    "tags": [
+      "ベーカリー",
+      "パン",
+      "西尾市",
+      "西尾線南桜井駅",
+      "ランチ"
+    ],
+    "featureId": "ベーカリーミトロンド"
+  },
+  {
+    "id": "r739",
+    "name": "焼肉 炭処道楽",
+    "cuisine": "焼肉店",
+    "area": "福島県・郡山市",
+    "region": "fukushima",
+    "shape": "square",
+    "image": "/restaurants/teleapo-焼肉炭処道楽/hero.jpg",
+    "heroImages": [
+      "/restaurants/teleapo-焼肉炭処道楽/hero.jpg",
+      "/restaurants/teleapo-焼肉炭処道楽/point1.jpg",
+      "/restaurants/teleapo-焼肉炭処道楽/point2.jpg",
+      "/restaurants/teleapo-焼肉炭処道楽/point3.jpg",
+      "/restaurants/teleapo-焼肉炭処道楽/point4.jpg"
+    ],
+    "gallery": [
+      "/restaurants/teleapo-焼肉炭処道楽/hero.jpg",
+      "/restaurants/teleapo-焼肉炭処道楽/point1.jpg",
+      "/restaurants/teleapo-焼肉炭処道楽/point2.jpg",
+      "/restaurants/teleapo-焼肉炭処道楽/point3.jpg",
+      "/restaurants/teleapo-焼肉炭処道楽/point4.jpg",
+      "/restaurants/teleapo-焼肉炭処道楽/point5.jpg"
+    ],
+    "desc": "福島県郡山市安積荒井３丁目は、長沼街道沿いに位置する一帯だ。炭処道楽は、その長沼街道に面して店を構える焼肉店で、入口にある大きな提灯が目印になっている。",
+    "address": "福島県郡山市安積荒井3丁目525",
+    "hours": "月・火・木〜日 17:00–23:00",
+    "closed": "水曜日",
+    "seats": "64席(6名席×4・4名席×5・10名席×2)",
+    "nearest": "—",
+    "phone": "024-947-0411",
+    "source": {
+      "label": "Google ビジネスプロフィール",
+      "url": "https://maps.google.com/?cid=16640661242864859196"
+    },
+    "body": [
+      "焼肉 炭処道楽は、福島県郡山市にあるお店です。業態は「焼肉店」、所在地は福島県郡山市安積荒井3丁目525です。マチノワ編集部の特集記事では、「下処理と自家製塩で仕上げる牛タン」・「希少部位がそろう和牛盛り合わせ」などを取り上げています。",
+      "営業時間は月・火・木〜日 17:00–23:00、定休日は水曜日です（Googleマップの営業時間による）。席は64席(6名席×4・4名席×5・10名席×2)。営業時間や価格は変わることがあるため、訪問前に公式サイトやSNS、お電話でご確認ください。"
+    ],
+    "highlights": [
+      "下処理と自家製塩で仕上げる牛タン",
+      "希少部位がそろう和牛盛り合わせ",
+      "2人前のシェアプレート",
+      "掘りごたつの宴会席と64席の店内",
+      "長沼街道沿いのアクセスと駐車場"
+    ],
+    "tags": [
+      "焼肉店",
+      "郡山市",
+      "個室"
+    ],
+    "featureId": "焼肉炭処道楽"
+  },
+  {
+    "id": "r740",
+    "name": "とんかつグラッソ",
+    "cuisine": "とんかつ店",
+    "area": "三重県・員弁郡東員町",
+    "region": "mie",
+    "shape": "square",
+    "image": "/restaurants/teleapo-とんかつグラッソ/hero.jpg",
+    "heroImages": [
+      "/restaurants/teleapo-とんかつグラッソ/hero.jpg",
+      "/restaurants/teleapo-とんかつグラッソ/point1.jpg",
+      "/restaurants/teleapo-とんかつグラッソ/point2.jpg",
+      "/restaurants/teleapo-とんかつグラッソ/point3.jpg",
+      "/restaurants/teleapo-とんかつグラッソ/point5.jpg"
+    ],
+    "gallery": [
+      "/restaurants/teleapo-とんかつグラッソ/hero.jpg",
+      "/restaurants/teleapo-とんかつグラッソ/point1.jpg",
+      "/restaurants/teleapo-とんかつグラッソ/point2.jpg",
+      "/restaurants/teleapo-とんかつグラッソ/point3.jpg",
+      "/restaurants/teleapo-とんかつグラッソ/point5.jpg"
+    ],
+    "desc": "三重県員弁郡東員町のとんかつ店。",
+    "address": "三重県員弁郡東員町中上280-1",
+    "hours": "火〜日 11:00–14:30, 17:00–20:30",
+    "closed": "月曜日",
+    "seats": "—（訪問前に公式確認）",
+    "nearest": "—",
+    "phone": "0594-86-0031",
+    "source": {
+      "label": "Google ビジネスプロフィール",
+      "url": "https://maps.google.com/?cid=3016985849391715679"
+    },
+    "body": [
+      "とんかつグラッソは、三重県員弁郡東員町にあるお店です。業態は「とんかつ店」、所在地は三重県員弁郡東員町中上280-1です。マチノワ編集部の特集記事では、「認定山形豚と氷温熟成黒豚を使うとんかつ」・「養老山系の軟水で育てた地元米とメニューの二本立て」などを取り上げています。",
+      "営業時間は火〜日 11:00–14:30, 17:00–20:30、定休日は月曜日です（Googleマップの営業時間による）。営業時間や価格は変わることがあるため、訪問前に公式サイトやSNS、お電話でご確認ください。"
+    ],
+    "highlights": [
+      "認定山形豚と氷温熟成黒豚を使うとんかつ",
+      "養老山系の軟水で育てた地元米とメニューの二本立て",
+      "前菜からパスタまでそろう洋食メニュー",
+      "とんかつからオードブルまでのテイクアウト",
+      "三重県員弁郡東員町中上でのアクセスと営業時間"
+    ],
+    "tags": [
+      "とんかつ店",
+      "東員町",
+      "ランチ"
+    ],
+    "featureId": "とんかつグラッソ"
+  },
+  {
+    "id": "r741",
+    "name": "なんちゃってＢＡＲ・Ｄｒｅａｍ",
+    "cuisine": "ダーツバー",
+    "area": "福島県・西白河郡矢吹町",
+    "region": "fukushima",
+    "shape": "square",
+    "image": "/restaurants/teleapo-なんちゃってBAR・Dream/hero.jpg",
+    "heroImages": [
+      "/restaurants/teleapo-なんちゃってBAR・Dream/hero.jpg",
+      "/restaurants/teleapo-なんちゃってBAR・Dream/point3.jpg"
+    ],
+    "gallery": [
+      "/restaurants/teleapo-なんちゃってBAR・Dream/hero.jpg",
+      "/restaurants/teleapo-なんちゃってBAR・Dream/point3.jpg"
+    ],
+    "desc": "福島県西白河郡矢吹町のダーツバー。",
+    "address": "福島県西白河郡矢吹町本町157",
+    "hours": "月・水〜日 19:30–02:00",
+    "closed": "火曜日",
+    "seats": "—（訪問前に公式確認）",
+    "nearest": "—",
+    "phone": "0248-21-7223",
+    "source": {
+      "label": "Google ビジネスプロフィール",
+      "url": "https://maps.google.com/?cid=14945588667376605278"
+    },
+    "body": [
+      "なんちゃってＢＡＲ・Ｄｒｅａｍは、福島県西白河郡矢吹町にあるお店です。業態は「ダーツバー」、所在地は福島県西白河郡矢吹町本町157です。マチノワ編集部の特集記事では、「ダーツライブ2を備えた店内」・「月に1回のダーツハウスイベント」などを取り上げています。",
+      "営業時間は月・水〜日 19:30–02:00、定休日は火曜日です（Googleマップの営業時間による）。営業時間や価格は変わることがあるため、訪問前に公式サイトやSNS、お電話でご確認ください。"
+    ],
+    "highlights": [
+      "ダーツライブ2を備えた店内",
+      "月に1回のダーツハウスイベント",
+      "マスターが手がけるカクテルと軽食",
+      "アットホームな感じの店内",
+      "本町で夜に営業するダーツバー"
+    ],
+    "tags": [
+      "ダーツバー",
+      "レストラン",
+      "矢吹町",
+      "深夜営業"
+    ],
+    "featureId": "なんちゃってBAR・Dream"
+  },
+  {
+    "id": "r742",
+    "name": "ななつ星",
+    "cuisine": "創作料理店",
+    "area": "三重県・亀山市",
+    "region": "mie",
+    "shape": "square",
+    "image": "/restaurants/teleapo-ななつ星/hero.jpg",
+    "heroImages": [
+      "/restaurants/teleapo-ななつ星/hero.jpg",
+      "/restaurants/teleapo-ななつ星/point1.jpg",
+      "/restaurants/teleapo-ななつ星/point2.jpg",
+      "/restaurants/teleapo-ななつ星/point4.jpg"
+    ],
+    "gallery": [
+      "/restaurants/teleapo-ななつ星/hero.jpg",
+      "/restaurants/teleapo-ななつ星/point1.jpg",
+      "/restaurants/teleapo-ななつ星/point2.jpg",
+      "/restaurants/teleapo-ななつ星/point4.jpg"
+    ],
+    "desc": "三重県亀山市の創作料理店。",
+    "address": "三重県亀山市東御幸町59",
+    "hours": "月・木〜日 17:00–22:00",
+    "closed": "火曜・水曜",
+    "seats": "—（訪問前に公式確認）",
+    "nearest": "—",
+    "phone": "0595-84-3333",
+    "source": {
+      "label": "Google ビジネスプロフィール",
+      "url": "https://maps.google.com/?cid=3470208913944565974"
+    },
+    "body": [
+      "ななつ星は、三重県亀山市にあるお店です。業態は「創作料理店」、所在地は三重県亀山市東御幸町59です。マチノワ編集部の特集記事では、「四季の素材を活かす創作和食」・「落ち着いた和の空間」などを取り上げています。",
+      "営業時間は月・木〜日 17:00–22:00、定休日は火曜・水曜です（Googleマップの営業時間による）。営業時間や価格は変わることがあるため、訪問前に公式サイトやSNS、お電話でご確認ください。"
+    ],
+    "highlights": [
+      "四季の素材を活かす創作和食",
+      "落ち着いた和の空間",
+      "駐車場と支払いの対応",
+      "亀山駅からのアクセスと営業時間"
+    ],
+    "tags": [
+      "創作料理店",
+      "亀山市"
+    ],
+    "featureId": "ななつ星"
+  },
+  {
+    "id": "r743",
+    "name": "保護猫かふぇ またたび庵",
+    "cuisine": "猫カフェ",
+    "area": "三重県・三重郡菰野町",
+    "region": "mie",
+    "shape": "square",
+    "image": "/restaurants/teleapo-保護猫かふぇまたたび庵/hero.jpg",
+    "heroImages": [
+      "/restaurants/teleapo-保護猫かふぇまたたび庵/hero.jpg",
+      "/restaurants/teleapo-保護猫かふぇまたたび庵/point1.jpg"
+    ],
+    "gallery": [
+      "/restaurants/teleapo-保護猫かふぇまたたび庵/hero.jpg",
+      "/restaurants/teleapo-保護猫かふぇまたたび庵/point1.jpg"
+    ],
+    "desc": "三重県三重郡菰野町の猫カフェ。",
+    "address": "三重県三重郡菰野町菰野8475-75",
+    "hours": "水〜金 13:00–18:30 / 土・日 11:00–16:30",
+    "closed": "月曜・火曜",
+    "seats": "—（訪問前に公式確認）",
+    "nearest": "—",
+    "phone": "059-392-2828",
+    "source": {
+      "label": "Google ビジネスプロフィール",
+      "url": "https://maps.google.com/?cid=8106345535357329860"
+    },
+    "body": [
+      "保護猫かふぇ またたび庵は、三重県三重郡菰野町にあるお店です。業態は「猫カフェ」、所在地は三重県三重郡菰野町菰野8475-75です。マチノワ編集部の特集記事では、「業種は「猫カフェ」」・「営業時間は曜日で異なる」などを取り上げています。",
+      "営業時間は水〜金 13:00–18:30 / 土・日 11:00–16:30、定休日は月曜・火曜です（Googleマップの営業時間による）。営業時間や価格は変わることがあるため、訪問前に公式サイトやSNS、お電話でご確認ください。"
+    ],
+    "highlights": [
+      "業種は「猫カフェ」",
+      "営業時間は曜日で異なる",
+      "住所と電話番号"
+    ],
+    "tags": [
+      "猫カフェ",
+      "菰野町",
+      "ランチ"
+    ],
+    "featureId": "保護猫かふぇまたたび庵"
+  },
+  {
+    "id": "r744",
+    "name": "大玉ふわとろたこ焼き 縁-en-",
+    "cuisine": "たこ焼き屋",
+    "area": "大阪府・枚方市",
+    "region": "osaka",
+    "shape": "square",
+    "image": "/restaurants/teleapo-大玉ふわとろたこ焼き縁-en-/hero.jpg",
+    "heroImages": [
+      "/restaurants/teleapo-大玉ふわとろたこ焼き縁-en-/hero.jpg",
+      "/restaurants/teleapo-大玉ふわとろたこ焼き縁-en-/point1.jpg"
+    ],
+    "gallery": [
+      "/restaurants/teleapo-大玉ふわとろたこ焼き縁-en-/hero.jpg",
+      "/restaurants/teleapo-大玉ふわとろたこ焼き縁-en-/point1.jpg"
+    ],
+    "desc": "大阪府枚方市のたこ焼き屋。",
+    "address": "大阪府枚方市楠葉中町1-2",
+    "hours": "毎日 11:00–22:00",
+    "closed": "なし（Googleマップの営業時間による）",
+    "seats": "—（訪問前に公式確認）",
+    "nearest": "—",
+    "phone": "072-391-8303",
+    "instagram": "https://www.instagram.com/tako2026en",
+    "source": {
+      "label": "Google ビジネスプロフィール",
+      "url": "https://maps.google.com/?cid=14216970150944813601"
+    },
+    "body": [
+      "大玉ふわとろたこ焼き 縁-en-は、大阪府枚方市にあるお店です。業態は「たこ焼き屋」、所在地は大阪府枚方市楠葉中町1-2です。マチノワ編集部の特集記事では、「店名が示す「大玉」と「ふわとろ」」・「11:00から22:00の営業時間」などを取り上げています。",
+      "営業時間は毎日 11:00–22:00で、定休日はありません（Googleマップの営業時間による）。営業時間や価格は変わることがあるため、訪問前に公式サイトやSNS、お電話でご確認ください。"
+    ],
+    "highlights": [
+      "店名が示す「大玉」と「ふわとろ」",
+      "11:00から22:00の営業時間",
+      "大阪府枚方市楠葉中町のアクセス"
+    ],
+    "tags": [
+      "たこ焼き屋",
+      "枚方市",
+      "ランチ"
+    ],
+    "featureId": "大玉ふわとろたこ焼き縁-en-"
+  },
+  {
+    "id": "r745",
+    "name": "浜焼ノ栄友",
+    "cuisine": "バーベキュー店",
+    "area": "三重県・桑名市",
+    "region": "mie",
+    "shape": "square",
+    "image": "/restaurants/teleapo-浜焼ノ栄友/hero.jpg",
+    "heroImages": [
+      "/restaurants/teleapo-浜焼ノ栄友/hero.jpg",
+      "/restaurants/teleapo-浜焼ノ栄友/point1.jpg",
+      "/restaurants/teleapo-浜焼ノ栄友/point3.jpg"
+    ],
+    "gallery": [
+      "/restaurants/teleapo-浜焼ノ栄友/hero.jpg",
+      "/restaurants/teleapo-浜焼ノ栄友/point1.jpg",
+      "/restaurants/teleapo-浜焼ノ栄友/point3.jpg"
+    ],
+    "desc": "三重県桑名市のバーベキュー店。",
+    "address": "三重県桑名市桑名476-53",
+    "hours": "月・火・木〜土 17:00–00:00 / 日 13:00–21:00",
+    "closed": "水曜日",
+    "seats": "—（訪問前に公式確認）",
+    "nearest": "—",
+    "phone": "0594-23-2677",
+    "source": {
+      "label": "Google ビジネスプロフィール",
+      "url": "https://maps.google.com/?cid=1422432562160429081"
+    },
+    "body": [
+      "浜焼ノ栄友は、三重県桑名市にあるお店です。業態は「バーベキュー店」、所在地は三重県桑名市桑名476-53です。マチノワ編集部の特集記事では、「炭火で貝や魚介を焼く浜焼きのスタイル」・「曜日で区切られた営業時間」などを取り上げています。",
+      "営業時間は月・火・木〜土 17:00–00:00 / 日 13:00–21:00、定休日は水曜日です（Googleマップの営業時間による）。営業時間や価格は変わることがあるため、訪問前に公式サイトやSNS、お電話でご確認ください。"
+    ],
+    "highlights": [
+      "炭火で貝や魚介を焼く浜焼きのスタイル",
+      "曜日で区切られた営業時間",
+      "桑名市桑名のアクセスと連絡先"
+    ],
+    "tags": [
+      "バーベキュー店",
+      "桑名市",
+      "ランチ",
+      "深夜営業"
+    ],
+    "featureId": "浜焼ノ栄友"
+  },
+  {
+    "id": "r746",
+    "name": "和食 みよし",
+    "cuisine": "割烹料理店",
+    "area": "愛媛県・松山市",
+    "region": "ehime",
+    "shape": "square",
+    "image": "/restaurants/teleapo-和食みよし/hero.jpg",
+    "heroImages": [
+      "/restaurants/teleapo-和食みよし/hero.jpg",
+      "/restaurants/teleapo-和食みよし/point1.jpg",
+      "/restaurants/teleapo-和食みよし/point2.jpg",
+      "/restaurants/teleapo-和食みよし/point3.jpg",
+      "/restaurants/teleapo-和食みよし/point4.jpg"
+    ],
+    "gallery": [
+      "/restaurants/teleapo-和食みよし/hero.jpg",
+      "/restaurants/teleapo-和食みよし/point1.jpg",
+      "/restaurants/teleapo-和食みよし/point2.jpg",
+      "/restaurants/teleapo-和食みよし/point3.jpg",
+      "/restaurants/teleapo-和食みよし/point4.jpg",
+      "/restaurants/teleapo-和食みよし/point5.jpg"
+    ],
+    "desc": "愛媛県松山市の割烹料理店。",
+    "address": "愛媛県松山市千舟町3丁目4-2",
+    "hours": "月〜土 11:30–14:00, 18:00–23:00",
+    "closed": "日曜日",
+    "seats": "12席",
+    "nearest": "—",
+    "phone": "089-932-1320",
+    "source": {
+      "label": "Google ビジネスプロフィール",
+      "url": "https://maps.google.com/?cid=7449730329753015368"
+    },
+    "body": [
+      "和食 みよしは、愛媛県松山市にあるお店です。業態は「割烹料理店」、所在地は愛媛県松山市千舟町3丁目4-2です。マチノワ編集部の特集記事では、「四季の食材を少しずつ味わう『点心』」・「数種の出汁を使い分ける仕事」などを取り上げています。",
+      "営業時間は月〜土 11:30–14:00, 18:00–23:00、定休日は日曜日です（Googleマップの営業時間による）。席は12席。営業時間や価格は変わることがあるため、訪問前に公式サイトやSNS、お電話でご確認ください。"
+    ],
+    "highlights": [
+      "四季の食材を少しずつ味わう『点心』",
+      "数種の出汁を使い分ける仕事",
+      "季節の魚介と野菜を生かした一品",
+      "カウンター12席の落ち着いた店内",
+      "大街道駅から徒歩7分のアクセス"
+    ],
+    "tags": [
+      "割烹料理店",
+      "和食店",
+      "松山市",
+      "ランチ"
+    ],
+    "featureId": "和食みよし"
+  },
+  {
+    "id": "r747",
+    "name": "玉ゆら",
+    "cuisine": "居酒屋、日本料理",
+    "area": "愛知県・名古屋市中区",
+    "region": "nagoya",
+    "shape": "square",
+    "image": "/restaurants/teleapo-玉ゆら/hero.jpg",
+    "heroImages": [
+      "/restaurants/teleapo-玉ゆら/hero.jpg",
+      "/restaurants/teleapo-玉ゆら/point2.jpg"
+    ],
+    "gallery": [
+      "/restaurants/teleapo-玉ゆら/hero.jpg",
+      "/restaurants/teleapo-玉ゆら/point2.jpg"
+    ],
+    "desc": "愛知県名古屋市中区の居酒屋、日本料理。",
+    "address": "愛知県名古屋市中区錦3丁目9-1 シャインホワイト錦 3階",
+    "hours": "—（訪問前に公式確認）",
+    "closed": "—（訪問前に公式確認）",
+    "seats": "17席",
+    "nearest": "—",
+    "phone": "052-972-6545",
+    "source": {
+      "label": "Google ビジネスプロフィール",
+      "url": "https://maps.google.com/?cid=12472045085893164268"
+    },
+    "body": [
+      "玉ゆらは、愛知県名古屋市中区にあるお店です。業態は「居酒屋、日本料理」、所在地は愛知県名古屋市中区錦3丁目9-1 シャインホワイト錦 3階です。マチノワ編集部の特集記事では、「おばんざい 玉ゆらという店名とジャンル」・「カウンター席を中心とした17席の店内」などを取り上げています。",
+      "営業時間と定休日は取得できていないため、訪問前に公式の情報でご確認ください。席は17席。営業時間や価格は変わることがあるため、訪問前に公式サイトやSNS、お電話でご確認ください。"
+    ],
+    "highlights": [
+      "おばんざい 玉ゆらという店名とジャンル",
+      "カウンター席を中心とした17席の店内",
+      "シャインホワイト錦ビル3階という立地"
+    ],
+    "tags": [
+      "居酒屋、日本料理",
+      "バー",
+      "中区"
+    ],
+    "featureId": "玉ゆら"
+  },
+  {
+    "id": "r748",
+    "name": "Petit Parc",
+    "cuisine": "カフェ・喫茶",
+    "area": "東京都・調布市",
+    "region": "tokyo",
+    "shape": "square",
+    "image": "/restaurants/teleapo-PetitParc/hero.jpg",
+    "heroImages": [
+      "/restaurants/teleapo-PetitParc/hero.jpg",
+      "/restaurants/teleapo-PetitParc/point1.jpg",
+      "/restaurants/teleapo-PetitParc/point2.jpg",
+      "/restaurants/teleapo-PetitParc/point3.jpg"
+    ],
+    "gallery": [
+      "/restaurants/teleapo-PetitParc/hero.jpg",
+      "/restaurants/teleapo-PetitParc/point1.jpg",
+      "/restaurants/teleapo-PetitParc/point2.jpg",
+      "/restaurants/teleapo-PetitParc/point3.jpg"
+    ],
+    "desc": "Petit Parc(プティパルク)は、仙川駅から徒歩4分、公園近くの通りに2020年11月20日に開店したカフェで、サンドウィッチやホットドッグ、スペシャルティコーヒーを提供する。",
+    "address": "東京都調布市仙川町1丁目7-1",
+    "hours": "火 11:00–16:00 / 水〜金 11:00–20:00 / 土・日 10:00–20:00",
+    "closed": "月曜日",
+    "seats": "テーブル12席・テラス4席",
+    "nearest": "仙川駅より徒歩4分",
+    "phone": "03-4362-5584",
+    "instagram": "https://www.instagram.com/petit.parc",
+    "source": {
+      "label": "Google ビジネスプロフィール",
+      "url": "https://maps.google.com/?cid=16102889700900607581"
+    },
+    "body": [
+      "Petit Parcは、東京都調布市にあるお店です。業態は「カフェ・喫茶」、所在地は東京都調布市仙川町1丁目7-1、最寄りは仙川駅より徒歩4分です。マチノワ編集部の特集記事では、「サンドウィッチとホットドッグの軽食メニュー」・「古材を使った明るく開放的な店構え」などを取り上げています。",
+      "営業時間は火 11:00–16:00 / 水〜金 11:00–20:00 / 土・日 10:00–20:00、定休日は月曜日です（Googleマップの営業時間による）。席はテーブル12席・テラス4席。営業時間や価格は変わることがあるため、訪問前に公式サイトやSNS、お電話でご確認ください。"
+    ],
+    "highlights": [
+      "サンドウィッチとホットドッグの軽食メニュー",
+      "古材を使った明るく開放的な店構え",
+      "ブレンドとシングルオリジンのコーヒー、信州のソフトクリーム",
+      "テーブル席とウッドデッキのテラス席",
+      "仙川駅から徒歩4分のアクセス"
+    ],
+    "tags": [
+      "カフェ・喫茶",
+      "調布市",
+      "仙川駅",
+      "ランチ"
+    ],
+    "featureId": "PetitParc"
+  },
+  {
+    "id": "r749",
+    "name": "ヴァレルンガ",
+    "cuisine": "バー",
+    "area": "山梨県・韮崎市",
+    "region": "yamanashi",
+    "shape": "square",
+    "image": "/restaurants/teleapo-ヴァレルンガ/hero.jpg",
+    "heroImages": [
+      "/restaurants/teleapo-ヴァレルンガ/hero.jpg",
+      "/restaurants/teleapo-ヴァレルンガ/point2.jpg"
+    ],
+    "gallery": [
+      "/restaurants/teleapo-ヴァレルンガ/hero.jpg",
+      "/restaurants/teleapo-ヴァレルンガ/point2.jpg"
+    ],
+    "desc": "山梨県韮崎市のバー。最寄りはJR韮崎駅から0分。",
+    "address": "山梨県韮崎市中央町2-2",
+    "hours": "—（訪問前に公式確認）",
+    "closed": "—（訪問前に公式確認）",
+    "seats": "24席（1階カウンター6名・サイドカウンター6名、2階10～12名）",
+    "nearest": "JR韮崎駅から0分、ホームすぐ横",
+    "source": {
+      "label": "Google ビジネスプロフィール",
+      "url": "https://maps.google.com/?cid=4554927009685734302"
+    },
+    "body": [
+      "ヴァレルンガは、山梨県韮崎市にあるお店です。業態は「バー」、所在地は山梨県韮崎市中央町2-2、最寄りはJR韮崎駅から0分、ホームすぐ横です。マチノワ編集部の特集記事では、「JR韮崎駅のホームすぐ横に立つバー」・「1階カウンターと2階グループ席からなる24席」などを取り上げています。",
+      "営業時間と定休日は取得できていないため、訪問前に公式の情報でご確認ください。席は24席（1階カウンター6名・サイドカウンター6名、2階10～12名）。営業時間や価格は変わることがあるため、訪問前に公式サイトやSNS、お電話でご確認ください。"
+    ],
+    "highlights": [
+      "JR韮崎駅のホームすぐ横に立つバー",
+      "1階カウンターと2階グループ席からなる24席",
+      "分煙で利用できる店内",
+      "JR韮崎駅前からのアクセスと営業時間"
+    ],
+    "tags": [
+      "バー",
+      "韮崎市",
+      "韮崎駅",
+      "個室"
+    ],
+    "featureId": "ヴァレルンガ"
+  },
+  {
+    "id": "r750",
+    "name": "呑処喰処 泉",
+    "cuisine": "本格寿司居酒屋",
+    "area": "三重県・桑名市",
+    "region": "mie",
+    "shape": "square",
+    "image": "/restaurants/teleapo-呑処喰処泉/hero.jpg",
+    "heroImages": [
+      "/restaurants/teleapo-呑処喰処泉/hero.jpg",
+      "/restaurants/teleapo-呑処喰処泉/point1.jpg",
+      "/restaurants/teleapo-呑処喰処泉/point2.jpg",
+      "/restaurants/teleapo-呑処喰処泉/point3.jpg",
+      "/restaurants/teleapo-呑処喰処泉/point4.jpg"
+    ],
+    "gallery": [
+      "/restaurants/teleapo-呑処喰処泉/hero.jpg",
+      "/restaurants/teleapo-呑処喰処泉/point1.jpg",
+      "/restaurants/teleapo-呑処喰処泉/point2.jpg",
+      "/restaurants/teleapo-呑処喰処泉/point3.jpg",
+      "/restaurants/teleapo-呑処喰処泉/point4.jpg"
+    ],
+    "desc": "三重県桑名市の本格寿司居酒屋。最寄りはJR桑名駅・近鉄名古屋線桑名駅より徒歩6分。",
+    "address": "三重県桑名市参宮通9-2",
+    "hours": "月〜木 11:30–14:00, 16:00–22:00 / 金 11:30–14:00, 16:00–23:00 / 土 16:00–23:00",
+    "closed": "日曜日",
+    "seats": "総席数25席・カウンター席あり",
+    "nearest": "JR桑名駅・近鉄名古屋線桑名駅より徒歩6分",
+    "phone": "0594-82-7658",
+    "source": {
+      "label": "Google ビジネスプロフィール",
+      "url": "https://maps.google.com/?cid=645380817922318342"
+    },
+    "body": [
+      "呑処喰処 泉は、三重県桑名市にあるお店です。業態は「本格寿司居酒屋」、所在地は三重県桑名市参宮通9-2、最寄りはJR桑名駅・近鉄名古屋線桑名駅より徒歩6分です。マチノワ編集部の特集記事では、「職人が握るこだわりの寿司」・「油からこだわった天ぷら」などを取り上げています。",
+      "営業時間は月〜木 11:30–14:00, 16:00–22:00 / 金 11:30–14:00, 16:00–23:00 / 土 16:00–23:00、定休日は日曜日です（Googleマップの営業時間による）。席は総席数25席・カウンター席あり。営業時間や価格は変わることがあるため、訪問前に公式サイトやSNS、お電話でご確認ください。"
+    ],
+    "highlights": [
+      "職人が握るこだわりの寿司",
+      "油からこだわった天ぷら",
+      "当日仕入れの刺身と海鮮丼",
+      "木のぬくみを感じる店内とカウンター席",
+      "桑名駅から徒歩6分のアクセス"
+    ],
+    "tags": [
+      "本格寿司居酒屋",
+      "寿司店",
+      "桑名市",
+      "桑名駅",
+      "ランチ"
+    ],
+    "featureId": "呑処喰処泉"
+  },
+  {
+    "id": "r751",
+    "name": "台湾市場食堂美蘭",
+    "cuisine": "中華料理店",
+    "area": "石川県・金沢市",
+    "region": "ishikawa",
+    "shape": "square",
+    "image": "/restaurants/teleapo-台湾市場食堂美蘭/hero.jpg",
+    "heroImages": [
+      "/restaurants/teleapo-台湾市場食堂美蘭/hero.jpg",
+      "/restaurants/teleapo-台湾市場食堂美蘭/point1.jpg",
+      "/restaurants/teleapo-台湾市場食堂美蘭/point2.jpg",
+      "/restaurants/teleapo-台湾市場食堂美蘭/point3.jpg",
+      "/restaurants/teleapo-台湾市場食堂美蘭/point4.jpg"
+    ],
+    "gallery": [
+      "/restaurants/teleapo-台湾市場食堂美蘭/hero.jpg",
+      "/restaurants/teleapo-台湾市場食堂美蘭/point1.jpg",
+      "/restaurants/teleapo-台湾市場食堂美蘭/point2.jpg",
+      "/restaurants/teleapo-台湾市場食堂美蘭/point3.jpg",
+      "/restaurants/teleapo-台湾市場食堂美蘭/point4.jpg",
+      "/restaurants/teleapo-台湾市場食堂美蘭/point5.jpg"
+    ],
+    "desc": "石川県金沢市の中華料理店。",
+    "address": "石川県金沢市西念4丁目7-14",
+    "hours": "火〜金 11:00–14:00 / 土・日 11:00–15:00",
+    "closed": "月曜日",
+    "seats": "—（訪問前に公式確認）",
+    "nearest": "—",
+    "source": {
+      "label": "Google ビジネスプロフィール",
+      "url": "https://maps.google.com/?cid=16481208515846188634"
+    },
+    "body": [
+      "台湾市場食堂美蘭は、石川県金沢市にあるお店です。業態は「中華料理店」、所在地は石川県金沢市西念4丁目7-14です。マチノワ編集部の特集記事では、「日本人向けにアレンジしていない本場の台湾料理」・「油っこすぎず軽やかな後味」などを取り上げています。",
+      "営業時間は火〜金 11:00–14:00 / 土・日 11:00–15:00、定休日は月曜日です（Googleマップの営業時間による）。営業時間や価格は変わることがあるため、訪問前に公式サイトやSNS、お電話でご確認ください。"
+    ],
+    "highlights": [
+      "日本人向けにアレンジしていない本場の台湾料理",
+      "油っこすぎず軽やかな後味",
+      "手作り点心と多彩な台湾ビール",
+      "明るく開放感のある店内",
+      "西念の店舗、駐車場とカード利用に対応"
+    ],
+    "tags": [
+      "中華料理店",
+      "金沢市",
+      "ランチ"
+    ],
+    "featureId": "台湾市場食堂美蘭"
+  },
+  {
+    "id": "r752",
+    "name": "甘露肉汁",
+    "cuisine": "もつ鍋料理店",
+    "area": "神奈川県・横浜市中区",
+    "region": "kanagawa",
+    "shape": "square",
+    "image": "/restaurants/teleapo-甘露肉汁/hero.jpg",
+    "heroImages": [
+      "/restaurants/teleapo-甘露肉汁/hero.jpg",
+      "/restaurants/teleapo-甘露肉汁/point1.jpg",
+      "/restaurants/teleapo-甘露肉汁/point3.jpg"
+    ],
+    "gallery": [
+      "/restaurants/teleapo-甘露肉汁/hero.jpg",
+      "/restaurants/teleapo-甘露肉汁/point1.jpg",
+      "/restaurants/teleapo-甘露肉汁/point3.jpg"
+    ],
+    "desc": "神奈川県横浜市中区のもつ鍋料理店。",
+    "address": "神奈川県横浜市中区福富町仲通38-3 福仲ビル 2F",
+    "hours": "月 19:00–00:00 / 火〜土 00:00–07:00, 19:00–00:00 / 日 00:00–07:00",
+    "closed": "なし（Googleマップの営業時間による）",
+    "seats": "—（訪問前に公式確認）",
+    "nearest": "—",
+    "phone": "045-309-7199",
+    "source": {
+      "label": "Google ビジネスプロフィール",
+      "url": "https://maps.google.com/?cid=3708346908153394643"
+    },
+    "body": [
+      "甘露肉汁は、神奈川県横浜市中区にあるお店です。業態は「もつ鍋料理店」、所在地は神奈川県横浜市中区福富町仲通38-3 福仲ビル 2Fです。マチノワ編集部の特集記事では、「もつ鍋料理店としての営業」・「深夜から早朝にかけての営業時間」などを取り上げています。",
+      "営業時間は月 19:00–00:00 / 火〜土 00:00–07:00, 19:00–00:00 / 日 00:00–07:00で、定休日はありません（Googleマップの営業時間による）。営業時間や価格は変わることがあるため、訪問前に公式サイトやSNS、お電話でご確認ください。"
+    ],
+    "highlights": [
+      "もつ鍋料理店としての営業",
+      "深夜から早朝にかけての営業時間",
+      "福富町仲通のビル2階"
+    ],
+    "tags": [
+      "もつ鍋料理店",
+      "中区",
+      "深夜営業"
+    ],
+    "featureId": "甘露肉汁"
+  },
+  {
+    "id": "r753",
+    "name": "和醸良酒 〇たけ",
+    "cuisine": "居酒屋",
+    "area": "宮城県・仙台市青葉区",
+    "region": "miyagi",
+    "shape": "square",
+    "image": "/restaurants/teleapo-和醸良酒〇たけ/hero.jpg",
+    "heroImages": [
+      "/restaurants/teleapo-和醸良酒〇たけ/hero.jpg",
+      "/restaurants/teleapo-和醸良酒〇たけ/point1.jpg",
+      "/restaurants/teleapo-和醸良酒〇たけ/point3.jpg",
+      "/restaurants/teleapo-和醸良酒〇たけ/point4.jpg",
+      "/restaurants/teleapo-和醸良酒〇たけ/point5.jpg"
+    ],
+    "gallery": [
+      "/restaurants/teleapo-和醸良酒〇たけ/hero.jpg",
+      "/restaurants/teleapo-和醸良酒〇たけ/point1.jpg",
+      "/restaurants/teleapo-和醸良酒〇たけ/point3.jpg",
+      "/restaurants/teleapo-和醸良酒〇たけ/point4.jpg",
+      "/restaurants/teleapo-和醸良酒〇たけ/point5.jpg"
+    ],
+    "desc": "宮城県仙台市青葉区の居酒屋。最寄りは大町西公園駅 東1番出口より徒歩3分。",
+    "address": "宮城県仙台市青葉区大町2丁目4-1 グランドソレイユ大町 1F",
+    "hours": "月〜土 17:00–00:00 / 日 15:00–22:00",
+    "closed": "なし（Googleマップの営業時間による）",
+    "seats": "テーブル席・お座敷席 計36席",
+    "nearest": "大町西公園駅 東1番出口より徒歩3分",
+    "phone": "022-266-5541",
+    "source": {
+      "label": "Google ビジネスプロフィール",
+      "url": "https://maps.google.com/?cid=15386181217083429347"
+    },
+    "body": [
+      "和醸良酒 〇たけは、宮城県仙台市青葉区にあるお店です。業態は「居酒屋」、所在地は宮城県仙台市青葉区大町2丁目4-1 グランドソレイユ大町 1F、最寄りは大町西公園駅 東1番出口より徒歩3分です。マチノワ編集部の特集記事では、「造り酒屋出身の店主が選ぶ200銘柄以上の日本酒」・「長期熟成や常温放置、外気晒しといった独自の手法」などを取り上げています。",
+      "営業時間は月〜土 17:00–00:00 / 日 15:00–22:00で、定休日はありません（Googleマップの営業時間による）。席はテーブル席・お座敷席 計36席。営業時間や価格は変わることがあるため、訪問前に公式サイトやSNS、お電話でご確認ください。"
+    ],
+    "highlights": [
+      "造り酒屋出身の店主が選ぶ200銘柄以上の日本酒",
+      "長期熟成や常温放置、外気晒しといった独自の手法",
+      "宮城の旬菜と仙台名物の牛タンを使う酒肴",
+      "土間風の1階と屋形船をイメージした2階の店内",
+      "大町西公園駅徒歩3分、複数路線からのアクセス"
+    ],
+    "tags": [
+      "居酒屋",
+      "青葉区",
+      "大町西公園駅",
+      "宴会",
+      "個室",
+      "深夜営業"
+    ],
+    "featureId": "和醸良酒〇たけ"
+  },
+  {
+    "id": "r754",
+    "name": "MELU CAFE",
+    "cuisine": "カフェ・喫茶",
+    "area": "神奈川県・横浜市南区",
+    "region": "kanagawa",
+    "shape": "square",
+    "image": "/restaurants/teleapo-MELUCAFE/hero.jpg",
+    "heroImages": [
+      "/restaurants/teleapo-MELUCAFE/hero.jpg",
+      "/restaurants/teleapo-MELUCAFE/point1.jpg",
+      "/restaurants/teleapo-MELUCAFE/point2.jpg",
+      "/restaurants/teleapo-MELUCAFE/point3.jpg"
+    ],
+    "gallery": [
+      "/restaurants/teleapo-MELUCAFE/hero.jpg",
+      "/restaurants/teleapo-MELUCAFE/point1.jpg",
+      "/restaurants/teleapo-MELUCAFE/point2.jpg",
+      "/restaurants/teleapo-MELUCAFE/point3.jpg"
+    ],
+    "desc": "神奈川県横浜市南区のカフェ・喫茶。",
+    "address": "神奈川県横浜市南区中島町4丁目89 ルーセントビル",
+    "hours": "月〜金 08:30–20:30 / 土 08:30–20:00 / 日 11:00–20:00",
+    "closed": "なし（Googleマップの営業時間による）",
+    "seats": "—（訪問前に公式確認）",
+    "nearest": "—",
+    "source": {
+      "label": "Google ビジネスプロフィール",
+      "url": "https://maps.google.com/?cid=17478748512467998491"
+    },
+    "body": [
+      "MELU CAFEは、神奈川県横浜市南区にあるお店です。業態は「カフェ・喫茶」、所在地は神奈川県横浜市南区中島町4丁目89 ルーセントビルです。マチノワ編集部の特集記事では、「50年以上続く老舗の喫茶メニュー」・「1階禁煙席・2階喫煙席の2フロア」などを取り上げています。",
+      "営業時間は月〜金 08:30–20:30 / 土 08:30–20:00 / 日 11:00–20:00で、定休日はありません（Googleマップの営業時間による）。営業時間や価格は変わることがあるため、訪問前に公式サイトやSNS、お電話でご確認ください。"
+    ],
+    "highlights": [
+      "50年以上続く老舗の喫茶メニュー",
+      "1階禁煙席・2階喫煙席の2フロア",
+      "弘明寺かんのん通り商店街の中の立地",
+      "曜日ごとに異なる営業時間"
+    ],
+    "tags": [
+      "カフェ・喫茶",
+      "南区",
+      "ランチ"
+    ],
+    "featureId": "MELUCAFE"
+  },
+  {
+    "id": "r755",
+    "name": "雅珈",
+    "cuisine": "コーヒーショップ・喫茶店",
+    "area": "愛媛県・松山市",
+    "region": "ehime",
+    "shape": "square",
+    "image": "/restaurants/teleapo-雅珈/hero.jpg",
+    "heroImages": [
+      "/restaurants/teleapo-雅珈/hero.jpg",
+      "/restaurants/teleapo-雅珈/point1.jpg"
+    ],
+    "gallery": [
+      "/restaurants/teleapo-雅珈/hero.jpg",
+      "/restaurants/teleapo-雅珈/point1.jpg"
+    ],
+    "desc": "愛媛県松山市のコーヒーショップ・喫茶店。",
+    "address": "愛媛県松山市南高井町1694-2",
+    "hours": "月〜土 09:00–19:30",
+    "closed": "日曜日",
+    "seats": "—（訪問前に公式確認）",
+    "nearest": "—",
+    "phone": "089-970-2002",
+    "source": {
+      "label": "Google ビジネスプロフィール",
+      "url": "https://maps.google.com/?cid=14181060755063353605"
+    },
+    "body": [
+      "雅珈は、愛媛県松山市にあるお店です。業態は「コーヒーショップ・喫茶店」、所在地は愛媛県松山市南高井町1694-2です。マチノワ編集部の特集記事では、「コーヒーショップ・喫茶店としての業種」・「月曜から土曜、9時から19時30分までの営業時間」などを取り上げています。",
+      "営業時間は月〜土 09:00–19:30、定休日は日曜日です（Googleマップの営業時間による）。営業時間や価格は変わることがあるため、訪問前に公式サイトやSNS、お電話でご確認ください。"
+    ],
+    "highlights": [
+      "コーヒーショップ・喫茶店としての業種",
+      "月曜から土曜、9時から19時30分までの営業時間",
+      "電話番号とGoogleマップでの所在地"
+    ],
+    "tags": [
+      "コーヒーショップ・喫茶店",
+      "松山市",
+      "ランチ"
+    ],
+    "featureId": "雅珈"
+  },
+  {
+    "id": "r756",
+    "name": "cafebar miyami",
+    "cuisine": "かき氷、カフェ、居酒屋",
+    "area": "東京都・台東区",
+    "region": "tokyo",
+    "shape": "square",
+    "image": "/restaurants/teleapo-cafebarmiyami/hero.jpg",
+    "heroImages": [
+      "/restaurants/teleapo-cafebarmiyami/hero.jpg",
+      "/restaurants/teleapo-cafebarmiyami/point1.jpg",
+      "/restaurants/teleapo-cafebarmiyami/point3.jpg"
+    ],
+    "gallery": [
+      "/restaurants/teleapo-cafebarmiyami/hero.jpg",
+      "/restaurants/teleapo-cafebarmiyami/point1.jpg",
+      "/restaurants/teleapo-cafebarmiyami/point3.jpg"
+    ],
+    "desc": "東京都台東区のかき氷、カフェ、居酒屋。最寄りはつくばエクスプレス浅草駅A2出口より徒歩約4分。",
+    "address": "東京都台東区西浅草2丁目16-7 鞠子ビル 101",
+    "hours": "月〜水・土・日 08:00–11:00, 12:00–18:00 / 金 08:00–11:00, 12:00–16:00",
+    "closed": "木曜日",
+    "seats": "総席数11席(カウンター7席・テーブル4席)",
+    "nearest": "つくばエクスプレス浅草駅A2出口より徒歩約4分",
+    "phone": "080-6934-7732",
+    "source": {
+      "label": "Google ビジネスプロフィール",
+      "url": "https://maps.google.com/?cid=3954027337332115507"
+    },
+    "body": [
+      "cafebar miyamiは、東京都台東区にあるお店です。業態は「かき氷、カフェ、居酒屋」、所在地は東京都台東区西浅草2丁目16-7 鞠子ビル 101、最寄りはつくばエクスプレス浅草駅A2出口より徒歩約4分です。マチノワ編集部の特集記事では、「かき氷を軸にしたメニュー」・「ケフタグラタンやチキンタジン鍋などの創作料理」などを取り上げています。",
+      "営業時間は月〜水・土・日 08:00–11:00, 12:00–18:00 / 金 08:00–11:00, 12:00–16:00、定休日は木曜日です（Googleマップの営業時間による）。席は総席数11席(カウンター7席・テーブル4席)。営業時間や価格は変わることがあるため、訪問前に公式サイトやSNS、お電話でご確認ください。"
+    ],
+    "highlights": [
+      "かき氷を軸にしたメニュー",
+      "ケフタグラタンやチキンタジン鍋などの創作料理",
+      "カウンター7席とテーブル4席の店内",
+      "つくばエクスプレス浅草駅から徒歩4分のアクセス"
+    ],
+    "tags": [
+      "かき氷、カフェ、居酒屋",
+      "カフェ・喫茶",
+      "台東区",
+      "エクスプレス浅草駅",
+      "ランチ"
+    ],
+    "featureId": "cafebarmiyami"
+  },
+  {
+    "id": "r757",
+    "name": "から揚げドラゴンチキン ハイボール キムにい",
+    "cuisine": "居酒屋",
+    "area": "北海道・札幌市手稲区",
+    "region": "hokkaido",
+    "shape": "square",
+    "image": "/restaurants/teleapo-から揚げドラゴンチキンハイボールキムにい/hero.jpg",
+    "heroImages": [
+      "/restaurants/teleapo-から揚げドラゴンチキンハイボールキムにい/hero.jpg",
+      "/restaurants/teleapo-から揚げドラゴンチキンハイボールキムにい/point1.jpg",
+      "/restaurants/teleapo-から揚げドラゴンチキンハイボールキムにい/point2.jpg",
+      "/restaurants/teleapo-から揚げドラゴンチキンハイボールキムにい/point3.jpg",
+      "/restaurants/teleapo-から揚げドラゴンチキンハイボールキムにい/point4.jpg"
+    ],
+    "gallery": [
+      "/restaurants/teleapo-から揚げドラゴンチキンハイボールキムにい/hero.jpg",
+      "/restaurants/teleapo-から揚げドラゴンチキンハイボールキムにい/point1.jpg",
+      "/restaurants/teleapo-から揚げドラゴンチキンハイボールキムにい/point2.jpg",
+      "/restaurants/teleapo-から揚げドラゴンチキンハイボールキムにい/point3.jpg",
+      "/restaurants/teleapo-から揚げドラゴンチキンハイボールキムにい/point4.jpg"
+    ],
+    "desc": "から揚げ「ドラゴンチキン」と「氷柱ハイボール」を軸にした一軒だ。",
+    "address": "北海道札幌市手稲区星置1条3丁目3-6 Wing1 階左",
+    "hours": "—（訪問前に公式確認）",
+    "closed": "—（訪問前に公式確認）",
+    "seats": "—（訪問前に公式確認）",
+    "nearest": "JR星置駅から徒歩5分",
+    "phone": "011-213-7993",
+    "source": {
+      "label": "Google ビジネスプロフィール",
+      "url": "https://maps.google.com/?cid=7224301355860667034"
+    },
+    "body": [
+      "から揚げドラゴンチキン ハイボール キムにいは、北海道札幌市手稲区にあるお店です。業態は「居酒屋」、所在地は北海道札幌市手稲区星置1条3丁目3-6 Wing1 階左、最寄りはJR星置駅から徒歩5分です。マチノワ編集部の特集記事では、「ドラゴンチキンと氷柱ハイボール」・「店主が厳選した30種類以上のウイスキー」などを取り上げています。",
+      "営業時間と定休日は取得できていないため、訪問前に公式の情報でご確認ください。営業時間や価格は変わることがあるため、訪問前に公式サイトやSNS、お電話でご確認ください。"
+    ],
+    "highlights": [
+      "ドラゴンチキンと氷柱ハイボール",
+      "店主が厳選した30種類以上のウイスキー",
+      "巻かないだし巻き玉子や麻婆豆腐などの手作り料理",
+      "生ビール付き2時間飲み放題のコースメニュー",
+      "JR星置駅から徒歩5分のアクセス"
+    ],
+    "tags": [
+      "居酒屋",
+      "手稲区",
+      "星置駅"
+    ],
+    "featureId": "から揚げドラゴンチキンハイボールキムにい"
+  },
+  {
+    "id": "r758",
+    "name": ".tenn",
+    "cuisine": "カフェ・喫茶",
+    "area": "大阪府・豊中市",
+    "region": "osaka",
+    "shape": "square",
+    "image": "/restaurants/teleapo-.tenn/hero.jpg",
+    "heroImages": [
+      "/restaurants/teleapo-.tenn/hero.jpg",
+      "/restaurants/teleapo-.tenn/point1.jpg",
+      "/restaurants/teleapo-.tenn/point2.jpg",
+      "/restaurants/teleapo-.tenn/point3.jpg"
+    ],
+    "gallery": [
+      "/restaurants/teleapo-.tenn/hero.jpg",
+      "/restaurants/teleapo-.tenn/point1.jpg",
+      "/restaurants/teleapo-.tenn/point2.jpg",
+      "/restaurants/teleapo-.tenn/point3.jpg"
+    ],
+    "desc": "大阪府豊中市のカフェ・喫茶。",
+    "address": "大阪府豊中市服部豊町2丁目1-7",
+    "hours": "毎日 20:00–00:00",
+    "closed": "なし（Googleマップの営業時間による）",
+    "seats": "—（訪問前に公式確認）",
+    "nearest": "—",
+    "phone": "090-2248-3568",
+    "instagram": "https://www.instagram.com/dot.tenn",
+    "source": {
+      "label": "Google ビジネスプロフィール",
+      "url": "https://maps.google.com/?cid=7138451587001236648"
+    },
+    "body": [
+      ".tennは、大阪府豊中市にあるお店です。業態は「カフェ・喫茶」、所在地は大阪府豊中市服部豊町2丁目1-7です。マチノワ編集部の特集記事では、「業種の表示はカフェ・喫茶」・「20時から深夜0時までの営業時間」などを取り上げています。",
+      "営業時間は毎日 20:00–00:00で、定休日はありません（Googleマップの営業時間による）。営業時間や価格は変わることがあるため、訪問前に公式サイトやSNS、お電話でご確認ください。"
+    ],
+    "highlights": [
+      "業種の表示はカフェ・喫茶",
+      "20時から深夜0時までの営業時間",
+      "服部豊町の所在地と電話番号"
+    ],
+    "tags": [
+      "カフェ・喫茶",
+      "豊中市",
+      "深夜営業"
+    ],
+    "featureId": ".tenn"
+  },
+  {
+    "id": "r759",
+    "name": "一汁おにぎり 壱",
+    "cuisine": "和食店",
+    "area": "愛媛県・松山市",
+    "region": "ehime",
+    "shape": "square",
+    "image": "/restaurants/teleapo-一汁おにぎり壱/hero.jpg",
+    "heroImages": [
+      "/restaurants/teleapo-一汁おにぎり壱/hero.jpg",
+      "/restaurants/teleapo-一汁おにぎり壱/point1.jpg",
+      "/restaurants/teleapo-一汁おにぎり壱/point2.jpg",
+      "/restaurants/teleapo-一汁おにぎり壱/point3.jpg",
+      "/restaurants/teleapo-一汁おにぎり壱/point4.jpg"
+    ],
+    "gallery": [
+      "/restaurants/teleapo-一汁おにぎり壱/hero.jpg",
+      "/restaurants/teleapo-一汁おにぎり壱/point1.jpg",
+      "/restaurants/teleapo-一汁おにぎり壱/point2.jpg",
+      "/restaurants/teleapo-一汁おにぎり壱/point3.jpg",
+      "/restaurants/teleapo-一汁おにぎり壱/point4.jpg",
+      "/restaurants/teleapo-一汁おにぎり壱/point5.jpg"
+    ],
+    "desc": "愛媛県松山市の和食店。最寄りは伊予鉄西堀端駅より徒歩約3分。",
+    "address": "愛媛県松山市萱町1丁目2-6",
+    "hours": "—（訪問前に公式確認）",
+    "closed": "—（訪問前に公式確認）",
+    "seats": "カウンター中心",
+    "nearest": "伊予鉄西堀端駅より徒歩約3分",
+    "phone": "080-1305-0101",
+    "source": {
+      "label": "Google ビジネスプロフィール",
+      "url": "https://maps.google.com/?cid=2765329769999657002"
+    },
+    "body": [
+      "一汁おにぎり 壱は、愛媛県松山市にあるお店です。業態は「和食店」、所在地は愛媛県松山市萱町1丁目2-6、最寄りは伊予鉄西堀端駅より徒歩約3分です。マチノワ編集部の特集記事では、「宇和産の米と県産の海苔で仕立てる20種のおにぎり」・「昼と夜で変わる二部制の営業」などを取り上げています。",
+      "営業時間と定休日は取得できていないため、訪問前に公式の情報でご確認ください。席はカウンター中心。営業時間や価格は変わることがあるため、訪問前に公式サイトやSNS、お電話でご確認ください。"
+    ],
+    "highlights": [
+      "宇和産の米と県産の海苔で仕立てる20種のおにぎり",
+      "昼と夜で変わる二部制の営業",
+      "店頭で選べる持ち帰り",
+      "カウンター中心の店内",
+      "伊予鉄西堀端駅から徒歩3分のアクセス"
+    ],
+    "tags": [
+      "和食店",
+      "松山市",
+      "西堀端駅"
+    ],
+    "featureId": "一汁おにぎり壱"
+  },
+  {
+    "id": "r760",
+    "name": "ノーズ（ｎｏｚ）ＣＡＦＥ",
+    "cuisine": "カフェ・喫茶",
+    "area": "三重県・鈴鹿市",
+    "region": "mie",
+    "shape": "square",
+    "image": "/restaurants/teleapo-ノーズ（noz）CAFE/hero.jpg",
+    "heroImages": [
+      "/restaurants/teleapo-ノーズ（noz）CAFE/hero.jpg",
+      "/restaurants/teleapo-ノーズ（noz）CAFE/point1.jpg",
+      "/restaurants/teleapo-ノーズ（noz）CAFE/point3.jpg",
+      "/restaurants/teleapo-ノーズ（noz）CAFE/point4.jpg"
+    ],
+    "gallery": [
+      "/restaurants/teleapo-ノーズ（noz）CAFE/hero.jpg",
+      "/restaurants/teleapo-ノーズ（noz）CAFE/point1.jpg",
+      "/restaurants/teleapo-ノーズ（noz）CAFE/point3.jpg",
+      "/restaurants/teleapo-ノーズ（noz）CAFE/point4.jpg"
+    ],
+    "desc": "三重県鈴鹿市のカフェ・喫茶。",
+    "address": "三重県鈴鹿市道伯5丁目24-23",
+    "hours": "—（訪問前に公式確認）",
+    "closed": "—（訪問前に公式確認）",
+    "seats": "—（訪問前に公式確認）",
+    "nearest": "—",
+    "phone": "059-379-5005",
+    "source": {
+      "label": "Google ビジネスプロフィール",
+      "url": "https://maps.google.com/?cid=982946403638376993"
+    },
+    "body": [
+      "ノーズ（ｎｏｚ）ＣＡＦＥは、三重県鈴鹿市にあるお店です。業態は「カフェ・喫茶」、所在地は三重県鈴鹿市道伯5丁目24-23です。マチノワ編集部の特集記事では、「ふすま食パンや低糖質ピザがそろう低糖質メニュー」・「糖尿病クリニックと管理栄養士が監修するメニュー」などを取り上げています。",
+      "営業時間と定休日は取得できていないため、訪問前に公式の情報でご確認ください。営業時間や価格は変わることがあるため、訪問前に公式サイトやSNS、お電話でご確認ください。"
+    ],
+    "highlights": [
+      "ふすま食パンや低糖質ピザがそろう低糖質メニュー",
+      "糖尿病クリニックと管理栄養士が監修するメニュー",
+      "低糖質バウムクーヘンやクランベリーベーグルなどのスイーツ・パン",
+      "三重県鈴鹿市道伯にある店舗"
+    ],
+    "tags": [
+      "カフェ・喫茶",
+      "鈴鹿市"
+    ],
+    "featureId": "ノーズ（noz）CAFE"
+  },
+  {
+    "id": "r761",
+    "name": "竹田カフェ",
+    "cuisine": "コーヒーショップ・喫茶店",
+    "area": "大分県・竹田市",
+    "region": "oita",
+    "shape": "square",
+    "image": "/restaurants/teleapo-竹田カフェ/hero.jpg",
+    "heroImages": [
+      "/restaurants/teleapo-竹田カフェ/hero.jpg",
+      "/restaurants/teleapo-竹田カフェ/point1.jpg",
+      "/restaurants/teleapo-竹田カフェ/point2.jpg",
+      "/restaurants/teleapo-竹田カフェ/point3.jpg",
+      "/restaurants/teleapo-竹田カフェ/point4.jpg"
+    ],
+    "gallery": [
+      "/restaurants/teleapo-竹田カフェ/hero.jpg",
+      "/restaurants/teleapo-竹田カフェ/point1.jpg",
+      "/restaurants/teleapo-竹田カフェ/point2.jpg",
+      "/restaurants/teleapo-竹田カフェ/point3.jpg",
+      "/restaurants/teleapo-竹田カフェ/point4.jpg",
+      "/restaurants/teleapo-竹田カフェ/point5.jpg"
+    ],
+    "desc": "竹田カフェは、コーヒー豆をすべて自家焙煎し、奇抜な味よりも飲みやすさを追求した豆を揃える。",
+    "address": "大分県竹田市竹田町405-3",
+    "hours": "—（訪問前に公式確認）",
+    "closed": "—（訪問前に公式確認）",
+    "seats": "—（訪問前に公式確認）",
+    "nearest": "—",
+    "phone": "070-8938-0401",
+    "source": {
+      "label": "Google ビジネスプロフィール",
+      "url": "https://maps.google.com/?cid=6550972887437745444"
+    },
+    "body": [
+      "竹田カフェは、大分県竹田市にあるお店です。業態は「コーヒーショップ・喫茶店」、所在地は大分県竹田市竹田町405-3です。マチノワ編集部の特集記事では、「自家焙煎のスペシャルティーコーヒー豆」・「コーヒーが苦手な人への提案とコーヒー診断」などを取り上げています。",
+      "営業時間と定休日は取得できていないため、訪問前に公式の情報でご確認ください。営業時間や価格は変わることがあるため、訪問前に公式サイトやSNS、お電話でご確認ください。"
+    ],
+    "highlights": [
+      "自家焙煎のスペシャルティーコーヒー豆",
+      "コーヒーが苦手な人への提案とコーヒー診断",
+      "デカフェ豆やオリジナルドリップパックのラインナップ",
+      "団体から1〜2名まで対応する広い店内とペット同伴可能な席",
+      "竹田市竹田町の所在地とオンラインショップでの利用"
+    ],
+    "tags": [
+      "コーヒーショップ・喫茶店",
+      "竹田市"
+    ],
+    "featureId": "竹田カフェ"
+  },
+  {
+    "id": "r762",
+    "name": "うどんbar もういっけん",
+    "cuisine": "うどん屋",
+    "area": "沖縄県・宜野湾市",
+    "region": "okinawa",
+    "shape": "square",
+    "image": "/restaurants/teleapo-うどんbarもういっけん/hero.jpg",
+    "heroImages": [
+      "/restaurants/teleapo-うどんbarもういっけん/hero.jpg",
+      "/restaurants/teleapo-うどんbarもういっけん/point1.jpg",
+      "/restaurants/teleapo-うどんbarもういっけん/point2.jpg",
+      "/restaurants/teleapo-うどんbarもういっけん/point3.jpg"
+    ],
+    "gallery": [
+      "/restaurants/teleapo-うどんbarもういっけん/hero.jpg",
+      "/restaurants/teleapo-うどんbarもういっけん/point1.jpg",
+      "/restaurants/teleapo-うどんbarもういっけん/point2.jpg",
+      "/restaurants/teleapo-うどんbarもういっけん/point3.jpg"
+    ],
+    "desc": "沖縄県宜野湾市のうどん屋。",
+    "address": "沖縄県宜野湾市我如古4丁目5-7",
+    "hours": "月 11:30–14:00, 21:00–02:00 / 火〜木 21:00–02:00 / 金 11:30–14:00, 21:00–03:00 / 土 21:00–03:00",
+    "closed": "日曜日",
+    "seats": "—（訪問前に公式確認）",
+    "nearest": "—",
+    "phone": "080-3228-3040",
+    "source": {
+      "label": "Google ビジネスプロフィール",
+      "url": "https://maps.google.com/?cid=16864217666730266207"
+    },
+    "body": [
+      "うどんbar もういっけんは、沖縄県宜野湾市にあるお店です。業態は「うどん屋」、所在地は沖縄県宜野湾市我如古4丁目5-7です。マチノワ編集部の特集記事では、「「うどん」と「bar」が並ぶ店名」・「深夜まで続く夜の営業時間」などを取り上げています。",
+      "営業時間は月 11:30–14:00, 21:00–02:00 / 火〜木 21:00–02:00 / 金 11:30–14:00, 21:00–03:00 / 土 21:00–03:00、定休日は日曜日です（Googleマップの営業時間による）。営業時間や価格は変わることがあるため、訪問前に公式サイトやSNS、お電話でご確認ください。"
+    ],
+    "highlights": [
+      "「うどん」と「bar」が並ぶ店名",
+      "深夜まで続く夜の営業時間",
+      "曜日で分かれる昼と夜の営業"
+    ],
+    "tags": [
+      "うどん屋",
+      "うどん",
+      "宜野湾市",
+      "ランチ",
+      "深夜営業"
+    ],
+    "featureId": "うどんbarもういっけん"
+  },
+  {
+    "id": "r763",
+    "name": "楽",
+    "cuisine": "焼肉・ホルモン",
+    "area": "大阪府・大阪市福島区",
+    "region": "osaka",
+    "shape": "square",
+    "image": "/restaurants/teleapo-楽/hero.jpg",
+    "heroImages": [
+      "/restaurants/teleapo-楽/hero.jpg",
+      "/restaurants/teleapo-楽/point1.jpg",
+      "/restaurants/teleapo-楽/point2.jpg",
+      "/restaurants/teleapo-楽/point3.jpg",
+      "/restaurants/teleapo-楽/point5.jpg"
+    ],
+    "gallery": [
+      "/restaurants/teleapo-楽/hero.jpg",
+      "/restaurants/teleapo-楽/point1.jpg",
+      "/restaurants/teleapo-楽/point2.jpg",
+      "/restaurants/teleapo-楽/point3.jpg",
+      "/restaurants/teleapo-楽/point5.jpg"
+    ],
+    "desc": "大阪府大阪市福島区の焼肉・ホルモン。",
+    "address": "大阪府大阪市福島区福島5丁目13-7",
+    "hours": "月〜土 18:00–03:00 / 日 17:30–03:00",
+    "closed": "なし（Googleマップの営業時間による）",
+    "seats": "カウンター・個室・2階半個室",
+    "nearest": "—",
+    "phone": "06-6451-3187",
+    "source": {
+      "label": "Google ビジネスプロフィール",
+      "url": "https://maps.google.com/?cid=1188632426218574658"
+    },
+    "body": [
+      "楽は、大阪府大阪市福島区にあるお店です。業態は「焼肉・ホルモン」、所在地は大阪府大阪市福島区福島5丁目13-7です。マチノワ編集部の特集記事では、「炭火で仕上げるホルモン串」・「厳選した部位を使う肉刺し」などを取り上げています。",
+      "営業時間は月〜土 18:00–03:00 / 日 17:30–03:00で、定休日はありません（Googleマップの営業時間による）。席はカウンター・個室・2階半個室。営業時間や価格は変わることがあるため、訪問前に公式サイトやSNS、お電話でご確認ください。"
+    ],
+    "highlights": [
+      "炭火で仕上げるホルモン串",
+      "厳選した部位を使う肉刺し",
+      "トッピングを選べるホルモン鍋",
+      "カウンターから半個室まで備える店内",
+      "福島区福島の営業情報"
+    ],
+    "tags": [
+      "焼肉・ホルモン",
+      "居酒屋",
+      "福島区",
+      "個室",
+      "深夜営業"
+    ],
+    "featureId": "楽"
+  },
+  {
+    "id": "r764",
+    "name": "鮮魚料理 若鰤",
+    "cuisine": "海鮮料理",
+    "area": "大阪府・大阪市中央区",
+    "region": "osaka",
+    "shape": "square",
+    "image": "/restaurants/teleapo-鮮魚料理若鰤/hero.jpg",
+    "heroImages": [
+      "/restaurants/teleapo-鮮魚料理若鰤/hero.jpg",
+      "/restaurants/teleapo-鮮魚料理若鰤/point1.jpg",
+      "/restaurants/teleapo-鮮魚料理若鰤/point3.jpg"
+    ],
+    "gallery": [
+      "/restaurants/teleapo-鮮魚料理若鰤/hero.jpg",
+      "/restaurants/teleapo-鮮魚料理若鰤/point1.jpg",
+      "/restaurants/teleapo-鮮魚料理若鰤/point3.jpg"
+    ],
+    "desc": "大阪府大阪市中央区の海鮮料理。最寄りは天満橋駅徒歩3分・谷町四丁目駅徒歩5分。",
+    "address": "大阪府大阪市中央区谷町2丁目8-4",
+    "hours": "—（訪問前に公式確認）",
+    "closed": "—（訪問前に公式確認）",
+    "seats": "総席数18席",
+    "nearest": "天満橋駅徒歩3分・谷町四丁目駅徒歩5分",
+    "phone": "06-4791-2004",
+    "source": {
+      "label": "Google ビジネスプロフィール",
+      "url": "https://maps.google.com/?cid=10836096327672804884"
+    },
+    "body": [
+      "鮮魚料理 若鰤は、大阪府大阪市中央区にあるお店です。業態は「海鮮料理」、所在地は大阪府大阪市中央区谷町2丁目8-4、最寄りは天満橋駅徒歩3分・谷町四丁目駅徒歩5分です。マチノワ編集部の特集記事では、「名物海鮮丼とおでん定食を中心にしたランチメニュー」・「カウンター席とテーブル席、総席数18席の店内」などを取り上げています。",
+      "営業時間と定休日は取得できていないため、訪問前に公式の情報でご確認ください。席は総席数18席。営業時間や価格は変わることがあるため、訪問前に公式サイトやSNS、お電話でご確認ください。"
+    ],
+    "highlights": [
+      "名物海鮮丼とおでん定食を中心にしたランチメニュー",
+      "カウンター席とテーブル席、総席数18席の店内",
+      "天満橋駅・谷町四丁目駅から歩ける立地とランチ・ディナーの営業時間"
+    ],
+    "tags": [
+      "海鮮料理",
+      "シーフード・海鮮料理店",
+      "中央区",
+      "天満橋駅"
+    ],
+    "featureId": "鮮魚料理若鰤"
+  },
+  {
+    "id": "r765",
+    "name": "陽月 kagezuki",
+    "cuisine": "焼き鳥",
+    "area": "千葉県・千葉市花見川区",
+    "region": "chiba",
+    "shape": "square",
+    "image": "/restaurants/teleapo-陽月kagezuki/hero.jpg",
+    "heroImages": [
+      "/restaurants/teleapo-陽月kagezuki/hero.jpg",
+      "/restaurants/teleapo-陽月kagezuki/point1.jpg",
+      "/restaurants/teleapo-陽月kagezuki/point2.jpg",
+      "/restaurants/teleapo-陽月kagezuki/point3.jpg"
+    ],
+    "gallery": [
+      "/restaurants/teleapo-陽月kagezuki/hero.jpg",
+      "/restaurants/teleapo-陽月kagezuki/point1.jpg",
+      "/restaurants/teleapo-陽月kagezuki/point2.jpg",
+      "/restaurants/teleapo-陽月kagezuki/point3.jpg"
+    ],
+    "desc": "千葉県千葉市花見川区の焼き鳥。最寄りはJR新検見川駅。",
+    "address": "千葉県千葉市花見川区花園1丁目6-5 花園陸橋ビル 102",
+    "hours": "—（訪問前に公式確認）",
+    "closed": "—（訪問前に公式確認）",
+    "seats": "—（訪問前に公式確認）",
+    "nearest": "JR新検見川駅",
+    "source": {
+      "label": "Google ビジネスプロフィール",
+      "url": "https://maps.google.com/?cid=2359388906071726402"
+    },
+    "body": [
+      "陽月 kagezukiは、千葉県千葉市花見川区にあるお店です。業態は「焼き鳥」、所在地は千葉県千葉市花見川区花園1丁目6-5 花園陸橋ビル 102、最寄りはJR新検見川駅です。マチノワ編集部の特集記事では、「焼き鳥とシーシャを扱うバー＆グリル」・「シーシャ（水たばこ）を楽しめるカフェ・バー」などを取り上げています。",
+      "営業時間と定休日は取得できていないため、訪問前に公式の情報でご確認ください。営業時間や価格は変わることがあるため、訪問前に公式サイトやSNS、お電話でご確認ください。"
+    ],
+    "highlights": [
+      "焼き鳥とシーシャを扱うバー＆グリル",
+      "シーシャ（水たばこ）を楽しめるカフェ・バー",
+      "新検見川駅から徒歩2分、陸橋のたもとのアクセス"
+    ],
+    "tags": [
+      "焼き鳥",
+      "バー＆グリル",
+      "花見川区",
+      "新検見川駅"
+    ],
+    "featureId": "陽月kagezuki"
+  },
+  {
+    "id": "r766",
+    "name": "麺処 清水",
+    "cuisine": "ラーメン・中華そば",
+    "area": "新潟県・南魚沼市",
+    "region": "niigata",
+    "shape": "square",
+    "image": "/restaurants/teleapo-麺処清水/hero.jpg",
+    "heroImages": [
+      "/restaurants/teleapo-麺処清水/hero.jpg",
+      "/restaurants/teleapo-麺処清水/point1.jpg",
+      "/restaurants/teleapo-麺処清水/point2.jpg",
+      "/restaurants/teleapo-麺処清水/point3.jpg",
+      "/restaurants/teleapo-麺処清水/point5.jpg"
+    ],
+    "gallery": [
+      "/restaurants/teleapo-麺処清水/hero.jpg",
+      "/restaurants/teleapo-麺処清水/point1.jpg",
+      "/restaurants/teleapo-麺処清水/point2.jpg",
+      "/restaurants/teleapo-麺処清水/point3.jpg",
+      "/restaurants/teleapo-麺処清水/point5.jpg"
+    ],
+    "desc": "新潟県南魚沼市のラーメン・中華そば。",
+    "address": "新潟県南魚沼市四十日2935-1",
+    "hours": "—（訪問前に公式確認）",
+    "closed": "—（訪問前に公式確認）",
+    "seats": "—（訪問前に公式確認）",
+    "nearest": "—",
+    "phone": "025-788-0882",
+    "source": {
+      "label": "Google ビジネスプロフィール",
+      "url": "https://maps.google.com/?cid=4097848910233356703"
+    },
+    "body": [
+      "麺処 清水は、新潟県南魚沼市にあるお店です。業態は「ラーメン・中華そば」、所在地は新潟県南魚沼市四十日2935-1です。マチノワ編集部の特集記事では、「雲呑中華そばを含む中華そばのメニュー」・「妻有ポークのチャーシューと雲呑がのる一杯」などを取り上げています。",
+      "営業時間と定休日は取得できていないため、訪問前に公式の情報でご確認ください。営業時間や価格は変わることがあるため、訪問前に公式サイトやSNS、お電話でご確認ください。"
+    ],
+    "highlights": [
+      "雲呑中華そばを含む中華そばのメニュー",
+      "妻有ポークのチャーシューと雲呑がのる一杯",
+      "塩・醤油・山椒など複数系統のラーメン",
+      "長岡店と並ぶ南魚沼本店",
+      "四十日の国道沿い、駐車場を備えたアクセス"
+    ],
+    "tags": [
+      "ラーメン・中華そば",
+      "ラーメン屋",
+      "そば",
+      "南魚沼市"
+    ],
+    "featureId": "麺処清水"
+  },
+  {
+    "id": "r767",
+    "name": "菓子Hotsu Hotsu",
+    "cuisine": "菓子店",
+    "area": "岡山県・岡山市北区",
+    "region": "okayama",
+    "shape": "square",
+    "image": "/restaurants/teleapo-菓子HotsuHotsu/hero.jpg",
+    "heroImages": [
+      "/restaurants/teleapo-菓子HotsuHotsu/hero.jpg",
+      "/restaurants/teleapo-菓子HotsuHotsu/point1.jpg",
+      "/restaurants/teleapo-菓子HotsuHotsu/point2.jpg",
+      "/restaurants/teleapo-菓子HotsuHotsu/point3.jpg"
+    ],
+    "gallery": [
+      "/restaurants/teleapo-菓子HotsuHotsu/hero.jpg",
+      "/restaurants/teleapo-菓子HotsuHotsu/point1.jpg",
+      "/restaurants/teleapo-菓子HotsuHotsu/point2.jpg",
+      "/restaurants/teleapo-菓子HotsuHotsu/point3.jpg"
+    ],
+    "desc": "岡山県岡山市北区の菓子店。",
+    "address": "岡山県岡山市北区表町1丁目10-23 LIFE",
+    "hours": "—（訪問前に公式確認）",
+    "closed": "—（訪問前に公式確認）",
+    "seats": "—（訪問前に公式確認）",
+    "nearest": "—",
+    "instagram": "https://www.instagram.com/hotsuhotsupan",
+    "source": {
+      "label": "Google ビジネスプロフィール",
+      "url": "https://maps.google.com/?cid=3931386595416995587"
+    },
+    "body": [
+      "菓子Hotsu Hotsuは、岡山県岡山市北区にあるお店です。業態は「菓子店」、所在地は岡山県岡山市北区表町1丁目10-23 LIFEです。マチノワ編集部の特集記事では、「スコーンサンドやカヌレなど約30種類の焼き菓子」・「1階は焼き菓子販売、2階はイートインとセレクトショップ」などを取り上げています。",
+      "営業時間と定休日は取得できていないため、訪問前に公式の情報でご確認ください。営業時間や価格は変わることがあるため、訪問前に公式サイトやSNS、お電話でご確認ください。"
+    ],
+    "highlights": [
+      "スコーンサンドやカヌレなど約30種類の焼き菓子",
+      "1階は焼き菓子販売、2階はイートインとセレクトショップ",
+      "2階で味わう季節のパフェとハーブティー",
+      "大和町から表町へ移転したシェアショップ",
+      "営業時間と定休日"
+    ],
+    "tags": [
+      "菓子店",
+      "北区"
+    ],
+    "featureId": "菓子HotsuHotsu"
+  },
+  {
+    "id": "r768",
+    "name": "Dog Cafe Eight ドッグ カフェ エイト",
+    "cuisine": "ドッグカフェ",
+    "area": "茨城県・那珂郡東海村",
+    "region": "ibaraki",
+    "shape": "square",
+    "image": "/restaurants/teleapo-DogCafeEightドッグカフェエイト/hero.jpg",
+    "heroImages": [
+      "/restaurants/teleapo-DogCafeEightドッグカフェエイト/hero.jpg",
+      "/restaurants/teleapo-DogCafeEightドッグカフェエイト/point1.jpg",
+      "/restaurants/teleapo-DogCafeEightドッグカフェエイト/point2.jpg",
+      "/restaurants/teleapo-DogCafeEightドッグカフェエイト/point3.jpg",
+      "/restaurants/teleapo-DogCafeEightドッグカフェエイト/point5.jpg"
+    ],
+    "gallery": [
+      "/restaurants/teleapo-DogCafeEightドッグカフェエイト/hero.jpg",
+      "/restaurants/teleapo-DogCafeEightドッグカフェエイト/point1.jpg",
+      "/restaurants/teleapo-DogCafeEightドッグカフェエイト/point2.jpg",
+      "/restaurants/teleapo-DogCafeEightドッグカフェエイト/point3.jpg",
+      "/restaurants/teleapo-DogCafeEightドッグカフェエイト/point5.jpg"
+    ],
+    "desc": "茨城県那珂郡東海村のドッグカフェ。最寄りは東海駅から車で約8分。",
+    "address": "茨城県那珂郡東海村村松2415-2",
+    "hours": "—（訪問前に公式確認）",
+    "closed": "—（訪問前に公式確認）",
+    "seats": "全席わんちゃんOK",
+    "nearest": "東海駅から車で約8分/ひたち海浜公園から車で約15分",
+    "phone": "029-229-3933",
+    "instagram": "https://www.instagram.com/eight.group8",
+    "source": {
+      "label": "Google ビジネスプロフィール",
+      "url": "https://maps.google.com/?cid=655465839405755542"
+    },
+    "body": [
+      "Dog Cafe Eight ドッグ カフェ エイトは、茨城県那珂郡東海村にあるお店です。業態は「ドッグカフェ」、所在地は茨城県那珂郡東海村村松2415-2、最寄りは東海駅から車で約8分/ひたち海浜公園から車で約15分です。マチノワ編集部の特集記事では、「全席わんちゃんOKの店内とテラス席」・「ドッグランとフォトスポット」などを取り上げています。",
+      "営業時間と定休日は取得できていないため、訪問前に公式の情報でご確認ください。席は全席わんちゃんOK。営業時間や価格は変わることがあるため、訪問前に公式サイトやSNS、お電話でご確認ください。"
+    ],
+    "highlights": [
+      "全席わんちゃんOKの店内とテラス席",
+      "ドッグランとフォトスポット",
+      "エイトプレートやローストビーフ丼などの食事メニュー",
+      "わんちゃん用バースデーケーキなどの専用メニュー",
+      "東海駅から車で約8分のアクセス"
+    ],
+    "tags": [
+      "ドッグカフェ",
+      "東海村",
+      "東海駅"
+    ],
+    "featureId": "DogCafeEightドッグカフェエイト"
+  },
+  {
+    "id": "r769",
+    "name": "餃子らーめん一丸本店",
+    "cuisine": "餃子、ラーメン、居酒屋",
+    "area": "愛知県・名古屋市名東区",
+    "region": "nagoya",
+    "shape": "square",
+    "image": "/restaurants/teleapo-餃子らーめん一丸本店/hero.jpg",
+    "heroImages": [
+      "/restaurants/teleapo-餃子らーめん一丸本店/hero.jpg",
+      "/restaurants/teleapo-餃子らーめん一丸本店/point1.jpg",
+      "/restaurants/teleapo-餃子らーめん一丸本店/point2.jpg"
+    ],
+    "gallery": [
+      "/restaurants/teleapo-餃子らーめん一丸本店/hero.jpg",
+      "/restaurants/teleapo-餃子らーめん一丸本店/point1.jpg",
+      "/restaurants/teleapo-餃子らーめん一丸本店/point2.jpg"
+    ],
+    "desc": "愛知県名古屋市名東区の餃子、ラーメン、居酒屋。",
+    "address": "愛知県名古屋市名東区一社4丁目1-1 第二名昭ビル 1F",
+    "hours": "—（訪問前に公式確認）",
+    "closed": "—（訪問前に公式確認）",
+    "seats": "—（訪問前に公式確認）",
+    "nearest": "—",
+    "phone": "052-888-1110",
+    "instagram": "https://www.instagram.com/1110ichimaru",
+    "source": {
+      "label": "Google ビジネスプロフィール",
+      "url": "https://maps.google.com/?cid=18318890463871576176"
+    },
+    "body": [
+      "餃子らーめん一丸本店は、愛知県名古屋市名東区にあるお店です。業態は「餃子、ラーメン、居酒屋」、所在地は愛知県名古屋市名東区一社4丁目1-1 第二名昭ビル 1Fです。マチノワ編集部の特集記事では、「鶏白湯をベースにしたスープと麺メニューの幅」・「餃子・ラーメン・居酒屋のジャンルとメニュー構成」などを取り上げています。",
+      "営業時間と定休日は取得できていないため、訪問前に公式の情報でご確認ください。営業時間や価格は変わることがあるため、訪問前に公式サイトやSNS、お電話でご確認ください。"
+    ],
+    "highlights": [
+      "鶏白湯をベースにしたスープと麺メニューの幅",
+      "餃子・ラーメン・居酒屋のジャンルとメニュー構成",
+      "ランチとディナーの営業時間"
+    ],
+    "tags": [
+      "餃子、ラーメン、居酒屋",
+      "ラーメン屋",
+      "名東区"
+    ],
+    "featureId": "餃子らーめん一丸本店"
+  },
+  {
+    "id": "r770",
+    "name": "コグマコーヒー",
+    "cuisine": "コーヒーショップ・喫茶店",
+    "area": "大阪府・大阪市天王寺区",
+    "region": "osaka",
+    "shape": "square",
+    "image": "/restaurants/teleapo-コグマコーヒー/hero.jpg",
+    "heroImages": [
+      "/restaurants/teleapo-コグマコーヒー/hero.jpg",
+      "/restaurants/teleapo-コグマコーヒー/point1.jpg",
+      "/restaurants/teleapo-コグマコーヒー/point2.jpg",
+      "/restaurants/teleapo-コグマコーヒー/point3.jpg",
+      "/restaurants/teleapo-コグマコーヒー/point4.jpg"
+    ],
+    "gallery": [
+      "/restaurants/teleapo-コグマコーヒー/hero.jpg",
+      "/restaurants/teleapo-コグマコーヒー/point1.jpg",
+      "/restaurants/teleapo-コグマコーヒー/point2.jpg",
+      "/restaurants/teleapo-コグマコーヒー/point3.jpg",
+      "/restaurants/teleapo-コグマコーヒー/point4.jpg"
+    ],
+    "desc": "大阪市天王寺区下寺町は、寺院が連なる通りとして知られるエリアだ。コグマコーヒーは、その一角にある心光寺の境内に店を構える。",
+    "address": "大阪府大阪市天王寺区下寺町1丁目3-68",
+    "hours": "—（訪問前に公式確認）",
+    "closed": "—（訪問前に公式確認）",
+    "seats": "予約可",
+    "nearest": "—",
+    "instagram": "https://www.instagram.com/kogumacoffee_osaka",
+    "source": {
+      "label": "Google ビジネスプロフィール",
+      "url": "https://maps.google.com/?cid=7587709339952533767"
+    },
+    "body": [
+      "コグマコーヒーは、大阪府大阪市天王寺区にあるお店です。業態は「コーヒーショップ・喫茶店」、所在地は大阪府大阪市天王寺区下寺町1丁目3-68です。マチノワ編集部の特集記事では、「店主が淹れるハンドドリップコーヒーと豆のラインナップ」・「パティシエが手がけるバスクチーズケーキなどのスイーツ」などを取り上げています。",
+      "営業時間と定休日は取得できていないため、訪問前に公式の情報でご確認ください。席は予約可。営業時間や価格は変わることがあるため、訪問前に公式サイトやSNS、お電話でご確認ください。"
+    ],
+    "highlights": [
+      "店主が淹れるハンドドリップコーヒーと豆のラインナップ",
+      "パティシエが手がけるバスクチーズケーキなどのスイーツ",
+      "心光寺の境内に広がる隠れ家的な店内",
+      "心光寺境内へのアクセスと営業日"
+    ],
+    "tags": [
+      "コーヒーショップ・喫茶店",
+      "天王寺区"
+    ],
+    "featureId": "コグマコーヒー"
   }
 ];
 
@@ -14032,7 +15791,43 @@ export const ARTICLE_STORE_FEATURE_IDS: Record<string, string> = {
   "r731": "麺sBLAND文蔵BLACK",
   "r732": "創作鉄板一Hajime",
   "r733": "やき鳥ツギノキタザワ",
-  "r734": "生"
+  "r734": "生",
+  "r735": "知覧桜見亭",
+  "r736": "HINA-CAFE(ヒナカフェ)",
+  "r737": "居酒屋割烹新粋",
+  "r738": "ベーカリーミトロンド",
+  "r739": "焼肉炭処道楽",
+  "r740": "とんかつグラッソ",
+  "r741": "なんちゃってBAR・Dream",
+  "r742": "ななつ星",
+  "r743": "保護猫かふぇまたたび庵",
+  "r744": "大玉ふわとろたこ焼き縁-en-",
+  "r745": "浜焼ノ栄友",
+  "r746": "和食みよし",
+  "r747": "玉ゆら",
+  "r748": "PetitParc",
+  "r749": "ヴァレルンガ",
+  "r750": "呑処喰処泉",
+  "r751": "台湾市場食堂美蘭",
+  "r752": "甘露肉汁",
+  "r753": "和醸良酒〇たけ",
+  "r754": "MELUCAFE",
+  "r755": "雅珈",
+  "r756": "cafebarmiyami",
+  "r757": "から揚げドラゴンチキンハイボールキムにい",
+  "r758": ".tenn",
+  "r759": "一汁おにぎり壱",
+  "r760": "ノーズ（noz）CAFE",
+  "r761": "竹田カフェ",
+  "r762": "うどんbarもういっけん",
+  "r763": "楽",
+  "r764": "鮮魚料理若鰤",
+  "r765": "陽月kagezuki",
+  "r766": "麺処清水",
+  "r767": "菓子HotsuHotsu",
+  "r768": "DogCafeEightドッグカフェエイト",
+  "r769": "餃子らーめん一丸本店",
+  "r770": "コグマコーヒー"
 };
 
 /** 特集記事ID → 店舗ID */
@@ -14327,5 +16122,41 @@ export const ARTICLE_STORE_ID_BY_FEATURE: Record<string, string> = {
   "麺sBLAND文蔵BLACK": "r731",
   "創作鉄板一Hajime": "r732",
   "やき鳥ツギノキタザワ": "r733",
-  "生": "r734"
+  "生": "r734",
+  "知覧桜見亭": "r735",
+  "HINA-CAFE(ヒナカフェ)": "r736",
+  "居酒屋割烹新粋": "r737",
+  "ベーカリーミトロンド": "r738",
+  "焼肉炭処道楽": "r739",
+  "とんかつグラッソ": "r740",
+  "なんちゃってBAR・Dream": "r741",
+  "ななつ星": "r742",
+  "保護猫かふぇまたたび庵": "r743",
+  "大玉ふわとろたこ焼き縁-en-": "r744",
+  "浜焼ノ栄友": "r745",
+  "和食みよし": "r746",
+  "玉ゆら": "r747",
+  "PetitParc": "r748",
+  "ヴァレルンガ": "r749",
+  "呑処喰処泉": "r750",
+  "台湾市場食堂美蘭": "r751",
+  "甘露肉汁": "r752",
+  "和醸良酒〇たけ": "r753",
+  "MELUCAFE": "r754",
+  "雅珈": "r755",
+  "cafebarmiyami": "r756",
+  "から揚げドラゴンチキンハイボールキムにい": "r757",
+  ".tenn": "r758",
+  "一汁おにぎり壱": "r759",
+  "ノーズ（noz）CAFE": "r760",
+  "竹田カフェ": "r761",
+  "うどんbarもういっけん": "r762",
+  "楽": "r763",
+  "鮮魚料理若鰤": "r764",
+  "陽月kagezuki": "r765",
+  "麺処清水": "r766",
+  "菓子HotsuHotsu": "r767",
+  "DogCafeEightドッグカフェエイト": "r768",
+  "餃子らーめん一丸本店": "r769",
+  "コグマコーヒー": "r770"
 };

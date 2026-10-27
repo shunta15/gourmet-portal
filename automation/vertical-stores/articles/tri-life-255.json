@@ -1,0 +1,206 @@
+{
+  "key": "tri-life-255",
+  "headline": "大阪市北区豊崎にある浄土宗の寺院。天平19年(747年)に行基菩薩が開山し、法然上人の再興を経て浄土宗に改められた",
+  "lede": "大阪市北区豊崎にある「源光寺」です。清浄瑠璃山念佛三昧院と号する浄土宗の寺院で、本尊は阿弥陀如来像です。大阪新四十八願所阿弥陀巡礼の第二番札所にもなっています。",
+  "sections": [
+    {
+      "heading": "場所と拝観",
+      "body": "住所は大阪府大阪市北区豊崎２丁目３−２３、電話は06-6375-0070です。堂内の拝観や御朱印を希望する場合は、事前に電話での連絡が必要です。拝観時間は全日9時から18時ですが、法事などにより拝観できないことがあります。"
+    },
+    {
+      "heading": "由緒",
+      "body": "天平19年(747年)、聖武天皇の勅願により行基菩薩が開山し、もとは平生寺と号しました。天治元年(1124年)に良忍上人が中興し、建永元年(1206年)には法然上人が荒廃していた旧跡の再興に尽力しています。承元3年(1209)に法然上人が詠んだ歌から「源光寺」の名がつき、浄土宗の寺院として復興しました。文政3年(1830)の火災で堂宇を焼失しましたが本尊は難を免れ、現在の堂宇は文久元年(1861)の再建によるものです。大阪新四十八願所阿弥陀巡礼の第二番札所にもなっています。"
+    },
+    {
+      "heading": "本尊と寺宝",
+      "body": "本尊の阿弥陀如来像は鎌倉後期の作と推測される立像で、大阪府有形文化財に指定されています。秘仏のため、開帳は両彼岸の中日のみです。御旅姿の法然上人像も所蔵しています。境内には西国三十三カ所観音堂や鐘楼も残っています。"
+    },
+    {
+      "heading": "法要と永代供養",
+      "body": "月参りや祥月参り、お盆参りのほか、一周忌や三回忌などの年忌法要、安産祈願や七五三、仏前結婚式も受け付けています。彼岸会や盂蘭盆会などの年間行事もおこなっています。永代供養墓『結縁墓』を建立しており、個人墓と合祀墓の二種類があります。"
+    }
+  ],
+  "menus": [
+    {
+      "name": "月参り"
+    },
+    {
+      "name": "祥月参り"
+    },
+    {
+      "name": "お盆参り"
+    },
+    {
+      "name": "年忌法要"
+    },
+    {
+      "name": "安産祈願"
+    },
+    {
+      "name": "七五三"
+    },
+    {
+      "name": "仏前結婚式"
+    },
+    {
+      "name": "永代供養墓「結縁墓」"
+    }
+  ],
+  "tags": [
+    {
+      "tag": "予約制",
+      "factIndex": 2
+    }
+  ],
+  "facts": [
+    {
+      "claim": "住所は大阪府大阪市北区豊崎２丁目３−２３",
+      "source": "https://maps.google.com/?cid=843196533450944665",
+      "quote": "大阪府大阪市北区豊崎２丁目３−２３",
+      "checkedAt": "2026-10-27"
+    },
+    {
+      "claim": "電話は06-6375-0070",
+      "source": "https://maps.google.com/?cid=843196533450944665",
+      "quote": "06-6375-0070",
+      "checkedAt": "2026-10-27"
+    },
+    {
+      "claim": "堂内拝観や御朱印の希望には事前の電話連絡が必要",
+      "source": "https://genkousyouja.wixsite.com/-site",
+      "quote": "必ず事前に電話連絡をお願い致します",
+      "checkedAt": "2026-10-27"
+    },
+    {
+      "claim": "拝観時間は全日9時から18時",
+      "source": "https://genkousyouja.wixsite.com/-site",
+      "quote": "全日：9:00〜18:00",
+      "checkedAt": "2026-10-27"
+    },
+    {
+      "claim": "法事などで拝観できないことがある",
+      "source": "https://genkousyouja.wixsite.com/-site",
+      "quote": "法事などで、拝観できないことがございます",
+      "checkedAt": "2026-10-27"
+    },
+    {
+      "claim": "天平19年(747年)に行基菩薩が開山した",
+      "source": "https://genkousyouja.wixsite.com/-site/blank-5",
+      "quote": "天平19年（747年）聖武天皇の勅願により行基菩薩が開山",
+      "checkedAt": "2026-10-27"
+    },
+    {
+      "claim": "天治元年(1124年)に良忍上人が中興した",
+      "source": "https://genkousyouja.wixsite.com/-site/blank-5",
+      "quote": "天治元年（1124年）良忍上人が中興して",
+      "checkedAt": "2026-10-27"
+    },
+    {
+      "claim": "文政3年(1830)の火災で堂宇を焼失し、本尊は火難を免れた",
+      "source": "https://genkousyouja.wixsite.com/-site/blank-5",
+      "quote": "文政3年（1830）火災により一切の堂宇",
+      "checkedAt": "2026-10-27"
+    },
+    {
+      "claim": "現在の堂宇は文久元年(1861)の再建",
+      "source": "https://genkousyouja.wixsite.com/-site/blank-5",
+      "quote": "現在の堂宇は文久元年（1861）の再建によるものである",
+      "checkedAt": "2026-10-27"
+    },
+    {
+      "claim": "大阪新四十八願所阿弥陀巡礼の第二番札所になっている",
+      "source": "https://genkousyouja.wixsite.com/-site/blank-5",
+      "quote": "大阪新四十八願所阿弥陀巡礼」第二番札所となっています",
+      "checkedAt": "2026-10-27"
+    },
+    {
+      "claim": "本尊の阿弥陀如来像は鎌倉後期の作と推測される立像",
+      "source": "https://genkousyouja.wixsite.com/-site/blank-5",
+      "quote": "本尊の阿弥陀如来像は鎌倉後期の作と推測される立像",
+      "checkedAt": "2026-10-27"
+    },
+    {
+      "claim": "本尊は大阪府有形文化財に指定されている",
+      "source": "https://genkousyouja.wixsite.com/-site/blank-5",
+      "quote": "大阪府有形文化財に指定されている",
+      "checkedAt": "2026-10-27"
+    },
+    {
+      "claim": "本尊は秘仏で両彼岸の中日のみ開帳される",
+      "source": "https://genkousyouja.wixsite.com/-site/blank-5",
+      "quote": "秘仏で両彼岸の中日のみ開帳される",
+      "checkedAt": "2026-10-27"
+    },
+    {
+      "claim": "御旅姿の法然上人像を所蔵している",
+      "source": "https://genkousyouja.wixsite.com/-site/blank-5",
+      "quote": "大変珍しい御旅姿の法然上人像が所蔵され",
+      "checkedAt": "2026-10-27"
+    },
+    {
+      "claim": "境内に西国三十三カ所観音堂・鐘楼が残っている",
+      "source": "https://genkousyouja.wixsite.com/-site/blank-5",
+      "quote": "西国三十三カ所観音堂・鐘楼などが残っている",
+      "checkedAt": "2026-10-27"
+    },
+    {
+      "claim": "月参りをおこなっている",
+      "source": "https://genkousyouja.wixsite.com/-site/blank-3",
+      "quote": "毎月各ご自宅のご仏前にお伺いし、お勤めをさせていただきます",
+      "checkedAt": "2026-10-27"
+    },
+    {
+      "claim": "一周忌や三回忌などの年忌法要を受け付けている",
+      "source": "https://genkousyouja.wixsite.com/-site/blank-3",
+      "quote": "一周忌や三回忌など、いわゆる年忌法要を承っております",
+      "checkedAt": "2026-10-27"
+    },
+    {
+      "claim": "安産祈願や七五三、仏前結婚式も受け付けている",
+      "source": "https://genkousyouja.wixsite.com/-site/blank-3",
+      "quote": "安産祈願や七五三、仏前結婚式も承っております",
+      "checkedAt": "2026-10-27"
+    },
+    {
+      "claim": "彼岸会や盂蘭盆会などの年間行事をおこなっている",
+      "source": "https://genkousyouja.wixsite.com/-site/blank-3",
+      "quote": "３月の彼岸会（中日）、８月の盂蘭盆会",
+      "checkedAt": "2026-10-27"
+    },
+    {
+      "claim": "永代供養墓『結縁墓』を建立した",
+      "source": "https://genkousyouja.wixsite.com/-site/blank-2",
+      "quote": "このたび、当山では永代供養墓を建立致しました",
+      "checkedAt": "2026-10-27"
+    },
+    {
+      "claim": "結縁墓には個人墓と合祀墓の二種類がある",
+      "source": "https://genkousyouja.wixsite.com/-site/blank-2",
+      "quote": "個人墓と合祀墓の二種類あります",
+      "checkedAt": "2026-10-27"
+    }
+  ],
+  "sources": [
+    {
+      "label": "公式サイト",
+      "url": "https://genkousyouja.wixsite.com/-site"
+    },
+    {
+      "label": "公式サイト(源光寺の歴史)",
+      "url": "https://genkousyouja.wixsite.com/-site/blank-5"
+    },
+    {
+      "label": "公式サイト(各種法要)",
+      "url": "https://genkousyouja.wixsite.com/-site/blank-3"
+    },
+    {
+      "label": "公式サイト(永代供養墓)",
+      "url": "https://genkousyouja.wixsite.com/-site/blank-2"
+    },
+    {
+      "label": "Google マップ",
+      "url": "https://maps.google.com/?cid=843196533450944665"
+    }
+  ],
+  "notes": "automation/v2/write.mjs が 2026-10-27 に claude -p --model sonnet で作成。事実の裏取り: 21/21 件(quote が出どころにあるもの)。裏取りに通らなかった facts は載せていない。"
+}

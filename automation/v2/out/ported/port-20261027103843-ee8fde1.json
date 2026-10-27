@@ -1,0 +1,19 @@
+{
+  "commit": "ee8fde1bb2346aabe1c9a9687eb3037629f0859b",
+  "source": "/Users/shunta/claude/gp-k-auto2",
+  "count": 1,
+  "added": [
+    {
+      "row": 255,
+      "name": "浜本山　源光寺",
+      "key": "tri-life-255",
+      "vertical": "くらし",
+      "id": "li0063",
+      "articleId": "li0063",
+      "shopUrl": "https://machinowa.tokyo/life/shop/li0063",
+      "articleUrl": "https://machinowa.tokyo/life/article/li0063",
+      "sheetUrl": "https://machinowa.tokyo/life/article/li0063"
+    }
+  ],
+  "skipped": []
+}

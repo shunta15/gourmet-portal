@@ -1,0 +1,40 @@
+{
+  "tab": "トリニティアポ",
+  "tabEn": "tri-life",
+  "row": 50,
+  "sheet": {
+    "name": "誉田八幡宮（こんだはちまんぐう）",
+    "address": "",
+    "url": "https://www.google.com/search?q=%E8%AA%89%E7%94%B0%E5%85%AB%E5%B9%A1%E5%AE%AE&sca_esv=6504160c7cbb8e5c&biw=1536&bih=703&sxsrf=APpeQntWJy4d9C48JMhwl8KPS11_n8ynYw%3A1792032455606&ei=xz7QauPBJL6qhvcPz7DAuQw&uact=5&oq=%E8%AA%89%E7%94%B0%E5%85%AB%E5%B9%A1%E5%AE%AE&gs_lp=Egxnd3Mtd2l6LXNlcnAiD-iqieeUsOWFq-W5oeWurjIEECMYJzIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABEjMBlCKBFiKBHAEeACQAQCYAWOgAWOqAQExuAEDyAEA-AEC-AEBmAIBoAJvmAMAiAYBkgcDMC4xoAe5BLIHAzAuMbgHb8IHAzMtMcgHCIAIAQ&sclient=gws-wiz-serp",
+    "type": "その他",
+    "d1": "",
+    "d2": ""
+  },
+  "urlKind": "search",
+  "route": "第1段(verify-gbp.mjs)で確認済み",
+  "verdict": "一致",
+  "verdictReason": "電話が一致／店名: exact(シート「誉田八幡宮（こんだはちまんぐう）」/ マップ「誉田八幡宮」)",
+  "place": {
+    "name": "誉田八幡宮",
+    "address": "大阪府羽曳野市誉田３丁目２−８",
+    "category": "神社",
+    "lat": 34.5588082,
+    "lng": 135.6102518,
+    "gbpUrl": "https://maps.google.com/?cid=4117450220773174653",
+    "phone": "072-956-0635",
+    "website": "https://kondahachimangu.com/",
+    "hours": {
+      "月": "08:30–16:30",
+      "火": "08:30–16:30",
+      "水": "08:30–16:30",
+      "木": "08:30–16:30",
+      "金": "08:30–16:30",
+      "土": "08:30–16:30",
+      "日": "08:30–16:30"
+    },
+    "reserveLinks": [],
+    "statusSignals": [],
+    "closedSignal": false
+  },
+  "fetchedAt": "2026-10-27T02:46:14.278Z"
+}

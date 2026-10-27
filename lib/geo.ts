@@ -3151,11 +3151,101 @@ export const GEO: Record<string, GeoPoint> = {
     "src": "maps",
     "precision": "exact"
   },
+  "r735": {
+    "lat": 31.362536,
+    "lng": 130.431497,
+    "src": "maps",
+    "precision": "exact"
+  },
+  "r736": {
+    "lat": 35.160969,
+    "lng": 138.71558,
+    "src": "maps",
+    "precision": "exact"
+  },
+  "r737": {
+    "lat": 34.575441,
+    "lng": 136.535031,
+    "src": "maps",
+    "precision": "exact"
+  },
+  "r738": {
+    "lat": 34.888477,
+    "lng": 137.100167,
+    "src": "maps",
+    "precision": "exact"
+  },
+  "r739": {
+    "lat": 37.372076,
+    "lng": 140.365652,
+    "src": "maps",
+    "precision": "exact"
+  },
   "r74": {
     "lat": 35.801746,
     "lng": 139.721588,
     "src": "gsi",
     "precision": "block"
+  },
+  "r740": {
+    "lat": 35.056215,
+    "lng": 136.596687,
+    "src": "maps",
+    "precision": "exact"
+  },
+  "r741": {
+    "lat": 37.205637,
+    "lng": 140.324701,
+    "src": "maps",
+    "precision": "exact"
+  },
+  "r742": {
+    "lat": 34.852656,
+    "lng": 136.455904,
+    "src": "maps",
+    "precision": "exact"
+  },
+  "r743": {
+    "lat": 35.014265,
+    "lng": 136.47775,
+    "src": "maps",
+    "precision": "exact"
+  },
+  "r744": {
+    "lat": 34.866711,
+    "lng": 135.680372,
+    "src": "maps",
+    "precision": "exact"
+  },
+  "r745": {
+    "lat": 35.066183,
+    "lng": 136.685567,
+    "src": "maps",
+    "precision": "exact"
+  },
+  "r746": {
+    "lat": 33.836762,
+    "lng": 132.769083,
+    "src": "maps",
+    "precision": "exact"
+  },
+  "r747": {
+    "lat": 35.172262,
+    "lng": 136.90316,
+    "src": "maps",
+    "precision": "exact"
+  },
+  "r748": {
+    "lat": 35.660805,
+    "lng": 139.583256,
+    "src": "maps",
+    "precision": "exact"
+  },
+  "r749": {
+    "lat": 35.710093,
+    "lng": 138.45063,
+    "src": "maps",
+    "precision": "exact"
   },
   "r75": {
     "lat": 34.821507,
@@ -3163,17 +3253,143 @@ export const GEO: Record<string, GeoPoint> = {
     "src": "gsi",
     "precision": "block"
   },
+  "r750": {
+    "lat": 35.069776,
+    "lng": 136.687173,
+    "src": "maps",
+    "precision": "exact"
+  },
+  "r751": {
+    "lat": 36.586514,
+    "lng": 136.633272,
+    "src": "maps",
+    "precision": "exact"
+  },
+  "r752": {
+    "lat": 35.445056,
+    "lng": 139.631025,
+    "src": "maps",
+    "precision": "exact"
+  },
+  "r753": {
+    "lat": 38.259588,
+    "lng": 140.866282,
+    "src": "maps",
+    "precision": "exact"
+  },
+  "r754": {
+    "lat": 35.423166,
+    "lng": 139.60147,
+    "src": "maps",
+    "precision": "exact"
+  },
+  "r755": {
+    "lat": 33.791231,
+    "lng": 132.803234,
+    "src": "maps",
+    "precision": "exact"
+  },
+  "r756": {
+    "lat": 35.713499,
+    "lng": 139.790608,
+    "src": "maps",
+    "precision": "exact"
+  },
+  "r757": {
+    "lat": 43.133349,
+    "lng": 141.211515,
+    "src": "maps",
+    "precision": "exact"
+  },
+  "r758": {
+    "lat": 34.763951,
+    "lng": 135.47127,
+    "src": "maps",
+    "precision": "exact"
+  },
+  "r759": {
+    "lat": 33.840855,
+    "lng": 132.756884,
+    "src": "maps",
+    "precision": "exact"
+  },
   "r76": {
     "lat": 34.694096,
     "lng": 135.189926,
     "src": "gsi",
     "precision": "block"
   },
+  "r760": {
+    "lat": 34.862779,
+    "lng": 136.54748,
+    "src": "maps",
+    "precision": "exact"
+  },
+  "r761": {
+    "lat": 32.96622,
+    "lng": 131.392544,
+    "src": "maps",
+    "precision": "exact"
+  },
+  "r762": {
+    "lat": 26.257108,
+    "lng": 127.750792,
+    "src": "maps",
+    "precision": "exact"
+  },
+  "r763": {
+    "lat": 34.696442,
+    "lng": 135.486169,
+    "src": "maps",
+    "precision": "exact"
+  },
+  "r764": {
+    "lat": 34.686689,
+    "lng": 135.517075,
+    "src": "maps",
+    "precision": "exact"
+  },
+  "r765": {
+    "lat": 35.651913,
+    "lng": 140.074278,
+    "src": "maps",
+    "precision": "exact"
+  },
+  "r766": {
+    "lat": 37.087134,
+    "lng": 138.88836,
+    "src": "maps",
+    "precision": "exact"
+  },
+  "r767": {
+    "lat": 34.663026,
+    "lng": 133.929054,
+    "src": "maps",
+    "precision": "exact"
+  },
+  "r768": {
+    "lat": 36.449982,
+    "lng": 140.572451,
+    "src": "maps",
+    "precision": "exact"
+  },
+  "r769": {
+    "lat": 35.167303,
+    "lng": 137.000566,
+    "src": "maps",
+    "precision": "exact"
+  },
   "r77": {
     "lat": 34.714317,
     "lng": 135.237579,
     "src": "gsi",
     "precision": "block"
+  },
+  "r770": {
+    "lat": 34.661821,
+    "lng": 135.511215,
+    "src": "maps",
+    "precision": "exact"
   },
   "r78": {
     "lat": 34.655602,

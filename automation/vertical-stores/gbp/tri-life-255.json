@@ -1,0 +1,32 @@
+{
+  "tab": "トリニティアポ",
+  "tabEn": "tri-life",
+  "row": 255,
+  "sheet": {
+    "name": "浜本山　源光寺",
+    "address": "",
+    "url": "https://www.google.com/maps/search/?api=1&query=%E6%B5%9C%E6%9C%AC%E5%B1%B1%E3%80%80%E6%BA%90%E5%85%89%E5%AF%BA%2006-6375-0070%20%E3%80%92531-0072%20%E5%A4%A7%E9%98%AA%E5%BA%9C%E5%A4%A7%E9%98%AA%E5%B8%82%E5%8C%97%E5%8C%BA%E8%B1%8A%E5%B4%8E%EF%BC%92%E4%B8%81%E7%9B%AE%EF%BC%93%E2%88%92%EF%BC%92%EF%BC%93",
+    "type": "寺",
+    "d1": "",
+    "d2": ""
+  },
+  "urlKind": "mapsApi",
+  "route": "第1段(verify-gbp.mjs)で確認済み",
+  "verdict": "一致",
+  "verdictReason": "手がかり: 店名＋電話＋住所(番地まで)。電話が一致／店名: contains(シート「浜本山　源光寺」/ マップ「源光寺」)／住所(シート): exact・町名・番地とも一致",
+  "place": {
+    "name": "源光寺",
+    "address": "大阪府大阪市北区豊崎２丁目３−２３",
+    "category": "仏教寺院",
+    "lat": 34.709953,
+    "lng": 135.501256,
+    "gbpUrl": "https://maps.google.com/?cid=843196533450944665",
+    "phone": "06-6375-0070",
+    "website": "https://genkousyouja.wixsite.com/-site",
+    "hours": null,
+    "reserveLinks": [],
+    "statusSignals": [],
+    "closedSignal": false
+  },
+  "fetchedAt": "2026-10-27T10:34:19.008Z"
+}

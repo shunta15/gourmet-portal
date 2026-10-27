@@ -1,0 +1,76 @@
+{
+  "key": "tri-activity-252",
+  "images": [
+    {
+      "path": "/_portal/vshops/tri-activity-252/g01.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9QAYfRZUjv7BJ49QLET20vbssagOYIJIHPHsJt_iYzKjCF_XK2x-7d3H0GRZCzD9C2coG-MFH06Dj1bZtXZTOxPd68Jt9c7BWR2enG_oPG2SjwDky1tpINoH9Z0oipkncB3kFBzjw=s1200",
+      "pageUrl": "https://maps.google.com/?cid=441852394059215483",
+      "what": "サーフボードが並ぶ店舗の外観(夜)",
+      "kind": "exterior",
+      "width": 1200,
+      "height": 798,
+      "source": "Google マップ"
+    },
+    {
+      "path": "/_portal/vshops/tri-activity-252/g02.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9RKdjsYpd9VeYwUyTKYB-5Em7WG2kA3gG82QA9Ddl4FWIGCnWXvBv8OIegBHI33uZoV2PuD6e7ZDd2dv7tsHK1PfKXOsyr9gIwveKaNyaK566JPyaWrsBalk9vQh7I1I_j6BfNH=s1200",
+      "pageUrl": "https://maps.google.com/?cid=441852394059215483",
+      "what": "ウェットスーツや道具が並ぶ店内の棚",
+      "kind": "common",
+      "width": 1200,
+      "height": 798,
+      "source": "Google マップ"
+    },
+    {
+      "path": "/_portal/vshops/tri-activity-252/g04.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9QibLuC3t6tzC6uJ-CLphLr18dc2SknIIBLlRDbNQujxebY9yimczORT9b9m5eWQzMOXCHBjrM9Ff3QdD25lbJWb2sjXouFe1NmLzE-LqZB4djfeR9G1HXi1ZECJbVdFC5-kDRaCg=s1200",
+      "pageUrl": "https://maps.google.com/?cid=441852394059215483",
+      "what": "波打ち際へボードを抱えて走る人の後ろ姿",
+      "kind": "view",
+      "width": 1200,
+      "height": 800,
+      "source": "Google マップ"
+    },
+    {
+      "path": "/_portal/vshops/tri-activity-252/g05.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9QAnYEgBwYBTpjiWCIf8eFmVhnqhgtqOmD30Zc90W6ALuJu0fP_Hx20uVizBr67aVszBmjMTsKBGXJYTdIbt_HXyVs661pCSO-RosT3pDnuNkgF_CJAWT1gr8lDFnQBAQWid4cO=s1200",
+      "pageUrl": "https://maps.google.com/?cid=441852394059215483",
+      "what": "沖で波に乗るサーファーを遠くから捉えた海",
+      "kind": "view",
+      "width": 1200,
+      "height": 800,
+      "source": "Google マップ"
+    },
+    {
+      "path": "/_portal/vshops/tri-activity-252/g07.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9SinbZ_MkXCvgnx6d8CN3pmYaqX3BP6MGle2mbh9Vxh3xaz6SRHwzS8nnCmnVwVnC_wfsh4I-4-56ImJK0NcHn33sz3rqvwQ2kKs1rBX9b3O4CnAJS4EQWZeIpL_PG8g4B9nyfI=s1200",
+      "pageUrl": "https://maps.google.com/?cid=441852394059215483",
+      "what": "海岸に大勢の人が立ち並ぶ様子",
+      "kind": "view",
+      "width": 1200,
+      "height": 800,
+      "source": "Google マップ"
+    },
+    {
+      "path": "/_portal/vshops/tri-activity-252/g09.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9RScfr5xFja3j5bpgL_B2ZYbG-a-I389ExR7RLoQE82pp2YYVm7Kk1Yq0Q6LfdPMWvpf4V54lg262UK4Ue90ku3MK-6TVkHeSYLRxoCcsMW7iQyDw1fT5j-AHxCup2UM_yN7CHo=s1200",
+      "pageUrl": "https://maps.google.com/?cid=441852394059215483",
+      "what": "海岸に大勢が集合した様子",
+      "kind": "view",
+      "width": 1200,
+      "height": 800,
+      "source": "Google マップ"
+    },
+    {
+      "path": "/_portal/vshops/tri-activity-252/s16.jpg",
+      "imageUrl": "https://chp-northpoint.com/wp-content/uploads/2026/07/IMG_4403-600x600.jpeg",
+      "pageUrl": "https://chp-northpoint.com/",
+      "what": "サーフボードに取り付けられたフィンのアップ",
+      "kind": "meal",
+      "width": 600,
+      "height": 600,
+      "source": "公式サイト"
+    }
+  ],
+  "note": "automation/v2/write.mjs が 2026-10-27T10:22:18.420Z に取得。店の実写だけ(AI 画像・汎用画像・地図・ロゴ・顔が大きい画像は除外)。"
+}

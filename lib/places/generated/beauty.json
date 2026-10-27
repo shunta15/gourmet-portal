@@ -7906,6 +7906,237 @@
         ],
         "checkedAt": "2026-10-26"
       }
+    },
+    {
+      "id": "be0108",
+      "vertical": "beauty",
+      "category": "hair",
+      "name": "ベニフィット",
+      "pref": "kumamoto",
+      "cityName": "熊本市東区",
+      "address": "熊本県熊本市東区御領2丁目1-1 2階",
+      "lat": 32.8199671,
+      "lng": 130.7643211,
+      "hours": "火-土 09:00 - 17:00",
+      "holidays": "月曜・日曜",
+      "phone": "096-388-9235",
+      "instagram": "https://www.instagram.com/benefit.offcial?igsh=MTc4dXo1ajJnYno1Yg%3D%3D",
+      "mapUrl": "https://maps.google.com/?cid=13073551530782587182",
+      "image": "/_portal/vshops/tri-beauty-235/g01.jpg",
+      "images": [
+        "/_portal/vshops/tri-beauty-235/g01.jpg",
+        "/_portal/vshops/tri-beauty-235/g03.jpg",
+        "/_portal/vshops/tri-beauty-235/g04.jpg",
+        "/_portal/vshops/tri-beauty-235/g05.jpg",
+        "/_portal/vshops/tri-beauty-235/g06.jpg",
+        "/_portal/vshops/tri-beauty-235/g07.jpg"
+      ],
+      "photos": [
+        {
+          "path": "/_portal/vshops/tri-beauty-235/g01.jpg",
+          "what": "ヘアエマルジョン商品のボトルが並ぶ写真",
+          "kind": "meal",
+          "width": 750,
+          "height": 422
+        },
+        {
+          "path": "/_portal/vshops/tri-beauty-235/g03.jpg",
+          "what": "美容材料のボトルや道具が並ぶ店内のカート",
+          "kind": "common",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-beauty-235/g04.jpg",
+          "what": "青い扉と看板プレートのある建物の外観",
+          "kind": "exterior",
+          "width": 920,
+          "height": 613
+        },
+        {
+          "path": "/_portal/vshops/tri-beauty-235/g05.jpg",
+          "what": "ボトル商品が並ぶ店内の棚",
+          "kind": "common",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-beauty-235/g06.jpg",
+          "what": "ヘアエマルジョン商品のボトル2本が置かれたカウンター",
+          "kind": "meal",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-beauty-235/g07.jpg",
+          "what": "駐車場と建物が写る外観",
+          "kind": "exterior",
+          "width": 920,
+          "height": 650
+        }
+      ],
+      "tags": [],
+      "article": {
+        "headline": "熊本市東区御領にある美容材料卸の会社。美容院・美容室向けに商品を扱う。",
+        "lede": "熊本市にある「ベニフィット」です。熊本市東区御領二丁目に所在し、美容院・美容室向けに美容材料を扱う卸売の会社です。営業は火曜から土曜の9時から17時までで、月曜と日曜は定休日です。",
+        "sections": [
+          {
+            "heading": "事業の内容",
+            "body": "熊本市東区御領に拠点を置き、美容院・美容室・床屋向けの美容材料を扱う卸売の会社です。業種はビジネス・企業間取引、卸売市場に分類されます。Google マップの業種表示は美容製品卸売業者です。"
+          },
+          {
+            "heading": "アクセスと連絡先",
+            "body": "所在地は熊本県熊本市東区御領二丁目1−1の2階です。電話は096-388-9235です。営業時間は火曜から土曜が9時から17時まで、月曜と日曜は定休日です。"
+          }
+        ],
+        "sources": [
+          {
+            "label": "電話帳情報(マピオン)",
+            "url": "https://www.mapion.co.jp/phonebook/M26017/43102/24333004143/"
+          },
+          {
+            "label": "地図情報(Yahoo!地図)",
+            "url": "https://map.yahoo.co.jp/v3/place/KAeIaFM3giw"
+          },
+          {
+            "label": "Google マップ",
+            "url": "https://maps.google.com/?cid=13073551530782587182"
+          }
+        ],
+        "checkedAt": "2026-10-28"
+      }
+    },
+    {
+      "id": "be0109",
+      "vertical": "beauty",
+      "category": "eyelash",
+      "name": "アイラッシュ&ネイルサロン アイリス",
+      "pref": "osaka",
+      "cityName": "大阪市平野区",
+      "address": "大阪府大阪市平野区平野西6丁目3-22 カサ・エルドラード弐番館",
+      "lat": 34.6183043,
+      "lng": 135.5484051,
+      "phone": "06-6700-3022",
+      "mapUrl": "https://maps.google.com/?cid=2929045056350726918",
+      "image": "/_portal/vshops/tri-beauty-74/g01.jpg",
+      "images": [
+        "/_portal/vshops/tri-beauty-74/g01.jpg",
+        "/_portal/vshops/tri-beauty-74/g02.jpg",
+        "/_portal/vshops/tri-beauty-74/g03.jpg",
+        "/_portal/vshops/tri-beauty-74/g04.jpg",
+        "/_portal/vshops/tri-beauty-74/g05.jpg",
+        "/_portal/vshops/tri-beauty-74/g06.jpg",
+        "/_portal/vshops/tri-beauty-74/g07.jpg",
+        "/_portal/vshops/tri-beauty-74/g08.jpg",
+        "/_portal/vshops/tri-beauty-74/g09.jpg",
+        "/_portal/vshops/tri-beauty-74/g10.jpg"
+      ],
+      "photos": [
+        {
+          "path": "/_portal/vshops/tri-beauty-74/g01.jpg",
+          "what": "グリッターとラインストーンをあしらったネイルアート",
+          "width": 879,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-beauty-74/g02.jpg",
+          "what": "ピンクと白を基調にしたドットのネイルアート",
+          "width": 1015,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-beauty-74/g03.jpg",
+          "what": "まつげエクステを施した目元のアップ",
+          "width": 1200,
+          "height": 960
+        },
+        {
+          "path": "/_portal/vshops/tri-beauty-74/g04.jpg",
+          "what": "シルバーと水玉模様のフットネイル",
+          "width": 834,
+          "height": 687
+        },
+        {
+          "path": "/_portal/vshops/tri-beauty-74/g05.jpg",
+          "what": "ボリュームのあるまつげエクステの目元",
+          "width": 1200,
+          "height": 816
+        },
+        {
+          "path": "/_portal/vshops/tri-beauty-74/g06.jpg",
+          "what": "グレーのグラデーションネイル",
+          "width": 971,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-beauty-74/g07.jpg",
+          "what": "ベージュのシンプルなネイル",
+          "width": 938,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-beauty-74/g08.jpg",
+          "what": "指ごとに異なる柄を施したネイルアート",
+          "width": 1000,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-beauty-74/g09.jpg",
+          "what": "赤いフレンチネイル",
+          "width": 899,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-beauty-74/g10.jpg",
+          "what": "白い内装にチェアとデスクが並ぶ店内",
+          "kind": "common",
+          "width": 1200,
+          "height": 900
+        }
+      ],
+      "tags": [],
+      "article": {
+        "headline": "大阪市平野区平野西にある、LEDエクステ専門店のアイラッシュ&ネイルサロン。地下鉄谷町線「平野駅」６番出口が最寄り駅。",
+        "lede": "大阪市にある「アイラッシュ&ネイルサロン アイリス」です。LEDエクステを専門にしたまつげとネイルの店です。最寄り駅は地下鉄谷町線「平野駅」で、６番出口が近くにあります。",
+        "sections": [
+          {
+            "heading": "アクセス",
+            "body": "最寄り駅は地下鉄谷町線「平野駅」６番出口です。出口を出て内環を教育大付属幼稚園の方向に進み、２つ目の信号の角にあるローソンの並びにあります。住所は大阪市平野区平野西６丁目３−２２、カサ・エルドラード弐番館です。"
+          },
+          {
+            "heading": "メニューと店の特色",
+            "body": "ネイルとまつげの施術を扱うLEDエクステ専門店です。メニューにはワンカラーネイル、LEDマツエク、パリジェンヌラッシュリフト、美眉スタイリング、まつ毛パーマがあります。席数は総数6で、女性専用の店です。"
+          }
+        ],
+        "menus": [
+          {
+            "name": "ワンカラーネイル"
+          },
+          {
+            "name": "LEDマツエク"
+          },
+          {
+            "name": "パリジェンヌラッシュリフト"
+          },
+          {
+            "name": "美眉スタイリング"
+          },
+          {
+            "name": "まつ毛パーマ"
+          }
+        ],
+        "sources": [
+          {
+            "label": "掲載ページ(ホットペッパービューティー)",
+            "url": "https://beauty.hotpepper.jp/kr/slnH000285287/"
+          },
+          {
+            "label": "Google マップ",
+            "url": "https://maps.google.com/?cid=2929045056350726918"
+          }
+        ],
+        "checkedAt": "2026-10-28"
+      }
     }
   ]
 }

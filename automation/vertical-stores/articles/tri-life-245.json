@@ -1,0 +1,50 @@
+{
+  "key": "tri-life-245",
+  "headline": "秋田市大町二丁目にある着物の販売店。営業時間は10時から18時です。",
+  "lede": "秋田市にある「着付蓮花」です。業種は着物販売店で、秋田市大町二丁目に店舗があります。電話番号は070-8997-8265です。",
+  "sections": [
+    {
+      "heading": "場所と連絡先",
+      "body": "住所は秋田県秋田市大町２丁目４−２３です。電話番号は070-8997-8265です。"
+    },
+    {
+      "heading": "営業時間",
+      "body": "営業時間は月曜から日曜まで10:00から18:00です。"
+    }
+  ],
+  "menus": [],
+  "tags": [],
+  "facts": [
+    {
+      "claim": "業種の表示は着物販売店",
+      "source": "https://maps.google.com/?cid=5739332030974325762",
+      "quote": "着物販売店",
+      "checkedAt": "2026-10-27"
+    },
+    {
+      "claim": "住所は秋田県秋田市大町２丁目４−２３",
+      "source": "https://maps.google.com/?cid=5739332030974325762",
+      "quote": "秋田県秋田市大町２丁目４−２３",
+      "checkedAt": "2026-10-27"
+    },
+    {
+      "claim": "電話番号は070-8997-8265",
+      "source": "https://maps.google.com/?cid=5739332030974325762",
+      "quote": "070-8997-8265",
+      "checkedAt": "2026-10-27"
+    },
+    {
+      "claim": "営業時間は10:00から18:00",
+      "source": "https://maps.google.com/?cid=5739332030974325762",
+      "quote": "10:00–18:00",
+      "checkedAt": "2026-10-27"
+    }
+  ],
+  "sources": [
+    {
+      "label": "Google マップ",
+      "url": "https://maps.google.com/?cid=5739332030974325762"
+    }
+  ],
+  "notes": "automation/v2/write.mjs が 2026-10-27 に claude -p --model sonnet で作成。事実の裏取り: 4/4 件(quote が出どころにあるもの)。裏取りに通らなかった facts は載せていない。"
+}

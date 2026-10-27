@@ -4,7 +4,7 @@ import ShopActionsNoren from "@/components/portal/noren/ShopActionsNoren";
 import ShopMapLink from "@/components/portal/noren/ShopMapLink";
 import ShopVideo from "@/components/portal/noren/ShopVideo";
 import SaveSeal from "@/components/portal/noren/SaveSeal";
-import { sized, sizedSrcSet, CARD_SIZES } from "@/lib/imageUrl";
+import { sized, sizedSrcSet, CARD_SIZES, WIDE_CARD_SIZES } from "@/lib/imageUrl";
 import type { PfShopInfo } from "@/lib/portal/photoFeature/shopInfo";
 
 /**
@@ -123,7 +123,7 @@ export function ShopFeatures({ items }: { items: PfShopFeature[] }) {
                 <span className="pf-rel__ph" aria-hidden="true">
                   {f.image && (
                     // eslint-disable-next-line @next/next/no-img-element
-                    <img className="pf-rel__img" src={sized(f.image, 640)} srcSet={sizedSrcSet(f.image)} sizes={CARD_SIZES} alt="" loading="lazy" decoding="async" />
+                    <img className="pf-rel__img" src={sized(f.image, 640)} srcSet={sizedSrcSet(f.image)} sizes={WIDE_CARD_SIZES} alt="" loading="lazy" decoding="async" />
                   )}
                 </span>
                 <span className="pf-rel__b">

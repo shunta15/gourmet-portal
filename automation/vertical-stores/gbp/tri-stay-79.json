@@ -1,0 +1,32 @@
+{
+  "tab": "トリニティアポ",
+  "tabEn": "tri-stay",
+  "row": 79,
+  "sheet": {
+    "name": "藤三旅館",
+    "address": "",
+    "url": "https://www.google.com/search?q=%E8%97%A4%E4%B8%89%E6%97%85%E9%A4%A8&sca_esv=90fe058dfec7447b&biw=1536&bih=703&sxsrf=APpeQnu5XoVFRhgfd-r5LgWgzyQkjbWGOg%3A1792136599912&ei=l9XRatmQN6Kc0-kPysGTsA8&uact=5&oq=%E8%97%A4%E4%B8%89%E6%97%85%E9%A4%A8&gs_lp=Egxnd3Mtd2l6LXNlcnAiDOiXpOS4ieaXhemkqDIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgARIswVQ9gFY9gFwAngBkAEAmAFdoAFdqgEBMbgBA8gBAPgBAvgBAZgCA6AC0AHCAgoQABhHGNYEGLADmAMAiAYBkAYKkgcDMi4xoAeFA7IHAzAuMbgHggHCBwMzLTPIBy-ACAE&sclient=gws-wiz-serp",
+    "type": "宿泊",
+    "d1": "",
+    "d2": ""
+  },
+  "urlKind": "search",
+  "route": "第1段(verify-gbp.mjs)で確認済み",
+  "verdict": "一致",
+  "verdictReason": "電話が一致／店名: contains(シート「藤三旅館」/ マップ「鉛温泉 藤三旅館」)",
+  "place": {
+    "name": "鉛温泉 藤三旅館",
+    "address": "岩手県花巻市鉛中平７５−１",
+    "category": null,
+    "lat": 39.4655517,
+    "lng": 140.9917488,
+    "gbpUrl": "https://maps.google.com/?cid=2285549910079157501",
+    "phone": "0198-25-2311",
+    "website": "https://namari-onsen-ryokan.com//?utm_source=google&utm_medium=maps",
+    "hours": null,
+    "reserveLinks": [],
+    "statusSignals": [],
+    "closedSignal": false
+  },
+  "fetchedAt": "2026-10-27T03:09:07.447Z"
+}

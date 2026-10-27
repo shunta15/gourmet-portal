@@ -1,0 +1,40 @@
+{
+  "tab": "トリニティアポ",
+  "tabEn": "tri-activity",
+  "row": 244,
+  "sheet": {
+    "name": "丸和まくら工房/枕づくり体験",
+    "address": "",
+    "url": "https://www.google.com/maps/search/?api=1&query=%E4%B8%B8%E5%92%8C%E3%81%BE%E3%81%8F%E3%82%89%E5%B7%A5%E6%88%BF%2F%E6%9E%95%E3%81%A5%E3%81%8F%E3%82%8A%E4%BD%93%E9%A8%93%20080-3475-8891%20%E3%80%92621-0826%20%E4%BA%AC%E9%83%BD%E5%BA%9C%E4%BA%80%E5%B2%A1%E5%B8%82%E7%AF%A0%E7%94%BA%E7%AF%A0%E6%96%B0%E7%95%91%E7%94%B0%EF%BC%94%EF%BC%95%E2%88%92%EF%BC%94",
+    "type": "体験",
+    "d1": "",
+    "d2": ""
+  },
+  "urlKind": "mapsApi",
+  "route": "第1段(verify-gbp.mjs)で確認済み",
+  "verdict": "一致",
+  "verdictReason": "手がかり: 店名＋電話＋住所(番地まで)。電話が一致／店名: exact(シート「丸和まくら工房/枕づくり体験」/ マップ「丸和まくら工房/枕づくり体験」)／住所(シート): exact・町名・番地とも一致",
+  "place": {
+    "name": "丸和まくら工房/枕づくり体験",
+    "address": "京都府亀岡市篠町篠新畑田４５−４",
+    "category": "寝具店",
+    "lat": 35.0005498,
+    "lng": 135.6103847,
+    "gbpUrl": "https://maps.google.com/?cid=10162595614009284132",
+    "phone": "080-3475-8891",
+    "website": "https://maruwa-makuraworkshop.com/",
+    "hours": {
+      "月": "10:00–17:00",
+      "火": "10:00–17:00",
+      "水": "10:00–17:00",
+      "木": "10:00–17:00",
+      "金": "10:00–17:00",
+      "土": "10:00–17:00",
+      "日": "10:00–17:00"
+    },
+    "reserveLinks": [],
+    "statusSignals": [],
+    "closedSignal": false
+  },
+  "fetchedAt": "2026-10-27T09:17:40.577Z"
+}

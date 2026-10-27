@@ -1,0 +1,184 @@
+{
+  "commit": "7a6ccae930987e76e1bb8dace70f7d4b01c23f17",
+  "source": "/Users/shunta/claude/gp-k-auto2",
+  "count": 16,
+  "added": [
+    {
+      "row": 183,
+      "name": "090-2248-3568",
+      "key": "tri-gourmet-183",
+      "vertical": "グルメ",
+      "id": "r758",
+      "articleId": ".tenn",
+      "shopUrl": "https://machinowa.tokyo/restaurant/r758",
+      "articleUrl": "https://machinowa.tokyo/feature/.tenn",
+      "sheetUrl": "https://machinowa.tokyo/feature/.tenn"
+    },
+    {
+      "row": 58,
+      "name": "若鰤",
+      "key": "tri-gourmet-58",
+      "vertical": "グルメ",
+      "id": "r764",
+      "articleId": "鮮魚料理若鰤",
+      "shopUrl": "https://machinowa.tokyo/restaurant/r764",
+      "articleUrl": "https://machinowa.tokyo/feature/鮮魚料理若鰤",
+      "sheetUrl": "https://machinowa.tokyo/feature/鮮魚料理若鰤"
+    },
+    {
+      "row": 74,
+      "name": "アイラッシュアンドネイルサロンAiris",
+      "key": "tri-beauty-74",
+      "vertical": "ビューティー",
+      "id": "be0109",
+      "articleId": null,
+      "shopUrl": "https://machinowa.tokyo/beauty/shop/be0109",
+      "articleUrl": null,
+      "sheetUrl": "https://machinowa.tokyo/beauty/shop/be0109"
+    },
+    {
+      "row": 119,
+      "name": "から揚げドラゴンチキンハイボールきむにぃ",
+      "key": "tri-gourmet-119",
+      "vertical": "グルメ",
+      "id": "r757",
+      "articleId": "から揚げドラゴンチキンハイボールキムにい",
+      "shopUrl": "https://machinowa.tokyo/restaurant/r757",
+      "articleUrl": "https://machinowa.tokyo/feature/から揚げドラゴンチキンハイボールキムにい",
+      "sheetUrl": "https://machinowa.tokyo/feature/から揚げドラゴンチキンハイボールキムにい"
+    },
+    {
+      "row": 166,
+      "name": "陽月",
+      "key": "tri-gourmet-166",
+      "vertical": "グルメ",
+      "id": "r765",
+      "articleId": "陽月kagezuki",
+      "shopUrl": "https://machinowa.tokyo/restaurant/r765",
+      "articleUrl": "https://machinowa.tokyo/feature/陽月kagezuki",
+      "sheetUrl": "https://machinowa.tokyo/feature/陽月kagezuki"
+    },
+    {
+      "row": 185,
+      "name": "KOGUMACOFFEE",
+      "key": "tri-gourmet-185",
+      "vertical": "グルメ",
+      "id": null,
+      "articleId": "コグマコーヒー",
+      "shopUrl": null,
+      "articleUrl": "https://machinowa.tokyo/feature/コグマコーヒー",
+      "sheetUrl": "https://machinowa.tokyo/feature/コグマコーヒー"
+    },
+    {
+      "row": 186,
+      "name": "麺処清水",
+      "key": "tri-gourmet-186",
+      "vertical": "グルメ",
+      "id": "r766",
+      "articleId": "麺処清水",
+      "shopUrl": "https://machinowa.tokyo/restaurant/r766",
+      "articleUrl": "https://machinowa.tokyo/feature/麺処清水",
+      "sheetUrl": "https://machinowa.tokyo/feature/麺処清水"
+    },
+    {
+      "row": 220,
+      "name": "壱",
+      "key": "tri-gourmet-220",
+      "vertical": "グルメ",
+      "id": "r759",
+      "articleId": "一汁おにぎり壱",
+      "shopUrl": "https://machinowa.tokyo/restaurant/r759",
+      "articleUrl": "https://machinowa.tokyo/feature/一汁おにぎり壱",
+      "sheetUrl": "https://machinowa.tokyo/feature/一汁おにぎり壱"
+    },
+    {
+      "row": 224,
+      "name": "ノーズ（ｎｏｚ）ＣＡＦＥ",
+      "key": "tri-gourmet-224",
+      "vertical": "グルメ",
+      "id": "r760",
+      "articleId": "ノーズ（noz）CAFE",
+      "shopUrl": "https://machinowa.tokyo/restaurant/r760",
+      "articleUrl": "https://machinowa.tokyo/feature/ノーズ（noz）CAFE",
+      "sheetUrl": "https://machinowa.tokyo/feature/ノーズ（noz）CAFE"
+    },
+    {
+      "row": 225,
+      "name": "焼き菓子ほつほつ",
+      "key": "tri-gourmet-225",
+      "vertical": "グルメ",
+      "id": "r767",
+      "articleId": "菓子HotsuHotsu",
+      "shopUrl": "https://machinowa.tokyo/restaurant/r767",
+      "articleUrl": "https://machinowa.tokyo/feature/菓子HotsuHotsu",
+      "sheetUrl": "https://machinowa.tokyo/feature/菓子HotsuHotsu"
+    },
+    {
+      "row": 230,
+      "name": "竹田カフェ",
+      "key": "tri-gourmet-230",
+      "vertical": "グルメ",
+      "id": "r761",
+      "articleId": "竹田カフェ",
+      "shopUrl": "https://machinowa.tokyo/restaurant/r761",
+      "articleUrl": "https://machinowa.tokyo/feature/竹田カフェ",
+      "sheetUrl": "https://machinowa.tokyo/feature/竹田カフェ"
+    },
+    {
+      "row": 232,
+      "name": "DogCafeEight",
+      "key": "tri-gourmet-232",
+      "vertical": "グルメ",
+      "id": "r768",
+      "articleId": "DogCafeEightドッグカフェエイト",
+      "shopUrl": "https://machinowa.tokyo/restaurant/r768",
+      "articleUrl": "https://machinowa.tokyo/feature/DogCafeEightドッグカフェエイト",
+      "sheetUrl": "https://machinowa.tokyo/feature/DogCafeEightドッグカフェエイト"
+    },
+    {
+      "row": 236,
+      "name": "090-1909-3550",
+      "key": "tri-life-236",
+      "vertical": "くらし",
+      "id": "li0064",
+      "articleId": "li0064",
+      "shopUrl": "https://machinowa.tokyo/life/shop/li0064",
+      "articleUrl": "https://machinowa.tokyo/life/article/li0064",
+      "sheetUrl": "https://machinowa.tokyo/life/article/li0064"
+    },
+    {
+      "row": 249,
+      "name": "もういっけん",
+      "key": "tri-gourmet-249",
+      "vertical": "グルメ",
+      "id": "r762",
+      "articleId": "うどんbarもういっけん",
+      "shopUrl": "https://machinowa.tokyo/restaurant/r762",
+      "articleUrl": "https://machinowa.tokyo/feature/うどんbarもういっけん",
+      "sheetUrl": "https://machinowa.tokyo/feature/うどんbarもういっけん"
+    },
+    {
+      "row": 250,
+      "name": "一丸",
+      "key": "tri-gourmet-250",
+      "vertical": "グルメ",
+      "id": "r769",
+      "articleId": "餃子らーめん一丸本店",
+      "shopUrl": "https://machinowa.tokyo/restaurant/r769",
+      "articleUrl": "https://machinowa.tokyo/feature/餃子らーめん一丸本店",
+      "sheetUrl": "https://machinowa.tokyo/feature/餃子らーめん一丸本店"
+    },
+    {
+      "row": 251,
+      "name": "楽",
+      "key": "tri-gourmet-251",
+      "vertical": "グルメ",
+      "id": "r763",
+      "articleId": "楽",
+      "shopUrl": "https://machinowa.tokyo/restaurant/r763",
+      "articleUrl": "https://machinowa.tokyo/feature/楽",
+      "sheetUrl": "https://machinowa.tokyo/feature/楽"
+    }
+  ],
+  "skipped": []
+}

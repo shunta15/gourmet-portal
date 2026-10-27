@@ -1,0 +1,73 @@
+{
+  "key": "tri-activity-242",
+  "images": [
+    {
+      "path": "/_portal/vshops/tri-activity-242/g01.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9RgxrYsZiZVbLHuoI4cQaGiaVS50fbEt_Znzmh6xB8-eQrZDsb0Q5_28So3Ajcon3vE2HDmTPa0RTGE2EdCe67jilAl7rT4tYerI9u3zusMCOcWiP-kKGvmENctTjkwkCaK7i8deA=s1200",
+      "pageUrl": "https://maps.google.com/?cid=829131605857744042",
+      "what": "シャッターと看板のある店舗の外観",
+      "kind": "exterior",
+      "width": 981,
+      "height": 1200,
+      "source": "Google マップ"
+    },
+    {
+      "path": "/_portal/vshops/tri-activity-242/g03.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9QhJrluuaGCl_BO3LxqzIg88ynMEsl_eCRV-brkS7h1hJa97DG2WGlCiMvXolZ2r7XuaBYT8u5dqSzXvN1VHEr7Gy0e4W4bNB3nJZpumxkSmgS1xQBBD1JDK_Im_rNYMmiIuIsV=s1200",
+      "pageUrl": "https://maps.google.com/?cid=829131605857744042",
+      "what": "仏壇が並ぶ店内のショールーム",
+      "kind": "common",
+      "width": 640,
+      "height": 480,
+      "source": "Google マップ"
+    },
+    {
+      "path": "/_portal/vshops/tri-activity-242/g04.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9R2pGTVdbazyY0TbDlk0kVH0Ak6_NBXilKp4xfIsTlEGE22ydEieovqhagubYetbbOpzgG1ptiP_6T2n9QuCqM6jgq0dEu4c1sLudkHdAXXNapipd7iI3uVTEt6yB0ndOp2c8mT=s1200",
+      "pageUrl": "https://maps.google.com/?cid=829131605857744042",
+      "what": "漆器に絵付けをする作業台の様子",
+      "kind": "common",
+      "width": 1200,
+      "height": 900,
+      "source": "Google マップ"
+    },
+    {
+      "path": "/_portal/vshops/tri-activity-242/g05.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9S8wVpX_6-z5HThJ885YWTty4mxdt9k9EmRRyu6RYPb72eR_GfU3KNn212TP8rufZvSTXPEWjoKq76kU-oZExr6PVWhxZSLIuf3Pq2N6Ze9d9L4-fEq6tos0tgEXOzCT0Jqfohe=s1200",
+      "pageUrl": "https://maps.google.com/?cid=829131605857744042",
+      "what": "赤い布の上に並ぶ漆器の小物",
+      "width": 1200,
+      "height": 675,
+      "source": "Google マップ"
+    },
+    {
+      "path": "/_portal/vshops/tri-activity-242/g06.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9SHH5Ip-I1Pi0IwxPOuOk03fk0XkH7fYib1EjSpAk4ejD7cL6eSPYHVC3YAymoR2ETCK4MRmDMS803_7121-6hG9P_DfRYxcMIILdLNUCtBgjXJWb_xm9NguvotzKRyHubAiD0=s1200",
+      "pageUrl": "https://maps.google.com/?cid=829131605857744042",
+      "what": "「辻佛檀店」の看板がある店舗の外観",
+      "kind": "exterior",
+      "width": 489,
+      "height": 314,
+      "source": "Google マップ"
+    },
+    {
+      "path": "/_portal/vshops/tri-activity-242/g08.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9QaJVaU-h48KUAWclNFnFg57bqIjGpORoHDWbxPHQnEJOGZRQLkmsJgdJ4nIKmYRuEKkqQPHDLKW2NlARKlTcZochdFJjAh_e2qZAtN1L0ci72gt1qNM-TiYLTXkyH7BeZu2lAU=s1200",
+      "pageUrl": "https://maps.google.com/?cid=829131605857744042",
+      "what": "透明なガラスの器",
+      "width": 1200,
+      "height": 900,
+      "source": "Google マップ"
+    },
+    {
+      "path": "/_portal/vshops/tri-activity-242/g10.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9Rua2sTFiu0D-vEGhfuSNRX1S-f2R1XWaNCP4gipMs1oj1HTX7XEwFcNKPqhxJgR0Tpbjc9cfRHVF1fpfKmNRYgtc2pQyxtZit0jueqfN0205P3NWI070QGWsqxN3hhJN0xIkgh=s1200",
+      "pageUrl": "https://maps.google.com/?cid=829131605857744042",
+      "what": "三日月と星をかたどった木製の置物",
+      "width": 1200,
+      "height": 900,
+      "source": "Google マップ"
+    }
+  ],
+  "note": "automation/v2/write.mjs が 2026-10-27T09:54:17.533Z に取得。店の実写だけ(AI 画像・汎用画像・地図・ロゴ・顔が大きい画像は除外)。"
+}
