@@ -15447,6 +15447,55 @@ export const ARTICLE_STORES: Restaurant[] = [
       "名東区"
     ],
     "featureId": "餃子らーめん一丸本店"
+  },
+  {
+    "id": "r770",
+    "name": "コグマコーヒー",
+    "cuisine": "コーヒーショップ・喫茶店",
+    "area": "大阪府・大阪市天王寺区",
+    "region": "osaka",
+    "shape": "square",
+    "image": "/restaurants/teleapo-コグマコーヒー/hero.jpg",
+    "heroImages": [
+      "/restaurants/teleapo-コグマコーヒー/hero.jpg",
+      "/restaurants/teleapo-コグマコーヒー/point1.jpg",
+      "/restaurants/teleapo-コグマコーヒー/point2.jpg",
+      "/restaurants/teleapo-コグマコーヒー/point3.jpg",
+      "/restaurants/teleapo-コグマコーヒー/point4.jpg"
+    ],
+    "gallery": [
+      "/restaurants/teleapo-コグマコーヒー/hero.jpg",
+      "/restaurants/teleapo-コグマコーヒー/point1.jpg",
+      "/restaurants/teleapo-コグマコーヒー/point2.jpg",
+      "/restaurants/teleapo-コグマコーヒー/point3.jpg",
+      "/restaurants/teleapo-コグマコーヒー/point4.jpg"
+    ],
+    "desc": "大阪市天王寺区下寺町は、寺院が連なる通りとして知られるエリアだ。コグマコーヒーは、その一角にある心光寺の境内に店を構える。",
+    "address": "大阪府大阪市天王寺区下寺町1丁目3-68",
+    "hours": "—（訪問前に公式確認）",
+    "closed": "—（訪問前に公式確認）",
+    "seats": "予約可",
+    "nearest": "—",
+    "instagram": "https://www.instagram.com/kogumacoffee_osaka",
+    "source": {
+      "label": "Google ビジネスプロフィール",
+      "url": "https://maps.google.com/?cid=7587709339952533767"
+    },
+    "body": [
+      "コグマコーヒーは、大阪府大阪市天王寺区にあるお店です。業態は「コーヒーショップ・喫茶店」、所在地は大阪府大阪市天王寺区下寺町1丁目3-68です。マチノワ編集部の特集記事では、「店主が淹れるハンドドリップコーヒーと豆のラインナップ」・「パティシエが手がけるバスクチーズケーキなどのスイーツ」などを取り上げています。",
+      "営業時間と定休日は取得できていないため、訪問前に公式の情報でご確認ください。席は予約可。営業時間や価格は変わることがあるため、訪問前に公式サイトやSNS、お電話でご確認ください。"
+    ],
+    "highlights": [
+      "店主が淹れるハンドドリップコーヒーと豆のラインナップ",
+      "パティシエが手がけるバスクチーズケーキなどのスイーツ",
+      "心光寺の境内に広がる隠れ家的な店内",
+      "心光寺境内へのアクセスと営業日"
+    ],
+    "tags": [
+      "コーヒーショップ・喫茶店",
+      "天王寺区"
+    ],
+    "featureId": "コグマコーヒー"
   }
 ];
 
@@ -15777,7 +15826,8 @@ export const ARTICLE_STORE_FEATURE_IDS: Record<string, string> = {
   "r766": "麺処清水",
   "r767": "菓子HotsuHotsu",
   "r768": "DogCafeEightドッグカフェエイト",
-  "r769": "餃子らーめん一丸本店"
+  "r769": "餃子らーめん一丸本店",
+  "r770": "コグマコーヒー"
 };
 
 /** 特集記事ID → 店舗ID */
@@ -16107,5 +16157,6 @@ export const ARTICLE_STORE_ID_BY_FEATURE: Record<string, string> = {
   "麺処清水": "r766",
   "菓子HotsuHotsu": "r767",
   "DogCafeEightドッグカフェエイト": "r768",
-  "餃子らーめん一丸本店": "r769"
+  "餃子らーめん一丸本店": "r769",
+  "コグマコーヒー": "r770"
 };

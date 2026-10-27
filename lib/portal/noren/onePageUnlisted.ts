@@ -96,6 +96,9 @@ export const ONE_PAGE_UNLISTED_SHOP_OF_FEATURE: Readonly<Record<string, string>>
   ".tenn": "r758", // .tenn
   "うどんbarもういっけん": "r762", // うどんbar もういっけん
   "楽": "r763", // 楽
+  "竹田カフェ": "r761", // 竹田カフェ(営業時間が無く自動では1ページ化されず、旧型の店ページで 500・2026-10-28 手で追加)
+  "陽月kagezuki": "r765", // 陽月 kagezuki(同上)
+  "コグマコーヒー": "r770", // コグマコーヒー(同上)
 };
 
 const NFC = (s: string) => s.normalize("NFC");
