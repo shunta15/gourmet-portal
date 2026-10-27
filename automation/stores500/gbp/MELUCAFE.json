@@ -1,0 +1,22 @@
+{
+  "name": "MELU CAFE",
+  "address": "神奈川県横浜市南区中島町４丁目８９ ルーセントビル",
+  "lat": 35.4231657,
+  "lng": 139.6014696,
+  "category": "カフェ・喫茶",
+  "hours": {
+    "月": "08:30–20:30",
+    "火": "08:30–20:30",
+    "水": "08:30–20:30",
+    "木": "08:30–20:30",
+    "金": "08:30–20:30",
+    "土": "08:30–20:00",
+    "日": "11:00–20:00"
+  },
+  "phone": null,
+  "website": "https://www.gumyouji-shoutengai.com/shop/melucafe.html",
+  "priceRange": null,
+  "status": null,
+  "gbpUrl": "https://maps.google.com/?cid=17478748512467998491",
+  "fetchedAt": "2026-10-27T09:09:55.825Z"
+}

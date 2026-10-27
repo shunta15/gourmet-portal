@@ -1,0 +1,40 @@
+{
+  "tab": "トリニティアポ",
+  "tabEn": "tri-activity",
+  "row": 241,
+  "sheet": {
+    "name": "ナシレラスター",
+    "address": "",
+    "url": "https://www.google.com/maps/search/?api=1&query=%E3%83%8A%E3%82%B7%E3%83%AC%E3%83%A9%E3%82%B9%E3%82%BF%E3%83%BC%20080-3246-5385%20%E3%80%92951-8133%20%E6%96%B0%E6%BD%9F%E7%9C%8C%E6%96%B0%E6%BD%9F%E5%B8%82%E4%B8%AD%E5%A4%AE%E5%8C%BA%E5%B7%9D%E5%B2%B8%E7%94%BA%EF%BC%92",
+    "type": "漁船",
+    "d1": "",
+    "d2": ""
+  },
+  "urlKind": "mapsApi",
+  "route": "第1段(verify-gbp.mjs)で確認済み",
+  "verdict": "一致",
+  "verdictReason": "手がかり: 店名＋電話＋住所(番地まで)。電話が一致／店名: contains(シート「ナシレラスター」/ マップ「ナシレラスター 釣り船 遊覧船クルージング」)／住所(シート): exact・町名・番地とも一致",
+  "place": {
+    "name": "ナシレラスター 釣り船 遊覧船クルージング",
+    "address": "新潟県新潟市中央区川岸町２",
+    "category": "釣船チャーター",
+    "lat": 37.9097574,
+    "lng": 139.0353153,
+    "gbpUrl": "https://maps.google.com/?cid=4779570644850174289",
+    "phone": "080-3246-5385",
+    "website": "https://nashirera-star.jp/",
+    "hours": {
+      "月": "24時間営業",
+      "火": "24時間営業",
+      "水": "24時間営業",
+      "木": "24時間営業",
+      "金": "24時間営業",
+      "土": "24時間営業",
+      "日": "24時間営業"
+    },
+    "reserveLinks": [],
+    "statusSignals": [],
+    "closedSignal": false
+  },
+  "fetchedAt": "2026-10-27T09:15:33.580Z"
+}

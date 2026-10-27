@@ -1553,5 +1553,35 @@
     "articleId": "和食みよし",
     "sheetName": "和食みよし",
     "mapsUrl": "https://maps.google.com/?cid=7449730329753015368"
+  },
+  {
+    "articleId": "台湾市場食堂美蘭",
+    "sheetName": "台湾市場食堂美蘭",
+    "mapsUrl": "https://maps.google.com/?cid=16481208515846188634"
+  },
+  {
+    "articleId": "甘露肉汁",
+    "sheetName": "甘露肉汁",
+    "mapsUrl": "https://maps.google.com/?cid=3708346908153394643"
+  },
+  {
+    "articleId": "cafebarmiyami",
+    "sheetName": "カフェバーミヤミ",
+    "mapsUrl": "https://maps.google.com/?cid=3954027337332115507"
+  },
+  {
+    "articleId": "和醸良酒〇たけ",
+    "sheetName": "和醸良酒○たけ(まるたけ)",
+    "mapsUrl": "https://maps.google.com/?cid=15386181217083429347"
+  },
+  {
+    "articleId": "MELUCAFE",
+    "sheetName": "MELUCAFE",
+    "mapsUrl": "https://maps.google.com/?cid=17478748512467998491"
+  },
+  {
+    "articleId": "雅珈",
+    "sheetName": "雅珈",
+    "mapsUrl": "https://maps.google.com/?cid=14181060755063353605"
   }
 ]
