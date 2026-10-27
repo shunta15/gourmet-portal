@@ -7361,6 +7361,426 @@
         ],
         "checkedAt": "2026-10-26"
       }
+    },
+    {
+      "id": "li0047",
+      "vertical": "life",
+      "category": "shrine-temple",
+      "name": "長光寺",
+      "pref": "mie",
+      "cityName": "明和町",
+      "address": "三重県多気郡明和町大淀乙749",
+      "lat": 34.5612702,
+      "lng": 136.6553431,
+      "phone": "0596-55-3476",
+      "url": "https://choukoujitemple.netlify.app/",
+      "website": "https://choukoujitemple.netlify.app/",
+      "mapUrl": "https://maps.google.com/?cid=14807385752750230677",
+      "image": "/_portal/vshops/tri-life-231/g01.jpg",
+      "images": [
+        "/_portal/vshops/tri-life-231/g01.jpg",
+        "/_portal/vshops/tri-life-231/g02.jpg",
+        "/_portal/vshops/tri-life-231/g03.jpg",
+        "/_portal/vshops/tri-life-231/g04.jpg",
+        "/_portal/vshops/tri-life-231/g05.jpg",
+        "/_portal/vshops/tri-life-231/g06.jpg",
+        "/_portal/vshops/tri-life-231/g07.jpg",
+        "/_portal/vshops/tri-life-231/g08.jpg",
+        "/_portal/vshops/tri-life-231/g09.jpg",
+        "/_portal/vshops/tri-life-231/g10.jpg",
+        "/_portal/vshops/tri-life-231/s10.jpg",
+        "/_portal/vshops/tri-life-231/s12.jpg"
+      ],
+      "photos": [
+        {
+          "path": "/_portal/vshops/tri-life-231/g01.jpg",
+          "what": "晴天の下に建つ本堂の外観",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-life-231/g02.jpg",
+          "what": "境内に咲く白い蓮の花",
+          "kind": "view",
+          "width": 675,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-life-231/g03.jpg",
+          "what": "本堂を背景に咲く白とピンクの蓮の花",
+          "kind": "view",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-life-231/g04.jpg",
+          "what": "灯りがともる本堂内陣の仏像",
+          "kind": "common",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-life-231/g05.jpg",
+          "what": "本堂へ続く参道に並ぶのぼり旗",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-life-231/g06.jpg",
+          "what": "灯りがともる本堂正面の入口",
+          "kind": "exterior",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-life-231/g07.jpg",
+          "what": "金色の仏具が並ぶ本堂内陣",
+          "kind": "common",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-life-231/g08.jpg",
+          "what": "花が飾られた本堂の広縁",
+          "kind": "common",
+          "width": 1200,
+          "height": 675
+        },
+        {
+          "path": "/_portal/vshops/tri-life-231/g09.jpg",
+          "what": "蓮の花越しに見える本堂の外壁",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-life-231/g10.jpg",
+          "what": "蓮の花越しに見える本堂の窓",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-life-231/s10.jpg",
+          "what": "瓦屋根の本堂の外観",
+          "kind": "exterior",
+          "width": 1000,
+          "height": 546
+        },
+        {
+          "path": "/_portal/vshops/tri-life-231/s12.jpg",
+          "what": "瓦屋根の山門(通用門)",
+          "kind": "exterior",
+          "width": 1000,
+          "height": 743
+        }
+      ],
+      "tags": [
+        "駐車場あり",
+        "子ども向け"
+      ],
+      "article": {
+        "headline": "三重県多気郡明和町にある浄土宗の寺院。天平13年(741年)に行基によって開創されたと伝わり、本尊の木造阿弥陀如来立像は明和町指定有形文化財",
+        "lede": "多気郡明和町にある「長光寺」です。天平13年(741年)に行基によって開創されたと伝わる、1200年以上の歴史を持つ浄土宗の寺院です。本尊の木造阿弥陀如来立像は平安時代後期の作で、令和4年に明和町指定有形文化財に指定されました。",
+        "sections": [
+          {
+            "heading": "歴史",
+            "body": "天平13年(741年)に行基によって開創されたと伝わります。1560年代から1570年代にかけての織田信長による伊勢侵攻の戦火で全焼し、慶長6年(1601年)に念蓮社林誉上人文法和尚によって再興されました。本尊の木造阿弥陀如来立像は平安時代後期の作で、令和4年に明和町指定有形文化財に指定されています。"
+          },
+          {
+            "heading": "参拝について",
+            "body": "檀家でなくても、どなたでもお参りいただけます。境内には約3台の駐車場があり、本堂の中や内陣、地蔵堂などの撮影も自由です。御朱印は、本尊の阿弥陀如来様と地蔵堂の地蔵菩薩様の2種類があります。"
+          },
+          {
+            "heading": "年間の行事",
+            "body": "5月8日の花祭り(降誕会)ではお釈迦様の誕生日をお祝いし、誕生仏に甘茶をかけます。8月24日の大地蔵会では、地獄絵図の特別公開や境内の蝋燭によるライトアップなどがおこなわれます。令和9年5月5日には、第37世住職の晋山式にあわせてお稚児行列も予定されています。"
+          },
+          {
+            "heading": "年忌法要について",
+            "body": "年忌法要は、祥月命日当日かそれ以前におこなうのが望ましいとされ、1か月から3か月前の予約が勧められています。場所は寺のほか、自宅やホールでも相談できます。子ども連れの参拝も歓迎され、子どもが法要に参加する機会も大切にされています。"
+          }
+        ],
+        "menus": [
+          {
+            "name": "修正会"
+          },
+          {
+            "name": "花祭り(降誕会)"
+          },
+          {
+            "name": "施餓鬼"
+          },
+          {
+            "name": "大地蔵会"
+          },
+          {
+            "name": "年忌法要"
+          },
+          {
+            "name": "晋山式・お稚児行列"
+          },
+          {
+            "name": "御朱印拝受"
+          }
+        ],
+        "sources": [
+          {
+            "label": "公式サイト",
+            "url": "https://choukoujitemple.netlify.app/"
+          },
+          {
+            "label": "公式サイト(お参り・年忌法要のご案内)",
+            "url": "https://choukoujitemple.netlify.app/omairi-nenki-annai"
+          },
+          {
+            "label": "公式サイト(行事案内)",
+            "url": "https://choukoujitemple.netlify.app/events"
+          },
+          {
+            "label": "公式サイト(晋山式・お稚児行列のご案内)",
+            "url": "https://choukoujitemple.netlify.app/shinsanshiki"
+          },
+          {
+            "label": "公式サイト(よくある質問)",
+            "url": "https://choukoujitemple.netlify.app/faq"
+          },
+          {
+            "label": "Google マップ",
+            "url": "https://maps.google.com/?cid=14807385752750230677"
+          }
+        ],
+        "checkedAt": "2026-10-27"
+      }
+    },
+    {
+      "id": "li0048",
+      "vertical": "life",
+      "category": "car-repair",
+      "name": "彩洗工房",
+      "pref": "osaka",
+      "cityName": "豊中市",
+      "address": "大阪府豊中市春日町5丁目11-23 サンパレス21永楽荘 101号室",
+      "lat": 34.8154446,
+      "lng": 135.4721643,
+      "hours": "毎日 10:00 - 18:00",
+      "phone": "090-5245-8354",
+      "url": "https://saisen-koubou.com/",
+      "website": "https://saisen-koubou.com/",
+      "mapUrl": "https://maps.google.com/?cid=11988301879438038098",
+      "image": "/_portal/vshops/tri-life-233/g01.jpg",
+      "images": [
+        "/_portal/vshops/tri-life-233/g01.jpg",
+        "/_portal/vshops/tri-life-233/g02.jpg",
+        "/_portal/vshops/tri-life-233/g03.jpg",
+        "/_portal/vshops/tri-life-233/g04.jpg",
+        "/_portal/vshops/tri-life-233/g05.jpg",
+        "/_portal/vshops/tri-life-233/g06.jpg",
+        "/_portal/vshops/tri-life-233/g07.jpg",
+        "/_portal/vshops/tri-life-233/g08.jpg",
+        "/_portal/vshops/tri-life-233/g09.jpg",
+        "/_portal/vshops/tri-life-233/s01.jpg",
+        "/_portal/vshops/tri-life-233/s05.jpg",
+        "/_portal/vshops/tri-life-233/s07.jpg",
+        "/_portal/vshops/tri-life-233/s08.jpg",
+        "/_portal/vshops/tri-life-233/s09.jpg",
+        "/_portal/vshops/tri-life-233/s10.jpg",
+        "/_portal/vshops/tri-life-233/s11.jpg",
+        "/_portal/vshops/tri-life-233/s12.jpg",
+        "/_portal/vshops/tri-life-233/s13.jpg",
+        "/_portal/vshops/tri-life-233/s18.jpg"
+      ],
+      "photos": [
+        {
+          "path": "/_portal/vshops/tri-life-233/g01.jpg",
+          "what": "黄色い長財布",
+          "width": 1200,
+          "height": 800
+        },
+        {
+          "path": "/_portal/vshops/tri-life-233/g02.jpg",
+          "what": "黒いスタッズ付きパンプスが2足並ぶ",
+          "width": 1200,
+          "height": 800
+        },
+        {
+          "path": "/_portal/vshops/tri-life-233/g03.jpg",
+          "what": "ピンク色のモノグラム革財布のクローズアップ",
+          "width": 1200,
+          "height": 1088
+        },
+        {
+          "path": "/_portal/vshops/tri-life-233/g04.jpg",
+          "what": "オレンジ色のクロコダイル革のクローズアップ",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-life-233/g05.jpg",
+          "what": "黒いバッグの修理前後を並べた写真",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-life-233/g06.jpg",
+          "what": "黒いスタッズ付きパンプスの靴底を写した写真",
+          "width": 1200,
+          "height": 800
+        },
+        {
+          "path": "/_portal/vshops/tri-life-233/g07.jpg",
+          "what": "ピンクのモノグラム革財布を開いた状態",
+          "width": 1200,
+          "height": 897
+        },
+        {
+          "path": "/_portal/vshops/tri-life-233/g08.jpg",
+          "what": "ピンク色のモノグラム革製品の角のクローズアップ",
+          "width": 1200,
+          "height": 1119
+        },
+        {
+          "path": "/_portal/vshops/tri-life-233/g09.jpg",
+          "what": "オレンジ色の長財布にHの金具がついている",
+          "width": 1200,
+          "height": 800
+        },
+        {
+          "path": "/_portal/vshops/tri-life-233/s01.jpg",
+          "what": "黒いバッグの修理前後を並べたクローズアップ",
+          "width": 960,
+          "height": 1280
+        },
+        {
+          "path": "/_portal/vshops/tri-life-233/s05.jpg",
+          "what": "チェック柄の生地の修理前後を並べた写真",
+          "width": 959,
+          "height": 1280
+        },
+        {
+          "path": "/_portal/vshops/tri-life-233/s07.jpg",
+          "what": "紺色のボストンバッグの修理前後を並べた写真",
+          "width": 604,
+          "height": 805
+        },
+        {
+          "path": "/_portal/vshops/tri-life-233/s08.jpg",
+          "what": "赤いバッグに道具を当てている作業の様子",
+          "width": 1024,
+          "height": 768
+        },
+        {
+          "path": "/_portal/vshops/tri-life-233/s09.jpg",
+          "what": "革素材が巻かれて並ぶ作業台",
+          "width": 1024,
+          "height": 768
+        },
+        {
+          "path": "/_portal/vshops/tri-life-233/s10.jpg",
+          "what": "職人がコバを塗る作業の手元",
+          "width": 1024,
+          "height": 768
+        },
+        {
+          "path": "/_portal/vshops/tri-life-233/s11.jpg",
+          "what": "ベージュのキルティングバッグのハンドル部分の修理前後",
+          "width": 967,
+          "height": 1280
+        },
+        {
+          "path": "/_portal/vshops/tri-life-233/s12.jpg",
+          "what": "革ジャケットの修理前後を並べた写真",
+          "width": 960,
+          "height": 1280
+        },
+        {
+          "path": "/_portal/vshops/tri-life-233/s13.jpg",
+          "what": "黒いキルティングバッグの修理前後を並べた写真",
+          "width": 960,
+          "height": 1280
+        },
+        {
+          "path": "/_portal/vshops/tri-life-233/s18.jpg",
+          "what": "靴・財布・時計・バッグなど革製品が並んだ写真",
+          "width": 1280,
+          "height": 720
+        }
+      ],
+      "tags": [
+        "予約制"
+      ],
+      "article": {
+        "headline": "豊中市にある革製品の修理店。バッグや財布、靴、小物のクリーニングとリペアを扱い、郵送でも依頼を受け付けています",
+        "lede": "豊中市にある「彩洗工房」です。バッグ、財布、靴、小物など革製品のクリーニングとリペアを扱っています。大阪への持ち込みのほか郵送でのお預かりにも対応しており、全国から依頼できます。",
+        "sections": [
+          {
+            "heading": "場所とアクセス",
+            "body": "豊中市春日町のマンションの一室に店舗を構えています。牧落駅・箕面船場阪大前駅から車で約7分、千里中央駅から車で約9分の場所にあり、近隣にコインパーキングがあります。来店のほか、郵送でのお預かりにも対応しており、全国から依頼できます。"
+          },
+          {
+            "heading": "修理とクリーニングの内容",
+            "body": "バッグ、財布、靴、小物など革製品を中心に、クリーニングとリペアを扱っています。クリーニング&染め直し、メッキ処理、スエードの起毛復活・染色撥水、パイピング・コバ・レザー破れの再生修理、クリーニング・クレンジング・シミ抜き、リペア(修理、補色)、消臭・除菌などのメニューがあります。革製品のほか、ブランド品の小物類からスポーツ用品まで幅広い品の修理・リペアに対応しています。"
+          },
+          {
+            "heading": "依頼の方法",
+            "body": "直せるかどうかわからない段階でも相談を受け付けており、LINEや電話での問い合わせができます。来店前に事前の予約をお願いしています。ブランド品や革製品の買取サービスも行っており、リペアを施してから販売する取り組みもしています。"
+          }
+        ],
+        "menus": [
+          {
+            "name": "クリーニング&染め直し"
+          },
+          {
+            "name": "メッキ処理"
+          },
+          {
+            "name": "スエード(起毛復活、染色・撥水)"
+          },
+          {
+            "name": "クリーニング"
+          },
+          {
+            "name": "パイピング・コバ・レザー破れ再生修理"
+          },
+          {
+            "name": "クリーニング・クレンジング・シミ抜き"
+          },
+          {
+            "name": "リペア(修理、補色)"
+          },
+          {
+            "name": "消臭、除菌"
+          }
+        ],
+        "sources": [
+          {
+            "label": "公式サイト",
+            "url": "https://saisen-koubou.com/"
+          },
+          {
+            "label": "公式サイト(コンセプト)",
+            "url": "https://saisen-koubou.com/concept/"
+          },
+          {
+            "label": "公式サイト(料金表)",
+            "url": "https://saisen-koubou.com/menu/"
+          },
+          {
+            "label": "公式サイト(彩洗工房の特徴)",
+            "url": "https://saisen-koubou.com/feature/"
+          },
+          {
+            "label": "公式サイト(会社概要)",
+            "url": "https://saisen-koubou.com/about/"
+          },
+          {
+            "label": "Google マップ",
+            "url": "https://maps.google.com/?cid=11988301879438038098"
+          }
+        ],
+        "checkedAt": "2026-10-27"
+      }
     }
   ]
 }

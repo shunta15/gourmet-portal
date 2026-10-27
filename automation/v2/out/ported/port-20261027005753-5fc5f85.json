@@ -1,0 +1,30 @@
+{
+  "commit": "5fc5f85442b41f406db9805ec1fb3cf70d0b22a4",
+  "source": "/Users/shunta/claude/gp-k-auto2",
+  "count": 2,
+  "added": [
+    {
+      "row": 231,
+      "name": "長光寺",
+      "key": "tri-life-231",
+      "vertical": "くらし",
+      "id": "li0047",
+      "articleId": "li0047",
+      "shopUrl": "https://machinowa.tokyo/life/shop/li0047",
+      "articleUrl": "https://machinowa.tokyo/life/article/li0047",
+      "sheetUrl": "https://machinowa.tokyo/life/article/li0047"
+    },
+    {
+      "row": 233,
+      "name": "彩洗工房",
+      "key": "tri-life-233",
+      "vertical": "くらし",
+      "id": "li0048",
+      "articleId": "li0048",
+      "shopUrl": "https://machinowa.tokyo/life/shop/li0048",
+      "articleUrl": "https://machinowa.tokyo/life/article/li0048",
+      "sheetUrl": "https://machinowa.tokyo/life/article/li0048"
+    }
+  ],
+  "skipped": []
+}
