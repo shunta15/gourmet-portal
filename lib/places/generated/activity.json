@@ -3904,6 +3904,149 @@
         ],
         "checkedAt": "2026-10-27"
       }
+    },
+    {
+      "id": "ac0027",
+      "vertical": "activity",
+      "category": "sea-river",
+      "name": "CHP仙台サーフショップ",
+      "pref": "miyagi",
+      "cityName": "仙台市若林区",
+      "address": "宮城県仙台市若林区大和町4丁目10-5",
+      "lat": 38.2514886,
+      "lng": 140.917523,
+      "hours": "月火木-日 12:00 - 19:00",
+      "holidays": "水曜",
+      "phone": "022-782-6777",
+      "url": "https://chp-northpoint.com/",
+      "website": "https://chp-northpoint.com/",
+      "mapUrl": "https://maps.google.com/?cid=441852394059215483",
+      "image": "/_portal/vshops/tri-activity-252/g01.jpg",
+      "images": [
+        "/_portal/vshops/tri-activity-252/g01.jpg",
+        "/_portal/vshops/tri-activity-252/g02.jpg",
+        "/_portal/vshops/tri-activity-252/g04.jpg",
+        "/_portal/vshops/tri-activity-252/g05.jpg",
+        "/_portal/vshops/tri-activity-252/g07.jpg",
+        "/_portal/vshops/tri-activity-252/g09.jpg",
+        "/_portal/vshops/tri-activity-252/s16.jpg"
+      ],
+      "photos": [
+        {
+          "path": "/_portal/vshops/tri-activity-252/g01.jpg",
+          "what": "サーフボードが並ぶ店舗の外観(夜)",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 798
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-252/g02.jpg",
+          "what": "ウェットスーツや道具が並ぶ店内の棚",
+          "kind": "common",
+          "width": 1200,
+          "height": 798
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-252/g04.jpg",
+          "what": "波打ち際へボードを抱えて走る人の後ろ姿",
+          "kind": "view",
+          "width": 1200,
+          "height": 800
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-252/g05.jpg",
+          "what": "沖で波に乗るサーファーを遠くから捉えた海",
+          "kind": "view",
+          "width": 1200,
+          "height": 800
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-252/g07.jpg",
+          "what": "海岸に大勢の人が立ち並ぶ様子",
+          "kind": "view",
+          "width": 1200,
+          "height": 800
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-252/g09.jpg",
+          "what": "海岸に大勢が集合した様子",
+          "kind": "view",
+          "width": 1200,
+          "height": 800
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-252/s16.jpg",
+          "what": "サーフボードに取り付けられたフィンのアップ",
+          "kind": "meal",
+          "width": 600,
+          "height": 600
+        }
+      ],
+      "tags": [
+        "初心者歓迎",
+        "手ぶらでOK",
+        "駐車場あり"
+      ],
+      "article": {
+        "headline": "宮城県仙台市若林区にあるサーフィンショップ兼サーフィンスクール。仙台新港を拠点に、体験サーフィンのスクールを毎日開催している",
+        "lede": "仙台市若林区にある「CHP仙台サーフショップ」です。2000年創業で、仙台新港を拠点に体験サーフィンのスクールを毎日開催しています。サーフボードとウェットスーツのレンタルを備え、手ぶらで参加できます。",
+        "sections": [
+          {
+            "heading": "体験サーフィンの内容",
+            "body": "体験サーフィンは1回で終わらせないための3段階のステップアッププログラムになっています。1回目は海に慣れて立つ感覚をつかみ、2回目はパドリングを練習し、3回目で波に乗る感覚を身につける構成です。ISAレベル2サーフコーチの国際資格を持つインストラクターが指導にあたります。"
+          },
+          {
+            "heading": "参加できる人と持ち物",
+            "body": "受講する人の8割はまったくの未経験者で、ひとりで参加する女性も多くいます。参加する年齢は10歳くらいから60歳くらいまでが目安です。サーフボードとウエットスーツはレンタルでき、持ち物はバスタオルと水着だけで参加できます。"
+          },
+          {
+            "heading": "集合場所とアクセス",
+            "body": "体験サーフィンは仙台新港を中心に行われ、集合時間は午前8時、1〜2時間ほどで現地解散です。ショップは宮城県仙台市若林区大和町4-10-5にあり、地下鉄東西線卸町駅から徒歩約2分です。店の裏に駐車場が3台分あります。"
+          },
+          {
+            "heading": "サーフボードとウェットスーツ",
+            "body": "ショップでは国内外のシェイパーが手掛けるサーフボードと、フルオーダーと既製品のウェットスーツを扱っています。サーフボードの修理は自社工場で受け付けています。初めての人には、乗りやすく上達しやすいオリジナルのセットも用意されています。"
+          }
+        ],
+        "menus": [
+          {
+            "name": "サーフィンスクール"
+          },
+          {
+            "name": "スターターキット"
+          },
+          {
+            "name": "サーフボード"
+          },
+          {
+            "name": "ウェットスーツ"
+          },
+          {
+            "name": "レンタル"
+          },
+          {
+            "name": "サーフボードリペア"
+          },
+          {
+            "name": "レディース応援"
+          }
+        ],
+        "sources": [
+          {
+            "label": "公式サイト",
+            "url": "https://chp-northpoint.com/"
+          },
+          {
+            "label": "公式サイト(ショップ)",
+            "url": "https://chp-northpoint.com/shop/"
+          },
+          {
+            "label": "Google マップ",
+            "url": "https://maps.google.com/?cid=441852394059215483"
+          }
+        ],
+        "checkedAt": "2026-10-27"
+      }
     }
   ]
 }

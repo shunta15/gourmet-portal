@@ -2,7 +2,7 @@
   "meta": {
     "date": "2026-10-25",
     "startedAt": "2026-10-24T17:56:30.089Z",
-    "updatedAt": "2026-10-27T09:22:42.972Z",
+    "updatedAt": "2026-10-27T10:11:20.670Z",
     "decisionsAppliedAt": "2026-10-27T02:45:40.958Z",
     "decisionsNote": "行 80〜201 の「要確認」にオーナーの決定(2026-10-26)を反映。確定にした店は decision に D1/D2/D3 を記録、元の判定は verdictOriginal"
   },
@@ -12387,6 +12387,156 @@
       "fetchedAt": "2026-10-27T09:22:42.972Z",
       "statusSignals": [],
       "seconds": 34
+    },
+    "トリニティアポ:252": {
+      "tab": "トリニティアポ",
+      "row": 252,
+      "name": "CHP仙台",
+      "vertical": "アクティビティ",
+      "industryRaw": "アクティビティ",
+      "sheetPhone": "022-782-6777",
+      "sheetUrl": "https://www.google.com/maps/search/?api=1&query=CHP%E4%BB%99%E5%8F%B0%20022-782-6777%20%E3%80%92984-0042%20%E5%AE%AE%E5%9F%8E%E7%9C%8C%E4%BB%99%E5%8F%B0%E5%B8%82%E8%8B%A5%E6%9E%97%E5%8C%BA%E5%A4%A7%E5%92%8C%E7%94%BA%EF%BC%94%E4%B8%81%E7%9B%AE%EF%BC%91%EF%BC%90%E2%88%92%EF%BC%95",
+      "urlKind": "mapsApi",
+      "route": "電話・店名で検索",
+      "queries": [
+        "022-782-6777"
+      ],
+      "candidates": [
+        {
+          "name": "CHP仙台サーフショップ",
+          "address": "宮城県仙台市若林区大和町４丁目１０−５",
+          "phone": "022-782-6777",
+          "cid": "441852394059215483",
+          "url": "https://www.google.com/maps/place/CHP%E4%BB%99%E5%8F%B0%E3%82%B5%E3%83%BC%E3%83%95%E3%82%B7%E3%83%A7%E3%83%83%E3%83%97/@38.2514886,140.917523,17z/data=!3m1!4b1!4m6!3m5!1s0x5f898803fa05d22d:0x621c6694f0e327b!8m2!3d38.2514886!4d140.917523!16s%2Fg%2F1tkv9l34",
+          "phoneMatch": true,
+          "nameRelation": "contains",
+          "addressLevel": "exact"
+        }
+      ],
+      "verdict": "確認済み",
+      "cid": "441852394059215483",
+      "mapName": "CHP仙台サーフショップ",
+      "mapAddress": "宮城県仙台市若林区大和町４丁目１０−５",
+      "mapPhone": "022-782-6777",
+      "website": "https://chp-northpoint.com/",
+      "category": "サーフィン用品店",
+      "mapUrl": "https://maps.google.com/?cid=441852394059215483",
+      "signals": {
+        "phoneMatch": true,
+        "nameRelation": "contains",
+        "addressLevel": "exact",
+        "addressDetail": "町名・番地とも一致",
+        "addressSource": "シート",
+        "clues": [
+          "店名",
+          "電話",
+          "住所(番地まで)"
+        ]
+      },
+      "reason": "手がかり: 店名＋電話＋住所(番地まで)。電話が一致／店名: contains(シート「CHP仙台」/ マップ「CHP仙台サーフショップ」)／住所(シート): exact・町名・番地とも一致",
+      "fetchedAt": "2026-10-27T10:10:52.752Z",
+      "statusSignals": [],
+      "seconds": 5.6
+    },
+    "トリニティアポ:253": {
+      "tab": "トリニティアポ",
+      "row": 253,
+      "name": "持法院",
+      "vertical": "くらし",
+      "industryRaw": "寺",
+      "sheetPhone": "056-421-4007",
+      "sheetUrl": "https://www.google.com/maps/search/?api=1&query=%E6%8C%81%E6%B3%95%E9%99%A2%20056-421-4007%20%E3%80%92444-0076%20%E6%84%9B%E7%9F%A5%E7%9C%8C%E5%B2%A1%E5%B4%8E%E5%B8%82%E4%BA%95%E7%94%B0%E7%94%BA%EF%BC%91%E4%B8%81%E7%9B%AE%EF%BC%91%EF%BC%90%EF%BC%97",
+      "urlKind": "mapsApi",
+      "route": "電話・店名で検索",
+      "queries": [
+        "056-421-4007"
+      ],
+      "candidates": [
+        {
+          "name": "龍北山 持法院",
+          "address": "愛知県岡崎市井田町１丁目１０７",
+          "phone": "0564-21-4007",
+          "cid": "3247420836602917102",
+          "url": "https://www.google.com/maps/place/%E9%BE%8D%E5%8C%97%E5%B1%B1+%E6%8C%81%E6%B3%95%E9%99%A2/@34.9755968,137.1727872,17z/data=!3m1!4b1!4m6!3m5!1s0x6004a2d9d37323f9:0x2d11280b99eb30ee!8m2!3d34.9755968!4d137.1727872!16s%2Fg%2F1tf15v20",
+          "phoneMatch": true,
+          "nameRelation": "contains",
+          "addressLevel": "exact"
+        }
+      ],
+      "verdict": "確認済み",
+      "cid": "3247420836602917102",
+      "mapName": "龍北山 持法院",
+      "mapAddress": "愛知県岡崎市井田町１丁目１０７",
+      "mapPhone": "0564-21-4007",
+      "website": null,
+      "category": "仏教寺院",
+      "mapUrl": "https://maps.google.com/?cid=3247420836602917102",
+      "signals": {
+        "phoneMatch": true,
+        "nameRelation": "contains",
+        "addressLevel": "exact",
+        "addressDetail": "町名・番地とも一致",
+        "addressSource": "シート",
+        "clues": [
+          "店名",
+          "電話",
+          "住所(番地まで)"
+        ]
+      },
+      "reason": "手がかり: 店名＋電話＋住所(番地まで)。電話が一致／店名: contains(シート「持法院」/ マップ「龍北山 持法院」)／住所(シート): exact・町名・番地とも一致",
+      "fetchedAt": "2026-10-27T10:11:05.750Z",
+      "statusSignals": [],
+      "seconds": 5.6
+    },
+    "トリニティアポ:254": {
+      "tab": "トリニティアポ",
+      "row": 254,
+      "name": "菅生神社",
+      "vertical": "くらし",
+      "industryRaw": "神社",
+      "sheetPhone": "056-423-2506",
+      "sheetUrl": "https://www.google.com/maps/search/?api=1&query=%E8%8F%85%E7%94%9F%E7%A5%9E%E7%A4%BE%20056-423-2506%20%E3%80%92444-0052%20%E6%84%9B%E7%9F%A5%E7%9C%8C%E5%B2%A1%E5%B4%8E%E5%B8%82%E5%BA%B7%E7%94%9F%E7%94%BA%EF%BC%96%EF%BC%93%EF%BC%90%E2%88%92%EF%BC%91",
+      "urlKind": "mapsApi",
+      "route": "電話・店名で検索",
+      "queries": [
+        "056-423-2506"
+      ],
+      "candidates": [
+        {
+          "name": "菅生神社",
+          "address": "愛知県岡崎市康生町６３０−１",
+          "phone": "0564-23-2506",
+          "cid": "2402335313810596744",
+          "url": "https://www.google.com/maps/place/%E8%8F%85%E7%94%9F%E7%A5%9E%E7%A4%BE/@34.956196,137.1627634,17z/data=!3m1!4b1!4m6!3m5!1s0x6004bd310b681c53:0x2156cf3d630ea388!8m2!3d34.956196!4d137.1627634!16s%2Fg%2F11btrnh9nb",
+          "phoneMatch": true,
+          "nameRelation": "exact",
+          "addressLevel": "exact"
+        }
+      ],
+      "verdict": "確認済み",
+      "cid": "2402335313810596744",
+      "mapName": "菅生神社",
+      "mapAddress": "愛知県岡崎市康生町６３０−１",
+      "mapPhone": "0564-23-2506",
+      "website": "http://sugojinja.jp/",
+      "category": "神社",
+      "mapUrl": "https://maps.google.com/?cid=2402335313810596744",
+      "signals": {
+        "phoneMatch": true,
+        "nameRelation": "exact",
+        "addressLevel": "exact",
+        "addressDetail": "町名・番地とも一致",
+        "addressSource": "シート",
+        "clues": [
+          "店名",
+          "電話",
+          "住所(番地まで)"
+        ]
+      },
+      "reason": "手がかり: 店名＋電話＋住所(番地まで)。電話が一致／店名: exact(シート「菅生神社」/ マップ「菅生神社」)／住所(シート): exact・町名・番地とも一致",
+      "fetchedAt": "2026-10-27T10:11:20.670Z",
+      "statusSignals": [],
+      "seconds": 5.7
     }
   }
 }

@@ -3,8 +3,8 @@
     "date": "2026-10-27",
     "startedAt": "2026-10-27T00:49:47.306Z",
     "verifyFile": "automation/v2/out/verify-2026-10-27.json",
-    "args": "--only-row 81,95,106,132,133,139,161,170,235,237,238,239,240,241,242,243,244,245,246,247,248",
-    "updatedAt": "2026-10-27T09:58:36.696Z"
+    "args": "--only-row 252,253,254",
+    "updatedAt": "2026-10-27T10:23:38.339Z"
   },
   "environment": null,
   "results": {
@@ -1868,6 +1868,119 @@
         "article": "/life/article/li0058"
       },
       "finishedAt": "2026-10-27T09:45:23.628Z"
+    },
+    "tri-activity-252": {
+      "key": "tri-activity-252",
+      "row": 252,
+      "name": "CHP仙台",
+      "vertical": "アクティビティ",
+      "status": "成功",
+      "stage": "done",
+      "startedAt": "2026-10-27T10:11:25.342Z",
+      "seconds": {
+        "total": 0
+      },
+      "photos": {
+        "candidates": 27,
+        "maps": 10,
+        "official": 17,
+        "rejectedByMachine": 1,
+        "used": 7,
+        "emptyFrames": 0
+      },
+      "check": {
+        "rewrote": false,
+        "shapeProblems": [],
+        "sentenceProblems": 0,
+        "facts": {
+          "total": 20,
+          "verified": 20
+        }
+      },
+      "placeId": "ac0027",
+      "featureInGenerated": true,
+      "featureNote": null,
+      "urls": {
+        "shop": "/activity/shop/ac0027",
+        "article": "/activity/article/ac0027"
+      },
+      "finishedAt": "2026-10-27T10:22:18.758Z"
+    },
+    "tri-life-253": {
+      "key": "tri-life-253",
+      "row": 253,
+      "name": "持法院",
+      "vertical": "くらし",
+      "status": "成功",
+      "stage": "done",
+      "startedAt": "2026-10-27T10:12:09.610Z",
+      "seconds": {
+        "total": 26,
+        "claude": 26
+      },
+      "photos": {
+        "candidates": 10,
+        "maps": 10,
+        "official": 0,
+        "rejectedByMachine": 0,
+        "used": 10,
+        "emptyFrames": 0
+      },
+      "check": {
+        "rewrote": true,
+        "shapeProblems": [],
+        "sentenceProblems": 0,
+        "facts": {
+          "total": 8,
+          "verified": 8
+        }
+      },
+      "placeId": "li0061",
+      "featureInGenerated": false,
+      "featureNote": null,
+      "urls": {
+        "shop": "/life/shop/li0061",
+        "article": "/life/article/li0061"
+      },
+      "finishedAt": "2026-10-27T10:22:45.011Z"
+    },
+    "tri-life-254": {
+      "key": "tri-life-254",
+      "row": 254,
+      "name": "菅生神社",
+      "vertical": "くらし",
+      "status": "成功",
+      "stage": "done",
+      "startedAt": "2026-10-27T10:12:44.435Z",
+      "seconds": {
+        "total": 53,
+        "claude": 53
+      },
+      "photos": {
+        "candidates": 26,
+        "maps": 10,
+        "official": 16,
+        "rejectedByMachine": 2,
+        "used": 13,
+        "emptyFrames": 0
+      },
+      "check": {
+        "rewrote": true,
+        "shapeProblems": [],
+        "sentenceProblems": 0,
+        "facts": {
+          "total": 18,
+          "verified": 18
+        }
+      },
+      "placeId": "li0062",
+      "featureInGenerated": false,
+      "featureNote": null,
+      "urls": {
+        "shop": "/life/shop/li0062",
+        "article": "/life/article/li0062"
+      },
+      "finishedAt": "2026-10-27T10:23:38.338Z"
     }
   }
 }
