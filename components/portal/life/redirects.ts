@@ -1,8 +1,6 @@
 /**
- * くらしのサイトマップの付け替え(旧ページ→探すの絞り込み URL)。
- * 旧い種類・県×種類・エリア・利用シーンのページ(728 本の一部)は 2026-10-27 に消した。それらの URL から探す(/life/search)の絞り込みへの恒久の転送(308)は、
- * next.config.ts の redirects(lib/portal/legacyVertRedirects.ts)に移した。ここには、サイトマップから旧 URL を外して転送先の探す URL に替える部分だけが残る(作りは components/portal/vert/legacyToSearch.ts)。
- * 探すの URL の引数は kind(種類)・pref(県)。
+ * くらしのサイトマップの付け替え。共通のサイトマップ(components/portal/pages/sitemap.ts)が出す旧ページ(種類・県×種類・エリア・利用シーン)の URL を外し、探す(/life/search)の絞り込み URL(種類・県)に替える。
+ * 旧ページ自体は 2026-10-27 に消した(転送も置かない。旧 URL は くらしの枠の 404)。作りは components/portal/vert/legacyToSearch.ts。探すの URL の引数は kind(種類)・pref(県)。
  */
 import { searchFormSitemap } from "@/components/portal/vert/legacyToSearch";
 import { LFL } from "./links";

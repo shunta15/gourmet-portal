@@ -9,7 +9,6 @@ import { NOREN_SCENE_TO_SEARCH, NOREN_SEARCH_REWRITE } from "./lib/portal/noren/
 // ── area ここから
 import { NOREN_REGION_TO_SEARCH } from "./lib/portal/noren/rewrites";
 // ── area ここまで
-import { legacyVertRedirects } from "./lib/portal/legacyVertRedirects";
 
 // 総合サイトの公開スイッチ（lib/portal/launch.ts と同じ判定。proto-portal/LAUNCH.md）。ビルド時に評価する。
 const PORTAL_LIVE = portalLiveFromEnv();
@@ -131,10 +130,6 @@ const nextConfig: NextConfig = {
           ]
         : []),
       // ── area ここまで
-      // スポーツ・くらしの旧ページ 728 本(種類・種類×県・エリア・利用シーン)は、ページを消して(2026-10-27 オーナー決定)、探すの絞り込みへの恒久の転送(308)だけをここに持つ。
-      // 中身は lib/portal/legacyVertRedirects.ts(実在の種類・県・シーンの slug だけを列挙するので、/sports/search・/sports/shop・/sports/article・/sports/special・/sports/feature は潰さない。知らない slug は転送せず 404)。
-      // 公開スイッチ OFF のあいだは、これらの URL も 404 のまま(redirect を出さない。上の /leisure と同じ)
-      ...(PORTAL_LIVE ? [...legacyVertRedirects("sports"), ...legacyVertRedirects("life")] : []),
     ];
   },
   async rewrites() {
