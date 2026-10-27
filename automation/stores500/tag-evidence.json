@@ -4234,5 +4234,109 @@
         "evidence": "月 09:00–19:30"
       }
     ]
+  },
+  "r758": {
+    "articleId": ".tenn",
+    "name": ".tenn",
+    "tags": [
+      {
+        "tag": "深夜営業",
+        "rule": "hours: 閉店が24:00以降",
+        "evidence": "月 20:00–00:00"
+      }
+    ]
+  },
+  "r764": {
+    "articleId": "鮮魚料理若鰤",
+    "name": "鮮魚料理 若鰤",
+    "tags": []
+  },
+  "r757": {
+    "articleId": "から揚げドラゴンチキンハイボールキムにい",
+    "name": "から揚げドラゴンチキン ハイボール キムにい",
+    "tags": []
+  },
+  "r765": {
+    "articleId": "陽月kagezuki",
+    "name": "陽月 kagezuki",
+    "tags": []
+  },
+  "r766": {
+    "articleId": "麺処清水",
+    "name": "麺処 清水",
+    "tags": [
+      {
+        "tag": "そば",
+        "rule": "業態がシーン語彙に一致",
+        "evidence": "ラーメン・中華そば（そば）"
+      }
+    ]
+  },
+  "r759": {
+    "articleId": "一汁おにぎり壱",
+    "name": "一汁おにぎり 壱",
+    "tags": []
+  },
+  "r760": {
+    "articleId": "ノーズ（noz）CAFE",
+    "name": "ノーズ（ｎｏｚ）ＣＡＦＥ",
+    "tags": []
+  },
+  "r767": {
+    "articleId": "菓子HotsuHotsu",
+    "name": "菓子Hotsu Hotsu",
+    "tags": []
+  },
+  "r761": {
+    "articleId": "竹田カフェ",
+    "name": "竹田カフェ",
+    "tags": []
+  },
+  "r768": {
+    "articleId": "DogCafeEightドッグカフェエイト",
+    "name": "Dog Cafe Eight ドッグ カフェ エイト",
+    "tags": []
+  },
+  "r762": {
+    "articleId": "うどんbarもういっけん",
+    "name": "うどんbar もういっけん",
+    "tags": [
+      {
+        "tag": "うどん",
+        "rule": "業態がシーン語彙に一致",
+        "evidence": "うどん屋（うどん）"
+      },
+      {
+        "tag": "ランチ",
+        "rule": "hours: 開店が14:00以前（11:00以降にかかる営業）",
+        "evidence": "月 11:30–14:00"
+      },
+      {
+        "tag": "深夜営業",
+        "rule": "hours: 閉店が24:00以降",
+        "evidence": "月 21:00–02:00"
+      }
+    ]
+  },
+  "r769": {
+    "articleId": "餃子らーめん一丸本店",
+    "name": "餃子らーめん一丸本店",
+    "tags": []
+  },
+  "r763": {
+    "articleId": "楽",
+    "name": "楽",
+    "tags": [
+      {
+        "tag": "個室",
+        "rule": "席表記に「個室」",
+        "evidence": "席: カウンター・個室・2階半個室"
+      },
+      {
+        "tag": "深夜営業",
+        "rule": "hours: 閉店が24:00以降",
+        "evidence": "月 18:00–03:00"
+      }
+    ]
   }
 }

@@ -1,0 +1,124 @@
+{
+  "key": "tri-beauty-74",
+  "headline": "大阪市平野区平野西にある、LEDエクステ専門店のアイラッシュ&ネイルサロン。地下鉄谷町線「平野駅」６番出口が最寄り駅。",
+  "lede": "大阪市にある「アイラッシュ&ネイルサロン アイリス」です。LEDエクステを専門にしたまつげとネイルの店です。最寄り駅は地下鉄谷町線「平野駅」で、６番出口が近くにあります。",
+  "sections": [
+    {
+      "heading": "アクセス",
+      "body": "最寄り駅は地下鉄谷町線「平野駅」６番出口です。出口を出て内環を教育大付属幼稚園の方向に進み、２つ目の信号の角にあるローソンの並びにあります。住所は大阪市平野区平野西６丁目３−２２、カサ・エルドラード弐番館です。"
+    },
+    {
+      "heading": "メニューと店の特色",
+      "body": "ネイルとまつげの施術を扱うLEDエクステ専門店です。メニューにはワンカラーネイル、LEDマツエク、パリジェンヌラッシュリフト、美眉スタイリング、まつ毛パーマがあります。席数は総数6で、女性専用の店です。"
+    }
+  ],
+  "menus": [
+    {
+      "name": "ワンカラーネイル"
+    },
+    {
+      "name": "LEDマツエク"
+    },
+    {
+      "name": "パリジェンヌラッシュリフト"
+    },
+    {
+      "name": "美眉スタイリング"
+    },
+    {
+      "name": "まつ毛パーマ"
+    }
+  ],
+  "tags": [],
+  "facts": [
+    {
+      "claim": "店名は「LEDエクステ専門店　アイラッシュ＆ネイル　Airis」",
+      "source": "https://beauty.hotpepper.jp/kr/slnH000285287/",
+      "quote": "LEDエクステ専門店　アイラッシュ＆ネイル　Airis",
+      "checkedAt": "2026-10-28"
+    },
+    {
+      "claim": "最寄り駅は地下鉄谷町線「平野駅」６番出口",
+      "source": "https://beauty.hotpepper.jp/kr/slnH000285287/",
+      "quote": "地下鉄谷町線「平野駅」６番出口",
+      "checkedAt": "2026-10-28"
+    },
+    {
+      "claim": "２つ目の信号の角にローソンがあり、その並びにある",
+      "source": "https://beauty.hotpepper.jp/kr/slnH000285287/",
+      "quote": "２つ目の信号の角にローソンがあります",
+      "checkedAt": "2026-10-28"
+    },
+    {
+      "claim": "住所は大阪府大阪市平野区平野西６丁目３−２２",
+      "source": "https://maps.google.com/?cid=2929045056350726918",
+      "quote": "大阪府大阪市平野区平野西６丁目３−２２",
+      "checkedAt": "2026-10-28"
+    },
+    {
+      "claim": "建物名はカサ・エルドラード弐番館",
+      "source": "https://maps.google.com/?cid=2929045056350726918",
+      "quote": "カサ・エルドラード弐番館",
+      "checkedAt": "2026-10-28"
+    },
+    {
+      "claim": "Googleマップの業種の表示はまつげサロン",
+      "source": "https://maps.google.com/?cid=2929045056350726918",
+      "quote": "まつげサロン",
+      "checkedAt": "2026-10-28"
+    },
+    {
+      "claim": "メニューにワンカラーネイルがある",
+      "source": "https://beauty.hotpepper.jp/kr/slnH000285287/",
+      "quote": "ワンカラーネイル",
+      "checkedAt": "2026-10-28"
+    },
+    {
+      "claim": "メニューにLEDマツエクがある",
+      "source": "https://beauty.hotpepper.jp/kr/slnH000285287/",
+      "quote": "LEDマツエク",
+      "checkedAt": "2026-10-28"
+    },
+    {
+      "claim": "メニューにパリジェンヌラッシュリフトがある",
+      "source": "https://beauty.hotpepper.jp/kr/slnH000285287/",
+      "quote": "パリジェンヌラッシュリフト",
+      "checkedAt": "2026-10-28"
+    },
+    {
+      "claim": "メニューに美眉スタイリングがある",
+      "source": "https://beauty.hotpepper.jp/kr/slnH000285287/",
+      "quote": "美眉スタイリング",
+      "checkedAt": "2026-10-28"
+    },
+    {
+      "claim": "メニューにまつ毛パーマがある",
+      "source": "https://beauty.hotpepper.jp/kr/slnH000285287/",
+      "quote": "まつ毛パーマ",
+      "checkedAt": "2026-10-28"
+    },
+    {
+      "claim": "席数は総数6",
+      "source": "https://beauty.hotpepper.jp/kr/slnH000285287/",
+      "quote": "総数6",
+      "checkedAt": "2026-10-28"
+    },
+    {
+      "claim": "女性専用の店",
+      "source": "https://beauty.hotpepper.jp/kr/slnH000285287/",
+      "quote": "女性専用",
+      "checkedAt": "2026-10-28"
+    }
+  ],
+  "sources": [
+    {
+      "label": "掲載ページ(ホットペッパービューティー)",
+      "url": "https://beauty.hotpepper.jp/kr/slnH000285287/"
+    },
+    {
+      "label": "Google マップ",
+      "url": "https://maps.google.com/?cid=2929045056350726918"
+    }
+  ],
+  "notes": "automation/v2/write.mjs が 2026-10-28 に claude -p --model sonnet で作成。事実の裏取り: 13/13 件(quote が出どころにあるもの)。裏取りに通らなかった facts は載せていない。"
+}

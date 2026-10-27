@@ -1,0 +1,14 @@
+{
+  "name": "竹田カフェ",
+  "address": "大分県竹田市竹田町４０５−３",
+  "lat": 32.9662203,
+  "lng": 131.3925437,
+  "category": "コーヒーショップ・喫茶店",
+  "hours": null,
+  "phone": "070-8938-0401",
+  "website": "https://shop.taketacafe.com/",
+  "priceRange": null,
+  "status": null,
+  "gbpUrl": "https://maps.google.com/?cid=6550972887437745444",
+  "fetchedAt": "2026-10-27T16:52:45.502Z"
+}

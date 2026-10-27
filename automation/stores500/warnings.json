@@ -2441,5 +2441,112 @@
       "desc は lede から事実の文を選べず、事実から作った定型文",
       "cuisine は GBPカテゴリ"
     ]
+  },
+  "r758": {
+    "articleId": ".tenn",
+    "name": ".tenn",
+    "warnings": [
+      "desc は lede から事実の文を選べず、事実から作った定型文",
+      "cuisine は GBPカテゴリ"
+    ]
+  },
+  "r764": {
+    "articleId": "鮮魚料理若鰤",
+    "name": "鮮魚料理 若鰤",
+    "warnings": [
+      "desc は lede から事実の文を選べず、事実から作った定型文",
+      "営業時間が取れていない（noindex）"
+    ]
+  },
+  "r757": {
+    "articleId": "から揚げドラゴンチキンハイボールキムにい",
+    "name": "から揚げドラゴンチキン ハイボール キムにい",
+    "warnings": [
+      "営業時間が取れていない（noindex）",
+      "cuisine は GBPカテゴリ"
+    ]
+  },
+  "r765": {
+    "articleId": "陽月kagezuki",
+    "name": "陽月 kagezuki",
+    "warnings": [
+      "desc は lede から事実の文を選べず、事実から作った定型文",
+      "営業時間が取れていない（noindex）"
+    ]
+  },
+  "r766": {
+    "articleId": "麺処清水",
+    "name": "麺処 清水",
+    "warnings": [
+      "desc は lede から事実の文を選べず、事実から作った定型文",
+      "営業時間が取れていない（noindex）"
+    ]
+  },
+  "r759": {
+    "articleId": "一汁おにぎり壱",
+    "name": "一汁おにぎり 壱",
+    "warnings": [
+      "desc は lede から事実の文を選べず、事実から作った定型文",
+      "営業時間が取れていない（noindex）",
+      "cuisine は GBPカテゴリ"
+    ]
+  },
+  "r760": {
+    "articleId": "ノーズ（noz）CAFE",
+    "name": "ノーズ（ｎｏｚ）ＣＡＦＥ",
+    "warnings": [
+      "desc は lede から事実の文を選べず、事実から作った定型文",
+      "営業時間が取れていない（noindex）",
+      "cuisine は GBPカテゴリ"
+    ]
+  },
+  "r767": {
+    "articleId": "菓子HotsuHotsu",
+    "name": "菓子Hotsu Hotsu",
+    "warnings": [
+      "desc は lede から事実の文を選べず、事実から作った定型文",
+      "営業時間が取れていない（noindex）",
+      "cuisine は GBPカテゴリ"
+    ]
+  },
+  "r761": {
+    "articleId": "竹田カフェ",
+    "name": "竹田カフェ",
+    "warnings": [
+      "営業時間が取れていない（noindex）",
+      "cuisine は GBPカテゴリ"
+    ]
+  },
+  "r768": {
+    "articleId": "DogCafeEightドッグカフェエイト",
+    "name": "Dog Cafe Eight ドッグ カフェ エイト",
+    "warnings": [
+      "desc は lede から事実の文を選べず、事実から作った定型文",
+      "営業時間が取れていない（noindex）",
+      "cuisine は GBPカテゴリ"
+    ]
+  },
+  "r762": {
+    "articleId": "うどんbarもういっけん",
+    "name": "うどんbar もういっけん",
+    "warnings": [
+      "desc は lede から事実の文を選べず、事実から作った定型文",
+      "cuisine は GBPカテゴリ"
+    ]
+  },
+  "r769": {
+    "articleId": "餃子らーめん一丸本店",
+    "name": "餃子らーめん一丸本店",
+    "warnings": [
+      "desc は lede から事実の文を選べず、事実から作った定型文",
+      "営業時間が取れていない（noindex）"
+    ]
+  },
+  "r763": {
+    "articleId": "楽",
+    "name": "楽",
+    "warnings": [
+      "desc は lede から事実の文を選べず、事実から作った定型文"
+    ]
   }
 }

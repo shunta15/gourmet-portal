@@ -9923,6 +9923,155 @@
         ],
         "checkedAt": "2026-10-27"
       }
+    },
+    {
+      "id": "li0064",
+      "vertical": "life",
+      "category": "shrine-temple",
+      "name": "久久比神社",
+      "pref": "hyogo",
+      "cityName": "豊岡市",
+      "address": "兵庫県豊岡市下宮318-2",
+      "lat": 35.5573752,
+      "lng": 134.8436074,
+      "phone": "090-1909-3550",
+      "url": "http://www.happywing.jp/kukuhi.html",
+      "website": "http://www.happywing.jp/kukuhi.html",
+      "mapUrl": "https://maps.google.com/?cid=10012132461561465567",
+      "image": "/_portal/vshops/tri-life-236/g01.jpg",
+      "images": [
+        "/_portal/vshops/tri-life-236/g01.jpg",
+        "/_portal/vshops/tri-life-236/g02.jpg",
+        "/_portal/vshops/tri-life-236/g03.jpg",
+        "/_portal/vshops/tri-life-236/g04.jpg",
+        "/_portal/vshops/tri-life-236/g05.jpg",
+        "/_portal/vshops/tri-life-236/g06.jpg",
+        "/_portal/vshops/tri-life-236/g07.jpg",
+        "/_portal/vshops/tri-life-236/g08.jpg",
+        "/_portal/vshops/tri-life-236/g09.jpg",
+        "/_portal/vshops/tri-life-236/g10.jpg",
+        "/_portal/vshops/tri-life-236/s07.jpg"
+      ],
+      "photos": [
+        {
+          "path": "/_portal/vshops/tri-life-236/g01.jpg",
+          "what": "木々に囲まれた社殿の建物",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-life-236/g02.jpg",
+          "what": "川沿いに咲く桜並木と道",
+          "kind": "view",
+          "width": 1200,
+          "height": 555
+        },
+        {
+          "path": "/_portal/vshops/tri-life-236/g03.jpg",
+          "what": "石造の鳥居と参道の入り口",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 800
+        },
+        {
+          "path": "/_portal/vshops/tri-life-236/g04.jpg",
+          "what": "提灯が下がる社殿の正面",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-life-236/g05.jpg",
+          "what": "コウノトリの像と社殿の建物",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 800
+        },
+        {
+          "path": "/_portal/vshops/tri-life-236/g06.jpg",
+          "what": "夜にライトアップされた社号標と桜",
+          "kind": "exterior",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-life-236/g07.jpg",
+          "what": "桜と木々に囲まれた鳥居の遠景",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 800
+        },
+        {
+          "path": "/_portal/vshops/tri-life-236/g08.jpg",
+          "what": "灯籠が並ぶ参道と鳥居",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 555
+        },
+        {
+          "path": "/_portal/vshops/tri-life-236/g09.jpg",
+          "what": "雪の境内に置かれた狛犬の像",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-life-236/g10.jpg",
+          "what": "提灯が下がる社殿の内部",
+          "kind": "common",
+          "width": 1200,
+          "height": 800
+        },
+        {
+          "path": "/_portal/vshops/tri-life-236/s07.jpg",
+          "what": "コウノトリ柄の御守り3体",
+          "kind": "meal",
+          "width": 600,
+          "height": 486
+        }
+      ],
+      "tags": [],
+      "article": {
+        "headline": "兵庫県豊岡市下宮にある神社。本殿は永正四年（1507年）に再建され、日本書紀に記されたコウノトリ伝説にゆかりがある",
+        "lede": "豊岡市にある「久久比神社」です。但馬国城崎郡二十一座のうちの小社で、木の神「久々遅命」を祀ります。宮司は常駐しておらず、参拝は自由にできます。",
+        "sections": [
+          {
+            "heading": "場所と参拝",
+            "body": "住所は兵庫県豊岡市下宮318-2です。宮司は常駐しておらず、参拝は自由にできます。現地で絵馬や御守りを受けたい場合は、親族が営む隣の喫茶店「AVIANTOT（アビアントット）」で扱っています。JR山陰本線「豊岡駅」からは約4.5キロメートルで、特急は京都、大阪、姫路方面から運行しています。"
+          },
+          {
+            "heading": "由緒",
+            "body": "但馬国城崎郡二十一座のうちの小社で、木の神「久々遅命」を祀ります。現在の本殿は永正四年（1507年）に再建されたもので、室町時代中期の代表的様式を示す歴史ある社殿です。社名の「久々比」は、コウノトリの古称「くくい」に由来するとされます。"
+          },
+          {
+            "heading": "コウノトリ伝説",
+            "body": "垂仁天皇が誉津別皇子を伴われた際、くくい（コウノトリの古称）が大空を飛び、皇子はこの日初めて言葉を話しました。このことから「コウノトリ」は霊鳥とされ、鳥が棲む土地に神社が建てられました。境内には子宝祈願や安産祈願を願うコウノトリの絵馬が多数かけられ、全国各地から参拝に訪れる人があります。"
+          }
+        ],
+        "menus": [
+          {
+            "name": "子宝祈願"
+          },
+          {
+            "name": "安産祈願"
+          },
+          {
+            "name": "コウノトリのお守り"
+          }
+        ],
+        "sources": [
+          {
+            "label": "公式サイト",
+            "url": "http://www.happywing.jp/kukuhi.html"
+          },
+          {
+            "label": "Google マップ",
+            "url": "https://maps.google.com/?cid=10012132461561465567"
+          }
+        ],
+        "checkedAt": "2026-10-28"
+      }
     }
   ]
 }

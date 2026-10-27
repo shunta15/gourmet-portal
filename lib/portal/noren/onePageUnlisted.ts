@@ -93,6 +93,9 @@ export const ONE_PAGE_UNLISTED_SHOP_OF_FEATURE: Readonly<Record<string, string>>
   "和醸良酒〇たけ": "r753", // 和醸良酒 〇たけ
   "MELUCAFE": "r754", // MELU CAFE
   "雅珈": "r755", // 雅珈
+  ".tenn": "r758", // .tenn
+  "うどんbarもういっけん": "r762", // うどんbar もういっけん
+  "楽": "r763", // 楽
 };
 
 const NFC = (s: string) => s.normalize("NFC");
