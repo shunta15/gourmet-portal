@@ -1,0 +1,19 @@
+{
+  "commit": "d018beae21f779a3c5adb8fbe26307c04f3526f3",
+  "source": "/Users/shunta/claude/gp-k-auto2",
+  "count": 1,
+  "added": [
+    {
+      "row": 235,
+      "name": "ベニフィット",
+      "key": "tri-beauty-235",
+      "vertical": "ビューティー",
+      "id": "be0108",
+      "articleId": null,
+      "shopUrl": "https://machinowa.tokyo/beauty/shop/be0108",
+      "articleUrl": null,
+      "sheetUrl": "https://machinowa.tokyo/beauty/shop/be0108"
+    }
+  ],
+  "skipped": []
+}
