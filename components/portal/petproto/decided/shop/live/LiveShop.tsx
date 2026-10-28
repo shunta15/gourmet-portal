@@ -85,7 +85,7 @@ function CtaIcon({ l }: { l: ShopLink }) {
   if (l.kind === "map") return <IconPin aria-hidden="true" />;
   return <IcLink aria-hidden="true" />;
 }
-const ctaLabel = (l: ShopLink) => (l.kind === "reserve" ? "予約ページを開く" : l.kind === "website" ? "公式サイトを見る" : l.kind === "phone" ? "電話する" : "地図を開く");
+const ctaLabel = (l: ShopLink) => (l.kind === "reserve" ? "予約ページを開く" : l.kind === "website" ? "公式サイトを見る" : l.kind === "instagram" ? "Instagramを見る" : l.kind === "phone" ? "電話する" : "地図を開く");
 
 function Hero({ d }: { d: ShopDetail }) {
   const s = d.shop;

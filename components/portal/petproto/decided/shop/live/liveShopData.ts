@@ -185,8 +185,8 @@ export async function loadPetShopDetail(rawId: string): Promise<ShopDetail | nul
     website: p.website,
   });
   const byKind = (k: ShopLink["kind"]) => all.find((l) => l.kind === k);
-  // ヒーローのボタン(最大 2): 予約 or 公式サイト が主、電話 or 地図 が副
-  const mainLink = byKind("reserve") ?? byKind("website");
+  // ヒーローのボタン(最大 2): 予約 or 公式サイト が主、電話 or 地図 が副。予約も公式サイトも無い店(公式サイトが開けず Instagram だけ載せる店)は、Instagram を主にする
+  const mainLink = byKind("reserve") ?? byKind("website") ?? byKind("instagram");
   const subLink = byKind("phone") ?? byKind("map");
   const cta = [mainLink, subLink].filter((x): x is ShopLink => !!x);
   const socials = socialLinks({ instagram: p.instagram, tiktok: p.tiktok, x: p.x, facebook: p.facebook, line: p.line, website: p.website }).filter((l) => l.kind !== "website");
