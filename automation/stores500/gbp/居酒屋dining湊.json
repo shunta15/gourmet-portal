@@ -1,0 +1,14 @@
+{
+  "name": "居酒屋dining湊",
+  "address": "埼玉県新座市東北２丁目２４−２０",
+  "lat": 35.8194226,
+  "lng": 139.5761635,
+  "category": "居酒屋",
+  "hours": null,
+  "phone": "048-424-7755",
+  "website": "https://diningminato.happytry.org/",
+  "priceRange": null,
+  "status": null,
+  "gbpUrl": "https://maps.google.com/?cid=11049723509890314716",
+  "fetchedAt": "2026-10-28T20:29:56.607Z"
+}

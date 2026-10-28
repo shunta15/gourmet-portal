@@ -1,0 +1,32 @@
+{
+  "tab": "トリニティアポ",
+  "tabEn": "tri-stay",
+  "row": 16,
+  "sheet": {
+    "name": "茶処・温泉宿水ぐち",
+    "address": "",
+    "url": "https://www.google.com/maps/search/?api=1&query=%E8%8C%B6%E5%87%A6%E3%83%BB%E6%B8%A9%E6%B3%89%E5%AE%BF%E6%B0%B4%E3%81%90%E3%81%A1%20055-872-2029%20",
+    "type": "ホテル",
+    "d1": "",
+    "d2": ""
+  },
+  "urlKind": "mapsApi",
+  "route": "第1段(verify-gbp.mjs)で確認済み",
+  "verdict": "一致",
+  "verdictReason": "手がかり: 店名＋電話＋住所(番地まで)。電話が一致／店名: exact(シート「茶処・温泉宿水ぐち」/ マップ「茶処・温泉宿水ぐち」)／住所(シート): exact・町名・番地とも一致",
+  "place": {
+    "name": "茶処・温泉宿水ぐち",
+    "address": "静岡県伊豆市修善寺３４６３−１７",
+    "category": null,
+    "lat": 34.9698202,
+    "lng": 138.9267821,
+    "gbpUrl": "https://maps.google.com/?cid=17164066446335380427",
+    "phone": "0558-72-2029",
+    "website": "https://onsen-yado-mizuguchi.com/",
+    "hours": null,
+    "reserveLinks": [],
+    "statusSignals": [],
+    "closedSignal": false
+  },
+  "fetchedAt": "2026-10-28T20:26:23.591Z"
+}

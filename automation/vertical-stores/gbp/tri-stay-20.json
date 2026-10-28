@@ -1,0 +1,32 @@
+{
+  "tab": "トリニティアポ",
+  "tabEn": "tri-stay",
+  "row": 20,
+  "sheet": {
+    "name": "ビジネス旅館 若草",
+    "address": "",
+    "url": "https://www.google.com/maps/search/?api=1&query=%E3%83%93%E3%82%B8%E3%83%8D%E3%82%B9%E6%97%85%E9%A4%A8%20%E8%8B%A5%E8%8D%89%20059-226-2354%20",
+    "type": "宿泊",
+    "d1": "",
+    "d2": ""
+  },
+  "urlKind": "mapsApi",
+  "route": "第1段(verify-gbp.mjs)で確認済み",
+  "verdict": "一致",
+  "verdictReason": "手がかり: 店名＋電話＋住所(番地まで)。電話が一致／店名: exact(シート「ビジネス旅館 若草」/ マップ「ビジネス旅館 若草」)／住所(シート): exact・町名・番地とも一致",
+  "place": {
+    "name": "ビジネス旅館 若草",
+    "address": "三重県津市中央８−２４",
+    "category": null,
+    "lat": 34.7212402,
+    "lng": 136.5099407,
+    "gbpUrl": "https://maps.google.com/?cid=15924630768919761199",
+    "phone": "059-226-2354",
+    "website": "http://www.ztv.ne.jp/assh/",
+    "hours": null,
+    "reserveLinks": [],
+    "statusSignals": [],
+    "closedSignal": false
+  },
+  "fetchedAt": "2026-10-28T20:29:18.806Z"
+}

@@ -1,0 +1,32 @@
+{
+  "tab": "トリニティアポ",
+  "tabEn": "tri-life",
+  "row": 47,
+  "sheet": {
+    "name": "鵲森宮",
+    "address": "",
+    "url": "https://www.google.com/maps/search/?api=1&query=%E9%B5%B2%E6%A3%AE%E5%AE%AE%2006-6941-9294%20",
+    "type": "その他",
+    "d1": "",
+    "d2": ""
+  },
+  "urlKind": "mapsApi",
+  "route": "第1段(verify-gbp.mjs)で確認済み",
+  "verdict": "一致",
+  "verdictReason": "手がかり: 店名＋電話。電話が一致／店名: exact(シート「鵲森宮」/ マップ「鵲森宮（森之宮神社）」)",
+  "place": {
+    "name": "鵲森宮（森之宮神社）",
+    "address": "大阪府大阪市中央区森ノ宮中央１丁目１４−４",
+    "category": "神社",
+    "lat": 34.6807882,
+    "lng": 135.5332979,
+    "gbpUrl": "https://maps.google.com/?cid=7711785768109338920",
+    "phone": "06-6941-9294",
+    "website": "http://www.morinomiya.net/",
+    "hours": null,
+    "reserveLinks": [],
+    "statusSignals": [],
+    "closedSignal": false
+  },
+  "fetchedAt": "2026-10-28T20:34:18.813Z"
+}

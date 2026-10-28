@@ -2629,5 +2629,47 @@
       "営業時間が取れていない（noindex）",
       "cuisine は GBPカテゴリ"
     ]
+  },
+  "r780": {
+    "articleId": "海の幸鯛や",
+    "name": "海の幸 鯛や",
+    "warnings": [
+      "desc は lede から事実の文を選べず、事実から作った定型文",
+      "営業時間が取れていない（noindex）"
+    ]
+  },
+  "r781": {
+    "articleId": "ウォーレンフォード",
+    "name": "ウォーレンフォード",
+    "warnings": [
+      "営業時間が取れていない（noindex）",
+      "cuisine は GBPカテゴリ"
+    ]
+  },
+  "r782": {
+    "articleId": "居酒屋dining湊",
+    "name": "居酒屋dining湊",
+    "warnings": [
+      "desc は lede から事実の文を選べず、事実から作った定型文",
+      "営業時間が取れていない（noindex）",
+      "cuisine は GBPカテゴリ"
+    ]
+  },
+  "r783": {
+    "articleId": "美食居酒屋いろは本舗",
+    "name": "美食居酒屋 いろは本舗",
+    "warnings": [
+      "営業時間が取れていない（noindex）",
+      "cuisine は GBPカテゴリ"
+    ]
+  },
+  "r784": {
+    "articleId": "からあげ鳥元",
+    "name": "からあげ鳥元",
+    "warnings": [
+      "desc は lede から事実の文を選べず、事実から作った定型文",
+      "営業時間が取れていない（noindex）",
+      "cuisine は GBPカテゴリ"
+    ]
   }
 }

@@ -1,0 +1,118 @@
+{
+  "commit": "2438419fb3bf8ed53bae289fe0f93a0312eb29ad",
+  "source": "/Users/shunta/claude/gp-k-auto2",
+  "count": 10,
+  "added": [
+    {
+      "row": 15,
+      "name": "海の幸 鯛や",
+      "key": "tri-gourmet-15",
+      "vertical": "グルメ",
+      "id": "r780",
+      "articleId": "海の幸鯛や",
+      "shopUrl": "https://machinowa.tokyo/restaurant/r780",
+      "articleUrl": "https://machinowa.tokyo/feature/海の幸鯛や",
+      "sheetUrl": "https://machinowa.tokyo/feature/海の幸鯛や"
+    },
+    {
+      "row": 16,
+      "name": "茶処・温泉宿水ぐち",
+      "key": "tri-stay-16",
+      "vertical": "ステイ",
+      "id": "st0022",
+      "articleId": "st0022",
+      "shopUrl": "https://machinowa.tokyo/stay/shop/st0022",
+      "articleUrl": "https://machinowa.tokyo/stay/article/st0022",
+      "sheetUrl": "https://machinowa.tokyo/stay/article/st0022"
+    },
+    {
+      "row": 17,
+      "name": "ウォーレンフォード",
+      "key": "tri-gourmet-17",
+      "vertical": "グルメ",
+      "id": "r781",
+      "articleId": "ウォーレンフォード",
+      "shopUrl": "https://machinowa.tokyo/restaurant/r781",
+      "articleUrl": "https://machinowa.tokyo/feature/ウォーレンフォード",
+      "sheetUrl": "https://machinowa.tokyo/feature/ウォーレンフォード"
+    },
+    {
+      "row": 19,
+      "name": "大瀧寺",
+      "key": "tri-life-19",
+      "vertical": "くらし",
+      "id": "li0082",
+      "articleId": "li0082",
+      "shopUrl": "https://machinowa.tokyo/life/shop/li0082",
+      "articleUrl": "https://machinowa.tokyo/life/article/li0082",
+      "sheetUrl": "https://machinowa.tokyo/life/article/li0082"
+    },
+    {
+      "row": 20,
+      "name": "ビジネス旅館 若草",
+      "key": "tri-stay-20",
+      "vertical": "ステイ",
+      "id": "st0023",
+      "articleId": "st0023",
+      "shopUrl": "https://machinowa.tokyo/stay/shop/st0023",
+      "articleUrl": "https://machinowa.tokyo/stay/article/st0023",
+      "sheetUrl": "https://machinowa.tokyo/stay/article/st0023"
+    },
+    {
+      "row": 21,
+      "name": "居酒屋dining湊",
+      "key": "tri-gourmet-21",
+      "vertical": "グルメ",
+      "id": "r782",
+      "articleId": "居酒屋dining湊",
+      "shopUrl": "https://machinowa.tokyo/restaurant/r782",
+      "articleUrl": "https://machinowa.tokyo/feature/居酒屋dining湊",
+      "sheetUrl": "https://machinowa.tokyo/feature/居酒屋dining湊"
+    },
+    {
+      "row": 25,
+      "name": "いろは本舗",
+      "key": "tri-gourmet-25",
+      "vertical": "グルメ",
+      "id": "r783",
+      "articleId": "美食居酒屋いろは本舗",
+      "shopUrl": "https://machinowa.tokyo/restaurant/r783",
+      "articleUrl": "https://machinowa.tokyo/feature/美食居酒屋いろは本舗",
+      "sheetUrl": "https://machinowa.tokyo/feature/美食居酒屋いろは本舗"
+    },
+    {
+      "row": 26,
+      "name": "からあげ 鳥元",
+      "key": "tri-gourmet-26",
+      "vertical": "グルメ",
+      "id": "r784",
+      "articleId": "からあげ鳥元",
+      "shopUrl": "https://machinowa.tokyo/restaurant/r784",
+      "articleUrl": "https://machinowa.tokyo/feature/からあげ鳥元",
+      "sheetUrl": "https://machinowa.tokyo/feature/からあげ鳥元"
+    },
+    {
+      "row": 27,
+      "name": "實成寺",
+      "key": "tri-life-27",
+      "vertical": "くらし",
+      "id": "li0083",
+      "articleId": "li0083",
+      "shopUrl": "https://machinowa.tokyo/life/shop/li0083",
+      "articleUrl": "https://machinowa.tokyo/life/article/li0083",
+      "sheetUrl": "https://machinowa.tokyo/life/article/li0083"
+    },
+    {
+      "row": 47,
+      "name": "鵲森宮",
+      "key": "tri-life-47",
+      "vertical": "くらし",
+      "id": "li0084",
+      "articleId": "li0084",
+      "shopUrl": "https://machinowa.tokyo/life/shop/li0084",
+      "articleUrl": "https://machinowa.tokyo/life/article/li0084",
+      "sheetUrl": "https://machinowa.tokyo/life/article/li0084"
+    }
+  ],
+  "skipped": []
+}

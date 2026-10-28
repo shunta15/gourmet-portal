@@ -1,0 +1,32 @@
+{
+  "tab": "トリニティアポ",
+  "tabEn": "tri-life",
+  "row": 19,
+  "sheet": {
+    "name": "大瀧寺",
+    "address": "",
+    "url": "https://www.google.com/maps/search/?api=1&query=%E5%A4%A7%E7%80%A7%E5%AF%BA%20088-353-7910%20",
+    "type": "お寺",
+    "d1": "",
+    "d2": ""
+  },
+  "urlKind": "mapsApi",
+  "route": "第1段(verify-gbp.mjs)で確認済み",
+  "verdict": "一致",
+  "verdictReason": "手がかり: 店名＋電話＋住所(番地まで)。電話が一致／店名: exact(シート「大瀧寺」/ マップ「大瀧寺」)／住所(シート): exact・町名・番地とも一致",
+  "place": {
+    "name": "大瀧寺",
+    "address": "徳島県美馬市脇町西大谷６７４",
+    "category": "仏教寺院",
+    "lat": 34.1219473,
+    "lng": 134.127456,
+    "gbpUrl": "https://maps.google.com/?cid=14910780248554761253",
+    "phone": "0883-53-7910",
+    "website": "https://www.otakiji-nishiterugu.com/",
+    "hours": null,
+    "reserveLinks": [],
+    "statusSignals": [],
+    "closedSignal": false
+  },
+  "fetchedAt": "2026-10-28T20:28:08.469Z"
+}

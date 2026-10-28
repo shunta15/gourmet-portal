@@ -1,0 +1,143 @@
+{
+  "key": "tri-stay-20",
+  "headline": "三重県津市中央にあるビジネス旅館。JR・近鉄の津駅や伊勢自動車道のインターチェンジに近く、浴場は24時間利用できる。",
+  "lede": "津市にある「ビジネス旅館若草」です。津市の中央に位置し、JR・近鉄の津駅や伊勢自動車道のインターチェンジから近い場所にあります。ロビーではインターネットを利用できます。",
+  "sections": [
+    {
+      "heading": "場所と予約",
+      "body": "鉄道はJR・近鉄の津駅が最寄りで、車は伊勢自動車道のインターチェンジから近い場所にあります。駐車場は10台分あり、4tトラックまで駐車できます。チェックインは16:00、チェックアウトは10:00です。予約は公式サイトの空室検索やプラン一覧のページから行えます。"
+    },
+    {
+      "heading": "客室と浴場",
+      "body": "全室にテレビ・エアコン・電話・羽布団・目覚まし時計が備わります。浴場は24時間利用でき、浴衣・歯ブラシ・ひげ剃りのアメニティが用意されています。ロビーではインターネットを利用できます。宿泊プランには素泊まりもあります。"
+    },
+    {
+      "heading": "周辺",
+      "body": "徒歩圏には津城跡があります。車では高田本山専修寺や結城神社、御殿場海岸、ヨットハーバーなどに行くことができます。"
+    }
+  ],
+  "menus": [],
+  "tags": [
+    {
+      "tag": "素泊まり",
+      "factIndex": 9
+    }
+  ],
+  "facts": [
+    {
+      "claim": "津市の中央に位置するビジネス旅館です。",
+      "source": "http://www.ztv.ne.jp/assh/",
+      "quote": "津市の中央に位置するビジネス旅館です。",
+      "checkedAt": "2026-10-29"
+    },
+    {
+      "claim": "鉄道はJR・近鉄の津駅が最寄りです。",
+      "source": "http://www.ztv.ne.jp/assh/",
+      "quote": "鉄道ではJR、近鉄津駅から",
+      "checkedAt": "2026-10-29"
+    },
+    {
+      "claim": "車は伊勢自動車道のインターチェンジから近い場所にあります。",
+      "source": "http://www.ztv.ne.jp/assh/",
+      "quote": "お車では伊勢自動車道ICからも近くて便利。",
+      "checkedAt": "2026-10-29"
+    },
+    {
+      "claim": "全室にテレビ・エアコン・電話・羽布団・目覚まし時計が備わります。",
+      "source": "http://www.ztv.ne.jp/assh/menu.html",
+      "quote": "全室 テレビ、エアコン、電話、羽布団、目覚まし時計付き。",
+      "checkedAt": "2026-10-29"
+    },
+    {
+      "claim": "浴場は24時間利用できます。",
+      "source": "http://www.ztv.ne.jp/assh/menu.html",
+      "quote": "浴場は、２４時間ご利用になれます。",
+      "checkedAt": "2026-10-29"
+    },
+    {
+      "claim": "アメニティには浴衣・歯ブラシ・ひげ剃りが用意されています。",
+      "source": "http://www.ztv.ne.jp/assh/menu.html",
+      "quote": "アメニティ 浴衣、歯ブラシ、ひげ剃り。",
+      "checkedAt": "2026-10-29"
+    },
+    {
+      "claim": "チェックインは16:00、チェックアウトは10:00です。",
+      "source": "http://www.ztv.ne.jp/assh/menu.html",
+      "quote": "チェックイン、アウト 16:00～10:00",
+      "checkedAt": "2026-10-29"
+    },
+    {
+      "claim": "駐車場は10台分あり、4tトラックまで駐車できます。",
+      "source": "http://www.ztv.ne.jp/assh/menu.html",
+      "quote": "駐車場 10台駐車可能 4ｔトラックまでOK。",
+      "checkedAt": "2026-10-29"
+    },
+    {
+      "claim": "ロビーではインターネットを利用できます。",
+      "source": "http://www.ztv.ne.jp/assh/",
+      "quote": "ロビーにてインターネットがご利用できます。",
+      "checkedAt": "2026-10-29"
+    },
+    {
+      "claim": "宿泊プランには素泊まりがあります。",
+      "source": "http://www.ztv.ne.jp/assh/menu.html",
+      "quote": "1泊素泊まり",
+      "checkedAt": "2026-10-29"
+    },
+    {
+      "claim": "周辺には津城跡があります。",
+      "source": "http://www.ztv.ne.jp/assh/kanko.html",
+      "quote": "津城跡",
+      "checkedAt": "2026-10-29"
+    },
+    {
+      "claim": "津城跡までは徒歩5分です。",
+      "source": "http://www.ztv.ne.jp/assh/kanko.html",
+      "quote": "徒歩５分",
+      "checkedAt": "2026-10-29"
+    },
+    {
+      "claim": "周辺には高田本山専修寺があります。",
+      "source": "http://www.ztv.ne.jp/assh/kanko.html",
+      "quote": "高田本山専修寺",
+      "checkedAt": "2026-10-29"
+    },
+    {
+      "claim": "周辺には結城神社があります。",
+      "source": "http://www.ztv.ne.jp/assh/kanko.html",
+      "quote": "結城神社",
+      "checkedAt": "2026-10-29"
+    },
+    {
+      "claim": "周辺には御殿場海岸があります。",
+      "source": "http://www.ztv.ne.jp/assh/kanko.html",
+      "quote": "御殿場海岸",
+      "checkedAt": "2026-10-29"
+    },
+    {
+      "claim": "周辺にはヨットハーバーがあります。",
+      "source": "http://www.ztv.ne.jp/assh/kanko.html",
+      "quote": "ヨットハーバー",
+      "checkedAt": "2026-10-29"
+    }
+  ],
+  "sources": [
+    {
+      "label": "公式サイト",
+      "url": "http://www.ztv.ne.jp/assh/"
+    },
+    {
+      "label": "公式サイト(館内設備・ご利用料金)",
+      "url": "http://www.ztv.ne.jp/assh/menu.html"
+    },
+    {
+      "label": "公式サイト(観光)",
+      "url": "http://www.ztv.ne.jp/assh/kanko.html"
+    },
+    {
+      "label": "Google マップ",
+      "url": "https://maps.google.com/?cid=15924630768919761199"
+    }
+  ],
+  "notes": "automation/v2/write.mjs が 2026-10-29 に claude -p --model sonnet で作成。事実の裏取り: 16/16 件(quote が出どころにあるもの)。裏取りに通らなかった facts は載せていない。"
+}

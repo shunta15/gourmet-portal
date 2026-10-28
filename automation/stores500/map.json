@@ -1698,5 +1698,30 @@
     "articleId": "バーリフューエルハクバ",
     "sheetName": "バー リフューエル ハクバ",
     "mapsUrl": "https://maps.google.com/?cid=12370099488585412535"
+  },
+  {
+    "articleId": "海の幸鯛や",
+    "sheetName": "海の幸 鯛や",
+    "mapsUrl": "https://maps.google.com/?cid=10130182939164161731"
+  },
+  {
+    "articleId": "ウォーレンフォード",
+    "sheetName": "ウォーレンフォード",
+    "mapsUrl": "https://maps.google.com/?cid=12148034719099792785"
+  },
+  {
+    "articleId": "居酒屋dining湊",
+    "sheetName": "居酒屋dining湊",
+    "mapsUrl": "https://maps.google.com/?cid=11049723509890314716"
+  },
+  {
+    "articleId": "美食居酒屋いろは本舗",
+    "sheetName": "いろは本舗",
+    "mapsUrl": "https://maps.google.com/?cid=9918117164374524733"
+  },
+  {
+    "articleId": "からあげ鳥元",
+    "sheetName": "からあげ 鳥元",
+    "mapsUrl": "https://maps.google.com/?cid=17216114828249475086"
   }
 ]

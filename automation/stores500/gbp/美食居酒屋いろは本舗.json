@@ -1,0 +1,14 @@
+{
+  "name": "美食居酒屋 いろは本舗",
+  "address": "群馬県桐生市巴町２丁目１８９３−１０",
+  "lat": 36.4108294,
+  "lng": 139.3326326,
+  "category": "居酒屋",
+  "hours": null,
+  "phone": "0277-44-7525",
+  "website": "https://irohahonpo-kiryu.com/",
+  "priceRange": null,
+  "status": null,
+  "gbpUrl": "https://maps.google.com/?cid=9918117164374524733",
+  "fetchedAt": "2026-10-28T20:31:10.350Z"
+}

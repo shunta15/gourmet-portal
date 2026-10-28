@@ -1,0 +1,195 @@
+{
+  "key": "tri-stay-16",
+  "images": [
+    {
+      "path": "/_portal/vshops/tri-stay-16/g01.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9SlKTBCMjw0e9tYm4HYzYtpfGaIMEO0lsjPCQUet1oi410GE_TFgTO8ApddEMUZJQbrjrcQZG9fGVcGliFs80Zds_VB33jVVwuUh05esHdhpQLQFhzAlEq1GTiPrAzCRLwXbzR7Xq8LdCJs=s1200",
+      "pageUrl": "https://maps.google.com/?cid=17164066446335380427",
+      "what": "瓦屋根と暖簾のある建物の正面",
+      "kind": "exterior",
+      "width": 900,
+      "height": 1200,
+      "source": "Google マップ"
+    },
+    {
+      "path": "/_portal/vshops/tri-stay-16/g02.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9RG8uUJ33KE4kAbOcn5HjGg5KSqwoStoHxDmbn5x7Q1nwlO16jOaby0Zfw7veJL2c_EiekV7BGZaR_rok-xDt9vq6vp0YpXkCvhcXsa5F562V5LhqTbHlruwqFCJCQeL9cmT3UzdfwgRwc=s1200",
+      "pageUrl": "https://maps.google.com/?cid=17164066446335380427",
+      "what": "木製のバルコニーから木々を望む景色",
+      "kind": "view",
+      "width": 675,
+      "height": 1200,
+      "source": "Google マップ"
+    },
+    {
+      "path": "/_portal/vshops/tri-stay-16/g03.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9TP1H9f-w6mvaivdV2LRHerpPpfLJB8V8AJCYkk7E-eiP9BzCSZnaD3L5BcjneKldubrzGZNn8dhAD7bL-An3JbBr1uGbrWumvgAqmFbTQCQz2G6wYybPpLEHTs-TA9Dc8Om-LqvkGm45yg=s1200",
+      "pageUrl": "https://maps.google.com/?cid=17164066446335380427",
+      "what": "窓のある畳の部屋にベッドが並ぶ客室",
+      "kind": "room",
+      "width": 1200,
+      "height": 900,
+      "source": "Google マップ"
+    },
+    {
+      "path": "/_portal/vshops/tri-stay-16/g04.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9Rcq7z_Ld4Bo1PymhvLkVTwQB6TUzWsH0V_AiFpy9qLHIheFB3l6-D5xQLh8qkYJWgoUFY2I9IoWxv0c7MgRONCTI7zwgQj-vXCOtU1W08OEkSFzrvLLhz9rmQKdwafIDhogLSX=s1200",
+      "pageUrl": "https://maps.google.com/?cid=17164066446335380427",
+      "what": "座卓のある畳敷きの客室",
+      "kind": "room",
+      "width": 1200,
+      "height": 800,
+      "source": "Google マップ"
+    },
+    {
+      "path": "/_portal/vshops/tri-stay-16/g05.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-proxy/ALd4DhGn2lLCbvpJyHX9rAG5Y0hpbSvx-hgwPfu05wVKqV0MWgEyX7z1EdZwhh2aflreQtBojVEyk74LhUEseFlsokWaUuj5G9YkGF0hSipjXBYiwSbyTD5D9hF2AGOT0QFQ_AlIT9NWKSMSOQ94LMLo0lHjA57NXDX4juj5w68sc_1E3qHHZVPoSRjU=s1200",
+      "pageUrl": "https://maps.google.com/?cid=17164066446335380427",
+      "what": "そばや小鉢が並ぶ膳",
+      "kind": "meal",
+      "width": 640,
+      "height": 480,
+      "source": "Google マップ"
+    },
+    {
+      "path": "/_portal/vshops/tri-stay-16/g07.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9SLsYFCY8a1PbkQPwggK7yr2sAFzwBn1GF35EfCD0rV_mb-VvrBvnrORNqAwMHc-Z6HYJfoAZ5IgpflM927zp1QUTUgI1v76orM2xPaIZ5AqzpaiJq7xXaZ3d4BLs3QHJJLZHexTw=s1200",
+      "pageUrl": "https://maps.google.com/?cid=17164066446335380427",
+      "what": "木々に囲まれた川のせせらぎの景色",
+      "kind": "view",
+      "width": 1200,
+      "height": 675,
+      "source": "Google マップ"
+    },
+    {
+      "path": "/_portal/vshops/tri-stay-16/g08.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-proxy/ALd4DhF7ZyeAGdB_Mz5xVKD20cQkP0FbMJ4GD1sHfJ9wMG2JUmTt9woNo8RBWVJUZ_fTOR8zGiwU-VaTFQTpPRmCBP98WHKneT0RLTikUIeEfbxUWubN-h6WGkGxvQjsyttAm2uvMD78eYQbyhICwqYVdTimdo21rdCbDmBYx3XxAACtClcrgFK70834QA=s1200",
+      "pageUrl": "https://maps.google.com/?cid=17164066446335380427",
+      "what": "鏡と洗面台が並ぶ洗面スペース",
+      "width": 783,
+      "height": 391,
+      "source": "Google マップ"
+    },
+    {
+      "path": "/_portal/vshops/tri-stay-16/g09.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9RiKnhqEOHy6Wfabg0_rY5YffLaz3gvzWcweYeh5fUo1nx3wKDuxbIcTUo80xKJv7rMBzTaxfF4t-BEmbqUvKshCUxWKeHZ2_Bq5vQlZfdSUxzy5RrtByfiOMAfE5XQjARNUyet=s1200",
+      "pageUrl": "https://maps.google.com/?cid=17164066446335380427",
+      "what": "障子と装飾パネルのある畳の客室の一角",
+      "kind": "room",
+      "width": 1200,
+      "height": 800,
+      "source": "Google マップ"
+    },
+    {
+      "path": "/_portal/vshops/tri-stay-16/g10.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9RnNNaSPKPEVHsAbJCKjaHkd_R1ue5vmCbgBtQlmreuiU459gX_xT6CUWYeFvsdrByoPPolHNqVoEPM3aT0OkajJ2jWpRhNDT0LzBhFccQDarWyjWz32fpW9i2qDZSfxiC1L9pMhw=s1200",
+      "pageUrl": "https://maps.google.com/?cid=17164066446335380427",
+      "what": "あんみつ風の甘味が盛られた器",
+      "kind": "meal",
+      "width": 1177,
+      "height": 839,
+      "source": "Google マップ"
+    },
+    {
+      "path": "/_portal/vshops/tri-stay-16/s02.jpg",
+      "imageUrl": "https://cdn.goope.jp/171502/201209154225rwqx_l.png",
+      "pageUrl": "https://onsen-yado-mizuguchi.com/",
+      "what": "暖簾に店名が書かれた店の正面",
+      "kind": "exterior",
+      "width": 1280,
+      "height": 768,
+      "source": "公式サイト"
+    },
+    {
+      "path": "/_portal/vshops/tri-stay-16/s03.jpg",
+      "imageUrl": "https://cdn.goope.jp/171502/2012091542372hex_l.png",
+      "pageUrl": "https://onsen-yado-mizuguchi.com/",
+      "what": "障子窓と装飾パネルのある館内の通路",
+      "kind": "common",
+      "width": 1280,
+      "height": 768,
+      "source": "公式サイト"
+    },
+    {
+      "path": "/_portal/vshops/tri-stay-16/s04.jpg",
+      "imageUrl": "https://cdn.goope.jp/171502/201209154247qty5_l.png",
+      "pageUrl": "https://onsen-yado-mizuguchi.com/",
+      "what": "椅子とテーブルが並ぶ窓辺の談話スペース",
+      "kind": "common",
+      "width": 1280,
+      "height": 768,
+      "source": "公式サイト"
+    },
+    {
+      "path": "/_portal/vshops/tri-stay-16/s05.jpg",
+      "imageUrl": "https://cdn.goope.jp/171502/201210171036u5yg_l.png",
+      "pageUrl": "https://onsen-yado-mizuguchi.com/",
+      "what": "畳敷きの窓辺に設けられた腰掛けスペース",
+      "kind": "room",
+      "width": 1280,
+      "height": 768,
+      "source": "公式サイト"
+    },
+    {
+      "path": "/_portal/vshops/tri-stay-16/s06.jpg",
+      "imageUrl": "https://cdn.goope.jp/171502/20120915425562aq_l.png",
+      "pageUrl": "https://onsen-yado-mizuguchi.com/",
+      "what": "木製の階段がある館内の廊下",
+      "kind": "common",
+      "width": 1280,
+      "height": 768,
+      "source": "公式サイト"
+    },
+    {
+      "path": "/_portal/vshops/tri-stay-16/s07.jpg",
+      "imageUrl": "https://cdn.goope.jp/171502/201209154306tznf_l.png",
+      "pageUrl": "https://onsen-yado-mizuguchi.com/",
+      "what": "座卓と椅子が置かれた窓辺の畳の客室",
+      "kind": "room",
+      "width": 1280,
+      "height": 768,
+      "source": "公式サイト"
+    },
+    {
+      "path": "/_portal/vshops/tri-stay-16/s08.jpg",
+      "imageUrl": "https://cdn.goope.jp/171502/2012091543147sec_l.png",
+      "pageUrl": "https://onsen-yado-mizuguchi.com/",
+      "what": "座卓と座布団のある畳の客室",
+      "kind": "room",
+      "width": 1280,
+      "height": 768,
+      "source": "公式サイト"
+    },
+    {
+      "path": "/_portal/vshops/tri-stay-16/s09.jpg",
+      "imageUrl": "https://cdn.goope.jp/171502/201209154326qhcx_l.png",
+      "pageUrl": "https://onsen-yado-mizuguchi.com/",
+      "what": "障子越しに緑を望む窓",
+      "kind": "view",
+      "width": 1280,
+      "height": 768,
+      "source": "公式サイト"
+    },
+    {
+      "path": "/_portal/vshops/tri-stay-16/s10.jpg",
+      "imageUrl": "https://cdn.goope.jp/171502/210210131042re5n_l.png",
+      "pageUrl": "https://onsen-yado-mizuguchi.com/",
+      "what": "赤い座布団を敷いた屋外の縁側の席",
+      "kind": "common",
+      "width": 1280,
+      "height": 768,
+      "source": "公式サイト"
+    },
+    {
+      "path": "/_portal/vshops/tri-stay-16/s11.jpg",
+      "imageUrl": "https://cdn.goope.jp/171502/2012091543467dxg_l.png",
+      "pageUrl": "https://onsen-yado-mizuguchi.com/",
+      "what": "赤い橋がかかる川の景色",
+      "kind": "view",
+      "width": 1280,
+      "height": 768,
+      "source": "公式サイト"
+    }
+  ],
+  "note": "automation/v2/write.mjs が 2026-10-28T20:38:38.221Z に取得。店の実写だけ(AI 画像・汎用画像・地図・ロゴ・顔が大きい画像は除外)。"
+}

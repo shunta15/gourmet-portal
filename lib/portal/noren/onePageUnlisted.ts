@@ -108,6 +108,11 @@ export const ONE_PAGE_UNLISTED_SHOP_OF_FEATURE: Readonly<Record<string, string>>
   "アーニーハウス": "r777", // アーニーハウス
   "茶房金木犀": "r778", // 茶房 金木犀
   "バーリフューエルハクバ": "r779", // バー リフューエル ハクバ
+  "海の幸鯛や": "r780", // 海の幸 鯛や
+  "ウォーレンフォード": "r781", // ウォーレンフォード
+  "居酒屋dining湊": "r782", // 居酒屋dining湊
+  "美食居酒屋いろは本舗": "r783", // 美食居酒屋 いろは本舗
+  "からあげ鳥元": "r784", // からあげ鳥元
 };
 
 const NFC = (s: string) => s.normalize("NFC");

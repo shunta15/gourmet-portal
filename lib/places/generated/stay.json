@@ -4009,6 +4009,392 @@
           "バス・トイレ付き客室(バリアフリー対応)"
         ]
       }
+    },
+    {
+      "id": "st0022",
+      "vertical": "stay",
+      "category": "ryokan",
+      "name": "茶処・温泉宿水ぐち",
+      "pref": "shizuoka",
+      "cityName": "伊豆市",
+      "address": "静岡県伊豆市修善寺3463-17",
+      "lat": 34.9698202,
+      "lng": 138.9267821,
+      "phone": "0558-72-2029",
+      "url": "https://onsen-yado-mizuguchi.com/",
+      "website": "https://onsen-yado-mizuguchi.com/",
+      "mapUrl": "https://maps.google.com/?cid=17164066446335380427",
+      "image": "/_portal/vshops/tri-stay-16/g01.jpg",
+      "images": [
+        "/_portal/vshops/tri-stay-16/g01.jpg",
+        "/_portal/vshops/tri-stay-16/g02.jpg",
+        "/_portal/vshops/tri-stay-16/g03.jpg",
+        "/_portal/vshops/tri-stay-16/g04.jpg",
+        "/_portal/vshops/tri-stay-16/g05.jpg",
+        "/_portal/vshops/tri-stay-16/g07.jpg",
+        "/_portal/vshops/tri-stay-16/g08.jpg",
+        "/_portal/vshops/tri-stay-16/g09.jpg",
+        "/_portal/vshops/tri-stay-16/g10.jpg",
+        "/_portal/vshops/tri-stay-16/s02.jpg",
+        "/_portal/vshops/tri-stay-16/s03.jpg",
+        "/_portal/vshops/tri-stay-16/s04.jpg",
+        "/_portal/vshops/tri-stay-16/s05.jpg",
+        "/_portal/vshops/tri-stay-16/s06.jpg",
+        "/_portal/vshops/tri-stay-16/s07.jpg",
+        "/_portal/vshops/tri-stay-16/s08.jpg",
+        "/_portal/vshops/tri-stay-16/s09.jpg",
+        "/_portal/vshops/tri-stay-16/s10.jpg",
+        "/_portal/vshops/tri-stay-16/s11.jpg"
+      ],
+      "photos": [
+        {
+          "path": "/_portal/vshops/tri-stay-16/g01.jpg",
+          "what": "瓦屋根と暖簾のある建物の正面",
+          "kind": "exterior",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-stay-16/g02.jpg",
+          "what": "木製のバルコニーから木々を望む景色",
+          "kind": "view",
+          "width": 675,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-stay-16/g03.jpg",
+          "what": "窓のある畳の部屋にベッドが並ぶ客室",
+          "kind": "room",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-stay-16/g04.jpg",
+          "what": "座卓のある畳敷きの客室",
+          "kind": "room",
+          "width": 1200,
+          "height": 800
+        },
+        {
+          "path": "/_portal/vshops/tri-stay-16/g05.jpg",
+          "what": "そばや小鉢が並ぶ膳",
+          "kind": "meal",
+          "width": 640,
+          "height": 480
+        },
+        {
+          "path": "/_portal/vshops/tri-stay-16/g07.jpg",
+          "what": "木々に囲まれた川のせせらぎの景色",
+          "kind": "view",
+          "width": 1200,
+          "height": 675
+        },
+        {
+          "path": "/_portal/vshops/tri-stay-16/g08.jpg",
+          "what": "鏡と洗面台が並ぶ洗面スペース",
+          "width": 783,
+          "height": 391
+        },
+        {
+          "path": "/_portal/vshops/tri-stay-16/g09.jpg",
+          "what": "障子と装飾パネルのある畳の客室の一角",
+          "kind": "room",
+          "width": 1200,
+          "height": 800
+        },
+        {
+          "path": "/_portal/vshops/tri-stay-16/g10.jpg",
+          "what": "あんみつ風の甘味が盛られた器",
+          "kind": "meal",
+          "width": 1177,
+          "height": 839
+        },
+        {
+          "path": "/_portal/vshops/tri-stay-16/s02.jpg",
+          "what": "暖簾に店名が書かれた店の正面",
+          "kind": "exterior",
+          "width": 1280,
+          "height": 768
+        },
+        {
+          "path": "/_portal/vshops/tri-stay-16/s03.jpg",
+          "what": "障子窓と装飾パネルのある館内の通路",
+          "kind": "common",
+          "width": 1280,
+          "height": 768
+        },
+        {
+          "path": "/_portal/vshops/tri-stay-16/s04.jpg",
+          "what": "椅子とテーブルが並ぶ窓辺の談話スペース",
+          "kind": "common",
+          "width": 1280,
+          "height": 768
+        },
+        {
+          "path": "/_portal/vshops/tri-stay-16/s05.jpg",
+          "what": "畳敷きの窓辺に設けられた腰掛けスペース",
+          "kind": "room",
+          "width": 1280,
+          "height": 768
+        },
+        {
+          "path": "/_portal/vshops/tri-stay-16/s06.jpg",
+          "what": "木製の階段がある館内の廊下",
+          "kind": "common",
+          "width": 1280,
+          "height": 768
+        },
+        {
+          "path": "/_portal/vshops/tri-stay-16/s07.jpg",
+          "what": "座卓と椅子が置かれた窓辺の畳の客室",
+          "kind": "room",
+          "width": 1280,
+          "height": 768
+        },
+        {
+          "path": "/_portal/vshops/tri-stay-16/s08.jpg",
+          "what": "座卓と座布団のある畳の客室",
+          "kind": "room",
+          "width": 1280,
+          "height": 768
+        },
+        {
+          "path": "/_portal/vshops/tri-stay-16/s09.jpg",
+          "what": "障子越しに緑を望む窓",
+          "kind": "view",
+          "width": 1280,
+          "height": 768
+        },
+        {
+          "path": "/_portal/vshops/tri-stay-16/s10.jpg",
+          "what": "赤い座布団を敷いた屋外の縁側の席",
+          "kind": "common",
+          "width": 1280,
+          "height": 768
+        },
+        {
+          "path": "/_portal/vshops/tri-stay-16/s11.jpg",
+          "what": "赤い橋がかかる川の景色",
+          "kind": "view",
+          "width": 1280,
+          "height": 768
+        }
+      ],
+      "tags": [
+        "温泉"
+      ],
+      "article": {
+        "headline": "静岡県伊豆市修善寺、竹林の小径から徒歩1分にある温泉宿。桂川のほとりに立ち、客室はわずか6室で源泉掛け流しの湯がある。",
+        "lede": "伊豆市にある「茶処・温泉宿水ぐち」です。桂川のほとりに立ち、竹林の小径から徒歩1分の場所にあります。客室はわずか6室で、貸切としても利用できます。",
+        "sections": [
+          {
+            "heading": "場所とアクセス",
+            "body": "住所は静岡県伊豆市修善寺3463-17、最寄り駅は修善寺温泉駅です。桂川のほとりに立ち、「竹林の小径」から徒歩1分の場所にあります。道順は、修禅寺の目の前の虎渓橋を渡って進んだ先です。駐車場があります。"
+          },
+          {
+            "heading": "客室とお風呂",
+            "body": "客室はわずか6室で、貸切でも利用できます。一棟貸しとしても使えます。源泉掛け流しの温泉があります。バルコニー付き客室は、2026年2月4日から、桂川や季節の移ろいを感じられるバルコニーにリニューアルされます。"
+          },
+          {
+            "heading": "朝食とお茶処 竹の里 水ぐち",
+            "body": "朝食は日によってメニューが変わります。桂橋のたもとには、お茶処「竹の里 水ぐち」があり、抹茶や和菓子、あんみつやおしるこなどを提供しています。甘味には、あんみつ、みつ豆、ところてん、おしるこ白玉入り、季節の練り切りなどがあり、修善寺特産の黒米餅を使ったあんこ餅、きなこ餅、おしるこもあります。"
+          }
+        ],
+        "menus": [
+          {
+            "name": "あんみつ"
+          },
+          {
+            "name": "みつ豆"
+          },
+          {
+            "name": "ところてん"
+          },
+          {
+            "name": "おしるこ白玉入り"
+          },
+          {
+            "name": "季節の練り切り"
+          },
+          {
+            "name": "あんこ餅"
+          },
+          {
+            "name": "きなこ餅"
+          },
+          {
+            "name": "おしるこ 黒米餅入り"
+          }
+        ],
+        "sources": [
+          {
+            "label": "公式サイト",
+            "url": "https://onsen-yado-mizuguchi.com/"
+          },
+          {
+            "label": "公式サイト(お知らせ)",
+            "url": "https://onsen-yado-mizuguchi.com/info"
+          },
+          {
+            "label": "公式サイト(お知らせ記事)",
+            "url": "https://onsen-yado-mizuguchi.com/info/6106879"
+          },
+          {
+            "label": "公式サイト(カフェメニュー)",
+            "url": "https://onsen-yado-mizuguchi.com/menu"
+          },
+          {
+            "label": "Google マップ",
+            "url": "https://maps.google.com/?cid=17164066446335380427"
+          }
+        ],
+        "checkedAt": "2026-10-29"
+      },
+      "attributes": {
+        "roomTypes": [
+          "バルコニー付き客室"
+        ]
+      }
+    },
+    {
+      "id": "st0023",
+      "vertical": "stay",
+      "category": "ryokan",
+      "name": "ビジネス旅館 若草",
+      "pref": "mie",
+      "cityName": "津市",
+      "address": "三重県津市中央8-24",
+      "lat": 34.7212402,
+      "lng": 136.5099407,
+      "phone": "059-226-2354",
+      "url": "http://www.ztv.ne.jp/assh/",
+      "website": "http://www.ztv.ne.jp/assh/",
+      "mapUrl": "https://maps.google.com/?cid=15924630768919761199",
+      "image": "/_portal/vshops/tri-stay-20/g01.jpg",
+      "images": [
+        "/_portal/vshops/tri-stay-20/g01.jpg",
+        "/_portal/vshops/tri-stay-20/g02.jpg",
+        "/_portal/vshops/tri-stay-20/g03.jpg",
+        "/_portal/vshops/tri-stay-20/g04.jpg",
+        "/_portal/vshops/tri-stay-20/g05.jpg",
+        "/_portal/vshops/tri-stay-20/g06.jpg",
+        "/_portal/vshops/tri-stay-20/g07.jpg",
+        "/_portal/vshops/tri-stay-20/g08.jpg",
+        "/_portal/vshops/tri-stay-20/g09.jpg",
+        "/_portal/vshops/tri-stay-20/g10.jpg"
+      ],
+      "photos": [
+        {
+          "path": "/_portal/vshops/tri-stay-20/g01.jpg",
+          "what": "植木のある建物の正面",
+          "kind": "exterior",
+          "width": 783,
+          "height": 391
+        },
+        {
+          "path": "/_portal/vshops/tri-stay-20/g02.jpg",
+          "what": "布団が敷かれた障子のある和室",
+          "kind": "room",
+          "width": 1200,
+          "height": 675
+        },
+        {
+          "path": "/_portal/vshops/tri-stay-20/g03.jpg",
+          "what": "タイル張りの浴室",
+          "kind": "bath",
+          "width": 1200,
+          "height": 675
+        },
+        {
+          "path": "/_portal/vshops/tri-stay-20/g04.jpg",
+          "what": "車2台分の駐車場と建物の外観",
+          "kind": "exterior",
+          "width": 640,
+          "height": 480
+        },
+        {
+          "path": "/_portal/vshops/tri-stay-20/g05.jpg",
+          "what": "テレビと掛け軸のある和室",
+          "kind": "room",
+          "width": 640,
+          "height": 480
+        },
+        {
+          "path": "/_portal/vshops/tri-stay-20/g06.jpg",
+          "what": "トーストや果物が並ぶ朝食の皿",
+          "kind": "meal",
+          "width": 739,
+          "height": 415
+        },
+        {
+          "path": "/_portal/vshops/tri-stay-20/g07.jpg",
+          "what": "焼き魚や刺身、揚げ物が並ぶ夕食の膳",
+          "kind": "meal",
+          "width": 739,
+          "height": 415
+        },
+        {
+          "path": "/_portal/vshops/tri-stay-20/g08.jpg",
+          "what": "畳敷きの和室",
+          "kind": "room",
+          "width": 480,
+          "height": 640
+        },
+        {
+          "path": "/_portal/vshops/tri-stay-20/g09.jpg",
+          "what": "障子窓とテレビのある和室",
+          "kind": "room",
+          "width": 640,
+          "height": 480
+        },
+        {
+          "path": "/_portal/vshops/tri-stay-20/g10.jpg",
+          "what": "座卓とテレビのある和室",
+          "kind": "room",
+          "width": 640,
+          "height": 480
+        }
+      ],
+      "tags": [
+        "素泊まり"
+      ],
+      "article": {
+        "headline": "三重県津市中央にあるビジネス旅館。JR・近鉄の津駅や伊勢自動車道のインターチェンジに近く、浴場は24時間利用できる。",
+        "lede": "津市にある「ビジネス旅館若草」です。津市の中央に位置し、JR・近鉄の津駅や伊勢自動車道のインターチェンジから近い場所にあります。ロビーではインターネットを利用できます。",
+        "sections": [
+          {
+            "heading": "場所と予約",
+            "body": "鉄道はJR・近鉄の津駅が最寄りで、車は伊勢自動車道のインターチェンジから近い場所にあります。駐車場は10台分あり、4tトラックまで駐車できます。チェックインは16:00、チェックアウトは10:00です。予約は公式サイトの空室検索やプラン一覧のページから行えます。"
+          },
+          {
+            "heading": "客室と浴場",
+            "body": "全室にテレビ・エアコン・電話・羽布団・目覚まし時計が備わります。浴場は24時間利用でき、浴衣・歯ブラシ・ひげ剃りのアメニティが用意されています。ロビーではインターネットを利用できます。宿泊プランには素泊まりもあります。"
+          },
+          {
+            "heading": "周辺",
+            "body": "徒歩圏には津城跡があります。車では高田本山専修寺や結城神社、御殿場海岸、ヨットハーバーなどに行くことができます。"
+          }
+        ],
+        "sources": [
+          {
+            "label": "公式サイト",
+            "url": "http://www.ztv.ne.jp/assh/"
+          },
+          {
+            "label": "公式サイト(館内設備・ご利用料金)",
+            "url": "http://www.ztv.ne.jp/assh/menu.html"
+          },
+          {
+            "label": "公式サイト(観光)",
+            "url": "http://www.ztv.ne.jp/assh/kanko.html"
+          },
+          {
+            "label": "Google マップ",
+            "url": "https://maps.google.com/?cid=15924630768919761199"
+          }
+        ],
+        "checkedAt": "2026-10-29"
+      }
     }
   ]
 }

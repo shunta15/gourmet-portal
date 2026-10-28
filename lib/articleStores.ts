@@ -15930,6 +15930,261 @@ export const ARTICLE_STORES: Restaurant[] = [
       "白馬村"
     ],
     "featureId": "バーリフューエルハクバ"
+  },
+  {
+    "id": "r780",
+    "name": "海の幸 鯛や",
+    "cuisine": "居酒屋",
+    "area": "愛媛県・松山市",
+    "region": "ehime",
+    "shape": "square",
+    "image": "/restaurants/teleapo-海の幸鯛や/hero.jpg",
+    "heroImages": [
+      "/restaurants/teleapo-海の幸鯛や/hero.jpg",
+      "/restaurants/teleapo-海の幸鯛や/point1.jpg",
+      "/restaurants/teleapo-海の幸鯛や/point2.jpg",
+      "/restaurants/teleapo-海の幸鯛や/point4.jpg",
+      "/restaurants/teleapo-海の幸鯛や/point5.jpg"
+    ],
+    "gallery": [
+      "/restaurants/teleapo-海の幸鯛や/hero.jpg",
+      "/restaurants/teleapo-海の幸鯛や/point1.jpg",
+      "/restaurants/teleapo-海の幸鯛や/point2.jpg",
+      "/restaurants/teleapo-海の幸鯛や/point4.jpg",
+      "/restaurants/teleapo-海の幸鯛や/point5.jpg"
+    ],
+    "desc": "愛媛県松山市の居酒屋。",
+    "address": "愛媛県松山市二番町2丁目7-5",
+    "hours": "—（訪問前に公式確認）",
+    "closed": "—（訪問前に公式確認）",
+    "seats": "—（訪問前に公式確認）",
+    "nearest": "—",
+    "phone": "089-934-0770",
+    "source": {
+      "label": "Google ビジネスプロフィール",
+      "url": "https://maps.google.com/?cid=10130182939164161731"
+    },
+    "body": [
+      "海の幸 鯛やは、愛媛県松山市にあるお店です。業態は「居酒屋」、所在地は愛媛県松山市二番町2丁目7-5です。マチノワ編集部の特集記事では、「土鍋の炊き込みご飯」・「店内で炙る鰹のタタキ」などを取り上げています。",
+      "営業時間と定休日は取得できていないため、訪問前に公式の情報でご確認ください。営業時間や価格は変わることがあるため、訪問前に公式サイトやSNS、お電話でご確認ください。"
+    ],
+    "highlights": [
+      "土鍋の炊き込みご飯",
+      "店内で炙る鰹のタタキ",
+      "ほごと季節の野菜の天ぷら",
+      "静かな小路の店内、予約制のコース",
+      "所在地と営業時間"
+    ],
+    "tags": [
+      "居酒屋",
+      "シーフード・海鮮料理店",
+      "松山市"
+    ],
+    "featureId": "海の幸鯛や"
+  },
+  {
+    "id": "r781",
+    "name": "ウォーレンフォード",
+    "cuisine": "レストラン",
+    "area": "岐阜県・土岐市",
+    "region": "gifu",
+    "shape": "square",
+    "image": "/restaurants/teleapo-ウォーレンフォード/hero.jpg",
+    "heroImages": [
+      "/restaurants/teleapo-ウォーレンフォード/hero.jpg",
+      "/restaurants/teleapo-ウォーレンフォード/point1.jpg",
+      "/restaurants/teleapo-ウォーレンフォード/point3.jpg",
+      "/restaurants/teleapo-ウォーレンフォード/point4.jpg"
+    ],
+    "gallery": [
+      "/restaurants/teleapo-ウォーレンフォード/hero.jpg",
+      "/restaurants/teleapo-ウォーレンフォード/point1.jpg",
+      "/restaurants/teleapo-ウォーレンフォード/point3.jpg",
+      "/restaurants/teleapo-ウォーレンフォード/point4.jpg"
+    ],
+    "desc": "ウォーレンフォードは、岐阜県土岐市泉寺田町3丁目にあるレストランだ。最寄り駅はJR中央線の土岐市駅で、営業はモーニング・ランチとディナーの二部制となっている。",
+    "address": "岐阜県土岐市泉寺田町3丁目51",
+    "hours": "—（訪問前に公式確認）",
+    "closed": "—（訪問前に公式確認）",
+    "seats": "—（訪問前に公式確認）",
+    "nearest": "JR中央線 土岐市駅",
+    "phone": "0572-55-2968",
+    "source": {
+      "label": "Google ビジネスプロフィール",
+      "url": "https://maps.google.com/?cid=12148034719099792785"
+    },
+    "body": [
+      "ウォーレンフォードは、岐阜県土岐市にあるお店です。業態は「レストラン」、所在地は岐阜県土岐市泉寺田町3丁目51、最寄りはJR中央線 土岐市駅です。マチノワ編集部の特集記事では、「モーニングから宴会まで対応するメニュー」・「宴会・二次会・貸しきりパーティーにも対応」などを取り上げています。",
+      "営業時間と定休日は取得できていないため、訪問前に公式の情報でご確認ください。営業時間や価格は変わることがあるため、訪問前に公式サイトやSNS、お電話でご確認ください。"
+    ],
+    "highlights": [
+      "モーニングから宴会まで対応するメニュー",
+      "宴会・二次会・貸しきりパーティーにも対応",
+      "モーニング・ランチとディナーの二部営業",
+      "JR土岐市駅のそば"
+    ],
+    "tags": [
+      "レストラン",
+      "土岐市",
+      "土岐市駅"
+    ],
+    "featureId": "ウォーレンフォード"
+  },
+  {
+    "id": "r782",
+    "name": "居酒屋dining湊",
+    "cuisine": "居酒屋",
+    "area": "埼玉県・新座市",
+    "region": "saitama",
+    "shape": "square",
+    "image": "/restaurants/teleapo-居酒屋dining湊/hero.jpg",
+    "heroImages": [
+      "/restaurants/teleapo-居酒屋dining湊/hero.jpg",
+      "/restaurants/teleapo-居酒屋dining湊/point1.jpg",
+      "/restaurants/teleapo-居酒屋dining湊/point2.jpg",
+      "/restaurants/teleapo-居酒屋dining湊/point4.jpg",
+      "/restaurants/teleapo-居酒屋dining湊/point5.jpg"
+    ],
+    "gallery": [
+      "/restaurants/teleapo-居酒屋dining湊/hero.jpg",
+      "/restaurants/teleapo-居酒屋dining湊/point1.jpg",
+      "/restaurants/teleapo-居酒屋dining湊/point2.jpg",
+      "/restaurants/teleapo-居酒屋dining湊/point4.jpg",
+      "/restaurants/teleapo-居酒屋dining湊/point5.jpg"
+    ],
+    "desc": "埼玉県新座市の居酒屋。最寄りは志木駅から徒歩5分。",
+    "address": "埼玉県新座市東北2丁目24-20",
+    "hours": "—（訪問前に公式確認）",
+    "closed": "—（訪問前に公式確認）",
+    "seats": "—（訪問前に公式確認）",
+    "nearest": "志木駅から徒歩5分",
+    "phone": "048-424-7755",
+    "source": {
+      "label": "Google ビジネスプロフィール",
+      "url": "https://maps.google.com/?cid=11049723509890314716"
+    },
+    "body": [
+      "居酒屋dining湊は、埼玉県新座市にあるお店です。業態は「居酒屋」、所在地は埼玉県新座市東北2丁目24-20、最寄りは志木駅から徒歩5分です。マチノワ編集部の特集記事では、「看板のラクレットチーズセット」・「元イタリアンシェフの本格パスタ」などを取り上げています。",
+      "営業時間と定休日は取得できていないため、訪問前に公式の情報でご確認ください。営業時間や価格は変わることがあるため、訪問前に公式サイトやSNS、お電話でご確認ください。"
+    ],
+    "highlights": [
+      "看板のラクレットチーズセット",
+      "元イタリアンシェフの本格パスタ",
+      "自家製薫製と厚切り牛タン",
+      "扉付き個室やテラスなど多彩な席",
+      "志木駅徒歩5分、平日16時から営業"
+    ],
+    "tags": [
+      "居酒屋",
+      "新座市",
+      "志木駅",
+      "個室"
+    ],
+    "featureId": "居酒屋dining湊"
+  },
+  {
+    "id": "r783",
+    "name": "美食居酒屋 いろは本舗",
+    "cuisine": "居酒屋",
+    "area": "群馬県・桐生市",
+    "region": "gunma",
+    "shape": "square",
+    "image": "/restaurants/teleapo-美食居酒屋いろは本舗/hero.jpg",
+    "heroImages": [
+      "/restaurants/teleapo-美食居酒屋いろは本舗/hero.jpg",
+      "/restaurants/teleapo-美食居酒屋いろは本舗/point1.jpg",
+      "/restaurants/teleapo-美食居酒屋いろは本舗/point2.jpg",
+      "/restaurants/teleapo-美食居酒屋いろは本舗/point3.jpg",
+      "/restaurants/teleapo-美食居酒屋いろは本舗/point4.jpg"
+    ],
+    "gallery": [
+      "/restaurants/teleapo-美食居酒屋いろは本舗/hero.jpg",
+      "/restaurants/teleapo-美食居酒屋いろは本舗/point1.jpg",
+      "/restaurants/teleapo-美食居酒屋いろは本舗/point2.jpg",
+      "/restaurants/teleapo-美食居酒屋いろは本舗/point3.jpg",
+      "/restaurants/teleapo-美食居酒屋いろは本舗/point4.jpg",
+      "/restaurants/teleapo-美食居酒屋いろは本舗/point5.jpg"
+    ],
+    "desc": "いろは本舗は年齢を問わず一人から団体まで来店できる一軒として営業している。毎朝桐生市場で仕入れる魚介に加え、黒毛和牛A5ランクを使った牛串や、自家製の手打ち麺を使った肉汁なんばんうどんなど、素材と仕込みに手間をかけた料理を提供している。",
+    "address": "群馬県桐生市巴町2丁目1893-10",
+    "hours": "—（訪問前に公式確認）",
+    "closed": "—（訪問前に公式確認）",
+    "seats": "65席(カウンター席・ボックス席)",
+    "nearest": "JR桐生駅南口から徒歩約1分",
+    "phone": "0277-44-7525",
+    "source": {
+      "label": "Google ビジネスプロフィール",
+      "url": "https://maps.google.com/?cid=9918117164374524733"
+    },
+    "body": [
+      "美食居酒屋 いろは本舗は、群馬県桐生市にあるお店です。業態は「居酒屋」、所在地は群馬県桐生市巴町2丁目1893-10、最寄りはJR桐生駅南口から徒歩約1分です。マチノワ編集部の特集記事では、「黒毛和牛A5ランクの牛串と自家製手打ち麺のうどん」・「一人から団体まで対応する宴会プラン」などを取り上げています。",
+      "営業時間と定休日は取得できていないため、訪問前に公式の情報でご確認ください。席は65席(カウンター席・ボックス席)。営業時間や価格は変わることがあるため、訪問前に公式サイトやSNS、お電話でご確認ください。"
+    ],
+    "highlights": [
+      "黒毛和牛A5ランクの牛串と自家製手打ち麺のうどん",
+      "一人から団体まで対応する宴会プラン",
+      "厳選した日本酒と豊富なお品書き",
+      "古民家のような空間と65席の店内",
+      "JR桐生駅南口から徒歩1分、駐車場10台"
+    ],
+    "tags": [
+      "居酒屋",
+      "桐生市",
+      "桐生駅"
+    ],
+    "featureId": "美食居酒屋いろは本舗"
+  },
+  {
+    "id": "r784",
+    "name": "からあげ鳥元",
+    "cuisine": "鶏料理店",
+    "area": "埼玉県・春日部市",
+    "region": "saitama",
+    "shape": "square",
+    "image": "/restaurants/teleapo-からあげ鳥元/hero.jpg",
+    "heroImages": [
+      "/restaurants/teleapo-からあげ鳥元/hero.jpg",
+      "/restaurants/teleapo-からあげ鳥元/point1.jpg",
+      "/restaurants/teleapo-からあげ鳥元/point2.jpg",
+      "/restaurants/teleapo-からあげ鳥元/point3.jpg",
+      "/restaurants/teleapo-からあげ鳥元/point4.jpg"
+    ],
+    "gallery": [
+      "/restaurants/teleapo-からあげ鳥元/hero.jpg",
+      "/restaurants/teleapo-からあげ鳥元/point1.jpg",
+      "/restaurants/teleapo-からあげ鳥元/point2.jpg",
+      "/restaurants/teleapo-からあげ鳥元/point3.jpg",
+      "/restaurants/teleapo-からあげ鳥元/point4.jpg",
+      "/restaurants/teleapo-からあげ鳥元/point5.jpg"
+    ],
+    "desc": "埼玉県春日部市の鶏料理店。最寄りは藤の牛島駅から徒歩1分(49m)。",
+    "address": "埼玉県春日部市牛島1583-2",
+    "hours": "—（訪問前に公式確認）",
+    "closed": "—（訪問前に公式確認）",
+    "seats": "—（訪問前に公式確認）",
+    "nearest": "藤の牛島駅から徒歩1分(49m)",
+    "phone": "048-797-8819",
+    "source": {
+      "label": "Google ビジネスプロフィール",
+      "url": "https://maps.google.com/?cid=17216114828249475086"
+    },
+    "body": [
+      "からあげ鳥元は、埼玉県春日部市にあるお店です。業態は「鶏料理店」、所在地は埼玉県春日部市牛島1583-2、最寄りは藤の牛島駅から徒歩1分(49m)です。マチノワ編集部の特集記事では、「秘伝のタレを使ったからあげ」・「注文を受けてから揚げるできたてのからあげ」などを取り上げています。",
+      "営業時間と定休日は取得できていないため、訪問前に公式の情報でご確認ください。営業時間や価格は変わることがあるため、訪問前に公式サイトやSNS、お電話でご確認ください。"
+    ],
+    "highlights": [
+      "秘伝のタレを使ったからあげ",
+      "注文を受けてから揚げるできたてのからあげ",
+      "からあげの種類と定食・丼・鍋までそろうメニュー",
+      "からあげの店頭販売と持ち帰り",
+      "藤の牛島駅から徒歩1分の立地と営業時間"
+    ],
+    "tags": [
+      "鶏料理店",
+      "春日部市",
+      "牛島駅"
+    ],
+    "featureId": "からあげ鳥元"
   }
 ];
 
@@ -16270,7 +16525,12 @@ export const ARTICLE_STORE_FEATURE_IDS: Record<string, string> = {
   "r776": "カフェルンビータCafeRumbita",
   "r777": "アーニーハウス",
   "r778": "茶房金木犀",
-  "r779": "バーリフューエルハクバ"
+  "r779": "バーリフューエルハクバ",
+  "r780": "海の幸鯛や",
+  "r781": "ウォーレンフォード",
+  "r782": "居酒屋dining湊",
+  "r783": "美食居酒屋いろは本舗",
+  "r784": "からあげ鳥元"
 };
 
 /** 特集記事ID → 店舗ID */
@@ -16610,5 +16870,10 @@ export const ARTICLE_STORE_ID_BY_FEATURE: Record<string, string> = {
   "カフェルンビータCafeRumbita": "r776",
   "アーニーハウス": "r777",
   "茶房金木犀": "r778",
-  "バーリフューエルハクバ": "r779"
+  "バーリフューエルハクバ": "r779",
+  "海の幸鯛や": "r780",
+  "ウォーレンフォード": "r781",
+  "居酒屋dining湊": "r782",
+  "美食居酒屋いろは本舗": "r783",
+  "からあげ鳥元": "r784"
 };

@@ -12660,6 +12660,483 @@
         ],
         "checkedAt": "2026-10-29"
       }
+    },
+    {
+      "id": "li0082",
+      "vertical": "life",
+      "category": "shrine-temple",
+      "name": "大瀧寺",
+      "pref": "tokushima",
+      "cityName": "美馬市",
+      "address": "徳島県美馬市脇町西大谷674",
+      "lat": 34.1219473,
+      "lng": 134.127456,
+      "phone": "0883-53-7910",
+      "url": "https://www.otakiji-nishiterugu.com/",
+      "website": "https://www.otakiji-nishiterugu.com/",
+      "mapUrl": "https://maps.google.com/?cid=14910780248554761253",
+      "image": "/_portal/vshops/tri-life-19/g01.jpg",
+      "images": [
+        "/_portal/vshops/tri-life-19/g01.jpg",
+        "/_portal/vshops/tri-life-19/g02.jpg",
+        "/_portal/vshops/tri-life-19/g03.jpg",
+        "/_portal/vshops/tri-life-19/g04.jpg",
+        "/_portal/vshops/tri-life-19/g05.jpg",
+        "/_portal/vshops/tri-life-19/g06.jpg",
+        "/_portal/vshops/tri-life-19/g07.jpg",
+        "/_portal/vshops/tri-life-19/g08.jpg",
+        "/_portal/vshops/tri-life-19/g09.jpg",
+        "/_portal/vshops/tri-life-19/g10.jpg",
+        "/_portal/vshops/tri-life-19/s01.jpg"
+      ],
+      "photos": [
+        {
+          "path": "/_portal/vshops/tri-life-19/g01.jpg",
+          "what": "本堂正面の縁側、案内看板が見える木造建築",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 904
+        },
+        {
+          "path": "/_portal/vshops/tri-life-19/g02.jpg",
+          "what": "「大瀧寺」と刻まれた石碑と奥に見える社殿",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-life-19/g03.jpg",
+          "what": "朱色の鳥居と石段の参道",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-life-19/g04.jpg",
+          "what": "山の中に立つ小さな朱色の鳥居",
+          "kind": "exterior",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-life-19/g05.jpg",
+          "what": "松の木に囲まれた石段と奥の赤い屋根の社殿",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 800
+        },
+        {
+          "path": "/_portal/vshops/tri-life-19/g06.jpg",
+          "what": "赤い屋根が目を引く大きな木造の本堂",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 800
+        },
+        {
+          "path": "/_portal/vshops/tri-life-19/g07.jpg",
+          "what": "鳥居と石段の先に本堂が見える参道",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-life-19/g08.jpg",
+          "what": "本堂の軒先に赤い飾りが下がる様子",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 800
+        },
+        {
+          "path": "/_portal/vshops/tri-life-19/g09.jpg",
+          "what": "石段の先に立つ本堂の正面",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-life-19/g10.jpg",
+          "what": "本堂の扉に下がる黄色い札、案内看板が並ぶ景色",
+          "kind": "common",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-life-19/s01.jpg",
+          "what": "青空を背景にした赤い屋根の本堂",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 675
+        }
+      ],
+      "tags": [],
+      "article": {
+        "headline": "徳島県美馬市脇町西大谷にある真言宗御室派準別格本山の寺院。本尊は西照大権現で、四国別格二十霊場第20番、四国霊場総奥之院です。",
+        "lede": "美馬市にある「大瀧寺」です。正式名称は福大山慈眼院大瀧寺で、宗派は真言宗御室派準別格本山です。創建は伝・神亀3年(726)、開山は行基菩薩です。",
+        "sections": [
+          {
+            "heading": "場所とアクセス",
+            "body": "住所は徳島県美馬市脇町字西大谷674、電話(Tel・Fax)は0883-53-7910です。電話受付時間は8:00から17:00です。JR徳島本線穴吹駅からJRバスで脇町へ行き、脇町からはタクシーで約30分です。車では徳島道脇町インターから約30分、高松自動車道高松西・中央インターから約45分です。12月中旬から3月下旬は参拝者用のお手洗いが凍結のため使用できない場合があります。"
+          },
+          {
+            "heading": "由緒",
+            "body": "奈良時代の神亀3年(726)、行基菩薩が塩江から登山して一宇を建立し、阿弥陀三尊を安置したのが始まりとされます。弘仁6年(815)には弘法大師が大瀧の峰で国家の安泰と人々の厄災除けを祈願したと伝わります。天安2年(858)には聖宝尊師(理源大師)が登山して高野槙を手植えし、男女厄除厄流しの大護摩を修法しました。この高野槙は現在も残り、脇町の文化財として登録されています。"
+          },
+          {
+            "heading": "本尊と札所",
+            "body": "本尊は西照大権現、御真言は「南無西照大権現」です。四国別格二十霊場第20番、四国霊場総奥之院の札所にあたります。御朱印では、日付を記す墨にお香の一種である「白檀」が練り込まれています。"
+          },
+          {
+            "heading": "住職と祈願",
+            "body": "住職は東元良惺で、アメリカの大学で心理学と東洋学の学位を取得し、高野山大学大学院修士課程を修了しています。家内安全、商売繁盛、交通安全、厄除け・厄流しなど各種の祈願・回向を受け付けています。"
+          }
+        ],
+        "menus": [
+          {
+            "name": "家内安全"
+          },
+          {
+            "name": "商売繁盛"
+          },
+          {
+            "name": "交通安全"
+          },
+          {
+            "name": "手術成功祈願"
+          },
+          {
+            "name": "事業繁栄"
+          },
+          {
+            "name": "合格祈願"
+          },
+          {
+            "name": "厄除け/厄流し"
+          }
+        ],
+        "sources": [
+          {
+            "label": "公式サイト",
+            "url": "https://www.otakiji-nishiterugu.com/"
+          },
+          {
+            "label": "公式サイト(大瀧寺について)",
+            "url": "https://www.otakiji-nishiterugu.com/aboutus"
+          },
+          {
+            "label": "公式サイト(交通案内)",
+            "url": "https://www.otakiji-nishiterugu.com/access"
+          },
+          {
+            "label": "公式サイト(年中行事・ご祈願)",
+            "url": "https://www.otakiji-nishiterugu.com/event"
+          },
+          {
+            "label": "Google マップ",
+            "url": "https://maps.google.com/?cid=14910780248554761253"
+          }
+        ],
+        "checkedAt": "2026-10-29"
+      }
+    },
+    {
+      "id": "li0083",
+      "vertical": "life",
+      "category": "shrine-temple",
+      "name": "日蓮宗本山 東光山實成寺",
+      "pref": "shizuoka",
+      "cityName": "伊豆市",
+      "address": "静岡県伊豆市柳瀬353",
+      "lat": 34.949479,
+      "lng": 138.997928,
+      "phone": "0558-83-0318",
+      "url": "https://temple.nichiren.or.jp/2051053-jitsujoji/",
+      "website": "https://temple.nichiren.or.jp/2051053-jitsujoji/",
+      "mapUrl": "https://maps.google.com/?cid=11483675005296144688",
+      "image": "/_portal/vshops/tri-life-27/g01.jpg",
+      "images": [
+        "/_portal/vshops/tri-life-27/g01.jpg",
+        "/_portal/vshops/tri-life-27/g02.jpg",
+        "/_portal/vshops/tri-life-27/g04.jpg",
+        "/_portal/vshops/tri-life-27/g05.jpg",
+        "/_portal/vshops/tri-life-27/g06.jpg",
+        "/_portal/vshops/tri-life-27/g07.jpg",
+        "/_portal/vshops/tri-life-27/g08.jpg",
+        "/_portal/vshops/tri-life-27/g09.jpg",
+        "/_portal/vshops/tri-life-27/g10.jpg",
+        "/_portal/vshops/tri-life-27/s01.jpg",
+        "/_portal/vshops/tri-life-27/s03.jpg"
+      ],
+      "photos": [
+        {
+          "path": "/_portal/vshops/tri-life-27/g01.jpg",
+          "what": "黒い大きな山門と石畳の参道",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 904
+        },
+        {
+          "path": "/_portal/vshops/tri-life-27/g02.jpg",
+          "what": "松の木がある木造のお堂の外観",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 674
+        },
+        {
+          "path": "/_portal/vshops/tri-life-27/g04.jpg",
+          "what": "境内に立つ銅像と石灯籠",
+          "kind": "exterior",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-life-27/g05.jpg",
+          "what": "木の引き戸が並ぶお堂の外観",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 675
+        },
+        {
+          "path": "/_portal/vshops/tri-life-27/g06.jpg",
+          "what": "瓦屋根のお堂の外観",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 800
+        },
+        {
+          "path": "/_portal/vshops/tri-life-27/g07.jpg",
+          "what": "金色の仏具が並ぶお堂の内部",
+          "kind": "common",
+          "width": 675,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-life-27/g08.jpg",
+          "what": "木々に囲まれた境内の参道",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-life-27/g09.jpg",
+          "what": "苔むした石灯籠",
+          "kind": "exterior",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-life-27/g10.jpg",
+          "what": "紅葉の木々と石灯籠が並ぶ境内の小道",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-life-27/s01.jpg",
+          "what": "お堂の前に立つ銅像",
+          "kind": "exterior",
+          "width": 1024,
+          "height": 683
+        },
+        {
+          "path": "/_portal/vshops/tri-life-27/s03.jpg",
+          "what": "木々に囲まれたお堂の建物",
+          "kind": "exterior",
+          "width": 1024,
+          "height": 683
+        }
+      ],
+      "tags": [],
+      "article": {
+        "headline": "静岡県伊豆市柳瀬にある日蓮宗の寺院。正安3年(1301)に日蓮の孫弟子の大夫阿日尊が開き、興門派の本山で興門八本山の一つに数えられる。",
+        "lede": "伊豆市にある「日蓮宗本山 東光山實成寺」です。正安3年(1301)に日蓮の孫弟子の大夫阿日尊によって開かれ、興門派の本山で興門八本山の一つに数えられています。入り口には大きな黒門があります。",
+        "sections": [
+          {
+            "heading": "沿革",
+            "body": "實成寺は正安3年(1301)、日蓮の孫弟子の大夫阿日尊によって開かれました。興門派の本山で、興門八本山の一つに数えられています。寛政11年(1799)3月8日には焼失しています。"
+          },
+          {
+            "heading": "境内",
+            "body": "入り口には大きな黒門があります。境内は古くは豪族大見氏の一族である大見小藤太成家の居館跡で、正面の石畳と石垣の一部に鎌倉時代初期の武家屋敷の面影が残ります。南側の城山と呼ばれる一帯は、その城跡とされています。祖師堂の欄間などには、松崎町江奈出身で狩野派の画法を修めた石田富次郎による彫刻が施されています。"
+          },
+          {
+            "heading": "場所と連絡先",
+            "body": "住所は静岡県伊豆市柳瀬353、電話は0558-83-0318です。伊豆箱根鉄道修善寺駅からバスで15分で、駐車場があります。"
+          }
+        ],
+        "sources": [
+          {
+            "label": "公式サイト",
+            "url": "https://temple.nichiren.or.jp/2051053-jitsujoji/"
+          },
+          {
+            "label": "Google マップ",
+            "url": "https://maps.google.com/?cid=11483675005296144688"
+          }
+        ],
+        "checkedAt": "2026-10-29"
+      }
+    },
+    {
+      "id": "li0084",
+      "vertical": "life",
+      "category": "shrine-temple",
+      "name": "鵲森宮（森之宮神社）",
+      "pref": "osaka",
+      "cityName": "大阪市中央区",
+      "address": "大阪府大阪市中央区森ノ宮中央1丁目14-4",
+      "lat": 34.6807882,
+      "lng": 135.5332979,
+      "phone": "06-6941-9294",
+      "url": "http://www.morinomiya.net/",
+      "website": "http://www.morinomiya.net/",
+      "mapUrl": "https://maps.google.com/?cid=7711785768109338920",
+      "image": "/_portal/vshops/tri-life-47/g01.jpg",
+      "images": [
+        "/_portal/vshops/tri-life-47/g01.jpg",
+        "/_portal/vshops/tri-life-47/g02.jpg",
+        "/_portal/vshops/tri-life-47/g03.jpg",
+        "/_portal/vshops/tri-life-47/g06.jpg",
+        "/_portal/vshops/tri-life-47/g07.jpg",
+        "/_portal/vshops/tri-life-47/g08.jpg",
+        "/_portal/vshops/tri-life-47/g09.jpg",
+        "/_portal/vshops/tri-life-47/g10.jpg",
+        "/_portal/vshops/tri-life-47/s01.jpg"
+      ],
+      "photos": [
+        {
+          "path": "/_portal/vshops/tri-life-47/g01.jpg",
+          "what": "鳥居と狛犬のある社殿正面",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 675
+        },
+        {
+          "path": "/_portal/vshops/tri-life-47/g02.jpg",
+          "what": "鳥居の柱と狛犬が並ぶ参道入口",
+          "kind": "exterior",
+          "width": 675,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-life-47/g03.jpg",
+          "what": "参道脇に置かれた狛犬の像",
+          "kind": "exterior",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-life-47/g06.jpg",
+          "what": "朱色の鳥居が続く石畳の参道",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-life-47/g07.jpg",
+          "what": "注連縄のかかる社殿正面と賽銭箱",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-life-47/g08.jpg",
+          "what": "鳥居と授与所の建つ境内の一角",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 675
+        },
+        {
+          "path": "/_portal/vshops/tri-life-47/g09.jpg",
+          "what": "赤い鳥居の境内社と紅葉の木",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-life-47/g10.jpg",
+          "what": "石塀沿いに伸びる参道の歩道",
+          "kind": "view",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-life-47/s01.jpg",
+          "what": "社殿正面と石段",
+          "kind": "exterior",
+          "width": 1280,
+          "height": 855
+        }
+      ],
+      "tags": [
+        "駅近"
+      ],
+      "article": {
+        "headline": "大阪市中央区森ノ宮中央にある神社。崇峻天皇二年(589年)、聖徳太子が創建し、用明天皇と穴穂部間人皇后、聖徳太子を祭神とする。",
+        "lede": "大阪市中央区にある「鵲森宮（森之宮神社）」です。崇峻天皇二年(589年)に聖徳太子が創建し、祭神は用明天皇、穴穂部間人皇后、聖徳太子です。",
+        "sections": [
+          {
+            "heading": "由緒",
+            "body": "崇峻天皇二年(589年)、聖徳太子は物部守屋との戦いに勝利を祈願し、勝利ののちに父母である用明天皇と穴穂部間人皇后を神として祭りました。用明天皇と穴穂部間人皇后をともに祭る神社は、日本でここだけです。"
+          },
+          {
+            "heading": "社名の由来",
+            "body": "社名の鵲森宮は、新羅から献上された鵲(かささぎ)二羽をこの森に飼わせたことに由来します。「鵲の森」と称えられ、のちに宮の名となり、略して「森之宮」とも呼ばれるようになりました。通称は森之宮神社です。"
+          },
+          {
+            "heading": "場所と祈祷",
+            "body": "JR大阪環状線森ノ宮駅の西側にあり、地下鉄中央線・長堀鶴見緑地線森ノ宮駅の7A出口からは南へ進みます。祈祷は七五三まいり、家内安全、地鎮祭、初宮詣、交通安全、車輌清祓厄祓、無病息災、良縁祈願など多岐にわたります。"
+          }
+        ],
+        "menus": [
+          {
+            "name": "七五三まいり"
+          },
+          {
+            "name": "家内安全"
+          },
+          {
+            "name": "地鎮祭"
+          },
+          {
+            "name": "初宮詣"
+          },
+          {
+            "name": "交通安全"
+          },
+          {
+            "name": "車輌清祓厄祓"
+          },
+          {
+            "name": "無病息災"
+          },
+          {
+            "name": "良縁祈願"
+          }
+        ],
+        "sources": [
+          {
+            "label": "公式サイト",
+            "url": "http://www.morinomiya.net/"
+          },
+          {
+            "label": "公式サイト(鵲森宮)",
+            "url": "https://morinomiya.net/2022/05/01/%e9%b5%b2%e6%a3%ae%e5%ae%ae/"
+          },
+          {
+            "label": "公式サイト(由緒と祭神)",
+            "url": "https://morinomiya.net/2020/06/27/%e7%94%b1%e7%b7%92%e3%81%a8%e7%a5%ad%e7%a5%9e/"
+          },
+          {
+            "label": "公式サイト(アクセス)",
+            "url": "https://morinomiya.net/2020/06/27/%e3%82%a2%e3%82%af%e3%82%bb%e3%82%b9/"
+          },
+          {
+            "label": "Google マップ",
+            "url": "https://maps.google.com/?cid=7711785768109338920"
+          }
+        ],
+        "checkedAt": "2026-10-29"
+      }
     }
   ]
 }
