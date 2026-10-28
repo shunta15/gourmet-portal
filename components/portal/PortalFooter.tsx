@@ -47,9 +47,6 @@ export default function PortalFooter() {
           <div className="mp-ft-col">
             <h2>マチノワについて</h2>
             <ul>
-              <li><Link href="/about">編集部について</Link></li>
-              <li><Link href="/editorial/guidelines">掲載基準</Link></li>
-              <li><Link href="/contact">お問い合わせ</Link></li>
             </ul>
           </div>
         </div>

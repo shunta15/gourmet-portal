@@ -32,9 +32,6 @@ export default function Footer({ cfg }: { cfg: VkConfig }) {
           <p className="vk-foot-links">
             <a href="/">マチノワ トップ</a>
             <a href="/videos">動画</a>
-            <a href="/about">編集部について</a>
-            <a href="/editorial/guidelines">掲載基準</a>
-            <a href="/contact">お問い合わせ</a>
           </p>
           <p className="vk-foot-copy">© {cfg.brand}</p>
         </div>

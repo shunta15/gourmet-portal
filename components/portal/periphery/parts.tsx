@@ -1,7 +1,6 @@
 import Link from "next/link";
 import type { CSSProperties, ReactNode } from "react";
 import { Brush, Seal } from "../photoFeature/parts";
-import PeripheryNewsletter from "./PeripheryNewsletter";
 import { GOURMET_TOP, menuWithTop } from "@/lib/portal/noren/nav";
 import FootSmall from "../FootSmall";
 
@@ -112,17 +111,6 @@ export function Sec({
   );
 }
 
-/** 朱の点の並び */
-export function Dash({ items, label }: { items: ReactNode[]; label?: string }) {
-  return (
-    <ul className="pp-dash" aria-label={label}>
-      {items.map((x, i) => (
-        <li key={i}>{x}</li>
-      ))}
-    </ul>
-  );
-}
-
 // ───────── 上端の帯・竿・フッター ─────────
 
 /** 上端の帯（ロゴ + メニュー 4 つ: トップ・さがす・店舗紹介・特集。lib/portal/noren/nav.ts の GOURMET_MENU）。ロゴは「マチノワ グルメ」→ グルメのトップ（周りのページはどれも同じ） */
@@ -164,10 +152,10 @@ export function Rod() {
 
 /**
  * ページの下端。グルメの暖簾のフッター（NorenFooter）と同じ行き先（ナビゲーション = メニューと同じ「トップ・さがす・店舗紹介・特集」の 4 つ）と、小さな文字の 1 行（FootSmall）、
- * ニュースレター（newsletter が true のとき。今まで付いていたページだけ）。リンクは lib/portal/noren/nav.ts の定数（暖簾のフッターと同じ）。
+ * リンクは lib/portal/noren/nav.ts の定数（暖簾のフッターと同じ）。
  * 2026-10-23 オーナー決定「各業種 4 ページに収める」: 地域の列・おまかせ提案・写真から探す・ショート動画・総合トップ・サイト情報の列は外した（サイト情報と総合トップは小さな 1 行へ）。
  */
-export function Footer({ newsletter = false }: { newsletter?: boolean }) {
+export function Footer() {
   const nav = menuWithTop(GOURMET_TOP);
   return (
     <footer className="pf-ft pp-ft">
@@ -175,16 +163,6 @@ export function Footer({ newsletter = false }: { newsletter?: boolean }) {
         <div className="pp-ft__top">
           <div className="pp-ft__brand">
             <p className="pf-ft__l">マチノワ グルメ</p>
-            {newsletter && (
-              <>
-                <p className="pp-ft__nlk">ニュースレター</p>
-                <p className="pp-ft__nlh">
-                  マチノワで繋がる、<em>まだ見ぬ出会い</em>。
-                </p>
-                <p className="pp-ft__nls">知らない街と一軒との出会いを、編集部が毎週金曜にお届け。</p>
-                <PeripheryNewsletter />
-              </>
-            )}
           </div>
           <div className="pp-ft__cols">
             <nav aria-label="ナビゲーション">

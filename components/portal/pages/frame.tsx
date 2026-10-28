@@ -108,10 +108,6 @@ export function Listing({ v, places, emptyNote }: { v: Vertical; places: Place[]
           </div>
           <div>
             <p className="mp-note-p">{emptyNote}</p>
-            <p className="mp-note-links">
-              <Link href="/editorial/guidelines">掲載基準</Link>
-              <Link href="/contact">掲載のご相談</Link>
-            </p>
           </div>
         </div>
       </section>

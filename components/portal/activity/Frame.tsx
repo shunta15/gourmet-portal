@@ -34,9 +34,6 @@ export default function ActivityFrame({ children }: { children: React.ReactNode 
           <nav aria-label="サイトの案内">
             <Link href="/">マチノワ トップ</Link>
             <Link href="/videos">動画</Link>
-            <Link href="/about">編集部について</Link>
-            <Link href="/editorial/guidelines">掲載基準</Link>
-            <Link href="/contact">お問い合わせ</Link>
           </nav>
         </footer>
       </div>

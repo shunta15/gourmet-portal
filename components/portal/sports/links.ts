@@ -10,7 +10,6 @@ export const SPL = {
   special: "/sports/special",
   // 旧サイトの地図 /map は 2026-10-28 に消した。地図の小窓・「現在地から探す」「地図で見る」は、この業種の探すページへ（見本の配置は変えない）
   map: "/sports/search",
-  about: "/about",
   shop: (id: string) => `/sports/shop/${encodeURIComponent(id)}`,
   article: (id: string) => `/sports/article/${encodeURIComponent(id)}`,
   specialArticle: (slug: string) => `/sports/special/${encodeURIComponent(slug)}`,

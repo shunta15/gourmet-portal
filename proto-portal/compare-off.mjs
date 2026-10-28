@@ -258,8 +258,6 @@ function runStatic() {
 /** 取る URL の一覧。グルメの既存ページ（静的・動的）と、OFF では 404 になるはずの総合サイトの URL */
 const GOURMET = [
   "/",
-  "/about",
-  "/contact",
   "/feature",
   "/region",
   "/region/tokyo",
@@ -268,7 +266,6 @@ const GOURMET = [
   "/scene/date",
   "/search",
   "/search?q=寿司",
-  "/editorial/guidelines",
   "/restaurant/r01",
   "/restaurant/r21",
   "/restaurant/r23",
