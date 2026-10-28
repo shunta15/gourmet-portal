@@ -3607,6 +3607,408 @@
           "「湯治部」レトロな【和室6～8畳】"
         ]
       }
+    },
+    {
+      "id": "st0020",
+      "vertical": "stay",
+      "category": "pension",
+      "name": "温泉民宿浜屋",
+      "pref": "shizuoka",
+      "cityName": "下田市",
+      "address": "静岡県下田市須崎1474-6",
+      "lat": 34.6570391,
+      "lng": 138.9694674,
+      "phone": "0558-22-3426",
+      "url": "https://suzakihamaya.com/",
+      "website": "https://suzakihamaya.com/",
+      "mapUrl": "https://maps.google.com/?cid=4470436645542697611",
+      "image": "/_portal/vshops/tri-stay-12/g01.jpg",
+      "images": [
+        "/_portal/vshops/tri-stay-12/g01.jpg",
+        "/_portal/vshops/tri-stay-12/g02.jpg",
+        "/_portal/vshops/tri-stay-12/g03.jpg",
+        "/_portal/vshops/tri-stay-12/g04.jpg",
+        "/_portal/vshops/tri-stay-12/g05.jpg",
+        "/_portal/vshops/tri-stay-12/g06.jpg",
+        "/_portal/vshops/tri-stay-12/g07.jpg",
+        "/_portal/vshops/tri-stay-12/g08.jpg",
+        "/_portal/vshops/tri-stay-12/g09.jpg",
+        "/_portal/vshops/tri-stay-12/g10.jpg",
+        "/_portal/vshops/tri-stay-12/s01.jpg",
+        "/_portal/vshops/tri-stay-12/s02.jpg",
+        "/_portal/vshops/tri-stay-12/s05.jpg",
+        "/_portal/vshops/tri-stay-12/s06.jpg",
+        "/_portal/vshops/tri-stay-12/s07.jpg",
+        "/_portal/vshops/tri-stay-12/s08.jpg",
+        "/_portal/vshops/tri-stay-12/s09.jpg",
+        "/_portal/vshops/tri-stay-12/s10.jpg"
+      ],
+      "photos": [
+        {
+          "path": "/_portal/vshops/tri-stay-12/g01.jpg",
+          "what": "白い建物に「浜屋」の看板がある外観",
+          "kind": "exterior",
+          "width": 645,
+          "height": 475
+        },
+        {
+          "path": "/_portal/vshops/tri-stay-12/g02.jpg",
+          "what": "山の斜面に建つ宿泊施設の外観",
+          "kind": "exterior",
+          "width": 550,
+          "height": 412
+        },
+        {
+          "path": "/_portal/vshops/tri-stay-12/g03.jpg",
+          "what": "色ガラスの障子がある和室の内観",
+          "kind": "room",
+          "width": 550,
+          "height": 412
+        },
+        {
+          "path": "/_portal/vshops/tri-stay-12/g04.jpg",
+          "what": "刺身や煮魚が並ぶ和食の膳",
+          "kind": "meal",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-stay-12/g05.jpg",
+          "what": "丘の上から須崎の港と海を見下ろす景色",
+          "kind": "view",
+          "width": 1200,
+          "height": 675
+        },
+        {
+          "path": "/_portal/vshops/tri-stay-12/g06.jpg",
+          "what": "刺身や天ぷらなどが並ぶ和食の膳",
+          "kind": "meal",
+          "width": 1200,
+          "height": 675
+        },
+        {
+          "path": "/_portal/vshops/tri-stay-12/g07.jpg",
+          "what": "丘の上に建つ宿泊施設の外観",
+          "kind": "exterior",
+          "width": 670,
+          "height": 385
+        },
+        {
+          "path": "/_portal/vshops/tri-stay-12/g08.jpg",
+          "what": "鯛の刺身の盛り付け",
+          "kind": "meal",
+          "width": 1200,
+          "height": 675
+        },
+        {
+          "path": "/_portal/vshops/tri-stay-12/g09.jpg",
+          "what": "鯛の煮付け料理",
+          "kind": "meal",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-stay-12/g10.jpg",
+          "what": "伊勢海老などの刺身の盛り付け",
+          "kind": "meal",
+          "width": 1200,
+          "height": 675
+        },
+        {
+          "path": "/_portal/vshops/tri-stay-12/s01.jpg",
+          "what": "松の木と「浜屋」の看板が見える建物の外観",
+          "kind": "exterior",
+          "width": 1280,
+          "height": 720
+        },
+        {
+          "path": "/_portal/vshops/tri-stay-12/s02.jpg",
+          "what": "松の木と建物の外観",
+          "kind": "exterior",
+          "width": 1050,
+          "height": 680
+        },
+        {
+          "path": "/_portal/vshops/tri-stay-12/s05.jpg",
+          "what": "漁港に小型船が停泊する景色",
+          "kind": "view",
+          "width": 600,
+          "height": 400
+        },
+        {
+          "path": "/_portal/vshops/tri-stay-12/s06.jpg",
+          "what": "まな板に並ぶ青魚2匹",
+          "kind": "meal",
+          "width": 600,
+          "height": 400
+        },
+        {
+          "path": "/_portal/vshops/tri-stay-12/s07.jpg",
+          "what": "釣った魚を手に持つ写真",
+          "width": 600,
+          "height": 400
+        },
+        {
+          "path": "/_portal/vshops/tri-stay-12/s08.jpg",
+          "what": "入り江に夕陽が沈む景色",
+          "kind": "view",
+          "width": 600,
+          "height": 400
+        },
+        {
+          "path": "/_portal/vshops/tri-stay-12/s09.jpg",
+          "what": "干物にした魚が並ぶ様子",
+          "kind": "meal",
+          "width": 600,
+          "height": 400
+        },
+        {
+          "path": "/_portal/vshops/tri-stay-12/s10.jpg",
+          "what": "透明な海でシーカヤックをする人",
+          "kind": "view",
+          "width": 600,
+          "height": 400
+        }
+      ],
+      "tags": [
+        "温泉"
+      ],
+      "article": {
+        "headline": "静岡県下田市須崎、須崎港を望む丘の上に建つ温泉民宿。客室は海の見える10畳、海の見えるゆったり15畳、山側30畳大広間の3タイプ",
+        "lede": "静岡県下田市須崎にある「温泉民宿 浜屋」です。須崎港を望む丘の上に建ち、離れの浴場で2つの須崎温泉を貸切りで利用できます。客室は海の見える10畳・海の見えるゆったり15畳・山側30畳大広間の3タイプです。",
+        "sections": [
+          {
+            "heading": "場所と宿泊",
+            "body": "住所は静岡県下田市須崎1474-6です。須崎港を望む丘の上にあり、遥か遠くの海も一望できます。須崎は民宿発祥の地といわれる場所で、チェックインは15:00から、チェックアウトは10:00までです。10台駐車できる駐車場があり、先着順での利用です。"
+          },
+          {
+            "heading": "客室とお風呂",
+            "body": "客室は、海の見える10畳（2~4名）、海の見えるゆったり15畳（5~7名、バス・トイレ無し）、山側30畳大広間（8~15名）の3タイプです。全室に冷暖房・テレビ・お茶セットなどを備えています。宿泊棟の離れにある浴場で、2つの須崎温泉を貸切りで利用できます。泉質は単純温泉、弱アルカリ性イオン水、緩和低張性泉です。"
+          },
+          {
+            "heading": "食事",
+            "body": "須崎で獲れた魚介と自家製野菜を使った料理を出しています。コース料理は、新鮮なお刺身や煮魚など全9品程度のスタンダード、自家製の特製味噌で味付けする漁師鍋「いけんだ煮みそ」、豪快な旬魚の舟盛りです。朝食は、地元の干物や卵焼き、サラダなどが並ぶ和食です。"
+          },
+          {
+            "heading": "海の体験",
+            "body": "本格船釣りや朝夕・お気軽体験船釣り、須崎半島クルージング、地元の魚で作ったひものの干物づくり、シーカヤック、ダイビングなど、海を使った体験を宿を通じて申し込めます。"
+          }
+        ],
+        "menus": [
+          {
+            "name": "スタンダード"
+          },
+          {
+            "name": "いけんだ煮みそ"
+          },
+          {
+            "name": "舟盛り"
+          }
+        ],
+        "sources": [
+          {
+            "label": "公式サイト",
+            "url": "https://suzakihamaya.com/"
+          },
+          {
+            "label": "公式サイト(館内)",
+            "url": "https://suzakihamaya.com/facilities.php"
+          },
+          {
+            "label": "公式サイト(須崎の幸)",
+            "url": "https://suzakihamaya.com/cuisine.php"
+          },
+          {
+            "label": "公式サイト(体験)",
+            "url": "https://suzakihamaya.com/experience.php"
+          },
+          {
+            "label": "公式サイト(アクセス・周辺観光)",
+            "url": "https://suzakihamaya.com/access.php"
+          },
+          {
+            "label": "Google マップ",
+            "url": "https://maps.google.com/?cid=4470436645542697611"
+          }
+        ],
+        "checkedAt": "2026-10-29"
+      },
+      "attributes": {
+        "roomTypes": [
+          "海の見える10畳",
+          "海の見えるゆったり15畳",
+          "山側30畳大広間"
+        ]
+      }
+    },
+    {
+      "id": "st0021",
+      "vertical": "stay",
+      "category": "ryokan",
+      "name": "旅館黒潮",
+      "pref": "miyagi",
+      "cityName": "気仙沼市",
+      "address": "宮城県気仙沼市駒形111",
+      "lat": 38.8430714,
+      "lng": 141.6218892,
+      "phone": "0226-28-2125",
+      "url": "http://kurosio.info/",
+      "website": "http://kurosio.info/",
+      "mapUrl": "https://maps.google.com/?cid=17882795925316949287",
+      "image": "/_portal/vshops/tri-stay-13/g01.jpg",
+      "images": [
+        "/_portal/vshops/tri-stay-13/g01.jpg",
+        "/_portal/vshops/tri-stay-13/g02.jpg",
+        "/_portal/vshops/tri-stay-13/g03.jpg",
+        "/_portal/vshops/tri-stay-13/g04.jpg",
+        "/_portal/vshops/tri-stay-13/g05.jpg",
+        "/_portal/vshops/tri-stay-13/g06.jpg",
+        "/_portal/vshops/tri-stay-13/g07.jpg",
+        "/_portal/vshops/tri-stay-13/g08.jpg",
+        "/_portal/vshops/tri-stay-13/g09.jpg",
+        "/_portal/vshops/tri-stay-13/g10.jpg"
+      ],
+      "photos": [
+        {
+          "path": "/_portal/vshops/tri-stay-13/g01.jpg",
+          "what": "木造の屋根付きウッドデッキがある建物入口",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-stay-13/g02.jpg",
+          "what": "高台から海を望む夕景",
+          "kind": "view",
+          "width": 1200,
+          "height": 675
+        },
+        {
+          "path": "/_portal/vshops/tri-stay-13/g03.jpg",
+          "what": "タイル張りの大浴場",
+          "kind": "bath",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-stay-13/g04.jpg",
+          "what": "行灯が灯る和風の玄関",
+          "kind": "exterior",
+          "width": 640,
+          "height": 480
+        },
+        {
+          "path": "/_portal/vshops/tri-stay-13/g05.jpg",
+          "what": "二階建ての建物外観と駐車場",
+          "kind": "exterior",
+          "width": 640,
+          "height": 480
+        },
+        {
+          "path": "/_portal/vshops/tri-stay-13/g06.jpg",
+          "what": "緑の椅子が並ぶ木目調のロビー",
+          "kind": "common",
+          "width": 640,
+          "height": 480
+        },
+        {
+          "path": "/_portal/vshops/tri-stay-13/g07.jpg",
+          "what": "駐車場越しに海を望む景色",
+          "kind": "view",
+          "width": 960,
+          "height": 720
+        },
+        {
+          "path": "/_portal/vshops/tri-stay-13/g08.jpg",
+          "what": "だし汁が入った小鉢",
+          "kind": "meal",
+          "width": 1200,
+          "height": 675
+        },
+        {
+          "path": "/_portal/vshops/tri-stay-13/g09.jpg",
+          "what": "マグロやいくらをのせた海鮮丼",
+          "kind": "meal",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-stay-13/g10.jpg",
+          "what": "野菜が入った汁物",
+          "kind": "meal",
+          "width": 1200,
+          "height": 675
+        }
+      ],
+      "tags": [],
+      "article": {
+        "headline": "宮城県気仙沼市の気仙沼大島、高台に建つ旅館。客室はすべて和室のオーシャンビューで、大浴場と家族風呂がある",
+        "lede": "気仙沼市にある「旅館黒潮」です。気仙沼大島の高台に建ち、総客室数12室はすべて和室でオーシャンビューです。大浴場と家族風呂があります。",
+        "sections": [
+          {
+            "heading": "場所とアクセス",
+            "body": "住所は宮城県気仙沼市字駒形111、電話は0226-28-2125です。東北新幹線で一関まで行き、大船渡線に乗り換えて気仙沼へ向かう経路のほか、三陸自動車道の浦島大島ICから県道218・208を進む道のりがあります。チェックインは15:00から21:00まで、チェックアウトは10:00までです。"
+          },
+          {
+            "heading": "客室とお風呂",
+            "body": "客室はすべて和室でオーシャンビュー、広縁と洗面所が付いています。バス・トイレ付きでバリアフリー対応の客室もあります。大浴場は花崗岩角閃石、ブラックシリカ、麦飯石、十和田石の4種類の鉱石を使用し、入浴時間は16:30から22:30までです。家族で入浴できる貸切風呂もあり、バリアフリー対応で入浴時間は16:00から22:30までです。"
+          },
+          {
+            "heading": "食事",
+            "body": "気仙沼の海の幸を使った磯料理が中心で、海藻と豚肉を合わせたしゃぶしゃぶ、1人前150gのフカヒレの姿煮、マグロカブト焼きがあります。大島カブやムール貝をのせ薪ストーブで焼く手作りピザのほか、海の見えるウッドデッキでの夕食・昼食のバーベキューは5月から10月限定です。野菜は自家栽培です。"
+          },
+          {
+            "heading": "館内",
+            "body": "フロント・ロビーはリニューアルされており、冬は薪ストーブを使います。10畳の部屋があり宴会やグループでの利用に向くほか、大広間（70畳）もあります。システムキッチン付きの部屋があり自炊もできます。総客室数は12室です。"
+          }
+        ],
+        "menus": [
+          {
+            "name": "海藻と豚肉のしゃぶしゃぶ"
+          },
+          {
+            "name": "フカヒレの姿煮"
+          },
+          {
+            "name": "マグロカブト焼き"
+          },
+          {
+            "name": "手作りピザ"
+          },
+          {
+            "name": "海鮮バーベキュー"
+          }
+        ],
+        "sources": [
+          {
+            "label": "公式サイト",
+            "url": "http://kurosio.info/"
+          },
+          {
+            "label": "公式サイト(アクセス)",
+            "url": "http://kurosio.info/access/index.html"
+          },
+          {
+            "label": "公式サイト(お料理)",
+            "url": "http://kurosio.info/cuisine/index.html"
+          },
+          {
+            "label": "公式サイト(館内)",
+            "url": "http://kurosio.info/facilities/index.html"
+          },
+          {
+            "label": "Google マップ",
+            "url": "https://maps.google.com/?cid=17882795925316949287"
+          }
+        ],
+        "checkedAt": "2026-10-29"
+      },
+      "attributes": {
+        "roomTypes": [
+          "和室(オーシャンビュー)",
+          "バス・トイレ付き客室(バリアフリー対応)"
+        ]
+      }
     }
   ]
 }

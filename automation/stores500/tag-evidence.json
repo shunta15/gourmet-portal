@@ -4368,5 +4368,31 @@
     "articleId": "マルシェノグチ",
     "name": "野菜専門店 マルシェノグチ",
     "tags": []
+  },
+  "r776": {
+    "articleId": "カフェルンビータCafeRumbita",
+    "name": "カフェ ルンビータ Cafe Rumbita",
+    "tags": [
+      {
+        "tag": "貸切可",
+        "rule": "記事 specs「貸切」項目が肯定",
+        "evidence": "貸切: 事前予約でスタジオレンタル可"
+      }
+    ]
+  },
+  "r777": {
+    "articleId": "アーニーハウス",
+    "name": "アーニーハウス",
+    "tags": []
+  },
+  "r778": {
+    "articleId": "茶房金木犀",
+    "name": "茶房金木犀",
+    "tags": []
+  },
+  "r779": {
+    "articleId": "バーリフューエルハクバ",
+    "name": "バー リフューエル ハクバ",
+    "tags": []
   }
 }

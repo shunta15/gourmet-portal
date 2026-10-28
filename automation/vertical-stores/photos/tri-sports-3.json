@@ -1,0 +1,56 @@
+{
+  "key": "tri-sports-3",
+  "images": [
+    {
+      "path": "/_portal/vshops/tri-sports-3/g01.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9QnqJ_AcjXVylVBbJRdmtRI_Ab-i52VmOXLxq74Cb1d4nlbP3VchycfCnD_IzazAqvajERcA0TKp-VHWGKJ5e7srPowDxtaY8I-UkPaRV5gaG7lH397lslA8RFUUGB5YTkLvChkoA=s1200",
+      "pageUrl": "https://maps.google.com/?cid=17787966806653822551",
+      "what": "バイクやトレーニング器具が並ぶジムの室内",
+      "kind": "common",
+      "width": 1200,
+      "height": 900,
+      "source": "Google マップ"
+    },
+    {
+      "path": "/_portal/vshops/tri-sports-3/g02.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9RMVOSaa_ml8ex15y9QoXlTdgkz31Cz1z5xrjdAEpoPOqFSMp4z89dTsadXILP-rjJcygEEC48Va1pbPQ3mcRSh0TAez-7R7hTQ1RUl0EmF4zAxo1U4_kbz086vkaZU7LKJ3XqB=s1200",
+      "pageUrl": "https://maps.google.com/?cid=17787966806653822551",
+      "what": "赤いマットのボクシングリングとサンドバッグ",
+      "kind": "common",
+      "width": 1200,
+      "height": 900,
+      "source": "Google マップ"
+    },
+    {
+      "path": "/_portal/vshops/tri-sports-3/g04.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9TGCXKqFerBmvc5iZcpFzced8tK3DpLzQLqr9gIgfkc4lE_aK8AqbLAPtEcok0TRNbc0Pi5Kkf7p5bHPpnbr98CmK58huLl7i_yDGv1UgiCiLFFwTrdhIPUWm4rJPcYZgjkkqbF1A=s1200",
+      "pageUrl": "https://maps.google.com/?cid=17787966806653822551",
+      "what": "ネオンサインが光る夜の外観",
+      "kind": "exterior",
+      "width": 1200,
+      "height": 900,
+      "source": "Google マップ"
+    },
+    {
+      "path": "/_portal/vshops/tri-sports-3/g09.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9Rdtn-lYGHTUNjJoQ_9Hku-zbDiHMvEO7_S_LpPYangZiM5qna1ucWM1FSwNP66J6Jzo4zc88sexhpnBaPgN7FHjcWZWZkMk1sBG_9640hne45LmxrfX7BJ65PSnoDH=s1200",
+      "pageUrl": "https://maps.google.com/?cid=17787966806653822551",
+      "what": "リングの中に2人の選手がいる写真",
+      "kind": "common",
+      "width": 1200,
+      "height": 1200,
+      "source": "Google マップ"
+    },
+    {
+      "path": "/_portal/vshops/tri-sports-3/g10.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9T4PkR4LeANuxezqUQftAyVykZCJ53dkfPkXs67Czu-5agt_C69NQ4Jsak1EL3BYn-XZOtlhcnf3hs8fzCaw-CKdZ3ObDaEI9TGhJanEF-ivPjujW4fgW1iQcM4MCnLaOpCZJM5ew=s1200",
+      "pageUrl": "https://maps.google.com/?cid=17787966806653822551",
+      "what": "モノクロで写されたリング上の2人の選手",
+      "kind": "common",
+      "width": 1200,
+      "height": 900,
+      "source": "Google マップ"
+    }
+  ],
+  "note": "automation/v2/write.mjs が 2026-10-28T20:08:33.361Z に取得。店の実写だけ(AI 画像・汎用画像・地図・ロゴ・顔が大きい画像は除外)。"
+}

@@ -474,6 +474,94 @@
         ],
         "checkedAt": "2026-10-25"
       }
+    },
+    {
+      "id": "sp0005",
+      "vertical": "sports",
+      "category": "gym",
+      "name": "鳥居ボクシング＆フィットネスジム",
+      "pref": "fukuoka",
+      "cityName": "大牟田市",
+      "address": "福岡県大牟田市新栄町13-11",
+      "lat": 33.038861,
+      "lng": 130.448346,
+      "phone": "0944-43-1343",
+      "mapUrl": "https://maps.google.com/?cid=17787966806653822551",
+      "image": "/_portal/vshops/tri-sports-3/g01.jpg",
+      "images": [
+        "/_portal/vshops/tri-sports-3/g01.jpg",
+        "/_portal/vshops/tri-sports-3/g02.jpg",
+        "/_portal/vshops/tri-sports-3/g04.jpg",
+        "/_portal/vshops/tri-sports-3/g09.jpg",
+        "/_portal/vshops/tri-sports-3/g10.jpg"
+      ],
+      "photos": [
+        {
+          "path": "/_portal/vshops/tri-sports-3/g01.jpg",
+          "what": "バイクやトレーニング器具が並ぶジムの室内",
+          "kind": "common",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-sports-3/g02.jpg",
+          "what": "赤いマットのボクシングリングとサンドバッグ",
+          "kind": "common",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-sports-3/g04.jpg",
+          "what": "ネオンサインが光る夜の外観",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-sports-3/g09.jpg",
+          "what": "リングの中に2人の選手がいる写真",
+          "kind": "common",
+          "width": 1200,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-sports-3/g10.jpg",
+          "what": "モノクロで写されたリング上の2人の選手",
+          "kind": "common",
+          "width": 1200,
+          "height": 900
+        }
+      ],
+      "tags": [],
+      "article": {
+        "headline": "福岡県大牟田市新栄町にあるボクシング＆フィットネスジム。最寄りは西日本鉄道の新栄町駅で、駅からの直線距離は125メートル",
+        "lede": "大牟田市にある「鳥居ボクシング＆フィットネスジム」です。住所は福岡県大牟田市新栄町13-11で、電話は0944-43-1343です。最寄り駅は新栄町駅で、直線距離は125メートルです。",
+        "sections": [
+          {
+            "heading": "所在地とアクセス",
+            "body": "住所は福岡県大牟田市新栄町13-11、電話は0944-43-1343です。最寄り駅は西日本鉄道の新栄町駅で、駅からは直線距離で125メートルの場所にあります。"
+          },
+          {
+            "heading": "施設の分類",
+            "body": "スポーツ教室、スポーツクラブ、スポーツ施設に数えられるジムである。グーグルマップの業種表示はスポーツジムである。"
+          }
+        ],
+        "sources": [
+          {
+            "label": "地域情報サイト(エブリタウン)",
+            "url": "http://p40.everytown.info/p40/343/0944431343/鳥居ボクシング＆フィットネスジム/top.html"
+          },
+          {
+            "label": "地域情報サイト(マピオン電話帳)",
+            "url": "https://www.mapion.co.jp/phonebook/M04024/40202/24030202178/"
+          },
+          {
+            "label": "Google マップ",
+            "url": "https://maps.google.com/?cid=17787966806653822551"
+          }
+        ],
+        "checkedAt": "2026-10-29"
+      }
     }
   ]
 }

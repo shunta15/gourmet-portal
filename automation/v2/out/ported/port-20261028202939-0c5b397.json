@@ -1,0 +1,118 @@
+{
+  "commit": "0c5b397e0fc5853afa8ac19bb251a47391c48baa",
+  "source": "/Users/shunta/claude/gp-k-auto2",
+  "count": 10,
+  "added": [
+    {
+      "row": 3,
+      "name": "鳥居ボクシングアンドフィットネスジム",
+      "key": "tri-sports-3",
+      "vertical": "スポーツ",
+      "id": "sp0005",
+      "articleId": null,
+      "shopUrl": "https://machinowa.tokyo/sports/shop/sp0005",
+      "articleUrl": null,
+      "sheetUrl": "https://machinowa.tokyo/sports/shop/sp0005"
+    },
+    {
+      "row": 4,
+      "name": "カフェ ルンビータ Cafe Rumbita",
+      "key": "tri-gourmet-4",
+      "vertical": "グルメ",
+      "id": "r776",
+      "articleId": "カフェルンビータCafeRumbita",
+      "shopUrl": "https://machinowa.tokyo/restaurant/r776",
+      "articleUrl": "https://machinowa.tokyo/feature/カフェルンビータCafeRumbita",
+      "sheetUrl": "https://machinowa.tokyo/feature/カフェルンビータCafeRumbita"
+    },
+    {
+      "row": 5,
+      "name": "アーニーハウス",
+      "key": "tri-gourmet-5",
+      "vertical": "グルメ",
+      "id": "r777",
+      "articleId": "アーニーハウス",
+      "shopUrl": "https://machinowa.tokyo/restaurant/r777",
+      "articleUrl": "https://machinowa.tokyo/feature/アーニーハウス",
+      "sheetUrl": "https://machinowa.tokyo/feature/アーニーハウス"
+    },
+    {
+      "row": 6,
+      "name": "茶房 金木犀",
+      "key": "tri-gourmet-6",
+      "vertical": "グルメ",
+      "id": "r778",
+      "articleId": "茶房金木犀",
+      "shopUrl": "https://machinowa.tokyo/restaurant/r778",
+      "articleUrl": "https://machinowa.tokyo/feature/茶房金木犀",
+      "sheetUrl": "https://machinowa.tokyo/feature/茶房金木犀"
+    },
+    {
+      "row": 7,
+      "name": "バー リフューエル ハクバ",
+      "key": "tri-gourmet-7",
+      "vertical": "グルメ",
+      "id": "r779",
+      "articleId": "バーリフューエルハクバ",
+      "shopUrl": "https://machinowa.tokyo/restaurant/r779",
+      "articleUrl": "https://machinowa.tokyo/feature/バーリフューエルハクバ",
+      "sheetUrl": "https://machinowa.tokyo/feature/バーリフューエルハクバ"
+    },
+    {
+      "row": 9,
+      "name": "成道寺",
+      "key": "tri-life-9",
+      "vertical": "くらし",
+      "id": "li0079",
+      "articleId": "li0079",
+      "shopUrl": "https://machinowa.tokyo/life/shop/li0079",
+      "articleUrl": "https://machinowa.tokyo/life/article/li0079",
+      "sheetUrl": "https://machinowa.tokyo/life/article/li0079"
+    },
+    {
+      "row": 10,
+      "name": "事代主神社",
+      "key": "tri-life-10",
+      "vertical": "くらし",
+      "id": "li0080",
+      "articleId": "li0080",
+      "shopUrl": "https://machinowa.tokyo/life/shop/li0080",
+      "articleUrl": "https://machinowa.tokyo/life/article/li0080",
+      "sheetUrl": "https://machinowa.tokyo/life/article/li0080"
+    },
+    {
+      "row": 12,
+      "name": "温泉民宿浜屋",
+      "key": "tri-stay-12",
+      "vertical": "ステイ",
+      "id": "st0020",
+      "articleId": "st0020",
+      "shopUrl": "https://machinowa.tokyo/stay/shop/st0020",
+      "articleUrl": "https://machinowa.tokyo/stay/article/st0020",
+      "sheetUrl": "https://machinowa.tokyo/stay/article/st0020"
+    },
+    {
+      "row": 13,
+      "name": "気仙沼グルメとマグロ料理の宿　旅館　黒潮",
+      "key": "tri-stay-13",
+      "vertical": "ステイ",
+      "id": "st0021",
+      "articleId": "st0021",
+      "shopUrl": "https://machinowa.tokyo/stay/shop/st0021",
+      "articleUrl": "https://machinowa.tokyo/stay/article/st0021",
+      "sheetUrl": "https://machinowa.tokyo/stay/article/st0021"
+    },
+    {
+      "row": 14,
+      "name": "拳正寺",
+      "key": "tri-life-14",
+      "vertical": "くらし",
+      "id": "li0081",
+      "articleId": "li0081",
+      "shopUrl": "https://machinowa.tokyo/life/shop/li0081",
+      "articleUrl": "https://machinowa.tokyo/life/article/li0081",
+      "sheetUrl": "https://machinowa.tokyo/life/article/li0081"
+    }
+  ],
+  "skipped": []
+}

@@ -1,0 +1,32 @@
+{
+  "tab": "トリニティアポ",
+  "tabEn": "tri-stay",
+  "row": 12,
+  "sheet": {
+    "name": "温泉民宿浜屋",
+    "address": "",
+    "url": "https://www.google.com/maps/search/?api=1&query=%E6%B8%A9%E6%B3%89%E6%B0%91%E5%AE%BF%E6%B5%9C%E5%B1%8B%20055-822-3426%20",
+    "type": "宿泊",
+    "d1": "",
+    "d2": ""
+  },
+  "urlKind": "mapsApi",
+  "route": "第1段(verify-gbp.mjs)で確認済み",
+  "verdict": "一致",
+  "verdictReason": "手がかり: 店名＋電話。電話が一致／店名: exact(シート「温泉民宿浜屋」/ マップ「温泉民宿浜屋」)",
+  "place": {
+    "name": "温泉民宿浜屋",
+    "address": "静岡県下田市須崎１４７４−６",
+    "category": null,
+    "lat": 34.6570391,
+    "lng": 138.9694674,
+    "gbpUrl": "https://maps.google.com/?cid=4470436645542697611",
+    "phone": "0558-22-3426",
+    "website": "https://suzakihamaya.com/",
+    "hours": null,
+    "reserveLinks": [],
+    "statusSignals": [],
+    "closedSignal": false
+  },
+  "fetchedAt": "2026-10-28T20:03:42.725Z"
+}

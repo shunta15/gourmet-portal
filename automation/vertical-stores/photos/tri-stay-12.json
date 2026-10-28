@@ -1,0 +1,185 @@
+{
+  "key": "tri-stay-12",
+  "images": [
+    {
+      "path": "/_portal/vshops/tri-stay-12/g01.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-proxy/ALd4DhGCmIzSri06pPsojpP9dU-jb4fOv4rWMtRx3nrXRzCmrWpRjzUVoLNnnAo_hVinve-Fub60VmlqKOs91-Uokg9sg9vBuXD7iNAJCfgIm7XDvQ9JqxUwXyZkUyYDng0eYXfaKmE3kPCl6UDIUIL0sPko7aob_3sbw7jJyJOeEnUWwKLSQahEvgI2hQ=s1200",
+      "pageUrl": "https://maps.google.com/?cid=4470436645542697611",
+      "what": "白い建物に「浜屋」の看板がある外観",
+      "kind": "exterior",
+      "width": 645,
+      "height": 475,
+      "source": "Google マップ"
+    },
+    {
+      "path": "/_portal/vshops/tri-stay-12/g02.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-proxy/ALd4DhFrr97vnwTjHvxcha9mS1J3Wgokx0VimCfBaBZaztxFD4BGLfrmshB6XRtp30FenfBEy71cFOiSqPd_cLyYz76Lr3ujwVYN7Gh8H25d--f7qG--5UgorxE6jTnmkOr1ARA6R3f8CgvhrJpkqxFevRwAEyGGiGXYzE9VuXE5bwmdbj2AB1GN7dI=s1200",
+      "pageUrl": "https://maps.google.com/?cid=4470436645542697611",
+      "what": "山の斜面に建つ宿泊施設の外観",
+      "kind": "exterior",
+      "width": 550,
+      "height": 412,
+      "source": "Google マップ"
+    },
+    {
+      "path": "/_portal/vshops/tri-stay-12/g03.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-proxy/ALd4DhHDHNYkHE5FYafLygtrnOc8v2so7_khTIXtQaxopVvd_JnZWmtjzTGWHXOHp19Lj2NwMDMq__tTMTJWmKW-_3og5hvAok9FZ8ZuuXNv8hKTmoi9s3gNPFwOwiYxRRaNSgiPvxe9qU-RTqoOfZ5tsrm8dySk9vw0Wy-LoI0AtUc4wW0JUEfofUjC=s1200",
+      "pageUrl": "https://maps.google.com/?cid=4470436645542697611",
+      "what": "色ガラスの障子がある和室の内観",
+      "kind": "room",
+      "width": 550,
+      "height": 412,
+      "source": "Google マップ"
+    },
+    {
+      "path": "/_portal/vshops/tri-stay-12/g04.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9TAOepHXXGnXLSaBEj_o_8WP3zPjOLrBAE9rWI-GCz6w_7fTt7GR97Bxdq99tFjstKz0rgfCE3s6oq5RZX9oCLYnjhHXo6Ff8HgCg5ZSbczttNZ-IEmUSfANMsa-4tihgWNICiz=s1200",
+      "pageUrl": "https://maps.google.com/?cid=4470436645542697611",
+      "what": "刺身や煮魚が並ぶ和食の膳",
+      "kind": "meal",
+      "width": 1200,
+      "height": 900,
+      "source": "Google マップ"
+    },
+    {
+      "path": "/_portal/vshops/tri-stay-12/g05.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9TcbiASElqEHYSYTWedi0YLQdidLGbe4YAd1x799uVTP9ygALM4at8M-lCuS-qRckm0Pk9EDJcchjREhFdlgWxz8j8e-0Asn6ranuu0BmqsPLES86F4O7J0z322J2_orzLqoh4=s1200",
+      "pageUrl": "https://maps.google.com/?cid=4470436645542697611",
+      "what": "丘の上から須崎の港と海を見下ろす景色",
+      "kind": "view",
+      "width": 1200,
+      "height": 675,
+      "source": "Google マップ"
+    },
+    {
+      "path": "/_portal/vshops/tri-stay-12/g06.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9Ql3er7Cki9rj2mkI3h-mlN4RSwdbuGE1_yOAWV4wPHXB58pYTiUjKsHsR1NAWn7I5_DqvdJSXrg8a4UD1yUOjSJch9h0QaNjXuTMHLEShmWcVFqs-9--AFktQwa-vOM6T8Qo11=s1200",
+      "pageUrl": "https://maps.google.com/?cid=4470436645542697611",
+      "what": "刺身や天ぷらなどが並ぶ和食の膳",
+      "kind": "meal",
+      "width": 1200,
+      "height": 675,
+      "source": "Google マップ"
+    },
+    {
+      "path": "/_portal/vshops/tri-stay-12/g07.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9SAeH4Fmxd0AqeWxJUWZBoyYMimTW98dQJuuZ095flSthfRx79TC3SvDF0Lc-AJeRz_Sy0x8OTV72l7_awmxW5Jm-RzsbW-vcSIpXDx6CWD-YffVCLeOGa2yks9_tap5WkhKaWszg=s1200",
+      "pageUrl": "https://maps.google.com/?cid=4470436645542697611",
+      "what": "丘の上に建つ宿泊施設の外観",
+      "kind": "exterior",
+      "width": 670,
+      "height": 385,
+      "source": "Google マップ"
+    },
+    {
+      "path": "/_portal/vshops/tri-stay-12/g08.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9QYu4AhtWcKGjlr0ZQ7SGLwaz3OnCXglUIJ7aKdGOrncRKG3Hhh3DyDxzBAitp9RfTr7U9PwDgQ6R0PwZFV5wseaTLASxG0p9tSxV9VxVycv7KmDzEh4BMgcJhTWbEzoGh85d5o=s1200",
+      "pageUrl": "https://maps.google.com/?cid=4470436645542697611",
+      "what": "鯛の刺身の盛り付け",
+      "kind": "meal",
+      "width": 1200,
+      "height": 675,
+      "source": "Google マップ"
+    },
+    {
+      "path": "/_portal/vshops/tri-stay-12/g09.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9S6N0PR3IUu3RnQZATXziwztMKq6-wh8BUGrGxf4NVqrUNyDLdj7LoaPypb0Ap5wg-ezA9n7cv7sT4gJIEztK40Ikm3MJ-6SNjng6c_ivkxqNtBwcXgQDiCFBGM3BX0uqt-uTKk=s1200",
+      "pageUrl": "https://maps.google.com/?cid=4470436645542697611",
+      "what": "鯛の煮付け料理",
+      "kind": "meal",
+      "width": 1200,
+      "height": 900,
+      "source": "Google マップ"
+    },
+    {
+      "path": "/_portal/vshops/tri-stay-12/g10.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9TgqORvO1SCDvcF72gjQ23a8Ti7-PQSGuMXIU0qz6vcXZ07Wd9ruiYzFdoNlhYHebiPzPgIywqAbSLJHC1gu2jrrmf1illFraGmosmO016eeRh_uNdRBvC252w6_ctQ7Flx48igTA=s1200",
+      "pageUrl": "https://maps.google.com/?cid=4470436645542697611",
+      "what": "伊勢海老などの刺身の盛り付け",
+      "kind": "meal",
+      "width": 1200,
+      "height": 675,
+      "source": "Google マップ"
+    },
+    {
+      "path": "/_portal/vshops/tri-stay-12/s01.jpg",
+      "imageUrl": "https://suzakihamaya.com/movie/top.jpg",
+      "pageUrl": "https://suzakihamaya.com/",
+      "what": "松の木と「浜屋」の看板が見える建物の外観",
+      "kind": "exterior",
+      "width": 1280,
+      "height": 720,
+      "source": "公式サイト"
+    },
+    {
+      "path": "/_portal/vshops/tri-stay-12/s02.jpg",
+      "imageUrl": "https://suzakihamaya.com/assets/images/img/top/img_01-1.jpg",
+      "pageUrl": "https://suzakihamaya.com/",
+      "what": "松の木と建物の外観",
+      "kind": "exterior",
+      "width": 1050,
+      "height": 680,
+      "source": "公式サイト"
+    },
+    {
+      "path": "/_portal/vshops/tri-stay-12/s05.jpg",
+      "imageUrl": "https://suzakihamaya.com/assets/images/img/experience/img_01-1.jpg",
+      "pageUrl": "https://suzakihamaya.com/experience.php",
+      "what": "漁港に小型船が停泊する景色",
+      "kind": "view",
+      "width": 600,
+      "height": 400,
+      "source": "公式サイト"
+    },
+    {
+      "path": "/_portal/vshops/tri-stay-12/s06.jpg",
+      "imageUrl": "https://suzakihamaya.com/assets/images/img/experience/img_01-2.jpg",
+      "pageUrl": "https://suzakihamaya.com/experience.php",
+      "what": "まな板に並ぶ青魚2匹",
+      "kind": "meal",
+      "width": 600,
+      "height": 400,
+      "source": "公式サイト"
+    },
+    {
+      "path": "/_portal/vshops/tri-stay-12/s07.jpg",
+      "imageUrl": "https://suzakihamaya.com/assets/images/img/experience/img_01-3.jpg",
+      "pageUrl": "https://suzakihamaya.com/experience.php",
+      "what": "釣った魚を手に持つ写真",
+      "width": 600,
+      "height": 400,
+      "source": "公式サイト"
+    },
+    {
+      "path": "/_portal/vshops/tri-stay-12/s08.jpg",
+      "imageUrl": "https://suzakihamaya.com/assets/images/img/experience/img_03.jpg",
+      "pageUrl": "https://suzakihamaya.com/experience.php",
+      "what": "入り江に夕陽が沈む景色",
+      "kind": "view",
+      "width": 600,
+      "height": 400,
+      "source": "公式サイト"
+    },
+    {
+      "path": "/_portal/vshops/tri-stay-12/s09.jpg",
+      "imageUrl": "https://suzakihamaya.com/assets/images/img/experience/img_04.jpg",
+      "pageUrl": "https://suzakihamaya.com/experience.php",
+      "what": "干物にした魚が並ぶ様子",
+      "kind": "meal",
+      "width": 600,
+      "height": 400,
+      "source": "公式サイト"
+    },
+    {
+      "path": "/_portal/vshops/tri-stay-12/s10.jpg",
+      "imageUrl": "https://suzakihamaya.com/assets/images/img/experience/img_05.jpg",
+      "pageUrl": "https://suzakihamaya.com/experience.php",
+      "what": "透明な海でシーカヤックをする人",
+      "kind": "view",
+      "width": 600,
+      "height": 400,
+      "source": "公式サイト"
+    }
+  ],
+  "note": "automation/v2/write.mjs が 2026-10-28T20:17:31.177Z に取得。店の実写だけ(AI 画像・汎用画像・地図・ロゴ・顔が大きい画像は除外)。"
+}

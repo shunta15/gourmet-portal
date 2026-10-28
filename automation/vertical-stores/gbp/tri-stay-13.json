@@ -1,0 +1,32 @@
+{
+  "tab": "トリニティアポ",
+  "tabEn": "tri-stay",
+  "row": 13,
+  "sheet": {
+    "name": "気仙沼グルメとマグロ料理の宿　旅館　黒潮",
+    "address": "",
+    "url": "https://www.google.com/maps/search/?api=1&query=%E6%B0%97%E4%BB%99%E6%B2%BC%E3%82%B0%E3%83%AB%E3%83%A1%E3%81%A8%E3%83%9E%E3%82%B0%E3%83%AD%E6%96%99%E7%90%86%E3%81%AE%E5%AE%BF%E3%80%80%E6%97%85%E9%A4%A8%E3%80%80%E9%BB%92%E6%BD%AE%20022-628-2125%20",
+    "type": "宿泊",
+    "d1": "",
+    "d2": ""
+  },
+  "urlKind": "mapsApi",
+  "route": "第1段(verify-gbp.mjs)で確認済み",
+  "verdict": "一致",
+  "verdictReason": "手がかり: 店名＋電話＋住所(番地まで)。電話が一致／店名: contains(シート「気仙沼グルメとマグロ料理の宿　旅館　黒潮」/ マップ「旅館黒潮」)／住所(シート): exact・町名・番地とも一致",
+  "place": {
+    "name": "旅館黒潮",
+    "address": "宮城県気仙沼市駒形１１１",
+    "category": null,
+    "lat": 38.8430714,
+    "lng": 141.6218892,
+    "gbpUrl": "https://maps.google.com/?cid=17882795925316949287",
+    "phone": "0226-28-2125",
+    "website": "http://kurosio.info/",
+    "hours": null,
+    "reserveLinks": [],
+    "statusSignals": [],
+    "closedSignal": false
+  },
+  "fetchedAt": "2026-10-28T20:04:31.277Z"
+}

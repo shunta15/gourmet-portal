@@ -2597,5 +2597,37 @@
     "warnings": [
       "cuisine は store-overrides.json"
     ]
+  },
+  "r776": {
+    "articleId": "カフェルンビータCafeRumbita",
+    "name": "カフェ ルンビータ Cafe Rumbita",
+    "warnings": [
+      "desc は lede から事実の文を選べず、事実から作った定型文",
+      "営業時間が取れていない（noindex）",
+      "cuisine は GBPカテゴリ"
+    ]
+  },
+  "r777": {
+    "articleId": "アーニーハウス",
+    "name": "アーニーハウス",
+    "warnings": [
+      "営業時間が取れていない（noindex）"
+    ]
+  },
+  "r778": {
+    "articleId": "茶房金木犀",
+    "name": "茶房金木犀",
+    "warnings": [
+      "desc は lede から事実の文を選べず、事実から作った定型文",
+      "営業時間が取れていない（noindex）"
+    ]
+  },
+  "r779": {
+    "articleId": "バーリフューエルハクバ",
+    "name": "バー リフューエル ハクバ",
+    "warnings": [
+      "営業時間が取れていない（noindex）",
+      "cuisine は GBPカテゴリ"
+    ]
   }
 }

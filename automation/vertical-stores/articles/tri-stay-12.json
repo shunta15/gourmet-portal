@@ -1,0 +1,218 @@
+{
+  "key": "tri-stay-12",
+  "headline": "静岡県下田市須崎、須崎港を望む丘の上に建つ温泉民宿。客室は海の見える10畳、海の見えるゆったり15畳、山側30畳大広間の3タイプ",
+  "lede": "静岡県下田市須崎にある「温泉民宿 浜屋」です。須崎港を望む丘の上に建ち、離れの浴場で2つの須崎温泉を貸切りで利用できます。客室は海の見える10畳・海の見えるゆったり15畳・山側30畳大広間の3タイプです。",
+  "sections": [
+    {
+      "heading": "場所と宿泊",
+      "body": "住所は静岡県下田市須崎1474-6です。須崎港を望む丘の上にあり、遥か遠くの海も一望できます。須崎は民宿発祥の地といわれる場所で、チェックインは15:00から、チェックアウトは10:00までです。10台駐車できる駐車場があり、先着順での利用です。"
+    },
+    {
+      "heading": "客室とお風呂",
+      "body": "客室は、海の見える10畳（2~4名）、海の見えるゆったり15畳（5~7名、バス・トイレ無し）、山側30畳大広間（8~15名）の3タイプです。全室に冷暖房・テレビ・お茶セットなどを備えています。宿泊棟の離れにある浴場で、2つの須崎温泉を貸切りで利用できます。泉質は単純温泉、弱アルカリ性イオン水、緩和低張性泉です。"
+    },
+    {
+      "heading": "食事",
+      "body": "須崎で獲れた魚介と自家製野菜を使った料理を出しています。コース料理は、新鮮なお刺身や煮魚など全9品程度のスタンダード、自家製の特製味噌で味付けする漁師鍋「いけんだ煮みそ」、豪快な旬魚の舟盛りです。朝食は、地元の干物や卵焼き、サラダなどが並ぶ和食です。"
+    },
+    {
+      "heading": "海の体験",
+      "body": "本格船釣りや朝夕・お気軽体験船釣り、須崎半島クルージング、地元の魚で作ったひものの干物づくり、シーカヤック、ダイビングなど、海を使った体験を宿を通じて申し込めます。"
+    }
+  ],
+  "rooms": [
+    {
+      "name": "海の見える10畳"
+    },
+    {
+      "name": "海の見えるゆったり15畳"
+    },
+    {
+      "name": "山側30畳大広間"
+    }
+  ],
+  "menus": [
+    {
+      "name": "スタンダード"
+    },
+    {
+      "name": "いけんだ煮みそ"
+    },
+    {
+      "name": "舟盛り"
+    }
+  ],
+  "tags": [
+    {
+      "tag": "温泉",
+      "factIndex": 10
+    }
+  ],
+  "facts": [
+    {
+      "claim": "住所は静岡県下田市須崎1474-6",
+      "source": "https://suzakihamaya.com/",
+      "quote": "静岡県下田市須崎1474-6",
+      "checkedAt": "2026-10-29"
+    },
+    {
+      "claim": "須崎港を望む丘の上にある",
+      "source": "https://suzakihamaya.com/",
+      "quote": "須崎港を望む丘の上にあり",
+      "checkedAt": "2026-10-29"
+    },
+    {
+      "claim": "チェックインは15:00から",
+      "source": "https://suzakihamaya.com/",
+      "quote": "チェックイン：15：00～",
+      "checkedAt": "2026-10-29"
+    },
+    {
+      "claim": "チェックアウトは10:00まで",
+      "source": "https://suzakihamaya.com/",
+      "quote": "チェックアウト：～10：00",
+      "checkedAt": "2026-10-29"
+    },
+    {
+      "claim": "須崎は民宿発祥の地といわれる",
+      "source": "https://suzakihamaya.com/",
+      "quote": "民宿発祥の地",
+      "checkedAt": "2026-10-29"
+    },
+    {
+      "claim": "10台駐車できる駐車場があり先着順",
+      "source": "https://suzakihamaya.com/access.php",
+      "quote": "10台駐車可能な駐車場がございます",
+      "checkedAt": "2026-10-29"
+    },
+    {
+      "claim": "海の見える10畳の客室は2~4名",
+      "source": "https://suzakihamaya.com/facilities.php",
+      "quote": "受入人数：2～4名様",
+      "checkedAt": "2026-10-29"
+    },
+    {
+      "claim": "海の見えるゆったり15畳はバス・トイレ無し",
+      "source": "https://suzakihamaya.com/facilities.php",
+      "quote": "バス・トイレは付いておりません",
+      "checkedAt": "2026-10-29"
+    },
+    {
+      "claim": "山側30畳大広間は8~15名",
+      "source": "https://suzakihamaya.com/facilities.php",
+      "quote": "受入人数：8～15名様",
+      "checkedAt": "2026-10-29"
+    },
+    {
+      "claim": "全室に冷暖房・テレビ・お茶セットを備える",
+      "source": "https://suzakihamaya.com/facilities.php",
+      "quote": "冷暖房完備・テレビ・お茶セット",
+      "checkedAt": "2026-10-29"
+    },
+    {
+      "claim": "離れの浴場で2つの須崎温泉を利用できる",
+      "source": "https://suzakihamaya.com/facilities.php",
+      "quote": "2つの須崎温泉をお楽しみいただけます",
+      "checkedAt": "2026-10-29"
+    },
+    {
+      "claim": "お風呂は貸切りで利用できる",
+      "source": "https://suzakihamaya.com/facilities.php",
+      "quote": "貸切りでご利用いただけます",
+      "checkedAt": "2026-10-29"
+    },
+    {
+      "claim": "泉質は単純温泉、弱アルカリ性イオン水、緩和低張性泉",
+      "source": "https://suzakihamaya.com/facilities.php",
+      "quote": "単純温泉、弱アルカリ性イオン水、緩和低張性泉",
+      "checkedAt": "2026-10-29"
+    },
+    {
+      "claim": "スタンダードは新鮮なお刺身や煮魚など全9品程度",
+      "source": "https://suzakihamaya.com/cuisine.php",
+      "quote": "お刺身、煮魚など全９品程度",
+      "checkedAt": "2026-10-29"
+    },
+    {
+      "claim": "いけんだ煮みそは自家製の特製味噌で味付けする",
+      "source": "https://suzakihamaya.com/cuisine.php",
+      "quote": "自家製の特製味噌で味付けする",
+      "checkedAt": "2026-10-29"
+    },
+    {
+      "claim": "舟盛りは豪快な旬魚の舟盛り",
+      "source": "https://suzakihamaya.com/cuisine.php",
+      "quote": "豪快な旬魚の舟盛りです",
+      "checkedAt": "2026-10-29"
+    },
+    {
+      "claim": "朝食は地元の干物、卵焼き、サラダなどが並ぶ和食",
+      "source": "https://suzakihamaya.com/cuisine.php",
+      "quote": "地元の干物、卵焼き、サラダなどが並ぶ和食",
+      "checkedAt": "2026-10-29"
+    },
+    {
+      "claim": "本格船釣りの体験ができる",
+      "source": "https://suzakihamaya.com/experience.php",
+      "quote": "本格船釣り",
+      "checkedAt": "2026-10-29"
+    },
+    {
+      "claim": "朝夕・お気軽体験船釣りができる",
+      "source": "https://suzakihamaya.com/experience.php",
+      "quote": "朝夕・お気軽体験船釣り",
+      "checkedAt": "2026-10-29"
+    },
+    {
+      "claim": "須崎半島クルージングができる",
+      "source": "https://suzakihamaya.com/experience.php",
+      "quote": "須崎半島クルージング",
+      "checkedAt": "2026-10-29"
+    },
+    {
+      "claim": "地元の魚で作ったひものの干物づくり体験ができる",
+      "source": "https://suzakihamaya.com/experience.php",
+      "quote": "地元の魚で作ったひもの",
+      "checkedAt": "2026-10-29"
+    },
+    {
+      "claim": "シーカヤック体験ができる",
+      "source": "https://suzakihamaya.com/experience.php",
+      "quote": "シーカヤック",
+      "checkedAt": "2026-10-29"
+    },
+    {
+      "claim": "ダイビング体験ができる",
+      "source": "https://suzakihamaya.com/experience.php",
+      "quote": "ダイビング",
+      "checkedAt": "2026-10-29"
+    }
+  ],
+  "sources": [
+    {
+      "label": "公式サイト",
+      "url": "https://suzakihamaya.com/"
+    },
+    {
+      "label": "公式サイト(館内)",
+      "url": "https://suzakihamaya.com/facilities.php"
+    },
+    {
+      "label": "公式サイト(須崎の幸)",
+      "url": "https://suzakihamaya.com/cuisine.php"
+    },
+    {
+      "label": "公式サイト(体験)",
+      "url": "https://suzakihamaya.com/experience.php"
+    },
+    {
+      "label": "公式サイト(アクセス・周辺観光)",
+      "url": "https://suzakihamaya.com/access.php"
+    },
+    {
+      "label": "Google マップ",
+      "url": "https://maps.google.com/?cid=4470436645542697611"
+    }
+  ],
+  "notes": "automation/v2/write.mjs が 2026-10-29 に claude -p --model sonnet で作成。事実の裏取り: 23/23 件(quote が出どころにあるもの)。裏取りに通らなかった facts は載せていない。"
+}

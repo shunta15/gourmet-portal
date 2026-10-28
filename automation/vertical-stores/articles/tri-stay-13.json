@@ -1,0 +1,242 @@
+{
+  "key": "tri-stay-13",
+  "headline": "宮城県気仙沼市の気仙沼大島、高台に建つ旅館。客室はすべて和室のオーシャンビューで、大浴場と家族風呂がある",
+  "lede": "気仙沼市にある「旅館黒潮」です。気仙沼大島の高台に建ち、総客室数12室はすべて和室でオーシャンビューです。大浴場と家族風呂があります。",
+  "sections": [
+    {
+      "heading": "場所とアクセス",
+      "body": "住所は宮城県気仙沼市字駒形111、電話は0226-28-2125です。東北新幹線で一関まで行き、大船渡線に乗り換えて気仙沼へ向かう経路のほか、三陸自動車道の浦島大島ICから県道218・208を進む道のりがあります。チェックインは15:00から21:00まで、チェックアウトは10:00までです。"
+    },
+    {
+      "heading": "客室とお風呂",
+      "body": "客室はすべて和室でオーシャンビュー、広縁と洗面所が付いています。バス・トイレ付きでバリアフリー対応の客室もあります。大浴場は花崗岩角閃石、ブラックシリカ、麦飯石、十和田石の4種類の鉱石を使用し、入浴時間は16:30から22:30までです。家族で入浴できる貸切風呂もあり、バリアフリー対応で入浴時間は16:00から22:30までです。"
+    },
+    {
+      "heading": "食事",
+      "body": "気仙沼の海の幸を使った磯料理が中心で、海藻と豚肉を合わせたしゃぶしゃぶ、1人前150gのフカヒレの姿煮、マグロカブト焼きがあります。大島カブやムール貝をのせ薪ストーブで焼く手作りピザのほか、海の見えるウッドデッキでの夕食・昼食のバーベキューは5月から10月限定です。野菜は自家栽培です。"
+    },
+    {
+      "heading": "館内",
+      "body": "フロント・ロビーはリニューアルされており、冬は薪ストーブを使います。10畳の部屋があり宴会やグループでの利用に向くほか、大広間（70畳）もあります。システムキッチン付きの部屋があり自炊もできます。総客室数は12室です。"
+    }
+  ],
+  "rooms": [
+    {
+      "name": "和室(オーシャンビュー)"
+    },
+    {
+      "name": "バス・トイレ付き客室(バリアフリー対応)"
+    }
+  ],
+  "menus": [
+    {
+      "name": "海藻と豚肉のしゃぶしゃぶ"
+    },
+    {
+      "name": "フカヒレの姿煮"
+    },
+    {
+      "name": "マグロカブト焼き"
+    },
+    {
+      "name": "手作りピザ"
+    },
+    {
+      "name": "海鮮バーベキュー"
+    }
+  ],
+  "tags": [],
+  "facts": [
+    {
+      "claim": "施設名は旅館黒潮",
+      "source": "http://kurosio.info/",
+      "quote": "旅館 黒潮",
+      "checkedAt": "2026-10-29"
+    },
+    {
+      "claim": "気仙沼大島の高台に建つ",
+      "source": "http://kurosio.info/",
+      "quote": "高台にある当館から見渡す景色は",
+      "checkedAt": "2026-10-29"
+    },
+    {
+      "claim": "住所は宮城県気仙沼市字駒形111",
+      "source": "http://kurosio.info/",
+      "quote": "〒988-0633 宮城県気仙沼市字駒形111",
+      "checkedAt": "2026-10-29"
+    },
+    {
+      "claim": "電話は0226-28-2125",
+      "source": "http://kurosio.info/",
+      "quote": "TEL 0226-28-2125",
+      "checkedAt": "2026-10-29"
+    },
+    {
+      "claim": "チェックインは15:00から21:00",
+      "source": "http://kurosio.info/access/index.html",
+      "quote": "チェックイン 15：00～21：00",
+      "checkedAt": "2026-10-29"
+    },
+    {
+      "claim": "チェックアウトは10:00まで",
+      "source": "http://kurosio.info/access/index.html",
+      "quote": "チェックアウト ～10：00",
+      "checkedAt": "2026-10-29"
+    },
+    {
+      "claim": "東北新幹線で一関まで行き大船渡線で気仙沼へ向かう経路がある",
+      "source": "http://kurosio.info/access/index.html",
+      "quote": "一関 → 気仙沼（1時間30分）",
+      "checkedAt": "2026-10-29"
+    },
+    {
+      "claim": "三陸自動車道の浦島大島ICから県道218・208を進む経路がある",
+      "source": "http://kurosio.info/access/index.html",
+      "quote": "浦島大島ICを降りる 県道218 → 県道208を進む",
+      "checkedAt": "2026-10-29"
+    },
+    {
+      "claim": "総客室数は12室",
+      "source": "http://kurosio.info/facilities/index.html",
+      "quote": "総客室数12室（収容人数大人66名",
+      "checkedAt": "2026-10-29"
+    },
+    {
+      "claim": "客室はすべて和室でオーシャンビュー",
+      "source": "http://kurosio.info/facilities/index.html",
+      "quote": "すべての客室がオーシャンビューです。",
+      "checkedAt": "2026-10-29"
+    },
+    {
+      "claim": "客室には広縁、洗面所が付く",
+      "source": "http://kurosio.info/facilities/index.html",
+      "quote": "広縁、洗面所が付いた過ごしやすいお部屋です。",
+      "checkedAt": "2026-10-29"
+    },
+    {
+      "claim": "バス・トイレ付きでバリアフリー対応の客室がある",
+      "source": "http://kurosio.info/facilities/index.html",
+      "quote": "バス・トイレ（バリアフリー対応）付きの客室もございます。",
+      "checkedAt": "2026-10-29"
+    },
+    {
+      "claim": "大浴場は花崗岩角閃石、ブラックシリカ、麦飯石、十和田石の4種類の鉱石を使用",
+      "source": "http://kurosio.info/facilities/index.html",
+      "quote": "４種類の鉱石を使用しており",
+      "checkedAt": "2026-10-29"
+    },
+    {
+      "claim": "大浴場の入浴時間は16:30から22:30",
+      "source": "http://kurosio.info/facilities/index.html",
+      "quote": "入浴時間／16：30～22：30",
+      "checkedAt": "2026-10-29"
+    },
+    {
+      "claim": "家族で入浴できる貸切風呂がありバリアフリー対応",
+      "source": "http://kurosio.info/facilities/index.html",
+      "quote": "家族で入浴できる貸切風呂です。バリアフリー対応ですので",
+      "checkedAt": "2026-10-29"
+    },
+    {
+      "claim": "家族風呂の入浴時間は16:00から22:30",
+      "source": "http://kurosio.info/facilities/index.html",
+      "quote": "入浴時間／16：00～22：30",
+      "checkedAt": "2026-10-29"
+    },
+    {
+      "claim": "フロント・ロビーはリニューアルされている",
+      "source": "http://kurosio.info/facilities/index.html",
+      "quote": "リニューアルしたフロント・ロビーです。",
+      "checkedAt": "2026-10-29"
+    },
+    {
+      "claim": "冬は薪ストーブを使う",
+      "source": "http://kurosio.info/facilities/index.html",
+      "quote": "冬は薪ストーブが大活躍。",
+      "checkedAt": "2026-10-29"
+    },
+    {
+      "claim": "10畳の部屋があり宴会やグループでの利用に向く",
+      "source": "http://kurosio.info/facilities/index.html",
+      "quote": "広さは10畳で、小～中規模の宴会やグループで",
+      "checkedAt": "2026-10-29"
+    },
+    {
+      "claim": "大広間（70畳）がある",
+      "source": "http://kurosio.info/facilities/index.html",
+      "quote": "大広間（70畳）",
+      "checkedAt": "2026-10-29"
+    },
+    {
+      "claim": "システムキッチン付きの部屋があり自炊できる",
+      "source": "http://kurosio.info/facilities/index.html",
+      "quote": "システムキッチンがあり、自炊も可能です。",
+      "checkedAt": "2026-10-29"
+    },
+    {
+      "claim": "海藻と豚肉を合わせたしゃぶしゃぶがある",
+      "source": "http://kurosio.info/cuisine/index.html",
+      "quote": "旬の海の幸と豚肉がコラボしたしゃぶしゃぶです。",
+      "checkedAt": "2026-10-29"
+    },
+    {
+      "claim": "フカヒレの姿煮は1人前150g",
+      "source": "http://kurosio.info/cuisine/index.html",
+      "quote": "1人前150gのフカヒレを姿煮で贅沢にどうぞ。",
+      "checkedAt": "2026-10-29"
+    },
+    {
+      "claim": "マグロカブト焼きがある",
+      "source": "http://kurosio.info/cuisine/index.html",
+      "quote": "名物のマグロカブト焼きです。",
+      "checkedAt": "2026-10-29"
+    },
+    {
+      "claim": "大島カブやムール貝をのせ薪ストーブで焼く手作りピザがある",
+      "source": "http://kurosio.info/cuisine/index.html",
+      "quote": "薪ストーブで焼きあげる手作りピザ。",
+      "checkedAt": "2026-10-29"
+    },
+    {
+      "claim": "海の見えるウッドデッキで夕食・昼食のバーベキューができる",
+      "source": "http://kurosio.info/cuisine/index.html",
+      "quote": "夕食・昼食のバーベキューが楽しめます。",
+      "checkedAt": "2026-10-29"
+    },
+    {
+      "claim": "バーベキューは5月から10月限定",
+      "source": "http://kurosio.info/cuisine/index.html",
+      "quote": "冬季は寒いので、5月～10月限定です。",
+      "checkedAt": "2026-10-29"
+    },
+    {
+      "claim": "野菜は自家栽培",
+      "source": "http://kurosio.info/cuisine/index.html",
+      "quote": "自家栽培した野菜です。",
+      "checkedAt": "2026-10-29"
+    }
+  ],
+  "sources": [
+    {
+      "label": "公式サイト",
+      "url": "http://kurosio.info/"
+    },
+    {
+      "label": "公式サイト(アクセス)",
+      "url": "http://kurosio.info/access/index.html"
+    },
+    {
+      "label": "公式サイト(お料理)",
+      "url": "http://kurosio.info/cuisine/index.html"
+    },
+    {
+      "label": "公式サイト(館内)",
+      "url": "http://kurosio.info/facilities/index.html"
+    },
+    {
+      "label": "Google マップ",
+      "url": "https://maps.google.com/?cid=17882795925316949287"
+    }
+  ],
+  "notes": "automation/v2/write.mjs が 2026-10-29 に claude -p --model sonnet で作成。事実の裏取り: 28/28 件(quote が出どころにあるもの)。裏取りに通らなかった facts は載せていない。"
+}

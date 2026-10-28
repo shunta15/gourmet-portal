@@ -15731,6 +15731,205 @@ export const ARTICLE_STORES: Restaurant[] = [
       "中京区"
     ],
     "featureId": "マルシェノグチ"
+  },
+  {
+    "id": "r776",
+    "name": "カフェ ルンビータ Cafe Rumbita",
+    "cuisine": "サルサダンス教室",
+    "area": "京都府・京都市中京区",
+    "region": "kyoto",
+    "shape": "square",
+    "image": "/restaurants/teleapo-カフェルンビータCafeRumbita/hero.jpg",
+    "heroImages": [
+      "/restaurants/teleapo-カフェルンビータCafeRumbita/hero.jpg",
+      "/restaurants/teleapo-カフェルンビータCafeRumbita/point1.jpg",
+      "/restaurants/teleapo-カフェルンビータCafeRumbita/point2.jpg",
+      "/restaurants/teleapo-カフェルンビータCafeRumbita/point3.jpg",
+      "/restaurants/teleapo-カフェルンビータCafeRumbita/point4.jpg"
+    ],
+    "gallery": [
+      "/restaurants/teleapo-カフェルンビータCafeRumbita/hero.jpg",
+      "/restaurants/teleapo-カフェルンビータCafeRumbita/point1.jpg",
+      "/restaurants/teleapo-カフェルンビータCafeRumbita/point2.jpg",
+      "/restaurants/teleapo-カフェルンビータCafeRumbita/point3.jpg",
+      "/restaurants/teleapo-カフェルンビータCafeRumbita/point4.jpg",
+      "/restaurants/teleapo-カフェルンビータCafeRumbita/point5.jpg"
+    ],
+    "desc": "京都府京都市中京区のサルサダンス教室。最寄りは三条駅・京都河原町駅・京都市役所前駅から徒歩5分。",
+    "address": "京都府京都市中京区山崎町258-19 カマル 3F",
+    "hours": "—（訪問前に公式確認）",
+    "closed": "—（訪問前に公式確認）",
+    "seats": "30席",
+    "nearest": "三条駅・京都河原町駅・京都市役所前駅から徒歩5分",
+    "phone": "075-212-1504",
+    "source": {
+      "label": "Google ビジネスプロフィール",
+      "url": "https://maps.google.com/?cid=8837920264836715947"
+    },
+    "body": [
+      "カフェ ルンビータ Cafe Rumbitaは、京都府京都市中京区にあるお店です。業態は「サルサダンス教室」、所在地は京都府京都市中京区山崎町258-19 カマル 3F、最寄りは三条駅・京都河原町駅・京都市役所前駅から徒歩5分です。マチノワ編集部の特集記事では、「定番からヴィンテージまで揃うラムのカクテル」・「20名以上のコーチが教えるサルサダンスのレッスン」などを取り上げています。",
+      "営業時間と定休日は取得できていないため、訪問前に公式の情報でご確認ください。席は30席。営業時間や価格は変わることがあるため、訪問前に公式サイトやSNS、お電話でご確認ください。"
+    ],
+    "highlights": [
+      "定番からヴィンテージまで揃うラムのカクテル",
+      "20名以上のコーチが教えるサルサダンスのレッスン",
+      "ホットドッグやサンドイッチなどの軽食",
+      "30席のバーカウンターと貸し切りスタジオ",
+      "3駅から徒歩5分、駅近のアクセス"
+    ],
+    "tags": [
+      "サルサダンス教室",
+      "中京区",
+      "三条駅",
+      "貸切可"
+    ],
+    "featureId": "カフェルンビータCafeRumbita"
+  },
+  {
+    "id": "r777",
+    "name": "アーニーハウス",
+    "cuisine": "カフェ・スイーツ",
+    "area": "奈良県・奈良市",
+    "region": "nara",
+    "shape": "square",
+    "image": "/restaurants/teleapo-アーニーハウス/hero.jpg",
+    "heroImages": [
+      "/restaurants/teleapo-アーニーハウス/hero.jpg",
+      "/restaurants/teleapo-アーニーハウス/point1.jpg",
+      "/restaurants/teleapo-アーニーハウス/point2.jpg",
+      "/restaurants/teleapo-アーニーハウス/point3.jpg"
+    ],
+    "gallery": [
+      "/restaurants/teleapo-アーニーハウス/hero.jpg",
+      "/restaurants/teleapo-アーニーハウス/point1.jpg",
+      "/restaurants/teleapo-アーニーハウス/point2.jpg",
+      "/restaurants/teleapo-アーニーハウス/point3.jpg"
+    ],
+    "desc": "アーニーハウスは、奈良県奈良市富雄元町にあるカフェ・スイーツの店だ。",
+    "address": "奈良県奈良市富雄元町2丁目6-40 川上ビル",
+    "hours": "—（訪問前に公式確認）",
+    "closed": "—（訪問前に公式確認）",
+    "seats": "20席",
+    "nearest": "—",
+    "phone": "0742-51-3235",
+    "source": {
+      "label": "Google ビジネスプロフィール",
+      "url": "https://maps.google.com/?cid=9804950165752452381"
+    },
+    "body": [
+      "アーニーハウスは、奈良県奈良市にあるお店です。業態は「カフェ・スイーツ」、所在地は奈良県奈良市富雄元町2丁目6-40 川上ビルです。マチノワ編集部の特集記事では、「カフェ・スイーツのジャンルで営業」・「テーブル席とカウンター席で総席数20席」などを取り上げています。",
+      "営業時間と定休日は取得できていないため、訪問前に公式の情報でご確認ください。席は20席。営業時間や価格は変わることがあるため、訪問前に公式サイトやSNS、お電話でご確認ください。"
+    ],
+    "highlights": [
+      "カフェ・スイーツのジャンルで営業",
+      "テーブル席とカウンター席で総席数20席",
+      "富雄駅から142メートルの立地",
+      "月・水〜日曜8時から19時30分の営業"
+    ],
+    "tags": [
+      "カフェ・スイーツ",
+      "カフェテリア",
+      "奈良市"
+    ],
+    "featureId": "アーニーハウス"
+  },
+  {
+    "id": "r778",
+    "name": "茶房金木犀",
+    "cuisine": "カフェ・スイーツ",
+    "area": "広島県・広島市安佐北区",
+    "region": "hiroshima",
+    "shape": "square",
+    "image": "/restaurants/teleapo-茶房金木犀/hero.jpg",
+    "heroImages": [
+      "/restaurants/teleapo-茶房金木犀/hero.jpg",
+      "/restaurants/teleapo-茶房金木犀/point1.jpg",
+      "/restaurants/teleapo-茶房金木犀/point2.jpg",
+      "/restaurants/teleapo-茶房金木犀/point3.jpg",
+      "/restaurants/teleapo-茶房金木犀/point4.jpg"
+    ],
+    "gallery": [
+      "/restaurants/teleapo-茶房金木犀/hero.jpg",
+      "/restaurants/teleapo-茶房金木犀/point1.jpg",
+      "/restaurants/teleapo-茶房金木犀/point2.jpg",
+      "/restaurants/teleapo-茶房金木犀/point3.jpg",
+      "/restaurants/teleapo-茶房金木犀/point4.jpg"
+    ],
+    "desc": "広島県広島市安佐北区のカフェ・スイーツ。最寄りは国道54号線沿い・ガラスの里裏手。",
+    "address": "広島県広島市安佐北区大林町2442-1",
+    "hours": "—（訪問前に公式確認）",
+    "closed": "—（訪問前に公式確認）",
+    "seats": "34席",
+    "nearest": "国道54号線沿い・ガラスの里裏手",
+    "phone": "090-4694-7818",
+    "source": {
+      "label": "Google ビジネスプロフィール",
+      "url": "https://maps.google.com/?cid=6392213086544338123"
+    },
+    "body": [
+      "茶房金木犀は、広島県広島市安佐北区にあるお店です。業態は「カフェ・スイーツ」、所在地は広島県広島市安佐北区大林町2442-1、最寄りは国道54号線沿い・ガラスの里裏手です。マチノワ編集部の特集記事では、「2階に設けられたギャラリー」・「いろんな野菜を味わえる料理」などを取り上げています。",
+      "営業時間と定休日は取得できていないため、訪問前に公式の情報でご確認ください。席は34席。営業時間や価格は変わることがあるため、訪問前に公式サイトやSNS、お電話でご確認ください。"
+    ],
+    "highlights": [
+      "2階に設けられたギャラリー",
+      "いろんな野菜を味わえる料理",
+      "木造家屋の店内と庭",
+      "国道54号線沿い、ガラスの里裏のアクセス"
+    ],
+    "tags": [
+      "カフェ・スイーツ",
+      "アート ギャラリー",
+      "安佐北区"
+    ],
+    "featureId": "茶房金木犀"
+  },
+  {
+    "id": "r779",
+    "name": "バー リフューエル ハクバ",
+    "cuisine": "バー",
+    "area": "長野県・北安曇郡白馬村",
+    "region": "nagano",
+    "shape": "square",
+    "image": "/restaurants/teleapo-バーリフューエルハクバ/hero.jpg",
+    "heroImages": [
+      "/restaurants/teleapo-バーリフューエルハクバ/hero.jpg",
+      "/restaurants/teleapo-バーリフューエルハクバ/point1.jpg",
+      "/restaurants/teleapo-バーリフューエルハクバ/point2.jpg",
+      "/restaurants/teleapo-バーリフューエルハクバ/point4.jpg"
+    ],
+    "gallery": [
+      "/restaurants/teleapo-バーリフューエルハクバ/hero.jpg",
+      "/restaurants/teleapo-バーリフューエルハクバ/point1.jpg",
+      "/restaurants/teleapo-バーリフューエルハクバ/point2.jpg",
+      "/restaurants/teleapo-バーリフューエルハクバ/point4.jpg"
+    ],
+    "desc": "バー リフューエル ハクバは、長野県北安曇郡白馬村北城にある。最寄りは八方尾根スキー場で、徒歩2分の距離に店を構える。",
+    "address": "長野県北安曇郡白馬村北城5156",
+    "hours": "—（訪問前に公式確認）",
+    "closed": "—（訪問前に公式確認）",
+    "seats": "40席",
+    "nearest": "八方尾根スキー場から徒歩2分",
+    "phone": "0261-85-0907",
+    "instagram": "https://www.instagram.com/barrefuelhakuba",
+    "source": {
+      "label": "Google ビジネスプロフィール",
+      "url": "https://maps.google.com/?cid=12370099488585412535"
+    },
+    "body": [
+      "バー リフューエル ハクバは、長野県北安曇郡白馬村にあるお店です。業態は「バー」、所在地は長野県北安曇郡白馬村北城5156、最寄りは八方尾根スキー場から徒歩2分です。マチノワ編集部の特集記事では、「こだわりのハンバーガーと多彩なドリンク」・「八方尾根スキー場から徒歩2分」などを取り上げています。",
+      "営業時間と定休日は取得できていないため、訪問前に公式の情報でご確認ください。席は40席。営業時間や価格は変わることがあるため、訪問前に公式サイトやSNS、お電話でご確認ください。"
+    ],
+    "highlights": [
+      "こだわりのハンバーガーと多彩なドリンク",
+      "八方尾根スキー場から徒歩2分",
+      "地下フロアのソファ席とテーブル席",
+      "冬期は無休、営業は16時から翌2時まで"
+    ],
+    "tags": [
+      "バー",
+      "白馬村"
+    ],
+    "featureId": "バーリフューエルハクバ"
   }
 ];
 
@@ -16067,7 +16266,11 @@ export const ARTICLE_STORE_FEATURE_IDS: Record<string, string> = {
   "r772": "うなぎ処高はし",
   "r773": "海が見えるそば家",
   "r774": "雲仙湯せんぺい遠江屋本舗",
-  "r775": "マルシェノグチ"
+  "r775": "マルシェノグチ",
+  "r776": "カフェルンビータCafeRumbita",
+  "r777": "アーニーハウス",
+  "r778": "茶房金木犀",
+  "r779": "バーリフューエルハクバ"
 };
 
 /** 特集記事ID → 店舗ID */
@@ -16403,5 +16606,9 @@ export const ARTICLE_STORE_ID_BY_FEATURE: Record<string, string> = {
   "うなぎ処高はし": "r772",
   "海が見えるそば家": "r773",
   "雲仙湯せんぺい遠江屋本舗": "r774",
-  "マルシェノグチ": "r775"
+  "マルシェノグチ": "r775",
+  "カフェルンビータCafeRumbita": "r776",
+  "アーニーハウス": "r777",
+  "茶房金木犀": "r778",
+  "バーリフューエルハクバ": "r779"
 };

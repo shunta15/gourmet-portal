@@ -1,0 +1,106 @@
+{
+  "key": "tri-stay-13",
+  "images": [
+    {
+      "path": "/_portal/vshops/tri-stay-13/g01.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9SmA7f-kCJl-LqPEOOODfc8lFeViz8DcHZp1nJ8Vh7M8pLEbEc2zgK2EIpz1YUJrshlq6mV7rzwtM6GMIWiTV5jXBRXD1LWnC7aj5CO-HGcUhhZGLk9ohDDp5ZgmvQxjwimIFM=s1200",
+      "pageUrl": "https://maps.google.com/?cid=17882795925316949287",
+      "what": "木造の屋根付きウッドデッキがある建物入口",
+      "kind": "exterior",
+      "width": 1200,
+      "height": 900,
+      "source": "Google マップ"
+    },
+    {
+      "path": "/_portal/vshops/tri-stay-13/g02.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9TcTe_W7oT2pQyVaUCMgpcLQjFoWzJGNhzMVWVoy67Ct3UZiyz6MzPw9m6esX9qAMaR_MGBsnP-a87ypv-3qmGrTLyUzwzob58X-9Suq4Zjg14bU77bj2LyJyfseridjO9ZuKtR=s1200",
+      "pageUrl": "https://maps.google.com/?cid=17882795925316949287",
+      "what": "高台から海を望む夕景",
+      "kind": "view",
+      "width": 1200,
+      "height": 675,
+      "source": "Google マップ"
+    },
+    {
+      "path": "/_portal/vshops/tri-stay-13/g03.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9RrsWPTI9TqjhKKKmX9zbVdgqcVv_O0Y0wUw8kndvSq9n6QMKSmL00qucROeEJ__urZtMrbnqfz6BNfgJhvbuIiFCNZk6htcdPCjEbLZXU9eFJ07-GO4XS0-SgeHt87NflWC67XIQERPjc=s1200",
+      "pageUrl": "https://maps.google.com/?cid=17882795925316949287",
+      "what": "タイル張りの大浴場",
+      "kind": "bath",
+      "width": 1200,
+      "height": 900,
+      "source": "Google マップ"
+    },
+    {
+      "path": "/_portal/vshops/tri-stay-13/g04.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-proxy/ALd4DhGInTrRiTog9THBk2nSuudzWzxtPv9MihmWrdMpBF33y_UV6v9B_nrVnqnF1duTCo-JwDtafV8Yx-Qfa9hcqVQd7kPeH52eJcspdIJjtDfytmNKgzXhX8TQMlVA0vIhWaqLFIzKH1f8gzJ9iO_1aoxkDc7RPSLhSKM74MRU0GeKIwMlndIGpD3Wog=s1200",
+      "pageUrl": "https://maps.google.com/?cid=17882795925316949287",
+      "what": "行灯が灯る和風の玄関",
+      "kind": "exterior",
+      "width": 640,
+      "height": 480,
+      "source": "Google マップ"
+    },
+    {
+      "path": "/_portal/vshops/tri-stay-13/g05.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-proxy/ALd4DhGwBi3JKaOs1dIxWcRRBrkGd92qBwyo5jFFrGpohqWGbV7LThiyvnjKlGqyGhkWp161InD4-N3mr-CfGf7GnnEUXB_8pvwh71WwxguapGuYCUAgTluETKZQzy9kKuiPiU7WKQrCTn47yp16g3M4Dj9niXUSU6wvNP0FMHBbTHveqLAAD3MaZfVk=s1200",
+      "pageUrl": "https://maps.google.com/?cid=17882795925316949287",
+      "what": "二階建ての建物外観と駐車場",
+      "kind": "exterior",
+      "width": 640,
+      "height": 480,
+      "source": "Google マップ"
+    },
+    {
+      "path": "/_portal/vshops/tri-stay-13/g06.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-proxy/ALd4DhHDs3x3roWkqQyogW8DLq4SpD_E9FkVERYFJfoFF7k3hTzMSICAmWmXbVJcC4mhVT382a8-antrrll_MOaoWEdpzbA-e-8jkVkJJxZu-0ey6CJyuNbuSQUIElIE2b7bnGzrL8fgUeHct-1e6fCrZI4OCJBSJqd5gxKK2JyxCkBzJmgejwvhfgkF=s1200",
+      "pageUrl": "https://maps.google.com/?cid=17882795925316949287",
+      "what": "緑の椅子が並ぶ木目調のロビー",
+      "kind": "common",
+      "width": 640,
+      "height": 480,
+      "source": "Google マップ"
+    },
+    {
+      "path": "/_portal/vshops/tri-stay-13/g07.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9QOoQtra7UZkEUckg5meN7hs27Vh_ysiDIvWgWgyPC2PfVu3iu9S2gCNZ8hCB-Y4ZgBwtCklKQ_CdlPKMxRQYTtCugGsbuxmqlHOTN9DepeaIh-SeKXf_htvVYgjgyY5Tvd-uojow=s1200",
+      "pageUrl": "https://maps.google.com/?cid=17882795925316949287",
+      "what": "駐車場越しに海を望む景色",
+      "kind": "view",
+      "width": 960,
+      "height": 720,
+      "source": "Google マップ"
+    },
+    {
+      "path": "/_portal/vshops/tri-stay-13/g08.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9TJI9vMqcbGZStOGwrjxF58LouOqqsSr4ogSqjy_NzhR_9Q6kjH7QKTblofP4omMT4j5VlTIJGosQWwKDBTle8hsa-IoCw656gyAV32YmYXThALrasRi1a8d24O8wS_NSzZswbdRA=s1200",
+      "pageUrl": "https://maps.google.com/?cid=17882795925316949287",
+      "what": "だし汁が入った小鉢",
+      "kind": "meal",
+      "width": 1200,
+      "height": 675,
+      "source": "Google マップ"
+    },
+    {
+      "path": "/_portal/vshops/tri-stay-13/g09.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9TP6DRyuzHeweGk-Kzl5LyT4Bu6EFVMuJDmEAd8XAh2V5VtvL_YG62nUbFqv186rs44CVWtdlfafitYBtW3x448z8yplYF44f2Kr_HN24eYlgphnsvo-pO-KowwQ1MzLqJeZ9dzOw=s1200",
+      "pageUrl": "https://maps.google.com/?cid=17882795925316949287",
+      "what": "マグロやいくらをのせた海鮮丼",
+      "kind": "meal",
+      "width": 900,
+      "height": 1200,
+      "source": "Google マップ"
+    },
+    {
+      "path": "/_portal/vshops/tri-stay-13/g10.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9R1xHxkc3pCWPsTog3UdegIfTl_dq0Hs35gStULQyGI175URRmjlUI1qw3N5Pb67-hkMS6PVFuAVVIjN5V3D-VNn-tO1Raj9NcT3M3QFavBPu004g3n0BpqMAkicHLwXmZOPwT0=s1200",
+      "pageUrl": "https://maps.google.com/?cid=17882795925316949287",
+      "what": "野菜が入った汁物",
+      "kind": "meal",
+      "width": 1200,
+      "height": 675,
+      "source": "Google マップ"
+    }
+  ],
+  "note": "automation/v2/write.mjs が 2026-10-28T20:17:31.318Z に取得。店の実写だけ(AI 画像・汎用画像・地図・ロゴ・顔が大きい画像は除外)。"
+}

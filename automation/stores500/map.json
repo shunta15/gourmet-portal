@@ -1678,5 +1678,25 @@
     "articleId": "マルシェノグチ",
     "sheetName": "マルシェノグチ",
     "mapsUrl": "https://maps.google.com/?cid=6141782586603461053"
+  },
+  {
+    "articleId": "カフェルンビータCafeRumbita",
+    "sheetName": "カフェ ルンビータ Cafe Rumbita",
+    "mapsUrl": "https://maps.google.com/?cid=8837920264836715947"
+  },
+  {
+    "articleId": "アーニーハウス",
+    "sheetName": "アーニーハウス",
+    "mapsUrl": "https://maps.google.com/?cid=9804950165752452381"
+  },
+  {
+    "articleId": "茶房金木犀",
+    "sheetName": "茶房 金木犀",
+    "mapsUrl": "https://maps.google.com/?cid=6392213086544338123"
+  },
+  {
+    "articleId": "バーリフューエルハクバ",
+    "sheetName": "バー リフューエル ハクバ",
+    "mapsUrl": "https://maps.google.com/?cid=12370099488585412535"
   }
 ]

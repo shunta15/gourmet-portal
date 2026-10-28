@@ -1,0 +1,210 @@
+{
+  "key": "tri-life-9",
+  "headline": "静岡県焼津市一色にある曹洞宗の寺院。創建は文保元年(1317年)で、本尊は釈迦牟尼佛",
+  "lede": "焼津市にある「成道寺」です。文保元年(1317年)の創建で、永禄十年(1567年)に曹洞宗の寺院として中興されました。本尊は釈迦牟尼佛、住職は二十八世・真浄一也(伊久美一也)です。",
+  "sections": [
+    {
+      "heading": "場所とアクセス",
+      "body": "所在地は静岡県焼津市一色460、電話は054-624-6060です。JR焼津駅からしずてつバスで「成道寺前」下車です。車では東名高速道路の八楠インターチェンジから約25分、新東名高速道路の大井川スマートインターチェンジから約15分の距離にあります。境内には約30台分の駐車場があります。"
+    },
+    {
+      "heading": "歴史と由緒",
+      "body": "創建は文保元年(1317年)で、当時は「光源寺」という名の臨済宗の寺院でした。永禄十年(1567年)、和尚の超翁禅越が檀家とともに曹洞宗へ改め、寺号を成道寺に改めました。開基は武田家の老将・秋山伯耆守信友です。本寺は藤枝市の常楽院、本尊は釈迦牟尼佛です。"
+    },
+    {
+      "heading": "年中行持",
+      "body": "3月1日には三人の開山を供養する開山忌、4月8日には降誕会(花まつり)、8月12日には大施食会、12月8日には成道会、12月25日には大般若経600巻を転読する大般若祈祷があります。12月31日の除夜の鐘は、どなたでも撞くことができます。"
+    },
+    {
+      "heading": "法要とウェブでの発信",
+      "body": "本堂での寺院葬の案内や供養・法要の相談を受け付けています。仏教の教えや法要の作法を解説する「お寺の辞典」、道元禅師の『正法眼蔵』を読み進める法話のブログがあります。"
+    }
+  ],
+  "menus": [
+    {
+      "name": "寺院葬"
+    },
+    {
+      "name": "開山忌"
+    },
+    {
+      "name": "降誕会(花まつり)"
+    },
+    {
+      "name": "大施食会"
+    },
+    {
+      "name": "成道会"
+    },
+    {
+      "name": "大般若祈祷"
+    },
+    {
+      "name": "除夜の鐘"
+    },
+    {
+      "name": "供養・法要"
+    }
+  ],
+  "tags": [
+    {
+      "tag": "駐車場あり",
+      "factIndex": 9
+    },
+    {
+      "tag": "体験あり",
+      "factIndex": 10
+    }
+  ],
+  "facts": [
+    {
+      "claim": "成道寺は静岡県焼津市一色に位置する曹洞宗の寺院",
+      "source": "https://www.joudouji.com/",
+      "quote": "静岡県焼津市一色に位置する曹洞宗の寺院です",
+      "checkedAt": "2026-10-29"
+    },
+    {
+      "claim": "創建は文保元年(1317年)",
+      "source": "https://www.joudouji.com/about",
+      "quote": "文保元年（1317年）",
+      "checkedAt": "2026-10-29"
+    },
+    {
+      "claim": "本尊は釈迦牟尼佛(脇立:迦葉尊者・阿難尊者)",
+      "source": "https://www.joudouji.com/about",
+      "quote": "釈迦牟尼佛（脇立：迦葉尊者・阿難尊者）",
+      "checkedAt": "2026-10-29"
+    },
+    {
+      "claim": "住職は二十八世・真浄一也(伊久美一也)",
+      "source": "https://www.joudouji.com/about",
+      "quote": "二十八世 真浄一也（伊久美 一也）",
+      "checkedAt": "2026-10-29"
+    },
+    {
+      "claim": "本寺は常楽院(藤枝市)",
+      "source": "https://www.joudouji.com/about",
+      "quote": "本寺 常楽院（藤枝市）",
+      "checkedAt": "2026-10-29"
+    },
+    {
+      "claim": "所在地は静岡県焼津市一色460",
+      "source": "https://www.joudouji.com/access",
+      "quote": "静岡県焼津市一色460",
+      "checkedAt": "2026-10-29"
+    },
+    {
+      "claim": "電話は054-624-6060",
+      "source": "https://www.joudouji.com/access",
+      "quote": "054-624-6060",
+      "checkedAt": "2026-10-29"
+    },
+    {
+      "claim": "JR焼津駅よりしずてつバスで「成道寺前」下車(約25分)",
+      "source": "https://www.joudouji.com/access",
+      "quote": "JR焼津駅よりしずてつバスにて「成道寺前」下車（約25分）",
+      "checkedAt": "2026-10-29"
+    },
+    {
+      "claim": "東名高速道路の八楠インターチェンジより約25分",
+      "source": "https://www.joudouji.com/access",
+      "quote": "東名高速道路「八楠インターチェンジ」より約25分",
+      "checkedAt": "2026-10-29"
+    },
+    {
+      "claim": "境内駐車場あり(約30台)",
+      "source": "https://www.joudouji.com/access",
+      "quote": "境内駐車場あり（約30台）",
+      "checkedAt": "2026-10-29"
+    },
+    {
+      "claim": "12月31日の除夜の鐘はどなたでも撞くことができる",
+      "source": "https://www.joudouji.com/events",
+      "quote": "どなたでも鐘を撞くことができます",
+      "checkedAt": "2026-10-29"
+    },
+    {
+      "claim": "3月1日は開山忌",
+      "source": "https://www.joudouji.com/events",
+      "quote": "開山忌（かいさんき）",
+      "checkedAt": "2026-10-29"
+    },
+    {
+      "claim": "4月8日は降誕会(花まつり)",
+      "source": "https://www.joudouji.com/events",
+      "quote": "降誕会（花まつり）",
+      "checkedAt": "2026-10-29"
+    },
+    {
+      "claim": "8月12日は大施食会(おせがき)",
+      "source": "https://www.joudouji.com/events",
+      "quote": "大施食会（おせがき）",
+      "checkedAt": "2026-10-29"
+    },
+    {
+      "claim": "12月8日は成道会",
+      "source": "https://www.joudouji.com/events",
+      "quote": "成道会（じょうどうえ）",
+      "checkedAt": "2026-10-29"
+    },
+    {
+      "claim": "12月25日は大般若経600巻を転読する大般若祈祷",
+      "source": "https://www.joudouji.com/events",
+      "quote": "大般若経600巻を転読し",
+      "checkedAt": "2026-10-29"
+    },
+    {
+      "claim": "成道寺は本堂での寺院葬を案内している",
+      "source": "https://www.joudouji.com/",
+      "quote": "本堂での寺院葬をご案内しております",
+      "checkedAt": "2026-10-29"
+    },
+    {
+      "claim": "創建当初は「光源寺」という名で臨済宗の寺院として創建された",
+      "source": "https://www.joudouji.com/about",
+      "quote": "「光源寺」という名で、臨済宗のお寺として創建されました",
+      "checkedAt": "2026-10-29"
+    },
+    {
+      "claim": "永禄十年(1567年)、成道寺は曹洞宗のお寺として中興された",
+      "source": "https://www.joudouji.com/about",
+      "quote": "成道寺は曹洞宗のお寺として中興されます",
+      "checkedAt": "2026-10-29"
+    },
+    {
+      "claim": "開基は武田家の老将・秋山伯耆守信友",
+      "source": "https://www.joudouji.com/about",
+      "quote": "武田家の老将・秋山伯耆守信友",
+      "checkedAt": "2026-10-29"
+    },
+    {
+      "claim": "Googleマップの業種の表示は仏教寺院",
+      "source": "https://maps.google.com/?cid=3639832903264442948",
+      "quote": "仏教寺院",
+      "checkedAt": "2026-10-29"
+    }
+  ],
+  "sources": [
+    {
+      "label": "公式サイト",
+      "url": "https://www.joudouji.com/"
+    },
+    {
+      "label": "公式サイト(アクセス)",
+      "url": "https://www.joudouji.com/access"
+    },
+    {
+      "label": "公式サイト(当寺について)",
+      "url": "https://www.joudouji.com/about"
+    },
+    {
+      "label": "公式サイト(年中行持)",
+      "url": "https://www.joudouji.com/events"
+    },
+    {
+      "label": "Google マップ",
+      "url": "https://maps.google.com/?cid=3639832903264442948"
+    }
+  ],
+  "notes": "automation/v2/write.mjs が 2026-10-29 に claude -p --model sonnet で作成。事実の裏取り: 21/21 件(quote が出どころにあるもの)。裏取りに通らなかった facts は載せていない。"
+}

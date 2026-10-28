@@ -1,0 +1,32 @@
+{
+  "tab": "トリニティアポ",
+  "tabEn": "tri-sports",
+  "row": 3,
+  "sheet": {
+    "name": "鳥居ボクシングアンドフィットネスジム",
+    "address": "",
+    "url": "https://www.google.com/maps/search/?api=1&query=%E9%B3%A5%E5%B1%85%E3%83%9C%E3%82%AF%E3%82%B7%E3%83%B3%E3%82%B0%E3%82%A2%E3%83%B3%E3%83%89%E3%83%95%E3%82%A3%E3%83%83%E3%83%88%E3%83%8D%E3%82%B9%E3%82%B8%E3%83%A0%20094-443-1343%20",
+    "type": "ジム",
+    "d1": "",
+    "d2": ""
+  },
+  "urlKind": "mapsApi",
+  "route": "第1段(verify-gbp.mjs)で確認済み",
+  "verdict": "一致",
+  "verdictReason": "手がかり: 店名＋電話。電話が一致／店名: exact(シート「鳥居ボクシングアンドフィットネスジム」/ マップ「鳥居ボクシング＆フィットネスジム」)",
+  "place": {
+    "name": "鳥居ボクシング＆フィットネスジム",
+    "address": "福岡県大牟田市新栄町１３−１１",
+    "category": "スポーツジム",
+    "lat": 33.038861,
+    "lng": 130.448346,
+    "gbpUrl": "https://maps.google.com/?cid=17787966806653822551",
+    "phone": "0944-43-1343",
+    "website": null,
+    "hours": null,
+    "reserveLinks": [],
+    "statusSignals": [],
+    "closedSignal": false
+  },
+  "fetchedAt": "2026-10-28T19:56:04.770Z"
+}

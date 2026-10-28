@@ -1,0 +1,32 @@
+{
+  "tab": "トリニティアポ",
+  "tabEn": "tri-life",
+  "row": 9,
+  "sheet": {
+    "name": "成道寺",
+    "address": "",
+    "url": "https://www.google.com/maps/search/?api=1&query=%E6%88%90%E9%81%93%E5%AF%BA%20054-624-6060%20",
+    "type": "寺",
+    "d1": "",
+    "d2": ""
+  },
+  "urlKind": "mapsApi",
+  "route": "第1段(verify-gbp.mjs)で確認済み",
+  "verdict": "一致",
+  "verdictReason": "手がかり: 店名＋電話＋住所(番地まで)。電話が一致／店名: exact(シート「成道寺」/ マップ「成道寺」)／住所(シート): exact・町名・番地とも一致",
+  "place": {
+    "name": "成道寺",
+    "address": "静岡県焼津市一色４６０",
+    "category": "仏教寺院",
+    "lat": 34.824086,
+    "lng": 138.3168857,
+    "gbpUrl": "https://maps.google.com/?cid=3639832903264442948",
+    "phone": "054-624-6060",
+    "website": "http://www.joudouji.com/",
+    "hours": null,
+    "reserveLinks": [],
+    "statusSignals": [],
+    "closedSignal": false
+  },
+  "fetchedAt": "2026-10-28T20:01:09.699Z"
+}
