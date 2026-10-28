@@ -1,0 +1,32 @@
+{
+  "tab": "トリニティアポ",
+  "tabEn": "tri-life",
+  "row": 264,
+  "sheet": {
+    "name": "隆国寺",
+    "address": "",
+    "url": "https://www.google.com/maps/search/?api=1&query=%E9%9A%86%E5%9B%BD%E5%AF%BA%20079-644-0005%20%E3%80%92669-5356%20%E5%85%B5%E5%BA%AB%E7%9C%8C%E8%B1%8A%E5%B2%A1%E5%B8%82%E6%97%A5%E9%AB%98%E7%94%BA%E8%8D%92%E5%B7%9D%EF%BC%92%EF%BC%92",
+    "type": "寺",
+    "d1": "",
+    "d2": ""
+  },
+  "urlKind": "mapsApi",
+  "route": "第1段(verify-gbp.mjs)で確認済み",
+  "verdict": "一致",
+  "verdictReason": "手がかり: 店名＋電話＋住所(番地まで)。電話が一致／店名: exact(シート「隆国寺」/ マップ「隆国寺」)／住所(シート): exact・町名・番地とも一致",
+  "place": {
+    "name": "隆国寺",
+    "address": "兵庫県豊岡市日高町荒川２２",
+    "category": "仏教寺院",
+    "lat": 35.4568642,
+    "lng": 134.7214847,
+    "gbpUrl": "https://maps.google.com/?cid=13381104279920706698",
+    "phone": "0796-44-0005",
+    "website": "http://ryukoku-ji.com/",
+    "hours": null,
+    "reserveLinks": [],
+    "statusSignals": [],
+    "closedSignal": false
+  },
+  "fetchedAt": "2026-10-28T08:44:36.126Z"
+}

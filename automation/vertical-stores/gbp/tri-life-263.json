@@ -1,0 +1,32 @@
+{
+  "tab": "トリニティアポ",
+  "tabEn": "tri-life",
+  "row": 263,
+  "sheet": {
+    "name": "平林寺",
+    "address": "",
+    "url": "https://www.google.com/maps/search/?api=1&query=%E5%B9%B3%E6%9E%97%E5%AF%BA%20079-771-0838%20%E3%80%92665-0071%20%E5%85%B5%E5%BA%AB%E7%9C%8C%E5%AE%9D%E5%A1%9A%E5%B8%82%E7%A4%BE%E7%94%BA%EF%BC%94%E2%88%92%EF%BC%97",
+    "type": "寺",
+    "d1": "",
+    "d2": ""
+  },
+  "urlKind": "mapsApi",
+  "route": "第1段(verify-gbp.mjs)で確認済み",
+  "verdict": "一致",
+  "verdictReason": "手がかり: 店名＋電話＋住所(番地まで)。電話が一致／店名: exact(シート「平林寺」/ マップ「平林寺」)／住所(シート): exact・町名・番地とも一致",
+  "place": {
+    "name": "平林寺",
+    "address": "兵庫県宝塚市社町４−７",
+    "category": "仏教寺院",
+    "lat": 34.7948966,
+    "lng": 135.3508819,
+    "gbpUrl": "https://maps.google.com/?cid=1561844714249568365",
+    "phone": "0797-71-0838",
+    "website": null,
+    "hours": null,
+    "reserveLinks": [],
+    "statusSignals": [],
+    "closedSignal": false
+  },
+  "fetchedAt": "2026-10-28T08:43:22.929Z"
+}

@@ -1,0 +1,178 @@
+{
+  "key": "tri-life-259",
+  "headline": "名古屋市守山区大森二丁目にある神社。延暦十二年(793)の創建と伝えられ、主祭神は建速須佐之男命",
+  "lede": "名古屋市にある「八劔神社」です。延暦十二年(793)に山田の連によって創建されたと伝えられ、昭和二年(1927)には本殿がそのままの姿で現在地へ移築されました。主祭神は建速須佐之男命で、相殿神として日本武命と天之火明命が祀られています。",
+  "sections": [
+    {
+      "heading": "由緒",
+      "body": "延暦十二年(793)、山田の連によって「大森北八劔」の地に創建されたと伝えられています。宝暦十年(1760)、桃園天皇の時代に大森中ノ町田の地へ遷座し、昭和二年(1927)には本殿がそのままの姿で現在地へ移築されました。主祭神は建速須佐之男命、相殿神は日本武命と天之火明命です。"
+    },
+    {
+      "heading": "境内と参拝作法",
+      "body": "境内には本社のほか、多くの境内社・境外社が祀られています。参拝の作法として、まず手水舎で身を清め、拝礼は「二拝二拍手一拝」を基本としています。"
+    },
+    {
+      "heading": "授与品と祭事",
+      "body": "御祈祷には新年・七五三・諸祈願があり、御神札・お守りには交通安全や諸願成就などがあります。御朱印は一枚一枚、丹精をこめて授与されています。例大祭は10月18日14時から、七五三の御祈祷は11月7日・8日の9時から営まれます。"
+    },
+    {
+      "heading": "アクセス",
+      "body": "名鉄瀬戸線 大森・金城学院前駅から徒歩すぐです。車の場合は西参道から入り、右側の「P」の案内板がある駐車場を利用します。西参道の入口はKIDSセンター入口から東へ10mほどの場所にあります。"
+    }
+  ],
+  "menus": [
+    {
+      "name": "御祈祷"
+    },
+    {
+      "name": "御神札・お守り"
+    },
+    {
+      "name": "御朱印"
+    },
+    {
+      "name": "七五三詣"
+    }
+  ],
+  "tags": [
+    {
+      "tag": "駅近",
+      "factIndex": 1
+    },
+    {
+      "tag": "駐車場あり",
+      "factIndex": 2
+    }
+  ],
+  "facts": [
+    {
+      "claim": "所在地は愛知県名古屋市守山区大森2丁目1721",
+      "source": "https://www.yatsurugi.or.jp/",
+      "quote": "〒463-0021 愛知県名古屋市守山区大森2丁目1721",
+      "checkedAt": "2026-10-28"
+    },
+    {
+      "claim": "名鉄瀬戸線 大森・金城学院前駅から徒歩すぐ",
+      "source": "https://www.yatsurugi.or.jp/access",
+      "quote": "名鉄瀬戸線 大森・金城学院前駅 下車 徒歩すぐ",
+      "checkedAt": "2026-10-28"
+    },
+    {
+      "claim": "西参道を入り右側に「P」の案内板がある駐車場がある",
+      "source": "https://www.yatsurugi.or.jp/access",
+      "quote": "西参道を入り右側。「P」の案内板があります。",
+      "checkedAt": "2026-10-28"
+    },
+    {
+      "claim": "延暦十二年(793)に山田の連によって創建されたと伝えられる",
+      "source": "https://www.yatsurugi.or.jp/about/goyuisho",
+      "quote": "延暦十二年（七九三）に、この地方を支配していた豪族",
+      "checkedAt": "2026-10-28"
+    },
+    {
+      "claim": "宝暦十年(1760)、桃園天皇の時代に大森中ノ町田の地へ遷座した",
+      "source": "https://www.yatsurugi.or.jp/about/goyuisho",
+      "quote": "宝暦十年（一七六〇）第百十六代桃園天皇の時代に",
+      "checkedAt": "2026-10-28"
+    },
+    {
+      "claim": "昭和二年(1927)に本殿がそのままの姿で現在地へ移築された",
+      "source": "https://www.yatsurugi.or.jp/about/goyuisho",
+      "quote": "昭和二年（一九二七）に現在地へ、本殿はそのままの姿で移築",
+      "checkedAt": "2026-10-28"
+    },
+    {
+      "claim": "主祭神は建速須佐之男命",
+      "source": "https://www.yatsurugi.or.jp/about/goyuisho",
+      "quote": "主祭神 建速須佐之男命（たけはやすさのおのみこと）",
+      "checkedAt": "2026-10-28"
+    },
+    {
+      "claim": "相殿神として日本武命が祀られている",
+      "source": "https://www.yatsurugi.or.jp/about/goyuisho",
+      "quote": "相殿神 日本武命（やまとたけるのみこと）",
+      "checkedAt": "2026-10-28"
+    },
+    {
+      "claim": "境内には本社のほか多くの境内社・境外社が祀られている",
+      "source": "https://www.yatsurugi.or.jp/about/keidai",
+      "quote": "御本社のほか多くの境内社・境外社が祀られています",
+      "checkedAt": "2026-10-28"
+    },
+    {
+      "claim": "参拝の前に手水舎で身を清める",
+      "source": "https://www.yatsurugi.or.jp/about/keidai",
+      "quote": "参拝の前に手水舎で身を清めます",
+      "checkedAt": "2026-10-28"
+    },
+    {
+      "claim": "拝礼の作法は「二拝二拍手一拝」を基本としている",
+      "source": "https://www.yatsurugi.or.jp/about/keidai",
+      "quote": "神社での拝礼作法は、主に「二拝二拍手一拝」としています",
+      "checkedAt": "2026-10-28"
+    },
+    {
+      "claim": "例大祭は10月18日14時から営まれる",
+      "source": "https://www.yatsurugi.or.jp/about/saiji",
+      "quote": "子供獅子9：00例大祭14：00",
+      "checkedAt": "2026-10-28"
+    },
+    {
+      "claim": "七五三の御祈祷は11月7日・8日の9時から行われる",
+      "source": "https://www.yatsurugi.or.jp/about/saiji",
+      "quote": "七五三御祈祷9：00",
+      "checkedAt": "2026-10-28"
+    },
+    {
+      "claim": "御祈祷には新年・七五三・諸祈願がある",
+      "source": "https://www.yatsurugi.or.jp/",
+      "quote": "新年・七五三・諸祈願",
+      "checkedAt": "2026-10-28"
+    },
+    {
+      "claim": "御神札・お守りには交通安全・諸願成就などがある",
+      "source": "https://www.yatsurugi.or.jp/",
+      "quote": "交通安全・諸願成就",
+      "checkedAt": "2026-10-28"
+    },
+    {
+      "claim": "御朱印は一枚一枚、丹精をこめて授与される",
+      "source": "https://www.yatsurugi.or.jp/",
+      "quote": "一枚一枚、丹精をこめて",
+      "checkedAt": "2026-10-28"
+    },
+    {
+      "claim": "西参道の入口はKIDSセンター入口から東へ10mほどの場所にある",
+      "source": "https://www.yatsurugi.or.jp/access",
+      "quote": "KIDSセンター入口から東へ10mあたりに、西参道入口が",
+      "checkedAt": "2026-10-28"
+    }
+  ],
+  "sources": [
+    {
+      "label": "公式サイト",
+      "url": "https://www.yatsurugi.or.jp/"
+    },
+    {
+      "label": "公式サイト(アクセス)",
+      "url": "https://www.yatsurugi.or.jp/access"
+    },
+    {
+      "label": "公式サイト(ご由緒)",
+      "url": "https://www.yatsurugi.or.jp/about/goyuisho"
+    },
+    {
+      "label": "公式サイト(境内案内)",
+      "url": "https://www.yatsurugi.or.jp/about/keidai"
+    },
+    {
+      "label": "公式サイト(祭事・神事の予定)",
+      "url": "https://www.yatsurugi.or.jp/about/saiji"
+    },
+    {
+      "label": "Google マップ",
+      "url": "https://maps.google.com/?cid=12900074789446465036"
+    }
+  ],
+  "notes": "automation/v2/write.mjs が 2026-10-28 に claude -p --model sonnet で作成。事実の裏取り: 17/17 件(quote が出どころにあるもの)。裏取りに通らなかった facts は載せていない。"
+}

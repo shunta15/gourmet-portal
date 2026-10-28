@@ -144,9 +144,6 @@
   .tp-pcard-link { display: block; }
   .tp-pcard-ph { display: block; height: calc(90 * var(--u)); border-radius: calc(4.5 * var(--u)); box-shadow: 0 calc(1 * var(--u)) calc(4 * var(--u)) rgba(70, 55, 40, 0.1); }
   .tp-pcard-ph img { width: 100%; height: 100%; object-fit: cover; }
-  .pt-heart.tp-pheart { position: absolute; right: calc(7 * var(--u)); top: calc(6.6 * var(--u)); width: calc(15.4 * var(--u)); height: calc(15.4 * var(--u)); background: rgba(46, 34, 22, 0.62); backdrop-filter: none; z-index: 2; }
-  .tp-pheart svg { width: calc(9.4 * var(--u)); height: calc(9.4 * var(--u)); stroke: #f3eee8; }
-  .tp-pheart svg path { stroke-width: 1.5; }
   .tp-pcard-n { position: absolute; left: calc(2.7 * var(--u)); top: calc(97.2 * var(--u)); margin: 0; font-weight: 700; font-size: calc(10.4 * var(--u)); line-height: calc(12 * var(--u)); letter-spacing: 0.05em; color: #2a2622; white-space: nowrap; }
   .tp-pcard-n--en { font-family: var(--pt-ff-en); font-weight: 500; font-size: calc(10.3 * var(--u)); letter-spacing: 0.04em; }
   .tp-pcard-a { position: absolute; left: calc(3 * var(--u)); top: calc(114.2 * var(--u)); margin: 0; font-weight: 700; font-size: calc(7.9 * var(--u)); line-height: calc(10 * var(--u)); letter-spacing: 0.075em; color: #7d776f; white-space: nowrap; }
@@ -318,8 +315,6 @@
   .tp-pcard { position: relative; height: auto; }
   .tp-pcard-ph { display: block; aspect-ratio: 168 / 90; height: auto; border-radius: 8px; box-shadow: 0 1px 6px rgba(70, 55, 40, 0.12); }
   .tp-pcard-ph img { width: 100%; height: 100%; object-fit: cover; }
-  .pt-heart.tp-pheart { position: absolute; right: 8px; top: 8px; width: 32px; height: 32px; background: rgba(46, 34, 22, 0.62); backdrop-filter: none; z-index: 2; }
-  .tp-pheart svg { width: 18px; height: 18px; stroke: #f3eee8; }
   .tp-pcard-n { position: static; margin: 10px 2px 0; font-weight: 700; font-size: 15px; line-height: 1.4; letter-spacing: 0.04em; color: #2a2622; }
   .tp-pcard-n--en { font-family: var(--pt-ff-en); font-weight: 500; }
   .tp-pcard-a { position: static; margin: 2px 2px 0; font-weight: 600; font-size: 12.5px; line-height: 1.5; letter-spacing: 0.06em; color: #8a847c; }

@@ -1,0 +1,32 @@
+{
+  "tab": "トリニティアポ",
+  "tabEn": "tri-life",
+  "row": 256,
+  "sheet": {
+    "name": "吉川八幡神社",
+    "address": "",
+    "url": "https://www.google.com/maps/search/?api=1&query=%E5%90%89%E5%B7%9D%E5%85%AB%E5%B9%A1%E7%A5%9E%E7%A4%BE%20080-3775-2050%20%E3%80%92563-0101%20%E5%A4%A7%E9%98%AA%E5%BA%9C%E8%B1%8A%E8%83%BD%E9%83%A1%E8%B1%8A%E8%83%BD%E7%94%BA%E5%90%89%E5%B7%9D%EF%BC%99%EF%BC%93%EF%BC%96",
+    "type": "神社",
+    "d1": "",
+    "d2": ""
+  },
+  "urlKind": "mapsApi",
+  "route": "第1段(verify-gbp.mjs)で確認済み",
+  "verdict": "一致",
+  "verdictReason": "手がかり: 電話＋住所(番地まで)。電話が一致／店名: different(シート「吉川八幡神社」/ マップ「吉川八幡大神宮」)／住所(シート): exact・町名・番地とも一致",
+  "place": {
+    "name": "吉川八幡大神宮",
+    "address": "大阪府豊能郡豊能町吉川９３６",
+    "category": "神社",
+    "lat": 34.9192764,
+    "lng": 135.4471349,
+    "gbpUrl": "https://maps.google.com/?cid=13613183152460999238",
+    "phone": "080-3775-2050",
+    "website": "http://www.yoshikawahachiman.com/",
+    "hours": null,
+    "reserveLinks": [],
+    "statusSignals": [],
+    "closedSignal": false
+  },
+  "fetchedAt": "2026-10-28T08:18:22.692Z"
+}

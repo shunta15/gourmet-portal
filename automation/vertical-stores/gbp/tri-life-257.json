@@ -1,0 +1,32 @@
+{
+  "tab": "トリニティアポ",
+  "tabEn": "tri-life",
+  "row": 257,
+  "sheet": {
+    "name": "専念山功徳院幸福寺",
+    "address": "",
+    "url": "https://www.google.com/maps/search/?api=1&query=%E5%B0%82%E5%BF%B5%E5%B1%B1%E5%8A%9F%E5%BE%B3%E9%99%A2%E5%B9%B8%E7%A6%8F%E5%AF%BA%20090-8686-9670%20%E3%80%92400-0124%20%E5%B1%B1%E6%A2%A8%E7%9C%8C%E7%94%B2%E6%96%90%E5%B8%82%E4%B8%AD%E4%B8%8B%E6%9D%A1%EF%BC%91%EF%BC%96%EF%BC%92%EF%BC%91",
+    "type": "お寺",
+    "d1": "",
+    "d2": ""
+  },
+  "urlKind": "mapsApi",
+  "route": "第1段(verify-gbp.mjs)で確認済み",
+  "verdict": "一致",
+  "verdictReason": "手がかり: 店名＋住所(番地まで)。電話がちがう(シート 090-8686-9670 / マップ 055-277-5619)／店名: contains(シート「専念山功徳院幸福寺」/ マップ「功徳院幸福寺」)／住所(シート): exact・町名・番地とも一致",
+  "place": {
+    "name": "功徳院幸福寺",
+    "address": "山梨県甲斐市中下条１６２１",
+    "category": "仏教寺院",
+    "lat": 35.6823093,
+    "lng": 138.5304502,
+    "gbpUrl": "https://maps.google.com/?cid=5618227385458666857",
+    "phone": "055-277-5619",
+    "website": "https://www.kudokuin-koufukuji.com/",
+    "hours": null,
+    "reserveLinks": [],
+    "statusSignals": [],
+    "closedSignal": false
+  },
+  "fetchedAt": "2026-10-28T08:58:34.282Z"
+}

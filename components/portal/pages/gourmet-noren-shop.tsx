@@ -61,7 +61,8 @@ export default async function GourmetNorenShop({ id, links, shop }: { id: string
   const video = SHORT_VIDEOS.find((v) => v.restaurantId === r.id) ?? null;
   // 対の特集記事（店 1 軒の記事）。ある店だけ、紹介の上に切り替えの帯を置き、関連記事の先頭に大きく出す（本番の行き先のときだけ。見本の特集は店 1 軒の枠ではない）
   const pair = RELEASE_REST && links === LIVE_LINKS ? pairedFeatureOfShop(r.id) : null;
-  const features = await featuresOfShop(r.id, pair?.featureId ?? featureId);
+  // 店のページと店の特集記事は別ページ(2026-10-26)。対の記事への行き先は行動ボタンの「特集記事を読む」の 1 か所だけにする(関連記事の先頭には重ねない)
+  const features = (await featuresOfShop(r.id, pair?.featureId ?? featureId)).filter((f) => !((pair || featureId) && f.paired));
 
   // 行動ボタンの一覧（今の ShopActions と同じ関数）。特集記事への行き先だけ、links（見本は見本の特集ページ、本番は /feature/<id>）に向ける
   const model = buildActionModel({
@@ -209,28 +210,7 @@ export default async function GourmetNorenShop({ id, links, shop }: { id: string
                   <dd>{r.budget}</dd>
                 </div>
               )}
-              {r.googleRating && (
-                <div>
-                  <dt>{RELEASE_REST ? "Google の評価" : "Google評価"}</dt>
-                  <dd>
-                    {r.googleRating}
-                    {r.googleReviewCount ? <small>（{r.googleReviewCount.toLocaleString()}件）</small> : null}
-                  </dd>
-                </div>
-              )}
-              {!RELEASE_REST && r.rating && (
-                <div>
-                  <dt>評価</dt>
-                  <dd>
-                    {r.rating}
-                    {r.source && (
-                      <a className="src" href={r.source.url} target="_blank" rel="noopener noreferrer">
-                        （{r.source.label}）
-                      </a>
-                    )}
-                  </dd>
-                </div>
-              )}
+              {/* 評価の数字（Google・食べログ）は出さない（2026-10-24 オーナー決定。星・評価を出さない決まり。データは消さず、表示だけ止める） */}
               {r.nearest && (
                 <div>
                   <dt>アクセス</dt>
@@ -392,7 +372,6 @@ export default async function GourmetNorenShop({ id, links, shop }: { id: string
                         #{x.id.replace(/^r/, "").padStart(2, "0")} · {x.area}
                       </span>
                       <em>{x.cuisine}</em>
-                      {RELEASE_REST ? (x.googleRating ? <em>Google {x.googleRating}</em> : null) : (x.googleRating || x.rating) && <em>評価 {x.googleRating ?? x.rating}</em>}
                     </span>
                   </Link>
                 </li>

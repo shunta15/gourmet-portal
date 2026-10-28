@@ -1,0 +1,231 @@
+{
+  "key": "tri-life-262",
+  "headline": "名古屋市緑区作の山町にある稲荷神社。創建は嘉永元(1848)年、御祭神は宇迦之御霊神(うかのみたまのかみ)",
+  "lede": "名古屋市にある「豊藤稲荷神社」です。創建は嘉永元（1848）年、御祭神は宇迦之御霊神（うかのみたまのかみ）です。桶狭間の戦いの舞台とされる朝日山に鎮座しています。",
+  "sections": [
+    {
+      "heading": "由緒",
+      "body": "豊藤大明神の奉斎は、奈良時代初期の和同年にさかのぼるとされています。名古屋のタツミの方角にあたる朝日山に鎮座しています。永禄三年五月の桶狭間の戦いでは、朝日山に織田信長が三千ばかりの兵を率いて集結し、四万もの兵を率いた今川勢を破って起死回生の大勝をおさめた地とされています。"
+    },
+    {
+      "heading": "境内",
+      "body": "境内には参集殿、奥の院、藤龍・藤龍社、奥藤社、御末社があり、手水舎も備わっています。境内駐車場及び南側駐車場を完備しており、30台駐車することができます。"
+    },
+    {
+      "heading": "祈祷",
+      "body": "七五三や厄払い、自動車祓いの祈祷をおこなっています。記載のない諸願の祈祷も受け付けています。"
+    },
+    {
+      "heading": "授与品",
+      "body": "御神札のほか、龍守り、紅白干支土鈴、根付け御守、学業守など、さまざまな授与品があります。御朱印もいただけます。"
+    }
+  ],
+  "menus": [
+    {
+      "name": "御神札"
+    },
+    {
+      "name": "龍守り"
+    },
+    {
+      "name": "紅白干支土鈴"
+    },
+    {
+      "name": "根付け御守"
+    },
+    {
+      "name": "学業守"
+    }
+  ],
+  "tags": [
+    {
+      "tag": "駐車場あり",
+      "factIndex": 16
+    }
+  ],
+  "facts": [
+    {
+      "claim": "創建は嘉永元(1848)年",
+      "source": "https://toyofujiinarinagoy.wixsite.com/toyofujiinari-nagoya",
+      "quote": "創建 1848（嘉永元）年",
+      "checkedAt": "2026-10-28"
+    },
+    {
+      "claim": "御祭神は宇迦之御霊神(うかのみたまのかみ)",
+      "source": "https://toyofujiinarinagoy.wixsite.com/toyofujiinari-nagoya",
+      "quote": "御祭神 宇迦之御霊神 （うかのみたまのかみ）",
+      "checkedAt": "2026-10-28"
+    },
+    {
+      "claim": "豊藤大明神の奉斎は奈良時代初期の和同年にさかのぼるとされる",
+      "source": "https://toyofujiinarinagoy.wixsite.com/toyofujiinari-nagoya",
+      "quote": "豊藤大明神の奉斎は遠くさかのぼって、奈良時代初期の和同年。",
+      "checkedAt": "2026-10-28"
+    },
+    {
+      "claim": "名古屋のタツミの方角に鎮座する",
+      "source": "https://toyofujiinarinagoy.wixsite.com/toyofujiinari-nagoya",
+      "quote": "名古屋のタツミの方角、",
+      "checkedAt": "2026-10-28"
+    },
+    {
+      "claim": "永禄三年五月の出来事とされる",
+      "source": "https://toyofujiinarinagoy.wixsite.com/toyofujiinari-nagoya",
+      "quote": "永禄三年五月の",
+      "checkedAt": "2026-10-28"
+    },
+    {
+      "claim": "桶狭間の戦いの舞台とされる",
+      "source": "https://toyofujiinarinagoy.wixsite.com/toyofujiinari-nagoya",
+      "quote": "桶狭間の戦い",
+      "checkedAt": "2026-10-28"
+    },
+    {
+      "claim": "朝日山に織田信長が集結したとされる",
+      "source": "https://toyofujiinarinagoy.wixsite.com/toyofujiinari-nagoya",
+      "quote": "織田信長",
+      "checkedAt": "2026-10-28"
+    },
+    {
+      "claim": "三千ばかりの兵を率いて集結したとされる",
+      "source": "https://toyofujiinarinagoy.wixsite.com/toyofujiinari-nagoya",
+      "quote": "三千ばかりの兵を率いて",
+      "checkedAt": "2026-10-28"
+    },
+    {
+      "claim": "四万もの兵を率いた今川勢を破ったとされる",
+      "source": "https://toyofujiinarinagoy.wixsite.com/toyofujiinari-nagoya",
+      "quote": "四万もの兵を率いた今川勢を破るという",
+      "checkedAt": "2026-10-28"
+    },
+    {
+      "claim": "起死回生の大勝をおさめた地として知られる",
+      "source": "https://toyofujiinarinagoy.wixsite.com/toyofujiinari-nagoya",
+      "quote": "起死回生の大勝をおさめた栄光の地として知られております",
+      "checkedAt": "2026-10-28"
+    },
+    {
+      "claim": "境内に参集殿がある",
+      "source": "https://toyofujiinarinagoy.wixsite.com/toyofujiinari-nagoya",
+      "quote": "参集殿",
+      "checkedAt": "2026-10-28"
+    },
+    {
+      "claim": "境内に奥の院がある",
+      "source": "https://toyofujiinarinagoy.wixsite.com/toyofujiinari-nagoya",
+      "quote": "奥の院",
+      "checkedAt": "2026-10-28"
+    },
+    {
+      "claim": "境内に藤龍・藤龍社がある",
+      "source": "https://toyofujiinarinagoy.wixsite.com/toyofujiinari-nagoya",
+      "quote": "藤龍・藤龍社",
+      "checkedAt": "2026-10-28"
+    },
+    {
+      "claim": "境内に奥藤社がある",
+      "source": "https://toyofujiinarinagoy.wixsite.com/toyofujiinari-nagoya",
+      "quote": "奥藤社",
+      "checkedAt": "2026-10-28"
+    },
+    {
+      "claim": "境内に手水舎がある",
+      "source": "https://toyofujiinarinagoy.wixsite.com/toyofujiinari-nagoya",
+      "quote": "手水舎",
+      "checkedAt": "2026-10-28"
+    },
+    {
+      "claim": "境内に御末社がある",
+      "source": "https://toyofujiinarinagoy.wixsite.com/toyofujiinari-nagoya",
+      "quote": "御末社",
+      "checkedAt": "2026-10-28"
+    },
+    {
+      "claim": "境内駐車場及び南側駐車場がある",
+      "source": "https://toyofujiinarinagoy.wixsite.com/toyofujiinari-nagoya",
+      "quote": "境内駐車場及び南側駐車場を完備して",
+      "checkedAt": "2026-10-28"
+    },
+    {
+      "claim": "駐車場は30台",
+      "source": "https://toyofujiinarinagoy.wixsite.com/toyofujiinari-nagoya",
+      "quote": "境内駐車場及び南側駐車場30台完備",
+      "checkedAt": "2026-10-28"
+    },
+    {
+      "claim": "七五三の祈祷をおこなう",
+      "source": "https://toyofujiinarinagoy.wixsite.com/toyofujiinari-nagoya",
+      "quote": "七五三",
+      "checkedAt": "2026-10-28"
+    },
+    {
+      "claim": "厄払いの祈祷をおこなう",
+      "source": "https://toyofujiinarinagoy.wixsite.com/toyofujiinari-nagoya",
+      "quote": "厄払い",
+      "checkedAt": "2026-10-28"
+    },
+    {
+      "claim": "自動車祓いの祈祷をおこなう",
+      "source": "https://toyofujiinarinagoy.wixsite.com/toyofujiinari-nagoya",
+      "quote": "自動車祓い",
+      "checkedAt": "2026-10-28"
+    },
+    {
+      "claim": "記載のない祈祷も受け付ける",
+      "source": "https://toyofujiinarinagoy.wixsite.com/toyofujiinari-nagoya",
+      "quote": "記載のない諸願のご祈祷も承ります。",
+      "checkedAt": "2026-10-28"
+    },
+    {
+      "claim": "御神札がある",
+      "source": "https://toyofujiinarinagoy.wixsite.com/toyofujiinari-nagoya/%E3%81%8A%E5%95%8F%E3%81%84%E5%90%88%E3%82%8F%E3%81%9B",
+      "quote": "御神札",
+      "checkedAt": "2026-10-28"
+    },
+    {
+      "claim": "龍守りがある",
+      "source": "https://toyofujiinarinagoy.wixsite.com/toyofujiinari-nagoya/%E3%81%8A%E5%95%8F%E3%81%84%E5%90%88%E3%82%8F%E3%81%9B",
+      "quote": "龍守り",
+      "checkedAt": "2026-10-28"
+    },
+    {
+      "claim": "紅白干支土鈴がある",
+      "source": "https://toyofujiinarinagoy.wixsite.com/toyofujiinari-nagoya/%E3%81%8A%E5%95%8F%E3%81%84%E5%90%88%E3%82%8F%E3%81%9B",
+      "quote": "紅白干支土鈴",
+      "checkedAt": "2026-10-28"
+    },
+    {
+      "claim": "根付け御守がある",
+      "source": "https://toyofujiinarinagoy.wixsite.com/toyofujiinari-nagoya/%E3%81%8A%E5%95%8F%E3%81%84%E5%90%88%E3%82%8F%E3%81%9B",
+      "quote": "根付け御守",
+      "checkedAt": "2026-10-28"
+    },
+    {
+      "claim": "学業守がある",
+      "source": "https://toyofujiinarinagoy.wixsite.com/toyofujiinari-nagoya/%E3%81%8A%E5%95%8F%E3%81%84%E5%90%88%E3%82%8F%E3%81%9B",
+      "quote": "学業守",
+      "checkedAt": "2026-10-28"
+    },
+    {
+      "claim": "御朱印がある",
+      "source": "https://toyofujiinarinagoy.wixsite.com/toyofujiinari-nagoya/%E3%81%8A%E5%95%8F%E3%81%84%E5%90%88%E3%82%8F%E3%81%9B",
+      "quote": "御朱印",
+      "checkedAt": "2026-10-28"
+    }
+  ],
+  "sources": [
+    {
+      "label": "公式サイト",
+      "url": "https://toyofujiinarinagoy.wixsite.com/toyofujiinari-nagoya"
+    },
+    {
+      "label": "公式サイト(御神札・御守)",
+      "url": "https://toyofujiinarinagoy.wixsite.com/toyofujiinari-nagoya/%E3%81%8A%E5%95%8F%E3%81%84%E5%90%88%E3%82%8F%E3%81%9B"
+    },
+    {
+      "label": "Google マップ",
+      "url": "https://maps.google.com/?cid=14308245261947559096"
+    }
+  ],
+  "notes": "automation/v2/write.mjs が 2026-10-28 に claude -p --model sonnet で作成。事実の裏取り: 28/28 件(quote が出どころにあるもの)。裏取りに通らなかった facts は載せていない。"
+}

@@ -12,7 +12,7 @@ import Footer from "../Footer";
 import FxPin from "../FxPin";
 import { IconPin } from "@/components/portal/bproto/colorplay/Icons";
 import { sized } from "@/lib/imageUrl";
-import { AccessSection, Crumb, GallerySection, InfoButton, JsonLds, KIND_EN, MenuSection, MoreShops, nameSize, PanelList, PrimaryCta, QuoteSection, ShopHeader, Tabs, type ShopModel } from "./shopModel";
+import { AccessSection, ArticleLinkSection, Crumb, GallerySection, InfoButton, JsonLds, KIND_EN, MenuSection, MoreShops, nameSize, PanelList, PrimaryCta, QuoteSection, ShopHeader, Tabs, type ShopModel } from "./shopModel";
 import { cpFx1Static } from "./fxStatic";
 
 const STEPS = 2;
@@ -95,6 +95,7 @@ export function Fx1Shop({ m }: { m: ShopModel }) {
         <Tabs m={m} />
         <GallerySection m={m2} />
         <PanelList m={m} />
+        <ArticleLinkSection m={m} />
         <QuoteSection m={m} />
         <MenuSection m={m} />
         <AccessSection m={m} />

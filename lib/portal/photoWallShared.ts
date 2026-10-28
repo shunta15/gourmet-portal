@@ -23,7 +23,7 @@ export interface WallItem {
   c: string;
   /** 都道府県（WallData.prefs の番号。分からなければ -1） */
   p: number;
-  /** 該当するジャンルの絞り込み（WallData.genres の番号。どれにも当たらなければ「その他」の番号） */
+  /** 該当するジャンルの絞り込み（WallData.genres の番号。どれにも当たらなければ空 = 「すべて」にだけ出る） */
   g: number[];
   /** 事前生成した WebP の名前のハッシュ（photoSrc で URL にする） */
   h: string;

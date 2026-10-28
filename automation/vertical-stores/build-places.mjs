@@ -63,6 +63,11 @@
  *   website      : 公式サイトの URL（Google マップの表示が開けない URL のとき、公式サイトの実在するページに直す。例: yawatano.co.jp → www.yawatano.co.jp）
  *
  * サイトのデータに入れないもの: 記事の facts / quote / notes / placeOverride（確認用）、星・口コミ・価格帯、写真の取得元 URL（imageUrl・pageUrl）、ownerPost。
+ *
+ * 文の書き方（オーナー指示 2026-10-24「公式ページからの引用ですみたいなのも全部やめて」）: 出どころを語る言い回しを記事の文に入れない。
+ *   書かない例: 「公式サイトによると」「公式サイトには〜と書かれています」「〜と案内されています」「〜と載っています」「公式サイトの表示は」「Google マップの表示では」「〜とのこと」「引用」。
+ *   事実は言い切りの文で書く（事実は足さない・変えない）。出どころは文中で語らず、sources と確認日（ページ下の「情報の出どころ」）に置く。
+ *   残してよいのは、公式サイト・予約ページを「使う場所」として示す文（「予約は〜の予約ページから」）と、公式サイトへのリンクのボタン。作り直すときに ATTRIBUTION の注意が出た文は、言い切りに直す。
  */
 import { existsSync, mkdirSync, readFileSync, readdirSync, writeFileSync } from "node:fs";
 import { fileURLToPath } from "node:url";
@@ -378,6 +383,7 @@ function cleanUrl(raw) {
 /** place.website を 公式サイト か SNS のどれかに分ける。ポータル・読めない URL は捨てる */
 function classifyWebsite(raw, key) {
   if (!raw) return {};
+  raw = String(raw).replace(/(?:%20|\s)+https?:\/\/.*$/i, ""); // URL の後ろに別の URL が空白でつながっている登録（beauty-90）は、最初の URL だけ使う
   const u = cleanUrl(raw);
   if (!u) {
     warn(key, `website を URL として読めません: ${raw}`);
@@ -405,6 +411,8 @@ const ALLOWED_TAGS = {
   sports: ["初心者歓迎", "体験あり", "24時間営業", "女性専用", "子ども向け"],
   life: ["体験あり", "子ども向け", "駅近", "駐車場あり", "予約制"],
 };
+// 出どころを語る言い回し（上の「文の書き方」）。見つけたら注意を出す（載せる・載せないは変えない）。「予約は公式サイトの予約ページから」のような使う場所の文も拾うので、目で見て判断する
+const ATTRIBUTION = /公式サイト(?:に|は|の|では|が|による|で書)|公式ページ|Google ?マップ(?:に|は|の|では|で)|掲載ページ|によると|によれば|と案内され|と書かれ|と載って|と記載|とのこと(?:です|だ|で|。|、)|という案内|引用/;
 const FORBIDDEN = [
   "治る", "治す", "治療", "改善", "効果", "若返る", "痩せる", "医療", "医学的",
   "最高", "絶品", "必ず", "No.1", "おすすめ", "人気", "話題", "評判",
@@ -489,6 +497,8 @@ function buildArticle(vertical, d, article, key) {
 
   const text = [headline, lede, ...sections.flatMap((s) => [s.heading, s.body]), ...menus.map((m) => m.name)].join("\n");
   for (const w of vertical === "pet" ? [...FORBIDDEN, ...FORBIDDEN_PET] : vertical === "stay" ? [...FORBIDDEN, ...FORBIDDEN_STAY] : ["activity", "sports", "life"].includes(vertical) ? [...FORBIDDEN, ...FORBIDDEN_NEW] : FORBIDDEN) if (text.includes(w)) warn(key, `記事に禁止語「${w}」が含まれています（確認してください）`);
+
+  for (const sent of text.split(/(?<=。)|\n/)) if (ATTRIBUTION.test(sent)) warn(key, `出どころを語る言い回し（言い切りに直す）: ${sent.trim().slice(0, 50)}`);
 
   return {
     article: { headline, lede, sections, ...(menus.length > 0 ? { menus } : {}), sources, ...(checkedAt ? { checkedAt } : {}) },
@@ -692,7 +702,7 @@ for (const key of wanted) {
     vertical: r.vertical,
     category: r.category,
     ...(r.kindName ? { kindName: r.kindName } : {}),
-    name: (typeof ov.name === "string" && ov.name.trim() ? ov.name : String(p.name)).trim(),
+    name: (typeof ov.name === "string" && ov.name.trim() ? ov.name : String(p.name)).replace(/\s*https?:\/\/\S+/g, "").trim(), // Google の登録名に URL が混じる店（beauty-90 など）は URL だけ外す
     pref: r.area.pref,
     ...(r.area.cityName ? { cityName: r.area.cityName } : {}),
     address: normalizeAddress(p.address),

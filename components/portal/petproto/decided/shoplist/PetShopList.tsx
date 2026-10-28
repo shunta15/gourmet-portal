@@ -74,7 +74,7 @@ export default async function PetShopList() {
             SHOP
           </Reveal>
           <MaskLines as="h1" className="ar-hero-h1" lines={["店舗紹介"]} delay={180} step={160} />
-          <Write as="p" className="ar-hero-sub" lines={["ペットと行けるお店を、1軒ずつ紹介しています。", "メニューや設備、行き方など、確認できた情報をまとめています。"]} delay={700} step={420} />
+          <Write as="p" className="ar-hero-sub" lines={["ペットと行けるお店を、1軒ずつ紹介しています。", "メニューや設備、行き方など、お店の情報をまとめています。"]} delay={700} step={420} />
         </div>
       </section>
 
@@ -116,7 +116,7 @@ export async function petShopListMetadata(): Promise<Metadata> {
   return buildMetadata({
     vertical: "pet",
     title: `店舗紹介 | ${v.brand}`,
-    description: `ペットと行けるお店${count > 0 ? `${count}店` : ""}の紹介の一覧です。カフェ・飲食店、トリミング、ペットホテル、動物病院、ペットショップ・ブリーダー。メニューや設備、行き方など、確認できた情報をまとめています。`,
+    description: `ペットと行けるお店${count > 0 ? `${count}店` : ""}の紹介の一覧です。カフェ・飲食店、トリミング、ペットホテル、動物病院、ペットショップ・ブリーダー。メニューや設備、行き方など、お店の情報をまとめています。`,
     path: L.shops,
     count,
   });

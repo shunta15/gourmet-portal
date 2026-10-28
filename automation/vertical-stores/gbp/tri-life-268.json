@@ -1,0 +1,32 @@
+{
+  "tab": "トリニティアポ",
+  "tabEn": "tri-life",
+  "row": 268,
+  "sheet": {
+    "name": "眞福寺",
+    "address": "",
+    "url": "https://www.google.com/maps/search/?api=1&query=%E7%9C%9E%E7%A6%8F%E5%AF%BA%20045-561-4466%20%E3%80%92223-0064%20%E7%A5%9E%E5%A5%88%E5%B7%9D%E7%9C%8C%E6%A8%AA%E6%B5%9C%E5%B8%82%E6%B8%AF%E5%8C%97%E5%8C%BA%E4%B8%8B%E7%94%B0%E7%94%BA%EF%BC%93%E4%B8%81%E7%9B%AE%EF%BC%91%EF%BC%91%E2%88%92%EF%BC%95",
+    "type": "寺",
+    "d1": "",
+    "d2": ""
+  },
+  "urlKind": "mapsApi",
+  "route": "第1段(verify-gbp.mjs)で確認済み",
+  "verdict": "一致",
+  "verdictReason": "手がかり: 電話＋住所(番地まで)。電話が一致／店名: different(シート「眞福寺」/ マップ「真福寺」)／住所(シート): exact・町名・番地とも一致",
+  "place": {
+    "name": "真福寺",
+    "address": "神奈川県横浜市港北区下田町３丁目１１−５",
+    "category": "仏教寺院",
+    "lat": 35.5588029,
+    "lng": 139.6338803,
+    "gbpUrl": "https://maps.google.com/?cid=3261480737464518438",
+    "phone": "045-561-4466",
+    "website": null,
+    "hours": null,
+    "reserveLinks": [],
+    "statusSignals": [],
+    "closedSignal": false
+  },
+  "fetchedAt": "2026-10-28T08:48:46.663Z"
+}

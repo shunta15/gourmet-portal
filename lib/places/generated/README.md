@@ -11,6 +11,7 @@
 - 店 ID の台帳: `automation/vertical-stores/ids.json`（追記だけ。一度払い出した ID は変えない）
 - 除外した店と理由: `automation/vertical-stores/unmapped.json`
 - 直したいとき: 材料（gbp / articles）か build-places.mjs を直して、作り直す
+- 文の書き方（2026-10-24 オーナー指示）: 記事・特集の文に「公式サイトによると」「〜と案内されています」「〜と載っています」「Google マップの表示では」「〜とのこと」「引用」のような、出どころを語る言い回しを入れない。事実は言い切りで書く（足さない・変えない）。出どころは `sources` と確認日に置く。build-places.mjs / build-features.mjs は、見つけると「出どころを語る言い回し」の注意を出す（予約ページなど「使う場所」を示す文は残してよい）
 - 読む側: `lib/places/newVerticals.ts`（`getPlaces('beauty' | 'bodycare' | 'pet')` から使う）
 - ペットだけの材料: `pet-resolve.json`（種類と店 ID の判定）・紹介記事の `placeOverride`（公式サイトの値で店データを差し替える店。確認用で、サイトのデータには入らない）
 

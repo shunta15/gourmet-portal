@@ -222,3 +222,14 @@ export async function loadBsShop(id: string): Promise<BsShop | null> {
     total: places.length,
   };
 }
+
+/**
+ * この店に、店の特集記事のページ(/bodycare/article/<ID>)があるか。【2026-10-26 試作】
+ * 特集記事(feat)がある店、または店の紹介記事(Place.article)の見出しつきの節が点検後に 2 つ以上残る店。
+ * 節が 0〜1 つの店(記事が薄い店)は記事のページを作らず、店のページだけ(紹介文と 1 節は店のページに残る)。
+ * panels[0] = 紹介文。特集の店は panels[1..] = 特集のポイント。紹介記事の店は panels[1..] = 見出しつきの節。
+ */
+export function bsHasArticle(s: Pick<BsShop, "hasStory" | "panels">): boolean {
+  const body = s.panels.length - 1;
+  return s.hasStory ? body >= 1 : body >= 2;
+}

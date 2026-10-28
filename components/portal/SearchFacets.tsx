@@ -35,8 +35,6 @@ import {
   type FacetSelection,
 } from "@/lib/portal/facetDefs";
 import { OPEN_NOW_ON, isOpenState } from "@/lib/portal/openNow";
-import { answerText, answeredCount, omakaseQuery, parseOmakase, rowMatches, STEPS, STEP_TITLE } from "@/lib/portal/omakaseDefs";
-import { omakaseRowOf, prefOfRegionKey } from "@/lib/portal/omakaseRows";
 import { statusOf, useNowMs } from "./OpenNow";
 import SaveButton from "./SaveButton";
 import { CSS_SEARCH_FACETS } from "./searchFacetsCss";
@@ -139,24 +137,9 @@ function FacetCard({ r, tags, total }: { r: SearchItem; tags: CardTag[]; total: 
 
 /* ───────────── 本体 ───────────── */
 
-/** おまかせ提案（/omakase）の答えを URL（?r= ?p= ?who= ?b= ?m=）から外す（こだわり条件・キーワードなどはそのまま） */
-function clearOmakaseParams() {
-  const p = new URLSearchParams(window.location.search);
-  for (const k of ["r", "p", "who", "b", "m", "q", "s", "n"]) p.delete(k);
-  const qs = p.toString();
-  window.history.pushState(null, "", window.location.pathname + (qs ? "?" + qs : "") + window.location.hash);
-}
-
 export default function SearchFacets({ base: baseIn, facets, sp, render }: Props) {
   const uid = useId();
-  // おまかせ提案の「この条件の店をすべて見る」から来たとき（URL に答えがあるとき）: その答えに合う店だけに、先に絞る
-  const omk = useMemo(() => parseOmakase((k) => sp.get(k), facets.shownBands), [sp, facets]);
-  const omkOn = answeredCount(omk.st) > 0;
-  const base = useMemo(() => {
-    if (!omkOn) return baseIn;
-    const input = { facetRows: facets.rows, shown: facets.shown, shownBands: facets.shownBands, prefOfRegion: prefOfRegionKey };
-    return baseIn.filter((r) => rowMatches(omakaseRowOf({ id: r.id, region: r.region, cuisine: r.cuisine, tags: r.tags }, input), omk.st));
-  }, [baseIn, facets, omk, omkOn]);
+  const base = baseIn;
   const sel = useMemo(() => parseSelection(sp.get("budget"), sp.get("f"), facets), [sp, facets]);
   const nowRaw = useNowMs();
   // この部品はクライアントだけで描かれる（/search は useSearchParams で CSR）。分の頭に丸めた現在時刻（ミリ秒）。OPEN_NOW_ON が false のあいだは時刻を読まない
@@ -444,24 +427,10 @@ export default function SearchFacets({ base: baseIn, facets, sp, render }: Props
 
   const ext: FacetExt = {
     panel,
-    active: active || omkOn,
+    active,
     notice:
-      active || omkOn ? (
+      active ? (
         <>
-          {omkOn && (
-            <p className="fc-note">
-              <span>
-                おまかせ提案の答え（{STEPS.map((s) => `${STEP_TITLE[s]}:${answerText(omk.st, s) ?? "未回答"}`).join("・")}）に合う店だけを表示しています
-              </span>
-              <small>
-                <Link href={`/omakase?${omakaseQuery(omk.st)}`}>おまかせ提案に戻る</Link>
-                {" ／ "}
-                <button type="button" onClick={clearOmakaseParams} style={{ textDecoration: "underline" }}>
-                  この答えを外す
-                </button>
-              </small>
-            </p>
-          )}
           {active && (
             <p className="fc-note">
               <span>条件が分かっている店だけを表示しています（不明の店は含みません）</span>
@@ -470,7 +439,7 @@ export default function SearchFacets({ base: baseIn, facets, sp, render }: Props
           )}
         </>
       ) : null,
-    summary: active || omkOn ? <>{[...(omkOn ? ["おまかせ提案の答え"] : []), ...tags].join(" / ")} / </> : null,
+    summary: active ? <>{tags.join(" / ")} / </> : null,
     renderCard: (r) => {
       const t = tagsOf(r.id);
       return <FacetCard key={r.id} r={r} tags={t.tags} total={t.total} />;

@@ -2,7 +2,8 @@ import Link from "next/link";
 import type { CSSProperties } from "react";
 import type { BsShop } from "@/lib/portal/vert/bodyshop/model";
 import type { GreenShop } from "@/lib/portal/vert/bodygreen/types";
-import { BASE, IMG, searchHref } from "../common/site";
+import { BASE, IMG, articleHref, searchHref } from "../common/site";
+import { bsHasArticle } from "@/lib/portal/vert/bodyshop/model";
 import { MaskLines, Write } from "../common/Motion";
 import ShopCard from "../common/ShopCard";
 import ShopTabs from "./ShopTabs";
@@ -83,6 +84,8 @@ export default function ShopPage({ shop, gs, sameArea, sameKind }: { shop: BsSho
   const intro = shop.panels[0];
   const body = shop.panels.slice(1);
   const hasArticle = body.length > 0 || !!shop.quote || shop.closing.length > 0;
+  // 【2026-10-26 試作】記事のある店は、記事の本文を店のページに置かず「特集記事を読む」で /bodycare/article/<ID> へ。記事が薄い店(節が少ない)は記事のページを作らず、店のページに残す
+  const hasArticlePage = bsHasArticle(shop);
   const checked = dotDate(shop.checkedAt);
   const sources = shop.sources.filter((s) => httpOnly(s.url));
 
@@ -92,7 +95,7 @@ export default function ShopPage({ shop, gs, sameArea, sameKind }: { shop: BsSho
     { id: "sh-top", label: "トップ" },
     ...(intro ? [{ id: "sh-intro", label: "店の紹介" }] : []),
     ...(shop.menus.length > 0 ? [{ id: "sh-menu", label: "メニュー" }] : []),
-    ...(hasArticle ? [{ id: "sh-article", label: "特集記事" }] : []),
+    ...(hasArticle ? [{ id: "sh-article", label: hasArticlePage ? "特集記事" : "くわしい紹介" }] : []),
     { id: "sh-access", label: "店舗情報" },
   ];
 
@@ -229,11 +232,37 @@ export default function ShopPage({ shop, gs, sameArea, sameKind }: { shop: BsSho
               </section>
             )}
 
-            {hasArticle && (
+            {hasArticle && hasArticlePage && (
+              <section className="sh-articles sh-artlink" id="sh-article">
+                <div className="sh-mhead" data-rv>
+                  <h2 className="sh-hd">
+                    {shop.hasStory ? "特集記事" : "紹介記事"}
+                    <s>|</s>
+                    {shop.hasStory ? intro?.heading : shop.headline || `${shop.name}について`}
+                  </h2>
+                </div>
+                <div className="sh-artlink-b" data-rv>
+                  <ol className="sh-artlink-l">
+                    {body.map((pn, bi) => (
+                      <li key={pn.no}>
+                        <em>{String(bi + 1).padStart(2, "0")}</em>
+                        <span>{pn.heading}</span>
+                      </li>
+                    ))}
+                  </ol>
+                  <Link href={articleHref(shop.id)} className="gr-btn gr-press gr-shimmer">
+                    特集記事を読む
+                    <ArrowSvg />
+                  </Link>
+                </div>
+              </section>
+            )}
+
+            {hasArticle && !hasArticlePage && (
               <section className="sh-articles" id="sh-article">
                 <div className="sh-mhead" data-rv>
                   <h2 className="sh-hd">
-                    特集記事<s>|</s>
+                    くわしい紹介<s>|</s>
                     {shop.headline || `${shop.name}について`}
                   </h2>
                 </div>

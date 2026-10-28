@@ -5,7 +5,7 @@
  *       → 店の写真 → 引用・おわりの文(黒) → メニュー(名前だけ) → 最後の帯(この店。店のページへ進むボタン・情報の出どころ) → ほかの記事。
  * 本文は折り畳まず全部出す(読むページ)。料金・評価・順位は出さない(文は lib/portal/colorplay/text.ts の点検に通ったものだけ)。新しい帯・流れる文字・飾りは足さない。
  *
- * 同じ本文が /{v}/shop/{id} にもあるので、canonical は店のページ(検索で重複しないように)。robots は店のページと同じ gate(掲載数 3 以上で index)。
+ * 【2026-10-26 試作】店のページと店の特集記事は別ページ(店のページには記事の導入だけ。本文は記事にだけ置く)。canonical は記事自身。robots は店のページと同じ gate(掲載数 3 以上で index)。
  * 特集の ID(/{v}/feature/{id} の ID)で開いた場合は、店の ID の URL へ恒久の転送。
  */
 import Link from "next/link";
@@ -15,6 +15,7 @@ import JsonLd from "@/components/portal/JsonLd";
 import Header from "../Header";
 import Footer from "../Footer";
 import { ArticleMini } from "../ArticleCards";
+import CpLinks from "../CpLinks";
 import { IconArrow, IconChevron, IconPin } from "@/components/portal/bproto/colorplay/Icons";
 import { articleHref, loadArticle, loadArticleItems, type CpArticle, type CpArticleSection } from "@/lib/portal/colorplay/articles";
 import { shopHref } from "@/lib/portal/colorplay/search";
@@ -123,7 +124,7 @@ function Body({ site, a }: { site: CpSite; a: CpArticle }) {
                 <p className="art-shop">{s.name}</p>
                 <p className="cp-addr cp-addr-l"><IconPin size={18} /><span>{s.address}</span></p>
                 <div className="cp-cta">
-                  <Link href={shopUrl} className="cp-red">店舗紹介を見る<IconArrow size={18} /></Link>
+                  <Link href={shopUrl} className="cp-red">店舗詳細を見る<IconArrow size={18} /></Link>
                 </div>
               </div>
               {hero && (
@@ -186,8 +187,9 @@ function Body({ site, a }: { site: CpSite; a: CpArticle }) {
               <p className="art-end-name">{s.name}</p>
               <p className="cp-addr cp-addr-l"><IconPin size={18} /><span>{s.address}</span></p>
               <div className="cp-cta art-end-cta">
-                <Link href={shopUrl} className="cp-red">店舗紹介を見る<IconArrow size={18} /></Link>
+                <Link href={shopUrl} className="cp-red">店舗詳細を見る<IconArrow size={18} /></Link>
               </div>
+              {a.links.length > 0 && <div className="art-end-links"><CpLinks links={a.links} storeId={item.id} page={articleHref(site, item.id)} variant="row" /></div>}
             </div>
             {a.sources.length > 0 && (
               <div className="sh-src">
@@ -207,7 +209,10 @@ function Body({ site, a }: { site: CpSite; a: CpArticle }) {
           <section className="cp-wrap cp-more-shops" aria-labelledby="art-more-h">
             <h2 className="cp-h2 cp-rv" id="art-more-h">ほかの記事</h2>
             <div className="cp-minis">{a.more.map((x, i) => (<ArticleMini key={x.id} site={site} a={x} i={i} />))}</div>
-            <p className="cp-more"><Link href={shopListHref(site)}>店舗紹介の一覧を見る</Link></p>
+            <p className="cp-more cp-more-pair">
+              <Link href={shopListHref(site)}>店舗紹介を見る</Link>
+              <Link href={`${site.base}/special`}>特集の一覧を見る</Link>
+            </p>
           </section>
         )}
       </main>
@@ -246,8 +251,8 @@ export function cpArticlePage(site: CpSite) {
       vertical: site.key,
       title: item.featured ? `${item.title}｜${v.brand}` : `${s.name}の紹介記事｜${where ? `${where}の` : ""}${s.kindName}｜${v.brand}`,
       description: a.description,
-      // 同じ本文が店のページにもあるので、正本は店のページ
-      path: shopHref(site, item.id),
+      // 【2026-10-26】店のページと店の特集記事は別ページ。正本は記事自身
+      path: articleHref(site, item.id),
       count: shops.length,
       ...(hero ? { image: { url: hero.src, width: hero.w, height: hero.h, alt: hero.alt } } : {}),
     });

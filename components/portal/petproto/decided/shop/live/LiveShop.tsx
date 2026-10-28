@@ -11,7 +11,7 @@ import { IconCar, IconDogFace } from "../../search/SearchIcons";
 import { IcCalendar, IcClock, IcExternal, IcInstagramColor, IcLink, IcPhone, IcSns } from "../ShopIcons";
 import TrackedA from "./LiveTrack";
 import LiveShopTabs, { type ShopTab } from "./LiveShopTabs";
-import { japaneseDate, loadPetShopDetail, type FacIcon, type Facility, type HeroTag, type ShopDetail } from "./liveShopData";
+import { articleHref, japaneseDate, loadPetShopDetail, petHasArticle, type FacIcon, type Facility, type HeroTag, type ShopDetail } from "./liveShopData";
 import { searchHref, shopHref, type PetShop } from "../../search/live/liveData";
 import { sized } from "@/lib/imageUrl";
 import { breadcrumb, localBusiness } from "@/lib/seo/jsonld";
@@ -269,7 +269,7 @@ function Menu({ d }: { d: ShopDetail }) {
           メニュー
         </FillHeading>
         <p className="lsp-ldesc">
-          <span>公式サイトに載っているメニューです。</span>
+          <span>お店のメニューです。</span>
           <span>内容は変わることがあります。</span>
         </p>
         {d.website ? (
@@ -301,7 +301,7 @@ function Facility({ d }: { d: ShopDetail }) {
           施設・サービス
         </FillHeading>
         <p className="lsp-ldesc">
-          <span>店が案内している対応・サービスです。</span>
+          <span>お店の対応・サービスです。</span>
         </p>
       </div>
       <div className="lsp-items">
@@ -320,6 +320,32 @@ function Facility({ d }: { d: ShopDetail }) {
 function Story({ d }: { d: ShopDetail }) {
   const st = d.story;
   if (!st && d.sections.length === 0) return null;
+  // 【2026-10-26 試作】記事のある店は、記事の本文を店のページに置かず、見出しの一覧と「特集記事を読む」で /pet/article/{id} へ。記事が薄い店(節が少ない)は記事のページを作らず、店のページに残す
+  if (petHasArticle(d)) {
+    const heads = st ? st.points.map((p) => p.name) : d.sections.map((x) => x.heading);
+    return (
+      <section className="lsp-card lsp-art lsp-artlink pt-bgshift pt-skew" data-skew="0.4" id="story" aria-label={st ? "特集記事" : "紹介記事"} style={{ ["--bg-to" as string]: "#fefefe", ["--bg-from" as string]: "#f6f0e6" }}>
+        <div className="lsp-art-hd io" data-io="left">
+          <p className="lsp-lab">{st ? "Feature" : "Article"}</p>
+          <FillHeading as="h2" className="lsp-ttl lsp-ttl--art">
+            {st ? st.title || "特集記事" : d.headline || "お店の紹介記事"}
+          </FillHeading>
+        </div>
+        <ol className="lsp-artlink-l io">
+          {heads.map((h, i) => (
+            <li key={i}>
+              <em>{String(i + 1).padStart(2, "0")}</em>
+              <span>{h}</span>
+            </li>
+          ))}
+        </ol>
+        <Link href={articleHref(d.place.id)} prefetch={false} className="lsp-ghost lsp-artlink-b pt-press pt-hov pt-magnet">
+          <span>特集記事を読む</span>
+          <IconArrow aria-hidden="true" />
+        </Link>
+      </section>
+    );
+  }
   const blocks = st ? st.points.map((p) => ({ heading: p.name, sub: p.purpose, body: p.body, specs: p.specs })) : d.sections.map((s) => ({ heading: s.heading, sub: "", body: s.body, specs: [] as { k: string; v: string }[] }));
   return (
     <section className="lsp-card lsp-art pt-bgshift pt-skew" data-skew="0.4" id="story" aria-label={st ? "特集記事" : "紹介"} style={{ ["--bg-to" as string]: "#fefefe", ["--bg-from" as string]: "#f6f0e6" }}>
@@ -550,7 +576,7 @@ export function petShopPage() {
       { id: "about", label: "about", sub: "お店について" },
       ...(d.menus.length > 0 ? [{ id: "menu", label: "Menu", sub: "メニュー" }] : []),
       ...(d.facilities.length > 0 ? [{ id: "facility", label: "Facility", sub: "施設・サービス" }] : []),
-      ...(d.story || d.sections.length > 0 ? [{ id: "story", label: "Story", sub: d.story ? "特集記事" : "紹介" }] : []),
+      ...(d.story || d.sections.length > 0 ? [{ id: "story", label: petHasArticle(d) ? "Article" : "Story", sub: petHasArticle(d) ? "特集記事" : d.story ? "特集記事" : "紹介" }] : []),
       { id: "access", label: "Access", sub: "アクセス" },
       ...(d.related.length > 0 ? [{ id: "related", label: "Related", sub: "ほかのお店" }] : []),
     ];

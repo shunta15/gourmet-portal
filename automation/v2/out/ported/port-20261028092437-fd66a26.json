@@ -1,0 +1,195 @@
+{
+  "commit": "fd66a262618c85ab9a6110ff3b8eea71655a173b",
+  "source": "/Users/shunta/claude/gp-k-auto2",
+  "count": 17,
+  "added": [
+    {
+      "row": 256,
+      "name": "吉川八幡神社",
+      "key": "tri-life-256",
+      "vertical": "くらし",
+      "id": "li0065",
+      "articleId": "li0065",
+      "shopUrl": "https://machinowa.tokyo/life/shop/li0065",
+      "articleUrl": "https://machinowa.tokyo/life/article/li0065",
+      "sheetUrl": "https://machinowa.tokyo/life/article/li0065"
+    },
+    {
+      "row": 257,
+      "name": "専念山功徳院幸福寺",
+      "key": "tri-life-257",
+      "vertical": "くらし",
+      "id": "li0066",
+      "articleId": "li0066",
+      "shopUrl": "https://machinowa.tokyo/life/shop/li0066",
+      "articleUrl": "https://machinowa.tokyo/life/article/li0066",
+      "sheetUrl": "https://machinowa.tokyo/life/article/li0066"
+    },
+    {
+      "row": 258,
+      "name": "由良湊神社",
+      "key": "tri-life-258",
+      "vertical": "くらし",
+      "id": "li0067",
+      "articleId": "li0067",
+      "shopUrl": "https://machinowa.tokyo/life/shop/li0067",
+      "articleUrl": "https://machinowa.tokyo/life/article/li0067",
+      "sheetUrl": "https://machinowa.tokyo/life/article/li0067"
+    },
+    {
+      "row": 259,
+      "name": "八劔神社",
+      "key": "tri-life-259",
+      "vertical": "くらし",
+      "id": "li0068",
+      "articleId": "li0068",
+      "shopUrl": "https://machinowa.tokyo/life/shop/li0068",
+      "articleUrl": "https://machinowa.tokyo/life/article/li0068",
+      "sheetUrl": "https://machinowa.tokyo/life/article/li0068"
+    },
+    {
+      "row": 260,
+      "name": "日吉神社",
+      "key": "tri-life-260",
+      "vertical": "くらし",
+      "id": "li0069",
+      "articleId": "li0069",
+      "shopUrl": "https://machinowa.tokyo/life/shop/li0069",
+      "articleUrl": "https://machinowa.tokyo/life/article/li0069",
+      "sheetUrl": "https://machinowa.tokyo/life/article/li0069"
+    },
+    {
+      "row": 261,
+      "name": "飛島善光寺",
+      "key": "tri-life-261",
+      "vertical": "くらし",
+      "id": "li0070",
+      "articleId": "li0070",
+      "shopUrl": "https://machinowa.tokyo/life/shop/li0070",
+      "articleUrl": "https://machinowa.tokyo/life/article/li0070",
+      "sheetUrl": "https://machinowa.tokyo/life/article/li0070"
+    },
+    {
+      "row": 262,
+      "name": "豊藤稲荷神社",
+      "key": "tri-life-262",
+      "vertical": "くらし",
+      "id": "li0071",
+      "articleId": "li0071",
+      "shopUrl": "https://machinowa.tokyo/life/shop/li0071",
+      "articleUrl": "https://machinowa.tokyo/life/article/li0071",
+      "sheetUrl": "https://machinowa.tokyo/life/article/li0071"
+    },
+    {
+      "row": 263,
+      "name": "平林寺",
+      "key": "tri-life-263",
+      "vertical": "くらし",
+      "id": "li0072",
+      "articleId": "li0072",
+      "shopUrl": "https://machinowa.tokyo/life/shop/li0072",
+      "articleUrl": "https://machinowa.tokyo/life/article/li0072",
+      "sheetUrl": "https://machinowa.tokyo/life/article/li0072"
+    },
+    {
+      "row": 264,
+      "name": "隆国寺",
+      "key": "tri-life-264",
+      "vertical": "くらし",
+      "id": "li0073",
+      "articleId": "li0073",
+      "shopUrl": "https://machinowa.tokyo/life/shop/li0073",
+      "articleUrl": "https://machinowa.tokyo/life/article/li0073",
+      "sheetUrl": "https://machinowa.tokyo/life/article/li0073"
+    },
+    {
+      "row": 265,
+      "name": "正観寺",
+      "key": "tri-life-265",
+      "vertical": "くらし",
+      "id": "li0074",
+      "articleId": "li0074",
+      "shopUrl": "https://machinowa.tokyo/life/shop/li0074",
+      "articleUrl": "https://machinowa.tokyo/life/article/li0074",
+      "sheetUrl": "https://machinowa.tokyo/life/article/li0074"
+    },
+    {
+      "row": 266,
+      "name": "阿弥陀寺",
+      "key": "tri-life-266",
+      "vertical": "くらし",
+      "id": "li0077",
+      "articleId": "li0077",
+      "shopUrl": "https://machinowa.tokyo/life/shop/li0077",
+      "articleUrl": "https://machinowa.tokyo/life/article/li0077",
+      "sheetUrl": "https://machinowa.tokyo/life/article/li0077"
+    },
+    {
+      "row": 267,
+      "name": "箒の宮 徳井神社",
+      "key": "tri-life-267",
+      "vertical": "くらし",
+      "id": "li0075",
+      "articleId": "li0075",
+      "shopUrl": "https://machinowa.tokyo/life/shop/li0075",
+      "articleUrl": "https://machinowa.tokyo/life/article/li0075",
+      "sheetUrl": "https://machinowa.tokyo/life/article/li0075"
+    },
+    {
+      "row": 268,
+      "name": "眞福寺",
+      "key": "tri-life-268",
+      "vertical": "くらし",
+      "id": "li0076",
+      "articleId": "li0076",
+      "shopUrl": "https://machinowa.tokyo/life/shop/li0076",
+      "articleUrl": "https://machinowa.tokyo/life/article/li0076",
+      "sheetUrl": "https://machinowa.tokyo/life/article/li0076"
+    },
+    {
+      "row": 269,
+      "name": "洋食屋自然",
+      "key": "tri-gourmet-269",
+      "vertical": "グルメ",
+      "id": "r771",
+      "articleId": "洋食屋自然",
+      "shopUrl": "https://machinowa.tokyo/restaurant/r771",
+      "articleUrl": "https://machinowa.tokyo/feature/洋食屋自然",
+      "sheetUrl": "https://machinowa.tokyo/feature/洋食屋自然"
+    },
+    {
+      "row": 270,
+      "name": "うなぎ処高はし",
+      "key": "tri-gourmet-270",
+      "vertical": "グルメ",
+      "id": "r772",
+      "articleId": "うなぎ処高はし",
+      "shopUrl": "https://machinowa.tokyo/restaurant/r772",
+      "articleUrl": "https://machinowa.tokyo/feature/うなぎ処高はし",
+      "sheetUrl": "https://machinowa.tokyo/feature/うなぎ処高はし"
+    },
+    {
+      "row": 272,
+      "name": "屋久島ダイビングガイド夢心地",
+      "key": "tri-activity-272",
+      "vertical": "アクティビティ",
+      "id": "ac0028",
+      "articleId": "ac0028",
+      "shopUrl": "https://machinowa.tokyo/activity/shop/ac0028",
+      "articleUrl": "https://machinowa.tokyo/activity/article/ac0028",
+      "sheetUrl": "https://machinowa.tokyo/activity/article/ac0028"
+    },
+    {
+      "row": 273,
+      "name": "海が見えるそば家",
+      "key": "tri-gourmet-273",
+      "vertical": "グルメ",
+      "id": "r773",
+      "articleId": "海が見えるそば家",
+      "shopUrl": "https://machinowa.tokyo/restaurant/r773",
+      "articleUrl": "https://machinowa.tokyo/feature/海が見えるそば家",
+      "sheetUrl": "https://machinowa.tokyo/feature/海が見えるそば家"
+    }
+  ],
+  "skipped": []
+}

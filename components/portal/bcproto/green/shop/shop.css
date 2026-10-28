@@ -231,3 +231,11 @@
   .sh-fix-call { background: var(--gr-btn); color: #fff; }
   .sh-fix-web { background: #fff; color: var(--gr-g); border: 1.5px solid var(--gr-g); }
 }
+
+/* 店の特集記事への入口(2026-10-26 試作。記事のある店だけ。記事の本文は /bodycare/article/<ID> にあり、店のページには置かない) */
+.sh-artlink-b { margin-top: 14px; display: grid; gap: 12px; padding: 18px 20px; background: linear-gradient(120deg, #fff, var(--gr-gl2)); border: 1px solid #dbe6d2; border-radius: 14px; }
+.sh-artlink-t { font: 600 17px/1.6 var(--gr-ff-min); letter-spacing: 0.04em; color: #1d211e; overflow-wrap: anywhere; }
+.sh-artlink-l { display: grid; gap: 2px; }
+.sh-artlink-l li { display: flex; gap: 10px; font-size: 13px; line-height: 1.8; color: #4f524f; }
+.sh-artlink-l em { flex: none; font-style: normal; font-family: var(--gr-ff-min); color: var(--gr-g2); }
+.sh-artlink-b .gr-btn { justify-self: start; height: 42px; font-size: 13.5px; }

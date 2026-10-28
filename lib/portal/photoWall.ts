@@ -44,7 +44,6 @@ const GENRE_KEY: Record<string, string> = {
   お好み焼き: "okonomiyaki",
   "バー・バル": "bar",
 };
-const OTHER = { key: "other", label: "その他" } as const;
 
 /**
  * 既存の CUISINE_GROUPS の keywords（店のジャンル文字列への部分一致。検索ページと同じ判定）に、この壁だけで足す言い換え。
@@ -147,17 +146,14 @@ export function buildWall(restaurants: Restaurant[]): WallData {
 
   // ジャンル・県は、実際に写真がある選択肢だけ（枚数の多い順）。0 枚の選択肢は作らない
   const genreCount = new Map<number, number>();
-  let other = 0;
   const prefCount = new Map<string, number>();
   for (const x of raws) {
-    if (x.genres.length === 0) other++;
     for (const g of x.genres) genreCount.set(g, (genreCount.get(g) ?? 0) + 1);
     if (x.pref) prefCount.set(x.pref, (prefCount.get(x.pref) ?? 0) + 1);
   }
   const genreOrder = [...genreCount.entries()].sort((a, b) => b[1] - a[1] || a[0] - b[0]).map(([g]) => g);
   const genres: WallFacet[] = genreOrder.map((g) => ({ key: GENRE_DEFS[g].key, label: GENRE_DEFS[g].label }));
-  if (other > 0) genres.push({ key: OTHER.key, label: OTHER.label });
-  const otherIdx = genres.length - 1;
+  // ジャンルに当たらない写真に「その他」の札は作らない（「すべて」には出る）
   const genreIdx = new Map(genreOrder.map((g, i) => [g, i]));
 
   const prefOrder = PREFECTURES.filter((p) => prefCount.has(p.slug)).sort(
@@ -172,7 +168,7 @@ export function buildWall(restaurants: Restaurant[]): WallData {
     a: x.a,
     c: x.c,
     p: prefIdx.get(x.pref) ?? -1,
-    g: x.genres.length ? x.genres.map((g) => genreIdx.get(g) as number) : [otherIdx],
+    g: x.genres.map((g) => genreIdx.get(g) as number),
     h: x.h,
     ws: x.ws,
     r: x.r,

@@ -1,0 +1,177 @@
+{
+  "key": "tri-life-260",
+  "headline": "愛知県清須市清洲にある神社。光仁天皇の御世、宝亀二年(771年)の創祀と伝わり、織田信長公、豊臣秀吉公、徳川家康公の三英傑に縁がある。",
+  "lede": "清須市にある「日吉神社」です。宝亀二年(771年)の創祀と伝わり、戦国時代には織田信長公、豊臣秀吉公、徳川家康公の三英傑に縁のある逸話が残っています。明治以降は社名を山王宮から日吉神社と改め、旧社格制度のもとでは県社として尊崇されました。",
+  "sections": [
+    {
+      "heading": "場所とアクセス",
+      "body": "住所は愛知県清須市清洲2272番地、電話は052-400-2402です。名鉄名古屋本線「新清洲駅」より徒歩8分、清洲東インター出口より車で約8分の場所にあります。駐車場は合計約30台分、社務所の受付時間は午前9時から午後4時までです。"
+    },
+    {
+      "heading": "三英傑ゆかりの由緒",
+      "body": "宝亀二年(771年)、人々が素盞嗚命を大己貴命と合わせて祀ったのが創祀です。戦国時代には、豊臣秀吉公の生母が日吉神社に祈願して授かった子の幼名を「日吉丸」としたという言い伝えがあり、徳川家康公の四男松平忠吉公が神社を大々的に造営修復しました。明治以降、社名は山王宮から日吉神社に改められました。"
+    },
+    {
+      "heading": "境内の見どころ",
+      "body": "境内には、触れると懐妊すると伝えられる「子産石」、享保十一年(1726年)に黄金が発見されたという黄金伝説の逸話、現代美術アーティストのイチハラヒロコが手がけた恋みくじなどがあります。神様の使いとされる申(猿)の像も置かれています。"
+    },
+    {
+      "heading": "年間の祭事",
+      "body": "御例祭は十月十日、輪くぐり神事は八月一日の夕刻、人形供養祭は五月第二日曜に営まれています。境内に隣接して、宗派を問わない山王霊苑もあります。"
+    }
+  ],
+  "menus": [
+    {
+      "name": "子授け祈祷"
+    },
+    {
+      "name": "人形供養"
+    },
+    {
+      "name": "恋みくじ"
+    },
+    {
+      "name": "月替り御朱印"
+    },
+    {
+      "name": "花手水"
+    }
+  ],
+  "tags": [
+    {
+      "tag": "駐車場あり",
+      "factIndex": 13
+    }
+  ],
+  "facts": [
+    {
+      "claim": "住所は愛知県清須市清洲2272",
+      "source": "https://maps.google.com/?cid=17398840218425039346",
+      "quote": "愛知県清須市清洲２２７２",
+      "checkedAt": "2026-10-28"
+    },
+    {
+      "claim": "創祀は光仁天皇の御世、宝亀二年(771年)",
+      "source": "http://hiyoshikami.jp/about_hiyoshi_jinja/",
+      "quote": "宝亀二年（西暦七七一年）",
+      "checkedAt": "2026-10-28"
+    },
+    {
+      "claim": "明治以降、社名を山王宮から日吉神社と改めた",
+      "source": "http://hiyoshikami.jp/about_hiyoshi_jinja/",
+      "quote": "社名を山王宮から日吉神社と改め",
+      "checkedAt": "2026-10-28"
+    },
+    {
+      "claim": "豊臣秀吉の生母が祈願して授かった子の幼名を日吉丸とした",
+      "source": "http://hiyoshikami.jp/about_hiyoshi_jinja/",
+      "quote": "幼名を日吉丸としたとされております",
+      "checkedAt": "2026-10-28"
+    },
+    {
+      "claim": "徳川家康の四男松平忠吉が神社を大々的に造営修復した",
+      "source": "http://hiyoshikami.jp/about_hiyoshi_jinja/",
+      "quote": "日吉神社を大々的に造営修復",
+      "checkedAt": "2026-10-28"
+    },
+    {
+      "claim": "境内に「子産石」と呼ばれる石がある",
+      "source": "http://hiyoshikami.jp/",
+      "quote": "「子産石」と称される女陰石があり",
+      "checkedAt": "2026-10-28"
+    },
+    {
+      "claim": "享保十一年(1726年)に黄金が発見されたという黄金伝説がある",
+      "source": "http://hiyoshikami.jp/",
+      "quote": "慶長時代の大判、切り金など六十枚",
+      "checkedAt": "2026-10-28"
+    },
+    {
+      "claim": "イチハラヒロコが手がけた恋みくじがある",
+      "source": "http://hiyoshikami.jp/",
+      "quote": "イチハラヒロコさんが手がけた",
+      "checkedAt": "2026-10-28"
+    },
+    {
+      "claim": "御例祭は十月十日に行われる",
+      "source": "http://hiyoshikami.jp/saitenn/",
+      "quote": "御例祭は、十月十日に行われます。",
+      "checkedAt": "2026-10-28"
+    },
+    {
+      "claim": "輪くぐり神事は八月一日の夕刻に行われる",
+      "source": "http://hiyoshikami.jp/saitenn/",
+      "quote": "輪くぐり神事は、八月一日の夕刻に行われます。",
+      "checkedAt": "2026-10-28"
+    },
+    {
+      "claim": "人形供養祭は五月第二日曜に行われる",
+      "source": "http://hiyoshikami.jp/saitenn/",
+      "quote": "人形供養祭は、五月第二日曜に行われます。",
+      "checkedAt": "2026-10-28"
+    },
+    {
+      "claim": "名鉄名古屋本線「新清洲駅」より徒歩8分",
+      "source": "http://hiyoshikami.jp/access/",
+      "quote": "名鉄名古屋本線『新清洲駅』より徒歩8分",
+      "checkedAt": "2026-10-28"
+    },
+    {
+      "claim": "清洲東インター出口より車で約8分",
+      "source": "http://hiyoshikami.jp/access/",
+      "quote": "清洲東インター（又は、清洲西・甚目寺）出口より車で約8分",
+      "checkedAt": "2026-10-28"
+    },
+    {
+      "claim": "駐車場は合計約30台",
+      "source": "http://hiyoshikami.jp/access/",
+      "quote": "駐車場合計台数 約30台",
+      "checkedAt": "2026-10-28"
+    },
+    {
+      "claim": "社務所受付時間は午前9時から午後4時",
+      "source": "http://hiyoshikami.jp/access/",
+      "quote": "社務所受付時間：午前9時〜午後4時",
+      "checkedAt": "2026-10-28"
+    },
+    {
+      "claim": "境内に隣接して宗派を問わない山王霊苑がある",
+      "source": "http://hiyoshikami.jp/sanno_reien/",
+      "quote": "宗派を問わない山王霊苑には",
+      "checkedAt": "2026-10-28"
+    },
+    {
+      "claim": "子授け祈祷・人形供養・恋みくじ・月替り御朱印・花手水を行っている",
+      "source": "http://hiyoshikami.jp/",
+      "quote": "＊子授け祈祷",
+      "checkedAt": "2026-10-28"
+    }
+  ],
+  "sources": [
+    {
+      "label": "公式サイト",
+      "url": "http://hiyoshikami.jp/"
+    },
+    {
+      "label": "公式サイト(アクセス)",
+      "url": "http://hiyoshikami.jp/access/"
+    },
+    {
+      "label": "公式サイト(日吉神社について)",
+      "url": "http://hiyoshikami.jp/about_hiyoshi_jinja/"
+    },
+    {
+      "label": "公式サイト(山王霊苑)",
+      "url": "http://hiyoshikami.jp/sanno_reien/"
+    },
+    {
+      "label": "公式サイト(祭典)",
+      "url": "http://hiyoshikami.jp/saitenn/"
+    },
+    {
+      "label": "Google マップ",
+      "url": "https://maps.google.com/?cid=17398840218425039346"
+    }
+  ],
+  "notes": "automation/v2/write.mjs が 2026-10-28 に claude -p --model sonnet で作成。事実の裏取り: 17/18 件(quote が出どころにあるもの)。裏取りに通らなかった facts は載せていない。"
+}

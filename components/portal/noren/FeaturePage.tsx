@@ -46,7 +46,7 @@ export default function FeaturePage({ article: A, features, storeId, fmap, links
   const isCourse = A.articleType === "course";
   const isGuide = A.articleType === "guide";
   const isSinglePoint = A.ranking.length > 0 && /^POINT/i.test(A.ranking[0].rank);
-  const headLabel = isSinglePoint ? "POINT" : "厳選";
+  const headLabel = isSinglePoint ? "POINT" : "掲載";
   const introText = isSinglePoint
     ? `編集部が選んだ${A.ranking.length}つのポイントを順にご紹介します。`
     : isGuide
@@ -54,9 +54,8 @@ export default function FeaturePage({ article: A, features, storeId, fmap, links
       : `順位ではなく、編集部が選んだ${A.ranking.length}軒の名店を順にご紹介します。`;
   const tickerItems = [
     A.subtitle,
-    "編集部厳選",
     A.kicker,
-    isSinglePoint ? `${A.ranking.length} POINTS` : `厳選${A.ranking.length}スポット`,
+    isSinglePoint ? `${A.ranking.length} POINTS` : `${A.ranking.length}スポット`,
     RELEASE_REST ? issueLabel(A.date) : "2026年 春号", // 記事の日付から「2026年 10月号」（RELEASE_REST が true のとき。日付が無ければ出さない）。false は今の本番の「2026年 春号」
   ].filter(Boolean);
 

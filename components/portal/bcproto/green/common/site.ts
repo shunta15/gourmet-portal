@@ -13,6 +13,8 @@ export const PORTAL_HREF = "/"; // マチノワ トップ(総合トップ)
 export const shopHref = (id: string) => `${BASE}/shop/${encodeURIComponent(id)}`;
 /** 店舗紹介の一覧の URL(n は 1 ページぶん=20 を超えるときだけ付ける。lib/portal/vert/bodygreen/filter.ts の PAGE_SIZE と同じ) */
 export const shopListHref = (n?: number) => `${SHOPS_HREF}${n && n > 20 ? `?n=${n}` : ""}`;
+/** 店の特集記事のページ(店 1 軒の記事。店の ID と同じ ID。2026-10-26 試作。店のページから「特集記事を読む」で来る) */
+export const articleHref = (id: string) => `${BASE}/article/${encodeURIComponent(id)}`;
 /** 業種の特集記事(一覧 = SPECIAL_HREF。slug は半角英数とハイフン) */
 export const specialHref = (slug: string) => `${SPECIAL_HREF}/${encodeURIComponent(slug)}`;
 

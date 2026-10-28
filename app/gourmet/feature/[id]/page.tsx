@@ -17,6 +17,7 @@ import {
 } from "@/lib/db/features";
 import { FEATURES } from "@/lib/data";
 import { ARTICLE_STORE_ID_BY_FEATURE } from "@/lib/articleStores";
+import { isHiddenStore } from "@/lib/hiddenStores";
 import { getRestaurantById } from "@/lib/db/restaurants";
 import type { FeatureArticle } from "@/lib/regions";
 import { assertPortalLive, liveStaticParams } from "@/lib/portal/launch";
@@ -27,7 +28,7 @@ import { buildPhotoFeature } from "@/lib/portal/photoFeature/build";
 import { isFeaturedPhotoId } from "@/lib/portal/photoFeature/featured";
 import { getRelatedFeatured } from "@/lib/portal/photoFeature/related";
 import { onePageShopOf } from "@/lib/portal/noren/onePage";
-import { onePageUnlistedShopOf } from "@/lib/portal/noren/onePageUnlisted";
+import { isUnlistedPhotoFeature, onePageUnlistedShopOf } from "@/lib/portal/noren/onePageUnlisted";
 import { NOREN_FEATURE_SCENE, isSceneShopFeature } from "@/lib/portal/noren/featureScene";
 import { NOREN_FEATURE_ROUNDUP_PHOTO } from "@/lib/portal/noren/featureScene";
 import RoundupArticle from "@/components/portal/photoFeature/roundup/RoundupArticle";
@@ -111,14 +112,16 @@ export default async function Page({
   // （NOREN_FEATURE_SCENE が false でも、NOREN_FEATURE_ROUNDUP_PHOTO が true なら新しい枠で出す。両方 false は今までの FeaturePage）
   const roundupPhoto = sceneShop && NOREN_FEATURE_ROUNDUP_PHOTO;
   // 屋号は、対の店ページ（ARTICLE_STORE_ID_BY_FEATURE の店）の店名だけを使う（記事の題名から店名を作らない）
-  const shop = single && storeId ? await getRestaurantById(storeId) : null;
+  // 【2026-10-26】店のページと店の特集記事は別ページ。写真が主役の形で出す記事(onePage.ts の表・限定公開の表)は、NOREN_FEATURE_SINGLE(= RELEASE_REST)に依らず、対の店を引いて「店舗詳細を見る」を付ける
+  const photoTarget = NOREN_FEATURE_PHOTO && isSingleShopFeature(article) && !!storeId && (isFeaturedPhotoId(article.id) || isUnlistedPhotoFeature(article.id));
+  const shop = (single || photoTarget) && storeId ? await getRestaurantById(storeId) : null;
   // 店ページとの切り替えの帯: 対の店ページがある記事だけ（店ページ側と同じ関数 pairedShopOfFeature の対応表。店名の部分一致はしない）
   const pair = single && shop && pairedShopOfFeature(article.id) === shop.id
     ? { shopNote: pairShopNote(shop), featureNote: pairFeatureNote(article.ranking.length) }
     : null;
   // 1 店 1 ページの対象（isFeaturedPhotoId = onePage.ts の表。ID の完全一致）は、写真が主役の形（components/portal/photoFeature/）で出す。ただし /feature/<ID> は /restaurant/<店の ID> へ転送されるので、ここへ来るのは転送を通らない呼び方だけ（実際は上の permanentRedirect で止まる）。切り替えは NOREN_FEATURE_PHOTO（false で FeatureSinglePage に戻る）。
   // 対象以外の店 1 軒の記事・複数の店の記事は、この分岐に入らない（出力は今までどおり）。
-  const photo = NOREN_FEATURE_PHOTO && single && isFeaturedPhotoId(article.id);
+  const photo = photoTarget && !!shop && ARTICLE_STORE_ID_BY_FEATURE[article.id] === shop.id;
   // 店の対が無い単独店の記事（店のデータが無い。ARTICLE_STORE_ID_BY_FEATURE に店が無い記事。ID の完全一致）: /feature/<記事 ID> のまま、同じ写真が主役の形で出す（切り替えは NOREN_FEATURE_PHOTO = RELEASE_FEATURE）。
   // 屋号が無いので、入口の暖簾は出さない（題から屋号は作らない）。店舗情報は記事にある項目（住所・営業時間・定休日・席・最寄り・予算・電話。無い行は出さない）だけ。
   // 店が非表示の記事（storeId があるもの）は、ここに入らず今までの枠のまま。
@@ -126,7 +129,7 @@ export default async function Page({
   const photoData = photo || noShopPhoto ? buildPhotoFeature(article, shop) : null;
   const photoRelated = photo || noShopPhoto ? await getRelatedFeatured(article.id, shop ? { region: shop.region, cuisine: shop.cuisine } : null) : [];
   // 「店を地図でまとめて見る」は、座標のある店が 2 軒以上のときだけ（null なら出さない）
-  const fmap = single || noShopPhoto ? null : await buildFmap(article);
+  const fmap = single || noShopPhoto || photo ? null : await buildFmap(article);
   return (
     <>
       <script
@@ -146,7 +149,7 @@ export default async function Page({
           <PhotoFeaturePage
             data={photoData}
             noShop={noShopPhoto}
-            shopHref={pair && shop ? `${LIVE_LINKS.shopBase}/${shop.id}` : null}
+            shopHref={(pair || photo) && shop ? `${LIVE_LINKS.shopBase}/${shop.id}` : null}
             listHref="/feature"
             topHref={LIVE_LINKS.top}
             searchHref="/search"
@@ -173,7 +176,7 @@ export default async function Page({
         <FeaturePage
           article={article}
           features={FEATURES}
-          storeId={storeId}
+          storeId={storeId && !isHiddenStore(storeId) ? storeId : undefined} // 非表示の店（店ページが 404）へは「店舗情報」のリンクを出さない
           fmap={fmap}
           links={LIVE_LINKS}
           href={(h) => h}

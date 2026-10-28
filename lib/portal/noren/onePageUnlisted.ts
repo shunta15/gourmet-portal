@@ -99,8 +99,11 @@ export const ONE_PAGE_UNLISTED_SHOP_OF_FEATURE: Readonly<Record<string, string>>
   "竹田カフェ": "r761", // 竹田カフェ(営業時間が無く自動では1ページ化されず、旧型の店ページで 500・2026-10-28 手で追加)
   "陽月kagezuki": "r765", // 陽月 kagezuki(同上)
   "コグマコーヒー": "r770", // コグマコーヒー(同上)
-  "雲仙湯せんぺい遠江屋本舗": "r771", // 雲仙湯せんぺい 遠江屋本舗(くらしから移した店・2026-10-28)
-  "マルシェノグチ": "r772", // 野菜専門店 マルシェノグチ(くらしから移した店・2026-10-28)
+  "洋食屋自然": "r771", // 洋食屋 自然
+  "うなぎ処高はし": "r772", // うなぎ処 高はし
+  "海が見えるそば家": "r773", // 海が見えるそば家
+  "雲仙湯せんぺい遠江屋本舗": "r774", // 雲仙湯せんぺい 遠江屋本舗(くらしから移した店・2026-10-28)
+  "マルシェノグチ": "r775", // 野菜専門店 マルシェノグチ(くらしから移した店・2026-10-28)
 };
 
 const NFC = (s: string) => s.normalize("NFC");
@@ -112,3 +115,6 @@ export const onePageUnlistedShopOf = (featureId: string): string | null => (NORE
 
 /** 店 ID → 記事 ID(限定公開の対応だけ) */
 export const onePageUnlistedFeatureOf = (shopId: string): string | null => (NOREN_ONE_PAGE ? FEATURE_OF.get(shopId) ?? null : null);
+
+/** 限定公開の記事が、写真が主役の形で出す記事か(切り替え NOREN_ONE_PAGE に依らない。ID の完全一致) */
+export const isUnlistedPhotoFeature = (featureId: string): boolean => SHOP_OF.has(NFC(featureId));

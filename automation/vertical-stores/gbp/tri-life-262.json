@@ -1,0 +1,32 @@
+{
+  "tab": "トリニティアポ",
+  "tabEn": "tri-life",
+  "row": 262,
+  "sheet": {
+    "name": "豊藤稲荷神社",
+    "address": "",
+    "url": "https://www.google.com/maps/search/?api=1&query=%E8%B1%8A%E8%97%A4%E7%A8%B2%E8%8D%B7%E7%A5%9E%E7%A4%BE%20052-891-0002%20",
+    "type": "神社",
+    "d1": "",
+    "d2": ""
+  },
+  "urlKind": "mapsApi",
+  "route": "第1段(verify-gbp.mjs)で確認済み",
+  "verdict": "一致",
+  "verdictReason": "手がかり: 店名＋電話。電話が一致／店名: exact(シート「豊藤稲荷神社」/ マップ「豊藤稲荷神社」)",
+  "place": {
+    "name": "豊藤稲荷神社",
+    "address": "愛知県名古屋市緑区作の山町１８０",
+    "category": "神社",
+    "lat": 35.087054,
+    "lng": 136.961431,
+    "gbpUrl": "https://maps.google.com/?cid=14308245261947559096",
+    "phone": "052-891-0002",
+    "website": "https://toyofujiinarinagoy.wixsite.com/toyofujiinari-nagoya",
+    "hours": null,
+    "reserveLinks": [],
+    "statusSignals": [],
+    "closedSignal": false
+  },
+  "fetchedAt": "2026-10-28T08:41:41.232Z"
+}
