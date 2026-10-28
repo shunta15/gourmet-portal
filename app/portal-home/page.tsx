@@ -1,8 +1,5 @@
 import type { Metadata } from "next";
-import Machi2Page from "@/components/portal/hproto/machi2/Page";
-import { cardPhotos } from "@/components/portal/hproto/machi2/cards";
-import { latestNews } from "@/components/portal/hproto/machi2/news";
-import { seasonNowJst } from "@/components/portal/hproto/machi2/season";
+import { HomePage } from "@/components/portal/hproto/homeDesign";
 import { buildMetadata } from "@/lib/seo/meta";
 
 // 総合トップ。公開スイッチ ON のとき `/` として出る（next.config.ts の rewrites）。検索エンジンに載せる（index）。
@@ -23,10 +20,9 @@ export const metadata: Metadata = {
   robots: { index: true, follow: true },
 };
 
-// 見た目は「まち」改（components/portal/hproto/machi2）。最初の季節を日本時間の今日の月で決めるので、1 時間ごとに作り直す（revalidate）。
+// 見た目は components/portal/hproto/homeDesign.tsx で選ぶ（今は見本4・丸い切り抜き。前の「まち」改 machi2 は季節を日本時間の今日の月で決めるので、1 時間ごとに作り直す revalidate はそのために残してある）。
 export const revalidate = 3600;
 
 export default async function Page() {
-  // 「読みもの」カードの 2 枚(まちのストーリー・家族でおでかけ)は、リンク先の記事の実際の写真(記事ページと同じ取り方)
-  return <Machi2Page season={seasonNowJst()} news={latestNews(4)} cards={await cardPhotos()} />;
+  return <HomePage />;
 }

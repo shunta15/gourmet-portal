@@ -1,8 +1,11 @@
+import Link from "next/link";
 import { SHAPES } from "./shapes";
+import ContactLine from "@/components/portal/ContactLine";
 
 // 総合トップの試作「見本4(丸い切り抜き)」の横型(PC)版。
 // 見本(1024×1536 の縦長)を画面幅で引き伸ばさず、ヒーローだけ見本の座標(--u = 見本の 1px、最大 1.2px)で組み、
 // そのほかの段は普通の大きさの文字で横に組む。768px 前後より狭いときは縦に積む。
+// 2026-10-29 本番用に、仮の # や文字を今ある実在のページへ置き換えた(配置・札の枚数・形・色は試作のまま)。リンク先の表は下の HREF_* にまとめてある。
 const U = (n: number) => `calc(var(--u) * ${n})`;
 const IMG = "/_portal/hproto/p4/";
 // コラージュの原点(見本の座標)
@@ -10,18 +13,28 @@ const OX = 308;
 const OY = 49;
 
 const HERO = ["h1", "h2", "h3", "h4", "h5", "h6", "h7", "h8"] as const;
-// [x0,y0,x1,y1, 文字, 傾き, 字の大きさ](見本の座標)
-const LABELS: [number, number, number, number, string, number, number][] = [
-  [459, 114, 493, 198, "食べて、", 0, 16],
-  [842, 89, 875, 176, "動いて、", 0, 16],
-  [971, 225, 997, 302, "癒されて、", 0, 13],
-  [840, 344, 960, 391, "キレイになって、", -4, 15],
-  [528, 372, 560, 466, "出かけて、", 0, 16],
-  [465, 492, 498, 584, "楽しんで、", 0, 16],
-  [780, 408, 811, 513, "キレイになって、", 0, 12],
-  [929, 483, 961, 558, "整えて、", 0, 16],
+// [x0,y0,x1,y1, 文字, 傾き, 字の大きさ, 行き先](見本の座標)。行き先は札の隣の写真に合わせた業種の最初のページ(8 枚の写真 = 8 業種)
+const LABELS: [number, number, number, number, string, number, number, string][] = [
+  [459, 114, 493, 198, "食べて、", 0, 16, "/gourmet"],
+  [842, 89, 875, 176, "動いて、", 0, 16, "/sports"],
+  [971, 225, 997, 302, "癒されて、", 0, 13, "/pet"],
+  [840, 344, 960, 391, "キレイになって、", -4, 15, "/beauty"],
+  [528, 372, 560, 466, "出かけて、", 0, 16, "/activity"],
+  [465, 492, 498, 584, "楽しんで、", 0, 16, "/life"],
+  [780, 408, 811, 513, "キレイになって、", 0, 12, "/stay"],
+  [929, 483, 961, 558, "整えて、", 0, 16, "/bodycare"],
 ];
-const NAV = ["マチノワについて", "特集", "街歩き", "インタビュー", "お知らせ"] as const;
+// ヘッダー・フッターのナビ。マチノワについて = 特集の一覧(2026-10-29 オーナー指示「マチノワについては特集記事とかにして」) / 特集 = 特集の一覧 / 街歩き = 特集の一覧の「街歩き・コース」の棚。
+// インタビュー・お知らせは、中身が合うページがまだ無いので # のまま(オーナー判断待ち)
+const NAV: readonly (readonly [string, string])[] = [
+  ["マチノワについて", "/feature"],
+  ["特集", "/feature"],
+  ["街歩き", "/feature#walk"],
+  ["インタビュー", "#"],
+  ["お知らせ", "#"],
+];
+const HREF_FEATURE = "/feature";
+const HREF_FAV = "/list";
 const CATS = [
   ["gourmet", "グルメ", "GOURMET"],
   ["beauty", "ビューティー", "BEAUTY"],
@@ -33,11 +46,12 @@ const CATS = [
   ["life", "くらし", "LIFESTYLE"],
 ] as const;
 const CAT_R = ["36% 42% 38% 34% / 32% 36% 42% 36%", "40% 34% 42% 36% / 36% 40% 34% 42%", "34% 40% 36% 42% / 40% 34% 40% 36%", "42% 36% 34% 40% / 34% 42% 36% 40%"];
-const SCENES = [
-  ["友人と", "楽しむ"],
-  ["家族と", "おでかけ"],
-  ["ひとりで", "リフレッシュ"],
-  ["ペットと", "一緒に"],
+// 利用シーン(店をさがすの絞り込み。どれも結果が出る: group 77 店 / 子連れ・家族連れ 17 店 / solo 22 店 / pet-friendly 3 店)
+const SCENES: [string, string, string][] = [
+  ["友人と", "楽しむ", "/search?scene=group"],
+  ["家族と", "おでかけ", "/search?f=kids"],
+  ["ひとりで", "ゆっくり", "/search?scene=solo"],
+  ["ペットと", "一緒に", "/search?scene=pet-friendly"],
 ];
 
 const Heart = ({ c = "#d9423f", f = true }: { c?: string; f?: boolean }) => (
@@ -50,11 +64,15 @@ const Arrow = () => (
     <path d="M1 5h21M17 1l5 4-5 4" fill="none" stroke="currentColor" strokeWidth="1.2" strokeLinecap="round" strokeLinejoin="round" />
   </svg>
 );
+// 内向きのリンクは Link、同じページ内(#…)や # は <a>
+function NavLink({ href, children }: { href: string; children: React.ReactNode }) {
+  return href.startsWith("/") ? <Link href={href}>{children}</Link> : <a href={href}>{children}</a>;
+}
 const Logo = () => (
-  <a href="#" className="p4-logo">
+  <Link href="/" className="p4-logo" aria-label="マチノワ トップへ">
     <span className="p4-logo-ja">マチノワ</span>
     <span className="p4-logo-en">MACHINOWA</span>
-  </a>
+  </Link>
 );
 
 export default function P4Home() {
@@ -75,15 +93,23 @@ export default function P4Home() {
       {/* ヘッダー */}
       <header className="p4-header">
         <Logo />
-        <nav className="p4-nav">
-          {NAV.map((t) => (
-            <a key={t} href="#">{t}</a>
+        <nav className="p4-nav" aria-label="サイトナビゲーション">
+          {NAV.map(([t, h]) => (
+            <NavLink key={t} href={h}>{t}</NavLink>
           ))}
         </nav>
-        <span className="p4-fav">
+        <Link href={HREF_FAV} className="p4-fav">
           <span className="p4-fav-i"><Heart /></span>お気に入り
-        </span>
-        <span className="p4-burger" aria-hidden><i /><i /><i /></span>
+        </Link>
+        <details className="p4-menu">
+          <summary className="p4-burger" aria-label="メニュー"><i /><i /><i /></summary>
+          <ul className="p4-menu-list">
+            {CATS.map(([k, ja]) => (
+              <li key={k}><Link href={"/" + k}>{ja}</Link></li>
+            ))}
+            <li><Link href={HREF_FAV}>お気に入り</Link></li>
+          </ul>
+        </details>
       </header>
 
       {/* ヒーロー */}
@@ -106,14 +132,15 @@ export default function P4Home() {
               <img key={k} src={IMG + "n_" + k + ".webp"} alt="" className="p4-blob" style={{ left: U(s.x - OX), top: U(s.y - OY), width: U(s.w), height: U(s.h), clipPath: `url(#p4c-${k})` }} />
             );
           })}
-          {LABELS.map(([x0, y0, x1, y1, t, r, fs]) => (
-            <span
+          {LABELS.map(([x0, y0, x1, y1, t, r, fs, href]) => (
+            <Link
               key={x0 + "-" + y0}
+              href={href}
               className="p4-label"
               style={{ left: U(x0 - 1 - OX), top: U(y0 - 1 - OY), width: U(x1 - x0 + 2), height: U(y1 - y0 + 2), transform: `rotate(${r}deg)`, fontSize: `max(10px, ${U(fs)})`, writingMode: r ? "horizontal-tb" : "vertical-rl" }}
             >
               {t}
-            </span>
+            </Link>
           ))}
           <div className="p4-badge" style={{ left: U(620 - OX), top: U(212 - OY), width: U(180), height: U(180) }}>
             <svg viewBox="0 0 180 180" width="100%" height="100%" aria-hidden>
@@ -139,11 +166,11 @@ export default function P4Home() {
         </div>
         <div className="p4-cats">
           {CATS.map(([k, ja, en], i) => (
-            <a key={k} href="#" className="p4-cat">
+            <Link key={k} href={"/" + k} className="p4-cat">
               <img src={IMG + "n_cat_" + k + ".webp"} alt="" style={{ borderRadius: CAT_R[i % 4] }} />
               <span className="p4-cat-ja">{ja}</span>
               <span className="p4-cat-en">{en}</span>
-            </a>
+            </Link>
           ))}
         </div>
       </section>
@@ -155,7 +182,7 @@ export default function P4Home() {
           <div className="p4-story-body">
             <h2 className="p4-h3">街のストーリー</h2>
             <p className="p4-small">お店・人・街の魅力を紡ぐ<br />読みものコンテンツ。</p>
-            <a href="#" className="p4-btn">特集をみる<Arrow /></a>
+            <Link href={HREF_FEATURE} className="p4-btn">特集をみる<Arrow /></Link>
           </div>
           <span className="p4-script p4-script-story">Special<br /><span style={{ marginLeft: 30 }}>Contents</span></span>
         </div>
@@ -164,24 +191,24 @@ export default function P4Home() {
           <h2 className="p4-h3">こんなシーンで楽しめる。</h2>
           <p className="p4-small">日常のあらゆるシーンで、マチノワがあなたの街時間を彩ります。</p>
           <div className="p4-scenes">
-            {SCENES.map(([a, b], i) => (
-              <a key={a} href="#" className="p4-scene">
+            {SCENES.map(([a, b, href], i) => (
+              <Link key={a} href={href} className="p4-scene">
                 <img src={IMG + "n_s" + i + ".webp"} alt="" style={{ borderRadius: i % 2 ? "44% 44% 38% 38% / 30% 30% 22% 22%" : "46% 46% 36% 36% / 28% 28% 24% 24%" }} />
                 <span>{a}<br />{b}</span>
-              </a>
+              </Link>
             ))}
           </div>
         </div>
       </section>
 
       {/* マチノワについて */}
-      <section className="p4-about" aria-label="マチノワについて">
+      <section className="p4-about" id="about" aria-label="マチノワについて">
         <div className="p4-about-l">
           <div className="p4-about-text">
             <p className="p4-en">ABOUT</p>
             <h2 className="p4-h4">マチノワについて</h2>
             <p className="p4-small">地域の魅力をつなぎ、<br />街の新しい発見や出会いを生み出します。</p>
-            <a href="#" className="p4-btn">マチノワについて<Arrow /></a>
+            <Link href={HREF_FEATURE} className="p4-btn">マチノワについて<Arrow /></Link>
           </div>
           <img src={IMG + "n_art_people.webp"} alt="" className="p4-people" />
         </div>
@@ -199,11 +226,12 @@ export default function P4Home() {
       </section>
 
       {/* フッター */}
-      <footer className="p4-foot">
+      <footer className="p4-footwrap">
+      <div className="p4-foot">
         <Logo />
-        <nav className="p4-fnav">
-          {NAV.map((t) => (
-            <a key={t} href="#">{t}</a>
+        <nav className="p4-fnav" aria-label="フッターナビゲーション">
+          {NAV.map(([t, h]) => (
+            <NavLink key={t} href={h}>{t}</NavLink>
           ))}
         </nav>
         <span className="p4-soc">
@@ -212,9 +240,11 @@ export default function P4Home() {
           <svg viewBox="0 0 24 24" width="20" height="18" aria-hidden><rect x="1.5" y="4.5" width="21" height="15" rx="4.5" fill="#2b2724" /><path d="M10 9l5 3-5 3z" fill="#f3efea" /></svg>
         </span>
         <i className="p4-fdiv" />
-        <span className="p4-fav">
+        <Link href={HREF_FAV} className="p4-fav">
           <span className="p4-fav-i"><Heart c="#2b2724" f={false} /></span>お気に入り
-        </span>
+        </Link>
+      </div>
+      <ContactLine className="p4-contact" style={{ margin: 0, padding: "0 var(--wrap) 18px", textAlign: "center", color: "#5a544d", opacity: 1 }} />
       </footer>
     </div>
   );
