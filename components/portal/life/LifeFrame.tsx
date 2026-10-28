@@ -1,6 +1,5 @@
 import type { ReactNode } from "react";
 import { assertPortalLive } from "@/lib/portal/launch";
-import ContactLine from "@/components/portal/ContactLine";
 import { sm, ns, en } from "./fonts";
 import "./base.css";
 import "./top.css";
@@ -16,10 +15,7 @@ export default function LifeFrame({ children }: { children: ReactNode }) {
   assertPortalLive();
   return (
     <div className={`lf-root ${sm.variable} ${ns.variable} ${en.variable}`}>
-      <div className="lf-box">
-        {children}
-        <ContactLine style={{ margin: 0, padding: "10px 14px 16px", textAlign: "center" }} />
-      </div>
+      <div className="lf-box">{children}</div>
     </div>
   );
 }

@@ -1,5 +1,4 @@
 import Link from "next/link";
-import ContactLine from "@/components/portal/ContactLine";
 import { VERTICALS, VERTICAL_ORDER } from "@/lib/verticals";
 import { AREA_TO_SEARCH, areaIndexHref } from "@/lib/portal/noren/areaLinks";
 import { SCENE_TO_SEARCH, sceneIndexHref } from "@/lib/portal/noren/sceneLinks";
@@ -52,7 +51,6 @@ export default function PortalFooter() {
         </p>
         <div className="mp-ft-bot">
           <span>© マチノワ</span>
-          <ContactLine style={{ margin: 0 }} />
         </div>
       </div>
     </footer>

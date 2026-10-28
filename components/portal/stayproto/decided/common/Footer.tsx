@@ -1,5 +1,4 @@
 import Link from "next/link";
-import ContactLine from "@/components/portal/ContactLine";
 import Logo from "./Logo";
 import BackToTop from "./BackToTop";
 import { IconInstagram, IconX, IconYoutube } from "./Icons";
@@ -60,7 +59,6 @@ export default function Footer({ mode = "proto" }: { mode?: SyMode }) {
             )}
           </p>
           <p className="sy-foot-copy">{live ? "© マチノワステイ" : "© 2024 マチノワステイ. All rights reserved."}</p>
-          {live ? <ContactLine /> : null}
         </div>
       </div>
     </footer>
