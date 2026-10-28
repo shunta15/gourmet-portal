@@ -2276,7 +2276,7 @@
       "tags": [],
       "article": {
         "headline": "元麻布の、英語でも対応する美容室",
-        "lede": "港区元麻布のvip creative hair internationalは、「English speaking hair salon」と名乗る美容室です。月曜日が定休日で、日本語と英語の両方の案内があります。",
+        "lede": "港区元麻布のvip creative hair internationalは、「English speaking hair salon」の美容室です。月曜日が定休日で、日本語と英語の両方の案内があります。",
         "sections": [
           {
             "heading": "営業日と連絡",
@@ -2583,7 +2583,7 @@
       ],
       "article": {
         "headline": "高崎問屋町駅から車で数分。完全個室のエステサロン",
-        "lede": "高崎市飯玉町にあるエステサロンで、「ピーリング専門店」と名乗っています。完全個室のプライベートサロンです。定休日は木曜日で、駐車場は3台あります。",
+        "lede": "高崎市飯玉町にあるエステサロンで、「ピーリング専門店」です。完全個室のプライベートサロンです。定休日は木曜日で、駐車場は3台あります。",
         "sections": [
           {
             "heading": "部屋と設備",
@@ -2857,7 +2857,7 @@
           },
           {
             "heading": "AVEDAの項目",
-            "body": "メニューにはAVEDAのカラー、AVEDA botanical head spa(20分)、AVEDA organic treatmentがあります。ヘッドスパにはAVEDA pramasana head spaもあり、purifying scalp cleanserとnourishing scalp masqueの2項目に分かれています。AVEDAのorganicを掲げたcut&color&permのスタジオと名乗っています。"
+            "body": "メニューにはAVEDAのカラー、AVEDA botanical head spa(20分)、AVEDA organic treatmentがあります。ヘッドスパにはAVEDA pramasana head spaもあり、purifying scalp cleanserとnourishing scalp masqueの2項目に分かれています。AVEDAのorganicを掲げたcut&color&permのスタジオです。"
           },
           {
             "heading": "場所と予約",
@@ -4401,7 +4401,7 @@
         "sections": [
           {
             "heading": "メニューと取扱い",
-            "body": "施術メニューにはフェイシャルエステと増毛などがあり、インディバと増毛のヘアジェンヌは、それぞれ案内のページがあります。使う化粧品はDr.Recellaで、認定サロンであると名乗っています。来店から帰るまで一人のエステティシャンが担当します。電話は026-299-8644です。"
+            "body": "施術メニューにはフェイシャルエステと増毛などがあり、インディバと増毛のヘアジェンヌは、それぞれ案内のページがあります。使う化粧品はDr.Recellaで、認定サロンです。来店から帰るまで一人のエステティシャンが担当します。電話は026-299-8644です。"
           }
         ],
         "menus": [
@@ -4588,7 +4588,7 @@
         "sections": [
           {
             "heading": "営業時間と連絡先",
-            "body": "営業時間は10時から19時、定休日は不定休です。久留米市の店舗の電話は0942-80-1423です。月額払いで、予防美容サロンを名乗っています。"
+            "body": "営業時間は10時から19時、定休日は不定休です。久留米市の店舗の電話は0942-80-1423です。月額払いで、予防美容サロンです。"
           }
         ],
         "menus": [
@@ -5099,7 +5099,7 @@
       ],
       "article": {
         "headline": "鹿児島市田上の、少人数制のヘアサロン",
-        "lede": "「少人数制のプライベートサロン」を名乗る、鹿児島県鹿児島市田上3丁目の美容院です。コンセプトは「美のパートナー」です。予約のボタンと電話番号があります。",
+        "lede": "「少人数制のプライベートサロン」という、鹿児島県鹿児島市田上3丁目の美容院です。コンセプトは「美のパートナー」です。予約のボタンと電話番号があります。",
         "sections": [
           {
             "heading": "カットと縮毛矯正",
@@ -7269,7 +7269,7 @@
       "tags": [],
       "article": {
         "headline": "東大阪市中新開のエステサロン。近鉄吉田駅からの道順を案内",
-        "lede": "大阪府東大阪市中新開にある、「エステティック サロン」の「ピュアティ」です。東大阪のプライベートサロンと名乗り、フェイシャルとボディのコースがあります。",
+        "lede": "大阪府東大阪市中新開にある、「エステティック サロン」の「ピュアティ」です。東大阪のプライベートサロンで、フェイシャルとボディのコースがあります。",
         "sections": [
           {
             "heading": "場所と予約",
@@ -7328,7 +7328,7 @@
       "tags": [],
       "article": {
         "headline": "名古屋市天白区塩釜口、火曜休みで駐車場3台のヘアサロン",
-        "lede": "愛知県名古屋市天白区塩釜口にある「obtenir(オプトゥニール)」は、「hair design」と名乗るヘアサロンです。営業は10時から19時まで、定休日は火曜日です。",
+        "lede": "愛知県名古屋市天白区塩釜口にある「obtenir(オプトゥニール)」は、「hair design」のヘアサロンです。営業は10時から19時まで、定休日は火曜日です。",
         "sections": [
           {
             "heading": "メニューと設備",
@@ -7905,105 +7905,6 @@
           }
         ],
         "checkedAt": "2026-10-26"
-      }
-    },
-    {
-      "id": "be0108",
-      "vertical": "beauty",
-      "category": "hair",
-      "name": "ベニフィット",
-      "pref": "kumamoto",
-      "cityName": "熊本市東区",
-      "address": "熊本県熊本市東区御領2丁目1-1 2階",
-      "lat": 32.8199671,
-      "lng": 130.7643211,
-      "hours": "火-土 09:00 - 17:00",
-      "holidays": "月曜・日曜",
-      "phone": "096-388-9235",
-      "instagram": "https://www.instagram.com/benefit.offcial?igsh=MTc4dXo1ajJnYno1Yg%3D%3D",
-      "mapUrl": "https://maps.google.com/?cid=13073551530782587182",
-      "image": "/_portal/vshops/tri-beauty-235/g01.jpg",
-      "images": [
-        "/_portal/vshops/tri-beauty-235/g01.jpg",
-        "/_portal/vshops/tri-beauty-235/g03.jpg",
-        "/_portal/vshops/tri-beauty-235/g04.jpg",
-        "/_portal/vshops/tri-beauty-235/g05.jpg",
-        "/_portal/vshops/tri-beauty-235/g06.jpg",
-        "/_portal/vshops/tri-beauty-235/g07.jpg"
-      ],
-      "photos": [
-        {
-          "path": "/_portal/vshops/tri-beauty-235/g01.jpg",
-          "what": "ヘアエマルジョン商品のボトルが並ぶ写真",
-          "kind": "meal",
-          "width": 750,
-          "height": 422
-        },
-        {
-          "path": "/_portal/vshops/tri-beauty-235/g03.jpg",
-          "what": "美容材料のボトルや道具が並ぶ店内のカート",
-          "kind": "common",
-          "width": 900,
-          "height": 1200
-        },
-        {
-          "path": "/_portal/vshops/tri-beauty-235/g04.jpg",
-          "what": "青い扉と看板プレートのある建物の外観",
-          "kind": "exterior",
-          "width": 920,
-          "height": 613
-        },
-        {
-          "path": "/_portal/vshops/tri-beauty-235/g05.jpg",
-          "what": "ボトル商品が並ぶ店内の棚",
-          "kind": "common",
-          "width": 900,
-          "height": 1200
-        },
-        {
-          "path": "/_portal/vshops/tri-beauty-235/g06.jpg",
-          "what": "ヘアエマルジョン商品のボトル2本が置かれたカウンター",
-          "kind": "meal",
-          "width": 900,
-          "height": 1200
-        },
-        {
-          "path": "/_portal/vshops/tri-beauty-235/g07.jpg",
-          "what": "駐車場と建物が写る外観",
-          "kind": "exterior",
-          "width": 920,
-          "height": 650
-        }
-      ],
-      "tags": [],
-      "article": {
-        "headline": "熊本市東区御領にある美容材料卸の会社。美容院・美容室向けに商品を扱う。",
-        "lede": "熊本市にある「ベニフィット」です。熊本市東区御領二丁目に所在し、美容院・美容室向けに美容材料を扱う卸売の会社です。営業は火曜から土曜の9時から17時までで、月曜と日曜は定休日です。",
-        "sections": [
-          {
-            "heading": "事業の内容",
-            "body": "熊本市東区御領に拠点を置き、美容院・美容室・床屋向けの美容材料を扱う卸売の会社です。業種はビジネス・企業間取引、卸売市場に分類されます。Google マップの業種表示は美容製品卸売業者です。"
-          },
-          {
-            "heading": "アクセスと連絡先",
-            "body": "所在地は熊本県熊本市東区御領二丁目1−1の2階です。電話は096-388-9235です。営業時間は火曜から土曜が9時から17時まで、月曜と日曜は定休日です。"
-          }
-        ],
-        "sources": [
-          {
-            "label": "電話帳情報(マピオン)",
-            "url": "https://www.mapion.co.jp/phonebook/M26017/43102/24333004143/"
-          },
-          {
-            "label": "地図情報(Yahoo!地図)",
-            "url": "https://map.yahoo.co.jp/v3/place/KAeIaFM3giw"
-          },
-          {
-            "label": "Google マップ",
-            "url": "https://maps.google.com/?cid=13073551530782587182"
-          }
-        ],
-        "checkedAt": "2026-10-28"
       }
     },
     {

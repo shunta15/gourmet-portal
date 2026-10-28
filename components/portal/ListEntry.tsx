@@ -13,7 +13,7 @@ import { CSS_BASE } from "./saveListCss";
 import { SaveIcon } from "./SaveIcon";
 
 /** 何も出さないパス（管理画面・内部のページ） */
-const INTERNAL = /^\/(admin|owner|progress|nazatu)(\/|$)/;
+const INTERNAL = /^\/(admin|owner|nazatu)(\/|$)/;
 /** 入口（隅のボタン）だけ出さないパス（リスト自身。案内の枠は出す） */
 const LIST_PAGE = /^\/list(\/|$)/;
 

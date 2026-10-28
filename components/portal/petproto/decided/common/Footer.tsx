@@ -1,4 +1,5 @@
 import Link from "next/link";
+import ContactLine from "@/components/portal/ContactLine";
 import Logo from "./Logo";
 import BackToTop from "./BackToTop";
 import { IconArrow, IconInstagram, IconFacebook, IconX, IconYoutube } from "./Icons";
@@ -14,7 +15,6 @@ export default function Footer({ mode = "proto" }: { mode?: PtMode }) {
   const L = ptLinks(mode);
   const live = mode === "live";
   // 本番 live: 運営・お問い合わせ・掲載基準は総合サイトの実在のページ。SNS は公式アカウントが無いので出さない。利用規約・プライバシーポリシーは該当のページが無いので出さない。
-  const aboutHref = live ? "/about" : "#";
   return (
     <footer className="pt-foot">
       <div className="pt-foot-top">
@@ -36,10 +36,13 @@ export default function Footer({ mode = "proto" }: { mode?: PtMode }) {
                 <br />
                 もっと楽しく暮らせる社会を目指す地域密着型のポータルサイトです。
               </p>
-              <a href={aboutHref} className="pt-fb-btn pt-press pt-hov pt-magnet">
-                <span>マチノワPetについて</span>
-                <IconArrow className="pt-fb-btn-a" />
-              </a>
+              {/* 本番(live)は行き先の /about を消したのでボタンを置かない。見本(proto)は行き先なし(#)のまま */}
+              {live ? null : (
+                <a href="#" className="pt-fb-btn pt-press pt-hov pt-magnet">
+                  <span>マチノワPetについて</span>
+                  <IconArrow className="pt-fb-btn-a" />
+                </a>
+              )}
             </div>
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img className="pt-fb-about-img" src={`${IMG_COMMON}/footer-about.webp`} width={254} height={158} alt="" loading="lazy" />
@@ -67,9 +70,6 @@ export default function Footer({ mode = "proto" }: { mode?: PtMode }) {
               <>
                 <a href={PORTAL_HREF}>マチノワ トップ</a>
                 <a href="/videos">動画</a>
-                <a href="/about">編集部について</a>
-                <a href="/editorial/guidelines">掲載基準</a>
-                <a href="/contact">お問い合わせ</a>
               </>
             ) : (
               <>
@@ -99,6 +99,7 @@ export default function Footer({ mode = "proto" }: { mode?: PtMode }) {
             )}
             <BackToTop />
             <p className="pt-fg-copy">{live ? "© マチノワPet" : "© 2024 マチノワPet. All rights reserved."}</p>
+            {live ? <ContactLine /> : null}
           </div>
         </div>
       </div>

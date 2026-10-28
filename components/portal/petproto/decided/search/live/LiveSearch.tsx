@@ -1,4 +1,5 @@
 import Link from "next/link";
+import ContactLine from "@/components/portal/ContactLine";
 import type { Metadata } from "next";
 import JsonLd from "@/components/portal/JsonLd";
 import Shell from "../../common/Shell";
@@ -371,10 +372,6 @@ function SearchFooter() {
         <Link href={L.home} className="lsr-flogo" aria-label="マチノワPet トップ">
           <Logo className="lsr-flogo-l" />
         </Link>
-        <a href="/about" className="lsr-fabout pt-press pt-hov pt-magnet">
-          <span>マチノワについて</span>
-          <IconArrow />
-        </a>
       </div>
       <div className="lsr-fbody pt-bgshift" data-from="1.02" data-to="0.9" style={{ ["--bg-to" as string]: "#fafaf8", ["--bg-from" as string]: "#f1ebe1" }}>
         <div className="lsr-fcols" data-io-group>
@@ -404,20 +401,12 @@ function SearchFooter() {
               <li>
                 <a href="/videos">動画</a>
               </li>
-              <li>
-                <a href="/about">編集部について</a>
-              </li>
-              <li>
-                <a href="/editorial/guidelines">掲載基準</a>
-              </li>
-              <li>
-                <a href="/contact">お問い合わせ</a>
-              </li>
             </ul>
           </nav>
           <i className="lsr-fdiv lsr-fdiv1" aria-hidden="true" />
         </div>
         <p className="lsr-copy">© マチノワPet</p>
+        <ContactLine style={{ textAlign: "center" }} />
       </div>
     </footer>
   );

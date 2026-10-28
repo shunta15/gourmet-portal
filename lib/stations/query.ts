@@ -53,10 +53,6 @@ export function stationNameOf(st: StationCluster): string {
   return st.name;
 }
 
-export function stationHref(st: StationCluster): string {
-  return `/station/${st.pref}/${st.name}`;
-}
-
 /** 「{name}駅周辺」。name がすでに「駅」で終わるときは重ねない */
 export function stationHeading(st: StationCluster): string {
   return st.name.endsWith("駅") ? `${st.name}周辺` : `${st.name}駅周辺`;
@@ -97,7 +93,7 @@ export function placeHref(v: Vertical, p: Place): string {
 /** 店カードに出す種類名。グルメは業態の文字列そのまま、新業種は種類の表示名 */
 export function placeCategoryName(v: Vertical, p: Place): string {
   if (v.key === "gourmet") return p.category;
-  return v.categories.find((c) => c.slug === p.category)?.name ?? "";
+  return p.kindName || (v.categories.find((c) => c.slug === p.category)?.name ?? "");
 }
 
 /** 直線距離（m） */

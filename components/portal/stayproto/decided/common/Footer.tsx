@@ -1,4 +1,5 @@
 import Link from "next/link";
+import ContactLine from "@/components/portal/ContactLine";
 import Logo from "./Logo";
 import BackToTop from "./BackToTop";
 import { IconInstagram, IconX, IconYoutube } from "./Icons";
@@ -48,9 +49,6 @@ export default function Footer({ mode = "proto" }: { mode?: SyMode }) {
               <>
                 <a href={PORTAL_HREF}>マチノワ トップ</a>
                 <a href="/videos">動画</a>
-                <a href="/about">編集部について</a>
-                <a href="/editorial/guidelines">掲載基準</a>
-                <a href="/contact">お問い合わせ</a>
               </>
             ) : (
               <>
@@ -62,6 +60,7 @@ export default function Footer({ mode = "proto" }: { mode?: SyMode }) {
             )}
           </p>
           <p className="sy-foot-copy">{live ? "© マチノワステイ" : "© 2024 マチノワステイ. All rights reserved."}</p>
+          {live ? <ContactLine /> : null}
         </div>
       </div>
     </footer>

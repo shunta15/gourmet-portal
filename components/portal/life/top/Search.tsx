@@ -4,15 +4,16 @@ import { IcPin, IcChev, IcChevL, IcArrow, IcSearch, IcUp, IcBrand } from "../Ico
 import { LFL } from "../links";
 import { AREA_OPTIONS, type LShop, type SearchArgs } from "../data";
 import { SHOP_COPY } from "../inner/shop/copy";
+import { LIFE_KIND_GROUPS } from "@/lib/verticals/lifeKinds";
 
 /* eslint-disable @next/next/no-img-element */
 const IMG = "/_portal/life/";
-const KIND_LABEL: Record<string, string> = { lesson: "習い事・教室", "shrine-temple": "神社・寺", "fashion-craft": "ファッション・雑貨・工芸", "photo-marriage": "写真館・結婚相談" };
 const PHOTO_SIDE = ["l", "r", "l", "r"] as const;
 
 /** 探すページ(見本 3_探す)。条件は URL の引数(kind・region・pref・q・page)で、「この条件で検索する」で GET する(JS なしで動く) */
 export default function Search({ shops, total, all, args, pages }: { shops: LShop[]; total: number; all: LShop[]; args: SearchArgs; pages: number }) {
-  const kinds = Object.keys(KIND_LABEL).filter((k) => all.some((s) => s.kindSlug === k));
+  // 種類の組(lib/verticals/lifeKinds.ts)。いま載っている店がある組だけ出す
+  const kinds = LIFE_KIND_GROUPS.filter((g) => all.some((s) => s.groupSlug === g.slug));
   const kindOn = (k: string) => args.kinds.length === 0 || args.kinds.includes(k);
   const regOn = (r: string) => args.regions.length === 0 || args.regions.includes(r);
   const hrefOf = (n: number) => LFL.searchWith({ kind: args.kinds, region: args.regions, pref: args.pref, q: args.q, page: n });
@@ -42,10 +43,13 @@ export default function Search({ shops, total, all, args, pages }: { shops: LSho
             </p>
             <fieldset>
               <legend>カテゴリーで絞り込む</legend>
-              {kinds.map((k) => (
-                <label key={k} className="sr-ck">
-                  <input type="checkbox" name="kind" value={k} defaultChecked={kindOn(k)} />
-                  <span>{KIND_LABEL[k]}</span>
+              {kinds.map((g) => (
+                <label key={g.slug} className="sr-ck">
+                  <input type="checkbox" name="kind" value={g.slug} defaultChecked={kindOn(g.slug)} />
+                  <span>
+                    {g.name}
+                    <small className="sr-ck-note">({g.note})</small>
+                  </span>
                 </label>
               ))}
             </fieldset>
@@ -103,13 +107,9 @@ export default function Search({ shops, total, all, args, pages }: { shops: LSho
             <p className="sr-count">
               検索結果 <b>{total}</b> 件
             </p>
-            <Link href={LFL.map} className="sr-maplink">
-              地図で見る
-              <IcArrow />
-            </Link>
-            <Link href={LFL.map} className="sr-mapimg" aria-label="地図で見る">
+            <div className="sr-mapimg">
               <img src={`${IMG}s-map.webp`} alt="日本地図" width={498} height={430} loading="lazy" decoding="async" />
-            </Link>
+            </div>
           </div>
 
           {shops.length === 0 ? (

@@ -1,0 +1,94 @@
+{
+  "key": "tri-life-235",
+  "headline": "熊本市東区御領にある美容材料卸の会社。美容院・美容室向けに商品を扱う。",
+  "lede": "熊本市にある「ベニフィット」です。熊本市東区御領二丁目に所在し、美容院・美容室向けに美容材料を扱う卸売の会社です。営業は火曜から土曜の9時から17時までで、月曜と日曜は定休日です。",
+  "sections": [
+    {
+      "heading": "事業の内容",
+      "body": "熊本市東区御領に拠点を置き、美容院・美容室・床屋向けの美容材料を扱う卸売の会社です。業種はビジネス・企業間取引、卸売市場に分類されます。Google マップの業種表示は美容製品卸売業者です。"
+    },
+    {
+      "heading": "アクセスと連絡先",
+      "body": "所在地は熊本県熊本市東区御領二丁目1−1の2階です。電話は096-388-9235です。営業時間は火曜から土曜が9時から17時まで、月曜と日曜は定休日です。"
+    }
+  ],
+  "menus": [],
+  "tags": [],
+  "facts": [
+    {
+      "claim": "熊本県熊本市東区御領二丁目1−1に所在する",
+      "source": "https://www.mapion.co.jp/phonebook/M26017/43102/24333004143/",
+      "quote": "熊本県熊本市東区御領２丁目１−１",
+      "checkedAt": "2026-10-28"
+    },
+    {
+      "claim": "電話番号は096-388-9235",
+      "source": "https://www.mapion.co.jp/phonebook/M26017/43102/24333004143/",
+      "quote": "096-388-9235",
+      "checkedAt": "2026-10-28"
+    },
+    {
+      "claim": "業種は卸売市場に分類される",
+      "source": "https://www.mapion.co.jp/phonebook/M26017/43102/24333004143/",
+      "quote": "卸売市場",
+      "checkedAt": "2026-10-28"
+    },
+    {
+      "claim": "美容院・美容室・床屋向けの業種に分類される",
+      "source": "https://www.mapion.co.jp/phonebook/M26017/43102/24333004143/",
+      "quote": "美容院・美容室・床屋",
+      "checkedAt": "2026-10-28"
+    },
+    {
+      "claim": "ビジネス・企業間取引に分類される",
+      "source": "https://www.mapion.co.jp/phonebook/M26017/43102/24333004143/",
+      "quote": "ビジネス・企業間取引",
+      "checkedAt": "2026-10-28"
+    },
+    {
+      "claim": "ベニフィットという店名で地図情報に掲載されている",
+      "source": "https://map.yahoo.co.jp/v3/place/KAeIaFM3giw",
+      "quote": "ベニフィット",
+      "checkedAt": "2026-10-28"
+    },
+    {
+      "claim": "ビューティーアドバイザーの業種で掲載されている",
+      "source": "https://map.yahoo.co.jp/v3/place/KAeIaFM3giw",
+      "quote": "ビューティーアドバイザー",
+      "checkedAt": "2026-10-28"
+    },
+    {
+      "claim": "営業は火曜から土曜が9時から17時",
+      "source": "https://maps.google.com/?cid=13073551530782587182",
+      "quote": "09:00–17:00",
+      "checkedAt": "2026-10-28"
+    },
+    {
+      "claim": "月曜と日曜は定休日",
+      "source": "https://maps.google.com/?cid=13073551530782587182",
+      "quote": "定休日",
+      "checkedAt": "2026-10-28"
+    },
+    {
+      "claim": "Google マップの業種表示は美容製品卸売業者",
+      "source": "https://maps.google.com/?cid=13073551530782587182",
+      "quote": "美容製品卸売業者",
+      "checkedAt": "2026-10-28"
+    }
+  ],
+  "sources": [
+    {
+      "label": "電話帳情報(マピオン)",
+      "url": "https://www.mapion.co.jp/phonebook/M26017/43102/24333004143/"
+    },
+    {
+      "label": "地図情報(Yahoo!地図)",
+      "url": "https://map.yahoo.co.jp/v3/place/KAeIaFM3giw"
+    },
+    {
+      "label": "Google マップ",
+      "url": "https://maps.google.com/?cid=13073551530782587182"
+    }
+  ],
+  "notes": "automation/v2/write.mjs が 2026-10-28 に claude -p --model sonnet で作成。事実の裏取り: 10/10 件(quote が出どころにあるもの)。裏取りに通らなかった facts は載せていない。"
+}

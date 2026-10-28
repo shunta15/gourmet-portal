@@ -7,10 +7,8 @@
  *
  *   /                          → /og/home
  *   /{beauty|bodycare|…}/**    → /og/v/{key}            （業種トップ・その配下は業種の色の共有画像）
- *   /area/{pref}               → /og/area/{pref}        （業種横断の街（県））
- *   /station/{pref}/{name}     → /og/station/{pref}/{name}
- *   /station/{pref}/{name}/{genre} → /og/station/{pref}/{name}/{genre}  （ジャンル × 駅）
- *   それ以外（/station・/videos・/map など）→ /og/home
+ *   それ以外（/videos など）→ /og/home
+ *   （旧 /area/{pref}・/station/… の共有画像 /og/area・/og/station は、ページと一緒に 2026-10-28 に消した）
  */
 
 export const OG_SIZE = { width: 1200, height: 630 } as const;
@@ -19,10 +17,6 @@ export const OG_SIZE = { width: 1200, height: 630 } as const;
 export const OG_VERSION = "2";
 
 const NEW_VERTICALS = ["beauty", "bodycare", "pet", "stay", "activity", "sports", "life"];
-
-function seg(s: string): string {
-  return encodeURIComponent(s);
-}
 
 /** 共有画像のパス（サイト内の相対パス。metadataBase で絶対URLになる） */
 export function ogImagePath(path: string): string {
@@ -36,12 +30,6 @@ export function ogImagePath(path: string): string {
   let p = "/og/home";
   if (parts[0] && NEW_VERTICALS.includes(parts[0])) {
     p = `/og/v/${parts[0]}`;
-  } else if (parts[0] === "area" && parts[1] && parts.length === 2) {
-    p = `/og/area/${seg(parts[1])}`;
-  } else if (parts[0] === "station" && parts[1] && parts[2] && parts.length === 3) {
-    p = `/og/station/${seg(parts[1])}/${seg(parts[2])}`;
-  } else if (parts[0] === "station" && parts[1] && parts[2] && parts[3] && parts.length === 4) {
-    p = `/og/station/${seg(parts[1])}/${seg(parts[2])}/${seg(parts[3])}`;
   }
   return `${p}?v=${OG_VERSION}`;
 }

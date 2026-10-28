@@ -9,6 +9,9 @@
  *   automation/stores500/map.json              [{articleId, sheetName, mapsUrl}]
  *   automation/stores500/gbp/<記事ID>.json     Googleマップ店舗パネルの値（fetch-gbp-details.mjs の出力）
  *                                              → 存在する店だけ出力する（取得途中でも動く）
+ *   automation/stores500/store-overrides.json  {記事ID: {cuisine?, dropTags?, evidence}} 店ごとの手直し(任意)。
+ *                                              cuisine: 業種の欄(GBP のカテゴリが実態に合わない店だけ・平易な言葉で)
+ *                                              dropTags: 自動で付いたシーンタグを外す(営業時間だけが根拠のタグが実態に合わない店)
  *   lib/teleapo-features.ts                    記事本体
  *   public/restaurants/teleapo-<記事ID>/       店の画像
  *
@@ -53,6 +56,7 @@ const isUnlistedStore = (await import(new URL("../../lib/unlisted.ts", import.me
 const SCENE_VOCAB = new Set(SCENES.flatMap((s) => s.matchTags));
 
 const ids = readJson(abs("automation/stores500/ids.json"), {});
+const STORE_OVERRIDES = readJson(abs("automation/stores500/store-overrides.json"), {});
 
 // 実写かどうかの判定: プレースホルダ3枚と中身が同じ画像は実写ではない（ファイルサイズでなく md5 で比べる）
 const md5 = (p) => createHash("md5").update(readFileSync(p)).digest("hex");
@@ -542,7 +546,11 @@ function buildStore(entry, gbp, article, storeId) {
 
   // --- 業態
   const cuisineSpec = pickSpec(specs, SPEC_KEYS.cuisine);
-  const { cuisine, from: cuisineFrom } = cleanCuisine(cuisineSpec?.v, gbp.category);
+  const ov = STORE_OVERRIDES[entry.articleId] || {};
+  const gbpCategory = ov.cuisine ? ov.cuisine : gbp.category; // 手直しがあれば、GBP のカテゴリの代わりに使う(業種の欄・本文・タグ)
+  const cleaned = cleanCuisine(cuisineSpec?.v, gbpCategory);
+  const cuisine = ov.cuisine ? ov.cuisine : cleaned.cuisine;
+  const cuisineFrom = ov.cuisine ? "store-overrides.json" : cleaned.from;
 
   // --- 席・アクセス・予算（記事 specs にある場合だけ。無ければ「—」/ 省略）
   const seatSpec = pickSpec(specs, SPEC_KEYS.seats, (v) => !isVague(v));
@@ -615,13 +623,14 @@ function buildStore(entry, gbp, article, storeId) {
   const evidence = [];
   const station = stationOf(nearest === "—" ? "" : nearest);
   const muniTag = addr.ward || addr.town || addr.city;
-  const category = gbp.category && gbp.category.length <= 14 ? gbp.category : "";
+  const category = gbpCategory && gbpCategory.length <= 14 ? gbpCategory : "";
   const vocab = [...cuisineVocabTags(cuisine), ...(cuisineFrom === "記事specs" ? cuisineVocabTags(category) : [])];
   const baseTags = [cuisine.length <= 14 ? cuisine : category, category, ...vocab.map((t) => t.tag), muniTag, station];
   evidence.push(...vocab);
   const seen = new Set();
   const sceneEv = [...sceneTagsFromSpecs(specs), ...hoursTags(hs.perDay)]
     .filter((e) => SCENE_VOCAB.has(e.tag))
+    .filter((e) => !(ov.dropTags || []).includes(e.tag))
     .filter((e) => (seen.has(JSON.stringify(e)) ? false : seen.add(JSON.stringify(e))));
   evidence.push(...sceneEv);
   const tags = uniq([...baseTags, ...sceneEv.map((e) => e.tag)]);

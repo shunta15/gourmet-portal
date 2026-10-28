@@ -6,6 +6,7 @@ import { REGIONS } from "@/components/portal/vkit/common/live";
 import { loadSpecials as loadSpecialList } from "@/components/portal/vkit/special/data";
 import { LFL } from "./links";
 import { SHOP_COPY } from "./inner/shop/copy";
+import { LIFE_GROUP_OF_CATEGORY, resolveLifeKind } from "@/lib/verticals/lifeKinds";
 
 /**
  * くらし(マチノワライフ。オーナー決定デザイン 2026-10-26 の見本)の最初のページ・探すページが出す実データ(サーバー専用)。
@@ -13,7 +14,7 @@ import { SHOP_COPY } from "./inner/shop/copy";
  * 特集は lib/specials/life.json(/life/special/<slug>)。店の事実(営業時間・設備など)は新しく作らない。
  */
 
-/** 探すの並び(見本 3_探す の 01〜04 = ファッション・雑貨・工芸 / 習い事・教室 / 神社・寺 / 写真館・結婚相談)。順位ではなく種類の順 */
+/** 店の並び(見本 3_探す の 01〜04 = 工芸の店 / 教室 / 神社 / 写真館 の category の順)。順位ではなく種類の順。絞り込みの組は lib/verticals/lifeKinds.ts */
 export const KIND_ORDER = ["fashion-craft", "lesson", "shrine-temple", "photo-marriage"] as const;
 
 /** 探すの「エリアで絞り込む」(見本は 東北・関東・関西・すべてのエリア) */
@@ -28,6 +29,8 @@ export type LShop = {
   name: string;
   kind: string;
   kindSlug: string;
+  /** 種類の組(visit / learn / shop / service。lib/verticals/lifeKinds.ts)。探すの絞り込みはこれ */
+  groupSlug: string;
   city: string;
   loc: string;
   pref: string;
@@ -69,7 +72,8 @@ export async function loadShops(): Promise<LShop[]> {
         id: p.id,
         name: p.name,
         kindSlug: p.category,
-        kind: cats.find((c) => c.slug === p.category)?.name ?? p.category,
+        groupSlug: LIFE_GROUP_OF_CATEGORY[p.category] ?? "",
+        kind: p.kindName || (cats.find((c) => c.slug === p.category)?.name ?? p.category),
         city: p.cityName ?? "",
         // 東京の区は、住所の町名までを所在地にする(見本は「東京都港区白金」)
         loc: p.pref === "tokyo" ? (p.address.match(/^[^0-9０-９]+/)?.[0] ?? `${prefName}${p.cityName ?? ""}`) : `${prefName}${p.cityName ?? ""}`,
@@ -105,13 +109,14 @@ export type SearchArgs = { kinds: string[]; regions: string[]; pref: string; q: 
 export const SEARCH_PAGE_SIZE = 4;
 
 export function parseArgs(sp: SP, shops: LShop[]): SearchArgs {
-  const kindOk = new Set(shops.map((s) => s.kindSlug));
+  const kindOk = new Set(shops.map((s) => s.groupSlug));
   const prefRaw = one(sp.pref);
   const pref = shops.some((s) => s.pref === prefRaw) ? prefRaw : "";
   const regOk = new Set<string>(AREA_OPTIONS.map((a) => a.slug));
   const regions = many(sp.region).includes("all") ? [] : [...new Set(many(sp.region).filter((r) => regOk.has(r)))];
   return {
-    kinds: [...new Set(many(sp.kind).filter((k) => kindOk.has(k)))],
+    // 組の英字(visit など)と、旧い値(lesson など category の slug。対応する組として扱う)の両方を受ける。データに無い組は外す
+    kinds: [...new Set(many(sp.kind).map((k) => resolveLifeKind(k) ?? "").filter((k) => k && kindOk.has(k)))],
     regions,
     pref,
     q: one(sp.q).replace(/\s+/g, " ").trim().slice(0, 40),
@@ -124,7 +129,7 @@ export function filterShops(shops: LShop[], a: SearchArgs): LShop[] {
   const words = norm(a.q).split(" ").filter(Boolean);
   return shops.filter(
     (s) =>
-      (a.kinds.length === 0 || a.kinds.includes(s.kindSlug)) &&
+      (a.kinds.length === 0 || a.kinds.includes(s.groupSlug)) &&
       (a.regions.length === 0 || a.regions.includes(s.region)) &&
       (!a.pref || s.pref === a.pref) &&
       (words.length === 0 || words.every((w) => norm(`${s.name} ${s.loc} ${s.address} ${s.kind}`).includes(w))),

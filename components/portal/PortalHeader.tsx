@@ -80,7 +80,7 @@ export default function PortalHeader() {
         </nav>
 
         <div className="mp-hd-right">
-          <form className={`mp-hd-search${search ? " open" : ""}`} action="/find" method="get" role="search">
+          <form className={`mp-hd-search${search ? " open" : ""}`} action="/search" method="get" role="search">
             <input
               ref={input}
               type="search"
@@ -139,7 +139,7 @@ export default function PortalHeader() {
             );
           })}
         </ol>
-        <form className="mp-menu-search" action="/find" method="get" role="search">
+        <form className="mp-menu-search" action="/search" method="get" role="search">
           <input
             type="search"
             name="q"

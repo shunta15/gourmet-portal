@@ -1668,5 +1668,15 @@
     "articleId": "海が見えるそば家",
     "sheetName": "海が見えるそば家",
     "mapsUrl": "https://maps.google.com/?cid=3987719736517620396"
+  },
+  {
+    "articleId": "雲仙湯せんぺい遠江屋本舗",
+    "sheetName": "雲仙湯せんぺい 遠江屋本舗",
+    "mapsUrl": "https://maps.google.com/?cid=81602590403749157"
+  },
+  {
+    "articleId": "マルシェノグチ",
+    "sheetName": "マルシェノグチ",
+    "mapsUrl": "https://maps.google.com/?cid=6141782586603461053"
   }
 ]

@@ -50,6 +50,8 @@ export interface PlaceBase {
   id: string;
   vertical: VerticalKey;
   category: string;          // category slug
+  /** 店のカード・店ページに出す種類名(任意)。種類(category)の表示名が実態に合わない店だけ、平易な言葉で入れる(例: 美容材料)。automation/vertical-stores/category-overrides/<キー>.json の kindName から作る */
+  kindName?: string;
   name: string;
   nameKana?: string;
   pref: string;              // prefecture slug

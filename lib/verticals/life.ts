@@ -1,7 +1,7 @@
 /**
  * くらし・ライフスタイル業種の設定（2026-10-22 オーナー決定）
  *   見出し「くらし・ライフスタイル」・呼び名「マチノワライフ」。習い事（塾・英会話・音楽・パソコン・ほかの教室）・神社・寺・
- *   服・雑貨・工芸・結婚相談・写真館・車・修理・クリーニング・買取・花屋・農園・占い など。
+ *   服・雑貨・工芸・写真館・車・修理・クリーニング・買取・花屋・農園・占い など。
  *   神社・寺はおでかけではなくくらしに入れる（オーナー決定 2026-10-22「神社とかくらしだろ」）。習い事という業種は作らず、ここにまとめる。
  */
 
@@ -16,12 +16,12 @@ export const life: Vertical = {
     color: '#7FA82F',     // ライムグリーン(ボディケアの緑・ステイの黄と色相をずらす)
     lightColor: '#EFF4E0', // ライム淡色
   },
-  // 種類は 7 つ。「その他」は作らない(習い事・神社・寺・服雑貨・写真館と結婚相談・車と修理・花屋・占い のどれかに入れる)
+  // category は 7 つ(元データのまま)。画面の絞り込みは、これを 4 つの組(出かける・習う・買う・借りる・任せる)にまとめる → lib/verticals/lifeKinds.ts。「その他」は作らない
   categories: [
     { slug: 'lesson', name: '習い事・教室', schemaType: 'EducationalOrganization' },     // 塾・英会話・音楽・パソコン・ほかの教室
     { slug: 'shrine-temple', name: '神社・寺', schemaType: 'PlaceOfWorship' },
     { slug: 'fashion-craft', name: 'ファッション・雑貨・工芸', schemaType: 'Store' },       // 服・雑貨・ジュエリー・工芸品の店
-    { slug: 'photo-marriage', name: '写真館・結婚相談', schemaType: 'LocalBusiness' },
+    { slug: 'photo-marriage', name: '写真館', schemaType: 'LocalBusiness' },
     { slug: 'car-repair', name: '車・修理・クリーニング・買取', schemaType: 'LocalBusiness' }, // 車・自転車・修理・クリーニング・買取
     { slug: 'flower-farm', name: '花屋・農園', schemaType: 'Store' },
     { slug: 'fortune', name: '占い', schemaType: 'LocalBusiness' },

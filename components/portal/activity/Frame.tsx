@@ -1,4 +1,5 @@
 import Link from "next/link";
+import ContactLine from "@/components/portal/ContactLine";
 import { assertPortalLive } from "@/lib/portal/launch";
 import { hand, jp, lab, maru } from "./fonts";
 import Header from "./Header";
@@ -34,10 +35,8 @@ export default function ActivityFrame({ children }: { children: React.ReactNode 
           <nav aria-label="サイトの案内">
             <Link href="/">マチノワ トップ</Link>
             <Link href="/videos">動画</Link>
-            <Link href="/about">編集部について</Link>
-            <Link href="/editorial/guidelines">掲載基準</Link>
-            <Link href="/contact">お問い合わせ</Link>
           </nav>
+          <ContactLine />
         </footer>
       </div>
     </div>

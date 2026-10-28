@@ -1,4 +1,5 @@
 import Link from "next/link";
+import ContactLine from "@/components/portal/ContactLine";
 import type { CpSite } from "@/lib/portal/colorplay/site";
 
 /**
@@ -20,12 +21,10 @@ export default function Footer({ site }: { site: CpSite }) {
         <ul className="cp-foot-sub" aria-label="サイトの案内">
           <li><Link href="/">マチノワ トップ</Link></li>
           <li><Link href="/videos">動画</Link></li>
-          <li><Link href="/about">編集部について</Link></li>
-          <li><Link href="/editorial/guidelines">掲載基準</Link></li>
-          <li><Link href="/contact">お問い合わせ</Link></li>
         </ul>
         <p className="cp-note">掲載の情報は確認日の時点のものです。営業時間などは変わることがあります。お出かけの前に公式サイトでご確認ください。</p>
         <p className="cp-note cp-copy">© マチノワ</p>
+        <ContactLine className="cp-note" />
       </div>
     </footer>
   );

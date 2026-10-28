@@ -1,4 +1,5 @@
 import { assertPortalLive } from "@/lib/portal/launch";
+import ContactLine from "@/components/portal/ContactLine";
 import { jp, min, logo, lab } from "./top/fonts";
 import "./top/a.css";
 
@@ -11,6 +12,7 @@ export default function TopFrame({ children }: { children: React.ReactNode }) {
   return (
     <div className={`s2-root ${jp.variable} ${min.variable} ${logo.variable} ${lab.variable}`}>
       {children}
+      <ContactLine style={{ margin: 0, padding: "10px 14px 16px", textAlign: "center" }} />
     </div>
   );
 }

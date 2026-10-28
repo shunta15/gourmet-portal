@@ -5,6 +5,7 @@ import { CARD_FEATURE, IMG } from "./const";
 import type { CardPhotos } from "./cards";
 import type { NewsRow } from "./news";
 import { PROD_FOOT_COPY } from "./prodData";
+import { ContactLink } from "@/components/portal/ContactLine";
 import { CATS } from "./catsData";
 import "./lower.css";
 
@@ -131,7 +132,10 @@ export default function Lower({ news, cards }: { news: NewsRow[]; cards?: CardPh
       <footer className="h2-foot" style={OY(1228 + D)}>
         <img className="h2-a h2-flogo" style={PD(40, 1244, 164, 42)} src={`${IMG}/common/logo-foot.webp`} alt="マチノワ Machinowa" />
         <p className="h2-a h2-fsub" style={PD(219, 1250, 220, 40)}>まちの人・お店・くらしがつながる<br />ローカルポータルサイト</p>
-        <p className="h2-a h2-copy" style={PD(291, 1305, 600, 16)}>{PROD_FOOT_COPY}</p>
+        <p className="h2-a h2-copy" style={PD(291, 1303, 600, 14)}>{PROD_FOOT_COPY}</p>
+        <p className="h2-a h2-copy h2-contact" style={PD(291, 1316, 600, 13)}>
+          <ContactLink />
+        </p>
       </footer>
     </>
   );

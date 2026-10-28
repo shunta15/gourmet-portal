@@ -4,14 +4,16 @@ import { IcSearch, IcPin, IcPinLine, IcArrow, IcBowl, IcTorii, IcBag, IcCamera }
 import { LFL } from "../links";
 import type { LShop } from "../data";
 import { SHOP_COPY } from "../inner/shop/copy";
+import { lifeGroupBySlug } from "@/lib/verticals/lifeKinds";
 
 /* eslint-disable @next/next/no-img-element */
+/** 種類の札(組の名前・補足は lib/verticals/lifeKinds.ts)。上の小さな札と、下の写真つきの札で同じものを使う */
 const KINDS = [
-  { slug: "lesson", label: "習い事・教室", sub: "学びで広がる、暮らしの楽しみ", chip: ["習い事・教室"], Icon: IcBowl },
-  { slug: "shrine-temple", label: "神社・寺", sub: "地域に息づく、祈りと歴史", chip: ["神社・寺"], Icon: IcTorii },
-  { slug: "fashion-craft", label: "ファッション・雑貨・工芸", sub: "つくり手の想いに出会う", chip: ["ファッション・", "雑貨・工芸"], Icon: IcBag },
-  { slug: "photo-marriage", label: "写真館・結婚相談", sub: "大切な時間を、未来につなぐ", chip: ["写真館・結婚相談"], Icon: IcCamera },
-] as const;
+  { slug: "visit", sub: "地域に息づく、祈りと歴史", chip: ["出かける"], Icon: IcTorii },
+  { slug: "learn", sub: "学びで広がる、暮らしの楽しみ", chip: ["習う"], Icon: IcBowl },
+  { slug: "shop", sub: "つくり手の想いに出会う", chip: ["買う・", "借りる"], Icon: IcBag },
+  { slug: "service", sub: "大切な時間を、未来につなぐ", chip: ["任せる"], Icon: IcCamera },
+].map((k) => ({ ...k, group: lifeGroupBySlug(k.slug)! }));
 const AREAS = [
   { pref: "tokyo", name: "東京都", img: "t-area-tokyo.webp" },
   { pref: "kyoto", name: "京都府", img: "t-area-kyoto.webp" },
@@ -30,7 +32,7 @@ function Photo({ s, className }: { s: LShop; className?: string }) {
 export default function Top({ shops }: { shops: LShop[] }) {
   const ordered = [...ORDER.map((id) => shops.find((s) => s.id === id)).filter(Boolean), ...shops.filter((s) => !ORDER.includes(s.id))] as LShop[];
   const feat = ordered.slice(0, 3);
-  const kindShop = (slug: string) => shops.find((s) => s.kindSlug === slug);
+  const kindShop = (slug: string) => shops.find((s) => s.groupSlug === slug);
   return (
     <div className="lf-top">
       <Header variant="a" current="top" />
@@ -113,7 +115,10 @@ export default function Top({ shops }: { shops: LShop[] }) {
               <Link href={LFL.searchWith({ kind: k.slug })}>
                 {s ? <Photo s={s} /> : null}
                 <span className="tp-kind-tx">
-                  <b>{k.label}</b>
+                  <b>
+                    {k.group.name}
+                    <small>({k.group.note})</small>
+                  </b>
                   <em>{k.sub}</em>
                 </span>
                 <span className="lf-circ lf-circ--w tp-kind-ar">
