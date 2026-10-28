@@ -35,6 +35,10 @@ const NO_COMMIT = flag("--no-commit");
 const KEYS = opt("--keys")?.split(",").filter(Boolean) ?? null;
 const SKIP = new Set(opt("--skip")?.split(",").filter(Boolean) ?? []);
 const SITE = "https://machinowa.tokyo";
+/** main 側で店のキーを改名した店(古いキー → 今のキー)。gp-k-auto2 の結果は古いキーのままなので、「もうある」と扱う */
+const RENAMED_KEYS = {
+  "tri-beauty-235": "tri-life-235", // ベニフィット: ビューティー be0108 → くらし(2026-10-28 5f1678aa)
+};
 
 const NFC = (s) => String(s).normalize("NFC");
 const abs = (...p) => path.join(TRIN, ...p);
@@ -118,7 +122,7 @@ function pickTargets(results) {
     const gourmet = x.vertical === "グルメ";
     const already = gourmet
       ? mapIds.has(NFC(x.articleId)) || unlFeatures.has(NFC(x.articleId)) || (x.storeId && unlStores.has(x.storeId))
-      : pilot.has(x.key) || (x.placeId && unlPlaces.has(x.placeId));
+      : pilot.has(x.key) || (RENAMED_KEYS[x.key] && pilot.has(RENAMED_KEYS[x.key])) || (x.placeId && unlPlaces.has(x.placeId));
     if (already) continue;
     if (gourmet) {
       if (!x.articleId || !x.urls?.article) fail(`${x.key}: 結果に articleId / urls が無い`);
