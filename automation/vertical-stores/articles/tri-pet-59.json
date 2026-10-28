@@ -1,50 +1,73 @@
 {
   "key": "tri-pet-59",
-  "headline": "愛知県春日井市松河戸町にあるトリミングサロン。犬のトリミングを扱う",
-  "lede": "愛知県春日井市にある「トリミングサロン little」です。営業は月・火・木・金・土・日の9時から17時で、水曜日が定休日です。",
+  "headline": "愛知県春日井市松河戸町にあるトリミングサロン。犬好きの店長が営む、2022年開業の小さな店",
+  "lede": "愛知県春日井市にある「トリミングサロン little(リトル)」です。犬好きの店長が営む小さなトリミングサロンで、2022年4月29日に開業しました。営業は水曜日を除く毎日で、9時から17時までです。",
   "sections": [
     {
-      "heading": "場所と営業時間",
-      "body": "愛知県春日井市松河戸町で営業しているトリミングサロンです。営業時間は月曜・火曜・木曜・金曜・土曜・日曜の9時から17時までで、水曜日は定休日です。"
+      "heading": "場所とアクセス",
+      "body": "住所は愛知県春日井市松河戸町4丁目2-12です。最寄りは勝川駅で、徒歩約18分です。店舗の外壁は紺色で、「little」の看板が出ています。"
     },
     {
-      "heading": "店の特色",
-      "body": "トリミングサロンとして、犬のトリミングを扱っています。"
+      "heading": "営業時間と定休日",
+      "body": "月曜日・火曜日・木曜日・金曜日・土曜日・日曜日の9時から17時まで営業し、水曜日は定休日です。電話は090-8187-9677です。"
+    },
+    {
+      "heading": "開業と運営",
+      "body": "2022年4月29日に開業しました。店長が犬好きで、小さなサロンとして営んでいます。Instagramのアカウントがあり、投稿とストーリーを公開しています。"
     }
   ],
   "menus": [],
   "tags": [],
   "facts": [
     {
-      "claim": "住所は愛知県春日井市松河戸町4丁目2-12",
-      "source": "https://maps.google.com/?cid=6563524553501464319",
-      "quote": "愛知県春日井市松河戸町４丁目２−１２",
-      "checkedAt": "2026-10-27"
+      "claim": "店名は「トリミングサロン little リトル」で、場所は愛知県春日井市松河戸町",
+      "source": "https://www.instagram.com/trimmingsalon_little/",
+      "checkedAt": "2026-10-28"
     },
     {
-      "claim": "営業時間は9時から17時",
-      "source": "https://maps.google.com/?cid=6563524553501464319",
-      "quote": "09:00–17:00",
-      "checkedAt": "2026-10-27"
+      "claim": "犬好きの店長による小さなトリミングサロン",
+      "source": "https://www.instagram.com/trimmingsalon_little/",
+      "checkedAt": "2026-10-28"
     },
     {
-      "claim": "水曜日は定休日",
-      "source": "https://maps.google.com/?cid=6563524553501464319",
-      "quote": "定休日",
-      "checkedAt": "2026-10-27"
+      "claim": "2022年4月29日に開業",
+      "source": "https://www.instagram.com/trimmingsalon_little/",
+      "checkedAt": "2026-10-28"
     },
     {
-      "claim": "業種の表示はトリミングサロン",
+      "claim": "住所は春日井市松河戸町4-2-12",
+      "source": "https://trimtrim.jp/salons?city_id%5B0%5D=1079",
+      "checkedAt": "2026-10-28"
+    },
+    {
+      "claim": "勝川駅から徒歩18分",
+      "source": "https://trimtrim.jp/salons?city_id%5B0%5D=1079",
+      "checkedAt": "2026-10-28"
+    },
+    {
+      "claim": "営業は月火木金土日の9時から17時、水曜は定休日",
       "source": "https://maps.google.com/?cid=6563524553501464319",
-      "quote": "トリミングサロン",
-      "checkedAt": "2026-10-27"
+      "checkedAt": "2026-10-28"
+    },
+    {
+      "claim": "外壁は紺色で「little」の看板がある",
+      "source": "https://maps.google.com/?cid=6563524553501464319",
+      "checkedAt": "2026-10-28"
     }
   ],
   "sources": [
+    {
+      "label": "Instagram",
+      "url": "https://www.instagram.com/trimmingsalon_little/"
+    },
+    {
+      "label": "サロン一覧(トリムトリム)",
+      "url": "https://trimtrim.jp/salons?city_id%5B0%5D=1079"
+    },
     {
       "label": "Google マップ",
       "url": "https://maps.google.com/?cid=6563524553501464319"
     }
   ],
-  "notes": "automation/v2/write.mjs が 2026-10-27 に claude -p --model sonnet で作成。事実の裏取り: 4/4 件(quote が出どころにあるもの)。裏取りに通らなかった facts は載せていない。"
+  "notes": "automation/v2/write.mjs が 2026-10-27 に claude -p --model sonnet で作成。事実の裏取り: 4/4 件(quote が出どころにあるもの)。裏取りに通らなかった facts は載せていない。 / 2026-10-28 に文を書き直し(公式サイト・予約サイト・公式SNSで確認した事実のみ。facts は書き直し後の確認分に差し替え)。"
 }
