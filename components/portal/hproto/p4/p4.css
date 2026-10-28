@@ -1,0 +1,41 @@
+/* 総合トップの試作「見本4(丸い切り抜き)」。座標は見本 1024 幅の px、Fit が --z で拡大する。 */
+body { background: #faf8f2; }
+.p4-fit { --z: 1.40625; margin: 0 auto; width: 1440px; height: 2160px; overflow: hidden; position: relative; background: #faf8f2; color: #3a332c; }
+.p4-stage { zoom: var(--z); width: 1024px; height: 1536px; position: relative; font-family: var(--p4-min), "Shippori Mincho", "Hiragino Mincho ProN", serif; }
+.p4-abs { position: absolute; }
+.p4-stage a { color: inherit; text-decoration: none; }
+.p4-stage h1, .p4-stage h2, .p4-stage p { margin: 0; font-weight: 500; }
+.p4-stage img { display: block; max-width: none; }
+.p4-logo { display: block; line-height: 1; }
+.p4-logo-ja { display: block; font-family: var(--p4-minb), serif; font-weight: 800; font-size: 29px; letter-spacing: .03em; color: #2b2724; }
+.p4-logo-en { display: block; font-size: 7.5px; letter-spacing: .34em; margin: 5px 0 0 20px; color: #5b554e; }
+.p4-nav { font-size: 11px; letter-spacing: .1em; white-space: nowrap; color: #3a332c; }
+.p4-sep { display: block; width: 1px; height: 13px; background: #c9c3ba; }
+.p4-fav { font-size: 10px; letter-spacing: .06em; display: flex; align-items: center; gap: 5px; white-space: nowrap; }
+.p4-burger { display: block; width: 19px; height: 16px; }
+.p4-burger i { display: block; height: 1.5px; background: #3a332c; margin-bottom: 5px; }
+.p4-h1 { position: absolute; left: 0; top: 0; font-family: var(--p4-yomo), "Yomogi", cursive; font-weight: 400 !important; font-size: 57px; line-height: 1.2; color: #2e2a26; letter-spacing: .02em; }
+.p4-h1 span { white-space: nowrap; transform-origin: left center; }
+.p4-lead { font-size: 11.5px; letter-spacing: .06em; line-height: 20px; color: #4a443d; white-space: nowrap; }
+.p4-label { background: #fbfaf6; box-shadow: 0 1px 3px rgba(0,0,0,.12); display: flex; align-items: center; justify-content: center; font-weight: 600; letter-spacing: .12em; color: #2e2a26; line-height: 1; padding-top: 2px; white-space: nowrap; box-sizing: border-box; }
+.p4-badge svg { position: absolute; left: 0; top: 0; }
+.p4-badge-t { position: absolute; left: 0; right: 0; top: 52px; text-align: center; font-family: var(--p4-yomo), "Yomogi", cursive; font-size: 14.5px; line-height: 27px; transform: rotate(-9deg); color: #3b352f; white-space: nowrap; letter-spacing: .04em; }
+.p4-badge-en { position: absolute; left: 0; right: 0; top: 122px; text-align: center; font-size: 7px; letter-spacing: .3em; color: #6a645c; transform: rotate(-4deg); }
+.p4-en { font-size: 8.5px; letter-spacing: .3em; color: #8a847b; }
+.p4-h2 { font-size: 28px; letter-spacing: .04em; white-space: nowrap; line-height: 1.3; font-weight: 500; color: #2e2a26; }
+.p4-sub { font-size: 11px; letter-spacing: .1em; color: #5a544d; }
+.p4-cat { display: block; text-align: center; }
+.p4-cat-ja { display: block; margin-top: 11px; font-size: 14.5px; letter-spacing: .06em; color: #2e2a26; line-height: 1.2; white-space: nowrap; }
+.p4-cat-en { display: block; margin-top: 3px; font-size: 7px; letter-spacing: .22em; color: #6a645c; }
+.p4-story { -webkit-mask-image: linear-gradient(to right, transparent 0, #000 150px); mask-image: linear-gradient(to right, transparent 0, #000 150px); }
+.p4-h3 { font-size: 25px; letter-spacing: .06em; color: #2e2a26; white-space: nowrap; line-height: 1.3; }
+.p4-h4 { font-size: 20px; letter-spacing: .08em; color: #2e2a26; white-space: nowrap; line-height: 1.3; }
+.p4-small { font-size: 10.5px; letter-spacing: .1em; line-height: 24px; color: #4a443d; white-space: nowrap; }
+.p4-btn { display: flex; align-items: center; justify-content: center; gap: 12px; border: 1px solid #3a332c; border-radius: 22px; font-size: 12.5px; letter-spacing: .1em; box-sizing: border-box; color: #2e2a26; white-space: nowrap; }
+.p4-script { font-family: var(--p4-scr), "Dancing Script", cursive; font-size: 21px; line-height: 26px; color: #4a443d; white-space: nowrap; }
+.p4-scene { display: block; text-align: center; }
+.p4-scene span { display: block; margin-top: 12px; font-size: 11.5px; letter-spacing: .08em; line-height: 19px; color: #3a332c; }
+.p4-blue { background: #dcebf3; border-radius: 52px 30px 46px 40px / 46px 50px 42px 54px; }
+.p4-foot { background: #f3efea; color: #3a332c; }
+.p4-fnav { font-size: 10px; color: #3a332c !important; letter-spacing: .1em; white-space: nowrap; color: #3a332c; }
+.p4-stage footer span { color: #3a332c; }
