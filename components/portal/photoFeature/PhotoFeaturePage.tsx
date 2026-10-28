@@ -529,7 +529,7 @@ export default function PhotoFeaturePage({ data: D, shopHref, listHref, topHref,
         <p className="pf-acts">
           {shopHref && (
             <Link href={shopHref} className="pf-btn pf-mag">
-              店ページを見る →
+              店舗詳細を見る →
             </Link>
           )}
           {!shopInfo && D.mapsUrl && (
@@ -650,7 +650,7 @@ export default function PhotoFeaturePage({ data: D, shopHref, listHref, topHref,
             </span>
             {shopHref && (
               <Link href={shopHref} className="pf-btn pf-btn--sm pf-mag">
-                店ページを見る →
+                店舗詳細を見る →
               </Link>
             )}
           </p>
@@ -761,7 +761,7 @@ export default function PhotoFeaturePage({ data: D, shopHref, listHref, topHref,
       ) : (
         shopHref && (
           <Link href={shopHref} className="pf-fab pf-btn pf-btn--sm pf-mag" tabIndex={-1} aria-hidden="true">
-            店ページを見る →
+            店舗詳細を見る →
           </Link>
         )
       )}

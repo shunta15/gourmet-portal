@@ -424,3 +424,50 @@
   .ar-src { padding: 16px 16px 14px; }
   .ar-page[data-kind="special"] .ar-h1 { font-size: 28px; }
 }
+
+/* =====================================================================
+   店の特集記事(/bodycare/article/<店の ID>。2026-10-26 試作。data-kind="feature")。既存の部品(ar-*)に足す小さな部品だけ
+   ===================================================================== */
+.ar-face { display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 8px; width: 100%; height: 100%; padding: 18px; text-align: center; color: #2f3a31; background: linear-gradient(160deg, color-mix(in srgb, var(--kc) 28%, #fff) 0%, color-mix(in srgb, var(--kc) 62%, #fff) 100%); }
+.ar-face.is-dark { color: #fff; background: linear-gradient(160deg, color-mix(in srgb, var(--kc) 88%, #fff) 0%, var(--kc) 100%); }
+.ar-face b { font-family: var(--gr-ff-min); font-weight: 600; font-size: 22px; line-height: 1.5; letter-spacing: 0.05em; overflow-wrap: anywhere; }
+.ar-face small { font-size: 11.5px; letter-spacing: 0.08em; opacity: 0.85; }
+.ar-face--sm b { font-size: 15px; }
+.ar-rc .ph .ar-face { position: absolute; inset: 0; }
+.ar-aside-n { font-family: var(--gr-ff-min); font-weight: 600; font-size: 17px; line-height: 1.6; letter-spacing: 0.04em; margin-bottom: 8px; overflow-wrap: anywhere; }
+.ar-psub { margin-top: 10px; font-size: 13px; line-height: 1.8; font-weight: 500; color: var(--gr-g2); }
+.ar-specs { margin-top: 16px; display: grid; border: 1px solid #eeede6; border-radius: 10px; overflow: hidden; background: #fff; }
+.ar-specs > div { display: flex; gap: 12px; padding: 8px 14px; font-size: 12.5px; line-height: 1.7; border-bottom: 1px solid #eeede6; }
+.ar-specs > div:last-child { border-bottom: 0; }
+.ar-specs dt { flex: none; width: 8em; color: #555; font-weight: 500; }
+.ar-specs dd { margin: 0; min-width: 0; color: #333; overflow-wrap: anywhere; }
+.ar-quote { margin-top: 40px; padding: 16px 20px; border-left: 3px solid var(--gr-g2); background: #f9f6ee; border-radius: 0 10px 10px 0; }
+.ar-quote p { font: 600 16px/1.9 var(--gr-ff-min); color: #2a2e2b; }
+.ar-quote cite { display: block; margin-top: 6px; font-style: normal; font-size: 12px; color: var(--gr-mut); }
+.ar-closing { margin-top: 18px; }
+.ar-menus { margin-top: 16px; display: flex; flex-wrap: wrap; gap: 8px; }
+.ar-menus .gr-chip { height: auto; min-height: 30px; padding: 4px 14px; font-size: 12.5px; line-height: 1.6; text-align: center; }
+.ar-shopband .ph .ar-face { position: absolute; inset: 0; }
+.ar-shopband .gr-btn { height: 42px; }
+@media (max-width: 480px) {
+  .ar-specs > div { flex-direction: column; gap: 0; }
+  .ar-face b { font-size: 18px; }
+}
+
+/* 特集ページの絞り込み(2026-10-26 試作) */
+.ar-flt { display: flex; flex-wrap: wrap; gap: 8px 10px; margin: 6px 0 20px; }
+.ar-flt-b { height: 36px; padding: 0 16px; gap: 8px; font-size: 13px; font-weight: 500; cursor: pointer; font-family: var(--gr-ff-jp); }
+.ar-flt-b span { font-family: var(--gr-ff-min); font-size: 12px; color: var(--gr-g2); }
+.ar-flt-b.is-on { background: var(--gr-g); color: #fff; border-color: var(--gr-g); }
+.ar-flt-b.is-on span { color: #fff; }
+.ar-idx-g--special .ar-ic .ph { height: 138px; }
+.ar-idx-g--special .ar-ic .ph .ar-ic-img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+.ar-idx-g--special .ar-ic .ph[style*="--kc"] { background: linear-gradient(160deg, color-mix(in srgb, var(--kc) 28%, #fff), color-mix(in srgb, var(--kc) 62%, #fff)); }
+.ar-ic-sub { margin-top: 6px; font-size: 11.5px; color: var(--gr-g2); font-weight: 500; }
+.ar-ic--prep { border-style: dashed; background: #fbfcfa; box-shadow: none; }
+.ar-ic--prep h2 { color: #6a6e69; }
+.ar-more { margin-top: 24px; text-align: center; }
+@media (max-width: 960px) {
+  .ar-idx-g--special .ar-ic .ph { height: auto; }
+  .ar-flt-b { height: 34px; padding: 0 12px; font-size: 12px; }
+}

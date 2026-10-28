@@ -306,3 +306,11 @@
   .cp-root:has(.cp-kinds-sec) .cp-note{font-size:14px}
   .cp-root:has(.cp-kinds-sec) .cp-footer ul a{min-width:44px; justify-content:center}
 }
+/* 店の特集記事への入口(2026-10-26 試作。記事のある店だけ) */
+.sh-artlink-l{display:grid; gap:6px; margin-top:22px; max-width:720px; font-weight:700; font-size:18px; line-height:1.6}
+.sh-artlink-l li{display:flex; gap:14px; align-items:baseline}
+.sh-artlink-l li span{flex:none; font-size:15px; opacity:.6}
+.sh-artlink .cp-cta{margin-top:28px}
+@media (max-width:760px){ .sh-artlink-l{font-size:15px} }
+.sh-artlink .cp-cta{justify-content:flex-start}
+.sh-artlink .cp-red{flex:none; width:auto; min-width:min(100%,320px)}

@@ -61,7 +61,8 @@ export default async function GourmetNorenShop({ id, links, shop }: { id: string
   const video = SHORT_VIDEOS.find((v) => v.restaurantId === r.id) ?? null;
   // 対の特集記事（店 1 軒の記事）。ある店だけ、紹介の上に切り替えの帯を置き、関連記事の先頭に大きく出す（本番の行き先のときだけ。見本の特集は店 1 軒の枠ではない）
   const pair = RELEASE_REST && links === LIVE_LINKS ? pairedFeatureOfShop(r.id) : null;
-  const features = await featuresOfShop(r.id, pair?.featureId ?? featureId);
+  // 店のページと店の特集記事は別ページ(2026-10-26)。対の記事への行き先は行動ボタンの「特集記事を読む」の 1 か所だけにする(関連記事の先頭には重ねない)
+  const features = (await featuresOfShop(r.id, pair?.featureId ?? featureId)).filter((f) => !((pair || featureId) && f.paired));
 
   // 行動ボタンの一覧（今の ShopActions と同じ関数）。特集記事への行き先だけ、links（見本は見本の特集ページ、本番は /feature/<id>）に向ける
   const model = buildActionModel({
