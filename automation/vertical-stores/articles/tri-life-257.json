@@ -1,0 +1,217 @@
+{
+  "key": "tri-life-257",
+  "headline": "山梨県甲斐市中下条にある浄土宗の寺院。本堂は平成25年(2013年)に改修され、書院は令和5年(2023年)に完成した",
+  "lede": "甲斐市にある「功徳院幸福寺」です。浄土宗の寺院で、本尊に阿弥陀如来を祀っています。本堂は平成25年(2013年)に改修されました。",
+  "sections": [
+    {
+      "heading": "本堂と本尊",
+      "body": "本堂は平成25年(2013年)に改修されました。本尊は阿弥陀如来で、両脇に観音菩薩と勢至菩薩を安置した「阿弥陀三尊」として祀られています。天井画は絵師・映水さんによる「青蓮龍王図」で、朝靄のなか青い蓮の向こうに龍が描かれています。書院は令和5年(2023年)に完成し、18畳で最大24人が着席できます。"
+    },
+    {
+      "heading": "樹木葬と永代供養、保護猫活動",
+      "body": "樹木葬は継承を必要としない個人墓形式のお墓で、一人、夫婦、友人同士など自由なスタイルで利用できます。永代供養は永代で遺骨を守るお墓で、年に一度、施餓鬼法要とあわせて供養のおつとめがおこなわれます。保護猫の譲渡会やマルシェも開催し、野良猫を保護して不妊手術をしたのち元の場所に戻して見守る活動もおこなっています。"
+    },
+    {
+      "heading": "公益活動",
+      "body": "本堂でキャンドルの灯りとともにおこなうキャンドルヨガを月1〜2回、たたみの部屋でのヘッドスパを月1回おこなっています。写仏は天井画を手がけた映水さんと仏さまの姿を描く時間です。「ほっこり寺小屋食堂」と「寺GO飯」という2つの子ども食堂、初心者でも楽しめるヒップホップダンスの教室もあります。"
+    },
+    {
+      "heading": "ペット供養塔と多目的利用",
+      "body": "令和6年(2024年)に完成したペット供養塔があり、ペットを見送りたいという思いに応えられるよう納骨と供養をおこなっています。本堂や書院は法要や葬儀のほか、イベントの会場としても利用でき、仏事に限らずペット供養にも対応しています。"
+    }
+  ],
+  "menus": [
+    {
+      "name": "キャンドルヨガ"
+    },
+    {
+      "name": "ヘッドスパ"
+    },
+    {
+      "name": "写仏"
+    },
+    {
+      "name": "子ども食堂"
+    },
+    {
+      "name": "ダンス教室"
+    },
+    {
+      "name": "樹木葬"
+    },
+    {
+      "name": "永代供養"
+    }
+  ],
+  "tags": [
+    {
+      "tag": "体験あり",
+      "factIndex": 16
+    },
+    {
+      "tag": "子ども向け",
+      "factIndex": 17
+    }
+  ],
+  "facts": [
+    {
+      "claim": "浄土宗の寺院である",
+      "source": "https://www.kudokuin-koufukuji.com/",
+      "quote": "浄土宗 功徳院",
+      "checkedAt": "2026-10-28"
+    },
+    {
+      "claim": "本堂は平成25年(2013年)に改修された",
+      "source": "https://www.kudokuin-koufukuji.com/about",
+      "quote": "平成25年(2013年)に改修。",
+      "checkedAt": "2026-10-28"
+    },
+    {
+      "claim": "本尊は阿弥陀如来である",
+      "source": "https://www.kudokuin-koufukuji.com/about",
+      "quote": "本尊は全ての命を平等に救う阿弥陀如来です。",
+      "checkedAt": "2026-10-28"
+    },
+    {
+      "claim": "本尊の両脇には観音菩薩と勢至菩薩があり「阿弥陀三尊」として安置されている",
+      "source": "https://www.kudokuin-koufukuji.com/about",
+      "quote": "両脇には観音菩薩と勢至菩薩が並び「阿弥陀三尊」として安置しています。",
+      "checkedAt": "2026-10-28"
+    },
+    {
+      "claim": "天井画は絵師・映水による「青蓮龍王図」である",
+      "source": "https://www.kudokuin-koufukuji.com/about",
+      "quote": "絵師・映水さんによる「青蓮龍王図」。",
+      "checkedAt": "2026-10-28"
+    },
+    {
+      "claim": "天井画は朝靄のなか青い蓮の向こうに龍が描かれている",
+      "source": "https://www.kudokuin-koufukuji.com/about",
+      "quote": "朝靄のなか青い蓮の向こう側から龍がのぞいている様子を描いています。",
+      "checkedAt": "2026-10-28"
+    },
+    {
+      "claim": "書院は令和5年(2023年)に完成した",
+      "source": "https://www.kudokuin-koufukuji.com/about",
+      "quote": "令和5年(2023年)完成。",
+      "checkedAt": "2026-10-28"
+    },
+    {
+      "claim": "書院は18畳で最大24人が着席できる",
+      "source": "https://www.kudokuin-koufukuji.com/about",
+      "quote": "18畳・最大24人着席可能です。",
+      "checkedAt": "2026-10-28"
+    },
+    {
+      "claim": "樹木葬は継承を必要としない個人墓形式のお墓である",
+      "source": "https://www.kudokuin-koufukuji.com/activity",
+      "quote": "継承を必要としない個人墓形式のお墓です。",
+      "checkedAt": "2026-10-28"
+    },
+    {
+      "claim": "樹木葬は一人、夫婦、友人同士など自由なスタイルで利用できる",
+      "source": "https://www.kudokuin-koufukuji.com/activity",
+      "quote": "お一人、ご夫婦、ご友人同士など自由なスタイルで利用することができます。",
+      "checkedAt": "2026-10-28"
+    },
+    {
+      "claim": "永代供養は永代で故人の遺骨を守るお墓である",
+      "source": "https://www.kudokuin-koufukuji.com/activity",
+      "quote": "永代で故人の遺骨をお守りするお墓です。",
+      "checkedAt": "2026-10-28"
+    },
+    {
+      "claim": "永代供養は年に一度、施餓鬼法要とあわせて供養のおつとめがおこなわれる",
+      "source": "https://www.kudokuin-koufukuji.com/activity",
+      "quote": "年に一度、施餓鬼法要とあわせて供養のおつとめをいたします。",
+      "checkedAt": "2026-10-28"
+    },
+    {
+      "claim": "保護猫の譲渡会やマルシェを開催している",
+      "source": "https://www.kudokuin-koufukuji.com/activity",
+      "quote": "保護猫の譲渡会やマルシェを開催。",
+      "checkedAt": "2026-10-28"
+    },
+    {
+      "claim": "野良猫を保護して不妊手術をし、元いた場所に戻して見守る活動もおこなっている",
+      "source": "https://www.kudokuin-koufukuji.com/activity",
+      "quote": "野良猫を保護し、不妊手術をして、元いた場所に戻して見守る活動も行っています。",
+      "checkedAt": "2026-10-28"
+    },
+    {
+      "claim": "キャンドルヨガは月1〜2回、本堂でキャンドルの灯りとともにおこなわれる",
+      "source": "https://www.kudokuin-koufukuji.com/welfare",
+      "quote": "本堂でキャンドルの灯りととともに心と体をほぐします。",
+      "checkedAt": "2026-10-28"
+    },
+    {
+      "claim": "ヘッドスパはたたみの部屋で月1回受けられる",
+      "source": "https://www.kudokuin-koufukuji.com/welfare",
+      "quote": "たたみの部屋でヘッドスパを受けていただけます。",
+      "checkedAt": "2026-10-28"
+    },
+    {
+      "claim": "写仏は天井画を手がけた映水と仏さまの姿を描き自分と向き合う時間である",
+      "source": "https://www.kudokuin-koufukuji.com/welfare",
+      "quote": "天井画を手がけた映水さんと仏さまの姿を描き自分と向き合う時間を過ごします。",
+      "checkedAt": "2026-10-28"
+    },
+    {
+      "claim": "子ども食堂は「ほっこり寺小屋食堂」と「寺GO飯」の2つがあり、月1〜2回開催される",
+      "source": "https://www.kudokuin-koufukuji.com/welfare",
+      "quote": "「ほっこり寺小屋食堂」と「寺GO飯」２つの子ども食堂を開催しています。",
+      "checkedAt": "2026-10-28"
+    },
+    {
+      "claim": "ダンス教室は初心者でも楽しく体を動かせるヒップホップダンスの教室で、月1回開催される",
+      "source": "https://www.kudokuin-koufukuji.com/welfare",
+      "quote": "初心者でも楽しく体を動かせるヒップホップダンスの教室です。",
+      "checkedAt": "2026-10-28"
+    },
+    {
+      "claim": "ペット供養塔は令和6年(2024年)に完成した",
+      "source": "https://www.kudokuin-koufukuji.com/about",
+      "quote": "令和6年(2024年)完成。",
+      "checkedAt": "2026-10-28"
+    },
+    {
+      "claim": "本堂や書院は法要だけでなくイベントやペット供養にも対応する",
+      "source": "https://www.kudokuin-koufukuji.com/",
+      "quote": "本堂や書院など多目的に利用できる施設を備え、法要はもちろん、イベントやペット供養にもご対応いたします。",
+      "checkedAt": "2026-10-28"
+    },
+    {
+      "claim": "ペット供養塔はペットを見送りたいという思いに応えられるよう納骨と供養をおこなっている",
+      "source": "https://www.kudokuin-koufukuji.com/about",
+      "quote": "ペットを丁寧に見送りたいという思いに応えられるよう心を込めて納骨・供養をいたします。",
+      "checkedAt": "2026-10-28"
+    }
+  ],
+  "sources": [
+    {
+      "label": "公式サイト",
+      "url": "https://www.kudokuin-koufukuji.com/"
+    },
+    {
+      "label": "公式サイト(ごあいさつ)",
+      "url": "https://www.kudokuin-koufukuji.com/greeting"
+    },
+    {
+      "label": "公式サイト(寺院案内)",
+      "url": "https://www.kudokuin-koufukuji.com/about"
+    },
+    {
+      "label": "公式サイト(寺院活動)",
+      "url": "https://www.kudokuin-koufukuji.com/activity"
+    },
+    {
+      "label": "公式サイト(公益活動)",
+      "url": "https://www.kudokuin-koufukuji.com/welfare"
+    },
+    {
+      "label": "Google マップ",
+      "url": "https://maps.google.com/?cid=5618227385458666857"
+    }
+  ],
+  "notes": "automation/v2/write.mjs が 2026-10-28 に claude -p --model sonnet で作成。事実の裏取り: 22/22 件(quote が出どころにあるもの)。裏取りに通らなかった facts は載せていない。"
+}

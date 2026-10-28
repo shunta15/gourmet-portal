@@ -8,7 +8,6 @@ import { NOREN_SEARCH_REWRITE } from "@/lib/portal/noren/rewrites";
  * - /videos/**（動画で探す。業種横断）
  * - /list（候補リスト。店を保存して、URL で共有する。業種横断）
  * - /photos（写真から探す。業種横断）
- * - /omakase（おまかせ提案。4つの質問で店を出す）
  * - /gourmet と /gourmet/**（グルメのトップと、その配下の内部ルート。公開スイッチ ON のとき暖簾のデザイン。枠は app/gourmet/layout.tsx）
  * - /restaurant/<id>（NOREN_SHOP_REWRITE）・/feature/<id>（NOREN_FEATURE_REWRITE。/feature/search は除く）: 公開スイッチ ON のとき next.config.ts の rewrites で
  *   /gourmet/restaurant/<id>・/gourmet/feature/<id> に差し替わる。ブラウザ（クライアント）のパスは /restaurant/<id> のまま、プリレンダー済みの HTML は内部のパスで作られるので、両方を含める。
@@ -26,7 +25,6 @@ export function isPortalPath(pathname: string | null | undefined): boolean {
   if (pathname === '/videos' || pathname.startsWith('/videos/')) return true;
   if (pathname === '/list') return true;
   if (pathname === '/photos') return true;
-  if (pathname === '/omakase') return true;
   if (pathname === '/gourmet' || pathname.startsWith('/gourmet/')) return true; // グルメのトップと内部ルート（ON のとき暖簾の枠。グルメの共通ヘッダー（SiteShell）は出さない）
   if (NOREN_SHOP_REWRITE && (pathname === '/restaurant' || pathname.startsWith('/restaurant/'))) return true; // 暖簾の店舗紹介の一覧（/restaurant）と店ページ（本物の URL）
   if (NOREN_FEATURE_REWRITE && /^\/feature\/[^/]+$/.test(pathname) && pathname !== '/feature/search') return true; // 暖簾の特集記事ページ（本物の URL）

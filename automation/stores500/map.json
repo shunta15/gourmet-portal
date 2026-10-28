@@ -1653,5 +1653,20 @@
     "articleId": "楽",
     "sheetName": "楽",
     "mapsUrl": "https://maps.google.com/?cid=1188632426218574658"
+  },
+  {
+    "articleId": "洋食屋自然",
+    "sheetName": "洋食屋自然",
+    "mapsUrl": "https://maps.google.com/?cid=1478968620605553804"
+  },
+  {
+    "articleId": "うなぎ処高はし",
+    "sheetName": "うなぎ処高はし",
+    "mapsUrl": "https://maps.google.com/?cid=14172638930983865966"
+  },
+  {
+    "articleId": "海が見えるそば家",
+    "sheetName": "海が見えるそば家",
+    "mapsUrl": "https://maps.google.com/?cid=3987719736517620396"
   }
 ]

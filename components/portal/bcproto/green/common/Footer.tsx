@@ -22,6 +22,7 @@ export default function Footer() {
         <p className="gr-foot-c">© マチノワ</p>
         <nav className="gr-foot-sub" aria-label="サイトの案内">
           <Link href={PORTAL_HREF}>マチノワ トップ</Link>
+          <Link href="/videos">動画</Link>
           <Link href="/about">編集部について</Link>
           <Link href="/editorial/guidelines">掲載基準</Link>
           <Link href="/contact">お問い合わせ</Link>

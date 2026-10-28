@@ -1,0 +1,112 @@
+{
+  "key": "tri-life-265",
+  "headline": "横浜市保土ケ谷区東川島町にある曹洞宗の寺院。山号は補陀山で、1625年の創建です。",
+  "lede": "横浜市にある「正観寺」です。保土ケ谷区東川島町に境内があり、山号は補陀山、宗旨は曹洞宗です。1625年に中田藤左衛門が創建しました。",
+  "sections": [
+    {
+      "heading": "宗旨と由緒",
+      "body": "曹洞宗の寺院で、山号は補陀山、正式名は補陀山正観寺といいます。ふりがなはショウカンジです。1625年、中田藤左衛門が創建しました。"
+    },
+    {
+      "heading": "連絡先とアクセス",
+      "body": "電話は045-381-0682、FAXは045-383-4110です。最寄り駅は相模鉄道の西谷駅で徒歩約13分、上星川駅からは徒歩約15分です。"
+    }
+  ],
+  "menus": [],
+  "tags": [],
+  "facts": [
+    {
+      "claim": "住所は神奈川県横浜市保土ケ谷区東川島町４５−４",
+      "source": "https://maps.google.com/?cid=1918145898974577176",
+      "quote": "神奈川県横浜市保土ケ谷区東川島町４５−４",
+      "checkedAt": "2026-10-28"
+    },
+    {
+      "claim": "電話番号は045-381-0682",
+      "source": "https://maps.google.com/?cid=1918145898974577176",
+      "quote": "045-381-0682",
+      "checkedAt": "2026-10-28"
+    },
+    {
+      "claim": "Google マップの業種は仏教寺院",
+      "source": "https://maps.google.com/?cid=1918145898974577176",
+      "quote": "仏教寺院",
+      "checkedAt": "2026-10-28"
+    },
+    {
+      "claim": "郵便番号は〒240-0041",
+      "source": "https://sotozen-navi.com/detail/index_140016.html",
+      "quote": "〒240-0041",
+      "checkedAt": "2026-10-28"
+    },
+    {
+      "claim": "ふりがなはショウカンジ",
+      "source": "https://sotozen-navi.com/detail/index_140016.html",
+      "quote": "ショウカンジ",
+      "checkedAt": "2026-10-28"
+    },
+    {
+      "claim": "FAX番号は045-383-4110",
+      "source": "https://sotozen-navi.com/detail/index_140016.html",
+      "quote": "045-383-4110",
+      "checkedAt": "2026-10-28"
+    },
+    {
+      "claim": "山号は補陀山",
+      "source": "https://ja.wikipedia.org/wiki/正観寺_(横浜市)",
+      "quote": "補陀山",
+      "checkedAt": "2026-10-28"
+    },
+    {
+      "claim": "宗旨は曹洞宗",
+      "source": "https://ja.wikipedia.org/wiki/正観寺_(横浜市)",
+      "quote": "曹洞宗",
+      "checkedAt": "2026-10-28"
+    },
+    {
+      "claim": "正式名は補陀山正観寺",
+      "source": "https://ja.wikipedia.org/wiki/正観寺_(横浜市)",
+      "quote": "補陀山正観寺",
+      "checkedAt": "2026-10-28"
+    },
+    {
+      "claim": "創建年は1625年",
+      "source": "https://ja.wikipedia.org/wiki/正観寺_(横浜市)",
+      "quote": "1625年",
+      "checkedAt": "2026-10-28"
+    },
+    {
+      "claim": "開基は中田藤左衛門",
+      "source": "https://ja.wikipedia.org/wiki/正観寺_(横浜市)",
+      "quote": "中田藤左衛門",
+      "checkedAt": "2026-10-28"
+    },
+    {
+      "claim": "最寄り駅は相模鉄道西谷駅で徒歩約13分",
+      "source": "https://ja.wikipedia.org/wiki/正観寺_(横浜市)",
+      "quote": "西谷駅",
+      "checkedAt": "2026-10-28"
+    },
+    {
+      "claim": "上星川駅から徒歩約15分",
+      "source": "https://ja.wikipedia.org/wiki/正観寺_(横浜市)",
+      "quote": "上星川駅",
+      "checkedAt": "2026-10-28"
+    }
+  ],
+  "sources": [
+    {
+      "label": "公式サイト",
+      "url": "https://sotozen-navi.com/detail/index_140016.html"
+    },
+    {
+      "label": "参考(由緒・アクセス)",
+      "url": "https://ja.wikipedia.org/wiki/正観寺_(横浜市)"
+    },
+    {
+      "label": "Google マップ",
+      "url": "https://maps.google.com/?cid=1918145898974577176"
+    }
+  ],
+  "notes": "automation/v2/write.mjs が 2026-10-28 に claude -p --model sonnet で作成。事実の裏取り: 13/13 件(quote が出どころにあるもの)。裏取りに通らなかった facts は載せていない。"
+}

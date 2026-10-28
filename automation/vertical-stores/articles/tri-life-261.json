@@ -1,0 +1,210 @@
+{
+  "key": "tri-life-261",
+  "headline": "愛知県海部郡飛島村にある寺院で、本堂内の納骨堂、樹木葬、永代供養墓、一般墓があり、寺院葬儀もおこなう",
+  "lede": "海部郡飛島村にある「飛島善光寺」です。本堂の中に設けられた納骨堂や、本堂のそばの龍樹の近くにある樹木葬、永代供養墓・一般墓があります。宗旨宗派を問わず、寺院葬儀や法要もおこなっています。",
+  "sections": [
+    {
+      "heading": "場所と連絡先",
+      "body": "住所は愛知県海部郡飛島村元起3丁目26、電話は0567-52-1063です。電話の受付は9時から17時で、法要や行事の間は出られないことがあります。名古屋第二環状自動車道の飛島北ICから約5分、近鉄蟹江駅からは飛島公共交通バスの蟹江線に乗り「善光寺前」で降りて徒歩約2分です。駐車場は50台以上あります。"
+    },
+    {
+      "heading": "納骨堂と樹木葬",
+      "body": "本堂の中に納骨堂があり、天候に左右されずお参りができます。ペットと一緒に入ることができます。樹木葬は本堂の隣、龍樹(昇龍松)のそばに設けられ、境内に隣接するこども園の声が聞こえる場所にあります。"
+    },
+    {
+      "heading": "お墓の種類と供養",
+      "body": "お墓の種類は納骨堂・樹木葬のほかに、後継に負担をかけない合祀の永代供養墓、先祖代々受け継ぐ一般墓があります。永代供養墓は合祀ですが、一人ひとり袋を分けて納めます。全てのプランで宗旨宗派は問われず、檀家になる必要もありません。"
+    },
+    {
+      "heading": "葬儀・法要",
+      "body": "葬儀会社と提携した寺院葬儀をおこない、本堂で通夜・葬儀を執り行います。搬送は24時間対応で、住職が宗派に合わせて読経し、戒名・法名を授けます。四十九日や一周忌など法要の相談にも応じています。"
+    }
+  ],
+  "menus": [
+    {
+      "name": "納骨堂"
+    },
+    {
+      "name": "樹木葬"
+    },
+    {
+      "name": "永代供養墓"
+    },
+    {
+      "name": "一般墓"
+    },
+    {
+      "name": "寺院葬儀"
+    },
+    {
+      "name": "法要"
+    },
+    {
+      "name": "ペット供養"
+    },
+    {
+      "name": "墓じまい"
+    }
+  ],
+  "tags": [
+    {
+      "tag": "駐車場あり",
+      "factIndex": 3
+    }
+  ],
+  "facts": [
+    {
+      "claim": "住所は愛知県海部郡飛島村元起3丁目26",
+      "source": "https://www.tobishima-zenkoji.jp/",
+      "quote": "愛知県海部郡飛島村元起3丁目26",
+      "checkedAt": "2026-10-28"
+    },
+    {
+      "claim": "電話番号は0567-52-1063",
+      "source": "https://www.tobishima-zenkoji.jp/",
+      "quote": "0567-52-1063",
+      "checkedAt": "2026-10-28"
+    },
+    {
+      "claim": "電話の受付は9時から17時",
+      "source": "https://www.tobishima-zenkoji.jp/",
+      "quote": "受付：9:00~17:00",
+      "checkedAt": "2026-10-28"
+    },
+    {
+      "claim": "駐車場は50台以上ある",
+      "source": "https://www.tobishima-zenkoji.jp/",
+      "quote": "駐車場50台以上",
+      "checkedAt": "2026-10-28"
+    },
+    {
+      "claim": "名古屋第二環状自動車道の飛島北ICから約5分",
+      "source": "https://www.tobishima-zenkoji.jp/",
+      "quote": "飛島北ICより約5分",
+      "checkedAt": "2026-10-28"
+    },
+    {
+      "claim": "近鉄蟹江駅から飛島公共交通バスで行ける",
+      "source": "https://www.tobishima-zenkoji.jp/",
+      "quote": "近鉄名古屋線「近鉄蟹江」駅降車",
+      "checkedAt": "2026-10-28"
+    },
+    {
+      "claim": "バス停から徒歩約2分",
+      "source": "https://www.tobishima-zenkoji.jp/",
+      "quote": "徒歩で約2分",
+      "checkedAt": "2026-10-28"
+    },
+    {
+      "claim": "納骨堂は本堂の中に設けられている",
+      "source": "https://www.tobishima-zenkoji.jp/",
+      "quote": "本堂の中に設けられた",
+      "checkedAt": "2026-10-28"
+    },
+    {
+      "claim": "ペットと一緒に入れる納骨堂がある",
+      "source": "https://www.tobishima-zenkoji.jp/",
+      "quote": "ペットと一緒に入れる納骨堂",
+      "checkedAt": "2026-10-28"
+    },
+    {
+      "claim": "樹木葬は龍樹(昇龍松)のそばにある",
+      "source": "https://www.tobishima-zenkoji.jp/jumokuso.html",
+      "quote": "龍樹（昇龍松）のもと",
+      "checkedAt": "2026-10-28"
+    },
+    {
+      "claim": "境内にこども園が隣接している",
+      "source": "https://www.tobishima-zenkoji.jp/",
+      "quote": "境内に隣接するこども園",
+      "checkedAt": "2026-10-28"
+    },
+    {
+      "claim": "永代供養墓は合祀で一人ひとり袋を分けて納める",
+      "source": "https://www.tobishima-zenkoji.jp/grave.html",
+      "quote": "お一人お一人しっかり袋を分けて",
+      "checkedAt": "2026-10-28"
+    },
+    {
+      "claim": "全プランが宗旨宗派不問",
+      "source": "https://www.tobishima-zenkoji.jp/grave.html",
+      "quote": "宗旨宗派不問・永代供養付き",
+      "checkedAt": "2026-10-28"
+    },
+    {
+      "claim": "檀家になる必要はない",
+      "source": "https://www.tobishima-zenkoji.jp/grave.html",
+      "quote": "檀家になる必要なし",
+      "checkedAt": "2026-10-28"
+    },
+    {
+      "claim": "葬儀はお葬儀会社と提携している",
+      "source": "https://www.tobishima-zenkoji.jp/",
+      "quote": "お葬儀会社様と提携し",
+      "checkedAt": "2026-10-28"
+    },
+    {
+      "claim": "搬送は24時間対応",
+      "source": "https://www.tobishima-zenkoji.jp/funeral.html",
+      "quote": "搬送は24時間対応可能です",
+      "checkedAt": "2026-10-28"
+    },
+    {
+      "claim": "住職が宗派に合わせて戒名・法名を授ける",
+      "source": "https://www.tobishima-zenkoji.jp/funeral.html",
+      "quote": "戒名・法名もその通りにお授けし",
+      "checkedAt": "2026-10-28"
+    },
+    {
+      "claim": "法要は四十九日・一周忌・三回忌・七回忌などに対応",
+      "source": "https://www.tobishima-zenkoji.jp/funeral.html",
+      "quote": "四十九日・一周忌・三回忌・七回忌",
+      "checkedAt": "2026-10-28"
+    },
+    {
+      "claim": "本尊は一光三尊阿弥陀如来",
+      "source": "https://www.tobishima-zenkoji.jp/hall.html",
+      "quote": "御本尊〝一光三尊阿弥陀如来〟",
+      "checkedAt": "2026-10-28"
+    },
+    {
+      "claim": "法要や行事の間は電話に出られないことがある",
+      "source": "https://www.tobishima-zenkoji.jp/",
+      "quote": "法要や行事等でお電話に出られない場合がございます",
+      "checkedAt": "2026-10-28"
+    },
+    {
+      "claim": "バス路線は飛島公共交通バス蟹江線",
+      "source": "https://www.tobishima-zenkoji.jp/",
+      "quote": "飛島公共交通バス蟹江線",
+      "checkedAt": "2026-10-28"
+    }
+  ],
+  "sources": [
+    {
+      "label": "公式サイト",
+      "url": "https://www.tobishima-zenkoji.jp/"
+    },
+    {
+      "label": "公式サイト(お墓の種類)",
+      "url": "https://www.tobishima-zenkoji.jp/grave.html"
+    },
+    {
+      "label": "公式サイト(納骨堂)",
+      "url": "https://www.tobishima-zenkoji.jp/hall.html"
+    },
+    {
+      "label": "公式サイト(樹木葬)",
+      "url": "https://www.tobishima-zenkoji.jp/jumokuso.html"
+    },
+    {
+      "label": "公式サイト(葬儀・法要)",
+      "url": "https://www.tobishima-zenkoji.jp/funeral.html"
+    },
+    {
+      "label": "Google マップ",
+      "url": "https://maps.google.com/?cid=16802931689787028283"
+    }
+  ],
+  "notes": "automation/v2/write.mjs が 2026-10-28 に claude -p --model sonnet で作成。事実の裏取り: 21/21 件(quote が出どころにあるもの)。裏取りに通らなかった facts は載せていない。"
+}

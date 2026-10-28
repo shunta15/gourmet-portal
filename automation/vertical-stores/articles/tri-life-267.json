@@ -1,0 +1,232 @@
+{
+  "key": "tri-life-267",
+  "headline": "神戸市灘区大和町にある神社。安産祈願者に安産箒を授ける神事で知られ、「箒の宮」とも呼ばれます",
+  "lede": "神戸市にある「箒の宮 徳井神社」です。御祭神は應神天皇、神功皇后、宇迦之御魂神の三柱で、古くから徳井の地に祀られていた八幡社の上宮にあたります。安産祈願者に安産箒を授ける神事があり、「箒の宮」と尊称されています。",
+  "sections": [
+    {
+      "heading": "由緒",
+      "body": "創建年は不詳ですが、往昔より徳井の地に祀られていた上宮・中宮・下宮の八幡社三座のうち、上宮にあたります。明治44年には中郷に祀られていた中宮も当社に遷座されました。明治6年、政府の社格制定により村社に列せられ、昭和36年に「應神天皇神社」から「徳井神社」へ社名変更がなされました。"
+    },
+    {
+      "heading": "箒の宮の安産箒と子安犬",
+      "body": "妊婦の陣痛が始まると、社殿にある荒神箒の中から1本を借り受け、その箒で腹をなでると安産を得るという伝えがあります。安産祈願者に安産箒を授ける神事は、地元のみならず全国的にも知られています。境内には、お産が軽く多産であると謳われる犬の母子象も安置されています。"
+    },
+    {
+      "heading": "ご祈祷",
+      "body": "ご祈祷は七五三詣を含め一家族ごとの奉仕で、拝殿でのご祈祷は午前9時から午後5時までです。神職が不在の場合もあるため、事前の予約が必要です。安産祈願、初宮詣、七五三詣、厄祓、学業向上、家内安全、拝殿結婚式、地鎮祭など、さまざまな御祈祷があります。申し込みは来社のほか、電話・FAX・郵送でも受け付けています。"
+    },
+    {
+      "heading": "年間行事",
+      "body": "七五三詣では、お子様のこれまでの成長への感謝と健やかな成長を願う御祈祷を一家族ごとに執り行っています。神前での結婚式も承っており、夏越大祓では日々の罪穢れを祓い清めます。毎年10月には例祭があり、地域の神輿のほか境内では多数の露店が軒を連ねます。"
+    }
+  ],
+  "menus": [
+    {
+      "name": "安産祈願"
+    },
+    {
+      "name": "初宮詣"
+    },
+    {
+      "name": "七五三詣"
+    },
+    {
+      "name": "厄祓"
+    },
+    {
+      "name": "学業向上"
+    },
+    {
+      "name": "受験合格"
+    },
+    {
+      "name": "拝殿結婚式"
+    },
+    {
+      "name": "地鎮祭"
+    }
+  ],
+  "tags": [
+    {
+      "tag": "駐車場あり",
+      "factIndex": 22
+    },
+    {
+      "tag": "予約制",
+      "factIndex": 11
+    },
+    {
+      "tag": "駅近",
+      "factIndex": 19
+    }
+  ],
+  "facts": [
+    {
+      "claim": "御祭神は應神天皇、神功皇后、宇迦之御魂神の三柱",
+      "source": "https://www.tokuijinjaofficial.com/",
+      "quote": "應神天皇",
+      "checkedAt": "2026-10-28"
+    },
+    {
+      "claim": "創建年は不詳だが、八幡社三座のうち上宮にあたる",
+      "source": "https://www.tokuijinjaofficial.com/",
+      "quote": "上宮が当社にあたります",
+      "checkedAt": "2026-10-28"
+    },
+    {
+      "claim": "明治44年には中宮も当社に遷座された",
+      "source": "https://www.tokuijinjaofficial.com/",
+      "quote": "明治44年には中郷に祀られていた中宮も当社に遷座され",
+      "checkedAt": "2026-10-28"
+    },
+    {
+      "claim": "明治6年、政府の社格制定により村社に列せられた",
+      "source": "https://www.tokuijinjaofficial.com/",
+      "quote": "明治6年、政府の社格制定により村社に列せられます",
+      "checkedAt": "2026-10-28"
+    },
+    {
+      "claim": "昭和36年に「應神天皇神社」から「徳井神社」へ社名変更された",
+      "source": "https://www.tokuijinjaofficial.com/",
+      "quote": "「徳井神社」へ社名変更がなされました",
+      "checkedAt": "2026-10-28"
+    },
+    {
+      "claim": "古来「箒の宮」と尊称されている",
+      "source": "https://www.tokuijinjaofficial.com/",
+      "quote": "「箒の宮」と尊称されています",
+      "checkedAt": "2026-10-28"
+    },
+    {
+      "claim": "荒神箒で腹をなでると安産を得るという伝えがある",
+      "source": "https://www.tokuijinjaofficial.com/",
+      "quote": "その箒で妊婦の腹をなでると安産を得るという伝えがあります",
+      "checkedAt": "2026-10-28"
+    },
+    {
+      "claim": "安産祈願者に安産箒を授ける神事がある",
+      "source": "https://www.tokuijinjaofficial.com/",
+      "quote": "安産祈願者に安産箒を授ける",
+      "checkedAt": "2026-10-28"
+    },
+    {
+      "claim": "この神事は地元のみならず全国的にも知られている",
+      "source": "https://www.tokuijinjaofficial.com/",
+      "quote": "地元民のみならず全国的にも知られ",
+      "checkedAt": "2026-10-28"
+    },
+    {
+      "claim": "お産が軽く多産であると謳われる犬の母子象が安置されている",
+      "source": "https://www.tokuijinjaofficial.com/",
+      "quote": "犬の母子象を安置いたしております",
+      "checkedAt": "2026-10-28"
+    },
+    {
+      "claim": "拝殿でのご祈祷は午前9時から午後5時まで",
+      "source": "https://www.tokuijinjaofficial.com/%E3%81%94%E5%8F%82%E6%8B%9D-%E5%BE%A1%E7%A5%88%E9%A1%98%E3%81%AE%E3%81%94%E6%A1%88%E5%86%85",
+      "quote": "拝殿でのご祈祷は午前9時から午後5時まで",
+      "checkedAt": "2026-10-28"
+    },
+    {
+      "claim": "神職不在の場合があり事前の予約が必要",
+      "source": "https://www.tokuijinjaofficial.com/%E3%81%94%E5%8F%82%E6%8B%9D-%E5%BE%A1%E7%A5%88%E9%A1%98%E3%81%AE%E3%81%94%E6%A1%88%E5%86%85",
+      "quote": "事前のご予約",
+      "checkedAt": "2026-10-28"
+    },
+    {
+      "claim": "御祈祷には安産祈願、初宮詣、七五三詣などがある",
+      "source": "https://www.tokuijinjaofficial.com/%E3%81%94%E5%8F%82%E6%8B%9D-%E5%BE%A1%E7%A5%88%E9%A1%98%E3%81%AE%E3%81%94%E6%A1%88%E5%86%85",
+      "quote": "安産祈願",
+      "checkedAt": "2026-10-28"
+    },
+    {
+      "claim": "申し込みは来社・電話・FAX・郵送で受け付けている",
+      "source": "https://www.tokuijinjaofficial.com/%E3%81%94%E5%8F%82%E6%8B%9D-%E5%BE%A1%E7%A5%88%E9%A1%98%E3%81%AE%E3%81%94%E6%A1%88%E5%86%85",
+      "quote": "電話申し込み",
+      "checkedAt": "2026-10-28"
+    },
+    {
+      "claim": "七五三の御祈祷を一家族ごとに執り行っている",
+      "source": "https://www.tokuijinjaofficial.com/%E5%B9%B4%E9%96%93%E8%A1%8C%E4%BA%8B",
+      "quote": "七五三の御祈祷を承っております",
+      "checkedAt": "2026-10-28"
+    },
+    {
+      "claim": "神前での結婚式を執り行っている",
+      "source": "https://www.tokuijinjaofficial.com/%E5%B9%B4%E9%96%93%E8%A1%8C%E4%BA%8B",
+      "quote": "神前での結婚式を承っております",
+      "checkedAt": "2026-10-28"
+    },
+    {
+      "claim": "夏越大祓では日々の罪穢れを祓い清める",
+      "source": "https://www.tokuijinjaofficial.com/%E5%B9%B4%E9%96%93%E8%A1%8C%E4%BA%8B",
+      "quote": "日々の罪、穢れを祓い、清め",
+      "checkedAt": "2026-10-28"
+    },
+    {
+      "claim": "毎年10月に例祭を執り行っている",
+      "source": "https://www.tokuijinjaofficial.com/%E5%B9%B4%E9%96%93%E8%A1%8C%E4%BA%8B",
+      "quote": "毎年10月に、例祭を執り行っております",
+      "checkedAt": "2026-10-28"
+    },
+    {
+      "claim": "例祭では境内に多数の露店が軒を連ねる",
+      "source": "https://www.tokuijinjaofficial.com/%E5%B9%B4%E9%96%93%E8%A1%8C%E4%BA%8B",
+      "quote": "境内では多数の露店が軒を連ね",
+      "checkedAt": "2026-10-28"
+    },
+    {
+      "claim": "JR六甲道駅より東へ徒歩7分",
+      "source": "https://www.tokuijinjaofficial.com/%E3%82%A2%E3%82%AF%E3%82%BB%E3%82%B9",
+      "quote": "JR六甲道より東へ徒歩7分",
+      "checkedAt": "2026-10-28"
+    },
+    {
+      "claim": "阪急六甲駅より南東に徒歩15分",
+      "source": "https://www.tokuijinjaofficial.com/%E3%82%A2%E3%82%AF%E3%82%BB%E3%82%B9",
+      "quote": "阪急六甲駅より南東に徒歩15分",
+      "checkedAt": "2026-10-28"
+    },
+    {
+      "claim": "阪神石屋川駅より北西に徒歩10分",
+      "source": "https://www.tokuijinjaofficial.com/%E3%82%A2%E3%82%AF%E3%82%BB%E3%82%B9",
+      "quote": "阪神石屋川駅より北西に徒歩10",
+      "checkedAt": "2026-10-28"
+    },
+    {
+      "claim": "駐車場有り（6台）",
+      "source": "https://www.tokuijinjaofficial.com/%E3%82%A2%E3%82%AF%E3%82%BB%E3%82%B9",
+      "quote": "駐車場有り",
+      "checkedAt": "2026-10-28"
+    },
+    {
+      "claim": "授与所受付時間は午前9時から午後5時まで",
+      "source": "https://www.tokuijinjaofficial.com/%E3%82%A2%E3%82%AF%E3%82%BB%E3%82%B9",
+      "quote": "午前9時 〜 午後5時まで",
+      "checkedAt": "2026-10-28"
+    }
+  ],
+  "sources": [
+    {
+      "label": "公式サイト",
+      "url": "https://www.tokuijinjaofficial.com/"
+    },
+    {
+      "label": "公式サイト(アクセス)",
+      "url": "https://www.tokuijinjaofficial.com/%E3%82%A2%E3%82%AF%E3%82%BB%E3%82%B9"
+    },
+    {
+      "label": "公式サイト(ご参拝・御祈願のご案内)",
+      "url": "https://www.tokuijinjaofficial.com/%E3%81%94%E5%8F%82%E6%8B%9D-%E5%BE%A1%E7%A5%88%E9%A1%98%E3%81%AE%E3%81%94%E6%A1%88%E5%86%85"
+    },
+    {
+      "label": "公式サイト(年間行事)",
+      "url": "https://www.tokuijinjaofficial.com/%E5%B9%B4%E9%96%93%E8%A1%8C%E4%BA%8B"
+    },
+    {
+      "label": "Google マップ",
+      "url": "https://maps.google.com/?cid=12369782538549861509"
+    }
+  ],
+  "notes": "automation/v2/write.mjs が 2026-10-28 に claude -p --model sonnet で作成。事実の裏取り: 24/24 件(quote が出どころにあるもの)。裏取りに通らなかった facts は載せていない。"
+}

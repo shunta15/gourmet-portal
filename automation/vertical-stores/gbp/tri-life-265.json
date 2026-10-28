@@ -1,0 +1,32 @@
+{
+  "tab": "トリニティアポ",
+  "tabEn": "tri-life",
+  "row": 265,
+  "sheet": {
+    "name": "正観寺",
+    "address": "",
+    "url": "https://www.google.com/maps/search/?api=1&query=%E6%AD%A3%E8%A6%B3%E5%AF%BA%20045-381-0682%20%E3%80%92240-0041%20%E7%A5%9E%E5%A5%88%E5%B7%9D%E7%9C%8C%E6%A8%AA%E6%B5%9C%E5%B8%82%E4%BF%9D%E5%9C%9F%E3%82%B1%E8%B0%B7%E5%8C%BA%E6%9D%B1%E5%B7%9D%E5%B3%B6%E7%94%BA%EF%BC%94%EF%BC%95%E2%88%92%EF%BC%94",
+    "type": "寺",
+    "d1": "",
+    "d2": ""
+  },
+  "urlKind": "mapsApi",
+  "route": "第1段(verify-gbp.mjs)で確認済み",
+  "verdict": "一致",
+  "verdictReason": "手がかり: 店名＋電話＋住所(番地まで)。電話が一致／店名: contains(シート「正観寺」/ マップ「曹洞宗 補陀山 正観寺」)／住所(シート): exact・町名・番地とも一致",
+  "place": {
+    "name": "曹洞宗 補陀山 正観寺",
+    "address": "神奈川県横浜市保土ケ谷区東川島町４５−４",
+    "category": "仏教寺院",
+    "lat": 35.4750401,
+    "lng": 139.5742393,
+    "gbpUrl": "https://maps.google.com/?cid=1918145898974577176",
+    "phone": "045-381-0682",
+    "website": "http://www.sotozen-navi.com/detail/index_140016.html",
+    "hours": null,
+    "reserveLinks": [],
+    "statusSignals": [],
+    "closedSignal": false
+  },
+  "fetchedAt": "2026-10-28T08:45:22.453Z"
+}

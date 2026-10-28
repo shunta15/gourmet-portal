@@ -99,6 +99,9 @@ export const ONE_PAGE_UNLISTED_SHOP_OF_FEATURE: Readonly<Record<string, string>>
   "竹田カフェ": "r761", // 竹田カフェ(営業時間が無く自動では1ページ化されず、旧型の店ページで 500・2026-10-28 手で追加)
   "陽月kagezuki": "r765", // 陽月 kagezuki(同上)
   "コグマコーヒー": "r770", // コグマコーヒー(同上)
+  "洋食屋自然": "r771", // 洋食屋 自然
+  "うなぎ処高はし": "r772", // うなぎ処 高はし
+  "海が見えるそば家": "r773", // 海が見えるそば家
 };
 
 const NFC = (s: string) => s.normalize("NFC");

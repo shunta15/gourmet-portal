@@ -1,0 +1,32 @@
+{
+  "tab": "トリニティアポ",
+  "tabEn": "tri-activity",
+  "row": 272,
+  "sheet": {
+    "name": "屋久島ダイビングガイド夢心地",
+    "address": "",
+    "url": "https://www.google.com/maps/search/?api=1&query=%E5%B1%8B%E4%B9%85%E5%B3%B6%E3%83%80%E3%82%A4%E3%83%93%E3%83%B3%E3%82%B0%E3%82%AC%E3%82%A4%E3%83%89%E5%A4%A2%E5%BF%83%E5%9C%B0%20090-8918-7311%20%E3%80%92891-4207%20%E9%B9%BF%E5%85%90%E5%B3%B6%E7%9C%8C%E7%86%8A%E6%AF%9B%E9%83%A1%E5%B1%8B%E4%B9%85%E5%B3%B6%E7%94%BA%E5%B0%8F%E7%80%AC%E7%94%B0%EF%BC%94%EF%BC%93%EF%BC%93%E2%88%92%EF%BC%98%EF%BC%98",
+    "type": "レジャー",
+    "d1": "",
+    "d2": ""
+  },
+  "urlKind": "mapsApi",
+  "route": "第1段(verify-gbp.mjs)で確認済み",
+  "verdict": "一致",
+  "verdictReason": "手がかり: 店名＋電話＋住所(番地まで)。電話が一致／店名: exact(シート「屋久島ダイビングガイド夢心地」/ マップ「屋久島ダイビングガイド夢心地」)／住所(シート): exact・町名・番地とも一致",
+  "place": {
+    "name": "屋久島ダイビングガイド夢心地",
+    "address": "鹿児島県熊毛郡屋久島町小瀬田４３３−８８",
+    "category": "ダイビング ショップ",
+    "lat": 30.3743174,
+    "lng": 130.6666821,
+    "gbpUrl": "https://maps.google.com/?cid=13345568394843079450",
+    "phone": "090-8918-7311",
+    "website": "http://www.yume-diving.com/",
+    "hours": null,
+    "reserveLinks": [],
+    "statusSignals": [],
+    "closedSignal": false
+  },
+  "fetchedAt": "2026-10-28T08:51:35.866Z"
+}

@@ -2556,5 +2556,32 @@
     "warnings": [
       "desc は lede から事実の文を選べず、事実から作った定型文"
     ]
+  },
+  "r771": {
+    "articleId": "洋食屋自然",
+    "name": "洋食屋 自然",
+    "warnings": [
+      "desc は lede から事実の文を選べず、事実から作った定型文",
+      "営業時間が取れていない（noindex）",
+      "cuisine は GBPカテゴリ"
+    ]
+  },
+  "r772": {
+    "articleId": "うなぎ処高はし",
+    "name": "うなぎ処 高はし",
+    "warnings": [
+      "desc は lede から事実の文を選べず、事実から作った定型文",
+      "営業時間が取れていない（noindex）",
+      "cuisine は GBPカテゴリ"
+    ]
+  },
+  "r773": {
+    "articleId": "海が見えるそば家",
+    "name": "海が見えるそば家",
+    "warnings": [
+      "desc は lede から事実の文を選べず、事実から作った定型文",
+      "営業時間が取れていない（noindex）",
+      "cuisine は GBPカテゴリ"
+    ]
   }
 }

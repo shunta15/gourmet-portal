@@ -1,0 +1,32 @@
+{
+  "tab": "トリニティアポ",
+  "tabEn": "tri-life",
+  "row": 267,
+  "sheet": {
+    "name": "箒の宮 徳井神社",
+    "address": "",
+    "url": "https://www.google.com/maps/search/?api=1&query=%E7%AE%92%E3%81%AE%E5%AE%AE%20%E5%BE%B3%E4%BA%95%E7%A5%9E%E7%A4%BE%20078-811-3975%20%E3%80%92657-0031%20%E5%85%B5%E5%BA%AB%E7%9C%8C%E7%A5%9E%E6%88%B8%E5%B8%82%E7%81%98%E5%8C%BA%E5%A4%A7%E5%92%8C%E7%94%BA%EF%BC%94%E4%B8%81%E7%9B%AE%EF%BC%95%E2%88%92%EF%BC%95",
+    "type": "神社",
+    "d1": "",
+    "d2": ""
+  },
+  "urlKind": "mapsApi",
+  "route": "第1段(verify-gbp.mjs)で確認済み",
+  "verdict": "一致",
+  "verdictReason": "手がかり: 店名＋電話＋住所(番地まで)。電話が一致／店名: exact(シート「箒の宮 徳井神社」/ マップ「箒の宮 徳井神社」)／住所(シート): exact・町名・番地とも一致",
+  "place": {
+    "name": "箒の宮 徳井神社",
+    "address": "兵庫県神戸市灘区大和町４丁目５−５",
+    "category": "神社",
+    "lat": 34.7176323,
+    "lng": 135.2437156,
+    "gbpUrl": "https://maps.google.com/?cid=12369782538549861509",
+    "phone": "078-811-3975",
+    "website": "https://www.tokuijinjaofficial.com/",
+    "hours": null,
+    "reserveLinks": [],
+    "statusSignals": [],
+    "closedSignal": false
+  },
+  "fetchedAt": "2026-10-28T08:47:28.813Z"
+}

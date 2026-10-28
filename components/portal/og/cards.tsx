@@ -69,7 +69,7 @@ function Chip({ color, label, note, small }: { color: string; label: string; not
   );
 }
 
-/** 総合トップの絵の色（にぎわいの輪 sometsuke「白磁と藍」の地・藍・金。components/portal/hubs/nigiwai/themes.css と同じ値） */
+/** 総合トップの共有画像の色（白磁と藍・金。値はここだけが持つ） */
 const PORCELAIN = "#f6f3ec";
 const PORCELAIN_L = "#fbf9f4";
 const INDIGO = "#18265a";

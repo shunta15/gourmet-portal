@@ -1,0 +1,32 @@
+{
+  "tab": "トリニティアポ",
+  "tabEn": "tri-life",
+  "row": 261,
+  "sheet": {
+    "name": "飛島善光寺",
+    "address": "",
+    "url": "https://www.google.com/maps/search/?api=1&query=%E9%A3%9B%E5%B3%B6%E5%96%84%E5%85%89%E5%AF%BA%20056-752-1063%20%E3%80%92490-1437%20%E6%84%9B%E7%9F%A5%E7%9C%8C%E6%B5%B7%E9%83%A8%E9%83%A1%E9%A3%9B%E5%B3%B6%E6%9D%91%E5%85%83%E8%B5%B7%EF%BC%93-%EF%BC%92%EF%BC%96",
+    "type": "寺",
+    "d1": "",
+    "d2": ""
+  },
+  "urlKind": "mapsApi",
+  "route": "第1段(verify-gbp.mjs)で確認済み",
+  "verdict": "一致",
+  "verdictReason": "手がかり: 店名＋電話＋住所(番地まで)。電話が一致／店名: exact(シート「飛島善光寺」/ マップ「飛島善光寺」)／住所(シート): exact・町名・番地とも一致",
+  "place": {
+    "name": "飛島善光寺",
+    "address": "愛知県海部郡飛島村元起３丁目２６",
+    "category": "仏教寺院",
+    "lat": 35.0798102,
+    "lng": 136.7850315,
+    "gbpUrl": "https://maps.google.com/?cid=16802931689787028283",
+    "phone": "0567-52-1063",
+    "website": "http://www.tobishima-zenkoji.jp/",
+    "hours": null,
+    "reserveLinks": [],
+    "statusSignals": [],
+    "closedSignal": false
+  },
+  "fetchedAt": "2026-10-28T08:40:40.236Z"
+}

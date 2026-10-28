@@ -1,0 +1,117 @@
+{
+  "key": "tri-life-263",
+  "headline": "宝塚市社町にある真言宗単立の寺院。聖徳太子が摂津国七大寺の一つとして建立したと伝わり、境内地を阪急電車の線路が通る",
+  "lede": "宝塚市にある「平林寺」です。宗派は真言宗単立、山号は武庫山、本尊は釈迦如来です。飛鳥時代に用明天皇の命を受けた聖徳太子が創建したと伝わり、平安時代には如一尼が再興しました。",
+  "sections": [
+    {
+      "heading": "由来",
+      "body": "飛鳥時代、用明天皇の命を受けた聖徳太子が摂津国七大寺の一つとして建立したと伝わります。平安時代には如一尼が再興し、天正6年(1578年)の荒木村重の反乱に巻き込まれて焼失しました。宗派は真言宗単立、山号は武庫山、本尊は釈迦如来です。"
+    },
+    {
+      "heading": "境内とアクセス",
+      "body": "境内には市指定文化財の釈迦如来坐像と石造露盤が伝わります。摂津国三十三ヶ所第2番、摂津国八十八箇所第73番の札所で、宝塚神社に隣接する境内地を阪急電車の線路が通っています。阪急電鉄今津線逆瀬川駅から徒歩5分です。"
+    }
+  ],
+  "menus": [],
+  "tags": [
+    {
+      "tag": "駅近",
+      "factIndex": 11
+    }
+  ],
+  "facts": [
+    {
+      "claim": "宗派は真言宗単立",
+      "source": "https://ja.wikipedia.org/wiki/%E5%B9%B3%E6%9E%97%E5%AF%BA_(%E5%AE%9D%E5%A1%9A%E5%B8%82)",
+      "quote": "真言宗単立",
+      "checkedAt": "2026-10-28"
+    },
+    {
+      "claim": "山号は武庫山",
+      "source": "https://ja.wikipedia.org/wiki/%E5%B9%B3%E6%9E%97%E5%AF%BA_(%E5%AE%9D%E5%A1%9A%E5%B8%82)",
+      "quote": "武庫山",
+      "checkedAt": "2026-10-28"
+    },
+    {
+      "claim": "本尊は釈迦如来",
+      "source": "https://ja.wikipedia.org/wiki/%E5%B9%B3%E6%9E%97%E5%AF%BA_(%E5%AE%9D%E5%A1%9A%E5%B8%82)",
+      "quote": "釈迦如来",
+      "checkedAt": "2026-10-28"
+    },
+    {
+      "claim": "飛鳥時代、用明天皇の命で聖徳太子が創建したと伝わる",
+      "source": "https://ja.wikipedia.org/wiki/%E5%B9%B3%E6%9E%97%E5%AF%BA_(%E5%AE%9D%E5%A1%9A%E5%B8%82)",
+      "quote": "飛鳥時代、用明天皇の命で聖徳太子が創建",
+      "checkedAt": "2026-10-28"
+    },
+    {
+      "claim": "平安時代に如一尼が再興した",
+      "source": "https://ja.wikipedia.org/wiki/%E5%B9%B3%E6%9E%97%E5%AF%BA_(%E5%AE%9D%E5%A1%9A%E5%B8%82)",
+      "quote": "如一尼が再興した",
+      "checkedAt": "2026-10-28"
+    },
+    {
+      "claim": "天正6年(1578年)、荒木村重の反乱に巻き込まれて焼失した",
+      "source": "https://ja.wikipedia.org/wiki/%E5%B9%B3%E6%9E%97%E5%AF%BA_(%E5%AE%9D%E5%A1%9A%E5%B8%82)",
+      "quote": "天正6年（1578年）荒木村重の反乱に巻き込まれて焼失",
+      "checkedAt": "2026-10-28"
+    },
+    {
+      "claim": "市指定文化財の釈迦如来坐像がある",
+      "source": "https://ja.wikipedia.org/wiki/%E5%B9%B3%E6%9E%97%E5%AF%BA_(%E5%AE%9D%E5%A1%9A%E5%B8%82)",
+      "quote": "釈迦如来坐像",
+      "checkedAt": "2026-10-28"
+    },
+    {
+      "claim": "市指定文化財の石造露盤がある",
+      "source": "https://ja.wikipedia.org/wiki/%E5%B9%B3%E6%9E%97%E5%AF%BA_(%E5%AE%9D%E5%A1%9A%E5%B8%82)",
+      "quote": "石造露盤",
+      "checkedAt": "2026-10-28"
+    },
+    {
+      "claim": "摂津国三十三ヶ所第2番の札所",
+      "source": "https://ja.wikipedia.org/wiki/%E5%B9%B3%E6%9E%97%E5%AF%BA_(%E5%AE%9D%E5%A1%9A%E5%B8%82)",
+      "quote": "摂津国三十三ヶ所第2番",
+      "checkedAt": "2026-10-28"
+    },
+    {
+      "claim": "摂津国八十八箇所第73番の札所",
+      "source": "https://ja.wikipedia.org/wiki/%E5%B9%B3%E6%9E%97%E5%AF%BA_(%E5%AE%9D%E5%A1%9A%E5%B8%82)",
+      "quote": "摂津国八十八箇所第73番",
+      "checkedAt": "2026-10-28"
+    },
+    {
+      "claim": "宝塚神社に隣接し、境内地を阪急電車が通る",
+      "source": "https://www.city.takarazuka.hyogo.jp/citypromotion/monokotoba/7000042/7000045/7000226.html",
+      "quote": "境内地を阪急電車が通るロケーション",
+      "checkedAt": "2026-10-28"
+    },
+    {
+      "claim": "阪急電鉄今津線逆瀬川駅から徒歩5分",
+      "source": "https://ja.wikipedia.org/wiki/%E5%B9%B3%E6%9E%97%E5%AF%BA_(%E5%AE%9D%E5%A1%9A%E5%B8%82)",
+      "quote": "阪急電鉄今津線逆瀬川駅から徒歩5分",
+      "checkedAt": "2026-10-28"
+    },
+    {
+      "claim": "聖徳太子が摂津国七大寺の一つとして建立した寺院",
+      "source": "https://www.city.takarazuka.hyogo.jp/citypromotion/monokotoba/7000042/7000045/7000226.html",
+      "quote": "聖徳太子が摂津国七大寺の一つとして建立した寺院",
+      "checkedAt": "2026-10-28"
+    }
+  ],
+  "sources": [
+    {
+      "label": "宝塚市公式ホームページ",
+      "url": "https://www.city.takarazuka.hyogo.jp/citypromotion/monokotoba/7000042/7000045/7000226.html"
+    },
+    {
+      "label": "Wikipedia(平林寺)",
+      "url": "https://ja.wikipedia.org/wiki/%E5%B9%B3%E6%9E%97%E5%AF%BA_(%E5%AE%9D%E5%A1%9A%E5%B8%82)"
+    },
+    {
+      "label": "Google マップ",
+      "url": "https://maps.google.com/?cid=1561844714249568365"
+    }
+  ],
+  "notes": "automation/v2/write.mjs が 2026-10-28 に claude -p --model sonnet で作成。事実の裏取り: 13/13 件(quote が出どころにあるもの)。裏取りに通らなかった facts は載せていない。"
+}

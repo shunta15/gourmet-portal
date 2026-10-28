@@ -1,0 +1,185 @@
+{
+  "key": "tri-life-256",
+  "headline": "大阪府豊能郡豊能町吉川にある神社。主祭神は第十五代応神天皇で、本殿は安政三年建立の檜皮葺・総欅造りです",
+  "lede": "豊能郡豊能町にある「吉川八幡大神宮」です。主祭神は第十五代応神天皇で、境内には皇大神社・稲荷社・吉川弁財天社・多賀社の四社があります。最寄りは能勢電鉄妙見線「妙見口」駅から徒歩10分です。",
+  "sections": [
+    {
+      "heading": "由緒と社殿",
+      "body": "主祭神は第十五代応神天皇です。本殿は安政三年に建立されたもので、檜皮葺・総欅造りとなっています。境内には皇大神社(天照大御神)、稲荷社(宇迦之御魂神)、吉川弁財天社(市杵島姫命)、多賀社(伊邪那岐命・伊邪那美命)の四社があります。社殿は享保二十年(1735)と嘉永五年(1852)の二度にわたり火災にあい、安政三年に現在の形に立て直されました。"
+    },
+    {
+      "heading": "境内のようすと御神馬",
+      "body": "境内には200mにわたって湧き水が流れ、鳥居の左側で「鼓ケ滝」として流れ落ちています。拝殿内には20名まで対応できる胡床(椅子席)が用意され、社有地には1500系(1552)車体のカットモデルが復元保存されています。約3,000坪(10,000㎡)の敷地には森林や竹林、洞穴もあり、御神馬の「いづめ」がお仕えしています。いづめは木曽馬系の日本在来馬で、日本古来の合戦馬の血統を引く馬です。"
+    },
+    {
+      "heading": "アクセスと御祈祷",
+      "body": "最寄りは能勢電鉄妙見線「妙見口」駅から花折街道を北へ徒歩10分で、大阪梅田駅からは約50分です。鳥居脇には約30台分の駐車スペースがあります。御祈祷はメールまたは電話で予約の申し込みをします。"
+    }
+  ],
+  "menus": [
+    {
+      "name": "御祈祷"
+    },
+    {
+      "name": "新宅清祓式"
+    },
+    {
+      "name": "上棟祭"
+    },
+    {
+      "name": "地鎮祭"
+    },
+    {
+      "name": "七五三詣"
+    }
+  ],
+  "tags": [
+    {
+      "tag": "駐車場あり",
+      "factIndex": 7
+    },
+    {
+      "tag": "予約制",
+      "factIndex": 10
+    }
+  ],
+  "facts": [
+    {
+      "claim": "本殿は安政三年に建立された",
+      "source": "http://www.yoshikawahachiman.com/",
+      "quote": "本殿は安政三年に建立されたもので、",
+      "checkedAt": "2026-10-28"
+    },
+    {
+      "claim": "本殿は檜皮葺・総欅造り",
+      "source": "http://www.yoshikawahachiman.com/",
+      "quote": "檜皮葺・総欅造りとなっています。",
+      "checkedAt": "2026-10-28"
+    },
+    {
+      "claim": "主祭神は第十五代応神天皇",
+      "source": "http://www.yoshikawahachiman.com/",
+      "quote": "主祭神は第十五代 応神天皇です。",
+      "checkedAt": "2026-10-28"
+    },
+    {
+      "claim": "皇大神社の祭神は天照大御神",
+      "source": "http://www.yoshikawahachiman.com/",
+      "quote": "・皇大神社（天照大御神）",
+      "checkedAt": "2026-10-28"
+    },
+    {
+      "claim": "吉川弁財天社の祭神は市杵島姫命",
+      "source": "http://www.yoshikawahachiman.com/",
+      "quote": "・吉川弁財天社（市杵島姫命）",
+      "checkedAt": "2026-10-28"
+    },
+    {
+      "claim": "最寄り駅は能勢電鉄妙見線妙見口駅から徒歩10分",
+      "source": "http://www.yoshikawahachiman.com/access/access.html",
+      "quote": "能勢電鉄妙見線「妙見口」駅より、花折街道を北へ徒歩10分",
+      "checkedAt": "2026-10-28"
+    },
+    {
+      "claim": "大阪梅田駅からは約50分",
+      "source": "http://www.yoshikawahachiman.com/access/access.html",
+      "quote": "大阪「梅田」駅からは約50分です。",
+      "checkedAt": "2026-10-28"
+    },
+    {
+      "claim": "鳥居脇に約30台の駐車スペースがある",
+      "source": "http://www.yoshikawahachiman.com/access/access.html",
+      "quote": "鳥居脇に約30台が停められる駐車スペースがあります。",
+      "checkedAt": "2026-10-28"
+    },
+    {
+      "claim": "境内に天然温泉が湧いている",
+      "source": "http://www.yoshikawahachiman.com/message/message.html",
+      "quote": "境内に天然温泉が湧いております。",
+      "checkedAt": "2026-10-28"
+    },
+    {
+      "claim": "御神馬いづめは木曽馬系の日本在来馬",
+      "source": "http://www.yoshikawahachiman.com/message/message.html",
+      "quote": "御神馬〜いづめ〜は木曽馬系の日本在来馬で",
+      "checkedAt": "2026-10-28"
+    },
+    {
+      "claim": "御祈祷はメールまたは電話で予約する",
+      "source": "http://www.yoshikawahachiman.com/message/message.html",
+      "quote": "御祈祷はメールまたはお電話で御予約お申込み",
+      "checkedAt": "2026-10-28"
+    },
+    {
+      "claim": "境内を200mの湧き水が鼓ケ滝として流れ落ちる",
+      "source": "http://www.yoshikawahachiman.com/places/places.html",
+      "quote": "鳥居の左側に「鼓ケ滝」として流れ落ちています。",
+      "checkedAt": "2026-10-28"
+    },
+    {
+      "claim": "享保二十年と嘉永五年に火災があり安政三年に立て直された",
+      "source": "http://www.yoshikawahachiman.com/places/places.html",
+      "quote": "享保二十年(1735)と嘉永五年(1852)の二度にわたり火災",
+      "checkedAt": "2026-10-28"
+    },
+    {
+      "claim": "拝殿は20名まで対応する胡床(椅子席)を用意",
+      "source": "http://www.yoshikawahachiman.com/places/places.html",
+      "quote": "20名まで対応できますように胡床（椅子席）を用意",
+      "checkedAt": "2026-10-28"
+    },
+    {
+      "claim": "社有地に1500系(1552)車体のカットモデルを復元保存",
+      "source": "http://www.yoshikawahachiman.com/places/places.html",
+      "quote": "1500系（1552）車体のカットモデルを社有地に復元保存",
+      "checkedAt": "2026-10-28"
+    },
+    {
+      "claim": "約3,000坪(10,000㎡)の敷地がある",
+      "source": "http://www.yoshikawahachiman.com/places/places.html",
+      "quote": "約3,000坪(10,000㎡)の広大な敷地は自然が豊富",
+      "checkedAt": "2026-10-28"
+    },
+    {
+      "claim": "新宅清祓式・上棟祭などの出張祭がある",
+      "source": "http://www.yoshikawahachiman.com/message/message.html",
+      "quote": "新宅清祓式・上棟祭などの出張祭は",
+      "checkedAt": "2026-10-28"
+    },
+    {
+      "claim": "地鎮祭をおこなっている",
+      "source": "http://www.yoshikawahachiman.com/message/message.html",
+      "quote": "地鎮祭は",
+      "checkedAt": "2026-10-28"
+    },
+    {
+      "claim": "七五三詣を受け付けている",
+      "source": "http://www.yoshikawahachiman.com/message/message.html",
+      "quote": "七五三詣を受付",
+      "checkedAt": "2026-10-28"
+    }
+  ],
+  "sources": [
+    {
+      "label": "公式サイト",
+      "url": "http://www.yoshikawahachiman.com/"
+    },
+    {
+      "label": "公式サイト(交通ご案内)",
+      "url": "http://www.yoshikawahachiman.com/access/access.html"
+    },
+    {
+      "label": "公式サイト(ごあいさつ)",
+      "url": "http://www.yoshikawahachiman.com/message/message.html"
+    },
+    {
+      "label": "公式サイト(空間一覧)",
+      "url": "http://www.yoshikawahachiman.com/places/places.html"
+    },
+    {
+      "label": "Google マップ",
+      "url": "https://maps.google.com/?cid=13613183152460999238"
+    }
+  ],
+  "notes": "automation/v2/write.mjs が 2026-10-28 に claude -p --model sonnet で作成。事実の裏取り: 19/19 件(quote が出どころにあるもの)。裏取りに通らなかった facts は載せていない。"
+}
