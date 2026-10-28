@@ -1,0 +1,32 @@
+{
+  "tab": "トリニティアポ",
+  "tabEn": "tri-life",
+  "row": 45,
+  "sheet": {
+    "name": "薬王寺",
+    "address": "",
+    "url": "https://www.google.com/maps/search/?api=1&query=%E8%96%AC%E7%8E%8B%E5%AF%BA%20055-642-3740%20",
+    "type": "寺",
+    "d1": "",
+    "d2": ""
+  },
+  "urlKind": "mapsApi",
+  "route": "第1段(verify-gbp.mjs)で確認済み",
+  "verdict": "一致",
+  "verdictReason": "手がかり: 店名＋電話＋住所(番地まで)。電話が一致／店名: exact(シート「薬王寺」/ マップ「薬王寺」)／住所(シート): exact・町名・番地とも一致",
+  "place": {
+    "name": "薬王寺",
+    "address": "山梨県南巨摩郡身延町大塩１９９０",
+    "category": "仏教寺院",
+    "lat": 35.4873392,
+    "lng": 138.4208817,
+    "gbpUrl": "https://maps.google.com/?cid=15124486150281906190",
+    "phone": "0556-42-3740",
+    "website": null,
+    "hours": null,
+    "reserveLinks": [],
+    "statusSignals": [],
+    "closedSignal": false
+  },
+  "fetchedAt": "2026-10-28T21:21:10.264Z"
+}

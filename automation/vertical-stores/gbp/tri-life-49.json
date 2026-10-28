@@ -1,0 +1,32 @@
+{
+  "tab": "トリニティアポ",
+  "tabEn": "tri-life",
+  "row": 49,
+  "sheet": {
+    "name": "保利神社",
+    "address": "",
+    "url": "https://www.google.com/maps/search/?api=1&query=%E4%BF%9D%E5%88%A9%E7%A5%9E%E7%A4%BE%2006-6692-0826%20",
+    "type": "その他",
+    "d1": "",
+    "d2": ""
+  },
+  "urlKind": "mapsApi",
+  "route": "第1段(verify-gbp.mjs)で確認済み",
+  "verdict": "一致",
+  "verdictReason": "手がかり: 店名＋電話＋住所(番地まで)。電話が一致／店名: exact(シート「保利神社」/ マップ「保利神社 (長居宮)」)／住所(シート): exact・町名・番地とも一致",
+  "place": {
+    "name": "保利神社 (長居宮)",
+    "address": "大阪府大阪市住吉区長居東１丁目１４−１７",
+    "category": "神社",
+    "lat": 34.6074309,
+    "lng": 135.5225385,
+    "gbpUrl": "https://maps.google.com/?cid=9799400832913959293",
+    "phone": "06-6692-0826",
+    "website": "https://osaka-jinjacho.jp/funai_jinja/dai9shibu/sumiyoshi-ku/09012horijinja.html",
+    "hours": null,
+    "reserveLinks": [],
+    "statusSignals": [],
+    "closedSignal": false
+  },
+  "fetchedAt": "2026-10-28T21:24:01.769Z"
+}

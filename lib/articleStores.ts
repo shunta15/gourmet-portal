@@ -16424,6 +16424,198 @@ export const ARTICLE_STORES: Restaurant[] = [
       "青塚駅"
     ],
     "featureId": "HANA・AKARI善"
+  },
+  {
+    "id": "r790",
+    "name": "おばんざい志 (おばんざいこころ)",
+    "cuisine": "居酒屋",
+    "area": "富山県・富山市",
+    "region": "toyama",
+    "shape": "square",
+    "image": "/restaurants/teleapo-おばんざい志(おばんざいこころ)/hero.jpg",
+    "heroImages": [
+      "/restaurants/teleapo-おばんざい志(おばんざいこころ)/hero.jpg",
+      "/restaurants/teleapo-おばんざい志(おばんざいこころ)/point1.jpg",
+      "/restaurants/teleapo-おばんざい志(おばんざいこころ)/point2.jpg"
+    ],
+    "gallery": [
+      "/restaurants/teleapo-おばんざい志(おばんざいこころ)/hero.jpg",
+      "/restaurants/teleapo-おばんざい志(おばんざいこころ)/point1.jpg",
+      "/restaurants/teleapo-おばんざい志(おばんざいこころ)/point2.jpg"
+    ],
+    "desc": "おばんざい志は、富山県富山市桜町一丁目6-14桜町ビル1Fにある居酒屋である。JR富山駅から徒歩4分の距離にあり、富山駅前の通りに店を構える。",
+    "address": "富山県富山市桜町1丁目6-14 桜町ビル 1F",
+    "hours": "—（訪問前に公式確認）",
+    "closed": "—（訪問前に公式確認）",
+    "seats": "総席数15席",
+    "nearest": "JR富山駅から徒歩4分",
+    "phone": "076-441-6999",
+    "source": {
+      "label": "Google ビジネスプロフィール",
+      "url": "https://maps.google.com/?cid=12799072340487185744"
+    },
+    "body": [
+      "おばんざい志 (おばんざいこころ)は、富山県富山市にあるお店です。業態は「居酒屋」、所在地は富山県富山市桜町1丁目6-14 桜町ビル 1F、最寄りはJR富山駅から徒歩4分です。マチノワ編集部の特集記事では、「居酒屋・おばんざい料理店としての業態」・「総席数15席、飲み放題メニューのある店内」などを取り上げています。",
+      "営業時間と定休日は取得できていないため、訪問前に公式の情報でご確認ください。席は総席数15席。営業時間や価格は変わることがあるため、訪問前に公式サイトやSNS、お電話でご確認ください。"
+    ],
+    "highlights": [
+      "居酒屋・おばんざい料理店としての業態",
+      "総席数15席、飲み放題メニューのある店内",
+      "JR富山駅から徒歩4分のアクセス"
+    ],
+    "tags": [
+      "居酒屋",
+      "おばんざい料理店",
+      "富山市",
+      "富山駅"
+    ],
+    "featureId": "おばんざい志(おばんざいこころ)"
+  },
+  {
+    "id": "r791",
+    "name": "十人十色",
+    "cuisine": "居酒屋",
+    "area": "大阪府・大阪市住之江区",
+    "region": "osaka",
+    "shape": "square",
+    "image": "/restaurants/teleapo-十人十色/hero.jpg",
+    "heroImages": [
+      "/restaurants/teleapo-十人十色/hero.jpg",
+      "/restaurants/teleapo-十人十色/point3.jpg"
+    ],
+    "gallery": [
+      "/restaurants/teleapo-十人十色/hero.jpg",
+      "/restaurants/teleapo-十人十色/point3.jpg"
+    ],
+    "desc": "十人十色は、大阪府大阪市住之江区粉浜二丁目にある居酒屋である。最寄りは南海本線粉浜駅で、駅から徒歩1分の距離に店を構える。",
+    "address": "大阪府大阪市住之江区粉浜2丁目11-19",
+    "hours": "—（訪問前に公式確認）",
+    "closed": "—（訪問前に公式確認）",
+    "seats": "45席",
+    "nearest": "南海本線「粉浜」駅から徒歩1分",
+    "phone": "090-4641-9347",
+    "source": {
+      "label": "Google ビジネスプロフィール",
+      "url": "https://maps.google.com/?cid=5128819301546368195"
+    },
+    "body": [
+      "十人十色は、大阪府大阪市住之江区にあるお店です。業態は「居酒屋」、所在地は大阪府大阪市住之江区粉浜2丁目11-19、最寄りは南海本線「粉浜」駅から徒歩1分です。マチノワ編集部の特集記事では、「居酒屋として立ち飲みもできる業態」・「17時から0時までの夜営業」などを取り上げています。",
+      "営業時間と定休日は取得できていないため、訪問前に公式の情報でご確認ください。席は45席。営業時間や価格は変わることがあるため、訪問前に公式サイトやSNS、お電話でご確認ください。"
+    ],
+    "highlights": [
+      "居酒屋として立ち飲みもできる業態",
+      "17時から0時までの夜営業",
+      "45席、カウンターとテーブルを備えた1階2階の店内",
+      "南海本線粉浜駅から徒歩1分のアクセス"
+    ],
+    "tags": [
+      "居酒屋",
+      "住之江区",
+      "粉浜駅"
+    ],
+    "featureId": "十人十色"
+  },
+  {
+    "id": "r792",
+    "name": "寿司割烹酒場 ゐまる （イマル）",
+    "cuisine": "居酒屋",
+    "area": "千葉県・柏市",
+    "region": "chiba",
+    "shape": "square",
+    "image": "/restaurants/teleapo-寿司割烹酒場ゐまる（イマル）/hero.jpg",
+    "heroImages": [
+      "/restaurants/teleapo-寿司割烹酒場ゐまる（イマル）/hero.jpg",
+      "/restaurants/teleapo-寿司割烹酒場ゐまる（イマル）/point1.jpg",
+      "/restaurants/teleapo-寿司割烹酒場ゐまる（イマル）/point2.jpg",
+      "/restaurants/teleapo-寿司割烹酒場ゐまる（イマル）/point5.jpg"
+    ],
+    "gallery": [
+      "/restaurants/teleapo-寿司割烹酒場ゐまる（イマル）/hero.jpg",
+      "/restaurants/teleapo-寿司割烹酒場ゐまる（イマル）/point1.jpg",
+      "/restaurants/teleapo-寿司割烹酒場ゐまる（イマル）/point2.jpg",
+      "/restaurants/teleapo-寿司割烹酒場ゐまる（イマル）/point5.jpg"
+    ],
+    "desc": "千葉県柏市の居酒屋。最寄りは柏駅東口から徒歩6分。",
+    "address": "千葉県柏市柏3丁目4-19 木下ビル 1F",
+    "hours": "—（訪問前に公式確認）",
+    "closed": "—（訪問前に公式確認）",
+    "seats": "23席",
+    "nearest": "柏駅東口から徒歩6分",
+    "phone": "04-7199-4498",
+    "source": {
+      "label": "Google ビジネスプロフィール",
+      "url": "https://maps.google.com/?cid=8094283657415514079"
+    },
+    "body": [
+      "寿司割烹酒場 ゐまる （イマル）は、千葉県柏市にあるお店です。業態は「居酒屋」、所在地は千葉県柏市柏3丁目4-19 木下ビル 1F、最寄りは柏駅東口から徒歩6分です。マチノワ編集部の特集記事では、「赤酢のシャリで握る江戸前寿司」・「柏の漁港直送・豊洲直送の食材」などを取り上げています。",
+      "営業時間と定休日は取得できていないため、訪問前に公式の情報でご確認ください。席は23席。営業時間や価格は変わることがあるため、訪問前に公式サイトやSNS、お電話でご確認ください。"
+    ],
+    "highlights": [
+      "赤酢のシャリで握る江戸前寿司",
+      "柏の漁港直送・豊洲直送の食材",
+      "常時20種類ほど揃う日本酒",
+      "靴を脱いで寛ぐカウンターと掘りごたつ席",
+      "柏駅東口から徒歩6分のアクセス"
+    ],
+    "tags": [
+      "居酒屋",
+      "柏市",
+      "柏駅"
+    ],
+    "featureId": "寿司割烹酒場ゐまる（イマル）"
+  },
+  {
+    "id": "r793",
+    "name": "ホルモン焼 石橋屋",
+    "cuisine": "ホルモン焼肉店",
+    "area": "埼玉県・本庄市",
+    "region": "saitama",
+    "shape": "square",
+    "image": "/restaurants/teleapo-ホルモン焼石橋屋/hero.jpg",
+    "heroImages": [
+      "/restaurants/teleapo-ホルモン焼石橋屋/hero.jpg",
+      "/restaurants/teleapo-ホルモン焼石橋屋/point1.jpg",
+      "/restaurants/teleapo-ホルモン焼石橋屋/point2.jpg",
+      "/restaurants/teleapo-ホルモン焼石橋屋/point3.jpg",
+      "/restaurants/teleapo-ホルモン焼石橋屋/point4.jpg"
+    ],
+    "gallery": [
+      "/restaurants/teleapo-ホルモン焼石橋屋/hero.jpg",
+      "/restaurants/teleapo-ホルモン焼石橋屋/point1.jpg",
+      "/restaurants/teleapo-ホルモン焼石橋屋/point2.jpg",
+      "/restaurants/teleapo-ホルモン焼石橋屋/point3.jpg",
+      "/restaurants/teleapo-ホルモン焼石橋屋/point4.jpg",
+      "/restaurants/teleapo-ホルモン焼石橋屋/point5.jpg"
+    ],
+    "desc": "ホルモン焼 石橋屋は、埼玉県本庄市牧西にあるホルモン焼肉店である。",
+    "address": "埼玉県本庄市牧西576-1",
+    "hours": "—（訪問前に公式確認）",
+    "closed": "—（訪問前に公式確認）",
+    "seats": "—（訪問前に公式確認）",
+    "nearest": "JR本庄駅北口から車で約9分・駐車場7台",
+    "phone": "050-8892-9930",
+    "source": {
+      "label": "Google ビジネスプロフィール",
+      "url": "https://maps.google.com/?cid=18178468673177548915"
+    },
+    "body": [
+      "ホルモン焼 石橋屋は、埼玉県本庄市にあるお店です。業態は「ホルモン焼肉店」、所在地は埼玉県本庄市牧西576-1、最寄りはJR本庄駅北口から車で約9分・駐車場7台です。マチノワ編集部の特集記事では、「国内産ホルモンとレバーを自家製の醤油ダレで焼く」・「最大20名まで使える半テラス席と貸切対応」などを取り上げています。",
+      "営業時間と定休日は取得できていないため、訪問前に公式の情報でご確認ください。営業時間や価格は変わることがあるため、訪問前に公式サイトやSNS、お電話でご確認ください。"
+    ],
+    "highlights": [
+      "国内産ホルモンとレバーを自家製の醤油ダレで焼く",
+      "最大20名まで使える半テラス席と貸切対応",
+      "肉類からデザートまで揃うメニューの幅",
+      "カウンター6席と座敷4卓を備えた店内",
+      "JR本庄駅から車で9分、駐車場7台のアクセス"
+    ],
+    "tags": [
+      "ホルモン焼肉店",
+      "本庄市",
+      "本庄駅",
+      "貸切可"
+    ],
+    "featureId": "ホルモン焼石橋屋"
   }
 ];
 
@@ -16774,7 +16966,11 @@ export const ARTICLE_STORE_FEATURE_IDS: Record<string, string> = {
   "r786": "retroG＆Bar",
   "r787": "アルカード",
   "r788": "月のうさぎ",
-  "r789": "HANA・AKARI善"
+  "r789": "HANA・AKARI善",
+  "r790": "おばんざい志(おばんざいこころ)",
+  "r791": "十人十色",
+  "r792": "寿司割烹酒場ゐまる（イマル）",
+  "r793": "ホルモン焼石橋屋"
 };
 
 /** 特集記事ID → 店舗ID */
@@ -17124,5 +17320,9 @@ export const ARTICLE_STORE_ID_BY_FEATURE: Record<string, string> = {
   "retroG＆Bar": "r786",
   "アルカード": "r787",
   "月のうさぎ": "r788",
-  "HANA・AKARI善": "r789"
+  "HANA・AKARI善": "r789",
+  "おばんざい志(おばんざいこころ)": "r790",
+  "十人十色": "r791",
+  "寿司割烹酒場ゐまる（イマル）": "r792",
+  "ホルモン焼石橋屋": "r793"
 };

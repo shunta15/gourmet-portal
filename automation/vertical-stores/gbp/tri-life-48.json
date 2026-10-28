@@ -1,0 +1,32 @@
+{
+  "tab": "トリニティアポ",
+  "tabEn": "tri-life",
+  "row": 48,
+  "sheet": {
+    "name": "大運寺",
+    "address": "",
+    "url": "https://www.google.com/maps/search/?api=1&query=%E5%A4%A7%E9%81%8B%E5%AF%BA%20058-478-5449%20",
+    "type": "寺",
+    "d1": "",
+    "d2": ""
+  },
+  "urlKind": "mapsApi",
+  "route": "第1段(verify-gbp.mjs)で確認済み",
+  "verdict": "一致",
+  "verdictReason": "手がかり: 店名＋電話。電話が一致／店名: contains(シート「大運寺」/ マップ「称念山 大運寺」)／住所(シート): none・町名までがちがう（シート:岐阜県大垣市緑園 / マップ:岐阜県大垣市新町）",
+  "place": {
+    "name": "称念山 大運寺",
+    "address": "岐阜県大垣市新町１丁目６０",
+    "category": "仏教寺院",
+    "lat": 35.359179,
+    "lng": 136.62151,
+    "gbpUrl": "https://maps.google.com/?cid=17397655263904699995",
+    "phone": "0584-78-5449",
+    "website": "http://daiunji.jiin.com/",
+    "hours": null,
+    "reserveLinks": [],
+    "statusSignals": [],
+    "closedSignal": false
+  },
+  "fetchedAt": "2026-10-28T21:22:44.462Z"
+}

@@ -1,0 +1,110 @@
+{
+  "key": "tri-life-48",
+  "headline": "岐阜県大垣市新町にある浄土宗の寺院。黒谷金戒光明寺の末寺で、本尊は一光三尊仏",
+  "lede": "大垣市にある「称念山 大運寺」です。浄土宗の寺院で、黒谷金戒光明寺の末寺にあたります。寛永19(1642)年に真言宗から改宗して再建され、万治元(1658)年に現在の寺名に改められました。",
+  "sections": [
+    {
+      "heading": "沿革",
+      "body": "寛永19(1642)年、生蓮社見誉上人が真言宗の道故山 理清寺に入山して浄土宗に改宗し、再建しました。万治元(1658)年に称念山 報土院 大運寺と改名しています。明治24(1891)年10月28日の濃尾大震災で本堂・庫裡・観音堂・書院などの伽藍が全焼し、明治44(1911)年に現在の本堂が再建されました。平成16年から20年にかけて本堂と鐘楼堂の大改修がおこなわれ、平成21(2009)年10月18日に落慶法要が営まれています。"
+    },
+    {
+      "heading": "境内の建物",
+      "body": "鐘楼堂は昭和7(1932)年、第十六世順誉上人の代に再建された欅造りの建物で、彫刻が施されています。観音堂は濃尾大震災の直後に建てられ、大正4(1915)年に谷汲山華厳寺から下附された十一面観音菩薩を本尊としています。境内には三玉大明神社もあり、大運寺で生まれたお狐様をまつっています。"
+    }
+  ],
+  "menus": [],
+  "tags": [],
+  "facts": [
+    {
+      "claim": "住所は岐阜県大垣市新町1丁目60",
+      "source": "http://daiunji.jiin.com/",
+      "quote": "岐阜県大垣市新町１丁目６０",
+      "checkedAt": "2026-10-29"
+    },
+    {
+      "claim": "電話は0584-78-5449",
+      "source": "http://daiunji.jiin.com/",
+      "quote": "TEL：0584-78-5449",
+      "checkedAt": "2026-10-29"
+    },
+    {
+      "claim": "浄土宗で黒谷金戒光明寺の末寺",
+      "source": "https://daiunji.jiin.com/enkaku/",
+      "quote": "浄土宗　黒谷金戒光明寺の末寺",
+      "checkedAt": "2026-10-29"
+    },
+    {
+      "claim": "本尊は一光三尊仏",
+      "source": "https://daiunji.jiin.com/enkaku/",
+      "quote": "一光三尊仏",
+      "checkedAt": "2026-10-29"
+    },
+    {
+      "claim": "寛永19年(1642年)に真言宗から改宗して再建された",
+      "source": "https://daiunji.jiin.com/enkaku/",
+      "quote": "寛永１９年（１６４２年）",
+      "checkedAt": "2026-10-29"
+    },
+    {
+      "claim": "万治元年(1658年)に称念山 報土院 大運寺と改名した",
+      "source": "https://daiunji.jiin.com/enkaku/",
+      "quote": "称念山　報土院　大運寺と改名",
+      "checkedAt": "2026-10-29"
+    },
+    {
+      "claim": "明治24年10月28日の濃尾大震災で伽藍が全焼した",
+      "source": "https://daiunji.jiin.com/enkaku/",
+      "quote": "明治２４年１０月２８日の濃尾大震災",
+      "checkedAt": "2026-10-29"
+    },
+    {
+      "claim": "明治44年に現在の本堂を再建した",
+      "source": "https://daiunji.jiin.com/enkaku/",
+      "quote": "明治４４年　現在の本堂を再建",
+      "checkedAt": "2026-10-29"
+    },
+    {
+      "claim": "平成21年10月18日に落慶法要がおこなわれた",
+      "source": "https://daiunji.jiin.com/enkaku/",
+      "quote": "平成２１年１０月１８日落慶法要",
+      "checkedAt": "2026-10-29"
+    },
+    {
+      "claim": "鐘楼堂は昭和7年、第十六世順誉上人の代に再建された",
+      "source": "https://daiunji.jiin.com/keidai/",
+      "quote": "昭和七年、第十六世順誉上人の代に再建",
+      "checkedAt": "2026-10-29"
+    },
+    {
+      "claim": "観音堂の本尊は大正4年に谷汲山華厳寺から下附された十一面観音菩薩",
+      "source": "https://daiunji.jiin.com/keidai/",
+      "quote": "十一面観音菩薩を本尊様",
+      "checkedAt": "2026-10-29"
+    },
+    {
+      "claim": "三玉大明神社は大運寺で生まれたお狐様をまつる",
+      "source": "https://daiunji.jiin.com/keidai/",
+      "quote": "大運寺で産まれたお狐様",
+      "checkedAt": "2026-10-29"
+    }
+  ],
+  "sources": [
+    {
+      "label": "公式サイト",
+      "url": "http://daiunji.jiin.com/"
+    },
+    {
+      "label": "公式サイト(沿革)",
+      "url": "https://daiunji.jiin.com/enkaku/"
+    },
+    {
+      "label": "公式サイト(境内)",
+      "url": "https://daiunji.jiin.com/keidai/"
+    },
+    {
+      "label": "Google マップ",
+      "url": "https://maps.google.com/?cid=17397655263904699995"
+    }
+  ],
+  "notes": "automation/v2/write.mjs が 2026-10-29 に claude -p --model sonnet で作成。事実の裏取り: 12/12 件(quote が出どころにあるもの)。裏取りに通らなかった facts は載せていない。"
+}

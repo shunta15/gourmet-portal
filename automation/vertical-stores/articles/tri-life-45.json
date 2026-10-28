@@ -1,0 +1,100 @@
+{
+  "key": "tri-life-45",
+  "headline": "山梨県南巨摩郡身延町大塩にある日蓮宗の寺院。本堂には「薬王寺の鳳凰・竜」として身延町指定文化財になっている透し浮彫りの彫刻がある。",
+  "lede": "南巨摩郡身延町にある「薬王寺」です。日蓮宗の寺院で、本堂には「薬王寺の鳳凰・竜」として身延町指定文化財になっている透し浮彫りの彫刻があります。彫刻には天正2年(1574)の銘が残っています。",
+  "sections": [
+    {
+      "heading": "場所と宗派",
+      "body": "住所は山梨県南巨摩郡身延町大塩1990、電話は0556-42-3740です。日蓮宗の寺院で、日蓮宗ポータルサイトの山梨県南巨摩郡身延町の寺院一覧に掲載されています。"
+    },
+    {
+      "heading": "身延町指定文化財「薬王寺の鳳凰・竜」",
+      "body": "本堂正面の向拝の欄間や柱上部の頭貫(かしらぬき)には、鳳凰や飛天を表した透し浮彫りの彫刻があります。本堂内陣正面の欄間には、雄渾にして奔放な飛竜の透し浮彫りの彫刻もあります。天正2年(1574)の銘があり、当時県下で活躍した下山の宮大工の作であろうと推測されています。これらの彫刻は「薬王寺の鳳凰・竜」として昭和40年3月1日に身延町指定文化財になり、鳳凰・飛天・飛竜は仏法守護の想像上の動物として信仰され奉納されました。"
+    }
+  ],
+  "menus": [],
+  "tags": [],
+  "facts": [
+    {
+      "claim": "業種はGoogle マップで仏教寺院と表示されている",
+      "source": "https://maps.google.com/?cid=15124486150281906190",
+      "quote": "仏教寺院",
+      "checkedAt": "2026-10-29"
+    },
+    {
+      "claim": "電話は0556-42-3740",
+      "source": "https://maps.google.com/?cid=15124486150281906190",
+      "quote": "0556-42-3740",
+      "checkedAt": "2026-10-29"
+    },
+    {
+      "claim": "日蓮宗ポータルサイトの山梨県南巨摩郡身延町の寺院一覧に掲載されている",
+      "source": "https://www.nichiren.or.jp/temple/map/hokuriku/yamanashi/minamikoma-gun-minobu-cho/",
+      "quote": "薬王寺",
+      "checkedAt": "2026-10-29"
+    },
+    {
+      "claim": "住所は山梨県南巨摩郡身延町大塩1990",
+      "source": "https://www.nichiren.or.jp/temple/map/hokuriku/yamanashi/minamikoma-gun-minobu-cho/",
+      "quote": "身延町大塩1990",
+      "checkedAt": "2026-10-29"
+    },
+    {
+      "claim": "「薬王寺の鳳凰・竜」という名称で身延町指定文化財になっている",
+      "source": "https://www.town.minobu.lg.jp/page/1691.html",
+      "quote": "薬王寺の鳳凰・竜",
+      "checkedAt": "2026-10-29"
+    },
+    {
+      "claim": "指定年月日は昭和40年3月1日",
+      "source": "https://www.town.minobu.lg.jp/page/1691.html",
+      "quote": "昭和40年3月1日",
+      "checkedAt": "2026-10-29"
+    },
+    {
+      "claim": "本堂正面の向拝の欄間や柱上部の頭貫に彫刻がある",
+      "source": "https://www.town.minobu.lg.jp/page/1691.html",
+      "quote": "頭貫(かしらぬき)",
+      "checkedAt": "2026-10-29"
+    },
+    {
+      "claim": "内陣正面の欄間に飛竜を表した透し浮彫りの彫刻がある",
+      "source": "https://www.town.minobu.lg.jp/page/1691.html",
+      "quote": "雄渾にして奔放な",
+      "checkedAt": "2026-10-29"
+    },
+    {
+      "claim": "彫刻には天正2年(1574)の銘がある",
+      "source": "https://www.town.minobu.lg.jp/page/1691.html",
+      "quote": "天正2年(1574)の銘がある",
+      "checkedAt": "2026-10-29"
+    },
+    {
+      "claim": "当時県下で活躍した下山の宮大工の作と推測されている",
+      "source": "https://www.town.minobu.lg.jp/page/1691.html",
+      "quote": "下山の宮大工の作であろうと推測される",
+      "checkedAt": "2026-10-29"
+    },
+    {
+      "claim": "鳳凰・飛天・飛竜は仏法守護の想像上の動物として信仰され奉納された",
+      "source": "https://www.town.minobu.lg.jp/page/1691.html",
+      "quote": "仏法守護の想像上の動物として信仰され",
+      "checkedAt": "2026-10-29"
+    }
+  ],
+  "sources": [
+    {
+      "label": "日蓮宗ポータルサイト(寺院一覧)",
+      "url": "https://www.nichiren.or.jp/temple/map/hokuriku/yamanashi/minamikoma-gun-minobu-cho/"
+    },
+    {
+      "label": "身延町ホームページ(町指定文化財)",
+      "url": "https://www.town.minobu.lg.jp/page/1691.html"
+    },
+    {
+      "label": "Google マップ",
+      "url": "https://maps.google.com/?cid=15124486150281906190"
+    }
+  ],
+  "notes": "automation/v2/write.mjs が 2026-10-29 に claude -p --model sonnet で作成。事実の裏取り: 11/11 件(quote が出どころにあるもの)。裏取りに通らなかった facts は載せていない。"
+}

@@ -118,6 +118,10 @@ export const ONE_PAGE_UNLISTED_SHOP_OF_FEATURE: Readonly<Record<string, string>>
   "アルカード": "r787", // アルカード
   "月のうさぎ": "r788", // 月のうさぎ
   "HANA・AKARI善": "r789", // HANA・AKARI 善
+  "おばんざい志(おばんざいこころ)": "r790", // おばんざい志 (おばんざいこころ)
+  "十人十色": "r791", // 十人十色
+  "ホルモン焼石橋屋": "r793", // ホルモン焼 石橋屋
+  "寿司割烹酒場ゐまる（イマル）": "r792", // 寿司割烹酒場 ゐまる （イマル）
 };
 
 const NFC = (s: string) => s.normalize("NFC");

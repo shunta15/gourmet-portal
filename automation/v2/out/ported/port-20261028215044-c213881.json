@@ -1,0 +1,85 @@
+{
+  "commit": "c2138813403617774d9c3a6900010aa3f5947261",
+  "source": "/Users/shunta/claude/gp-k-auto2",
+  "count": 7,
+  "added": [
+    {
+      "row": 40,
+      "name": "おばんざい 志",
+      "key": "tri-gourmet-40",
+      "vertical": "グルメ",
+      "id": "r790",
+      "articleId": "おばんざい志(おばんざいこころ)",
+      "shopUrl": "https://machinowa.tokyo/restaurant/r790",
+      "articleUrl": "https://machinowa.tokyo/feature/おばんざい志(おばんざいこころ)",
+      "sheetUrl": "https://machinowa.tokyo/feature/おばんざい志(おばんざいこころ)"
+    },
+    {
+      "row": 41,
+      "name": "十人十色",
+      "key": "tri-gourmet-41",
+      "vertical": "グルメ",
+      "id": "r791",
+      "articleId": "十人十色",
+      "shopUrl": "https://machinowa.tokyo/restaurant/r791",
+      "articleUrl": "https://machinowa.tokyo/feature/十人十色",
+      "sheetUrl": "https://machinowa.tokyo/feature/十人十色"
+    },
+    {
+      "row": 42,
+      "name": "ホルモン焼 石橋屋",
+      "key": "tri-gourmet-42",
+      "vertical": "グルメ",
+      "id": "r793",
+      "articleId": "ホルモン焼石橋屋",
+      "shopUrl": "https://machinowa.tokyo/restaurant/r793",
+      "articleUrl": "https://machinowa.tokyo/feature/ホルモン焼石橋屋",
+      "sheetUrl": "https://machinowa.tokyo/feature/ホルモン焼石橋屋"
+    },
+    {
+      "row": 43,
+      "name": "寿司割烹酒場ゐまる",
+      "key": "tri-gourmet-43",
+      "vertical": "グルメ",
+      "id": "r792",
+      "articleId": "寿司割烹酒場ゐまる（イマル）",
+      "shopUrl": "https://machinowa.tokyo/restaurant/r792",
+      "articleUrl": "https://machinowa.tokyo/feature/寿司割烹酒場ゐまる（イマル）",
+      "sheetUrl": "https://machinowa.tokyo/feature/寿司割烹酒場ゐまる（イマル）"
+    },
+    {
+      "row": 45,
+      "name": "薬王寺",
+      "key": "tri-life-45",
+      "vertical": "くらし",
+      "id": "li0090",
+      "articleId": "li0090",
+      "shopUrl": "https://machinowa.tokyo/life/shop/li0090",
+      "articleUrl": "https://machinowa.tokyo/life/article/li0090",
+      "sheetUrl": "https://machinowa.tokyo/life/article/li0090"
+    },
+    {
+      "row": 48,
+      "name": "大運寺",
+      "key": "tri-life-48",
+      "vertical": "くらし",
+      "id": "li0091",
+      "articleId": "li0091",
+      "shopUrl": "https://machinowa.tokyo/life/shop/li0091",
+      "articleUrl": "https://machinowa.tokyo/life/article/li0091",
+      "sheetUrl": "https://machinowa.tokyo/life/article/li0091"
+    },
+    {
+      "row": 49,
+      "name": "保利神社",
+      "key": "tri-life-49",
+      "vertical": "くらし",
+      "id": "li0092",
+      "articleId": "li0092",
+      "shopUrl": "https://machinowa.tokyo/life/shop/li0092",
+      "articleUrl": "https://machinowa.tokyo/life/article/li0092",
+      "sheetUrl": "https://machinowa.tokyo/life/article/li0092"
+    }
+  ],
+  "skipped": []
+}

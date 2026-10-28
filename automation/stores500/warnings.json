@@ -2711,5 +2711,36 @@
     "warnings": [
       "営業時間が取れていない（noindex）"
     ]
+  },
+  "r790": {
+    "articleId": "おばんざい志(おばんざいこころ)",
+    "name": "おばんざい志 (おばんざいこころ)",
+    "warnings": [
+      "営業時間が取れていない（noindex）"
+    ]
+  },
+  "r791": {
+    "articleId": "十人十色",
+    "name": "十人十色",
+    "warnings": [
+      "営業時間が取れていない（noindex）"
+    ]
+  },
+  "r793": {
+    "articleId": "ホルモン焼石橋屋",
+    "name": "ホルモン焼 石橋屋",
+    "warnings": [
+      "営業時間が取れていない（noindex）",
+      "cuisine は GBPカテゴリ"
+    ]
+  },
+  "r792": {
+    "articleId": "寿司割烹酒場ゐまる（イマル）",
+    "name": "寿司割烹酒場 ゐまる （イマル）",
+    "warnings": [
+      "desc は lede から事実の文を選べず、事実から作った定型文",
+      "営業時間が取れていない（noindex）",
+      "cuisine は GBPカテゴリ"
+    ]
   }
 }

@@ -1,0 +1,131 @@
+{
+  "key": "tri-life-49",
+  "headline": "大阪市住吉区長居東にある神社。通称は「長居の宮」で、大巳貴命をまつる",
+  "lede": "大阪市にある「保利神社」です。通称は「長居の宮」といい、大巳貴命を主祭神としてまつります。Osaka Metro御堂筋線長居駅から東へ500メートルの住宅地にあります。",
+  "sections": [
+    {
+      "heading": "場所と連絡先",
+      "body": "住所は大阪市住吉区長居東1-14-17、電話は06-6692-0826です。Osaka Metro御堂筋線長居駅から東へ500メートルの住宅地にあり、大阪府神社庁に属する神社本庁加盟神社です。"
+    },
+    {
+      "heading": "由緒",
+      "body": "創建の年代は分かっていませんが、室町時代の創建と伝わります。当初は「牛頭天王社」と称し、明治40年に吉山神社を合祀しました。明治44年に「保利神社」へと改称し、現在の社名になりました。主祭神は大巳貴命、通称は「長居の宮」で、例祭は10月16日です。"
+    },
+    {
+      "heading": "境内の狛犬",
+      "body": "拝殿前には昭和4年6月に奉納された青銅製の狛犬があります。台座には「大阪行幸記念」と刻まれ、戦時中の金属類回収令を免れて現在まで残っています。"
+    }
+  ],
+  "menus": [],
+  "tags": [
+    {
+      "tag": "駅近",
+      "factIndex": 2
+    }
+  ],
+  "facts": [
+    {
+      "claim": "住所は大阪市住吉区長居東1-14-17",
+      "source": "https://osaka-jinjacho.jp/funai_jinja/dai9shibu/sumiyoshi-ku/09012horijinja.html",
+      "quote": "大阪市住吉区長居東1-14-17",
+      "checkedAt": "2026-10-29"
+    },
+    {
+      "claim": "電話は06-6692-0826",
+      "source": "https://osaka-jinjacho.jp/funai_jinja/dai9shibu/sumiyoshi-ku/09012horijinja.html",
+      "quote": "Tel.06-6692-0826",
+      "checkedAt": "2026-10-29"
+    },
+    {
+      "claim": "Osaka Metro御堂筋線長居駅東へ500m",
+      "source": "https://osaka-jinjacho.jp/funai_jinja/dai9shibu/sumiyoshi-ku/09012horijinja.html",
+      "quote": "長居駅東へ500ｍ",
+      "checkedAt": "2026-10-29"
+    },
+    {
+      "claim": "神社本庁加盟神社である",
+      "source": "https://osaka-jinjacho.jp/funai_jinja/dai9shibu/sumiyoshi-ku/09012horijinja.html",
+      "quote": "神社本庁加盟神社",
+      "checkedAt": "2026-10-29"
+    },
+    {
+      "claim": "通称は「長居の宮」",
+      "source": "https://ja.wikipedia.org/wiki/保利神社",
+      "quote": "長居の宮",
+      "checkedAt": "2026-10-29"
+    },
+    {
+      "claim": "主祭神は大巳貴命",
+      "source": "https://ja.wikipedia.org/wiki/保利神社",
+      "quote": "大巳貴命",
+      "checkedAt": "2026-10-29"
+    },
+    {
+      "claim": "創建の年代は不詳で、伝承は室町時代",
+      "source": "https://ja.wikipedia.org/wiki/保利神社",
+      "quote": "室町時代",
+      "checkedAt": "2026-10-29"
+    },
+    {
+      "claim": "当初は「牛頭天王社」と称していた",
+      "source": "https://ja.wikipedia.org/wiki/保利神社",
+      "quote": "牛頭天王社",
+      "checkedAt": "2026-10-29"
+    },
+    {
+      "claim": "明治40年に吉山神社を合祀した",
+      "source": "https://ja.wikipedia.org/wiki/保利神社",
+      "quote": "吉山神社を合祀",
+      "checkedAt": "2026-10-29"
+    },
+    {
+      "claim": "明治44年に保利神社へ改称した",
+      "source": "https://ja.wikipedia.org/wiki/保利神社",
+      "quote": "明治44年",
+      "checkedAt": "2026-10-29"
+    },
+    {
+      "claim": "例祭は10月16日",
+      "source": "https://ja.wikipedia.org/wiki/保利神社",
+      "quote": "10月16日",
+      "checkedAt": "2026-10-29"
+    },
+    {
+      "claim": "拝殿前の狛犬は昭和4年6月に奉納された青銅製",
+      "source": "https://note.com/komajin_note/n/n9a3633655a6b",
+      "quote": "昭和四年六月吉日建之",
+      "checkedAt": "2026-10-29"
+    },
+    {
+      "claim": "狛犬の台座には「大阪行幸記念」と刻まれている",
+      "source": "https://note.com/komajin_note/n/n9a3633655a6b",
+      "quote": "大阪行幸記念",
+      "checkedAt": "2026-10-29"
+    },
+    {
+      "claim": "狛犬は戦時中の金属類回収令を免れて現存する",
+      "source": "https://note.com/komajin_note/n/n9a3633655a6b",
+      "quote": "金属類回収令を免れて",
+      "checkedAt": "2026-10-29"
+    }
+  ],
+  "sources": [
+    {
+      "label": "公式サイト",
+      "url": "https://osaka-jinjacho.jp/funai_jinja/dai9shibu/sumiyoshi-ku/09012horijinja.html"
+    },
+    {
+      "label": "Wikipedia",
+      "url": "https://ja.wikipedia.org/wiki/保利神社"
+    },
+    {
+      "label": "大阪市の神社と狛犬(note)",
+      "url": "https://note.com/komajin_note/n/n9a3633655a6b"
+    },
+    {
+      "label": "Google マップ",
+      "url": "https://maps.google.com/?cid=9799400832913959293"
+    }
+  ],
+  "notes": "automation/v2/write.mjs が 2026-10-29 に claude -p --model sonnet で作成。事実の裏取り: 14/14 件(quote が出どころにあるもの)。裏取りに通らなかった facts は載せていない。"
+}
