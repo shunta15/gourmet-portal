@@ -1,5 +1,4 @@
 import Link from "next/link";
-import ContactLine from "@/components/portal/ContactLine";
 import Logo from "./Logo";
 import BackToTop from "./BackToTop";
 import { IconArrow, IconInstagram, IconFacebook, IconX, IconYoutube } from "./Icons";
@@ -99,7 +98,6 @@ export default function Footer({ mode = "proto" }: { mode?: PtMode }) {
             )}
             <BackToTop />
             <p className="pt-fg-copy">{live ? "© マチノワPet" : "© 2024 マチノワPet. All rights reserved."}</p>
-            {live ? <ContactLine /> : null}
           </div>
         </div>
       </div>

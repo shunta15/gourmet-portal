@@ -1,5 +1,4 @@
 import Link from "next/link";
-import ContactLine from "@/components/portal/ContactLine";
 import type { Metadata } from "next";
 import JsonLd from "@/components/portal/JsonLd";
 import Shell from "../../common/Shell";
@@ -406,7 +405,6 @@ function SearchFooter() {
           <i className="lsr-fdiv lsr-fdiv1" aria-hidden="true" />
         </div>
         <p className="lsr-copy">© マチノワPet</p>
-        <ContactLine style={{ textAlign: "center" }} />
       </div>
     </footer>
   );
