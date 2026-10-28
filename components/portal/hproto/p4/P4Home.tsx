@@ -164,7 +164,10 @@ export default function P4Home() {
             {P3_LINES[0]}<br />{P3_LINES[1]}
           </p>
         </div>
-        <img src={IMG + "n_art_street.webp"} alt="" className="p4-street" />
+        {/* 街並みの線画(2026-10-29 高画質版 2000×667・背景を透明にした webp)。窓(.p4-street)は元の切り出しと同じ位置・同じ範囲で、左は画面の端まで届き、写真のブロブの下に重なる */}
+        <div className="p4-street" aria-hidden>
+          <img src={IMG + "n_art_street_hq.webp"} alt="" width={2000} height={667} />
+        </div>
         <div className="p4-collage">
           {HERO.map((k) => {
             const s = SHAPES[k];
