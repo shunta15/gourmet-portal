@@ -33,7 +33,7 @@ export async function loadSpecialView(): Promise<SpecialView> {
   const shops: SpShop[] = ORDER.map((id) => places[idx(id)]).filter(Boolean).map((p) => ({
     id: p.id,
     name: p.name,
-    kindName: cats.find((c) => c.slug === p.category)?.name ?? "",
+    kindName: p.kindName || (cats.find((c) => c.slug === p.category)?.name ?? ""),
     area: locOf(p),
     blurb: SHOP_COPY[p.id]?.blurb ?? "",
     photo: photoOf(places.indexOf(p)),

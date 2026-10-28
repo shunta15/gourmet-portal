@@ -51,6 +51,11 @@ const LIFE_TO_GOURMET: ReadonlyArray<readonly [string, string]> = [
   ["li0053", "r772"], // 野菜専門店 マルシェノグチ
 ];
 
+/** ビューティーからくらしへ移した店(ビューティーの店 ID → くらしの店 ID。2026-10-28)。旧 URL の 301 に使う */
+const BEAUTY_TO_LIFE: ReadonlyArray<readonly [string, string]> = [
+  ["be0108", "li0065"], // ベニフィット(美容院向けの美容材料の卸の会社。サロンではないのでくらしへ)
+];
+
 const nextConfig: NextConfig = {
   images: {
     remotePatterns: [
@@ -99,6 +104,14 @@ const nextConfig: NextConfig = {
         ? LIFE_TO_GOURMET.flatMap(([lifeId, shopId]) => [
             { source: `/life/shop/${lifeId}`, destination: `/restaurant/${shopId}`, statusCode: 301 },
             { source: `/life/article/${lifeId}`, destination: `/restaurant/${shopId}`, statusCode: 301 },
+          ])
+        : []),
+      // ビューティーからくらしへ移した店(2026-10-28 オーナー決定「暮らしでいいよ」)。旧 URL(/beauty/shop/<ID>・/beauty/article/<ID>)は、くらしの店ページ /life/shop/<店 ID> へ 301。
+      // 移した店は限定公開(lib/unlisted.ts)のまま。転送先もサイトのどこにも出ない。
+      ...(PORTAL_LIVE
+        ? BEAUTY_TO_LIFE.flatMap(([beautyId, lifeId]) => [
+            { source: `/beauty/shop/${beautyId}`, destination: `/life/shop/${lifeId}`, statusCode: 301 },
+            { source: `/beauty/article/${beautyId}`, destination: `/life/shop/${lifeId}`, statusCode: 301 },
           ])
         : []),
       // 店舗紹介の一覧（/restaurant。2026-10-24 新設）の内部のパス /gourmet/restaurant も、直接開かれたら本物の URL へ（?page= もそのまま渡る）

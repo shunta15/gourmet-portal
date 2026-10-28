@@ -104,7 +104,7 @@ export async function loadShopView(id: string): Promise<ShopView> {
   const place = places.find((p) => p.id === id);
   if (!place) notFound();
   const cats = VERTICALS.life.categories;
-  const kindName = cats.find((c) => c.slug === place.category)?.name ?? "";
+  const kindName = place.kindName || (cats.find((c) => c.slug === place.category)?.name ?? "");
   const copy = SHOP_COPY[id] ?? fallbackCopy(place, kindName);
   const list = place.photos?.length ? place.photos : place.images.map((p) => ({ path: p, what: "" }));
   const ph = (slot: [number, number?, number?]): Photo | null => {
@@ -124,7 +124,7 @@ export async function loadShopView(id: string): Promise<ShopView> {
       return {
         id: p.id,
         name: p.name,
-        kindName: cats.find((c) => c.slug === p.category)?.name ?? "",
+        kindName: p.kindName || (cats.find((c) => c.slug === p.category)?.name ?? ""),
         area: locOf(p),
         href: LFL.shop(p.id),
         photo: f ? { src: f.path, alt: `${p.name} — ${f.what}`, pos: "50% 50%" } : null,

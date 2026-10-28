@@ -73,7 +73,7 @@ export async function loadShops(): Promise<LShop[]> {
         name: p.name,
         kindSlug: p.category,
         groupSlug: LIFE_GROUP_OF_CATEGORY[p.category] ?? "",
-        kind: cats.find((c) => c.slug === p.category)?.name ?? p.category,
+        kind: p.kindName || (cats.find((c) => c.slug === p.category)?.name ?? p.category),
         city: p.cityName ?? "",
         // 東京の区は、住所の町名までを所在地にする(見本は「東京都港区白金」)
         loc: p.pref === "tokyo" ? (p.address.match(/^[^0-9０-９]+/)?.[0] ?? `${prefName}${p.cityName ?? ""}`) : `${prefName}${p.cityName ?? ""}`,
