@@ -42,9 +42,9 @@ export async function loadSpecialView(): Promise<SpecialView> {
   const specials = loadSpecials({ key: "life" });
   const cards: SpCard[] = specials.slice(0, 3).map((s) => ({ slug: s.slug, title: s.title, lead: s.lead, href: LFL.specialArticle(s.slug) }));
   const tiles = [
-    { label: "習い事・教室", sub: "新しい自分に出会う", photo: photoOf(idx("li0002"), 4) },
-    { label: "神社・寺", sub: "心しずまる場所", photo: photoOf(idx("li0001"), 0) },
-    { label: "ファッション・雑貨・工芸", sub: "暮らしに息づく手仕事", photo: photoOf(idx("li0004"), 3) },
+    { label: "習う", sub: "新しい自分に出会う", photo: photoOf(idx("li0002"), 4) },
+    { label: "出かける", sub: "心しずまる場所", photo: photoOf(idx("li0001"), 0) },
+    { label: "買う・借りる", sub: "暮らしに息づく手仕事", photo: photoOf(idx("li0004"), 3) },
   ];
   return { cards, tiles, shops };
 }

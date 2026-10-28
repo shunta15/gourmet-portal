@@ -28,7 +28,7 @@
 .tp-kinds a::after { content: ""; position: absolute; inset: 0; background: linear-gradient(180deg, rgba(0, 0, 0, 0) 45%, rgba(24, 15, 8, 0.72)); }
 .tp-kind-tx { position: absolute; left: calc(18 * var(--u)); bottom: calc(14 * var(--u)); z-index: 1; display: block; }
 .tp-kind-tx b { display: block; font-family: var(--lf-ffs); font-weight: 700; font-size: calc(19 * var(--u)); letter-spacing: 0.04em; line-height: 1.2; text-shadow: 0 1px 6px rgba(0, 0, 0, 0.5); white-space: nowrap; }
-.tp-kinds li:nth-child(3) .tp-kind-tx b { font-size: calc(14.5 * var(--u)); }
+.tp-kind-tx b small { display: block; margin-top: calc(4 * var(--u)); font-family: inherit; font-weight: 400; font-size: calc(10.5 * var(--u)); letter-spacing: 0.06em; line-height: 1.3; }
 .tp-kind-tx em { display: block; margin-top: calc(5 * var(--u)); font-size: calc(9.5 * var(--u)); letter-spacing: 0.08em; white-space: nowrap; }
 .tp-kind-ar { position: absolute; right: calc(16 * var(--u)); bottom: calc(13 * var(--u)); z-index: 1; width: calc(25 * var(--u)); height: calc(25 * var(--u)); }
 
@@ -113,7 +113,7 @@
   .tp-kinds li { height: 150px; }
   .tp-kind-tx { left: 12px; bottom: 10px; }
   .tp-kind-tx b { font-size: 15px; white-space: normal; }
-  .tp-kinds li:nth-child(3) .tp-kind-tx b { font-size: 13px; }
+  .tp-kind-tx b small { font-size: 10px; margin-top: 2px; letter-spacing: 0.02em; }
   .tp-kind-tx em { font-size: 10.5px; white-space: normal; letter-spacing: 0.02em; padding-right: 32px; }
   .tp-kind-ar { width: 26px; height: 26px; right: 10px; bottom: 10px; }
   .tp-sp { display: block; height: auto; padding: 24px 14px 22px; }

@@ -7,7 +7,8 @@ import type { SpecialView, Photo } from "./data";
 /* eslint-disable @next/next/no-img-element */
 const IMG = "/_portal/life/";
 const CHECKS = ["どんな体験ができるか", "アクセスのしやすさ", "雰囲気・設備", "自分に合った楽しみ方"];
-const KIND_SLUG = ["lesson", "shrine-temple", "fashion-craft"] as const;
+/** 特集 1 の小さな 3 枚が行く種類の組(習う・出かける・買う・借りる。lib/verticals/lifeKinds.ts) */
+const KIND_SLUG = ["learn", "visit", "shop"] as const;
 
 function Ph({ p }: { p: Photo }) {
   return <img className="lf-ph" src={p.src} alt={p.alt} style={{ objectPosition: p.pos }} loading="lazy" decoding="async" />;

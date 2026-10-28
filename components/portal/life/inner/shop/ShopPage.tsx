@@ -2,6 +2,7 @@ import Link from "next/link";
 import Header from "../../Header";
 import { IcPin, IcPinLine, IcTag, IcLink, IcExt, IcArrow } from "../../Icons";
 import { LFL } from "../../links";
+import { lifeGroupOfCategory } from "@/lib/verticals/lifeKinds";
 import type { ShopView, Photo } from "./data";
 
 /* eslint-disable @next/next/no-img-element */
@@ -65,7 +66,7 @@ export default function ShopPage({ v }: { v: ShopView }) {
         <span aria-hidden="true">&gt;</span>
         <Link href={LFL.shops}>店舗紹介</Link>
         <span aria-hidden="true">&gt;</span>
-        <Link href={LFL.searchWith({ kind: place.category })}>{v.kindName}</Link>
+        <Link href={LFL.searchWith({ kind: lifeGroupOfCategory(place.category)?.slug })}>{lifeGroupOfCategory(place.category)?.name ?? v.kindName}</Link>
         <span aria-hidden="true">&gt;</span>
         <span aria-current="page">{place.name}</span>
       </nav>

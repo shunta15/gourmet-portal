@@ -114,7 +114,13 @@ export function legacyToSearch(key: PortalVertical, t: LegacyTarget) {
  * 利用シーンは、転送先が こだわり(index しない絞り込み)なので、載せない。共通のサイトマップ自体は触らない(ほかの業種に影響しない)。
  * 探すの URL は、探すページ自身の canonical(種類 1 つ・県 1 つだけ)と同じ形。
  */
-export async function searchFormSitemap(key: PortalVertical, base: MetadataRoute.Sitemap, hrefOf: LegacyTarget["href"]): Promise<MetadataRoute.Sitemap> {
+export async function searchFormSitemap(
+  key: PortalVertical,
+  base: MetadataRoute.Sitemap,
+  hrefOf: LegacyTarget["href"],
+  /** 探すの種類が category でなく「組」のとき(くらし。lib/verticals/lifeKinds.ts)。組の slug を kind に、組に入る category の店を数える */
+  groups?: ReadonlyArray<{ slug: string; categories: readonly string[] }>,
+): Promise<MetadataRoute.Sitemap> {
   const v = getVertical(key);
   const all = await getPlaces(key);
   const old = new Set<string>();
@@ -132,9 +138,17 @@ export async function searchFormSitemap(key: PortalVertical, base: MetadataRoute
     if (isIndexable(count)) add.push(path);
   };
   for (const p of PREFECTURES) push(hrefOf({ pref: p.slug }), pick(all, { pref: p.slug }).length);
-  for (const c of v.categories) {
-    push(hrefOf({ kind: c.slug }), pick(all, { category: c.slug }).length);
-    for (const p of PREFECTURES) push(hrefOf({ kind: c.slug, pref: p.slug }), pick(all, { category: c.slug, pref: p.slug }).length);
+  if (groups) {
+    for (const g of groups) {
+      const inGroup = all.filter((x) => g.categories.includes(x.category));
+      push(hrefOf({ kind: g.slug }), inGroup.length);
+      for (const p of PREFECTURES) push(hrefOf({ kind: g.slug, pref: p.slug }), inGroup.filter((x) => x.pref === p.slug).length);
+    }
+  } else {
+    for (const c of v.categories) {
+      push(hrefOf({ kind: c.slug }), pick(all, { category: c.slug }).length);
+      for (const p of PREFECTURES) push(hrefOf({ kind: c.slug, pref: p.slug }), pick(all, { category: c.slug, pref: p.slug }).length);
+    }
   }
   // Next.js は <loc> を XML エスケープしないので、クエリの & は自分で &amp; にする(共通のサイトマップと同じ)
   const have = new Set(kept.map((r) => r.url));

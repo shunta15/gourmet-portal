@@ -16,6 +16,7 @@ import { prefOfGourmetRegion } from "@/lib/areas/gourmet";
 import { CUISINE_GROUPS } from "@/lib/cuisineGroups";
 import { getAllTowns } from "@/lib/db/towns";
 import { getStationIndex, placeCategoryName, placeHref, stationAliases, stationHref } from "@/lib/stations/query";
+import { LIFE_KIND_GROUPS } from "@/lib/verticals/lifeKinds";
 import { CATEGORY_KANA, CUISINE_KANA, PREF_KANA, VERTICAL_KANA } from "./readings";
 import { prepare, type Prepared, type RawItem, type SearchIndexJson } from "./searchCore";
 
@@ -43,6 +44,11 @@ async function build(): Promise<SearchIndexJson> {
         items.push(
           item(K.category, g.label, "グルメの業態", `/search?cuisine=${encodeURIComponent(g.label)}`, [CUISINE_KANA[g.label], ...g.keywords]),
         );
+      }
+    } else if (v.key === "life") {
+      // くらしの種類は、探すページの絞り込みと同じ 4 つの組(旧い種類のページは無い)
+      for (const g of LIFE_KIND_GROUPS) {
+        items.push(item(K.category, g.name, `${v.name}の種類`, `${v.path}/search?kind=${g.slug}`, [g.note, CATEGORY_KANA[`life/${g.slug}`]]));
       }
     } else {
       for (const c of v.categories) {
