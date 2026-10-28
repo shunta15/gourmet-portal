@@ -15496,6 +15496,103 @@ export const ARTICLE_STORES: Restaurant[] = [
       "天王寺区"
     ],
     "featureId": "コグマコーヒー"
+  },
+  {
+    "id": "r771",
+    "name": "雲仙湯せんぺい 遠江屋 (とおとうみや) 本舗",
+    "cuisine": "土産物店",
+    "area": "長崎県・雲仙市",
+    "region": "nagasaki",
+    "shape": "square",
+    "image": "/restaurants/teleapo-雲仙湯せんぺい遠江屋本舗/hero.jpg",
+    "heroImages": [
+      "/restaurants/teleapo-雲仙湯せんぺい遠江屋本舗/hero.jpg",
+      "/restaurants/teleapo-雲仙湯せんぺい遠江屋本舗/point1.jpg",
+      "/restaurants/teleapo-雲仙湯せんぺい遠江屋本舗/point2.jpg",
+      "/restaurants/teleapo-雲仙湯せんぺい遠江屋本舗/point3.jpg",
+      "/restaurants/teleapo-雲仙湯せんぺい遠江屋本舗/point4.jpg"
+    ],
+    "gallery": [
+      "/restaurants/teleapo-雲仙湯せんぺい遠江屋本舗/hero.jpg",
+      "/restaurants/teleapo-雲仙湯せんぺい遠江屋本舗/point1.jpg",
+      "/restaurants/teleapo-雲仙湯せんぺい遠江屋本舗/point2.jpg",
+      "/restaurants/teleapo-雲仙湯せんぺい遠江屋本舗/point3.jpg",
+      "/restaurants/teleapo-雲仙湯せんぺい遠江屋本舗/point4.jpg"
+    ],
+    "desc": "雲仙湯せんぺい 遠江屋(とおとうみや)本舗は、長崎県雲仙市小浜町雲仙317にある土産物店だ。明治初期に木賃宿として創業し、昭和20年代に土産品店を開業、ほどなく湯せんぺいの製造を始めた。",
+    "address": "長崎県雲仙市小浜町雲仙317",
+    "hours": "月〜水・金〜日 08:30–19:00",
+    "closed": "木曜日",
+    "seats": "—（訪問前に公式確認）",
+    "nearest": "—",
+    "phone": "0957-73-2155",
+    "source": {
+      "label": "Google ビジネスプロフィール",
+      "url": "https://maps.google.com/?cid=81602590403749157"
+    },
+    "body": [
+      "雲仙湯せんぺい 遠江屋 (とおとうみや) 本舗は、長崎県雲仙市にあるお店です。業態は「土産物店」、所在地は長崎県雲仙市小浜町雲仙317です。マチノワ編集部の特集記事では、「一丁型の金型で一枚ずつ焼く純一枚手焼き製法」・「湯せんぺいから温泉ゴーフレット、じゃが玉まで」などを取り上げています。",
+      "営業時間は月〜水・金〜日 08:30–19:00、定休日は木曜日です（Googleマップの営業時間による）。営業時間や価格は変わることがあるため、訪問前に公式サイトやSNS、お電話でご確認ください。"
+    ],
+    "highlights": [
+      "一丁型の金型で一枚ずつ焼く純一枚手焼き製法",
+      "湯せんぺいから温泉ゴーフレット、じゃが玉まで",
+      "明治初期の木賃宿から続く店の歴史",
+      "雲仙317の店と営業時間"
+    ],
+    "tags": [
+      "土産物店",
+      "雲仙市",
+      "ランチ"
+    ],
+    "featureId": "雲仙湯せんぺい遠江屋本舗"
+  },
+  {
+    "id": "r772",
+    "name": "野菜専門店 マルシェノグチ",
+    "cuisine": "青果卸売業者",
+    "area": "京都府・京都市中京区",
+    "region": "kyoto",
+    "shape": "square",
+    "image": "/restaurants/teleapo-マルシェノグチ/hero.jpg",
+    "heroImages": [
+      "/restaurants/teleapo-マルシェノグチ/hero.jpg",
+      "/restaurants/teleapo-マルシェノグチ/point1.jpg",
+      "/restaurants/teleapo-マルシェノグチ/point2.jpg",
+      "/restaurants/teleapo-マルシェノグチ/point3.jpg"
+    ],
+    "gallery": [
+      "/restaurants/teleapo-マルシェノグチ/hero.jpg",
+      "/restaurants/teleapo-マルシェノグチ/point1.jpg",
+      "/restaurants/teleapo-マルシェノグチ/point2.jpg",
+      "/restaurants/teleapo-マルシェノグチ/point3.jpg"
+    ],
+    "desc": "野菜専門店 マルシェノグチは、京都市中京区西ノ京職司町のIMPACT IKU 北1階にある。",
+    "address": "京都府京都市中京区西ノ京職司町69 IMPACT IKU 北 1F",
+    "hours": "月〜土 10:00–19:00",
+    "closed": "日曜日",
+    "seats": "—（訪問前に公式確認）",
+    "nearest": "—",
+    "phone": "075-432-7243",
+    "source": {
+      "label": "Google ビジネスプロフィール",
+      "url": "https://maps.google.com/?cid=6141782586603461053"
+    },
+    "body": [
+      "野菜専門店 マルシェノグチは、京都府京都市中京区にあるお店です。業態は「青果卸売業者」、所在地は京都府京都市中京区西ノ京職司町69 IMPACT IKU 北 1Fです。マチノワ編集部の特集記事では、「野菜を専門に扱う店」・「西ノ京職司町、IMPACT IKU 北の1階」などを取り上げています。",
+      "営業時間は月〜土 10:00–19:00、定休日は日曜日です（Googleマップの営業時間による）。営業時間や価格は変わることがあるため、訪問前に公式サイトやSNS、お電話でご確認ください。"
+    ],
+    "highlights": [
+      "野菜を専門に扱う店",
+      "西ノ京職司町、IMPACT IKU 北の1階",
+      "月曜から土曜の10時から19時"
+    ],
+    "tags": [
+      "青果卸売業者",
+      "中京区",
+      "ランチ"
+    ],
+    "featureId": "マルシェノグチ"
   }
 ];
 
@@ -15827,7 +15924,9 @@ export const ARTICLE_STORE_FEATURE_IDS: Record<string, string> = {
   "r767": "菓子HotsuHotsu",
   "r768": "DogCafeEightドッグカフェエイト",
   "r769": "餃子らーめん一丸本店",
-  "r770": "コグマコーヒー"
+  "r770": "コグマコーヒー",
+  "r771": "雲仙湯せんぺい遠江屋本舗",
+  "r772": "マルシェノグチ"
 };
 
 /** 特集記事ID → 店舗ID */
@@ -16158,5 +16257,7 @@ export const ARTICLE_STORE_ID_BY_FEATURE: Record<string, string> = {
   "菓子HotsuHotsu": "r767",
   "DogCafeEightドッグカフェエイト": "r768",
   "餃子らーめん一丸本店": "r769",
-  "コグマコーヒー": "r770"
+  "コグマコーヒー": "r770",
+  "雲仙湯せんぺい遠江屋本舗": "r771",
+  "マルシェノグチ": "r772"
 };

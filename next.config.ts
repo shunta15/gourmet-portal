@@ -45,6 +45,12 @@ const PORTAL_OFF_SOURCES = [
   "/_portal/:path*",
 ];
 
+/** くらしからグルメへ移した店(くらしの店 ID → グルメの店 ID。2026-10-28)。旧 URL の 301 に使う */
+const LIFE_TO_GOURMET: ReadonlyArray<readonly [string, string]> = [
+  ["li0046", "r771"], // 雲仙湯せんぺい 遠江屋本舗
+  ["li0053", "r772"], // 野菜専門店 マルシェノグチ
+];
+
 const nextConfig: NextConfig = {
   images: {
     remotePatterns: [
@@ -86,6 +92,14 @@ const nextConfig: NextConfig = {
             destination: `/restaurant/${sid}`,
             permanent: true,
           }))
+        : []),
+      // くらしからグルメへ移した 2 店(2026-10-28 オーナー決定)。旧 URL(/life/shop/<ID>・/life/article/<ID>)は、グルメの店ページ /restaurant/<店 ID> へ 301。
+      // 2 店とも限定公開(lib/unlisted.ts)のまま。移した先も限定公開なので、転送先もサイトのどこにも出ない。
+      ...(PORTAL_LIVE && NOREN_SHOP_REWRITE
+        ? LIFE_TO_GOURMET.flatMap(([lifeId, shopId]) => [
+            { source: `/life/shop/${lifeId}`, destination: `/restaurant/${shopId}`, statusCode: 301 },
+            { source: `/life/article/${lifeId}`, destination: `/restaurant/${shopId}`, statusCode: 301 },
+          ])
         : []),
       // 店舗紹介の一覧（/restaurant。2026-10-24 新設）の内部のパス /gourmet/restaurant も、直接開かれたら本物の URL へ（?page= もそのまま渡る）
       ...(PORTAL_LIVE && NOREN_SHOP_REWRITE ? [{ source: "/gourmet/restaurant", destination: "/restaurant", permanent: true }] : []),

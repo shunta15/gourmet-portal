@@ -1653,5 +1653,15 @@
     "articleId": "楽",
     "sheetName": "楽",
     "mapsUrl": "https://maps.google.com/?cid=1188632426218574658"
+  },
+  {
+    "articleId": "雲仙湯せんぺい遠江屋本舗",
+    "sheetName": "雲仙湯せんぺい 遠江屋本舗",
+    "mapsUrl": "https://maps.google.com/?cid=81602590403749157"
+  },
+  {
+    "articleId": "マルシェノグチ",
+    "sheetName": "マルシェノグチ",
+    "mapsUrl": "https://maps.google.com/?cid=6141782586603461053"
   }
 ]
