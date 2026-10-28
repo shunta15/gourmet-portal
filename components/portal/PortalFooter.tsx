@@ -10,7 +10,7 @@ const ORDER: VerticalKey[] = VERTICAL_ORDER; // 業種の表示順は lib/vertic
 /**
  * 総合サイト用フッター（サーバー）。グルメの既存フッター（components/Footer.tsx）とは別物。
  * 総合サイトの各レイアウト（app/{videos,beauty,…}/layout.tsx）と総合トップから出す。
- * リンクは業種・探し方（動画）・グルメを読む・マチノワについて。
+ * リンクは業種・探し方（動画）・グルメを読む。
  * （2026-10-28 旧サイトの 地図・駅・都道府県の街 /map /station /area を消したので、そのリンク・都道府県・駅エリアのブロックも外した）
  */
 export default function PortalFooter() {
@@ -43,11 +43,6 @@ export default function PortalFooter() {
               {!AREA_TO_SEARCH && <li><Link href={areaIndexHref()}>地域から探す</Link></li>}
               {!SCENE_TO_SEARCH && <li><Link href={sceneIndexHref()}>利用シーンから探す</Link></li>}
               <li><Link href="/search">店舗を探す</Link></li>
-            </ul>
-          </div>
-          <div className="mp-ft-col">
-            <h2>マチノワについて</h2>
-            <ul>
             </ul>
           </div>
         </div>

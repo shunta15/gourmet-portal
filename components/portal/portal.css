@@ -291,7 +291,7 @@
 
 /* ─────────── footer ─────────── */
 .mp-ft{background:var(--ink); color:var(--ivory); padding:clamp(72px,9vw,128px) 0 32px; overflow:hidden}
-.mp-ft-top{display:grid; grid-template-columns:1.2fr 1fr 1fr; gap:clamp(28px,4vw,64px); padding-bottom:clamp(44px,6vw,80px); border-bottom:1px solid rgba(244,239,230,.14)}
+.mp-ft-top{display:grid; grid-template-columns:1.2fr 1fr; gap:clamp(28px,4vw,64px); padding-bottom:clamp(44px,6vw,80px); border-bottom:1px solid rgba(244,239,230,.14)}
 .mp-ft-col h2{font:500 11px/1 var(--mono); letter-spacing:.28em; text-transform:uppercase; color:rgba(244,239,230,.5); margin-bottom:22px}
 .mp-ft-col ul{display:flex; flex-direction:column; gap:14px; font:400 14px/1.5 var(--sans)}
 .mp-ft-col h2.sub{margin-top:clamp(28px,3vw,40px)}
