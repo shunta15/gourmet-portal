@@ -12,7 +12,7 @@ const ListEntry = lazy(() => import("./ListEntry"));
 /**
  * 総合サイトの公開スイッチ（lib/portal/launch.ts）が ON のときだけ、ルートレイアウト（app/layout.tsx）が
  * 既存の components/SiteShell の代わりに出すシェル。
- *   - 総合サイト（/・/area/**・/station/**・/videos/**・/map・/find・新業種）: グルメのヘッダー・サイドラベル等は出さず、
+ *   - 総合サイト（/・/videos/**・/search・新業種）: グルメのヘッダー・サイドラベル等は出さず、
  *     子（各セグメントの PortalLayout。専用ヘッダー・フッター・<main>）だけを出す。
  *   - それ以外（グルメの既存ページ・/admin など）: 従来の SiteShell をそのまま出す。
  * OFF のあいだ、ルートレイアウトはこのファイルを描画しない。SiteShell は main から変えていない。

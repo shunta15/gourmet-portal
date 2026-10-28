@@ -5,11 +5,7 @@ import { NOREN_SEARCH_REWRITE } from "@/lib/portal/noren/rewrites";
  * 総合サイト用のヘッダー・フッターを出すパスかどうか。
  * - /（総合トップ）と /portal-home（総合トップの実体ルート。公開スイッチ ON のとき `/` は next.config.ts の rewrites でここに来る。
  *   プリレンダー済みの HTML は /portal-home のパスで作られるので、サーバー側の判定にも含める）
- * - /area/**（業種横断の街）
- * - /station/**（駅から探す。業種横断）
  * - /videos/**（動画で探す。業種横断）
- * - /map（地図で探す。業種横断）
- * - /find（サイト内検索の結果。業種横断）
  * - /list（候補リスト。店を保存して、URL で共有する。業種横断）
  * - /photos（写真から探す。業種横断）
  * - /gourmet と /gourmet/**（グルメのトップと、その配下の内部ルート。公開スイッチ ON のとき暖簾のデザイン。枠は app/gourmet/layout.tsx）
@@ -26,11 +22,7 @@ const NEW_VERTICAL_PATHS = ['/beauty', '/bodycare', '/pet', '/stay', '/activity'
 export function isPortalPath(pathname: string | null | undefined): boolean {
   if (!pathname) return false;
   if (pathname === '/' || pathname === '/portal-home') return true;
-  if (pathname === '/area' || pathname.startsWith('/area/')) return true;
-  if (pathname === '/station' || pathname.startsWith('/station/')) return true;
   if (pathname === '/videos' || pathname.startsWith('/videos/')) return true;
-  if (pathname === '/map') return true;
-  if (pathname === '/find') return true;
   if (pathname === '/list') return true;
   if (pathname === '/photos') return true;
   if (pathname === '/gourmet' || pathname.startsWith('/gourmet/')) return true; // グルメのトップと内部ルート（ON のとき暖簾の枠。グルメの共通ヘッダー（SiteShell）は出さない）

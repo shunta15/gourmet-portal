@@ -214,8 +214,8 @@ export function buildOrganizationJsonLd(): Record<string, unknown> {
 /* WebSite + SearchAction（Google のサイトリンク検索ボックス用）
  * 検索結果にサイト内検索ボックスが表示される可能性が生まれる。
  * /search?q=<語> がサイト内検索のエンドポイント。
- * 総合サイト公開（lib/portal/launch.ts が ON）のあいだは、業種をまたぐ検索の /find?q=<語> に向ける（app/layout.tsx が渡す）。 */
-export function buildWebSiteJsonLd(searchPath: "/search" | "/find" = "/search"): Record<string, unknown> {
+ * （総合サイト公開のあいだ /find に向けていた分岐は、/find を消した 2026-10-28 に外した。いまは常に /search） */
+export function buildWebSiteJsonLd(searchPath: "/search" = "/search"): Record<string, unknown> {
   return {
     "@context": "https://schema.org",
     "@type": "WebSite",

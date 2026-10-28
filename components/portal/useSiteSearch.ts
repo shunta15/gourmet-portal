@@ -2,8 +2,8 @@
 /**
  * 総合ヘッダーの検索（候補表示つきの combobox）の動き。
  * 候補データ /search-index.json は、検索欄に初めてフォーカスしたときに1回だけ取得する（@/lib/data はクライアントに入れない）。
- * 照合は lib/portal/searchCore.ts（サーバーの /find と同じ関数）。JS が無い・取得に失敗したときは、
- * 普通の GET フォーム（/find?q=）として動く。
+ * 照合は lib/portal/searchCore.ts。JS が無い・取得に失敗したときは、
+ * 普通の GET フォーム（/search?q=。グルメの「店をさがす」。2026-10-28 に旧 /find を消して移した）として動く。
  */
 import { useRouter } from "next/navigation";
 import { useCallback, useId, useMemo, useRef, useState, type KeyboardEvent } from "react";
@@ -38,7 +38,7 @@ export interface AllRow {
 export type Row = Candidate | AllRow;
 
 export function findHref(q: string): string {
-  return `/find?q=${encodeURIComponent(q.trim())}`;
+  return `/search?q=${encodeURIComponent(q.trim())}`;
 }
 
 export interface UseSiteSearch {
@@ -141,7 +141,7 @@ export function useSiteSearch(opts: { onNavigate?: () => void; onEscapeWhenClose
         e.preventDefault();
         go(rows[active]);
       }
-      // 選んでいなければ、フォームの送信（/find?q=）に任せる
+      // 選んでいなければ、フォームの送信（/search?q=）に任せる
     } else if (e.key === "Escape") {
       if (showList) {
         e.preventDefault();

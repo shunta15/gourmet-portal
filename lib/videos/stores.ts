@@ -17,7 +17,6 @@ import {
   placeCategoryName,
   placeHref,
   stationHeading,
-  stationHref,
 } from "@/lib/stations/query";
 
 export interface VideoStore {
@@ -34,7 +33,7 @@ export interface VideoStore {
   /** 店ページ。グルメは /restaurant/{id}、新業種は /{v}/shop/{id} */
   href: string;
   /** 最寄りの駅エリア（駅ページが実在するものだけ） */
-  station: { clusterId: string; heading: string; href: string } | null;
+  station: { clusterId: string; heading: string } | null;
   /** 電話・地図・予約・公式サイト・SNS のボタン（値がある項目だけ） */
   links: ShopLink[];
 }
@@ -114,7 +113,7 @@ export async function getVideoStores(ids: string[]): Promise<Map<string, VideoSt
       pref,
       prefShort: pref ? (getPrefBySlug(pref)?.short ?? null) : null,
       href: placeHref(vertical, place),
-      station: st ? { clusterId: st.id, heading: stationHeading(st), href: stationHref(st) } : null,
+      station: st ? { clusterId: st.id, heading: stationHeading(st) } : null,
       links: shopLinks({
         phone: place.phone,
         mapUrl: place.mapUrl ?? mapsSearchUrl(place.name, place.address),

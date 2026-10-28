@@ -123,10 +123,7 @@ function Entrances() {
         <Link href="/gourmet" prefetch={false} data-cursor="GOURMET">グルメを探す</Link>
       </li>
       <li>
-        <Link href="/station" prefetch={false} data-cursor="STATION">駅から探す</Link>
-      </li>
-      <li>
-        <Link href="/map" prefetch={false} data-cursor="MAP">地図で探す</Link>
+        <Link href="/search" prefetch={false} data-cursor="SEARCH">店舗を探す</Link>
       </li>
     </ul>
   );
