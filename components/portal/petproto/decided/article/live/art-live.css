@@ -1,0 +1,40 @@
+/* ペット 店の特集記事(本番 /pet/article/{店の ID})。【2026-10-28】ペットの特集の記事(../../special/special.css の psp-)と同じ作りで、写真・店の札・仕様の表だけを足す。接頭辞 pta-。色・書体は共通の --pt-*。 */
+
+.pta .pta-fig { margin: 0; border-radius: 10px; overflow: hidden; background: var(--pt-brown-bg); aspect-ratio: 16 / 9; }
+.pta .pta-fig img { display: block; width: 100%; height: 100%; object-fit: cover; }
+.pta .psp-sec .pta-fig { margin-top: 20px; }
+.pta .psp-body > .pta-fig { margin-bottom: 28px; }
+.pta .pta-lede { margin-bottom: 26px; }
+.pta .pta-lede .psp-p:first-child { margin-top: 0; }
+.pta .pta-sub { margin: 12px 0 0; font-size: 13px; line-height: 1.9; letter-spacing: 0.05em; color: var(--pt-mut); overflow-wrap: anywhere; }
+.pta .pta-specs { display: grid; gap: 0; margin: 18px 0 0; border-top: 1px solid var(--pt-line); }
+.pta .pta-specs > div { display: grid; grid-template-columns: 8em minmax(0, 1fr); gap: 4px 14px; padding: 10px 2px; border-bottom: 1px solid var(--pt-line); font-size: 14px; line-height: 1.8; letter-spacing: 0.03em; }
+.pta .pta-specs dt { font-weight: 700; color: var(--pt-brown-d); }
+.pta .pta-specs dd { margin: 0; color: #3a342e; overflow-wrap: anywhere; }
+.pta .pta-cite { display: block; margin-top: 8px; font-family: inherit; font-style: normal; font-size: 12.5px; letter-spacing: 0.06em; color: var(--pt-mut); }
+.pta .pta-menus { display: flex; flex-wrap: wrap; gap: 8px 10px; margin: 16px 0 0; }
+.pta .pta-menus li { padding: 4px 14px; border-radius: 999px; background: var(--pt-brown-bg); color: var(--pt-brown-d); font-size: 13.5px; line-height: 1.8; letter-spacing: 0.04em; }
+
+.pta .pta-shop-box { margin-top: 18px; padding: 20px 20px 18px; background: var(--pt-sec); border: 1px solid var(--pt-line); border-radius: 10px; }
+.pta .pta-shop-n { margin: 0; font-family: var(--pt-ff-min); font-weight: 700; font-size: 20px; line-height: 1.6; letter-spacing: 0.06em; color: #26221e; overflow-wrap: anywhere; }
+.pta .pta-shop-a { display: flex; flex-wrap: wrap; align-items: center; gap: 4px 10px; margin: 6px 0 0; font-size: 13.5px; line-height: 1.8; letter-spacing: 0.04em; color: var(--pt-ink2); overflow-wrap: anywhere; }
+.pta .pta-shop-btns { display: flex; flex-wrap: wrap; gap: 10px 12px; margin-top: 18px; }
+.pta .pta-src { margin-top: 20px; padding-top: 14px; border-top: 1px solid var(--pt-line); }
+.pta .pta-src .psp-stores-h { margin-bottom: 6px; }
+.pta .pta-src ul { display: flex; flex-wrap: wrap; gap: 2px 18px; }
+.pta .pta-src a { font-size: 13px; line-height: 2; letter-spacing: 0.03em; color: var(--pt-brown-d); text-decoration: underline; text-underline-offset: 3px; }
+.pta .pta-src-d { margin: 6px 0 0; font-size: 12.5px; letter-spacing: 0.06em; color: var(--pt-mut); }
+.pta .psp-card-t { font-size: 16px; }
+.pta .psp-meta span + span::before { content: none; }
+
+@media (min-width: 860px) {
+  .pta .pta-shop-box { padding: 26px 30px 22px; }
+  .pta .pta-shop-n { font-size: 22px; }
+  .pta .psp-card-t { font-size: 19px; }
+  .pta .pta-specs > div { font-size: 14.5px; }
+}
+@media (max-width: 859px) {
+  .pta .pta-specs > div { grid-template-columns: 1fr; gap: 0; }
+  .pta .pta-shop-btns .psp-btn { width: 100%; }
+}
+.pta .pta-sr, .pta .lsp-sr { position: absolute; width: 1px; height: 1px; margin: -1px; padding: 0; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; border: 0; }

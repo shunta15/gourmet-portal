@@ -252,3 +252,28 @@ export function japaneseDate(iso: string): string {
   const m = /^(\d{4})-(\d{2})-(\d{2})$/.exec(iso);
   return m ? `${m[1]}年${Number(m[2])}月${Number(m[3])}日` : iso;
 }
+
+/**
+ * この店に、店の特集記事のページ(/pet/article/{id})があるか。【2026-10-26 試作】
+ * 特集記事(story)がある店、または紹介記事の見出しつきの節が点検後に 2 つ以上残る店。節が 0〜1 つの店(記事が薄い店)は記事のページを作らず、店のページだけ。
+ */
+export const petHasArticle = (d: Pick<ShopDetail, "story" | "sections">): boolean => (d.story ? d.story.points.length >= 1 : d.sections.length >= 2);
+
+/** 記事の題(特集記事は特集の題。紹介記事は店の 1 行の説明。無ければ「店名の紹介記事」) */
+export const petArticleTitle = (d: Pick<ShopDetail, "story" | "headline" | "place">): string => d.story?.title || d.headline || `${d.place.name}の紹介記事`;
+
+export type PetArticleItem = { shop: PetShop; title: string; featured: boolean };
+
+/** 記事のページがある店の一覧(店 ID の順。限定公開の店は getPlaces が外す) */
+export async function loadPetArticleItems(): Promise<PetArticleItem[]> {
+  const places = await getPlaces("pet");
+  const out: PetArticleItem[] = [];
+  for (const p of places) {
+    const d = await loadPetShopDetail(p.id);
+    if (d && petHasArticle(d)) out.push({ shop: d.shop, title: petArticleTitle(d), featured: !!d.story });
+  }
+  return out.sort((a, b) => a.shop.id.localeCompare(b.shop.id));
+}
+
+/** 店の特集記事のページ(/pet/article/{id}。id = 店の ID) */
+export const articleHref = (id: string): string => `/pet/article/${encodeURIComponent(id)}`;

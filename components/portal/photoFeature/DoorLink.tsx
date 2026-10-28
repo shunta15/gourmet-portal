@@ -29,7 +29,7 @@ export default function DoorLink({ href, name }: { href: string; name: string })
           </b>
         ))}
       </span>
-      <span className="pf-door__t">店ページを見る →</span>
+      <span className="pf-door__t">店舗詳細を見る →</span>
     </a>
   );
 }

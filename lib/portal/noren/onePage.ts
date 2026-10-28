@@ -20,7 +20,10 @@ import { FEATURED_SINGLE_IDS } from "./featureSingle";
  * 記事 ID → 店 ID の対応は、既存の対応表 ARTICLE_STORE_ID_BY_FEATURE（lib/articleStores.ts）の対象ぶんの写し。ID の完全一致だけで引く（店名・題の部分一致は使わない）。
  * 既存の対応表と食い違わないことは、店ページ（app/gourmet/restaurant/[id]/page.tsx）が描くときに確かめる（食い違えば 1 ページ化せず、今までの店ページを出す）。
  */
-export const NOREN_ONE_PAGE = RELEASE_FEATURE;
+// 【2026-10-26 試作 proto/store-article-4v】オーナー決定「全業種を、店のページと店の特集記事が別ページの形に揃える」により、1 店 1 ページ(記事を店のページに入れる形)をやめる。
+// false にすると: /feature/<記事 ID> の 308 転送は出ない(記事のページに戻る)・/restaurant/<店 ID> は店のページ(対の記事があれば「特集記事を読む」で記事へ)・サイト内のリンクは /feature/<記事 ID>。
+// 表(ONE_PAGE_SHOP_OF_FEATURE)は「写真が主役の形で出す記事」の一覧として今も使う(isOnePageFeature)。
+export const NOREN_ONE_PAGE = false;
 
 /**
  * 特集記事の無い店（店 1 軒の記事の対を持たない店）の 1 ページ（2026-10-13。第 2 段）。切り替えは NOREN_ONE_PAGE と同じ RELEASE_FEATURE（false で全部が今までの店ページに戻る）。

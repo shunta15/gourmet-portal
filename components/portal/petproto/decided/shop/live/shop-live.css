@@ -421,3 +421,17 @@
   .lsp .lsp-mbar-b--sub { flex: 1; background: #fff; color: #3a342e; border: 1.3px solid #b9a58e; }
   .pt-shell:has(.lsp-mbar) .pt-foot { padding-bottom: 72px; }
 }
+
+/* 店の特集記事への入口(2026-10-26 試作。記事のある店だけ。本文は /pet/article/{id}) */
+.lsp .lsp-artlink-l { display: grid; gap: 4px; }
+.lsp .lsp-artlink-l li { display: flex; gap: 10px; color: #4a4640; }
+.lsp .lsp-artlink-l em { flex: none; font-style: normal; font-family: var(--pt-ff-en); color: #a59c8d; }
+@media (min-width: 860px) {
+  .lsp .lsp-artlink-l { margin-top: calc(12 * var(--u)); font-size: calc(8.6 * var(--u)); line-height: calc(15 * var(--u)); letter-spacing: 0.08em; }
+  .lsp .lsp-artlink-b { margin-top: calc(14 * var(--u)); min-width: calc(170 * var(--u)); height: calc(29 * var(--u)); padding: 0 calc(34 * var(--u)) 0 calc(20 * var(--u)); font-size: calc(8 * var(--u)); letter-spacing: 0.15em; }
+  .lsp .lsp-artlink-b svg { width: calc(8 * var(--u)); height: auto; right: calc(15 * var(--u)); }
+}
+@media (max-width: 859px) {
+  .lsp .lsp-artlink-l { margin-top: 12px; font-size: 13px; line-height: 1.8; }
+  .lsp .lsp-artlink-b { margin-top: 14px; }
+}

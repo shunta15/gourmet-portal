@@ -18,6 +18,7 @@ import Heart from "@/components/portal/bproto/colorplay/Heart";
 import JsonLd from "@/components/portal/JsonLd";
 import { IconChevron, IconPin } from "@/components/portal/bproto/colorplay/Icons";
 import { loadDetail } from "@/lib/portal/colorplay/data";
+import { articleHref, loadArticleItems } from "@/lib/portal/colorplay/articles";
 import { searchHref, shopHref } from "@/lib/portal/colorplay/search";
 import type { CpSite } from "@/lib/portal/colorplay/site";
 import { getCategory, getVertical } from "@/lib/verticals";
@@ -145,6 +146,11 @@ export async function buildShopModel(site: CpSite, id: string) {
     if (d.lede.length > 0) panels.push({ no: nn(), id: "about", heading: "紹介", body: d.lede });
     for (const sc of d.sections) panels.push({ no: nn(), id: panels.length === 0 ? "about" : undefined, heading: sc.heading, body: sc.body });
   }
+  // 【2026-10-26 試作】店のページと店の特集記事は別ページ。記事のある店は、店のページに紹介の最初の面だけを残し、残りの面・引用・結びは記事(/{v}/article/{id})だけに置く。
+  // 記事が薄い店(記事のページが無い店)は、今までどおり店のページに全部ある。
+  const hasArticlePage = (await loadArticleItems(site)).some((i) => i.id === s.id);
+  const moved = hasArticlePage ? panels.splice(1) : [];
+  const articleLink = hasArticlePage ? { href: articleHref(site, s.id), featured: !!d.story, heads: moved.map((x) => x.heading) } : null;
   const hasAbout = panels.length > 0;
   const tone = HERO_TONE[s.kind] ?? "red";
   const ink = tone === "pink" || tone === "sky" || tone === "blue";
@@ -162,9 +168,9 @@ export async function buildShopModel(site: CpSite, id: string) {
   const phoneLink = all.find((l) => l.kind === "phone");
   const ribA = rep([KIND_EN[s.kind] ?? s.kindName, "●", s.name, "●"]);
   const ribB = rep([`${s.prefName}${s.city ? ` ${s.city}` : ""}`, "●", "Machinowa Beauty", "●"]);
-  const hasQuote = !!(d.story && (d.story.quote || d.story.closing.length > 0));
+  const hasQuote = !hasArticlePage && !!(d.story && (d.story.quote || d.story.closing.length > 0));
 
-  return { site, d, p, s, v, cat, path, n, all, primary, ld, crumbLd, panels, hasAbout, tone, ink, cyc, bandOf, lastBand, menuBand, gallery, tabs, phoneLink, ribA, ribB, hasQuote, sameArea, sameKind };
+  return { site, d, p, s, v, cat, path, articleLink, hasArticlePage, n, all, primary, ld, crumbLd, panels, hasAbout, tone, ink, cyc, bandOf, lastBand, menuBand, gallery, tabs, phoneLink, ribA, ribB, hasQuote, sameArea, sameKind };
 }
 
 type M = NonNullable<Awaited<ReturnType<typeof buildShopModel>>>;
@@ -251,7 +257,7 @@ export function PanelList({ m, sp }: { m: M; sp?: string }) {
 
 export function QuoteSection({ m, sp = "e p" }: { m: M; sp?: string }) {
   const { d } = m;
-  if (!(d.story && (d.story.quote || d.story.closing.length > 0))) return null;
+  if (m.hasArticlePage || !(d.story && (d.story.quote || d.story.closing.length > 0))) return null;
   return (
     <section className="sh-sec bg-black sh-quote" data-sp={sp}>
       <div className="cp-wrap sh-sec-in">
@@ -259,6 +265,29 @@ export function QuoteSection({ m, sp = "e p" }: { m: M; sp?: string }) {
           <blockquote className="sh-bq"><p>{d.story.quote}</p>{d.story.quoteCite && <cite>{d.story.quoteCite}</cite>}</blockquote>
         )}
         {d.story.closing.map((t, i) => (<p key={i} className="sh-closing">{t}</p>))}
+      </div>
+    </section>
+  );
+}
+
+/** 店の特集記事への入口(記事のある店だけ。本文は /{v}/article/{id}。店のページには置かない) */
+export function ArticleLinkSection({ m }: { m: M }) {
+  const { articleLink: a, lastBand, menuBand, tone } = m;
+  if (!a) return null;
+  // 前の面・メニューの面・入口の色と重ならない色面
+  const band = ["pink", "blue", "red", "sky"].find((b) => b !== lastBand && b !== (m.d.menus.length > 0 ? menuBand : "") && b !== tone) ?? "pink";
+  return (
+    <section className={`sh-sec bg-${band} sh-artlink`} data-sp="e" aria-labelledby="sh-artlink-h">
+      <div className="cp-wrap sh-sec-in">
+        <h2 className="sh-h" id="sh-artlink-h">{a.featured ? "特集記事" : "紹介記事"}</h2>
+        {a.heads.length > 0 && (
+          <ol className="sh-artlink-l">
+            {a.heads.map((h, i) => (<li key={i}><span className="cp-cond">{String(i + 1).padStart(2, "0")}</span>{h}</li>))}
+          </ol>
+        )}
+        <div className="cp-cta">
+          <Link href={a.href} className="cp-red">特集記事を読む<svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" strokeWidth="2.4" strokeLinecap="round" strokeLinejoin="round"><path d="M5 12h14M13 6l6 6-6 6" /></svg></Link>
+        </div>
       </div>
     </section>
   );
