@@ -1,0 +1,80 @@
+{
+  "key": "tri-life-268",
+  "headline": "神奈川県横浜市港北区下田町にある曹洞宗の寺院。山号は下田山で、本尊は如意輪観音",
+  "lede": "横浜市にある「真福寺」です。曹洞宗の寺院で、山号は下田山といいます。本尊は如意輪観音です。",
+  "sections": [
+    {
+      "heading": "場所と宗派",
+      "body": "住所は神奈川県横浜市港北区下田町3-11-5、電話は045-561-4466です。曹洞宗の寺院で、山号は下田山といいます。"
+    },
+    {
+      "heading": "開山と本尊",
+      "body": "開山は杉窟悦で、慶長17年(1612年)に寂しています。本尊は如意輪観音です。"
+    },
+    {
+      "heading": "札所",
+      "body": "准秩父三十四観音霊場の1番・2番、都築橘樹酉年地蔵尊霊場11番の札所になっています。"
+    }
+  ],
+  "menus": [],
+  "tags": [],
+  "facts": [
+    {
+      "claim": "曹洞宗の寺院で、山号は下田山である",
+      "source": "https://www.tesshow.jp/yokohama/kohoku/temple_shimoda_shinpk.html",
+      "quote": "曹洞宗寺院の眞福寺は、下田山と号します。",
+      "checkedAt": "2026-10-28"
+    },
+    {
+      "claim": "開山は杉窟悦で、慶長17年(1612年)に寂している",
+      "source": "https://www.tesshow.jp/yokohama/kohoku/temple_shimoda_shinpk.html",
+      "quote": "杉窟悦（慶長17年1612年寂）が開山",
+      "checkedAt": "2026-10-28"
+    },
+    {
+      "claim": "本尊は如意輪観音である",
+      "source": "https://www.tesshow.jp/yokohama/kohoku/temple_shimoda_shinpk.html",
+      "quote": "本尊如意輪観音長八寸木の坐像なり、慈覚大師の作なりと云傳ふ",
+      "checkedAt": "2026-10-28"
+    },
+    {
+      "claim": "准秩父三十四観音霊場1番2番、都築橘樹酉年地蔵尊霊場11番の札所になっている",
+      "source": "https://www.tesshow.jp/yokohama/kohoku/temple_shimoda_shinpk.html",
+      "quote": "准秩父三十四観音霊場1番2番、都築橘樹酉年地蔵尊霊場11番",
+      "checkedAt": "2026-10-28"
+    },
+    {
+      "claim": "住所は神奈川県横浜市港北区下田町3-11-5",
+      "source": "https://maps.google.com/?cid=3261480737464518438",
+      "quote": "神奈川県横浜市港北区下田町３丁目１１−５",
+      "checkedAt": "2026-10-28"
+    },
+    {
+      "claim": "電話番号は045-561-4466",
+      "source": "https://maps.google.com/?cid=3261480737464518438",
+      "quote": "045-561-4466",
+      "checkedAt": "2026-10-28"
+    },
+    {
+      "claim": "業種の表示は仏教寺院",
+      "source": "https://maps.google.com/?cid=3261480737464518438",
+      "quote": "仏教寺院",
+      "checkedAt": "2026-10-28"
+    }
+  ],
+  "sources": [
+    {
+      "label": "寺院情報サイト",
+      "url": "https://www.tesshow.jp/yokohama/kohoku/temple_shimoda_shinpk.html"
+    },
+    {
+      "label": "曹洞宗寺院ポータル",
+      "url": "https://sotozen-navi.com/detail/index_140045.html"
+    },
+    {
+      "label": "Google マップ",
+      "url": "https://maps.google.com/?cid=3261480737464518438"
+    }
+  ],
+  "notes": "automation/v2/write.mjs が 2026-10-28 に claude -p --model sonnet で作成。事実の裏取り: 7/7 件(quote が出どころにあるもの)。裏取りに通らなかった facts は載せていない。"
+}

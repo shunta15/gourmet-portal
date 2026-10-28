@@ -1,0 +1,32 @@
+{
+  "tab": "トリニティアポ",
+  "tabEn": "tri-life",
+  "row": 266,
+  "sheet": {
+    "name": "阿弥陀寺",
+    "address": "",
+    "url": "https://www.google.com/maps/search/?api=1&query=%E9%98%BF%E5%BC%A5%E9%99%80%E5%AF%BA%20072-599-0358%20%E3%80%92594-1134%20%E5%A4%A7%E9%98%AA%E5%BA%9C%E5%92%8C%E6%B3%89%E5%B8%82%E5%A4%A7%E9%87%8E%E7%94%BA%EF%BC%91%EF%BC%91%EF%BC%98",
+    "type": "寺",
+    "d1": "",
+    "d2": ""
+  },
+  "urlKind": "mapsApi",
+  "route": "第1段(verify-gbp.mjs)で確認済み",
+  "verdict": "一致",
+  "verdictReason": "手がかり: 店名＋電話＋住所(番地まで)。電話が一致／店名: contains(シート「阿弥陀寺」/ マップ「大野山 阿弥陀寺」)／住所(シート): exact・町名・番地とも一致",
+  "place": {
+    "name": "大野山 阿弥陀寺",
+    "address": "大阪府和泉市大野町１１８",
+    "category": "仏教寺院",
+    "lat": 34.4055628,
+    "lng": 135.4740384,
+    "gbpUrl": "https://maps.google.com/?cid=13558991214093720280",
+    "phone": "0725-99-0358",
+    "website": "http://www.amidadera.or.jp/",
+    "hours": null,
+    "reserveLinks": [],
+    "statusSignals": [],
+    "closedSignal": false
+  },
+  "fetchedAt": "2026-10-28T08:46:30.201Z"
+}

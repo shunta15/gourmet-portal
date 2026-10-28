@@ -15496,6 +15496,146 @@ export const ARTICLE_STORES: Restaurant[] = [
       "天王寺区"
     ],
     "featureId": "コグマコーヒー"
+  },
+  {
+    "id": "r771",
+    "name": "洋食屋 自然",
+    "cuisine": "洋食レストラン",
+    "area": "愛媛県・松山市",
+    "region": "ehime",
+    "shape": "square",
+    "image": "/restaurants/teleapo-洋食屋自然/hero.jpg",
+    "heroImages": [
+      "/restaurants/teleapo-洋食屋自然/hero.jpg",
+      "/restaurants/teleapo-洋食屋自然/point1.jpg",
+      "/restaurants/teleapo-洋食屋自然/point2.jpg",
+      "/restaurants/teleapo-洋食屋自然/point3.jpg"
+    ],
+    "gallery": [
+      "/restaurants/teleapo-洋食屋自然/hero.jpg",
+      "/restaurants/teleapo-洋食屋自然/point1.jpg",
+      "/restaurants/teleapo-洋食屋自然/point2.jpg",
+      "/restaurants/teleapo-洋食屋自然/point3.jpg"
+    ],
+    "desc": "愛媛県松山市の洋食レストラン。",
+    "address": "愛媛県松山市味酒町3丁目2-5",
+    "hours": "—（訪問前に公式確認）",
+    "closed": "—（訪問前に公式確認）",
+    "seats": "—（訪問前に公式確認）",
+    "nearest": "—",
+    "phone": "089-910-3572",
+    "source": {
+      "label": "Google ビジネスプロフィール",
+      "url": "https://maps.google.com/?cid=1478968620605553804"
+    },
+    "body": [
+      "洋食屋 自然は、愛媛県松山市にあるお店です。業態は「洋食レストラン」、所在地は愛媛県松山市味酒町3丁目2-5です。マチノワ編集部の特集記事では、「伊予牛 絹の味を使った黒毛和牛ハンバーグステーキ」・「フランス料理で修業を重ねた店主が一人で営む店」などを取り上げています。",
+      "営業時間と定休日は取得できていないため、訪問前に公式の情報でご確認ください。営業時間や価格は変わることがあるため、訪問前に公式サイトやSNS、お電話でご確認ください。"
+    ],
+    "highlights": [
+      "伊予牛 絹の味を使った黒毛和牛ハンバーグステーキ",
+      "フランス料理で修業を重ねた店主が一人で営む店",
+      "牛ほほ肉のシチューや海老のクリームコロッケなどの洋食メニュー",
+      "ランチとディナーの営業時間"
+    ],
+    "tags": [
+      "洋食レストラン",
+      "松山市"
+    ],
+    "featureId": "洋食屋自然"
+  },
+  {
+    "id": "r772",
+    "name": "うなぎ処 高はし",
+    "cuisine": "うなぎ料理店",
+    "area": "北海道・函館市",
+    "region": "hokkaido",
+    "shape": "square",
+    "image": "/restaurants/teleapo-うなぎ処高はし/hero.jpg",
+    "heroImages": [
+      "/restaurants/teleapo-うなぎ処高はし/hero.jpg",
+      "/restaurants/teleapo-うなぎ処高はし/point1.jpg",
+      "/restaurants/teleapo-うなぎ処高はし/point2.jpg",
+      "/restaurants/teleapo-うなぎ処高はし/point3.jpg"
+    ],
+    "gallery": [
+      "/restaurants/teleapo-うなぎ処高はし/hero.jpg",
+      "/restaurants/teleapo-うなぎ処高はし/point1.jpg",
+      "/restaurants/teleapo-うなぎ処高はし/point2.jpg",
+      "/restaurants/teleapo-うなぎ処高はし/point3.jpg"
+    ],
+    "desc": "北海道函館市のうなぎ料理店。",
+    "address": "北海道函館市五稜郭町24-6",
+    "hours": "—（訪問前に公式確認）",
+    "closed": "—（訪問前に公式確認）",
+    "seats": "—（訪問前に公式確認）",
+    "nearest": "—",
+    "phone": "0138-56-0810",
+    "source": {
+      "label": "Google ビジネスプロフィール",
+      "url": "https://maps.google.com/?cid=14172638930983865966"
+    },
+    "body": [
+      "うなぎ処 高はしは、北海道函館市にあるお店です。業態は「うなぎ料理店」、所在地は北海道函館市五稜郭町24-6です。マチノワ編集部の特集記事では、「うなぎ料理を提供する店」・「五稜郭公園・中央図書館そばの立地」などを取り上げています。",
+      "営業時間と定休日は取得できていないため、訪問前に公式の情報でご確認ください。営業時間や価格は変わることがあるため、訪問前に公式サイトやSNS、お電話でご確認ください。"
+    ],
+    "highlights": [
+      "うなぎ料理を提供する店",
+      "五稜郭公園・中央図書館そばの立地",
+      "ランチとディナーの営業時間"
+    ],
+    "tags": [
+      "うなぎ料理店",
+      "函館市"
+    ],
+    "featureId": "うなぎ処高はし"
+  },
+  {
+    "id": "r773",
+    "name": "海が見えるそば家",
+    "cuisine": "麺類専門店",
+    "area": "沖縄県・中頭郡嘉手納町",
+    "region": "okinawa",
+    "shape": "square",
+    "image": "/restaurants/teleapo-海が見えるそば家/hero.jpg",
+    "heroImages": [
+      "/restaurants/teleapo-海が見えるそば家/hero.jpg",
+      "/restaurants/teleapo-海が見えるそば家/point1.jpg",
+      "/restaurants/teleapo-海が見えるそば家/point2.jpg",
+      "/restaurants/teleapo-海が見えるそば家/point4.jpg"
+    ],
+    "gallery": [
+      "/restaurants/teleapo-海が見えるそば家/hero.jpg",
+      "/restaurants/teleapo-海が見えるそば家/point1.jpg",
+      "/restaurants/teleapo-海が見えるそば家/point2.jpg",
+      "/restaurants/teleapo-海が見えるそば家/point4.jpg"
+    ],
+    "desc": "沖縄県中頭郡嘉手納町の麺類専門店。",
+    "address": "沖縄県中頭郡嘉手納町水釜6丁目25-13",
+    "hours": "—（訪問前に公式確認）",
+    "closed": "—（訪問前に公式確認）",
+    "seats": "—（訪問前に公式確認）",
+    "nearest": "—",
+    "phone": "098-956-0940",
+    "source": {
+      "label": "Google ビジネスプロフィール",
+      "url": "https://maps.google.com/?cid=3987719736517620396"
+    },
+    "body": [
+      "海が見えるそば家は、沖縄県中頭郡嘉手納町にあるお店です。業態は「麺類専門店」、所在地は沖縄県中頭郡嘉手納町水釜6丁目25-13です。マチノワ編集部の特集記事では、「豚骨とカツオ節、10時間以上かけただし汁」・「三枚肉からてびちまで、沖縄そばの種類」などを取り上げています。",
+      "営業時間と定休日は取得できていないため、訪問前に公式の情報でご確認ください。営業時間や価格は変わることがあるため、訪問前に公式サイトやSNS、お電話でご確認ください。"
+    ],
+    "highlights": [
+      "豚骨とカツオ節、10時間以上かけただし汁",
+      "三枚肉からてびちまで、沖縄そばの種類",
+      "ジューシーやぜんざいなど麺以外のメニュー",
+      "火・水・土・日に営業する水釜の一軒"
+    ],
+    "tags": [
+      "麺類専門店",
+      "嘉手納町"
+    ],
+    "featureId": "海が見えるそば家"
   }
 ];
 
@@ -15827,7 +15967,10 @@ export const ARTICLE_STORE_FEATURE_IDS: Record<string, string> = {
   "r767": "菓子HotsuHotsu",
   "r768": "DogCafeEightドッグカフェエイト",
   "r769": "餃子らーめん一丸本店",
-  "r770": "コグマコーヒー"
+  "r770": "コグマコーヒー",
+  "r771": "洋食屋自然",
+  "r772": "うなぎ処高はし",
+  "r773": "海が見えるそば家"
 };
 
 /** 特集記事ID → 店舗ID */
@@ -16158,5 +16301,8 @@ export const ARTICLE_STORE_ID_BY_FEATURE: Record<string, string> = {
   "菓子HotsuHotsu": "r767",
   "DogCafeEightドッグカフェエイト": "r768",
   "餃子らーめん一丸本店": "r769",
-  "コグマコーヒー": "r770"
+  "コグマコーヒー": "r770",
+  "洋食屋自然": "r771",
+  "うなぎ処高はし": "r772",
+  "海が見えるそば家": "r773"
 };

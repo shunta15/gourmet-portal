@@ -1,0 +1,459 @@
+{
+  "key": "tri-activity-272",
+  "vertical": "activity",
+  "storeName": "屋久島ダイビングガイド夢心地",
+  "article": {
+    "id": "屋久島ダイビングガイド夢心地",
+    "no": "",
+    "articleType": "guide",
+    "kicker": "YUME-DIVING YAKUSHIMA KOSEDA",
+    "title": "鹿児島県屋久島町小瀬田の、ダイビング初心者専門店。体験ダイビングのコース設計と集合場所、注意事項",
+    "titleHTML": "鹿児島県屋久島町のダイビング初心者専門店<br><em>屋久島ダイビングガイド夢心地</em>の体験ダイビングと集合場所",
+    "subtitle": "ダイビングショップ / 鹿児島県熊毛郡屋久島町 / 体験ダイビング・ファンダイビング・シュノーケリング",
+    "lede": "屋久島ダイビングガイド夢心地は、鹿児島県熊毛郡屋久島町小瀬田にあるダイビングショップだ。2013年に開業し、2025年に屋久島で唯一のダイビング初心者専門店としてリニューアルした。体験ダイビングはライセンス不要で、スタンダードコースとプレミアムコースの2つに分けて設計されている。",
+    "date": "2026-10-28",
+    "reading": "",
+    "author": "マチノワ編集部",
+    "heroImage": "/_portal/vshops/tri-activity-272/g10.jpg",
+    "ogImage": "/_portal/vshops/tri-activity-272/g10.jpg",
+    "ranking": [
+      {
+        "rank": "POINT 01",
+        "rankNum": 1,
+        "name": "体験ダイビングの2コース、スタンダードとプレミアム",
+        "cuisine": "体験ダイビング",
+        "area": "屋久島町",
+        "purpose": "どのコースを選べばいいか知りたい人へ",
+        "desc": "体験ダイビングはライセンスが不要で、スタンダードコースとプレミアムコースの2つに分けて設計されている。スタンダードコースは一般的な体験ダイビングと同じ練習内容で進み、プレミアムコースは練習時間を無制限にしているのが特徴だ。インストラクター1名につき最大4名までの少人数制で開催し、通常の参加条件は13歳から54歳までとなっている。8歳から12歳、55歳以上の方が参加する場合は、安全管理上の追加条件がある。参加前には、メディカルチェックシートで参加者全員分の健康確認が必要になる。",
+        "images": [
+          "/_portal/vshops/tri-activity-272/g01.jpg"
+        ],
+        "specs": [
+          {
+            "k": "参加条件",
+            "v": "13歳〜54歳(通常)。8〜12歳・55歳以上は追加条件あり"
+          },
+          {
+            "k": "体制",
+            "v": "インストラクター1名につき最大4名の少人数制"
+          }
+        ]
+      },
+      {
+        "rank": "POINT 02",
+        "rankNum": 2,
+        "name": "ファンダイビングとシュノーケリング、専用施設",
+        "cuisine": "ファンダイビング",
+        "area": "屋久島町",
+        "purpose": "ライセンス保持者の潜り方と施設を知りたい人へ",
+        "desc": "ファンダイビングは、Cカードとログブックを保持する10歳以上の方が対象になる。シュノーケリングはライセンスが不要だ。オーナー兼インストラクターの川原が一人でガイドを担当している。2018年から一湊エリアに夢心地専用の施設を構え、古民家を改装した畳の休憩室とフローリングの更衣室を用意している。施設には温水のシャワーと駐車場も備えており、器材のフルレンタルセットにはマスク・シュノーケル・フィン・グローブ・ウエットスーツなどが含まれる。",
+        "images": [
+          "/_portal/vshops/tri-activity-272/s09.jpg"
+        ],
+        "specs": [
+          {
+            "k": "ファンダイビング対象",
+            "v": "Cカード・ログブック保持者(10歳以上)"
+          },
+          {
+            "k": "専用施設",
+            "v": "一湊エリア・畳の休憩室・更衣室・温水シャワー・駐車場(2018年〜)"
+          }
+        ]
+      },
+      {
+        "rank": "POINT 03",
+        "rankNum": 3,
+        "name": "集合場所と屋久島へのアクセス",
+        "cuisine": "アクセス",
+        "area": "屋久島町",
+        "purpose": "集合場所までの行き方を知りたい人へ",
+        "desc": "現地集合の場所は一湊海水浴場だ。宮之浦から車で15分、小瀬田から30分、安房から40分が目安になる。送迎はエリアを限定して対応している。屋久島へは伊丹空港から屋久島空港への直行便が1日1往復あるほか、鹿児島空港を経由して、鹿児島港発の高速船やフェリーで屋久島に渡る方法もある。高速船は便によって宮之浦港着と安房港着に分かれている。",
+        "images": [
+          "/_portal/vshops/tri-activity-272/s06.jpg"
+        ],
+        "specs": [
+          {
+            "k": "集合場所",
+            "v": "一湊海水浴場(宮之浦から車で15分)"
+          },
+          {
+            "k": "屋久島への便",
+            "v": "伊丹空港から直行便/鹿児島経由で高速船・フェリー"
+          }
+        ]
+      },
+      {
+        "rank": "POINT 04",
+        "rankNum": 4,
+        "name": "参加後の制限とキャンセルの決まり",
+        "cuisine": "注意事項",
+        "area": "屋久島町",
+        "purpose": "予約前に知っておきたい決まりを知りたい人へ",
+        "desc": "ダイビング終了後は一定時間、飛行機搭乗や高所への移動ができない。体験ダイビングの場合は終了後約12時間、ファンダイビングは12〜18時間以内の飛行機搭乗・高所移動は避けるよう案内している。予約は開催日の3日前までが公式WEB予約フォームの受付となる。",
+        "images": [
+          "/_portal/vshops/tri-activity-272/s10.jpg"
+        ],
+        "specs": [
+          {
+            "k": "飛行機搭乗の制限",
+            "v": "体験ダイビング後は約12時間、ファンダイビング後は12〜18時間"
+          }
+        ]
+      }
+    ],
+    "sideArticles": [],
+    "quote": "体験ダイビングはライセンス不要で、スタンダードコースとプレミアムコースの2つに分けて設計されている。少人数制で、参加条件や健康チェックなど安全面の決まりも定められている。集合場所は一湊海水浴場で、屋久島へは飛行機や高速船、フェリーでアクセスできる。",
+    "quoteCite": "マチノワ編集部",
+    "closing": "予約は開催日の3日前まで、公式WEB予約フォームで受け付けている。ダイビング終了後は、体験ダイビングで約12時間、ファンダイビングで12〜18時間、飛行機搭乗や高所への移動を避ける必要がある。現地集合の場所は一湊海水浴場で、送迎はエリアを限定して対応している。"
+  },
+  "summary": "屋久島ダイビングガイド夢心地の情報を整理。体験ダイビングの2つのコース、参加条件と少人数制、ファンダイビングと専用施設、集合場所とアクセスをまとめた特集。",
+  "tags": [
+    "海・川",
+    "熊毛郡屋久島町"
+  ],
+  "charCount": 1141,
+  "facts": [
+    {
+      "claim": "2013年に屋久島でダイビングショップとして開業した",
+      "source": "https://www.yume-diving.com/",
+      "quote": "2013年に屋久島でダイビングショップをオープンし",
+      "checkedAt": "2026-10-28"
+    },
+    {
+      "claim": "2025年に屋久島で唯一のダイビング初心者専門店としてリニューアルした",
+      "source": "https://www.yume-diving.com/",
+      "quote": "屋久島で唯一の【ダイビング初心者専門店『夢心地』】",
+      "checkedAt": "2026-10-28"
+    },
+    {
+      "claim": "体験ダイビングはライセンスが不要",
+      "source": "https://www.yume-diving.com/course/",
+      "quote": "体験ダイビング （ライセンス必要無し）",
+      "checkedAt": "2026-10-28"
+    },
+    {
+      "claim": "ファンダイビングはライセンスが必要",
+      "source": "https://www.yume-diving.com/course/",
+      "quote": "ファンダイビング （ライセンス必要）",
+      "checkedAt": "2026-10-28"
+    },
+    {
+      "claim": "シュノーケリングはライセンスが不要",
+      "source": "https://www.yume-diving.com/course/",
+      "quote": "シュノーケリング （ライセンス必要無し）",
+      "checkedAt": "2026-10-28"
+    },
+    {
+      "claim": "体験ダイビングはスタンダードコースとプレミアムコースの2つに分けて設計されている",
+      "source": "https://www.yume-diving.com/course/taiken-diving.html",
+      "quote": "2つのコースに分けて設計",
+      "checkedAt": "2026-10-28"
+    },
+    {
+      "claim": "スタンダードコースは一般的な体験ダイビングと同じ練習内容で進む",
+      "source": "https://www.yume-diving.com/course/taiken-diving.html",
+      "quote": "一般的な体験ダイビングと同じ、シンプルな練習内容",
+      "checkedAt": "2026-10-28"
+    },
+    {
+      "claim": "プレミアムコースは練習時間を無制限にしている",
+      "source": "https://www.yume-diving.com/course/taiken-diving.html",
+      "quote": "夢心地のプレミアムコースは、すべて練習時間無制限です",
+      "checkedAt": "2026-10-28"
+    },
+    {
+      "claim": "インストラクター1名につき最大4名までの少人数制",
+      "source": "https://www.yume-diving.com/course/taiken-diving.html",
+      "quote": "インストラクター1名につき最大4名までの少人数制",
+      "checkedAt": "2026-10-28"
+    },
+    {
+      "claim": "通常の参加条件は13歳から54歳まで",
+      "source": "https://www.yume-diving.com/course/taiken-diving.html",
+      "quote": "13歳〜54歳までの方：通常条件でご参加いただけます",
+      "checkedAt": "2026-10-28"
+    },
+    {
+      "claim": "8歳から12歳、55歳以上の方は安全管理上の追加条件がある",
+      "source": "https://www.yume-diving.com/course/taiken-diving.html",
+      "quote": "8歳〜12歳、55歳以上の方：安全管理上",
+      "checkedAt": "2026-10-28"
+    },
+    {
+      "claim": "参加前にメディカルチェックシートで参加者全員分の健康確認を行う",
+      "source": "https://www.yume-diving.com/course/taiken-diving.html",
+      "quote": "参加者全員分の健康確認が必要です",
+      "checkedAt": "2026-10-28"
+    },
+    {
+      "claim": "ファンダイビングはCカードとログブックを保持する10歳以上の方が対象",
+      "source": "https://www.yume-diving.com/course/fun-diving.html",
+      "quote": "Cカード＆ログブック保持者（10歳以上）",
+      "checkedAt": "2026-10-28"
+    },
+    {
+      "claim": "オーナー兼インストラクターの川原が一人でガイドを担当している",
+      "source": "https://www.yume-diving.com/course/fun-diving.html",
+      "quote": "オーナー兼インストラクターの私（川原）が一人で",
+      "checkedAt": "2026-10-28"
+    },
+    {
+      "claim": "2018年から一湊エリアに夢心地専用の施設を構えている",
+      "source": "https://www.yume-diving.com/course/fun-diving.html",
+      "quote": "一湊（いっそう）エリアに夢心地専用の施設を構えました",
+      "checkedAt": "2026-10-28"
+    },
+    {
+      "claim": "専用施設は古民家を改装し、畳の休憩室とフローリングの更衣室がある",
+      "source": "https://www.yume-diving.com/course/fun-diving.html",
+      "quote": "古民家を改装し、畳の休憩室やフローリングで新しい更衣室",
+      "checkedAt": "2026-10-28"
+    },
+    {
+      "claim": "施設には温水シャワーと駐車場がある",
+      "source": "https://www.yume-diving.com/course/fun-diving.html",
+      "quote": "温水のシャワーもございます。駐車場も完備している",
+      "checkedAt": "2026-10-28"
+    },
+    {
+      "claim": "器材のフルレンタルセットにはマスク・シュノーケル・フィン・グローブ・ウエットスーツなどが含まれる",
+      "source": "https://www.yume-diving.com/course/",
+      "quote": "マスク・シュノーケル・フィン・グローブ・ウエットスーツ",
+      "checkedAt": "2026-10-28"
+    },
+    {
+      "claim": "現地集合の場所は一湊海水浴場",
+      "source": "https://www.yume-diving.com/access/",
+      "quote": "通常『一湊海水浴場駐車場』となります",
+      "checkedAt": "2026-10-28"
+    },
+    {
+      "claim": "宮之浦から一湊海水浴場まで車で15分",
+      "source": "https://www.yume-diving.com/access/",
+      "quote": "宮之浦(みやのうら) 一湊海水浴場（車で15分）",
+      "checkedAt": "2026-10-28"
+    },
+    {
+      "claim": "小瀬田から一湊海水浴場まで車で30分",
+      "source": "https://www.yume-diving.com/access/",
+      "quote": "小瀬田(こせだ) 一湊海水浴場（車で30分）",
+      "checkedAt": "2026-10-28"
+    },
+    {
+      "claim": "安房から一湊海水浴場まで車で40分",
+      "source": "https://www.yume-diving.com/access/",
+      "quote": "安房(あんぼう) 一湊海水浴場（車で40分）",
+      "checkedAt": "2026-10-28"
+    },
+    {
+      "claim": "送迎はエリアを限定して対応している",
+      "source": "https://www.yume-diving.com/course/",
+      "quote": "送迎に関しましてはエリア限定にて対応させて頂いております",
+      "checkedAt": "2026-10-28"
+    },
+    {
+      "claim": "屋久島空港への直行便は伊丹空港から1日1往復ある",
+      "source": "https://www.yume-diving.com/access/",
+      "quote": "大阪(伊丹空港) 屋久島空港(1日1往復便のみ)",
+      "checkedAt": "2026-10-28"
+    },
+    {
+      "claim": "鹿児島港から屋久島まで高速船の便がある",
+      "source": "https://www.yume-diving.com/access/",
+      "quote": "種子屋久高速船株式会社 鹿児島港発の高速船です",
+      "checkedAt": "2026-10-28"
+    },
+    {
+      "claim": "高速船は宮之浦港着と安房港着の便がある",
+      "source": "https://www.yume-diving.com/access/",
+      "quote": "宮之浦港着と安房港着の便が分かれています",
+      "checkedAt": "2026-10-28"
+    },
+    {
+      "claim": "ファンダイビング後は終了後12〜18時間以内の飛行機搭乗・高所移動は禁止されている",
+      "source": "https://www.yume-diving.com/course/",
+      "quote": "ダイビング終了後12~18時間以内の飛行機搭乗",
+      "checkedAt": "2026-10-28"
+    },
+    {
+      "claim": "体験ダイビングの場合は終了後約12時間以内は飛行機搭乗・高所移動を避ける",
+      "source": "https://www.yume-diving.com/course/",
+      "quote": "体験ダイビングの場合、約12時間以内は飛行機搭乗",
+      "checkedAt": "2026-10-28"
+    },
+    {
+      "claim": "予約のキャンセルは15日前までは料金がかからない",
+      "source": "https://www.yume-diving.com/course/",
+      "quote": "15日前まではキャンセル料はいただきません",
+      "checkedAt": "2026-10-28"
+    },
+    {
+      "claim": "予約は開催日の3日前まで公式WEB予約フォームで受け付ける",
+      "source": "https://www.yume-diving.com/course/taiken-diving.html",
+      "quote": "開催日の3日前まで：公式WEB予約フォームより受付",
+      "checkedAt": "2026-10-28"
+    },
+    {
+      "claim": "屋久島観光協会の会員",
+      "source": "https://www.yume-diving.com/",
+      "quote": "【屋久島観光協会会員】",
+      "checkedAt": "2026-10-28"
+    },
+    {
+      "claim": "代表は川原知己",
+      "source": "https://www.yume-diving.com/",
+      "quote": "代表 川原知己",
+      "checkedAt": "2026-10-28"
+    },
+    {
+      "claim": "2025年にリニューアルした",
+      "source": "https://www.yume-diving.com/",
+      "quote": "2025年は、",
+      "checkedAt": "2026-10-28"
+    }
+  ],
+  "images": [
+    {
+      "path": "/_portal/vshops/tri-activity-272/g01.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9SMQ6UjmquFpQGtX4DzXXg19Hc_D3TGFWZd__YBFBI6nRKdNsNGG3UbXdAi4Xt5KQLrXy6mSk1B7Ud4NcQTkiA92SM5oLJajhO4wIQkJEmkfo8klmoILnmFUwRueGCBicEJ90D_fmFMe0U=s1200",
+      "pageUrl": "https://maps.google.com/?cid=13345568394843079450",
+      "what": "サンゴの上を泳ぐ2人のダイバー"
+    },
+    {
+      "path": "/_portal/vshops/tri-activity-272/g04.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9SwOES_Jn30vA9Dasq3LAWIYCMlwJ9t3K_juEV_znoNMZ3zag4p9DnYdwWcYL85gwl0vc_gIiGbil6qfxbUBOkhV08BT85MSzhost3Mq-gX9NBIWXboRwsuti3rKvy9SXlhWaGR=s1200",
+      "pageUrl": "https://maps.google.com/?cid=13345568394843079450",
+      "what": "サンゴの上を泳ぐウミガメ"
+    },
+    {
+      "path": "/_portal/vshops/tri-activity-272/g05.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9SMOxC6WYicZ6bWgXQXWBTJHsLJfPD7JZ4TI6xJgI9E6U_Zk5ZsHJ9iUCSz0EBH9F-lxuC4z3d8CkOxx8woTbp6h9gIs6dBHrDJbh3PvS1xv8uhK6doY3W62tOuAi_KF6B5f81YAM2n_E1L=s1200",
+      "pageUrl": "https://maps.google.com/?cid=13345568394843079450",
+      "what": "サンゴ礁を群れで泳ぐ魚"
+    },
+    {
+      "path": "/_portal/vshops/tri-activity-272/g06.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9Ter0LHcpNVPHagMdFbUotwVPEAyt8rWvbDPgYxNigGuN64lYLWyVQCmVD3F-OQHfpKKFWHyAD3yoeBVJboW-Qi_UlKn7pODn1s6jsApCHJzSi7e4iEKiM0ZZl-44FtC7BJRzudxRHe0HwN=s1200",
+      "pageUrl": "https://maps.google.com/?cid=13345568394843079450",
+      "what": "サンゴのそばを泳ぐ魚"
+    },
+    {
+      "path": "/_portal/vshops/tri-activity-272/g07.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9RUGvsD5x9l9fgn7UeiCuKnXEHnX8UQytPeBdfEwgyH86gPDwlO5AsrOTFoVvM1RZAjvubM8XdaG93kVrynW4sCzKotYe6xqMEiSiXyHoRMNcn3c88C-beZaWoiagcg78onyPsZ=s1200",
+      "pageUrl": "https://maps.google.com/?cid=13345568394843079450",
+      "what": "イソギンチャクとクマノミ"
+    },
+    {
+      "path": "/_portal/vshops/tri-activity-272/g08.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9SMGA9SmE2Q3jcBfruwjdhKN79PMtckUTE2P1qM1Qx9-GGH1uF_ILqD8CCNtsG3SBXszudLHz6PQzfhVbH0tVfbmy3ZfIy02GAQ7VkEKB-srjZgtTXmH3Wm9zbhttg_7VKjpEBkiY8xNVQr=s1200",
+      "pageUrl": "https://maps.google.com/?cid=13345568394843079450",
+      "what": "海草の中を泳ぐウミガメとダイバー"
+    },
+    {
+      "path": "/_portal/vshops/tri-activity-272/g09.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9RSmI_0-iogmpWxjTxi5zF7pz8Jw411s1BUVBIoA8WfiIY1Ej4ww13PQVJkDTwcaJRtExrEKGsrJL9BQZgNgC4bgox-5hGBgpei7wCtJufhHD6KhmkCiL7R_F04nMmAFz_Jk4ymfKSgm0_z=s1200",
+      "pageUrl": "https://maps.google.com/?cid=13345568394843079450",
+      "what": "水面に向かって泳ぐウミガメ"
+    },
+    {
+      "path": "/_portal/vshops/tri-activity-272/g10.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9RUncdaywyV_gZfFLuXPkb6KvfZqRpt0RKJ3CEkVFUvqcP5nzUuObE6S5Dr_OftkWmSdhu_4qDBXz8BGD-w7qP0RCbiIxp6JkCSbwtI3u1TmeaSC6IlibJ49VcFNfdKhqG2MjTiCRixYI5r=s1200",
+      "pageUrl": "https://maps.google.com/?cid=13345568394843079450",
+      "what": "日差しの差す海でウミガメと泳ぐダイバー"
+    },
+    {
+      "path": "/_portal/vshops/tri-activity-272/s01.jpg",
+      "imageUrl": "https://www.yume-diving.com/images/index-slide10.jpg",
+      "pageUrl": "https://www.yume-diving.com/",
+      "what": "海中を泳ぐウミガメ"
+    },
+    {
+      "path": "/_portal/vshops/tri-activity-272/s02.jpg",
+      "imageUrl": "https://www.yume-diving.com/images/index-slide11.jpg",
+      "pageUrl": "https://www.yume-diving.com/",
+      "what": "イカと泳ぐダイバー"
+    },
+    {
+      "path": "/_portal/vshops/tri-activity-272/s03.jpg",
+      "imageUrl": "https://www.yume-diving.com/images/index-slide12.jpg",
+      "pageUrl": "https://www.yume-diving.com/",
+      "what": "サンゴ礁を群れで泳ぐ魚"
+    },
+    {
+      "path": "/_portal/vshops/tri-activity-272/s04.jpg",
+      "imageUrl": "https://www.yume-diving.com/images/index-slide13.jpg",
+      "pageUrl": "https://www.yume-diving.com/",
+      "what": "差し込む光の中のクラゲ"
+    },
+    {
+      "path": "/_portal/vshops/tri-activity-272/s05.jpg",
+      "imageUrl": "https://www.yume-diving.com/images/index-slide14.jpg",
+      "pageUrl": "https://www.yume-diving.com/",
+      "what": "サンゴの上を泳ぐウミガメ"
+    },
+    {
+      "path": "/_portal/vshops/tri-activity-272/s06.jpg",
+      "imageUrl": "https://www.yume-diving.com/images/index-slide20.jpg",
+      "pageUrl": "https://www.yume-diving.com/",
+      "what": "ウミガメに近づくダイバーの手"
+    },
+    {
+      "path": "/_portal/vshops/tri-activity-272/s07.jpg",
+      "imageUrl": "https://www.yume-diving.com/images/index-slide15.jpg",
+      "pageUrl": "https://www.yume-diving.com/",
+      "what": "光が差し込む海中のクラゲ"
+    },
+    {
+      "path": "/_portal/vshops/tri-activity-272/s08.jpg",
+      "imageUrl": "https://www.yume-diving.com/images/index-slide16.jpg",
+      "pageUrl": "https://www.yume-diving.com/",
+      "what": "ウミガメと一緒に泳ぐダイバーたち"
+    },
+    {
+      "path": "/_portal/vshops/tri-activity-272/s09.jpg",
+      "imageUrl": "https://www.yume-diving.com/images/index-slide17.jpg",
+      "pageUrl": "https://www.yume-diving.com/",
+      "what": "緑の中に立つダイビングウエア姿の人たち"
+    },
+    {
+      "path": "/_portal/vshops/tri-activity-272/s10.jpg",
+      "imageUrl": "https://www.yume-diving.com/images/index-slide18.jpg",
+      "pageUrl": "https://www.yume-diving.com/",
+      "what": "夕方のビーチを歩く装備姿の2人"
+    },
+    {
+      "path": "/_portal/vshops/tri-activity-272/s11.jpg",
+      "imageUrl": "https://www.yume-diving.com/images/index-slide19.jpg",
+      "pageUrl": "https://www.yume-diving.com/",
+      "what": "広がるサンゴ礁の眺め"
+    }
+  ],
+  "sources": [
+    {
+      "label": "公式サイト",
+      "url": "https://www.yume-diving.com/"
+    },
+    {
+      "label": "公式サイト(コース一覧)",
+      "url": "https://www.yume-diving.com/course/"
+    },
+    {
+      "label": "公式サイト(体験ダイビング)",
+      "url": "https://www.yume-diving.com/course/taiken-diving.html"
+    },
+    {
+      "label": "公式サイト(交通アクセス)",
+      "url": "https://www.yume-diving.com/access/"
+    },
+    {
+      "label": "公式サイト(ファンダイビング)",
+      "url": "https://www.yume-diving.com/course/fun-diving.html"
+    },
+    {
+      "label": "Google マップ",
+      "url": "https://maps.google.com/?cid=13345568394843079450"
+    }
+  ],
+  "notes": "automation/v2/write.mjs が 2026-10-28 に作成。"
+}

@@ -1,0 +1,96 @@
+{
+  "key": "tri-life-259",
+  "images": [
+    {
+      "path": "/_portal/vshops/tri-life-259/s01.jpg",
+      "imageUrl": "https://yatsurugi.or.jp/assets/img/index/honden.jpg?v=1782487662",
+      "pageUrl": "https://www.yatsurugi.or.jp/",
+      "what": "木々に囲まれた本殿の建物",
+      "kind": "exterior",
+      "width": 1280,
+      "height": 960,
+      "source": "公式サイト"
+    },
+    {
+      "path": "/_portal/vshops/tri-life-259/s02.jpg",
+      "imageUrl": "https://www.yatsurugi.or.jp/assets/img/hero/1.jpg?v=1784589577",
+      "pageUrl": "https://www.yatsurugi.or.jp/",
+      "what": "石段の上に建つ社殿の外観",
+      "kind": "exterior",
+      "width": 1280,
+      "height": 960,
+      "source": "公式サイト"
+    },
+    {
+      "path": "/_portal/vshops/tri-life-259/s03.jpg",
+      "imageUrl": "https://www.yatsurugi.or.jp/assets/img/hero/2.jpg?v=1783339916",
+      "pageUrl": "https://www.yatsurugi.or.jp/",
+      "what": "境内に立つ馬の銅像",
+      "kind": "common",
+      "width": 1280,
+      "height": 742,
+      "source": "公式サイト"
+    },
+    {
+      "path": "/_portal/vshops/tri-life-259/s04.jpg",
+      "imageUrl": "https://www.yatsurugi.or.jp/assets/img/hero/3.jpg?v=1785107971",
+      "pageUrl": "https://www.yatsurugi.or.jp/",
+      "what": "参道に立つ白い鳥居",
+      "kind": "exterior",
+      "width": 1280,
+      "height": 893,
+      "source": "公式サイト"
+    },
+    {
+      "path": "/_portal/vshops/tri-life-259/s06.jpg",
+      "imageUrl": "https://www.yatsurugi.or.jp/assets/img/index/linkGokitou.jpg?v=1783905203",
+      "pageUrl": "https://www.yatsurugi.or.jp/",
+      "what": "拝殿内で参拝する人の後ろ姿",
+      "kind": "common",
+      "width": 1280,
+      "height": 960,
+      "source": "公式サイト"
+    },
+    {
+      "path": "/_portal/vshops/tri-life-259/s07.jpg",
+      "imageUrl": "https://www.yatsurugi.or.jp/assets/img/index/linkOmamori.jpg?v=1785716898",
+      "pageUrl": "https://www.yatsurugi.or.jp/",
+      "what": "瓦屋根の社務所の建物",
+      "kind": "exterior",
+      "width": 1280,
+      "height": 800,
+      "source": "公式サイト"
+    },
+    {
+      "path": "/_portal/vshops/tri-life-259/s14.jpg",
+      "imageUrl": "https://www.yatsurugi.or.jp/assets/img/sanpai/ichirei.jpg?v=1783353031",
+      "pageUrl": "https://www.yatsurugi.or.jp/about/keidai",
+      "what": "鳥居近くで一礼する参拝者",
+      "kind": "common",
+      "width": 1280,
+      "height": 1096,
+      "source": "公式サイト"
+    },
+    {
+      "path": "/_portal/vshops/tri-life-259/s15.jpg",
+      "imageUrl": "https://www.yatsurugi.or.jp/assets/img/sanpai/chozu.jpg?v=1783352168",
+      "pageUrl": "https://www.yatsurugi.or.jp/about/keidai",
+      "what": "手水舎で手を清める参拝者",
+      "kind": "common",
+      "width": 1280,
+      "height": 960,
+      "source": "公式サイト"
+    },
+    {
+      "path": "/_portal/vshops/tri-life-259/s16.jpg",
+      "imageUrl": "https://www.yatsurugi.or.jp/assets/img/sanpai/hairei.jpg?v=1783352168",
+      "pageUrl": "https://www.yatsurugi.or.jp/about/keidai",
+      "what": "拝殿前の廊下に立つ人物",
+      "kind": "common",
+      "width": 1280,
+      "height": 960,
+      "source": "公式サイト"
+    }
+  ],
+  "note": "automation/v2/write.mjs が 2026-10-28T09:05:00.259Z に取得。店の実写だけ(AI 画像・汎用画像・地図・ロゴ・顔が大きい画像は除外)。"
+}

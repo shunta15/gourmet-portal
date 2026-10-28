@@ -1,0 +1,144 @@
+{
+  "key": "tri-life-264",
+  "headline": "兵庫県豊岡市日高町にある曹洞宗の寺院。「関西花の寺二十五ヶ所」のひとつで、牡丹と椿の庭園がある",
+  "lede": "豊岡市にある「隆国寺」です。室町時代に垣屋播磨守隆国公の菩提寺として開かれたと伝わる曹洞宗の寺院で、「関西花の寺二十五ヶ所」のひとつに数えられています。境内には牡丹を中心とした庭園があり、椿や四季の花も植えられています。",
+  "sections": [
+    {
+      "heading": "由緒",
+      "body": "隆国寺は室町時代の開基で、山名氏の四天王筆頭といわれた垣屋播磨守隆国公の菩提寺と伝わります。宗派は曹洞宗で、元和9年(1623)に金山から現在の地に移されました。本堂には観世音菩薩が祀られています。"
+    },
+    {
+      "heading": "境内と建物",
+      "body": "山門は享和2年(1802)に再建されたもので、三たん随一(但馬・丹後・丹波)と称されます。本堂は寛政4年(1792)の再建で、平成元年(1989)に屋根が銅板葺入母屋造に改修されました。"
+    },
+    {
+      "heading": "花の庭園",
+      "body": "境内の大雄紅園には牡丹が約70種、1,000株あります。百椿苑には椿が150種植えられ、見ごろは3月中ごろから4月です。関西花の寺二十五ヶ所のひとつに数えられています。"
+    },
+    {
+      "heading": "アクセス",
+      "body": "JR山陰線江原駅から金谷行きまたは知見行きのバスに乗り、荒川バス停で下車して徒歩3分です。"
+    }
+  ],
+  "menus": [],
+  "tags": [],
+  "facts": [
+    {
+      "claim": "宗派は曹洞宗",
+      "source": "http://ryukoku-ji.com/profile.html",
+      "quote": "宗派 曹洞宗",
+      "checkedAt": "2026-10-28"
+    },
+    {
+      "claim": "本堂には観世音菩薩が祀られている",
+      "source": "http://ryukoku-ji.com/keidai.html",
+      "quote": "本尊観世音菩薩さまをお祀りし",
+      "checkedAt": "2026-10-28"
+    },
+    {
+      "claim": "室町時代の開基で、垣屋播磨守隆国公の菩提寺と伝わる",
+      "source": "http://ryukoku-ji.com/profile.html",
+      "quote": "垣屋播磨守隆国公の菩提寺と伝わっています",
+      "checkedAt": "2026-10-28"
+    },
+    {
+      "claim": "元和9年(1623)に金山から現在の地に移された",
+      "source": "http://ryukoku-ji.com/profile.html",
+      "quote": "元和9年(1623)に金山より現在に移されました",
+      "checkedAt": "2026-10-28"
+    },
+    {
+      "claim": "山門は享和2年(1802)に再建された",
+      "source": "http://ryukoku-ji.com/keidai.html",
+      "quote": "享和2年（1802）に再建されたものです",
+      "checkedAt": "2026-10-28"
+    },
+    {
+      "claim": "山門は三たん随一(但馬・丹後・丹波)と称される",
+      "source": "http://ryukoku-ji.com/keidai.html",
+      "quote": "三たん随一（但馬・丹後・丹波）と称される",
+      "checkedAt": "2026-10-28"
+    },
+    {
+      "claim": "本堂は寛政4年(1792)に再建された",
+      "source": "http://ryukoku-ji.com/keidai.html",
+      "quote": "寛政4年(1792)に再建された本堂は",
+      "checkedAt": "2026-10-28"
+    },
+    {
+      "claim": "本堂の屋根は平成元年(1989)に銅板葺入母屋造に改修された",
+      "source": "http://ryukoku-ji.com/keidai.html",
+      "quote": "銅板葺入母屋造の屋根に改修されました",
+      "checkedAt": "2026-10-28"
+    },
+    {
+      "claim": "大雄紅園の牡丹は約70種、1,000株",
+      "source": "http://ryukoku-ji.com/hana.html",
+      "quote": "約70種、1,000株",
+      "checkedAt": "2026-10-28"
+    },
+    {
+      "claim": "百椿苑のつばきは150種",
+      "source": "http://ryukoku-ji.com/hana.html",
+      "quote": "百椿苑のつばき 150種",
+      "checkedAt": "2026-10-28"
+    },
+    {
+      "claim": "つばきの見ごろは3月中ごろから4月",
+      "source": "http://ryukoku-ji.com/hana.html",
+      "quote": "見ごろは3月中ごろから4月ですが",
+      "checkedAt": "2026-10-28"
+    },
+    {
+      "claim": "関西花の寺二十五ヶ所のひとつに数えられる",
+      "source": "http://ryukoku-ji.com/hana.html",
+      "quote": "関西花の寺二十五ヶ所のひとつに数えられる",
+      "checkedAt": "2026-10-28"
+    },
+    {
+      "claim": "JR山陰線江原駅より金谷または知見行バスで荒川下車徒歩3分",
+      "source": "http://ryukoku-ji.com/access.html",
+      "quote": "江原駅より金谷、または知見行バス荒川下車徒歩3分",
+      "checkedAt": "2026-10-28"
+    },
+    {
+      "claim": "住所は兵庫県豊岡市日高町荒川22",
+      "source": "https://maps.google.com/?cid=13381104279920706698",
+      "quote": "兵庫県豊岡市日高町荒川２２",
+      "checkedAt": "2026-10-28"
+    },
+    {
+      "claim": "Google マップの業種表示は仏教寺院",
+      "source": "https://maps.google.com/?cid=13381104279920706698",
+      "quote": "仏教寺院",
+      "checkedAt": "2026-10-28"
+    }
+  ],
+  "sources": [
+    {
+      "label": "公式サイト",
+      "url": "http://ryukoku-ji.com/"
+    },
+    {
+      "label": "公式サイト(アクセス)",
+      "url": "http://ryukoku-ji.com/access.html"
+    },
+    {
+      "label": "公式サイト(花苑のご案内)",
+      "url": "http://ryukoku-ji.com/hana.html"
+    },
+    {
+      "label": "公式サイト(寺のあらまし)",
+      "url": "http://ryukoku-ji.com/profile.html"
+    },
+    {
+      "label": "公式サイト(境内のご案内)",
+      "url": "http://ryukoku-ji.com/keidai.html"
+    },
+    {
+      "label": "Google マップ",
+      "url": "https://maps.google.com/?cid=13381104279920706698"
+    }
+  ],
+  "notes": "automation/v2/write.mjs が 2026-10-28 に claude -p --model sonnet で作成。事実の裏取り: 15/15 件(quote が出どころにあるもの)。裏取りに通らなかった facts は載せていない。"
+}
