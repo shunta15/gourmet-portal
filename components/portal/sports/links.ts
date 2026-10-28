@@ -1,14 +1,15 @@
 /**
  * スポーツ(マチノワスポーツ。オーナー決定デザイン「見本2」)の行き先。純関数・定数(サーバー・クライアントのどちらからも使える)。
  * メニューは「トップ・施設を探す・店舗紹介・特集」(行き先 /sports・/sports/search・/sports/shop・/sports/special)。
- * 店のページ /sports/shop/{id}・店の特集記事 /sports/article/{id}・特集の記事 /sports/special/{slug}。地図・現在地は実在のページ /map。
+ * 店のページ /sports/shop/{id}・店の特集記事 /sports/article/{id}・特集の記事 /sports/special/{slug}。地図の小窓・現在地の入口は、この業種の探すページへ。
  */
 export const SPL = {
   top: "/sports",
   search: "/sports/search",
   shops: "/sports/shop",
   special: "/sports/special",
-  map: "/map",
+  // 旧サイトの地図 /map は 2026-10-28 に消した。地図の小窓・「現在地から探す」「地図で見る」は、この業種の探すページへ（見本の配置は変えない）
+  map: "/sports/search",
   about: "/about",
   shop: (id: string) => `/sports/shop/${encodeURIComponent(id)}`,
   article: (id: string) => `/sports/article/${encodeURIComponent(id)}`,

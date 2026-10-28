@@ -53,10 +53,6 @@ export function stationNameOf(st: StationCluster): string {
   return st.name;
 }
 
-export function stationHref(st: StationCluster): string {
-  return `/station/${st.pref}/${st.name}`;
-}
-
 /** 「{name}駅周辺」。name がすでに「駅」で終わるときは重ねない */
 export function stationHeading(st: StationCluster): string {
   return st.name.endsWith("駅") ? `${st.name}周辺` : `${st.name}駅周辺`;

@@ -38,9 +38,7 @@ export default function VideoCard({ video, stores, eager = false }: { video: Vid
             </Link>
             <span className="sub">{[s.categoryName, s.prefShort, s.area].filter(Boolean).join("・")}</span>
             {s.station && (
-              <Link href={s.station.href} prefetch={false} className="st" data-cursor="STATION">
-                最寄り: {s.station.heading}
-              </Link>
+              <span className="st">最寄り: {s.station.heading}</span>
             )}
           </p>
         ))}

@@ -9,7 +9,6 @@ const BASE = "https://machinowa.tokyo";
  * 中身は index 対象（掲載3件以上。lib/seo/gate.ts）のURLだけで、まだ空のものもある。
  */
 const PORTAL_SITEMAPS = [
-  "/station/sitemap.xml",
   ...NEW_VERTICAL_KEYS.map((k) => `${VERTICALS[k].path}/sitemap.xml`),
   "/videos/sitemap.xml",
   "/photos/sitemap.xml",

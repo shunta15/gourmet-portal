@@ -1,14 +1,15 @@
 /**
  * くらし(マチノワライフ。オーナー決定デザイン 2026-10-26 の見本)の行き先。純関数・定数(サーバー・クライアントのどちらからも使える)。
  * メニューは「トップ・場所を探す・店舗紹介・特集」(行き先 /life・/life/search・/life/shop・/life/special)。
- * 店のページ /life/shop/{id}・店の特集記事 /life/article/{id}・特集の記事 /life/special/{slug}。地図は実在のページ /map。
+ * 店のページ /life/shop/{id}・店の特集記事 /life/article/{id}・特集の記事 /life/special/{slug}。地図の小窓・現在地の入口は、この業種の探すページへ。
  */
 export const LFL = {
   top: "/life",
   search: "/life/search",
   shops: "/life/shop",
   special: "/life/special",
-  map: "/map",
+  // 旧サイトの地図 /map は 2026-10-28 に消した。地図の小窓・「現在地から探す」「地図で見る」は、この業種の探すページへ（見本の配置は変えない）
+  map: "/life/search",
   about: "/about",
   shop: (id: string) => `/life/shop/${encodeURIComponent(id)}`,
   article: (id: string) => `/life/article/${encodeURIComponent(id)}`,

@@ -157,7 +157,7 @@ export type ShortVideo = {
   comments: string;
   saves: string;
   videoUrl?: string;
-  url?: string;
+  url?: string; // 使っていない（旧 /nazatu を指していた値は 2026-10-28 に外した）
 };
 
 
@@ -423,7 +423,6 @@ export const SHORT_VIDEOS: ShortVideo[] = [
   {
     id: "sv-nazatu-1",
     restaurantId: "",
-    url: "/nazatu",
     thumbnail: "/videos/nazatu/1-1_thumb.jpg",
     title: "ナーザトゥ #1",
     cuisineEmoji: "",
@@ -437,7 +436,6 @@ export const SHORT_VIDEOS: ShortVideo[] = [
   {
     id: "sv-nazatu-2",
     restaurantId: "",
-    url: "/nazatu",
     thumbnail: "/videos/nazatu/1-2_thumb.jpg",
     title: "ナーザトゥ #2",
     cuisineEmoji: "",
@@ -451,7 +449,6 @@ export const SHORT_VIDEOS: ShortVideo[] = [
   {
     id: "sv-nazatu-3",
     restaurantId: "",
-    url: "/nazatu",
     thumbnail: "/videos/nazatu/3-2_thumb.jpg",
     title: "ナーザトゥ #3",
     cuisineEmoji: "",
@@ -465,7 +462,6 @@ export const SHORT_VIDEOS: ShortVideo[] = [
   {
     id: "sv-nazatu-review",
     restaurantId: "",
-    url: "/nazatu",
     thumbnail: "/videos/nazatu/review_thumb.jpg",
     title: "さーらー感想",
     cuisineEmoji: "",
@@ -479,7 +475,6 @@ export const SHORT_VIDEOS: ShortVideo[] = [
   {
     id: "sv-nazatu-photo",
     restaurantId: "",
-    url: "/nazatu",
     thumbnail: "/videos/nazatu/photo_thumb.jpg",
     title: "写真を撮る",
     cuisineEmoji: "",

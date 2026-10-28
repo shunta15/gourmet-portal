@@ -31,8 +31,6 @@ export default function PortalNotFound() {
         </ul>
         <p className="mp-note-links">
           <Link href="/" prefetch={false}>総合トップへ</Link>
-          <Link href="/station" prefetch={false}>駅から探す</Link>
-          <Link href="/map" prefetch={false}>地図で探す</Link>
           <Link href="/search" prefetch={false}>店舗を探す</Link>
         </p>
       </Block>

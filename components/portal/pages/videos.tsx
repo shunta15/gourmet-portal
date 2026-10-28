@@ -223,7 +223,7 @@ export default async function Page({ searchParams }: Props) {
               </p>
               <p className="mp-note-links">
                 {filtered && <Link href="/videos">すべての動画を見る</Link>}
-                <Link href="/station">駅から探す</Link>
+                <Link href="/search">店舗を探す</Link>
                 <Link href="/gourmet">グルメを探す</Link>
               </p>
             </div>
@@ -235,15 +235,8 @@ export default async function Page({ searchParams }: Props) {
         <Block id="mp-vd-more-h" kicker="More" title="ほかの探し方">
           <ul className="mp-chips">
             <li>
-              <Link href="/station" prefetch={false} data-cursor="STATION">駅から店を探す</Link>
+              <Link href="/search" prefetch={false} data-cursor="SEARCH">店舗を探す</Link>
             </li>
-            {cur.pref && (
-              <li>
-                <Link href={`/area/${cur.pref}`} prefetch={false} data-cursor="AREA">
-                  {getPrefBySlug(cur.pref)?.short}の店を業種から探す
-                </Link>
-              </li>
-            )}
             <li>
               <Link href="/gourmet" prefetch={false} data-cursor="GOURMET">グルメを探す</Link>
             </li>

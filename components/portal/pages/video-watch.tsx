@@ -149,11 +149,7 @@ export default async function Page({ params }: Props) {
                 <p className="sub">{[s.vertical.name, s.categoryName, s.prefShort, s.area].filter(Boolean).join("・")}</p>
                 <p className="mp-note-links">
                   <Link href={s.href} prefetch={false} data-cursor="SHOP">店のページを見る</Link>
-                  {s.station && (
-                    <Link href={s.station.href} prefetch={false} data-cursor="STATION">
-                      最寄りの駅: {s.station.heading}
-                    </Link>
-                  )}
+                  {s.station && <span>最寄りの駅: {s.station.heading}</span>}
                 </p>
                 <ShopLinks links={s.links} storeId={s.id} page={`/videos/${video.id}`} />
               </div>
@@ -210,15 +206,8 @@ export default async function Page({ params }: Props) {
           <li>
             <Link href="/videos" prefetch={false} data-cursor="VIDEO">動画の一覧へ</Link>
           </li>
-          {store?.station && (
-            <li>
-              <Link href={store.station.href} prefetch={false} data-cursor="STATION">
-                {store.station.heading}の店を見る
-              </Link>
-            </li>
-          )}
           <li>
-            <Link href="/station" prefetch={false} data-cursor="STATION">駅から店を探す</Link>
+            <Link href="/search" prefetch={false} data-cursor="SEARCH">店舗を探す</Link>
           </li>
         </ul>
       </Block>

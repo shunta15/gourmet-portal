@@ -30,10 +30,6 @@ const PORTAL_OFF_SOURCES = [
   "/activity/:path*", // 体験・アクティビティ（旧おでかけ /leisure）
   "/sports/:path*", // スポーツ・フィットネス
   "/life/:path*", // くらし・ライフスタイル
-  "/area/:path*",
-  "/station/:path*",
-  "/map/:path*",
-  "/find/:path*",
   "/list", // 候補リスト（店を保存して URL で共有）
   "/list-data/:path*", // 候補リストが店ごとに取る JSON
   "/photos/:path*",

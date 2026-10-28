@@ -430,7 +430,7 @@ export default function Nigiwai({
           <b>マチノワ</b>
           <small>Machinowa</small>
         </Link>
-        <Link href="/find" prefetch={false} className="ng-find">
+        <Link href="/search" prefetch={false} className="ng-find">
           <svg viewBox="0 0 20 20" width="18" height="18" aria-hidden="true" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round">
             <circle cx="8.5" cy="8.5" r="5.5" />
             <path d="M13 13l4.5 4.5" />
