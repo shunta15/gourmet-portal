@@ -37,7 +37,6 @@ const PORTAL_OFF_SOURCES = [
   "/list", // 候補リスト（店を保存して URL で共有）
   "/list-data/:path*", // 候補リストが店ごとに取る JSON
   "/photos/:path*",
-  "/omakase/:path*", // おまかせ提案（4つの質問で店を出す）
   "/og/:path*",
   "/videos",
   "/videos/:id",
@@ -76,6 +75,9 @@ const nextConfig: NextConfig = {
       // 旧「ショート動画」(/nazatu。ナーザトゥの 5 本を並べただけのページ)は、全業種共通の動画ページ /videos に置き換えた(2026-10-24 オーナー決定「動画は共通ページ作成してまとめて」)。308 で /videos へ転送する。
       // 5 本は /videos に載っている。公開スイッチが OFF のあいだは /videos が 404 なので、redirect を出さず /nazatu は今のまま(main と同じ)
       ...(PORTAL_LIVE ? [{ source: "/nazatu", destination: "/videos", permanent: true }] : []),
+      // おまかせ提案(/omakase)は廃止した(2026-10-24 オーナー決定「なくていいよ」)。グルメのさがす(/search)へ 308 で転送する(答えのクエリは /search では使わない)。
+      // 公開スイッチが OFF のあいだは redirect を出さず、/omakase は元からないページなので 404(main と同じ)
+      ...(PORTAL_LIVE && NOREN_SEARCH_REWRITE ? [{ source: "/omakase/:path*", destination: "/search", permanent: true }] : []),
       // 暖簾の店ページ・特集記事ページの内部のパス（/gourmet/restaurant/<id>・/gourmet/feature/<id>）は、直接開かれたら本物の URL へ恒久リダイレクトする。
       // 本物の URL（/restaurant/<id>）→ 内部のパスは下の rewrites で差し替えるだけ（リダイレクトは書き換え後のパスには再適用されない）。
       ...(PORTAL_LIVE && NOREN_SHOP_REWRITE ? [{ source: "/gourmet/restaurant/:id", destination: "/restaurant/:id", permanent: true }] : []),
