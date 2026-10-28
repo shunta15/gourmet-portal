@@ -54,7 +54,7 @@ export const CHUBU_FEATURE_ARTICLES: Record<string, FeatureArticle> = {
             "v": "○ 屋内展望（一部屋外）"
           },
           {
-            "k": "おすすめ時間",
+            "k": "目安の時間",
             "v": "昼と夜の2回"
           }
         ]
@@ -84,7 +84,7 @@ export const CHUBU_FEATURE_ARTICLES: Record<string, FeatureArticle> = {
             "v": "○ 屋内中心（屋上は屋外）"
           },
           {
-            "k": "おすすめ時間",
+            "k": "目安の時間",
             "v": "夕方"
           }
         ]
@@ -114,7 +114,7 @@ export const CHUBU_FEATURE_ARTICLES: Record<string, FeatureArticle> = {
             "v": "△ 屋外中心"
           },
           {
-            "k": "おすすめ時間",
+            "k": "目安の時間",
             "v": "昼〜夕方"
           }
         ]
@@ -144,7 +144,7 @@ export const CHUBU_FEATURE_ARTICLES: Record<string, FeatureArticle> = {
             "v": "○ アーケード中心"
           },
           {
-            "k": "おすすめ時間",
+            "k": "目安の時間",
             "v": "夕方"
           }
         ]
@@ -174,7 +174,7 @@ export const CHUBU_FEATURE_ARTICLES: Record<string, FeatureArticle> = {
             "v": "△ 屋外（境内）"
           },
           {
-            "k": "おすすめ時間",
+            "k": "目安の時間",
             "v": "夕方〜夜"
           }
         ]

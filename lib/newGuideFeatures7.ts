@@ -234,7 +234,7 @@ export const NEWGUIDE7_FEATURES: Feature[] = [
     "tag": "デート",
     "kicker": "SUSUKINO NIGHT DATE",
     "title": "すすきの、灯りを継いで歩く夜のデート。展望台からネオン、そして山頂へ",
-    "sub": "JRタワーT38で街が暮れる瞬間を見て、テレビ塔から大通公園の灯りを正面に。すすきの交差点のネオンを抜け、藻岩山の大夜景へ上り、最後は中島公園の水辺で静かに息を整える夜。",
+    "sub": "JRタワーT38で街が暮れる瞬間を見て、テレビ塔から大通公園の灯りを正面に。すすきの交差点のネオンを抜け、藻岩山の大夜景へ上り、最後は中島公園の水辺で静かに息をつく夜。",
     "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/23/Nakajima_Park_Sapporo03bs5s4272.jpg/1280px-Nakajima_Park_Sapporo03bs5s4272.jpg"
   },
   {
@@ -297,7 +297,7 @@ export const NEWGUIDE7_FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         "cuisine": "市場・商店街",
         "area": "大阪市中央区・日本橋",
         "purpose": "昼にここから始める。市場の鮮魚串で腹ごしらえ",
-        "desc": "千日前通から南へ約580m続くアーケードに、鮮魚・精肉・青果・飲食など約150の店が並ぶ、古くから「大阪の台所」と呼ばれてきた市場だ。夏のハモ、冬のフグといった季節の魚介を看板に掲げる鮮魚店が多く、注文を受けてからその場で炙るホタテやエビの串焼き、海鮮丼、果物店のフレッシュジュースなど、その場で味わえるメニューがそろう。歩きながらの飲食は避け、店舗のイートインスペースや立ち食いコーナーを利用するのが市場のマナーだ。プロの料理人が仕入れに通う本物の市場でありながら観光客の食べ歩きにも開かれているのが、この場所ならではの面白さ。多くの店が18時前後に閉まり始めるため、まず昼に訪れて腹ごしらえするのがこのコースの起点になる。価格や営業時間は店ごとに異なり変動もあるため、現地の表示や各店で確認を。",
+        "desc": "千日前通から南へ約580m続くアーケードに、鮮魚・精肉・青果・飲食など約150の店が並ぶ、古くから「大阪の台所」と呼ばれてきた市場だ。夏のハモ、冬のフグといった季節の魚介を看板にする鮮魚店が多く、注文を受けてからその場で炙るホタテやエビの串焼き、海鮮丼、果物店のフレッシュジュースなど、その場で味わえるメニューがそろう。歩きながらの飲食は避け、店舗のイートインスペースや立ち食いコーナーを利用するのが市場のマナーだ。プロの料理人が仕入れに通う本物の市場でありながら観光客の食べ歩きにも開かれているのが、この場所ならではの面白さ。多くの店が18時前後に閉まり始めるため、まず昼に訪れて腹ごしらえするのがこのコースの起点になる。価格や営業時間は店ごとに異なり変動もあるため、現地の表示や各店で確認を。",
         "images": [
           "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dd/Kuromon_Ichiba_Market_at_Lalaport_Kadoma2.jpg/1280px-Kuromon_Ichiba_Market_at_Lalaport_Kadoma2.jpg"
         ],
@@ -315,7 +315,7 @@ export const NEWGUIDE7_FEATURE_ARTICLES: Record<string, FeatureArticle> = {
             "v": "◎ アーケードで濡れにくい"
           },
           {
-            "k": "おすすめ時間",
+            "k": "目安の時間",
             "v": "午前〜昼（夕方は閉店が増える）"
           }
         ],
@@ -346,7 +346,7 @@ export const NEWGUIDE7_FEATURE_ARTICLES: Record<string, FeatureArticle> = {
             "v": "◎ アーケード商店街"
           },
           {
-            "k": "おすすめ時間",
+            "k": "目安の時間",
             "v": "昼〜夕方（店舗の営業時間内）"
           }
         ],
@@ -377,7 +377,7 @@ export const NEWGUIDE7_FEATURE_ARTICLES: Record<string, FeatureArticle> = {
             "v": "◎ 屋内劇場"
           },
           {
-            "k": "おすすめ時間",
+            "k": "目安の時間",
             "v": "昼公演（事前予約が安心）"
           }
         ],
@@ -408,7 +408,7 @@ export const NEWGUIDE7_FEATURE_ARTICLES: Record<string, FeatureArticle> = {
             "v": "△ 屋外（橋上・川沿い）"
           },
           {
-            "k": "おすすめ時間",
+            "k": "目安の時間",
             "v": "夕方〜夜（日没前後の点灯時）"
           }
         ],
@@ -439,7 +439,7 @@ export const NEWGUIDE7_FEATURE_ARTICLES: Record<string, FeatureArticle> = {
             "v": "○ 路地は屋外だが各店は屋内"
           },
           {
-            "k": "おすすめ時間",
+            "k": "目安の時間",
             "v": "夕方〜夜（夕食どき）"
           }
         ],
@@ -501,7 +501,7 @@ export const NEWGUIDE7_FEATURE_ARTICLES: Record<string, FeatureArticle> = {
             "v": "○ 屋内展望台は天候不問"
           },
           {
-            "k": "おすすめ時間",
+            "k": "目安の時間",
             "v": "午前（散策前に上る）"
           }
         ],
@@ -532,7 +532,7 @@ export const NEWGUIDE7_FEATURE_ARTICLES: Record<string, FeatureArticle> = {
             "v": "○ アーケードで濡れにくい"
           },
           {
-            "k": "おすすめ時間",
+            "k": "目安の時間",
             "v": "昼（通天閣を正面に望む）"
           }
         ],
@@ -545,7 +545,7 @@ export const NEWGUIDE7_FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         "cuisine": "串カツ店",
         "area": "大阪市浪速区・新世界",
         "purpose": "昼食はここで。新世界発祥といわれる串カツの総本店で味わう",
-        "desc": "1929年（昭和4年）創業と伝わる串カツの老舗で、新世界に複数ある「だるま」の総本店にあたる。カウンター中心のこぢんまりした店構えながら、薄づきの衣をさっと揚げた串カツは新世界の食文化を語るうえで外せない一皿だ。卓上の共用ソースは「二度漬け禁止」が鉄の掟で、一度くぐらせたら衣に染みたソースだけで食べきるのが流儀。これは衛生を保つために生まれた新世界共通のルールで、初めてでも店の張り紙どおりにすれば戸惑わない。看板には強面の人物像が掲げられ、新世界らしい押し出しの強さも名物になっている。昼どきや休日は行列ができやすいので、時間に余裕をもって並びたい。メニューや価格は変わることがあるため、最新情報は公式サイトで確認を。",
+        "desc": "1929年（昭和4年）創業と伝わる串カツの老舗で、新世界に複数ある「だるま」の総本店にあたる。カウンター中心のこぢんまりした店構えながら、薄づきの衣をさっと揚げた串カツは新世界の食文化を語るうえで外せない一皿だ。卓上の共用ソースは「二度漬け禁止」が鉄の掟で、一度くぐらせたら衣に染みたソースだけで食べきるのが流儀。これは衛生を保つために生まれた新世界共通のルールで、初めてでも店の張り紙どおりにすれば戸惑わない。看板には強面の人物像があり、新世界らしい押し出しの強さも名物になっている。昼どきや休日は行列ができやすいので、時間に余裕をもって並びたい。メニューや価格は変わることがあるため、最新情報は公式サイトで確認を。",
         "images": [
           "https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/Dotonbori_Street%2C_Osaka_Prefecture%3B_November_2013_%2807%29.jpg/1280px-Dotonbori_Street%2C_Osaka_Prefecture%3B_November_2013_%2807%29.jpg"
         ],
@@ -563,7 +563,7 @@ export const NEWGUIDE7_FEATURE_ARTICLES: Record<string, FeatureArticle> = {
             "v": "○ 店内飲食"
           },
           {
-            "k": "おすすめ時間",
+            "k": "目安の時間",
             "v": "昼食（混雑前の早めが安心）"
           }
         ],
@@ -594,7 +594,7 @@ export const NEWGUIDE7_FEATURE_ARTICLES: Record<string, FeatureArticle> = {
             "v": "○ アーケードで濡れにくい"
           },
           {
-            "k": "おすすめ時間",
+            "k": "目安の時間",
             "v": "昼〜夕方"
           }
         ],
@@ -625,7 +625,7 @@ export const NEWGUIDE7_FEATURE_ARTICLES: Record<string, FeatureArticle> = {
             "v": "◎ 全館屋内"
           },
           {
-            "k": "おすすめ時間",
+            "k": "目安の時間",
             "v": "夕方（散策の締めに）"
           }
         ],
@@ -687,7 +687,7 @@ export const NEWGUIDE7_FEATURE_ARTICLES: Record<string, FeatureArticle> = {
             "v": "◎ 全館屋内"
           },
           {
-            "k": "おすすめ時間",
+            "k": "目安の時間",
             "v": "午前（朝いち）"
           }
         ],
@@ -718,7 +718,7 @@ export const NEWGUIDE7_FEATURE_ARTICLES: Record<string, FeatureArticle> = {
             "v": "△ 屋外中心（屋内あそび場あり）"
           },
           {
-            "k": "おすすめ時間",
+            "k": "目安の時間",
             "v": "昼（昼食・休憩）"
           }
         ],
@@ -749,7 +749,7 @@ export const NEWGUIDE7_FEATURE_ARTICLES: Record<string, FeatureArticle> = {
             "v": "△ 屋外中心"
           },
           {
-            "k": "おすすめ時間",
+            "k": "目安の時間",
             "v": "午後（昼食後）"
           }
         ],
@@ -780,7 +780,7 @@ export const NEWGUIDE7_FEATURE_ARTICLES: Record<string, FeatureArticle> = {
             "v": "◎ 屋内（無料ゾーン・カフェあり）"
           },
           {
-            "k": "おすすめ時間",
+            "k": "目安の時間",
             "v": "夕方前（休憩がてら）"
           }
         ],
@@ -811,7 +811,7 @@ export const NEWGUIDE7_FEATURE_ARTICLES: Record<string, FeatureArticle> = {
             "v": "◎ 駅直結・屋内"
           },
           {
-            "k": "おすすめ時間",
+            "k": "目安の時間",
             "v": "夕方（締め・夕食）"
           }
         ],
@@ -873,7 +873,7 @@ export const NEWGUIDE7_FEATURE_ARTICLES: Record<string, FeatureArticle> = {
             "v": "◎ 屋内店舗中心"
           },
           {
-            "k": "おすすめ時間",
+            "k": "目安の時間",
             "v": "朝（出発前の腹ごしらえ）"
           }
         ],
@@ -904,7 +904,7 @@ export const NEWGUIDE7_FEATURE_ARTICLES: Record<string, FeatureArticle> = {
             "v": "△ 屋外・雨天は足元注意"
           },
           {
-            "k": "おすすめ時間",
+            "k": "目安の時間",
             "v": "午前（本丸へ上がる前）"
           }
         ],
@@ -935,7 +935,7 @@ export const NEWGUIDE7_FEATURE_ARTICLES: Record<string, FeatureArticle> = {
             "v": "○ 内部は屋内展示"
           },
           {
-            "k": "おすすめ時間",
+            "k": "目安の時間",
             "v": "午前（開館直後）"
           }
         ],
@@ -966,7 +966,7 @@ export const NEWGUIDE7_FEATURE_ARTICLES: Record<string, FeatureArticle> = {
             "v": "△ 屋外参拝"
           },
           {
-            "k": "おすすめ時間",
+            "k": "目安の時間",
             "v": "昼（本丸見学のあと）"
           }
         ],
@@ -997,7 +997,7 @@ export const NEWGUIDE7_FEATURE_ARTICLES: Record<string, FeatureArticle> = {
             "v": "△ 屋外の芝生庭園"
           },
           {
-            "k": "おすすめ時間",
+            "k": "目安の時間",
             "v": "午後（散策の締め）"
           }
         ],
@@ -1041,7 +1041,7 @@ export const NEWGUIDE7_FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         "cuisine": "水族館",
         "area": "大阪市港区・天保山",
         "purpose": "開館直後に入る。最上階から下りながら太平洋大水槽を一周する",
-        "desc": "天保山の中心にある海遊館は、建物の上層から下りながら水槽を見ていく独自の順路を持つ水族館だ。中央を貫く「太平洋」大水槽はジンベエザメが泳ぐことで知られ、フロアを下りるごとに同じ水槽を別の深さから眺められるため、子どもが飽きずに最後まで歩き通しやすい。屋内で天候に左右されず、ベビーカーでも回りやすい動線になっているので、一日の起点に向く。開館直後は比較的空いており、人気の大水槽前でも子どもを抱き上げてゆっくり見せられる。入館は閉館の1時間前までで、土日祝や長期休暇は混雑するため、チケットの事前購入が役立つ。入館料や営業時間は季節で変わるので、訪問前に公式サイトで確認を。",
+        "desc": "天保山の中心にある海遊館は、建物の上層から下りながら水槽を見ていく独自の順路を持つ水族館だ。中央を貫く「太平洋」大水槽はジンベエザメが泳ぐことで知られ、フロアを下りるごとに同じ水槽を別の深さから眺められるため、子どもが飽きずに最後まで歩き通しやすい。屋内で天候に左右されず、ベビーカーでも回りやすい動線になっているので、一日の起点に向く。開館直後は比較的空いており、大水槽前でも子どもを抱き上げてゆっくり見せられる。入館は閉館の1時間前までで、土日祝や長期休暇は混雑するため、チケットの事前購入が役立つ。入館料や営業時間は季節で変わるので、訪問前に公式サイトで確認を。",
         "images": [
           "https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Octopus_sinensis_%28Osaka_Aquarium_KAIYUKAN%29.jpg/1280px-Octopus_sinensis_%28Osaka_Aquarium_KAIYUKAN%29.jpg"
         ],
@@ -1059,7 +1059,7 @@ export const NEWGUIDE7_FEATURE_ARTICLES: Record<string, FeatureArticle> = {
             "v": "◎ 全館屋内"
           },
           {
-            "k": "おすすめ時間",
+            "k": "目安の時間",
             "v": "開館直後の午前"
           }
         ],
@@ -1090,7 +1090,7 @@ export const NEWGUIDE7_FEATURE_ARTICLES: Record<string, FeatureArticle> = {
             "v": "◎ 全館屋内"
           },
           {
-            "k": "おすすめ時間",
+            "k": "目安の時間",
             "v": "昼食どき(正午前後)"
           }
         ],
@@ -1121,7 +1121,7 @@ export const NEWGUIDE7_FEATURE_ARTICLES: Record<string, FeatureArticle> = {
             "v": "◎ 全館屋内"
           },
           {
-            "k": "おすすめ時間",
+            "k": "目安の時間",
             "v": "午後(昼食後)"
           }
         ],
@@ -1152,7 +1152,7 @@ export const NEWGUIDE7_FEATURE_ARTICLES: Record<string, FeatureArticle> = {
             "v": "○ ゴンドラは乗車可(強風時は運休あり)"
           },
           {
-            "k": "おすすめ時間",
+            "k": "目安の時間",
             "v": "夕方前(午後遅め)"
           }
         ],
@@ -1183,7 +1183,7 @@ export const NEWGUIDE7_FEATURE_ARTICLES: Record<string, FeatureArticle> = {
             "v": "△ 運航は天候次第(荒天運休あり)"
           },
           {
-            "k": "おすすめ時間",
+            "k": "目安の時間",
             "v": "夕方(一日の締め)"
           }
         ],
@@ -1245,7 +1245,7 @@ export const NEWGUIDE7_FEATURE_ARTICLES: Record<string, FeatureArticle> = {
             "v": "△ 内部観覧は屋内・外観は雨天可"
           },
           {
-            "k": "おすすめ時間",
+            "k": "目安の時間",
             "v": "午前（開園直後）"
           }
         ],
@@ -1276,7 +1276,7 @@ export const NEWGUIDE7_FEATURE_ARTICLES: Record<string, FeatureArticle> = {
             "v": "△ 屋外中心・遊具は濡れる"
           },
           {
-            "k": "おすすめ時間",
+            "k": "目安の時間",
             "v": "午前〜昼"
           }
         ],
@@ -1307,7 +1307,7 @@ export const NEWGUIDE7_FEATURE_ARTICLES: Record<string, FeatureArticle> = {
             "v": "◎ 全館屋内"
           },
           {
-            "k": "おすすめ時間",
+            "k": "目安の時間",
             "v": "昼過ぎ"
           }
         ],
@@ -1338,7 +1338,7 @@ export const NEWGUIDE7_FEATURE_ARTICLES: Record<string, FeatureArticle> = {
             "v": "◎ 全館屋内"
           },
           {
-            "k": "おすすめ時間",
+            "k": "目安の時間",
             "v": "昼〜夕方"
           }
         ],
@@ -1369,7 +1369,7 @@ export const NEWGUIDE7_FEATURE_ARTICLES: Record<string, FeatureArticle> = {
             "v": "◎ 全館屋内"
           },
           {
-            "k": "おすすめ時間",
+            "k": "目安の時間",
             "v": "夕方（締め）"
           }
         ],
@@ -1413,7 +1413,7 @@ export const NEWGUIDE7_FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         "cuisine": "神社",
         "area": "京都市伏見区・深草",
         "purpose": "朝に参拝。楼門と本殿から一日を始める",
-        "desc": "全国の稲荷神社の総本宮で、稲荷大神を祀り、商売繁盛や五穀豊穣の信仰を集めてきた古社だ。JR稲荷駅を出るとすぐ目の前に朱塗りの大鳥居と楼門が立ち、駅からほぼ歩かずに境内へ入れるのが伏見稲荷ならではの強み。豊臣秀吉が母の病平癒を願って寄進したと伝わる楼門の奥に本殿があり、まずここで手を合わせてから山へ向かうのが昔ながらの順路になっている。境内は終日開いていて拝観料もかからないため、人の少ない朝のうちに本殿まわりをゆっくり巡るのがおすすめだ。授与所の開く時間など一部の対応は時間帯で変わるため、訪問前に公式サイトでの確認を。",
+        "desc": "全国の稲荷神社の総本宮で、稲荷大神を祀り、商売繁盛や五穀豊穣の信仰を集めてきた古社だ。JR稲荷駅を出るとすぐ目の前に朱塗りの大鳥居と楼門が立ち、駅からほぼ歩かずに境内へ入れるのが伏見稲荷ならではの強み。豊臣秀吉が母の病平癒を願って寄進したと伝わる楼門の奥に本殿があり、まずここで手を合わせてから山へ向かうのが昔ながらの順路になっている。境内は終日開いていて拝観料もかからないため、人の少ない朝のうちに本殿まわりをゆっくり巡るとよい。授与所の開く時間など一部の対応は時間帯で変わるため、訪問前に公式サイトでの確認を。",
         "images": [
           "https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/Romon%2C_Fushimi_Inari-taisha%2C_Kyoto%2C_West_view_20190416_1.jpg/1280px-Romon%2C_Fushimi_Inari-taisha%2C_Kyoto%2C_West_view_20190416_1.jpg"
         ],
@@ -1431,7 +1431,7 @@ export const NEWGUIDE7_FEATURE_ARTICLES: Record<string, FeatureArticle> = {
             "v": "○ 楼門・本殿は屋根あり"
           },
           {
-            "k": "おすすめ時間",
+            "k": "目安の時間",
             "v": "朝（人が少ない）"
           }
         ],
@@ -1462,7 +1462,7 @@ export const NEWGUIDE7_FEATURE_ARTICLES: Record<string, FeatureArticle> = {
             "v": "△ 鳥居の下だが足元に注意"
           },
           {
-            "k": "おすすめ時間",
+            "k": "目安の時間",
             "v": "早朝（混雑前）"
           }
         ],
@@ -1493,7 +1493,7 @@ export const NEWGUIDE7_FEATURE_ARTICLES: Record<string, FeatureArticle> = {
             "v": "✕ 山道のため雨天は不向き"
           },
           {
-            "k": "おすすめ時間",
+            "k": "目安の時間",
             "v": "午前（明るいうちに登る）"
           }
         ],
@@ -1524,7 +1524,7 @@ export const NEWGUIDE7_FEATURE_ARTICLES: Record<string, FeatureArticle> = {
             "v": "○ 伽藍・方丈は雨でも巡れる"
           },
           {
-            "k": "おすすめ時間",
+            "k": "目安の時間",
             "v": "午後（紅葉期は早め）"
           }
         ],
@@ -1555,7 +1555,7 @@ export const NEWGUIDE7_FEATURE_ARTICLES: Record<string, FeatureArticle> = {
             "v": "○ 店内飲食に切り替え可"
           },
           {
-            "k": "おすすめ時間",
+            "k": "目安の時間",
             "v": "昼〜夕方（下山後）"
           }
         ],
@@ -1617,7 +1617,7 @@ export const NEWGUIDE7_FEATURE_ARTICLES: Record<string, FeatureArticle> = {
             "v": "△ 池庭中心で屋外を歩く"
           },
           {
-            "k": "おすすめ時間",
+            "k": "目安の時間",
             "v": "午前（開門直後）"
           }
         ],
@@ -1648,7 +1648,7 @@ export const NEWGUIDE7_FEATURE_ARTICLES: Record<string, FeatureArticle> = {
             "v": "○ 縁側から石庭を眺められる"
           },
           {
-            "k": "おすすめ時間",
+            "k": "目安の時間",
             "v": "午前〜昼"
           }
         ],
@@ -1679,7 +1679,7 @@ export const NEWGUIDE7_FEATURE_ARTICLES: Record<string, FeatureArticle> = {
             "v": "○ 御殿は屋内から庭を鑑賞できる"
           },
           {
-            "k": "おすすめ時間",
+            "k": "目安の時間",
             "v": "昼"
           }
         ],
@@ -1710,7 +1710,7 @@ export const NEWGUIDE7_FEATURE_ARTICLES: Record<string, FeatureArticle> = {
             "v": "△ 屋外の参道を歩く"
           },
           {
-            "k": "おすすめ時間",
+            "k": "目安の時間",
             "v": "午後"
           }
         ],
@@ -1741,7 +1741,7 @@ export const NEWGUIDE7_FEATURE_ARTICLES: Record<string, FeatureArticle> = {
             "v": "○ 書院から庭を眺められる"
           },
           {
-            "k": "おすすめ時間",
+            "k": "目安の時間",
             "v": "夕方（締めくくり）"
           }
         ],
@@ -1803,7 +1803,7 @@ export const NEWGUIDE7_FEATURE_ARTICLES: Record<string, FeatureArticle> = {
             "v": "◎ アーケードで濡れにくい"
           },
           {
-            "k": "おすすめ時間",
+            "k": "目安の時間",
             "v": "昼〜夕方前"
           }
         ],
@@ -1834,7 +1834,7 @@ export const NEWGUIDE7_FEATURE_ARTICLES: Record<string, FeatureArticle> = {
             "v": "△ 屋外。雨天時は散策・床とも控えめに"
           },
           {
-            "k": "おすすめ時間",
+            "k": "目安の時間",
             "v": "夕方（日没前後）"
           }
         ],
@@ -1865,7 +1865,7 @@ export const NEWGUIDE7_FEATURE_ARTICLES: Record<string, FeatureArticle> = {
             "v": "○ 散策は傘が要るが屋内店も多い"
           },
           {
-            "k": "おすすめ時間",
+            "k": "目安の時間",
             "v": "夕方〜夜"
           }
         ],
@@ -1896,7 +1896,7 @@ export const NEWGUIDE7_FEATURE_ARTICLES: Record<string, FeatureArticle> = {
             "v": "○ 散策は傘要・屋内の飲食店が中心"
           },
           {
-            "k": "おすすめ時間",
+            "k": "目安の時間",
             "v": "夜（灯りがともる時間帯）"
           }
         ],
@@ -1927,7 +1927,7 @@ export const NEWGUIDE7_FEATURE_ARTICLES: Record<string, FeatureArticle> = {
             "v": "○ 石畳が濡れて滑りやすい点に注意"
           },
           {
-            "k": "おすすめ時間",
+            "k": "目安の時間",
             "v": "夜（締めの散策）"
           }
         ],
@@ -1989,7 +1989,7 @@ export const NEWGUIDE7_FEATURE_ARTICLES: Record<string, FeatureArticle> = {
             "v": "△ アーケードはなく屋外歩き中心"
           },
           {
-            "k": "おすすめ時間",
+            "k": "目安の時間",
             "v": "午前（散策の入り口に）"
           }
         ],
@@ -2020,7 +2020,7 @@ export const NEWGUIDE7_FEATURE_ARTICLES: Record<string, FeatureArticle> = {
             "v": "○ 鳳翔館は屋内で鑑賞可"
           },
           {
-            "k": "おすすめ時間",
+            "k": "目安の時間",
             "v": "午前（混雑前・順光で正面を撮れる）"
           }
         ],
@@ -2051,7 +2051,7 @@ export const NEWGUIDE7_FEATURE_ARTICLES: Record<string, FeatureArticle> = {
             "v": "△ 屋外・増水時は通行規制の場合あり"
           },
           {
-            "k": "おすすめ時間",
+            "k": "目安の時間",
             "v": "昼すぎ（西岸から東岸への移動時に）"
           }
         ],
@@ -2082,7 +2082,7 @@ export const NEWGUIDE7_FEATURE_ARTICLES: Record<string, FeatureArticle> = {
             "v": "△ 屋外参拝が中心"
           },
           {
-            "k": "おすすめ時間",
+            "k": "目安の時間",
             "v": "午後（朝霧橋を渡った流れで）"
           }
         ],
@@ -2113,7 +2113,7 @@ export const NEWGUIDE7_FEATURE_ARTICLES: Record<string, FeatureArticle> = {
             "v": "◎ 全館屋内"
           },
           {
-            "k": "おすすめ時間",
+            "k": "目安の時間",
             "v": "夕方（散策の締めくくりに）"
           }
         ],
@@ -2175,7 +2175,7 @@ export const NEWGUIDE7_FEATURE_ARTICLES: Record<string, FeatureArticle> = {
             "v": "◎ 館内見学が主体"
           },
           {
-            "k": "おすすめ時間",
+            "k": "目安の時間",
             "v": "午後の早め（混雑前）"
           }
         ],
@@ -2237,7 +2237,7 @@ export const NEWGUIDE7_FEATURE_ARTICLES: Record<string, FeatureArticle> = {
             "v": "△ 石段・屋外の眺めが主体"
           },
           {
-            "k": "おすすめ時間",
+            "k": "目安の時間",
             "v": "高台の眺めが映える午後"
           }
         ],
@@ -2361,7 +2361,7 @@ export const NEWGUIDE7_FEATURE_ARTICLES: Record<string, FeatureArticle> = {
             "v": "◎ アーケードで全天候"
           },
           {
-            "k": "おすすめ時間",
+            "k": "目安の時間",
             "v": "昼前（混む前）"
           }
         ],
@@ -2392,7 +2392,7 @@ export const NEWGUIDE7_FEATURE_ARTICLES: Record<string, FeatureArticle> = {
             "v": "△ 屋外参道は傘が必要"
           },
           {
-            "k": "おすすめ時間",
+            "k": "目安の時間",
             "v": "正午前後"
           }
         ],
@@ -2405,7 +2405,7 @@ export const NEWGUIDE7_FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         "cuisine": "中華街",
         "area": "神戸市中央区・元町通〜栄町通",
         "purpose": "コースの主役。焼き小籠包や豚まんを買って広場で味わう",
-        "desc": "横浜・長崎と並ぶ日本三大中華街のひとつで、元町通から栄町通にまたがる東西約270mの範囲に多くの中華の店が軒を連ねる。東の長安門、西の西安門、南の海栄門に囲まれ、中心に建つあずまや(南京町広場)が待ち合わせの目印だ。焼き小籠包や豚まん、角煮まんなど手で持てる軽食が豊富で、このコースの食べ歩きの中心になる。ただし南京町では歩きながら食べることを控える案内が出ており、買ったものはこの広場や各店の飲食スペースなど決められた場所で味わうのがマナー。会計は店ごとなので現金を用意しておくと回りやすい。人気の店は昼前から行列ができることがあるため、早めの時間帯が狙い目だ。",
+        "desc": "横浜・長崎と並ぶ日本三大中華街のひとつで、元町通から栄町通にまたがる東西約270mの範囲に多くの中華の店が軒を連ねる。東の長安門、西の西安門、南の海栄門に囲まれ、中心に建つあずまや(南京町広場)が待ち合わせの目印だ。焼き小籠包や豚まん、角煮まんなど手で持てる軽食が豊富で、このコースの食べ歩きの中心になる。ただし南京町では歩きながら食べることを控える案内が出ており、買ったものはこの広場や各店の飲食スペースなど決められた場所で味わうのがマナー。会計は店ごとなので現金を用意しておくと回りやすい。店によっては昼前から行列ができることがあるため、早めの時間帯が狙い目だ。",
         "images": [
           "https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/Kobe_Kobe_Chinatown_3.jpg/1280px-Kobe_Kobe_Chinatown_3.jpg"
         ],
@@ -2423,7 +2423,7 @@ export const NEWGUIDE7_FEATURE_ARTICLES: Record<string, FeatureArticle> = {
             "v": "○ 路地は屋根なしだが店内多数"
           },
           {
-            "k": "おすすめ時間",
+            "k": "目安の時間",
             "v": "開店直後の昼（行列回避）"
           }
         ],
@@ -2454,7 +2454,7 @@ export const NEWGUIDE7_FEATURE_ARTICLES: Record<string, FeatureArticle> = {
             "v": "◎ アーケードで全天候"
           },
           {
-            "k": "おすすめ時間",
+            "k": "目安の時間",
             "v": "午後の食後"
           }
         ],
@@ -2485,7 +2485,7 @@ export const NEWGUIDE7_FEATURE_ARTICLES: Record<string, FeatureArticle> = {
             "v": "△ 屋外中心（施設内で回避可）"
           },
           {
-            "k": "おすすめ時間",
+            "k": "目安の時間",
             "v": "夕方（締めの休憩）"
           }
         ],
@@ -2506,7 +2506,7 @@ export const NEWGUIDE7_FEATURE_ARTICLES: Record<string, FeatureArticle> = {
     ],
     "quote": "三宮のアーケードから南京町、元町まで。匂いと人の流れに任せて歩く、神戸の真ん中の食べ歩きさんぽ。",
     "quoteCite": "マチノワ編集部",
-    "closing": "歩き出しは神戸三宮センター街から。屋根の下を西へ流れていく人波に混ざって、神戸の繁華街の空気をまず体に入れる。ショーウィンドウを冷やかしているうちに、少し北へ気が向いて生田神社へ。繁華街のすぐ裏手とは思えない静けさで、縁結びの古社に手を合わせると、さっきまでの賑わいが嘘のように遠くなる。参拝を終えて南西へ下っていくと、赤い門と提灯が見えてくる。ここが今日の主役、南京町だ。焼き小籠包の鉄板がじゅうじゅう鳴り、豚まんの蒸籠から湯気が噴き上がる。買ったものは歩きながらではなく、中央の南京町広場のあずまやや各店の飲食スペースで味わうのがこの街の作法だから、湯気の立つ皿を手に空いた席を探すのも含めて楽しみたい。人気店は昼前から列が伸びるので、お腹が空いているなら開店すぐを狙うのが賢い。食べ足りた頃には、そのまま西へ続く元町商店街へ。老舗の甘味で口を甘くしながらアーケードを冷やかし歩き、最後はフラワーロード沿いの東遊園地へ抜けた。芝生に腰を下ろして、歩き疲れた足を都心のど真ん中で投げ出すと、食べてばかりだった半日がようやく落ち着く。雨に降られた日は、屋根のある三宮センター街・南京町・元町商店街の三つを軸にして、屋外の東遊園地は短く切り上げるか省き、アーケードのカフェで締めれば濡れずにすむ。中華街の各店も商店街の店も、定休日や営業時間はばらばらで料金も時期で動くから、気になる店があれば出かける前に公式の案内を一度のぞいておくと安心だ。"
+    "closing": "歩き出しは神戸三宮センター街から。屋根の下を西へ流れていく人波に混ざって、神戸の繁華街の空気をまず体に入れる。ショーウィンドウを冷やかしているうちに、少し北へ気が向いて生田神社へ。繁華街のすぐ裏手とは思えない静けさで、縁結びの古社に手を合わせると、さっきまでの賑わいが嘘のように遠くなる。参拝を終えて南西へ下っていくと、赤い門と提灯が見えてくる。ここが今日の主役、南京町だ。焼き小籠包の鉄板がじゅうじゅう鳴り、豚まんの蒸籠から湯気が噴き上がる。買ったものは歩きながらではなく、中央の南京町広場のあずまやや各店の飲食スペースで味わうのがこの街の作法だから、湯気の立つ皿を手に空いた席を探すのも含めて楽しみたい。店によっては昼前から列が伸びるので、お腹が空いているなら開店すぐを狙うのが賢い。食べ足りた頃には、そのまま西へ続く元町商店街へ。老舗の甘味で口を甘くしながらアーケードを冷やかし歩き、最後はフラワーロード沿いの東遊園地へ抜けた。芝生に腰を下ろして、歩き疲れた足を都心のど真ん中で投げ出すと、食べてばかりだった半日がようやく落ち着く。雨に降られた日は、屋根のある三宮センター街・南京町・元町商店街の三つを軸にして、屋外の東遊園地は短く切り上げるか省き、アーケードのカフェで締めれば濡れずにすむ。中華街の各店も商店街の店も、定休日や営業時間はばらばらで料金も時期で動くから、気になる店があれば出かける前に公式の案内を一度のぞいておくと安心だ。"
   },
   "kansai-arima-onsen-walk": {
     "id": "kansai-arima-onsen-walk",
@@ -2547,7 +2547,7 @@ export const NEWGUIDE7_FEATURE_ARTICLES: Record<string, FeatureArticle> = {
             "v": "◎ 屋内の温泉施設"
           },
           {
-            "k": "おすすめ時間",
+            "k": "目安の時間",
             "v": "午前（さんぽの起点に）"
           }
         ],
@@ -2578,7 +2578,7 @@ export const NEWGUIDE7_FEATURE_ARTICLES: Record<string, FeatureArticle> = {
             "v": "△ 屋外の坂道（傘で散策可）"
           },
           {
-            "k": "おすすめ時間",
+            "k": "目安の時間",
             "v": "昼（昼食と街歩きを兼ねて）"
           }
         ],
@@ -2609,7 +2609,7 @@ export const NEWGUIDE7_FEATURE_ARTICLES: Record<string, FeatureArticle> = {
             "v": "○ 屋根のある堂と境内"
           },
           {
-            "k": "おすすめ時間",
+            "k": "目安の時間",
             "v": "昼過ぎ（坂歩きの休憩に）"
           }
         ],
@@ -2640,7 +2640,7 @@ export const NEWGUIDE7_FEATURE_ARTICLES: Record<string, FeatureArticle> = {
             "v": "△ 屋外の泉源(短時間向き)"
           },
           {
-            "k": "おすすめ時間",
+            "k": "目安の時間",
             "v": "昼〜午後（散策の途中で）"
           }
         ],
@@ -2653,7 +2653,7 @@ export const NEWGUIDE7_FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         "cuisine": "日帰り温泉",
         "area": "神戸市北区・有馬町",
         "purpose": "最後に入る。無色透明の銀泉でさっぱり締める",
-        "desc": "金の湯と並ぶ有馬の公営外湯で、こちらは無色透明の「銀泉」を楽しめる。炭酸を含む泉とラジウムを含む泉を用いた湯は、赤褐色の金泉とは対照的にさらりとした入り心地で、坂歩きで火照った体を最後に整えるのに向く。同じ温泉街で性質のまったく異なる二つの湯を一日で味わえるのが有馬の醍醐味で、金の湯と銀の湯を両方巡ってこそその違いがはっきり分かるのがこの施設ならではの魅力だ。湯本坂の上手、寺社が集まる一画の近くにあり、さんぽの締めくくりに立ち寄りやすい。金の湯との二館共通入浴券が用意されることもある。営業時間・定休日・料金は変わる場合があるため公式サイトで確認を。",
+        "desc": "金の湯と並ぶ有馬の公営外湯で、こちらは無色透明の「銀泉」を楽しめる。炭酸を含む泉とラジウムを含む泉を用いた湯は、赤褐色の金泉とは対照的にさらりとした入り心地で、坂歩きで火照った体を最後に鎮めるのに向く。同じ温泉街で性質のまったく異なる二つの湯を一日で味わえるのが有馬の醍醐味で、金の湯と銀の湯を両方巡ってこそその違いがはっきり分かるのがこの施設ならではの魅力だ。湯本坂の上手、寺社が集まる一画の近くにあり、さんぽの締めくくりに立ち寄りやすい。金の湯との二館共通入浴券が用意されることもある。営業時間・定休日・料金は変わる場合があるため公式サイトで確認を。",
         "images": [
           "https://upload.wikimedia.org/wikipedia/commons/thumb/8/86/170811_Gin-no-yu_Arima_Onsen_Kobe_Japan01bs.jpg/1280px-170811_Gin-no-yu_Arima_Onsen_Kobe_Japan01bs.jpg"
         ],
@@ -2671,7 +2671,7 @@ export const NEWGUIDE7_FEATURE_ARTICLES: Record<string, FeatureArticle> = {
             "v": "◎ 屋内の温泉施設"
           },
           {
-            "k": "おすすめ時間",
+            "k": "目安の時間",
             "v": "夕方（さんぽの締めに）"
           }
         ],
@@ -2733,7 +2733,7 @@ export const NEWGUIDE7_FEATURE_ARTICLES: Record<string, FeatureArticle> = {
             "v": "○ 国宝館・各堂は屋内"
           },
           {
-            "k": "おすすめ時間",
+            "k": "目安の時間",
             "v": "午前（開門直後）"
           }
         ],
@@ -2764,7 +2764,7 @@ export const NEWGUIDE7_FEATURE_ARTICLES: Record<string, FeatureArticle> = {
             "v": "△ 屋外・鹿は雨天でもいる"
           },
           {
-            "k": "おすすめ時間",
+            "k": "目安の時間",
             "v": "移動の道中いつでも"
           }
         ],
@@ -2795,7 +2795,7 @@ export const NEWGUIDE7_FEATURE_ARTICLES: Record<string, FeatureArticle> = {
             "v": "○ 大仏殿は屋内"
           },
           {
-            "k": "おすすめ時間",
+            "k": "目安の時間",
             "v": "昼前後"
           }
         ],
@@ -2826,7 +2826,7 @@ export const NEWGUIDE7_FEATURE_ARTICLES: Record<string, FeatureArticle> = {
             "v": "△ 参道は屋外・回廊は雨宿り可"
           },
           {
-            "k": "おすすめ時間",
+            "k": "目安の時間",
             "v": "午後"
           }
         ],
@@ -2857,7 +2857,7 @@ export const NEWGUIDE7_FEATURE_ARTICLES: Record<string, FeatureArticle> = {
             "v": "9:00〜17:00／開山3月第3土曜〜12月第2日曜（冬季閉山・公式確認）"
           },
           {
-            "k": "おすすめ時間",
+            "k": "目安の時間",
             "v": "夕方（閉山前の時間に注意）"
           }
         ],
@@ -2919,7 +2919,7 @@ export const NEWGUIDE7_FEATURE_ARTICLES: Record<string, FeatureArticle> = {
             "v": "△ 屋根のない屋外"
           },
           {
-            "k": "おすすめ時間",
+            "k": "目安の時間",
             "v": "午前（光がやわらかい時間帯）"
           }
         ],
@@ -2950,7 +2950,7 @@ export const NEWGUIDE7_FEATURE_ARTICLES: Record<string, FeatureArticle> = {
             "v": "○ 堂内拝観あり"
           },
           {
-            "k": "おすすめ時間",
+            "k": "目安の時間",
             "v": "午前〜正午（受付は夕方前に終了）"
           }
         ],
@@ -2981,7 +2981,7 @@ export const NEWGUIDE7_FEATURE_ARTICLES: Record<string, FeatureArticle> = {
             "v": "◎ 屋内中心"
           },
           {
-            "k": "おすすめ時間",
+            "k": "目安の時間",
             "v": "午後（休館日は公式で確認）"
           }
         ],
@@ -3012,7 +3012,7 @@ export const NEWGUIDE7_FEATURE_ARTICLES: Record<string, FeatureArticle> = {
             "v": "△ 屋外の参拝中心"
           },
           {
-            "k": "おすすめ時間",
+            "k": "目安の時間",
             "v": "午後（夕方前に参拝）"
           }
         ],
@@ -3043,7 +3043,7 @@ export const NEWGUIDE7_FEATURE_ARTICLES: Record<string, FeatureArticle> = {
             "v": "◎ 屋内展示"
           },
           {
-            "k": "おすすめ時間",
+            "k": "目安の時間",
             "v": "午後早め（開館時間が短め・公式確認）"
           }
         ],
@@ -3105,7 +3105,7 @@ export const NEWGUIDE7_FEATURE_ARTICLES: Record<string, FeatureArticle> = {
             "v": "△ 屋外デッキのため天候の影響あり"
           },
           {
-            "k": "おすすめ時間",
+            "k": "目安の時間",
             "v": "昼〜夕方"
           }
         ],
@@ -3136,7 +3136,7 @@ export const NEWGUIDE7_FEATURE_ARTICLES: Record<string, FeatureArticle> = {
             "v": "◎ 屋内のガラス張り展望フロア"
           },
           {
-            "k": "おすすめ時間",
+            "k": "目安の時間",
             "v": "昼または夕方"
           }
         ],
@@ -3291,7 +3291,7 @@ export const NEWGUIDE7_FEATURE_ARTICLES: Record<string, FeatureArticle> = {
             "v": "△ 参道は屋外。傘が必要"
           },
           {
-            "k": "おすすめ時間",
+            "k": "目安の時間",
             "v": "午前（こころの小径は9〜16時）"
           }
         ],
@@ -3446,7 +3446,7 @@ export const NEWGUIDE7_FEATURE_ARTICLES: Record<string, FeatureArticle> = {
             "v": "◎ ほぼ屋内で楽しめる"
           },
           {
-            "k": "おすすめ時間",
+            "k": "目安の時間",
             "v": "開館直後の午前"
           }
         ],
@@ -3477,7 +3477,7 @@ export const NEWGUIDE7_FEATURE_ARTICLES: Record<string, FeatureArticle> = {
             "v": "◎ 屋内施設"
           },
           {
-            "k": "おすすめ時間",
+            "k": "目安の時間",
             "v": "昼食どき(混雑前)"
           }
         ],
@@ -3508,7 +3508,7 @@ export const NEWGUIDE7_FEATURE_ARTICLES: Record<string, FeatureArticle> = {
             "v": "○ 船内見学は屋内中心"
           },
           {
-            "k": "おすすめ時間",
+            "k": "目安の時間",
             "v": "昼食後の午後"
           }
         ],
@@ -3539,7 +3539,7 @@ export const NEWGUIDE7_FEATURE_ARTICLES: Record<string, FeatureArticle> = {
             "v": "◎ 屋内施設"
           },
           {
-            "k": "おすすめ時間",
+            "k": "目安の時間",
             "v": "夕方前(晴天時の眺望)"
           }
         ],
@@ -3570,7 +3570,7 @@ export const NEWGUIDE7_FEATURE_ARTICLES: Record<string, FeatureArticle> = {
             "v": "△ 屋外・天候で運休あり"
           },
           {
-            "k": "おすすめ時間",
+            "k": "目安の時間",
             "v": "夕方〜日没(イルミネーション)"
           }
         ],
@@ -3632,7 +3632,7 @@ export const NEWGUIDE7_FEATURE_ARTICLES: Record<string, FeatureArticle> = {
             "v": "○ 屋根のあるカフェや参集殿あり"
           },
           {
-            "k": "おすすめ時間",
+            "k": "目安の時間",
             "v": "午前（人が少なく静か）"
           }
         ],
@@ -3663,7 +3663,7 @@ export const NEWGUIDE7_FEATURE_ARTICLES: Record<string, FeatureArticle> = {
             "v": "9:00〜17:00（入場16:30まで・公式確認）"
           },
           {
-            "k": "おすすめ時間",
+            "k": "目安の時間",
             "v": "昼前後（晴天時の展望）"
           }
         ],
@@ -3694,7 +3694,7 @@ export const NEWGUIDE7_FEATURE_ARTICLES: Record<string, FeatureArticle> = {
             "v": "◎ アーケード状で雨に強い"
           },
           {
-            "k": "おすすめ時間",
+            "k": "目安の時間",
             "v": "昼下がり（食べ歩き向き）"
           }
         ],
@@ -3725,7 +3725,7 @@ export const NEWGUIDE7_FEATURE_ARTICLES: Record<string, FeatureArticle> = {
             "v": "△ 屋外のため雨天は不向き"
           },
           {
-            "k": "おすすめ時間",
+            "k": "目安の時間",
             "v": "夕方（日没前後）"
           }
         ],
@@ -3756,7 +3756,7 @@ export const NEWGUIDE7_FEATURE_ARTICLES: Record<string, FeatureArticle> = {
             "v": "△ 屋外のため雨天は不向き"
           },
           {
-            "k": "おすすめ時間",
+            "k": "目安の時間",
             "v": "日没後（ライトアップ）"
           }
         ],
@@ -3818,7 +3818,7 @@ export const NEWGUIDE7_FEATURE_ARTICLES: Record<string, FeatureArticle> = {
             "v": "◎ 全区間が屋内"
           },
           {
-            "k": "おすすめ時間",
+            "k": "目安の時間",
             "v": "午前（買い物前の散策に）"
           }
         ],
@@ -3849,7 +3849,7 @@ export const NEWGUIDE7_FEATURE_ARTICLES: Record<string, FeatureArticle> = {
             "v": "△ 参拝は屋外"
           },
           {
-            "k": "おすすめ時間",
+            "k": "目安の時間",
             "v": "昼前（足湯で休憩）"
           }
         ],
@@ -3880,7 +3880,7 @@ export const NEWGUIDE7_FEATURE_ARTICLES: Record<string, FeatureArticle> = {
             "v": "◎ アーケードで濡れにくい"
           },
           {
-            "k": "おすすめ時間",
+            "k": "目安の時間",
             "v": "昼（食事に）"
           }
         ],
@@ -3911,7 +3911,7 @@ export const NEWGUIDE7_FEATURE_ARTICLES: Record<string, FeatureArticle> = {
             "v": "✕ 屋上は雨天閉鎖あり"
           },
           {
-            "k": "おすすめ時間",
+            "k": "目安の時間",
             "v": "土日祝の昼〜午後（展望台開放時）"
           }
         ],
@@ -3942,7 +3942,7 @@ export const NEWGUIDE7_FEATURE_ARTICLES: Record<string, FeatureArticle> = {
             "v": "✕ 屋外の芝生広場"
           },
           {
-            "k": "おすすめ時間",
+            "k": "目安の時間",
             "v": "午後（街歩きの締めに）"
           }
         ],
@@ -4004,7 +4004,7 @@ export const NEWGUIDE7_FEATURE_ARTICLES: Record<string, FeatureArticle> = {
             "v": "△ 屋外参拝が中心"
           },
           {
-            "k": "おすすめ時間",
+            "k": "目安の時間",
             "v": "夕方（散策の起点に）"
           }
         ],
@@ -4035,7 +4035,7 @@ export const NEWGUIDE7_FEATURE_ARTICLES: Record<string, FeatureArticle> = {
             "v": "◎ アーケードで天候不問"
           },
           {
-            "k": "おすすめ時間",
+            "k": "目安の時間",
             "v": "夕方（甘味休憩に）"
           }
         ],
@@ -4066,7 +4066,7 @@ export const NEWGUIDE7_FEATURE_ARTICLES: Record<string, FeatureArticle> = {
             "v": "○ 屋内中心・一部屋外"
           },
           {
-            "k": "おすすめ時間",
+            "k": "目安の時間",
             "v": "夕方（噴水ショーの時間帯）"
           }
         ],
@@ -4097,7 +4097,7 @@ export const NEWGUIDE7_FEATURE_ARTICLES: Record<string, FeatureArticle> = {
             "v": "◎ 駅直結・屋内"
           },
           {
-            "k": "おすすめ時間",
+            "k": "目安の時間",
             "v": "夕方〜日没前"
           }
         ],
@@ -4128,7 +4128,7 @@ export const NEWGUIDE7_FEATURE_ARTICLES: Record<string, FeatureArticle> = {
             "v": "△ 屋外・天候で休業あり"
           },
           {
-            "k": "おすすめ時間",
+            "k": "目安の時間",
             "v": "夜（18時以降）"
           }
         ],
@@ -4190,7 +4190,7 @@ export const NEWGUIDE7_FEATURE_ARTICLES: Record<string, FeatureArticle> = {
             "v": "△ 屋外中心"
           },
           {
-            "k": "おすすめ時間",
+            "k": "目安の時間",
             "v": "午前（涼しい時間帯）"
           }
         ],
@@ -4221,7 +4221,7 @@ export const NEWGUIDE7_FEATURE_ARTICLES: Record<string, FeatureArticle> = {
             "v": "◎ 屋内中心"
           },
           {
-            "k": "おすすめ時間",
+            "k": "目安の時間",
             "v": "昼前（暑さ・雨の避難先に）"
           }
         ],
@@ -4252,7 +4252,7 @@ export const NEWGUIDE7_FEATURE_ARTICLES: Record<string, FeatureArticle> = {
             "v": "△ 屋外中心"
           },
           {
-            "k": "おすすめ時間",
+            "k": "目安の時間",
             "v": "昼（芝生でのお弁当に）"
           }
         ],
@@ -4283,7 +4283,7 @@ export const NEWGUIDE7_FEATURE_ARTICLES: Record<string, FeatureArticle> = {
             "v": "月曜（祝日の場合は翌日）"
           },
           {
-            "k": "おすすめ時間",
+            "k": "目安の時間",
             "v": "午後（静かな休憩に）"
           }
         ],
@@ -4314,7 +4314,7 @@ export const NEWGUIDE7_FEATURE_ARTICLES: Record<string, FeatureArticle> = {
             "v": "△ 屋外中心（温室は屋内）"
           },
           {
-            "k": "おすすめ時間",
+            "k": "目安の時間",
             "v": "夕方（入園は閉園30分前まで）"
           }
         ],
@@ -4358,7 +4358,7 @@ export const NEWGUIDE7_FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         "cuisine": "参道・商店街",
         "area": "太宰府市宰府・表参道",
         "purpose": "午前に歩く。梅ヶ枝餅を片手に天満宮へ向かう",
-        "desc": "西鉄太宰府駅の改札を出てすぐ、天満宮の鳥居まで続く約250mの参道に、梅ヶ枝餅店やみやげ店、茶房が軒を連ねる。名物の梅ヶ枝餅は、道真公が愛した梅にちなむ薄い焼き餅で、参道沿いの多くの店が店先で焼きたてを売る(1個およそ130円・変動あり)。歩く楽しみのひとつが、参道の中ほどに立つ隈研吾氏設計のスターバックス太宰府天満宮表参道店で、約2,000本の杉材を斜めに組んだ木のトンネルのような店内が、伝統と現代を結ぶ門前町らしい一軒になっている。焼きたてを食べ歩きしながらゆっくり進むのがこの参道のおすすめの過ごし方だ。価格や営業は店ごとに異なり変動もあるため、気になる店は店頭で確認を。",
+        "desc": "西鉄太宰府駅の改札を出てすぐ、天満宮の鳥居まで続く約250mの参道に、梅ヶ枝餅店やみやげ店、茶房が軒を連ねる。名物の梅ヶ枝餅は、道真公が愛した梅にちなむ薄い焼き餅で、参道沿いの多くの店が店先で焼きたてを売る(1個およそ130円・変動あり)。歩く楽しみのひとつが、参道の中ほどに立つ隈研吾氏設計のスターバックス太宰府天満宮表参道店で、約2,000本の杉材を斜めに組んだ木のトンネルのような店内が、伝統と現代を結ぶ門前町らしい一軒になっている。焼きたてを食べ歩きしながらゆっくり進むのがこの参道ならではの過ごし方だ。価格や営業は店ごとに異なり変動もあるため、気になる店は店頭で確認を。",
         "images": [
           "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/%E5%A4%AA%E5%AE%B0%E5%BA%9C%E5%A4%A9%E6%BA%80%E5%AE%AE%E8%A1%A8%E5%8F%82%E9%81%93-IMGP1882b.JPG/1280px-%E5%A4%AA%E5%AE%B0%E5%BA%9C%E5%A4%A9%E6%BA%80%E5%AE%AE%E8%A1%A8%E5%8F%82%E9%81%93-IMGP1882b.JPG"
         ],
@@ -4376,7 +4376,7 @@ export const NEWGUIDE7_FEATURE_ARTICLES: Record<string, FeatureArticle> = {
             "v": "○ 軒先・茶房で雨宿り可"
           },
           {
-            "k": "おすすめ時間",
+            "k": "目安の時間",
             "v": "午前(混雑前)"
           }
         ],
@@ -4407,7 +4407,7 @@ export const NEWGUIDE7_FEATURE_ARTICLES: Record<string, FeatureArticle> = {
             "v": "△ 屋外の参道・境内が中心"
           },
           {
-            "k": "おすすめ時間",
+            "k": "目安の時間",
             "v": "午前〜昼"
           }
         ],
@@ -4469,7 +4469,7 @@ export const NEWGUIDE7_FEATURE_ARTICLES: Record<string, FeatureArticle> = {
             "v": "○ 雨の庭も風情があるが要確認"
           },
           {
-            "k": "おすすめ時間",
+            "k": "目安の時間",
             "v": "午後・新緑/紅葉期"
           }
         ],
@@ -4500,7 +4500,7 @@ export const NEWGUIDE7_FEATURE_ARTICLES: Record<string, FeatureArticle> = {
             "v": "✕ 屋外参拝が中心"
           },
           {
-            "k": "おすすめ時間",
+            "k": "目安の時間",
             "v": "夕方/紅葉・新緑期"
           }
         ],
@@ -4562,7 +4562,7 @@ export const NEWGUIDE7_FEATURE_ARTICLES: Record<string, FeatureArticle> = {
             "v": "△ 屋外・降灰や視界に注意"
           },
           {
-            "k": "おすすめ時間",
+            "k": "目安の時間",
             "v": "午前（光が山肌に回る時間帯）"
           }
         ],
@@ -4624,7 +4624,7 @@ export const NEWGUIDE7_FEATURE_ARTICLES: Record<string, FeatureArticle> = {
             "v": "△ 屋外・視界が悪い日は眺望が限られる"
           },
           {
-            "k": "おすすめ時間",
+            "k": "目安の時間",
             "v": "夕方前（街と桜島が見やすい時間帯）"
           }
         ],
@@ -4655,7 +4655,7 @@ export const NEWGUIDE7_FEATURE_ARTICLES: Record<string, FeatureArticle> = {
             "v": "◎ アーケードで濡れずに回れる"
           },
           {
-            "k": "おすすめ時間",
+            "k": "目安の時間",
             "v": "夕方〜夜（夕食と食べ歩き）"
           }
         ],
@@ -4686,7 +4686,7 @@ export const NEWGUIDE7_FEATURE_ARTICLES: Record<string, FeatureArticle> = {
             "v": "○ 船内・ターミナルは屋根あり"
           },
           {
-            "k": "おすすめ時間",
+            "k": "目安の時間",
             "v": "朝（桜島へ渡る一日の起点に）"
           }
         ],
@@ -4748,7 +4748,7 @@ export const NEWGUIDE7_FEATURE_ARTICLES: Record<string, FeatureArticle> = {
             "v": "○ アーケード・店内中心"
           },
           {
-            "k": "おすすめ時間",
+            "k": "目安の時間",
             "v": "朝（開店〜午前）"
           }
         ],
@@ -4779,7 +4779,7 @@ export const NEWGUIDE7_FEATURE_ARTICLES: Record<string, FeatureArticle> = {
             "v": "△ 屋外の遊歩道"
           },
           {
-            "k": "おすすめ時間",
+            "k": "目安の時間",
             "v": "午前〜日中"
           }
         ],
@@ -4810,7 +4810,7 @@ export const NEWGUIDE7_FEATURE_ARTICLES: Record<string, FeatureArticle> = {
             "v": "◎ 屋内見学中心"
           },
           {
-            "k": "おすすめ時間",
+            "k": "目安の時間",
             "v": "午前〜昼"
           }
         ],
@@ -4841,7 +4841,7 @@ export const NEWGUIDE7_FEATURE_ARTICLES: Record<string, FeatureArticle> = {
             "v": "○ 館内展示中心"
           },
           {
-            "k": "おすすめ時間",
+            "k": "目安の時間",
             "v": "昼前後"
           }
         ],
@@ -4872,7 +4872,7 @@ export const NEWGUIDE7_FEATURE_ARTICLES: Record<string, FeatureArticle> = {
             "v": "○ 展望は屋内"
           },
           {
-            "k": "おすすめ時間",
+            "k": "目安の時間",
             "v": "昼〜夕方・夜景"
           }
         ],
@@ -4893,7 +4893,7 @@ export const NEWGUIDE7_FEATURE_ARTICLES: Record<string, FeatureArticle> = {
     ],
     "quote": "朝の海鮮丼で温まった体のまま、緑の遊歩道を西へ。レンガの重みに少し背筋が伸びて、最後は塔の上で札幌をひと目に収める。歩いてつないだ、半日の中心。",
     "quoteCite": "マチノワ編集部",
-    "closing": "二条市場でほかほかの海鮮丼をかき込み、丼の温もりが残るうちに創成川を渡る。大通公園に入ると視界がふっと開けて、噴水の音とブロンズ像を横目に、緑の遊歩道をただ西へ西へと歩いた。日差しが心地よくて、つい足が止まる。公園を抜けて札幌市時計台へ。演武場のなかは思いのほか静かで、開拓期の札幌が板張りの床から立ちのぼってくるようだった。そこから北へ少し進むと、木立の奥に赤れんが庁舎が現れる。前庭でレンガの館を見上げ、展示をたどって北海道の歩んだ時間に触れると、市場の賑わいとはまた別の、どっしりした手応えが残った。最後は大通公園の東端へ引き返し、さっぽろテレビ塔に登る。さっきまで歩いていた緑の帯がまっすぐ西へ伸び、碁盤の目の街並みが足もとに広がっていて、自分の半日の道のりがそのまま地図になって見えた。市場の湯気から塔の上の眺めまで、ほとんど平坦な道を一筆書きにたどっただけなのに、ずいぶん遠くまで来た気がする。屋外を歩く区間が長いぶん、冬の凍った路面や寒さには一枚多めの上着で備えたい。雨や雪の日は遊歩道を短めに切り上げ、屋内の時計台と赤れんが庁舎、テレビ塔の展望を軸に、地下街を伝って歩けばいい。開いている時間や入館の条件は変わることもあるので、念のため公式で最新をのぞいてから出かけるのをおすすめしたい。"
+    "closing": "二条市場でほかほかの海鮮丼をかき込み、丼の温もりが残るうちに創成川を渡る。大通公園に入ると視界がふっと開けて、噴水の音とブロンズ像を横目に、緑の遊歩道をただ西へ西へと歩いた。日差しが心地よくて、つい足が止まる。公園を抜けて札幌市時計台へ。演武場のなかは思いのほか静かで、開拓期の札幌が板張りの床から立ちのぼってくるようだった。そこから北へ少し進むと、木立の奥に赤れんが庁舎が現れる。前庭でレンガの館を見上げ、展示をたどって北海道の歩んだ時間に触れると、市場の賑わいとはまた別の、どっしりした手応えが残った。最後は大通公園の東端へ引き返し、さっぽろテレビ塔に登る。さっきまで歩いていた緑の帯がまっすぐ西へ伸び、碁盤の目の街並みが足もとに広がっていて、自分の半日の道のりがそのまま地図になって見えた。市場の湯気から塔の上の眺めまで、ほとんど平坦な道を一筆書きにたどっただけなのに、ずいぶん遠くまで来た気がする。屋外を歩く区間が長いぶん、冬の凍った路面や寒さには一枚多めの上着で備えたい。雨や雪の日は遊歩道を短めに切り上げ、屋内の時計台と赤れんが庁舎、テレビ塔の展望を軸に、地下街を伝って歩けばいい。開いている時間や入館の条件は変わることもあるので、念のため公式で最新をのぞいてから出かけたい。"
   },
   "hokkaido-susukino-night-date": {
     "id": "hokkaido-susukino-night-date",
@@ -4902,7 +4902,7 @@ export const NEWGUIDE7_FEATURE_ARTICLES: Record<string, FeatureArticle> = {
     "kicker": "SUSUKINO NIGHT DATE",
     "title": "すすきの、灯りを継いで歩く夜のデート。展望台からネオン、そして山頂へ",
     "titleHTML": "すすきの、灯りを継いで歩く夜のデート。<br>展望台からネオン、そして山頂へ",
-    "subtitle": "JRタワーT38で街が暮れる瞬間を見て、テレビ塔から大通公園の灯りを正面に。すすきの交差点のネオンを抜け、藻岩山の大夜景へ上り、最後は中島公園の水辺で静かに息を整える夜。",
+    "subtitle": "JRタワーT38で街が暮れる瞬間を見て、テレビ塔から大通公園の灯りを正面に。すすきの交差点のネオンを抜け、藻岩山の大夜景へ上り、最後は中島公園の水辺で静かに息をつく夜。",
     "lede": "日が落ちかけた札幌駅前で、まず空の色が変わっていく。JRタワー展望室T38は地上約160m、窓の向こうで碁盤の目の街がひとつ、またひとつと窓灯りをともしていく瞬間を、ふたりで黙って眺めるのにちょうどいい高さだ。札幌中央区は札幌駅から大通、すすきのへと南北にまっすぐ通りが伸びていて、夜の見どころがその軸の上に素直に並ぶ。だからこの夜は、難しい乗り換えを考えずに灯りを継いで歩いていける。高い場所から街を見おろし、地上に降りてネオンの下を歩き、また高い場所へ上る——視点の高さを行き来するほど、同じ札幌の夜が違う表情で立ち上がってくる。終盤の藻岩山だけはこの軸を離れ、市電と無料シャトルバス、ロープウェイともーりすカーを乗り継ぐ少し長い移動になるが、その手間ごと夜のクライマックスだと思えばいい。山頂の営業開始時刻や上り最終便の時刻は季節で動くので、出発前に各施設の公式サイトでその日の運行を一度たしかめておくと、終盤で慌てずにすむ。",
     "date": "2026-06-13",
     "reading": "約7分",
@@ -4934,7 +4934,7 @@ export const NEWGUIDE7_FEATURE_ARTICLES: Record<string, FeatureArticle> = {
             "v": "◎ 駅直結の屋内展望"
           },
           {
-            "k": "おすすめ時間",
+            "k": "目安の時間",
             "v": "日没前後"
           }
         ],
@@ -4965,7 +4965,7 @@ export const NEWGUIDE7_FEATURE_ARTICLES: Record<string, FeatureArticle> = {
             "v": "○ 展望台は屋内"
           },
           {
-            "k": "おすすめ時間",
+            "k": "目安の時間",
             "v": "夜（点灯後）"
           }
         ],
@@ -4996,7 +4996,7 @@ export const NEWGUIDE7_FEATURE_ARTICLES: Record<string, FeatureArticle> = {
             "v": "△ 屋外（傘・アーケード併用）"
           },
           {
-            "k": "おすすめ時間",
+            "k": "目安の時間",
             "v": "夜（点灯後）"
           }
         ],
@@ -5027,7 +5027,7 @@ export const NEWGUIDE7_FEATURE_ARTICLES: Record<string, FeatureArticle> = {
             "v": "✕ 悪天候・濃霧時は眺望困難"
           },
           {
-            "k": "おすすめ時間",
+            "k": "目安の時間",
             "v": "夜（営業時間・最終便の時刻を要確認）"
           }
         ],
@@ -5058,7 +5058,7 @@ export const NEWGUIDE7_FEATURE_ARTICLES: Record<string, FeatureArticle> = {
             "v": "△ 屋外（園路中心に短時間で）"
           },
           {
-            "k": "おすすめ時間",
+            "k": "目安の時間",
             "v": "夜（締めの散策に）"
           }
         ],
@@ -5120,7 +5120,7 @@ export const NEWGUIDE7_FEATURE_ARTICLES: Record<string, FeatureArticle> = {
             "v": "△ 屋外。傘・防寒があれば可"
           },
           {
-            "k": "おすすめ時間",
+            "k": "目安の時間",
             "v": "昼〜夕暮れ（ガス灯点灯前後）"
           }
         ],
@@ -5182,7 +5182,7 @@ export const NEWGUIDE7_FEATURE_ARTICLES: Record<string, FeatureArticle> = {
             "v": "○ 店内移動中心。屋根のない区間あり"
           },
           {
-            "k": "おすすめ時間",
+            "k": "目安の時間",
             "v": "昼〜夕方前（早めの食べ歩き）"
           }
         ],
@@ -5213,7 +5213,7 @@ export const NEWGUIDE7_FEATURE_ARTICLES: Record<string, FeatureArticle> = {
             "v": "◎ 屋内"
           },
           {
-            "k": "おすすめ時間",
+            "k": "目安の時間",
             "v": "夕方前（歩き疲れの休憩に）"
           }
         ],
@@ -5244,7 +5244,7 @@ export const NEWGUIDE7_FEATURE_ARTICLES: Record<string, FeatureArticle> = {
             "v": "◎ 屋内。蒸気時計は屋外"
           },
           {
-            "k": "おすすめ時間",
+            "k": "目安の時間",
             "v": "夕方（コースの締め・蒸気時計）"
           }
         ],
@@ -5306,7 +5306,7 @@ export const NEWGUIDE7_FEATURE_ARTICLES: Record<string, FeatureArticle> = {
             "v": "△ 屋外のため傘が必要"
           },
           {
-            "k": "おすすめ時間",
+            "k": "目安の時間",
             "v": "朝（人が少なく静か）"
           }
         ],
@@ -5337,7 +5337,7 @@ export const NEWGUIDE7_FEATURE_ARTICLES: Record<string, FeatureArticle> = {
             "v": "◎ 屋内施設で天候不問"
           },
           {
-            "k": "おすすめ時間",
+            "k": "目安の時間",
             "v": "開館直後（比較的落ち着く）"
           }
         ],
@@ -5368,7 +5368,7 @@ export const NEWGUIDE7_FEATURE_ARTICLES: Record<string, FeatureArticle> = {
             "v": "△ 屋外の庭園のため傘が必要"
           },
           {
-            "k": "おすすめ時間",
+            "k": "目安の時間",
             "v": "午後（光がやわらぐ時間帯）"
           }
         ],
@@ -5399,7 +5399,7 @@ export const NEWGUIDE7_FEATURE_ARTICLES: Record<string, FeatureArticle> = {
             "v": "△ 屋外中心、三の丸の屋内施設は利用可"
           },
           {
-            "k": "おすすめ時間",
+            "k": "目安の時間",
             "v": "夕方前（日が傾く時間帯）"
           }
         ],
@@ -5430,7 +5430,7 @@ export const NEWGUIDE7_FEATURE_ARTICLES: Record<string, FeatureArticle> = {
             "v": "◎ アーケードで雨天でも歩ける"
           },
           {
-            "k": "おすすめ時間",
+            "k": "目安の時間",
             "v": "夕方（食事や買い物に)"
           }
         ],
@@ -5492,7 +5492,7 @@ export const NEWGUIDE7_FEATURE_ARTICLES: Record<string, FeatureArticle> = {
             "v": "△ 屋外・遠望中心"
           },
           {
-            "k": "おすすめ時間",
+            "k": "目安の時間",
             "v": "干潮前後（潮見表で確認）"
           }
         ],
@@ -5523,7 +5523,7 @@ export const NEWGUIDE7_FEATURE_ARTICLES: Record<string, FeatureArticle> = {
             "v": "○ 回廊は一部屋根あり"
           },
           {
-            "k": "おすすめ時間",
+            "k": "目安の時間",
             "v": "午前（満潮時は社殿が海に浮かぶ）"
           }
         ],
@@ -5554,7 +5554,7 @@ export const NEWGUIDE7_FEATURE_ARTICLES: Record<string, FeatureArticle> = {
             "v": "○ 千畳閣は屋根あり"
           },
           {
-            "k": "おすすめ時間",
+            "k": "目安の時間",
             "v": "昼前後（社殿と海を見下ろす）"
           }
         ],
@@ -5585,7 +5585,7 @@ export const NEWGUIDE7_FEATURE_ARTICLES: Record<string, FeatureArticle> = {
             "v": "◎ 開閉式屋根あり"
           },
           {
-            "k": "おすすめ時間",
+            "k": "目安の時間",
             "v": "昼（食事と食べ歩き）"
           }
         ],
@@ -5616,7 +5616,7 @@ export const NEWGUIDE7_FEATURE_ARTICLES: Record<string, FeatureArticle> = {
             "v": "△ 強風・荒天時は運休・山頂は視界不良"
           },
           {
-            "k": "おすすめ時間",
+            "k": "目安の時間",
             "v": "午後（下山時間に余裕を持って）"
           }
         ],
@@ -5660,7 +5660,7 @@ export const NEWGUIDE7_FEATURE_ARTICLES: Record<string, FeatureArticle> = {
         "cuisine": "鐘楼",
         "area": "川越市・幸町（一番街）",
         "purpose": "午前に見上げる。小江戸のシンボルとして町並みの中心に立つ",
-        "desc": "一番街の通りからわずかに入った路地に立つ、高さ約16mの木造の鐘楼。現在の塔は明治26年(1893)の川越大火の翌年に再建されたもので、城下町に時を告げてきた歴史をいまに伝える。鐘は毎日6時・12時・15時・18時の4回つかれ、その音は環境省の「残したい“日本の音風景100選”」に選ばれている。塔そのものに登ることはできないが、見上げる構図と背後の薬師神社を含めた一角が川越の象徴的な景観で、12時か15時の鐘の時刻に合わせて訪れると、音とともに小江戸の雰囲気を体感できる。鐘つきの時刻や周辺の状況は変わることがあるため、訪問前に公式情報での確認を。",
+        "desc": "一番街の通りからわずかに入った路地に立つ、高さ約16mの木造の鐘楼。現在の塔は明治26年(1893)の川越大火の翌年に再建されたもので、城下町に時を告げてきた歴史をいまに伝える。鐘は毎日6時・12時・15時・18時の4回つかれ、その音は環境省の「残したい日本の音風景」に選ばれている。塔そのものに登ることはできないが、見上げる構図と背後の薬師神社を含めた一角が川越の象徴的な景観で、12時か15時の鐘の時刻に合わせて訪れると、音とともに小江戸の雰囲気を体感できる。鐘つきの時刻や周辺の状況は変わることがあるため、訪問前に公式情報での確認を。",
         "images": [
           "https://upload.wikimedia.org/wikipedia/commons/thumb/5/56/Kawagoe_Toki_no_Kane_1.jpg/1280px-Kawagoe_Toki_no_Kane_1.jpg"
         ],
@@ -5678,7 +5678,7 @@ export const NEWGUIDE7_FEATURE_ARTICLES: Record<string, FeatureArticle> = {
             "v": "△ 屋外・見上げる見学"
           },
           {
-            "k": "おすすめ時間",
+            "k": "目安の時間",
             "v": "午前（12時・15時の鐘に合わせて）"
           }
         ],
@@ -5709,7 +5709,7 @@ export const NEWGUIDE7_FEATURE_ARTICLES: Record<string, FeatureArticle> = {
             "v": "△ 屋外（店内に退避可）"
           },
           {
-            "k": "おすすめ時間",
+            "k": "目安の時間",
             "v": "午前〜昼（食べ歩きと合わせて）"
           }
         ],
@@ -5740,7 +5740,7 @@ export const NEWGUIDE7_FEATURE_ARTICLES: Record<string, FeatureArticle> = {
             "v": "△ 屋外の路地（短時間向き）"
           },
           {
-            "k": "おすすめ時間",
+            "k": "目安の時間",
             "v": "昼前後（食べ歩きの休憩に）"
           }
         ],
@@ -5771,7 +5771,7 @@ export const NEWGUIDE7_FEATURE_ARTICLES: Record<string, FeatureArticle> = {
             "v": "○ 社殿・授与所は軒下あり"
           },
           {
-            "k": "おすすめ時間",
+            "k": "目安の時間",
             "v": "午後（夏は風鈴の夕刻も）"
           }
         ],
@@ -5802,7 +5802,7 @@ export const NEWGUIDE7_FEATURE_ARTICLES: Record<string, FeatureArticle> = {
             "v": "○ 客殿・書院は屋内拝観"
           },
           {
-            "k": "おすすめ時間",
+            "k": "目安の時間",
             "v": "午後（閉門前に余裕をもって）"
           }
         ],

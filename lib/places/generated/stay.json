@@ -896,7 +896,7 @@
         },
         {
           "path": "/_portal/vshops/lodging-8/g6.jpg",
-          "what": "「山のホテル大瀧」の文字が掲げられた、ホテルの入口",
+          "what": "「山のホテル大瀧」の文字が出た、ホテルの入口",
           "kind": "exterior",
           "width": 1200,
           "height": 800
@@ -1035,7 +1035,7 @@
         },
         {
           "path": "/_portal/vshops/lodging-12/g1.jpg",
-          "what": "「WONDERFUL GARDEN」の文字を掲げた板の壁と、柵で囲まれた芝の敷地",
+          "what": "「WONDERFUL GARDEN」の文字が入った板の壁と、柵で囲まれた芝の敷地",
           "kind": "exterior",
           "width": 1000,
           "height": 750
