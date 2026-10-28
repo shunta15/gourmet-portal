@@ -1,0 +1,70 @@
+{
+  "key": "tri-life-31",
+  "headline": "静岡県浜松市中央区中野町にある仏教寺院。宗派は臨済宗方広寺派で、山号は鶴翁山、寺号は松林禪寺。",
+  "lede": "浜松市中央区中野町にある「松林寺」です。宗派は臨済宗方広寺派で、山号は鶴翁山、寺号は松林禪寺といいます。",
+  "sections": [
+    {
+      "heading": "場所",
+      "body": "住所は静岡県浜松市中央区中野町331、電話は053-421-0336です。"
+    },
+    {
+      "heading": "宗派と寺号",
+      "body": "宗派は臨済宗方広寺派です。山号は鶴翁山、寺号は松林禪寺といいます。"
+    }
+  ],
+  "menus": [],
+  "tags": [],
+  "facts": [
+    {
+      "claim": "住所は静岡県浜松市中央区中野町331",
+      "source": "https://maps.google.com/?cid=11407123160860777328",
+      "quote": "中野町３３１",
+      "checkedAt": "2026-10-29"
+    },
+    {
+      "claim": "電話は053-421-0336",
+      "source": "https://maps.google.com/?cid=11407123160860777328",
+      "quote": "053-421-0336",
+      "checkedAt": "2026-10-29"
+    },
+    {
+      "claim": "業種の表示は仏教寺院",
+      "source": "https://maps.google.com/?cid=11407123160860777328",
+      "quote": "仏教寺院",
+      "checkedAt": "2026-10-29"
+    },
+    {
+      "claim": "静岡県浜松市中央区中野町にある寺院",
+      "source": "https://ja.wikipedia.org/wiki/%E6%9D%BE%E6%9E%97%E5%AF%BA",
+      "quote": "静岡県浜松市中央区中野町にある",
+      "checkedAt": "2026-10-29"
+    },
+    {
+      "claim": "宗派は臨済宗方広寺派",
+      "source": "https://ja.wikipedia.org/wiki/%E6%9D%BE%E6%9E%97%E5%AF%BA",
+      "quote": "臨済宗方広寺派",
+      "checkedAt": "2026-10-29"
+    },
+    {
+      "claim": "山号は鶴翁山、寺号は松林禪寺",
+      "source": "https://ja.wikipedia.org/wiki/%E6%9D%BE%E6%9E%97%E5%AF%BA",
+      "quote": "鶴翁山松林禪寺",
+      "checkedAt": "2026-10-29"
+    }
+  ],
+  "sources": [
+    {
+      "label": "参考ページ(Wikipedia)",
+      "url": "https://ja.wikipedia.org/wiki/%E6%9D%BE%E6%9E%97%E5%AF%BA"
+    },
+    {
+      "label": "参考ページ(Weblio辞書)",
+      "url": "https://www.weblio.jp/content/%E6%9D%BE%E6%9E%97%E5%AF%BA"
+    },
+    {
+      "label": "Google マップ",
+      "url": "https://maps.google.com/?cid=11407123160860777328"
+    }
+  ],
+  "notes": "automation/v2/write.mjs が 2026-10-29 に claude -p --model sonnet で作成。事実の裏取り: 6/6 件(quote が出どころにあるもの)。裏取りに通らなかった facts は載せていない。"
+}

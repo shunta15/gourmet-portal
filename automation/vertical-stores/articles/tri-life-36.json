@@ -1,0 +1,165 @@
+{
+  "key": "tri-life-36",
+  "headline": "鳥取県倉吉市鍛冶町にある曹洞宗の寺院で、元禄12年(1699年)に鳥取池田藩家老・荒尾志摩守家の菩提寺として建立された。境内には直径8mの「九曜星占盤」という占い盤がある。",
+  "lede": "倉吉市にある「満正寺」です。元禄12年(1699年)、鳥取池田藩の城代家老を務めた荒尾志摩守家の菩提寺として建立されました。本堂の本尊は釈迦如来で、境内には直径8mの「九曜星占盤」という占い盤があります。",
+  "sections": [
+    {
+      "heading": "由緒",
+      "body": "元禄12年(1699年)、鳥取池田藩の城代家老を務めた荒尾志摩守家の菩提寺として建立されました。曹洞宗の寺院で、本堂の本尊は釈迦如来です。堂内左側には倉吉を治めた荒尾公、右側には薬師如来と十二神将が祀られています。"
+    },
+    {
+      "heading": "九曜星占盤",
+      "body": "境内には、直径8mの石の占い盤「九曜星占盤」があります。平成22年秋に新設されたもので、生年月日から導く星をもとに相性を占う仕組みです。九曜星占盤は満正寺の登録商標です。"
+    },
+    {
+      "heading": "漫画・映画の舞台",
+      "body": "谷口ジロー作の漫画「遥かな町へ」では、主人公が境内でタイムリープする場所として登場します。令和8年10月9日には、同作を原作とした映画「遥かな町へ」が全国公開されました。"
+    },
+    {
+      "heading": "アクセス・駐車場",
+      "body": "JR山陰線倉吉駅から車で9分の場所にあります。平日の駐車場は山門前に、土曜・日曜・祝日は臨時駐車場があり、大型バスの駐車にも対応しています。天候が荒れている際は、参拝を休止する場合があります。"
+    }
+  ],
+  "menus": [
+    {
+      "name": "九曜星占盤"
+    }
+  ],
+  "tags": [
+    {
+      "tag": "駐車場あり",
+      "factIndex": 11
+    },
+    {
+      "tag": "体験あり",
+      "factIndex": 5
+    }
+  ],
+  "facts": [
+    {
+      "claim": "元禄12年(1699年)、曹洞宗の寺院として建立された",
+      "source": "https://9you27.ldblog.jp/",
+      "quote": "元禄12年（1699年）、倉吉荒尾家によって",
+      "checkedAt": "2026-10-29"
+    },
+    {
+      "claim": "鳥取池田藩城代家老・荒尾志摩守家の菩提寺として建立された",
+      "source": "https://9you27.ldblog.jp/archives/1347537.html",
+      "quote": "鳥取池田藩城代家老 荒尾志摩守公の",
+      "checkedAt": "2026-10-29"
+    },
+    {
+      "claim": "本堂の本尊は釈迦如来である",
+      "source": "https://9you27.ldblog.jp/archives/929538.html",
+      "quote": "本堂の真ん中の本尊様は、お釈迦様",
+      "checkedAt": "2026-10-29"
+    },
+    {
+      "claim": "堂内左側に倉吉藩家老の荒尾公が祀られている",
+      "source": "https://9you27.ldblog.jp/archives/929538.html",
+      "quote": "堂内左側には、倉吉の殿様、池田藩家老の荒尾公",
+      "checkedAt": "2026-10-29"
+    },
+    {
+      "claim": "堂内右側に薬師如来と十二神将が祀られている",
+      "source": "https://9you27.ldblog.jp/archives/929538.html",
+      "quote": "堂内右側には、病を癒す、薬師如来と十二神将が",
+      "checkedAt": "2026-10-29"
+    },
+    {
+      "claim": "境内に直径8mの「九曜星占盤」という石の占い盤がある",
+      "source": "https://9you27.ldblog.jp/archives/929538.html",
+      "quote": "直径８ｍの巨大星占盤は、たぶん",
+      "checkedAt": "2026-10-29"
+    },
+    {
+      "claim": "九曜星占盤は満正寺の登録商標である",
+      "source": "https://9you27.ldblog.jp/",
+      "quote": "九曜星占盤は満正寺の登録商標です。",
+      "checkedAt": "2026-10-29"
+    },
+    {
+      "claim": "境内の九曜星占盤は平成22年秋に新設された",
+      "source": "https://9you27.ldblog.jp/archives/1347537.html",
+      "quote": "境内には、（平成22年秋新設）",
+      "checkedAt": "2026-10-29"
+    },
+    {
+      "claim": "谷口ジロー作の漫画「遥かな町へ」で、主人公が境内でタイムリープする場所として登場する",
+      "source": "https://9you27.ldblog.jp/",
+      "quote": "谷口ジロー作漫画「遥かな町へ」で",
+      "checkedAt": "2026-10-29"
+    },
+    {
+      "claim": "令和8年10月9日に映画「遥かな町へ」が全国公開された",
+      "source": "https://9you27.ldblog.jp/",
+      "quote": "令和８年10月９日映画「遥かな町へ」全国公開",
+      "checkedAt": "2026-10-29"
+    },
+    {
+      "claim": "JR山陰線倉吉駅から車で9分の場所にある",
+      "source": "https://9you27.ldblog.jp/archives/1347058.html",
+      "quote": "ＪＲ山陰線倉吉駅から車で９分",
+      "checkedAt": "2026-10-29"
+    },
+    {
+      "claim": "平日の駐車場は山門前にある",
+      "source": "https://9you27.ldblog.jp/archives/1347058.html",
+      "quote": "平日の駐車場は、山門前にあります。",
+      "checkedAt": "2026-10-29"
+    },
+    {
+      "claim": "土日祝日は臨時駐車場がある",
+      "source": "https://9you27.ldblog.jp/archives/1347058.html",
+      "quote": "土日（祝祭日）臨時駐車場",
+      "checkedAt": "2026-10-29"
+    },
+    {
+      "claim": "大型バスも駐車できる",
+      "source": "https://9you27.ldblog.jp/archives/1347058.html",
+      "quote": "大型バスも駐車できます。",
+      "checkedAt": "2026-10-29"
+    },
+    {
+      "claim": "住所は鳥取県倉吉市鍛冶町１－２９４８である",
+      "source": "https://9you27.ldblog.jp/archives/1347058.html",
+      "quote": "鳥取県倉吉市鍛冶町１－２９４８",
+      "checkedAt": "2026-10-29"
+    },
+    {
+      "claim": "天候が荒れている際は参拝を休止する場合がある",
+      "source": "https://9you27.ldblog.jp/",
+      "quote": "天候が荒れている時（暴風雨等）、休場している場合が",
+      "checkedAt": "2026-10-29"
+    },
+    {
+      "claim": "Google マップの業種表示は仏教寺院である",
+      "source": "https://maps.google.com/?cid=1273607343521860221",
+      "quote": "仏教寺院",
+      "checkedAt": "2026-10-29"
+    }
+  ],
+  "sources": [
+    {
+      "label": "公式サイト",
+      "url": "https://9you27.ldblog.jp/"
+    },
+    {
+      "label": "公式サイト(アクセス・駐車場)",
+      "url": "https://9you27.ldblog.jp/archives/1347058.html"
+    },
+    {
+      "label": "公式サイト(ご案内)",
+      "url": "https://9you27.ldblog.jp/archives/1347537.html"
+    },
+    {
+      "label": "公式サイト(占い方)",
+      "url": "https://9you27.ldblog.jp/archives/929538.html"
+    },
+    {
+      "label": "Google マップ",
+      "url": "https://maps.google.com/?cid=1273607343521860221"
+    }
+  ],
+  "notes": "automation/v2/write.mjs が 2026-10-29 に claude -p --model sonnet で作成。事実の裏取り: 17/17 件(quote が出どころにあるもの)。裏取りに通らなかった facts は載せていない。"
+}

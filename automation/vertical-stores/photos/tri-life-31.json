@@ -1,0 +1,56 @@
+{
+  "key": "tri-life-31",
+  "images": [
+    {
+      "path": "/_portal/vshops/tri-life-31/g05.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9QUchF4piE9EdvvhfiSXJJoKWianqI0o3IXU7ELthItomOxmfT0agtKpK6Me5K3UBkAHXjemB2l4vLrpW59p3fPqxgkld3kAxPLXSQmjy8E06Klx4ipXV-VpsEagxma9kkB_7ACEg=s1200",
+      "pageUrl": "https://maps.google.com/?cid=11407123160860777328",
+      "what": "松の木と砂利の参道、木製のベンチがある境内",
+      "kind": "exterior",
+      "width": 900,
+      "height": 1200,
+      "source": "Google マップ"
+    },
+    {
+      "path": "/_portal/vshops/tri-life-31/g06.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9Qjw_eEb9CvNj9ilyZIcVXpxxuD45pUU4obZEJCsDnWhou3Ex2M-lwRxmyWmZwNMoYZ_yYzXLaeqRTeLTvBOwd8c1yDRxB8utCvay3QLDlByJd0P3Oftc-9b8JkG4MZkF1tRvAxMyKs4glI=s1200",
+      "pageUrl": "https://maps.google.com/?cid=11407123160860777328",
+      "what": "庭園の池に石が配され木々が映り込む風景",
+      "kind": "exterior",
+      "width": 1200,
+      "height": 901,
+      "source": "Google マップ"
+    },
+    {
+      "path": "/_portal/vshops/tri-life-31/g08.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9S-6EMa9fr_bumAE6dwWbNJwDXBJspkN63CoOjh-xOtVO4QzAk3jB1ZpO9GNUjOFxyFeajKIgD5Y9vj75YG7brVJiAVava_7FaXpaw38wIQq1iqNop21s6pvDKpt37sZDQPYduX3A=s1200",
+      "pageUrl": "https://maps.google.com/?cid=11407123160860777328",
+      "what": "木造の小さなお堂が建つ境内の一角",
+      "kind": "exterior",
+      "width": 900,
+      "height": 1200,
+      "source": "Google マップ"
+    },
+    {
+      "path": "/_portal/vshops/tri-life-31/g09.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9Tmro6F97w7SvJ-I7kwtnbagP3ZCsLruPrvwTC_uR2JAOyHYEltR8-v9uEbQIQtoXMk2X_9c0teUR14nYU3PXhqVVs4a7HJv9WhvxA2RzjW6M0BOAncBmvKiUJ3gMVugwFTsHMx6Q=s1200",
+      "pageUrl": "https://maps.google.com/?cid=11407123160860777328",
+      "what": "石灯籠と石塔が並ぶ境内入り口付近の風景",
+      "kind": "exterior",
+      "width": 1200,
+      "height": 900,
+      "source": "Google マップ"
+    },
+    {
+      "path": "/_portal/vshops/tri-life-31/g10.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9RywlPYv7c87YRgn8ecvo7XtpV1doL3MjEijDHUeav7_v0ojcQQuSUXiBjGGoZQY7yCJUOhREm4o4fQxCfxR-A3Q79QZm5-c9nUZ1V2_8ZBPhu3UvicqiWjycOv4jx7U0bs4H7GsaLapDHw=s1200",
+      "pageUrl": "https://maps.google.com/?cid=11407123160860777328",
+      "what": "石碑や庭木が並ぶ境内の通路",
+      "kind": "exterior",
+      "width": 1200,
+      "height": 901,
+      "source": "Google マップ"
+    }
+  ],
+  "note": "automation/v2/write.mjs が 2026-10-28T21:08:42.330Z に取得。店の実写だけ(AI 画像・汎用画像・地図・ロゴ・顔が大きい画像は除外)。"
+}

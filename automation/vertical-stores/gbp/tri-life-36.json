@@ -1,0 +1,32 @@
+{
+  "tab": "トリニティアポ",
+  "tabEn": "tri-life",
+  "row": 36,
+  "sheet": {
+    "name": "満正寺",
+    "address": "",
+    "url": "https://www.google.com/maps/search/?api=1&query=%E6%BA%80%E6%AD%A3%E5%AF%BA%20085-822-3468%20",
+    "type": "寺",
+    "d1": "",
+    "d2": ""
+  },
+  "urlKind": "mapsApi",
+  "route": "第1段(verify-gbp.mjs)で確認済み",
+  "verdict": "一致",
+  "verdictReason": "手がかり: 店名＋電話＋住所(番地まで)。電話が一致／店名: exact(シート「満正寺」/ マップ「満正寺」)／住所(シート): exact・町名・番地とも一致",
+  "place": {
+    "name": "満正寺",
+    "address": "鳥取県倉吉市鍛冶町１丁目２９４８",
+    "category": "仏教寺院",
+    "lat": 35.4297712,
+    "lng": 133.816816,
+    "gbpUrl": "https://maps.google.com/?cid=1273607343521860221",
+    "phone": "0858-22-3468",
+    "website": "http://9you27.ldblog.jp/",
+    "hours": null,
+    "reserveLinks": [],
+    "statusSignals": [],
+    "closedSignal": false
+  },
+  "fetchedAt": "2026-10-28T20:51:09.661Z"
+}

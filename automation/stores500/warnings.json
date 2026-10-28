@@ -2671,5 +2671,45 @@
       "営業時間が取れていない（noindex）",
       "cuisine は GBPカテゴリ"
     ]
+  },
+  "r785": {
+    "articleId": "CafeBarMichill",
+    "name": "Cafe&Bar Michill",
+    "warnings": [
+      "営業時間が取れていない（noindex）",
+      "cuisine は GBPカテゴリ"
+    ]
+  },
+  "r786": {
+    "articleId": "retroG＆Bar",
+    "name": "retro G＆Bar",
+    "warnings": [
+      "営業時間が取れていない（noindex）",
+      "cuisine は GBPカテゴリ"
+    ]
+  },
+  "r787": {
+    "articleId": "アルカード",
+    "name": "アルカード",
+    "warnings": [
+      "desc は lede から事実の文を選べず、事実から作った定型文",
+      "営業時間が取れていない（noindex）",
+      "cuisine は GBPカテゴリ"
+    ]
+  },
+  "r788": {
+    "articleId": "月のうさぎ",
+    "name": "月のうさぎ",
+    "warnings": [
+      "営業時間が取れていない（noindex）",
+      "cuisine は GBPカテゴリ"
+    ]
+  },
+  "r789": {
+    "articleId": "HANA・AKARI善",
+    "name": "HANA・AKARI 善",
+    "warnings": [
+      "営業時間が取れていない（noindex）"
+    ]
   }
 }

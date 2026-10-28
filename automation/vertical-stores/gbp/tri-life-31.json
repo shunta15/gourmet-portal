@@ -1,0 +1,32 @@
+{
+  "tab": "トリニティアポ",
+  "tabEn": "tri-life",
+  "row": 31,
+  "sheet": {
+    "name": "松林寺",
+    "address": "",
+    "url": "https://www.google.com/maps/search/?api=1&query=%E6%9D%BE%E6%9E%97%E5%AF%BA%20053-421-0336%20",
+    "type": "寺",
+    "d1": "",
+    "d2": ""
+  },
+  "urlKind": "mapsApi",
+  "route": "第1段(verify-gbp.mjs)で確認済み",
+  "verdict": "一致",
+  "verdictReason": "手がかり: 店名＋電話＋住所(番地まで)。電話が一致／店名: exact(シート「松林寺」/ マップ「松林寺」)／住所(シート): exact・町名・番地とも一致",
+  "place": {
+    "name": "松林寺",
+    "address": "静岡県浜松市中央区中野町３３１",
+    "category": "仏教寺院",
+    "lat": 34.7292298,
+    "lng": 137.7928074,
+    "gbpUrl": "https://maps.google.com/?cid=11407123160860777328",
+    "phone": "053-421-0336",
+    "website": null,
+    "hours": null,
+    "reserveLinks": [],
+    "statusSignals": [],
+    "closedSignal": false
+  },
+  "fetchedAt": "2026-10-28T20:46:20.111Z"
+}

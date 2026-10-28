@@ -1,0 +1,32 @@
+{
+  "tab": "トリニティアポ",
+  "tabEn": "tri-life",
+  "row": 35,
+  "sheet": {
+    "name": "阿沼美神社",
+    "address": "",
+    "url": "https://www.google.com/maps/search/?api=1&query=%E9%98%BF%E6%B2%BC%E7%BE%8E%E7%A5%9E%E7%A4%BE%20089-989-7307%20",
+    "type": "その他",
+    "d1": "",
+    "d2": ""
+  },
+  "urlKind": "mapsApi",
+  "route": "第1段(verify-gbp.mjs)で確認済み",
+  "verdict": "一致",
+  "verdictReason": "手がかり: 店名＋電話。電話が一致／店名: exact(シート「阿沼美神社」/ マップ「阿沼美神社」)／住所(シート): none・町名までがちがう（シート:愛媛県松山市平田町宮内 / マップ:愛媛県松山市平田町）",
+  "place": {
+    "name": "阿沼美神社",
+    "address": "愛媛県松山市平田町９８３",
+    "category": "神社",
+    "lat": 33.8881365,
+    "lng": 132.7546554,
+    "gbpUrl": "https://maps.google.com/?cid=1312916428526990560",
+    "phone": "089-989-7307",
+    "website": "http://ehime-jinjacho.jp/jinja/?p=5533",
+    "hours": null,
+    "reserveLinks": [],
+    "statusSignals": [],
+    "closedSignal": false
+  },
+  "fetchedAt": "2026-10-28T20:50:02.637Z"
+}

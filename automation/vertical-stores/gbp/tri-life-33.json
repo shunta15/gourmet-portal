@@ -1,0 +1,32 @@
+{
+  "tab": "トリニティアポ",
+  "tabEn": "tri-life",
+  "row": 33,
+  "sheet": {
+    "name": "立江寺",
+    "address": "",
+    "url": "https://www.google.com/maps/search/?api=1&query=%E7%AB%8B%E6%B1%9F%E5%AF%BA%20088-537-1019%20",
+    "type": "その他",
+    "d1": "",
+    "d2": ""
+  },
+  "urlKind": "mapsApi",
+  "route": "第1段(verify-gbp.mjs)で確認済み",
+  "verdict": "一致",
+  "verdictReason": "手がかり: 店名＋電話。電話が一致／店名: contains(シート「立江寺」/ マップ「四国八十八ヶ所霊場 第19番札所 立江寺」)",
+  "place": {
+    "name": "四国八十八ヶ所霊場 第19番札所 立江寺",
+    "address": "徳島県小松島市立江町若松１３",
+    "category": "仏教寺院",
+    "lat": 33.9677729,
+    "lng": 134.6061674,
+    "gbpUrl": "https://maps.google.com/?cid=2611034203346308723",
+    "phone": "0885-37-1019",
+    "website": "https://www.tatsueji.com/",
+    "hours": null,
+    "reserveLinks": [],
+    "statusSignals": [],
+    "closedSignal": false
+  },
+  "fetchedAt": "2026-10-28T20:48:52.313Z"
+}

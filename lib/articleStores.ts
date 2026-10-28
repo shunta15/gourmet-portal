@@ -16185,6 +16185,245 @@ export const ARTICLE_STORES: Restaurant[] = [
       "牛島駅"
     ],
     "featureId": "からあげ鳥元"
+  },
+  {
+    "id": "r785",
+    "name": "Cafe&Bar Michill",
+    "cuisine": "カフェ・喫茶",
+    "area": "愛知県・豊田市",
+    "region": "nagoya",
+    "shape": "square",
+    "image": "/restaurants/teleapo-CafeBarMichill/hero.jpg",
+    "heroImages": [
+      "/restaurants/teleapo-CafeBarMichill/hero.jpg",
+      "/restaurants/teleapo-CafeBarMichill/point1.jpg",
+      "/restaurants/teleapo-CafeBarMichill/point3.jpg"
+    ],
+    "gallery": [
+      "/restaurants/teleapo-CafeBarMichill/hero.jpg",
+      "/restaurants/teleapo-CafeBarMichill/point1.jpg",
+      "/restaurants/teleapo-CafeBarMichill/point3.jpg"
+    ],
+    "desc": "Cafe&Bar Michillは、愛知県豊田市平芝町2丁目、ケヤキコートビルの1階にある。",
+    "address": "愛知県豊田市平芝町2丁目1-7 ケヤキコートビル 1F",
+    "hours": "—（訪問前に公式確認）",
+    "closed": "—（訪問前に公式確認）",
+    "seats": "—（訪問前に公式確認）",
+    "nearest": "—",
+    "phone": "0565-85-8887",
+    "instagram": "https://www.instagram.com/michill2026",
+    "source": {
+      "label": "Google ビジネスプロフィール",
+      "url": "https://maps.google.com/?cid=11711847316236491475"
+    },
+    "body": [
+      "Cafe&Bar Michillは、愛知県豊田市にあるお店です。業態は「カフェ・喫茶」、所在地は愛知県豊田市平芝町2丁目1-7 ケヤキコートビル 1Fです。マチノワ編集部の特集記事では、「カフェタイムとバータイムの二部制で営業」・「「サンハウスカフェ」跡地にオープンした店」などを取り上げています。",
+      "営業時間と定休日は取得できていないため、訪問前に公式の情報でご確認ください。営業時間や価格は変わることがあるため、訪問前に公式サイトやSNS、お電話でご確認ください。"
+    ],
+    "highlights": [
+      "カフェタイムとバータイムの二部制で営業",
+      "「サンハウスカフェ」跡地にオープンした店",
+      "デザート・カフェメニューとカクテルをそろえる",
+      "ケヤキコートビル1Fという立地"
+    ],
+    "tags": [
+      "カフェ・喫茶",
+      "豊田市"
+    ],
+    "featureId": "CafeBarMichill"
+  },
+  {
+    "id": "r786",
+    "name": "retro G＆Bar",
+    "cuisine": "バー",
+    "area": "宮城県・仙台市青葉区",
+    "region": "miyagi",
+    "shape": "square",
+    "image": "/restaurants/teleapo-retroG＆Bar/hero.jpg",
+    "heroImages": [
+      "/restaurants/teleapo-retroG＆Bar/hero.jpg",
+      "/restaurants/teleapo-retroG＆Bar/point1.jpg",
+      "/restaurants/teleapo-retroG＆Bar/point2.jpg",
+      "/restaurants/teleapo-retroG＆Bar/point3.jpg",
+      "/restaurants/teleapo-retroG＆Bar/point4.jpg"
+    ],
+    "gallery": [
+      "/restaurants/teleapo-retroG＆Bar/hero.jpg",
+      "/restaurants/teleapo-retroG＆Bar/point1.jpg",
+      "/restaurants/teleapo-retroG＆Bar/point2.jpg",
+      "/restaurants/teleapo-retroG＆Bar/point3.jpg",
+      "/restaurants/teleapo-retroG＆Bar/point4.jpg"
+    ],
+    "desc": "retro G＆Barは、宮城県仙台市青葉区国分町二丁目のTONEYAビル5階にある。繁華街として知られる国分町の中にあって、占いとお酒・食事を組み合わせたバーとして営業している。",
+    "address": "宮城県仙台市青葉区国分町2丁目7-2 5F",
+    "hours": "—（訪問前に公式確認）",
+    "closed": "—（訪問前に公式確認）",
+    "seats": "16席",
+    "nearest": "—",
+    "phone": "022-290-1101",
+    "source": {
+      "label": "Google ビジネスプロフィール",
+      "url": "https://maps.google.com/?cid=14175612913790442467"
+    },
+    "body": [
+      "retro G＆Barは、宮城県仙台市青葉区にあるお店です。業態は「バー」、所在地は宮城県仙台市青葉区国分町2丁目7-2 5Fです。マチノワ編集部の特集記事では、「占いと飲食を組み合わせたバーのコンセプト」・「選べる占いとコース料理・飲み放題のセット」などを取り上げています。",
+      "営業時間と定休日は取得できていないため、訪問前に公式の情報でご確認ください。席は16席。営業時間や価格は変わることがあるため、訪問前に公式サイトやSNS、お電話でご確認ください。"
+    ],
+    "highlights": [
+      "占いと飲食を組み合わせたバーのコンセプト",
+      "選べる占いとコース料理・飲み放題のセット",
+      "ウイスキーやジンなどがそろう100種類以上の飲み放題",
+      "お通し付きのおつまみと16席の店内",
+      "8名から17名までの貸切利用とアクセス"
+    ],
+    "tags": [
+      "バー",
+      "青葉区"
+    ],
+    "featureId": "retroG＆Bar"
+  },
+  {
+    "id": "r787",
+    "name": "アルカード",
+    "cuisine": "バー",
+    "area": "岡山県・岡山市北区",
+    "region": "okayama",
+    "shape": "square",
+    "image": "/restaurants/teleapo-アルカード/hero.jpg",
+    "heroImages": [
+      "/restaurants/teleapo-アルカード/hero.jpg",
+      "/restaurants/teleapo-アルカード/point1.jpg",
+      "/restaurants/teleapo-アルカード/point2.jpg",
+      "/restaurants/teleapo-アルカード/point3.jpg"
+    ],
+    "gallery": [
+      "/restaurants/teleapo-アルカード/hero.jpg",
+      "/restaurants/teleapo-アルカード/point1.jpg",
+      "/restaurants/teleapo-アルカード/point2.jpg",
+      "/restaurants/teleapo-アルカード/point3.jpg"
+    ],
+    "desc": "岡山県岡山市北区のバー。最寄りは西大寺町電停から徒歩1分。",
+    "address": "岡山県岡山市北区表町2丁目4-35",
+    "hours": "—（訪問前に公式確認）",
+    "closed": "—（訪問前に公式確認）",
+    "seats": "8席(カウンターのみ)",
+    "nearest": "西大寺町電停から徒歩1分",
+    "phone": "090-8608-2222",
+    "source": {
+      "label": "Google ビジネスプロフィール",
+      "url": "https://maps.google.com/?cid=1060586705399841664"
+    },
+    "body": [
+      "アルカードは、岡山県岡山市北区にあるお店です。業態は「バー」、所在地は岡山県岡山市北区表町2丁目4-35、最寄りは西大寺町電停から徒歩1分です。マチノワ編集部の特集記事では、「カウンターのみ8席のバー」・「全席喫煙可の造り」などを取り上げています。",
+      "営業時間と定休日は取得できていないため、訪問前に公式の情報でご確認ください。席は8席(カウンターのみ)。営業時間や価格は変わることがあるため、訪問前に公式サイトやSNS、お電話でご確認ください。"
+    ],
+    "highlights": [
+      "カウンターのみ8席のバー",
+      "全席喫煙可の造り",
+      "西大寺町電停から徒歩1分、元町ビル1階"
+    ],
+    "tags": [
+      "バー",
+      "北区"
+    ],
+    "featureId": "アルカード"
+  },
+  {
+    "id": "r788",
+    "name": "月のうさぎ",
+    "cuisine": "ラーメン屋",
+    "area": "三重県・松阪市",
+    "region": "mie",
+    "shape": "square",
+    "image": "/restaurants/teleapo-月のうさぎ/hero.jpg",
+    "heroImages": [
+      "/restaurants/teleapo-月のうさぎ/hero.jpg",
+      "/restaurants/teleapo-月のうさぎ/point1.jpg",
+      "/restaurants/teleapo-月のうさぎ/point2.jpg",
+      "/restaurants/teleapo-月のうさぎ/point3.jpg"
+    ],
+    "gallery": [
+      "/restaurants/teleapo-月のうさぎ/hero.jpg",
+      "/restaurants/teleapo-月のうさぎ/point1.jpg",
+      "/restaurants/teleapo-月のうさぎ/point2.jpg",
+      "/restaurants/teleapo-月のうさぎ/point3.jpg"
+    ],
+    "desc": "月のうさぎは、三重県松阪市上川町字北浦にあるラーメン店である。",
+    "address": "三重県松阪市上川町3421-30",
+    "hours": "—（訪問前に公式確認）",
+    "closed": "—（訪問前に公式確認）",
+    "seats": "カウンター4席、2人掛け×3・4人掛け×2の計18席",
+    "nearest": "—",
+    "phone": "0598-28-8500",
+    "instagram": "https://www.instagram.com/tsukiusa_ramen",
+    "source": {
+      "label": "Google ビジネスプロフィール",
+      "url": "https://maps.google.com/?cid=5227712254988957313"
+    },
+    "body": [
+      "月のうさぎは、三重県松阪市にあるお店です。業態は「ラーメン屋」、所在地は三重県松阪市上川町3421-30です。マチノワ編集部の特集記事では、「国産豚骨を25時間炊き込んだスープのラーメン」・「とんこつから変わり種まで並ぶメニュー」などを取り上げています。",
+      "営業時間と定休日は取得できていないため、訪問前に公式の情報でご確認ください。席はカウンター4席、2人掛け×3・4人掛け×2の計18席。営業時間や価格は変わることがあるため、訪問前に公式サイトやSNS、お電話でご確認ください。"
+    ],
+    "highlights": [
+      "国産豚骨を25時間炊き込んだスープのラーメン",
+      "とんこつから変わり種まで並ぶメニュー",
+      "カウンターとテーブル、18席の店内と駐車場",
+      "三重県松阪市上川町のラーメン屋"
+    ],
+    "tags": [
+      "ラーメン屋",
+      "松阪市"
+    ],
+    "featureId": "月のうさぎ"
+  },
+  {
+    "id": "r789",
+    "name": "HANA・AKARI 善",
+    "cuisine": "カフェ・スイーツ",
+    "area": "愛知県・あま市",
+    "region": "nagoya",
+    "shape": "square",
+    "image": "/restaurants/teleapo-HANA・AKARI善/hero.jpg",
+    "heroImages": [
+      "/restaurants/teleapo-HANA・AKARI善/hero.jpg",
+      "/restaurants/teleapo-HANA・AKARI善/point1.jpg",
+      "/restaurants/teleapo-HANA・AKARI善/point2.jpg",
+      "/restaurants/teleapo-HANA・AKARI善/point3.jpg"
+    ],
+    "gallery": [
+      "/restaurants/teleapo-HANA・AKARI善/hero.jpg",
+      "/restaurants/teleapo-HANA・AKARI善/point1.jpg",
+      "/restaurants/teleapo-HANA・AKARI善/point2.jpg",
+      "/restaurants/teleapo-HANA・AKARI善/point3.jpg"
+    ],
+    "desc": "HANA・AKARI 善は、愛知県あま市丹波川中にある喫茶店である。最寄りは名鉄青塚駅で、駅から徒歩14分の距離に店を構える。",
+    "address": "愛知県あま市丹波川中12-2",
+    "hours": "—（訪問前に公式確認）",
+    "closed": "—（訪問前に公式確認）",
+    "seats": "総席数28席",
+    "nearest": "名鉄青塚駅から徒歩14分",
+    "phone": "052-720-3466",
+    "source": {
+      "label": "Google ビジネスプロフィール",
+      "url": "https://maps.google.com/?cid=16708564519880353347"
+    },
+    "body": [
+      "HANA・AKARI 善は、愛知県あま市にあるお店です。業態は「カフェ・スイーツ」、所在地は愛知県あま市丹波川中12-2、最寄りは名鉄青塚駅から徒歩14分です。マチノワ編集部の特集記事では、「コーヒーショップ・喫茶店としての業態」・「モーニング・ランチ・アフタヌーンに分かれた営業時間」などを取り上げています。",
+      "営業時間と定休日は取得できていないため、訪問前に公式の情報でご確認ください。席は総席数28席。営業時間や価格は変わることがあるため、訪問前に公式サイトやSNS、お電話でご確認ください。"
+    ],
+    "highlights": [
+      "コーヒーショップ・喫茶店としての業態",
+      "モーニング・ランチ・アフタヌーンに分かれた営業時間",
+      "総席数28席、分煙の店内",
+      "名鉄青塚駅から徒歩14分、年中無休の営業"
+    ],
+    "tags": [
+      "カフェ・スイーツ",
+      "コーヒーショップ・喫茶店",
+      "あま市",
+      "青塚駅"
+    ],
+    "featureId": "HANA・AKARI善"
   }
 ];
 
@@ -16530,7 +16769,12 @@ export const ARTICLE_STORE_FEATURE_IDS: Record<string, string> = {
   "r781": "ウォーレンフォード",
   "r782": "居酒屋dining湊",
   "r783": "美食居酒屋いろは本舗",
-  "r784": "からあげ鳥元"
+  "r784": "からあげ鳥元",
+  "r785": "CafeBarMichill",
+  "r786": "retroG＆Bar",
+  "r787": "アルカード",
+  "r788": "月のうさぎ",
+  "r789": "HANA・AKARI善"
 };
 
 /** 特集記事ID → 店舗ID */
@@ -16875,5 +17119,10 @@ export const ARTICLE_STORE_ID_BY_FEATURE: Record<string, string> = {
   "ウォーレンフォード": "r781",
   "居酒屋dining湊": "r782",
   "美食居酒屋いろは本舗": "r783",
-  "からあげ鳥元": "r784"
+  "からあげ鳥元": "r784",
+  "CafeBarMichill": "r785",
+  "retroG＆Bar": "r786",
+  "アルカード": "r787",
+  "月のうさぎ": "r788",
+  "HANA・AKARI善": "r789"
 };

@@ -13137,6 +13137,706 @@
         ],
         "checkedAt": "2026-10-29"
       }
+    },
+    {
+      "id": "li0085",
+      "vertical": "life",
+      "category": "shrine-temple",
+      "name": "松林寺",
+      "pref": "shizuoka",
+      "cityName": "浜松市中央区",
+      "address": "静岡県浜松市中央区中野町331",
+      "lat": 34.7292298,
+      "lng": 137.7928074,
+      "phone": "053-421-0336",
+      "mapUrl": "https://maps.google.com/?cid=11407123160860777328",
+      "image": "/_portal/vshops/tri-life-31/g05.jpg",
+      "images": [
+        "/_portal/vshops/tri-life-31/g05.jpg",
+        "/_portal/vshops/tri-life-31/g06.jpg",
+        "/_portal/vshops/tri-life-31/g08.jpg",
+        "/_portal/vshops/tri-life-31/g09.jpg",
+        "/_portal/vshops/tri-life-31/g10.jpg"
+      ],
+      "photos": [
+        {
+          "path": "/_portal/vshops/tri-life-31/g05.jpg",
+          "what": "松の木と砂利の参道、木製のベンチがある境内",
+          "kind": "exterior",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-life-31/g06.jpg",
+          "what": "庭園の池に石が配され木々が映り込む風景",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 901
+        },
+        {
+          "path": "/_portal/vshops/tri-life-31/g08.jpg",
+          "what": "木造の小さなお堂が建つ境内の一角",
+          "kind": "exterior",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-life-31/g09.jpg",
+          "what": "石灯籠と石塔が並ぶ境内入り口付近の風景",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-life-31/g10.jpg",
+          "what": "石碑や庭木が並ぶ境内の通路",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 901
+        }
+      ],
+      "tags": [],
+      "article": {
+        "headline": "静岡県浜松市中央区中野町にある仏教寺院。宗派は臨済宗方広寺派で、山号は鶴翁山、寺号は松林禪寺。",
+        "lede": "浜松市中央区中野町にある「松林寺」です。宗派は臨済宗方広寺派で、山号は鶴翁山、寺号は松林禪寺といいます。",
+        "sections": [
+          {
+            "heading": "場所",
+            "body": "住所は静岡県浜松市中央区中野町331、電話は053-421-0336です。"
+          },
+          {
+            "heading": "宗派と寺号",
+            "body": "宗派は臨済宗方広寺派です。山号は鶴翁山、寺号は松林禪寺といいます。"
+          }
+        ],
+        "sources": [
+          {
+            "label": "参考ページ(Wikipedia)",
+            "url": "https://ja.wikipedia.org/wiki/%E6%9D%BE%E6%9E%97%E5%AF%BA"
+          },
+          {
+            "label": "参考ページ(Weblio辞書)",
+            "url": "https://www.weblio.jp/content/%E6%9D%BE%E6%9E%97%E5%AF%BA"
+          },
+          {
+            "label": "Google マップ",
+            "url": "https://maps.google.com/?cid=11407123160860777328"
+          }
+        ],
+        "checkedAt": "2026-10-29"
+      }
+    },
+    {
+      "id": "li0086",
+      "vertical": "life",
+      "category": "shrine-temple",
+      "name": "我堂八幡宮",
+      "pref": "osaka",
+      "cityName": "松原市",
+      "address": "大阪府松原市天美我堂4丁目11-20 我堂八幡宮",
+      "lat": 34.5829683,
+      "lng": 135.526173,
+      "phone": "072-335-3334",
+      "url": "https://osaka-jinjacho.jp/funai_jinja/dai6shibu/matsubara-city/06026gadohachimangu.html",
+      "website": "https://osaka-jinjacho.jp/funai_jinja/dai6shibu/matsubara-city/06026gadohachimangu.html",
+      "mapUrl": "https://maps.google.com/?cid=12567307999073064394",
+      "image": "/_portal/vshops/tri-life-32/g01.jpg",
+      "images": [
+        "/_portal/vshops/tri-life-32/g01.jpg",
+        "/_portal/vshops/tri-life-32/g02.jpg",
+        "/_portal/vshops/tri-life-32/g03.jpg",
+        "/_portal/vshops/tri-life-32/g04.jpg",
+        "/_portal/vshops/tri-life-32/g05.jpg",
+        "/_portal/vshops/tri-life-32/g06.jpg",
+        "/_portal/vshops/tri-life-32/g07.jpg",
+        "/_portal/vshops/tri-life-32/g08.jpg",
+        "/_portal/vshops/tri-life-32/g09.jpg",
+        "/_portal/vshops/tri-life-32/g10.jpg"
+      ],
+      "photos": [
+        {
+          "path": "/_portal/vshops/tri-life-32/g01.jpg",
+          "what": "朱色の鳥居と奥へ続く石畳の参道",
+          "kind": "exterior",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-life-32/g02.jpg",
+          "what": "木々に囲まれた参道と奥の社殿",
+          "kind": "exterior",
+          "width": 675,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-life-32/g03.jpg",
+          "what": "鳥居と境内の案内看板",
+          "kind": "exterior",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-life-32/g04.jpg",
+          "what": "「力くらべの石」の説明板と石碑",
+          "kind": "common",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-life-32/g05.jpg",
+          "what": "石造りの狛犬",
+          "kind": "common",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-life-32/g06.jpg",
+          "what": "鳥居と幟、大きな木がある境内",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-life-32/g07.jpg",
+          "what": "朱色の屋根の社殿正面と石段",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-life-32/g08.jpg",
+          "what": "赤い鳥居の柱と石灯籠",
+          "width": 675,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-life-32/g09.jpg",
+          "what": "「開運 厄除安」と刻まれた石柱",
+          "kind": "common",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-life-32/g10.jpg",
+          "what": "鳥居の参道と周辺の街並み",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 675
+        }
+      ],
+      "tags": [],
+      "article": {
+        "headline": "大阪府松原市天美我堂にある神社。延享元年(1744)の記録に「十五社明神」とあり、祭神は品陀別命",
+        "lede": "松原市にある「我堂八幡宮」です。堺市の百舌鳥八幡宮の分霊を勧請して祀られ、延享元年(1744)には「十五社明神」と称していました。明治初年に八幡神社、大正2年(1913)には産土神社と改称しました。",
+        "sections": [
+          {
+            "heading": "場所とアクセス",
+            "body": "住所は大阪府松原市天美我堂4丁目11-20、電話は072-335-3334です。Osaka Metro御堂筋線北花田駅1号出口から東へ約1km、近鉄南大阪線「河内天美」駅から西へ約900mの距離にあります。"
+          },
+          {
+            "heading": "由緒",
+            "body": "堺市の百舌鳥八幡宮の分霊を勧請して祀られた神社で、祭神は品陀別命です。延享元年(1744)には「十五社明神」と称していました。"
+          },
+          {
+            "heading": "名称の変遷",
+            "body": "明治初年に八幡神社と称し、大正2年(1913)には産土神社と改めました。"
+          },
+          {
+            "heading": "境内の力石",
+            "body": "境内には、江戸時代から昭和初期にかけて若者が力競べをした力石・八幡石・明治石・龍王石・金剛石が残っています。"
+          }
+        ],
+        "sources": [
+          {
+            "label": "公式サイト",
+            "url": "https://osaka-jinjacho.jp/funai_jinja/dai6shibu/matsubara-city/06026gadohachimangu.html"
+          },
+          {
+            "label": "大阪ミュージアム(観光情報)",
+            "url": "https://www.osaka-museum.com/spot/search/?act=detail&id=508"
+          },
+          {
+            "label": "Google マップ",
+            "url": "https://maps.google.com/?cid=12567307999073064394"
+          }
+        ],
+        "checkedAt": "2026-10-29"
+      }
+    },
+    {
+      "id": "li0087",
+      "vertical": "life",
+      "category": "shrine-temple",
+      "name": "四国八十八ヶ所霊場 第19番札所 立江寺",
+      "pref": "tokushima",
+      "cityName": "小松島市",
+      "address": "徳島県小松島市立江町若松13",
+      "lat": 33.9677729,
+      "lng": 134.6061674,
+      "phone": "0885-37-1019",
+      "url": "https://www.tatsueji.com/",
+      "website": "https://www.tatsueji.com/",
+      "mapUrl": "https://maps.google.com/?cid=2611034203346308723",
+      "image": "/_portal/vshops/tri-life-33/g01.jpg",
+      "images": [
+        "/_portal/vshops/tri-life-33/g01.jpg",
+        "/_portal/vshops/tri-life-33/g02.jpg",
+        "/_portal/vshops/tri-life-33/g03.jpg",
+        "/_portal/vshops/tri-life-33/g04.jpg",
+        "/_portal/vshops/tri-life-33/g05.jpg",
+        "/_portal/vshops/tri-life-33/g06.jpg",
+        "/_portal/vshops/tri-life-33/g07.jpg",
+        "/_portal/vshops/tri-life-33/g08.jpg",
+        "/_portal/vshops/tri-life-33/g09.jpg",
+        "/_portal/vshops/tri-life-33/g10.jpg",
+        "/_portal/vshops/tri-life-33/s01.jpg"
+      ],
+      "photos": [
+        {
+          "path": "/_portal/vshops/tri-life-33/g01.jpg",
+          "what": "石段の上に建つ本堂の外観",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-life-33/g02.jpg",
+          "what": "境内に建つ本堂の建物",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 675
+        },
+        {
+          "path": "/_portal/vshops/tri-life-33/g03.jpg",
+          "what": "境内にある小さなお堂と石碑",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-life-33/g04.jpg",
+          "what": "桜の木がある山門の入り口",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-life-33/g05.jpg",
+          "what": "境内入り口の大きな門と塀",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 904
+        },
+        {
+          "path": "/_portal/vshops/tri-life-33/g06.jpg",
+          "what": "由来を記した石碑と説明板",
+          "kind": "common",
+          "width": 1200,
+          "height": 800
+        },
+        {
+          "path": "/_portal/vshops/tri-life-33/g07.jpg",
+          "what": "石段の上にある本堂の正面",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-life-33/g08.jpg",
+          "what": "境内にある仁王像",
+          "kind": "common",
+          "width": 1200,
+          "height": 675
+        },
+        {
+          "path": "/_portal/vshops/tri-life-33/g09.jpg",
+          "what": "朱色の多宝塔の外観",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-life-33/g10.jpg",
+          "what": "幕が掛かる本堂の正面",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-life-33/s01.jpg",
+          "what": "多宝塔と大師像が並ぶ境内",
+          "kind": "exterior",
+          "width": 1280,
+          "height": 720
+        }
+      ],
+      "tags": [
+        "体験あり",
+        "駅近",
+        "駐車場あり",
+        "予約制"
+      ],
+      "article": {
+        "headline": "徳島県小松島市にある四国八十八ヶ所霊場第十九番札所の寺院、別格本山 立江寺。天平19年(747年)に聖武天皇の勅命により光明皇后の安産祈願のため建立された",
+        "lede": "小松島市にある「四国八十八ヶ所霊場 第19番札所 立江寺」です。天平19年(747年)に聖武天皇の勅命により、光明皇后の安産祈願のため建立されました。本堂は昭和52年12月に復興し、内陣の天井には東京藝術大学教授ら40名余による286枚の格天井画があります。",
+        "sections": [
+          {
+            "heading": "場所とアクセス",
+            "body": "住所は徳島県小松島市立江町字若松13番地、電話は0885-37-1019です。徳島市方面からは国道55号バイパスを南へ走り、赤石トンネルから約800mの交差点を南へ曲がって道なりに約1km進みます。JR牟岐線の立江駅からは徒歩300mで、徳島バス萱原行を利用する場合は「立江小学校前」が最寄りの停留所です。納経時間は8時から17時までです。"
+          },
+          {
+            "heading": "本堂と多宝塔",
+            "body": "本堂は焼失をまぬがれた本尊とともに、昭和52年12月に復興事業が完成した建物です。内陣の天井には東京藝術大学教授ら40名余が描いた286枚の格天井画があります。境内の多宝塔は大正十二年の建立で、国指定登録有形文化財(第36-0228号)です。"
+          },
+          {
+            "heading": "納骨・永代供養",
+            "body": "境内の納骨堂「宝珠殿」は永代供養完備の室内墓です。屋内にあるため掃除や草抜きの必要がなく、天候に左右されず参ることができます。"
+          },
+          {
+            "heading": "宿坊とおつとめ",
+            "body": "信徒会館内にある宿坊は200名まで宿泊でき、個人・団体の予約を受け付けています。毎日17時からの夕方のおつとめと、毎週土曜日13時からの護摩行には、どなたでも参加できます。"
+          }
+        ],
+        "menus": [
+          {
+            "name": "安産祈願"
+          },
+          {
+            "name": "水子供養"
+          },
+          {
+            "name": "先祖供養"
+          },
+          {
+            "name": "永代供養"
+          },
+          {
+            "name": "万体地蔵尊奉納"
+          },
+          {
+            "name": "灯篭奉納"
+          },
+          {
+            "name": "厄除開運祈祷"
+          },
+          {
+            "name": "宿坊宿泊"
+          }
+        ],
+        "sources": [
+          {
+            "label": "公式サイト",
+            "url": "https://www.tatsueji.com/"
+          },
+          {
+            "label": "公式サイト(アクセス)",
+            "url": "https://www.tatsueji.com/access"
+          },
+          {
+            "label": "公式サイト(宿泊)",
+            "url": "https://www.tatsueji.com/stay"
+          },
+          {
+            "label": "公式サイト(納骨・永代供養)",
+            "url": "https://www.tatsueji.com/eitai"
+          },
+          {
+            "label": "公式サイト(奉納)",
+            "url": "https://www.tatsueji.com/hono"
+          },
+          {
+            "label": "Google マップ",
+            "url": "https://maps.google.com/?cid=2611034203346308723"
+          }
+        ],
+        "checkedAt": "2026-10-29"
+      }
+    },
+    {
+      "id": "li0088",
+      "vertical": "life",
+      "category": "shrine-temple",
+      "name": "阿沼美神社",
+      "pref": "ehime",
+      "cityName": "松山市",
+      "address": "愛媛県松山市平田町983",
+      "lat": 33.8881365,
+      "lng": 132.7546554,
+      "phone": "089-989-7307",
+      "url": "http://ehime-jinjacho.jp/jinja/?p=5533",
+      "website": "http://ehime-jinjacho.jp/jinja/?p=5533",
+      "mapUrl": "https://maps.google.com/?cid=1312916428526990560",
+      "image": "/_portal/vshops/tri-life-35/g01.jpg",
+      "images": [
+        "/_portal/vshops/tri-life-35/g01.jpg",
+        "/_portal/vshops/tri-life-35/g02.jpg",
+        "/_portal/vshops/tri-life-35/g03.jpg",
+        "/_portal/vshops/tri-life-35/g04.jpg",
+        "/_portal/vshops/tri-life-35/g05.jpg",
+        "/_portal/vshops/tri-life-35/g06.jpg",
+        "/_portal/vshops/tri-life-35/g07.jpg",
+        "/_portal/vshops/tri-life-35/g08.jpg",
+        "/_portal/vshops/tri-life-35/g09.jpg",
+        "/_portal/vshops/tri-life-35/g10.jpg"
+      ],
+      "photos": [
+        {
+          "path": "/_portal/vshops/tri-life-35/g01.jpg",
+          "what": "唐破風の屋根を持つ神社の社殿と石段",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 901
+        },
+        {
+          "path": "/_portal/vshops/tri-life-35/g02.jpg",
+          "what": "社殿の軒下に下がる飾りと青い案内板",
+          "kind": "common",
+          "width": 675,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-life-35/g03.jpg",
+          "what": "道をまたいで立つ神社の鳥居",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 800
+        },
+        {
+          "path": "/_portal/vshops/tri-life-35/g04.jpg",
+          "what": "木々に囲まれた小さな祠と石碑",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-life-35/g05.jpg",
+          "what": "石段と鳥居が続く参道",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 901
+        },
+        {
+          "path": "/_portal/vshops/tri-life-35/g06.jpg",
+          "what": "木の柱と梁が並ぶ社殿内部の広い空間",
+          "kind": "common",
+          "width": 1200,
+          "height": 800
+        },
+        {
+          "path": "/_portal/vshops/tri-life-35/g07.jpg",
+          "what": "神社名が刻まれた石碑",
+          "kind": "exterior",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-life-35/g08.jpg",
+          "what": "木々の間を上る石段の参道",
+          "kind": "exterior",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-life-35/g09.jpg",
+          "what": "提灯が並ぶ木造の社殿内部",
+          "kind": "common",
+          "width": 800,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-life-35/g10.jpg",
+          "what": "石柱と鳥居が並ぶ参道の入り口",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 900
+        }
+      ],
+      "tags": [
+        "駐車場あり"
+      ],
+      "article": {
+        "headline": "松山市平田町の神社。延喜式神名帳に社名が記され、例祭は10月4日におこなわれます。",
+        "lede": "松山市にある「阿沼美神社」です。延喜式神名帳（平安時代）に伊予国温泉郡阿沼美神名神大とある社で、主祭神は大山祗神・月読神・高龗神・雷神の四柱です。中世には河野氏が三島の神を合祀し、阿沼美三島大明神と称えました。",
+        "sections": [
+          {
+            "heading": "場所と宮司",
+            "body": "鎮座地は松山市平田町983番地で、電話は089-989-7307です。宮司は善家祐二氏が務めています。境内の参集殿前には4台分の駐車場があります。氏神地域は松山市平田町・谷町・志津川町・高木町です。"
+          },
+          {
+            "heading": "由緒",
+            "body": "延喜式神名帳（平安時代）に伊予国温泉郡阿沼美神名神大とある社です。中世には河野氏が三島の神を合祀して阿沼美三島大明神と称え、一族の大内氏が祭事を司りました。河野氏の滅亡後は三島新宮と称し、延文年間の石額や文禄年度の古棟札の記載をもとに阿沼美神社という社名になりました。"
+          },
+          {
+            "heading": "ご祭神と境内",
+            "body": "主祭神は大山祗神・月読神・高龗神・雷神の四柱です。境内社には、宇賀御魂神を祀る稲荷神社と、十六皇子神を祀る十六皇子神社があります。例祭は10月4日におこなわれます。"
+          }
+        ],
+        "sources": [
+          {
+            "label": "公式サイト",
+            "url": "https://ehime-jinjacho.jp/jinja/?p=5533"
+          },
+          {
+            "label": "Google マップ",
+            "url": "https://maps.google.com/?cid=1312916428526990560"
+          }
+        ],
+        "checkedAt": "2026-10-29"
+      }
+    },
+    {
+      "id": "li0089",
+      "vertical": "life",
+      "category": "shrine-temple",
+      "name": "満正寺",
+      "pref": "tottori",
+      "cityName": "倉吉市",
+      "address": "鳥取県倉吉市鍛冶町1丁目2948",
+      "lat": 35.4297712,
+      "lng": 133.816816,
+      "phone": "0858-22-3468",
+      "url": "http://9you27.ldblog.jp/",
+      "website": "http://9you27.ldblog.jp/",
+      "mapUrl": "https://maps.google.com/?cid=1273607343521860221",
+      "image": "/_portal/vshops/tri-life-36/g01.jpg",
+      "images": [
+        "/_portal/vshops/tri-life-36/g01.jpg",
+        "/_portal/vshops/tri-life-36/g02.jpg",
+        "/_portal/vshops/tri-life-36/g03.jpg",
+        "/_portal/vshops/tri-life-36/g04.jpg",
+        "/_portal/vshops/tri-life-36/g05.jpg",
+        "/_portal/vshops/tri-life-36/g06.jpg",
+        "/_portal/vshops/tri-life-36/g07.jpg",
+        "/_portal/vshops/tri-life-36/g09.jpg",
+        "/_portal/vshops/tri-life-36/g10.jpg",
+        "/_portal/vshops/tri-life-36/s01.jpg"
+      ],
+      "photos": [
+        {
+          "path": "/_portal/vshops/tri-life-36/g01.jpg",
+          "what": "境内にある円形の占い盤と参拝者の姿",
+          "kind": "common",
+          "width": 857,
+          "height": 474
+        },
+        {
+          "path": "/_portal/vshops/tri-life-36/g02.jpg",
+          "what": "旗が下がる小屋の前に並ぶ引き出し棚",
+          "kind": "common",
+          "width": 1200,
+          "height": 675
+        },
+        {
+          "path": "/_portal/vshops/tri-life-36/g03.jpg",
+          "what": "瓦屋根の山門と石塀に囲まれた入り口",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-life-36/g04.jpg",
+          "what": "大きな瓦屋根の本堂と手前の円形の占い盤",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 800
+        },
+        {
+          "path": "/_portal/vshops/tri-life-36/g05.jpg",
+          "what": "建物前に広がる円形の石の占い盤",
+          "kind": "common",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-life-36/g06.jpg",
+          "what": "白砂の庭に置かれた金色の龍の像",
+          "kind": "common",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-life-36/g07.jpg",
+          "what": "石畳の参道と奥に見える山門、手前の占い盤",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 774
+        },
+        {
+          "path": "/_portal/vshops/tri-life-36/g09.jpg",
+          "what": "花に囲まれた金色の仏像",
+          "kind": "common",
+          "width": 1200,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-life-36/g10.jpg",
+          "what": "瓦屋根の建物前に石畳とベンチが並ぶ境内",
+          "kind": "exterior",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-life-36/s01.jpg",
+          "what": "上空から見た円形の占い盤",
+          "kind": "common",
+          "width": 1200,
+          "height": 590
+        }
+      ],
+      "tags": [
+        "駐車場あり",
+        "体験あり"
+      ],
+      "article": {
+        "headline": "鳥取県倉吉市鍛冶町にある曹洞宗の寺院で、元禄12年(1699年)に鳥取池田藩家老・荒尾志摩守家の菩提寺として建立された。境内には直径8mの「九曜星占盤」という占い盤がある。",
+        "lede": "倉吉市にある「満正寺」です。元禄12年(1699年)、鳥取池田藩の城代家老を務めた荒尾志摩守家の菩提寺として建立されました。本堂の本尊は釈迦如来で、境内には直径8mの「九曜星占盤」という占い盤があります。",
+        "sections": [
+          {
+            "heading": "由緒",
+            "body": "元禄12年(1699年)、鳥取池田藩の城代家老を務めた荒尾志摩守家の菩提寺として建立されました。曹洞宗の寺院で、本堂の本尊は釈迦如来です。堂内左側には倉吉を治めた荒尾公、右側には薬師如来と十二神将が祀られています。"
+          },
+          {
+            "heading": "九曜星占盤",
+            "body": "境内には、直径8mの石の占い盤「九曜星占盤」があります。平成22年秋に新設されたもので、生年月日から導く星をもとに相性を占う仕組みです。九曜星占盤は満正寺の登録商標です。"
+          },
+          {
+            "heading": "漫画・映画の舞台",
+            "body": "谷口ジロー作の漫画「遥かな町へ」では、主人公が境内でタイムリープする場所として登場します。令和8年10月9日には、同作を原作とした映画「遥かな町へ」が全国公開されました。"
+          },
+          {
+            "heading": "アクセス・駐車場",
+            "body": "JR山陰線倉吉駅から車で9分の場所にあります。平日の駐車場は山門前に、土曜・日曜・祝日は臨時駐車場があり、大型バスの駐車にも対応しています。天候が荒れている際は、参拝を休止する場合があります。"
+          }
+        ],
+        "menus": [
+          {
+            "name": "九曜星占盤"
+          }
+        ],
+        "sources": [
+          {
+            "label": "公式サイト",
+            "url": "https://9you27.ldblog.jp/"
+          },
+          {
+            "label": "公式サイト(アクセス・駐車場)",
+            "url": "https://9you27.ldblog.jp/archives/1347058.html"
+          },
+          {
+            "label": "公式サイト(ご案内)",
+            "url": "https://9you27.ldblog.jp/archives/1347537.html"
+          },
+          {
+            "label": "公式サイト(占い方)",
+            "url": "https://9you27.ldblog.jp/archives/929538.html"
+          },
+          {
+            "label": "Google マップ",
+            "url": "https://maps.google.com/?cid=1273607343521860221"
+          }
+        ],
+        "checkedAt": "2026-10-29"
+      }
     }
   ]
 }

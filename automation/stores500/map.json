@@ -1723,5 +1723,30 @@
     "articleId": "からあげ鳥元",
     "sheetName": "からあげ 鳥元",
     "mapsUrl": "https://maps.google.com/?cid=17216114828249475086"
+  },
+  {
+    "articleId": "CafeBarMichill",
+    "sheetName": "Michill",
+    "mapsUrl": "https://maps.google.com/?cid=11711847316236491475"
+  },
+  {
+    "articleId": "retroG＆Bar",
+    "sheetName": "retro G＆Bar",
+    "mapsUrl": "https://maps.google.com/?cid=14175612913790442467"
+  },
+  {
+    "articleId": "アルカード",
+    "sheetName": "アルカード",
+    "mapsUrl": "https://maps.google.com/?cid=1060586705399841664"
+  },
+  {
+    "articleId": "月のうさぎ",
+    "sheetName": "月のうさぎ",
+    "mapsUrl": "https://maps.google.com/?cid=5227712254988957313"
+  },
+  {
+    "articleId": "HANA・AKARI善",
+    "sheetName": "HANA・AKARI 善",
+    "mapsUrl": "https://maps.google.com/?cid=16708564519880353347"
   }
 ]

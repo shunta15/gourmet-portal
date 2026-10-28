@@ -1,0 +1,105 @@
+{
+  "key": "tri-life-35",
+  "headline": "松山市平田町の神社。延喜式神名帳に社名が記され、例祭は10月4日におこなわれます。",
+  "lede": "松山市にある「阿沼美神社」です。延喜式神名帳（平安時代）に伊予国温泉郡阿沼美神名神大とある社で、主祭神は大山祗神・月読神・高龗神・雷神の四柱です。中世には河野氏が三島の神を合祀し、阿沼美三島大明神と称えました。",
+  "sections": [
+    {
+      "heading": "場所と宮司",
+      "body": "鎮座地は松山市平田町983番地で、電話は089-989-7307です。宮司は善家祐二氏が務めています。境内の参集殿前には4台分の駐車場があります。氏神地域は松山市平田町・谷町・志津川町・高木町です。"
+    },
+    {
+      "heading": "由緒",
+      "body": "延喜式神名帳（平安時代）に伊予国温泉郡阿沼美神名神大とある社です。中世には河野氏が三島の神を合祀して阿沼美三島大明神と称え、一族の大内氏が祭事を司りました。河野氏の滅亡後は三島新宮と称し、延文年間の石額や文禄年度の古棟札の記載をもとに阿沼美神社という社名になりました。"
+    },
+    {
+      "heading": "ご祭神と境内",
+      "body": "主祭神は大山祗神・月読神・高龗神・雷神の四柱です。境内社には、宇賀御魂神を祀る稲荷神社と、十六皇子神を祀る十六皇子神社があります。例祭は10月4日におこなわれます。"
+    }
+  ],
+  "menus": [],
+  "tags": [
+    {
+      "tag": "駐車場あり",
+      "factIndex": 8
+    }
+  ],
+  "facts": [
+    {
+      "claim": "神社名の読みは「あぬみじんじゃ」です。",
+      "source": "https://ehime-jinjacho.jp/jinja/?p=5533",
+      "quote": "あぬみじんじゃ",
+      "checkedAt": "2026-10-29"
+    },
+    {
+      "claim": "電話番号は089-989-7307です。",
+      "source": "https://ehime-jinjacho.jp/jinja/?p=5533",
+      "quote": "089-989-7307",
+      "checkedAt": "2026-10-29"
+    },
+    {
+      "claim": "宮司は善家祐二氏です。",
+      "source": "https://ehime-jinjacho.jp/jinja/?p=5533",
+      "quote": "善家 祐二",
+      "checkedAt": "2026-10-29"
+    },
+    {
+      "claim": "例祭は10月4日におこなわれます。",
+      "source": "https://ehime-jinjacho.jp/jinja/?p=5533",
+      "quote": "１０月４日 例祭",
+      "checkedAt": "2026-10-29"
+    },
+    {
+      "claim": "延喜式神名帳に伊予国温泉郡阿沼美神名神大とある社です。",
+      "source": "https://ehime-jinjacho.jp/jinja/?p=5533",
+      "quote": "伊予国温泉郡阿沼美神名神大とある社",
+      "checkedAt": "2026-10-29"
+    },
+    {
+      "claim": "中世に河野氏が三島の神を合祀して阿沼美三島大明神と称えました。",
+      "source": "https://ehime-jinjacho.jp/jinja/?p=5533",
+      "quote": "河野氏が三島の神を合祀して阿沼美三島大明神と称え",
+      "checkedAt": "2026-10-29"
+    },
+    {
+      "claim": "境内社に稲荷神社（宇賀御魂神）があります。",
+      "source": "https://ehime-jinjacho.jp/jinja/?p=5533",
+      "quote": "稲荷神社（宇賀御魂神）",
+      "checkedAt": "2026-10-29"
+    },
+    {
+      "claim": "境内社に十六皇子神社（十六皇子神）があります。",
+      "source": "https://ehime-jinjacho.jp/jinja/?p=5533",
+      "quote": "十六皇子神社（十六皇子神）",
+      "checkedAt": "2026-10-29"
+    },
+    {
+      "claim": "駐車場は参集殿前に4台あります。",
+      "source": "https://ehime-jinjacho.jp/jinja/?p=5533",
+      "quote": "有：４台（参集殿前）",
+      "checkedAt": "2026-10-29"
+    },
+    {
+      "claim": "氏神地域に松山市志津川町が含まれます。",
+      "source": "https://ehime-jinjacho.jp/jinja/?p=5533",
+      "quote": "松山市志津川町",
+      "checkedAt": "2026-10-29"
+    },
+    {
+      "claim": "鎮座地は松山市平田町983番地です。",
+      "source": "https://ehime-jinjacho.jp/jinja/?p=5533",
+      "quote": "松山市平田町983番地",
+      "checkedAt": "2026-10-29"
+    }
+  ],
+  "sources": [
+    {
+      "label": "公式サイト",
+      "url": "https://ehime-jinjacho.jp/jinja/?p=5533"
+    },
+    {
+      "label": "Google マップ",
+      "url": "https://maps.google.com/?cid=1312916428526990560"
+    }
+  ],
+  "notes": "automation/v2/write.mjs が 2026-10-29 に claude -p --model sonnet で作成。事実の裏取り: 11/11 件(quote が出どころにあるもの)。裏取りに通らなかった facts は載せていない。"
+}

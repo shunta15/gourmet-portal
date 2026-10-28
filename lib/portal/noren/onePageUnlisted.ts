@@ -113,6 +113,11 @@ export const ONE_PAGE_UNLISTED_SHOP_OF_FEATURE: Readonly<Record<string, string>>
   "居酒屋dining湊": "r782", // 居酒屋dining湊
   "美食居酒屋いろは本舗": "r783", // 美食居酒屋 いろは本舗
   "からあげ鳥元": "r784", // からあげ鳥元
+  "CafeBarMichill": "r785", // Cafe&Bar Michill
+  "retroG＆Bar": "r786", // retro G＆Bar
+  "アルカード": "r787", // アルカード
+  "月のうさぎ": "r788", // 月のうさぎ
+  "HANA・AKARI善": "r789", // HANA・AKARI 善
 };
 
 const NFC = (s: string) => s.normalize("NFC");

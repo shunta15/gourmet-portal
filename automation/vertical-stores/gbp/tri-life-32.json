@@ -1,0 +1,32 @@
+{
+  "tab": "トリニティアポ",
+  "tabEn": "tri-life",
+  "row": 32,
+  "sheet": {
+    "name": "我堂八幡宮",
+    "address": "",
+    "url": "https://www.google.com/maps/search/?api=1&query=%E6%88%91%E5%A0%82%E5%85%AB%E5%B9%A1%E5%AE%AE%20072-335-3334%20",
+    "type": "神社",
+    "d1": "",
+    "d2": ""
+  },
+  "urlKind": "mapsApi",
+  "route": "第1段(verify-gbp.mjs)で確認済み",
+  "verdict": "一致",
+  "verdictReason": "手がかり: 店名＋電話＋住所(番地まで)。電話が一致／店名: exact(シート「我堂八幡宮」/ マップ「我堂八幡宮」)／住所(シート): exact・町名・番地とも一致",
+  "place": {
+    "name": "我堂八幡宮",
+    "address": "大阪府松原市天美我堂４丁目１１−２０ 我堂八幡宮",
+    "category": "神社",
+    "lat": 34.5829683,
+    "lng": 135.526173,
+    "gbpUrl": "https://maps.google.com/?cid=12567307999073064394",
+    "phone": "072-335-3334",
+    "website": "https://osaka-jinjacho.jp/funai_jinja/dai6shibu/matsubara-city/06026gadohachimangu.html",
+    "hours": null,
+    "reserveLinks": [],
+    "statusSignals": [],
+    "closedSignal": false
+  },
+  "fetchedAt": "2026-10-28T20:47:37.948Z"
+}

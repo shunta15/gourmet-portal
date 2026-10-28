@@ -1,0 +1,118 @@
+{
+  "commit": "a7e8b77b1fb1dbd7f9537103a47f8d9d2a19d1d5",
+  "source": "/Users/shunta/claude/gp-k-auto2",
+  "count": 10,
+  "added": [
+    {
+      "row": 28,
+      "name": "Michill",
+      "key": "tri-gourmet-28",
+      "vertical": "グルメ",
+      "id": "r785",
+      "articleId": "CafeBarMichill",
+      "shopUrl": "https://machinowa.tokyo/restaurant/r785",
+      "articleUrl": "https://machinowa.tokyo/feature/CafeBarMichill",
+      "sheetUrl": "https://machinowa.tokyo/feature/CafeBarMichill"
+    },
+    {
+      "row": 29,
+      "name": "retro G＆Bar",
+      "key": "tri-gourmet-29",
+      "vertical": "グルメ",
+      "id": "r786",
+      "articleId": "retroG＆Bar",
+      "shopUrl": "https://machinowa.tokyo/restaurant/r786",
+      "articleUrl": "https://machinowa.tokyo/feature/retroG＆Bar",
+      "sheetUrl": "https://machinowa.tokyo/feature/retroG＆Bar"
+    },
+    {
+      "row": 30,
+      "name": "アルカード",
+      "key": "tri-gourmet-30",
+      "vertical": "グルメ",
+      "id": "r787",
+      "articleId": "アルカード",
+      "shopUrl": "https://machinowa.tokyo/restaurant/r787",
+      "articleUrl": "https://machinowa.tokyo/feature/アルカード",
+      "sheetUrl": "https://machinowa.tokyo/feature/アルカード"
+    },
+    {
+      "row": 31,
+      "name": "松林寺",
+      "key": "tri-life-31",
+      "vertical": "くらし",
+      "id": "li0085",
+      "articleId": "li0085",
+      "shopUrl": "https://machinowa.tokyo/life/shop/li0085",
+      "articleUrl": "https://machinowa.tokyo/life/article/li0085",
+      "sheetUrl": "https://machinowa.tokyo/life/article/li0085"
+    },
+    {
+      "row": 32,
+      "name": "我堂八幡宮",
+      "key": "tri-life-32",
+      "vertical": "くらし",
+      "id": "li0086",
+      "articleId": "li0086",
+      "shopUrl": "https://machinowa.tokyo/life/shop/li0086",
+      "articleUrl": "https://machinowa.tokyo/life/article/li0086",
+      "sheetUrl": "https://machinowa.tokyo/life/article/li0086"
+    },
+    {
+      "row": 33,
+      "name": "立江寺",
+      "key": "tri-life-33",
+      "vertical": "くらし",
+      "id": "li0087",
+      "articleId": "li0087",
+      "shopUrl": "https://machinowa.tokyo/life/shop/li0087",
+      "articleUrl": "https://machinowa.tokyo/life/article/li0087",
+      "sheetUrl": "https://machinowa.tokyo/life/article/li0087"
+    },
+    {
+      "row": 35,
+      "name": "阿沼美神社",
+      "key": "tri-life-35",
+      "vertical": "くらし",
+      "id": "li0088",
+      "articleId": "li0088",
+      "shopUrl": "https://machinowa.tokyo/life/shop/li0088",
+      "articleUrl": "https://machinowa.tokyo/life/article/li0088",
+      "sheetUrl": "https://machinowa.tokyo/life/article/li0088"
+    },
+    {
+      "row": 36,
+      "name": "満正寺",
+      "key": "tri-life-36",
+      "vertical": "くらし",
+      "id": "li0089",
+      "articleId": "li0089",
+      "shopUrl": "https://machinowa.tokyo/life/shop/li0089",
+      "articleUrl": "https://machinowa.tokyo/life/article/li0089",
+      "sheetUrl": "https://machinowa.tokyo/life/article/li0089"
+    },
+    {
+      "row": 37,
+      "name": "月のうさぎ",
+      "key": "tri-gourmet-37",
+      "vertical": "グルメ",
+      "id": "r788",
+      "articleId": "月のうさぎ",
+      "shopUrl": "https://machinowa.tokyo/restaurant/r788",
+      "articleUrl": "https://machinowa.tokyo/feature/月のうさぎ",
+      "sheetUrl": "https://machinowa.tokyo/feature/月のうさぎ"
+    },
+    {
+      "row": 38,
+      "name": "HANA・AKARI 善",
+      "key": "tri-gourmet-38",
+      "vertical": "グルメ",
+      "id": "r789",
+      "articleId": "HANA・AKARI善",
+      "shopUrl": "https://machinowa.tokyo/restaurant/r789",
+      "articleUrl": "https://machinowa.tokyo/feature/HANA・AKARI善",
+      "sheetUrl": "https://machinowa.tokyo/feature/HANA・AKARI善"
+    }
+  ],
+  "skipped": []
+}
