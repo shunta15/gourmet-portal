@@ -69,5 +69,8 @@
       "url": "https://maps.google.com/?cid=6563524553501464319"
     }
   ],
-  "notes": "automation/v2/write.mjs が 2026-10-27 に claude -p --model sonnet で作成。事実の裏取り: 4/4 件(quote が出どころにあるもの)。裏取りに通らなかった facts は載せていない。 / 2026-10-28 に文を書き直し(公式サイト・予約サイト・公式SNSで確認した事実のみ。facts は書き直し後の確認分に差し替え)。"
+  "notes": "automation/v2/write.mjs が 2026-10-27 に claude -p --model sonnet で作成。事実の裏取り: 4/4 件(quote が出どころにあるもの)。裏取りに通らなかった facts は載せていない。 / 2026-10-28 に文を書き直し(公式サイト・予約サイト・公式SNSで確認した事実のみ。facts は書き直し後の確認分に差し替え)。 / 2026-10-28 公式サイト www.trimmingsalon-little.com は Wix のエラー(404)になるため、placeOverride.website で Instagram に替えた(オーナー承認「いいよ変更して」)。",
+  "placeOverride": {
+    "website": "https://www.instagram.com/trimmingsalon_little/"
+  }
 }
