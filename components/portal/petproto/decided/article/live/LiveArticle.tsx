@@ -66,11 +66,11 @@ function Fig({ ph, eager, sz = 900 }: { ph: ShopDetail["photos"][number]; eager?
   );
 }
 
-const ctaLabel = (kind: string) => (kind === "reserve" ? "予約ページを開く" : kind === "website" ? "公式サイトを見る" : kind === "phone" ? "電話する" : "地図を開く");
+const ctaLabel = (kind: string) => (kind === "reserve" ? "予約ページを開く" : kind === "website" ? "公式サイトを見る" : kind === "instagram" ? "Instagramを見る" : kind === "phone" ? "電話する" : "地図を開く");
 
 function ShopBox({ d }: { d: ShopDetail }) {
-  // 公式サイトと予約ページだけ(電話・地図は店のページにある)
-  const links = d.cta.filter((l) => l.kind === "website" || l.kind === "reserve");
+  // 公式サイトと予約ページだけ(電話・地図は店のページにある)。予約も公式サイトも無い店は、Instagram(店ページの主なボタンと同じ)
+  const links = d.cta.filter((l) => l.kind === "website" || l.kind === "reserve" || l.kind === "instagram");
   return (
     <section className="psp-sec pta-shop io" aria-labelledby="pta-shop-h">
       <h2 id="pta-shop-h" className="psp-h2">
