@@ -35,7 +35,7 @@ function Card({ s, big }: { s: SShop; big?: boolean }) {
 
 /**
  * 探すページ(見本 2_探す)。条件は URL の引数(kind・pref・city・feat・q・page。data.ts の SearchArgs)、絞り込みはサーバーで動く(JS なしでもリンクとフォームで絞れる)。
- * 「設備・特徴」は、店の紹介記事に書いてある事実で絞る(data.ts の FEATURES)。地図の小窓・「現在地から探す」は /map へ。
+ * 「設備・特徴」は、店の紹介記事に書いてある事実で絞る(data.ts の FEATURES)。
  */
 export default function Search({
   shops,
@@ -76,11 +76,6 @@ export default function Search({
           <input type="text" name="q" defaultValue={args.q} aria-label="エリア・駅名・施設名で検索" placeholder="エリア・駅名・施設名で検索" />
           <button type="submit">検索</button>
         </form>
-        <Link href={SPL.map} className="s2-bar-loc">
-          <IcPin />
-          <span>現在地から探す</span>
-          <IcArrow />
-        </Link>
       </div>
 
       <nav className="s2-kinds" aria-label="カテゴリから探す">
@@ -186,7 +181,6 @@ export default function Search({
           <div className="s2-res-r">
             <div className="s2-map">
               <img src={`${P}s-map.webp`} alt="" width={324} height={85} />
-              <Link href={SPL.map} className="s2-map-go" aria-label="地図で見る" />
             </div>
             {others.map((s) => (
               <Card key={s.id} s={s} />

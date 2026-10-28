@@ -103,13 +103,9 @@ export default function Search({ shops, total, all, args, pages }: { shops: LSho
             <p className="sr-count">
               検索結果 <b>{total}</b> 件
             </p>
-            <Link href={LFL.map} className="sr-maplink">
-              地図で見る
-              <IcArrow />
-            </Link>
-            <Link href={LFL.map} className="sr-mapimg" aria-label="地図で見る">
+            <div className="sr-mapimg">
               <img src={`${IMG}s-map.webp`} alt="日本地図" width={498} height={430} loading="lazy" decoding="async" />
-            </Link>
+            </div>
           </div>
 
           {shops.length === 0 ? (
