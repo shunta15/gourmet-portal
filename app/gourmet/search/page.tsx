@@ -29,7 +29,7 @@ import { RELEASE_PERIPHERY } from "@/lib/portal/noren/release";
 export const metadata: Metadata = {
   title: "店舗を探す — マチノワ",
   description:
-    "全国の飲食店を、地域・業種・キーワードで探す。編集部おすすめ店から、隠れ家まで。",
+    "全国の飲食店を、地域・業種・キーワードで探す。",
   robots: { index: false, follow: true },
   alternates: { canonical: "/search" },
 };

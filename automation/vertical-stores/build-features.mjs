@@ -21,7 +21,12 @@
  *
  * 載せない記事（理由つきで標準出力に出す）: 必須の項目が無い・id が URL に使えない・id の重複・
  *                   hero の写真のファイルが public/ に無い。5 つのポイントの写真が無ければ、その写真だけ外す。
- * 注意だけ出す: 禁止の語・字数 3000 未満・facts 40 個未満・charCount とのずれ。
+ * 注意だけ出す: 禁止の語・字数 3000 未満・facts 40 個未満・charCount とのずれ・出どころを語る言い回し（ATTRIBUTION）。
+ *
+ * 文の書き方（オーナー指示 2026-10-24「公式ページからの引用ですみたいなのも全部やめて」）: 出どころを語る言い回しを特集の文に入れない。
+ *   書かない例: 「公式サイトによると」「公式サイトは〜と案内している」「〜と書かれている」「〜と載っている」「Google マップの表示では」「〜とのこと」「引用」。
+ *   事実は言い切りの文で書く（事実は足さない・変えない）。出どころは文中で語らず、sources と確認日（ページ下の「情報の出どころ」）に置く。
+ *   残してよいのは、公式サイト・予約ページを「使う場所」として示す文と、公式サイトへのリンクのボタン。「この記事の材料は〜」のような記事自身の出どころの説明も書かない。
  *
  * 使い方:
  *   node automation/vertical-stores/build-features.mjs          # features/*.json から作る
@@ -257,6 +262,8 @@ function buildFeature(key, d) {
   // ---- 注意だけ出す
   const text = [article.title, article.subtitle, article.lede, str(d.summary), ...ranking.flatMap((r) => [r.name, r.cuisine, r.desc, ...r.specs.flatMap((s) => [s.k, s.v])]), article.quote, article.closing].join("\n");
   for (const w of NEW_VERTICALS.includes(vertical) ? [...FORBIDDEN, ...FORBIDDEN_NEW] : FORBIDDEN) if (text.includes(w)) note(key, `注意: 禁止の語「${w}」が含まれています（確認してください）`);
+  const ATTRIBUTION = /公式サイト(?:に|は|の|では|が|による|で書)|公式ページ|Google ?マップ(?:に|は|の|では|で)|掲載ページ|によると|によれば|と案内され|と書かれ|と載って|と記載|とのこと(?:です|だ|で|。|、)|という案内|引用|この記事の材料/;
+  for (const sent of text.split(/(?<=。)|\n/)) if (ATTRIBUTION.test(sent)) note(key, `注意: 出どころを語る言い回し（言い切りに直す）: ${sent.trim().slice(0, 50)}`);
   const chars = charsOf(article);
   if (chars < 3000) note(key, `注意: 本文が ${chars} 字（3000 字未満）`);
   if (Number.isFinite(d.charCount) && Math.abs(d.charCount - chars) > 5) note(key, `注意: charCount ${d.charCount} と実測 ${chars} がずれています`);

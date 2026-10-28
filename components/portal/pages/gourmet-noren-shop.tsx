@@ -209,28 +209,7 @@ export default async function GourmetNorenShop({ id, links, shop }: { id: string
                   <dd>{r.budget}</dd>
                 </div>
               )}
-              {r.googleRating && (
-                <div>
-                  <dt>{RELEASE_REST ? "Google の評価" : "Google評価"}</dt>
-                  <dd>
-                    {r.googleRating}
-                    {r.googleReviewCount ? <small>（{r.googleReviewCount.toLocaleString()}件）</small> : null}
-                  </dd>
-                </div>
-              )}
-              {!RELEASE_REST && r.rating && (
-                <div>
-                  <dt>評価</dt>
-                  <dd>
-                    {r.rating}
-                    {r.source && (
-                      <a className="src" href={r.source.url} target="_blank" rel="noopener noreferrer">
-                        （{r.source.label}）
-                      </a>
-                    )}
-                  </dd>
-                </div>
-              )}
+              {/* 評価の数字（Google・食べログ）は出さない（2026-10-24 オーナー決定。星・評価を出さない決まり。データは消さず、表示だけ止める） */}
               {r.nearest && (
                 <div>
                   <dt>アクセス</dt>
@@ -392,7 +371,6 @@ export default async function GourmetNorenShop({ id, links, shop }: { id: string
                         #{x.id.replace(/^r/, "").padStart(2, "0")} · {x.area}
                       </span>
                       <em>{x.cuisine}</em>
-                      {RELEASE_REST ? (x.googleRating ? <em>Google {x.googleRating}</em> : null) : (x.googleRating || x.rating) && <em>評価 {x.googleRating ?? x.rating}</em>}
                     </span>
                   </Link>
                 </li>
