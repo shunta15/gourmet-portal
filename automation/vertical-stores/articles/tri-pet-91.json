@@ -1,15 +1,19 @@
 {
   "key": "tri-pet-91",
-  "headline": "宮城県多賀城市中央3丁目にある、犬のトリミングサロン。",
-  "lede": "多賀城市にある「BARBER DOG PRECIOUS WAN」です。宮城県多賀城市中央3丁目に店を構え、犬のトリミングを行っている。営業は月曜から土曜の9時30分から17時まで、日曜日は定休日。",
+  "headline": "宮城県多賀城市中央にある、完全予約制の犬のトリミングサロン。トリマーは1人",
+  "lede": "宮城県多賀城市にある「BARBER DOG PRECIOUS WAN」です。完全予約制の犬のトリミングサロンで、トリマーが1人で担当しています。仙石線の多賀城駅から徒歩約3分の場所にあります。",
   "sections": [
     {
-      "heading": "トリミングサロン",
-      "body": "店は宮城県多賀城市中央3丁目にあり、犬のトリミングを行っている。"
+      "heading": "場所とアクセス",
+      "body": "住所は宮城県多賀城市中央3丁目9-27です。仙石線の多賀城駅から徒歩約3分の場所にあります。"
     },
     {
-      "heading": "営業時間",
-      "body": "営業は月曜から土曜の9時30分から17時まで。日曜日は定休日となっている。"
+      "heading": "予約とトリマー",
+      "body": "完全予約制で、問い合わせは電話(070-8971-1139)で受け付けています。予約サイトのEPARKからも申し込めます。トリマーは1人で、犬に負担の少ないトリミングを心がけています。"
+    },
+    {
+      "heading": "営業日と対応する犬",
+      "body": "営業は月曜日から土曜日で、9時30分から始まります。日曜日は定休日です。対応する犬は小型犬と中型犬です。"
     }
   ],
   "menus": [],
@@ -18,33 +22,57 @@
     {
       "claim": "業種はトリミングサロン",
       "source": "https://maps.google.com/?cid=2789450396352068285",
-      "quote": "トリミングサロン",
-      "checkedAt": "2026-10-25"
+      "checkedAt": "2026-10-28"
     },
     {
-      "claim": "住所は宮城県多賀城市中央３丁目９−２７",
-      "source": "https://maps.google.com/?cid=2789450396352068285",
-      "quote": "宮城県多賀城市中央３丁目９−２７",
-      "checkedAt": "2026-10-25"
+      "claim": "完全予約制である",
+      "source": "https://www.instagram.com/barberdogpreciouswan/",
+      "checkedAt": "2026-10-28"
     },
     {
-      "claim": "営業時間は月曜から土曜が9時30分から17時まで",
-      "source": "https://maps.google.com/?cid=2789450396352068285",
-      "quote": "09:30–17:00",
-      "checkedAt": "2026-10-25"
+      "claim": "トリマーは1人で、犬に負担の少ないトリミングを心がけている",
+      "source": "https://www.instagram.com/barberdogpreciouswan/",
+      "checkedAt": "2026-10-28"
     },
     {
-      "claim": "日曜日は定休日",
+      "claim": "電話は070-8971-1139",
+      "source": "https://www.instagram.com/barberdogpreciouswan/",
+      "checkedAt": "2026-10-28"
+    },
+    {
+      "claim": "住所は多賀城市中央3丁目9-27",
+      "source": "https://epark.jp/shopinfo/pts589532/",
+      "checkedAt": "2026-10-28"
+    },
+    {
+      "claim": "仙石線多賀城駅から徒歩3分",
+      "source": "https://epark.jp/shopinfo/pts589532/",
+      "checkedAt": "2026-10-28"
+    },
+    {
+      "claim": "対応する犬は小型犬と中型犬",
+      "source": "https://epark.jp/shopinfo/pts589532/",
+      "checkedAt": "2026-10-28"
+    },
+    {
+      "claim": "月曜から土曜の9時30分から営業し、日曜は定休日",
       "source": "https://maps.google.com/?cid=2789450396352068285",
-      "quote": "日: 定休日",
-      "checkedAt": "2026-10-25"
+      "checkedAt": "2026-10-28"
     }
   ],
   "sources": [
+    {
+      "label": "Instagram",
+      "url": "https://www.instagram.com/barberdogpreciouswan/"
+    },
+    {
+      "label": "予約サイト(EPARK)",
+      "url": "https://epark.jp/shopinfo/pts589532/"
+    },
     {
       "label": "Google マップ",
       "url": "https://maps.google.com/?cid=2789450396352068285"
     }
   ],
-  "notes": "automation/v2/write.mjs が 2026-10-25 に claude -p --model sonnet で作成。事実の裏取り: 4/4 件(quote が出どころにあるもの)。裏取りに通らなかった facts は載せていない。"
+  "notes": "automation/v2/write.mjs が 2026-10-25 に claude -p --model sonnet で作成。事実の裏取り: 4/4 件(quote が出どころにあるもの)。裏取りに通らなかった facts は載せていない。 / 2026-10-28 に文を書き直し(公式サイト・予約サイト・公式SNSで確認した事実のみ。facts は書き直し後の確認分に差し替え)。"
 }
