@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { FOOT_SMALL } from "@/lib/portal/noren/nav";
+import { ContactLink } from "./ContactLine";
 
 /**
  * グルメの全ページのフッターに置く、小さな文字の 1 行（いまは マチノワ トップ だけ）。
@@ -16,6 +17,9 @@ export default function FootSmall({ className }: { className: string }) {
             <Link href={n.href}>{n.ja}</Link>
           </li>
         ))}
+        <li>
+          <ContactLink />
+        </li>
       </ul>
     </nav>
   );

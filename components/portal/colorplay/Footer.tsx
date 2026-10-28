@@ -1,4 +1,5 @@
 import Link from "next/link";
+import ContactLine from "@/components/portal/ContactLine";
 import type { CpSite } from "@/lib/portal/colorplay/site";
 
 /**
@@ -23,6 +24,7 @@ export default function Footer({ site }: { site: CpSite }) {
         </ul>
         <p className="cp-note">掲載の情報は確認日の時点のものです。営業時間などは変わることがあります。お出かけの前に公式サイトでご確認ください。</p>
         <p className="cp-note cp-copy">© マチノワ</p>
+        <ContactLine className="cp-note" />
       </div>
     </footer>
   );

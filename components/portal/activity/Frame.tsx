@@ -1,4 +1,5 @@
 import Link from "next/link";
+import ContactLine from "@/components/portal/ContactLine";
 import { assertPortalLive } from "@/lib/portal/launch";
 import { hand, jp, lab, maru } from "./fonts";
 import Header from "./Header";
@@ -35,6 +36,7 @@ export default function ActivityFrame({ children }: { children: React.ReactNode 
             <Link href="/">マチノワ トップ</Link>
             <Link href="/videos">動画</Link>
           </nav>
+          <ContactLine />
         </footer>
       </div>
     </div>

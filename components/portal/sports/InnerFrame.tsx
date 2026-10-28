@@ -1,5 +1,6 @@
 import type { ReactNode } from "react";
 import { assertPortalLive } from "@/lib/portal/launch";
+import ContactLine from "@/components/portal/ContactLine";
 import { jp, sf, en } from "./inner/fonts";
 import "./inner/base.css";
 
@@ -14,6 +15,7 @@ export default function InnerFrame({ children }: { children: ReactNode }) {
     <div className={`s2b-root ${jp.variable} ${sf.variable} ${en.variable}`}>
       <div className="s2b-box">
         {children}
+        <ContactLine style={{ margin: 0, padding: "10px 14px 16px", textAlign: "center" }} />
       </div>
     </div>
   );
