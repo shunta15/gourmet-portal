@@ -1,7 +1,7 @@
 import type { CSSProperties } from "react";
 import Link from "next/link";
 import { SHAPES } from "./shapes";
-import ContactLine from "@/components/portal/ContactLine";
+import { IMG, HREF_SPECIAL, CATS, CAT_R, Arrow, P4Header, P4Footer } from "./P4Chrome";
 // 決まった言葉(発注者の決定。言い換えない・足さない・削らない)。machi2/copy.ts は proto-portal/hub-concepts/COPY-FINAL.md の写し
 import { CATCH, HEAD, P1_ONE, P2, P3 } from "../machi2/copy";
 
@@ -10,7 +10,6 @@ import { CATCH, HEAD, P1_ONE, P2, P3 } from "../machi2/copy";
 // そのほかの段は普通の大きさの文字で横に組む。768px 前後より狭いときは縦に積む。
 // 2026-10-29 本番用に、仮の # や文字を今ある実在のページへ置き換えた(配置・札の枚数・形・色は試作のまま)。リンク先の表は下の HREF_* にまとめてある。
 const U = (n: number) => `calc(var(--u) * ${n})`;
-const IMG = "/_portal/hproto/p4/";
 // コラージュの原点(見本の座標)
 const OX = 308;
 const OY = 49;
@@ -53,14 +52,6 @@ const LABEL_OFFS: Record<string, [number, number, number, number]> = {
   "泊まって、": [-0.035, 0.404, -0.005, 0.386],
   "整えて、": [-0.021, 0.385, -0.01, 0.381],
 };
-// ヘッダー・フッターのナビ。「マチノワについて」は 2026-10-29 オーナー指示で外した / 特集 = 特集の一覧 / 街歩き = 特集の一覧の「街歩き・コース」の棚。
-// インタビュー・お知らせは、中身が合うページがまだ無いので # のまま(オーナー判断待ち)
-const NAV: readonly (readonly [string, string])[] = [
-  ["特集", "/feature"],
-  ["街歩き", "/feature#walk"],
-  ["インタビュー", "#"],
-  ["お知らせ", "#"],
-];
 // 大見出し(決まったキャッチコピー HEAD の 3 行)の 1 字ずつの揺れ [大きさ(倍), 傾き(度), 上下(em)]。見本は筆ペン風の手書きで、字の大きさがそろわず少し踊っている。字は HEAD から取る(ここには字を書かない)
 const H1_WOBBLE: [number, number, number][][] = [
   [[1.08, -2, -0.02], [0.9, 3, 0], [1.04, -2, 0.02], [0.96, 3, -0.03], [1.06, -3, 0], [0.88, 3, 0.02], [1.02, -2, 0], [0.95, 0, 0]],
@@ -72,47 +63,13 @@ const H1: [string, number, number, number][][] = HEAD.map((line, li) => [...line
 const BADGE_LINES = P1_ONE.match(/[^。]+。/g) ?? [P1_ONE]; // 店と出会う。/人とつながる。/輪が広がる。
 const P2_LINES = P2.split("\n"); // 1 行目 = 青い札の見出し / 2 行目 = 本文
 const P3_LINES = P3.split("\n"); // ヒーローの小文(2 行)
-const HREF_FEATURE = "/feature";
-const HREF_FAV = "/list";
-const CATS = [
-  ["gourmet", "グルメ", "GOURMET"],
-  ["beauty", "ビューティー", "BEAUTY"],
-  ["bodycare", "ボディケア", "BODYCARE"],
-  ["pet", "ペット", "PET"],
-  ["stay", "ステイ", "STAY"],
-  ["activity", "アクティビティ", "ACTIVITY"],
-  ["sports", "スポーツ", "SPORTS"],
-  ["life", "くらし", "LIFESTYLE"],
-] as const;
-const CAT_R = ["36% 42% 38% 34% / 32% 36% 42% 36%", "40% 34% 42% 36% / 36% 40% 34% 42%", "34% 40% 36% 42% / 40% 34% 40% 36%", "42% 36% 34% 40% / 34% 42% 36% 40%"];
-// 利用シーン(店をさがすの絞り込み。どれも結果が出る: group 77 店 / 子連れ・家族連れ 17 店 / solo 22 店 / pet-friendly 3 店)
+// 利用シーンの行き先(2026-10-29 オーナー指示: グルメは 1 つだけ残し、ほかは総合らしい行き先へ)。友人と = グルメの絞り込み(group 77 店) / 家族と = アクティビティ / ひとりで = ボディケア / ペットと = ペット
 const SCENES: [string, string, string][] = [
   ["友人と", "楽しむ", "/search?scene=group"],
-  ["家族と", "おでかけ", "/search?f=kids"],
-  ["ひとりで", "ゆっくり", "/search?scene=solo"],
-  ["ペットと", "一緒に", "/search?scene=pet-friendly"],
+  ["家族と", "おでかけ", "/activity"],
+  ["ひとりで", "ゆっくり", "/bodycare"],
+  ["ペットと", "一緒に", "/pet"],
 ];
-
-const Heart = ({ c = "#d9423f", f = true }: { c?: string; f?: boolean }) => (
-  <svg viewBox="0 0 24 24" width="100%" height="100%" aria-hidden>
-    <path d="M12 21s-7.5-4.6-9.6-9.3C.9 8.2 2.8 4.5 6.4 4.5c2.2 0 4 1.3 5.6 3.2 1.6-1.9 3.4-3.2 5.6-3.2 3.6 0 5.5 3.7 4 7.2C19.5 16.4 12 21 12 21z" fill={f ? c : "none"} stroke={c} strokeWidth="1.6" strokeLinejoin="round" />
-  </svg>
-);
-const Arrow = () => (
-  <svg viewBox="0 0 24 10" width="16" height="7" aria-hidden>
-    <path d="M1 5h21M17 1l5 4-5 4" fill="none" stroke="currentColor" strokeWidth="1.2" strokeLinecap="round" strokeLinejoin="round" />
-  </svg>
-);
-// 内向きのリンクは Link、同じページ内(#…)や # は <a>
-function NavLink({ href, children }: { href: string; children: React.ReactNode }) {
-  return href.startsWith("/") ? <Link href={href}>{children}</Link> : <a href={href}>{children}</a>;
-}
-const Logo = () => (
-  <Link href="/" className="p4-logo" aria-label="マチノワ トップへ">
-    <span className="p4-logo-ja">マチノワ</span>
-    <span className="p4-logo-en">MACHINOWA</span>
-  </Link>
-);
 
 export default function P4Home() {
   const allShapes = [...HERO, "story", "city"] as const;
@@ -129,24 +86,7 @@ export default function P4Home() {
         </defs>
       </svg>
 
-      {/* ヘッダー */}
-      <header className="p4-header">
-        <Logo />
-        <nav className="p4-nav" aria-label="サイトナビゲーション">
-          {NAV.map(([t, h]) => (
-            <NavLink key={t} href={h}>{t}</NavLink>
-          ))}
-        </nav>
-        <details className="p4-menu">
-          <summary className="p4-burger" aria-label="メニュー"><i /><i /><i /></summary>
-          <ul className="p4-menu-list">
-            {CATS.map(([k, ja]) => (
-              <li key={k}><Link href={"/" + k}>{ja}</Link></li>
-            ))}
-            <li><Link href={HREF_FAV}>お気に入り</Link></li>
-          </ul>
-        </details>
-      </header>
+      <P4Header />
 
       {/* ヒーロー */}
       <section className="p4-hero" aria-label="ヒーロー">
@@ -233,7 +173,7 @@ export default function P4Home() {
           <div className="p4-story-body">
             <h2 className="p4-h3">街のストーリー</h2>
             <p className="p4-small">お店・人・街の魅力を紡ぐ<br />読みものコンテンツ。</p>
-            <Link href={HREF_FEATURE} className="p4-btn">特集をみる<Arrow /></Link>
+            <Link href={HREF_SPECIAL} className="p4-btn">特集をみる<Arrow /></Link>
           </div>
           <span className="p4-script p4-script-story">Special<br /><span style={{ marginLeft: 30 }}>Contents</span></span>
         </div>
@@ -259,7 +199,7 @@ export default function P4Home() {
             <p className="p4-en">FEATURE</p>
             <h2 className="p4-h4">特集記事</h2>
             <p className="p4-small">マチノワで紹介しているお店の<br />特集記事をまとめています。</p>
-            <Link href={HREF_FEATURE} className="p4-btn">特集記事を見る<Arrow /></Link>
+            <Link href={HREF_SPECIAL} className="p4-btn">特集記事を見る<Arrow /></Link>
           </div>
           <img src={IMG + "n_art_people.webp"} alt="" className="p4-people" />
         </div>
@@ -276,27 +216,7 @@ export default function P4Home() {
         </div>
       </section>
 
-      {/* フッター */}
-      <footer className="p4-footwrap">
-      <div className="p4-foot">
-        <Logo />
-        <nav className="p4-fnav" aria-label="フッターナビゲーション">
-          {NAV.map(([t, h]) => (
-            <NavLink key={t} href={h}>{t}</NavLink>
-          ))}
-        </nav>
-        <span className="p4-soc">
-          <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden><rect x="3" y="3" width="18" height="18" rx="5" fill="none" stroke="#2b2724" strokeWidth="2" /><circle cx="12" cy="12" r="4.2" fill="none" stroke="#2b2724" strokeWidth="2" /><circle cx="17.3" cy="6.7" r="1.2" fill="#2b2724" /></svg>
-          <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden><path d="M13 3v11.5a3.5 3.5 0 1 1-3.5-3.5M13 3c.4 2.6 2 4.4 5 4.7" fill="none" stroke="#2b2724" strokeWidth="2.6" strokeLinecap="round" /></svg>
-          <svg viewBox="0 0 24 24" width="20" height="18" aria-hidden><rect x="1.5" y="4.5" width="21" height="15" rx="4.5" fill="#2b2724" /><path d="M10 9l5 3-5 3z" fill="#f3efea" /></svg>
-        </span>
-        <i className="p4-fdiv" />
-        <Link href={HREF_FAV} className="p4-fav">
-          <span className="p4-fav-i"><Heart c="#2b2724" f={false} /></span>お気に入り
-        </Link>
-      </div>
-      <ContactLine className="p4-contact" style={{ margin: 0, padding: "0 var(--wrap) 18px", textAlign: "center", color: "#5a544d", opacity: 1 }} />
-      </footer>
+      <P4Footer />
     </div>
   );
 }

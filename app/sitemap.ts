@@ -44,6 +44,8 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     },
     // /gourmet（旧トップの移設先）は公開スイッチ ON のときだけ存在する。OFF では 404 なので載せない（出力は従来と同一）
     ...(isPortalLive() ? [{ url: `${BASE}/gourmet`, changeFrequency: "daily" as const, priority: 0.9, ...entranceUpdated }] : []),
+    // 総合の特集一覧（2026-10-29 新設。8 業種の特集への入口）。公開スイッチ ON のときだけ存在する
+    ...(isPortalLive() ? [{ url: `${BASE}/special`, changeFrequency: "weekly" as const, priority: 0.7 }] : []),
     // 店舗紹介の一覧（2026-10-24 新設。1 ページ目だけ。2 ページ目以降の ?page= は noindex なので載せない）。公開スイッチ ON のときだけ存在する
     ...(isPortalLive() && NOREN_SHOP_REWRITE ? [{ url: `${BASE}/restaurant`, changeFrequency: "weekly" as const, priority: 0.8 }] : []),
   ];
