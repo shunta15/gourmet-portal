@@ -184,7 +184,7 @@ export default function P4Home() {
           <div className="p4-scenes">
             {SCENES.map(([a, b, href], i) => (
               <Link key={a} href={href} className="p4-scene">
-                <img src={IMG + "n_s" + i + ".webp"} alt="" style={{ borderRadius: i % 2 ? "44% 44% 38% 38% / 30% 30% 22% 22%" : "46% 46% 36% 36% / 28% 28% 24% 24%" }} />
+                <img src={IMG + "n_s" + i + "_hq.webp"} alt="" style={{ borderRadius: i % 2 ? "44% 44% 38% 38% / 30% 30% 22% 22%" : "46% 46% 36% 36% / 28% 28% 24% 24%" }} />
                 <span>{a}<br />{b}</span>
               </Link>
             ))}
