@@ -60,11 +60,27 @@ fi
 # 2) ローカル画像パス（"/xxx/...拡張子"）が public 配下に実在するか
 local_paths=$(grep -rEho '"/[a-zA-Z0-9_\-]+/[a-zA-Z0-9_./\-]+\.(jpg|jpeg|png|webp|gif|avif|svg)"' "$LIB_DIR" 2>/dev/null | tr -d '"' | sort -u || true)
 
+# 表示禁止リスト（lib/imageBlocklist.ts の BLOCKED_IMAGE_SRCS）のローカルパス一覧
+blocked_srcs=$(grep -Eho '"/[^"]+"' "$LIB_DIR/imageBlocklist.ts" 2>/dev/null | tr -d '"' | sort -u || true)
+HELD_DIR="$ROOT/automation/vertical-stores/held-photos"
+
 if [[ -n "$local_paths" ]]; then
   echo "[2/2] checking local image paths..."
   while IFS= read -r p; do
     [[ -z "$p" ]] && continue
     if [[ ! -f "$PUBLIC_DIR$p" ]]; then
+      # 意図的な欠落は誤検出として失敗にしない（それ以外の欠落は従来どおり失敗）
+      # (a) 検閲削除済みで lib/imageBlocklist.ts の BLOCKED_IMAGE_SRCS に載っている → 表示前に除外される
+      if [[ -n "$blocked_srcs" ]] && printf '%s\n' "$blocked_srcs" | grep -qxF -- "$p"; then
+        echo "  OK  表示禁止で除外済み  $p"
+        continue
+      fi
+      # (b) /_portal/vshops/<id>/<file> が automation/vertical-stores/held-photos/<id>/<file> に退避済み（保留店）
+      if [[ "$p" =~ ^/_portal/vshops/([^/]+)/([^/]+)$ ]] \
+        && [[ -f "$HELD_DIR/${BASH_REMATCH[1]}/${BASH_REMATCH[2]}" ]]; then
+        echo "  OK  保留店  $p"
+        continue
+      fi
       echo "  NG  missing  $p (expected at public$p)"
       fail=1
     else
