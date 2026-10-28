@@ -39,10 +39,9 @@ const LABELS: [number, number, number, number, string, number, string, number?, 
   [810, 458, 30, 92, "泊まって、", 0, "/stay"],
   [982, 468, 30, 76, "整えて、", 0, "/bodycare"],
 ];
-// ヘッダー・フッターのナビ。マチノワについて = 特集の一覧(2026-10-29 オーナー指示「マチノワについては特集記事とかにして」) / 特集 = 特集の一覧 / 街歩き = 特集の一覧の「街歩き・コース」の棚。
+// ヘッダー・フッターのナビ。「マチノワについて」は 2026-10-29 オーナー指示で外した / 特集 = 特集の一覧 / 街歩き = 特集の一覧の「街歩き・コース」の棚。
 // インタビュー・お知らせは、中身が合うページがまだ無いので # のまま(オーナー判断待ち)
 const NAV: readonly (readonly [string, string])[] = [
-  ["マチノワについて", "/feature"],
   ["特集", "/feature"],
   ["街歩き", "/feature#walk"],
   ["インタビュー", "#"],
@@ -113,9 +112,6 @@ export default function P4Home() {
             <NavLink key={t} href={h}>{t}</NavLink>
           ))}
         </nav>
-        <Link href={HREF_FAV} className="p4-fav">
-          <span className="p4-fav-i"><Heart /></span>お気に入り
-        </Link>
         <details className="p4-menu">
           <summary className="p4-burger" aria-label="メニュー"><i /><i /><i /></summary>
           <ul className="p4-menu-list">
@@ -223,14 +219,14 @@ export default function P4Home() {
         </div>
       </section>
 
-      {/* マチノワについて */}
-      <section className="p4-about" id="about" aria-label="マチノワについて">
+      {/* 特集記事(2026-10-29 「ABOUT マチノワについて」の段を替えた。並び・絵・写真・札は変えず文字だけ) */}
+      <section className="p4-about" id="feature" aria-label="特集記事">
         <div className="p4-about-l">
           <div className="p4-about-text">
-            <p className="p4-en">ABOUT</p>
-            <h2 className="p4-h4">マチノワについて</h2>
-            <p className="p4-small">地域の魅力をつなぎ、<br />街の新しい発見や出会いを生み出します。</p>
-            <Link href={HREF_FEATURE} className="p4-btn">マチノワについて<Arrow /></Link>
+            <p className="p4-en">FEATURE</p>
+            <h2 className="p4-h4">特集記事</h2>
+            <p className="p4-small">マチノワで紹介しているお店の<br />特集記事をまとめています。</p>
+            <Link href={HREF_FEATURE} className="p4-btn">特集記事を見る<Arrow /></Link>
           </div>
           <img src={IMG + "n_art_people.webp"} alt="" className="p4-people" />
         </div>

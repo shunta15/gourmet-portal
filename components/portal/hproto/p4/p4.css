@@ -20,7 +20,7 @@ body:has(.p4-page) > .cursor-dot, body:has(.p4-page) > .cursor-ring { display: n
 .p4-nav a:first-child { border-left: 0; padding-left: 0; }
 .p4-fav { margin-left: auto; font-size: 12px; letter-spacing: .06em; display: flex; align-items: center; gap: 6px; white-space: nowrap; }
 .p4-fav-i { width: 15px; height: 15px; display: inline-block; }
-.p4-menu { margin-left: 32px; }
+.p4-menu { margin-left: auto; }
 .p4-burger { display: block; width: 22px; list-style: none; }
 .p4-burger::-webkit-details-marker { display: none; }
 .p4-menu-list { position: absolute; right: var(--wrap); top: 58px; margin: 0; padding: 10px 6px; list-style: none; min-width: 188px; background: #fdfcfa; border: 1px solid #e3ddd2; border-radius: 16px; box-shadow: 0 8px 24px rgba(58, 51, 44, .12); }
