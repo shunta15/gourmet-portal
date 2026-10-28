@@ -1,3 +1,4 @@
+import type { CSSProperties } from "react";
 import Link from "next/link";
 import { SHAPES } from "./shapes";
 import ContactLine from "@/components/portal/ContactLine";
@@ -15,7 +16,7 @@ const OY = 49;
 // 高画質に差し替えた 8 枚 = ヒーローの写真すべて(2026-10-29 オーナー提供)の見せる窓 [x0, y0, 幅, 高さ](元画像 1536×1024 の px。幅/高さ = そのブロブの縦横比)
 // h1 = 食べて(カフェの女性) / h2 = 動いて(ジムの男性) / h3 = 癒されて(犬) / h4 = キレイになって・横札(ヘッドスパ) / h6 = ステイ・ベッド(寝室。縦札「キレイになって、」の写真) / h5 = 出かけて / h8 = 楽しんで / h7 = 整えて
 const HIRES: Record<string, [number, number, number, number]> = {
-  h2: [150, 0, 1178, 1024],
+  h2: [180, 0, 1178, 1024], // 札と鉄アレイが重ならないよう 30px 右へ(2026-10-29)
   h3: [600, 0, 755, 1024],
   h4: [60, 0, 1431, 1024],
   h6: [100, 0, 1331, 1024],
@@ -25,16 +26,18 @@ const HIRES: Record<string, [number, number, number, number]> = {
   h7: [490, 0, 1032, 900], // 整えて(整体。施術者の手と背中)
 };
 const HERO = ["h1", "h2", "h3", "h4", "h5", "h6", "h7", "h8"] as const;
-// [x0,y0,x1,y1, 文字, 傾き, 字の大きさ, 行き先](見本の座標)。行き先は札の隣の写真に合わせた業種の最初のページ(8 枚の写真 = 8 業種)
-const LABELS: [number, number, number, number, string, number, number, string][] = [
-  [459, 114, 493, 198, "食べて、", 0, 16, "/gourmet"],
-  [842, 89, 875, 176, "動いて、", 0, 16, "/sports"],
-  [971, 225, 997, 302, "癒されて、", 0, 13, "/pet"],
-  [840, 344, 960, 391, "キレイになって、", -4, 15, "/beauty"],
-  [528, 372, 560, 466, "出かけて、", 0, 16, "/activity"],
-  [465, 492, 498, 584, "楽しんで、", 0, 16, "/life"],
-  [780, 408, 811, 513, "キレイになって、", 0, 12, "/stay"],
-  [929, 483, 961, 558, "整えて、", 0, 16, "/bodycare"],
+// 札: [中心 x, 中心 y, 幅, 高さ, 文字, 傾き, 行き先, スマホの中心 x, スマホの中心 y](見本の座標)。行き先は札の隣の写真に合わせた業種の最初のページ(8 枚の写真 = 8 業種)。
+// 2026-10-29 位置直し: 札は必ず写真の縁の内側(縁から 6〜15 以上あける)に収め、顔・施術者の手・窓の柱には重ねない。字の大きさは全札 14 にそろえた。
+// 幅・高さは PC の大きさ。スマホ(390 幅)では字の下限(9px)で箱が自動で広がる(中心は変わらない)。横札はスマホだけ 2 行(キレイに/なって、)にして写真に収める。
+const LABELS: [number, number, number, number, string, number, string, number?, number?][] = [
+  [470, 160, 30, 76, "食べて、", 0, "/gourmet"],
+  [814, 106, 30, 76, "動いて、", 0, "/sports"],
+  [992, 126, 30, 92, "癒されて、", 0, "/pet"],
+  [888, 359, 137, 28, "キレイになって、", -3, "/beauty", 890, 364],
+  [545, 417, 30, 76, "出かけて、", 0, "/activity"],
+  [481, 538, 30, 76, "楽しんで、", 0, "/life"],
+  [810, 458, 30, 92, "泊まって、", 0, "/stay"],
+  [982, 468, 30, 76, "整えて、", 0, "/bodycare"],
 ];
 // ヘッダー・フッターのナビ。マチノワについて = 特集の一覧(2026-10-29 オーナー指示「マチノワについては特集記事とかにして」) / 特集 = 特集の一覧 / 街歩き = 特集の一覧の「街歩き・コース」の棚。
 // インタビュー・お知らせは、中身が合うページがまだ無いので # のまま(オーナー判断待ち)
@@ -151,14 +154,14 @@ export default function P4Home() {
               </div>
             );
           })}
-          {LABELS.map(([x0, y0, x1, y1, t, r, fs, href]) => (
+          {LABELS.map(([cx, cy, w, h, t, r, href, mx, my]) => (
             <Link
-              key={x0 + "-" + y0}
+              key={cx + "-" + cy}
               href={href}
-              className="p4-label"
-              style={{ left: U(x0 - 1 - OX), top: U(y0 - 1 - OY), width: U(x1 - x0 + 2), height: U(y1 - y0 + 2), transform: `rotate(${r}deg)`, fontSize: `max(10px, ${U(fs)})`, writingMode: r ? "horizontal-tb" : "vertical-rl" }}
+              className={"p4-label " + (r ? "p4-label-h" : "p4-label-v")}
+              style={{ "--x": U(cx - OX), "--y": U(cy - OY), "--w": U(w), "--h": U(h), "--n": t.length, "--r": `${r}deg`, ...(mx ? { "--mx": U(mx - OX), "--my": U((my ?? cy) - OY) } : {}) } as CSSProperties}
             >
-              {t}
+              {r ? <>キレイに<br className="p4-br" />なって、</> : t}
             </Link>
           ))}
           <div className="p4-badge" style={{ left: U(620 - OX), top: U(212 - OY), width: U(180), height: U(180) }}>
