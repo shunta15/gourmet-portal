@@ -3,7 +3,7 @@ import { notFound } from "next/navigation";
 import GourmetNorenShop from "@/components/portal/pages/gourmet-noren-shop";
 import PhotoFeatureShell from "@/components/portal/photoFeature/PhotoFeatureShell";
 import PhotoFeaturePage from "@/components/portal/photoFeature/PhotoFeaturePage";
-import { REGIONS } from "@/lib/regions";
+import { regionNameOf } from "@/lib/regions";
 import { getRestaurantById, getAllRestaurantIds } from "@/lib/db/restaurants";
 import { buildRestaurantJsonLd, buildBreadcrumbJsonLd, buildArticleJsonLd } from "@/lib/jsonld";
 import { getFeatureArticleById } from "@/lib/db/features";
@@ -43,7 +43,6 @@ export async function generateMetadata({ params }: { params: Promise<{ id: strin
   const id = decodeRewrittenId((await params).id);
   const r = await getRestaurantById(id);
   if (!r) return { title: "店舗が見つかりません — マチノワ" };
-  const region = REGIONS[r.region];
   const cuisine = cuisineLabel(r.cuisine);
   const title = restaurantTitle(r);
   const description = restaurantDescription(r);
@@ -69,7 +68,7 @@ export async function generateMetadata({ params }: { params: Promise<{ id: strin
     },
     // 記事由来の店は、実写画像・住所・営業時間がそろわなければ noindex（lib/restaurantIndexable.ts）
     robots: isRestaurantIndexable(r.id) ? undefined : { index: false, follow: true },
-    keywords: [r.name, r.area, cuisine, region?.name, "マチノワ", ...(r.tags || [])].filter(Boolean) as string[],
+    keywords: [r.name, r.area, cuisine, regionNameOf(r.region), "マチノワ", ...(r.tags || [])].filter(Boolean) as string[],
   };
 }
 
@@ -78,12 +77,11 @@ export default async function Page({ params }: { params: Promise<{ id: string }>
   const id = decodeRewrittenId((await params).id);
   const r = await getRestaurantById(id);
   if (!r) notFound();
-  const region = REGIONS[r.region];
 
   const restaurantJsonLd = buildRestaurantJsonLd(r);
   const breadcrumbJsonLd = buildBreadcrumbJsonLd([
     { name: "トップ", url: BASE },
-    { name: region?.name || r.region, url: `${BASE}/region/${r.region}` },
+    { name: regionNameOf(r.region), url: `${BASE}/region/${r.region}` },
     { name: r.name, url: `${BASE}/restaurant/${r.id}` },
   ]);
 
@@ -106,7 +104,7 @@ export default async function Page({ params }: { params: Promise<{ id: string }>
     void _omit;
     const onePageBreadcrumb = buildBreadcrumbJsonLd([
       { name: "トップ", url: BASE },
-      { name: region?.name || r.region, url: `${BASE}/search?region=${encodeURIComponent(r.region)}` },
+      { name: regionNameOf(r.region), url: `${BASE}/search?region=${encodeURIComponent(r.region)}` },
       { name: r.name, url: `${BASE}/restaurant/${r.id}` },
     ]);
     return (
@@ -146,7 +144,7 @@ export default async function Page({ params }: { params: Promise<{ id: string }>
     void _omit;
     const onePageBreadcrumb = buildBreadcrumbJsonLd([
       { name: "トップ", url: BASE },
-      { name: region?.name || r.region, url: `${BASE}/search?region=${encodeURIComponent(r.region)}` },
+      { name: regionNameOf(r.region), url: `${BASE}/search?region=${encodeURIComponent(r.region)}` },
       { name: r.name, url: `${BASE}/restaurant/${r.id}` },
     ]);
     return (
