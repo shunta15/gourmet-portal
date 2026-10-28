@@ -2,6 +2,8 @@ import type { CSSProperties } from "react";
 import Link from "next/link";
 import { SHAPES } from "./shapes";
 import ContactLine from "@/components/portal/ContactLine";
+// 決まった言葉(発注者の決定。言い換えない・足さない・削らない)。machi2/copy.ts は proto-portal/hub-concepts/COPY-FINAL.md の写し
+import { CATCH, HEAD, P1_ONE, P2, P3 } from "../machi2/copy";
 
 // 総合トップの試作「見本4(丸い切り抜き)」の横型(PC)版。
 // 見本(1024×1536 の縦長)を画面幅で引き伸ばさず、ヒーローだけ見本の座標(--u = 見本の 1px、最大 1.2px)で組み、
@@ -39,6 +41,18 @@ const LABELS: [number, number, number, number, string, number, string, number?, 
   [810, 458, 30, 92, "泊まって、", 0, "/stay"],
   [982, 468, 30, 76, "整えて、", 0, "/bodycare"],
 ];
+// 札の字を白い長方形の真ん中に置くための寄せ [PC の横 tx, PC の縦 ty, スマホの横, スマホの縦](単位 em。+ = 右・下)。
+// 縦書きの「、」は字の枠の右上に小さく乗るので、枠だけを真ん中にすると見た目の字(インク)が上に寄る。字のインクの縦横の余白が等しくなるよう、Playwright で 1440 と 390 の両方を実測して決めた。
+const LABEL_OFFS: Record<string, [number, number, number, number]> = {
+  "食べて、": [-0.035, 0.408, -0.004, 0.371],
+  "動いて、": [-0.027, 0.41, -0.01, 0.397],
+  "癒されて、": [-0.04, 0.38, -0.011, 0.359],
+  "キレイになって、": [0.358, -0.02, 0.081, 0.077],
+  "出かけて、": [-0.055, 0.373, -0.044, 0.362],
+  "楽しんで、": [-0.023, 0.395, -0.001, 0.414],
+  "泊まって、": [-0.035, 0.404, -0.005, 0.386],
+  "整えて、": [-0.021, 0.385, -0.01, 0.381],
+};
 // ヘッダー・フッターのナビ。「マチノワについて」は 2026-10-29 オーナー指示で外した / 特集 = 特集の一覧 / 街歩き = 特集の一覧の「街歩き・コース」の棚。
 // インタビュー・お知らせは、中身が合うページがまだ無いので # のまま(オーナー判断待ち)
 const NAV: readonly (readonly [string, string])[] = [
@@ -47,12 +61,17 @@ const NAV: readonly (readonly [string, string])[] = [
   ["インタビュー", "#"],
   ["お知らせ", "#"],
 ];
-// 大見出しの 1 字ずつの揺れ [字, 大きさ(倍), 傾き(度), 上下(em)]。見本は筆ペン風の手書きで、字の大きさがそろわず少し踊っている(2026-10-29 オーナー指示「文字をキャッチコピー通りに」)
-const H1: [string, number, number, number][][] = [
-  [["こ", 0.95, -2, 0.02], ["の", 0.9, 3, 0], ["街", 1.08, -2, -0.02], ["の", 0.84, 4, -0.04]],
-  [["好", 1.2, -3, 0], ["き", 1.08, 2, 0.03], ["が", 1.06, -3, 0], ["、", 1.0, 0, 0]],
-  [["み", 1.0, -2, 0.02], ["つ", 0.97, 3, 0], ["か", 1.0, -2, 0.03], ["る", 1.02, 3, -0.02], ["。", 0.95, 0, 0]],
+// 大見出し(決まったキャッチコピー HEAD の 3 行)の 1 字ずつの揺れ [大きさ(倍), 傾き(度), 上下(em)]。見本は筆ペン風の手書きで、字の大きさがそろわず少し踊っている。字は HEAD から取る(ここには字を書かない)
+const H1_WOBBLE: [number, number, number][][] = [
+  [[1.08, -2, -0.02], [0.9, 3, 0], [1.04, -2, 0.02], [0.96, 3, -0.03], [1.06, -3, 0], [0.88, 3, 0.02], [1.02, -2, 0], [0.95, 0, 0]],
+  [[1.1, -3, 0], [0.96, 2, 0.03], [1.04, -3, 0], [1.0, 2, 0.02], [1.06, -2, -0.02], [0.92, 3, 0.03], [0.98, 0, 0]],
+  [[1.0, -2, 0.02], [1.04, 3, 0], [0.94, -2, 0.03], [1.04, 3, -0.02], [1.0, -2, 0], [0.96, 2, 0.02], [0.95, 0, 0]],
 ];
+const H1: [string, number, number, number][][] = HEAD.map((line, li) => [...line].map((ch, ci) => [ch, ...H1_WOBBLE[li][ci]] as [string, number, number, number]));
+// 丸い札・下の青い札の言葉は、決まった言葉を切り分けただけ(字は変えない)
+const BADGE_LINES = P1_ONE.match(/[^。]+。/g) ?? [P1_ONE]; // 店と出会う。/人とつながる。/輪が広がる。
+const P2_LINES = P2.split("\n"); // 1 行目 = 青い札の見出し / 2 行目 = 本文
+const P3_LINES = P3.split("\n"); // ヒーローの小文(2 行)
 const HREF_FEATURE = "/feature";
 const HREF_FAV = "/list";
 const CATS = [
@@ -132,7 +151,7 @@ export default function P4Home() {
       {/* ヒーロー */}
       <section className="p4-hero" aria-label="ヒーロー">
         <div className="p4-hero-text">
-          <h1 className="p4-h1" aria-label="この街の好きが、みつかる。">
+          <h1 className="p4-h1" aria-label={CATCH}>
             {H1.map((line, li) => (
               <span key={li} aria-hidden>
                 {line.map(([ch, s, r, dy], ci) => (
@@ -142,7 +161,7 @@ export default function P4Home() {
             ))}
           </h1>
           <p className="p4-lead">
-            マチノワは、地域の魅力的なお店・人・文化・体験をつなぐ<br />街のポータルサイトです。
+            {P3_LINES[0]}<br />{P3_LINES[1]}
           </p>
         </div>
         <img src={IMG + "n_art_street.webp"} alt="" className="p4-street" />
@@ -165,9 +184,9 @@ export default function P4Home() {
               key={cx + "-" + cy}
               href={href}
               className={"p4-label " + (r ? "p4-label-h" : "p4-label-v")}
-              style={{ "--x": U(cx - OX), "--y": U(cy - OY), "--w": U(w), "--h": U(h), "--n": t.length, "--r": `${r}deg`, ...(mx ? { "--mx": U(mx - OX), "--my": U((my ?? cy) - OY) } : {}) } as CSSProperties}
+              style={{ "--x": U(cx - OX), "--y": U(cy - OY), "--w": U(w), "--h": U(h), "--n": t.length, "--r": `${r}deg`, ...(mx ? { "--mx": U(mx - OX), "--my": U((my ?? cy) - OY) } : {}), "--tx": LABEL_OFFS[t][0], "--ty": LABEL_OFFS[t][1], "--mtx": LABEL_OFFS[t][2], "--mty": LABEL_OFFS[t][3] } as CSSProperties}
             >
-              {r ? <>キレイに<br className="p4-br" />なって、</> : t}
+              <span className="p4-label-t">{r ? <>キレイに<br className="p4-br" />なって、</> : t}</span>
             </Link>
           ))}
           <div className="p4-badge" style={{ left: U(620 - OX), top: U(212 - OY), width: U(180), height: U(180) }}>
@@ -175,8 +194,9 @@ export default function P4Home() {
               <path d="M90 2C140 1 179 40 178 91C177 141 138 179 88 178C38 177 1 139 2 89C3 40 42 3 90 2Z" fill="#faf8f2" stroke="#5a554f" strokeWidth="1.1" />
             </svg>
             <span className="p4-badge-t">
-              <span style={{ display: "block", transform: "translateX(2px)" }}>いつもの街が、</span>
-              <span style={{ display: "block", transform: "translateX(-4px)" }}>もっと好きになる。</span>
+              <span style={{ display: "block", transform: "translateX(2px)" }}>{BADGE_LINES[0]}</span>
+              <span style={{ display: "block", transform: "translateX(-3px)" }}>{BADGE_LINES[1]}</span>
+              <span style={{ display: "block", transform: "translateX(1px)" }}>{BADGE_LINES[2]}</span>
             </span>
             <span className="p4-badge-en">MACHINOWA</span>
           </div>
@@ -247,8 +267,8 @@ export default function P4Home() {
         <div className="p4-blue">
           <img src={IMG + "n_art_cam.webp"} alt="" className="p4-cam" />
           <div>
-            <h2 className="p4-h4">街で見つける、<br />新しい好き。</h2>
-            <p className="p4-small">マチノワは、地域の魅力的なお店や<br />人・文化・体験をつなぎ、<br />この街をもっと豊かにしていく<br />ポータルサイトです。</p>
+            <h2 className="p4-h4">{(P2_LINES[0].match(/[^、]+、/g) ?? [P2_LINES[0]]).map((t, i) => (i ? [<br key={"b" + i} />, t] : t))}</h2>
+            <p className="p4-small">{P2_LINES[1]}</p>
           </div>
         </div>
       </section>
