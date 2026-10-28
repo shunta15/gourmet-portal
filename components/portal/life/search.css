@@ -17,6 +17,7 @@
 .sr-form fieldset:last-of-type { border-bottom: 0; }
 .sr-form legend { padding: 0; float: left; width: 100%; font-weight: 700; font-size: calc(13.4 * var(--u)); letter-spacing: 0.1em; color: #2b2420; margin-bottom: calc(10 * var(--u)); }
 .sr-ck { display: flex; align-items: center; gap: calc(8 * var(--u)); clear: both; padding: calc(5.5 * var(--u)) 0; font-size: calc(13.6 * var(--u)); letter-spacing: 0.06em; }
+.sr-ck-note { margin-left: 0.3em; font-size: 0.78em; letter-spacing: 0.02em; color: #6f665b; }
 .sr-ck input { appearance: none; -webkit-appearance: none; width: calc(15 * var(--u)); height: calc(15 * var(--u)); min-width: 13px; min-height: 13px; margin: 0; border: 1px solid #8a8176; background: #fffdf8; display: grid; place-items: center; flex: none; }
 .sr-ck input:checked { background: var(--lf-navy); border-color: var(--lf-navy); }
 .sr-ck input:checked::after { content: ""; width: 38%; height: 62%; border: solid #fff; border-width: 0 1.6px 1.6px 0; transform: translateY(-8%) rotate(45deg); }

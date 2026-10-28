@@ -3993,6 +3993,7 @@
       "id": "li0026",
       "vertical": "life",
       "category": "car-repair",
+      "kindName": "ハウスクリーニング",
       "name": "ひまわり洗浄",
       "pref": "hokkaido",
       "cityName": "函館市",
@@ -4687,6 +4688,7 @@
       "id": "li0031",
       "vertical": "life",
       "category": "car-repair",
+      "kindName": "便利屋",
       "name": "便利関工房",
       "pref": "osaka",
       "cityName": "豊中市",
@@ -7129,216 +7131,6 @@
       }
     },
     {
-      "id": "li0046",
-      "vertical": "life",
-      "category": "fashion-craft",
-      "name": "雲仙湯せんぺい 遠江屋 (とおとうみや) 本舗",
-      "pref": "nagasaki",
-      "cityName": "雲仙市",
-      "address": "長崎県雲仙市小浜町雲仙317",
-      "lat": 32.7420472,
-      "lng": 130.2607269,
-      "hours": "月-水金-日 08:30 - 19:00",
-      "holidays": "木曜",
-      "phone": "0957-73-2155",
-      "url": "https://tohtoumiya.theshop.jp/",
-      "website": "https://tohtoumiya.theshop.jp/",
-      "mapUrl": "https://maps.google.com/?cid=81602590403749157",
-      "image": "/_portal/vshops/tri-life-227/g01.jpg",
-      "images": [
-        "/_portal/vshops/tri-life-227/g01.jpg",
-        "/_portal/vshops/tri-life-227/g02.jpg",
-        "/_portal/vshops/tri-life-227/g05.jpg",
-        "/_portal/vshops/tri-life-227/g07.jpg",
-        "/_portal/vshops/tri-life-227/g09.jpg",
-        "/_portal/vshops/tri-life-227/g10.jpg",
-        "/_portal/vshops/tri-life-227/s05.jpg",
-        "/_portal/vshops/tri-life-227/s06.jpg",
-        "/_portal/vshops/tri-life-227/s07.jpg",
-        "/_portal/vshops/tri-life-227/s08.jpg",
-        "/_portal/vshops/tri-life-227/s09.jpg",
-        "/_portal/vshops/tri-life-227/s10.jpg",
-        "/_portal/vshops/tri-life-227/s12.jpg",
-        "/_portal/vshops/tri-life-227/s17.jpg",
-        "/_portal/vshops/tri-life-227/s18.jpg"
-      ],
-      "photos": [
-        {
-          "path": "/_portal/vshops/tri-life-227/g01.jpg",
-          "what": "格子戸と商品棚が見える店の入り口",
-          "kind": "exterior",
-          "width": 1200,
-          "height": 675
-        },
-        {
-          "path": "/_portal/vshops/tri-life-227/g02.jpg",
-          "what": "焼き型で湯せんぺいを一枚ずつ焼く職人の手元",
-          "kind": "common",
-          "width": 1200,
-          "height": 675
-        },
-        {
-          "path": "/_portal/vshops/tri-life-227/g05.jpg",
-          "what": "黒い外壁の建物が通りの角に立つ外観",
-          "kind": "exterior",
-          "width": 960,
-          "height": 1200
-        },
-        {
-          "path": "/_portal/vshops/tri-life-227/g07.jpg",
-          "what": "丸い湯せんぺいをトングでつまむ接写",
-          "kind": "meal",
-          "width": 1200,
-          "height": 900
-        },
-        {
-          "path": "/_portal/vshops/tri-life-227/g09.jpg",
-          "what": "抹茶色のソフトクリームを手に持つ接写",
-          "kind": "meal",
-          "width": 900,
-          "height": 1200
-        },
-        {
-          "path": "/_portal/vshops/tri-life-227/g10.jpg",
-          "what": "白壁に「湯せんぺい」の文字看板がある三階建ての外観",
-          "kind": "exterior",
-          "width": 1200,
-          "height": 900
-        },
-        {
-          "path": "/_portal/vshops/tri-life-227/s05.jpg",
-          "what": "個包装のせんぺいと円筒形の缶",
-          "kind": "meal",
-          "width": 640,
-          "height": 427
-        },
-        {
-          "path": "/_portal/vshops/tri-life-227/s06.jpg",
-          "what": "個包装のせんぺいと模様入りの六角形の箱",
-          "kind": "meal",
-          "width": 640,
-          "height": 427
-        },
-        {
-          "path": "/_portal/vshops/tri-life-227/s07.jpg",
-          "what": "個包装のせんぺいと化粧箱",
-          "kind": "meal",
-          "width": 640,
-          "height": 427
-        },
-        {
-          "path": "/_portal/vshops/tri-life-227/s08.jpg",
-          "what": "個包装のせんぺいと縦長の化粧箱",
-          "kind": "meal",
-          "width": 640,
-          "height": 427
-        },
-        {
-          "path": "/_portal/vshops/tri-life-227/s09.jpg",
-          "what": "個包装のせんぺいとやや大きめの化粧箱",
-          "kind": "meal",
-          "width": 640,
-          "height": 427
-        },
-        {
-          "path": "/_portal/vshops/tri-life-227/s10.jpg",
-          "what": "黒い皿に並ぶ俵形の焼き菓子",
-          "kind": "meal",
-          "width": 640,
-          "height": 427
-        },
-        {
-          "path": "/_portal/vshops/tri-life-227/s12.jpg",
-          "what": "黒い皿に並ぶ二切れの羊羹",
-          "kind": "meal",
-          "width": 640,
-          "height": 427
-        },
-        {
-          "path": "/_portal/vshops/tri-life-227/s17.jpg",
-          "what": "白いクリームを挟んだ丸いウエハース菓子",
-          "kind": "meal",
-          "width": 640,
-          "height": 427
-        },
-        {
-          "path": "/_portal/vshops/tri-life-227/s18.jpg",
-          "what": "緑色のクリームを挟んだ丸いウエハース菓子",
-          "kind": "meal",
-          "width": 640,
-          "height": 427
-        }
-      ],
-      "tags": [],
-      "article": {
-        "headline": "長崎県雲仙市小浜町雲仙にある土産物店。明治初期創業で、一丁型の金型で一枚ずつ焼く「純一枚手焼き製法」を今も続ける",
-        "lede": "雲仙市にある「雲仙湯せんぺい 遠江屋 (とおとうみや) 本舗」です。明治初期、木賃宿として創業し、昭和20年代に土産品店を開業、ほどなく湯せんぺいの製造を始めました。現在も一丁型の金型で一枚ずつ焼く「純一枚手焼き製法」を続けています。",
-        "sections": [
-          {
-            "heading": "場所と営業時間",
-            "body": "正式名称は「雲仙温泉 遠江屋本舗」で、長崎県雲仙市小浜町雲仙317にあります。電話番号は0957-73-2155です。営業は木曜定休で、それ以外の曜日は8時30分から19時までです。"
-          },
-          {
-            "heading": "創業の歴史",
-            "body": "遠江屋は明治初期、雲仙地獄にほど近い現在地で旅人や行商人のための木賃宿として創業しました。その後食堂となり、昭和20年代に土産品店を開業し、ほどなく湯せんぺいの製造を始めました。湯せんぺいは、旧島原藩主松平公が考案したものです。"
-          },
-          {
-            "heading": "純一枚手焼き製法",
-            "body": "遠江屋は現在も、一丁型の金型で一枚一枚焼き上げる「純一枚手焼き製法」を残す店です。小麦粉は厳選した2種類の中力粉を使用し、生地には雲仙市内の源泉から職人自らがくみ取った食塩泉を練り込んでいます。"
-          },
-          {
-            "heading": "取り扱う商品",
-            "body": "湯せんぺいのほか、上品なクリームをサンドした温泉ゴーフレット、長崎県産のじゃが芋を白餡とブレンドしたじゃが玉、湯せんぺいのシャリシャリ感を生かしたグラノーラ、ヌガータイプの湯せんぺいチョコバーなど、雲仙の素材を使った菓子を扱っています。"
-          }
-        ],
-        "menus": [
-          {
-            "name": "湯せんぺい"
-          },
-          {
-            "name": "純一枚手焼き湯せんぺい"
-          },
-          {
-            "name": "温泉ゴーフレット"
-          },
-          {
-            "name": "UNZENハイカラセット"
-          },
-          {
-            "name": "じゃが玉"
-          },
-          {
-            "name": "じゃが芋羊羹"
-          },
-          {
-            "name": "湯せんぺいグラノーラ"
-          },
-          {
-            "name": "湯せんぺいチョコバー"
-          }
-        ],
-        "sources": [
-          {
-            "label": "公式サイト",
-            "url": "https://tohtoumiya.theshop.jp/"
-          },
-          {
-            "label": "公式サイト(ABOUT)",
-            "url": "https://tohtoumiya.theshop.jp/about"
-          },
-          {
-            "label": "公式サイト(カテゴリ)",
-            "url": "https://tohtoumiya.theshop.jp/categories/834292"
-          },
-          {
-            "label": "Google マップ",
-            "url": "https://maps.google.com/?cid=81602590403749157"
-          }
-        ],
-        "checkedAt": "2026-10-26"
-      }
-    },
-    {
       "id": "li0047",
       "vertical": "life",
       "category": "shrine-temple",
@@ -7534,6 +7326,7 @@
       "id": "li0048",
       "vertical": "life",
       "category": "car-repair",
+      "kindName": "かばん・靴のお直し",
       "name": "彩洗工房",
       "pref": "osaka",
       "cityName": "豊中市",
@@ -8352,126 +8145,6 @@
           {
             "label": "Google マップ",
             "url": "https://maps.google.com/?cid=17717155789979894597"
-          }
-        ],
-        "checkedAt": "2026-10-27"
-      }
-    },
-    {
-      "id": "li0053",
-      "vertical": "life",
-      "category": "flower-farm",
-      "name": "野菜専門店 マルシェノグチ",
-      "pref": "kyoto",
-      "cityName": "京都市中京区",
-      "address": "京都府京都市中京区西ノ京職司町69 IMPACT IKU 北 1F",
-      "lat": 35.0111455,
-      "lng": 135.7447952,
-      "hours": "月-土 10:00 - 19:00",
-      "holidays": "日曜",
-      "phone": "075-432-7243",
-      "url": "https://home.tsuku2.jp/storeDetail.php?scd=0000214958&pv=1%252523",
-      "website": "https://home.tsuku2.jp/storeDetail.php?scd=0000214958&pv=1%252523",
-      "mapUrl": "https://maps.google.com/?cid=6141782586603461053",
-      "image": "/_portal/vshops/tri-life-234/g01.jpg",
-      "images": [
-        "/_portal/vshops/tri-life-234/g01.jpg",
-        "/_portal/vshops/tri-life-234/g02.jpg",
-        "/_portal/vshops/tri-life-234/g03.jpg",
-        "/_portal/vshops/tri-life-234/g04.jpg",
-        "/_portal/vshops/tri-life-234/g05.jpg",
-        "/_portal/vshops/tri-life-234/g06.jpg",
-        "/_portal/vshops/tri-life-234/g07.jpg",
-        "/_portal/vshops/tri-life-234/g08.jpg",
-        "/_portal/vshops/tri-life-234/g10.jpg"
-      ],
-      "photos": [
-        {
-          "path": "/_portal/vshops/tri-life-234/g01.jpg",
-          "what": "緑色の日よけが付いた店舗の外観",
-          "kind": "exterior",
-          "width": 1200,
-          "height": 900
-        },
-        {
-          "path": "/_portal/vshops/tri-life-234/g02.jpg",
-          "what": "ストローが刺さったオレンジ色のスムージー",
-          "kind": "meal",
-          "width": 675,
-          "height": 1200
-        },
-        {
-          "path": "/_portal/vshops/tri-life-234/g03.jpg",
-          "what": "木のカウンターに並ぶ果物のかご",
-          "kind": "common",
-          "width": 900,
-          "height": 1200
-        },
-        {
-          "path": "/_portal/vshops/tri-life-234/g04.jpg",
-          "what": "かごに入った生しいたけ",
-          "kind": "meal",
-          "width": 900,
-          "height": 1200
-        },
-        {
-          "path": "/_portal/vshops/tri-life-234/g05.jpg",
-          "what": "瓶や果物が並ぶ店内の陳列棚",
-          "kind": "common",
-          "width": 1200,
-          "height": 900
-        },
-        {
-          "path": "/_portal/vshops/tri-life-234/g06.jpg",
-          "what": "文字が書かれた窓と店先の椅子",
-          "kind": "exterior",
-          "width": 1200,
-          "height": 675
-        },
-        {
-          "path": "/_portal/vshops/tri-life-234/g07.jpg",
-          "what": "カウンターに並ぶ2つのスムージーのグラス",
-          "kind": "meal",
-          "width": 900,
-          "height": 1200
-        },
-        {
-          "path": "/_portal/vshops/tri-life-234/g08.jpg",
-          "what": "かごに入った赤紫色のかぶのような野菜",
-          "kind": "meal",
-          "width": 960,
-          "height": 1200
-        },
-        {
-          "path": "/_portal/vshops/tri-life-234/g10.jpg",
-          "what": "シールが貼られたメロン",
-          "kind": "meal",
-          "width": 900,
-          "height": 1200
-        }
-      ],
-      "tags": [],
-      "article": {
-        "headline": "京都市中京区西ノ京職司町、ＩＭＰＡＣＴ ＩＫＵ北1階にある野菜専門店。月曜から土曜の10時から19時に営業している。",
-        "lede": "京都市中京区にある「野菜専門店 マルシェノグチ」です。西ノ京職司町のＩＭＰＡＣＴ ＩＫＵ北1階で営業し、月曜から土曜の10時から19時に開いています。日曜日は定休日です。",
-        "sections": [
-          {
-            "heading": "場所と連絡先",
-            "body": "住所は京都府京都市中京区西ノ京職司町69、ＩＭＰＡＣＴ ＩＫＵ北1階です。電話は075-432-7243です。"
-          },
-          {
-            "heading": "営業時間",
-            "body": "営業時間は月曜から土曜が10時から19時です。日曜日は定休日です。"
-          },
-          {
-            "heading": "店について",
-            "body": "店名のとおり、野菜を専門に扱う店です。業種は青果卸売業者に分類されます。"
-          }
-        ],
-        "sources": [
-          {
-            "label": "Google マップ",
-            "url": "https://maps.google.com/?cid=6141782586603461053"
           }
         ],
         "checkedAt": "2026-10-27"
@@ -12366,6 +12039,106 @@
           {
             "label": "Google マップ",
             "url": "https://maps.google.com/?cid=13558991214093720280"
+          }
+        ],
+        "checkedAt": "2026-10-28"
+      }
+    },
+    {
+      "id": "li0078",
+      "vertical": "life",
+      "category": "fashion-craft",
+      "kindName": "美容材料",
+      "name": "ベニフィット",
+      "pref": "kumamoto",
+      "cityName": "熊本市東区",
+      "address": "熊本県熊本市東区御領2丁目1-1 2階",
+      "lat": 32.8199671,
+      "lng": 130.7643211,
+      "hours": "火-土 09:00 - 17:00",
+      "holidays": "月曜・日曜",
+      "phone": "096-388-9235",
+      "instagram": "https://www.instagram.com/benefit.offcial?igsh=MTc4dXo1ajJnYno1Yg%3D%3D",
+      "mapUrl": "https://maps.google.com/?cid=13073551530782587182",
+      "image": "/_portal/vshops/tri-life-235/g01.jpg",
+      "images": [
+        "/_portal/vshops/tri-life-235/g01.jpg",
+        "/_portal/vshops/tri-life-235/g03.jpg",
+        "/_portal/vshops/tri-life-235/g04.jpg",
+        "/_portal/vshops/tri-life-235/g05.jpg",
+        "/_portal/vshops/tri-life-235/g06.jpg",
+        "/_portal/vshops/tri-life-235/g07.jpg"
+      ],
+      "photos": [
+        {
+          "path": "/_portal/vshops/tri-life-235/g01.jpg",
+          "what": "ヘアエマルジョン商品のボトルが並ぶ写真",
+          "kind": "meal",
+          "width": 750,
+          "height": 422
+        },
+        {
+          "path": "/_portal/vshops/tri-life-235/g03.jpg",
+          "what": "美容材料のボトルや道具が並ぶ店内のカート",
+          "kind": "common",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-life-235/g04.jpg",
+          "what": "青い扉と看板プレートのある建物の外観",
+          "kind": "exterior",
+          "width": 920,
+          "height": 613
+        },
+        {
+          "path": "/_portal/vshops/tri-life-235/g05.jpg",
+          "what": "ボトル商品が並ぶ店内の棚",
+          "kind": "common",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-life-235/g06.jpg",
+          "what": "ヘアエマルジョン商品のボトル2本が置かれたカウンター",
+          "kind": "meal",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-life-235/g07.jpg",
+          "what": "駐車場と建物が写る外観",
+          "kind": "exterior",
+          "width": 920,
+          "height": 650
+        }
+      ],
+      "tags": [],
+      "article": {
+        "headline": "熊本市東区御領にある美容材料卸の会社。美容院・美容室向けに商品を扱う。",
+        "lede": "熊本市にある「ベニフィット」です。熊本市東区御領二丁目に所在し、美容院・美容室向けに美容材料を扱う卸売の会社です。営業は火曜から土曜の9時から17時までで、月曜と日曜は定休日です。",
+        "sections": [
+          {
+            "heading": "事業の内容",
+            "body": "熊本市東区御領に拠点を置き、美容院・美容室・床屋向けの美容材料を扱う卸売の会社です。業種はビジネス・企業間取引、卸売市場に分類されます。Google マップの業種表示は美容製品卸売業者です。"
+          },
+          {
+            "heading": "アクセスと連絡先",
+            "body": "所在地は熊本県熊本市東区御領二丁目1−1の2階です。電話は096-388-9235です。営業時間は火曜から土曜が9時から17時まで、月曜と日曜は定休日です。"
+          }
+        ],
+        "sources": [
+          {
+            "label": "電話帳情報(マピオン)",
+            "url": "https://www.mapion.co.jp/phonebook/M26017/43102/24333004143/"
+          },
+          {
+            "label": "地図情報(Yahoo!地図)",
+            "url": "https://map.yahoo.co.jp/v3/place/KAeIaFM3giw"
+          },
+          {
+            "label": "Google マップ",
+            "url": "https://maps.google.com/?cid=13073551530782587182"
           }
         ],
         "checkedAt": "2026-10-28"

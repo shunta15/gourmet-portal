@@ -168,7 +168,7 @@ export function toShop(cfg: VkConfig, p: Place): LiveShop {
     id: p.id,
     name: p.name,
     kind: p.category,
-    kindName: kindNameOf(cfg, p.category),
+    kindName: p.kindName || kindNameOf(cfg, p.category),
     pref: p.pref,
     prefName: PREF_NAME[p.pref] ?? "",
     city: p.cityName ?? "",

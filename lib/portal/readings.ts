@@ -105,10 +105,15 @@ export const CATEGORY_KANA: Record<string, string> = {
   "life/lesson": "ならいごと|きょうしつ|じゅく|えいかいわ|おんがく|ぱそこん",
   "life/shrine-temple": "じんじゃ|おてら|てら",
   "life/fashion-craft": "ふぁっしょん|ざっか|こうげい|ふく|じゅえりー",
-  "life/photo-marriage": "しゃしんかん|けっこんそうだん|けっこんそうだんしょ",
+  "life/photo-marriage": "しゃしんかん",
   "life/car-repair": "くるま|じどうしゃ|しゅうり|くりーにんぐ|かいとり|じてんしゃ",
   "life/flower-farm": "はなや|のうえん|ふらわー",
   "life/fortune": "うらない",
+  // くらしの種類の組(lib/verticals/lifeKinds.ts)。サイト内検索の候補はこの 4 つ
+  "life/visit": "でかける|おでかけ|じんじゃ|おてら|のうえん|うらない",
+  "life/learn": "ならう|ならいごと|きょうしつ",
+  "life/shop": "かう|かりる|ふく|ざっか|こうげい|ふぁっしょん",
+  "life/service": "まかせる|しゃしんかん|せんしゃ",
 };
 
 /** グルメの業態（lib/cuisineGroups.ts の label）→ 読み */

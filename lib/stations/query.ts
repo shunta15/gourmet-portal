@@ -93,7 +93,7 @@ export function placeHref(v: Vertical, p: Place): string {
 /** 店カードに出す種類名。グルメは業態の文字列そのまま、新業種は種類の表示名 */
 export function placeCategoryName(v: Vertical, p: Place): string {
   if (v.key === "gourmet") return p.category;
-  return v.categories.find((c) => c.slug === p.category)?.name ?? "";
+  return p.kindName || (v.categories.find((c) => c.slug === p.category)?.name ?? "");
 }
 
 /** 直線距離（m） */

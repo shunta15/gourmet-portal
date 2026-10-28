@@ -15,7 +15,7 @@
  *          public/ に実在する画像だけを Place の image（1 枚め）・images（全部）・photos（説明・種類・寸法）に入れる。imageUrl・pageUrl は入れない。
  *          kind（写真の種類: exterior 外観 / room 客室 / bath 風呂 / meal 料理 / common 共用 / view 周辺の景色）は書いてあれば photos[].kind に入れる。
  *          店の写真の記録が無い・空（使える画像が 0 枚）の店は、公開する特集（--features のフォルダの features/<キー>.json）の images（hero・p1・p2）を使う。
- *  - 種類の上書き: category-overrides/<キー>.json（{ key, category, evidence }）があれば、その種類を使う。
+ *  - 種類の上書き: category-overrides/<キー>.json（{ key, category, evidence, kindName? }）があれば、その種類を使う。kindName があれば Place.kindName に入れる(店のカード・店ページの種類名を、種類の表示名の代わりに出す)。
  *          その業種の種類の slug（lib/verticals/<業種>.ts）に無い値は無効（使わない）。決められない店は、今までどおり unmapped.json へ（理由に無効の旨を足す）。
  *  - 載せない店: skipped/<キー>.json の reason が「掲載を見送る」で始まる店と、exclude.json（キーの配列）にある店は、どのモードでも出さない。
  * --rows : 対象の行の範囲を絞る（例: --rows beauty:2-129,bodycare:2-133。オーナーが指定した範囲）。
@@ -606,7 +606,8 @@ for (const [key, d] of [...gbp].sort((a, b) => natural(a[0], b[0]))) {
   if (existsSync(ovFile)) {
     const ov = readJson(ovFile);
     if (typeof ov?.category === "string" && CATEGORY_SLUGS[vertical].has(ov.category)) {
-      cat = { category: ov.category };
+      // kindName(任意): 店のカード・店ページに出す種類名。種類(category)の表示名が実態に合わない店だけ、平易な言葉で書く(例: 美容材料)
+      cat = { category: ov.category, ...(typeof ov.kindName === "string" && ov.kindName.trim() ? { kindName: ov.kindName.trim() } : {}) };
     } else {
       const bad = `種類の上書き「${ov?.category}」は ${vertical} の種類の slug（${[...CATEGORY_SLUGS[vertical]].join("・")}）に無いので無効`;
       warn(key, bad + "。使いません");
@@ -628,7 +629,7 @@ for (const [key, d] of [...gbp].sort((a, b) => natural(a[0], b[0]))) {
     continue;
   }
   seenCid.set(keyOf(vertical, cid), key);
-  resolved.set(key, { vertical, category: cat.category, area, cid });
+  resolved.set(key, { vertical, category: cat.category, kindName: cat.kindName, area, cid });
 }
 
 // 出す店
@@ -700,6 +701,7 @@ for (const key of wanted) {
     id,
     vertical: r.vertical,
     category: r.category,
+    ...(r.kindName ? { kindName: r.kindName } : {}),
     name: (typeof ov.name === "string" && ov.name.trim() ? ov.name : String(p.name)).replace(/\s*https?:\/\/\S+/g, "").trim(), // Google の登録名に URL が混じる店（beauty-90 など）は URL だけ外す
     pref: r.area.pref,
     ...(r.area.cityName ? { cityName: r.area.cityName } : {}),

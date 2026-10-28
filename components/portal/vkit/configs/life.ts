@@ -2,7 +2,7 @@ import type { VkConfig } from "../config";
 
 /**
  * くらし・ライフスタイル(マチノワライフ。/life)の設定。やわらかい生成りと若葉の色。
- * 習い事・教室、神社・寺、ファッション・雑貨・工芸、写真館・結婚相談、車・修理・クリーニング・買取、花屋・農園、占い。種類・場面は lib/verticals/life.ts。
+ * 習い事・教室、神社・寺、ファッション・雑貨・工芸、写真館、車・修理・クリーニング・買取、花屋・農園、占い。種類・場面は lib/verticals/life.ts。
  * 写真は public/_portal/vkit/life/(Wikimedia Commons の CC0・パブリックドメイン。出典は ./credits.json)。
  */
 export const lifeCfg: VkConfig = {

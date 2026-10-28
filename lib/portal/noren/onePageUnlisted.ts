@@ -102,6 +102,8 @@ export const ONE_PAGE_UNLISTED_SHOP_OF_FEATURE: Readonly<Record<string, string>>
   "洋食屋自然": "r771", // 洋食屋 自然
   "うなぎ処高はし": "r772", // うなぎ処 高はし
   "海が見えるそば家": "r773", // 海が見えるそば家
+  "雲仙湯せんぺい遠江屋本舗": "r774", // 雲仙湯せんぺい 遠江屋本舗(くらしから移した店・2026-10-28)
+  "マルシェノグチ": "r775", // 野菜専門店 マルシェノグチ(くらしから移した店・2026-10-28)
 };
 
 const NFC = (s: string) => s.normalize("NFC");

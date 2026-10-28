@@ -175,7 +175,7 @@ export function shopPage(key: PortalVertical) {
       const hit = await find(params);
       if (!hit) return notFoundMetadata();
       const { v, all, place: p } = hit;
-      const catName = getCategory(v, p.category)?.name ?? "";
+      const catName = p.kindName || (getCategory(v, p.category)?.name ?? "");
       const where = areaText(p);
       return buildMetadata({
         vertical: key,
