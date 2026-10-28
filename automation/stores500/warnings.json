@@ -2561,14 +2561,14 @@
     "articleId": "雲仙湯せんぺい遠江屋本舗",
     "name": "雲仙湯せんぺい 遠江屋 (とおとうみや) 本舗",
     "warnings": [
-      "cuisine は GBPカテゴリ"
+      "cuisine は store-overrides.json"
     ]
   },
   "r772": {
     "articleId": "マルシェノグチ",
     "name": "野菜専門店 マルシェノグチ",
     "warnings": [
-      "cuisine は GBPカテゴリ"
+      "cuisine は store-overrides.json"
     ]
   }
 }

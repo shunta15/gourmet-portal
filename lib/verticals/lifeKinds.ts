@@ -11,7 +11,7 @@ export const LIFE_KIND_GROUPS = [
   { slug: "visit", name: "出かける", note: "神社・寺・農園・占い", categories: ["shrine-temple", "flower-farm", "fortune"] },
   { slug: "learn", name: "習う", note: "教室", categories: ["lesson"] },
   { slug: "shop", name: "買う・借りる", note: "服・雑貨・工芸", categories: ["fashion-craft"] },
-  { slug: "service", name: "任せる", note: "写真館・洗車", categories: ["photo-marriage", "car-repair"] },
+  { slug: "service", name: "任せる", note: "写真館・クリーニング・お直し", categories: ["photo-marriage", "car-repair"] },
 ] as const;
 
 export type LifeKindGroup = (typeof LIFE_KIND_GROUPS)[number];
