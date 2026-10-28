@@ -63,6 +63,4 @@ export const aLinks = {
   guideFaq: `${A}/article/guide#faq`,
   /** お気に入りに入れた体験だけの探す */
   favs: `${A}/search?fav=1`,
-  about: "/about",
-  contact: "/contact",
 };

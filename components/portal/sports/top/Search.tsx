@@ -204,9 +204,9 @@ export default function Search({
         </section>
       </div>
 
-      <Link href={SPL.about} className="s2-bottom" aria-label="マチノワスポーツについて">
+      <div className="s2-bottom">
         <img src={`${P}s-bottom.webp`} alt="動く人が、まちをおもしろくする。スポーツがあると、日常がちょっと変わる。新しい自分に出会ったり、まちで仲間ができたり。マチノワスポーツは、地域のスポーツシーンを応援します。" width={1024} height={319} />
-      </Link>
+      </div>
     </main>
   );
 }
