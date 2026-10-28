@@ -20,7 +20,7 @@ body:has(.p4-page) > .cursor-dot, body:has(.p4-page) > .cursor-ring { display: n
 .p4-nav a:first-child { border-left: 0; padding-left: 0; }
 .p4-fav { margin-left: auto; font-size: 12px; letter-spacing: .06em; display: flex; align-items: center; gap: 6px; white-space: nowrap; }
 .p4-fav-i { width: 15px; height: 15px; display: inline-block; }
-.p4-menu { margin-left: 32px; }
+.p4-menu { margin-left: auto; }
 .p4-burger { display: block; width: 22px; list-style: none; }
 .p4-burger::-webkit-details-marker { display: none; }
 .p4-menu-list { position: absolute; right: var(--wrap); top: 58px; margin: 0; padding: 10px 6px; list-style: none; min-width: 188px; background: #fdfcfa; border: 1px solid #e3ddd2; border-radius: 16px; box-shadow: 0 8px 24px rgba(58, 51, 44, .12); }
@@ -31,20 +31,24 @@ body:has(.p4-page) > .cursor-dot, body:has(.p4-page) > .cursor-ring { display: n
 /* ヒーロー: 見本の座標を --u で組む。高さは 556u(1440 幅で約 670px)で、最初の画面に収まる */
 .p4-hero { position: relative; width: calc(var(--u) * 1024); height: calc(var(--u) * 556); margin: 4px auto 0; --bleed: min(130px, max(0px, calc((100vw - var(--u) * 1024) / 2))); }
 .p4-hero-text { position: absolute; left: 0; top: 0; width: 0; height: 0; }
-.p4-h1 { font-family: var(--p4-yomo), "Yomogi", cursive; font-weight: 400 !important; font-size: calc(var(--u) * 57); line-height: 1.2; color: #2e2a26; letter-spacing: .02em; }
+.p4-h1 { font-family: var(--p4-yomo), "Klee One", "Yomogi", cursive; font-weight: 600 !important; font-size: calc(var(--u) * 57); line-height: 1.2; color: #2e2a26; letter-spacing: -.02em; -webkit-text-stroke: calc(var(--u) * .45) #2e2a26; }
+.p4-h1 i { display: inline-block; font-style: normal; transform-origin: center; }
 .p4-h1 span { position: absolute; white-space: nowrap; transform: rotate(-7deg); transform-origin: left center; }
 .p4-h1 span:nth-child(1) { left: calc(var(--u) * 50); top: calc(var(--u) * 54); }
-.p4-h1 span:nth-child(2) { left: calc(var(--u) * 68); top: calc(var(--u) * 121); }
-.p4-h1 span:nth-child(3) { left: calc(var(--u) * 90); top: calc(var(--u) * 183); }
-.p4-lead { position: absolute; left: calc(var(--u) * 52); top: calc(var(--u) * 283); font-size: max(13px, calc(var(--u) * 12)); letter-spacing: .06em; line-height: 1.8; color: #4a443d; white-space: nowrap; }
+.p4-h1 span:nth-child(2) { left: calc(var(--u) * 68); top: calc(var(--u) * 116); }
+.p4-h1 span:nth-child(3) { left: calc(var(--u) * 90); top: calc(var(--u) * 192); }
+.p4-lead { position: absolute; left: calc(var(--u) * 52); top: calc(var(--u) * 280); font-size: max(12px, calc(var(--u) * 11.4)); letter-spacing: .05em; line-height: 1.75; color: #4a443d; white-space: nowrap; }
 .p4-street { position: absolute; bottom: calc(var(--u) * -4); left: calc(-1 * var(--bleed)); width: calc(var(--u) * 490 + var(--bleed)); height: auto; }
 .p4-collage { position: absolute; left: calc(var(--u) * 308); top: 0; width: calc(var(--u) * 717); height: calc(var(--u) * 556); }
 .p4-blob { position: absolute; }
 .p4-blob-img { position: absolute; max-width: none; height: auto; display: block; }
-.p4-label { position: absolute; background: #fbfaf6; box-shadow: 0 1px 3px rgba(0,0,0,.12); display: flex; align-items: center; justify-content: center; font-weight: 600; letter-spacing: .12em; color: #2e2a26; line-height: 1; padding-top: 2px; white-space: nowrap; box-sizing: border-box; }
+.p4-label { position: absolute; left: var(--x); top: var(--y); width: var(--w); height: var(--h); transform: translate(-50%, -50%) rotate(var(--r, 0deg)); background: #fbfaf6; box-shadow: 0 1px 3px rgba(0,0,0,.12); display: flex; align-items: center; justify-content: center; text-align: center; font-size: max(9px, calc(var(--u) * 14)); font-weight: 600; letter-spacing: .12em; color: #2e2a26; line-height: 1; padding-top: 2px; white-space: nowrap; box-sizing: border-box; }
+.p4-label-v { writing-mode: vertical-rl; width: max(var(--w), calc(1em + 8px)); height: max(var(--h), calc(var(--n) * 1.12em + 8px)); }
+.p4-label-h { writing-mode: horizontal-tb; }
+.p4-br { display: none; }
 .p4-badge { position: absolute; }
-.p4-badge-t { position: absolute; left: 0; right: 0; top: calc(var(--u) * 52); text-align: center; font-family: var(--p4-yomo), "Yomogi", cursive; font-size: max(10px, calc(var(--u) * 14.5)); line-height: calc(var(--u) * 27); transform: rotate(-9deg); color: #3b352f; white-space: nowrap; letter-spacing: .04em; }
-.p4-badge-en { position: absolute; left: 0; right: 0; top: calc(var(--u) * 122); text-align: center; font-size: max(7px, calc(var(--u) * 7.5)); letter-spacing: .3em; color: #6a645c; transform: rotate(-4deg); }
+.p4-badge-t { position: absolute; left: 0; right: 0; top: calc(var(--u) * 46); text-align: center; font-family: var(--p4-yomo), "Klee One", "Yomogi", cursive; font-weight: 600; font-size: max(9.5px, calc(var(--u) * 16.2)); line-height: calc(var(--u) * 24); transform: rotate(-9deg); color: #3b352f; white-space: nowrap; letter-spacing: .02em; }
+.p4-badge-en { position: absolute; left: 0; right: 0; top: calc(var(--u) * 120); text-align: center; font-size: max(7px, calc(var(--u) * 8)); letter-spacing: .4em; color: #6a645c; transform: rotate(-4deg); }
 @media (min-width: 1500px) { .p4-street { -webkit-mask-image: linear-gradient(to right, transparent 0, #000 90px); mask-image: linear-gradient(to right, transparent 0, #000 90px); } }
 
 /* 共通の文字 */
@@ -112,7 +116,10 @@ body:has(.p4-page) > .cursor-dot, body:has(.p4-page) > .cursor-ring { display: n
 
 /* 768px 前後より狭い画面: 縦に積む */
 @media (max-width: 859px) {
-  .p4-page { --u: min(1.1px, calc((100vw - 24px) / 717)); --wrap: 20px; }
+  .p4-page { --u: min(1.1px, calc((100vw - 8px) / 717)); --wrap: 20px; }
+  .p4-label-h { left: var(--mx, var(--x)); top: var(--my, var(--y)); width: calc(4.48em + 8px); height: calc(2.4em + 6px); line-height: 1.2; padding-top: 0; font-weight: 700; }
+  .p4-br { display: inline; }
+  .p4-label-v { font-weight: 700; }
   .p4-header { height: 56px; }
   .p4-nav, .p4-fav { display: none; }
   .p4-menu { margin-left: auto; }
