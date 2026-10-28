@@ -14,7 +14,7 @@ export function organization() {
     '@type': 'Organization',
     name: 'マチノワ',
     url: 'https://machinowa.tokyo',
-    logo: 'https://machinowa.tokyo/logo.png',
+    logo: 'https://machinowa.tokyo/icon.png',
   };
 }
 
