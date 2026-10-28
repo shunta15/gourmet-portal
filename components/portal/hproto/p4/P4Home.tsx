@@ -12,6 +12,17 @@ const IMG = "/_portal/hproto/p4/";
 const OX = 308;
 const OY = 49;
 
+// 高画質に差し替えた 7 枚(2026-10-29 オーナー提供。残りの h1 = 食べて(カフェの女性)は見本からの切り出しのまま)の見せる窓 [x0, y0, 幅, 高さ](元画像 1536×1024 の px。幅/高さ = そのブロブの縦横比)
+// h2 = 動いて(ジムの男性) / h3 = 癒されて(犬) / h4 = キレイになって・横札(ヘッドスパ) / h6 = ステイ・ベッド(寝室。縦札「キレイになって、」の写真) / h5 = 出かけて / h8 = 楽しんで / h7 = 整えて
+const HIRES: Record<string, [number, number, number, number]> = {
+  h2: [150, 0, 1178, 1024],
+  h3: [600, 0, 755, 1024],
+  h4: [60, 0, 1431, 1024],
+  h6: [100, 0, 1331, 1024],
+  h5: [100, 0, 1299, 1024], // 出かけて(山と湖)
+  h8: [0, 200, 1536, 690], // 楽しんで(陶芸。手と器)
+  h7: [490, 0, 1032, 900], // 整えて(整体。施術者の手と背中)
+};
 const HERO = ["h1", "h2", "h3", "h4", "h5", "h6", "h7", "h8"] as const;
 // [x0,y0,x1,y1, 文字, 傾き, 字の大きさ, 行き先](見本の座標)。行き先は札の隣の写真に合わせた業種の最初のページ(8 枚の写真 = 8 業種)
 const LABELS: [number, number, number, number, string, number, number, string][] = [
@@ -128,8 +139,15 @@ export default function P4Home() {
         <div className="p4-collage">
           {HERO.map((k) => {
             const s = SHAPES[k];
+            const box = { left: U(s.x - OX), top: U(s.y - OY), width: U(s.w), height: U(s.h), clipPath: `url(#p4c-${k})` };
+            const hi = HIRES[k];
+            if (!hi) return <img key={k} src={IMG + "n_" + k + ".webp"} alt="" className="p4-blob" style={box} />;
+            // 高画質版(1536×1024)。ブロブの形・位置はそのまま、写真のどこを見せるかを窓(x0,y0,cw,ch。元画像の px。cw/ch = ブロブの縦横比)で決める
+            const [x0, y0, cw, ch] = hi;
             return (
-              <img key={k} src={IMG + "n_" + k + ".webp"} alt="" className="p4-blob" style={{ left: U(s.x - OX), top: U(s.y - OY), width: U(s.w), height: U(s.h), clipPath: `url(#p4c-${k})` }} />
+              <div key={k} className="p4-blob" style={box}>
+                <img src={IMG + "n_" + k + ".webp"} alt="" className="p4-blob-img" width={1536} height={1024} style={{ width: `${(1536 / cw) * 100}%`, left: `${(-x0 / cw) * 100}%`, top: `${(-y0 / ch) * 100}%` }} />
+              </div>
             );
           })}
           {LABELS.map(([x0, y0, x1, y1, t, r, fs, href]) => (

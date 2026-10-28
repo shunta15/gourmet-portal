@@ -40,6 +40,7 @@ body:has(.p4-page) > .cursor-dot, body:has(.p4-page) > .cursor-ring { display: n
 .p4-street { position: absolute; bottom: calc(var(--u) * -4); left: calc(-1 * var(--bleed)); width: calc(var(--u) * 490 + var(--bleed)); height: auto; }
 .p4-collage { position: absolute; left: calc(var(--u) * 308); top: 0; width: calc(var(--u) * 717); height: calc(var(--u) * 556); }
 .p4-blob { position: absolute; }
+.p4-blob-img { position: absolute; max-width: none; height: auto; display: block; }
 .p4-label { position: absolute; background: #fbfaf6; box-shadow: 0 1px 3px rgba(0,0,0,.12); display: flex; align-items: center; justify-content: center; font-weight: 600; letter-spacing: .12em; color: #2e2a26; line-height: 1; padding-top: 2px; white-space: nowrap; box-sizing: border-box; }
 .p4-badge { position: absolute; }
 .p4-badge-t { position: absolute; left: 0; right: 0; top: calc(var(--u) * 52); text-align: center; font-family: var(--p4-yomo), "Yomogi", cursive; font-size: max(10px, calc(var(--u) * 14.5)); line-height: calc(var(--u) * 27); transform: rotate(-9deg); color: #3b352f; white-space: nowrap; letter-spacing: .04em; }
