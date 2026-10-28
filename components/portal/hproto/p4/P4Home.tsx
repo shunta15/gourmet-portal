@@ -47,6 +47,12 @@ const NAV: readonly (readonly [string, string])[] = [
   ["インタビュー", "#"],
   ["お知らせ", "#"],
 ];
+// 大見出しの 1 字ずつの揺れ [字, 大きさ(倍), 傾き(度), 上下(em)]。見本は筆ペン風の手書きで、字の大きさがそろわず少し踊っている(2026-10-29 オーナー指示「文字をキャッチコピー通りに」)
+const H1: [string, number, number, number][][] = [
+  [["こ", 0.95, -2, 0.02], ["の", 0.9, 3, 0], ["街", 1.08, -2, -0.02], ["の", 0.84, 4, -0.04]],
+  [["好", 1.2, -3, 0], ["き", 1.08, 2, 0.03], ["が", 1.06, -3, 0], ["、", 1.0, 0, 0]],
+  [["み", 1.0, -2, 0.02], ["つ", 0.97, 3, 0], ["か", 1.0, -2, 0.03], ["る", 1.02, 3, -0.02], ["。", 0.95, 0, 0]],
+];
 const HREF_FEATURE = "/feature";
 const HREF_FAV = "/list";
 const CATS = [
@@ -126,10 +132,14 @@ export default function P4Home() {
       {/* ヒーロー */}
       <section className="p4-hero" aria-label="ヒーロー">
         <div className="p4-hero-text">
-          <h1 className="p4-h1">
-            <span>この街の</span>
-            <span>好きが、</span>
-            <span>みつかる。</span>
+          <h1 className="p4-h1" aria-label="この街の好きが、みつかる。">
+            {H1.map((line, li) => (
+              <span key={li} aria-hidden>
+                {line.map(([ch, s, r, dy], ci) => (
+                  <i key={ci} style={{ fontSize: `${s}em`, transform: `translateY(${dy}em) rotate(${r}deg)` }}>{ch}</i>
+                ))}
+              </span>
+            ))}
           </h1>
           <p className="p4-lead">
             マチノワは、地域の魅力的なお店・人・文化・体験をつなぐ<br />街のポータルサイトです。
