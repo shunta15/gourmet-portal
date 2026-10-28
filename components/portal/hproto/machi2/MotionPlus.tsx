@@ -50,7 +50,7 @@ export default function MotionPlus() {
 
     // 2. 見えている間だけ: 見出しの波(h2p-vis)
     const vio = new IntersectionObserver((es) => es.forEach((e) => e.target.classList.toggle("h2p-vis", e.isIntersecting)));
-    root.querySelectorAll(".h2-ttl, .h2p-marq").forEach((el) => vio.observe(el));
+    root.querySelectorAll(".h2-ttl").forEach((el) => vio.observe(el));
     cleanups.push(() => vio.disconnect());
 
     // 3. スクロール連動(--h2p-hp / --h2p-v / --h2p-p)。rAF はスクロール中だけ

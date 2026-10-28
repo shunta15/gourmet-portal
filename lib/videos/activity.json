@@ -5,7 +5,8 @@
     "title": "ココロアウトドアツアー 吉野川のラフティング",
     "durationSec": 21,
     "src": "/_portal/activity/videos/v-ac0006.mp4",
-    "poster": "/_portal/activity/videos/v-ac0006.webp"
+    "poster": "/_portal/activity/videos/v-ac0006.webp",
+    "uploadDate": "2026-10-23"
   },
   {
     "id": "v-ac0001",
@@ -13,15 +14,17 @@
     "title": "フォレストアドベンチャー・湯の山 菰野町の森",
     "durationSec": 22,
     "src": "/_portal/activity/videos/v-ac0001.mp4",
-    "poster": "/_portal/activity/videos/v-ac0001.webp"
+    "poster": "/_portal/activity/videos/v-ac0001.webp",
+    "uploadDate": "2026-10-23"
   },
   {
     "id": "v-ac0002",
     "storeId": "ac0002",
     "title": "レザースタジオ サード 福山市のレザークラフト",
-    "durationSec": 24,
+    "durationSec": 24.08,
     "src": "/_portal/activity/videos/v-ac0002.mp4",
-    "poster": "/_portal/activity/videos/v-ac0002.webp"
+    "poster": "/_portal/activity/videos/v-ac0002.webp",
+    "uploadDate": "2026-10-23"
   },
   {
     "id": "v-ac0007",
@@ -29,7 +32,8 @@
     "title": "アモアナダイビングスクール 沼津のお店",
     "durationSec": 19,
     "src": "/_portal/activity/videos/v-ac0007.mp4",
-    "poster": "/_portal/activity/videos/v-ac0007.webp"
+    "poster": "/_portal/activity/videos/v-ac0007.webp",
+    "uploadDate": "2026-10-23"
   },
   {
     "id": "v-ac0005",
@@ -37,7 +41,8 @@
     "title": "CIMAX × 東京バギー村 印西市のバギー",
     "durationSec": 22,
     "src": "/_portal/activity/videos/v-ac0005.mp4",
-    "poster": "/_portal/activity/videos/v-ac0005.webp"
+    "poster": "/_portal/activity/videos/v-ac0005.webp",
+    "uploadDate": "2026-10-23"
   },
   {
     "id": "v-ac0004",
@@ -45,6 +50,7 @@
     "title": "石垣島レジンアートくくる屋 海を描くレジンアート",
     "durationSec": 22,
     "src": "/_portal/activity/videos/v-ac0004.mp4",
-    "poster": "/_portal/activity/videos/v-ac0004.webp"
+    "poster": "/_portal/activity/videos/v-ac0004.webp",
+    "uploadDate": "2026-10-23"
   }
 ]

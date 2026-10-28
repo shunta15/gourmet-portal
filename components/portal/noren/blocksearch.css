@@ -52,7 +52,7 @@
 .vBk-tabs{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:4px;margin:28px 0 22px;padding:4px;background:var(--bk-bg2);border-radius:12px}
 .vBk-tab{min-height:58px;display:flex;align-items:center;justify-content:center;gap:10px;padding:0 6px;border-radius:9px;color:var(--bk-navy);font:700 17px/1.2 var(--bk-sans);white-space:nowrap;transition:background .2s,color .2s}
 .vBk-tab svg{flex:none}
-/* ほかの探し方（タブの下の小さな 1 行。おまかせ提案・写真から探す・ショート動画）。押す所は 44px */
+/* ほかの探し方（タブの下の小さな 1 行。写真から探す・ショート動画）。押す所は 44px */
 .vBk-other{display:flex;flex-wrap:wrap;align-items:center;gap:0 20px;margin:-14px 6px 12px}
 .vBk-other__l{font:500 12.5px/1.6 var(--bk-sans);color:var(--bk-mute);letter-spacing:.04em}
 .vBk-other ul{display:flex;flex-wrap:wrap;gap:0 4px}

@@ -41,8 +41,6 @@
   .pt-root .lsr-card.io.pt-lift.pt-tilt.is-tilting { transition: opacity 0.85s ease var(--d, 0ms), translate 0.9s cubic-bezier(0.2, 0.75, 0.2, 1) var(--d, 0ms), scale 0.9s cubic-bezier(0.2, 0.75, 0.2, 1) var(--d, 0ms), transform 0.22s cubic-bezier(0.2, 0.8, 0.2, 1), box-shadow 0.35s; }
   /* 右の列: 出現(io)+ 背景色(pt-bgshift) */
   .pt-root .lsr-side.io.pt-bgshift { transition: opacity 0.85s ease var(--d, 0ms), translate 0.9s cubic-bezier(0.2, 0.75, 0.2, 1) var(--d, 0ms), scale 0.9s cubic-bezier(0.2, 0.75, 0.2, 1) var(--d, 0ms), background-color 0.45s ease; }
-  /* ハート: 写真のワイプのあとにポップイン(押したときの拡大・色の切り替えは残す) */
-  .pt-root .lsr .lsr-heart.pt-popin { --d: calc(var(--c, 0ms) + 900ms); transition: opacity 0.5s ease var(--d), scale 0.9s cubic-bezier(0.34, 1.56, 0.64, 1) var(--d), translate 0.9s cubic-bezier(0.34, 1.56, 0.64, 1) var(--d), transform 0.15s, background 0.2s; }
 }
 
 @media (min-width: 860px) {
@@ -147,9 +145,6 @@
   .lsr-card:nth-child(-n + 3) .lsr-photo { height: calc(132 * var(--u)); }
   .lsr-card:hover .lsr-photo { box-shadow: 0 calc(10 * var(--u)) calc(22 * var(--u)) rgba(70, 50, 30, 0.2); }
   .lsr-photo img { width: 100%; height: 100%; object-fit: cover; }
-  .lsr .lsr-heart { position: absolute; right: calc(7.5 * var(--u)); top: calc(6.5 * var(--u)); z-index: 2; width: calc(27 * var(--u)); height: calc(27 * var(--u)); background: rgba(40, 38, 36, 0.5); backdrop-filter: blur(2px); }
-  .lsr .lsr-heart svg { width: calc(17 * var(--u)); height: calc(17 * var(--u)); stroke-width: 1.8; }
-  .lsr .lsr-heart.is-on { background: rgba(255, 255, 255, 0.94); }
   .lsr-card-t { margin: calc(4 * var(--u)) 0 0 calc(0.8 * var(--u)); font-family: var(--pt-ff-min); font-weight: 600; font-size: calc(13.2 * var(--u)); line-height: calc(20 * var(--u)); letter-spacing: 0.03em; color: #26221e; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
   .lsr-card-cat { margin: calc(8 * var(--u)) 0 0 calc(2 * var(--u)); height: calc(18 * var(--u)); }
   .lsr-cat { display: inline-flex; align-items: center; height: calc(18 * var(--u)); max-width: 100%; padding: 0 calc(8.5 * var(--u)); border-radius: calc(99 * var(--u)); background: #efeeec; font-size: calc(8.6 * var(--u)); letter-spacing: 0.14em; font-weight: 500; color: #57514b; white-space: nowrap; }
@@ -348,9 +343,6 @@
   .lsr-card-a { position: absolute; inset: 0; z-index: 1; border-radius: 14px; }
   .lsr-photo { position: relative; grid-row: 1 / span 5; width: 116px; height: 100%; min-height: 150px; border-radius: 9px; overflow: hidden; }
   .lsr-photo img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
-  .lsr .lsr-heart { position: absolute; right: 6px; top: 6px; z-index: 2; width: 34px; height: 34px; background: rgba(40, 38, 36, 0.5); }
-  .lsr .lsr-heart svg { width: 19px; height: 19px; stroke-width: 1.8; }
-  .lsr .lsr-heart.is-on { background: rgba(255, 255, 255, 0.94); }
   .lsr-card-t { grid-column: 2; margin: 0; font-family: var(--pt-ff-min); font-weight: 500; font-size: 16.5px; line-height: 1.4; letter-spacing: 0.03em; color: #26221e; }
   .lsr-card-cat { grid-column: 2; margin: 6px 0 0; }
   .lsr-cat { display: inline-flex; align-items: center; height: 24px; padding: 0 11px; border-radius: 99px; background: #efeeec; font-size: 11.5px; letter-spacing: 0.08em; color: #6d6862; }

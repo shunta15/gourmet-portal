@@ -5,8 +5,8 @@ import { assertPortalLive } from "@/lib/portal/launch";
 
 /**
  * 総合サイトの各セグメントのレイアウト共通部品（サーバー）。専用ヘッダー・本文（<main>）・フッターを出す。
- * 使うのは app/{area,station,map,videos,find,beauty,bodycare,pet,stay,activity,sports,life,portal-home}/layout.tsx。
- * hub: 総合トップ（輪）だけ true。共通ヘッダーと PortalMotion を出さない（1 画面の中に自前のロゴ・検索の入口がある）。
+ * 使うのは app/{area,station,map,videos,find,beauty,bodycare,pet,stay,activity,sports,life}/layout.tsx。
+ * 総合トップ（app/portal-home）は自前のヘッダー・フッターを持つので、これは使わない。
  *
  * ヘッダー（クライアント部品）をルートの SiteShell ではなくここで出すのは、グルメの全ページの JS に
  * 総合サイトのヘッダーの JS を混ぜないため（公開スイッチ OFF の本番を main と同じに保つ。proto-portal/LAUNCH.md）。
@@ -17,24 +17,17 @@ import { assertPortalLive } from "@/lib/portal/launch";
  * 公開スイッチ（lib/portal/launch.ts）が OFF のあいだは、このレイアウトの下の全ルートが 404 になる。
  * notFound() はレイアウトの外側（ルートの app/not-found.tsx＝グルメの見た目）で出るので、`/zzz` と同じ 404 になる。
  */
-export default function PortalLayout({ children, hub = false }: { children: React.ReactNode; hub?: boolean }) {
+export default function PortalLayout({ children }: { children: React.ReactNode }) {
   assertPortalLive();
   return (
-    <div className={hub ? "mp mp-hubpage" : "mp"}>
+    <div className="mp">
       <a className="mp-skip" href="#mp-main">本文へ移動</a>
-      {/* 総合トップ（hub）は、1 画面の中に自前のロゴと検索の入口を持つので、共通ヘッダーは出さない */}
-      {!hub && <PortalHeader />}
+      <PortalHeader />
       <main id="mp-main" tabIndex={-1}>
         {children}
-        {hub ? (
-          <div id="mp-footer">
-            <PortalFooter />
-          </div>
-        ) : (
-          <PortalFooter />
-        )}
+        <PortalFooter />
       </main>
-      {!hub && <PortalMotion />}
+      <PortalMotion />
     </div>
   );
 }

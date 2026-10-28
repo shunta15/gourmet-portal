@@ -12,7 +12,7 @@ import { VERTICALS } from "@/lib/verticals";
 import "./special.css";
 
 // ペットの特集(本番 /pet/special・/pet/special/{slug}。メニューの「特集」の行き先。2026-10-24 オーナー決定)。
-// 利用シーン記事 + 業種の特集記事の 3 本(lib/specials/pet.json)。店 1 軒の記事は並べない(店は店舗紹介 /pet/shop にいる)。
+// 利用シーン記事 + 業種の特集記事の 4 本(lib/specials/pet.json)。店 1 軒の記事は並べない(店は店舗紹介 /pet/shop にいる)。
 // 作りはボディケアの特集(/bodycare/special。一覧 + 目次つきの記事 + あわせて読む + 戻る導線)を手本に、ペットの部品(Shell page="article"・茶・明朝)で組む。
 // 節の storeIds の店は、その店の店舗紹介ページ(/pet/shop/{id})へのリンクを付ける。写真は使わない(実在の店の写真を記事の飾りにしない)。
 
@@ -71,7 +71,7 @@ export function PetSpecialIndex() {
             <Crumbs items={[{ label: "マチノワペット", href: L.home }, { label: "特集記事" }]} />
             <p className="psp-label">SPECIAL</p>
             <h1 className="psp-h1">ペットの特集記事</h1>
-            <p className="psp-lead">ペットと行けるお店を探すときに読む記事です。マチノワペットに載っているお店を例に、種類のちがいや見るところをまとめています。</p>
+            <p className="psp-lead">ペットのお店を探すときや利用するときに読む記事です。マチノワペットに載っているお店を例に、種類のちがい、見るところ、ふれあい、預かりをまとめています。</p>
           </div>
         </header>
         <section className="psp-in psp-list" aria-label="特集記事の一覧">
