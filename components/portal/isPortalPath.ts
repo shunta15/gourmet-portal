@@ -33,5 +33,6 @@ export function isPortalPath(pathname: string | null | undefined): boolean {
   if (NOREN_FEATURE_INDEX_REWRITE && pathname === '/feature') return true; // 暖簾の特集のトップ（一覧。本物の URL）
   if (NOREN_SEARCH_REWRITE && pathname === '/search') return true; // 暖簾の店をさがす（本物の URL）
   if (pathname === '/proto-home' || pathname.startsWith('/proto-home/')) return true; // 総合トップの試作(プレビュー・ローカル専用)。グルメの共通ヘッダーは出さない
+  if (pathname === '/proto-gourmet' || pathname.startsWith('/proto-gourmet/')) return true; // グルメ「暖簾 2」の試作(プレビュー・ローカル専用)。グルメの共通ヘッダーは出さない
   return NEW_VERTICAL_PATHS.some((p) => pathname === p || pathname.startsWith(p + '/'));
 }
