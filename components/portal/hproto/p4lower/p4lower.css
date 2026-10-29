@@ -39,32 +39,32 @@
 .pl-root .pl-amb-city { top: calc(16 * var(--u)); height: calc(108 * var(--u)); }
 .pl-root .pl-amb-city b { background-position: center 40%; }
 .pl-root .pl-logo { font-family: var(--p4-minb), var(--p4-min), serif; font-weight: 800; letter-spacing: -.11em; color: #1c1815; -webkit-text-stroke: .018em currentColor; }
-.pl-root .pl-logo-en { font-weight: 600; letter-spacing: .42em; color: #2a2521; font-family: var(--p4-min), serif; }
+.pl-root .pl-logo-en { font-weight: 400; letter-spacing: .42em; color: #2a2521; font-family: var(--p4-min), serif; }
 .pl-root .pl-vs { writing-mode: vertical-rl; text-orientation: upright; background: #faf8f4; color: #201c19; font-weight: 600; line-height: 1; text-align: start; box-shadow: 0 1px 3px rgba(40, 25, 10, .3); font-feature-settings: "palt"; }
 .pl-root .pl-vs-c, .pl-root .pl-vs-d { font-size: calc(15.5 * var(--u)); letter-spacing: -.09em; font-weight: 600; }
 .pl-root .pl-vs-c { padding: calc(10.5 * var(--u)) calc(6.2 * var(--u)) 0 0; }
 .pl-root .pl-vs-d { padding: calc(5.5 * var(--u)) calc(6.5 * var(--u)) 0 0; }
-.pl-root .pl-btn { display: flex; align-items: center; justify-content: space-between; border: 1px solid #3a342f; color: #2a2521; font-weight: 600; letter-spacing: .03em; }
+.pl-root .pl-btn { display: flex; align-items: center; justify-content: space-between; border: 1px solid #3a342f; color: #2a2521; font-weight: 400; letter-spacing: .03em; }
 .pl-root .pl-btn .pl-arrow { flex: none; }
 
 /* ───── 特集記事 ───── */
 .pl-root .pl-featbleed { position: absolute; right: calc(100% - 1px); top: calc(677 * var(--u) - 664 * var(--u)); width: calc(var(--bl) + 1px); height: calc(323 * var(--u)); background: #efe7da; }
-.pl-root .pl-feat-h { font-family: var(--p4-minb), var(--p4-min), serif; font-weight: 800; color: #1c1815; letter-spacing: .06em; }
-.pl-root .pl-feat-lead { font-weight: 600; color: #2a2520; letter-spacing: .01em; }
+.pl-root .pl-feat-h { font-family: var(--p4-min), "Shippori Mincho", "Hiragino Mincho ProN", serif; font-weight: 500; color: #1c1815; letter-spacing: .06em; }
+.pl-root .pl-feat-lead { font-weight: 500; color: #2a2520; letter-spacing: .01em; }
 .pl-root .pl-feat-btn { border-color: #4a443d; padding: 0 calc(20 * var(--u)) 0 calc(21 * var(--u)); font-size: calc(11.5 * var(--u)); }
 .pl-root .pl-feat-main img { display: block; width: 100%; height: 100%; object-fit: cover; object-position: 50% 42%; }
 .pl-root .pl-shade { position: absolute; inset: 0; background: linear-gradient(90deg, rgba(24, 14, 6, .66) 0, rgba(24, 14, 6, .38) 55%, rgba(24, 14, 6, .08) 100%), linear-gradient(0deg, rgba(24, 14, 6, .5) 0, transparent 45%); }
 .pl-root .pl-sptag { display: grid; place-items: center; background: #8a351e; color: #f4e8de; font-size: calc(11 * var(--u)); letter-spacing: .12em; font-weight: 600; }
-.pl-root .pl-feat-mh { font-weight: 600; color: #fff; letter-spacing: -.02em; text-shadow: 0 1px 6px rgba(0, 0, 0, .5); }
+.pl-root .pl-feat-mh { font-weight: 500; color: #fff; letter-spacing: -.02em; text-shadow: 0 1px 6px rgba(0, 0, 0, .5); }
 .pl-root .pl-feat-mp { font-weight: 500; color: #f6efe7; letter-spacing: 0; text-shadow: 0 1px 4px rgba(0, 0, 0, .5); }
-.pl-root .pl-viewmore { display: flex; align-items: center; gap: calc(9 * var(--u)); color: #f6efe7; letter-spacing: .1em; font-weight: 600; text-shadow: 0 1px 3px rgba(0, 0, 0, .5); }
+.pl-root .pl-viewmore { display: flex; align-items: center; gap: calc(9 * var(--u)); color: #f6efe7; letter-spacing: .1em; font-weight: 400; text-shadow: 0 1px 3px rgba(0, 0, 0, .5); }
 .pl-root .pl-cover { z-index: 2; }
 .pl-root .pl-feat-s { background: #fbf9f4; padding: 0; box-shadow: 0 0 0 calc(2.5 * var(--u)) #fbf9f4, 0 1px 4px rgba(40, 25, 10, .25); }
 .pl-root .pl-feat-s img { width: 100%; height: 100%; object-fit: cover; }
 .pl-root .pl-fc { display: flex; flex-direction: column; align-items: flex-start; gap: calc(5 * var(--u)); overflow: hidden; }
-.pl-root .pl-subtag { display: inline-grid; place-items: center; min-width: calc(48 * var(--u)); height: calc(18 * var(--u)); padding: 0 calc(8 * var(--u)); border: 1px solid #5a534c; background: #fcfaf6; color: #26211d; font-size: max(9px, calc(9.6 * var(--u))); letter-spacing: .06em; font-weight: 500; line-height: 1; }
-.pl-root .pl-fc-h { text-wrap: balance; font-family: var(--p4-minb), var(--p4-min), serif; font-weight: 700; letter-spacing: 0; color: #1f1b18; font-size: max(11px, calc(13.5 * var(--u))); line-height: 1.42; }
-.pl-root .pl-fc-p { text-wrap: balance; font-weight: 700; letter-spacing: .01em; color: #4f4840; font-size: max(9.5px, calc(9.5 * var(--u))); line-height: 1.55; }
+.pl-root .pl-subtag { display: inline-grid; place-items: center; min-width: calc(48 * var(--u)); height: calc(18 * var(--u)); padding: 0 calc(8 * var(--u)); border: 1px solid #5a534c; background: #fcfaf6; color: #26211d; font-size: max(9px, calc(9.6 * var(--u))); letter-spacing: .06em; font-weight: 600; line-height: 1; }
+.pl-root .pl-fc-h { text-wrap: balance; font-family: var(--p4-min), "Shippori Mincho", "Hiragino Mincho ProN", serif; font-weight: 500; letter-spacing: 0; color: #1f1b18; font-size: max(11px, calc(13.5 * var(--u))); line-height: 1.42; }
+.pl-root .pl-fc-p { text-wrap: balance; font-weight: 500; letter-spacing: .01em; color: #4f4840; font-size: max(9.5px, calc(9.5 * var(--u))); line-height: 1.55; }
 .pl-root .pl-fc-ar { margin-top: auto; color: #3a342e; }
 
 /* ───── 街のひと + 新着情報 ───── */
@@ -72,12 +72,12 @@
 .pl-root .pl-plabel { background: #fbf9f4; clip-path: polygon(0 1%, 100% 17%, 100% 97%, 1% 100%); box-shadow: none; color: #26211d; }
 .pl-root .pl-plabel-t { font-weight: 600; letter-spacing: -.01em; color: #26211d; }
 .pl-root .pl-plabel-ar { color: #4a443d; }
-.pl-root .pl-news-h { font-family: var(--p4-minb), var(--p4-min), serif; font-weight: 800; color: #1c1815; letter-spacing: .06em; }
-.pl-root .pl-news-btn { background: #f3eee3; padding: 0 calc(11 * var(--u)) 0 calc(21 * var(--u)); font-size: calc(10 * var(--u)); font-weight: 500; }
-.pl-root .pl-nd { color: #4a443d; font-weight: 500; letter-spacing: .02em; }
+.pl-root .pl-news-h { font-family: var(--p4-min), "Shippori Mincho", "Hiragino Mincho ProN", serif; font-weight: 500; color: #1c1815; letter-spacing: .06em; }
+.pl-root .pl-news-btn { background: #f3eee3; padding: 0 calc(11 * var(--u)) 0 calc(21 * var(--u)); font-size: calc(10 * var(--u)); font-weight: 400; }
+.pl-root .pl-nd { color: #4a443d; font-weight: 400; letter-spacing: .02em; }
 .pl-root .pl-chip { display: grid; place-items: center; font-size: calc(10.3 * var(--u)); font-weight: 600; color: #3a342e; letter-spacing: .04em; }
 .pl-root .pl-chip-g { background: #dcdcd8; } .pl-chip-b { background: #eadcc4; }
-.pl-root .pl-nt { color: #2f2a25; font-weight: 600; letter-spacing: .01em; }
+.pl-root .pl-nt { color: #2f2a25; font-weight: 500; letter-spacing: .01em; }
 .pl-root .pl-nline { background: rgba(60, 45, 30, .09); }
 .pl-root .pl-autumn { filter: drop-shadow(0 1px 3px rgba(40, 25, 10, .3)); }
 
@@ -115,7 +115,7 @@
   .pl-root .pl-fc { display: flex; padding: 0; gap: 6px; }
   .pl-root .pl-subtag { font-size: 10px; height: 20px; }
   .pl-root .pl-fc-h { font-size: 13.5px; line-height: 1.45; }
-  .pl-root .pl-fc-p { font-size: 10.5px; line-height: 1.6; font-weight: 600; }
+  .pl-root .pl-fc-p { font-size: 10.5px; line-height: 1.6; font-weight: 500; }
   .pl-root .pl-fc-ar { margin-top: 2px; width: 16px; height: 8px; }
   /* 街のひと + 新着情報 */
   .pl-root .pl-pn { background: #faf8f2; padding: 0 0 18px; }
