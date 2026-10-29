@@ -1,10 +1,11 @@
 import Shell from "@/components/portal/gnoren/common/Shell";
+import TopPage from "@/components/portal/gnoren/top/TopPage";
 
-// 仮の置き場(土台)。ページ担当が中身を作り直す。トップ(見本 1)
+// グルメ試作「暖簾 2」トップ(見本 1)。仮の中身は見本のとおり。構成は components/portal/gnoren/README.md
 export default function Page() {
   return (
     <Shell page="top">
-      <main style={{ minHeight: "60vh", padding: "120px 24px 80px", textAlign: "center" }}>トップ(見本 1)</main>
+      <TopPage />
     </Shell>
   );
 }
