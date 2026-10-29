@@ -26,6 +26,7 @@ export function isPortalPath(pathname: string | null | undefined): boolean {
   if (pathname === '/list') return true;
   if (pathname === '/photos') return true;
   if (pathname === '/special') return true; // 総合の特集一覧(8 業種の特集への入口)
+  if (pathname === '/shop') return true; // 総合の店舗紹介(8 業種の店舗紹介への入口。2026-10-29 試作で新設)
   if (pathname === '/gourmet' || pathname.startsWith('/gourmet/')) return true; // グルメのトップと内部ルート（ON のとき暖簾の枠。グルメの共通ヘッダー（SiteShell）は出さない）
   if (NOREN_SHOP_REWRITE && (pathname === '/restaurant' || pathname.startsWith('/restaurant/'))) return true; // 暖簾の店舗紹介の一覧（/restaurant）と店ページ（本物の URL）
   if (NOREN_FEATURE_REWRITE && /^\/feature\/[^/]+$/.test(pathname) && pathname !== '/feature/search') return true; // 暖簾の特集記事ページ（本物の URL）

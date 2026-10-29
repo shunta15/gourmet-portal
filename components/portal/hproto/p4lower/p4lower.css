@@ -1,0 +1,179 @@
+/* 総合トップの試作「見本4の下半分を、見本1(紙のコラージュ)の下半分の作りにしたもの」。
+   見本1の試作(proto/hub-next の next.css)の下半分の部分だけを持ってきて、見本4(生成りの地・明朝)になじむ色・書体にそろえた。
+   寸法は全部「見本1の画素 × var(--u)」。--u = min(画面幅, 1600px) ÷ 1122。1600px より広い画面は中身を中央に置き、紙・写真は左右へにじませる。
+   すべて .pl-root の下の .pl-* に閉じ込める(上半分の .p4-* には触らない)。 */
+.pl-root {
+  --u: calc(min(100cqw, 1600px) / 1122);
+  --bl: calc((100cqw - min(100cqw, 1600px)) / 2);
+  --paper: #faf8f2; --ink: #2e2a26;
+  --grain: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='220' height='220'%3E%3Cfilter id='f' x='0' y='0' width='100%25' height='100%25'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='2' seed='3' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 .42 0 0 0 0 .36 0 0 0 0 .3 .42 0 0 0 -.17'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23f)'/%3E%3C/svg%3E");
+  --mottle: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='640' height='640'%3E%3Cfilter id='f' x='0' y='0' width='100%25' height='100%25'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.011 .017' numOctaves='3' seed='9' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 .55 0 0 0 0 .47 0 0 0 0 .38 .62 0 0 0 -.25'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23f)'/%3E%3C/svg%3E");
+  container-type: inline-size; position: relative; overflow-x: clip;
+  background: var(--paper); color: var(--ink); line-height: 1.5;
+  font-family: var(--p4-min), "Shippori Mincho", "Hiragino Mincho ProN", serif;
+  -webkit-font-smoothing: antialiased;
+}
+.pl-root *, .pl-root *::before, .pl-root *::after { box-sizing: border-box; }
+.pl-root :where(h2, h3, p, ul, li) { margin: 0; padding: 0; }
+.pl-root ul { list-style: none; }
+
+/* ── 座標の道具 ── */
+.pl-root .pl-arrow { display: inline-block; width: calc(10.5 * var(--u)); height: calc(5.25 * var(--u)); flex: none; overflow: visible; }
+.pl-root .pl-a { position: absolute; left: calc(var(--x) * var(--u)); top: calc(var(--y) * var(--u)); width: calc(var(--w) * var(--u)); height: calc(var(--h) * var(--u)); }
+.pl-root .pl-t { position: absolute; left: calc(var(--x) * var(--u)); top: calc(var(--y) * var(--u)); font-size: calc(var(--fs) * var(--u)); line-height: calc(var(--lh) * var(--u)); white-space: nowrap; }
+.pl-root .pl-page { width: calc(1122 * var(--u)); margin: 0 auto; position: relative; }
+.pl-root .pl-sec { position: relative; height: calc(var(--h) * var(--u)); }
+.pl-root .pl-feat { z-index: 1; } .pl-pn { z-index: 3; }
+.pl-root .pl-fmain, .pl-root .pl-news, .pl-root .pl-news > li, .pl-root .pl-newsrow { display: contents; }
+
+/* 紙(破れた縁 + 地の質感 + 影) */
+.pl-root .pl-pwrap { pointer-events: none; }
+.pl-root .pl-fill { position: absolute; inset: 0; }
+.pl-root .pl-paper { background: var(--pc, #ece8e1); }
+/* 2026-10-29 紙のざらつき(--grain/--mottle)は外した。本番 p4 と同じ平らな色に見せるため(変数の定義だけ残す) */
+.pl-root .pl-paper.pl-g { background: var(--pc, #ece8e1); }
+.pl-root .pl-sh { filter: drop-shadow(0 calc(1.1 * var(--u)) calc(2.2 * var(--u)) rgba(70, 50, 30, .24)); }
+
+/* 横幅いっぱいにするための左右へのにじみ(1600px より広い画面だけ見える。いまは使っていない) */
+.pl-root .pl-amb { --in: 0px; position: absolute; left: 50%; width: 100cqw; transform: translateX(-50%); overflow: hidden; pointer-events: none; -webkit-mask-image: linear-gradient(90deg, #000 0, #000 calc(var(--bl) + var(--in)), transparent calc(var(--bl) + var(--in)), transparent calc(100% - var(--bl) - var(--in)), #000 calc(100% - var(--bl) - var(--in)), #000 100%); mask-image: linear-gradient(90deg, #000 0, #000 calc(var(--bl) + var(--in)), transparent calc(var(--bl) + var(--in)), transparent calc(100% - var(--bl) - var(--in)), #000 calc(100% - var(--bl) - var(--in)), #000 100%); }
+.pl-root .pl-amb b { position: absolute; inset: -60px; background-size: cover; background-position: center; filter: blur(28px) saturate(1.04); }
+.pl-root .pl-amb-city { top: calc(16 * var(--u)); height: calc(108 * var(--u)); }
+.pl-root .pl-amb-city b { background-position: center 40%; }
+.pl-root .pl-logo { font-family: var(--p4-minb), var(--p4-min), serif; font-weight: 800; letter-spacing: -.11em; color: #1c1815; -webkit-text-stroke: .018em currentColor; }
+.pl-root .pl-logo-en { font-weight: 400; letter-spacing: .42em; color: #2a2521; font-family: var(--p4-min), serif; }
+.pl-root .pl-btn { display: flex; align-items: center; justify-content: space-between; border: 1px solid #3a342f; color: #2a2521; font-weight: 400; letter-spacing: .03em; }
+.pl-root .pl-btn .pl-arrow { flex: none; }
+
+/* ───── 特集記事 ───── */
+.pl-root .pl-featbleed { position: absolute; right: calc(100% - 1px); top: calc(677 * var(--u) - 664 * var(--u)); width: calc(var(--bl) + 1px); height: calc(323 * var(--u)); background: #faf8f2; }
+.pl-root .pl-feat-h { font-family: var(--p4-min), "Shippori Mincho", "Hiragino Mincho ProN", serif; font-weight: 500; color: #1c1815; letter-spacing: .06em; }
+.pl-root .pl-feat-lead { font-weight: 500; color: #2a2520; letter-spacing: .01em; }
+.pl-root .pl-feat-btn { border-color: #4a443d; padding: 0 calc(20 * var(--u)) 0 calc(21 * var(--u)); font-size: calc(11.5 * var(--u)); }
+.pl-root .pl-feat-main img { display: block; width: 100%; height: 100%; object-fit: cover; object-position: 50% 42%; }
+.pl-root .pl-shade { position: absolute; inset: 0; background: linear-gradient(90deg, rgba(24, 14, 6, .66) 0, rgba(24, 14, 6, .38) 55%, rgba(24, 14, 6, .08) 100%), linear-gradient(0deg, rgba(24, 14, 6, .5) 0, transparent 45%); }
+.pl-root .pl-sptag { display: grid; place-items: center; background: #8a351e; color: #f4e8de; font-size: calc(11 * var(--u)); letter-spacing: .12em; font-weight: 600; }
+.pl-root .pl-feat-mh { font-weight: 500; color: #fff; letter-spacing: -.02em; text-shadow: 0 1px 6px rgba(0, 0, 0, .5); }
+.pl-root .pl-feat-mp { font-weight: 500; color: #f6efe7; letter-spacing: 0; text-shadow: 0 1px 4px rgba(0, 0, 0, .5); }
+.pl-root .pl-viewmore { display: flex; align-items: center; gap: calc(9 * var(--u)); color: #f6efe7; letter-spacing: .1em; font-weight: 400; text-shadow: 0 1px 3px rgba(0, 0, 0, .5); }
+.pl-root .pl-cover { z-index: 2; }
+.pl-root .pl-feat-s { background: #fdfcfa; padding: 0; box-shadow: 0 0 0 calc(2.5 * var(--u)) #fdfcfa, 0 1px 4px rgba(40, 25, 10, .25); }
+.pl-root .pl-feat-s img { width: 100%; height: 100%; object-fit: cover; }
+.pl-root .pl-fc { display: flex; flex-direction: column; align-items: flex-start; gap: calc(5 * var(--u)); overflow: hidden; }
+.pl-root .pl-subtag { display: inline-grid; place-items: center; min-width: calc(48 * var(--u)); height: calc(18 * var(--u)); padding: 0 calc(8 * var(--u)); border: 1px solid #5a534c; background: #fdfcfa; color: #26211d; font-size: max(9px, calc(9.6 * var(--u))); letter-spacing: .06em; font-weight: 600; line-height: 1; }
+.pl-root .pl-fc-h { text-wrap: balance; font-family: var(--p4-min), "Shippori Mincho", "Hiragino Mincho ProN", serif; font-weight: 500; letter-spacing: 0; color: #1f1b18; font-size: max(11px, calc(13.5 * var(--u))); line-height: 1.42; }
+.pl-root .pl-fc-p { text-wrap: balance; font-weight: 500; letter-spacing: .01em; color: #4f4840; font-size: max(9.5px, calc(9.5 * var(--u))); line-height: 1.55; }
+.pl-root .pl-fc-ar { margin-top: auto; color: #3a342e; }
+
+/* ───── 特集記事の欄(本番 p4 の「特集記事」の段の左・中央)+ 新着情報 ─────
+   本番の寸法(文字 24/14px・ボタン高さ 46px・絵 128px・写真 320px)を --k 倍に縮めて置く。--k = 0.65 × --u(1440px 幅で約 0.83 倍)。 */
+.pl-root .pl-about { --k: calc(.65 * var(--u)); display: flex; align-items: center; z-index: 1; }
+.pl-root .pl-about-l { display: flex; align-items: center; gap: calc(22 * var(--k)); }
+.pl-root .pl-about-text { flex: none; }
+.pl-root .pl-about .p4-h4 { font-size: calc(24 * var(--k)); margin-top: calc(4 * var(--k)); }
+.pl-root .pl-about .p4-small { font-size: max(11px, calc(14 * var(--k))); margin-top: 0; }
+.pl-root .pl-about .p4-btn { gap: calc(14 * var(--k)); border-radius: calc(24 * var(--k)); height: calc(46 * var(--k)); padding: 0 calc(28 * var(--k)); font-size: max(11px, calc(14 * var(--k))); margin-top: calc(20 * var(--k)); }
+.pl-root .pl-about .p4-btn svg { width: calc(16 * var(--k)); height: calc(7 * var(--k)); }
+.pl-root .pl-about .p4-people { width: calc(128 * var(--k)); height: auto; flex: none; }
+.pl-root .pl-about-c { margin-left: calc(4 * var(--k)); flex: none; }
+.pl-root .pl-about .p4-city { width: calc(320 * var(--k)); height: auto; max-width: none; }
+
+/* ───── 新着情報 ───── */
+.pl-root .pl-news-h { font-family: var(--p4-min), "Shippori Mincho", "Hiragino Mincho ProN", serif; font-weight: 500; color: #1c1815; letter-spacing: .06em; }
+.pl-root .pl-news-btn { background: #f3eee3; padding: 0 calc(11 * var(--u)) 0 calc(21 * var(--u)); font-size: calc(10 * var(--u)); font-weight: 400; }
+.pl-root .pl-nd { color: #4a443d; font-weight: 400; letter-spacing: .02em; }
+.pl-root .pl-chip { display: grid; place-items: center; font-size: calc(10.3 * var(--u)); font-weight: 600; color: #3a342e; letter-spacing: .04em; }
+.pl-root .pl-chip-g { background: #dcdcd8; } .pl-chip-b { background: #eadcc4; }
+.pl-root .pl-nt { color: #2f2a25; font-weight: 500; letter-spacing: .01em; }
+/* 新着情報の題: 長い店名・記事の題は 2 行まで折り返す(行の中心は 1 行のときと同じ。2 行を超えたら末尾を「…」で切る。全文は title と aria-label にある)。幅は画面の右の写真の手前まで */
+.pl-root .pl-nt { display: flex; align-items: center; height: calc(32 * var(--u)); margin-top: calc(-8 * var(--u)); width: calc(229 * var(--u)); white-space: normal; letter-spacing: 0; overflow-wrap: anywhere; }
+.pl-root .pl-nt-in { display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 2; overflow: hidden; line-height: calc(13.8 * var(--u)); }
+.pl-root .pl-chip-long { letter-spacing: 0; font-size: calc(9 * var(--u)); }
+.pl-root .pl-nline { background: rgba(60, 45, 30, .09); }
+.pl-root .pl-autumn { filter: drop-shadow(0 1px 3px rgba(40, 25, 10, .3)); }
+
+/* ───── 利用シーン + 水色の札(本番 p4 の「こんなシーンで楽しめる。」と「ひとつの店との出会い…」を横に並べて置いた) ─────
+   寸法は本番 p4 の px そのまま × --kl。--kl = 1px(幅が足りるとき)。足りないときは 2 つの中の大きさを同じ比率で縮める(自然な幅 1318px = シーン 656 + 間 24 + 水色の札 610 + 右の余白 28 に対する画面幅の比)。
+   水色の札は本番 p4 の札と同じ大きさ(幅 610・最低の高さ 250・中の余白 44/56/44/44・線画 130・字 26/14px)。空いた幅はシーン側が広がり、札はシーンの高さに引き伸ばさず縦の真ん中に置く。小さな文字は最低 11px。 */
+.pl-root .pl-sw { --kl: min(1px, calc(min(100cqw, 1600px) / 1318)); position: relative; z-index: 2; display: flex; align-items: stretch; gap: calc(24 * var(--kl)); padding: calc(26 * var(--u) + 79.15 * var(--kl)) calc(28 * var(--kl)) calc(79.15 * var(--kl)) 0; color: #3a332c; }
+/* 地は 1 枚の帯(2026-10-29 つぎはぎをやめた): シーンの生成り(本番 p4 のシーンと同じ #f7f0e5)を、画面の左端から右端まで切れ目なく敷き、水色の札も同じ地の上に置く。見本4の「生成りの紙の上に写真と水色の札が並ぶ」関係と同じ */
+.pl-root .pl-sw::before { content: ""; position: absolute; z-index: -1; top: calc(26 * var(--u)); bottom: 0; left: calc(-1 * var(--bl)); right: calc(-1 * var(--bl)); background: #f7f0e5; }
+/* 左の欄 = 「新しく載ったお店」。水色の札と同じ高さ(250px × --kl)に、見出し + 写真カード 3 枚を収める(上下の余白は .pl-sw の padding で水色の札の位置を従来どおりにしている) */
+.pl-root .pl-sw-scene { position: relative; flex: 1 1 auto; min-width: calc(656 * var(--kl)); height: calc(250 * var(--kl)); align-self: center; padding: 0 calc(40 * var(--kl)) 0 calc(56 * var(--kl)); display: flex; flex-direction: column; }
+.pl-root .pl-sw-h3 { font-size: calc(30 * var(--kl)); font-weight: 500; letter-spacing: .06em; color: #2e2a26; line-height: calc(39 * var(--kl)); flex: none; }
+.pl-root .pl-sw-small { font-size: max(11px, calc(14 * var(--kl))); font-weight: 500; letter-spacing: .08em; line-height: 2; color: #4a443d; }
+.pl-root .pl-nsh { flex: 1 1 0; min-height: 0; margin-top: calc(14 * var(--kl)); display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: calc(14 * var(--kl)); }
+.pl-root .pl-nsh-c { min-width: 0; min-height: 0; display: grid; grid-template-rows: minmax(0, 1fr) auto; row-gap: calc(8 * var(--kl)); color: inherit; text-decoration: none; }
+.pl-root .pl-nsh-c img { display: block; width: 100%; height: 100%; min-height: 0; max-width: none; object-fit: cover; border-radius: calc(16 * var(--kl)); background: #e9e1d2; }
+.pl-root .pl-nsh-t { display: block; min-width: 0; }
+.pl-root .pl-nsh-m { display: flex; align-items: center; gap: calc(6 * var(--kl)); min-width: 0; height: calc(18 * var(--kl)); }
+.pl-root .pl-nsh-chip { flex: none; display: inline-grid; place-items: center; height: 100%; padding: 0 calc(8 * var(--kl)); font-size: calc(10 * var(--kl)); font-weight: 600; color: #3a342e; letter-spacing: .04em; line-height: 1; white-space: nowrap; }
+.pl-root .pl-nsh-chip-g { background: #dcdcd8; } .pl-root .pl-nsh-chip-b { background: #eadcc4; }
+.pl-root .pl-nsh-town { min-width: 0; font-size: calc(11 * var(--kl)); font-weight: 500; color: #4a443d; letter-spacing: .04em; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+/* 店名: 2 行まで(超えたら「…」)。全文は title にある */
+.pl-root .pl-nsh-n { display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 2; overflow: hidden; overflow-wrap: anywhere; margin-top: calc(4 * var(--kl)); font-size: calc(13 * var(--kl)); font-weight: 500; letter-spacing: .01em; line-height: calc(18 * var(--kl)); height: calc(36 * var(--kl)); color: #2e2a26; }
+.pl-root .pl-sw-blue { flex: none; align-self: center; width: calc(610 * var(--kl)); min-height: calc(250 * var(--kl)); background: #dcebf3; border-radius: calc(52 * var(--kl)) calc(30 * var(--kl)) calc(46 * var(--kl)) calc(40 * var(--kl)) / calc(46 * var(--kl)) calc(50 * var(--kl)) calc(42 * var(--kl)) calc(54 * var(--kl)); padding: calc(44 * var(--kl)) calc(56 * var(--kl)) calc(44 * var(--kl)) calc(44 * var(--kl)); display: flex; align-items: center; gap: calc(28 * var(--kl)); isolation: isolate; }
+/* 線画の画像は水色と合わない明るい縁(書き出しのにじみ・白っぽい半透明の四角)を含むので、darken で札の水色より明るい所だけ札の色にそろえる。線(札より濃い)はそのまま。画像ファイルは変えない */
+.pl-root .pl-sw-cam { display: block; width: calc(130 * var(--kl)); height: auto; max-width: none; flex: none; mix-blend-mode: darken; }
+.pl-root .pl-sw-h4 { font-size: calc(26 * var(--kl)); font-weight: 500; letter-spacing: .08em; line-height: 1.6; color: #2e2a26; margin: 0; }
+.pl-root .pl-sw-blue .pl-sw-small { margin-top: calc(10 * var(--kl)); }
+
+/* ───── 狭い画面(〜900px): 1 列に組み替える ───── */
+@media (max-width: 900px) {
+  .pl-root { --u: 1px; }
+  .pl-root .pl-page { width: 100%; }
+  .pl-root .pl-sec { height: auto; }
+  .pl-root :is(.pl-amb, .pl-featbleed, .pl-pwrap, .pl-nline, .pl-logo-en, .pl-featleft, .pl-featright, .pl-fcard, .pl-npanel, .pl-fc-ar-d) { display: none; }
+  .pl-root .pl-a, .pl-root .pl-t { position: static; left: auto; top: auto; width: auto; height: auto; font-size: calc(var(--fs, 12) * 1px); line-height: calc(var(--lh, 18) / var(--fs, 12)); white-space: normal; }
+  .pl-root .pl-fmain { display: block; }
+  /* 特集記事 */
+  .pl-root .pl-feat { background: #faf8f2; padding: 26px 16px 22px; }
+  .pl-root .pl-feat-h { display: block; font-size: 28px !important; line-height: 1.2 !important; transform: none; }
+  .pl-root .pl-feat-lead { display: block; margin-top: 14px; font-size: 14px !important; line-height: 1.8 !important; }
+  .pl-root .pl-feat-btn { margin-top: 16px; width: 100%; height: 40px; font-size: 12px; }
+  /* 特集の大きな札は、PC の組み方を札の幅に合わせて縮めたまま出す(文字は写真の上) */
+  .pl-root .pl-fmain { --u: calc(min(100cqw - 32px, 600px) / 463); width: min(100%, 600px); position: relative; margin-top: 22px; aspect-ratio: 463 / 330; }
+  .pl-root .pl-fmain .pl-a, .pl-root .pl-fmain .pl-t { position: absolute; left: calc((var(--x) - 268) * var(--u)); top: calc((var(--y) - 18) * var(--u)); width: calc(var(--w) * var(--u)); height: calc(var(--h) * var(--u)); font-size: calc(var(--fs) * var(--u)); line-height: calc(var(--lh) * var(--u)); white-space: nowrap; }
+  .pl-root .pl-fmain .pl-t { width: auto; height: auto; }
+  .pl-root .pl-fmain .pl-sptag { font-size: calc(8.8 * var(--u)); }
+    .pl-root .pl-fs { display: grid !important; grid-template-columns: 42% 1fr; gap: 14px; align-items: start; margin-top: 18px; }
+  .pl-root .pl-feat-s { display: block; margin: 0; width: 100%; aspect-ratio: 209 / 159; box-shadow: none; }
+  .pl-root .pl-fc { display: flex; padding: 0; gap: 6px; }
+  .pl-root .pl-subtag { font-size: 10px; height: 20px; }
+  .pl-root .pl-fc-h { font-size: 13.5px; line-height: 1.45; }
+  .pl-root .pl-fc-p { font-size: 10.5px; line-height: 1.6; font-weight: 500; }
+  .pl-root .pl-fc-ar { margin-top: 2px; width: 16px; height: 8px; }
+  /* 特集記事の欄(本番 p4 のスマホと同じ: 文字・ボタン → 絵 を折り返し → 写真) */
+  .pl-root .pl-about { --k: 1px; display: block; padding: 26px 16px 4px; }
+  .pl-root .pl-about-l { flex-wrap: wrap; }
+  .pl-root .pl-about-c { margin: 24px 0 0; display: flex; justify-content: center; }
+  .pl-root .pl-about .p4-city { width: min(320px, 78vw); }
+  /* 新着情報 */
+  .pl-root .pl-pn { background: #faf8f2; padding: 0 0 18px; }
+  .pl-root .pl-news-h { display: block; margin: 30px 16px 0; font-size: 24px !important; line-height: 1.2 !important; transform: none; }
+  .pl-root .pl-news { display: block; margin: 8px 16px 0; }
+  .pl-root .pl-news > li { display: block; border-bottom: 1px solid rgba(60, 45, 30, .12); }
+  .pl-root .pl-newsrow { display: grid; grid-template-columns: 86px auto; justify-content: start; align-items: center; gap: 4px 10px; padding: 11px 0; }
+  .pl-root .pl-nd { font-size: 11px !important; }
+  .pl-root .pl-chip { display: inline-block; padding: 1px 8px; font-size: 10px; line-height: 1.6; }
+  .pl-root .pl-nt { grid-column: 1 / -1; display: block; letter-spacing: .01em; height: auto; margin-top: 0; width: auto; font-size: 13px !important; line-height: 1.5 !important; }
+  .pl-root .pl-nt-in { display: inline; overflow: visible; line-height: inherit; }
+  .pl-root .pl-chip-long { font-size: 10px; letter-spacing: .04em; }
+  .pl-root .pl-chip { justify-self: start; }
+  .pl-root .pl-news-btn { display: flex; margin: 16px 16px 0; height: 38px; font-size: 11px; }
+  .pl-root .pl-autumn { display: block; width: 66%; height: auto; margin: 18px auto 0; }
+  /* 利用シーン + 水色の札(本番 p4 のスマホと同じ: シーン → 水色の札 の縦積み) */
+  .pl-root .pl-sw { --kl: 1px; display: block; padding: 0 0 40px; }
+  .pl-root .pl-sw::before { top: 0; }
+  .pl-root .pl-sw-scene { width: auto; min-width: 0; height: auto; padding: 36px 20px 0; display: block; }
+  .pl-root .pl-sw-h3 { font-size: 24px; line-height: 1.3; }
+  /* 新しく載ったお店: 縦に 3 枚(左に写真・右に札・町名・店名) */
+  .pl-root .pl-nsh { display: flex; flex-direction: column; gap: 14px; margin-top: 16px; }
+  .pl-root .pl-nsh-c { display: grid; grid-template-columns: 112px minmax(0, 1fr); grid-template-rows: auto; column-gap: 14px; align-items: center; }
+  .pl-root .pl-nsh-c img { width: 112px; height: 84px; border-radius: 14px; }
+  .pl-root .pl-nsh-m { height: 20px; }
+  .pl-root .pl-nsh-chip { font-size: 10px; }
+  .pl-root .pl-nsh-town { font-size: 11px; }
+  .pl-root .pl-nsh-n { margin-top: 5px; font-size: 13px; line-height: 19px; height: 38px; }
+  .pl-root .pl-sw-blue { width: auto; min-height: 0; margin: 36px 20px 0; border-radius: 40px; padding: 32px 24px; flex-direction: column; align-items: flex-start; justify-content: flex-start; gap: 16px; }
+  .pl-root .pl-sw-h4 { font-size: 20px; }
+}

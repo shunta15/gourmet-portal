@@ -31,6 +31,7 @@ const PORTAL_OFF_SOURCES = [
   "/sports/:path*", // スポーツ・フィットネス
   "/life/:path*", // くらし・ライフスタイル
   "/special", // 総合の特集一覧（8 業種の特集への入口）
+  "/shop", // 総合の店舗紹介（8 業種の店舗紹介への入口。2026-10-29 試作で新設）
   "/list", // 候補リスト（店を保存して URL で共有）
   "/list-data/:path*", // 候補リストが店ごとに取る JSON
   "/photos/:path*",

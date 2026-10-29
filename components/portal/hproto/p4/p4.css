@@ -1,11 +1,12 @@
 /* 総合トップの試作「見本4(丸い切り抜き)」横型(PC)版。
-   --u = 見本の 1px。ヒーローの組みだけ --u で拡大縮小し(最大 1.2px)、ほかの段は普通の大きさの文字で横に組む。 */
+   --u = 見本の 1px。ヒーローの組みだけ --u で拡大縮小し、ほかの段は普通の大きさの文字で横に組む。
+   --u は「画面の幅 / 画面の高さ(縦の低い横型でもヒーローが最初の画面に収まる)」の小さいほう。ふつうの PC で最大 1.2px、1600px より広いモニターは最大 1.5px まで少しずつ大きく(2026-10-29 横型対応)。 */
 /* 総合トップ(/)でだけ効く(ほかのページへ移ったあとに残らないよう body:has で囲う)。共通の自作カーソル(丸い点)は出さない */
 body:has(.p4-page) { background: #faf8f2; cursor: auto; }
 body:has(.p4-page) > .cursor-dot, body:has(.p4-page) > .cursor-ring { display: none !important; }
 .p4-page, .p4-page * { cursor: auto; }
 .p4-page :is(a, button, summary) { cursor: pointer; }
-.p4-page { --u: min(1.2px, calc(100vw / 1040)); --wrap: max(28px, calc((100vw - 1200px) / 2)); background: #faf8f2; color: #3a332c; font-family: var(--p4-min), "Shippori Mincho", "Hiragino Mincho ProN", serif; overflow-x: clip; line-height: 1.6; }
+.p4-page { --hh: 76px; --u: min(1.5px, calc(100vw / 1040), calc((100svh - var(--hh)) / 556), calc(1.2px + max(0px, calc(100vw - 1600px)) * .0003)); --wrap: max(28px, calc((100vw - max(1200px, calc(var(--u) * 1024 - 28.8px))) / 2)); background: #faf8f2; color: #3a332c; font-family: var(--p4-min), "Shippori Mincho", "Hiragino Mincho ProN", serif; overflow-x: clip; line-height: 1.6; }
 .p4-page a { color: inherit; text-decoration: none; }
 .p4-page h1, .p4-page h2, .p4-page p { margin: 0; font-weight: 500; }
 .p4-page img { display: block; max-width: none; }
@@ -29,7 +30,7 @@ body:has(.p4-page) > .cursor-dot, body:has(.p4-page) > .cursor-ring { display: n
 .p4-burger i { display: block; height: 1.5px; background: #3a332c; margin: 5px 0; }
 
 /* ヒーロー: 見本の座標を --u で組む。高さは 556u(1440 幅で約 670px)で、最初の画面に収まる */
-.p4-hero { position: relative; width: calc(var(--u) * 1024); height: calc(var(--u) * 556); margin: 4px auto 0; --bleed: min(130px, max(0px, calc((100vw - var(--u) * 1024) / 2))); }
+.p4-hero { position: relative; width: calc(var(--u) * 1024); height: calc(var(--u) * 556); margin: 4px auto 0; --bleed: max(0px, calc((100vw - var(--u) * 1024) / 2)); }
 .p4-hero-text { position: absolute; left: 0; top: 0; width: 0; height: 0; }
 .p4-h1 { font-family: var(--p4-yomo), "Klee One", "Yomogi", cursive; font-weight: 600 !important; font-size: calc(var(--u) * 38); line-height: 1.2; color: #2e2a26; letter-spacing: -.02em; -webkit-text-stroke: calc(var(--u) * .45) #2e2a26; }
 .p4-h1 i { display: inline-block; font-style: normal; transform-origin: center; }
@@ -38,9 +39,10 @@ body:has(.p4-page) > .cursor-dot, body:has(.p4-page) > .cursor-ring { display: n
 .p4-h1 span:nth-child(2) { left: calc(var(--u) * 54); top: calc(var(--u) * 142); }
 .p4-h1 span:nth-child(3) { left: calc(var(--u) * 70); top: calc(var(--u) * 200); }
 .p4-lead { position: absolute; left: calc(var(--u) * 52); top: calc(var(--u) * 282); font-size: max(12px, calc(var(--u) * 11.4)); letter-spacing: .05em; line-height: 1.75; color: #4a443d; white-space: nowrap; }
-.p4-street { position: absolute; bottom: calc(var(--u) * -4); left: calc(-1 * var(--bleed)); width: calc(var(--u) * 490 + var(--bleed)); height: calc(var(--u) * 250); overflow: hidden; }
+/* 窓の左は、ヒーローの左から最大 108.33u(本番 u=1.2 の 130px と同じ)まで。画面がそれより広いと窓の左端が画面の内側に入り、そこから 75u(本番の 90px)かけて左へ薄く消える(本番の「ぼやけて消える」と同じ)。画面の端までつなげたり反転でくり返したりしない */
+.p4-street { --sb: min(var(--bleed), calc(var(--u) * 108.33)); --fw: clamp(0px, calc((var(--bleed) - var(--sb)) * 1000), calc(var(--u) * 75)); position: absolute; bottom: calc(var(--u) * -4); left: calc(-1 * var(--sb)); width: calc(var(--u) * 490 + var(--sb)); height: calc(var(--u) * 250); overflow: hidden; -webkit-mask-image: linear-gradient(to right, transparent 0, #000 var(--fw)); mask-image: linear-gradient(to right, transparent 0, #000 var(--fw)); }
 /* 絵は 0.39u/px(元の切り出しの見え方と同じ大きさ)。窓の左端(画面の端)は絵の左から 390px の所、右端(490u)は 1869px の所 */
-.p4-street img { position: absolute; top: calc(var(--u) * 10); left: calc(var(--bleed) - var(--u) * 239); width: calc(var(--u) * 780); height: auto; }
+.p4-street img { position: absolute; top: calc(var(--u) * 10); left: calc(var(--sb) - var(--u) * 239); width: calc(var(--u) * 780); height: auto; }
 .p4-collage { position: absolute; left: calc(var(--u) * 308); top: 0; width: calc(var(--u) * 717); height: calc(var(--u) * 556); }
 .p4-blob { position: absolute; }
 .p4-blob-img { position: absolute; max-width: none; height: auto; display: block; }
@@ -52,7 +54,6 @@ body:has(.p4-page) > .cursor-dot, body:has(.p4-page) > .cursor-ring { display: n
 .p4-badge { position: absolute; }
 .p4-badge-t { position: absolute; left: 0; right: 0; top: calc(var(--u) * 38); text-align: center; font-family: var(--p4-yomo), "Klee One", "Yomogi", cursive; font-weight: 600; font-size: max(9.5px, calc(var(--u) * 15)); line-height: max(12px, calc(var(--u) * 22)); transform: rotate(-9deg); color: #3b352f; white-space: nowrap; letter-spacing: .02em; }
 .p4-badge-en { position: absolute; left: 0; right: 0; top: calc(var(--u) * 128); text-align: center; font-size: max(7px, calc(var(--u) * 8)); letter-spacing: .4em; color: #6a645c; transform: rotate(-4deg); }
-@media (min-width: 1500px) { .p4-street { -webkit-mask-image: linear-gradient(to right, transparent 0, #000 90px); mask-image: linear-gradient(to right, transparent 0, #000 90px); } }
 
 /* 共通の文字 */
 .p4-en { font-size: 11px; letter-spacing: .3em; color: #8a847b; line-height: 1.4; }
@@ -69,7 +70,7 @@ body:has(.p4-page) > .cursor-dot, body:has(.p4-page) > .cursor-ring { display: n
 .p4-catsec-head { text-align: center; }
 .p4-catsec-title { display: inline-block; text-align: left; }
 .p4-catsec-head .p4-sub { margin-top: 12px; }
-.p4-cats { display: grid; grid-template-columns: repeat(8, 1fr); gap: 18px; max-width: 1120px; margin: 36px auto 0; }
+.p4-cats { display: grid; grid-template-columns: repeat(8, minmax(0, 1fr)); gap: 18px; max-width: 1120px; margin: 36px auto 0; }
 .p4-cat { display: block; text-align: center; }
 .p4-cat img { width: 100%; height: auto; aspect-ratio: 113 / 121; object-fit: cover; }
 .p4-cat-ja { display: block; margin-top: 12px; font-size: 15px; letter-spacing: .06em; color: #2e2a26; line-height: 1.3; white-space: nowrap; }
@@ -81,6 +82,8 @@ body:has(.p4-page) > .cursor-dot, body:has(.p4-page) > .cursor-ring { display: n
 .p4-sp-cats { grid-template-columns: repeat(4, 1fr); gap: 44px 32px; max-width: 880px; margin-top: 48px; }
 .p4-sp-cats .p4-cat-ja { font-size: 18px; margin-top: 14px; }
 .p4-sp-cats .p4-cat-en { font-size: 10px; margin-top: 5px; }
+.p4-page .p4-shop-lead { margin-top: 18px; }
+.p4-page .p4-shop-lead + .p4-sp-cats { margin-top: 44px; }
 
 /* 街のストーリー / シーン */
 .p4-duo { display: grid; grid-template-columns: 48fr 52fr; }
@@ -116,6 +119,12 @@ body:has(.p4-page) > .cursor-dot, body:has(.p4-page) > .cursor-ring { display: n
 .p4-soc { margin-left: auto; display: flex; gap: 24px; align-items: center; }
 .p4-fdiv { display: block; width: 1px; height: 30px; background: #cfc9c0; margin: 0 32px; }
 
+/* 860〜1179px: 8 つ並べたカテゴリーの名前(「アクティビティ」など 7 字)が列の幅をはみ出して 1 列だけ広がらないよう、字と間を詰める */
+@media (min-width: 860px) and (max-width: 1179px) {
+  .p4-cats { gap: 14px; }
+  .p4-cat-ja { font-size: clamp(11.5px, 1.4vw, 13px); letter-spacing: .02em; }
+}
+
 /* 狭い画面(PC の小さめ〜タブレット): 「マチノワについて」を 2 段に */
 @media (max-width: 1179px) {
   .p4-about { grid-template-columns: auto 1fr; padding-right: 0; row-gap: 28px; }
@@ -125,28 +134,14 @@ body:has(.p4-page) > .cursor-dot, body:has(.p4-page) > .cursor-ring { display: n
 }
 
 /* 768px 前後より狭い画面: 縦に積む */
+/* 画面が狭い・縦が低い横型(スマホ横向き)の共通: ヘッダーはハンバーガー、下の段は縦に積む */
 @media (max-width: 859px) {
-  .p4-page { --u: min(1.1px, calc((100vw - 8px) / 717)); --wrap: 20px; }
-  .p4-label-h { left: var(--mx, var(--x)); top: var(--my, var(--y)); width: calc(4.48em + 8px); height: calc(2.4em + 6px); line-height: 1.2; padding-top: 0; font-weight: 700; }
-  .p4-br { display: inline; }
-  .p4-label-v { font-weight: 700; }
-  .p4-label-t { transform: translate(calc(var(--mtx, 0) * 1em), calc(var(--mty, 0) * 1em)); }
+  .p4-page { --wrap: 20px; --hh: 70px; }
   .p4-header { height: 56px; }
   .p4-nav, .p4-fav { display: none; }
   .p4-menu { margin-left: auto; }
   .p4-menu-list { top: 50px; }
   .p4-logo-ja { font-size: 26px; }
-  .p4-hero { width: auto; height: auto; margin: 8px 0 0; padding: 0; }
-  .p4-hero-text { position: static; width: auto; height: auto; padding: 8px var(--wrap) 0; }
-  .p4-h1 { font-size: 42px; }
-  .p4-h1 span { position: static; display: block; transform: rotate(-5deg); transform-origin: left center; margin-bottom: 4px; }
-  .p4-h1 span:nth-child(2) { margin-left: 18px; }
-  .p4-h1 span:nth-child(3) { margin-left: 36px; }
-  .p4-lead { position: static; font-size: 12.5px; margin-top: 16px; white-space: nowrap; letter-spacing: .03em; }
-  /* 街並みの絵は縦積みでも PC と同じ窓(絵の 390〜1869px)を幅いっぱいに出す(背景は透明なので地とつながる) */
-  .p4-street { position: relative; left: auto; bottom: auto; width: 100%; max-width: 560px; height: auto; aspect-ratio: 1479 / 667; overflow: hidden; margin-top: 12px; }
-  .p4-street img { top: 0; left: -26.37%; width: 135.23%; }
-  .p4-collage { position: relative; left: auto; margin: 4px auto 0; width: calc(var(--u) * 717); height: calc(var(--u) * 556); }
   .p4-catsec { padding: 36px var(--wrap) 44px; }
   .p4-h2 { font-size: 22px; }
   .p4-cats { grid-template-columns: repeat(4, 1fr); gap: 20px 12px; }
@@ -174,5 +169,41 @@ body:has(.p4-page) > .cursor-dot, body:has(.p4-page) > .cursor-ring { display: n
   .p4-fnav { order: 3; width: 100%; margin-left: 0; gap: 18px; flex-wrap: wrap; }
   .p4-fdiv { display: none; }
   .p4-soc { margin-left: auto; }
+}
+/* スマホ縦(と、縦が高い幅 859px 以下の窓)だけ、ヒーローを縦に積む。スマホ横向き(縦 520px 以下)は PC と同じ横の組みを --u で縮めて使う */
+@media (max-width: 859px) and (orientation: portrait), (max-width: 859px) and (min-height: 521px) {
+  .p4-page { --u: min(1.1px, calc((100vw - 8px) / 717)); }
+  .p4-hero { width: auto; height: auto; margin: 8px 0 0; padding: 0; }
+  .p4-hero-text { position: static; width: auto; height: auto; padding: 8px var(--wrap) 0; }
+  .p4-h1 { font-size: 42px; }
+  .p4-h1 span { position: static; display: block; transform: rotate(-5deg); transform-origin: left center; margin-bottom: 4px; }
+  .p4-h1 span:nth-child(2) { margin-left: 18px; }
+  .p4-h1 span:nth-child(3) { margin-left: 36px; }
+  .p4-lead { position: static; font-size: 12.5px; margin-top: 16px; white-space: nowrap; letter-spacing: .03em; }
+  /* 街並みの絵は縦積みでも PC と同じ窓(絵の 390〜1869px)を幅いっぱいに出す(背景は透明なので地とつながる) */
+  .p4-street { position: relative; left: auto; bottom: auto; width: 100%; max-width: 560px; height: auto; aspect-ratio: 1479 / 667; overflow: hidden; margin-top: 12px; -webkit-mask-image: none; mask-image: none; }
+  .p4-street img { top: 0; left: -26.37%; width: 135.23%; }
+  .p4-collage { position: relative; left: auto; margin: 4px auto 0; width: calc(var(--u) * 717); height: calc(var(--u) * 556); }
+}
+/* 小さい --u(スマホ縦・スマホ横)の札: 字の下限(9px)で箱が広がるので、中心と字の寄せをスマホ用に */
+@media (max-width: 859px), (orientation: landscape) and (max-height: 520px) {
+  .p4-label-h { left: var(--mx, var(--x)); top: var(--my, var(--y)); width: calc(4.48em + 8px); height: calc(2.4em + 6px); line-height: 1.2; padding-top: 0; font-weight: 700; }
+  .p4-br { display: inline; }
+  .p4-label-v { font-weight: 700; }
+  .p4-label-t { transform: translate(calc(var(--mtx, 0) * 1em), calc(var(--mty, 0) * 1em)); }
+}
+/* 縦が低い横型(スマホ横向き): 小文は縦積み用の 12px でなく、ヒーローの縮みに合わせて小さめに(札・写真と重ならない) */
+@media (orientation: landscape) and (max-height: 520px) {
+  .p4-lead { font-size: max(9.5px, calc(var(--u) * 11.4)); letter-spacing: .03em; }
+}
+/* スマホ横向き: 縦に積んだ下の段が 844px 幅いっぱいに間延びしないよう、大きさだけ抑える */
+@media (max-width: 859px) and (orientation: landscape) and (max-height: 520px) {
+  .p4-cats { max-width: 560px; }
+  .p4-sp-cats { grid-template-columns: repeat(4, 1fr); max-width: 640px; }
+  .p4-story-img { width: min(78%, 380px); }
+}
+/* 横長の大きなモニター: 「特集記事」の段の青い札が画面の右端まで伸びきらないよう、右をヒーローの右端にそろえる */
+@media (min-width: 1600px) {
+  .p4-about { padding-right: var(--wrap); }
 }
 .p4-foot .p4-fav { margin-left: 0; }
