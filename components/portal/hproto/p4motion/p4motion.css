@@ -1,0 +1,72 @@
+/* 総合トップ(見本4)に足した動き。止まったときの見た目は p4/p4.css のまま(ここは動きだけ)。
+   動かすのは transform / translate / scale / opacity が中心(ラベルの出現だけ clip-path)。 */
+
+/* 動きのための入れ物(位置・大きさは元のブロブと同じ。静止画では何も変わらない) */
+.p4m-blobw { position: absolute; pointer-events: none; }
+.p4m-tilt, .p4m-breath { position: absolute; inset: 0; }
+.p4m-blobw .p4-blob { pointer-events: auto; } /* 切り抜きの形の中だけ反応する */
+.p4m-shadow { position: absolute; inset: 0; opacity: 0; filter: blur(14px); transform: translateY(10px); transition: opacity .4s ease, transform .4s ease; }
+.p4m-shadow i { position: absolute; inset: 0; display: block; background: rgba(58, 51, 44, .4); }
+.p4m-float { position: absolute; inset: 0; }
+.p4m-img { display: block; position: relative; isolation: isolate; }
+.p4m-img::after { content: ""; position: absolute; inset: 0; z-index: -1; border-radius: inherit; box-shadow: 0 18px 26px -8px rgba(58, 51, 44, .4); opacity: 0; transition: opacity .35s ease; }
+
+@media (prefers-reduced-motion: no-preference) {
+  /* ---- 開いた瞬間(CSS だけ。読み込み直後から動く) ---- */
+  /* 大見出し: キネティックタイポグラフィ(1 字ずつ、手書きのように少し回りながら) */
+  .p4m .p4m-ch { animation: p4m-ch .8s cubic-bezier(.22, 1.25, .36, 1) backwards; animation-delay: calc(.75s + var(--i) * .07s); }
+  @keyframes p4m-ch { from { opacity: 0; transform: translateY(.5em) rotate(-16deg) scale(.45); } }
+  /* 小文: ふわっとフェードアップ */
+  .p4m .p4m-lead { animation: p4m-fadeup 1s cubic-bezier(.2, .8, .2, 1) backwards 2.1s; }
+  @keyframes p4m-fadeup { from { opacity: 0; transform: translateY(14px); } }
+  /* 街並みの線画: 下からそっと */
+  .p4m .p4m-street img { animation: p4m-street 1.6s cubic-bezier(.2, .8, .2, 1) backwards .2s; }
+  @keyframes p4m-street { from { opacity: 0; translate: 0 18px; } }
+  /* 写真のブロブ 8 枚: スタガー + ポップイン(オーバーシュート) */
+  .p4m .p4m-blobw { animation: p4m-pop 1s cubic-bezier(.34, 1.56, .64, 1) backwards; animation-delay: calc(.15s + var(--i) * .1s); }
+  @keyframes p4m-pop { from { opacity: 0; transform: scale(.35); } }
+  /* 呼吸: ごく小さく拡大縮小(最大 1.2%・写真ごとに周期をずらす)。登場が終わってから始まる */
+  .p4m .p4m-breath { animation: p4m-breath 6s ease-in-out infinite alternate; animation-delay: calc(1.9s + var(--b) * .55s); }
+  @keyframes p4m-breath { from { transform: scale(1); } to { transform: scale(1.012); } }
+  /* 札: 写真が出たあとにマスクトランジション(縦札は上から下へ、横札は左から右へ) */
+  .p4m .p4m-label { animation: p4m-mask-v .75s cubic-bezier(.65, 0, .25, 1) backwards; animation-delay: calc(.95s + var(--li) * .1s); }
+  .p4m .p4-label-h { animation-name: p4m-mask-h; }
+  @keyframes p4m-mask-v { from { opacity: 0; clip-path: inset(0 0 100% 0); } to { opacity: 1; clip-path: inset(-8px); } }
+  @keyframes p4m-mask-h { from { opacity: 0; clip-path: inset(0 100% 0 0); } to { opacity: 1; clip-path: inset(-8px); } }
+  /* 中央の丸い札: ポップイン + ゆっくり浮かぶ */
+  .p4m .p4m-badge { animation: p4m-badge 1.1s cubic-bezier(.34, 1.56, .64, 1) backwards 1.5s; }
+  @keyframes p4m-badge { from { opacity: 0; transform: scale(.5) rotate(-14deg); } }
+  .p4m .p4m-float { animation: p4m-float 5.5s ease-in-out infinite alternate; animation-delay: 2.7s; }
+  @keyframes p4m-float { from { transform: translateY(0); } to { transform: translateY(-4px); } }
+  .p4m.p4m-paused .p4m-breath, .p4m.p4m-paused .p4m-float { animation-play-state: paused; }
+
+  /* ---- スクロールで出てくる(.p4m-on は動きが使えるときだけ付く) ---- */
+  .p4m-on .p4m-r { opacity: 0; translate: 0 26px; transition: opacity .9s ease, translate 1s cubic-bezier(.2, .8, .2, 1), scale 1s cubic-bezier(.2, .8, .2, 1); transition-delay: var(--d, 0s); }
+  .p4m-on .p4-cat.p4m-r, .p4m-on .p4-scene.p4m-r { translate: 0 34px; scale: .94; } /* 丸い写真: スタガーでフェードアップ */
+  .p4m-on .p4-story-img.p4m-r { translate: 34px 0; }
+  .p4m-on .p4-blue.p4m-r { translate: 0 30px; scale: .97; }
+  .p4m-on .p4-city.p4m-r { translate: 0 24px; scale: .96; }
+  .p4m-on .p4m-in .p4m-r, .p4m-on .p4m-r.p4m-in { opacity: 1; translate: 0 0; scale: 1; }
+  /* 各段の見出し: マスクで左から */
+  .p4m-on .p4m-mask { clip-path: inset(0 100% 0 0); translate: -16px 0; transition: clip-path 1.1s cubic-bezier(.65, 0, .2, 1), translate 1.1s cubic-bezier(.2, .8, .2, 1); }
+  .p4m-on .p4m-in .p4m-mask { clip-path: inset(-10px -30px -10px -10px); translate: 0 0; }
+  /* スクロール中だけ専用の層に載せる(止まったときは元の描画と同じにするため) */
+  .p4m.p4m-scrolled .p4m-street, .p4m.p4m-scrolled .p4m-collage, .p4m.p4m-scrolled .p4m-par { will-change: transform; }
+}
+
+/* ---- ホバー(マウスのときだけ) ---- */
+@media (hover: hover) and (pointer: fine) {
+  .p4m-tilt { transition: transform .35s cubic-bezier(.2, .8, .2, 1); }
+  .p4m-blobw.p4m-hov .p4m-tilt { transform: perspective(900px) rotateX(var(--rx, 0deg)) rotateY(var(--ry, 0deg)) scale(1.035); }
+  .p4m-blobw.p4m-hov .p4m-shadow { opacity: 1; transform: translateY(16px); }
+  .p4m-img { transition: transform .35s cubic-bezier(.2, .8, .2, 1); }
+  .p4m-hov .p4m-img { transform: perspective(700px) rotateX(var(--rx, 0deg)) rotateY(var(--ry, 0deg)) scale(1.05); }
+  .p4m-hov .p4m-img::after { opacity: 1; }
+  .p4m .p4-btn svg { transition: transform .35s cubic-bezier(.2, .8, .2, 1); }
+  .p4m .p4-btn:hover svg { transform: translateX(6px); }
+}
+
+/* 動きを減らす設定: 動かさず、今と同じ見た目で出す */
+@media (prefers-reduced-motion: reduce) {
+  .p4m *, .p4m *::before, .p4m *::after { animation: none !important; transition: none !important; }
+}
