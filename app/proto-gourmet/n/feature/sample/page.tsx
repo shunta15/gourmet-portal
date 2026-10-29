@@ -1,10 +1,11 @@
 import Shell from "@/components/portal/gnoren/common/Shell";
+import FeatureArticle from "@/components/portal/gnoren/feature/FeatureArticle";
 
-// 仮の置き場(土台)。ページ担当が中身を作り直す。店の特集記事(見本 4)
+// 店の特集記事(見本 4)。中身と CSS は components/portal/gnoren/feature/
 export default function Page() {
   return (
     <Shell page="feature">
-      <main style={{ minHeight: "60vh", padding: "120px 24px 80px", textAlign: "center" }}>店の特集記事(見本 4)</main>
+      <FeatureArticle />
     </Shell>
   );
 }
