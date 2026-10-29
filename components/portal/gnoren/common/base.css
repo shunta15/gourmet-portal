@@ -80,7 +80,7 @@ body:has(.gn-root) > .cursor-dot, body:has(.gn-root) > .cursor-ring { display: n
 .gn-sh { display: flex; align-items: baseline; flex-wrap: wrap; gap: 4px calc(var(--u) * 14); }
 .gn-sh-title { font-family: var(--gn-f-mincho); font-weight: 600; font-size: var(--gn-h-fs, calc(var(--u) * 24)); letter-spacing: .08em; line-height: 1.3; color: #1f1a17; }
 .gn-sh-lead { font-size: max(11px, calc(var(--u) * 11)); color: var(--gn-muted); letter-spacing: .02em; }
-.gn-sh-more { margin-left: auto; display: inline-flex; align-items: center; gap: calc(var(--u) * 6); font-size: max(11px, calc(var(--u) * 10.5)); color: var(--gn-terracotta); letter-spacing: .08em; border-bottom: 1px solid currentColor; padding-bottom: calc(var(--u) * 1.5); white-space: nowrap; }
+.gn-root .gn-sh-more { margin-left: auto; display: inline-flex; align-items: center; gap: calc(var(--u) * 6); font-size: max(11px, calc(var(--u) * 10.5)); color: var(--gn-terracotta); letter-spacing: .08em; border-bottom: 1px solid currentColor; padding-bottom: calc(var(--u) * 1.5); white-space: nowrap; }
 .gn-sh-more svg { width: calc(var(--u) * 9); min-width: 9px; height: auto; }
 
 /* ───────── ヘッダー(PC) ───────── */
@@ -128,7 +128,7 @@ body:has(.gn-root) > .cursor-dot, body:has(.gn-root) > .cursor-ring { display: n
   .gn-hdr { position: sticky; height: 56px; background: rgba(250, 249, 245, .97); border-bottom: 1px solid var(--gn-line); backdrop-filter: blur(6px); }
   .gn-hdr-shadow { display: none; }
   .gn-hdr-in { display: flex; align-items: center; justify-content: space-between; padding-left: 16px; padding-right: 6px; }
-  .gn-logo { position: static; align-items: center; gap: 8px; }
+  .gn-logo { position: static; align-items: center; gap: 8px; min-height: 44px; }
   .gn-logo-mark { width: 28px; margin-top: 0; }
   .gn-logo-name { font-size: 17px; line-height: 20px; }
   .gn-logo-tag { font-size: 8px; line-height: 10px; margin-top: 2px; letter-spacing: .1em; }
@@ -148,7 +148,7 @@ body:has(.gn-root) > .cursor-dot, body:has(.gn-root) > .cursor-ring { display: n
 
   .gn-sh-title { font-size: var(--gn-h-fs, 22px); }
   .gn-sh-lead { font-size: 13px; flex-basis: 100%; order: 3; }
-  .gn-sh-more { font-size: 13px; min-height: 44px; align-items: center; border-bottom: 0; text-decoration: underline; text-underline-offset: 4px; padding-bottom: 0; }
+  .gn-root .gn-sh-more { font-size: 13px; min-height: 44px; align-items: center; border-bottom: 0; text-decoration: underline; text-underline-offset: 4px; padding-bottom: 0; }
   .gn-sh-more svg { width: 12px; }
 
   .gn-foot { padding-block: 28px 24px; }
