@@ -177,3 +177,46 @@
   .pl-root .pl-sw-blue { width: auto; min-height: 0; margin: 36px 20px 0; border-radius: 40px; padding: 32px 24px; flex-direction: column; align-items: flex-start; justify-content: flex-start; gap: 16px; }
   .pl-root .pl-sw-h4 { font-size: 20px; }
 }
+
+/* ───── スマホ最適化(2026-10-29): 900px 以下だけ。PC は変わらない。配置・部品・文言・写真・色は変えず、文字の大きさ・押す範囲・余白だけ ───── */
+@media (max-width: 900px) {
+  /* 特集記事 */
+  .pl-root .pl-feat-btn { height: 48px; font-size: 14px; }
+  /* 特集の大きな札: PC の座標を縮めると字が 7〜9px になるので、写真の上に文字を下から積む形にして字を読める大きさに */
+  .pl-root .pl-fmain { aspect-ratio: auto; min-height: 400px; display: flex; flex-direction: column; justify-content: flex-end; align-items: flex-start; padding: 22px 20px; overflow: hidden; width: min(100%, 600px); }
+  .pl-root .pl-fmain .pl-feat-main { left: 0; top: 0; width: 100%; height: 100%; }
+  .pl-root .pl-fmain .pl-shade { background: linear-gradient(0deg, rgba(24, 14, 6, .8) 0, rgba(24, 14, 6, .55) 55%, rgba(24, 14, 6, .1) 100%); }
+  .pl-root .pl-fmain .pl-sptag { position: relative; left: auto; top: auto; width: auto; height: auto; padding: 4px 12px; font-size: 12px; z-index: 1; }
+  .pl-root .pl-fmain .pl-feat-mh { position: relative; left: auto; top: auto; z-index: 1; margin-top: 10px; font-size: 21px; line-height: 1.45; white-space: normal; }
+  .pl-root .pl-fmain .pl-feat-mp { position: relative; left: auto; top: auto; z-index: 1; margin-top: 10px; font-size: 13px; line-height: 1.75; white-space: normal; }
+  .pl-root .pl-fmain .pl-feat-mp br { display: none; }
+  .pl-root .pl-fmain .pl-viewmore { position: relative; left: auto; top: auto; z-index: 1; margin-top: 12px; font-size: 13px; line-height: 1.4; gap: 10px; white-space: nowrap; }
+  .pl-root .pl-fmain .pl-cover { left: 0; top: 0; width: 100%; height: 100%; }
+  .pl-root .pl-subtag { font-size: 11px; height: 22px; }
+  .pl-root .pl-fc-h { font-size: 14.5px; }
+  .pl-root .pl-fc-p { font-size: 12px; line-height: 1.6; }
+  .pl-root .pl-fs { grid-template-columns: 40% 1fr; }
+  /* 店舗紹介の欄 */
+  .pl-root .pl-about-c { margin-top: 18px; }
+  /* 新着情報 */
+  .pl-root .pl-news-btn { height: 48px; font-size: 13px; }
+  .pl-root .pl-nd { font-size: 12px !important; }
+  .pl-root .pl-chip, .pl-root .pl-chip-long { font-size: 11px; padding: 2px 9px; }
+  .pl-root .pl-nt { font-size: 14px !important; line-height: 1.55 !important; }
+  .pl-root .pl-newsrow { padding: 14px 0; }
+  .pl-root .pl-autumn { width: min(66%, 207px); }
+  /* 新しく載ったお店: 写真・字を大きく(親指で押しやすい 96px の高さ) */
+  .pl-root .pl-nsh { gap: 12px; }
+  .pl-root .pl-nsh-c { grid-template-columns: 124px minmax(0, 1fr); min-height: 96px; }
+  .pl-root .pl-nsh-c img { width: 124px; height: 93px; }
+  .pl-root .pl-nsh-m { height: 22px; }
+  .pl-root .pl-nsh-chip { font-size: 11px; }
+  .pl-root .pl-nsh-town { font-size: 12px; }
+  .pl-root .pl-nsh-n { font-size: 14px; line-height: 20px; height: 40px; word-break: auto-phrase; line-break: strict; }
+  .pl-root .pl-sw-h4 { font-size: 21px; }
+}
+/* 600〜900px(横向きなど): 細長いボタンを幅いっぱいに伸ばさない */
+@media (min-width: 600px) and (max-width: 900px) {
+  .pl-root .pl-feat-btn, .pl-root .pl-news-btn { width: 100%; max-width: 420px; }
+  .pl-root .pl-news-btn { margin-left: 16px; }
+}

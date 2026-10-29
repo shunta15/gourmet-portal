@@ -171,7 +171,7 @@ body:has(.p4-page) > .cursor-dot, body:has(.p4-page) > .cursor-ring { display: n
   .p4-soc { margin-left: auto; }
 }
 /* スマホ縦(と、縦が高い幅 859px 以下の窓)だけ、ヒーローを縦に積む。スマホ横向き(縦 520px 以下)は PC と同じ横の組みを --u で縮めて使う */
-@media (max-width: 859px) and (orientation: portrait), (max-width: 859px) and (min-height: 521px) {
+@media (max-width: 859px) {
   .p4-page { --u: min(1.1px, calc((100vw - 8px) / 717)); }
   .p4-hero { width: auto; height: auto; margin: 8px 0 0; padding: 0; }
   .p4-hero-text { position: static; width: auto; height: auto; padding: 8px var(--wrap) 0; }
@@ -207,3 +207,44 @@ body:has(.p4-page) > .cursor-dot, body:has(.p4-page) > .cursor-ring { display: n
   .p4-about { padding-right: var(--wrap); }
 }
 .p4-foot .p4-fav { margin-left: 0; }
+
+/* ───── スマホ最適化(2026-10-29): 幅 859px 以下だけ。PC(860px 以上)は何も変わらない。配置・部品・文言・写真・色は変えず、文字の大きさ・押す範囲・並べ方・余白だけ ───── */
+@media (max-width: 859px) {
+  /* ヘッダー: ロゴとメニューのボタンを親指で押せる大きさ(44px 以上)に。見た目の大きさは変えず押す範囲だけ広げる */
+  .p4-logo { padding: 9px 0; margin: -9px 0; }
+  .p4-burger { display: flex; flex-direction: column; justify-content: center; align-items: center; width: 44px; height: 44px; margin-right: -11px; }
+  .p4-burger i { width: 22px; flex: none; margin: 2.5px 0; }
+  .p4-menu-list { top: 52px; right: 12px; max-height: calc(100svh - 64px); overflow-y: auto; overscroll-behavior: contain; padding: 8px 6px; }
+  .p4-menu-list a { padding: 0 16px; min-height: 44px; display: flex; align-items: center; font-size: 15px; }
+  /* ヒーローの札・丸い札: 字は 10.5px 以上(小さい画面で 9px になっていた)。見た目の札の大きさはそのままに、押せる範囲だけ外へ広げる */
+  .p4-label { font-size: max(10.5px, calc(var(--u) * 14)); }
+  .p4-label::after { content: ""; position: absolute; inset: -12px; }
+  .p4-badge-t { font-size: max(10.5px, calc(var(--u) * 15)); line-height: max(13.5px, calc(var(--u) * 22)); }
+  /* 文の折り返し: 1 字だけ・助詞だけ次の行に落ちないよう整える */
+  .p4-h2, .p4-h3, .p4-h4, .p4-sub, .p4-small, .p4-lead { word-break: auto-phrase; line-break: strict; }
+  .p4-h3, .p4-h4, .p4-sub, .p4-small { text-wrap: balance; }
+  .p4-sub { font-size: 14px; line-height: 1.8; }
+  /* ボタン */
+  .p4-btn { min-height: 48px; }
+  /* 8 つのカテゴリー: 小さい画面では 2 列(4 列だと写真が 73px・「アクティビティ」が列からはみ出して写真の大きさがそろわなかった) */
+  .p4-cat { min-width: 0; }
+  .p4-cat-ja { font-size: 14px; }
+  /* 特集・店舗紹介の欄のフッター */
+  .p4-fnav { gap: 0 22px; }
+  .p4-fnav a { display: inline-flex; align-items: center; min-height: 44px; padding: 0 4px; margin: 0 -4px; font-size: 14px; }
+  .p4-page .p4-foot { gap: 6px 16px; padding-top: 22px; padding-bottom: 4px; }
+  .p4-contact { padding-bottom: 24px !important; }
+  .p4-contact a { display: inline-block; padding: 12px 0; font-size: 13px; }
+}
+@media (max-width: 599px) {
+  .p4-cats { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 28px 18px; max-width: 420px; }
+  .p4-cat-ja { font-size: 15px; margin-top: 10px; }
+  .p4-cat img { aspect-ratio: 113 / 121; }
+}
+@media (max-width: 380px) {
+  .p4-h2:not(.p4-sp-h) { font-size: 20px; }
+}
+/* 561〜859px(横向きのスマホ・タブレット): 街並みの線画は中央に置き、左右の端を薄く消す(560px の幅で急に切れて見えないように) */
+@media (min-width: 561px) and (max-width: 859px) {
+  .p4-street { margin-left: auto; margin-right: auto; -webkit-mask-image: linear-gradient(to right, transparent 0, #000 10%, #000 90%, transparent 100%); mask-image: linear-gradient(to right, transparent 0, #000 10%, #000 90%, transparent 100%); }
+}
