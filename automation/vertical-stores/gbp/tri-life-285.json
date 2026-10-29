@@ -1,0 +1,32 @@
+{
+  "tab": "トリニティアポ",
+  "tabEn": "tri-life",
+  "row": 285,
+  "sheet": {
+    "name": "横山不動尊",
+    "address": "",
+    "url": "https://www.google.com/maps/search/?api=1&query=%E6%A8%AA%E5%B1%B1%E4%B8%8D%E5%8B%95%E5%B0%8A%20022-569-2249%20%E3%80%92986-0402%20%E5%AE%AE%E5%9F%8E%E7%9C%8C%E7%99%BB%E7%B1%B3%E5%B8%82%E6%B4%A5%E5%B1%B1%E7%94%BA%E6%A8%AA%E5%B1%B1%E5%AD%97%E6%9C%AC%E7%94%BA3",
+    "type": "寺",
+    "d1": "",
+    "d2": ""
+  },
+  "urlKind": "mapsApi",
+  "route": "第1段(verify-gbp.mjs)で確認済み",
+  "verdict": "一致",
+  "verdictReason": "手がかり: 店名＋電話。電話が一致／店名: exact(シート「横山不動尊」/ マップ「横山不動尊 （白魚山 大徳寺）」)／住所(シート): none・町名までがちがう（シート:宮城県登米市津山町横山字本町 / マップ:宮城県登米市津山町横山本町）",
+  "place": {
+    "name": "横山不動尊 （白魚山 大徳寺）",
+    "address": "宮城県登米市津山町横山本町３",
+    "category": "仏教寺院",
+    "lat": 38.6317181,
+    "lng": 141.3488613,
+    "gbpUrl": "https://maps.google.com/?cid=7878324697828876110",
+    "phone": "0225-69-2249",
+    "website": "https://daitokuji.net/",
+    "hours": null,
+    "reserveLinks": [],
+    "statusSignals": [],
+    "closedSignal": false
+  },
+  "fetchedAt": "2026-10-29T06:35:17.196Z"
+}

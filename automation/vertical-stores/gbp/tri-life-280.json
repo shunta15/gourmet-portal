@@ -1,0 +1,32 @@
+{
+  "tab": "トリニティアポ",
+  "tabEn": "tri-life",
+  "row": 280,
+  "sheet": {
+    "name": "當行寺",
+    "address": "",
+    "url": "https://www.google.com/maps/search/?api=1&query=%E7%95%B6%E8%A1%8C%E5%AF%BA%20053-122-0667%20%E3%80%92441-3421%20%E6%84%9B%E7%9F%A5%E7%9C%8C%E7%94%B0%E5%8E%9F%E5%B8%82%E7%94%B0%E5%8E%9F%E7%94%BA%E6%9C%AC%E7%94%BA%EF%BC%99",
+    "type": "寺",
+    "d1": "",
+    "d2": ""
+  },
+  "urlKind": "mapsApi",
+  "route": "第1段(verify-gbp.mjs)で確認済み",
+  "verdict": "一致",
+  "verdictReason": "手がかり: 店名＋電話＋住所(番地まで)。電話が一致／店名: contains(シート「當行寺」/ マップ「真浄山當行寺」)／住所(シート): exact・町名・番地とも一致",
+  "place": {
+    "name": "真浄山當行寺",
+    "address": "愛知県田原市田原町本町９",
+    "category": "仏教寺院",
+    "lat": 34.670517,
+    "lng": 137.265906,
+    "gbpUrl": "https://maps.google.com/?cid=6785947569017705556",
+    "phone": "0531-22-0667",
+    "website": "https://hotokami.jp/area/aichi/Hmrtp/Hmrtpty/Dgrgs/75590/",
+    "hours": null,
+    "reserveLinks": [],
+    "statusSignals": [],
+    "closedSignal": false
+  },
+  "fetchedAt": "2026-10-29T06:32:22.131Z"
+}

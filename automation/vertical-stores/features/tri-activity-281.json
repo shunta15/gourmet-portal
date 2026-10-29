@@ -1,0 +1,305 @@
+{
+  "key": "tri-activity-281",
+  "vertical": "activity",
+  "storeName": "花巻スポーツランド(北上川フィールドライフクラブ)",
+  "article": {
+    "id": "花巻スポーツランド(北上川フィールドライフクラブ)",
+    "no": "",
+    "articleType": "guide",
+    "kicker": "HANAMAKI SPORTS LAND HANAMAKI",
+    "title": "岩手県花巻市・花巻スポーツランド。北上川のラフティングと十二丁目沼のカヌー、バギー、スノーモービルの体験",
+    "titleHTML": "岩手県花巻市十二丁目の体験フィールド<br><em>花巻スポーツランド</em>のラフティング・カヌー・バギー・スノーモービル",
+    "subtitle": "海・川 / 岩手県花巻市 / 北上川のラフティングとカヌー体験",
+    "lede": "岩手県花巻市十二丁目にある花巻スポーツランド(北上川フィールドライフクラブ)は、北上川でのラフティングと十二丁目沼でのカヌーを中心に、バギー・ミニバイクや冬季のスノーモービルまで扱う体験施設だ。",
+    "date": "2026-10-29",
+    "reading": "",
+    "author": "マチノワ編集部",
+    "heroImage": "/_portal/vshops/tri-activity-281/g03.jpg",
+    "ogImage": "/_portal/vshops/tri-activity-281/g03.jpg",
+    "ranking": [
+      {
+        "rank": "POINT 01",
+        "rankNum": 1,
+        "name": "イギリス海岸から6km、北上川を下るラフティング",
+        "cuisine": "ラフティング",
+        "area": "花巻市",
+        "purpose": "川下りの体験内容を知りたい人へ",
+        "desc": "北上川に沿って、イギリス海岸から6kmの区間を下るラフティングツアー。広い川幅のため流れはゆったりだが、時には急な流れもあり、景色の変化を楽しみながら進む。4歳以上の子どもから参加でき、地元の自然を知るインストラクターが同行する。",
+        "images": [],
+        "specs": [
+          {
+            "k": "コース",
+            "v": "イギリス海岸から6km・北上川を下る"
+          },
+          {
+            "k": "対象年齢",
+            "v": "4歳以上"
+          }
+        ]
+      },
+      {
+        "rank": "POINT 02",
+        "rankNum": 2,
+        "name": "十二丁目沼で楽しむ、安定したカヌー体験",
+        "cuisine": "カヌー",
+        "area": "花巻市",
+        "purpose": "初めてカヌーに乗る人へ",
+        "desc": "流れのない十二丁目沼で行うカヌー体験。揺れが少ない艇のため、初めてでも安定して乗ることができ、地元を知るスタッフがガイドする。ラフティングより穏やかに、水上から花巻の自然を眺められる。",
+        "images": [
+          "/_portal/vshops/tri-activity-281/g09.jpg"
+        ],
+        "specs": [
+          {
+            "k": "場所",
+            "v": "十二丁目沼"
+          },
+          {
+            "k": "特徴",
+            "v": "流れがなく初心者でも安定"
+          }
+        ]
+      },
+      {
+        "rank": "POINT 03",
+        "rankNum": 3,
+        "name": "3kmのコースを走る、バギー・ミニバイク",
+        "cuisine": "バギー・ミニバイク",
+        "area": "花巻市",
+        "purpose": "陸のアクティビティを知りたい人へ",
+        "desc": "3輪・4輪バギーと50ccミニバイクが体験できる。ミニバイクコースは3kmに及び、小学生から参加できるビギナー向けの難易度。春は大地、冬は雪上と、時期によってコースの様子が変わる。",
+        "images": [
+          "/_portal/vshops/tri-activity-281/g08.jpg"
+        ],
+        "specs": [
+          {
+            "k": "車体",
+            "v": "3輪・4輪バギー、50ccミニバイク"
+          },
+          {
+            "k": "コース",
+            "v": "3km・小学生から参加可"
+          }
+        ]
+      },
+      {
+        "rank": "POINT 04",
+        "rankNum": 4,
+        "name": "北上川河川敷の雪原を走る、スノーモービル",
+        "cuisine": "スノーモービル",
+        "area": "花巻市",
+        "purpose": "冬季の体験を知りたい人へ",
+        "desc": "北上川河川敷の雪原でスノーモービルに挑戦できる。免許を持つガイドが監督するため、運転免許がなくても体験できる。積雪状況によっては雪上バギーに変更される場合があり、雪上カヌーや雪遊び体験も合わせて楽しめる。",
+        "images": [],
+        "specs": [
+          {
+            "k": "場所",
+            "v": "北上川河川敷の雪原"
+          },
+          {
+            "k": "条件",
+            "v": "運転免許不要・ガイドが監督"
+          }
+        ]
+      }
+    ],
+    "sideArticles": [],
+    "quote": "北上川でのラフティングと十二丁目沼でのカヌーを軸に、バギー・ミニバイクや冬季のスノーモービルまで、北上川フィールドライフクラブとして幅広い体験を扱っている。",
+    "quoteCite": "マチノワ編集部",
+    "closing": "営業時間は午前の部が9時から12時、午後の部が13時から16時。最寄りは東北本線の花巻駅、新幹線の新花巻駅、花巻空港のいずれからもタクシーで15分で、送迎の相談もできる。30名規模から300名規模までの修学旅行や体験学習の受け入れも行っている。"
+  },
+  "summary": "花巻スポーツランドの体験メニューを整理。北上川のラフティング、十二丁目沼のカヌー、バギー・ミニバイク、冬季のスノーモービルの内容と、営業時間、アクセス、団体受け入れをまとめた特集。",
+  "tags": [
+    "海・川",
+    "花巻市"
+  ],
+  "charCount": 696,
+  "facts": [
+    {
+      "claim": "住所は岩手県花巻市十二丁目1232",
+      "source": "http://www.hanamaki-sportsland.jp/access.html",
+      "quote": "岩手県花巻市十二丁目1232",
+      "checkedAt": "2026-10-29"
+    },
+    {
+      "claim": "連絡先の携帯番号は090-4476-5875",
+      "source": "http://www.hanamaki-sportsland.jp/access.html",
+      "quote": "090-4476-5875",
+      "checkedAt": "2026-10-29"
+    },
+    {
+      "claim": "営業時間は午前の部が9時から12時",
+      "source": "http://www.hanamaki-sportsland.jp/access.html",
+      "quote": "午前の部：9時～12時",
+      "checkedAt": "2026-10-29"
+    },
+    {
+      "claim": "午後の部は13時から16時",
+      "source": "http://www.hanamaki-sportsland.jp/access.html",
+      "quote": "午後の部：13時～16時",
+      "checkedAt": "2026-10-29"
+    },
+    {
+      "claim": "花巻駅・新花巻駅からタクシーで15分",
+      "source": "http://www.hanamaki-sportsland.jp/access.html",
+      "quote": "花巻駅(東北本線)／新花巻駅(新幹線)よりタクシーで15分",
+      "checkedAt": "2026-10-29"
+    },
+    {
+      "claim": "花巻空港からタクシーで15分",
+      "source": "http://www.hanamaki-sportsland.jp/access.html",
+      "quote": "花巻空港よりタクシーで15分",
+      "checkedAt": "2026-10-29"
+    },
+    {
+      "claim": "ラフティングはイギリス海岸から6kmのコースを北上川沿いに下る",
+      "source": "http://www.hanamaki-sportsland.jp/activity.html",
+      "quote": "イギリス海岸から6km ラフティングツアー",
+      "checkedAt": "2026-10-29"
+    },
+    {
+      "claim": "ラフティングは4歳以上の子どもから参加できる",
+      "source": "http://www.hanamaki-sportsland.jp/activity.html",
+      "quote": "4歳以上の小さなお子さまもOK",
+      "checkedAt": "2026-10-29"
+    },
+    {
+      "claim": "カヌー体験は十二丁目沼で行う",
+      "source": "http://www.hanamaki-sportsland.jp/activity.html",
+      "quote": "十二丁目沼でゆったりカヌー体験",
+      "checkedAt": "2026-10-29"
+    },
+    {
+      "claim": "カヌーは揺れが少なく初めてでも安定して乗れる",
+      "source": "http://www.hanamaki-sportsland.jp/activity.html",
+      "quote": "カヌーは揺れが少なく、初めてでも安定して乗れます",
+      "checkedAt": "2026-10-29"
+    },
+    {
+      "claim": "バギー・ミニバイクは3kmに及ぶコースを走行できる",
+      "source": "http://www.hanamaki-sportsland.jp/activity.html",
+      "quote": "3kmにまで及ぶミニバイクコースで",
+      "checkedAt": "2026-10-29"
+    },
+    {
+      "claim": "バギー・ミニバイクは小学生から参加できる",
+      "source": "http://www.hanamaki-sportsland.jp/activity.html",
+      "quote": "小学生から参加OK",
+      "checkedAt": "2026-10-29"
+    },
+    {
+      "claim": "スノーモービルは北上川河川敷の雪原で行う",
+      "source": "http://www.hanamaki-sportsland.jp/activity.html",
+      "quote": "北上川河川敷の雪原でスノーモービル",
+      "checkedAt": "2026-10-29"
+    },
+    {
+      "claim": "スノーモービルは免許がなくても体験できる",
+      "source": "http://www.hanamaki-sportsland.jp/activity.html",
+      "quote": "免許いらずでOK",
+      "checkedAt": "2026-10-29"
+    },
+    {
+      "claim": "積雪状況により雪上バギー体験に変わる場合がある",
+      "source": "http://www.hanamaki-sportsland.jp/activity.html",
+      "quote": "積雪状況によって、雪上バギーの体験に変更",
+      "checkedAt": "2026-10-29"
+    },
+    {
+      "claim": "冬季は雪上カヌーや雪遊び体験もできる",
+      "source": "http://www.hanamaki-sportsland.jp/activity.html",
+      "quote": "雪上カヌーや雪遊び体験を家族で楽しむ",
+      "checkedAt": "2026-10-29"
+    },
+    {
+      "claim": "30名規模から300名規模までの修学旅行や体験学習の受け入れを行っている",
+      "source": "http://www.hanamaki-sportsland.jp/travel.html",
+      "quote": "修学旅行や体験学習の受け入れも行っています",
+      "checkedAt": "2026-10-29"
+    },
+    {
+      "claim": "バギー・ミニバイクはビギナーから楽しめる",
+      "source": "http://www.hanamaki-sportsland.jp/activity.html",
+      "quote": "ビギナーから楽しめます",
+      "checkedAt": "2026-10-29"
+    }
+  ],
+  "images": [
+    {
+      "path": "/_portal/vshops/tri-activity-281/g01.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9Rzpe2EejM9jOHz8_C5-1K_FpH85sqTPJ4Xl3wZCuxnMK5Q01jALeDCBczqss_a89kwyKvddnY3weBlM0QDOj34ZtCdWJ9uAgqf1ouVsHXW2cWThs-J9BeVZ5aOfyYaegwIWe9-AQ=s1200",
+      "pageUrl": "https://maps.google.com/?cid=1364850279986573193",
+      "what": "木々が水面に映る静かな沼"
+    },
+    {
+      "path": "/_portal/vshops/tri-activity-281/g02.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9QptvSAyHriCvULDMpNEp6IXqqbxpH3BgzaAEcq-0c3YM1CCkjU3yKDHKrw1dyvx8R_2sGW30C41veMixalX7s99UJX88dGYLwTl0YGRGeQXOYfBbM6-yYxlDyW-P4yvlXCp4MTDQ=s1200",
+      "pageUrl": "https://maps.google.com/?cid=1364850279986573193",
+      "what": "橋が架かる広い川の風景"
+    },
+    {
+      "path": "/_portal/vshops/tri-activity-281/g03.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9SfAv8vumN94jJEJl4P9DSHESCW_EeXVeFK4XqpXhGO0Z3JtCJKmY997o9a2om49UeNPDYQ6Orzg0_1mkYbh2xHBfbws6srSLni7GjX58zgP6mMrLVQSfI7BVqX9gDfKyRhpaLfxQ=s1200",
+      "pageUrl": "https://maps.google.com/?cid=1364850279986573193",
+      "what": "ラフティングのボートに乗る参加者たち"
+    },
+    {
+      "path": "/_portal/vshops/tri-activity-281/g04.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9QC8rptNkuOOMsCUZhi6rR2BkSTBzy-Zw79OEfbgwtlwuC4-Ue7aja9fPyX9MfDPZdd2rpME-d8udBNCPOd3UBTOmvKHbR11gRHV2IsOtGM0TxTsQAyz2_lQmGPhElKlZ54Je_FUA=s1200",
+      "pageUrl": "https://maps.google.com/?cid=1364850279986573193",
+      "what": "赤いバギーが停まる建物前の広場"
+    },
+    {
+      "path": "/_portal/vshops/tri-activity-281/g06.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9Tt5nsV3IsoPMlYp7HNZL9a73Vhv5PnuYs-IxZFS6JR57_3YlV8GPWvc5XteksmlMRG-V_d6mQyIC0fPRqoNzOxe1L8u5lukSF2WYl5UeUrZaaMs_f9yI3pjocZIRcXXMKz8Sxbn1NNFw4=s1200",
+      "pageUrl": "https://maps.google.com/?cid=1364850279986573193",
+      "what": "防寒着でSUPボードに乗る人物"
+    },
+    {
+      "path": "/_portal/vshops/tri-activity-281/g07.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9STpKBv9wCPSBtNzfnW0l_-RZZTKP6FnksbrXT-tvAMj2Ko7xf0N0wSKsEKhz5nz8yM-BMfPkAg2O9QiWke95Ixzfe2rg2dGY0DC2jMdR8d8cauopIp2n6UdXaffeh7tB0oesMmzg=s1200",
+      "pageUrl": "https://maps.google.com/?cid=1364850279986573193",
+      "what": "バギーが並ぶ建物前の通路"
+    },
+    {
+      "path": "/_portal/vshops/tri-activity-281/g08.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9RcyA9dcvKN0ZKZoKMCJZv5fwsNKzIA4mskD-OE5GpRDxaJHMLdblF8P7rFtDa2uD0qfVhK9pwWtKKpQHPaW0XnXska30BFXU1x56YN_JP3ze3BMRvGM2vd9xKxji455tWZ3v1loA=s1200",
+      "pageUrl": "https://maps.google.com/?cid=1364850279986573193",
+      "what": "雪原でバギーに乗る人物2人"
+    },
+    {
+      "path": "/_portal/vshops/tri-activity-281/g09.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9SkzOW5rXk_AgxFfzSw4JU6_TyqJ0OWwcPhz6IELpOu98Xp5Ucs2CdeYO6__8_4-dOeTBvz03UDIMbTnb9SbPNNX3sxBgoG14Dhh8cLfPvaZ6pk2clK_fy70rPMYed5ixChcBR5zQ=s1200",
+      "pageUrl": "https://maps.google.com/?cid=1364850279986573193",
+      "what": "沼でカヌーに乗る2人"
+    },
+    {
+      "path": "/_portal/vshops/tri-activity-281/g10.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9QpZtfyaSWKtn_IfvEZv8O8eqI5nZlV8xHMdPuQ1u7qPxC3-CJY53uQ8t9VtZSwnU_WxOZe2d7JR_ysGa2IQyFzdRizfuoES-tO5zbPk47BmxuJZ6sy5jIuxGdDLqZLV2p4kjE=s1200",
+      "pageUrl": "https://maps.google.com/?cid=1364850279986573193",
+      "what": "ガレージに並ぶミニバイクと車体"
+    }
+  ],
+  "sources": [
+    {
+      "label": "公式サイト(トップ)",
+      "url": "http://www.hanamaki-sportsland.jp/"
+    },
+    {
+      "label": "公式サイト(アクセス)",
+      "url": "http://www.hanamaki-sportsland.jp/access.html"
+    },
+    {
+      "label": "公式サイト(体験メニュー)",
+      "url": "http://www.hanamaki-sportsland.jp/activity.html"
+    },
+    {
+      "label": "公式サイト(旅行代理店様向け)",
+      "url": "http://www.hanamaki-sportsland.jp/travel.html"
+    },
+    {
+      "label": "Google マップ",
+      "url": "https://maps.google.com/?cid=1364850279986573193"
+    }
+  ],
+  "notes": "automation/v2/write.mjs が 2026-10-29 に作成。"
+}

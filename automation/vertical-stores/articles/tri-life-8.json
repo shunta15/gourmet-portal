@@ -1,0 +1,222 @@
+{
+  "key": "tri-life-8",
+  "headline": "佐賀市伊勢町にある神社で、伊勢神宮から分霊を受けた九州唯一のお社。境内に佐賀市指定重要文化財の石造肥前狛犬と石造肥前鳥居がある",
+  "lede": "佐賀市にある「肥前之國 伊勢神社」です。遠く天文の頃に伊勢の神宮から御分霊を奉祀し、慶長十年(1605年)に現在の伊勢町へ遷座建立されました。境内には佐賀市指定重要文化財の石造肥前狛犬と石造肥前鳥居があります。",
+  "sections": [
+    {
+      "heading": "由緒",
+      "body": "遠く天文の頃、伊勢の神宮から御分霊を奉祀し、神埼郡田手に九州唯一のお社として創建されました。その後、鍋島蛎久の地に移り、慶長十年(1605年)に現在の伊勢町へ遷座建立され、昭和15年に改築されて現在に至ります。"
+    },
+    {
+      "heading": "境内の文化財",
+      "body": "境内には佐賀市指定重要文化財の石造肥前狛犬一対と石造肥前鳥居があります。狛犬には寛文7年(江戸時代初期)の造立銘があり、鳥居には慶長12年(江戸時代初期)の造立銘があります。佐賀県指定重要文化財の古伊万里焼赤絵狛犬像一対は、現在は有田の九州陶磁文化館に展示されています。"
+    },
+    {
+      "heading": "境内社",
+      "body": "境内には伊勢恵比寿神社と英彦山神社があります。伊勢恵比寿神社は、寛保3年(江戸時代中頃)に伊勢屋町(現在の伊勢町)の氏子が石造の恵比寿様をご神体として祀ったことに始まります。英彦山神社は、昭和59年9月に石造りの御神体とお社が奉納されました。"
+    },
+    {
+      "heading": "祭事とご参拝",
+      "body": "祭事は2月10日から11日の伊勢神社大祭、6月30日の夏越し大祓、7月26日の夏季祭、10月17日の例祭、11月26日の秋季祭、12月30日の年越し大祓があります。夏越し大祓の後には茅の輪神事がおこなわれます。ご祈願は一組ずつで、事前の電話予約が必要です。佐賀駅から徒歩で約20分です。"
+    }
+  ],
+  "menus": [
+    {
+      "name": "家内安全"
+    },
+    {
+      "name": "商売繁盛"
+    },
+    {
+      "name": "五穀豊穣"
+    },
+    {
+      "name": "安産祈願"
+    },
+    {
+      "name": "子宝祈願"
+    },
+    {
+      "name": "初宮参り"
+    },
+    {
+      "name": "七五三参り"
+    },
+    {
+      "name": "厄入り・厄晴れ"
+    }
+  ],
+  "tags": [
+    {
+      "tag": "予約制",
+      "factIndex": 19
+    }
+  ],
+  "facts": [
+    {
+      "claim": "伊勢神宮から分霊を勧請することのできたお社である",
+      "source": "https://www.isejinja.or.jp/",
+      "quote": "分霊(ぶんれい)を勧請(かんじょう)することのできたお社",
+      "checkedAt": "2026-10-29"
+    },
+    {
+      "claim": "神埼郡田手に九州唯一のお社として創建された",
+      "source": "https://www.isejinja.or.jp/keidai/",
+      "quote": "神埼郡田手に九州唯一のお社ができ",
+      "checkedAt": "2026-10-29"
+    },
+    {
+      "claim": "慶長十年(1605年)に現在の伊勢町へ遷座建立された",
+      "source": "https://www.isejinja.or.jp/keidai/",
+      "quote": "慶長十年(西暦1605年)に遷座建立され",
+      "checkedAt": "2026-10-29"
+    },
+    {
+      "claim": "昭和15年に改築された",
+      "source": "https://www.isejinja.or.jp/keidai/",
+      "quote": "昭和15年紀元二千六百年を記念して改築され",
+      "checkedAt": "2026-10-29"
+    },
+    {
+      "claim": "佐賀市指定重要文化財の石造肥前狛犬一対がある",
+      "source": "https://www.isejinja.or.jp/keidai/",
+      "quote": "佐賀市指定重要文化財 石像肥前狛犬 一対",
+      "checkedAt": "2026-10-29"
+    },
+    {
+      "claim": "狛犬には寛文7年(江戸時代初期)の造立銘がある",
+      "source": "https://www.isejinja.or.jp/keidai/",
+      "quote": "寛文7年(江戸時代初期)と造立銘があるため",
+      "checkedAt": "2026-10-29"
+    },
+    {
+      "claim": "佐賀市指定重要文化財の伊勢神社石造肥前鳥居がある",
+      "source": "https://www.isejinja.or.jp/keidai/",
+      "quote": "佐賀市指定重要文化財 伊勢神社石造肥前鳥居",
+      "checkedAt": "2026-10-29"
+    },
+    {
+      "claim": "鳥居には慶長12年(江戸時代初期)の造立銘がある",
+      "source": "https://www.isejinja.or.jp/keidai/",
+      "quote": "慶長12年(江戸時代初期)の造立銘があり",
+      "checkedAt": "2026-10-29"
+    },
+    {
+      "claim": "佐賀県指定重要文化財の古伊万里焼赤絵狛犬像一対は現在は有田の九州陶磁文化館に展示されている",
+      "source": "https://www.isejinja.or.jp/keidai/",
+      "quote": "有田の九州陶磁文化舘に展示",
+      "checkedAt": "2026-10-29"
+    },
+    {
+      "claim": "伊勢恵比寿神社は伊勢屋町の氏子が石造の恵比寿様をご神体として境内に祀ったことに始まる",
+      "source": "https://www.isejinja.or.jp/keidai/",
+      "quote": "石造の恵比寿様をご神体として伊勢神社境内にお祀りした",
+      "checkedAt": "2026-10-29"
+    },
+    {
+      "claim": "英彦山神社は昭和59年9月に石造りの御神体とお社が奉納された",
+      "source": "https://www.isejinja.or.jp/keidai/",
+      "quote": "昭和59年9月に伊勢神社境内に石造りの御神体とお社を奉納",
+      "checkedAt": "2026-10-29"
+    },
+    {
+      "claim": "2月10日に伊勢神社大祭の前夜祭(火入れ式)がある",
+      "source": "https://www.isejinja.or.jp/gyoji/",
+      "quote": "伊勢神社大祭 前夜祭(火入れ式)",
+      "checkedAt": "2026-10-29"
+    },
+    {
+      "claim": "2月11日に伊勢神社大祭がある",
+      "source": "https://www.isejinja.or.jp/gyoji/",
+      "quote": "伊勢神社大祭",
+      "checkedAt": "2026-10-29"
+    },
+    {
+      "claim": "6月30日に夏越し大祓がある",
+      "source": "https://www.isejinja.or.jp/gyoji/",
+      "quote": "夏越し 大祓",
+      "checkedAt": "2026-10-29"
+    },
+    {
+      "claim": "7月26日に伊勢神社夏季祭がある",
+      "source": "https://www.isejinja.or.jp/gyoji/",
+      "quote": "伊勢神社 夏季祭(※午後6時より盆踊り)",
+      "checkedAt": "2026-10-29"
+    },
+    {
+      "claim": "10月17日に伊勢神社例祭がある",
+      "source": "https://www.isejinja.or.jp/gyoji/",
+      "quote": "伊勢神社 例祭",
+      "checkedAt": "2026-10-29"
+    },
+    {
+      "claim": "11月26日に伊勢神社秋季祭がある",
+      "source": "https://www.isejinja.or.jp/gyoji/",
+      "quote": "伊勢神社 秋季祭",
+      "checkedAt": "2026-10-29"
+    },
+    {
+      "claim": "12月30日に年越し大祓がある",
+      "source": "https://www.isejinja.or.jp/gyoji/",
+      "quote": "年越し大祓",
+      "checkedAt": "2026-10-29"
+    },
+    {
+      "claim": "夏越し大祓の後に茅の輪神事がおこなわれる",
+      "source": "https://www.isejinja.or.jp/gyoji/",
+      "quote": "夏越しの大祓の後に茅の輪神事が行われます",
+      "checkedAt": "2026-10-29"
+    },
+    {
+      "claim": "ご祈願は御一組ずつで事前の予約が必要",
+      "source": "https://www.isejinja.or.jp/gokigan/",
+      "quote": "必ず事前に、ご予約くださいますようお願い申し上げます",
+      "checkedAt": "2026-10-29"
+    },
+    {
+      "claim": "佐賀駅から徒歩で約20分",
+      "source": "https://www.isejinja.or.jp/",
+      "quote": "佐賀駅から徒歩で約20分",
+      "checkedAt": "2026-10-29"
+    },
+    {
+      "claim": "佐賀空港から車で約30分",
+      "source": "https://www.isejinja.or.jp/",
+      "quote": "佐賀空港から車で約30分",
+      "checkedAt": "2026-10-29"
+    },
+    {
+      "claim": "ご祈願には家内安全などの種類がある",
+      "source": "https://www.isejinja.or.jp/gokigan/ryokin/",
+      "quote": "家内安全",
+      "checkedAt": "2026-10-29"
+    }
+  ],
+  "sources": [
+    {
+      "label": "公式サイト",
+      "url": "https://www.isejinja.or.jp/"
+    },
+    {
+      "label": "公式サイト(境内のご案内)",
+      "url": "https://www.isejinja.or.jp/keidai/"
+    },
+    {
+      "label": "公式サイト(ご祈願)",
+      "url": "https://www.isejinja.or.jp/gokigan/"
+    },
+    {
+      "label": "公式サイト(ご祈願料のご案内)",
+      "url": "https://www.isejinja.or.jp/gokigan/ryokin/"
+    },
+    {
+      "label": "公式サイト(伊勢神社祭典行事)",
+      "url": "https://www.isejinja.or.jp/gyoji/"
+    },
+    {
+      "label": "Google マップ",
+      "url": "https://maps.google.com/?cid=10706446818413613327"
+    }
+  ],
+  "notes": "automation/v2/write.mjs が 2026-10-29 に claude -p --model sonnet で作成。事実の裏取り: 23/23 件(quote が出どころにあるもの)。裏取りに通らなかった facts は載せていない。"
+}

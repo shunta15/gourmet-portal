@@ -1,0 +1,32 @@
+{
+  "tab": "トリニティアポ",
+  "tabEn": "tri-life",
+  "row": 287,
+  "sheet": {
+    "name": "七寳寺",
+    "address": "",
+    "url": "https://www.google.com/maps/search/?api=1&query=%E4%B8%83%E5%AF%B3%E5%AF%BA%20079-032-0681%20%E3%80%92679-2432%20%E5%85%B5%E5%BA%AB%E7%9C%8C%E7%A5%9E%E5%B4%8E%E9%83%A1%E7%A5%9E%E6%B2%B3%E7%94%BA%E5%A4%A7%E5%B1%B1%EF%BC%91%EF%BC%91%EF%BC%90",
+    "type": "寺",
+    "d1": "",
+    "d2": ""
+  },
+  "urlKind": "mapsApi",
+  "route": "第1段(verify-gbp.mjs)で確認済み",
+  "verdict": "一致",
+  "verdictReason": "手がかり: 電話＋住所(番地まで)。電話が一致／店名: different(シート「七寳寺」/ マップ「七宝寺」)／住所(シート): exact・町名・番地とも一致",
+  "place": {
+    "name": "七宝寺",
+    "address": "兵庫県神崎郡神河町大山１１０",
+    "category": "仏教寺院",
+    "lat": 35.1063311,
+    "lng": 134.7867138,
+    "gbpUrl": "https://maps.google.com/?cid=3764437351660289654",
+    "phone": "0790-32-0681",
+    "website": "http://www.rakujyu.on.arena.ne.jp/jynrei/12shitihou.html",
+    "hours": null,
+    "reserveLinks": [],
+    "statusSignals": [],
+    "closedSignal": false
+  },
+  "fetchedAt": "2026-10-29T06:37:25.812Z"
+}

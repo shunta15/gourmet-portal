@@ -4287,6 +4287,724 @@
         ],
         "checkedAt": "2026-10-28"
       }
+    },
+    {
+      "id": "ac0029",
+      "vertical": "activity",
+      "category": "sea-river",
+      "name": "有限会社自然派企画",
+      "pref": "kyoto",
+      "cityName": "京都市北区",
+      "address": "京都府京都市北区小山元町55",
+      "lat": 35.0494508,
+      "lng": 135.7565886,
+      "phone": "090-3719-4238",
+      "url": "https://www.shizenha.com/",
+      "website": "https://www.shizenha.com/",
+      "mapUrl": "https://maps.google.com/?cid=16291200231391355441",
+      "image": "/_portal/vshops/tri-activity-279/g01.jpg",
+      "images": [
+        "/_portal/vshops/tri-activity-279/g01.jpg",
+        "/_portal/vshops/tri-activity-279/g03.jpg",
+        "/_portal/vshops/tri-activity-279/g04.jpg",
+        "/_portal/vshops/tri-activity-279/g05.jpg",
+        "/_portal/vshops/tri-activity-279/g07.jpg",
+        "/_portal/vshops/tri-activity-279/g08.jpg",
+        "/_portal/vshops/tri-activity-279/g10.jpg",
+        "/_portal/vshops/tri-activity-279/s01.jpg",
+        "/_portal/vshops/tri-activity-279/s02.jpg",
+        "/_portal/vshops/tri-activity-279/s03.jpg",
+        "/_portal/vshops/tri-activity-279/s04.jpg",
+        "/_portal/vshops/tri-activity-279/s05.jpg",
+        "/_portal/vshops/tri-activity-279/s06.jpg",
+        "/_portal/vshops/tri-activity-279/s07.jpg",
+        "/_portal/vshops/tri-activity-279/s09.jpg",
+        "/_portal/vshops/tri-activity-279/s10.jpg",
+        "/_portal/vshops/tri-activity-279/s11.jpg"
+      ],
+      "photos": [
+        {
+          "path": "/_portal/vshops/tri-activity-279/g01.jpg",
+          "what": "ヘッドライトをつけて洞窟内に座るガイドと参加者",
+          "kind": "view",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-279/g03.jpg",
+          "what": "水の溜まった洞窟内を進む参加者の後ろ姿",
+          "kind": "view",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-279/g04.jpg",
+          "what": "岩壁の滝を登るキャニオニング参加者",
+          "kind": "view",
+          "width": 1200,
+          "height": 801
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-279/g05.jpg",
+          "what": "緑の渓谷の滝つぼで泳ぐ参加者",
+          "kind": "view",
+          "width": 675,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-279/g07.jpg",
+          "what": "岩に囲まれた青い滝つぼと小さく立つ参加者",
+          "kind": "view",
+          "width": 1200,
+          "height": 802
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-279/g08.jpg",
+          "what": "洞窟内の水中を進む参加者のヘッドライト",
+          "kind": "view",
+          "width": 675,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-279/g10.jpg",
+          "what": "渓流に立つ参加者とガイドの集合写真",
+          "kind": "view",
+          "width": 1200,
+          "height": 1050
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-279/s01.jpg",
+          "what": "白い岩と透き通った清流",
+          "kind": "view",
+          "width": 1280,
+          "height": 530
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-279/s02.jpg",
+          "what": "急流を下るラフティングボートと参加者",
+          "kind": "view",
+          "width": 1280,
+          "height": 530
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-279/s03.jpg",
+          "what": "氷瀑を見上げる参加者たち",
+          "kind": "view",
+          "width": 1280,
+          "height": 530
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-279/s04.jpg",
+          "what": "水しぶきの中、洞窟内を進む参加者",
+          "kind": "view",
+          "width": 1280,
+          "height": 530
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-279/s05.jpg",
+          "what": "岩壁から流れ落ちる滝と青い滝つぼ",
+          "kind": "view",
+          "width": 1280,
+          "height": 530
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-279/s06.jpg",
+          "what": "暗い洞窟内を並んで進む参加者たち",
+          "kind": "view",
+          "width": 1280,
+          "height": 530
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-279/s07.jpg",
+          "what": "白波の立つ川を下るラフティングボート",
+          "kind": "view",
+          "width": 1280,
+          "height": 618
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-279/s09.jpg",
+          "what": "渓谷を歩いて進む参加者のグループ",
+          "kind": "view",
+          "width": 1280,
+          "height": 598
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-279/s10.jpg",
+          "what": "滝つぼへ飛び込む参加者と岩壁",
+          "kind": "view",
+          "width": 1280,
+          "height": 530
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-279/s11.jpg",
+          "what": "青く澄んだ滝つぼと岩壁に囲まれた渓谷",
+          "kind": "view",
+          "width": 1280,
+          "height": 618
+        }
+      ],
+      "tags": [
+        "初心者歓迎",
+        "子連れ",
+        "雨の日"
+      ],
+      "article": {
+        "headline": "京都市北区に拠点を置き、京都・滋賀・奈良・和歌山・岡山でキャニオニングやラフティング、ケイビングなどのツアーを行う有限会社自然派企画。1999年から専業ガイドによるツアーを続けている",
+        "lede": "京都市にある「有限会社自然派企画」です。キャニオニング、シャワークライミング、ラフティング、ケイビング(洞窟探検)、ケイブスイミング、クライミングのツアーを、京都・滋賀・奈良・和歌山の関西と岡山で行っています。設立は1999年6月15日です。",
+        "sections": [
+          {
+            "heading": "行っているツアー",
+            "body": "キャニオニングとシャワークライミングは、蒼く透き通った清流にかかる小滝や天然のプールで、泳いだり飛び込んだりしながら源流を目指すツアーです。飛び込みは自由参加で、全く飛び込みをしなくても参加できます。ラフティングはゴムボートで川を下るツアーで、泳いだり岩場から飛び込んだりもできます。ケイビングは地下を探索したり洞窟で泳いだりするツアーで、トレッキングは岩場や滝を眺める場面などの見せ場を通るコースです。"
+          },
+          {
+            "heading": "開催エリアと時期",
+            "body": "ツアーは京都、滋賀、奈良、和歌山の関西と岡山を拠点に行われています。キャニオニングは夏のシーズン(5月1日から10月末)は毎日開催し、カレンダーの空白の日はご希望のコースを随時開催します。京都保津川のラフティングは、真夏以外で4名様以上集まれば随時開催しています。"
+          },
+          {
+            "heading": "参加にあたって",
+            "body": "泳げなくても基本的に参加できます。初めての参加者はLv1のコースから案内しており、小さな子ども連れの参加者には明王谷コースを案内しています。着替える施設がない場所では着替え用テントが用意され、カメラはすべてのツアーで持ち込みができます。シューズはフェルトの靴底のものを18cmから30cmまで1cm単位でレンタルしており、短パンはお尻とウェットスーツを保護する目的で必要です。"
+          },
+          {
+            "heading": "予約と天候",
+            "body": "予約は、ツアー参加Q&Aページの予約フォームから申し込みます。お問い合わせの電話は090-3719-4238です。ツアーは雨天決行ですが、川の増水などにより危険が予想される場合は中止になります。遠方から前夜や早朝に出発する場合は、出発前の電話での確認が案内されています。"
+          }
+        ],
+        "menus": [
+          {
+            "name": "キャニオニング"
+          },
+          {
+            "name": "シャワークライミング"
+          },
+          {
+            "name": "ラフティング"
+          },
+          {
+            "name": "ケイビング"
+          },
+          {
+            "name": "ケイブスイミング"
+          },
+          {
+            "name": "クライミング"
+          },
+          {
+            "name": "トレッキング"
+          }
+        ],
+        "sources": [
+          {
+            "label": "公式サイト(トップ)",
+            "url": "https://shizenha.com/"
+          },
+          {
+            "label": "公式サイト(ツアー参加Q&A)",
+            "url": "https://shizenha.com/guide/"
+          },
+          {
+            "label": "公式サイト(会社概要)",
+            "url": "https://shizenha.com/about/"
+          },
+          {
+            "label": "公式サイト(ツアー詳細)",
+            "url": "https://shizenha.com/tours/"
+          },
+          {
+            "label": "Google マップ",
+            "url": "https://maps.google.com/?cid=16291200231391355441"
+          }
+        ],
+        "checkedAt": "2026-10-29"
+      }
+    },
+    {
+      "id": "ac0030",
+      "vertical": "activity",
+      "category": "sea-river",
+      "name": "花巻スポーツランド(北上川フィールドライフクラブ)",
+      "pref": "iwate",
+      "cityName": "花巻市",
+      "address": "岩手県花巻市十二丁目1232",
+      "lat": 39.362994,
+      "lng": 141.1311517,
+      "phone": "090-4476-5875",
+      "url": "http://www.hanamaki-sportsland.jp/",
+      "website": "http://www.hanamaki-sportsland.jp/",
+      "mapUrl": "https://maps.google.com/?cid=1364850279986573193",
+      "image": "/_portal/vshops/tri-activity-281/g01.jpg",
+      "images": [
+        "/_portal/vshops/tri-activity-281/g01.jpg",
+        "/_portal/vshops/tri-activity-281/g02.jpg",
+        "/_portal/vshops/tri-activity-281/g03.jpg",
+        "/_portal/vshops/tri-activity-281/g04.jpg",
+        "/_portal/vshops/tri-activity-281/g06.jpg",
+        "/_portal/vshops/tri-activity-281/g07.jpg",
+        "/_portal/vshops/tri-activity-281/g08.jpg",
+        "/_portal/vshops/tri-activity-281/g09.jpg",
+        "/_portal/vshops/tri-activity-281/g10.jpg"
+      ],
+      "photos": [
+        {
+          "path": "/_portal/vshops/tri-activity-281/g01.jpg",
+          "what": "木々が水面に映る静かな沼",
+          "kind": "view",
+          "width": 1200,
+          "height": 675
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-281/g02.jpg",
+          "what": "橋が架かる広い川の風景",
+          "kind": "view",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-281/g03.jpg",
+          "what": "ラフティングのボートに乗る参加者たち",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-281/g04.jpg",
+          "what": "赤いバギーが停まる建物前の広場",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-281/g06.jpg",
+          "what": "防寒着でSUPボードに乗る人物",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-281/g07.jpg",
+          "what": "バギーが並ぶ建物前の通路",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-281/g08.jpg",
+          "what": "雪原でバギーに乗る人物2人",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-281/g09.jpg",
+          "what": "沼でカヌーに乗る2人",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-281/g10.jpg",
+          "what": "ガレージに並ぶミニバイクと車体",
+          "kind": "common",
+          "width": 1200,
+          "height": 900
+        }
+      ],
+      "tags": [
+        "子連れ",
+        "初心者歓迎"
+      ],
+      "article": {
+        "headline": "岩手県花巻市十二丁目にある花巻スポーツランド(北上川フィールドライフクラブ)。北上川でのラフティングや十二丁目沼でのカヌー、バギー、スノーモービルなどの体験を扱う",
+        "lede": "花巻市にある「花巻スポーツランド」です。北上川フィールドライフクラブの名前で、ラフティングやカヌー、バギー・ミニバイク、冬季はスノーモービルなどの体験を行っています。営業時間は午前の部が9時から12時、午後の部が13時から16時です。",
+        "sections": [
+          {
+            "heading": "ラフティングとカヌー",
+            "body": "北上川の流れに沿って下るラフティングは、イギリス海岸から6kmのコースで、広い川幅をゆったり進みながら時には急な流れも楽しめます。4歳以上の子どもから参加できます。十二丁目沼では、揺れの少ない艇で行うカヌー体験もあり、流れのない沼のため初めてでも安定して乗ることができます。"
+          },
+          {
+            "heading": "バギー・ミニバイクとスノーモービル",
+            "body": "3輪・4輪バギーと50ccのミニバイクは、3kmに及ぶコースで走行でき、小学生からビギナー向けに参加できます。冬季は北上川河川敷の雪原でスノーモービルに挑戦でき、免許を持つガイドが監督するため運転免許は不要です。積雪状況によって雪上バギーの体験に変わる場合があり、雪上カヌーや雪遊び体験も行っています。"
+          },
+          {
+            "heading": "アクセスと受け入れ",
+            "body": "最寄りは東北本線の花巻駅、新幹線の新花巻駅で、いずれもタクシーで15分です。花巻空港からもタクシーで15分です。営業時間は午前の部が9時から12時、午後の部が13時から16時です。30名規模から300名規模までの修学旅行や体験学習の受け入れも行っています。"
+          }
+        ],
+        "menus": [
+          {
+            "name": "ラフティング体験"
+          },
+          {
+            "name": "カヌー体験"
+          },
+          {
+            "name": "バギー＆ミニバイク"
+          },
+          {
+            "name": "スノーモービル・雪上カヌー・雪遊び"
+          }
+        ],
+        "sources": [
+          {
+            "label": "公式サイト(トップ)",
+            "url": "http://www.hanamaki-sportsland.jp/"
+          },
+          {
+            "label": "公式サイト(アクセス)",
+            "url": "http://www.hanamaki-sportsland.jp/access.html"
+          },
+          {
+            "label": "公式サイト(体験メニュー)",
+            "url": "http://www.hanamaki-sportsland.jp/activity.html"
+          },
+          {
+            "label": "公式サイト(旅行代理店様向け)",
+            "url": "http://www.hanamaki-sportsland.jp/travel.html"
+          },
+          {
+            "label": "Google マップ",
+            "url": "https://maps.google.com/?cid=1364850279986573193"
+          }
+        ],
+        "checkedAt": "2026-10-29"
+      }
+    },
+    {
+      "id": "ac0031",
+      "vertical": "activity",
+      "category": "craft",
+      "name": "スモーク工房 SATOH",
+      "pref": "miyagi",
+      "cityName": "仙台市太白区",
+      "address": "宮城県仙台市太白区袋原3丁目16-65",
+      "lat": 38.2000173,
+      "lng": 140.9131728,
+      "phone": "022-397-8393",
+      "url": "https://www.smoke-satoh.com/",
+      "website": "https://www.smoke-satoh.com/",
+      "mapUrl": "https://maps.google.com/?cid=10682613776850535541",
+      "image": "/_portal/vshops/tri-activity-288/g01.jpg",
+      "images": [
+        "/_portal/vshops/tri-activity-288/g01.jpg",
+        "/_portal/vshops/tri-activity-288/g02.jpg",
+        "/_portal/vshops/tri-activity-288/g03.jpg",
+        "/_portal/vshops/tri-activity-288/s03.jpg",
+        "/_portal/vshops/tri-activity-288/s04.jpg",
+        "/_portal/vshops/tri-activity-288/s05.jpg",
+        "/_portal/vshops/tri-activity-288/s06.jpg",
+        "/_portal/vshops/tri-activity-288/s11.jpg",
+        "/_portal/vshops/tri-activity-288/s13.jpg",
+        "/_portal/vshops/tri-activity-288/s14.jpg",
+        "/_portal/vshops/tri-activity-288/s15.jpg",
+        "/_portal/vshops/tri-activity-288/s16.jpg",
+        "/_portal/vshops/tri-activity-288/s17.jpg",
+        "/_portal/vshops/tri-activity-288/s18.jpg"
+      ],
+      "photos": [
+        {
+          "path": "/_portal/vshops/tri-activity-288/g01.jpg",
+          "what": "三角屋根の建物の外観と前の道路",
+          "kind": "exterior",
+          "width": 675,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-288/g02.jpg",
+          "what": "ハムとベーコンが並んだ盛り付けの皿",
+          "kind": "meal",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-288/g03.jpg",
+          "what": "黄色い燻製器が並ぶ作業場の室内",
+          "kind": "room",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-288/s03.jpg",
+          "what": "黄色い燻製器と窓のある作業場",
+          "kind": "room",
+          "width": 1000,
+          "height": 450
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-288/s04.jpg",
+          "what": "ハムとベーコンの盛り合わせ",
+          "kind": "meal",
+          "width": 1000,
+          "height": 450
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-288/s05.jpg",
+          "what": "ソーセージが並んだ盛り付けの皿",
+          "kind": "meal",
+          "width": 600,
+          "height": 450
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-288/s06.jpg",
+          "what": "サラダとスープ、自家製ピザの昼食",
+          "kind": "meal",
+          "width": 640,
+          "height": 480
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-288/s11.jpg",
+          "what": "テーブルと椅子が並ぶ室内",
+          "kind": "room",
+          "width": 640,
+          "height": 480
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-288/s13.jpg",
+          "what": "天井から吊るされた肉と作業台に並ぶ肉",
+          "kind": "room",
+          "width": 640,
+          "height": 420
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-288/s14.jpg",
+          "what": "計量器と調味料の缶が並ぶ作業台",
+          "width": 600,
+          "height": 450
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-288/s15.jpg",
+          "what": "カットされた赤身の肉の塊",
+          "kind": "meal",
+          "width": 600,
+          "height": 450
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-288/s16.jpg",
+          "what": "ラップに包まれた肉の塊が4つ並ぶ",
+          "kind": "meal",
+          "width": 600,
+          "height": 450
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-288/s17.jpg",
+          "what": "流水で肉を洗う手元",
+          "width": 600,
+          "height": 450
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-288/s18.jpg",
+          "what": "紙に包まれた肉を手で押さえる作業",
+          "width": 600,
+          "height": 450
+        }
+      ],
+      "tags": [
+        "駐車場あり"
+      ],
+      "article": {
+        "headline": "仙台市太白区袋原にある、ハム&ベーコンなどの燻製作りを教える少人数制の教室。受講は初日と2週間後の完成日の2日間で行われる",
+        "lede": "仙台市太白区にある「スモーク工房SATOH」です。ハム&ベーコン教室、ソーセージ教室、ピザ教室を、4名までの個人対応で開いています。すべての作業工程を体験し、自宅で作れるようアドバイスを受けられます。",
+        "sections": [
+          {
+            "heading": "教室の内容と流れ",
+            "body": "ハム&ベーコン教室の受講は、初日と2週間後の完成の日の2日間です。受講申し込みが決まると、作業の流れや作り方のポイントを説明したマニュアルが事前に自宅へ郵送されます。1日目は配合塩づくり、肉の下処理、昼食をはさんだ塩漬けまでを行い、作業時間は1〜2名で6時間前後、3〜4名で7時間前後が目安です。2日目はスモーカーでの乾燥、スモーク、ボイル、冷却までを行い、自宅で半日風乾すると完成します。"
+          },
+          {
+            "heading": "持ち物と当日の服装",
+            "body": "持参するものは、ノート、ペン、エプロン、三角巾または帽子、肉を持ち帰るためのバッグ、凍った保冷剤です。初日の生肉の下処理では暖房を使用しません。冬の時期に受講する場合は、下着など暖かい服装が必要です。"
+          },
+          {
+            "heading": "アクセスと駐車場",
+            "body": "住所は宮城県仙台市太白区袋原3丁目16-65で、JR南仙台駅から車で10分、JR仙台駅から車で35分です。駐車場は2〜3台まで対応し、車で向かう場合は事前の連絡が必要です。バスの場合は、南仙台駅から仙台市営バスに乗り「袋原中学校前」で下車します。"
+          }
+        ],
+        "menus": [
+          {
+            "name": "ハム&ベーコン教室"
+          },
+          {
+            "name": "ソーセージ教室"
+          },
+          {
+            "name": "ピザ教室"
+          }
+        ],
+        "sources": [
+          {
+            "label": "公式サイト(トップ)",
+            "url": "https://www.smoke-satoh.com/"
+          },
+          {
+            "label": "公式サイト(スモーク工房SATOHについて)",
+            "url": "https://www.smoke-satoh.com/company/"
+          },
+          {
+            "label": "公式サイト(燻製教室のご案内)",
+            "url": "https://www.smoke-satoh.com/contents/"
+          },
+          {
+            "label": "Google マップ",
+            "url": "https://maps.google.com/?cid=10682613776850535541"
+          }
+        ],
+        "checkedAt": "2026-10-29"
+      }
+    },
+    {
+      "id": "ac0032",
+      "vertical": "activity",
+      "category": "craft",
+      "name": "(有)菊池パール",
+      "pref": "mie",
+      "cityName": "伊勢市",
+      "address": "三重県伊勢市通町112-4",
+      "lat": 34.4989098,
+      "lng": 136.7406165,
+      "phone": "0596-23-2233",
+      "url": "https://kikuchipearl.com/index.html",
+      "website": "https://kikuchipearl.com/index.html",
+      "mapUrl": "https://maps.google.com/?cid=4509378631641251114",
+      "image": "/_portal/vshops/tri-activity-290/g01.jpg",
+      "images": [
+        "/_portal/vshops/tri-activity-290/g01.jpg",
+        "/_portal/vshops/tri-activity-290/g02.jpg",
+        "/_portal/vshops/tri-activity-290/g03.jpg",
+        "/_portal/vshops/tri-activity-290/g04.jpg",
+        "/_portal/vshops/tri-activity-290/g05.jpg",
+        "/_portal/vshops/tri-activity-290/g06.jpg",
+        "/_portal/vshops/tri-activity-290/g07.jpg",
+        "/_portal/vshops/tri-activity-290/g08.jpg",
+        "/_portal/vshops/tri-activity-290/g09.jpg",
+        "/_portal/vshops/tri-activity-290/g10.jpg"
+      ],
+      "photos": [
+        {
+          "path": "/_portal/vshops/tri-activity-290/g01.jpg",
+          "what": "ガラスケースに並ぶ真珠アクセサリーの陳列棚",
+          "kind": "common",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-290/g02.jpg",
+          "what": "真珠のネックレスや指輪と、開いたあこや貝",
+          "kind": "meal",
+          "width": 1200,
+          "height": 675
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-290/g03.jpg",
+          "what": "ガラスケースが並ぶ店内の売り場",
+          "kind": "common",
+          "width": 1200,
+          "height": 800
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-290/g04.jpg",
+          "what": "まな板の上で開けられたあこや貝と真珠",
+          "kind": "meal",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-290/g05.jpg",
+          "what": "黒い真珠をあしらった指輪",
+          "kind": "meal",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-290/g06.jpg",
+          "what": "開かれたあこや貝と真珠",
+          "kind": "meal",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-290/g07.jpg",
+          "what": "小さなトレーに乗せられた貝の身",
+          "kind": "meal",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-290/g08.jpg",
+          "what": "あこや貝を管理する水槽と青いネット",
+          "kind": "common",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-290/g09.jpg",
+          "what": "くしに刺された貝の身とまな板",
+          "kind": "meal",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-290/g10.jpg",
+          "what": "真珠をあしらったブローチ",
+          "kind": "meal",
+          "width": 797,
+          "height": 1200
+        }
+      ],
+      "tags": [
+        "子連れ"
+      ],
+      "article": {
+        "headline": "三重県伊勢市通町にある宝石店。生きたあこや貝から真珠を取り出す「珠出し体験」を実施し、取り出した真珠をその場でアクセサリーに加工する",
+        "lede": "伊勢市にある「菊池パール」です。昭和37年11月創業の真珠専門店で、平成27年3月に珠出し体験施設が完成しました。生きたあこや貝から自分で真珠を取り出し、その場でアクセサリーに加工して持ち帰れます。",
+        "sections": [
+          {
+            "heading": "珠出し体験の流れ",
+            "body": "水槽で２４時間管理体制のもと飼育されているあこや貝から、1つを選んで自分の手でヘラを使って開けます。真珠取り出し体験は小学1年生から参加でき、取り出した真珠はその場でペンダントやブローチ、ピンブローチなどお好きな金具に熟練の職人が加工し、その日のうちに持ち帰れます。"
+          },
+          {
+            "heading": "体験の条件",
+            "body": "珠出し体験の対象年齢は6歳以上で、小さな子どもは保護者の方と一緒に体験します。所要時間は珠出しと加工を合わせて約40分です。予約の締め切りは前日の23:00までで、電話でも申し込めます。"
+          },
+          {
+            "heading": "扱う真珠ジュエリー",
+            "body": "店内にはパールネックレスやパールブローチ、オリジナルデザインのパールジュエリーがガラスケースに並びます。真珠の珠出し体験で加工する金具は、ペンダントやブローチ、ピンブローチなど複数のデザインから選べます。"
+          },
+          {
+            "heading": "アクセスと会社概要",
+            "body": "住所は三重県伊勢市通町112-4で、車は伊勢道伊勢ICから国道23号経由で4km、5分です。電車はJR五十鈴ケ丘駅から徒歩5分の距離にあります。有限会社菊池パールは昭和37年11月の創業で、代表取締役は菊池満です。"
+          }
+        ],
+        "menus": [
+          {
+            "name": "パールネックレス"
+          },
+          {
+            "name": "パールブローチ"
+          },
+          {
+            "name": "デザインパール"
+          },
+          {
+            "name": "真珠の珠出し体験"
+          }
+        ],
+        "sources": [
+          {
+            "label": "公式サイト(トップ)",
+            "url": "https://kikuchipearl.com/index.html"
+          },
+          {
+            "label": "公式サイト(アクセス)",
+            "url": "https://kikuchipearl.com/access.html"
+          },
+          {
+            "label": "公式サイト(会社概要)",
+            "url": "https://kikuchipearl.com/company.html"
+          },
+          {
+            "label": "公式サイト(珠出し体験)",
+            "url": "https://kikuchipearl.com/trial.html"
+          },
+          {
+            "label": "Google マップ",
+            "url": "https://maps.google.com/?cid=4509378631641251114"
+          }
+        ],
+        "checkedAt": "2026-10-29"
+      }
     }
   ]
 }

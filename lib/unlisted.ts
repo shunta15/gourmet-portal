@@ -63,7 +63,11 @@ export const UNLISTED_PLACE_IDS: Readonly<Record<string, readonly string[]>> = {
     "ac0025",
     "ac0026",
     "ac0027",
-    "ac0028"
+    "ac0028",
+    "ac0029",
+    "ac0030",
+    "ac0031",
+    "ac0032"
   ],
   "sports": [
     "sp0004",
@@ -159,7 +163,15 @@ export const UNLISTED_PLACE_IDS: Readonly<Record<string, readonly string[]>> = {
     "li0089",
     "li0090",
     "li0091",
-    "li0092"
+    "li0092",
+    "li0093",
+    "li0094",
+    "li0095",
+    "li0096",
+    "li0098",
+    "li0099",
+    "li0100",
+    "li0101"
   ]
 };
 
@@ -180,7 +192,11 @@ export const UNLISTED_PLACE_FEATURE_IDS: Readonly<Record<string, readonly string
     "丸和まくら工房枕づくり体験",
     "屋久島自然案内",
     "CHP仙台サーフショップ",
-    "屋久島ダイビングガイド夢心地"
+    "屋久島ダイビングガイド夢心地",
+    "有限会社自然派企画",
+    "花巻スポーツランド(北上川フィールドライフクラブ)",
+    "スモーク工房SATOH",
+    "(有)菊池パール"
   ]
 };
 

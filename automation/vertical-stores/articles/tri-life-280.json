@@ -1,0 +1,88 @@
+{
+  "key": "tri-life-280",
+  "headline": "愛知県田原市田原町本町にある日蓮宗の寺院。御朱印の授与があり、御朱印帳への直書きにも対応している。",
+  "lede": "田原市にある「當行寺」です。日蓮宗の寺院で、読み方は「とうぎょうじ」です。御朱印の授与があり、限定の御朱印や御朱印帳への直書きもあります。",
+  "sections": [
+    {
+      "heading": "場所と宗派",
+      "body": "住所は愛知県田原市田原町本町9、電話は0531-22-0667です。宗旨は日蓮宗で、読み方は「とうぎょうじ」です。"
+    },
+    {
+      "heading": "御朱印について",
+      "body": "御朱印の授与があります。限定の御朱印や、御朱印帳への直書きもあります。御朱印の郵送対応はありません。"
+    }
+  ],
+  "menus": [
+    {
+      "name": "御朱印"
+    }
+  ],
+  "tags": [],
+  "facts": [
+    {
+      "claim": "住所は愛知県田原市田原町本町9",
+      "source": "https://hotokami.jp/area/aichi/Hmrtp/Hmrtpty/Dgrgs/75590/",
+      "quote": "愛知県田原市田原町本町９",
+      "checkedAt": "2026-10-29"
+    },
+    {
+      "claim": "電話番号は0531-22-0667",
+      "source": "https://hotokami.jp/area/aichi/Hmrtp/Hmrtpty/Dgrgs/75590/",
+      "quote": "0531-22-0667",
+      "checkedAt": "2026-10-29"
+    },
+    {
+      "claim": "宗旨・宗派は日蓮宗",
+      "source": "https://hotokami.jp/area/aichi/Hmrtp/Hmrtpty/Dgrgs/75590/",
+      "quote": "宗旨・宗派 日蓮宗",
+      "checkedAt": "2026-10-29"
+    },
+    {
+      "claim": "読み方はとうぎょうじ",
+      "source": "https://hotokami.jp/area/aichi/Hmrtp/Hmrtpty/Dgrgs/75590/",
+      "quote": "とうぎょうじ",
+      "checkedAt": "2026-10-29"
+    },
+    {
+      "claim": "御朱印の授与がある",
+      "source": "https://hotokami.jp/area/aichi/Hmrtp/Hmrtpty/Dgrgs/75590/",
+      "quote": "御朱印 あり",
+      "checkedAt": "2026-10-29"
+    },
+    {
+      "claim": "限定の御朱印がある",
+      "source": "https://hotokami.jp/area/aichi/Hmrtp/Hmrtpty/Dgrgs/75590/",
+      "quote": "限定御朱印 あり",
+      "checkedAt": "2026-10-29"
+    },
+    {
+      "claim": "御朱印帳への直書きがある",
+      "source": "https://hotokami.jp/area/aichi/Hmrtp/Hmrtpty/Dgrgs/75590/",
+      "quote": "御朱印帳に直書き あり",
+      "checkedAt": "2026-10-29"
+    },
+    {
+      "claim": "御朱印の郵送対応はない",
+      "source": "https://hotokami.jp/area/aichi/Hmrtp/Hmrtpty/Dgrgs/75590/",
+      "quote": "郵送対応 なし",
+      "checkedAt": "2026-10-29"
+    },
+    {
+      "claim": "Googleマップの業種表示は仏教寺院",
+      "source": "https://maps.google.com/?cid=6785947569017705556",
+      "quote": "仏教寺院",
+      "checkedAt": "2026-10-29"
+    }
+  ],
+  "sources": [
+    {
+      "label": "公式サイト",
+      "url": "https://hotokami.jp/area/aichi/Hmrtp/Hmrtpty/Dgrgs/75590/"
+    },
+    {
+      "label": "Google マップ",
+      "url": "https://maps.google.com/?cid=6785947569017705556"
+    }
+  ],
+  "notes": "automation/v2/write.mjs が 2026-10-29 に claude -p --model sonnet で作成。事実の裏取り: 9/9 件(quote が出どころにあるもの)。裏取りに通らなかった facts は載せていない。"
+}

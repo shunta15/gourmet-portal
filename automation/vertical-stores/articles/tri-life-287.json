@@ -1,0 +1,108 @@
+{
+  "key": "tri-life-287",
+  "headline": "兵庫県神崎郡神河町大山にある高野山真言宗の寺院です。本尊は薬師瑠璃光如来で、開基は法道仙人、建立は白雉二年です。",
+  "lede": "神崎郡神河町にある「七宝寺」です。高野山真言宗の寺院で、本尊は薬師瑠璃光如来です。開基は法道仙人、建立は白雉二年と伝わります。",
+  "sections": [
+    {
+      "heading": "由緒",
+      "body": "白雉二年、法道仙人の開基と伝わる高野山真言宗の寺院です。本尊は薬師瑠璃光如来で、秘仏として「とび薬師」とも呼ばれます。室町期には中本寺として数ヶ寺の末寺子院を擁しましたが、戦乱や宝暦の大火で堂塔を失い、今の地に寺を移して法灯を護持してきました。"
+    },
+    {
+      "heading": "本尊と境内",
+      "body": "本尊の薬師瑠璃光如来のほか、智恵文珠、五大力明王、弁財天の霊場でもあります。境内の楓は七、五、三の三種の葉をつけることから「七五三の楓」と呼ばれ、参詣人の注目を集めています。"
+    }
+  ],
+  "menus": [],
+  "tags": [],
+  "facts": [
+    {
+      "claim": "高野山真言宗の寺院",
+      "source": "http://www.rakujyu.on.arena.ne.jp/jynrei/12shitihou.html",
+      "quote": "高野山真言宗",
+      "checkedAt": "2026-10-29"
+    },
+    {
+      "claim": "本尊は薬師瑠璃光如来",
+      "source": "http://www.rakujyu.on.arena.ne.jp/jynrei/12shitihou.html",
+      "quote": "薬師瑠璃光如来",
+      "checkedAt": "2026-10-29"
+    },
+    {
+      "claim": "開基は法道仙人",
+      "source": "http://www.rakujyu.on.arena.ne.jp/jynrei/12shitihou.html",
+      "quote": "法道仙人",
+      "checkedAt": "2026-10-29"
+    },
+    {
+      "claim": "建立は白雉二年",
+      "source": "http://www.rakujyu.on.arena.ne.jp/jynrei/12shitihou.html",
+      "quote": "白雉二年",
+      "checkedAt": "2026-10-29"
+    },
+    {
+      "claim": "本尊の薬師如来は秘仏で「とび薬師」と呼ばれる",
+      "source": "http://www.rakujyu.on.arena.ne.jp/jynrei/12shitihou.html",
+      "quote": "とび薬師",
+      "checkedAt": "2026-10-29"
+    },
+    {
+      "claim": "智恵文珠、五大力明王、弁財天の霊場でもある",
+      "source": "http://www.rakujyu.on.arena.ne.jp/jynrei/12shitihou.html",
+      "quote": "智恵文珠、五大力明王、弁財天",
+      "checkedAt": "2026-10-29"
+    },
+    {
+      "claim": "境内の楓は七、五、三の三種の葉をつけ「七五三の楓」と呼ばれる",
+      "source": "http://www.rakujyu.on.arena.ne.jp/jynrei/12shitihou.html",
+      "quote": "七五三の楓",
+      "checkedAt": "2026-10-29"
+    },
+    {
+      "claim": "室町期には中本寺として数ヶ寺の末寺子院を擁した",
+      "source": "http://www.rakujyu.on.arena.ne.jp/jynrei/12shitihou.html",
+      "quote": "中本寺として数ヶ寺の末寺子院を擁し",
+      "checkedAt": "2026-10-29"
+    },
+    {
+      "claim": "宝暦の大火で堂塔が炎上した",
+      "source": "http://www.rakujyu.on.arena.ne.jp/jynrei/12shitihou.html",
+      "quote": "宝暦の大火に悉く炎上",
+      "checkedAt": "2026-10-29"
+    },
+    {
+      "claim": "今の地に寺を移し法灯を護持してきた",
+      "source": "http://www.rakujyu.on.arena.ne.jp/jynrei/12shitihou.html",
+      "quote": "法灯を護持する",
+      "checkedAt": "2026-10-29"
+    },
+    {
+      "claim": "境内の楓は参詣人の注目を集めている",
+      "source": "http://www.rakujyu.on.arena.ne.jp/jynrei/12shitihou.html",
+      "quote": "参詣人の注目を集めている",
+      "checkedAt": "2026-10-29"
+    },
+    {
+      "claim": "住所は兵庫県神崎郡神河町大山110",
+      "source": "https://maps.google.com/?cid=3764437351660289654",
+      "quote": "兵庫県神崎郡神河町大山１１０",
+      "checkedAt": "2026-10-29"
+    },
+    {
+      "claim": "電話番号は0790-32-0681",
+      "source": "https://maps.google.com/?cid=3764437351660289654",
+      "quote": "0790-32-0681",
+      "checkedAt": "2026-10-29"
+    }
+  ],
+  "sources": [
+    {
+      "label": "公式サイト",
+      "url": "http://www.rakujyu.on.arena.ne.jp/jynrei/12shitihou.html"
+    },
+    {
+      "label": "Google マップ",
+      "url": "https://maps.google.com/?cid=3764437351660289654"
+    }
+  ],
+  "notes": "automation/v2/write.mjs が 2026-10-29 に claude -p --model sonnet で作成。事実の裏取り: 13/13 件(quote が出どころにあるもの)。裏取りに通らなかった facts は載せていない。"
+}

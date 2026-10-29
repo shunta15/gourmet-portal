@@ -1,0 +1,32 @@
+{
+  "tab": "トリニティアポ",
+  "tabEn": "tri-activity",
+  "row": 279,
+  "sheet": {
+    "name": "自然派企画",
+    "address": "",
+    "url": "https://www.google.com/maps/search/?api=1&query=%E8%87%AA%E7%84%B6%E6%B4%BE%E4%BC%81%E7%94%BB%20090-3719-4238%20%E3%80%92603-8112%20%E4%BA%AC%E9%83%BD%E5%BA%9C%E4%BA%AC%E9%83%BD%E5%B8%82%E5%8C%97%E5%8C%BA%E5%B0%8F%E5%B1%B1%E5%85%83%E7%94%BA5",
+    "type": "アクティビティ",
+    "d1": "",
+    "d2": ""
+  },
+  "urlKind": "mapsApi",
+  "route": "第1段(verify-gbp.mjs)で確認済み",
+  "verdict": "一致",
+  "verdictReason": "手がかり: 店名＋電話。電話が一致／店名: contains(シート「自然派企画」/ マップ「有限会社自然派企画」)／住所(シート): none・番地がちがう（シート:5 / マップ:55）",
+  "place": {
+    "name": "有限会社自然派企画",
+    "address": "京都府京都市北区小山元町５５",
+    "category": "ツアー業者",
+    "lat": 35.0494508,
+    "lng": 135.7565886,
+    "gbpUrl": "https://maps.google.com/?cid=16291200231391355441",
+    "phone": "090-3719-4238",
+    "website": "https://www.shizenha.com/",
+    "hours": null,
+    "reserveLinks": [],
+    "statusSignals": [],
+    "closedSignal": false
+  },
+  "fetchedAt": "2026-10-29T06:31:12.856Z"
+}

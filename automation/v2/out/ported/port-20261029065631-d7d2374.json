@@ -1,0 +1,145 @@
+{
+  "commit": "d7d23742858f79a94741c554cc6f37daaf9cf82b",
+  "source": "/Users/shunta/claude/gp-k-auto2",
+  "count": 12,
+  "added": [
+    {
+      "row": 8,
+      "name": "伊勢神社",
+      "key": "tri-life-8",
+      "vertical": "くらし",
+      "id": "li0093",
+      "articleId": "li0093",
+      "shopUrl": "https://machinowa.tokyo/life/shop/li0093",
+      "articleUrl": "https://machinowa.tokyo/life/article/li0093",
+      "sheetUrl": "https://machinowa.tokyo/life/article/li0093"
+    },
+    {
+      "row": 277,
+      "name": "国安天満神社",
+      "key": "tri-life-277",
+      "vertical": "くらし",
+      "id": "li0094",
+      "articleId": "li0094",
+      "shopUrl": "https://machinowa.tokyo/life/shop/li0094",
+      "articleUrl": "https://machinowa.tokyo/life/article/li0094",
+      "sheetUrl": "https://machinowa.tokyo/life/article/li0094"
+    },
+    {
+      "row": 278,
+      "name": "伊曽乃神社 (いそのじんじゃ)",
+      "key": "tri-life-278",
+      "vertical": "くらし",
+      "id": "li0095",
+      "articleId": "li0095",
+      "shopUrl": "https://machinowa.tokyo/life/shop/li0095",
+      "articleUrl": "https://machinowa.tokyo/life/article/li0095",
+      "sheetUrl": "https://machinowa.tokyo/life/article/li0095"
+    },
+    {
+      "row": 279,
+      "name": "自然派企画",
+      "key": "tri-activity-279",
+      "vertical": "アクティビティ",
+      "id": "ac0029",
+      "articleId": "ac0029",
+      "shopUrl": "https://machinowa.tokyo/activity/shop/ac0029",
+      "articleUrl": "https://machinowa.tokyo/activity/article/ac0029",
+      "sheetUrl": "https://machinowa.tokyo/activity/article/ac0029"
+    },
+    {
+      "row": 280,
+      "name": "當行寺",
+      "key": "tri-life-280",
+      "vertical": "くらし",
+      "id": "li0096",
+      "articleId": "li0096",
+      "shopUrl": "https://machinowa.tokyo/life/shop/li0096",
+      "articleUrl": "https://machinowa.tokyo/life/article/li0096",
+      "sheetUrl": "https://machinowa.tokyo/life/article/li0096"
+    },
+    {
+      "row": 281,
+      "name": "花巻スポーツランド(北上川フィールドライフクラブ)",
+      "key": "tri-activity-281",
+      "vertical": "アクティビティ",
+      "id": "ac0030",
+      "articleId": "ac0030",
+      "shopUrl": "https://machinowa.tokyo/activity/shop/ac0030",
+      "articleUrl": "https://machinowa.tokyo/activity/article/ac0030",
+      "sheetUrl": "https://machinowa.tokyo/activity/article/ac0030"
+    },
+    {
+      "row": 285,
+      "name": "横山不動尊",
+      "key": "tri-life-285",
+      "vertical": "くらし",
+      "id": "li0098",
+      "articleId": "li0098",
+      "shopUrl": "https://machinowa.tokyo/life/shop/li0098",
+      "articleUrl": "https://machinowa.tokyo/life/article/li0098",
+      "sheetUrl": "https://machinowa.tokyo/life/article/li0098"
+    },
+    {
+      "row": 286,
+      "name": "光照寺",
+      "key": "tri-life-286",
+      "vertical": "くらし",
+      "id": "li0099",
+      "articleId": "li0099",
+      "shopUrl": "https://machinowa.tokyo/life/shop/li0099",
+      "articleUrl": "https://machinowa.tokyo/life/article/li0099",
+      "sheetUrl": "https://machinowa.tokyo/life/article/li0099"
+    },
+    {
+      "row": 287,
+      "name": "七寳寺",
+      "key": "tri-life-287",
+      "vertical": "くらし",
+      "id": "li0100",
+      "articleId": "li0100",
+      "shopUrl": "https://machinowa.tokyo/life/shop/li0100",
+      "articleUrl": "https://machinowa.tokyo/life/article/li0100",
+      "sheetUrl": "https://machinowa.tokyo/life/article/li0100"
+    },
+    {
+      "row": 288,
+      "name": "スモーク工房 SATOH",
+      "key": "tri-activity-288",
+      "vertical": "アクティビティ",
+      "id": "ac0031",
+      "articleId": "ac0031",
+      "shopUrl": "https://machinowa.tokyo/activity/shop/ac0031",
+      "articleUrl": "https://machinowa.tokyo/activity/article/ac0031",
+      "sheetUrl": "https://machinowa.tokyo/activity/article/ac0031"
+    },
+    {
+      "row": 289,
+      "name": "常瀧寺",
+      "key": "tri-life-289",
+      "vertical": "くらし",
+      "id": "li0101",
+      "articleId": "li0101",
+      "shopUrl": "https://machinowa.tokyo/life/shop/li0101",
+      "articleUrl": "https://machinowa.tokyo/life/article/li0101",
+      "sheetUrl": "https://machinowa.tokyo/life/article/li0101"
+    },
+    {
+      "row": 290,
+      "name": "菊池パール",
+      "key": "tri-activity-290",
+      "vertical": "アクティビティ",
+      "id": "ac0032",
+      "articleId": "ac0032",
+      "shopUrl": "https://machinowa.tokyo/activity/shop/ac0032",
+      "articleUrl": "https://machinowa.tokyo/activity/article/ac0032",
+      "sheetUrl": "https://machinowa.tokyo/activity/article/ac0032"
+    }
+  ],
+  "skipped": [
+    {
+      "key": "tri-life-282",
+      "reason": "--skip"
+    }
+  ]
+}

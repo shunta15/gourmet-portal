@@ -1,0 +1,176 @@
+{
+  "key": "tri-activity-281",
+  "headline": "岩手県花巻市十二丁目にある花巻スポーツランド(北上川フィールドライフクラブ)。北上川でのラフティングや十二丁目沼でのカヌー、バギー、スノーモービルなどの体験を扱う",
+  "lede": "花巻市にある「花巻スポーツランド」です。北上川フィールドライフクラブの名前で、ラフティングやカヌー、バギー・ミニバイク、冬季はスノーモービルなどの体験を行っています。営業時間は午前の部が9時から12時、午後の部が13時から16時です。",
+  "sections": [
+    {
+      "heading": "ラフティングとカヌー",
+      "body": "北上川の流れに沿って下るラフティングは、イギリス海岸から6kmのコースで、広い川幅をゆったり進みながら時には急な流れも楽しめます。4歳以上の子どもから参加できます。十二丁目沼では、揺れの少ない艇で行うカヌー体験もあり、流れのない沼のため初めてでも安定して乗ることができます。"
+    },
+    {
+      "heading": "バギー・ミニバイクとスノーモービル",
+      "body": "3輪・4輪バギーと50ccのミニバイクは、3kmに及ぶコースで走行でき、小学生からビギナー向けに参加できます。冬季は北上川河川敷の雪原でスノーモービルに挑戦でき、免許を持つガイドが監督するため運転免許は不要です。積雪状況によって雪上バギーの体験に変わる場合があり、雪上カヌーや雪遊び体験も行っています。"
+    },
+    {
+      "heading": "アクセスと受け入れ",
+      "body": "最寄りは東北本線の花巻駅、新幹線の新花巻駅で、いずれもタクシーで15分です。花巻空港からもタクシーで15分です。営業時間は午前の部が9時から12時、午後の部が13時から16時です。30名規模から300名規模までの修学旅行や体験学習の受け入れも行っています。"
+    }
+  ],
+  "menus": [
+    {
+      "name": "ラフティング体験"
+    },
+    {
+      "name": "カヌー体験"
+    },
+    {
+      "name": "バギー＆ミニバイク"
+    },
+    {
+      "name": "スノーモービル・雪上カヌー・雪遊び"
+    }
+  ],
+  "tags": [
+    {
+      "tag": "子連れ",
+      "factIndex": 7
+    },
+    {
+      "tag": "初心者歓迎",
+      "factIndex": 17
+    }
+  ],
+  "facts": [
+    {
+      "claim": "住所は岩手県花巻市十二丁目1232",
+      "source": "http://www.hanamaki-sportsland.jp/access.html",
+      "quote": "岩手県花巻市十二丁目1232",
+      "checkedAt": "2026-10-29"
+    },
+    {
+      "claim": "連絡先の携帯番号は090-4476-5875",
+      "source": "http://www.hanamaki-sportsland.jp/access.html",
+      "quote": "090-4476-5875",
+      "checkedAt": "2026-10-29"
+    },
+    {
+      "claim": "営業時間は午前の部が9時から12時",
+      "source": "http://www.hanamaki-sportsland.jp/access.html",
+      "quote": "午前の部：9時～12時",
+      "checkedAt": "2026-10-29"
+    },
+    {
+      "claim": "午後の部は13時から16時",
+      "source": "http://www.hanamaki-sportsland.jp/access.html",
+      "quote": "午後の部：13時～16時",
+      "checkedAt": "2026-10-29"
+    },
+    {
+      "claim": "花巻駅・新花巻駅からタクシーで15分",
+      "source": "http://www.hanamaki-sportsland.jp/access.html",
+      "quote": "花巻駅(東北本線)／新花巻駅(新幹線)よりタクシーで15分",
+      "checkedAt": "2026-10-29"
+    },
+    {
+      "claim": "花巻空港からタクシーで15分",
+      "source": "http://www.hanamaki-sportsland.jp/access.html",
+      "quote": "花巻空港よりタクシーで15分",
+      "checkedAt": "2026-10-29"
+    },
+    {
+      "claim": "ラフティングはイギリス海岸から6kmのコースを北上川沿いに下る",
+      "source": "http://www.hanamaki-sportsland.jp/activity.html",
+      "quote": "イギリス海岸から6km ラフティングツアー",
+      "checkedAt": "2026-10-29"
+    },
+    {
+      "claim": "ラフティングは4歳以上の子どもから参加できる",
+      "source": "http://www.hanamaki-sportsland.jp/activity.html",
+      "quote": "4歳以上の小さなお子さまもOK",
+      "checkedAt": "2026-10-29"
+    },
+    {
+      "claim": "カヌー体験は十二丁目沼で行う",
+      "source": "http://www.hanamaki-sportsland.jp/activity.html",
+      "quote": "十二丁目沼でゆったりカヌー体験",
+      "checkedAt": "2026-10-29"
+    },
+    {
+      "claim": "カヌーは揺れが少なく初めてでも安定して乗れる",
+      "source": "http://www.hanamaki-sportsland.jp/activity.html",
+      "quote": "カヌーは揺れが少なく、初めてでも安定して乗れます",
+      "checkedAt": "2026-10-29"
+    },
+    {
+      "claim": "バギー・ミニバイクは3kmに及ぶコースを走行できる",
+      "source": "http://www.hanamaki-sportsland.jp/activity.html",
+      "quote": "3kmにまで及ぶミニバイクコースで",
+      "checkedAt": "2026-10-29"
+    },
+    {
+      "claim": "バギー・ミニバイクは小学生から参加できる",
+      "source": "http://www.hanamaki-sportsland.jp/activity.html",
+      "quote": "小学生から参加OK",
+      "checkedAt": "2026-10-29"
+    },
+    {
+      "claim": "スノーモービルは北上川河川敷の雪原で行う",
+      "source": "http://www.hanamaki-sportsland.jp/activity.html",
+      "quote": "北上川河川敷の雪原でスノーモービル",
+      "checkedAt": "2026-10-29"
+    },
+    {
+      "claim": "スノーモービルは免許がなくても体験できる",
+      "source": "http://www.hanamaki-sportsland.jp/activity.html",
+      "quote": "免許いらずでOK",
+      "checkedAt": "2026-10-29"
+    },
+    {
+      "claim": "積雪状況により雪上バギー体験に変わる場合がある",
+      "source": "http://www.hanamaki-sportsland.jp/activity.html",
+      "quote": "積雪状況によって、雪上バギーの体験に変更",
+      "checkedAt": "2026-10-29"
+    },
+    {
+      "claim": "冬季は雪上カヌーや雪遊び体験もできる",
+      "source": "http://www.hanamaki-sportsland.jp/activity.html",
+      "quote": "雪上カヌーや雪遊び体験を家族で楽しむ",
+      "checkedAt": "2026-10-29"
+    },
+    {
+      "claim": "30名規模から300名規模までの修学旅行や体験学習の受け入れを行っている",
+      "source": "http://www.hanamaki-sportsland.jp/travel.html",
+      "quote": "修学旅行や体験学習の受け入れも行っています",
+      "checkedAt": "2026-10-29"
+    },
+    {
+      "claim": "バギー・ミニバイクはビギナーから楽しめる",
+      "source": "http://www.hanamaki-sportsland.jp/activity.html",
+      "quote": "ビギナーから楽しめます",
+      "checkedAt": "2026-10-29"
+    }
+  ],
+  "sources": [
+    {
+      "label": "公式サイト(トップ)",
+      "url": "http://www.hanamaki-sportsland.jp/"
+    },
+    {
+      "label": "公式サイト(アクセス)",
+      "url": "http://www.hanamaki-sportsland.jp/access.html"
+    },
+    {
+      "label": "公式サイト(体験メニュー)",
+      "url": "http://www.hanamaki-sportsland.jp/activity.html"
+    },
+    {
+      "label": "公式サイト(旅行代理店様向け)",
+      "url": "http://www.hanamaki-sportsland.jp/travel.html"
+    },
+    {
+      "label": "Google マップ",
+      "url": "https://maps.google.com/?cid=1364850279986573193"
+    }
+  ],
+  "notes": "automation/v2/write.mjs が 2026-10-29 に claude -p --model sonnet で作成。事実の裏取り: 18/18 件(quote が出どころにあるもの)。裏取りに通らなかった facts は載せていない。"
+}

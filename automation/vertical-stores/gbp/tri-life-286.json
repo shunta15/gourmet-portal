@@ -1,0 +1,32 @@
+{
+  "tab": "トリニティアポ",
+  "tabEn": "tri-life",
+  "row": 286,
+  "sheet": {
+    "name": "光照寺",
+    "address": "",
+    "url": "https://www.google.com/maps/search/?api=1&query=%E5%85%89%E7%85%A7%E5%AF%BA%20046-746-6355%20%E3%80%92247-0062%20%E7%A5%9E%E5%A5%88%E5%B7%9D%E7%9C%8C%E9%8E%8C%E5%80%89%E5%B8%82%E5%B1%B1%E3%83%8E%E5%86%85%EF%BC%98%EF%BC%92%EF%BC%97",
+    "type": "寺",
+    "d1": "",
+    "d2": ""
+  },
+  "urlKind": "mapsApi",
+  "route": "第1段(verify-gbp.mjs)で確認済み",
+  "verdict": "一致",
+  "verdictReason": "手がかり: 店名＋電話＋住所(番地まで)。電話が一致／店名: exact(シート「光照寺」/ マップ「光照寺」)／住所(シート): exact・町名・番地とも一致",
+  "place": {
+    "name": "光照寺",
+    "address": "神奈川県鎌倉市山ノ内８２７",
+    "category": "仏教寺院",
+    "lat": 35.3387389,
+    "lng": 139.5407972,
+    "gbpUrl": "https://maps.google.com/?cid=3133845558298538741",
+    "phone": "0467-46-6355",
+    "website": "http://kamakura-koshoji.world.coocan.jp/",
+    "hours": null,
+    "reserveLinks": [],
+    "statusSignals": [],
+    "closedSignal": false
+  },
+  "fetchedAt": "2026-10-29T06:36:43.904Z"
+}

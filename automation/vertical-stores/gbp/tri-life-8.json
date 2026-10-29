@@ -1,0 +1,32 @@
+{
+  "tab": "トリニティアポ",
+  "tabEn": "tri-life",
+  "row": 8,
+  "sheet": {
+    "name": "伊勢神社",
+    "address": "",
+    "url": "https://www.google.com/maps/search/?api=1&query=%E4%BC%8A%E5%8B%A2%E7%A5%9E%E7%A4%BE%200952-23-4221%20",
+    "type": "その他",
+    "d1": "",
+    "d2": ""
+  },
+  "urlKind": "mapsApi",
+  "route": "第1段(verify-gbp.mjs)で確認済み",
+  "verdict": "一致",
+  "verdictReason": "手がかり: 店名＋電話。電話が一致／店名: contains(シート「伊勢神社」/ マップ「肥前之國 伊勢神社」)",
+  "place": {
+    "name": "肥前之國 伊勢神社",
+    "address": "佐賀県佐賀市伊勢町９−８",
+    "category": "神社",
+    "lat": 33.2525293,
+    "lng": 130.2898762,
+    "gbpUrl": "https://maps.google.com/?cid=10706446818413613327",
+    "phone": "0952-23-4221",
+    "website": "http://www.isejinja.or.jp/",
+    "hours": null,
+    "reserveLinks": [],
+    "statusSignals": [],
+    "closedSignal": false
+  },
+  "fetchedAt": "2026-10-29T06:27:24.703Z"
+}

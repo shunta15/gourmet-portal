@@ -1,0 +1,143 @@
+{
+  "key": "tri-activity-288",
+  "images": [
+    {
+      "path": "/_portal/vshops/tri-activity-288/g01.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9QbAqWmwa2Bc1L3ooACrY87pRbMeDQwhFGXLQyVVNHr1pyTmqQB8k-glUB6UR6TkLyFADlqQPvTZTBvBUZRXQHfM0ZKqK1KqmGQH1Iyq66iIwo0T9YHjJ9blbbMl7gmIgZLUOSx=s1200",
+      "pageUrl": "https://maps.google.com/?cid=10682613776850535541",
+      "what": "三角屋根の建物の外観と前の道路",
+      "kind": "exterior",
+      "width": 675,
+      "height": 1200,
+      "source": "Google マップ"
+    },
+    {
+      "path": "/_portal/vshops/tri-activity-288/g02.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9SL8Oc6JEzsGmpYielm1jKgw7x4l6FkJtD0y6bjcWCBgPmJ5i23GJuonxKRTm-JWRc2jViUjMkFYXj-YrhjTlDKT-t91pyA4rEj5EBjchAc7szX1OcB5rGu5FkEcc-69vz8Tbk=s1200",
+      "pageUrl": "https://maps.google.com/?cid=10682613776850535541",
+      "what": "ハムとベーコンが並んだ盛り付けの皿",
+      "kind": "meal",
+      "width": 1200,
+      "height": 900,
+      "source": "Google マップ"
+    },
+    {
+      "path": "/_portal/vshops/tri-activity-288/g03.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9S-1q4Afb9Lj1mKO7p7U7v-aIg0ATYtinGcCUYUfsARhORb--QA7-C_ufUm-agrrZd11oYrL10y1tU3--pRgmM6-_DJuj29m07gc1KfsZ_cmmWRtbgJZ-sVEK22VjuW-Emo_7Bc5Q=s1200",
+      "pageUrl": "https://maps.google.com/?cid=10682613776850535541",
+      "what": "黄色い燻製器が並ぶ作業場の室内",
+      "kind": "room",
+      "width": 1200,
+      "height": 900,
+      "source": "Google マップ"
+    },
+    {
+      "path": "/_portal/vshops/tri-activity-288/s03.jpg",
+      "imageUrl": "https://www.smoke-satoh.com/assets/img/image2.jpg",
+      "pageUrl": "https://www.smoke-satoh.com/",
+      "what": "黄色い燻製器と窓のある作業場",
+      "kind": "room",
+      "width": 1000,
+      "height": 450,
+      "source": "公式サイト"
+    },
+    {
+      "path": "/_portal/vshops/tri-activity-288/s04.jpg",
+      "imageUrl": "https://www.smoke-satoh.com/assets/img/image3.jpg",
+      "pageUrl": "https://www.smoke-satoh.com/",
+      "what": "ハムとベーコンの盛り合わせ",
+      "kind": "meal",
+      "width": 1000,
+      "height": 450,
+      "source": "公式サイト"
+    },
+    {
+      "path": "/_portal/vshops/tri-activity-288/s05.jpg",
+      "imageUrl": "https://www.smoke-satoh.com/assets/img/top_img002.jpg",
+      "pageUrl": "https://www.smoke-satoh.com/",
+      "what": "ソーセージが並んだ盛り付けの皿",
+      "kind": "meal",
+      "width": 600,
+      "height": 450,
+      "source": "公式サイト"
+    },
+    {
+      "path": "/_portal/vshops/tri-activity-288/s06.jpg",
+      "imageUrl": "https://www.smoke-satoh.com/assets/img/top_img003.jpg",
+      "pageUrl": "https://www.smoke-satoh.com/",
+      "what": "サラダとスープ、自家製ピザの昼食",
+      "kind": "meal",
+      "width": 640,
+      "height": 480,
+      "source": "公式サイト"
+    },
+    {
+      "path": "/_portal/vshops/tri-activity-288/s11.jpg",
+      "imageUrl": "https://www.smoke-satoh.com/assets/img/company_img002.jpg",
+      "pageUrl": "https://www.smoke-satoh.com/company/",
+      "what": "テーブルと椅子が並ぶ室内",
+      "kind": "room",
+      "width": 640,
+      "height": 480,
+      "source": "公式サイト"
+    },
+    {
+      "path": "/_portal/vshops/tri-activity-288/s13.jpg",
+      "imageUrl": "https://www.smoke-satoh.com/assets/img/contents_img001.jpg",
+      "pageUrl": "https://www.smoke-satoh.com/contents/",
+      "what": "天井から吊るされた肉と作業台に並ぶ肉",
+      "kind": "room",
+      "width": 640,
+      "height": 420,
+      "source": "公式サイト"
+    },
+    {
+      "path": "/_portal/vshops/tri-activity-288/s14.jpg",
+      "imageUrl": "https://www.smoke-satoh.com/assets/img/contents_img006.jpg",
+      "pageUrl": "https://www.smoke-satoh.com/contents/",
+      "what": "計量器と調味料の缶が並ぶ作業台",
+      "width": 600,
+      "height": 450,
+      "source": "公式サイト"
+    },
+    {
+      "path": "/_portal/vshops/tri-activity-288/s15.jpg",
+      "imageUrl": "https://www.smoke-satoh.com/assets/img/contents_img007.jpg",
+      "pageUrl": "https://www.smoke-satoh.com/contents/",
+      "what": "カットされた赤身の肉の塊",
+      "kind": "meal",
+      "width": 600,
+      "height": 450,
+      "source": "公式サイト"
+    },
+    {
+      "path": "/_portal/vshops/tri-activity-288/s16.jpg",
+      "imageUrl": "https://www.smoke-satoh.com/assets/img/contents_img008.jpg",
+      "pageUrl": "https://www.smoke-satoh.com/contents/",
+      "what": "ラップに包まれた肉の塊が4つ並ぶ",
+      "kind": "meal",
+      "width": 600,
+      "height": 450,
+      "source": "公式サイト"
+    },
+    {
+      "path": "/_portal/vshops/tri-activity-288/s17.jpg",
+      "imageUrl": "https://www.smoke-satoh.com/assets/img/contents_img009.jpg",
+      "pageUrl": "https://www.smoke-satoh.com/contents/",
+      "what": "流水で肉を洗う手元",
+      "width": 600,
+      "height": 450,
+      "source": "公式サイト"
+    },
+    {
+      "path": "/_portal/vshops/tri-activity-288/s18.jpg",
+      "imageUrl": "https://www.smoke-satoh.com/assets/img/contents_img010.jpg",
+      "pageUrl": "https://www.smoke-satoh.com/contents/",
+      "what": "紙に包まれた肉を手で押さえる作業",
+      "width": 600,
+      "height": 450,
+      "source": "公式サイト"
+    }
+  ],
+  "note": "automation/v2/write.mjs が 2026-10-29T06:50:01.830Z に取得。店の実写だけ(AI 画像・汎用画像・地図・ロゴ・顔が大きい画像は除外)。"
+}

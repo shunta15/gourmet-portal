@@ -1,0 +1,32 @@
+{
+  "tab": "トリニティアポ",
+  "tabEn": "tri-life",
+  "row": 278,
+  "sheet": {
+    "name": "伊曽乃神社 (いそのじんじゃ)",
+    "address": "",
+    "url": "https://www.google.com/maps/search/?api=1&query=%E4%BC%8A%E6%9B%BD%E4%B9%83%E7%A5%9E%E7%A4%BE%20%28%E3%81%84%E3%81%9D%E3%81%AE%E3%81%98%E3%82%93%E3%81%98%E3%82%83%29%20089-755-2142%20%E3%80%92793-0054%20%E6%84%9B%E5%AA%9B%E7%9C%8C%E8%A5%BF%E6%9D%A1%E5%B8%82%E4%B8%AD%E9%87%8E%E7%94%B2%EF%BC%91%EF%BC%96%EF%BC%94%EF%BC%99",
+    "type": "神社",
+    "d1": "",
+    "d2": ""
+  },
+  "urlKind": "mapsApi",
+  "route": "第1段(verify-gbp.mjs)で確認済み",
+  "verdict": "一致",
+  "verdictReason": "手がかり: 店名＋電話＋住所(番地まで)。電話が一致／店名: exact(シート「伊曽乃神社 (いそのじんじゃ)」/ マップ「伊曽乃神社」)／住所(シート): exact・町名・番地とも一致",
+  "place": {
+    "name": "伊曽乃神社",
+    "address": "愛媛県西条市中野甲１６４９",
+    "category": "神社",
+    "lat": 33.8927535,
+    "lng": 133.1869962,
+    "gbpUrl": "https://maps.google.com/?cid=10640727867628812469",
+    "phone": "0897-55-2142",
+    "website": "http://www.isonojinja.or.jp/",
+    "hours": null,
+    "reserveLinks": [],
+    "statusSignals": [],
+    "closedSignal": false
+  },
+  "fetchedAt": "2026-10-29T06:30:09.111Z"
+}

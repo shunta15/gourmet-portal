@@ -1,0 +1,32 @@
+{
+  "tab": "トリニティアポ",
+  "tabEn": "tri-life",
+  "row": 289,
+  "sheet": {
+    "name": "常瀧寺",
+    "address": "",
+    "url": "https://www.google.com/maps/search/?api=1&query=%E5%B8%B8%E7%80%A7%E5%AF%BA%20079-587-5145%20%E3%80%92669-3822%20%E5%85%B5%E5%BA%AB%E7%9C%8C%E4%B8%B9%E6%B3%A2%E5%B8%82%E9%9D%92%E5%9E%A3%E7%94%BA%E5%A4%A7%E5%90%8D%E8%8D%89%EF%BC%94%EF%BC%98%EF%BC%91",
+    "type": "寺",
+    "d1": "",
+    "d2": ""
+  },
+  "urlKind": "mapsApi",
+  "route": "第1段(verify-gbp.mjs)で確認済み",
+  "verdict": "一致",
+  "verdictReason": "手がかり: 店名＋電話＋住所(番地まで)。電話が一致／店名: exact(シート「常瀧寺」/ マップ「常瀧寺（高野山真言宗 愛宕山 常瀧寺）」)／住所(シート): exact・町名・番地とも一致",
+  "place": {
+    "name": "常瀧寺（高野山真言宗 愛宕山 常瀧寺）",
+    "address": "兵庫県丹波市青垣町大名草４８１",
+    "category": "仏教寺院",
+    "lat": 35.2378547,
+    "lng": 134.9488225,
+    "gbpUrl": "https://maps.google.com/?cid=14542130192630787692",
+    "phone": "0795-87-5145",
+    "website": null,
+    "hours": null,
+    "reserveLinks": [],
+    "statusSignals": [],
+    "closedSignal": false
+  },
+  "fetchedAt": "2026-10-29T06:39:14.629Z"
+}

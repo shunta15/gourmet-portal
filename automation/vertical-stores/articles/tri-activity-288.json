@@ -1,0 +1,201 @@
+{
+  "key": "tri-activity-288",
+  "headline": "仙台市太白区袋原にある、ハム&ベーコンなどの燻製作りを教える少人数制の教室。受講は初日と2週間後の完成日の2日間で行われる",
+  "lede": "仙台市太白区にある「スモーク工房SATOH」です。ハム&ベーコン教室、ソーセージ教室、ピザ教室を、4名までの個人対応で開いています。すべての作業工程を体験し、自宅で作れるようアドバイスを受けられます。",
+  "sections": [
+    {
+      "heading": "教室の内容と流れ",
+      "body": "ハム&ベーコン教室の受講は、初日と2週間後の完成の日の2日間です。受講申し込みが決まると、作業の流れや作り方のポイントを説明したマニュアルが事前に自宅へ郵送されます。1日目は配合塩づくり、肉の下処理、昼食をはさんだ塩漬けまでを行い、作業時間は1〜2名で6時間前後、3〜4名で7時間前後が目安です。2日目はスモーカーでの乾燥、スモーク、ボイル、冷却までを行い、自宅で半日風乾すると完成します。"
+    },
+    {
+      "heading": "持ち物と当日の服装",
+      "body": "持参するものは、ノート、ペン、エプロン、三角巾または帽子、肉を持ち帰るためのバッグ、凍った保冷剤です。初日の生肉の下処理では暖房を使用しません。冬の時期に受講する場合は、下着など暖かい服装が必要です。"
+    },
+    {
+      "heading": "アクセスと駐車場",
+      "body": "住所は宮城県仙台市太白区袋原3丁目16-65で、JR南仙台駅から車で10分、JR仙台駅から車で35分です。駐車場は2〜3台まで対応し、車で向かう場合は事前の連絡が必要です。バスの場合は、南仙台駅から仙台市営バスに乗り「袋原中学校前」で下車します。"
+    }
+  ],
+  "menus": [
+    {
+      "name": "ハム&ベーコン教室"
+    },
+    {
+      "name": "ソーセージ教室"
+    },
+    {
+      "name": "ピザ教室"
+    }
+  ],
+  "tags": [
+    {
+      "tag": "駐車場あり",
+      "factIndex": 5
+    }
+  ],
+  "facts": [
+    {
+      "claim": "Google マップの業種の表示は「料理教室」である",
+      "source": "https://maps.google.com/?cid=10682613776850535541",
+      "quote": "料理教室",
+      "checkedAt": "2026-10-29"
+    },
+    {
+      "claim": "住所は宮城県仙台市太白区袋原3丁目16-65",
+      "source": "https://www.smoke-satoh.com/",
+      "quote": "宮城県仙台市太白区袋原3丁目16-65",
+      "checkedAt": "2026-10-29"
+    },
+    {
+      "claim": "電話番号は022-397-8393",
+      "source": "https://www.smoke-satoh.com/",
+      "quote": "022-397-8393",
+      "checkedAt": "2026-10-29"
+    },
+    {
+      "claim": "JR南仙台駅から車で10分",
+      "source": "https://www.smoke-satoh.com/",
+      "quote": "JR 南仙台駅から車で10分",
+      "checkedAt": "2026-10-29"
+    },
+    {
+      "claim": "JR仙台駅から車で35分",
+      "source": "https://www.smoke-satoh.com/",
+      "quote": "JR 仙台駅から車で35分",
+      "checkedAt": "2026-10-29"
+    },
+    {
+      "claim": "駐車場は2〜3台まで対応する",
+      "source": "https://www.smoke-satoh.com/",
+      "quote": "2～3台まで対応可",
+      "checkedAt": "2026-10-29"
+    },
+    {
+      "claim": "車で来る場合は事前の連絡が必要",
+      "source": "https://www.smoke-satoh.com/",
+      "quote": "事前にご連絡ください",
+      "checkedAt": "2026-10-29"
+    },
+    {
+      "claim": "南仙台駅から仙台市営バスに乗り「袋原中学校前」で下車する",
+      "source": "https://www.smoke-satoh.com/",
+      "quote": "「袋原中学校前」下車",
+      "checkedAt": "2026-10-29"
+    },
+    {
+      "claim": "南仙台駅東口から市営バスに乗る",
+      "source": "https://www.smoke-satoh.com/",
+      "quote": "市営バス",
+      "checkedAt": "2026-10-29"
+    },
+    {
+      "claim": "少人数(4名様まで)の個人対応教室である",
+      "source": "https://www.smoke-satoh.com/",
+      "quote": "少人数(４名様迄)、個人対応の教室です。",
+      "checkedAt": "2026-10-29"
+    },
+    {
+      "claim": "すべての作業工程を体験し、自宅で作れるようアドバイスを受けられる",
+      "source": "https://www.smoke-satoh.com/",
+      "quote": "ご自宅で作れるようアドバイスいたします。",
+      "checkedAt": "2026-10-29"
+    },
+    {
+      "claim": "ハム&ベーコン教室、ソーセージ教室、ピザ教室を開いている",
+      "source": "https://www.smoke-satoh.com/",
+      "quote": "☆ハム&ベーコン教室 ☆ソーセージ教室 ☆ピザ教室",
+      "checkedAt": "2026-10-29"
+    },
+    {
+      "claim": "ハム&ベーコン教室の受講は初日と2週間後の完成の日の2日間",
+      "source": "https://www.smoke-satoh.com/contents/",
+      "quote": "受講して頂くのは初日と2週間後の完成の日の2日間",
+      "checkedAt": "2026-10-29"
+    },
+    {
+      "claim": "受講申し込み決定後、作業の流れを説明したマニュアルが事前に自宅へ郵送される",
+      "source": "https://www.smoke-satoh.com/contents/",
+      "quote": "事前にご自宅に郵送致します。",
+      "checkedAt": "2026-10-29"
+    },
+    {
+      "claim": "持参するものはノート、ペン、エプロン、三角巾または帽子、肉を持ち帰るためのバッグ、凍った保冷剤である",
+      "source": "https://www.smoke-satoh.com/contents/",
+      "quote": "ノート、ペン、エプロン、三角巾または帽子",
+      "checkedAt": "2026-10-29"
+    },
+    {
+      "claim": "初日の生肉の下処理時は暖房を使用しない",
+      "source": "https://www.smoke-satoh.com/contents/",
+      "quote": "初日の生肉の下処理時は暖房は使用しません",
+      "checkedAt": "2026-10-29"
+    },
+    {
+      "claim": "1日目は配合塩づくり→肉の下処理→昼食→塩漬けの順で進む",
+      "source": "https://www.smoke-satoh.com/contents/",
+      "quote": "配合塩を作る→肉の下処理→作業状況を見て昼食→肉の配合塩漬け",
+      "checkedAt": "2026-10-29"
+    },
+    {
+      "claim": "2日目はスモーカーで乾燥→スモーク→ボイル→冷却して持ち帰る",
+      "source": "https://www.smoke-satoh.com/contents/",
+      "quote": "スモーカーで乾燥→スモーク→ボイル→冷却して持ち帰り",
+      "checkedAt": "2026-10-29"
+    },
+    {
+      "claim": "自宅で半日風乾すれば完成する",
+      "source": "https://www.smoke-satoh.com/contents/",
+      "quote": "ご自宅で半日風乾すれば完成です。",
+      "checkedAt": "2026-10-29"
+    },
+    {
+      "claim": "1日目の作業時間は1〜2名で6時間前後、3〜4名で7時間前後が目安",
+      "source": "https://www.smoke-satoh.com/contents/",
+      "quote": "1～2名様で6時間前後、3～4名様で7時間前後が目安です。",
+      "checkedAt": "2026-10-29"
+    },
+    {
+      "claim": "2日目は完成日で約7〜8時間かかる",
+      "source": "https://www.smoke-satoh.com/contents/",
+      "quote": "約7～8時間",
+      "checkedAt": "2026-10-29"
+    },
+    {
+      "claim": "燻製案内人は佐藤丘也である",
+      "source": "https://www.smoke-satoh.com/company/",
+      "quote": "佐藤 丘也",
+      "checkedAt": "2026-10-29"
+    },
+    {
+      "claim": "メールアドレスはinfo@smoke-satoh.comである",
+      "source": "https://www.smoke-satoh.com/company/",
+      "quote": "info@smoke-satoh.com",
+      "checkedAt": "2026-10-29"
+    },
+    {
+      "claim": "電話やメールで問い合わせができる",
+      "source": "https://www.smoke-satoh.com/",
+      "quote": "電話やメールにてお問い合わせください。",
+      "checkedAt": "2026-10-29"
+    }
+  ],
+  "sources": [
+    {
+      "label": "公式サイト(トップ)",
+      "url": "https://www.smoke-satoh.com/"
+    },
+    {
+      "label": "公式サイト(スモーク工房SATOHについて)",
+      "url": "https://www.smoke-satoh.com/company/"
+    },
+    {
+      "label": "公式サイト(燻製教室のご案内)",
+      "url": "https://www.smoke-satoh.com/contents/"
+    },
+    {
+      "label": "Google マップ",
+      "url": "https://maps.google.com/?cid=10682613776850535541"
+    }
+  ],
+  "notes": "automation/v2/write.mjs が 2026-10-29 に claude -p --model sonnet で作成。事実の裏取り: 24/24 件(quote が出どころにあるもの)。裏取りに通らなかった facts は載せていない。"
+}

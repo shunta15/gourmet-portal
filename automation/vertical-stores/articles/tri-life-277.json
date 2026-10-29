@@ -1,0 +1,140 @@
+{
+  "key": "tri-life-277",
+  "headline": "兵庫県加古郡稲美町、天満大池のそばに鎮座する神社。祭神は天満天神（菅原道真公）・大年大神・市杵島姫命の三柱",
+  "lede": "加古郡稲美町にある「旧郷社・国安天満神社」です。653年に王子権現として創立され、893年に現在の宮地へ遷りました。祭神は天満天神（菅原道真公）・大年大神・市杵島姫命の三柱です。",
+  "sections": [
+    {
+      "heading": "由緒",
+      "body": "653年に王子権現として創立され、現在の宮地は当時の御旅所でした。675年にはため池（現在の天満大池）が造営され、893年に現在の宮地へ遷って池大明神が奉祀されました。901年には菅原道真公がこの宮地へ立ち寄りました。1701年には現在の社殿が造営されました。"
+    },
+    {
+      "heading": "祭神と境内社",
+      "body": "祭神は天満天神（菅原道真公）・大年大神（池大明神）・市杵島姫命（弁財天女）の三柱です。境内には昭和34年建立の靖国社があり、天満地区の戦没者332柱を祀ります。摂社には八幡神社・大神社・多賀神社・琴平神社・愛宕神社・稲荷神社・八坂神社・大将軍神社があります。"
+    },
+    {
+      "heading": "アクセスと駐車場",
+      "body": "JR西日本「土山駅」下車後、神姫バス土山・厄神線「国安バス停」下車すぐです。自動車の場合は第二神明「明石西IC」より北へ10分、天満大池のすぐ近くです。参拝者は東大鳥居前駐車場・西側駐車場・南側駐車場の3つの駐車場を利用でき、車いす対応のスロープも用意されています。"
+    }
+  ],
+  "menus": [
+    {
+      "name": "ご祈祷"
+    },
+    {
+      "name": "七五三詣"
+    }
+  ],
+  "tags": [
+    {
+      "tag": "駐車場あり",
+      "factIndex": 11
+    }
+  ],
+  "facts": [
+    {
+      "claim": "祭神は天満天神（菅原道真公）・大年大神（池大明神）・市杵島姫命（弁財天女）の三柱である",
+      "source": "https://tenma-jinja.com/shrine_information/",
+      "quote": "天満天神（菅原道真公）",
+      "checkedAt": "2026-10-29"
+    },
+    {
+      "claim": "653年に王子権現として創立された",
+      "source": "https://tenma-jinja.com/shrine_information/",
+      "quote": "王子権現として創立（現宮地は御旅所）",
+      "checkedAt": "2026-10-29"
+    },
+    {
+      "claim": "675年にため池（現在の天満大池）が造営された",
+      "source": "https://tenma-jinja.com/shrine_information/",
+      "quote": "天満大池",
+      "checkedAt": "2026-10-29"
+    },
+    {
+      "claim": "893年に現在の宮地へ遷り、池大明神が奉祀された",
+      "source": "https://tenma-jinja.com/shrine_information/",
+      "quote": "池大明神を奉祀",
+      "checkedAt": "2026-10-29"
+    },
+    {
+      "claim": "901年に菅原道真公がこの宮地へ立ち寄った",
+      "source": "https://tenma-jinja.com/shrine_information/",
+      "quote": "この宮地へ立ち寄り御休みになる",
+      "checkedAt": "2026-10-29"
+    },
+    {
+      "claim": "1701年に現在の社殿が造営された",
+      "source": "https://tenma-jinja.com/shrine_information/",
+      "quote": "現社殿の造営",
+      "checkedAt": "2026-10-29"
+    },
+    {
+      "claim": "靖国社は昭和34年に建立された",
+      "source": "https://tenma-jinja.com/shrine_information/precinct_shine/",
+      "quote": "昭和３４年建立",
+      "checkedAt": "2026-10-29"
+    },
+    {
+      "claim": "靖国社は天満地区の戦没者332柱を祀る",
+      "source": "https://tenma-jinja.com/shrine_information/precinct_shine/",
+      "quote": "天満地区の国難殉歿者３３２柱を祀る",
+      "checkedAt": "2026-10-29"
+    },
+    {
+      "claim": "摂社の一つに八幡神社（品多別命）がある",
+      "source": "https://tenma-jinja.com/shrine_information/precinct_shine/",
+      "quote": "八幡神社（品多別命：ほむたわけのみこと）",
+      "checkedAt": "2026-10-29"
+    },
+    {
+      "claim": "JR西日本「土山駅」下車後、神姫バス土山・厄神線「国安バス停」下車すぐである",
+      "source": "https://tenma-jinja.com/access/",
+      "quote": "神姫バス土山・厄神線「国安バス停」下車すぐ",
+      "checkedAt": "2026-10-29"
+    },
+    {
+      "claim": "自動車の場合は第二神明「明石西IC」より北へ10分である",
+      "source": "https://tenma-jinja.com/access/",
+      "quote": "明石西IC」より北へ10分",
+      "checkedAt": "2026-10-29"
+    },
+    {
+      "claim": "参拝者は東大鳥居前駐車場・西側駐車場・南側駐車場の3つの駐車場を利用できる",
+      "source": "https://tenma-jinja.com/access/",
+      "quote": "東大鳥居前駐車場・西側駐車場・南側駐車場の3つの駐車場",
+      "checkedAt": "2026-10-29"
+    },
+    {
+      "claim": "車いす対応のスロープが用意されている",
+      "source": "https://tenma-jinja.com/access/",
+      "quote": "車いす対応のスロープを用意しています",
+      "checkedAt": "2026-10-29"
+    }
+  ],
+  "sources": [
+    {
+      "label": "公式サイト",
+      "url": "https://tenma-jinja.com/"
+    },
+    {
+      "label": "公式サイト(アクセス)",
+      "url": "https://tenma-jinja.com/access/"
+    },
+    {
+      "label": "公式サイト(神社案内)",
+      "url": "https://tenma-jinja.com/shrine_information/"
+    },
+    {
+      "label": "公式サイト(境内社)",
+      "url": "https://tenma-jinja.com/shrine_information/precinct_shine/"
+    },
+    {
+      "label": "公式サイト(兼務神社)",
+      "url": "https://tenma-jinja.com/shrine_information/concurrent_shrine/"
+    },
+    {
+      "label": "Google マップ",
+      "url": "https://maps.google.com/?cid=2960662092337937568"
+    }
+  ],
+  "notes": "automation/v2/write.mjs が 2026-10-29 に claude -p --model sonnet で作成。事実の裏取り: 13/14 件(quote が出どころにあるもの)。裏取りに通らなかった facts は載せていない。"
+}

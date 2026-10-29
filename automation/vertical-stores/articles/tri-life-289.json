@@ -1,0 +1,62 @@
+{
+  "key": "tri-life-289",
+  "headline": "兵庫県丹波市青垣町大名草にある高野山真言宗の寺院で、正式名称は愛宕山常瀧寺という",
+  "lede": "丹波市にある「常瀧寺（高野山真言宗 愛宕山 常瀧寺）」です。高野山真言宗に属する仏教寺院で、所在地は兵庫県丹波市青垣町大名草481です。電話番号は0795-87-5145です。",
+  "sections": [
+    {
+      "heading": "所在地",
+      "body": "住所は兵庫県丹波市青垣町大名草481です。電話番号は0795-87-5145です。"
+    },
+    {
+      "heading": "宗派",
+      "body": "高野山真言宗に属する仏教寺院で、正式名称は愛宕山常瀧寺です。"
+    }
+  ],
+  "menus": [],
+  "tags": [],
+  "facts": [
+    {
+      "claim": "店名は常瀧寺（高野山真言宗 愛宕山 常瀧寺）",
+      "source": "https://maps.google.com/?cid=14542130192630787692",
+      "quote": "常瀧寺（高野山真言宗 愛宕山 常瀧寺）",
+      "checkedAt": "2026-10-29"
+    },
+    {
+      "claim": "高野山真言宗 愛宕山 常瀧寺という名称を含む",
+      "source": "https://maps.google.com/?cid=14542130192630787692",
+      "quote": "高野山真言宗 愛宕山 常瀧寺",
+      "checkedAt": "2026-10-29"
+    },
+    {
+      "claim": "住所は兵庫県丹波市青垣町大名草481",
+      "source": "https://maps.google.com/?cid=14542130192630787692",
+      "quote": "兵庫県丹波市青垣町大名草４８１",
+      "checkedAt": "2026-10-29"
+    },
+    {
+      "claim": "電話番号は0795-87-5145",
+      "source": "https://maps.google.com/?cid=14542130192630787692",
+      "quote": "0795-87-5145",
+      "checkedAt": "2026-10-29"
+    },
+    {
+      "claim": "Googleマップの業種表示は仏教寺院",
+      "source": "https://maps.google.com/?cid=14542130192630787692",
+      "quote": "仏教寺院",
+      "checkedAt": "2026-10-29"
+    },
+    {
+      "claim": "市区町村は丹波市",
+      "source": "https://maps.google.com/?cid=14542130192630787692",
+      "quote": "丹波市",
+      "checkedAt": "2026-10-29"
+    }
+  ],
+  "sources": [
+    {
+      "label": "Google マップ",
+      "url": "https://maps.google.com/?cid=14542130192630787692"
+    }
+  ],
+  "notes": "automation/v2/write.mjs が 2026-10-29 に claude -p --model sonnet で作成。事実の裏取り: 6/6 件(quote が出どころにあるもの)。裏取りに通らなかった facts は載せていない。"
+}
