@@ -3,7 +3,7 @@ import Link from "next/link";
 import type { CSSProperties } from "react";
 import { torn, poly, type Pt } from "./torn";
 // 決まった言葉(machi2/copy.ts)。言い換えない・足さない・削らない
-import { P1_ONE, P3 } from "../machi2/copy";
+import { P2 } from "../machi2/copy";
 // 総合の特集一覧 /special(総合トップ本体と同じ行き先)
 import { HREF_SPECIAL, IMG as P4IMG, Arrow as P4Arrow } from "../p4/P4Chrome";
 
@@ -53,16 +53,19 @@ const NEWS: [string, string, string, string, string][] = [
   ["2026.10.26", "くらし", "b", "くらしのページを新しくしました", "/life"],
   ["2026.10.25", "スポーツ", "g", "スポーツのページを新しくしました", "/sports"],
 ];
-// 街の写真の帯の一文 = 決まった言葉 P1_ONE(一字一句そのまま。「。」の切れ目で 2 行に分けるだけ)
-const ONE = P1_ONE.match(/[^。]+。/g) ?? [P1_ONE];
-const ONE_L1 = ONE.slice(0, 2).join(""); // 店と出会う。人とつながる。
-const ONE_L2 = ONE.slice(2).join(""); // 輪が広がる。
-const P3_LINES = P3.split("\n"); // 右の説明(2 行)
+// 利用シーンの行き先 = 本番の総合トップ(p4/P4Home.tsx の SCENES)と同じ。写真は p4 の n_s0〜n_s3_hq。友人と = グルメの絞り込み / 家族と = アクティビティ / ひとりで = ボディケア / ペットと = ペット
+const SCENES: [string, string, string][] = [
+  ["友人と", "楽しむ", "/search?scene=group"],
+  ["家族と", "おでかけ", "/activity"],
+  ["ひとりで", "ゆっくり", "/bodycare"],
+  ["ペットと", "一緒に", "/pet"],
+];
+// 水色の札の言葉 = 決まった言葉 P2(一字一句そのまま。本番と同じく 1 行目は「、」で 2 行に分けるだけ)
+const P2_LINES = P2.split("\n");
 
 export default function Lower() {
   const feat = S(664);
   const peo = S(1003);
-  const city = S(1222);
 
   // 紙(破れた縁の多角形 + 地の質感 + 影)。box = 見本の座標の箱、verts = その中の多角形(見本の座標)。y は節の左上(y0)から測り直す
   const P = (y0: number, box: [number, number, number, number], verts: Pt[], seed: number, o: { amps?: number | number[]; step?: number; color?: string; shadow?: boolean; className?: string; plain?: boolean } = {}) => {
@@ -158,22 +161,27 @@ export default function Lower() {
           <img className="pl-a pl-autumn" src={`${IMG}autumn.webp`} alt="" width={207} height={137} loading="lazy" style={peo.a(905, 1075, 207, 137)} />
         </section>
 
-        {/* ───────── 街の写真の帯 + マチノワの説明 ───────── */}
-        <section className="pl-sec pl-city" style={sty({ "--h": 130 })} aria-label="マチノワ">
-          <i className="pl-citybleed pl-citybleed-l" aria-hidden="true" />
-          <i className="pl-citybleed" aria-hidden="true" />
-          {P(1222, [700, 1216, 422, 138], [[722, 1237], [731, 1222], [900, 1219], [1122, 1216], [1122, 1348], [1000, 1352], [706, 1354]], 81, { amps: [0, 1, 1, 0, 1.2, 1.2, 0], step: 13, color: "#f3eee4", shadow: false, className: "pl-citypaper" })}
-          <div className="pl-citywrap">
-            <div className="pl-a pl-cityphoto" style={city.a(0, 1214, 730, 140)}>
-              <img src={`${IMG}city.webp`} alt="" width={730} height={140} loading="lazy" style={{ clipPath: poly([0, 1214, 730, 140], [[0, 1244], [100, 1241], [200, 1239], [300, 1235], [380, 1232], [450, 1229], [500, 1225], [600, 1220], [730, 1217], [706, 1352], [0, 1352]]) }} />
+        {/* ───────── 利用シーン + 水色の札(本番の総合トップ p4 の「こんなシーンで楽しめる。」と「ひとつの店との出会い…」の札を横に並べた。街並みの帯と入れ替え。小さな英字 SCENE は出さない) ───────── */}
+        <section className="pl-sw" aria-label="利用シーンとマチノワのつながり">
+          <div className="pl-sw-scene">
+            <h2 className="pl-sw-h3">こんなシーンで楽しめる。</h2>
+            <p className="pl-sw-small">日常のあらゆるシーンで、マチノワがあなたの街時間を彩ります。</p>
+            <div className="pl-sw-scenes">
+              {SCENES.map(([a, b, href], i) => (
+                <Link key={a} href={href} className="pl-sw-scene-i">
+                  <img src={P4IMG + "n_s" + i + "_hq.webp"} alt="" width={434} height={531} loading="lazy" style={{ borderRadius: i % 2 ? "44% 44% 38% 38% / 30% 30% 22% 22%" : "46% 46% 36% 36% / 28% 28% 24% 24%" }} />
+                  <span>{a}<br />{b}</span>
+                </Link>
+              ))}
             </div>
-            <p className="pl-t pl-citycopy pl-citycopy-1" style={city.t(26, 1290, 19, 26)}>{ONE_L1}</p>
-            <p className="pl-t pl-citycopy pl-citycopy-2" style={city.t(62, 1316, 19, 26)}>{ONE_L2}</p>
           </div>
-          <span className="pl-t pl-logo pl-city-logo" style={city.t(750, 1263.5, 33, 38)} aria-hidden="true">マチノワ</span>
-          <span className="pl-t pl-logo-en pl-city-en" style={city.t(775, 1287, 7, 9)} aria-hidden="true">MACHINOWA</span>
-          <p className="pl-t pl-city-p" style={city.t(878, 1252.5, 10.3, 17.5)}>{P3_LINES[0]}<br />{P3_LINES[1]}</p>
-          <Link className="pl-a pl-btn pl-city-btn" href={HREF_SPECIAL} style={city.a(853, 1305, 166, 30)}>特集記事を見る<Arrow /></Link>
+          <div className="pl-sw-blue">
+            <img src={P4IMG + "n_art_cam.webp"} alt="" className="pl-sw-cam" width={116} height={104} loading="lazy" />
+            <div>
+              <h2 className="pl-sw-h4">{(P2_LINES[0].match(/[^、]+、/g) ?? [P2_LINES[0]]).map((t, i) => (i ? [<br key={"b" + i} />, t] : t))}</h2>
+              <p className="pl-sw-small">{P2_LINES[1]}</p>
+            </div>
+          </div>
         </section>
       </div>
     </div>
