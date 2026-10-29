@@ -39,9 +39,10 @@ body:has(.p4-page) > .cursor-dot, body:has(.p4-page) > .cursor-ring { display: n
 .p4-h1 span:nth-child(2) { left: calc(var(--u) * 54); top: calc(var(--u) * 142); }
 .p4-h1 span:nth-child(3) { left: calc(var(--u) * 70); top: calc(var(--u) * 200); }
 .p4-lead { position: absolute; left: calc(var(--u) * 52); top: calc(var(--u) * 282); font-size: max(12px, calc(var(--u) * 11.4)); letter-spacing: .05em; line-height: 1.75; color: #4a443d; white-space: nowrap; }
-.p4-street { position: absolute; bottom: calc(var(--u) * -4); left: calc(-1 * var(--bleed)); width: calc(var(--u) * 490 + var(--bleed)); height: calc(var(--u) * 250); overflow: hidden; }
+/* 窓の左は、ヒーローの左から最大 108.33u(本番 u=1.2 の 130px と同じ)まで。画面がそれより広いと窓の左端が画面の内側に入り、そこから 75u(本番の 90px)かけて左へ薄く消える(本番の「ぼやけて消える」と同じ)。画面の端までつなげたり反転でくり返したりしない */
+.p4-street { --sb: min(var(--bleed), calc(var(--u) * 108.33)); --fw: clamp(0px, calc((var(--bleed) - var(--sb)) * 1000), calc(var(--u) * 75)); position: absolute; bottom: calc(var(--u) * -4); left: calc(-1 * var(--sb)); width: calc(var(--u) * 490 + var(--sb)); height: calc(var(--u) * 250); overflow: hidden; -webkit-mask-image: linear-gradient(to right, transparent 0, #000 var(--fw)); mask-image: linear-gradient(to right, transparent 0, #000 var(--fw)); }
 /* 絵は 0.39u/px(元の切り出しの見え方と同じ大きさ)。窓の左端(画面の端)は絵の左から 390px の所、右端(490u)は 1869px の所 */
-.p4-street img { position: absolute; top: calc(var(--u) * 10); left: calc(var(--bleed) - var(--u) * 239); width: calc(var(--u) * 780); height: auto; }
+.p4-street img { position: absolute; top: calc(var(--u) * 10); left: calc(var(--sb) - var(--u) * 239); width: calc(var(--u) * 780); height: auto; }
 .p4-collage { position: absolute; left: calc(var(--u) * 308); top: 0; width: calc(var(--u) * 717); height: calc(var(--u) * 556); }
 .p4-blob { position: absolute; }
 .p4-blob-img { position: absolute; max-width: none; height: auto; display: block; }
@@ -53,8 +54,6 @@ body:has(.p4-page) > .cursor-dot, body:has(.p4-page) > .cursor-ring { display: n
 .p4-badge { position: absolute; }
 .p4-badge-t { position: absolute; left: 0; right: 0; top: calc(var(--u) * 38); text-align: center; font-family: var(--p4-yomo), "Klee One", "Yomogi", cursive; font-weight: 600; font-size: max(9.5px, calc(var(--u) * 15)); line-height: max(12px, calc(var(--u) * 22)); transform: rotate(-9deg); color: #3b352f; white-space: nowrap; letter-spacing: .02em; }
 .p4-badge-en { position: absolute; left: 0; right: 0; top: calc(var(--u) * 128); text-align: center; font-size: max(7px, calc(var(--u) * 8)); letter-spacing: .4em; color: #6a645c; transform: rotate(-4deg); }
-/* 横長モニターでは窓の左端(=画面の端)まで同じ絵を左右反転でつなげて、街並みが画面の左端まで続くようにする(絵の左端の木のところで鏡写しにつなぐ)。窓より狭い画面では幅 0 で出ない */
-.p4-street::before { content: ""; position: absolute; left: 0; top: calc(var(--u) * 10); height: calc(var(--u) * 260.3); width: max(0px, calc(var(--bleed) - var(--u) * 239)); background: url("/_portal/hproto/p4/n_art_street_hq.webp") left top / calc(var(--u) * 780) auto repeat-x; transform: scaleX(-1); }
 
 /* 共通の文字 */
 .p4-en { font-size: 11px; letter-spacing: .3em; color: #8a847b; line-height: 1.4; }
@@ -182,7 +181,7 @@ body:has(.p4-page) > .cursor-dot, body:has(.p4-page) > .cursor-ring { display: n
   .p4-h1 span:nth-child(3) { margin-left: 36px; }
   .p4-lead { position: static; font-size: 12.5px; margin-top: 16px; white-space: nowrap; letter-spacing: .03em; }
   /* 街並みの絵は縦積みでも PC と同じ窓(絵の 390〜1869px)を幅いっぱいに出す(背景は透明なので地とつながる) */
-  .p4-street { position: relative; left: auto; bottom: auto; width: 100%; max-width: 560px; height: auto; aspect-ratio: 1479 / 667; overflow: hidden; margin-top: 12px; }
+  .p4-street { position: relative; left: auto; bottom: auto; width: 100%; max-width: 560px; height: auto; aspect-ratio: 1479 / 667; overflow: hidden; margin-top: 12px; -webkit-mask-image: none; mask-image: none; }
   .p4-street img { top: 0; left: -26.37%; width: 135.23%; }
   .p4-collage { position: relative; left: auto; margin: 4px auto 0; width: calc(var(--u) * 717); height: calc(var(--u) * 556); }
 }
