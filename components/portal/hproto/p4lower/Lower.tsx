@@ -5,7 +5,7 @@ import { torn, poly, type Pt } from "./torn";
 // 決まった言葉(machi2/copy.ts)。言い換えない・足さない・削らない
 import { P1_ONE, P3 } from "../machi2/copy";
 // 総合の特集一覧 /special(総合トップ本体と同じ行き先)
-import { HREF_SPECIAL } from "../p4/P4Chrome";
+import { HREF_SPECIAL, IMG as P4IMG, Arrow as P4Arrow } from "../p4/P4Chrome";
 
 // 総合トップ(見本4)の「下半分」を、見本1(紙のコラージュ)の下半分の作りで組んだ試作。
 // 座標は見本1(1122px 幅)の画素 × var(--u)。紙・写真・手書きの飾りは見本1の試作(proto/hub-next)の部品。上半分と関係なく、この部品だけを差し替える。
@@ -122,16 +122,19 @@ export default function Lower() {
         {/* ───────── 街のひと + 新着情報 ───────── */}
         <section className="pl-sec pl-pn" style={sty({ "--h": 219 })} aria-label="街のひと・新着情報">
           {P(1003, [0, 1003, 492, 244], [[0, 1006], [60, 1004], [300, 1003], [492, 1004], [492, 1227], [450, 1230.5], [380, 1234], [300, 1237], [200, 1241], [100, 1243.5], [0, 1246]], 61, { amps: [1, 1, 1, 0, 1.2, 1.2, 1.2, 1.2, 1.2, 1.2, 0], step: 12, color: "#f4efe6", shadow: false, className: "pl-pback" })}
-          <div className="pl-peoplewrap">
-            <Link className="pl-a pl-people" href="#" style={peo.a(0, 1000, 490, 232)} aria-label="街のひとに会いに">
-              <img src={`${IMG}people_noen.webp`} alt="" width={490} height={232} loading="lazy" style={{ clipPath: poly([0, 1000, 490, 232], [[17, 1014.5], [107, 1003], [441, 1002], [485, 1210], [385, 1220], [250, 1227.5], [100, 1231.5], [0, 1232], [0, 1102], [5, 1077]]) }} />
-            </Link>
-            <p className="pl-a pl-vs pl-vs-c" style={peo.a(171.5, 1027, 27, 155)}>この街で生きる人が、</p>
-            <p className="pl-a pl-vs pl-vs-d" style={peo.a(143.5, 1027, 27.5, 187.5)}>街をおもしろくしていく。</p>
-            <Link className="pl-a pl-plabel" href="#" style={peo.a(14, 1166, 120, 54)}>
-              <b className="pl-t pl-plabel-t" style={sty({ "--x": 11, "--y": 18, "--fs": 12.2, "--lh": 16 })}>街のひとに会いに</b>
-              <Arrow className="pl-a pl-plabel-ar" style={sty({ "--x": 98, "--y": 36.9, "--w": 10.5, "--h": 5.25 })} />
-            </Link>
+          {/* 特集記事の欄(本番の総合トップ p4 の「特集記事」の段の左と中央を、そのまま縮めて置いた。小さな英字 FEATURE と筆記体 Connect The Town は、試作の「英語は外す」に合わせて出さない) */}
+          <div className="pl-a pl-about" style={peo.a(30, 1008, 452, 210)}>
+            <div className="pl-about-l">
+              <div className="pl-about-text">
+                <h2 className="p4-h4">特集記事</h2>
+                <p className="p4-small">マチノワで紹介しているお店の<br />特集記事をまとめています。</p>
+                <Link href={HREF_SPECIAL} className="p4-btn">特集記事を見る<P4Arrow /></Link>
+              </div>
+              <img src={P4IMG + "n_art_people.webp"} alt="" className="p4-people" width={114} height={136} loading="lazy" />
+            </div>
+            <div className="pl-about-c">
+              <img src={P4IMG + "n_city.webp"} alt="" className="p4-city" width={260} height={200} loading="lazy" style={{ clipPath: "url(#p4c-city)" }} />
+            </div>
           </div>
 
           {P(1003, [484, 1003, 638, 222], [[484, 1021], [494, 1009], [503, 1021], [512, 1011], [517, 1006], [1122, 1004], [1122, 1216], [1010, 1221], [740, 1223], [484, 1222]], 71, { amps: [0.8, 0.8, 0.8, 0.8, 0.8, 0, 1.2, 1.2, 1.2, 0.8], step: 14, color: "#fbf9f4", plain: true, className: "pl-npanel" })}

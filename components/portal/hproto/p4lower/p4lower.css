@@ -24,7 +24,7 @@
 .pl-root .pl-page { width: calc(1122 * var(--u)); margin: 0 auto; position: relative; }
 .pl-root .pl-sec { position: relative; height: calc(var(--h) * var(--u)); }
 .pl-root .pl-feat { z-index: 1; } .pl-pn { z-index: 3; } .pl-city { z-index: 2; }
-.pl-root .pl-citywrap, .pl-root .pl-fmain, .pl-root .pl-peoplewrap, .pl-root .pl-news, .pl-root .pl-news > li, .pl-root .pl-newsrow { display: contents; }
+.pl-root .pl-citywrap, .pl-root .pl-fmain, .pl-root .pl-news, .pl-root .pl-news > li, .pl-root .pl-newsrow { display: contents; }
 
 /* 紙(破れた縁 + 地の質感 + 影) */
 .pl-root .pl-pwrap { pointer-events: none; }
@@ -40,10 +40,6 @@
 .pl-root .pl-amb-city b { background-position: center 40%; }
 .pl-root .pl-logo { font-family: var(--p4-minb), var(--p4-min), serif; font-weight: 800; letter-spacing: -.11em; color: #1c1815; -webkit-text-stroke: .018em currentColor; }
 .pl-root .pl-logo-en { font-weight: 400; letter-spacing: .42em; color: #2a2521; font-family: var(--p4-min), serif; }
-.pl-root .pl-vs { writing-mode: vertical-rl; text-orientation: upright; background: #faf8f4; color: #201c19; font-weight: 600; line-height: 1; text-align: start; box-shadow: 0 1px 3px rgba(40, 25, 10, .3); font-feature-settings: "palt"; }
-.pl-root .pl-vs-c, .pl-root .pl-vs-d { font-size: calc(15.5 * var(--u)); letter-spacing: -.09em; font-weight: 600; }
-.pl-root .pl-vs-c { padding: calc(10.5 * var(--u)) calc(6.2 * var(--u)) 0 0; }
-.pl-root .pl-vs-d { padding: calc(5.5 * var(--u)) calc(6.5 * var(--u)) 0 0; }
 .pl-root .pl-btn { display: flex; align-items: center; justify-content: space-between; border: 1px solid #3a342f; color: #2a2521; font-weight: 400; letter-spacing: .03em; }
 .pl-root .pl-btn .pl-arrow { flex: none; }
 
@@ -67,11 +63,20 @@
 .pl-root .pl-fc-p { text-wrap: balance; font-weight: 500; letter-spacing: .01em; color: #4f4840; font-size: max(9.5px, calc(9.5 * var(--u))); line-height: 1.55; }
 .pl-root .pl-fc-ar { margin-top: auto; color: #3a342e; }
 
-/* ───── 街のひと + 新着情報 ───── */
-.pl-root .pl-people img { display: block; width: 100%; height: 100%; filter: drop-shadow(0 2px 3px rgba(40, 25, 10, .3)); }
-.pl-root .pl-plabel { background: #fbf9f4; clip-path: polygon(0 1%, 100% 17%, 100% 97%, 1% 100%); box-shadow: none; color: #26211d; }
-.pl-root .pl-plabel-t { font-weight: 600; letter-spacing: -.01em; color: #26211d; }
-.pl-root .pl-plabel-ar { color: #4a443d; }
+/* ───── 特集記事の欄(本番 p4 の「特集記事」の段の左・中央)+ 新着情報 ─────
+   本番の寸法(文字 24/14px・ボタン高さ 46px・絵 128px・写真 320px)を --k 倍に縮めて置く。--k = 0.65 × --u(1440px 幅で約 0.83 倍)。 */
+.pl-root .pl-about { --k: calc(.65 * var(--u)); display: flex; align-items: center; z-index: 1; }
+.pl-root .pl-about-l { display: flex; align-items: center; gap: calc(22 * var(--k)); }
+.pl-root .pl-about-text { flex: none; }
+.pl-root .pl-about .p4-h4 { font-size: calc(24 * var(--k)); margin-top: calc(4 * var(--k)); }
+.pl-root .pl-about .p4-small { font-size: max(11px, calc(14 * var(--k))); margin-top: 0; }
+.pl-root .pl-about .p4-btn { gap: calc(14 * var(--k)); border-radius: calc(24 * var(--k)); height: calc(46 * var(--k)); padding: 0 calc(28 * var(--k)); font-size: max(11px, calc(14 * var(--k))); margin-top: calc(20 * var(--k)); }
+.pl-root .pl-about .p4-btn svg { width: calc(16 * var(--k)); height: calc(7 * var(--k)); }
+.pl-root .pl-about .p4-people { width: calc(128 * var(--k)); height: auto; flex: none; }
+.pl-root .pl-about-c { margin-left: calc(4 * var(--k)); flex: none; }
+.pl-root .pl-about .p4-city { width: calc(320 * var(--k)); height: auto; max-width: none; }
+
+/* ───── 新着情報 ───── */
 .pl-root .pl-news-h { font-family: var(--p4-min), "Shippori Mincho", "Hiragino Mincho ProN", serif; font-weight: 500; color: #1c1815; letter-spacing: .06em; }
 .pl-root .pl-news-btn { background: #f3eee3; padding: 0 calc(11 * var(--u)) 0 calc(21 * var(--u)); font-size: calc(10 * var(--u)); font-weight: 400; }
 .pl-root .pl-nd { color: #4a443d; font-weight: 400; letter-spacing: .02em; }
@@ -99,7 +104,7 @@
   .pl-root .pl-sec { height: auto; }
   .pl-root :is(.pl-amb, .pl-featbleed, .pl-citybleed, .pl-citybleed-l, .pl-pwrap, .pl-nline, .pl-logo-en, .pl-featleft, .pl-featright, .pl-fcard, .pl-npanel, .pl-citypaper, .pl-fc-ar-d) { display: none; }
   .pl-root .pl-a, .pl-root .pl-t { position: static; left: auto; top: auto; width: auto; height: auto; font-size: calc(var(--fs, 12) * 1px); line-height: calc(var(--lh, 18) / var(--fs, 12)); white-space: normal; }
-  .pl-root .pl-citywrap, .pl-root .pl-fmain, .pl-root .pl-peoplewrap { display: block; }
+  .pl-root .pl-citywrap, .pl-root .pl-fmain { display: block; }
   /* 特集記事 */
   .pl-root .pl-feat { background: #efe7da; padding: 26px 16px 22px; }
   .pl-root .pl-feat-h { display: block; font-size: 28px !important; line-height: 1.2 !important; transform: none; }
@@ -117,14 +122,13 @@
   .pl-root .pl-fc-h { font-size: 13.5px; line-height: 1.45; }
   .pl-root .pl-fc-p { font-size: 10.5px; line-height: 1.6; font-weight: 500; }
   .pl-root .pl-fc-ar { margin-top: 2px; width: 16px; height: 8px; }
-  /* 街のひと + 新着情報 */
+  /* 特集記事の欄(本番 p4 のスマホと同じ: 文字・ボタン → 絵 を折り返し → 写真) */
+  .pl-root .pl-about { --k: 1px; display: block; padding: 26px 16px 4px; }
+  .pl-root .pl-about-l { flex-wrap: wrap; }
+  .pl-root .pl-about-c { margin: 24px 0 0; display: flex; justify-content: center; }
+  .pl-root .pl-about .p4-city { width: min(320px, 78vw); }
+  /* 新着情報 */
   .pl-root .pl-pn { background: #faf8f2; padding: 0 0 18px; }
-  .pl-root .pl-peoplewrap { --u: calc(min(100cqw, 560px) / 490); width: min(100%, 560px); position: relative; aspect-ratio: 490 / 232; }
-  .pl-root .pl-peoplewrap > .pl-a { position: absolute; left: calc(var(--x) * var(--u)); top: calc((var(--y) + 3) * var(--u)); width: calc(var(--w) * var(--u)); height: calc(var(--h) * var(--u)); }
-  .pl-root .pl-plabel .pl-t, .pl-root .pl-plabel .pl-a { position: absolute; left: calc(var(--x) * var(--u)); top: calc(var(--y) * var(--u)); font-size: calc(var(--fs, 10) * var(--u)); line-height: calc(var(--lh, 12) * var(--u)); white-space: nowrap; }
-  .pl-root .pl-plabel .pl-plabel-ar { width: calc(var(--w) * var(--u)); height: calc(var(--h) * var(--u)); }
-  .pl-root .pl-peoplewrap .pl-vs { font-size: calc(15.5 * var(--u)); }
-  .pl-root .pl-people img { clip-path: none !important; object-fit: cover; }
   .pl-root .pl-news-h { display: block; margin: 30px 16px 0; font-size: 24px !important; line-height: 1.2 !important; transform: none; }
   .pl-root .pl-news { display: block; margin: 8px 16px 0; }
   .pl-root .pl-news > li { display: block; border-bottom: 1px solid rgba(60, 45, 30, .12); }

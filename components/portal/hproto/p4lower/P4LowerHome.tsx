@@ -65,7 +65,7 @@ const BADGE_LINES = P1_ONE.match(/[^。]+。/g) ?? [P1_ONE]; // 店と出会う�
 const P3_LINES = P3.split("\n"); // ヒーローの小文(2 行)
 
 export default function P4LowerHome() {
-  const allShapes = [...HERO] as const;
+  const allShapes = [...HERO, "city"] as const; // "city" = 特集記事の欄の丸い街並みの写真の切り抜き(本番の p4 と同じ形)
   return (
     <div className="p4-page">
       {/* 切り抜きの形(objectBoundingBox) */}
