@@ -77,12 +77,11 @@ export default function Lower() {
   return (
     <div className="pl-root">
       <div className="pl-page">
-        {/* ───────── FEATURE ───────── */}
+        {/* ───────── 特集記事 ───────── */}
         <section className="pl-sec pl-feat" style={sty({ "--h": 339 })} aria-label="特集記事">
           <i className="pl-featbleed" aria-hidden="true" />
           {P(664, [0, 664, 268, 340], [[0, 677], [95, 667], [200, 673], [268, 681], [268, 1002], [0, 1000]], 41, { amps: [0, 1, 1, 0, 1.5, 0], step: 12, color: "#efe7da", shadow: false, className: "pl-featleft" })}
-          <h2 className="pl-t pl-feat-h" style={feat.t(28, 745, 51, 58)}>FEATURE</h2>
-          <p className="pl-t pl-feat-jp" style={feat.t(30, 790.5, 12, 14)}>特集記事</p>
+          <h2 className="pl-t pl-feat-h" style={feat.t(30, 768, 34, 44)}>特集記事</h2>
           <p className="pl-t pl-feat-lead" style={feat.t(31.5, 849.5, 14.5, 25)}>マチノワで紹介しているお店の<br />特集記事をまとめています。</p>
           <Link className="pl-a pl-btn pl-feat-btn" href={HREF_SPECIAL} style={feat.a(31, 914, 186, 38)}>特集をもっと見る<Arrow /></Link>
 
@@ -91,10 +90,10 @@ export default function Lower() {
               <img src={F_MAIN.img} alt="" width={960} height={960} loading="lazy" style={{ clipPath: poly([268, 682, 463, 330], [[268, 682], [731, 682], [731, 1012], [268, 1000]]) }} />
               <i className="pl-shade" aria-hidden="true" />
             </span>
-            <span className="pl-a pl-sptag" style={feat.a(289.5, 787, 133, 21)}>SPECIAL FEATURE</span>
+            <span className="pl-a pl-sptag" style={feat.a(289.5, 787, 52, 21)}>特集</span>
             <h3 className="pl-t pl-feat-mh" style={feat.t(290.5, 837, 24.5, 35.5)}>{F_MAIN.head[0]}<br />{F_MAIN.head[1]}</h3>
             <p className="pl-t pl-feat-mp" style={feat.t(290.5, 912.5, 12, 20.5)}>{F_MAIN.body[0]}<br />{F_MAIN.body[1]}<br />{F_MAIN.body[2]}</p>
-            <p className="pl-t pl-viewmore" style={feat.t(291, 980.5, 9, 12)}>VIEW MORE<Arrow /></p>
+            <p className="pl-t pl-viewmore" style={feat.t(291, 980.5, 10.5, 14)}>続きを見る<Arrow /></p>
             <Link className="pl-a pl-cover" href={F_MAIN.href} style={feat.a(268, 682, 463, 330)} aria-label={F_MAIN.head.join("")} />
           </div>
 
@@ -120,25 +119,23 @@ export default function Lower() {
           })}
         </section>
 
-        {/* ───────── 街のひと + LATEST NEWS ───────── */}
+        {/* ───────── 街のひと + 新着情報 ───────── */}
         <section className="pl-sec pl-pn" style={sty({ "--h": 219 })} aria-label="街のひと・新着情報">
           {P(1003, [0, 1003, 492, 244], [[0, 1006], [60, 1004], [300, 1003], [492, 1004], [492, 1227], [450, 1230.5], [380, 1234], [300, 1237], [200, 1241], [100, 1243.5], [0, 1246]], 61, { amps: [1, 1, 1, 0, 1.2, 1.2, 1.2, 1.2, 1.2, 1.2, 0], step: 12, color: "#f4efe6", shadow: false, className: "pl-pback" })}
           <div className="pl-peoplewrap">
             <Link className="pl-a pl-people" href="#" style={peo.a(0, 1000, 490, 232)} aria-label="街のひとに会いに">
-              <img src={`${IMG}people.webp`} alt="" width={490} height={232} loading="lazy" style={{ clipPath: poly([0, 1000, 490, 232], [[17, 1014.5], [107, 1003], [441, 1002], [485, 1210], [385, 1220], [250, 1227.5], [100, 1231.5], [0, 1232], [0, 1102], [5, 1077]]) }} />
+              <img src={`${IMG}people_noen.webp`} alt="" width={490} height={232} loading="lazy" style={{ clipPath: poly([0, 1000, 490, 232], [[17, 1014.5], [107, 1003], [441, 1002], [485, 1210], [385, 1220], [250, 1227.5], [100, 1231.5], [0, 1232], [0, 1102], [5, 1077]]) }} />
             </Link>
             <p className="pl-a pl-vs pl-vs-c" style={peo.a(171.5, 1027, 27, 155)}>この街で生きる人が、</p>
             <p className="pl-a pl-vs pl-vs-d" style={peo.a(143.5, 1027, 27.5, 187.5)}>街をおもしろくしていく。</p>
             <Link className="pl-a pl-plabel" href="#" style={peo.a(14, 1166, 120, 54)}>
-              <b className="pl-t pl-plabel-t" style={sty({ "--x": 11, "--y": 13.5, "--fs": 12.2, "--lh": 16 })}>街のひとに会いに</b>
-              <small className="pl-t pl-plabel-en" style={sty({ "--x": 12, "--y": 34, "--fs": 8.5, "--lh": 10 })}>PEOPLE<Arrow /></small>
+              <b className="pl-t pl-plabel-t" style={sty({ "--x": 11, "--y": 18, "--fs": 12.2, "--lh": 16 })}>街のひとに会いに</b>
               <Arrow className="pl-a pl-plabel-ar" style={sty({ "--x": 98, "--y": 36.9, "--w": 10.5, "--h": 5.25 })} />
             </Link>
           </div>
 
           {P(1003, [484, 1003, 638, 222], [[484, 1021], [494, 1009], [503, 1021], [512, 1011], [517, 1006], [1122, 1004], [1122, 1216], [1010, 1221], [740, 1223], [484, 1222]], 71, { amps: [0.8, 0.8, 0.8, 0.8, 0.8, 0, 1.2, 1.2, 1.2, 0.8], step: 14, color: "#fbf9f4", plain: true, className: "pl-npanel" })}
-          <h2 className="pl-t pl-news-h" style={peo.t(514.5, 1050.5, 25.5, 32)}>LATEST NEWS</h2>
-          <p className="pl-t pl-news-jp" style={peo.t(717, 1051.5, 10.4, 14)}>新着情報</p>
+          <h2 className="pl-t pl-news-h" style={peo.t(515.5, 1051, 24, 32)}>新着情報</h2>
           <Link className="pl-a pl-btn pl-news-btn" href="#" style={peo.a(919, 1039, 170, 26)}>新着情報をもっと見る<Arrow /></Link>
           <ul className="pl-news">
             {NEWS.map(([d, tag, tone, title, href], i) => {

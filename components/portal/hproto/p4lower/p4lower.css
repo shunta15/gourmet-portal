@@ -47,18 +47,17 @@
 .pl-root .pl-btn { display: flex; align-items: center; justify-content: space-between; border: 1px solid #3a342f; color: #2a2521; font-weight: 600; letter-spacing: .03em; }
 .pl-root .pl-btn .pl-arrow { flex: none; }
 
-/* ───── FEATURE ───── */
+/* ───── 特集記事 ───── */
 .pl-root .pl-featbleed { position: absolute; right: calc(100% - 1px); top: calc(677 * var(--u) - 664 * var(--u)); width: calc(var(--bl) + 1px); height: calc(323 * var(--u)); background: #efe7da; }
-.pl-root .pl-feat-h { font-weight: 500; color: #1c1815; letter-spacing: -.005em; transform-origin: 0 50%; transform: scaleX(var(--sx, .83)); }
-.pl-root .pl-feat-jp { font-weight: 600; letter-spacing: .5em; color: #2a2521; }
+.pl-root .pl-feat-h { font-family: var(--p4-minb), var(--p4-min), serif; font-weight: 800; color: #1c1815; letter-spacing: .06em; }
 .pl-root .pl-feat-lead { font-weight: 600; color: #2a2520; letter-spacing: .01em; }
 .pl-root .pl-feat-btn { border-color: #4a443d; padding: 0 calc(20 * var(--u)) 0 calc(21 * var(--u)); font-size: calc(11.5 * var(--u)); }
 .pl-root .pl-feat-main img { display: block; width: 100%; height: 100%; object-fit: cover; object-position: 50% 42%; }
 .pl-root .pl-shade { position: absolute; inset: 0; background: linear-gradient(90deg, rgba(24, 14, 6, .66) 0, rgba(24, 14, 6, .38) 55%, rgba(24, 14, 6, .08) 100%), linear-gradient(0deg, rgba(24, 14, 6, .5) 0, transparent 45%); }
-.pl-root .pl-sptag { display: grid; place-items: center; background: #8a351e; color: #f4e8de; font-size: calc(8.8 * var(--u)); letter-spacing: .15em; font-weight: 500; }
+.pl-root .pl-sptag { display: grid; place-items: center; background: #8a351e; color: #f4e8de; font-size: calc(11 * var(--u)); letter-spacing: .12em; font-weight: 600; }
 .pl-root .pl-feat-mh { font-weight: 600; color: #fff; letter-spacing: -.02em; text-shadow: 0 1px 6px rgba(0, 0, 0, .5); }
 .pl-root .pl-feat-mp { font-weight: 500; color: #f6efe7; letter-spacing: 0; text-shadow: 0 1px 4px rgba(0, 0, 0, .5); }
-.pl-root .pl-viewmore { display: flex; align-items: center; gap: calc(9 * var(--u)); color: #f6efe7; letter-spacing: .15em; font-weight: 500; text-shadow: 0 1px 3px rgba(0, 0, 0, .5); }
+.pl-root .pl-viewmore { display: flex; align-items: center; gap: calc(9 * var(--u)); color: #f6efe7; letter-spacing: .1em; font-weight: 600; text-shadow: 0 1px 3px rgba(0, 0, 0, .5); }
 .pl-root .pl-cover { z-index: 2; }
 .pl-root .pl-feat-s { background: #fbf9f4; padding: 0; box-shadow: 0 0 0 calc(2.5 * var(--u)) #fbf9f4, 0 1px 4px rgba(40, 25, 10, .25); }
 .pl-root .pl-feat-s img { width: 100%; height: 100%; object-fit: cover; }
@@ -68,14 +67,12 @@
 .pl-root .pl-fc-p { text-wrap: balance; font-weight: 700; letter-spacing: .01em; color: #4f4840; font-size: max(9.5px, calc(9.5 * var(--u))); line-height: 1.55; }
 .pl-root .pl-fc-ar { margin-top: auto; color: #3a342e; }
 
-/* ───── 街のひと + LATEST NEWS ───── */
+/* ───── 街のひと + 新着情報 ───── */
 .pl-root .pl-people img { display: block; width: 100%; height: 100%; filter: drop-shadow(0 2px 3px rgba(40, 25, 10, .3)); }
 .pl-root .pl-plabel { background: #fbf9f4; clip-path: polygon(0 1%, 100% 17%, 100% 97%, 1% 100%); box-shadow: none; color: #26211d; }
 .pl-root .pl-plabel-t { font-weight: 600; letter-spacing: -.01em; color: #26211d; }
-.pl-root .pl-plabel-en { display: flex; align-items: center; gap: calc(8 * var(--u)); letter-spacing: .15em; color: #6f6a62; font-weight: 500; }
 .pl-root .pl-plabel-ar { color: #4a443d; }
-.pl-root .pl-news-h { font-weight: 500; color: #1c1815; letter-spacing: -.005em; transform-origin: 0 50%; transform: scaleX(var(--sx, .96)); }
-.pl-root .pl-news-jp { font-weight: 700; letter-spacing: .22em; color: #2a2521; }
+.pl-root .pl-news-h { font-family: var(--p4-minb), var(--p4-min), serif; font-weight: 800; color: #1c1815; letter-spacing: .06em; }
 .pl-root .pl-news-btn { background: #f3eee3; padding: 0 calc(11 * var(--u)) 0 calc(21 * var(--u)); font-size: calc(10 * var(--u)); font-weight: 500; }
 .pl-root .pl-nd { color: #4a443d; font-weight: 500; letter-spacing: .02em; }
 .pl-root .pl-chip { display: grid; place-items: center; font-size: calc(10.3 * var(--u)); font-weight: 600; color: #3a342e; letter-spacing: .04em; }
@@ -103,11 +100,10 @@
   .pl-root :is(.pl-amb, .pl-featbleed, .pl-citybleed, .pl-citybleed-l, .pl-pwrap, .pl-nline, .pl-logo-en, .pl-featleft, .pl-featright, .pl-fcard, .pl-npanel, .pl-citypaper, .pl-fc-ar-d) { display: none; }
   .pl-root .pl-a, .pl-root .pl-t { position: static; left: auto; top: auto; width: auto; height: auto; font-size: calc(var(--fs, 12) * 1px); line-height: calc(var(--lh, 18) / var(--fs, 12)); white-space: normal; }
   .pl-root .pl-citywrap, .pl-root .pl-fmain, .pl-root .pl-peoplewrap { display: block; }
-  /* FEATURE */
+  /* 特集記事 */
   .pl-root .pl-feat { background: #efe7da; padding: 26px 16px 22px; }
-  .pl-root .pl-feat-h { display: block; font-size: 42px !important; line-height: 1.1 !important; transform: none; }
-  .pl-root .pl-feat-jp { display: block; font-size: 10px !important; margin-top: 8px; }
-  .pl-root .pl-feat-lead { display: block; margin-top: 18px; font-size: 14px !important; line-height: 1.8 !important; }
+  .pl-root .pl-feat-h { display: block; font-size: 28px !important; line-height: 1.2 !important; transform: none; }
+  .pl-root .pl-feat-lead { display: block; margin-top: 14px; font-size: 14px !important; line-height: 1.8 !important; }
   .pl-root .pl-feat-btn { margin-top: 16px; width: 100%; height: 40px; font-size: 12px; }
   /* 特集の大きな札は、PC の組み方を札の幅に合わせて縮めたまま出す(文字は写真の上) */
   .pl-root .pl-fmain { --u: calc(min(100cqw - 32px, 600px) / 463); width: min(100%, 600px); position: relative; margin-top: 22px; aspect-ratio: 463 / 330; }
@@ -121,7 +117,7 @@
   .pl-root .pl-fc-h { font-size: 13.5px; line-height: 1.45; }
   .pl-root .pl-fc-p { font-size: 10.5px; line-height: 1.6; font-weight: 600; }
   .pl-root .pl-fc-ar { margin-top: 2px; width: 16px; height: 8px; }
-  /* 街のひと + NEWS */
+  /* 街のひと + 新着情報 */
   .pl-root .pl-pn { background: #faf8f2; padding: 0 0 18px; }
   .pl-root .pl-peoplewrap { --u: calc(min(100cqw, 560px) / 490); width: min(100%, 560px); position: relative; aspect-ratio: 490 / 232; }
   .pl-root .pl-peoplewrap > .pl-a { position: absolute; left: calc(var(--x) * var(--u)); top: calc((var(--y) + 3) * var(--u)); width: calc(var(--w) * var(--u)); height: calc(var(--h) * var(--u)); }
@@ -129,8 +125,7 @@
   .pl-root .pl-plabel .pl-plabel-ar { width: calc(var(--w) * var(--u)); height: calc(var(--h) * var(--u)); }
   .pl-root .pl-peoplewrap .pl-vs { font-size: calc(15.5 * var(--u)); }
   .pl-root .pl-people img { clip-path: none !important; object-fit: cover; }
-  .pl-root .pl-news-h { display: block; margin: 30px 16px 0; font-size: 27px !important; line-height: 1.2 !important; transform: none; }
-  .pl-root .pl-news-jp { display: block; margin: 2px 16px 0; font-size: 10px !important; }
+  .pl-root .pl-news-h { display: block; margin: 30px 16px 0; font-size: 24px !important; line-height: 1.2 !important; transform: none; }
   .pl-root .pl-news { display: block; margin: 8px 16px 0; }
   .pl-root .pl-news > li { display: block; border-bottom: 1px solid rgba(60, 45, 30, .12); }
   .pl-root .pl-newsrow { display: grid; grid-template-columns: 86px auto; justify-content: start; align-items: center; gap: 4px 10px; padding: 11px 0; }

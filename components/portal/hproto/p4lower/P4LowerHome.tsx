@@ -143,17 +143,15 @@ export default function P4LowerHome() {
       <section className="p4-catsec" aria-label="カテゴリー">
         <div className="p4-catsec-head">
           <div className="p4-catsec-title">
-            <p className="p4-en">CATEGORY</p>
             <h2 className="p4-h2">8つのカテゴリーから見つける、街の楽しみ方。</h2>
           </div>
           <p className="p4-sub">グルメからくらしまで、あなたの「好き」がきっと見つかる。</p>
         </div>
         <div className="p4-cats">
-          {CATS.map(([k, ja, en], i) => (
+          {CATS.map(([k, ja], i) => (
             <Link key={k} href={"/" + k} className="p4-cat">
               <img src={IMG + "n_cat_" + k + ".webp"} alt="" style={{ borderRadius: CAT_R[i % 4] }} />
               <span className="p4-cat-ja">{ja}</span>
-              <span className="p4-cat-en">{en}</span>
             </Link>
           ))}
         </div>
