@@ -2,8 +2,8 @@
  "_note": "自動生成(automation/news-dates/build-news-dates.mjs)。手で編集しない。値は『その ID が、載っている状態で ref の first-parent に入った日時(UTC)』。",
  "generatedFrom": {
   "ref": "origin/main",
-  "head": "9e2ba87ff236df02daa1bf4abae3c3179cbd273c",
-  "commitsScanned": 664
+  "head": "c24eeaf57d0be5d16665805e1651b807f40bc669",
+  "commitsScanned": 665
  },
  "stores": {
   "gourmet": {
