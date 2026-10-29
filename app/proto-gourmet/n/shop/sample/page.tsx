@@ -1,10 +1,11 @@
 import Shell from "@/components/portal/gnoren/common/Shell";
+import ShopPage from "@/components/portal/gnoren/shop/ShopPage";
 
-// 仮の置き場(土台)。ページ担当が中身を作り直す。店舗紹介(見本 3)
+// 店舗紹介(見本 3)。見本どおりの再現。中身は components/portal/gnoren/shop/data.ts
 export default function Page() {
   return (
     <Shell page="shop">
-      <main style={{ minHeight: "60vh", padding: "120px 24px 80px", textAlign: "center" }}>店舗紹介(見本 3)</main>
+      <ShopPage />
     </Shell>
   );
 }

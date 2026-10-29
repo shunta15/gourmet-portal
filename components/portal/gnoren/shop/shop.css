@@ -1,0 +1,257 @@
+/* 店舗紹介(見本 3)の CSS。接頭辞 gn-shop-。PC(>=769px)は --u(見本 1px)で見本の座標どおり、スマホ(<=768px)は縦 1 列。
+   ※ このファイルは scratch の u(N) 記法から生成している(u(N) = calc(var(--u) * N))。 */
+
+.gn-shop { position: relative; font-weight: 500; }
+.gn-root .gn-shop img { max-width: none; }
+.gn-shop-script, .gn-shop-leaf, .gn-shop-twig, .gn-shop-sprig { pointer-events: none; user-select: none; }
+
+/* 共通の見出し・矢印リンク */
+.gn-shop-h2 { font-family: var(--gn-f-mincho); font-weight: 700; color: #111; margin: 0; }
+.gn-shop .gn-shop-more { color: #a8472c; font-weight: 700; display: inline-flex; align-items: center; white-space: nowrap; }
+.gn-shop-more svg { display: block; }
+
+/* ふわっと現れる(動きを減らす設定では出さない) */
+@keyframes gn-shop-up { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: none; } }
+@media (prefers-reduced-motion: no-preference) {
+  .gn-shop-catch, .gn-shop-strips, .gn-shop-intro, .gn-shop-menu, .gn-shop-gallery, .gn-shop-card, .gn-shop-scenes { animation: gn-shop-up .7s cubic-bezier(.2, .7, .2, 1) both; }
+  .gn-shop-intro { animation-delay: .05s; } .gn-shop-menu { animation-delay: .12s; } .gn-shop-gallery { animation-delay: .18s; } .gn-shop-card { animation-delay: .1s; }
+  .gn-shop-strips { animation-delay: .25s; }
+}
+
+/* ライトボックス */
+.gn-shop-lb { position: fixed; inset: 0; z-index: 200; background: rgba(28, 22, 18, .88); display: grid; place-items: center; padding: 24px; }
+.gn-shop-lb-fig { margin: 0; max-width: min(1100px, 100%); display: grid; gap: 10px; justify-items: center; }
+.gn-shop-lb-fig img { max-width: 100%; max-height: 78vh; width: auto; height: auto; border-radius: 6px; box-shadow: 0 10px 40px rgba(0, 0, 0, .5); background: #222; }
+.gn-shop-lb-fig figcaption { color: #f1e9de; font-size: 14px; letter-spacing: .06em; text-align: center; }
+.gn-shop-lb-close, .gn-shop-lb-nav { position: absolute; width: 48px; height: 48px; border-radius: 50%; border: 1px solid rgba(255, 255, 255, .35); background: rgba(255, 255, 255, .1); color: #fff; display: grid; place-items: center; padding: 0; cursor: pointer; }
+.gn-shop-lb-close:hover, .gn-shop-lb-nav:hover { background: rgba(255, 255, 255, .22); }
+.gn-shop-lb-close { top: 16px; right: 16px; }
+.gn-shop-lb-nav { top: 50%; margin-top: -24px; }
+.gn-shop-lb-prev { left: 14px; } .gn-shop-lb-next { right: 14px; }
+.gn-shop-lb svg { width: 22px; height: 22px; fill: none; stroke: currentColor; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; }
+.gn-shop-lb button:focus-visible { outline: 2px solid #fff; outline-offset: 2px; }
+
+/* ═════════ PC ═════════ */
+@media (min-width: 769px) {
+  .gn-shop { padding-bottom: calc(var(--u) * 30); }
+  .gn-shop-hero { height: calc(var(--u) * 496); }
+  .gn-shop-herobg { position: absolute; inset: 0; width: 100%; height: 100%; max-width: none; }
+  .gn-shop-band { position: absolute; inset: 0; }
+
+  /* 暖簾の文字(麻の布は画像・文字は HTML) */
+  .gn-shop-n-sub, .gn-shop-n-name, .gn-shop-n-kaze { position: absolute; color: #1a1411; white-space: nowrap; }
+  .gn-shop-n-sub { left: calc(var(--u) * 332); top: calc(var(--u) * 112); font-size: calc(var(--u) * 18.5); letter-spacing: .01em; line-height: calc(var(--u) * 32); font-weight: 500; }
+  .gn-shop-n-name { left: calc(var(--u) * 318); top: calc(var(--u) * 152); font-size: calc(var(--u) * 52.5); letter-spacing: .03em; line-height: calc(var(--u) * 70); font-weight: 500; }
+  .gn-shop-n-kaze { left: calc(var(--u) * 357); top: calc(var(--u) * 223); font-size: calc(var(--u) * 10.3); letter-spacing: .27em; line-height: calc(var(--u) * 20); font-weight: 600; color: #3a2b22; }
+
+  /* 縦の短冊(紙は画像・文字は HTML) */
+  .gn-shop-strip { position: absolute; width: calc(var(--u) * 40); writing-mode: vertical-rl; text-orientation: upright; color: #6b3628; font-size: calc(var(--u) * 19); font-weight: 600; padding-top: calc(var(--u) * 17.5); text-align: start; white-space: nowrap; display: flex; justify-content: flex-start; }
+  .gn-shop-strip span { display: block; }
+  .gn-shop-strip-1 { left: calc(var(--u) * 1005); top: calc(var(--u) * 68); height: calc(var(--u) * 166); letter-spacing: .115em; }
+  .gn-shop-strip-2 { left: calc(var(--u) * 957); top: calc(var(--u) * 89); height: calc(var(--u) * 125); letter-spacing: .06em; }
+  .gn-shop-strip-3 { left: calc(var(--u) * 909); top: calc(var(--u) * 109); height: calc(var(--u) * 165); letter-spacing: .1em; }
+
+  /* キャッチ */
+  .gn-shop-catch { position: absolute; left: calc(var(--u) * 76); top: calc(var(--u) * 292); }
+  .gn-shop-catch-h { font-size: calc(var(--u) * 27); line-height: calc(var(--u) * 40); letter-spacing: 0; font-weight: 600; color: #17342b; margin: 0; }
+  .gn-shop-catch-h span, .gn-shop-catch-p span, .gn-shop-desc span, .gn-shop-item-d span, .gn-shop-sc-t span, .gn-shop-row dd > span { display: block; }
+  .gn-shop-catch-p { margin: calc(var(--u) * 8.75) 0 0; font-size: calc(var(--u) * 11.7); line-height: calc(var(--u) * 19.5); letter-spacing: .08em; color: #6a6461; font-weight: 700; white-space: nowrap; }
+
+  /* 本体: 左(本文)+ 右(店舗情報) */
+  .gn-shop-body { display: grid; grid-template-columns: calc(var(--u) * 690) calc(var(--u) * 250); column-gap: calc(var(--u) * 42); justify-content: start; padding-left: calc(var(--u) * 74); padding-top: calc(var(--u) * 14); align-items: start; }
+  .gn-shop-col { min-width: 0; }
+
+  /* 紹介 */
+  .gn-shop-intro { position: relative; height: calc(var(--u) * 203); }
+  .gn-shop-tags { display: flex; gap: calc(var(--u) * 6); margin-left: calc(var(--u) * -4); }
+  .gn-shop-tag { display: flex; align-items: center; height: calc(var(--u) * 28); border-radius: 999px; background: #fff; box-shadow: 0 calc(var(--u) * 2) calc(var(--u) * 7) rgba(125, 92, 60, .17); font-weight: 700; font-size: calc(var(--u) * 11.5); color: #3d3d3c; letter-spacing: .05em; white-space: nowrap; }
+  .gn-shop-tag-ic { flex: none; height: auto; }
+  .gn-shop-tag-bowl { width: calc(var(--u) * 77); padding-left: calc(var(--u) * 8); gap: calc(var(--u) * 4.3); }
+  .gn-shop-tag-cup { width: calc(var(--u) * 117); padding-left: calc(var(--u) * 9); gap: calc(var(--u) * 2); margin-left: calc(var(--u) * 2); }
+  .gn-shop-tag-pin { width: calc(var(--u) * 111); padding-left: calc(var(--u) * 12); gap: calc(var(--u) * 9.3); margin-left: calc(var(--u) * 1); }
+  .gn-shop-tag-bowl .gn-shop-tag-ic { width: calc(var(--u) * 25.7); }
+  .gn-shop-tag-cup .gn-shop-tag-ic { width: calc(var(--u) * 23.5); }
+  .gn-shop-tag-pin .gn-shop-tag-ic { width: calc(var(--u) * 13.5); }
+  .gn-shop-h1 { position: absolute; left: calc(var(--u) * -5); top: calc(var(--u) * 54); margin: 0; font-size: calc(var(--u) * 33); line-height: calc(var(--u) * 46); font-weight: 600; letter-spacing: .01em; color: #0d0b0a; white-space: nowrap; }
+  .gn-shop-h1-a, .gn-shop-h1-b { display: inline; }
+  .gn-shop-h1-b { letter-spacing: .27em; margin-right: -.27em; }
+  .gn-shop-h1-a { margin-right: .62em; }
+  .gn-shop-h1 ruby { ruby-position: over; ruby-align: center; }
+  .gn-shop-h1 rt { font-size: calc(var(--u) * 10.5); letter-spacing: .55em; font-weight: 700; color: #3f3a3d; line-height: 1; transform: translateY(calc(var(--u) * -18)); }
+  .gn-shop-desc { position: absolute; left: calc(var(--u) * 1); top: calc(var(--u) * 114); margin: 0; font-size: calc(var(--u) * 12.5); line-height: calc(var(--u) * 20.5); letter-spacing: .068em; color: #6c6762; font-weight: 700; white-space: nowrap; }
+  .gn-shop-leaf { position: absolute; left: calc(var(--u) * 553); top: calc(var(--u) * 4); width: calc(var(--u) * 128); height: auto; }
+  .gn-shop-script { position: absolute; left: calc(var(--u) * 478); top: calc(var(--u) * 97); width: calc(var(--u) * 150); height: auto; }
+
+  /* おすすめメニュー */
+  .gn-shop-menu { margin-top: calc(var(--u) * 0); }
+  .gn-shop-head { position: relative; height: calc(var(--u) * 34); }
+  .gn-shop-h2 { font-size: calc(var(--u) * 23.5); letter-spacing: .06em; line-height: calc(var(--u) * 34); white-space: nowrap; }
+  .gn-shop-menu .gn-shop-more { position: absolute; right: calc(var(--u) * 2); top: calc(var(--u) * 18); font-size: calc(var(--u) * 10.5); letter-spacing: .06em; line-height: calc(var(--u) * 14); border-bottom: calc(var(--u) * 1.5) solid rgba(179, 84, 49, .75); padding-bottom: calc(var(--u) * 1); gap: calc(var(--u) * 5); }
+  .gn-shop-more svg { width: calc(var(--u) * 10); height: auto; }
+  .gn-shop-menu-list { display: flex; margin-top: calc(var(--u) * 8); }
+  .gn-shop-item-ph { height: calc(var(--u) * 143); border-radius: calc(var(--u) * 4); overflow: hidden; }
+  .gn-shop-item-ph img { width: 100%; height: 100%; object-fit: cover; max-width: none; }
+  .gn-shop-item { flex: none; }
+  .gn-shop-item-1 { width: calc(var(--u) * 216); } .gn-shop-item-2 { width: calc(var(--u) * 156); margin-left: calc(var(--u) * 10); } .gn-shop-item-3 { width: calc(var(--u) * 131); margin-left: calc(var(--u) * 9); } .gn-shop-item-4 { width: calc(var(--u) * 156); margin-left: calc(var(--u) * 10); }
+  .gn-shop-item-n { margin: calc(var(--u) * 5) 0 0 calc(var(--u) * 3); font-size: calc(var(--u) * 14); line-height: calc(var(--u) * 20); letter-spacing: .06em; font-weight: 700; color: #161416; white-space: nowrap; }
+  .gn-shop-item-pr { margin: calc(var(--u) * 1) 0 0 calc(var(--u) * 8); font-size: calc(var(--u) * 12.2); line-height: calc(var(--u) * 18); letter-spacing: .04em; color: #b0745a; font-weight: 500; }
+  .gn-shop-item-d { margin: calc(var(--u) * 6) 0 0 calc(var(--u) * 1); font-size: calc(var(--u) * 9.5); line-height: calc(var(--u) * 16); letter-spacing: .045em; color: #8b8682; font-weight: 700; white-space: nowrap; }
+
+  /* 店内の様子 */
+  .gn-shop-gallery { margin-top: calc(var(--u) * 27); }
+  .gn-shop-head-gal .gn-shop-lead { position: absolute; left: calc(var(--u) * 133); top: calc(var(--u) * 14); margin: 0; font-size: calc(var(--u) * 9.5); line-height: calc(var(--u) * 14); letter-spacing: .07em; color: #858382; font-weight: 700; white-space: nowrap; }
+  .gn-shop-head-gal .gn-shop-more { position: absolute; right: calc(var(--u) * 1); top: calc(var(--u) * 14); font-size: calc(var(--u) * 10); letter-spacing: .05em; line-height: calc(var(--u) * 14); border-bottom: calc(var(--u) * 1.5) solid rgba(179, 84, 49, .75); padding-bottom: calc(var(--u) * 1); gap: calc(var(--u) * 5); }
+  .gn-shop-gal { position: relative; height: calc(var(--u) * 208); margin-top: calc(var(--u) * 7); }
+  .gn-shop-gal-i { position: absolute; }
+  .gn-shop-gal-btn { display: block; width: 100%; height: 100%; padding: 0; border: 0; background: transparent; border-radius: calc(var(--u) * 4); overflow: hidden; cursor: zoom-in; }
+  .gn-shop-gal-btn img { width: 100%; height: 100%; object-fit: cover; max-width: none; transition: transform .5s ease; }
+  .gn-shop-gal-btn:hover img { transform: scale(1.04); }
+  .gn-shop-gal-btn:focus-visible { outline: 2px solid #b35431; outline-offset: 2px; }
+  .gn-shop-gal-1 { left: 0; top: 0; width: calc(var(--u) * 367); height: calc(var(--u) * 208); }
+  .gn-shop-gal-2 { left: calc(var(--u) * 377); top: 0; width: calc(var(--u) * 141); height: calc(var(--u) * 95); }
+  .gn-shop-gal-3 { left: calc(var(--u) * 525); top: 0; width: calc(var(--u) * 165); height: calc(var(--u) * 94); }
+  .gn-shop-gal-4 { left: calc(var(--u) * 377); top: calc(var(--u) * 100); width: calc(var(--u) * 169); height: calc(var(--u) * 108); }
+  .gn-shop-gal-5 { left: calc(var(--u) * 553); top: calc(var(--u) * 100); width: calc(var(--u) * 137); height: calc(var(--u) * 108); }
+
+  /* 店舗情報(右・スクロールしても付いてくる) */
+  .gn-shop-aside { height: calc(var(--u) * 792); margin-bottom: calc(var(--u) * -44); position: relative; margin-top: calc(var(--u) * -2); }
+  .gn-shop-card { position: sticky; top: calc(var(--u) * 72); height: calc(var(--u) * 673); }
+  .gn-shop-card-top { position: absolute; left: 0; right: 0; top: 0; height: calc(var(--u) * 74); }
+  .gn-shop-card-noren { position: absolute; left: calc(var(--u) * -6); top: calc(var(--u) * -5); width: calc(var(--u) * 264); max-width: none; height: auto; }
+  .gn-shop-card-h { position: absolute; left: calc(var(--u) * 21); top: calc(var(--u) * 32); margin: 0; font-size: calc(var(--u) * 17.5); line-height: calc(var(--u) * 34); letter-spacing: .08em; font-weight: 600; color: #080808; white-space: nowrap; }
+  .gn-shop-info { position: absolute; left: 0; right: 0; top: calc(var(--u) * 74); margin: 0; background: #f7f5f0; height: calc(var(--u) * 599); border-radius: 0 0 calc(var(--u) * 6) calc(var(--u) * 6); box-shadow: 0 calc(var(--u) * 1) calc(var(--u) * 3) rgba(120, 100, 80, .09); }
+  .gn-shop-row { position: relative; margin: 0; height: var(--h); }
+  .gn-shop-row::after { content: ""; position: absolute; left: calc(var(--u) * 14); right: calc(var(--u) * 10); bottom: 0; height: 1px; background: #efebe3; }
+  .gn-shop-row dt { position: absolute; left: calc(var(--u) * 14); top: calc(var(--pt) + calc(var(--u) * 2)); display: flex; align-items: center; margin: 0; font-size: calc(var(--u) * 10.5); letter-spacing: .07em; line-height: calc(var(--u) * 17.5); color: #4d4946; font-weight: 700; white-space: nowrap; }
+  .gn-shop-row-ic { width: calc(var(--u) * 19); height: calc(var(--u) * 19); margin-right: calc(var(--u) * 11); flex: none; margin-left: calc(var(--u) * 0.5); }
+  .gn-shop-row dd { margin: 0; padding: var(--pt) 0 0 var(--vx); font-size: calc(var(--u) * 10.8); line-height: calc(var(--u) * 17.5); letter-spacing: .035em; color: #55504c; font-weight: 500; white-space: nowrap; }
+  .gn-shop-row-addr { --h: calc(var(--u) * 108); --pt: calc(var(--u) * 19); --vx: calc(var(--u) * 106); }
+  .gn-shop-row-hours { --h: calc(var(--u) * 53); --pt: calc(var(--u) * 8.5); --vx: calc(var(--u) * 111); }
+  .gn-shop-row-closed { --h: calc(var(--u) * 56); --pt: calc(var(--u) * 9.5); --vx: calc(var(--u) * 112); }
+  .gn-shop-row-tel { --h: calc(var(--u) * 41); --pt: calc(var(--u) * 11.75); --vx: calc(var(--u) * 114); }
+  .gn-shop-row-seats { --h: calc(var(--u) * 58); --pt: calc(var(--u) * 10.5); --vx: calc(var(--u) * 113); }
+  .gn-shop-row-smoke { --h: calc(var(--u) * 44); --pt: calc(var(--u) * 13.75); --vx: calc(var(--u) * 115); }
+  .gn-shop-row-access { --h: calc(var(--u) * 43); --pt: calc(var(--u) * 11.75); --vx: calc(var(--u) * 113); }
+  .gn-shop-row-tel dd, .gn-shop-row-hours dd { font-size: calc(var(--u) * 11.5); letter-spacing: .06em; }
+  .gn-shop-row-ic { color: #5b4a40; }
+
+  .gn-shop .gn-shop-btn { display: inline-flex; align-items: center; justify-content: center; color: #fff; background: linear-gradient(180deg, #b4573a, #a24a2f); border-radius: 999px; white-space: nowrap; box-shadow: 0 calc(var(--u) * 2) calc(var(--u) * 5) rgba(140, 60, 30, .22); }
+  .gn-shop-btn:hover { filter: brightness(1.06); }
+  .gn-shop-btn:focus-visible { outline: 2px solid #5b2a18; outline-offset: 2px; }
+  .gn-shop-btn svg { width: calc(var(--u) * 13); height: auto; margin-left: calc(var(--u) * 7); }
+  .gn-shop-btn-s { margin-top: calc(var(--u) * 11); width: calc(var(--u) * 125); height: calc(var(--u) * 27); margin-left: calc(var(--u) * -5); font-size: calc(var(--u) * 12.5); letter-spacing: .1em; font-weight: 500; }
+  .gn-shop-map { position: absolute; left: calc(var(--u) * 14); top: calc(var(--u) * 487); width: calc(var(--u) * 227); height: calc(var(--u) * 173); }
+  .gn-shop-map img { width: 100%; height: 100%; max-width: none; }
+  .gn-shop-btn-g { position: absolute; left: calc(var(--u) * 22); top: calc(var(--u) * 135); width: calc(var(--u) * 181); height: calc(var(--u) * 31); font-size: calc(var(--u) * 12.5); letter-spacing: .08em; font-weight: 500; }
+  .gn-shop-sprig { position: absolute; left: calc(var(--u) * 241); top: calc(var(--u) * 522); width: calc(var(--u) * 31); height: auto; max-width: none; }
+  .gn-shop-twig { position: absolute; left: calc(var(--u) * 780); top: calc(var(--u) * 710); width: calc(var(--u) * 104); height: auto; }
+
+  /* こんなシーンにおすすめ */
+  .gn-shop-scenes { padding-left: calc(var(--u) * 73); margin-top: calc(var(--u) * 20); }
+  .gn-shop-sc-list { display: flex; gap: calc(var(--u) * 10); margin-top: calc(var(--u) * 9); }
+  .gn-shop-sc { position: relative; width: calc(var(--u) * 236); height: calc(var(--u) * 100); border-radius: calc(var(--u) * 4); overflow: hidden; flex: none; }
+  .gn-shop-sc img { width: 100%; height: 100%; object-fit: cover; max-width: none; }
+  .gn-shop-sc-t { position: absolute; left: calc(var(--u) * 19); top: calc(var(--u) * 24); margin: 0; font-size: calc(var(--u) * 18.5); line-height: calc(var(--u) * 25); letter-spacing: .05em; color: #fff; font-weight: 600; text-shadow: 0 0 calc(var(--u) * 6) rgba(60, 40, 20, .25); white-space: nowrap; }
+}
+
+/* ═════════ スマホ(≤768px) ═════════ */
+@media (max-width: 768px) {
+  .gn-shop { padding-bottom: 40px; }
+  .gn-shop-h2 { font-size: 22px; line-height: 1.4; letter-spacing: .06em; }
+
+  /* ヒーロー: 暖簾(A)→ 短冊と料理(B)→ キャッチ。見本の画像を % で切り出して使う */
+  .gn-shop-hero { padding-inline: 0; max-width: 560px; --k: calc(min(100cqw, 560px) / 340); --kb: calc(min(100cqw, 560px) / 486); }
+  .gn-shop .gn-wrap.gn-shop-body, .gn-shop .gn-wrap.gn-shop-scenes { max-width: 640px; }
+  .gn-root .gn-shop .gn-shop-herobg { display: none; }
+  .gn-shop-band { position: relative; background-image: url("/_portal/gnoren/shop/hero.webp"); background-repeat: no-repeat; }
+  .gn-shop-band-a { height: calc(var(--k) * 252); background-size: calc(var(--k) * 1086) auto; background-position: calc(var(--k) * -250) calc(var(--k) * -48); -webkit-mask-image: linear-gradient(#000 84%, transparent); mask-image: linear-gradient(#000 84%, transparent); }
+  .gn-shop-band-b { height: calc(var(--kb) * 428); margin-top: calc(var(--kb) * -8); background-size: calc(var(--kb) * 1086) auto; background-position: calc(var(--kb) * -600) calc(var(--kb) * -60); -webkit-mask-image: linear-gradient(#000 88%, transparent); mask-image: linear-gradient(#000 88%, transparent); }
+  .gn-shop-n-sub, .gn-shop-n-name, .gn-shop-n-kaze { position: absolute; color: #1a1411; white-space: nowrap; font-weight: 500; }
+  .gn-shop-n-sub { left: calc(var(--k) * 80); top: calc(var(--k) * 64); font-size: calc(var(--k) * 17); letter-spacing: .24em; line-height: calc(var(--k) * 32); }
+  .gn-shop-n-name { left: calc(var(--k) * 66); top: calc(var(--k) * 102); font-size: calc(var(--k) * 54); letter-spacing: .1em; line-height: calc(var(--k) * 70); }
+  .gn-shop-n-kaze { left: calc(var(--k) * 107); top: calc(var(--k) * 175); font-size: calc(var(--k) * 9.5); letter-spacing: .36em; line-height: calc(var(--k) * 20); color: #3a2b22; }
+
+  .gn-shop-strip { position: absolute; width: calc(var(--kb) * 40); writing-mode: vertical-rl; text-orientation: upright; color: #6b3628; font-size: max(12px, calc(var(--kb) * 17)); font-weight: 500; padding-top: calc(var(--kb) * 17.5); white-space: nowrap; display: flex; justify-content: flex-start; }
+  .gn-shop-strip span { display: block; }
+  .gn-shop-strip-1 { left: calc(var(--kb) * 405); top: calc(var(--kb) * 8); height: calc(var(--kb) * 166); letter-spacing: .27em; }
+  .gn-shop-strip-2 { left: calc(var(--kb) * 357); top: calc(var(--kb) * 29); height: calc(var(--kb) * 125); letter-spacing: .2em; }
+  .gn-shop-strip-3 { left: calc(var(--kb) * 309); top: calc(var(--kb) * 49); height: calc(var(--kb) * 165); letter-spacing: .18em; }
+
+  .gn-shop-catch { padding: 6px 16px 0; }
+  .gn-shop-catch-h { font-family: var(--gn-f-mincho); font-size: 26px; line-height: 1.55; font-weight: 500; letter-spacing: .04em; color: #17342b; margin: 0; }
+  .gn-shop-catch-h span { display: block; }
+  .gn-shop-catch-p { margin: 12px 0 0; font-size: 14px; line-height: 1.85; letter-spacing: .04em; color: #67615e; }
+
+  /* 本体: 紹介 → 店舗情報 → メニュー → 店内 */
+  .gn-shop-body { display: flex; flex-direction: column; gap: 40px; padding-top: 28px; }
+  .gn-shop-col { display: contents; }
+  .gn-shop-intro { order: 1; }
+  .gn-shop-aside { order: 2; }
+  .gn-shop-menu { order: 3; }
+  .gn-shop-gallery { order: 4; }
+
+  .gn-shop-tags { display: flex; flex-wrap: wrap; gap: 8px; }
+  .gn-shop-tag { display: flex; align-items: center; gap: 8px; min-height: 40px; padding: 0 16px 0 12px; border-radius: 999px; background: #fff; box-shadow: 0 2px 8px rgba(125, 92, 60, .16); font-family: var(--gn-f-mincho); font-weight: 600; font-size: 14px; color: #3a3b3a; letter-spacing: .06em; white-space: nowrap; }
+  .gn-shop-tag-ic { width: 20px; height: auto; }
+  .gn-shop-tag-pin .gn-shop-tag-ic { width: 13px; }
+  .gn-shop-h1 { margin: 26px 0 0; font-size: 28px; line-height: 1.5; font-weight: 500; letter-spacing: .06em; color: #0d0b0a; }
+  .gn-shop-h1-a { display: block; }
+  .gn-shop-h1-b { display: block; margin-top: 8px; }
+  .gn-shop-h1 ruby { ruby-position: over; }
+  .gn-shop-h1 rt { font-size: 11px; letter-spacing: .6em; font-weight: 400; color: #4a4549; }
+  .gn-shop-desc { margin: 16px 0 0; font-size: 14px; line-height: 1.95; letter-spacing: .04em; color: #6d6762; }
+  .gn-shop-desc span { display: inline; }
+  .gn-shop-deco { position: relative; height: 128px; margin-top: 4px; }
+  .gn-shop-leaf { position: absolute; right: 6px; top: 0; width: 104px; height: auto; }
+  .gn-shop-script { position: absolute; left: 0; top: 40px; width: 150px; height: auto; }
+
+  /* 店舗情報 */
+  .gn-shop-card { position: relative; }
+  .gn-shop-card-top { position: relative; aspect-ratio: 264 / 83; margin-inline: -2.3%; }
+  .gn-shop-card-noren { display: block; width: 100%; height: 100%; max-width: none; }
+  .gn-shop-card-h { position: absolute; left: 8.6%; top: 50%; transform: translateY(-30%); margin: 0; font-size: 20px; letter-spacing: .08em; font-weight: 600; color: #080808; white-space: nowrap; }
+  .gn-shop-info { margin: 0; background: #f6f3ed; padding: 4px 16px 4px; }
+  .gn-shop-row { position: relative; display: flex; align-items: flex-start; gap: 12px; padding: 14px 0; border-bottom: 1px solid #ebe6dc; min-height: 56px; }
+  .gn-shop-row dt { flex: none; width: 104px; display: flex; align-items: center; gap: 8px; margin: 0; font-size: 12px; line-height: 1.5; letter-spacing: .04em; color: #5f5a56; font-weight: 500; padding-top: 2px; }
+  .gn-shop-row-ic { width: 18px; height: 18px; flex: none; color: #5b4a40; }
+  .gn-shop-row dd { flex: 1; min-width: 0; margin: 0; font-size: 14px; line-height: 1.6; letter-spacing: .03em; color: #5f5a56; }
+  .gn-shop-row dd > span { display: block; }
+  .gn-shop .gn-shop-btn { display: inline-flex; align-items: center; justify-content: center; color: #fff; background: linear-gradient(180deg, #b4573a, #a24a2f); border-radius: 999px; font-size: 14px; font-weight: 500; letter-spacing: .08em; white-space: nowrap; box-shadow: 0 2px 6px rgba(140, 60, 30, .22); min-height: 44px; }
+  .gn-shop-btn:focus-visible { outline: 2px solid #5b2a18; outline-offset: 2px; }
+  .gn-shop-btn svg { width: 14px; height: auto; margin-left: 8px; }
+  .gn-shop-btn-s { margin-top: 10px; padding: 0 22px; width: 100%; max-width: 220px; }
+  .gn-shop-map { position: relative; margin: 14px 0 0; padding: 0 12px 14px; background: #f6f3ed; }
+  .gn-shop-map img { width: 100%; height: auto; border-radius: 8px; aspect-ratio: 454 / 346; object-fit: cover; }
+  .gn-shop-btn-g { position: absolute; left: 24px; right: 24px; bottom: 26px; }
+  .gn-root .gn-shop .gn-shop-sprig, .gn-root .gn-shop .gn-shop-twig { display: none; }
+
+  /* おすすめメニュー */
+  .gn-shop-head { display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: 0 12px; }
+  .gn-shop-more { font-size: 14px; min-height: 44px; text-decoration: underline; text-underline-offset: 4px; gap: 6px; }
+  .gn-shop-more svg { width: 14px; height: auto; }
+  .gn-shop-menu-list { display: grid; grid-template-columns: 1fr 1fr; gap: 24px 14px; margin-top: 8px; }
+  .gn-shop-item { min-width: 0; }
+  .gn-shop-item-ph { aspect-ratio: 4 / 3; border-radius: 6px; overflow: hidden; }
+  .gn-shop-item-ph img { width: 100%; height: 100%; object-fit: cover; max-width: none; }
+  .gn-shop-item-n { margin: 10px 0 0; font-size: 15px; line-height: 1.45; letter-spacing: .04em; font-weight: 600; color: #161416; }
+  .gn-shop-item-pr { margin: 2px 0 0; font-size: 14px; line-height: 1.5; letter-spacing: .04em; color: #a9684e; }
+  .gn-shop-item-d { margin: 6px 0 0; font-size: 13px; line-height: 1.65; letter-spacing: .02em; color: #7c7773; }
+  .gn-shop-item-d span { display: inline; }
+
+  /* 店内の様子 */
+  .gn-shop-head-gal .gn-shop-lead { order: 3; flex-basis: 100%; margin: 2px 0 6px; font-size: 13px; line-height: 1.7; letter-spacing: .03em; color: #7c7773; }
+  .gn-shop-gal { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin-top: 4px; }
+  .gn-shop-gal-i { min-width: 0; aspect-ratio: 4 / 3; }
+  .gn-shop-gal-1 { grid-column: 1 / -1; aspect-ratio: 16 / 10; }
+  .gn-shop-gal-btn { display: block; width: 100%; height: 100%; padding: 0; border: 0; background: transparent; border-radius: 6px; overflow: hidden; cursor: zoom-in; }
+  .gn-shop-gal-btn img { width: 100%; height: 100%; object-fit: cover; max-width: none; }
+  .gn-shop-gal-btn:focus-visible { outline: 2px solid #b35431; outline-offset: 2px; }
+
+  /* こんなシーンにおすすめ */
+  .gn-shop-scenes { margin-top: 40px; }
+  .gn-shop-sc-list { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-top: 12px; }
+  .gn-shop-sc { position: relative; height: 116px; border-radius: 6px; overflow: hidden; }
+  .gn-shop-sc img { width: 100%; height: 100%; object-fit: cover; max-width: none; }
+  .gn-shop-sc-t { position: absolute; left: 14px; top: 50%; transform: translateY(-50%); margin: 0; font-size: 17px; line-height: 1.5; letter-spacing: .06em; color: #fff; font-weight: 500; text-shadow: 0 1px 6px rgba(50, 30, 15, .55); }
+  .gn-shop-sc-t span { display: block; }
+}
