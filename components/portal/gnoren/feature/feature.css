@@ -92,7 +92,7 @@
 }
 
 /* ───────── スマホ(≤768px): 縦 1 列 ───────── */
-@media (max-width: 768px) {
+@media (max-width: 768px), (orientation: landscape) and (max-height: 500px) {
   .gn-feat { --step: 0px; padding-bottom: 0; }
   .gn-feat-br { display: none; }
 
@@ -101,7 +101,7 @@
   .gn-feat .gn-feat-hero-img { display: none; }
   .gn-feat-hero-img-m { order: 3; width: 100%; height: auto; aspect-ratio: 498 / 388; margin-top: 18px; }
   .gn-feat-crumb { order: 1; display: flex; flex-wrap: wrap; align-items: center; gap: 0 8px; padding: 4px 16px 0; font-size: 12px; letter-spacing: .06em; color: #5a504a; }
-  .gn-feat-crumb a { display: inline-flex; align-items: center; min-height: 44px; padding-inline: 2px; }
+  .gn-feat-crumb a { display: inline-flex; align-items: center; justify-content: center; min-height: 44px; min-width: 44px; padding-inline: 4px; }
   .gn-feat-crumb [aria-current] { display: inline-flex; align-items: center; min-height: 44px; }
   .gn-feat-card { order: 2; position: relative; margin: 6px 14px 0; padding: 44px 22px 26px; }
   .gn-feat-card-bg { position: absolute; inset: 0; background-color: #f4efe6; box-shadow: none; clip-path: polygon(0.5% 2%, 30% 0.6%, 62% 1.4%, 99.5% 0, 100% 40%, 99% 99.5%, 60% 100%, 28% 99%, 0 100%, 0.6% 50%); filter: drop-shadow(0 2px 4px rgba(60, 40, 20, .18)); }
@@ -191,9 +191,9 @@
   .gn-feat-shop-list a { display: inline-flex; align-items: center; min-height: 44px; margin-block: -10px; }
   .gn-feat-btn { display: flex; width: 100%; min-height: 52px; margin-top: 20px; gap: 12px; font-size: 15px; }
   .gn-feat-btn-arrow { width: 26px; }
-  .gn-feat-frame { margin: 14px auto 0; padding: 5px; width: min(100%, 280px); aspect-ratio: 111 / 136; }
-  .gn-feat-frame img { object-position: 0 0 !important; }
-  .gn-feat-frame img { object-position: 0 50%; }
+  /* 元画像(326×314)は右にメモ紙の端が写っているので、左の 195×270 だけを使う(スマホは横長の写真の左上を切り出す) */
+  .gn-feat-frame { margin: 14px auto 0; padding: 5px; width: min(100%, 280px); aspect-ratio: 195 / 270; overflow: hidden; }
+  .gn-feat-frame img { width: 167.2%; height: auto; max-width: none; object-fit: fill; }
   .gn-feat-n5 { width: 82%; max-width: 360px; margin: 22px 0 0 auto; }
   .gn-feat-n5 .gn-feat-ln { padding-left: calc(var(--i, 0) * 10px); }
   .gn-feat-leaf-tr { width: 72px; top: -40px; right: 0; }
@@ -201,7 +201,7 @@
 }
 
 /* ───────── PC(>768px): 見本の座標どおり(--u = 見本の 1 画素) ───────── */
-@media (min-width: 769px) {
+@media (min-width: 769px) and (min-height: 501px) {
   .gn-feat { width: calc(var(--u) * 1086); height: calc(var(--u) * 1448); margin-inline: auto; padding-bottom: 0; --step: 0px; }
   .gn-feat-hero, .gn-feat-card, .gn-feat-panel, .gn-feat-strips, .gn-feat-sec { display: contents; }
   .gn-feat .gn-feat-hero-img-m { display: none; }
@@ -310,4 +310,10 @@
   .gn-feat-n5 .gn-feat-paper { height: 100%; padding: calc(var(--u) * 26) 0 0 calc(var(--u) * 20); font-size: calc(var(--u) * 12.2); line-height: calc(var(--u) * 21); letter-spacing: .06em; --step: calc(var(--u) * 7); }
   .gn-feat-leaf-tr { left: calc(var(--u) * 985); top: calc(var(--u) * 1200); width: calc(var(--u) * 101); z-index: 3; }
   .gn-feat-leaf-bl { left: 0; top: calc(var(--u) * 1320); width: calc(var(--u) * 70); z-index: 3; }
+}
+
+/* 1440px より広い画面: ヒーロー写真の左端・右の紙の右端を地へ溶かす(幅は 72px = top の 5% と同じ) */
+@media (min-width: 1441px) and (min-height: 501px) {
+  .gn-feat-hero-img { -webkit-mask-image: linear-gradient(90deg, transparent, #000 72px); mask-image: linear-gradient(90deg, transparent, #000 72px); }
+  .gn-feat .gn-feat-panel-bg { -webkit-mask-image: linear-gradient(90deg, #000 calc(100% - 72px), transparent); mask-image: linear-gradient(90deg, #000 calc(100% - 72px), transparent); }
 }

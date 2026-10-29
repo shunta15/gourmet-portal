@@ -18,21 +18,42 @@
   .gn-shop-strips { animation-delay: .25s; }
 }
 
-/* ライトボックス */
-.gn-shop-lb { position: fixed; inset: 0; z-index: 200; background: rgba(28, 22, 18, .88); display: grid; place-items: center; padding: 24px; }
-.gn-shop-lb-fig { margin: 0; max-width: min(1100px, 100%); display: grid; gap: 10px; justify-items: center; }
-.gn-shop-lb-fig img { max-width: 100%; max-height: 78vh; width: auto; height: auto; border-radius: 6px; box-shadow: 0 10px 40px rgba(0, 0, 0, .5); background: #222; }
+/* ライトボックス(Gallery.tsx が document.body へ portal で出す。.gn-root / .gn-shop の外なので、ここだけで完結させる)
+   画面全体(ヘッダーの上)を覆う。書体は next/font の変数(--gn-gothic)を Gallery が付ける。 */
+.gn-shop-lb { position: fixed; inset: 0; z-index: 10000; background: rgba(28, 22, 18, .9); display: grid; place-items: center; padding: 56px 84px; overscroll-behavior: contain; font-family: var(--gn-gothic), "Zen Kaku Gothic New", "Hiragino Kaku Gothic ProN", "Noto Sans JP", sans-serif; line-height: 1.6; -webkit-font-smoothing: antialiased; }
+.gn-shop-lb, .gn-shop-lb * { box-sizing: border-box; cursor: auto; }
+.gn-shop-lb button { cursor: pointer; font: inherit; }
+.gn-shop-lb-fig { margin: 0; padding: 0; width: 100%; display: grid; gap: 12px; justify-items: center; }
+/* 切り出した小さい写真でも画面いっぱいまで拡大して見せる(縦横比は --ar。高さ・幅のどちらか先に届くほうで止める) */
+.gn-shop-lb { --lb-h: calc(100vh - 140px); --lb-h: calc(100dvh - 140px); }
+.gn-shop-lb-ph { width: min(100%, 1100px, calc(var(--lb-h) * var(--ar, 1.5))); aspect-ratio: var(--ar, 1.5); overflow: hidden; border-radius: 6px; box-shadow: 0 10px 40px rgba(0, 0, 0, .5); background: #222; }
+/* 切り出し画像の縁に見本由来の白いにじみが 2〜4px あるので、少し拡大して隠す */
+.gn-shop-lb-ph img { display: block; width: 100%; height: 100%; max-width: none; object-fit: cover; transform: scale(1.045); }
 .gn-shop-lb-fig figcaption { color: #f1e9de; font-size: 14px; letter-spacing: .06em; text-align: center; }
-.gn-shop-lb-close, .gn-shop-lb-nav { position: absolute; width: 48px; height: 48px; border-radius: 50%; border: 1px solid rgba(255, 255, 255, .35); background: rgba(255, 255, 255, .1); color: #fff; display: grid; place-items: center; padding: 0; cursor: pointer; }
-.gn-shop-lb-close:hover, .gn-shop-lb-nav:hover { background: rgba(255, 255, 255, .22); }
+.gn-shop-lb-close, .gn-shop-lb-nav { position: absolute; width: 48px; height: 48px; border-radius: 50%; border: 1px solid rgba(255, 255, 255, .45); background: rgba(40, 32, 26, .6); color: #fff; display: grid; place-items: center; padding: 0; margin: 0; }
+.gn-shop-lb-close:hover, .gn-shop-lb-nav:hover { background: rgba(255, 255, 255, .24); }
 .gn-shop-lb-close { top: 16px; right: 16px; }
 .gn-shop-lb-nav { top: 50%; margin-top: -24px; }
-.gn-shop-lb-prev { left: 14px; } .gn-shop-lb-next { right: 14px; }
+.gn-shop-lb-prev { left: 16px; } .gn-shop-lb-next { right: 16px; }
 .gn-shop-lb svg { width: 22px; height: 22px; fill: none; stroke: currentColor; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; }
 .gn-shop-lb button:focus-visible { outline: 2px solid #fff; outline-offset: 2px; }
+/* 縦持ちのスマホ・狭い画面: 前へ/次へは下に並べて、写真を幅いっぱいに見せる */
+@media (max-width: 768px) and (orientation: portrait) {
+  .gn-shop-lb { padding: 72px 12px 92px; }
+  .gn-shop-lb { --lb-h: calc(100vh - 230px); --lb-h: calc(100dvh - 230px); }
+  .gn-shop-lb-nav { top: auto; bottom: 20px; margin-top: 0; }
+  .gn-shop-lb-prev { left: 20px; } .gn-shop-lb-next { right: 20px; }
+}
+/* 横持ちのスマホ(高さが低い): 写真を縦いっぱいに */
+@media (orientation: landscape) and (max-height: 500px) {
+  .gn-shop-lb { padding: 12px 76px; }
+  .gn-shop-lb-fig { gap: 6px; }
+  .gn-shop-lb { --lb-h: calc(100vh - 56px); --lb-h: calc(100dvh - 56px); }
+  .gn-shop-lb-fig figcaption { font-size: 13px; }
+}
 
 /* ═════════ PC ═════════ */
-@media (min-width: 769px) {
+@media (min-width: 769px) and (min-height: 501px) {
   .gn-shop { padding-bottom: calc(var(--u) * 30); }
   .gn-shop-hero { height: calc(var(--u) * 496); }
   .gn-shop-herobg { position: absolute; inset: 0; width: 100%; height: 100%; max-width: none; }
@@ -155,7 +176,7 @@
 }
 
 /* ═════════ スマホ(≤768px) ═════════ */
-@media (max-width: 768px) {
+@media (max-width: 768px), (orientation: landscape) and (max-height: 500px) {
   .gn-shop { padding-bottom: 40px; }
   .gn-shop-h2 { font-size: 22px; line-height: 1.4; letter-spacing: .06em; }
 
@@ -252,6 +273,12 @@
   .gn-shop-sc-list { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-top: 12px; }
   .gn-shop-sc { position: relative; height: 116px; border-radius: 6px; overflow: hidden; }
   .gn-shop-sc img { width: 100%; height: 100%; object-fit: cover; max-width: none; }
-  .gn-shop-sc-t { position: absolute; left: 14px; top: 50%; transform: translateY(-50%); margin: 0; font-size: 17px; line-height: 1.5; letter-spacing: .06em; color: #fff; font-weight: 500; text-shadow: 0 1px 6px rgba(50, 30, 15, .55); }
+  .gn-shop-sc::after { content: ""; position: absolute; inset: 0; pointer-events: none; background: linear-gradient(90deg, rgba(34, 20, 12, .52) 0%, rgba(34, 20, 12, .32) 55%, rgba(34, 20, 12, .06) 100%), linear-gradient(0deg, rgba(34, 20, 12, .25), transparent 50%); }
+  .gn-shop-sc-t { z-index: 1; position: absolute; left: 14px; top: 50%; transform: translateY(-50%); margin: 0; font-size: 17px; line-height: 1.5; letter-spacing: .06em; color: #fff; font-weight: 500; text-shadow: 0 1px 6px rgba(50, 30, 15, .55); }
   .gn-shop-sc-t span { display: block; }
+}
+
+/* 1440px より広い画面: ヒーロー写真の左右の端を地へ溶かす(1440px 以下は何も変えない) */
+@media (min-width: 1441px) and (min-height: 501px) {
+  .gn-shop-herobg { -webkit-mask-image: linear-gradient(90deg, transparent, #000 5%, #000 95%, transparent); mask-image: linear-gradient(90deg, transparent, #000 5%, #000 95%, transparent); }
 }

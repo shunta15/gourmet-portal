@@ -27,11 +27,11 @@ export const MENU = [
 ];
 
 export const GALLERY = [
-  { img: "gallery1", alt: "木のテーブルと大きな窓のある店内" },
-  { img: "gallery2", alt: "あたたかな灯りの電球" },
-  { img: "gallery3", alt: "接客をするスタッフ" },
-  { img: "gallery4", alt: "花を飾ったテーブル" },
-  { img: "gallery5", alt: "緑が見える窓辺の席" },
+  { img: "gallery1", w: 734, h: 416, alt: "木のテーブルと大きな窓のある店内" },
+  { img: "gallery2", w: 282, h: 190, alt: "あたたかな灯りの電球" },
+  { img: "gallery3", w: 330, h: 190, alt: "接客をするスタッフ" },
+  { img: "gallery4", w: 338, h: 216, alt: "花を飾ったテーブル" },
+  { img: "gallery5", w: 274, h: 216, alt: "緑が見える窓辺の席" },
 ];
 
 export const INFO = [

@@ -118,11 +118,11 @@
 /* ───────── 検索結果(853〜) ───────── */
 .gn-search-results { position: relative; padding: calc(var(--u) * 22) calc(var(--u) * 46) calc(var(--u) * 8) calc(var(--u) * 40); min-height: calc(var(--u) * 595); }
 .gn-search-rhead { position: relative; display: flex; align-items: center; height: calc(var(--u) * 34); margin-bottom: 0; }
-.gn-search-rtitle { position: absolute; left: 0; top: 0; height: calc(var(--u) * 34); display: flex; align-items: flex-end; gap: 0; font-family: var(--gn-f-mincho); color: #1f1a17; line-height: 1; }
+.gn-search-rtitle { position: relative; flex: none; height: calc(var(--u) * 34); display: flex; align-items: flex-end; gap: 0; font-family: var(--gn-f-mincho); color: #1f1a17; line-height: 1; }
 .gn-search-rtitle-l { font-weight: 600; font-size: calc(var(--u) * 17.5); letter-spacing: .06em; margin-bottom: calc(var(--u) * 4); }
 .gn-search-rtitle b { margin-left: calc(var(--u) * 17); font-weight: 500; font-size: calc(var(--u) * 41); color: var(--gn-red-num); letter-spacing: .01em; }
 .gn-search-rtitle-r { margin-left: calc(var(--u) * 5); font-weight: 600; font-size: calc(var(--u) * 13.4); margin-bottom: calc(var(--u) * 1); }
-.gn-search .gn-search-clear { margin-left: calc(var(--u) * 24); font-size: max(11px, calc(var(--u) * 11)); color: var(--gn-terracotta); text-decoration: underline; text-underline-offset: 3px; }
+.gn-search .gn-search-clear { position: relative; z-index: 1; flex: none; margin-left: calc(var(--u) * 24); padding: calc(var(--u) * 6) calc(var(--u) * 2); font-size: max(11px, calc(var(--u) * 11)); color: var(--gn-terracotta); text-decoration: underline; text-underline-offset: 3px; }
 .gn-search-sort { position: absolute; left: calc(var(--u) * 797); top: calc(var(--u) * 0); width: calc(var(--u) * 121); height: calc(var(--u) * 29); display: block; border-radius: calc(var(--u) * 5); background: #fff; box-shadow: 0 0 0 1px #e8e1d7, 0 1px 3px rgba(90, 70, 50, .06); }
 .gn-search-sort select { width: 100%; height: 100%; border: 0; border-radius: inherit; background: transparent; padding: 0 calc(var(--u) * 24) 0 calc(var(--u) * 10); font: inherit; font-size: calc(var(--u) * 10.3); font-weight: 500; letter-spacing: .06em; color: #3a332e; -webkit-appearance: none; appearance: none; cursor: pointer; }
 .gn-search-sort svg { position: absolute; right: calc(var(--u) * 11); top: 50%; width: calc(var(--u) * 8); margin-top: calc(var(--u) * -2.5); height: auto; pointer-events: none; color: #3a2f28; }
@@ -183,9 +183,11 @@
 .gn-search[data-view="list"] .gn-search-card-name { font-size: calc(var(--u) * 17); }
 .gn-search[data-view="list"] .gn-search-card-desc br { display: none; }
 .gn-search[data-view="list"] .gn-search-heart, .gn-search[data-view="list"] .gn-search-card:nth-child(n + 5) .gn-search-heart { top: calc(var(--u) * 12); }
+/* リスト表示ではハートが白いカード本体の上に乗るので、未選択は白でなくテラコッタの線にする(グリッド表示は写真の上なので白のまま) */
+.gn-search[data-view="list"] .gn-search-heart[data-on="0"] span { background: #fff; color: #a8472c; box-shadow: inset 0 0 0 1.5px rgba(168, 71, 44, .6), 0 1px 3px rgba(80, 60, 40, .12); backdrop-filter: none; }
 
 /* ───────── スマホ(≤768px) ───────── */
-@media (max-width: 768px) {
+@media (max-width: 768px), (orientation: landscape) and (max-height: 500px) {
   .gn-search { width: 100%; }
   .gn-search-hero { height: auto; }
   .gn-search-hero-img { position: relative; inset: auto; display: block; width: 100%; height: 210px; object-fit: cover; object-position: 66% 40%; object-view-box: inset(14.8% 0 0 0); }
@@ -297,11 +299,16 @@
   .gn-search[data-view="list"] .gn-search-heart { right: 0; top: 0; }
   .gn-search-empty { margin-top: 8px; padding: 36px 16px; }
 }
-@media (min-width: 560px) and (max-width: 768px) {
+@media (min-width: 560px) and (max-width: 768px), (min-width: 560px) and (orientation: landscape) and (max-height: 500px) {
   .gn-search-grid { grid-template-columns: 1fr 1fr; gap: 16px; }
   .gn-search[data-view="list"] .gn-search-grid { grid-template-columns: 1fr; }
   .gn-search-hero-img { height: 290px; }
 }
 @media (prefers-reduced-motion: reduce) {
   .gn-search *, .gn-search *::before, .gn-search *::after { transition: none !important; animation: none !important; }
+}
+
+/* 1440px より広い画面: ヒーロー写真の左右の端を地へ溶かす */
+@media (min-width: 1441px) and (min-height: 501px) {
+  .gn-search-hero-img { -webkit-mask-image: linear-gradient(90deg, transparent, #000 5%, #000 95%, transparent); mask-image: linear-gradient(90deg, transparent, #000 5%, #000 95%, transparent); }
 }

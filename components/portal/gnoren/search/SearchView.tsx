@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import { HeartIcon, SearchIcon } from "../common/icons";
 import { AREAS, CUISINES, SCENES, SHOPS, type AreaKey, type CuisineKey, type SceneKey, type Shop } from "./data";
 import { ArrowIcon, ChevronDown, ChevronRight, CupIcon, CuisineIcon, DishMark, GridIcon, ListIcon, PinIcon, TagGlyph } from "./icons";
@@ -13,6 +13,11 @@ const TOTAL = 509; // 見本の「509 件」(仮)
 
 type Sort = "recommend" | "walk" | "name";
 
+// スマホ(search.css の mobile と同じ条件)では入力欄が狭いので、プレースホルダを短くする
+const MOBILE_MQ = "(max-width: 768px), (orientation: landscape) and (max-height: 500px)";
+const PH_PC = "エリア・駅名・店名・キーワードで探す";
+const PH_M = "エリア・店名・キーワード";
+
 export default function SearchView() {
   const [q, setQ] = useState("");
   const [cuisine, setCuisine] = useState<CuisineKey | null>(null);
@@ -22,6 +27,14 @@ export default function SearchView() {
   const [view, setView] = useState<"grid" | "list">("grid");
   const [liked, setLiked] = useState<Record<string, boolean>>(() => Object.fromEntries(SHOPS.map((s) => [s.id, s.liked])));
   const [mapOpen, setMapOpen] = useState(false);
+  const [ph, setPh] = useState(PH_PC);
+  useEffect(() => {
+    const mq = window.matchMedia(MOBILE_MQ);
+    const apply = () => setPh(mq.matches ? PH_M : PH_PC);
+    apply();
+    mq.addEventListener("change", apply);
+    return () => mq.removeEventListener("change", apply);
+  }, []);
 
   const filtered = useMemo(() => {
     const kw = q.trim().toLowerCase();
@@ -130,7 +143,7 @@ export default function SearchView() {
               type="search"
               value={q}
               onChange={(e) => setQ(e.target.value)}
-              placeholder="エリア・駅名・店名・キーワードで探す"
+              placeholder={ph}
               aria-label="キーワードで探す"
               enterKeyHint="search"
             />

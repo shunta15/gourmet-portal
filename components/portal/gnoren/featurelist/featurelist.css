@@ -130,7 +130,7 @@
 }
 
 /* ───────── スマホ(≤768px) ───────── */
-@media (max-width: 768px) {
+@media (max-width: 768px), (orientation: landscape) and (max-height: 500px) {
   .gn-fl { --s: 1.3px; }
   .gn-fl > section { width: 100%; }
   .gn-fl > section, .gn-fl-pick, .gn-fl-card, .gn-fl-ni { height: auto; }
@@ -207,7 +207,7 @@
   .gn-fl-band-btn { width: min(100%, 320px); height: 52px; margin: 22px auto 0; font-size: 15px; gap: 12px; }
   .gn-fl-band-btn svg { width: 16px; }
 }
-@media (min-width: 561px) and (max-width: 768px) {
+@media (min-width: 561px) and (max-width: 768px), (min-width: 561px) and (orientation: landscape) and (max-height: 500px) {
   .gn-fl-cards { grid-template-columns: repeat(2, 1fr); gap: 28px 18px; }
   .gn-fl-card-t br { display: none; }
   .gn-fl-card-t { font-size: 16px; }
@@ -220,4 +220,9 @@
 .gn-fl a.gn-fl-pick-link { color: #fff; }
 .gn-fl a.gn-fl-card, .gn-fl a.gn-fl-ni-a { color: var(--gn-fl-ink); }
 .gn-fl-peg { position: absolute; z-index: 3; width: calc(var(--u) * 9); height: calc(var(--u) * 10); margin: calc(var(--u) * -5) 0 0 calc(var(--u) * -4.5); background: linear-gradient(180deg, #b98852, #8a5b30 60%, #6e4524); border-radius: calc(var(--u) * 1); box-shadow: 0 1px 1.5px rgba(40, 25, 10, .3); pointer-events: none; }
-@media (max-width: 768px) { .gn-fl-peg { display: none; } }
+@media (max-width: 768px), (orientation: landscape) and (max-height: 500px) { .gn-fl-peg { display: none; } }
+
+/* 1440px より広い画面: ヒーロー写真の左右の端を地へ溶かす */
+@media (min-width: 1441px) and (min-height: 501px) {
+  .gn-fl-hero-bg { -webkit-mask-image: linear-gradient(90deg, transparent, #000 5%, #000 95%, transparent); mask-image: linear-gradient(90deg, transparent, #000 5%, #000 95%, transparent); }
+}

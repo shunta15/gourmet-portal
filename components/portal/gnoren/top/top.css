@@ -127,7 +127,7 @@
 .gn-top-fcard.is-dark .gn-top-fcard-s { color: #5c4d40; }
 
 /* ═════════ PC(≥769px): 見本の座標どおり ═════════ */
-@media (min-width: 769px) {
+@media (min-width: 769px) and (min-height: 501px) {
   .gn-top { padding: 0; }
   .gn-top-in { width: calc(var(--u) * 1086); height: calc(var(--u) * 1448); margin-inline: auto; }
   .gn-top-hero, .gn-top-stats, .gn-top-sec { position: absolute; left: 0; width: calc(var(--u) * 1086); top: calc(var(--u) * var(--s)); height: calc(var(--u) * var(--h)); padding: 0; }
@@ -208,8 +208,16 @@
 }
 
 /* 1440px より広い画面: ヒーローの左右の端を地へ溶かす */
-@media (min-width: 1441px) {
+@media (min-width: 1441px) and (min-height: 501px) {
   .gn-top-hero-bg { -webkit-mask-image: linear-gradient(90deg, transparent, #000 5%, #000 95%, transparent); mask-image: linear-gradient(90deg, transparent, #000 5%, #000 95%, transparent); }
+}
+
+/* スマホ: 写真の上の文字が読めるよう、文字側(左)に薄い幕を敷く(PC は見本どおり幕なし) */
+@media (max-width: 768px), (orientation: landscape) and (max-height: 500px) {
+  .gn-top-fcard::after { content: ""; position: absolute; inset: 0; pointer-events: none; }
+  .gn-top-fcard.is-light::after { background: linear-gradient(90deg, rgba(34, 20, 12, .52) 0%, rgba(34, 20, 12, .34) 50%, rgba(34, 20, 12, 0) 85%), linear-gradient(0deg, rgba(34, 20, 12, .3), transparent 45%); }
+  .gn-top-fcard.is-dark::after { background: linear-gradient(90deg, rgba(251, 246, 238, .74) 0%, rgba(251, 246, 238, .52) 55%, rgba(251, 246, 238, 0) 90%); }
+  .gn-top-fcard-t, .gn-top-fcard-s { z-index: 1; }
 }
 
 @media (prefers-reduced-motion: reduce) {
