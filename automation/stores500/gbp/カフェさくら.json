@@ -1,0 +1,14 @@
+{
+  "name": "カフェさくら",
+  "address": "福岡県朝倉市山田２２１１−１",
+  "lat": 33.370565,
+  "lng": 130.7479849,
+  "category": "カフェ・喫茶",
+  "hours": null,
+  "phone": "0946-52-9300",
+  "website": null,
+  "priceRange": null,
+  "status": null,
+  "gbpUrl": "https://maps.google.com/?cid=10077428221729114062",
+  "fetchedAt": "2026-10-29T06:55:50.864Z"
+}

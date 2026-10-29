@@ -285,12 +285,13 @@ export const ARTICLE_REGIONS = {
 export type ArticleRegionKey = keyof typeof ARTICLE_REGIONS;
 
 /** 限定公開の店(lib/unlisted.ts)だけが載る県。地域の定義(ARTICLE_REGIONS)は作らない(地域の一覧・sitemap・検索の地域欄に出さない)。正式公開して店が一覧に出るようになったら build-stores.mjs を実行すると、定義が作られてここから消える */
-export type UnlistedOnlyRegionKey = "miyagi" | "chiba" | "oita" | "yamanashi";
+export type UnlistedOnlyRegionKey = "miyagi" | "chiba" | "oita" | "yamanashi" | "kumamoto";
 
 /** その県の名前(店のページのパンくず・「〇〇の他の名店」に使う。一覧には使わない) */
 export const UNLISTED_ONLY_REGION_NAMES: Record<UnlistedOnlyRegionKey, string> = {
   "miyagi": "宮城",
   "chiba": "千葉",
   "oita": "大分",
-  "yamanashi": "山梨"
+  "yamanashi": "山梨",
+  "kumamoto": "熊本"
 };

@@ -16616,6 +16616,1306 @@ export const ARTICLE_STORES: Restaurant[] = [
       "貸切可"
     ],
     "featureId": "ホルモン焼石橋屋"
+  },
+  {
+    "id": "r794",
+    "name": "活魚ちゃんこ 一語一笑",
+    "cuisine": "和食店",
+    "area": "奈良県・桜井市",
+    "region": "nara",
+    "shape": "square",
+    "image": "/restaurants/teleapo-活魚ちゃんこ一語一笑/hero.jpg",
+    "heroImages": [
+      "/restaurants/teleapo-活魚ちゃんこ一語一笑/hero.jpg",
+      "/restaurants/teleapo-活魚ちゃんこ一語一笑/point1.jpg",
+      "/restaurants/teleapo-活魚ちゃんこ一語一笑/point2.jpg",
+      "/restaurants/teleapo-活魚ちゃんこ一語一笑/point3.jpg",
+      "/restaurants/teleapo-活魚ちゃんこ一語一笑/point4.jpg"
+    ],
+    "gallery": [
+      "/restaurants/teleapo-活魚ちゃんこ一語一笑/hero.jpg",
+      "/restaurants/teleapo-活魚ちゃんこ一語一笑/point1.jpg",
+      "/restaurants/teleapo-活魚ちゃんこ一語一笑/point2.jpg",
+      "/restaurants/teleapo-活魚ちゃんこ一語一笑/point3.jpg",
+      "/restaurants/teleapo-活魚ちゃんこ一語一笑/point4.jpg"
+    ],
+    "desc": "活魚ちゃんこ 一語一笑は、奈良県桜井市桜井にある活魚料理店である。運営する有限会社すまいるはうすは、平成13年8月9日に設立された。",
+    "address": "奈良県桜井市桜井565-1",
+    "hours": "—（訪問前に公式確認）",
+    "closed": "—（訪問前に公式確認）",
+    "seats": "—（訪問前に公式確認）",
+    "nearest": "—",
+    "phone": "0744-43-1518",
+    "source": {
+      "label": "Google ビジネスプロフィール",
+      "url": "https://maps.google.com/?cid=5430051082981684985"
+    },
+    "body": [
+      "活魚ちゃんこ 一語一笑は、奈良県桜井市にあるお店です。業態は「和食店」、所在地は奈良県桜井市桜井565-1です。マチノワ編集部の特集記事では、「入り口の生け簀と全国から仕入れる旬の魚介」・「昼の定食から仕出し・ケータリングまでの使い方」などを取り上げています。",
+      "営業時間と定休日は取得できていないため、訪問前に公式の情報でご確認ください。営業時間や価格は変わることがあるため、訪問前に公式サイトやSNS、お電話でご確認ください。"
+    ],
+    "highlights": [
+      "入り口の生け簀と全国から仕入れる旬の魚介",
+      "昼の定食から仕出し・ケータリングまでの使い方",
+      "海鮮丼や天丼からうなぎまで揃う昼の単品",
+      "カウンター6席から大宴会対応の座敷まで揃う店内",
+      "駐車場完備、水曜と第三火曜が定休日"
+    ],
+    "tags": [
+      "和食店",
+      "桜井市"
+    ],
+    "featureId": "活魚ちゃんこ一語一笑"
+  },
+  {
+    "id": "r795",
+    "name": "うどんとお寿司 甚五郎",
+    "cuisine": "寿司店",
+    "area": "岐阜県・土岐市",
+    "region": "gifu",
+    "shape": "square",
+    "image": "/restaurants/teleapo-うどんとお寿司甚五郎/hero.jpg",
+    "heroImages": [
+      "/restaurants/teleapo-うどんとお寿司甚五郎/hero.jpg",
+      "/restaurants/teleapo-うどんとお寿司甚五郎/point1.jpg",
+      "/restaurants/teleapo-うどんとお寿司甚五郎/point2.jpg"
+    ],
+    "gallery": [
+      "/restaurants/teleapo-うどんとお寿司甚五郎/hero.jpg",
+      "/restaurants/teleapo-うどんとお寿司甚五郎/point1.jpg",
+      "/restaurants/teleapo-うどんとお寿司甚五郎/point2.jpg"
+    ],
+    "desc": "うどんとお寿司 甚五郎は、岐阜県土岐市肥田町肥田にある、うどんと寿司を出す店である。",
+    "address": "岐阜県土岐市肥田町肥田2783-1",
+    "hours": "—（訪問前に公式確認）",
+    "closed": "—（訪問前に公式確認）",
+    "seats": "—（訪問前に公式確認）",
+    "nearest": "—",
+    "phone": "0572-54-7557",
+    "source": {
+      "label": "Google ビジネスプロフィール",
+      "url": "https://maps.google.com/?cid=15692787844780754301"
+    },
+    "body": [
+      "うどんとお寿司 甚五郎は、岐阜県土岐市にあるお店です。業態は「寿司店」、所在地は岐阜県土岐市肥田町肥田2783-1です。マチノワ編集部の特集記事では、「自家製麺のうどんとシャリ自慢の変わり寿司」・「化学調味料・添加物を使わないうどんつゆとシャリ」などを取り上げています。",
+      "営業時間と定休日は取得できていないため、訪問前に公式の情報でご確認ください。営業時間や価格は変わることがあるため、訪問前に公式サイトやSNS、お電話でご確認ください。"
+    ],
+    "highlights": [
+      "自家製麺のうどんとシャリ自慢の変わり寿司",
+      "化学調味料・添加物を使わないうどんつゆとシャリ",
+      "旧19号沿い、ジョイフル隣の立地",
+      "昼夜二部制の営業時間と月曜定休"
+    ],
+    "tags": [
+      "寿司店",
+      "土岐市"
+    ],
+    "featureId": "うどんとお寿司甚五郎"
+  },
+  {
+    "id": "r796",
+    "name": "手作りジェラート CHICHIYA(チチヤ)",
+    "cuisine": "アイスクリーム店",
+    "area": "福岡県・直方市",
+    "region": "fukuoka",
+    "shape": "square",
+    "image": "/restaurants/teleapo-手作りジェラートCHICHIYA(チチヤ)/hero.jpg",
+    "heroImages": [
+      "/restaurants/teleapo-手作りジェラートCHICHIYA(チチヤ)/hero.jpg",
+      "/restaurants/teleapo-手作りジェラートCHICHIYA(チチヤ)/point1.jpg",
+      "/restaurants/teleapo-手作りジェラートCHICHIYA(チチヤ)/point2.jpg",
+      "/restaurants/teleapo-手作りジェラートCHICHIYA(チチヤ)/point3.jpg",
+      "/restaurants/teleapo-手作りジェラートCHICHIYA(チチヤ)/point4.jpg"
+    ],
+    "gallery": [
+      "/restaurants/teleapo-手作りジェラートCHICHIYA(チチヤ)/hero.jpg",
+      "/restaurants/teleapo-手作りジェラートCHICHIYA(チチヤ)/point1.jpg",
+      "/restaurants/teleapo-手作りジェラートCHICHIYA(チチヤ)/point2.jpg",
+      "/restaurants/teleapo-手作りジェラートCHICHIYA(チチヤ)/point3.jpg",
+      "/restaurants/teleapo-手作りジェラートCHICHIYA(チチヤ)/point4.jpg"
+    ],
+    "desc": "手作りジェラート CHICHIYA(チチヤ)は、福岡県直方市津田町にあるジェラート専門店である。木の外壁に「手作りジェラート」の文字を掲げた店舗を構え、2010年に開業した。",
+    "address": "福岡県直方市津田町3-12",
+    "hours": "—（訪問前に公式確認）",
+    "closed": "—（訪問前に公式確認）",
+    "seats": "—（訪問前に公式確認）",
+    "nearest": "—",
+    "phone": "0949-28-9982",
+    "source": {
+      "label": "Google ビジネスプロフィール",
+      "url": "https://maps.google.com/?cid=1884430542296456552"
+    },
+    "body": [
+      "手作りジェラート CHICHIYA(チチヤ)は、福岡県直方市にあるお店です。業態は「アイスクリーム店」、所在地は福岡県直方市津田町3-12です。マチノワ編集部の特集記事では、「乳化剤・安定剤を使わない無添加ジェラート」・「福岡県産牛乳と地元農家の季節フルーツ」などを取り上げています。",
+      "営業時間と定休日は取得できていないため、訪問前に公式の情報でご確認ください。営業時間や価格は変わることがあるため、訪問前に公式サイトやSNS、お電話でご確認ください。"
+    ],
+    "highlights": [
+      "乳化剤・安定剤を使わない無添加ジェラート",
+      "福岡県産牛乳と地元農家の季節フルーツ",
+      "米粉「ふくのこ」を使ったアレルギー対応ジェラート",
+      "直方市津田町の店舗、問い合わせ受付は11時から18時"
+    ],
+    "tags": [
+      "アイスクリーム店",
+      "直方市"
+    ],
+    "featureId": "手作りジェラートCHICHIYA(チチヤ)"
+  },
+  {
+    "id": "r797",
+    "name": "スウィート",
+    "cuisine": "カフェ・喫茶",
+    "area": "三重県・志摩市",
+    "region": "mie",
+    "shape": "square",
+    "image": "/restaurants/teleapo-スウィート/hero.jpg",
+    "heroImages": [
+      "/restaurants/teleapo-スウィート/hero.jpg",
+      "/restaurants/teleapo-スウィート/point3.jpg"
+    ],
+    "gallery": [
+      "/restaurants/teleapo-スウィート/hero.jpg",
+      "/restaurants/teleapo-スウィート/point3.jpg"
+    ],
+    "desc": "スウィートは、三重県志摩市志摩町布施田にある喫茶軽食店である。",
+    "address": "三重県志摩市志摩町布施田1059-10",
+    "hours": "—（訪問前に公式確認）",
+    "closed": "—（訪問前に公式確認）",
+    "seats": "—（訪問前に公式確認）",
+    "nearest": "—",
+    "phone": "0599-85-5949",
+    "source": {
+      "label": "Google ビジネスプロフィール",
+      "url": "https://maps.google.com/?cid=18176283813265403518"
+    },
+    "body": [
+      "スウィートは、三重県志摩市にあるお店です。業態は「カフェ・喫茶」、所在地は三重県志摩市志摩町布施田1059-10です。マチノワ編集部の特集記事では、「コーヒーからソーダ水まで揃うドリンクメニュー」・「スパゲティやピラフを用意する軽食メニュー」などを取り上げています。",
+      "営業時間と定休日は取得できていないため、訪問前に公式の情報でご確認ください。営業時間や価格は変わることがあるため、訪問前に公式サイトやSNS、お電話でご確認ください。"
+    ],
+    "highlights": [
+      "コーヒーからソーダ水まで揃うドリンクメニュー",
+      "スパゲティやピラフを用意する軽食メニュー",
+      "三重県志摩市志摩町布施田にある店舗の所在地"
+    ],
+    "tags": [
+      "カフェ・喫茶",
+      "志摩市"
+    ],
+    "featureId": "スウィート"
+  },
+  {
+    "id": "r798",
+    "name": "いちよし",
+    "cuisine": "蕎麦店",
+    "area": "群馬県・安中市",
+    "region": "gunma",
+    "shape": "square",
+    "image": "/restaurants/teleapo-いちよし/hero.jpg",
+    "heroImages": [
+      "/restaurants/teleapo-いちよし/hero.jpg",
+      "/restaurants/teleapo-いちよし/point1.jpg",
+      "/restaurants/teleapo-いちよし/point3.jpg",
+      "/restaurants/teleapo-いちよし/point4.jpg"
+    ],
+    "gallery": [
+      "/restaurants/teleapo-いちよし/hero.jpg",
+      "/restaurants/teleapo-いちよし/point1.jpg",
+      "/restaurants/teleapo-いちよし/point3.jpg",
+      "/restaurants/teleapo-いちよし/point4.jpg"
+    ],
+    "desc": "群馬県安中市の蕎麦店。",
+    "address": "群馬県安中市原市356",
+    "hours": "—（訪問前に公式確認）",
+    "closed": "—（訪問前に公式確認）",
+    "seats": "木目調テーブル席・お座敷席",
+    "nearest": "—",
+    "phone": "027-382-6478",
+    "source": {
+      "label": "Google ビジネスプロフィール",
+      "url": "https://maps.google.com/?cid=10372284464175654937"
+    },
+    "body": [
+      "いちよしは、群馬県安中市にあるお店です。業態は「蕎麦店」、所在地は群馬県安中市原市356です。マチノワ編集部の特集記事では、「挽き立てのそば粉と化学調味料不使用のつゆ」・「石臼挽きのそば粉で取り組むそば打ち体験」などを取り上げています。",
+      "営業時間と定休日は取得できていないため、訪問前に公式の情報でご確認ください。席は木目調テーブル席・お座敷席。営業時間や価格は変わることがあるため、訪問前に公式サイトやSNS、お電話でご確認ください。"
+    ],
+    "highlights": [
+      "挽き立てのそば粉と化学調味料不使用のつゆ",
+      "石臼挽きのそば粉で取り組むそば打ち体験",
+      "そば・うどんからおつまみ、飲み物まで揃うお品書き",
+      "民芸調に統一された店内とテーブル席、お座敷席",
+      "定休日は月曜日、そばは無くなり次第終了"
+    ],
+    "tags": [
+      "蕎麦店",
+      "そば",
+      "安中市",
+      "宴会",
+      "個室"
+    ],
+    "featureId": "いちよし"
+  },
+  {
+    "id": "r799",
+    "name": "うなカフェ555",
+    "cuisine": "うなぎ料理店",
+    "area": "和歌山県・紀の川市",
+    "region": "wakayama",
+    "shape": "square",
+    "image": "/restaurants/teleapo-うなカフェ555/hero.jpg",
+    "heroImages": [
+      "/restaurants/teleapo-うなカフェ555/hero.jpg",
+      "/restaurants/teleapo-うなカフェ555/point1.jpg",
+      "/restaurants/teleapo-うなカフェ555/point2.jpg",
+      "/restaurants/teleapo-うなカフェ555/point3.jpg",
+      "/restaurants/teleapo-うなカフェ555/point4.jpg"
+    ],
+    "gallery": [
+      "/restaurants/teleapo-うなカフェ555/hero.jpg",
+      "/restaurants/teleapo-うなカフェ555/point1.jpg",
+      "/restaurants/teleapo-うなカフェ555/point2.jpg",
+      "/restaurants/teleapo-うなカフェ555/point3.jpg",
+      "/restaurants/teleapo-うなカフェ555/point4.jpg",
+      "/restaurants/teleapo-うなカフェ555/point5.jpg"
+    ],
+    "desc": "うなカフェ555は、和歌山県紀の川市粉河にあるうなぎ料理店である。粉河高校の近くに位置し、紀の川市粉河で国産のうな重を提供している。",
+    "address": "和歌山県紀の川市粉河74-1",
+    "hours": "—（訪問前に公式確認）",
+    "closed": "—（訪問前に公式確認）",
+    "seats": "—（訪問前に公式確認）",
+    "nearest": "—",
+    "phone": "080-5509-1555",
+    "source": {
+      "label": "Google ビジネスプロフィール",
+      "url": "https://maps.google.com/?cid=7452618192783716760"
+    },
+    "body": [
+      "うなカフェ555は、和歌山県紀の川市にあるお店です。業態は「うなぎ料理店」、所在地は和歌山県紀の川市粉河74-1です。マチノワ編集部の特集記事では、「高知の生きたうなぎを紀州備長炭と土佐備長炭で焼き上げる」・「仕入れ先の養鰻場を厳選する高知県出身の店主」などを取り上げています。",
+      "営業時間と定休日は取得できていないため、訪問前に公式の情報でご確認ください。営業時間や価格は変わることがあるため、訪問前に公式サイトやSNS、お電話でご確認ください。"
+    ],
+    "highlights": [
+      "高知の生きたうなぎを紀州備長炭と土佐備長炭で焼き上げる",
+      "仕入れ先の養鰻場を厳選する高知県出身の店主",
+      "うな丸おにぎりからうな丸寿司、うなソースまで広がるメニュー",
+      "テーブル席12席・個室4名・カウンター8席を備えた店内",
+      "紀の川市粉河にあり、駐車場20台を備えた店"
+    ],
+    "tags": [
+      "うなぎ料理店",
+      "紀の川市"
+    ],
+    "featureId": "うなカフェ555"
+  },
+  {
+    "id": "r800",
+    "name": "レストラン 芝井川",
+    "cuisine": "和食店",
+    "area": "富山県・南砺市",
+    "region": "toyama",
+    "shape": "square",
+    "image": "/restaurants/teleapo-レストラン芝井川/hero.jpg",
+    "heroImages": [
+      "/restaurants/teleapo-レストラン芝井川/hero.jpg",
+      "/restaurants/teleapo-レストラン芝井川/point1.jpg",
+      "/restaurants/teleapo-レストラン芝井川/point2.jpg",
+      "/restaurants/teleapo-レストラン芝井川/point4.jpg"
+    ],
+    "gallery": [
+      "/restaurants/teleapo-レストラン芝井川/hero.jpg",
+      "/restaurants/teleapo-レストラン芝井川/point1.jpg",
+      "/restaurants/teleapo-レストラン芝井川/point2.jpg",
+      "/restaurants/teleapo-レストラン芝井川/point4.jpg"
+    ],
+    "desc": "富山県南砺市の和食店。",
+    "address": "富山県南砺市寺家新屋敷384-2",
+    "hours": "—（訪問前に公式確認）",
+    "closed": "—（訪問前に公式確認）",
+    "seats": "—（訪問前に公式確認）",
+    "nearest": "—",
+    "phone": "0763-22-1495",
+    "source": {
+      "label": "Google ビジネスプロフィール",
+      "url": "https://maps.google.com/?cid=10004677915196541273"
+    },
+    "body": [
+      "レストラン 芝井川は、富山県南砺市にあるお店です。業態は「和食店」、所在地は富山県南砺市寺家新屋敷384-2です。マチノワ編集部の特集記事では、「料理長おまかせの会席「芝井川会席」」・「御膳から丼物まで揃うランチメニュー」などを取り上げています。",
+      "営業時間と定休日は取得できていないため、訪問前に公式の情報でご確認ください。営業時間や価格は変わることがあるため、訪問前に公式サイトやSNS、お電話でご確認ください。"
+    ],
+    "highlights": [
+      "料理長おまかせの会席「芝井川会席」",
+      "御膳から丼物まで揃うランチメニュー",
+      "白エビやホタルイカなど富山の一品料理",
+      "11テーブル44席、宴会は最大60名まで対応",
+      "昼11時から夜21時まで営業、砺波ICから車で約10分"
+    ],
+    "tags": [
+      "和食店",
+      "南砺市"
+    ],
+    "featureId": "レストラン芝井川"
+  },
+  {
+    "id": "r801",
+    "name": "okudo 中村舎",
+    "cuisine": "レストラン",
+    "area": "三重県・いなべ市",
+    "region": "mie",
+    "shape": "square",
+    "image": "/restaurants/teleapo-okudo中村舎/hero.jpg",
+    "heroImages": [
+      "/restaurants/teleapo-okudo中村舎/hero.jpg",
+      "/restaurants/teleapo-okudo中村舎/point1.jpg",
+      "/restaurants/teleapo-okudo中村舎/point2.jpg",
+      "/restaurants/teleapo-okudo中村舎/point3.jpg",
+      "/restaurants/teleapo-okudo中村舎/point4.jpg"
+    ],
+    "gallery": [
+      "/restaurants/teleapo-okudo中村舎/hero.jpg",
+      "/restaurants/teleapo-okudo中村舎/point1.jpg",
+      "/restaurants/teleapo-okudo中村舎/point2.jpg",
+      "/restaurants/teleapo-okudo中村舎/point3.jpg",
+      "/restaurants/teleapo-okudo中村舎/point4.jpg",
+      "/restaurants/teleapo-okudo中村舎/point5.jpg"
+    ],
+    "desc": "三重県いなべ市のレストラン。最寄りは三岐鉄道西野尻駅から徒歩8分。",
+    "address": "三重県いなべ市藤原町西野尻1040",
+    "hours": "—（訪問前に公式確認）",
+    "closed": "—（訪問前に公式確認）",
+    "seats": "座敷・個室・わんこ縁側席",
+    "nearest": "三岐鉄道西野尻駅から徒歩8分",
+    "phone": "0594-37-4014",
+    "source": {
+      "label": "Google ビジネスプロフィール",
+      "url": "https://maps.google.com/?cid=2556592566664914299"
+    },
+    "body": [
+      "okudo 中村舎は、三重県いなべ市にあるお店です。業態は「レストラン」、所在地は三重県いなべ市藤原町西野尻1040、最寄りは三岐鉄道西野尻駅から徒歩8分です。マチノワ編集部の特集記事では、「いなべ産の米をかまどで炊く家庭の味」・「薪と火吹き竹で炊く古民家・かまど炊き体験」などを取り上げています。",
+      "営業時間と定休日は取得できていないため、訪問前に公式の情報でご確認ください。席は座敷・個室・わんこ縁側席。営業時間や価格は変わることがあるため、訪問前に公式サイトやSNS、お電話でご確認ください。"
+    ],
+    "highlights": [
+      "いなべ産の米をかまどで炊く家庭の味",
+      "薪と火吹き竹で炊く古民家・かまど炊き体験",
+      "8品から10品が並ぶかまど御膳",
+      "築220年の古民家に残る座敷と個室",
+      "西野尻駅から徒歩8分のアクセス"
+    ],
+    "tags": [
+      "レストラン",
+      "いなべ市",
+      "三岐鉄道西野尻駅",
+      "個室",
+      "宴会"
+    ],
+    "featureId": "okudo中村舎"
+  },
+  {
+    "id": "r802",
+    "name": "カフェさくら",
+    "cuisine": "カフェ・喫茶",
+    "area": "福岡県・朝倉市",
+    "region": "fukuoka",
+    "shape": "square",
+    "image": "/restaurants/teleapo-カフェさくら/hero.jpg",
+    "heroImages": [
+      "/restaurants/teleapo-カフェさくら/hero.jpg",
+      "/restaurants/teleapo-カフェさくら/point1.jpg",
+      "/restaurants/teleapo-カフェさくら/point2.jpg",
+      "/restaurants/teleapo-カフェさくら/point3.jpg",
+      "/restaurants/teleapo-カフェさくら/point4.jpg"
+    ],
+    "gallery": [
+      "/restaurants/teleapo-カフェさくら/hero.jpg",
+      "/restaurants/teleapo-カフェさくら/point1.jpg",
+      "/restaurants/teleapo-カフェさくら/point2.jpg",
+      "/restaurants/teleapo-カフェさくら/point3.jpg",
+      "/restaurants/teleapo-カフェさくら/point4.jpg"
+    ],
+    "desc": "カフェさくらは、福岡県朝倉市山田にある観光施設「三連水車の里あさくら」の館内で営業するカフェである。",
+    "address": "福岡県朝倉市山田2211-1",
+    "hours": "—（訪問前に公式確認）",
+    "closed": "—（訪問前に公式確認）",
+    "seats": "—（訪問前に公式確認）",
+    "nearest": "—",
+    "phone": "0946-52-9300",
+    "source": {
+      "label": "Google ビジネスプロフィール",
+      "url": "https://maps.google.com/?cid=10077428221729114062"
+    },
+    "body": [
+      "カフェさくらは、福岡県朝倉市にあるお店です。業態は「カフェ・喫茶」、所在地は福岡県朝倉市山田2211-1です。マチノワ編集部の特集記事では、「直売所の野菜を使った辛さ控えめのスープカレー」・「朝倉産の果物・野菜を使った手作りジェラート」などを取り上げています。",
+      "営業時間と定休日は取得できていないため、訪問前に公式の情報でご確認ください。営業時間や価格は変わることがあるため、訪問前に公式サイトやSNS、お電話でご確認ください。"
+    ],
+    "highlights": [
+      "直売所の野菜を使った辛さ控えめのスープカレー",
+      "朝倉産の果物・野菜を使った手作りジェラート",
+      "観光施設「三連水車の里あさくら」の館内で営業",
+      "営業は8時30分から17時まで"
+    ],
+    "tags": [
+      "カフェ・喫茶",
+      "朝倉市"
+    ],
+    "featureId": "カフェさくら"
+  },
+  {
+    "id": "r803",
+    "name": "千里香",
+    "cuisine": "カフェ・オムライス・かき氷",
+    "area": "愛知県・常滑市",
+    "region": "nagoya",
+    "shape": "square",
+    "image": "/restaurants/teleapo-千里香/hero.jpg",
+    "heroImages": [
+      "/restaurants/teleapo-千里香/hero.jpg",
+      "/restaurants/teleapo-千里香/point1.jpg",
+      "/restaurants/teleapo-千里香/point2.jpg",
+      "/restaurants/teleapo-千里香/point3.jpg"
+    ],
+    "gallery": [
+      "/restaurants/teleapo-千里香/hero.jpg",
+      "/restaurants/teleapo-千里香/point1.jpg",
+      "/restaurants/teleapo-千里香/point2.jpg",
+      "/restaurants/teleapo-千里香/point3.jpg"
+    ],
+    "desc": "千里香は、愛知県常滑市陶郷町にあるカフェギャラリーである。",
+    "address": "愛知県常滑市陶郷町2丁目128-1",
+    "hours": "—（訪問前に公式確認）",
+    "closed": "—（訪問前に公式確認）",
+    "seats": "20席",
+    "nearest": "名鉄常滑駅から徒歩約10分",
+    "phone": "0569-36-3237",
+    "source": {
+      "label": "Google ビジネスプロフィール",
+      "url": "https://maps.google.com/?cid=14678405386953792030"
+    },
+    "body": [
+      "千里香は、愛知県常滑市にあるお店です。業態は「カフェ・オムライス・かき氷」、所在地は愛知県常滑市陶郷町2丁目128-1、最寄りは名鉄常滑駅から徒歩約10分です。マチノワ編集部の特集記事では、「カフェ・オムライス・かき氷を提供するメニュー」・「常滑やきもの散歩道にあるカフェギャラリー」などを取り上げています。",
+      "営業時間と定休日は取得できていないため、訪問前に公式の情報でご確認ください。席は20席。営業時間や価格は変わることがあるため、訪問前に公式サイトやSNS、お電話でご確認ください。"
+    ],
+    "highlights": [
+      "カフェ・オムライス・かき氷を提供するメニュー",
+      "常滑やきもの散歩道にあるカフェギャラリー",
+      "20席、全席禁煙の店内",
+      "11時開店、木曜・金曜が定休日"
+    ],
+    "tags": [
+      "カフェ・オムライス・かき氷",
+      "カフェ・喫茶",
+      "常滑市",
+      "常滑駅"
+    ],
+    "featureId": "千里香"
+  },
+  {
+    "id": "r804",
+    "name": "富久寿司",
+    "cuisine": "寿司屋",
+    "area": "群馬県・藤岡市",
+    "region": "gunma",
+    "shape": "square",
+    "image": "/restaurants/teleapo-富久寿司/hero.jpg",
+    "heroImages": [
+      "/restaurants/teleapo-富久寿司/hero.jpg",
+      "/restaurants/teleapo-富久寿司/point1.jpg",
+      "/restaurants/teleapo-富久寿司/point2.jpg",
+      "/restaurants/teleapo-富久寿司/point3.jpg"
+    ],
+    "gallery": [
+      "/restaurants/teleapo-富久寿司/hero.jpg",
+      "/restaurants/teleapo-富久寿司/point1.jpg",
+      "/restaurants/teleapo-富久寿司/point2.jpg",
+      "/restaurants/teleapo-富久寿司/point3.jpg"
+    ],
+    "desc": "群馬県藤岡市の寿司屋。",
+    "address": "群馬県藤岡市藤岡1618-5",
+    "hours": "—（訪問前に公式確認）",
+    "closed": "—（訪問前に公式確認）",
+    "seats": "70席",
+    "nearest": "—",
+    "phone": "0274-22-1010",
+    "instagram": "https://www.instagram.com/fukuzushi.fujioka",
+    "source": {
+      "label": "Google ビジネスプロフィール",
+      "url": "https://maps.google.com/?cid=8837268018164726870"
+    },
+    "body": [
+      "富久寿司は、群馬県藤岡市にあるお店です。業態は「寿司屋」、所在地は群馬県藤岡市藤岡1618-5です。マチノワ編集部の特集記事では、「ジャンルは寿司屋の寿司店」・「11時から21時の営業で駐車場も備える」などを取り上げています。",
+      "営業時間と定休日は取得できていないため、訪問前に公式の情報でご確認ください。席は70席。営業時間や価格は変わることがあるため、訪問前に公式サイトやSNS、お電話でご確認ください。"
+    ],
+    "highlights": [
+      "ジャンルは寿司屋の寿司店",
+      "11時から21時の営業で駐車場も備える",
+      "個室を備えた総席数70席の店内"
+    ],
+    "tags": [
+      "寿司屋",
+      "寿司店",
+      "藤岡市",
+      "個室"
+    ],
+    "featureId": "富久寿司"
+  },
+  {
+    "id": "r805",
+    "name": "うどん繊月",
+    "cuisine": "うどん",
+    "area": "福岡県・古賀市",
+    "region": "fukuoka",
+    "shape": "square",
+    "image": "/restaurants/teleapo-うどん繊月/hero.jpg",
+    "heroImages": [
+      "/restaurants/teleapo-うどん繊月/hero.jpg",
+      "/restaurants/teleapo-うどん繊月/point1.jpg",
+      "/restaurants/teleapo-うどん繊月/point2.jpg",
+      "/restaurants/teleapo-うどん繊月/point3.jpg"
+    ],
+    "gallery": [
+      "/restaurants/teleapo-うどん繊月/hero.jpg",
+      "/restaurants/teleapo-うどん繊月/point1.jpg",
+      "/restaurants/teleapo-うどん繊月/point2.jpg",
+      "/restaurants/teleapo-うどん繊月/point3.jpg"
+    ],
+    "desc": "うどん繊月は、福岡県古賀市駅東二丁目にあるうどん店である。最寄りのJR古賀駅からは徒歩4分の距離にあり、住宅や事業所が並ぶ駅東エリアの一角に店を構える。",
+    "address": "福岡県古賀市駅東2丁目4-1",
+    "hours": "—（訪問前に公式確認）",
+    "closed": "—（訪問前に公式確認）",
+    "seats": "カウンター席",
+    "nearest": "JR古賀駅から徒歩4分",
+    "phone": "092-942-2710",
+    "source": {
+      "label": "Google ビジネスプロフィール",
+      "url": "https://maps.google.com/?cid=17618490414649344619"
+    },
+    "body": [
+      "うどん繊月は、福岡県古賀市にあるお店です。業態は「うどん」、所在地は福岡県古賀市駅東2丁目4-1、最寄りはJR古賀駅から徒歩4分です。マチノワ編集部の特集記事では、「豚肉うどんとわかめトッピングのメニュー」・「カウンター席とキャッシュレス対応の店内」などを取り上げています。",
+      "営業時間と定休日は取得できていないため、訪問前に公式の情報でご確認ください。席はカウンター席。営業時間や価格は変わることがあるため、訪問前に公式サイトやSNS、お電話でご確認ください。"
+    ],
+    "highlights": [
+      "豚肉うどんとわかめトッピングのメニュー",
+      "カウンター席とキャッシュレス対応の店内",
+      "JR古賀駅から徒歩4分のアクセス"
+    ],
+    "tags": [
+      "うどん",
+      "うどん屋",
+      "古賀市",
+      "古賀駅"
+    ],
+    "featureId": "うどん繊月"
+  },
+  {
+    "id": "r806",
+    "name": "味重",
+    "cuisine": "和食店",
+    "area": "福岡県・古賀市",
+    "region": "fukuoka",
+    "shape": "square",
+    "image": "/restaurants/teleapo-味重/hero.jpg",
+    "heroImages": [
+      "/restaurants/teleapo-味重/hero.jpg",
+      "/restaurants/teleapo-味重/point1.jpg",
+      "/restaurants/teleapo-味重/point3.jpg",
+      "/restaurants/teleapo-味重/point4.jpg"
+    ],
+    "gallery": [
+      "/restaurants/teleapo-味重/hero.jpg",
+      "/restaurants/teleapo-味重/point1.jpg",
+      "/restaurants/teleapo-味重/point3.jpg",
+      "/restaurants/teleapo-味重/point4.jpg"
+    ],
+    "desc": "福岡県古賀市の和食店。最寄りは国道3号線「庄」交差点から市役所方面へすぐ左手。",
+    "address": "福岡県古賀市今の庄2丁目7-3",
+    "hours": "—（訪問前に公式確認）",
+    "closed": "—（訪問前に公式確認）",
+    "seats": "—（訪問前に公式確認）",
+    "nearest": "国道3号線「庄」交差点から市役所方面へすぐ左手",
+    "phone": "080-6078-9062",
+    "instagram": "https://www.instagram.com/ajishige",
+    "source": {
+      "label": "Google ビジネスプロフィール",
+      "url": "https://maps.google.com/?cid=4130729516558698034"
+    },
+    "body": [
+      "味重は、福岡県古賀市にあるお店です。業態は「和食店」、所在地は福岡県古賀市今の庄2丁目7-3、最寄りは国道3号線「庄」交差点から市役所方面へすぐ左手です。マチノワ編集部の特集記事では、「小鉢9種とご飯・お吸い物が付く「四季彩御前」」・「スロープとキッズルームを備えたバリアフリー設計」などを取り上げています。",
+      "営業時間と定休日は取得できていないため、訪問前に公式の情報でご確認ください。営業時間や価格は変わることがあるため、訪問前に公式サイトやSNS、お電話でご確認ください。"
+    ],
+    "highlights": [
+      "小鉢9種とご飯・お吸い物が付く「四季彩御前」",
+      "スロープとキッズルームを備えたバリアフリー設計",
+      "天ぷらや刺身が並ぶ小鉢とデザートの一皿",
+      "カウンター席とテーブル席、個室を備えた店内",
+      "国道3号線「庄」交差点そばの立地と営業時間"
+    ],
+    "tags": [
+      "和食店",
+      "古賀市"
+    ],
+    "featureId": "味重"
+  },
+  {
+    "id": "r807",
+    "name": "MoMo cafe",
+    "cuisine": "コーヒーショップ・喫茶店",
+    "area": "和歌山県・紀の川市",
+    "region": "wakayama",
+    "shape": "square",
+    "image": "/restaurants/teleapo-MoMocafe/hero.jpg",
+    "heroImages": [
+      "/restaurants/teleapo-MoMocafe/hero.jpg",
+      "/restaurants/teleapo-MoMocafe/point1.jpg",
+      "/restaurants/teleapo-MoMocafe/point2.jpg",
+      "/restaurants/teleapo-MoMocafe/point3.jpg"
+    ],
+    "gallery": [
+      "/restaurants/teleapo-MoMocafe/hero.jpg",
+      "/restaurants/teleapo-MoMocafe/point1.jpg",
+      "/restaurants/teleapo-MoMocafe/point2.jpg",
+      "/restaurants/teleapo-MoMocafe/point3.jpg"
+    ],
+    "desc": "MoMo cafeは、和歌山県紀の川市桃山町市場にあるカフェである。店は桃の季節だけ営業する期間限定のカフェとして2026年にオープンした。",
+    "address": "和歌山県紀の川市桃山町市場273-1",
+    "hours": "—（訪問前に公式確認）",
+    "closed": "—（訪問前に公式確認）",
+    "seats": "—（訪問前に公式確認）",
+    "nearest": "—",
+    "phone": "090-1445-3653",
+    "source": {
+      "label": "Google ビジネスプロフィール",
+      "url": "https://maps.google.com/?cid=10543224718970705503"
+    },
+    "body": [
+      "MoMo cafeは、和歌山県紀の川市にあるお店です。業態は「コーヒーショップ・喫茶店」、所在地は和歌山県紀の川市桃山町市場273-1です。マチノワ編集部の特集記事では、「あら川の桃を約1.5玉使う「桃のかき氷」」・「知人の桃農家から直接仕入れるあら川の桃」などを取り上げています。",
+      "営業時間と定休日は取得できていないため、訪問前に公式の情報でご確認ください。営業時間や価格は変わることがあるため、訪問前に公式サイトやSNS、お電話でご確認ください。"
+    ],
+    "highlights": [
+      "あら川の桃を約1.5玉使う「桃のかき氷」",
+      "知人の桃農家から直接仕入れるあら川の桃",
+      "桃のスムージーと桃アイスも揃うメニュー",
+      "桃の季節だけ営業する期間限定カフェ"
+    ],
+    "tags": [
+      "コーヒーショップ・喫茶店",
+      "紀の川市"
+    ],
+    "featureId": "MoMocafe"
+  },
+  {
+    "id": "r808",
+    "name": "どんぐりの森",
+    "cuisine": "カフェ・喫茶",
+    "area": "岐阜県・土岐市",
+    "region": "gifu",
+    "shape": "square",
+    "image": "/restaurants/teleapo-どんぐりの森/hero.jpg",
+    "heroImages": [
+      "/restaurants/teleapo-どんぐりの森/hero.jpg",
+      "/restaurants/teleapo-どんぐりの森/point1.jpg",
+      "/restaurants/teleapo-どんぐりの森/point4.jpg"
+    ],
+    "gallery": [
+      "/restaurants/teleapo-どんぐりの森/hero.jpg",
+      "/restaurants/teleapo-どんぐりの森/point1.jpg",
+      "/restaurants/teleapo-どんぐりの森/point4.jpg"
+    ],
+    "desc": "どんぐりの森は、岐阜県土岐市土岐津町土岐口にある喫茶店である。",
+    "address": "岐阜県土岐市土岐津町土岐口2092-2",
+    "hours": "—（訪問前に公式確認）",
+    "closed": "—（訪問前に公式確認）",
+    "seats": "48席",
+    "nearest": "土岐市駅から710m",
+    "phone": "0572-51-5501",
+    "source": {
+      "label": "Google ビジネスプロフィール",
+      "url": "https://maps.google.com/?cid=13649884112094015163"
+    },
+    "body": [
+      "どんぐりの森は、岐阜県土岐市にあるお店です。業態は「カフェ・喫茶」、所在地は岐阜県土岐市土岐津町土岐口2092-2、最寄りは土岐市駅から710mです。マチノワ編集部の特集記事では、「岐阜県土岐市土岐津町に店を構える喫茶店」・「総席数48席と個室を備えた店内」などを取り上げています。",
+      "営業時間と定休日は取得できていないため、訪問前に公式の情報でご確認ください。席は48席。営業時間や価格は変わることがあるため、訪問前に公式サイトやSNS、お電話でご確認ください。"
+    ],
+    "highlights": [
+      "岐阜県土岐市土岐津町に店を構える喫茶店",
+      "総席数48席と個室を備えた店内",
+      "7時から18時までの営業時間と不定休の休み",
+      "土岐市駅から710mの立地にある店"
+    ],
+    "tags": [
+      "カフェ・喫茶",
+      "土岐市",
+      "土岐市駅",
+      "個室"
+    ],
+    "featureId": "どんぐりの森"
+  },
+  {
+    "id": "r809",
+    "name": "鮨と炉ばた 扇の浦",
+    "cuisine": "和食店",
+    "area": "熊本県・荒尾市",
+    "region": "kumamoto",
+    "shape": "square",
+    "image": "/restaurants/teleapo-鮨と炉ばた扇の浦/hero.jpg",
+    "heroImages": [
+      "/restaurants/teleapo-鮨と炉ばた扇の浦/hero.jpg",
+      "/restaurants/teleapo-鮨と炉ばた扇の浦/point1.jpg",
+      "/restaurants/teleapo-鮨と炉ばた扇の浦/point3.jpg",
+      "/restaurants/teleapo-鮨と炉ばた扇の浦/point4.jpg"
+    ],
+    "gallery": [
+      "/restaurants/teleapo-鮨と炉ばた扇の浦/hero.jpg",
+      "/restaurants/teleapo-鮨と炉ばた扇の浦/point1.jpg",
+      "/restaurants/teleapo-鮨と炉ばた扇の浦/point3.jpg",
+      "/restaurants/teleapo-鮨と炉ばた扇の浦/point4.jpg"
+    ],
+    "desc": "鮨と炉ばた 扇の浦は、熊本県荒尾市水野にある和食店である。",
+    "address": "熊本県荒尾市水野1579-4",
+    "hours": "—（訪問前に公式確認）",
+    "closed": "—（訪問前に公式確認）",
+    "seats": "—（訪問前に公式確認）",
+    "nearest": "—",
+    "phone": "0968-68-2471",
+    "instagram": "https://www.instagram.com/oginoura",
+    "source": {
+      "label": "Google ビジネスプロフィール",
+      "url": "https://maps.google.com/?cid=6070799712536932553"
+    },
+    "body": [
+      "鮨と炉ばた 扇の浦は、熊本県荒尾市にあるお店です。業態は「和食店」、所在地は熊本県荒尾市水野1579-4です。マチノワ編集部の特集記事では、「一貫ずつ自家製醤油を塗る鮨と遠赤外線の炉ばた焼き」・「日本酒とワインの品揃えに力を入れた酒類」などを取り上げています。",
+      "営業時間と定休日は取得できていないため、訪問前に公式の情報でご確認ください。営業時間や価格は変わることがあるため、訪問前に公式サイトやSNS、お電話でご確認ください。"
+    ],
+    "highlights": [
+      "一貫ずつ自家製醤油を塗る鮨と遠赤外線の炉ばた焼き",
+      "日本酒とワインの品揃えに力を入れた酒類",
+      "鶏唐揚定食から寿司定食まで揃うランチメニュー",
+      "カウンター5席とテーブル席を備えた総席数18席の店内",
+      "水曜定休、駐車場約8台を備えた営業情報"
+    ],
+    "tags": [
+      "和食店",
+      "荒尾市"
+    ],
+    "featureId": "鮨と炉ばた扇の浦"
+  },
+  {
+    "id": "r810",
+    "name": "麺屋 二蝶",
+    "cuisine": "ラーメン屋",
+    "area": "大阪府・四條畷市",
+    "region": "osaka",
+    "shape": "square",
+    "image": "/restaurants/teleapo-麺屋二蝶/hero.jpg",
+    "heroImages": [
+      "/restaurants/teleapo-麺屋二蝶/hero.jpg",
+      "/restaurants/teleapo-麺屋二蝶/point1.jpg",
+      "/restaurants/teleapo-麺屋二蝶/point4.jpg"
+    ],
+    "gallery": [
+      "/restaurants/teleapo-麺屋二蝶/hero.jpg",
+      "/restaurants/teleapo-麺屋二蝶/point1.jpg",
+      "/restaurants/teleapo-麺屋二蝶/point4.jpg"
+    ],
+    "desc": "麺屋 二蝶は、大阪府四條畷市中野本町にあるラーメン店である。",
+    "address": "大阪府四條畷市中野本町26-5",
+    "hours": "—（訪問前に公式確認）",
+    "closed": "—（訪問前に公式確認）",
+    "seats": "—（訪問前に公式確認）",
+    "nearest": "—",
+    "phone": "072-812-7078",
+    "instagram": "https://www.instagram.com/menyanicho",
+    "source": {
+      "label": "Google ビジネスプロフィール",
+      "url": "https://maps.google.com/?cid=17433606452883667520"
+    },
+    "body": [
+      "麺屋 二蝶は、大阪府四條畷市にあるお店です。業態は「ラーメン屋」、所在地は大阪府四條畷市中野本町26-5です。マチノワ編集部の特集記事では、「スープが無くなり次第終えるラーメンとまぜそば」・「四條畷市清瀧から神戸を経て中野本町へ」などを取り上げています。",
+      "営業時間と定休日は取得できていないため、訪問前に公式の情報でご確認ください。営業時間や価格は変わることがあるため、訪問前に公式サイトやSNS、お電話でご確認ください。"
+    ],
+    "highlights": [
+      "スープが無くなり次第終えるラーメンとまぜそば",
+      "四條畷市清瀧から神戸を経て中野本町へ",
+      "「串カツ酒場 福田家」があった場所に出店",
+      "11:00〜17:00、月火定休のアクセス情報"
+    ],
+    "tags": [
+      "ラーメン屋",
+      "四條畷市"
+    ],
+    "featureId": "麺屋二蝶"
+  },
+  {
+    "id": "r811",
+    "name": "割烹 青柳",
+    "cuisine": "和食店",
+    "area": "兵庫県・芦屋市",
+    "region": "hyogo",
+    "shape": "square",
+    "image": "/restaurants/teleapo-割烹青柳/hero.jpg",
+    "heroImages": [
+      "/restaurants/teleapo-割烹青柳/hero.jpg",
+      "/restaurants/teleapo-割烹青柳/point3.jpg",
+      "/restaurants/teleapo-割烹青柳/point4.jpg"
+    ],
+    "gallery": [
+      "/restaurants/teleapo-割烹青柳/hero.jpg",
+      "/restaurants/teleapo-割烹青柳/point3.jpg",
+      "/restaurants/teleapo-割烹青柳/point4.jpg"
+    ],
+    "desc": "兵庫県芦屋市の和食店。最寄りは阪神「打出駅」から徒歩5分。",
+    "address": "兵庫県芦屋市春日町1-15 フリック・コート 1 0 2",
+    "hours": "—（訪問前に公式確認）",
+    "closed": "—（訪問前に公式確認）",
+    "seats": "10席",
+    "nearest": "阪神「打出駅」から徒歩5分",
+    "phone": "0797-91-2994",
+    "source": {
+      "label": "Google ビジネスプロフィール",
+      "url": "https://maps.google.com/?cid=16491191135331939512"
+    },
+    "body": [
+      "割烹 青柳は、兵庫県芦屋市にあるお店です。業態は「和食店」、所在地は兵庫県芦屋市春日町1-15 フリック・コート 1 0 2、最寄りは阪神「打出駅」から徒歩5分です。マチノワ編集部の特集記事では、「尾札部昆布と3年熟成の鰹節を使う出汁」・「黒毛和牛の特選ヘレ肉とシャトーブリアンのコース」などを取り上げています。",
+      "営業時間と定休日は取得できていないため、訪問前に公式の情報でご確認ください。席は10席。営業時間や価格は変わることがあるため、訪問前に公式サイトやSNS、お電話でご確認ください。"
+    ],
+    "highlights": [
+      "尾札部昆布と3年熟成の鰹節を使う出汁",
+      "黒毛和牛の特選ヘレ肉とシャトーブリアンのコース",
+      "活きた蟹や天然物の魚介類を使った料理",
+      "10席のカウンターと半個室を備えた店内",
+      "阪神「打出駅」から徒歩5分、水曜定休の営業"
+    ],
+    "tags": [
+      "和食店",
+      "芦屋市",
+      "打出駅",
+      "個室"
+    ],
+    "featureId": "割烹青柳"
+  },
+  {
+    "id": "r812",
+    "name": "でらちゃん",
+    "cuisine": "ラーメン",
+    "area": "岐阜県・土岐市",
+    "region": "gifu",
+    "shape": "square",
+    "image": "/restaurants/teleapo-でらちゃん/hero.jpg",
+    "heroImages": [
+      "/restaurants/teleapo-でらちゃん/hero.jpg",
+      "/restaurants/teleapo-でらちゃん/point1.jpg",
+      "/restaurants/teleapo-でらちゃん/point2.jpg",
+      "/restaurants/teleapo-でらちゃん/point3.jpg"
+    ],
+    "gallery": [
+      "/restaurants/teleapo-でらちゃん/hero.jpg",
+      "/restaurants/teleapo-でらちゃん/point1.jpg",
+      "/restaurants/teleapo-でらちゃん/point2.jpg",
+      "/restaurants/teleapo-でらちゃん/point3.jpg"
+    ],
+    "desc": "でらちゃんは、岐阜県土岐市下石阿庄町4丁目11にあるラーメン店である。",
+    "address": "岐阜県土岐市下石阿庄町4丁目11",
+    "hours": "—（訪問前に公式確認）",
+    "closed": "—（訪問前に公式確認）",
+    "seats": "—（訪問前に公式確認）",
+    "nearest": "—",
+    "phone": "0572-87-0304",
+    "instagram": "https://www.instagram.com/niboshi_dera_chan2023",
+    "source": {
+      "label": "Google ビジネスプロフィール",
+      "url": "https://maps.google.com/?cid=8298488736948934867"
+    },
+    "body": [
+      "でらちゃんは、岐阜県土岐市にあるお店です。業態は「ラーメン」、所在地は岐阜県土岐市下石阿庄町4丁目11です。マチノワ編集部の特集記事では、「煮干しだしを使った4種のラーメンを用意」・「個室の無いカウンター中心の店内と駐車場」などを取り上げています。",
+      "営業時間と定休日は取得できていないため、訪問前に公式の情報でご確認ください。営業時間や価格は変わることがあるため、訪問前に公式サイトやSNS、お電話でご確認ください。"
+    ],
+    "highlights": [
+      "煮干しだしを使った4種のラーメンを用意",
+      "個室の無いカウンター中心の店内と駐車場",
+      "月曜と水〜日曜で異なる2部制の営業"
+    ],
+    "tags": [
+      "ラーメン",
+      "ラーメン屋",
+      "土岐市"
+    ],
+    "featureId": "でらちゃん"
+  },
+  {
+    "id": "r813",
+    "name": "風のガーデン",
+    "cuisine": "和食店",
+    "area": "熊本県・宇城市",
+    "region": "kumamoto",
+    "shape": "square",
+    "image": "/restaurants/teleapo-風のガーデン/hero.jpg",
+    "heroImages": [
+      "/restaurants/teleapo-風のガーデン/hero.jpg",
+      "/restaurants/teleapo-風のガーデン/point1.jpg",
+      "/restaurants/teleapo-風のガーデン/point3.jpg"
+    ],
+    "gallery": [
+      "/restaurants/teleapo-風のガーデン/hero.jpg",
+      "/restaurants/teleapo-風のガーデン/point1.jpg",
+      "/restaurants/teleapo-風のガーデン/point3.jpg"
+    ],
+    "desc": "風のガーデンは、熊本県宇城市小川町河江にある定食店である。",
+    "address": "熊本県宇城市小川町河江1154-1",
+    "hours": "—（訪問前に公式確認）",
+    "closed": "—（訪問前に公式確認）",
+    "seats": "テーブル席・カウンター",
+    "nearest": "小川駅から1,428m・駐車場は店舗前",
+    "phone": "080-3967-6560",
+    "instagram": "https://www.instagram.com/hisami07383",
+    "source": {
+      "label": "Google ビジネスプロフィール",
+      "url": "https://maps.google.com/?cid=4445302451805929606"
+    },
+    "body": [
+      "風のガーデンは、熊本県宇城市にあるお店です。業態は「和食店」、所在地は熊本県宇城市小川町河江1154-1、最寄りは小川駅から1,428m・駐車場は店舗前です。マチノワ編集部の特集記事では、「カツレツと魚の煮付け、日替わりで替わる定食メニュー」・「ナカシ自動車ファクトリー敷地内、田んぼの中に建つ平屋」などを取り上げています。",
+      "営業時間と定休日は取得できていないため、訪問前に公式の情報でご確認ください。席はテーブル席・カウンター。営業時間や価格は変わることがあるため、訪問前に公式サイトやSNS、お電話でご確認ください。"
+    ],
+    "highlights": [
+      "カツレツと魚の煮付け、日替わりで替わる定食メニュー",
+      "ナカシ自動車ファクトリー敷地内、田んぼの中に建つ平屋",
+      "畳敷きの店内とテーブル席・カウンター",
+      "ベジタリアン対応とペット連れ向けガーデンテーブル",
+      "小川駅から1,428メートル、店舗前に駐車場を備えたアクセス"
+    ],
+    "tags": [
+      "和食店",
+      "宇城市",
+      "小川駅"
+    ],
+    "featureId": "風のガーデン"
+  },
+  {
+    "id": "r814",
+    "name": "たぐ.みcafé",
+    "cuisine": "カフェ・喫茶",
+    "area": "静岡県・伊豆の国市",
+    "region": "shizuoka",
+    "shape": "square",
+    "image": "/restaurants/teleapo-たぐ.みcafé/hero.jpg",
+    "heroImages": [
+      "/restaurants/teleapo-たぐ.みcafé/hero.jpg",
+      "/restaurants/teleapo-たぐ.みcafé/point1.jpg",
+      "/restaurants/teleapo-たぐ.みcafé/point2.jpg",
+      "/restaurants/teleapo-たぐ.みcafé/point3.jpg",
+      "/restaurants/teleapo-たぐ.みcafé/point4.jpg"
+    ],
+    "gallery": [
+      "/restaurants/teleapo-たぐ.みcafé/hero.jpg",
+      "/restaurants/teleapo-たぐ.みcafé/point1.jpg",
+      "/restaurants/teleapo-たぐ.みcafé/point2.jpg",
+      "/restaurants/teleapo-たぐ.みcafé/point3.jpg",
+      "/restaurants/teleapo-たぐ.みcafé/point4.jpg"
+    ],
+    "desc": "たぐ．みcaféは、静岡県伊豆の国市長岡にあるカフェ・喫茶である。月光アパートの1階に店を構え、「Café」の看板とOPENののぼりが目印になっている。",
+    "address": "静岡県伊豆の国市長岡169-7 月光アパート 1-C",
+    "hours": "—（訪問前に公式確認）",
+    "closed": "—（訪問前に公式確認）",
+    "seats": "—（訪問前に公式確認）",
+    "nearest": "—",
+    "phone": "055-948-5808",
+    "source": {
+      "label": "Google ビジネスプロフィール",
+      "url": "https://maps.google.com/?cid=11127913155819132788"
+    },
+    "body": [
+      "たぐ.みcaféは、静岡県伊豆の国市にあるお店です。業態は「カフェ・喫茶」、所在地は静岡県伊豆の国市長岡169-7 月光アパート 1-Cです。マチノワ編集部の特集記事では、「届く食材で決まる日替わりの「たぐみ御飯」」・「地元の契約農家と土肥の魚を使う食材へのこだわり」などを取り上げています。",
+      "営業時間と定休日は取得できていないため、訪問前に公式の情報でご確認ください。営業時間や価格は変わることがあるため、訪問前に公式サイトやSNS、お電話でご確認ください。"
+    ],
+    "highlights": [
+      "届く食材で決まる日替わりの「たぐみ御飯」",
+      "地元の契約農家と土肥の魚を使う食材へのこだわり",
+      "黒米餅やオーガニックレモンを使う手作りデザート",
+      "伊豆の国市長岡、月光アパート1階の立地"
+    ],
+    "tags": [
+      "カフェ・喫茶",
+      "伊豆の国市"
+    ],
+    "featureId": "たぐ.みcafé"
+  },
+  {
+    "id": "r815",
+    "name": "北欧館",
+    "cuisine": "コーヒーショップ・喫茶店",
+    "area": "香川県・観音寺市",
+    "region": "kagawa",
+    "shape": "square",
+    "image": "/restaurants/teleapo-北欧館/hero.jpg",
+    "heroImages": [
+      "/restaurants/teleapo-北欧館/hero.jpg",
+      "/restaurants/teleapo-北欧館/point1.jpg"
+    ],
+    "gallery": [
+      "/restaurants/teleapo-北欧館/hero.jpg",
+      "/restaurants/teleapo-北欧館/point1.jpg"
+    ],
+    "desc": "香川県観音寺市のコーヒーショップ・喫茶店。最寄りは観音寺駅から徒歩7分。",
+    "address": "香川県観音寺市観音寺町甲1087-117",
+    "hours": "—（訪問前に公式確認）",
+    "closed": "—（訪問前に公式確認）",
+    "seats": "80席",
+    "nearest": "観音寺駅から徒歩7分",
+    "phone": "0875-25-4308",
+    "source": {
+      "label": "Google ビジネスプロフィール",
+      "url": "https://maps.google.com/?cid=8102008434295049032"
+    },
+    "body": [
+      "北欧館は、香川県観音寺市にあるお店です。業態は「コーヒーショップ・喫茶店」、所在地は香川県観音寺市観音寺町甲1087-117、最寄りは観音寺駅から徒歩7分です。マチノワ編集部の特集記事では、「コーヒーショップ・喫茶店として営業し、総席数80席の店内を持つ店」・「店前と少し離れた場所の2ヶ所、計15台分の駐車場」などを取り上げています。",
+      "営業時間と定休日は取得できていないため、訪問前に公式の情報でご確認ください。席は80席。営業時間や価格は変わることがあるため、訪問前に公式サイトやSNS、お電話でご確認ください。"
+    ],
+    "highlights": [
+      "コーヒーショップ・喫茶店として営業し、総席数80席の店内を持つ店",
+      "店前と少し離れた場所の2ヶ所、計15台分の駐車場",
+      "観音寺駅から徒歩7分のアクセス"
+    ],
+    "tags": [
+      "コーヒーショップ・喫茶店",
+      "観音寺市",
+      "観音寺駅"
+    ],
+    "featureId": "北欧館"
+  },
+  {
+    "id": "r816",
+    "name": "創作料理 二条",
+    "cuisine": "創作料理",
+    "area": "兵庫県・赤穂市",
+    "region": "hyogo",
+    "shape": "square",
+    "image": "/restaurants/teleapo-創作料理二条/hero.jpg",
+    "heroImages": [
+      "/restaurants/teleapo-創作料理二条/hero.jpg",
+      "/restaurants/teleapo-創作料理二条/point1.jpg",
+      "/restaurants/teleapo-創作料理二条/point2.jpg",
+      "/restaurants/teleapo-創作料理二条/point3.jpg",
+      "/restaurants/teleapo-創作料理二条/point4.jpg"
+    ],
+    "gallery": [
+      "/restaurants/teleapo-創作料理二条/hero.jpg",
+      "/restaurants/teleapo-創作料理二条/point1.jpg",
+      "/restaurants/teleapo-創作料理二条/point2.jpg",
+      "/restaurants/teleapo-創作料理二条/point3.jpg",
+      "/restaurants/teleapo-創作料理二条/point4.jpg"
+    ],
+    "desc": "創作料理 二条は、兵庫県赤穂市坂越788に店を構える創作料理店である。",
+    "address": "兵庫県赤穂市坂越788",
+    "hours": "—（訪問前に公式確認）",
+    "closed": "—（訪問前に公式確認）",
+    "seats": "48席",
+    "nearest": "—",
+    "phone": "090-7365-5000",
+    "source": {
+      "label": "Google ビジネスプロフィール",
+      "url": "https://maps.google.com/?cid=9688047662089246902"
+    },
+    "body": [
+      "創作料理 二条は、兵庫県赤穂市にあるお店です。業態は「創作料理」、所在地は兵庫県赤穂市坂越788です。マチノワ編集部の特集記事では、「刺身定食と二条定食の2種の定食」・「テラス席で楽しむBBQセット」などを取り上げています。",
+      "営業時間と定休日は取得できていないため、訪問前に公式の情報でご確認ください。席は48席。営業時間や価格は変わることがあるため、訪問前に公式サイトやSNS、お電話でご確認ください。"
+    ],
+    "highlights": [
+      "刺身定食と二条定食の2種の定食",
+      "テラス席で楽しむBBQセット",
+      "テラス席を備えた48席の店内",
+      "駐車場を備えた坂越の店舗"
+    ],
+    "tags": [
+      "創作料理",
+      "和食店",
+      "赤穂市"
+    ],
+    "featureId": "創作料理二条"
+  },
+  {
+    "id": "r817",
+    "name": "こおり地産洋食店 メルバ",
+    "cuisine": "洋食レストラン",
+    "area": "福島県・伊達郡桑折町",
+    "region": "fukushima",
+    "shape": "square",
+    "image": "/restaurants/teleapo-こおり地産洋食店メルバ/hero.jpg",
+    "heroImages": [
+      "/restaurants/teleapo-こおり地産洋食店メルバ/hero.jpg",
+      "/restaurants/teleapo-こおり地産洋食店メルバ/point1.jpg",
+      "/restaurants/teleapo-こおり地産洋食店メルバ/point3.jpg"
+    ],
+    "gallery": [
+      "/restaurants/teleapo-こおり地産洋食店メルバ/hero.jpg",
+      "/restaurants/teleapo-こおり地産洋食店メルバ/point1.jpg",
+      "/restaurants/teleapo-こおり地産洋食店メルバ/point3.jpg"
+    ],
+    "desc": "こおり地産洋食店 メルバは、福島県伊達郡桑折町堰合の国道4号沿いにある洋食店である。店主の南澤学さんは東京都内や新潟、フランスの飲食店を経験した後、2000年に福島市栄町で「レ・フルール」を開いた。",
+    "address": "福島県伊達郡桑折町堰合 42-1",
+    "hours": "—（訪問前に公式確認）",
+    "closed": "—（訪問前に公式確認）",
+    "seats": "—（訪問前に公式確認）",
+    "nearest": "—",
+    "phone": "024-502-2386",
+    "instagram": "https://www.instagram.com/brasseriemelba2022",
+    "source": {
+      "label": "Google ビジネスプロフィール",
+      "url": "https://maps.google.com/?cid=18020931855199037573"
+    },
+    "body": [
+      "こおり地産洋食店 メルバは、福島県伊達郡桑折町にあるお店です。業態は「洋食レストラン」、所在地は福島県伊達郡桑折町堰合 42-1です。マチノワ編集部の特集記事では、「地元食材を使ったフレンチベースの洋食」・「「レ・フルール」からの移転改名と内装へのこだわり」などを取り上げています。",
+      "営業時間と定休日は取得できていないため、訪問前に公式の情報でご確認ください。営業時間や価格は変わることがあるため、訪問前に公式サイトやSNS、お電話でご確認ください。"
+    ],
+    "highlights": [
+      "地元食材を使ったフレンチベースの洋食",
+      "「レ・フルール」からの移転改名と内装へのこだわり",
+      "オリジナルナポリタンやガレットなど地元食材のメニュー",
+      "カウンター10席とテーブル席を備えた店内",
+      "国道4号沿い、駐車場9台を備えるアクセス"
+    ],
+    "tags": [
+      "洋食レストラン",
+      "桑折町"
+    ],
+    "featureId": "こおり地産洋食店メルバ"
+  },
+  {
+    "id": "r818",
+    "name": "御食事処 太助",
+    "cuisine": "食堂・定食",
+    "area": "新潟県・十日町市",
+    "region": "niigata",
+    "shape": "square",
+    "image": "/restaurants/teleapo-御食事処太助/hero.jpg",
+    "heroImages": [
+      "/restaurants/teleapo-御食事処太助/hero.jpg",
+      "/restaurants/teleapo-御食事処太助/point1.jpg"
+    ],
+    "gallery": [
+      "/restaurants/teleapo-御食事処太助/hero.jpg",
+      "/restaurants/teleapo-御食事処太助/point1.jpg"
+    ],
+    "desc": "御食事処 太助は、新潟県十日町市上山己にある食堂・定食の店である。",
+    "address": "新潟県十日町市上山己3125",
+    "hours": "—（訪問前に公式確認）",
+    "closed": "—（訪問前に公式確認）",
+    "seats": "45席",
+    "nearest": "JR飯山線越後田沢駅から徒歩5分",
+    "phone": "025-763-2162",
+    "source": {
+      "label": "Google ビジネスプロフィール",
+      "url": "https://maps.google.com/?cid=5017031117888121745"
+    },
+    "body": [
+      "御食事処 太助は、新潟県十日町市にあるお店です。業態は「食堂・定食」、所在地は新潟県十日町市上山己3125、最寄りはJR飯山線越後田沢駅から徒歩5分です。マチノワ編集部の特集記事では、「辛さが特徴の看板メニュー激辛ラーメン」・「全席禁煙で子供連れにも対応する店内」などを取り上げています。",
+      "営業時間と定休日は取得できていないため、訪問前に公式の情報でご確認ください。席は45席。営業時間や価格は変わることがあるため、訪問前に公式サイトやSNS、お電話でご確認ください。"
+    ],
+    "highlights": [
+      "辛さが特徴の看板メニュー激辛ラーメン",
+      "全席禁煙で子供連れにも対応する店内",
+      "45席と個室を備えた店内の広さ",
+      "JR飯山線越後田沢駅から徒歩5分、水曜定休のアクセス"
+    ],
+    "tags": [
+      "食堂・定食",
+      "定食屋",
+      "十日町市",
+      "飯山線越後田沢駅",
+      "個室"
+    ],
+    "featureId": "御食事処太助"
+  },
+  {
+    "id": "r819",
+    "name": "LA VENTANAラベンターナ",
+    "cuisine": "カフェ・喫茶",
+    "area": "鳥取県・倉吉市",
+    "region": "tottori",
+    "shape": "square",
+    "image": "/restaurants/teleapo-LAVENTANAラベンターナ/hero.jpg",
+    "heroImages": [
+      "/restaurants/teleapo-LAVENTANAラベンターナ/hero.jpg",
+      "/restaurants/teleapo-LAVENTANAラベンターナ/point1.jpg",
+      "/restaurants/teleapo-LAVENTANAラベンターナ/point2.jpg",
+      "/restaurants/teleapo-LAVENTANAラベンターナ/point3.jpg"
+    ],
+    "gallery": [
+      "/restaurants/teleapo-LAVENTANAラベンターナ/hero.jpg",
+      "/restaurants/teleapo-LAVENTANAラベンターナ/point1.jpg",
+      "/restaurants/teleapo-LAVENTANAラベンターナ/point2.jpg",
+      "/restaurants/teleapo-LAVENTANAラベンターナ/point3.jpg"
+    ],
+    "desc": "LA VENTANAラベンターナは、鳥取県倉吉市湊町にあるカフェ・喫茶である。店は元理容室を改装してつくられ、どこか懐かしさを感じる空間になっている。",
+    "address": "鳥取県倉吉市湊町296-10",
+    "hours": "—（訪問前に公式確認）",
+    "closed": "—（訪問前に公式確認）",
+    "seats": "—（訪問前に公式確認）",
+    "nearest": "—",
+    "phone": "0858-27-1214",
+    "instagram": "https://www.instagram.com/laventana_kurayoshi",
+    "source": {
+      "label": "Google ビジネスプロフィール",
+      "url": "https://maps.google.com/?cid=9893770421811608373"
+    },
+    "body": [
+      "LA VENTANAラベンターナは、鳥取県倉吉市にあるお店です。業態は「カフェ・喫茶」、所在地は鳥取県倉吉市湊町296-10です。マチノワ編集部の特集記事では、「天然酵母の自家製パンを使った軽食メニュー」・「スペイン語で「窓」を意味する店名」などを取り上げています。",
+      "営業時間と定休日は取得できていないため、訪問前に公式の情報でご確認ください。営業時間や価格は変わることがあるため、訪問前に公式サイトやSNS、お電話でご確認ください。"
+    ],
+    "highlights": [
+      "天然酵母の自家製パンを使った軽食メニュー",
+      "スペイン語で「窓」を意味する店名",
+      "ギターとレコードプレーヤーのあるライブカフェ",
+      "元理容室を改装した懐かしい雰囲気の店内",
+      "鳥取県倉吉市湊町にある店"
+    ],
+    "tags": [
+      "カフェ・喫茶",
+      "倉吉市"
+    ],
+    "featureId": "LAVENTANAラベンターナ"
+  },
+  {
+    "id": "r820",
+    "name": "たこぼん",
+    "cuisine": "たこ焼き",
+    "area": "兵庫県・姫路市",
+    "region": "hyogo",
+    "shape": "square",
+    "image": "/restaurants/teleapo-たこぼん/hero.jpg",
+    "heroImages": [
+      "/restaurants/teleapo-たこぼん/hero.jpg",
+      "/restaurants/teleapo-たこぼん/point1.jpg",
+      "/restaurants/teleapo-たこぼん/point2.jpg",
+      "/restaurants/teleapo-たこぼん/point3.jpg"
+    ],
+    "gallery": [
+      "/restaurants/teleapo-たこぼん/hero.jpg",
+      "/restaurants/teleapo-たこぼん/point1.jpg",
+      "/restaurants/teleapo-たこぼん/point2.jpg",
+      "/restaurants/teleapo-たこぼん/point3.jpg"
+    ],
+    "desc": "たこぼんは、兵庫県姫路市琴岡町にあるたこ焼き専門店である。",
+    "address": "兵庫県姫路市琴岡町266-8",
+    "hours": "—（訪問前に公式確認）",
+    "closed": "—（訪問前に公式確認）",
+    "seats": "—（訪問前に公式確認）",
+    "nearest": "山陽姫路駅",
+    "phone": "070-8512-4539",
+    "instagram": "https://www.instagram.com/takobon_1109",
+    "source": {
+      "label": "Google ビジネスプロフィール",
+      "url": "https://maps.google.com/?cid=11661645051053354994"
+    },
+    "body": [
+      "たこぼんは、兵庫県姫路市にあるお店です。業態は「たこ焼き」、所在地は兵庫県姫路市琴岡町266-8、最寄りは山陽姫路駅です。マチノワ編集部の特集記事では、「たこ焼き専門店としての看板を掲げる」・「月・水曜から日曜まで営業、火曜定休」などを取り上げています。",
+      "営業時間と定休日は取得できていないため、訪問前に公式の情報でご確認ください。営業時間や価格は変わることがあるため、訪問前に公式サイトやSNS、お電話でご確認ください。"
+    ],
+    "highlights": [
+      "たこ焼き専門店としての看板を掲げる",
+      "月・水曜から日曜まで営業、火曜定休",
+      "山陽姫路駅が最寄りのアクセス"
+    ],
+    "tags": [
+      "たこ焼き",
+      "たこ焼き屋",
+      "姫路市",
+      "山陽姫路駅"
+    ],
+    "featureId": "たこぼん"
   }
 ];
 
@@ -16970,7 +18270,34 @@ export const ARTICLE_STORE_FEATURE_IDS: Record<string, string> = {
   "r790": "おばんざい志(おばんざいこころ)",
   "r791": "十人十色",
   "r792": "寿司割烹酒場ゐまる（イマル）",
-  "r793": "ホルモン焼石橋屋"
+  "r793": "ホルモン焼石橋屋",
+  "r794": "活魚ちゃんこ一語一笑",
+  "r795": "うどんとお寿司甚五郎",
+  "r796": "手作りジェラートCHICHIYA(チチヤ)",
+  "r797": "スウィート",
+  "r798": "いちよし",
+  "r799": "うなカフェ555",
+  "r800": "レストラン芝井川",
+  "r801": "okudo中村舎",
+  "r802": "カフェさくら",
+  "r803": "千里香",
+  "r804": "富久寿司",
+  "r805": "うどん繊月",
+  "r806": "味重",
+  "r807": "MoMocafe",
+  "r808": "どんぐりの森",
+  "r809": "鮨と炉ばた扇の浦",
+  "r810": "麺屋二蝶",
+  "r811": "割烹青柳",
+  "r812": "でらちゃん",
+  "r813": "風のガーデン",
+  "r814": "たぐ.みcafé",
+  "r815": "北欧館",
+  "r816": "創作料理二条",
+  "r817": "こおり地産洋食店メルバ",
+  "r818": "御食事処太助",
+  "r819": "LAVENTANAラベンターナ",
+  "r820": "たこぼん"
 };
 
 /** 特集記事ID → 店舗ID */
@@ -17324,5 +18651,32 @@ export const ARTICLE_STORE_ID_BY_FEATURE: Record<string, string> = {
   "おばんざい志(おばんざいこころ)": "r790",
   "十人十色": "r791",
   "寿司割烹酒場ゐまる（イマル）": "r792",
-  "ホルモン焼石橋屋": "r793"
+  "ホルモン焼石橋屋": "r793",
+  "活魚ちゃんこ一語一笑": "r794",
+  "うどんとお寿司甚五郎": "r795",
+  "手作りジェラートCHICHIYA(チチヤ)": "r796",
+  "スウィート": "r797",
+  "いちよし": "r798",
+  "うなカフェ555": "r799",
+  "レストラン芝井川": "r800",
+  "okudo中村舎": "r801",
+  "カフェさくら": "r802",
+  "千里香": "r803",
+  "富久寿司": "r804",
+  "うどん繊月": "r805",
+  "味重": "r806",
+  "MoMocafe": "r807",
+  "どんぐりの森": "r808",
+  "鮨と炉ばた扇の浦": "r809",
+  "麺屋二蝶": "r810",
+  "割烹青柳": "r811",
+  "でらちゃん": "r812",
+  "風のガーデン": "r813",
+  "たぐ.みcafé": "r814",
+  "北欧館": "r815",
+  "創作料理二条": "r816",
+  "こおり地産洋食店メルバ": "r817",
+  "御食事処太助": "r818",
+  "LAVENTANAラベンターナ": "r819",
+  "たこぼん": "r820"
 };

@@ -1,0 +1,113 @@
+{
+  "key": "tri-life-291",
+  "headline": "常滑市奥条にある真言宗豊山派の寺院。知多四国霊場第63番札所で、本尊は十一面観世音菩薩",
+  "lede": "常滑市にある「補陀落山 大善院」です。山号は補陀落山、宗派は真言宗豊山派、本尊は十一面観世音菩薩で、知多四国霊場第63番札所にあたります。境内には樹齢550年を超えるイブキがあり、愛知県指定文化財に指定されています。",
+  "sections": [
+    {
+      "heading": "由緒",
+      "body": "戦火で荒廃した61番高讃寺を嘆いた養春上人が、本尊の十一面観世音菩薩をこの地に移したのが始まりです。文明元年(1469年)、常滑城初代城主の水野忠綱が大善院を本坊とする六坊を再建しました。明応3年(1494年)には、大善院が常滑城の鬼門にあたることから、牛頭天皇を鎮守として中の宮が奉祀されました。"
+    },
+    {
+      "heading": "境内",
+      "body": "境内には樹齢550年を超えるイブキがあり、愛知県指定文化財に指定されています。本四国八十八カ所御砂踏霊場や冬花庵観音堂もあります。大きな駐車場も備えています。"
+    }
+  ],
+  "menus": [],
+  "tags": [
+    {
+      "tag": "駐車場あり",
+      "factIndex": 12
+    }
+  ],
+  "facts": [
+    {
+      "claim": "店名は補陀落山 大善院",
+      "source": "https://maps.google.com/?cid=382211587029313775",
+      "quote": "補陀落山 大善院",
+      "checkedAt": "2026-10-29"
+    },
+    {
+      "claim": "住所は愛知県常滑市奥条５丁目２０",
+      "source": "https://maps.google.com/?cid=382211587029313775",
+      "quote": "愛知県常滑市奥条５丁目２０",
+      "checkedAt": "2026-10-29"
+    },
+    {
+      "claim": "電話は0569-35-3430",
+      "source": "https://maps.google.com/?cid=382211587029313775",
+      "quote": "0569-35-3430",
+      "checkedAt": "2026-10-29"
+    },
+    {
+      "claim": "Googleマップの業種表示は仏教寺院",
+      "source": "https://maps.google.com/?cid=382211587029313775",
+      "quote": "仏教寺院",
+      "checkedAt": "2026-10-29"
+    },
+    {
+      "claim": "宗派は真言宗豊山派、本尊は十一面観世音菩薩",
+      "source": "https://chitashikoku88.com/daizenin.html",
+      "quote": "本尊十一面観世音菩薩",
+      "checkedAt": "2026-10-29"
+    },
+    {
+      "claim": "戦火で荒廃した61番高讃寺を嘆いた養春上人が本尊をこの地に移したのが始まり",
+      "source": "https://chitashikoku88.com/daizenin.html",
+      "quote": "戦火により61番高讃寺が荒廃するのを嘆いた",
+      "checkedAt": "2026-10-29"
+    },
+    {
+      "claim": "文明元年(1469年)、常滑城初代城主の水野忠綱が大善院を本坊とする六坊を再建",
+      "source": "https://chitashikoku88.com/daizenin.html",
+      "quote": "文明元年（1469年）常滑城初代城主水野忠綱が",
+      "checkedAt": "2026-10-29"
+    },
+    {
+      "claim": "明応3年(1494年)、大善院が常滑城の鬼門にあたることから牛頭天皇を鎮守として中の宮を奉祀",
+      "source": "https://chitashikoku88.com/daizenin.html",
+      "quote": "明応3年（1494年）大善院が常滑城の鬼門にあたることから",
+      "checkedAt": "2026-10-29"
+    },
+    {
+      "claim": "境内には樹齢550年を超えるイブキがあり、愛知県指定文化財に指定されている",
+      "source": "https://chitashikoku88.com/daizenin.html",
+      "quote": "大善院の境内にそびえる、樹齢550年を超えるイブキは",
+      "checkedAt": "2026-10-29"
+    },
+    {
+      "claim": "境内には本四国八十八カ所御砂踏霊場がある",
+      "source": "https://chitashikoku88.com/daizenin.html",
+      "quote": "本四国八十八カ所御砂踏霊場は",
+      "checkedAt": "2026-10-29"
+    },
+    {
+      "claim": "境内には冬花庵観音堂がある",
+      "source": "https://chitashikoku88.com/daizenin.html",
+      "quote": "冬花庵観音堂",
+      "checkedAt": "2026-10-29"
+    },
+    {
+      "claim": "知多四国霊場第63番札所",
+      "source": "https://chitashikoku88.com/daizenin.html",
+      "quote": "知多四国第63番",
+      "checkedAt": "2026-10-29"
+    },
+    {
+      "claim": "大きな駐車場がある",
+      "source": "https://chitashikoku88.com/daizenin.html",
+      "quote": "大きな駐車場がありますので",
+      "checkedAt": "2026-10-29"
+    }
+  ],
+  "sources": [
+    {
+      "label": "知多四国霊場会 公式サイト",
+      "url": "https://chitashikoku88.com/daizenin.html"
+    },
+    {
+      "label": "Google マップ",
+      "url": "https://maps.google.com/?cid=382211587029313775"
+    }
+  ],
+  "notes": "automation/v2/write.mjs が 2026-10-29 に claude -p --model sonnet で作成。事実の裏取り: 13/13 件(quote が出どころにあるもの)。裏取りに通らなかった facts は載せていない。"
+}

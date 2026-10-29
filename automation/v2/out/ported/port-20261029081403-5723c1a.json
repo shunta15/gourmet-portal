@@ -1,0 +1,321 @@
+{
+  "commit": "5723c1a1108ae82e695f179f3ff318182acf9aca",
+  "source": "/Users/shunta/claude/gp-k-auto2",
+  "count": 28,
+  "added": [
+    {
+      "row": 46,
+      "name": "たこぼん",
+      "key": "tri-gourmet-46",
+      "vertical": "グルメ",
+      "id": "r820",
+      "articleId": "たこぼん",
+      "shopUrl": "https://machinowa.tokyo/restaurant/r820",
+      "articleUrl": "https://machinowa.tokyo/feature/たこぼん",
+      "sheetUrl": "https://machinowa.tokyo/feature/たこぼん"
+    },
+    {
+      "row": 291,
+      "name": "大善院（観蓮寺大善院）",
+      "key": "tri-life-291",
+      "vertical": "くらし",
+      "id": "li0102",
+      "articleId": "li0102",
+      "shopUrl": "https://machinowa.tokyo/life/shop/li0102",
+      "articleUrl": "https://machinowa.tokyo/life/article/li0102",
+      "sheetUrl": "https://machinowa.tokyo/life/article/li0102"
+    },
+    {
+      "row": 344,
+      "name": "カフェさくら",
+      "key": "lk-gourmet-344",
+      "vertical": "グルメ",
+      "id": "r802",
+      "articleId": "カフェさくら",
+      "shopUrl": "https://machinowa.tokyo/restaurant/r802",
+      "articleUrl": "https://machinowa.tokyo/feature/カフェさくら",
+      "sheetUrl": "https://machinowa.tokyo/feature/カフェさくら"
+    },
+    {
+      "row": 345,
+      "name": "千里香",
+      "key": "lk-gourmet-345",
+      "vertical": "グルメ",
+      "id": "r803",
+      "articleId": "千里香",
+      "shopUrl": "https://machinowa.tokyo/restaurant/r803",
+      "articleUrl": "https://machinowa.tokyo/feature/千里香",
+      "sheetUrl": "https://machinowa.tokyo/feature/千里香"
+    },
+    {
+      "row": 346,
+      "name": "富久寿司",
+      "key": "lk-gourmet-346",
+      "vertical": "グルメ",
+      "id": "r804",
+      "articleId": "富久寿司",
+      "shopUrl": "https://machinowa.tokyo/restaurant/r804",
+      "articleUrl": "https://machinowa.tokyo/feature/富久寿司",
+      "sheetUrl": "https://machinowa.tokyo/feature/富久寿司"
+    },
+    {
+      "row": 347,
+      "name": "うどん繊月",
+      "key": "lk-gourmet-347",
+      "vertical": "グルメ",
+      "id": "r805",
+      "articleId": "うどん繊月",
+      "shopUrl": "https://machinowa.tokyo/restaurant/r805",
+      "articleUrl": "https://machinowa.tokyo/feature/うどん繊月",
+      "sheetUrl": "https://machinowa.tokyo/feature/うどん繊月"
+    },
+    {
+      "row": 348,
+      "name": "味重",
+      "key": "lk-gourmet-348",
+      "vertical": "グルメ",
+      "id": "r806",
+      "articleId": "味重",
+      "shopUrl": "https://machinowa.tokyo/restaurant/r806",
+      "articleUrl": "https://machinowa.tokyo/feature/味重",
+      "sheetUrl": "https://machinowa.tokyo/feature/味重"
+    },
+    {
+      "row": 350,
+      "name": "活魚ちゃんこ 一語一笑",
+      "key": "lk-gourmet-350",
+      "vertical": "グルメ",
+      "id": "r794",
+      "articleId": "活魚ちゃんこ一語一笑",
+      "shopUrl": "https://machinowa.tokyo/restaurant/r794",
+      "articleUrl": "https://machinowa.tokyo/feature/活魚ちゃんこ一語一笑",
+      "sheetUrl": "https://machinowa.tokyo/feature/活魚ちゃんこ一語一笑"
+    },
+    {
+      "row": 351,
+      "name": "MoMo cafe",
+      "key": "lk-gourmet-351",
+      "vertical": "グルメ",
+      "id": "r807",
+      "articleId": "MoMocafe",
+      "shopUrl": "https://machinowa.tokyo/restaurant/r807",
+      "articleUrl": "https://machinowa.tokyo/feature/MoMocafe",
+      "sheetUrl": "https://machinowa.tokyo/feature/MoMocafe"
+    },
+    {
+      "row": 352,
+      "name": "どんぐりの森",
+      "key": "lk-gourmet-352",
+      "vertical": "グルメ",
+      "id": "r808",
+      "articleId": "どんぐりの森",
+      "shopUrl": "https://machinowa.tokyo/restaurant/r808",
+      "articleUrl": "https://machinowa.tokyo/feature/どんぐりの森",
+      "sheetUrl": "https://machinowa.tokyo/feature/どんぐりの森"
+    },
+    {
+      "row": 353,
+      "name": "うどんとお寿司 甚五郎",
+      "key": "lk-gourmet-353",
+      "vertical": "グルメ",
+      "id": "r795",
+      "articleId": "うどんとお寿司甚五郎",
+      "shopUrl": "https://machinowa.tokyo/restaurant/r795",
+      "articleUrl": "https://machinowa.tokyo/feature/うどんとお寿司甚五郎",
+      "sheetUrl": "https://machinowa.tokyo/feature/うどんとお寿司甚五郎"
+    },
+    {
+      "row": 354,
+      "name": "鮨と炉ばた 扇の浦",
+      "key": "lk-gourmet-354",
+      "vertical": "グルメ",
+      "id": "r809",
+      "articleId": "鮨と炉ばた扇の浦",
+      "shopUrl": "https://machinowa.tokyo/restaurant/r809",
+      "articleUrl": "https://machinowa.tokyo/feature/鮨と炉ばた扇の浦",
+      "sheetUrl": "https://machinowa.tokyo/feature/鮨と炉ばた扇の浦"
+    },
+    {
+      "row": 356,
+      "name": "麺屋 二蝶",
+      "key": "lk-gourmet-356",
+      "vertical": "グルメ",
+      "id": "r810",
+      "articleId": "麺屋二蝶",
+      "shopUrl": "https://machinowa.tokyo/restaurant/r810",
+      "articleUrl": "https://machinowa.tokyo/feature/麺屋二蝶",
+      "sheetUrl": "https://machinowa.tokyo/feature/麺屋二蝶"
+    },
+    {
+      "row": 357,
+      "name": "割烹 青柳",
+      "key": "lk-gourmet-357",
+      "vertical": "グルメ",
+      "id": "r811",
+      "articleId": "割烹青柳",
+      "shopUrl": "https://machinowa.tokyo/restaurant/r811",
+      "articleUrl": "https://machinowa.tokyo/feature/割烹青柳",
+      "sheetUrl": "https://machinowa.tokyo/feature/割烹青柳"
+    },
+    {
+      "row": 358,
+      "name": "でらちゃん",
+      "key": "lk-gourmet-358",
+      "vertical": "グルメ",
+      "id": "r812",
+      "articleId": "でらちゃん",
+      "shopUrl": "https://machinowa.tokyo/restaurant/r812",
+      "articleUrl": "https://machinowa.tokyo/feature/でらちゃん",
+      "sheetUrl": "https://machinowa.tokyo/feature/でらちゃん"
+    },
+    {
+      "row": 359,
+      "name": "手作りジェラート CHICHIYA(チチヤ)",
+      "key": "lk-gourmet-359",
+      "vertical": "グルメ",
+      "id": "r796",
+      "articleId": "手作りジェラートCHICHIYA(チチヤ)",
+      "shopUrl": "https://machinowa.tokyo/restaurant/r796",
+      "articleUrl": "https://machinowa.tokyo/feature/手作りジェラートCHICHIYA(チチヤ)",
+      "sheetUrl": "https://machinowa.tokyo/feature/手作りジェラートCHICHIYA(チチヤ)"
+    },
+    {
+      "row": 361,
+      "name": "スウィート",
+      "key": "lk-gourmet-361",
+      "vertical": "グルメ",
+      "id": "r797",
+      "articleId": "スウィート",
+      "shopUrl": "https://machinowa.tokyo/restaurant/r797",
+      "articleUrl": "https://machinowa.tokyo/feature/スウィート",
+      "sheetUrl": "https://machinowa.tokyo/feature/スウィート"
+    },
+    {
+      "row": 362,
+      "name": "いちよし",
+      "key": "lk-gourmet-362",
+      "vertical": "グルメ",
+      "id": "r798",
+      "articleId": "いちよし",
+      "shopUrl": "https://machinowa.tokyo/restaurant/r798",
+      "articleUrl": "https://machinowa.tokyo/feature/いちよし",
+      "sheetUrl": "https://machinowa.tokyo/feature/いちよし"
+    },
+    {
+      "row": 363,
+      "name": "うなカフェ555",
+      "key": "lk-gourmet-363",
+      "vertical": "グルメ",
+      "id": "r799",
+      "articleId": "うなカフェ555",
+      "shopUrl": "https://machinowa.tokyo/restaurant/r799",
+      "articleUrl": "https://machinowa.tokyo/feature/うなカフェ555",
+      "sheetUrl": "https://machinowa.tokyo/feature/うなカフェ555"
+    },
+    {
+      "row": 364,
+      "name": "風のガーデン",
+      "key": "lk-gourmet-364",
+      "vertical": "グルメ",
+      "id": "r813",
+      "articleId": "風のガーデン",
+      "shopUrl": "https://machinowa.tokyo/restaurant/r813",
+      "articleUrl": "https://machinowa.tokyo/feature/風のガーデン",
+      "sheetUrl": "https://machinowa.tokyo/feature/風のガーデン"
+    },
+    {
+      "row": 365,
+      "name": "たぐ.みcafé",
+      "key": "lk-gourmet-365",
+      "vertical": "グルメ",
+      "id": "r814",
+      "articleId": "たぐ.みcafé",
+      "shopUrl": "https://machinowa.tokyo/restaurant/r814",
+      "articleUrl": "https://machinowa.tokyo/feature/たぐ.みcafé",
+      "sheetUrl": "https://machinowa.tokyo/feature/たぐ.みcafé"
+    },
+    {
+      "row": 366,
+      "name": "レストラン 芝井川",
+      "key": "lk-gourmet-366",
+      "vertical": "グルメ",
+      "id": "r800",
+      "articleId": "レストラン芝井川",
+      "shopUrl": "https://machinowa.tokyo/restaurant/r800",
+      "articleUrl": "https://machinowa.tokyo/feature/レストラン芝井川",
+      "sheetUrl": "https://machinowa.tokyo/feature/レストラン芝井川"
+    },
+    {
+      "row": 367,
+      "name": "北欧館",
+      "key": "lk-gourmet-367",
+      "vertical": "グルメ",
+      "id": "r815",
+      "articleId": "北欧館",
+      "shopUrl": "https://machinowa.tokyo/restaurant/r815",
+      "articleUrl": "https://machinowa.tokyo/feature/北欧館",
+      "sheetUrl": "https://machinowa.tokyo/feature/北欧館"
+    },
+    {
+      "row": 368,
+      "name": "創作料理 二条",
+      "key": "lk-gourmet-368",
+      "vertical": "グルメ",
+      "id": "r816",
+      "articleId": "創作料理二条",
+      "shopUrl": "https://machinowa.tokyo/restaurant/r816",
+      "articleUrl": "https://machinowa.tokyo/feature/創作料理二条",
+      "sheetUrl": "https://machinowa.tokyo/feature/創作料理二条"
+    },
+    {
+      "row": 369,
+      "name": "こおり地産洋食店 メルバ",
+      "key": "lk-gourmet-369",
+      "vertical": "グルメ",
+      "id": "r817",
+      "articleId": "こおり地産洋食店メルバ",
+      "shopUrl": "https://machinowa.tokyo/restaurant/r817",
+      "articleUrl": "https://machinowa.tokyo/feature/こおり地産洋食店メルバ",
+      "sheetUrl": "https://machinowa.tokyo/feature/こおり地産洋食店メルバ"
+    },
+    {
+      "row": 370,
+      "name": "御食事処 太助",
+      "key": "lk-gourmet-370",
+      "vertical": "グルメ",
+      "id": "r818",
+      "articleId": "御食事処太助",
+      "shopUrl": "https://machinowa.tokyo/restaurant/r818",
+      "articleUrl": "https://machinowa.tokyo/feature/御食事処太助",
+      "sheetUrl": "https://machinowa.tokyo/feature/御食事処太助"
+    },
+    {
+      "row": 371,
+      "name": "okudo 中村舎",
+      "key": "lk-gourmet-371",
+      "vertical": "グルメ",
+      "id": "r801",
+      "articleId": "okudo中村舎",
+      "shopUrl": "https://machinowa.tokyo/restaurant/r801",
+      "articleUrl": "https://machinowa.tokyo/feature/okudo中村舎",
+      "sheetUrl": "https://machinowa.tokyo/feature/okudo中村舎"
+    },
+    {
+      "row": 372,
+      "name": "LA VENTANAラベンターナ",
+      "key": "lk-gourmet-372",
+      "vertical": "グルメ",
+      "id": "r819",
+      "articleId": "LAVENTANAラベンターナ",
+      "shopUrl": "https://machinowa.tokyo/restaurant/r819",
+      "articleUrl": "https://machinowa.tokyo/feature/LAVENTANAラベンターナ",
+      "sheetUrl": "https://machinowa.tokyo/feature/LAVENTANAラベンターナ"
+    }
+  ],
+  "skipped": [
+    {
+      "key": "tri-life-282",
+      "reason": "--skip"
+    }
+  ]
+}

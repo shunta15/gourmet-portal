@@ -3541,11 +3541,107 @@ export const GEO: Record<string, GeoPoint> = {
     "src": "maps",
     "precision": "exact"
   },
+  "r794": {
+    "lat": 34.511059,
+    "lng": 135.852057,
+    "src": "maps",
+    "precision": "exact"
+  },
+  "r795": {
+    "lat": 35.361824,
+    "lng": 137.211594,
+    "src": "maps",
+    "precision": "exact"
+  },
+  "r796": {
+    "lat": 33.749478,
+    "lng": 130.730976,
+    "src": "maps",
+    "precision": "exact"
+  },
+  "r797": {
+    "lat": 34.256272,
+    "lng": 136.823505,
+    "src": "maps",
+    "precision": "exact"
+  },
+  "r798": {
+    "lat": 36.320627,
+    "lng": 138.876437,
+    "src": "maps",
+    "precision": "exact"
+  },
+  "r799": {
+    "lat": 34.273383,
+    "lng": 135.40714,
+    "src": "maps",
+    "precision": "exact"
+  },
   "r80": {
     "lat": 33.627773,
     "lng": 130.443787,
     "src": "gsi",
     "precision": "block"
+  },
+  "r800": {
+    "lat": 36.59346,
+    "lng": 136.915336,
+    "src": "maps",
+    "precision": "exact"
+  },
+  "r801": {
+    "lat": 35.163563,
+    "lng": 136.492137,
+    "src": "maps",
+    "precision": "exact"
+  },
+  "r802": {
+    "lat": 33.370565,
+    "lng": 130.747985,
+    "src": "maps",
+    "precision": "exact"
+  },
+  "r803": {
+    "lat": 34.888674,
+    "lng": 136.84142,
+    "src": "maps",
+    "precision": "exact"
+  },
+  "r804": {
+    "lat": 36.245678,
+    "lng": 139.077868,
+    "src": "maps",
+    "precision": "exact"
+  },
+  "r805": {
+    "lat": 33.729746,
+    "lng": 130.467367,
+    "src": "maps",
+    "precision": "exact"
+  },
+  "r806": {
+    "lat": 33.728204,
+    "lng": 130.47605,
+    "src": "maps",
+    "precision": "exact"
+  },
+  "r807": {
+    "lat": 34.237586,
+    "lng": 135.345951,
+    "src": "maps",
+    "precision": "exact"
+  },
+  "r808": {
+    "lat": 35.353482,
+    "lng": 137.182895,
+    "src": "maps",
+    "precision": "exact"
+  },
+  "r809": {
+    "lat": 32.961416,
+    "lng": 130.451056,
+    "src": "maps",
+    "precision": "exact"
   },
   "r81": {
     "lat": 34.772686,
@@ -3553,11 +3649,77 @@ export const GEO: Record<string, GeoPoint> = {
     "src": "gsi",
     "precision": "block"
   },
+  "r810": {
+    "lat": 34.742385,
+    "lng": 135.637397,
+    "src": "maps",
+    "precision": "exact"
+  },
+  "r811": {
+    "lat": 34.733744,
+    "lng": 135.316332,
+    "src": "maps",
+    "precision": "exact"
+  },
+  "r812": {
+    "lat": 35.32078,
+    "lng": 137.187712,
+    "src": "maps",
+    "precision": "exact"
+  },
+  "r813": {
+    "lat": 32.611948,
+    "lng": 130.70247,
+    "src": "maps",
+    "precision": "exact"
+  },
+  "r814": {
+    "lat": 35.031154,
+    "lng": 138.92918,
+    "src": "maps",
+    "precision": "exact"
+  },
+  "r815": {
+    "lat": 34.128285,
+    "lng": 133.653443,
+    "src": "maps",
+    "precision": "exact"
+  },
+  "r816": {
+    "lat": 34.766396,
+    "lng": 134.43719,
+    "src": "maps",
+    "precision": "exact"
+  },
+  "r817": {
+    "lat": 37.851897,
+    "lng": 140.521777,
+    "src": "maps",
+    "precision": "exact"
+  },
+  "r818": {
+    "lat": 37.052239,
+    "lng": 138.697955,
+    "src": "maps",
+    "precision": "exact"
+  },
+  "r819": {
+    "lat": 35.430541,
+    "lng": 133.830137,
+    "src": "maps",
+    "precision": "exact"
+  },
   "r82": {
     "lat": 34.820122,
     "lng": 135.195114,
     "src": "gsi",
     "precision": "block"
+  },
+  "r820": {
+    "lat": 34.83605,
+    "lng": 134.677428,
+    "src": "maps",
+    "precision": "exact"
   },
   "r83": {
     "lat": 34.632755,

@@ -1,0 +1,32 @@
+{
+  "tab": "トリニティアポ",
+  "tabEn": "tri-life",
+  "row": 291,
+  "sheet": {
+    "name": "大善院（観蓮寺大善院）",
+    "address": "",
+    "url": "https://www.google.com/maps/search/?api=1&query=%E5%A4%A7%E5%96%84%E9%99%A2%EF%BC%88%E8%A6%B3%E8%93%AE%E5%AF%BA%E5%A4%A7%E5%96%84%E9%99%A2%EF%BC%89%20056-935-3430%20%E6%84%9B%E7%9F%A5%E7%9C%8C%E5%B8%B8%E6%BB%91%E5%B8%82%E5%A5%A5%E6%9D%A1%EF%BC%95-%EF%BC%92%EF%BC%90",
+    "type": "寺",
+    "d1": "",
+    "d2": ""
+  },
+  "urlKind": "mapsApi",
+  "route": "第1段(verify-gbp.mjs)で確認済み",
+  "verdict": "一致",
+  "verdictReason": "手がかり: 店名＋電話＋住所(番地まで)。電話が一致／店名: contains(シート「大善院（観蓮寺大善院）」/ マップ「補陀落山 大善院」)／住所(シート): exact・町名・番地とも一致",
+  "place": {
+    "name": "補陀落山 大善院",
+    "address": "愛知県常滑市奥条５丁目２０",
+    "category": "仏教寺院",
+    "lat": 34.8852038,
+    "lng": 136.8486548,
+    "gbpUrl": "https://maps.google.com/?cid=382211587029313775",
+    "phone": "0569-35-3430",
+    "website": null,
+    "hours": null,
+    "reserveLinks": [],
+    "statusSignals": [],
+    "closedSignal": false
+  },
+  "fetchedAt": "2026-10-29T06:40:54.948Z"
+}

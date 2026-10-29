@@ -15557,6 +15557,132 @@
         ],
         "checkedAt": "2026-10-29"
       }
+    },
+    {
+      "id": "li0102",
+      "vertical": "life",
+      "category": "shrine-temple",
+      "name": "補陀落山 大善院",
+      "pref": "aichi",
+      "cityName": "常滑市",
+      "address": "愛知県常滑市奥条5丁目20",
+      "lat": 34.8852038,
+      "lng": 136.8486548,
+      "phone": "0569-35-3430",
+      "mapUrl": "https://maps.google.com/?cid=382211587029313775",
+      "image": "/_portal/vshops/tri-life-291/g01.jpg",
+      "images": [
+        "/_portal/vshops/tri-life-291/g01.jpg",
+        "/_portal/vshops/tri-life-291/g02.jpg",
+        "/_portal/vshops/tri-life-291/g03.jpg",
+        "/_portal/vshops/tri-life-291/g04.jpg",
+        "/_portal/vshops/tri-life-291/g05.jpg",
+        "/_portal/vshops/tri-life-291/g06.jpg",
+        "/_portal/vshops/tri-life-291/g07.jpg",
+        "/_portal/vshops/tri-life-291/g08.jpg",
+        "/_portal/vshops/tri-life-291/g09.jpg",
+        "/_portal/vshops/tri-life-291/g10.jpg"
+      ],
+      "photos": [
+        {
+          "path": "/_portal/vshops/tri-life-291/g01.jpg",
+          "what": "赤い鳥居と祠がある境内",
+          "kind": "common",
+          "width": 1200,
+          "height": 1080
+        },
+        {
+          "path": "/_portal/vshops/tri-life-291/g02.jpg",
+          "what": "瓦屋根の木造の建物",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 675
+        },
+        {
+          "path": "/_portal/vshops/tri-life-291/g03.jpg",
+          "what": "灯籠が並ぶ本堂前の境内",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 901
+        },
+        {
+          "path": "/_portal/vshops/tri-life-291/g04.jpg",
+          "what": "本堂へ続く石段",
+          "kind": "exterior",
+          "width": 1177,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-life-291/g05.jpg",
+          "what": "境内にそびえる大きな木",
+          "kind": "common",
+          "width": 1200,
+          "height": 1164
+        },
+        {
+          "path": "/_portal/vshops/tri-life-291/g06.jpg",
+          "what": "本堂と灯籠が並ぶ境内",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-life-291/g07.jpg",
+          "what": "仏像や掛け軸が並ぶ堂内",
+          "kind": "common",
+          "width": 1200,
+          "height": 675
+        },
+        {
+          "path": "/_portal/vshops/tri-life-291/g08.jpg",
+          "what": "赤い帽子をかぶった石仏が並ぶ",
+          "kind": "common",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-life-291/g09.jpg",
+          "what": "木の祠と石碑",
+          "kind": "common",
+          "width": 600,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-life-291/g10.jpg",
+          "what": "屋根付きの祠と石仏が並ぶ",
+          "kind": "common",
+          "width": 1200,
+          "height": 901
+        }
+      ],
+      "tags": [
+        "駐車場あり"
+      ],
+      "article": {
+        "headline": "常滑市奥条にある真言宗豊山派の寺院。知多四国霊場第63番札所で、本尊は十一面観世音菩薩",
+        "lede": "常滑市にある「補陀落山 大善院」です。山号は補陀落山、宗派は真言宗豊山派、本尊は十一面観世音菩薩で、知多四国霊場第63番札所にあたります。境内には樹齢550年を超えるイブキがあり、愛知県指定文化財に指定されています。",
+        "sections": [
+          {
+            "heading": "由緒",
+            "body": "戦火で荒廃した61番高讃寺を嘆いた養春上人が、本尊の十一面観世音菩薩をこの地に移したのが始まりです。文明元年(1469年)、常滑城初代城主の水野忠綱が大善院を本坊とする六坊を再建しました。明応3年(1494年)には、大善院が常滑城の鬼門にあたることから、牛頭天皇を鎮守として中の宮が奉祀されました。"
+          },
+          {
+            "heading": "境内",
+            "body": "境内には樹齢550年を超えるイブキがあり、愛知県指定文化財に指定されています。本四国八十八カ所御砂踏霊場や冬花庵観音堂もあります。大きな駐車場も備えています。"
+          }
+        ],
+        "sources": [
+          {
+            "label": "知多四国霊場会 公式サイト",
+            "url": "https://chitashikoku88.com/daizenin.html"
+          },
+          {
+            "label": "Google マップ",
+            "url": "https://maps.google.com/?cid=382211587029313775"
+          }
+        ],
+        "checkedAt": "2026-10-29"
+      }
     }
   ]
 }

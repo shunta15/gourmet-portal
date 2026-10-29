@@ -1,0 +1,14 @@
+{
+  "name": "MoMo cafe",
+  "address": "和歌山県紀の川市桃山町市場２７３−１",
+  "lat": 34.2375861,
+  "lng": 135.3459514,
+  "category": "コーヒーショップ・喫茶店",
+  "hours": null,
+  "phone": "090-1445-3653",
+  "website": "https://sites.google.com/view/caferentalspacemomo/",
+  "priceRange": null,
+  "status": null,
+  "gbpUrl": "https://maps.google.com/?cid=10543224718970705503",
+  "fetchedAt": "2026-10-29T07:02:54.169Z"
+}

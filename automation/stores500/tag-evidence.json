@@ -4476,5 +4476,202 @@
     "articleId": "寿司割烹酒場ゐまる（イマル）",
     "name": "寿司割烹酒場 ゐまる （イマル）",
     "tags": []
+  },
+  "r820": {
+    "articleId": "たこぼん",
+    "name": "たこぼん",
+    "tags": []
+  },
+  "r802": {
+    "articleId": "カフェさくら",
+    "name": "カフェさくら",
+    "tags": []
+  },
+  "r803": {
+    "articleId": "千里香",
+    "name": "千里香",
+    "tags": []
+  },
+  "r804": {
+    "articleId": "富久寿司",
+    "name": "富久寿司",
+    "tags": [
+      {
+        "tag": "個室",
+        "rule": "記事 specs「個室」項目が肯定",
+        "evidence": "個室: あり"
+      }
+    ]
+  },
+  "r805": {
+    "articleId": "うどん繊月",
+    "name": "うどん繊月",
+    "tags": [
+      {
+        "tag": "うどん",
+        "rule": "業態がシーン語彙に一致",
+        "evidence": "うどん（うどん）"
+      },
+      {
+        "tag": "うどん",
+        "rule": "業態がシーン語彙に一致",
+        "evidence": "うどん屋（うどん）"
+      }
+    ]
+  },
+  "r806": {
+    "articleId": "味重",
+    "name": "味重",
+    "tags": []
+  },
+  "r794": {
+    "articleId": "活魚ちゃんこ一語一笑",
+    "name": "活魚ちゃんこ 一語一笑",
+    "tags": []
+  },
+  "r807": {
+    "articleId": "MoMocafe",
+    "name": "MoMo cafe",
+    "tags": []
+  },
+  "r808": {
+    "articleId": "どんぐりの森",
+    "name": "どんぐりの森",
+    "tags": [
+      {
+        "tag": "個室",
+        "rule": "記事 specs「個室」項目が肯定",
+        "evidence": "個室: 有(貸切不可)"
+      }
+    ]
+  },
+  "r795": {
+    "articleId": "うどんとお寿司甚五郎",
+    "name": "うどんとお寿司 甚五郎",
+    "tags": []
+  },
+  "r809": {
+    "articleId": "鮨と炉ばた扇の浦",
+    "name": "鮨と炉ばた 扇の浦",
+    "tags": []
+  },
+  "r810": {
+    "articleId": "麺屋二蝶",
+    "name": "麺屋 二蝶",
+    "tags": []
+  },
+  "r811": {
+    "articleId": "割烹青柳",
+    "name": "割烹 青柳",
+    "tags": [
+      {
+        "tag": "個室",
+        "rule": "記事 specs「個室」項目が肯定",
+        "evidence": "個室: 半個室1室"
+      }
+    ]
+  },
+  "r812": {
+    "articleId": "でらちゃん",
+    "name": "でらちゃん",
+    "tags": []
+  },
+  "r796": {
+    "articleId": "手作りジェラートCHICHIYA(チチヤ)",
+    "name": "手作りジェラート CHICHIYA(チチヤ)",
+    "tags": []
+  },
+  "r797": {
+    "articleId": "スウィート",
+    "name": "スウィート",
+    "tags": []
+  },
+  "r798": {
+    "articleId": "いちよし",
+    "name": "いちよし",
+    "tags": [
+      {
+        "tag": "そば",
+        "rule": "業態がシーン語彙に一致",
+        "evidence": "蕎麦店（そば）"
+      },
+      {
+        "tag": "宴会",
+        "rule": "席表記に「座敷」「宴会」",
+        "evidence": "客席: 木目調テーブル席・お座敷席"
+      },
+      {
+        "tag": "個室",
+        "rule": "記事 specs「個室」項目が肯定",
+        "evidence": "個室: 奥に個室あり、宴会も可能"
+      }
+    ]
+  },
+  "r799": {
+    "articleId": "うなカフェ555",
+    "name": "うなカフェ555",
+    "tags": []
+  },
+  "r813": {
+    "articleId": "風のガーデン",
+    "name": "風のガーデン",
+    "tags": []
+  },
+  "r814": {
+    "articleId": "たぐ.みcafé",
+    "name": "たぐ.みcafé",
+    "tags": []
+  },
+  "r800": {
+    "articleId": "レストラン芝井川",
+    "name": "レストラン 芝井川",
+    "tags": []
+  },
+  "r815": {
+    "articleId": "北欧館",
+    "name": "北欧館",
+    "tags": []
+  },
+  "r816": {
+    "articleId": "創作料理二条",
+    "name": "創作料理 二条",
+    "tags": []
+  },
+  "r817": {
+    "articleId": "こおり地産洋食店メルバ",
+    "name": "こおり地産洋食店 メルバ",
+    "tags": []
+  },
+  "r818": {
+    "articleId": "御食事処太助",
+    "name": "御食事処 太助",
+    "tags": [
+      {
+        "tag": "個室",
+        "rule": "記事 specs「個室」項目が肯定",
+        "evidence": "個室: あり"
+      }
+    ]
+  },
+  "r801": {
+    "articleId": "okudo中村舎",
+    "name": "okudo 中村舎",
+    "tags": [
+      {
+        "tag": "個室",
+        "rule": "席表記に「個室」",
+        "evidence": "席: 座敷・個室・わんこ縁側席"
+      },
+      {
+        "tag": "宴会",
+        "rule": "席表記に「座敷」「宴会」",
+        "evidence": "席: 座敷・個室・わんこ縁側席"
+      }
+    ]
+  },
+  "r819": {
+    "articleId": "LAVENTANAラベンターナ",
+    "name": "LA VENTANAラベンターナ",
+    "tags": []
   }
 }
