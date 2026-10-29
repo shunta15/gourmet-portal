@@ -83,7 +83,7 @@ export default function Lower() {
         {/* ───────── 特集記事 ───────── */}
         <section className="pl-sec pl-feat" style={sty({ "--h": 339 })} aria-label="特集記事">
           <i className="pl-featbleed" aria-hidden="true" />
-          {P(664, [0, 664, 268, 340], [[0, 677], [95, 667], [200, 673], [268, 681], [268, 1002], [0, 1000]], 41, { amps: [0, 1, 1, 0, 1.5, 0], step: 12, color: "#efe7da", shadow: false, className: "pl-featleft" })}
+          {P(664, [0, 664, 268, 340], [[0, 677], [95, 667], [200, 673], [268, 681], [268, 1002], [0, 1000]], 41, { amps: [0, 1, 1, 0, 1.5, 0], step: 12, color: "#faf8f2", shadow: false, className: "pl-featleft" })}
           <h2 className="pl-t pl-feat-h" style={feat.t(30, 768, 34, 44)}>特集記事</h2>
           <p className="pl-t pl-feat-lead" style={feat.t(31.5, 849.5, 14.5, 25)}>マチノワで紹介しているお店の<br />特集記事をまとめています。</p>
           <Link className="pl-a pl-btn pl-feat-btn" href={HREF_SPECIAL} style={feat.a(31, 914, 186, 38)}>特集をもっと見る<Arrow /></Link>
@@ -100,7 +100,7 @@ export default function Lower() {
             <Link className="pl-a pl-cover" href={F_MAIN.href} style={feat.a(268, 682, 463, 330)} aria-label={F_MAIN.head.join("")} />
           </div>
 
-          {P(664, [731, 674, 391, 338], [[731, 674], [1122, 674], [1122, 1012], [731, 1012]], 43, { amps: 0, color: "#f8f4ec", shadow: false, className: "pl-featright" })}
+          {P(664, [731, 674, 391, 338], [[731, 674], [1122, 674], [1122, 1012], [731, 1012]], 43, { amps: 0, color: "#faf8f2", shadow: false, className: "pl-featright" })}
           {F_SMALL.map((c, i) => {
             const y = i ? 853 : 682; // 写真の上端
             const boxY = i ? 851 : 680; // 紙の上端
@@ -110,7 +110,7 @@ export default function Lower() {
                 <Link className="pl-a pl-feat-s" href={c.href} style={feat.a(741, y, i ? 210 : 209, 159)} aria-label={c.head}>
                   <img src={c.img} alt="" width={1200} height={600} loading="lazy" />
                 </Link>
-                {P(664, [950, boxY, 172, boxH], i ? [[950, 853], [1122, 850], [1122, 1012], [950, 1012]] : [[950, 683], [1122, 679], [1122, 848], [950, 847]], i ? 53 : 47, { amps: i ? [1.5, 0, 0, 0] : [1.5, 0, 0.8, 0], step: 10, color: "#fcfaf6", shadow: false, plain: true, className: "pl-fcard" })}
+                {P(664, [950, boxY, 172, boxH], i ? [[950, 853], [1122, 850], [1122, 1012], [950, 1012]] : [[950, 683], [1122, 679], [1122, 848], [950, 847]], i ? 53 : 47, { amps: i ? [1.5, 0, 0, 0] : [1.5, 0, 0.8, 0], step: 10, color: "#fdfcfa", shadow: false, plain: true, className: "pl-fcard" })}
                 <Link className="pl-a pl-fc" href={c.href} style={feat.a(958, boxY + 9, 156, boxH - (i ? 32 : 20))}>
                   <span className="pl-subtag">{c.tag}</span>
                   <h3 className="pl-fc-h">{c.head}</h3>
@@ -124,7 +124,7 @@ export default function Lower() {
 
         {/* ───────── 街のひと + 新着情報 ───────── */}
         <section className="pl-sec pl-pn" style={sty({ "--h": 219 })} aria-label="街のひと・新着情報">
-          {P(1003, [0, 1003, 492, 244], [[0, 1006], [60, 1004], [300, 1003], [492, 1004], [492, 1227], [450, 1230.5], [380, 1234], [300, 1237], [200, 1241], [100, 1243.5], [0, 1246]], 61, { amps: [1, 1, 1, 0, 1.2, 1.2, 1.2, 1.2, 1.2, 1.2, 0], step: 12, color: "#f4efe6", shadow: false, className: "pl-pback" })}
+          {P(1003, [0, 1003, 492, 244], [[0, 1006], [60, 1004], [300, 1003], [492, 1004], [492, 1227], [450, 1230.5], [380, 1234], [300, 1237], [200, 1241], [100, 1243.5], [0, 1246]], 61, { amps: [1, 1, 1, 0, 1.2, 1.2, 1.2, 1.2, 1.2, 1.2, 0], step: 12, color: "#faf8f2", shadow: false, className: "pl-pback" })}
           {/* 特集記事の欄(本番の総合トップ p4 の「特集記事」の段の左と中央を、そのまま縮めて置いた。小さな英字 FEATURE と筆記体 Connect The Town は、試作の「英語は外す」に合わせて出さない) */}
           <div className="pl-a pl-about" style={peo.a(30, 1008, 452, 210)}>
             <div className="pl-about-l">
@@ -140,7 +140,7 @@ export default function Lower() {
             </div>
           </div>
 
-          {P(1003, [484, 1003, 638, 222], [[484, 1021], [494, 1009], [503, 1021], [512, 1011], [517, 1006], [1122, 1004], [1122, 1216], [1010, 1221], [740, 1223], [484, 1222]], 71, { amps: [0.8, 0.8, 0.8, 0.8, 0.8, 0, 1.2, 1.2, 1.2, 0.8], step: 14, color: "#fbf9f4", plain: true, className: "pl-npanel" })}
+          {P(1003, [484, 1003, 638, 222], [[484, 1021], [494, 1009], [503, 1021], [512, 1011], [517, 1006], [1122, 1004], [1122, 1216], [1010, 1221], [740, 1223], [484, 1222]], 71, { amps: [0.8, 0.8, 0.8, 0.8, 0.8, 0, 1.2, 1.2, 1.2, 0.8], step: 14, color: "#fdfcfa", plain: true, className: "pl-npanel" })}
           <h2 className="pl-t pl-news-h" style={peo.t(515.5, 1051, 24, 32)}>新着情報</h2>
           <Link className="pl-a pl-btn pl-news-btn" href="#" style={peo.a(919, 1039, 170, 26)}>新着情報をもっと見る<Arrow /></Link>
           <ul className="pl-news">

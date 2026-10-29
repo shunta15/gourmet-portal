@@ -30,7 +30,8 @@
 .pl-root .pl-pwrap { pointer-events: none; }
 .pl-root .pl-fill { position: absolute; inset: 0; }
 .pl-root .pl-paper { background: var(--pc, #ece8e1); }
-.pl-root .pl-paper.pl-g { background: var(--grain), var(--mottle), var(--pc, #ece8e1); }
+/* 2026-10-29 紙のざらつき(--grain/--mottle)は外した。本番 p4 と同じ平らな色に見せるため(変数の定義だけ残す) */
+.pl-root .pl-paper.pl-g { background: var(--pc, #ece8e1); }
 .pl-root .pl-sh { filter: drop-shadow(0 calc(1.1 * var(--u)) calc(2.2 * var(--u)) rgba(70, 50, 30, .24)); }
 
 /* 横幅いっぱいにするための左右へのにじみ(1600px より広い画面だけ見える。いまは使っていない) */
@@ -44,7 +45,7 @@
 .pl-root .pl-btn .pl-arrow { flex: none; }
 
 /* ───── 特集記事 ───── */
-.pl-root .pl-featbleed { position: absolute; right: calc(100% - 1px); top: calc(677 * var(--u) - 664 * var(--u)); width: calc(var(--bl) + 1px); height: calc(323 * var(--u)); background: #efe7da; }
+.pl-root .pl-featbleed { position: absolute; right: calc(100% - 1px); top: calc(677 * var(--u) - 664 * var(--u)); width: calc(var(--bl) + 1px); height: calc(323 * var(--u)); background: #faf8f2; }
 .pl-root .pl-feat-h { font-family: var(--p4-min), "Shippori Mincho", "Hiragino Mincho ProN", serif; font-weight: 500; color: #1c1815; letter-spacing: .06em; }
 .pl-root .pl-feat-lead { font-weight: 500; color: #2a2520; letter-spacing: .01em; }
 .pl-root .pl-feat-btn { border-color: #4a443d; padding: 0 calc(20 * var(--u)) 0 calc(21 * var(--u)); font-size: calc(11.5 * var(--u)); }
@@ -55,10 +56,10 @@
 .pl-root .pl-feat-mp { font-weight: 500; color: #f6efe7; letter-spacing: 0; text-shadow: 0 1px 4px rgba(0, 0, 0, .5); }
 .pl-root .pl-viewmore { display: flex; align-items: center; gap: calc(9 * var(--u)); color: #f6efe7; letter-spacing: .1em; font-weight: 400; text-shadow: 0 1px 3px rgba(0, 0, 0, .5); }
 .pl-root .pl-cover { z-index: 2; }
-.pl-root .pl-feat-s { background: #fbf9f4; padding: 0; box-shadow: 0 0 0 calc(2.5 * var(--u)) #fbf9f4, 0 1px 4px rgba(40, 25, 10, .25); }
+.pl-root .pl-feat-s { background: #fdfcfa; padding: 0; box-shadow: 0 0 0 calc(2.5 * var(--u)) #fdfcfa, 0 1px 4px rgba(40, 25, 10, .25); }
 .pl-root .pl-feat-s img { width: 100%; height: 100%; object-fit: cover; }
 .pl-root .pl-fc { display: flex; flex-direction: column; align-items: flex-start; gap: calc(5 * var(--u)); overflow: hidden; }
-.pl-root .pl-subtag { display: inline-grid; place-items: center; min-width: calc(48 * var(--u)); height: calc(18 * var(--u)); padding: 0 calc(8 * var(--u)); border: 1px solid #5a534c; background: #fcfaf6; color: #26211d; font-size: max(9px, calc(9.6 * var(--u))); letter-spacing: .06em; font-weight: 600; line-height: 1; }
+.pl-root .pl-subtag { display: inline-grid; place-items: center; min-width: calc(48 * var(--u)); height: calc(18 * var(--u)); padding: 0 calc(8 * var(--u)); border: 1px solid #5a534c; background: #fdfcfa; color: #26211d; font-size: max(9px, calc(9.6 * var(--u))); letter-spacing: .06em; font-weight: 600; line-height: 1; }
 .pl-root .pl-fc-h { text-wrap: balance; font-family: var(--p4-min), "Shippori Mincho", "Hiragino Mincho ProN", serif; font-weight: 500; letter-spacing: 0; color: #1f1b18; font-size: max(11px, calc(13.5 * var(--u))); line-height: 1.42; }
 .pl-root .pl-fc-p { text-wrap: balance; font-weight: 500; letter-spacing: .01em; color: #4f4840; font-size: max(9.5px, calc(9.5 * var(--u))); line-height: 1.55; }
 .pl-root .pl-fc-ar { margin-top: auto; color: #3a342e; }
@@ -112,7 +113,7 @@
   .pl-root .pl-a, .pl-root .pl-t { position: static; left: auto; top: auto; width: auto; height: auto; font-size: calc(var(--fs, 12) * 1px); line-height: calc(var(--lh, 18) / var(--fs, 12)); white-space: normal; }
   .pl-root .pl-fmain { display: block; }
   /* 特集記事 */
-  .pl-root .pl-feat { background: #efe7da; padding: 26px 16px 22px; }
+  .pl-root .pl-feat { background: #faf8f2; padding: 26px 16px 22px; }
   .pl-root .pl-feat-h { display: block; font-size: 28px !important; line-height: 1.2 !important; transform: none; }
   .pl-root .pl-feat-lead { display: block; margin-top: 14px; font-size: 14px !important; line-height: 1.8 !important; }
   .pl-root .pl-feat-btn { margin-top: 16px; width: 100%; height: 40px; font-size: 12px; }
