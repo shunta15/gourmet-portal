@@ -4,6 +4,7 @@ import type { CSSProperties } from "react";
 import { torn, poly, type Pt } from "./torn";
 // 決まった言葉(machi2/copy.ts)。言い換えない・足さない・削らない
 import { P2 } from "../machi2/copy";
+import { getNewsItems } from "@/lib/portal/news";
 // 総合の特集一覧 /special(総合トップ本体と同じ行き先)
 import { HREF_SPECIAL, IMG as P4IMG, Arrow as P4Arrow } from "../p4/P4Chrome";
 // 総合の店舗紹介(8 業種それぞれの店舗紹介への入口。app/shop。2026-10-29 新設)
@@ -11,7 +12,7 @@ const HREF_SHOP = "/shop";
 
 // 総合トップ(見本4)の「下半分」を、見本1(紙のコラージュ)の下半分の作りで組んだ試作。
 // 座標は見本1(1122px 幅)の画素 × var(--u)。紙・写真・手書きの飾りは見本1の試作(proto/hub-next)の部品。上半分と関係なく、この部品だけを差し替える。
-// 中身は実在のものだけ: 特集 3 本 = 本番の記事(題名・写真・リンク)/ 新着情報 4 件 = git log で日付を確かめた出来事 / 決まった言葉 = copy.ts。
+// 中身は実在のものだけ: 特集 3 本 = 本番の記事(題名・写真・リンク)/ 新着情報 4 件 = 実データ(店・特集)から lib/portal/news.ts が作る(日付は git の台帳 lib/portal/newsDates.generated.json) / 決まった言葉 = copy.ts。
 // 仮のもの(見本1の試作のまま): 街のひとの写真と縦書き・新着情報の写真・街の写真の帯。
 const IMG = "/_portal/hproto/p4lower/";
 
@@ -48,13 +49,9 @@ const F_SMALL = [
   { href: "/life/article/li0004", img: "/_portal/vshops/life-2510/s2.jpg", tag: "くらし", head: "天童の将棋駒専門店、中島清吉商店で知る駒づくりと書き駒体験", body: "明治10年創業の将棋駒の専門店です。" },
   { href: "/stay/article/st0005", img: "/_portal/vshops/lodging-8/s8.jpg", tag: "ステイ", head: "長野県野沢温泉村の山のホテル大瀧", body: "長坂ゴンドラ乗り場の目の前にある小さなホテル。" },
 ] as const;
-// 新着情報 = サイトで実際にあった出来事。日付は git log(main へ入った日)で確認。リンクは実在のページ
-const NEWS: [string, string, string, string, string][] = [
-  ["2026.10.29", "お知らせ", "g", "総合トップを新しくしました", "/"],
-  ["2026.10.28", "動画", "b", "動画のページを全業種共通にしました", "/videos"],
-  ["2026.10.26", "くらし", "b", "くらしのページを新しくしました", "/life"],
-  ["2026.10.25", "スポーツ", "g", "スポーツのページを新しくしました", "/sports"],
-];
+// 新着情報 = 実データから作る(lib/portal/news.ts。「<店名>が紹介されました」「特集記事『<題>』が追加されました」の 2 種類・新しい順 4 件。日付は git の main の履歴の台帳)。手書きの知らせは持たない
+// 札の色 = 業種ごとに 2 色(今までの札の 2 色)を交互に当てる
+const CHIP_TONE: Record<string, string> = { gourmet: "g", beauty: "b", bodycare: "g", pet: "b", stay: "g", activity: "b", sports: "g", life: "b" };
 // 利用シーンの行き先 = 本番の総合トップ(p4/P4Home.tsx の SCENES)と同じ。写真は p4 の n_s0〜n_s3_hq。友人と = グルメの絞り込み / 家族と = アクティビティ / ひとりで = ボディケア / ペットと = ペット
 const SCENES: [string, string, string][] = [
   ["友人と", "楽しむ", "/search?scene=group"],
@@ -65,7 +62,8 @@ const SCENES: [string, string, string][] = [
 // 水色の札の言葉 = 決まった言葉 P2(一字一句そのまま。本番と同じく 1 行目は「、」で 2 行に分けるだけ)
 const P2_LINES = P2.split("\n");
 
-export default function Lower() {
+export default async function Lower() {
+  const news = await getNewsItems(4);
   const feat = S(664);
   const peo = S(1003);
 
@@ -146,14 +144,17 @@ export default function Lower() {
           <h2 className="pl-t pl-news-h" style={peo.t(515.5, 1051, 24, 32)}>新着情報</h2>
           <Link className="pl-a pl-btn pl-news-btn" href="#" style={peo.a(919, 1039, 170, 26)}>新着情報をもっと見る<Arrow /></Link>
           <ul className="pl-news">
-            {NEWS.map(([d, tag, tone, title, href], i) => {
+            {news.map((n, i) => {
               const cy = 1094.5 + 32.3 * i;
+              const [pre, post] = n.kind === "shop" ? ["", "が紹介されました"] : ["特集記事『", "』が追加されました"];
               return (
-                <li key={d}>
-                  <Link className="pl-newsrow" href={href}>
-                    <time className="pl-t pl-nd" style={peo.t(516.5, cy + 1, 11, 14)}>{d}</time>
-                    <span className={`pl-a pl-chip pl-chip-${tone}`} style={peo.a(590, cy - 9, 72, 18)}>{tag}</span>
-                    <span className="pl-t pl-nt" style={peo.t(685, cy - 1, 12, 16)}>{title}</span>
+                <li key={n.href}>
+                  <Link className="pl-newsrow" href={n.href} aria-label={`${pre}${n.name}${post}`} title={`${pre}${n.name}${post}`}>
+                    <time className="pl-t pl-nd" style={peo.t(516.5, cy + 1, 11, 14)}>{n.date}</time>
+                    <span className={`pl-a pl-chip pl-chip-${CHIP_TONE[n.vertical]}${n.tag.length > 6 ? " pl-chip-long" : ""}`} style={peo.a(590, cy - 9, 72, 18)}>{n.tag}</span>
+                    <span className="pl-t pl-nt" style={peo.t(675, cy - 1, 12, 16)}>
+                      <span className="pl-nt-in">{pre}{n.name}{post}</span>
+                    </span>
                   </Link>
                   <i className="pl-a pl-nline" style={peo.a(515, cy + 16, 574, 1)} aria-hidden="true" />
                 </li>

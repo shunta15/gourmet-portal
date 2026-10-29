@@ -84,6 +84,10 @@
 .pl-root .pl-chip { display: grid; place-items: center; font-size: calc(10.3 * var(--u)); font-weight: 600; color: #3a342e; letter-spacing: .04em; }
 .pl-root .pl-chip-g { background: #dcdcd8; } .pl-chip-b { background: #eadcc4; }
 .pl-root .pl-nt { color: #2f2a25; font-weight: 500; letter-spacing: .01em; }
+/* 新着情報の題: 長い店名・記事の題は 2 行まで折り返す(行の中心は 1 行のときと同じ。2 行を超えたら末尾を「…」で切る。全文は title と aria-label にある)。幅は画面の右の写真の手前まで */
+.pl-root .pl-nt { display: flex; align-items: center; height: calc(32 * var(--u)); margin-top: calc(-8 * var(--u)); width: calc(229 * var(--u)); white-space: normal; letter-spacing: 0; overflow-wrap: anywhere; }
+.pl-root .pl-nt-in { display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 2; overflow: hidden; line-height: calc(13.8 * var(--u)); }
+.pl-root .pl-chip-long { letter-spacing: 0; font-size: calc(9 * var(--u)); }
 .pl-root .pl-nline { background: rgba(60, 45, 30, .09); }
 .pl-root .pl-autumn { filter: drop-shadow(0 1px 3px rgba(40, 25, 10, .3)); }
 
@@ -145,7 +149,10 @@
   .pl-root .pl-newsrow { display: grid; grid-template-columns: 86px auto; justify-content: start; align-items: center; gap: 4px 10px; padding: 11px 0; }
   .pl-root .pl-nd { font-size: 11px !important; }
   .pl-root .pl-chip { display: inline-block; padding: 1px 8px; font-size: 10px; line-height: 1.6; }
-  .pl-root .pl-nt { grid-column: 1 / -1; font-size: 13px !important; line-height: 1.5 !important; }
+  .pl-root .pl-nt { grid-column: 1 / -1; display: block; letter-spacing: .01em; height: auto; margin-top: 0; width: auto; font-size: 13px !important; line-height: 1.5 !important; }
+  .pl-root .pl-nt-in { display: inline; overflow: visible; line-height: inherit; }
+  .pl-root .pl-chip-long { font-size: 10px; letter-spacing: .04em; }
+  .pl-root .pl-chip { justify-self: start; }
   .pl-root .pl-news-btn { display: flex; margin: 16px 16px 0; height: 38px; font-size: 11px; }
   .pl-root .pl-autumn { display: block; width: 66%; height: auto; margin: 18px auto 0; }
   /* 利用シーン + 水色の札(本番 p4 のスマホと同じ: シーン → 水色の札 の縦積み) */
