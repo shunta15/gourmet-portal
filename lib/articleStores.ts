@@ -17916,6 +17916,55 @@ export const ARTICLE_STORES: Restaurant[] = [
       "山陽姫路駅"
     ],
     "featureId": "たこぼん"
+  },
+  {
+    "id": "r821",
+    "name": "あっちゃんりんご園",
+    "cuisine": "グルメ",
+    "area": "群馬県・沼田市",
+    "region": "gunma",
+    "shape": "square",
+    "image": "/restaurants/teleapo-あっちゃんりんご園/hero.jpg",
+    "heroImages": [
+      "/restaurants/teleapo-あっちゃんりんご園/hero.jpg",
+      "/restaurants/teleapo-あっちゃんりんご園/point1.jpg",
+      "/restaurants/teleapo-あっちゃんりんご園/point2.jpg",
+      "/restaurants/teleapo-あっちゃんりんご園/point3.jpg"
+    ],
+    "gallery": [
+      "/restaurants/teleapo-あっちゃんりんご園/hero.jpg",
+      "/restaurants/teleapo-あっちゃんりんご園/point1.jpg",
+      "/restaurants/teleapo-あっちゃんりんご園/point2.jpg",
+      "/restaurants/teleapo-あっちゃんりんご園/point3.jpg"
+    ],
+    "desc": "あっちゃんりんご園は、群馬県沼田市中発知町にある果樹園である。",
+    "address": "群馬県沼田市中発知町295",
+    "hours": "—（訪問前に公式確認）",
+    "closed": "—（訪問前に公式確認）",
+    "seats": "—（訪問前に公式確認）",
+    "nearest": "—",
+    "phone": "0278-23-9866",
+    "source": {
+      "label": "Google ビジネスプロフィール",
+      "url": "https://maps.google.com/?cid=11261408827370474525"
+    },
+    "body": [
+      "あっちゃんりんご園は、群馬県沼田市にあるお店です。業態は「グルメ」、所在地は群馬県沼田市中発知町295です。マチノワ編集部の特集記事では、「玉原高原の麓で育つりんご狩りの果樹園」・「カウンター席のみ完全予約制のいなたえカフェ」などを取り上げています。",
+      "営業時間と定休日は取得できていないため、訪問前に公式の情報でご確認ください。営業時間や価格は変わることがあるため、訪問前に公式サイトやSNS、お電話でご確認ください。"
+    ],
+    "highlights": [
+      "玉原高原の麓で育つりんご狩りの果樹園",
+      "カウンター席のみ完全予約制のいなたえカフェ",
+      "農園ジャムと手作り漬け物を扱う売店",
+      "多言語対応とバリアフリーの受け入れ体制",
+      "沼田市中発知町、電話で確かめる営業日"
+    ],
+    "tags": [
+      "グルメ",
+      "果樹園",
+      "沼田市"
+    ],
+    "featureId": "あっちゃんりんご園"
   }
 ];
 
@@ -18297,7 +18346,8 @@ export const ARTICLE_STORE_FEATURE_IDS: Record<string, string> = {
   "r817": "こおり地産洋食店メルバ",
   "r818": "御食事処太助",
   "r819": "LAVENTANAラベンターナ",
-  "r820": "たこぼん"
+  "r820": "たこぼん",
+  "r821": "あっちゃんりんご園"
 };
 
 /** 特集記事ID → 店舗ID */
@@ -18678,5 +18728,6 @@ export const ARTICLE_STORE_ID_BY_FEATURE: Record<string, string> = {
   "こおり地産洋食店メルバ": "r817",
   "御食事処太助": "r818",
   "LAVENTANAラベンターナ": "r819",
-  "たこぼん": "r820"
+  "たこぼん": "r820",
+  "あっちゃんりんご園": "r821"
 };

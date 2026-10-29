@@ -1,0 +1,180 @@
+{
+  "key": "tri-activity-283",
+  "headline": "長野県大町市の青木湖を拠点にSUPツアーを行うアウトドアガイドサービス。ウィンターシーズンは白馬村を拠点にスキー・スノーボードのツアーも行う",
+  "lede": "大町市にある「Mauka outdoor」です。青木湖にSUPベースを置き、グリーンシーズンは青木湖SUPツアー、万水川SUPツアー、犀川SUPツアーを、ウィンターシーズンはゲレンデツアーとバックカントリーツアーを行っています。",
+  "sections": [
+    {
+      "heading": "SUPツアーについて",
+      "body": "グリーンシーズンのSUPツアーは、青木湖SUPツアー、万水川SUPツアー、犀川SUPツアーの3つを展開しています。初めての人でも気軽に挑戦できる青木湖でのSUPツーリングのほか、中級者から上級者向けのSUPダウンリバー(川下り)ツアーもあります。登山、釣り、山菜、キャンプのプライベートツアーにも対応しています。"
+    },
+    {
+      "heading": "ウィンターツアーについて",
+      "body": "ウィンターシーズンは、スキー・スノーボードのゲレンデプライベートツアーを中心に行っています。指導員資格を持ったガイドがビギナーからエキスパートまで案内し、HAKUBA VALLEYのスキー場全てでツアーの開催が可能です。バックカントリーツアーは、入門編のバックカントリーエントリーツアーと、レベルアップしたバックカントリーツアーの2つがあります。"
+    },
+    {
+      "heading": "バックカントリーツアーの条件",
+      "body": "開催期間は1月から5月上旬、参加可能年齢は中学生以上です。集合は8時、解散は16時となります。安全のためヘルメットの着用が必須で、バックカントリーエントリーツアーには参加者全員分のBCギアセットのレンタル料が含まれます。"
+    },
+    {
+      "heading": "集合場所とアクセス",
+      "body": "青木湖でのSUPツアーの集合場所は、長野県大町市平加蔵23245のライオンアドベンチャー敷地内にある青木湖SUPベースです。ロッジ&オフィスは長野県北安曇郡白馬村北城12322にあります。電話は080-8410-6800です。"
+    }
+  ],
+  "menus": [
+    {
+      "name": "青木湖SUPツアー"
+    },
+    {
+      "name": "万水川SUPツアー"
+    },
+    {
+      "name": "犀川SUPツアー"
+    },
+    {
+      "name": "ゲレンデプライベートツアー"
+    },
+    {
+      "name": "バックカントリーエントリーツアー"
+    },
+    {
+      "name": "バックカントリーツアー"
+    }
+  ],
+  "tags": [
+    {
+      "tag": "初心者歓迎",
+      "factIndex": 2
+    }
+  ],
+  "facts": [
+    {
+      "claim": "業種の表示はアウトドアイベント企画会社",
+      "source": "https://maps.google.com/?cid=5149039211036021304",
+      "quote": "アウトドアイベント企画会社",
+      "checkedAt": "2026-10-29"
+    },
+    {
+      "claim": "長野県白馬村にベースを置くアウトドアガイドサービス",
+      "source": "https://www.maukaoutdoor.com/index.php/about-mauka/",
+      "quote": "長野県白馬村にベースを置く",
+      "checkedAt": "2026-10-29"
+    },
+    {
+      "claim": "初めての人でも気軽に挑戦できる青木湖でのSUPツーリングを展開",
+      "source": "https://www.maukaoutdoor.com/index.php/about-mauka/",
+      "quote": "初めての人でも気軽に挑戦できる青木湖でのSUPツーリング",
+      "checkedAt": "2026-10-29"
+    },
+    {
+      "claim": "ウィンターシーズンはスキー&スノーボードのゲレンデツアーをメインに展開",
+      "source": "https://www.maukaoutdoor.com/index.php/about-mauka/",
+      "quote": "スキー＆スノーボードのゲレンデツアーをメインに",
+      "checkedAt": "2026-10-29"
+    },
+    {
+      "claim": "ゲレンデプライベートツアーは指導員資格を持ったガイドがビギナーからエキスパートまで案内",
+      "source": "https://www.maukaoutdoor.com/index.php/winter-tour/",
+      "quote": "指導員資格を持ったガイドがビギナーからエキスパートの方まで",
+      "checkedAt": "2026-10-29"
+    },
+    {
+      "claim": "HAKUBA VALLEYのスキー場全てでツアーの開催が可能",
+      "source": "https://www.maukaoutdoor.com/index.php/about-mauka/",
+      "quote": "HAKUBA VALLEYのスキー場全てでツアーの開催が可能",
+      "checkedAt": "2026-10-29"
+    },
+    {
+      "claim": "SUPツアーのメニューに青木湖SUPツアーがある",
+      "source": "https://www.maukaoutdoor.com/",
+      "quote": "青木湖 SUPツアー",
+      "checkedAt": "2026-10-29"
+    },
+    {
+      "claim": "バックカントリーツアーは入門編のバックカントリーエントリーツアーとレベルアップしたバックカントリーツアーの2つ",
+      "source": "https://www.maukaoutdoor.com/index.php/winter-tour/backcountry/",
+      "quote": "バックカントリーエントリーツアー",
+      "checkedAt": "2026-10-29"
+    },
+    {
+      "claim": "バックカントリーツアーの開催期間は1月〜5月上旬",
+      "source": "https://www.maukaoutdoor.com/index.php/winter-tour/backcountry/",
+      "quote": "1月〜5月上旬",
+      "checkedAt": "2026-10-29"
+    },
+    {
+      "claim": "バックカントリーツアーの参加可能年齢は中学生以上",
+      "source": "https://www.maukaoutdoor.com/index.php/winter-tour/backcountry/",
+      "quote": "中学生以上",
+      "checkedAt": "2026-10-29"
+    },
+    {
+      "claim": "バックカントリーツアーの集合時間は8時、解散は16時",
+      "source": "https://www.maukaoutdoor.com/index.php/winter-tour/backcountry/",
+      "quote": "8:00集合 16:00解散",
+      "checkedAt": "2026-10-29"
+    },
+    {
+      "claim": "安全のためヘルメットの着用が必須",
+      "source": "https://www.maukaoutdoor.com/index.php/winter-tour/backcountry/",
+      "quote": "ヘルメットの着用を必須",
+      "checkedAt": "2026-10-29"
+    },
+    {
+      "claim": "バックカントリーエントリーツアーには参加者全員分のBCギアセットのレンタル料が含まれる",
+      "source": "https://www.maukaoutdoor.com/index.php/winter-tour/backcountry/",
+      "quote": "参加者全員分のBCギアセットを含みます",
+      "checkedAt": "2026-10-29"
+    },
+    {
+      "claim": "青木湖SUPベースは長野県大町市平加蔵23245のライオンアドベンチャー敷地内",
+      "source": "https://www.maukaoutdoor.com/index.php/contact-access/",
+      "quote": "長野県大町市平加蔵23245",
+      "checkedAt": "2026-10-29"
+    },
+    {
+      "claim": "ロッジ&オフィスは長野県北安曇郡白馬村北城12322",
+      "source": "https://www.maukaoutdoor.com/index.php/contact-access/",
+      "quote": "長野県 北安曇郡白馬村北城12322",
+      "checkedAt": "2026-10-29"
+    },
+    {
+      "claim": "電話は080-8410-6800",
+      "source": "https://maps.google.com/?cid=5149039211036021304",
+      "quote": "080-8410-6800",
+      "checkedAt": "2026-10-29"
+    },
+    {
+      "claim": "登山、釣り、山菜、キャンプのプライベートツアーにも対応",
+      "source": "https://www.maukaoutdoor.com/index.php/about-mauka/",
+      "quote": "登山、釣り、山菜、キャンプのプライベートツアー",
+      "checkedAt": "2026-10-29"
+    }
+  ],
+  "sources": [
+    {
+      "label": "公式サイト",
+      "url": "https://www.maukaoutdoor.com/"
+    },
+    {
+      "label": "公式サイト(About Mauka)",
+      "url": "https://www.maukaoutdoor.com/index.php/about-mauka/"
+    },
+    {
+      "label": "公式サイト(Contact & Access)",
+      "url": "https://www.maukaoutdoor.com/index.php/contact-access/"
+    },
+    {
+      "label": "公式サイト(Winter Tour)",
+      "url": "https://www.maukaoutdoor.com/index.php/winter-tour/"
+    },
+    {
+      "label": "公式サイト(バックカントリープライベートツアー)",
+      "url": "https://www.maukaoutdoor.com/index.php/winter-tour/backcountry/"
+    },
+    {
+      "label": "Google マップ",
+      "url": "https://maps.google.com/?cid=5149039211036021304"
+    }
+  ],
+  "notes": "automation/v2/write.mjs が 2026-10-29 に claude -p --model sonnet で作成。事実の裏取り: 17/17 件(quote が出どころにあるもの)。裏取りに通らなかった facts は載せていない。"
+}

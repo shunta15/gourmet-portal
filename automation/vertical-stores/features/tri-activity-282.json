@@ -1,0 +1,447 @@
+{
+  "key": "tri-activity-282",
+  "vertical": "activity",
+  "storeName": "ブレイズサーフ サーフィンスクール",
+  "article": {
+    "id": "ブレイズサーフサーフィンスクール",
+    "no": "",
+    "articleType": "guide",
+    "kicker": "BRAIZ SURF TOYOHASHI",
+    "title": "愛知県豊橋市寺沢町、Beach Park発のサーフィンスクール。サーフィン体験とSUP体験、持ち物とアクセスのまとめ",
+    "titleHTML": "愛知県豊橋市寺沢町のBeach Park発<br><em>ブレイズサーフ サーフィンスクール</em>のサーフィン体験とSUP体験",
+    "subtitle": "サーフィンスクール / 愛知県豊橋市 / 初心者歓迎・駐車場あり",
+    "lede": "愛知県豊橋市寺沢町にある「ブレイズサーフ サーフィンスクール」は、Beach Park に集合してサーフィン体験とSUP体験を行っている。サーフィンの体験プランは2時間コースで、砂浜でのレクチャーのあと海でレッスンを受ける。SUPプランは一級河川「とよがわ」でも行われていて、豊橋駅からの送迎付きプランもある。",
+    "date": "2026-10-29",
+    "reading": "",
+    "author": "マチノワ編集部",
+    "heroImage": "/_portal/vshops/tri-activity-282/g01.jpg",
+    "ogImage": "/_portal/vshops/tri-activity-282/g01.jpg",
+    "ranking": [
+      {
+        "rank": "POINT 01",
+        "rankNum": 1,
+        "name": "砂浜のレクチャーから海レッスンまで。サーフィン体験プランの流れ",
+        "cuisine": "サーフィン体験",
+        "area": "豊橋市",
+        "purpose": "体験プランの内容を先に知りたい人へ",
+        "desc": "サーフィンの体験プランは2時間コースで、午前・午後の2部制。時間は9:00~、12:00~から選べる。初めに15分ほど砂浜で体の動かし方を練習してから、海でのレッスンに移る。使用するサーフボードは安全なソフトタイプで、自分のボードを持ち込むこともできる。インストラクターがボードを押す補助をしながら、パドリングと波をつかむ動きを繰り返す。終了後は温水シャワーを浴びて着替えられる。",
+        "images": [
+          "/_portal/vshops/tri-activity-282/g04.jpg"
+        ],
+        "specs": [
+          {
+            "k": "時間",
+            "v": "2時間コース・9:00~/12:00~(午前・午後の2部制)"
+          },
+          {
+            "k": "用具",
+            "v": "安全なソフトタイプのボード(持ち込み可)"
+          }
+        ]
+      },
+      {
+        "rank": "POINT 02",
+        "rankNum": 2,
+        "name": "一級河川「とよがわ」で行うSUPプラン",
+        "cuisine": "SUP体験",
+        "area": "豊橋市",
+        "purpose": "川でのSUP体験を知りたい人へ",
+        "desc": "SUPプランは完全予約制の2時間コースで、12:00~に行われる。集合場所は「とよがわ」か豊橋駅から選べる。初めに15分ほど陸上で体の動かし方を練習してから、一級河川である「とよがわ」(豊橋駅から車で10分)に入り、ヨガや釣りなど自由に過ごす時間がある。サーフボード、パドル、ウェットスーツはレンタルでき、レンタルの際はインナパンツ(水着)の着用が必要になる。持ち物には、水着、飲み物、ビーチサンダル、日焼け止めも挙げられている。",
+        "images": [
+          "/_portal/vshops/tri-activity-282/s07.jpg"
+        ],
+        "specs": [
+          {
+            "k": "時間",
+            "v": "完全予約制・2時間コース・12:00~"
+          },
+          {
+            "k": "場所",
+            "v": "一級河川「とよがわ」(豊橋駅から車で10分)"
+          }
+        ]
+      },
+      {
+        "rank": "POINT 03",
+        "rankNum": 3,
+        "name": "集合はBeach Park。駐車場とアクセス",
+        "cuisine": "アクセス",
+        "area": "豊橋市",
+        "purpose": "集合場所や行き方を知りたい人へ",
+        "desc": "集合場所はBeach Parkで、施設内に駐車場がある。受付を済ませてウェットスーツに着替えたら、参加者全員でスクールバンに乗って海へ向かう。自分の車で向かうこともでき、海まで約3分だ。車で来る場合は音羽蒲郡インターから国道23号線を利用する。電車の場合は豊橋駅まで来て、送迎付きプランを利用する。スクール終了後は温水シャワーを浴びて着替えられる。電話の受付時間は10:00~19:00で、電話からの予約もできる。",
+        "images": [
+          "/_portal/vshops/tri-activity-282/s11.jpg"
+        ],
+        "specs": [
+          {
+            "k": "集合",
+            "v": "Beach Park(駐車場あり)・海まで約3分"
+          },
+          {
+            "k": "アクセス",
+            "v": "車は音羽蒲郡インターから国道23号線・電車は豊橋駅から送迎付きプラン"
+          }
+        ]
+      },
+      {
+        "rank": "POINT 04",
+        "rankNum": 4,
+        "name": "持ち物とレンタル、インストラクター",
+        "cuisine": "持ち物・レンタル",
+        "area": "豊橋市",
+        "purpose": "持ち物やレンタルの注意を知りたい人へ",
+        "desc": "体験には、ウェットスーツの下に着られる水着、飲み物、ビーチサンダル、日焼け止めを持参する。サーフボードとウェットスーツは多数用意されていて、レンタルできる。レンタルの際は、インナパンツ(水着)の着用が必要になる。体験スクールは足のつく浅瀬でサーフィンの基礎を繰り返し練習する内容で、泳げない人も参加できる。代表はプロサーファーとして地元FM豊橋で活動していて、行政とも連携し地域の子供たちへの活動にも取り組んでいる。",
+        "images": [
+          "/_portal/vshops/tri-activity-282/s13.jpg"
+        ],
+        "specs": [
+          {
+            "k": "持ち物",
+            "v": "水着・飲み物・ビーチサンダル・日焼け止め"
+          },
+          {
+            "k": "レンタル",
+            "v": "サーフボード・ウェットスーツ(レンタル時はインナパンツ着用)"
+          }
+        ]
+      }
+    ],
+    "sideArticles": [],
+    "quote": "サーフィンの体験プランは2時間コースで、砂浜でのレクチャーのあと海でレッスンを受ける。SUPプランは一級河川「とよがわ」でも行われていて、どちらもBeach Parkへの集合から始まる。",
+    "quoteCite": "マチノワ編集部",
+    "closing": "持ち物は、水着、飲み物、ビーチサンダル、日焼け止め。サーフボードとウェットスーツはレンタルでき、インナパンツの着用が必要になる。集合はBeach Parkで、施設内に駐車場がある。電車は豊橋駅から送迎付きプランを利用する。電話の受付時間は10:00~19:00だ。"
+  },
+  "summary": "愛知県豊橋市のブレイズサーフ サーフィンスクールについて、サーフィン体験とSUP体験の内容、持ち物とレンタル、Beach Parkへの集合とアクセスをまとめた特集。",
+  "tags": [
+    "海・川",
+    "豊橋市"
+  ],
+  "charCount": 1221,
+  "facts": [
+    {
+      "claim": "サーフィンの体験プランは2時間コース",
+      "source": "http://braiz-surf.com/",
+      "quote": "2時間コースです。",
+      "checkedAt": "2026-10-29"
+    },
+    {
+      "claim": "体験は9:00~、12:00~の2つの時間から選べる",
+      "source": "http://braiz-surf.com/",
+      "quote": "9:00~ / 12:00~",
+      "checkedAt": "2026-10-29"
+    },
+    {
+      "claim": "スクールは午前・午後の2部制",
+      "source": "http://braiz-surf.com/",
+      "quote": "スクールは午前・午後の2部制となっています",
+      "checkedAt": "2026-10-29"
+    },
+    {
+      "claim": "初めに15分ほど砂浜で体の動かし方をレクチャーする",
+      "source": "http://braiz-surf.com/",
+      "quote": "初めに15分程度砂浜で体の動かし方をレクチャーします。",
+      "checkedAt": "2026-10-29"
+    },
+    {
+      "claim": "そのあと海でのレッスンを行う",
+      "source": "http://braiz-surf.com/",
+      "quote": "その後海でのレッスンをおこないます。",
+      "checkedAt": "2026-10-29"
+    },
+    {
+      "claim": "サーフボードは安全なソフトタイプを使用する",
+      "source": "http://braiz-surf.com/",
+      "quote": "サーフボードは安全なソフトタイプを使用",
+      "checkedAt": "2026-10-29"
+    },
+    {
+      "claim": "自分のボードの持ち込みもできる",
+      "source": "http://braiz-surf.com/",
+      "quote": "自分のボードの持ち込みも可",
+      "checkedAt": "2026-10-29"
+    },
+    {
+      "claim": "インストラクターが補助としてボードを押す",
+      "source": "http://braiz-surf.com/",
+      "quote": "インストラクターが補助としてボードを押しますので",
+      "checkedAt": "2026-10-29"
+    },
+    {
+      "claim": "ほとんどの人が一回目でサーフボードに立つことができる",
+      "source": "http://braiz-surf.com/",
+      "quote": "ほとんどの人が一回目でサーフボードに立つことができます。",
+      "checkedAt": "2026-10-29"
+    },
+    {
+      "claim": "集合場所はBeach Park",
+      "source": "http://braiz-surf.com/",
+      "quote": "Beach Park に集合します。",
+      "checkedAt": "2026-10-29"
+    },
+    {
+      "claim": "施設内に駐車場がある",
+      "source": "http://braiz-surf.com/",
+      "quote": "お車は施設内無料で駐車できます",
+      "checkedAt": "2026-10-29"
+    },
+    {
+      "claim": "受付後にウェットスーツへ着替える",
+      "source": "http://braiz-surf.com/",
+      "quote": "受付後ウェットスーツに着替え",
+      "checkedAt": "2026-10-29"
+    },
+    {
+      "claim": "参加者全員でスクールバンに乗って海に向かう",
+      "source": "http://braiz-surf.com/",
+      "quote": "参加者全員でスクールバンに乗って海に向かいます。",
+      "checkedAt": "2026-10-29"
+    },
+    {
+      "claim": "自分の車で海に向かうこともでき、海まで約3分",
+      "source": "http://braiz-surf.com/",
+      "quote": "海まで約3分です。",
+      "checkedAt": "2026-10-29"
+    },
+    {
+      "claim": "スクール終了後は温水シャワーを浴びられる",
+      "source": "http://braiz-surf.com/",
+      "quote": "温水シャワー",
+      "checkedAt": "2026-10-29"
+    },
+    {
+      "claim": "SUPプランは完全予約制の2時間コース",
+      "source": "http://braiz-surf.com/",
+      "quote": "完全予約制の2時間コースです。",
+      "checkedAt": "2026-10-29"
+    },
+    {
+      "claim": "SUPプランは12:00~に行われる",
+      "source": "http://braiz-surf.com/",
+      "quote": "12:00~",
+      "checkedAt": "2026-10-29"
+    },
+    {
+      "claim": "SUPの集合場所はとよがわか豊橋駅から選べる",
+      "source": "http://braiz-surf.com/",
+      "quote": "集合場所は とよがわ ・豊橋駅からお選びいただけます。",
+      "checkedAt": "2026-10-29"
+    },
+    {
+      "claim": "初めに15分ほど陸上で体の動かし方をレクチャーする",
+      "source": "http://braiz-surf.com/",
+      "quote": "初めに15分程度陸上で体の動かし方をレクチャーします。",
+      "checkedAt": "2026-10-29"
+    },
+    {
+      "claim": "とよがわは一級河川",
+      "source": "http://braiz-surf.com/",
+      "quote": "一級河川である「とよがわ」",
+      "checkedAt": "2026-10-29"
+    },
+    {
+      "claim": "とよがわは豊橋駅から車で10分",
+      "source": "http://braiz-surf.com/",
+      "quote": "豊橋駅から車で10分",
+      "checkedAt": "2026-10-29"
+    },
+    {
+      "claim": "とよがわではヨガや釣りなど自由に過ごせる",
+      "source": "http://braiz-surf.com/",
+      "quote": "ヨガや釣りなどご自由に過ごしていただけます。",
+      "checkedAt": "2026-10-29"
+    },
+    {
+      "claim": "持ち物は水着・飲み物・ビーチサンダル・日焼け止め",
+      "source": "http://braiz-surf.com/",
+      "quote": "水着、飲み物、ビーチサンダル、日焼け止めの持参",
+      "checkedAt": "2026-10-29"
+    },
+    {
+      "claim": "サーフボード・ウェットスーツを多数用意している",
+      "source": "http://braiz-surf.com/",
+      "quote": "サーフボード・ウェットスーツを多数取り揃えています。",
+      "checkedAt": "2026-10-29"
+    },
+    {
+      "claim": "ウェットスーツレンタル時はインナパンツ(水着)の着用が必要",
+      "source": "http://braiz-surf.com/",
+      "quote": "インナパンツ（水着）の着用を必ずお願いします。",
+      "checkedAt": "2026-10-29"
+    },
+    {
+      "claim": "足のつく浅瀬でサーフィンの基礎を繰り返し練習する内容で、泳げない人も参加できる",
+      "source": "http://braiz-surf.com/",
+      "quote": "足のつく浅瀬でサーフィンの基礎を繰り返し練習するので",
+      "checkedAt": "2026-10-29"
+    },
+    {
+      "claim": "車は音羽蒲郡インターから国道23号線を利用する",
+      "source": "http://braiz-surf.com/",
+      "quote": "音羽蒲郡インターから国道23号線をご利用ください。",
+      "checkedAt": "2026-10-29"
+    },
+    {
+      "claim": "電車は豊橋駅まで来て送迎付きプランを利用する",
+      "source": "http://braiz-surf.com/",
+      "quote": "送迎付きプランをご利用ください。",
+      "checkedAt": "2026-10-29"
+    },
+    {
+      "claim": "電話受付時間は10:00~19:00",
+      "source": "http://braiz-surf.com/",
+      "quote": "電話受付時間10:00~19:00",
+      "checkedAt": "2026-10-29"
+    },
+    {
+      "claim": "代表はプロサーファーとして地元FM豊橋で活動している",
+      "source": "http://braiz-surf.com/",
+      "quote": "プロサーファーとして地元FM豊橋にて",
+      "checkedAt": "2026-10-29"
+    },
+    {
+      "claim": "行政と連携し地域の子供たちへの活動をしている",
+      "source": "http://braiz-surf.com/",
+      "quote": "行政とも連携し、地域の子供たちに自然の大切さを教えたり",
+      "checkedAt": "2026-10-29"
+    },
+    {
+      "claim": "スタッフがママさんやファミリーとの参加を呼びかけている",
+      "source": "http://braiz-surf.com/",
+      "quote": "女の子やママさんファミリーさんと一緒に楽しみたいので",
+      "checkedAt": "2026-10-29"
+    },
+    {
+      "claim": "住所は愛知県豊橋市寺沢町内原162",
+      "source": "https://maps.google.com/?cid=12608833911782550262",
+      "quote": "愛知県豊橋市寺沢町内原１６２",
+      "checkedAt": "2026-10-29"
+    },
+    {
+      "claim": "SUPプランはサーフボード・パドル・ウェットスーツをレンタルできる",
+      "source": "http://braiz-surf.com/",
+      "quote": "サーフボード・パドル・ウェットスーツのレンタル",
+      "checkedAt": "2026-10-29"
+    }
+  ],
+  "images": [
+    {
+      "path": "/_portal/vshops/tri-activity-282/g01.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9RyN7bwGTgIRtNVD8RwYGnwNvqBVFwXbRACgLNDVTZ5UvaecKP5bGHDCjYfylFErAMlrZIuESkUf5quxj7dfES0wuHcjlS75jUCWF9I1kcXxh-UR3PO2b-Cb774NCDf7syGLhtY=s1200",
+      "pageUrl": "https://maps.google.com/?cid=12608833911782550262",
+      "what": "砂浜に並んだサーフボードで練習する人たち"
+    },
+    {
+      "path": "/_portal/vshops/tri-activity-282/g02.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9Tpq9p3Xv6_MiEoH3t9-dW54bq3_j9g9Ayn2XDZU6QMDLbvZVg9gUDU5BzhFbxyXK28DgJtNsIBtWv9ZrV9UgLzfpUZTEaAEWmmlLpHRkf1WxLUxWlo0kpSecynSMlzQ4uEKgZ4=s1200",
+      "pageUrl": "https://maps.google.com/?cid=12608833911782550262",
+      "what": "サーフボードを掲げて立つ3人"
+    },
+    {
+      "path": "/_portal/vshops/tri-activity-282/g03.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9SbwzJ3tIYUrr2djgoNrlK8uHFeTATXSmCQmrTePAA5-sAta-Ap2T3kq2lTuVGe83s-rD3uqnNKjsjmG_5UpkjgxvE_NzVfWgcEscaKmATATVAcZsZ_puFTFK249NTA1Wvl7Oj0=s1200",
+      "pageUrl": "https://maps.google.com/?cid=12608833911782550262",
+      "what": "海でサーフボードに乗り笑顔で手を挙げる人たち"
+    },
+    {
+      "path": "/_portal/vshops/tri-activity-282/g04.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9R2xucD1MCnQzAy40hBfviH58CdKcVQmcmfnJa-l4hENj-Eq0_V9kirMnX9yPvJJtToEj5qdpK8D4rE50VErL3GkAZfQQh30SnZqwbSYZFUT7Gw4uTNOAzdJlgHRkH4FNd4Ts3kpg=s1200",
+      "pageUrl": "https://maps.google.com/?cid=12608833911782550262",
+      "what": "砂浜でサーフボードに乗る練習をする人たち"
+    },
+    {
+      "path": "/_portal/vshops/tri-activity-282/g05.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9TAzBEsOxrrUR1VBzW0qrxT1wC65RwuA2FaudA_UBgj9q_qSil92jRQJcSDNz55Mj9QsTh-5ovxGeJnl8z9ac_EvGK9gtaAoXK-vP6jyJmcNoEWdk1yYzhXSddXfG2cH-Mezror=s1200",
+      "pageUrl": "https://maps.google.com/?cid=12608833911782550262",
+      "what": "砂浜に立てられたピンク・青・緑のサーフボード"
+    },
+    {
+      "path": "/_portal/vshops/tri-activity-282/g06.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9Ty7SFQHKtl1xg9G87ynemlUf3AiqEUdiW9rsYZg9pXXEifztRYb_-jULTSgrP82NpaMm11_KB5tA-NB-cf_w5fKd9kWE7nVcSq1c0QK4qVt0xrYgaWgQJ3vIluil5udCro5iHD=s1200",
+      "pageUrl": "https://maps.google.com/?cid=12608833911782550262",
+      "what": "砂浜でボードに乗りパドリングの練習をする人たち"
+    },
+    {
+      "path": "/_portal/vshops/tri-activity-282/g07.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9SrqTu2_k7YWviHOZTRIMxFuUVENA-vlcQedjTF1-1Z7gACnWDSznu9r4MiDfBiqEFNaym0Qu3sICyQZVMPVp_fScjlD-b4ZswTt0-pNLXdnRM0PqUFfF7zqVosLNm2hg__4Scn=s1200",
+      "pageUrl": "https://maps.google.com/?cid=12608833911782550262",
+      "what": "夕日の海でサーフボードを持つ人のシルエット"
+    },
+    {
+      "path": "/_portal/vshops/tri-activity-282/g08.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9RMtNgsL5aYlUvBFaWHItB_UoL8VwsUPv453NMLkoK9QCRNX2j5BUX01zTeD1CYaJZ6VhNPFHcP7dcHqo0A2MRR-MVhEBKKA4kopno6RB2IaNHIOc0v-Syr1-UdSvQHuSGGgXCbN4l-xLg=s1200",
+      "pageUrl": "https://maps.google.com/?cid=12608833911782550262",
+      "what": "「BRAIZ SURF」のロゴが入ったオレンジ色の送迎車"
+    },
+    {
+      "path": "/_portal/vshops/tri-activity-282/g10.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9RQ9ADtEjGPBBF5p8eAKXFUp6VR9MxjHt8EGFMtPJKLUIEMJVO-RIIPTV04jfj-cmEmuvokNSCgEs8Llhoe8FvMzjjKg64AEZn6pc5m1Ly7ESOIusev85OCkL1Z8SlpnGd3jWY=s1200",
+      "pageUrl": "https://maps.google.com/?cid=12608833911782550262",
+      "what": "波に向かって走るサーフボードを持った3人の後ろ姿"
+    },
+    {
+      "path": "/_portal/vshops/tri-activity-282/s01.jpg",
+      "imageUrl": "http://braiz-surf.com/images/about1.jpg",
+      "pageUrl": "http://braiz-surf.com/",
+      "what": "砂浜でサーフボードに乗るポーズを練習する人たちのシルエット"
+    },
+    {
+      "path": "/_portal/vshops/tri-activity-282/s02.jpg",
+      "imageUrl": "http://braiz-surf.com/images/about2.jpg",
+      "pageUrl": "http://braiz-surf.com/",
+      "what": "ウェットスーツ姿で並んで立つ4人"
+    },
+    {
+      "path": "/_portal/vshops/tri-activity-282/s03.jpg",
+      "imageUrl": "http://braiz-surf.com/images/about3.jpg",
+      "pageUrl": "http://braiz-surf.com/",
+      "what": "波に乗ってサーフィンをする人"
+    },
+    {
+      "path": "/_portal/vshops/tri-activity-282/s06.jpg",
+      "imageUrl": "http://braiz-surf.com/images/about6.jpg",
+      "pageUrl": "http://braiz-surf.com/",
+      "what": "穏やかな海に立つSUPボードと3人"
+    },
+    {
+      "path": "/_portal/vshops/tri-activity-282/s07.jpg",
+      "imageUrl": "http://braiz-surf.com/images/about7.jpg",
+      "pageUrl": "http://braiz-surf.com/",
+      "what": "川でSUPボードに乗る練習をする人たち"
+    },
+    {
+      "path": "/_portal/vshops/tri-activity-282/s09.jpg",
+      "imageUrl": "http://braiz-surf.com/images/schoolplan.jpg",
+      "pageUrl": "http://braiz-surf.com/",
+      "what": "海でボードに乗って笑う3人"
+    },
+    {
+      "path": "/_portal/vshops/tri-activity-282/s10.jpg",
+      "imageUrl": "http://braiz-surf.com/images/carplan.jpg",
+      "pageUrl": "http://braiz-surf.com/",
+      "what": "「BRAIZ-SURF」の送迎車の前に立つ3人"
+    },
+    {
+      "path": "/_portal/vshops/tri-activity-282/s11.jpg",
+      "imageUrl": "http://braiz-surf.com/images/stayplan.jpg",
+      "pageUrl": "http://braiz-surf.com/",
+      "what": "建物の壁に立てかけられた水色のサーフボード2枚"
+    },
+    {
+      "path": "/_portal/vshops/tri-activity-282/s13.jpg",
+      "imageUrl": "http://braiz-surf.com/images/wear.jpg",
+      "pageUrl": "http://braiz-surf.com/",
+      "what": "迷彩柄のウェットスーツの生地のアップ"
+    }
+  ],
+  "sources": [
+    {
+      "label": "公式サイト",
+      "url": "http://braiz-surf.com/"
+    },
+    {
+      "label": "Google マップ",
+      "url": "https://maps.google.com/?cid=12608833911782550262"
+    }
+  ],
+  "notes": "automation/v2/write.mjs が 2026-10-29 に作成。"
+}

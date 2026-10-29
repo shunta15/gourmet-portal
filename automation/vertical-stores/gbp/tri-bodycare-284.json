@@ -1,0 +1,32 @@
+{
+  "tab": "トリニティアポ",
+  "tabEn": "tri-bodycare",
+  "row": 284,
+  "sheet": {
+    "name": "こせき接骨院",
+    "address": "",
+    "url": "https://www.google.com/maps/search/?api=1&query=%E3%81%93%E3%81%9B%E3%81%8D%E6%8E%A5%E9%AA%A8%E9%99%A2%20024-676-0084%20%E3%80%92971-8144%20%E7%A6%8F%E5%B3%B6%E7%9C%8C%E3%81%84%E3%82%8F%E3%81%8D%E5%B8%82%E9%B9%BF%E5%B3%B6%E7%94%BA%E4%B9%85%E4%BF%9D%E9%87%8C%E5%B1%8B%EF%BC%94%E2%88%92%EF%BC%91%EF%BC%96",
+    "type": "整体・接骨",
+    "d1": "",
+    "d2": ""
+  },
+  "urlKind": "mapsApi",
+  "route": "第1段(verify-gbp.mjs)で確認済み",
+  "verdict": "一致",
+  "verdictReason": "手がかり: 店名＋電話＋住所(番地まで)。電話が一致／店名: exact(シート「こせき接骨院」/ マップ「こせき接骨院」)／住所(シート): exact・町名・番地とも一致",
+  "place": {
+    "name": "こせき接骨院",
+    "address": "福島県いわき市鹿島町久保里屋４−１６",
+    "category": "接骨院",
+    "lat": 36.9920735,
+    "lng": 140.9078268,
+    "gbpUrl": "https://maps.google.com/?cid=3805743242736949775",
+    "phone": "0246-76-0084",
+    "website": "https://koseki-sekkotuin.com/",
+    "hours": null,
+    "reserveLinks": [],
+    "statusSignals": [],
+    "closedSignal": false
+  },
+  "fetchedAt": "2026-10-29T08:58:52.470Z"
+}

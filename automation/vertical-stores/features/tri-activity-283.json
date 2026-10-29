@@ -1,0 +1,301 @@
+{
+  "key": "tri-activity-283",
+  "vertical": "activity",
+  "storeName": "Mauka outdoor",
+  "article": {
+    "id": "Maukaoutdoor",
+    "no": "",
+    "articleType": "guide",
+    "kicker": "MAUKA OUTDOOR OMACHI",
+    "title": "長野県大町市・青木湖のSUPツアーと、白馬村のスキー・スノーボードツアーを行うMauka outdoor",
+    "titleHTML": "長野県大町市・青木湖を拠点にしたSUPツアー<br><em>Mauka outdoor</em>のウィンターツアーまで",
+    "subtitle": "アクティビティ / 長野県大町市 / SUP・スキー・スノーボードのガイドツアー",
+    "lede": "Mauka outdoorは、長野県大町市の青木湖にSUPベースを置くアウトドアガイドサービスだ。グリーンシーズンはSUP、ウィンターシーズンは白馬村を拠点にスキー・スノーボードのツアーを行う。",
+    "date": "2026-10-29",
+    "reading": "",
+    "author": "マチノワ編集部",
+    "heroImage": "/_portal/vshops/tri-activity-283/g01.jpg",
+    "ogImage": "/_portal/vshops/tri-activity-283/g01.jpg",
+    "ranking": [
+      {
+        "rank": "POINT 01",
+        "rankNum": 1,
+        "name": "青木湖・万水川・犀川、3つのSUPツアー",
+        "cuisine": "SUPツアー",
+        "area": "大町市",
+        "purpose": "SUPツアーの種類を知りたい人へ",
+        "desc": "グリーンシーズンのSUPツアーは、青木湖SUPツアー、万水川SUPツアー、犀川SUPツアーの3つを展開している。初めての人でも気軽に挑戦できる青木湖でのSUPツーリングと、中級者から上級者向けのSUPダウンリバー(川下り)ツアーがある。登山、釣り、山菜、キャンプのプライベートツアーにも対応している。",
+        "images": [
+          "/_portal/vshops/tri-activity-283/g02.jpg"
+        ],
+        "specs": [
+          {
+            "k": "SUPツアー",
+            "v": "青木湖SUPツアー・万水川SUPツアー・犀川SUPツアー"
+          }
+        ]
+      },
+      {
+        "rank": "POINT 02",
+        "rankNum": 2,
+        "name": "HAKUBA VALLEY全山をめぐるゲレンデツアー",
+        "cuisine": "ゲレンデツアー",
+        "area": "白馬村",
+        "purpose": "ウィンターツアーの内容を知りたい人へ",
+        "desc": "ウィンターシーズンは、スキー・スノーボードのゲレンデプライベートツアーを中心に行っている。指導員資格を持ったガイドが、ビギナーからエキスパートまで上達のレクチャーを含めて案内する。HAKUBA VALLEYのスキー場全てでツアーの開催が可能で、希望のゲレンデを指定できる。",
+        "images": [
+          "/_portal/vshops/tri-activity-283/g07.jpg"
+        ],
+        "specs": [
+          {
+            "k": "対応エリア",
+            "v": "HAKUBA VALLEYのスキー場全て"
+          }
+        ]
+      },
+      {
+        "rank": "POINT 03",
+        "rankNum": 3,
+        "name": "入門編とレベルアップ、2つのバックカントリーツアー",
+        "cuisine": "バックカントリー",
+        "area": "白馬村",
+        "purpose": "バックカントリーツアーの条件を知りたい人へ",
+        "desc": "バックカントリーツアーは、入門編の「バックカントリーエントリーツアー」と、レベルアップしたコースの「バックカントリーツアー」の2つがある。開催期間は1月から5月上旬、参加可能年齢は中学生以上で、集合は8時、解散は16時となる。安全のためヘルメットの着用が必須で、エントリーツアーには参加者全員分のBCギアセットのレンタル料が含まれる。",
+        "images": [],
+        "specs": [
+          {
+            "k": "開催期間",
+            "v": "1月〜5月上旬"
+          },
+          {
+            "k": "集合・解散",
+            "v": "8:00集合・16:00解散"
+          },
+          {
+            "k": "参加可能年齢",
+            "v": "中学生以上"
+          }
+        ]
+      },
+      {
+        "rank": "POINT 04",
+        "rankNum": 4,
+        "name": "青木湖SUPベースと白馬のロッジ&オフィス",
+        "cuisine": "集合場所",
+        "area": "大町市・白馬村",
+        "purpose": "集合場所とアクセスを知りたい人へ",
+        "desc": "青木湖でのSUPツアーの集合場所は、長野県大町市平加蔵23245のライオンアドベンチャー敷地内にある青木湖SUPベースだ。ロッジ&オフィスは長野県北安曇郡白馬村北城12322にある。電話は080-8410-6800。",
+        "images": [
+          "/_portal/vshops/tri-activity-283/g04.jpg"
+        ],
+        "specs": [
+          {
+            "k": "青木湖SUPベース",
+            "v": "長野県大町市平加蔵23245・ライオンアドベンチャー敷地内"
+          },
+          {
+            "k": "電話",
+            "v": "080-8410-6800"
+          }
+        ]
+      }
+    ],
+    "sideArticles": [],
+    "quote": "Mauka outdoorは、青木湖を拠点にSUPツアーを、白馬村を拠点にスキー・スノーボードのツアーを行うアウトドアガイドサービスだ。登山や釣り、山菜、キャンプのプライベートツアーにも対応している。",
+    "quoteCite": "マチノワ編集部",
+    "closing": "青木湖でのSUPツアーの集合場所は、長野県大町市平加蔵23245のライオンアドベンチャー敷地内。バックカントリーツアーの参加可能年齢は中学生以上で、安全のためヘルメットの着用が必須となる。電話は080-8410-6800。"
+  },
+  "summary": "長野県大町市・青木湖を拠点にしたMauka outdoorの、SUPツアーの種類、白馬村でのゲレンデ・バックカントリーツアーの条件、集合場所とアクセスをまとめた特集。",
+  "tags": [
+    "海・川",
+    "大町"
+  ],
+  "charCount": 866,
+  "facts": [
+    {
+      "claim": "業種の表示はアウトドアイベント企画会社",
+      "source": "https://maps.google.com/?cid=5149039211036021304",
+      "quote": "アウトドアイベント企画会社",
+      "checkedAt": "2026-10-29"
+    },
+    {
+      "claim": "長野県白馬村にベースを置くアウトドアガイドサービス",
+      "source": "https://www.maukaoutdoor.com/index.php/about-mauka/",
+      "quote": "長野県白馬村にベースを置く",
+      "checkedAt": "2026-10-29"
+    },
+    {
+      "claim": "初めての人でも気軽に挑戦できる青木湖でのSUPツーリングを展開",
+      "source": "https://www.maukaoutdoor.com/index.php/about-mauka/",
+      "quote": "初めての人でも気軽に挑戦できる青木湖でのSUPツーリング",
+      "checkedAt": "2026-10-29"
+    },
+    {
+      "claim": "ウィンターシーズンはスキー&スノーボードのゲレンデツアーをメインに展開",
+      "source": "https://www.maukaoutdoor.com/index.php/about-mauka/",
+      "quote": "スキー＆スノーボードのゲレンデツアーをメインに",
+      "checkedAt": "2026-10-29"
+    },
+    {
+      "claim": "ゲレンデプライベートツアーは指導員資格を持ったガイドがビギナーからエキスパートまで案内",
+      "source": "https://www.maukaoutdoor.com/index.php/winter-tour/",
+      "quote": "指導員資格を持ったガイドがビギナーからエキスパートの方まで",
+      "checkedAt": "2026-10-29"
+    },
+    {
+      "claim": "HAKUBA VALLEYのスキー場全てでツアーの開催が可能",
+      "source": "https://www.maukaoutdoor.com/index.php/about-mauka/",
+      "quote": "HAKUBA VALLEYのスキー場全てでツアーの開催が可能",
+      "checkedAt": "2026-10-29"
+    },
+    {
+      "claim": "SUPツアーのメニューに青木湖SUPツアーがある",
+      "source": "https://www.maukaoutdoor.com/",
+      "quote": "青木湖 SUPツアー",
+      "checkedAt": "2026-10-29"
+    },
+    {
+      "claim": "バックカントリーツアーは入門編のバックカントリーエントリーツアーとレベルアップしたバックカントリーツアーの2つ",
+      "source": "https://www.maukaoutdoor.com/index.php/winter-tour/backcountry/",
+      "quote": "バックカントリーエントリーツアー",
+      "checkedAt": "2026-10-29"
+    },
+    {
+      "claim": "バックカントリーツアーの開催期間は1月〜5月上旬",
+      "source": "https://www.maukaoutdoor.com/index.php/winter-tour/backcountry/",
+      "quote": "1月〜5月上旬",
+      "checkedAt": "2026-10-29"
+    },
+    {
+      "claim": "バックカントリーツアーの参加可能年齢は中学生以上",
+      "source": "https://www.maukaoutdoor.com/index.php/winter-tour/backcountry/",
+      "quote": "中学生以上",
+      "checkedAt": "2026-10-29"
+    },
+    {
+      "claim": "バックカントリーツアーの集合時間は8時、解散は16時",
+      "source": "https://www.maukaoutdoor.com/index.php/winter-tour/backcountry/",
+      "quote": "8:00集合 16:00解散",
+      "checkedAt": "2026-10-29"
+    },
+    {
+      "claim": "安全のためヘルメットの着用が必須",
+      "source": "https://www.maukaoutdoor.com/index.php/winter-tour/backcountry/",
+      "quote": "ヘルメットの着用を必須",
+      "checkedAt": "2026-10-29"
+    },
+    {
+      "claim": "バックカントリーエントリーツアーには参加者全員分のBCギアセットのレンタル料が含まれる",
+      "source": "https://www.maukaoutdoor.com/index.php/winter-tour/backcountry/",
+      "quote": "参加者全員分のBCギアセットを含みます",
+      "checkedAt": "2026-10-29"
+    },
+    {
+      "claim": "青木湖SUPベースは長野県大町市平加蔵23245のライオンアドベンチャー敷地内",
+      "source": "https://www.maukaoutdoor.com/index.php/contact-access/",
+      "quote": "長野県大町市平加蔵23245",
+      "checkedAt": "2026-10-29"
+    },
+    {
+      "claim": "ロッジ&オフィスは長野県北安曇郡白馬村北城12322",
+      "source": "https://www.maukaoutdoor.com/index.php/contact-access/",
+      "quote": "長野県 北安曇郡白馬村北城12322",
+      "checkedAt": "2026-10-29"
+    },
+    {
+      "claim": "電話は080-8410-6800",
+      "source": "https://maps.google.com/?cid=5149039211036021304",
+      "quote": "080-8410-6800",
+      "checkedAt": "2026-10-29"
+    },
+    {
+      "claim": "登山、釣り、山菜、キャンプのプライベートツアーにも対応",
+      "source": "https://www.maukaoutdoor.com/index.php/about-mauka/",
+      "quote": "登山、釣り、山菜、キャンプのプライベートツアー",
+      "checkedAt": "2026-10-29"
+    }
+  ],
+  "images": [
+    {
+      "path": "/_portal/vshops/tri-activity-283/g01.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9TlnUll62sw92Ff-WRiyzN9vxl0dO_qIsuvRfo34XbJgF4GQBVeNE1HyVqDmm0XwPMi845HohwJvFA5yBOPsz_cssJZpKjlaHIioaDN7rRE57F5lslxIXFqfppQibntmTj4P9b9zGwvcmqA=s1200",
+      "pageUrl": "https://maps.google.com/?cid=5149039211036021304",
+      "what": "青木湖でSUPボードに立つ2人と山並み"
+    },
+    {
+      "path": "/_portal/vshops/tri-activity-283/g02.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9QM7go-uH-7Ijb05mwATI4BWsQ_vngieInz2LLOKUUQYgx-IAN2n8wecARoA5vsAaf6EWJm-QP-ya1iBRUOX5s_NTRUJnfKfqIPdebF8G4aTaWDonMvfCscBE5cKX9azqRf73qz61hpgAI=s1200",
+      "pageUrl": "https://maps.google.com/?cid=5149039211036021304",
+      "what": "木々の下、複数人がSUPボードに乗って進む様子"
+    },
+    {
+      "path": "/_portal/vshops/tri-activity-283/g03.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9QBX9ShA26sq5t1Fpxm-AgH3DW_54-ssJCB3A16Y8LoJciANaN3Z5DOcPPLRSOfgJhXEdEWbYTbPvonj3_XFf_W7coA-pZMNaBQBEscLRl2C8H37onkEXQdk6Mvm_9tWLCVF5VW3V6eIv1-=s1200",
+      "pageUrl": "https://maps.google.com/?cid=5149039211036021304",
+      "what": "木製の桟橋から後方宙返りで水面へ飛び込む瞬間"
+    },
+    {
+      "path": "/_portal/vshops/tri-activity-283/g04.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9SuSNXsezpB-plXBouvz2wz-u0XHcSjhY9Jt563BqcYkjtXPnEEU5IITBRPEd81SaArdBX7MrDtO7BmQ5c-8aRSW-Ho2uyK9v21Bt7UxIPZG2ANrWF_c7yKqngVcRfhPNjdyj0=s1200",
+      "pageUrl": "https://maps.google.com/?cid=5149039211036021304",
+      "what": "桟橋と青木湖、奥に広がる山並み"
+    },
+    {
+      "path": "/_portal/vshops/tri-activity-283/g05.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9QqZf6PMdPurxtCpaL9BY1iCm1U_oeNuTGf8R8-uAy_IrCAduPUsVuLW8FOkvyHjyi9M-seMMgFM9djFL2srIAQ5u0qkk4UzIMTq2vQe6JHIWJQkMEdq-BKVyBASC9LvuKC_oeEcg=s1200",
+      "pageUrl": "https://maps.google.com/?cid=5149039211036021304",
+      "what": "青空と雲、山並みが広がる湖の風景"
+    },
+    {
+      "path": "/_portal/vshops/tri-activity-283/g06.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9T7am87Yng6gwuwOGe-BW1dqFDYGroPPCMYQ0xB2NB8-2ewLagYHWfVn2jeL4MP92y4V4MrLOdz17iRlQ1kxFFngm1-WjCx9Nd55G78weyAgnrWSJpdW0S0sPKmcCMXdtvqECWy9KBThHiq=s1200",
+      "pageUrl": "https://maps.google.com/?cid=5149039211036021304",
+      "what": "穏やかな水面と遠くの山々"
+    },
+    {
+      "path": "/_portal/vshops/tri-activity-283/g07.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9TSxJg770ik1uwD2VL-qa5h3c-unlqwVO809Z_9YEH4mu3xY0hN-VHC67OcMDGPKG4A0fj-kgJneEcCQVSsL7JD2KoypJeoArXHoBHm4_hsE0WrJteJlDm-ZZy2tKe5c93qckrILQ=s1200",
+      "pageUrl": "https://maps.google.com/?cid=5149039211036021304",
+      "what": "青空の下、湖面に浮かぶ複数のSUPボード"
+    },
+    {
+      "path": "/_portal/vshops/tri-activity-283/g09.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9QgmY10slhzTqjYZKRY2kQtNaozDFHcf59fvlK_YYR3AsFlGP7KQT_YqorSTjFWutnfyEeghe_nCF8F_70L2YWAxvt8JckEDJPQVxVd5is4sORkrXm-tJIxT6xrg68GFyYOrk9zDm9MLwwo=s1200",
+      "pageUrl": "https://maps.google.com/?cid=5149039211036021304",
+      "what": "複数人がSUPボードに乗って並んで進む後ろ姿"
+    },
+    {
+      "path": "/_portal/vshops/tri-activity-283/g10.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9Qs2BPn0ik8lLfSx4qGAvn6UqMw_OYVf4MPMyGoLbGuVMPZ7a7iu1IjI-m3KbTOya3mi_a8KDBkS-AV8NlSGXp0ZzNG2wiZ0bfFP3eT8QGpcU4sIbXgnPAT2Igd8GveQZDoCdWG6jeezG2V=s1200",
+      "pageUrl": "https://maps.google.com/?cid=5149039211036021304",
+      "what": "黄色いライフジャケットを着け宙返りで飛び込む瞬間"
+    }
+  ],
+  "sources": [
+    {
+      "label": "公式サイト",
+      "url": "https://www.maukaoutdoor.com/"
+    },
+    {
+      "label": "公式サイト(About Mauka)",
+      "url": "https://www.maukaoutdoor.com/index.php/about-mauka/"
+    },
+    {
+      "label": "公式サイト(Contact & Access)",
+      "url": "https://www.maukaoutdoor.com/index.php/contact-access/"
+    },
+    {
+      "label": "公式サイト(Winter Tour)",
+      "url": "https://www.maukaoutdoor.com/index.php/winter-tour/"
+    },
+    {
+      "label": "公式サイト(バックカントリープライベートツアー)",
+      "url": "https://www.maukaoutdoor.com/index.php/winter-tour/backcountry/"
+    },
+    {
+      "label": "Google マップ",
+      "url": "https://maps.google.com/?cid=5149039211036021304"
+    }
+  ],
+  "notes": "automation/v2/write.mjs が 2026-10-29 に作成。"
+}

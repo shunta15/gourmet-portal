@@ -1,0 +1,52 @@
+{
+  "commit": "2b885ab5242893647f8cd98320f74abb055772e0",
+  "source": "/Users/shunta/claude/gp-k-auto2",
+  "count": 4,
+  "added": [
+    {
+      "row": 282,
+      "name": "ブレイズサーフ",
+      "key": "tri-activity-282",
+      "vertical": "アクティビティ",
+      "id": "ac0033",
+      "articleId": "ac0033",
+      "shopUrl": "https://machinowa.tokyo/activity/shop/ac0033",
+      "articleUrl": "https://machinowa.tokyo/activity/article/ac0033",
+      "sheetUrl": "https://machinowa.tokyo/activity/article/ac0033"
+    },
+    {
+      "row": 283,
+      "name": "Mauka outdoor",
+      "key": "tri-activity-283",
+      "vertical": "アクティビティ",
+      "id": "ac0034",
+      "articleId": "ac0034",
+      "shopUrl": "https://machinowa.tokyo/activity/shop/ac0034",
+      "articleUrl": "https://machinowa.tokyo/activity/article/ac0034",
+      "sheetUrl": "https://machinowa.tokyo/activity/article/ac0034"
+    },
+    {
+      "row": 284,
+      "name": "こせき接骨院",
+      "key": "tri-bodycare-284",
+      "vertical": "ボディケア",
+      "id": "bo0116",
+      "articleId": null,
+      "shopUrl": "https://machinowa.tokyo/bodycare/shop/bo0116",
+      "articleUrl": null,
+      "sheetUrl": "https://machinowa.tokyo/bodycare/shop/bo0116"
+    },
+    {
+      "row": 360,
+      "name": "あっちゃんりんご園",
+      "key": "lk-gourmet-360",
+      "vertical": "グルメ",
+      "id": "r821",
+      "articleId": "あっちゃんりんご園",
+      "shopUrl": "https://machinowa.tokyo/restaurant/r821",
+      "articleUrl": "https://machinowa.tokyo/feature/あっちゃんりんご園",
+      "sheetUrl": "https://machinowa.tokyo/feature/あっちゃんりんご園"
+    }
+  ],
+  "skipped": []
+}

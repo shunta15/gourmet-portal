@@ -1,0 +1,183 @@
+{
+  "key": "tri-bodycare-284",
+  "headline": "福島県いわき市鹿島町にある接骨院。柔道整復師の院長が保険施術や交通事故施術にあたる。",
+  "lede": "いわき市にある「こせき接骨院」です。柔道整復師の小関邦彦が院長を務め、保険施術や交通事故の施術にあたります。駐車場は5台分で、予約は完全予約制です。",
+  "sections": [
+    {
+      "heading": "アクセスと連絡先",
+      "body": "住所は福島県いわき市鹿島町久保字里屋4-16です。車は常磐自動車道の湯本ICから20分、公共交通機関はJRいわき駅から常磐交通バスに乗り「久保入口」で下車して徒歩3分です。駐車場は5台分です。予約は専用のLINEか電話0246-76-0084で受け付けます。"
+    },
+    {
+      "heading": "施術の内容",
+      "body": "保険施術では骨折・脱臼・捻挫・打撲・挫傷など原因がはっきりしたケガに健康保険を使えます。交通事故施術は専門医、医療機関と連携し、柔道整復師が土日にも朝昼夜にも対応します。ほかに物理療法、手技療法、固定療法、姿勢矯正、骨盤矯正、産後骨盤矯正、アロマケア、インソール、メンタルケア、ファスティングの施術があります。"
+    },
+    {
+      "heading": "院内の設備",
+      "body": "施術室にはベッドが2台並び、AI技術で姿勢を撮影し身体のゆがみを可視化する検査を行います。院内には消毒済みの衣類カゴや手洗い用の水栓があり、低周波治療器や超音波治療器などの機材を使用します。"
+    }
+  ],
+  "menus": [
+    {
+      "name": "保険施術"
+    },
+    {
+      "name": "交通事故施術"
+    },
+    {
+      "name": "物理療法"
+    },
+    {
+      "name": "手技療法"
+    },
+    {
+      "name": "固定療法"
+    },
+    {
+      "name": "姿勢矯正"
+    },
+    {
+      "name": "骨盤矯正"
+    },
+    {
+      "name": "インソール"
+    }
+  ],
+  "tags": [],
+  "facts": [
+    {
+      "claim": "住所は福島県いわき市鹿島町久保字里屋4-16",
+      "source": "https://koseki-sekkotuin.com/introduce/map/",
+      "quote": "鹿島町久保字里屋 4-16",
+      "checkedAt": "2026-10-29"
+    },
+    {
+      "claim": "駐車場は5台分で無料",
+      "source": "https://koseki-sekkotuin.com/introduce/map/",
+      "quote": "5台（無料）",
+      "checkedAt": "2026-10-29"
+    },
+    {
+      "claim": "車では常磐自動車道の湯本ICから20分",
+      "source": "https://koseki-sekkotuin.com/introduce/map/",
+      "quote": "湯本IC」より 20分",
+      "checkedAt": "2026-10-29"
+    },
+    {
+      "claim": "JRいわき駅から常磐交通バスで「久保入口」下車、徒歩3分",
+      "source": "https://koseki-sekkotuin.com/introduce/map/",
+      "quote": "「久保入口」下車 徒歩3分",
+      "checkedAt": "2026-10-29"
+    },
+    {
+      "claim": "電話番号は0246-76-0084",
+      "source": "https://maps.google.com/?cid=3805743242736949775",
+      "quote": "0246-76-0084",
+      "checkedAt": "2026-10-29"
+    },
+    {
+      "claim": "Googleマップの業種表示は「接骨院」",
+      "source": "https://maps.google.com/?cid=3805743242736949775",
+      "quote": "接骨院",
+      "checkedAt": "2026-10-29"
+    },
+    {
+      "claim": "院長の名前は小関邦彦",
+      "source": "https://koseki-sekkotuin.com/",
+      "quote": "小関 邦彦",
+      "checkedAt": "2026-10-29"
+    },
+    {
+      "claim": "柔道整復師が施術する",
+      "source": "https://koseki-sekkotuin.com/",
+      "quote": "柔道整復師です",
+      "checkedAt": "2026-10-29"
+    },
+    {
+      "claim": "交通事故施術は土日にも朝昼夜にも対応する",
+      "source": "https://koseki-sekkotuin.com/",
+      "quote": "土日にも朝昼夜にも対応します",
+      "checkedAt": "2026-10-29"
+    },
+    {
+      "claim": "交通事故施術は専門医、医療機関と連携する",
+      "source": "https://koseki-sekkotuin.com/",
+      "quote": "専門医、医療機関と連携し",
+      "checkedAt": "2026-10-29"
+    },
+    {
+      "claim": "保険施術の対象は骨折・脱臼・捻挫・打撲・挫傷などのケガ",
+      "source": "https://koseki-sekkotuin.com/introduce/about/",
+      "quote": "骨折・脱臼・捻挫・打撲・挫傷",
+      "checkedAt": "2026-10-29"
+    },
+    {
+      "claim": "予約は完全予約制",
+      "source": "https://koseki-sekkotuin.com/introduce/about/",
+      "quote": "完全予約制",
+      "checkedAt": "2026-10-29"
+    },
+    {
+      "claim": "初めての来院は検査を含めて1時間ほどかかる場合がある",
+      "source": "https://koseki-sekkotuin.com/introduce/about/",
+      "quote": "1時間 ほどかかる場合があります",
+      "checkedAt": "2026-10-29"
+    },
+    {
+      "claim": "AI技術で写真を撮影し身体のゆがみを可視化する",
+      "source": "https://koseki-sekkotuin.com/",
+      "quote": "AI技術 で写真を撮影して",
+      "checkedAt": "2026-10-29"
+    },
+    {
+      "claim": "インソールで足部アライメントを矯正する施術がある",
+      "source": "https://koseki-sekkotuin.com/",
+      "quote": "インソールによって足部アライメント",
+      "checkedAt": "2026-10-29"
+    },
+    {
+      "claim": "施術一覧に保険施術がある",
+      "source": "https://koseki-sekkotuin.com/introduce/price/",
+      "quote": "保険施術",
+      "checkedAt": "2026-10-29"
+    },
+    {
+      "claim": "施術にはアロマケアがある",
+      "source": "https://koseki-sekkotuin.com/",
+      "quote": "アロマケア",
+      "checkedAt": "2026-10-29"
+    },
+    {
+      "claim": "機材に低周波治療器がある",
+      "source": "https://koseki-sekkotuin.com/introduce/facility/",
+      "quote": "低周波治療器",
+      "checkedAt": "2026-10-29"
+    }
+  ],
+  "sources": [
+    {
+      "label": "公式サイト",
+      "url": "https://koseki-sekkotuin.com/"
+    },
+    {
+      "label": "公式サイト(初めての方へ)",
+      "url": "https://koseki-sekkotuin.com/introduce/about/"
+    },
+    {
+      "label": "公式サイト(料金一覧)",
+      "url": "https://koseki-sekkotuin.com/introduce/price/"
+    },
+    {
+      "label": "公式サイト(アクセスマップ)",
+      "url": "https://koseki-sekkotuin.com/introduce/map/"
+    },
+    {
+      "label": "公式サイト(機材一覧)",
+      "url": "https://koseki-sekkotuin.com/introduce/facility/"
+    },
+    {
+      "label": "Google マップ",
+      "url": "https://maps.google.com/?cid=3805743242736949775"
+    }
+  ],
+  "notes": "automation/v2/write.mjs が 2026-10-29 に claude -p --model sonnet で作成。事実の裏取り: 18/18 件(quote が出どころにあるもの)。裏取りに通らなかった facts は載せていない。"
+}

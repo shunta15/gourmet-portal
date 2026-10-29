@@ -1,0 +1,32 @@
+{
+  "tab": "トリニティアポ",
+  "tabEn": "tri-activity",
+  "row": 283,
+  "sheet": {
+    "name": "Mauka outdoor",
+    "address": "",
+    "url": "https://www.google.com/maps/search/?api=1&query=Mauka%20outdoor%20080-8410-6800%20",
+    "type": "Mauka outdoor",
+    "d1": "",
+    "d2": ""
+  },
+  "urlKind": "mapsApi",
+  "route": "第1段(verify-gbp.mjs)で確認済み",
+  "verdict": "一致",
+  "verdictReason": "手がかり: 店名＋電話。電話が一致／店名: exact(シート「Mauka outdoor」/ マップ「Mauka outdoor」)",
+  "place": {
+    "name": "Mauka outdoor",
+    "address": "長野県大町市平２３２４５",
+    "category": "アウトドアイベント企画会社",
+    "lat": 36.6071594,
+    "lng": 137.85583,
+    "gbpUrl": "https://maps.google.com/?cid=5149039211036021304",
+    "phone": "080-8410-6800",
+    "website": "http://www.maukaoutdoor.com/",
+    "hours": null,
+    "reserveLinks": [],
+    "statusSignals": [],
+    "closedSignal": false
+  },
+  "fetchedAt": "2026-10-29T08:57:33.374Z"
+}

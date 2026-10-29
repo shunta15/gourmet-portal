@@ -5005,6 +5005,378 @@
         ],
         "checkedAt": "2026-10-29"
       }
+    },
+    {
+      "id": "ac0033",
+      "vertical": "activity",
+      "category": "sea-river",
+      "name": "ブレイズサーフ サーフィンスクール",
+      "pref": "aichi",
+      "cityName": "豊橋市",
+      "address": "愛知県豊橋市寺沢町内原162",
+      "lat": 34.6734958,
+      "lng": 137.430014,
+      "phone": "080-2002-4638",
+      "url": "http://braiz-surf.com/",
+      "website": "http://braiz-surf.com/",
+      "mapUrl": "https://maps.google.com/?cid=12608833911782550262",
+      "image": "/_portal/vshops/tri-activity-282/g01.jpg",
+      "images": [
+        "/_portal/vshops/tri-activity-282/g01.jpg",
+        "/_portal/vshops/tri-activity-282/g02.jpg",
+        "/_portal/vshops/tri-activity-282/g03.jpg",
+        "/_portal/vshops/tri-activity-282/g04.jpg",
+        "/_portal/vshops/tri-activity-282/g05.jpg",
+        "/_portal/vshops/tri-activity-282/g06.jpg",
+        "/_portal/vshops/tri-activity-282/g07.jpg",
+        "/_portal/vshops/tri-activity-282/g08.jpg",
+        "/_portal/vshops/tri-activity-282/g10.jpg",
+        "/_portal/vshops/tri-activity-282/s01.jpg",
+        "/_portal/vshops/tri-activity-282/s02.jpg",
+        "/_portal/vshops/tri-activity-282/s03.jpg",
+        "/_portal/vshops/tri-activity-282/s06.jpg",
+        "/_portal/vshops/tri-activity-282/s07.jpg",
+        "/_portal/vshops/tri-activity-282/s09.jpg",
+        "/_portal/vshops/tri-activity-282/s10.jpg",
+        "/_portal/vshops/tri-activity-282/s11.jpg",
+        "/_portal/vshops/tri-activity-282/s13.jpg"
+      ],
+      "photos": [
+        {
+          "path": "/_portal/vshops/tri-activity-282/g01.jpg",
+          "what": "砂浜に並んだサーフボードで練習する人たち",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-282/g02.jpg",
+          "what": "サーフボードを掲げて立つ3人",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-282/g03.jpg",
+          "what": "海でサーフボードに乗り笑顔で手を挙げる人たち",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-282/g04.jpg",
+          "what": "砂浜でサーフボードに乗る練習をする人たち",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-282/g05.jpg",
+          "what": "砂浜に立てられたピンク・青・緑のサーフボード",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-282/g06.jpg",
+          "what": "砂浜でボードに乗りパドリングの練習をする人たち",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-282/g07.jpg",
+          "what": "夕日の海でサーフボードを持つ人のシルエット",
+          "kind": "view",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-282/g08.jpg",
+          "what": "「BRAIZ SURF」のロゴが入ったオレンジ色の送迎車",
+          "kind": "exterior",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-282/g10.jpg",
+          "what": "波に向かって走るサーフボードを持った3人の後ろ姿",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-282/s01.jpg",
+          "what": "砂浜でサーフボードに乗るポーズを練習する人たちのシルエット",
+          "width": 1280,
+          "height": 768
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-282/s02.jpg",
+          "what": "ウェットスーツ姿で並んで立つ4人",
+          "width": 1280,
+          "height": 768
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-282/s03.jpg",
+          "what": "波に乗ってサーフィンをする人",
+          "width": 1280,
+          "height": 768
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-282/s06.jpg",
+          "what": "穏やかな海に立つSUPボードと3人",
+          "kind": "view",
+          "width": 1135,
+          "height": 681
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-282/s07.jpg",
+          "what": "川でSUPボードに乗る練習をする人たち",
+          "width": 1070,
+          "height": 642
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-282/s09.jpg",
+          "what": "海でボードに乗って笑う3人",
+          "width": 1109,
+          "height": 1108
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-282/s10.jpg",
+          "what": "「BRAIZ-SURF」の送迎車の前に立つ3人",
+          "kind": "exterior",
+          "width": 640,
+          "height": 640
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-282/s11.jpg",
+          "what": "建物の壁に立てかけられた水色のサーフボード2枚",
+          "kind": "exterior",
+          "width": 640,
+          "height": 640
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-282/s13.jpg",
+          "what": "迷彩柄のウェットスーツの生地のアップ",
+          "kind": "meal",
+          "width": 640,
+          "height": 640
+        }
+      ],
+      "tags": [
+        "初心者歓迎",
+        "駐車場あり",
+        "子連れ"
+      ],
+      "article": {
+        "headline": "愛知県豊橋市寺沢町にあるサーフィンスクール。Beach Park に集合し、サーフィン体験とSUP体験を行っています。",
+        "lede": "豊橋市にある「ブレイズサーフ サーフィンスクール」です。Beach Park に集合してサーフィンを習う体験プランと、一級河川「とよがわ」でのSUPプランがあります。サーフィンの体験プランは2時間コースで、午前・午後の2部制です。",
+        "sections": [
+          {
+            "heading": "体験プランの流れ",
+            "body": "サーフィンの体験プランは2時間コースで、午前・午後の2部制です。時間は9:00~、12:00~から選べます。初めに15分ほど砂浜で体の動かし方をレクチャーしたあと、海でのレッスンに移ります。使用するサーフボードは安全なソフトタイプで、自分のボードの持ち込みもできます。インストラクターが補助としてボードを押しながら、パドリングと波をつかむ練習をします。"
+          },
+          {
+            "heading": "集合場所とアクセス",
+            "body": "集合場所はBeach Parkで、施設内に駐車場があります。受付を済ませてウェットスーツに着替えたら、参加者全員でスクールバンに乗って海に向かいます。自分の車で向かうこともでき、海まで約3分です。車で来る場合は音羽蒲郡インターから国道23号線を利用します。電車の場合は豊橋駅まで来て、送迎付きプランを利用します。スクール終了後は温水シャワーを浴びられます。"
+          },
+          {
+            "heading": "SUPプランと「とよがわ」",
+            "body": "SUPプランは完全予約制の2時間コースで、12:00~に行われます。集合場所は「とよがわ」か豊橋駅から選べます。初めに15分ほど陸上で体の動かし方をレクチャーしたあと、一級河川である「とよがわ」(豊橋駅から車で10分)に入ります。そこではヨガや釣りなど自由に過ごす時間があります。"
+          },
+          {
+            "heading": "持ち物とレンタル",
+            "body": "体験には、ウェットスーツの下に着られる水着、飲み物、ビーチサンダル、日焼け止めを持参します。サーフボードとウェットスーツは多数用意されていて、レンタルできます。ウェットスーツをレンタルする際は、インナパンツ(水着)の着用が必要です。体験スクールは足のつく浅瀬でサーフィンの基礎を繰り返し練習する内容で、泳げない人も参加できます。"
+          }
+        ],
+        "menus": [
+          {
+            "name": "体験プラン"
+          },
+          {
+            "name": "送迎付き体験プラン"
+          },
+          {
+            "name": "宿泊付き体験プラン"
+          },
+          {
+            "name": "SUPプラン"
+          },
+          {
+            "name": "レンタルプラン"
+          },
+          {
+            "name": "スペシャルプラン"
+          }
+        ],
+        "sources": [
+          {
+            "label": "公式サイト",
+            "url": "http://braiz-surf.com/"
+          },
+          {
+            "label": "Google マップ",
+            "url": "https://maps.google.com/?cid=12608833911782550262"
+          }
+        ],
+        "checkedAt": "2026-10-29"
+      }
+    },
+    {
+      "id": "ac0034",
+      "vertical": "activity",
+      "category": "sea-river",
+      "name": "Mauka outdoor",
+      "pref": "nagano",
+      "cityName": "大町市",
+      "address": "長野県大町市平23245",
+      "lat": 36.6071594,
+      "lng": 137.85583,
+      "phone": "080-8410-6800",
+      "url": "http://www.maukaoutdoor.com/",
+      "website": "http://www.maukaoutdoor.com/",
+      "mapUrl": "https://maps.google.com/?cid=5149039211036021304",
+      "image": "/_portal/vshops/tri-activity-283/g01.jpg",
+      "images": [
+        "/_portal/vshops/tri-activity-283/g01.jpg",
+        "/_portal/vshops/tri-activity-283/g02.jpg",
+        "/_portal/vshops/tri-activity-283/g03.jpg",
+        "/_portal/vshops/tri-activity-283/g04.jpg",
+        "/_portal/vshops/tri-activity-283/g05.jpg",
+        "/_portal/vshops/tri-activity-283/g06.jpg",
+        "/_portal/vshops/tri-activity-283/g07.jpg",
+        "/_portal/vshops/tri-activity-283/g09.jpg",
+        "/_portal/vshops/tri-activity-283/g10.jpg"
+      ],
+      "photos": [
+        {
+          "path": "/_portal/vshops/tri-activity-283/g01.jpg",
+          "what": "青木湖でSUPボードに立つ2人と山並み",
+          "kind": "view",
+          "width": 1149,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-283/g02.jpg",
+          "what": "木々の下、複数人がSUPボードに乗って進む様子",
+          "kind": "view",
+          "width": 1200,
+          "height": 964
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-283/g03.jpg",
+          "what": "木製の桟橋から後方宙返りで水面へ飛び込む瞬間",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-283/g04.jpg",
+          "what": "桟橋と青木湖、奥に広がる山並み",
+          "kind": "view",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-283/g05.jpg",
+          "what": "青空と雲、山並みが広がる湖の風景",
+          "kind": "view",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-283/g06.jpg",
+          "what": "穏やかな水面と遠くの山々",
+          "kind": "view",
+          "width": 1016,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-283/g07.jpg",
+          "what": "青空の下、湖面に浮かぶ複数のSUPボード",
+          "kind": "view",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-283/g09.jpg",
+          "what": "複数人がSUPボードに乗って並んで進む後ろ姿",
+          "kind": "view",
+          "width": 541,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-283/g10.jpg",
+          "what": "黄色いライフジャケットを着け宙返りで飛び込む瞬間",
+          "width": 900,
+          "height": 1200
+        }
+      ],
+      "tags": [
+        "初心者歓迎"
+      ],
+      "article": {
+        "headline": "長野県大町市の青木湖を拠点にSUPツアーを行うアウトドアガイドサービス。ウィンターシーズンは白馬村を拠点にスキー・スノーボードのツアーも行う",
+        "lede": "大町市にある「Mauka outdoor」です。青木湖にSUPベースを置き、グリーンシーズンは青木湖SUPツアー、万水川SUPツアー、犀川SUPツアーを、ウィンターシーズンはゲレンデツアーとバックカントリーツアーを行っています。",
+        "sections": [
+          {
+            "heading": "SUPツアーについて",
+            "body": "グリーンシーズンのSUPツアーは、青木湖SUPツアー、万水川SUPツアー、犀川SUPツアーの3つを展開しています。初めての人でも気軽に挑戦できる青木湖でのSUPツーリングのほか、中級者から上級者向けのSUPダウンリバー(川下り)ツアーもあります。登山、釣り、山菜、キャンプのプライベートツアーにも対応しています。"
+          },
+          {
+            "heading": "ウィンターツアーについて",
+            "body": "ウィンターシーズンは、スキー・スノーボードのゲレンデプライベートツアーを中心に行っています。指導員資格を持ったガイドがビギナーからエキスパートまで案内し、HAKUBA VALLEYのスキー場全てでツアーの開催が可能です。バックカントリーツアーは、入門編のバックカントリーエントリーツアーと、レベルアップしたバックカントリーツアーの2つがあります。"
+          },
+          {
+            "heading": "バックカントリーツアーの条件",
+            "body": "開催期間は1月から5月上旬、参加可能年齢は中学生以上です。集合は8時、解散は16時となります。安全のためヘルメットの着用が必須で、バックカントリーエントリーツアーには参加者全員分のBCギアセットのレンタル料が含まれます。"
+          },
+          {
+            "heading": "集合場所とアクセス",
+            "body": "青木湖でのSUPツアーの集合場所は、長野県大町市平加蔵23245のライオンアドベンチャー敷地内にある青木湖SUPベースです。ロッジ&オフィスは長野県北安曇郡白馬村北城12322にあります。電話は080-8410-6800です。"
+          }
+        ],
+        "menus": [
+          {
+            "name": "青木湖SUPツアー"
+          },
+          {
+            "name": "万水川SUPツアー"
+          },
+          {
+            "name": "犀川SUPツアー"
+          },
+          {
+            "name": "ゲレンデプライベートツアー"
+          },
+          {
+            "name": "バックカントリーエントリーツアー"
+          },
+          {
+            "name": "バックカントリーツアー"
+          }
+        ],
+        "sources": [
+          {
+            "label": "公式サイト",
+            "url": "https://www.maukaoutdoor.com/"
+          },
+          {
+            "label": "公式サイト(About Mauka)",
+            "url": "https://www.maukaoutdoor.com/index.php/about-mauka/"
+          },
+          {
+            "label": "公式サイト(Contact & Access)",
+            "url": "https://www.maukaoutdoor.com/index.php/contact-access/"
+          },
+          {
+            "label": "公式サイト(Winter Tour)",
+            "url": "https://www.maukaoutdoor.com/index.php/winter-tour/"
+          },
+          {
+            "label": "公式サイト(バックカントリープライベートツアー)",
+            "url": "https://www.maukaoutdoor.com/index.php/winter-tour/backcountry/"
+          },
+          {
+            "label": "Google マップ",
+            "url": "https://maps.google.com/?cid=5149039211036021304"
+          }
+        ],
+        "checkedAt": "2026-10-29"
+      }
     }
   ]
 }

@@ -7723,6 +7723,178 @@
         ],
         "checkedAt": "2026-10-25"
       }
+    },
+    {
+      "id": "bo0116",
+      "vertical": "bodycare",
+      "category": "sekkotsu",
+      "name": "こせき接骨院",
+      "pref": "fukushima",
+      "cityName": "いわき市",
+      "address": "福島県いわき市鹿島町久保里屋4-16",
+      "lat": 36.9920735,
+      "lng": 140.9078268,
+      "phone": "0246-76-0084",
+      "url": "https://koseki-sekkotuin.com/",
+      "website": "https://koseki-sekkotuin.com/",
+      "mapUrl": "https://maps.google.com/?cid=3805743242736949775",
+      "image": "/_portal/vshops/tri-bodycare-284/g01.jpg",
+      "images": [
+        "/_portal/vshops/tri-bodycare-284/g01.jpg",
+        "/_portal/vshops/tri-bodycare-284/g02.jpg",
+        "/_portal/vshops/tri-bodycare-284/g04.jpg",
+        "/_portal/vshops/tri-bodycare-284/g05.jpg",
+        "/_portal/vshops/tri-bodycare-284/g06.jpg",
+        "/_portal/vshops/tri-bodycare-284/g07.jpg",
+        "/_portal/vshops/tri-bodycare-284/g09.jpg",
+        "/_portal/vshops/tri-bodycare-284/g10.jpg",
+        "/_portal/vshops/tri-bodycare-284/s10.jpg",
+        "/_portal/vshops/tri-bodycare-284/s11.jpg"
+      ],
+      "photos": [
+        {
+          "path": "/_portal/vshops/tri-bodycare-284/g01.jpg",
+          "what": "木と駐車場看板がある建物の外観",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 676
+        },
+        {
+          "path": "/_portal/vshops/tri-bodycare-284/g02.jpg",
+          "what": "看板が立つ建物の外観",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 1199
+        },
+        {
+          "path": "/_portal/vshops/tri-bodycare-284/g04.jpg",
+          "what": "手洗い用の水栓と観葉植物がある台",
+          "kind": "common",
+          "width": 1080,
+          "height": 1081
+        },
+        {
+          "path": "/_portal/vshops/tri-bodycare-284/g05.jpg",
+          "what": "本棚とタブレットが置かれた木製の台",
+          "kind": "common",
+          "width": 1200,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-bodycare-284/g06.jpg",
+          "what": "ベッドが2台並ぶ施術室",
+          "kind": "room",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-bodycare-284/g07.jpg",
+          "what": "消毒済みの衣類カゴが置かれた棚",
+          "kind": "common",
+          "width": 1199,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-bodycare-284/g09.jpg",
+          "what": "瓦屋根の建物と駐車場がある外観",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-bodycare-284/g10.jpg",
+          "what": "受付カウンターと木製の靴箱が並ぶ室内",
+          "kind": "common",
+          "width": 1199,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-bodycare-284/s10.jpg",
+          "what": "タブレットを手に持つ院内の様子",
+          "kind": "common",
+          "width": 1024,
+          "height": 683
+        },
+        {
+          "path": "/_portal/vshops/tri-bodycare-284/s11.jpg",
+          "what": "足の骨格模型を手に持つ様子",
+          "kind": "common",
+          "width": 1024,
+          "height": 683
+        }
+      ],
+      "tags": [],
+      "article": {
+        "headline": "福島県いわき市鹿島町にある接骨院。柔道整復師の院長が保険施術や交通事故施術にあたる。",
+        "lede": "いわき市にある「こせき接骨院」です。柔道整復師の小関邦彦が院長を務め、保険施術や交通事故の施術にあたります。駐車場は5台分で、予約は完全予約制です。",
+        "sections": [
+          {
+            "heading": "アクセスと連絡先",
+            "body": "住所は福島県いわき市鹿島町久保字里屋4-16です。車は常磐自動車道の湯本ICから20分、公共交通機関はJRいわき駅から常磐交通バスに乗り「久保入口」で下車して徒歩3分です。駐車場は5台分です。予約は専用のLINEか電話0246-76-0084で受け付けます。"
+          },
+          {
+            "heading": "施術の内容",
+            "body": "保険施術では骨折・脱臼・捻挫・打撲・挫傷など原因がはっきりしたケガに健康保険を使えます。交通事故施術は専門医、医療機関と連携し、柔道整復師が土日にも朝昼夜にも対応します。ほかに物理療法、手技療法、固定療法、姿勢矯正、骨盤矯正、産後骨盤矯正、アロマケア、インソール、メンタルケア、ファスティングの施術があります。"
+          },
+          {
+            "heading": "院内の設備",
+            "body": "施術室にはベッドが2台並び、AI技術で姿勢を撮影し身体のゆがみを可視化する検査を行います。院内には消毒済みの衣類カゴや手洗い用の水栓があり、低周波治療器や超音波治療器などの機材を使用します。"
+          }
+        ],
+        "menus": [
+          {
+            "name": "保険施術"
+          },
+          {
+            "name": "交通事故施術"
+          },
+          {
+            "name": "物理療法"
+          },
+          {
+            "name": "手技療法"
+          },
+          {
+            "name": "固定療法"
+          },
+          {
+            "name": "姿勢矯正"
+          },
+          {
+            "name": "骨盤矯正"
+          },
+          {
+            "name": "インソール"
+          }
+        ],
+        "sources": [
+          {
+            "label": "公式サイト",
+            "url": "https://koseki-sekkotuin.com/"
+          },
+          {
+            "label": "公式サイト(初めての方へ)",
+            "url": "https://koseki-sekkotuin.com/introduce/about/"
+          },
+          {
+            "label": "公式サイト(料金一覧)",
+            "url": "https://koseki-sekkotuin.com/introduce/price/"
+          },
+          {
+            "label": "公式サイト(アクセスマップ)",
+            "url": "https://koseki-sekkotuin.com/introduce/map/"
+          },
+          {
+            "label": "公式サイト(機材一覧)",
+            "url": "https://koseki-sekkotuin.com/introduce/facility/"
+          },
+          {
+            "label": "Google マップ",
+            "url": "https://maps.google.com/?cid=3805743242736949775"
+          }
+        ],
+        "checkedAt": "2026-10-29"
+      }
     }
   ]
 }
