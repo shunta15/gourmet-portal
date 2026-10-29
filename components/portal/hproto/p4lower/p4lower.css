@@ -94,17 +94,23 @@
 /* ───── 利用シーン + 水色の札(本番 p4 の「こんなシーンで楽しめる。」と「ひとつの店との出会い…」を横に並べて置いた) ─────
    寸法は本番 p4 の px そのまま × --kl。--kl = 1px(幅が足りるとき)。足りないときは 2 つの中の大きさを同じ比率で縮める(自然な幅 1318px = シーン 656 + 間 24 + 水色の札 610 + 右の余白 28 に対する画面幅の比)。
    水色の札は本番 p4 の札と同じ大きさ(幅 610・最低の高さ 250・中の余白 44/56/44/44・線画 130・字 26/14px)。空いた幅はシーン側が広がり、札はシーンの高さに引き伸ばさず縦の真ん中に置く。小さな文字は最低 11px。 */
-.pl-root .pl-sw { --kl: min(1px, calc(min(100cqw, 1600px) / 1318)); position: relative; z-index: 2; display: flex; align-items: stretch; gap: calc(24 * var(--kl)); padding: calc(26 * var(--u)) calc(28 * var(--kl)) 0 0; color: #3a332c; }
+.pl-root .pl-sw { --kl: min(1px, calc(min(100cqw, 1600px) / 1318)); position: relative; z-index: 2; display: flex; align-items: stretch; gap: calc(24 * var(--kl)); padding: calc(26 * var(--u) + 79.15 * var(--kl)) calc(28 * var(--kl)) calc(79.15 * var(--kl)) 0; color: #3a332c; }
 /* 地は 1 枚の帯(2026-10-29 つぎはぎをやめた): シーンの生成り(本番 p4 のシーンと同じ #f7f0e5)を、画面の左端から右端まで切れ目なく敷き、水色の札も同じ地の上に置く。見本4の「生成りの紙の上に写真と水色の札が並ぶ」関係と同じ */
 .pl-root .pl-sw::before { content: ""; position: absolute; z-index: -1; top: calc(26 * var(--u)); bottom: 0; left: calc(-1 * var(--bl)); right: calc(-1 * var(--bl)); background: #f7f0e5; }
-.pl-root .pl-sw-scene { position: relative; flex: 1 1 auto; min-width: calc(656 * var(--kl)); padding: calc(44 * var(--kl)) calc(40 * var(--kl)) calc(40 * var(--kl)) calc(56 * var(--kl)); }
-.pl-root .pl-sw-h3 { font-size: calc(30 * var(--kl)); font-weight: 500; letter-spacing: .06em; color: #2e2a26; line-height: 1.3; margin-top: calc(4 * var(--kl)); }
+/* 左の欄 = 「新しく載ったお店」。水色の札と同じ高さ(250px × --kl)に、見出し + 写真カード 3 枚を収める(上下の余白は .pl-sw の padding で水色の札の位置を従来どおりにしている) */
+.pl-root .pl-sw-scene { position: relative; flex: 1 1 auto; min-width: calc(656 * var(--kl)); height: calc(250 * var(--kl)); align-self: center; padding: 0 calc(40 * var(--kl)) 0 calc(56 * var(--kl)); display: flex; flex-direction: column; }
+.pl-root .pl-sw-h3 { font-size: calc(30 * var(--kl)); font-weight: 500; letter-spacing: .06em; color: #2e2a26; line-height: calc(39 * var(--kl)); flex: none; }
 .pl-root .pl-sw-small { font-size: max(11px, calc(14 * var(--kl))); font-weight: 500; letter-spacing: .08em; line-height: 2; color: #4a443d; }
-.pl-root .pl-sw-scene .pl-sw-small { margin-top: calc(10 * var(--kl)); }
-.pl-root .pl-sw-scenes { display: grid; grid-template-columns: repeat(4, 1fr); gap: calc(14 * var(--kl)); margin-top: calc(28 * var(--kl)); max-width: calc(560 * var(--kl)); }
-.pl-root .pl-sw-scene-i { display: block; text-align: center; color: inherit; text-decoration: none; }
-.pl-root .pl-sw-scene-i img { display: block; width: 100%; height: auto; max-width: none; aspect-ratio: 107 / 131; object-fit: cover; }
-.pl-root .pl-sw-scene-i span { display: block; margin-top: calc(12 * var(--kl)); font-size: max(11px, calc(14 * var(--kl))); letter-spacing: .08em; line-height: 1.6; color: #3a332c; }
+.pl-root .pl-nsh { flex: 1 1 0; min-height: 0; margin-top: calc(14 * var(--kl)); display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: calc(14 * var(--kl)); }
+.pl-root .pl-nsh-c { min-width: 0; min-height: 0; display: grid; grid-template-rows: minmax(0, 1fr) auto; row-gap: calc(8 * var(--kl)); color: inherit; text-decoration: none; }
+.pl-root .pl-nsh-c img { display: block; width: 100%; height: 100%; min-height: 0; max-width: none; object-fit: cover; border-radius: calc(16 * var(--kl)); background: #e9e1d2; }
+.pl-root .pl-nsh-t { display: block; min-width: 0; }
+.pl-root .pl-nsh-m { display: flex; align-items: center; gap: calc(6 * var(--kl)); min-width: 0; height: calc(18 * var(--kl)); }
+.pl-root .pl-nsh-chip { flex: none; display: inline-grid; place-items: center; height: 100%; padding: 0 calc(8 * var(--kl)); font-size: calc(10 * var(--kl)); font-weight: 600; color: #3a342e; letter-spacing: .04em; line-height: 1; white-space: nowrap; }
+.pl-root .pl-nsh-chip-g { background: #dcdcd8; } .pl-root .pl-nsh-chip-b { background: #eadcc4; }
+.pl-root .pl-nsh-town { min-width: 0; font-size: calc(11 * var(--kl)); font-weight: 500; color: #4a443d; letter-spacing: .04em; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+/* 店名: 2 行まで(超えたら「…」)。全文は title にある */
+.pl-root .pl-nsh-n { display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 2; overflow: hidden; overflow-wrap: anywhere; margin-top: calc(4 * var(--kl)); font-size: calc(13 * var(--kl)); font-weight: 500; letter-spacing: .01em; line-height: calc(18 * var(--kl)); height: calc(36 * var(--kl)); color: #2e2a26; }
 .pl-root .pl-sw-blue { flex: none; align-self: center; width: calc(610 * var(--kl)); min-height: calc(250 * var(--kl)); background: #dcebf3; border-radius: calc(52 * var(--kl)) calc(30 * var(--kl)) calc(46 * var(--kl)) calc(40 * var(--kl)) / calc(46 * var(--kl)) calc(50 * var(--kl)) calc(42 * var(--kl)) calc(54 * var(--kl)); padding: calc(44 * var(--kl)) calc(56 * var(--kl)) calc(44 * var(--kl)) calc(44 * var(--kl)); display: flex; align-items: center; gap: calc(28 * var(--kl)); isolation: isolate; }
 /* 線画の画像は水色と合わない明るい縁(書き出しのにじみ・白っぽい半透明の四角)を含むので、darken で札の水色より明るい所だけ札の色にそろえる。線(札より濃い)はそのまま。画像ファイルは変えない */
 .pl-root .pl-sw-cam { display: block; width: calc(130 * var(--kl)); height: auto; max-width: none; flex: none; mix-blend-mode: darken; }
@@ -158,8 +164,16 @@
   /* 利用シーン + 水色の札(本番 p4 のスマホと同じ: シーン → 水色の札 の縦積み) */
   .pl-root .pl-sw { --kl: 1px; display: block; padding: 0 0 40px; }
   .pl-root .pl-sw::before { top: 0; }
-  .pl-root .pl-sw-scene { width: auto; min-width: 0; padding: 36px 20px 40px; }
-  .pl-root .pl-sw-h3 { font-size: 24px; }
+  .pl-root .pl-sw-scene { width: auto; min-width: 0; height: auto; padding: 36px 20px 0; display: block; }
+  .pl-root .pl-sw-h3 { font-size: 24px; line-height: 1.3; }
+  /* 新しく載ったお店: 縦に 3 枚(左に写真・右に札・町名・店名) */
+  .pl-root .pl-nsh { display: flex; flex-direction: column; gap: 14px; margin-top: 16px; }
+  .pl-root .pl-nsh-c { display: grid; grid-template-columns: 112px minmax(0, 1fr); grid-template-rows: auto; column-gap: 14px; align-items: center; }
+  .pl-root .pl-nsh-c img { width: 112px; height: 84px; border-radius: 14px; }
+  .pl-root .pl-nsh-m { height: 20px; }
+  .pl-root .pl-nsh-chip { font-size: 10px; }
+  .pl-root .pl-nsh-town { font-size: 11px; }
+  .pl-root .pl-nsh-n { margin-top: 5px; font-size: 13px; line-height: 19px; height: 38px; }
   .pl-root .pl-sw-blue { width: auto; min-height: 0; margin: 36px 20px 0; border-radius: 40px; padding: 32px 24px; flex-direction: column; align-items: flex-start; justify-content: flex-start; gap: 16px; }
   .pl-root .pl-sw-h4 { font-size: 20px; }
 }

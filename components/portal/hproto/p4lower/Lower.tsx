@@ -5,6 +5,7 @@ import { torn, poly, type Pt } from "./torn";
 // 決まった言葉(machi2/copy.ts)。言い換えない・足さない・削らない
 import { P2 } from "../machi2/copy";
 import { getNewsItems } from "@/lib/portal/news";
+import { getNewShopCards } from "@/lib/portal/newShops";
 // 総合の特集一覧 /special(総合トップ本体と同じ行き先)
 import { HREF_SPECIAL, IMG as P4IMG, Arrow as P4Arrow } from "../p4/P4Chrome";
 // 総合の店舗紹介(8 業種それぞれの店舗紹介への入口。app/shop。2026-10-29 新設)
@@ -52,18 +53,12 @@ const F_SMALL = [
 // 新着情報 = 実データから作る(lib/portal/news.ts。「<店名>が紹介されました」「特集記事『<題>』が追加されました」の 2 種類・新しい順 4 件。日付は git の main の履歴の台帳)。手書きの知らせは持たない
 // 札の色 = 業種ごとに 2 色(今までの札の 2 色)を交互に当てる
 const CHIP_TONE: Record<string, string> = { gourmet: "g", beauty: "b", bodycare: "g", pet: "b", stay: "g", activity: "b", sports: "g", life: "b" };
-// 利用シーンの行き先 = 本番の総合トップ(p4/P4Home.tsx の SCENES)と同じ。写真は p4 の n_s0〜n_s3_hq。友人と = グルメの絞り込み / 家族と = アクティビティ / ひとりで = ボディケア / ペットと = ペット
-const SCENES: [string, string, string][] = [
-  ["友人と", "楽しむ", "/search?scene=group"],
-  ["家族と", "おでかけ", "/activity"],
-  ["ひとりで", "ゆっくり", "/bodycare"],
-  ["ペットと", "一緒に", "/pet"],
-];
 // 水色の札の言葉 = 決まった言葉 P2(一字一句そのまま。本番と同じく 1 行目は「、」で 2 行に分けるだけ)
 const P2_LINES = P2.split("\n");
 
 export default async function Lower() {
   const news = await getNewsItems(4);
+  const newShops = await getNewShopCards(3);
   const feat = S(664);
   const peo = S(1003);
 
@@ -164,16 +159,21 @@ export default async function Lower() {
           <img className="pl-a pl-autumn" src={`${IMG}autumn.webp`} alt="" width={207} height={137} loading="lazy" style={peo.a(905, 1075, 207, 137)} />
         </section>
 
-        {/* ───────── 利用シーン + 水色の札(本番の総合トップ p4 の「こんなシーンで楽しめる。」と「ひとつの店との出会い…」の札を横に並べた。街並みの帯と入れ替え。小さな英字 SCENE は出さない) ───────── */}
+        {/* ───────── 新しく載ったお店 + 水色の札(左は 2026-10-29 オーナー指示で「こんなシーンで楽しめる。」から差し替え = 台帳の新しい順の店 3 つ。右は本番の総合トップ p4 の「ひとつの店との出会い…」の札) ───────── */}
         <section className="pl-sw" aria-label="利用シーンとマチノワのつながり">
           <div className="pl-sw-scene">
-            <h2 className="pl-sw-h3">こんなシーンで楽しめる。</h2>
-            <p className="pl-sw-small">日常のあらゆるシーンで、マチノワがあなたの街時間を彩ります。</p>
-            <div className="pl-sw-scenes">
-              {SCENES.map(([a, b, href], i) => (
-                <Link key={a} href={href} className="pl-sw-scene-i">
-                  <img src={P4IMG + "n_s" + i + "_hq.webp"} alt="" width={434} height={531} loading="lazy" style={{ borderRadius: i % 2 ? "44% 44% 38% 38% / 30% 30% 22% 22%" : "46% 46% 36% 36% / 28% 28% 24% 24%" }} />
-                  <span>{a}<br />{b}</span>
+            <h2 className="pl-sw-h3">新しく載ったお店</h2>
+            <div className="pl-nsh">
+              {newShops.map((n) => (
+                <Link key={n.href} href={n.href} className="pl-nsh-c" title={n.name}>
+                  <img src={n.photo.src} srcSet={n.photo.srcSet} sizes="(max-width: 900px) 112px, 220px" alt="" width={n.photo.width ?? 4} height={n.photo.height ?? 3} loading="lazy" />
+                  <span className="pl-nsh-t">
+                    <span className="pl-nsh-m">
+                      <span className={`pl-nsh-chip pl-nsh-chip-${CHIP_TONE[n.vertical]}`}>{n.tag}</span>
+                      {n.town ? <span className="pl-nsh-town">{n.town}</span> : null}
+                    </span>
+                    <span className="pl-nsh-n">{n.name}</span>
+                  </span>
                 </Link>
               ))}
             </div>

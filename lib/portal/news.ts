@@ -35,7 +35,7 @@ export type NewsItem = {
   href: string;
 };
 
-const TAG: Record<VerticalKey, string> = {
+export const TAG: Record<VerticalKey, string> = {
   gourmet: "グルメ",
   beauty: "ビューティー",
   bodycare: "ボディケア",
@@ -48,13 +48,13 @@ const TAG: Record<VerticalKey, string> = {
 
 type Cand = NewsItem & { ts: string; order: number };
 
-const ledger = dates as unknown as {
+export const ledger = dates as unknown as {
   stores: Record<string, Record<string, string>>;
   features: { gourmet: Record<string, string> };
   specials: Record<string, Record<string, string>>;
 };
 
-const jstDate = (iso: string) => {
+export const jstDate = (iso: string) => {
   const d = new Date(new Date(iso).getTime() + 9 * 3600 * 1000);
   return `${d.getUTCFullYear()}.${String(d.getUTCMonth() + 1).padStart(2, "0")}.${String(d.getUTCDate()).padStart(2, "0")}`;
 };
