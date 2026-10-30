@@ -24,9 +24,8 @@ const ENTRANCE_UPDATED = new Date("2026-10-09T18:13:00+09:00");
  * - REGIONS / SCENES はコード定数なので data.ts を参照
  * - 特集記事は isFeatureIndexable で noindex 扱いをフィルタリング
  *
- * revalidate で ISR を設定し、キャッシュ時間ごとに再生成。
+ * 時間での作り直し(revalidate)は付けない。店・特集を管理画面から保存したとき、/api/revalidate が /sitemap.xml を作り直す(lib/revalidatePlan.ts)。
  */
-export const revalidate = 3600;
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const now = new Date();

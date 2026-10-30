@@ -6,6 +6,5 @@ import { SportsSpecialIndexPage } from "@/components/portal/sports/pages";
 // metadata は vkit の特集の一覧(vkSpecialIndexPage)と同じ。静的なページ。
 const route = vkSpecialIndexPage(sportsCfg);
 
-export const revalidate = 3600;
 export const generateMetadata = route.generateMetadata;
 export default SportsSpecialIndexPage;

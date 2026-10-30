@@ -7,7 +7,6 @@ import { SportsArticlePage } from "@/components/portal/sports/pages";
 // 店が無い・出せる本文が無い店は 404(その店のページ /sports/shop/{id} は残る)。metadata(title・description・canonical・OGP・robots)・事前生成の対象は components/portal/vkit/article/route.tsx と同じ。
 const route = vkArticleRoute(sportsCfg);
 
-export const revalidate = 3600;
 export const dynamicParams = true;
 export const generateStaticParams = route.generateStaticParams;
 export const generateMetadata = withUnlisted(route.generateMetadata);

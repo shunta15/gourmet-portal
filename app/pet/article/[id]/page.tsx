@@ -7,7 +7,6 @@ import { assertPortalLive, liveStaticParams } from "@/lib/portal/launch";
 // 限定公開の店(lib/unlisted.ts)は、自分のページを描くあいだだけ通す(withUnlisted)。
 const page = petArticlePage();
 
-export const revalidate = 3600;
 export const dynamicParams = true;
 export const generateStaticParams = liveStaticParams(async () => page.generateStaticParams());
 export const generateMetadata = withUnlisted(async function generateMetadata(props: Parameters<typeof page.generateMetadata>[0]) {

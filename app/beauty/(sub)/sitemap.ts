@@ -7,7 +7,6 @@ import { BEAUTY_SITE } from "@/lib/portal/colorplay/site";
 import { isIndexable } from "@/lib/seo/gate";
 import { absUrl } from "@/lib/seo/util";
 
-export const revalidate = 3600;
 
 const base = verticalSitemap("beauty");
 

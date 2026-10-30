@@ -7,7 +7,6 @@ import { VERTICALS } from "@/lib/verticals";
 
 // ペットの特集記事の一覧(メニューの「特集」の行き先)。/pet/special — 利用シーン記事 + 業種の特集記事 4 本(lib/specials/pet.json)。店 1 軒の記事は並べない。
 // 見た目はボディケアの /bodycare/special を手本に、ペットの部品で組む。robots は他の一覧と同じ gate(掲載が 3 件未満なら noindex)。
-export const revalidate = 3600;
 
 export async function generateMetadata() {
   assertPortalLive();
