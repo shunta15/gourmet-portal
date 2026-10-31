@@ -1,0 +1,307 @@
+/* 暖簾3 さがす(見本 2_さがす.png = 1086×1448px の 1:1 再現)。クラス接頭辞 .gn3-search-
+   ■ 座標: calc(var(--u) * N) の N は見本の画素。<main> は見本 y=55 から始まるので、main 内 y = 見本 y − 55。
+   ■ 見本の測定値(PC)
+     ヒーロー写真  y55〜412(357 高)・全幅。  縦書き 3 列: 右端 x161・列ピッチ 35・字 17・字送り 21(y107〜)。
+     暖簾の文(「おいしい/出会いを/さがしに行こう」)x465〜654・3 行・行ピッチ 37・字 25(濃い茶)。 暖簾の右: 墨の円ロゴ x774〜821 y106〜152・「マチノワ」x745〜847 y169〜190。
+     提灯: ロゴ x960〜991 y128〜158・「マチノワ」x943〜1005 y166〜179。
+     統計: アイコン(333〜360,257〜284)(496〜525,260〜282)(657〜691,257〜287)・数字 28u 明朝(x388/548/710・y252〜272)・ラベル 13u(y277〜290)・仕切り x463.5/625.5 y250〜291。
+     検索カード x162.5〜923.5 y307.5〜374(入力 x172〜791 y317〜365・ボタン x801〜914 y316〜365・#0e131d)。
+     絞り込みカード x43〜1043 y385.5〜468。選択 3 つ y395〜457.5: x61〜304 / 316〜559 / 570〜811。「条件をクリアする」アイコン x892 ラベル x917〜1020 y420〜432。
+     料理からさがす: 見出し x51 y487〜505(20.5u)・リード x235・「すべての料理…」右端 x1035。暖簾 7 枚 y516〜716(アイコン中心 y551・ラベル中心 y581.5・14.5u)。
+     エリアからさがす: 帯 y731〜945。見出し y749〜766。縦暖簾 7 枚(中心 x 170/290/413/533/654/772/894)・字 14.5u 字送り 16.5・中心 y848.5・丸矢印 22u 中心 y910。
+     検索結果: 見出し 24u y966〜986・並べ替え x745・箱 x808.5〜957.5 y962.5〜991.5・表示切替 x975〜997 / 1015〜1038。
+     カード: 列 x50/303/552/803(幅 239.5/234.5/237.5/236.5)・1 行目 y1003.5〜1224.5(写真 117.5)・2 行目 y1238.5〜(写真 110)。
+       分類ラベル 左 10 上 8 高さ 19・ハート 右 12 上 11.5・店名 15u(写真下 +13.5)・駅 11u(+34)・一言 11u(+56)・タグ 高さ 22.5(+73)・タグ字 10u。 */
+
+/* ページの地: 見本の麻地(中央値 rgb(239,234,224)・ざらつき sd≈6)。共通の .gn3-linen より粒を弱くし、検索結果の頭だけ明るい */
+.gn3-search.gn3-linen {
+  background-color: #f4efe5;
+  background-image:
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='240' height='240'%3E%3Cfilter id='f' x='0' y='0' width='100%25' height='100%25'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2' seed='5' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 .45 0 0 0 0 .38 0 0 0 0 .3 .2 0 0 0 -.07'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23f)'/%3E%3C/svg%3E");
+}
+/* ───────── 共通の部品 ───────── */
+.gn3-search { --gs-ink: #25211d; position: relative; background-color: #f4efe5; color: var(--gs-ink); font-family: var(--gn3-f-mincho); }
+.gn3-search :where(h1, h2, h3, p) { font-weight: inherit; }
+.gn3-search .gn3-search-in { position: relative; width: calc(var(--u) * 1086); margin-inline: auto; }
+.gn3-search .gn3-search-sr { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+.gn3-search button, .gn3-search select, .gn3-search input { font-family: inherit; }
+.gn3-search a:focus-visible, .gn3-search button:focus-visible, .gn3-search label:has(select:focus-visible), .gn3-search label:has(input:focus-visible) { outline: 2px solid #c8742f; outline-offset: 2px; }
+.gn3-search .gn3-search-more { display: inline-flex; align-items: center; gap: calc(var(--u) * 11); font-weight: 600; font-size: calc(var(--u) * 10.5); letter-spacing: .115em; line-height: 1; white-space: nowrap; }
+.gn3-search .gn3-search-more svg { width: calc(var(--u) * 15); height: auto; flex: none; stroke-width: 1.6; }
+
+/* ───────── ヒーロー(main y0〜413) ───────── */
+.gn3-search .gn3-search-hero { position: relative; height: calc(var(--u) * 413); background: linear-gradient(to bottom, #120a05 0, #120a05 calc(var(--u) * 357), transparent calc(var(--u) * 357)); z-index: 1; }
+.gn3-search .gn3-search-hero .gn3-search-in { height: 100%; }
+.gn3-search .gn3-search-herobg { position: absolute; left: 0; top: 0; width: 100%; height: calc(var(--u) * 357); overflow: hidden; }
+.gn3-search .gn3-search-herobg img, .gn3-search .gn3-search-areabg img { width: 100%; height: 100%; object-fit: cover; }
+@media (min-width: 1441px) { /* 画面が 1440 より広いとき、写真の左右を溶かす */
+  .gn3-search .gn3-search-herobg img, .gn3-search .gn3-search-areabg img { -webkit-mask-image: linear-gradient(to right, transparent 0, #000 6%, #000 94%, transparent 100%); mask-image: linear-gradient(to right, transparent 0, #000 6%, #000 94%, transparent 100%); }
+}
+
+.gn3-search .gn3-search-vert { position: absolute; left: calc(var(--u) * 64); top: calc(var(--u) * 48); width: calc(var(--u) * 105); height: calc(var(--u) * 175); margin: 0; writing-mode: vertical-rl; font-weight: 500; font-size: calc(var(--u) * 20); letter-spacing: .165em; line-height: calc(var(--u) * 35); color: #f7f2e9; white-space: nowrap; text-shadow: 0 1px 8px rgba(10, 5, 0, .55); }
+.gn3-search .gn3-search-vert span { display: block; }
+
+.gn3-search .gn3-search-ncopy { position: absolute; left: calc(var(--u) * 464); top: calc(var(--u) * 38.5); margin: 0; font-weight: 600; font-size: calc(var(--u) * 26.5); letter-spacing: .06em; line-height: calc(var(--u) * 37); color: #3a2f26; white-space: nowrap; }
+.gn3-search .gn3-search-ncopy span { display: block; }
+.gn3-search .gn3-search-nlogo-mark { position: absolute; left: calc(var(--u) * 774); top: calc(var(--u) * 51); width: calc(var(--u) * 47); height: calc(var(--u) * 46); color: #3b3025; }
+.gn3-search .gn3-search-nlogo-name { position: absolute; left: calc(var(--u) * 744.5); top: calc(var(--u) * 106.5); font-weight: 700; font-size: calc(var(--u) * 27); letter-spacing: 0; line-height: calc(var(--u) * 26); color: #382d23; white-space: nowrap; }
+.gn3-search .gn3-search-lantern-mark { position: absolute; left: calc(var(--u) * 960); top: calc(var(--u) * 73); width: calc(var(--u) * 31); height: calc(var(--u) * 30); color: #34261b; }
+.gn3-search .gn3-search-lantern-name { position: absolute; left: calc(var(--u) * 942.5); top: calc(var(--u) * 108); font-weight: 700; font-size: calc(var(--u) * 16); letter-spacing: .03em; line-height: calc(var(--u) * 16); color: #2c1d12; white-space: nowrap; }
+
+.gn3-search .gn3-search-stats { position: absolute; inset: 0; margin: 0; padding: 0; list-style: none; pointer-events: none; color: #f7f2e8; }
+.gn3-search .gn3-search-stat { position: absolute; inset: 0; }
+.gn3-search .gn3-search-stat-ic { position: absolute; display: block; }
+.gn3-search .gn3-search-stat-n { position: absolute; font-weight: 500; font-size: calc(var(--u) * 28); line-height: calc(var(--u) * 28); letter-spacing: .01em; }
+.gn3-search .gn3-search-stat-l { position: absolute; font-weight: 600; font-size: calc(var(--u) * 13.5); line-height: calc(var(--u) * 14); letter-spacing: .06em; white-space: nowrap; }
+.gn3-search .gn3-search-stat.s1 .gn3-search-stat-ic { left: calc(var(--u) * 331); top: calc(var(--u) * 202); width: calc(var(--u) * 28); height: calc(var(--u) * 27); }
+.gn3-search .gn3-search-stat.s1 .gn3-search-stat-n { left: calc(var(--u) * 385.5); top: calc(var(--u) * 191); }
+.gn3-search .gn3-search-stat.s1 .gn3-search-stat-l { left: calc(var(--u) * 386); top: calc(var(--u) * 221.5); }
+.gn3-search .gn3-search-stat.s2 .gn3-search-stat-ic { left: calc(var(--u) * 495); top: calc(var(--u) * 203); width: calc(var(--u) * 28.5); height: calc(var(--u) * 24); }
+.gn3-search .gn3-search-stat.s2 .gn3-search-stat-n { left: calc(var(--u) * 547); top: calc(var(--u) * 191); }
+.gn3-search .gn3-search-stat.s2 .gn3-search-stat-l { left: calc(var(--u) * 545.5); top: calc(var(--u) * 222); }
+.gn3-search .gn3-search-stat.s3 .gn3-search-stat-ic { left: calc(var(--u) * 656); top: calc(var(--u) * 201); width: calc(var(--u) * 33.5); height: calc(var(--u) * 30); }
+.gn3-search .gn3-search-stat.s3 .gn3-search-stat-n { left: calc(var(--u) * 708.5); top: calc(var(--u) * 191); }
+.gn3-search .gn3-search-stat.s3 .gn3-search-stat-l { left: calc(var(--u) * 708.5); top: calc(var(--u) * 221.5); }
+.gn3-search .gn3-search-stat-sep { position: absolute; top: calc(var(--u) * 195); width: calc(var(--u) * 1); height: calc(var(--u) * 41); background: rgba(255, 240, 220, .38); }
+.gn3-search .gn3-search-stat-sep.a { left: calc(var(--u) * 463); }
+.gn3-search .gn3-search-stat-sep.b { left: calc(var(--u) * 625); }
+
+/* 検索カード */
+.gn3-search .gn3-search-box { position: absolute; left: calc(var(--u) * 162.5); top: calc(var(--u) * 252.5); width: calc(var(--u) * 761); height: calc(var(--u) * 66.5); margin: 0; border-radius: calc(var(--u) * 9); background: linear-gradient(to bottom, #f3ede2, #ece4d5); box-shadow: inset 0 0 0 1px rgba(255, 250, 241, .9), 0 4px 14px rgba(0, 0, 0, .45); }
+.gn3-search .gn3-search-input { position: absolute; left: calc(var(--u) * 9.2); top: calc(var(--u) * 9.2); width: calc(var(--u) * 619); height: calc(var(--u) * 48.6); border-radius: calc(var(--u) * 5.5); background: #fffdf9; display: block; }
+.gn3-search .gn3-search-input-ic { position: absolute; left: calc(var(--u) * 13.2); top: calc(var(--u) * 15.5); width: calc(var(--u) * 20); height: calc(var(--u) * 20); color: #17130f; }
+.gn3-search .gn3-search-input input { position: absolute; left: calc(var(--u) * 48); top: 0; width: calc(100% - var(--u) * 56); height: 100%; margin: 0; padding: 0; border: 0; background: transparent; font-size: calc(var(--u) * 15); letter-spacing: .085em; color: #25211d; outline: none; -webkit-appearance: none; appearance: none; }
+.gn3-search .gn3-search-input input::placeholder { color: #6e6a65; opacity: 1; }
+.gn3-search .gn3-search-input input::-webkit-search-cancel-button { display: none; }
+.gn3-search .gn3-search-input:focus-within { box-shadow: 0 0 0 2px #c8742f; }
+.gn3-search .gn3-search-go { position: absolute; left: calc(var(--u) * 638.2); top: calc(var(--u) * 8.6); width: calc(var(--u) * 113.3); height: calc(var(--u) * 49); border: 0; border-radius: calc(var(--u) * 5.5); background: #0e131d; color: #f6f1e6; font-weight: 700; font-size: calc(var(--u) * 13.5); letter-spacing: .14em; padding: 0 0 0 .14em; display: grid; place-items: center; cursor: pointer; }
+.gn3-search .gn3-search-go:hover { background: #1b2433; }
+
+/* 絞り込みカード(main y330.5〜413) */
+.gn3-search .gn3-search-filters { position: absolute; left: calc(var(--u) * 43); top: calc(var(--u) * 330.5); width: calc(var(--u) * 1000); height: calc(var(--u) * 82.5); border-radius: calc(var(--u) * 9); background: #f2eee5; box-shadow: inset 0 1px 0 #fbf7ef, 0 3px 6px rgba(80, 60, 30, .16); --gn3-search-pin-hole: #f8f4ee; }
+.gn3-search .gn3-search-sel { position: absolute; top: calc(var(--u) * 9.5); height: calc(var(--u) * 62.5); border-radius: calc(var(--u) * 6); background: #f8f4ee; box-shadow: 0 0 0 1px rgba(208, 198, 182, .22), 0 1px 3px rgba(120, 100, 70, .12); display: block; cursor: pointer; color: #17202e; }
+.gn3-search .gn3-search-sel.s1 { left: calc(var(--u) * 18); width: calc(var(--u) * 243); }
+.gn3-search .gn3-search-sel.s2 { left: calc(var(--u) * 273); width: calc(var(--u) * 243); }
+.gn3-search .gn3-search-sel.s3 { left: calc(var(--u) * 527); width: calc(var(--u) * 241); }
+.gn3-search .gn3-search-sel-ic { position: absolute; display: block; color: #141c2a; }
+.gn3-search .gn3-search-sel-ic.pin { left: calc(var(--u) * 19.2); top: calc(var(--u) * 15); width: calc(var(--u) * 19.7); height: calc(var(--u) * 25.6); }
+.gn3-search .gn3-search-sel-ic.bowl { left: calc(var(--u) * 15); top: calc(var(--u) * 13.5); width: calc(var(--u) * 35); height: calc(var(--u) * 28); }
+.gn3-search .gn3-search-sel-ic.ppl { left: calc(var(--u) * 17); top: calc(var(--u) * 15); width: calc(var(--u) * 29); height: calc(var(--u) * 27); }
+.gn3-search .gn3-search-sel-t { position: absolute; top: 0; bottom: 0; display: block; }
+.gn3-search .gn3-search-sel.s1 .gn3-search-sel-t { left: calc(var(--u) * 58.5); }
+.gn3-search .gn3-search-sel.s2 .gn3-search-sel-t { left: calc(var(--u) * 63); }
+.gn3-search .gn3-search-sel.s3 .gn3-search-sel-t { left: calc(var(--u) * 62.5); }
+.gn3-search .gn3-search-sel-t b { position: absolute; left: 0; top: calc(var(--u) * 7.5); font-weight: 700; font-size: calc(var(--u) * 14.2); line-height: calc(var(--u) * 16); letter-spacing: .05em; white-space: nowrap; color: #1d1a17; }
+.gn3-search .gn3-search-sel-t i { position: absolute; left: 0; top: calc(var(--u) * 33); font-style: normal; font-weight: 500; font-size: calc(var(--u) * 11.5); line-height: calc(var(--u) * 16); letter-spacing: .085em; white-space: nowrap; color: #5b564f; display: inline-flex; align-items: center; gap: calc(var(--u) * 2); }
+.gn3-search .gn3-search-tri { width: calc(var(--u) * 7); height: calc(var(--u) * 5.5); }
+.gn3-search .gn3-search-sel-chev { position: absolute; right: calc(var(--u) * 20); top: calc(var(--u) * 27); width: calc(var(--u) * 11); height: calc(var(--u) * 7.5); color: #17130f; }
+.gn3-search .gn3-search-sel select { position: absolute; inset: 0; width: 100%; height: 100%; opacity: 0; cursor: pointer; font-size: 16px; -webkit-appearance: none; appearance: none; }
+.gn3-search .gn3-search-sel:hover { background: #fbf8f2; }
+.gn3-search .gn3-search-clear { position: absolute; left: calc(var(--u) * 847.5); top: calc(var(--u) * 29); height: calc(var(--u) * 22); padding: 0; border: 0; background: transparent; display: flex; align-items: center; gap: calc(var(--u) * 10); color: #1d1a17; cursor: pointer; }
+.gn3-search .gn3-search-clear-ic { width: calc(var(--u) * 16); height: calc(var(--u) * 16); flex: none; }
+.gn3-search .gn3-search-clear span { font-weight: 600; font-size: calc(var(--u) * 12); letter-spacing: .075em; line-height: calc(var(--u) * 14); padding-bottom: calc(var(--u) * 3.5); border-bottom: calc(var(--u) * 1.3) solid #1f1c19; white-space: nowrap; margin-top: calc(var(--u) * 4); }
+.gn3-search .gn3-search-clear:hover span { color: #8a3a14; border-color: #8a3a14; }
+
+/* ───────── 料理からさがす(見本 y468〜731 → 高さ 263) ───────── */
+.gn3-search .gn3-search-ryo { position: relative; height: calc(var(--u) * 263); }
+.gn3-search .gn3-search-ryo .gn3-search-in, .gn3-search .gn3-search-area .gn3-search-in { height: 100%; }
+.gn3-search .gn3-search-ryo-head h2, .gn3-search .gn3-search-area-head h2, .gn3-search .gn3-search-res-head h2 { position: absolute; margin: 0; white-space: nowrap; }
+.gn3-search .gn3-search-ryo-head h2 { left: calc(var(--u) * 50.5); top: calc(var(--u) * 13); font-weight: 700; font-size: calc(var(--u) * 20); line-height: calc(var(--u) * 30); letter-spacing: .06em; color: #25221f; }
+.gn3-search .gn3-search-ryo-head p { position: absolute; left: calc(var(--u) * 234.5); top: calc(var(--u) * 21); margin: 0; font-weight: 500; font-size: calc(var(--u) * 10.5); line-height: calc(var(--u) * 18); letter-spacing: .145em; color: #4f4942; white-space: nowrap; }
+.gn3-search .gn3-search-ryo-head .gn3-search-more { position: absolute; right: calc(var(--u) * 50.5); top: calc(var(--u) * 19.5); height: calc(var(--u) * 18); color: #2b2723; }
+.gn3-search .gn3-search-genres { position: absolute; left: calc(var(--u) * 43); top: calc(var(--u) * 48); width: calc(var(--u) * 1000); height: calc(var(--u) * 200); margin: 0; padding: 0; list-style: none; }
+.gn3-search .gn3-search-genre { position: absolute; top: 0; left: calc(var(--u) * var(--gx)); width: calc(var(--u) * var(--gw)); height: calc(var(--u) * 200); container-type: inline-size; background-image: url("/_portal/gnoren3/search/genre.webp"); background-repeat: no-repeat; background-size: var(--gbgw) auto; background-position: var(--gbgx) 0; }
+.gn3-search .gn3-search-genre button { position: absolute; inset: 0; width: 100%; height: 100%; padding: 0; border: 0; background: transparent; cursor: pointer; color: #f4eee4; }
+.gn3-search .gn3-search-genre.sand button { color: #2d2823; }
+.gn3-search .gn3-search-genre-ic { position: absolute; left: calc(var(--gcx) / var(--gw) * 100%); top: 17.5%; width: calc(38 / var(--gw) * 100cqw); height: calc(33 / var(--gw) * 100cqw); transform: translate(-50%, -50%); display: block; }
+.gn3-search .gn3-search-genre-l { position: absolute; left: calc(var(--gcx) / var(--gw) * 100%); top: 32.5%; transform: translate(-50%, -50%); font-weight: 700; font-size: calc(15 / var(--gw) * 100cqw); line-height: 1.2; letter-spacing: .025em; white-space: nowrap; }
+.gn3-search .gn3-search-genre button:hover { background: rgba(255, 255, 255, .07); }
+.gn3-search .gn3-search-genre.sand button:hover { background: rgba(0, 0, 0, .05); }
+.gn3-search .gn3-search-genre button[aria-pressed="true"] { box-shadow: inset 0 0 0 calc(var(--u) * 2) #e4a64f; }
+.gn3-search .gn3-search-genre button:focus-visible { outline-offset: -3px; }
+
+/* ───────── エリアからさがす(見本 y731〜945 → 高さ 214) ───────── */
+.gn3-search .gn3-search-area { position: relative; height: calc(var(--u) * 214); background: #0b1119; }
+.gn3-search .gn3-search-areabg { position: absolute; left: 0; top: 0; width: 100%; height: 100%; overflow: hidden; }
+.gn3-search .gn3-search-area-head h2 { left: calc(var(--u) * 50.5); top: calc(var(--u) * 11.5); font-weight: 700; font-size: calc(var(--u) * 20); line-height: calc(var(--u) * 30); letter-spacing: .06em; color: #f4efe5; text-shadow: 0 1px 6px rgba(0, 0, 0, .5); }
+.gn3-search .gn3-search-area-head p { position: absolute; left: calc(var(--u) * 248.5); top: calc(var(--u) * 18.5); margin: 0; font-weight: 500; font-size: calc(var(--u) * 10.5); line-height: calc(var(--u) * 18); letter-spacing: .125em; color: rgba(244, 239, 229, .88); white-space: nowrap; }
+.gn3-search .gn3-search-area-head .gn3-search-more { position: absolute; right: calc(var(--u) * 51); top: calc(var(--u) * 20); height: calc(var(--u) * 18); color: #f4efe5; text-shadow: 0 1px 4px rgba(0, 0, 0, .5); }
+.gn3-search .gn3-search-norens { position: absolute; inset: 0; margin: 0; padding: 0; list-style: none; }
+.gn3-search .gn3-search-noren { position: absolute; top: calc(var(--u) * 55); left: calc(var(--u) * (var(--ncx) - 45)); width: calc(var(--u) * 90); height: calc(var(--u) * 150); }
+.gn3-search .gn3-search-noren button { position: absolute; inset: 0; width: 100%; height: 100%; padding: 0; border: 0; background: transparent; cursor: pointer; color: #f4eee4; }
+.gn3-search .gn3-search-noren.sand button { color: #2a2622; }
+.gn3-search .gn3-search-noren-l { position: absolute; left: 50%; top: calc(var(--u) * 66); transform: translate(-50%, -50%); writing-mode: vertical-rl; font-weight: 700; font-size: calc(var(--u) * 16); letter-spacing: .03em; line-height: 1.1; white-space: nowrap; }
+.gn3-search .gn3-search-noren-ar { position: absolute; left: 50%; top: calc(var(--u) * 124); width: calc(var(--u) * 23); height: calc(var(--u) * 23); transform: translate(-50%, -50%); display: block; }
+.gn3-search .gn3-search-noren button:hover { background: rgba(255, 255, 255, .06); }
+.gn3-search .gn3-search-noren.sand button:hover { background: rgba(0, 0, 0, .05); }
+.gn3-search .gn3-search-noren button[aria-pressed="true"] { box-shadow: inset 0 0 0 calc(var(--u) * 2) #e4a64f; }
+.gn3-search .gn3-search-norens .gn3-search-noren button:focus-visible { outline-offset: -3px; }
+
+/* ───────── 検索結果(見本 y945〜) ───────── */
+.gn3-search .gn3-search-res { position: relative; padding-bottom: calc(var(--u) * 52); background: radial-gradient(ellipse 60% calc(var(--u) * 120) at 50% calc(var(--u) * 20), rgba(255, 253, 248, .55), transparent); }
+.gn3-search .gn3-search-res .gn3-search-in { padding-top: calc(var(--u) * 58.5); }
+.gn3-search .gn3-search-res-head { position: absolute; left: 0; top: 0; width: 100%; height: calc(var(--u) * 62); }
+.gn3-search .gn3-search-res-head h2 { left: calc(var(--u) * 49); top: calc(var(--u) * 16); font-weight: 700; font-size: calc(var(--u) * 24); line-height: calc(var(--u) * 30); letter-spacing: .02em; color: #1f1c19; }
+.gn3-search .gn3-search-res-head > p { position: absolute; left: calc(var(--u) * 177); top: calc(var(--u) * 22); margin: 0; font-weight: 600; font-size: calc(var(--u) * 11.5); line-height: calc(var(--u) * 18); letter-spacing: .11em; color: #3a3631; white-space: nowrap; }
+.gn3-search .gn3-search-tools { position: absolute; inset: 0; }
+.gn3-search .gn3-search-sort > span:first-child { position: absolute; left: calc(var(--u) * 745); top: calc(var(--u) * 21); font-weight: 500; font-size: calc(var(--u) * 11.2); line-height: calc(var(--u) * 18); letter-spacing: .12em; color: #4a443d; white-space: nowrap; }
+.gn3-search .gn3-search-sortbox { position: absolute; left: calc(var(--u) * 808.5); top: calc(var(--u) * 17.5); width: calc(var(--u) * 149); height: calc(var(--u) * 29); border-radius: calc(var(--u) * 5); background: #f8f7f2; box-shadow: 0 0 0 1px #d6d0c4, 0 1px 2px rgba(100, 85, 60, .12); display: block; cursor: pointer; }
+.gn3-search .gn3-search-sortbox > span { position: absolute; left: calc(var(--u) * 11.5); top: 0; height: 100%; display: flex; align-items: center; font-weight: 500; font-size: calc(var(--u) * 11.5); letter-spacing: .06em; color: #2e2a26; white-space: nowrap; }
+.gn3-search .gn3-search-sortchev { position: absolute; right: calc(var(--u) * 10); top: calc(var(--u) * 11.5); width: calc(var(--u) * 9); height: calc(var(--u) * 6.5); color: #17130f; }
+.gn3-search .gn3-search-sortbox select { position: absolute; inset: 0; width: 100%; height: 100%; opacity: 0; cursor: pointer; font-size: 16px; -webkit-appearance: none; appearance: none; }
+.gn3-search .gn3-search-views button { position: absolute; padding: 0; border: 0; background: transparent; display: block; cursor: pointer; color: #b9b7b1; }
+.gn3-search .gn3-search-views button:nth-child(1) { left: calc(var(--u) * 975); top: calc(var(--u) * 21.5); width: calc(var(--u) * 22); height: calc(var(--u) * 21); }
+.gn3-search .gn3-search-views button:nth-child(2) { left: calc(var(--u) * 1015.5); top: calc(var(--u) * 22); width: calc(var(--u) * 23); height: calc(var(--u) * 20); }
+.gn3-search .gn3-search-views button svg { width: 100%; height: 100%; display: block; }
+.gn3-search .gn3-search-views button[aria-pressed="true"] { color: #11151e; }
+.gn3-search .gn3-search-views button::before { content: ""; position: absolute; inset: calc(var(--u) * -6); }
+
+.gn3-search .gn3-search-cards { margin: 0 0 0 calc(var(--u) * 50); padding: 0; list-style: none; display: grid; grid-template-columns: calc(var(--u) * 239.5) calc(var(--u) * 13.5) calc(var(--u) * 234.5) calc(var(--u) * 14.5) calc(var(--u) * 237.5) calc(var(--u) * 13.5) calc(var(--u) * 236.5); row-gap: calc(var(--u) * 13.5); align-items: start; }
+.gn3-search .gn3-search-cards.grid > li:nth-child(4n + 1) { grid-column: 1; }
+.gn3-search .gn3-search-cards.grid > li:nth-child(4n + 2) { grid-column: 3; }
+.gn3-search .gn3-search-cards.grid > li:nth-child(4n + 3) { grid-column: 5; }
+.gn3-search .gn3-search-cards.grid > li:nth-child(4n + 4) { grid-column: 7; }
+.gn3-search .gn3-search-card { position: relative; border-radius: calc(var(--u) * 7); background: #f4f1eb; box-shadow: 0 1px 4px rgba(60, 45, 25, .2), 0 0 0 .5px rgba(190, 180, 160, .25); overflow: hidden; }
+.gn3-search .gn3-search-card-ph { position: relative; height: calc(var(--u) * var(--ph)); overflow: hidden; background: #2a1c10; }
+.gn3-search .gn3-search-card-ph img { width: 100%; height: 100%; object-fit: cover; }
+.gn3-search .gn3-search-chip { position: absolute; left: calc(var(--u) * 10.5); top: calc(var(--u) * 8.5); height: calc(var(--u) * 17.5); min-width: calc(var(--u) * var(--cw)); padding: 0 calc(var(--u) * 6); justify-content: center; display: flex; align-items: center; border-radius: calc(var(--u) * 2.5); background: rgba(240, 232, 218, .96); box-shadow: 0 1px 2px rgba(0, 0, 0, .25); font-weight: 600; font-size: calc(var(--u) * 11); letter-spacing: .04em; color: #2d2823; white-space: nowrap; }
+.gn3-search .gn3-search-heart { position: absolute; right: calc(var(--u) * 7); top: calc(var(--u) * 5.5); width: calc(var(--u) * 29); height: calc(var(--u) * 29); padding: 0; border: 0; background: transparent; display: grid; place-items: center; color: #fff; cursor: pointer; z-index: 3; filter: drop-shadow(0 1px 2px rgba(0, 0, 0, .35)); }
+.gn3-search .gn3-search-heart svg { width: calc(var(--u) * 18); height: calc(var(--u) * 16.5); }
+.gn3-search .gn3-search-heart[aria-pressed="true"] { color: #e4574a; }
+.gn3-search .gn3-search-heart:hover svg { transform: scale(1.12); }
+.gn3-search .gn3-search-card-body { padding: calc(var(--u) * 2.5) calc(var(--u) * 13.5) calc(var(--u) * 9); }
+.gn3-search .gn3-search-card-body h3 { margin: 0; font-weight: 700; font-size: calc(var(--u) * 15); line-height: calc(var(--u) * 22); letter-spacing: .085em; color: #1f1c19; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.gn3-search .gn3-search-card-body h3 a::after { content: ""; position: absolute; inset: 0; z-index: 1; }
+.gn3-search .gn3-search-card-body h3 a:focus-visible { outline: none; }
+.gn3-search .gn3-search-card:has(h3 a:focus-visible) { outline: 2px solid #c8742f; outline-offset: 2px; }
+.gn3-search .gn3-search-st { margin: calc(var(--u) * .5) 0 0; display: flex; align-items: center; gap: calc(var(--u) * 7); font-weight: 600; font-size: calc(var(--u) * 11); line-height: calc(var(--u) * 18); letter-spacing: -.03em; color: #4f4a43; white-space: nowrap; --gn3-search-pin-hole: #f4f1eb; }
+.gn3-search .gn3-search-st svg { width: calc(var(--u) * 9.5); height: calc(var(--u) * 12.5); flex: none; color: #17202e; }
+.gn3-search .gn3-search-ds { margin: calc(var(--u) * 4) 0 0; font-weight: 600; font-size: calc(var(--u) * 11); line-height: calc(var(--u) * 18); letter-spacing: .045em; color: #58524b; white-space: nowrap; overflow: hidden; }
+.gn3-search .gn3-search-tags { margin: calc(var(--u) * 7) 0 0; padding: 0; list-style: none; display: flex; gap: calc(var(--u) * 7.5 * var(--fit-s, 1)); overflow: hidden; }
+.gn3-search .gn3-search-tags li { height: calc(var(--u) * 22.5); padding: 0 calc(var(--u) * 6.3 * var(--fit-pad, 1)); flex: none; display: flex; align-items: center; border-radius: calc(var(--u) * 3); background: #e3e2df; box-shadow: 0 1px 2px rgba(80, 70, 55, .18); font-weight: 600; font-size: calc(var(--u) * 10 * var(--fit-s, 1)); letter-spacing: var(--fit-ls, .03em); color: #4a453f; white-space: nowrap; }
+
+.gn3-search .gn3-search-empty { margin: calc(var(--u) * 20) calc(var(--u) * 50) 0; padding: calc(var(--u) * 60) 0; text-align: center; font-size: calc(var(--u) * 14); }
+.gn3-search .gn3-search-empty button { margin-top: 16px; min-height: 44px; padding: 0 22px; border: 0; border-radius: 6px; background: #0e131d; color: #f6f1e6; font-weight: 600; font-size: 14px; letter-spacing: .1em; cursor: pointer; }
+
+/* 一覧表示(PC。見本には無い状態) */
+.gn3-search .gn3-search-cards.list { grid-template-columns: calc(var(--u) * 990); row-gap: calc(var(--u) * 12); }
+.gn3-search .gn3-search-cards.list .gn3-search-card { display: grid; grid-template-columns: calc(var(--u) * 230) 1fr; }
+.gn3-search .gn3-search-cards.list .gn3-search-card-ph { height: 100%; min-height: calc(var(--u) * 110); }
+.gn3-search .gn3-search-cards.list .gn3-search-card-ph img { position: absolute; inset: 0; }
+.gn3-search .gn3-search-cards.list .gn3-search-card-body { padding-block: calc(var(--u) * 14) calc(var(--u) * 14); }
+.gn3-search .gn3-search-cards.list .gn3-search-heart { right: calc(var(--u) * 10); top: calc(var(--u) * 10); color: #8b8579; filter: none; }
+.gn3-search .gn3-search-cards.list .gn3-search-heart[aria-pressed="true"] { color: #e4574a; }
+.gn3-search .gn3-search-cards.list .gn3-search-card-body h3 { font-size: calc(var(--u) * 17); }
+
+/* ───────── スマホ(≤768px / 横持ちの低い画面) ─────────
+   縦に積む・本文 14px 以上・押す所 44px 以上・横スクロール無し。
+   ヒーローは写真(暖簾の布は白紙)の上に暖簾の文を見出しとして重ねる。縦書きの文は横書きの小さな 1 行に。
+   料理の暖簾・エリアの暖簾は、同じ画像を background の切り出しで 1 枚ずつ表示する(2 列 / 4 列)。 */
+@media (max-width: 768px), (orientation: landscape) and (max-height: 500px) {
+  .gn3-search .gn3-search-in { width: 100%; margin: 0; padding-inline: 16px; }
+
+  /* ヒーロー */
+  .gn3-search .gn3-search-hero { height: auto; background: #120a05; padding-bottom: 20px; }
+  .gn3-search .gn3-search-hero .gn3-search-in { display: flex; flex-direction: column; gap: 16px; height: auto; padding-block: 28px 0; }
+  .gn3-search .gn3-search-herobg { position: absolute; inset: 0; width: 100%; height: 100%; z-index: 0; }
+  .gn3-search .gn3-search-herobg img { object-position: 60% 30%; }
+  .gn3-search .gn3-search-herobg::after { content: ""; position: absolute; inset: 0; background: linear-gradient(to bottom, rgba(14, 7, 3, .45), rgba(14, 7, 3, .78)); }
+  .gn3-search .gn3-search-hero .gn3-search-in > *:not(.gn3-search-herobg) { position: relative; inset: auto; z-index: 1; }
+  .gn3-search .gn3-search-nlogo, .gn3-search .gn3-search-lantern { display: none; }
+  .gn3-search .gn3-search-ncopy { position: static; order: 1; font-size: 27px; line-height: 1.5; letter-spacing: .06em; color: #f8f1e4; text-shadow: 0 2px 12px rgba(0, 0, 0, .6); }
+  .gn3-search .gn3-search-vert { position: static; order: 2; width: auto; height: auto; writing-mode: horizontal-tb; font-size: 15px; line-height: 1.7; letter-spacing: .1em; margin-top: -6px; text-shadow: 0 1px 8px rgba(0, 0, 0, .7); }
+  .gn3-search .gn3-search-vert span { display: inline; }
+  .gn3-search .gn3-search-stats { position: static; order: 3; display: flex; justify-content: space-between; gap: 6px; pointer-events: auto; }
+  .gn3-search .gn3-search-stat { position: relative; inset: auto; flex: 1; display: grid; grid-template-columns: 26px auto; grid-template-areas: "ic n" "ic l"; column-gap: 8px; align-items: center; justify-content: center; }
+  .gn3-search .gn3-search-stat .gn3-search-stat-ic { position: static; grid-area: ic; width: 26px; height: 24px; }
+  .gn3-search .gn3-search-stat .gn3-search-stat-n { position: static; grid-area: n; font-size: 24px; line-height: 1.1; align-self: end; }
+  .gn3-search .gn3-search-stat .gn3-search-stat-l { position: static; grid-area: l; font-size: 14px; line-height: 1.2; align-self: start; }
+  .gn3-search .gn3-search-stat-sep { display: none; }
+
+  .gn3-search .gn3-search-box { position: static; order: 4; width: 100%; height: auto; display: flex; flex-direction: column; gap: 8px; padding: 8px; border-radius: 10px; }
+  .gn3-search .gn3-search-input { position: relative; left: auto; top: auto; width: 100%; height: 52px; }
+  .gn3-search .gn3-search-input-ic { left: 14px; top: 15px; width: 22px; height: 22px; }
+  .gn3-search .gn3-search-input input { left: 48px; width: calc(100% - 58px); font-size: 16px; letter-spacing: .04em; }
+  .gn3-search .gn3-search-go { position: static; width: 100%; height: 48px; font-size: 16px; }
+
+  .gn3-search .gn3-search-filters { position: static; order: 5; width: 100%; height: auto; display: flex; flex-direction: column; gap: 10px; padding: 12px; border-radius: 10px; }
+  .gn3-search .gn3-search-sel { position: relative; left: auto; top: auto; width: 100%; height: 64px; border-radius: 8px; }
+  .gn3-search .gn3-search-sel.s1, .gn3-search .gn3-search-sel.s2, .gn3-search .gn3-search-sel.s3 { left: auto; width: 100%; }
+  .gn3-search .gn3-search-sel-ic.pin { left: 18px; top: 18px; width: 20px; height: 27px; }
+  .gn3-search .gn3-search-sel-ic.bowl { left: 14px; top: 17px; width: 36px; height: 29px; }
+  .gn3-search .gn3-search-sel-ic.ppl { left: 14px; top: 18px; width: 34px; height: 28px; }
+  .gn3-search .gn3-search-sel.s1 .gn3-search-sel-t, .gn3-search .gn3-search-sel.s2 .gn3-search-sel-t, .gn3-search .gn3-search-sel.s3 .gn3-search-sel-t { left: 62px; }
+  .gn3-search .gn3-search-sel-t b { top: 10px; font-size: 15px; line-height: 20px; }
+  .gn3-search .gn3-search-sel-t i { top: 34px; font-size: 14px; line-height: 20px; gap: 4px; }
+  .gn3-search .gn3-search-tri { width: 8px; height: 6px; }
+  .gn3-search .gn3-search-sel-chev { right: 18px; top: 28px; width: 13px; height: 9px; }
+  .gn3-search .gn3-search-clear { position: static; align-self: flex-start; height: 44px; gap: 10px; padding-inline: 4px; }
+  .gn3-search .gn3-search-clear-ic { width: 18px; height: 18px; }
+  .gn3-search .gn3-search-clear span { font-size: 14px; line-height: 18px; padding-bottom: 3px; margin-top: 0; border-bottom-width: 1.3px; }
+
+  /* 見出しと「すべて見る」 */
+  .gn3-search .gn3-search-ryo, .gn3-search .gn3-search-area { height: auto; }
+  .gn3-search .gn3-search-ryo .gn3-search-in, .gn3-search .gn3-search-area .gn3-search-in { height: auto; }
+  .gn3-search .gn3-search-ryo .gn3-search-in { padding-block: 24px 22px; }
+  .gn3-search .gn3-search-ryo-head, .gn3-search .gn3-search-area-head { display: flex; flex-wrap: wrap; align-items: baseline; gap: 2px 12px; margin-bottom: 14px; }
+  .gn3-search .gn3-search-ryo-head h2, .gn3-search .gn3-search-area-head h2, .gn3-search .gn3-search-res-head h2 { position: static; font-size: 22px; line-height: 1.4; letter-spacing: .06em; }
+  .gn3-search .gn3-search-ryo-head p, .gn3-search .gn3-search-area-head p { position: static; flex-basis: 100%; order: 3; font-size: 14px; line-height: 1.6; letter-spacing: .06em; white-space: normal; }
+  .gn3-search .gn3-search-more, .gn3-search .gn3-search-ryo-head .gn3-search-more, .gn3-search .gn3-search-area-head .gn3-search-more { position: static; margin-left: auto; height: auto; min-height: 44px; font-size: 14px; letter-spacing: .06em; gap: 8px; }
+  .gn3-search .gn3-search-more svg { width: 16px; }
+
+  /* 料理の暖簾(2 列) */
+  .gn3-search .gn3-search-genres { position: static; width: 100%; height: auto; display: grid; grid-template-columns: repeat(2, 1fr); gap: 10px; }
+  .gn3-search .gn3-search-genre { position: relative; left: auto; top: auto; width: 100%; height: auto; aspect-ratio: var(--gw) / 200; }
+  .gn3-search .gn3-search-genre:last-child { grid-column: 1 / -1; width: calc(50% - 5px); margin-inline: auto; }
+  .gn3-search .gn3-search-genre-l { font-size: max(14px, calc(15 / var(--gw) * 100cqw)); }
+
+  /* エリアの暖簾(4 列。背景写真は使わず、暖簾 1 枚ずつ切り出す) */
+  .gn3-search .gn3-search-area { background: linear-gradient(to bottom, #0c1622, #0a1019); }
+  .gn3-search .gn3-search-areabg { display: none; }
+  .gn3-search .gn3-search-area .gn3-search-in { padding-block: 24px 24px; }
+  .gn3-search .gn3-search-area-head h2 { color: #f4efe5; }
+  .gn3-search .gn3-search-norens { position: static; display: grid; grid-template-columns: repeat(4, 1fr); gap: 8px; }
+  .gn3-search .gn3-search-noren { position: relative; left: auto; top: auto; width: 100%; height: auto; aspect-ratio: 90 / 150; container-type: inline-size; background-image: url("/_portal/gnoren3/search/area.webp"); background-repeat: no-repeat; background-size: 1206.7% auto; background-position: calc((var(--ncx) - 45) / 996 * 100%) 85.9%; border-radius: 4px; overflow: hidden; }
+  .gn3-search .gn3-search-noren-l { top: 44%; font-size: max(14px, 17cqw); }
+  .gn3-search .gn3-search-noren-ar { top: 82.7%; width: 26cqw; height: 26cqw; min-width: 24px; min-height: 24px; }
+
+  /* 検索結果 */
+  .gn3-search .gn3-search-res { padding-bottom: 36px; background: none; }
+  .gn3-search .gn3-search-res .gn3-search-in { padding-top: 26px; }
+  .gn3-search .gn3-search-res-head { position: static; width: 100%; height: auto; display: flex; flex-wrap: wrap; align-items: baseline; gap: 2px 12px; margin-bottom: 14px; }
+  .gn3-search .gn3-search-res-head > p { position: static; font-size: 14px; line-height: 1.6; letter-spacing: .06em; white-space: normal; }
+  .gn3-search .gn3-search-tools { position: static; flex-basis: 100%; display: flex; align-items: center; gap: 10px; margin-top: 8px; }
+  .gn3-search .gn3-search-sort { flex: 1; display: flex; align-items: center; gap: 10px; }
+  .gn3-search .gn3-search-sort > span:first-child { position: static; font-size: 14px; letter-spacing: .06em; }
+  .gn3-search .gn3-search-sortbox { position: relative; left: auto; top: auto; flex: 1; width: auto; max-width: 220px; height: 44px; border-radius: 8px; }
+  .gn3-search .gn3-search-sortbox > span { left: 14px; font-size: 15px; }
+  .gn3-search .gn3-search-sortchev { right: 14px; top: 18px; width: 12px; height: 8px; }
+  .gn3-search .gn3-search-views { display: flex; gap: 4px; }
+  .gn3-search .gn3-search-views button, .gn3-search .gn3-search-views button:nth-child(1), .gn3-search .gn3-search-views button:nth-child(2) { position: relative; left: auto; top: auto; width: 44px; height: 44px; padding: 11px; }
+  .gn3-search .gn3-search-views button::before { display: none; }
+
+  .gn3-search .gn3-search-cards, .gn3-search .gn3-search-cards.list { margin: 0; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 14px; }
+  .gn3-search .gn3-search-cards.list { grid-template-columns: 1fr; }
+  .gn3-search .gn3-search-cards.grid > li:nth-child(n) { grid-column: auto; }
+  .gn3-search .gn3-search-card { border-radius: 8px; }
+  .gn3-search .gn3-search-card-ph { height: auto; aspect-ratio: 240 / 117.5; }
+  .gn3-search .gn3-search-chip { left: 10px; top: 10px; height: 26px; min-width: 0; padding-inline: 11px; font-size: 13px; border-radius: 3px; }
+  .gn3-search .gn3-search-heart { right: 4px; top: 4px; width: 44px; height: 44px; }
+  .gn3-search .gn3-search-heart svg { width: 24px; height: 22px; }
+  .gn3-search .gn3-search-card-body { padding: 10px 14px 14px; }
+  .gn3-search .gn3-search-card-body h3 { font-size: 18px; line-height: 1.5; letter-spacing: .05em; }
+  .gn3-search .gn3-search-st { margin-top: 2px; gap: 8px; font-size: 14px; line-height: 1.6; white-space: normal; }
+  .gn3-search .gn3-search-st svg { width: 11px; height: 14px; }
+  .gn3-search .gn3-search-ds { margin-top: 4px; font-size: 14px; line-height: 1.7; letter-spacing: .03em; white-space: normal; }
+  .gn3-search .gn3-search-tags { margin-top: 10px; gap: 6px; flex-wrap: wrap; overflow: visible; }
+  .gn3-search .gn3-search-tags li { height: 30px; padding-inline: 10px; font-size: 13px; letter-spacing: .03em; border-radius: 4px; }
+  .gn3-search .gn3-search-tags { gap: 6px !important; }
+
+  .gn3-search .gn3-search-cards.list .gn3-search-card { grid-template-columns: 112px 1fr; }
+  .gn3-search .gn3-search-cards.list .gn3-search-card-ph { aspect-ratio: auto; height: 100%; min-height: 150px; }
+  .gn3-search .gn3-search-cards.list .gn3-search-card-body { padding: 12px 12px 12px 14px; }
+  .gn3-search .gn3-search-cards.list .gn3-search-card-body h3 { font-size: 16px; }
+  .gn3-search .gn3-search-cards.list .gn3-search-heart { right: 2px; top: 2px; }
+  .gn3-search .gn3-search-cards.list .gn3-search-chip { left: 6px; top: 6px; font-size: 12px; height: 22px; padding-inline: 7px; min-width: 0; }
+  .gn3-search .gn3-search-empty { margin: 20px 0 0; padding: 40px 0; font-size: 15px; }
+}
