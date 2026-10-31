@@ -8,7 +8,6 @@ import { absUrl } from "@/lib/seo/util";
 import { VERTICALS } from "@/lib/verticals";
 import { editorialPaths } from "@/components/portal/activity/pages";
 
-export const revalidate = 3600;
 
 // 共通のサイトマップ(最初・エリア・種類・利用シーン・店のページ)に、/activity/search(探す)・/activity/shop(店舗紹介の一覧)・/activity/article(特集)・
 // 記事のページ /activity/article/{id}(店の特集記事・紹介記事の本文がある店だけ。articleIds)と、季節・読みもの・ガイドの記事(/activity/article/season/{id}・magazine/{id}・guide)を足す。特集の旧 URL(/activity/feature/{id})は記事ページへの転送なので載せない。

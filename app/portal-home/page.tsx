@@ -20,8 +20,9 @@ export const metadata: Metadata = {
   robots: { index: true, follow: true },
 };
 
-// 見た目は components/portal/hproto/homeDesign.tsx で選ぶ（今は見本4・丸い切り抜き。前の「まち」改 machi2 は季節を日本時間の今日の月で決めるので、1 時間ごとに作り直す revalidate はそのために残してある）。
-export const revalidate = 3600;
+// 見た目は components/portal/hproto/homeDesign.tsx で選ぶ（今は見本4・下半分を変えた版 p4lower。今の日時で中身が変わる部分は無いので、時間での作り直し revalidate は付けない）。
+// 新着・新しい店は DB の店・特集から作るので、管理画面で保存したとき /api/revalidate が /portal-home(= URL の `/`)を作り直す(lib/revalidatePlan.ts)。
+// 前の「まち」改 machi2 は季節を日本時間の今日の月で決めるので、homeDesign.tsx を machi2 に戻すときは、ここに revalidate(1 時間など)を足すこと。
 
 export default async function Page() {
   return <HomePage />;

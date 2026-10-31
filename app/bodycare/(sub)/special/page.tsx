@@ -12,7 +12,6 @@ import type { SpecialCardItem } from "@/components/portal/bcproto/green/article/
 
 // 業種の特集記事の一覧(/bodycare/special)。静的なページ(件数ゲートの対象外。サイトマップには app/bodycare/(sub)/sitemap.ts で足している)。
 // 公開スイッチ OFF のあいだは 404(assertPortalLive)。見た目は案4 の記事の型。
-export const revalidate = 3600;
 
 const PATH = "/bodycare/special";
 const TITLE = "ボディケアの特集｜マチノワ ボディケア";

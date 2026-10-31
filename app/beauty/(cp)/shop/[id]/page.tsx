@@ -8,7 +8,6 @@ import { BEAUTY_SITE } from "@/lib/portal/colorplay/site";
 const common = shopPage("beauty");
 const cp = cpShopPage(BEAUTY_SITE);
 
-export const revalidate = 3600;
 export const dynamicParams = true;
 export const generateStaticParams = common.generateStaticParams;
 export const generateMetadata = withUnlisted(common.generateMetadata);

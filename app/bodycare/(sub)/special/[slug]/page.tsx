@@ -12,7 +12,6 @@ import { VERTICALS } from "@/lib/verticals";
 
 // 業種の特集記事 3 本(/bodycare/special/<difference|choose|weekend>)。静的な 3 本だけ(それ以外の slug は 404)。
 // 静的なページなので件数ゲートの対象外。JSON-LD は BreadcrumbList と Article(著者 マチノワ編集部。星・評価は無い)。
-export const revalidate = 3600;
 export const dynamicParams = false;
 export const generateStaticParams = () => SPECIALS.map((s) => ({ slug: s.slug }));
 

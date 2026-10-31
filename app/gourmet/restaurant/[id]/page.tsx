@@ -29,8 +29,8 @@ const BASE = "https://machinowa.tokyo";
 // このパスを直接開くと /restaurant/<id> へ恒久リダイレクトする（next.config.ts の redirects）。canonical も /restaurant/<id>。
 // 枠は app/gourmet/layout.tsx（暖簾）、中身は components/portal/pages/gourmet-noren-shop.tsx（見本 /proto-noren/restaurant/[id] と共通）。
 // メタ情報・構造化データは今の app/restaurant/[id]/page.tsx と同じ値（同じ関数）。今のページのファイルは変えていない。
-// 描画の方式も今の店ページと同じ（公開ページは Supabase が真の source-of-truth。60 秒ごとに ISR で再生成）。
-export const revalidate = 60;
+// 描画の方式は ISR（公開ページは Supabase が真の source-of-truth）。時間での作り直し(revalidate)は付けず、管理画面で保存したとき
+// /api/revalidate が作り直す(書き換え後のパス /gourmet/restaurant/<id> も対象。lib/revalidatePlan.ts)。DB を直接書き換えた場合は再デプロイが要る。
 // generateStaticParams 外の ID も SSR でレスポンス可
 export const dynamicParams = true;
 

@@ -13,7 +13,6 @@ import { VERTICALS } from "@/lib/verticals";
 // 宿の記事(決定デザイン ①。実在の宿 1 軒ずつの紹介記事)。/stay/article/{id}(id = 宿の ID。リンク先の宿ページは /stay/shop/{id})
 // 宿が無い・紹介記事が無い宿は 404(その宿のページ /stay/shop/{id} は残る)。
 // 文は Place.article の事実だけ(articleData.ts)。metadata(title・description・canonical・OGP・robots)は宿のページと同じ作り。
-export const revalidate = 3600;
 export const dynamicParams = true;
 export const generateStaticParams = liveStaticParams(async () => {
   return (await getPlaces("stay")).filter((p) => p.article).map((p) => ({ id: p.id }));

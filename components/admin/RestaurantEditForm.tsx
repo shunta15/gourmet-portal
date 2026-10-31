@@ -144,6 +144,11 @@ export default function RestaurantEditForm({ restaurant }: { restaurant: Restaur
             `/region/${form.region}`,
             "/",
           ],
+          // 新規・公開の切り替え・場所(住所・最寄り・地域・エリア)の変更は、駅エリアの件数・検索などサイト全体に効く
+          scope: isNew || restaurant!.published !== form.published || restaurant!.address !== form.address ||
+            restaurant!.nearest !== form.nearest || restaurant!.region !== form.region || restaurant!.area !== form.area
+            ? "all"
+            : "gourmet",
         }),
       });
     } catch (e) {
@@ -168,6 +173,16 @@ export default function RestaurantEditForm({ restaurant }: { restaurant: Restaur
     if (err) {
       toast.error(`削除失敗: ${err.message}`);
       return;
+    }
+    // 公開ページの ISR キャッシュを即時クリア(削除は件数などサイト全体に効く)
+    try {
+      await fetch("/api/revalidate", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ paths: [`/restaurant/${form.id}`, "/"], scope: "all" }),
+      });
+    } catch (e) {
+      console.warn("revalidate failed:", e);
     }
     toast.success("店舗を削除しました");
     router.push("/admin/restaurants");

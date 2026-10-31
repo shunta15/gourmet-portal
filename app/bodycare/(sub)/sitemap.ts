@@ -9,7 +9,6 @@ import { isIndexable } from "@/lib/seo/gate";
 import { assertPortalLive } from "@/lib/portal/launch";
 import { absUrl } from "@/lib/seo/util";
 
-export const revalidate = 3600;
 
 const base = verticalSitemap("bodycare");
 

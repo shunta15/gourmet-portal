@@ -11,7 +11,6 @@ export const metadata: Metadata = {
   robots: { index: true, follow: true },
 };
 
-export const revalidate = 3600;
 
 export default function Page() {
   return <P4Shop />;

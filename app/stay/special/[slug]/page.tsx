@@ -10,7 +10,6 @@ import { VERTICALS } from "@/lib/verticals";
 
 // ステイの特集記事 1 本(/stay/special/{slug})。lib/specials/stay.json の 3 本だけ(それ以外の slug は 404)。
 // 記事の節に出てくる宿は、店舗紹介ページ(/stay/shop/{id})へのリンク。robots は他の一覧と同じ gate。
-export const revalidate = 3600;
 export const dynamicParams = false;
 export const generateStaticParams = liveStaticParams(() => STAY_SPECIALS.map((s) => ({ slug: s.slug })));
 

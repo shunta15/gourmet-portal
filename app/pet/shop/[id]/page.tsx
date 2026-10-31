@@ -8,7 +8,6 @@ import { petShopPage } from "@/components/portal/petproto/decided/shop/live/Live
 const common = shopPage("pet");
 const live = petShopPage();
 
-export const revalidate = 3600;
 export const dynamicParams = true;
 export const generateStaticParams = common.generateStaticParams;
 export const generateMetadata = withUnlisted(common.generateMetadata);
