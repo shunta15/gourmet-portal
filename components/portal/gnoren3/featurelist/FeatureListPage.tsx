@@ -126,7 +126,8 @@ export default function FeatureListPage() {
         </section>
 
         {/* ───────── 新着の特集記事 ───────── */}
-        <section id="fl-new" className="gn3-fl-sec" aria-labelledby="fl-new-h">
+        <span id="fl-new" className="gn3-fl-anc gn3-fl-p" style={v({ "--y": 745 })} aria-hidden="true" />
+        <section className="gn3-fl-sec" aria-labelledby="fl-new-h">
           <h2 id="fl-new-h" className="gn3-fl-h gn3-fl-p" style={v({ "--x": 50, "--y": 753, "--f": 19 })}>
             <span>新着の特集記事</span>
           </h2>
@@ -151,7 +152,8 @@ export default function FeatureListPage() {
         </section>
 
         {/* ───────── シーンで選ぶ 特集 ───────── */}
-        <section id="fl-scene" className="gn3-fl-sec" aria-labelledby="fl-scene-h">
+        <span id="fl-scene" className="gn3-fl-anc gn3-fl-p" style={v({ "--y": 1033 })} aria-hidden="true" />
+        <section className="gn3-fl-sec" aria-labelledby="fl-scene-h">
           <h2 id="fl-scene-h" className="gn3-fl-h gn3-fl-p" style={v({ "--x": 51, "--y": 1041, "--f": 20 })}>
             <span>シーンで選ぶ</span> <b>特集</b>
           </h2>
@@ -176,7 +178,10 @@ export default function FeatureListPage() {
         <span className="gn3-fl-vline gn3-fl-p" style={v({ "--x": 373.5, "--y": 1255, "--w": 2, "--h": 170 })} aria-hidden="true" />
         <span className="gn3-fl-vline gn3-fl-p" style={v({ "--x": 713.5, "--y": 1255, "--w": 2, "--h": 170 })} aria-hidden="true" />
         {FL_GROUPS.map((g) => (
-          <section key={g.id} id={g.id} className="gn3-fl-sec gn3-fl-grp" aria-labelledby={`${g.id}-h`}>
+          <span key={`${g.id}-anc`} id={g.id} className="gn3-fl-anc gn3-fl-p" style={v({ "--y": 1247 })} aria-hidden="true" />
+        ))}
+        {FL_GROUPS.map((g) => (
+          <section key={g.id} className="gn3-fl-sec gn3-fl-grp" aria-labelledby={`${g.id}-h`}>
             <h2 id={`${g.id}-h`} className="gn3-fl-h gn3-fl-p" style={v({ "--x": g.x, "--y": 1255, "--f": 16 })}>
               <span>{g.title}</span> <b>特集</b>
             </h2>

@@ -39,9 +39,10 @@
 .gn3-top-bleed { position: relative; overflow: hidden; }
 .gn3-top-bleed--hero { background: #0b0604; }
 .gn3-top-bleed--area { background: var(--top-navy-bg); }
-.gn3-top-edge { opacity: .8; position: absolute; top: 0; bottom: 0; background-size: 100% 100%; background-repeat: no-repeat; pointer-events: none; }
-.gn3-top-edge--l { left: 0; width: calc((100% - var(--u) * 1086) / 2); -webkit-mask-image: linear-gradient(to right, transparent 0, #000 75%); mask-image: linear-gradient(to right, transparent 0, #000 75%); }
-.gn3-top-edge--r { right: 0; width: calc((100% - var(--u) * 1086) / 2); -webkit-mask-image: linear-gradient(to left, transparent 0, #000 75%); mask-image: linear-gradient(to left, transparent 0, #000 75%); }
+/* 1440px より広い画面の左右: 写真の端 8px を引き伸ばした縞が出るので、ぼかして暗くし、外へ向かって暗い地になじませる(内側 24px は写真の下に潜らせてぼかしの縁を隠す) */
+.gn3-top-edge { opacity: .9; position: absolute; top: 0; bottom: 0; background-size: 100% 100%; background-repeat: no-repeat; pointer-events: none; filter: blur(18px) brightness(.55) saturate(.85); }
+.gn3-top-edge--l { left: 0; width: calc((100% - var(--u) * 1086) / 2 + 24px); -webkit-mask-image: linear-gradient(to right, transparent 0, #000 85%); mask-image: linear-gradient(to right, transparent 0, #000 85%); }
+.gn3-top-edge--r { right: 0; width: calc((100% - var(--u) * 1086) / 2 + 24px); -webkit-mask-image: linear-gradient(to left, transparent 0, #000 85%); mask-image: linear-gradient(to left, transparent 0, #000 85%); }
 
 .gn3-top-hero, .gn3-top-area, .gn3-top-in { position: relative; width: calc(var(--u) * 1086); margin-inline: auto; }
 .gn3-top-hero { height: calc(var(--u) * var(--h)); }
@@ -117,7 +118,7 @@
 
 /* ───────── スマホ(≤768px)─────────
  * 縦に積む。本文 14px 以上・押す所 44px 以上・横スクロール無し。--u は 1px(ヒーローと料理カードだけ局所的に再定義) */
-@media (max-width: 768px) {
+@media (max-width: 768px), (orientation: landscape) and (max-height: 500px) {
   .gn3-top { --top-pad: 16px; }
   .gn3-top a { -webkit-tap-highlight-color: transparent; }
 

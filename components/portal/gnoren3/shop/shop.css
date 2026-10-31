@@ -37,7 +37,7 @@
   background: linear-gradient(180deg, rgba(150, 120, 84, .42), rgba(150, 120, 84, .16) 35%, rgba(150, 120, 84, 0)); }
 
 /* 絶対配置(PC)。--l/--t/--w/--h = 見本の画素。--o = 文字の上の余白(字の上端に合わせて引く) */
-@media (min-width: 769px) {
+@media (min-width: 769px) and (min-height: 501px), (min-width: 769px) and (orientation: portrait) {
   .gn3-shop-a { position: absolute; left: calc(var(--u) * (var(--l) - var(--dx, 0))); top: calc(var(--u) * (var(--t) - var(--o, 0))); width: calc(var(--u) * var(--w)); height: calc(var(--u) * var(--h)); }
   .gn3-shop-hero { height: calc(var(--u) * 371); }
   .gn3-shop-info { height: calc(var(--u) * 130); }
@@ -177,7 +177,7 @@
 }
 
 /* ───── スマホ(≤768px): 縦に積む・本文 14px 以上・押す所 44px 以上・横スクロール無し ───── */
-@media (max-width: 768px) {
+@media (max-width: 768px), (orientation: landscape) and (max-height: 500px) {
   .gn3-shop-in { width: 100%; height: auto; padding-inline: 16px; }
   .gn3-shop-sec::before { height: 10px; }
   .gn3-shop-bn { --bu: 1.1px; margin-inline: auto; }

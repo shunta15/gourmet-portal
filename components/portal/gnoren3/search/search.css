@@ -250,8 +250,8 @@
   .gn3-search .gn3-search-more svg { width: 16px; }
 
   /* 料理の暖簾(2 列) */
-  .gn3-search .gn3-search-genres { position: static; width: 100%; height: auto; display: grid; grid-template-columns: repeat(2, 1fr); gap: 10px; }
-  .gn3-search .gn3-search-genre { position: relative; left: auto; top: auto; width: 100%; height: auto; aspect-ratio: var(--gw) / 200; }
+  .gn3-search .gn3-search-genres { position: static; width: 100%; height: auto; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; }
+  .gn3-search .gn3-search-genre { min-width: 0; position: relative; left: auto; top: auto; width: 100%; height: auto; aspect-ratio: var(--gw) / 200; }
   .gn3-search .gn3-search-genre:last-child { grid-column: 1 / -1; width: calc(50% - 5px); margin-inline: auto; }
   .gn3-search .gn3-search-genre-l { font-size: max(14px, calc(15 / var(--gw) * 100cqw)); }
 
@@ -285,16 +285,18 @@
   .gn3-search .gn3-search-cards.grid > li:nth-child(n) { grid-column: auto; }
   .gn3-search .gn3-search-card { border-radius: 8px; }
   .gn3-search .gn3-search-card-ph { height: auto; aspect-ratio: 240 / 117.5; }
-  .gn3-search .gn3-search-chip { left: 10px; top: 10px; height: 26px; min-width: 0; padding-inline: 11px; font-size: 13px; border-radius: 3px; }
+  .gn3-search .gn3-search-chip { left: 10px; top: 10px; height: 28px; min-width: 0; padding-inline: 11px; font-size: 14px; border-radius: 3px; }
   .gn3-search .gn3-search-heart { right: 4px; top: 4px; width: 44px; height: 44px; }
   .gn3-search .gn3-search-heart svg { width: 24px; height: 22px; }
   .gn3-search .gn3-search-card-body { padding: 10px 14px 14px; }
   .gn3-search .gn3-search-card-body h3 { font-size: 18px; line-height: 1.5; letter-spacing: .05em; }
+  /* 名前のリンクは押せる高さ 44px 以上(見た目の行高は変えない) */
+  .gn3-search .gn3-search-card-body h3 a { display: block; overflow: hidden; text-overflow: ellipsis; padding-block: 9px; margin-block: -9px; }
   .gn3-search .gn3-search-st { margin-top: 2px; gap: 8px; font-size: 14px; line-height: 1.6; white-space: normal; }
   .gn3-search .gn3-search-st svg { width: 11px; height: 14px; }
   .gn3-search .gn3-search-ds { margin-top: 4px; font-size: 14px; line-height: 1.7; letter-spacing: .03em; white-space: normal; }
   .gn3-search .gn3-search-tags { margin-top: 10px; gap: 6px; flex-wrap: wrap; overflow: visible; }
-  .gn3-search .gn3-search-tags li { height: 30px; padding-inline: 10px; font-size: 13px; letter-spacing: .03em; border-radius: 4px; }
+  .gn3-search .gn3-search-tags li { height: 30px; padding-inline: 10px; font-size: 14px; letter-spacing: .03em; border-radius: 4px; }
   .gn3-search .gn3-search-tags { gap: 6px !important; }
 
   .gn3-search .gn3-search-cards.list .gn3-search-card { grid-template-columns: 112px 1fr; }
@@ -302,6 +304,6 @@
   .gn3-search .gn3-search-cards.list .gn3-search-card-body { padding: 12px 12px 12px 14px; }
   .gn3-search .gn3-search-cards.list .gn3-search-card-body h3 { font-size: 16px; }
   .gn3-search .gn3-search-cards.list .gn3-search-heart { right: 2px; top: 2px; }
-  .gn3-search .gn3-search-cards.list .gn3-search-chip { left: 6px; top: 6px; font-size: 12px; height: 22px; padding-inline: 7px; min-width: 0; }
+  .gn3-search .gn3-search-cards.list .gn3-search-chip { left: 6px; top: 6px; font-size: 14px; height: 24px; padding-inline: 7px; min-width: 0; }
   .gn3-search .gn3-search-empty { margin: 20px 0 0; padding: 40px 0; font-size: 15px; }
 }

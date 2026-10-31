@@ -168,5 +168,5 @@ body:has(.gn3-root) > .cursor-dot, body:has(.gn3-root) > .cursor-ring { display:
   .gn3-foot-tag { flex-basis: 100%; border-left: 0; padding-left: 0; font-size: 14px; white-space: normal; }
   .gn3-foot-nav { margin-left: 0; flex-wrap: wrap; gap: 4px 22px; font-size: 15px; }
   .gn3-foot-nav a { min-height: 44px; min-width: 44px; padding-inline: 4px; display: inline-flex; align-items: center; justify-content: center; }
-  .gn3-foot-copy { font-size: 12px; }
+  .gn3-foot-copy { font-size: 14px; }
 }

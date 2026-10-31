@@ -27,6 +27,7 @@ html:has(.gn3-fl) { scroll-behavior: smooth; }
 .gn3-fl-sec, .gn3-fl-feat, .gn3-fl-tags, .gn3-fl-new, .gn3-fl-scene, .gn3-fl-bot, .gn3-fl-side, .gn3-fl-side-i { display: contents; }
 .gn3-fl-p { position: absolute; left: calc(var(--u) * var(--x, 0)); top: calc(var(--u) * (var(--y, 0) - 55)); width: calc(var(--u) * var(--w)); height: calc(var(--u) * var(--h)); }
 .gn3-fl-r { position: absolute; left: calc(var(--u) * var(--x, 0)); top: calc(var(--u) * var(--y, 0)); width: calc(var(--u) * var(--w)); height: calc(var(--u) * var(--h)); }
+.gn3-fl-anc { display: block; width: 0; height: 0; pointer-events: none; }
 .gn3-fl-ln { display: block; white-space: nowrap; }
 
 /* ───────── ヒーロー ───────── */
@@ -121,6 +122,7 @@ html:has(.gn3-fl) { scroll-behavior: smooth; }
   .gn3-fl-side-i { display: block; }
   .gn3-fl-p, .gn3-fl-r { position: static; left: auto; top: auto; width: auto; height: auto; }
   .gn3-fl-ln { white-space: normal; }
+  .gn3-fl-anc { scroll-margin-top: 64px; }
   .gn3-fl-vline, .gn3-fl-hair, .gn3-fl-lead-arrow { display: none; }
 
   /* ヒーロー: 写真の中ほど(真ん中の暖簾 2 枚)を見せ、「特集」だけ重ねる。左右の言葉は下の帯に */
@@ -173,22 +175,22 @@ html:has(.gn3-fl) { scroll-behavior: smooth; }
   .gn3-fl-side-i { border-bottom: 1px solid rgba(70, 50, 30, .16); }
   .gn3-fl-side-a { position: relative; left: auto; top: auto; width: auto; height: auto; display: grid; grid-template-columns: 112px 1fr; grid-template-areas: "img badge" "img title" "img desc" "img date"; grid-template-rows: auto auto 1fr auto; column-gap: 14px; row-gap: 4px; padding: 16px 0; min-height: 44px; }
   .gn3-fl-side-img { position: static; grid-area: img; width: 112px; height: 100%; min-height: 112px; max-height: 150px; object-fit: cover; }
-  .gn3-fl-side-badge { position: static; grid-area: badge; width: 44px; height: 22px; font-size: 12px; }
+  .gn3-fl-side-badge { position: static; grid-area: badge; width: 44px; height: 22px; font-size: 14px; }
   .gn3-fl-side-title { position: static; grid-area: title; font-size: 16px; line-height: 1.5; letter-spacing: .03em; }
   .gn3-fl-side-desc { position: static; grid-area: desc; font-size: 14px; line-height: 1.65; letter-spacing: .03em; }
   .gn3-fl-side-desc .gn3-fl-ln { display: inline; }
-  .gn3-fl-side-date { position: static; grid-area: date; font-size: 12px; line-height: 1.4; letter-spacing: .08em; }
+  .gn3-fl-side-date { position: static; grid-area: date; font-size: 14px; line-height: 1.4; letter-spacing: .08em; }
 
   /* 新着: 1 列(幅が広ければ 2 列) */
   .gn3-fl-new { grid-template-columns: repeat(auto-fill, minmax(min(100%, 280px), 1fr)); gap: 16px; margin-top: 14px; }
   .gn3-fl-card { position: static; }
   .gn3-fl-card-a { display: block; padding-bottom: 18px; min-height: 44px; }
   .gn3-fl-card-img { position: static; width: 100%; height: auto; aspect-ratio: 3 / 2; }
-  .gn3-fl-chip { position: static; display: inline-flex; margin: 14px 0 0 16px; height: auto; padding: 2px 6px; font-size: 12px; line-height: 1.5; }
+  .gn3-fl-chip { position: static; display: inline-flex; margin: 14px 0 0 16px; height: auto; padding: 2px 6px; font-size: 14px; line-height: 1.5; }
   .gn3-fl-card-title { position: static; display: block; margin: 8px 16px 0; font-size: 18px; line-height: 1.5; letter-spacing: .04em; white-space: normal; }
   .gn3-fl-card-desc { position: static; display: block; margin: 8px 16px 0; font-size: 14px; line-height: 1.7; letter-spacing: .05em; white-space: normal; }
   .gn3-fl-card-desc .gn3-fl-ln { display: inline; }
-  .gn3-fl-card-date { position: static; display: block; margin: 10px 16px 0; font-size: 12px; line-height: 1.4; letter-spacing: .08em; }
+  .gn3-fl-card-date { position: static; display: block; margin: 10px 16px 0; font-size: 14px; line-height: 1.4; letter-spacing: .08em; }
 
   /* シーン: 1 列 */
   .gn3-fl-scene { grid-template-columns: 1fr; gap: 14px; margin-top: 14px; }
@@ -199,7 +201,7 @@ html:has(.gn3-fl) { scroll-behavior: smooth; }
   .gn3-fl-scene-title { font-size: 22px; line-height: 1.4; letter-spacing: .06em; }
   .gn3-fl-scene-desc { margin-top: 6px; font-size: 14px; line-height: 1.65; letter-spacing: .05em; }
   .gn3-fl-scene-desc .gn3-fl-ln { display: inline; }
-  .gn3-fl-scene-count { margin-top: 6px; font-size: 13px; line-height: 1.4; letter-spacing: .06em; }
+  .gn3-fl-scene-count { margin-top: 6px; font-size: 14px; line-height: 1.4; letter-spacing: .06em; }
 
   /* 下段: 見出しごとに縦へ積み、各 3 枚は横に並べる */
   .gn3-fl-grp { margin-top: 36px; }
@@ -208,7 +210,7 @@ html:has(.gn3-fl) { scroll-behavior: smooth; }
   .gn3-fl-bot-a { display: flex; flex-direction: column; justify-content: flex-end; aspect-ratio: 100 / 135; min-height: 150px; padding: 10px 10px 12px; }
   .gn3-fl-bot-title, .gn3-fl-bot-count { position: relative; left: auto; top: auto; white-space: normal; }
   .gn3-fl-bot-title { font-size: 14px; line-height: 1.4; letter-spacing: .04em; }
-  .gn3-fl-bot-count { margin-top: 4px; font-size: 12px; line-height: 1.4; }
+  .gn3-fl-bot-count { margin-top: 4px; font-size: 14px; line-height: 1.4; }
 }
 @media (max-width: 380px) {
   .gn3-fl-bot-title { letter-spacing: 0; }
