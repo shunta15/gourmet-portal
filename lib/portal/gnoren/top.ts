@@ -41,8 +41,25 @@ export type TopData = {
   sceneTotal: number;
 };
 
-/** 店の宣伝の文字が焼き込まれた写真(札の主役にしない。その店は次の写真を使う)。「2024 出場!」入り = 手羽先サミットの告知画像 */
-const TEXT_BAKED_PHOTOS: ReadonlySet<string> = new Set(["/restaurants/r36/r36-image-1.jpg"]);
+/**
+ * 札の主役にしない写真 = 宣伝・看板の文字が焼き込まれたもの(その店は次の写真を使う)。1086 幅のスクリーンショットで目視して確認した分。
+ * - r36-image-1: 「2024 出場!」入り(手羽先サミットの告知画像)
+ * - r09-hero: 「雄火屋 OBIYA」の宣伝画像(エリア 福岡)
+ * - r75-01: 看板のネオンに電話番号の数字が読める(エリア 神戸・兵庫)
+ * - kitsune-storefront-night / r07-storefront: 店名の看板が大きく読める外観(料理 和食・中華)
+ */
+const TEXT_BAKED_PHOTOS: ReadonlySet<string> = new Set([
+  "/restaurants/r36/r36-image-1.jpg",
+  "/restaurants/r09/r09-hero.jpg",
+  "/restaurants/r75/r75-01.jpg",
+  "/restaurants/kitsune-storefront-night.jpg",
+  "/restaurants/r07/r07-storefront.jpg",
+]);
+
+/** 食べログの写真は使わない。共通の判定(isUsableFeatureImage)は URL に "tabelog" を含むものだけを除くため、食べログの画像サーバー(tblg.k-img.com)が通ってしまう */
+const isTabelogCdn = (u: string): boolean => u.includes("k-img.com");
+
+const isUsableTopPhoto = (u: string): boolean => !TEXT_BAKED_PHOTOS.has(u) && !isTabelogCdn(u);
 
 /** 店 ID(r6・r06・r299 …)を数字で並べるための番号。数字が取れなければ最後 */
 const idNo = (id: string): number => {
@@ -82,7 +99,7 @@ export async function buildTopData(): Promise<TopData> {
   const shops = [...all].sort((a, b) => idNo(a.id) - idNo(b.id) || a.id.localeCompare(b.id));
   const photos = new Map<string, string>();
   for (const r of shops) {
-    const p = allShopPhotos(r).find((u) => !TEXT_BAKED_PHOTOS.has(u));
+    const p = allShopPhotos(r).find(isUsableTopPhoto);
     if (p) photos.set(r.id, p);
   }
 

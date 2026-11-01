@@ -21,7 +21,7 @@
 .gn-top-scene-ph { background: var(--gn-linen); }
 
 /* スマホ: 札の説明・統計の小見出しは 14px 以上(real/README「スマホの文字の大きさ」) */
-@media (max-width: 768px) {
+@media (max-width: 768px), (orientation: landscape) and (max-height: 500px) {
   .gn-top-stat-sub { font-size: 14px; }
   .gn-top-fcard-s { font-size: 14px; }
   .gn-top-scene-d { font-size: 14px; }
