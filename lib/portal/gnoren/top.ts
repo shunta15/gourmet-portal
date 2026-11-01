@@ -41,6 +41,9 @@ export type TopData = {
   sceneTotal: number;
 };
 
+/** 店の宣伝の文字が焼き込まれた写真(札の主役にしない。その店は次の写真を使う)。「2024 出場!」入り = 手羽先サミットの告知画像 */
+const TEXT_BAKED_PHOTOS: ReadonlySet<string> = new Set(["/restaurants/r36/r36-image-1.jpg"]);
+
 /** 店 ID(r6・r06・r299 …)を数字で並べるための番号。数字が取れなければ最後 */
 const idNo = (id: string): number => {
   const m = /(\d+)/.exec(id);
@@ -79,7 +82,7 @@ export async function buildTopData(): Promise<TopData> {
   const shops = [...all].sort((a, b) => idNo(a.id) - idNo(b.id) || a.id.localeCompare(b.id));
   const photos = new Map<string, string>();
   for (const r of shops) {
-    const p = allShopPhotos(r)[0];
+    const p = allShopPhotos(r).find((u) => !TEXT_BAKED_PHOTOS.has(u));
     if (p) photos.set(r.id, p);
   }
 
