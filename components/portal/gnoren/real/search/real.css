@@ -1,0 +1,113 @@
+/* さがす(real/search)の追加分。試作 search/search.css は import して使い、実データで必要な分だけ足す(接頭辞 gn-search-r-)。 */
+
+/* 結果の領域を読み込む前(useSearchParams の Suspense)に、高さを取っておく(フッターが一瞬上に見えて押し下げられるのを防ぐ) */
+.gn-search-r-skel { height: calc(var(--u) * 1100); }
+
+/* 入れ子の gn-search(クライアントの絞り込み + 結果)。幅は親と同じ */
+.gn-search-r-inner { margin-inline: auto; }
+
+/* ───── エリアの「ほかの地域」の select(エリアの丸の左・見出しの下) ───── */
+.gn-search-r-lab2 { top: calc(var(--u) * 206); }
+.gn-search-r-region { position: absolute; left: calc(var(--u) * 46); top: calc(var(--u) * 233); width: calc(var(--u) * 126); height: calc(var(--u) * 27); display: block; border-radius: calc(var(--u) * 5); background: #fff; box-shadow: 0 0 0 1px #e8e1d7, 0 1px 3px rgba(90, 70, 50, .06); }
+.gn-search-r-region select { width: 100%; height: 100%; border: 0; border-radius: inherit; background: transparent; padding: 0 calc(var(--u) * 22) 0 calc(var(--u) * 9); font: inherit; font-size: max(11px, calc(var(--u) * 10.3)); font-weight: 500; letter-spacing: .04em; color: #3a332e; -webkit-appearance: none; appearance: none; cursor: pointer; text-overflow: ellipsis; }
+.gn-search-r-region svg { position: absolute; right: calc(var(--u) * 9); top: 50%; width: calc(var(--u) * 8); min-width: 8px; margin-top: calc(var(--u) * -2.5); height: auto; pointer-events: none; color: #3a2f28; }
+.gn-search-r-region[data-on="1"] { box-shadow: 0 0 0 2px var(--gn-terracotta); background: #fbefe8; }
+.gn-search-r-region[data-on="1"] select { color: var(--gn-terracotta-deep); font-weight: 700; }
+.gn-search-r-region:focus-within { box-shadow: 0 0 0 2px var(--gn-terracotta); }
+
+/* 写真の無い丸・シーンの札: 麻の面 */
+.gn-search-area .gn-search-r-noimg { display: block; width: calc(var(--u) * 45); height: calc(var(--u) * 45); flex: none; border-radius: 50%; background: var(--gn-linen-deep); box-shadow: 0 0 0 1px rgba(255, 255, 255, .9); }
+.gn-search-scene-ph .gn-search-r-noimg { display: block; width: 100%; height: 100%; }
+
+/* 写真の無い店の札: 麻の面に店名(空の枠・壊れた画像は出さない) */
+.gn-search-card-ph.gn-search-r-noph { display: block; }
+.gn-search-r-noph-t { position: absolute; inset: 0; display: grid; place-items: center; padding: calc(var(--u) * 14); text-align: center; font-family: var(--gn-f-mincho); font-weight: 600; font-size: max(14px, calc(var(--u) * 16)); line-height: 1.5; letter-spacing: .06em; color: #4a423c; background-color: var(--gn-linen); overflow: hidden; }
+
+/* 紹介文は 3 行まで(実データは 2 文で長さがまちまち) */
+.gn-search-card-desc { display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 3; line-clamp: 3; overflow: hidden; color: #8a8179; }
+.gn-search[data-view="list"] .gn-search-card-desc { -webkit-line-clamp: 2; line-clamp: 2; }
+
+/* 最寄りは長い文(路線・出口つき)があるので 2 行まで */
+.gn-search-card-st span { display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 2; line-clamp: 2; overflow: hidden; }
+
+/* 選んでいる条件(外せる) */
+.gn-search-r-chosen { display: flex; flex-wrap: wrap; gap: calc(var(--u) * 8); margin-top: calc(var(--u) * 14); }
+.gn-search-r-chosen button { display: inline-flex; align-items: center; gap: 8px; min-height: 32px; padding: 0 12px; border-radius: 999px; background: #fbefe8; box-shadow: 0 0 0 1px rgba(179, 84, 49, .45); color: var(--gn-terracotta-deep); font-size: max(12px, calc(var(--u) * 11.4)); font-weight: 700; letter-spacing: .02em; text-align: center; }
+.gn-search-r-chosen i { font-style: normal; font-size: 1.2em; line-height: 1; }
+.gn-search-r-chosen button:hover { background: #f7e1d5; }
+.gn-search-r-chosen + .gn-search-grid { margin-top: calc(var(--u) * 14); }
+
+/* ページ送り(前へ・n / N・次へ) */
+.gn-search-r-pager { display: flex; align-items: center; justify-content: center; gap: calc(var(--u) * 22); margin: calc(var(--u) * 34) 0 calc(var(--u) * 26); font-family: var(--gn-f-mincho); font-weight: 600; font-size: max(14px, calc(var(--u) * 14)); letter-spacing: .06em; color: #3a332e; }
+.gn-search-r-pager a, .gn-search-r-pager .is-off { display: inline-flex; align-items: center; justify-content: center; min-width: 88px; min-height: 44px; padding: 0 18px; border-radius: 999px; background: #fff; box-shadow: 0 0 0 1px #e1cdbf, 0 1px 3px rgba(90, 70, 50, .08); color: var(--gn-terracotta-deep); transition: background .2s; }
+.gn-search-r-pager a:hover { background: #fbefe8; }
+.gn-search-r-pager .is-off { color: #b3aaa1; box-shadow: 0 0 0 1px #ece6dd; background: transparent; }
+.gn-search-r-pager [aria-current] { font-variant-numeric: tabular-nums; }
+.gn-search-r-pager :focus-visible { outline: 2px solid var(--gn-terracotta); outline-offset: 2px; }
+
+/* ───── 地図から探す(日本の図 + 地域の丸) ───── */
+.gn-search-map.gn-search-r-map { width: min(calc(var(--u) * 520), 92vw); max-height: min(78vh, 720px); overflow: auto; padding: 12px 14px 14px; z-index: 5; }
+.gn-search-r-map-note { margin: 0; padding: 20px 0; font-size: 13px; }
+.gn-search-r-fig { margin: 0; }
+.gn-search-r-stage { position: relative; width: 100%; aspect-ratio: var(--ar); container-type: inline-size; border-radius: 8px; overflow: hidden; background: #dde7e8; }
+.gn-search-r-svg { position: absolute; inset: 0; width: 100%; height: 100%; display: block; }
+.gn-search-r-sea { fill: #dde7e8; }
+.gn-search-r-land { fill: #fbf8f1; stroke: #cfc3b1; stroke-width: 1; stroke-linejoin: round; vector-effect: non-scaling-stroke; }
+.gn-search-r-coast { fill: none; stroke: #b9aa96; stroke-width: .9; stroke-linejoin: round; stroke-linecap: round; vector-effect: non-scaling-stroke; pointer-events: none; }
+.gn-search-r-ld { position: absolute; inset: 0; width: 100%; height: 100%; overflow: visible; pointer-events: none; }
+.gn-search-r-ld line { stroke: #6b5d4c; stroke-width: 1.2; stroke-opacity: .8; stroke-dasharray: 3 3; vector-effect: non-scaling-stroke; }
+.gn-search-r-ld circle { fill: #6b5d4c; stroke: #fff; stroke-width: .8; vector-effect: non-scaling-stroke; }
+.gn-search-r-ld--l { display: none; }
+.gn-search-r-pins { list-style: none; margin: 0; padding: 0; }
+.gn-search-r-pins > li { position: absolute; left: var(--px); top: var(--py); width: var(--s); height: var(--s); margin: calc(var(--s) / -2) 0 0 calc(var(--s) / -2); z-index: 2; }
+.gn-search-r-pin { display: grid; place-items: center; width: 100%; height: 100%; border-radius: 50%; -webkit-tap-highlight-color: transparent; }
+.gn-search-r-disc { box-sizing: border-box; display: grid; place-items: center; width: 32px; height: 32px; border-radius: 50%; background: var(--gn-terracotta); border: 2px solid #fff; box-shadow: 0 2px 7px rgba(60, 40, 20, .35); color: #fff; transition: transform .16s cubic-bezier(.3, 1.3, .5, 1), background .15s; }
+.gn-search-r-disc b { font: 700 12px/1 var(--gn-f-gothic); font-variant-numeric: lining-nums tabular-nums; letter-spacing: 0; }
+.gn-search-r-pin:hover .gn-search-r-disc, .gn-search-r-pin:focus-visible .gn-search-r-disc { transform: translateY(-2px) scale(1.12); background: var(--gn-terracotta-deep); }
+.gn-search-r-pin:focus-visible { outline: 2px solid var(--gn-terracotta-deep); outline-offset: -2px; }
+.gn-search-r-pin { position: relative; }
+.gn-search-r-nm { position: absolute; left: 50%; top: calc(50% + 17px); transform: translateX(-50%); white-space: nowrap; font-size: 11px; font-weight: 700; line-height: 1; letter-spacing: .02em; color: #2a2521; text-shadow: 0 0 3px #fff, 0 0 3px #fff, 0 0 2px #fff; pointer-events: none; }
+.gn-search-r-credit { margin: 8px 0 0; font-size: 12px; line-height: 1.6; color: var(--gn-muted); text-align: right; }
+@container (min-width: 440px) {
+  .gn-search-r-pins > li { left: var(--lx); top: var(--ly); }
+  .gn-search-r-ld--p { display: none; }
+  .gn-search-r-ld--l { display: block; }
+}
+
+/* ───── 店舗紹介の一覧 /restaurant ───── */
+.gn-search-r-lhead { position: relative; height: calc(var(--u) * 210); background: linear-gradient(180deg, #f1ece3, var(--gn-bg)); border-bottom: 1px solid #ebe6df; overflow: hidden; }
+.gn-search-r-lhead-town { position: absolute; right: calc(var(--u) * 24); bottom: 0; width: calc(var(--u) * 394); height: auto; opacity: .9; }
+.gn-search-r-lhead-in { position: absolute; left: calc(var(--u) * 58); top: calc(var(--u) * 104); }
+.gn-search-r-lhead-n { display: flex; align-items: baseline; gap: calc(var(--u) * 6); margin-top: calc(var(--u) * 14); font-family: var(--gn-f-mincho); color: #1f1a17; line-height: 1; }
+.gn-search-r-lhead-n b { font-weight: 500; font-size: calc(var(--u) * 41); color: var(--gn-red-num); letter-spacing: .01em; }
+.gn-search-r-lhead-n span { font-weight: 600; font-size: calc(var(--u) * 13.4); }
+.gn-search-r-lres { min-height: 0; padding-top: calc(var(--u) * 30); }
+.gn-search-r-lres .gn-search-grid { margin-top: 0; }
+
+/* ───── スマホ(≤768px) ───── */
+@media (max-width: 768px), (orientation: landscape) and (max-height: 500px) {
+  .gn-search-r-skel { height: 900px; }
+  .gn-search-r-lab2 { top: auto; }
+  .gn-search-r-region { position: relative; left: auto; top: auto; width: auto; height: 44px; margin: 0 16px 6px; border-radius: 8px; }
+  .gn-search-r-region select { font-size: 14px; padding: 0 34px 0 14px; }
+  .gn-search-r-region svg { right: 14px; width: 11px; margin-top: -3px; }
+  .gn-search-area .gn-search-r-noimg { width: 46px; height: 46px; }
+  .gn-search-r-chosen { gap: 8px; margin-top: 4px; }
+  .gn-search-r-chosen button { min-height: 44px; font-size: 13px; }
+  .gn-search-r-chosen + .gn-search-grid { margin-top: 14px; }
+  .gn-search-r-pager { gap: 12px; margin: 24px 0 8px; font-size: 14px; }
+  .gn-search-map.gn-search-r-map { position: static; width: auto; max-height: none; overflow: visible; margin: 0 10px 10px; z-index: auto; }
+  .gn-search-r-lhead { height: auto; padding: 26px 16px 22px; }
+  .gn-search .gn-search-r-lhead-town { display: none; }
+  .gn-search-r-lhead-in { position: static; }
+  .gn-search-r-lhead .gn-search-h1 { font-size: clamp(25px, 7.4vw, 32px); }
+  .gn-search-r-lhead-n { margin-top: 12px; }
+  .gn-search-r-lhead-n b { font-size: 38px; }
+  .gn-search-r-lhead-n span { font-size: 14px; }
+  .gn-search-r-lres { padding-top: 22px; }
+  .gn-search-r-noph-t { font-size: 15px; padding: 14px; }
+  .gn-search[data-view="list"] .gn-search-r-noph-t { font-size: 13px; padding: 8px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .gn-search-r-disc { transition: none !important; }
+}
