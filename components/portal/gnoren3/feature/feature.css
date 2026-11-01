@@ -1,0 +1,251 @@
+/* 暖簾 3「店の特集記事」(見本 4_店の特集記事.png 1086×1448 の 1:1 再現)。
+   ■ 寸法: --u = 見本の 1 画素(common/base.css)。PC の座標は見本を測った数字。<main> 内の y = 見本の y − 55。
+   ■ 帯の境(見本 y): ヒーロー 55〜339 / 一串一串に 337〜583 / 店主の想い 583〜862 / こだわり 862〜1138 / 店の空気 1138〜1325 / 店舗情報 1325〜1448
+   ■ 見本の測定(単位 u。x は左端、y は文字の墨の上端 = 見本の y):
+     ヒーロー: 紙の札(焼き込み)x44〜435。「特集」x104 y87(赤・13u)/ 副題 x157〜351 y87 / 罫(濃 2px)x103〜142 y109 + 細罫 x150〜384 y109
+              見出し 2 行 x104 y138・187(行間 49u・34u)/ リード 3 行 x104 y253・275・297(行間 22u・15u)/ 印 x368〜388 y277〜300(画像に残す)
+     一串一串に: 見出し x62 y372・407(25u)/ 本文 x63 y459〜(行間 20u・11u)/ 写真 x392〜801 y370〜560 / 引用の札 x813〜1029 y367〜562(#e5e0d2)
+              引用 x858 y408・434・462(行間 27u・18u)/ 開き括弧 x832〜849 y387〜402 / 閉じ x1011〜1027 y494〜509 / 肩書 x859 y522 / 罫 x860〜1014 y544
+     店主の想い: 写真 左 x0〜330・右 x690〜1086 / 紺の板 x306〜712(縁はかすれ)/ 小見出し x350 y610 / 橙の罫 x349〜417 y627 / 見出し x351 y643・676(24u)
+              短い罫 x350〜382 y714 / 本文 x352 y733〜(行間 20.2u・10.6u)/ 縦書き 2 列 x1020〜1042(y606〜707)・x970〜992(y622〜774)
+     こだわり: 小見出し x65 y886 / 赤い罫 x60〜113 y901 / 見出し x63 y919・954(24u)/ 短い罫 x62〜92 y990 / 本文 x63 y1006〜(行間 20.2u)
+              写真 大 x341〜731 y878〜1127 / 右上 x739〜1033 y878〜999 / 右下 x739〜1033 y1005〜1126
+              札 1 x357〜412 y927〜1092(題 x391〜403 y939〜1054・14u / 副 x372〜381 y939〜1079・10.5u)
+              札 2 x974〜1023 y886〜998(題 x1003〜1013 y895〜957 / 副 x986〜993 y894〜988)/ 札 3 x974〜1023 y1011〜1129(題 x1006〜1016 y1021〜1072 / 副 x986〜994 y1023〜1115)
+     店の空気: 紺+写真 x0〜707 y1139〜1325 / 小見出し x63 y1154 / 橙の罫 x62〜116 y1171 / 見出し x65 y1184・1212(20u)/ 本文 x64 y1244〜(行間 16.3u・11u)
+              花瓶 x713〜839 / 看板 x843〜1085
+     店舗情報: 写真 x61〜331 y1331〜1439 / ラベル x351 y1331 / 赤い罫 x349〜394 y1346 / 店名 x350 y1360(19u)/ 一言 x352 y1387 / 説明 x351 y1410・1425
+              縦線 x664 / 表 icon x676〜686・ラベル x695・値 x750〜752・行 y1339・1359・1379・1398・1420 / 地図 x883〜1024 y1333〜1402 / ボタン x884〜1024 y1407〜1433
+   ■ 画像は見本から切り出して 2 倍。焼き込み文字(札の文字・「炭の音が」・ヒーローの紙の札の文字)は拡散補間で消して HTML で描く。
+     暖簾・提灯・木の看板など写真の中に実在する看板の文字は、写真の一部として残す(本物の写真に差し替えるまで)。 */
+
+.gn3-feature { display: block; background: var(--gn3-bg); }
+.gn3-feature img { display: block; width: 100%; height: 100%; object-fit: cover; }
+.gn3-feature figure { margin: 0; }
+.gn3-feature section { position: relative; }
+.gn3-feature-in { position: relative; width: calc(var(--u) * 1086); margin-inline: auto; height: 100%; }
+.gn3-feature p, .gn3-feature h1, .gn3-feature h2, .gn3-feature blockquote, .gn3-feature figcaption, .gn3-feature dl, .gn3-feature dd, .gn3-feature dt { margin: 0; font-family: var(--gn3-f-mincho); }
+.gn3-feature-label, .gn3-feature-i-label { margin: 0; }
+
+/* 紙の地(見本の生成り #efebe1)+ 薄い織り目 */
+.gn3-feature-a, .gn3-feature-c, .gn3-feature-i {
+  background-color: var(--gn3-feature-paper, #efebe1);
+  background-image:
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='240' height='240'%3E%3Cfilter id='f' x='0' y='0' width='100%25' height='100%25'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.012 .02' numOctaves='3' seed='7' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 .55 0 0 0 0 .47 0 0 0 0 .33 .22 0 0 0 -.06'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23f)'/%3E%3C/svg%3E");
+}
+.gn3-feature-a { --gn3-feature-paper: #f4f0e8; }
+.gn3-feature-c { --gn3-feature-paper: #efebe0; }
+.gn3-feature-i { --gn3-feature-paper: #f2f1ea; }
+
+/* ───────── ヒーロー ───────── */
+@media (min-width: 769px) and (min-height: 501px), (min-width: 769px) and (orientation: portrait) {
+  .gn3-feature-hero { height: calc(var(--u) * 284); background: #160c07; }
+  .gn3-feature-hero-in { position: relative; width: calc(var(--u) * 1086); height: calc(var(--u) * 284); margin-inline: auto; }
+  .gn3-feature-hero-photo { position: absolute; left: 0; top: 0; width: calc(var(--u) * 1086); height: calc(var(--u) * 284); }
+  .gn3-feature-card { position: absolute; inset: 0; pointer-events: none; }
+  .gn3-feature-card > * { pointer-events: auto; }
+  .gn3-feature-kicker-a { position: absolute; left: calc(var(--u) * 104); top: calc(var(--u) * 31.09); font-size: calc(var(--u) * 13); line-height: calc(var(--u) * 13); letter-spacing: 0.1em; font-weight: 600; color: #9b3624; white-space: nowrap;  }
+  .gn3-feature-kicker-b { position: absolute; left: calc(var(--u) * 157); top: calc(var(--u) * 30.23); font-size: calc(var(--u) * 11); line-height: calc(var(--u) * 13); letter-spacing: 0em; font-weight: 500; color: #3d382f; white-space: nowrap;  }
+  .gn3-feature-kicker::before { content: ""; position: absolute; left: calc(var(--u) * 103); top: calc(var(--u) * 54); width: calc(var(--u) * 40); height: calc(var(--u) * 2); background: #17130f; }
+  .gn3-feature-kicker::after { content: ""; position: absolute; left: calc(var(--u) * 150); top: calc(var(--u) * 54); width: calc(var(--u) * 234); height: calc(var(--u) * 1); background: #6c6357; }
+  .gn3-feature-h1 { position: absolute; left: calc(var(--u) * 104); top: calc(var(--u) * 74.41); font-size: calc(var(--u) * 37); line-height: calc(var(--u) * 49); letter-spacing: 0em; font-weight: 600; color: #1b1713; white-space: nowrap;  }
+  .gn3-feature-lead { position: absolute; left: calc(var(--u) * 104); top: calc(var(--u) * 193.45); font-size: calc(var(--u) * 15); line-height: calc(var(--u) * 22); letter-spacing: -0.02em; font-weight: 500; color: #3d382f; white-space: nowrap;  }
+}
+
+/* ───────── 一串一串に ───────── */
+@media (min-width: 769px) and (min-height: 501px), (min-width: 769px) and (orientation: portrait) {
+  .gn3-feature-a { height: calc(var(--u) * 246); margin-top: calc(var(--u) * -2); z-index: 2; clip-path: polygon(0.00% calc(var(--u) * 2), 0.74% calc(var(--u) * 1), 1.47% calc(var(--u) * 2), 2.21% calc(var(--u) * 2), 2.95% calc(var(--u) * 2), 3.68% calc(var(--u) * 3), 4.42% calc(var(--u) * 1), 5.16% calc(var(--u) * 2), 5.89% calc(var(--u) * 2), 6.63% calc(var(--u) * 2), 7.37% calc(var(--u) * 2), 8.10% calc(var(--u) * 2), 8.84% calc(var(--u) * 2), 9.58% calc(var(--u) * 2), 10.31% calc(var(--u) * 2), 11.05% calc(var(--u) * 2), 11.79% calc(var(--u) * 2), 12.52% calc(var(--u) * 2), 13.26% calc(var(--u) * 2), 14.00% calc(var(--u) * 2), 14.73% calc(var(--u) * 2), 15.47% calc(var(--u) * 2), 16.21% calc(var(--u) * 2), 16.94% calc(var(--u) * 2), 17.68% calc(var(--u) * 2), 18.42% calc(var(--u) * 2), 19.15% calc(var(--u) * 2), 19.89% calc(var(--u) * 2), 20.63% calc(var(--u) * 2), 21.36% calc(var(--u) * 2), 22.10% calc(var(--u) * 2), 22.84% calc(var(--u) * 2), 23.57% calc(var(--u) * 2), 24.31% calc(var(--u) * 2), 25.05% calc(var(--u) * 2), 25.78% calc(var(--u) * 2), 26.52% calc(var(--u) * 2), 27.26% calc(var(--u) * 2), 27.99% calc(var(--u) * 2), 28.73% calc(var(--u) * 2), 29.47% calc(var(--u) * 2), 30.20% calc(var(--u) * 2), 30.94% calc(var(--u) * 2), 31.68% calc(var(--u) * 2), 32.41% calc(var(--u) * 2), 33.15% calc(var(--u) * 2), 33.89% calc(var(--u) * 2), 34.62% calc(var(--u) * 2), 35.36% calc(var(--u) * 2), 36.10% calc(var(--u) * 2), 36.83% calc(var(--u) * 2), 37.57% calc(var(--u) * 2), 38.31% calc(var(--u) * 2), 39.04% calc(var(--u) * 2), 39.78% calc(var(--u) * 3), 40.52% calc(var(--u) * 4), 41.25% calc(var(--u) * 5), 41.99% calc(var(--u) * 5), 42.73% calc(var(--u) * 3), 43.46% calc(var(--u) * 4), 44.20% calc(var(--u) * 4), 44.94% calc(var(--u) * 2), 45.67% calc(var(--u) * 3), 46.41% calc(var(--u) * 2), 47.15% calc(var(--u) * 2), 47.88% calc(var(--u) * 3), 48.62% calc(var(--u) * 2), 49.36% calc(var(--u) * 2), 50.09% calc(var(--u) * 1), 50.83% calc(var(--u) * 3), 51.57% calc(var(--u) * 1), 52.30% calc(var(--u) * 2), 53.04% calc(var(--u) * 3), 53.78% calc(var(--u) * 3), 54.51% calc(var(--u) * 2), 55.25% calc(var(--u) * 2), 55.99% calc(var(--u) * 1), 56.72% calc(var(--u) * 2), 57.46% calc(var(--u) * 2), 58.20% calc(var(--u) * 1), 58.93% calc(var(--u) * 1), 59.67% calc(var(--u) * 1), 60.41% calc(var(--u) * 2), 61.14% calc(var(--u) * 2), 61.88% calc(var(--u) * 2), 62.62% calc(var(--u) * 2), 63.35% calc(var(--u) * 2), 64.09% calc(var(--u) * 3), 64.83% calc(var(--u) * 1), 65.56% calc(var(--u) * 1), 66.30% calc(var(--u) * 2), 67.03% calc(var(--u) * 3), 67.77% calc(var(--u) * 3), 68.51% calc(var(--u) * 3), 69.24% calc(var(--u) * 4), 69.98% calc(var(--u) * 4), 70.72% calc(var(--u) * 3), 71.45% calc(var(--u) * 3), 72.19% calc(var(--u) * 3), 72.93% calc(var(--u) * 3), 73.66% calc(var(--u) * 3), 74.40% calc(var(--u) * 3), 75.14% calc(var(--u) * 3), 75.87% calc(var(--u) * 3), 76.61% calc(var(--u) * 3), 77.35% calc(var(--u) * 1), 78.08% calc(var(--u) * 1), 78.82% calc(var(--u) * 0), 79.56% calc(var(--u) * 1), 80.29% calc(var(--u) * 1), 81.03% calc(var(--u) * 1), 81.77% calc(var(--u) * 3), 82.50% calc(var(--u) * 3), 83.24% calc(var(--u) * 2), 83.98% calc(var(--u) * 4), 84.71% calc(var(--u) * 4), 85.45% calc(var(--u) * 4), 86.19% calc(var(--u) * 4), 86.92% calc(var(--u) * 2), 87.66% calc(var(--u) * 2), 88.40% calc(var(--u) * 4), 89.13% calc(var(--u) * 4), 89.87% calc(var(--u) * 4), 90.61% calc(var(--u) * 5), 91.34% calc(var(--u) * 6), 92.08% calc(var(--u) * 6), 92.82% calc(var(--u) * 5), 93.55% calc(var(--u) * 4), 94.29% calc(var(--u) * 4), 95.03% calc(var(--u) * 3), 95.76% calc(var(--u) * 3), 96.50% calc(var(--u) * 3), 97.24% calc(var(--u) * 3), 97.97% calc(var(--u) * 3), 98.71% calc(var(--u) * 3), 99.45% calc(var(--u) * 2), 100% calc(var(--u) * 2), 100% 100%, 0 100%); }
+  .gn3-feature-a-h2 { position: absolute; left: calc(var(--u) * 62); top: calc(var(--u) * 29.32); font-size: calc(var(--u) * 27.5); line-height: calc(var(--u) * 35); letter-spacing: -0.025em; font-weight: 600; color: #1b1713; white-space: nowrap;  }
+  .gn3-feature-a-body { position: absolute; left: calc(var(--u) * 63); top: calc(var(--u) * 116.73); font-size: calc(var(--u) * 11); line-height: calc(var(--u) * 20); letter-spacing: 0.04em; font-weight: 600; color: #524e45; white-space: nowrap;  }
+  .gn3-feature-a-photo { position: absolute; left: calc(var(--u) * 392); top: calc(var(--u) * 33); width: calc(var(--u) * 410); height: calc(var(--u) * 191);  }
+  .gn3-feature-quote { position: absolute; left: calc(var(--u) * 813); top: calc(var(--u) * 30); width: calc(var(--u) * 216); height: calc(var(--u) * 195); background: #e5e0d2; }
+  .gn3-feature-quote-text { position: absolute; left: calc(var(--u) * 45); top: calc(var(--u) * 35.24); font-size: calc(var(--u) * 18); line-height: calc(var(--u) * 27); letter-spacing: 0.06em; font-weight: 600; color: #1b1713; white-space: nowrap;  }
+  .gn3-feature-qmark { position: absolute; left: calc(var(--u) * 19); top: calc(var(--u) * 15.8); font-size: calc(var(--u) * 60); line-height: calc(var(--u) * 60); letter-spacing: 0em; font-weight: 700; color: #8e2b19; white-space: nowrap; font-family: var(--gn3-f-mincho); }
+  .gn3-feature-qmark-o { left: calc(var(--u) * 19); top: calc(var(--u) * 13); }
+  .gn3-feature-qmark-c { left: calc(var(--u) * 196); top: calc(var(--u) * 121); }
+  .gn3-feature-quote-who { position: absolute; left: calc(var(--u) * 46); top: calc(var(--u) * 153.51); font-size: calc(var(--u) * 10.5); line-height: calc(var(--u) * 12); letter-spacing: 0.1em; font-weight: 500; color: #312c24; white-space: nowrap;  }
+  .gn3-feature-quote::after { content: ""; position: absolute; left: calc(var(--u) * 47); top: calc(var(--u) * 177); width: calc(var(--u) * 155); height: calc(var(--u) * 1); background: #b5ad9c; }
+}
+
+/* ───────── 店主の想い ───────── */
+@media (min-width: 769px) and (min-height: 501px), (min-width: 769px) and (orientation: portrait) {
+  .gn3-feature-b { height: calc(var(--u) * 279); background: #160c07; overflow: hidden; }
+  .gn3-feature-b-portrait { position: absolute; left: calc(var(--u) * 0); top: calc(var(--u) * 0); width: calc(var(--u) * 330); height: calc(var(--u) * 280);  }
+  .gn3-feature-b-grill { position: absolute; left: calc(var(--u) * 690); top: calc(var(--u) * 0); width: calc(var(--u) * 396); height: calc(var(--u) * 280);  }
+  .gn3-feature-b-panel { position: absolute; left: calc(var(--u) * 306); top: calc(var(--u) * 0); width: calc(var(--u) * 407); height: calc(var(--u) * 279); clip-path: polygon(0% 0%, 99.75% 0.36%, 99.51% 2.51%, 99.51% 4.66%, 99.75% 6.81%, 99.51% 8.96%, 99.26% 11.11%, 99.02% 13.26%, 98.77% 15.41%, 98.53% 17.56%, 98.28% 19.71%, 97.79% 21.86%, 97.30% 24.01%, 97.30% 26.16%, 96.81% 28.32%, 96.81% 30.47%, 97.54% 32.62%, 97.54% 34.77%, 97.54% 36.92%, 97.54% 39.07%, 97.05% 41.22%, 96.81% 43.37%, 97.30% 45.52%, 97.30% 47.67%, 97.30% 49.82%, 96.81% 51.97%, 97.05% 54.12%, 96.81% 56.27%, 96.81% 58.42%, 97.05% 60.57%, 96.81% 62.72%, 97.30% 64.87%, 97.05% 67.03%, 97.30% 69.18%, 97.54% 71.33%, 97.54% 73.48%, 96.56% 75.63%, 97.30% 77.78%, 97.30% 79.93%, 97.54% 82.08%, 97.79% 84.23%, 97.30% 86.38%, 97.30% 88.53%, 97.30% 90.68%, 97.54% 92.83%, 97.79% 94.98%, 99.75% 97.13%, 100.00% 99.28%, 100% 100%, 0% 100%, 0.25% 99.28%, 0.00% 97.13%, 0.25% 94.98%, 0.00% 92.83%, 0.49% 90.68%, 0.25% 88.53%, 0.00% 86.38%, 0.25% 84.23%, 0.49% 82.08%, 0.25% 79.93%, 0.25% 77.78%, 0.00% 75.63%, 0.25% 73.48%, 0.00% 71.33%, 0.49% 69.18%, 0.25% 67.03%, 0.00% 64.87%, 0.25% 62.72%, 0.49% 60.57%, 0.25% 58.42%, 0.25% 56.27%, 0.00% 54.12%, 0.25% 51.97%, 0.00% 49.82%, 0.49% 47.67%, 0.25% 45.52%, 0.00% 43.37%, 0.25% 41.22%, 0.49% 39.07%, 0.25% 36.92%, 0.25% 34.77%, 0.00% 32.62%, 0.25% 30.47%, 0.00% 28.32%, 0.49% 26.16%, 0.25% 24.01%, 0.00% 21.86%, 0.25% 19.71%, 0.49% 17.56%, 0.25% 15.41%, 0.25% 13.26%, 0.00% 11.11%, 0.25% 8.96%, 0.00% 6.81%, 0.49% 4.66%, 0.25% 2.51%, 0.00% 0.36%); }
+  .gn3-feature-b-panel { background-color: #0f1c25; }
+  .gn3-feature-b-panel > * { position: absolute; }
+  .gn3-feature-b-panel .gn3-feature-label { left: calc(var(--u) * 45); top: calc(var(--u) * 25.52); font-size: calc(var(--u) * 10.5); line-height: calc(var(--u) * 12); letter-spacing: 0.13em; font-weight: 500; color: #b8c2c9; white-space: nowrap;  }
+  .gn3-feature-b-panel .gn3-feature-label::after { content: ""; position: absolute; left: calc(var(--u) * -2); top: calc(var(--u) * 18.48); width: calc(var(--u) * 69); height: calc(var(--u) * 2); background: #7e4e3b; }
+  .gn3-feature-b-h2 { left: calc(var(--u) * 45); top: calc(var(--u) * 54.68); font-size: calc(var(--u) * 26); line-height: calc(var(--u) * 33); letter-spacing: 0.02em; font-weight: 500; color: #f6faf9; white-space: nowrap;  }
+  .gn3-feature-b-h2::after { content: ""; position: absolute; left: calc(var(--u) * -1); top: calc(var(--u) * 77.18); width: calc(var(--u) * 33); height: calc(var(--u) * 1); background: rgba(215, 225, 232, .5); }
+  .gn3-feature-b-body { left: calc(var(--u) * 46); top: calc(var(--u) * 144.46); font-size: calc(var(--u) * 10.6); line-height: calc(var(--u) * 20.2); letter-spacing: 0.06em; font-weight: 500; color: #c4cdd3; white-space: nowrap;  }
+  .gn3-feature-sumi-1 { position: absolute; left: calc(var(--u) * 330); top: calc(var(--u) * 21.5); font-size: calc(var(--u) * 21.5); line-height: calc(var(--u) * 21.5); letter-spacing: 0.0em; font-weight: 400; color: #f4efe6; white-space: nowrap; position:absolute; writing-mode: vertical-rl; text-orientation: upright; text-shadow: 0 1px 6px rgba(0,0,0,.55); transform: rotate(-5deg); transform-origin: 50% 0; }
+  .gn3-feature-sumi-2 { position: absolute; left: calc(var(--u) * 280); top: calc(var(--u) * 37.49); font-size: calc(var(--u) * 21.5); line-height: calc(var(--u) * 21.5); letter-spacing: 0.0em; font-weight: 400; color: #f4efe6; white-space: nowrap; position:absolute; writing-mode: vertical-rl; text-orientation: upright; text-shadow: 0 1px 6px rgba(0,0,0,.55); transform: rotate(-5deg); transform-origin: 50% 0; }
+}
+
+/* ───────── こだわり ───────── */
+@media (min-width: 769px) and (min-height: 501px), (min-width: 769px) and (orientation: portrait) {
+  .gn3-feature-c { height: calc(var(--u) * 276); }
+  .gn3-feature-c-text .gn3-feature-label { position: absolute; left: calc(var(--u) * 65); top: calc(var(--u) * 22.52); font-size: calc(var(--u) * 10.5); line-height: calc(var(--u) * 12); letter-spacing: 0.13em; font-weight: 500; color: #9b3624; white-space: nowrap;  }
+  .gn3-feature-c-text .gn3-feature-label::after { content: ""; position: absolute; left: calc(var(--u) * -5); top: calc(var(--u) * 16.48); width: calc(var(--u) * 53); height: calc(var(--u) * 2); background: #9a4a38; }
+  .gn3-feature-c-h2 { position: absolute; left: calc(var(--u) * 63); top: calc(var(--u) * 50.33); font-size: calc(var(--u) * 24.6); line-height: calc(var(--u) * 34.5); letter-spacing: 0.02em; font-weight: 600; color: #1b1713; white-space: nowrap;  }
+  .gn3-feature-c-h2::after { content: ""; position: absolute; left: calc(var(--u) * -1); top: calc(var(--u) * 77.93); width: calc(var(--u) * 31); height: calc(var(--u) * 1); background: #5c5a52; }
+  .gn3-feature-c-body { position: absolute; left: calc(var(--u) * 63); top: calc(var(--u) * 138.46); font-size: calc(var(--u) * 10.6); line-height: calc(var(--u) * 20.2); letter-spacing: 0.05em; font-weight: 600; color: #524e45; white-space: nowrap;  }
+  .gn3-feature-c-main { position: absolute; left: calc(var(--u) * 341); top: calc(var(--u) * 16); width: calc(var(--u) * 391); height: calc(var(--u) * 250);  }
+  .gn3-feature-c-sub1 { position: absolute; left: calc(var(--u) * 739); top: calc(var(--u) * 16); width: calc(var(--u) * 295); height: calc(var(--u) * 122);  }
+  .gn3-feature-c-sub2 { position: absolute; left: calc(var(--u) * 739); top: calc(var(--u) * 143); width: calc(var(--u) * 295); height: calc(var(--u) * 122);  }
+  .gn3-feature-tag { position: absolute; margin: 0; }
+  .gn3-feature-c-main .gn3-feature-tag-1 { left: calc(var(--u) * 16); top: calc(var(--u) * 49); width: calc(var(--u) * 56); height: calc(var(--u) * 165); }
+  .gn3-feature-c-sub1 .gn3-feature-tag-2 { left: calc(var(--u) * 235); top: 0; width: calc(var(--u) * 50); height: calc(var(--u) * 113); margin-top: calc(var(--u) * 8); }
+  .gn3-feature-c-sub2 .gn3-feature-tag-3 { left: calc(var(--u) * 235); top: calc(var(--u) * 6); width: calc(var(--u) * 50); height: calc(var(--u) * 118); }
+  .gn3-feature-tag b, .gn3-feature-tag span { position: absolute; writing-mode: vertical-rl; text-orientation: upright; white-space: nowrap; color: #2c241b; font-weight: 500; }
+  .gn3-feature-tag-1 b { left: calc(var(--u) * 34); top: calc(var(--u) * 12); font-size: calc(var(--u) * 14); line-height: calc(var(--u) * 14); letter-spacing: 0.03em; font-weight: 600;  }
+  .gn3-feature-tag-1 span { left: calc(var(--u) * 14.5); top: calc(var(--u) * 12); font-size: calc(var(--u) * 10.5); line-height: calc(var(--u) * 10.5); letter-spacing: 0.11em; font-weight: 500;  }
+  .gn3-feature-tag-2 b { left: calc(var(--u) * 28.5); top: calc(var(--u) * 9); font-size: calc(var(--u) * 11.5); line-height: calc(var(--u) * 11.5); letter-spacing: 0.08em; font-weight: 600;  }
+  .gn3-feature-tag-2 span { left: calc(var(--u) * 11.5); top: calc(var(--u) * 8); font-size: calc(var(--u) * 9); line-height: calc(var(--u) * 9); letter-spacing: 0.1em; font-weight: 500;  }
+  .gn3-feature-tag-3 b { left: calc(var(--u) * 31.5); top: calc(var(--u) * 10); font-size: calc(var(--u) * 11.5); line-height: calc(var(--u) * 11.5); letter-spacing: 0.1em; font-weight: 600;  }
+  .gn3-feature-tag-3 span { left: calc(var(--u) * 11.5); top: calc(var(--u) * 12); font-size: calc(var(--u) * 9); line-height: calc(var(--u) * 9); letter-spacing: 0.08em; font-weight: 500;  }
+}
+
+/* ───────── 店の空気 ───────── */
+@media (min-width: 769px) and (min-height: 501px), (min-width: 769px) and (orientation: portrait) {
+  .gn3-feature-d { height: calc(var(--u) * 187); background: #efebe1; overflow: hidden; }
+  .gn3-feature-d::before { content: ""; position: absolute; left: 0; top: 0; bottom: 0; width: calc((100% - var(--u) * 1086) / 2 + 2px); background: #0d1920; }
+  .gn3-feature-d-counter { position: absolute; left: calc(var(--u) * 0); top: calc(var(--u) * 1); width: calc(var(--u) * 708); height: calc(var(--u) * 187);  }
+  .gn3-feature-d-vase { position: absolute; left: calc(var(--u) * 713); top: calc(var(--u) * 1); width: calc(var(--u) * 127); height: calc(var(--u) * 187);  }
+  .gn3-feature-d-sign { position: absolute; left: calc(var(--u) * 843); top: calc(var(--u) * 1); width: calc(var(--u) * 243); height: calc(var(--u) * 187);  }
+  .gn3-feature-d-text .gn3-feature-label { position: absolute; left: calc(var(--u) * 63); top: calc(var(--u) * 14.52); font-size: calc(var(--u) * 10.5); line-height: calc(var(--u) * 12); letter-spacing: 0.13em; font-weight: 500; color: #b8c2c9; white-space: nowrap;  }
+  .gn3-feature-d-text .gn3-feature-label::after { content: ""; position: absolute; left: calc(var(--u) * -1); top: calc(var(--u) * 18.48); width: calc(var(--u) * 55); height: calc(var(--u) * 2); background: #7e4e3b; }
+  .gn3-feature-d-h2 { position: absolute; left: calc(var(--u) * 65); top: calc(var(--u) * 40.6); font-size: calc(var(--u) * 20); line-height: calc(var(--u) * 28); letter-spacing: 0.1em; font-weight: 600; color: #f4f9f8; white-space: nowrap;  }
+  .gn3-feature-d-body { position: absolute; left: calc(var(--u) * 64); top: calc(var(--u) * 102.58); font-size: calc(var(--u) * 11); line-height: calc(var(--u) * 16.3); letter-spacing: 0.03em; font-weight: 600; color: #c4cdd3; white-space: nowrap;  }
+}
+
+/* ───────── 店舗情報 ───────── */
+@media (min-width: 769px) and (min-height: 501px), (min-width: 769px) and (orientation: portrait) {
+  .gn3-feature-i { height: calc(var(--u) * 123); }
+  .gn3-feature-i-photo { position: absolute; left: calc(var(--u) * 61); top: calc(var(--u) * 6); width: calc(var(--u) * 271); height: calc(var(--u) * 108);  }
+  .gn3-feature-i-label { position: absolute; left: calc(var(--u) * 351); top: calc(var(--u) * 4.08); font-size: calc(var(--u) * 9.5); line-height: calc(var(--u) * 12); letter-spacing: 0.12em; font-weight: 500; color: #55524d; white-space: nowrap;  }
+  .gn3-feature-i-label::after { content: ""; position: absolute; left: calc(var(--u) * -2); top: calc(var(--u) * 16.91); width: calc(var(--u) * 45); height: calc(var(--u) * 2); background: #9a4a38; }
+  .gn3-feature-i-name { position: absolute; left: calc(var(--u) * 350); top: calc(var(--u) * 32.17); font-size: calc(var(--u) * 19); line-height: calc(var(--u) * 22); letter-spacing: 0.15em; font-weight: 600; color: #1b1713; white-space: nowrap;  }
+  .gn3-feature-i-tag { position: absolute; left: calc(var(--u) * 352); top: calc(var(--u) * 59.25); font-size: calc(var(--u) * 12.2); line-height: calc(var(--u) * 16); letter-spacing: 0.12em; font-weight: 600; color: #2a2620; white-space: nowrap;  }
+  .gn3-feature-i-desc { position: absolute; left: calc(var(--u) * 351); top: calc(var(--u) * 81.55); font-size: calc(var(--u) * 10); line-height: calc(var(--u) * 15.5); letter-spacing: -0.01em; font-weight: 500; color: #55524d; white-space: nowrap;  }
+  .gn3-feature-i-table { position: absolute; left: calc(var(--u) * 664); top: calc(var(--u) * 13); width: calc(var(--u) * 212); height: calc(var(--u) * 94); margin: 0; border-left: calc(var(--u) * 1.5) solid #6d6a63; }
+  .gn3-feature-i-table > div:nth-child(1) { position: absolute; left: 0; top: calc(var(--u) * 0); height: calc(var(--u) * 14); width: 100%; }
+  .gn3-feature-i-table > div:nth-child(2) { position: absolute; left: 0; top: calc(var(--u) * 19.8); height: calc(var(--u) * 14); width: 100%; }
+  .gn3-feature-i-table > div:nth-child(3) { position: absolute; left: 0; top: calc(var(--u) * 39.5); height: calc(var(--u) * 14); width: 100%; }
+  .gn3-feature-i-table > div:nth-child(4) { position: absolute; left: 0; top: calc(var(--u) * 59.2); height: calc(var(--u) * 14); width: 100%; }
+  .gn3-feature-i-table > div:nth-child(5) { position: absolute; left: 0; top: calc(var(--u) * 79); height: calc(var(--u) * 14); width: 100%; }
+  .gn3-feature-i-table dt { position: absolute; left: calc(var(--u) * 12); top: 0; height: calc(var(--u) * 14); width: calc(var(--u) * 80); display: flex; align-items: center; font-size: calc(var(--u) * 8.6); letter-spacing: .04em; color: #3a362f; font-weight: 500; }
+  .gn3-feature-i-table dt svg { width: calc(var(--u) * 10.5); height: calc(var(--u) * 11); margin-right: calc(var(--u) * 8.5); color: #1d1a16; flex: none; }
+  .gn3-feature-i-table dd { position: absolute; left: calc(var(--u) * 86); top: 0; height: calc(var(--u) * 14); display: flex; align-items: center; font-size: calc(var(--u) * 9.2); letter-spacing: .02em; color: #3a362f; font-weight: 500; white-space: nowrap; }
+  .gn3-feature-i-map { position: absolute; left: calc(var(--u) * 883); top: calc(var(--u) * 8); width: calc(var(--u) * 141); height: calc(var(--u) * 69);  }
+  .gn3-feature .gn3-feature-i-btn { position: absolute; left: calc(var(--u) * 884); top: calc(var(--u) * 82); width: calc(var(--u) * 140); height: calc(var(--u) * 27); border-radius: calc(var(--u) * 2); background: #0d1922; color: #c3ccd2; display: flex; align-items: center; justify-content: flex-start; padding-left: calc(var(--u) * 34); gap: calc(var(--u) * 14); font-family: var(--gn3-f-mincho); font-size: calc(var(--u) * 9.2); letter-spacing: .1em; font-weight: 500; }
+  .gn3-feature .gn3-feature-i-btn svg { width: calc(var(--u) * 10); height: calc(var(--u) * 6); }
+}
+
+/* ───────── スマホ(≤768px): 縦に積む・本文 14px 以上・押す所 44px 以上・横スクロール無し ───────── */
+@media (max-width: 768px), (orientation: landscape) and (max-height: 500px) {
+  .gn3-feature { overflow-x: clip; }
+  .gn3-feature p, .gn3-feature h1, .gn3-feature h2, .gn3-feature blockquote { max-width: 100%; }
+  .gn3-feature-in { width: 100%; height: auto; display: flex; flex-direction: column; padding-inline: 20px; }
+  .gn3-feature-label, .gn3-feature-i-label { font-size: 14px; letter-spacing: .14em; font-weight: 600; padding-bottom: 8px; position: relative; display: inline-block; align-self: flex-start; margin-bottom: 10px; }
+  .gn3-feature-label::after, .gn3-feature-i-label::after { content: ""; position: absolute; left: 0; bottom: 0; width: 100%; height: 2px; background: currentColor; }
+
+  /* ヒーロー: 写真(職人と提灯)→ 紙の札 */
+  .gn3-feature-hero { background: #160c07; }
+  .gn3-feature-hero-in { width: 100%; }
+  .gn3-feature-hero-photo { position: relative; aspect-ratio: 651 / 284; overflow: hidden; }
+  .gn3-feature-hero-photo img { width: 166.8%; max-width: none; height: auto; margin-left: -66.8%; }
+  .gn3-feature-card { position: relative; background: #ece5d5; padding: 24px 20px 30px; color: #1b1713; border-top: 3px solid #3a2210; }
+  .gn3-feature-kicker { display: flex; flex-wrap: wrap; align-items: baseline; gap: 4px 12px; padding-bottom: 10px; border-bottom: 1px solid #6c6357; font-size: 14px; }
+  .gn3-feature-kicker-a { color: #9b3624; font-weight: 600; letter-spacing: .1em; font-size: 15px; }
+  .gn3-feature-kicker-b { color: #3d382f; font-size: 14px; letter-spacing: .04em; }
+  .gn3-feature-h1 { margin: 18px 0 14px; font-size: clamp(27px, 8vw, 36px); line-height: 1.5; letter-spacing: .08em; font-weight: 500; color: #1b1713; }
+  .gn3-feature-lead { font-size: 15px; line-height: 1.95; letter-spacing: .06em; font-weight: 500; color: #3d382f; }
+
+  /* 一串一串に */
+  .gn3-feature-a { padding-block: 30px 32px; }
+  .gn3-feature-a-h2 { font-size: clamp(23px, 6.6vw, 30px); line-height: 1.45; letter-spacing: .05em; font-weight: 500; color: #1b1713; margin-bottom: 14px; }
+  .gn3-feature-a-body { font-size: 14px; line-height: 2; letter-spacing: .03em; font-weight: 500; color: #47433a; margin-bottom: 20px; }
+  .gn3-feature-a-body br, .gn3-feature-b-body br, .gn3-feature-c-body br, .gn3-feature-d-body br, .gn3-feature-i-desc br { display: none; }
+  .gn3-feature-a-photo { aspect-ratio: 410 / 191; margin-bottom: 18px; }
+  .gn3-feature-quote { position: relative; background: #e5e0d2; padding: 26px 24px 20px 52px; }
+  .gn3-feature-qmark { position: absolute; font-size: 48px; line-height: 1; font-weight: 700; color: #8e2b19; }
+  .gn3-feature-qmark-o { left: 14px; top: 14px; }
+  .gn3-feature-qmark-c { right: 16px; bottom: 56px; }
+  .gn3-feature-quote-text { font-size: 20px; line-height: 1.6; letter-spacing: .06em; font-weight: 500; color: #1b1713; }
+  .gn3-feature-quote-who { margin-top: 16px; padding-bottom: 10px; border-bottom: 1px solid #b5ad9c; font-size: 14px; letter-spacing: .08em; color: #312c24; }
+
+  /* 店主の想い: 写真 → 紺の板 → 炭の写真 */
+  .gn3-feature-b { background: #0f1c25; }
+  .gn3-feature-b .gn3-feature-in { padding-inline: 0; }
+  .gn3-feature-b-portrait { order: 1; aspect-ratio: 4 / 3; }
+  .gn3-feature-b-portrait img { object-position: 30% 20%; }
+  .gn3-feature-b-panel { order: 2; background: #0f1c25; padding: 28px 20px 30px; }
+  .gn3-feature-b-grill { order: 3; position: relative; aspect-ratio: 396 / 280; }
+  .gn3-feature-b .gn3-feature-label { color: #b8c2c9; }
+  .gn3-feature-b .gn3-feature-label::after { background: #b0603f; }
+  .gn3-feature-b-h2 { font-size: clamp(22px, 6.4vw, 28px); line-height: 1.5; letter-spacing: .08em; font-weight: 500; color: #f6faf9; padding-bottom: 16px; position: relative; margin-bottom: 14px; }
+  .gn3-feature-b-h2::after { content: ""; position: absolute; left: 0; bottom: 0; width: 34px; height: 1px; background: rgba(215, 225, 232, .55); }
+  .gn3-feature-b-body { font-size: 14px; line-height: 2; letter-spacing: .03em; font-weight: 500; color: #c9d1d6; }
+  .gn3-feature-sumi { position: absolute; right: 14px; top: 12px; display: flex; flex-direction: row-reverse; gap: 6px; }
+  .gn3-feature-sumi span { display: block; writing-mode: vertical-rl; text-orientation: upright; font-size: 16px; line-height: 1.1; letter-spacing: .06em; font-weight: 400; color: #f4efe6; text-shadow: 0 1px 6px rgba(0, 0, 0, .6); }
+  .gn3-feature-sumi-1 { margin-top: 0; }
+  .gn3-feature-sumi-2 { margin-top: 18px; }
+
+  /* こだわり */
+  .gn3-feature-c { padding-block: 30px 26px; }
+  .gn3-feature-c-text { margin-bottom: 22px; }
+  .gn3-feature-c-text .gn3-feature-label { color: #9b3624; }
+  .gn3-feature-c-h2 { font-size: clamp(22px, 6.4vw, 28px); line-height: 1.5; letter-spacing: .05em; font-weight: 500; color: #1b1713; padding-bottom: 14px; position: relative; margin-bottom: 14px; }
+  .gn3-feature-c-h2::after { content: ""; position: absolute; left: 0; bottom: 0; width: 32px; height: 1px; background: #5c5a52; }
+  .gn3-feature-c-body { font-size: 14px; line-height: 2; letter-spacing: .03em; font-weight: 500; color: #47433a; }
+  .gn3-feature-c-main, .gn3-feature-c-sub1, .gn3-feature-c-sub2 { position: relative; margin-bottom: 8px; }
+  .gn3-feature-c-main { aspect-ratio: 391 / 250; }
+  .gn3-feature-c-sub1, .gn3-feature-c-sub2 { aspect-ratio: 295 / 122; }
+  /* 札: 写真に焼き込まれた紙の札(文字は消してある)を、本物の紙の札で覆う。文字は 14px 以上なので、副題は 2 列に折り返す */
+  .gn3-feature-tag { position: absolute; display: flex; flex-direction: row-reverse; align-items: flex-start; gap: 6px; padding: 10px 9px; background: #f2e9d9; box-shadow: 0 2px 8px rgba(0, 0, 0, .35); }
+  .gn3-feature-tag b, .gn3-feature-tag span { writing-mode: vertical-rl; text-orientation: upright; white-space: normal; color: #2c241b; letter-spacing: .08em; line-height: 1.15; }
+  .gn3-feature-tag b { font-size: 16px; font-weight: 600; }
+  .gn3-feature-tag span { font-size: 14px; font-weight: 500; max-height: 112px; padding-top: 2px; }
+  .gn3-feature-tag { width: 26%; justify-content: flex-start; }
+  .gn3-feature-tag-1 { left: 3.6%; top: 18%; min-height: 68%; }
+  .gn3-feature-tag-2 { right: 3.2%; top: 5%; bottom: 0.5%; }
+  .gn3-feature-tag-3 { right: 3.2%; top: 4%; bottom: 0; }
+
+  /* 店の空気 */
+  .gn3-feature-d { background: #0d1920; }
+  .gn3-feature-d .gn3-feature-in { padding-inline: 0; }
+  .gn3-feature-d-text { order: 1; padding: 28px 20px 28px; }
+  .gn3-feature-d-text .gn3-feature-label { color: #b8c2c9; }
+  .gn3-feature-d-text .gn3-feature-label::after { background: #b0603f; }
+  .gn3-feature-d-h2 { font-size: clamp(21px, 6vw, 26px); line-height: 1.5; letter-spacing: .08em; font-weight: 500; color: #f4f9f8; margin-bottom: 14px; }
+  .gn3-feature-d-body { font-size: 14px; line-height: 2; letter-spacing: .03em; font-weight: 500; color: #c9d1d6; }
+  .gn3-feature-d-counter { order: 2; position: relative; aspect-ratio: 410 / 187; overflow: hidden; }
+  .gn3-feature-d-counter img { width: 172.7%; max-width: none; height: auto; margin-left: -72.7%; }
+  .gn3-feature-d-vase, .gn3-feature-d-sign { order: 3; }
+  .gn3-feature-d .gn3-feature-in { display: grid; grid-template-columns: 127fr 243fr; gap: 4px; }
+  .gn3-feature-d-text, .gn3-feature-d-counter { grid-column: 1 / -1; }
+  .gn3-feature-d-vase, .gn3-feature-d-sign { aspect-ratio: auto; }
+  .gn3-feature-d-vase img, .gn3-feature-d-sign img { aspect-ratio: auto; height: 100%; }
+  .gn3-feature-d-vase { aspect-ratio: 127 / 187; }
+  .gn3-feature-d-sign { aspect-ratio: 243 / 187; }
+
+  /* 店舗情報 */
+  .gn3-feature-i { padding-block: 24px 32px; }
+  .gn3-feature-i-photo { aspect-ratio: 271 / 108; margin-bottom: 18px; }
+  .gn3-feature-i-label { color: #55524d; }
+  .gn3-feature-i-label::after { background: #9a4a38; }
+  .gn3-feature-i-name { font-size: 24px; letter-spacing: .14em; font-weight: 500; color: #1b1713; line-height: 1.4; }
+  .gn3-feature-i-tag { margin-top: 6px; font-size: 16px; letter-spacing: .05em; font-weight: 600; color: #2a2620; }
+  .gn3-feature-i-desc { margin-top: 8px; font-size: 14px; line-height: 1.9; letter-spacing: .03em; font-weight: 500; color: #55524d; }
+  .gn3-feature-i-table { margin: 20px 0 0; padding-left: 14px; border-left: 2px solid #6d6a63; }
+  .gn3-feature-i-table > div { display: flex; align-items: center; min-height: 44px; border-bottom: 1px solid rgba(60, 56, 47, .14); }
+  .gn3-feature-i-table dt { display: flex; align-items: center; flex: 0 0 112px; font-size: 14px; letter-spacing: .08em; color: #3a362f; font-weight: 500; }
+  .gn3-feature-i-table dt svg { width: 14px; height: 14px; margin-right: 10px; color: #1d1a16; flex: none; }
+  .gn3-feature-i-table dd { font-size: 14px; letter-spacing: .04em; color: #3a362f; font-weight: 500; }
+  .gn3-feature-i-map { margin-top: 18px; aspect-ratio: 141 / 69; }
+  .gn3-feature .gn3-feature-i-btn { margin-top: 14px; min-height: 48px; display: flex; align-items: center; justify-content: center; gap: 18px; background: #0d1922; color: #d3dbe0; border-radius: 3px; font-family: var(--gn3-f-mincho); font-size: 15px; letter-spacing: .1em; font-weight: 500; }
+  .gn3-feature .gn3-feature-i-btn svg { width: 16px; height: 10px; }
+}

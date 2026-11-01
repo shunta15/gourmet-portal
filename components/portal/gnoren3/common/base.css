@@ -1,0 +1,172 @@
+/* グルメ試作「暖簾 3」の共通の土台(見本 5 枚 2026-11-01 = 1086×1448px の 1:1 再現用)。
+   すべて .gn3-root の下の .gn3-* に閉じ込める。暖簾 2(.gn-root / .gn-*)と同時に読み込まれても衝突しない。
+
+   ■ 寸法: --u = 見本の 1 画素。PC では --u = min(画面の幅, 1440px) ÷ 1086。
+     ページ担当は、見本の画像で測った数字 N をそのまま calc(var(--u) * N) と書く。
+     ★ 新見本はヘッダー(高さ 55u の濃い帯)が「流れの中」にあり、ヒーローはその下から始まる。
+       children 内の y = 見本の y − 55。--gn3-hh(= 55u)を使うと「見本の y = hh + children 内の y」と書ける。
+   ■ スマホ(≤768px): --u は 1px 固定(誤って使っても崩れない)。ふつうの px / % / clamp() で組む。 */
+
+body:has(.gn3-root) { background: #ece8dd; cursor: auto; }
+body:has(.gn3-root) > .cursor-dot, body:has(.gn3-root) > .cursor-ring { display: none !important; }
+.gn3-root, .gn3-root * { cursor: auto; }
+.gn3-root a, .gn3-root a *, .gn3-root button, .gn3-root button * { cursor: pointer; }
+
+.gn3-root {
+  /* パレット(新見本から採色。ページ担当は自分の見本で測り直して上書きしてよい) */
+  --gn3-bg: #ece8dd;          /* ページの生成りの地 */
+  --gn3-paper: #f6f3ec;       /* カードの紙 */
+  --gn3-linen: #e6e0d2;       /* 帯の生成り */
+  --gn3-navy: #0d1c2b;        /* 紺の暖簾・紺の帯 */
+  --gn3-red: #78201a;         /* 赤い暖簾 */
+  --gn3-red-deep: #5a0f0b;
+  --gn3-sand: #c9b799;        /* 麻色の暖簾 */
+  --gn3-band: #170c06;        /* ヘッダー・フッターの木の板(見本 0〜48u の中央値 ≈ rgb(22,12,6)) */
+  --gn3-rail: #6b4020;        /* ヘッダー下縁の銅色の桟 */
+  --gn3-cream: #f3eee6;       /* 濃い地の上の文字 */
+  --gn3-ink: #26211d;
+  --gn3-ink-soft: #4a423c;
+  --gn3-muted: #6c665c;
+  --gn3-line: #d4cdbd;
+  --gn3-terracotta: #b35431;
+  /* 書体(next/font が layout で注入) */
+  --gn3-f-mincho: var(--gn3-mincho), "Shippori Mincho", "Hiragino Mincho ProN", "Yu Mincho", serif;
+  --gn3-f-gothic: var(--gn3-gothic), "Zen Kaku Gothic New", "Hiragino Kaku Gothic ProN", "Noto Sans JP", sans-serif;
+  --gn3-f-script: var(--gn3-script), "Mrs Saint Delafield", "Snell Roundhand", cursive;
+
+  --u: calc(min(100cqw, 1440px) / 1086);
+  --gn3-hh: calc(var(--u) * 55); /* ヘッダーの高さ */
+
+  container-type: inline-size;
+  position: relative;
+  overflow-x: clip;
+  background: var(--gn3-bg);
+  color: var(--gn3-ink);
+  font-family: var(--gn3-f-gothic);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  text-size-adjust: 100%;
+}
+.gn3-root *, .gn3-root *::before, .gn3-root *::after { box-sizing: border-box; }
+.gn3-root :where(h1, h2, h3, h4, p, ul, ol, li, figure) { margin: 0; padding: 0; }
+.gn3-root :where(ul, ol) { list-style: none; }
+.gn3-root a { color: inherit; text-decoration: none; }
+.gn3-root img { display: block; max-width: 100%; }
+.gn3-root button { font: inherit; color: inherit; }
+
+/* 中身の幅(PC は 1086u = 最大 1440px・中央。スマホは左右 16px の余白) */
+.gn3-wrap { width: calc(var(--u) * 1086); margin-inline: auto; position: relative; }
+
+.gn3-script { font-family: var(--gn3-f-script); font-weight: 400; line-height: 1; }
+.gn3-mincho { font-family: var(--gn3-f-mincho); }
+
+/* 麻の紙の地(外部画像なし。薄い織り目 + ざらつき)。見本の地(#ece8dd)に合わせた生成り */
+.gn3-linen {
+  background-color: var(--gn3-bg);
+  background-image:
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='240' height='240'%3E%3Cfilter id='f' x='0' y='0' width='100%25' height='100%25'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2' seed='5' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 .45 0 0 0 0 .38 0 0 0 0 .3 .3 0 0 0 -.1'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23f)'/%3E%3C/svg%3E"),
+    repeating-linear-gradient(0deg, rgba(120, 100, 80, .03) 0 1px, transparent 1px 3px),
+    repeating-linear-gradient(90deg, rgba(120, 100, 80, .025) 0 1px, transparent 1px 3px);
+}
+
+.gn3-decor { height: auto; pointer-events: none; user-select: none; }
+
+/* ───────── 見出し(SectionHeading) ───────── */
+.gn3-sh { display: flex; align-items: baseline; flex-wrap: wrap; gap: 4px calc(var(--u) * 14); }
+.gn3-sh-title { font-family: var(--gn3-f-mincho); font-weight: 600; font-size: var(--gn3-h-fs, calc(var(--u) * 20)); letter-spacing: .12em; line-height: 1.3; color: var(--gn3-h-color, #3a362f); }
+.gn3-sh-lead { font-size: max(11px, calc(var(--u) * 10.5)); color: var(--gn3-muted); letter-spacing: .04em; }
+.gn3-root .gn3-sh-more { margin-left: auto; display: inline-flex; align-items: center; gap: calc(var(--u) * 8); font-size: max(11px, calc(var(--u) * 9.5)); color: var(--gn3-ink-soft); letter-spacing: .06em; white-space: nowrap; }
+.gn3-sh-more svg { width: calc(var(--u) * 14); min-width: 12px; height: auto; }
+
+/* ───────── ヘッダー(PC) ─────────
+   高さ 55u の帯。見本を測った値(1_最初 / 2_さがす / 5_特集一覧 の平均。3・4 は全体が右へ 13〜28u ずれているが 1・2・5 に揃えた):
+   ロゴの器 x106〜133 y15〜39 / 「マチノワ」x150〜253 y16〜37 / 縦線 x≈274 y22〜34 / 見出し文 x289〜449 y23〜33
+   ナビ トップ x644〜674・さがす x720〜751・店舗紹介 x793〜838・特集 x879〜900(文字 y23〜32・下線 y44〜46)/ 虫眼鏡 x959〜971 y22〜34
+   帯の色は rgb(22,12,6) 前後の木目、下の縁 y48〜54 に銅色の桟(ピーク rgb(110,65,30))。 */
+.gn3-hdr {
+  position: relative; z-index: 50; height: var(--gn3-hh);
+  background-color: var(--gn3-band);
+  background-image:
+    linear-gradient(to bottom, rgba(255, 220, 170, .0) 0, rgba(255, 220, 170, .02) 45%, rgba(255, 220, 170, .0) 88%),
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='600' height='60'%3E%3Cfilter id='g' x='0' y='0' width='100%25' height='100%25'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.004 .5' numOctaves='3' seed='11' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 .45 0 0 0 0 .26 0 0 0 0 .1 .22 0 0 0 -.07'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23g)'/%3E%3C/svg%3E");
+  background-size: 100% 100%, 600px 100%;
+  color: var(--gn3-cream);
+}
+.gn3-hdr::after { /* 下の縁の銅色の桟(y48〜54)。ヒーローとの境目 */
+  content: ""; position: absolute; left: 0; right: 0; top: calc(var(--u) * 48); height: calc(var(--u) * 7);
+  background: linear-gradient(to bottom, #2e1704 0, #4f3118 25%, #6a4020 45%, #4a2d16 70%, #170c06 100%);
+  pointer-events: none;
+}
+.gn3-hdr-in { position: relative; width: calc(var(--u) * 1086); height: 100%; margin-inline: auto; }
+
+.gn3-logo { position: absolute; left: calc(var(--u) * 106); top: 0; height: calc(var(--u) * 55); width: calc(var(--u) * 150); }
+.gn3-logo-mark { position: absolute; left: 0; top: calc(var(--u) * 15); width: calc(var(--u) * 27); height: calc(var(--u) * 25); }
+.gn3-logo-name { position: absolute; left: calc(var(--u) * 43); top: 0; height: calc(var(--u) * 52); display: flex; align-items: center; font-family: var(--gn3-f-mincho); font-weight: 700; font-size: calc(var(--u) * 26); letter-spacing: .05em; line-height: 1; color: #fbf8f2; -webkit-text-stroke: calc(var(--u) * .5) currentColor; white-space: nowrap; padding-top: calc(var(--u) * 1); }
+.gn3-hdr-sep { position: absolute; left: calc(var(--u) * 273.5); top: calc(var(--u) * 22.5); width: calc(var(--u) * 1); height: calc(var(--u) * 12.5); background: rgba(243, 238, 230, .32); }
+.gn3-logo-tag { position: absolute; left: calc(var(--u) * 288.5); top: 0; height: calc(var(--u) * 55); display: flex; align-items: center; font-family: var(--gn3-f-mincho); font-weight: 600; font-size: max(10px, calc(var(--u) * 9.8)); letter-spacing: .09em; line-height: 1; color: rgba(248, 243, 235, .95); white-space: nowrap; padding-top: calc(var(--u) * 1); }
+
+.gn3-nav { position: absolute; left: calc(var(--u) * 644); top: 0; height: calc(var(--u) * 55); display: flex; }
+.gn3-nav a { position: relative; display: flex; align-items: center; justify-content: center; height: calc(var(--u) * 55); font-family: var(--gn3-f-mincho); font-weight: 600; font-size: max(10.5px, calc(var(--u) * 11.6)); letter-spacing: .08em; line-height: 1; color: #f6f2ea; -webkit-text-stroke: calc(var(--u) * .25) currentColor; white-space: nowrap; }
+.gn3-nav a span { display: block; padding-top: calc(var(--u) * 1); }
+.gn3-nav a:nth-child(1) { width: calc(var(--u) * 31); margin-right: calc(var(--u) * 46); }
+.gn3-nav a:nth-child(2) { width: calc(var(--u) * 32); margin-right: calc(var(--u) * 40); }
+.gn3-nav a:nth-child(3) { width: calc(var(--u) * 46); margin-right: calc(var(--u) * 39); }
+.gn3-nav a:nth-child(4) { width: calc(var(--u) * 22); }
+.gn3-nav a[aria-current="page"]::after { content: ""; position: absolute; left: 0; right: 0; top: calc(var(--u) * 44); height: calc(var(--u) * 2); background: #f4efe6; }
+.gn3-nav a:hover { color: #ffd9a8; }
+
+.gn3-hdr-search { position: absolute; left: calc(var(--u) * 956); top: calc(var(--u) * 19.2); width: calc(var(--u) * 18); height: calc(var(--u) * 18); color: #f4efe6; display: block; }
+.gn3-hdr-search::before { content: ""; position: absolute; inset: calc(var(--u) * -12); }
+.gn3-hdr-search svg { width: 100%; height: 100%; display: block; }
+.gn3-hdr-search:hover { color: #ffd9a8; }
+
+.gn3-burger, .gn3-mpanel { display: none; }
+
+/* ───────── フッター ───────── */
+.gn3-foot { background: var(--gn3-band); color: var(--gn3-cream); padding-block: calc(var(--u) * 36) calc(var(--u) * 30); border-top: calc(var(--u) * 3) solid #3a2210; }
+.gn3-foot-in { display: flex; align-items: center; gap: calc(var(--u) * 40); padding-inline: calc(var(--u) * 106); }
+.gn3-foot-logo { display: flex; align-items: center; gap: calc(var(--u) * 14); }
+.gn3-foot-mark { width: calc(var(--u) * 27); min-width: 24px; height: auto; flex: none; }
+.gn3-foot-name { font-family: var(--gn3-f-mincho); font-weight: 700; font-size: max(18px, calc(var(--u) * 22)); letter-spacing: .08em; line-height: 1; white-space: nowrap; }
+.gn3-foot-tag { font-family: var(--gn3-f-mincho); font-size: max(11px, calc(var(--u) * 10)); letter-spacing: .09em; color: rgba(243, 238, 230, .78); white-space: nowrap; padding-left: calc(var(--u) * 14); border-left: 1px solid rgba(243, 238, 230, .3); }
+.gn3-foot-nav { display: flex; gap: calc(var(--u) * 28); margin-left: auto; font-family: var(--gn3-f-mincho); font-weight: 600; font-size: max(12px, calc(var(--u) * 12)); letter-spacing: .08em; }
+.gn3-foot-nav a:hover { color: #ffd9a8; }
+.gn3-foot-copy { font-size: max(11px, calc(var(--u) * 10)); color: rgba(243, 238, 230, .65); letter-spacing: .06em; }
+
+/* ───────── スマホ(≤768px) ───────── */
+@media (max-width: 768px), (orientation: landscape) and (max-height: 500px) {
+  .gn3-root { --u: 1px; --gn3-hh: 56px; }
+  .gn3-wrap { width: 100%; padding-inline: 16px; }
+
+  .gn3-hdr { position: sticky; top: 0; height: 56px; border-bottom: 3px solid #4a2c14; background-size: 100% 100%, 400px 100%; }
+  .gn3-hdr::after { display: none; }
+  .gn3-hdr-in { width: 100%; display: flex; align-items: center; justify-content: space-between; padding-left: 16px; padding-right: 6px; }
+  .gn3-logo { position: static; display: flex; align-items: center; gap: 10px; width: auto; height: 44px; }
+  .gn3-logo-mark { position: static; width: 28px; height: 26px; }
+  .gn3-logo-name { position: static; height: auto; font-size: 22px; padding-top: 0; }
+  .gn3-hdr-sep, .gn3-logo-tag, .gn3-nav, .gn3-hdr-search { display: none; }
+
+  .gn3-burger { display: grid; place-items: center; width: 44px; height: 44px; padding: 0; border: 0; background: transparent; color: var(--gn3-cream); cursor: pointer; }
+  .gn3-burger svg { width: 26px; height: 26px; }
+  .gn3-burger:focus-visible { outline: 2px solid #ffd9a8; outline-offset: -2px; border-radius: 6px; }
+
+  .gn3-mpanel { position: absolute; top: 100%; left: 0; right: 0; background: var(--gn3-band); border-bottom: 3px solid #4a2c14; box-shadow: 0 10px 18px rgba(20, 10, 4, .35); padding: 4px 16px 16px; }
+  .gn3-mpanel:not([hidden]) { display: block; }
+  .gn3-mpanel nav a { display: flex; align-items: center; gap: 10px; min-height: 52px; font-family: var(--gn3-f-mincho); font-size: 17px; font-weight: 600; letter-spacing: .08em; border-bottom: 1px solid rgba(243, 238, 230, .18); color: var(--gn3-cream); }
+  .gn3-mpanel nav a svg { width: 20px; height: 20px; }
+  .gn3-mpanel nav a[aria-current="page"] { box-shadow: inset 3px 0 0 #f4efe6; padding-left: 12px; }
+  .gn3-mpanel-tag { margin-top: 12px; font-family: var(--gn3-f-mincho); font-size: 14px; letter-spacing: .08em; color: rgba(243, 238, 230, .78); }
+
+  .gn3-sh-title { font-size: var(--gn3-h-fs, 22px); }
+  .gn3-sh-lead { font-size: 13px; flex-basis: 100%; order: 3; }
+  .gn3-root .gn3-sh-more { font-size: 13px; min-height: 44px; align-items: center; text-decoration: underline; text-underline-offset: 4px; }
+  .gn3-sh-more svg { width: 12px; }
+
+  .gn3-foot { padding-block: 28px 24px; }
+  .gn3-foot-in { flex-direction: column; align-items: flex-start; gap: 18px; padding-inline: 16px; }
+  .gn3-foot-logo { flex-wrap: wrap; row-gap: 6px; min-height: 44px; }
+  .gn3-foot-tag { flex-basis: 100%; border-left: 0; padding-left: 0; font-size: 14px; white-space: normal; }
+  .gn3-foot-nav { margin-left: 0; flex-wrap: wrap; gap: 4px 22px; font-size: 15px; }
+  .gn3-foot-nav a { min-height: 44px; min-width: 44px; padding-inline: 4px; display: inline-flex; align-items: center; justify-content: center; }
+  .gn3-foot-copy { font-size: 14px; }
+}

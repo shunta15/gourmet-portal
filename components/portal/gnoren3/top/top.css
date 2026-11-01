@@ -1,0 +1,187 @@
+/* 暖簾 3 トップ(見本 1_最初.png・1086×1448 の 1:1 再現)。クラス接頭辞は .gn3-top-。
+ * 寸法は --u(見本の 1 画素)。座標は TSX で --x / --y / --cy / --f / --w / --h の「数」だけ渡し、ここで calc(var(--u) * 数) にする。
+ *
+ * ■ 測った値(見本 1・1086×1448 / y は見本の絶対値。main 内の y = 見本 y − 55)
+ *   ヒーロー      y55〜541(高さ 486)。写真 1 枚 + 文字・ロゴ・黒板・提灯・数字帯を HTML で重ねる
+ *   料理セクション y541〜804。h2「料理からさがす」ink x49〜193 y559〜577(19u・字間 .1em)
+ *                 カード 7 枚 y589〜787(高さ 199)。左端 49/186/333/469/612/755/899・右端 1038(白い継ぎ目の位置)
+ *                 絵柄 y609〜636(中心 622.5)・ラベル y645〜659(中心 651.5)・文字 14u
+ *   エリア帯      y804〜1027(高さ 223)。旗 7 本:中央 x123〜192 / 東 215〜278 / 西 310〜373 / 南 405〜467 / 北 497〜554 / 駅周辺 588〜643 / 郊外 680〜734
+ *                 文字は縦書き 14u・字間 .09em・丸矢印は直径 19(中心 y 987〜998)。右に「全 41 エリア からさがす」+丸矢印(直径 28・中心 1028,970.5)
+ *   シーン        y1027〜1226。カード 6 枚 y1077〜1212(高さ 136)。左端 51/221/386/549/714/875・幅 163/160/156/159/156/162。角 4u
+ *                 文字は 2 行(中心 y1168.5 / 1189.5・13u)・左は カード左 +14〜19
+ *   特集          y1226〜1448。カード 4 枚 y1268〜1422(高さ 155)。左端 51/299/547/791・幅 242/237/236/246。角は直角
+ *                 文字は 2 行(中心 y1381 / 1403.5・14.5u)
+ *   色            紙 ≈ rgb(234,227,214)・見出しの墨 ≈ #1c1612・リード ≈ #4a4137・暖簾の墨 ≈ rgb(20,5,0)
+ */
+
+.gn3-top {
+  --top-paper: #eee8dc;
+  --top-ink: #1d1813;
+  --top-lead: #4a4137;
+  --top-cream: #f4efe5;
+  --top-navy: #0f2038;
+  --top-navy-bg: #0a1724;
+  --top-red: #7a2522;
+  --top-linen: #d9d1bf;
+  display: block;
+  background: var(--top-paper);
+  color: var(--top-ink);
+}
+.gn3-top a:focus-visible { outline: 2px solid #e9b873; outline-offset: 2px; }
+
+/* 絶対配置の共通(--x --y --w --h は u の数。--cy があれば文字の縦中心) */
+.gn3-top-a { --x: initial; --y: initial; --w: initial; --h: initial; --cy: initial; --f: initial; position: absolute; left: calc(var(--u) * var(--x)); top: calc(var(--u) * var(--y)); width: calc(var(--u) * var(--w)); height: calc(var(--u) * var(--h)); }
+.gn3-top-a[style*="--cy"] { top: calc(var(--u) * (var(--cy) - var(--f) / 2)); height: auto; }
+.gn3-top-a[style*="--f"] { font-size: calc(var(--u) * var(--f)); line-height: 1; white-space: nowrap; }
+
+/* ───────── 全幅の帯(ヒーロー・エリア) ───────── */
+.gn3-top-bleed { position: relative; overflow: hidden; }
+.gn3-top-bleed--hero { background: #0b0604; }
+.gn3-top-bleed--area { background: var(--top-navy-bg); }
+/* 1440px より広い画面の左右: 写真の端 8px を引き伸ばした縞が出るので、ぼかして暗くし、外へ向かって暗い地になじませる(内側 24px は写真の下に潜らせてぼかしの縁を隠す) */
+.gn3-top-edge { opacity: .9; position: absolute; top: 0; bottom: 0; background-size: 100% 100%; background-repeat: no-repeat; pointer-events: none; filter: blur(18px) brightness(.55) saturate(.85); }
+.gn3-top-edge--l { left: 0; width: calc((100% - var(--u) * 1086) / 2 + 24px); -webkit-mask-image: linear-gradient(to right, transparent 0, #000 85%); mask-image: linear-gradient(to right, transparent 0, #000 85%); }
+.gn3-top-edge--r { right: 0; width: calc((100% - var(--u) * 1086) / 2 + 24px); -webkit-mask-image: linear-gradient(to left, transparent 0, #000 85%); mask-image: linear-gradient(to left, transparent 0, #000 85%); }
+
+.gn3-top-hero, .gn3-top-area, .gn3-top-in { position: relative; width: calc(var(--u) * 1086); margin-inline: auto; }
+.gn3-top-hero { height: calc(var(--u) * var(--h)); }
+.gn3-top-stage { position: absolute; inset: 0; overflow: hidden; }
+.gn3-top-pic { position: relative; width: 100%; height: 100%; }
+.gn3-top-pic-img { position: absolute; left: 0; top: 0; width: 100%; height: 100%; max-width: none; }
+.gn3-top-area-img { position: absolute; inset: 0; background-size: 100% 100%; background-repeat: no-repeat; }
+.gn3-top-area { height: calc(var(--u) * var(--h)); }
+
+/* ヒーローの文字(暖簾の墨・黒板のチョーク) */
+.gn3-top-v { position: absolute; left: calc(var(--u) * var(--x)); top: calc(var(--u) * var(--y)); font-size: calc(var(--u) * var(--f)); line-height: 1; letter-spacing: calc(var(--u) * var(--ls)); writing-mode: vertical-rl; text-orientation: upright; white-space: nowrap; font-family: var(--gn3-f-mincho); font-weight: 600; font-feature-settings: "palt" 0; }
+.gn3-top-ink { color: #1f130b; opacity: .92; mix-blend-mode: multiply; }
+.gn3-top-ink--s { font-weight: 600; opacity: .96; }
+.gn3-top-mark { display: block; }
+.gn3-top-logo { font-family: var(--gn3-f-mincho); font-weight: 700; letter-spacing: calc(var(--u) * 6.7); -webkit-text-stroke: calc(var(--u) * .7) currentColor; }
+.gn3-top-lantern { font-family: var(--gn3-f-mincho); font-weight: 700; letter-spacing: calc(var(--u) * 3.6); -webkit-text-stroke: calc(var(--u) * .4) currentColor; }
+.gn3-top-chalk { color: rgba(246, 242, 234, .92); font-weight: 500; text-shadow: 0 0 calc(var(--u) * 1.5) rgba(255, 255, 255, .25); }
+
+/* 数字帯(PC はヒーローの上に直接置く) */
+.gn3-top-stats, .gn3-top-stat { display: contents; }
+.gn3-top-stat-icon { color: #e3ddd1; }
+.gn3-top-stat-num { font-family: var(--gn3-f-mincho); font-weight: 500; letter-spacing: .02em; color: #f6f1e8; }
+.gn3-top-stat-lab { font-family: var(--gn3-f-mincho); font-weight: 500; letter-spacing: calc(var(--u) * var(--ls) * var(--f)); color: #f1ece2; }
+.gn3-top-stat-div { background: rgba(228, 222, 212, .38); }
+.gn3-top-mlead { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
+
+/* ───────── セクション共通 ───────── */
+.gn3-top-sec { position: relative; height: calc(var(--u) * var(--h)); }
+.gn3-top-in { height: 100%; }
+.gn3-top-sec {
+  /* 紙の地。見本は織り目でなくゆるいまだら(1086px で数十 px の濃淡・±3 程度)。外部画像なし */
+  background-color: var(--top-paper);
+  background-image: radial-gradient(ellipse 62% 130% at 50% 50%, rgba(255, 252, 244, .34), rgba(255, 252, 244, 0) 100%), url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='520' height='520'%3E%3Cfilter id='p' x='0' y='0' width='100%25' height='100%25'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.011 .014' numOctaves='3' seed='8' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 .55 0 0 0 0 .45 0 0 0 0 .33 .9 0 0 0 -.38'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23p)'/%3E%3C/svg%3E");
+  background-size: 100% 100%, 520px 520px;
+}
+
+/* 見出し */
+.gn3-top-h2 { font-family: var(--gn3-f-mincho); font-weight: 700; letter-spacing: .115em; color: var(--top-ink); -webkit-text-stroke: calc(var(--u) * .25) currentColor; }
+.gn3-top-lead { font-family: var(--gn3-f-mincho); font-weight: 500; letter-spacing: .05em; color: var(--top-lead); }
+.gn3-top-more { display: block; font-family: var(--gn3-f-mincho); font-weight: 500; letter-spacing: .05em; color: #3a332a; }
+.gn3-top-more-arrow { position: absolute; left: calc(var(--u) * var(--ax)); top: 50%; width: calc(var(--u) * 12.5); height: calc(var(--u) * 6.25); margin-top: calc(var(--u) * -3); }
+.gn3-top-hd--dark .gn3-top-h2 { color: var(--top-cream); }
+.gn3-top-hd--dark .gn3-top-lead { color: rgba(238, 232, 220, .86); }
+.gn3-top-hd--dark .gn3-top-more { color: #eee8dc; }
+
+/* 料理カード */
+.gn3-top-ccard, .gn3-top-ccard-in, .gn3-top-scard, .gn3-top-fcard { display: block; position: relative; width: 100%; height: 100%; }
+.gn3-top-ccard img, .gn3-top-scard img, .gn3-top-fcard img { position: absolute; inset: 0; width: 100%; height: 100%; max-width: none; object-fit: cover; }
+.gn3-top-cicon { color: #ece6d9; }
+.gn3-top-tone--linen .gn3-top-cicon { color: #1b2634; }
+.gn3-top-clabel { position: absolute; left: calc(var(--u) * var(--cx)); transform: translateX(-50%); font-family: var(--gn3-f-mincho); font-weight: 700; letter-spacing: .04em; color: #f1ece2; }
+.gn3-top-tone--linen .gn3-top-clabel { color: #231d17; }
+.gn3-top-ccard:hover img, .gn3-top-scard:hover img, .gn3-top-fcard:hover img { filter: brightness(1.06); }
+
+/* エリアの旗 */
+.gn3-top-flags, .gn3-top-flag-li { display: contents; }
+.gn3-top-flag { display: block; }
+.gn3-top-flag-t { writing-mode: vertical-rl; text-orientation: upright; font-family: var(--gn3-f-mincho); font-weight: 700; letter-spacing: calc(var(--u) * var(--ls) * var(--f)); color: #f1ece2; }
+.gn3-top-flag.gn3-top-tone--linen .gn3-top-flag-t { color: #28221c; }
+.gn3-top-flag-c { color: #f1ece2; }
+.gn3-top-flag.gn3-top-tone--linen .gn3-top-flag-c { color: #3a332a; }
+.gn3-top-all { display: block; color: #f1ece2; }
+.gn3-top-all-a, .gn3-top-all-b { font-family: var(--gn3-f-mincho); font-weight: 500; letter-spacing: .06em; color: #f1ece2; }
+.gn3-top-all-a b { font-weight: 500; font-size: 1.75em; line-height: 0; letter-spacing: .02em; margin: 0 .04em; }
+.gn3-top-all-c { color: #f1ece2; }
+
+/* シーン・特集カード */
+.gn3-top-scenes, .gn3-top-cuisine, .gn3-top-feats { display: contents; }
+.gn3-top-scard { border-radius: calc(var(--u) * 4); overflow: hidden; }
+.gn3-top-scard-t, .gn3-top-fcard-t { font-family: var(--gn3-f-mincho); font-weight: 500; letter-spacing: .1em; line-height: 1.6; color: #f6f1e8; text-shadow: 0 1px 6px rgba(0, 0, 0, .55); }
+.gn3-top-scard-t.gn3-top-a { top: calc(var(--u) * (var(--cy) - 10.5)); line-height: calc(var(--u) * 21); font-weight: 600; letter-spacing: .0em; font-feature-settings: "palt"; }
+.gn3-top-fcard-t.gn3-top-a { top: calc(var(--u) * (var(--cy) - 11.25)); line-height: calc(var(--u) * 22.5); font-weight: 600; letter-spacing: .04em; font-feature-settings: "palt"; }
+
+/* ───────── スマホ(≤768px)─────────
+ * 縦に積む。本文 14px 以上・押す所 44px 以上・横スクロール無し。--u は 1px(ヒーローと料理カードだけ局所的に再定義) */
+@media (max-width: 768px), (orientation: landscape) and (max-height: 500px) {
+  .gn3-top { --top-pad: 16px; }
+  .gn3-top a { -webkit-tap-highlight-color: transparent; }
+
+  /* ヒーロー: 暖簾 3 枚が入る範囲(x195〜945)を画面幅に合わせた写真 + その下に見出し文 + 数字 */
+  .gn3-top-hero { width: 100%; height: auto; }
+  .gn3-top-stage { position: relative; inset: auto; height: calc(var(--u) * 486); --u: calc(100cqw / 750); }
+  .gn3-top-pic { width: calc(var(--u) * 1086); height: calc(var(--u) * 486); margin-left: calc(var(--u) * -195); }
+  .gn3-top-mlead { position: static; width: auto; height: auto; overflow: visible; clip-path: none; white-space: normal; padding: 20px var(--top-pad) 8px; background: #0b0604; text-align: center; }
+  .gn3-top-h1 { margin: 0; font-family: var(--gn3-f-mincho); font-weight: 700; font-size: 22px; line-height: 1.5; letter-spacing: .08em; color: var(--top-cream); }
+  .gn3-top-mlead p { margin: 6px 0 0; font-family: var(--gn3-f-mincho); font-size: 14px; line-height: 1.7; letter-spacing: .05em; color: rgba(244, 239, 229, .85); }
+  .gn3-top-stats { display: grid; grid-template-columns: repeat(3, 1fr); gap: 0; padding: 16px 8px 22px; background: #0b0604; }
+  .gn3-top-stat { display: grid; grid-template-columns: auto auto; grid-template-rows: auto auto; justify-content: center; align-items: center; column-gap: 8px; padding: 4px 4px; min-height: 44px; }
+  .gn3-top-stat + .gn3-top-stat { border-left: 1px solid rgba(228, 222, 212, .3); }
+  .gn3-top-stats .gn3-top-a { position: static; left: auto; top: auto; width: auto; height: auto; transform: none; }
+  .gn3-top-stat-icon { grid-row: 1 / 3; width: 26px !important; height: 24px !important; }
+  .gn3-top-stat-num { font-size: 26px !important; line-height: 1.1 !important; }
+  .gn3-top-stat-lab { font-size: 14px !important; line-height: 1.3 !important; }
+  .gn3-top-stat-div { display: none; }
+
+  /* セクション */
+  .gn3-top-sec { height: auto; padding: 28px var(--top-pad) 12px; }
+  .gn3-top-in, .gn3-top-area { width: auto; height: auto; }
+  .gn3-top-hd { display: flex; flex-wrap: wrap; align-items: baseline; gap: 2px 12px; margin-bottom: 14px; }
+  .gn3-top-hd .gn3-top-a { position: static; left: auto; top: auto; width: auto; height: auto; }
+  .gn3-top-h2 { font-size: 21px !important; line-height: 1.4 !important; white-space: normal !important; }
+  .gn3-top-lead { font-size: 14px !important; line-height: 1.5 !important; white-space: normal !important; flex: 1 1 100%; }
+  .gn3-top-more { margin-left: auto; min-height: 44px; font-size: 14px !important; gap: 8px; align-self: center; display: flex; align-items: center; position: relative; }
+  .gn3-top-more-arrow { position: static; margin: 0; width: 16px; height: 8px; }
+  .gn3-top-hd--dark .gn3-top-h2 { color: var(--top-cream); }
+
+  /* 料理: 2 列 */
+  .gn3-top-cuisine { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; }
+  .gn3-top-ccard-li.gn3-top-a { position: static; width: auto; height: auto; }
+  .gn3-top-ccard-li:last-child { grid-column: 1 / -1; justify-self: center; width: calc(50% - 6px); }
+  .gn3-top-ccard { height: auto; container-type: inline-size; }
+  .gn3-top-ccard-in { height: auto; aspect-ratio: var(--cw) / 199; --u: calc(100cqw / var(--cw)); }
+  .gn3-top-clabel { font-size: calc(var(--u) * 14) !important; }
+
+  /* エリア: 旗を CSS で組み直す(PC は絵の中の旗。4 列 × 2 行・最後の 1 つは「全 41 エリア」) */
+  .gn3-top-bleed--area { background: var(--top-navy-bg); padding: 28px var(--top-pad) 28px; }
+  .gn3-top-edge { display: none; }
+  .gn3-top .gn3-top-area-img { display: none; }
+  .gn3-top-area .gn3-top-hd .gn3-top-h2 { color: var(--top-cream); }
+  .gn3-top-flags { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 10px; }
+  .gn3-top-flag-li { display: block; }
+  .gn3-top-flag.gn3-top-a, .gn3-top-all.gn3-top-a { position: static; width: auto; height: auto; }
+  .gn3-top-flag { display: flex; flex-direction: column; align-items: center; justify-content: space-between; min-height: 190px; padding: 18px 4px 14px; border-radius: 3px 3px 8px 8px; background: var(--top-navy); border-top: 3px solid #2a2118; }
+  .gn3-top-flag.gn3-top-tone--linen { background: var(--top-linen); }
+  .gn3-top-flag.gn3-top-tone--red { background: var(--top-red); }
+  .gn3-top-flag-t.gn3-top-a { position: static; width: auto; height: auto; font-size: 15px !important; line-height: 1.15 !important; letter-spacing: .1em; white-space: normal; }
+  .gn3-top-flag-c.gn3-top-a { position: static; width: 30px; height: 30px; }
+  .gn3-top-all { display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 8px; min-height: 190px; padding: 12px 4px; border: 1px solid rgba(241, 236, 226, .5); border-radius: 8px; text-align: center; }
+  .gn3-top-all .gn3-top-a { position: static; left: auto; top: auto; width: auto; height: auto; transform: none; }
+  .gn3-top-all-a, .gn3-top-all-b { font-size: 14px !important; line-height: 1.4 !important; white-space: normal !important; }
+  .gn3-top-all-b { letter-spacing: 0 !important; white-space: nowrap !important; }
+  .gn3-top-all-a b { display: block; font-size: 30px; line-height: 1.15; margin: 2px 0; }
+  .gn3-top-all-c.gn3-top-a { width: 34px; height: 34px; }
+
+  /* シーン・特集: 2 列 */
+  .gn3-top-scenes, .gn3-top-feats { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; }
+  .gn3-top-scard-li.gn3-top-a, .gn3-top-fcard-li.gn3-top-a { position: static; width: auto; height: auto; }
+  .gn3-top-scard, .gn3-top-fcard { height: auto; aspect-ratio: 163 / 136; border-radius: 6px; overflow: hidden; }
+  .gn3-top-fcard { aspect-ratio: 242 / 155; border-radius: 2px; }
+  .gn3-top-scard-t.gn3-top-a, .gn3-top-fcard-t.gn3-top-a { --x: initial; --y: initial; --w: initial; --h: initial; --cy: initial; --f: initial; position: absolute; left: 12px; right: 8px; top: auto; bottom: 12px; width: auto; height: auto; font-size: 14px !important; line-height: 1.55 !important; white-space: normal !important; letter-spacing: .06em; }
+  .gn3-top-sec:last-of-type { padding-bottom: 32px; }
+}
