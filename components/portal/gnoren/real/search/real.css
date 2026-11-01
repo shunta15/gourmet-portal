@@ -112,7 +112,14 @@
   .gn-search .gn-search-card-st svg { width: 14px; }
   .gn-search .gn-search-card-tags li { font-size: 14px; }
   .gn-search .gn-search-scene-t { font-size: 14px; }
-  .gn-search[data-view="list"] .gn-search-chip { font-size: 13px; }
+  /* 写真の上の分類の札・エリアの札・統計の単位も 14px(統計の注記 dd・見出しの cap は 12px 可)。リストは写真が 112px 幅なので札の余白を詰めて収める */
+  .gn-search .gn-search-chip { font-size: 14px; letter-spacing: 0; }
+  .gn-search[data-view="list"] .gn-search-chip { height: 28px; padding: 0 8px; }
+  .gn-search .gn-search-area { font-size: 14px; }
+  .gn-search[data-view="list"] .gn-search-card-desc { font-size: 14px; }
+  .gn-search-stat dt span { font-size: 14px; }
+  /* 店名リンクの押す範囲を 44px 以上に(見た目・並びは変えない: 余白と負の余白で相殺。カード全体は ::after で元から押せる) */
+  .gn-search-card-name a { display: block; padding-block: 11px; margin-block: -11px; }
 }
 @media (prefers-reduced-motion: reduce) {
   .gn-search-r-disc { transition: none !important; }
