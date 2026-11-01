@@ -107,6 +107,12 @@
   .gn-search-r-lres { padding-top: 22px; }
   .gn-search-r-noph-t { font-size: 15px; padding: 14px; }
   .gn-search[data-view="list"] .gn-search-r-noph-t { font-size: 13px; padding: 8px; }
+  /* 札の情報の行・タグ・シーン名は 14px(README の 14px 規則)。チップは写真の上の補助札なので 13px */
+  .gn-search .gn-search-card-st { font-size: 14px; }
+  .gn-search .gn-search-card-st svg { width: 14px; }
+  .gn-search .gn-search-card-tags li { font-size: 14px; }
+  .gn-search .gn-search-scene-t { font-size: 14px; }
+  .gn-search[data-view="list"] .gn-search-chip { font-size: 13px; }
 }
 @media (prefers-reduced-motion: reduce) {
   .gn-search-r-disc { transition: none !important; }
