@@ -1,25 +1,14 @@
-import { withLegacyFrame } from "@/components/portal/gnoren/common/legacyFrame";
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
-import GourmetNorenShop from "@/components/portal/pages/gourmet-noren-shop";
-import PhotoFeatureShell from "@/components/portal/photoFeature/PhotoFeatureShell";
-import PhotoFeaturePage from "@/components/portal/photoFeature/PhotoFeaturePage";
+import Shell from "@/components/portal/gnoren/common/Shell";
+import { GN_LIVE_LINKS } from "@/components/portal/gnoren/common/nav";
+import ShopPageReal from "@/components/portal/gnoren/real/shop/ShopPageReal";
+import { buildShopPage } from "@/lib/portal/gnoren/shop";
 import { REGIONS } from "@/lib/regions";
 import { getRestaurantById, getAllRestaurantIds } from "@/lib/db/restaurants";
-import { buildRestaurantJsonLd, buildBreadcrumbJsonLd, buildArticleJsonLd } from "@/lib/jsonld";
-import { getFeatureArticleById } from "@/lib/db/features";
-import { ARTICLE_STORE_FEATURE_IDS, ARTICLE_STORE_ID_BY_FEATURE } from "@/lib/articleStores";
-import { featuresOfShop } from "@/lib/portal/noren/shopFeatures";
-import { NOREN_SHOP_ONE_PAGE, onePageFeatureOf, shopOnePageEligible } from "@/lib/portal/noren/onePage";
-import { onePageUnlistedFeatureOf } from "@/lib/portal/noren/onePageUnlisted";
-import { NOREN_FEATURE_PHOTO, isDummyFeatureImage, isSingleShopFeature } from "@/lib/portal/noren/featureSingle";
-import { RELEASE_FEATURE } from "@/lib/portal/noren/release";
-import { buildPhotoFeature, buildShopPage } from "@/lib/portal/photoFeature/build";
-import { getRelatedFeatured } from "@/lib/portal/photoFeature/related";
-import { getShopInfo } from "@/lib/portal/photoFeature/shopInfo";
+import { buildRestaurantJsonLd, buildBreadcrumbJsonLd } from "@/lib/jsonld";
 import { isRestaurantIndexable } from "@/lib/restaurantIndexable";
 import { assertPortalLive, liveStaticParams } from "@/lib/portal/launch";
-import { LIVE_LINKS } from "@/lib/portal/noren/nav";
 import { decodeRewrittenId } from "@/lib/portal/noren/rewrites";
 import { restaurantTitle, restaurantDescription, cuisineLabel } from "@/lib/seoText";
 
@@ -28,7 +17,7 @@ const BASE = "https://machinowa.tokyo";
 // 本番の店ページ /restaurant/[id] の暖簾版（公開スイッチ ON のときだけ。OFF は 404、今の /restaurant/[id] はそのまま）。
 // 公開スイッチ ON のとき、next.config.ts の rewrites が /restaurant/:id をこのルート（/gourmet/restaurant/:id）に差し替える（ブラウザの URL は /restaurant/<id> のまま）。
 // このパスを直接開くと /restaurant/<id> へ恒久リダイレクトする（next.config.ts の redirects）。canonical も /restaurant/<id>。
-// 枠は app/gourmet/layout.tsx（暖簾）、中身は components/portal/pages/gourmet-noren-shop.tsx（見本 /proto-noren/restaurant/[id] と共通）。
+// 枠は <Shell page="shop">（暖簾 2。components/portal/gnoren/common）、中身は components/portal/gnoren/real/shop/ShopPageReal.tsx（試作 /proto-gourmet/n/shop/sample と同じ見た目・実データ。データ整形は lib/portal/gnoren/shop.ts）。全店（限定公開の店も）を同じ部品で出す。
 // メタ情報・構造化データは今の app/restaurant/[id]/page.tsx と同じ値（同じ関数）。今のページのファイルは変えていない。
 // 描画の方式は ISR（公開ページは Supabase が真の source-of-truth）。時間での作り直し(revalidate)は付けず、管理画面で保存したとき
 // /api/revalidate が作り直す(書き換え後のパス /gourmet/restaurant/<id> も対象。lib/revalidatePlan.ts)。DB を直接書き換えた場合は再デプロイが要る。
@@ -74,114 +63,30 @@ export async function generateMetadata({ params }: { params: Promise<{ id: strin
   };
 }
 
-async function LegacyPage({ params }: { params: Promise<{ id: string }> }) {
+export default async function Page({ params }: { params: Promise<{ id: string }> }) {
   assertPortalLive();
   const id = decodeRewrittenId((await params).id);
   const r = await getRestaurantById(id);
   if (!r) notFound();
   const region = REGIONS[r.region];
 
-  const restaurantJsonLd = buildRestaurantJsonLd(r);
+  // 画面に評価の数字を出さないので、構造化データにも評価（aggregateRating）を入れない（2026-10-24 オーナー決定）。地域のパンくずは「さがす」へ（/region/<key> は /search?region=<key> へ統合済み）
+  const { aggregateRating: _omitRating, ...restaurantLd } = buildRestaurantJsonLd(r) as Record<string, unknown>;
+  void _omitRating;
   const breadcrumbJsonLd = buildBreadcrumbJsonLd([
     { name: "トップ", url: BASE },
-    { name: region?.name || r.region, url: `${BASE}/region/${r.region}` },
+    { name: region?.name || r.region, url: `${BASE}/search?region=${encodeURIComponent(r.region)}` },
     { name: r.name, url: `${BASE}/restaurant/${r.id}` },
   ]);
 
-  // 1 店 1 ページ（見本。lib/portal/noren/onePage.ts）: 対象（lib/portal/noren/onePage.ts の表）の特集記事の店は、/restaurant/<店の ID> で「写真が主役の特集記事 + 記事の終わりの店舗情報」を 1 ページで出す。
-  // 店と記事の対応は ID の完全一致（onePageFeatureOf）。既存の対応表 ARTICLE_STORE_ID_BY_FEATURE と食い違うとき・記事が店 1 軒の記事でないときは、1 ページ化せず今までの店ページを出す。
-  const featureId = NOREN_FEATURE_PHOTO ? (onePageFeatureOf(r.id) ?? onePageUnlistedFeatureOf(r.id)) : null;
-  const article = featureId && ARTICLE_STORE_ID_BY_FEATURE[featureId] === r.id ? await getFeatureArticleById(featureId) : null;
-  if (featureId && article && isSingleShopFeature(article)) {
-    const page = `/restaurant/${r.id}`;
-    const data = buildPhotoFeature(article, r);
-    const shopInfo = await getShopInfo(r, LIVE_LINKS, page);
-    const related = await getRelatedFeatured(featureId, { region: r.region, cuisine: r.cuisine });
-    // 関連記事: 店ページと同じ選び方・同じ本数（featuresOfShop の既定 3 本 = この記事自身 + ほか最大 2 本）。この記事（=このページ）自身は除く
-    const shopFeatures = (await featuresOfShop(r.id, featureId))
-      .filter((f) => !f.paired)
-      .map((f) => ({ id: f.id, href: LIVE_LINKS.feature(f.id), title: f.title, sub: f.sub, image: f.image && !(RELEASE_FEATURE && isDummyFeatureImage(f.image)) ? f.image : "" }));
-    const articleJsonLd = buildArticleJsonLd(article, page);
-    // 1 ページ版は点数・口コミ件数を画面に出さないので、構造化データにも評価（aggregateRating）を入れない（画面に無い評価を構造化データに載せない）。地域のパンくずは「さがす」へ
-    const { aggregateRating: _omit, ...restaurantLd } = restaurantJsonLd as Record<string, unknown>;
-    void _omit;
-    const onePageBreadcrumb = buildBreadcrumbJsonLd([
-      { name: "トップ", url: BASE },
-      { name: region?.name || r.region, url: `${BASE}/search?region=${encodeURIComponent(r.region)}` },
-      { name: r.name, url: `${BASE}/restaurant/${r.id}` },
-    ]);
-    return (
-      <>
-        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(restaurantLd) }} />
-        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(onePageBreadcrumb) }} />
-        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />
-        <PhotoFeatureShell>
-          <PhotoFeaturePage
-            data={data}
-            shopHref={null}
-            listHref="/feature"
-            topHref={LIVE_LINKS.top}
-            searchHref="/search"
-            related={related}
-            shopInfo={shopInfo}
-            onePage
-            shopFeatures={shopFeatures}
-          />
-        </PhotoFeatureShell>
-      </>
-    );
-  }
-
-  // 特集記事の無い店（第 2 段。2026-10-13）: 対の特集記事を持たない店は、店のデータ（紹介文・本文・特徴・写真・基本情報）から、同じ部品で「入口の暖簾 → 巻頭 → 紹介文 → 写真と本文 → 特徴 → 店舗情報」の 1 ページを出す。
-  // 切り替えは NOREN_SHOP_ONE_PAGE（RELEASE_FEATURE と同じ。false で今までの店ページ）。形になる条件（紹介文と本文がある）に合わない店・記事の対を持つ店（上の分岐に入らなかったとき）は、今までの店ページ。
-  const hasPair = !!(r.featureId ?? ARTICLE_STORE_FEATURE_IDS[r.id]);
-  if (NOREN_SHOP_ONE_PAGE && !featureId && !hasPair && shopOnePageEligible(r)) {
-    const page = `/restaurant/${r.id}`;
-    const data = buildShopPage(r);
-    const shopInfo = await getShopInfo(r, LIVE_LINKS, page);
-    const related = await getRelatedFeatured("", { region: r.region, cuisine: r.cuisine });
-    const shopFeatures = (await featuresOfShop(r.id))
-      .map((f) => ({ id: f.id, href: LIVE_LINKS.feature(f.id), title: f.title, sub: f.sub, image: f.image && !(RELEASE_FEATURE && isDummyFeatureImage(f.image)) ? f.image : "" }));
-    // 1 ページ版は点数・口コミ件数を画面に出さないので、構造化データにも評価（aggregateRating）を入れない。地域のパンくずは「さがす」へ
-    const { aggregateRating: _omit, ...restaurantLd } = restaurantJsonLd as Record<string, unknown>;
-    void _omit;
-    const onePageBreadcrumb = buildBreadcrumbJsonLd([
-      { name: "トップ", url: BASE },
-      { name: region?.name || r.region, url: `${BASE}/search?region=${encodeURIComponent(r.region)}` },
-      { name: r.name, url: `${BASE}/restaurant/${r.id}` },
-    ]);
-    return (
-      <>
-        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(restaurantLd) }} />
-        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(onePageBreadcrumb) }} />
-        <PhotoFeatureShell>
-          <PhotoFeaturePage
-            data={data}
-            shopHref={null}
-            listHref="/feature"
-            topHref={LIVE_LINKS.top}
-            searchHref="/search"
-            related={related}
-            shopInfo={shopInfo}
-            onePage
-            shopFeatures={shopFeatures}
-          />
-        </PhotoFeatureShell>
-      </>
-    );
-  }
-
-  // 画面に評価の数字を出さないので、構造化データにも評価（aggregateRating）を入れない（2026-10-24 オーナー決定）
-  const { aggregateRating: _omitRating, ...restaurantLdNoRating } = restaurantJsonLd as Record<string, unknown>;
-  void _omitRating;
+  const shop = await buildShopPage(r);
   return (
     <>
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(restaurantLdNoRating) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(restaurantLd) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
-      <GourmetNorenShop id={r.id} links={LIVE_LINKS} shop={r} />
+      <Shell page="shop" links={GN_LIVE_LINKS}>
+        <ShopPageReal shop={shop} />
+      </Shell>
     </>
   );
 }
-
-// 【暫定】旧い枠。新しい部品に差し替えるとき withLegacyFrame を外す(components/portal/gnoren/real/README.md)
-export default withLegacyFrame(LegacyPage);
