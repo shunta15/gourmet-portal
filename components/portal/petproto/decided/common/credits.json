@@ -11,8 +11,8 @@
     "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/2/2d/Woman_holds_sleeping_puppy_%28Unsplash%29.jpg",
     "srcW": 5181,
     "srcH": 3454,
-    "outW": 381,
-    "outH": 237,
+    "outW": 600,
+    "outH": 373,
     "note": "セーター姿の飼い主の腕の中で眠る子犬(人は胸元と腕だけ)",
     "crop": {
       "fetchedW": 3840,
@@ -26,7 +26,8 @@
       ]
     },
     "tier": "free",
-    "credit": "https://unsplash.com/photos/t8SxccV0Agw archive copy at the Wayback Machine Image at the Wayback Machine"
+    "credit": "https://unsplash.com/photos/t8SxccV0Agw archive copy at the Wayback Machine Image at the Wayback Machine",
+    "reexport": "2026-11-02 粗さ解消のため元素材から大きく書き出し直し(同じ範囲・同じ縦横比)"
   },
   {
     "page": "common",
@@ -40,8 +41,8 @@
     "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/2/29/Real_life_best_friends_%28Unsplash%29.jpg",
     "srcW": 2896,
     "srcH": 1704,
-    "outW": 732,
-    "outH": 237,
+    "outW": 1000,
+    "outH": 324,
     "note": "芝生に寄り添って横たわるゴールデンレトリバーと茶トラの猫",
     "crop": {
       "fetchedW": 2896,
@@ -55,7 +56,8 @@
       ]
     },
     "tier": "free",
-    "credit": "https://unsplash.com/photos/9gz3wfHr65U Image at the Wayback Machine Gallery at the Wayback Machine"
+    "credit": "https://unsplash.com/photos/9gz3wfHr65U Image at the Wayback Machine Gallery at the Wayback Machine",
+    "reexport": "2026-11-02 粗さ解消のため元素材から大きく書き出し直し(同じ範囲・同じ縦横比)"
   },
   {
     "page": "top",
@@ -69,8 +71,8 @@
     "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/6/6c/Tokyo_Tower_and_Roppongi_Hills_Mori_Tower_seen_from_Hamamatsucho.jpg",
     "srcW": 3072,
     "srcH": 4080,
-    "outW": 129,
-    "outH": 129,
+    "outW": 300,
+    "outH": 300,
     "note": "東京タワー(東京)",
     "crop": {
       "fetchedW": 3072,
@@ -84,7 +86,8 @@
       ]
     },
     "tier": "free",
-    "credit": "Own work"
+    "credit": "Own work",
+    "reexport": "2026-11-02 粗さ解消のため元素材から大きく書き出し直し(同じ範囲・同じ縦横比)"
   },
   {
     "page": "top",
@@ -98,8 +101,8 @@
     "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/2/2f/Yokohama_Landmark_Tower_20250429-2.jpg",
     "srcW": 5184,
     "srcH": 3456,
-    "outW": 129,
-    "outH": 129,
+    "outW": 300,
+    "outH": 300,
     "note": "横浜みなとみらいのランドマークタワーと街並み(昼・青空)",
     "crop": {
       "fetchedW": 3840,
@@ -113,7 +116,8 @@
       ]
     },
     "tier": "free",
-    "credit": "Own work"
+    "credit": "Own work",
+    "reexport": "2026-11-02 粗さ解消のため元素材から大きく書き出し直し(同じ範囲・同じ縦横比)"
   },
   {
     "page": "top",
@@ -127,8 +131,8 @@
     "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/6/67/Kujukuri_be%EF%B8%8F%EF%B8%8F%EF%B8%8Fach_6.jpg",
     "srcW": 4032,
     "srcH": 3024,
-    "outW": 129,
-    "outH": 129,
+    "outW": 300,
+    "outH": 300,
     "note": "千葉・九十九里浜の砂浜と海、雲間の太陽",
     "crop": {
       "fetchedW": 3840,
@@ -142,7 +146,8 @@
       ]
     },
     "tier": "free",
-    "credit": "Own work"
+    "credit": "Own work",
+    "reexport": "2026-11-02 粗さ解消のため元素材から大きく書き出し直し(同じ範囲・同じ縦横比)"
   },
   {
     "page": "top",
@@ -156,8 +161,8 @@
     "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/8/88/Arakawa_001.JPG",
     "srcW": 1280,
     "srcH": 960,
-    "outW": 129,
-    "outH": 129,
+    "outW": 300,
+    "outH": 300,
     "note": "埼玉・荒川上流(長瀞付近)の渓谷と紅葉",
     "crop": {
       "fetchedW": 1280,
@@ -171,7 +176,8 @@
       ]
     },
     "tier": "free",
-    "credit": "Self-photographed"
+    "credit": "Self-photographed",
+    "reexport": "2026-11-02 粗さ解消のため元素材から大きく書き出し直し(同じ範囲・同じ縦横比)"
   },
   {
     "page": "top",
@@ -185,8 +191,8 @@
     "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/1/16/20190121_Osaka_Castle-2.jpg",
     "srcW": 5760,
     "srcH": 3840,
-    "outW": 129,
-    "outH": 129,
+    "outW": 300,
+    "outH": 300,
     "note": "大阪城天守(関西)",
     "crop": {
       "fetchedW": 3840,
@@ -200,7 +206,8 @@
       ]
     },
     "tier": "free",
-    "credit": "Own work"
+    "credit": "Own work",
+    "reexport": "2026-11-02 粗さ解消のため元素材から大きく書き出し直し(同じ範囲・同じ縦横比)"
   },
   {
     "page": "top",
@@ -214,8 +221,8 @@
     "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/6/66/Mount_Fuji_at_sunset%2C_March_2025.jpg",
     "srcW": 11650,
     "srcH": 7767,
-    "outW": 129,
-    "outH": 129,
+    "outW": 300,
+    "outH": 300,
     "note": "夕暮れの富士山と湖(その他のエリア)",
     "crop": {
       "fetchedW": 3840,
@@ -229,7 +236,8 @@
       ]
     },
     "tier": "free",
-    "credit": "富士山"
+    "credit": "富士山",
+    "reexport": "2026-11-02 粗さ解消のため元素材から大きく書き出し直し(同じ範囲・同じ縦横比)"
   },
   {
     "page": "top",
@@ -243,8 +251,8 @@
     "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/7/76/Dog_on_a_snowy_plain_%28Unsplash%29.jpg",
     "srcW": 4480,
     "srcH": 3448,
-    "outW": 1800,
-    "outH": 243,
+    "outW": 3400,
+    "outH": 459,
     "note": "雪原を正面に走ってくる白黒のボーダーコリー(中央 x≈0.5・頭も脚も帯の中)。左右は白一色で、左の見出し・説明(濃色の文字)と手書き文字(x 0.25〜0.42)と右 40% のエリアの丸が全部重ならずに読める。公園・並木道・海辺で 7.4:1 の帯に犬の全身が入り、左 1/3 が明るく右が静かな写真は約 30 検索で見つからず(砂浜の犬は右寄り・人が文字の下、紅葉の並木道は犬が豆粒)",
     "crop": {
       "fetchedW": 3840,
@@ -258,7 +266,8 @@
       ]
     },
     "tier": "free",
-    "credit": "https://unsplash.com/photos/OA4-E9r1XJs Image at the Wayback Machine Gallery at the Wayback Machine"
+    "credit": "https://unsplash.com/photos/OA4-E9r1XJs Image at the Wayback Machine Gallery at the Wayback Machine",
+    "reexport": "2026-11-02 粗さ解消のため元素材から大きく書き出し直し(同じ範囲・同じ縦横比)"
   },
   {
     "page": "top",
@@ -272,8 +281,8 @@
     "originalUrl": "",
     "srcW": 1672,
     "srcH": 941,
-    "outW": 411,
-    "outH": 291,
+    "outW": 600,
+    "outH": 425,
     "note": "reports/machinowa-design/mockups/ペット_素材/cafe_ドッグカフェ_2026-10-22.webp",
     "crop": {
       "fetchedW": 1672,
@@ -287,7 +296,8 @@
       ]
     },
     "tier": "owner",
-    "credit": ""
+    "credit": "",
+    "reexport": "2026-11-02 粗さ解消のため元素材から大きく書き出し直し(同じ範囲・同じ縦横比)"
   },
   {
     "page": "top",
@@ -299,24 +309,14 @@
     "license": "オーナー提供",
     "licenseUrl": "",
     "originalUrl": "",
-    "srcW": 2784,
-    "srcH": 1848,
-    "outW": 405,
-    "outH": 291,
-    "note": "reports/machinowa-design/mockups/ペット_素材/",
-    "crop": {
-      "fetchedW": 2784,
-      "left": 213,
-      "top": 1,
-      "width": 2571,
-      "height": 1847,
-      "focus": [
-        0.55,
-        0.5
-      ]
-    },
+    "srcW": 1448,
+    "srcH": 1086,
+    "outW": 600,
+    "outH": 431,
+    "note": "reports/machinowa-design/mockups/ペット_素材/ / 実際の元ファイル: reports/machinowa-design/mockups/ペット_素材/(1448x1086 の左右いっぱいから同じ縦横比で切り出し)",
     "tier": "free",
-    "credit": "https://www.dvidshub.net/image/463778"
+    "credit": "https://www.dvidshub.net/image/463778",
+    "reexport": "2026-11-02 粗さ解消のため元素材から大きく書き出し直し(同じ範囲・同じ縦横比)"
   },
   {
     "page": "top",
@@ -330,8 +330,8 @@
     "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/3/38/Papillon_running.JPG",
     "srcW": 3648,
     "srcH": 2736,
-    "outW": 405,
-    "outH": 291,
+    "outW": 600,
+    "outH": 431,
     "note": "芝生の上を正面へ駆けてくるパピヨン",
     "crop": {
       "fetchedW": 3648,
@@ -345,7 +345,8 @@
       ]
     },
     "tier": "free",
-    "credit": "Own work"
+    "credit": "Own work",
+    "reexport": "2026-11-02 粗さ解消のため元素材から大きく書き出し直し(同じ範囲・同じ縦横比)"
   },
   {
     "page": "top",
@@ -357,24 +358,14 @@
     "license": "オーナー提供",
     "licenseUrl": "",
     "originalUrl": "",
-    "srcW": 2048,
-    "srcH": 1536,
-    "outW": 402,
-    "outH": 291,
-    "note": "reports/machinowa-design/mockups/ペット_素材/",
-    "crop": {
-      "fetchedW": 2048,
-      "left": 0,
-      "top": 54,
-      "width": 2048,
-      "height": 1482,
-      "focus": [
-        0.5,
-        0.6
-      ]
-    },
+    "srcW": 1448,
+    "srcH": 1086,
+    "outW": 600,
+    "outH": 431,
+    "note": "reports/machinowa-design/mockups/ペット_素材/ / 実際の元ファイル: reports/machinowa-design/mockups/ペット_素材/(1448x1086 の左右いっぱいから同じ縦横比で切り出し)",
     "tier": "free",
-    "credit": "Own work"
+    "credit": "Own work",
+    "reexport": "2026-11-02 粗さ解消のため元素材から大きく書き出し直し(同じ範囲・同じ縦横比)"
   },
   {
     "page": "top",
@@ -388,8 +379,8 @@
     "originalUrl": "",
     "srcW": 1536,
     "srcH": 1024,
-    "outW": 408,
-    "outH": 291,
+    "outW": 600,
+    "outH": 428,
     "note": "reports/machinowa-design/mockups/ペット_素材/hospital_動物病院_2026-10-22.webp。看板の病院名と電話番号は写らないように切り抜き(犬とクローバーの印だけ残す)",
     "crop": {
       "fetchedW": 1536,
@@ -403,7 +394,8 @@
       ]
     },
     "tier": "owner",
-    "credit": ""
+    "credit": "",
+    "reexport": "2026-11-02 粗さ解消のため元素材から大きく書き出し直し(同じ範囲・同じ縦横比)"
   },
   {
     "page": "top",
@@ -417,8 +409,8 @@
     "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/c/c5/Puppy_playing_with_a_toy_%28Unsplash%29.jpg",
     "srcW": 2560,
     "srcH": 1707,
-    "outW": 405,
-    "outH": 291,
+    "outW": 600,
+    "outH": 431,
     "note": "芝生の上で黄色いおもちゃをかじる白黒の子犬",
     "crop": {
       "fetchedW": 2560,
@@ -432,7 +424,8 @@
       ]
     },
     "tier": "free",
-    "credit": "https://unsplash.com/photos/A-YUeXZ1rq8 archive copy at the Wayback Machine"
+    "credit": "https://unsplash.com/photos/A-YUeXZ1rq8 archive copy at the Wayback Machine",
+    "reexport": "2026-11-02 粗さ解消のため元素材から大きく書き出し直し(同じ範囲・同じ縦横比)"
   },
   {
     "page": "top",
@@ -736,8 +729,8 @@
     "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/7/73/Inubosaki_Lighthouse_01.JPG",
     "srcW": 2048,
     "srcH": 1536,
-    "outW": 216,
-    "outH": 216,
+    "outW": 400,
+    "outH": 400,
     "note": "千葉・銚子の犬吠埼灯台(白い灯台と青空・緑の岬)",
     "crop": {
       "fetchedW": 2048,
@@ -751,7 +744,8 @@
       ]
     },
     "tier": "free",
-    "credit": "Own work"
+    "credit": "Own work",
+    "reexport": "2026-11-02 粗さ解消のため元素材から大きく書き出し直し(同じ範囲・同じ縦横比)"
   },
   {
     "page": "search",
@@ -765,8 +759,8 @@
     "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/3/38/20250105_Minato_Mirai_21_%28Landmark_Tower%2C_Queen%27s_Square_Yokohama%2C_Cosmo_Clock_21%29_080219.jpg",
     "srcW": 4032,
     "srcH": 2268,
-    "outW": 216,
-    "outH": 216,
+    "outW": 400,
+    "outH": 400,
     "note": "横浜みなとみらいの昼景",
     "crop": {
       "fetchedW": 3840,
@@ -780,7 +774,8 @@
       ]
     },
     "tier": "free",
-    "credit": "Own work"
+    "credit": "Own work",
+    "reexport": "2026-11-02 粗さ解消のため元素材から大きく書き出し直し(同じ範囲・同じ縦横比)"
   },
   {
     "page": "search",
@@ -794,8 +789,8 @@
     "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/c/c3/Nagatoro_Keikoku%2C_iwa-datami.jpg",
     "srcW": 6016,
     "srcH": 4000,
-    "outW": 216,
-    "outH": 216,
+    "outW": 400,
+    "outH": 400,
     "note": "埼玉・長瀞の岩畳(荒川の岩と緑・青空)",
     "crop": {
       "fetchedW": 3840,
@@ -809,7 +804,8 @@
       ]
     },
     "tier": "free",
-    "credit": "Own work"
+    "credit": "Own work",
+    "reexport": "2026-11-02 粗さ解消のため元素材から大きく書き出し直し(同じ範囲・同じ縦横比)"
   },
   {
     "page": "search",
@@ -823,8 +819,8 @@
     "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/c/ce/Mount_Fuji_20120909_b.jpg",
     "srcW": 1830,
     "srcH": 1220,
-    "outW": 216,
-    "outH": 216,
+    "outW": 400,
+    "outH": 400,
     "note": "茶畑越しの富士山(静岡)(extmetadata: License=pd, Copyrighted=False, AttributionRequired=false。テンプレート {{PD-self}}。licenseUrl はテンプレート頁を手で記入)",
     "crop": {
       "fetchedW": 1830,
@@ -838,7 +834,8 @@
       ]
     },
     "tier": "free",
-    "credit": "Own work"
+    "credit": "Own work",
+    "reexport": "2026-11-02 粗さ解消のため元素材から大きく書き出し直し(同じ範囲・同じ縦横比)"
   },
   {
     "page": "search",
@@ -852,8 +849,8 @@
     "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/6/6c/Tokyo_Tower_and_Roppongi_Hills_Mori_Tower_seen_from_Hamamatsucho.jpg",
     "srcW": 3072,
     "srcH": 4080,
-    "outW": 216,
-    "outH": 216,
+    "outW": 400,
+    "outH": 400,
     "note": "青空の東京タワー",
     "crop": {
       "fetchedW": 3072,
@@ -867,7 +864,8 @@
       ]
     },
     "tier": "free",
-    "credit": "Own work"
+    "credit": "Own work",
+    "reexport": "2026-11-02 粗さ解消のため元素材から大きく書き出し直し(同じ範囲・同じ縦横比)"
   },
   {
     "page": "search",
@@ -881,8 +879,8 @@
     "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/1/1d/Fuji_Kawaguchi_475.JPG",
     "srcW": 4320,
     "srcH": 2880,
-    "outW": 216,
-    "outH": 216,
+    "outW": 400,
+    "outH": 400,
     "note": "河口湖に映る富士山",
     "crop": {
       "fetchedW": 3840,
@@ -896,7 +894,8 @@
       ]
     },
     "tier": "free",
-    "credit": "own photo --- Contact: User:Mediocrity"
+    "credit": "own photo --- Contact: User:Mediocrity",
+    "reexport": "2026-11-02 粗さ解消のため元素材から大きく書き出し直し(同じ範囲・同じ縦横比)"
   },
   {
     "page": "search",
@@ -910,8 +909,8 @@
     "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/3/37/Puppy_by_Jairo_Alzate%2C_2015.jpg",
     "srcW": 3534,
     "srcH": 2366,
-    "outW": 711,
-    "outH": 612,
+    "outW": 1100,
+    "outH": 947,
     "note": "屋外の敷石の上で見上げるチョコレート色のラブラドールの子犬",
     "crop": {
       "fetchedW": 3534,
@@ -925,7 +924,8 @@
       ]
     },
     "tier": "free",
-    "credit": "https://unsplash.com/photos/sssxyuZape8 Image at the Wayback Machine Gallery at the Wayback Machine"
+    "credit": "https://unsplash.com/photos/sssxyuZape8 Image at the Wayback Machine Gallery at the Wayback Machine",
+    "reexport": "2026-11-02 粗さ解消のため元素材から大きく書き出し直し(同じ範囲・同じ縦横比)"
   },
   {
     "page": "search",
@@ -968,8 +968,8 @@
     "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/e/e4/Andrew_Branch_2016-09-11_%28Unsplash_mTv9DCVtzWY%29.jpg",
     "srcW": 5616,
     "srcH": 3744,
-    "outW": 1800,
-    "outH": 425,
+    "outW": 3600,
+    "outH": 850,
     "note": "ベージュのソファの上で伏せてこちらを見るキャバリア(左はソファの肘掛けで無地・右に犬)",
     "crop": {
       "fetchedW": 3840,
@@ -983,7 +983,8 @@
       ]
     },
     "tier": "free",
-    "credit": "https://unsplash.com/photos/mTv9DCVtzWY archive copy at the Wayback Machine"
+    "credit": "https://unsplash.com/photos/mTv9DCVtzWY archive copy at the Wayback Machine",
+    "reexport": "2026-11-02 粗さ解消のため元素材から大きく書き出し直し(同じ範囲・同じ縦横比)"
   },
   {
     "page": "shop",
@@ -1113,8 +1114,8 @@
     "originalUrl": "",
     "srcW": 1672,
     "srcH": 941,
-    "outW": 465,
-    "outH": 237,
+    "outW": 800,
+    "outH": 408,
     "note": "reports/machinowa-design/mockups/ペット_素材/cafe_ドッグカフェ_2026-10-22.webp",
     "crop": {
       "fetchedW": 1672,
@@ -1128,7 +1129,8 @@
       ]
     },
     "tier": "owner",
-    "credit": ""
+    "credit": "",
+    "reexport": "2026-11-02 粗さ解消のため元素材から大きく書き出し直し(同じ範囲・同じ縦横比)"
   },
   {
     "page": "article",
@@ -1140,24 +1142,14 @@
     "license": "オーナー提供",
     "licenseUrl": "",
     "originalUrl": "",
-    "srcW": 6832,
-    "srcH": 4555,
-    "outW": 462,
-    "outH": 237,
-    "note": "reports/machinowa-design/mockups/ペット_素材/",
-    "crop": {
-      "fetchedW": 3840,
-      "left": 0,
-      "top": 296,
-      "width": 3840,
-      "height": 1969,
-      "focus": [
-        0.5,
-        0.5
-      ]
-    },
+    "srcW": 1448,
+    "srcH": 1086,
+    "outW": 800,
+    "outH": 410,
+    "note": "reports/machinowa-design/mockups/ペット_素材/ / 実際の元ファイル: reports/machinowa-design/mockups/ペット_素材/(1448x1086 の左右いっぱいから同じ縦横比で切り出し)",
     "tier": "free",
-    "credit": "This image was released by the United States Army with the ID 260313-A-PT551-6426 (next) . This tag does not indicate the copyright status of the attached work. A normal copyright tag is still required. See Commons:Licensing . العربية ∙ বাংলা ∙ Bahasa Indonesia ∙ Bahaso Jambi ∙ Deutsch ∙ Deutsch (Sie-Form) ∙ English ∙ español ∙ euskara ∙ فارسی ∙ français ∙ italiano ∙ 日本語 ∙ 한국어 ∙ македонски ∙ മലയാളം ∙ Plattdüütsch ∙ Nederlands ∙ polski ∙ پښتو ∙ português ∙ русский ∙ slovenščina ∙ svenska ∙ Türkçe ∙ українська ∙ 简体中文 ∙ 繁體中文 ∙ +/−"
+    "credit": "This image was released by the United States Army with the ID 260313-A-PT551-6426 (next) . This tag does not indicate the copyright status of the attached work. A normal copyright tag is still required. See Commons:Licensing . العربية ∙ বাংলা ∙ Bahasa Indonesia ∙ Bahaso Jambi ∙ Deutsch ∙ Deutsch (Sie-Form) ∙ English ∙ español ∙ euskara ∙ فارسی ∙ français ∙ italiano ∙ 日本語 ∙ 한국어 ∙ македонски ∙ മലയാളം ∙ Plattdüütsch ∙ Nederlands ∙ polski ∙ پښتو ∙ português ∙ русский ∙ slovenščina ∙ svenska ∙ Türkçe ∙ українська ∙ 简体中文 ∙ 繁體中文 ∙ +/−",
+    "reexport": "2026-11-02 粗さ解消のため元素材から大きく書き出し直し(同じ範囲・同じ縦横比)"
   },
   {
     "page": "article",
@@ -1171,8 +1163,8 @@
     "originalUrl": "",
     "srcW": 1536,
     "srcH": 1024,
-    "outW": 462,
-    "outH": 237,
+    "outW": 670,
+    "outH": 344,
     "note": "reports/machinowa-design/mockups/ペット_素材/hospital_動物病院_2026-10-22.webp。看板の病院名と電話番号は写らないように切り抜き(犬とクローバーの印だけ残す)",
     "crop": {
       "fetchedW": 1536,
@@ -1186,7 +1178,8 @@
       ]
     },
     "tier": "owner",
-    "credit": ""
+    "credit": "",
+    "reexport": "2026-11-02 粗さ解消のため元素材から大きく書き出し直し(同じ範囲・同じ縦横比)"
   },
   {
     "page": "article",
@@ -1198,24 +1191,14 @@
     "license": "オーナー提供",
     "licenseUrl": "",
     "originalUrl": "",
-    "srcW": 5760,
-    "srcH": 3840,
-    "outW": 456,
-    "outH": 237,
-    "note": "reports/machinowa-design/mockups/ペット_素材/",
-    "crop": {
-      "fetchedW": 3840,
-      "left": 0,
-      "top": 283,
-      "width": 3840,
-      "height": 1995,
-      "focus": [
-        0.5,
-        0.5
-      ]
-    },
+    "srcW": 1448,
+    "srcH": 1086,
+    "outW": 800,
+    "outH": 416,
+    "note": "reports/machinowa-design/mockups/ペット_素材/ / 実際の元ファイル: reports/machinowa-design/mockups/ペット_素材/(1448x1086 の左右いっぱいから同じ縦横比で切り出し)",
     "tier": "free",
-    "credit": "https://unsplash.com/photos/KJDhTtPCveI Image at the Wayback Machine Gallery at the Wayback Machine"
+    "credit": "https://unsplash.com/photos/KJDhTtPCveI Image at the Wayback Machine Gallery at the Wayback Machine",
+    "reexport": "2026-11-02 粗さ解消のため元素材から大きく書き出し直し(同じ範囲・同じ縦横比)"
   },
   {
     "page": "article",
@@ -1345,8 +1328,8 @@
     "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/3/38/Top_Dog_%28Unsplash%29.jpg",
     "srcW": 5184,
     "srcH": 3456,
-    "outW": 1800,
-    "outH": 463,
+    "outW": 3400,
+    "outH": 875,
     "note": "薄い色の茂みを背景に座る短毛の犬(右側)。左は明るいボケで見出しが載る",
     "crop": {
       "fetchedW": 3840,
@@ -1360,7 +1343,8 @@
       ]
     },
     "tier": "free",
-    "credit": "https://unsplash.com/photos/eIJuI0TW0sQ archive copy at the Wayback Machine"
+    "credit": "https://unsplash.com/photos/eIJuI0TW0sQ archive copy at the Wayback Machine",
+    "reexport": "2026-11-02 粗さ解消のため元素材から大きく書き出し直し(同じ範囲・同じ縦横比)"
   },
   {
     "page": "article",
