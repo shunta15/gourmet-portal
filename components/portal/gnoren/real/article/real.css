@@ -149,13 +149,13 @@
   .gn-feat-r-intro { font-size: 14.5px; line-height: 1.95; letter-spacing: .04em; margin-top: 16px; color: #4a423c; }
   .gn-feat-r-date { display: block; margin-top: 12px; font-size: 12px; letter-spacing: .06em; color: #5a504a; }
 
-  .gn-feat-r-panel { order: 4; position: relative; margin: 0 0 4px; padding: 18px 16px 0; overflow: hidden; }
+  .gn-feat-r-panel { order: 4; position: relative; margin: 0 0 4px; padding: 28px 16px 0; overflow: hidden; }
   .gn-feat-r-panel-bg { position: absolute; inset: 0; background-color: #efe9df; }
   .gn-feat-r-script { position: relative; font-size: 30px; line-height: 1.05; transform: rotate(-6deg); transform-origin: left bottom; margin: 2px 0 14px 12px; }
   /* 短冊は横書きの小さな札にして横に並べる(縦書きだと最長 12 字で高さが 250px を超え、写真の下に空きが続く) */
   .gn-feat-r-strips { position: relative; display: flex; flex-flow: row wrap; justify-content: flex-start; align-items: flex-start; gap: 8px; }
   .gn-feat-r-strip { writing-mode: horizontal-tb; text-orientation: mixed; font-size: 15px; line-height: 1.4; letter-spacing: .08em; padding: 8px 14px; }
-  .gn-feat-r-town { position: relative; width: min(100%, 280px); height: auto; margin: 4px auto 0; }
+  .gn-feat-r-town { position: relative; width: min(100%, 280px); height: auto; margin: -14px auto 0; }
 
   /* 章 */
   .gn-feat-r-ch { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; padding: 44px 16px 0; }
