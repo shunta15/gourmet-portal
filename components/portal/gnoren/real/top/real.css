@@ -1,0 +1,21 @@
+/* トップ(実データ版)の追加分。試作 top/top.css をそのまま使い、実データで要る差だけをここに足す。接頭辞は gn-top-(-r- は新規の部品)。 */
+
+/* 写真は実物なので、札の文字(エリア名・特集の題)が読めるよう、写真の上に薄い幕を敷く(見本は絵に文字が乗っていたが、実写真は明るさがばらつくため) */
+.gn-top-banner-ph { isolation: isolate; }
+.gn-top-banner-ph::after { content: ""; position: absolute; inset: 0; pointer-events: none; background: linear-gradient(180deg, rgba(30, 20, 12, .5) 0%, rgba(30, 20, 12, .22) 55%, rgba(30, 20, 12, 0) 100%); }
+.gn-top-banner-name { z-index: 1; }
+.gn-top-banner-go { z-index: 1; }
+
+.gn-top-fcard::after { content: ""; position: absolute; inset: 0; pointer-events: none; background: linear-gradient(90deg, rgba(34, 20, 12, .56) 0%, rgba(34, 20, 12, .36) 52%, rgba(34, 20, 12, 0) 88%), linear-gradient(0deg, rgba(34, 20, 12, .3), transparent 45%); }
+.gn-top-fcard-t, .gn-top-fcard-s { z-index: 1; }
+
+/* 特集の題・説明は実際の記事の文なので、長さがまちまち。見本の「2 行ぴったり」ではなく幅で折り返し、はみ出す分は省く */
+.gn-top-fcard-t { display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 3; overflow: hidden; width: calc(var(--fu) * 204); }
+.gn-top-fcard-s { display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 2; overflow: hidden; width: calc(var(--fu) * 204); top: calc(var(--fu) * 104); }
+.gn-top-fcard.is-big .gn-top-fcard-s { top: calc(var(--fu) * 118); }
+
+/* シーンの 2 行目(件数)・説明は折り返さない 1 行ずつ。長いときは省く */
+.gn-top-scene-d span { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+
+/* 写真が無い札でも、枠の形は保つ */
+.gn-top-scene-ph { background: var(--gn-linen); }
