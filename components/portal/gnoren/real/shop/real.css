@@ -27,6 +27,9 @@
 
 .gn-shop-r-catch-h { margin: 0; }
 
+/* 電話番号のリンクは押す所を 44px 以上に(指で押す) */
+.gn-shop-r .gn-shop-row-tel dd a { display: inline-flex; align-items: center; min-height: 44px; }
+
 /* ═════════ PC ═════════ */
 @media (min-width: 769px) and (min-height: 501px) {
   .gn-shop-r-stage { -webkit-mask-image: linear-gradient(#000 94%, transparent); mask-image: linear-gradient(#000 94%, transparent); }
@@ -139,6 +142,11 @@
   .gn-shop-r .gn-shop-r-h1 { font-size: 26px; white-space: normal; overflow-wrap: anywhere; }
   .gn-shop-r-desc p + p { margin-top: .7em; }
   .gn-shop-r .gn-shop-r-desc { font-size: 14px; line-height: 1.95; }
+  /* 紹介の下の飾り(筆記体と葉): 左右に分けず中央に寄せ、空きを縮める */
+  .gn-shop-r .gn-shop-deco { display: flex; align-items: center; justify-content: center; gap: 20px; height: auto; margin-top: 8px; }
+  .gn-shop-r .gn-shop-deco .gn-shop-script, .gn-shop-r .gn-shop-deco .gn-shop-leaf { position: static; flex: none; }
+  .gn-shop-r .gn-shop-deco .gn-shop-script { width: 120px; }
+  .gn-shop-r .gn-shop-deco .gn-shop-leaf { width: 84px; }
 
   .gn-shop-r-item-text { background: #fff; border-radius: 6px; padding: 14px 14px 16px; box-shadow: 0 2px 8px rgba(125, 92, 60, .14); border-top: 3px solid #b35431; }
   .gn-shop-r-item-text .gn-shop-item-n { margin-top: 0; }
@@ -152,6 +160,9 @@
 
   .gn-shop-r .gn-shop-row dd { font-size: 14px; display: flex; flex-direction: column; align-items: flex-start; overflow-wrap: anywhere; }
   .gn-shop-r-map-in { height: 220px; border-radius: 8px; overflow: hidden; }
+  /* 地図の拡大・縮小と出典リンクも押す所を 44px に */
+  .gn-shop-r-map-in .leaflet-bar a, .gn-shop-r-map-in .leaflet-control-zoom a { width: 44px; height: 44px; line-height: 44px; font-size: 22px; }
+  .gn-shop-r-map-in .leaflet-control-attribution a { display: inline-block; padding: 15px 4px; margin: -15px -4px; }
   .gn-shop-r .gn-shop-r-btn-g { position: static; width: 100%; margin-top: 12px; left: auto; right: auto; bottom: auto; }
   .gn-shop-r .gn-shop-r-map { padding: 0 12px 16px; }
   .gn-shop-r .gn-shop-r-btn-s { max-width: 220px; }

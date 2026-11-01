@@ -56,7 +56,15 @@ const clean = (s: string | undefined | null): string => (s ?? "").replace(/\\n/g
 const hasValue = (s: string): boolean => s.length > 0 && !/^[-－ー—–・\s]+$/.test(s) && !/^(要確認|不明|なし|未定)$/.test(s);
 const MONEY = /[¥￥円]|予算|料金|価格/;
 /** 「おすすめ」に使わない語(順位・他サイトの評価・口コミ・星・その他。本文の文は紹介文にそのまま出るが、新しく取り出す項目には使わない) */
-const PICK_BAN = /No\.?\s?1|ナンバー|口コミ|レビュー|評価|ミシュラン|[★☆]|[一二三]つ星|その他/;
+const PICK_BAN = /No\.?\s?1|ナンバー|口コミ|レビュー|評価|ミシュラン|[★☆]|[一二三]つ星|その他|食べログ|百名店|ホットペッパー|ぐるなび|Google/;
+/** 比べるときに句読点・空白・記号を除く */
+const norm = (s: string): string => s.replace(/[\s、。，．,.・･「」『』（）()！？!?\-－ー―〜～:：/／|｜]/g, "");
+
+function bigrams(t: string): Set<string> {
+  const out = new Set<string>();
+  for (let i = 0; i + 1 < t.length; i++) out.add(t.slice(i, i + 2));
+  return out;
+}
 
 function sentences(text: string): string[] {
   const out: string[] = [];
@@ -120,13 +128,44 @@ export async function buildShopPage(r: Restaurant): Promise<GnShopVM> {
   takeStrips(highlights.slice(0, 3));
   if (strips.length === 0) takeStrips(sentences(descText));
 
-  // この店のおすすめ 4: 短冊に使わなかった highlights → body の段落 → 短冊に使った highlights → desc の文
+  // この店のおすすめ 4: 短冊に使わなかった highlights → body の段落 → 短冊に使った highlights(紹介文そのものの文は使わない)
   const cand: Array<{ name: string; desc?: string }> = [];
   const seen = new Set<string>();
+  // 店舗情報・紹介文と重複する文は「おすすめ」に使わない(最寄り駅の文・住所の文・紹介文の言い直し)
+  const nearestText = clean(r.nearest);
+  const stationFull = (/([^\s・]{2,}?)駅/.exec(nearestText)?.[1] ?? "").replace(/^.*線/, "");
+  // 路線名の頭(名鉄・東急など)が付いても同じ駅と分かるよう、駅名の終わりの 4 字で見る
+  const stationBase = stationFull.length >= 5 ? stationFull.slice(-4) : stationFull;
+  const addrNorm = norm(clean(r.address).replace(/^.{2,3}?[都道府県]/, ""));
+  const nearestNorm = norm(nearestText);
+  const descNorm = norm(descText);
+  const descSentences = sentences(descText).map(norm).filter((t) => t.length >= 12);
+  const isDup = (text: string): boolean => {
+    const t = norm(text);
+    if (t.length === 0) return true;
+    if (nearestNorm.length >= 6 && (nearestNorm.includes(t) || t.includes(nearestNorm))) return true;
+    if (stationBase.length >= 3 && t.includes(norm(stationBase))) return true;
+    if (addrNorm.length >= 6 && (addrNorm.includes(t) || t.includes(addrNorm))) return true;
+    if (t.length >= 8 && descNorm.includes(t)) return true;
+    if (descSentences.some((d) => t.includes(d))) return true;
+    if (/あるお店です|ある店です/.test(text)) return true;
+    // 営業時間・定休日は店舗情報の行にある
+    if (/営業時間|定休日|^営業は|^定休/.test(text)) return true;
+    // すでに選んだ項目の言い直し(2 字の並びの重なりが半分以上)
+    const g = bigrams(t);
+    return cand.some((c) => {
+      const o = bigrams(norm(`${c.name}${c.desc ?? ""}`));
+      const min = Math.min(g.size, o.size);
+      if (min < 6) return false;
+      let hit = 0;
+      for (const x of g) if (o.has(x)) hit++;
+      return hit / min >= 0.5;
+    });
+  };
   const push = (name: string, d?: string) => {
     const key = `${name}|${d ?? ""}`;
     const all = `${name}${d ?? ""}`;
-    if (!all || seen.has(key) || MONEY.test(all) || PICK_BAN.test(all) || isPriceSpec(name)) return;
+    if (!all || seen.has(key) || MONEY.test(all) || PICK_BAN.test(all) || isPriceSpec(name) || isDup(all)) return;
     seen.add(key);
     cand.push({ name, desc: d });
   };
@@ -139,11 +178,10 @@ export async function buildShopPage(r: Restaurant): Promise<GnShopVM> {
     }
   }
   for (const h of highlights) if (stripUsed.has(h)) push(h);
-  for (const s of sentences(descText)) {
-    const nd = splitNameDesc(s);
-    push(nd.name, nd.desc);
-  }
-  const pickBase = cand.slice(0, 4);
+  // 題のある項目を先に(題なしの一文は後ろへ。並びは元の順を保つ)
+  const named = cand.filter((c) => c.name);
+  const unnamed = cand.filter((c) => !c.name);
+  const pickBase = [...named, ...unnamed].slice(0, 4);
   // 写真は、おすすめの全項目に付けられるときだけ付ける(一部だけ付けると空枠に見える)
   const picksPhotos = pickBase.length > 0 && afterGallery.length >= pickBase.length ? afterGallery.slice(0, pickBase.length) : [];
   if (picksPhotos.length > 0) afterGallery = afterGallery.slice(picksPhotos.length);
