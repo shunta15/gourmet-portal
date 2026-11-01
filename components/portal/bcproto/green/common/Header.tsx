@@ -27,7 +27,7 @@ export default function Header() {
     <header className="gr-head" data-gr-head>
       <div className="gr-head-in">
         <Link href={BASE} className="gr-logo" aria-label="マチノワ Body Care トップ" onClick={() => setOpen(false)}>
-          <Logo title="マチノワ.Body Care からだが整うと、毎日が変わる。" />
+          <Logo title="マチノワ.Body Care からだが整うと、毎日が変わる。" gradId="gr-logo-g-head" />
         </Link>
         <nav className="gr-nav" aria-label="主なページ">
           {NAV.map((n) => (

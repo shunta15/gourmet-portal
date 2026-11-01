@@ -233,7 +233,7 @@ body:has(.gr-root) button, body:has(.gr-root) a { cursor: pointer; }
   .gr-hr-i { display: none; }
   .gr-head-in { padding: 0 10px 0 14px; }
   .gr-logo { width: auto; flex: 1; }
-  .gr-logo img, .gr-logo svg { width: 168px; height: auto; margin-left: 0; }
+  .gr-logo img, .gr-logo svg { width: 168px; max-width: 100%; height: auto; margin-left: 0; } /* img は全体の max-width:100% で枠(168px から 2px 狭い)に収まる。svg も同じに収めて、右の「店を探す」の位置を元と同じにする */
   .gr-menu-btn { display: block; }
   .gr-area-btn { width: 118px; height: 34px; font-size: 12px; margin-left: 0; }
   .gr-head-r { gap: 4px; }

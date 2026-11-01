@@ -11,7 +11,7 @@ export default function Footer() {
     <footer className="gr-foot">
       <div className="gr-foot-in">
         <Link href={BASE} className="gr-foot-logo" aria-label="マチノワ Body Care トップ">
-          <Logo title="マチノワ.Body Care" />
+          <Logo title="マチノワ.Body Care" gradId="gr-logo-g-foot" />
         </Link>
         <nav className="gr-foot-nav" aria-label="フッターのリンク">
           <Link href={BASE}>トップ</Link>

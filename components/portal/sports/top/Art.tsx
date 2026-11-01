@@ -8,10 +8,10 @@
 export function CatScript({ className }: { className?: string }) {
   return (
     <svg className={className} viewBox="0 0 100 62" role="img" aria-label="Category から探す" xmlns="http://www.w3.org/2000/svg">
-      <text className="s2-art-script" x="9" y="33" fontSize="31" textLength="86" transform="skewX(-5) translate(2.6 0)" lengthAdjust="spacingAndGlyphs" fill="#1c1c1c">
+      <text className="s2-art-script" x="9" y="29.8" fontSize="26.6" textLength="86" transform="skewX(-5) translate(0 0)" lengthAdjust="spacingAndGlyphs" fill="#26241a">
         Category
       </text>
-      <text className="s2-art-kana" x="27" y="56" fontSize="9.5" textLength="44" lengthAdjust="spacingAndGlyphs" fill="#2a2a2a" transform="rotate(-8 49 52)">
+      <text className="s2-art-kana" x="27" y="51.4" fontSize="9.8" textLength="44" lengthAdjust="spacingAndGlyphs" fill="#26241a" transform="rotate(-10 49 48)">
         から探す
       </text>
     </svg>
@@ -20,18 +20,18 @@ export function CatScript({ className }: { className?: string }) {
 
 const SLATE = "#4f5f6f";
 
-/** ダンベル(元の画像 54x34) */
+/** ダンベル(元の画像 54x34。元画像は縁に余白があり、実際の絵は x 2〜49.5・y 4〜30 に収まる。その寸法で描く) */
 export function IcDumbbell() {
   return (
     <svg viewBox="0 0 54 34" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg">
       <g fill={SLATE}>
         <g id="s2-db-half">
-          <rect x="0.8" y="11" width="3.2" height="12" rx="1.2" />
-          <rect x="5.2" y="1.2" width="8.2" height="31.6" rx="2.6" />
-          <rect x="14.4" y="7" width="3.6" height="20" rx="1.2" />
-          <rect x="17" y="14" width="10.5" height="6" />
+          <rect x="2.3" y="14.3" width="3" height="5.6" rx="1.1" />
+          <rect x="5.3" y="8.2" width="4" height="18.8" rx="1.3" />
+          <rect x="10.1" y="4.5" width="6" height="25.2" rx="2.2" />
         </g>
-        <use href="#s2-db-half" transform="translate(54 0) scale(-1 1)" />
+        <use href="#s2-db-half" transform="translate(51.5 0) scale(-1 1)" />
+        <rect x="16" y="15.2" width="19.5" height="4.8" />
       </g>
     </svg>
   );
@@ -42,6 +42,7 @@ export function IcGloves() {
   const BG = "#fbd7c5"; // 札の色(.s2-kinds-martial-arts)。親指の切れ目の線を札の色で抜く
   return (
     <svg viewBox="0 0 52 44" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg">
+      <g transform="translate(26 21.2) scale(0.851 0.886) translate(-26 -21.9)">
       <g fill={SLATE}>
         <g id="s2-gl-half">
           <path d="M13.2 11.4 C6.6 11.4 2.2 16.6 2 24.4 C1.8 31 4.4 36.4 7.6 39 L8.2 43 L23.4 43 C24.9 37.6 25.6 31.6 25.4 24.4 C25.2 16.4 21.2 11.4 15.6 11.4 Z" />
@@ -50,6 +51,7 @@ export function IcGloves() {
           <path d="M8.4 36.8 L24.4 36.8" fill="none" stroke={BG} strokeWidth="1.4" strokeLinecap="round" />
         </g>
         <use href="#s2-gl-half" transform="translate(52 0) scale(-1 1)" />
+      </g>
       </g>
     </svg>
   );
@@ -61,11 +63,13 @@ export function IcGolf() {
   const dots: Array<[number, number]> = [[22.4, 15.2], [26.2, 14.2], [24.6, 18.4], [28.4, 18.2], [20.2, 19.4], [26.6, 22.2], [22.6, 22.8], [17.4, 22.6]];
   return (
     <svg viewBox="0 0 40 44" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg">
+      <g transform="translate(22 22.4) scale(0.963 0.944) translate(-20 -21.9)">
       <circle cx="20" cy="14.4" r="12.2" fill="none" stroke={INK} strokeWidth="2.6" />
       {dots.map(([x, y]) => (
         <circle key={`${x}-${y}`} cx={x} cy={y} r="1" fill="none" stroke={INK} strokeWidth="0.9" />
       ))}
       <path d="M13 28.2 H27 C27 30 24.6 31.2 21.6 31.6 L21.2 41.6 C21.2 42.6 18.8 42.6 18.8 41.6 L18.4 31.6 C15.4 31.2 13 30 13 28.2 Z" fill={INK} />
+      </g>
     </svg>
   );
 }

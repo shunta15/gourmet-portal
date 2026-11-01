@@ -5,7 +5,7 @@
  */
 const BLUE_SHOP = "#16407a";
 const NAVY = "#12142a";
-const SKY = "#4f94d8";
+const SKY = "#6b94c9"; // 元画像(半透明の水色)を白いヘッダー上で重ねた見た目の実測色 rgb(107,148,201)
 
 export function LogoShop() {
   return (
@@ -23,11 +23,11 @@ export function LogoShop() {
 export function LogoSpecial() {
   return (
     <svg viewBox="0 0 222 38" role="img" aria-label="MACHINOWA SPORTS マチノワスポーツ" xmlns="http://www.w3.org/2000/svg">
-      <g className="s2b-lg-bl" fontSize="21.5">
-        <text x="6" y="21.4" textLength="128" lengthAdjust="spacingAndGlyphs" fill={NAVY}>MACHINOWA</text>
-        <text x="141" y="21.4" textLength="75" lengthAdjust="spacingAndGlyphs" fill={SKY}>SPORTS</text>
+      <g className="s2b-lg-bl" fontSize="23.2">
+        <text x="4.6" y="21.8" textLength="129.4" lengthAdjust="spacingAndGlyphs" fill={NAVY}>MACHINOWA</text>
+        <text x="139.5" y="21.8" textLength="76" lengthAdjust="spacingAndGlyphs" fill={SKY}>SPORTS</text>
       </g>
-      <text className="s2b-lg-jp" x="6" y="34.4" fontSize="9.6" textLength="83" lengthAdjust="spacing" fill={NAVY}>マチノワスポーツ</text>
+      <text className="s2b-lg-jp" x="4.6" y="34.4" fontSize="9.6" textLength="84.4" lengthAdjust="spacing" fill={NAVY}>マチノワスポーツ</text>
     </svg>
   );
 }
