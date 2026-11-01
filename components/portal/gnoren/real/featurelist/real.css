@@ -84,10 +84,10 @@
 @media (max-width: 768px), (orientation: landscape) and (max-height: 500px) {
   .gn-fl .gn-fl-r-lead { width: auto; }
   .gn-fl .gn-fl-r-pick .gn-fl-pick-t { width: auto; -webkit-line-clamp: 4; }
-  .gn-fl .gn-fl-r-pick .gn-fl-pick-d { width: auto; -webkit-line-clamp: 4; }
+  .gn-fl .gn-fl-r-pick .gn-fl-pick-d { width: auto; -webkit-line-clamp: 4; font-size: 14px; }
   .gn-fl .gn-fl-r-pola { padding: 6px 6px 24px; }
   .gn-fl .gn-fl-card-t.gn-fl-r-ct2 { width: auto; -webkit-line-clamp: 3; }
-  .gn-fl .gn-fl-card-d.gn-fl-r-ct2 { width: auto; -webkit-line-clamp: 3; }
+  .gn-fl .gn-fl-card-d.gn-fl-r-ct2 { width: auto; -webkit-line-clamp: 3; font-size: 14px; }
   .gn-fl .gn-fl-card .gn-fl-go { top: auto; }
 
   .gn-fl .gn-fl-r-find { padding: 4px 16px 22px; margin-top: 0; }
