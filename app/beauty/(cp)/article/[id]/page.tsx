@@ -8,7 +8,6 @@ import { assertPortalLive, liveStaticParams } from "@/lib/portal/launch";
 // 同じ本文が店のページにもあるので、canonical は店のページ(pages/article.tsx)。/beauty/feature/{id} → 店のページの転送はそのまま。
 const cp = cpArticlePage(BEAUTY_SITE);
 
-export const revalidate = 3600;
 export const dynamicParams = true;
 export const generateStaticParams = liveStaticParams(async () => cp.staticParams());
 

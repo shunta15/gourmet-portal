@@ -8,7 +8,6 @@ import { isIndexable } from "@/lib/seo/gate";
 import { absUrl } from "@/lib/seo/util";
 import { VERTICALS } from "@/lib/verticals";
 
-export const revalidate = 3600;
 
 // 共通のサイトマップ(最初・エリア・種類・利用シーン・宿のページ)に、決定デザインの /stay/search(探す)・/stay/shop(店舗紹介の一覧)・/stay/special(特集の一覧)と特集の 3 本・
 // 紹介記事のある宿の /stay/article/{id}(記事のページに出せる本文がある宿だけ。hasArticleBody。店 1 軒の記事は残す)を足す。

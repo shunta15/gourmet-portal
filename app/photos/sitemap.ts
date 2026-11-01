@@ -4,7 +4,6 @@ import { absUrl } from "@/lib/seo/util";
 import { assertPortalLive } from "@/lib/portal/launch";
 import { loadWall } from "@/lib/portal/photoWall";
 
-export const revalidate = 3600;
 
 /**
  * /photos/sitemap.xml。写真から探す（/photos）1 ページだけ。写真が 3 枚以上あるときだけ載せる（lib/seo/gate.ts）。

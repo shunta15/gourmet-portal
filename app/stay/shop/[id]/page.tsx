@@ -8,7 +8,6 @@ import { stayShopPage } from "@/components/portal/stayproto/decided/shop/ShopPag
 const common = shopPage("stay");
 const live = stayShopPage();
 
-export const revalidate = 3600;
 export const dynamicParams = true;
 export const generateStaticParams = common.generateStaticParams;
 export const generateMetadata = withUnlisted(common.generateMetadata);

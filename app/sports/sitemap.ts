@@ -9,7 +9,6 @@ import { isIndexable } from "@/lib/seo/gate";
 import { absUrl } from "@/lib/seo/util";
 import { VERTICALS } from "@/lib/verticals";
 
-export const revalidate = 3600;
 
 // 共通のサイトマップ(最初・エリア・種類・利用シーン・店のページ)に、/sports/search(探す)・/sports/shop(店舗紹介の一覧)・/sports/special(特集の一覧)とその記事(/sports/special/{slug})・
 // 店の記事のページ /sports/article/{id}(店の特集記事・紹介記事の本文がある店だけ。articleIds)を足す。店の記事のカードの一覧だった /sports/article は店舗紹介の一覧へ 308 で転送するので載せない。特集の旧 URL(/sports/feature/{id})も転送なので載せない。

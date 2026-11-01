@@ -9,8 +9,8 @@ import { assertPortalLive, liveStaticParams } from "@/lib/portal/launch";
 
 export const dynamic = "force-static";
 export const dynamicParams = false;
-// 店の追加・編集に追従するよう 1 時間ごとに再生成する
-export const revalidate = 3600;
+// 店の編集には、管理画面の保存時に /api/revalidate が /list-data/<店 ID> を作り直して追従する(時間での作り直しは付けない。lib/revalidatePlan.ts)。
+// 店の追加・削除は再デプロイ(generateStaticParams)で反映される。
 
 export const generateStaticParams = liveStaticParams(async () => (await getListShopIds()).map((id) => ({ id })));
 

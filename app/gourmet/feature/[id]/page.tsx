@@ -40,7 +40,7 @@ import { decodeRewrittenId, NOREN_FEATURE_REWRITE } from "@/lib/portal/noren/rew
 // 枠は app/gourmet/layout.tsx（暖簾の枠）、中身は components/portal/noren/FeaturePage.tsx（見本 /proto-noren/feature/[id] と共通）。
 // データの取り方・メタ情報・構造化データ・描画の方式は、今の app/feature/[id]/page.tsx と同じ（同じ関数・同じ値）。
 // 公開スイッチ OFF のあいだは 404（レイアウトとここで assertPortalLive）。静的に作る ID も OFF では空にする。
-export const revalidate = 60;
+// 時間での作り直し(revalidate)は付けず、管理画面で保存したとき /api/revalidate が作り直す(lib/revalidatePlan.ts)。DB を直接書き換えた場合は再デプロイが要る。
 export const dynamicParams = true;
 
 // 特集の暖簾化を使わないあいだ（NOREN_FEATURE_REWRITE=false）は、この内部のパスを直接開いても 404（/feature/<id> と同じ中身の重複ページを出さない）。

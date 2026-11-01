@@ -7,12 +7,15 @@
  *
  * 使い方:
  *   POST /api/revalidate
- *   body: { paths: ["/restaurant/r01", "/feature/feature-xxx"] }
+ *   body: { paths: ["/restaurant/r01", "/feature/feature-xxx"], scope?: "gourmet" | "all" }
+ *   公開 URL のパスを渡すと、rewrites 後の実体のパス(/gourmet/restaurant/<id> など)・トップ・一覧・sitemap なども
+ *   まとめて作り直す(lib/revalidatePlan.ts)。scope: "all" はサイト全体(店の追加・削除・住所や公開の変更のとき)。
  *   header: Authorization: Bearer <supabase user JWT>
  */
 import { NextRequest, NextResponse } from "next/server";
 import { revalidatePath } from "next/cache";
 import { createClient } from "@/lib/supabase/server";
+import { planRevalidation, type RevalidateScope } from "@/lib/revalidatePlan";
 
 export async function POST(req: NextRequest) {
   // Supabase Auth で認証ユーザーか確認
@@ -23,6 +26,7 @@ export async function POST(req: NextRequest) {
   }
 
   let paths: string[] = [];
+  let scope: RevalidateScope = "gourmet";
   try {
     const body = await req.json();
     if (Array.isArray(body?.paths)) {
@@ -30,6 +34,7 @@ export async function POST(req: NextRequest) {
         (p: any) => typeof p === "string" && p.startsWith("/")
       );
     }
+    if (body?.scope === "all") scope = "all";
   } catch {
     return NextResponse.json({ error: "Invalid JSON" }, { status: 400 });
   }
@@ -38,15 +43,25 @@ export async function POST(req: NextRequest) {
     return NextResponse.json({ error: "No paths provided" }, { status: 400 });
   }
 
+  const plan = planRevalidation(paths, scope);
   const revalidated: string[] = [];
   const failed: string[] = [];
-  for (const p of paths) {
+  for (const p of plan.pages) {
     try {
       revalidatePath(p);
       revalidated.push(p);
     } catch (e) {
       console.warn(`revalidate failed for ${p}:`, e);
       failed.push(p);
+    }
+  }
+  for (const p of plan.layouts) {
+    try {
+      revalidatePath(p, "layout");
+      revalidated.push(`${p} (layout)`);
+    } catch (e) {
+      console.warn(`revalidate (layout) failed for ${p}:`, e);
+      failed.push(`${p} (layout)`);
     }
   }
 

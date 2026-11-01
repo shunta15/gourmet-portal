@@ -10,7 +10,9 @@
  * 認証ユーザーのみ。dryRun=true で検証のみ（実際の DB 書き込みなし）
  */
 import { NextRequest, NextResponse } from "next/server";
+import { revalidatePath } from "next/cache";
 import { createClient } from "@/lib/supabase/server";
+import { planRevalidation } from "@/lib/revalidatePlan";
 
 export const runtime = "nodejs";
 
@@ -161,6 +163,15 @@ export async function POST(req: NextRequest) {
       );
     }
     upserted += batch.length;
+  }
+
+  // 取り込んだ店は、追加・更新・公開の切り替えを含みうるので、公開ページの ISR キャッシュをサイト全体で作り直す(lib/revalidatePlan.ts)
+  try {
+    const plan = planRevalidation([], "all");
+    for (const p of plan.pages) revalidatePath(p);
+    for (const p of plan.layouts) revalidatePath(p, "layout");
+  } catch (e) {
+    console.warn("revalidate after import failed:", e);
   }
 
   return NextResponse.json({ upserted, issues });

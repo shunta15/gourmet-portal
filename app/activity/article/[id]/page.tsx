@@ -8,7 +8,6 @@ import { ActivityStoryPage } from "@/components/portal/activity/pages";
 // 描くのは、オーナーが決めたデザイン(components/portal/activity/Story.tsx)。構造化データの作りは route.tsx と同じ(components/portal/activity/pages.tsx)。
 const route = vkArticleRoute(activityCfg);
 
-export const revalidate = 3600;
 export const dynamicParams = true;
 export const generateStaticParams = route.generateStaticParams;
 export const generateMetadata = withUnlisted(route.generateMetadata);

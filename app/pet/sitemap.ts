@@ -8,7 +8,6 @@ import { isIndexable } from "@/lib/seo/gate";
 import { absUrl } from "@/lib/seo/util";
 import { VERTICALS } from "@/lib/verticals";
 
-export const revalidate = 3600;
 
 // 共通のサイトマップ(最初・エリア・種類・利用シーン・店ページ)に、決定デザインの /pet/search(探す)・/pet/shop(店舗紹介の一覧)・/pet/special(特集の一覧)と特集の 4 本を足す。
 // 店の特集記事のページ /pet/article/{id}(記事のある店だけ。2026-10-26 試作)も足す。店の記事の一覧 /pet/article は 308 で /pet/shop へ転送するので載せない(2026-10-24 オーナー決定)。

@@ -6,7 +6,6 @@ import { getAllVideos } from "@/lib/videos";
 import { getVideoStores } from "@/lib/videos/stores";
 import { displayTitle, isVideoIndexable, tiktokPlayerUrl, videoDescription } from "@/lib/videos/display";
 
-export const revalidate = 3600;
 
 /**
  * /videos/sitemap.xml。index 対象の視聴ページだけ（投稿日が分かる動画＝VideoObject を出せる動画）と、

@@ -6,7 +6,6 @@ import { SportsSpecialArticlePage } from "@/components/portal/sports/pages";
 // 記事に出てくる店(storeIds)へは、店舗紹介のページ /sports/shop/{店 ID} へのリンクを付ける。metadata・事前生成は components/portal/vkit/special/route.tsx と同じ。
 const route = vkSpecialArticleRoute(sportsCfg);
 
-export const revalidate = 3600;
 export const dynamicParams = false;
 export const generateStaticParams = route.generateStaticParams;
 export const generateMetadata = route.generateMetadata;

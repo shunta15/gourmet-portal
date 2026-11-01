@@ -6,7 +6,6 @@ import { LifeShopPage } from "@/components/portal/life/pages";
 // URL・generateStaticParams・metadata(title・description・canonical・OGP・robots)は、共通の店ページ(components/portal/pages/shop.tsx)のもの。ステイ・アクティビティと同じ作り。
 const common = shopPage("life");
 
-export const revalidate = 3600;
 export const dynamicParams = true;
 export const generateStaticParams = common.generateStaticParams;
 export const generateMetadata = withUnlisted(common.generateMetadata);
