@@ -310,7 +310,7 @@ export default function TopPage({ d }: { d: TopData }) {
               </Link>
             </div>
           ))}
-          {d.morePrefs.length > 0 && <MorePrefs prefs={d.morePrefs} mapSrc={`${T}/map.png`} />}
+          {d.morePrefs.length > 0 && <MorePrefs prefs={d.morePrefs} mapSrc={`${T}/map.svg`} />}
         </div>
       </section>
 

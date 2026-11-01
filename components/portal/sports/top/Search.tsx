@@ -1,5 +1,6 @@
 import Link from "next/link";
 import Header from "./Header";
+import { FindMap, IcDumbbell, IcGloves, IcGolf } from "./Art";
 import { IcArrow, IcCheck, IcChev, IcDown, IcPin, IcRefresh, IcSearch } from "./Icons";
 import { FEATURES, KINDS, type SearchArgs, type SShop } from "../data";
 import { SPL } from "../links";
@@ -7,6 +8,7 @@ import { SPL } from "../links";
 /* eslint-disable @next/next/no-img-element */
 const P = "/_portal/sports/top/";
 const S = SPL.search;
+const KIND_ICONS = [<IcDumbbell key="gym" />, <IcGloves key="martial" />, <IcGolf key="golf" />];
 const VLAB: Record<string, string> = { gym: "GYM & FITNESS", "martial-arts": "MARTIAL ARTS", golf: "GOLF" };
 
 /** ページ送りの番号。9 ページまでは全部、それ以上は 先頭・今のページの前後・最後 */
@@ -81,7 +83,7 @@ export default function Search({
       <nav className="s2-kinds" aria-label="カテゴリから探す">
         {KINDS.map((k, i) => (
           <Link key={k.slug} href={SPL.searchWith({ kind: k.slug })} className={`s2-kinds-i s2-kinds-${k.slug}`}>
-            <img src={`${P}s-ic${i + 1}.webp`} alt="" width={52} height={44} />
+            <i className="s2-kic" aria-hidden="true">{KIND_ICONS[i]}</i>
             <span>
               <b>{k.name}</b>
               <small>{k.en}</small>
@@ -180,7 +182,7 @@ export default function Search({
           </div>
           <div className="s2-res-r">
             <div className="s2-map">
-              <img src={`${P}s-map.webp`} alt="" width={324} height={85} />
+              <FindMap />
             </div>
             {others.map((s) => (
               <Card key={s.id} s={s} />

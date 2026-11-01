@@ -40,6 +40,8 @@
 .sr-maplink svg { width: calc(18 * var(--u)); height: calc(11 * var(--u)); color: var(--lf-red); }
 .sr-mapimg { position: absolute; right: calc(8 * var(--u)); top: calc(-8 * var(--u)); width: calc(177 * var(--u)); height: calc(153 * var(--u)); z-index: 1; }
 .sr-mapimg img { width: 100%; height: 100%; object-fit: cover; mix-blend-mode: multiply; }
+.sr-ml { position: absolute; transform: translateY(-50%); font-family: var(--lf-ffs); font-weight: 500; font-size: calc(9.4 * var(--u)); line-height: 1; letter-spacing: 0.08em; color: #3b3b3b; white-space: nowrap; }
+.sr-ml-ln { position: absolute; height: 0; border-top: 1px solid #5a5a5a; }
 .sr-list { margin-top: calc(-10 * var(--u)); }
 .sr-row { position: relative; margin-top: calc(6 * var(--u)); }
 .sr-no { display: flex; align-items: center; gap: calc(14 * var(--u)); height: calc(26 * var(--u)); border-left: 1px solid var(--lf-red); padding-left: calc(10 * var(--u)); }

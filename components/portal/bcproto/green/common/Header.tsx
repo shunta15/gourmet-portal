@@ -2,7 +2,8 @@
 
 import { useState } from "react";
 import Link from "next/link";
-import { BASE, SEARCH_HREF, SHOPS_HREF, SPECIAL_HREF, IMG_COMMON } from "./site";
+import { BASE, SEARCH_HREF, SHOPS_HREF, SPECIAL_HREF } from "./site";
+import Logo from "./Logo";
 
 // メニューは「トップ」「探す」「店舗紹介」「特集」の 4 つだけ(2026-10-24 オーナー決定。業種のページは「最初・探す・店舗紹介・特集」の 4 種類)。お気に入り・閲覧履歴は本番に機能が無いので置かない。
 // 最初のページの節へ飛ぶだけだった「エリアから探す」「施術の種類から探す」「こだわりから探す」は外した(同じ絞り込みは最初のページ本体と探すページにある)。
@@ -26,8 +27,7 @@ export default function Header() {
     <header className="gr-head" data-gr-head>
       <div className="gr-head-in">
         <Link href={BASE} className="gr-logo" aria-label="マチノワ Body Care トップ" onClick={() => setOpen(false)}>
-          {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img src={`${IMG_COMMON}/logo.webp`} width={214} height={46} alt="マチノワ.Body Care からだが整うと、毎日が変わる。" />
+          <Logo title="マチノワ.Body Care からだが整うと、毎日が変わる。" gradId="gr-logo-g-head" />
         </Link>
         <nav className="gr-nav" aria-label="主なページ">
           {NAV.map((n) => (

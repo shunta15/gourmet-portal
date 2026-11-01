@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { SPL } from "../links";
 import { Search } from "./Icons";
+import { LogoShop, LogoSpecial } from "./Logos";
 
 export type S2bNavKey = "top" | "search" | "shops" | "special";
 const ITEMS: Array<{ key: S2bNavKey; label: string; href: string }> = [
@@ -12,15 +13,14 @@ const ITEMS: Array<{ key: S2bNavKey; label: string; href: string }> = [
 
 /**
  * ヘッダー。見本2が 2 枚で少し違うので 2 種類(shop = 店舗紹介の見本: 明朝のロゴ + 青い丸の虫眼鏡 / special = 特集の見本: ゴシックのロゴ + 一言 + 虫眼鏡)。
- * ロゴは見本の画像から切り出した webp(押せる範囲 = ロゴ全体)。メニューの文字は生の文字。
+ * ロゴは SVG の文字(Logos.tsx。以前は見本から切り出した webp で粗かった)。押せる範囲 = ロゴ全体。メニューの文字は生の文字。
  */
 export default function Header({ variant, current }: { variant: "shop" | "special"; current: S2bNavKey }) {
   const shop = variant === "shop";
   return (
     <header className={`s2b-hd s2b-hd--${variant}`}>
       <Link href={SPL.top} className="s2b-hd-logo" aria-label="マチノワスポーツ トップへ">
-        {/* eslint-disable-next-line @next/next/no-img-element */}
-        <img src={shop ? "/_portal/sports/inner/logo-shop.webp" : "/_portal/sports/inner/logo-special.webp"} alt="MACHINOWA SPORTS マチノワスポーツ" width={shop ? 356 : 222} height={shop ? 40 : 38} />
+        {shop ? <LogoShop /> : <LogoSpecial />}
       </Link>
       {shop ? null : (
         <p className="s2b-hd-tag">

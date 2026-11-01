@@ -1,5 +1,5 @@
 import { assertPortalLive } from "@/lib/portal/launch";
-import { jp, min, logo, lab } from "./top/fonts";
+import { jp, min, logo, lab, script } from "./top/fonts";
 import "./top/a.css";
 
 /**
@@ -9,7 +9,7 @@ import "./top/a.css";
 export default function TopFrame({ children }: { children: React.ReactNode }) {
   assertPortalLive();
   return (
-    <div className={`s2-root ${jp.variable} ${min.variable} ${logo.variable} ${lab.variable}`}>
+    <div className={`s2-root ${jp.variable} ${min.variable} ${logo.variable} ${lab.variable} ${script.variable}`}>
       {children}
     </div>
   );

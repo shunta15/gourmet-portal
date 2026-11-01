@@ -38,6 +38,11 @@ body:has(.s2b-root) { cursor: auto; }
 .s2b-hd { position: relative; z-index: 5; }
 .s2b-hd > * { position: absolute; }
 .s2b-hd-logo img { height: auto; }
+.s2b-hd-logo svg { display: block; width: 100%; height: auto; }
+.s2b-lg-sf { font-family: var(--s2b-ffs); font-weight: 600; }
+.s2b-lg-cz { font-family: var(--s2b-cz), "Cinzel", "Times New Roman", serif; font-weight: 400; }
+.s2b-lg-bl { font-family: var(--s2b-bl), "Barlow", "Helvetica Neue", Arial, sans-serif; font-weight: 700; }
+.s2b-lg-jp { font-family: var(--s2b-ffj); font-weight: 700; }
 .s2b-hd-search svg { width: 100%; height: 100%; }
 /* 店舗紹介の見本(明朝のロゴ・青い丸) */
 .s2b-hd--shop { height: calc(45 * var(--u)); background: #fefefe; border-bottom: 1px solid #e3e8ef; }

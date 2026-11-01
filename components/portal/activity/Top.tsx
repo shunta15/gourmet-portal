@@ -196,7 +196,7 @@ export default function Top({ shops, videos, guide }: { shops: AShop[]; videos: 
           })}
         </div>
         <div className="t-area-map" aria-hidden="true">
-          <img className="t-area-map-img" src={`${IMG}top-map.webp`} alt="" />
+          <img className="t-area-map-img" src={`${IMG}top-map.svg`} alt="" />
           <Stamp id="jp" className="t-area-map-stamp" ring="EXPLORE OF JAPAN" mountain={false} />
           <Pine className="t-area-mp1" />
           <Pine className="t-area-mp2" />

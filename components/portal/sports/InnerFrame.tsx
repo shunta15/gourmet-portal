@@ -1,6 +1,6 @@
 import type { ReactNode } from "react";
 import { assertPortalLive } from "@/lib/portal/launch";
-import { jp, sf, en } from "./inner/fonts";
+import { jp, sf, en, cz, bl } from "./inner/fonts";
 import "./inner/base.css";
 
 /**
@@ -11,7 +11,7 @@ import "./inner/base.css";
 export default function InnerFrame({ children }: { children: ReactNode }) {
   assertPortalLive();
   return (
-    <div className={`s2b-root ${jp.variable} ${sf.variable} ${en.variable}`}>
+    <div className={`s2b-root ${jp.variable} ${sf.variable} ${en.variable} ${cz.variable} ${bl.variable}`}>
       <div className="s2b-box">
         {children}
       </div>
