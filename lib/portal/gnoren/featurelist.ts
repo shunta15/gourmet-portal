@@ -93,6 +93,18 @@ function fit(s: string, max: number): string {
   return k >= 8 ? head.slice(0, k) : `${t.slice(0, max)}…`;
 }
 
+/**
+ * 布札の説明文: 記事の lede の「最初の文」(頭から。。で切る)。無ければ副題の最初の文。
+ * 長いときは max 字以内の最後の読点(、)で止める(文の途中から始めない・字は変えない)。読点が無いときは文を丸ごと出す。
+ */
+function leadSentence(f: Feature, max: number): string {
+  const a = FEATURE_ARTICLES[f.id];
+  const first = firstSentence(a?.lede ?? "") || firstSentence(f.sub);
+  if (first.length <= max) return first;
+  const k = first.slice(0, max + 1).lastIndexOf("、");
+  return k >= 8 ? first.slice(0, k) : first;
+}
+
 // ───────── テーマ(布札 7) ─────────
 type ThemeDef = { slot: GnFlSlot; icon: GnFlTheme["icon"]; label: string; head: string; tags: string[] };
 /**
@@ -205,7 +217,7 @@ export function getFeatureListVM(p: GnFlSP): GnFlVM {
       label: d.label,
       head: d.head,
       title: rep ? fit(rep.title, 26) : "",
-      desc: repItem ? fit(repItem.sub, 40) : "",
+      desc: rep ? leadSentence(rep, 64) : "",
       img: repItem?.img,
       total: list.length,
       items: list.slice(0, SECTION_CAP).map((f) => toItem(f, 400)),

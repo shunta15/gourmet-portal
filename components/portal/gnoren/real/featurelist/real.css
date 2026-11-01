@@ -16,7 +16,7 @@
 
 /* ───── テーマのカード: 文は実データ・幅で折り返して 2 行まで ───── */
 .gn-fl .gn-fl-card-t.gn-fl-r-ct2 { white-space: normal; width: calc(var(--u) * (var(--w) - 10)); display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 2; overflow: hidden; }
-.gn-fl .gn-fl-card-d.gn-fl-r-ct2 { white-space: normal; width: calc(var(--u) * (var(--w) - 10)); display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 2; overflow: hidden; }
+.gn-fl .gn-fl-card-d.gn-fl-r-ct2 { white-space: normal; width: calc(var(--u) * (var(--w) - 10)); display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 3; overflow: hidden; }
 /* 矢印の丸は、写真の右下の中に置く(題の 1 行目と重ならないように。見本は縁にまたがる) */
 .gn-fl .gn-fl-card .gn-fl-go { top: calc(var(--u) * (43 + var(--ph) - 31)); }
 /* 文字の切れ目は、語の途中で折らない */
@@ -83,6 +83,10 @@
 /* ───────── スマホ(≤768px) ───────── */
 @media (max-width: 768px), (orientation: landscape) and (max-height: 500px) {
   .gn-fl .gn-fl-r-lead { width: auto; }
+  .gn-fl .gn-fl-tag span { font-size: 14px; }
+  .gn-fl .gn-fl-pul { font-size: 14px; }
+  .gn-fl a.gn-fl-more, .gn-fl a.gn-fl-nh-more { font-size: 14px; }
+  .gn-fl .gn-fl-band-s { font-size: 14px; }
   .gn-fl .gn-fl-r-pick .gn-fl-pick-t { width: auto; -webkit-line-clamp: 4; }
   .gn-fl .gn-fl-r-pick .gn-fl-pick-d { width: auto; -webkit-line-clamp: 4; font-size: 14px; }
   .gn-fl .gn-fl-r-pola { padding: 6px 6px 24px; }
@@ -96,16 +100,17 @@
   .gn-fl-r-form-i { flex: 1 1 0; max-width: none; height: 48px; padding: 0 16px; font-size: 16px; }
   .gn-fl-r-form-b { height: 48px; min-width: 88px; font-size: 15px; }
 
-  .gn-fl-r-grid, .gn-fl-r-grid-5 { grid-template-columns: 1fr; gap: 28px; padding-top: 16px; }
-  .gn-fl-r-grid-5 { display: flex; gap: 14px; margin-top: 8px; padding: 12px 16px 16px; overflow-x: auto; scroll-snap-type: x mandatory; scroll-padding-inline: 16px; scrollbar-width: none; }
+  .gn-fl-r-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 24px 12px; padding-top: 16px; }
+  .gn-fl-r-grid-5 { grid-template-columns: 1fr; display: flex; gap: 14px; margin-top: 8px; padding: 12px 16px 16px; overflow-x: auto; scroll-snap-type: x mandatory; scroll-padding-inline: 16px; scrollbar-width: none; }
   .gn-fl-r-grid-5::-webkit-scrollbar { display: none; }
   .gn-fl-r-grid-5 .gn-fl-r-it { flex: none; width: 232px; scroll-snap-align: start; }
   .gn-fl .gn-fl-news.gn-fl-r-news { padding: 30px 0 14px; }
   .gn-fl-r-ph { aspect-ratio: 16 / 9; border-radius: 6px; }
   .gn-fl-r-phw .gn-fl-go-s { width: 40px; height: 40px; bottom: -20px; right: 8px; }
-  .gn-fl .gn-fl-r-t { margin: 16px 52px 0 1px; font-size: 15px; -webkit-line-clamp: 4; }
+  .gn-fl .gn-fl-r-t { margin: 16px 2px 0 1px; font-size: 15px; -webkit-line-clamp: 4; }
+  .gn-fl .gn-fl-r-grid-5 .gn-fl-r-t { margin-right: 52px; }
   .gn-fl .gn-fl-r-a .gn-fl-chips { padding-top: 10px; gap: 6px; }
-  .gn-fl .gn-fl-r-a .gn-fl-chip { min-height: 24px; line-height: 24px; padding: 0 9px; font-size: 12px; border-radius: 4px; }
+  .gn-fl .gn-fl-r-a .gn-fl-chip { min-height: 28px; line-height: 28px; padding: 0 9px; font-size: 14px; border-radius: 4px; }
   .gn-fl .gn-fl-r-a .gn-fl-date { margin-top: 8px; font-size: 12px; }
 
   .gn-fl .gn-fl-r-sec { padding: 24px 16px 14px; scroll-margin-top: 68px; }
