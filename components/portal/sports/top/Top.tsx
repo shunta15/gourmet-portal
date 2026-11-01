@@ -1,5 +1,6 @@
 import Link from "next/link";
 import Header from "./Header";
+import { CatScript } from "./Art";
 import { IcArrow, IcChev, IcPin, IcSearch } from "./Icons";
 import { KINDS, type SShop, type SSpecial } from "../data";
 import { SPL } from "../links";
@@ -79,7 +80,7 @@ export default function Top({ shops, specials }: { shops: SShop[]; specials: SSp
       </section>
 
       <section className="s2-cat" aria-label="カテゴリから探す">
-        <img className="s2-cat-sc" src={`${P}t-catscript.webp`} alt="Category から探す" width={100} height={62} />
+        <CatScript className="s2-cat-sc" />
         {CATS.map((c) => (
           <Link key={c.kind.slug} href={kindHref(c.kind.slug)} className="s2-cat-i">
             <img src={`${P}${c.img}.webp`} alt="" width={72} height={72} />

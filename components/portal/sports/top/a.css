@@ -106,7 +106,8 @@ body:has(.s2-root) a, body:has(.s2-root) button { cursor: pointer; }
 
 .s2-kinds { display: grid; }
 .s2-kinds-i { display: flex; align-items: center; position: relative; color: #1d1d1d; }
-.s2-kinds-i img { flex: none; object-fit: contain; }
+.s2-kinds-i .s2-kic { flex: none; display: block; }
+.s2-kic svg { display: block; width: 100%; height: 100%; }
 .s2-kinds-i span { display: grid; flex: 1; }
 .s2-kinds-i b { font-weight: 500; }
 .s2-kinds-i small { font-family: var(--s2-ff-lab); text-transform: uppercase; color: #3d3d3d; }
@@ -149,7 +150,9 @@ body:has(.s2-root) a, body:has(.s2-root) button { cursor: pointer; }
 .s2-rc-bd small { display: block; color: #666; }
 .s2-rc-ar { position: absolute; color: #333; }
 .s2-map { position: relative; }
-.s2-map img { width: 100%; height: 100%; object-fit: cover; }
+.s2-map img, .s2-map > svg { display: block; width: 100%; height: 100%; object-fit: cover; }
+.s2-art-script { font-family: var(--s2-script), "Segoe Script", "Snell Roundhand", cursive; font-style: normal; }
+.s2-art-kana { font-family: var(--s2-ff-jp); font-weight: 500; }
 .s2-map-go { position: absolute; display: block; }
 .s2-empty { color: #666; }
 .s2-bottom { display: block; }
@@ -186,7 +189,7 @@ body:has(.s2-root) a, body:has(.s2-root) button { cursor: pointer; }
   .s2-hero-l2 { left: calc(793 * var(--u)); top: calc(217 * var(--u)); width: calc(231 * var(--u)); height: calc(192 * var(--u)); }
 
   .s2-cat { height: calc(98 * var(--u)); }
-  .s2-cat-sc { position: absolute; left: calc(26 * var(--u)); top: calc(15 * var(--u)); width: calc(100 * var(--u)); height: auto; }
+  .s2-cat-sc { position: absolute; left: calc(26 * var(--u)); top: calc(15 * var(--u)); width: calc(100 * var(--u)); height: auto; overflow: visible; }
   .s2-cat-i { position: absolute; top: 0; height: 100%; padding-left: calc(20 * var(--u)); gap: calc(19 * var(--u)); }
   .s2-cat-i::before { content: ""; position: absolute; left: 0; top: calc(18 * var(--u)); height: calc(56 * var(--u)); width: 1px; background: rgba(0, 0, 0, 0.16); }
   .s2-cat-i:nth-of-type(1) { left: calc(147 * var(--u)); width: calc(296 * var(--u)); --ax: calc(252 * var(--u)); }
@@ -247,7 +250,7 @@ body:has(.s2-root) a, body:has(.s2-root) button { cursor: pointer; }
 
   .s2-kinds { grid-template-columns: calc(341 * var(--u)) calc(335 * var(--u)) calc(340 * var(--u)); column-gap: calc(4 * var(--u)); height: calc(65 * var(--u)); }
   .s2-kinds-i { padding-left: calc(28 * var(--u)); gap: calc(22 * var(--u)); }
-  .s2-kinds-i img { width: calc(47 * var(--u)); height: calc(40 * var(--u)); }
+  .s2-kinds-i .s2-kic { width: calc(47 * var(--u)); height: calc(40 * var(--u)); }
   .s2-kinds-i span { gap: calc(6 * var(--u)); }
   .s2-kinds-i b { font-size: calc(17 * var(--u)); line-height: calc(20 * var(--u)); letter-spacing: 0.06em; }
   .s2-kinds-i small { font-size: calc(9 * var(--u)); letter-spacing: 0.16em; line-height: calc(10 * var(--u)); }
@@ -385,7 +388,7 @@ body:has(.s2-root) a, body:has(.s2-root) button { cursor: pointer; }
   .s2-bar-loc svg { width: 16px; height: 16px; }
   .s2-kinds { grid-template-columns: 1fr; row-gap: 3px; }
   .s2-kinds-i { padding: 12px 16px; gap: 16px; }
-  .s2-kinds-i img { width: 42px; height: 36px; }
+  .s2-kinds-i .s2-kic { width: 42px; height: 36px; }
   .s2-kinds-i span { gap: 3px; }
   .s2-kinds-i b { font-size: 15px; }
   .s2-kinds-i small { font-size: 9px; letter-spacing: 0.14em; }
