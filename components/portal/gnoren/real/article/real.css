@@ -128,7 +128,7 @@
   .gn-feat-r-hero { display: flex; flex-direction: column; }
   .gn-feat-r-hero-bg { order: 3; width: 100%; aspect-ratio: 498 / 388; margin-top: 18px; }
   .gn-feat-r-nohero { display: none; }
-  .gn-feat-r-crumb { order: 1; display: flex; flex-wrap: wrap; align-items: center; gap: 0 8px; padding: 4px 16px 8px; font-size: 12px; letter-spacing: .06em; color: #5a504a; }
+  .gn-feat-r-crumb { order: 1; display: flex; flex-wrap: wrap; align-items: center; gap: 0 8px; padding: 4px 16px 8px; font-size: 14px; letter-spacing: .06em; color: #5a504a; }
   .gn-feat-r-crumb a { display: inline-flex; align-items: center; justify-content: center; min-height: 44px; min-width: 44px; padding-inline: 4px; }
   .gn-feat-r-crumb [aria-current] { display: block; flex: 1 1 100%; min-height: 24px; min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; margin-top: -8px; }
   .gn-feat-r-card { order: 2; position: relative; margin: 28px 14px 0; padding: 44px 22px 26px; }
@@ -136,7 +136,7 @@
   .gn-feat-r-card > *:not(.gn-feat-r-card-bg) { position: relative; }
   .gn-feat-r-tag { position: absolute !important; top: -12px; left: 10px; }
   .gn-feat-r-tag-in { padding: 8px 20px; font-size: 14px; }
-  .gn-feat-r-lead { font-size: 13px; letter-spacing: .1em; color: #3a322d; }
+  .gn-feat-r-lead { font-size: 14px; letter-spacing: .1em; color: #3a322d; }
   .gn-feat-r-title { margin-top: 8px; line-height: 1.3; }
   .gn-feat-r-title[data-lv="0"] { font-size: clamp(40px, 12.5vw, 54px); }
   .gn-feat-r-title[data-lv="1"] { font-size: clamp(30px, 9vw, 40px); }
@@ -165,7 +165,7 @@
   .gn-feat-r-head { gap: 12px; margin-bottom: 14px; }
   .gn-feat-r-num { font-size: 34px; }
   .gn-feat-r-rule { width: 44px; height: 1px; flex: none; }
-  .gn-feat-r-label { font-size: 13px; }
+  .gn-feat-r-label { font-size: 14px; }
   .gn-feat-r-h { font-size: clamp(22px, 6.2vw, 27px); line-height: 1.55; letter-spacing: .05em; }
   .gn-feat-r-body { margin-top: 14px; font-size: 14.5px; line-height: 1.95; letter-spacing: .03em; }
   .gn-feat-r-more .gn-feat-r-body { margin-top: 0; }
@@ -194,7 +194,7 @@
   .gn-feat-r-quote { margin: 30px 16px 0; }
   .gn-feat-r .gn-feat-r-quote .gn-feat-r-paper { padding: 24px 22px; font-size: 16px; line-height: 1.9; letter-spacing: .06em; }
   .gn-feat-r .gn-feat-r-quote .gn-feat-r-paper.is-long { font-size: 14.5px; line-height: 1.95; letter-spacing: .03em; }
-  .gn-feat-r-quote figcaption { margin-top: 8px; font-size: 13px; letter-spacing: .1em; }
+  .gn-feat-r-quote figcaption { margin-top: 8px; font-size: 14px; letter-spacing: .1em; }
 
   /* 下の帯 */
   .gn-feat-r-band { margin-top: 44px; padding: 40px 16px; display: grid; gap: 26px; }
@@ -248,8 +248,8 @@
 
   .gn-feat-r .gn-feat-r-panel-bg { position: absolute; inset: 0; background-color: #f5f0e8; }
   .gn-feat-r-panel { position: absolute; z-index: 1; right: 0; top: calc(var(--u) * 52); bottom: 0; width: calc(var(--u) * 148); }
-  .gn-feat-r-script { position: absolute; left: calc(var(--u) * 16); top: calc(var(--u) * 60); width: calc(var(--u) * 120); font-size: calc(var(--u) * 30); line-height: calc(var(--u) * 34); transform: rotate(-19deg); transform-origin: left top; white-space: nowrap; }
-  .gn-feat-r-script span:nth-child(2) { padding-left: calc(var(--u) * 10); }
+  .gn-feat-r-script { position: absolute; left: calc(var(--u) * 7); top: calc(var(--u) * 66); width: calc(var(--u) * 120); font-size: calc(var(--u) * 21); line-height: calc(var(--u) * 26); transform: rotate(-19deg); transform-origin: left top; white-space: nowrap; }
+  .gn-feat-r-script span:nth-child(2) { padding-left: calc(var(--u) * 8); }
   .gn-feat-r-strips { position: absolute; left: 0; top: calc(var(--u) * 125); width: 100%; }
   .gn-feat-r-strip { position: absolute; top: 0; width: calc(var(--u) * 44); height: calc(var(--n, 8) * calc(var(--u) * 21.6) + calc(var(--u) * 24)); padding-top: calc(var(--u) * 12); font-size: calc(var(--u) * 17.5); display: flex; justify-content: flex-start; align-items: center; }
   .gn-feat-r-strip-a { left: calc(var(--u) * 64); }
@@ -327,6 +327,23 @@
   .gn-feat-r-pC .gn-feat-r-note { position: absolute; right: calc(var(--u) * 255); bottom: calc(var(--u) * -9); width: calc(var(--u) * 176); }
   .gn-feat-r-pC .gn-feat-r-note .gn-feat-r-paper { padding: calc(var(--u) * 12) calc(var(--u) * 18) calc(var(--u) * 16) calc(var(--u) * 22); font-size: calc(var(--u) * 12.4); line-height: calc(var(--u) * 19); letter-spacing: .12em; }
   .gn-feat-r-pC.gn-feat-r-n0 .gn-feat-r-note { position: relative; right: auto; bottom: auto; margin-top: calc(var(--u) * 40); margin-left: calc(var(--u) * 40); }
+
+  /* B・C: 写真の下の右列が空かないよう、店の箱を右列(写真の真下)に置き、残りの本文は左列の次の段に置く(2 段組の長い本文の章は従来のまま全幅) */
+  .gn-feat-r-pB:not(.gn-feat-r-n0):not(:has(.gn-feat-r-cols.is-2)) .gn-feat-r-more,
+  .gn-feat-r-pC:not(.gn-feat-r-n0):not(:has(.gn-feat-r-cols.is-2)) .gn-feat-r-more { display: contents; }
+  .gn-feat-r-pB:not(.gn-feat-r-n0):not(:has(.gn-feat-r-cols.is-2)), .gn-feat-r-pC:not(.gn-feat-r-n0):not(:has(.gn-feat-r-cols.is-2)) { grid-template-rows: auto minmax(0, 1fr); }
+  .gn-feat-r-pB:not(.gn-feat-r-n0):not(:has(.gn-feat-r-cols.is-2)) .gn-feat-r-more > .gn-feat-r-body,
+  .gn-feat-r-pC:not(.gn-feat-r-n0):not(:has(.gn-feat-r-cols.is-2)) .gn-feat-r-more > .gn-feat-r-body { grid-column: 2; grid-row: 2; align-self: start; margin-top: calc(var(--u) * 10); position: relative; z-index: 2; }
+  .gn-feat-r-pB:not(.gn-feat-r-n0):not(:has(.gn-feat-r-cols.is-2)) .gn-feat-r-more > .gn-feat-r-shopc,
+  .gn-feat-r-pC:not(.gn-feat-r-n0):not(:has(.gn-feat-r-cols.is-2)) .gn-feat-r-more > .gn-feat-r-shopc { grid-column: 3; grid-row: 1 / 3; align-self: start; position: relative; z-index: 2; }
+  .gn-feat-r-pB:not(.gn-feat-r-n0):not(:has(.gn-feat-r-cols.is-2)) .gn-feat-r-more > .gn-feat-r-shopc { margin-top: calc(var(--u) * 241 + var(--u) * 18); margin-left: calc(var(--u) * 14); }
+  .gn-feat-r-pB.has-note:not(.gn-feat-r-n0):not(:has(.gn-feat-r-cols.is-2)) .gn-feat-r-more > .gn-feat-r-shopc { margin-top: calc(var(--u) * 241 + var(--u) * 44); }
+  .gn-feat-r-pC:not(.gn-feat-r-n0):not(:has(.gn-feat-r-cols.is-2)) .gn-feat-r-more > .gn-feat-r-shopc { margin-top: calc(var(--u) * 181 + var(--u) * 22); }
+
+  /* A: 店の箱は大きな写真の真下(左列)、残りの本文は文の列の次の段に置く(左列の下が空かないように) */
+  .gn-feat-r-pA:not(.gn-feat-r-n0):not(:has(.gn-feat-r-cols.is-2)) .gn-feat-r-more { display: contents; }
+  .gn-feat-r-pA:not(.gn-feat-r-n0):not(:has(.gn-feat-r-cols.is-2)) .gn-feat-r-more > .gn-feat-r-body { grid-column: 4 / 6; grid-row: 2; align-self: start; margin-top: calc(var(--u) * 10); position: relative; z-index: 2; }
+  .gn-feat-r-pA:not(.gn-feat-r-n0):not(:has(.gn-feat-r-cols.is-2)) .gn-feat-r-more > .gn-feat-r-shopc { grid-column: 2; grid-row: 2; align-self: start; margin-top: calc(var(--u) * 14); position: relative; z-index: 2; }
 
   /* 写真 0 枚の章(店 1 軒の記事に多い): 本文を広げ(最大 640u)、残りは 2 段組。メモ紙は章の右上(見出しの右)に置く。A/B/C のどれでも同じ形 */
   .gn-feat-r-ch.gn-feat-r-n0 { grid-template-columns: calc(var(--u) * 45) minmax(0, 1fr) calc(var(--u) * 45); }
