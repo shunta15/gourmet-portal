@@ -19,6 +19,9 @@
 .gn-shop-r-cloth-tx { position: absolute; left: 3%; right: 3%; top: calc(var(--cl) * 38); z-index: 3; display: flex; flex-direction: column; align-items: center; text-align: center; color: #1a1411; }
 .gn-shop-r-cloth-sub { font-size: calc(var(--cl) * 18); letter-spacing: .08em; line-height: 1.5; font-weight: 500; margin-bottom: calc(var(--cl) * 10); }
 .gn-shop-r-cloth-name { display: block; font-weight: 500; letter-spacing: .03em; line-height: 1.3; overflow-wrap: anywhere; text-wrap: balance; }
+/* 長い店名(12 字超)は 2 行に分ける。布の継ぎ目(隙間)で字が読みにくくならないよう、字のまわりに布の色のふちを付ける */
+.gn-shop-r-cloth-line { display: block; }
+.gn-shop-r-cloth-name-2 { line-height: 1.35; text-shadow: 0 0 2px #eee5d4, 0 0 4px #eee5d4, 0 0 6px #eee5d4; }
 
 /* 縦の短冊(紙。文字は店のデータ) */
 .gn-shop-r-strips { position: absolute; display: flex; flex-direction: row-reverse; align-items: flex-start; margin: 0; padding: 0; list-style: none; }
@@ -27,8 +30,8 @@
 
 .gn-shop-r-catch-h { margin: 0; }
 
-/* 電話番号のリンクは押す所を 44px 以上に(指で押す) */
-.gn-shop-r .gn-shop-row-tel dd a { display: inline-flex; align-items: center; min-height: 44px; }
+/* 電話番号のリンクは押す所を 44px 以上に(指で押す)。字の大きさ・行の高さは他の行の値と同じ(inherit)、字の縦位置は上の行の見出しとそろえる(上下の余白へはみ出させる) */
+.gn-shop-r .gn-shop-row-tel dd a { display: inline-flex; align-items: center; min-height: 44px; margin: -11px 0; font-size: inherit; line-height: inherit; letter-spacing: inherit; font-weight: inherit; color: inherit; }
 
 /* ═════════ PC ═════════ */
 @media (min-width: 769px) and (min-height: 501px) {
@@ -92,9 +95,13 @@
   .gn-shop-r .gn-shop-r-btn-g { position: static; width: 100%; height: calc(var(--u) * 31); margin-top: calc(var(--u) * 10); }
   .gn-shop-r .gn-shop-card .gn-shop-sprig { left: auto; right: calc(var(--u) * -26); top: auto; bottom: calc(var(--u) * 58); }
   .gn-shop-r .gn-shop-r-body { position: relative; padding-bottom: calc(var(--u) * 56); }
-  .gn-shop-r .gn-shop-r-body .gn-shop-twig { left: calc(var(--u) * 690); top: auto; bottom: calc(var(--u) * 4); }
+  .gn-shop-r .gn-shop-r-body .gn-shop-twig { left: calc(var(--u) * 850); top: auto; bottom: calc(var(--u) * 4); }
 
-  /* 利用シーン */
+  /* 利用シーン・関連記事は本文の列の中(右の店舗情報カードが長くても、本文との間に空白を作らない) */
+  .gn-shop-r .gn-shop-r-scenes { padding-left: 0; margin-top: calc(var(--u) * 40); }
+  .gn-shop-r-scenes .gn-shop-sc-list { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: calc(var(--u) * 10); margin-top: calc(var(--u) * 12); }
+  .gn-shop-r-scenes .gn-shop-sc-list:has(.gn-shop-sc:nth-child(4)) { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .gn-shop-r-scenes .gn-shop-sc { width: auto; }
   .gn-shop-sc::after { content: ""; position: absolute; inset: 0; pointer-events: none; background: linear-gradient(90deg, rgba(34, 20, 12, .62) 0%, rgba(34, 20, 12, .36) 60%, rgba(34, 20, 12, .08) 100%); }
   .gn-shop-r-sc-a { position: absolute; inset: 0; z-index: 1; display: block; color: #fff; }
   .gn-shop-r-sc-a .gn-shop-sc-t { top: 50%; transform: translateY(-50%); white-space: normal; width: calc(var(--u) * 200); }
@@ -107,13 +114,13 @@
   .gn-shop-r-sc-plain .gn-shop-sc-t { text-shadow: none; color: #3b2a20; }
 
   /* 関連記事 */
-  .gn-shop-r-rel { padding-left: calc(var(--u) * 73); padding-right: calc(var(--u) * 73); margin-top: calc(var(--u) * 44); }
+  .gn-shop-r-rel { margin-top: calc(var(--u) * 44); }
   .gn-shop-r-rel-list { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: calc(var(--u) * 14); margin-top: calc(var(--u) * 12); }
   .gn-shop-r-rel-a { display: block; height: 100%; }
   .gn-shop-r-rel-ph { display: block; aspect-ratio: 16 / 10; border-radius: calc(var(--u) * 4); overflow: hidden; background: #e9dfcd; }
   .gn-shop-r-rel-ph img { display: block; width: 100%; height: 100%; object-fit: cover; max-width: none; transition: transform .5s ease; }
   .gn-shop-r-rel-a:hover .gn-shop-r-rel-ph img { transform: scale(1.04); }
-  .gn-shop-r-rel-t { display: block; margin-top: calc(var(--u) * 9); font-size: calc(var(--u) * 14.5); line-height: 1.55; font-weight: 600; letter-spacing: .04em; color: #161416; }
+  .gn-shop-r-rel-t { display: block; margin-top: calc(var(--u) * 9); font-size: calc(var(--u) * 13.5); line-height: 1.55; font-weight: 600; letter-spacing: .04em; color: #161416; }
   .gn-shop-r-rel-s { display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 2; overflow: hidden; margin-top: calc(var(--u) * 4); font-size: calc(var(--u) * 11); line-height: 1.7; color: #7a746f; }
   .gn-shop-r-rel-a:hover .gn-shop-r-rel-t { color: #a8472c; }
 }
@@ -175,7 +182,8 @@
   .gn-shop-r-sc-plain::after { display: none; }
   .gn-shop-r-sc-plain .gn-shop-r-sc-a, .gn-shop-r-sc-plain .gn-shop-sc-t { color: #3b2a20; text-shadow: none; }
 
-  .gn-shop-r-rel { margin-top: 40px; max-width: 640px; }
+  .gn-shop-r-body .gn-shop-r-scenes { order: 5; margin-top: 0; }
+  .gn-shop-r-body .gn-shop-r-rel { order: 6; margin-top: 0; }
   .gn-shop-r-rel-list { display: grid; grid-template-columns: 1fr; gap: 20px; margin-top: 12px; }
   .gn-shop-r-rel-a { display: block; }
   .gn-shop-r-rel-ph { display: block; aspect-ratio: 16 / 10; border-radius: 6px; overflow: hidden; background: #e9dfcd; }

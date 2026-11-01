@@ -15,6 +15,9 @@ import { shopInScene } from "@/lib/portal/noren/sceneMatch";
 import { featuresOfShop } from "@/lib/portal/noren/shopFeatures";
 import { stripTabelogScore, stripTabelogScoreList } from "@/lib/portal/noren/tabelogScore";
 import { sized } from "@/lib/imageUrl";
+import { isBlockedImage } from "@/lib/imageBlocklist";
+import { isUnusableImage } from "@/lib/portal/noren/shop";
+import { getFeatureArticleById } from "@/lib/db/features";
 import { allShopPhotos, featureHref, imgProps, isPriceSpec, paragraphs } from "@/components/portal/gnoren/real/common";
 
 export type GnImg = { src: string; srcSet?: string; sizes?: string };
@@ -57,6 +60,26 @@ const hasValue = (s: string): boolean => s.length > 0 && !/^[-－ー—–・\s]
 const MONEY = /[¥￥円]|予算|料金|価格/;
 /** 「おすすめ」に使わない語(順位・他サイトの評価・口コミ・星・その他。本文の文は紹介文にそのまま出るが、新しく取り出す項目には使わない) */
 const PICK_BAN = /No\.?\s?1|ナンバー|口コミ|レビュー|評価|ミシュラン|[★☆]|[一二三]つ星|その他|食べログ|百名店|ホットペッパー|ぐるなび|Google/;
+/** 写真ではなく文字だらけの画像(メニュー・注意書き・ロゴ)。店の写真・関連記事の写真には使わない(2026-11-02 確認役の指摘。r62 の 01=アレルギー表・02=店の由来の文章) */
+const TEXT_HEAVY_IMAGES = ["/restaurants/r62/r62-01.jpg", "/restaurants/r62/r62-02.jpg"];
+const isTextHeavy = (u: string | undefined | null): boolean => !!u && TEXT_HEAVY_IMAGES.some((t) => u.includes(t));
+/** 見出しにしてよい句の終わり方(助詞・連用形で終わる断片は見出しにしない) */
+const FRAGMENT_END = /[はがをにでとのもへやてしばら]$/;
+const okHeading = (t: string): boolean => {
+  const n = Array.from(t).length;
+  return n >= 3 && n <= 14 && !FRAGMENT_END.test(t) && !/[、，,]/.test(t);
+};
+/** 席数の値から金額の入った断片を落とす(「24席（カウンター・最大6名個室／個室料300円）」→「24席（カウンター・最大6名個室）」)。落とせなければ空 */
+function seatsWithoutMoney(raw: string): string {
+  const t = clean(raw);
+  if (!MONEY.test(t)) return t;
+  const out = t.replace(/[（(]([^）)]*)[）)]/g, (_m, inner: string) => {
+    const keep = inner.split(/[／/、，,]/).map((x) => x.trim()).filter((x) => x && !MONEY.test(x));
+    return keep.length > 0 ? `（${keep.join("／")}）` : "";
+  });
+  return MONEY.test(out) ? "" : out.trim();
+}
+
 /** 比べるときに句読点・空白・記号を除く */
 const norm = (s: string): string => s.replace(/[\s、。，．,.・･「」『』（）()！？!?\-－ー―〜～:：/／|｜]/g, "");
 
@@ -89,15 +112,25 @@ function stripPhrase(text: string): string | undefined {
   return undefined;
 }
 
-/** 文の先頭の句を「名前」にし、残りを説明にする。句が 4〜18 字でなければ名前は付けず、文を説明にする */
+/** 文の先頭の句を「名前」にし、残りを説明にする。句が 3〜14 字で切れた句(助詞で終わる断片でない)でなければ名前は付けず、文を説明にする */
 function splitNameDesc(sentence: string): { name: string; desc?: string } {
   const s = sentence.trim();
-  const m = /^(.{4,18}?)[、，,]/.exec(s);
-  if (m) {
+  const m = /^([^、，,]{3,14})[、，,]/.exec(s);
+  if (m && okHeading(m[1])) {
     const rest = s.slice(m[0].length).trim();
     if (rest.length >= 6) return { name: m[1], desc: rest };
   }
   return { name: "", desc: s };
+}
+
+/** highlights の 1 項目: 14 字以内で切れる句ならそのまま見出し。長ければ最初の句が見出しにできるときだけ分け、できなければ見出し無し(本文だけ) */
+function splitHighlight(h: string): { name: string; desc?: string } {
+  const t = trimEnd(h);
+  if (okHeading(t)) return { name: t };
+  const first = t.split(/[、，,]/)[0].trim();
+  const rest = t.slice(first.length).replace(/^[、，,\s]+/, "");
+  if (okHeading(first) && rest.length >= 6) return { name: first, desc: rest };
+  return { name: "", desc: h };
 }
 
 export async function buildShopPage(r: Restaurant): Promise<GnShopVM> {
@@ -107,7 +140,7 @@ export async function buildShopPage(r: Restaurant): Promise<GnShopVM> {
   const highlights = stripTabelogScoreList(r.highlights ?? []).map(clean).filter(Boolean);
 
   // 写真
-  const photos = allShopPhotos(r);
+  const photos = allShopPhotos(r).filter((u) => !isTextHeavy(u));
   const heroSrc = photos[0];
   const rest = photos.slice(1);
   const galleryPhotos = rest.slice(0, 5);
@@ -169,7 +202,11 @@ export async function buildShopPage(r: Restaurant): Promise<GnShopVM> {
     seen.add(key);
     cand.push({ name, desc: d });
   };
-  for (const h of highlights) if (!stripUsed.has(h)) push(h);
+  const pushH = (h: string) => {
+    const nd = splitHighlight(h);
+    push(nd.name, nd.desc);
+  };
+  for (const h of highlights) if (!stripUsed.has(h)) pushH(h);
   for (const p of body) {
     const s = sentences(p)[0];
     if (s) {
@@ -177,7 +214,7 @@ export async function buildShopPage(r: Restaurant): Promise<GnShopVM> {
       push(nd.name, nd.desc);
     }
   }
-  for (const h of highlights) if (stripUsed.has(h)) push(h);
+  for (const h of highlights) if (stripUsed.has(h)) pushH(h);
   // 題のある項目を先に(題なしの一文は後ろへ。並びは元の順を保つ)
   const named = cand.filter((c) => c.name);
   const unnamed = cand.filter((c) => !c.name);
@@ -220,7 +257,7 @@ export async function buildShopPage(r: Restaurant): Promise<GnShopVM> {
     ["hours", "営業時間", clean(r.hours)],
     ["closed", "定休日", clean(r.closed)],
     ["tel", "電話番号", phone],
-    ["seats", "席数", clean(r.seats)],
+    ["seats", "席数", seatsWithoutMoney(r.seats ?? "")],
     ["access", "アクセス", clean(r.nearest)],
   ];
   for (const [key, label, text] of rows) {
@@ -233,14 +270,27 @@ export async function buildShopPage(r: Restaurant): Promise<GnShopVM> {
   // 対の記事(ARTICLE_STORE_ID_BY_FEATURE の逆引き。完全一致)と関連記事
   const pairedId = Object.entries(ARTICLE_STORE_ID_BY_FEATURE).find(([, sid]) => sid === r.id)?.[0];
   const feats = await featuresOfShop(r.id, pairedId, 3);
-  const related = feats.map((f) => ({
-    id: f.id,
-    href: featureHref(f.id),
-    title: f.title,
-    sub: clean(f.sub) || undefined,
-    ...(f.image ? { img: imgProps(f.image, 640) } : {}),
-    paired: f.paired,
-  }));
+  // 関連記事の写真: 記事の hero が文字だらけの画像(または使えない画像)のときは、同じ記事の別の写真(次の候補)を使う
+  const relatedImage = async (id: string, hero: string): Promise<string> => {
+    if (hero && !isTextHeavy(hero)) return hero;
+    const a = await getFeatureArticleById(id);
+    if (!a) return "";
+    const cands = [a.heroImage, ...a.ranking.flatMap((x) => x.images ?? [])];
+    return cands.find((u) => u && !isUnusableImage(u) && !isBlockedImage(u) && !isTextHeavy(u)) ?? "";
+  };
+  const related = await Promise.all(
+    feats.map(async (f) => {
+      const image = await relatedImage(f.id, f.image);
+      return {
+        id: f.id,
+        href: featureHref(f.id),
+        title: f.title,
+        sub: clean(f.sub) || undefined,
+        ...(image ? { img: imgProps(image, 640) } : {}),
+        paired: f.paired,
+      };
+    }),
+  );
   const pairedFeat = related.find((f) => f.paired);
 
   return {

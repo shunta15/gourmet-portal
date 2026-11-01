@@ -24,9 +24,29 @@ const INFO_ICON: Record<GnShopVM["info"][number]["key"], keyof typeof INFO_ICONS
  * データは lib/portal/gnoren/shop.ts の GnShopVM(サーバーで整形済み)。追加の CSS は real.css(gn-shop-r-*)。
  * 写真が少ない店は、空の枠を出さずに詰める(ギャラリー 0 枚なら節ごと出さない)。
  */
+/** 暖簾の文字を行に分ける。12 字までは 1 行。超えるときは「 / 」・空白・「・」の区切りがあればそこで、無ければほぼ真ん中で 2 行に分ける */
+function clothLines(name: string): string[] {
+  const chars = Array.from(name);
+  if (chars.length <= 12) return [name];
+  const half = chars.length / 2;
+  let best = -1;
+  for (let i = 1; i < chars.length - 1; i++) {
+    if (/[\s/／・]/.test(chars[i]) && (best < 0 || Math.abs(i - half) < Math.abs(best - half))) best = i;
+  }
+  if (best > 0) {
+    const a = chars.slice(0, best).join("").replace(/[\s/／・]+$/, "").trim();
+    const b = chars.slice(best + 1).join("").trim();
+    if (a && b) return [a, b];
+  }
+  const cut = Math.ceil(half);
+  return [chars.slice(0, cut).join(""), chars.slice(cut).join("")];
+}
+
 export default function ShopPageReal({ shop: s }: { shop: GnShopVM }) {
   const page = `/restaurant/${s.id}`;
   const nameStyle = { "--n": Math.max(s.nameLen, 1) } as CSSProperties;
+  const lines = clothLines(s.name);
+  const clothStyle = { "--n": Math.max(...lines.map((l) => Array.from(l).length), 1) } as CSSProperties;
 
   return (
     <main className="gn-shop gn-shop-r">
@@ -41,14 +61,18 @@ export default function ShopPageReal({ shop: s }: { shop: GnShopVM }) {
           )}
           {s.hero ? <div className="gn-shop-r-wash" aria-hidden="true" /> : null}
 
-          <div className="gn-shop-r-cloth" style={nameStyle} aria-hidden="true">
+          <div className="gn-shop-r-cloth" style={clothStyle} aria-hidden="true">
             <span className="gn-shop-r-rod" />
             <span className="gn-shop-r-panel gn-shop-r-panel-1" />
             <span className="gn-shop-r-panel gn-shop-r-panel-2" />
             <span className="gn-shop-r-panel gn-shop-r-panel-3" />
             <div className="gn-shop-r-cloth-tx">
               {s.cuisine ? <span className="gn-shop-r-cloth-sub gn-mincho">{s.cuisine}</span> : null}
-              <span className="gn-shop-r-cloth-name gn-mincho">{s.name}</span>
+              <span className={`gn-shop-r-cloth-name gn-mincho${lines.length > 1 ? " gn-shop-r-cloth-name-2" : ""}`}>
+                {lines.map((l) => (
+                  <span key={l} className="gn-shop-r-cloth-line">{l}</span>
+                ))}
+              </span>
             </div>
           </div>
 
@@ -76,7 +100,7 @@ export default function ShopPageReal({ shop: s }: { shop: GnShopVM }) {
         ) : null}
       </section>
 
-      {/* ───── 本文 + 店舗情報(右・sticky) ───── */}
+      {/* ───── 本文(紹介・おすすめ・写真・シーン・関連記事)+ 店舗情報(右・sticky) ───── */}
       <div className="gn-shop-body gn-shop-r-body gn-wrap">
         <div className="gn-shop-col">
           {/* 紹介 */}
@@ -143,6 +167,52 @@ export default function ShopPageReal({ shop: s }: { shop: GnShopVM }) {
               <GalleryReal items={s.gallery} />
             </section>
           ) : null}
+
+          {/* ───── こんなシーンにおすすめ ───── */}
+          {s.scenes.length > 0 ? (
+            <section className="gn-shop-scenes gn-shop-r-scenes" aria-labelledby="gn-shop-sc-h">
+              <h2 id="gn-shop-sc-h" className="gn-shop-h2 gn-mincho">こんなシーンにおすすめ</h2>
+              <ul className="gn-shop-sc-list">
+                {s.scenes.map((sc) => (
+                  <li key={sc.slug} className={`gn-shop-sc${sc.img ? "" : " gn-shop-r-sc-plain"}`}>
+                    {sc.img ? (
+                      // eslint-disable-next-line @next/next/no-img-element
+                      <img {...sc.img} alt="" aria-hidden="true" loading="lazy" decoding="async" />
+                    ) : null}
+                    <a href={sc.href} className="gn-shop-r-sc-a">
+                      <span className="gn-shop-sc-t gn-mincho">
+                        <span className="gn-shop-r-sc-n">{sc.name}</span>
+                        <span className="gn-shop-r-sc-s">{sc.sub}</span>
+                      </span>
+                    </a>
+                  </li>
+                ))}
+              </ul>
+            </section>
+          ) : null}
+
+          {/* ───── 関連記事(対の特集記事が先頭) ───── */}
+          {s.related.length > 0 ? (
+            <section className="gn-shop-r-rel" aria-labelledby="gn-shop-rel-h">
+              <h2 id="gn-shop-rel-h" className="gn-shop-h2 gn-mincho">関連記事</h2>
+              <ul className="gn-shop-r-rel-list">
+                {s.related.map((f) => (
+                  <li key={f.id} className="gn-shop-r-rel-i">
+                    <a href={f.href} className="gn-shop-r-rel-a">
+                      {f.img ? (
+                        <span className="gn-shop-r-rel-ph">
+                          {/* eslint-disable-next-line @next/next/no-img-element */}
+                          <img {...f.img} alt="" aria-hidden="true" loading="lazy" decoding="async" />
+                        </span>
+                      ) : null}
+                      <span className="gn-shop-r-rel-t gn-mincho">{f.title}</span>
+                      {f.sub ? <span className="gn-shop-r-rel-s">{f.sub}</span> : null}
+                    </a>
+                  </li>
+                ))}
+              </ul>
+            </section>
+          ) : null}
         </div>
 
         {/* 店舗情報(PC は右で sticky・スマホは紹介の下) */}
@@ -202,51 +272,6 @@ export default function ShopPageReal({ shop: s }: { shop: GnShopVM }) {
         <Twig className="gn-shop-twig" />
       </div>
 
-      {/* ───── こんなシーンにおすすめ ───── */}
-      {s.scenes.length > 0 ? (
-        <section className="gn-shop-scenes gn-wrap" aria-labelledby="gn-shop-sc-h">
-          <h2 id="gn-shop-sc-h" className="gn-shop-h2 gn-mincho">こんなシーンにおすすめ</h2>
-          <ul className="gn-shop-sc-list">
-            {s.scenes.map((sc) => (
-              <li key={sc.slug} className={`gn-shop-sc${sc.img ? "" : " gn-shop-r-sc-plain"}`}>
-                {sc.img ? (
-                  // eslint-disable-next-line @next/next/no-img-element
-                  <img {...sc.img} alt="" aria-hidden="true" loading="lazy" decoding="async" />
-                ) : null}
-                <a href={sc.href} className="gn-shop-r-sc-a">
-                  <span className="gn-shop-sc-t gn-mincho">
-                    <span className="gn-shop-r-sc-n">{sc.name}</span>
-                    <span className="gn-shop-r-sc-s">{sc.sub}</span>
-                  </span>
-                </a>
-              </li>
-            ))}
-          </ul>
-        </section>
-      ) : null}
-
-      {/* ───── 関連記事(対の特集記事が先頭) ───── */}
-      {s.related.length > 0 ? (
-        <section className="gn-shop-r-rel gn-wrap" aria-labelledby="gn-shop-rel-h">
-          <h2 id="gn-shop-rel-h" className="gn-shop-h2 gn-mincho">関連記事</h2>
-          <ul className="gn-shop-r-rel-list">
-            {s.related.map((f) => (
-              <li key={f.id} className="gn-shop-r-rel-i">
-                <a href={f.href} className="gn-shop-r-rel-a">
-                  {f.img ? (
-                    <span className="gn-shop-r-rel-ph">
-                      {/* eslint-disable-next-line @next/next/no-img-element */}
-                      <img {...f.img} alt="" aria-hidden="true" loading="lazy" decoding="async" />
-                    </span>
-                  ) : null}
-                  <span className="gn-shop-r-rel-t gn-mincho">{f.title}</span>
-                  {f.sub ? <span className="gn-shop-r-rel-s">{f.sub}</span> : null}
-                </a>
-              </li>
-            ))}
-          </ul>
-        </section>
-      ) : null}
     </main>
   );
 }
