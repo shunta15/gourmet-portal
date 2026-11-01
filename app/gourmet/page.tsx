@@ -1,3 +1,4 @@
+import { withLegacyFrame } from "@/components/portal/gnoren/common/legacyFrame";
 import type { Metadata } from "next";
 import GourmetNorenHomeReal from "@/components/portal/noren-real/GourmetNorenHomeReal";
 import { assertPortalLive } from "@/lib/portal/launch";
@@ -16,7 +17,7 @@ export const metadata: Metadata = {
   alternates: { canonical: "/gourmet" },
 };
 
-export default async function Page({ searchParams }: { searchParams: Promise<Record<string, string | string[] | undefined>> }) {
+async function LegacyPage({ searchParams }: { searchParams: Promise<Record<string, string | string[] | undefined>> }) {
   assertPortalLive();
   // 最初の画面はリアル版の暖簾。色は固定で、URL では替わらない
   // スマホ幅の暖簾の丈の案は URL の ?sp=、見出し・リードの候補は ?copy=1〜5 で替えられる（見比べ用）。本番（VERCEL_ENV が production）では URL の指定を無視する（サーバーで判定して渡す）
@@ -27,3 +28,6 @@ export default async function Page({ searchParams }: { searchParams: Promise<Rec
   const open = resolveOpen({ open: one(sp.open), tiles: one(sp.tiles), band: one(sp.band), box: one(sp.box) }, allowUrl);
   return <GourmetNorenHomeReal links={LIVE_LINKS} dye={NOREN_REAL_DYE} allowSpUrl={allowUrl} allowCopyUrl={allowUrl} searchOpen={open} />;
 }
+
+// 【暫定】旧い枠。新しい部品に差し替えるとき withLegacyFrame を外す(components/portal/gnoren/real/README.md)
+export default withLegacyFrame(LegacyPage);

@@ -1,3 +1,4 @@
+import { withLegacyFrame } from "@/components/portal/gnoren/common/legacyFrame";
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
@@ -227,4 +228,5 @@ async function NewFeatureIndexPage({
   );
 }
 
-export default NewFeatureIndexPage;
+// 【暫定】旧い枠。新しい部品に差し替えるとき withLegacyFrame を外す(components/portal/gnoren/real/README.md)
+export default withLegacyFrame(NewFeatureIndexPage);

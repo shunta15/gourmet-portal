@@ -1,3 +1,4 @@
+import { withLegacyFrame } from "@/components/portal/gnoren/common/legacyFrame";
 import type { Metadata } from "next";
 import { Suspense } from "react";
 import { notFound } from "next/navigation";
@@ -38,7 +39,7 @@ export const metadata: Metadata = {
 const BAND_SHOP = "r259";
 const one = (v: string | string[] | undefined) => (Array.isArray(v) ? v[0] : v) ?? "";
 
-export default async function Page({ searchParams }: { searchParams: Promise<Record<string, string | string[] | undefined>> }) {
+async function LegacyPage({ searchParams }: { searchParams: Promise<Record<string, string | string[] | undefined>> }) {
   assertPortalLive();
   if (!NOREN_SEARCH_REWRITE) notFound();
   // 見た目（lib/portal/noren/looks.ts）。URL の ?look= は見本でだけ効く（本番は読まない = ページは今までどおり静的のまま）
@@ -119,3 +120,6 @@ export default async function Page({ searchParams }: { searchParams: Promise<Rec
     </>
   );
 }
+
+// 【暫定】旧い枠。新しい部品に差し替えるとき withLegacyFrame を外す(components/portal/gnoren/real/README.md)
+export default withLegacyFrame(LegacyPage);

@@ -3,13 +3,14 @@
 import Link from "next/link";
 import { useEffect, useState } from "react";
 import { NorenMark, SearchIcon, HeartIcon, MenuIcon, CloseIcon } from "./icons";
-import { GN_BASE, GN_NAV, type GnPage } from "./nav";
+import { GN_LIVE_LINKS, gnNav, type GnLinks, type GnPage } from "./nav";
 
 /**
  * 共通ヘッダー(見本 1〜5 と同じ)。PC は絵の上に重なる白い半透明の帯(下の縁がゆるく波打つ)で、高さ 58u。
  * ≤768px はロゴ + ハンバーガー(44px)。開くと 4 つのナビ + 検索/お気に入りのパネル。
  */
-export default function Header({ page }: { page: GnPage }) {
+export default function Header({ page, links = GN_LIVE_LINKS }: { page: GnPage; links?: GnLinks }) {
+  const nav = gnNav(links);
   const [open, setOpen] = useState(false);
   useEffect(() => {
     if (!open) return;
@@ -24,7 +25,7 @@ export default function Header({ page }: { page: GnPage }) {
         <div className="gn-hdr-bg" />
       </div>
       <div className="gn-hdr-in">
-        <Link href={GN_BASE} className="gn-logo" onClick={() => setOpen(false)}>
+        <Link href={links.top} className="gn-logo" onClick={() => setOpen(false)}>
           <NorenMark className="gn-logo-mark" />
           <span className="gn-logo-t">
             <span className="gn-logo-name">マチノワ グルメ</span>
@@ -33,7 +34,7 @@ export default function Header({ page }: { page: GnPage }) {
         </Link>
 
         <nav className="gn-nav" aria-label="メインメニュー">
-          {GN_NAV.map((n) => (
+          {nav.map((n) => (
             <Link key={n.key} href={n.href} aria-current={n.key === page ? "page" : undefined}>
               {n.label}
             </Link>
@@ -41,10 +42,10 @@ export default function Header({ page }: { page: GnPage }) {
         </nav>
 
         <div className="gn-tools">
-          <Link href={`${GN_BASE}/search`} className="gn-tool">
+          <Link href={links.search} className="gn-tool">
             <SearchIcon /> <span>検索</span>
           </Link>
-          <Link href={`${GN_BASE}/search`} className="gn-tool">
+          <Link href={links.saved} className="gn-tool">
             <HeartIcon /> <span>お気に入り</span>
           </Link>
         </div>
@@ -63,17 +64,17 @@ export default function Header({ page }: { page: GnPage }) {
 
       <div id="gn-mpanel" className="gn-mpanel" hidden={!open}>
         <nav aria-label="スマートフォン用メニュー">
-          {GN_NAV.map((n) => (
+          {nav.map((n) => (
             <Link key={n.key} href={n.href} aria-current={n.key === page ? "page" : undefined} onClick={() => setOpen(false)}>
               {n.label}
             </Link>
           ))}
         </nav>
         <div className="gn-mpanel-tools">
-          <Link href={`${GN_BASE}/search`} onClick={() => setOpen(false)}>
+          <Link href={links.search} onClick={() => setOpen(false)}>
             <SearchIcon /> 検索
           </Link>
-          <Link href={`${GN_BASE}/search`} onClick={() => setOpen(false)}>
+          <Link href={links.saved} onClick={() => setOpen(false)}>
             <HeartIcon /> お気に入り
           </Link>
         </div>

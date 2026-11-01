@@ -1,3 +1,4 @@
+import { withLegacyFrame } from "@/components/portal/gnoren/common/legacyFrame";
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import GourmetNorenShop from "@/components/portal/pages/gourmet-noren-shop";
@@ -73,7 +74,7 @@ export async function generateMetadata({ params }: { params: Promise<{ id: strin
   };
 }
 
-export default async function Page({ params }: { params: Promise<{ id: string }> }) {
+async function LegacyPage({ params }: { params: Promise<{ id: string }> }) {
   assertPortalLive();
   const id = decodeRewrittenId((await params).id);
   const r = await getRestaurantById(id);
@@ -181,3 +182,6 @@ export default async function Page({ params }: { params: Promise<{ id: string }>
     </>
   );
 }
+
+// 【暫定】旧い枠。新しい部品に差し替えるとき withLegacyFrame を外す(components/portal/gnoren/real/README.md)
+export default withLegacyFrame(LegacyPage);

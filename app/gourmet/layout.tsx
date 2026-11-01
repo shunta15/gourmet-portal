@@ -1,15 +1,13 @@
 import { assertPortalLive } from "@/lib/portal/launch";
-import NorenFrame from "@/components/portal/noren/NorenFrame";
-import { GOURMET_TOP } from "@/lib/portal/noren/nav";
+import { mincho, gothic, script } from "@/components/portal/gnoren/common/fonts";
+import "@/components/portal/gnoren/common/base.css";
 
-// 本番のグルメのトップ /gourmet（公開スイッチ ON のときだけ。OFF は 404）。暖簾の枠（見本 /proto-noren と共通の NorenFrame）で包む。
+// 本番のグルメ(/gourmet 系の内部ルート。公開スイッチ ON のときだけ。OFF は 404)。暖簾 2 の枠(components/portal/gnoren)。
+// このレイアウトはフォントと base.css の読み込みだけ。ヘッダー・フッターは各 page.tsx が <Shell page=... links={GN_LIVE_LINKS}> で付ける
+// (ナビの下線のタブがページごとに違うため)。構成は components/portal/gnoren/real/README.md。
 // ヘッダー等のシェルは、components/portal/PortalShell が isPortalPath('/gourmet') で SiteShell の代わりに子だけを出す。
-// 店ページ・特集記事ページはこの枠ではなく、今のグルメのまま（このレイアウトは /gourmet だけ）。
+// 【暫定】まだ旧部品を描いているページは、page.tsx で withLegacyFrame(components/portal/gnoren/common/legacyFrame.tsx)を使って旧い枠を付けている。
 export default function Layout({ children }: { children: React.ReactNode }) {
   assertPortalLive();
-  return (
-    <NorenFrame top={GOURMET_TOP}>
-      {children}
-    </NorenFrame>
-  );
+  return <div className={`${mincho.variable} ${gothic.variable} ${script.variable}`}>{children}</div>;
 }

@@ -1,3 +1,4 @@
+import { withLegacyFrame } from "@/components/portal/gnoren/common/legacyFrame";
 import type { Metadata } from "next";
 import Link from "next/link";
 import { buildMetadata } from "@/lib/seo/meta";
@@ -70,7 +71,7 @@ export async function generateMetadata({ searchParams }: { searchParams: Promise
   return cur > 1 ? { ...base, robots: { index: false, follow: true } } : base;
 }
 
-export default async function Page({ searchParams }: { searchParams: Promise<Record<string, string | string[] | undefined>> }) {
+async function LegacyPage({ searchParams }: { searchParams: Promise<Record<string, string | string[] | undefined>> }) {
   assertPortalLive();
   if (!NOREN_SHOP_REWRITE) notFound();
   const items = await getShopCards();
@@ -105,3 +106,6 @@ export default async function Page({ searchParams }: { searchParams: Promise<Rec
     </div>
   );
 }
+
+// 【暫定】旧い枠。新しい部品に差し替えるとき withLegacyFrame を外す(components/portal/gnoren/real/README.md)
+export default withLegacyFrame(LegacyPage);

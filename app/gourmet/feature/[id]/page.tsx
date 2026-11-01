@@ -1,3 +1,4 @@
+import { withLegacyFrame } from "@/components/portal/gnoren/common/legacyFrame";
 import type { Metadata } from "next";
 import { notFound, permanentRedirect } from "next/navigation";
 import FeaturePage from "@/components/portal/noren/FeaturePage";
@@ -83,7 +84,7 @@ export async function generateMetadata({
   };
 }
 
-export default async function Page({
+async function LegacyPage({
   params,
 }: {
   params: Promise<{ id: string }>;
@@ -185,3 +186,6 @@ export default async function Page({
     </>
   );
 }
+
+// 【暫定】旧い枠。新しい部品に差し替えるとき withLegacyFrame を外す(components/portal/gnoren/real/README.md)
+export default withLegacyFrame(LegacyPage);

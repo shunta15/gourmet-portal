@@ -119,6 +119,10 @@ body:has(.gn-root) > .cursor-dot, body:has(.gn-root) > .cursor-ring { display: n
 .gn-foot-nav { display: flex; gap: calc(var(--u) * 28); margin-left: auto; font-family: var(--gn-f-mincho); font-size: max(12px, calc(var(--u) * 12)); letter-spacing: .06em; }
 .gn-foot-nav a:hover { color: var(--gn-terracotta); }
 .gn-foot-copy { font-size: max(11px, calc(var(--u) * 10)); color: var(--gn-muted); letter-spacing: .06em; }
+/* いちばん下の小さな 1 行(マチノワ トップ・動画・写真)。12〜13px の灰色 */
+.gn-foot-small { display: flex; flex-wrap: wrap; justify-content: center; gap: 0 22px; margin-top: calc(var(--u) * 14); padding-inline: calc(var(--u) * 80); font-size: clamp(12px, calc(var(--u) * 12), 13px); color: var(--gn-muted); letter-spacing: .06em; }
+.gn-foot-small a { display: inline-flex; align-items: center; min-height: 28px; }
+.gn-foot-small a:hover { color: var(--gn-terracotta); text-decoration: underline; text-underline-offset: 3px; }
 
 /* ───────── スマホ(≤768px) ───────── */
 @media (max-width: 768px), (orientation: landscape) and (max-height: 500px) {
@@ -157,4 +161,6 @@ body:has(.gn-root) > .cursor-dot, body:has(.gn-root) > .cursor-ring { display: n
   .gn-foot-nav { margin-left: 0; flex-wrap: wrap; gap: 4px 22px; font-size: 15px; }
   .gn-foot-nav a { min-height: 44px; min-width: 44px; padding-inline: 4px; display: inline-flex; align-items: center; justify-content: center; }
   .gn-foot-copy { font-size: 12px; }
+  .gn-foot-small { justify-content: flex-start; gap: 0 18px; margin-top: 8px; padding-inline: 16px; font-size: 13px; }
+  .gn-foot-small a { min-height: 44px; min-width: 44px; }
 }
