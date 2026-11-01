@@ -186,7 +186,7 @@
   .gn-feat-r-info { margin-top: 14px; display: grid; gap: 10px; }
   .gn-feat-r-info li { gap: 12px; font-size: 14px; line-height: 1.7; letter-spacing: .03em; }
   .gn-feat-r-ic { width: 20px; height: 20px; margin-top: 3px; }
-  .gn-feat-r-ik { font-size: 12px; min-width: 4.5em; padding-top: 2px; }
+  .gn-feat-r-ik { font-size: 14px; min-width: 4.5em; padding-top: 0; }
   .gn-feat-r-info a { display: inline-flex; align-items: center; min-height: 44px; margin-block: -10px; }
   .gn-feat-r-btn { display: flex; width: 100%; min-height: 52px; margin-top: 18px; gap: 12px; font-size: 15px; }
   .gn-feat-r-btn-arrow { width: 26px; }
@@ -195,6 +195,8 @@
   .gn-feat-r .gn-feat-r-quote .gn-feat-r-paper { padding: 24px 22px; font-size: 16px; line-height: 1.9; letter-spacing: .06em; }
   .gn-feat-r .gn-feat-r-quote .gn-feat-r-paper.is-long { font-size: 14.5px; line-height: 1.95; letter-spacing: .03em; }
   .gn-feat-r-quote figcaption { margin-top: 8px; font-size: 14px; letter-spacing: .1em; }
+  .gn-feat-r-inter { margin: 30px 16px 0; }
+  .gn-feat-r-inter-shop .gn-feat-r-shopc { margin-top: 0; }
 
   /* 下の帯 */
   .gn-feat-r-band { margin-top: 44px; padding: 40px 16px; display: grid; gap: 26px; }
@@ -202,7 +204,7 @@
   .gn-feat-r .gn-feat-r-closing-in { padding: 26px 22px 56px; font-size: 14.5px; line-height: 1.95; letter-spacing: .04em; }
   .gn-feat-r-leafline { right: 22px; bottom: 14px; width: 40px; }
   .gn-feat-r-shop { padding: 22px 20px 24px; box-shadow: 0 1px 4px rgba(80, 60, 40, .1); }
-  .gn-feat-r-shop-label { font-size: 12px; }
+  .gn-feat-r-shop-label { font-size: 14px; }
   .gn-feat-r-shop-name { margin-top: 8px; gap: 12px; font-size: 20px; line-height: 1.45; }
   .gn-feat-r-shop .gn-feat-r-bowl { width: 40px; }
   .gn-feat-r-leaf-tr { width: 72px; top: -40px; right: 0; z-index: 3; }
@@ -320,7 +322,7 @@
   /* C(見本 章 03): 左に文・右に横並びの写真(大 + 小)・メモ紙は写真の下に重なる */
   .gn-feat-r-pC { grid-template-columns: calc(var(--u) * 45) calc(var(--u) * 387) 1fr; }
   .gn-feat-r-pC .gn-feat-r-copy { grid-column: 2; }
-  .gn-feat-r-pC .gn-feat-r-ph { grid-column: 3; }
+  .gn-feat-r-pC .gn-feat-r-ph { grid-column: 3; padding-right: calc(var(--u) * 28); }
   .gn-feat-r-pC .gn-feat-r-row { height: calc(var(--u) * 181); gap: calc(var(--u) * 6); }
   .gn-feat-r-pC .gn-feat-r-row .gn-feat-r-fig { flex: 105 1 0; }
   .gn-feat-r-pC .gn-feat-r-row .gn-feat-r-fig[data-k="0"] { flex: 280 1 0; }
@@ -345,6 +347,16 @@
   .gn-feat-r-pA:not(.gn-feat-r-n0):not(:has(.gn-feat-r-cols.is-2)) .gn-feat-r-more > .gn-feat-r-body { grid-column: 4 / 6; grid-row: 2; align-self: start; margin-top: calc(var(--u) * 10); position: relative; z-index: 2; }
   .gn-feat-r-pA:not(.gn-feat-r-n0):not(:has(.gn-feat-r-cols.is-2)) .gn-feat-r-more > .gn-feat-r-shopc { grid-column: 2; grid-row: 2; align-self: start; margin-top: calc(var(--u) * 14); position: relative; z-index: 2; }
 
+  /* A: 写真(大・小)・店の箱は 2 行にまたがせ、文の列(見出し+最初の段落 → 残りの段落)は写真の高さに引き延ばされず続けて並ぶ(2 段落の間に写真の高さ分の空きを作らない) */
+  .gn-feat-r .gn-feat-r-ch.gn-feat-r-pA:not(.gn-feat-r-n0):not(:has(.gn-feat-r-cols.is-2)) { grid-template-rows: auto minmax(0, 1fr); }
+  .gn-feat-r .gn-feat-r-ch.gn-feat-r-pA:not(.gn-feat-r-n0):not(:has(.gn-feat-r-cols.is-2)) > .gn-feat-r-fig,
+  .gn-feat-r .gn-feat-r-ch.gn-feat-r-pA:not(.gn-feat-r-n0):not(:has(.gn-feat-r-cols.is-2)) > .gn-feat-r-ph { grid-row: 1 / 3; }
+  .gn-feat-r .gn-feat-r-ch.gn-feat-r-pA:not(.gn-feat-r-n0):not(:has(.gn-feat-r-cols.is-2)) .gn-feat-r-more > .gn-feat-r-shopc { grid-row: 1 / 3; margin-top: calc(var(--u) * 244 + var(--u) * 14); }
+  /* A で写真が大きな 1 枚だけ: メモ紙は大きな写真の右下に重ねる(見本の「写真の下の縁にメモ紙が重なる」と同じ)。残りの本文が 2 段で下に広がる章は、メモ紙が文に被らないよう写真の中に収める */
+  .gn-feat-r .gn-feat-r-ch.gn-feat-r-pA.gn-feat-r-n1 > .gn-feat-r-note { grid-column: 2; grid-row: 1; align-self: start; justify-self: end; width: calc(var(--u) * 205); margin: calc(var(--u) * 244 - var(--u) * 112) calc(var(--u) * 22) 0 0; z-index: 3; }
+  .gn-feat-r .gn-feat-r-ch.gn-feat-r-pA.gn-feat-r-n1:not(:has(.gn-feat-r-cols.is-2)) > .gn-feat-r-note { grid-row: 1 / 3; margin-top: calc(var(--u) * 244 - var(--u) * 33); }
+  .gn-feat-r .gn-feat-r-ch.gn-feat-r-pA.gn-feat-r-n1.has-note { padding-bottom: calc(var(--u) * 52); }
+
   /* 写真 0 枚の章(店 1 軒の記事に多い): 本文を広げ(最大 640u)、残りは 2 段組。メモ紙は章の右上(見出しの右)に置く。A/B/C のどれでも同じ形 */
   .gn-feat-r-ch.gn-feat-r-n0 { grid-template-columns: calc(var(--u) * 45) minmax(0, 1fr) calc(var(--u) * 45); }
   .gn-feat-r-ch.gn-feat-r-n0 .gn-feat-r-copy { grid-column: 2; margin: 0; }
@@ -362,6 +374,12 @@
   .gn-feat-r .gn-feat-r-quote .gn-feat-r-paper { padding: calc(var(--u) * 20) calc(var(--u) * 28) calc(var(--u) * 18) calc(var(--u) * 34); font-size: calc(var(--u) * 15.2); line-height: calc(var(--u) * 27); letter-spacing: .1em; }
   .gn-feat-r .gn-feat-r-quote .gn-feat-r-paper.is-long { font-size: calc(var(--u) * 12.5); line-height: calc(var(--u) * 22); letter-spacing: .06em; }
   .gn-feat-r-quote figcaption { margin-top: calc(var(--u) * 6); font-size: calc(var(--u) * 10.4); letter-spacing: .1em; padding-right: calc(var(--u) * 6); }
+
+  /* 写真の無い章が続くときに章の間へ置く、メモ紙・店の箱(既にある要素の置き場所だけ) */
+  .gn-feat-r-inter { margin: calc(var(--u) * 6) calc(var(--u) * 45) calc(var(--u) * 18) auto; max-width: calc(var(--u) * 440); }
+  .gn-feat-r .gn-feat-r-inter .gn-feat-r-paper { padding: calc(var(--u) * 16) calc(var(--u) * 26) calc(var(--u) * 16) calc(var(--u) * 30); font-size: calc(var(--u) * 13.5); line-height: calc(var(--u) * 24); letter-spacing: .1em; }
+  .gn-feat-r-inter-shop { margin: calc(var(--u) * 6) calc(var(--u) * 45) calc(var(--u) * 18) calc(var(--u) * 45); max-width: calc(var(--u) * 420); }
+  .gn-feat-r-inter-shop .gn-feat-r-shopc { margin-top: 0; max-width: none; }
 
   /* 下の帯: 左に「まとめ」の文の帯・右に店舗情報の箱(店が無い記事は文の帯だけ) */
   .gn-feat-r-band { margin-top: calc(var(--u) * 20); padding: calc(var(--u) * 30) calc(var(--u) * 42) calc(var(--u) * 36); display: grid; grid-template-columns: 1fr; gap: calc(var(--u) * 30); align-items: start; }

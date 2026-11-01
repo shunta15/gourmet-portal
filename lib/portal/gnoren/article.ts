@@ -45,11 +45,21 @@ const PRICE_VALUE = /[0-9０-９,，.～〜]+\s*円|[¥￥]|税込|税別|無料
 export const isPriceValue = (v: string): boolean => PRICE_VALUE.test(v ?? "");
 /** specs の 1 行が金額を含むか(項目名か値のどちらかに出ていれば true) */
 const isPriceRow = (s: { k: string; v: string }): boolean => isPriceKey(s.k) || isPriceValue(s.v) || isPriceValue(s.k);
+/** 出さない行 = 金額の行・空欄同然の行 */
+const isSkipRow = (s: { k: string; v: string }): boolean => isPriceRow(s) || isBlankValue(s.v);
 
 const clean = (s: string | undefined): string => (s ? stripTabelogScore(s).trim() : "");
 
+/** 値が空欄同然か。空・ダッシュ(—-―–ー−~)だけ・ダッシュ+（注記）だけ・（注記）だけ。こういう行は出さない */
+const BLANK_DASH = /[\s　\-—―–−‐ー ~〜～ｰ]/g;
+const BLANK_PAREN = /[（(][^（）()]*[）)]/g;
+export const isBlankValue = (v: string | undefined | null): boolean => {
+  if (!v) return true;
+  return v.replace(BLANK_PAREN, "").replace(BLANK_DASH, "") === "";
+};
+
 const infoOf = (specs: { k: string; v: string }[]): Info =>
-  specs.filter((s) => s.k && s.v && !isPriceRow(s)).map((s) => [s.k.trim(), clean(s.v)] as [string, string]).filter(([, v]) => v);
+  specs.filter((s) => s.k && s.v && !isSkipRow(s)).map((s) => [s.k.trim(), clean(s.v)] as [string, string]).filter(([, v]) => v);
 
 const usableImage = (u: string | undefined | null): u is string => !!u && isUsableFeatureImage(u) && !isDummyFeatureImage(u);
 
@@ -62,7 +72,7 @@ function labelOf(r: { cuisine?: string; area?: string }): string {
 /** メモ紙の一文: specs のうち、値段でなく、短い 1 行 */
 function noteOf(specs: { k: string; v: string }[]): string | undefined {
   for (const s of specs) {
-    if (!s.k || !s.v || isPriceRow(s)) continue;
+    if (!s.k || !s.v || isSkipRow(s)) continue;
     const t = `${s.k.trim()}：${clean(s.v)}`;
     if (t.length <= NOTE_MAX) return t;
   }
@@ -79,7 +89,7 @@ function shopInfoOf(r: Restaurant): Info {
     ["席数", r.seats],
     ["アクセス", r.nearest],
   ];
-  return rows.filter(([, v]) => v && v.trim()).map(([k, v]) => [k, clean(v)] as [string, string]).filter(([, v]) => v && !isPriceValue(v));
+  return rows.filter(([, v]) => v && v.trim()).map(([k, v]) => [k, clean(v)] as [string, string]).filter(([, v]) => v && !isPriceValue(v) && !isBlankValue(v));
 }
 
 /** 店 1 軒の記事の写真: 主役 → 視点ごとの写真 → 店の写真の順に重複なしで集め、章へ 0〜3 枚ずつ配る(buildPhotoFeature の collectPhotos と同じ出どころ・同じ重複除去) */

@@ -126,12 +126,14 @@ function Chapter({ c, i }: { c: Chapter; i: number }) {
 
   let main: ReactNode = null; // A だけ: 左の大きな写真
   let cluster: ReactNode;
+  let noteOnMain: ReactNode = null; // A で写真が大きな 1 枚だけのとき: メモ紙は右の空き(右上)でなく、大きな写真の右下に重ねる
   if (pat === "A") {
     if (n >= 1) main = fig(photos[0], 0, 640, "(max-width: 768px) 100vw, 480px");
+    if (n === 1) noteOnMain = note;
     cluster = (
       <div className="gn-feat-r-ph">
         {n >= 2 && <div className="gn-feat-r-row">{photos.slice(1).map((p, k) => fig(p, k + 1, 480, "(max-width: 768px) 50vw, 240px"))}</div>}
-        {note}
+        {n === 1 ? null : note}
       </div>
     );
   } else if (pat === "B") {
@@ -179,6 +181,7 @@ function Chapter({ c, i }: { c: Chapter; i: number }) {
         </div>
       </div>
       {main}
+      {noteOnMain}
       {cluster}
       {(rest.length > 0 || c.shop) && (
         <div className="gn-feat-r-more">
@@ -221,10 +224,40 @@ export default function ArticleView({ vm, links = GN_LIVE_LINKS }: { vm: GnArtic
   const sl = vm.subtitle ? len(vm.subtitle) : 0;
   const subLv = sl <= 14 ? 0 : sl <= 26 ? 1 : 2;
   const strips = stripsOf(vm.lede);
-  const quoteAt = Math.min(1, vm.chapters.length - 1);
+  // 写真 0 枚の章が 3 章以上続かないよう、2 章ごとに(引用 → 章のメモ紙 → 店の箱 の順で)既にある要素を章の間に置く。文は足さない。
+  const chapters = vm.chapters.map((c) => ({ ...c }));
+  const quoteAt = vm.quote ? Math.min(1, chapters.length - 1) : -1;
+  const inter: Array<null | { kind: "note"; text: string } | { kind: "shop" }> = chapters.map(() => null);
+  let shopMoved = false;
+  let run = 0;
+  chapters.forEach((c, i) => {
+    run = c.photos.length === 0 ? run + 1 : 0;
+    if (i === quoteAt) {
+      run = 0;
+      return;
+    }
+    if (run < 2 || i >= chapters.length - 1) return;
+    let at = -1;
+    for (let j = i; j > i - run; j--) {
+      if (chapters[j].note) {
+        at = j;
+        break;
+      }
+    }
+    if (at >= 0) {
+      inter[i] = { kind: "note", text: chapters[at].note as string };
+      chapters[at].note = undefined;
+      run = 0;
+    } else if (vm.shop && !shopMoved) {
+      inter[i] = { kind: "shop" };
+      shopMoved = true;
+      run = 0;
+    }
+  });
   const quoteLong = vm.quote ? len(vm.quote.text) > 70 : false;
   const closingChars = (vm.closing ?? []).reduce((a, p) => a + len(p), 0);
-  const hasBand = (vm.closing && vm.closing.length > 0) || !!vm.shop;
+  const shopInBand = !!vm.shop && !shopMoved;
+  const hasBand = (vm.closing && vm.closing.length > 0) || shopInBand;
 
   return (
     <main className="gn-feat-r" id={ROOT_ID}>
@@ -294,9 +327,38 @@ export default function ArticleView({ vm, links = GN_LIVE_LINKS }: { vm: GnArtic
       </header>
 
       {/* ───────── 章 ───────── */}
-      {vm.chapters.map((c, i) => (
+      {chapters.map((c, i) => (
         <div key={i} className="gn-feat-r-chwrap">
           <Chapter c={c} i={i} />
+          {inter[i]?.kind === "note" && (
+            <aside className="gn-feat-r-quote gn-feat-r-inter" data-rv="note" style={{ ["--rot" as string]: "1.6deg" }}>
+              <div className="gn-feat-r-paper gn-feat-r-grain">
+                <p>
+                  <T t={(inter[i] as { text: string }).text} />
+                </p>
+              </div>
+            </aside>
+          )}
+          {inter[i]?.kind === "shop" && vm.shop && (
+            <div className="gn-feat-r-inter gn-feat-r-inter-shop" data-rv>
+              <div className="gn-feat-r-shopc">
+                <p className="gn-feat-r-shopc-name">
+                  <BowlIcon className="gn-feat-r-bowl" />
+                  <span>
+                    <T t={vm.shop.name} />
+                  </span>
+                </p>
+                {vm.shop.info.length > 0 && (
+                  <ul className="gn-feat-r-info">
+                    {vm.shop.info.map(([k, v], j) => (
+                      <InfoRow key={j} k={k} v={v} />
+                    ))}
+                  </ul>
+                )}
+                <GoLink href={vm.shop.href}>店舗の詳細を見る</GoLink>
+              </div>
+            </div>
+          )}
           {vm.quote && i === quoteAt && (
             <aside className="gn-feat-r-quote" data-rv="note" style={{ ["--rot" as string]: "-2.2deg" }}>
               <figure className={`gn-feat-r-paper gn-feat-r-grain${quoteLong ? " is-long" : ""}`}>
@@ -312,7 +374,7 @@ export default function ArticleView({ vm, links = GN_LIVE_LINKS }: { vm: GnArtic
 
       {/* ───────── 下の帯(まとめの文・店舗情報) ───────── */}
       {hasBand && (
-        <section className={`gn-feat-r-band${vm.shop ? " has-shop" : ""}`} aria-label={vm.shop ? "まとめと店舗情報" : "まとめ"}>
+        <section className={`gn-feat-r-band${shopInBand ? " has-shop" : ""}`} aria-label={shopInBand ? "まとめと店舗情報" : "まとめ"}>
           <div className="gn-feat-r-band-bg gn-feat-r-grain" aria-hidden="true" />
           {vm.closing && vm.closing.length > 0 && (
             <div className="gn-feat-r-closing" data-rv>
@@ -328,7 +390,7 @@ export default function ArticleView({ vm, links = GN_LIVE_LINKS }: { vm: GnArtic
               </div>
             </div>
           )}
-          {vm.shop && (
+          {vm.shop && shopInBand && (
             <div className="gn-feat-r-shop" data-rv>
               <p className="gn-feat-r-shop-label">店舗情報</p>
               <p className="gn-feat-r-shop-name">
