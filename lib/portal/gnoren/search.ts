@@ -16,12 +16,29 @@ import { regionCenters } from "@/lib/portal/noren/regionCenters";
 import { parseTown } from "@/lib/towns";
 import { GEO } from "@/lib/geo";
 import { allShopPhotos } from "@/components/portal/gnoren/real/common/img";
-import { firstSentences } from "@/components/portal/gnoren/real/common/text";
 import { shopHref } from "@/components/portal/gnoren/real/common/links";
 import type { SearchData, SearchShop } from "@/components/portal/gnoren/real/search/types";
 
 /** 新しい部品に出さない語(ほかのサイトの評価・順位に当たる語など)を含むタグは、札に出さない(?tag= の絞り込みは動く)。BlockSearchParts の isShowableTag と同じ規則 */
 const HIDDEN_TAG = /おすすめ|オススメ|人気|厳選|名店|ランキング|受賞|ミシュラン|食べログ|ホットペッパー|ぐるなび|Google|口コミ/i;
+
+/** 札の紹介文に出さない文(他サイトの評価・口コミ・順位・金額・「その他」)。shop.ts の PICK_BAN と同じ趣旨(あちらは別担当のファイルなので複製) */
+const DESC_BAN = /口コミ|クチコミ|レビュー|評価|ミシュラン|食べログ|百名店|ホットペッパー|ぐるなび|Google|ナンバー|No\.?\s?1|[★☆]|[一二三]つ星|その他|[¥￥]|[\d０-９,，千万]円/i;
+
+/** 紹介文の先頭 n 文。DESC_BAN に当たる文は飛ばす(全部飛ばされたら空 = 紹介文なし。文を作らない) */
+function safeSentences(text: string, n: number): string {
+  const sents: string[] = [];
+  for (const block of (text ?? "").split(/(?:\\n|\n)+/)) {
+    const t = block.trim();
+    if (!t) continue;
+    for (const x of t.split(/(?<=[。！？])(?![」』）])/)) {
+      const u = x.trim();
+      if (u && !DESC_BAN.test(u)) sents.push(u);
+    }
+    if (sents.length >= n) break;
+  }
+  return sents.slice(0, n).join("");
+}
 
 /** 店 ID の番号(r12 → 12)。r＋数字でない ID は最後 */
 export const idNo = (id: string) => (/^r\d+$/.test(id) ? parseInt(id.slice(1), 10) : Number.MAX_SAFE_INTEGER);
@@ -47,7 +64,7 @@ export function toShop(r: Restaurant): SearchShop {
   };
   if (photos[0]) card.img = photos[0];
   if (r.nearest) card.nearest = r.nearest;
-  const d = firstSentences(r.desc ?? "", 2);
+  const d = safeSentences(r.desc ?? "", 2);
   if (d) card.desc = d;
   if (town) card.town = town;
   if (lg.length) card.lg = lg;
