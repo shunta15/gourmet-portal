@@ -4,7 +4,7 @@ import Shell from "@/components/portal/gnoren/common/Shell";
 import { GN_LIVE_LINKS } from "@/components/portal/gnoren/common/nav";
 import ShopPageReal from "@/components/portal/gnoren/real/shop/ShopPageReal";
 import { buildShopPage } from "@/lib/portal/gnoren/shop";
-import { REGIONS } from "@/lib/regions";
+import { regionNameOf } from "@/lib/regions";
 import { getRestaurantById, getAllRestaurantIds } from "@/lib/db/restaurants";
 import { buildRestaurantJsonLd, buildBreadcrumbJsonLd } from "@/lib/jsonld";
 import { isRestaurantIndexable } from "@/lib/restaurantIndexable";
@@ -33,7 +33,6 @@ export async function generateMetadata({ params }: { params: Promise<{ id: strin
   const id = decodeRewrittenId((await params).id);
   const r = await getRestaurantById(id);
   if (!r) return { title: "店舗が見つかりません — マチノワ" };
-  const region = REGIONS[r.region];
   const cuisine = cuisineLabel(r.cuisine);
   const title = restaurantTitle(r);
   const description = restaurantDescription(r);
@@ -59,7 +58,7 @@ export async function generateMetadata({ params }: { params: Promise<{ id: strin
     },
     // 記事由来の店は、実写画像・住所・営業時間がそろわなければ noindex（lib/restaurantIndexable.ts）
     robots: isRestaurantIndexable(r.id) ? undefined : { index: false, follow: true },
-    keywords: [r.name, r.area, cuisine, region?.name, "マチノワ", ...(r.tags || [])].filter(Boolean) as string[],
+    keywords: [r.name, r.area, cuisine, regionNameOf(r.region), "マチノワ", ...(r.tags || [])].filter(Boolean) as string[],
   };
 }
 
@@ -68,14 +67,13 @@ export default async function Page({ params }: { params: Promise<{ id: string }>
   const id = decodeRewrittenId((await params).id);
   const r = await getRestaurantById(id);
   if (!r) notFound();
-  const region = REGIONS[r.region];
 
   // 画面に評価の数字を出さないので、構造化データにも評価（aggregateRating）を入れない（2026-10-24 オーナー決定）。地域のパンくずは「さがす」へ（/region/<key> は /search?region=<key> へ統合済み）
   const { aggregateRating: _omitRating, ...restaurantLd } = buildRestaurantJsonLd(r) as Record<string, unknown>;
   void _omitRating;
   const breadcrumbJsonLd = buildBreadcrumbJsonLd([
     { name: "トップ", url: BASE },
-    { name: region?.name || r.region, url: `${BASE}/search?region=${encodeURIComponent(r.region)}` },
+    { name: regionNameOf(r.region), url: `${BASE}/search?region=${encodeURIComponent(r.region)}` },
     { name: r.name, url: `${BASE}/restaurant/${r.id}` },
   ]);
 
