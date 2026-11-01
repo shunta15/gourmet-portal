@@ -29,7 +29,6 @@ export default function Header({ page, links = GN_LIVE_LINKS }: { page: GnPage; 
           <NorenMark className="gn-logo-mark" />
           <span className="gn-logo-t">
             <span className="gn-logo-name">マチノワ グルメ</span>
-            <span className="gn-logo-tag">この街の、おいしいがつながる。</span>
           </span>
         </Link>
 

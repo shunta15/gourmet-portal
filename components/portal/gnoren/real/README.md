@@ -41,14 +41,12 @@ export default async function Page() {
 - `links` の既定は `GN_LIVE_LINKS`(省略してよいが、読みやすさのため明示を推奨)。`GnLinks = { top, search, shopList, feature, saved }`。本番 = `{ top:'/gourmet', search:'/search', shopList:'/restaurant', feature:'/feature', saved:'/list' }`。試作は `GN_PROTO_LINKS`(試作の 5 ページはもう渡してある)。
 - Header: ロゴ → `links.top`・虫眼鏡 → `links.search`・ハート → `links.saved`。ナビは `gnNav(links)`(トップ/さがす/店舗紹介/特集)。
 - Footer: 見本の構成のまま、いちばん下に小さな 1 行「マチノワ トップ(/)・動画(/videos)・写真(/photos)」(12〜13px の灰色)。
-- `<main>` はページ側で書く。**Shell の中に旧い枠(NorenFrame / withLegacyFrame)を入れ子にしない**。
+- `<main>` はページ側で書く。**Shell の中に旧い枠(NorenFrame)を入れ子にしない**。
 
-### 【暫定】まだ差し替えていないページの旧い枠 — `withLegacyFrame`
-
-layout から NorenFrame を外したので、**今の 6 つの page.tsx は旧部品のまま、末尾で `export default withLegacyFrame(LegacyPage)`(feature/page.tsx は `withLegacyFrame(NewFeatureIndexPage)`)として旧い枠(`components/portal/noren/NorenFrame` = 旧ヘッダー・フッター・紙・grain・Boot・noren.css/dye.css/ground.css)を付けている**。つまり差し替え前の見た目は今までどおり。
-- 差し替えるとき: 自分の page.tsx で `LegacyPage` を `export default async function Page(` に戻し、`withLegacyFrame` の import と末尾の export を**消し**、`<Shell …>` で包む。
-- `common/legacyFrame.tsx` は 6 ページすべてが外れたら統合担当が消す(担当は消さない)。
-- 旧部品が必要とする CSS(`noren.css`・`dye.css`・`ground.css`・フォント brush/latin)は NorenFrame が import するので、旧枠を外したページでは読み込まれない。新部品は暖簾 2 の CSS だけで描くこと(旧 `vN-` `vBk-` `vI-` のクラスに頼らない)。
+### スマホ(≤768px)の文字の大きさ(2026-11-02 決定)
+- **14px 以上**: 本文・節のリード(`gn-sh-lead`)・店の情報の行(最寄り駅・住所など)・札の説明・フッターのリンク・押せるもの。
+- **12px まで可**: 日付・写真のキャプション・統計の注記・© など、読まなくても内容が分かる純粋な補助文だけ。11px 以下にはしない。
+- ロゴ下のキャッチ(「この街の、おいしいがつながる。」)は見本の仮のコピーなので置かない(ヘッダー・フッターともロゴだけ)。
 
 ## 土台の道具(`components/portal/gnoren/real/common/`)
 

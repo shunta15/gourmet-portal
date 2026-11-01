@@ -22,7 +22,6 @@ export default function Footer({ links = GN_LIVE_LINKS }: { links?: GnLinks }) {
           <NorenMark className="gn-logo-mark" />
           <span className="gn-logo-t">
             <span className="gn-logo-name">マチノワ グルメ</span>
-            <span className="gn-logo-tag">この街の、おいしいがつながる。</span>
           </span>
         </Link>
         <nav className="gn-foot-nav" aria-label="フッターメニュー">
