@@ -229,7 +229,7 @@ export default function Article({ shops, editorial }: { shops: AShop[]; editoria
           <Pines className="f-jp-pines" />
           <Pine className="f-jp-pine" />
           <Stamp id="ss" className="f-jp-stamp" ring="SEASONAL SPECIAL" mountain={false} />
-          <img className="f-jp-map" src={`${IMG}ar-map.webp`} alt="" />
+          <img className="f-jp-map" src={`${IMG}ar-map.svg`} alt="" />
           <p className="f-jp-hand apa-hand">
             日本の四季を
             <br />

@@ -189,7 +189,7 @@ export default function SearchBody({ shops, courses, init, prefNames }: { shops:
             <h3>
               <IcPin /> エリア
             </h3>
-            <img className="s-fac-map" src="/_portal/activity/se-map.webp" alt="" />
+            <img className="s-fac-map" src="/_portal/activity/se-map.svg" alt="" />
             <div className="s-fac-deco" aria-hidden="true">
               <Pines className="s-fac-pines" />
               <Mountain className="s-fac-mtn" />
