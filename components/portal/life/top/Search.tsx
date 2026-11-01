@@ -108,7 +108,14 @@ export default function Search({ shops, total, all, args, pages }: { shops: LSho
               検索結果 <b>{total}</b> 件
             </p>
             <div className="sr-mapimg">
-              <img src={`${IMG}s-map.webp`} alt="日本地図" width={498} height={430} loading="lazy" decoding="async" />
+              <img src={`${IMG}s-map.svg`} alt="日本地図" width={498} height={430} loading="lazy" decoding="async" />
+              {/* 「東北」「関東」「関西」と引き出し線はコードで重ねる(位置は地図の 498×430 に対する %) */}
+              <span className="sr-ml-ln" style={{ left: "72.3%", top: "41.4%", width: "9%" }} aria-hidden="true" />
+              <span className="sr-ml" style={{ left: "83.3%", top: "41.9%" }} aria-hidden="true">東北</span>
+              <span className="sr-ml-ln" style={{ left: "67.3%", top: "71.4%", width: "9%" }} aria-hidden="true" />
+              <span className="sr-ml" style={{ left: "78%", top: "72.4%" }} aria-hidden="true">関東</span>
+              <span className="sr-ml-ln" style={{ left: "38.6%", top: "89.1%", width: "8.4%" }} aria-hidden="true" />
+              <span className="sr-ml" style={{ left: "47.8%", top: "89.7%" }} aria-hidden="true">関西</span>
             </div>
           </div>
 
@@ -179,7 +186,7 @@ export default function Search({ shops, total, all, args, pages }: { shops: LSho
           <br />
           日本のまちで見つける、暮らし・文化・ひと・場所
         </p>
-        <img className="sr-ft-orn" src={`${IMG}s-orn.webp`} alt="" width={548} height={132} aria-hidden="true" />
+        <img className="sr-ft-orn" src={`${IMG}s-orn.svg`} alt="" width={548} height={132} aria-hidden="true" />
         <nav className="sr-ft-nav" aria-label="フッターメニュー">
           <Link href={LFL.top}>トップ</Link>
           <Link href={LFL.search}>場所を探す</Link>

@@ -1,5 +1,6 @@
 import Link from "next/link";
-import { BASE, SEARCH_HREF, SHOPS_HREF, SPECIAL_HREF, PORTAL_HREF, IMG_COMMON } from "./site";
+import { BASE, SEARCH_HREF, SHOPS_HREF, SPECIAL_HREF, PORTAL_HREF } from "./site";
+import Logo from "./Logo";
 
 /**
  * 見本には無いので、ヘッダーと同じ見た目の控えめなフッター。ナビはヘッダーのメニューと同じ 4 つ(トップ・店を探す・店舗紹介・特集)。
@@ -10,8 +11,7 @@ export default function Footer() {
     <footer className="gr-foot">
       <div className="gr-foot-in">
         <Link href={BASE} className="gr-foot-logo" aria-label="マチノワ Body Care トップ">
-          {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img src={`${IMG_COMMON}/logo.webp`} width={214} height={46} alt="マチノワ.Body Care" loading="lazy" />
+          <Logo title="マチノワ.Body Care" />
         </Link>
         <nav className="gr-foot-nav" aria-label="フッターのリンク">
           <Link href={BASE}>トップ</Link>

@@ -96,8 +96,8 @@ body:has(.gr-root) button, body:has(.gr-root) a { cursor: pointer; }
 .gr-head.is-hidden { translate: 0 -105%; }
 .gr-head-in { height: 100%; width: min(var(--gr-hw), calc(100% - 40px)); margin: 0 auto; display: flex; align-items: center; } /* 画面が --gr-hw+40px より狭い(1081〜1314px)ときは左右に20pxの余白を残す(右の「エリアを選ぶ」が画面の端に付かない) */
 .gr-logo { flex: none; width: 282px; display: block; line-height: 0; }
-.gr-logo img { width: 222px; height: 47.7px; margin-left: 8px; mix-blend-mode: multiply; transition: transform 0.5s cubic-bezier(0.3, 1.5, 0.5, 1); transform-origin: 14% 50%; }
-.gr-logo:hover img { transform: scale(1.04) rotate(-1deg); }
+.gr-logo img, .gr-logo svg { width: 222px; height: 47.7px; overflow: visible; margin-left: 8px; mix-blend-mode: multiply; transition: transform 0.5s cubic-bezier(0.3, 1.5, 0.5, 1); transform-origin: 14% 50%; }
+.gr-logo:hover img, .gr-logo:hover svg { transform: scale(1.04) rotate(-1deg); }
 .gr-nav { display: flex; gap: 30px; flex: 1; font-size: 11.8px; font-weight: 500; white-space: nowrap; }
 .gr-nav a { position: relative; padding: 6px 0; transition: color 0.2s; }
 .gr-nav a::after { content: ""; position: absolute; left: 0; right: 100%; bottom: 0; height: 2px; background: var(--gr-g2); transition: right 0.3s cubic-bezier(0.3, 0.7, 0.2, 1); }
@@ -120,7 +120,7 @@ body:has(.gr-root) button, body:has(.gr-root) a { cursor: pointer; }
 .gr-root .gr-foot { position: relative; z-index: 1; margin-top: 56px; padding: 0; color: var(--gr-ink); background: rgba(255, 255, 255, 0.78); border-top: 1px solid var(--gr-line); } /* グルメ共通の footer{} の色・余白を打ち消す */
 .gr-foot-in { max-width: 1200px; margin: 0 auto; padding: 22px 16px 24px; display: flex; align-items: center; gap: 28px; flex-wrap: wrap; }
 .gr-foot-logo { line-height: 0; flex: none; }
-.gr-foot-logo img { width: 176px; height: auto; mix-blend-mode: multiply; }
+.gr-foot-logo img, .gr-foot-logo svg { width: 176px; height: auto; mix-blend-mode: multiply; }
 .gr-foot-nav { display: flex; gap: 8px 26px; flex-wrap: wrap; font-size: 11.8px; font-weight: 500; flex: 1; }
 .gr-foot-nav a { transition: color 0.2s; }
 .gr-foot-nav a:hover { color: var(--gr-g); }
@@ -233,7 +233,7 @@ body:has(.gr-root) button, body:has(.gr-root) a { cursor: pointer; }
   .gr-hr-i { display: none; }
   .gr-head-in { padding: 0 10px 0 14px; }
   .gr-logo { width: auto; flex: 1; }
-  .gr-logo img { width: 168px; height: auto; margin-left: 0; }
+  .gr-logo img, .gr-logo svg { width: 168px; height: auto; margin-left: 0; }
   .gr-menu-btn { display: block; }
   .gr-area-btn { width: 118px; height: 34px; font-size: 12px; margin-left: 0; }
   .gr-head-r { gap: 4px; }
