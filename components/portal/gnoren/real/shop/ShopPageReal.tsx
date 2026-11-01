@@ -24,29 +24,65 @@ const INFO_ICON: Record<GnShopVM["info"][number]["key"], keyof typeof INFO_ICONS
  * データは lib/portal/gnoren/shop.ts の GnShopVM(サーバーで整形済み)。追加の CSS は real.css(gn-shop-r-*)。
  * 写真が少ない店は、空の枠を出さずに詰める(ギャラリー 0 枚なら節ごと出さない)。
  */
-/** 暖簾の文字を行に分ける。12 字までは 1 行。超えるときは「 / 」・空白・「・」の区切りがあればそこで、無ければほぼ真ん中で 2 行に分ける */
-function clothLines(name: string): string[] {
-  const chars = Array.from(name);
-  if (chars.length <= 12) return [name];
-  const half = chars.length / 2;
+/** 暖簾の布 1 枚(中央)に収まる 1 行の幅(全角 1 字 = 1。半角は 0.7) */
+const CLOTH_W = 6;
+const charW = (ch: string): number => (/[\x20-\x7e]/.test(ch) ? 0.7 : 1);
+const textW = (t: string): number => Array.from(t).reduce((n, ch) => n + charW(ch), 0);
+const charClass = (ch: string): string => (/[\x20-\x7e]/.test(ch) ? "a" : /[ァ-ヶー]/.test(ch) ? "k" : /[ぁ-ゟ]/.test(ch) ? "h" : "j");
+
+/** 1 つの語が布 1 枚の幅を超えるとき、文字の種類が変わる所(カナ→漢字など)を優先して、どちらも幅内に収まるように分ける */
+function chunkPiece(piece: string): string[] {
+  const chars = Array.from(piece);
+  if (textW(piece) <= CLOTH_W || chars.length < 2) return [piece];
+  const mid = chars.length / 2;
   let best = -1;
-  for (let i = 1; i < chars.length - 1; i++) {
-    if (/[\s/／・]/.test(chars[i]) && (best < 0 || Math.abs(i - half) < Math.abs(best - half))) best = i;
+  let bestKind = 2;
+  for (let i = 1; i < chars.length; i++) {
+    const l = textW(chars.slice(0, i).join(""));
+    const r = textW(chars.slice(i).join(""));
+    if (l > CLOTH_W || r > CLOTH_W) continue;
+    const kind = charClass(chars[i - 1]) !== charClass(chars[i]) ? 0 : 1;
+    if (best < 0 || kind < bestKind || (kind === bestKind && Math.abs(i - mid) < Math.abs(best - mid))) {
+      best = i;
+      bestKind = kind;
+    }
   }
-  if (best > 0) {
-    const a = chars.slice(0, best).join("").replace(/[\s/／・]+$/, "").trim();
-    const b = chars.slice(best + 1).join("").trim();
-    if (a && b) return [a, b];
+  if (best < 0) best = Math.ceil(mid);
+  return [...chunkPiece(chars.slice(0, best).join("")), ...chunkPiece(chars.slice(best).join(""))];
+}
+
+/** 暖簾の文字を行に分ける。12 字までは 1 行(布 3 枚にまたがって置く)。超えるときは、布の継ぎ目に字がまたがらないよう、
+ *  真ん中の布 1 枚に収まる幅(CLOTH_W)ごとに「 / 」・空白・「・」・字種の変わり目で行を分けて縮める */
+function clothLines(name: string): { lines: string[]; narrow: boolean; fs: number } {
+  const chars = Array.from(name);
+  if (chars.length <= 12) return { lines: [name], narrow: false, fs: 0 };
+  const pieces = name.split(/[\s/／・]+/).map((t) => t.trim()).filter(Boolean).flatMap(chunkPiece);
+  const lines: string[] = [];
+  for (const p of pieces) {
+    const last = lines[lines.length - 1];
+    if (last !== undefined) {
+      const sep = charClass(Array.from(last).slice(-1)[0]) === "a" && charClass(Array.from(p)[0]) === "a" ? " " : "";
+      if (textW(last + sep + p) <= CLOTH_W) {
+        lines[lines.length - 1] = last + sep + p;
+        continue;
+      }
+    }
+    lines.push(p);
   }
-  const cut = Math.ceil(half);
-  return [chars.slice(0, cut).join(""), chars.slice(cut).join("")];
+  const maxW = Math.max(...lines.map(textW), 1);
+  /** 布の高さ(232)に収まるよう行数でも縮める。単位は布の幅 410 を基準にした px */
+  const fs = Math.min(34, 112 / maxW, 100 / (lines.length * 1.35));
+  return { lines, narrow: true, fs: Math.round(fs * 10) / 10 };
 }
 
 export default function ShopPageReal({ shop: s }: { shop: GnShopVM }) {
   const page = `/restaurant/${s.id}`;
   const nameStyle = { "--n": Math.max(s.nameLen, 1) } as CSSProperties;
-  const lines = clothLines(s.name);
-  const clothStyle = { "--n": Math.max(...lines.map((l) => Array.from(l).length), 1) } as CSSProperties;
+  const cloth = clothLines(s.name);
+  const lines = cloth.lines;
+  const clothStyle = (cloth.narrow
+    ? { "--n": 1, "--fs": cloth.fs }
+    : { "--n": Math.max(...lines.map((l) => Array.from(l).length), 1) }) as unknown as CSSProperties;
 
   return (
     <main className="gn-shop gn-shop-r">
@@ -67,8 +103,14 @@ export default function ShopPageReal({ shop: s }: { shop: GnShopVM }) {
             <span className="gn-shop-r-panel gn-shop-r-panel-2" />
             <span className="gn-shop-r-panel gn-shop-r-panel-3" />
             <div className="gn-shop-r-cloth-tx">
-              {s.cuisine ? <span className="gn-shop-r-cloth-sub gn-mincho">{s.cuisine}</span> : null}
-              <span className={`gn-shop-r-cloth-name gn-mincho${lines.length > 1 ? " gn-shop-r-cloth-name-2" : ""}`}>
+              {s.cuisine ? (
+                <span className={`gn-shop-r-cloth-sub gn-mincho${cloth.narrow ? " gn-shop-r-cloth-sub-2" : ""}`}>
+                  {s.cuisine.split("・").map((t, i) => (
+                    <span key={`${i}${t}`}>{i > 0 ? <>・<wbr /></> : null}{t}</span>
+                  ))}
+                </span>
+              ) : null}
+              <span className={`gn-shop-r-cloth-name gn-mincho${cloth.narrow ? " gn-shop-r-cloth-name-2" : ""}`}>
                 {lines.map((l) => (
                   <span key={l} className="gn-shop-r-cloth-line">{l}</span>
                 ))}
@@ -167,7 +209,6 @@ export default function ShopPageReal({ shop: s }: { shop: GnShopVM }) {
               <GalleryReal items={s.gallery} />
             </section>
           ) : null}
-
           {/* ───── こんなシーンにおすすめ ───── */}
           {s.scenes.length > 0 ? (
             <section className="gn-shop-scenes gn-shop-r-scenes" aria-labelledby="gn-shop-sc-h">
@@ -254,7 +295,7 @@ export default function ShopPageReal({ shop: s }: { shop: GnShopVM }) {
               {s.geo ? (
                 <div id="gn-shop-map" className="gn-shop-map gn-shop-r-map">
                   <div className="gn-shop-r-map-in">
-                    <LeafletMap points={[{ id: s.id, name: s.name, lat: s.geo.lat, lng: s.geo.lng, sub: s.address }]} height={180} interactive={false} />
+                    <LeafletMap points={[{ id: s.id, name: s.name, lat: s.geo.lat, lng: s.geo.lng, sub: s.address }]} height={180} zoom={15} interactive={false} />
                   </div>
                   {s.mapsUrl ? (
                     <MapLinkR href={s.mapsUrl} storeId={s.id} page={page} className="gn-shop-btn gn-shop-btn-g gn-shop-r-btn-g">

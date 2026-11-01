@@ -19,9 +19,12 @@
 .gn-shop-r-cloth-tx { position: absolute; left: 3%; right: 3%; top: calc(var(--cl) * 38); z-index: 3; display: flex; flex-direction: column; align-items: center; text-align: center; color: #1a1411; }
 .gn-shop-r-cloth-sub { font-size: calc(var(--cl) * 18); letter-spacing: .08em; line-height: 1.5; font-weight: 500; margin-bottom: calc(var(--cl) * 10); }
 .gn-shop-r-cloth-name { display: block; font-weight: 500; letter-spacing: .03em; line-height: 1.3; overflow-wrap: anywhere; text-wrap: balance; }
-/* 長い店名(12 字超)は 2 行に分ける。布の継ぎ目(隙間)で字が読みにくくならないよう、字のまわりに布の色のふちを付ける */
+/* 長い店名(12 字超)は、真ん中の布 1 枚に収まる幅で行を分けて縮める(布の継ぎ目に字がまたがらない)。字の大きさ --fs は ShopPageReal の clothLines が決める */
 .gn-shop-r-cloth-line { display: block; }
-.gn-shop-r-cloth-name-2 { line-height: 1.35; text-shadow: 0 0 2px #eee5d4, 0 0 4px #eee5d4, 0 0 6px #eee5d4; }
+.gn-shop-r-cloth-sub-2 { max-width: 34%; text-align: center; letter-spacing: .04em; line-height: 1.4; margin-bottom: calc(var(--cl) * 8); }
+.gn-shop-r-cloth-sub-2 { word-break: keep-all; overflow-wrap: anywhere; }
+.gn-shop-r-cloth-sub-2 > span { display: inline; }
+.gn-shop-r-cloth-name-2 { line-height: 1.35; letter-spacing: .02em; overflow-wrap: normal; }
 
 /* 縦の短冊(紙。文字は店のデータ) */
 .gn-shop-r-strips { position: absolute; display: flex; flex-direction: row-reverse; align-items: flex-start; margin: 0; padding: 0; list-style: none; }
@@ -30,8 +33,9 @@
 
 .gn-shop-r-catch-h { margin: 0; }
 
-/* 電話番号のリンクは押す所を 44px 以上に(指で押す)。字の大きさ・行の高さは他の行の値と同じ(inherit)、字の縦位置は上の行の見出しとそろえる(上下の余白へはみ出させる) */
-.gn-shop-r .gn-shop-row-tel dd a { display: inline-flex; align-items: center; min-height: 44px; margin: -11px 0; font-size: inherit; line-height: inherit; letter-spacing: inherit; font-weight: inherit; color: inherit; }
+/* 電話番号のリンク: 字の大きさ・行の高さ・縦位置は他の行の値と同じ(レイアウトは変えない)。押す所の 44px は見えない当たり判定(::after)で確保する */
+.gn-shop-r .gn-shop-row-tel dd a { position: relative; display: block; font: inherit; letter-spacing: inherit; color: inherit; text-decoration: none; }
+.gn-shop-r .gn-shop-row-tel dd a::after { content: ""; position: absolute; left: -6px; right: -6px; top: 50%; height: 44px; transform: translateY(-50%); }
 
 /* ═════════ PC ═════════ */
 @media (min-width: 769px) and (min-height: 501px) {
@@ -42,6 +46,8 @@
   .gn-shop-r-hero-bare .gn-shop-r-town { bottom: calc(var(--u) * 14); }
   .gn-shop-r-cloth { --cl: var(--u); left: calc(var(--cl) * 66); top: calc(var(--cl) * 56); width: calc(var(--cl) * 410); height: calc(var(--cl) * 232); }
   .gn-shop-r-cloth-name { font-size: calc(var(--cl) * max(18, min(48, 330 / var(--n)))); }
+  .gn-shop-r .gn-shop-r-cloth-name-2 { font-size: calc(var(--cl) * var(--fs)); }
+  .gn-shop-r .gn-shop-r-cloth-sub-2 { font-size: calc(var(--cl) * 15); }
   .gn-shop-r-strips { right: calc(var(--u) * 58); top: calc(var(--u) * 66); gap: calc(var(--u) * 8); }
   .gn-shop-r-strip { width: calc(var(--u) * 40); padding: calc(var(--u) * 16) 0 calc(var(--u) * 14); font-size: calc(var(--u) * 19); letter-spacing: .1em; }
   .gn-shop-r-strip-2 { margin-top: calc(var(--u) * 21); }
@@ -53,18 +59,18 @@
   .gn-shop .gn-shop-r-feat { margin-top: calc(var(--u) * 16); height: calc(var(--u) * 34); padding: 0 calc(var(--u) * 20); font-size: calc(var(--u) * 12.5); letter-spacing: .1em; font-weight: 500; }
 
   /* 紹介(固定の高さをやめて流す) */
-  .gn-shop-r .gn-shop-r-intro { height: auto; min-height: calc(var(--u) * 196); padding-bottom: calc(var(--u) * 26); }
+  .gn-shop-r .gn-shop-r-intro { height: auto; min-height: calc(var(--u) * 190); padding-bottom: calc(var(--u) * 10); }
   .gn-shop-r-tag { width: auto; margin-left: 0; padding: 0 calc(var(--u) * 13) 0 calc(var(--u) * 10); gap: calc(var(--u) * 6); }
   .gn-shop-r .gn-shop-r-h1 { position: static; margin: calc(var(--u) * 16) 0 0; max-width: calc(var(--u) * 470); font-size: calc(var(--u) * max(20, min(33, 430 / var(--n)))); line-height: 1.4; white-space: normal; overflow-wrap: anywhere; }
   .gn-shop-r .gn-shop-r-desc { position: static; margin: calc(var(--u) * 14) 0 0; max-width: calc(var(--u) * 450); white-space: normal; font-size: calc(var(--u) * 12.5); line-height: 1.95; letter-spacing: .05em; }
   .gn-shop-r-desc p + p { margin-top: .6em; }
 
   /* おすすめ(4 列。値段なし) */
-  .gn-shop-r-picks .gn-shop-menu-list { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: calc(var(--u) * 10); align-items: start; }
+  .gn-shop-r-picks .gn-shop-menu-list { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: calc(var(--u) * 10); align-items: stretch; }
   .gn-shop-r-picks .gn-shop-item { width: auto; margin-left: 0; min-width: 0; }
   .gn-shop-r-picks .gn-shop-item-n { white-space: normal; margin: calc(var(--u) * 6) 0 0 calc(var(--u) * 2); font-size: calc(var(--u) * 14); line-height: 1.5; }
   .gn-shop-r-picks .gn-shop-item-d { white-space: normal; margin: calc(var(--u) * 4) 0 0 calc(var(--u) * 2); font-size: calc(var(--u) * 11); line-height: 1.8; letter-spacing: .03em; color: #7a746f; display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 6; overflow: hidden; }
-  .gn-shop-r-item-text { background: #fff; border-radius: calc(var(--u) * 4); padding: calc(var(--u) * 12) calc(var(--u) * 12) calc(var(--u) * 14); box-shadow: 0 calc(var(--u) * 2) calc(var(--u) * 7) rgba(125, 92, 60, .14); border-top: calc(var(--u) * 3) solid #b35431; min-height: calc(var(--u) * 96); }
+  .gn-shop-r-item-text { background: #fff; border-radius: calc(var(--u) * 4); padding: calc(var(--u) * 12) calc(var(--u) * 12) calc(var(--u) * 14); box-shadow: 0 calc(var(--u) * 2) calc(var(--u) * 7) rgba(125, 92, 60, .14); border-top: calc(var(--u) * 3) solid #b35431; }
   .gn-shop-r-item-text .gn-shop-item-n { margin-left: 0; margin-top: 0; }
   .gn-shop-r-item-text .gn-shop-item-d { margin-left: 0; }
   .gn-shop-r-item-text .gn-shop-item-n:first-child { margin-top: 0; }
@@ -88,7 +94,6 @@
   .gn-shop-r .gn-shop-row dt { position: static; padding-top: calc(var(--u) * 1); }
   .gn-shop-r .gn-shop-row dd { padding: 0; display: flex; flex-direction: column; align-items: flex-start; white-space: normal; overflow-wrap: anywhere; font-size: calc(var(--u) * 11); line-height: 1.7; }
   .gn-shop-r .gn-shop-row-ic { margin-right: calc(var(--u) * 7); }
-  .gn-shop-r .gn-shop-row-tel dd, .gn-shop-r .gn-shop-row-hours dd { font-size: calc(var(--u) * 11); letter-spacing: .04em; }
   .gn-shop-r .gn-shop-r-btn-s { margin: calc(var(--u) * 8) 0 0; width: calc(var(--u) * 118); }
   .gn-shop-r .gn-shop-r-map { position: static; width: auto; height: auto; margin: calc(var(--u) * 12) calc(var(--u) * 14) 0; }
   .gn-shop-r-map-in { height: calc(var(--u) * 173); border-radius: calc(var(--u) * 4); overflow: hidden; }
@@ -97,15 +102,14 @@
   .gn-shop-r .gn-shop-r-body { position: relative; padding-bottom: calc(var(--u) * 56); }
   .gn-shop-r .gn-shop-r-body .gn-shop-twig { left: calc(var(--u) * 850); top: auto; bottom: calc(var(--u) * 4); }
 
-  /* 利用シーン・関連記事は本文の列の中(右の店舗情報カードが長くても、本文との間に空白を作らない) */
+  /* 利用シーン・関連記事は本文の列の中(右の店舗情報カードが長くても、本文との間に空白を作らない)。札は 4 枚で 1 行(見本 3)・列の幅を 4 等分 */
   .gn-shop-r .gn-shop-r-scenes { padding-left: 0; margin-top: calc(var(--u) * 40); }
-  .gn-shop-r-scenes .gn-shop-sc-list { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: calc(var(--u) * 10); margin-top: calc(var(--u) * 12); }
-  .gn-shop-r-scenes .gn-shop-sc-list:has(.gn-shop-sc:nth-child(4)) { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .gn-shop-r-scenes .gn-shop-sc-list { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: calc(var(--u) * 10); margin-top: calc(var(--u) * 12); }
   .gn-shop-r-scenes .gn-shop-sc { width: auto; }
   .gn-shop-sc::after { content: ""; position: absolute; inset: 0; pointer-events: none; background: linear-gradient(90deg, rgba(34, 20, 12, .62) 0%, rgba(34, 20, 12, .36) 60%, rgba(34, 20, 12, .08) 100%); }
   .gn-shop-r-sc-a { position: absolute; inset: 0; z-index: 1; display: block; color: #fff; }
-  .gn-shop-r-sc-a .gn-shop-sc-t { top: 50%; transform: translateY(-50%); white-space: normal; width: calc(var(--u) * 200); }
-  .gn-shop-r-sc-n { display: block; font-size: calc(var(--u) * 18.5); line-height: 1.35; letter-spacing: .05em; }
+  .gn-shop-r-sc-a .gn-shop-sc-t { top: 50%; left: calc(var(--u) * 14); transform: translateY(-50%); white-space: normal; width: calc(100% - var(--u) * 24); }
+  .gn-shop-r-sc-n { display: block; font-size: calc(var(--u) * 16); line-height: 1.35; letter-spacing: .05em; }
   .gn-shop-r-sc-a .gn-shop-sc-t { text-shadow: 0 1px calc(var(--u) * 6) rgba(30, 16, 8, .6); }
   .gn-shop-r-sc-s { display: block; margin-top: calc(var(--u) * 5); font-size: calc(var(--u) * 11); line-height: 1.55; letter-spacing: .04em; font-weight: 500; opacity: .95; }
   .gn-shop-r-sc-plain { background: linear-gradient(135deg, #f2e9d9, #e4d4bd); box-shadow: inset 0 0 0 1px #e1d4c1; }
@@ -135,10 +139,12 @@
   .gn-shop-r-wash { background: radial-gradient(ellipse 90% 60% at 0% 100%, rgba(250, 249, 245, .55), rgba(250, 249, 245, 0) 70%); }
   .gn-shop-r-cloth { --cl: calc(min(100cqw, 560px) / 640); left: 4%; top: calc(var(--cl) * 34); width: calc(var(--cl) * 400); height: calc(var(--cl) * 232); }
   .gn-shop-r-cloth-sub { font-size: max(12px, calc(var(--cl) * 18)); }
+  .gn-shop-r-cloth-sub.gn-shop-r-cloth-sub-2 { font-size: 12px; max-width: 36%; }
   .gn-shop-r-cloth-tx { top: calc(var(--cl) * 40); }
   .gn-shop-r-cloth-name { font-size: max(15px, calc(var(--cl) * min(48, 330 / var(--n)))); }
+  .gn-shop-r-cloth-name.gn-shop-r-cloth-name-2 { font-size: max(14px, calc(var(--cl) * var(--fs))); }
   .gn-shop-r-strips { right: 10px; top: 12px; gap: 6px; }
-  .gn-shop-r-strip { width: 30px; padding: 10px 0 10px; font-size: 13px; letter-spacing: .12em; font-weight: 600; }
+  .gn-shop-r-strip { width: 32px; padding: 10px 0 10px; font-size: 14px; letter-spacing: .1em; font-weight: 600; }
   .gn-shop-r-strip-2 { margin-top: 12px; }
   .gn-shop-r-strip-3 { margin-top: 24px; }
   .gn-shop-r .gn-shop-r-catch { position: static; padding: 18px 16px 0; }
@@ -165,6 +171,7 @@
   .gn-shop-gal-n1 .gn-shop-gal-1 { aspect-ratio: 16 / 10; }
   .gn-shop-gal .gn-shop-gal-i:last-child:nth-child(even) { grid-column: 1 / -1; aspect-ratio: 16 / 10; }
 
+  .gn-shop-r .gn-shop-row dt { font-size: 14px; }
   .gn-shop-r .gn-shop-row dd { font-size: 14px; display: flex; flex-direction: column; align-items: flex-start; overflow-wrap: anywhere; }
   .gn-shop-r-map-in { height: 220px; border-radius: 8px; overflow: hidden; }
   /* 地図の拡大・縮小と出典リンクも押す所を 44px に */
@@ -177,7 +184,7 @@
   .gn-shop-r-sc-a { position: absolute; inset: 0; z-index: 1; display: block; color: #fff; }
   .gn-shop-r-sc-a .gn-shop-sc-t { z-index: 1; width: calc(100% - 24px); }
   .gn-shop-r-sc-n { display: block; font-size: 17px; line-height: 1.4; letter-spacing: .06em; }
-  .gn-shop-r-sc-s { display: block; margin-top: 4px; font-size: 13px; line-height: 1.5; letter-spacing: .03em; font-weight: 500; }
+  .gn-shop-r-sc-s { display: block; margin-top: 4px; font-size: 14px; line-height: 1.5; letter-spacing: .03em; font-weight: 500; }
   .gn-shop-r-sc-plain { background: linear-gradient(135deg, #f2e9d9, #e4d4bd); box-shadow: inset 0 0 0 1px #e1d4c1; }
   .gn-shop-r-sc-plain::after { display: none; }
   .gn-shop-r-sc-plain .gn-shop-r-sc-a, .gn-shop-r-sc-plain .gn-shop-sc-t { color: #3b2a20; text-shadow: none; }
@@ -196,8 +203,15 @@
 .gn-shop-lb .gn-shop-r-lb-ph { aspect-ratio: auto; width: auto; max-width: 100%; background: transparent; box-shadow: none; overflow: visible; display: grid; place-items: center; }
 .gn-shop-lb .gn-shop-r-lb-ph img { width: auto; height: auto; max-width: min(100%, 1100px); max-height: var(--lb-h); object-fit: contain; transform: none; border-radius: 6px; box-shadow: 0 10px 40px rgba(0, 0, 0, .5); }
 
+/* 地図の拡大・縮小ボタン(PC): 小さな地図に大きな黒いボタンが重ならないよう、角の余白を詰めて小さくする(スマホは下の 44px の規則) */
+@media (min-width: 769px) and (min-height: 501px) {
+  .gn-shop-r-map-in .leaflet-top.leaflet-left { top: 0; left: 0; }
+  .gn-shop-r-map-in .leaflet-control-zoom { margin: 6px 0 0 6px; }
+  .gn-shop-r-map-in .leaflet-control-zoom a { width: 26px; height: 26px; line-height: 26px; font-size: 17px; }
+}
+
 /* 地図の枠(Leaflet の高さ・枠線を、箱いっぱいに)。globals.css の暗い地図(色反転)は、この明るい店ページでは使わない */
-.gn-shop-r-map-in .mw-map .leaflet-tile-pane, .gn-shop-r-map-in .mw-map .leaflet-pane.leaflet-tile-pane, .gn-shop-r-map-in .mw-map .leaflet-control { filter: none !important; }
+.gn-shop-r-map-in .mw-map .leaflet-tile-pane, .gn-shop-r-map-in .mw-map .leaflet-pane.leaflet-tile-pane, .gn-shop-r-map-in .mw-map .leaflet-control, .gn-shop-r-map-in .mw-map .leaflet-control-zoom, .gn-shop-r-map-in .mw-map .leaflet-top, .gn-shop-r-map-in .mw-map .leaflet-bottom { filter: none !important; }
 .gn-shop-r-map-in .mw-map { height: 100% !important; border: 0 !important; border-radius: 0 !important; }
 
 /* 1440px より広い画面: 写真なしの暖簾の面も端を溶かす */
