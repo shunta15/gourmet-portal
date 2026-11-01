@@ -6,12 +6,12 @@
 .gn-top-banner-name { z-index: 1; }
 .gn-top-banner-go { z-index: 1; }
 
-.gn-top-fcard::after { content: ""; position: absolute; inset: 0; pointer-events: none; background: linear-gradient(90deg, rgba(34, 20, 12, .56) 0%, rgba(34, 20, 12, .36) 52%, rgba(34, 20, 12, 0) 88%), linear-gradient(0deg, rgba(34, 20, 12, .3), transparent 45%); }
+.gn-top-feat .gn-top-fcard.is-light::after { content: ""; position: absolute; inset: 0; pointer-events: none; background: linear-gradient(90deg, rgba(20, 14, 10, .74) 0%, rgba(20, 14, 10, .5) 55%, rgba(20, 14, 10, .12) 92%), linear-gradient(0deg, rgba(20, 14, 10, .78), rgba(20, 14, 10, .25) 70%); }
 .gn-top-fcard-t, .gn-top-fcard-s { z-index: 1; }
 
 /* 特集の題・説明は実際の記事の文なので、長さがまちまち。見本の「2 行ぴったり」ではなく幅で折り返し、はみ出す分は省く */
-.gn-top-fcard-t { display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 3; overflow: hidden; width: calc(var(--fu) * 204); }
-.gn-top-fcard-s { display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 2; overflow: hidden; width: calc(var(--fu) * 204); top: calc(var(--fu) * 104); }
+.gn-top-fcard-t { display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 3; overflow: hidden; width: calc(var(--fu) * 204); text-wrap: balance; text-shadow: 0 1px 3px rgba(20, 14, 10, .65), 0 0 12px rgba(20, 14, 10, .45); }
+.gn-top-fcard-s { display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 2; overflow: hidden; width: calc(var(--fu) * 204); top: calc(var(--fu) * 104); text-shadow: 0 1px 3px rgba(20, 14, 10, .65), 0 0 10px rgba(20, 14, 10, .4); }
 .gn-top-fcard.is-big .gn-top-fcard-s { top: calc(var(--fu) * 118); }
 
 /* シーンの 2 行目(件数)・説明は折り返さない 1 行ずつ。長いときは省く */

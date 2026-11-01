@@ -2,7 +2,7 @@ import "server-only";
 /**
  * 暖簾 2 本番化: トップ /gourmet(見本 1)のデータ整形(サーバー専用)。設計 = components/portal/gnoren/REAL_PLAN.md「### トップ」。
  * - 統計 3 = 掲載店数(getAllRestaurants の件数)・地域数(その店の region の種類数)・料理分類(BROAD_GROUPS の数)
- * - 料理 7 = BROAD_GROUPS。写真 = その分類の店のうち、店 ID の若い順で最初に写真のある店の 1 枚(同じ節で同じ店を重ねない)
+ * - 料理 7 = BROAD_GROUPS。写真 = その分類の店のうち、店 ID の若い順で最初に写真のある店の 1 枚(同じ節・ほかの節とも同じ店を重ねない。足りない節だけ重複を許す)
  * - エリア 8 = 店数の多い地域(REGIONS の key)上位 8。縦写真 = その地域の店の写真
  * - シーン 6 = lib/scenes.ts の 12 種から、店数の多い順 6(数え方は lib/portal/noren/sceneMatch.ts の shopInScene)
  * - 特集 4 = lib/data.ts の FEATURES から、記事の日付の新しい 4 本(使える写真のあるもの。非表示の店の記事は除く)
@@ -48,16 +48,28 @@ const idNo = (id: string): number => {
 };
 
 /**
- * 店の並び(ID の若い順)のうち、条件に合う店で最初に写真のある店の 1 枚。used に入っている店は飛ばす(同じ節で同じ写真を重ねない)。
+ * 店の並び(ID の若い順)のうち、条件に合う店で最初に写真のある店の 1 枚。
+ * all = ページ全体で使った店 ID(料理 → エリア → シーン の順に節をまたいで重ねない)。sec = この節で使った店 ID。
+ * まず「ページ全体でまだ使っていない店」を探し、無いときだけ「この節でまだ使っていない店」まで許す(写真が足りない節だけ重複を許す)。
  * 写真が 1 枚も見つからなければ undefined(札は写真なしの布だけになる)。
  */
-function pickPhoto(shops: readonly Restaurant[], photos: ReadonlyMap<string, string>, used: Set<string>, w: number, sizes: string): TopPhoto | undefined {
-  for (const r of shops) {
-    if (used.has(r.id)) continue;
+function pickPhoto(shops: readonly Restaurant[], photos: ReadonlyMap<string, string>, all: Set<string>, sec: Set<string>, w: number, sizes: string): TopPhoto | undefined {
+  const take = (r: Restaurant): TopPhoto | undefined => {
     const u = photos.get(r.id);
-    if (!u) continue;
-    used.add(r.id);
+    if (!u) return undefined;
+    all.add(r.id);
+    sec.add(r.id);
     return { ...imgProps(u, w, sizes) };
+  };
+  for (const r of shops) {
+    if (all.has(r.id)) continue;
+    const t = take(r);
+    if (t) return t;
+  }
+  for (const r of shops) {
+    if (sec.has(r.id)) continue;
+    const t = take(r);
+    if (t) return t;
   }
   return undefined;
 }
@@ -71,7 +83,8 @@ export async function buildTopData(): Promise<TopData> {
     if (p) photos.set(r.id, p);
   }
 
-  // ── 料理 7
+  // ── 料理 7(ページ全体で使った店 usedAll は、この後のエリア・シーンにも引き継ぐ)
+  const usedAll = new Set<string>();
   const usedCat = new Set<string>();
   const cats: TopCat[] = BROAD_GROUPS.map((g) => ({
     key: g.key,
@@ -80,6 +93,7 @@ export async function buildTopData(): Promise<TopData> {
     photo: pickPhoto(
       shops.filter((r) => matchesBroadKey(g.key, r)),
       photos,
+      usedAll,
       usedCat,
       480,
       "160px",
@@ -96,6 +110,7 @@ export async function buildTopData(): Promise<TopData> {
     photo: pickPhoto(
       shops.filter((r) => r.region === rc.key),
       photos,
+      usedAll,
       usedArea,
       400,
       "100px",
@@ -112,7 +127,7 @@ export async function buildTopData(): Promise<TopData> {
     tagline: s.tagline,
     count: inScene.length,
     href: searchHref({ scene: s.slug }),
-    photo: pickPhoto(inScene, photos, usedScene, 640, "(max-width: 768px) 50vw, 210px"),
+    photo: pickPhoto(inScene, photos, usedAll, usedScene, 640, "(max-width: 768px) 50vw, 210px"),
   }));
 
   // ── 特集 4(記事の日付の新しい順。同日は FEATURES の並び)
