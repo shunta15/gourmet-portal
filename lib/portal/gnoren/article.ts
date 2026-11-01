@@ -40,11 +40,16 @@ const NOTE_MAX = 44;
 /** 値段の項目名か。isPriceSpec(予算・料金・価格・¥・円)に、入館料・入場料などの「〜料」類を足したもの */
 const PRICE_KEY = /予算|料金|価格|[¥￥円]|入館料|入場料|拝観料|観覧料|参拝料|見学料|利用料|体験料|チケット|運賃|相場/;
 export const isPriceKey = (k: string): boolean => PRICE_KEY.test(k ?? "");
+/** 値段の値か。項目名が値段でなくても、値に金額・無料・税込などがあれば出さない(REAL_PLAN「値段を新しく出さない」)。real/common/text.ts は土台なので、ここに置く */
+const PRICE_VALUE = /[0-9０-９,，.～〜]+\s*円|[¥￥]|税込|税別|無料|予算|料金|入館料|入場料|拝観料/;
+export const isPriceValue = (v: string): boolean => PRICE_VALUE.test(v ?? "");
+/** specs の 1 行が金額を含むか(項目名か値のどちらかに出ていれば true) */
+const isPriceRow = (s: { k: string; v: string }): boolean => isPriceKey(s.k) || isPriceValue(s.v) || isPriceValue(s.k);
 
 const clean = (s: string | undefined): string => (s ? stripTabelogScore(s).trim() : "");
 
 const infoOf = (specs: { k: string; v: string }[]): Info =>
-  specs.filter((s) => s.k && s.v && !isPriceKey(s.k)).map((s) => [s.k.trim(), clean(s.v)] as [string, string]).filter(([, v]) => v);
+  specs.filter((s) => s.k && s.v && !isPriceRow(s)).map((s) => [s.k.trim(), clean(s.v)] as [string, string]).filter(([, v]) => v);
 
 const usableImage = (u: string | undefined | null): u is string => !!u && isUsableFeatureImage(u) && !isDummyFeatureImage(u);
 
@@ -57,7 +62,7 @@ function labelOf(r: { cuisine?: string; area?: string }): string {
 /** メモ紙の一文: specs のうち、値段でなく、短い 1 行 */
 function noteOf(specs: { k: string; v: string }[]): string | undefined {
   for (const s of specs) {
-    if (!s.k || !s.v || isPriceKey(s.k)) continue;
+    if (!s.k || !s.v || isPriceRow(s)) continue;
     const t = `${s.k.trim()}：${clean(s.v)}`;
     if (t.length <= NOTE_MAX) return t;
   }
@@ -74,7 +79,7 @@ function shopInfoOf(r: Restaurant): Info {
     ["席数", r.seats],
     ["アクセス", r.nearest],
   ];
-  return rows.filter(([, v]) => v && v.trim()).map(([k, v]) => [k, clean(v)] as [string, string]).filter(([, v]) => v);
+  return rows.filter(([, v]) => v && v.trim()).map(([k, v]) => [k, clean(v)] as [string, string]).filter(([, v]) => v && !isPriceValue(v));
 }
 
 /** 店 1 軒の記事の写真: 主役 → 視点ごとの写真 → 店の写真の順に重複なしで集め、章へ 0〜3 枚ずつ配る(buildPhotoFeature の collectPhotos と同じ出どころ・同じ重複除去) */

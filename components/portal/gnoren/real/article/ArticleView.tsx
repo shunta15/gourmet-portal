@@ -107,7 +107,7 @@ function Chapter({ c, i }: { c: Chapter; i: number }) {
   const lead = c.body.slice(0, 1);
   const rest = c.body.slice(1);
   const restChars = rest.reduce((a, p) => a + len(p), 0);
-  const cols2 = restChars > (n === 0 ? 100 : 240); // 写真の無い章は、残りを 2 段に広げて右の空きを減らす
+  const cols2 = rest.length >= 2 && restChars > (n === 0 ? 100 : 240); // 写真の無い章は、残りを 2 段に広げて右の空きを減らす(段落が 1 つだけなら 2 段に割れず片側が空くので広げない)
   const hid = `gn-feat-r-h${i}`;
   const fig = (p: { src: string; alt: string }, k: number, w: number, sizes: string) => (
     <figure key={k} className="gn-feat-r-fig" data-k={k} data-rv>
