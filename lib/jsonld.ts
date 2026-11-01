@@ -1,4 +1,5 @@
-import { REGIONS, type Restaurant, type FeatureArticle } from "./data";
+import { type Restaurant, type FeatureArticle } from "./data";
+import { regionNameOf } from "./regions";
 import { GEO } from "./geo";
 import { mapsUrlForRestaurant } from "./maps";
 import { parseOpeningHours } from "./openingHours";
@@ -88,19 +89,19 @@ function normalizePhone(phone: string | undefined): string | undefined {
 }
 
 export function buildRestaurantJsonLd(r: Restaurant): Record<string, unknown> {
-  const region = REGIONS[r.region];
+  const regionName = regionNameOf(r.region);
   const url = `${BASE}/restaurant/${r.id}`;
   const images = [r.image, ...(r.gallery || []).slice(0, 5)]
     .filter(Boolean)
     .map((p) => (p.startsWith("http") ? p : `${BASE}${p}`));
   const cuisine = r.cuisine.split(" / ").pop() || r.cuisine;
 
-  const addr = parseAddress(r.address, region?.name);
+  const addr = parseAddress(r.address, regionName);
 
   const postalAddress: Record<string, unknown> = {
     "@type": "PostalAddress",
     streetAddress: addr.streetAddress,
-    addressLocality: region?.name,
+    addressLocality: regionName,
     addressCountry: "JP",
   };
   if (addr.addressRegion) postalAddress.addressRegion = addr.addressRegion;

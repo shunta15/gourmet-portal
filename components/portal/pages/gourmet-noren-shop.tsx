@@ -10,7 +10,7 @@ import ShopBar from "@/components/portal/noren/ShopBar";
 import ShopMapLink from "@/components/portal/noren/ShopMapLink";
 import SaveSeal from "@/components/portal/noren/SaveSeal";
 import KanjiCut from "@/components/portal/noren/KanjiCut";
-import { REGIONS, SHORT_VIDEOS, regionNameOf, toCardItem, type Restaurant } from "@/lib/regions";
+import { SHORT_VIDEOS, regionNameOf, toCardItem, type Restaurant } from "@/lib/regions";
 import { getRestaurantById, getRestaurantsByRegion } from "@/lib/db/restaurants";
 import { getTownOfRestaurant } from "@/lib/db/towns";
 import { GEO } from "@/lib/geo";
@@ -45,7 +45,6 @@ export default async function GourmetNorenShop({ id, links, shop }: { id: string
   const page = shopHref(id);
   const r = shop ?? (await getRestaurantById(id));
   if (!r) notFound();
-  const region = REGIONS[r.region];
   const geo = GEO[r.id] ?? null;
   // 食べログの点数に触れている文・句は出さない（店の評価は Google にする。2026-10-11 オーナー指示。データは書き換えず表示の直前で取る）
   const desc = NOREN_STRIP_OTHER_RATINGS ? stripTabelogScore(r.desc) : r.desc;
@@ -78,7 +77,7 @@ export default async function GourmetNorenShop({ id, links, shop }: { id: string
     source: r.source ?? null,
     featureId,
     town: town ? { name: town.town, href: town.href, count: town.count } : null,
-    region: { name: region.name, href: regionHref(r.region) },
+    region: { name: regionNameOf(r.region), href: regionHref(r.region) },
   });
   model.secondary = model.secondary.map((s) => (s.id === "feature" && featureId ? { ...s, href: links.feature(featureId) } : s));
   const barItems = model.primary.filter((p) => p.id === "reserve" || p.id === "phone" || p.id === "gmap").slice(0, 3);
@@ -110,7 +109,7 @@ export default async function GourmetNorenShop({ id, links, shop }: { id: string
         eyebrow={[r.cuisine, station || r.area].filter(Boolean)}
         crumbs={[
           { label: "トップ", href: links.top },
-          { label: region?.name || r.region, href: regionHref(r.region) },
+          { label: regionNameOf(r.region), href: regionHref(r.region) },
           { label: r.name },
         ]}
       />
