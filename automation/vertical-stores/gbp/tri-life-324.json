@@ -1,0 +1,32 @@
+{
+  "tab": "トリニティアポ",
+  "tabEn": "tri-life",
+  "row": 324,
+  "sheet": {
+    "name": "養寿寺",
+    "address": "",
+    "url": "https://www.google.com/maps/search/?api=1&query=%E9%A4%8A%E5%AF%BF%E5%AF%BA%20056-359-7350%20%E3%80%92444-0314%20%E6%84%9B%E7%9F%A5%E7%9C%8C%E8%A5%BF%E5%B0%BE%E5%B8%82%E4%B8%8B%E7%9F%A2%E7%94%B0%E7%94%BA%E9%83%B7%EF%BC%92",
+    "type": "寺",
+    "d1": "",
+    "d2": ""
+  },
+  "urlKind": "mapsApi",
+  "route": "第1段(verify-gbp.mjs)で確認済み",
+  "verdict": "一致",
+  "verdictReason": "手がかり: 店名＋電話＋住所(番地まで)。電話が一致／店名: exact(シート「養寿寺」/ マップ「養寿寺」)／住所(シート): exact・町名・番地とも一致",
+  "place": {
+    "name": "養寿寺",
+    "address": "愛知県西尾市下矢田町郷２",
+    "category": "仏教寺院",
+    "lat": 34.8477971,
+    "lng": 137.0274493,
+    "gbpUrl": "https://maps.google.com/?cid=4819464543331146217",
+    "phone": "0563-59-7350",
+    "website": null,
+    "hours": null,
+    "reserveLinks": [],
+    "statusSignals": [],
+    "closedSignal": false
+  },
+  "fetchedAt": "2026-11-02T02:37:36.731Z"
+}

@@ -1,0 +1,201 @@
+{
+  "key": "tri-life-324",
+  "headline": "愛知県西尾市下矢田町、上矢田南交差点の角にある浄土宗西山深草派の寺。毎年3月の最終土日に涅槃会「矢田のおかげん」が営まれ、年に一度の寝釈迦のご開帳がある",
+  "lede": "西尾市にある「養寿寺」です。大同元年(806)に弁財天堂から始まり、寛正2年(1461)に天台宗から浄土宗(西山深草派)に改められました。毎年3月の最終土日の涅槃会「矢田のおかげん」は、江戸時代から続く西尾藩主公認のお祭りです。",
+  "sections": [
+    {
+      "heading": "場所とアクセス",
+      "body": "所在地は西尾市下矢田町郷2で、上矢田南交差点の角にあります。電話は0563-59-7350です。名鉄西尾駅から六万石くるりんバスの寺津矢田線に乗り、「上矢田南」で降りて徒歩3分です。車では国道23号線の西尾東ICから約15分で、駐車場があります。"
+    },
+    {
+      "heading": "由緒",
+      "body": "大同元年(806)に弁財天堂から始まった寺で、当初は天台宗でした。寛正2年(1461)に彰空宗永上人が再興し、浄土宗(西山深草派)に改めました。吉良義安の夫人と伝わる矢田姫が埋葬されており、慶長7年(1602)には徳川家康から36石の朱印地を賜っています。"
+    },
+    {
+      "heading": "文化財",
+      "body": "愛知県の文化財に、雲版、高麗時代の観音菩薩像、地蔵菩薩像があります。西尾市の文化財には、鐘楼門、太子伝、徳川家康公の裏書のある天満宮御影、薬師如来、釋迦一尊、弥陀三尊、蓮鷺、寒山拾得があります。"
+    },
+    {
+      "heading": "矢田のおかげん",
+      "body": "毎年3月の最終土日に営まれる、お釈迦様の命日の涅槃会です。読経に合わせて笙・龍笛・琵琶・太鼓などの雅楽の管弦を演奏し、祭りの名の「おかげん」は、もとは「おかんげん」でした。年に一度の寝釈迦さまのご開帳があり、境内には「寺マルシェ」が開かれます。2026年は3月28日と29日の10時から16時に開かれました。"
+    }
+  ],
+  "menus": [],
+  "tags": [
+    {
+      "tag": "駐車場あり",
+      "factIndex": 3
+    }
+  ],
+  "facts": [
+    {
+      "claim": "寺は上矢田南交差点の角にある",
+      "source": "https://aichinow.pref.aichi.jp/events/detail/2099/",
+      "quote": "養寿寺(上矢田南交差点角)",
+      "checkedAt": "2026-11-02"
+    },
+    {
+      "claim": "名鉄西尾駅から六万石くるりんバス寺津矢田線の「上矢田南」下車、徒歩3分",
+      "source": "https://nishiokanko.com/list/news/25720/",
+      "quote": "寺津矢田線「上矢田南」下車徒歩３分",
+      "checkedAt": "2026-11-02"
+    },
+    {
+      "claim": "国道23号線の西尾東ICから車で約15分",
+      "source": "https://aichinow.pref.aichi.jp/events/detail/2099/",
+      "quote": "国道23号線「西尾東IC」から約15分",
+      "checkedAt": "2026-11-02"
+    },
+    {
+      "claim": "駐車場がある",
+      "source": "https://nishiokanko.com/list/shop/矢田のおかげん　養寿寺/",
+      "quote": "駐車場 有り",
+      "checkedAt": "2026-11-02"
+    },
+    {
+      "claim": "電話は0563-59-7350",
+      "source": "https://maps.google.com/?cid=4819464543331146217",
+      "quote": "0563-59-7350",
+      "checkedAt": "2026-11-02"
+    },
+    {
+      "claim": "大同元年(806)に弁財天堂から始まった",
+      "source": "https://nishiokanko.com/list/shop/矢田のおかげん　養寿寺/",
+      "quote": "大同元年（806）に弁財天堂から始まり",
+      "checkedAt": "2026-11-02"
+    },
+    {
+      "claim": "当初は天台宗だった",
+      "source": "https://nishiokanko.com/list/shop/矢田のおかげん　養寿寺/",
+      "quote": "当初は天台宗でしたが",
+      "checkedAt": "2026-11-02"
+    },
+    {
+      "claim": "寛正2年(1461)に彰空宗永上人が再興した",
+      "source": "https://nishiokanko.com/list/shop/矢田のおかげん　養寿寺/",
+      "quote": "寛正2年（1461）に彰空宗永上人が再興し",
+      "checkedAt": "2026-11-02"
+    },
+    {
+      "claim": "浄土宗(西山深草派)に改めた",
+      "source": "https://nishiokanko.com/list/shop/矢田のおかげん　養寿寺/",
+      "quote": "浄土宗に改めました（西山深草派）",
+      "checkedAt": "2026-11-02"
+    },
+    {
+      "claim": "吉良義安の夫人と伝わる矢田姫が埋葬されている",
+      "source": "https://nishiokanko.com/list/shop/矢田のおかげん　養寿寺/",
+      "quote": "矢田姫（やたひめ）が当寺に埋葬され",
+      "checkedAt": "2026-11-02"
+    },
+    {
+      "claim": "慶長7年(1602)に家康から36石の朱印地を賜った",
+      "source": "https://nishiokanko.com/list/shop/矢田のおかげん　養寿寺/",
+      "quote": "慶長7年（1602）に家康公より36石の朱印地を賜りました",
+      "checkedAt": "2026-11-02"
+    },
+    {
+      "claim": "県の文化財に雲版・高麗時代の観音菩薩像・地蔵菩薩像",
+      "source": "https://nishiokanko.com/list/shop/矢田のおかげん　養寿寺/",
+      "quote": "＜県文化財＞雲版、高麗時代の観音菩薩像、地蔵菩薩像",
+      "checkedAt": "2026-11-02"
+    },
+    {
+      "claim": "市の文化財に鐘楼門・太子伝",
+      "source": "https://nishiokanko.com/list/shop/矢田のおかげん　養寿寺/",
+      "quote": "＜市文化財＞鐘楼門、太子伝",
+      "checkedAt": "2026-11-02"
+    },
+    {
+      "claim": "市の文化財に徳川家康公の裏書のある天満宮御影・薬師如来",
+      "source": "https://nishiokanko.com/list/shop/矢田のおかげん　養寿寺/",
+      "quote": "徳川家康公の裏書のある天満宮御影、薬師如来",
+      "checkedAt": "2026-11-02"
+    },
+    {
+      "claim": "市の文化財に釋迦一尊・弥陀三尊・蓮鷺・寒山拾得",
+      "source": "https://nishiokanko.com/list/shop/矢田のおかげん　養寿寺/",
+      "quote": "釋迦一尊、弥陀三尊、蓮鷺、寒山拾得",
+      "checkedAt": "2026-11-02"
+    },
+    {
+      "claim": "矢田のおかげんは毎年3月の最終土日に行われる",
+      "source": "https://nishiokanko.com/list/shop/矢田のおかげん　養寿寺/",
+      "quote": "毎年3月の最終土日に行われるお祭りです",
+      "checkedAt": "2026-11-02"
+    },
+    {
+      "claim": "矢田のおかげんはお釈迦様の命日の涅槃会",
+      "source": "https://nishiokanko.com/list/shop/矢田のおかげん　養寿寺/",
+      "quote": "お釈迦様の命日の涅槃会で",
+      "checkedAt": "2026-11-02"
+    },
+    {
+      "claim": "読経に合わせて笙・龍笛・琵琶・太鼓などの雅楽の管弦を演奏する",
+      "source": "https://nishiokanko.com/list/shop/矢田のおかげん　養寿寺/",
+      "quote": "笙・龍笛・琵琶・太鼓などの雅楽の「管弦」を演奏",
+      "checkedAt": "2026-11-02"
+    },
+    {
+      "claim": "祭りの名「おかげん」はもとは「おかんげん」だった",
+      "source": "https://nishiokanko.com/list/shop/矢田のおかげん　養寿寺/",
+      "quote": "「おかんげん」→「おかげん」と呼ばれるようになり",
+      "checkedAt": "2026-11-02"
+    },
+    {
+      "claim": "江戸時代から続く西尾藩主公認のお祭り",
+      "source": "https://aichinow.pref.aichi.jp/events/detail/2099/",
+      "quote": "江戸時代から続く、西尾藩主公認のお祭り",
+      "checkedAt": "2026-11-02"
+    },
+    {
+      "claim": "年に一度の寝釈迦さまのご開帳がある",
+      "source": "https://aichinow.pref.aichi.jp/events/detail/2099/",
+      "quote": "年に一度の寝釈迦さまのご開帳",
+      "checkedAt": "2026-11-02"
+    },
+    {
+      "claim": "境内にキッチンカーが並ぶ「寺マルシェ」が開かれる",
+      "source": "https://aichinow.pref.aichi.jp/events/detail/2099/",
+      "quote": "境内ではキッチンカーが多数並ぶ「寺マルシェ」が開かれ",
+      "checkedAt": "2026-11-02"
+    },
+    {
+      "claim": "2026年は3月28日・29日の10時から16時",
+      "source": "https://nishiokanko.com/list/news/25720/",
+      "quote": "２０２６年３月２８日（土）・２９日（日） １０時～１６時",
+      "checkedAt": "2026-11-02"
+    },
+    {
+      "claim": "両日とも10時から斎藤吾朗氏の描いた矢田のおかげん限定ご朱印を授与",
+      "source": "https://nishiokanko.com/list/shop/矢田のおかげん　養寿寺/",
+      "quote": "斎藤吾朗氏の描いた矢田のおかげん限定ご朱印を授与します",
+      "checkedAt": "2026-11-02"
+    },
+    {
+      "claim": "Google マップの業種は仏教寺院",
+      "source": "https://maps.google.com/?cid=4819464543331146217",
+      "quote": "仏教寺院",
+      "checkedAt": "2026-11-02"
+    }
+  ],
+  "sources": [
+    {
+      "label": "西尾市観光協会(矢田のおかげん・養寿寺)",
+      "url": "https://nishiokanko.com/list/shop/矢田のおかげん　養寿寺/"
+    },
+    {
+      "label": "西尾市観光協会(2026年開催のお知らせ)",
+      "url": "https://nishiokanko.com/list/news/25720/"
+    },
+    {
+      "label": "愛知県観光サイト Aichi Now(矢田のおかげん)",
+      "url": "https://aichinow.pref.aichi.jp/events/detail/2099/"
+    },
+    {
+      "label": "Google マップ",
+      "url": "https://maps.google.com/?cid=4819464543331146217"
+    }
+  ],
+  "notes": "automation/v2/write.mjs が 2026-11-02 に claude -p --model sonnet で作成。事実の裏取り: 25/25 件(quote が出どころにあるもの)。裏取りに通らなかった facts は載せていない。"
+}

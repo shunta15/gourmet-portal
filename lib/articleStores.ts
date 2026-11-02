@@ -18778,6 +18778,249 @@ export const ARTICLE_STORES: Restaurant[] = [
       "宴会"
     ],
     "featureId": "石神井の蕎麦丸嶋"
+  },
+  {
+    "id": "r839",
+    "name": "やまや",
+    "cuisine": "居酒屋",
+    "area": "神奈川県・逗子市",
+    "region": "kanagawa",
+    "shape": "square",
+    "image": "/restaurants/teleapo-やまや/hero.jpg",
+    "heroImages": [
+      "/restaurants/teleapo-やまや/hero.jpg",
+      "/restaurants/teleapo-やまや/point1.jpg",
+      "/restaurants/teleapo-やまや/point2.jpg",
+      "/restaurants/teleapo-やまや/point4.jpg",
+      "/restaurants/teleapo-やまや/point5.jpg"
+    ],
+    "gallery": [
+      "/restaurants/teleapo-やまや/hero.jpg",
+      "/restaurants/teleapo-やまや/point1.jpg",
+      "/restaurants/teleapo-やまや/point2.jpg",
+      "/restaurants/teleapo-やまや/point4.jpg",
+      "/restaurants/teleapo-やまや/point5.jpg"
+    ],
+    "desc": "やまやは、神奈川県逗子市逗子2丁目6-31の魚佐次ビル2Fにある居酒屋である。",
+    "address": "神奈川県逗子市逗子2丁目6-31 魚佐次ビル 2F",
+    "hours": "—（訪問前に公式確認）",
+    "closed": "—（訪問前に公式確認）",
+    "seats": "カウンター7席・12名テーブル席・4名円卓・ソファ10席・2名テーブル",
+    "nearest": "JR逗子駅 徒歩5分",
+    "phone": "046-884-8415",
+    "source": {
+      "label": "Google ビジネスプロフィール",
+      "url": "https://maps.google.com/?cid=1329503580026922729"
+    },
+    "body": [
+      "やまやは、神奈川県逗子市にあるお店です。業態は「居酒屋」、所在地は神奈川県逗子市逗子2丁目6-31 魚佐次ビル 2F、最寄りはJR逗子駅 徒歩5分です。マチノワ編集部の特集記事では、「三崎港直送のマグロと地魚の刺身」・「もつ煮込み・餃子・チーズ豆腐の酒場料理」などを取り上げています。",
+      "営業時間と定休日は取得できていないため、訪問前に公式の情報でご確認ください。席はカウンター7席・12名テーブル席・4名円卓・ソファ10席・2名テーブル。営業時間や価格は変わることがあるため、訪問前に公式サイトやSNS、お電話でご確認ください。"
+    ],
+    "highlights": [
+      "三崎港直送のマグロと地魚の刺身",
+      "もつ煮込み・餃子・チーズ豆腐の酒場料理",
+      "自家農園の野菜と葉山産ブルーベリー",
+      "カウンターからソファまで揃う店内と貸切",
+      "JR逗子駅から徒歩5分の魚佐次ビル2F"
+    ],
+    "tags": [
+      "居酒屋",
+      "逗子市",
+      "逗子駅",
+      "貸切可"
+    ],
+    "featureId": "やまや"
+  },
+  {
+    "id": "r840",
+    "name": "炉端居酒屋 篝火",
+    "cuisine": "居酒屋",
+    "area": "北海道・札幌市北区",
+    "region": "hokkaido",
+    "shape": "square",
+    "image": "/restaurants/teleapo-炉端居酒屋篝火/hero.jpg",
+    "heroImages": [
+      "/restaurants/teleapo-炉端居酒屋篝火/hero.jpg",
+      "/restaurants/teleapo-炉端居酒屋篝火/point1.jpg",
+      "/restaurants/teleapo-炉端居酒屋篝火/point2.jpg",
+      "/restaurants/teleapo-炉端居酒屋篝火/point3.jpg",
+      "/restaurants/teleapo-炉端居酒屋篝火/point4.jpg"
+    ],
+    "gallery": [
+      "/restaurants/teleapo-炉端居酒屋篝火/hero.jpg",
+      "/restaurants/teleapo-炉端居酒屋篝火/point1.jpg",
+      "/restaurants/teleapo-炉端居酒屋篝火/point2.jpg",
+      "/restaurants/teleapo-炉端居酒屋篝火/point3.jpg",
+      "/restaurants/teleapo-炉端居酒屋篝火/point4.jpg",
+      "/restaurants/teleapo-炉端居酒屋篝火/point5.jpg"
+    ],
+    "desc": "炉端居酒屋 篝火は、北海道札幌市北区北２４条西４丁目２−１にある居酒屋である。",
+    "address": "北海道札幌市北区北24条西4丁目2-1",
+    "hours": "—（訪問前に公式確認）",
+    "closed": "—（訪問前に公式確認）",
+    "seats": "—（訪問前に公式確認）",
+    "nearest": "—",
+    "phone": "011-792-5562",
+    "source": {
+      "label": "Google ビジネスプロフィール",
+      "url": "https://maps.google.com/?cid=10225335389183722121"
+    },
+    "body": [
+      "炉端居酒屋 篝火は、北海道札幌市北区にあるお店です。業態は「居酒屋」、所在地は北海道札幌市北区北24条西4丁目2-1です。マチノワ編集部の特集記事では、「炉端焼きと串物17種」・「旬の刺身と北海道の魚介の焼き物」などを取り上げています。",
+      "営業時間と定休日は取得できていないため、訪問前に公式の情報でご確認ください。営業時間や価格は変わることがあるため、訪問前に公式サイトやSNS、お電話でご確認ください。"
+    ],
+    "highlights": [
+      "炉端焼きと串物17種",
+      "旬の刺身と北海道の魚介の焼き物",
+      "ホルジン鍋・モツ鍋とラーメン",
+      "焼酎と日本酒を各種そろえるドリンク",
+      "北２４条駅から徒歩約2分、水曜定休"
+    ],
+    "tags": [
+      "居酒屋",
+      "北区"
+    ],
+    "featureId": "炉端居酒屋篝火"
+  },
+  {
+    "id": "r841",
+    "name": "amusement flair BAR HINNA",
+    "cuisine": "バー",
+    "area": "徳島県・鳴門市",
+    "region": "tokushima",
+    "shape": "square",
+    "image": "/restaurants/teleapo-amusementflairBARHINNA/hero.jpg",
+    "heroImages": [
+      "/restaurants/teleapo-amusementflairBARHINNA/hero.jpg",
+      "/restaurants/teleapo-amusementflairBARHINNA/point1.jpg",
+      "/restaurants/teleapo-amusementflairBARHINNA/point3.jpg"
+    ],
+    "gallery": [
+      "/restaurants/teleapo-amusementflairBARHINNA/hero.jpg",
+      "/restaurants/teleapo-amusementflairBARHINNA/point1.jpg",
+      "/restaurants/teleapo-amusementflairBARHINNA/point3.jpg"
+    ],
+    "desc": "amusement flair BAR HINNAは、徳島県鳴門市撫養町小桑島字前浜54の2階にあるバーである。鳴門駅から徒歩5分ほどで、営業は21時から翌3時まで。",
+    "address": "徳島県鳴門市撫養町小桑島前浜54",
+    "hours": "—（訪問前に公式確認）",
+    "closed": "—（訪問前に公式確認）",
+    "seats": "—（訪問前に公式確認）",
+    "nearest": "—",
+    "phone": "090-6605-1049",
+    "instagram": "https://www.instagram.com/bar_hinna_flair",
+    "source": {
+      "label": "Google ビジネスプロフィール",
+      "url": "https://maps.google.com/?cid=17111580920416646517"
+    },
+    "body": [
+      "amusement flair BAR HINNAは、徳島県鳴門市にあるお店です。業態は「バー」、所在地は徳島県鳴門市撫養町小桑島前浜54です。マチノワ編集部の特集記事では、「カラオケ・ビリヤード・ダーツがある店内」・「21時から翌3時まで、月曜が定休日」などを取り上げています。",
+      "営業時間と定休日は取得できていないため、訪問前に公式の情報でご確認ください。営業時間や価格は変わることがあるため、訪問前に公式サイトやSNS、お電話でご確認ください。"
+    ],
+    "highlights": [
+      "カラオケ・ビリヤード・ダーツがある店内",
+      "21時から翌3時まで、月曜が定休日",
+      "鳴門駅から徒歩5分ほどの小桑島前浜"
+    ],
+    "tags": [
+      "バー",
+      "鳴門市"
+    ],
+    "featureId": "amusementflairBARHINNA"
+  },
+  {
+    "id": "r842",
+    "name": "富屋酒店",
+    "cuisine": "アルコール飲料卸売業者",
+    "area": "長野県・下高井郡野沢温泉村",
+    "region": "nagano",
+    "shape": "square",
+    "image": "/restaurants/teleapo-富屋酒店/hero.jpg",
+    "heroImages": [
+      "/restaurants/teleapo-富屋酒店/hero.jpg",
+      "/restaurants/teleapo-富屋酒店/point1.jpg",
+      "/restaurants/teleapo-富屋酒店/point2.jpg",
+      "/restaurants/teleapo-富屋酒店/point3.jpg"
+    ],
+    "gallery": [
+      "/restaurants/teleapo-富屋酒店/hero.jpg",
+      "/restaurants/teleapo-富屋酒店/point1.jpg",
+      "/restaurants/teleapo-富屋酒店/point2.jpg",
+      "/restaurants/teleapo-富屋酒店/point3.jpg"
+    ],
+    "desc": "長野県下高井郡野沢温泉村のアルコール飲料卸売業者。最寄りはJR飯山駅。",
+    "address": "長野県下高井郡野沢温泉村豊郷大湯9512",
+    "hours": "—（訪問前に公式確認）",
+    "closed": "—（訪問前に公式確認）",
+    "seats": "—（訪問前に公式確認）",
+    "nearest": "JR飯山駅",
+    "phone": "0269-85-2221",
+    "source": {
+      "label": "Google ビジネスプロフィール",
+      "url": "https://maps.google.com/?cid=8317274191570978753"
+    },
+    "body": [
+      "富屋酒店は、長野県下高井郡野沢温泉村にあるお店です。業態は「アルコール飲料卸売業者」、所在地は長野県下高井郡野沢温泉村豊郷大湯9512、最寄りはJR飯山駅です。マチノワ編集部の特集記事では、「大湯通りにある地酒の専門店」・「水尾と北光正宗など蔵元の銘柄」などを取り上げています。",
+      "営業時間と定休日は取得できていないため、訪問前に公式の情報でご確認ください。営業時間や価格は変わることがあるため、訪問前に公式サイトやSNS、お電話でご確認ください。"
+    ],
+    "highlights": [
+      "大湯通りにある地酒の専門店",
+      "水尾と北光正宗など蔵元の銘柄",
+      "ワインとリンゴジュースなど地酒以外の品",
+      "冬期間の店頭試飲販売会",
+      "姉妹店の野沢菜本舗と最寄駅"
+    ],
+    "tags": [
+      "アルコール飲料卸売業者",
+      "野沢温泉村",
+      "飯山駅"
+    ],
+    "featureId": "富屋酒店"
+  },
+  {
+    "id": "r843",
+    "name": "だいぬき屋",
+    "cuisine": "うどん屋",
+    "area": "石川県・金沢市",
+    "region": "ishikawa",
+    "shape": "square",
+    "image": "/restaurants/teleapo-だいぬき屋/hero.jpg",
+    "heroImages": [
+      "/restaurants/teleapo-だいぬき屋/hero.jpg",
+      "/restaurants/teleapo-だいぬき屋/point2.jpg",
+      "/restaurants/teleapo-だいぬき屋/point3.jpg"
+    ],
+    "gallery": [
+      "/restaurants/teleapo-だいぬき屋/hero.jpg",
+      "/restaurants/teleapo-だいぬき屋/point2.jpg",
+      "/restaurants/teleapo-だいぬき屋/point3.jpg"
+    ],
+    "desc": "だいぬき屋は、石川県金沢市片町2丁目の片町シルクビル1階にあるうどん店で、正式な店名は「金澤うどん だいぬき屋」である。",
+    "address": "石川県金沢市片町2丁目2-14 シルクビル 1F",
+    "hours": "—（訪問前に公式確認）",
+    "closed": "—（訪問前に公式確認）",
+    "seats": "—（訪問前に公式確認）",
+    "nearest": "—",
+    "phone": "076-233-7070",
+    "source": {
+      "label": "Google ビジネスプロフィール",
+      "url": "https://maps.google.com/?cid=4744571235165585074"
+    },
+    "body": [
+      "だいぬき屋は、石川県金沢市にあるお店です。業態は「うどん屋」、所在地は石川県金沢市片町2丁目2-14 シルクビル 1Fです。マチノワ編集部の特集記事では、「うどんを抜いて種ものだけで飲む「だいぬき」料理」・「鰹だしの金澤うどんと金澤だしカレーうどん」などを取り上げています。",
+      "営業時間と定休日は取得できていないため、訪問前に公式の情報でご確認ください。営業時間や価格は変わることがあるため、訪問前に公式サイトやSNS、お電話でご確認ください。"
+    ],
+    "highlights": [
+      "うどんを抜いて種ものだけで飲む「だいぬき」料理",
+      "鰹だしの金澤うどんと金澤だしカレーうどん",
+      "いなりうどん、豚カツ丼、炭火焼鶏めんと一品料理",
+      "片町スクランブル交差点近く、翌3時までの営業"
+    ],
+    "tags": [
+      "うどん屋",
+      "うどん",
+      "金沢市"
+    ],
+    "featureId": "だいぬき屋"
   }
 ];
 
@@ -19177,7 +19420,12 @@ export const ARTICLE_STORE_FEATURE_IDS: Record<string, string> = {
   "r835": "水流",
   "r836": "クアトロフォリオ",
   "r837": "炉ばた地鶏山嵐",
-  "r838": "石神井の蕎麦丸嶋"
+  "r838": "石神井の蕎麦丸嶋",
+  "r839": "やまや",
+  "r840": "炉端居酒屋篝火",
+  "r841": "amusementflairBARHINNA",
+  "r842": "富屋酒店",
+  "r843": "だいぬき屋"
 };
 
 /** 特集記事ID → 店舗ID */
@@ -19576,5 +19824,10 @@ export const ARTICLE_STORE_ID_BY_FEATURE: Record<string, string> = {
   "水流": "r835",
   "クアトロフォリオ": "r836",
   "炉ばた地鶏山嵐": "r837",
-  "石神井の蕎麦丸嶋": "r838"
+  "石神井の蕎麦丸嶋": "r838",
+  "やまや": "r839",
+  "炉端居酒屋篝火": "r840",
+  "amusementflairBARHINNA": "r841",
+  "富屋酒店": "r842",
+  "だいぬき屋": "r843"
 };

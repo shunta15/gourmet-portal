@@ -1,0 +1,26 @@
+{
+  "key": "tri-life-330",
+  "images": [
+    {
+      "path": "/_portal/vshops/tri-life-330/g04.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9TjiO8myRO2bXmrNwV4cwMYNFLl9gXYVhxavlI22FOcpa0vN95xMcgLjV7sxqw5fT0GV3--HlKY5SAVbSzxRflX6vLnunyjZovIFYraNma-UlWhcBAfh1bP602C-f9IEKEZ9TIGqQ=s1200",
+      "pageUrl": "https://maps.google.com/?cid=17797339193385037281",
+      "what": "「永張禪寺」と刻まれた石柱",
+      "kind": "exterior",
+      "width": 900,
+      "height": 1200,
+      "source": "Google マップ"
+    },
+    {
+      "path": "/_portal/vshops/tri-life-330/g08.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9Rqh851CXJY8cHyLV2BbjGahFY_BcQu9zgtGwVfXHmO1w9_YG6amzjtDO1ZWvUQOSdq2RDbRO_JpjSwMuw5ht9DU-0wmyjyg0JopeLmQD5lFAmlZlRyWlGtCP2E9qlvKn5jFpzV=s1200",
+      "pageUrl": "https://maps.google.com/?cid=17797339193385037281",
+      "what": "畳の間に仏具と白い掛け軸が並ぶ堂内",
+      "kind": "common",
+      "width": 1200,
+      "height": 675,
+      "source": "Google マップ"
+    }
+  ],
+  "note": "automation/v2/write.mjs が 2026-11-02T05:09:59.713Z に取得。店の実写だけ(AI 画像・汎用画像・地図・ロゴ・顔が大きい画像は除外)。"
+}

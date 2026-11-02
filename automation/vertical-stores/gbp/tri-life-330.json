@@ -1,0 +1,32 @@
+{
+  "tab": "トリニティアポ",
+  "tabEn": "tri-life",
+  "row": 330,
+  "sheet": {
+    "name": "永張寺",
+    "address": "",
+    "url": "https://www.google.com/maps/search/?api=1&query=%E6%B0%B8%E5%BC%B5%E5%AF%BA%20058-774-7820%20%E3%80%92495-0001%20%E6%84%9B%E7%9F%A5%E7%9C%8C%E7%A8%B2%E6%B2%A2%E5%B8%82%E7%A5%96%E7%88%B6%E6%B1%9F%E7%94%BA%E7%A5%96%E7%88%B6%E6%B1%9F%E4%B8%AD%E5%B1%8B%E6%95%B7%EF%BC%91%EF%BC%93%EF%BC%95",
+    "type": "寺",
+    "d1": "",
+    "d2": ""
+  },
+  "urlKind": "mapsApi",
+  "route": "第1段(verify-gbp.mjs)で確認済み",
+  "verdict": "一致",
+  "verdictReason": "手がかり: 店名＋電話＋住所(番地まで)。電話が一致／店名: contains(シート「永張寺」/ マップ「祖父江高野山 永張寺」)／住所(シート): exact・町名・番地とも一致",
+  "place": {
+    "name": "祖父江高野山 永張寺",
+    "address": "愛知県稲沢市祖父江町祖父江中屋敷１３５",
+    "category": "仏教寺院",
+    "lat": 35.2640831,
+    "lng": 136.7228943,
+    "gbpUrl": "https://maps.google.com/?cid=17797339193385037281",
+    "phone": "0587-74-7820",
+    "website": null,
+    "hours": null,
+    "reserveLinks": [],
+    "statusSignals": [],
+    "closedSignal": false
+  },
+  "fetchedAt": "2026-11-02T02:42:31.753Z"
+}

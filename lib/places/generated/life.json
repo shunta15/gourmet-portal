@@ -18029,6 +18029,494 @@
         ],
         "checkedAt": "2026-11-02"
       }
+    },
+    {
+      "id": "li0120",
+      "vertical": "life",
+      "category": "shrine-temple",
+      "name": "収玄寺 (鎌倉市)",
+      "pref": "kanagawa",
+      "cityName": "鎌倉市",
+      "address": "神奈川県鎌倉市長谷2丁目15-12",
+      "lat": 35.3119885,
+      "lng": 139.5352175,
+      "phone": "0467-25-3238",
+      "mapUrl": "https://maps.google.com/?cid=9502658586390704917",
+      "image": "/_portal/vshops/tri-life-312/g01.jpg",
+      "images": [
+        "/_portal/vshops/tri-life-312/g01.jpg",
+        "/_portal/vshops/tri-life-312/g02.jpg",
+        "/_portal/vshops/tri-life-312/g03.jpg",
+        "/_portal/vshops/tri-life-312/g04.jpg",
+        "/_portal/vshops/tri-life-312/g05.jpg",
+        "/_portal/vshops/tri-life-312/g06.jpg",
+        "/_portal/vshops/tri-life-312/g08.jpg",
+        "/_portal/vshops/tri-life-312/g09.jpg",
+        "/_portal/vshops/tri-life-312/g10.jpg"
+      ],
+      "photos": [
+        {
+          "path": "/_portal/vshops/tri-life-312/g01.jpg",
+          "what": "木々のそばに建つ、瓦屋根の本堂の正面",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-life-312/g02.jpg",
+          "what": "緑の木々と青空が見える境内の植え込み",
+          "kind": "view",
+          "width": 675,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-life-312/g03.jpg",
+          "what": "額のかかる本堂の正面",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 676
+        },
+        {
+          "path": "/_portal/vshops/tri-life-312/g04.jpg",
+          "what": "門と、奥へ続く参道",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-life-312/g05.jpg",
+          "what": "境内に建つ石碑",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-life-312/g06.jpg",
+          "what": "石碑と松、石敷きの小道がある境内",
+          "kind": "view",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-life-312/g08.jpg",
+          "what": "軒の彫刻と額が見える本堂の正面",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 675
+        },
+        {
+          "path": "/_portal/vshops/tri-life-312/g09.jpg",
+          "what": "桜の枝ごしに見える緑の瓦屋根の本堂と説明板",
+          "kind": "exterior",
+          "width": 899,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-life-312/g10.jpg",
+          "what": "木の囲いの中に立つ石像",
+          "width": 675,
+          "height": 1200
+        }
+      ],
+      "tags": [
+        "駅近"
+      ],
+      "article": {
+        "headline": "鎌倉市長谷、江ノ電長谷駅から徒歩1分の日蓮宗の寺院。鎌倉武士・四条金吾の屋敷跡に建ち、境内には東郷平八郎揮毫の石碑がある",
+        "lede": "鎌倉市にある「収玄寺」です。日蓮宗の寺院で、鎌倉武士だった四条金吾の屋敷跡に建てられました。境内には四季折々の花が咲き、東郷平八郎元帥が揮毫した「四条金吾邸跡」の大きな石碑が建っています。",
+        "sections": [
+          {
+            "heading": "場所とアクセス",
+            "body": "所在地は鎌倉市長谷2-15-12です。江ノ電の長谷駅から徒歩1分で、鎌倉駅東口のバス乗り場から長谷観音・大仏方面行きに乗り、長谷観音で降りても徒歩1分です。営業時間は7時から17時ごろです。境内には蕪珈琲(カフェ)があります。"
+          },
+          {
+            "heading": "四条金吾の屋敷跡",
+            "body": "四条金吾は四条頼基ともいい、日蓮聖人の代表的な信者で、北条氏につらなる一族の江間氏に仕えた家臣です。その屋敷跡に建てられたのが収玄寺です。寺院となったのは江戸時代後期の1830(文政13)年ごろで、明治期の廃仏毀釈の流れで荒廃したあと、大正時代に、収玄寺の住職を兼務していた光則寺の日慈上人が再建しました。"
+          },
+          {
+            "heading": "石碑と境内の花",
+            "body": "境内には、東郷平八郎元帥揮毫の「四条金吾邸跡」と刻まれた大きな石碑が建っています。境内で見られる花は、春がサクラ・アンズ・ミツマタ、夏がアヤメ・アジサイ・サルスベリ、秋がシュウメイギク・ホトトギス・ツワブキ、冬がウメ・スイセン・センリョウです。"
+          }
+        ],
+        "sources": [
+          {
+            "label": "鎌倉市観光協会",
+            "url": "https://www.trip-kamakura.com/facility/detail.php?id=33"
+          },
+          {
+            "label": "日蓮宗ポータルサイト(崇峻天皇御書)",
+            "url": "https://www.nichiren.or.jp/goibun/id218/"
+          },
+          {
+            "label": "日蓮宗ポータルサイト(鎌倉市の寺院)",
+            "url": "https://www.nichiren.or.jp/temple/map/kanto/kanagawa/kamakura-shi/"
+          },
+          {
+            "label": "Google マップ",
+            "url": "https://maps.google.com/?cid=9502658586390704917"
+          }
+        ],
+        "checkedAt": "2026-11-02"
+      }
+    },
+    {
+      "id": "li0121",
+      "vertical": "life",
+      "category": "shrine-temple",
+      "name": "養寿寺",
+      "pref": "aichi",
+      "cityName": "西尾市",
+      "address": "愛知県西尾市下矢田町郷2",
+      "lat": 34.8477971,
+      "lng": 137.0274493,
+      "phone": "0563-59-7350",
+      "mapUrl": "https://maps.google.com/?cid=4819464543331146217",
+      "image": "/_portal/vshops/tri-life-324/g01.jpg",
+      "images": [
+        "/_portal/vshops/tri-life-324/g01.jpg",
+        "/_portal/vshops/tri-life-324/g02.jpg",
+        "/_portal/vshops/tri-life-324/g03.jpg",
+        "/_portal/vshops/tri-life-324/g04.jpg",
+        "/_portal/vshops/tri-life-324/g05.jpg",
+        "/_portal/vshops/tri-life-324/g06.jpg",
+        "/_portal/vshops/tri-life-324/g07.jpg",
+        "/_portal/vshops/tri-life-324/g08.jpg",
+        "/_portal/vshops/tri-life-324/g09.jpg",
+        "/_portal/vshops/tri-life-324/g10.jpg"
+      ],
+      "photos": [
+        {
+          "path": "/_portal/vshops/tri-life-324/g01.jpg",
+          "what": "「延命地蔵堂」の額がかかる瓦屋根のお堂",
+          "kind": "exterior",
+          "width": 904,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-life-324/g02.jpg",
+          "what": "屋根付きの建物と、奥に鳥居と小さな社が見える境内",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 675
+        },
+        {
+          "path": "/_portal/vshops/tri-life-324/g03.jpg",
+          "what": "石段の上に屋根のある門が見える参道",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 675
+        },
+        {
+          "path": "/_portal/vshops/tri-life-324/g04.jpg",
+          "what": "金色の光背の仏像と両脇の像、赤い頭巾の地蔵が並ぶ堂内",
+          "kind": "common",
+          "width": 1092,
+          "height": 883
+        },
+        {
+          "path": "/_portal/vshops/tri-life-324/g05.jpg",
+          "what": "赤い頭巾と前掛けを着けた石の地蔵像と石灯籠",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-life-324/g06.jpg",
+          "what": "大きな鬼瓦と「本堂修復記」と刻まれた石碑",
+          "kind": "exterior",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-life-324/g07.jpg",
+          "what": "大きな瓦屋根の堂が建つ境内",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-life-324/g08.jpg",
+          "what": "「延命地蔵堂」の額の下に立つ赤い頭巾の地蔵像",
+          "kind": "common",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-life-324/g09.jpg",
+          "what": "彩色画が描かれた天井と、下がる提灯",
+          "kind": "common",
+          "width": 1200,
+          "height": 541
+        },
+        {
+          "path": "/_portal/vshops/tri-life-324/g10.jpg",
+          "what": "「天満宮」の文字入りの提灯が下がるお堂の内部",
+          "kind": "common",
+          "width": 904,
+          "height": 1200
+        }
+      ],
+      "tags": [
+        "駐車場あり"
+      ],
+      "article": {
+        "headline": "愛知県西尾市下矢田町、上矢田南交差点の角にある浄土宗西山深草派の寺。毎年3月の最終土日に涅槃会「矢田のおかげん」が営まれ、年に一度の寝釈迦のご開帳がある",
+        "lede": "西尾市にある「養寿寺」です。大同元年(806)に弁財天堂から始まり、寛正2年(1461)に天台宗から浄土宗(西山深草派)に改められました。毎年3月の最終土日の涅槃会「矢田のおかげん」は、江戸時代から続く西尾藩主公認のお祭りです。",
+        "sections": [
+          {
+            "heading": "場所とアクセス",
+            "body": "所在地は西尾市下矢田町郷2で、上矢田南交差点の角にあります。電話は0563-59-7350です。名鉄西尾駅から六万石くるりんバスの寺津矢田線に乗り、「上矢田南」で降りて徒歩3分です。車では国道23号線の西尾東ICから約15分で、駐車場があります。"
+          },
+          {
+            "heading": "由緒",
+            "body": "大同元年(806)に弁財天堂から始まった寺で、当初は天台宗でした。寛正2年(1461)に彰空宗永上人が再興し、浄土宗(西山深草派)に改めました。吉良義安の夫人と伝わる矢田姫が埋葬されており、慶長7年(1602)には徳川家康から36石の朱印地を賜っています。"
+          },
+          {
+            "heading": "文化財",
+            "body": "愛知県の文化財に、雲版、高麗時代の観音菩薩像、地蔵菩薩像があります。西尾市の文化財には、鐘楼門、太子伝、徳川家康公の裏書のある天満宮御影、薬師如来、釋迦一尊、弥陀三尊、蓮鷺、寒山拾得があります。"
+          },
+          {
+            "heading": "矢田のおかげん",
+            "body": "毎年3月の最終土日に営まれる、お釈迦様の命日の涅槃会です。読経に合わせて笙・龍笛・琵琶・太鼓などの雅楽の管弦を演奏し、祭りの名の「おかげん」は、もとは「おかんげん」でした。年に一度の寝釈迦さまのご開帳があり、境内には「寺マルシェ」が開かれます。2026年は3月28日と29日の10時から16時に開かれました。"
+          }
+        ],
+        "sources": [
+          {
+            "label": "西尾市観光協会(矢田のおかげん・養寿寺)",
+            "url": "https://nishiokanko.com/list/shop/矢田のおかげん　養寿寺/"
+          },
+          {
+            "label": "西尾市観光協会(2026年開催のお知らせ)",
+            "url": "https://nishiokanko.com/list/news/25720/"
+          },
+          {
+            "label": "愛知県観光サイト Aichi Now(矢田のおかげん)",
+            "url": "https://aichinow.pref.aichi.jp/events/detail/2099/"
+          },
+          {
+            "label": "Google マップ",
+            "url": "https://maps.google.com/?cid=4819464543331146217"
+          }
+        ],
+        "checkedAt": "2026-11-02"
+      }
+    },
+    {
+      "id": "li0122",
+      "vertical": "life",
+      "category": "shrine-temple",
+      "name": "社務所",
+      "pref": "aichi",
+      "cityName": "幸田町",
+      "address": "愛知県額田郡幸田町大草太根6",
+      "lat": 34.8736081,
+      "lng": 137.2032154,
+      "phone": "0564-62-3809",
+      "url": "https://www.sarutahiko.net/",
+      "website": "https://www.sarutahiko.net/",
+      "mapUrl": "https://maps.google.com/?cid=5696157216703291932",
+      "image": "/_portal/vshops/tri-life-325/s02.jpg",
+      "images": [
+        "/_portal/vshops/tri-life-325/s02.jpg",
+        "/_portal/vshops/tri-life-325/s03.jpg",
+        "/_portal/vshops/tri-life-325/s04.jpg",
+        "/_portal/vshops/tri-life-325/s05.jpg",
+        "/_portal/vshops/tri-life-325/s06.jpg",
+        "/_portal/vshops/tri-life-325/s07.jpg"
+      ],
+      "photos": [
+        {
+          "path": "/_portal/vshops/tri-life-325/s02.jpg",
+          "what": "白い自動車の前に立つ、祭具を持った神職",
+          "kind": "exterior",
+          "width": 1020,
+          "height": 490
+        },
+        {
+          "path": "/_portal/vshops/tri-life-325/s03.jpg",
+          "what": "石の鳥居と、奥へ続く石段",
+          "kind": "exterior",
+          "width": 1020,
+          "height": 490
+        },
+        {
+          "path": "/_portal/vshops/tri-life-325/s04.jpg",
+          "what": "石造りの狛犬のアップ",
+          "kind": "exterior",
+          "width": 1020,
+          "height": 490
+        },
+        {
+          "path": "/_portal/vshops/tri-life-325/s05.jpg",
+          "what": "木立の中の石の鳥居と注連縄、石灯籠",
+          "kind": "exterior",
+          "width": 1020,
+          "height": 490
+        },
+        {
+          "path": "/_portal/vshops/tri-life-325/s06.jpg",
+          "what": "山に囲まれた水面と、稜線の上の太陽",
+          "kind": "view",
+          "width": 1020,
+          "height": 490
+        },
+        {
+          "path": "/_portal/vshops/tri-life-325/s07.jpg",
+          "what": "岩肌を水が流れ落ちる滝",
+          "kind": "view",
+          "width": 1020,
+          "height": 490
+        }
+      ],
+      "tags": [
+        "駐車場あり"
+      ],
+      "article": {
+        "headline": "愛知県額田郡幸田町、遠望峰山の山裾にある神社。交通安全のご祈祷では車内のお祓いもおこなう",
+        "lede": "愛知県額田郡幸田町にある「猿田彦三河神社」です。三河湾国定公園の区域内、遠望峰山の北側の山裾に社があります。猿田彦大神は、瓊瓊杵尊が天降りされる際に天の八衢で出迎え、高千穂の峰へ案内した神様です。",
+        "sections": [
+          {
+            "heading": "山裾の立地と境内",
+            "body": "幸田町の最高峰・遠望峰山の北側の山裾にあります。愛知県内最大級の人造池・大井池の上流には「健康の道(林道)」が通り、杉や檜を中心とした森の中に社があります。境内にはホトトギス、シュウカイドウなどの草花と、ロウバイ、サクラ、ツツジ、アジサイ、カエデなどの樹木があり。"
+          },
+          {
+            "heading": "ご祈祷と相談",
+            "body": "家内安全、無病息災、交通安全、商売繁盛、初宮参り、七五三、進学就職祈願、子宝・安産祈願、厄祓などのご祈祷を受け付けています。七五三は三歳、五歳、七歳になる年にお祝いするのが慣例です。ご祈願は9時から16時の間に随時受け付けており、予約は不要で、所要時間は概ね30分です。交通安全のご祈祷では、自動車のドアを開けて室内もお祓いします。家相・方位転居相談と姓名判断はご予約のうえでの相談で、地鎮祭や屋敷祓いなどの出張祭もおこなっています。"
+          },
+          {
+            "heading": "年中行事",
+            "body": "月次祭は毎月1日の午前10時から。歳旦祭は1月1日、春季大祭は4月吉日の午前11時から、秋季例大祭は11月29日の午前11時からです。夏越の大祓いは6月の最終日曜日の午後4時からで、上半年間の罪・穢を祓うために行われ、芽の輪くぐり神事と形代流し神事も併せて行います。師走の大祓いは12月31日の午後からで、一年間の罪・穢を祓います。"
+          },
+          {
+            "heading": "参拝のこと",
+            "body": "開社時刻は9時から17時です。ご朱印は社務所で受け付けています。おみくじを結ぶための紐があります。"
+          }
+        ],
+        "menus": [
+          {
+            "name": "家内安全"
+          },
+          {
+            "name": "無病息災"
+          },
+          {
+            "name": "交通安全"
+          },
+          {
+            "name": "商売繁盛"
+          },
+          {
+            "name": "初宮参り"
+          },
+          {
+            "name": "七五三"
+          },
+          {
+            "name": "進学就職祈願"
+          },
+          {
+            "name": "厄祓"
+          }
+        ],
+        "sources": [
+          {
+            "label": "公式サイト",
+            "url": "https://www.sarutahiko.net/"
+          },
+          {
+            "label": "公式サイト(当神社について)",
+            "url": "https://www.sarutahiko.net/about-us.html"
+          },
+          {
+            "label": "公式サイト(年中行事)",
+            "url": "https://www.sarutahiko.net/event.html"
+          },
+          {
+            "label": "公式サイト(ご祈祷・お祓い)",
+            "url": "https://www.sarutahiko.net/prayer.html"
+          },
+          {
+            "label": "公式サイト(よくある質問)",
+            "url": "https://www.sarutahiko.net/faq.html"
+          },
+          {
+            "label": "Google マップ",
+            "url": "https://maps.google.com/?cid=5696157216703291932"
+          }
+        ],
+        "checkedAt": "2026-11-02"
+      }
+    },
+    {
+      "id": "li0123",
+      "vertical": "life",
+      "category": "shrine-temple",
+      "name": "祖父江高野山 永張寺",
+      "pref": "aichi",
+      "cityName": "稲沢市",
+      "address": "愛知県稲沢市祖父江町祖父江中屋敷135",
+      "lat": 35.2640831,
+      "lng": 136.7228943,
+      "phone": "0587-74-7820",
+      "mapUrl": "https://maps.google.com/?cid=17797339193385037281",
+      "image": "/_portal/vshops/tri-life-330/g04.jpg",
+      "images": [
+        "/_portal/vshops/tri-life-330/g04.jpg",
+        "/_portal/vshops/tri-life-330/g08.jpg"
+      ],
+      "photos": [
+        {
+          "path": "/_portal/vshops/tri-life-330/g04.jpg",
+          "what": "「永張禪寺」と刻まれた石柱",
+          "kind": "exterior",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-life-330/g08.jpg",
+          "what": "畳の間に仏具と白い掛け軸が並ぶ堂内",
+          "kind": "common",
+          "width": 1200,
+          "height": 675
+        }
+      ],
+      "tags": [],
+      "article": {
+        "headline": "愛知県稲沢市祖父江町の曹洞宗の寺。本尊は馬頭観音で、尾張七福神巡りでは布袋尊を祀る",
+        "lede": "稲沢市にある「永張寺」です。尾張藩の鷹匠頭だった横井作左術門尉時久の菩提寺で、五百余年の歴史があります。本尊は馬頭観音で、脇に布袋尊が安置されています。",
+        "sections": [
+          {
+            "heading": "由緒と本尊",
+            "body": "永張寺は、尾張藩の鷹匠頭だった横井作左術門尉時久の菩提寺として五百余年の歴史をもつ曹洞宗の寺です。本尊として馬頭観音を祀り、脇には布袋尊を安置しています。"
+          },
+          {
+            "heading": "尾張七福神の布袋尊",
+            "body": "永張寺は尾張七福神巡りの寺のひとつで、祀られているのは布袋尊です。布袋和尚は七福神のなかで只一人実在した人物で、十世紀の中国の禅僧でした。布袋尊は、愛憎や貧富に縛られない広大無辺の度量の福徳を授ける菩薩です。尾張七福神巡りは、永張寺の布袋尊のほか、刈萱寺の弁財天、刈萱堂の寿老人、地泉院の大黒天、正塔院の毘沙門天、根福寺の恵比須、善光寺東海別院の福禄寿の7か所です。"
+          },
+          {
+            "heading": "場所と連絡先",
+            "body": "所在地は稲沢市祖父江町祖父江中屋敷135です。名鉄尾西線の山崎駅で下車し、徒歩約24分です。電話番号は0587-74-7820です。"
+          }
+        ],
+        "sources": [
+          {
+            "label": "稲沢市観光協会(永張寺【布袋尊】)",
+            "url": "https://www.inazawa-kankou.jp/archives/446"
+          },
+          {
+            "label": "稲沢市観光協会(尾張七福神巡り)",
+            "url": "https://www.inazawa-kankou.jp/archives/tag/%E5%B0%BE%E5%BC%B5%E4%B8%83%E7%A6%8F%E7%A5%9E%E5%B7%A1%E3%82%8A"
+          },
+          {
+            "label": "曹洞禅ナビ(曹洞宗公式 寺院ポータルサイト)",
+            "url": "https://sotozen-navi.com/detail/index_230307.html"
+          },
+          {
+            "label": "Google マップ",
+            "url": "https://maps.google.com/?cid=17797339193385037281"
+          }
+        ],
+        "checkedAt": "2026-11-02"
+      }
     }
   ]
 }

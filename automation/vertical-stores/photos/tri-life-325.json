@@ -1,0 +1,66 @@
+{
+  "key": "tri-life-325",
+  "images": [
+    {
+      "path": "/_portal/vshops/tri-life-325/s02.jpg",
+      "imageUrl": "https://www.sarutahiko.net/_src/10737/top05.jpg?v=1680842720728",
+      "pageUrl": "https://www.sarutahiko.net/",
+      "what": "白い自動車の前に立つ、祭具を持った神職",
+      "kind": "exterior",
+      "width": 1020,
+      "height": 490,
+      "source": "公式サイト"
+    },
+    {
+      "path": "/_portal/vshops/tri-life-325/s03.jpg",
+      "imageUrl": "https://www.sarutahiko.net/_src/10732/top08.jpg?v=1680842720728",
+      "pageUrl": "https://www.sarutahiko.net/",
+      "what": "石の鳥居と、奥へ続く石段",
+      "kind": "exterior",
+      "width": 1020,
+      "height": 490,
+      "source": "公式サイト"
+    },
+    {
+      "path": "/_portal/vshops/tri-life-325/s04.jpg",
+      "imageUrl": "https://www.sarutahiko.net/_src/10739/top00.jpg?v=1680842720728",
+      "pageUrl": "https://www.sarutahiko.net/",
+      "what": "石造りの狛犬のアップ",
+      "kind": "exterior",
+      "width": 1020,
+      "height": 490,
+      "source": "公式サイト"
+    },
+    {
+      "path": "/_portal/vshops/tri-life-325/s05.jpg",
+      "imageUrl": "https://www.sarutahiko.net/_src/10738/top02.jpg?v=1680842720728",
+      "pageUrl": "https://www.sarutahiko.net/",
+      "what": "木立の中の石の鳥居と注連縄、石灯籠",
+      "kind": "exterior",
+      "width": 1020,
+      "height": 490,
+      "source": "公式サイト"
+    },
+    {
+      "path": "/_portal/vshops/tri-life-325/s06.jpg",
+      "imageUrl": "https://www.sarutahiko.net/_src/10733/top06.jpg?v=1680842720728",
+      "pageUrl": "https://www.sarutahiko.net/",
+      "what": "山に囲まれた水面と、稜線の上の太陽",
+      "kind": "view",
+      "width": 1020,
+      "height": 490,
+      "source": "公式サイト"
+    },
+    {
+      "path": "/_portal/vshops/tri-life-325/s07.jpg",
+      "imageUrl": "https://www.sarutahiko.net/_src/10734/top07.jpg?v=1680842720728",
+      "pageUrl": "https://www.sarutahiko.net/",
+      "what": "岩肌を水が流れ落ちる滝",
+      "kind": "view",
+      "width": 1020,
+      "height": 490,
+      "source": "公式サイト"
+    }
+  ],
+  "note": "automation/v2/write.mjs が 2026-11-02T05:09:56.857Z に取得。店の実写だけ(AI 画像・汎用画像・地図・ロゴ・顔が大きい画像は除外)。"
+}

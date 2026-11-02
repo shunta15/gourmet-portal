@@ -1,0 +1,32 @@
+{
+  "tab": "トリニティアポ",
+  "tabEn": "tri-life",
+  "row": 325,
+  "sheet": {
+    "name": "猿田彦三河神社",
+    "address": "",
+    "url": "https://www.google.com/maps/search/?api=1&query=%E7%8C%BF%E7%94%B0%E5%BD%A6%E4%B8%89%E6%B2%B3%E7%A5%9E%E7%A4%BE%20056-462-3809%20%E3%80%92444-0103%20%E6%84%9B%E7%9F%A5%E7%9C%8C%E9%A1%8D%E7%94%B0%E9%83%A1%E5%B9%B8%E7%94%B0%E7%94%BA%E5%A4%A7%E8%8D%89%E5%A4%AA%E6%A0%B9%EF%BC%96",
+    "type": "神社",
+    "d1": "",
+    "d2": ""
+  },
+  "urlKind": "mapsApi",
+  "route": "第1段(verify-gbp.mjs)で確認済み",
+  "verdict": "一致",
+  "verdictReason": "手がかり: 電話＋住所(番地まで)。電話が一致／店名: different(シート「猿田彦三河神社」/ マップ「社務所」)／住所(シート): exact・町名・番地とも一致",
+  "place": {
+    "name": "社務所",
+    "address": "愛知県額田郡幸田町大草太根６",
+    "category": "神社",
+    "lat": 34.8736081,
+    "lng": 137.2032154,
+    "gbpUrl": "https://maps.google.com/?cid=5696157216703291932",
+    "phone": "0564-62-3809",
+    "website": "https://www.sarutahiko.net/",
+    "hours": null,
+    "reserveLinks": [],
+    "statusSignals": [],
+    "closedSignal": false
+  },
+  "fetchedAt": "2026-11-02T02:38:32.334Z"
+}

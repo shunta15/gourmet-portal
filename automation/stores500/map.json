@@ -1993,5 +1993,30 @@
     "articleId": "栞",
     "sheetName": "酔い処 味処 栞",
     "mapsUrl": "https://maps.google.com/?cid=15148870944983320503"
+  },
+  {
+    "articleId": "amusementflairBARHINNA",
+    "sheetName": "amusement flare BAR HINNA",
+    "mapsUrl": "https://maps.google.com/?cid=17111580920416646517"
+  },
+  {
+    "articleId": "だいぬき屋",
+    "sheetName": "だいぬき屋",
+    "mapsUrl": "https://maps.google.com/?cid=4744571235165585074"
+  },
+  {
+    "articleId": "やまや",
+    "sheetName": "居酒屋やまや",
+    "mapsUrl": "https://maps.google.com/?cid=1329503580026922729"
+  },
+  {
+    "articleId": "炉端居酒屋篝火",
+    "sheetName": "篝火",
+    "mapsUrl": "https://maps.google.com/?cid=10225335389183722121"
+  },
+  {
+    "articleId": "富屋酒店",
+    "sheetName": "野沢菜本舗",
+    "mapsUrl": "https://maps.google.com/?cid=8317274191570978753"
   }
 ]

@@ -4796,5 +4796,42 @@
     "articleId": "栞",
     "name": "栞",
     "tags": []
+  },
+  "r841": {
+    "articleId": "amusementflairBARHINNA",
+    "name": "amusement flair BAR HINNA",
+    "tags": []
+  },
+  "r843": {
+    "articleId": "だいぬき屋",
+    "name": "だいぬき屋",
+    "tags": [
+      {
+        "tag": "うどん",
+        "rule": "業態がシーン語彙に一致",
+        "evidence": "うどん屋（うどん）"
+      }
+    ]
+  },
+  "r839": {
+    "articleId": "やまや",
+    "name": "やまや",
+    "tags": [
+      {
+        "tag": "貸切可",
+        "rule": "記事 specs「貸切」項目が肯定",
+        "evidence": "貸切: 可"
+      }
+    ]
+  },
+  "r840": {
+    "articleId": "炉端居酒屋篝火",
+    "name": "炉端居酒屋 篝火",
+    "tags": []
+  },
+  "r842": {
+    "articleId": "富屋酒店",
+    "name": "富屋酒店",
+    "tags": []
   }
 }

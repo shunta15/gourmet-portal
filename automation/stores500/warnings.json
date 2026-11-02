@@ -3100,5 +3100,46 @@
       "営業時間が取れていない（noindex）",
       "cuisine は GBPカテゴリ"
     ]
+  },
+  "r841": {
+    "articleId": "amusementflairBARHINNA",
+    "name": "amusement flair BAR HINNA",
+    "warnings": [
+      "営業時間が取れていない（noindex）",
+      "cuisine は GBPカテゴリ"
+    ]
+  },
+  "r843": {
+    "articleId": "だいぬき屋",
+    "name": "だいぬき屋",
+    "warnings": [
+      "営業時間が取れていない（noindex）",
+      "cuisine は GBPカテゴリ"
+    ]
+  },
+  "r839": {
+    "articleId": "やまや",
+    "name": "やまや",
+    "warnings": [
+      "営業時間が取れていない（noindex）",
+      "cuisine は GBPカテゴリ"
+    ]
+  },
+  "r840": {
+    "articleId": "炉端居酒屋篝火",
+    "name": "炉端居酒屋 篝火",
+    "warnings": [
+      "営業時間が取れていない（noindex）",
+      "cuisine は GBPカテゴリ"
+    ]
+  },
+  "r842": {
+    "articleId": "富屋酒店",
+    "name": "富屋酒店",
+    "warnings": [
+      "desc は lede から事実の文を選べず、事実から作った定型文",
+      "営業時間が取れていない（noindex）",
+      "cuisine は GBPカテゴリ"
+    ]
   }
 }
