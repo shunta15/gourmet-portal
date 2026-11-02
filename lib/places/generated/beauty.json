@@ -8070,6 +8070,38 @@
         ],
         "checkedAt": "2026-11-02"
       }
+    },
+    {
+      "id": "be0111",
+      "vertical": "beauty",
+      "category": "esthetic",
+      "name": "エステティック ジュビラン MA CHERIE〜マシェリ〜",
+      "pref": "kyoto",
+      "cityName": "京都市北区",
+      "address": "京都府京都市北区紫竹西大門町15",
+      "lat": 35.0524572,
+      "lng": 135.7450972,
+      "phone": "070-1761-6269",
+      "mapUrl": "https://maps.google.com/?cid=4807574803894635308",
+      "images": [],
+      "tags": [],
+      "article": {
+        "headline": "京都市北区、紫竹西大門町にあるエステティックサロン",
+        "lede": "京都市にある「エステティック ジュビラン MA CHERIE〜マシェリ〜」です。業種はエステティックサロンで、所在地は京都府京都市北区紫竹西大門町15です。",
+        "sections": [
+          {
+            "heading": "アクセスと連絡先",
+            "body": "所在地は京都府京都市北区紫竹西大門町15です。連絡先の電話番号は070-1761-6269です。"
+          }
+        ],
+        "sources": [
+          {
+            "label": "Google マップ",
+            "url": "https://maps.google.com/?cid=4807574803894635308"
+          }
+        ],
+        "checkedAt": "2026-11-02"
+      }
     }
   ]
 }

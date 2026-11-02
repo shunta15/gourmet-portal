@@ -1,0 +1,32 @@
+{
+  "tab": "トリニティアポ",
+  "tabEn": "tri-beauty",
+  "row": 300,
+  "sheet": {
+    "name": "エステティックジュビランMACHERIE～マシェリ～",
+    "address": "",
+    "url": "https://www.google.com/maps/search/?api=1&query=%E3%82%A8%E3%82%B9%E3%83%86%E3%83%86%E3%82%A3%E3%83%83%E3%82%AF%E3%82%B8%E3%83%A5%E3%83%93%E3%83%A9%E3%83%B3MACHERIE%EF%BD%9E%E3%83%9E%E3%82%B7%E3%82%A7%E3%83%AA%EF%BD%9E%20070-1761-6269%20",
+    "type": "美容",
+    "d1": "",
+    "d2": ""
+  },
+  "urlKind": "mapsApi",
+  "route": "第1段(verify-gbp.mjs)で確認済み",
+  "verdict": "一致",
+  "verdictReason": "手がかり: 店名＋電話。電話が一致／店名: exact(シート「エステティックジュビランMACHERIE～マシェリ～」/ マップ「エステティック ジュビラン MA CHERIE〜マシェリ〜」)",
+  "place": {
+    "name": "エステティック ジュビラン MA CHERIE〜マシェリ〜",
+    "address": "京都府京都市北区紫竹西大門町１５",
+    "category": "エステティック サロン",
+    "lat": 35.0524572,
+    "lng": 135.7450972,
+    "gbpUrl": "https://maps.google.com/?cid=4807574803894635308",
+    "phone": "070-1761-6269",
+    "website": null,
+    "hours": null,
+    "reserveLinks": [],
+    "statusSignals": [],
+    "closedSignal": false
+  },
+  "fetchedAt": "2026-11-01T23:05:33.304Z"
+}

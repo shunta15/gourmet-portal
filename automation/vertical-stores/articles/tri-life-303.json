@@ -1,0 +1,84 @@
+{
+  "key": "tri-life-303",
+  "headline": "兵庫県加古川市平荘町山角にある神社。和銅6年(713)に弁財天として祭祀され、建速素盞鳴尊を主祭神に家内安全・厄除の神として崇敬されている",
+  "lede": "加古川市にある「平之荘神社」です。主祭神は建速素盞鳴尊で、配祀神は6柱です。例祭は毎年10月21日です。",
+  "sections": [
+    {
+      "heading": "由緒",
+      "body": "和銅6年(713)に弁財天として祭祀されました。建治元年(1275)には平の荘大宮若一王子権現と称し、紀州熊野から勧請されたと伝わります。中世には播磨守護の赤松則村の崇敬を受け、姫路藩主の池田公から代々五石の朱印地を受けました。明治2年(1869)に平之荘神社と改められています。"
+    },
+    {
+      "heading": "御祭神と例祭",
+      "body": "主祭神は建速素盞鳴尊(タケハヤスサノオノミコト)です。配祀神は天照皇大神、保食神、大国主大神、子守神、誉田別神、菅原道真の6柱です。家内安全・厄除の神として崇敬され、例祭は毎年10月21日に行われます。"
+    }
+  ],
+  "menus": [],
+  "tags": [],
+  "facts": [
+    {
+      "claim": "和銅6年(713)に弁財天として祭祀された",
+      "source": "https://www.hyogo-jinjacho.com/data/6315017.html",
+      "quote": "和銅6年(713)に弁財天として祭祀",
+      "checkedAt": "2026-11-02"
+    },
+    {
+      "claim": "建治元年(1275)に平の荘大宮若一王子権現と称した",
+      "source": "https://www.hyogo-jinjacho.com/data/6315017.html",
+      "quote": "建治元年(1275)平の荘大宮若一王子権現と称し",
+      "checkedAt": "2026-11-02"
+    },
+    {
+      "claim": "紀州熊野より勧請したと伝えられる",
+      "source": "https://www.hyogo-jinjacho.com/data/6315017.html",
+      "quote": "紀州熊野より勧請したと伝えられる",
+      "checkedAt": "2026-11-02"
+    },
+    {
+      "claim": "姫路藩主池田公より代々五石の朱印地を受けた",
+      "source": "https://www.hyogo-jinjacho.com/data/6315017.html",
+      "quote": "姫路藩主池田公より代々五石の朱印地を受けた",
+      "checkedAt": "2026-11-02"
+    },
+    {
+      "claim": "中世、播磨守護の赤松則村の崇敬を受けた",
+      "source": "https://www.hyogo-jinjacho.com/data/6315017.html",
+      "quote": "播磨守護・赤松則村の崇敬を受け",
+      "checkedAt": "2026-11-02"
+    },
+    {
+      "claim": "明治2年(1869)に平之荘神社と改められ、家内安全・厄除の神として崇敬される",
+      "source": "https://www.hyogo-jinjacho.com/data/6315017.html",
+      "quote": "平之荘神社と改められ、家内安全・厄除の神として崇敬される",
+      "checkedAt": "2026-11-02"
+    },
+    {
+      "claim": "主祭神は建速素盞鳴尊",
+      "source": "https://www.hyogo-jinjacho.com/data/6315017.html",
+      "quote": "建速素盞鳴尊",
+      "checkedAt": "2026-11-02"
+    },
+    {
+      "claim": "配祀神は天照皇大神・保食神・大国主大神・子守神・誉田別神・菅原道真",
+      "source": "https://www.hyogo-jinjacho.com/data/6315017.html",
+      "quote": "天照皇大神 保食神 大国主大神 子守神 誉田別神 菅原道真",
+      "checkedAt": "2026-11-02"
+    },
+    {
+      "claim": "例祭日は10月21日",
+      "source": "https://www.hyogo-jinjacho.com/data/6315017.html",
+      "quote": "10月21日",
+      "checkedAt": "2026-11-02"
+    }
+  ],
+  "sources": [
+    {
+      "label": "公式サイト",
+      "url": "https://www.hyogo-jinjacho.com/data/6315017.html"
+    },
+    {
+      "label": "Google マップ",
+      "url": "https://maps.google.com/?cid=9939819645942049237"
+    }
+  ],
+  "notes": "automation/v2/write.mjs が 2026-11-02 に claude -p --model sonnet で作成。事実の裏取り: 9/9 件(quote が出どころにあるもの)。裏取りに通らなかった facts は載せていない。"
+}

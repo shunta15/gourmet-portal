@@ -17965,6 +17965,235 @@ export const ARTICLE_STORES: Restaurant[] = [
       "沼田市"
     ],
     "featureId": "あっちゃんりんご園"
+  },
+  {
+    "id": "r822",
+    "name": "焼肉 南大門",
+    "cuisine": "焼肉店",
+    "area": "兵庫県・赤穂市",
+    "region": "hyogo",
+    "shape": "square",
+    "image": "/restaurants/teleapo-焼肉南大門/hero.jpg",
+    "heroImages": [
+      "/restaurants/teleapo-焼肉南大門/hero.jpg",
+      "/restaurants/teleapo-焼肉南大門/point1.jpg",
+      "/restaurants/teleapo-焼肉南大門/point2.jpg",
+      "/restaurants/teleapo-焼肉南大門/point3.jpg"
+    ],
+    "gallery": [
+      "/restaurants/teleapo-焼肉南大門/hero.jpg",
+      "/restaurants/teleapo-焼肉南大門/point1.jpg",
+      "/restaurants/teleapo-焼肉南大門/point2.jpg",
+      "/restaurants/teleapo-焼肉南大門/point3.jpg"
+    ],
+    "desc": "焼肉 南大門は、兵庫県赤穂市若草町１３４−３にある焼肉店である。",
+    "address": "兵庫県赤穂市若草町134-3",
+    "hours": "—（訪問前に公式確認）",
+    "closed": "—（訪問前に公式確認）",
+    "seats": "—（訪問前に公式確認）",
+    "nearest": "—",
+    "phone": "0791-25-7227",
+    "source": {
+      "label": "Google ビジネスプロフィール",
+      "url": "https://maps.google.com/?cid=15056905140229200115"
+    },
+    "body": [
+      "焼肉 南大門は、兵庫県赤穂市にあるお店です。業態は「焼肉店」、所在地は兵庫県赤穂市若草町134-3です。マチノワ編集部の特集記事では、「赤身と霜降りの薄切り肉を網で焼く」・「タレをからめた肉と野菜の盛り合わせ」などを取り上げています。",
+      "営業時間と定休日は取得できていないため、訪問前に公式の情報でご確認ください。営業時間や価格は変わることがあるため、訪問前に公式サイトやSNS、お電話でご確認ください。"
+    ],
+    "highlights": [
+      "赤身と霜降りの薄切り肉を網で焼く",
+      "タレをからめた肉と野菜の盛り合わせ",
+      "所在地と連絡先"
+    ],
+    "tags": [
+      "焼肉店",
+      "赤穂市"
+    ],
+    "featureId": "焼肉南大門"
+  },
+  {
+    "id": "r823",
+    "name": "農業レストラン フラール",
+    "cuisine": "ビュッフェ レストラン",
+    "area": "三重県・いなべ市",
+    "region": "mie",
+    "shape": "square",
+    "image": "/restaurants/teleapo-農業レストランフラール/hero.jpg",
+    "heroImages": [
+      "/restaurants/teleapo-農業レストランフラール/hero.jpg",
+      "/restaurants/teleapo-農業レストランフラール/point1.jpg",
+      "/restaurants/teleapo-農業レストランフラール/point2.jpg",
+      "/restaurants/teleapo-農業レストランフラール/point3.jpg"
+    ],
+    "gallery": [
+      "/restaurants/teleapo-農業レストランフラール/hero.jpg",
+      "/restaurants/teleapo-農業レストランフラール/point1.jpg",
+      "/restaurants/teleapo-農業レストランフラール/point2.jpg",
+      "/restaurants/teleapo-農業レストランフラール/point3.jpg"
+    ],
+    "desc": "農業レストラン フラールは、三重県いなべ市藤原町鼎3071にあるビュッフェレストランである。",
+    "address": "三重県いなべ市藤原町鼎3071",
+    "hours": "—（訪問前に公式確認）",
+    "closed": "—（訪問前に公式確認）",
+    "seats": "—（訪問前に公式確認）",
+    "nearest": "—",
+    "phone": "0594-46-6370",
+    "source": {
+      "label": "Google ビジネスプロフィール",
+      "url": "https://maps.google.com/?cid=2075974184400630403"
+    },
+    "body": [
+      "農業レストラン フラールは、三重県いなべ市にあるお店です。業態は「ビュッフェ レストラン」、所在地は三重県いなべ市藤原町鼎3071です。マチノワ編集部の特集記事では、「自家菜園と地元農家の野菜を使うビュッフェ」・「農業公園の中にある農業レストラン」などを取り上げています。",
+      "営業時間と定休日は取得できていないため、訪問前に公式の情報でご確認ください。営業時間や価格は変わることがあるため、訪問前に公式サイトやSNS、お電話でご確認ください。"
+    ],
+    "highlights": [
+      "自家菜園と地元農家の野菜を使うビュッフェ",
+      "農業公園の中にある農業レストラン",
+      "いなべ市藤原町鼎の所在地と連絡先"
+    ],
+    "tags": [
+      "ビュッフェ レストラン",
+      "いなべ市"
+    ],
+    "featureId": "農業レストランフラール"
+  },
+  {
+    "id": "r824",
+    "name": "居酒屋 神の",
+    "cuisine": "モダン居酒屋レストラン",
+    "area": "山梨県・北杜市",
+    "region": "yamanashi",
+    "shape": "square",
+    "image": "/restaurants/teleapo-居酒屋神の/hero.jpg",
+    "heroImages": [
+      "/restaurants/teleapo-居酒屋神の/hero.jpg",
+      "/restaurants/teleapo-居酒屋神の/point1.jpg",
+      "/restaurants/teleapo-居酒屋神の/point2.jpg",
+      "/restaurants/teleapo-居酒屋神の/point3.jpg"
+    ],
+    "gallery": [
+      "/restaurants/teleapo-居酒屋神の/hero.jpg",
+      "/restaurants/teleapo-居酒屋神の/point1.jpg",
+      "/restaurants/teleapo-居酒屋神の/point2.jpg",
+      "/restaurants/teleapo-居酒屋神の/point3.jpg"
+    ],
+    "desc": "居酒屋 神の は、山梨県北杜市高根町清里にあるモダン居酒屋レストランである。",
+    "address": "山梨県北杜市高根町清里3545 210",
+    "hours": "—（訪問前に公式確認）",
+    "closed": "—（訪問前に公式確認）",
+    "seats": "—（訪問前に公式確認）",
+    "nearest": "—",
+    "phone": "0551-45-6228",
+    "source": {
+      "label": "Google ビジネスプロフィール",
+      "url": "https://maps.google.com/?cid=16079373794158455153"
+    },
+    "body": [
+      "居酒屋 神のは、山梨県北杜市にあるお店です。業態は「モダン居酒屋レストラン」、所在地は山梨県北杜市高根町清里3545 210です。マチノワ編集部の特集記事では、「モダン居酒屋レストランとして営む一軒」・「北杜市高根町清里3545 210の所在地」などを取り上げています。",
+      "営業時間と定休日は取得できていないため、訪問前に公式の情報でご確認ください。営業時間や価格は変わることがあるため、訪問前に公式サイトやSNS、お電話でご確認ください。"
+    ],
+    "highlights": [
+      "モダン居酒屋レストランとして営む一軒",
+      "北杜市高根町清里3545 210の所在地",
+      "電話0551-45-6228の連絡先"
+    ],
+    "tags": [
+      "モダン居酒屋レストラン",
+      "北杜市"
+    ],
+    "featureId": "居酒屋神の"
+  },
+  {
+    "id": "r825",
+    "name": "中華そば おっさん食堂",
+    "cuisine": "ラーメン屋",
+    "area": "富山県・砺波市",
+    "region": "toyama",
+    "shape": "square",
+    "image": "/restaurants/teleapo-中華そばおっさん食堂/hero.jpg",
+    "heroImages": [
+      "/restaurants/teleapo-中華そばおっさん食堂/hero.jpg",
+      "/restaurants/teleapo-中華そばおっさん食堂/point1.jpg",
+      "/restaurants/teleapo-中華そばおっさん食堂/point2.jpg",
+      "/restaurants/teleapo-中華そばおっさん食堂/point3.jpg"
+    ],
+    "gallery": [
+      "/restaurants/teleapo-中華そばおっさん食堂/hero.jpg",
+      "/restaurants/teleapo-中華そばおっさん食堂/point1.jpg",
+      "/restaurants/teleapo-中華そばおっさん食堂/point2.jpg",
+      "/restaurants/teleapo-中華そばおっさん食堂/point3.jpg"
+    ],
+    "desc": "中華そば おっさん食堂は、富山県砺波市太郎丸1丁目9-24、日本海ビル1階にあるラーメン店である。",
+    "address": "富山県砺波市太郎丸1丁目9-24 日本海ビル 1F ルートイン砺波側",
+    "hours": "—（訪問前に公式確認）",
+    "closed": "—（訪問前に公式確認）",
+    "seats": "—（訪問前に公式確認）",
+    "nearest": "—",
+    "phone": "050-1506-9431",
+    "instagram": "https://www.instagram.com/ossansyokudou",
+    "source": {
+      "label": "Google ビジネスプロフィール",
+      "url": "https://maps.google.com/?cid=17850228400891678240"
+    },
+    "body": [
+      "中華そば おっさん食堂は、富山県砺波市にあるお店です。業態は「ラーメン屋」、所在地は富山県砺波市太郎丸1丁目9-24 日本海ビル 1F ルートイン砺波側です。マチノワ編集部の特集記事では、「店名に中華そばの名が入るラーメン店」・「日本海ビル1階、ルートイン砺波側の立地」などを取り上げています。",
+      "営業時間と定休日は取得できていないため、訪問前に公式の情報でご確認ください。営業時間や価格は変わることがあるため、訪問前に公式サイトやSNS、お電話でご確認ください。"
+    ],
+    "highlights": [
+      "店名に中華そばの名が入るラーメン店",
+      "日本海ビル1階、ルートイン砺波側の立地",
+      "電話番号がわかる砺波市のラーメン店"
+    ],
+    "tags": [
+      "ラーメン屋",
+      "砺波市"
+    ],
+    "featureId": "中華そばおっさん食堂"
+  },
+  {
+    "id": "r826",
+    "name": "Cave de Kazu",
+    "cuisine": "ワインバー",
+    "area": "神奈川県・横浜市中区",
+    "region": "kanagawa",
+    "shape": "square",
+    "image": "/restaurants/teleapo-CavedeKazu/hero.jpg",
+    "heroImages": [
+      "/restaurants/teleapo-CavedeKazu/hero.jpg",
+      "/restaurants/teleapo-CavedeKazu/point1.jpg",
+      "/restaurants/teleapo-CavedeKazu/point2.jpg"
+    ],
+    "gallery": [
+      "/restaurants/teleapo-CavedeKazu/hero.jpg",
+      "/restaurants/teleapo-CavedeKazu/point1.jpg",
+      "/restaurants/teleapo-CavedeKazu/point2.jpg"
+    ],
+    "desc": "Cave de Kazuは、神奈川県横浜市中区住吉町5-64にあるワインバーである。",
+    "address": "神奈川県横浜市中区中区 住吉町5-64 LBCROSS馬車道BLD2F",
+    "hours": "—（訪問前に公式確認）",
+    "closed": "—（訪問前に公式確認）",
+    "seats": "—（訪問前に公式確認）",
+    "nearest": "—",
+    "phone": "045-306-8885",
+    "source": {
+      "label": "Google ビジネスプロフィール",
+      "url": "https://maps.google.com/?cid=10381838660730659471"
+    },
+    "body": [
+      "Cave de Kazuは、神奈川県横浜市中区にあるお店です。業態は「ワインバー」、所在地は神奈川県横浜市中区中区 住吉町5-64 LBCROSS馬車道BLD2Fです。マチノワ編集部の特集記事では、「横浜市中区住吉町のワインバー」・「住吉町5-64のLBCROSS馬車道BLD2F」などを取り上げています。",
+      "営業時間と定休日は取得できていないため、訪問前に公式の情報でご確認ください。営業時間や価格は変わることがあるため、訪問前に公式サイトやSNS、お電話でご確認ください。"
+    ],
+    "highlights": [
+      "横浜市中区住吉町のワインバー",
+      "住吉町5-64のLBCROSS馬車道BLD2F",
+      "電話で確かめる営業日と営業時間"
+    ],
+    "tags": [
+      "ワインバー",
+      "中区"
+    ],
+    "featureId": "CavedeKazu"
   }
 ];
 
@@ -18347,7 +18576,12 @@ export const ARTICLE_STORE_FEATURE_IDS: Record<string, string> = {
   "r818": "御食事処太助",
   "r819": "LAVENTANAラベンターナ",
   "r820": "たこぼん",
-  "r821": "あっちゃんりんご園"
+  "r821": "あっちゃんりんご園",
+  "r822": "焼肉南大門",
+  "r823": "農業レストランフラール",
+  "r824": "居酒屋神の",
+  "r825": "中華そばおっさん食堂",
+  "r826": "CavedeKazu"
 };
 
 /** 特集記事ID → 店舗ID */
@@ -18729,5 +18963,10 @@ export const ARTICLE_STORE_ID_BY_FEATURE: Record<string, string> = {
   "御食事処太助": "r818",
   "LAVENTANAラベンターナ": "r819",
   "たこぼん": "r820",
-  "あっちゃんりんご園": "r821"
+  "あっちゃんりんご園": "r821",
+  "焼肉南大門": "r822",
+  "農業レストランフラール": "r823",
+  "居酒屋神の": "r824",
+  "中華そばおっさん食堂": "r825",
+  "CavedeKazu": "r826"
 };

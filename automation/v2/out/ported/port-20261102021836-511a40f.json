@@ -1,0 +1,107 @@
+{
+  "commit": "511a40ff9fac9a04b2fc4bb6ae4ffe392a056a76",
+  "source": "/Users/shunta/claude/gp-k-auto2",
+  "count": 9,
+  "added": [
+    {
+      "row": 375,
+      "name": "焼肉 南大門",
+      "key": "lk-gourmet-375",
+      "vertical": "グルメ",
+      "id": "r822",
+      "articleId": "焼肉南大門",
+      "shopUrl": "https://machinowa.tokyo/restaurant/r822",
+      "articleUrl": "https://machinowa.tokyo/feature/焼肉南大門",
+      "sheetUrl": "https://machinowa.tokyo/feature/焼肉南大門"
+    },
+    {
+      "row": 377,
+      "name": "農業レストラン フラール",
+      "key": "lk-gourmet-377",
+      "vertical": "グルメ",
+      "id": "r823",
+      "articleId": "農業レストランフラール",
+      "shopUrl": "https://machinowa.tokyo/restaurant/r823",
+      "articleUrl": "https://machinowa.tokyo/feature/農業レストランフラール",
+      "sheetUrl": "https://machinowa.tokyo/feature/農業レストランフラール"
+    },
+    {
+      "row": 378,
+      "name": "居酒屋 神の",
+      "key": "lk-gourmet-378",
+      "vertical": "グルメ",
+      "id": "r824",
+      "articleId": "居酒屋神の",
+      "shopUrl": "https://machinowa.tokyo/restaurant/r824",
+      "articleUrl": "https://machinowa.tokyo/feature/居酒屋神の",
+      "sheetUrl": "https://machinowa.tokyo/feature/居酒屋神の"
+    },
+    {
+      "row": 275,
+      "name": "離宮八幡宮",
+      "key": "tri-life-275",
+      "vertical": "くらし",
+      "id": "li0104",
+      "articleId": "li0104",
+      "shopUrl": "https://machinowa.tokyo/life/shop/li0104",
+      "articleUrl": "https://machinowa.tokyo/life/article/li0104",
+      "sheetUrl": "https://machinowa.tokyo/life/article/li0104"
+    },
+    {
+      "row": 379,
+      "name": "中華そば おっさん食堂",
+      "key": "lk-gourmet-379",
+      "vertical": "グルメ",
+      "id": "r825",
+      "articleId": "中華そばおっさん食堂",
+      "shopUrl": "https://machinowa.tokyo/restaurant/r825",
+      "articleUrl": "https://machinowa.tokyo/feature/中華そばおっさん食堂",
+      "sheetUrl": "https://machinowa.tokyo/feature/中華そばおっさん食堂"
+    },
+    {
+      "row": 293,
+      "name": "ｃａｖｅｄｅｋａｚｕ",
+      "key": "tri-gourmet-293",
+      "vertical": "グルメ",
+      "id": "r826",
+      "articleId": "CavedeKazu",
+      "shopUrl": "https://machinowa.tokyo/restaurant/r826",
+      "articleUrl": "https://machinowa.tokyo/feature/CavedeKazu",
+      "sheetUrl": "https://machinowa.tokyo/feature/CavedeKazu"
+    },
+    {
+      "row": 300,
+      "name": "エステティックジュビランMACHERIE～マシェリ～",
+      "key": "tri-beauty-300",
+      "vertical": "ビューティー",
+      "id": "be0111",
+      "articleId": null,
+      "shopUrl": "https://machinowa.tokyo/beauty/shop/be0111",
+      "articleUrl": null,
+      "sheetUrl": "https://machinowa.tokyo/beauty/shop/be0111"
+    },
+    {
+      "row": 303,
+      "name": "平之荘神社",
+      "key": "tri-life-303",
+      "vertical": "くらし",
+      "id": "li0105",
+      "articleId": "li0105",
+      "shopUrl": "https://machinowa.tokyo/life/shop/li0105",
+      "articleUrl": "https://machinowa.tokyo/life/article/li0105",
+      "sheetUrl": "https://machinowa.tokyo/life/article/li0105"
+    },
+    {
+      "row": 309,
+      "name": "久丸神社",
+      "key": "tri-life-309",
+      "vertical": "くらし",
+      "id": "li0106",
+      "articleId": "li0106",
+      "shopUrl": "https://machinowa.tokyo/life/shop/li0106",
+      "articleUrl": "https://machinowa.tokyo/life/article/li0106",
+      "sheetUrl": "https://machinowa.tokyo/life/article/li0106"
+    }
+  ],
+  "skipped": []
+}

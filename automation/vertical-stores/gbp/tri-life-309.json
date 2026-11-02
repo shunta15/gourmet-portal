@@ -1,0 +1,32 @@
+{
+  "tab": "トリニティアポ",
+  "tabEn": "tri-life",
+  "row": 309,
+  "sheet": {
+    "name": "久丸神社",
+    "address": "",
+    "url": "https://www.google.com/maps/search/?api=1&query=%E4%B9%85%E4%B8%B8%E7%A5%9E%E7%A4%BE%20090-5617-6540%20%E3%80%92441-3415%20%E6%84%9B%E7%9F%A5%E7%9C%8C%E7%94%B0%E5%8E%9F%E5%B8%82%E7%A5%9E%E6%88%B8%E7%94%BA%E8%A5%BF%E3%83%8E%E9%96%80%EF%BC%95%E2%88%92%EF%BC%98",
+    "type": "神社",
+    "d1": "",
+    "d2": ""
+  },
+  "urlKind": "mapsApi",
+  "route": "第1段(verify-gbp.mjs)で確認済み",
+  "verdict": "一致",
+  "verdictReason": "手がかり: 店名＋電話＋住所(番地まで)。電話が一致／店名: exact(シート「久丸神社」/ マップ「久丸神社」)／住所(シート): exact・町名・番地とも一致",
+  "place": {
+    "name": "久丸神社",
+    "address": "愛知県田原市神戸町西ノ門５−８",
+    "category": "神社",
+    "lat": 34.6642811,
+    "lng": 137.2762485,
+    "gbpUrl": "https://maps.google.com/?cid=14688588499269269706",
+    "phone": "090-5617-6540",
+    "website": "https://omairi.club/spots/111469",
+    "hours": null,
+    "reserveLinks": [],
+    "statusSignals": [],
+    "closedSignal": false
+  },
+  "fetchedAt": "2026-11-01T23:10:58.364Z"
+}

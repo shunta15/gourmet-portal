@@ -15817,6 +15817,388 @@
         ],
         "checkedAt": "2026-11-02"
       }
+    },
+    {
+      "id": "li0104",
+      "vertical": "life",
+      "category": "shrine-temple",
+      "name": "離宮八幡宮",
+      "pref": "kyoto",
+      "cityName": "大山崎町",
+      "address": "京都府乙訓郡大山崎町大山崎西谷21-1",
+      "lat": 34.8918134,
+      "lng": 135.6795365,
+      "phone": "075-956-0218",
+      "url": "http://rikyuhachiman.org/",
+      "website": "http://rikyuhachiman.org/",
+      "mapUrl": "https://maps.google.com/?cid=17314210182090908929",
+      "image": "/_portal/vshops/tri-life-275/g01.jpg",
+      "images": [
+        "/_portal/vshops/tri-life-275/g01.jpg",
+        "/_portal/vshops/tri-life-275/g02.jpg",
+        "/_portal/vshops/tri-life-275/g03.jpg",
+        "/_portal/vshops/tri-life-275/g04.jpg",
+        "/_portal/vshops/tri-life-275/g05.jpg",
+        "/_portal/vshops/tri-life-275/g06.jpg",
+        "/_portal/vshops/tri-life-275/g07.jpg",
+        "/_portal/vshops/tri-life-275/g08.jpg",
+        "/_portal/vshops/tri-life-275/g09.jpg",
+        "/_portal/vshops/tri-life-275/g10.jpg"
+      ],
+      "photos": [
+        {
+          "path": "/_portal/vshops/tri-life-275/g01.jpg",
+          "what": "石の鳥居の奥に石段と社殿の門が見える境内",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-life-275/g02.jpg",
+          "what": "木々に囲まれた小さな社殿と石灯籠",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 675
+        },
+        {
+          "path": "/_portal/vshops/tri-life-275/g03.jpg",
+          "what": "紫の幕と注連縄を掛けた社殿と石畳の参道",
+          "kind": "exterior",
+          "width": 800,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-life-275/g04.jpg",
+          "what": "瓦屋根の門と、離宮八幡宮の文字の提灯が下がる入口",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-life-275/g05.jpg",
+          "what": "冠をかぶった人物の銅像",
+          "kind": "exterior",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-life-275/g06.jpg",
+          "what": "紅葉の木の脇に立つ馬の像",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 899
+        },
+        {
+          "path": "/_portal/vshops/tri-life-275/g07.jpg",
+          "what": "注連縄を掛けた小さな社殿と石段",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-life-275/g08.jpg",
+          "what": "石碑と朱色の灯籠が立つ境内の一角",
+          "kind": "exterior",
+          "width": 1088,
+          "height": 1088
+        },
+        {
+          "path": "/_portal/vshops/tri-life-275/g09.jpg",
+          "what": "反り屋根の社殿と石灯籠",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 800
+        },
+        {
+          "path": "/_portal/vshops/tri-life-275/g10.jpg",
+          "what": "木立の中に並ぶ小さな社殿と石灯籠",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 800
+        }
+      ],
+      "tags": [],
+      "article": {
+        "headline": "京都府大山崎町にある神社。荏胡麻油発祥の地で、油の製造と販売の中心「油座」として栄え、春の例祭「日使頭祭」には全国の油脂業界が参拝する",
+        "lede": "京都府乙訓郡大山崎町にある「離宮八幡宮」です。貞観二年(860年)に造営された神社で、荏胡麻(えごま)油の製造と販売の中心「油座(あぶらざ)」として栄えました。現在は油の神様の神社で、毎年4月の春の例祭「日使頭祭(ひのとさい)」には全国から100社以上の油脂業界の方々が参拝します。",
+        "sections": [
+          {
+            "heading": "由緒と社殿",
+            "body": "貞観二年(860年)に造営された神社で、禁門の変(1864年)による焼失を経て、現在の社殿は昭和の初期に再建されました。荏胡麻(えごま)油発祥の地として、油の製造と販売の中心「油座」を担い栄えてきました。現在は油の神様の神社です。"
+          },
+          {
+            "heading": "春の例祭「日使頭祭」",
+            "body": "日使頭祭は毎年4月に執り行われる春の例祭です。平安時代の初めのころ、淀川の対岸にある石清水八幡宮へ神様を分けてまつるための御遷座祭として始まりました。当時は「南祭・藤祭」とも呼ばれ、葵祭(北祭)にも並ぶ大きな祭りでした。後に当宮が灯明に使う荏胡麻油の「油座」として栄えるにつれ、その時々の有力者が「日使頭(ひのかしら)」として祭を担いました。現在も地元の方々をはじめ、日本全国より100社以上の油脂業界の方々が参拝し、式典では献灯の儀・湯立の神事が行われます。"
+          },
+          {
+            "heading": "場所と問い合わせ",
+            "body": "住所は京都府乙訓郡大山崎町大山崎西谷21−1、電話は075-956-0218です。"
+          }
+        ],
+        "sources": [
+          {
+            "label": "公式サイト",
+            "url": "http://rikyuhachiman.org/"
+          },
+          {
+            "label": "公式サイト（平成の修造）",
+            "url": "http://rikyuhachiman.org/heiseishuzo.html"
+          },
+          {
+            "label": "公式サイト（日使頭祭）",
+            "url": "http://rikyuhachiman.org/hinotosai.html"
+          },
+          {
+            "label": "Google マップ",
+            "url": "https://maps.google.com/?cid=17314210182090908929"
+          }
+        ],
+        "checkedAt": "2026-11-02"
+      }
+    },
+    {
+      "id": "li0105",
+      "vertical": "life",
+      "category": "shrine-temple",
+      "name": "平之荘神社",
+      "pref": "hyogo",
+      "cityName": "加古川市",
+      "address": "兵庫県加古川市平荘町山角478",
+      "lat": 34.802754,
+      "lng": 134.874882,
+      "phone": "079-428-0073",
+      "url": "http://www.hyogo-jinjacho.com/data/6315017.html",
+      "website": "http://www.hyogo-jinjacho.com/data/6315017.html",
+      "mapUrl": "https://maps.google.com/?cid=9939819645942049237",
+      "image": "/_portal/vshops/tri-life-303/g01.jpg",
+      "images": [
+        "/_portal/vshops/tri-life-303/g01.jpg",
+        "/_portal/vshops/tri-life-303/g02.jpg",
+        "/_portal/vshops/tri-life-303/g03.jpg",
+        "/_portal/vshops/tri-life-303/g04.jpg",
+        "/_portal/vshops/tri-life-303/g05.jpg",
+        "/_portal/vshops/tri-life-303/g06.jpg",
+        "/_portal/vshops/tri-life-303/g07.jpg",
+        "/_portal/vshops/tri-life-303/g08.jpg",
+        "/_portal/vshops/tri-life-303/g09.jpg",
+        "/_portal/vshops/tri-life-303/g10.jpg"
+      ],
+      "photos": [
+        {
+          "path": "/_portal/vshops/tri-life-303/g01.jpg",
+          "what": "瓦屋根と木造の壁をもつ社殿の側面",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-life-303/g02.jpg",
+          "what": "木々の脇に玉垣と砂利の広がりが見える境内",
+          "kind": "exterior",
+          "width": 1088,
+          "height": 1088
+        },
+        {
+          "path": "/_portal/vshops/tri-life-303/g03.jpg",
+          "what": "瓦屋根の門と、その奥へ続く砂利の道",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 675
+        },
+        {
+          "path": "/_portal/vshops/tri-life-303/g04.jpg",
+          "what": "松の絵を背にした、吹き放しの木造の舞台状の建物",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-life-303/g05.jpg",
+          "what": "石段の脇に社号標が立つ参道",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-life-303/g06.jpg",
+          "what": "柱と梁が見える木造の屋根の下から望む境内",
+          "kind": "common",
+          "width": 1200,
+          "height": 675
+        },
+        {
+          "path": "/_portal/vshops/tri-life-303/g07.jpg",
+          "what": "入母屋造りの屋根をもつ社殿の側面と木立",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 541
+        },
+        {
+          "path": "/_portal/vshops/tri-life-303/g08.jpg",
+          "what": "木立を背にした、吹き放しの木造の建物",
+          "kind": "exterior",
+          "width": 675,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-life-303/g09.jpg",
+          "what": "石段の上に建つ瓦屋根の拝殿と玉垣",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-life-303/g10.jpg",
+          "what": "板張りの床に絵馬や額が並ぶ木造の建物の内部",
+          "kind": "common",
+          "width": 1200,
+          "height": 900
+        }
+      ],
+      "tags": [],
+      "article": {
+        "headline": "兵庫県加古川市平荘町山角にある神社。和銅6年(713)に弁財天として祭祀され、建速素盞鳴尊を主祭神に家内安全・厄除の神として崇敬されている",
+        "lede": "加古川市にある「平之荘神社」です。主祭神は建速素盞鳴尊で、配祀神は6柱です。例祭は毎年10月21日です。",
+        "sections": [
+          {
+            "heading": "由緒",
+            "body": "和銅6年(713)に弁財天として祭祀されました。建治元年(1275)には平の荘大宮若一王子権現と称し、紀州熊野から勧請されたと伝わります。中世には播磨守護の赤松則村の崇敬を受け、姫路藩主の池田公から代々五石の朱印地を受けました。明治2年(1869)に平之荘神社と改められています。"
+          },
+          {
+            "heading": "御祭神と例祭",
+            "body": "主祭神は建速素盞鳴尊(タケハヤスサノオノミコト)です。配祀神は天照皇大神、保食神、大国主大神、子守神、誉田別神、菅原道真の6柱です。家内安全・厄除の神として崇敬され、例祭は毎年10月21日に行われます。"
+          }
+        ],
+        "sources": [
+          {
+            "label": "公式サイト",
+            "url": "https://www.hyogo-jinjacho.com/data/6315017.html"
+          },
+          {
+            "label": "Google マップ",
+            "url": "https://maps.google.com/?cid=9939819645942049237"
+          }
+        ],
+        "checkedAt": "2026-11-02"
+      }
+    },
+    {
+      "id": "li0106",
+      "vertical": "life",
+      "category": "shrine-temple",
+      "name": "久丸神社",
+      "pref": "aichi",
+      "cityName": "田原市",
+      "address": "愛知県田原市神戸町西ノ門5-8",
+      "lat": 34.6642811,
+      "lng": 137.2762485,
+      "phone": "090-5617-6540",
+      "url": "https://omairi.club/spots/111469",
+      "website": "https://omairi.club/spots/111469",
+      "mapUrl": "https://maps.google.com/?cid=14688588499269269706",
+      "image": "/_portal/vshops/tri-life-309/g01.jpg",
+      "images": [
+        "/_portal/vshops/tri-life-309/g01.jpg",
+        "/_portal/vshops/tri-life-309/g02.jpg",
+        "/_portal/vshops/tri-life-309/g03.jpg",
+        "/_portal/vshops/tri-life-309/g04.jpg",
+        "/_portal/vshops/tri-life-309/g05.jpg",
+        "/_portal/vshops/tri-life-309/g06.jpg",
+        "/_portal/vshops/tri-life-309/g08.jpg",
+        "/_portal/vshops/tri-life-309/g09.jpg",
+        "/_portal/vshops/tri-life-309/g10.jpg"
+      ],
+      "photos": [
+        {
+          "path": "/_portal/vshops/tri-life-309/g01.jpg",
+          "what": "鳥居と石灯籠、石の柱が並ぶ砂利の境内入口",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-life-309/g02.jpg",
+          "what": "砂利の地面に立つ「下乗」の文字の白い柱",
+          "kind": "view",
+          "width": 675,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-life-309/g03.jpg",
+          "what": "狛犬が両脇に座る、瓦屋根の拝殿の正面",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-life-309/g04.jpg",
+          "what": "屋根の先がそり上がった木造の社殿",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-life-309/g05.jpg",
+          "what": "社名の額と注連縄、鈴が掛かる拝殿の軒",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-life-309/g06.jpg",
+          "what": "石灯籠の奥に見える、瓦屋根の木造の拝殿",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-life-309/g08.jpg",
+          "what": "砂利の境内に立つ大きな木",
+          "kind": "view",
+          "width": 675,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-life-309/g09.jpg",
+          "what": "注連縄と賽銭箱がある拝殿の縁",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-life-309/g10.jpg",
+          "what": "格子窓の並ぶ拝殿の側面と注連縄",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 900
+        }
+      ],
+      "tags": [],
+      "article": {
+        "headline": "愛知県田原市神戸町西ノ門にある神社。鳥居と石灯籠の奥に、瓦屋根の木造の拝殿が建つ",
+        "lede": "田原市にある「久丸神社」です。砂利を敷いた境内に鳥居と石灯籠が立ち、奥には瓦屋根の拝殿があります。拝殿の正面には社名の額と太い注連縄、鈴が掛かっています。",
+        "sections": [
+          {
+            "heading": "場所と連絡先",
+            "body": "住所は愛知県田原市神戸町西ノ門５−８、電話は090-5617-6540です。種類は神社です。住所の町名は神戸町で、境内は砂利が広がる開けた造りです。"
+          },
+          {
+            "heading": "境内の入口",
+            "body": "入口側には鳥居が立ち、そばに石灯籠と石の柱があります。掲示板も置かれています。参道の脇には「下乗」の文字が入った白い柱が立っています。地面は一面が砂利で、周りを木々が囲んでいます。"
+          },
+          {
+            "heading": "拝殿と社殿",
+            "body": "拝殿は木造で、屋根は瓦葺きです。正面の軒には「久丸神社」の額が掛かり、太い注連縄と鈴が下がっています。拝殿の前には狛犬が一対据えられ、側面には格子窓が並びます。縁の上には賽銭箱が置かれています。境内には、屋根の先がそり上がった木造の社殿も建っています。"
+          }
+        ],
+        "sources": [
+          {
+            "label": "Google マップ",
+            "url": "https://maps.google.com/?cid=14688588499269269706"
+          }
+        ],
+        "checkedAt": "2026-11-02"
+      }
     }
   ]
 }

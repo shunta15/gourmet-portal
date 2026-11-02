@@ -1908,5 +1908,30 @@
     "articleId": "あっちゃんりんご園",
     "sheetName": "あっちゃんりんご園",
     "mapsUrl": "https://maps.google.com/?cid=11261408827370474525"
+  },
+  {
+    "articleId": "焼肉南大門",
+    "sheetName": "焼肉 南大門",
+    "mapsUrl": "https://maps.google.com/?cid=15056905140229200115"
+  },
+  {
+    "articleId": "農業レストランフラール",
+    "sheetName": "農業レストラン フラール",
+    "mapsUrl": "https://maps.google.com/?cid=2075974184400630403"
+  },
+  {
+    "articleId": "居酒屋神の",
+    "sheetName": "居酒屋 神の",
+    "mapsUrl": "https://maps.google.com/?cid=16079373794158455153"
+  },
+  {
+    "articleId": "中華そばおっさん食堂",
+    "sheetName": "中華そば おっさん食堂",
+    "mapsUrl": "https://maps.google.com/?cid=17850228400891678240"
+  },
+  {
+    "articleId": "CavedeKazu",
+    "sheetName": "ｃａｖｅｄｅｋａｚｕ",
+    "mapsUrl": "https://maps.google.com/?cid=10381838660730659471"
   }
 ]

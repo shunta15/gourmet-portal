@@ -1,0 +1,32 @@
+{
+  "tab": "トリニティアポ",
+  "tabEn": "tri-life",
+  "row": 303,
+  "sheet": {
+    "name": "平之荘神社",
+    "address": "",
+    "url": "https://www.google.com/maps/search/?api=1&query=%E5%B9%B3%E4%B9%8B%E8%8D%98%E7%A5%9E%E7%A4%BE%20079-428-0073%20%E3%80%92675-1221%20%E5%85%B5%E5%BA%AB%E7%9C%8C%E5%8A%A0%E5%8F%A4%E5%B7%9D%E5%B8%82%E5%B9%B3%E8%8D%98%E7%94%BA%E5%B1%B1%E8%A7%92%EF%BC%94%EF%BC%97%EF%BC%98",
+    "type": "神社",
+    "d1": "",
+    "d2": ""
+  },
+  "urlKind": "mapsApi",
+  "route": "第1段(verify-gbp.mjs)で確認済み",
+  "verdict": "一致",
+  "verdictReason": "手がかり: 店名＋電話＋住所(番地まで)。電話が一致／店名: exact(シート「平之荘神社」/ マップ「平之荘神社」)／住所(シート): exact・町名・番地とも一致",
+  "place": {
+    "name": "平之荘神社",
+    "address": "兵庫県加古川市平荘町山角４７８",
+    "category": "神社",
+    "lat": 34.802754,
+    "lng": 134.874882,
+    "gbpUrl": "https://maps.google.com/?cid=9939819645942049237",
+    "phone": "079-428-0073",
+    "website": "http://www.hyogo-jinjacho.com/data/6315017.html",
+    "hours": null,
+    "reserveLinks": [],
+    "statusSignals": [],
+    "closedSignal": false
+  },
+  "fetchedAt": "2026-11-01T23:07:23.689Z"
+}
