@@ -1,0 +1,32 @@
+{
+  "tab": "トリニティアポ",
+  "tabEn": "tri-life",
+  "row": 310,
+  "sheet": {
+    "name": "羽田八幡宮",
+    "address": "",
+    "url": "https://www.google.com/maps/search/?api=1&query=%E7%BE%BD%E7%94%B0%E5%85%AB%E5%B9%A1%E5%AE%AE%20053-231-7968%20%E3%80%92441-8019%20%E6%84%9B%E7%9F%A5%E7%9C%8C%E8%B1%8A%E6%A9%8B%E5%B8%82%E8%8A%B1%E7%94%B0%E7%94%BA%E6%96%89%E8%97%A4%EF%BC%95%EF%BC%94",
+    "type": "神社",
+    "d1": "",
+    "d2": ""
+  },
+  "urlKind": "mapsApi",
+  "route": "第1段(verify-gbp.mjs)で確認済み",
+  "verdict": "一致",
+  "verdictReason": "手がかり: 店名＋電話＋住所(番地まで)。電話が一致／店名: exact(シート「羽田八幡宮」/ マップ「羽田八幡宮」)／住所(シート): exact・町名・番地とも一致",
+  "place": {
+    "name": "羽田八幡宮",
+    "address": "愛知県豊橋市花田町斉藤５４",
+    "category": "神社",
+    "lat": 34.7657004,
+    "lng": 137.3763908,
+    "gbpUrl": "https://maps.google.com/?cid=13603807768111484445",
+    "phone": "0532-31-7968",
+    "website": "https://www.hadahachiman.jp/",
+    "hours": null,
+    "reserveLinks": [],
+    "statusSignals": [],
+    "closedSignal": false
+  },
+  "fetchedAt": "2026-11-01T23:11:55.226Z"
+}

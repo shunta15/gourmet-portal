@@ -18341,6 +18341,103 @@ export const ARTICLE_STORES: Restaurant[] = [
       "個室"
     ],
     "featureId": "すし処大敷"
+  },
+  {
+    "id": "r830",
+    "name": "オー・ミリュー・ドゥ・ラヴィ",
+    "cuisine": "フランス料理",
+    "area": "富山県・南砺市",
+    "region": "toyama",
+    "shape": "square",
+    "image": "/restaurants/teleapo-オー・ミリュー・ドゥ・ラヴィ/hero.jpg",
+    "heroImages": [
+      "/restaurants/teleapo-オー・ミリュー・ドゥ・ラヴィ/hero.jpg",
+      "/restaurants/teleapo-オー・ミリュー・ドゥ・ラヴィ/point1.jpg",
+      "/restaurants/teleapo-オー・ミリュー・ドゥ・ラヴィ/point2.jpg",
+      "/restaurants/teleapo-オー・ミリュー・ドゥ・ラヴィ/point3.jpg",
+      "/restaurants/teleapo-オー・ミリュー・ドゥ・ラヴィ/point4.jpg"
+    ],
+    "gallery": [
+      "/restaurants/teleapo-オー・ミリュー・ドゥ・ラヴィ/hero.jpg",
+      "/restaurants/teleapo-オー・ミリュー・ドゥ・ラヴィ/point1.jpg",
+      "/restaurants/teleapo-オー・ミリュー・ドゥ・ラヴィ/point2.jpg",
+      "/restaurants/teleapo-オー・ミリュー・ドゥ・ラヴィ/point3.jpg",
+      "/restaurants/teleapo-オー・ミリュー・ドゥ・ラヴィ/point4.jpg"
+    ],
+    "desc": "オー・ミリュー・ドゥ・ラヴィは、富山県南砺市城端にあるフランス料理店である。",
+    "address": "富山県南砺市城端418-5",
+    "hours": "—（訪問前に公式確認）",
+    "closed": "—（訪問前に公式確認）",
+    "seats": "—（訪問前に公式確認）",
+    "nearest": "—",
+    "phone": "0763-62-2733",
+    "source": {
+      "label": "Google ビジネスプロフィール",
+      "url": "https://maps.google.com/?cid=9935783054517739205"
+    },
+    "body": [
+      "オー・ミリュー・ドゥ・ラヴィは、富山県南砺市にあるお店です。業態は「フランス料理」、所在地は富山県南砺市城端418-5です。マチノワ編集部の特集記事では、「決まりきったメニューを置かない、要望から組み立てる料理」・「野菜が主役のスタイルと、小学4年生からの料理」などを取り上げています。",
+      "営業時間と定休日は取得できていないため、訪問前に公式の情報でご確認ください。営業時間や価格は変わることがあるため、訪問前に公式サイトやSNS、お電話でご確認ください。"
+    ],
+    "highlights": [
+      "決まりきったメニューを置かない、要望から組み立てる料理",
+      "野菜が主役のスタイルと、小学4年生からの料理",
+      "ケールの野菜ジュースと、名産のワイン・カクテル",
+      "ランチとディナーの2部制、電話での予約と服装"
+    ],
+    "tags": [
+      "フランス料理",
+      "フランス料理店",
+      "南砺市"
+    ],
+    "featureId": "オー・ミリュー・ドゥ・ラヴィ"
+  },
+  {
+    "id": "r831",
+    "name": "Caputto",
+    "cuisine": "スイーツ店",
+    "area": "徳島県・鳴門市",
+    "region": "tokushima",
+    "shape": "square",
+    "image": "/restaurants/teleapo-Caputto/hero.jpg",
+    "heroImages": [
+      "/restaurants/teleapo-Caputto/hero.jpg",
+      "/restaurants/teleapo-Caputto/point1.jpg",
+      "/restaurants/teleapo-Caputto/point2.jpg",
+      "/restaurants/teleapo-Caputto/point3.jpg"
+    ],
+    "gallery": [
+      "/restaurants/teleapo-Caputto/hero.jpg",
+      "/restaurants/teleapo-Caputto/point1.jpg",
+      "/restaurants/teleapo-Caputto/point2.jpg",
+      "/restaurants/teleapo-Caputto/point3.jpg"
+    ],
+    "desc": "Caputtoは、徳島県鳴門市撫養町立岩四枚53にあるスイーツ店である。",
+    "address": "徳島県鳴門市撫養町立岩四枚53",
+    "hours": "—（訪問前に公式確認）",
+    "closed": "—（訪問前に公式確認）",
+    "seats": "—（訪問前に公式確認）",
+    "nearest": "—",
+    "phone": "088-624-7774",
+    "instagram": "https://www.instagram.com/yaki_caputto",
+    "source": {
+      "label": "Google ビジネスプロフィール",
+      "url": "https://maps.google.com/?cid=6239020971435852402"
+    },
+    "body": [
+      "Caputtoは、徳島県鳴門市にあるお店です。業態は「スイーツ店」、所在地は徳島県鳴門市撫養町立岩四枚53です。マチノワ編集部の特集記事では、「ショーケースに段ごとに並ぶケーキ」・「カウンターに並ぶ焼き菓子とシュー」などを取り上げています。",
+      "営業時間と定休日は取得できていないため、訪問前に公式の情報でご確認ください。営業時間や価格は変わることがあるため、訪問前に公式サイトやSNS、お電話でご確認ください。"
+    ],
+    "highlights": [
+      "ショーケースに段ごとに並ぶケーキ",
+      "カウンターに並ぶ焼き菓子とシュー",
+      "所在地と連絡先"
+    ],
+    "tags": [
+      "スイーツ店",
+      "鳴門市"
+    ],
+    "featureId": "Caputto"
   }
 ];
 
@@ -18731,7 +18828,9 @@ export const ARTICLE_STORE_FEATURE_IDS: Record<string, string> = {
   "r826": "CavedeKazu",
   "r827": "ShishaandBarEpi",
   "r828": "THEWINEBASE銀座～世界を旅するワインバー～",
-  "r829": "すし処大敷"
+  "r829": "すし処大敷",
+  "r830": "オー・ミリュー・ドゥ・ラヴィ",
+  "r831": "Caputto"
 };
 
 /** 特集記事ID → 店舗ID */
@@ -19121,5 +19220,7 @@ export const ARTICLE_STORE_ID_BY_FEATURE: Record<string, string> = {
   "CavedeKazu": "r826",
   "ShishaandBarEpi": "r827",
   "THEWINEBASE銀座～世界を旅するワインバー～": "r828",
-  "すし処大敷": "r829"
+  "すし処大敷": "r829",
+  "オー・ミリュー・ドゥ・ラヴィ": "r830",
+  "Caputto": "r831"
 };

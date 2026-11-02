@@ -1948,5 +1948,15 @@
     "articleId": "すし処大敷",
     "sheetName": "すし処 大敷",
     "mapsUrl": "https://maps.google.com/?cid=12131283275080528967"
+  },
+  {
+    "articleId": "オー・ミリュー・ドゥ・ラヴィ",
+    "sheetName": "オー・ミリュー・ドゥ・ラヴィ",
+    "mapsUrl": "https://maps.google.com/?cid=9935783054517739205"
+  },
+  {
+    "articleId": "Caputto",
+    "sheetName": "Caputto",
+    "mapsUrl": "https://maps.google.com/?cid=6239020971435852402"
   }
 ]

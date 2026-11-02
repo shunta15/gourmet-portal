@@ -3027,5 +3027,20 @@
       "営業時間が取れていない（noindex）",
       "cuisine は GBPカテゴリ"
     ]
+  },
+  "r830": {
+    "articleId": "オー・ミリュー・ドゥ・ラヴィ",
+    "name": "オー・ミリュー・ドゥ・ラヴィ",
+    "warnings": [
+      "営業時間が取れていない（noindex）"
+    ]
+  },
+  "r831": {
+    "articleId": "Caputto",
+    "name": "Caputto",
+    "warnings": [
+      "営業時間が取れていない（noindex）",
+      "cuisine は GBPカテゴリ"
+    ]
   }
 }

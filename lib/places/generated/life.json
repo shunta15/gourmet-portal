@@ -16566,6 +16566,476 @@
         ],
         "checkedAt": "2026-11-02"
       }
+    },
+    {
+      "id": "li0110",
+      "vertical": "life",
+      "category": "shrine-temple",
+      "name": "羽田八幡宮",
+      "pref": "aichi",
+      "cityName": "豊橋市",
+      "address": "愛知県豊橋市花田町斉藤54",
+      "lat": 34.7657004,
+      "lng": 137.3763908,
+      "phone": "0532-31-7968",
+      "url": "https://www.hadahachiman.jp/",
+      "website": "https://www.hadahachiman.jp/",
+      "mapUrl": "https://maps.google.com/?cid=13603807768111484445",
+      "image": "/_portal/vshops/tri-life-310/g01.jpg",
+      "images": [
+        "/_portal/vshops/tri-life-310/g01.jpg",
+        "/_portal/vshops/tri-life-310/g02.jpg",
+        "/_portal/vshops/tri-life-310/g03.jpg",
+        "/_portal/vshops/tri-life-310/g04.jpg",
+        "/_portal/vshops/tri-life-310/g05.jpg",
+        "/_portal/vshops/tri-life-310/g06.jpg",
+        "/_portal/vshops/tri-life-310/g07.jpg",
+        "/_portal/vshops/tri-life-310/g09.jpg",
+        "/_portal/vshops/tri-life-310/s01.jpg",
+        "/_portal/vshops/tri-life-310/s05.jpg",
+        "/_portal/vshops/tri-life-310/s15.jpg",
+        "/_portal/vshops/tri-life-310/s16.jpg",
+        "/_portal/vshops/tri-life-310/s17.jpg"
+      ],
+      "photos": [
+        {
+          "path": "/_portal/vshops/tri-life-310/g01.jpg",
+          "what": "拝殿の正面全景",
+          "kind": "exterior",
+          "width": 720,
+          "height": 720
+        },
+        {
+          "path": "/_portal/vshops/tri-life-310/g02.jpg",
+          "what": "参道と鳥居・境内遠景",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 675
+        },
+        {
+          "path": "/_portal/vshops/tri-life-310/g03.jpg",
+          "what": "大きな赤い鳥居のクローズアップ",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-life-310/g04.jpg",
+          "what": "拝殿と境内の全景",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-life-310/g05.jpg",
+          "what": "連なる朱色の鳥居",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-life-310/g06.jpg",
+          "what": "拝殿内部の様子",
+          "kind": "room",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-life-310/g07.jpg",
+          "what": "境内の鳥居と石碑・灯篭",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-life-310/g09.jpg",
+          "what": "参道と鳥居",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-life-310/s01.jpg",
+          "what": "公式OGP・拝殿正面",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 630
+        },
+        {
+          "path": "/_portal/vshops/tri-life-310/s05.jpg",
+          "what": "公式サイトの羽田八幡宮文庫の画像(門のある建物)",
+          "kind": "exterior",
+          "width": 800,
+          "height": 540
+        },
+        {
+          "path": "/_portal/vshops/tri-life-310/s15.jpg",
+          "what": "境内の鳥居と木々",
+          "kind": "exterior",
+          "width": 1280,
+          "height": 720
+        },
+        {
+          "path": "/_portal/vshops/tri-life-310/s16.jpg",
+          "what": "拝殿内部・祭壇",
+          "kind": "room",
+          "width": 1280,
+          "height": 720
+        },
+        {
+          "path": "/_portal/vshops/tri-life-310/s17.jpg",
+          "what": "絵馬掛けと注連縄を巻いた石",
+          "kind": "common",
+          "width": 1280,
+          "height": 720
+        }
+      ],
+      "tags": [
+        "駅近"
+      ],
+      "article": {
+        "headline": "愛知県豊橋市花田町の「羽田八幡宮」。白鳳年間の創立と伝わる県下筆頭の八幡宮で、10月の例祭では東三河特有の手筒花火が奉揚される",
+        "lede": "愛知県豊橋市花田町に鎮座する「羽田八幡宮」です。白鳳年間の創立と伝えられ、県下の八幡宮の筆頭となっています。主祭神は応神天皇と神功皇后です。国学者であり神職でもある羽田野敬雄らが設立した羽田八幡宮文庫の現存する建物は、国登録有形文化財です。10月の例祭では、東三河特有の大筒・手筒花火が数多く奉揚されます。",
+        "sections": [
+          {
+            "heading": "場所と参拝時間",
+            "body": "住所は愛知県豊橋市花田町斉藤54、電話は0532-31-7968です。受付時間は月曜から日曜の午前9時から午後4時半です。最寄り駅は豊橋駅（東海道新幹線・JR東海道本線・JR飯田線・名古屋鉄道）と豊橋鉄道の新豊橋駅で、豊橋駅西口から徒歩約8分、新豊橋駅から徒歩約10分です。車では豊橋駅から県道388号経由で約5分です。"
+          },
+          {
+            "heading": "由緒と境内",
+            "body": "白鳳年間の創立と伝えられています。古来、武門武将の崇敬が篤く、慶安2年には徳川幕府から社領十石の朱印状が寄せられました。歴代吉田城主の崇敬も篤い神社です。昭和42年に四級社に昇格し、県下の八幡宮の筆頭となりました。境内面積は約二千坪です。主祭神は応神天皇と神功皇后で、末社には神明社・春埜山神社・栄川稲荷社・中嶋神社があります。神明社には6社、栄川稲荷社には4社がお祀りされています。"
+          },
+          {
+            "heading": "国登録有形文化財・羽田八幡宮文庫",
+            "body": "羽田八幡宮文庫は、嘉永元（1848）年に国学者の羽田野敬雄らを中心に開設されました。水戸藩主徳川斉昭や吉田藩主松平信古らも書籍を奉納しています。平成12（2000）年には、旧羽田八幡宮文庫正門・旧羽田野家住宅母屋・旧羽田八幡宮文庫の3件が国登録有形文化財に登録されました。"
+          },
+          {
+            "heading": "祭典・行事・ご祈祷",
+            "body": "10月の例祭では、東三河特有の大筒・手筒花火が数多く奉揚されます。例大祭（羽田祭）は豊橋三大祭のひとつです。毎月1・5・11・15・21・25日の午前7時半頃から、境内参道で朝市が開かれます。ご祈祷は社頭で毎日受け付けており、年中無休です。予約は不要です。家内安全・初宮・厄除・車祓・七五三・安産・合格祈願などのご祈祷があります。"
+          }
+        ],
+        "sources": [
+          {
+            "label": "公式サイト",
+            "url": "https://www.hadahachiman.jp/"
+          },
+          {
+            "label": "公式サイト（アクセス）",
+            "url": "https://www.hadahachiman.jp/access/"
+          },
+          {
+            "label": "公式サイト（ご参拝）",
+            "url": "https://www.hadahachiman.jp/visit/"
+          },
+          {
+            "label": "公式サイト（ご祈祷）",
+            "url": "https://www.hadahachiman.jp/prayer/"
+          },
+          {
+            "label": "公式サイト（祭典行事）",
+            "url": "https://www.hadahachiman.jp/annual/"
+          },
+          {
+            "label": "Google マップ",
+            "url": "https://maps.google.com/?cid=13603807768111484445"
+          }
+        ],
+        "checkedAt": "2026-11-02"
+      }
+    },
+    {
+      "id": "li0111",
+      "vertical": "life",
+      "category": "shrine-temple",
+      "name": "悲田院",
+      "pref": "kyoto",
+      "cityName": "京都市東山区",
+      "address": "京都府京都市東山区泉涌寺山内町35",
+      "lat": 34.9794027,
+      "lng": 135.7769744,
+      "phone": "075-561-8781",
+      "url": "https://www.mitera.org/about/temple",
+      "website": "https://www.mitera.org/about/temple",
+      "mapUrl": "https://maps.google.com/?cid=16864649287071046399",
+      "image": "/_portal/vshops/tri-life-319/g01.jpg",
+      "images": [
+        "/_portal/vshops/tri-life-319/g01.jpg",
+        "/_portal/vshops/tri-life-319/g02.jpg",
+        "/_portal/vshops/tri-life-319/g03.jpg",
+        "/_portal/vshops/tri-life-319/g05.jpg",
+        "/_portal/vshops/tri-life-319/g06.jpg",
+        "/_portal/vshops/tri-life-319/g08.jpg",
+        "/_portal/vshops/tri-life-319/g09.jpg"
+      ],
+      "photos": [
+        {
+          "path": "/_portal/vshops/tri-life-319/g01.jpg",
+          "what": "赤い提灯が下がる堂の外観",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-life-319/g02.jpg",
+          "what": "瓦屋根の堂と前庭の外観",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 675
+        },
+        {
+          "path": "/_portal/vshops/tri-life-319/g03.jpg",
+          "what": "朱色の門と石敷きの参道",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-life-319/g05.jpg",
+          "what": "笠と杖の姿で立つ石像が木立の中にある",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-life-319/g06.jpg",
+          "what": "光背を負う金色の坐像",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-life-319/g08.jpg",
+          "what": "赤い提灯が下がる堂の正面",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 675
+        },
+        {
+          "path": "/_portal/vshops/tri-life-319/g09.jpg",
+          "what": "木立と石畳の境内の参道",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 900
+        }
+      ],
+      "tags": [],
+      "article": {
+        "headline": "泉涌寺の山内にある寺。聖徳太子が身寄りのない老人や放置された子どもを収容する施設を造ったのが始まりと伝わり、本尊は阿弥陀如来",
+        "lede": "京都市東山区にある「悲田院」(ひでんいん)です。泉涌寺の山内に建つ寺で、聖徳太子が身寄りのない老人や放置された子どもを収容する施設を造ったのが始まりと伝わります。本尊は阿弥陀如来で、寺宝に快慶作と伝わる宝冠阿弥陀如来坐禅像があります。",
+        "sections": [
+          {
+            "heading": "施設から勅願寺へ",
+            "body": "始まりは、聖徳太子が身寄りのない老人や放置された子どもを収容する施設を造ったことと伝わります。延慶元年(1308)に無人和尚が一条安居院に再興し、四宗兼学の寺としました。後花園天皇はこの寺を勅願寺とし、崩御の際には当寺で葬儀と荼毘が行われました。以後、住職は代々天皇の綸旨を賜り、紫衣参内が許されました。"
+          },
+          {
+            "heading": "現在地への移建",
+            "body": "正保3年(1646)、高槻城主の永井直清が現在地に移建し、如周和尚を迎えて住持としました。その後、明治18年(1885)に塔頭の寿命院と合併して再興されました。所在地は京都府京都市東山区泉涌寺山内町35、電話は075-561-8781です。"
+          },
+          {
+            "heading": "本尊と寺宝",
+            "body": "本尊は阿弥陀如来です。寺宝には、快慶作と伝わる宝冠阿弥陀如来坐禅像と逆手の阿弥陀如来立像があります。このほか、土佐光起・光成などの土佐派と橋本関雪の襖絵があります。悲田院の毘沙門天は除災招福の仏として広く信仰されています。"
+          }
+        ],
+        "sources": [
+          {
+            "label": "公式サイト(山内寺院)",
+            "url": "https://mitera.org/about/temple"
+          },
+          {
+            "label": "公式サイト(泉涌寺の歴史)",
+            "url": "https://mitera.org/about/story"
+          },
+          {
+            "label": "Google マップ",
+            "url": "https://maps.google.com/?cid=16864649287071046399"
+          }
+        ],
+        "checkedAt": "2026-11-02"
+      }
+    },
+    {
+      "id": "li0112",
+      "vertical": "life",
+      "category": "shrine-temple",
+      "name": "遣迎山 浄土院 雲心寺",
+      "pref": "aichi",
+      "cityName": "名古屋市熱田区",
+      "address": "愛知県名古屋市熱田区尾頭町3-19",
+      "lat": 35.1349528,
+      "lng": 136.9000246,
+      "phone": "052-671-3570",
+      "url": "https://unshinji.or.jp/",
+      "website": "https://unshinji.or.jp/",
+      "mapUrl": "https://maps.google.com/?cid=9112221308609659508",
+      "image": "/_portal/vshops/tri-life-320/g01.jpg",
+      "images": [
+        "/_portal/vshops/tri-life-320/g01.jpg",
+        "/_portal/vshops/tri-life-320/g02.jpg",
+        "/_portal/vshops/tri-life-320/g03.jpg",
+        "/_portal/vshops/tri-life-320/g04.jpg",
+        "/_portal/vshops/tri-life-320/g05.jpg",
+        "/_portal/vshops/tri-life-320/g06.jpg",
+        "/_portal/vshops/tri-life-320/g07.jpg",
+        "/_portal/vshops/tri-life-320/g09.jpg",
+        "/_portal/vshops/tri-life-320/g10.jpg",
+        "/_portal/vshops/tri-life-320/s01.jpg",
+        "/_portal/vshops/tri-life-320/s02.jpg",
+        "/_portal/vshops/tri-life-320/s11.jpg"
+      ],
+      "photos": [
+        {
+          "path": "/_portal/vshops/tri-life-320/g01.jpg",
+          "what": "白壁の二層の門の外観",
+          "kind": "exterior",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-life-320/g02.jpg",
+          "what": "紫の幕が掛かる木の扉の建物と緑の葉",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 675
+        },
+        {
+          "path": "/_portal/vshops/tri-life-320/g03.jpg",
+          "what": "木の扁額が掛かる門の木組み",
+          "kind": "exterior",
+          "width": 750,
+          "height": 562
+        },
+        {
+          "path": "/_portal/vshops/tri-life-320/g04.jpg",
+          "what": "松の木と木造の門が見える境内",
+          "kind": "exterior",
+          "width": 554,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-life-320/g05.jpg",
+          "what": "屋根付きの木造の長い廊下と庭",
+          "kind": "common",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-life-320/g06.jpg",
+          "what": "金色の仏像と飾りが並ぶ堂内",
+          "kind": "common",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-life-320/g07.jpg",
+          "what": "石の塔が立つ庭",
+          "kind": "common",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-life-320/g09.jpg",
+          "what": "桜と花壇が並ぶ石畳の参道",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-life-320/g10.jpg",
+          "what": "幟と桜、紫の幕が掛かる小さな堂",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-life-320/s01.jpg",
+          "what": "緑の木々に囲まれた参道",
+          "kind": "exterior",
+          "width": 1280,
+          "height": 836
+        },
+        {
+          "path": "/_portal/vshops/tri-life-320/s02.jpg",
+          "what": "畳敷きの広い堂内と正面の仏壇",
+          "kind": "common",
+          "width": 1280,
+          "height": 600
+        },
+        {
+          "path": "/_portal/vshops/tri-life-320/s11.jpg",
+          "what": "木々と庭石が見える庭",
+          "kind": "exterior",
+          "width": 1280,
+          "height": 836
+        }
+      ],
+      "tags": [
+        "体験あり"
+      ],
+      "article": {
+        "headline": "名古屋市熱田区尾頭町にある浄土宗の寺院。本尊の阿弥陀如来坐像は昭和32年に名古屋市文化財の指定を受け、名古屋の三大仏の一つに数えられる。",
+        "lede": "名古屋市熱田区にある「遣迎山浄土院 雲心寺」です。元文4年（1739年）に開基された浄土宗の寺院で、本尊の阿弥陀如来坐像は名古屋の三大仏の一つに数えられます。寺院・斎場・納骨堂・認定こども園を運営しています。",
+        "sections": [
+          {
+            "heading": "本尊",
+            "body": "本尊は丈六尺阿弥陀如来坐像（木造寄木造）で、座像の高さは約2.4メートルです。建中寺の大基上人の発願により、京都の仏師山本茂祐が文久3年（1863年）に製作しました。寄木造りの像に金箔をほどこしています。昭和32年に名古屋市文化財の指定を受け、興正寺の大日如来像、栄国寺の阿弥陀如来像と並び、名古屋の三大仏の一つに数えられます。"
+          },
+          {
+            "heading": "本堂と山門",
+            "body": "本堂は京都・法然院を模したつくりで、本尊を安置する棟と参拝する棟が分かれています。明治19年に改築されました。山門（鐘楼門）は本瓦葺き二層建てで、梵鐘を吊る建物でもあり、楼上には十六羅漢が安置されています。"
+          },
+          {
+            "heading": "年間行事と定例行事",
+            "body": "1月の修正会・新年祈願にはじまり、3月の春彼岸・放生会、4月の花まつり、8月の大施餓鬼会・お盆（棚経）・精霊送り、9月の秋彼岸・放生会、12月の成道会・除夜の鐘までが年間行事です。月命日回向は毎月8日と毎月第三土曜日、法話の集いは毎月8日、写経会は毎月第三土曜日です。"
+          },
+          {
+            "heading": "勝軍地蔵と霊場",
+            "body": "勝軍地蔵は、身体に甲冑を着け軍馬にまたがった姿の地蔵菩薩で、地蔵菩薩としては大変めずらしい姿です。必勝祈願の「勝守り」を求めることができます。大名古屋十二支恵方寺の第七番霊場として、午年の守り本尊である勢至菩薩を安置しました。"
+          }
+        ],
+        "menus": [
+          {
+            "name": "納骨堂"
+          },
+          {
+            "name": "写経会"
+          },
+          {
+            "name": "法話の集い"
+          },
+          {
+            "name": "月命日回向"
+          },
+          {
+            "name": "勝守り"
+          }
+        ],
+        "sources": [
+          {
+            "label": "公式サイト",
+            "url": "https://unshinji.or.jp/"
+          },
+          {
+            "label": "公式サイト(歴史)",
+            "url": "https://unshinji.or.jp/history/"
+          },
+          {
+            "label": "公式サイト(基本情報)",
+            "url": "https://unshinji.or.jp/information/"
+          },
+          {
+            "label": "公式サイト(雲心寺について)",
+            "url": "https://unshinji.or.jp/aboutus/"
+          },
+          {
+            "label": "公式サイト(年間行事)",
+            "url": "https://unshinji.or.jp/event/"
+          },
+          {
+            "label": "Google マップ",
+            "url": "https://maps.google.com/?cid=9112221308609659508"
+          }
+        ],
+        "checkedAt": "2026-11-02"
+      }
     }
   ]
 }

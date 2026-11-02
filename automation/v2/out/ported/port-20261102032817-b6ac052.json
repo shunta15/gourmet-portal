@@ -1,0 +1,63 @@
+{
+  "commit": "b6ac0521d6c7b55f0858ce9502ada46e1daf0070",
+  "source": "/Users/shunta/claude/gp-k-auto2",
+  "count": 5,
+  "added": [
+    {
+      "row": 376,
+      "name": "オー・ミリュー・ドゥ・ラヴィ",
+      "key": "lk-gourmet-376",
+      "vertical": "グルメ",
+      "id": "r830",
+      "articleId": "オー・ミリュー・ドゥ・ラヴィ",
+      "shopUrl": "https://machinowa.tokyo/restaurant/r830",
+      "articleUrl": "https://machinowa.tokyo/feature/オー・ミリュー・ドゥ・ラヴィ",
+      "sheetUrl": "https://machinowa.tokyo/feature/オー・ミリュー・ドゥ・ラヴィ"
+    },
+    {
+      "row": 380,
+      "name": "Caputto",
+      "key": "lk-gourmet-380",
+      "vertical": "グルメ",
+      "id": "r831",
+      "articleId": "Caputto",
+      "shopUrl": "https://machinowa.tokyo/restaurant/r831",
+      "articleUrl": "https://machinowa.tokyo/feature/Caputto",
+      "sheetUrl": "https://machinowa.tokyo/feature/Caputto"
+    },
+    {
+      "row": 310,
+      "name": "羽田八幡宮",
+      "key": "tri-life-310",
+      "vertical": "くらし",
+      "id": "li0110",
+      "articleId": "li0110",
+      "shopUrl": "https://machinowa.tokyo/life/shop/li0110",
+      "articleUrl": "https://machinowa.tokyo/life/article/li0110",
+      "sheetUrl": "https://machinowa.tokyo/life/article/li0110"
+    },
+    {
+      "row": 319,
+      "name": "悲田院",
+      "key": "tri-life-319",
+      "vertical": "くらし",
+      "id": "li0111",
+      "articleId": "li0111",
+      "shopUrl": "https://machinowa.tokyo/life/shop/li0111",
+      "articleUrl": "https://machinowa.tokyo/life/article/li0111",
+      "sheetUrl": "https://machinowa.tokyo/life/article/li0111"
+    },
+    {
+      "row": 320,
+      "name": "雲心寺",
+      "key": "tri-life-320",
+      "vertical": "くらし",
+      "id": "li0112",
+      "articleId": "li0112",
+      "shopUrl": "https://machinowa.tokyo/life/shop/li0112",
+      "articleUrl": "https://machinowa.tokyo/life/article/li0112",
+      "sheetUrl": "https://machinowa.tokyo/life/article/li0112"
+    }
+  ],
+  "skipped": []
+}

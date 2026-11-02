@@ -1,0 +1,32 @@
+{
+  "tab": "トリニティアポ",
+  "tabEn": "tri-life",
+  "row": 319,
+  "sheet": {
+    "name": "悲田院",
+    "address": "",
+    "url": "https://www.google.com/maps/search/?api=1&query=%E6%82%B2%E7%94%B0%E9%99%A2%20075-561-8781%20%E3%80%92605-0977%20%E4%BA%AC%E9%83%BD%E5%BA%9C%E4%BA%AC%E9%83%BD%E5%B8%82%E6%9D%B1%E5%B1%B1%E5%8C%BA%E6%B3%89%E6%B6%8C%E5%AF%BA%E5%B1%B1%E5%86%85%E7%94%BA%EF%BC%93%EF%BC%95",
+    "type": "寺",
+    "d1": "",
+    "d2": ""
+  },
+  "urlKind": "mapsApi",
+  "route": "第1段(verify-gbp.mjs)で確認済み",
+  "verdict": "一致",
+  "verdictReason": "手がかり: 店名＋電話＋住所(番地まで)。電話が一致／店名: exact(シート「悲田院」/ マップ「悲田院」)／住所(シート): exact・町名・番地とも一致",
+  "place": {
+    "name": "悲田院",
+    "address": "京都府京都市東山区泉涌寺山内町３５",
+    "category": "仏教寺院",
+    "lat": 34.9794027,
+    "lng": 135.7769744,
+    "gbpUrl": "https://maps.google.com/?cid=16864649287071046399",
+    "phone": "075-561-8781",
+    "website": "https://www.mitera.org/about/temple",
+    "hours": null,
+    "reserveLinks": [],
+    "statusSignals": [],
+    "closedSignal": false
+  },
+  "fetchedAt": "2026-11-01T23:19:41.081Z"
+}

@@ -1,0 +1,75 @@
+{
+  "key": "tri-life-319",
+  "images": [
+    {
+      "path": "/_portal/vshops/tri-life-319/g01.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9RHE1F8UWqmO16BX6GC2HewNjIN1wjFbXQ1N_-WbcOohg5pMgcmelcBpYrG4dD7Fe3b81je3rYxIfP7-Y7rCREWskkJKcXUyecUEO5Obf7X8a5YW46r8_LNKfLw-7qtCq5n36Gv=s1200",
+      "pageUrl": "https://maps.google.com/?cid=16864649287071046399",
+      "what": "赤い提灯が下がる堂の外観",
+      "kind": "exterior",
+      "width": 1200,
+      "height": 900,
+      "source": "Google マップ"
+    },
+    {
+      "path": "/_portal/vshops/tri-life-319/g02.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9RDpHad_u4TsEK1E-t2OwoJlgTZtIXcDScx5gfahmGt0W2pp17sSTceaHBOw1Ri-anx3NNlfemf6eRW1Maor9g1mDUyrwuTjfW2p1Pb0xmUmkkdHRHq7ucOkK4mQOgRqso7gnGT=s1200",
+      "pageUrl": "https://maps.google.com/?cid=16864649287071046399",
+      "what": "瓦屋根の堂と前庭の外観",
+      "kind": "exterior",
+      "width": 1200,
+      "height": 675,
+      "source": "Google マップ"
+    },
+    {
+      "path": "/_portal/vshops/tri-life-319/g03.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9SasOepqj3t_bKKi93U6U49kLnt5g9eYBHx8HtT99-wZX1V12m2HzuAtCQcaIzBAVu6vsrQ77PpiKIemQtKCB1CHgRi9nSQJF7R41FUljGL8N9G6ZqxsGDR7ezN1TvTXWyIIk8=s1200",
+      "pageUrl": "https://maps.google.com/?cid=16864649287071046399",
+      "what": "朱色の門と石敷きの参道",
+      "kind": "exterior",
+      "width": 1200,
+      "height": 900,
+      "source": "Google マップ"
+    },
+    {
+      "path": "/_portal/vshops/tri-life-319/g05.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9T0u3WhRCkDg6WZSzm2K23e4G6TuEwRvE-nBZfmq8XuSJXbGiWQQen8P5LAKPUxkTj6c-rDy-sZ1JDmvJscLBoVe3wfIsJjHKxOmoJ-5EjSjk66dN5xru0LajECYlkTSnMY3C8=s1200",
+      "pageUrl": "https://maps.google.com/?cid=16864649287071046399",
+      "what": "笠と杖の姿で立つ石像が木立の中にある",
+      "kind": "exterior",
+      "width": 1200,
+      "height": 900,
+      "source": "Google マップ"
+    },
+    {
+      "path": "/_portal/vshops/tri-life-319/g06.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9QiBI7fu26a83ffD6QzAjYBmPjy-ylj1-r1S0pG3DMPZdlKXusmjcMSLHC-I3fWPbTXGlRU86HlGuny9vgSyOnWy4xgjtpWPYFpdN_86fWClmV31fEGSN9hM-kP1Gtp0sdz3Eqy=s1200",
+      "pageUrl": "https://maps.google.com/?cid=16864649287071046399",
+      "what": "光背を負う金色の坐像",
+      "width": 900,
+      "height": 1200,
+      "source": "Google マップ"
+    },
+    {
+      "path": "/_portal/vshops/tri-life-319/g08.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9SpzBlFnT-WSrltopW4bD0Q04AmAe93fNaWqVjHc_3oQFZ69PbQQu2uyrVMyE6O7iN1tE64dc92ooaZcgS7h_AYJtoNLlVKp1fmKTv8TUCpGOXzYQRv7Ojje-oysh9QejNTh8G67A=s1200",
+      "pageUrl": "https://maps.google.com/?cid=16864649287071046399",
+      "what": "赤い提灯が下がる堂の正面",
+      "kind": "exterior",
+      "width": 1200,
+      "height": 675,
+      "source": "Google マップ"
+    },
+    {
+      "path": "/_portal/vshops/tri-life-319/g09.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9Q5sQDqYXJ8FSc3J7vkI3WivRuuxOhMraJLuLMAPIWl8cjSda92qtEILuf6i9FFLn1bT81QjDH87cTDdLNcRaVr4HCAPD7SlP795Nret-520gHlv9nkbpfEs_ycIPdXdvTxdTQb=s1200",
+      "pageUrl": "https://maps.google.com/?cid=16864649287071046399",
+      "what": "木立と石畳の境内の参道",
+      "kind": "exterior",
+      "width": 1200,
+      "height": 900,
+      "source": "Google マップ"
+    }
+  ],
+  "note": "automation/v2/write.mjs が 2026-11-02T03:28:04.759Z に取得。店の実写だけ(AI 画像・汎用画像・地図・ロゴ・顔が大きい画像は除外)。"
+}

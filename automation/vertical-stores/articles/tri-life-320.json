@@ -1,0 +1,273 @@
+{
+  "key": "tri-life-320",
+  "headline": "名古屋市熱田区尾頭町にある浄土宗の寺院。本尊の阿弥陀如来坐像は昭和32年に名古屋市文化財の指定を受け、名古屋の三大仏の一つに数えられる。",
+  "lede": "名古屋市熱田区にある「遣迎山浄土院 雲心寺」です。元文4年（1739年）に開基された浄土宗の寺院で、本尊の阿弥陀如来坐像は名古屋の三大仏の一つに数えられます。寺院・斎場・納骨堂・認定こども園を運営しています。",
+  "sections": [
+    {
+      "heading": "本尊",
+      "body": "本尊は丈六尺阿弥陀如来坐像（木造寄木造）で、座像の高さは約2.4メートルです。建中寺の大基上人の発願により、京都の仏師山本茂祐が文久3年（1863年）に製作しました。寄木造りの像に金箔をほどこしています。昭和32年に名古屋市文化財の指定を受け、興正寺の大日如来像、栄国寺の阿弥陀如来像と並び、名古屋の三大仏の一つに数えられます。"
+    },
+    {
+      "heading": "本堂と山門",
+      "body": "本堂は京都・法然院を模したつくりで、本尊を安置する棟と参拝する棟が分かれています。明治19年に改築されました。山門（鐘楼門）は本瓦葺き二層建てで、梵鐘を吊る建物でもあり、楼上には十六羅漢が安置されています。"
+    },
+    {
+      "heading": "年間行事と定例行事",
+      "body": "1月の修正会・新年祈願にはじまり、3月の春彼岸・放生会、4月の花まつり、8月の大施餓鬼会・お盆（棚経）・精霊送り、9月の秋彼岸・放生会、12月の成道会・除夜の鐘までが年間行事です。月命日回向は毎月8日と毎月第三土曜日、法話の集いは毎月8日、写経会は毎月第三土曜日です。"
+    },
+    {
+      "heading": "勝軍地蔵と霊場",
+      "body": "勝軍地蔵は、身体に甲冑を着け軍馬にまたがった姿の地蔵菩薩で、地蔵菩薩としては大変めずらしい姿です。必勝祈願の「勝守り」を求めることができます。大名古屋十二支恵方寺の第七番霊場として、午年の守り本尊である勢至菩薩を安置しました。"
+    }
+  ],
+  "menus": [
+    {
+      "name": "納骨堂"
+    },
+    {
+      "name": "写経会"
+    },
+    {
+      "name": "法話の集い"
+    },
+    {
+      "name": "月命日回向"
+    },
+    {
+      "name": "勝守り"
+    }
+  ],
+  "tags": [
+    {
+      "tag": "体験あり",
+      "factIndex": 10
+    }
+  ],
+  "facts": [
+    {
+      "claim": "元文4年（1739年）開基",
+      "source": "https://unshinji.or.jp/information/",
+      "quote": "開 基 元文4年(1739年）",
+      "checkedAt": "2026-11-02"
+    },
+    {
+      "claim": "浄土宗の寺院",
+      "source": "https://unshinji.or.jp/aboutus/",
+      "quote": "浄土宗遣迎山浄土院雲心寺は",
+      "checkedAt": "2026-11-02"
+    },
+    {
+      "claim": "本尊の阿弥陀如来坐像は昭和32年に名古屋市文化財の指定を受けた",
+      "source": "https://unshinji.or.jp/aboutus/",
+      "quote": "昭和三十二年には、名古屋市文化財の指定を受け",
+      "checkedAt": "2026-11-02"
+    },
+    {
+      "claim": "本尊は名古屋の三大仏の一つに数えられる",
+      "source": "https://unshinji.or.jp/aboutus/",
+      "quote": "名古屋の三大仏のひとつとされています",
+      "checkedAt": "2026-11-02"
+    },
+    {
+      "claim": "京都の仏師山本茂祐が文久3年（1863年）に製作",
+      "source": "https://unshinji.or.jp/aboutus/",
+      "quote": "京都の仏師山本茂祐が製作し、文久三年（1863年）",
+      "checkedAt": "2026-11-02"
+    },
+    {
+      "claim": "本堂は京都・法然院を模したつくり",
+      "source": "https://unshinji.or.jp/aboutus/",
+      "quote": "京都・法然院を模したつくりで",
+      "checkedAt": "2026-11-02"
+    },
+    {
+      "claim": "山門（鐘楼門）は本瓦葺き二層建てで梵鐘を吊る建物でもある",
+      "source": "https://unshinji.or.jp/aboutus/",
+      "quote": "本瓦葺き二層で、梵鐘を吊る建物でもあり",
+      "checkedAt": "2026-11-02"
+    },
+    {
+      "claim": "山門の楼上に十六羅漢を安置",
+      "source": "https://unshinji.or.jp/aboutus/",
+      "quote": "楼上に十六羅漢を安置しております",
+      "checkedAt": "2026-11-02"
+    },
+    {
+      "claim": "寺院・斎場・納骨堂・認定こども園を運営",
+      "source": "https://unshinji.or.jp/information/",
+      "quote": "寺院・斎場・納骨堂・認定こども園の運営",
+      "checkedAt": "2026-11-02"
+    },
+    {
+      "claim": "拝観時間は9時から17時",
+      "source": "https://unshinji.or.jp/",
+      "quote": "拝観時間：9時～17時",
+      "checkedAt": "2026-11-02"
+    },
+    {
+      "claim": "写経会が毎月第三土曜日に開かれている",
+      "source": "https://unshinji.or.jp/event/",
+      "quote": "写経会（毎月第三土曜日）",
+      "checkedAt": "2026-11-02"
+    },
+    {
+      "claim": "法話の集いが毎月8日に開かれている",
+      "source": "https://unshinji.or.jp/event/",
+      "quote": "法話の集い（毎月8日）",
+      "checkedAt": "2026-11-02"
+    },
+    {
+      "claim": "必勝祈願の「勝守り」を求めることができる",
+      "source": "https://unshinji.or.jp/aboutus/",
+      "quote": "必勝祈願の「勝守り」をお求めできます",
+      "checkedAt": "2026-11-02"
+    },
+    {
+      "claim": "8月に大施餓鬼会がある",
+      "source": "https://unshinji.or.jp/event/",
+      "quote": "8月 大施餓鬼会",
+      "checkedAt": "2026-11-02"
+    },
+    {
+      "claim": "12月に成道会と除夜の鐘がある",
+      "source": "https://unshinji.or.jp/event/",
+      "quote": "12月 成道会\n除夜の鐘",
+      "checkedAt": "2026-11-02"
+    },
+    {
+      "claim": "大名古屋十二支恵方寺の第七番霊場である",
+      "source": "https://unshinji.or.jp/history/",
+      "quote": "大名古屋十二支恵方寺の第七番霊場として",
+      "checkedAt": "2026-11-02"
+    },
+    {
+      "claim": "本尊は丈六尺阿弥陀如来坐像（木造寄木造）",
+      "source": "https://unshinji.or.jp/aboutus/",
+      "quote": "丈六尺阿弥陀如来坐像（木造寄木造）",
+      "checkedAt": "2026-11-02"
+    },
+    {
+      "claim": "本尊は座像で高さ約2.4メートル",
+      "source": "https://unshinji.or.jp/aboutus/",
+      "quote": "実際には座像で高さ約2.4m位である",
+      "checkedAt": "2026-11-02"
+    },
+    {
+      "claim": "建中寺の大基上人の発願で製作された",
+      "source": "https://unshinji.or.jp/aboutus/",
+      "quote": "建中寺の大基上人の発願で京都の仏師山本茂祐が製作し",
+      "checkedAt": "2026-11-02"
+    },
+    {
+      "claim": "寄木造りの像に金箔をほどこしている",
+      "source": "https://unshinji.or.jp/aboutus/",
+      "quote": "寄木造りの像に金箔をほどこした見事なものである",
+      "checkedAt": "2026-11-02"
+    },
+    {
+      "claim": "興正寺の大日如来像、栄国寺の阿弥陀如来像と並び称される",
+      "source": "https://unshinji.or.jp/history/",
+      "quote": "興正寺の大日如来像、栄国寺の阿弥陀如来像と並び称されています",
+      "checkedAt": "2026-11-02"
+    },
+    {
+      "claim": "本堂は本尊を安置する棟と参拝する棟が分かれている",
+      "source": "https://unshinji.or.jp/aboutus/",
+      "quote": "ご本尊を安置する棟と、参拝する棟とが分かれています",
+      "checkedAt": "2026-11-02"
+    },
+    {
+      "claim": "本堂は明治19年に改築された",
+      "source": "https://unshinji.or.jp/aboutus/",
+      "quote": "本堂は明治19年に改築され",
+      "checkedAt": "2026-11-02"
+    },
+    {
+      "claim": "1月に修正会・新年祈願がある",
+      "source": "https://unshinji.or.jp/event/",
+      "quote": "1月 修正会・新年祈願",
+      "checkedAt": "2026-11-02"
+    },
+    {
+      "claim": "3月に春彼岸・放生会がある",
+      "source": "https://unshinji.or.jp/event/",
+      "quote": "3月 春彼岸・放生会",
+      "checkedAt": "2026-11-02"
+    },
+    {
+      "claim": "4月に花まつりがある",
+      "source": "https://unshinji.or.jp/event/",
+      "quote": "4月 花まつり",
+      "checkedAt": "2026-11-02"
+    },
+    {
+      "claim": "8月にお盆（棚経）がある",
+      "source": "https://unshinji.or.jp/event/",
+      "quote": "お盆（棚経）",
+      "checkedAt": "2026-11-02"
+    },
+    {
+      "claim": "8月に精霊送りがある",
+      "source": "https://unshinji.or.jp/event/",
+      "quote": "精霊送り",
+      "checkedAt": "2026-11-02"
+    },
+    {
+      "claim": "9月に秋彼岸・放生会がある",
+      "source": "https://unshinji.or.jp/event/",
+      "quote": "9月 秋彼岸・放生会",
+      "checkedAt": "2026-11-02"
+    },
+    {
+      "claim": "月命日回向は毎月8日・毎月第三土曜日に営まれる",
+      "source": "https://unshinji.or.jp/event/",
+      "quote": "月命日回向（毎月8日・毎月第三土曜日）",
+      "checkedAt": "2026-11-02"
+    },
+    {
+      "claim": "勝軍地蔵は身体に甲冑を着け軍馬にまたがった姿",
+      "source": "https://unshinji.or.jp/aboutus/",
+      "quote": "身体に甲冑を着け、軍馬にまたがった姿をしています",
+      "checkedAt": "2026-11-02"
+    },
+    {
+      "claim": "勝軍地蔵の姿は地蔵菩薩には大変めずらしい",
+      "source": "https://unshinji.or.jp/aboutus/",
+      "quote": "その姿は地蔵菩薩には大変めずらしく",
+      "checkedAt": "2026-11-02"
+    },
+    {
+      "claim": "午年の守り本尊である勢至菩薩を安置",
+      "source": "https://unshinji.or.jp/history/",
+      "quote": "午年の守り本尊である勢至菩薩を安置しました",
+      "checkedAt": "2026-11-02"
+    }
+  ],
+  "sources": [
+    {
+      "label": "公式サイト",
+      "url": "https://unshinji.or.jp/"
+    },
+    {
+      "label": "公式サイト(歴史)",
+      "url": "https://unshinji.or.jp/history/"
+    },
+    {
+      "label": "公式サイト(基本情報)",
+      "url": "https://unshinji.or.jp/information/"
+    },
+    {
+      "label": "公式サイト(雲心寺について)",
+      "url": "https://unshinji.or.jp/aboutus/"
+    },
+    {
+      "label": "公式サイト(年間行事)",
+      "url": "https://unshinji.or.jp/event/"
+    },
+    {
+      "label": "Google マップ",
+      "url": "https://maps.google.com/?cid=9112221308609659508"
+    }
+  ],
+  "notes": "automation/v2/write.mjs が 2026-11-02 に claude -p --model sonnet で作成。事実の裏取り: 33/33 件(quote が出どころにあるもの)。裏取りに通らなかった facts は載せていない。"
+}
