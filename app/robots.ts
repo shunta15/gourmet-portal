@@ -20,6 +20,7 @@ const PORTAL_SITEMAPS = [
  * - /admin: 管理画面（認証必須・ユーザー向け以外）をクロール拒否
  * - /api:   内部 API（インデックス不要）を拒否
  * - /agent-teams/: エージェント運用ファイル（万一公開されても）を拒否
+ * - /line/: LINE 公式アカウントから案内するオーナー向けページ（検索に出さない）を拒否
  * - サイトマップは https://machinowa.tokyo/sitemap.xml
  *   （公開スイッチ OFF のあいだはこれだけ。出力は従来と1バイトも変えない。ON のときだけ総合サイトのサイトマップを足す）
  *
@@ -32,7 +33,7 @@ export default function robots(): MetadataRoute.Robots {
       {
         userAgent: "*",
         allow: "/",
-        disallow: ["/admin/", "/api/", "/agent-teams/"],
+        disallow: ["/admin/", "/api/", "/agent-teams/", "/line/"],
       },
     ],
     sitemap: isPortalLive()
