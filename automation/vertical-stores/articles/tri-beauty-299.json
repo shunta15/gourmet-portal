@@ -1,0 +1,46 @@
+{
+  "key": "tri-beauty-299",
+  "headline": "広島市東区牛田本町にある理容店「アンダルシア」",
+  "lede": "広島市東区牛田本町にある「アンダルシア」です。理容店として営業しています。",
+  "sections": [
+    {
+      "heading": "アクセスと連絡先",
+      "body": "住所は広島県広島市東区牛田本町２丁目１０−２３ シェソワ堀尾です。電話番号は082-222-3050です。"
+    }
+  ],
+  "menus": [],
+  "tags": [],
+  "facts": [
+    {
+      "claim": "店名は「アンダルシア」",
+      "source": "https://maps.google.com/?cid=9527562584666673926",
+      "quote": "アンダルシア",
+      "checkedAt": "2026-11-02"
+    },
+    {
+      "claim": "業種は理容店",
+      "source": "https://maps.google.com/?cid=9527562584666673926",
+      "quote": "理容店",
+      "checkedAt": "2026-11-02"
+    },
+    {
+      "claim": "住所は広島県広島市東区牛田本町２丁目１０−２３ シェソワ堀尾",
+      "source": "https://maps.google.com/?cid=9527562584666673926",
+      "quote": "広島県広島市東区牛田本町２丁目１０−２３ シェソワ堀尾",
+      "checkedAt": "2026-11-02"
+    },
+    {
+      "claim": "電話番号は082-222-3050",
+      "source": "https://maps.google.com/?cid=9527562584666673926",
+      "quote": "082-222-3050",
+      "checkedAt": "2026-11-02"
+    }
+  ],
+  "sources": [
+    {
+      "label": "Google マップ",
+      "url": "https://maps.google.com/?cid=9527562584666673926"
+    }
+  ],
+  "notes": "automation/v2/write.mjs が 2026-11-02 に claude -p --model sonnet で作成。事実の裏取り: 4/4 件(quote が出どころにあるもの)。裏取りに通らなかった facts は載せていない。"
+}

@@ -15683,6 +15683,140 @@
         ],
         "checkedAt": "2026-10-29"
       }
+    },
+    {
+      "id": "li0103",
+      "vertical": "life",
+      "category": "shrine-temple",
+      "name": "長心寺",
+      "pref": "aichi",
+      "cityName": "南知多町",
+      "address": "愛知県知多郡南知多町日間賀島高野谷25-2",
+      "lat": 34.703404,
+      "lng": 136.999819,
+      "phone": "0569-68-2260",
+      "url": "https://www.himaka.net/sightseeing/m30",
+      "website": "https://www.himaka.net/sightseeing/m30",
+      "mapUrl": "https://maps.google.com/?cid=16436902739093822725",
+      "image": "/_portal/vshops/tri-life-317/g01.jpg",
+      "images": [
+        "/_portal/vshops/tri-life-317/g01.jpg",
+        "/_portal/vshops/tri-life-317/g02.jpg",
+        "/_portal/vshops/tri-life-317/g03.jpg",
+        "/_portal/vshops/tri-life-317/g04.jpg",
+        "/_portal/vshops/tri-life-317/g05.jpg",
+        "/_portal/vshops/tri-life-317/g06.jpg",
+        "/_portal/vshops/tri-life-317/g07.jpg",
+        "/_portal/vshops/tri-life-317/g08.jpg",
+        "/_portal/vshops/tri-life-317/g09.jpg",
+        "/_portal/vshops/tri-life-317/g10.jpg",
+        "/_portal/vshops/tri-life-317/s01.jpg"
+      ],
+      "photos": [
+        {
+          "path": "/_portal/vshops/tri-life-317/g01.jpg",
+          "what": "桜の木と赤い幟が見える境内と本堂",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-life-317/g02.jpg",
+          "what": "格子の建具と赤い敷物が見えるお堂の内部",
+          "kind": "common",
+          "width": 675,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-life-317/g03.jpg",
+          "what": "石像が立つお堂の入口まわり",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-life-317/g04.jpg",
+          "what": "赤い幟が並ぶ石段と、脇に立つ案内板",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-life-317/g05.jpg",
+          "what": "桜の木と赤い幟の下に立つ石の地蔵像",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-life-317/g06.jpg",
+          "what": "長心寺と刻まれた石柱と、赤い幟が並ぶ参道",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-life-317/g07.jpg",
+          "what": "庇の大きな建物の外観",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-life-317/g08.jpg",
+          "what": "石段の脇に置かれたカエルの石像",
+          "kind": "exterior",
+          "width": 675,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-life-317/g09.jpg",
+          "what": "お堂の前に置かれた石の灯籠と賽銭箱",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-life-317/g10.jpg",
+          "what": "風化した石の彫像",
+          "kind": "exterior",
+          "width": 675,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-life-317/s01.jpg",
+          "what": "本堂の屋根と境内、赤い幟が見える風景",
+          "kind": "exterior",
+          "width": 1024,
+          "height": 682
+        }
+      ],
+      "tags": [],
+      "article": {
+        "headline": "愛知県知多郡南知多町、日間賀島西港から徒歩5分の住宅地にある寺。境内へは弁財天様の幟が立ち並ぶ階段を上り、安産の神様が祀られている",
+        "lede": "知多郡南知多町にある「長心寺」です。日間賀島西港の広がる住宅地の中にあるお寺で、境内へは弁財天様の幟が立ち並ぶ階段を上ります。安産の神様が祀られています。",
+        "sections": [
+          {
+            "heading": "場所と連絡先",
+            "body": "住所は愛知県知多郡南知多町日間賀島高野谷25-2、電話は0569-68-2260です。日間賀島西港から歩いて5分で、島の住宅地の中にあります。"
+          },
+          {
+            "heading": "境内への道と祀られているもの",
+            "body": "境内へは、弁財天様の幟が立ち並ぶ階段を上ります。境内には安産の神様が祀られています。"
+          }
+        ],
+        "sources": [
+          {
+            "label": "公式サイト",
+            "url": "https://www.himaka.net/sightseeing/m30"
+          },
+          {
+            "label": "Google マップ",
+            "url": "https://maps.google.com/?cid=16436902739093822725"
+          }
+        ],
+        "checkedAt": "2026-11-02"
+      }
     }
   ]
 }

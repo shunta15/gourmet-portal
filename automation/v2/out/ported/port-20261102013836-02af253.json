@@ -1,0 +1,30 @@
+{
+  "commit": "02af253fd7426e579e1091a5f7c480ba0cbebec8",
+  "source": "/Users/shunta/claude/gp-k-auto2",
+  "count": 2,
+  "added": [
+    {
+      "row": 299,
+      "name": "アンダルシア",
+      "key": "tri-beauty-299",
+      "vertical": "ビューティー",
+      "id": "be0110",
+      "articleId": null,
+      "shopUrl": "https://machinowa.tokyo/beauty/shop/be0110",
+      "articleUrl": null,
+      "sheetUrl": "https://machinowa.tokyo/beauty/shop/be0110"
+    },
+    {
+      "row": 317,
+      "name": "長心寺",
+      "key": "tri-life-317",
+      "vertical": "くらし",
+      "id": "li0103",
+      "articleId": "li0103",
+      "shopUrl": "https://machinowa.tokyo/life/shop/li0103",
+      "articleUrl": "https://machinowa.tokyo/life/article/li0103",
+      "sheetUrl": "https://machinowa.tokyo/life/article/li0103"
+    }
+  ],
+  "skipped": []
+}

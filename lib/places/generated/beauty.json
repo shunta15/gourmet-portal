@@ -8038,6 +8038,38 @@
         ],
         "checkedAt": "2026-10-28"
       }
+    },
+    {
+      "id": "be0110",
+      "vertical": "beauty",
+      "category": "hair",
+      "name": "アンダルシア",
+      "pref": "hiroshima",
+      "cityName": "広島市東区",
+      "address": "広島県広島市東区牛田本町2丁目10-23 シェソワ堀尾",
+      "lat": 34.4086958,
+      "lng": 132.4718936,
+      "phone": "082-222-3050",
+      "mapUrl": "https://maps.google.com/?cid=9527562584666673926",
+      "images": [],
+      "tags": [],
+      "article": {
+        "headline": "広島市東区牛田本町にある理容店「アンダルシア」",
+        "lede": "広島市東区牛田本町にある「アンダルシア」です。理容店として営業しています。",
+        "sections": [
+          {
+            "heading": "アクセスと連絡先",
+            "body": "住所は広島県広島市東区牛田本町２丁目１０−２３ シェソワ堀尾です。電話番号は082-222-3050です。"
+          }
+        ],
+        "sources": [
+          {
+            "label": "Google マップ",
+            "url": "https://maps.google.com/?cid=9527562584666673926"
+          }
+        ],
+        "checkedAt": "2026-11-02"
+      }
     }
   ]
 }

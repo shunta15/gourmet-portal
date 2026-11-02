@@ -1,0 +1,66 @@
+{
+  "key": "tri-life-317",
+  "headline": "愛知県知多郡南知多町、日間賀島西港から徒歩5分の住宅地にある寺。境内へは弁財天様の幟が立ち並ぶ階段を上り、安産の神様が祀られている",
+  "lede": "知多郡南知多町にある「長心寺」です。日間賀島西港の広がる住宅地の中にあるお寺で、境内へは弁財天様の幟が立ち並ぶ階段を上ります。安産の神様が祀られています。",
+  "sections": [
+    {
+      "heading": "場所と連絡先",
+      "body": "住所は愛知県知多郡南知多町日間賀島高野谷25-2、電話は0569-68-2260です。日間賀島西港から歩いて5分で、島の住宅地の中にあります。"
+    },
+    {
+      "heading": "境内への道と祀られているもの",
+      "body": "境内へは、弁財天様の幟が立ち並ぶ階段を上ります。境内には安産の神様が祀られています。"
+    }
+  ],
+  "menus": [],
+  "tags": [],
+  "facts": [
+    {
+      "claim": "長心寺は日間賀島西港の広がる住宅地の中のお寺",
+      "source": "https://www.himaka.net/sightseeing/m30",
+      "quote": "日間賀島西港の広がる住宅地の中のお寺",
+      "checkedAt": "2026-11-02"
+    },
+    {
+      "claim": "境内へは弁財天様の幟が立ち並ぶ階段を上る",
+      "source": "https://www.himaka.net/sightseeing/m30",
+      "quote": "弁財天様の幟が立ち並ぶ階段を上って",
+      "checkedAt": "2026-11-02"
+    },
+    {
+      "claim": "日間賀島西港から徒歩5分",
+      "source": "https://www.himaka.net/sightseeing/m30",
+      "quote": "日間賀島西港より徒歩5分",
+      "checkedAt": "2026-11-02"
+    },
+    {
+      "claim": "安産の神様が祀られている",
+      "source": "https://www.himaka.net/sightseeing/m30",
+      "quote": "安産の神様が祀られています",
+      "checkedAt": "2026-11-02"
+    },
+    {
+      "claim": "住所は愛知県知多郡南知多町日間賀島高野谷25-2",
+      "source": "https://www.himaka.net/sightseeing/m30",
+      "quote": "愛知県知多郡南知多町日間賀島高野谷25-2",
+      "checkedAt": "2026-11-02"
+    },
+    {
+      "claim": "電話は0569-68-2260",
+      "source": "https://maps.google.com/?cid=16436902739093822725",
+      "quote": "0569-68-2260",
+      "checkedAt": "2026-11-02"
+    }
+  ],
+  "sources": [
+    {
+      "label": "公式サイト",
+      "url": "https://www.himaka.net/sightseeing/m30"
+    },
+    {
+      "label": "Google マップ",
+      "url": "https://maps.google.com/?cid=16436902739093822725"
+    }
+  ],
+  "notes": "automation/v2/write.mjs が 2026-11-02 に claude -p --model sonnet で作成。事実の裏取り: 6/6 件(quote が出どころにあるもの)。裏取りに通らなかった facts は載せていない。"
+}
