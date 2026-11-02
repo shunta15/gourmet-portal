@@ -1,0 +1,178 @@
+{
+  "key": "tri-life-326",
+  "headline": "愛知県丹羽郡扶桑町高雄にある臨済宗妙心寺派の寺。名鉄犬山線の木津用水駅から徒歩約2分で、駐車場がある",
+  "lede": "丹羽郡扶桑町にある「白雲寺」です。臨済宗妙心寺派の金常山白雲寺で、本尊は釈迦牟尼仏、由緒仏は聖観世音菩薩です。ご朱印と参拝記念スタンプもあります。",
+  "sections": [
+    {
+      "heading": "場所とアクセス",
+      "body": "所在地は扶桑町大字高雄字米ノ山42、電話は0587-93-1008です。最寄駅は名鉄犬山線の木津用水駅で、徒歩約2分です。車の場合は、東名高速道路の小牧インターから約30分で、駐車場があります。"
+    },
+    {
+      "heading": "寺の概要",
+      "body": "金常山白雲寺は臨済宗妙心寺派の寺です。本尊は釈迦牟尼仏、由緒仏は聖観世音菩薩で、開山は友峰和尚、開基は寺澤増彦太夫です。ご朱印と参拝記念スタンプがあります。"
+    },
+    {
+      "heading": "由緒と歴史",
+      "body": "往昔は真言宗の寺で、文武天皇の御代の慶雲三年(706)に。その後、賊火に遭って観音堂だけを残し堂宇をすべて焼失しましたが、大永六年に覚王寺の友峰和尚が再建して臨済宗に改宗しています。"
+    }
+  ],
+  "menus": [
+    {
+      "name": "一般墓地"
+    },
+    {
+      "name": "永代供養墓"
+    },
+    {
+      "name": "お葬式・法要"
+    },
+    {
+      "name": "坐禅会"
+    },
+    {
+      "name": "写経会"
+    },
+    {
+      "name": "ご朱印"
+    }
+  ],
+  "tags": [
+    {
+      "tag": "駅近",
+      "factIndex": 5
+    },
+    {
+      "tag": "駐車場あり",
+      "factIndex": 7
+    }
+  ],
+  "facts": [
+    {
+      "claim": "臨済宗妙心寺派 金常山 白雲寺",
+      "source": "https://hakuunji.com/",
+      "quote": "臨済宗妙心寺派 金常山 白雲寺",
+      "checkedAt": "2026-11-02"
+    },
+    {
+      "claim": "本尊は釈迦牟尼仏",
+      "source": "https://hakuunji.com/about.html",
+      "quote": "釈迦牟尼仏",
+      "checkedAt": "2026-11-02"
+    },
+    {
+      "claim": "由緒仏は聖観世音菩薩",
+      "source": "https://hakuunji.com/about.html",
+      "quote": "聖観世音菩薩",
+      "checkedAt": "2026-11-02"
+    },
+    {
+      "claim": "ご朱印と参拝記念スタンプがある",
+      "source": "https://hakuunji.com/about.html",
+      "quote": "ご朱印、参拝記念スタンプもございます",
+      "checkedAt": "2026-11-02"
+    },
+    {
+      "claim": "所在地は扶桑町大字高雄字米ノ山42",
+      "source": "https://hakuunji.com/accesss.html",
+      "quote": "愛知県丹羽郡扶桑町大字高雄字米ノ山42",
+      "checkedAt": "2026-11-02"
+    },
+    {
+      "claim": "最寄駅は名鉄犬山線の木津用水駅で徒歩約2分",
+      "source": "https://hakuunji.com/accesss.html",
+      "quote": "最寄駅 名鉄犬山線 木津用水駅 徒歩約2分",
+      "checkedAt": "2026-11-02"
+    },
+    {
+      "claim": "東名高速道路の小牧インターから車で約30分",
+      "source": "https://hakuunji.com/accesss.html",
+      "quote": "東名高速道路 小牧インター より車で約30分",
+      "checkedAt": "2026-11-02"
+    },
+    {
+      "claim": "駐車場がある",
+      "source": "https://hakuunji.com/accesss.html",
+      "quote": "駐車場有",
+      "checkedAt": "2026-11-02"
+    },
+    {
+      "claim": "電話は0587-93-1008",
+      "source": "https://maps.google.com/?cid=7600870476816649849",
+      "quote": "0587-93-1008",
+      "checkedAt": "2026-11-02"
+    },
+    {
+      "claim": "開山は友峰和尚、開基は寺澤増彦太夫",
+      "source": "https://hakuunji.com/about.html",
+      "quote": "友峰和尚",
+      "checkedAt": "2026-11-02"
+    },
+    {
+      "claim": "開基は寺澤増彦太夫",
+      "source": "https://hakuunji.com/about.html",
+      "quote": "寺澤増彦太夫",
+      "checkedAt": "2026-11-02"
+    },
+    {
+      "claim": "往昔は真言宗だった",
+      "source": "https://hakuunji.com/about.html",
+      "quote": "由来、往昔は真言宗で創建は文武天皇",
+      "checkedAt": "2026-11-02"
+    },
+    {
+      "claim": "寺澤増彦太夫が慶雲三年(706)に建立した",
+      "source": "https://hakuunji.com/about.html",
+      "quote": "慶雲三年（七〇六）に建立した",
+      "checkedAt": "2026-11-02"
+    },
+    {
+      "claim": "賊火に遭い、観音堂だけを残して堂宇を焼失した",
+      "source": "https://hakuunji.com/about.html",
+      "quote": "賊火に罹り、観音堂だけ残し堂字一切を焼失した",
+      "checkedAt": "2026-11-02"
+    },
+    {
+      "claim": "大永六年に覚王寺の友峰和尚が再建して臨済宗に改宗した",
+      "source": "https://hakuunji.com/about.html",
+      "quote": "覚王寺の友峰和尚がこれを再建して、臨済宗に改宗した",
+      "checkedAt": "2026-11-02"
+    },
+    {
+      "claim": "一般墓地・永代供養墓がある",
+      "source": "https://hakuunji.com/",
+      "quote": "一般墓地・永代供養墓",
+      "checkedAt": "2026-11-02"
+    },
+    {
+      "claim": "お葬式・法要",
+      "source": "https://hakuunji.com/",
+      "quote": "お葬式・法要",
+      "checkedAt": "2026-11-02"
+    },
+    {
+      "claim": "年間行事・坐禅会・写経会",
+      "source": "https://hakuunji.com/",
+      "quote": "年間行事・坐禅会・写経会",
+      "checkedAt": "2026-11-02"
+    }
+  ],
+  "sources": [
+    {
+      "label": "公式サイト",
+      "url": "https://hakuunji.com/"
+    },
+    {
+      "label": "公式サイト(白雲寺紹介)",
+      "url": "https://hakuunji.com/about.html"
+    },
+    {
+      "label": "公式サイト(アクセス)",
+      "url": "https://hakuunji.com/accesss.html"
+    },
+    {
+      "label": "Google マップ",
+      "url": "https://maps.google.com/?cid=7600870476816649849"
+    }
+  ],
+  "notes": "automation/v2/write.mjs が 2026-11-02 に claude -p --model sonnet で作成。事実の裏取り: 18/18 件(quote が出どころにあるもの)。裏取りに通らなかった facts は載せていない。"
+}

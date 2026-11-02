@@ -1,0 +1,32 @@
+{
+  "tab": "トリニティアポ",
+  "tabEn": "tri-bodycare",
+  "row": 332,
+  "sheet": {
+    "name": "リンパケアカイロcitrine",
+    "address": "",
+    "url": "https://www.google.com/maps/search/?api=1&query=%E3%83%AA%E3%83%B3%E3%83%91%E3%82%B1%E3%82%A2%E3%82%AB%E3%82%A4%E3%83%ADcitrine%20080-5115-1133%20",
+    "type": "美容",
+    "d1": "",
+    "d2": ""
+  },
+  "urlKind": "mapsApi",
+  "route": "第1段(verify-gbp.mjs)で確認済み",
+  "verdict": "一致",
+  "verdictReason": "オーナー基準で確認(2026-11-02): 公式サイト chirorelax.jp の特定商取引法ページと Google マップの GBP が、どちらも愛知県豊橋市中岩田3丁目24-6・電話 0532-69-2322 で一致。住所は依頼文(中岩田3丁目24-6)とも番地まで一致。なお verify-2026-11-02/10-29/10-27 に「トリニティアポ:332」の記録が無く、シートの電話(sheetPhone)は照合できていない。住所の番地一致で同一店と判断。",
+  "place": {
+    "name": "リンパケアカイロ citrine",
+    "address": "愛知県豊橋市中岩田３丁目24−６",
+    "category": "カイロプラクティック",
+    "lat": 34.7507218,
+    "lng": 137.4264449,
+    "gbpUrl": "https://maps.google.com/?cid=10382768648932735895",
+    "phone": "0532-69-2322",
+    "website": "https://chirorelax.jp/",
+    "hours": null,
+    "reserveLinks": [],
+    "statusSignals": [],
+    "closedSignal": false
+  },
+  "fetchedAt": "2026-11-02T03:08:44.476Z"
+}

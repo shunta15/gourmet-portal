@@ -1,0 +1,32 @@
+{
+  "tab": "トリニティアポ",
+  "tabEn": "tri-activity",
+  "row": 321,
+  "sheet": {
+    "name": "anhelotrip",
+    "address": "",
+    "url": "https://maps.google.com/?cid=10210349334676365904",
+    "type": "",
+    "d1": "",
+    "d2": ""
+  },
+  "urlKind": "cid",
+  "route": "第1段(verify-gbp.mjs)で確認済み",
+  "verdict": "一致",
+  "verdictReason": "オーナー基準で確認(2026-11-02): 住所が番地まで一致(電話が違っても同じ店)。",
+  "place": {
+    "name": "ダイビングショップanhelotrip----ダイビングライセンスCカード取得・各地送迎＆水中ガイド付きツアー開催",
+    "address": "兵庫県神戸市東灘区北青木３丁目１３−９ ２０５",
+    "category": "スキューバ インストラクター",
+    "lat": 34.7183357,
+    "lng": 135.280123,
+    "gbpUrl": "https://maps.google.com/?cid=10210349334676365904",
+    "phone": "080-3749-0638",
+    "website": "https://anhelotrip.wixsite.com/my-site-1",
+    "hours": null,
+    "reserveLinks": [],
+    "statusSignals": [],
+    "closedSignal": false
+  },
+  "fetchedAt": "2026-11-02T03:28:51.707Z"
+}

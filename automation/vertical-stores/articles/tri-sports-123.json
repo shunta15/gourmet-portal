@@ -1,0 +1,418 @@
+{
+  "key": "tri-sports-123",
+  "headline": "宮城県仙台市青葉区下愛子のクライミングジム。2026年7月10日(金)にオープンし、手ぶらで見学・体験ができる。小・中学生のクライミングクラブや、ウォールの施工・レンタルも手がける",
+  "lede": "宮城県仙台市青葉区下愛子にある「IWANOKO」です。クライミングジムのオープン日は2026年7月10日(金)で、大人も子どもも楽しめます。年齢や性別、クライミングの経験や道具の有無は問わず、手ぶらで見学と体験ができます。",
+  "sections": [
+    {
+      "heading": "クライミングジム",
+      "body": "ジムのオープン日は2026年7月10日(金)です。大人も子どもも楽しめるジムで、年齢や性別、クライミングの経験や道具の有無は問われません。手ぶらで行け、見学と体験ができます。利用の区分は1日利用と月パスで、シューズとチョークはレンタルできます。所在地は宮城県仙台市青葉区下愛子二本松24-4です。"
+    },
+    {
+      "heading": "小・中学生のクライミングクラブ",
+      "body": "IWANOKOスクールは、小・中学生を対象にした、東北では初となる本格的クライミングクラブチームです。クライミングが初めてでも、経験豊富な先生がひとりひとりの能力に合わせて指導します。対象は小学生以上で、見学は自由です。区分にはスクール(体験)と回数券(4回)などがあります。会員は毎月の目標とクラブ練習、個人練習を記入し、定期的な体力測定もあります。"
+    },
+    {
+      "heading": "合宿・保険・指導する人",
+      "body": "トレーニングキャンプは、年2回、春と夏に行う泊まり込みの合宿で、県外のジムと外岩でレッスンします。クラブ員以外も利用できます。クラブ員と講師は、スポーツ安全協会の団体保険に加入しています。講師は国体出場経験があるメンバーが多く、オーナーの佐藤優哉さんは国民体育大会山岳競技に宮城県代表選手として7年連続で出場しました。"
+    },
+    {
+      "heading": "ウォールの施工・レンタル・ルートセット",
+      "body": "IWANOKOは、クライミングウォールの施工、メンテナンス、ハリボテ制作、レンタル、ルートセットも手がけています。施工は商業施設、学校関係、個人宅に対応します。レンタルのウォールは、ダイスウォール、ロックウォール、フラットボードの3種類です。代表の佐藤優哉さんはJMSCA公認ルートセッターで、東北をメインに公式戦に参加しています。"
+    }
+  ],
+  "menus": [
+    {
+      "name": "クライミングジム 1日利用"
+    },
+    {
+      "name": "クライミングジム 月パス"
+    },
+    {
+      "name": "スクール(体験)"
+    },
+    {
+      "name": "スクール(回数券4回)"
+    },
+    {
+      "name": "トレーニングキャンプ"
+    },
+    {
+      "name": "ウォールのレンタル"
+    },
+    {
+      "name": "ウォール施工"
+    },
+    {
+      "name": "ルートセット"
+    }
+  ],
+  "tags": [
+    {
+      "tag": "初心者歓迎",
+      "factIndex": 5
+    },
+    {
+      "tag": "体験あり",
+      "factIndex": 4
+    },
+    {
+      "tag": "子ども向け",
+      "factIndex": 9
+    }
+  ],
+  "facts": [
+    {
+      "claim": "所在地は宮城県仙台市青葉区下愛子二本松24-4",
+      "source": "https://maps.google.com/?cid=6689350746779043523",
+      "quote": "宮城県仙台市青葉区下愛子二本松２４−４",
+      "checkedAt": "2026-11-02"
+    },
+    {
+      "claim": "Google マップの業種はスポーツジム",
+      "source": "https://maps.google.com/?cid=6689350746779043523",
+      "quote": "スポーツジム",
+      "checkedAt": "2026-11-02"
+    },
+    {
+      "claim": "クライミングジムのオープン日は2026年7月10日(金)",
+      "source": "https://www.iwanoko.com/gym",
+      "quote": "2026年7月10日（金）にクライミングジムをオープン",
+      "checkedAt": "2026-11-02"
+    },
+    {
+      "claim": "大人も子どもも楽しめるジム",
+      "source": "https://www.iwanoko.com/gym",
+      "quote": "大人も子どもも楽しめる",
+      "checkedAt": "2026-11-02"
+    },
+    {
+      "claim": "手ぶらで利用でき、見学と体験ができる",
+      "source": "https://www.iwanoko.com/gym",
+      "quote": "手ぶらでOK 見学・体験可能",
+      "checkedAt": "2026-11-02"
+    },
+    {
+      "claim": "年齢・性別・経験・道具の有無は問わない",
+      "source": "https://www.iwanoko.com/gym",
+      "quote": "クライミングの経験や道具の有無など一切関係なく",
+      "checkedAt": "2026-11-02"
+    },
+    {
+      "claim": "利用の区分に1日利用がある",
+      "source": "https://www.iwanoko.com/gym",
+      "quote": "1日利用",
+      "checkedAt": "2026-11-02"
+    },
+    {
+      "claim": "利用の区分に月パスがある",
+      "source": "https://www.iwanoko.com/gym",
+      "quote": "月パス",
+      "checkedAt": "2026-11-02"
+    },
+    {
+      "claim": "シューズとチョークのレンタルがある",
+      "source": "https://www.iwanoko.com/gym",
+      "quote": "レンタル シューズ",
+      "checkedAt": "2026-11-02"
+    },
+    {
+      "claim": "小・中学生を対象にしたクライミングクラブチームがある",
+      "source": "https://www.iwanoko.com/classroom",
+      "quote": "小・中学生を対象にした",
+      "checkedAt": "2026-11-02"
+    },
+    {
+      "claim": "東北では初となる本格的クライミングクラブチーム",
+      "source": "https://www.iwanoko.com/classroom",
+      "quote": "東北では初となる本格的クライミングクラブチームです",
+      "checkedAt": "2026-11-02"
+    },
+    {
+      "claim": "経験豊富な先生がひとりひとりの能力に合わせて指導する",
+      "source": "https://www.iwanoko.com/classroom",
+      "quote": "経験豊富な先生がひとりひとりの能力に合わせた指導を行います",
+      "checkedAt": "2026-11-02"
+    },
+    {
+      "claim": "対象は小学生以上",
+      "source": "https://www.iwanoko.com/classroom",
+      "quote": "対象は小学生以上となります",
+      "checkedAt": "2026-11-02"
+    },
+    {
+      "claim": "見学は自由",
+      "source": "https://www.iwanoko.com/classroom",
+      "quote": "ご見学は自由です",
+      "checkedAt": "2026-11-02"
+    },
+    {
+      "claim": "スクールに体験の区分がある",
+      "source": "https://www.iwanoko.com/classroom",
+      "quote": "スクール（体験）",
+      "checkedAt": "2026-11-02"
+    },
+    {
+      "claim": "スクールに回数券(4回)の区分がある",
+      "source": "https://www.iwanoko.com/classroom",
+      "quote": "スクール（回数券4回）",
+      "checkedAt": "2026-11-02"
+    },
+    {
+      "claim": "会員は毎月の目標とクラブ練習、個人練習を記入する",
+      "source": "https://www.iwanoko.com/classroom",
+      "quote": "毎月個々の目標とクラブ練習、個人練習を記入する",
+      "checkedAt": "2026-11-02"
+    },
+    {
+      "claim": "定期的に体力測定を行う",
+      "source": "https://www.iwanoko.com/classroom",
+      "quote": "定期的に体力測定を行います",
+      "checkedAt": "2026-11-02"
+    },
+    {
+      "claim": "トレーニングキャンプは年2回、春と夏の泊まり込み合宿",
+      "source": "https://www.iwanoko.com/classroom",
+      "quote": "年2回春と夏の泊まり込み合宿です",
+      "checkedAt": "2026-11-02"
+    },
+    {
+      "claim": "県外のジムと外岩でレッスンする",
+      "source": "https://www.iwanoko.com/classroom",
+      "quote": "県外のジムと外岩でレッスンします",
+      "checkedAt": "2026-11-02"
+    },
+    {
+      "claim": "合宿の対象は小学生以上でクラブ員以外も利用できる",
+      "source": "https://www.iwanoko.com/classroom",
+      "quote": "クラブ員以外でもご利用可能",
+      "checkedAt": "2026-11-02"
+    },
+    {
+      "claim": "クラブ員と講師はスポーツ安全協会の団体保険に加入している",
+      "source": "https://www.iwanoko.com/classroom",
+      "quote": "スポーツ安全協会の団体保険に加入",
+      "checkedAt": "2026-11-02"
+    },
+    {
+      "claim": "講師は国体出場経験があるメンバーが多数",
+      "source": "https://www.iwanoko.com/classroom",
+      "quote": "国体出場経験があるメンバーが多数",
+      "checkedAt": "2026-11-02"
+    },
+    {
+      "claim": "スクールの活動場所は宮城県内と隣県のクライミング施設",
+      "source": "https://www.iwanoko.com/classroom",
+      "quote": "宮城県内及び隣県のクライミング施設にて",
+      "checkedAt": "2026-11-02"
+    },
+    {
+      "claim": "スケジュールは入会後に確認できる",
+      "source": "https://www.iwanoko.com/classroom",
+      "quote": "ご入会後にスケジュールをご確認いただけます",
+      "checkedAt": "2026-11-02"
+    },
+    {
+      "claim": "代表は国民体育大会山岳競技に宮城県代表として7年連続出場",
+      "source": "https://www.iwanoko.com/words",
+      "quote": "国民体育大会山岳競技に宮城県代表選手として7年連続出場",
+      "checkedAt": "2026-11-02"
+    },
+    {
+      "claim": "代表はJMSCA公認ルートセッターとして東北をメインに公式戦に参加",
+      "source": "https://www.iwanoko.com/words",
+      "quote": "JMSCA公認ルートセッターとして東北をメインに公式戦",
+      "checkedAt": "2026-11-02"
+    },
+    {
+      "claim": "代表は1982年生まれ",
+      "source": "https://www.iwanoko.com/words",
+      "quote": "1982年生まれ",
+      "checkedAt": "2026-11-02"
+    },
+    {
+      "claim": "代表は仙登会の会長も務める",
+      "source": "https://www.iwanoko.com/words",
+      "quote": "このチームの会長もしています",
+      "checkedAt": "2026-11-02"
+    },
+    {
+      "claim": "仙登会は外岩の清掃活動や啓蒙活動を行う",
+      "source": "https://www.iwanoko.com/words",
+      "quote": "外岩の清掃活動や啓蒙活動",
+      "checkedAt": "2026-11-02"
+    },
+    {
+      "claim": "ジュニアの指導を15年ほど続けている",
+      "source": "https://www.iwanoko.com/classroom",
+      "quote": "ジュニアの指導を始めて15年程経ちます",
+      "checkedAt": "2026-11-02"
+    },
+    {
+      "claim": "前身は仙台ジュニアクライミングクラブで、IWANOKOに名称変更した",
+      "source": "https://www.iwanoko.com/news/312",
+      "quote": "「IWANOKO（イワノコ）」へ、名称変更いたします",
+      "checkedAt": "2026-11-02"
+    },
+    {
+      "claim": "ウォール施工は商業施設・学校関係・個人宅に対応",
+      "source": "https://www.iwanoko.com/office",
+      "quote": "商業施設(新規・改装)・学校関係・個人宅",
+      "checkedAt": "2026-11-02"
+    },
+    {
+      "claim": "ウォールメンテナンスはパネルの増し締めやナット類の緩み確認を行う",
+      "source": "https://www.iwanoko.com/office",
+      "quote": "パネルの増し締め・ナット類の緩み確認",
+      "checkedAt": "2026-11-02"
+    },
+    {
+      "claim": "ハリボテ制作を行う",
+      "source": "https://www.iwanoko.com/office",
+      "quote": "ハリボテ制作",
+      "checkedAt": "2026-11-02"
+    },
+    {
+      "claim": "クライミングウォールのレンタルがある",
+      "source": "https://www.iwanoko.com/rental",
+      "quote": "立体＆本格的クライミングウォールがレンタル可能",
+      "checkedAt": "2026-11-02"
+    },
+    {
+      "claim": "ダイスウォールは同時に3人登れる",
+      "source": "https://www.iwanoko.com/rental",
+      "quote": "同時に3人登ることが出来ます",
+      "checkedAt": "2026-11-02"
+    },
+    {
+      "claim": "ロックウォールは本物の岩のような壁",
+      "source": "https://www.iwanoko.com/rental",
+      "quote": "本物の岩のような壁",
+      "checkedAt": "2026-11-02"
+    },
+    {
+      "claim": "フラットボードは90〜130°まで角度を変えられる",
+      "source": "https://www.iwanoko.com/rental",
+      "quote": "90～130°まで自由に角度を変えられます",
+      "checkedAt": "2026-11-02"
+    },
+    {
+      "claim": "レンタル実績に利府グランディ21がある",
+      "source": "https://www.iwanoko.com/rental",
+      "quote": "利府グランディ21",
+      "checkedAt": "2026-11-02"
+    },
+    {
+      "claim": "レンタル実績にイオンモール天童がある",
+      "source": "https://www.iwanoko.com/rental",
+      "quote": "イオンモール天童",
+      "checkedAt": "2026-11-02"
+    },
+    {
+      "claim": "問い合わせの電話番号は090-1490-7791",
+      "source": "https://www.iwanoko.com/",
+      "quote": "090-1490-7791",
+      "checkedAt": "2026-11-02"
+    },
+    {
+      "claim": "問い合わせの受付は9:00〜18:00",
+      "source": "https://www.iwanoko.com/",
+      "quote": "【受付可能時間】 9:00～18:00",
+      "checkedAt": "2026-11-02"
+    },
+    {
+      "claim": "定休日は不定休",
+      "source": "https://www.iwanoko.com/",
+      "quote": "【定休日】 不定休",
+      "checkedAt": "2026-11-02"
+    },
+    {
+      "claim": "メールでの問い合わせは24時間受付",
+      "source": "https://www.iwanoko.com/",
+      "quote": "24時間受付しております",
+      "checkedAt": "2026-11-02"
+    },
+    {
+      "claim": "ルートセットは東北では数少ないJMSCA公認ルートセッターが行う",
+      "source": "https://www.iwanoko.com/office",
+      "quote": "東北では数少ないJMSCA公認ルートセッター",
+      "checkedAt": "2026-11-02"
+    },
+    {
+      "claim": "先生は練習メニューを考えていく",
+      "source": "https://www.iwanoko.com/classroom",
+      "quote": "練習メニューを考えていきます",
+      "checkedAt": "2026-11-02"
+    },
+    {
+      "claim": "子どもたちのチャレンジを全力でサポートする",
+      "source": "https://www.iwanoko.com/classroom",
+      "quote": "そんな子どもたちのチャレンジを全力でサポートします",
+      "checkedAt": "2026-11-02"
+    },
+    {
+      "claim": "合宿は普段の練習では味わえない貴重な体験ができるイベント",
+      "source": "https://www.iwanoko.com/classroom",
+      "quote": "普段の練習では味わえない貴重な体験ができる",
+      "checkedAt": "2026-11-02"
+    },
+    {
+      "claim": "合宿にはクラブオリジナルTシャツを着用して参加する",
+      "source": "https://www.iwanoko.com/classroom",
+      "quote": "を着用の上参加してください",
+      "checkedAt": "2026-11-02"
+    },
+    {
+      "claim": "国民体育大会への出場は2011年から2017年",
+      "source": "https://www.iwanoko.com/words",
+      "quote": "2011年～2017年",
+      "checkedAt": "2026-11-02"
+    },
+    {
+      "claim": "仙登会は仙台にあるクライミングチーム",
+      "source": "https://www.iwanoko.com/words",
+      "quote": "仙台に「仙登会」と言うクライミングチームがある",
+      "checkedAt": "2026-11-02"
+    },
+    {
+      "claim": "メンテナンスは一部補修・塗装なども行う",
+      "source": "https://www.iwanoko.com/office",
+      "quote": "一部補修・ホールド取り付けナット交換・塗装",
+      "checkedAt": "2026-11-02"
+    }
+  ],
+  "sources": [
+    {
+      "label": "公式サイト",
+      "url": "https://www.iwanoko.com/"
+    },
+    {
+      "label": "公式サイト(クライミングジム)",
+      "url": "https://www.iwanoko.com/gym"
+    },
+    {
+      "label": "公式サイト(IWANOKOスクール)",
+      "url": "https://www.iwanoko.com/classroom"
+    },
+    {
+      "label": "公式サイト(IWANOKOの言葉)",
+      "url": "https://www.iwanoko.com/words"
+    },
+    {
+      "label": "公式サイト(ウォールレンタル)",
+      "url": "https://www.iwanoko.com/rental"
+    },
+    {
+      "label": "公式サイト(クライミング事業所)",
+      "url": "https://www.iwanoko.com/office"
+    },
+    {
+      "label": "公式サイト(お知らせ)",
+      "url": "https://www.iwanoko.com/news/312"
+    },
+    {
+      "label": "Google マップ",
+      "url": "https://maps.google.com/?cid=6689350746779043523"
+    }
+  ],
+  "notes": "automation/v2/write.mjs が 2026-11-02 に claude -p --model sonnet で作成。事実の裏取り: 53/53 件(quote が出どころにあるもの)。裏取りに通らなかった facts は載せていない。"
+}

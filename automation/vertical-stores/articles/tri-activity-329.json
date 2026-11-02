@@ -1,0 +1,453 @@
+{
+  "key": "tri-activity-329",
+  "headline": "静岡県賀茂郡西伊豆町仁科、天窓洞付近からボートで出航するダイビングショップ。ファンダイビング・体験ダイビング・ライセンス取得・無人島スノーケルを扱っている",
+  "lede": "西伊豆町にある「マリンステーション堂ヶ島」です。ボートの出航場所が天窓洞付近にあり、洞窟の中を通ってダイビングポイントへ向かいます。少人数で運営しているショップで、ライセンスがなくても参加できる体験ダイビングと、BSACのライセンスを取る講習があります。",
+  "sections": [
+    {
+      "heading": "天窓洞からの出航と堂ヶ島の海",
+      "body": "出航場所は堂ヶ島の天窓洞付近で、ボートは洞窟の中を通ってダイビングポイントへ向かいます。堂ヶ島周辺の海岸線は、伊豆がかつて海底火山だった頃の名残を伝える景観で、洞窟内や海岸線を海上から眺めながらポイントまで移動します。海中には、大きな根を取り囲むキンギョハナダイの群れがあり、ウミウシは年間200種類以上観察できます。水中アーチやトンネルのある岩場もあります。"
+    },
+    {
+      "heading": "コースの種類",
+      "body": "コースは、天窓洞からのボート出航が目玉のファンダイビング、ライセンスがなくても参加できる体験ダイビング、BSACのライセンス取得、夏季の無人島スノーケルです。ダイビングの後には、沖釣り、BBQ、マリンスポーツも用意されています。ファンダイビングは午前9時からで、1回のダイビングは基本的に35分から45分です。ライセンス取得は2日間で、日を分けて受けることもできます。"
+    },
+    {
+      "heading": "体験ダイビングと予約の決まり",
+      "body": "体験ダイビングは所要3時間で、午前の部と午後の部があります。泳げなくても参加でき、浅瀬で水に慣れてから行います。持ち物は水着とタオルです。体験ダイビングとライセンス取得は、当日の予約を行わず、事前の予約のみです。喘息、副鼻腔炎、中耳炎、外耳炎の治療中の人や、難聴、めまい、てんかんなどのある人は、参加できない場合があります。"
+    },
+    {
+      "heading": "行き方と送迎",
+      "body": "住所は西伊豆町仁科2107-1、電話は0558-52-3535です。電車は、伊豆急行線の蓮台寺駅から東海バスで堂ヶ島まで約50分、伊豆箱根鉄道の修善寺駅からは約1時間32分です。蓮台寺駅への送迎があり、午前の部の送迎は予約のうえ、駅に8時47分までに着きます。支払いは、現金、各種カード、PayPayが使えます。"
+    }
+  ],
+  "menus": [
+    {
+      "name": "ファンダイビング"
+    },
+    {
+      "name": "体験ダイビング"
+    },
+    {
+      "name": "ライセンス取得"
+    },
+    {
+      "name": "無人島スノーケル"
+    },
+    {
+      "name": "沖釣り"
+    },
+    {
+      "name": "BBQ"
+    },
+    {
+      "name": "マリンスポーツ"
+    }
+  ],
+  "tags": [
+    {
+      "tag": "子連れ",
+      "factIndex": 7
+    },
+    {
+      "tag": "初心者歓迎",
+      "factIndex": 6
+    }
+  ],
+  "facts": [
+    {
+      "claim": "ボートの出航場所は天窓洞付近にある",
+      "source": "https://ms-dogashima.com/about/",
+      "quote": "ボートの出航場所が天窓洞付近にある",
+      "checkedAt": "2026-11-02"
+    },
+    {
+      "claim": "洞窟の中を通ってダイビングポイントへ向かう",
+      "source": "https://ms-dogashima.com/about/",
+      "quote": "洞窟の中を通ってダイビングポイントへと向かう",
+      "checkedAt": "2026-11-02"
+    },
+    {
+      "claim": "住所は西伊豆町仁科2107-1",
+      "source": "https://ms-dogashima.com/about/",
+      "quote": "西伊豆町仁科2107-1",
+      "checkedAt": "2026-11-02"
+    },
+    {
+      "claim": "電話は0558-52-3535",
+      "source": "https://maps.google.com/?cid=409763389587488556",
+      "quote": "0558-52-3535",
+      "checkedAt": "2026-11-02"
+    },
+    {
+      "claim": "少人数で運営している",
+      "source": "https://ms-dogashima.com/about/",
+      "quote": "当店は少人数で運営しているアットホームな雰囲気",
+      "checkedAt": "2026-11-02"
+    },
+    {
+      "claim": "BSACが発行するライセンス講習を受ける",
+      "source": "https://ms-dogashima.com/license-acquisition/",
+      "quote": "BSACが発行しているライセンス講習",
+      "checkedAt": "2026-11-02"
+    },
+    {
+      "claim": "体験ダイビングはライセンスがなくても参加できる",
+      "source": "https://ms-dogashima.com/experience-diving/",
+      "quote": "ライセンスをお持ちでない方でも気軽にダイビングを楽しむ事ができます",
+      "checkedAt": "2026-11-02"
+    },
+    {
+      "claim": "体験ダイビングはお子様でも体験できる",
+      "source": "https://ms-dogashima.com/experience-diving/",
+      "quote": "お子様でも安心してダイビングを体験していただけます",
+      "checkedAt": "2026-11-02"
+    },
+    {
+      "claim": "泳げなくても参加できる",
+      "source": "https://ms-dogashima.com/experience-diving/",
+      "quote": "泳げない方でも楽しんでもらえるスポーツです",
+      "checkedAt": "2026-11-02"
+    },
+    {
+      "claim": "浅瀬で水に慣れてから体験ダイビングを行う",
+      "source": "https://ms-dogashima.com/experience-diving/",
+      "quote": "浅瀬で水に慣れてから体験ダイビングを行っております",
+      "checkedAt": "2026-11-02"
+    },
+    {
+      "claim": "体験ダイビングの所要時間は3時間",
+      "source": "https://ms-dogashima.com/experience-diving/",
+      "quote": "[所要時間]３時間",
+      "checkedAt": "2026-11-02"
+    },
+    {
+      "claim": "体験ダイビングは午前の部と午後の部がある",
+      "source": "https://ms-dogashima.com/experience-diving/",
+      "quote": "午前の部、午後の部があります",
+      "checkedAt": "2026-11-02"
+    },
+    {
+      "claim": "体験ダイビングの持ち物は水着とタオル",
+      "source": "https://ms-dogashima.com/experience-diving/",
+      "quote": "水着、タオル",
+      "checkedAt": "2026-11-02"
+    },
+    {
+      "claim": "ライセンス取得は当日の予約を行わず事前の予約のみ",
+      "source": "https://ms-dogashima.com/license-acquisition/",
+      "quote": "当日の予約は行っておりませんので事前の予約のみになります",
+      "checkedAt": "2026-11-02"
+    },
+    {
+      "claim": "体験ダイビングは当日の予約を行わず事前の予約のみ",
+      "source": "https://ms-dogashima.com/experience-diving/",
+      "quote": "当日の予約は行っておりませんので事前の予約のみになります",
+      "checkedAt": "2026-11-02"
+    },
+    {
+      "claim": "喘息・副鼻腔炎・中耳炎・外耳炎の治療中、難聴、めまい、てんかんなどの人は断る場合がある",
+      "source": "https://ms-dogashima.com/experience-diving/",
+      "quote": "喘息、副鼻腔炎、中耳炎、外耳炎の治療中、難聴、めまい、てんかん",
+      "checkedAt": "2026-11-02"
+    },
+    {
+      "claim": "ファンダイビングは午前9時から",
+      "source": "https://ms-dogashima.com/fun-diving/",
+      "quote": "AM：9:00〜",
+      "checkedAt": "2026-11-02"
+    },
+    {
+      "claim": "ファンダイビングの持ち物はライセンス、ログブック、水着、タオル、お持ちの器材など",
+      "source": "https://ms-dogashima.com/fun-diving/",
+      "quote": "ライセンス、ログブック、水着、タオル、お持ちの器材等",
+      "checkedAt": "2026-11-02"
+    },
+    {
+      "claim": "ファンダイビングはボートダイビング",
+      "source": "https://ms-dogashima.com/fun-diving/",
+      "quote": "ボートダイビングにてお試しあれ",
+      "checkedAt": "2026-11-02"
+    },
+    {
+      "claim": "1回のダイビングは基本的に35分から45分",
+      "source": "https://ms-dogashima.com/qa/",
+      "quote": "１回のダイビングは基本的には35分～45分です",
+      "checkedAt": "2026-11-02"
+    },
+    {
+      "claim": "ライセンスは2日間で取得できる",
+      "source": "https://ms-dogashima.com/license-acquisition/",
+      "quote": "365日いつでも2日間でライセンスを取得できる",
+      "checkedAt": "2026-11-02"
+    },
+    {
+      "claim": "2日間連続が難しい場合は日を分けて受講できる",
+      "source": "https://ms-dogashima.com/license-acquisition/",
+      "quote": "２日間連続しての受講が難しい方は、日を分けて受講する事も可能です",
+      "checkedAt": "2026-11-02"
+    },
+    {
+      "claim": "宿泊はショップで手配する",
+      "source": "https://ms-dogashima.com/license-acquisition/",
+      "quote": "宿泊は当ショップにて手配致します",
+      "checkedAt": "2026-11-02"
+    },
+    {
+      "claim": "無人島スノーケルは夏季の平日限定",
+      "source": "https://ms-dogashima.com/snorkel/",
+      "quote": "夏季限定（7月1日〜9月30日の平日限定になります。）",
+      "checkedAt": "2026-11-02"
+    },
+    {
+      "claim": "無人島スノーケルの参加は7歳以上で健康な人",
+      "source": "https://ms-dogashima.com/snorkel/",
+      "quote": "参加条件：7歳以上で健康な方",
+      "checkedAt": "2026-11-02"
+    },
+    {
+      "claim": "無人島スノーケルは天窓洞から出船して無人島へ向かう",
+      "source": "https://ms-dogashima.com/snorkel/",
+      "quote": "天窓洞から出船し、スノーケルポイントの無人島へ向かいます",
+      "checkedAt": "2026-11-02"
+    },
+    {
+      "claim": "無人島スノーケルの午前の部は9時から11時",
+      "source": "https://ms-dogashima.com/snorkel/",
+      "quote": "9:00 〜 11:00",
+      "checkedAt": "2026-11-02"
+    },
+    {
+      "claim": "無人島スノーケルの午後の部は13時から15時",
+      "source": "https://ms-dogashima.com/snorkel/",
+      "quote": "13:00 〜 15:00",
+      "checkedAt": "2026-11-02"
+    },
+    {
+      "claim": "ダイビング後に沖釣り・BBQ・マリンスポーツが用意されている",
+      "source": "https://ms-dogashima.com/option/",
+      "quote": "沖釣り、BBQ、マリンスポーツ等様々",
+      "checkedAt": "2026-11-02"
+    },
+    {
+      "claim": "堂ヶ島周辺の海岸線は伊豆が海底火山だった頃の名残を伝える景観",
+      "source": "https://ms-dogashima.com/location/",
+      "quote": "伊豆が大昔に海底火山だった頃の名残を今に伝える",
+      "checkedAt": "2026-11-02"
+    },
+    {
+      "claim": "洞窟内や海岸線を海上から眺めながらポイントまで移動する",
+      "source": "https://ms-dogashima.com/location/",
+      "quote": "洞窟内や海岸線を海上から眺めながらポイントまで移動する",
+      "checkedAt": "2026-11-02"
+    },
+    {
+      "claim": "天窓洞から差し込む光と洞窟を抜けた先に広がる海",
+      "source": "https://ms-dogashima.com/location/",
+      "quote": "天窓洞から差し込む光や、薄暗い洞窟を抜けた先に広がる広大な海",
+      "checkedAt": "2026-11-02"
+    },
+    {
+      "claim": "大きな根を取り囲むキンギョハナダイの群れがある",
+      "source": "https://ms-dogashima.com/location/",
+      "quote": "大きな根を取り囲むキンギョハナダイの群れ",
+      "checkedAt": "2026-11-02"
+    },
+    {
+      "claim": "ウミウシは年間200種類以上観察できる",
+      "source": "https://ms-dogashima.com/location/",
+      "quote": "年間200種類以上観察できるウミウシ",
+      "checkedAt": "2026-11-02"
+    },
+    {
+      "claim": "水中アーチやトンネルなど複雑な地形の岩場がある",
+      "source": "https://ms-dogashima.com/location/",
+      "quote": "水中アーチやトンネルなど複雑な地形を持つ岩場",
+      "checkedAt": "2026-11-02"
+    },
+    {
+      "claim": "ワイド派にもマクロ派にも楽しめる",
+      "source": "https://ms-dogashima.com/location/",
+      "quote": "ワイド派マクロ派問わずにお楽しみいただけます",
+      "checkedAt": "2026-11-02"
+    },
+    {
+      "claim": "回遊魚の魚影の濃いポイントがある",
+      "source": "https://ms-dogashima.com/location/",
+      "quote": "回遊魚の魚影の濃いポイント",
+      "checkedAt": "2026-11-02"
+    },
+    {
+      "claim": "ポイントは当日の海況に合わせて案内される",
+      "source": "https://ms-dogashima.com/location/",
+      "quote": "当日の海況により最適なポイントをご案内致します",
+      "checkedAt": "2026-11-02"
+    },
+    {
+      "claim": "見たい生物の希望をスタッフに伝えられる",
+      "source": "https://ms-dogashima.com/location/",
+      "quote": "見たい生物のご希望をスタッフにお伝えいただけましたら",
+      "checkedAt": "2026-11-02"
+    },
+    {
+      "claim": "季節ごとに見られる生物や光景が変わる",
+      "source": "https://ms-dogashima.com/location/",
+      "quote": "季節毎に見れる生物や光景が変化します",
+      "checkedAt": "2026-11-02"
+    },
+    {
+      "claim": "群れや地形などを見るなら浮島根",
+      "source": "https://ms-dogashima.com/qa/",
+      "quote": "群れや地形などワイドに攻めるなら『浮島根』",
+      "checkedAt": "2026-11-02"
+    },
+    {
+      "claim": "ウミウシ・甲殻類などを見るならカマガ根",
+      "source": "https://ms-dogashima.com/qa/",
+      "quote": "ウミウシ、甲殻類などマクロに攻めるなら『ｶﾏｶﾞ根』",
+      "checkedAt": "2026-11-02"
+    },
+    {
+      "claim": "のんびり潜るなら浮島ビーチ",
+      "source": "https://ms-dogashima.com/qa/",
+      "quote": "久しぶりでのんびり～と潜りたいなら『浮島ﾋﾞｰﾁ』",
+      "checkedAt": "2026-11-02"
+    },
+    {
+      "claim": "おひとり様から参加できる",
+      "source": "https://ms-dogashima.com/qa/",
+      "quote": "おひとり様から参加できます",
+      "checkedAt": "2026-11-02"
+    },
+    {
+      "claim": "コンタクトレンズを着けて潜れる",
+      "source": "https://ms-dogashima.com/qa/",
+      "quote": "コンタクトレンズを装着して潜ることができます",
+      "checkedAt": "2026-11-02"
+    },
+    {
+      "claim": "当日に潜れない可能性がある場合は2〜3日前に連絡する",
+      "source": "https://ms-dogashima.com/qa/",
+      "quote": "当日に潜れない可能性がある場合は２～３日前には連絡を致します",
+      "checkedAt": "2026-11-02"
+    },
+    {
+      "claim": "料金は後払い",
+      "source": "https://ms-dogashima.com/qa/",
+      "quote": "後払いにて対応しております",
+      "checkedAt": "2026-11-02"
+    },
+    {
+      "claim": "初めての人向けにレンタル器材がある",
+      "source": "https://ms-dogashima.com/qa/",
+      "quote": "初めての方はレンタルがありますので",
+      "checkedAt": "2026-11-02"
+    },
+    {
+      "claim": "蓮台寺駅から東海バスで堂ヶ島まで約50分",
+      "source": "https://ms-dogashima.com/about/",
+      "quote": "所要時間：約50分",
+      "checkedAt": "2026-11-02"
+    },
+    {
+      "claim": "修善寺駅から東海バスで約1時間32分",
+      "source": "https://ms-dogashima.com/about/",
+      "quote": "所要時間：約１時間32分",
+      "checkedAt": "2026-11-02"
+    },
+    {
+      "claim": "蓮台寺駅への送迎をしている",
+      "source": "https://ms-dogashima.com/qa/",
+      "quote": "電車の場合は『蓮台寺駅』の送迎をしています",
+      "checkedAt": "2026-11-02"
+    },
+    {
+      "claim": "午前の部の送迎は予約のうえ蓮台寺駅に8時47分までに着く",
+      "source": "https://ms-dogashima.com/experience-diving/",
+      "quote": "蓮台寺駅に8:47迄におこしください",
+      "checkedAt": "2026-11-02"
+    },
+    {
+      "claim": "宿泊の人には近隣のホテルなどへの送迎もある",
+      "source": "https://ms-dogashima.com/qa/",
+      "quote": "宿泊の方は近隣のホテルなどの送迎も行っています",
+      "checkedAt": "2026-11-02"
+    },
+    {
+      "claim": "支払いは現金・各種カード・PayPayが使える",
+      "source": "https://ms-dogashima.com/about/",
+      "quote": "PayPayをご利用いただけます",
+      "checkedAt": "2026-11-02"
+    },
+    {
+      "claim": "オーナーは堂ヶ島生まれ堂ヶ島育ち",
+      "source": "https://ms-dogashima.com/",
+      "quote": "堂ヶ島生まれ堂ヶ島育ちのオーナー",
+      "checkedAt": "2026-11-02"
+    },
+    {
+      "claim": "オーシャンダイバーなどのダイバートレーニングがある",
+      "source": "https://ms-dogashima.com/about/",
+      "quote": "オーシャンダイバー／オーシャンダイバープラス／スポーツダイバー",
+      "checkedAt": "2026-11-02"
+    },
+    {
+      "claim": "ファンダイビングの目玉は天窓洞からのボート出航",
+      "source": "https://ms-dogashima.com/fun-diving/",
+      "quote": "当店ファンダイビングの目玉は、堂ヶ島名所の天窓洞からのボート出航",
+      "checkedAt": "2026-11-02"
+    },
+    {
+      "claim": "心身ともに健康であれば参加できる",
+      "source": "https://ms-dogashima.com/experience-diving/",
+      "quote": "心身共に健康な方でしたらどなたでも参加可能です",
+      "checkedAt": "2026-11-02"
+    }
+  ],
+  "sources": [
+    {
+      "label": "公式サイト",
+      "url": "https://ms-dogashima.com/"
+    },
+    {
+      "label": "公式サイト(当店について)",
+      "url": "https://ms-dogashima.com/about/"
+    },
+    {
+      "label": "公式サイト(コース)",
+      "url": "https://ms-dogashima.com/course/"
+    },
+    {
+      "label": "公式サイト(ロケーション)",
+      "url": "https://ms-dogashima.com/location/"
+    },
+    {
+      "label": "公式サイト(ファンダイビング)",
+      "url": "https://ms-dogashima.com/fun-diving/"
+    },
+    {
+      "label": "公式サイト(体験ダイビング)",
+      "url": "https://ms-dogashima.com/experience-diving/"
+    },
+    {
+      "label": "公式サイト(ライセンス取得)",
+      "url": "https://ms-dogashima.com/license-acquisition/"
+    },
+    {
+      "label": "公式サイト(オプション)",
+      "url": "https://ms-dogashima.com/option/"
+    },
+    {
+      "label": "公式サイト(無人島スノーケル)",
+      "url": "https://ms-dogashima.com/snorkel/"
+    },
+    {
+      "label": "公式サイト(よくある質問)",
+      "url": "https://ms-dogashima.com/qa/"
+    },
+    {
+      "label": "Google マップ",
+      "url": "https://maps.google.com/?cid=409763389587488556"
+    }
+  ],
+  "notes": "automation/v2/write.mjs が 2026-11-02 に claude -p --model sonnet で作成。事実の裏取り: 58/58 件(quote が出どころにあるもの)。裏取りに通らなかった facts は載せていない。"
+}

@@ -1,0 +1,32 @@
+{
+  "tab": "トリニティアポ",
+  "tabEn": "tri-sports",
+  "row": 123,
+  "sheet": {
+    "name": "IWANOKO",
+    "address": "",
+    "url": "https://www.google.com/maps/place/IWANOKO/@38.2722347,140.7763985,17z/data=!3m1!4b1!4m6!3m5!1s0x5f8a2900415dfb6b:0x5cd5590fffc246c3!8m2!3d38.2722347!4d140.7763985!16s%2Fg%2F11nqlq5sjz!5m1!1e4?authuser=0&hl=ja&entry=ttu&g_ep=EgoyMDI2MTAxNC4wIKXMDSoASAFQAw%3D%3D",
+    "type": "レジャー",
+    "d1": "",
+    "d2": ""
+  },
+  "urlKind": "place",
+  "route": "第1段(verify-gbp.mjs)で確認済み",
+  "verdict": "一致",
+  "verdictReason": "オーナー基準で確認(2026-11-02): シートの電話 09014907791 が公式サイト iwanoko.com の問い合わせ電話 090-1490-7791(トップ・クライミング事業所ページ)と一致。公式 Instagram(@iwanoko2023)のプロフィールに「2026年7月に青葉区下愛子にクライミングスクール&ジムをオープン」「同住所にて事務所」とあり、GBP の IWANOKO(宮城県仙台市青葉区下愛子二本松24-4・カテゴリ スポーツジム・cid 6689350746779043523)の所在町名・業態と一致。番地までの文字での裏付けは公開テキストに無い(Instagram は番地なし、マップは WebFetch で本文が取れず)。店名完全一致+電話一致+町名・業態一致の3点で同じ店と判断。なお旧サイト情報の所在(マイベストプロ・用語ページ)は泉区松陵4-15-1 だが、これは代表の旧事業所で、2026年7月のジム開設前の住所とみられる。",
+  "place": {
+    "name": "IWANOKO",
+    "address": "宮城県仙台市青葉区下愛子二本松２４−４",
+    "category": "スポーツジム",
+    "lat": 38.2722347,
+    "lng": 140.7763985,
+    "gbpUrl": "https://maps.google.com/?cid=6689350746779043523",
+    "phone": null,
+    "website": null,
+    "hours": null,
+    "reserveLinks": [],
+    "statusSignals": [],
+    "closedSignal": false
+  },
+  "fetchedAt": "2026-11-02T03:04:18.264Z"
+}

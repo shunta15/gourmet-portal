@@ -1,0 +1,32 @@
+{
+  "tab": "トリニティアポ",
+  "tabEn": "tri-life",
+  "row": 304,
+  "sheet": {
+    "name": "木下園製茶工場",
+    "address": "",
+    "url": "https://maps.google.com/?cid=13842963242455490651",
+    "type": "",
+    "d1": "",
+    "d2": ""
+  },
+  "urlKind": "cid",
+  "route": "第1段(verify-gbp.mjs)で確認済み",
+  "verdict": "一致",
+  "verdictReason": "オーナー基準で確認(2026-11-02): 住所が番地まで一致(電話が違っても同じ店)。",
+  "place": {
+    "name": "木下園製茶工場",
+    "address": "東京都東大和市清水５丁目１０８９−１",
+    "category": "茶葉販売店",
+    "lat": 35.7477142,
+    "lng": 139.4442366,
+    "gbpUrl": "https://maps.google.com/?cid=13842963242455490651",
+    "phone": "042-565-1627",
+    "website": "https://tokyotea.official.ec/",
+    "hours": null,
+    "reserveLinks": [],
+    "statusSignals": [],
+    "closedSignal": false
+  },
+  "fetchedAt": "2026-11-02T03:27:58.986Z"
+}

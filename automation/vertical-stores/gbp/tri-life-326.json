@@ -1,0 +1,32 @@
+{
+  "tab": "トリニティアポ",
+  "tabEn": "tri-life",
+  "row": 326,
+  "sheet": {
+    "name": "白雲寺",
+    "address": "",
+    "url": "https://www.google.com/maps/search/?api=1&query=%E7%99%BD%E9%9B%B2%E5%AF%BA%20058-793-1008%20%E3%80%92480-0102%20%E6%84%9B%E7%9F%A5%E7%9C%8C%E4%B8%B9%E7%BE%BD%E9%83%A1%E6%89%B6%E6%A1%91%E7%94%BA%E9%AB%98%E9%9B%84%E7%B1%B3%E3%83%8E%E5%B1%B1%EF%BC%94%EF%BC%92",
+    "type": "寺",
+    "d1": "",
+    "d2": ""
+  },
+  "urlKind": "mapsApi",
+  "route": "第1段(verify-gbp.mjs)で確認済み",
+  "verdict": "一致",
+  "verdictReason": "手がかり: 店名＋電話＋住所(番地まで)。電話が一致／店名: exact(シート「白雲寺」/ マップ「白雲寺」)／住所(シート): exact・町名・番地とも一致",
+  "place": {
+    "name": "白雲寺",
+    "address": "愛知県丹羽郡扶桑町高雄米ノ山４２",
+    "category": "仏教寺院",
+    "lat": 35.3663611,
+    "lng": 136.9274801,
+    "gbpUrl": "https://maps.google.com/?cid=7600870476816649849",
+    "phone": "0587-93-1008",
+    "website": "https://hakuunji.com/",
+    "hours": null,
+    "reserveLinks": [],
+    "statusSignals": [],
+    "closedSignal": false
+  },
+  "fetchedAt": "2026-11-02T02:39:13.542Z"
+}

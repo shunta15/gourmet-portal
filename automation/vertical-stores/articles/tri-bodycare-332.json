@@ -1,0 +1,292 @@
+{
+  "key": "tri-bodycare-332",
+  "headline": "愛知県豊橋市中岩田にある、身体のゆがみとむくみを専門にしたカイロプラクティックとリンパケアの店。出張にも対応している",
+  "lede": "豊橋市にある「リンパケアカイロ citrine」です。身体のゆがみを整えるカイロプラクティックと、リンパケアに特化しています。予約優先制で、受付は10時から22時までです。",
+  "sections": [
+    {
+      "heading": "施術の内容",
+      "body": "カイロプラクティックは、1895年にアメリカで創始された手技療法で、脊髄の調整・矯正が主です。店では「薬を使わない西洋医学」と位置づけています。施術はオールハンドで丁寧に行い、リンパケアでは体内の毒素の排泄(デトックス)を促します。"
+    },
+    {
+      "heading": "施術の流れとコース",
+      "body": "受付でカウンセリングシートを記入し、問診のあと、身体のバランスや腕・首の動きを見るビフォー検査を行います。施術後は関節の動きなどのアフター検査があり、今後の施術方針の提案まで続きます。コースは、カイロコース、ポイントリンパケア、リンパデトックス、むくみ集中コース、寝るだけダイエット、ヘッドスパ(脳脊髄液調整)です。"
+    },
+    {
+      "heading": "場所と予約",
+      "body": "住所は豊橋市中岩田3丁目24-6です。駐車場は3台分あり、岩田運動公園から徒歩15分、豊鉄市内線の運動公園前駅から920mの距離です。予約優先制で、受付は10時から22時、休みは不定休です。営業時間外の相談にも対応します。"
+    },
+    {
+      "heading": "店の特色",
+      "body": "出張サービスにも対応し、簡易施術ベッドを持参して施術します。女性スタッフも在籍しています。リンパケアカイロの施術では、カーテンや間仕切りで周囲の気配を遮断できるよう配慮し、着替えをお願いしています。店名のcitrine(シトリン)は11月の誕生石で、別名は「太陽の石」、石言葉は「希望」です。"
+    }
+  ],
+  "menus": [
+    {
+      "name": "カイロコース"
+    },
+    {
+      "name": "ポイントリンパケア"
+    },
+    {
+      "name": "リンパデトックス"
+    },
+    {
+      "name": "むくみ集中コース"
+    },
+    {
+      "name": "寝るだけダイエット"
+    },
+    {
+      "name": "ヘッドスパ(脳脊髄液調整)"
+    }
+  ],
+  "tags": [
+    {
+      "tag": "女性スタッフ",
+      "factIndex": 20
+    },
+    {
+      "tag": "夜遅くまで営業",
+      "factIndex": 26
+    }
+  ],
+  "facts": [
+    {
+      "claim": "身体のゆがみとむくみ専門",
+      "source": "https://chirorelax.jp/",
+      "quote": "身体のゆがみとむくみ専門",
+      "checkedAt": "2026-11-02"
+    },
+    {
+      "claim": "身体の歪みを整えるカイロプラクティックとリンパケアに特化している",
+      "source": "https://chirorelax.jp/",
+      "quote": "むくみの緩和を促す(リンパケア)に特化しています。",
+      "checkedAt": "2026-11-02"
+    },
+    {
+      "claim": "カイロプラクティックは1895年にアメリカで創始された手技療法",
+      "source": "https://chirorelax.jp/chiro_lymph_care/",
+      "quote": "1895年、アメリカで創始された手技療法です。",
+      "checkedAt": "2026-11-02"
+    },
+    {
+      "claim": "カイロプラクティックは脊髄の調整・矯正が主",
+      "source": "https://chirorelax.jp/chiro_lymph_care/",
+      "quote": "脊髄(せきずい)の調整・矯正が主。",
+      "checkedAt": "2026-11-02"
+    },
+    {
+      "claim": "薬を使わない西洋医学と位置づけている",
+      "source": "https://chirorelax.jp/chiro_lymph_care/",
+      "quote": "「薬を使わない西洋医学」",
+      "checkedAt": "2026-11-02"
+    },
+    {
+      "claim": "施術はオールハンド",
+      "source": "https://chirorelax.jp/annai_price/",
+      "quote": "オールハンドで丁寧に施術いたします。",
+      "checkedAt": "2026-11-02"
+    },
+    {
+      "claim": "受付でカウンセリングシートを記入する",
+      "source": "https://chirorelax.jp/annai_price/",
+      "quote": "カウンセリングシートをご記入いただきます。",
+      "checkedAt": "2026-11-02"
+    },
+    {
+      "claim": "ビフォー検査で身体のバランスや腕・首の動きを見る",
+      "source": "https://chirorelax.jp/annai_price/",
+      "quote": "身体のバランス、腕や首はどこまで動くか筋力チェックも。",
+      "checkedAt": "2026-11-02"
+    },
+    {
+      "claim": "施術後に関節の動きなどのアフター検査を行う",
+      "source": "https://chirorelax.jp/annai_price/",
+      "quote": "施術後に改めて関節の動きなどの検査を行います。",
+      "checkedAt": "2026-11-02"
+    },
+    {
+      "claim": "今後の施術方針を提案する",
+      "source": "https://chirorelax.jp/annai_price/",
+      "quote": "あなたに必要な今後の施術方針をご提案",
+      "checkedAt": "2026-11-02"
+    },
+    {
+      "claim": "メニューにカイロコースがある",
+      "source": "https://chirorelax.jp/annai_price/",
+      "quote": "カイロコース",
+      "checkedAt": "2026-11-02"
+    },
+    {
+      "claim": "メニューにポイントリンパケアがあり、デコルテ・顔・肩首回り・お腹・脚から選ぶ",
+      "source": "https://chirorelax.jp/annai_price/",
+      "quote": "デコルテ・顔・肩首回り・",
+      "checkedAt": "2026-11-02"
+    },
+    {
+      "claim": "メニューにリンパデトックスがある",
+      "source": "https://chirorelax.jp/annai_price/",
+      "quote": "リンパデトックス",
+      "checkedAt": "2026-11-02"
+    },
+    {
+      "claim": "メニューにむくみ集中コースがある",
+      "source": "https://chirorelax.jp/annai_price/",
+      "quote": "むくみ集中コース",
+      "checkedAt": "2026-11-02"
+    },
+    {
+      "claim": "メニューに寝るだけダイエットがある",
+      "source": "https://chirorelax.jp/annai_price/",
+      "quote": "寝るだけダイエット",
+      "checkedAt": "2026-11-02"
+    },
+    {
+      "claim": "メニューにヘッドスパ(脳脊髄液調整)がある",
+      "source": "https://chirorelax.jp/annai_price/",
+      "quote": "ヘッドスパ(脳脊髄液調整)",
+      "checkedAt": "2026-11-02"
+    },
+    {
+      "claim": "リンパケアカイロ施術ではカーテンや間仕切りで周囲の気配を遮断できるよう配慮している",
+      "source": "https://chirorelax.jp/chiro_lymph_care/",
+      "quote": "カーテンや間仕切りを使って周囲の気配を遮断できるよう配慮。",
+      "checkedAt": "2026-11-02"
+    },
+    {
+      "claim": "リンパケアカイロメニューは着替えが必要",
+      "source": "https://chirorelax.jp/chiro_lymph_care/",
+      "quote": "リンパケアカイロメニューの場合はお着替えをお願い",
+      "checkedAt": "2026-11-02"
+    },
+    {
+      "claim": "出張サービスに対応している",
+      "source": "https://chirorelax.jp/annai_price/",
+      "quote": "出張サービスも対応",
+      "checkedAt": "2026-11-02"
+    },
+    {
+      "claim": "簡易施術ベッドを持参して出張施術を行う",
+      "source": "https://chirorelax.jp/annai_price/",
+      "quote": "簡易施術ベッドを持参して施術も行っています。",
+      "checkedAt": "2026-11-02"
+    },
+    {
+      "claim": "女性スタッフが在籍している",
+      "source": "https://chirorelax.jp/annai_price/",
+      "quote": "女性スタッフも在籍しておりますので",
+      "checkedAt": "2026-11-02"
+    },
+    {
+      "claim": "所在地は愛知県豊橋市中岩田3丁目24-6",
+      "source": "https://chirorelax.jp/tokuteishoutorihiki/",
+      "quote": "愛知県豊橋市中岩田3丁目24-6",
+      "checkedAt": "2026-11-02"
+    },
+    {
+      "claim": "駐車場は3台",
+      "source": "https://chirorelax.jp/shop_access/",
+      "quote": "駐車場３台",
+      "checkedAt": "2026-11-02"
+    },
+    {
+      "claim": "岩田運動公園から徒歩15分",
+      "source": "https://chirorelax.jp/shop_access/",
+      "quote": "岩田運動公園から徒歩15分",
+      "checkedAt": "2026-11-02"
+    },
+    {
+      "claim": "運動公園前駅(豊鉄市内線)から920m",
+      "source": "https://chirorelax.jp/shop_access/",
+      "quote": "運動公園前駅(愛知)（920m）",
+      "checkedAt": "2026-11-02"
+    },
+    {
+      "claim": "予約優先制",
+      "source": "https://chirorelax.jp/",
+      "quote": "予約優先制",
+      "checkedAt": "2026-11-02"
+    },
+    {
+      "claim": "受付時間は10時から22時",
+      "source": "https://chirorelax.jp/",
+      "quote": "受付時間 10：00 〜 22：00",
+      "checkedAt": "2026-11-02"
+    },
+    {
+      "claim": "営業時間外の相談に対応する",
+      "source": "https://chirorelax.jp/",
+      "quote": "営業時間外ご相談 対応致します。",
+      "checkedAt": "2026-11-02"
+    },
+    {
+      "claim": "不定休",
+      "source": "https://chirorelax.jp/",
+      "quote": "不定休",
+      "checkedAt": "2026-11-02"
+    },
+    {
+      "claim": "店名のcitrineは11月の誕生石",
+      "source": "https://chirorelax.jp/",
+      "quote": "店名のcitrine(シトリン)は11月の誕生石(宝石)。",
+      "checkedAt": "2026-11-02"
+    },
+    {
+      "claim": "別名は太陽の石、石言葉は希望",
+      "source": "https://chirorelax.jp/",
+      "quote": "別名「太陽の石」石言葉は「希望」。",
+      "checkedAt": "2026-11-02"
+    },
+    {
+      "claim": "施術者・運営者は山野一明",
+      "source": "https://chirorelax.jp/tokuteishoutorihiki/",
+      "quote": "運営者 山野 一明",
+      "checkedAt": "2026-11-02"
+    },
+    {
+      "claim": "地域密着の施術活動を行っている",
+      "source": "https://chirorelax.jp/",
+      "quote": "地域密着の施術活動を行っています。",
+      "checkedAt": "2026-11-02"
+    },
+    {
+      "claim": "リンパケアは体内の毒素の排泄(デトックス)を促す",
+      "source": "https://chirorelax.jp/chiro_lymph_care/",
+      "quote": "体内の毒素の排泄（デトックス）を促し",
+      "checkedAt": "2026-11-02"
+    },
+    {
+      "claim": "問診で生活習慣や気になる症状を確認する",
+      "source": "https://chirorelax.jp/annai_price/",
+      "quote": "生活習慣、気になる症状をチェック。",
+      "checkedAt": "2026-11-02"
+    }
+  ],
+  "sources": [
+    {
+      "label": "公式サイト",
+      "url": "https://chirorelax.jp/"
+    },
+    {
+      "label": "公式サイト(当店案内・コース)",
+      "url": "https://chirorelax.jp/annai_price/"
+    },
+    {
+      "label": "公式サイト(ショップ・アクセス)",
+      "url": "https://chirorelax.jp/shop_access/"
+    },
+    {
+      "label": "公式サイト(カイロ・リンパケア)",
+      "url": "https://chirorelax.jp/chiro_lymph_care/"
+    },
+    {
+      "label": "公式サイト(特定商取引法に基づく表記)",
+      "url": "https://chirorelax.jp/tokuteishoutorihiki/"
+    },
+    {
+      "label": "Google マップ",
+      "url": "https://maps.google.com/?cid=10382768648932735895"
+    }
+  ],
+  "notes": "automation/v2/write.mjs が 2026-11-02 に claude -p --model sonnet で作成。事実の裏取り: 35/35 件(quote が出どころにあるもの)。裏取りに通らなかった facts は載せていない。"
+}

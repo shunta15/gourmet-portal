@@ -1,0 +1,14 @@
+{
+  "name": "Soi",
+  "address": "新潟県新潟市中央区万代１丁目２−６ トーカンマンション 1Ｆ",
+  "lat": 37.915459,
+  "lng": 139.0570587,
+  "category": "居酒屋",
+  "hours": null,
+  "phone": "025-241-4818",
+  "website": "https://soi.jp/",
+  "priceRange": null,
+  "status": null,
+  "gbpUrl": "https://maps.google.com/?cid=7494674226735641750",
+  "fetchedAt": "2026-11-02T02:43:09.610Z"
+}

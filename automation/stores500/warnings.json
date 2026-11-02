@@ -3141,5 +3141,52 @@
       "営業時間が取れていない（noindex）",
       "cuisine は GBPカテゴリ"
     ]
+  },
+  "r845": {
+    "articleId": "宿カフェHaleLiko",
+    "name": "宿カフェ Hale Liko",
+    "warnings": [
+      "営業時間が取れていない（noindex）",
+      "cuisine は GBPカテゴリ"
+    ]
+  },
+  "r846": {
+    "articleId": "ますや旅館オーベルジュ",
+    "name": "ますや旅館 オーベルジュ",
+    "warnings": [
+      "営業時間が取れていない（noindex）",
+      "cuisine は 既定"
+    ]
+  },
+  "r847": {
+    "articleId": "ほらふき亭本店",
+    "name": "ほらふき亭 本店",
+    "warnings": [
+      "営業時間が取れていない（noindex）"
+    ]
+  },
+  "r849": {
+    "articleId": "Soi",
+    "name": "Soi",
+    "warnings": [
+      "営業時間が取れていない（noindex）",
+      "cuisine は GBPカテゴリ"
+    ]
+  },
+  "r844": {
+    "articleId": "cafe舞楽",
+    "name": "cafe舞楽",
+    "warnings": [
+      "営業時間が取れていない（noindex）",
+      "cuisine は GBPカテゴリ"
+    ]
+  },
+  "r848": {
+    "articleId": "Cafemomいきいきサロンひまわり",
+    "name": "Cafemom いきいきサロンひまわり",
+    "warnings": [
+      "営業時間が取れていない（noindex）",
+      "cuisine は GBPカテゴリ"
+    ]
   }
 }

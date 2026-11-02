@@ -1,0 +1,32 @@
+{
+  "tab": "トリニティアポ",
+  "tabEn": "tri-life",
+  "row": 143,
+  "sheet": {
+    "name": "便利屋 愛三和",
+    "address": "",
+    "url": "https://www.google.com/search?q=046-855-5160+%E4%BE%BF%E5%88%A9%E5%B1%8B+%E6%84%9B%E4%B8%89%E5%92%8C+%E3%82%88%E3%81%BF%E3%81%8B%E3%81%9F&sca_esv=52bfc3f059da9228&hl=ja&biw=1111&bih=822&sxsrf=APpeQnv5cPZQtiiwEhUfd1PkVjQD_v308Q%3A1792487334801&ei=pi_Xaua5MLmavr0P8NXc-Qs&uact=5&oq=046-855-5160+%E4%BE%BF%E5%88%A9%E5%B1%8B+%E6%84%9B%E4%B8%89%E5%92%8C+%E3%82%88%E3%81%BF%E3%81%8B%E3%81%9F&gs_lp=Egxnd3Mtd2l6LXNlcnAiLTA0Ni04NTUtNTE2MCDkvr_liKnlsYsg5oSb5LiJ5ZKMIOOCiOOBv-OBi-OBn0gAUABYAHAAeACQAQCYAQCgAQCqAQC4AQPIAQCYAgCgAgCYAwCSBwCgBwCyBwC4BwDCBwDIBwCACAE&sclient=gws-wiz-serp",
+    "type": "便利屋",
+    "d1": "",
+    "d2": ""
+  },
+  "urlKind": "search",
+  "route": "第1段(verify-gbp.mjs)で確認済み",
+  "verdict": "一致",
+  "verdictReason": "オーナー基準で確認(2026-11-02): verify-2026-10-27.json の記録: シート電話 046-855-5160 と GBP「愛三和」(神奈川県横須賀市長井３丁目２９−２９)の電話 046-855-5160 が一致(カテゴリ便利屋)。GBP の website は https://benriya-aisanwa.studio.site/ で、そのページ見出しは「横須賀市の便利屋愛三和」。ヨコスカイチバンの掲載ページも電話 046-855-5160・所在地「神奈川県横須賀市長井」・HP http://www.benriya-aisanwa.com/ で一致。cid 17002340814921578892 は URL の 0xebf472e38f86b98c を10進にした値と一致(確認済み)。注: verify-2026-11-02 / 10-29 には 143 の記録なし(10-27 のみ)。",
+  "place": {
+    "name": "愛三和",
+    "address": "神奈川県横須賀市長井３丁目２９−２９",
+    "category": "便利屋",
+    "lat": 35.206708,
+    "lng": 139.6146254,
+    "gbpUrl": "https://maps.google.com/?cid=17002340814921578892",
+    "phone": "046-855-5160",
+    "website": "https://benriya-aisanwa.studio.site/",
+    "hours": null,
+    "reserveLinks": [],
+    "statusSignals": [],
+    "closedSignal": false
+  },
+  "fetchedAt": "2026-11-02T03:05:48.260Z"
+}

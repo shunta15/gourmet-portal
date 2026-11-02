@@ -7895,6 +7895,129 @@
         ],
         "checkedAt": "2026-10-29"
       }
+    },
+    {
+      "id": "bo0117",
+      "vertical": "bodycare",
+      "category": "seitai",
+      "name": "リンパケアカイロ citrine",
+      "pref": "aichi",
+      "cityName": "豊橋市",
+      "address": "愛知県豊橋市中岩田3丁目24-6",
+      "lat": 34.7507218,
+      "lng": 137.4264449,
+      "phone": "0532-69-2322",
+      "url": "https://chirorelax.jp/",
+      "website": "https://chirorelax.jp/",
+      "mapUrl": "https://maps.google.com/?cid=10382768648932735895",
+      "image": "/_portal/vshops/tri-bodycare-332/g01.jpg",
+      "images": [
+        "/_portal/vshops/tri-bodycare-332/g01.jpg",
+        "/_portal/vshops/tri-bodycare-332/g03.jpg",
+        "/_portal/vshops/tri-bodycare-332/g04.jpg",
+        "/_portal/vshops/tri-bodycare-332/g10.jpg"
+      ],
+      "photos": [
+        {
+          "path": "/_portal/vshops/tri-bodycare-332/g01.jpg",
+          "what": "黄色い外壁の建物の1階に、CITRINEの看板が出ている入口",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-bodycare-332/g03.jpg",
+          "what": "施術ベッドでうつ伏せの人に手を当てて施術する様子",
+          "width": 1170,
+          "height": 854
+        },
+        {
+          "path": "/_portal/vshops/tri-bodycare-332/g04.jpg",
+          "what": "緑の施術ベッドと背骨の模型がある室内",
+          "kind": "room",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-bodycare-332/g10.jpg",
+          "what": "施術ベッドと青く光る機器が置かれた薄暗い部屋",
+          "kind": "room",
+          "width": 900,
+          "height": 1200
+        }
+      ],
+      "tags": [
+        "女性スタッフ"
+      ],
+      "article": {
+        "headline": "愛知県豊橋市中岩田にある、身体のゆがみとむくみを専門にしたカイロプラクティックとリンパケアの店。出張にも対応している",
+        "lede": "豊橋市にある「リンパケアカイロ citrine」です。身体のゆがみを整えるカイロプラクティックと、リンパケアに特化しています。予約優先制で、受付は10時から22時までです。",
+        "sections": [
+          {
+            "heading": "施術の内容",
+            "body": "カイロプラクティックは、1895年にアメリカで創始された手技療法で、脊髄の調整・矯正が主です。店では「薬を使わない西洋医学」と位置づけています。施術はオールハンドで丁寧に行い、リンパケアでは体内の毒素の排泄(デトックス)を促します。"
+          },
+          {
+            "heading": "施術の流れとコース",
+            "body": "受付でカウンセリングシートを記入し、問診のあと、身体のバランスや腕・首の動きを見るビフォー検査を行います。施術後は関節の動きなどのアフター検査があり、今後の施術方針の提案まで続きます。コースは、カイロコース、ポイントリンパケア、リンパデトックス、むくみ集中コース、寝るだけダイエット、ヘッドスパ(脳脊髄液調整)です。"
+          },
+          {
+            "heading": "場所と予約",
+            "body": "住所は豊橋市中岩田3丁目24-6です。駐車場は3台分あり、岩田運動公園から徒歩15分、豊鉄市内線の運動公園前駅から920mの距離です。予約優先制で、受付は10時から22時、休みは不定休です。営業時間外の相談にも対応します。"
+          },
+          {
+            "heading": "店の特色",
+            "body": "出張サービスにも対応し、簡易施術ベッドを持参して施術します。女性スタッフも在籍しています。リンパケアカイロの施術では、カーテンや間仕切りで周囲の気配を遮断できるよう配慮し、着替えをお願いしています。店名のcitrine(シトリン)は11月の誕生石で、別名は「太陽の石」、石言葉は「希望」です。"
+          }
+        ],
+        "menus": [
+          {
+            "name": "カイロコース"
+          },
+          {
+            "name": "ポイントリンパケア"
+          },
+          {
+            "name": "リンパデトックス"
+          },
+          {
+            "name": "むくみ集中コース"
+          },
+          {
+            "name": "寝るだけダイエット"
+          },
+          {
+            "name": "ヘッドスパ(脳脊髄液調整)"
+          }
+        ],
+        "sources": [
+          {
+            "label": "公式サイト",
+            "url": "https://chirorelax.jp/"
+          },
+          {
+            "label": "公式サイト(当店案内・コース)",
+            "url": "https://chirorelax.jp/annai_price/"
+          },
+          {
+            "label": "公式サイト(ショップ・アクセス)",
+            "url": "https://chirorelax.jp/shop_access/"
+          },
+          {
+            "label": "公式サイト(カイロ・リンパケア)",
+            "url": "https://chirorelax.jp/chiro_lymph_care/"
+          },
+          {
+            "label": "公式サイト(特定商取引法に基づく表記)",
+            "url": "https://chirorelax.jp/tokuteishoutorihiki/"
+          },
+          {
+            "label": "Google マップ",
+            "url": "https://maps.google.com/?cid=10382768648932735895"
+          }
+        ],
+        "checkedAt": "2026-11-02"
+      }
     }
   ]
 }

@@ -1,0 +1,45 @@
+{
+  "key": "tri-bodycare-332",
+  "images": [
+    {
+      "path": "/_portal/vshops/tri-bodycare-332/g01.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9Rw1CRwK9Xazw-bFuuRsCOX7EPvrU0i316PfL2yb6WH7AmhP-NX66SrGnoyO1H-Dpg5QDKQWNtlqx4LDlc1rZ9odsqrGQ7taLM4CXInSH0thqMlTBex0KkpMovq4yVmWX0woov3WA=s1200",
+      "pageUrl": "https://maps.google.com/?cid=10382768648932735895",
+      "what": "黄色い外壁の建物の1階に、CITRINEの看板が出ている入口",
+      "kind": "exterior",
+      "width": 1200,
+      "height": 900,
+      "source": "Google マップ"
+    },
+    {
+      "path": "/_portal/vshops/tri-bodycare-332/g03.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9TJgzATlFi5gCwC15YaUU0fia0pqg6-gRs6VHxafkKHSGcsSeRfmlZPURkkSbYbkw3OVssQZ-7YoXKuqgoceUP7ZydMUtuSV6TDyQSZX2NzBssfiIa8YHCVEVrzTy_WMjw7Oisy=s1200",
+      "pageUrl": "https://maps.google.com/?cid=10382768648932735895",
+      "what": "施術ベッドでうつ伏せの人に手を当てて施術する様子",
+      "width": 1170,
+      "height": 854,
+      "source": "Google マップ"
+    },
+    {
+      "path": "/_portal/vshops/tri-bodycare-332/g04.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9Q0kHa2Ui81h9uw6Qlx9DBXYg2JVOtxPlZ9YPV8wL0vdPHcHXxL5xVzBloXTpgGhCAAxLkUdwm5orZ4Cb5j3sucmSgouWizrcSzfn0kmf0Oe0CxgDGhbV5I2OfmNRq2_GO28MOR9Q=s1200",
+      "pageUrl": "https://maps.google.com/?cid=10382768648932735895",
+      "what": "緑の施術ベッドと背骨の模型がある室内",
+      "kind": "room",
+      "width": 1200,
+      "height": 900,
+      "source": "Google マップ"
+    },
+    {
+      "path": "/_portal/vshops/tri-bodycare-332/g10.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9S5uP_eNRdRt_vwHgPjC512tAt75BFXXGwbDU3gix8ccALddGfkXlaTyyhy3mzU_k4eqfG2WbJb8a32KpZEGDLUUwP6GSX34hUrHxFPHMgLki3UmLn84teU_WFp7ds1KksVjdxWcyO1eZOC=s1200",
+      "pageUrl": "https://maps.google.com/?cid=10382768648932735895",
+      "what": "施術ベッドと青く光る機器が置かれた薄暗い部屋",
+      "kind": "room",
+      "width": 900,
+      "height": 1200,
+      "source": "Google マップ"
+    }
+  ],
+  "note": "automation/v2/write.mjs が 2026-11-02T05:21:20.980Z に取得。店の実写だけ(AI 画像・汎用画像・地図・ロゴ・顔が大きい画像は除外)。"
+}

@@ -1,0 +1,366 @@
+{
+  "key": "tri-activity-333",
+  "headline": "長崎県対馬市上県町佐護にある木工旋盤の工房。対馬で採れた木で器やボールペンを作る体験と、民泊を行っている",
+  "lede": "対馬市にある「対馬ヤマネコ工房」です。木材を高速回転させて削る木工旋盤で、お盆、サラダボール、湯呑、ボールペン、アクセサリーなどを作れます。2012年に工房を開き、2019年からは民泊も行っています。",
+  "sections": [
+    {
+      "heading": "体験の内容",
+      "body": "木工旋盤は、木材をろくろのように高速回転させながら刃を当てて削り、丸みを帯びた木工品を作る方法です。作れるのは、お盆、サラダボール、湯呑、時計、ボールペン、アクセサリーなどで。塗装はウレタン系かオイル系から選べます。所要時間は一品2〜3時間です。"
+    },
+    {
+      "heading": "体験の進み方と準備",
+      "body": "最初に木工旋盤の基礎と刃物の取り扱いを学び、角材を丸めて刃物に慣れます。削り方や刃の入れ方、動かし方まで教わり、作業中もサポートがあるため、初めての人や女性でも参加できます。木を削ると多くの木くずが出て服に付くので、汚れてもよい服装が向き、帽子とタオルで衣服や髪への付着を防げます。ゴーグルとマスクは、必要に応じて民泊側で用意されます。"
+    },
+    {
+      "heading": "日程と参加の条件",
+      "body": "体験は1月から12月まで行われ、平日は9時から12時の午前中のみ、土日祝は9時から17時です。終日体験できるのは土日祝だけで、定休日は元日です。申し込みは2〜3日前までで、対象年齢は12歳以上75歳以下、小学校高学年は要相談です。工房は屋根付きなので、雨の日でも体験できます。"
+    },
+    {
+      "heading": "場所とアクセス",
+      "body": "住所は対馬市上県町佐護北里1179で、田んぼが広がる佐護にあります。車は、厳原港から約1時間30分、対馬空港から約1時間10分、比田勝港から約30分です。路線バスは「佐護」バス停から徒歩約10分で、「対馬ヤマネコ工房」の看板が矢印になっています。道が狭く、送迎サービスはありません。宿の前には3台まで駐車できます。"
+    }
+  ],
+  "menus": [
+    {
+      "name": "木工旋盤体験"
+    },
+    {
+      "name": "山のガイド"
+    },
+    {
+      "name": "遊漁船での釣り体験"
+    },
+    {
+      "name": "ヤマネコ里山ウォッチング"
+    }
+  ],
+  "tags": [
+    {
+      "tag": "雨の日",
+      "factIndex": 14
+    },
+    {
+      "tag": "初心者歓迎",
+      "factIndex": 42
+    },
+    {
+      "tag": "駐車場あり",
+      "factIndex": 33
+    }
+  ],
+  "facts": [
+    {
+      "claim": "木工旋盤で、お盆・サラダボール・湯呑・時計・ボールペン・アクセサリーなどを作る",
+      "source": "https://www.nagasaki-tabinet.com/islands/experience/64633",
+      "quote": "お盆、サラダボール、湯呑、時計、ボールペン、アクセサリー",
+      "checkedAt": "2026-11-02"
+    },
+    {
+      "claim": "所要時間は一品2〜3時間",
+      "source": "https://www.nagasaki-tabinet.com/islands/experience/64633",
+      "quote": "所要時間は一品２，３時間です",
+      "checkedAt": "2026-11-02"
+    },
+    {
+      "claim": "体験は平日9時〜12時、土日祝9時〜17時",
+      "source": "https://www.nagasaki-tabinet.com/islands/experience/64633",
+      "quote": "平日9:00～12:00、土日祝9:00～17:00",
+      "checkedAt": "2026-11-02"
+    },
+    {
+      "claim": "定休日は元日",
+      "source": "https://www.nagasaki-tabinet.com/islands/experience/64633",
+      "quote": "定休日：元日",
+      "checkedAt": "2026-11-02"
+    },
+    {
+      "claim": "最初に木工旋盤の基礎と刃物の取り扱いを学ぶ",
+      "source": "https://www.nagasaki-tabinet.com/islands/experience/64633",
+      "quote": "木工旋盤の基礎、刃物の取り扱い等を初めに学んで頂きます",
+      "checkedAt": "2026-11-02"
+    },
+    {
+      "claim": "角材を丸めて刃物に慣れる",
+      "source": "https://www.nagasaki-tabinet.com/islands/experience/64633",
+      "quote": "角材を丸めることで刃物に慣れていただきます",
+      "checkedAt": "2026-11-02"
+    },
+    {
+      "claim": "塗装はウレタン系かオイル系から選べる",
+      "source": "https://www.nagasaki-tabinet.com/islands/experience/64633",
+      "quote": "塗装もウレタン系、オイル系などから選ぶことが出来ます",
+      "checkedAt": "2026-11-02"
+    },
+    {
+      "claim": "集合場所は対馬ヤマネコ工房(対馬市上県町佐護1179)",
+      "source": "https://www.nagasaki-tabinet.com/islands/experience/64633",
+      "quote": "対馬ヤマネコ工房（対馬市上県町佐護1179）",
+      "checkedAt": "2026-11-02"
+    },
+    {
+      "claim": "申し込みは2〜3日前まで",
+      "source": "https://www.nagasaki-tabinet.com/islands/experience/64633",
+      "quote": "2～3日前まで",
+      "checkedAt": "2026-11-02"
+    },
+    {
+      "claim": "対馬で採れた木を削って木工品を作る",
+      "source": "https://tsushima-gbt.com/programs/2564",
+      "quote": "対馬で採れた木を削って、世界でたった一つの木工品",
+      "checkedAt": "2026-11-02"
+    },
+    {
+      "claim": "木材をろくろのように高速回転させながら刃を当てて削る",
+      "source": "https://tsushima-gbt.com/programs/2564",
+      "quote": "木材をろくろのように高速回転させながら刃を当てて削り",
+      "checkedAt": "2026-11-02"
+    },
+    {
+      "claim": "丸みを帯びた木工品を作る方法",
+      "source": "https://tsushima-gbt.com/programs/2564",
+      "quote": "丸みを帯びた木工品を作りだす方法",
+      "checkedAt": "2026-11-02"
+    },
+    {
+      "claim": "難易度に応じて様々な作品を作れる",
+      "source": "https://tsushima-gbt.com/programs/2564",
+      "quote": "難易度に応じて様々な作品を作ることが出来ます",
+      "checkedAt": "2026-11-02"
+    },
+    {
+      "claim": "対象年齢は12歳以上75歳以下(小学校高学年は要相談)",
+      "source": "https://tsushima-gbt.com/programs/2564",
+      "quote": "12歳以上～75歳以下（小学校高学年の方は要相談）",
+      "checkedAt": "2026-11-02"
+    },
+    {
+      "claim": "雨天時でも体験できる",
+      "source": "https://tsushima-gbt.com/programs/2564",
+      "quote": "雨天時でも体験可能です",
+      "checkedAt": "2026-11-02"
+    },
+    {
+      "claim": "屋根付きの工房で体験する",
+      "source": "https://tsushima-gbt.com/programs/2564",
+      "quote": "屋根付きの工房での体験となります",
+      "checkedAt": "2026-11-02"
+    },
+    {
+      "claim": "木くずが服に付くため汚れてもよい服装が向く",
+      "source": "https://tsushima-gbt.com/programs/2564",
+      "quote": "汚れても良い服装を着用されることをお勧め致します",
+      "checkedAt": "2026-11-02"
+    },
+    {
+      "claim": "帽子・タオルで衣服や髪への木くずの付着を防ぐ",
+      "source": "https://tsushima-gbt.com/programs/2564",
+      "quote": "衣服の中や髪の毛への木くずの付着を防ぐため",
+      "checkedAt": "2026-11-02"
+    },
+    {
+      "claim": "ゴーグルとマスクは必要に応じて民泊側で用意する",
+      "source": "https://tsushima-gbt.com/programs/2564",
+      "quote": "必要に応じて民泊側にてご用意致します",
+      "checkedAt": "2026-11-02"
+    },
+    {
+      "claim": "終日体験できるのは土曜・日曜・祝祭日のみ",
+      "source": "https://tsushima-gbt.com/programs/2564",
+      "quote": "終日体験可能となるのは土曜・日曜、祝祭日のみ",
+      "checkedAt": "2026-11-02"
+    },
+    {
+      "claim": "平日の体験は午前中のみ",
+      "source": "https://tsushima-gbt.com/programs/2564",
+      "quote": "平日で体験をご希望の場合、午前中のみの実施",
+      "checkedAt": "2026-11-02"
+    },
+    {
+      "claim": "体験は1月から12月まで",
+      "source": "https://tsushima-gbt.com/programs/2564",
+      "quote": "1 ~ 12月",
+      "checkedAt": "2026-11-02"
+    },
+    {
+      "claim": "2012年に対馬で工房を開いた",
+      "source": "https://tsushima-gbt.com/posts/house/2545",
+      "quote": "2012年に対馬で工房を開き",
+      "checkedAt": "2026-11-02"
+    },
+    {
+      "claim": "2019年に民泊も始めた",
+      "source": "https://tsushima-gbt.com/posts/house/2545",
+      "quote": "2019年に民泊も始めました",
+      "checkedAt": "2026-11-02"
+    },
+    {
+      "claim": "工房の主人は島居佳都雄さん",
+      "source": "https://tsushima-gbt.com/posts/house/2545",
+      "quote": "島居佳都雄（しまいかつお）さん",
+      "checkedAt": "2026-11-02"
+    },
+    {
+      "claim": "遊漁船での釣り体験も提供できる",
+      "source": "https://tsushima-gbt.com/posts/house/2545",
+      "quote": "遊漁船での釣り体験も提供が可能です",
+      "checkedAt": "2026-11-02"
+    },
+    {
+      "claim": "山のガイドで体験に使う対馬の木について学べる",
+      "source": "https://tsushima-gbt.com/posts/house/2545",
+      "quote": "体験で使用する対馬の木について学んでみましょう",
+      "checkedAt": "2026-11-02"
+    },
+    {
+      "claim": "厳原港から車で約1時間30分",
+      "source": "https://tsushima-gbt.com/posts/house/2545",
+      "quote": "厳原港から約1時間30分",
+      "checkedAt": "2026-11-02"
+    },
+    {
+      "claim": "対馬空港から車で約1時間10分",
+      "source": "https://tsushima-gbt.com/posts/house/2545",
+      "quote": "対馬空港から約1時間10分",
+      "checkedAt": "2026-11-02"
+    },
+    {
+      "claim": "比田勝港から車で約30分",
+      "source": "https://tsushima-gbt.com/posts/house/2545",
+      "quote": "比田勝港から約30分",
+      "checkedAt": "2026-11-02"
+    },
+    {
+      "claim": "路線バスは「佐護」バス停から徒歩約10分",
+      "source": "https://tsushima-gbt.com/posts/house/2545",
+      "quote": "バス停より徒歩約10分",
+      "checkedAt": "2026-11-02"
+    },
+    {
+      "claim": "「対馬ヤマネコ工房」の看板が矢印になっている",
+      "source": "https://tsushima-gbt.com/posts/house/2545",
+      "quote": "の看板が矢印になります",
+      "checkedAt": "2026-11-02"
+    },
+    {
+      "claim": "道が狭い",
+      "source": "https://tsushima-gbt.com/posts/house/2545",
+      "quote": "道が狭いので、お車でお越しの方はご注意ください",
+      "checkedAt": "2026-11-02"
+    },
+    {
+      "claim": "宿の前に3台まで駐車できる",
+      "source": "https://tsushima-gbt.com/posts/house/2545",
+      "quote": "宿前に3台まで駐車可",
+      "checkedAt": "2026-11-02"
+    },
+    {
+      "claim": "送迎サービスはない",
+      "source": "https://tsushima-gbt.com/posts/house/2545",
+      "quote": "送迎サービスはご対応しておりません",
+      "checkedAt": "2026-11-02"
+    },
+    {
+      "claim": "佐護は田んぼが広がり、ツシマヤマネコが比較的多く見られる",
+      "source": "https://tsushima-gbt.com/posts/house/2545",
+      "quote": "希少なツシマヤマネコが比較的多く見られ、田んぼが広がる上県町佐護",
+      "checkedAt": "2026-11-02"
+    },
+    {
+      "claim": "民泊は土日を除き基本的に食事の提供がない",
+      "source": "https://tsushima-gbt.com/posts/house/2545",
+      "quote": "土日を除き、基本的にお食事の提供を行っておりません",
+      "checkedAt": "2026-11-02"
+    },
+    {
+      "claim": "食事を出さない場合は食材を持ち込んで別棟のキッチンを使える",
+      "source": "https://tsushima-gbt.com/posts/house/2545",
+      "quote": "別棟のキッチンをご自由にご使用いただけます",
+      "checkedAt": "2026-11-02"
+    },
+    {
+      "claim": "犬と猫を飼っている",
+      "source": "https://tsushima-gbt.com/posts/house/2545",
+      "quote": "当宿では犬・猫を飼っております",
+      "checkedAt": "2026-11-02"
+    },
+    {
+      "claim": "対馬野生生物保護センターは車で約20分",
+      "source": "https://tsushima-gbt.com/posts/house/2545",
+      "quote": "対馬野生生物保護センター（車で約20分）",
+      "checkedAt": "2026-11-02"
+    },
+    {
+      "claim": "天神多久頭魂神社は車で約10分",
+      "source": "https://tsushima-gbt.com/posts/house/2545",
+      "quote": "天神多久頭魂神社（車で約10分）",
+      "checkedAt": "2026-11-02"
+    },
+    {
+      "claim": "天神多久頭魂神社は天道信仰の中心地として知られた神社",
+      "source": "https://tsushima-gbt.com/posts/house/2545",
+      "quote": "対馬古来の信仰である天道信仰の中心地として知られた神社です",
+      "checkedAt": "2026-11-02"
+    },
+    {
+      "claim": "初めての人や女性でも大丈夫",
+      "source": "https://tsushima-gbt.com/posts/house/2545",
+      "quote": "初めてという方や女性の方でも大丈夫",
+      "checkedAt": "2026-11-02"
+    },
+    {
+      "claim": "削り方や刃の入れ方・動かし方まで教え、作業中もサポートする",
+      "source": "https://tsushima-gbt.com/posts/house/2545",
+      "quote": "削り方や刃の入れ方・動かし方まで丁寧に教え",
+      "checkedAt": "2026-11-02"
+    },
+    {
+      "claim": "作業場に主人の作品が並ぶ",
+      "source": "https://tsushima-gbt.com/posts/house/2545",
+      "quote": "作業場には宿主の作品が所狭しと並んでいます",
+      "checkedAt": "2026-11-02"
+    },
+    {
+      "claim": "削ったり時間が経ったりしないと仕上がりが分からないのも木工の奥深さ",
+      "source": "https://tsushima-gbt.com/posts/house/2545",
+      "quote": "どのような作品に仕上がるか分からない",
+      "checkedAt": "2026-11-02"
+    },
+    {
+      "claim": "ヤマネコ里山ウォッチングは夜の里山でヤマネコを見る体験",
+      "source": "https://tsushima-gbt.com/posts/house/2545",
+      "quote": "夜の里山でヤマネコウォッチ",
+      "checkedAt": "2026-11-02"
+    },
+    {
+      "claim": "Google マップの業種は木工所",
+      "source": "https://maps.google.com/?cid=5846149686446724570",
+      "quote": "木工所",
+      "checkedAt": "2026-11-02"
+    },
+    {
+      "claim": "電話は090-8834-0285",
+      "source": "https://maps.google.com/?cid=5846149686446724570",
+      "quote": "090-8834-0285",
+      "checkedAt": "2026-11-02"
+    }
+  ],
+  "sources": [
+    {
+      "label": "公式サイト(長崎県観光連盟・木工旋盤体験)",
+      "url": "https://www.nagasaki-tabinet.com/islands/experience/64633"
+    },
+    {
+      "label": "公式サイト(対馬グリーンブルーツーリズム・対馬ヤマネコ工房)",
+      "url": "https://tsushima-gbt.com/posts/house/2545"
+    },
+    {
+      "label": "公式サイト(対馬グリーンブルーツーリズム・木工旋盤体験)",
+      "url": "https://tsushima-gbt.com/programs/2564"
+    },
+    {
+      "label": "Google マップ",
+      "url": "https://maps.google.com/?cid=5846149686446724570"
+    }
+  ],
+  "notes": "automation/v2/write.mjs が 2026-11-02 に claude -p --model sonnet で作成。事実の裏取り: 49/49 件(quote が出どころにあるもの)。裏取りに通らなかった facts は載せていない。"
+}

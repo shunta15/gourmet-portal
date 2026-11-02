@@ -19021,6 +19021,306 @@ export const ARTICLE_STORES: Restaurant[] = [
       "金沢市"
     ],
     "featureId": "だいぬき屋"
+  },
+  {
+    "id": "r844",
+    "name": "cafe舞楽",
+    "cuisine": "カフェ・喫茶",
+    "area": "香川県・高松市",
+    "region": "kagawa",
+    "shape": "square",
+    "image": "/restaurants/teleapo-cafe舞楽/hero.jpg",
+    "heroImages": [
+      "/restaurants/teleapo-cafe舞楽/hero.jpg",
+      "/restaurants/teleapo-cafe舞楽/point1.jpg",
+      "/restaurants/teleapo-cafe舞楽/point2.jpg",
+      "/restaurants/teleapo-cafe舞楽/point3.jpg",
+      "/restaurants/teleapo-cafe舞楽/point4.jpg"
+    ],
+    "gallery": [
+      "/restaurants/teleapo-cafe舞楽/hero.jpg",
+      "/restaurants/teleapo-cafe舞楽/point1.jpg",
+      "/restaurants/teleapo-cafe舞楽/point2.jpg",
+      "/restaurants/teleapo-cafe舞楽/point3.jpg",
+      "/restaurants/teleapo-cafe舞楽/point4.jpg",
+      "/restaurants/teleapo-cafe舞楽/point5.jpg"
+    ],
+    "desc": "cafe舞楽(カフェ ブガク)は、香川県高松市東山崎町1098の石清水八幡宮 神明殿の境内にあるカフェである。",
+    "address": "香川県高松市東山崎町1098",
+    "hours": "—（訪問前に公式確認）",
+    "closed": "—（訪問前に公式確認）",
+    "seats": "200席",
+    "nearest": "—",
+    "phone": "087-847-7715",
+    "source": {
+      "label": "Google ビジネスプロフィール",
+      "url": "https://maps.google.com/?cid=1817509879304216300"
+    },
+    "body": [
+      "cafe舞楽は、香川県高松市にあるお店です。業態は「カフェ・喫茶」、所在地は香川県高松市東山崎町1098です。マチノワ編集部の特集記事では、「月ごとにメインが替わる月替わりランチ」・「会席ランチ「月」と「華」」などを取り上げています。",
+      "営業時間と定休日は取得できていないため、訪問前に公式の情報でご確認ください。席は200席。営業時間や価格は変わることがあるため、訪問前に公式サイトやSNS、お電話でご確認ください。"
+    ],
+    "highlights": [
+      "月ごとにメインが替わる月替わりランチ",
+      "会席ランチ「月」と「華」",
+      "久米池と屋島・八栗山を望む窓辺の店内",
+      "宴会・女子会・貸切の席と個室",
+      "予約の取り方と車での行き方"
+    ],
+    "tags": [
+      "カフェ・喫茶",
+      "高松市"
+    ],
+    "featureId": "cafe舞楽"
+  },
+  {
+    "id": "r845",
+    "name": "宿カフェ Hale Liko",
+    "cuisine": "コーヒーショップ・喫茶店",
+    "area": "長野県・千曲市",
+    "region": "nagano",
+    "shape": "square",
+    "image": "/restaurants/teleapo-宿カフェHaleLiko/hero.jpg",
+    "heroImages": [
+      "/restaurants/teleapo-宿カフェHaleLiko/hero.jpg",
+      "/restaurants/teleapo-宿カフェHaleLiko/point1.jpg",
+      "/restaurants/teleapo-宿カフェHaleLiko/point2.jpg",
+      "/restaurants/teleapo-宿カフェHaleLiko/point3.jpg",
+      "/restaurants/teleapo-宿カフェHaleLiko/point5.jpg"
+    ],
+    "gallery": [
+      "/restaurants/teleapo-宿カフェHaleLiko/hero.jpg",
+      "/restaurants/teleapo-宿カフェHaleLiko/point1.jpg",
+      "/restaurants/teleapo-宿カフェHaleLiko/point2.jpg",
+      "/restaurants/teleapo-宿カフェHaleLiko/point3.jpg",
+      "/restaurants/teleapo-宿カフェHaleLiko/point5.jpg"
+    ],
+    "desc": "宿カフェ Hale Liko(ハレリコ)は、長野県千曲市桑原1224にある店である。2026年8月22日に開店した。",
+    "address": "長野県千曲市桑原1224",
+    "hours": "—（訪問前に公式確認）",
+    "closed": "—（訪問前に公式確認）",
+    "seats": "カウンター席・座敷",
+    "nearest": "—",
+    "phone": "080-6934-6597",
+    "instagram": "https://www.instagram.com/yadocafe.haleliko",
+    "source": {
+      "label": "Google ビジネスプロフィール",
+      "url": "https://maps.google.com/?cid=2886469128545114919"
+    },
+    "body": [
+      "宿カフェ Hale Likoは、長野県千曲市にあるお店です。業態は「コーヒーショップ・喫茶店」、所在地は長野県千曲市桑原1224です。マチノワ編集部の特集記事では、「一軒家をセルフリノベーションした宿カフェ」・「座敷とカウンター席、キッズスペースのある店内」などを取り上げています。",
+      "営業時間と定休日は取得できていないため、訪問前に公式の情報でご確認ください。席はカウンター席・座敷。営業時間や価格は変わることがあるため、訪問前に公式サイトやSNS、お電話でご確認ください。"
+    ],
+    "highlights": [
+      "一軒家をセルフリノベーションした宿カフェ",
+      "座敷とカウンター席、キッズスペースのある店内",
+      "とうもろこしごはんとみそ汁の食事",
+      "レンタルスペースと託児付きランチ会",
+      "営業時間・定休日と所在地"
+    ],
+    "tags": [
+      "コーヒーショップ・喫茶店",
+      "千曲市",
+      "宴会"
+    ],
+    "featureId": "宿カフェHaleLiko"
+  },
+  {
+    "id": "r846",
+    "name": "ますや旅館 オーベルジュ",
+    "cuisine": "飲食店",
+    "area": "愛媛県・今治市",
+    "region": "ehime",
+    "shape": "square",
+    "image": "/restaurants/teleapo-ますや旅館オーベルジュ/hero.jpg",
+    "heroImages": [
+      "/restaurants/teleapo-ますや旅館オーベルジュ/hero.jpg",
+      "/restaurants/teleapo-ますや旅館オーベルジュ/point1.jpg",
+      "/restaurants/teleapo-ますや旅館オーベルジュ/point2.jpg",
+      "/restaurants/teleapo-ますや旅館オーベルジュ/point3.jpg"
+    ],
+    "gallery": [
+      "/restaurants/teleapo-ますや旅館オーベルジュ/hero.jpg",
+      "/restaurants/teleapo-ますや旅館オーベルジュ/point1.jpg",
+      "/restaurants/teleapo-ますや旅館オーベルジュ/point2.jpg",
+      "/restaurants/teleapo-ますや旅館オーベルジュ/point3.jpg"
+    ],
+    "desc": "ますや旅館 オーベルジュは、愛媛県今治市大西町宮脇甲1416-3にある旅館で、フランス料理のレストラン「オーベルジュ」を営んでいる。",
+    "address": "愛媛県今治市大西町宮脇甲1416-3",
+    "hours": "—（訪問前に公式確認）",
+    "closed": "—（訪問前に公式確認）",
+    "seats": "完全個室",
+    "nearest": "—",
+    "phone": "0898-53-2104",
+    "source": {
+      "label": "Google ビジネスプロフィール",
+      "url": "https://maps.google.com/?cid=583912330206321738"
+    },
+    "body": [
+      "ますや旅館 オーベルジュは、愛媛県今治市にあるお店です。業態は「飲食店」、所在地は愛媛県今治市大西町宮脇甲1416-3です。マチノワ編集部の特集記事では、「お箸で食べる和室のフレンチコース」・「愛媛県産の食材を使う料理」などを取り上げています。",
+      "営業時間と定休日は取得できていないため、訪問前に公式の情報でご確認ください。席は完全個室。営業時間や価格は変わることがあるため、訪問前に公式サイトやSNS、お電話でご確認ください。"
+    ],
+    "highlights": [
+      "お箸で食べる和室のフレンチコース",
+      "愛媛県産の食材を使う料理",
+      "家族や友人と過ごす完全個室の食事",
+      "和室6室の宿泊と冠婚葬祭のオードブル",
+      "JR大西駅から徒歩5分、水曜定休の営業日"
+    ],
+    "tags": [
+      "飲食店",
+      "今治市",
+      "個室"
+    ],
+    "featureId": "ますや旅館オーベルジュ"
+  },
+  {
+    "id": "r847",
+    "name": "ほらふき亭 本店",
+    "cuisine": "お好み焼き、鉄板焼き、居酒屋",
+    "area": "熊本県・菊池市",
+    "region": "kumamoto",
+    "shape": "square",
+    "image": "/restaurants/teleapo-ほらふき亭本店/hero.jpg",
+    "heroImages": [
+      "/restaurants/teleapo-ほらふき亭本店/hero.jpg",
+      "/restaurants/teleapo-ほらふき亭本店/point1.jpg",
+      "/restaurants/teleapo-ほらふき亭本店/point2.jpg",
+      "/restaurants/teleapo-ほらふき亭本店/point4.jpg"
+    ],
+    "gallery": [
+      "/restaurants/teleapo-ほらふき亭本店/hero.jpg",
+      "/restaurants/teleapo-ほらふき亭本店/point1.jpg",
+      "/restaurants/teleapo-ほらふき亭本店/point2.jpg",
+      "/restaurants/teleapo-ほらふき亭本店/point4.jpg"
+    ],
+    "desc": "ほらふき亭 本店は、熊本県菊池市隈府500-21にあるお好み焼き店である。",
+    "address": "熊本県菊池市隈府500-21",
+    "hours": "—（訪問前に公式確認）",
+    "closed": "—（訪問前に公式確認）",
+    "seats": "—（訪問前に公式確認）",
+    "nearest": "—",
+    "phone": "0968-24-0194",
+    "source": {
+      "label": "Google ビジネスプロフィール",
+      "url": "https://maps.google.com/?cid=9494037214811827250"
+    },
+    "body": [
+      "ほらふき亭 本店は、熊本県菊池市にあるお店です。業態は「お好み焼き、鉄板焼き、居酒屋」、所在地は熊本県菊池市隈府500-21です。マチノワ編集部の特集記事では、「昼から夜まで、時間帯で変わる3つのメニュー」・「お好み焼き・鉄板焼き・ホラヤキと居酒屋の一品」などを取り上げています。",
+      "営業時間と定休日は取得できていないため、訪問前に公式の情報でご確認ください。営業時間や価格は変わることがあるため、訪問前に公式サイトやSNS、お電話でご確認ください。"
+    ],
+    "highlights": [
+      "昼から夜まで、時間帯で変わる3つのメニュー",
+      "お好み焼き・鉄板焼き・ホラヤキと居酒屋の一品",
+      "1972年の一平寿司から続くほらふき亭の歩み",
+      "仕事帰りにもカップルにも家族連れにも"
+    ],
+    "tags": [
+      "お好み焼き、鉄板焼き、居酒屋",
+      "お好み焼き店",
+      "菊池市"
+    ],
+    "featureId": "ほらふき亭本店"
+  },
+  {
+    "id": "r848",
+    "name": "Cafemom いきいきサロンひまわり",
+    "cuisine": "介護施設",
+    "area": "岐阜県・岐阜市",
+    "region": "gifu",
+    "shape": "square",
+    "image": "/restaurants/teleapo-Cafemomいきいきサロンひまわり/hero.jpg",
+    "heroImages": [
+      "/restaurants/teleapo-Cafemomいきいきサロンひまわり/hero.jpg",
+      "/restaurants/teleapo-Cafemomいきいきサロンひまわり/point1.jpg",
+      "/restaurants/teleapo-Cafemomいきいきサロンひまわり/point2.jpg",
+      "/restaurants/teleapo-Cafemomいきいきサロンひまわり/point3.jpg"
+    ],
+    "gallery": [
+      "/restaurants/teleapo-Cafemomいきいきサロンひまわり/hero.jpg",
+      "/restaurants/teleapo-Cafemomいきいきサロンひまわり/point1.jpg",
+      "/restaurants/teleapo-Cafemomいきいきサロンひまわり/point2.jpg",
+      "/restaurants/teleapo-Cafemomいきいきサロンひまわり/point3.jpg"
+    ],
+    "desc": "Cafe mom(カフェマム)は、岐阜県岐阜市高河原101-1にあるカフェである。",
+    "address": "岐阜県岐阜市高河原101ー1",
+    "hours": "—（訪問前に公式確認）",
+    "closed": "—（訪問前に公式確認）",
+    "seats": "カウンター席・ソファー席・靴を脱いで上がるスペース",
+    "nearest": "—",
+    "phone": "090-7042-6432",
+    "source": {
+      "label": "Google ビジネスプロフィール",
+      "url": "https://maps.google.com/?cid=1429183585838034712"
+    },
+    "body": [
+      "Cafemom いきいきサロンひまわりは、岐阜県岐阜市にあるお店です。業態は「介護施設」、所在地は岐阜県岐阜市高河原101ー1です。マチノワ編集部の特集記事では、「毎週火曜の朝に出す和モーニング」・「日替わりで変わるモーニングの内容」などを取り上げています。",
+      "営業時間と定休日は取得できていないため、訪問前に公式の情報でご確認ください。席はカウンター席・ソファー席・靴を脱いで上がるスペース。営業時間や価格は変わることがあるため、訪問前に公式サイトやSNS、お電話でご確認ください。"
+    ],
+    "highlights": [
+      "毎週火曜の朝に出す和モーニング",
+      "日替わりで変わるモーニングの内容",
+      "カウンター席とソファー席、靴を脱いで上がる広いスペース",
+      "NPO法人SHLが運営する、子ども食堂などの活動",
+      "高河原のアクセスと駐車場・支払い"
+    ],
+    "tags": [
+      "介護施設",
+      "岐阜市"
+    ],
+    "featureId": "Cafemomいきいきサロンひまわり"
+  },
+  {
+    "id": "r849",
+    "name": "Soi",
+    "cuisine": "居酒屋",
+    "area": "新潟県・新潟市中央区",
+    "region": "niigata",
+    "shape": "square",
+    "image": "/restaurants/teleapo-Soi/hero.jpg",
+    "heroImages": [
+      "/restaurants/teleapo-Soi/hero.jpg",
+      "/restaurants/teleapo-Soi/point1.jpg",
+      "/restaurants/teleapo-Soi/point2.jpg",
+      "/restaurants/teleapo-Soi/point3.jpg",
+      "/restaurants/teleapo-Soi/point4.jpg"
+    ],
+    "gallery": [
+      "/restaurants/teleapo-Soi/hero.jpg",
+      "/restaurants/teleapo-Soi/point1.jpg",
+      "/restaurants/teleapo-Soi/point2.jpg",
+      "/restaurants/teleapo-Soi/point3.jpg",
+      "/restaurants/teleapo-Soi/point4.jpg",
+      "/restaurants/teleapo-Soi/point5.jpg"
+    ],
+    "desc": "Soiは、新潟県新潟市中央区万代1丁目にある居酒屋である。",
+    "address": "新潟県新潟市中央区万代1丁目2-6 トーカンマンション 1F",
+    "hours": "—（訪問前に公式確認）",
+    "closed": "—（訪問前に公式確認）",
+    "seats": "46席(カウンター14席)",
+    "nearest": "—",
+    "phone": "025-241-4818",
+    "source": {
+      "label": "Google ビジネスプロフィール",
+      "url": "https://maps.google.com/?cid=7494674226735641750"
+    },
+    "body": [
+      "Soiは、新潟県新潟市中央区にあるお店です。業態は「居酒屋」、所在地は新潟県新潟市中央区万代1丁目2-6 トーカンマンション 1Fです。マチノワ編集部の特集記事では、「佐渡直送の鮮魚を使う刺身盛り合わせ」・「週3回の定期便で届く和牛もつ鍋」などを取り上げています。",
+      "営業時間と定休日は取得できていないため、訪問前に公式の情報でご確認ください。席は46席(カウンター14席)。営業時間や価格は変わることがあるため、訪問前に公式サイトやSNS、お電話でご確認ください。"
+    ],
+    "highlights": [
+      "佐渡直送の鮮魚を使う刺身盛り合わせ",
+      "週3回の定期便で届く和牛もつ鍋",
+      "16時間煮込んで鉄板で焼く豚のジェームス",
+      "佐渡産コシヒカリの銀しゃりと一品料理",
+      "カウンター・座敷・掘りごたつ個室の店内"
+    ],
+    "tags": [
+      "居酒屋",
+      "中央区",
+      "個室"
+    ],
+    "featureId": "Soi"
   }
 ];
 
@@ -19425,7 +19725,13 @@ export const ARTICLE_STORE_FEATURE_IDS: Record<string, string> = {
   "r840": "炉端居酒屋篝火",
   "r841": "amusementflairBARHINNA",
   "r842": "富屋酒店",
-  "r843": "だいぬき屋"
+  "r843": "だいぬき屋",
+  "r844": "cafe舞楽",
+  "r845": "宿カフェHaleLiko",
+  "r846": "ますや旅館オーベルジュ",
+  "r847": "ほらふき亭本店",
+  "r848": "Cafemomいきいきサロンひまわり",
+  "r849": "Soi"
 };
 
 /** 特集記事ID → 店舗ID */
@@ -19829,5 +20135,11 @@ export const ARTICLE_STORE_ID_BY_FEATURE: Record<string, string> = {
   "炉端居酒屋篝火": "r840",
   "amusementflairBARHINNA": "r841",
   "富屋酒店": "r842",
-  "だいぬき屋": "r843"
+  "だいぬき屋": "r843",
+  "cafe舞楽": "r844",
+  "宿カフェHaleLiko": "r845",
+  "ますや旅館オーベルジュ": "r846",
+  "ほらふき亭本店": "r847",
+  "Cafemomいきいきサロンひまわり": "r848",
+  "Soi": "r849"
 };

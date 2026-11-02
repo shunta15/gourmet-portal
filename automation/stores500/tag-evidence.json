@@ -4833,5 +4833,53 @@
     "articleId": "富屋酒店",
     "name": "富屋酒店",
     "tags": []
+  },
+  "r845": {
+    "articleId": "宿カフェHaleLiko",
+    "name": "宿カフェ Hale Liko",
+    "tags": [
+      {
+        "tag": "宴会",
+        "rule": "席表記に「座敷」「宴会」",
+        "evidence": "席: カウンター席・座敷"
+      }
+    ]
+  },
+  "r846": {
+    "articleId": "ますや旅館オーベルジュ",
+    "name": "ますや旅館 オーベルジュ",
+    "tags": [
+      {
+        "tag": "個室",
+        "rule": "席表記に「個室」",
+        "evidence": "席: 完全個室"
+      }
+    ]
+  },
+  "r847": {
+    "articleId": "ほらふき亭本店",
+    "name": "ほらふき亭 本店",
+    "tags": []
+  },
+  "r849": {
+    "articleId": "Soi",
+    "name": "Soi",
+    "tags": [
+      {
+        "tag": "個室",
+        "rule": "記事 specs「個室」項目が肯定",
+        "evidence": "個室: 掘りごたつ・3名用と7名用"
+      }
+    ]
+  },
+  "r844": {
+    "articleId": "cafe舞楽",
+    "name": "cafe舞楽",
+    "tags": []
+  },
+  "r848": {
+    "articleId": "Cafemomいきいきサロンひまわり",
+    "name": "Cafemom いきいきサロンひまわり",
+    "tags": []
   }
 }

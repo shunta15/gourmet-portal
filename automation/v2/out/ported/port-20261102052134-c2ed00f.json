@@ -1,0 +1,162 @@
+{
+  "commit": "c2ed00fd353e7fa5a4f2d6ec33e41f76c15e7aaa",
+  "source": "/Users/shunta/claude/gp-k-auto2",
+  "count": 14,
+  "added": [
+    {
+      "row": 84,
+      "name": "宿カフェ Hale Liko",
+      "key": "tri-gourmet-84",
+      "vertical": "グルメ",
+      "id": "r845",
+      "articleId": "宿カフェHaleLiko",
+      "shopUrl": "https://machinowa.tokyo/restaurant/r845",
+      "articleUrl": "https://machinowa.tokyo/feature/宿カフェHaleLiko",
+      "sheetUrl": "https://machinowa.tokyo/feature/宿カフェHaleLiko"
+    },
+    {
+      "row": 143,
+      "name": "便利屋 愛三和",
+      "key": "tri-life-143",
+      "vertical": "くらし",
+      "id": "li0124",
+      "articleId": "li0124",
+      "shopUrl": "https://machinowa.tokyo/life/shop/li0124",
+      "articleUrl": "https://machinowa.tokyo/life/article/li0124",
+      "sheetUrl": "https://machinowa.tokyo/life/article/li0124"
+    },
+    {
+      "row": 292,
+      "name": "オーベルジュ",
+      "key": "tri-gourmet-292",
+      "vertical": "グルメ",
+      "id": "r846",
+      "articleId": "ますや旅館オーベルジュ",
+      "shopUrl": "https://machinowa.tokyo/restaurant/r846",
+      "articleUrl": "https://machinowa.tokyo/feature/ますや旅館オーベルジュ",
+      "sheetUrl": "https://machinowa.tokyo/feature/ますや旅館オーベルジュ"
+    },
+    {
+      "row": 326,
+      "name": "白雲寺",
+      "key": "tri-life-326",
+      "vertical": "くらし",
+      "id": "li0126",
+      "articleId": "li0126",
+      "shopUrl": "https://machinowa.tokyo/life/shop/li0126",
+      "articleUrl": "https://machinowa.tokyo/life/article/li0126",
+      "sheetUrl": "https://machinowa.tokyo/life/article/li0126"
+    },
+    {
+      "row": 327,
+      "name": "ほらふき亭本店",
+      "key": "tri-gourmet-327",
+      "vertical": "グルメ",
+      "id": "r847",
+      "articleId": "ほらふき亭本店",
+      "shopUrl": "https://machinowa.tokyo/restaurant/r847",
+      "articleUrl": "https://machinowa.tokyo/feature/ほらふき亭本店",
+      "sheetUrl": "https://machinowa.tokyo/feature/ほらふき亭本店"
+    },
+    {
+      "row": 331,
+      "name": "Soi",
+      "key": "tri-gourmet-331",
+      "vertical": "グルメ",
+      "id": "r849",
+      "articleId": "Soi",
+      "shopUrl": "https://machinowa.tokyo/restaurant/r849",
+      "articleUrl": "https://machinowa.tokyo/feature/Soi",
+      "sheetUrl": "https://machinowa.tokyo/feature/Soi"
+    },
+    {
+      "row": 39,
+      "name": "カフェ 舞楽",
+      "key": "tri-gourmet-39",
+      "vertical": "グルメ",
+      "id": "r844",
+      "articleId": "cafe舞楽",
+      "shopUrl": "https://machinowa.tokyo/restaurant/r844",
+      "articleUrl": "https://machinowa.tokyo/feature/cafe舞楽",
+      "sheetUrl": "https://machinowa.tokyo/feature/cafe舞楽"
+    },
+    {
+      "row": 304,
+      "name": "木下園製茶工場",
+      "key": "tri-life-304",
+      "vertical": "くらし",
+      "id": "li0125",
+      "articleId": "li0125",
+      "shopUrl": "https://machinowa.tokyo/life/shop/li0125",
+      "articleUrl": "https://machinowa.tokyo/life/article/li0125",
+      "sheetUrl": "https://machinowa.tokyo/life/article/li0125"
+    },
+    {
+      "row": 321,
+      "name": "anhelotrip",
+      "key": "tri-activity-321",
+      "vertical": "アクティビティ",
+      "id": "ac0035",
+      "articleId": "ac0035",
+      "shopUrl": "https://machinowa.tokyo/activity/shop/ac0035",
+      "articleUrl": "https://machinowa.tokyo/activity/article/ac0035",
+      "sheetUrl": "https://machinowa.tokyo/activity/article/ac0035"
+    },
+    {
+      "row": 328,
+      "name": "カフェ マム",
+      "key": "tri-gourmet-328",
+      "vertical": "グルメ",
+      "id": "r848",
+      "articleId": "Cafemomいきいきサロンひまわり",
+      "shopUrl": "https://machinowa.tokyo/restaurant/r848",
+      "articleUrl": "https://machinowa.tokyo/feature/Cafemomいきいきサロンひまわり",
+      "sheetUrl": "https://machinowa.tokyo/feature/Cafemomいきいきサロンひまわり"
+    },
+    {
+      "row": 329,
+      "name": "マリンステーション堂ヶ島",
+      "key": "tri-activity-329",
+      "vertical": "アクティビティ",
+      "id": "ac0036",
+      "articleId": "ac0036",
+      "shopUrl": "https://machinowa.tokyo/activity/shop/ac0036",
+      "articleUrl": "https://machinowa.tokyo/activity/article/ac0036",
+      "sheetUrl": "https://machinowa.tokyo/activity/article/ac0036"
+    },
+    {
+      "row": 123,
+      "name": "IWANOKO",
+      "key": "tri-sports-123",
+      "vertical": "スポーツ",
+      "id": "sp0006",
+      "articleId": null,
+      "shopUrl": "https://machinowa.tokyo/sports/shop/sp0006",
+      "articleUrl": null,
+      "sheetUrl": "https://machinowa.tokyo/sports/shop/sp0006"
+    },
+    {
+      "row": 332,
+      "name": "リンパケアカイロcitrine",
+      "key": "tri-bodycare-332",
+      "vertical": "ボディケア",
+      "id": "bo0117",
+      "articleId": null,
+      "shopUrl": "https://machinowa.tokyo/bodycare/shop/bo0117",
+      "articleUrl": null,
+      "sheetUrl": "https://machinowa.tokyo/bodycare/shop/bo0117"
+    },
+    {
+      "row": 333,
+      "name": "対馬ヤマネコ工房",
+      "key": "tri-activity-333",
+      "vertical": "アクティビティ",
+      "id": "ac0037",
+      "articleId": "ac0037",
+      "shopUrl": "https://machinowa.tokyo/activity/shop/ac0037",
+      "articleUrl": "https://machinowa.tokyo/activity/article/ac0037",
+      "sheetUrl": "https://machinowa.tokyo/activity/article/ac0037"
+    }
+  ],
+  "skipped": []
+}

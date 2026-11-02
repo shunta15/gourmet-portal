@@ -18517,6 +18517,421 @@
         ],
         "checkedAt": "2026-11-02"
       }
+    },
+    {
+      "id": "li0124",
+      "vertical": "life",
+      "category": "car-repair",
+      "name": "愛三和",
+      "pref": "kanagawa",
+      "cityName": "横須賀市",
+      "address": "神奈川県横須賀市長井3丁目29-29",
+      "lat": 35.206708,
+      "lng": 139.6146254,
+      "phone": "046-855-5160",
+      "url": "https://benriya-aisanwa.studio.site/",
+      "website": "https://benriya-aisanwa.studio.site/",
+      "mapUrl": "https://maps.google.com/?cid=17002340814921578892",
+      "images": [],
+      "tags": [],
+      "article": {
+        "headline": "横須賀市長井を拠点にする便利屋。不用品の引き取りから遺品整理、庭木の伐採・草刈り、雨どいの修理まで、三浦半島全域で依頼を受ける",
+        "lede": "横須賀市にある「愛三和」(あいさんわ)です。三浦半島全域を対応エリアとする便利屋で、不用品の引き取りや家具の移動・組み立て、遺品整理、庭木の伐採・剪定、草刈り、雨どいの修理などに対応します。",
+        "sections": [
+          {
+            "heading": "暮らしまわりの作業",
+            "body": "不用品の引き取り、家具の移動や組み立て、遺品整理、引っ越しの手伝いに対応します。引っ越しや模様替えのときの大型家具の移動のほか、大掃除や引っ越し、施設からの退去で出る粗大ごみや不要品の撤去も扱います。"
+          },
+          {
+            "heading": "庭と家まわりの作業",
+            "body": "庭や空き地では、伐採・植木の剪定・草刈りに対応します。夏場の草刈りや季節ごとの剪定、伸びすぎた枝の伐採などの作業です。家まわりでは、雨どいのつまり、修理、取り替え工事を扱います。"
+          },
+          {
+            "heading": "依頼できる相手と範囲",
+            "body": "対応エリアは三浦半島全域です。一人暮らしの方や年配の方からの依頼のほか、不動産業者や大家からの依頼にも対応します。空き部屋の片付けや、物件まわりの草刈り・清掃も作業の一つです。"
+          },
+          {
+            "heading": "場所と連絡先",
+            "body": "所在地は横須賀市長井です。最寄り駅は三崎口駅で、三崎口からバスで15分です。作業は店側が現地へ出向いておこないます。電話番号は046-855-5160と090-2227-8682の2つです。"
+          }
+        ],
+        "menus": [
+          {
+            "name": "不用品引取り"
+          },
+          {
+            "name": "家具移動・組立て"
+          },
+          {
+            "name": "遺品整理"
+          },
+          {
+            "name": "引っ越しのお手伝い"
+          },
+          {
+            "name": "伐採"
+          },
+          {
+            "name": "植木剪定"
+          },
+          {
+            "name": "草刈"
+          },
+          {
+            "name": "雨樋のつまり・修理・取替え工事"
+          }
+        ],
+        "sources": [
+          {
+            "label": "ヨコスカイチバン(横須賀商工会議所のお店情報サイト)",
+            "url": "https://www.sukaichi.com/shop.php?id=2415"
+          },
+          {
+            "label": "Google マップ",
+            "url": "https://maps.google.com/?cid=17002340814921578892"
+          }
+        ],
+        "checkedAt": "2026-11-02"
+      }
+    },
+    {
+      "id": "li0125",
+      "vertical": "life",
+      "category": "flower-farm",
+      "name": "木下園製茶工場",
+      "pref": "tokyo",
+      "cityName": "東大和市",
+      "address": "東京都東大和市清水5丁目1089-1",
+      "lat": 35.7477142,
+      "lng": 139.4442366,
+      "phone": "042-565-1627",
+      "url": "https://tokyotea.official.ec/",
+      "website": "https://tokyotea.official.ec/",
+      "mapUrl": "https://maps.google.com/?cid=13842963242455490651",
+      "image": "/_portal/vshops/tri-life-304/g01.jpg",
+      "images": [
+        "/_portal/vshops/tri-life-304/g01.jpg",
+        "/_portal/vshops/tri-life-304/g03.jpg",
+        "/_portal/vshops/tri-life-304/g04.jpg",
+        "/_portal/vshops/tri-life-304/g05.jpg",
+        "/_portal/vshops/tri-life-304/g06.jpg",
+        "/_portal/vshops/tri-life-304/g07.jpg",
+        "/_portal/vshops/tri-life-304/g09.jpg",
+        "/_portal/vshops/tri-life-304/g10.jpg"
+      ],
+      "photos": [
+        {
+          "path": "/_portal/vshops/tri-life-304/g01.jpg",
+          "what": "木の格子の壁に店名の看板が掛かる入口",
+          "kind": "exterior",
+          "width": 688,
+          "height": 917
+        },
+        {
+          "path": "/_portal/vshops/tri-life-304/g03.jpg",
+          "what": "瓦屋根の建物の前に自転車が止まる店の外観",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-life-304/g04.jpg",
+          "what": "黒い袋入りの紅茶と、白い皿に盛った茶葉",
+          "kind": "meal",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-life-304/g05.jpg",
+          "what": "緑色の飲み物が入った東京コーラの瓶",
+          "kind": "meal",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-life-304/g06.jpg",
+          "what": "白い紙カップに入ったクリーム色の菓子とスプーン",
+          "kind": "meal",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-life-304/g07.jpg",
+          "what": "東京紅茶の文字が入った店先の縦長の看板",
+          "kind": "exterior",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-life-304/g09.jpg",
+          "what": "茶葉の袋が並ぶ棚と木のカウンターがある店内",
+          "kind": "common",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-life-304/g10.jpg",
+          "what": "黒と赤の袋に入った東京紅茶",
+          "kind": "meal",
+          "width": 900,
+          "height": 1200
+        }
+      ],
+      "tags": [],
+      "article": {
+        "headline": "東京都東大和市清水にあるお茶専門店。茶畑での栽培から製造、販売まで一貫しておこない、緑茶のほか「東京紅茶」も作っている",
+        "lede": "東大和市にある「木下園製茶工場」です。昭和24年に創業した店で、東京でお茶を栽培し、緑茶の製造から販売まで一貫して手がけています。緑茶のほか国産の紅茶も製造し、「東京紅茶」ブランドとして販売しています。",
+        "sections": [
+          {
+            "heading": "茶畑と三代目",
+            "body": "昭和24年に創業した木下園製茶工場は、三代目の木下修一さんが東京紅茶・東京緑茶の生みの親です。先代から受け継いだ計3000坪ほどの茶畑を守りながら、東京緑茶と東京紅茶をつくっています。"
+          },
+          {
+            "heading": "お茶と東京の商品",
+            "body": "緑茶のほか、すっきりとした優しい味わいに仕上げた東京紅茶があります。べにふうき、東京アールグレイ、国産ベルガモットジャムも扱っています。「東京コーラ」は東京都産の緑茶を原料に使ったコーラで、お茶の木下園がつくっています。東京・町田の牧場とコラボし、東京緑茶や紅茶を使った「東京ジェラート」も作られました。"
+          },
+          {
+            "heading": "営業日と連絡先",
+            "body": "製造から販売まで一貫しておこなうお茶専門店で、所在地は東大和市清水5丁目です。営業時間は9時30分から18時30分、定休日は毎週火曜日で、12月31日から1月1日は休業します。電話は042-565-1627です。"
+          }
+        ],
+        "menus": [
+          {
+            "name": "東京緑茶"
+          },
+          {
+            "name": "東京紅茶"
+          },
+          {
+            "name": "べにふうき"
+          },
+          {
+            "name": "東京アールグレイ"
+          },
+          {
+            "name": "国産ベルガモットジャム"
+          },
+          {
+            "name": "東京コーラ"
+          }
+        ],
+        "sources": [
+          {
+            "label": "公式サイト",
+            "url": "https://tokyotea.official.ec/"
+          },
+          {
+            "label": "公式サイト(店舗情報)",
+            "url": "https://tokyotea.official.ec/about"
+          },
+          {
+            "label": "東京都産業労働局 TOKYO GIFTS 62",
+            "url": "https://www.sangyo-rodo.metro.tokyo.lg.jp/tourism/tokyogifts62/product/49/"
+          },
+          {
+            "label": "@DIME",
+            "url": "https://dime.jp/genre/993118/"
+          },
+          {
+            "label": "Google マップ",
+            "url": "https://maps.google.com/?cid=13842963242455490651"
+          }
+        ],
+        "checkedAt": "2026-11-02"
+      }
+    },
+    {
+      "id": "li0126",
+      "vertical": "life",
+      "category": "shrine-temple",
+      "name": "白雲寺",
+      "pref": "aichi",
+      "cityName": "扶桑町",
+      "address": "愛知県丹羽郡扶桑町高雄米ノ山42",
+      "lat": 35.3663611,
+      "lng": 136.9274801,
+      "phone": "0587-93-1008",
+      "url": "https://hakuunji.com/",
+      "website": "https://hakuunji.com/",
+      "mapUrl": "https://maps.google.com/?cid=7600870476816649849",
+      "image": "/_portal/vshops/tri-life-326/g01.jpg",
+      "images": [
+        "/_portal/vshops/tri-life-326/g01.jpg",
+        "/_portal/vshops/tri-life-326/g03.jpg",
+        "/_portal/vshops/tri-life-326/g04.jpg",
+        "/_portal/vshops/tri-life-326/g05.jpg",
+        "/_portal/vshops/tri-life-326/g06.jpg",
+        "/_portal/vshops/tri-life-326/g08.jpg",
+        "/_portal/vshops/tri-life-326/g09.jpg",
+        "/_portal/vshops/tri-life-326/g10.jpg",
+        "/_portal/vshops/tri-life-326/s02.jpg",
+        "/_portal/vshops/tri-life-326/s03.jpg",
+        "/_portal/vshops/tri-life-326/s04.jpg",
+        "/_portal/vshops/tri-life-326/s05.jpg",
+        "/_portal/vshops/tri-life-326/s06.jpg",
+        "/_portal/vshops/tri-life-326/s11.jpg"
+      ],
+      "photos": [
+        {
+          "path": "/_portal/vshops/tri-life-326/g01.jpg",
+          "what": "瓦屋根の山門と石碑、紅葉した木が並ぶ入口",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 800
+        },
+        {
+          "path": "/_portal/vshops/tri-life-326/g03.jpg",
+          "what": "石灯籠と紅葉、刈り込んだ木が並ぶ庭",
+          "kind": "view",
+          "width": 1200,
+          "height": 800
+        },
+        {
+          "path": "/_portal/vshops/tri-life-326/g04.jpg",
+          "what": "紅葉した木と石灯籠のある庭",
+          "kind": "view",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-life-326/g05.jpg",
+          "what": "松や木々、五重の石塔が見える庭",
+          "kind": "view",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-life-326/g06.jpg",
+          "what": "本堂へ続く参道と、観音像・石碑が立つ境内",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 800
+        },
+        {
+          "path": "/_portal/vshops/tri-life-326/g08.jpg",
+          "what": "刈り込んだ木と白い花が並ぶ庭の一角",
+          "kind": "view",
+          "width": 675,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-life-326/g09.jpg",
+          "what": "観音像と石碑、松が立つ境内",
+          "kind": "exterior",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-life-326/g10.jpg",
+          "what": "畳敷きの堂内に花が供えられた仏前",
+          "kind": "common",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-life-326/s02.jpg",
+          "what": "本堂と観音像、白い砂利の庭が見える境内",
+          "kind": "exterior",
+          "width": 1280,
+          "height": 853
+        },
+        {
+          "path": "/_portal/vshops/tri-life-326/s03.jpg",
+          "what": "本堂の前にある白い葉の庭木と石灯籠",
+          "kind": "exterior",
+          "width": 1280,
+          "height": 853
+        },
+        {
+          "path": "/_portal/vshops/tri-life-326/s04.jpg",
+          "what": "畳敷きの堂内と奥の仏前",
+          "kind": "common",
+          "width": 1280,
+          "height": 853
+        },
+        {
+          "path": "/_portal/vshops/tri-life-326/s05.jpg",
+          "what": "蓮の台に立つ白い観音像と石碑",
+          "kind": "exterior",
+          "width": 1280,
+          "height": 853
+        },
+        {
+          "path": "/_portal/vshops/tri-life-326/s06.jpg",
+          "what": "水面に咲く薄紅色のスイレンの花",
+          "kind": "view",
+          "width": 1280,
+          "height": 853
+        },
+        {
+          "path": "/_portal/vshops/tri-life-326/s11.jpg",
+          "what": "石柱と瓦屋根の山門が見える入口",
+          "kind": "exterior",
+          "width": 1000,
+          "height": 667
+        }
+      ],
+      "tags": [
+        "駅近",
+        "駐車場あり"
+      ],
+      "article": {
+        "headline": "愛知県丹羽郡扶桑町高雄にある臨済宗妙心寺派の寺。名鉄犬山線の木津用水駅から徒歩約2分で、駐車場がある",
+        "lede": "丹羽郡扶桑町にある「白雲寺」です。臨済宗妙心寺派の金常山白雲寺で、本尊は釈迦牟尼仏、由緒仏は聖観世音菩薩です。ご朱印と参拝記念スタンプもあります。",
+        "sections": [
+          {
+            "heading": "場所とアクセス",
+            "body": "所在地は扶桑町大字高雄字米ノ山42、電話は0587-93-1008です。最寄駅は名鉄犬山線の木津用水駅で、徒歩約2分です。車の場合は、東名高速道路の小牧インターから約30分で、駐車場があります。"
+          },
+          {
+            "heading": "寺の概要",
+            "body": "金常山白雲寺は臨済宗妙心寺派の寺です。本尊は釈迦牟尼仏、由緒仏は聖観世音菩薩で、開山は友峰和尚、開基は寺澤増彦太夫です。ご朱印と参拝記念スタンプがあります。"
+          },
+          {
+            "heading": "由緒と歴史",
+            "body": "往昔は真言宗の寺で、文武天皇の御代の慶雲三年(706)に。その後、賊火に遭って観音堂だけを残し堂宇をすべて焼失しましたが、大永六年に覚王寺の友峰和尚が再建して臨済宗に改宗しています。"
+          }
+        ],
+        "menus": [
+          {
+            "name": "一般墓地"
+          },
+          {
+            "name": "永代供養墓"
+          },
+          {
+            "name": "お葬式・法要"
+          },
+          {
+            "name": "坐禅会"
+          },
+          {
+            "name": "写経会"
+          },
+          {
+            "name": "ご朱印"
+          }
+        ],
+        "sources": [
+          {
+            "label": "公式サイト",
+            "url": "https://hakuunji.com/"
+          },
+          {
+            "label": "公式サイト(白雲寺紹介)",
+            "url": "https://hakuunji.com/about.html"
+          },
+          {
+            "label": "公式サイト(アクセス)",
+            "url": "https://hakuunji.com/accesss.html"
+          },
+          {
+            "label": "Google マップ",
+            "url": "https://maps.google.com/?cid=7600870476816649849"
+          }
+        ],
+        "checkedAt": "2026-11-02"
+      }
     }
   ]
 }
