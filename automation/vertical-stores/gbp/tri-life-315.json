@@ -1,0 +1,32 @@
+{
+  "tab": "トリニティアポ",
+  "tabEn": "tri-life",
+  "row": 315,
+  "sheet": {
+    "name": "浄念寺",
+    "address": "",
+    "url": "https://www.google.com/maps/search/?api=1&query=%E6%B5%84%E5%BF%B5%E5%AF%BA%20045-842-7288%20%E3%80%92234-0056%20%E7%A5%9E%E5%A5%88%E5%B7%9D%E7%9C%8C%E6%A8%AA%E6%B5%9C%E5%B8%82%E6%B8%AF%E5%8D%97%E5%8C%BA%E9%87%8E%E5%BA%AD%E7%94%BA%EF%BC%91%EF%BC%98%EF%BC%94%EF%BC%93%20%E6%B5%84%E5%BF%B5%E5%AF%BA",
+    "type": "寺",
+    "d1": "",
+    "d2": ""
+  },
+  "urlKind": "mapsApi",
+  "route": "第1段(verify-gbp.mjs)で確認済み",
+  "verdict": "一致",
+  "verdictReason": "手がかり: 電話＋住所(番地まで)。電話が一致／店名: different(シート「浄念寺」/ マップ「浄土宗 蔵王山正定院淨念寺」)／住所(シート): exact・町名・番地とも一致",
+  "place": {
+    "name": "浄土宗 蔵王山正定院淨念寺",
+    "address": "神奈川県横浜市港南区野庭町１８４３ 浄念寺",
+    "category": "仏教寺院",
+    "lat": 35.3844625,
+    "lng": 139.5658671,
+    "gbpUrl": "https://maps.google.com/?cid=4413593003361909530",
+    "phone": "045-842-7288",
+    "website": "https://www.joonenji.or.jp/",
+    "hours": null,
+    "reserveLinks": [],
+    "statusSignals": [],
+    "closedSignal": false
+  },
+  "fetchedAt": "2026-11-01T23:16:12.938Z"
+}

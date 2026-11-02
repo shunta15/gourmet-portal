@@ -1,0 +1,32 @@
+{
+  "tab": "トリニティアポ",
+  "tabEn": "tri-life",
+  "row": 322,
+  "sheet": {
+    "name": "天台宗 増位山 随願寺",
+    "address": "",
+    "url": "https://www.google.com/maps/search/?api=1&query=%E5%A4%A9%E5%8F%B0%E5%AE%97%20%E5%A2%97%E4%BD%8D%E5%B1%B1%20%E9%9A%8F%E9%A1%98%E5%AF%BA%20079-223-7187%20%E3%80%92670-0808%20%E5%85%B5%E5%BA%AB%E7%9C%8C%E5%A7%AB%E8%B7%AF%E5%B8%82%E7%99%BD%E5%9B%BD%EF%BC%95%20%E5%A2%97%E4%BD%8D%E5%B1%B1",
+    "type": "寺",
+    "d1": "",
+    "d2": ""
+  },
+  "urlKind": "mapsApi",
+  "route": "第1段(verify-gbp.mjs)で確認済み",
+  "verdict": "一致",
+  "verdictReason": "手がかり: 店名＋電話＋住所(番地まで)。電話が一致／店名: exact(シート「天台宗 増位山 随願寺」/ マップ「天台宗 増位山 随願寺」)／住所(シート): exact・町名・番地とも一致",
+  "place": {
+    "name": "天台宗 増位山 随願寺",
+    "address": "兵庫県姫路市白国５ 増位山",
+    "category": "仏教寺院",
+    "lat": 34.8721321,
+    "lng": 134.7127454,
+    "gbpUrl": "https://maps.google.com/?cid=2877029271290800119",
+    "phone": "079-223-7187",
+    "website": "http://hyogotendai-yb.net/jiin_daizukan/file/01/214zuiganji/214zuiganji.html",
+    "hours": null,
+    "reserveLinks": [],
+    "statusSignals": [],
+    "closedSignal": false
+  },
+  "fetchedAt": "2026-11-02T02:35:37.271Z"
+}

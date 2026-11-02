@@ -17571,6 +17571,464 @@
         ],
         "checkedAt": "2026-11-02"
       }
+    },
+    {
+      "id": "li0117",
+      "vertical": "life",
+      "category": "shrine-temple",
+      "name": "吉田神社（手筒花火発祥の地）",
+      "pref": "aichi",
+      "cityName": "豊橋市",
+      "address": "愛知県豊橋市関屋町2",
+      "lat": 34.7702914,
+      "lng": 137.3899314,
+      "phone": "0532-52-2553",
+      "url": "http://toyohashi-yoshida.com/",
+      "website": "http://toyohashi-yoshida.com/",
+      "mapUrl": "https://maps.google.com/?cid=5854028582624486747",
+      "image": "/_portal/vshops/tri-life-306/g01.jpg",
+      "images": [
+        "/_portal/vshops/tri-life-306/g01.jpg",
+        "/_portal/vshops/tri-life-306/g02.jpg",
+        "/_portal/vshops/tri-life-306/g03.jpg",
+        "/_portal/vshops/tri-life-306/g04.jpg",
+        "/_portal/vshops/tri-life-306/g05.jpg",
+        "/_portal/vshops/tri-life-306/g08.jpg",
+        "/_portal/vshops/tri-life-306/g09.jpg",
+        "/_portal/vshops/tri-life-306/g10.jpg",
+        "/_portal/vshops/tri-life-306/s01.jpg",
+        "/_portal/vshops/tri-life-306/s02.jpg",
+        "/_portal/vshops/tri-life-306/s03.jpg",
+        "/_portal/vshops/tri-life-306/s16.jpg",
+        "/_portal/vshops/tri-life-306/s17.jpg",
+        "/_portal/vshops/tri-life-306/s18.jpg"
+      ],
+      "photos": [
+        {
+          "path": "/_portal/vshops/tri-life-306/g01.jpg",
+          "what": "火柱の上がる手筒花火と、赤い装束の神役が写る写真",
+          "width": 1200,
+          "height": 675
+        },
+        {
+          "path": "/_portal/vshops/tri-life-306/g02.jpg",
+          "what": "石の鳥居と社号標が並ぶ参道の入口",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 675
+        },
+        {
+          "path": "/_portal/vshops/tri-life-306/g03.jpg",
+          "what": "瓦屋根の拝殿の正面",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 800
+        },
+        {
+          "path": "/_portal/vshops/tri-life-306/g04.jpg",
+          "what": "朱色の柵に囲まれた社殿",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 800
+        },
+        {
+          "path": "/_portal/vshops/tri-life-306/g05.jpg",
+          "what": "手筒を抱える人物のレリーフがある大きな石碑",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-life-306/g08.jpg",
+          "what": "提灯が下がる木造の建物の外観",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 675
+        },
+        {
+          "path": "/_portal/vshops/tri-life-306/g09.jpg",
+          "what": "畳敷きの広間と祭壇が見える建物の内部",
+          "kind": "common",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-life-306/g10.jpg",
+          "what": "屋根の付いた手水舎",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-life-306/s01.jpg",
+          "what": "赤い柵が両脇に並ぶ拝殿の正面",
+          "kind": "exterior",
+          "width": 1280,
+          "height": 640
+        },
+        {
+          "path": "/_portal/vshops/tri-life-306/s02.jpg",
+          "what": "夜に火花を噴き上げる手筒花火",
+          "width": 1280,
+          "height": 852
+        },
+        {
+          "path": "/_portal/vshops/tri-life-306/s03.jpg",
+          "what": "拝殿前で面をつけた赤い装束の神役が舞う様子",
+          "width": 1280,
+          "height": 905
+        },
+        {
+          "path": "/_portal/vshops/tri-life-306/s16.jpg",
+          "what": "木彫りの獅子・狛犬が並ぶ写真",
+          "width": 1280,
+          "height": 853
+        },
+        {
+          "path": "/_portal/vshops/tri-life-306/s17.jpg",
+          "what": "木彫りの獅子像が向かい合う写真",
+          "width": 1280,
+          "height": 853
+        },
+        {
+          "path": "/_portal/vshops/tri-life-306/s18.jpg",
+          "what": "木の箱に置かれた彩色の面",
+          "width": 1280,
+          "height": 853
+        }
+      ],
+      "tags": [
+        "駐車場あり"
+      ],
+      "article": {
+        "headline": "愛知県豊橋市関屋町にある神社。手筒花火発祥の神社として崇敬され、毎年7月第3金曜日から3日間、例祭の豊橋祇園祭がおこなわれる",
+        "lede": "豊橋市にある「吉田神社」です。御祭神は素盞嗚尊で、八ヶ町の氏神であり、手筒花火発祥の神社として崇敬されています。例祭の豊橋祇園祭では、初日に拝殿前で神前手筒が奉納され、2日目には神社の北側の豊川河畔で打上花火が奉納されます。",
+        "sections": [
+          {
+            "heading": "由緒と御祭神",
+            "body": "御祭神は素盞嗚尊(すさのおのみこと)です。創建には諸説ありますが、天治元年（1124）に当地で疫病が流行した際、牛頭天王(ごずてんのう)を勧請して疫病退散を祈願したのが始まりという説があります。現在は八ヶ町の氏神で、手筒花火発祥の神社として崇敬されています。末社に金柑丸稲荷社(きんかんまるいなりしゃ)があります。"
+          },
+          {
+            "heading": "記念碑と文化財",
+            "body": "「伝承三河伝統手筒花火発祥の地記念碑」は、平成5年に手筒花火とその歴史を後世に伝えるため、標示塔とともに建立されました。令和3年から6年にかけて、鎌倉時代の木造の獅子一対、南北朝〜室町時代の獅子・狛犬一対、獅子頭、鬼面、神輿棟札などが豊橋市の有形文化財に、旧式祭礼図絵馬が民俗文化財に指定されました。"
+          },
+          {
+            "heading": "豊橋祇園祭",
+            "body": "例祭は通称「豊橋祇園祭」で、7月第3金曜日から3日間おこなわれます。初日の金曜日は午後6時から宵祭と手筒の清祓いがあり、拝殿前で神前手筒が奉納されます。2日目の土曜日は午後6時から前夜祭があり、神社北側の豊川河畔で1万発以上の打上花火が奉納されます。3日目の日曜日は例祭日で、午後5時頃に神輿が出発する神輿渡御は、頼朝行列と呼ばれます。"
+          },
+          {
+            "heading": "ご祈祷とアクセス",
+            "body": "ご祈祷の受付は毎日午前9時から午後4時までで、予約なしでも受け付けています。月次祭は毎月1日の午前8時からです。公共交通機関では、豊橋駅から路面電車で札木または市役所前まで行くと徒歩7〜8分、バスで豊橋市役所前まで行くと徒歩1分です。参拝者駐車場は参道の東西に2か所あります。"
+          }
+        ],
+        "sources": [
+          {
+            "label": "公式サイト",
+            "url": "http://toyohashi-yoshida.com/"
+          },
+          {
+            "label": "公式サイト(御祭神・御由緒)",
+            "url": "http://toyohashi-yoshida.com/gosaijin/"
+          },
+          {
+            "label": "公式サイト(豊橋祇園祭)",
+            "url": "http://toyohashi-yoshida.com/gionmatsuri/"
+          },
+          {
+            "label": "公式サイト(ご祈祷)",
+            "url": "http://toyohashi-yoshida.com/gokito/"
+          },
+          {
+            "label": "公式サイト(交通案内)",
+            "url": "http://toyohashi-yoshida.com/access/"
+          },
+          {
+            "label": "Google マップ",
+            "url": "https://maps.google.com/?cid=5854028582624486747"
+          }
+        ],
+        "checkedAt": "2026-11-02"
+      }
+    },
+    {
+      "id": "li0118",
+      "vertical": "life",
+      "category": "shrine-temple",
+      "name": "浄土宗 蔵王山正定院淨念寺",
+      "pref": "kanagawa",
+      "cityName": "横浜市港南区",
+      "address": "神奈川県横浜市港南区野庭町1843 浄念寺",
+      "lat": 35.3844625,
+      "lng": 139.5658671,
+      "phone": "045-842-7288",
+      "url": "https://www.joonenji.or.jp/",
+      "website": "https://www.joonenji.or.jp/",
+      "mapUrl": "https://maps.google.com/?cid=4413593003361909530",
+      "image": "/_portal/vshops/tri-life-315/g01.jpg",
+      "images": [
+        "/_portal/vshops/tri-life-315/g01.jpg",
+        "/_portal/vshops/tri-life-315/g02.jpg",
+        "/_portal/vshops/tri-life-315/g03.jpg",
+        "/_portal/vshops/tri-life-315/g05.jpg",
+        "/_portal/vshops/tri-life-315/g06.jpg",
+        "/_portal/vshops/tri-life-315/g07.jpg",
+        "/_portal/vshops/tri-life-315/g10.jpg",
+        "/_portal/vshops/tri-life-315/s04.jpg",
+        "/_portal/vshops/tri-life-315/s05.jpg"
+      ],
+      "photos": [
+        {
+          "path": "/_portal/vshops/tri-life-315/g01.jpg",
+          "what": "木立を背にした平屋の堂の正面",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 812
+        },
+        {
+          "path": "/_portal/vshops/tri-life-315/g02.jpg",
+          "what": "石段と石柱が続く参道",
+          "kind": "exterior",
+          "width": 675,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-life-315/g03.jpg",
+          "what": "石段と石柱のある境内の入口",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 819
+        },
+        {
+          "path": "/_portal/vshops/tri-life-315/g05.jpg",
+          "what": "霞堂の堂内に太鼓と祭壇が見える",
+          "kind": "common",
+          "width": 1200,
+          "height": 675
+        },
+        {
+          "path": "/_portal/vshops/tri-life-315/g06.jpg",
+          "what": "瓦屋根の小さな堂",
+          "kind": "exterior",
+          "width": 904,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-life-315/g07.jpg",
+          "what": "花が供えられた石の立像",
+          "kind": "common",
+          "width": 675,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-life-315/g10.jpg",
+          "what": "木立の斜面に立つ小さな祠",
+          "kind": "view",
+          "width": 675,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-life-315/s04.jpg",
+          "what": "階段の上に建つ堂の正面",
+          "kind": "exterior",
+          "width": 1280,
+          "height": 960
+        },
+        {
+          "path": "/_portal/vshops/tri-life-315/s05.jpg",
+          "what": "石垣に囲まれた園地と木々",
+          "kind": "view",
+          "width": 640,
+          "height": 480
+        }
+      ],
+      "tags": [
+        "駐車場あり"
+      ],
+      "article": {
+        "headline": "横浜市港南区野庭町にある浄土宗のお寺。1564年に建立され、鎌倉郡三十三観音第十八番札所の観音堂「霞堂」がある",
+        "lede": "横浜市にある「浄土宗 蔵王山正定院淨念寺」です。1564年(永禄7年)に相模国野場郷、現在の野庭町に建立されました。本堂には阿弥陀如来坐像が祀られ、境内には観音堂「霞堂」と樹木葬の「四季の郷」があります。",
+        "sections": [
+          {
+            "heading": "由緒と境内",
+            "body": "1564年(永禄7年)、鎌倉臼居家3代の臼居杢衛門胤知公が、鎌倉安養院の聖連社深誉呑霊大和尚を迎え、臼居守胤公と千葉ノ介親胤公の菩提を弔うために建立しました。本堂の正面には身丈150cmの阿弥陀如来坐像が祀られています。境内左脇の観音堂「霞堂」は鎌倉郡三十三観音第十八番札所で、前立の如意輪観音が祀られ、秘仏は年に一度、4月の観音講のみ公開されます。"
+          },
+          {
+            "heading": "境内の施設と行事",
+            "body": "境内には、重さ約70キロの力石があります。本堂裏手の山肌の中程には「咳止め玄入坊」があり、足元が悪いため参拝には注意が必要です。墓地の入り口には永代供養墓の「蓮台之碑」、多種類の桜や花木に包まれた樹木葬の永代供養墓「四季の郷」があります。御朱印は、本堂の阿弥陀如来と霞堂の如意輪宝珠観世音菩薩の2種類です。年中行事には、涅槃会、降誕会、盂蘭盆会、成道会などがあります。"
+          },
+          {
+            "heading": "葬儀・法要と墓地",
+            "body": "火葬場の予約から葬儀までを行う寺院葬パックがあり、檀信徒のほか、これまで縁のなかった一般の方の葬儀も受け付けています。墓地には洋型・和型タイプの新規一般墓所と、永代供養墓があります。詳しくはお問合せください。お問合せは電話のほか、お問合せフォームからもできます。"
+          },
+          {
+            "heading": "場所と連絡先",
+            "body": "電話は045-842-7288、受付時間は9時から17時です。車では横浜横須賀道の日野ICから約7分、境内の階段下に10台ほどの駐車スペースがあります。バスは「すずかけ通」停留所から徒歩約10分、「藤ケ沢」停留所から徒歩約15分です。市営地下鉄ブルーラインの上永谷駅からは、タクシーで約7分です。"
+          }
+        ],
+        "sources": [
+          {
+            "label": "公式サイト",
+            "url": "https://www.joonenji.or.jp/"
+          },
+          {
+            "label": "公式サイト(由緒・園内)",
+            "url": "https://www.joonenji.or.jp/aboutus/"
+          },
+          {
+            "label": "公式サイト(アクセス)",
+            "url": "https://www.joonenji.or.jp/access/"
+          },
+          {
+            "label": "公式サイト(ご葬儀と法要)",
+            "url": "https://www.joonenji.or.jp/sogi_hoyo/"
+          },
+          {
+            "label": "公式サイト(墓地・永代供養墓)",
+            "url": "https://www.joonenji.or.jp/bochi/"
+          },
+          {
+            "label": "Google マップ",
+            "url": "https://maps.google.com/?cid=4413593003361909530"
+          }
+        ],
+        "checkedAt": "2026-11-02"
+      }
+    },
+    {
+      "id": "li0119",
+      "vertical": "life",
+      "category": "shrine-temple",
+      "name": "天台宗 増位山 随願寺",
+      "pref": "hyogo",
+      "cityName": "姫路市",
+      "address": "兵庫県姫路市白国5 増位山",
+      "lat": 34.8721321,
+      "lng": 134.7127454,
+      "phone": "079-223-7187",
+      "url": "http://hyogotendai-yb.net/jiin_daizukan/file/01/214zuiganji/214zuiganji.html",
+      "website": "http://hyogotendai-yb.net/jiin_daizukan/file/01/214zuiganji/214zuiganji.html",
+      "mapUrl": "https://maps.google.com/?cid=2877029271290800119",
+      "image": "/_portal/vshops/tri-life-322/g01.jpg",
+      "images": [
+        "/_portal/vshops/tri-life-322/g01.jpg",
+        "/_portal/vshops/tri-life-322/g02.jpg",
+        "/_portal/vshops/tri-life-322/g03.jpg",
+        "/_portal/vshops/tri-life-322/g04.jpg",
+        "/_portal/vshops/tri-life-322/g05.jpg",
+        "/_portal/vshops/tri-life-322/g06.jpg",
+        "/_portal/vshops/tri-life-322/g07.jpg",
+        "/_portal/vshops/tri-life-322/g08.jpg",
+        "/_portal/vshops/tri-life-322/g09.jpg",
+        "/_portal/vshops/tri-life-322/g10.jpg"
+      ],
+      "photos": [
+        {
+          "path": "/_portal/vshops/tri-life-322/g01.jpg",
+          "what": "瓦屋根の大きな木造の建物と、その前の砂利の境内",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-life-322/g02.jpg",
+          "what": "瓦屋根の小さな木造の堂と、柱に掛かる黄色い布",
+          "kind": "exterior",
+          "width": 675,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-life-322/g03.jpg",
+          "what": "石段の先にある赤い屋根つきの門と、背後の木々",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-life-322/g04.jpg",
+          "what": "石段の上に建つ瓦屋根の大きな堂と、周囲の緑",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-life-322/g05.jpg",
+          "what": "扉が開かれた堂の正面と、軒下の木組み",
+          "kind": "common",
+          "width": 1200,
+          "height": 800
+        },
+        {
+          "path": "/_portal/vshops/tri-life-322/g06.jpg",
+          "what": "色づいたもみじの枝と、奥の木造の建物",
+          "kind": "view",
+          "width": 1200,
+          "height": 801
+        },
+        {
+          "path": "/_portal/vshops/tri-life-322/g07.jpg",
+          "what": "石灯籠が立つ前庭と、瓦屋根の小さな堂",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-life-322/g08.jpg",
+          "what": "赤い柱と瓦屋根の二層の建物",
+          "kind": "exterior",
+          "width": 675,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-life-322/g09.jpg",
+          "what": "柵に囲まれた石塔と、並ぶ石灯籠",
+          "kind": "view",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-life-322/g10.jpg",
+          "what": "梅の木が広がる林",
+          "kind": "view",
+          "width": 1200,
+          "height": 901
+        }
+      ],
+      "tags": [
+        "駐車場あり"
+      ],
+      "article": {
+        "headline": "姫路市白国、増位山にある天台宗の寺。聖徳太子が慧便に建立させた播磨最古の名刹で、本尊は薬師如来座像",
+        "lede": "姫路市にある「天台宗 増位山 随願寺」です。聖徳太子が高麗の僧・慧便に建立させた播磨最古の名刹で、宇多・白河・後醍醐の三帝が行幸した勅願寺です。本尊の薬師如来座像は県の文化財、毘沙門天立像は国指定重要文化財です。",
+        "sections": [
+          {
+            "heading": "由緒と歴史",
+            "body": "行基と弟子の徳道が諸堂を建立し、国土安穏を祈願するところとなりました。初めは法相宗で、承和元年に天台宗となり、増位山随願寺医王院の勅号を賜っています。七堂伽藍に三十六坊がありましたが、天正元年(1573年)の別所長治の兵火で全山が焼けました。現在の本堂は寛文8年(1668年)に榊原忠次公が建立したもので、随願寺は榊原家の菩提寺として五百石の寺領を有しました。"
+          },
+          {
+            "heading": "文化財と墓所",
+            "body": "本尊は薬師如来座像で県の文化財、毘沙門天立像は国指定重要文化財です。本堂・奥之院・経堂は県指定文化財、鐘楼・榊原忠次公墓所・唐門は市の文化財に指定されています。俳人千山の墓所があり、芭蕉翁の蓑と笠もあります。"
+          },
+          {
+            "heading": "年間の行事",
+            "body": "2月11日は山上で追儺会鬼追式並大護摩、8月17日は施餓鬼会、11月28日は天台大師御十夜がおこなわれ、12月31日には山上の鐘楼で除夜鐘があります。毎月6日は山上の護摩堂で実相院殿内護摩、毎月28日は同じ護摩堂で不動護摩が営まれます。"
+          },
+          {
+            "heading": "場所とアクセス",
+            "body": "住所は姫路市白国の増位山、電話は079-223-7187です。姫路駅から神姫バスの粟賀行に乗り、白国で降りて北へ500mです。車は姫路城方面から姫路城東の旧312号を北上し、白国墓地を左折します。大型車・乗用車とも駐車場があります。"
+          }
+        ],
+        "sources": [
+          {
+            "label": "公式サイト",
+            "url": "http://hyogotendai-yb.net/jiin_daizukan/file/01/214zuiganji/214zuiganji.html"
+          },
+          {
+            "label": "Google マップ",
+            "url": "https://maps.google.com/?cid=2877029271290800119"
+          }
+        ],
+        "checkedAt": "2026-11-02"
+      }
     }
   ]
 }

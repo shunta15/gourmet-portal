@@ -1,0 +1,227 @@
+{
+  "key": "tri-life-315",
+  "headline": "横浜市港南区野庭町にある浄土宗のお寺。1564年に建立され、鎌倉郡三十三観音第十八番札所の観音堂「霞堂」がある",
+  "lede": "横浜市にある「浄土宗 蔵王山正定院淨念寺」です。1564年(永禄7年)に相模国野場郷、現在の野庭町に建立されました。本堂には阿弥陀如来坐像が祀られ、境内には観音堂「霞堂」と樹木葬の「四季の郷」があります。",
+  "sections": [
+    {
+      "heading": "由緒と境内",
+      "body": "1564年(永禄7年)、鎌倉臼居家3代の臼居杢衛門胤知公が、鎌倉安養院の聖連社深誉呑霊大和尚を迎え、臼居守胤公と千葉ノ介親胤公の菩提を弔うために建立しました。本堂の正面には身丈150cmの阿弥陀如来坐像が祀られています。境内左脇の観音堂「霞堂」は鎌倉郡三十三観音第十八番札所で、前立の如意輪観音が祀られ、秘仏は年に一度、4月の観音講のみ公開されます。"
+    },
+    {
+      "heading": "境内の施設と行事",
+      "body": "境内には、重さ約70キロの力石があります。本堂裏手の山肌の中程には「咳止め玄入坊」があり、足元が悪いため参拝には注意が必要です。墓地の入り口には永代供養墓の「蓮台之碑」、多種類の桜や花木に包まれた樹木葬の永代供養墓「四季の郷」があります。御朱印は、本堂の阿弥陀如来と霞堂の如意輪宝珠観世音菩薩の2種類です。年中行事には、涅槃会、降誕会、盂蘭盆会、成道会などがあります。"
+    },
+    {
+      "heading": "葬儀・法要と墓地",
+      "body": "火葬場の予約から葬儀までを行う寺院葬パックがあり、檀信徒のほか、これまで縁のなかった一般の方の葬儀も受け付けています。墓地には洋型・和型タイプの新規一般墓所と、永代供養墓があります。詳しくはお問合せください。お問合せは電話のほか、お問合せフォームからもできます。"
+    },
+    {
+      "heading": "場所と連絡先",
+      "body": "電話は045-842-7288、受付時間は9時から17時です。車では横浜横須賀道の日野ICから約7分、境内の階段下に10台ほどの駐車スペースがあります。バスは「すずかけ通」停留所から徒歩約10分、「藤ケ沢」停留所から徒歩約15分です。市営地下鉄ブルーラインの上永谷駅からは、タクシーで約7分です。"
+    }
+  ],
+  "menus": [],
+  "tags": [
+    {
+      "tag": "駐車場あり",
+      "factIndex": 16
+    }
+  ],
+  "facts": [
+    {
+      "claim": "横浜市港南区にある浄土宗のお寺",
+      "source": "https://www.joonenji.or.jp/",
+      "quote": "浄念寺は横浜市港南区にある浄土宗のお寺です。",
+      "checkedAt": "2026-11-02"
+    },
+    {
+      "claim": "1564年(永禄7年)に相模国野場郷(現在の野庭町)に建立された",
+      "source": "https://www.joonenji.or.jp/aboutus/",
+      "quote": "1564年(永禄7年)",
+      "checkedAt": "2026-11-02"
+    },
+    {
+      "claim": "本堂正面に阿弥陀如来坐像(身丈150cm)が祀られている",
+      "source": "https://www.joonenji.or.jp/aboutus/",
+      "quote": "阿弥陀如来様(身丈150cm坐像)が祀られています",
+      "checkedAt": "2026-11-02"
+    },
+    {
+      "claim": "境内左脇に鎌倉郡三十三観音第十八番札所の観音堂「霞堂」がある",
+      "source": "https://www.joonenji.or.jp/aboutus/",
+      "quote": "境内左脇に鎌倉郡三十三観音第十八番札所「霞堂」があります。",
+      "checkedAt": "2026-11-02"
+    },
+    {
+      "claim": "霞堂の秘仏は年に一度、4月の観音講のみ公開",
+      "source": "https://www.joonenji.or.jp/aboutus/",
+      "quote": "秘仏は年に一度の4月の観音講のみ公開となります。",
+      "checkedAt": "2026-11-02"
+    },
+    {
+      "claim": "重さ約70キロの力石がある",
+      "source": "https://www.joonenji.or.jp/aboutus/",
+      "quote": "重さ約70キロ",
+      "checkedAt": "2026-11-02"
+    },
+    {
+      "claim": "樹木葬の永代供養墓「四季の郷」がある",
+      "source": "https://www.joonenji.or.jp/aboutus/",
+      "quote": "多種類の桜や花木に包まれた樹木葬の永代供養墓です。",
+      "checkedAt": "2026-11-02"
+    },
+    {
+      "claim": "墓地入り口に永代供養墓「蓮台之碑」がある",
+      "source": "https://www.joonenji.or.jp/aboutus/",
+      "quote": "墓地入り口にある永代供養墓です。",
+      "checkedAt": "2026-11-02"
+    },
+    {
+      "claim": "本堂裏手の山肌に「咳止め玄入坊」がある",
+      "source": "https://www.joonenji.or.jp/aboutus/",
+      "quote": "本堂裏手、山肌の中程にあり",
+      "checkedAt": "2026-11-02"
+    },
+    {
+      "claim": "年中行事に涅槃会・降誕会・盂蘭盆会・成道会などがある",
+      "source": "https://www.joonenji.or.jp/aboutus/",
+      "quote": "涅槃会",
+      "checkedAt": "2026-11-02"
+    },
+    {
+      "claim": "御朱印は阿弥陀如来と如意輪宝珠観世音菩薩の2種",
+      "source": "https://www.joonenji.or.jp/aboutus/",
+      "quote": "如意輪宝珠観世音菩薩 朱印",
+      "checkedAt": "2026-11-02"
+    },
+    {
+      "claim": "受付時間は9時から17時",
+      "source": "https://www.joonenji.or.jp/",
+      "quote": "9:00〜17:00",
+      "checkedAt": "2026-11-02"
+    },
+    {
+      "claim": "電話番号は045-842-7288",
+      "source": "https://maps.google.com/?cid=4413593003361909530",
+      "quote": "045-842-7288",
+      "checkedAt": "2026-11-02"
+    },
+    {
+      "claim": "横浜横須賀道「日野IC」から車で約7分",
+      "source": "https://www.joonenji.or.jp/access/",
+      "quote": "横浜横須賀道 ｢日野IC ｣ より\n 約 7 分",
+      "checkedAt": "2026-11-02"
+    },
+    {
+      "claim": "バスは「すずかけ通」停留所から徒歩約10分",
+      "source": "https://www.joonenji.or.jp/access/",
+      "quote": "｢すずかけ通｣ 停留所から徒歩で\n 約 10 分",
+      "checkedAt": "2026-11-02"
+    },
+    {
+      "claim": "市営地下鉄ブルーライン「上永谷駅」からタクシーで約7分",
+      "source": "https://www.joonenji.or.jp/access/",
+      "quote": "市営地下鉄ブルーライン ｢上永谷駅｣ からタクシーで\n 約 7 分",
+      "checkedAt": "2026-11-02"
+    },
+    {
+      "claim": "境内の階段下に10台ほどの駐車スペースがある",
+      "source": "https://www.joonenji.or.jp/access/",
+      "quote": "境内の階段下に10台ほどの駐車スペースがございます。",
+      "checkedAt": "2026-11-02"
+    },
+    {
+      "claim": "檀信徒以外の一般の方の葬儀も受け付けている",
+      "source": "https://www.joonenji.or.jp/sogi_hoyo/",
+      "quote": "これまでに直接当山とご縁のなかった一般の方々にも",
+      "checkedAt": "2026-11-02"
+    },
+    {
+      "claim": "火葬場の予約から葬儀まで行う寺院葬パックがある",
+      "source": "https://www.joonenji.or.jp/sogi_hoyo/",
+      "quote": "火葬場のご予約からご葬儀まで行う",
+      "checkedAt": "2026-11-02"
+    },
+    {
+      "claim": "洋型・和型タイプの新規一般墓所がある",
+      "source": "https://www.joonenji.or.jp/bochi/",
+      "quote": "洋型/和型タイプ",
+      "checkedAt": "2026-11-02"
+    },
+    {
+      "claim": "バスは「藤ケ沢」停留所から徒歩約15分",
+      "source": "https://www.joonenji.or.jp/access/",
+      "quote": "｢藤ケ沢｣ 停留所から徒歩で\n 約 15 分",
+      "checkedAt": "2026-11-02"
+    },
+    {
+      "claim": "咳止め玄入坊は足元が悪いため参拝時に注意が必要",
+      "source": "https://www.joonenji.or.jp/aboutus/",
+      "quote": "足元が悪いためお参りの際はご注意ください。",
+      "checkedAt": "2026-11-02"
+    },
+    {
+      "claim": "寺院葬パックの詳細はお問合せくださいと案内され、電話のほかお問合せフォームがある",
+      "source": "https://www.joonenji.or.jp/sogi_hoyo/",
+      "quote": "詳しくはお問合せください。",
+      "checkedAt": "2026-11-02"
+    },
+    {
+      "claim": "寺の名は浄土宗 蔵王山正定院淨念寺",
+      "source": "https://maps.google.com/?cid=4413593003361909530",
+      "quote": "蔵王山正定院淨念寺",
+      "checkedAt": "2026-11-02"
+    },
+    {
+      "claim": "1564年(永禄7年)、鎌倉臼居家3代の臼居杢衛門胤知公が、鎌倉安養院の聖連社深誉呑霊大和尚を迎え、臼居守胤公と千葉ノ介親胤公の菩提を弔うために建立した",
+      "source": "https://www.joonenji.or.jp/aboutus/",
+      "quote": "鎌倉安養院(北条政子開基)聖連社深誉呑霊大和尚を迎え臼居守胤公並びに千葉ノ介親胤公の菩提を弔うために",
+      "checkedAt": "2026-11-02"
+    },
+    {
+      "claim": "臼居杢衛門胤知公は鎌倉臼居家3代",
+      "source": "https://www.joonenji.or.jp/aboutus/",
+      "quote": "鎌倉臼居家３代臼居杢衛門胤知公により",
+      "checkedAt": "2026-11-02"
+    },
+    {
+      "claim": "霞堂には前立の如意輪観音が祀られている",
+      "source": "https://www.joonenji.or.jp/aboutus/",
+      "quote": "前立の如意輪観音様が祀られており",
+      "checkedAt": "2026-11-02"
+    },
+    {
+      "claim": "お問合せフォームがある",
+      "source": "https://www.joonenji.or.jp/",
+      "quote": "お問合せフォーム",
+      "checkedAt": "2026-11-02"
+    }
+  ],
+  "sources": [
+    {
+      "label": "公式サイト",
+      "url": "https://www.joonenji.or.jp/"
+    },
+    {
+      "label": "公式サイト(由緒・園内)",
+      "url": "https://www.joonenji.or.jp/aboutus/"
+    },
+    {
+      "label": "公式サイト(アクセス)",
+      "url": "https://www.joonenji.or.jp/access/"
+    },
+    {
+      "label": "公式サイト(ご葬儀と法要)",
+      "url": "https://www.joonenji.or.jp/sogi_hoyo/"
+    },
+    {
+      "label": "公式サイト(墓地・永代供養墓)",
+      "url": "https://www.joonenji.or.jp/bochi/"
+    },
+    {
+      "label": "Google マップ",
+      "url": "https://maps.google.com/?cid=4413593003361909530"
+    }
+  ],
+  "notes": "automation/v2/write.mjs が 2026-11-02 に claude -p --model sonnet で作成。事実の裏取り: 28/28 件(quote が出どころにあるもの)。裏取りに通らなかった facts は載せていない。"
+}

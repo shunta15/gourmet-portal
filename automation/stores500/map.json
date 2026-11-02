@@ -1968,5 +1968,30 @@
     "articleId": "conceptcafeBLOSSOM",
     "sheetName": "ブロッサム",
     "mapsUrl": "https://maps.google.com/?cid=14389258596218394339"
+  },
+  {
+    "articleId": "水流",
+    "sheetName": "水流",
+    "mapsUrl": "https://maps.google.com/?cid=1323553501487163360"
+  },
+  {
+    "articleId": "クアトロフォリオ",
+    "sheetName": "クアトロ・フォリオ",
+    "mapsUrl": "https://maps.google.com/?cid=14349372727870684492"
+  },
+  {
+    "articleId": "炉ばた地鶏山嵐",
+    "sheetName": "炉ばた地鶏山嵐",
+    "mapsUrl": "https://maps.google.com/?cid=15908463223995002463"
+  },
+  {
+    "articleId": "石神井の蕎麦丸嶋",
+    "sheetName": "石神井の蕎麦 丸嶋",
+    "mapsUrl": "https://maps.google.com/?cid=6396234841183082237"
+  },
+  {
+    "articleId": "栞",
+    "sheetName": "酔い処 味処 栞",
+    "mapsUrl": "https://maps.google.com/?cid=15148870944983320503"
   }
 ]

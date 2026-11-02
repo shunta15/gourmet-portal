@@ -1,0 +1,32 @@
+{
+  "tab": "トリニティアポ",
+  "tabEn": "tri-life",
+  "row": 306,
+  "sheet": {
+    "name": "手筒花火発祥の地 吉田神社(金柑丸稲荷社)",
+    "address": "",
+    "url": "https://www.google.com/maps/search/?api=1&query=%E6%89%8B%E7%AD%92%E8%8A%B1%E7%81%AB%E7%99%BA%E7%A5%A5%E3%81%AE%E5%9C%B0%20%E5%90%89%E7%94%B0%E7%A5%9E%E7%A4%BE%28%E9%87%91%E6%9F%91%E4%B8%B8%E7%A8%B2%E8%8D%B7%E7%A4%BE%29%20053-252-2553%20%E3%80%92440-0891%20%E6%84%9B%E7%9F%A5%E7%9C%8C%E8%B1%8A%E6%A9%8B%E5%B8%82%E9%96%A2%E5%B1%8B%E7%94%BA%EF%BC%92",
+    "type": "神社",
+    "d1": "",
+    "d2": ""
+  },
+  "urlKind": "mapsApi",
+  "route": "第1段(verify-gbp.mjs)で確認済み",
+  "verdict": "一致",
+  "verdictReason": "手がかり: 店名＋電話＋住所(番地まで)。電話が一致／店名: contains(シート「手筒花火発祥の地 吉田神社(金柑丸稲荷社)」/ マップ「吉田神社（手筒花火発祥の地）」)／住所(シート): exact・町名・番地とも一致",
+  "place": {
+    "name": "吉田神社（手筒花火発祥の地）",
+    "address": "愛知県豊橋市関屋町２",
+    "category": "神社",
+    "lat": 34.7702914,
+    "lng": 137.3899314,
+    "gbpUrl": "https://maps.google.com/?cid=5854028582624486747",
+    "phone": "0532-52-2553",
+    "website": "http://toyohashi-yoshida.com/",
+    "hours": null,
+    "reserveLinks": [],
+    "statusSignals": [],
+    "closedSignal": false
+  },
+  "fetchedAt": "2026-11-01T23:09:06.171Z"
+}

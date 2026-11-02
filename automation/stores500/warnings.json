@@ -3058,5 +3058,47 @@
     "warnings": [
       "営業時間が取れていない（noindex）"
     ]
+  },
+  "r835": {
+    "articleId": "水流",
+    "name": "水流",
+    "warnings": [
+      "営業時間が取れていない（noindex）",
+      "cuisine は GBPカテゴリ"
+    ]
+  },
+  "r836": {
+    "articleId": "クアトロフォリオ",
+    "name": "クアトロフォリオ",
+    "warnings": [
+      "営業時間が取れていない（noindex）",
+      "cuisine は GBPカテゴリ"
+    ]
+  },
+  "r837": {
+    "articleId": "炉ばた地鶏山嵐",
+    "name": "炉ばた地鶏 山嵐",
+    "warnings": [
+      "desc は lede から事実の文を選べず、事実から作った定型文",
+      "営業時間が取れていない（noindex）",
+      "cuisine は GBPカテゴリ"
+    ]
+  },
+  "r838": {
+    "articleId": "石神井の蕎麦丸嶋",
+    "name": "石神井の蕎麦 丸嶋",
+    "warnings": [
+      "営業時間が取れていない（noindex）",
+      "cuisine は GBPカテゴリ"
+    ]
+  },
+  "r834": {
+    "articleId": "栞",
+    "name": "栞",
+    "warnings": [
+      "desc は lede から事実の文を選べず、事実から作った定型文",
+      "営業時間が取れていない（noindex）",
+      "cuisine は GBPカテゴリ"
+    ]
   }
 }

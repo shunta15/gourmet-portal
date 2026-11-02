@@ -1,0 +1,181 @@
+{
+  "key": "tri-life-322",
+  "headline": "姫路市白国、増位山にある天台宗の寺。聖徳太子が慧便に建立させた播磨最古の名刹で、本尊は薬師如来座像",
+  "lede": "姫路市にある「天台宗 増位山 随願寺」です。聖徳太子が高麗の僧・慧便に建立させた播磨最古の名刹で、宇多・白河・後醍醐の三帝が行幸した勅願寺です。本尊の薬師如来座像は県の文化財、毘沙門天立像は国指定重要文化財です。",
+  "sections": [
+    {
+      "heading": "由緒と歴史",
+      "body": "行基と弟子の徳道が諸堂を建立し、国土安穏を祈願するところとなりました。初めは法相宗で、承和元年に天台宗となり、増位山随願寺医王院の勅号を賜っています。七堂伽藍に三十六坊がありましたが、天正元年(1573年)の別所長治の兵火で全山が焼けました。現在の本堂は寛文8年(1668年)に榊原忠次公が建立したもので、随願寺は榊原家の菩提寺として五百石の寺領を有しました。"
+    },
+    {
+      "heading": "文化財と墓所",
+      "body": "本尊は薬師如来座像で県の文化財、毘沙門天立像は国指定重要文化財です。本堂・奥之院・経堂は県指定文化財、鐘楼・榊原忠次公墓所・唐門は市の文化財に指定されています。俳人千山の墓所があり、芭蕉翁の蓑と笠もあります。"
+    },
+    {
+      "heading": "年間の行事",
+      "body": "2月11日は山上で追儺会鬼追式並大護摩、8月17日は施餓鬼会、11月28日は天台大師御十夜がおこなわれ、12月31日には山上の鐘楼で除夜鐘があります。毎月6日は山上の護摩堂で実相院殿内護摩、毎月28日は同じ護摩堂で不動護摩が営まれます。"
+    },
+    {
+      "heading": "場所とアクセス",
+      "body": "住所は姫路市白国の増位山、電話は079-223-7187です。姫路駅から神姫バスの粟賀行に乗り、白国で降りて北へ500mです。車は姫路城方面から姫路城東の旧312号を北上し、白国墓地を左折します。大型車・乗用車とも駐車場があります。"
+    }
+  ],
+  "menus": [],
+  "tags": [
+    {
+      "tag": "駐車場あり",
+      "factIndex": 11
+    }
+  ],
+  "facts": [
+    {
+      "claim": "聖徳太子が高麗の僧慧便に建立させた播磨最古の名刹",
+      "source": "http://hyogotendai-yb.net/jiin_daizukan/file/01/214zuiganji/214zuiganji.html",
+      "quote": "聖徳太子が高麗の僧慧便をして建立させた播磨最古の名刹",
+      "checkedAt": "2026-11-02"
+    },
+    {
+      "claim": "行基と弟子の徳道が諸堂を建立した",
+      "source": "http://hyogotendai-yb.net/jiin_daizukan/file/01/214zuiganji/214zuiganji.html",
+      "quote": "行基並弟子徳道により諸堂を建立",
+      "checkedAt": "2026-11-02"
+    },
+    {
+      "claim": "増位山随願寺医王院の勅号を賜った",
+      "source": "http://hyogotendai-yb.net/jiin_daizukan/file/01/214zuiganji/214zuiganji.html",
+      "quote": "増位山随願寺医王院の勅号を賜った",
+      "checkedAt": "2026-11-02"
+    },
+    {
+      "claim": "宇多、白河、後醍醐の三帝が行幸した勅願寺",
+      "source": "http://hyogotendai-yb.net/jiin_daizukan/file/01/214zuiganji/214zuiganji.html",
+      "quote": "宇多、白河、後醍醐三帝の御臨幸された勅願寺",
+      "checkedAt": "2026-11-02"
+    },
+    {
+      "claim": "七堂伽藍に三十六坊があった",
+      "source": "http://hyogotendai-yb.net/jiin_daizukan/file/01/214zuiganji/214zuiganji.html",
+      "quote": "七堂伽藍に三十六坊を有し",
+      "checkedAt": "2026-11-02"
+    },
+    {
+      "claim": "現在の本堂は榊原忠次公が建立した",
+      "source": "http://hyogotendai-yb.net/jiin_daizukan/file/01/214zuiganji/214zuiganji.html",
+      "quote": "榊原忠次公によって建立されたものである",
+      "checkedAt": "2026-11-02"
+    },
+    {
+      "claim": "榊原家の菩提寺として五百石の寺領を有した",
+      "source": "http://hyogotendai-yb.net/jiin_daizukan/file/01/214zuiganji/214zuiganji.html",
+      "quote": "榊原家の菩提寺として五百石の寺領を有し",
+      "checkedAt": "2026-11-02"
+    },
+    {
+      "claim": "本尊は薬師如来座像で県文化財、毘沙門天立像は国指定重要文化財",
+      "source": "http://hyogotendai-yb.net/jiin_daizukan/file/01/214zuiganji/214zuiganji.html",
+      "quote": "毘沙門天立像は国指定重要文化財",
+      "checkedAt": "2026-11-02"
+    },
+    {
+      "claim": "本堂・奥之院・経堂は県指定文化財、鐘楼・榊原忠次公墓所・唐門は市文化財",
+      "source": "http://hyogotendai-yb.net/jiin_daizukan/file/01/214zuiganji/214zuiganji.html",
+      "quote": "鐘楼、榊原忠次公墓所、唐門は市文化財に指定されている",
+      "checkedAt": "2026-11-02"
+    },
+    {
+      "claim": "俳人千山の墓所と芭蕉翁の蓑と笠がある",
+      "source": "http://hyogotendai-yb.net/jiin_daizukan/file/01/214zuiganji/214zuiganji.html",
+      "quote": "俳人千山の墓所、芭蕉翁の蓑と笠等もあり",
+      "checkedAt": "2026-11-02"
+    },
+    {
+      "claim": "2月11日に山上で追儺会鬼追式並大護摩がある",
+      "source": "http://hyogotendai-yb.net/jiin_daizukan/file/01/214zuiganji/214zuiganji.html",
+      "quote": "追儺会鬼追式並大護摩 於 山上",
+      "checkedAt": "2026-11-02"
+    },
+    {
+      "claim": "大型・乗用車の駐車場がある",
+      "source": "http://hyogotendai-yb.net/jiin_daizukan/file/01/214zuiganji/214zuiganji.html",
+      "quote": "大型・乗用車 駐車場有り",
+      "checkedAt": "2026-11-02"
+    },
+    {
+      "claim": "姫路駅から神姫バス粟賀行に乗り白国で下車、北へ500m",
+      "source": "http://hyogotendai-yb.net/jiin_daizukan/file/01/214zuiganji/214zuiganji.html",
+      "quote": "姫路駅より神姫バス粟賀行乗車白国下車北へ５００ｍ",
+      "checkedAt": "2026-11-02"
+    },
+    {
+      "claim": "電話番号は079-223-7187",
+      "source": "https://maps.google.com/?cid=2877029271290800119",
+      "quote": "079-223-7187",
+      "checkedAt": "2026-11-02"
+    },
+    {
+      "claim": "天正元年(1573年)に別所長治の兵火で全山が焼けた",
+      "source": "http://hyogotendai-yb.net/jiin_daizukan/file/01/214zuiganji/214zuiganji.html",
+      "quote": "別所長治の兵火に会い",
+      "checkedAt": "2026-11-02"
+    },
+    {
+      "claim": "本堂は寛文8年(1668年)の建立",
+      "source": "http://hyogotendai-yb.net/jiin_daizukan/file/01/214zuiganji/214zuiganji.html",
+      "quote": "寛文八年（一六六八年）",
+      "checkedAt": "2026-11-02"
+    },
+    {
+      "claim": "8月17日に施餓鬼会、11月28日に天台大師御十夜がある",
+      "source": "http://hyogotendai-yb.net/jiin_daizukan/file/01/214zuiganji/214zuiganji.html",
+      "quote": "天台大師御十夜",
+      "checkedAt": "2026-11-02"
+    },
+    {
+      "claim": "毎月6日に実相院殿内護摩、毎月28日に不動護摩が山上護摩堂である",
+      "source": "http://hyogotendai-yb.net/jiin_daizukan/file/01/214zuiganji/214zuiganji.html",
+      "quote": "不動護摩 於 山上護摩堂",
+      "checkedAt": "2026-11-02"
+    },
+    {
+      "claim": "姫路城方面から姫路城東の旧312号を北上し白国墓地を左折する",
+      "source": "http://hyogotendai-yb.net/jiin_daizukan/file/01/214zuiganji/214zuiganji.html",
+      "quote": "姫路城東旧三一二号を北上 白国墓地を左折",
+      "checkedAt": "2026-11-02"
+    },
+    {
+      "claim": "初めは法相宗だった",
+      "source": "http://hyogotendai-yb.net/jiin_daizukan/file/01/214zuiganji/214zuiganji.html",
+      "quote": "初めは、法相宗であったが",
+      "checkedAt": "2026-11-02"
+    },
+    {
+      "claim": "承和元年に天台宗となった",
+      "source": "http://hyogotendai-yb.net/jiin_daizukan/file/01/214zuiganji/214zuiganji.html",
+      "quote": "承和元年、天台宗となり",
+      "checkedAt": "2026-11-02"
+    },
+    {
+      "claim": "12月31日に山上の鐘楼で除夜鐘がある",
+      "source": "http://hyogotendai-yb.net/jiin_daizukan/file/01/214zuiganji/214zuiganji.html",
+      "quote": "除夜鐘 於 山上鐘楼",
+      "checkedAt": "2026-11-02"
+    },
+    {
+      "claim": "諸堂を建立した後、国土安穏を祈願するところとなった",
+      "source": "http://hyogotendai-yb.net/jiin_daizukan/file/01/214zuiganji/214zuiganji.html",
+      "quote": "国土安穏を祈願するところとなった",
+      "checkedAt": "2026-11-02"
+    }
+  ],
+  "sources": [
+    {
+      "label": "公式サイト",
+      "url": "http://hyogotendai-yb.net/jiin_daizukan/file/01/214zuiganji/214zuiganji.html"
+    },
+    {
+      "label": "Google マップ",
+      "url": "https://maps.google.com/?cid=2877029271290800119"
+    }
+  ],
+  "notes": "automation/v2/write.mjs が 2026-11-02 に claude -p --model sonnet で作成。事実の裏取り: 23/23 件(quote が出どころにあるもの)。裏取りに通らなかった facts は載せていない。"
+}

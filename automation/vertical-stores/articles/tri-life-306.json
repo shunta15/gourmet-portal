@@ -1,0 +1,203 @@
+{
+  "key": "tri-life-306",
+  "headline": "愛知県豊橋市関屋町にある神社。手筒花火発祥の神社として崇敬され、毎年7月第3金曜日から3日間、例祭の豊橋祇園祭がおこなわれる",
+  "lede": "豊橋市にある「吉田神社」です。御祭神は素盞嗚尊で、八ヶ町の氏神であり、手筒花火発祥の神社として崇敬されています。例祭の豊橋祇園祭では、初日に拝殿前で神前手筒が奉納され、2日目には神社の北側の豊川河畔で打上花火が奉納されます。",
+  "sections": [
+    {
+      "heading": "由緒と御祭神",
+      "body": "御祭神は素盞嗚尊(すさのおのみこと)です。創建には諸説ありますが、天治元年（1124）に当地で疫病が流行した際、牛頭天王(ごずてんのう)を勧請して疫病退散を祈願したのが始まりという説があります。現在は八ヶ町の氏神で、手筒花火発祥の神社として崇敬されています。末社に金柑丸稲荷社(きんかんまるいなりしゃ)があります。"
+    },
+    {
+      "heading": "記念碑と文化財",
+      "body": "「伝承三河伝統手筒花火発祥の地記念碑」は、平成5年に手筒花火とその歴史を後世に伝えるため、標示塔とともに建立されました。令和3年から6年にかけて、鎌倉時代の木造の獅子一対、南北朝〜室町時代の獅子・狛犬一対、獅子頭、鬼面、神輿棟札などが豊橋市の有形文化財に、旧式祭礼図絵馬が民俗文化財に指定されました。"
+    },
+    {
+      "heading": "豊橋祇園祭",
+      "body": "例祭は通称「豊橋祇園祭」で、7月第3金曜日から3日間おこなわれます。初日の金曜日は午後6時から宵祭と手筒の清祓いがあり、拝殿前で神前手筒が奉納されます。2日目の土曜日は午後6時から前夜祭があり、神社北側の豊川河畔で1万発以上の打上花火が奉納されます。3日目の日曜日は例祭日で、午後5時頃に神輿が出発する神輿渡御は、頼朝行列と呼ばれます。"
+    },
+    {
+      "heading": "ご祈祷とアクセス",
+      "body": "ご祈祷の受付は毎日午前9時から午後4時までで、予約なしでも受け付けています。月次祭は毎月1日の午前8時からです。公共交通機関では、豊橋駅から路面電車で札木または市役所前まで行くと徒歩7〜8分、バスで豊橋市役所前まで行くと徒歩1分です。参拝者駐車場は参道の東西に2か所あります。"
+    }
+  ],
+  "menus": [],
+  "tags": [
+    {
+      "tag": "駐車場あり",
+      "factIndex": 15
+    }
+  ],
+  "facts": [
+    {
+      "claim": "例祭は通称「豊橋祇園祭」で、毎年7月第3金曜日から3日間おこなわれる",
+      "source": "http://toyohashi-yoshida.com/",
+      "quote": "毎年7月第3金曜日より3日間盛大に執り行われます",
+      "checkedAt": "2026-11-02"
+    },
+    {
+      "claim": "手筒花火発祥の神社として崇敬されている",
+      "source": "http://toyohashi-yoshida.com/gosaijin/",
+      "quote": "手筒花火発祥の神社として崇敬されております",
+      "checkedAt": "2026-11-02"
+    },
+    {
+      "claim": "創建には諸説あるが、天治元年（1124）に当地で疫病が流行した際、牛頭天王を勧請して疫病退散を祈願したのが始まりという説がある",
+      "source": "http://toyohashi-yoshida.com/gosaijin/",
+      "quote": "創建については諸説ありますが",
+      "checkedAt": "2026-11-02"
+    },
+    {
+      "claim": "御祭神は素盞嗚尊",
+      "source": "http://toyohashi-yoshida.com/gosaijin/",
+      "quote": "御祭神 素盞嗚尊(すさのおのみこと)",
+      "checkedAt": "2026-11-02"
+    },
+    {
+      "claim": "八ヶ町の氏神である",
+      "source": "http://toyohashi-yoshida.com/gosaijin/",
+      "quote": "指笠町・札木町・三浦町・関屋町・西八町）の氏神として",
+      "checkedAt": "2026-11-02"
+    },
+    {
+      "claim": "末社に金柑丸稲荷社(きんかんまるいなりしゃ)がある",
+      "source": "http://toyohashi-yoshida.com/",
+      "quote": "末社金柑丸稲荷社(まっしゃきんかんまるいなりしゃ)",
+      "checkedAt": "2026-11-02"
+    },
+    {
+      "claim": "伝承三河伝統手筒花火発祥の地記念碑は平成5年に手筒花火とその歴史を後世に伝えるため標示塔と共に建立された",
+      "source": "http://toyohashi-yoshida.com/gosaijin/",
+      "quote": "平成5年に手筒花火とその歴史を後世に伝える為に",
+      "checkedAt": "2026-11-02"
+    },
+    {
+      "claim": "令和3〜6年に獅子頭・鬼面・神輿棟札・獅子一対・獅子・狛犬一対などが豊橋市の有形文化財に指定された",
+      "source": "http://toyohashi-yoshida.com/gosaijin/",
+      "quote": "「獅子頭」「鬼面」「神輿棟札」「獅子一対」",
+      "checkedAt": "2026-11-02"
+    },
+    {
+      "claim": "旧式祭礼図絵馬が豊橋市の民俗文化財に指定された",
+      "source": "http://toyohashi-yoshida.com/gosaijin/",
+      "quote": "「旧式祭礼図絵馬」が豊橋市の民俗文化財に",
+      "checkedAt": "2026-11-02"
+    },
+    {
+      "claim": "獅子一対は鎌倉時代作の木造",
+      "source": "http://toyohashi-yoshida.com/gosaijin/",
+      "quote": "この獅子一対は鎌倉時代作の木造であり",
+      "checkedAt": "2026-11-02"
+    },
+    {
+      "claim": "獅子・狛犬一対は南北朝〜室町時代の作",
+      "source": "http://toyohashi-yoshida.com/gosaijin/",
+      "quote": "南北朝～室町時代の作",
+      "checkedAt": "2026-11-02"
+    },
+    {
+      "claim": "祇園祭初日の午後6時から宵祭と手筒の清祓いがある",
+      "source": "http://toyohashi-yoshida.com/gionmatsuri/",
+      "quote": "午後6時より宵祭、手筒の清祓いが執り行われ",
+      "checkedAt": "2026-11-02"
+    },
+    {
+      "claim": "祇園祭2日目の午後6時から前夜祭があり、豊川河畔で打上花火が奉納される",
+      "source": "http://toyohashi-yoshida.com/gionmatsuri/",
+      "quote": "神社北側豊川河畔において打上花火が奉納されます",
+      "checkedAt": "2026-11-02"
+    },
+    {
+      "claim": "打上花火は1万発以上",
+      "source": "http://toyohashi-yoshida.com/gionmatsuri/",
+      "quote": "1万発以上の花火が打ち上げられ",
+      "checkedAt": "2026-11-02"
+    },
+    {
+      "claim": "神輿渡御は頼朝行列と呼ばれる",
+      "source": "http://toyohashi-yoshida.com/gionmatsuri/",
+      "quote": "神輿渡御は頼朝行列と呼ばれ",
+      "checkedAt": "2026-11-02"
+    },
+    {
+      "claim": "参拝者駐車場は参道の東西に2か所ある",
+      "source": "http://toyohashi-yoshida.com/access/",
+      "quote": "参拝者駐車場は、参道の東西に分かれて2ヶ所ございます",
+      "checkedAt": "2026-11-02"
+    },
+    {
+      "claim": "ご祈祷の受付は毎日午前9時〜午後4時",
+      "source": "http://toyohashi-yoshida.com/gokito/",
+      "quote": "毎日午前9時〜午後4時",
+      "checkedAt": "2026-11-02"
+    },
+    {
+      "claim": "ご祈祷は予約なしでも受け付けている",
+      "source": "http://toyohashi-yoshida.com/gokito/",
+      "quote": "ご予約なしでも毎日上記の時間帯でご奉仕致します",
+      "checkedAt": "2026-11-02"
+    },
+    {
+      "claim": "月次祭は毎月1日の午前8時から",
+      "source": "http://toyohashi-yoshida.com/gokito/",
+      "quote": "月次祭は毎月一日 午前8時より斎行致します",
+      "checkedAt": "2026-11-02"
+    },
+    {
+      "claim": "豊橋駅から路面電車で札木または市役所前下車、徒歩7〜8分",
+      "source": "http://toyohashi-yoshida.com/access/",
+      "quote": "豊橋駅より豊鉄市内線（路面電車）札木もしくは市役所前下車 徒歩7～8分",
+      "checkedAt": "2026-11-02"
+    },
+    {
+      "claim": "豊橋駅からバスで豊橋市役所前下車、徒歩1分",
+      "source": "http://toyohashi-yoshida.com/access/",
+      "quote": "豊橋駅より豊鉄バス（新豊・豊川線）豊橋市役所前下車 徒歩1分",
+      "checkedAt": "2026-11-02"
+    },
+    {
+      "claim": "日曜の例祭日は午後5時頃に神輿が出発する",
+      "source": "http://toyohashi-yoshida.com/gionmatsuri/",
+      "quote": "午後5時頃には神輿が出発致します",
+      "checkedAt": "2026-11-02"
+    },
+    {
+      "claim": "初日は拝殿前で神前手筒が奉納される",
+      "source": "http://toyohashi-yoshida.com/gionmatsuri/",
+      "quote": "拝殿前にて奉賛会長や各町の代表による神前手筒",
+      "checkedAt": "2026-11-02"
+    },
+    {
+      "claim": "住所は愛知県豊橋市関屋町２",
+      "source": "https://maps.google.com/?cid=5854028582624486747",
+      "quote": "愛知県豊橋市関屋町２",
+      "checkedAt": "2026-11-02"
+    }
+  ],
+  "sources": [
+    {
+      "label": "公式サイト",
+      "url": "http://toyohashi-yoshida.com/"
+    },
+    {
+      "label": "公式サイト(御祭神・御由緒)",
+      "url": "http://toyohashi-yoshida.com/gosaijin/"
+    },
+    {
+      "label": "公式サイト(豊橋祇園祭)",
+      "url": "http://toyohashi-yoshida.com/gionmatsuri/"
+    },
+    {
+      "label": "公式サイト(ご祈祷)",
+      "url": "http://toyohashi-yoshida.com/gokito/"
+    },
+    {
+      "label": "公式サイト(交通案内)",
+      "url": "http://toyohashi-yoshida.com/access/"
+    },
+    {
+      "label": "Google マップ",
+      "url": "https://maps.google.com/?cid=5854028582624486747"
+    }
+  ],
+  "notes": "automation/v2/write.mjs が 2026-11-02 に claude -p --model sonnet で作成。事実の裏取り: 24/24 件(quote が出どころにあるもの)。裏取りに通らなかった facts は載せていない。"
+}

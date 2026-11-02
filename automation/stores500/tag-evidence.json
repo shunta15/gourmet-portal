@@ -4749,5 +4749,52 @@
     "articleId": "conceptcafeBLOSSOM",
     "name": "concept cafe BLOSSOM",
     "tags": []
+  },
+  "r835": {
+    "articleId": "水流",
+    "name": "水流",
+    "tags": []
+  },
+  "r836": {
+    "articleId": "クアトロフォリオ",
+    "name": "クアトロフォリオ",
+    "tags": [
+      {
+        "tag": "宴会",
+        "rule": "記事 specs「宴会」項目が肯定",
+        "evidence": "宴会: 2時間半以上可"
+      },
+      {
+        "tag": "貸切可",
+        "rule": "記事 specs「貸切」項目が肯定",
+        "evidence": "貸切: 可(20人以下)"
+      }
+    ]
+  },
+  "r837": {
+    "articleId": "炉ばた地鶏山嵐",
+    "name": "炉ばた地鶏 山嵐",
+    "tags": []
+  },
+  "r838": {
+    "articleId": "石神井の蕎麦丸嶋",
+    "name": "石神井の蕎麦 丸嶋",
+    "tags": [
+      {
+        "tag": "そば",
+        "rule": "業態がシーン語彙に一致",
+        "evidence": "蕎麦店（そば）"
+      },
+      {
+        "tag": "宴会",
+        "rule": "席表記に「座敷」「宴会」",
+        "evidence": "席数: 100席(座敷30席)"
+      }
+    ]
+  },
+  "r834": {
+    "articleId": "栞",
+    "name": "栞",
+    "tags": []
   }
 }

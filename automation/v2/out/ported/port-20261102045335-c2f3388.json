@@ -1,0 +1,96 @@
+{
+  "commit": "c2f3388e667a8bd737480c5ae801f8f6660968b8",
+  "source": "/Users/shunta/claude/gp-k-auto2",
+  "count": 8,
+  "added": [
+    {
+      "row": 295,
+      "name": "水流",
+      "key": "tri-gourmet-295",
+      "vertical": "グルメ",
+      "id": "r835",
+      "articleId": "水流",
+      "shopUrl": "https://machinowa.tokyo/restaurant/r835",
+      "articleUrl": "https://machinowa.tokyo/feature/水流",
+      "sheetUrl": "https://machinowa.tokyo/feature/水流"
+    },
+    {
+      "row": 296,
+      "name": "クアトロ・フォリオ",
+      "key": "tri-gourmet-296",
+      "vertical": "グルメ",
+      "id": "r836",
+      "articleId": "クアトロフォリオ",
+      "shopUrl": "https://machinowa.tokyo/restaurant/r836",
+      "articleUrl": "https://machinowa.tokyo/feature/クアトロフォリオ",
+      "sheetUrl": "https://machinowa.tokyo/feature/クアトロフォリオ"
+    },
+    {
+      "row": 306,
+      "name": "手筒花火発祥の地 吉田神社(金柑丸稲荷社)",
+      "key": "tri-life-306",
+      "vertical": "くらし",
+      "id": "li0117",
+      "articleId": "li0117",
+      "shopUrl": "https://machinowa.tokyo/life/shop/li0117",
+      "articleUrl": "https://machinowa.tokyo/life/article/li0117",
+      "sheetUrl": "https://machinowa.tokyo/life/article/li0117"
+    },
+    {
+      "row": 314,
+      "name": "炉ばた地鶏山嵐",
+      "key": "tri-gourmet-314",
+      "vertical": "グルメ",
+      "id": "r837",
+      "articleId": "炉ばた地鶏山嵐",
+      "shopUrl": "https://machinowa.tokyo/restaurant/r837",
+      "articleUrl": "https://machinowa.tokyo/feature/炉ばた地鶏山嵐",
+      "sheetUrl": "https://machinowa.tokyo/feature/炉ばた地鶏山嵐"
+    },
+    {
+      "row": 315,
+      "name": "浄念寺",
+      "key": "tri-life-315",
+      "vertical": "くらし",
+      "id": "li0118",
+      "articleId": "li0118",
+      "shopUrl": "https://machinowa.tokyo/life/shop/li0118",
+      "articleUrl": "https://machinowa.tokyo/life/article/li0118",
+      "sheetUrl": "https://machinowa.tokyo/life/article/li0118"
+    },
+    {
+      "row": 322,
+      "name": "天台宗 増位山 随願寺",
+      "key": "tri-life-322",
+      "vertical": "くらし",
+      "id": "li0119",
+      "articleId": "li0119",
+      "shopUrl": "https://machinowa.tokyo/life/shop/li0119",
+      "articleUrl": "https://machinowa.tokyo/life/article/li0119",
+      "sheetUrl": "https://machinowa.tokyo/life/article/li0119"
+    },
+    {
+      "row": 323,
+      "name": "石神井の蕎麦 丸嶋",
+      "key": "tri-gourmet-323",
+      "vertical": "グルメ",
+      "id": "r838",
+      "articleId": "石神井の蕎麦丸嶋",
+      "shopUrl": "https://machinowa.tokyo/restaurant/r838",
+      "articleUrl": "https://machinowa.tokyo/feature/石神井の蕎麦丸嶋",
+      "sheetUrl": "https://machinowa.tokyo/feature/石神井の蕎麦丸嶋"
+    },
+    {
+      "row": 24,
+      "name": "酔い処 味処 栞",
+      "key": "tri-gourmet-24",
+      "vertical": "グルメ",
+      "id": "r834",
+      "articleId": "栞",
+      "shopUrl": "https://machinowa.tokyo/restaurant/r834",
+      "articleUrl": "https://machinowa.tokyo/feature/栞",
+      "sheetUrl": "https://machinowa.tokyo/feature/栞"
+    }
+  ],
+  "skipped": []
+}

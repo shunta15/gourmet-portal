@@ -18521,6 +18521,263 @@ export const ARTICLE_STORES: Restaurant[] = [
       "松山市"
     ],
     "featureId": "conceptcafeBLOSSOM"
+  },
+  {
+    "id": "r834",
+    "name": "栞",
+    "cuisine": "居酒屋",
+    "area": "神奈川県・横浜市神奈川区",
+    "region": "kanagawa",
+    "shape": "square",
+    "image": "/restaurants/teleapo-栞/hero.jpg",
+    "heroImages": [
+      "/restaurants/teleapo-栞/hero.jpg",
+      "/restaurants/teleapo-栞/point1.jpg",
+      "/restaurants/teleapo-栞/point2.jpg",
+      "/restaurants/teleapo-栞/point3.jpg",
+      "/restaurants/teleapo-栞/point4.jpg"
+    ],
+    "gallery": [
+      "/restaurants/teleapo-栞/hero.jpg",
+      "/restaurants/teleapo-栞/point1.jpg",
+      "/restaurants/teleapo-栞/point2.jpg",
+      "/restaurants/teleapo-栞/point3.jpg",
+      "/restaurants/teleapo-栞/point4.jpg"
+    ],
+    "desc": "神奈川県横浜市神奈川区の居酒屋。最寄りは大口駅東口から徒歩約2分。",
+    "address": "神奈川県横浜市神奈川区入江2丁目20-5",
+    "hours": "—（訪問前に公式確認）",
+    "closed": "—（訪問前に公式確認）",
+    "seats": "30席",
+    "nearest": "大口駅東口から徒歩約2分",
+    "phone": "045-434-6677",
+    "source": {
+      "label": "Google ビジネスプロフィール",
+      "url": "https://maps.google.com/?cid=15148870944983320503"
+    },
+    "body": [
+      "栞は、神奈川県横浜市神奈川区にあるお店です。業態は「居酒屋」、所在地は神奈川県横浜市神奈川区入江2丁目20-5、最寄りは大口駅東口から徒歩約2分です。マチノワ編集部の特集記事では、「定食から麺類、居酒屋メニューまで並ぶ品書き」・「日替のメニューが並ぶ昼の営業とお弁当」などを取り上げています。",
+      "営業時間と定休日は取得できていないため、訪問前に公式の情報でご確認ください。席は30席。営業時間や価格は変わることがあるため、訪問前に公式サイトやSNS、お電話でご確認ください。"
+    ],
+    "highlights": [
+      "定食から麺類、居酒屋メニューまで並ぶ品書き",
+      "日替のメニューが並ぶ昼の営業とお弁当",
+      "馬刺しと馬肉丼、居酒屋の一品",
+      "総席数30席、個室のない店内",
+      "大口駅東口から徒歩約2分の立地"
+    ],
+    "tags": [
+      "居酒屋",
+      "神奈川区",
+      "大口駅"
+    ],
+    "featureId": "栞"
+  },
+  {
+    "id": "r835",
+    "name": "水流",
+    "cuisine": "カレー店",
+    "area": "愛知県・犬山市",
+    "region": "nagoya",
+    "shape": "square",
+    "image": "/restaurants/teleapo-水流/hero.jpg",
+    "heroImages": [
+      "/restaurants/teleapo-水流/hero.jpg",
+      "/restaurants/teleapo-水流/point1.jpg",
+      "/restaurants/teleapo-水流/point2.jpg",
+      "/restaurants/teleapo-水流/point3.jpg"
+    ],
+    "gallery": [
+      "/restaurants/teleapo-水流/hero.jpg",
+      "/restaurants/teleapo-水流/point1.jpg",
+      "/restaurants/teleapo-水流/point2.jpg",
+      "/restaurants/teleapo-水流/point3.jpg"
+    ],
+    "desc": "水流は、愛知県犬山市犬山高見町にあるスパイスカレーの店である。",
+    "address": "愛知県犬山市犬山高見町9-3 新鈴井ビル 1階",
+    "hours": "—（訪問前に公式確認）",
+    "closed": "—（訪問前に公式確認）",
+    "seats": "ソファ席(6人掛け)2卓・カウンター8席",
+    "nearest": "—",
+    "phone": "0568-48-5276",
+    "instagram": "https://www.instagram.com/suiryu_official",
+    "source": {
+      "label": "Google ビジネスプロフィール",
+      "url": "https://maps.google.com/?cid=1323553501487163360"
+    },
+    "body": [
+      "水流は、愛知県犬山市にあるお店です。業態は「カレー店」、所在地は愛知県犬山市犬山高見町9-3 新鈴井ビル 1階です。マチノワ編集部の特集記事では、「名古屋コーチンのバターチキンカレーと水流オリジナルの燻製「紅燻」」・「壁面に並ぶアクアリウムとソファ席・カウンター席」などを取り上げています。",
+      "営業時間と定休日は取得できていないため、訪問前に公式の情報でご確認ください。席はソファ席(6人掛け)2卓・カウンター8席。営業時間や価格は変わることがあるため、訪問前に公式サイトやSNS、お電話でご確認ください。"
+    ],
+    "highlights": [
+      "名古屋コーチンのバターチキンカレーと水流オリジナルの燻製「紅燻」",
+      "壁面に並ぶアクアリウムとソファ席・カウンター席",
+      "コロナ禍の趣味から生まれたカレーとアクアリウムの店",
+      "犬山駅西口3分、交差点角のビル1階と水流ドッグ"
+    ],
+    "tags": [
+      "カレー店",
+      "犬山市"
+    ],
+    "featureId": "水流"
+  },
+  {
+    "id": "r836",
+    "name": "クアトロフォリオ",
+    "cuisine": "イタリア料理店",
+    "area": "長野県・上伊那郡箕輪町",
+    "region": "nagano",
+    "shape": "square",
+    "image": "/restaurants/teleapo-クアトロフォリオ/hero.jpg",
+    "heroImages": [
+      "/restaurants/teleapo-クアトロフォリオ/hero.jpg",
+      "/restaurants/teleapo-クアトロフォリオ/point1.jpg",
+      "/restaurants/teleapo-クアトロフォリオ/point2.jpg",
+      "/restaurants/teleapo-クアトロフォリオ/point3.jpg",
+      "/restaurants/teleapo-クアトロフォリオ/point4.jpg"
+    ],
+    "gallery": [
+      "/restaurants/teleapo-クアトロフォリオ/hero.jpg",
+      "/restaurants/teleapo-クアトロフォリオ/point1.jpg",
+      "/restaurants/teleapo-クアトロフォリオ/point2.jpg",
+      "/restaurants/teleapo-クアトロフォリオ/point3.jpg",
+      "/restaurants/teleapo-クアトロフォリオ/point4.jpg"
+    ],
+    "desc": "クアトロフォリオは、長野県上伊那郡箕輪町中箕輪9560-1の西角ビル2階にあるイタリア料理店である。",
+    "address": "長野県上伊那郡箕輪町中箕輪9560-1",
+    "hours": "—（訪問前に公式確認）",
+    "closed": "—（訪問前に公式確認）",
+    "seats": "22席(個室なし)",
+    "nearest": "伊那松島駅 徒歩5分",
+    "phone": "0265-98-0987",
+    "source": {
+      "label": "Google ビジネスプロフィール",
+      "url": "https://maps.google.com/?cid=14349372727870684492"
+    },
+    "body": [
+      "クアトロフォリオは、長野県上伊那郡箕輪町にあるお店です。業態は「イタリア料理店」、所在地は長野県上伊那郡箕輪町中箕輪9560-1、最寄りは伊那松島駅 徒歩5分です。マチノワ編集部の特集記事では、「ステーキをメインにしたコース料理と信州牛コース」・「ピザを出し、野菜料理にこだわるイタリアン」などを取り上げています。",
+      "営業時間と定休日は取得できていないため、訪問前に公式の情報でご確認ください。席は22席(個室なし)。営業時間や価格は変わることがあるため、訪問前に公式サイトやSNS、お電話でご確認ください。"
+    ],
+    "highlights": [
+      "ステーキをメインにしたコース料理と信州牛コース",
+      "ピザを出し、野菜料理にこだわるイタリアン",
+      "日本酒・ワイン・カクテルと、2時間半以上の宴会",
+      "22席の店内と20人以下の貸切",
+      "伊那松島駅から徒歩5分、駐車場のある西角ビル2階"
+    ],
+    "tags": [
+      "イタリア料理店",
+      "箕輪町",
+      "伊那松島駅",
+      "宴会",
+      "貸切可"
+    ],
+    "featureId": "クアトロフォリオ"
+  },
+  {
+    "id": "r837",
+    "name": "炉ばた地鶏 山嵐",
+    "cuisine": "鶏料理店",
+    "area": "福岡県・糸島市",
+    "region": "fukuoka",
+    "shape": "square",
+    "image": "/restaurants/teleapo-炉ばた地鶏山嵐/hero.jpg",
+    "heroImages": [
+      "/restaurants/teleapo-炉ばた地鶏山嵐/hero.jpg",
+      "/restaurants/teleapo-炉ばた地鶏山嵐/point1.jpg",
+      "/restaurants/teleapo-炉ばた地鶏山嵐/point2.jpg",
+      "/restaurants/teleapo-炉ばた地鶏山嵐/point3.jpg",
+      "/restaurants/teleapo-炉ばた地鶏山嵐/point4.jpg"
+    ],
+    "gallery": [
+      "/restaurants/teleapo-炉ばた地鶏山嵐/hero.jpg",
+      "/restaurants/teleapo-炉ばた地鶏山嵐/point1.jpg",
+      "/restaurants/teleapo-炉ばた地鶏山嵐/point2.jpg",
+      "/restaurants/teleapo-炉ばた地鶏山嵐/point3.jpg",
+      "/restaurants/teleapo-炉ばた地鶏山嵐/point4.jpg",
+      "/restaurants/teleapo-炉ばた地鶏山嵐/point5.jpg"
+    ],
+    "desc": "福岡県糸島市の鶏料理店。",
+    "address": "福岡県糸島市志摩芥屋767-1",
+    "hours": "—（訪問前に公式確認）",
+    "closed": "—（訪問前に公式確認）",
+    "seats": "70席以上",
+    "nearest": "—",
+    "phone": "092-332-2016",
+    "source": {
+      "label": "Google ビジネスプロフィール",
+      "url": "https://maps.google.com/?cid=15908463223995002463"
+    },
+    "body": [
+      "炉ばた地鶏 山嵐は、福岡県糸島市にあるお店です。業態は「鶏料理店」、所在地は福岡県糸島市志摩芥屋767-1です。マチノワ編集部の特集記事では、「みやざき地頭鶏と各部位を炭火で焼く炉端焼き」・「各テーブルの炭火ロースターと糸島から仕入れる卵「つまんでご卵」」などを取り上げています。",
+      "営業時間と定休日は取得できていないため、訪問前に公式の情報でご確認ください。席は70席以上。営業時間や価格は変わることがあるため、訪問前に公式サイトやSNS、お電話でご確認ください。"
+    ],
+    "highlights": [
+      "みやざき地頭鶏と各部位を炭火で焼く炉端焼き",
+      "各テーブルの炭火ロースターと糸島から仕入れる卵「つまんでご卵」",
+      "熊本直送の馬刺しやだご汁、糸島産の牡蠣",
+      "1階と2階に分かれた70席以上の店内",
+      "営業時間・アクセスと、テイクアウトの甘いもん屋"
+    ],
+    "tags": [
+      "鶏料理店",
+      "糸島市"
+    ],
+    "featureId": "炉ばた地鶏山嵐"
+  },
+  {
+    "id": "r838",
+    "name": "石神井の蕎麦 丸嶋",
+    "cuisine": "蕎麦店",
+    "area": "東京都・練馬区",
+    "region": "tokyo",
+    "shape": "square",
+    "image": "/restaurants/teleapo-石神井の蕎麦丸嶋/hero.jpg",
+    "heroImages": [
+      "/restaurants/teleapo-石神井の蕎麦丸嶋/hero.jpg",
+      "/restaurants/teleapo-石神井の蕎麦丸嶋/point1.jpg",
+      "/restaurants/teleapo-石神井の蕎麦丸嶋/point2.jpg",
+      "/restaurants/teleapo-石神井の蕎麦丸嶋/point3.jpg",
+      "/restaurants/teleapo-石神井の蕎麦丸嶋/point4.jpg"
+    ],
+    "gallery": [
+      "/restaurants/teleapo-石神井の蕎麦丸嶋/hero.jpg",
+      "/restaurants/teleapo-石神井の蕎麦丸嶋/point1.jpg",
+      "/restaurants/teleapo-石神井の蕎麦丸嶋/point2.jpg",
+      "/restaurants/teleapo-石神井の蕎麦丸嶋/point3.jpg",
+      "/restaurants/teleapo-石神井の蕎麦丸嶋/point4.jpg",
+      "/restaurants/teleapo-石神井の蕎麦丸嶋/point5.jpg"
+    ],
+    "desc": "石神井の蕎麦 丸嶋は、東京都練馬区下石神井2丁目にある蕎麦店である。",
+    "address": "東京都練馬区下石神井2丁目36-4 そば 蕎麦 車えび 天ぷらそば 宴会 和食",
+    "hours": "—（訪問前に公式確認）",
+    "closed": "—（訪問前に公式確認）",
+    "seats": "100席(座敷30席)",
+    "nearest": "西武新宿線 上井草駅 徒歩8分",
+    "phone": "03-3995-1201",
+    "source": {
+      "label": "Google ビジネスプロフィール",
+      "url": "https://maps.google.com/?cid=6396234841183082237"
+    },
+    "body": [
+      "石神井の蕎麦 丸嶋は、東京都練馬区にあるお店です。業態は「蕎麦店」、所在地は東京都練馬区下石神井2丁目36-4 そば 蕎麦 車えび 天ぷらそば 宴会 和食、最寄りは西武新宿線 上井草駅 徒歩8分です。マチノワ編集部の特集記事では、「石臼で挽く二八そば」・「大根と大葉をのせた名物 練馬せいろ」などを取り上げています。",
+      "営業時間と定休日は取得できていないため、訪問前に公式の情報でご確認ください。席は100席(座敷30席)。営業時間や価格は変わることがあるため、訪問前に公式サイトやSNS、お電話でご確認ください。"
+    ],
+    "highlights": [
+      "石臼で挽く二八そば",
+      "大根と大葉をのせた名物 練馬せいろ",
+      "車海老の天ぷらせいろと天重",
+      "前菜から始まる割烹料理のコース",
+      "中庭を望むガラス張りの店内と座敷"
+    ],
+    "tags": [
+      "蕎麦店",
+      "そば",
+      "練馬区",
+      "上井草駅",
+      "宴会"
+    ],
+    "featureId": "石神井の蕎麦丸嶋"
   }
 ];
 
@@ -18915,7 +19172,12 @@ export const ARTICLE_STORE_FEATURE_IDS: Record<string, string> = {
   "r830": "オー・ミリュー・ドゥ・ラヴィ",
   "r831": "Caputto",
   "r832": "Alpin",
-  "r833": "conceptcafeBLOSSOM"
+  "r833": "conceptcafeBLOSSOM",
+  "r834": "栞",
+  "r835": "水流",
+  "r836": "クアトロフォリオ",
+  "r837": "炉ばた地鶏山嵐",
+  "r838": "石神井の蕎麦丸嶋"
 };
 
 /** 特集記事ID → 店舗ID */
@@ -19309,5 +19571,10 @@ export const ARTICLE_STORE_ID_BY_FEATURE: Record<string, string> = {
   "オー・ミリュー・ドゥ・ラヴィ": "r830",
   "Caputto": "r831",
   "Alpin": "r832",
-  "conceptcafeBLOSSOM": "r833"
+  "conceptcafeBLOSSOM": "r833",
+  "栞": "r834",
+  "水流": "r835",
+  "クアトロフォリオ": "r836",
+  "炉ばた地鶏山嵐": "r837",
+  "石神井の蕎麦丸嶋": "r838"
 };
