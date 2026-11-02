@@ -1,6 +1,18 @@
 "use client";
-import { useEffect, useState } from "react";
-import { COMMON_RULES, PHOTOS, VERTICALS, VERTICAL_KEYS, type VerticalKey } from "./guideData";
+import { useCallback, useEffect, useState } from "react";
+import {
+  BLOCKS,
+  CLOSING,
+  COMMON_RULES,
+  COMMON_TITLE,
+  INTRO,
+  ONE,
+  PEOPLE,
+  SUMMARY,
+  TITLE,
+  VERTICAL_KEYS,
+  type VerticalKey,
+} from "./guideData";
 
 const INK = "#2b2a26";
 const MUTED = "#6a665b";
@@ -8,61 +20,96 @@ const GREEN = "#2E7D32";
 const BG = "#F6F1E7";
 const CARD = "#fffdf8";
 const LINE = "#ddd5c3";
+const STORE_KEY = "machinowa-line-guide-checks-v1";
 
 const css = `
 .lg{background:${BG};color:${INK};min-height:100vh;padding:104px 16px 72px;font-size:16px;line-height:1.8;cursor:auto}
 .lg *{cursor:auto}
-.lg button,.lg a{cursor:pointer}
+.lg button,.lg a,.lg label,.lg input{cursor:pointer}
 .lg-wrap{max-width:760px;margin:0 auto;display:grid;gap:28px}
-.lg h1{font:700 28px/1.35 var(--sans);margin:0}
+.lg h1{font:700 26px/1.4 var(--sans);margin:0}
 .lg h2{font:700 20px/1.4 var(--sans);margin:0}
-.lg-lead{margin:8px 0 0;color:${MUTED};font-size:15px}
-.lg-rules{background:${CARD};border:1px solid ${LINE};border-left:4px solid ${GREEN};border-radius:10px;padding:16px 18px}
-.lg-rules h2{font-size:17px;margin-bottom:8px}
-.lg-rules ul{margin:0;padding-left:1.2em;display:grid;gap:6px;font-size:15.5px}
+.lg h3{font:700 17px/1.5 var(--sans);margin:0}
+.lg-intro{display:grid;gap:4px;margin:10px 0 0;font-size:15.5px}
+.lg-intro p{margin:0}
+.lg-box{background:${CARD};border:1px solid ${LINE};border-left:4px solid ${GREEN};border-radius:10px;padding:16px 18px;display:grid;gap:10px}
+.lg-box ol{margin:0;padding-left:1.5em;display:grid;gap:6px;font-size:15.5px}
+.lg-box p{margin:0;font-size:15.5px}
+.lg-sec{display:grid;gap:12px;scroll-margin-top:96px}
+.lg-sec[hidden]{display:none}
+.lg-p{margin:0;font-size:15.5px}
+.lg-list{display:grid;gap:10px;margin:0;padding:0;list-style:none}
+.lg-card{background:${CARD};border:1px solid ${LINE};border-radius:10px;padding:12px 14px}
+.lg-name{font-weight:700;font-size:16.5px;line-height:1.5}
+.lg-kvs{display:flex;flex-wrap:wrap;gap:4px 14px;margin:4px 0 0;font-size:15px}
+.lg-kv{display:inline-flex;gap:6px;align-items:baseline}
+.lg-k{color:${MUTED};font-size:15px}
+.lg-v{color:${GREEN};font-weight:700;font-size:16px}
+.lg-tip{margin:4px 0 0;font-size:15.5px}
 .lg-tabs{display:grid;grid-template-columns:repeat(2,1fr);gap:8px}
 @media(min-width:560px){.lg-tabs{grid-template-columns:repeat(4,1fr)}}
 .lg-tab{min-height:48px;padding:8px 10px;border:1px solid ${LINE};border-radius:10px;background:${CARD};color:${INK};font:500 15.5px/1.3 var(--body);text-align:center}
 .lg-tab:hover{border-color:${GREEN}}
 .lg-tab:focus-visible{outline:2px solid ${GREEN};outline-offset:2px}
 .lg-tab[aria-pressed="true"]{background:${GREEN};border-color:${GREEN};color:#fff;font-weight:700}
-.lg-sec{display:grid;gap:12px;scroll-margin-top:96px}
-.lg-sec[hidden]{display:none}
-.lg-note{margin:0;color:${MUTED};font-size:15px}
-.lg-kinds{display:flex;flex-wrap:wrap;gap:6px;margin:0;padding:0;list-style:none}
-.lg-kinds li{background:#ebe4d3;border-radius:6px;padding:1px 10px;font-size:15px}
-.lg-list{display:grid;gap:10px;margin:0;padding:0;list-style:none}
-.lg-card{background:${CARD};border:1px solid ${LINE};border-radius:10px;padding:12px 14px}
-.lg-row{display:flex;justify-content:space-between;align-items:baseline;gap:12px}
-.lg-name{font-weight:700;font-size:16.5px;line-height:1.5}
-.lg-count{flex:none;color:${GREEN};font-weight:700;font-size:15.5px;white-space:nowrap}
-.lg-tip{margin:2px 0 0;font-size:15.5px}
-.lg-ex{margin:10px 0 0;padding:8px 0 0;border-top:1px dashed ${LINE};display:grid;gap:6px;list-style:none;font-size:15px}
-.lg-ex b{font-weight:700}
-.lg-ex-h{color:${MUTED};font-size:15px;margin:10px 0 0}
-.lg-total{margin:0;font-size:15.5px;background:#e9efe2;border-radius:10px;padding:10px 14px}
-.lg-total b{color:${GREEN}}
-.lg-foot{color:${MUTED};font-size:15px;border-top:1px solid ${LINE};padding-top:16px}
+.lg-sub{margin:6px 0 0}
+.lg-ck{display:grid;grid-template-columns:auto 1fr;gap:12px;align-items:start}
+.lg-ck input{appearance:auto;-webkit-appearance:checkbox;width:26px;height:26px;margin:2px 0 0;accent-color:${GREEN}}
+.lg-ck:has(input:checked){background:#eaf1e3;border-color:${GREEN}}
+.lg-ck:has(input:checked) .lg-name{color:${GREEN}}
+.lg-total{background:#e9efe2;border-color:#cddcc2}
+.lg-note{margin:0;font-size:15.5px;background:${CARD};border:1px solid ${LINE};border-radius:10px;padding:10px 14px}
+.lg-note b{color:${GREEN};margin-right:.6em}
+.lg-closing{border-top:1px solid ${LINE};padding-top:16px;margin:0;font-size:15.5px}
 `;
 
 export default function GuideClient({ initial }: { initial: VerticalKey }) {
   const [current, setCurrent] = useState<VerticalKey>(initial);
+  const [checks, setChecks] = useState<Record<string, boolean>>({});
+
+  // チェックの保存はこの端末のブラウザの中だけ(localStorage)。読めない・書けなくても表示は崩れない
+  useEffect(() => {
+    try {
+      const raw = window.localStorage.getItem(STORE_KEY);
+      if (raw) {
+        const parsed = JSON.parse(raw);
+        if (parsed && typeof parsed === "object") setChecks(parsed as Record<string, boolean>);
+      }
+    } catch {
+      /* 読めなければ空のまま */
+    }
+  }, []);
+
+  const toggle = useCallback((id: string) => {
+    setChecks((prev) => {
+      const next = { ...prev, [id]: !prev[id] };
+      if (!next[id]) delete next[id];
+      try {
+        window.localStorage.setItem(STORE_KEY, JSON.stringify(next));
+      } catch {
+        /* 書けなくても、画面のチェックはそのまま使える */
+      }
+      return next;
+    });
+  }, []);
 
   // ハッシュ(#beauty など)でも開けるようにする。読み込み時と、ハッシュが変わったとき
   useEffect(() => {
-    const apply = (scroll: boolean) => {
-      const id = decodeURIComponent(window.location.hash.replace(/^#/, ""));
+    const apply = () => {
+      let id = "";
+      try {
+        id = decodeURIComponent(window.location.hash.replace(/^#/, ""));
+      } catch {
+        return;
+      }
       if (VERTICAL_KEYS.includes(id as VerticalKey)) {
         setCurrent(id as VerticalKey);
-        if (scroll) {
-          requestAnimationFrame(() => document.getElementById(id)?.scrollIntoView({ block: "start" }));
-        }
+        requestAnimationFrame(() => document.getElementById(id)?.scrollIntoView({ block: "start" }));
       }
     };
-    apply(true);
-    const onHash = () => apply(true);
-    window.addEventListener("hashchange", onHash);
-    return () => window.removeEventListener("hashchange", onHash);
+    apply();
+    window.addEventListener("hashchange", apply);
+    return () => window.removeEventListener("hashchange", apply);
   }, []);
 
   const select = (key: VerticalKey) => {
@@ -74,94 +121,131 @@ export default function GuideClient({ initial }: { initial: VerticalKey }) {
     }
   };
 
+  const H = SUMMARY.headers;
+
   return (
     <div className="lg">
       <style>{css}</style>
       <div className="lg-wrap">
         <header>
-          <h1>撮影シーン詳細</h1>
-          <p className="lg-lead">LINE からお越しの店舗オーナー様向けに、業種ごとの撮影シーンと撮り方をご案内します。</p>
+          <h1>{TITLE}</h1>
+          <div className="lg-intro">
+            {INTRO.map((t) => (
+              <p key={t}>{t}</p>
+            ))}
+          </div>
         </header>
 
-        <section className="lg-rules" aria-labelledby="lg-rules-h">
-          <h2 id="lg-rules-h">全業種 共通のお願い</h2>
-          <ul>
+        <section className="lg-box" aria-labelledby="lg-common-h">
+          <h2 id="lg-common-h">{COMMON_TITLE}</h2>
+          <ol>
             {COMMON_RULES.map((r) => (
               <li key={r}>{r}</li>
             ))}
+          </ol>
+          <h3>{PEOPLE.title}</h3>
+          <p>{PEOPLE.text}</p>
+          <h3>{ONE.title}</h3>
+          <p>{ONE.text}</p>
+        </section>
+
+        <section className="lg-sec" aria-labelledby="lg-sum-h">
+          <h2 id="lg-sum-h">{SUMMARY.title}</h2>
+          <p className="lg-p">{SUMMARY.lead}</p>
+          <ul className="lg-list">
+            {SUMMARY.rows.map((r) => (
+              <li key={r.industry} className="lg-card">
+                <div className="lg-name">{r.industry}</div>
+                <div className="lg-kvs">
+                  <span className="lg-kv">
+                    <span className="lg-k">{H.min}</span>
+                    <span className="lg-v">{r.min}</span>
+                  </span>
+                  <span className="lg-kv">
+                    <span className="lg-k">{H.up}</span>
+                    <span className="lg-v">{r.up}</span>
+                  </span>
+                </div>
+                <p className="lg-tip">
+                  <span className="lg-k">{H.key}　</span>
+                  {r.key}
+                </p>
+              </li>
+            ))}
           </ul>
+          <p className="lg-p">{SUMMARY.after}</p>
         </section>
 
         <nav aria-label="業種の切り替え">
           <div className="lg-tabs">
-            {VERTICALS.map((v) => (
-              <button key={v.key} type="button" className="lg-tab" aria-pressed={current === v.key} onClick={() => select(v.key)}>
-                {v.label}
+            {BLOCKS.map((b) => (
+              <button key={b.key} type="button" className="lg-tab" aria-pressed={current === b.key} onClick={() => select(b.key)}>
+                {b.tab}
               </button>
             ))}
           </div>
         </nav>
 
-        {VERTICALS.map((v) => (
-          <section key={v.key} id={v.key} className="lg-sec" hidden={current !== v.key} aria-labelledby={`lg-h-${v.key}`}>
+        {BLOCKS.map((b) => (
+          <section key={b.key} id={b.key} className="lg-sec" hidden={current !== b.key} aria-labelledby={`lg-h-${b.key}`}>
             <div>
-              <h2 id={`lg-h-${v.key}`}>{v.label}</h2>
-              {v.note && <p className="lg-note">{v.note}</p>}
-              {v.kinds && (
-                <ul className="lg-kinds" aria-label="対象の分類">
-                  {v.kinds.map((k) => (
-                    <li key={k}>{k}</li>
-                  ))}
-                </ul>
-              )}
+              <h2 id={`lg-h-${b.key}`}>{b.heading}</h2>
+              <p className="lg-p">対象：{b.target}</p>
             </div>
-            <ul className="lg-list">
-              {v.scenes.map((s) => (
-                <li key={s.name} className="lg-card">
-                  <div className="lg-row">
-                    <span className="lg-name">{s.name}</span>
-                    <span className="lg-count">{s.count} 本</span>
-                  </div>
-                  <p className="lg-tip">{s.tip}</p>
-                  {s.examples && (
-                    <>
-                      <p className="lg-ex-h">分類別の例</p>
-                      <ul className="lg-ex" style={{ marginTop: 4, paddingTop: 0, borderTop: 0 }}>
-                        {s.examples.map((e) => (
-                          <li key={e.name}>
-                            <b>{e.name}</b>　{e.tip}
-                          </li>
-                        ))}
-                      </ul>
-                    </>
-                  )}
-                </li>
-              ))}
-            </ul>
-            <p className="lg-total">
-              目安: 合計 <b>{v.total}</b>・各 20〜60 秒・スマホは縦
-            </p>
+            {b.groups.map((g, gi) => (
+              <div key={gi} className="lg-sec" style={{ scrollMarginTop: 96 }}>
+                {g.title && <h3 className="lg-sub">▶ {g.title}</h3>}
+                <ul className="lg-list">
+                  {g.rows.map((r) => {
+                    const id = `${b.key}/${gi}/${r.name}`;
+                    return (
+                      <li key={id}>
+                        <label className="lg-card lg-ck" style={{ display: "grid" }}>
+                          <input type="checkbox" checked={!!checks[id]} onChange={() => toggle(id)} aria-label={`${r.name}　撮れたらチェック`} />
+                          <span>
+                            <span className="lg-name">{r.name}</span>
+                            <span className="lg-kvs">
+                              <span className="lg-kv">
+                                <span className="lg-k">最低限（本）</span>
+                                <span className="lg-v">{r.min}</span>
+                              </span>
+                              <span className="lg-kv">
+                                <span className="lg-k">クオリティを上げるなら（本）</span>
+                                <span className="lg-v">{r.up}</span>
+                              </span>
+                            </span>
+                            {r.tip && <span className="lg-tip" style={{ display: "block" }}>{r.tip}</span>}
+                          </span>
+                        </label>
+                      </li>
+                    );
+                  })}
+                  <li className="lg-card lg-total">
+                    <span className="lg-name">合計</span>
+                    <span className="lg-kvs">
+                      <span className="lg-kv">
+                        <span className="lg-k">最低限（本）</span>
+                        <span className="lg-v">{g.totalMin}</span>
+                      </span>
+                      <span className="lg-kv">
+                        <span className="lg-k">クオリティを上げるなら（本）</span>
+                        <span className="lg-v">{g.totalUp}</span>
+                      </span>
+                    </span>
+                  </li>
+                </ul>
+              </div>
+            ))}
+            {b.note && (
+              <p className="lg-note">
+                <b>{b.note.label}</b>
+                {b.note.text}
+              </p>
+            )}
           </section>
         ))}
 
-        <section id="photos" className="lg-sec" aria-labelledby="lg-photos-h">
-          <div>
-            <h2 id="lg-photos-h">記事に載せる写真(全業種 共通)</h2>
-            <p className="lg-note">{PHOTOS.note}</p>
-          </div>
-          <ul className="lg-list">
-            {PHOTOS.rows.map((r) => (
-              <li key={r.name} className="lg-card">
-                <div className="lg-row">
-                  <span className="lg-name">{r.name}</span>
-                  <span className="lg-count">{r.amount}</span>
-                </div>
-              </li>
-            ))}
-          </ul>
-        </section>
-
-        <div className="lg-foot">マチノワ 記事・SNS動画制作窓口</div>
+        <p className="lg-closing">{CLOSING}</p>
       </div>
     </div>
   );

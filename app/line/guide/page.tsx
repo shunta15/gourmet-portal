@@ -3,13 +3,13 @@ import GuideClient from "./GuideClient";
 import { VERTICAL_KEYS, type VerticalKey } from "./guideData";
 
 /**
- * 撮影シーン詳細(LINE 公式アカウントから案内する店舗オーナー向けページ)。
+ * 動画用撮影素材のお願い(業種別。LINE 公式アカウントから案内する店舗オーナー向けページ)。
  * 検索に出さず、サイトのナビ・サイトマップ・トップからはリンクしない(LINE のボタンからだけ来る)。
  * ?v=gourmet|beauty|bodycare|pet|stay|activity|sports|life で最初に開く業種を決める(無ければグルメ)。
  */
 export const metadata: Metadata = {
-  title: "撮影シーン詳細 | マチノワ",
-  description: "業種ごとの撮影シーンと撮り方のご案内です。",
+  title: "動画用撮影素材のお願い（業種別）｜マチノワ",
+  description: "業種別の、動画用撮影素材のお願いです。",
   robots: { index: false, follow: false },
 };
 
