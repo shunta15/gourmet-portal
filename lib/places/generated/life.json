@@ -16199,6 +16199,373 @@
         ],
         "checkedAt": "2026-11-02"
       }
+    },
+    {
+      "id": "li0107",
+      "vertical": "life",
+      "category": "shrine-temple",
+      "name": "金剛寺（釜滝薬師）",
+      "pref": "wakayama",
+      "cityName": "紀美野町",
+      "address": "和歌山県海草郡紀美野町釜滝120",
+      "lat": 34.1665283,
+      "lng": 135.3428863,
+      "phone": "073-489-2830",
+      "url": "http://kamatakiyakushi.com/",
+      "website": "http://kamatakiyakushi.com/",
+      "mapUrl": "https://maps.google.com/?cid=8004237374536313608",
+      "image": "/_portal/vshops/tri-life-294/g01.jpg",
+      "images": [
+        "/_portal/vshops/tri-life-294/g01.jpg",
+        "/_portal/vshops/tri-life-294/g03.jpg",
+        "/_portal/vshops/tri-life-294/g04.jpg",
+        "/_portal/vshops/tri-life-294/g05.jpg",
+        "/_portal/vshops/tri-life-294/g07.jpg",
+        "/_portal/vshops/tri-life-294/g09.jpg",
+        "/_portal/vshops/tri-life-294/g10.jpg"
+      ],
+      "photos": [
+        {
+          "path": "/_portal/vshops/tri-life-294/g01.jpg",
+          "what": "山門の前に石碑が立つ寺の入口",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 675
+        },
+        {
+          "path": "/_portal/vshops/tri-life-294/g03.jpg",
+          "what": "色とりどりの紫陽花の鉢が並ぶ境内の一角",
+          "kind": "common",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-life-294/g04.jpg",
+          "what": "「釜滝薬師」と刻まれた石碑",
+          "kind": "exterior",
+          "width": 1080,
+          "height": 1080
+        },
+        {
+          "path": "/_portal/vshops/tri-life-294/g05.jpg",
+          "what": "提灯が下がる本堂と紫陽花",
+          "kind": "exterior",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-life-294/g07.jpg",
+          "what": "山並みと集落が広がる周辺の景色",
+          "kind": "view",
+          "width": 1200,
+          "height": 568
+        },
+        {
+          "path": "/_portal/vshops/tri-life-294/g09.jpg",
+          "what": "菊の花を彫った木の欄間",
+          "kind": "common",
+          "width": 1200,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-life-294/g10.jpg",
+          "what": "「めの守護」の幟が立つ参道",
+          "kind": "view",
+          "width": 900,
+          "height": 1200
+        }
+      ],
+      "tags": [
+        "体験あり",
+        "駐車場あり"
+      ],
+      "article": {
+        "headline": "和歌山県紀美野町にある、高野山真言宗高野長峰霊場の第五番札所。天長十二年（835）に開創した眼病平癒の祈願所",
+        "lede": "紀美野町にある「釜滝薬師金剛寺」（龍光山）です。天長十二年（835）に慈覚大師（円仁）が開いた寺で、高野長峰霊場の第五番札所です。眼病平癒の祈願所で、本尊の薬師如来は五十年に一度だけ一般開帳されます。",
+        "sections": [
+          {
+            "heading": "場所と参拝の時間",
+            "body": "住所は和歌山県海草郡紀美野町釜滝120、電話は073-489-2830です。参拝時間は9時から17時です。電車の場合は和歌山電鉄の貴志駅から車で約15分、車の場合は阪和自動車道の海南東インターを下りて国道370号を東へ12kmです。近隣に数台の駐車スペースがあります。"
+          },
+          {
+            "heading": "由緒と薬師如来",
+            "body": "創建は天長十二年（835）、淳和天皇の御代です。慈覚大師（円仁）がこの地に来て、山下の釜ノ淵の奇瑞に感じ、一刀三礼で木像を刻んで安置しました。この像が本尊の薬師如来です。織田信長の根来攻めの兵火で本堂は焼失し、宝暦三年（1753）に本堂が落成しました。平成二年（1990）には山門の新築と本堂の修復がおこなわれました。"
+          },
+          {
+            "heading": "釜滝の甌穴",
+            "body": "寺の約800メートル下流、貴志川の分流である真國川の鶴の崖一帯の流れの中に、大小無数の甌穴群があります。石や砂が同じところを循環し、川底の岩盤が侵食されてできた丸い穴で、県指定の天然記念物「釜滝の甌穴」です。"
+          },
+          {
+            "heading": "霊場と体験",
+            "body": "現在の国道370号は高野西街道にあたり、この街道沿いに点在する高野山真言宗の十ヶ寺が高野長峰霊場をつくっています。釜滝薬師金剛寺は第五番札所です。寺では阿字観（座禅）・写経・写仏の体験ができます。会式前日当日・年末年始・盆・彼岸中は受け付けていません。"
+          }
+        ],
+        "menus": [
+          {
+            "name": "阿字観（座禅）"
+          },
+          {
+            "name": "写経"
+          },
+          {
+            "name": "写仏"
+          }
+        ],
+        "sources": [
+          {
+            "label": "公式サイト",
+            "url": "http://kamatakiyakushi.com/"
+          },
+          {
+            "label": "公式サイト(釜滝薬師について)",
+            "url": "http://kamatakiyakushi.com/about.html"
+          },
+          {
+            "label": "公式サイト(宿泊・体験)",
+            "url": "http://kamatakiyakushi.com/guesthouse.html"
+          },
+          {
+            "label": "公式サイト(交通)",
+            "url": "http://kamatakiyakushi.com/access.html"
+          },
+          {
+            "label": "Google マップ",
+            "url": "https://maps.google.com/?cid=8004237374536313608"
+          }
+        ],
+        "checkedAt": "2026-11-02"
+      }
+    },
+    {
+      "id": "li0108",
+      "vertical": "life",
+      "category": "shrine-temple",
+      "name": "雄総山 護国之寺",
+      "pref": "gifu",
+      "cityName": "岐阜市",
+      "address": "岐阜県岐阜市長良雄総194-1 長良雄総",
+      "lat": 35.4463536,
+      "lng": 136.7955789,
+      "phone": "058-231-3539",
+      "url": "https://www.ne.jp/asahi/gifu/gokokushiji/gokokushijiHP-TOP.index.html",
+      "website": "https://www.ne.jp/asahi/gifu/gokokushiji/gokokushijiHP-TOP.index.html",
+      "mapUrl": "https://maps.google.com/?cid=5914769246708630640",
+      "image": "/_portal/vshops/tri-life-301/g01.jpg",
+      "images": [
+        "/_portal/vshops/tri-life-301/g01.jpg",
+        "/_portal/vshops/tri-life-301/g02.jpg",
+        "/_portal/vshops/tri-life-301/g03.jpg",
+        "/_portal/vshops/tri-life-301/g04.jpg",
+        "/_portal/vshops/tri-life-301/g05.jpg",
+        "/_portal/vshops/tri-life-301/g06.jpg",
+        "/_portal/vshops/tri-life-301/g07.jpg",
+        "/_portal/vshops/tri-life-301/g09.jpg",
+        "/_portal/vshops/tri-life-301/g10.jpg"
+      ],
+      "photos": [
+        {
+          "path": "/_portal/vshops/tri-life-301/g01.jpg",
+          "what": "瓦屋根の堂宇と前に並ぶ石灯籠",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-life-301/g02.jpg",
+          "what": "白い半球形の石造物と石碑",
+          "kind": "view",
+          "width": 675,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-life-301/g03.jpg",
+          "what": "青空の下に立つドーム型の石造物と塔",
+          "kind": "view",
+          "width": 1200,
+          "height": 800
+        },
+        {
+          "path": "/_portal/vshops/tri-life-301/g04.jpg",
+          "what": "木造の構造物の中に立つ大きな尊像",
+          "kind": "common",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-life-301/g05.jpg",
+          "what": "木々に挟まれて堂宇へ続く長い石段",
+          "kind": "view",
+          "width": 1200,
+          "height": 800
+        },
+        {
+          "path": "/_portal/vshops/tri-life-301/g06.jpg",
+          "what": "石段脇に立つ白い石像と台座",
+          "kind": "view",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-life-301/g07.jpg",
+          "what": "青空を背にした二重屋根の山門",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-life-301/g09.jpg",
+          "what": "祭壇と供え物が並ぶお堂の内部",
+          "kind": "common",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-life-301/g10.jpg",
+          "what": "木々の間に立つ石の塔と石碑",
+          "kind": "view",
+          "width": 1200,
+          "height": 900
+        }
+      ],
+      "tags": [],
+      "article": {
+        "headline": "岐阜県岐阜市長良雄総にある仏教寺院「雄総山 護国之寺」",
+        "lede": "岐阜市にある「雄総山 護国之寺」です。所在地は長良雄総194-1で、種類は仏教寺院です。電話番号は058-231-3539です。",
+        "sections": [
+          {
+            "heading": "場所と連絡先",
+            "body": "所在地は岐阜県岐阜市長良雄総194-1です。電話番号は058-231-3539です。"
+          },
+          {
+            "heading": "名称と種類",
+            "body": "名称は「雄総山 護国之寺」で、種類は仏教寺院です。所在地の町名は長良雄総です。"
+          }
+        ],
+        "sources": [
+          {
+            "label": "公式サイト",
+            "url": "https://www.ne.jp/asahi/gifu/gokokushiji/gokokushijiHP-TOP.index.html"
+          },
+          {
+            "label": "Google マップ",
+            "url": "https://maps.google.com/?cid=5914769246708630640"
+          }
+        ],
+        "checkedAt": "2026-11-02"
+      }
+    },
+    {
+      "id": "li0109",
+      "vertical": "life",
+      "category": "shrine-temple",
+      "name": "玉野御嶽神社",
+      "pref": "aichi",
+      "cityName": "春日井市",
+      "address": "愛知県春日井市玉野町1661",
+      "lat": 35.276992,
+      "lng": 137.0788355,
+      "phone": "0568-51-2060",
+      "instagram": "https://www.instagram.com/tamanoontakejinja/",
+      "mapUrl": "https://maps.google.com/?cid=14720826995302551934",
+      "image": "/_portal/vshops/tri-life-316/g01.jpg",
+      "images": [
+        "/_portal/vshops/tri-life-316/g01.jpg",
+        "/_portal/vshops/tri-life-316/g02.jpg",
+        "/_portal/vshops/tri-life-316/g03.jpg",
+        "/_portal/vshops/tri-life-316/g05.jpg",
+        "/_portal/vshops/tri-life-316/g06.jpg",
+        "/_portal/vshops/tri-life-316/g07.jpg",
+        "/_portal/vshops/tri-life-316/g08.jpg",
+        "/_portal/vshops/tri-life-316/g09.jpg",
+        "/_portal/vshops/tri-life-316/g10.jpg"
+      ],
+      "photos": [
+        {
+          "path": "/_portal/vshops/tri-life-316/g01.jpg",
+          "what": "社殿と石段",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-life-316/g02.jpg",
+          "what": "社殿の正面",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 675
+        },
+        {
+          "path": "/_portal/vshops/tri-life-316/g03.jpg",
+          "what": "石段と社殿",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-life-316/g05.jpg",
+          "what": "「御嶽神社」の文字が入った道しるべ",
+          "kind": "view",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-life-316/g06.jpg",
+          "what": "屋根の下に置かれた祠",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 800
+        },
+        {
+          "path": "/_portal/vshops/tri-life-316/g07.jpg",
+          "what": "「御嶽神社」と刻まれた石碑",
+          "kind": "view",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-life-316/g08.jpg",
+          "what": "社殿の外観",
+          "kind": "exterior",
+          "width": 675,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-life-316/g09.jpg",
+          "what": "鳥居",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-life-316/g10.jpg",
+          "what": "「御嶽神社」の石碑と参道",
+          "kind": "view",
+          "width": 1200,
+          "height": 900
+        }
+      ],
+      "tags": [],
+      "article": {
+        "headline": "愛知県春日井市玉野町にある神社。Instagram のアカウントがある",
+        "lede": "春日井市にある「玉野御嶽神社」です。神社で、所在地は玉野町1661です。",
+        "sections": [
+          {
+            "heading": "場所",
+            "body": "住所は愛知県春日井市玉野町1661です。"
+          },
+          {
+            "heading": "連絡先",
+            "body": "電話は0568-51-2060です。Instagram には「tamanoontakejinja」のアカウントがあります。"
+          }
+        ],
+        "sources": [
+          {
+            "label": "Google マップ",
+            "url": "https://maps.google.com/?cid=14720826995302551934"
+          }
+        ],
+        "checkedAt": "2026-11-02"
+      }
     }
   ]
 }

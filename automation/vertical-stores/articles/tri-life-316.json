@@ -1,0 +1,56 @@
+{
+  "key": "tri-life-316",
+  "headline": "愛知県春日井市玉野町にある神社。Instagram のアカウントがある",
+  "lede": "春日井市にある「玉野御嶽神社」です。神社で、所在地は玉野町1661です。",
+  "sections": [
+    {
+      "heading": "場所",
+      "body": "住所は愛知県春日井市玉野町1661です。"
+    },
+    {
+      "heading": "連絡先",
+      "body": "電話は0568-51-2060です。Instagram には「tamanoontakejinja」のアカウントがあります。"
+    }
+  ],
+  "menus": [],
+  "tags": [],
+  "facts": [
+    {
+      "claim": "店名は玉野御嶽神社",
+      "source": "https://maps.google.com/?cid=14720826995302551934",
+      "quote": "玉野御嶽神社",
+      "checkedAt": "2026-11-02"
+    },
+    {
+      "claim": "住所は愛知県春日井市玉野町1661",
+      "source": "https://maps.google.com/?cid=14720826995302551934",
+      "quote": "愛知県春日井市玉野町",
+      "checkedAt": "2026-11-02"
+    },
+    {
+      "claim": "電話は0568-51-2060",
+      "source": "https://maps.google.com/?cid=14720826995302551934",
+      "quote": "0568-51-2060",
+      "checkedAt": "2026-11-02"
+    },
+    {
+      "claim": "業種は神社",
+      "source": "https://maps.google.com/?cid=14720826995302551934",
+      "quote": "\"category\":\"神社\"",
+      "checkedAt": "2026-11-02"
+    },
+    {
+      "claim": "Instagram のアカウント名は tamanoontakejinja",
+      "source": "https://maps.google.com/?cid=14720826995302551934",
+      "quote": "instagram.com/tamanoontakejinja",
+      "checkedAt": "2026-11-02"
+    }
+  ],
+  "sources": [
+    {
+      "label": "Google マップ",
+      "url": "https://maps.google.com/?cid=14720826995302551934"
+    }
+  ],
+  "notes": "automation/v2/write.mjs が 2026-11-02 に claude -p --model sonnet で作成。事実の裏取り: 5/5 件(quote が出どころにあるもの)。裏取りに通らなかった facts は載せていない。"
+}

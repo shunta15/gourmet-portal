@@ -1,0 +1,255 @@
+{
+  "key": "tri-life-294",
+  "headline": "和歌山県紀美野町にある、高野山真言宗高野長峰霊場の第五番札所。天長十二年（835）に開創した眼病平癒の祈願所",
+  "lede": "紀美野町にある「釜滝薬師金剛寺」（龍光山）です。天長十二年（835）に慈覚大師（円仁）が開いた寺で、高野長峰霊場の第五番札所です。眼病平癒の祈願所で、本尊の薬師如来は五十年に一度だけ一般開帳されます。",
+  "sections": [
+    {
+      "heading": "場所と参拝の時間",
+      "body": "住所は和歌山県海草郡紀美野町釜滝120、電話は073-489-2830です。参拝時間は9時から17時です。電車の場合は和歌山電鉄の貴志駅から車で約15分、車の場合は阪和自動車道の海南東インターを下りて国道370号を東へ12kmです。近隣に数台の駐車スペースがあります。"
+    },
+    {
+      "heading": "由緒と薬師如来",
+      "body": "創建は天長十二年（835）、淳和天皇の御代です。慈覚大師（円仁）がこの地に来て、山下の釜ノ淵の奇瑞に感じ、一刀三礼で木像を刻んで安置しました。この像が本尊の薬師如来です。織田信長の根来攻めの兵火で本堂は焼失し、宝暦三年（1753）に本堂が落成しました。平成二年（1990）には山門の新築と本堂の修復がおこなわれました。"
+    },
+    {
+      "heading": "釜滝の甌穴",
+      "body": "寺の約800メートル下流、貴志川の分流である真國川の鶴の崖一帯の流れの中に、大小無数の甌穴群があります。石や砂が同じところを循環し、川底の岩盤が侵食されてできた丸い穴で、県指定の天然記念物「釜滝の甌穴」です。"
+    },
+    {
+      "heading": "霊場と体験",
+      "body": "現在の国道370号は高野西街道にあたり、この街道沿いに点在する高野山真言宗の十ヶ寺が高野長峰霊場をつくっています。釜滝薬師金剛寺は第五番札所です。寺では阿字観（座禅）・写経・写仏の体験ができます。会式前日当日・年末年始・盆・彼岸中は受け付けていません。"
+    }
+  ],
+  "menus": [
+    {
+      "name": "阿字観（座禅）"
+    },
+    {
+      "name": "写経"
+    },
+    {
+      "name": "写仏"
+    }
+  ],
+  "tags": [
+    {
+      "tag": "体験あり",
+      "factIndex": 7
+    },
+    {
+      "tag": "駐車場あり",
+      "factIndex": 6
+    }
+  ],
+  "facts": [
+    {
+      "claim": "創建は天長十二年（835）",
+      "source": "http://kamatakiyakushi.com/about.html",
+      "quote": "天長十二年（835）人皇五十三代",
+      "checkedAt": "2026-11-02"
+    },
+    {
+      "claim": "創建者は慈覚大師（円仁）",
+      "source": "http://kamatakiyakushi.com/about.html",
+      "quote": "山城国天台山慈覚大師（円仁）",
+      "checkedAt": "2026-11-02"
+    },
+    {
+      "claim": "高野山真言宗高野長峰霊場の第五番札所",
+      "source": "http://kamatakiyakushi.com/",
+      "quote": "高野山真言宗高野長峰霊場第五番札所",
+      "checkedAt": "2026-11-02"
+    },
+    {
+      "claim": "県指定天然記念物「釜滝の甌穴」がある",
+      "source": "http://kamatakiyakushi.com/about.html",
+      "quote": "県指定の天然記念物「釜滝の甌穴」",
+      "checkedAt": "2026-11-02"
+    },
+    {
+      "claim": "参拝時間は9時から17時",
+      "source": "http://kamatakiyakushi.com/access.html",
+      "quote": "参拝時間 9：00～17：00",
+      "checkedAt": "2026-11-02"
+    },
+    {
+      "claim": "和歌山電鉄の貴志駅から車で約15分",
+      "source": "http://kamatakiyakushi.com/access.html",
+      "quote": "貴志駅」より車で約15分",
+      "checkedAt": "2026-11-02"
+    },
+    {
+      "claim": "近隣に数台の駐車スペースがある",
+      "source": "http://kamatakiyakushi.com/access.html",
+      "quote": "近隣に数台の駐車スペース",
+      "checkedAt": "2026-11-02"
+    },
+    {
+      "claim": "阿字観(座禅)・写経・写仏の体験ができる",
+      "source": "http://kamatakiyakushi.com/guesthouse.html",
+      "quote": "阿字観(座禅)",
+      "checkedAt": "2026-11-02"
+    },
+    {
+      "claim": "平成二年（1990）に山門の新築と本堂の修復をした",
+      "source": "http://kamatakiyakushi.com/about.html",
+      "quote": "平成二年（1990）山門の新築",
+      "checkedAt": "2026-11-02"
+    },
+    {
+      "claim": "電話は073-489-2830",
+      "source": "http://kamatakiyakushi.com/access.html",
+      "quote": "073-489-2830",
+      "checkedAt": "2026-11-02"
+    },
+    {
+      "claim": "住所は和歌山県海草郡紀美野町釜滝120",
+      "source": "http://kamatakiyakushi.com/access.html",
+      "quote": "和歌山県海草郡紀美野町釜滝120",
+      "checkedAt": "2026-11-02"
+    },
+    {
+      "claim": "本尊は五十年に一度だけ一般開帳される",
+      "source": "http://kamatakiyakushi.com/",
+      "quote": "五十年に一度だけ一般開帳",
+      "checkedAt": "2026-11-02"
+    },
+    {
+      "claim": "慈覚大師は目の守護仏として薬師如来像をつくった",
+      "source": "http://kamatakiyakushi.com/about.html",
+      "quote": "特に目の守護仏として薬師如来像",
+      "checkedAt": "2026-11-02"
+    },
+    {
+      "claim": "海南東インターから国道370号を東へ12km",
+      "source": "http://kamatakiyakushi.com/access.html",
+      "quote": "国道３７０号を東へ12km",
+      "checkedAt": "2026-11-02"
+    },
+    {
+      "claim": "宝暦三年（1753）に本堂が落成した",
+      "source": "http://kamatakiyakushi.com/about.html",
+      "quote": "宝暦三年（1753）三月八日本堂を落成",
+      "checkedAt": "2026-11-02"
+    },
+    {
+      "claim": "織田信長の根来攻めで兵火にかかり本堂が焼失した",
+      "source": "http://kamatakiyakushi.com/about.html",
+      "quote": "織田信長の根来攻めに当たって兵火にかかり",
+      "checkedAt": "2026-11-02"
+    },
+    {
+      "claim": "体験は会式前日当日・年末年始・盆・彼岸中は行っていない",
+      "source": "http://kamatakiyakushi.com/guesthouse.html",
+      "quote": "彼岸中はお受けしておりません",
+      "checkedAt": "2026-11-02"
+    },
+    {
+      "claim": "甌穴は寺の約800メートル下流にある",
+      "source": "http://kamatakiyakushi.com/about.html",
+      "quote": "約800メートル下流",
+      "checkedAt": "2026-11-02"
+    },
+    {
+      "claim": "眼病平癒の祈願所である",
+      "source": "http://kamatakiyakushi.com/",
+      "quote": "眼病平癒祈願所",
+      "checkedAt": "2026-11-02"
+    },
+    {
+      "claim": "山号は龍光山",
+      "source": "http://kamatakiyakushi.com/about.html",
+      "quote": "龍光山 釜滝薬師金剛寺",
+      "checkedAt": "2026-11-02"
+    },
+    {
+      "claim": "創建は淳和天皇の御代",
+      "source": "http://kamatakiyakushi.com/about.html",
+      "quote": "人皇五十三代淳和天皇の御代",
+      "checkedAt": "2026-11-02"
+    },
+    {
+      "claim": "慈覚大師は山下の釜ノ淵の奇瑞に感じ、一刀三礼で木像を刻み安置した",
+      "source": "http://kamatakiyakushi.com/about.html",
+      "quote": "山下の釜ノ淵の奇瑞に感じ一刀三礼木像を刻み",
+      "checkedAt": "2026-11-02"
+    },
+    {
+      "claim": "この像が本尊の薬師如来である",
+      "source": "http://kamatakiyakushi.com/about.html",
+      "quote": "この像は本尊薬師如来である",
+      "checkedAt": "2026-11-02"
+    },
+    {
+      "claim": "車の場合は阪和自動車道の海南東インターで下りる",
+      "source": "http://kamatakiyakushi.com/access.html",
+      "quote": "阪和自動車道「海南東インター」下車後",
+      "checkedAt": "2026-11-02"
+    },
+    {
+      "claim": "甌穴群は貴志川の分流・真國川の鶴の崖一帯にある",
+      "source": "http://kamatakiyakushi.com/about.html",
+      "quote": "貴志川の分流真國川の鶴の崖一帯",
+      "checkedAt": "2026-11-02"
+    },
+    {
+      "claim": "流れの中に大小無数の甌穴群がある",
+      "source": "http://kamatakiyakushi.com/about.html",
+      "quote": "大小無数の甌穴群",
+      "checkedAt": "2026-11-02"
+    },
+    {
+      "claim": "石や砂が同じところを循環する",
+      "source": "http://kamatakiyakushi.com/about.html",
+      "quote": "石や砂が同じところを循環し",
+      "checkedAt": "2026-11-02"
+    },
+    {
+      "claim": "川底の岩盤が侵食されてできた丸い穴",
+      "source": "http://kamatakiyakushi.com/about.html",
+      "quote": "川底の岩盤と接触して侵食されてできた丸い穴",
+      "checkedAt": "2026-11-02"
+    },
+    {
+      "claim": "現在の国道370号は高野西街道と呼ばれる",
+      "source": "http://kamatakiyakushi.com/about.html",
+      "quote": "現在の国道３７０号は高野西街道と呼ばれ",
+      "checkedAt": "2026-11-02"
+    },
+    {
+      "claim": "街道沿いに点在する高野山真言宗の十ヶ寺が高野長峰霊場をつくる",
+      "source": "http://kamatakiyakushi.com/about.html",
+      "quote": "この街道沿いに点在する高野山真言宗の十ヶ寺が高野長峰霊場をつくり",
+      "checkedAt": "2026-11-02"
+    },
+    {
+      "claim": "慈覚大師（円仁）がこの地に来た",
+      "source": "http://kamatakiyakushi.com/about.html",
+      "quote": "慈覚大師（円仁）がこの地に来り",
+      "checkedAt": "2026-11-02"
+    }
+  ],
+  "sources": [
+    {
+      "label": "公式サイト",
+      "url": "http://kamatakiyakushi.com/"
+    },
+    {
+      "label": "公式サイト(釜滝薬師について)",
+      "url": "http://kamatakiyakushi.com/about.html"
+    },
+    {
+      "label": "公式サイト(宿泊・体験)",
+      "url": "http://kamatakiyakushi.com/guesthouse.html"
+    },
+    {
+      "label": "公式サイト(交通)",
+      "url": "http://kamatakiyakushi.com/access.html"
+    },
+    {
+      "label": "Google マップ",
+      "url": "https://maps.google.com/?cid=8004237374536313608"
+    }
+  ],
+  "notes": "automation/v2/write.mjs が 2026-11-02 に claude -p --model sonnet で作成。事実の裏取り: 31/31 件(quote が出どころにあるもの)。裏取りに通らなかった facts は載せていない。"
+}

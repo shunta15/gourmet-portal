@@ -1,0 +1,32 @@
+{
+  "tab": "トリニティアポ",
+  "tabEn": "tri-life",
+  "row": 316,
+  "sheet": {
+    "name": "玉野御嶽神社",
+    "address": "",
+    "url": "https://www.google.com/maps/search/?api=1&query=%E7%8E%89%E9%87%8E%E5%BE%A1%E5%B6%BD%E7%A5%9E%E7%A4%BE%20056-851-2060%20%E3%80%92487-0004%20%E6%84%9B%E7%9F%A5%E7%9C%8C%E6%98%A5%E6%97%A5%E4%BA%95%E5%B8%82%E7%8E%89%E9%87%8E%E7%94%BA%EF%BC%91%EF%BC%96%EF%BC%96%EF%BC%91",
+    "type": "神社",
+    "d1": "",
+    "d2": ""
+  },
+  "urlKind": "mapsApi",
+  "route": "第1段(verify-gbp.mjs)で確認済み",
+  "verdict": "一致",
+  "verdictReason": "手がかり: 店名＋電話＋住所(番地まで)。電話が一致／店名: exact(シート「玉野御嶽神社」/ マップ「玉野御嶽神社」)／住所(シート): exact・町名・番地とも一致",
+  "place": {
+    "name": "玉野御嶽神社",
+    "address": "愛知県春日井市玉野町１６６１",
+    "category": "神社",
+    "lat": 35.276992,
+    "lng": 137.0788355,
+    "gbpUrl": "https://maps.google.com/?cid=14720826995302551934",
+    "phone": "0568-51-2060",
+    "website": "https://www.instagram.com/tamanoontakejinja/",
+    "hours": null,
+    "reserveLinks": [],
+    "statusSignals": [],
+    "closedSignal": false
+  },
+  "fetchedAt": "2026-11-01T23:17:03.158Z"
+}

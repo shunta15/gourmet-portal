@@ -1,0 +1,60 @@
+{
+  "key": "tri-life-301",
+  "headline": "岐阜県岐阜市長良雄総にある仏教寺院「雄総山 護国之寺」",
+  "lede": "岐阜市にある「雄総山 護国之寺」です。所在地は長良雄総194-1で、種類は仏教寺院です。電話番号は058-231-3539です。",
+  "sections": [
+    {
+      "heading": "場所と連絡先",
+      "body": "所在地は岐阜県岐阜市長良雄総194-1です。電話番号は058-231-3539です。"
+    },
+    {
+      "heading": "名称と種類",
+      "body": "名称は「雄総山 護国之寺」で、種類は仏教寺院です。所在地の町名は長良雄総です。"
+    }
+  ],
+  "menus": [],
+  "tags": [],
+  "facts": [
+    {
+      "claim": "店名は雄総山 護国之寺",
+      "source": "https://maps.google.com/?cid=5914769246708630640",
+      "quote": "雄総山 護国之寺",
+      "checkedAt": "2026-11-02"
+    },
+    {
+      "claim": "住所は岐阜県岐阜市長良雄総194-1",
+      "source": "https://maps.google.com/?cid=5914769246708630640",
+      "quote": "岐阜県岐阜市長良雄総１９４−１",
+      "checkedAt": "2026-11-02"
+    },
+    {
+      "claim": "電話は058-231-3539",
+      "source": "https://maps.google.com/?cid=5914769246708630640",
+      "quote": "058-231-3539",
+      "checkedAt": "2026-11-02"
+    },
+    {
+      "claim": "Google マップの業種は仏教寺院",
+      "source": "https://maps.google.com/?cid=5914769246708630640",
+      "quote": "仏教寺院",
+      "checkedAt": "2026-11-02"
+    },
+    {
+      "claim": "公式サイトのトップは護国之寺へようこそで始まる",
+      "source": "https://www.ne.jp/asahi/gifu/gokokushiji/gokokushijiHP-TOP.index.html",
+      "quote": "護国之寺へようこそ",
+      "checkedAt": "2026-11-02"
+    }
+  ],
+  "sources": [
+    {
+      "label": "公式サイト",
+      "url": "https://www.ne.jp/asahi/gifu/gokokushiji/gokokushijiHP-TOP.index.html"
+    },
+    {
+      "label": "Google マップ",
+      "url": "https://maps.google.com/?cid=5914769246708630640"
+    }
+  ],
+  "notes": "automation/v2/write.mjs が 2026-11-02 に claude -p --model sonnet で作成。事実の裏取り: 5/5 件(quote が出どころにあるもの)。裏取りに通らなかった facts は載せていない。"
+}

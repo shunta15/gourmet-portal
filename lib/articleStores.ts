@@ -18194,6 +18194,153 @@ export const ARTICLE_STORES: Restaurant[] = [
       "中区"
     ],
     "featureId": "CavedeKazu"
+  },
+  {
+    "id": "r827",
+    "name": "Shisha and Bar Epi",
+    "cuisine": "バー",
+    "area": "沖縄県・宮古島市",
+    "region": "okinawa",
+    "shape": "square",
+    "image": "/restaurants/teleapo-ShishaandBarEpi/hero.jpg",
+    "heroImages": [
+      "/restaurants/teleapo-ShishaandBarEpi/hero.jpg",
+      "/restaurants/teleapo-ShishaandBarEpi/point1.jpg",
+      "/restaurants/teleapo-ShishaandBarEpi/point2.jpg",
+      "/restaurants/teleapo-ShishaandBarEpi/point3.jpg",
+      "/restaurants/teleapo-ShishaandBarEpi/point4.jpg"
+    ],
+    "gallery": [
+      "/restaurants/teleapo-ShishaandBarEpi/hero.jpg",
+      "/restaurants/teleapo-ShishaandBarEpi/point1.jpg",
+      "/restaurants/teleapo-ShishaandBarEpi/point2.jpg",
+      "/restaurants/teleapo-ShishaandBarEpi/point3.jpg",
+      "/restaurants/teleapo-ShishaandBarEpi/point4.jpg"
+    ],
+    "desc": "Shisha and Bar Epiは、沖縄県宮古島市平良西里にあるバーである。",
+    "address": "沖縄県宮古島市平良西里117-1",
+    "hours": "—（訪問前に公式確認）",
+    "closed": "—（訪問前に公式確認）",
+    "seats": "カウンター席・テーブル席",
+    "nearest": "—",
+    "phone": "0980-79-0424",
+    "instagram": "https://www.instagram.com/epi_miyakojima",
+    "source": {
+      "label": "Google ビジネスプロフィール",
+      "url": "https://maps.google.com/?cid=18145730058016386985"
+    },
+    "body": [
+      "Shisha and Bar Epiは、沖縄県宮古島市にあるお店です。業態は「バー」、所在地は沖縄県宮古島市平良西里117-1です。マチノワ編集部の特集記事では、「シーシャとバーを並べた店名の一軒」・「DJ機材が置かれた店内のDJブース」などを取り上げています。",
+      "営業時間と定休日は取得できていないため、訪問前に公式の情報でご確認ください。席はカウンター席・テーブル席。営業時間や価格は変わることがあるため、訪問前に公式サイトやSNS、お電話でご確認ください。"
+    ],
+    "highlights": [
+      "シーシャとバーを並べた店名の一軒",
+      "DJ機材が置かれた店内のDJブース",
+      "グラフィティとレンガの壁に囲まれた店内",
+      "平良西里117-1、電話で確かめる営業日"
+    ],
+    "tags": [
+      "バー",
+      "宮古島市"
+    ],
+    "featureId": "ShishaandBarEpi"
+  },
+  {
+    "id": "r828",
+    "name": "THE WINE BASE 銀座 ～世界を旅するワインバー～",
+    "cuisine": "ワインバー",
+    "area": "東京都・中央区",
+    "region": "tokyo",
+    "shape": "square",
+    "image": "/restaurants/teleapo-THEWINEBASE銀座～世界を旅するワインバー～/hero.jpg",
+    "heroImages": [
+      "/restaurants/teleapo-THEWINEBASE銀座～世界を旅するワインバー～/hero.jpg",
+      "/restaurants/teleapo-THEWINEBASE銀座～世界を旅するワインバー～/point1.jpg",
+      "/restaurants/teleapo-THEWINEBASE銀座～世界を旅するワインバー～/point2.jpg"
+    ],
+    "gallery": [
+      "/restaurants/teleapo-THEWINEBASE銀座～世界を旅するワインバー～/hero.jpg",
+      "/restaurants/teleapo-THEWINEBASE銀座～世界を旅するワインバー～/point1.jpg",
+      "/restaurants/teleapo-THEWINEBASE銀座～世界を旅するワインバー～/point2.jpg"
+    ],
+    "desc": "THE WINE BASE 銀座は、東京都中央区銀座4丁目にあるワインバーである。",
+    "address": "東京都中央区銀座4丁目3-5 ハトリビル 3F",
+    "hours": "—（訪問前に公式確認）",
+    "closed": "—（訪問前に公式確認）",
+    "seats": "—（訪問前に公式確認）",
+    "nearest": "—",
+    "phone": "03-3564-7218",
+    "source": {
+      "label": "Google ビジネスプロフィール",
+      "url": "https://maps.google.com/?cid=9388917066358353039"
+    },
+    "body": [
+      "THE WINE BASE 銀座 ～世界を旅するワインバー～は、東京都中央区にあるお店です。業態は「ワインバー」、所在地は東京都中央区銀座4丁目3-5 ハトリビル 3Fです。マチノワ編集部の特集記事では、「THE WINE BASE 銀座の店名と業種」・「銀座4丁目3-5、ハトリビルの3階」などを取り上げています。",
+      "営業時間と定休日は取得できていないため、訪問前に公式の情報でご確認ください。営業時間や価格は変わることがあるため、訪問前に公式サイトやSNS、お電話でご確認ください。"
+    ],
+    "highlights": [
+      "THE WINE BASE 銀座の店名と業種",
+      "銀座4丁目3-5、ハトリビルの3階",
+      "銀座4丁目の電話番号と連絡先"
+    ],
+    "tags": [
+      "ワインバー",
+      "中央区"
+    ],
+    "featureId": "THEWINEBASE銀座～世界を旅するワインバー～"
+  },
+  {
+    "id": "r829",
+    "name": "すし処 大敷",
+    "cuisine": "寿司店",
+    "area": "石川県・金沢市",
+    "region": "ishikawa",
+    "shape": "square",
+    "image": "/restaurants/teleapo-すし処大敷/hero.jpg",
+    "heroImages": [
+      "/restaurants/teleapo-すし処大敷/hero.jpg",
+      "/restaurants/teleapo-すし処大敷/point1.jpg",
+      "/restaurants/teleapo-すし処大敷/point2.jpg",
+      "/restaurants/teleapo-すし処大敷/point3.jpg",
+      "/restaurants/teleapo-すし処大敷/point4.jpg"
+    ],
+    "gallery": [
+      "/restaurants/teleapo-すし処大敷/hero.jpg",
+      "/restaurants/teleapo-すし処大敷/point1.jpg",
+      "/restaurants/teleapo-すし処大敷/point2.jpg",
+      "/restaurants/teleapo-すし処大敷/point3.jpg",
+      "/restaurants/teleapo-すし処大敷/point4.jpg",
+      "/restaurants/teleapo-すし処大敷/point5.jpg"
+    ],
+    "desc": "すし処大敷は、石川県金沢市西念3丁目5番24号にある寿司店である。",
+    "address": "石川県金沢市西念3丁目5-24 すし処大敷",
+    "hours": "—（訪問前に公式確認）",
+    "closed": "—（訪問前に公式確認）",
+    "seats": "38席（宴会最大20名）",
+    "nearest": "—",
+    "phone": "076-261-0041",
+    "source": {
+      "label": "Google ビジネスプロフィール",
+      "url": "https://maps.google.com/?cid=12131283275080528967"
+    },
+    "body": [
+      "すし処 大敷は、石川県金沢市にあるお店です。業態は「寿司店」、所在地は石川県金沢市西念3丁目5-24 すし処大敷です。マチノワ編集部の特集記事では、「日に三度の仕入れで鮮度を確保する魚介」・「能登の宝達山のコシヒカリで仕上げるシャリ」などを取り上げています。",
+      "営業時間と定休日は取得できていないため、訪問前に公式の情報でご確認ください。席は38席（宴会最大20名）。営業時間や価格は変わることがあるため、訪問前に公式サイトやSNS、お電話でご確認ください。"
+    ],
+    "highlights": [
+      "日に三度の仕入れで鮮度を確保する魚介",
+      "能登の宝達山のコシヒカリで仕上げるシャリ",
+      "自家農園の加賀野菜と季節の加能かにコース",
+      "座敷・掘りごたつの個室と宴会対応",
+      "テイクアウトのすし折詰と営業・アクセス情報"
+    ],
+    "tags": [
+      "寿司店",
+      "金沢市",
+      "宴会",
+      "個室"
+    ],
+    "featureId": "すし処大敷"
   }
 ];
 
@@ -18581,7 +18728,10 @@ export const ARTICLE_STORE_FEATURE_IDS: Record<string, string> = {
   "r823": "農業レストランフラール",
   "r824": "居酒屋神の",
   "r825": "中華そばおっさん食堂",
-  "r826": "CavedeKazu"
+  "r826": "CavedeKazu",
+  "r827": "ShishaandBarEpi",
+  "r828": "THEWINEBASE銀座～世界を旅するワインバー～",
+  "r829": "すし処大敷"
 };
 
 /** 特集記事ID → 店舗ID */
@@ -18968,5 +19118,8 @@ export const ARTICLE_STORE_ID_BY_FEATURE: Record<string, string> = {
   "農業レストランフラール": "r823",
   "居酒屋神の": "r824",
   "中華そばおっさん食堂": "r825",
-  "CavedeKazu": "r826"
+  "CavedeKazu": "r826",
+  "ShishaandBarEpi": "r827",
+  "THEWINEBASE銀座～世界を旅するワインバー～": "r828",
+  "すし処大敷": "r829"
 };

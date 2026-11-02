@@ -1,0 +1,32 @@
+{
+  "tab": "トリニティアポ",
+  "tabEn": "tri-stay",
+  "row": 307,
+  "sheet": {
+    "name": "くすの温泉お宿 豊後乃里",
+    "address": "",
+    "url": "https://www.google.com/maps/search/?api=1&query=%E3%81%8F%E3%81%99%E3%81%AE%E6%B8%A9%E6%B3%89%E3%81%8A%E5%AE%BF%20%E8%B1%8A%E5%BE%8C%E4%B9%83%E9%87%8C%20097-372-6258%20",
+    "type": "宿泊",
+    "d1": "",
+    "d2": ""
+  },
+  "urlKind": "mapsApi",
+  "route": "第1段(verify-gbp.mjs)で確認済み",
+  "verdict": "一致",
+  "verdictReason": "手がかり: 店名＋電話。電話が一致／店名: exact(シート「くすの温泉お宿 豊後乃里」/ マップ「くすの温泉お宿 豊後乃里」)",
+  "place": {
+    "name": "くすの温泉お宿 豊後乃里",
+    "address": "大分県玖珠郡玖珠町山田２５８６",
+    "category": null,
+    "lat": 33.2809721,
+    "lng": 131.134504,
+    "gbpUrl": "https://maps.google.com/?cid=6279665697612609061",
+    "phone": "0973-72-6258",
+    "website": "https://www.bungonosato.net/",
+    "hours": null,
+    "reserveLinks": [],
+    "statusSignals": [],
+    "closedSignal": false
+  },
+  "fetchedAt": "2026-11-01T23:10:12.755Z"
+}

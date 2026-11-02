@@ -1,0 +1,223 @@
+{
+  "key": "tri-stay-307",
+  "headline": "大分県玖珠郡玖珠町にある温泉旅館。和室・洋室・大部屋など複数タイプの客室があり、露天風呂（貸切）と岩風呂（大浴場）を備える。",
+  "lede": "玖珠郡玖珠町にある「くすの温泉お宿 豊後乃里」です。川を眺められる温泉旅館で、露天風呂（貸切家族風呂）1つと岩風呂（大浴場）男女各1つがあります。収容人員は最大120名で、合宿や仕事での利用も受け付けています。",
+  "sections": [
+    {
+      "heading": "客室",
+      "body": "客室は、内湯付きの10畳和室、内湯付きの洋室、8畳の和室、和室の大部屋など複数のタイプがあります。内湯付き和室（212室）の内湯は24時間使えます。和室の大部屋は内湯がなく、3名以上の利用向けのプランがあります。"
+    },
+    {
+      "heading": "お風呂",
+      "body": "露天風呂（貸切家族風呂）が1つと、岩風呂（大浴場）が男女各1つあります。日帰り温泉は24時間利用でき、宿泊しない場合も入浴できます。タオルの貸し出しがあります。"
+    },
+    {
+      "heading": "お食事",
+      "body": "大分の和牛ブランド「おおいた和牛」を提供する提携店への送迎があります。焼肉セットプランとお子様セットプランがあります。平日は素泊まりプランが基本です。"
+    },
+    {
+      "heading": "合宿・団体利用",
+      "body": "収容人員は最大120名で、合宿プランがあり、仕事での利用も受け付けています。マイクロバスでそのまま入れる駐車場があり、大型バイクも駐車できます。相談は、電話（0973-72-6258）または問い合わせフォームから受け付けています。"
+    }
+  ],
+  "rooms": [
+    {
+      "name": "内湯付き和室（10畳）"
+    },
+    {
+      "name": "内湯付き洋室"
+    },
+    {
+      "name": "和室（8畳）"
+    },
+    {
+      "name": "和室大部屋"
+    }
+  ],
+  "menus": [
+    {
+      "name": "焼肉セットプラン"
+    },
+    {
+      "name": "お子様セットプラン"
+    },
+    {
+      "name": "合宿プラン"
+    }
+  ],
+  "tags": [
+    {
+      "tag": "温泉",
+      "factIndex": 3
+    },
+    {
+      "tag": "素泊まり",
+      "factIndex": 6
+    }
+  ],
+  "facts": [
+    {
+      "claim": "定休日は年中無休",
+      "source": "https://www.bungonosato.net/",
+      "quote": "定休日／年中無休",
+      "checkedAt": "2026-11-02"
+    },
+    {
+      "claim": "収容人員は最大120名",
+      "source": "https://www.bungonosato.net/",
+      "quote": "収容人員／最大120名",
+      "checkedAt": "2026-11-02"
+    },
+    {
+      "claim": "露天風呂（貸切家族風呂）が1つ、岩風呂（大浴場）が男女各1つある",
+      "source": "https://www.bungonosato.net/",
+      "quote": "露天風呂（貸切家族風呂）／1 岩風呂（大浴場）／2（男女各1）",
+      "checkedAt": "2026-11-02"
+    },
+    {
+      "claim": "日帰り入浴を24時間利用できる",
+      "source": "https://www.bungonosato.net/",
+      "quote": "日帰り温泉、２４時間ご利用いただけます",
+      "checkedAt": "2026-11-02"
+    },
+    {
+      "claim": "内湯付きの10畳和室がある",
+      "source": "https://www.bungonosato.net/services-9",
+      "quote": "10畳の内湯付き和室になります",
+      "checkedAt": "2026-11-02"
+    },
+    {
+      "claim": "内湯付きの洋室がある",
+      "source": "https://www.bungonosato.net/services-9",
+      "quote": "内湯付きの洋室になります",
+      "checkedAt": "2026-11-02"
+    },
+    {
+      "claim": "平日は素泊まりプランが基本となる",
+      "source": "https://www.bungonosato.net/",
+      "quote": "平日は素泊まりプランが基本となります",
+      "checkedAt": "2026-11-02"
+    },
+    {
+      "claim": "合宿プランがある",
+      "source": "https://www.bungonosato.net/",
+      "quote": "ただいま合宿プラン強化中でございます",
+      "checkedAt": "2026-11-02"
+    },
+    {
+      "claim": "大分の和牛ブランド「おおいた和牛」を使った食事がある",
+      "source": "https://www.bungonosato.net/%E6%96%BD%E8%A8%AD%E6%A6%82%E8%A6%81",
+      "quote": "新しい県産和牛ブランド 「おおいた和牛」",
+      "checkedAt": "2026-11-02"
+    },
+    {
+      "claim": "川を眺められる環境にある",
+      "source": "https://www.bungonosato.net/%E6%96%BD%E8%A8%AD%E6%A6%82%E8%A6%81",
+      "quote": "川を眺めながらゆったりとお過ごしください",
+      "checkedAt": "2026-11-02"
+    },
+    {
+      "claim": "提携店への送迎がある",
+      "source": "https://www.bungonosato.net/%E6%96%BD%E8%A8%AD%E6%A6%82%E8%A6%81",
+      "quote": "提携店まで無料で送迎いたします",
+      "checkedAt": "2026-11-02"
+    },
+    {
+      "claim": "大型バイクでも駐車できる",
+      "source": "https://www.bungonosato.net/",
+      "quote": "大型バイクも可",
+      "checkedAt": "2026-11-02"
+    },
+    {
+      "claim": "タオルの貸し出しがある",
+      "source": "https://www.bungonosato.net/",
+      "quote": "タオル貸し出し",
+      "checkedAt": "2026-11-02"
+    },
+    {
+      "claim": "マイクロバスでそのまま入れる駐車場がある",
+      "source": "https://www.bungonosato.net/",
+      "quote": "マイクロバスであればそのまま入れます",
+      "checkedAt": "2026-11-02"
+    },
+    {
+      "claim": "仕事での利用も受け付けている",
+      "source": "https://www.bungonosato.net/",
+      "quote": "お仕事でのご利用も大歓迎でございます",
+      "checkedAt": "2026-11-02"
+    },
+    {
+      "claim": "3名以上の利用向けのプランがある和室大部屋がある",
+      "source": "https://www.bungonosato.net/services-9",
+      "quote": "３名以上のご利用でお得なプランがございます",
+      "checkedAt": "2026-11-02"
+    },
+    {
+      "claim": "内湯付き和室（212室）の内湯は24時間使える",
+      "source": "https://www.bungonosato.net/services-9",
+      "quote": "24時間ご使用可能な内湯でごゆっくりとお過ごしください。",
+      "checkedAt": "2026-11-02"
+    },
+    {
+      "claim": "相談は電話または問い合わせフォームから受け付けている",
+      "source": "https://www.bungonosato.net/",
+      "quote": "詳しくはお電話（0973-72-6258）または問い合わせフォームでお気軽にご相談ください。",
+      "checkedAt": "2026-11-02"
+    },
+    {
+      "claim": "内湯付き和室（212室）がある",
+      "source": "https://www.bungonosato.net/services-9",
+      "quote": "内湯付き和室（212室）",
+      "checkedAt": "2026-11-02"
+    },
+    {
+      "claim": "8畳の和室がある",
+      "source": "https://www.bungonosato.net/services-9",
+      "quote": "8畳の和室になります",
+      "checkedAt": "2026-11-02"
+    },
+    {
+      "claim": "和室の大部屋には内湯がない",
+      "source": "https://www.bungonosato.net/services-9",
+      "quote": "和室の大部屋になります。内湯はついておりません。",
+      "checkedAt": "2026-11-02"
+    },
+    {
+      "claim": "お風呂のみの利用は24時間入浴できる",
+      "source": "https://www.bungonosato.net/",
+      "quote": "24時間入浴可能です",
+      "checkedAt": "2026-11-02"
+    },
+    {
+      "claim": "焼肉セットプランがある",
+      "source": "https://www.bungonosato.net/",
+      "quote": "お得な焼肉セットプランもございます",
+      "checkedAt": "2026-11-02"
+    },
+    {
+      "claim": "お子様セットプランがある",
+      "source": "https://www.bungonosato.net/%E6%96%BD%E8%A8%AD%E6%A6%82%E8%A6%81",
+      "quote": "お子様セットプラン",
+      "checkedAt": "2026-11-02"
+    }
+  ],
+  "sources": [
+    {
+      "label": "公式サイト",
+      "url": "https://www.bungonosato.net/"
+    },
+    {
+      "label": "公式サイト(お部屋)",
+      "url": "https://www.bungonosato.net/services-9"
+    },
+    {
+      "label": "公式サイト(施設概要)",
+      "url": "https://www.bungonosato.net/%E6%96%BD%E8%A8%AD%E6%A6%82%E8%A6%81"
+    },
+    {
+      "label": "Google マップ",
+      "url": "https://maps.google.com/?cid=6279665697612609061"
+    }
+  ],
+  "notes": "automation/v2/write.mjs が 2026-11-02 に claude -p --model sonnet で作成。事実の裏取り: 24/24 件(quote が出どころにあるもの)。裏取りに通らなかった facts は載せていない。"
+}

@@ -1,0 +1,32 @@
+{
+  "tab": "トリニティアポ",
+  "tabEn": "tri-life",
+  "row": 294,
+  "sheet": {
+    "name": "金剛寺（釜滝薬師",
+    "address": "",
+    "url": "https://www.google.com/maps/search/?api=1&query=%E9%87%91%E5%89%9B%E5%AF%BA%EF%BC%88%E9%87%9C%E6%BB%9D%E8%96%AC%E5%B8%AB%20073-489-2830%20",
+    "type": "寺",
+    "d1": "",
+    "d2": ""
+  },
+  "urlKind": "mapsApi",
+  "route": "第1段(verify-gbp.mjs)で確認済み",
+  "verdict": "一致",
+  "verdictReason": "手がかり: 店名＋電話＋住所(番地まで)。電話が一致／店名: exact(シート「金剛寺（釜滝薬師」/ マップ「金剛寺（釜滝薬師）」)／住所(シート): exact・町名・番地とも一致",
+  "place": {
+    "name": "金剛寺（釜滝薬師）",
+    "address": "和歌山県海草郡紀美野町釜滝１２０",
+    "category": "仏教寺院",
+    "lat": 34.1665283,
+    "lng": 135.3428863,
+    "gbpUrl": "https://maps.google.com/?cid=8004237374536313608",
+    "phone": "073-489-2830",
+    "website": "http://kamatakiyakushi.com/",
+    "hours": null,
+    "reserveLinks": [],
+    "statusSignals": [],
+    "closedSignal": false
+  },
+  "fetchedAt": "2026-11-01T22:59:36.155Z"
+}

@@ -1,0 +1,76 @@
+{
+  "key": "tri-life-294",
+  "images": [
+    {
+      "path": "/_portal/vshops/tri-life-294/g01.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9RHpucvHTQ9sE4LiVLhZe7Ir6qHwD-L2zbkE3IscjfpD4tiuKP4Dm-EhR2605-w5ArnEHFcNFLx4rzof0aTEwTSamf3OxLx4Gek6Gms-9tvfMkWXlBtSZ2D1H-Q7XlRy2LAJSdo=s1200",
+      "pageUrl": "https://maps.google.com/?cid=8004237374536313608",
+      "what": "山門の前に石碑が立つ寺の入口",
+      "kind": "exterior",
+      "width": 1200,
+      "height": 675,
+      "source": "Google マップ"
+    },
+    {
+      "path": "/_portal/vshops/tri-life-294/g03.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9R8YKwR6R9DdqwQnEPkm48CpLmAA2asU5Xp1mUbcJNZs61NaDIErDCbKwP3uQ8shJn8nSP_e8RTCFU541uddC8z9fkWEOHEW9uUedp_MN6Ypf5T8Cyk5u2m0abOqXR3KnL8AAN2F3oPChax=s1200",
+      "pageUrl": "https://maps.google.com/?cid=8004237374536313608",
+      "what": "色とりどりの紫陽花の鉢が並ぶ境内の一角",
+      "kind": "common",
+      "width": 1200,
+      "height": 900,
+      "source": "Google マップ"
+    },
+    {
+      "path": "/_portal/vshops/tri-life-294/g04.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9ShZSzfL4uvEZ7ODpyCtmvSsj289NL_FYL17R49TIiV8mw8g-PBgoRjHn0OOM-V0uI_CX1-7T9rhWqiUbKR23-tLe0QPitCnOkH686FLyOnDIDJO7Tmx0CFMqemE9mus-SWNnll=s1200",
+      "pageUrl": "https://maps.google.com/?cid=8004237374536313608",
+      "what": "「釜滝薬師」と刻まれた石碑",
+      "kind": "exterior",
+      "width": 1080,
+      "height": 1080,
+      "source": "Google マップ"
+    },
+    {
+      "path": "/_portal/vshops/tri-life-294/g05.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9THjcAvAfbSUpGy-TgZrDOdAquqc6VBfF98gbxZ-akB5eR2aSzNPMsCq0j3YdFp_BJp5Y4rv0wtPRIiEvVqA2knK4obYq6S6xpQR6jFR0gXju99h41jsaMiVCq1FijzCZKh2ZIO=s1200",
+      "pageUrl": "https://maps.google.com/?cid=8004237374536313608",
+      "what": "提灯が下がる本堂と紫陽花",
+      "kind": "exterior",
+      "width": 900,
+      "height": 1200,
+      "source": "Google マップ"
+    },
+    {
+      "path": "/_portal/vshops/tri-life-294/g07.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9S9Xro5P4kLaz83C1t_YfyYtg555bCcoTAJaaTjm9TfvSA5J6iJ8mJ_oBs8xOz8n8We_wzAxCQtMytVehDNu26JHZux4q5XSY6qzZbS7zMC7M1a77GahvoVz-Z3o6ZF4WtsXWEi=s1200",
+      "pageUrl": "https://maps.google.com/?cid=8004237374536313608",
+      "what": "山並みと集落が広がる周辺の景色",
+      "kind": "view",
+      "width": 1200,
+      "height": 568,
+      "source": "Google マップ"
+    },
+    {
+      "path": "/_portal/vshops/tri-life-294/g09.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9RYNdNkK6HGiWrPtZ3HhA56-tzXOuoU8LFn1hj7G1HTYx4AE7MtO01eI8g-su4OmeVg_avwvu4uiYaVACZFEEIA6SZzYzr2LbTn0UcS3S1SgL4Z-zoX7HjmAWv96qipN3HlOidQ2g=s1200",
+      "pageUrl": "https://maps.google.com/?cid=8004237374536313608",
+      "what": "菊の花を彫った木の欄間",
+      "kind": "common",
+      "width": 1200,
+      "height": 1200,
+      "source": "Google マップ"
+    },
+    {
+      "path": "/_portal/vshops/tri-life-294/g10.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9QzL1E1-q3yJ3yPobWF5LZkaPX31UCpDszJKdglSdwhtcP7YoAkDIHWdhtZZqUBVKkA7CDYIdat7eWx6RAKHvHI_pkMYzWFn9BZwow8cAWMYfoGuEHZTaCXKdHJXsC_KyJhsSb7vA=s1200",
+      "pageUrl": "https://maps.google.com/?cid=8004237374536313608",
+      "what": "「めの守護」の幟が立つ参道",
+      "kind": "view",
+      "width": 900,
+      "height": 1200,
+      "source": "Google マップ"
+    }
+  ],
+  "note": "automation/v2/write.mjs が 2026-11-02T02:54:00.294Z に取得。店の実写だけ(AI 画像・汎用画像・地図・ロゴ・顔が大きい画像は除外)。"
+}

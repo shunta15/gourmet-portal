@@ -1,0 +1,32 @@
+{
+  "tab": "トリニティアポ",
+  "tabEn": "tri-life",
+  "row": 301,
+  "sheet": {
+    "name": "護国之寺",
+    "address": "",
+    "url": "https://www.google.com/maps/search/?api=1&query=%E8%AD%B7%E5%9B%BD%E4%B9%8B%E5%AF%BA%20058-231-3539%20%E3%80%92502-0017%20%E5%B2%90%E9%98%9C%E7%9C%8C%E5%B2%90%E9%98%9C%E5%B8%82%E9%95%B7%E8%89%AF%E9%9B%84%E7%B7%8F%EF%BC%91%EF%BC%99%EF%BC%94%E2%88%92%EF%BC%91%20%E9%95%B7%E8%89%AF%E9%9B%84%E7%B7%8F",
+    "type": "寺",
+    "d1": "",
+    "d2": ""
+  },
+  "urlKind": "mapsApi",
+  "route": "第1段(verify-gbp.mjs)で確認済み",
+  "verdict": "一致",
+  "verdictReason": "手がかり: 店名＋電話＋住所(番地まで)。電話が一致／店名: contains(シート「護国之寺」/ マップ「雄総山 護国之寺」)／住所(シート): exact・町名・番地とも一致",
+  "place": {
+    "name": "雄総山 護国之寺",
+    "address": "岐阜県岐阜市長良雄総１９４−１ 長良雄総",
+    "category": "仏教寺院",
+    "lat": 35.4463536,
+    "lng": 136.7955789,
+    "gbpUrl": "https://maps.google.com/?cid=5914769246708630640",
+    "phone": "058-231-3539",
+    "website": "https://www.ne.jp/asahi/gifu/gokokushiji/gokokushijiHP-TOP.index.html",
+    "hours": null,
+    "reserveLinks": [],
+    "statusSignals": [],
+    "closedSignal": false
+  },
+  "fetchedAt": "2026-11-01T23:06:23.387Z"
+}

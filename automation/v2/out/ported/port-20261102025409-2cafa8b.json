@@ -1,0 +1,85 @@
+{
+  "commit": "2cafa8b0fa85f129670c78fac718e2174849af22",
+  "source": "/Users/shunta/claude/gp-k-auto2",
+  "count": 7,
+  "added": [
+    {
+      "row": 276,
+      "name": "Shisha and Bar Epi",
+      "key": "tri-gourmet-276",
+      "vertical": "グルメ",
+      "id": "r827",
+      "articleId": "ShishaandBarEpi",
+      "shopUrl": "https://machinowa.tokyo/restaurant/r827",
+      "articleUrl": "https://machinowa.tokyo/feature/ShishaandBarEpi",
+      "sheetUrl": "https://machinowa.tokyo/feature/ShishaandBarEpi"
+    },
+    {
+      "row": 294,
+      "name": "金剛寺（釜滝薬師",
+      "key": "tri-life-294",
+      "vertical": "くらし",
+      "id": "li0107",
+      "articleId": "li0107",
+      "shopUrl": "https://machinowa.tokyo/life/shop/li0107",
+      "articleUrl": "https://machinowa.tokyo/life/article/li0107",
+      "sheetUrl": "https://machinowa.tokyo/life/article/li0107"
+    },
+    {
+      "row": 297,
+      "name": "THE WINE BASE 銀座",
+      "key": "tri-gourmet-297",
+      "vertical": "グルメ",
+      "id": "r828",
+      "articleId": "THEWINEBASE銀座～世界を旅するワインバー～",
+      "shopUrl": "https://machinowa.tokyo/restaurant/r828",
+      "articleUrl": "https://machinowa.tokyo/feature/THEWINEBASE銀座～世界を旅するワインバー～",
+      "sheetUrl": "https://machinowa.tokyo/feature/THEWINEBASE銀座～世界を旅するワインバー～"
+    },
+    {
+      "row": 298,
+      "name": "すし処 大敷",
+      "key": "tri-gourmet-298",
+      "vertical": "グルメ",
+      "id": "r829",
+      "articleId": "すし処大敷",
+      "shopUrl": "https://machinowa.tokyo/restaurant/r829",
+      "articleUrl": "https://machinowa.tokyo/feature/すし処大敷",
+      "sheetUrl": "https://machinowa.tokyo/feature/すし処大敷"
+    },
+    {
+      "row": 301,
+      "name": "護国之寺",
+      "key": "tri-life-301",
+      "vertical": "くらし",
+      "id": "li0108",
+      "articleId": "li0108",
+      "shopUrl": "https://machinowa.tokyo/life/shop/li0108",
+      "articleUrl": "https://machinowa.tokyo/life/article/li0108",
+      "sheetUrl": "https://machinowa.tokyo/life/article/li0108"
+    },
+    {
+      "row": 307,
+      "name": "くすの温泉お宿 豊後乃里",
+      "key": "tri-stay-307",
+      "vertical": "ステイ",
+      "id": "st0024",
+      "articleId": "st0024",
+      "shopUrl": "https://machinowa.tokyo/stay/shop/st0024",
+      "articleUrl": "https://machinowa.tokyo/stay/article/st0024",
+      "sheetUrl": "https://machinowa.tokyo/stay/article/st0024"
+    },
+    {
+      "row": 316,
+      "name": "玉野御嶽神社",
+      "key": "tri-life-316",
+      "vertical": "くらし",
+      "id": "li0109",
+      "articleId": "li0109",
+      "shopUrl": "https://machinowa.tokyo/life/shop/li0109",
+      "articleUrl": "https://machinowa.tokyo/life/article/li0109",
+      "sheetUrl": "https://machinowa.tokyo/life/article/li0109"
+    }
+  ],
+  "skipped": []
+}

@@ -3003,5 +3003,29 @@
       "営業時間が取れていない（noindex）",
       "cuisine は GBPカテゴリ"
     ]
+  },
+  "r827": {
+    "articleId": "ShishaandBarEpi",
+    "name": "Shisha and Bar Epi",
+    "warnings": [
+      "営業時間が取れていない（noindex）",
+      "cuisine は GBPカテゴリ"
+    ]
+  },
+  "r828": {
+    "articleId": "THEWINEBASE銀座～世界を旅するワインバー～",
+    "name": "THE WINE BASE 銀座 ～世界を旅するワインバー～",
+    "warnings": [
+      "営業時間が取れていない（noindex）",
+      "cuisine は GBPカテゴリ"
+    ]
+  },
+  "r829": {
+    "articleId": "すし処大敷",
+    "name": "すし処 大敷",
+    "warnings": [
+      "営業時間が取れていない（noindex）",
+      "cuisine は GBPカテゴリ"
+    ]
   }
 }

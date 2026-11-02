@@ -4395,6 +4395,170 @@
         ],
         "checkedAt": "2026-10-29"
       }
+    },
+    {
+      "id": "st0024",
+      "vertical": "stay",
+      "category": "ryokan",
+      "name": "くすの温泉お宿 豊後乃里",
+      "pref": "oita",
+      "cityName": "玖珠町",
+      "address": "大分県玖珠郡玖珠町山田2586",
+      "lat": 33.2809721,
+      "lng": 131.134504,
+      "phone": "0973-72-6258",
+      "url": "https://www.bungonosato.net/",
+      "website": "https://www.bungonosato.net/",
+      "mapUrl": "https://maps.google.com/?cid=6279665697612609061",
+      "image": "/_portal/vshops/tri-stay-307/g01.jpg",
+      "images": [
+        "/_portal/vshops/tri-stay-307/g01.jpg",
+        "/_portal/vshops/tri-stay-307/g02.jpg",
+        "/_portal/vshops/tri-stay-307/g03.jpg",
+        "/_portal/vshops/tri-stay-307/g04.jpg",
+        "/_portal/vshops/tri-stay-307/g05.jpg",
+        "/_portal/vshops/tri-stay-307/g06.jpg",
+        "/_portal/vshops/tri-stay-307/g07.jpg",
+        "/_portal/vshops/tri-stay-307/g08.jpg",
+        "/_portal/vshops/tri-stay-307/g09.jpg",
+        "/_portal/vshops/tri-stay-307/g10.jpg"
+      ],
+      "photos": [
+        {
+          "path": "/_portal/vshops/tri-stay-307/g01.jpg",
+          "what": "庭木と石が配された旅館の外観",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-stay-307/g02.jpg",
+          "what": "壁に絵が飾られた館内の一角",
+          "kind": "common",
+          "width": 675,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-stay-307/g03.jpg",
+          "what": "ベッドが2台並ぶ洋室",
+          "kind": "room",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-stay-307/g04.jpg",
+          "what": "石に囲まれた湯船と田畑の景色が見える屋外の浴場",
+          "kind": "bath",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-stay-307/g05.jpg",
+          "what": "大きな窓から外の景色が見える館内",
+          "kind": "common",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-stay-307/g06.jpg",
+          "what": "畳と障子のある和室",
+          "kind": "room",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-stay-307/g07.jpg",
+          "what": "焼肉と白ご飯などが並ぶ食事",
+          "kind": "meal",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-stay-307/g08.jpg",
+          "what": "窓から田園と青空が見える館内の席",
+          "kind": "common",
+          "width": 675,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-stay-307/g09.jpg",
+          "what": "竹すだれの屋根がある屋外の湯船",
+          "kind": "bath",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-stay-307/g10.jpg",
+          "what": "屋根付き玄関前の庭とエントランス",
+          "kind": "exterior",
+          "width": 679,
+          "height": 452
+        }
+      ],
+      "tags": [
+        "温泉",
+        "素泊まり"
+      ],
+      "article": {
+        "headline": "大分県玖珠郡玖珠町にある温泉旅館。和室・洋室・大部屋など複数タイプの客室があり、露天風呂（貸切）と岩風呂（大浴場）を備える。",
+        "lede": "玖珠郡玖珠町にある「くすの温泉お宿 豊後乃里」です。川を眺められる温泉旅館で、露天風呂（貸切家族風呂）1つと岩風呂（大浴場）男女各1つがあります。収容人員は最大120名で、合宿や仕事での利用も受け付けています。",
+        "sections": [
+          {
+            "heading": "客室",
+            "body": "客室は、内湯付きの10畳和室、内湯付きの洋室、8畳の和室、和室の大部屋など複数のタイプがあります。内湯付き和室（212室）の内湯は24時間使えます。和室の大部屋は内湯がなく、3名以上の利用向けのプランがあります。"
+          },
+          {
+            "heading": "お風呂",
+            "body": "露天風呂（貸切家族風呂）が1つと、岩風呂（大浴場）が男女各1つあります。日帰り温泉は24時間利用でき、宿泊しない場合も入浴できます。タオルの貸し出しがあります。"
+          },
+          {
+            "heading": "お食事",
+            "body": "大分の和牛ブランド「おおいた和牛」を提供する提携店への送迎があります。焼肉セットプランとお子様セットプランがあります。平日は素泊まりプランが基本です。"
+          },
+          {
+            "heading": "合宿・団体利用",
+            "body": "収容人員は最大120名で、合宿プランがあり、仕事での利用も受け付けています。マイクロバスでそのまま入れる駐車場があり、大型バイクも駐車できます。相談は、電話（0973-72-6258）または問い合わせフォームから受け付けています。"
+          }
+        ],
+        "menus": [
+          {
+            "name": "焼肉セットプラン"
+          },
+          {
+            "name": "お子様セットプラン"
+          },
+          {
+            "name": "合宿プラン"
+          }
+        ],
+        "sources": [
+          {
+            "label": "公式サイト",
+            "url": "https://www.bungonosato.net/"
+          },
+          {
+            "label": "公式サイト(お部屋)",
+            "url": "https://www.bungonosato.net/services-9"
+          },
+          {
+            "label": "公式サイト(施設概要)",
+            "url": "https://www.bungonosato.net/%E6%96%BD%E8%A8%AD%E6%A6%82%E8%A6%81"
+          },
+          {
+            "label": "Google マップ",
+            "url": "https://maps.google.com/?cid=6279665697612609061"
+          }
+        ],
+        "checkedAt": "2026-11-02"
+      },
+      "attributes": {
+        "roomTypes": [
+          "内湯付き和室（10畳）",
+          "内湯付き洋室",
+          "和室（8畳）",
+          "和室大部屋"
+        ]
+      }
     }
   ]
 }
