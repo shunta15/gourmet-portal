@@ -3042,5 +3042,21 @@
       "営業時間が取れていない（noindex）",
       "cuisine は GBPカテゴリ"
     ]
+  },
+  "r832": {
+    "articleId": "Alpin",
+    "name": "Alpin",
+    "warnings": [
+      "desc は lede から事実の文を選べず、事実から作った定型文",
+      "営業時間が取れていない（noindex）",
+      "cuisine は GBPカテゴリ"
+    ]
+  },
+  "r833": {
+    "articleId": "conceptcafeBLOSSOM",
+    "name": "concept cafe BLOSSOM",
+    "warnings": [
+      "営業時間が取れていない（noindex）"
+    ]
   }
 }

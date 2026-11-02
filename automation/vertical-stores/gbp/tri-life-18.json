@@ -1,0 +1,32 @@
+{
+  "tab": "トリニティアポ",
+  "tabEn": "tri-life",
+  "row": 18,
+  "sheet": {
+    "name": "焼火神社",
+    "address": "",
+    "url": "https://www.google.com/maps/search/?api=1&query=%E7%84%BC%E7%81%AB%E7%A5%9E%E7%A4%BE%20090-9061-4055%20",
+    "type": "神社",
+    "d1": "",
+    "d2": ""
+  },
+  "urlKind": "mapsApi",
+  "route": "第1段(verify-gbp.mjs)で確認済み",
+  "verdict": "一致",
+  "verdictReason": "オーナー承認(2026-11-02): 店名は似ているが電話・住所で裏が取れない。電話がちがう(シート 090-9061-4055 / マップ 08514-7-8888)／店名: exact(シート「焼火神社」/ マップ「焼火神社」)",
+  "place": {
+    "name": "焼火神社",
+    "address": "島根県隠岐郡西ノ島町美田１２９４ 焼火山",
+    "category": "神社",
+    "lat": 36.0731651,
+    "lng": 133.0288477,
+    "gbpUrl": "https://maps.google.com/?cid=12446536415968502071",
+    "phone": "08514-7-8888",
+    "website": "http://www.lares.dti.ne.jp/takuhi/",
+    "hours": null,
+    "reserveLinks": [],
+    "statusSignals": [],
+    "closedSignal": false
+  },
+  "fetchedAt": "2026-11-02T02:51:43.512Z"
+}

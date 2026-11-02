@@ -1,0 +1,46 @@
+{
+  "key": "tri-life-318",
+  "images": [
+    {
+      "path": "/_portal/vshops/tri-life-318/g01.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9RI674xaeUtvE_iUxLGkk1X9g3hUNmV0eQkqNaBd-NN8ltJS4nv-OB9nL3il7tjTlzDl_qziJqJBJoq01x_3QcDlieecdrPdTFUex3kcEBCRHQPaQc_Fv3Vbk0sQhP9ClrXiSjMww=s1200",
+      "pageUrl": "https://maps.google.com/?cid=8928837326582520260",
+      "what": "スタッシュの写真",
+      "kind": "common",
+      "width": 900,
+      "height": 1200,
+      "source": "Google マップ"
+    },
+    {
+      "path": "/_portal/vshops/tri-life-318/g02.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9T2ht5qlevLGSbRo6p53XyA8csRqfB6TCDe73kGCl7dP-skmjz9qccujOVfSBMBC7A-Jdo1WaTbiqEjGaR8s2l1Of_FCGziP994vgVziT3BUCRRawhCy646R7WPryF_aGFdPmH3rg=s1200",
+      "pageUrl": "https://maps.google.com/?cid=8928837326582520260",
+      "what": "スタッシュの写真",
+      "kind": "common",
+      "width": 900,
+      "height": 1200,
+      "source": "Google マップ"
+    },
+    {
+      "path": "/_portal/vshops/tri-life-318/g03.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9S_xd8hepBX301UhuPeUyjy5E2AyTO-_OWS_GjiQ_jtS0v1nx0O6V67qeHoO98WGgh5Ol7BiX1gLqSMLu-H9w2OaEof9yFCPvO4iYcWq2GvOPQ3UpsEMwXz4iiVh8HrlVO9HJmtxw=s1200",
+      "pageUrl": "https://maps.google.com/?cid=8928837326582520260",
+      "what": "スタッシュの写真",
+      "kind": "common",
+      "width": 900,
+      "height": 1200,
+      "source": "Google マップ"
+    },
+    {
+      "path": "/_portal/vshops/tri-life-318/g04.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9RQm7HLdgpqJCsrP8t7Uc4nfffOYd8HKu23ZrNxTYSWSGunWFJrZkB-ckhY6hdqH7Rwa_-SSjpMaI9fCJ5i1UIvzzOI7-QUMG1SVy8bjFo9f7aP1dcuqjYQY_gtlfBhS8JZGhjq=s1200",
+      "pageUrl": "https://maps.google.com/?cid=8928837326582520260",
+      "what": "「STUSH」の看板が写る外観",
+      "kind": "exterior",
+      "width": 900,
+      "height": 1200,
+      "source": "Google マップ"
+    }
+  ],
+  "note": "automation/v2/write.mjs が 2026-11-02T04:12:21.515Z に取得。店の実写だけ(AI 画像・汎用画像・地図・ロゴ・顔が大きい画像は除外)。"
+}

@@ -1,0 +1,74 @@
+{
+  "commit": "45930121e0bd4e6b9e0c3b3a19cdbb3c984ade0c",
+  "source": "/Users/shunta/claude/gp-k-auto2",
+  "count": 6,
+  "added": [
+    {
+      "row": 305,
+      "name": "常照寺",
+      "key": "tri-life-305",
+      "vertical": "くらし",
+      "id": "li0114",
+      "articleId": "li0114",
+      "shopUrl": "https://machinowa.tokyo/life/shop/li0114",
+      "articleUrl": "https://machinowa.tokyo/life/article/li0114",
+      "sheetUrl": "https://machinowa.tokyo/life/article/li0114"
+    },
+    {
+      "row": 311,
+      "name": "城山八幡宮",
+      "key": "tri-life-311",
+      "vertical": "くらし",
+      "id": "li0115",
+      "articleId": "li0115",
+      "shopUrl": "https://machinowa.tokyo/life/shop/li0115",
+      "articleUrl": "https://machinowa.tokyo/life/article/li0115",
+      "sheetUrl": "https://machinowa.tokyo/life/article/li0115"
+    },
+    {
+      "row": 318,
+      "name": "STUSH（スタッシュ）",
+      "key": "tri-life-318",
+      "vertical": "くらし",
+      "id": "li0116",
+      "articleId": "li0116",
+      "shopUrl": "https://machinowa.tokyo/life/shop/li0116",
+      "articleUrl": "https://machinowa.tokyo/life/article/li0116",
+      "sheetUrl": "https://machinowa.tokyo/life/article/li0116"
+    },
+    {
+      "row": 18,
+      "name": "焼火神社",
+      "key": "tri-life-18",
+      "vertical": "くらし",
+      "id": "li0113",
+      "articleId": "li0113",
+      "shopUrl": "https://machinowa.tokyo/life/shop/li0113",
+      "articleUrl": "https://machinowa.tokyo/life/article/li0113",
+      "sheetUrl": "https://machinowa.tokyo/life/article/li0113"
+    },
+    {
+      "row": 302,
+      "name": "バー アルパン",
+      "key": "tri-gourmet-302",
+      "vertical": "グルメ",
+      "id": "r832",
+      "articleId": "Alpin",
+      "shopUrl": "https://machinowa.tokyo/restaurant/r832",
+      "articleUrl": "https://machinowa.tokyo/feature/Alpin",
+      "sheetUrl": "https://machinowa.tokyo/feature/Alpin"
+    },
+    {
+      "row": 308,
+      "name": "ブロッサム",
+      "key": "tri-gourmet-308",
+      "vertical": "グルメ",
+      "id": "r833",
+      "articleId": "conceptcafeBLOSSOM",
+      "shopUrl": "https://machinowa.tokyo/restaurant/r833",
+      "articleUrl": "https://machinowa.tokyo/feature/conceptcafeBLOSSOM",
+      "sheetUrl": "https://machinowa.tokyo/feature/conceptcafeBLOSSOM"
+    }
+  ],
+  "skipped": []
+}

@@ -18438,6 +18438,89 @@ export const ARTICLE_STORES: Restaurant[] = [
       "鳴門市"
     ],
     "featureId": "Caputto"
+  },
+  {
+    "id": "r832",
+    "name": "Alpin",
+    "cuisine": "バー",
+    "area": "千葉県・柏市",
+    "region": "chiba",
+    "shape": "square",
+    "image": "/restaurants/teleapo-Alpin/hero.jpg",
+    "heroImages": [
+      "/restaurants/teleapo-Alpin/hero.jpg",
+      "/restaurants/teleapo-Alpin/point1.jpg"
+    ],
+    "gallery": [
+      "/restaurants/teleapo-Alpin/hero.jpg",
+      "/restaurants/teleapo-Alpin/point1.jpg"
+    ],
+    "desc": "千葉県柏市のバー。",
+    "address": "千葉県柏市柏4丁目4",
+    "hours": "—（訪問前に公式確認）",
+    "closed": "—（訪問前に公式確認）",
+    "seats": "—（訪問前に公式確認）",
+    "nearest": "—",
+    "instagram": "https://www.instagram.com/baralpin0707",
+    "source": {
+      "label": "Google ビジネスプロフィール",
+      "url": "https://maps.google.com/?cid=14377872327156278329"
+    },
+    "body": [
+      "Alpinは、千葉県柏市にあるお店です。業態は「バー」、所在地は千葉県柏市柏4丁目4です。マチノワ編集部の特集記事では、「柏市柏のバー Alpin」・「柏4丁目4の所在地」などを取り上げています。",
+      "営業時間と定休日は取得できていないため、訪問前に公式の情報でご確認ください。営業時間や価格は変わることがあるため、訪問前に公式サイトやSNS、お電話でご確認ください。"
+    ],
+    "highlights": [
+      "柏市柏のバー Alpin",
+      "柏4丁目4の所在地",
+      "Instagramのアカウント baralpin0707"
+    ],
+    "tags": [
+      "バー",
+      "柏市"
+    ],
+    "featureId": "Alpin"
+  },
+  {
+    "id": "r833",
+    "name": "concept cafe BLOSSOM",
+    "cuisine": "コンセプトカフェ",
+    "area": "愛媛県・松山市",
+    "region": "ehime",
+    "shape": "square",
+    "image": "/restaurants/teleapo-conceptcafeBLOSSOM/hero.jpg",
+    "heroImages": [
+      "/restaurants/teleapo-conceptcafeBLOSSOM/hero.jpg"
+    ],
+    "gallery": [
+      "/restaurants/teleapo-conceptcafeBLOSSOM/hero.jpg"
+    ],
+    "desc": "concept cafe BLOSSOM(ブロッサム)は、愛媛県松山市二番町2-6-13の104Doビル2Fにあるコンセプトカフェである。",
+    "address": "愛媛県松山市二番町2丁目6-13 104Doビル 2F",
+    "hours": "—（訪問前に公式確認）",
+    "closed": "—（訪問前に公式確認）",
+    "seats": "カウンター6席",
+    "nearest": "—",
+    "source": {
+      "label": "Google ビジネスプロフィール",
+      "url": "https://maps.google.com/?cid=14389258596218394339"
+    },
+    "body": [
+      "concept cafe BLOSSOMは、愛媛県松山市にあるお店です。業態は「コンセプトカフェ」、所在地は愛媛県松山市二番町2丁目6-13 104Doビル 2Fです。マチノワ編集部の特集記事では、「軍服×ロリータのコンセプト」・「カウンター6席・全席禁煙の店内」などを取り上げています。",
+      "営業時間と定休日は取得できていないため、訪問前に公式の情報でご確認ください。席はカウンター6席。営業時間や価格は変わることがあるため、訪問前に公式サイトやSNS、お電話でご確認ください。"
+    ],
+    "highlights": [
+      "軍服×ロリータのコンセプト",
+      "カウンター6席・全席禁煙の店内",
+      "月〜金17時から、土日祝15時からの営業",
+      "104Doビル2Fへの行き方"
+    ],
+    "tags": [
+      "コンセプトカフェ",
+      "カフェ・喫茶",
+      "松山市"
+    ],
+    "featureId": "conceptcafeBLOSSOM"
   }
 ];
 
@@ -18830,7 +18913,9 @@ export const ARTICLE_STORE_FEATURE_IDS: Record<string, string> = {
   "r828": "THEWINEBASE銀座～世界を旅するワインバー～",
   "r829": "すし処大敷",
   "r830": "オー・ミリュー・ドゥ・ラヴィ",
-  "r831": "Caputto"
+  "r831": "Caputto",
+  "r832": "Alpin",
+  "r833": "conceptcafeBLOSSOM"
 };
 
 /** 特集記事ID → 店舗ID */
@@ -19222,5 +19307,7 @@ export const ARTICLE_STORE_ID_BY_FEATURE: Record<string, string> = {
   "THEWINEBASE銀座～世界を旅するワインバー～": "r828",
   "すし処大敷": "r829",
   "オー・ミリュー・ドゥ・ラヴィ": "r830",
-  "Caputto": "r831"
+  "Caputto": "r831",
+  "Alpin": "r832",
+  "conceptcafeBLOSSOM": "r833"
 };

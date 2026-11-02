@@ -1958,5 +1958,15 @@
     "articleId": "Caputto",
     "sheetName": "Caputto",
     "mapsUrl": "https://maps.google.com/?cid=6239020971435852402"
+  },
+  {
+    "articleId": "Alpin",
+    "sheetName": "バー アルパン",
+    "mapsUrl": "https://maps.google.com/?cid=14377872327156278329"
+  },
+  {
+    "articleId": "conceptcafeBLOSSOM",
+    "sheetName": "ブロッサム",
+    "mapsUrl": "https://maps.google.com/?cid=14389258596218394339"
   }
 ]

@@ -1,0 +1,62 @@
+{
+  "key": "tri-life-318",
+  "headline": "広島県福山市引野町5丁目にある衣料品店",
+  "lede": "福山市にある「スタッシュ」です。業種は衣料品店で、所在地は広島県福山市引野町5丁目19-5です。",
+  "sections": [
+    {
+      "heading": "場所",
+      "body": "住所は広島県福山市引野町5丁目19-5です。業種は衣料品店です。"
+    },
+    {
+      "heading": "連絡先",
+      "body": "電話は084-999-7701です。公式サイトは https://www.stush.jp/ です。"
+    }
+  ],
+  "menus": [],
+  "tags": [],
+  "facts": [
+    {
+      "claim": "店名はスタッシュ",
+      "source": "https://maps.google.com/?cid=8928837326582520260",
+      "quote": "スタッシュ",
+      "checkedAt": "2026-11-02"
+    },
+    {
+      "claim": "住所は広島県福山市引野町5丁目19-5",
+      "source": "https://maps.google.com/?cid=8928837326582520260",
+      "quote": "広島県福山市引野町５丁目１９−５",
+      "checkedAt": "2026-11-02"
+    },
+    {
+      "claim": "電話は084-999-7701",
+      "source": "https://maps.google.com/?cid=8928837326582520260",
+      "quote": "084-999-7701",
+      "checkedAt": "2026-11-02"
+    },
+    {
+      "claim": "業種は衣料品店",
+      "source": "https://maps.google.com/?cid=8928837326582520260",
+      "quote": "衣料品店",
+      "checkedAt": "2026-11-02"
+    },
+    {
+      "claim": "所在地は広島県福山市",
+      "source": "https://maps.google.com/?cid=8928837326582520260",
+      "quote": "広島県福山市",
+      "checkedAt": "2026-11-02"
+    },
+    {
+      "claim": "公式サイトは https://www.stush.jp/",
+      "source": "https://maps.google.com/?cid=8928837326582520260",
+      "quote": "https://www.stush.jp/?mode=pc",
+      "checkedAt": "2026-11-02"
+    }
+  ],
+  "sources": [
+    {
+      "label": "Google マップ",
+      "url": "https://maps.google.com/?cid=8928837326582520260"
+    }
+  ],
+  "notes": "automation/v2/write.mjs が 2026-11-02 に claude -p --model sonnet で作成。事実の裏取り: 6/6 件(quote が出どころにあるもの)。裏取りに通らなかった facts は載せていない。"
+}

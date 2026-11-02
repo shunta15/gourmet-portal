@@ -1,0 +1,32 @@
+{
+  "tab": "トリニティアポ",
+  "tabEn": "tri-life",
+  "row": 311,
+  "sheet": {
+    "name": "城山八幡宮",
+    "address": "",
+    "url": "https://www.google.com/maps/search/?api=1&query=%E5%9F%8E%E5%B1%B1%E5%85%AB%E5%B9%A1%E5%AE%AE%20052-751-0788%20",
+    "type": "神社",
+    "d1": "",
+    "d2": ""
+  },
+  "urlKind": "mapsApi",
+  "route": "第1段(verify-gbp.mjs)で確認済み",
+  "verdict": "一致",
+  "verdictReason": "手がかり: 店名＋電話。電話が一致／店名: exact(シート「城山八幡宮」/ マップ「城山八幡宮」)",
+  "place": {
+    "name": "城山八幡宮",
+    "address": "愛知県名古屋市千種区城山町２丁目８８",
+    "category": "神社",
+    "lat": 35.1675871,
+    "lng": 136.9596299,
+    "gbpUrl": "https://maps.google.com/?cid=17373707365299292440",
+    "phone": "052-751-0788",
+    "website": "http://www.shiroyama.or.jp/",
+    "hours": null,
+    "reserveLinks": [],
+    "statusSignals": [],
+    "closedSignal": false
+  },
+  "fetchedAt": "2026-11-01T23:13:01.593Z"
+}

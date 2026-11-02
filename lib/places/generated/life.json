@@ -17036,6 +17036,541 @@
         ],
         "checkedAt": "2026-11-02"
       }
+    },
+    {
+      "id": "li0113",
+      "vertical": "life",
+      "category": "shrine-temple",
+      "name": "焼火神社",
+      "pref": "shimane",
+      "cityName": "西ノ島町",
+      "address": "島根県隠岐郡西ノ島町美田1294 焼火山",
+      "lat": 36.0731651,
+      "lng": 133.0288477,
+      "phone": "08514-7-8888",
+      "url": "http://www.lares.dti.ne.jp/takuhi/",
+      "website": "http://www.lares.dti.ne.jp/takuhi/",
+      "mapUrl": "https://maps.google.com/?cid=12446536415968502071",
+      "image": "/_portal/vshops/tri-life-18/g01.jpg",
+      "images": [
+        "/_portal/vshops/tri-life-18/g01.jpg",
+        "/_portal/vshops/tri-life-18/g02.jpg",
+        "/_portal/vshops/tri-life-18/g03.jpg",
+        "/_portal/vshops/tri-life-18/g04.jpg",
+        "/_portal/vshops/tri-life-18/g05.jpg",
+        "/_portal/vshops/tri-life-18/g06.jpg",
+        "/_portal/vshops/tri-life-18/g07.jpg",
+        "/_portal/vshops/tri-life-18/g08.jpg",
+        "/_portal/vshops/tri-life-18/g09.jpg",
+        "/_portal/vshops/tri-life-18/g10.jpg"
+      ],
+      "photos": [
+        {
+          "path": "/_portal/vshops/tri-life-18/g01.jpg",
+          "what": "岩壁の下に屋根が重なって建つ社殿",
+          "kind": "exterior",
+          "width": 960,
+          "height": 720
+        },
+        {
+          "path": "/_portal/vshops/tri-life-18/g02.jpg",
+          "what": "大きな木の幹の向こうに見える社殿",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 675
+        },
+        {
+          "path": "/_portal/vshops/tri-life-18/g03.jpg",
+          "what": "青い海と島影を見渡す景色",
+          "kind": "view",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-life-18/g04.jpg",
+          "what": "木立の中に立つ鳥居と山道",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-life-18/g05.jpg",
+          "what": "「焼火神社」の文字がある木の標柱と石段",
+          "kind": "exterior",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-life-18/g06.jpg",
+          "what": "石灯籠が並ぶ木立の中の小さな社",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-life-18/g07.jpg",
+          "what": "山道の鳥居と木の説明板",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-life-18/g08.jpg",
+          "what": "しめ縄が巻かれた大木の根元",
+          "width": 1200,
+          "height": 675
+        },
+        {
+          "path": "/_portal/vshops/tri-life-18/g09.jpg",
+          "what": "しめ縄が巻かれた高い木",
+          "width": 675,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-life-18/g10.jpg",
+          "what": "木立の中の石段とその先の小さな社",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 900
+        }
+      ],
+      "tags": [],
+      "article": {
+        "headline": "島根県隠岐郡西ノ島町、焼火山の中腹にある神社。社殿は享保17(1732)年の改築で、国指定の重要文化財",
+        "lede": "隠岐郡西ノ島町にある「焼火神社」です。焼火山(海抜452m)の中腹にあり、御祭神は大日霊貴尊(おおひるめむちのみこと)です。日本海の船人に海上安全の神として崇められています。",
+        "sections": [
+          {
+            "heading": "場所と参道",
+            "body": "住所は西ノ島町美田1294の焼火山、電話は08514-7-8888です。焼火山の中腹にあり、波止からは車で5分、そこから徒歩15分で神社に着きます。山頂付近は焼火山神域植物群として保存され、平成5年には神社から頂上までの遊歩道も整備されました。"
+          },
+          {
+            "heading": "縁起と社殿",
+            "body": "旧暦12月30日の夜(大晦日)、海上から火が三つ浮かび上がり、その火が現在社殿のある巌に入ったことが焼火権現の縁起です。今もその日には龍灯祭という神事が行われています。社殿は享保17(1732)年に改築されたもので、現在、隠岐島の社殿では最も古い建築です。大阪で作られ、地元で組み立てられました。平成4年には国指定の重要文化財に指定されました。"
+          },
+          {
+            "heading": "例大祭とはつまいり",
+            "body": "例大祭は7月23日・24日の2日間です。昔は島前中から人が集まって神輿をかつぎましたが、昭和30年の遷宮を最後に廃止されました。旧正月の5日からは、島前(どうぜん)の各集落がそれぞれ日を選んでお参りする「はつまいり」が伝わっています。江戸時代には北前船の入港によって海上安全の神と崇められ、日本各地に焼火権現の末社が点在しています。"
+          },
+          {
+            "heading": "神社に伝わるもの",
+            "body": "神社には、京都東寺観智院僧正賢賀の筆による扁額が保管されています。この扁額は、松平定信(楽翁)が編んだ「集古十種」の扁額の部に掲載されています。御守には「銭守(ぜにまもり)」があります。江戸時代に隠岐へ渡った幕府の巡見使は、例外なく焼火神社に参拝しました。"
+          }
+        ],
+        "sources": [
+          {
+            "label": "公式サイト",
+            "url": "http://www.lares.dti.ne.jp/takuhi/"
+          },
+          {
+            "label": "公式サイト(扁額)",
+            "url": "http://www.lares.dti.ne.jp/takuhi/folder/GAKU.HTML"
+          },
+          {
+            "label": "公式サイト(伝承)",
+            "url": "http://www.lares.dti.ne.jp/takuhi/folder/densho.html"
+          },
+          {
+            "label": "公式サイト(はつまいり)",
+            "url": "http://www.lares.dti.ne.jp/takuhi/folder/HATUMAI.HTML"
+          },
+          {
+            "label": "Google マップ",
+            "url": "https://maps.google.com/?cid=12446536415968502071"
+          }
+        ],
+        "checkedAt": "2026-11-02"
+      }
+    },
+    {
+      "id": "li0114",
+      "vertical": "life",
+      "category": "shrine-temple",
+      "name": "西中山 常照寺",
+      "pref": "kanagawa",
+      "cityName": "横浜市南区",
+      "address": "神奈川県横浜市南区南太田1丁目24-41",
+      "lat": 35.4373214,
+      "lng": 139.6129325,
+      "phone": "045-731-4366",
+      "url": "https://www.jyoshoji.or.jp/",
+      "website": "https://www.jyoshoji.or.jp/",
+      "mapUrl": "https://maps.google.com/?cid=1585315179117824038",
+      "image": "/_portal/vshops/tri-life-305/g01.jpg",
+      "images": [
+        "/_portal/vshops/tri-life-305/g01.jpg",
+        "/_portal/vshops/tri-life-305/g02.jpg",
+        "/_portal/vshops/tri-life-305/g03.jpg",
+        "/_portal/vshops/tri-life-305/g04.jpg",
+        "/_portal/vshops/tri-life-305/g05.jpg",
+        "/_portal/vshops/tri-life-305/g06.jpg",
+        "/_portal/vshops/tri-life-305/g07.jpg",
+        "/_portal/vshops/tri-life-305/g09.jpg",
+        "/_portal/vshops/tri-life-305/g10.jpg",
+        "/_portal/vshops/tri-life-305/s17.jpg",
+        "/_portal/vshops/tri-life-305/s18.jpg"
+      ],
+      "photos": [
+        {
+          "path": "/_portal/vshops/tri-life-305/g01.jpg",
+          "what": "石灯籠が並ぶ石段の先にある山門",
+          "kind": "exterior",
+          "width": 895,
+          "height": 594
+        },
+        {
+          "path": "/_portal/vshops/tri-life-305/g02.jpg",
+          "what": "木々に囲まれた広い石段の参道",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 675
+        },
+        {
+          "path": "/_portal/vshops/tri-life-305/g03.jpg",
+          "what": "緑の瓦屋根と彫刻のある木造の堂宇",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 801
+        },
+        {
+          "path": "/_portal/vshops/tri-life-305/g04.jpg",
+          "what": "二階建ての山門を正面から見た景色",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-life-305/g05.jpg",
+          "what": "道路に面した瓦屋根の門",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-life-305/g06.jpg",
+          "what": "二基の石灯籠に挟まれた僧侶の像",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-life-305/g07.jpg",
+          "what": "窓の光を受ける金色の冠の木彫像",
+          "kind": "common",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-life-305/g09.jpg",
+          "what": "大木と庭木が並ぶ境内の庭",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-life-305/g10.jpg",
+          "what": "石灯籠のある高台から見る街並み",
+          "kind": "view",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-life-305/s17.jpg",
+          "what": "石段の先に山門が見える参道",
+          "kind": "exterior",
+          "width": 1100,
+          "height": 495
+        },
+        {
+          "path": "/_portal/vshops/tri-life-305/s18.jpg",
+          "what": "金色の飾りが並ぶ本堂内の内陣",
+          "kind": "common",
+          "width": 1100,
+          "height": 495
+        }
+      ],
+      "tags": [
+        "駅近"
+      ],
+      "article": {
+        "headline": "神奈川県横浜市南区南太田にある日蓮宗の寺院。京浜急行「南太田駅」から徒歩1分で、横浜開港以来、商売繁盛に貢献してきた",
+        "lede": "横浜市にある「西中山 常照寺」です。日蓮宗の寺院で、横浜開港以来、横浜の商売繁盛に貢献してきました。140年を超える歴史があり、京浜急行「南太田駅」から徒歩1分の場所にあります。",
+        "sections": [
+          {
+            "heading": "場所とアクセス",
+            "body": "住所は神奈川県横浜市南区南太田1-24-41、電話は045-731-4366です。電車では京浜急行「南太田駅」から徒歩1分、お車では首都高速「花之木出口」から2分です。墓所は「駅前墓苑」で、境内からはランドマークタワーや横浜の中心街が望めます。"
+          },
+          {
+            "heading": "年間の主な行事",
+            "body": "元旦は、除夜の鐘に引き続き午前零時から新春祝祷会（水行会）を行い、一般参加を受け付けています。春彼岸と秋彼岸には先祖供養法要を行います。4月8日は花まつり、7月18日は盂蘭盆施餓鬼大法要、土用丑の日はほうろく灸加持、10月18日は日蓮大聖人の報恩法要である御会式（おえしき）、12月31日は除夜の鐘です。"
+          },
+          {
+            "heading": "毎月の行事",
+            "body": "毎月第一土曜日は月例の土曜講和で、主会場は当山です（月によって他会場の場合もあります）。毎月8日は講中による修業会の題目会です。毎月八の日（8日・18日・28日）は鬼子母神御縁日で、終日、子供虫封じ・発育成満・智恵明瞭などの諸祈祷を行います。水子供養法要は毎月第一・第三日曜日に行います。毎週日曜日の夕刻には八光流合気柔術の指導があります。"
+          }
+        ],
+        "sources": [
+          {
+            "label": "公式サイト",
+            "url": "https://www.jyoshoji.or.jp/"
+          },
+          {
+            "label": "公式サイト(アクセス)",
+            "url": "https://www.jyoshoji.or.jp/access"
+          },
+          {
+            "label": "公式サイト(お問い合わせ)",
+            "url": "https://www.jyoshoji.or.jp/contact"
+          },
+          {
+            "label": "公式サイト(年間行事)",
+            "url": "https://www.jyoshoji.or.jp/gyouji"
+          },
+          {
+            "label": "公式サイト(墓所のご案内)",
+            "url": "https://www.jyoshoji.or.jp/bosho"
+          },
+          {
+            "label": "Google マップ",
+            "url": "https://maps.google.com/?cid=1585315179117824038"
+          }
+        ],
+        "checkedAt": "2026-11-02"
+      }
+    },
+    {
+      "id": "li0115",
+      "vertical": "life",
+      "category": "shrine-temple",
+      "name": "城山八幡宮",
+      "pref": "aichi",
+      "cityName": "名古屋市千種区",
+      "address": "愛知県名古屋市千種区城山町2丁目88",
+      "lat": 35.1675871,
+      "lng": 136.9596299,
+      "phone": "052-751-0788",
+      "url": "http://www.shiroyama.or.jp/",
+      "website": "http://www.shiroyama.or.jp/",
+      "mapUrl": "https://maps.google.com/?cid=17373707365299292440",
+      "image": "/_portal/vshops/tri-life-311/g01.jpg",
+      "images": [
+        "/_portal/vshops/tri-life-311/g01.jpg",
+        "/_portal/vshops/tri-life-311/g02.jpg",
+        "/_portal/vshops/tri-life-311/g03.jpg",
+        "/_portal/vshops/tri-life-311/g04.jpg",
+        "/_portal/vshops/tri-life-311/g05.jpg",
+        "/_portal/vshops/tri-life-311/g06.jpg",
+        "/_portal/vshops/tri-life-311/g07.jpg",
+        "/_portal/vshops/tri-life-311/g08.jpg",
+        "/_portal/vshops/tri-life-311/g09.jpg"
+      ],
+      "photos": [
+        {
+          "path": "/_portal/vshops/tri-life-311/g01.jpg",
+          "what": "狛犬が両脇に並ぶ拝殿の正面",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-life-311/g02.jpg",
+          "what": "柵に囲まれた木と、そばに立つ狛犬",
+          "kind": "view",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-life-311/g03.jpg",
+          "what": "朱色の欄干の橋と、石段の先に見える鳥居",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-life-311/g04.jpg",
+          "what": "木立の中に建つ小さな社殿",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 800
+        },
+        {
+          "path": "/_portal/vshops/tri-life-311/g05.jpg",
+          "what": "石の鳥居と石段、その先へ続く参道",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-life-311/g06.jpg",
+          "what": "格子戸が並ぶ木造の拝殿の正面",
+          "kind": "common",
+          "width": 1200,
+          "height": 674
+        },
+        {
+          "path": "/_portal/vshops/tri-life-311/g07.jpg",
+          "what": "反った屋根を持つ木造の神門",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-life-311/g08.jpg",
+          "what": "青空の下、緑の屋根の拝殿と両脇の狛犬",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 675
+        },
+        {
+          "path": "/_portal/vshops/tri-life-311/g09.jpg",
+          "what": "しめ縄と札のある大木",
+          "kind": "view",
+          "width": 900,
+          "height": 1200
+        }
+      ],
+      "tags": [
+        "駅近",
+        "駐車場あり"
+      ],
+      "article": {
+        "headline": "名古屋市千種区の末森城址に鎮座する神社。厄除開運・交通安全祈願・縁結びの御祈祷を受け付けている",
+        "lede": "名古屋市千種区にある「城山八幡宮」です。織田信秀・信行・お市の方の居城だった末森城址に鎮座する、厄除開運・交通安全祈願の大社です。御祈祷はウェブの予約サイトから申し込めます。",
+        "sections": [
+          {
+            "heading": "場所とアクセス",
+            "body": "住所は名古屋市千種区城山町2丁目88番地、電話は052-751-0788です。地下鉄東山線「覚王山駅」2番出口から東へ300メートル、東山線・名城線「本山駅」1番出口から西へ300メートルで、どちらも徒歩6分です。市バスは池下11系統の「城山」または「末盛通2丁目」で降りて徒歩3分です。車で行く場合、カーナビの案内では境内駐車場へ誘導されない場合が殆どで、目的地を「城山八幡宮養心殿城山道場」に設定します。"
+          },
+          {
+            "heading": "御祈祷とウェブ予約",
+            "body": "御祈祷の種目は、厄除開運・厄祓い・開運祈祷・交通安全・家内安全・七五三詣・合格祈祷・縁結び・良縁祈願・安産祈祷・初宮詣などです。予約サイトから申し込め、昇殿人数は1組10名まで、定員は30組、予約は御祈祷日の4日前までです。当日の申し込みもできますが、予約の方が優先になります。メールや電話での予約はできません。祭典行事の日を除き、御祈祷は通年9時15分から16時の受付で、無休です。"
+          },
+          {
+            "heading": "参拝のきまり",
+            "body": "境内は全域禁煙(一部に除外があります)で、動物の散歩や持ち込みは禁止です。神門内での飲食と、境内での音響機器の使用も禁止されています。御祈祷や昇殿参拝では、殿内での写真撮影が禁止で、携帯電話は電源を切り、履き物は下駄箱に入れます。拝礼の作法は二拝二拍手一拝です。授乳施設とおむつ交換施設は、特別な時を除いてありません。"
+          },
+          {
+            "heading": "年間の主な行事",
+            "body": "2月1日に節分祭、3月1日から4月30日は十三参り、6月30日に水無月大祓式、7月15日から17日に大茅輪くぐりと赤丸神事、9月15日に遷座記念祭と七五三詣始、10月15日に例祭、12月31日に師走大祓式と除夜祭が営まれます。"
+          }
+        ],
+        "menus": [
+          {
+            "name": "厄除開運"
+          },
+          {
+            "name": "交通安全"
+          },
+          {
+            "name": "縁結び・良縁祈願"
+          },
+          {
+            "name": "安産祈願・初宮詣"
+          },
+          {
+            "name": "七五三詣"
+          },
+          {
+            "name": "合格祈祷"
+          }
+        ],
+        "sources": [
+          {
+            "label": "公式サイト",
+            "url": "http://www.shiroyama.or.jp/"
+          },
+          {
+            "label": "公式サイト(交通アクセス)",
+            "url": "http://www.shiroyama.or.jp/koutuuakusesu.htm"
+          },
+          {
+            "label": "公式サイト(今月・来月の行事)",
+            "url": "http://www.shiroyama.or.jp/kisetu_info/kongetu.htm"
+          },
+          {
+            "label": "公式サイト(参拝の常識)",
+            "url": "http://www.shiroyama.or.jp/info/rule/rule.html"
+          },
+          {
+            "label": "Google マップ",
+            "url": "https://maps.google.com/?cid=17373707365299292440"
+          }
+        ],
+        "checkedAt": "2026-11-02"
+      }
+    },
+    {
+      "id": "li0116",
+      "vertical": "life",
+      "category": "fashion-craft",
+      "name": "スタッシュ",
+      "pref": "hiroshima",
+      "cityName": "福山市",
+      "address": "広島県福山市引野町5丁目19-5",
+      "lat": 34.4924817,
+      "lng": 133.4051051,
+      "phone": "084-999-7701",
+      "url": "https://www.stush.jp/?mode=pc",
+      "website": "https://www.stush.jp/?mode=pc",
+      "mapUrl": "https://maps.google.com/?cid=8928837326582520260",
+      "image": "/_portal/vshops/tri-life-318/g01.jpg",
+      "images": [
+        "/_portal/vshops/tri-life-318/g01.jpg",
+        "/_portal/vshops/tri-life-318/g02.jpg",
+        "/_portal/vshops/tri-life-318/g03.jpg",
+        "/_portal/vshops/tri-life-318/g04.jpg"
+      ],
+      "photos": [
+        {
+          "path": "/_portal/vshops/tri-life-318/g01.jpg",
+          "what": "スタッシュの写真",
+          "kind": "common",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-life-318/g02.jpg",
+          "what": "スタッシュの写真",
+          "kind": "common",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-life-318/g03.jpg",
+          "what": "スタッシュの写真",
+          "kind": "common",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-life-318/g04.jpg",
+          "what": "「STUSH」の看板が写る外観",
+          "kind": "exterior",
+          "width": 900,
+          "height": 1200
+        }
+      ],
+      "tags": [],
+      "article": {
+        "headline": "広島県福山市引野町5丁目にある衣料品店",
+        "lede": "福山市にある「スタッシュ」です。業種は衣料品店で、所在地は広島県福山市引野町5丁目19-5です。",
+        "sections": [
+          {
+            "heading": "場所",
+            "body": "住所は広島県福山市引野町5丁目19-5です。業種は衣料品店です。"
+          },
+          {
+            "heading": "連絡先",
+            "body": "電話は084-999-7701です。公式サイトは https://www.stush.jp/ です。"
+          }
+        ],
+        "sources": [
+          {
+            "label": "Google マップ",
+            "url": "https://maps.google.com/?cid=8928837326582520260"
+          }
+        ],
+        "checkedAt": "2026-11-02"
+      }
     }
   ]
 }

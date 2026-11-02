@@ -1,0 +1,32 @@
+{
+  "tab": "トリニティアポ",
+  "tabEn": "tri-life",
+  "row": 318,
+  "sheet": {
+    "name": "STUSH（スタッシュ）",
+    "address": "",
+    "url": "https://www.google.com/maps/search/?api=1&query=STUSH%EF%BC%88%E3%82%B9%E3%82%BF%E3%83%83%E3%82%B7%E3%83%A5%EF%BC%89%20084-999-7701%20%E3%80%92721-0942%20%E5%BA%83%E5%B3%B6%E7%9C%8C%E7%A6%8F%E5%B1%B1%E5%B8%82%E5%BC%95%E9%87%8E%E7%94%BA%EF%BC%95%E4%B8%81%E7%9B%AE%EF%BC%91%EF%BC%99%E2%88%92%EF%BC%95",
+    "type": "小売り",
+    "d1": "",
+    "d2": ""
+  },
+  "urlKind": "mapsApi",
+  "route": "第1段(verify-gbp.mjs)で確認済み",
+  "verdict": "一致",
+  "verdictReason": "手がかり: 店名＋電話＋住所(番地まで)。電話が一致／店名: contains(シート「STUSH（スタッシュ）」/ マップ「スタッシュ」)／住所(シート): exact・町名・番地とも一致",
+  "place": {
+    "name": "スタッシュ",
+    "address": "広島県福山市引野町５丁目１９−５",
+    "category": "衣料品店",
+    "lat": 34.4924817,
+    "lng": 133.4051051,
+    "gbpUrl": "https://maps.google.com/?cid=8928837326582520260",
+    "phone": "084-999-7701",
+    "website": "https://www.stush.jp/?mode=pc&fbclid=PAAaZgpbuEuxC1IRbRKQUI4wfXFbQiWnJgpkFgW9PWA7L4okt9Kbd6BCq0udM",
+    "hours": null,
+    "reserveLinks": [],
+    "statusSignals": [],
+    "closedSignal": false
+  },
+  "fetchedAt": "2026-11-01T23:18:44.379Z"
+}
