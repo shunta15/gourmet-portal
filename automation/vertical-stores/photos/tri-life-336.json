@@ -1,0 +1,106 @@
+{
+  "key": "tri-life-336",
+  "images": [
+    {
+      "path": "/_portal/vshops/tri-life-336/g01.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9SMEaDW6tAutaZAkQ6AxvUtc3g9pBAcndmVTzynsJFh7FsbDXllPQmXsjmbeXnzTgfv0EkzlIAkeKAqKR9xjq-468syRzZ8bDF6SkoWrvMwbfTV8JEaeKUD81TDgSaTwWtuf_Pk=s1200",
+      "pageUrl": "https://maps.google.com/?cid=15253108934418382711",
+      "what": "山門と赤い灯籠",
+      "kind": "exterior",
+      "width": 1200,
+      "height": 800,
+      "source": "Google マップ"
+    },
+    {
+      "path": "/_portal/vshops/tri-life-336/g02.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9QpZaWeCaSMh3dM7XL9ozZiksz6wXQ50yafuKFe3TF4zlmkld6lsG3PM1aZbkyu8o5PySLC6YdyJi-ERGyp8UiIxg7B9037Ln7-w2RFMtkOh_hbN9W5XOhXe9uuL4CsB7RFeY9imw=s1200",
+      "pageUrl": "https://maps.google.com/?cid=15253108934418382711",
+      "what": "本堂入り口の全景",
+      "kind": "exterior",
+      "width": 1200,
+      "height": 900,
+      "source": "Google マップ"
+    },
+    {
+      "path": "/_portal/vshops/tri-life-336/g03.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9R_qL4PvShM041KBClu8KcDtYnb1_jhubzSyor0bSBClfUgawzt1x4yRGnbMTR2Cwert3Ug04glr_SLC1y-m3BN3fsRmgSW7vVzX8CeF2TukW3z5YdcEPBmeG65cd64SK1zwRQ=s1200",
+      "pageUrl": "https://maps.google.com/?cid=15253108934418382711",
+      "what": "山門の薬師の文字",
+      "kind": "exterior",
+      "width": 1200,
+      "height": 800,
+      "source": "Google マップ"
+    },
+    {
+      "path": "/_portal/vshops/tri-life-336/g06.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9TotIWujJFYh_MrnhHD3iC__HimG5eyGaiXdJhUcnNCyf8_RJAEDkAr84BEDUa22H9yBETYP9E4hWqoo6jpF57o3koGxo7zj-21MgE33ZeILGetTbfr0cWHsyJ3Mk5qSOOMN0eG=s1200",
+      "pageUrl": "https://maps.google.com/?cid=15253108934418382711",
+      "what": "金色の御本尊と仏壇",
+      "kind": "room",
+      "width": 1200,
+      "height": 900,
+      "source": "Google マップ"
+    },
+    {
+      "path": "/_portal/vshops/tri-life-336/s05.jpg",
+      "imageUrl": "https://ichihatasan.or.jp/wp/wp-content/themes/ichihatasan/images/img_betsuin_noukotsu01.jpg",
+      "pageUrl": "https://ichihatasan.or.jp/betsuin/",
+      "what": "金色の壁と赤い絨毯の納骨堂内部",
+      "kind": "room",
+      "width": 800,
+      "height": 533,
+      "source": "公式サイト"
+    },
+    {
+      "path": "/_portal/vshops/tri-life-336/s06.jpg",
+      "imageUrl": "https://ichihatasan.or.jp/wp/wp-content/themes/ichihatasan/images/img_betsuin_noukotsu02.jpg",
+      "pageUrl": "https://ichihatasan.or.jp/betsuin/",
+      "what": "納骨堂の壁面収蔵スペース",
+      "kind": "room",
+      "width": 800,
+      "height": 533,
+      "source": "公式サイト"
+    },
+    {
+      "path": "/_portal/vshops/tri-life-336/s07.jpg",
+      "imageUrl": "https://ichihatasan.or.jp/wp/wp-content/themes/ichihatasan/images/img_betsuin_noukotsu03.jpg",
+      "pageUrl": "https://ichihatasan.or.jp/betsuin/",
+      "what": "青蓮とともに安置された涅槃像",
+      "kind": "room",
+      "width": 800,
+      "height": 533,
+      "source": "公式サイト"
+    },
+    {
+      "path": "/_portal/vshops/tri-life-336/s08.jpg",
+      "imageUrl": "https://ichihatasan.or.jp/wp/wp-content/themes/ichihatasan/images/img_betsuin_noukotsu04.jpg",
+      "pageUrl": "https://ichihatasan.or.jp/betsuin/",
+      "what": "荘厳な装飾と涅槃像の全景",
+      "kind": "room",
+      "width": 800,
+      "height": 533,
+      "source": "公式サイト"
+    },
+    {
+      "path": "/_portal/vshops/tri-life-336/s09.jpg",
+      "imageUrl": "https://ichihatasan.or.jp/wp/wp-content/themes/ichihatasan/images/img_betsuin_noukotsu05.jpg",
+      "pageUrl": "https://ichihatasan.or.jp/betsuin/",
+      "what": "納骨堂廊下のロングショット",
+      "kind": "room",
+      "width": 800,
+      "height": 533,
+      "source": "公式サイト"
+    },
+    {
+      "path": "/_portal/vshops/tri-life-336/s10.jpg",
+      "imageUrl": "https://ichihatasan.or.jp/wp/wp-content/themes/ichihatasan/images/img_betsuin_noukotsu06.jpg",
+      "pageUrl": "https://ichihatasan.or.jp/betsuin/",
+      "what": "金箔の涅槃像のクローズアップ",
+      "kind": "room",
+      "width": 800,
+      "height": 533,
+      "source": "公式サイト"
+    }
+  ],
+  "note": "automation/v2/write.mjs が 2026-11-03T09:00:48.189Z に取得。店の実写だけ(AI 画像・汎用画像・地図・ロゴ・顔が大きい画像は除外)。"
+}

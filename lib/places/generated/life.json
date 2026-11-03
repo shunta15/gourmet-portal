@@ -18932,6 +18932,155 @@
         ],
         "checkedAt": "2026-11-02"
       }
+    },
+    {
+      "id": "li0127",
+      "vertical": "life",
+      "category": "shrine-temple",
+      "name": "一畑山薬師寺 名古屋別院",
+      "pref": "aichi",
+      "cityName": "名古屋市千種区",
+      "address": "愛知県名古屋市千種区春岡1丁目30-9",
+      "lat": 35.1651521,
+      "lng": 136.9426352,
+      "phone": "052-761-2105",
+      "url": "https://ichihatasan.or.jp/betsuin/",
+      "website": "https://ichihatasan.or.jp/betsuin/",
+      "mapUrl": "https://maps.google.com/?cid=15253108934418382711",
+      "image": "/_portal/vshops/tri-life-336/g01.jpg",
+      "images": [
+        "/_portal/vshops/tri-life-336/g01.jpg",
+        "/_portal/vshops/tri-life-336/g02.jpg",
+        "/_portal/vshops/tri-life-336/g03.jpg",
+        "/_portal/vshops/tri-life-336/g06.jpg",
+        "/_portal/vshops/tri-life-336/s05.jpg",
+        "/_portal/vshops/tri-life-336/s06.jpg",
+        "/_portal/vshops/tri-life-336/s07.jpg",
+        "/_portal/vshops/tri-life-336/s08.jpg",
+        "/_portal/vshops/tri-life-336/s09.jpg",
+        "/_portal/vshops/tri-life-336/s10.jpg"
+      ],
+      "photos": [
+        {
+          "path": "/_portal/vshops/tri-life-336/g01.jpg",
+          "what": "山門と赤い灯籠",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 800
+        },
+        {
+          "path": "/_portal/vshops/tri-life-336/g02.jpg",
+          "what": "本堂入り口の全景",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-life-336/g03.jpg",
+          "what": "山門の薬師の文字",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 800
+        },
+        {
+          "path": "/_portal/vshops/tri-life-336/g06.jpg",
+          "what": "金色の御本尊と仏壇",
+          "kind": "room",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-life-336/s05.jpg",
+          "what": "金色の壁と赤い絨毯の納骨堂内部",
+          "kind": "room",
+          "width": 800,
+          "height": 533
+        },
+        {
+          "path": "/_portal/vshops/tri-life-336/s06.jpg",
+          "what": "納骨堂の壁面収蔵スペース",
+          "kind": "room",
+          "width": 800,
+          "height": 533
+        },
+        {
+          "path": "/_portal/vshops/tri-life-336/s07.jpg",
+          "what": "青蓮とともに安置された涅槃像",
+          "kind": "room",
+          "width": 800,
+          "height": 533
+        },
+        {
+          "path": "/_portal/vshops/tri-life-336/s08.jpg",
+          "what": "荘厳な装飾と涅槃像の全景",
+          "kind": "room",
+          "width": 800,
+          "height": 533
+        },
+        {
+          "path": "/_portal/vshops/tri-life-336/s09.jpg",
+          "what": "納骨堂廊下のロングショット",
+          "kind": "room",
+          "width": 800,
+          "height": 533
+        },
+        {
+          "path": "/_portal/vshops/tri-life-336/s10.jpg",
+          "what": "金箔の涅槃像のクローズアップ",
+          "kind": "room",
+          "width": 800,
+          "height": 533
+        }
+      ],
+      "tags": [
+        "駐車場あり",
+        "駅近"
+      ],
+      "article": {
+        "headline": "名古屋市千種区にある一畑山薬師寺の「発祥の地」。臨済宗妙心寺派の寺院で、ご祈祷を年中無休・予約不要で受け付け、2025年完成の新納骨堂もある",
+        "lede": "愛知県名古屋市千種区春岡にある「一畑山薬師寺 名古屋別院」です。昭和23年に創建された「一畑山薬師寺」の「発祥の地」で、臨済宗妙心寺派の寺院です。諸願成就などのご祈祷を年中無休・予約不要で受け付けており、2025年に完成した新しい永代納骨堂もあります。地下鉄東山線「池下駅」から徒歩約8分でアクセスできます。",
+        "sections": [
+          {
+            "heading": "場所とアクセス",
+            "body": "住所は愛知県名古屋市千種区春岡1丁目30-9、電話は052-761-2105です。参拝・受付は年中無休で8時30分から17時、ご祈祷の受付は9時から16時です。地下鉄東山線「池下駅」から徒歩約8分。境内には駐車場が10台あります（）。"
+          },
+          {
+            "heading": "ご祈祷と縁日・大祭",
+            "body": "諸願成就の「特別祈祷」や交通安全の「車のお祓い」など、さまざまなご祈祷を年中無休・予約不要で受け付けています。受付は9時から16時の毎時0分頃です。年2回（1月・6月）は名古屋別院を会場に大祭が行われます。"
+          },
+          {
+            "heading": "永代納骨",
+            "body": "2025年に新しい納骨堂が完成しました。365日天候にかかわらず参拝できる屋内の堂内に純金箔の涅槃像が安置されています。管理費・維持費・寄付金は不要で、宗旨・宗派を問わずご利用いただけます。"
+          },
+          {
+            "heading": "御朱印",
+            "body": "名古屋別院・岡崎本堂・不動明王殿・瑠璃光殿の通年4種類の御朱印があります。"
+          }
+        ],
+        "sources": [
+          {
+            "label": "公式サイト（名古屋別院）",
+            "url": "https://ichihatasan.or.jp/betsuin/"
+          },
+          {
+            "label": "公式サイト（成立ち）",
+            "url": "https://ichihatasan.or.jp/about/"
+          },
+          {
+            "label": "公式サイト（ご案内）",
+            "url": "https://ichihatasan.or.jp/info/"
+          },
+          {
+            "label": "公式サイト（交通アクセス）",
+            "url": "https://ichihatasan.or.jp/access/"
+          },
+          {
+            "label": "Google マップ",
+            "url": "https://maps.google.com/?cid=15253108934418382711"
+          }
+        ],
+        "checkedAt": "2026-11-03"
+      }
     }
   ]
 }

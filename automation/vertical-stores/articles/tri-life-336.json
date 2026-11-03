@@ -1,0 +1,131 @@
+{
+  "key": "tri-life-336",
+  "headline": "名古屋市千種区にある一畑山薬師寺の「発祥の地」。臨済宗妙心寺派の寺院で、ご祈祷を年中無休・予約不要で受け付け、2025年完成の新納骨堂もある",
+  "lede": "愛知県名古屋市千種区春岡にある「一畑山薬師寺 名古屋別院」です。昭和23年に創建された「一畑山薬師寺」の「発祥の地」で、臨済宗妙心寺派の寺院です。諸願成就などのご祈祷を年中無休・予約不要で受け付けており、2025年に完成した新しい永代納骨堂もあります。地下鉄東山線「池下駅」から徒歩約8分でアクセスできます。",
+  "sections": [
+    {
+      "heading": "場所とアクセス",
+      "body": "住所は愛知県名古屋市千種区春岡1丁目30-9、電話は052-761-2105です。参拝・受付は年中無休で8時30分から17時、ご祈祷の受付は9時から16時です。地下鉄東山線「池下駅」から徒歩約8分。境内には駐車場が10台あります（）。"
+    },
+    {
+      "heading": "ご祈祷と縁日・大祭",
+      "body": "諸願成就の「特別祈祷」や交通安全の「車のお祓い」など、さまざまなご祈祷を年中無休・予約不要で受け付けています。受付は9時から16時の毎時0分頃です。年2回（1月・6月）は名古屋別院を会場に大祭が行われます。"
+    },
+    {
+      "heading": "永代納骨",
+      "body": "2025年に新しい納骨堂が完成しました。365日天候にかかわらず参拝できる屋内の堂内に純金箔の涅槃像が安置されています。管理費・維持費・寄付金は不要で、宗旨・宗派を問わずご利用いただけます。"
+    },
+    {
+      "heading": "御朱印",
+      "body": "名古屋別院・岡崎本堂・不動明王殿・瑠璃光殿の通年4種類の御朱印があります。"
+    }
+  ],
+  "menus": [],
+  "tags": [
+    {
+      "tag": "駐車場あり",
+      "factIndex": 6
+    },
+    {
+      "tag": "駅近",
+      "factIndex": 7
+    }
+  ],
+  "facts": [
+    {
+      "claim": "臨済宗妙心寺派の寺院",
+      "source": "https://ichihatasan.or.jp/betsuin/",
+      "quote": "臨済宗妙心寺派のお寺",
+      "checkedAt": "2026-11-03"
+    },
+    {
+      "claim": "一畑山薬師寺の「発祥の地」として開山された",
+      "source": "https://ichihatasan.or.jp/betsuin/",
+      "quote": "「一畑山薬師寺」発祥の地",
+      "checkedAt": "2026-11-03"
+    },
+    {
+      "claim": "昭和23年（1948年）に名古屋市千種区春岡に開山",
+      "source": "https://ichihatasan.or.jp/about/",
+      "quote": "昭和23年に現在の名古屋市千種区春岡に開山",
+      "checkedAt": "2026-11-03"
+    },
+    {
+      "claim": "参拝・受付は年中無休で8時30分から17時",
+      "source": "https://ichihatasan.or.jp/betsuin/",
+      "quote": "年中無休 8:30～17:00",
+      "checkedAt": "2026-11-03"
+    },
+    {
+      "claim": "ご祈祷の受付は9時から16時の毎時0分頃",
+      "source": "https://ichihatasan.or.jp/betsuin/",
+      "quote": "9時～16時の毎時0分頃",
+      "checkedAt": "2026-11-03"
+    },
+    {
+      "claim": "ご祈祷は年中無休・予約不要で受け付けている",
+      "source": "https://ichihatasan.or.jp/betsuin/",
+      "quote": "年中無休、ご予約不要",
+      "checkedAt": "2026-11-03"
+    },
+    {
+      "claim": "境内に駐車場が10台ある",
+      "source": "https://ichihatasan.or.jp/betsuin/",
+      "quote": "無料駐車場10台あり",
+      "checkedAt": "2026-11-03"
+    },
+    {
+      "claim": "地下鉄東山線「池下駅」から徒歩約8分",
+      "source": "https://ichihatasan.or.jp/betsuin/",
+      "quote": "「池下駅」から徒歩8分",
+      "checkedAt": "2026-11-03"
+    },
+    {
+      "claim": "新しい永代納骨堂が2025年に完成した",
+      "source": "https://ichihatasan.or.jp/betsuin/",
+      "quote": "2025年に完成いたしました",
+      "checkedAt": "2026-11-03"
+    },
+    {
+      "claim": "年2回（1月・6月）は名古屋別院で大祭が行われる",
+      "source": "https://ichihatasan.or.jp/betsuin/",
+      "quote": "1月と6月の年2回は名古屋別院",
+      "checkedAt": "2026-11-03"
+    },
+    {
+      "claim": "毎月8日は薬師如来様の縁日",
+      "source": "https://ichihatasan.or.jp/betsuin/",
+      "quote": "毎月8日は薬師如来様の縁日",
+      "checkedAt": "2026-11-03"
+    },
+    {
+      "claim": "通年4種類（名古屋別院・岡崎本堂・不動明王殿・瑠璃光殿）の御朱印がある",
+      "source": "https://ichihatasan.or.jp/info/",
+      "quote": "通年では4種類",
+      "checkedAt": "2026-11-03"
+    }
+  ],
+  "sources": [
+    {
+      "label": "公式サイト（名古屋別院）",
+      "url": "https://ichihatasan.or.jp/betsuin/"
+    },
+    {
+      "label": "公式サイト（成立ち）",
+      "url": "https://ichihatasan.or.jp/about/"
+    },
+    {
+      "label": "公式サイト（ご案内）",
+      "url": "https://ichihatasan.or.jp/info/"
+    },
+    {
+      "label": "公式サイト（交通アクセス）",
+      "url": "https://ichihatasan.or.jp/access/"
+    },
+    {
+      "label": "Google マップ",
+      "url": "https://maps.google.com/?cid=15253108934418382711"
+    }
+  ],
+  "notes": "automation/v2/write.mjs が 2026-11-03 に claude -p --model sonnet で作成。事実の裏取り: 12/12 件(quote が出どころにあるもの)。裏取りに通らなかった facts は載せていない。"
+}

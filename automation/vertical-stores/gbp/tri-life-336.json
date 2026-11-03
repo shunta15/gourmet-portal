@@ -1,0 +1,32 @@
+{
+  "tab": "トリニティアポ",
+  "tabEn": "tri-life",
+  "row": 336,
+  "sheet": {
+    "name": "一畑山薬師寺",
+    "address": "",
+    "url": "https://www.google.com/maps/search/?api=1&query=%E4%B8%80%E7%95%91%E5%B1%B1%E8%96%AC%E5%B8%AB%E5%AF%BA%20052-761-2105%20%E3%80%92464-0848%20%E6%84%9B%E7%9F%A5%E7%9C%8C%E5%90%8D%E5%8F%A4%E5%B1%8B%E5%B8%82%E5%8D%83%E7%A8%AE%E5%8C%BA%E6%98%A5%E5%B2%A1%EF%BC%91%E4%B8%81%E7%9B%AE%EF%BC%93%EF%BC%90%E2%88%92%EF%BC%99",
+    "type": "寺",
+    "d1": "",
+    "d2": ""
+  },
+  "urlKind": "mapsApi",
+  "route": "第1段(verify-gbp.mjs)で確認済み",
+  "verdict": "一致",
+  "verdictReason": "手がかり: 店名＋電話＋住所(番地まで)。電話が一致／店名: contains(シート「一畑山薬師寺」/ マップ「一畑山薬師寺 名古屋別院」)／住所(シート): exact・町名・番地とも一致",
+  "place": {
+    "name": "一畑山薬師寺 名古屋別院",
+    "address": "愛知県名古屋市千種区春岡１丁目３０−９",
+    "category": "仏教寺院",
+    "lat": 35.1651521,
+    "lng": 136.9426352,
+    "gbpUrl": "https://maps.google.com/?cid=15253108934418382711",
+    "phone": "052-761-2105",
+    "website": "https://ichihatasan.or.jp/betsuin/",
+    "hours": null,
+    "reserveLinks": [],
+    "statusSignals": [],
+    "closedSignal": false
+  },
+  "fetchedAt": "2026-11-02T08:11:58.477Z"
+}

@@ -1,0 +1,19 @@
+{
+  "commit": "330f2fc0b36c1f99ce4e0f8c8a4e7464fee26e79",
+  "source": "/Users/shunta/claude/gp-k-auto2",
+  "count": 1,
+  "added": [
+    {
+      "row": 336,
+      "name": "一畑山薬師寺",
+      "key": "tri-life-336",
+      "vertical": "くらし",
+      "id": "li0127",
+      "articleId": "li0127",
+      "shopUrl": "https://machinowa.tokyo/life/shop/li0127",
+      "articleUrl": "https://machinowa.tokyo/life/article/li0127",
+      "sheetUrl": "https://machinowa.tokyo/life/article/li0127"
+    }
+  ],
+  "skipped": []
+}
