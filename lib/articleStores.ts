@@ -19321,6 +19321,54 @@ export const ARTICLE_STORES: Restaurant[] = [
       "個室"
     ],
     "featureId": "Soi"
+  },
+  {
+    "id": "r850",
+    "name": "焼肉居酒屋８７１。",
+    "cuisine": "焼肉店",
+    "area": "山梨県・南都留郡富士河口湖町",
+    "region": "yamanashi",
+    "shape": "square",
+    "image": "/restaurants/teleapo-焼肉居酒屋871。/hero.jpg",
+    "heroImages": [
+      "/restaurants/teleapo-焼肉居酒屋871。/hero.jpg",
+      "/restaurants/teleapo-焼肉居酒屋871。/point1.jpg",
+      "/restaurants/teleapo-焼肉居酒屋871。/point2.jpg",
+      "/restaurants/teleapo-焼肉居酒屋871。/point3.jpg"
+    ],
+    "gallery": [
+      "/restaurants/teleapo-焼肉居酒屋871。/hero.jpg",
+      "/restaurants/teleapo-焼肉居酒屋871。/point1.jpg",
+      "/restaurants/teleapo-焼肉居酒屋871。/point2.jpg",
+      "/restaurants/teleapo-焼肉居酒屋871。/point3.jpg"
+    ],
+    "desc": "山梨県南都留郡富士河口湖町の焼肉店。",
+    "address": "山梨県南都留郡富士河口湖町船津6854",
+    "hours": "毎日 12:00–22:00",
+    "closed": "なし（Googleマップの営業時間による）",
+    "seats": "最大60席（暖簾仕切りの半個室タイプ）",
+    "nearest": "—",
+    "phone": "0555-73-8629",
+    "source": {
+      "label": "Google ビジネスプロフィール",
+      "url": "https://maps.google.com/?cid=6588607701645149490"
+    },
+    "body": [
+      "焼肉居酒屋８７１。は、山梨県南都留郡富士河口湖町にあるお店です。業態は「焼肉店」、所在地は山梨県南都留郡富士河口湖町船津6854です。マチノワ編集部の特集記事では、「和牛から豚・鶏まで揃う夜の焼肉メニュー」・「牛タン・ハラミなど定食が揃うランチとインバウンド対応」などを取り上げています。",
+      "営業時間は毎日 12:00–22:00で、定休日はありません（Googleマップの営業時間による）。席は最大60席（暖簾仕切りの半個室タイプ）。営業時間や価格は変わることがあるため、訪問前に公式サイトやSNS、お電話でご確認ください。"
+    ],
+    "highlights": [
+      "和牛から豚・鶏まで揃う夜の焼肉メニュー",
+      "牛タン・ハラミなど定食が揃うランチとインバウンド対応",
+      "半個室タイプ60席と各種宴会コース",
+      "河口湖IC・河口湖駅からのアクセス"
+    ],
+    "tags": [
+      "焼肉店",
+      "富士河口湖町",
+      "ランチ"
+    ],
+    "featureId": "焼肉居酒屋871。"
   }
 ];
 
@@ -19731,7 +19779,8 @@ export const ARTICLE_STORE_FEATURE_IDS: Record<string, string> = {
   "r846": "ますや旅館オーベルジュ",
   "r847": "ほらふき亭本店",
   "r848": "Cafemomいきいきサロンひまわり",
-  "r849": "Soi"
+  "r849": "Soi",
+  "r850": "焼肉居酒屋871。"
 };
 
 /** 特集記事ID → 店舗ID */
@@ -20141,5 +20190,6 @@ export const ARTICLE_STORE_ID_BY_FEATURE: Record<string, string> = {
   "ますや旅館オーベルジュ": "r846",
   "ほらふき亭本店": "r847",
   "Cafemomいきいきサロンひまわり": "r848",
-  "Soi": "r849"
+  "Soi": "r849",
+  "焼肉居酒屋871。": "r850"
 };

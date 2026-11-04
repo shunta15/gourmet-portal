@@ -19081,6 +19081,413 @@
         ],
         "checkedAt": "2026-11-03"
       }
+    },
+    {
+      "id": "li0128",
+      "vertical": "life",
+      "category": "shrine-temple",
+      "name": "太閤山 常泉寺",
+      "pref": "aichi",
+      "cityName": "名古屋市中村区",
+      "address": "愛知県名古屋市中村区中村町木下屋敷47番地",
+      "lat": 35.1743527,
+      "lng": 136.8560983,
+      "phone": "052-412-3467",
+      "url": "https://jousenji.nagoya/",
+      "website": "https://jousenji.nagoya/",
+      "mapUrl": "https://maps.google.com/?cid=2185029238802971483",
+      "image": "/_portal/vshops/tri-life-339/g01.jpg",
+      "images": [
+        "/_portal/vshops/tri-life-339/g01.jpg",
+        "/_portal/vshops/tri-life-339/g02.jpg",
+        "/_portal/vshops/tri-life-339/g04.jpg",
+        "/_portal/vshops/tri-life-339/g05.jpg",
+        "/_portal/vshops/tri-life-339/g06.jpg",
+        "/_portal/vshops/tri-life-339/g07.jpg",
+        "/_portal/vshops/tri-life-339/g08.jpg",
+        "/_portal/vshops/tri-life-339/g09.jpg",
+        "/_portal/vshops/tri-life-339/g10.jpg",
+        "/_portal/vshops/tri-life-339/s09.jpg",
+        "/_portal/vshops/tri-life-339/s10.jpg",
+        "/_portal/vshops/tri-life-339/s11.jpg"
+      ],
+      "photos": [
+        {
+          "path": "/_portal/vshops/tri-life-339/g01.jpg",
+          "what": "山門（正面外観）",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-life-339/g02.jpg",
+          "what": "参道と石柱の表札",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 675
+        },
+        {
+          "path": "/_portal/vshops/tri-life-339/g04.jpg",
+          "what": "石碑と山門",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-life-339/g05.jpg",
+          "what": "大きな瓢箪の飾り物と木々",
+          "kind": "exterior",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-life-339/g06.jpg",
+          "what": "産湯の井戸（石造り）",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-life-339/g07.jpg",
+          "what": "梵鐘と門",
+          "kind": "exterior",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-life-339/g08.jpg",
+          "what": "山門（広角・全景）",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 675
+        },
+        {
+          "path": "/_portal/vshops/tri-life-339/g09.jpg",
+          "what": "本堂正面",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-life-339/g10.jpg",
+          "what": "石灯籠と寺号標",
+          "kind": "exterior",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-life-339/s09.jpg",
+          "what": "産湯の井戸（公式サイト掲載）",
+          "kind": "exterior",
+          "width": 600,
+          "height": 450
+        },
+        {
+          "path": "/_portal/vshops/tri-life-339/s10.jpg",
+          "what": "境内の様子（公式サイト掲載）",
+          "kind": "exterior",
+          "width": 600,
+          "height": 450
+        },
+        {
+          "path": "/_portal/vshops/tri-life-339/s11.jpg",
+          "what": "瓢箪の置物・展示（公式サイト掲載）",
+          "kind": "exterior",
+          "width": 600,
+          "height": 450
+        }
+      ],
+      "tags": [],
+      "article": {
+        "headline": "豊臣秀吉公生誕の地に建つ、400年以上の歴史を刻む日蓮宗の名刹",
+        "lede": "名古屋市中村区に鎮座する太閤山 常泉寺は、天下人・豊臣秀吉公が生まれた地に慶長年間（1600年頃）に創建された日蓮宗の寺院。産湯の井戸や手植えの柊など、秀吉公ゆかりの史跡を今に伝え、御祈願・御供養・御朱印など幅広い参拝の場として多くの人が訪れる。",
+        "sections": [
+          {
+            "heading": "寺の歴史と由緒",
+            "body": "常泉寺は豊臣秀吉公生誕の聖地に建てられた寺院で、秀吉公の命により加藤清正公と開山・圓住院日誦上人によって創建された。堂内に祀られる豊太閤像は木食興山上人の彫刻で、もとは大阪城に安置されていたものを清正公が秀頼公に願い出て常泉寺へ遷したと伝わる。創建以来「太閤さん」と呼ばれ、東海地方でも壮観な寺院仏閣と称されてきた。"
+          },
+          {
+            "heading": "御祈願・御供養",
+            "body": "合格祈願・必勝祈願、厄除け祈願、出世成就・開運吉祥、恋愛成就・良縁成就など、様々な御祈願を日蓮宗の秘宝「木剣加持」によって執り行う。御供養は月命日・年忌法要・出張供養・開眼閉眼・永代供養・水子供養に対応。檀家以外の方も利用でき、宗旨・宗派は問わない。"
+          },
+          {
+            "heading": "御朱印",
+            "body": "御朱印の受付対応時間は午前9時から午後4時頃。対応日は常泉寺のインスタグラムで案内している。種類は複数あり、郵送対応も実施。郵送の問い合わせはインスタグラムまたはLINEにて受け付けており、電話での問い合わせは控えるよう案内されている。"
+          },
+          {
+            "heading": "境内の見どころ",
+            "body": "境内には秀吉公にゆかりの三つの史跡がある。「豊太閤産湯の井戸」は秀吉公誕生の際に産湯として使われたと伝わる井戸で、清泉が湧き出たことが寺号「常泉寺」の由来とされる。「お手植えの柊」は秀吉公が11歳のときに植えたとされる柊で、鬼神も恐れる吉祥の樹として大切に守られてきた。「秀吉の愛した瓢箪」は千成瓢箪の馬印で知られる秀吉公にちなんだもので、境内に展示されている。"
+          }
+        ],
+        "sources": [
+          {
+            "label": "公式サイト",
+            "url": "https://jousenji.nagoya/"
+          },
+          {
+            "label": "Googleマップ",
+            "url": "https://maps.google.com/?cid=2185029238802971483"
+          }
+        ],
+        "checkedAt": "2026-11-04"
+      }
+    },
+    {
+      "id": "li0129",
+      "vertical": "life",
+      "category": "shrine-temple",
+      "name": "矢作神社",
+      "pref": "aichi",
+      "cityName": "岡崎市",
+      "address": "愛知県岡崎市矢作町宝珠庵1",
+      "lat": 34.9630917,
+      "lng": 137.1480781,
+      "phone": "0564-31-3399",
+      "mapUrl": "https://maps.google.com/?cid=4630368226806341528",
+      "image": "/_portal/vshops/tri-life-341/g01.jpg",
+      "images": [
+        "/_portal/vshops/tri-life-341/g01.jpg",
+        "/_portal/vshops/tri-life-341/g02.jpg",
+        "/_portal/vshops/tri-life-341/g03.jpg",
+        "/_portal/vshops/tri-life-341/g04.jpg",
+        "/_portal/vshops/tri-life-341/g05.jpg",
+        "/_portal/vshops/tri-life-341/g06.jpg",
+        "/_portal/vshops/tri-life-341/g08.jpg",
+        "/_portal/vshops/tri-life-341/g09.jpg",
+        "/_portal/vshops/tri-life-341/g10.jpg"
+      ],
+      "photos": [
+        {
+          "path": "/_portal/vshops/tri-life-341/g01.jpg",
+          "what": "社殿（拝殿）正面外観",
+          "kind": "exterior",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-life-341/g02.jpg",
+          "what": "境内の木々と社域",
+          "width": 675,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-life-341/g03.jpg",
+          "what": "境内の石碑",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-life-341/g04.jpg",
+          "what": "日本武尊像と説明板",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-life-341/g05.jpg",
+          "what": "鳥居",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-life-341/g06.jpg",
+          "what": "「矢作神社」と刻まれた社名石柱",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-life-341/g08.jpg",
+          "what": "木立の中の参道",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-life-341/g09.jpg",
+          "what": "屋根付き手水舎",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-life-341/g10.jpg",
+          "what": "狛犬と社殿屋根",
+          "width": 1200,
+          "height": 904
+        }
+      ],
+      "tags": [],
+      "article": {
+        "headline": "愛知県岡崎市矢作町の神社。日本武尊の矢作り伝説に由来し、境内には矢竹と日本武尊像がある",
+        "lede": "岡崎市矢作町にある「矢作神社」です。御祭神は日本武尊（やまとたけるのみこと）で、賊退治の際に矢を作ったという伝説にちなむ神社です。境内には「矢竹」とよばれる竹と日本武尊像があります。名鉄矢作橋駅から徒歩約10分で、24時間参拝できます。",
+        "sections": [
+          {
+            "heading": "場所とアクセス",
+            "body": "住所は愛知県岡崎市矢作町宝珠庵1、電話は0564-31-3399です。名鉄名古屋本線「矢作橋駅」から徒歩約10分です。24時間参拝できます。駐車場があります。"
+          },
+          {
+            "heading": "御祭神と由緒",
+            "body": "御祭神は日本武尊（やまとたけるのみこと）です。日本武尊が賊退治の矢作りをした際、蝶が人の姿になって矢作川の中州から竹を持ってきたという伝説があります。矢作部がその竹で一夜で一万本の矢を作ったとされ、この地が「矢作」の名の由来となったと伝えられています。"
+          },
+          {
+            "heading": "境内の見どころ",
+            "body": "境内には「矢竹」とよばれる竹が育てられており、日本武尊像も祀られています。鳥居、狛犬、手水舎なども備わっています。"
+          },
+          {
+            "heading": "矢作神社大祭",
+            "body": "矢作神社大祭は五穀豊穣と安全を願う祭りで、約300年前から受け継がれています。"
+          }
+        ],
+        "sources": [
+          {
+            "label": "Google マップ",
+            "url": "https://maps.google.com/?cid=4630368226806341528"
+          }
+        ],
+        "checkedAt": "2026-11-04"
+      }
+    },
+    {
+      "id": "li0130",
+      "vertical": "life",
+      "category": "shrine-temple",
+      "name": "湊八幡神社",
+      "pref": "hyogo",
+      "cityName": "神戸市兵庫区",
+      "address": "兵庫県神戸市兵庫区兵庫町1丁目4-37",
+      "lat": 34.6731107,
+      "lng": 135.1740347,
+      "phone": "078-671-7442",
+      "url": "http://minatohathiman.web.fc2.com/",
+      "website": "http://minatohathiman.web.fc2.com/",
+      "mapUrl": "https://maps.google.com/?cid=17753076144774869431",
+      "image": "/_portal/vshops/tri-life-353/g01.jpg",
+      "images": [
+        "/_portal/vshops/tri-life-353/g01.jpg",
+        "/_portal/vshops/tri-life-353/g02.jpg",
+        "/_portal/vshops/tri-life-353/g03.jpg",
+        "/_portal/vshops/tri-life-353/g04.jpg",
+        "/_portal/vshops/tri-life-353/g05.jpg",
+        "/_portal/vshops/tri-life-353/g06.jpg",
+        "/_portal/vshops/tri-life-353/g07.jpg",
+        "/_portal/vshops/tri-life-353/g08.jpg",
+        "/_portal/vshops/tri-life-353/g10.jpg",
+        "/_portal/vshops/tri-life-353/s17.jpg"
+      ],
+      "photos": [
+        {
+          "path": "/_portal/vshops/tri-life-353/g01.jpg",
+          "what": "鳥居",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 675
+        },
+        {
+          "path": "/_portal/vshops/tri-life-353/g02.jpg",
+          "what": "社殿と狛犬",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 800
+        },
+        {
+          "path": "/_portal/vshops/tri-life-353/g03.jpg",
+          "what": "馬の像",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-life-353/g04.jpg",
+          "what": "狛犬",
+          "kind": "exterior",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-life-353/g05.jpg",
+          "what": "手水舎",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-life-353/g06.jpg",
+          "what": "鳥居と参道",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-life-353/g07.jpg",
+          "what": "屋根付き水屋",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-life-353/g08.jpg",
+          "what": "境内の小祠",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-life-353/g10.jpg",
+          "what": "拝殿内部",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-life-353/s17.jpg",
+          "what": "社殿と提灯",
+          "kind": "exterior",
+          "width": 640,
+          "height": 480
+        }
+      ],
+      "tags": [],
+      "article": {
+        "headline": "神戸市兵庫区兵庫町の八幡神社。毎年1月18・19日の厄除大祭では厄払いの御祈祷と竹ふだが授与される",
+        "lede": "「湊八幡神社」は兵庫県神戸市兵庫区兵庫町にある神社です。御祭神は応神天皇で、天和２（1682）年以前の創祠が旧記によって確認できる古社です。昭和20（1945）年3月の戦災で社殿を焼失しましたが、昭和32年から37年にかけて再建されました。毎年1月18日・19日に行われる厄除大祭では、厄払いの御祈祷とともに竹ふだを授与しています。",
+        "sections": [
+          {
+            "heading": "場所とアクセス",
+            "body": "住所は兵庫県神戸市兵庫区兵庫町1丁目4-37、電話は078-671-7442です。神戸高速 新開地駅から南へ400m（徒歩約7分）、JR神戸線 神戸駅から西へ500m（徒歩約10分）、市営バス 七宮町バス停から北へ100m（徒歩約2分）です。専用駐車場はなく、公共交通機関または周辺の有料駐車場を利用します。"
+          },
+          {
+            "heading": "由緒と御祭神",
+            "body": "御祭神は応神天皇です。神功皇后が三韓征伐の帰途に摂津国岡野村に立ち寄られた際、応神天皇がお生まれになろうとしたため、その地の霊石をお探しになってご誕生を延期された縁起を持ちます。天和２（1682）年の旧記によって天和以前の創祠が確認でき、旧湊町1丁目（現兵庫区兵庫町）の氏神として祀られてきました。昭和20（1945）年3月の戦災で社宝とともに社殿を焼失し、現在の社殿は昭和32（1957）年から37（1962）年にかけて再建されたものです。境内には江戸時代後期の「迷い子のしるべ」の石碑があり、昭和46（1971）年4月に修復されるとともに同一のものが左側に建立されました。"
+          },
+          {
+            "heading": "厄除大祭と年間行事",
+            "body": "毎年1月18日・19日に厄除大祭が行われます。数え年で男性は25才・42才・61才、女性は19才・33才・61才が特に「大厄」とされ、その前後の年齢も「前厄」「後厄」と呼ばれます。厄除大祭では厄払いの御祈祷を受けることができ、竹ふだとともに授与されます。年間の主な行事は、元旦祭（1月1日）、厄除大祭（1月18・19日）、例祭（9月14日）、除夜祭（12月31日）です。"
+          },
+          {
+            "heading": "御祈祷",
+            "body": "御祈祷は神様の御加護を頂けるよう願い求めるお祭りです。厄除・家内安全・無病息災・諸願成就・交通安全のほか、車祓・神棚祭・地鎮祭・交通安全清祓など各種の御祈祷を受け付けています。受付は社務所にて「御祈祷申込書」に必要事項を記入して申し込みます。"
+          }
+        ],
+        "sources": [
+          {
+            "label": "公式サイト",
+            "url": "http://minatohathiman.web.fc2.com/"
+          },
+          {
+            "label": "公式サイト（由緒・年間行事）",
+            "url": "http://minatohathiman.web.fc2.com/yuisho/index.html"
+          },
+          {
+            "label": "公式サイト（厄よけ）",
+            "url": "http://minatohathiman.web.fc2.com/yakuyoke/index.html"
+          },
+          {
+            "label": "公式サイト（アクセス・お問い合わせ）",
+            "url": "http://minatohathiman.web.fc2.com/contact.html"
+          },
+          {
+            "label": "Google マップ",
+            "url": "https://maps.google.com/?cid=17753076144774869431"
+          }
+        ],
+        "checkedAt": "2026-11-04"
+      }
     }
   ]
 }

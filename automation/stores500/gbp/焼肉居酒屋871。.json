@@ -1,0 +1,22 @@
+{
+  "name": "焼肉居酒屋８７１。",
+  "address": "山梨県南都留郡富士河口湖町船津６８５４",
+  "lat": 35.4905513,
+  "lng": 138.762814,
+  "category": "焼肉店",
+  "hours": {
+    "月": "12:00–22:00",
+    "火": "12:00–22:00",
+    "水": "12:00–22:00",
+    "木": "12:00–22:00",
+    "金": "12:00–22:00",
+    "土": "12:00–22:00",
+    "日": "12:00–22:00"
+  },
+  "phone": "0555-73-8629",
+  "website": "http://www.871m.jp/?utm_source=GBP&utm_medium=GBP&utm_term=GBP&utm_content=GBP&utm_campaign=GBP",
+  "priceRange": null,
+  "status": null,
+  "gbpUrl": "https://maps.google.com/?cid=6588607701645149490",
+  "fetchedAt": "2026-11-04T02:24:27.008Z"
+}

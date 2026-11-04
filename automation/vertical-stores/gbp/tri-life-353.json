@@ -1,0 +1,32 @@
+{
+  "tab": "トリニティアポ",
+  "tabEn": "tri-life",
+  "row": 353,
+  "sheet": {
+    "name": "みなと八幡神社",
+    "address": "",
+    "url": "https://www.google.com/maps/search/?api=1&query=%E3%81%BF%E3%81%AA%E3%81%A8%E5%85%AB%E5%B9%A1%E7%A5%9E%E7%A4%BE%20078-671-7442%20%E3%80%92652-0813%20%E5%85%B5%E5%BA%AB%E7%9C%8C%E7%A5%9E%E6%88%B8%E5%B8%82%E5%85%B5%E5%BA%AB%E5%8C%BA%E5%85%B5%E5%BA%AB%E7%94%BA%EF%BC%91%E4%B8%81%E7%9B%AE%EF%BC%94%E2%88%92%EF%BC%93%EF%BC%97",
+    "type": "神社",
+    "d1": "",
+    "d2": ""
+  },
+  "urlKind": "mapsApi",
+  "route": "第1段(verify-gbp.mjs)で確認済み",
+  "verdict": "一致",
+  "verdictReason": "手がかり: 電話＋住所(番地まで)。電話が一致／店名: different(シート「みなと八幡神社」/ マップ「湊八幡神社」)／住所(シート): exact・町名・番地とも一致",
+  "place": {
+    "name": "湊八幡神社",
+    "address": "兵庫県神戸市兵庫区兵庫町１丁目４−３７",
+    "category": "神社",
+    "lat": 34.6731107,
+    "lng": 135.1740347,
+    "gbpUrl": "https://maps.google.com/?cid=17753076144774869431",
+    "phone": "078-671-7442",
+    "website": "http://minatohathiman.web.fc2.com/",
+    "hours": null,
+    "reserveLinks": [],
+    "statusSignals": [],
+    "closedSignal": false
+  },
+  "fetchedAt": "2026-11-04T03:23:55.158Z"
+}

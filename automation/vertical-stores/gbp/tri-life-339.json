@@ -1,0 +1,32 @@
+{
+  "tab": "トリニティアポ",
+  "tabEn": "tri-life",
+  "row": 339,
+  "sheet": {
+    "name": "太閤山常泉寺",
+    "address": "",
+    "url": "https://www.google.com/maps/search/?api=1&query=%E5%A4%AA%E9%96%A4%E5%B1%B1%E5%B8%B8%E6%B3%89%E5%AF%BA%20052-412-3467%20%E3%80%92467-0015%20%E6%84%9B%E7%9F%A5%E7%9C%8C%E5%90%8D%E5%8F%A4%E5%B1%8B%E5%B8%82%E7%91%9E%E7%A9%82%E5%8C%BA%E5%8D%81%E5%85%AD%E7%94%BA%EF%BC%92%E4%B8%81%E7%9B%AE%EF%BC%94",
+    "type": "寺",
+    "d1": "",
+    "d2": ""
+  },
+  "urlKind": "mapsApi",
+  "route": "第1段(verify-gbp.mjs)で確認済み",
+  "verdict": "一致",
+  "verdictReason": "手がかり: 店名＋電話。電話が一致／店名: exact(シート「太閤山常泉寺」/ マップ「太閤山 常泉寺」)／住所(シート): none・町名までがちがう（シート:愛知県名古屋市瑞穂区十六町 / マップ:愛知県名古屋市中村区中村町木下屋敷）",
+  "place": {
+    "name": "太閤山 常泉寺",
+    "address": "愛知県名古屋市中村区中村町木下屋敷４７番地",
+    "category": "仏教寺院",
+    "lat": 35.1743527,
+    "lng": 136.8560983,
+    "gbpUrl": "https://maps.google.com/?cid=2185029238802971483",
+    "phone": "052-412-3467",
+    "website": "https://jousenji.nagoya/",
+    "hours": null,
+    "reserveLinks": [],
+    "statusSignals": [],
+    "closedSignal": false
+  },
+  "fetchedAt": "2026-11-02T08:14:12.849Z"
+}

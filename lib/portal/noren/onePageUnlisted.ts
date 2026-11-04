@@ -122,6 +122,7 @@ export const ONE_PAGE_UNLISTED_SHOP_OF_FEATURE: Readonly<Record<string, string>>
   "十人十色": "r791", // 十人十色
   "ホルモン焼石橋屋": "r793", // ホルモン焼 石橋屋
   "寿司割烹酒場ゐまる（イマル）": "r792", // 寿司割烹酒場 ゐまる （イマル）
+  "焼肉居酒屋871。": "r850", // 焼肉居酒屋８７１。
 };
 
 const NFC = (s: string) => s.normalize("NFC");

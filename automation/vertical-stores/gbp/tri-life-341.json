@@ -1,0 +1,40 @@
+{
+  "tab": "トリニティアポ",
+  "tabEn": "tri-life",
+  "row": 341,
+  "sheet": {
+    "name": "矢作神社",
+    "address": "",
+    "url": "https://www.google.com/maps/search/?api=1&query=%E7%9F%A2%E4%BD%9C%E7%A5%9E%E7%A4%BE%20056-431-3399%20%E3%80%92444-0943%20%E6%84%9B%E7%9F%A5%E7%9C%8C%E5%B2%A1%E5%B4%8E%E5%B8%82%E7%9F%A2%E4%BD%9C%E7%94%BA%E5%AE%9D%E7%8F%A0%E5%BA%B5%EF%BC%91",
+    "type": "神社",
+    "d1": "",
+    "d2": ""
+  },
+  "urlKind": "mapsApi",
+  "route": "第1段(verify-gbp.mjs)で確認済み",
+  "verdict": "一致",
+  "verdictReason": "手がかり: 店名＋電話＋住所(番地まで)。電話が一致／店名: exact(シート「矢作神社」/ マップ「矢作神社」)／住所(シート): exact・町名・番地とも一致",
+  "place": {
+    "name": "矢作神社",
+    "address": "愛知県岡崎市矢作町宝珠庵１",
+    "category": "神社",
+    "lat": 34.9630917,
+    "lng": 137.1480781,
+    "gbpUrl": "https://maps.google.com/?cid=4630368226806341528",
+    "phone": "0564-31-3399",
+    "website": null,
+    "hours": {
+      "月": "24時間営業",
+      "火": "24時間営業",
+      "水": "24時間営業",
+      "木": "24時間営業",
+      "金": "24時間営業",
+      "土": "24時間営業",
+      "日": "24時間営業"
+    },
+    "reserveLinks": [],
+    "statusSignals": [],
+    "closedSignal": false
+  },
+  "fetchedAt": "2026-11-04T02:29:37.204Z"
+}

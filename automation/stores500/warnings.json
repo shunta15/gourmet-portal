@@ -3188,5 +3188,13 @@
       "営業時間が取れていない（noindex）",
       "cuisine は GBPカテゴリ"
     ]
+  },
+  "r850": {
+    "articleId": "焼肉居酒屋871。",
+    "name": "焼肉居酒屋８７１。",
+    "warnings": [
+      "desc は lede から事実の文を選べず、事実から作った定型文",
+      "cuisine は GBPカテゴリ"
+    ]
   }
 }

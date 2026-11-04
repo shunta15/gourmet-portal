@@ -1,0 +1,52 @@
+{
+  "commit": "4499efe1a1eac31d2a717da9ca9722012b83cb5c",
+  "source": "/Users/shunta/claude/gp-k-auto2",
+  "count": 4,
+  "added": [
+    {
+      "row": 339,
+      "name": "太閤山常泉寺",
+      "key": "tri-life-339",
+      "vertical": "くらし",
+      "id": "li0128",
+      "articleId": "li0128",
+      "shopUrl": "https://machinowa.tokyo/life/shop/li0128",
+      "articleUrl": "https://machinowa.tokyo/life/article/li0128",
+      "sheetUrl": "https://machinowa.tokyo/life/article/li0128"
+    },
+    {
+      "row": 385,
+      "name": "焼肉居酒屋８７１。",
+      "key": "lk-gourmet-385",
+      "vertical": "グルメ",
+      "id": "r850",
+      "articleId": "焼肉居酒屋871。",
+      "shopUrl": "https://machinowa.tokyo/restaurant/r850",
+      "articleUrl": "https://machinowa.tokyo/feature/焼肉居酒屋871。",
+      "sheetUrl": "https://machinowa.tokyo/feature/焼肉居酒屋871。"
+    },
+    {
+      "row": 341,
+      "name": "矢作神社",
+      "key": "tri-life-341",
+      "vertical": "くらし",
+      "id": "li0129",
+      "articleId": "li0129",
+      "shopUrl": "https://machinowa.tokyo/life/shop/li0129",
+      "articleUrl": "https://machinowa.tokyo/life/article/li0129",
+      "sheetUrl": "https://machinowa.tokyo/life/article/li0129"
+    },
+    {
+      "row": 353,
+      "name": "みなと八幡神社",
+      "key": "tri-life-353",
+      "vertical": "くらし",
+      "id": "li0130",
+      "articleId": "li0130",
+      "shopUrl": "https://machinowa.tokyo/life/shop/li0130",
+      "articleUrl": "https://machinowa.tokyo/life/article/li0130",
+      "sheetUrl": "https://machinowa.tokyo/life/article/li0130"
+    }
+  ],
+  "skipped": []
+}
