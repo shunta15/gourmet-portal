@@ -1,0 +1,40 @@
+{
+  "tab": "トリニティアポ",
+  "tabEn": "tri-life",
+  "row": 367,
+  "sheet": {
+    "name": "武信稲荷神社",
+    "address": "",
+    "url": "https://www.google.com/maps/search/?api=1&query=%E6%AD%A6%E4%BF%A1%E7%A8%B2%E8%8D%B7%E7%A5%9E%E7%A4%BE%20075-841-3023%20%E3%80%92604-8801%20%E4%BA%AC%E9%83%BD%E5%BA%9C%E4%BA%AC%E9%83%BD%E5%B8%82%E4%B8%AD%E4%BA%AC%E5%8C%BA%E4%BB%8A%E6%96%B0%E5%9C%A8%E5%AE%B6%E8%A5%BF%E7%94%BA%EF%BC%93%EF%BC%98",
+    "type": "神社",
+    "d1": "",
+    "d2": ""
+  },
+  "urlKind": "mapsApi",
+  "route": "第1段(verify-gbp.mjs)で確認済み",
+  "verdict": "一致",
+  "verdictReason": "手がかり: 店名＋電話＋住所(番地まで)。電話が一致／店名: exact(シート「武信稲荷神社」/ マップ「武信稲荷神社」)／住所(シート): exact・町名・番地とも一致",
+  "place": {
+    "name": "武信稲荷神社",
+    "address": "京都府京都市中京区今新在家西町３８",
+    "category": "神社",
+    "lat": 35.0075747,
+    "lng": 135.7466018,
+    "gbpUrl": "https://maps.google.com/?cid=13766766759393427247",
+    "phone": "075-841-3023",
+    "website": "http://takenobuinari.jp/",
+    "hours": {
+      "月": "09:00–18:00",
+      "火": "09:00–18:00",
+      "水": "09:00–18:00",
+      "木": "09:00–18:00",
+      "金": "09:00–18:00",
+      "土": "09:00–18:00",
+      "日": "09:00–18:00"
+    },
+    "reserveLinks": [],
+    "statusSignals": [],
+    "closedSignal": false
+  },
+  "fetchedAt": "2026-11-04T05:18:34.710Z"
+}

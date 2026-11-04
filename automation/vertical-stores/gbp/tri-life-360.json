@@ -1,0 +1,40 @@
+{
+  "tab": "トリニティアポ",
+  "tabEn": "tri-life",
+  "row": 360,
+  "sheet": {
+    "name": "佐保神社",
+    "address": "",
+    "url": "https://www.google.com/maps/search/?api=1&query=%E4%BD%90%E4%BF%9D%E7%A5%9E%E7%A4%BE%20079-542-0406%20%E3%80%92673-1431%20%E5%85%B5%E5%BA%AB%E7%9C%8C%E5%8A%A0%E6%9D%B1%E5%B8%82%E7%A4%BE%EF%BC%97%EF%BC%97%EF%BC%97",
+    "type": "神社",
+    "d1": "",
+    "d2": ""
+  },
+  "urlKind": "mapsApi",
+  "route": "第1段(verify-gbp.mjs)で確認済み",
+  "verdict": "一致",
+  "verdictReason": "手がかり: 店名＋電話＋住所(番地まで)。電話が一致／店名: exact(シート「佐保神社」/ マップ「佐保神社（式内社・旧縣社）」)／住所(シート): exact・町名・番地とも一致",
+  "place": {
+    "name": "佐保神社（式内社・旧縣社）",
+    "address": "兵庫県加東市社７７７",
+    "category": "神社",
+    "lat": 34.915946,
+    "lng": 134.9647153,
+    "gbpUrl": "https://maps.google.com/?cid=547302912844389302",
+    "phone": "0795-42-0406",
+    "website": "https://www.sahojinja.com/",
+    "hours": {
+      "月": "24時間営業",
+      "火": "24時間営業",
+      "水": "24時間営業",
+      "木": "24時間営業",
+      "金": "24時間営業",
+      "土": "24時間営業",
+      "日": "24時間営業"
+    },
+    "reserveLinks": [],
+    "statusSignals": [],
+    "closedSignal": false
+  },
+  "fetchedAt": "2026-11-04T05:17:50.647Z"
+}

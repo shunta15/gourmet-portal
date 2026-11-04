@@ -1,0 +1,40 @@
+{
+  "tab": "トリニティアポ",
+  "tabEn": "tri-life",
+  "row": 368,
+  "sheet": {
+    "name": "東龍寺",
+    "address": "",
+    "url": "https://www.google.com/maps/search/?api=1&query=%E6%9D%B1%E9%BE%8D%E5%AF%BA%20056-942-1401%20%E3%80%92479-0866%20%E6%84%9B%E7%9F%A5%E7%9C%8C%E5%B8%B8%E6%BB%91%E5%B8%82%E5%A4%A7%E9%87%8E%E7%94%BA%EF%BC%98%E4%B8%81%E7%9B%AE%EF%BC%96%EF%BC%98",
+    "type": "神社",
+    "d1": "",
+    "d2": ""
+  },
+  "urlKind": "mapsApi",
+  "route": "第1段(verify-gbp.mjs)で確認済み",
+  "verdict": "一致",
+  "verdictReason": "手がかり: 店名＋電話＋住所(番地まで)。電話が一致／店名: contains(シート「東龍寺」/ マップ「巌松山 来迎院 東龍寺」)／住所(シート): exact・町名・番地とも一致",
+  "place": {
+    "name": "巌松山 来迎院 東龍寺",
+    "address": "愛知県常滑市大野町８丁目６８",
+    "category": "仏教寺院",
+    "lat": 34.933825,
+    "lng": 136.824175,
+    "gbpUrl": "https://maps.google.com/?cid=586494298136337397",
+    "phone": "0569-42-1401",
+    "website": null,
+    "hours": {
+      "月": "09:00–17:00",
+      "火": "09:00–17:00",
+      "水": "09:00–17:00",
+      "木": "09:00–17:00",
+      "金": "09:00–17:00",
+      "土": "09:00–17:00",
+      "日": "09:00–17:00"
+    },
+    "reserveLinks": [],
+    "statusSignals": [],
+    "closedSignal": false
+  },
+  "fetchedAt": "2026-11-04T06:12:31.166Z"
+}

@@ -1,0 +1,22 @@
+{
+  "name": "AMBER329【南区/バー】",
+  "address": "熊本県熊本市南区出仲間８丁目１−１",
+  "lat": 32.769337,
+  "lng": 130.7179614,
+  "category": "バー",
+  "hours": {
+    "月": "19:00–00:00",
+    "火": "19:00–00:00",
+    "水": "19:00–00:00",
+    "木": "19:00–00:00",
+    "金": "19:00–00:00",
+    "土": "19:00–00:00",
+    "日": "19:00–00:00"
+  },
+  "phone": "090-9791-1088",
+  "website": "https://www.instagram.com/amber.329_idenakama?igsh=MXVmdnA1ejRnMjR2bQ==&utm_source=qr",
+  "priceRange": null,
+  "status": null,
+  "gbpUrl": "https://maps.google.com/?cid=13922828081996664243",
+  "fetchedAt": "2026-10-26T08:49:13.444Z"
+}

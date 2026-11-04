@@ -1,0 +1,189 @@
+{
+  "key": "tri-life-375",
+  "headline": "岸和田市岸城町に鎮座する岸和田城下の総鎮守。天照皇大神・素盞嗚尊・品陀別命を主祭神とし、岸和田祭（だんじり祭）発祥の宮として知られる神社です。",
+  "lede": "岸和田市にある「岸城神社」です。岸和田城下の総鎮守として知られ、岸和田祭（だんじり祭）発祥の宮です。御祭神は天照皇大神・素盞嗚尊・品陀別命の三柱で、境内には本殿のほか七間社・稲荷神社・岸和田戎殿など複数の末社が立ち並びます。",
+  "sections": [
+    {
+      "heading": "由緒と御祭神",
+      "body": "岸城神社の境内は、岸和田城主・小出秀政によって、隣邑に鎮座していた牛頭天王（素盞嗚尊）と天照大神・八幡神を合わせて成立しました。慶応四年の神仏判然令にともない牛頭天王社と八幡社を合祀して岸城神社と改称され、平成二十年（2008）の御社殿改築時に天照皇大神が本殿に増祀されました。牛頭天王は疫病退散を願って京都の感神院（現・八坂神社）から勧請されました。"
+    },
+    {
+      "heading": "境内のみどころ",
+      "body": "住吉・琴平・春日・菅原・日吉・愛宕・厳島の七社が合祀された七間社があります。手水舎の吐水口は千亀利城にちなんだ亀の形で、狛犬は関西では珍しい備前焼です。大絵馬は和泉高校美術部の生徒が描いたもので、良縁にちなんだ「契りの糸納所」も設けられています。境内にはミニ地車も置かれており、見学は神職にお声がけください。"
+    },
+    {
+      "heading": "ご祈祷と年間行事",
+      "body": "ご祈祷は午前9時〜11時半・午後1時〜3時半に受け付けています。個人祈祷のほか、安産祈祷・初宮詣・神前結婚式・出張祭典（地鎮祭・上棟祭など）にも対応しています。1月の十日戎大祭では神楽殿で日本唯一の「戎神楽」が奉納されます。8月15日の例大祭は年中行事中最も重要な神事で、敬老の日直前の土日には岸和田祭が斎行されます。"
+    },
+    {
+      "heading": "アクセス",
+      "body": "南海本線「蛸地蔵」駅から徒歩約7分、「岸和田」駅から徒歩約10分です。車の場合は阪神高速湾岸線岸和田南インターから約5分です。"
+    }
+  ],
+  "menus": [
+    {
+      "name": "個人祈祷"
+    },
+    {
+      "name": "安産祈祷"
+    },
+    {
+      "name": "初宮詣"
+    },
+    {
+      "name": "神前結婚式"
+    },
+    {
+      "name": "出張祭典（地鎮祭・竣工祭・上棟祭）"
+    }
+  ],
+  "tags": [
+    {
+      "tag": "駅近",
+      "factIndex": 16
+    }
+  ],
+  "facts": [
+    {
+      "claim": "岸城神社は岸和田城下の総鎮守である",
+      "source": "https://www.kishikijinja.jp/",
+      "quote": "岸和田城下総鎮守",
+      "checkedAt": "2026-11-04"
+    },
+    {
+      "claim": "岸和田祭（だんじり祭）の発祥の宮である",
+      "source": "https://www.kishikijinja.jp/",
+      "quote": "岸和田祭発祥の宮｜だんじり祭",
+      "checkedAt": "2026-11-04"
+    },
+    {
+      "claim": "御祭神は天照皇大神・素盞嗚尊・品陀別命の三柱である",
+      "source": "https://www.kishikijinja.jp/about.html",
+      "quote": "天照皇大神・素盞嗚尊・品陀別命",
+      "checkedAt": "2026-11-04"
+    },
+    {
+      "claim": "岸城神社の境内は岸和田城主・小出秀政によって成立した",
+      "source": "https://www.kishikijinja.jp/about.html",
+      "quote": "岸和田城主、小出秀政によって",
+      "checkedAt": "2026-11-04"
+    },
+    {
+      "claim": "牛頭天王社と八幡社を合祀し岸城神社と改称された",
+      "source": "https://www.kishikijinja.jp/about.html",
+      "quote": "牛頭天王社と八幡社を合祀し、岸城神社と改称",
+      "checkedAt": "2026-11-04"
+    },
+    {
+      "claim": "平成二十年（2008）の御社殿改築時に天照皇大神が本殿に増祀された",
+      "source": "https://www.kishikijinja.jp/about.html",
+      "quote": "平成二十年(2008)の御社殿改築時に天照皇大神が本殿に増祀",
+      "checkedAt": "2026-11-04"
+    },
+    {
+      "claim": "牛頭天王は疫病退散を願って京都の感神院（現・八坂神社）から勧請された",
+      "source": "https://www.kishikijinja.jp/about.html",
+      "quote": "疫病退散を願って京都の感神院(現 八坂神社)より勧請",
+      "checkedAt": "2026-11-04"
+    },
+    {
+      "claim": "手水舎の吐水口は千亀利城にちなんだ亀の形である",
+      "source": "https://www.kishikijinja.jp/map.html",
+      "quote": "千亀利城に因んだ、亀です",
+      "checkedAt": "2026-11-04"
+    },
+    {
+      "claim": "境内の狛犬は関西では珍しい備前焼である",
+      "source": "https://www.kishikijinja.jp/map.html",
+      "quote": "関西では珍しい、備前焼です",
+      "checkedAt": "2026-11-04"
+    },
+    {
+      "claim": "大絵馬は和泉高校美術部の生徒が描いた",
+      "source": "https://www.kishikijinja.jp/map.html",
+      "quote": "和泉高校美術部の生徒たちに描いていただきました",
+      "checkedAt": "2026-11-04"
+    },
+    {
+      "claim": "七間社には住吉・琴平・春日・菅原・日吉・愛宕・厳島の七社が合祀されている",
+      "source": "https://www.kishikijinja.jp/map.html",
+      "quote": "住吉神社・琴平神社・春日神社・菅原神社・日吉神社・愛宕神社・厳島神社",
+      "checkedAt": "2026-11-04"
+    },
+    {
+      "claim": "良縁にちなんだ「契りの糸納所」が境内に設けられている",
+      "source": "https://www.kishikijinja.jp/map.html",
+      "quote": "契りの糸納所",
+      "checkedAt": "2026-11-04"
+    },
+    {
+      "claim": "ご祈祷受付は午前9時〜11時半・午後1時〜3時半",
+      "source": "https://www.kishikijinja.jp/worship.html",
+      "quote": "午前9時〜午前１１時半 午後１時〜午後３時半",
+      "checkedAt": "2026-11-04"
+    },
+    {
+      "claim": "授与所の受付は午前9時〜正午・午後1時〜4時",
+      "source": "https://www.kishikijinja.jp/worship.html",
+      "quote": "午前9時〜正午 午後１時〜午後４時",
+      "checkedAt": "2026-11-04"
+    },
+    {
+      "claim": "個人祈祷のほか安産祈祷・初宮詣・神前結婚式・出張祭典に対応している",
+      "source": "https://www.kishikijinja.jp/worship.html",
+      "quote": "個人祈祷・安産祈祷・初宮詣・神前結婚式・出張祭典",
+      "checkedAt": "2026-11-04"
+    },
+    {
+      "claim": "1月の十日戎大祭では神楽殿で日本唯一の「戎神楽」が奉納される",
+      "source": "https://www.kishikijinja.jp/events.html",
+      "quote": "神楽殿では日本唯一「戎神楽」の奉納があります",
+      "checkedAt": "2026-11-04"
+    },
+    {
+      "claim": "南海本線「蛸地蔵」駅から徒歩約7分",
+      "source": "https://www.kishikijinja.jp/",
+      "quote": "蛸地蔵」駅より徒歩約７分",
+      "checkedAt": "2026-11-04"
+    },
+    {
+      "claim": "南海本線「岸和田」駅から徒歩約10分",
+      "source": "https://www.kishikijinja.jp/",
+      "quote": "岸和田」駅より徒歩約１０分",
+      "checkedAt": "2026-11-04"
+    },
+    {
+      "claim": "阪神高速湾岸線岸和田南インターから約5分",
+      "source": "https://www.kishikijinja.jp/",
+      "quote": "岸和田南インターより５分",
+      "checkedAt": "2026-11-04"
+    }
+  ],
+  "sources": [
+    {
+      "label": "公式サイト",
+      "url": "https://www.kishikijinja.jp/"
+    },
+    {
+      "label": "公式サイト(由緒・御祭神)",
+      "url": "https://www.kishikijinja.jp/about.html"
+    },
+    {
+      "label": "公式サイト(境内案内)",
+      "url": "https://www.kishikijinja.jp/map.html"
+    },
+    {
+      "label": "公式サイト(ご参拝・ご祈祷)",
+      "url": "https://www.kishikijinja.jp/worship.html"
+    },
+    {
+      "label": "公式サイト(年間行事)",
+      "url": "https://www.kishikijinja.jp/events.html"
+    },
+    {
+      "label": "Google マップ",
+      "url": "https://maps.google.com/?cid=16012471203041428222"
+    }
+  ],
+  "notes": "automation/v2/write.mjs が 2026-11-04 に claude -p --model sonnet で作成。事実の裏取り: 19/19 件(quote が出どころの内容に合うもの。言い換え可)。裏取りに通らなかった facts は載せていない。"
+}

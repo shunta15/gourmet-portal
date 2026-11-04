@@ -1,0 +1,22 @@
+{
+  "name": "日方珈琲焙煎所 海南本店",
+  "address": "和歌山県海南市日方４６３−１３",
+  "lat": 34.159756,
+  "lng": 135.2122979,
+  "category": "コーヒーショップ・喫茶店",
+  "hours": {
+    "月": "13:00–18:00",
+    "火": "定休日",
+    "水": "定休日",
+    "木": "13:00–18:00",
+    "金": "13:00–22:00",
+    "土": "13:00–18:00",
+    "日": "13:00–18:00"
+  },
+  "phone": "073-400-7197",
+  "website": "https://hikatacoffee.com/stores/kainan?utm_source=google&utm_medium=organic&utm_campaign=gbp_kainan",
+  "priceRange": null,
+  "status": null,
+  "gbpUrl": "https://maps.google.com/?cid=4091915396048405236",
+  "fetchedAt": "2026-11-04T02:26:57.139Z"
+}

@@ -1,0 +1,136 @@
+{
+  "key": "tri-life-344",
+  "images": [
+    {
+      "path": "/_portal/vshops/tri-life-344/g01.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9R9NxA91kENi0l8m6G5OoPCR-W_uLAVmw3AvTwLCLElweIsLHYwWkb2ta89-8WaD8QF-HQJzt2pmq9EGsWuA6PSB7VY1K-spJar3H-TLNFvOTi39daCq4ZjMTnjTLdMavYHZtdR29C2Ps4=s1200",
+      "pageUrl": "https://maps.google.com/?cid=3408626046463219244",
+      "what": "秋の紅葉に包まれた境内の建物",
+      "kind": "exterior",
+      "width": 1200,
+      "height": 900,
+      "source": "Google マップ"
+    },
+    {
+      "path": "/_portal/vshops/tri-life-344/g02.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9Q5YEyCS9btrP0Zk9rEOAUwjoMRGAMu5dLnjJA_img38WfWgnMNBTX0MWOTFfN_qumh3mwFADA06EOz7TdwtnC_1Kjq8DfOLoTXmf2aQFKe5uDtPAjJ7En_xbdhbsF_19apimLI=s1200",
+      "pageUrl": "https://maps.google.com/?cid=3408626046463219244",
+      "what": "円窓のある山門",
+      "kind": "exterior",
+      "width": 1200,
+      "height": 675,
+      "source": "Google マップ"
+    },
+    {
+      "path": "/_portal/vshops/tri-life-344/g04.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9QMEJCNjXxmb_2xXzhIwyOgpUSb_6y59Uh3p2QO0O0WAEZtBNwXkoMh6Pl2JF9UN4qfRzunvXeBEnq6wLOr_QYMVc8jnQGz_NZcXzg1syrMvfPWkXNq49Yl_8m1MhwTjNn4t3M-=s1200",
+      "pageUrl": "https://maps.google.com/?cid=3408626046463219244",
+      "what": "石段と緑の参道",
+      "kind": "exterior",
+      "width": 1200,
+      "height": 900,
+      "source": "Google マップ"
+    },
+    {
+      "path": "/_portal/vshops/tri-life-344/g05.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9SYsxnmJbEtS_XN3JuE4_hjnEqgPoY33Q8TPBBYwJfxVSlzDM8-_k5bj-wZ2lkJFcIcexAyHKzQmGjbt2oUeYjU150LgVtU_eyauSIaCdHqh9k-Q2Fi1PgbtY1rPwiTiDgWVT40=s1200",
+      "pageUrl": "https://maps.google.com/?cid=3408626046463219244",
+      "what": "石段と鮮やかな紅葉",
+      "kind": "exterior",
+      "width": 1200,
+      "height": 800,
+      "source": "Google マップ"
+    },
+    {
+      "path": "/_portal/vshops/tri-life-344/g09.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9QutE7swLG5USmZ2HNEgqlcmb6RLxYEQ84AK_XpjWsjynrOoTuhxWlJkTkABcB3oAGszMyIm6bvPJ5IXv5m6wsrgQ6T5cgmpPwFYMBRh7mi_JCEBvPoOGejX-mD1Kjx4L00oUp9=s1200",
+      "pageUrl": "https://maps.google.com/?cid=3408626046463219244",
+      "what": "石段と紅葉（縦位置）",
+      "kind": "exterior",
+      "width": 960,
+      "height": 1200,
+      "source": "Google マップ"
+    },
+    {
+      "path": "/_portal/vshops/tri-life-344/s01.jpg",
+      "imageUrl": "https://jojuji.org/r/index/1.jpg",
+      "pageUrl": "https://jojuji.org/",
+      "what": "秋の庭と建物の全景",
+      "kind": "common",
+      "width": 1280,
+      "height": 853,
+      "source": "公式サイト"
+    },
+    {
+      "path": "/_portal/vshops/tri-life-344/s02.jpg",
+      "imageUrl": "https://jojuji.org/r/index/2.jpg",
+      "pageUrl": "https://jojuji.org/",
+      "what": "障子越しに見る庭園",
+      "kind": "common",
+      "width": 1280,
+      "height": 853,
+      "source": "公式サイト"
+    },
+    {
+      "path": "/_portal/vshops/tri-life-344/s03.jpg",
+      "imageUrl": "https://jojuji.org/r/index/3.jpg",
+      "pageUrl": "https://jojuji.org/",
+      "what": "屋根と紅葉",
+      "kind": "exterior",
+      "width": 1280,
+      "height": 853,
+      "source": "公式サイト"
+    },
+    {
+      "path": "/_portal/vshops/tri-life-344/s04.jpg",
+      "imageUrl": "https://jojuji.org/r/index/4.jpg",
+      "pageUrl": "https://jojuji.org/",
+      "what": "池水式庭園",
+      "kind": "common",
+      "width": 1280,
+      "height": 853,
+      "source": "公式サイト"
+    },
+    {
+      "path": "/_portal/vshops/tri-life-344/s09.jpg",
+      "imageUrl": "https://jojuji.org/r/fascination/4.jpg",
+      "pageUrl": "https://jojuji.org/english.html",
+      "what": "開板（木魚）",
+      "kind": "common",
+      "width": 600,
+      "height": 400,
+      "source": "公式サイト"
+    },
+    {
+      "path": "/_portal/vshops/tri-life-344/s11.jpg",
+      "imageUrl": "https://jojuji.org/r/fascination/6.jpg",
+      "pageUrl": "https://jojuji.org/english.html",
+      "what": "方丈から望む庭園",
+      "kind": "common",
+      "width": 600,
+      "height": 400,
+      "source": "公式サイト"
+    },
+    {
+      "path": "/_portal/vshops/tri-life-344/s14.jpg",
+      "imageUrl": "https://jojuji.org/r/fascination/2.jpg",
+      "pageUrl": "https://jojuji.org/chinese.html",
+      "what": "亀甲竹の竹林",
+      "kind": "common",
+      "width": 600,
+      "height": 400,
+      "source": "公式サイト"
+    },
+    {
+      "path": "/_portal/vshops/tri-life-344/s17.jpg",
+      "imageUrl": "https://jojuji.org/r/chinese/1.jpg",
+      "pageUrl": "https://jojuji.org/chinese.html",
+      "what": "扉に描かれた人物の絵画",
+      "kind": "common",
+      "width": 600,
+      "height": 400,
+      "source": "公式サイト"
+    }
+  ],
+  "note": "automation/v2/write.mjs が 2026-11-04T06:53:16.402Z に取得。店の実写だけ(AI 画像・汎用画像・地図・ロゴ・顔が大きい画像は除外)。"
+}

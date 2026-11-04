@@ -1,0 +1,40 @@
+{
+  "tab": "トリニティアポ",
+  "tabEn": "tri-life",
+  "row": 352,
+  "sheet": {
+    "name": "甲子園八幡神社",
+    "address": "",
+    "url": "https://www.google.com/maps/search/?api=1&query=%E7%94%B2%E5%AD%90%E5%9C%92%E5%85%AB%E5%B9%A1%E7%A5%9E%E7%A4%BE%20079-834-1298%20%E3%80%92663-8114%20%E5%85%B5%E5%BA%AB%E7%9C%8C%E8%A5%BF%E5%AE%AE%E5%B8%82%E4%B8%8A%E7%94%B2%E5%AD%90%E5%9C%92%EF%BC%94%E4%B8%81%E7%9B%AE%EF%BC%94%E2%88%92%EF%BC%91%EF%BC%91",
+    "type": "神社",
+    "d1": "",
+    "d2": ""
+  },
+  "urlKind": "mapsApi",
+  "route": "第1段(verify-gbp.mjs)で確認済み",
+  "verdict": "一致",
+  "verdictReason": "手がかり: 店名＋電話＋住所(番地まで)。電話が一致／店名: exact(シート「甲子園八幡神社」/ マップ「甲子園八幡神社」)／住所(シート): exact・町名・番地とも一致",
+  "place": {
+    "name": "甲子園八幡神社",
+    "address": "兵庫県西宮市上甲子園４丁目４−１１",
+    "category": "神社",
+    "lat": 34.734222,
+    "lng": 135.365157,
+    "gbpUrl": "https://maps.google.com/?cid=10604922788539803198",
+    "phone": "0798-34-1298",
+    "website": "https://sites.google.com/view/koshienhachiman/",
+    "hours": {
+      "月": "09:00–17:00",
+      "火": "09:00–17:00",
+      "水": "09:00–17:00",
+      "木": "09:00–17:00",
+      "金": "09:00–17:00",
+      "土": "09:00–17:00",
+      "日": "09:00–17:00"
+    },
+    "reserveLinks": [],
+    "statusSignals": [],
+    "closedSignal": false
+  },
+  "fetchedAt": "2026-11-04T05:16:29.603Z"
+}

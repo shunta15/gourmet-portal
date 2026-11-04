@@ -1,0 +1,32 @@
+{
+  "tab": "トリニティアポ",
+  "tabEn": "tri-life",
+  "row": 364,
+  "sheet": {
+    "name": "浄土宗 専称寺",
+    "address": "",
+    "url": "https://www.google.com/maps/search/?api=1&query=%E6%B5%84%E5%9C%9F%E5%AE%97%20%E5%B0%82%E7%A7%B0%E5%AF%BA%20075-741-3061%20%E3%80%92601-1122%20%E4%BA%AC%E9%83%BD%E5%BA%9C%E4%BA%AC%E9%83%BD%E5%B8%82%E5%B7%A6%E4%BA%AC%E5%8C%BA%E9%9D%99%E5%B8%82%E9%87%8E%E4%B8%AD%E7%94%BA%EF%BC%91%EF%BC%97",
+    "type": "寺",
+    "d1": "",
+    "d2": ""
+  },
+  "urlKind": "mapsApi",
+  "route": "第1段(verify-gbp.mjs)で確認済み",
+  "verdict": "一致",
+  "verdictReason": "手がかり: 店名＋電話＋住所(番地まで)。電話が一致／店名: exact(シート「浄土宗 専称寺」/ マップ「浄土宗 専称寺」)／住所(シート): exact・町名・番地とも一致",
+  "place": {
+    "name": "浄土宗 専称寺",
+    "address": "京都府京都市左京区静市野中町１７",
+    "category": "仏教寺院",
+    "lat": 35.0907328,
+    "lng": 135.7644044,
+    "gbpUrl": "https://maps.google.com/?cid=17795219015241696532",
+    "phone": "075-741-3061",
+    "website": null,
+    "hours": null,
+    "reserveLinks": [],
+    "statusSignals": [],
+    "closedSignal": false
+  },
+  "fetchedAt": "2026-11-04T03:29:23.318Z"
+}

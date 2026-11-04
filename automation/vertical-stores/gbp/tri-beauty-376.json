@@ -1,0 +1,40 @@
+{
+  "tab": "トリニティアポ",
+  "tabEn": "tri-beauty",
+  "row": 376,
+  "sheet": {
+    "name": "Relaxation Space PADMA",
+    "address": "",
+    "url": "https://www.google.com/maps/search/?api=1&query=Relaxation%20Space%20PADMA%20080-5554-0454%20%E3%80%92965-0862%20%E7%A6%8F%E5%B3%B6%E7%9C%8C%E4%BC%9A%E6%B4%A5%E8%8B%A5%E6%9D%BE%E5%B8%82%E6%9C%AC%E7%94%BA%EF%BC%93%E2%88%92%EF%BC%91%EF%BC%98",
+    "type": "美容",
+    "d1": "",
+    "d2": ""
+  },
+  "urlKind": "mapsApi",
+  "route": "第1段(verify-gbp.mjs)で確認済み",
+  "verdict": "一致",
+  "verdictReason": "手がかり: 店名＋電話＋住所(番地まで)。電話が一致／店名: exact(シート「Relaxation Space PADMA」/ マップ「Relaxation Space PADMA」)／住所(シート): exact・町名・番地とも一致",
+  "place": {
+    "name": "Relaxation Space PADMA",
+    "address": "福島県会津若松市本町３−１８",
+    "category": "アロマセラピー サービス",
+    "lat": 37.4923984,
+    "lng": 139.9192593,
+    "gbpUrl": "https://maps.google.com/?cid=1175822949533592102",
+    "phone": "080-5554-0454",
+    "website": "https://aizu.mypl.net/shop/00000383006/",
+    "hours": {
+      "月": "10:00–20:00",
+      "火": "10:00–20:00",
+      "水": "10:00–20:00",
+      "木": "10:00–20:00",
+      "金": "10:00–20:00",
+      "土": "10:00–20:00",
+      "日": "10:00–20:00"
+    },
+    "reserveLinks": [],
+    "statusSignals": [],
+    "closedSignal": false
+  },
+  "fetchedAt": "2026-11-04T06:17:15.600Z"
+}

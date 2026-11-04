@@ -1,0 +1,22 @@
+{
+  "name": "お食事処 まつした",
+  "address": "大分県宇佐市院内町高並６５４−１",
+  "lat": 33.4491045,
+  "lng": 131.3158586,
+  "category": "和食店",
+  "hours": {
+    "月": "定休日",
+    "火": "定休日",
+    "水": "定休日",
+    "木": "定休日",
+    "金": "11:30–15:00, 18:00–21:00",
+    "土": "11:30–15:00, 18:00–21:00",
+    "日": "11:30–15:00, 18:00–21:00"
+  },
+  "phone": "0978-42-7278",
+  "website": "https://matsushita-r7-0404.com/?utm_source=GBP&utm_medium=GBP&utm_term=GBP&utm_content=GBP&utm_campaign=GBP",
+  "priceRange": null,
+  "status": null,
+  "gbpUrl": "https://maps.google.com/?cid=8988385877388450015",
+  "fetchedAt": "2026-11-04T05:11:36.379Z"
+}

@@ -1,0 +1,277 @@
+{
+  "key": "tri-activity-351",
+  "vertical": "activity",
+  "storeName": "想古亭げんない",
+  "article": {
+    "id": "想古亭げんない",
+    "no": "",
+    "articleType": "guide",
+    "kicker": "SOKOTEI GENNAI NAGAHAMA",
+    "title": "滋賀県長浜市・木ノ本町の料亭旅館「想古亭げんない」。備長炭で焼く炭焼きうなぎと琵琶湖の湖魚、近江牛、貸切風呂の日帰りプラン",
+    "titleHTML": "奥琵琶湖に近い料亭旅館<br><em>想古亭げんない</em>の炭焼きうなぎと湖魚料理、近江牛、貸切風呂",
+    "subtitle": "料亭旅館 / 滋賀県長浜市木ノ本町 / 炭焼きうなぎ・琵琶湖の湖魚・近江牛・貸切風呂",
+    "lede": "滋賀県長浜市木ノ本町の想古亭げんないは、奥琵琶湖に近い山あいの料亭旅館だ。備長炭を使ったかば焼きは、90年余りにわたって積み重ねてきたタレで仕上げる炭焼きうなぎだ。天然ビワマスや湖産エビなど琵琶湖の食材を使った料理と近江牛があり、貸切風呂「懐古の湯」は日帰りでも利用できる。",
+    "date": "2026-11-04",
+    "reading": "",
+    "author": "マチノワ編集部",
+    "heroImage": "/_portal/vshops/tri-activity-351/g01.jpg",
+    "ogImage": "/_portal/vshops/tri-activity-351/g01.jpg",
+    "ranking": [
+      {
+        "rank": "POINT 01",
+        "rankNum": 1,
+        "name": "備長炭で焼く炭焼きうなぎ。90年余りのタレで仕上げるかば焼き",
+        "cuisine": "炭焼きうなぎ",
+        "area": "長浜市",
+        "purpose": "炭焼きうなぎの特徴を知りたい人へ",
+        "desc": "かば焼きは備長炭を使って焼き上げる。タレは炭焼きうなぎを始めて90年余りにわたって積み重ねてきたもので、想古亭げんないの料理の中心にある。日帰りプランには炭焼きうなぎと湖魚お造りのプランや、近江牛すき焼きと炭焼きうなぎのプランなど、うなぎを含む複数のコースが用意されている。",
+        "images": [
+          "/_portal/vshops/tri-activity-351/g08.jpg"
+        ],
+        "specs": [
+          {
+            "k": "調理法",
+            "v": "備長炭で焼き上げるかば焼き"
+          },
+          {
+            "k": "タレ",
+            "v": "90年余りにわたって積み重ねてきたタレ"
+          }
+        ]
+      },
+      {
+        "rank": "POINT 02",
+        "rankNum": 2,
+        "name": "天然ビワマスと湖産エビ。琵琶湖の食材を使ったオリジナル料理",
+        "cuisine": "湖魚料理",
+        "area": "長浜市",
+        "purpose": "琵琶湖の湖魚料理を知りたい人へ",
+        "desc": "天然ビワマスは地元の新鮮野菜とともに提供される、当代の料理人が考案したオリジナル料理だ。湖産のエビをたっぷり使ったかき揚げもある。ご飯は土鍋炊きで提供される。",
+        "images": [
+          "/_portal/vshops/tri-activity-351/g02.jpg"
+        ],
+        "specs": [
+          {
+            "k": "ビワマス",
+            "v": "地元の新鮮野菜とともに・当代考案のオリジナル料理"
+          },
+          {
+            "k": "湖産エビ",
+            "v": "たっぷり使ったかき揚げ"
+          }
+        ]
+      },
+      {
+        "rank": "POINT 03",
+        "rankNum": 3,
+        "name": "近江牛すき焼きとサーロインステーキ。日帰りプランの選択肢",
+        "cuisine": "近江牛",
+        "area": "長浜市",
+        "purpose": "近江牛料理のプランを知りたい人へ",
+        "desc": "日帰りプランには、近江牛すき焼きと炭焼きうなぎのプランや、近江牛サーロインステーキのプランがある。サーロインは30か月以上かけて育てられた近江牛を使っている。",
+        "images": [
+          "/_portal/vshops/tri-activity-351/g07.jpg"
+        ],
+        "specs": [
+          {
+            "k": "すき焼き",
+            "v": "近江牛すき焼きと炭焼きうなぎのプランあり"
+          },
+          {
+            "k": "サーロインステーキ",
+            "v": "30か月以上かけて育てられた近江牛サーロイン"
+          }
+        ]
+      },
+      {
+        "rank": "POINT 04",
+        "rankNum": 4,
+        "name": "貸切風呂「懐古の湯」。日帰りの入浴と食事セット",
+        "cuisine": "貸切風呂",
+        "area": "長浜市",
+        "purpose": "貸切風呂の利用方法を知りたい人へ",
+        "desc": "「賎ヶ岳・光明石の湯」の貸切風呂「懐古の湯」は、日帰りでも利用できる。入浴のみの日帰り利用と、食事とセットの利用のどちらにも対応している。日帰りプランの中には、昼夜二食付き貸切風呂プランもある。",
+        "images": [
+          "/_portal/vshops/tri-activity-351/g05.jpg"
+        ],
+        "specs": [
+          {
+            "k": "日帰り入浴",
+            "v": "貸切風呂・食事とセットも可"
+          },
+          {
+            "k": "プラン",
+            "v": "昼夜二食付き貸切風呂プランあり"
+          }
+        ]
+      }
+    ],
+    "sideArticles": [],
+    "quote": "備長炭を使って焼き上げるかば焼きは、90年余りにわたって積み重ねてきたタレで仕上げる。天然ビワマスは地元の新鮮野菜とともに提供される当代考案のオリジナル料理で、湖産のエビをたっぷり使ったかき揚げもある。",
+    "quoteCite": "マチノワ編集部",
+    "closing": "日帰りプランのチェックインは午前11時、チェックアウトは午後9時で、休前日は利用できない。昼食は11時から、夕食は17時からで、朝風呂と朝食のプランは8時から10時の利用だ。支払いは現金のみ。JR木ノ本駅からはロンドンタクシーの送迎があるが、事前の連絡が必要だ。車は北陸自動車道の木ノ本ICから国道8号を左折して200m進み、信号で右折して橋を渡ると約300mの場所にある。"
+  },
+  "summary": "想古亭げんないの料理と施設を整理。備長炭で焼く90年余りの炭焼きうなぎ、天然ビワマスと湖産エビの湖魚料理、近江牛すき焼きとサーロインステーキ、貸切風呂「懐古の湯」の日帰り利用の条件をまとめた。",
+  "tags": [
+    "観光・見学",
+    "長浜市"
+  ],
+  "charCount": 817,
+  "facts": [
+    {
+      "claim": "炭焼きうなぎは90年余りの歴史がある",
+      "source": "https://www.gennai.jp/oneday/",
+      "quote": "炭焼きうなぎを始めて90年余り。その間に積み重ねてきたタレを使ったかば焼きは想古亭げんないの味そのものです。",
+      "checkedAt": "2026-11-04"
+    },
+    {
+      "claim": "かば焼きは備長炭で焼き上げる",
+      "source": "https://www.gennai.jp/oneday/",
+      "quote": "かば焼きは、備長炭を使って焼きあげます。",
+      "checkedAt": "2026-11-04"
+    },
+    {
+      "claim": "天然ビワマスは当代の料理人が考案したオリジナル料理",
+      "source": "https://www.gennai.jp/dishes/",
+      "quote": "天然ビワマスを地元の新鮮野菜とともにお楽しみください。当代亭主が考案したオリジナル料理です。",
+      "checkedAt": "2026-11-04"
+    },
+    {
+      "claim": "湖産エビのかき揚げがある",
+      "source": "https://www.gennai.jp/dishes/",
+      "quote": "湖産のエビをたっぷり使ったサクサクのかき揚げ",
+      "checkedAt": "2026-11-04"
+    },
+    {
+      "claim": "近江牛サーロインは30か月以上かけて育てたもの",
+      "source": "https://www.gennai.jp/oneday/",
+      "quote": "30か月以上かけて育てられた近江牛サーロイン",
+      "checkedAt": "2026-11-04"
+    },
+    {
+      "claim": "客室は和室7室",
+      "source": "https://www.gennai.jp/rooms/",
+      "quote": "部屋室数 和室／7室",
+      "checkedAt": "2026-11-04"
+    },
+    {
+      "claim": "日帰りプランのチェックインは午前11時、チェックアウトは午後9時",
+      "source": "https://www.gennai.jp/oneday/",
+      "quote": "■午前11時チェックイン、午後9時チェックアウト。",
+      "checkedAt": "2026-11-04"
+    },
+    {
+      "claim": "支払いは現金のみ",
+      "source": "https://www.gennai.jp/dishes/",
+      "quote": "お支払いは現金でお願いしております",
+      "checkedAt": "2026-11-04"
+    },
+    {
+      "claim": "朝風呂と朝食のプランは8時から10時",
+      "source": "https://www.gennai.jp/oneday/",
+      "quote": "■ご利用時間/8時～10時",
+      "checkedAt": "2026-11-04"
+    },
+    {
+      "claim": "日帰りプランは休前日は利用できない",
+      "source": "https://www.gennai.jp/oneday/",
+      "quote": "【休前日は除く】",
+      "checkedAt": "2026-11-04"
+    }
+  ],
+  "images": [
+    {
+      "path": "/_portal/vshops/tri-activity-351/g01.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9RWxUwwCIWMAm3BBZt_EjKQdvo0wr6aJe_iLpnqLzLg2H7B6imyefBkAvcPU4pf0zLJDQjzXL7LARN-r5oP2LVGjUT11zEO1Epn35WAd0Dzy9_TProm88xTKBP4-X_VbcZmfaf9M6Vd3tym=s1200",
+      "pageUrl": "https://maps.google.com/?cid=301002931659771443",
+      "what": "旅館の外観。茅葺き風の建物と木々"
+    },
+    {
+      "path": "/_portal/vshops/tri-activity-351/g02.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9QrDeT_Kyc0EJq-h-F-cuLcss_okabz8lSOuScCWI74CpIwBXmYs5dP3gnPuLHtE30R7hZ7XnTu88rJtkVOp8mopwFnZVVZvBZd2D5b7fTUEXpvGEESOl9j6Ca7CJB9I-jNmpRf=s1200",
+      "pageUrl": "https://maps.google.com/?cid=301002931659771443",
+      "what": "魚料理のアップ。皿に盛られた魚"
+    },
+    {
+      "path": "/_portal/vshops/tri-activity-351/g03.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-proxy/ALd4DhHd5evgwcRFZtd8NksAzCcJZegbh0pCJnBxXPlxN9HbnAjjFqehVFkc0YXmPojUYvm8OXJ2YqPWXmgnubj4Dz_BPXUOX1xieAiHAFx1Y6MIq4zSySQXOR6JXrTqG8b4PfiNZL4zDv8FxcY1S1Zdqu6nOYA_MXaNgaAVR-s1r2fdgZrTIq5NfYs=s1200",
+      "pageUrl": "https://maps.google.com/?cid=301002931659771443",
+      "what": "赤い壁のある和室インテリア"
+    },
+    {
+      "path": "/_portal/vshops/tri-activity-351/g04.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9TjwiD_0M_6Kxgrxk0eYFSoA5-4UCmpSv6tlYQ2XYspehI54opD1O9zVab5Gh5k1pZSo2hltotlZo6rHsrfl-FVtj5uQMJWW71tI9YLZrvyFdQ-EW5Ulwzqu91u14GiESETL9Q8OA=s1200",
+      "pageUrl": "https://maps.google.com/?cid=301002931659771443",
+      "what": "木の部屋の貸切風呂"
+    },
+    {
+      "path": "/_portal/vshops/tri-activity-351/g05.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9TUd2rv5mj0-io1xJluyO1WglhiZXkwdZVHw34TOSjmnl_UinLhCeGQIupLBDK-b1WdGvfKTcuNl-MmB04egrzbC3Ty_LNpPXbVOfXnjRRIJPHLT2UY99Cta7Ps1qRBjbYROusUHo1ecsFO=s1200",
+      "pageUrl": "https://maps.google.com/?cid=301002931659771443",
+      "what": "木造の内湯。窓から光が差し込む"
+    },
+    {
+      "path": "/_portal/vshops/tri-activity-351/g06.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9Ri5982n23RymiL-b0Thnght0Y7zZ4Vokli20KocxHDdHSfyPd9t8I1hvcV2yZ7DiU2UtF9__G7ccCiF95O4gT9hzaQ4Ku_fGsfB6cJAoDm2cWSt3su07UCiaCBo9o0bKH2o00kZZwMC4Hl=s1200",
+      "pageUrl": "https://maps.google.com/?cid=301002931659771443",
+      "what": "庭が見える和室。座卓と縁側"
+    },
+    {
+      "path": "/_portal/vshops/tri-activity-351/g07.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9R962iISI5vLWhQVPpPQTOrEAnV7tMxBDSOKXnbzo44RwBU5Sop5GtBSniNlP-0VnCLJrbR5BY_F4lobrusAB9mt5Lrm5ksQAA1DnAtu9fbl-5Kemw4_z7TNrvDNxwUssNvpHYDePyzknO_=s1200",
+      "pageUrl": "https://maps.google.com/?cid=301002931659771443",
+      "what": "会席料理のコース。複数の料理が並ぶ"
+    },
+    {
+      "path": "/_portal/vshops/tri-activity-351/g08.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9SLvmWZ4c6Jy8GNajYd07ngsSL8c34KgLvVOVrm0n1jM_0AQx4Td_O4PzZxYbVg7LOjJ-N2pG7b9LAwc40tyXKNJDgLY2vG92yrlOyjWz6zsMUmdtqnJiDgCYsODCuw8_hpoV2G=s1200",
+      "pageUrl": "https://maps.google.com/?cid=301002931659771443",
+      "what": "鉄鍋の調理シーン"
+    },
+    {
+      "path": "/_portal/vshops/tri-activity-351/g09.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9QwBCESUUX2SlxccOYAV45pZGTaLe71ezuyo2AUtZhI1yrI4kGX0syYETpSWIs55GswZ_N2xjYw0sq-AIjv1SMmlzBoRwgCPl-L_d1rVhvnnjDqtdI46y2hr6qeoNXV5WDehIq4DCyrXmjt=s1200",
+      "pageUrl": "https://maps.google.com/?cid=301002931659771443",
+      "what": "石段と石灯籠のある外観"
+    },
+    {
+      "path": "/_portal/vshops/tri-activity-351/g10.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9RkH5SeeH3G_ffHi1vStTjiYojjogQ5PHVEyT62rA7Mm9uAtgV3OoKO9QvBQ-D7jsi5slsF8iOxz2kdHC_qkKd78vAkpxBi-UedkKy2_QmRr7y7mE99kroK3TOKaq0vPZEWyvJVLt9VYx3G=s1200",
+      "pageUrl": "https://maps.google.com/?cid=301002931659771443",
+      "what": "旅館の入り口付近の外観"
+    },
+    {
+      "path": "/_portal/vshops/tri-activity-351/s07.jpg",
+      "imageUrl": "https://www.gennai.jp/images/home/img_main04.png",
+      "pageUrl": "https://www.gennai.jp/",
+      "what": "清潔感のある和室。窓際の座卓"
+    }
+  ],
+  "sources": [
+    {
+      "label": "公式サイト（トップ）",
+      "url": "http://www.gennai.jp/"
+    },
+    {
+      "label": "公式サイト（アクセス）",
+      "url": "https://www.gennai.jp/access/"
+    },
+    {
+      "label": "公式サイト（お料理）",
+      "url": "https://www.gennai.jp/dishes/"
+    },
+    {
+      "label": "公式サイト（お部屋）",
+      "url": "https://www.gennai.jp/rooms/"
+    },
+    {
+      "label": "公式サイト（日帰りプラン）",
+      "url": "https://www.gennai.jp/oneday/"
+    },
+    {
+      "label": "Google マップ",
+      "url": "https://maps.google.com/?cid=301002931659771443"
+    }
+  ],
+  "notes": "automation/v2/write.mjs が 2026-11-04 に作成。"
+}

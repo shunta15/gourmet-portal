@@ -1,0 +1,110 @@
+{
+  "key": "tri-life-361",
+  "headline": "神奈川県厚木市中荻野の臨済宗寺院。百丈山養徳寺は永和年間の開創で、江戸幕府の御朱印状を受けた歴史を持つ",
+  "lede": "神奈川県厚木市中荻野にある「百丈山 養徳寺（ようとくじ）」は、臨済宗円覚寺派の寺院です。鎌倉の円覚寺を本山とし、江戸幕府の庇護を受けた歴史を持ちます。狩野派の絵師による文化財の絵画を所蔵し、厚木十二支寺社巡りの「未（ひつじ）」の札所にもなっています。",
+  "sections": [
+    {
+      "heading": "由緒と歴史",
+      "body": "養徳寺は永和年間（1370年代）、舟庵禅竜和尚によって開かれたと伝えられています。慶安2年（1649年）には江戸幕府から寺領5石9斗の御朱印状を受け、幕府の庇護を得ました。その後荒廃の時期を経ましたが、寛政8年（1796年）に梅岩によって再興されました。天保7年（1836年）の火災で堂舎を失いましたが、実岩と良円によって再建されています。"
+    },
+    {
+      "heading": "境内と文化財",
+      "body": "御本尊は虚空蔵菩薩です。境内には、江戸時代の記録に残る秋葉社・金毘羅社・天神社・稲荷社・地蔵堂が並んでいます。文化財として、中荻野出身の狩野派絵師・島崎旦良と上荻野出身の絵師・井上五川による作品が指定を受けており、寺に所蔵されています。また、厚木十二支寺社巡りの「未（ひつじ）」の札所となっています。"
+    },
+    {
+      "heading": "アクセスと参拝",
+      "body": "住所は神奈川県厚木市中荻野1635、電話は046-241-4082です。小田急線「本厚木駅」から路線バスに乗り、「公所」バス停で降りて徒歩1分です。境内に駐車場があります。"
+    }
+  ],
+  "menus": [],
+  "tags": [],
+  "facts": [
+    {
+      "claim": "臨済宗円覚寺派の寺院",
+      "source": "https://tesshow.jp/kanagawa/atsugi/temple_ogino_yotok.html",
+      "quote": "宗派 : 臨済宗円覚寺派",
+      "checkedAt": "2026-11-04"
+    },
+    {
+      "claim": "山号は百丈山",
+      "source": "https://tesshow.jp/kanagawa/atsugi/temple_ogino_yotok.html",
+      "quote": "山号 : 百丈山",
+      "checkedAt": "2026-11-04"
+    },
+    {
+      "claim": "永和年間（1370年代）に舟庵禅竜和尚によって開かれたと伝えられている",
+      "source": "https://hotokami.jp/area/kanagawa/Hkyta/Hkytatk/Dspmr/55050/",
+      "quote": "永和2年（1375年）、舟庵禅竜和尚によって開かれたと伝えられています",
+      "checkedAt": "2026-11-04"
+    },
+    {
+      "claim": "鎌倉の円覚寺を本山とする末寺",
+      "source": "https://hotokami.jp/area/kanagawa/Hkyta/Hkytatk/Dspmr/55050/",
+      "quote": "鎌倉円覚寺の末寺",
+      "checkedAt": "2026-11-04"
+    },
+    {
+      "claim": "慶安2年（1649年）に江戸幕府から寺領5石9斗の御朱印状を受けた",
+      "source": "https://tesshow.jp/kanagawa/atsugi/temple_ogino_yotok.html",
+      "quote": "慶安2年（1649）江戸幕府より寺領5石9斗の御朱印状を受ける",
+      "checkedAt": "2026-11-04"
+    },
+    {
+      "claim": "寛政8年（1796年）に梅岩によって再興された",
+      "source": "https://tesshow.jp/kanagawa/atsugi/temple_ogino_yotok.html",
+      "quote": "寛政8年（1796）梅岩により再興",
+      "checkedAt": "2026-11-04"
+    },
+    {
+      "claim": "御本尊は虚空蔵菩薩",
+      "source": "https://hotokami.jp/area/kanagawa/Hkyta/Hkytatk/Dspmr/55050/",
+      "quote": "御本尊 虚空蔵菩薩",
+      "checkedAt": "2026-11-04"
+    },
+    {
+      "claim": "厚木十二支寺社巡りの「未」の札所",
+      "source": "https://hotokami.jp/area/kanagawa/Hkyta/Hkytatk/Dspmr/55050/",
+      "quote": "厚木十二支寺社巡りの未の札所",
+      "checkedAt": "2026-11-04"
+    },
+    {
+      "claim": "中荻野出身の狩野派絵師・島崎旦良と上荻野出身の絵師・井上五川による作品が文化財に指定されている",
+      "source": "https://hotokami.jp/area/kanagawa/Hkyta/Hkytatk/Dspmr/55050/",
+      "quote": "中荻野出身の狩野派絵師・島崎旦良と上荻野出身の絵師・井上五川の作品が文化財指定",
+      "checkedAt": "2026-11-04"
+    },
+    {
+      "claim": "境内に秋葉社・金毘羅社・天神社・稲荷社・地蔵堂がある",
+      "source": "https://tesshow.jp/kanagawa/atsugi/temple_ogino_yotok.html",
+      "quote": "境内に秋葉社、金毘羅社、天神社、稲荷社、地蔵堂",
+      "checkedAt": "2026-11-04"
+    },
+    {
+      "claim": "小田急線「本厚木駅」から「公所」バス停下車徒歩1分",
+      "source": "https://hotokami.jp/area/kanagawa/Hkyta/Hkytatk/Dspmr/55050/",
+      "quote": "小田急線「本厚木駅」より「公所」バス停下車徒歩1分",
+      "checkedAt": "2026-11-04"
+    },
+    {
+      "claim": "境内に駐車場がある",
+      "source": "https://hotokami.jp/area/kanagawa/Hkyta/Hkytatk/Dspmr/55050/",
+      "quote": "駐車場 あり",
+      "checkedAt": "2026-11-04"
+    }
+  ],
+  "sources": [
+    {
+      "label": "猫の足あと",
+      "url": "https://tesshow.jp/kanagawa/atsugi/temple_ogino_yotok.html"
+    },
+    {
+      "label": "ホトカミ",
+      "url": "https://hotokami.jp/area/kanagawa/Hkyta/Hkytatk/Dspmr/55050/"
+    },
+    {
+      "label": "Google マップ",
+      "url": "https://maps.google.com/?cid=15016866922953696658"
+    }
+  ],
+  "notes": "automation/v2/write.mjs が 2026-11-04 に claude -p --model sonnet で作成。事実の裏取り: 12/14 件(quote が出どころの内容に合うもの。言い換え可)。裏取りに通らなかった facts は載せていない。"
+}

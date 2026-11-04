@@ -1,0 +1,40 @@
+{
+  "tab": "トリニティアポ",
+  "tabEn": "tri-life",
+  "row": 344,
+  "sheet": {
+    "name": "浄住寺",
+    "address": "",
+    "url": "https://www.google.com/maps/search/?api=1&query=%E6%B5%84%E4%BD%8F%E5%AF%BA%20075-381-6029%20%E3%80%92615-8276%20%E4%BA%AC%E9%83%BD%E5%BA%9C%E4%BA%AC%E9%83%BD%E5%B8%82%E8%A5%BF%E4%BA%AC%E5%8C%BA%E5%B1%B1%E7%94%B0%E9%96%8B%E3%82%AD%E7%94%BA%EF%BC%99",
+    "type": "寺",
+    "d1": "",
+    "d2": ""
+  },
+  "urlKind": "mapsApi",
+  "route": "第1段(verify-gbp.mjs)で確認済み",
+  "verdict": "一致",
+  "verdictReason": "手がかり: 店名＋電話＋住所(番地まで)。電話が一致／店名: exact(シート「浄住寺」/ マップ「浄住寺」)／住所(シート): exact・町名・番地とも一致",
+  "place": {
+    "name": "浄住寺",
+    "address": "京都府京都市西京区山田開キ町９",
+    "category": "仏教寺院",
+    "lat": 34.9887874,
+    "lng": 135.6861618,
+    "gbpUrl": "https://maps.google.com/?cid=3408626046463219244",
+    "phone": "075-381-6029",
+    "website": "https://jojuji.org/",
+    "hours": {
+      "月": "07:00–16:00",
+      "火": "07:00–16:00",
+      "水": "07:00–16:00",
+      "木": "07:00–16:00",
+      "金": "07:00–16:00",
+      "土": "07:00–16:00",
+      "日": "07:00–16:00"
+    },
+    "reserveLinks": [],
+    "statusSignals": [],
+    "closedSignal": false
+  },
+  "fetchedAt": "2026-11-04T02:31:53.382Z"
+}

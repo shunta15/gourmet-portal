@@ -1,0 +1,40 @@
+{
+  "tab": "トリニティアポ",
+  "tabEn": "tri-life",
+  "row": 374,
+  "sheet": {
+    "name": "福徳院",
+    "address": "",
+    "url": "https://www.google.com/maps/search/?api=1&query=%E7%A6%8F%E5%BE%B3%E9%99%A2%20045-821-1717%20%E3%80%92233-0015%20%E7%A5%9E%E5%A5%88%E5%B7%9D%E7%9C%8C%E6%A8%AA%E6%B5%9C%E5%B8%82%E6%B8%AF%E5%8D%97%E5%8C%BA%E6%97%A5%E9%99%90%E5%B1%B1%EF%BC%91%E4%B8%81%E7%9B%AE%EF%BC%96%EF%BC%97%E2%88%92%EF%BC%93%EF%BC%90%20%E6%97%A5%E9%99%90%E5%B1%B1%E5%9C%B0%E8%94%B5%E5%B0%8A%E9%AB%98%E9%87%8E%E5%B1%B1%E7%9C%9F%E8%A8%80%E5%AE%97%E5%85%AB%E6%9C%A8%E5%B1%B1%E7%A6%8F%E5%BE%B3%E9%99%A2",
+    "type": "院",
+    "d1": "",
+    "d2": ""
+  },
+  "urlKind": "mapsApi",
+  "route": "第1段(verify-gbp.mjs)で確認済み",
+  "verdict": "一致",
+  "verdictReason": "手がかり: 店名＋電話＋住所(番地まで)。電話が一致／店名: exact(シート「福徳院」/ マップ「福徳院（日限地蔵尊）」)／住所(シート): exact・町名・番地とも一致",
+  "place": {
+    "name": "福徳院（日限地蔵尊）",
+    "address": "神奈川県横浜市港南区日限山１丁目６７−３０ 日限山地蔵尊高野山真言宗八木山福徳院",
+    "category": "寺院・礼拝所",
+    "lat": 35.3982924,
+    "lng": 139.5598613,
+    "gbpUrl": "https://maps.google.com/?cid=4339131242507953977",
+    "phone": "045-821-1717",
+    "website": null,
+    "hours": {
+      "月": "08:30–17:00",
+      "火": "08:30–17:00",
+      "水": "08:30–17:00",
+      "木": "08:30–17:00",
+      "金": "08:30–17:00",
+      "土": "08:30–17:00",
+      "日": "08:30–17:00"
+    },
+    "reserveLinks": [],
+    "statusSignals": [],
+    "closedSignal": false
+  },
+  "fetchedAt": "2026-11-04T06:15:57.400Z"
+}

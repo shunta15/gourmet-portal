@@ -1,0 +1,32 @@
+{
+  "tab": "トリニティアポ",
+  "tabEn": "tri-life",
+  "row": 334,
+  "sheet": {
+    "name": "九品院",
+    "address": "",
+    "url": "https://www.google.com/maps/search/?api=1&query=%E4%B9%9D%E5%93%81%E9%99%A2%20056-421-0951%20%E3%80%92444-2121%20%E6%84%9B%E7%9F%A5%E7%9C%8C%E5%B2%A1%E5%B4%8E%E5%B8%82%E9%B4%A8%E7%94%B0%E7%94%BA%E5%B1%B1%E7%95%94%EF%BC%99",
+    "type": "お寺",
+    "d1": "",
+    "d2": ""
+  },
+  "urlKind": "mapsApi",
+  "route": "第1段(verify-gbp.mjs)で確認済み",
+  "verdict": "一致",
+  "verdictReason": "手がかり: 店名＋電話＋住所(番地まで)。電話が一致／店名: contains(シート「九品院」/ マップ「荒井山 九品院」)／住所(シート): exact・町名・番地とも一致",
+  "place": {
+    "name": "荒井山 九品院",
+    "address": "愛知県岡崎市鴨田町山畔９",
+    "category": "仏教寺院",
+    "lat": 34.9825075,
+    "lng": 137.1749034,
+    "gbpUrl": "https://maps.google.com/?cid=12101573165286648509",
+    "phone": "0564-21-0951",
+    "website": "http://www.zenkojikai.com/chyubu/c-115.html",
+    "hours": null,
+    "reserveLinks": [],
+    "statusSignals": [],
+    "closedSignal": false
+  },
+  "fetchedAt": "2026-11-04T03:19:29.262Z"
+}

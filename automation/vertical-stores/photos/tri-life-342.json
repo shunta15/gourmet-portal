@@ -1,0 +1,106 @@
+{
+  "key": "tri-life-342",
+  "images": [
+    {
+      "path": "/_portal/vshops/tri-life-342/g01.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9Tw3MlBt0duxj8WFH_M4rWwZ9lwWzLuiN6CU11K4ZRhCmkhf4tZL_v38eKxmZf899Hj-MhlgmDAV4k1323FZoGG-hPB4SY3eqHChv5yFU7Lj2n7N6qpZ2IvM4BvfAXgVga7m9uk=s1200",
+      "pageUrl": "https://maps.google.com/?cid=9019510651602388040",
+      "what": "本堂内部・祭壇の様子",
+      "kind": "room",
+      "width": 842,
+      "height": 595,
+      "source": "Google マップ"
+    },
+    {
+      "path": "/_portal/vshops/tri-life-342/g03.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9QSY_rIlUgDQcMljf7413hHg6jUMmfVe0FFoAxpXAYBmMQ3RZJ6ouZkBnNT4-rVnTWMELFOz3fFBDsHyhbxSpQ4Ma1kaWE8Hx2uSqkjJGZKrK46lzeSbCeqmCNAF6UKVkk-qXatDEgUPNsv=s1200",
+      "pageUrl": "https://maps.google.com/?cid=9019510651602388040",
+      "what": "山門・外観",
+      "kind": "exterior",
+      "width": 876,
+      "height": 1200,
+      "source": "Google マップ"
+    },
+    {
+      "path": "/_portal/vshops/tri-life-342/g05.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9TO-QWk_3uQqw2o33G82ZjxdFJAYEauZgJjXQ14qDSuyERu--2xwf1v-USfF4mycNo9oZNV2Ympt5igFPhU7JBg5TxYEduYuyd72uCpEmEDYCiOrgVorr9gM7v96cI1QxyKiJJSvw=s1200",
+      "pageUrl": "https://maps.google.com/?cid=9019510651602388040",
+      "what": "石灯籠と境内",
+      "kind": "exterior",
+      "width": 1200,
+      "height": 900,
+      "source": "Google マップ"
+    },
+    {
+      "path": "/_portal/vshops/tri-life-342/g07.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9RNnEefMlQVGTBbtLyaLm1ji1EMPxoVtRYQJG_8znKxC-UNvNpR40MpsFFYHA1fnSq3H9euGexJTso10Cv_xcuaheH2eYg1ViFZOfb62OJv69TaakPBNCKkI-CuihhtItPLCG2y5-9cPdk=s1200",
+      "pageUrl": "https://maps.google.com/?cid=9019510651602388040",
+      "what": "燈明・堂内のろうそく",
+      "kind": "room",
+      "width": 900,
+      "height": 1200,
+      "source": "Google マップ"
+    },
+    {
+      "path": "/_portal/vshops/tri-life-342/g09.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9RKVKUddL39ya5D0qO5wNZKsR_y5rovQa6raP408zwegbEwHbt-M2ccPH-jixr3IYfy7arsUaojF0bqzYdNYUmHMQqWAlP_LWUUjxAPIIDDq9rNur6cizlh2_driZmmXCU9p2BGnA=s1200",
+      "pageUrl": "https://maps.google.com/?cid=9019510651602388040",
+      "what": "竹と境内の緑",
+      "kind": "exterior",
+      "width": 640,
+      "height": 480,
+      "source": "Google マップ"
+    },
+    {
+      "path": "/_portal/vshops/tri-life-342/g10.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9Sx_qXyoq8rJk1GHVHVoLt3ICRQx_Oyn1pGjlH_B9ZANjS0kqTOCE5tUJ7v7WzhRuvZXbf5e1UaYy8-WwzDRd_wFHvn1eJcKYjWhDAHkGQd3ZMxHawmeyt8WrnbxVhUg9TcVcsMGw=s1200",
+      "pageUrl": "https://maps.google.com/?cid=9019510651602388040",
+      "what": "石庭・境内の景観",
+      "kind": "exterior",
+      "width": 900,
+      "height": 1200,
+      "source": "Google マップ"
+    },
+    {
+      "path": "/_portal/vshops/tri-life-342/s01.jpg",
+      "imageUrl": "https://ennouji.org/wp-content/uploads/2019/06/0010.jpg",
+      "pageUrl": "https://ennouji.org/",
+      "what": "桜と本堂の外観",
+      "kind": "view",
+      "width": 1280,
+      "height": 853,
+      "source": "公式サイト"
+    },
+    {
+      "path": "/_portal/vshops/tri-life-342/s07.jpg",
+      "imageUrl": "https://ennouji.org/wp-content/uploads/cocoon-resources/blog-card-cache/98a5d8fbeaafd75ee3f043a92bebfae0.jpg",
+      "pageUrl": "https://ennouji.org/",
+      "what": "伝統的な人形・奉納品",
+      "kind": "common",
+      "width": 720,
+      "height": 1040,
+      "source": "公式サイト"
+    },
+    {
+      "path": "/_portal/vshops/tri-life-342/s08.jpg",
+      "imageUrl": "https://ennouji.org/wp-content/uploads/cocoon-resources/blog-card-cache/87a8594943b8f41b979f416048cb5c08.jpg",
+      "pageUrl": "https://ennouji.org/",
+      "what": "萩の花と境内",
+      "kind": "view",
+      "width": 1280,
+      "height": 1280,
+      "source": "公式サイト"
+    },
+    {
+      "path": "/_portal/vshops/tri-life-342/s14.jpg",
+      "imageUrl": "https://ennouji.org/wp-content/uploads/2021/10/DSC02625.jpg",
+      "pageUrl": "https://ennouji.org/",
+      "what": "燈明法要・堂内の様子",
+      "kind": "room",
+      "width": 1280,
+      "height": 720,
+      "source": "公式サイト"
+    }
+  ],
+  "note": "automation/v2/write.mjs が 2026-11-04T06:53:16.219Z に取得。店の実写だけ(AI 画像・汎用画像・地図・ロゴ・顔が大きい画像は除外)。"
+}

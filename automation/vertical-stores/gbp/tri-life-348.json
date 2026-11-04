@@ -1,0 +1,32 @@
+{
+  "tab": "トリニティアポ",
+  "tabEn": "tri-life",
+  "row": 348,
+  "sheet": {
+    "name": "生立八幡宮",
+    "address": "",
+    "url": "https://www.google.com/maps/search/?api=1&query=%E7%94%9F%E7%AB%8B%E5%85%AB%E5%B9%A1%E5%AE%AE%20093-042-0506%20%E3%80%92824-0215%20%E7%A6%8F%E5%B2%A1%E7%9C%8C%E4%BA%AC%E9%83%BD%E9%83%A1%E3%81%BF%E3%82%84%E3%81%93%E7%94%BA%E7%8A%80%E5%B7%9D%E7%94%9F%E7%AB%8B%EF%BC%97",
+    "type": "",
+    "d1": "",
+    "d2": ""
+  },
+  "urlKind": "mapsApi",
+  "route": "第1段(verify-gbp.mjs)で確認済み",
+  "verdict": "一致",
+  "verdictReason": "手がかり: 店名＋電話＋住所(番地まで)。電話が一致／店名: exact(シート「生立八幡宮」/ マップ「生立八幡宮」)／住所(シート): exact・町名・番地とも一致",
+  "place": {
+    "name": "生立八幡宮",
+    "address": "福岡県京都郡みやこ町犀川生立７",
+    "category": "神社",
+    "lat": 33.6540681,
+    "lng": 130.936458,
+    "gbpUrl": "https://maps.google.com/?cid=12679245627942228164",
+    "phone": "0930-42-0506",
+    "website": "https://oitatuhatimangu-official.amebaownd.com/",
+    "hours": null,
+    "reserveLinks": [],
+    "statusSignals": [],
+    "closedSignal": false
+  },
+  "fetchedAt": "2026-11-04T05:15:00.610Z"
+}

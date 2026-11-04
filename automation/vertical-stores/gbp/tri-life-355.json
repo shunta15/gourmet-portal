@@ -1,0 +1,40 @@
+{
+  "tab": "トリニティアポ",
+  "tabEn": "tri-life",
+  "row": 355,
+  "sheet": {
+    "name": "牟呂八幡宮(むろはちまんぐう)",
+    "address": "",
+    "url": "https://www.google.com/maps/search/?api=1&query=%E7%89%9F%E5%91%82%E5%85%AB%E5%B9%A1%E5%AE%AE%28%E3%82%80%E3%82%8D%E3%81%AF%E3%81%A1%E3%81%BE%E3%82%93%E3%81%90%E3%81%86%29%20053-231-1567%20%E3%80%92441-8087%20%E6%84%9B%E7%9F%A5%E7%9C%8C%E8%B1%8A%E6%A9%8B%E5%B8%82%E7%89%9F%E5%91%82%E7%94%BA%E5%AD%97%20%E9%83%B7%E7%A4%BE%EF%BC%91",
+    "type": "神社",
+    "d1": "",
+    "d2": ""
+  },
+  "urlKind": "mapsApi",
+  "route": "第1段(verify-gbp.mjs)で確認済み",
+  "verdict": "一致",
+  "verdictReason": "手がかり: 店名＋電話＋住所(番地まで)。電話が一致／店名: exact(シート「牟呂八幡宮(むろはちまんぐう)」/ マップ「牟呂八幡宮」)／住所(シート): exact・町名・番地とも一致",
+  "place": {
+    "name": "牟呂八幡宮",
+    "address": "愛知県豊橋市牟呂町字 郷社１",
+    "category": "神社",
+    "lat": 34.7561916,
+    "lng": 137.3659229,
+    "gbpUrl": "https://maps.google.com/?cid=10022817204231663244",
+    "phone": "0532-31-1567",
+    "website": "http://www.murohachiman.com/",
+    "hours": {
+      "月": "08:00–16:30",
+      "火": "08:00–16:30",
+      "水": "08:00–16:30",
+      "木": "08:00–16:30",
+      "金": "08:00–16:30",
+      "土": "08:00–16:30",
+      "日": "08:00–16:30"
+    },
+    "reserveLinks": [],
+    "statusSignals": [],
+    "closedSignal": false
+  },
+  "fetchedAt": "2026-11-04T03:25:14.920Z"
+}

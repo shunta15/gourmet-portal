@@ -1,0 +1,40 @@
+{
+  "tab": "トリニティアポ",
+  "tabEn": "tri-life",
+  "row": 349,
+  "sheet": {
+    "name": "上関山 極楽寺",
+    "address": "",
+    "url": "https://www.google.com/maps/search/?api=1&query=%E4%B8%8A%E9%96%A2%E5%B1%B1%20%E6%A5%B5%E6%A5%BD%E5%AF%BA%20046-574-2150%20%E3%80%92250-0126%20%E7%A5%9E%E5%A5%88%E5%B7%9D%E7%9C%8C%E5%8D%97%E8%B6%B3%E6%9F%84%E5%B8%82%E7%8B%A9%E9%87%8E%EF%BC%97%EF%BC%98%EF%BC%92",
+    "type": "寺",
+    "d1": "",
+    "d2": ""
+  },
+  "urlKind": "mapsApi",
+  "route": "第1段(verify-gbp.mjs)で確認済み",
+  "verdict": "一致",
+  "verdictReason": "手がかり: 店名＋電話＋住所(番地まで)。電話が一致／店名: exact(シート「上関山 極楽寺」/ マップ「上関山 極楽寺 (足柄市)」)／住所(シート): exact・町名・番地とも一致",
+  "place": {
+    "name": "上関山 極楽寺 (足柄市)",
+    "address": "神奈川県南足柄市狩野７８２",
+    "category": "仏教寺院",
+    "lat": 35.3095959,
+    "lng": 139.1053294,
+    "gbpUrl": "https://maps.google.com/?cid=14616097210285918275",
+    "phone": "0465-74-2150",
+    "website": "https://gokurakuji-jokanzan.or.jp/",
+    "hours": {
+      "月": "09:00–16:00",
+      "火": "09:00–16:00",
+      "水": "09:00–16:00",
+      "木": "09:00–16:00",
+      "金": "09:00–16:00",
+      "土": "09:00–16:00",
+      "日": "09:00–16:00"
+    },
+    "reserveLinks": [],
+    "statusSignals": [],
+    "closedSignal": false
+  },
+  "fetchedAt": "2026-11-04T03:21:29.609Z"
+}

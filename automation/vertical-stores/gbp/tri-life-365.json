@@ -1,0 +1,40 @@
+{
+  "tab": "トリニティアポ",
+  "tabEn": "tri-life",
+  "row": 365,
+  "sheet": {
+    "name": "進雄社",
+    "address": "",
+    "url": "https://www.google.com/maps/search/?api=1&query=%E9%80%B2%E9%9B%84%E7%A4%BE%20090-5617-6540%20%E3%80%92441-3415%20%E6%84%9B%E7%9F%A5%E7%9C%8C%E7%94%B0%E5%8E%9F%E5%B8%82%E7%A5%9E%E6%88%B8%E7%94%BA%E8%A5%BF%E3%83%8E%E9%96%80%EF%BC%95%E2%88%92%EF%BC%98",
+    "type": "神社",
+    "d1": "",
+    "d2": ""
+  },
+  "urlKind": "mapsApi",
+  "route": "第1段(verify-gbp.mjs)で確認済み",
+  "verdict": "一致",
+  "verdictReason": "手がかり: 店名＋電話。電話が一致／店名: exact(シート「進雄社」/ マップ「進雄社」)／住所(シート): none・町名までがちがう（シート:愛知県田原市神戸町西ノ門 / マップ:愛知県田原市野田町籠田）",
+  "place": {
+    "name": "進雄社",
+    "address": "愛知県田原市野田町籠田６６",
+    "category": "神社",
+    "lat": 34.6545412,
+    "lng": 137.2037041,
+    "gbpUrl": "https://maps.google.com/?cid=15029779274955307874",
+    "phone": "090-5617-6540",
+    "website": "https://www.aichi-jinjacho.or.jp/search_detail.html?id=2690535a-3343-46f7-a109-41239835f374",
+    "hours": {
+      "月": "24時間営業",
+      "火": "24時間営業",
+      "水": "24時間営業",
+      "木": "24時間営業",
+      "金": "24時間営業",
+      "土": "24時間営業",
+      "日": "24時間営業"
+    },
+    "reserveLinks": [],
+    "statusSignals": [],
+    "closedSignal": false
+  },
+  "fetchedAt": "2026-11-04T03:29:55.225Z"
+}

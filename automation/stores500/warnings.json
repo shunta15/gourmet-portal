@@ -3196,5 +3196,117 @@
       "desc は lede から事実の文を選べず、事実から作った定型文",
       "cuisine は GBPカテゴリ"
     ]
+  },
+  "r861": {
+    "articleId": "AMBER329【南区バー】",
+    "name": "AMBER329【南区/バー】",
+    "warnings": [
+      "desc は lede から事実の文を選べず、事実から作った定型文"
+    ]
+  },
+  "r851": {
+    "articleId": "おかざき",
+    "name": "おかざき",
+    "warnings": [
+      "desc は lede から事実の文を選べず、事実から作った定型文",
+      "営業時間が取れていない（noindex）",
+      "cuisine は GBPカテゴリ"
+    ]
+  },
+  "r853": {
+    "articleId": "にんじん",
+    "name": "にんじん",
+    "warnings": [
+      "営業時間が取れていない（noindex）",
+      "cuisine は GBPカテゴリ"
+    ]
+  },
+  "r854": {
+    "articleId": "旬の味まねき",
+    "name": "旬の味まねき",
+    "warnings": [
+      "cuisine は GBPカテゴリ"
+    ]
+  },
+  "r852": {
+    "articleId": "CoCocafé（ココカフェ）",
+    "name": "CoCo café（ココカフェ）",
+    "warnings": [
+      "cuisine は GBPカテゴリ"
+    ]
+  },
+  "r855": {
+    "articleId": "中華工房彩華",
+    "name": "中華工房 彩華",
+    "warnings": [
+      "cuisine は GBPカテゴリ"
+    ]
+  },
+  "r856": {
+    "articleId": "motocafeVIVA",
+    "name": "motocafeVIVA",
+    "warnings": [
+      "cuisine は GBPカテゴリ"
+    ]
+  },
+  "r857": {
+    "articleId": "日方珈琲焙煎所海南本店",
+    "name": "日方珈琲焙煎所 海南本店",
+    "warnings": [
+      "cuisine は GBPカテゴリ"
+    ]
+  },
+  "r858": {
+    "articleId": "restauranttrevi",
+    "name": "restaurant trevi",
+    "warnings": [
+      "cuisine は GBPカテゴリ"
+    ]
+  },
+  "r859": {
+    "articleId": "力貴庵",
+    "name": "力貴庵",
+    "warnings": [
+      "desc は lede から事実の文を選べず、事実から作った定型文",
+      "cuisine は GBPカテゴリ"
+    ]
+  },
+  "r863": {
+    "articleId": "やきとり米家",
+    "name": "やきとり米家",
+    "warnings": [
+      "cuisine は GBPカテゴリ"
+    ]
+  },
+  "r865": {
+    "articleId": "ながた茶店岩倉町本店＆エシカル和カフェNAGACHACafé1801",
+    "name": "ながた茶店 岩倉町本店 ＆ エシカル和カフェNAGACHACafé１８０１",
+    "warnings": [
+      "cuisine は GBPカテゴリ"
+    ]
+  },
+  "r862": {
+    "articleId": "お食事処まつした",
+    "name": "お食事処 まつした",
+    "warnings": [
+      "desc は lede から事実の文を選べず、事実から作った定型文",
+      "cuisine は GBPカテゴリ"
+    ]
+  },
+  "r864": {
+    "articleId": "ご馳走酒場炉寿楽駕町ーロジウラー",
+    "name": "ご馳走酒場 炉寿楽 駕町ーロジウラー",
+    "warnings": [
+      "desc は lede から事実の文を選べず、事実から作った定型文",
+      "cuisine は GBPカテゴリ"
+    ]
+  },
+  "r860": {
+    "articleId": "おもて",
+    "name": "おもて",
+    "warnings": [
+      "desc は lede から事実の文を選べず、事実から作った定型文",
+      "cuisine は GBPカテゴリ"
+    ]
   }
 }

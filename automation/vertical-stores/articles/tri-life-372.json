@@ -1,0 +1,131 @@
+{
+  "key": "tri-life-372",
+  "headline": "福岡県朝倉市宮野にある真言宗大覚寺派の古刹。山号を医王山といい、806年に最澄が創建した寺院を起源とする。",
+  "lede": "朝倉市にある「南淋寺（なんりんじ）」です。伝教大師最澄によって806年に創建された真言宗大覚寺派の寺院で、国指定重要文化財の薬師如来坐像を御本尊として祀ります。九州四十九院薬師霊場の第2番札所にもなっています。",
+  "sections": [
+    {
+      "heading": "由緒と歴史",
+      "body": "南淋寺は806年、伝教大師最澄によって長渕の地に「南林寺」として建立されました。その後、筑後川の洪水被害を繰り返し受けたため、1346年に現在地である朝倉市宮野（かつての八坂）へ遷座しています。宗派は創建当初の天台宗から曹洞宗、そして1648年からは現在の真言宗大覚寺派へと、2度の改宗を経ています。2度の改宗歴を持つ寺院は全国でも珍しいです。"
+    },
+    {
+      "heading": "御本尊と文化財",
+      "body": "御本尊の薬師如来坐像は、最澄が一刀三礼で彫ったと伝わる像で、国指定重要文化財に指定されています。秘仏であり、御開帳は年2回——1月の第2日曜日と4月8日の花祭りの日——のみです。境内の梵鐘は福岡県指定文化財に指定されています。また、境内には由来を持つ3本の井戸が残っています。"
+    },
+    {
+      "heading": "アクセスと駐車場",
+      "body": "住所は福岡県朝倉市宮野87です。車の場合は朝倉インターチェンジから約5分です。電車・バスを利用する場合は甘木駅からタクシーで約20分です。境内に普通車20台分の駐車場があります。"
+    }
+  ],
+  "menus": [],
+  "tags": [
+    {
+      "tag": "駐車場あり",
+      "factIndex": 11
+    }
+  ],
+  "facts": [
+    {
+      "claim": "南淋寺は真言宗大覚寺派の寺院で、山号を医王山という",
+      "source": "https://travel.ava-intel.com/jp/kyushu/fukuoka/hakata/spot/8656922/",
+      "quote": "真言宗大覚寺派のお寺",
+      "checkedAt": "2026-11-04"
+    },
+    {
+      "claim": "806年に伝教大師最澄によって創建された",
+      "source": "https://iko-yo.net/facilities/29549",
+      "quote": "西暦806年に天台宗のお寺として建立されました",
+      "checkedAt": "2026-11-04"
+    },
+    {
+      "claim": "もとは長渕に建立され、1346年に現在地の朝倉市宮野へ遷座した",
+      "source": "https://oyakushi.com/temple/no02-nanrinji.html",
+      "quote": "1346年に現在地の八坂（朝倉市宮野）へ遷座",
+      "checkedAt": "2026-11-04"
+    },
+    {
+      "claim": "天台宗・曹洞宗・真言宗と2度の改宗を経た",
+      "source": "https://iko-yo.net/facilities/29549",
+      "quote": "曹洞宗、真言宗と2回の改宗を受けた",
+      "checkedAt": "2026-11-04"
+    },
+    {
+      "claim": "御本尊の薬師如来坐像は国指定重要文化財",
+      "source": "https://travel.ava-intel.com/jp/kyushu/fukuoka/hakata/spot/8656922/",
+      "quote": "国指定重要文化財",
+      "checkedAt": "2026-11-04"
+    },
+    {
+      "claim": "薬師如来坐像は最澄が一刀三礼で彫ったと伝わる",
+      "source": "https://travel.ava-intel.com/jp/kyushu/fukuoka/hakata/spot/8656922/",
+      "quote": "一刀三礼で彫ったとされる薬師如来坐像",
+      "checkedAt": "2026-11-04"
+    },
+    {
+      "claim": "薬師如来坐像は秘仏で年2回のみ御開帳される",
+      "source": "https://oyakushi.com/temple/no02-nanrinji.html",
+      "quote": "秘仏のため、年2回のみ御開帳されます",
+      "checkedAt": "2026-11-04"
+    },
+    {
+      "claim": "御開帳の日は1月第2日曜日と4月8日（花祭り）",
+      "source": "https://oyakushi.com/temple/no02-nanrinji.html",
+      "quote": "1月第2日曜日と4月8日の花祭り",
+      "checkedAt": "2026-11-04"
+    },
+    {
+      "claim": "梵鐘は福岡県指定文化財",
+      "source": "https://iko-yo.net/facilities/29549",
+      "quote": "県指定文化財としての梵鐘",
+      "checkedAt": "2026-11-04"
+    },
+    {
+      "claim": "九州四十九院薬師霊場の第2番札所",
+      "source": "https://oyakushi.com/temple/no02-nanrinji.html",
+      "quote": "第2番札所",
+      "checkedAt": "2026-11-04"
+    },
+    {
+      "claim": "境内に3本の井戸がある",
+      "source": "https://travel.ava-intel.com/jp/kyushu/fukuoka/hakata/spot/8656922/",
+      "quote": "三本の井戸",
+      "checkedAt": "2026-11-04"
+    },
+    {
+      "claim": "境内に普通車20台分の駐車場がある",
+      "source": "https://oyakushi.com/temple/no02-nanrinji.html",
+      "quote": "駐車場：普通車20台",
+      "checkedAt": "2026-11-04"
+    },
+    {
+      "claim": "朝倉インターチェンジから車で約5分",
+      "source": "https://oyakushi.com/temple/no02-nanrinji.html",
+      "quote": "朝倉IC から約5分",
+      "checkedAt": "2026-11-04"
+    },
+    {
+      "claim": "甘木駅からタクシーで約20分",
+      "source": "https://oyakushi.com/temple/no02-nanrinji.html",
+      "quote": "甘木駅よりタクシーで20分",
+      "checkedAt": "2026-11-04"
+    }
+  ],
+  "sources": [
+    {
+      "label": "寺院情報（九州四十九院薬師霊場）",
+      "url": "https://oyakushi.com/temple/no02-nanrinji.html"
+    },
+    {
+      "label": "寺院情報（iko-yo.net）",
+      "url": "https://iko-yo.net/facilities/29549"
+    },
+    {
+      "label": "寺院情報（travel.ava-intel.com）",
+      "url": "https://travel.ava-intel.com/jp/kyushu/fukuoka/hakata/spot/8656922/"
+    },
+    {
+      "label": "Google マップ",
+      "url": "https://maps.google.com/?cid=1336525456745600481"
+    }
+  ],
+  "notes": "automation/v2/write.mjs が 2026-11-04 に claude -p --model sonnet で作成。事実の裏取り: 14/14 件(quote が出どころの内容に合うもの。言い換え可)。裏取りに通らなかった facts は載せていない。"
+}

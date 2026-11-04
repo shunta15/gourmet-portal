@@ -1,0 +1,121 @@
+{
+  "key": "tri-life-368",
+  "headline": "愛知県常滑市大野町にある浄土宗西山深草派の寺院。864年（貞観6年）創建で、徳川家康を2度かくまった古刹。",
+  "lede": "常滑市にある「巌松山 来迎院 東龍寺」です。864年（貞観6年）に天台宗の円仁（慈覚大師）が諸国行脚の途中にこの地で草庵を建てたことを起源とし、現在は浄土宗西山深草派に属します。本尊は阿弥陀如来です。",
+  "sections": [
+    {
+      "heading": "場所と参拝",
+      "body": "住所は愛知県常滑市大野町8丁目68で、電話番号は0569-42-1401です。境内には広い駐車場があります。開門時間は9時から17時で、月曜から日曜まで参拝できます。御朱印は直書きで対応しています。"
+    },
+    {
+      "heading": "歴史と霊場",
+      "body": "桶狭間の戦いと本能寺の変後の伊賀越えの際、2度にわたり徳川家康をかくまいました。家康はお礼として軸を贈り、現在も寺宝として伝わります。1730年の大火でも本堂は焼け残りました。四国直伝弘法八十八ヶ所霊場の第73番札所で、法然知多霊場にも数えられます。境内には総門・山門・本堂・弘法堂が建ちます。"
+    }
+  ],
+  "menus": [],
+  "tags": [
+    {
+      "tag": "駐車場あり",
+      "factIndex": 10
+    }
+  ],
+  "facts": [
+    {
+      "claim": "住所は愛知県常滑市大野町8丁目68",
+      "source": "https://maps.google.com/?cid=586494298136337397",
+      "quote": "大野町8丁目68",
+      "checkedAt": "2026-11-04"
+    },
+    {
+      "claim": "電話番号は0569-42-1401",
+      "source": "https://maps.google.com/?cid=586494298136337397",
+      "quote": "0569-42-1401",
+      "checkedAt": "2026-11-04"
+    },
+    {
+      "claim": "宗派は浄土宗西山深草派",
+      "source": "https://jikiden-koubou.jp/tera/73/",
+      "quote": "浄土宗西山深草派",
+      "checkedAt": "2026-11-04"
+    },
+    {
+      "claim": "本尊は阿弥陀如来",
+      "source": "https://jikiden-koubou.jp/tera/73/",
+      "quote": "本尊 阿弥陀如来",
+      "checkedAt": "2026-11-04"
+    },
+    {
+      "claim": "創建は864年（貞観6年）",
+      "source": "https://jikiden-koubou.jp/tera/73/",
+      "quote": "864年（貞観6年）創建",
+      "checkedAt": "2026-11-04"
+    },
+    {
+      "claim": "天台宗の円仁（慈覚大師）が草庵を建てたことが起源",
+      "source": "https://jikiden-koubou.jp/tera/73/",
+      "quote": "慈覚大師が草庵を建てた古刹",
+      "checkedAt": "2026-11-04"
+    },
+    {
+      "claim": "桶狭間の戦いと本能寺の変後の伊賀越えで2度徳川家康をかくまった",
+      "source": "https://rekishi-kanko.pref.aichi.jp/place/place124-2.html",
+      "quote": "桶狭間の戦いと伊賀越えで家康を救った",
+      "checkedAt": "2026-11-04"
+    },
+    {
+      "claim": "1730年の大火でも本堂が焼け残った",
+      "source": "https://jikiden-koubou.jp/tera/73/",
+      "quote": "1730年の大火でも本堂が残存",
+      "checkedAt": "2026-11-04"
+    },
+    {
+      "claim": "法然知多霊場にも数えられる",
+      "source": "https://ameblo.jp/gindama3157/entry-12552786868.html",
+      "quote": "法然上人知多廿五霊場",
+      "checkedAt": "2026-11-04"
+    },
+    {
+      "claim": "境内に総門・山門・本堂・弘法堂がある",
+      "source": "https://ameblo.jp/gindama3157/entry-12552786868.html",
+      "quote": "総門、山門、本堂、弘法堂",
+      "checkedAt": "2026-11-04"
+    },
+    {
+      "claim": "境内に広い駐車場がある",
+      "source": "https://ameblo.jp/gindama3157/entry-12552786868.html",
+      "quote": "右側中が駐車場で広い",
+      "checkedAt": "2026-11-04"
+    },
+    {
+      "claim": "御朱印は直書きで対応している",
+      "source": "https://ameblo.jp/gindama3157/entry-12552786868.html",
+      "quote": "直書き対応",
+      "checkedAt": "2026-11-04"
+    },
+    {
+      "claim": "開門時間は9時から17時で月曜から日曜まで",
+      "source": "https://maps.google.com/?cid=586494298136337397",
+      "quote": "09:00–17:00",
+      "checkedAt": "2026-11-04"
+    }
+  ],
+  "sources": [
+    {
+      "label": "愛知県公式歴史観光案内サイト",
+      "url": "https://rekishi-kanko.pref.aichi.jp/place/place124-2.html"
+    },
+    {
+      "label": "四国直伝弘法八十八ヶ所霊場公式サイト",
+      "url": "https://jikiden-koubou.jp/tera/73/"
+    },
+    {
+      "label": "御朱印参拝ブログ",
+      "url": "https://ameblo.jp/gindama3157/entry-12552786868.html"
+    },
+    {
+      "label": "Google マップ",
+      "url": "https://maps.google.com/?cid=586494298136337397"
+    }
+  ],
+  "notes": "automation/v2/write.mjs が 2026-11-04 に claude -p --model sonnet で作成。事実の裏取り: 13/15 件(quote が出どころの内容に合うもの。言い換え可)。裏取りに通らなかった facts は載せていない。"
+}

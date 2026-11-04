@@ -1,0 +1,32 @@
+{
+  "tab": "トリニティアポ",
+  "tabEn": "tri-life",
+  "row": 340,
+  "sheet": {
+    "name": "円照寺",
+    "address": "",
+    "url": "https://www.google.com/maps/search/?api=1&query=%E5%86%86%E7%85%A7%E5%AF%BA%20079-452-2067%20%E3%80%92675-0312%20%E5%85%B5%E5%BA%AB%E7%9C%8C%E5%8A%A0%E5%8F%A4%E5%B7%9D%E5%B8%82%E5%BF%97%E6%96%B9%E7%94%BA%20%E5%BA%83%E5%B0%BE%EF%BC%91%EF%BC%90%EF%BC%92%EF%BC%99",
+    "type": "寺",
+    "d1": "",
+    "d2": ""
+  },
+  "urlKind": "mapsApi",
+  "route": "第1段(verify-gbp.mjs)で確認済み",
+  "verdict": "一致",
+  "verdictReason": "手がかり: 店名＋電話＋住所(番地まで)。電話が一致／店名: exact(シート「円照寺」/ マップ「円照寺」)／住所(シート): exact・町名・番地とも一致",
+  "place": {
+    "name": "円照寺",
+    "address": "兵庫県加古川市志方町 広尾１０２９",
+    "category": "仏教寺院",
+    "lat": 34.8230571,
+    "lng": 134.8469411,
+    "gbpUrl": "https://maps.google.com/?cid=12753388245541561046",
+    "phone": "079-452-2067",
+    "website": "http://kakogawa-enshouji.com/",
+    "hours": null,
+    "reserveLinks": [],
+    "statusSignals": [],
+    "closedSignal": false
+  },
+  "fetchedAt": "2026-11-02T08:15:15.281Z"
+}

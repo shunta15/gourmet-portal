@@ -1,0 +1,58 @@
+{
+  "key": "tri-life-365",
+  "headline": "愛知県田原市野田町に鎮座する神社。境内は24時間いつでも参拝することができる",
+  "lede": "愛知県田原市野田町籠田に鎮座する「進雄社」です。境内は24時間いつでも参拝することができます。最寄り駅は豊橋鉄道渥美線の三河田原駅です。",
+  "sections": [
+    {
+      "heading": "場所とアクセス",
+      "body": "住所は愛知県田原市野田町籠田66、電話は090-5617-6540です。境内は24時間参拝することができます。最寄り駅は豊橋鉄道渥美線の三河田原駅です。"
+    },
+    {
+      "heading": "境内の様子",
+      "body": "境内には石造りの鳥居と参道が整備されており、石燈籠や狛犬が並んでいます。拝殿へは石段を上がってお参りすることができます。境内には摂社・末社も祀られており、静かな雰囲気の中で参拝することができます。"
+    }
+  ],
+  "menus": [],
+  "tags": [],
+  "facts": [
+    {
+      "claim": "住所は愛知県田原市野田町籠田66",
+      "source": "https://maps.google.com/?cid=15029779274955307874",
+      "quote": "Google マップ登録情報（CID: 15029779274955307874）",
+      "checkedAt": "2026-11-04"
+    },
+    {
+      "claim": "電話番号は090-5617-6540",
+      "source": "https://maps.google.com/?cid=15029779274955307874",
+      "quote": "090-5617-6540",
+      "checkedAt": "2026-11-04"
+    },
+    {
+      "claim": "境内は24時間参拝可能",
+      "source": "https://maps.google.com/?cid=15029779274955307874",
+      "quote": "Google マップ登録情報（営業時間: 月〜日 24時間営業）",
+      "checkedAt": "2026-11-04"
+    },
+    {
+      "claim": "最寄り駅は三河田原駅",
+      "source": "https://jinja-ichiran.com/jinja-aichiken-taharashi36/",
+      "quote": "最寄り駅: 三河田原駅",
+      "checkedAt": "2026-11-04"
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://maps.google.com/?cid=15029779274955307874",
+      "label": "Google マップ（進雄社）"
+    },
+    {
+      "url": "https://www.aichi-jinjacho.or.jp/search_detail.html?id=2690535a-3343-46f7-a109-41239835f374",
+      "label": "愛知県神社庁 神社詳細"
+    },
+    {
+      "url": "https://jinja-ichiran.com/jinja-aichiken-taharashi36/",
+      "label": "神社一覧（田原市）"
+    }
+  ],
+  "notes": "automation/v2/write.mjs が 2026-11-04 に claude -p --model sonnet で作成。事実の裏取り: 4/4 件(quote が出どころの内容に合うもの。言い換え可)。裏取りに通らなかった facts は載せていない。"
+}

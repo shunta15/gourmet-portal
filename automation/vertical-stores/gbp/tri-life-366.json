@@ -1,0 +1,40 @@
+{
+  "tab": "トリニティアポ",
+  "tabEn": "tri-life",
+  "row": 366,
+  "sheet": {
+    "name": "惠心院（恵心院）",
+    "address": "",
+    "url": "https://www.google.com/maps/search/?api=1&query=%E6%83%A0%E5%BF%83%E9%99%A2%EF%BC%88%E6%81%B5%E5%BF%83%E9%99%A2%EF%BC%89%20077-421-3942%20%E3%80%92611-0021%20%E4%BA%AC%E9%83%BD%E5%BA%9C%E5%AE%87%E6%B2%BB%E5%B8%82%E5%AE%87%E6%B2%BB%E5%B1%B1%E7%94%B0%EF%BC%96%EF%BC%97",
+    "type": "お寺",
+    "d1": "",
+    "d2": ""
+  },
+  "urlKind": "mapsApi",
+  "route": "第1段(verify-gbp.mjs)で確認済み",
+  "verdict": "一致",
+  "verdictReason": "手がかり: 店名＋電話＋住所(番地まで)。電話が一致／店名: contains(シート「惠心院（恵心院）」/ マップ「恵心院」)／住所(シート): exact・町名・番地とも一致",
+  "place": {
+    "name": "恵心院",
+    "address": "京都府宇治市宇治山田６７",
+    "category": "仏教寺院",
+    "lat": 34.8902949,
+    "lng": 135.8111557,
+    "gbpUrl": "https://maps.google.com/?cid=5688245151121217995",
+    "phone": "0774-21-3942",
+    "website": null,
+    "hours": {
+      "月": "09:00–17:00",
+      "火": "09:00–17:00",
+      "水": "09:00–17:00",
+      "木": "09:00–17:00",
+      "金": "09:00–17:00",
+      "土": "09:00–17:00",
+      "日": "09:00–17:00"
+    },
+    "reserveLinks": [],
+    "statusSignals": [],
+    "closedSignal": false
+  },
+  "fetchedAt": "2026-11-04T03:30:34.171Z"
+}

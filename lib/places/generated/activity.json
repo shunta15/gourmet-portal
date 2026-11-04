@@ -5854,6 +5854,168 @@
         ],
         "checkedAt": "2026-11-02"
       }
+    },
+    {
+      "id": "ac0038",
+      "vertical": "activity",
+      "category": "sightseeing",
+      "name": "想古亭げんない",
+      "pref": "shiga",
+      "cityName": "長浜市",
+      "address": "滋賀県長浜市木之本町大音1529-1",
+      "lat": 35.5051465,
+      "lng": 136.2029795,
+      "phone": "0749-82-4127",
+      "url": "http://www.gennai.jp/",
+      "website": "http://www.gennai.jp/",
+      "mapUrl": "https://maps.google.com/?cid=301002931659771443",
+      "image": "/_portal/vshops/tri-activity-351/g01.jpg",
+      "images": [
+        "/_portal/vshops/tri-activity-351/g01.jpg",
+        "/_portal/vshops/tri-activity-351/g02.jpg",
+        "/_portal/vshops/tri-activity-351/g03.jpg",
+        "/_portal/vshops/tri-activity-351/g04.jpg",
+        "/_portal/vshops/tri-activity-351/g05.jpg",
+        "/_portal/vshops/tri-activity-351/g06.jpg",
+        "/_portal/vshops/tri-activity-351/g07.jpg",
+        "/_portal/vshops/tri-activity-351/g08.jpg",
+        "/_portal/vshops/tri-activity-351/g09.jpg",
+        "/_portal/vshops/tri-activity-351/g10.jpg",
+        "/_portal/vshops/tri-activity-351/s07.jpg"
+      ],
+      "photos": [
+        {
+          "path": "/_portal/vshops/tri-activity-351/g01.jpg",
+          "what": "旅館の外観。茅葺き風の建物と木々",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 800
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-351/g02.jpg",
+          "what": "魚料理のアップ。皿に盛られた魚",
+          "kind": "meal",
+          "width": 675,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-351/g03.jpg",
+          "what": "赤い壁のある和室インテリア",
+          "kind": "room",
+          "width": 645,
+          "height": 475
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-351/g04.jpg",
+          "what": "木の部屋の貸切風呂",
+          "kind": "bath",
+          "width": 1200,
+          "height": 675
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-351/g05.jpg",
+          "what": "木造の内湯。窓から光が差し込む",
+          "kind": "bath",
+          "width": 1200,
+          "height": 800
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-351/g06.jpg",
+          "what": "庭が見える和室。座卓と縁側",
+          "kind": "room",
+          "width": 1200,
+          "height": 801
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-351/g07.jpg",
+          "what": "会席料理のコース。複数の料理が並ぶ",
+          "kind": "meal",
+          "width": 1200,
+          "height": 800
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-351/g08.jpg",
+          "what": "鉄鍋の調理シーン",
+          "kind": "meal",
+          "width": 1200,
+          "height": 675
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-351/g09.jpg",
+          "what": "石段と石灯籠のある外観",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 800
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-351/g10.jpg",
+          "what": "旅館の入り口付近の外観",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 800
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-351/s07.jpg",
+          "what": "清潔感のある和室。窓際の座卓",
+          "kind": "room",
+          "width": 902,
+          "height": 580
+        }
+      ],
+      "tags": [],
+      "article": {
+        "headline": "滋賀県長浜市・木ノ本町の料亭旅館。90年余りの炭焼きうなぎと琵琶湖の湖魚、近江牛、貸切風呂の日帰りプラン",
+        "lede": "滋賀県長浜市木ノ本町にある「想古亭げんない」です。奥琵琶湖に近い山あいの料亭旅館で、備長炭を使った炭焼きうなぎは90年余りの歴史があります。天然ビワマスや湖産エビなど琵琶湖の食材を使った料理と、貸切風呂「懐古の湯」を備え、日帰りプランも用意されています。",
+        "sections": [
+          {
+            "heading": "場所と行き方",
+            "body": "住所は滋賀県長浜市木之本町大音1529-1、電話は0749-82-4127です。JR北陸本線の木ノ本駅からはロンドンタクシーの送迎があり、事前に連絡が必要です。車では、北陸自動車道の木ノ本ICから国道8号を左折して200m進み、信号で右折して橋を渡ると約300mです。長浜方面からはさざ波街道を北上して約30分で、大阪から約85分、名古屋から約95分の距離にあります。"
+          },
+          {
+            "heading": "炭焼きうなぎと料理",
+            "body": "炭焼きうなぎのかば焼きは備長炭で焼き上げます。タレは90年余りにわたって積み重ねてきたものです。天然ビワマスは地元の新鮮野菜とともに提供される、当代の料理人が考案したオリジナル料理です。湖産のエビをたっぷり使ったかき揚げもあります。日帰りプランには近江牛すき焼きや、30か月以上かけて育てられた近江牛サーロインステーキも用意されています。ご飯は土鍋炊きです。支払いは現金のみです。"
+          },
+          {
+            "heading": "お部屋と施設",
+            "body": "客室は和室で7室あります。はなれ別館にはいろりのある広い部屋が3室あります。アメニティはハンドタオル、ボディソープ、ドライヤー、温水洗浄トイレ、歯ブラシ・歯磨き粉、石けん、羽毛布団、くし・ブラシ、バスタオル、浴衣、髭剃りが揃っています。全室にトイレ、冷暖房、テレビ、冷蔵庫（有料飲料あり）が備わっています。ペットの同伴はできません。"
+          },
+          {
+            "heading": "貸切風呂・光明石の湯",
+            "body": "「賎ヶ岳・光明石の湯」の貸切風呂「懐古の湯」があります。日帰りでの入浴と、食事とセットでの利用ができます。"
+          },
+          {
+            "heading": "日帰りプランと時間",
+            "body": "日帰りプランのチェックインは午前11時、チェックアウトは午後9時です。昼食は11時から、夕食は17時からで、休前日は利用できません。日帰りプランには、昼夜二食付き貸切風呂プランをはじめ、近江牛すき焼きと炭焼きうなぎのプラン、炭焼きうなぎと湖魚お造りのプラン、近江牛サーロインステーキのプランなどがあります。朝風呂と朝食のプランは8時から10時の利用です。"
+          }
+        ],
+        "sources": [
+          {
+            "label": "公式サイト（トップ）",
+            "url": "http://www.gennai.jp/"
+          },
+          {
+            "label": "公式サイト（アクセス）",
+            "url": "https://www.gennai.jp/access/"
+          },
+          {
+            "label": "公式サイト（お料理）",
+            "url": "https://www.gennai.jp/dishes/"
+          },
+          {
+            "label": "公式サイト（お部屋）",
+            "url": "https://www.gennai.jp/rooms/"
+          },
+          {
+            "label": "公式サイト（日帰りプラン）",
+            "url": "https://www.gennai.jp/oneday/"
+          },
+          {
+            "label": "Google マップ",
+            "url": "https://maps.google.com/?cid=301002931659771443"
+          }
+        ],
+        "checkedAt": "2026-11-04"
+      }
     }
   ]
 }

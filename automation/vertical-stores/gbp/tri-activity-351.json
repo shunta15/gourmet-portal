@@ -1,0 +1,32 @@
+{
+  "tab": "トリニティアポ",
+  "tabEn": "tri-activity",
+  "row": 351,
+  "sheet": {
+    "name": "想古亭げんない",
+    "address": "",
+    "url": "https://www.google.com/maps/search/?api=1&query=%E6%83%B3%E5%8F%A4%E4%BA%AD%E3%81%92%E3%82%93%E3%81%AA%E3%81%84%20074-982-4127%20%E3%80%92529-0431%20%E6%BB%8B%E8%B3%80%E7%9C%8C%E9%95%B7%E6%B5%9C%E5%B8%82%E6%9C%A8%E4%B9%8B%E6%9C%AC%E7%94%BA%E5%A4%A7%E9%9F%B3%EF%BC%91%EF%BC%95%EF%BC%92%EF%BC%99%E2%88%92%EF%BC%91",
+    "type": "レジャー",
+    "d1": "",
+    "d2": ""
+  },
+  "urlKind": "mapsApi",
+  "route": "第1段(verify-gbp.mjs)で確認済み",
+  "verdict": "一致",
+  "verdictReason": "手がかり: 店名＋電話＋住所(番地まで)。電話が一致／店名: exact(シート「想古亭げんない」/ マップ「想古亭げんない」)／住所(シート): exact・町名・番地とも一致",
+  "place": {
+    "name": "想古亭げんない",
+    "address": "滋賀県長浜市木之本町大音１５２９−１",
+    "category": null,
+    "lat": 35.5051465,
+    "lng": 136.2029795,
+    "gbpUrl": "https://maps.google.com/?cid=301002931659771443",
+    "phone": "0749-82-4127",
+    "website": "http://www.gennai.jp/",
+    "hours": null,
+    "reserveLinks": [],
+    "statusSignals": [],
+    "closedSignal": false
+  },
+  "fetchedAt": "2026-11-04T03:23:11.388Z"
+}

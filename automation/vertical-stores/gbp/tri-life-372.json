@@ -1,0 +1,32 @@
+{
+  "tab": "トリニティアポ",
+  "tabEn": "tri-life",
+  "row": 372,
+  "sheet": {
+    "name": "南淋寺",
+    "address": "",
+    "url": "https://www.google.com/maps/search/?api=1&query=%E5%8D%97%E6%B7%8B%E5%AF%BA%20094-652-0332%20%E3%80%92838-1302%20%E7%A6%8F%E5%B2%A1%E7%9C%8C%E6%9C%9D%E5%80%89%E5%B8%82%E5%AE%AE%E9%87%8E%EF%BC%98%EF%BC%97",
+    "type": "寺",
+    "d1": "",
+    "d2": ""
+  },
+  "urlKind": "mapsApi",
+  "route": "第1段(verify-gbp.mjs)で確認済み",
+  "verdict": "一致",
+  "verdictReason": "手がかり: 店名＋電話＋住所(番地まで)。電話が一致／店名: exact(シート「南淋寺」/ マップ「南淋寺」)／住所(シート): exact・町名・番地とも一致",
+  "place": {
+    "name": "南淋寺",
+    "address": "福岡県朝倉市宮野８７",
+    "category": "仏教寺院",
+    "lat": 33.4027526,
+    "lng": 130.7439612,
+    "gbpUrl": "https://maps.google.com/?cid=1336525456745600481",
+    "phone": "0946-52-0332",
+    "website": null,
+    "hours": null,
+    "reserveLinks": [],
+    "statusSignals": [],
+    "closedSignal": false
+  },
+  "fetchedAt": "2026-11-04T06:15:22.661Z"
+}

@@ -1,0 +1,32 @@
+{
+  "tab": "トリニティアポ",
+  "tabEn": "tri-life",
+  "row": 377,
+  "sheet": {
+    "name": "弘峰寺",
+    "address": "",
+    "url": "https://www.google.com/maps/search/?api=1&query=%E5%BC%98%E5%B3%B0%E5%AF%BA%20058-245-6621%20%E3%80%92500-8229%20%E5%B2%90%E9%98%9C%E7%9C%8C%E5%B2%90%E9%98%9C%E5%B8%82%E9%95%B7%E6%A3%AE%EF%BC%99%EF%BC%94%EF%BC%94%E2%88%92%EF%BC%99%EF%BC%99",
+    "type": "寺",
+    "d1": "",
+    "d2": ""
+  },
+  "urlKind": "mapsApi",
+  "route": "第1段(verify-gbp.mjs)で確認済み",
+  "verdict": "一致",
+  "verdictReason": "手がかり: 店名＋電話＋住所(番地まで)。電話が一致／店名: contains(シート「弘峰寺」/ マップ「瑞暁山 弘峰寺」)／住所(シート): exact・町名・番地とも一致",
+  "place": {
+    "name": "瑞暁山 弘峰寺",
+    "address": "岐阜県岐阜市長森９４４−９９",
+    "category": "仏教寺院",
+    "lat": 35.426795,
+    "lng": 136.782482,
+    "gbpUrl": "https://maps.google.com/?cid=12554878870138226506",
+    "phone": "058-245-6621",
+    "website": "https://kobuji.jp/",
+    "hours": null,
+    "reserveLinks": [],
+    "statusSignals": [],
+    "closedSignal": false
+  },
+  "fetchedAt": "2026-11-04T06:17:57.440Z"
+}

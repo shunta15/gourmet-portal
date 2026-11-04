@@ -1,0 +1,76 @@
+{
+  "key": "tri-life-352",
+  "images": [
+    {
+      "path": "/_portal/vshops/tri-life-352/g01.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9QsdSSQjrzmyV6mMyxRI4PDU64_ZW6Dr5e10HXXKlh3Cp46IvcfcsJqve7p2B1gDFRKQihWoOvQFZz17_WAX5O8PCxpXQFMi2HKUer4wPmtJLt51paOL_cSf51OvAFKj2J89sL9LQ=s1200",
+      "pageUrl": "https://maps.google.com/?cid=10604922788539803198",
+      "what": "拝殿正面の外観。狛犬一対と白い提灯、赤い幟旗が並ぶ",
+      "kind": "exterior",
+      "width": 1200,
+      "height": 900,
+      "source": "Google マップ"
+    },
+    {
+      "path": "/_portal/vshops/tri-life-352/g03.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9QxZcKfsKXwazPvN2Scf5VJi1lhKbEpWO3IgdLYoy44Db2Yh7qEjBfQqEbKFE_KIKVVrMk6P8ELhUYrdX3FygqIVzwMx_lYYwVmgGKnHmInyy0QbXDSsleJNIblDZ58BCxZyol34gO34_8=s1200",
+      "pageUrl": "https://maps.google.com/?cid=10604922788539803198",
+      "what": "赤い鳥居と朱塗りの社殿が立つ末社の外観",
+      "kind": "exterior",
+      "width": 675,
+      "height": 1200,
+      "source": "Google マップ"
+    },
+    {
+      "path": "/_portal/vshops/tri-life-352/g04.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9RC3lQ-9OqWB6PqQL--UCb18JD4MmMnxfE6x0qJrvdvvfN0rLMeW1toWZhEh_hsNXAOsfRqAij8shWCW_qwXv9I-Foq_ITrV-4bvssEmWd5ktqa8qBtvIiW7VFM4RHREW1n-1C0=s1200",
+      "pageUrl": "https://maps.google.com/?cid=10604922788539803198",
+      "what": "木造の手水舎と砂地の境内。奥に朱色の末社が見える",
+      "kind": "common",
+      "width": 1200,
+      "height": 900,
+      "source": "Google マップ"
+    },
+    {
+      "path": "/_portal/vshops/tri-life-352/g05.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9RfGX6-0t1gf1CNDLBO6nU4oZ5aSe4F7oOIEPJgpacB13DgZuM6tPQ0sOLcAZJ9oQgpdME8U33p2vvDOkT2qiSB0qzknkKta_MXDaopr1R9kyRTNe15VVVVxREZscXMqUaK-AZ-VA=s1200",
+      "pageUrl": "https://maps.google.com/?cid=10604922788539803198",
+      "what": "台座の上に座る石製の狛犬。首に紅白の綱が巻かれている",
+      "kind": "exterior",
+      "width": 900,
+      "height": 1200,
+      "source": "Google マップ"
+    },
+    {
+      "path": "/_portal/vshops/tri-life-352/g07.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9SKXTP6waUCh_buS9oR_nerbniVbOEg-D16HEHDnIKvaODELndatIMU_THWWtxGO6uJ27M0tRTn5A-IDvuc9ZWt1sQB7SKU5Zm0oBM4rpnpGvO_SLekoo_TwlrO3byNRCcVKuJo6A=s1200",
+      "pageUrl": "https://maps.google.com/?cid=10604922788539803198",
+      "what": "石鳥居と石畳の参道。奥に境内と社殿が続く",
+      "kind": "exterior",
+      "width": 1200,
+      "height": 900,
+      "source": "Google マップ"
+    },
+    {
+      "path": "/_portal/vshops/tri-life-352/g09.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9RUBE_A-T1LKxriu1TE8pWsrgovU8A8Sl6JU-yTn2lCjDNujnbcKUgdQspVVBejt5cnMIVIVjxi6AJ6oat094tgJOdV31I-RGxsbxq3TVG5PUBPnPpBj4JmLpUK3zBg3XSZ-IVhsYJIURq2=s1200",
+      "pageUrl": "https://maps.google.com/?cid=10604922788539803198",
+      "what": "石製の手水鉢に竹の柄杓が渡され、龍の金属飾りが付く",
+      "kind": "common",
+      "width": 900,
+      "height": 1200,
+      "source": "Google マップ"
+    },
+    {
+      "path": "/_portal/vshops/tri-life-352/g10.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9TS36P2O9o7rplqIcRQiKp9RlGDXndigCq1VaQMsilBj6JZP5j3EDF38rYlBgAGgB-vzrPgSwBfb2WdjnvPX-6XZXCzSFcfSB4K0VHakvO96KvKzcWEf7IrYrLyYT-lZSMlP2ps=s1200",
+      "pageUrl": "https://maps.google.com/?cid=10604922788539803198",
+      "what": "扉の内側に白い壷が並ぶ木造の小社殿",
+      "kind": "exterior",
+      "width": 541,
+      "height": 1200,
+      "source": "Google マップ"
+    }
+  ],
+  "note": "automation/v2/write.mjs が 2026-11-04T06:53:17.949Z に取得。店の実写だけ(AI 画像・汎用画像・地図・ロゴ・顔が大きい画像は除外)。"
+}

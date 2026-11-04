@@ -1,0 +1,40 @@
+{
+  "tab": "トリニティアポ",
+  "tabEn": "tri-life",
+  "row": 342,
+  "sheet": {
+    "name": "圓應寺 円応寺",
+    "address": "",
+    "url": "https://www.google.com/maps/search/?api=1&query=%E5%9C%93%E6%87%89%E5%AF%BA%20%E5%86%86%E5%BF%9C%E5%AF%BA%20092-761-1454%20%E3%80%92810-0074%20%E7%A6%8F%E5%B2%A1%E7%9C%8C%E7%A6%8F%E5%B2%A1%E5%B8%82%E4%B8%AD%E5%A4%AE%E5%8C%BA%E5%A4%A7%E6%89%8B%E9%96%80%EF%BC%93%E4%B8%81%E7%9B%AE%EF%BC%91%E2%88%92%EF%BC%97",
+    "type": "寺",
+    "d1": "",
+    "d2": ""
+  },
+  "urlKind": "mapsApi",
+  "route": "第1段(verify-gbp.mjs)で確認済み",
+  "verdict": "一致",
+  "verdictReason": "手がかり: 店名＋電話＋住所(番地まで)。電話が一致／店名: exact(シート「圓應寺 円応寺」/ マップ「圓應寺 円応寺」)／住所(シート): exact・町名・番地とも一致",
+  "place": {
+    "name": "圓應寺 円応寺",
+    "address": "福岡県福岡市中央区大手門３丁目１−７",
+    "category": "仏教寺院",
+    "lat": 33.5901796,
+    "lng": 130.3820764,
+    "gbpUrl": "https://maps.google.com/?cid=9019510651602388040",
+    "phone": "092-761-1454",
+    "website": "https://ennouji.org/",
+    "hours": {
+      "月": "10:00–17:00",
+      "火": "10:00–17:00",
+      "水": "10:00–17:00",
+      "木": "10:00–17:00",
+      "金": "10:00–17:00",
+      "土": "10:00–17:00",
+      "日": "10:00–17:00"
+    },
+    "reserveLinks": [],
+    "statusSignals": [],
+    "closedSignal": false
+  },
+  "fetchedAt": "2026-11-04T02:30:12.479Z"
+}

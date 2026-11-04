@@ -1,0 +1,32 @@
+{
+  "tab": "トリニティアポ",
+  "tabEn": "tri-life",
+  "row": 361,
+  "sheet": {
+    "name": "養徳寺",
+    "address": "",
+    "url": "https://www.google.com/maps/search/?api=1&query=%E9%A4%8A%E5%BE%B3%E5%AF%BA%20046-241-4082%20%E3%80%92243-0202%20%E7%A5%9E%E5%A5%88%E5%B7%9D%E7%9C%8C%E5%8E%9A%E6%9C%A8%E5%B8%82%E4%B8%AD%E8%8D%BB%E9%87%8E%EF%BC%91%EF%BC%96%EF%BC%93%EF%BC%95",
+    "type": "寺",
+    "d1": "",
+    "d2": ""
+  },
+  "urlKind": "mapsApi",
+  "route": "第1段(verify-gbp.mjs)で確認済み",
+  "verdict": "一致",
+  "verdictReason": "手がかり: 店名＋電話＋住所(番地まで)。電話が一致／店名: contains(シート「養徳寺」/ マップ「臨済宗 養徳寺」)／住所(シート): exact・町名・番地とも一致",
+  "place": {
+    "name": "臨済宗 養徳寺",
+    "address": "神奈川県厚木市中荻野１６３５",
+    "category": "仏教寺院",
+    "lat": 35.4839402,
+    "lng": 139.3309161,
+    "gbpUrl": "https://maps.google.com/?cid=15016866922953696658",
+    "phone": "046-241-4082",
+    "website": null,
+    "hours": null,
+    "reserveLinks": [],
+    "statusSignals": [],
+    "closedSignal": false
+  },
+  "fetchedAt": "2026-11-04T02:56:10.439Z"
+}

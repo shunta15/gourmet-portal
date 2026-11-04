@@ -1,0 +1,40 @@
+{
+  "tab": "トリニティアポ",
+  "tabEn": "tri-life",
+  "row": 375,
+  "sheet": {
+    "name": "岸城神社",
+    "address": "",
+    "url": "https://www.google.com/maps/search/?api=1&query=%E5%B2%B8%E5%9F%8E%E7%A5%9E%E7%A4%BE%20072-422-0686%20%E3%80%92596-0073%20%E5%A4%A7%E9%98%AA%E5%BA%9C%E5%B2%B8%E5%92%8C%E7%94%B0%E5%B8%82%E5%B2%B8%E5%9F%8E%E7%94%BA%EF%BC%91%EF%BC%91%E2%88%92%EF%BC%93%EF%BC%90",
+    "type": "神社",
+    "d1": "",
+    "d2": ""
+  },
+  "urlKind": "mapsApi",
+  "route": "第1段(verify-gbp.mjs)で確認済み",
+  "verdict": "一致",
+  "verdictReason": "手がかり: 店名＋電話＋住所(番地まで)。電話が一致／店名: exact(シート「岸城神社」/ マップ「岸城神社」)／住所(シート): exact・町名・番地とも一致",
+  "place": {
+    "name": "岸城神社",
+    "address": "大阪府岸和田市岸城町１１−３０",
+    "category": "神社",
+    "lat": 34.4590456,
+    "lng": 135.3724737,
+    "gbpUrl": "https://maps.google.com/?cid=16012471203041428222",
+    "phone": "072-422-0686",
+    "website": "https://www.kishikijinja.jp/",
+    "hours": {
+      "月": "09:00–12:00, 13:00–16:00",
+      "火": "09:00–12:00, 13:00–16:00",
+      "水": "09:00–12:00, 13:00–16:00",
+      "木": "09:00–12:00, 13:00–16:00",
+      "金": "09:00–12:00, 13:00–16:00",
+      "土": "09:00–12:00, 13:00–16:00",
+      "日": "09:00–12:00, 13:00–16:00"
+    },
+    "reserveLinks": [],
+    "statusSignals": [],
+    "closedSignal": false
+  },
+  "fetchedAt": "2026-11-04T06:16:30.296Z"
+}

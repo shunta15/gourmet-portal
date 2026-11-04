@@ -1,0 +1,32 @@
+{
+  "tab": "トリニティアポ",
+  "tabEn": "tri-life",
+  "row": 345,
+  "sheet": {
+    "name": "冨塚八幡宮",
+    "address": "",
+    "url": "https://www.google.com/maps/search/?api=1&query=%E5%86%A8%E5%A1%9A%E5%85%AB%E5%B9%A1%E5%AE%AE%20045-871-2908%20%E3%80%92244-0003%20%E7%A5%9E%E5%A5%88%E5%B7%9D%E7%9C%8C%E6%A8%AA%E6%B5%9C%E5%B8%82%E6%88%B8%E5%A1%9A%E5%8C%BA%E6%88%B8%E5%A1%9A%E7%94%BA%EF%BC%93%EF%BC%98%EF%BC%92%EF%BC%97",
+    "type": "神社",
+    "d1": "",
+    "d2": ""
+  },
+  "urlKind": "mapsApi",
+  "route": "第1段(verify-gbp.mjs)で確認済み",
+  "verdict": "一致",
+  "verdictReason": "手がかり: 店名＋電話＋住所(番地まで)。電話が一致／店名: exact(シート「冨塚八幡宮」/ マップ「冨塚八幡宮」)／住所(シート): exact・町名・番地とも一致",
+  "place": {
+    "name": "冨塚八幡宮",
+    "address": "神奈川県横浜市戸塚区戸塚町３８２７",
+    "category": "神社",
+    "lat": 35.3936601,
+    "lng": 139.5286876,
+    "gbpUrl": "https://maps.google.com/?cid=12807749919116413891",
+    "phone": "045-871-2908",
+    "website": null,
+    "hours": null,
+    "reserveLinks": [],
+    "statusSignals": [],
+    "closedSignal": false
+  },
+  "fetchedAt": "2026-11-04T05:13:50.209Z"
+}

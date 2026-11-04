@@ -1,0 +1,40 @@
+{
+  "tab": "トリニティアポ",
+  "tabEn": "tri-life",
+  "row": 338,
+  "sheet": {
+    "name": "平岡八幡宮",
+    "address": "",
+    "url": "https://www.google.com/maps/search/?api=1&query=%E5%B9%B3%E5%B2%A1%E5%85%AB%E5%B9%A1%E5%AE%AE%20075-871-2084%20%E3%80%92616-8271%20%E4%BA%AC%E9%83%BD%E5%BA%9C%E4%BA%AC%E9%83%BD%E5%B8%82%E5%8F%B3%E4%BA%AC%E5%8C%BA%E6%A2%85%E3%82%B1%E7%95%91%E5%AE%AE%E3%83%8E%E5%8F%A3%E7%94%BA%EF%BC%92%EF%BC%93",
+    "type": "神社",
+    "d1": "",
+    "d2": ""
+  },
+  "urlKind": "mapsApi",
+  "route": "第1段(verify-gbp.mjs)で確認済み",
+  "verdict": "一致",
+  "verdictReason": "手がかり: 店名＋電話＋住所(番地まで)。電話が一致／店名: exact(シート「平岡八幡宮」/ マップ「平岡八幡宮」)／住所(シート): exact・町名・番地とも一致",
+  "place": {
+    "name": "平岡八幡宮",
+    "address": "京都府京都市右京区梅ケ畑宮ノ口町２３",
+    "category": "神社",
+    "lat": 35.0410196,
+    "lng": 135.6877108,
+    "gbpUrl": "https://maps.google.com/?cid=14900835979517865277",
+    "phone": "075-871-2084",
+    "website": "https://souda-kyoto.jp/guide/spot/hiraokahachimangu.html",
+    "hours": {
+      "月": "10:00–15:30",
+      "火": "10:00–15:30",
+      "水": "10:00–15:30",
+      "木": "10:00–15:30",
+      "金": "10:00–15:30",
+      "土": "10:00–15:30",
+      "日": "10:00–15:30"
+    },
+    "reserveLinks": [],
+    "statusSignals": [],
+    "closedSignal": false
+  },
+  "fetchedAt": "2026-11-04T05:12:24.503Z"
+}

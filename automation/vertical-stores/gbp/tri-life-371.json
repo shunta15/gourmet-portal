@@ -1,0 +1,40 @@
+{
+  "tab": "トリニティアポ",
+  "tabEn": "tri-life",
+  "row": 371,
+  "sheet": {
+    "name": "熊野道祖神社",
+    "address": "",
+    "url": "https://www.google.com/maps/search/?api=1&query=%E7%86%8A%E9%87%8E%E9%81%93%E7%A5%96%E7%A5%9E%E7%A4%BE%20092-541-3545%20%E3%80%92815-0032%20%E7%A6%8F%E5%B2%A1%E7%9C%8C%E7%A6%8F%E5%B2%A1%E5%B8%82%E5%8D%97%E5%8C%BA%E5%A1%A9%E5%8E%9F%EF%BC%94%E4%B8%81%E7%9B%AE%EF%BC%91%EF%BC%91%E2%88%92%EF%BC%91",
+    "type": "神社",
+    "d1": "",
+    "d2": ""
+  },
+  "urlKind": "mapsApi",
+  "route": "第1段(verify-gbp.mjs)で確認済み",
+  "verdict": "一致",
+  "verdictReason": "手がかり: 店名＋電話＋住所(番地まで)。電話が一致／店名: exact(シート「熊野道祖神社」/ マップ「熊野道祖神社」)／住所(シート): exact・町名・番地とも一致",
+  "place": {
+    "name": "熊野道祖神社",
+    "address": "福岡県福岡市南区塩原４丁目１１−１",
+    "category": "神社",
+    "lat": 33.5612546,
+    "lng": 130.428722,
+    "gbpUrl": "https://maps.google.com/?cid=16747364906472168062",
+    "phone": "092-541-3545",
+    "website": "https://www.instagram.com/kumanodouso/",
+    "hours": {
+      "月": "24時間営業",
+      "火": "24時間営業",
+      "水": "24時間営業",
+      "木": "24時間営業",
+      "金": "24時間営業",
+      "土": "24時間営業",
+      "日": "24時間営業"
+    },
+    "reserveLinks": [],
+    "statusSignals": [],
+    "closedSignal": false
+  },
+  "fetchedAt": "2026-11-04T06:14:44.367Z"
+}

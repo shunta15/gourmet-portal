@@ -1,0 +1,66 @@
+{
+  "key": "tri-life-355",
+  "images": [
+    {
+      "path": "/_portal/vshops/tri-life-355/g01.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9R_vxblfUrZvC1xuV6kaIlBLm2jEspWuGLNnTZanqZryaRaN8oblq_Ok9oztgM_HpAxblHPKmfwmTAM1KtufT2QH5qLjR9KoYoIFuw33awb-VoRn8Mg8-9Rx7sN2xLf1oObsT2b=s1200",
+      "pageUrl": "https://maps.google.com/?cid=10022817204231663244",
+      "what": "拝殿と桜",
+      "kind": "exterior",
+      "width": 1200,
+      "height": 810,
+      "source": "Google マップ"
+    },
+    {
+      "path": "/_portal/vshops/tri-life-355/g02.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9QivxZ-Git_nCDn8LmcH_Zfo-wpaPjdNciYtWxb0_aEjXQv_CQfXn0QHIrDis8_IJUha65m4dbazxb0YbJI2w20m7UIFXWDYm21XlBsFuh5glhSb5jROvNhVlFIigajbgmvgZCpog=s1200",
+      "pageUrl": "https://maps.google.com/?cid=10022817204231663244",
+      "what": "鳥居と石燈籠",
+      "kind": "exterior",
+      "width": 1200,
+      "height": 675,
+      "source": "Google マップ"
+    },
+    {
+      "path": "/_portal/vshops/tri-life-355/g03.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9Ti2c3oLBvDmvZuvuikfZ3QeFb7H1xzX62CyE7G4zi56auERMsdIz2y_32CNrlGKo6y2o6T0__wjjfZyFR-FxUDO02d9RtzhV7QwUBOshX6sOSvsfPqE2bmEu54sboqGSuZJoie=s1200",
+      "pageUrl": "https://maps.google.com/?cid=10022817204231663244",
+      "what": "拝殿正面と狛犬",
+      "kind": "exterior",
+      "width": 1200,
+      "height": 800,
+      "source": "Google マップ"
+    },
+    {
+      "path": "/_portal/vshops/tri-life-355/g04.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9Tm0v-NeIFrgUdhI83jbkSUdFLqE7L7zFMECVxzxV3g6cWsksIPklo_i1zdOP4TMbL21lwm3fDxekAB6q2NdXmC6nMik2jv0DzGbwC2e9IgAxSEfxUOCGVZUeyLQP5KNt3lR6f3=s1200",
+      "pageUrl": "https://maps.google.com/?cid=10022817204231663244",
+      "what": "奉納旗と桜の境内",
+      "kind": "exterior",
+      "width": 1200,
+      "height": 800,
+      "source": "Google マップ"
+    },
+    {
+      "path": "/_portal/vshops/tri-life-355/g07.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9TRq_XT5iWEg6lhCB6HyZObRx_qN-8pygoPWjUobHWMYQ_iNaWwYmw1ZGkq7NLaiDBQWT3xajBsEafR46QiE6923AKs5tfzI4Bx3ltr1zxU993GIIoiJRpnq6MGS6IMUwRpRZqEGh3I0C0S=s1200",
+      "pageUrl": "https://maps.google.com/?cid=10022817204231663244",
+      "what": "摂末社と絵馬掛け",
+      "kind": "exterior",
+      "width": 1200,
+      "height": 900,
+      "source": "Google マップ"
+    },
+    {
+      "path": "/_portal/vshops/tri-life-355/g09.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9QMwvVYmPfYMDQLDsx-pZUz6y-kgpRNk4UHwVK88lNjYZjNFho8FbRwR8H9_7eXvELVQvwaV-s4Ai68XdnoTer3_jLcVNtCSiKV7J50BrvEG6FqjoGSAor9zvCQTuQBkr6_CusyDA=s1200",
+      "pageUrl": "https://maps.google.com/?cid=10022817204231663244",
+      "what": "鼓楼",
+      "kind": "exterior",
+      "width": 1200,
+      "height": 800,
+      "source": "Google マップ"
+    }
+  ],
+  "note": "automation/v2/write.mjs が 2026-11-04T06:53:18.863Z に取得。店の実写だけ(AI 画像・汎用画像・地図・ロゴ・顔が大きい画像は除外)。"
+}

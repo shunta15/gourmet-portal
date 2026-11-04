@@ -1,0 +1,86 @@
+{
+  "key": "tri-life-338",
+  "headline": "京都市右京区梅ケ畑にある神社。大同4年（809）空海が神護寺の守護神として創建した山城国最古の八幡宮で、本殿内陣の天井に描かれた極彩色の花絵「花の天井」は春秋の特別拝観で公開される",
+  "lede": "京都市右京区梅ケ畑宮ノ口町にある「平岡八幡宮」です。大同4年（809）に空海が神護寺の守護神として創建した神社で、山城国最古の八幡宮です。本殿内陣の天井は極彩色の花絵44面が描かれた「花の天井」として知られ、春と秋の特別拝観で公開されます。",
+  "sections": [
+    {
+      "heading": "場所とアクセス・参拝時間",
+      "body": "住所は京都府京都市右京区梅ケ畑宮ノ口町２３、電話は075-871-2084です。市バス・JRバス「平岡八幡前」下車徒歩約3分です。境内は自由に参拝できます。春と秋の特別拝観は10時から16時まで（受付終了15時30分）です。"
+    },
+    {
+      "heading": "由緒",
+      "body": "大同4年（809）に空海が、神護寺（高雄）の守護神として創建した神社で、山城国最古の八幡宮です。"
+    },
+    {
+      "heading": "花の天井と特別拝観",
+      "body": "本殿内陣の天井には極彩色で描かれた花絵が44面あり、「花の天井」です。春と秋の特別拝観で公開されます。"
+    },
+    {
+      "heading": "境内の季節と見どころ",
+      "body": "春には境内で約200種の椿が咲き誇ります。また、例年11月下旬には高雄もみじの紅葉が見頃を迎えます。"
+    }
+  ],
+  "menus": [],
+  "tags": [],
+  "facts": [
+    {
+      "claim": "大同4年（809）に空海が神護寺の守護神として創建した",
+      "source": "https://souda-kyoto.jp/guide/spot/hiraokahachimangu.html",
+      "quote": "大同4年（809）空海が神護寺の守護神として創建した神社で",
+      "checkedAt": "2026-11-04"
+    },
+    {
+      "claim": "山城国最古の八幡宮といわれている",
+      "source": "https://souda-kyoto.jp/guide/spot/hiraokahachimangu.html",
+      "quote": "山城国最古の八幡宮といわれている",
+      "checkedAt": "2026-11-04"
+    },
+    {
+      "claim": "本殿内陣の天井に極彩色の花絵が44面描かれており「花の天井」と呼ばれる",
+      "source": "https://souda-kyoto.jp/guide/spot/hiraokahachimangu.html",
+      "quote": "本殿内陣の天井は極彩色の花絵44面が描かれることから「花の天井」と呼ばれ",
+      "checkedAt": "2026-11-04"
+    },
+    {
+      "claim": "花の天井は春と秋の特別拝観で公開される",
+      "source": "https://souda-kyoto.jp/guide/spot/hiraokahachimangu.html",
+      "quote": "春秋の特別拝観で楽しむことができる（※通常非公開）",
+      "checkedAt": "2026-11-04"
+    },
+    {
+      "claim": "春には約200種の椿が境内で咲く",
+      "source": "https://souda-kyoto.jp/guide/spot/hiraokahachimangu.html",
+      "quote": "春には約200種の椿が咲き誇り",
+      "checkedAt": "2026-11-04"
+    },
+    {
+      "claim": "例年11月下旬には高雄もみじの紅葉が見頃を迎える",
+      "source": "https://souda-kyoto.jp/guide/spot/hiraokahachimangu.html",
+      "quote": "例年11月下旬には高雄もみじの紅葉が見頃を迎える",
+      "checkedAt": "2026-11-04"
+    },
+    {
+      "claim": "市バス・JRバス「平岡八幡前」下車徒歩約3分",
+      "source": "https://souda-kyoto.jp/guide/spot/hiraokahachimangu.html",
+      "quote": "市バス・JRバス「平岡八幡前」下車徒歩約3分",
+      "checkedAt": "2026-11-04"
+    },
+    {
+      "claim": "特別拝観は10:00から16:00（受付終了15:30）",
+      "source": "https://souda-kyoto.jp/guide/spot/hiraokahachimangu.html",
+      "quote": "春秋の特別拝観10：00～16：00（受付終了15：30）",
+      "checkedAt": "2026-11-04"
+    }
+  ],
+  "sources": [
+    {
+      "label": "公式サイト",
+      "url": "https://souda-kyoto.jp/guide/spot/hiraokahachimangu.html"
+    },
+    {
+      "label": "Google マップ",
+      "url": "https://maps.google.com/?cid=14900835979517865277"
+    }
+  ],
+  "notes": "automation/v2/write.mjs が 2026-11-04 に claude -p --model sonnet で作成。事実の裏取り: 8/8 件(quote が出どころの内容に合うもの。言い換え可)。裏取りに通らなかった facts は載せていない。"
+}

@@ -1,0 +1,60 @@
+{
+  "key": "tri-life-338",
+  "images": [
+    {
+      "path": "/_portal/vshops/tri-life-338/g01.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9SdhBhMsNFnIgsY5q8Nmm5Dk6koFIEwA-PNYHpj9Rtf6Essx-C8UfXdnODB63RKCRZsx_rmQA23rr0ucxpqSVSPEOPmIphqiF8ixIYBZJrHm_evBgF-Eu_XFds4TyjZ7Uz2Yjwv=s1200",
+      "pageUrl": "https://maps.google.com/?cid=14900835979517865277",
+      "what": "木立越しに見た本殿外観",
+      "width": 1200,
+      "height": 900,
+      "source": "Google マップ"
+    },
+    {
+      "path": "/_portal/vshops/tri-life-338/g03.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9TfemHaG9K5WBskUTQpY2VKjB98A0wzuFtH5r1d1WN9cIGXx1K8mpTBC2xRjX3FRfs9qCJU2fsNgCY1WYKpnDElN1J9I3d2nbTaFiqB54DkxG1dO2Az-UvQXlk77um1bs6e0GLFYA=s1200",
+      "pageUrl": "https://maps.google.com/?cid=14900835979517865277",
+      "what": "赤い楼門",
+      "width": 1200,
+      "height": 900,
+      "source": "Google マップ"
+    },
+    {
+      "path": "/_portal/vshops/tri-life-338/g04.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9QQyhhCQyGRGm9Hapfbw-UlL1jKbY0hZWnb2SPVTCyjFDbbmGk2524fNzjVH42ZllZ1SXHtwRmxWOFo_cN0Zg0FzSufzbyqc9aTGj0lDRgIRDmg5K9K2e2ZJigyLdao68QjgbMg=s1200",
+      "pageUrl": "https://maps.google.com/?cid=14900835979517865277",
+      "what": "鳥居と特別拝観の幕",
+      "width": 1200,
+      "height": 800,
+      "source": "Google マップ"
+    },
+    {
+      "path": "/_portal/vshops/tri-life-338/g06.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9QLBpqphG1C_ZcNaFWYlREQ76moXuf_UxeGALxqB8RLGP1QFExcrA3aFkV4D0FXr77_56UOkTiQRLDKub8YpviO5an0wj1rwe4rkjgYo8T-fR17dmB-1k6BNs7UJoQLvDwOUTG2=s1200",
+      "pageUrl": "https://maps.google.com/?cid=14900835979517865277",
+      "what": "本殿装飾の近景",
+      "width": 1200,
+      "height": 675,
+      "source": "Google マップ"
+    },
+    {
+      "path": "/_portal/vshops/tri-life-338/g09.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9QESPOYSKhmmOsFcUVvuAKbWsKLz4Gb4p5lvJPnuiBiXXHvh8N0qaDySFdTjEDnha74YWz4EMOc_nlllv5QB9DrwH370w_2j0C-k8Jv2LUNVB9gIfnlOAXkhU-Y7vci=s1200",
+      "pageUrl": "https://maps.google.com/?cid=14900835979517865277",
+      "what": "桜の参道",
+      "width": 1200,
+      "height": 675,
+      "source": "Google マップ"
+    },
+    {
+      "path": "/_portal/vshops/tri-life-338/s02.jpg",
+      "imageUrl": "https://souda-kyoto.jp/guide/spot/ea410e00000002al-img/hiraokahachimangu_r.jpg",
+      "pageUrl": "https://souda-kyoto.jp/guide/spot/hiraokahachimangu.html",
+      "what": "本殿外観（公式サイト掲載写真）",
+      "width": 816,
+      "height": 544,
+      "source": "公式サイト"
+    }
+  ],
+  "note": "automation/v2/write.mjs が 2026-11-04T06:53:15.851Z に取得。店の実写だけ(AI 画像・汎用画像・地図・ロゴ・顔が大きい画像は除外)。"
+}

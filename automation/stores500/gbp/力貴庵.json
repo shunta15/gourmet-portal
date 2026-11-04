@@ -1,0 +1,22 @@
+{
+  "name": "力貴庵",
+  "address": "栃木県鹿沼市上永野７６６−４",
+  "lat": 36.5017798,
+  "lng": 139.5901893,
+  "category": "蕎麦店",
+  "hours": {
+    "月": "10:00–15:00",
+    "火": "10:00–15:00",
+    "水": "10:00–15:00",
+    "木": "10:00–15:00",
+    "金": "10:00–15:00",
+    "土": "10:00–15:00",
+    "日": "10:00–15:00"
+  },
+  "phone": "0289-78-5006",
+  "website": "https://www.instagram.com/rikian.takatoriki?igsh=MWpramRuOHRzNGV2ZQ%3D%3D&utm_source=qr",
+  "priceRange": null,
+  "status": null,
+  "gbpUrl": "https://maps.google.com/?cid=4178799750298420173",
+  "fetchedAt": "2026-11-04T02:29:09.065Z"
+}

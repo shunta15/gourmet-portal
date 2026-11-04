@@ -1,0 +1,145 @@
+{
+  "key": "tri-life-344",
+  "headline": "京都市西京区山田開キ町の黄檗宗禅寺。四方竹と亀甲竹が並ぶ参道に明代様式の本堂と池水式庭園を備える",
+  "lede": "京都市西京区山田開キ町にある「浄住寺」です。葉室山浄住寺は810年の創建と伝えられ、1687年に黄檗宗の禅寺として再建されました。正門から本堂へ続く参道には四方竹と亀甲竹という希少な竹が植えられており、本堂は中国明代の建築様式を模した造りです。境内には水を用いた池水式庭園があります。",
+  "sections": [
+    {
+      "heading": "場所と参拝時間・アクセス",
+      "body": "住所は京都府京都市西京区山田開キ町9、電話は075-381-6029です。参拝時間は7時から16時です。阪急「上桂」駅から徒歩約10分です。京都バス「苔寺・すず虫寺」バス停からは徒歩約5分で、JR「京都」駅から京都バス73系統、京阪「三条」駅から京都バス63系統でこのバス停に行くことができます。また、京都市バス29系統「松尾大利町」バス停からも徒歩約7分です。特別展示期間中は境内への自動車での来訪ができないため、公共交通機関での来訪が便利です。"
+    },
+    {
+      "heading": "本堂と境内の見どころ",
+      "body": "本堂は中国明代（1368〜1644年）の寺院様式を模して建てられており、床は土間仕上げです。ご本尊の釈迦牟尼仏のほか、達磨大師と観音菩薩が祀られています。本堂の天井には狩野派9代目・狩野探幽による「龍と雲」の絵があります。本堂の後方には位牌堂・開山堂・寿塔の3棟が一直線に並んでいます。境内には「開板（かいぱん）」という木魚が吊られており、食事の時刻を告げるために使われていたものです。南側の庭園は水を使った池水式庭園で、南池の中央の小石は仏歯を表します。"
+    },
+    {
+      "heading": "方丈と黄檗宗の特色",
+      "body": "方丈（住持の居所）は仙台藩主・伊達政宗の曾孫にあたる伊達綱村から寄贈された建物です。廊下には侵入者を知らせる「鶯張り」の仕掛けがあり、床の間には非常時の脱出路への入り口が隠されています。方丈は来訪者が冥想に使える空間としても開放されています。黄檗宗は江戸時代に中国から伝えられた禅宗で、読経には中国語が用いられ、梵唄では引磬と大太鼓が使われます。"
+    },
+    {
+      "heading": "参道の竹と秋の紅葉",
+      "body": "正門から本堂まで続く参道には、イロハモミジとともに四方竹と亀甲竹という2種類の希少な竹が植えられています。四方竹は竹竿が細くて四角く、秋に出る筍は食用になります。亀甲竹は竹竿が太く丸く、節の間が交互に外側に膨らんで亀の甲羅のような模様が特徴です。秋にはモミジが紅葉し、赤く染まった参道が楽しめます。"
+    }
+  ],
+  "menus": [],
+  "tags": [
+    {
+      "tag": "体験あり",
+      "factIndex": 12
+    }
+  ],
+  "facts": [
+    {
+      "claim": "810年に創建と伝えられる",
+      "source": "https://jojuji.org/english.html",
+      "quote": "established in 810",
+      "checkedAt": "2026-11-04"
+    },
+    {
+      "claim": "1687年に黄檗宗の禅寺として再建",
+      "source": "https://jojuji.org/english.html",
+      "quote": "rebuilt in 1687",
+      "checkedAt": "2026-11-04"
+    },
+    {
+      "claim": "阪急「上桂」駅から徒歩10分",
+      "source": "https://jojuji.org/english.html",
+      "quote": "10-mins. walk from the station",
+      "checkedAt": "2026-11-04"
+    },
+    {
+      "claim": "京都バス「苔寺・すず虫寺」バス停から徒歩5分",
+      "source": "https://jojuji.org/english.html",
+      "quote": "5-mins. walk from bus stop",
+      "checkedAt": "2026-11-04"
+    },
+    {
+      "claim": "本堂は中国明代（1368〜1644年）の寺院様式を模している",
+      "source": "https://jojuji.org/chinese.html",
+      "quote": "仿照中国明代(1368-1644)的寺庙",
+      "checkedAt": "2026-11-04"
+    },
+    {
+      "claim": "本堂の床は土間仕上げで僧が履物を履いたまま入堂する",
+      "source": "https://jojuji.org/chinese.html",
+      "quote": "地板是夯实的泥地",
+      "checkedAt": "2026-11-04"
+    },
+    {
+      "claim": "狩野探幽（狩野派9代目）が「龍と雲」の絵を描いた",
+      "source": "https://jojuji.org/english.html",
+      "quote": "done by Tanyu Kano",
+      "checkedAt": "2026-11-04"
+    },
+    {
+      "claim": "方丈は伊達政宗の曾孫・伊達綱村から寄贈された",
+      "source": "https://jojuji.org/english.html",
+      "quote": "belonged to Date Tsunamura",
+      "checkedAt": "2026-11-04"
+    },
+    {
+      "claim": "池水式庭園は黄檗宗が発展させた様式",
+      "source": "https://jojuji.org/english.html",
+      "quote": "Ikemizu-style garden",
+      "checkedAt": "2026-11-04"
+    },
+    {
+      "claim": "南池の中央の小石は仏歯を表すとされる",
+      "source": "https://jojuji.org/english.html",
+      "quote": "said to be the tooth of Buddha",
+      "checkedAt": "2026-11-04"
+    },
+    {
+      "claim": "参道に四方竹と亀甲竹が植えられている",
+      "source": "https://jojuji.org/chinese.html",
+      "quote": "四方竹和龟甲竹",
+      "checkedAt": "2026-11-04"
+    },
+    {
+      "claim": "四方竹の筍は秋の食材になる",
+      "source": "https://jojuji.org/chinese.html",
+      "quote": "柔嫩的竹笋是秋季餐桌上很受欢迎",
+      "checkedAt": "2026-11-04"
+    },
+    {
+      "claim": "方丈は来訪者が冥想に使える空間",
+      "source": "https://jojuji.org/chinese.html",
+      "quote": "来访者的冥想空间",
+      "checkedAt": "2026-11-04"
+    },
+    {
+      "claim": "開板（木魚）は食事の時刻を告げるために使われた",
+      "source": "https://jojuji.org/english.html",
+      "quote": "used to notify meal times",
+      "checkedAt": "2026-11-04"
+    },
+    {
+      "claim": "方丈の廊下に鶯張りの仕掛けがある",
+      "source": "https://jojuji.org/chinese.html",
+      "quote": "夜莺鸣叫的响声",
+      "checkedAt": "2026-11-04"
+    }
+  ],
+  "sources": [
+    {
+      "label": "公式サイト",
+      "url": "https://jojuji.org/"
+    },
+    {
+      "label": "公式サイト（アクセス）",
+      "url": "https://jojuji.org/access.html"
+    },
+    {
+      "label": "公式サイト（英語版）",
+      "url": "https://jojuji.org/english.html"
+    },
+    {
+      "label": "公式サイト（中国語版・簡体字）",
+      "url": "https://jojuji.org/chinese.html"
+    },
+    {
+      "label": "Google マップ",
+      "url": "https://maps.google.com/?cid=3408626046463219244"
+    }
+  ],
+  "notes": "automation/v2/write.mjs が 2026-11-04 に claude -p --model sonnet で作成。事実の裏取り: 15/15 件(quote が出どころの内容に合うもの。言い換え可)。裏取りに通らなかった facts は載せていない。"
+}

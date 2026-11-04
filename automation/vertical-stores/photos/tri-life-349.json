@@ -1,0 +1,136 @@
+{
+  "key": "tri-life-349",
+  "images": [
+    {
+      "path": "/_portal/vshops/tri-life-349/g02.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9RtgQ3WMiSDB1sJdQBrBZ-l6B65m02IS2UzzGmwptY4Enx-45ERJceDuGeOtmCd-IKhweAshgIIlSseOtk_yES9eQ40zGcw5GhU2OSvWYikCvoAaO_lvaK_p6H2--5f3mcDVbBm8w=s1200",
+      "pageUrl": "https://maps.google.com/?cid=14616097210285918275",
+      "what": "鐘楼",
+      "kind": "exterior",
+      "width": 675,
+      "height": 1200,
+      "source": "Google マップ"
+    },
+    {
+      "path": "/_portal/vshops/tri-life-349/g03.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9SFHR6lM2s9C7EZsrqE5xuBGQLse_PmJ5dRD7fMWn9-YB98sYk8Phq4LRnqqIRSvZ1bWSk2jdKuW1_M_P4S3uIMHnqCg3pl_wBGAl1xudgSCsmhM5PAvONZU3LuCLUUw-Cb5YK2zg=s1200",
+      "pageUrl": "https://maps.google.com/?cid=14616097210285918275",
+      "what": "山門",
+      "kind": "exterior",
+      "width": 1200,
+      "height": 900,
+      "source": "Google マップ"
+    },
+    {
+      "path": "/_portal/vshops/tri-life-349/g05.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9RoS7ZdVVoCV1rtcN_vgcf4oBMfEzJpXFSeujVvdpORUsq0yrpYgGDDTZmeorWQ40cbvVVTDvxH98Puo1uGxVxJ3KjRSFFJ_7GC7DKeOoBqI_EhsfpP2IpYsXv7S6Ib0hJ9-dH7tQ=s1200",
+      "pageUrl": "https://maps.google.com/?cid=14616097210285918275",
+      "what": "本堂と整えられた松の木",
+      "kind": "exterior",
+      "width": 1200,
+      "height": 912,
+      "source": "Google マップ"
+    },
+    {
+      "path": "/_portal/vshops/tri-life-349/g06.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9S91tjzdT9WY1wHln5wmi_ujVcR4jo7xCK-km98Lo-mFNJosPTrPN_iyJ2NnMw29oL0lX6eKa72YTixYApJW_xf2AUu9n6BrqMlK8NjDtz0FwsRa4JZZ8BfrbCc2uOxQa_4nb3Z=s1200",
+      "pageUrl": "https://maps.google.com/?cid=14616097210285918275",
+      "what": "山門と桜",
+      "kind": "exterior",
+      "width": 900,
+      "height": 1200,
+      "source": "Google マップ"
+    },
+    {
+      "path": "/_portal/vshops/tri-life-349/g09.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9R4NTF61-gzjmYVX8wEe5Qdizi1vG1H9i5FUMw5eTpPMy6cBg-iM4RmRR0tvLUJxH3Xuj9llSqRUBuLJnF8oRvKgFKmARVZFQAoPiiqS-AouOY_kBWFA46KHhkFFRqMoYWsr3xW=s1200",
+      "pageUrl": "https://maps.google.com/?cid=14616097210285918275",
+      "what": "本堂と庭園の全景",
+      "kind": "exterior",
+      "width": 1200,
+      "height": 900,
+      "source": "Google マップ"
+    },
+    {
+      "path": "/_portal/vshops/tri-life-349/g10.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9TfnbI5l5qRRRARzC376dXiT4KisA1Yh64WkvykvNUSFJN-ugWM_6q11rAQMm4JH_rupru1vE-7tdATi8RrOxFDVv9AUBa-ovBGIvBI85hV_mYIMke4JPvZBuBhhrlI99sIhBTRswwWaawv=s1200",
+      "pageUrl": "https://maps.google.com/?cid=14616097210285918275",
+      "what": "渡り廊下",
+      "kind": "exterior",
+      "width": 1200,
+      "height": 900,
+      "source": "Google マップ"
+    },
+    {
+      "path": "/_portal/vshops/tri-life-349/s07.jpg",
+      "imageUrl": "https://gokurakuji-jokanzan.or.jp/wp-content/themes/gokurakujijokanzan/img/top-contents-zazen.jpg",
+      "pageUrl": "https://gokurakuji-jokanzan.or.jp/",
+      "what": "坐禅体験の様子",
+      "kind": "common",
+      "width": 1120,
+      "height": 840,
+      "source": "公式サイト"
+    },
+    {
+      "path": "/_portal/vshops/tri-life-349/s08.jpg",
+      "imageUrl": "https://gokurakuji-jokanzan.or.jp/wp-content/themes/gokurakujijokanzan/img/top-contents-jumokuso.jpg",
+      "pageUrl": "https://gokurakuji-jokanzan.or.jp/",
+      "what": "蛍庭苑（樹木葬区画）の通路",
+      "kind": "exterior",
+      "width": 1120,
+      "height": 840,
+      "source": "公式サイト"
+    },
+    {
+      "path": "/_portal/vshops/tri-life-349/s10.jpg",
+      "imageUrl": "https://gokurakuji-jokanzan.or.jp/wp-content/themes/gokurakujijokanzan/img/top-contents-goshuin.jpg",
+      "pageUrl": "https://gokurakuji-jokanzan.or.jp/",
+      "what": "御朱印を書いている様子",
+      "kind": "common",
+      "width": 1120,
+      "height": 840,
+      "source": "公式サイト"
+    },
+    {
+      "path": "/_portal/vshops/tri-life-349/s11.jpg",
+      "imageUrl": "https://gokurakuji-jokanzan.or.jp/wp-content/themes/gokurakujijokanzan/img/top-contents-karesansui.jpg",
+      "pageUrl": "https://gokurakuji-jokanzan.or.jp/",
+      "what": "枯山水を体験している様子",
+      "kind": "common",
+      "width": 1120,
+      "height": 840,
+      "source": "公式サイト"
+    },
+    {
+      "path": "/_portal/vshops/tri-life-349/s14.jpg",
+      "imageUrl": "https://gokurakuji-jokanzan.or.jp/wp-content/themes/gokurakujijokanzan/img/top-contents-mainhall.jpg",
+      "pageUrl": "https://gokurakuji-jokanzan.or.jp/",
+      "what": "本堂内部と仏前での読経",
+      "kind": "common",
+      "width": 1120,
+      "height": 840,
+      "source": "公式サイト"
+    },
+    {
+      "path": "/_portal/vshops/tri-life-349/s15.jpg",
+      "imageUrl": "https://gokurakuji-jokanzan.or.jp/wp-content/themes/gokurakujijokanzan/img/top-contents-walk.jpg",
+      "pageUrl": "https://gokurakuji-jokanzan.or.jp/",
+      "what": "整えられた松の木と参拝者",
+      "kind": "exterior",
+      "width": 1120,
+      "height": 840,
+      "source": "公式サイト"
+    },
+    {
+      "path": "/_portal/vshops/tri-life-349/s16.jpg",
+      "imageUrl": "https://gokurakuji-jokanzan.or.jp/wp-content/themes/gokurakujijokanzan/img/top-contents-shiki.jpg",
+      "pageUrl": "https://gokurakuji-jokanzan.or.jp/",
+      "what": "石灯籠と雨の境内",
+      "kind": "exterior",
+      "width": 1120,
+      "height": 840,
+      "source": "公式サイト"
+    }
+  ],
+  "note": "automation/v2/write.mjs が 2026-11-04T06:53:17.285Z に取得。店の実写だけ(AI 画像・汎用画像・地図・ロゴ・顔が大きい画像は除外)。"
+}

@@ -8102,6 +8102,144 @@
         ],
         "checkedAt": "2026-11-02"
       }
+    },
+    {
+      "id": "be0112",
+      "vertical": "beauty",
+      "category": "esthetic",
+      "name": "Relaxation Space PADMA",
+      "pref": "fukushima",
+      "cityName": "会津若松市",
+      "address": "福島県会津若松市本町3-18",
+      "lat": 37.4923984,
+      "lng": 139.9192593,
+      "hours": "毎日 10:00 - 20:00",
+      "phone": "080-5554-0454",
+      "url": "https://aizu.mypl.net/shop/00000383006/",
+      "website": "https://aizu.mypl.net/shop/00000383006/",
+      "mapUrl": "https://maps.google.com/?cid=1175822949533592102",
+      "image": "/_portal/vshops/tri-beauty-376/g02.jpg",
+      "images": [
+        "/_portal/vshops/tri-beauty-376/g02.jpg",
+        "/_portal/vshops/tri-beauty-376/g03.jpg",
+        "/_portal/vshops/tri-beauty-376/g04.jpg",
+        "/_portal/vshops/tri-beauty-376/g05.jpg",
+        "/_portal/vshops/tri-beauty-376/g06.jpg",
+        "/_portal/vshops/tri-beauty-376/g07.jpg",
+        "/_portal/vshops/tri-beauty-376/g08.jpg",
+        "/_portal/vshops/tri-beauty-376/g09.jpg"
+      ],
+      "photos": [
+        {
+          "path": "/_portal/vshops/tri-beauty-376/g02.jpg",
+          "what": "doTERRA Vetiverオイルのボトルと乾燥根が並ぶ",
+          "kind": "meal",
+          "width": 554,
+          "height": 554
+        },
+        {
+          "path": "/_portal/vshops/tri-beauty-376/g03.jpg",
+          "what": "緑と金色のレジン製三日月型クリスタルアイテム",
+          "kind": "meal",
+          "width": 784,
+          "height": 784
+        },
+        {
+          "path": "/_portal/vshops/tri-beauty-376/g04.jpg",
+          "what": "黒と金色のレジン製三日月型クリスタルアイテム",
+          "kind": "meal",
+          "width": 1000,
+          "height": 1000
+        },
+        {
+          "path": "/_portal/vshops/tri-beauty-376/g05.jpg",
+          "what": "doTERRAオイルボトルとカモミールの花と乾燥ハーブ",
+          "kind": "meal",
+          "width": 1000,
+          "height": 1000
+        },
+        {
+          "path": "/_portal/vshops/tri-beauty-376/g06.jpg",
+          "what": "青と虹色のレジン製三日月型クリスタルアイテム",
+          "kind": "meal",
+          "width": 1000,
+          "height": 1000
+        },
+        {
+          "path": "/_portal/vshops/tri-beauty-376/g07.jpg",
+          "what": "doTERRA Balanceオイルボトルとユーカリの葉",
+          "kind": "meal",
+          "width": 554,
+          "height": 554
+        },
+        {
+          "path": "/_portal/vshops/tri-beauty-376/g08.jpg",
+          "what": "木製ケースに整列したdoTERRAエッセンシャルオイルのボトル群",
+          "kind": "common",
+          "width": 488,
+          "height": 414
+        },
+        {
+          "path": "/_portal/vshops/tri-beauty-376/g09.jpg",
+          "what": "アンバー色のランプと並んだdoTERRAオイルボトル",
+          "kind": "common",
+          "width": 547,
+          "height": 365
+        }
+      ],
+      "tags": [
+        "メンズ歓迎"
+      ],
+      "article": {
+        "headline": "会津若松市本町にある完全予約制のプライベートアロマサロン。1日3名を上限にメディカルアロマとリフレクソロジーの施術を行っています。",
+        "lede": "会津若松市にある「Relaxation Space PADMA」です。メディカルアロマ・リフレクソロジーの施術とアロマスクールを手がける完全予約制のプライベートサロンで、1日3名を上限にていねいな施術を提供しています。男性も受け付けています。",
+        "sections": [
+          {
+            "heading": "サロンの特色",
+            "body": "doTERRA認定サロンとして同社のエッセンシャルオイルを使用し、メディカルアロマとリフレクソロジーを中心とした施術を行っています。介護福祉士・心理学・アーユルヴェーダの知識を組み合わせた一人ひとりに対応したケアが基本方針で、全施術にフットバスとハーブティーが付きます。守護龍メッセージ＆アロマリーディングも提供しています。"
+          },
+          {
+            "heading": "アロマスクール",
+            "body": "アロマセラピストを目指す方へのレッスンも実施しています。初心者向けのアロマオイルレッスンから、エッセンシャルオイルを30種類以上学んでアロマ教室を開講できるセラピストを養成するホリスティックエッセンシャルオイルアドバイザー養成講座まで、段階別のコースがあります。"
+          },
+          {
+            "heading": "アクセスと基本情報",
+            "body": "会津若松市本町3-18にあります。JR七日町駅から徒歩19分です。駐車場があり、初回来店時は外までお迎えに出ます。支払いは現金のみです。営業時間は毎日10時から20時まで（入店は18時30分まで）です。冬季（12月から3月15日）の営業時間は10時から17時までです。"
+          }
+        ],
+        "menus": [
+          {
+            "name": "アロマ全身コース90分"
+          },
+          {
+            "name": "初めてのアロマオイルレッスン60分"
+          },
+          {
+            "name": "ホリスティックエッセンシャルオイルアドバイザー養成講座"
+          },
+          {
+            "name": "バザルトトリートメント"
+          },
+          {
+            "name": "守護龍メッセージ＆アロマリーディング"
+          }
+        ],
+        "sources": [
+          {
+            "label": "公式サイト",
+            "url": "https://aizu.mypl.net/shop/00000383006/"
+          },
+          {
+            "label": "公式サイト（Jimdo）",
+            "url": "https://padma1212.jimdofree.com/"
+          },
+          {
+            "label": "Google マップ",
+            "url": "https://maps.google.com/?cid=1175822949533592102"
+          }
+        ],
+        "checkedAt": "2026-11-04"
+      }
     }
   ]
 }

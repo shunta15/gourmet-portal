@@ -1,0 +1,22 @@
+{
+  "name": "motocafeVIVA",
+  "address": "山口県萩市椿東１１８９ 193",
+  "lat": 34.4480162,
+  "lng": 131.4059212,
+  "category": "カフェ・喫茶",
+  "hours": {
+    "月": "11:00–17:00",
+    "火": "11:00–17:00",
+    "水": "11:00–17:00",
+    "木": "定休日",
+    "金": "定休日",
+    "土": "11:00–17:00",
+    "日": "11:00–17:00"
+  },
+  "phone": "0838-26-2391",
+  "website": "https://www.instagram.com/motocafe_viva/?locale=ja_JP",
+  "priceRange": null,
+  "status": null,
+  "gbpUrl": "https://maps.google.com/?cid=7358884870208012750",
+  "fetchedAt": "2026-11-04T02:26:24.594Z"
+}

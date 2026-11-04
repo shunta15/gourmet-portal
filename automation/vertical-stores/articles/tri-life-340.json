@@ -1,0 +1,94 @@
+{
+  "key": "tri-life-340",
+  "headline": "兵庫県加古川市志方町の花の名所。春はクリスマスローズ・ツバキ、秋は五色の彼岸花が見頃を迎える浄土真宗の古刹",
+  "lede": "加古川市志方町広尾にある「円照寺」です。嘉吉元年（1441年）創建の浄土真宗本願寺派の寺院で、平成10年（1998年）に現在地へ移築されました。境内の開場は6時から18時。春はクリスマスローズ・ツバキ・シャクナゲの名所、夏はアジサイ・ノウゼンカズラ、秋は複数色の彼岸花の名所として知られ、3月から10月まで様々な花が咲き続けます。",
+  "sections": [
+    {
+      "heading": "場所と参拝の時間",
+      "body": "住所は兵庫県加古川市志方町広尾1029、電話は079-452-2067です。境内の開場時間は原則として6時から18時です。JR加古川駅から北西約10km、宝殿駅北口よりミニバスで約50分です。境内に駐車場が約40台分あります。"
+    },
+    {
+      "heading": "由緒と文化財",
+      "body": "宗派は浄土真宗本願寺派、寺号は月輪山円照寺、本尊は阿弥陀如来像です。嘉吉元年（1441年）の創建で、本山は京都の西本願寺です。現在の住職は13代目の上月義宗師。境内には豊臣秀吉が陣鐘として戦場で使用した梵鐘があり、本堂内には江戸時代後期に彫られた巨大な龍の欄間彫刻があります。"
+    },
+    {
+      "heading": "四季の花",
+      "body": "春はクリスマスローズ、シャクナゲ、ボタン、ツバキ、モクレン、ユキヤナギの名所として知られています。特にユキヤナギは旧境内（現境内から徒歩約1分）に樹齢45年以上の群生があり、満開時は春の雪のような景観になります。夏はアジサイ（30種以上）とノウゼンカズラが境内を彩り、秋は黄・白・赤・ピンク・紫など複数色の彼岸花約2000本が見頃を迎えます。スイフヨウは朝は白、午後はピンク、夕方は紅に変化する美しい花です。"
+    }
+  ],
+  "menus": [],
+  "tags": [],
+  "facts": [
+    {
+      "claim": "宗派は浄土真宗本願寺派",
+      "source": "http://kakogawa-enshouji.com/about.html",
+      "quote": "浄土真宗本願寺派",
+      "checkedAt": "2026-11-04"
+    },
+    {
+      "claim": "嘉吉元年（1441年）に創建された",
+      "source": "http://kakogawa-enshouji.com/about.html",
+      "quote": "嘉吉元年（1441年）",
+      "checkedAt": "2026-11-04"
+    },
+    {
+      "claim": "入場料は無料",
+      "source": "http://kakogawa-enshouji.com/about.html",
+      "quote": "入場料　無料",
+      "checkedAt": "2026-11-04"
+    },
+    {
+      "claim": "境内の開場時間は原則として6時から18時",
+      "source": "http://kakogawa-enshouji.com/about.html",
+      "quote": "原則として6時～18時",
+      "checkedAt": "2026-11-04"
+    },
+    {
+      "claim": "境内に無料の駐車場が約40台分ある",
+      "source": "http://kakogawa-enshouji.com/access.html",
+      "quote": "駐車場　約40台可（無料）",
+      "checkedAt": "2026-11-04"
+    },
+    {
+      "claim": "春はクリスマスローズ・ツバキの名所として知られる",
+      "source": "http://kakogawa-enshouji.com/",
+      "quote": "春はクリスマスローズ・ツバキの名所",
+      "checkedAt": "2026-11-04"
+    },
+    {
+      "claim": "秋は五色の彼岸花の名所として知られる",
+      "source": "http://kakogawa-enshouji.com/",
+      "quote": "秋は五色のヒガンバナの名所",
+      "checkedAt": "2026-11-04"
+    },
+    {
+      "claim": "豊臣秀吉が陣鐘として戦場で使用した梵鐘がある",
+      "source": "http://kakogawa-enshouji.com/about.html",
+      "quote": "豊臣秀吉が陣鐘として戦場で使用",
+      "checkedAt": "2026-11-04"
+    }
+  ],
+  "sources": [
+    {
+      "label": "公式サイト",
+      "url": "http://kakogawa-enshouji.com/"
+    },
+    {
+      "label": "公式サイト(円照寺について)",
+      "url": "http://kakogawa-enshouji.com/about.html"
+    },
+    {
+      "label": "公式サイト(交通のご案内)",
+      "url": "http://kakogawa-enshouji.com/access.html"
+    },
+    {
+      "label": "公式サイト(花のギャラリー)",
+      "url": "http://kakogawa-enshouji.com/hanagallery.html"
+    },
+    {
+      "label": "Google マップ",
+      "url": "https://maps.google.com/?cid=12753388245541561046"
+    }
+  ],
+  "notes": "automation/v2/write.mjs が 2026-11-04 に claude -p --model sonnet で作成。事実の裏取り: 8/8 件(quote が出どころの内容に合うもの。言い換え可)。裏取りに通らなかった facts は載せていない。"
+}

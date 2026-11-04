@@ -1,0 +1,22 @@
+{
+  "name": "やきとり米家",
+  "address": "茨城県土浦市中荒川沖町３−２０",
+  "lat": 36.0320146,
+  "lng": 140.1652447,
+  "category": "焼き鳥店",
+  "hours": {
+    "月": "17:00–23:30",
+    "火": "17:00–23:30",
+    "水": "17:00–23:30",
+    "木": "17:00–23:30",
+    "金": "17:00–23:30",
+    "土": "17:00–23:30",
+    "日": "定休日"
+  },
+  "phone": "029-843-5379",
+  "website": "https://gj07200.gorp.jp/?_gl=1*17mwplf*_ga*MTQ3Mjg3ODA1OS4xNjMxMjU4ODQz*_ga_L9BHK8C28C*MTY3MDk5NzEyOC4yMjMxLjEuMTY3MTAwMjAzMS4yLjAuMA..",
+  "priceRange": null,
+  "status": null,
+  "gbpUrl": "https://maps.google.com/?cid=4573443589352041369",
+  "fetchedAt": "2026-11-04T03:24:39.308Z"
+}

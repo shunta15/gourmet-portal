@@ -19369,6 +19369,768 @@ export const ARTICLE_STORES: Restaurant[] = [
       "ランチ"
     ],
     "featureId": "焼肉居酒屋871。"
+  },
+  {
+    "id": "r851",
+    "name": "おかざき",
+    "cuisine": "ラーメン屋",
+    "area": "和歌山県・岩出市",
+    "region": "wakayama",
+    "shape": "square",
+    "image": "/restaurants/teleapo-おかざき/hero.jpg",
+    "heroImages": [
+      "/restaurants/teleapo-おかざき/hero.jpg",
+      "/restaurants/teleapo-おかざき/point1.jpg",
+      "/restaurants/teleapo-おかざき/point2.jpg"
+    ],
+    "gallery": [
+      "/restaurants/teleapo-おかざき/hero.jpg",
+      "/restaurants/teleapo-おかざき/point1.jpg",
+      "/restaurants/teleapo-おかざき/point2.jpg"
+    ],
+    "desc": "和歌山県岩出市のラーメン屋。",
+    "address": "和歌山県岩出市中島639-4",
+    "hours": "—（訪問前に公式確認）",
+    "closed": "—（訪問前に公式確認）",
+    "seats": "—（訪問前に公式確認）",
+    "nearest": "—",
+    "phone": "0736-62-5535",
+    "source": {
+      "label": "Google ビジネスプロフィール",
+      "url": "https://maps.google.com/?cid=2646062237413830118"
+    },
+    "body": [
+      "おかざきは、和歌山県岩出市にあるお店です。業態は「ラーメン屋」、所在地は和歌山県岩出市中島639-4です。マチノワ編集部の特集記事では、「鹿児島産の豚骨を15時間炊き込む豚骨醤油のスープ」・「タブレット式の注文システム」などを取り上げています。",
+      "営業時間と定休日は取得できていないため、訪問前に公式の情報でご確認ください。営業時間や価格は変わることがあるため、訪問前に公式サイトやSNS、お電話でご確認ください。"
+    ],
+    "highlights": [
+      "鹿児島産の豚骨を15時間炊き込む豚骨醤油のスープ",
+      "タブレット式の注文システム",
+      "国道24号沿いの立地と年中無休の営業"
+    ],
+    "tags": [
+      "ラーメン屋",
+      "岩出市"
+    ],
+    "featureId": "おかざき"
+  },
+  {
+    "id": "r852",
+    "name": "CoCo café（ココカフェ）",
+    "cuisine": "カフェ・喫茶",
+    "area": "静岡県・榛原郡吉田町",
+    "region": "shizuoka",
+    "shape": "square",
+    "image": "/restaurants/teleapo-CoCocafé（ココカフェ）/hero.jpg",
+    "heroImages": [
+      "/restaurants/teleapo-CoCocafé（ココカフェ）/hero.jpg",
+      "/restaurants/teleapo-CoCocafé（ココカフェ）/point1.jpg",
+      "/restaurants/teleapo-CoCocafé（ココカフェ）/point2.jpg",
+      "/restaurants/teleapo-CoCocafé（ココカフェ）/point3.jpg",
+      "/restaurants/teleapo-CoCocafé（ココカフェ）/point4.jpg"
+    ],
+    "gallery": [
+      "/restaurants/teleapo-CoCocafé（ココカフェ）/hero.jpg",
+      "/restaurants/teleapo-CoCocafé（ココカフェ）/point1.jpg",
+      "/restaurants/teleapo-CoCocafé（ココカフェ）/point2.jpg",
+      "/restaurants/teleapo-CoCocafé（ココカフェ）/point3.jpg",
+      "/restaurants/teleapo-CoCocafé（ココカフェ）/point4.jpg"
+    ],
+    "desc": "CoCo caféは、静岡県榛原郡吉田町神戸にあるカフェである。長谷川建設株式会社が運営し、吉田店と静波店の2店舗を展開する。",
+    "address": "静岡県榛原郡吉田町神戸652-1",
+    "hours": "月〜木・土 11:00–17:00",
+    "closed": "金曜・日曜",
+    "seats": "37席（カウンター5・テーブル20・お座敷12）",
+    "nearest": "—",
+    "phone": "080-4175-5050",
+    "source": {
+      "label": "Google ビジネスプロフィール",
+      "url": "https://maps.google.com/?cid=10462300784532912395"
+    },
+    "body": [
+      "CoCo café（ココカフェ）は、静岡県榛原郡吉田町にあるお店です。業態は「カフェ・喫茶」、所在地は静岡県榛原郡吉田町神戸652-1です。マチノワ編集部の特集記事では、「ワンプレートランチセット」・「しゃきしゃきレタスのタコライスセット」などを取り上げています。",
+      "営業時間は月〜木・土 11:00–17:00、定休日は金曜・日曜です（Googleマップの営業時間による）。席は37席（カウンター5・テーブル20・お座敷12）。営業時間や価格は変わることがあるため、訪問前に公式サイトやSNS、お電話でご確認ください。"
+    ],
+    "highlights": [
+      "ワンプレートランチセット",
+      "しゃきしゃきレタスのタコライスセット",
+      "昔ながらのかためプリン",
+      "アサイーボウル",
+      "カウンター・テーブル・お座敷の店内"
+    ],
+    "tags": [
+      "カフェ・喫茶",
+      "吉田町",
+      "宴会",
+      "ランチ"
+    ],
+    "featureId": "CoCocafé（ココカフェ）"
+  },
+  {
+    "id": "r853",
+    "name": "にんじん",
+    "cuisine": "カフェ・喫茶",
+    "area": "群馬県・沼田市",
+    "region": "gunma",
+    "shape": "square",
+    "image": "/restaurants/teleapo-にんじん/hero.jpg",
+    "heroImages": [
+      "/restaurants/teleapo-にんじん/hero.jpg",
+      "/restaurants/teleapo-にんじん/point1.jpg",
+      "/restaurants/teleapo-にんじん/point2.jpg",
+      "/restaurants/teleapo-にんじん/point3.jpg",
+      "/restaurants/teleapo-にんじん/point4.jpg"
+    ],
+    "gallery": [
+      "/restaurants/teleapo-にんじん/hero.jpg",
+      "/restaurants/teleapo-にんじん/point1.jpg",
+      "/restaurants/teleapo-にんじん/point2.jpg",
+      "/restaurants/teleapo-にんじん/point3.jpg",
+      "/restaurants/teleapo-にんじん/point4.jpg",
+      "/restaurants/teleapo-にんじん/point5.jpg"
+    ],
+    "desc": "にんじんは、群馬県沼田市上原町1756-290にあるカフェ・喫茶である。",
+    "address": "群馬県沼田市上原町1756-290",
+    "hours": "—（訪問前に公式確認）",
+    "closed": "—（訪問前に公式確認）",
+    "seats": "—（訪問前に公式確認）",
+    "nearest": "—",
+    "phone": "0278-22-9575",
+    "source": {
+      "label": "Google ビジネスプロフィール",
+      "url": "https://maps.google.com/?cid=2753070465885365706"
+    },
+    "body": [
+      "にんじんは、群馬県沼田市にあるお店です。業態は「カフェ・喫茶」、所在地は群馬県沼田市上原町1756-290です。マチノワ編集部の特集記事では、「鉄板で提供するチキンと定食スタイルの食事」・「クリームソースのパスタと揚げ物を添えた料理」などを取り上げています。",
+      "営業時間と定休日は取得できていないため、訪問前に公式の情報でご確認ください。営業時間や価格は変わることがあるため、訪問前に公式サイトやSNS、お電話でご確認ください。"
+    ],
+    "highlights": [
+      "鉄板で提供するチキンと定食スタイルの食事",
+      "クリームソースのパスタと揚げ物を添えた料理",
+      "カプチーノとお替わりに対応するドリンク",
+      "各テーブルに花の飾られた全席禁煙の店内",
+      "11時30分から23時まで、火曜定休・PayPay対応"
+    ],
+    "tags": [
+      "カフェ・喫茶",
+      "沼田市"
+    ],
+    "featureId": "にんじん"
+  },
+  {
+    "id": "r854",
+    "name": "旬の味まねき",
+    "cuisine": "会席・懐石料理店",
+    "area": "富山県・南砺市",
+    "region": "toyama",
+    "shape": "square",
+    "image": "/restaurants/teleapo-旬の味まねき/hero.jpg",
+    "heroImages": [
+      "/restaurants/teleapo-旬の味まねき/hero.jpg",
+      "/restaurants/teleapo-旬の味まねき/point1.jpg",
+      "/restaurants/teleapo-旬の味まねき/point2.jpg",
+      "/restaurants/teleapo-旬の味まねき/point3.jpg",
+      "/restaurants/teleapo-旬の味まねき/point4.jpg"
+    ],
+    "gallery": [
+      "/restaurants/teleapo-旬の味まねき/hero.jpg",
+      "/restaurants/teleapo-旬の味まねき/point1.jpg",
+      "/restaurants/teleapo-旬の味まねき/point2.jpg",
+      "/restaurants/teleapo-旬の味まねき/point3.jpg",
+      "/restaurants/teleapo-旬の味まねき/point4.jpg",
+      "/restaurants/teleapo-旬の味まねき/point5.jpg"
+    ],
+    "desc": "旬の味まねきは、富山県南砺市城端にある会席・懐石料理店である。",
+    "address": "富山県南砺市城端582-5",
+    "hours": "月・火・木〜日 12:00–14:00, 17:00–21:00",
+    "closed": "水曜日",
+    "seats": "—（訪問前に公式確認）",
+    "nearest": "—",
+    "phone": "0763-62-3434",
+    "instagram": "https://www.instagram.com/maneki2612/profilecard",
+    "source": {
+      "label": "Google ビジネスプロフィール",
+      "url": "https://maps.google.com/?cid=1717628370255013065"
+    },
+    "body": [
+      "旬の味まねきは、富山県南砺市にあるお店です。業態は「会席・懐石料理店」、所在地は富山県南砺市城端582-5です。マチノワ編集部の特集記事では、「城端の曳山文化と結びついた曳山膳」・「季節の素材を使う生湯葉会席」などを取り上げています。",
+      "営業時間は月・火・木〜日 12:00–14:00, 17:00–21:00、定休日は水曜日です（Googleマップの営業時間による）。営業時間や価格は変わることがあるため、訪問前に公式サイトやSNS、お電話でご確認ください。"
+    ],
+    "highlights": [
+      "城端の曳山文化と結びついた曳山膳",
+      "季節の素材を使う生湯葉会席",
+      "法事や会合に対応する精進料理と御前",
+      "旬の食材を天ぷらにした天ぷらうどん",
+      "明治の商家に設けた個室と座敷"
+    ],
+    "tags": [
+      "会席・懐石料理店",
+      "南砺市",
+      "個室",
+      "宴会",
+      "ランチ"
+    ],
+    "featureId": "旬の味まねき"
+  },
+  {
+    "id": "r855",
+    "name": "中華工房 彩華",
+    "cuisine": "中華料理店",
+    "area": "香川県・観音寺市",
+    "region": "kagawa",
+    "shape": "square",
+    "image": "/restaurants/teleapo-中華工房彩華/hero.jpg",
+    "heroImages": [
+      "/restaurants/teleapo-中華工房彩華/hero.jpg",
+      "/restaurants/teleapo-中華工房彩華/point1.jpg",
+      "/restaurants/teleapo-中華工房彩華/point2.jpg",
+      "/restaurants/teleapo-中華工房彩華/point3.jpg",
+      "/restaurants/teleapo-中華工房彩華/point4.jpg"
+    ],
+    "gallery": [
+      "/restaurants/teleapo-中華工房彩華/hero.jpg",
+      "/restaurants/teleapo-中華工房彩華/point1.jpg",
+      "/restaurants/teleapo-中華工房彩華/point2.jpg",
+      "/restaurants/teleapo-中華工房彩華/point3.jpg",
+      "/restaurants/teleapo-中華工房彩華/point4.jpg",
+      "/restaurants/teleapo-中華工房彩華/point5.jpg"
+    ],
+    "desc": "中華工房 彩華は、香川県観音寺市池之尻町にある中華料理店である。ラーメン、チャーハン、定食、冷麺など、幅広い中華料理を提供する。",
+    "address": "香川県観音寺市池之尻町1388-1",
+    "hours": "月・水〜日 11:30–13:30, 17:30–20:30",
+    "closed": "火曜日",
+    "seats": "テーブル席・カウンター席",
+    "nearest": "—",
+    "phone": "0875-27-9838",
+    "instagram": "https://www.instagram.com/saika_t29",
+    "source": {
+      "label": "Google ビジネスプロフィール",
+      "url": "https://maps.google.com/?cid=5555948512047494685"
+    },
+    "body": [
+      "中華工房 彩華は、香川県観音寺市にあるお店です。業態は「中華料理店」、所在地は香川県観音寺市池之尻町1388-1です。マチノワ編集部の特集記事では、「中華スープのラーメン」・「ご飯と副菜がつく定食」などを取り上げています。",
+      "営業時間は月・水〜日 11:30–13:30, 17:30–20:30、定休日は火曜日です（Googleマップの営業時間による）。席はテーブル席・カウンター席。営業時間や価格は変わることがあるため、訪問前に公式サイトやSNS、お電話でご確認ください。"
+    ],
+    "highlights": [
+      "中華スープのラーメン",
+      "ご飯と副菜がつく定食",
+      "チャーハン",
+      "冷麺",
+      "テーブル席とカウンター席の店内"
+    ],
+    "tags": [
+      "中華料理店",
+      "観音寺市",
+      "ランチ"
+    ],
+    "featureId": "中華工房彩華"
+  },
+  {
+    "id": "r856",
+    "name": "motocafeVIVA",
+    "cuisine": "カフェ・喫茶",
+    "area": "山口県・萩市",
+    "region": "yamaguchi",
+    "shape": "square",
+    "image": "/restaurants/teleapo-motocafeVIVA/hero.jpg",
+    "heroImages": [
+      "/restaurants/teleapo-motocafeVIVA/hero.jpg",
+      "/restaurants/teleapo-motocafeVIVA/point1.jpg",
+      "/restaurants/teleapo-motocafeVIVA/point2.jpg",
+      "/restaurants/teleapo-motocafeVIVA/point3.jpg",
+      "/restaurants/teleapo-motocafeVIVA/point4.jpg"
+    ],
+    "gallery": [
+      "/restaurants/teleapo-motocafeVIVA/hero.jpg",
+      "/restaurants/teleapo-motocafeVIVA/point1.jpg",
+      "/restaurants/teleapo-motocafeVIVA/point2.jpg",
+      "/restaurants/teleapo-motocafeVIVA/point3.jpg",
+      "/restaurants/teleapo-motocafeVIVA/point4.jpg"
+    ],
+    "desc": "motocafeVIVAは、山口県萩市椿東にあるカフェである。クラシックバイクの輸入業を手がける大野一郎オーナーが開いた店で、店内にはクラシックバイクが飾られ、バイク関連アイテムが並ぶ。",
+    "address": "山口県萩市椿東1189 193",
+    "hours": "月〜水・土・日 11:00–17:00",
+    "closed": "木曜・金曜",
+    "seats": "—（訪問前に公式確認）",
+    "nearest": "—",
+    "phone": "0838-26-2391",
+    "instagram": "https://www.instagram.com/motocafe_viva",
+    "source": {
+      "label": "Google ビジネスプロフィール",
+      "url": "https://maps.google.com/?cid=7358884870208012750"
+    },
+    "body": [
+      "motocafeVIVAは、山口県萩市にあるお店です。業態は「カフェ・喫茶」、所在地は山口県萩市椿東1189 193です。マチノワ編集部の特集記事では、「クラシックバイクが飾られた店内」・「VIVA特製ハンバーグランチをはじめとする食事」などを取り上げています。",
+      "営業時間は月〜水・土・日 11:00–17:00、定休日は木曜・金曜です（Googleマップの営業時間による）。営業時間や価格は変わることがあるため、訪問前に公式サイトやSNS、お電話でご確認ください。"
+    ],
+    "highlights": [
+      "クラシックバイクが飾られた店内",
+      "VIVA特製ハンバーグランチをはじめとする食事",
+      "手作りのレアチーズケーキとプリン",
+      "バイク乗りのためのテラス設備"
+    ],
+    "tags": [
+      "カフェ・喫茶",
+      "萩市",
+      "ランチ"
+    ],
+    "featureId": "motocafeVIVA"
+  },
+  {
+    "id": "r857",
+    "name": "日方珈琲焙煎所 海南本店",
+    "cuisine": "コーヒーショップ・喫茶店",
+    "area": "和歌山県・海南市",
+    "region": "wakayama",
+    "shape": "square",
+    "image": "/restaurants/teleapo-日方珈琲焙煎所海南本店/hero.jpg",
+    "heroImages": [
+      "/restaurants/teleapo-日方珈琲焙煎所海南本店/hero.jpg",
+      "/restaurants/teleapo-日方珈琲焙煎所海南本店/point1.jpg",
+      "/restaurants/teleapo-日方珈琲焙煎所海南本店/point2.jpg",
+      "/restaurants/teleapo-日方珈琲焙煎所海南本店/point3.jpg",
+      "/restaurants/teleapo-日方珈琲焙煎所海南本店/point4.jpg"
+    ],
+    "gallery": [
+      "/restaurants/teleapo-日方珈琲焙煎所海南本店/hero.jpg",
+      "/restaurants/teleapo-日方珈琲焙煎所海南本店/point1.jpg",
+      "/restaurants/teleapo-日方珈琲焙煎所海南本店/point2.jpg",
+      "/restaurants/teleapo-日方珈琲焙煎所海南本店/point3.jpg",
+      "/restaurants/teleapo-日方珈琲焙煎所海南本店/point4.jpg"
+    ],
+    "desc": "日方珈琲焙煎所 海南本店は、和歌山県海南市日方463-13にあるコーヒーショップである。",
+    "address": "和歌山県海南市日方463-13",
+    "hours": "月・木・土・日 13:00–18:00 / 金 13:00–22:00",
+    "closed": "火曜・水曜",
+    "seats": "全10席（1組2名まで）",
+    "nearest": "—",
+    "phone": "073-400-7197",
+    "source": {
+      "label": "Google ビジネスプロフィール",
+      "url": "https://maps.google.com/?cid=4091915396048405236"
+    },
+    "body": [
+      "日方珈琲焙煎所 海南本店は、和歌山県海南市にあるお店です。業態は「コーヒーショップ・喫茶店」、所在地は和歌山県海南市日方463-13です。マチノワ編集部の特集記事では、「ジャズとレコードが流れる、自家焙煎のカフェ」・「好みを伺いながら選ぶハンドドリップコーヒー」などを取り上げています。",
+      "営業時間は月・木・土・日 13:00–18:00 / 金 13:00–22:00、定休日は火曜・水曜です（Googleマップの営業時間による）。席は全10席（1組2名まで）。営業時間や価格は変わることがあるため、訪問前に公式サイトやSNS、お電話でご確認ください。"
+    ],
+    "highlights": [
+      "ジャズとレコードが流れる、自家焙煎のカフェ",
+      "好みを伺いながら選ぶハンドドリップコーヒー",
+      "定番4種と秋季節限定の自家製スイーツ",
+      "全10席・専用6台駐車場・テイクアウト対応"
+    ],
+    "tags": [
+      "コーヒーショップ・喫茶店",
+      "海南市",
+      "ランチ"
+    ],
+    "featureId": "日方珈琲焙煎所海南本店"
+  },
+  {
+    "id": "r858",
+    "name": "restaurant trevi",
+    "cuisine": "レストラン",
+    "area": "福島県・喜多方市",
+    "region": "fukushima",
+    "shape": "square",
+    "image": "/restaurants/teleapo-restauranttrevi/hero.jpg",
+    "heroImages": [
+      "/restaurants/teleapo-restauranttrevi/hero.jpg",
+      "/restaurants/teleapo-restauranttrevi/point1.jpg",
+      "/restaurants/teleapo-restauranttrevi/point2.jpg",
+      "/restaurants/teleapo-restauranttrevi/point3.jpg",
+      "/restaurants/teleapo-restauranttrevi/point4.jpg"
+    ],
+    "gallery": [
+      "/restaurants/teleapo-restauranttrevi/hero.jpg",
+      "/restaurants/teleapo-restauranttrevi/point1.jpg",
+      "/restaurants/teleapo-restauranttrevi/point2.jpg",
+      "/restaurants/teleapo-restauranttrevi/point3.jpg",
+      "/restaurants/teleapo-restauranttrevi/point4.jpg"
+    ],
+    "desc": "restaurant trevi（レストラン トレビ）は、福島県喜多方市小田付道下にある洋食レストランである。",
+    "address": "福島県喜多方市小田付道下7181-1",
+    "hours": "毎日 11:00–22:00",
+    "closed": "なし（Googleマップの営業時間による）",
+    "seats": "—（訪問前に公式確認）",
+    "nearest": "—",
+    "phone": "0241-22-1530",
+    "source": {
+      "label": "Google ビジネスプロフィール",
+      "url": "https://maps.google.com/?cid=12814195832265844473"
+    },
+    "body": [
+      "restaurant treviは、福島県喜多方市にあるお店です。業態は「レストラン」、所在地は福島県喜多方市小田付道下7181-1です。マチノワ編集部の特集記事では、「着座72名・立食100名対応の宴会場」・「アルコール35種・ソフトドリンク12種の飲み放題」などを取り上げています。",
+      "営業時間は毎日 11:00–22:00で、定休日はありません（Googleマップの営業時間による）。営業時間や価格は変わることがあるため、訪問前に公式サイトやSNS、お電話でご確認ください。"
+    ],
+    "highlights": [
+      "着座72名・立食100名対応の宴会場",
+      "アルコール35種・ソフトドリンク12種の飲み放題",
+      "ケータリング・仕出し・デリバリーの各種サービス",
+      "12時間煮込むルーの月〜木限定ビーフカレーランチ"
+    ],
+    "tags": [
+      "レストラン",
+      "喜多方市",
+      "ランチ"
+    ],
+    "featureId": "restauranttrevi"
+  },
+  {
+    "id": "r859",
+    "name": "力貴庵",
+    "cuisine": "蕎麦店",
+    "area": "栃木県・鹿沼市",
+    "region": "tochigi",
+    "shape": "square",
+    "image": "/restaurants/teleapo-力貴庵/hero.jpg",
+    "heroImages": [
+      "/restaurants/teleapo-力貴庵/hero.jpg",
+      "/restaurants/teleapo-力貴庵/point1.jpg",
+      "/restaurants/teleapo-力貴庵/point2.jpg",
+      "/restaurants/teleapo-力貴庵/point3.jpg"
+    ],
+    "gallery": [
+      "/restaurants/teleapo-力貴庵/hero.jpg",
+      "/restaurants/teleapo-力貴庵/point1.jpg",
+      "/restaurants/teleapo-力貴庵/point2.jpg",
+      "/restaurants/teleapo-力貴庵/point3.jpg"
+    ],
+    "desc": "栃木県鹿沼市の蕎麦店。",
+    "address": "栃木県鹿沼市上永野766-4",
+    "hours": "毎日 10:00–15:00",
+    "closed": "なし（Googleマップの営業時間による）",
+    "seats": "—（訪問前に公式確認）",
+    "nearest": "—",
+    "phone": "0289-78-5006",
+    "instagram": "https://www.instagram.com/rikian.takatoriki",
+    "source": {
+      "label": "Google ビジネスプロフィール",
+      "url": "https://maps.google.com/?cid=4178799750298420173"
+    },
+    "body": [
+      "力貴庵は、栃木県鹿沼市にあるお店です。業態は「蕎麦店」、所在地は栃木県鹿沼市上永野766-4です。マチノワ編集部の特集記事では、「十割そばと麻炭そばの2種類」・「1人前から注文できる〆そば付きのちゃんこ鍋」などを取り上げています。",
+      "営業時間は毎日 10:00–15:00で、定休日はありません（Googleマップの営業時間による）。営業時間や価格は変わることがあるため、訪問前に公式サイトやSNS、お電話でご確認ください。"
+    ],
+    "highlights": [
+      "十割そばと麻炭そばの2種類",
+      "1人前から注文できる〆そば付きのちゃんこ鍋",
+      "相撲のまわしとテレビに流れる相撲中継の店内",
+      "鹿沼市「いちご市」ゆかりのいちごサービス"
+    ],
+    "tags": [
+      "蕎麦店",
+      "そば",
+      "鹿沼市",
+      "ランチ"
+    ],
+    "featureId": "力貴庵"
+  },
+  {
+    "id": "r860",
+    "name": "おもて",
+    "cuisine": "居酒屋",
+    "area": "東京都・東久留米市",
+    "region": "tokyo",
+    "shape": "square",
+    "image": "/restaurants/teleapo-おもて/hero.jpg",
+    "heroImages": [
+      "/restaurants/teleapo-おもて/hero.jpg",
+      "/restaurants/teleapo-おもて/point1.jpg",
+      "/restaurants/teleapo-おもて/point2.jpg",
+      "/restaurants/teleapo-おもて/point3.jpg",
+      "/restaurants/teleapo-おもて/point4.jpg"
+    ],
+    "gallery": [
+      "/restaurants/teleapo-おもて/hero.jpg",
+      "/restaurants/teleapo-おもて/point1.jpg",
+      "/restaurants/teleapo-おもて/point2.jpg",
+      "/restaurants/teleapo-おもて/point3.jpg",
+      "/restaurants/teleapo-おもて/point4.jpg"
+    ],
+    "desc": "東京都東久留米市の居酒屋。最寄りは西武池袋線東久留米駅 徒歩1分。",
+    "address": "東京都東久留米市東本町1丁目8 B1",
+    "hours": "月〜木 11:30–14:00, 17:00–23:00 / 金・土 11:30–14:00, 17:00–05:00 / 日 11:30–14:00",
+    "closed": "なし（Googleマップの営業時間による）",
+    "seats": "カウンター8席・4名様掛けテーブル2席・個室1室（堀こたつ、約8〜10名まで）",
+    "nearest": "西武池袋線東久留米駅 徒歩1分",
+    "phone": "042-420-5362",
+    "source": {
+      "label": "Google ビジネスプロフィール",
+      "url": "https://maps.google.com/?cid=18259544374992965950"
+    },
+    "body": [
+      "おもては、東京都東久留米市にあるお店です。業態は「居酒屋」、所在地は東京都東久留米市東本町1丁目8 B1、最寄りは西武池袋線東久留米駅 徒歩1分です。マチノワ編集部の特集記事では、「東久留米の地野菜と朝採れ食材の日替わり料理」・「福井の地酒を中心とした日本酒と東久留米農家の茶ハイ」などを取り上げています。",
+      "営業時間は月〜木 11:30–14:00, 17:00–23:00 / 金・土 11:30–14:00, 17:00–05:00 / 日 11:30–14:00で、定休日はありません（Googleマップの営業時間による）。席はカウンター8席・4名様掛けテーブル2席・個室1室（堀こたつ、約8〜10名まで）。営業時間や価格は変わることがあるため、訪問前に公式サイトやSNS、お電話でご確認ください。"
+    ],
+    "highlights": [
+      "東久留米の地野菜と朝採れ食材の日替わり料理",
+      "福井の地酒を中心とした日本酒と東久留米農家の茶ハイ",
+      "堀こたつ個室と貸切・季節イベントコース",
+      "西武池袋線東久留米駅からのアクセスと営業情報"
+    ],
+    "tags": [
+      "居酒屋",
+      "東久留米市",
+      "池袋線東久留米駅",
+      "個室",
+      "ランチ",
+      "深夜営業"
+    ],
+    "featureId": "おもて"
+  },
+  {
+    "id": "r861",
+    "name": "AMBER329【南区/バー】",
+    "cuisine": "日本ウイスキー",
+    "area": "熊本県・熊本市南区",
+    "region": "kumamoto",
+    "shape": "square",
+    "image": "/restaurants/teleapo-AMBER329【南区バー】/hero.jpg",
+    "heroImages": [
+      "/restaurants/teleapo-AMBER329【南区バー】/hero.jpg",
+      "/restaurants/teleapo-AMBER329【南区バー】/point1.jpg",
+      "/restaurants/teleapo-AMBER329【南区バー】/point2.jpg",
+      "/restaurants/teleapo-AMBER329【南区バー】/point3.jpg"
+    ],
+    "gallery": [
+      "/restaurants/teleapo-AMBER329【南区バー】/hero.jpg",
+      "/restaurants/teleapo-AMBER329【南区バー】/point1.jpg",
+      "/restaurants/teleapo-AMBER329【南区バー】/point2.jpg",
+      "/restaurants/teleapo-AMBER329【南区バー】/point3.jpg"
+    ],
+    "desc": "熊本県熊本市南区の日本ウイスキー。",
+    "address": "熊本県熊本市南区出仲間8丁目1-1",
+    "hours": "毎日 19:00–00:00",
+    "closed": "なし（Googleマップの営業時間による）",
+    "seats": "—（訪問前に公式確認）",
+    "nearest": "—",
+    "phone": "090-9791-1088",
+    "instagram": "https://www.instagram.com/amber.329_idenakama",
+    "source": {
+      "label": "Google ビジネスプロフィール",
+      "url": "https://maps.google.com/?cid=13922828081996664243"
+    },
+    "body": [
+      "AMBER329【南区/バー】は、熊本県熊本市南区にあるお店です。業態は「日本ウイスキー」、所在地は熊本県熊本市南区出仲間8丁目1-1です。マチノワ編集部の特集記事では、「竹鶴・山崎・宮城峡を揃えた日本ウイスキーの品揃え」・「飲み放題メニューの提供」などを取り上げています。",
+      "営業時間は毎日 19:00–00:00で、定休日はありません（Googleマップの営業時間による）。営業時間や価格は変わることがあるため、訪問前に公式サイトやSNS、お電話でご確認ください。"
+    ],
+    "highlights": [
+      "竹鶴・山崎・宮城峡を揃えた日本ウイスキーの品揃え",
+      "飲み放題メニューの提供",
+      "カウンター中心の店内と豊富な酒類ラインナップ",
+      "毎日営業、定休日なし"
+    ],
+    "tags": [
+      "日本ウイスキー",
+      "バー",
+      "南区",
+      "深夜営業"
+    ],
+    "featureId": "AMBER329【南区バー】"
+  },
+  {
+    "id": "r862",
+    "name": "お食事処 まつした",
+    "cuisine": "和食店",
+    "area": "大分県・宇佐市",
+    "region": "oita",
+    "shape": "square",
+    "image": "/restaurants/teleapo-お食事処まつした/hero.jpg",
+    "heroImages": [
+      "/restaurants/teleapo-お食事処まつした/hero.jpg",
+      "/restaurants/teleapo-お食事処まつした/point1.jpg",
+      "/restaurants/teleapo-お食事処まつした/point2.jpg",
+      "/restaurants/teleapo-お食事処まつした/point3.jpg",
+      "/restaurants/teleapo-お食事処まつした/point4.jpg"
+    ],
+    "gallery": [
+      "/restaurants/teleapo-お食事処まつした/hero.jpg",
+      "/restaurants/teleapo-お食事処まつした/point1.jpg",
+      "/restaurants/teleapo-お食事処まつした/point2.jpg",
+      "/restaurants/teleapo-お食事処まつした/point3.jpg",
+      "/restaurants/teleapo-お食事処まつした/point4.jpg"
+    ],
+    "desc": "大分県宇佐市の和食店。",
+    "address": "大分県宇佐市院内町高並654-1",
+    "hours": "金〜日 11:30–15:00, 18:00–21:00",
+    "closed": "月曜・火曜・水曜・木曜",
+    "seats": "—（訪問前に公式確認）",
+    "nearest": "—",
+    "phone": "0978-42-7278",
+    "source": {
+      "label": "Google ビジネスプロフィール",
+      "url": "https://maps.google.com/?cid=8988385877388450015"
+    },
+    "body": [
+      "お食事処 まつしたは、大分県宇佐市にあるお店です。業態は「和食店」、所在地は大分県宇佐市院内町高並654-1です。マチノワ編集部の特集記事では、「宇佐市産どじょうのコース料理（から揚げ・南蛮漬け・甘辛煮・つみれにゅうめん）」・「昼の部と夜の部の和食コース（八寸七種盛り・刺身・天ぷら・治部煮・金沢おまかせコース）」などを取り上げています。",
+      "営業時間は金〜日 11:30–15:00, 18:00–21:00、定休日は月曜・火曜・水曜・木曜です（Googleマップの営業時間による）。営業時間や価格は変わることがあるため、訪問前に公式サイトやSNS、お電話でご確認ください。"
+    ],
+    "highlights": [
+      "宇佐市産どじょうのコース料理（から揚げ・南蛮漬け・甘辛煮・つみれにゅうめん）",
+      "昼の部と夜の部の和食コース（八寸七種盛り・刺身・天ぷら・治部煮・金沢おまかせコース）",
+      "羽釜炊きご飯と漬物まで手作りのこだわり料理",
+      "古民家の空間・ふすまで仕切る個室と完全予約制のもてなし"
+    ],
+    "tags": [
+      "和食店",
+      "宇佐市",
+      "ランチ"
+    ],
+    "featureId": "お食事処まつした"
+  },
+  {
+    "id": "r863",
+    "name": "やきとり米家",
+    "cuisine": "焼き鳥店",
+    "area": "茨城県・土浦市",
+    "region": "ibaraki",
+    "shape": "square",
+    "image": "/restaurants/teleapo-やきとり米家/hero.jpg",
+    "heroImages": [
+      "/restaurants/teleapo-やきとり米家/hero.jpg",
+      "/restaurants/teleapo-やきとり米家/point1.jpg",
+      "/restaurants/teleapo-やきとり米家/point2.jpg",
+      "/restaurants/teleapo-やきとり米家/point3.jpg",
+      "/restaurants/teleapo-やきとり米家/point4.jpg"
+    ],
+    "gallery": [
+      "/restaurants/teleapo-やきとり米家/hero.jpg",
+      "/restaurants/teleapo-やきとり米家/point1.jpg",
+      "/restaurants/teleapo-やきとり米家/point2.jpg",
+      "/restaurants/teleapo-やきとり米家/point3.jpg",
+      "/restaurants/teleapo-やきとり米家/point4.jpg",
+      "/restaurants/teleapo-やきとり米家/point5.jpg"
+    ],
+    "desc": "やきとり米家は、茨城県土浦市中荒川沖町にある焼き鳥店である。",
+    "address": "茨城県土浦市中荒川沖町3-20",
+    "hours": "月〜土 17:00–23:30",
+    "closed": "日曜日",
+    "seats": "33席（カウンター・座敷）",
+    "nearest": "—",
+    "phone": "029-843-5379",
+    "source": {
+      "label": "Google ビジネスプロフィール",
+      "url": "https://maps.google.com/?cid=4573443589352041369"
+    },
+    "body": [
+      "やきとり米家は、茨城県土浦市にあるお店です。業態は「焼き鳥店」、所在地は茨城県土浦市中荒川沖町3-20です。マチノワ編集部の特集記事では、「つくば鶏の朝引き・手剥ぎと紀州備長炭の串焼き」・「和三盆仕込みの秘伝のタレとヒマラヤ産岩塩」などを取り上げています。",
+      "営業時間は月〜土 17:00–23:30、定休日は日曜日です（Googleマップの営業時間による）。席は33席（カウンター・座敷）。営業時間や価格は変わることがあるため、訪問前に公式サイトやSNS、お電話でご確認ください。"
+    ],
+    "highlights": [
+      "つくば鶏の朝引き・手剥ぎと紀州備長炭の串焼き",
+      "和三盆仕込みの秘伝のタレとヒマラヤ産岩塩",
+      "常時16種の梅酒と茨城・全国の地酒20種",
+      "ローストビーフ・グラタンなどの一品料理と真空パック販売",
+      "カウンター・座敷・個室の席と店内貸し切り"
+    ],
+    "tags": [
+      "焼き鳥店",
+      "土浦市",
+      "宴会",
+      "個室"
+    ],
+    "featureId": "やきとり米家"
+  },
+  {
+    "id": "r864",
+    "name": "ご馳走酒場 炉寿楽 駕町ーロジウラー",
+    "cuisine": "居酒屋",
+    "area": "熊本県・熊本市中央区",
+    "region": "kumamoto",
+    "shape": "square",
+    "image": "/restaurants/teleapo-ご馳走酒場炉寿楽駕町ーロジウラー/hero.jpg",
+    "heroImages": [
+      "/restaurants/teleapo-ご馳走酒場炉寿楽駕町ーロジウラー/hero.jpg",
+      "/restaurants/teleapo-ご馳走酒場炉寿楽駕町ーロジウラー/point1.jpg",
+      "/restaurants/teleapo-ご馳走酒場炉寿楽駕町ーロジウラー/point2.jpg",
+      "/restaurants/teleapo-ご馳走酒場炉寿楽駕町ーロジウラー/point3.jpg",
+      "/restaurants/teleapo-ご馳走酒場炉寿楽駕町ーロジウラー/point4.jpg"
+    ],
+    "gallery": [
+      "/restaurants/teleapo-ご馳走酒場炉寿楽駕町ーロジウラー/hero.jpg",
+      "/restaurants/teleapo-ご馳走酒場炉寿楽駕町ーロジウラー/point1.jpg",
+      "/restaurants/teleapo-ご馳走酒場炉寿楽駕町ーロジウラー/point2.jpg",
+      "/restaurants/teleapo-ご馳走酒場炉寿楽駕町ーロジウラー/point3.jpg",
+      "/restaurants/teleapo-ご馳走酒場炉寿楽駕町ーロジウラー/point4.jpg"
+    ],
+    "desc": "熊本県熊本市中央区の居酒屋。最寄りは下通アーケードを約200m進みドンキホーテから左折。",
+    "address": "熊本県熊本市中央区中央街1-3",
+    "hours": "月〜木 17:00–23:00 / 金・土 17:00–00:00",
+    "closed": "日曜日",
+    "seats": "—（訪問前に公式確認）",
+    "nearest": "下通アーケードを約200m進みドンキホーテから左折",
+    "phone": "096-288-3080",
+    "source": {
+      "label": "Google ビジネスプロフィール",
+      "url": "https://maps.google.com/?cid=5363790111194647840"
+    },
+    "body": [
+      "ご馳走酒場 炉寿楽 駕町ーロジウラーは、熊本県熊本市中央区にあるお店です。業態は「居酒屋」、所在地は熊本県熊本市中央区中央街1-3、最寄りは下通アーケードを約200m進みドンキホーテから左折です。マチノワ編集部の特集記事では、「馬刺し・骨つきもも炭火焼きと宮崎産和牛ホルモンの一品料理」・「肉厚ジューシーな自家製シウマイとホルモン味噌煮込み」などを取り上げています。",
+      "営業時間は月〜木 17:00–23:00 / 金・土 17:00–00:00、定休日は日曜日です（Googleマップの営業時間による）。営業時間や価格は変わることがあるため、訪問前に公式サイトやSNS、お電話でご確認ください。"
+    ],
+    "highlights": [
+      "馬刺し・骨つきもも炭火焼きと宮崎産和牛ホルモンの一品料理",
+      "肉厚ジューシーな自家製シウマイとホルモン味噌煮込み",
+      "店主厳選の日本酒と飲み放題付き宴会コース",
+      "個室と貸切に対応した40席"
+    ],
+    "tags": [
+      "居酒屋",
+      "中央区",
+      "深夜営業"
+    ],
+    "featureId": "ご馳走酒場炉寿楽駕町ーロジウラー"
+  },
+  {
+    "id": "r865",
+    "name": "ながた茶店 岩倉町本店 ＆ エシカル和カフェNAGACHACafé１８０１",
+    "cuisine": "カフェ・喫茶",
+    "area": "鳥取県・米子市",
+    "region": "tottori",
+    "shape": "square",
+    "image": "/restaurants/teleapo-ながた茶店岩倉町本店＆エシカル和カフェNAGACHACafé1801/hero.jpg",
+    "heroImages": [
+      "/restaurants/teleapo-ながた茶店岩倉町本店＆エシカル和カフェNAGACHACafé1801/hero.jpg",
+      "/restaurants/teleapo-ながた茶店岩倉町本店＆エシカル和カフェNAGACHACafé1801/point1.jpg",
+      "/restaurants/teleapo-ながた茶店岩倉町本店＆エシカル和カフェNAGACHACafé1801/point2.jpg",
+      "/restaurants/teleapo-ながた茶店岩倉町本店＆エシカル和カフェNAGACHACafé1801/point3.jpg",
+      "/restaurants/teleapo-ながた茶店岩倉町本店＆エシカル和カフェNAGACHACafé1801/point4.jpg"
+    ],
+    "gallery": [
+      "/restaurants/teleapo-ながた茶店岩倉町本店＆エシカル和カフェNAGACHACafé1801/hero.jpg",
+      "/restaurants/teleapo-ながた茶店岩倉町本店＆エシカル和カフェNAGACHACafé1801/point1.jpg",
+      "/restaurants/teleapo-ながた茶店岩倉町本店＆エシカル和カフェNAGACHACafé1801/point2.jpg",
+      "/restaurants/teleapo-ながた茶店岩倉町本店＆エシカル和カフェNAGACHACafé1801/point3.jpg",
+      "/restaurants/teleapo-ながた茶店岩倉町本店＆エシカル和カフェNAGACHACafé1801/point4.jpg"
+    ],
+    "desc": "ながた茶店は、1801年（享和元年）に長門屋秀次郎が創業し、七代にわたって米子市岩倉町で営む茶専門店である。江戸末期から2世紀以上、家を絶やさぬ覚悟で茶商を続けてきた老舗で、現在は7代目長田吉太郎が店を守る。",
+    "address": "鳥取県米子市岩倉町76",
+    "hours": "月・木〜日 10:30–17:00",
+    "closed": "火曜・水曜",
+    "seats": "—（訪問前に公式確認）",
+    "nearest": "—",
+    "phone": "0859-22-7602",
+    "source": {
+      "label": "Google ビジネスプロフィール",
+      "url": "https://maps.google.com/?cid=4427243329490675926"
+    },
+    "body": [
+      "ながた茶店 岩倉町本店 ＆ エシカル和カフェNAGACHACafé１８０１は、鳥取県米子市にあるお店です。業態は「カフェ・喫茶」、所在地は鳥取県米子市岩倉町76です。マチノワ編集部の特集記事では、「土曜・日曜のみ開くエシカル和カフェ「NagachaCafé1801」」・「享和元年から七代続く有機栽培茶専門店の岩倉町本店」などを取り上げています。",
+      "営業時間は月・木〜日 10:30–17:00、定休日は火曜・水曜です（Googleマップの営業時間による）。営業時間や価格は変わることがあるため、訪問前に公式サイトやSNS、お電話でご確認ください。"
+    ],
+    "highlights": [
+      "土曜・日曜のみ開くエシカル和カフェ「NagachaCafé1801」",
+      "享和元年から七代続く有機栽培茶専門店の岩倉町本店",
+      "ネッカ堆肥で1980年から育てる大山町産有機栽培茶",
+      "享和元年創業から2世紀以上続く茶商の歴史"
+    ],
+    "tags": [
+      "カフェ・喫茶",
+      "米子市",
+      "ランチ"
+    ],
+    "featureId": "ながた茶店岩倉町本店＆エシカル和カフェNAGACHACafé1801"
   }
 ];
 
@@ -19780,7 +20542,22 @@ export const ARTICLE_STORE_FEATURE_IDS: Record<string, string> = {
   "r847": "ほらふき亭本店",
   "r848": "Cafemomいきいきサロンひまわり",
   "r849": "Soi",
-  "r850": "焼肉居酒屋871。"
+  "r850": "焼肉居酒屋871。",
+  "r851": "おかざき",
+  "r852": "CoCocafé（ココカフェ）",
+  "r853": "にんじん",
+  "r854": "旬の味まねき",
+  "r855": "中華工房彩華",
+  "r856": "motocafeVIVA",
+  "r857": "日方珈琲焙煎所海南本店",
+  "r858": "restauranttrevi",
+  "r859": "力貴庵",
+  "r860": "おもて",
+  "r861": "AMBER329【南区バー】",
+  "r862": "お食事処まつした",
+  "r863": "やきとり米家",
+  "r864": "ご馳走酒場炉寿楽駕町ーロジウラー",
+  "r865": "ながた茶店岩倉町本店＆エシカル和カフェNAGACHACafé1801"
 };
 
 /** 特集記事ID → 店舗ID */
@@ -20191,5 +20968,20 @@ export const ARTICLE_STORE_ID_BY_FEATURE: Record<string, string> = {
   "ほらふき亭本店": "r847",
   "Cafemomいきいきサロンひまわり": "r848",
   "Soi": "r849",
-  "焼肉居酒屋871。": "r850"
+  "焼肉居酒屋871。": "r850",
+  "おかざき": "r851",
+  "CoCocafé（ココカフェ）": "r852",
+  "にんじん": "r853",
+  "旬の味まねき": "r854",
+  "中華工房彩華": "r855",
+  "motocafeVIVA": "r856",
+  "日方珈琲焙煎所海南本店": "r857",
+  "restauranttrevi": "r858",
+  "力貴庵": "r859",
+  "おもて": "r860",
+  "AMBER329【南区バー】": "r861",
+  "お食事処まつした": "r862",
+  "やきとり米家": "r863",
+  "ご馳走酒場炉寿楽駕町ーロジウラー": "r864",
+  "ながた茶店岩倉町本店＆エシカル和カフェNAGACHACafé1801": "r865"
 };
