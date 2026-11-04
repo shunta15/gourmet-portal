@@ -141,6 +141,9 @@ export const ONE_PAGE_UNLISTED_SHOP_OF_FEATURE: Readonly<Record<string, string>>
   "シーサイドレストランイーハ・トーヴ": "r869", // シーサイドレストラン イーハ・トーヴ
   "OneOneCafe": "r871", // OneOneCafe
   "焼肉しらとり": "r873", // 焼肉しらとり
+  "善": "r874", // 善
+  "パン工房すわかりんの木": "r875", // パン工房すわ かりんの木
+  "イザカヤちりえーじょ": "r876", // イザカヤ ちりえーじょ
 };
 
 const NFC = (s: string) => s.normalize("NFC");

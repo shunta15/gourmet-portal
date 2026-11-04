@@ -1,0 +1,133 @@
+{
+  "key": "tri-life-357",
+  "headline": "福岡市博多区冷泉町にある浄土宗の寺院。貞応元年（1222年）に人魚を境内に埋葬した伝説をもち、山号「冷泉山」と地名「冷泉町」の由来にもなった。",
+  "lede": "福岡市博多区にある「冷泉山龍宮寺」です。浄土宗鎮西派の寺院で、地下鉄祇園駅から徒歩2分の場所にあります。貞応元年（1222年）に博多津に人魚が打ち上げられ境内に埋葬されたという伝説をもち、山号「冷泉山」と地名「冷泉町」はともにこの故事に由来します。",
+  "sections": [
+    {
+      "heading": "場所とアクセス",
+      "body": "住所は福岡市博多区冷泉町4-21で、地下鉄祇園駅から徒歩2分です。大博通り沿いに位置し、博多の中心部にあります。"
+    },
+    {
+      "heading": "人魚伝説と寺の由緒",
+      "body": "貞応元年（1222年）、博多津に八十一間（約145.8メートル）という巨大な人魚が打ち上げられました。占術家の阿部大富が「国家長久の瑞兆」と占い、人魚は手厚く埋葬されることになりました。この際に滞在していた勅使・冷泉中納言の名にちなんで山号を「冷泉山」と改め、寺は「龍宮寺」と名付けられました。地名「冷泉町」もこの故事に由来します。もとは海辺に近いところにあり「浮御堂」でした。"
+    },
+    {
+      "heading": "境内の見どころと体験",
+      "body": "境内には人魚を葬った場所に建てられた人魚塚があります。本堂には寺宝として人魚の骨と人魚の絵の掛け軸が収蔵されています。本堂で写経・写仏体験ができます。九州西国霊場第三十二番札所でもあり、御朱印を受け取ることができます。"
+    }
+  ],
+  "menus": [],
+  "tags": [
+    {
+      "tag": "体験あり",
+      "factIndex": 10
+    },
+    {
+      "tag": "駅近",
+      "factIndex": 3
+    }
+  ],
+  "facts": [
+    {
+      "claim": "住所は福岡市博多区冷泉町4-21",
+      "source": "https://maps.google.com/?cid=6175160492366514505",
+      "quote": "福岡市博多区冷泉町４-２１",
+      "checkedAt": "2026-11-04"
+    },
+    {
+      "claim": "浄土宗鎮西派の寺院",
+      "source": "https://hotokami.jp/area/fukuoka/Hyttk/Hyttktk/Drtkt/26447/",
+      "quote": "浄土宗鎮西派",
+      "checkedAt": "2026-11-04"
+    },
+    {
+      "claim": "山号は冷泉山",
+      "source": "https://hotokami.jp/area/fukuoka/Hyttk/Hyttktk/Drtkt/26447/",
+      "quote": "山号は冷泉山",
+      "checkedAt": "2026-11-04"
+    },
+    {
+      "claim": "地下鉄祇園駅から徒歩2分",
+      "source": "https://www.hakata-light.jp/ryugu/",
+      "quote": "祇園駅から徒歩2分",
+      "checkedAt": "2026-11-04"
+    },
+    {
+      "claim": "貞応元年（1222年）に博多津に人魚が打ち上げられた",
+      "source": "https://japanmystery.com/fukuoka/ryuguji.html",
+      "quote": "1222年、博多津に巨大な人魚が打ち上げられた",
+      "checkedAt": "2026-11-04"
+    },
+    {
+      "claim": "人魚の大きさは八十一間（約145.8メートル）",
+      "source": "https://japanmystery.com/fukuoka/ryuguji.html",
+      "quote": "八十一間（約145.8ｍ）",
+      "checkedAt": "2026-11-04"
+    },
+    {
+      "claim": "阿部大富が「国家長久の瑞兆」と占い、人魚を手厚く葬ることになった",
+      "source": "https://japanmystery.com/fukuoka/ryuguji.html",
+      "quote": "国家長久の瑞兆、手厚く葬ることに決まった",
+      "checkedAt": "2026-11-04"
+    },
+    {
+      "claim": "勅使・冷泉中納言の名にちなんで山号を「冷泉山」と改めた",
+      "source": "https://japanmystery.com/fukuoka/ryuguji.html",
+      "quote": "冷泉中納言の名にちなんで山号は冷泉山",
+      "checkedAt": "2026-11-04"
+    },
+    {
+      "claim": "地名「冷泉町」は寺の山号「冷泉山」に由来する",
+      "source": "https://japanmystery.com/fukuoka/ryuguji.html",
+      "quote": "所在地の冷泉町はこれに由来します",
+      "checkedAt": "2026-11-04"
+    },
+    {
+      "claim": "もとは海辺に近いところにあり「浮御堂」と呼ばれていた",
+      "source": "https://www.hakata-light.jp/ryugu/",
+      "quote": "元はより海辺に近いところにあり、浮御堂といいました",
+      "checkedAt": "2026-11-04"
+    },
+    {
+      "claim": "本堂で写経・写仏体験ができる",
+      "source": "https://www.hakata-light.jp/ryugu/",
+      "quote": "写経体験（写経・写仏）",
+      "checkedAt": "2026-11-04"
+    },
+    {
+      "claim": "御朱印を受け取ることができる",
+      "source": "https://hotokami.jp/area/fukuoka/Hyttk/Hyttktk/Drtkt/26447/",
+      "quote": "御朱印、直書きで受け取れる",
+      "checkedAt": "2026-11-04"
+    },
+    {
+      "claim": "九州西国霊場第三十二番札所",
+      "source": "https://hotokami.jp/area/fukuoka/Hyttk/Hyttktk/Drtkt/26447/",
+      "quote": "九州西国霊場第三十二番札所",
+      "checkedAt": "2026-11-04"
+    }
+  ],
+  "sources": [
+    {
+      "label": "ホトカミ（龍宮寺）",
+      "url": "https://hotokami.jp/area/fukuoka/Hyttk/Hyttktk/Drtkt/26447/"
+    },
+    {
+      "label": "博多の光（龍宮寺）",
+      "url": "https://www.hakata-light.jp/ryugu/"
+    },
+    {
+      "label": "ささっとー（龍宮寺記事）",
+      "url": "https://sasatto.jp/article/entry-1965.html"
+    },
+    {
+      "label": "japanmystery（龍宮寺）",
+      "url": "https://japanmystery.com/fukuoka/ryuguji.html"
+    },
+    {
+      "label": "Google マップ",
+      "url": "https://maps.google.com/?cid=6175160492366514505"
+    }
+  ],
+  "notes": "automation/v2/write.mjs が 2026-11-04 に claude -p --model sonnet で作成。事実の裏取り: 13/15 件(quote が出どころの内容に合うもの。言い換え可)。裏取りに通らなかった facts は載せていない。"
+}

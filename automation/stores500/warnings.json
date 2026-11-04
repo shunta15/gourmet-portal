@@ -3372,5 +3372,28 @@
       "desc は lede から事実の文を選べず、事実から作った定型文",
       "cuisine は GBPカテゴリ"
     ]
+  },
+  "r874": {
+    "articleId": "善",
+    "name": "善",
+    "warnings": [
+      "desc は lede から事実の文を選べず、事実から作った定型文",
+      "cuisine は GBPカテゴリ"
+    ]
+  },
+  "r875": {
+    "articleId": "パン工房すわかりんの木",
+    "name": "パン工房すわ かりんの木",
+    "warnings": [
+      "cuisine は GBPカテゴリ"
+    ]
+  },
+  "r876": {
+    "articleId": "イザカヤちりえーじょ",
+    "name": "イザカヤ ちりえーじょ",
+    "warnings": [
+      "desc は lede から事実の文を選べず、事実から作った定型文",
+      "cuisine は GBPカテゴリ"
+    ]
   }
 }

@@ -1,0 +1,32 @@
+{
+  "tab": "トリニティアポ",
+  "tabEn": "tri-life",
+  "row": 357,
+  "sheet": {
+    "name": "龍宮寺",
+    "address": "",
+    "url": "https://www.google.com/maps/search/?api=1&query=%E9%BE%8D%E5%AE%AE%E5%AF%BA%20092-291-1003%20%E3%80%92812-0039%20%E7%A6%8F%E5%B2%A1%E7%9C%8C%E7%A6%8F%E5%B2%A1%E5%B8%82%E5%8D%9A%E5%A4%9A%E5%8C%BA%E5%86%B7%E6%B3%89%E7%94%BA%EF%BC%94%E2%88%92%EF%BC%92%EF%BC%91",
+    "type": "寺",
+    "d1": "",
+    "d2": ""
+  },
+  "urlKind": "mapsApi",
+  "route": "第1段(verify-gbp.mjs)で確認済み",
+  "verdict": "一致",
+  "verdictReason": "手がかり: 店名＋電話＋住所(番地まで)。電話が一致／店名: contains(シート「龍宮寺」/ マップ「浄土宗 冷泉山龍宮寺（山門）」)／住所(シート): exact・町名・番地とも一致",
+  "place": {
+    "name": "浄土宗 冷泉山龍宮寺（山門）",
+    "address": "福岡県福岡市博多区冷泉町４−２１",
+    "category": "仏教寺院",
+    "lat": 33.5945853,
+    "lng": 130.4133572,
+    "gbpUrl": "https://maps.google.com/?cid=6175160492366514505",
+    "phone": "092-291-1003",
+    "website": null,
+    "hours": null,
+    "reserveLinks": [],
+    "statusSignals": [],
+    "closedSignal": false
+  },
+  "fetchedAt": "2026-11-04T07:40:11.954Z"
+}

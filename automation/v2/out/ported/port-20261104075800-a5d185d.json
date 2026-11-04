@@ -1,0 +1,52 @@
+{
+  "commit": "a5d185db1842b3004b4e06fda323692b0dcf5bd3",
+  "source": "/Users/shunta/claude/gp-k-auto2",
+  "count": 4,
+  "added": [
+    {
+      "row": 393,
+      "name": "OneOneCafe",
+      "key": "lk-gourmet-393",
+      "vertical": "グルメ",
+      "id": "r874",
+      "articleId": "善",
+      "shopUrl": "https://machinowa.tokyo/restaurant/r874",
+      "articleUrl": "https://machinowa.tokyo/feature/善",
+      "sheetUrl": "https://machinowa.tokyo/feature/善"
+    },
+    {
+      "row": 357,
+      "name": "龍宮寺",
+      "key": "tri-life-357",
+      "vertical": "くらし",
+      "id": "li0158",
+      "articleId": "li0158",
+      "shopUrl": "https://machinowa.tokyo/life/shop/li0158",
+      "articleUrl": "https://machinowa.tokyo/life/article/li0158",
+      "sheetUrl": "https://machinowa.tokyo/life/article/li0158"
+    },
+    {
+      "row": 373,
+      "name": "かりんの木",
+      "key": "tri-gourmet-373",
+      "vertical": "グルメ",
+      "id": "r875",
+      "articleId": "パン工房すわかりんの木",
+      "shopUrl": "https://machinowa.tokyo/restaurant/r875",
+      "articleUrl": "https://machinowa.tokyo/feature/パン工房すわかりんの木",
+      "sheetUrl": "https://machinowa.tokyo/feature/パン工房すわかりんの木"
+    },
+    {
+      "row": 379,
+      "name": "イザカヤちりえーじょ",
+      "key": "tri-gourmet-379",
+      "vertical": "グルメ",
+      "id": "r876",
+      "articleId": "イザカヤちりえーじょ",
+      "shopUrl": "https://machinowa.tokyo/restaurant/r876",
+      "articleUrl": "https://machinowa.tokyo/feature/イザカヤちりえーじょ",
+      "sheetUrl": "https://machinowa.tokyo/feature/イザカヤちりえーじょ"
+    }
+  ],
+  "skipped": []
+}

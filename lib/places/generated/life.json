@@ -23492,6 +23492,133 @@
         ],
         "checkedAt": "2026-11-04"
       }
+    },
+    {
+      "id": "li0158",
+      "vertical": "life",
+      "category": "shrine-temple",
+      "name": "浄土宗 冷泉山龍宮寺（山門）",
+      "pref": "fukuoka",
+      "cityName": "福岡市博多区",
+      "address": "福岡県福岡市博多区冷泉町4-21",
+      "lat": 33.5945853,
+      "lng": 130.4133572,
+      "phone": "092-291-1003",
+      "mapUrl": "https://maps.google.com/?cid=6175160492366514505",
+      "image": "/_portal/vshops/tri-life-357/g01.jpg",
+      "images": [
+        "/_portal/vshops/tri-life-357/g01.jpg",
+        "/_portal/vshops/tri-life-357/g03.jpg",
+        "/_portal/vshops/tri-life-357/g04.jpg",
+        "/_portal/vshops/tri-life-357/g06.jpg",
+        "/_portal/vshops/tri-life-357/g07.jpg",
+        "/_portal/vshops/tri-life-357/g08.jpg",
+        "/_portal/vshops/tri-life-357/g09.jpg",
+        "/_portal/vshops/tri-life-357/g10.jpg"
+      ],
+      "photos": [
+        {
+          "path": "/_portal/vshops/tri-life-357/g01.jpg",
+          "what": "石燈篭が並ぶ木造の本堂外観",
+          "kind": "exterior",
+          "width": 1024,
+          "height": 683
+        },
+        {
+          "path": "/_portal/vshops/tri-life-357/g03.jpg",
+          "what": "道路に面して建つ木造建物の外観",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-life-357/g04.jpg",
+          "what": "境内に立つ石造りの碑",
+          "kind": "exterior",
+          "width": 904,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-life-357/g06.jpg",
+          "what": "夜間に照らされた山門の入口",
+          "kind": "exterior",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-life-357/g07.jpg",
+          "what": "木造の山門と背景のビルが見える境内外観",
+          "kind": "exterior",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-life-357/g08.jpg",
+          "what": "畳敷きの廊下と障子が続く室内",
+          "kind": "common",
+          "width": 675,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-life-357/g09.jpg",
+          "what": "金色の仏壇と仏像が並ぶ本堂内部",
+          "kind": "common",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-life-357/g10.jpg",
+          "what": "境内に置かれた石造りの狛犬",
+          "kind": "exterior",
+          "width": 900,
+          "height": 1200
+        }
+      ],
+      "tags": [
+        "体験あり",
+        "駅近"
+      ],
+      "article": {
+        "headline": "福岡市博多区冷泉町にある浄土宗の寺院。貞応元年（1222年）に人魚を境内に埋葬した伝説をもち、山号「冷泉山」と地名「冷泉町」の由来にもなった。",
+        "lede": "福岡市博多区にある「冷泉山龍宮寺」です。浄土宗鎮西派の寺院で、地下鉄祇園駅から徒歩2分の場所にあります。貞応元年（1222年）に博多津に人魚が打ち上げられ境内に埋葬されたという伝説をもち、山号「冷泉山」と地名「冷泉町」はともにこの故事に由来します。",
+        "sections": [
+          {
+            "heading": "場所とアクセス",
+            "body": "住所は福岡市博多区冷泉町4-21で、地下鉄祇園駅から徒歩2分です。大博通り沿いに位置し、博多の中心部にあります。"
+          },
+          {
+            "heading": "人魚伝説と寺の由緒",
+            "body": "貞応元年（1222年）、博多津に八十一間（約145.8メートル）という巨大な人魚が打ち上げられました。占術家の阿部大富が「国家長久の瑞兆」と占い、人魚は手厚く埋葬されることになりました。この際に滞在していた勅使・冷泉中納言の名にちなんで山号を「冷泉山」と改め、寺は「龍宮寺」と名付けられました。地名「冷泉町」もこの故事に由来します。もとは海辺に近いところにあり「浮御堂」でした。"
+          },
+          {
+            "heading": "境内の見どころと体験",
+            "body": "境内には人魚を葬った場所に建てられた人魚塚があります。本堂には寺宝として人魚の骨と人魚の絵の掛け軸が収蔵されています。本堂で写経・写仏体験ができます。九州西国霊場第三十二番札所でもあり、御朱印を受け取ることができます。"
+          }
+        ],
+        "sources": [
+          {
+            "label": "ホトカミ（龍宮寺）",
+            "url": "https://hotokami.jp/area/fukuoka/Hyttk/Hyttktk/Drtkt/26447/"
+          },
+          {
+            "label": "博多の光（龍宮寺）",
+            "url": "https://www.hakata-light.jp/ryugu/"
+          },
+          {
+            "label": "ささっとー（龍宮寺記事）",
+            "url": "https://sasatto.jp/article/entry-1965.html"
+          },
+          {
+            "label": "japanmystery（龍宮寺）",
+            "url": "https://japanmystery.com/fukuoka/ryuguji.html"
+          },
+          {
+            "label": "Google マップ",
+            "url": "https://maps.google.com/?cid=6175160492366514505"
+          }
+        ],
+        "checkedAt": "2026-11-04"
+      }
     }
   ]
 }

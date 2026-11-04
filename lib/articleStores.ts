@@ -20529,6 +20529,158 @@ export const ARTICLE_STORES: Restaurant[] = [
       "貸切可"
     ],
     "featureId": "焼肉しらとり"
+  },
+  {
+    "id": "r874",
+    "name": "善",
+    "cuisine": "レストラン",
+    "area": "滋賀県・高島市",
+    "region": "shiga",
+    "shape": "square",
+    "image": "/restaurants/teleapo-善/hero.jpg",
+    "heroImages": [
+      "/restaurants/teleapo-善/hero.jpg",
+      "/restaurants/teleapo-善/point1.jpg",
+      "/restaurants/teleapo-善/point2.jpg"
+    ],
+    "gallery": [
+      "/restaurants/teleapo-善/hero.jpg",
+      "/restaurants/teleapo-善/point1.jpg",
+      "/restaurants/teleapo-善/point2.jpg"
+    ],
+    "desc": "滋賀県高島市のレストラン。",
+    "address": "滋賀県高島市安曇川町川島368-1",
+    "hours": "月・水〜金 11:30–13:30, 17:30–22:00 / 土・日 17:30–22:00",
+    "closed": "火曜日",
+    "seats": "—（訪問前に公式確認）",
+    "nearest": "—",
+    "phone": "0740-34-0067",
+    "source": {
+      "label": "Google ビジネスプロフィール",
+      "url": "https://maps.google.com/?cid=752559921523811156"
+    },
+    "body": [
+      "善は、滋賀県高島市にあるお店です。業態は「レストラン」、所在地は滋賀県高島市安曇川町川島368-1です。マチノワ編集部の特集記事では、「平日に設けたランチタイムと夜の日本料理」・「個室とダーツブースを備えた店内」などを取り上げています。",
+      "営業時間は月・水〜金 11:30–13:30, 17:30–22:00 / 土・日 17:30–22:00、定休日は火曜日です（Googleマップの営業時間による）。営業時間や価格は変わることがあるため、訪問前に公式サイトやSNS、お電話でご確認ください。"
+    ],
+    "highlights": [
+      "平日に設けたランチタイムと夜の日本料理",
+      "個室とダーツブースを備えた店内",
+      "安曇川駅から北へ約3km、駐車場完備"
+    ],
+    "tags": [
+      "レストラン",
+      "高島市",
+      "個室",
+      "ランチ"
+    ],
+    "featureId": "善"
+  },
+  {
+    "id": "r875",
+    "name": "パン工房すわ かりんの木",
+    "cuisine": "ベーカリー",
+    "area": "長野県・諏訪市",
+    "region": "nagano",
+    "shape": "square",
+    "image": "/restaurants/teleapo-パン工房すわかりんの木/hero.jpg",
+    "heroImages": [
+      "/restaurants/teleapo-パン工房すわかりんの木/hero.jpg",
+      "/restaurants/teleapo-パン工房すわかりんの木/point1.jpg",
+      "/restaurants/teleapo-パン工房すわかりんの木/point2.jpg",
+      "/restaurants/teleapo-パン工房すわかりんの木/point3.jpg",
+      "/restaurants/teleapo-パン工房すわかりんの木/point4.jpg"
+    ],
+    "gallery": [
+      "/restaurants/teleapo-パン工房すわかりんの木/hero.jpg",
+      "/restaurants/teleapo-パン工房すわかりんの木/point1.jpg",
+      "/restaurants/teleapo-パン工房すわかりんの木/point2.jpg",
+      "/restaurants/teleapo-パン工房すわかりんの木/point3.jpg",
+      "/restaurants/teleapo-パン工房すわかりんの木/point4.jpg"
+    ],
+    "desc": "パン工房すわ かりんの木は、上諏訪駅から徒歩3分の諏訪市大手2丁目1-2に店を構えるベーカリーだ。子どもをはじめ全ての人に安心して食べられるパンを届けることを目指し、2012年5月にオープンした。",
+    "address": "長野県諏訪市大手2丁目1-2",
+    "hours": "水〜土 10:00–17:00",
+    "closed": "月曜・火曜・日曜",
+    "seats": "—（訪問前に公式確認）",
+    "nearest": "上諏訪駅（JR）徒歩3分",
+    "phone": "0266-55-4343",
+    "source": {
+      "label": "Google ビジネスプロフィール",
+      "url": "https://maps.google.com/?cid=8440817970227978321"
+    },
+    "body": [
+      "パン工房すわ かりんの木は、長野県諏訪市にあるお店です。業態は「ベーカリー」、所在地は長野県諏訪市大手2丁目1-2、最寄りは上諏訪駅（JR）徒歩3分です。マチノワ編集部の特集記事では、「保存料・着色料不使用、北海道産小麦を使った生地づくり」・「金・土限定のクロワッサンと天然酵母のハード系パン」などを取り上げています。",
+      "営業時間は水〜土 10:00–17:00、定休日は月曜・火曜・日曜です（Googleマップの営業時間による）。営業時間や価格は変わることがあるため、訪問前に公式サイトやSNS、お電話でご確認ください。"
+    ],
+    "highlights": [
+      "保存料・着色料不使用、北海道産小麦を使った生地づくり",
+      "金・土限定のクロワッサンと天然酵母のハード系パン",
+      "八ヶ岳の卵・野辺山高原のジャージー牛乳など厳選素材",
+      "上諏訪駅から徒歩3分、隣のなわて駐車場が利用可"
+    ],
+    "tags": [
+      "ベーカリー",
+      "パン",
+      "諏訪市",
+      "上諏訪駅",
+      "ランチ"
+    ],
+    "featureId": "パン工房すわかりんの木"
+  },
+  {
+    "id": "r876",
+    "name": "イザカヤ ちりえーじょ",
+    "cuisine": "居酒屋",
+    "area": "京都府・京都市中京区",
+    "region": "kyoto",
+    "shape": "square",
+    "image": "/restaurants/teleapo-イザカヤちりえーじょ/hero.jpg",
+    "heroImages": [
+      "/restaurants/teleapo-イザカヤちりえーじょ/hero.jpg",
+      "/restaurants/teleapo-イザカヤちりえーじょ/point1.jpg",
+      "/restaurants/teleapo-イザカヤちりえーじょ/point2.jpg",
+      "/restaurants/teleapo-イザカヤちりえーじょ/point3.jpg",
+      "/restaurants/teleapo-イザカヤちりえーじょ/point4.jpg"
+    ],
+    "gallery": [
+      "/restaurants/teleapo-イザカヤちりえーじょ/hero.jpg",
+      "/restaurants/teleapo-イザカヤちりえーじょ/point1.jpg",
+      "/restaurants/teleapo-イザカヤちりえーじょ/point2.jpg",
+      "/restaurants/teleapo-イザカヤちりえーじょ/point3.jpg",
+      "/restaurants/teleapo-イザカヤちりえーじょ/point4.jpg",
+      "/restaurants/teleapo-イザカヤちりえーじょ/point5.jpg"
+    ],
+    "desc": "京都府京都市中京区の居酒屋。最寄りは烏丸御池駅（地下鉄東西線）徒歩4分。",
+    "address": "京都府京都市中京区東洞院通六角上る三文字町225 朝陽ビル 1F",
+    "hours": "毎日 17:00–00:00",
+    "closed": "なし（Googleマップの営業時間による）",
+    "seats": "24席（テーブル8・カウンター6・個室10）",
+    "nearest": "烏丸御池駅（地下鉄東西線）徒歩4分",
+    "phone": "075-585-2286",
+    "source": {
+      "label": "Google ビジネスプロフィール",
+      "url": "https://maps.google.com/?cid=7444743028602257861"
+    },
+    "body": [
+      "イザカヤ ちりえーじょは、京都府京都市中京区にあるお店です。業態は「居酒屋」、所在地は京都府京都市中京区東洞院通六角上る三文字町225 朝陽ビル 1F、最寄りは烏丸御池駅（地下鉄東西線）徒歩4分です。マチノワ編集部の特集記事では、「産地直送で仕入れる魚介と旬の一品料理」・「春・夏・冬で内容が変わる季節のコース」などを取り上げています。",
+      "営業時間は毎日 17:00–00:00で、定休日はありません（Googleマップの営業時間による）。席は24席（テーブル8・カウンター6・個室10）。営業時間や価格は変わることがあるため、訪問前に公式サイトやSNS、お電話でご確認ください。"
+    ],
+    "highlights": [
+      "産地直送で仕入れる魚介と旬の一品料理",
+      "春・夏・冬で内容が変わる季節のコース",
+      "全国各地から厳選した日本酒と豊富なドリンク",
+      "完全個室（掘りごたつ）とカウンター・テーブルの3タイプ",
+      "烏丸御池駅から徒歩4分のアクセスと利用の仕方"
+    ],
+    "tags": [
+      "居酒屋",
+      "中京区",
+      "烏丸御池駅",
+      "個室",
+      "深夜営業"
+    ],
+    "featureId": "イザカヤちりえーじょ"
   }
 ];
 
@@ -20963,7 +21115,10 @@ export const ARTICLE_STORE_FEATURE_IDS: Record<string, string> = {
   "r870": "定食居酒屋みち",
   "r871": "OneOneCafe",
   "r872": "天萬堂",
-  "r873": "焼肉しらとり"
+  "r873": "焼肉しらとり",
+  "r874": "善",
+  "r875": "パン工房すわかりんの木",
+  "r876": "イザカヤちりえーじょ"
 };
 
 /** 特集記事ID → 店舗ID */
@@ -21397,5 +21552,8 @@ export const ARTICLE_STORE_ID_BY_FEATURE: Record<string, string> = {
   "定食居酒屋みち": "r870",
   "OneOneCafe": "r871",
   "天萬堂": "r872",
-  "焼肉しらとり": "r873"
+  "焼肉しらとり": "r873",
+  "善": "r874",
+  "パン工房すわかりんの木": "r875",
+  "イザカヤちりえーじょ": "r876"
 };
