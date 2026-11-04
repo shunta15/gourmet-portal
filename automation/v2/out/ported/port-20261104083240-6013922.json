@@ -1,0 +1,30 @@
+{
+  "commit": "601392263dc765c1d0d66dcbc3b481eaa9b44ca5",
+  "source": "/Users/shunta/claude/gp-k-auto2",
+  "count": 2,
+  "added": [
+    {
+      "row": 374,
+      "name": "酒処 朧",
+      "key": "lk-gourmet-374",
+      "vertical": "グルメ",
+      "id": "r877",
+      "articleId": "酒処朧",
+      "shopUrl": "https://machinowa.tokyo/restaurant/r877",
+      "articleUrl": "https://machinowa.tokyo/feature/酒処朧",
+      "sheetUrl": "https://machinowa.tokyo/feature/酒処朧"
+    },
+    {
+      "row": 363,
+      "name": "菅生山 大宝寺",
+      "key": "tri-life-363",
+      "vertical": "くらし",
+      "id": "li0159",
+      "articleId": "li0159",
+      "shopUrl": "https://machinowa.tokyo/life/shop/li0159",
+      "articleUrl": "https://machinowa.tokyo/life/article/li0159",
+      "sheetUrl": "https://machinowa.tokyo/life/article/li0159"
+    }
+  ],
+  "skipped": []
+}

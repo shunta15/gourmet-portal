@@ -144,6 +144,7 @@ export const ONE_PAGE_UNLISTED_SHOP_OF_FEATURE: Readonly<Record<string, string>>
   "善": "r874", // 善
   "パン工房すわかりんの木": "r875", // パン工房すわ かりんの木
   "イザカヤちりえーじょ": "r876", // イザカヤ ちりえーじょ
+  "酒処朧": "r877", // 酒処 朧
 };
 
 const NFC = (s: string) => s.normalize("NFC");

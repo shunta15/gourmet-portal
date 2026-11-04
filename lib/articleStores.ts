@@ -20681,6 +20681,54 @@ export const ARTICLE_STORES: Restaurant[] = [
       "深夜営業"
     ],
     "featureId": "イザカヤちりえーじょ"
+  },
+  {
+    "id": "r877",
+    "name": "酒処 朧",
+    "cuisine": "居酒屋",
+    "area": "福岡県・田川市",
+    "region": "fukuoka",
+    "shape": "square",
+    "image": "/restaurants/teleapo-酒処朧/hero.jpg",
+    "heroImages": [
+      "/restaurants/teleapo-酒処朧/hero.jpg",
+      "/restaurants/teleapo-酒処朧/point1.jpg",
+      "/restaurants/teleapo-酒処朧/point2.jpg",
+      "/restaurants/teleapo-酒処朧/point3.jpg"
+    ],
+    "gallery": [
+      "/restaurants/teleapo-酒処朧/hero.jpg",
+      "/restaurants/teleapo-酒処朧/point1.jpg",
+      "/restaurants/teleapo-酒処朧/point2.jpg",
+      "/restaurants/teleapo-酒処朧/point3.jpg"
+    ],
+    "desc": "福岡県田川市の居酒屋。",
+    "address": "福岡県田川市伊加利2195-40",
+    "hours": "火〜金 11:30–14:00, 18:00–23:00 / 土 11:30–14:00 / 日 18:00–23:00",
+    "closed": "月曜日",
+    "seats": "—（訪問前に公式確認）",
+    "nearest": "—",
+    "phone": "0947-23-2772",
+    "instagram": "https://www.instagram.com/oboro.izakaya",
+    "source": {
+      "label": "Google ビジネスプロフィール",
+      "url": "https://maps.google.com/?cid=1465475957431522546"
+    },
+    "body": [
+      "酒処 朧は、福岡県田川市にあるお店です。業態は「居酒屋」、所在地は福岡県田川市伊加利2195-40です。マチノワ編集部の特集記事では、「ランチと夜の居酒屋、週6日の二部制営業」・「揚げ物・焼き魚・海鮮丼など幅広い料理」などを取り上げています。",
+      "営業時間は火〜金 11:30–14:00, 18:00–23:00 / 土 11:30–14:00 / 日 18:00–23:00、定休日は月曜日です（Googleマップの営業時間による）。営業時間や価格は変わることがあるため、訪問前に公式サイトやSNS、お電話でご確認ください。"
+    ],
+    "highlights": [
+      "ランチと夜の居酒屋、週6日の二部制営業",
+      "揚げ物・焼き魚・海鮮丼など幅広い料理",
+      "テイクアウト対応と田川市伊加利のアクセス"
+    ],
+    "tags": [
+      "居酒屋",
+      "田川市",
+      "ランチ"
+    ],
+    "featureId": "酒処朧"
   }
 ];
 
@@ -21118,7 +21166,8 @@ export const ARTICLE_STORE_FEATURE_IDS: Record<string, string> = {
   "r873": "焼肉しらとり",
   "r874": "善",
   "r875": "パン工房すわかりんの木",
-  "r876": "イザカヤちりえーじょ"
+  "r876": "イザカヤちりえーじょ",
+  "r877": "酒処朧"
 };
 
 /** 特集記事ID → 店舗ID */
@@ -21555,5 +21604,6 @@ export const ARTICLE_STORE_ID_BY_FEATURE: Record<string, string> = {
   "焼肉しらとり": "r873",
   "善": "r874",
   "パン工房すわかりんの木": "r875",
-  "イザカヤちりえーじょ": "r876"
+  "イザカヤちりえーじょ": "r876",
+  "酒処朧": "r877"
 };

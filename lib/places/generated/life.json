@@ -23619,6 +23619,186 @@
         ],
         "checkedAt": "2026-11-04"
       }
+    },
+    {
+      "id": "li0159",
+      "vertical": "life",
+      "category": "shrine-temple",
+      "name": "大宝寺",
+      "pref": "aichi",
+      "cityName": "南知多町",
+      "address": "愛知県知多郡南知多町内海大名切36",
+      "lat": 34.7356453,
+      "lng": 136.8892305,
+      "hours": "毎日 09:00 - 17:00",
+      "phone": "0569-62-0355",
+      "url": "https://www.daihoji44.jp/",
+      "website": "https://www.daihoji44.jp/",
+      "mapUrl": "https://maps.google.com/?cid=8972920317006642889",
+      "image": "/_portal/vshops/tri-life-363/g01.jpg",
+      "images": [
+        "/_portal/vshops/tri-life-363/g01.jpg",
+        "/_portal/vshops/tri-life-363/g02.jpg",
+        "/_portal/vshops/tri-life-363/g03.jpg",
+        "/_portal/vshops/tri-life-363/g04.jpg",
+        "/_portal/vshops/tri-life-363/g05.jpg",
+        "/_portal/vshops/tri-life-363/g06.jpg",
+        "/_portal/vshops/tri-life-363/g07.jpg",
+        "/_portal/vshops/tri-life-363/g08.jpg",
+        "/_portal/vshops/tri-life-363/g09.jpg",
+        "/_portal/vshops/tri-life-363/g10.jpg"
+      ],
+      "photos": [
+        {
+          "path": "/_portal/vshops/tri-life-363/g01.jpg",
+          "what": "本堂内部の仏壇と仏像が並ぶ様子",
+          "kind": "common",
+          "width": 1200,
+          "height": 801
+        },
+        {
+          "path": "/_portal/vshops/tri-life-363/g02.jpg",
+          "what": "木造本堂の外観",
+          "kind": "exterior",
+          "width": 675,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-life-363/g03.jpg",
+          "what": "境内の石灯籠と緑の木々",
+          "kind": "common",
+          "width": 1200,
+          "height": 675
+        },
+        {
+          "path": "/_portal/vshops/tri-life-363/g04.jpg",
+          "what": "本堂の正面外観と庭",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 800
+        },
+        {
+          "path": "/_portal/vshops/tri-life-363/g05.jpg",
+          "what": "境内に立つ石仏像",
+          "kind": "common",
+          "width": 675,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-life-363/g06.jpg",
+          "what": "境内の石碑とあじさいの花",
+          "kind": "common",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-life-363/g07.jpg",
+          "what": "境内の参道と石塔が並ぶ景色",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 800
+        },
+        {
+          "path": "/_portal/vshops/tri-life-363/g08.jpg",
+          "what": "苔むした台座に座る地蔵像",
+          "kind": "common",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-life-363/g09.jpg",
+          "what": "苔と植物に囲まれた石の水鉢",
+          "kind": "common",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-life-363/g10.jpg",
+          "what": "赤い帽子をかぶった地蔵が一列に並ぶ",
+          "kind": "common",
+          "width": 1200,
+          "height": 675
+        }
+      ],
+      "tags": [
+        "体験あり",
+        "予約制"
+      ],
+      "article": {
+        "headline": "愛知県知多郡南知多町内海の山中にある曹洞宗寺院。知多新四国八十八ヶ所霊場の第四十四番札所で、縁切り寺・もくれん寺としても知られます。",
+        "lede": "知多郡南知多町にある「大宝寺」です。文化六年（1809年）に開かれた曹洞宗寺院で、知多新四国八十八ヶ所霊場の第四十四番札所、南知多三十三観音霊場の第二十七番札所です。江戸時代の創建当初より駆け込み寺として多くの女性を受け入れてきた歴史があり、現在も東海地方では数少ない縁切り寺として、縁切り・縁結びのご祈祷を承っています。",
+        "sections": [
+          {
+            "heading": "境内と自然",
+            "body": "春には境内のもくれんが満開となり、「もくれん寺」とも呼ばれています。最寄りの民家から300m以上離れた山中に建立されており、境内では鳥の声や木々のざわめきが響きます。内海の海水浴で賑わう地区の山奥に位置する静かな場所で、境内には食事処「もくれん茶屋」と集会施設「もくれん会館」があります。授与品として、悪縁を払い幸運を招く「幸せの猫しっぽ」のお守りを取り扱っています。"
+          },
+          {
+            "heading": "御朱印・ご祈祷・体験",
+            "body": "住職が一枚ずつ手書きする月替わりの特別御朱印を授与しています。定番の御朱印のほか、誕生日・記念日向けの御朱印もあります。ご祈祷、坐禅会・写経も実施しており、寺での体験ができます。ご来寺前に電話（0569-62-0355）で事前にご連絡ください。"
+          },
+          {
+            "heading": "四柱推命鑑定",
+            "body": "現住職による四柱推命鑑定を行っています。陰陽五行説に基づく東洋占星術で、対面での鑑定です。白猫タロット占いも提供しており、日常のちょっとした悩みにも対応しています。鑑定はご予約が必要で、公式サイトのお問い合わせフォームまたは電話でご予約ください。"
+          },
+          {
+            "heading": "アクセス",
+            "body": "南知多道路・南知多ICから約7分（約4.8km）。名古屋市内から名鉄を利用する場合は、名鉄名古屋駅から内海駅まで約1時間、内海駅からタクシーで約5分（約2km）です。国道247号線内海交差点からも約5分（約2.2km）で到着します。"
+          }
+        ],
+        "menus": [
+          {
+            "name": "御朱印授与（月替わり限定）"
+          },
+          {
+            "name": "定番御朱印"
+          },
+          {
+            "name": "ご祈祷"
+          },
+          {
+            "name": "縁切り・縁結び"
+          },
+          {
+            "name": "四柱推命鑑定"
+          },
+          {
+            "name": "白猫タロット占い"
+          },
+          {
+            "name": "坐禅会・写経"
+          },
+          {
+            "name": "永代供養"
+          }
+        ],
+        "sources": [
+          {
+            "label": "公式サイト",
+            "url": "https://www.daihoji44.jp/"
+          },
+          {
+            "label": "公式サイト(アクセス)",
+            "url": "https://www.daihoji44.jp/access"
+          },
+          {
+            "label": "公式サイト(歴史)",
+            "url": "https://www.daihoji44.jp/rekishi"
+          },
+          {
+            "label": "公式サイト(御朱印)",
+            "url": "https://www.daihoji44.jp/gosyuin"
+          },
+          {
+            "label": "公式サイト(四柱推命鑑定)",
+            "url": "https://www.daihoji44.jp/four-pillars-of-destiny"
+          },
+          {
+            "label": "Google マップ",
+            "url": "https://maps.google.com/?cid=8972920317006642889"
+          }
+        ],
+        "checkedAt": "2026-11-04"
+      }
     }
   ]
 }

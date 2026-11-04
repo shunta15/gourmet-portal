@@ -1,0 +1,40 @@
+{
+  "tab": "トリニティアポ",
+  "tabEn": "tri-life",
+  "row": 363,
+  "sheet": {
+    "name": "菅生山 大宝寺",
+    "address": "",
+    "url": "https://maps.google.com/?cid=8972920317006642889",
+    "type": "寺",
+    "d1": "",
+    "d2": ""
+  },
+  "urlKind": "cid",
+  "route": "第1段(verify-gbp.mjs)で確認済み",
+  "verdict": "一致",
+  "verdictReason": "手がかり: 店名＋電話＋住所(番地まで)。電話が一致／店名: contains(シート「菅生山 大宝寺」/ マップ「大宝寺」)／住所(シート): exact・町名・番地とも一致",
+  "place": {
+    "name": "大宝寺",
+    "address": "愛知県知多郡南知多町内海大名切３６",
+    "category": "仏教寺院",
+    "lat": 34.7356453,
+    "lng": 136.8892305,
+    "gbpUrl": "https://maps.google.com/?cid=8972920317006642889",
+    "phone": "0569-62-0355",
+    "website": "https://www.daihoji44.jp/",
+    "hours": {
+      "月": "09:00–17:00",
+      "火": "09:00–17:00",
+      "水": "09:00–17:00",
+      "木": "09:00–17:00",
+      "金": "09:00–17:00",
+      "土": "09:00–17:00",
+      "日": "09:00–17:00"
+    },
+    "reserveLinks": [],
+    "statusSignals": [],
+    "closedSignal": false
+  },
+  "fetchedAt": "2026-11-04T08:06:57.944Z"
+}
