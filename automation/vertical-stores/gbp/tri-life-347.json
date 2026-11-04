@@ -1,0 +1,32 @@
+{
+  "tab": "トリニティアポ",
+  "tabEn": "tri-life",
+  "row": 347,
+  "sheet": {
+    "name": "一言主神社",
+    "address": "",
+    "url": "https://www.google.com/maps/search/?api=1&query=%E4%B8%80%E8%A8%80%E4%B8%BB%E7%A5%9E%E7%A4%BE%20090-7550-4001%20%E3%80%92648-0081%20%E5%92%8C%E6%AD%8C%E5%B1%B1%E7%9C%8C%E6%A9%8B%E6%9C%AC%E5%B8%82%E5%B1%B1%E7%94%B0%EF%BC%96%EF%BC%92%EF%BC%96%20%EF%BC%96%EF%BC%92%EF%BC%96%E7%95%AA%E5%9C%B0",
+    "type": "神社",
+    "d1": "",
+    "d2": ""
+  },
+  "urlKind": "mapsApi",
+  "route": "第1段(verify-gbp.mjs)で確認済み",
+  "verdict": "一致",
+  "verdictReason": "手がかり: 店名＋住所(番地まで)。電話がちがう(シート 090-7550-4001 / マップ 0736-33-3813)／店名: exact(シート「一言主神社」/ マップ「一言主神社」)／住所(シート): exact・町名・番地とも一致",
+  "place": {
+    "name": "一言主神社",
+    "address": "和歌山県橋本市山田６２６ ６２６番地",
+    "category": "神社",
+    "lat": 34.3392977,
+    "lng": 135.5700466,
+    "gbpUrl": "https://maps.google.com/?cid=9101954195237302964",
+    "phone": "0736-33-3813",
+    "website": "http://wakayama-jinjacho.or.jp/jdb/sys/user/GetWjtTbl.php?JinjyaNo=4012",
+    "hours": null,
+    "reserveLinks": [],
+    "statusSignals": [],
+    "closedSignal": false
+  },
+  "fetchedAt": "2026-11-04T05:14:23.413Z"
+}

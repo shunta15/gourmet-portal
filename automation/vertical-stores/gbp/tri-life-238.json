@@ -1,0 +1,32 @@
+{
+  "tab": "トリニティアポ",
+  "tabEn": "tri-life",
+  "row": 238,
+  "sheet": {
+    "name": "福応寺",
+    "address": "",
+    "url": "https://www.google.com/maps/search/?api=1&query=%E7%A6%8F%E5%BF%9C%E5%AF%BA%20055-333-3273%20%E3%80%92404-0051%20%E5%B1%B1%E6%A2%A8%E7%9C%8C%E7%94%B2%E5%B7%9E%E5%B8%82%E5%A1%A9%E5%B1%B1%E7%AB%B9%E6%A3%AE%EF%BC%97%EF%BC%99%EF%BC%98",
+    "type": "寺",
+    "d1": "",
+    "d2": ""
+  },
+  "urlKind": "mapsApi",
+  "route": "第1段(verify-gbp.mjs)で確認済み",
+  "verdict": "一致",
+  "verdictReason": "手がかり: 電話＋住所(番地まで)。電話が一致／店名: different(シート「福応寺」/ マップ「福應寺」)／住所(シート): exact・町名・番地とも一致",
+  "place": {
+    "name": "福應寺",
+    "address": "山梨県甲州市塩山竹森７９８",
+    "category": "仏教寺院",
+    "lat": 35.7263661,
+    "lng": 138.7505819,
+    "gbpUrl": "https://maps.google.com/?cid=6413851147210317953",
+    "phone": "0553-33-3273",
+    "website": null,
+    "hours": null,
+    "reserveLinks": [],
+    "statusSignals": [],
+    "closedSignal": false
+  },
+  "fetchedAt": "2026-10-27T09:13:23.455Z"
+}

@@ -1,0 +1,151 @@
+{
+  "commit": "a460f737915dddb00e433a41032320b908f5cb5c",
+  "source": "/Users/shunta/claude/gp-k-auto2",
+  "count": 13,
+  "added": [
+    {
+      "row": 238,
+      "name": "福応寺",
+      "key": "tri-life-238",
+      "vertical": "くらし",
+      "id": "li0156",
+      "articleId": "li0156",
+      "shopUrl": "https://machinowa.tokyo/life/shop/li0156",
+      "articleUrl": "https://machinowa.tokyo/life/article/li0156",
+      "sheetUrl": "https://machinowa.tokyo/life/article/li0156"
+    },
+    {
+      "row": 355,
+      "name": "西村",
+      "key": "lk-gourmet-355",
+      "vertical": "グルメ",
+      "id": "r866",
+      "articleId": "西村",
+      "shopUrl": "https://machinowa.tokyo/restaurant/r866",
+      "articleUrl": "https://machinowa.tokyo/feature/西村",
+      "sheetUrl": "https://machinowa.tokyo/feature/西村"
+    },
+    {
+      "row": 382,
+      "name": "どらや",
+      "key": "lk-gourmet-382",
+      "vertical": "グルメ",
+      "id": "r867",
+      "articleId": "どらや",
+      "shopUrl": "https://machinowa.tokyo/restaurant/r867",
+      "articleUrl": "https://machinowa.tokyo/feature/どらや",
+      "sheetUrl": "https://machinowa.tokyo/feature/どらや"
+    },
+    {
+      "row": 383,
+      "name": "エビス屋",
+      "key": "lk-gourmet-383",
+      "vertical": "グルメ",
+      "id": "r868",
+      "articleId": "エビス屋",
+      "shopUrl": "https://machinowa.tokyo/restaurant/r868",
+      "articleUrl": "https://machinowa.tokyo/feature/エビス屋",
+      "sheetUrl": "https://machinowa.tokyo/feature/エビス屋"
+    },
+    {
+      "row": 391,
+      "name": "定食居酒屋 みち",
+      "key": "lk-gourmet-391",
+      "vertical": "グルメ",
+      "id": "r870",
+      "articleId": "定食居酒屋みち",
+      "shopUrl": "https://machinowa.tokyo/restaurant/r870",
+      "articleUrl": "https://machinowa.tokyo/feature/定食居酒屋みち",
+      "sheetUrl": "https://machinowa.tokyo/feature/定食居酒屋みち"
+    },
+    {
+      "row": 346,
+      "name": "天萬堂",
+      "key": "tri-gourmet-346",
+      "vertical": "グルメ",
+      "id": "r872",
+      "articleId": "天萬堂",
+      "shopUrl": "https://machinowa.tokyo/restaurant/r872",
+      "articleUrl": "https://machinowa.tokyo/feature/天萬堂",
+      "sheetUrl": "https://machinowa.tokyo/feature/天萬堂"
+    },
+    {
+      "row": 359,
+      "name": "能登の宿 和倉温泉はまづる",
+      "key": "tri-activity-359",
+      "vertical": "アクティビティ",
+      "id": "ac0040",
+      "articleId": "ac0040",
+      "shopUrl": "https://machinowa.tokyo/activity/shop/ac0040",
+      "articleUrl": "https://machinowa.tokyo/activity/article/ac0040",
+      "sheetUrl": "https://machinowa.tokyo/activity/article/ac0040"
+    },
+    {
+      "row": 387,
+      "name": "シーサイドレストラン イーハ・トーヴ",
+      "key": "lk-gourmet-387",
+      "vertical": "グルメ",
+      "id": "r869",
+      "articleId": "シーサイドレストランイーハ・トーヴ",
+      "shopUrl": "https://machinowa.tokyo/restaurant/r869",
+      "articleUrl": "https://machinowa.tokyo/feature/シーサイドレストランイーハ・トーヴ",
+      "sheetUrl": "https://machinowa.tokyo/feature/シーサイドレストランイーハ・トーヴ"
+    },
+    {
+      "row": 335,
+      "name": "ロッヂ・サノ",
+      "key": "tri-stay-335",
+      "vertical": "ステイ",
+      "id": "st0025",
+      "articleId": "st0025",
+      "shopUrl": "https://machinowa.tokyo/stay/shop/st0025",
+      "articleUrl": "https://machinowa.tokyo/stay/article/st0025",
+      "sheetUrl": "https://machinowa.tokyo/stay/article/st0025"
+    },
+    {
+      "row": 347,
+      "name": "一言主神社",
+      "key": "tri-life-347",
+      "vertical": "くらし",
+      "id": "li0157",
+      "articleId": "li0157",
+      "shopUrl": "https://machinowa.tokyo/life/shop/li0157",
+      "articleUrl": "https://machinowa.tokyo/life/article/li0157",
+      "sheetUrl": "https://machinowa.tokyo/life/article/li0157"
+    },
+    {
+      "row": 350,
+      "name": "浜辺の宿 あさひや",
+      "key": "tri-activity-350",
+      "vertical": "アクティビティ",
+      "id": "ac0039",
+      "articleId": "ac0039",
+      "shopUrl": "https://machinowa.tokyo/activity/shop/ac0039",
+      "articleUrl": "https://machinowa.tokyo/activity/article/ac0039",
+      "sheetUrl": "https://machinowa.tokyo/activity/article/ac0039"
+    },
+    {
+      "row": 394,
+      "name": "OneOneCafe",
+      "key": "lk-gourmet-394",
+      "vertical": "グルメ",
+      "id": "r871",
+      "articleId": "OneOneCafe",
+      "shopUrl": "https://machinowa.tokyo/restaurant/r871",
+      "articleUrl": "https://machinowa.tokyo/feature/OneOneCafe",
+      "sheetUrl": "https://machinowa.tokyo/feature/OneOneCafe"
+    },
+    {
+      "row": 378,
+      "name": "焼肉しらとり",
+      "key": "tri-gourmet-378",
+      "vertical": "グルメ",
+      "id": "r873",
+      "articleId": "焼肉しらとり",
+      "shopUrl": "https://machinowa.tokyo/restaurant/r873",
+      "articleUrl": "https://machinowa.tokyo/feature/焼肉しらとり",
+      "sheetUrl": "https://machinowa.tokyo/feature/焼肉しらとり"
+    }
+  ],
+  "skipped": []
+}

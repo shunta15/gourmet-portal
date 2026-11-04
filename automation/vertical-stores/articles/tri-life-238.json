@@ -1,0 +1,52 @@
+{
+  "key": "tri-life-238",
+  "headline": "甲州市塩山にある浄土真宗本願寺派の寺院。境内には永代供養墓が設けられている。",
+  "lede": "山梨県甲州市塩山竹森798にある「福應寺」です。浄土真宗本願寺派の寺院で、境内には永代供養墓があります。",
+  "sections": [
+    {
+      "heading": "場所と宗派",
+      "body": "住所は山梨県甲州市塩山竹森798、電話は0553-33-3273です。浄土真宗本願寺派に属する寺院です。"
+    },
+    {
+      "heading": "永代供養",
+      "body": "境内に永代供養墓があります。屋外の墓石の下に合祀する形式で、納骨が可能です。"
+    }
+  ],
+  "menus": [],
+  "tags": [],
+  "facts": [
+    {
+      "claim": "浄土真宗本願寺派の寺院",
+      "source": "https://www.e-ohaka.com/temple_list/id19213.html",
+      "quote": "浄土真宗本願寺派",
+      "checkedAt": "2026-11-04"
+    },
+    {
+      "claim": "境内に永代供養墓があり、屋外の墓石の下に合祀する形式",
+      "source": "https://eitaikuyo.jp/temple/31539/",
+      "quote": "屋外の墓石の下に埋葬",
+      "checkedAt": "2026-11-04"
+    },
+    {
+      "claim": "住所は山梨県甲州市塩山竹森798、電話は0553-33-3273",
+      "source": "https://maps.google.com/?cid=6413851147210317953",
+      "quote": "山梨県甲州市塩山竹森798",
+      "checkedAt": "2026-11-04"
+    }
+  ],
+  "sources": [
+    {
+      "label": "いいお墓(寺院一覧)",
+      "url": "https://www.e-ohaka.com/temple_list/id19213.html"
+    },
+    {
+      "label": "ハカシル",
+      "url": "https://eitaikuyo.jp/temple/31539/"
+    },
+    {
+      "label": "Google マップ",
+      "url": "https://maps.google.com/?cid=6413851147210317953"
+    }
+  ],
+  "notes": "automation/v2/write.mjs が 2026-11-04 に claude -p --model sonnet で作成。事実の裏取り: 3/3 件(quote が出どころの内容に合うもの。言い換え可)。裏取りに通らなかった facts は載せていない。"
+}

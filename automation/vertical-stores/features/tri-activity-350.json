@@ -1,0 +1,258 @@
+{
+  "key": "tri-activity-350",
+  "vertical": "activity",
+  "storeName": "浜辺の宿 あさひや",
+  "article": {
+    "id": "浜辺の宿あさひや",
+    "no": "",
+    "articleType": "guide",
+    "kicker": "HAMABE NO YADO ASAHIYA",
+    "title": "富山県氷見市・浜辺の宿あさひや。JR島尾駅から徒歩5分、島尾海岸に面した旅館の客室と会席料理、天然温泉の3つの貸切風呂",
+    "titleHTML": "富山県氷見市の島尾海岸に面した旅館<br><em>浜辺の宿あさひや</em>の6タイプの客室と会席料理、3つの貸切温泉",
+    "subtitle": "旅館 / 富山県氷見市島尾 / 富山湾の旬の海の幸・天然温泉の貸切風呂",
+    "lede": "富山県氷見市島尾の浜辺の宿あさひやは、JR島尾駅から徒歩5分、島尾海岸を眼前に望む立地にある旅館だ。富山湾で水揚げされた旬の食材を使った会席料理を提供し、コースはあさひやプライド・あさひやスタンダード・氷見牛増量コースの3種類がある。客室は6タイプで、温泉露天風呂付きの離れ「別邸 月」をはじめ、海を一望できる和室や和洋室が並ぶ。温泉は天然温泉100%のナトリウム‐塩化物泉で、3つの浴場すべてが貸切で利用できる。",
+    "date": "2026-11-04",
+    "reading": "",
+    "author": "マチノワ編集部",
+    "heroImage": "/_portal/vshops/tri-activity-350/g07.jpg",
+    "ogImage": "/_portal/vshops/tri-activity-350/g07.jpg",
+    "ranking": [
+      {
+        "rank": "POINT 01",
+        "rankNum": 1,
+        "name": "JR島尾駅から徒歩5分。島尾海岸を眼前に望む立地と行き方",
+        "cuisine": "立地・アクセス",
+        "area": "氷見市",
+        "purpose": "場所と行き方を、先に知りたい人へ",
+        "desc": "浜辺の宿あさひやは富山県氷見市島尾2195にある。JR島尾駅から徒歩5分で、島尾海岸を眼前に望む立地だ。電車はJR氷見線の島尾駅を利用する。高岡駅でJR氷見線に乗り換えると島尾駅に到着する。車では能越自動車道・高岡北ICが最寄りとなる。電話番号は0766-91-2045で、受付時間は9時から18時だ。",
+        "images": [
+          "/_portal/vshops/tri-activity-350/g01.jpg"
+        ],
+        "specs": [
+          {
+            "k": "最寄り駅",
+            "v": "JR島尾駅から徒歩5分"
+          },
+          {
+            "k": "車",
+            "v": "能越自動車道・高岡北ICが最寄り"
+          }
+        ]
+      },
+      {
+        "rank": "POINT 02",
+        "rankNum": 2,
+        "name": "温泉露天風呂付き離れを含む、6タイプの客室",
+        "cuisine": "客室",
+        "area": "氷見市",
+        "purpose": "部屋の種類と特徴を、知りたい人へ",
+        "desc": "客室は6タイプある。「別邸 月」は温泉露天風呂付きの離れで、2名から6名まで対応する。「立山」は2階の12畳和室で海を一望でき、1名から5名が利用できる。「有磯」は1階の10畳和室にツインベッドを備えた和洋室で、海を一望でき2名から6名まで利用できる。「二上」は2階の10畳和洋室で2名から5名まで対応するが、小学生未満の子どもは利用できない。「雅」は2階の8畳にツインベッドが付いた部屋で、山側の眺め（2名から5名）。「梅」は1階の12.5畳にツインベッドが付いた部屋で段差がなく、1名から4名が利用できる。",
+        "images": [
+          "/_portal/vshops/tri-activity-350/s08.jpg"
+        ],
+        "specs": [
+          {
+            "k": "客室タイプ",
+            "v": "別邸 月(露天風呂付き離れ)・立山(12畳海一望)・有磯(和洋室海一望)・二上(和洋室)・雅(山側)・梅(段差なし)"
+          },
+          {
+            "k": "定員",
+            "v": "1名〜6名(タイプにより異なる)"
+          }
+        ]
+      },
+      {
+        "rank": "POINT 03",
+        "rankNum": 3,
+        "name": "富山湾の旬を使った会席。3種類のコース",
+        "cuisine": "料理",
+        "area": "氷見市",
+        "purpose": "料理のコースと内容を、知りたい人へ",
+        "desc": "富山湾で水揚げされた旬の食材を使った会席料理を提供している。コースはあさひやプライド・あさひやスタンダード・氷見牛増量コースの3種類だ。あさひやプライドコースにはお造り舟盛・のどぐろの炙り・氷見牛陶板焼きなどが含まれる。蟹・寒鰤・蛍烏賊・のどぐろなど、季節によって食材が変わる。",
+        "images": [
+          "/_portal/vshops/tri-activity-350/g10.jpg"
+        ],
+        "specs": [
+          {
+            "k": "コース",
+            "v": "あさひやプライド・あさひやスタンダード・氷見牛増量コースの3種類"
+          },
+          {
+            "k": "季節の食材",
+            "v": "蟹・寒鰤・蛍烏賊・のどぐろなど富山湾の旬の海の幸"
+          }
+        ]
+      },
+      {
+        "rank": "POINT 04",
+        "rankNum": 4,
+        "name": "天然温泉100%、3つの浴場をすべて貸切で利用",
+        "cuisine": "温泉",
+        "area": "氷見市",
+        "purpose": "温泉の種類と使い方を、知りたい人へ",
+        "desc": "温泉は天然温泉100%のナトリウム‐塩化物泉だ。浴場は3つあり、すべて貸切で利用できる。離れ「別邸 月」には温泉露天風呂が付属している。",
+        "images": [
+          "/_portal/vshops/tri-activity-350/s07.jpg"
+        ],
+        "specs": [
+          {
+            "k": "泉質",
+            "v": "ナトリウム‐塩化物泉(天然温泉100%)"
+          },
+          {
+            "k": "浴場",
+            "v": "3か所・すべて貸切・露天風呂は離れ「別邸 月」に付属"
+          }
+        ]
+      }
+    ],
+    "sideArticles": [],
+    "quote": "JR島尾駅から徒歩5分、島尾海岸を眼前に望む立地にある浜辺の宿あさひやは、天然温泉100%のナトリウム‐塩化物泉を3つの貸切浴場で利用できる。客室は6タイプで、温泉露天風呂付きの離れ「別邸 月」をはじめ、海を一望できる部屋が並ぶ。",
+    "quoteCite": "マチノワ編集部",
+    "closing": "富山県氷見市島尾2195、電話は0766-91-2045で、受付時間は9時から18時だ。JR島尾駅から徒歩5分で、車では能越自動車道・高岡北ICが最寄りとなる。客室は6タイプから選ぶ。温泉露天風呂付きの離れ「別邸 月」は2名から6名まで利用でき、海を一望できる「立山」は12畳の和室だ。料理コースはあさひやプライド・あさひやスタンダード・氷見牛増量コースの3種類があり、蟹・寒鰤・蛍烏賊・のどぐろなど富山湾の旬の食材を使った会席が提供される。温泉は3つの貸切浴場があり、すべて天然温泉100%のナトリウム‐塩化物泉だ。"
+  },
+  "summary": "富山県氷見市島尾の浜辺の宿あさひやの情報を整理。JR島尾駅から徒歩5分の立地と行き方、温泉露天風呂付き離れを含む6タイプの客室、富山湾の旬を使った3種類の会席コース、天然温泉100%の3つの貸切温泉についてまとめた特集。",
+  "tags": [
+    "海・川",
+    "氷見市"
+  ],
+  "charCount": 1189,
+  "facts": [],
+  "images": [
+    {
+      "path": "/_portal/vshops/tri-activity-350/g01.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9Tfm9k7-kA5UeiNTt2-plnVCa5C6_k7aMxRJEv_9cUZ3K5ytK0f31OMGhE8cwYghG0IDZRm8pdvWZnr4nYv-YSRUFjfGO8LmBkx8bQiv6FTXfNy4TAF1hJ2PxD0rNWyt_O0Ns_GhQ=s1200",
+      "pageUrl": "https://maps.google.com/?cid=15581705101005677738",
+      "what": "「あさひや」の看板と和風旅館の外観"
+    },
+    {
+      "path": "/_portal/vshops/tri-activity-350/g02.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9SJEs1RE4Uc3QD4q-DLtVYjWr0aqNtcMI-urIPacW_6h3xuRbXn90fR1ceQMAnXR2MXrB5uz5rRJPA80RUXffvTN7L4ZIKjZekwgOCri_eTuvVDWD5MYe-q5d6VAd4VA8aC3ZjW=s1200",
+      "pageUrl": "https://maps.google.com/?cid=15581705101005677738",
+      "what": "アメニティが並ぶ客室の洗面台"
+    },
+    {
+      "path": "/_portal/vshops/tri-activity-350/g03.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9SqkwmroIsoiq94jyma2ZkfZgGtWB9iW2G1W0GgemWpXRUndDiI_-wbjHh8SCOboWCQfiEX7YVgxOauwhJK3JP7t6x206H7_rne1VHwf6FJbhAT-88v2Mycoxg6IXRahAxK-cDpUPV-GX4q=s1200",
+      "pageUrl": "https://maps.google.com/?cid=15581705101005677738",
+      "what": "ツインベッドと木格子天井の和洋室"
+    },
+    {
+      "path": "/_portal/vshops/tri-activity-350/g04.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9SSmcJTPQyTlGR8JbBgBs9YJevbeghpNtrFWkldxjYGu5VrrogX68h5IUVDQBZhL-FoYcBePp5oYUThTiJgEKONNOJ-Fkm80bkmv1jWCiQYA75TGd7Ullv1AUKjQlJL8jgfjgfJaeL9MPB_=s1200",
+      "pageUrl": "https://maps.google.com/?cid=15581705101005677738",
+      "what": "黒いタイル張りと大きな窓がある浴場の湯船"
+    },
+    {
+      "path": "/_portal/vshops/tri-activity-350/g05.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9TrB8pSkighngKMgRSC12O4_xiTh2P9YXfNa3IdVvdGp5K5TigJygafR7rITbWnY9zkJBhuVjxEQ97Vfcplx9JR-Fw_dgJqzVF4e8lNk1Qa7oLOK6K-zZsCkTGmrU-wkpC7x58qsg=s1200",
+      "pageUrl": "https://maps.google.com/?cid=15581705101005677738",
+      "what": "洗面台とトイレが並ぶ客室の水回りスペース"
+    },
+    {
+      "path": "/_portal/vshops/tri-activity-350/g06.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-proxy/ALd4DhEo3uNvvgZJqAnEvY-FES5tqGeQciFd3k6yGB3hhiU1ONJmUuGwO_AhyNanUnJ2Xye8DbVwUKkKMNQkuZ3voG-c7bPcJkI4Q1hkCE7Q976DWhyKBW2C4vBY3U_8mGpiLEqszISIyz3dIIjYAXklMFqkeL4d5LhZ8gNtGacRfr67v1d8ysNXIt99=s1200",
+      "pageUrl": "https://maps.google.com/?cid=15581705101005677738",
+      "what": "一尾の魚の塩焼きとレモンを盛った石皿"
+    },
+    {
+      "path": "/_portal/vshops/tri-activity-350/g07.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9RuT0bEbl_Rhinl3TE8VjRq5kf0g0uFF5xQICgg3sYd0CpPtm3WW9U4_pEKDmq_dvzX1OISMwL752njduG9Wj9KPgeB4KiMyhc3mloY8E_wZbO0U6VoZOk78mSMYLcY-c1hbAZr=s1200",
+      "pageUrl": "https://maps.google.com/?cid=15581705101005677738",
+      "what": "木製の舟形器に盛られたお造りと天ぷら"
+    },
+    {
+      "path": "/_portal/vshops/tri-activity-350/g08.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9RxXmletDbU7DvSuAvzUcGrBqe1lyEldspZEQI23O375R9nAYmVROb_WNhZJWkLDit8KpdHhYqjzZDle2f_deinoAD1K7FjCAtfLuI9WWFeDFAjJ1ZfYSqRXPFjcJCHicnyKlxrwm-Z2POV=s1200",
+      "pageUrl": "https://maps.google.com/?cid=15581705101005677738",
+      "what": "皿に盛られた魚に炎を当てる炙り料理"
+    },
+    {
+      "path": "/_portal/vshops/tri-activity-350/g09.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9SqmJ39L49aWxlgyOStukY3BsSOHlOMHZI85cBE3vFWGK_ROCmVgUThEoquTwt5e_dtEu5K4fqSwVAD_4XRYg98GTpZrauFodAfuj-GQOO6MulGiV6zFtRj7seji-7MuvvwXyWt=s1200",
+      "pageUrl": "https://maps.google.com/?cid=15581705101005677738",
+      "what": "木桶の蟹と舟盛りのお造りが並んだテーブル"
+    },
+    {
+      "path": "/_portal/vshops/tri-activity-350/g10.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9Shmv6ujIecPWYkACKIDnIf8gC0OyGS_4g607eTYcij2TP4bsFw8kpXqiGl4nf08QqCmD2EBuZw0E-rH7yBxh7-4wEdlI0iBxVTGMC3hJ5kGWQCBxJTBdHacLQiXcLRRD7t2IybgamOCmHx=s1200",
+      "pageUrl": "https://maps.google.com/?cid=15581705101005677738",
+      "what": "蟹・舟盛り・小鉢など多数の料理が並ぶセット"
+    },
+    {
+      "path": "/_portal/vshops/tri-activity-350/s03.jpg",
+      "imageUrl": "https://www.himi-asahiya.com/wp/wp-content/uploads/2026/03/c923e30d1816d1e572c7fc12bc5e2c44.jpg",
+      "pageUrl": "https://www.himi-asahiya.com/",
+      "what": "金色の装飾壁とツインベッドが並ぶ客室"
+    },
+    {
+      "path": "/_portal/vshops/tri-activity-350/s04.jpg",
+      "imageUrl": "https://www.himi-asahiya.com/wp/wp-content/uploads/2026/04/1a1431544b7b6cc259a9d70358407042-4.jpg",
+      "pageUrl": "https://www.himi-asahiya.com/",
+      "what": "木桶に入ったタグ付きのズワイガニ"
+    },
+    {
+      "path": "/_portal/vshops/tri-activity-350/s05.jpg",
+      "imageUrl": "https://www.himi-asahiya.com/wp/wp-content/uploads/2026/03/DSCF9861.jpg",
+      "pageUrl": "https://www.himi-asahiya.com/",
+      "what": "吊り下げ式チェアとツインベッドがある和洋室"
+    },
+    {
+      "path": "/_portal/vshops/tri-activity-350/s06.jpg",
+      "imageUrl": "https://www.himi-asahiya.com/wp/wp-content/uploads/2026/03/34cf8dc38582b830787acd3c624e5696.jpg",
+      "pageUrl": "https://www.himi-asahiya.com/",
+      "what": "皿に並んだ蛍烏賊の刺身"
+    },
+    {
+      "path": "/_portal/vshops/tri-activity-350/s07.jpg",
+      "imageUrl": "https://www.himi-asahiya.com/wp/wp-content/uploads/2025/12/DSCF991102.jpg",
+      "pageUrl": "https://www.himi-asahiya.com/",
+      "what": "木製デッキ上の黒い円形露天風呂と流れる湯"
+    },
+    {
+      "path": "/_portal/vshops/tri-activity-350/s08.jpg",
+      "imageUrl": "https://www.himi-asahiya.com/wp/wp-content/uploads/2026/03/16f3367bb35588dbf3286db6758626dc.jpg",
+      "pageUrl": "https://www.himi-asahiya.com/",
+      "what": "ハンモックと窓越しに海が見える客室リビング"
+    },
+    {
+      "path": "/_portal/vshops/tri-activity-350/s10.jpg",
+      "imageUrl": "https://www.himi-asahiya.com/wp/wp-content/uploads/2026/03/c900b339c275b8ca80f0306555fb618d.jpg",
+      "pageUrl": "https://www.himi-asahiya.com/",
+      "what": "ハンモックと窓越しに海が見える客室（別角度）"
+    },
+    {
+      "path": "/_portal/vshops/tri-activity-350/s11.jpg",
+      "imageUrl": "https://www.himi-asahiya.com/wp/wp-content/uploads/2026/03/79eeb8b19e63b7d18d7ef1d0f7612e20.jpg",
+      "pageUrl": "https://www.himi-asahiya.com/",
+      "what": "ガラス器に盛られた殻付き生牡蠣"
+    }
+  ],
+  "sources": [
+    {
+      "label": "公式サイト(トップ)",
+      "url": "https://www.himi-asahiya.com/"
+    },
+    {
+      "label": "公式サイト(アクセス)",
+      "url": "https://www.himi-asahiya.com/access/"
+    },
+    {
+      "label": "公式サイト(客室)",
+      "url": "https://www.himi-asahiya.com/room/"
+    },
+    {
+      "label": "公式サイト(お料理)",
+      "url": "https://www.himi-asahiya.com/cuisine/"
+    },
+    {
+      "label": "公式サイト(過ごし方)",
+      "url": "https://www.himi-asahiya.com/stay-culture/"
+    },
+    {
+      "label": "Google マップ",
+      "url": "https://maps.google.com/?cid=15581705101005677738"
+    }
+  ],
+  "notes": "automation/v2/write.mjs が 2026-11-04 に作成。"
+}

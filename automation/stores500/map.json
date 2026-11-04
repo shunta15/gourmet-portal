@@ -2128,5 +2128,45 @@
     "articleId": "おもて",
     "sheetName": "おもて",
     "mapsUrl": "https://maps.google.com/?cid=18259544374992965950"
+  },
+  {
+    "articleId": "西村",
+    "sheetName": "西村",
+    "mapsUrl": "https://maps.google.com/?cid=13897373358751997989"
+  },
+  {
+    "articleId": "どらや",
+    "sheetName": "どらや",
+    "mapsUrl": "https://maps.google.com/?cid=10044095324466351244"
+  },
+  {
+    "articleId": "エビス屋",
+    "sheetName": "エビス屋",
+    "mapsUrl": "https://maps.google.com/?cid=10741319967365464304"
+  },
+  {
+    "articleId": "定食居酒屋みち",
+    "sheetName": "定食居酒屋 みち",
+    "mapsUrl": "https://maps.google.com/?cid=11077270234061799090"
+  },
+  {
+    "articleId": "天萬堂",
+    "sheetName": "天萬堂",
+    "mapsUrl": "https://maps.google.com/?cid=2294959385487022280"
+  },
+  {
+    "articleId": "シーサイドレストランイーハ・トーヴ",
+    "sheetName": "シーサイドレストラン イーハ・トーヴ",
+    "mapsUrl": "https://maps.google.com/?cid=3445440133574936019"
+  },
+  {
+    "articleId": "OneOneCafe",
+    "sheetName": "OneOneCafe",
+    "mapsUrl": "https://maps.google.com/?cid=7762330394966306608"
+  },
+  {
+    "articleId": "焼肉しらとり",
+    "sheetName": "焼肉しらとり",
+    "mapsUrl": "https://maps.google.com/?cid=10993943249497555173"
   }
 ]

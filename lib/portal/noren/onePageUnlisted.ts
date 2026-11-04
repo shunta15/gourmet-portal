@@ -136,6 +136,11 @@ export const ONE_PAGE_UNLISTED_SHOP_OF_FEATURE: Readonly<Record<string, string>>
   "お食事処まつした": "r862", // お食事処 まつした
   "ご馳走酒場炉寿楽駕町ーロジウラー": "r864", // ご馳走酒場 炉寿楽 駕町ーロジウラー
   "おもて": "r860", // おもて
+  "定食居酒屋みち": "r870", // 定食居酒屋 みち
+  "天萬堂": "r872", // 天萬堂
+  "シーサイドレストランイーハ・トーヴ": "r869", // シーサイドレストラン イーハ・トーヴ
+  "OneOneCafe": "r871", // OneOneCafe
+  "焼肉しらとり": "r873", // 焼肉しらとり
 };
 
 const NFC = (s: string) => s.normalize("NFC");

@@ -6016,6 +6016,465 @@
         ],
         "checkedAt": "2026-11-04"
       }
+    },
+    {
+      "id": "ac0039",
+      "vertical": "activity",
+      "category": "sea-river",
+      "name": "浜辺の宿 あさひや",
+      "pref": "toyama",
+      "cityName": "氷見市",
+      "address": "富山県氷見市島尾2195",
+      "lat": 36.8292565,
+      "lng": 137.0147922,
+      "phone": "0766-91-2045",
+      "url": "http://himi-asahiya.com/",
+      "website": "http://himi-asahiya.com/",
+      "mapUrl": "https://maps.google.com/?cid=15581705101005677738",
+      "image": "/_portal/vshops/tri-activity-350/g01.jpg",
+      "images": [
+        "/_portal/vshops/tri-activity-350/g01.jpg",
+        "/_portal/vshops/tri-activity-350/g02.jpg",
+        "/_portal/vshops/tri-activity-350/g03.jpg",
+        "/_portal/vshops/tri-activity-350/g04.jpg",
+        "/_portal/vshops/tri-activity-350/g05.jpg",
+        "/_portal/vshops/tri-activity-350/g06.jpg",
+        "/_portal/vshops/tri-activity-350/g07.jpg",
+        "/_portal/vshops/tri-activity-350/g08.jpg",
+        "/_portal/vshops/tri-activity-350/g09.jpg",
+        "/_portal/vshops/tri-activity-350/g10.jpg",
+        "/_portal/vshops/tri-activity-350/s03.jpg",
+        "/_portal/vshops/tri-activity-350/s04.jpg",
+        "/_portal/vshops/tri-activity-350/s05.jpg",
+        "/_portal/vshops/tri-activity-350/s06.jpg",
+        "/_portal/vshops/tri-activity-350/s07.jpg",
+        "/_portal/vshops/tri-activity-350/s08.jpg",
+        "/_portal/vshops/tri-activity-350/s10.jpg",
+        "/_portal/vshops/tri-activity-350/s11.jpg"
+      ],
+      "photos": [
+        {
+          "path": "/_portal/vshops/tri-activity-350/g01.jpg",
+          "what": "「あさひや」の看板と和風旅館の外観",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 800
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-350/g02.jpg",
+          "what": "アメニティが並ぶ客室の洗面台",
+          "kind": "room",
+          "width": 1200,
+          "height": 675
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-350/g03.jpg",
+          "what": "ツインベッドと木格子天井の和洋室",
+          "kind": "room",
+          "width": 1200,
+          "height": 799
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-350/g04.jpg",
+          "what": "黒いタイル張りと大きな窓がある浴場の湯船",
+          "kind": "bath",
+          "width": 1200,
+          "height": 799
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-350/g05.jpg",
+          "what": "洗面台とトイレが並ぶ客室の水回りスペース",
+          "kind": "room",
+          "width": 1200,
+          "height": 800
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-350/g06.jpg",
+          "what": "一尾の魚の塩焼きとレモンを盛った石皿",
+          "kind": "meal",
+          "width": 678,
+          "height": 452
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-350/g07.jpg",
+          "what": "木製の舟形器に盛られたお造りと天ぷら",
+          "kind": "meal",
+          "width": 1200,
+          "height": 800
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-350/g08.jpg",
+          "what": "皿に盛られた魚に炎を当てる炙り料理",
+          "kind": "meal",
+          "width": 1200,
+          "height": 675
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-350/g09.jpg",
+          "what": "木桶の蟹と舟盛りのお造りが並んだテーブル",
+          "kind": "meal",
+          "width": 1200,
+          "height": 800
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-350/g10.jpg",
+          "what": "蟹・舟盛り・小鉢など多数の料理が並ぶセット",
+          "kind": "meal",
+          "width": 1200,
+          "height": 799
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-350/s03.jpg",
+          "what": "金色の装飾壁とツインベッドが並ぶ客室",
+          "kind": "room",
+          "width": 1280,
+          "height": 854
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-350/s04.jpg",
+          "what": "木桶に入ったタグ付きのズワイガニ",
+          "kind": "meal",
+          "width": 853,
+          "height": 1280
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-350/s05.jpg",
+          "what": "吊り下げ式チェアとツインベッドがある和洋室",
+          "kind": "room",
+          "width": 1280,
+          "height": 854
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-350/s06.jpg",
+          "what": "皿に並んだ蛍烏賊の刺身",
+          "kind": "meal",
+          "width": 1280,
+          "height": 854
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-350/s07.jpg",
+          "what": "木製デッキ上の黒い円形露天風呂と流れる湯",
+          "kind": "bath",
+          "width": 853,
+          "height": 1280
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-350/s08.jpg",
+          "what": "ハンモックと窓越しに海が見える客室リビング",
+          "kind": "room",
+          "width": 1280,
+          "height": 854
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-350/s10.jpg",
+          "what": "ハンモックと窓越しに海が見える客室（別角度）",
+          "kind": "room",
+          "width": 1280,
+          "height": 852
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-350/s11.jpg",
+          "what": "ガラス器に盛られた殻付き生牡蠣",
+          "kind": "meal",
+          "width": 1280,
+          "height": 854
+        }
+      ],
+      "tags": [],
+      "article": {
+        "headline": "富山県氷見市の海辺の旅館。JR島尾駅から徒歩5分の立地に、6タイプの客室と天然温泉100%の3つの貸切風呂がある",
+        "lede": "富山県氷見市島尾にある「浜辺の宿 あさひや」です。JR島尾駅から徒歩5分、島尾海岸を眼前に望む立地の旅館で、富山湾の旬の海の幸を使った会席料理と、天然温泉100%のナトリウム‐塩化物泉の3つの貸切風呂を備えています。客室は6タイプで、温泉露天風呂付きの離れも含まれます。",
+        "sections": [
+          {
+            "heading": "場所と行き方",
+            "body": "住所は富山県氷見市島尾2195、電話は0766-91-2045です。JR島尾駅から徒歩5分で、島尾海岸を眼前に望む立地にあります。電車は高岡駅でJR氷見線に乗り換え、島尾駅で下車します。車では能越自動車道・高岡北ICが最寄りです。電話での受付時間は9時から18時です。"
+          },
+          {
+            "heading": "客室",
+            "body": "客室は6タイプあります。「別邸 月」は温泉露天風呂付きの離れで、2名から6名まで利用できます。「立山」は2階の12畳和室で海を一望できます（1名から5名）。「有磯」は1階の10畳和室にツインベッドが付いた和洋室で、海を一望でき、2名から6名まで利用できます。「二上」は2階の10畳和洋室（2名から5名、小学生未満の子どもは利用できません）。「雅」は2階の8畳にツインベッドが付いた部屋で、山側の眺めです（2名から5名）。「梅」は1階の12.5畳にツインベッドが付いた部屋で段差がなく、1名から4名が利用できます。"
+          },
+          {
+            "heading": "料理",
+            "body": "富山湾で水揚げされた旬の食材を使った会席料理を提供しています。コースはあさひやプライド・あさひやスタンダード・氷見牛増量コースの3種類があります。あさひやプライドコースにはお造り舟盛・のどぐろの炙り・氷見牛陶板焼きなどが含まれます。蟹・寒鰤・蛍烏賊・のどぐろなど、季節ごとに食材が変わります。"
+          },
+          {
+            "heading": "温泉",
+            "body": "天然温泉100%で、泉質はナトリウム‐塩化物泉です。浴場は3つあり、すべて貸切で利用できます。離れ「別邸 月」には温泉露天風呂が付属しています。"
+          }
+        ],
+        "sources": [
+          {
+            "label": "公式サイト(トップ)",
+            "url": "https://www.himi-asahiya.com/"
+          },
+          {
+            "label": "公式サイト(アクセス)",
+            "url": "https://www.himi-asahiya.com/access/"
+          },
+          {
+            "label": "公式サイト(客室)",
+            "url": "https://www.himi-asahiya.com/room/"
+          },
+          {
+            "label": "公式サイト(お料理)",
+            "url": "https://www.himi-asahiya.com/cuisine/"
+          },
+          {
+            "label": "公式サイト(過ごし方)",
+            "url": "https://www.himi-asahiya.com/stay-culture/"
+          },
+          {
+            "label": "Google マップ",
+            "url": "https://maps.google.com/?cid=15581705101005677738"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ac0040",
+      "vertical": "activity",
+      "category": "sightseeing",
+      "name": "能登の宿 和倉温泉はまづる",
+      "pref": "ishikawa",
+      "cityName": "七尾市",
+      "address": "石川県七尾市和倉町ル2-2",
+      "lat": 37.0871267,
+      "lng": 136.922776,
+      "phone": "0767-62-2164",
+      "url": "https://www.hamaduru.jp/",
+      "website": "https://www.hamaduru.jp/",
+      "mapUrl": "https://maps.google.com/?cid=10789809087200286771",
+      "image": "/_portal/vshops/tri-activity-359/g01.jpg",
+      "images": [
+        "/_portal/vshops/tri-activity-359/g01.jpg",
+        "/_portal/vshops/tri-activity-359/g02.jpg",
+        "/_portal/vshops/tri-activity-359/g03.jpg",
+        "/_portal/vshops/tri-activity-359/g04.jpg",
+        "/_portal/vshops/tri-activity-359/g05.jpg",
+        "/_portal/vshops/tri-activity-359/g06.jpg",
+        "/_portal/vshops/tri-activity-359/g07.jpg",
+        "/_portal/vshops/tri-activity-359/s01.jpg",
+        "/_portal/vshops/tri-activity-359/s02.jpg",
+        "/_portal/vshops/tri-activity-359/s03.jpg",
+        "/_portal/vshops/tri-activity-359/s04.jpg",
+        "/_portal/vshops/tri-activity-359/s05.jpg",
+        "/_portal/vshops/tri-activity-359/s07.jpg",
+        "/_portal/vshops/tri-activity-359/s08.jpg",
+        "/_portal/vshops/tri-activity-359/s09.jpg",
+        "/_portal/vshops/tri-activity-359/s10.jpg",
+        "/_portal/vshops/tri-activity-359/s11.jpg",
+        "/_portal/vshops/tri-activity-359/s12.jpg",
+        "/_portal/vshops/tri-activity-359/s13.jpg",
+        "/_portal/vshops/tri-activity-359/s14.jpg",
+        "/_portal/vshops/tri-activity-359/s15.jpg",
+        "/_portal/vshops/tri-activity-359/s17.jpg",
+        "/_portal/vshops/tri-activity-359/s18.jpg"
+      ],
+      "photos": [
+        {
+          "path": "/_portal/vshops/tri-activity-359/g01.jpg",
+          "what": "旅館の外観（正面玄関の全景）",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 676
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-359/g02.jpg",
+          "what": "洋室ツインルームの室内",
+          "kind": "room",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-359/g03.jpg",
+          "what": "能登の海鮮料理（会席の一品）",
+          "kind": "meal",
+          "width": 550,
+          "height": 412
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-359/g04.jpg",
+          "what": "旅館の外観（建物の外観と駐車場）",
+          "kind": "exterior",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-359/g05.jpg",
+          "what": "鍋料理（夕食の会席の一品）",
+          "kind": "meal",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-359/g06.jpg",
+          "what": "七尾湾の眺め（客室からの眺望）",
+          "kind": "view",
+          "width": 1200,
+          "height": 675
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-359/g07.jpg",
+          "what": "館内のパチスロルーム",
+          "kind": "common",
+          "width": 1200,
+          "height": 675
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-359/s01.jpg",
+          "what": "能登半島の空撮（能登の海）",
+          "kind": "view",
+          "width": 1280,
+          "height": 782
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-359/s02.jpg",
+          "what": "大浴場（落ち着いた雰囲気の内湯）",
+          "kind": "bath",
+          "width": 1280,
+          "height": 782
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-359/s03.jpg",
+          "what": "刺身の盛り合わせ（舟盛り）",
+          "kind": "meal",
+          "width": 1280,
+          "height": 782
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-359/s04.jpg",
+          "what": "和室（布団が整えられた客室）",
+          "kind": "room",
+          "width": 1280,
+          "height": 782
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-359/s05.jpg",
+          "what": "お菓子・ドリンクコーナー（オールインクルーシブ）",
+          "kind": "common",
+          "width": 720,
+          "height": 400
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-359/s07.jpg",
+          "what": "館内のパチスロルーム（別角度）",
+          "kind": "common",
+          "width": 720,
+          "height": 400
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-359/s08.jpg",
+          "what": "スタンダード和室（8畳）",
+          "kind": "room",
+          "width": 720,
+          "height": 480
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-359/s09.jpg",
+          "what": "オーシャンサイド和室（窓のある和室）",
+          "kind": "room",
+          "width": 720,
+          "height": 480
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-359/s10.jpg",
+          "what": "整えられた和室（床の間つき）",
+          "kind": "room",
+          "width": 720,
+          "height": 480
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-359/s11.jpg",
+          "what": "洋室ツインルーム（ベッドルーム）",
+          "kind": "room",
+          "width": 720,
+          "height": 480
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-359/s12.jpg",
+          "what": "広々和洋室（和室と洋室が一体）",
+          "kind": "room",
+          "width": 720,
+          "height": 480
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-359/s13.jpg",
+          "what": "大浴場（広い内湯の全景）",
+          "kind": "bath",
+          "width": 720,
+          "height": 480
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-359/s14.jpg",
+          "what": "大浴場（窓のある明るい内湯）",
+          "kind": "bath",
+          "width": 720,
+          "height": 480
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-359/s15.jpg",
+          "what": "大浴場（装飾のある壁の内湯）",
+          "kind": "bath",
+          "width": 720,
+          "height": 480
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-359/s17.jpg",
+          "what": "海鮮の舟盛り（豪華な盛り合わせ）",
+          "kind": "meal",
+          "width": 720,
+          "height": 480
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-359/s18.jpg",
+          "what": "鍋料理（夕食の会席の一品）",
+          "kind": "meal",
+          "width": 720,
+          "height": 480
+        }
+      ],
+      "tags": [],
+      "article": {
+        "headline": "石川県七尾市・和倉温泉の旅館「はまづる」。源泉かけ流しの温泉と能登の会席料理、館内限定のパチスロルームとオールインクルーシブを扱っている",
+        "lede": "石川県七尾市和倉にある「能登の宿 和倉温泉はまづる」です。開湯から1200年ほどの歴史を誇る和倉温泉の源泉かけ流しの大浴場を持つ温泉旅館で、能登の旬の海の幸を使った会席料理が自慢です。",
+        "sections": [
+          {
+            "heading": "場所と行き方",
+            "body": "住所は石川県七尾市和倉町ル2-2、電話は0767-62-2164です。電車はJR特急を利用してJR和倉温泉駅で降り、駅からの送迎は予約が必要です。車は、金沢からのと里山海道を利用して約1時間20分、東京から北陸新幹線と特急を乗り継いで金沢駅まで行き、金沢からJR特急に乗り換えてJR和倉温泉駅まで約3時間30分です。駐車場は宿泊者専用で、事前予約はできません。到着時にスタッフへ利用希望を伝えます。"
+          },
+          {
+            "heading": "源泉かけ流しの温泉",
+            "body": "開湯から1200年ほどの歴史を持つ和倉温泉の湯を、源泉かけ流しで楽しめる大浴場があります。泉質はナトリウム・カルシウム塩化物泉で、源泉温度は89.1℃。最大40名が同時に入浴できる広さがあり、足を大きく伸ばしてゆっくりと過ごせます。大浴場の利用時間は、夕方が15時から23時、朝が6時から10時まで。露天風呂はなく、広々とした内湯のみです。"
+          },
+          {
+            "heading": "能登の会席料理と舟盛り",
+            "body": "夕食は、能登の旬の海の幸をふんだんに使った会席料理です。南からの暖流と北からの寒流が交わる能登半島沖は、プランクトンが豊富でブリやアジなどの回遊魚が集まりやすく、四季を通じて多様な魚が揃う恵まれた環境にあります。名物の舟盛りは、その日に獲れた旬の魚介を盛り合わせたものです。会席料理以外にも別注料理があり、子ども向けの料理も用意しています。軽度のアレルギーへの対応は、宿泊の3日前までに連絡すれば可能です。"
+          },
+          {
+            "heading": "客室",
+            "body": "客室は5タイプあります。最もスタンダードな8畳の純和風の客室は、家族や年配の方も利用しやすい空間です。七尾湾を一望できる窓のある和室は、10畳（1〜4名）と15畳（4〜6名）の2タイプで、15畳はグループ旅行に適しています。最上階には洋室ツインルーム（1〜2名）があり、足腰に不安のある方でも過ごしやすいです。和室と洋室（ツインベッド2つ）が一体になった広々和洋室は3〜5名向けです。"
+          },
+          {
+            "heading": "オールインクルーシブとパチスロルーム",
+            "body": "館内のお菓子やドリンクが含まれるオールインクルーシブを採用しています。ドリンクコーナーの利用は22時まで。館内には宿泊者限定のパチスロルームがあり、ほかの旅館にはない珍しい遊び場として楽しめ、22時まで利用できます。なお、追加注文の料理などはオールインクルーシブの対象外です。ランドリーやマッサージ機も館内にあります。近隣には徒歩3分のセブンイレブン、徒歩4分のファミリーマートがあります。"
+          }
+        ],
+        "sources": [
+          {
+            "label": "公式サイト（トップ）",
+            "url": "https://www.hamaduru.jp/"
+          },
+          {
+            "label": "公式サイト（合宿利用）",
+            "url": "https://www.hamaduru.jp/gassyuku/index.html"
+          },
+          {
+            "label": "Google マップ",
+            "url": "https://maps.google.com/?cid=10789809087200286771"
+          }
+        ],
+        "checkedAt": "2026-11-04"
+      }
     }
   ]
 }

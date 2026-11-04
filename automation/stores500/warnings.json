@@ -3308,5 +3308,69 @@
       "desc は lede から事実の文を選べず、事実から作った定型文",
       "cuisine は GBPカテゴリ"
     ]
+  },
+  "r866": {
+    "articleId": "西村",
+    "name": "西村",
+    "warnings": [
+      "desc は lede から事実の文を選べず、事実から作った定型文",
+      "営業時間が取れていない（noindex）",
+      "cuisine は GBPカテゴリ"
+    ]
+  },
+  "r867": {
+    "articleId": "どらや",
+    "name": "どらや",
+    "warnings": [
+      "desc は lede から事実の文を選べず、事実から作った定型文",
+      "営業時間が取れていない（noindex）",
+      "cuisine は GBPカテゴリ"
+    ]
+  },
+  "r868": {
+    "articleId": "エビス屋",
+    "name": "エビス屋",
+    "warnings": [
+      "営業時間が取れていない（noindex）",
+      "cuisine は GBPカテゴリ"
+    ]
+  },
+  "r870": {
+    "articleId": "定食居酒屋みち",
+    "name": "定食居酒屋 みち",
+    "warnings": [
+      "desc は lede から事実の文を選べず、事実から作った定型文",
+      "cuisine は GBPカテゴリ"
+    ]
+  },
+  "r872": {
+    "articleId": "天萬堂",
+    "name": "天萬堂",
+    "warnings": [
+      "cuisine は GBPカテゴリ"
+    ]
+  },
+  "r869": {
+    "articleId": "シーサイドレストランイーハ・トーヴ",
+    "name": "シーサイドレストラン イーハ・トーヴ",
+    "warnings": [
+      "cuisine は GBPカテゴリ"
+    ]
+  },
+  "r871": {
+    "articleId": "OneOneCafe",
+    "name": "OneOneCafe",
+    "warnings": [
+      "desc は lede から事実の文を選べず、事実から作った定型文",
+      "cuisine は GBPカテゴリ"
+    ]
+  },
+  "r873": {
+    "articleId": "焼肉しらとり",
+    "name": "焼肉しらとり",
+    "warnings": [
+      "desc は lede から事実の文を選べず、事実から作った定型文",
+      "cuisine は GBPカテゴリ"
+    ]
   }
 }

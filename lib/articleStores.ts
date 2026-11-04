@@ -20131,6 +20131,404 @@ export const ARTICLE_STORES: Restaurant[] = [
       "ランチ"
     ],
     "featureId": "ながた茶店岩倉町本店＆エシカル和カフェNAGACHACafé1801"
+  },
+  {
+    "id": "r866",
+    "name": "西村",
+    "cuisine": "居酒屋",
+    "area": "大阪府・阪南市",
+    "region": "osaka",
+    "shape": "square",
+    "image": "/restaurants/teleapo-西村/hero.jpg",
+    "heroImages": [
+      "/restaurants/teleapo-西村/hero.jpg",
+      "/restaurants/teleapo-西村/point1.jpg",
+      "/restaurants/teleapo-西村/point2.jpg",
+      "/restaurants/teleapo-西村/point3.jpg",
+      "/restaurants/teleapo-西村/point4.jpg"
+    ],
+    "gallery": [
+      "/restaurants/teleapo-西村/hero.jpg",
+      "/restaurants/teleapo-西村/point1.jpg",
+      "/restaurants/teleapo-西村/point2.jpg",
+      "/restaurants/teleapo-西村/point3.jpg",
+      "/restaurants/teleapo-西村/point4.jpg"
+    ],
+    "desc": "大阪府阪南市の居酒屋。最寄りは南海本線尾崎駅東出口より徒歩9分。",
+    "address": "大阪府阪南市下出781-14",
+    "hours": "—（訪問前に公式確認）",
+    "closed": "—（訪問前に公式確認）",
+    "seats": "—（訪問前に公式確認）",
+    "nearest": "南海本線尾崎駅東出口より徒歩9分",
+    "phone": "072-471-1378",
+    "source": {
+      "label": "Google ビジネスプロフィール",
+      "url": "https://maps.google.com/?cid=13897373358751997989"
+    },
+    "body": [
+      "西村は、大阪府阪南市にあるお店です。業態は「居酒屋」、所在地は大阪府阪南市下出781-14、最寄りは南海本線尾崎駅東出口より徒歩9分です。マチノワ編集部の特集記事では、「店主が厳選した素材を使うランチ・ディナーメニュー」・「看板に並ぶ釜めしと寿司」などを取り上げています。",
+      "営業時間と定休日は取得できていないため、訪問前に公式の情報でご確認ください。営業時間や価格は変わることがあるため、訪問前に公式サイトやSNS、お電話でご確認ください。"
+    ],
+    "highlights": [
+      "店主が厳選した素材を使うランチ・ディナーメニュー",
+      "看板に並ぶ釜めしと寿司",
+      "火〜金はランチとディナーの2部制、土日祝は通し営業",
+      "南海本線尾崎駅東出口より徒歩9分、駐車場完備"
+    ],
+    "tags": [
+      "居酒屋",
+      "阪南市",
+      "本線尾崎駅"
+    ],
+    "featureId": "西村"
+  },
+  {
+    "id": "r867",
+    "name": "どらや",
+    "cuisine": "居酒屋",
+    "area": "岡山県・玉野市",
+    "region": "okayama",
+    "shape": "square",
+    "image": "/restaurants/teleapo-どらや/hero.jpg",
+    "heroImages": [
+      "/restaurants/teleapo-どらや/hero.jpg",
+      "/restaurants/teleapo-どらや/point1.jpg",
+      "/restaurants/teleapo-どらや/point2.jpg",
+      "/restaurants/teleapo-どらや/point3.jpg",
+      "/restaurants/teleapo-どらや/point4.jpg"
+    ],
+    "gallery": [
+      "/restaurants/teleapo-どらや/hero.jpg",
+      "/restaurants/teleapo-どらや/point1.jpg",
+      "/restaurants/teleapo-どらや/point2.jpg",
+      "/restaurants/teleapo-どらや/point3.jpg",
+      "/restaurants/teleapo-どらや/point4.jpg"
+    ],
+    "desc": "岡山県玉野市の居酒屋。",
+    "address": "岡山県玉野市築港1丁目4-11",
+    "hours": "—（訪問前に公式確認）",
+    "closed": "—（訪問前に公式確認）",
+    "seats": "—（訪問前に公式確認）",
+    "nearest": "—",
+    "phone": "0863-21-5300",
+    "source": {
+      "label": "Google ビジネスプロフィール",
+      "url": "https://maps.google.com/?cid=10044095324466351244"
+    },
+    "body": [
+      "どらやは、岡山県玉野市にあるお店です。業態は「居酒屋」、所在地は岡山県玉野市築港1丁目4-11です。マチノワ編集部の特集記事では、「博多もつ鍋」・「骨付鳥 おやとひな」などを取り上げています。",
+      "営業時間と定休日は取得できていないため、訪問前に公式の情報でご確認ください。営業時間や価格は変わることがあるため、訪問前に公式サイトやSNS、お電話でご確認ください。"
+    ],
+    "highlights": [
+      "博多もつ鍋",
+      "骨付鳥 おやとひな",
+      "どらちゃんぽんと鶏そば塩ラーメン",
+      "スパイシー鉄板ランチとどらやの華定食",
+      "カウンター・テーブル・2F宴会場の席"
+    ],
+    "tags": [
+      "居酒屋",
+      "玉野市"
+    ],
+    "featureId": "どらや"
+  },
+  {
+    "id": "r868",
+    "name": "エビス屋",
+    "cuisine": "中華料理店",
+    "area": "香川県・さぬき市",
+    "region": "kagawa",
+    "shape": "square",
+    "image": "/restaurants/teleapo-エビス屋/hero.jpg",
+    "heroImages": [
+      "/restaurants/teleapo-エビス屋/hero.jpg",
+      "/restaurants/teleapo-エビス屋/point1.jpg",
+      "/restaurants/teleapo-エビス屋/point2.jpg",
+      "/restaurants/teleapo-エビス屋/point3.jpg",
+      "/restaurants/teleapo-エビス屋/point5.jpg"
+    ],
+    "gallery": [
+      "/restaurants/teleapo-エビス屋/hero.jpg",
+      "/restaurants/teleapo-エビス屋/point1.jpg",
+      "/restaurants/teleapo-エビス屋/point2.jpg",
+      "/restaurants/teleapo-エビス屋/point3.jpg",
+      "/restaurants/teleapo-エビス屋/point5.jpg"
+    ],
+    "desc": "エビス屋は、香川県さぬき市志度917にある中華料理店である。",
+    "address": "香川県さぬき市志度917",
+    "hours": "—（訪問前に公式確認）",
+    "closed": "—（訪問前に公式確認）",
+    "seats": "カウンター・木製テーブル",
+    "nearest": "—",
+    "phone": "087-894-8235",
+    "source": {
+      "label": "Google ビジネスプロフィール",
+      "url": "https://maps.google.com/?cid=10741319967365464304"
+    },
+    "body": [
+      "エビス屋は、香川県さぬき市にあるお店です。業態は「中華料理店」、所在地は香川県さぬき市志度917です。マチノワ編集部の特集記事では、「鶏ガラ醤油スープの中細ストレート麺ラーメン」・「塩コショウの焼めしと揚げ餃子・焼き餃子」などを取り上げています。",
+      "営業時間と定休日は取得できていないため、訪問前に公式の情報でご確認ください。席はカウンター・木製テーブル。営業時間や価格は変わることがあるため、訪問前に公式サイトやSNS、お電話でご確認ください。"
+    ],
+    "highlights": [
+      "鶏ガラ醤油スープの中細ストレート麺ラーメン",
+      "塩コショウの焼めしと揚げ餃子・焼き餃子",
+      "八宝菜・中華丼・サンラータンメンなど一品",
+      "親子二代で続く家族経営と地元常連",
+      "カウンターと木製テーブル席・向かいの大型駐車場"
+    ],
+    "tags": [
+      "中華料理店",
+      "さぬき市"
+    ],
+    "featureId": "エビス屋"
+  },
+  {
+    "id": "r869",
+    "name": "シーサイドレストラン イーハ・トーヴ",
+    "cuisine": "洋食レストラン",
+    "area": "宮崎県・日南市",
+    "region": "miyazaki",
+    "shape": "square",
+    "image": "/restaurants/teleapo-シーサイドレストランイーハ・トーヴ/hero.jpg",
+    "heroImages": [
+      "/restaurants/teleapo-シーサイドレストランイーハ・トーヴ/hero.jpg",
+      "/restaurants/teleapo-シーサイドレストランイーハ・トーヴ/point1.jpg",
+      "/restaurants/teleapo-シーサイドレストランイーハ・トーヴ/point2.jpg",
+      "/restaurants/teleapo-シーサイドレストランイーハ・トーヴ/point3.jpg",
+      "/restaurants/teleapo-シーサイドレストランイーハ・トーヴ/point4.jpg"
+    ],
+    "gallery": [
+      "/restaurants/teleapo-シーサイドレストランイーハ・トーヴ/hero.jpg",
+      "/restaurants/teleapo-シーサイドレストランイーハ・トーヴ/point1.jpg",
+      "/restaurants/teleapo-シーサイドレストランイーハ・トーヴ/point2.jpg",
+      "/restaurants/teleapo-シーサイドレストランイーハ・トーヴ/point3.jpg",
+      "/restaurants/teleapo-シーサイドレストランイーハ・トーヴ/point4.jpg",
+      "/restaurants/teleapo-シーサイドレストランイーハ・トーヴ/point5.jpg"
+    ],
+    "desc": "シーサイドレストラン イーハ・トーヴは、宮崎県日南市石河にある洋食レストランである。",
+    "address": "宮崎県日南市石河588 125",
+    "hours": "毎日 11:00–14:00, 18:00–22:00",
+    "closed": "なし（Googleマップの営業時間による）",
+    "seats": "—（訪問前に公式確認）",
+    "nearest": "—",
+    "phone": "0987-55-9585",
+    "source": {
+      "label": "Google ビジネスプロフィール",
+      "url": "https://maps.google.com/?cid=3445440133574936019"
+    },
+    "body": [
+      "シーサイドレストラン イーハ・トーヴは、宮崎県日南市にあるお店です。業態は「洋食レストラン」、所在地は宮崎県日南市石河588 125です。マチノワ編集部の特集記事では、「デミグラス・トマト・黒カレーから選ぶオムライス」・「タルタルソースを添えるチキン南蛮」などを取り上げています。",
+      "営業時間は毎日 11:00–14:00, 18:00–22:00で、定休日はありません（Googleマップの営業時間による）。営業時間や価格は変わることがあるため、訪問前に公式サイトやSNS、お電話でご確認ください。"
+    ],
+    "highlights": [
+      "デミグラス・トマト・黒カレーから選ぶオムライス",
+      "タルタルソースを添えるチキン南蛮",
+      "3日間煮込んだデミグラスソースのハンバーグ",
+      "サラダ・スープ・デザート・ドリンクが付くランチセット",
+      "ヤシの木が立つログハウス風の外観と宴会コース"
+    ],
+    "tags": [
+      "洋食レストラン",
+      "日南市",
+      "ランチ"
+    ],
+    "featureId": "シーサイドレストランイーハ・トーヴ"
+  },
+  {
+    "id": "r870",
+    "name": "定食居酒屋 みち",
+    "cuisine": "モダン居酒屋レストラン",
+    "area": "山口県・萩市",
+    "region": "yamaguchi",
+    "shape": "square",
+    "image": "/restaurants/teleapo-定食居酒屋みち/hero.jpg",
+    "heroImages": [
+      "/restaurants/teleapo-定食居酒屋みち/hero.jpg",
+      "/restaurants/teleapo-定食居酒屋みち/point1.jpg",
+      "/restaurants/teleapo-定食居酒屋みち/point2.jpg",
+      "/restaurants/teleapo-定食居酒屋みち/point3.jpg",
+      "/restaurants/teleapo-定食居酒屋みち/point4.jpg"
+    ],
+    "gallery": [
+      "/restaurants/teleapo-定食居酒屋みち/hero.jpg",
+      "/restaurants/teleapo-定食居酒屋みち/point1.jpg",
+      "/restaurants/teleapo-定食居酒屋みち/point2.jpg",
+      "/restaurants/teleapo-定食居酒屋みち/point3.jpg",
+      "/restaurants/teleapo-定食居酒屋みち/point4.jpg"
+    ],
+    "desc": "山口県萩市のモダン居酒屋レストラン。",
+    "address": "山口県萩市土原522-1",
+    "hours": "月〜水・金 10:30–14:00, 17:00–21:00 / 土 10:30–14:00, 17:00–22:00 / 日 10:30–21:00",
+    "closed": "木曜日",
+    "seats": "22席(最大8名)",
+    "nearest": "—",
+    "phone": "090-4804-0819",
+    "source": {
+      "label": "Google ビジネスプロフィール",
+      "url": "https://maps.google.com/?cid=11077270234061799090"
+    },
+    "body": [
+      "定食居酒屋 みちは、山口県萩市にあるお店です。業態は「モダン居酒屋レストラン」、所在地は山口県萩市土原522-1です。マチノワ編集部の特集記事では、「萩の鮮魚を使った刺身定食」・「10種類以上の定食と毎日変わる日替定食」などを取り上げています。",
+      "営業時間は月〜水・金 10:30–14:00, 17:00–21:00 / 土 10:30–14:00, 17:00–22:00 / 日 10:30–21:00、定休日は木曜日です（Googleマップの営業時間による）。席は22席(最大8名)。営業時間や価格は変わることがあるため、訪問前に公式サイトやSNS、お電話でご確認ください。"
+    ],
+    "highlights": [
+      "萩の鮮魚を使った刺身定食",
+      "10種類以上の定食と毎日変わる日替定食",
+      "夜の焼き鳥・ちょい飲みセットと地酒",
+      "22席と駐車場・テイクアウト対応"
+    ],
+    "tags": [
+      "モダン居酒屋レストラン",
+      "萩市",
+      "ランチ"
+    ],
+    "featureId": "定食居酒屋みち"
+  },
+  {
+    "id": "r871",
+    "name": "OneOneCafe",
+    "cuisine": "ドッグカフェ",
+    "area": "岡山県・真庭市",
+    "region": "okayama",
+    "shape": "square",
+    "image": "/restaurants/teleapo-OneOneCafe/hero.jpg",
+    "heroImages": [
+      "/restaurants/teleapo-OneOneCafe/hero.jpg",
+      "/restaurants/teleapo-OneOneCafe/point1.jpg",
+      "/restaurants/teleapo-OneOneCafe/point2.jpg",
+      "/restaurants/teleapo-OneOneCafe/point3.jpg",
+      "/restaurants/teleapo-OneOneCafe/point4.jpg"
+    ],
+    "gallery": [
+      "/restaurants/teleapo-OneOneCafe/hero.jpg",
+      "/restaurants/teleapo-OneOneCafe/point1.jpg",
+      "/restaurants/teleapo-OneOneCafe/point2.jpg",
+      "/restaurants/teleapo-OneOneCafe/point3.jpg",
+      "/restaurants/teleapo-OneOneCafe/point4.jpg"
+    ],
+    "desc": "岡山県真庭市のドッグカフェ。最寄りは米子道湯原ICから車で5分（ローソン湯原温泉前店向かい）。",
+    "address": "岡山県真庭市下湯原228-1",
+    "hours": "月・火・木〜日 11:00–20:00",
+    "closed": "水曜日",
+    "seats": "—（訪問前に公式確認）",
+    "nearest": "米子道湯原ICから車で5分（ローソン湯原温泉前店向かい）",
+    "phone": "0867-62-3730",
+    "source": {
+      "label": "Google ビジネスプロフィール",
+      "url": "https://maps.google.com/?cid=7762330394966306608"
+    },
+    "body": [
+      "OneOneCafeは、岡山県真庭市にあるお店です。業態は「ドッグカフェ」、所在地は岡山県真庭市下湯原228-1、最寄りは米子道湯原ICから車で5分（ローソン湯原温泉前店向かい）です。マチノワ編集部の特集記事では、「わんこ連れ専用のカフェ&ダイニング」・「月替わりプレートと丼セット・ホットサンド」などを取り上げています。",
+      "営業時間は月・火・木〜日 11:00–20:00、定休日は水曜日です（Googleマップの営業時間による）。営業時間や価格は変わることがあるため、訪問前に公式サイトやSNS、お電話でご確認ください。"
+    ],
+    "highlights": [
+      "わんこ連れ専用のカフェ&ダイニング",
+      "月替わりプレートと丼セット・ホットサンド",
+      "3面の天然芝ドッグランと半個室",
+      "米子道湯原ICからのアクセスと営業情報"
+    ],
+    "tags": [
+      "ドッグカフェ",
+      "真庭市",
+      "ランチ"
+    ],
+    "featureId": "OneOneCafe"
+  },
+  {
+    "id": "r872",
+    "name": "天萬堂",
+    "cuisine": "和菓子屋",
+    "area": "熊本県・熊本市東区",
+    "region": "kumamoto",
+    "shape": "square",
+    "image": "/restaurants/teleapo-天萬堂/hero.jpg",
+    "heroImages": [
+      "/restaurants/teleapo-天萬堂/hero.jpg",
+      "/restaurants/teleapo-天萬堂/point1.jpg",
+      "/restaurants/teleapo-天萬堂/point2.jpg",
+      "/restaurants/teleapo-天萬堂/point3.jpg",
+      "/restaurants/teleapo-天萬堂/point4.jpg"
+    ],
+    "gallery": [
+      "/restaurants/teleapo-天萬堂/hero.jpg",
+      "/restaurants/teleapo-天萬堂/point1.jpg",
+      "/restaurants/teleapo-天萬堂/point2.jpg",
+      "/restaurants/teleapo-天萬堂/point3.jpg",
+      "/restaurants/teleapo-天萬堂/point4.jpg"
+    ],
+    "desc": "天萬堂は、熊本県熊本市東区長嶺西1丁目にある和菓子屋である。2015年（平成27年）6月に開業した。",
+    "address": "熊本県熊本市東区長嶺西1丁目1-6",
+    "hours": "月・木〜日 09:30–18:30",
+    "closed": "火曜・水曜",
+    "seats": "—（訪問前に公式確認）",
+    "nearest": "—",
+    "phone": "096-384-6161",
+    "source": {
+      "label": "Google ビジネスプロフィール",
+      "url": "https://maps.google.com/?cid=2294959385487022280"
+    },
+    "body": [
+      "天萬堂は、熊本県熊本市東区にあるお店です。業態は「和菓子屋」、所在地は熊本県熊本市東区長嶺西1丁目1-6です。マチノワ編集部の特集記事では、「食品添加物不使用・自家製あんこのおはぎときなこ餅」・「国内産小豆の自家製あんこを使ったいきなり団子」などを取り上げています。",
+      "営業時間は月・木〜日 09:30–18:30、定休日は火曜・水曜です（Googleマップの営業時間による）。営業時間や価格は変わることがあるため、訪問前に公式サイトやSNS、お電話でご確認ください。"
+    ],
+    "highlights": [
+      "食品添加物不使用・自家製あんこのおはぎときなこ餅",
+      "国内産小豆の自家製あんこを使ったいきなり団子",
+      "酵素が生きたノンシュガー・ノンアルコールの自家製甘酒",
+      "焼き餅と多彩な団子の各種セット",
+      "天萬堂の4箇条——無添加・自家製・結晶果糖・天然塩"
+    ],
+    "tags": [
+      "和菓子屋",
+      "東区",
+      "ランチ"
+    ],
+    "featureId": "天萬堂"
+  },
+  {
+    "id": "r873",
+    "name": "焼肉しらとり",
+    "cuisine": "焼肉店",
+    "area": "滋賀県・東近江市",
+    "region": "shiga",
+    "shape": "square",
+    "image": "/restaurants/teleapo-焼肉しらとり/hero.jpg",
+    "heroImages": [
+      "/restaurants/teleapo-焼肉しらとり/hero.jpg",
+      "/restaurants/teleapo-焼肉しらとり/point1.jpg",
+      "/restaurants/teleapo-焼肉しらとり/point2.jpg"
+    ],
+    "gallery": [
+      "/restaurants/teleapo-焼肉しらとり/hero.jpg",
+      "/restaurants/teleapo-焼肉しらとり/point1.jpg",
+      "/restaurants/teleapo-焼肉しらとり/point2.jpg"
+    ],
+    "desc": "滋賀県東近江市の焼肉店。",
+    "address": "滋賀県東近江市瓜生津町472",
+    "hours": "月・水〜日 17:00–22:00",
+    "closed": "火曜日",
+    "seats": "36席",
+    "nearest": "—",
+    "phone": "0748-23-1924",
+    "source": {
+      "label": "Google ビジネスプロフィール",
+      "url": "https://maps.google.com/?cid=10993943249497555173"
+    },
+    "body": [
+      "焼肉しらとりは、滋賀県東近江市にあるお店です。業態は「焼肉店」、所在地は滋賀県東近江市瓜生津町472です。マチノワ編集部の特集記事では、「創業50年以上、受け継がれてきた伝統のタレ」・「テーブルと座敷が選べる36席の店内」などを取り上げています。",
+      "営業時間は月・水〜日 17:00–22:00、定休日は火曜日です（Googleマップの営業時間による）。席は36席。営業時間や価格は変わることがあるため、訪問前に公式サイトやSNS、お電話でご確認ください。"
+    ],
+    "highlights": [
+      "創業50年以上、受け継がれてきた伝統のタレ",
+      "テーブルと座敷が選べる36席の店内",
+      "八日市ICから車で5分、駐車場完備のアクセス"
+    ],
+    "tags": [
+      "焼肉店",
+      "東近江市",
+      "貸切可"
+    ],
+    "featureId": "焼肉しらとり"
   }
 ];
 
@@ -20557,7 +20955,15 @@ export const ARTICLE_STORE_FEATURE_IDS: Record<string, string> = {
   "r862": "お食事処まつした",
   "r863": "やきとり米家",
   "r864": "ご馳走酒場炉寿楽駕町ーロジウラー",
-  "r865": "ながた茶店岩倉町本店＆エシカル和カフェNAGACHACafé1801"
+  "r865": "ながた茶店岩倉町本店＆エシカル和カフェNAGACHACafé1801",
+  "r866": "西村",
+  "r867": "どらや",
+  "r868": "エビス屋",
+  "r869": "シーサイドレストランイーハ・トーヴ",
+  "r870": "定食居酒屋みち",
+  "r871": "OneOneCafe",
+  "r872": "天萬堂",
+  "r873": "焼肉しらとり"
 };
 
 /** 特集記事ID → 店舗ID */
@@ -20983,5 +21389,13 @@ export const ARTICLE_STORE_ID_BY_FEATURE: Record<string, string> = {
   "お食事処まつした": "r862",
   "やきとり米家": "r863",
   "ご馳走酒場炉寿楽駕町ーロジウラー": "r864",
-  "ながた茶店岩倉町本店＆エシカル和カフェNAGACHACafé1801": "r865"
+  "ながた茶店岩倉町本店＆エシカル和カフェNAGACHACafé1801": "r865",
+  "西村": "r866",
+  "どらや": "r867",
+  "エビス屋": "r868",
+  "シーサイドレストランイーハ・トーヴ": "r869",
+  "定食居酒屋みち": "r870",
+  "OneOneCafe": "r871",
+  "天萬堂": "r872",
+  "焼肉しらとり": "r873"
 };

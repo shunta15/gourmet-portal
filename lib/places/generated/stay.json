@@ -4559,6 +4559,244 @@
           "和室大部屋"
         ]
       }
+    },
+    {
+      "id": "st0025",
+      "vertical": "stay",
+      "category": "pension",
+      "name": "ロッヂ・サノ",
+      "pref": "tottori",
+      "cityName": "大山町",
+      "address": "鳥取県西伯郡大山町大山145-1",
+      "lat": 35.3983563,
+      "lng": 133.5379114,
+      "phone": "0859-52-2292",
+      "url": "https://lodge-sano.com/",
+      "website": "https://lodge-sano.com/",
+      "mapUrl": "https://maps.google.com/?cid=11745120360168204812",
+      "image": "/_portal/vshops/tri-stay-335/g01.jpg",
+      "images": [
+        "/_portal/vshops/tri-stay-335/g01.jpg",
+        "/_portal/vshops/tri-stay-335/g02.jpg",
+        "/_portal/vshops/tri-stay-335/g03.jpg",
+        "/_portal/vshops/tri-stay-335/g04.jpg",
+        "/_portal/vshops/tri-stay-335/g05.jpg",
+        "/_portal/vshops/tri-stay-335/g06.jpg",
+        "/_portal/vshops/tri-stay-335/g07.jpg",
+        "/_portal/vshops/tri-stay-335/g08.jpg",
+        "/_portal/vshops/tri-stay-335/g09.jpg",
+        "/_portal/vshops/tri-stay-335/g10.jpg",
+        "/_portal/vshops/tri-stay-335/s01.jpg",
+        "/_portal/vshops/tri-stay-335/s10.jpg",
+        "/_portal/vshops/tri-stay-335/s11.jpg",
+        "/_portal/vshops/tri-stay-335/s15.jpg",
+        "/_portal/vshops/tri-stay-335/s16.jpg",
+        "/_portal/vshops/tri-stay-335/s17.jpg",
+        "/_portal/vshops/tri-stay-335/s18.jpg"
+      ],
+      "photos": [
+        {
+          "path": "/_portal/vshops/tri-stay-335/g01.jpg",
+          "what": "「ロッヂサノ」の文字が入った白い建物外観と駐車場",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-stay-335/g02.jpg",
+          "what": "二段ベッドとテーブルが置かれた和室",
+          "kind": "room",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-stay-335/g03.jpg",
+          "what": "テーブルと座布団が置かれた落ち着いた和室",
+          "kind": "room",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-stay-335/g04.jpg",
+          "what": "青空の下に建つロッヂ・サノの建物全景",
+          "kind": "exterior",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-stay-335/g05.jpg",
+          "what": "大きな窓が並ぶ広い食堂と丸テーブル",
+          "kind": "common",
+          "width": 500,
+          "height": 375
+        },
+        {
+          "path": "/_portal/vshops/tri-stay-335/g06.jpg",
+          "what": "緑の木々に囲まれた宿の建物側面",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-stay-335/g07.jpg",
+          "what": "LODGE SANOの玄関エントランス",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-stay-335/g08.jpg",
+          "what": "フロントカウンターと大山のポスターが並ぶロビー",
+          "kind": "common",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-stay-335/g09.jpg",
+          "what": "漫画が並ぶ棚とFree Wi-Fiの案内が貼られた共用スペース",
+          "kind": "common",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-stay-335/g10.jpg",
+          "what": "客室に置かれたテレビとFree Wi-Fiの案内",
+          "kind": "room",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-stay-335/s01.jpg",
+          "what": "魚介類や肉料理が並ぶ和食の膳",
+          "kind": "meal",
+          "width": 900,
+          "height": 512
+        },
+        {
+          "path": "/_portal/vshops/tri-stay-335/s10.jpg",
+          "what": "緑の水田と大山（伯耆富士）が広がる景色",
+          "kind": "view",
+          "width": 900,
+          "height": 512
+        },
+        {
+          "path": "/_portal/vshops/tri-stay-335/s11.jpg",
+          "what": "夕暮れ時のロッヂ・サノの建物と松の木",
+          "kind": "exterior",
+          "width": 900,
+          "height": 512
+        },
+        {
+          "path": "/_portal/vshops/tri-stay-335/s15.jpg",
+          "what": "テラスから望む緑の山と田畑の景色",
+          "kind": "view",
+          "width": 900,
+          "height": 505
+        },
+        {
+          "path": "/_portal/vshops/tri-stay-335/s16.jpg",
+          "what": "LODGE SANOの玄関ドア正面",
+          "kind": "exterior",
+          "width": 900,
+          "height": 505
+        },
+        {
+          "path": "/_portal/vshops/tri-stay-335/s17.jpg",
+          "what": "緑の葉越しに見える「LODGE SANO」の玄関",
+          "kind": "exterior",
+          "width": 900,
+          "height": 505
+        },
+        {
+          "path": "/_portal/vshops/tri-stay-335/s18.jpg",
+          "what": "山芋や野菜が盛られた小鉢が並ぶ食事の膳",
+          "kind": "meal",
+          "width": 900,
+          "height": 505
+        }
+      ],
+      "tags": [],
+      "article": {
+        "headline": "鳥取県大山町大山にある山麓の宿。周辺に建物がない大自然に囲まれた環境で、純和室と地元食材を使った女将・若女将の手料理を提供する。",
+        "lede": "鳥取県西伯郡大山町大山にある「ロッヂ・サノ」です。大山麓に建つ宿で、周辺に建物がなく大自然に囲まれた環境にあります。客室は6畳和室とグループ和室の純和室で、女将・若女将の手料理を提供しています。",
+        "sections": [
+          {
+            "heading": "場所とアクセス",
+            "body": "米子駅からバスターミナルで日本交通バス（大山方面行き）に乗り、バス停「大山寺」まで約50分。車の場合は溝口インターチェンジから県道45号線・158号線を経由して大山へ約20分です。車での来館時は駐車場を利用できます（夏季のみ）。冬季は最寄り駐車場またはバス停から宿までの送迎があります（要事前連絡）。予約は公式サイトのオンライン予約ページから行えます。"
+          },
+          {
+            "heading": "客室と館内設備",
+            "body": "客室は6畳和室とグループ和室の純和室です。チェックインは16:00〜18:00、チェックアウトは10:00まで。施設はロビー・フロント、大広間、食堂、浴室、室内外BBQスペース、共有洗面所などがあります。アメニティーはハンドタオル・歯ブラシ・歯磨き粉・シャンプー・リンス・ボディーソープ・浴衣・髭剃りが含まれています。"
+          },
+          {
+            "heading": "食事",
+            "body": "鳥取県産の新鮮な野菜や日本海産の魚介類などを使った女将の手料理を提供しています。季節ごとにメニューが変わる田舎料理のほか、すき焼き・豚しゃぶ・カニ鍋・ジンギスカン・もつ鍋などの鍋・鉄板料理があります。朝食は和朝食と洋朝食の2種類から選べます。"
+          },
+          {
+            "heading": "合宿のご案内",
+            "body": "グリーンシーズン（GWや夏休み）に限り、学生・団体の合宿を受け付けています。宿の付近には体育館があり、バスケットボールやバレーボールのほか、高原での駅伝練習にも利用されています。体育館・グランド・テニスコート・ゴルフ・乗馬・釣りなどの各種施設を手配できます（要事前連絡）。"
+          }
+        ],
+        "menus": [
+          {
+            "name": "田舎料理"
+          },
+          {
+            "name": "すき焼き"
+          },
+          {
+            "name": "豚しゃぶ"
+          },
+          {
+            "name": "カニ鍋"
+          },
+          {
+            "name": "ジンギスカン"
+          },
+          {
+            "name": "もつ鍋"
+          },
+          {
+            "name": "和朝食"
+          },
+          {
+            "name": "洋朝食"
+          }
+        ],
+        "sources": [
+          {
+            "label": "公式サイト",
+            "url": "https://lodge-sano.com/"
+          },
+          {
+            "label": "公式サイト(お料理)",
+            "url": "https://lodge-sano.com/cuisine.html"
+          },
+          {
+            "label": "公式サイト(館内)",
+            "url": "https://lodge-sano.com/facilities.html"
+          },
+          {
+            "label": "公式サイト(合宿)",
+            "url": "https://lodge-sano.com/camp.html"
+          },
+          {
+            "label": "公式サイト(アクセス)",
+            "url": "https://lodge-sano.com/access.html"
+          },
+          {
+            "label": "Google マップ",
+            "url": "https://maps.google.com/?cid=11745120360168204812"
+          }
+        ],
+        "checkedAt": "2026-11-04"
+      },
+      "attributes": {
+        "roomTypes": [
+          "6畳和室",
+          "グループ和室"
+        ]
+      }
     }
   ]
 }

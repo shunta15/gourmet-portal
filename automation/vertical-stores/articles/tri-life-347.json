@@ -1,0 +1,76 @@
+{
+  "key": "tri-life-347",
+  "headline": "橋本市山田に鎮座する一言主神社。地域では「いちごんさん」の呼び名でも知られる。",
+  "lede": "和歌山県橋本市山田にある一言主神社です。延暦13年（794年）に弘法大師によって創建された社で、主祭神の一言主大神は「一言の願いを叶える神」です。",
+  "sections": [
+    {
+      "heading": "歴史と由緒",
+      "body": "一言主神社の創建は延暦13年（794年）、第50代桓武天皇の御代に弘法大師（空海）によるものです。中世には吉田氏が深く信仰し、地域の篤い崇敬を集めてきました。\n\n明治時代には神社合祀令の施行にともない、明治41・42年（1908〜1909年）にかけて山田村6地区の29社が合祀され、現在の一言主神社へと整備されました。平成28年（2016年）秋（10月21日・22日）には正遷宮大祭が執り行われました。"
+    },
+    {
+      "heading": "主祭神と祭神",
+      "body": "主祭神は一言主大神（ひとことぬしのおおかみ）で、「一言の願いごとを叶える神」として信仰を集めています。この神は『古事記』にも登場し、言葉に関わる力を持つ神です。\n\n一言主大神のほか、天忍穂耳命（あめのおしほみのみこと）をはじめとする計18柱の祭神が合わせて祀られています。明治期の神社合祀を経て、山田村各地に祀られていた神々がここに集められました。"
+    },
+    {
+      "heading": "アクセス",
+      "body": "所在地は和歌山県橋本市山田626番地。JR和歌山線紀伊山田駅から徒歩で約60分の距離にあります。電話番号は0736-33-3813。"
+    }
+  ],
+  "menus": [],
+  "tags": [],
+  "facts": [
+    {
+      "claim": "一言主神社は延暦13年（794年）に弘法大師によって創建されたと伝えられる",
+      "source": "https://gururinkansai.com/hitokotonushi-jinja-hashimoto.html",
+      "quote": "延暦13年（794年）、桓武天皇の御代に弘法大師によって創建されたと伝えられています",
+      "checkedAt": "2026-11-04"
+    },
+    {
+      "claim": "明治41・42年（1908〜1909年）に山田村6地区の29社が合祀された",
+      "source": "https://gururinkansai.com/hitokotonushi-jinja-hashimoto.html",
+      "quote": "明治41・42年にかけて山田村6地区の29社が合祀されました",
+      "checkedAt": "2026-11-04"
+    },
+    {
+      "claim": "平成28年（2016年）秋（10月21日・22日）に正遷宮大祭が執り行われた",
+      "source": "https://gururinkansai.com/hitokotonushi-jinja-hashimoto.html",
+      "quote": "平成28年秋（10月21日、22日）に正遷宮大祭が執り行われる",
+      "checkedAt": "2026-11-04"
+    },
+    {
+      "claim": "地域では「いちごんさん」と呼ばれている",
+      "source": "https://gururinkansai.com/hitokotonushi-jinja-hashimoto.html",
+      "quote": "地元では「いちごんさん」と呼ばれ、親しまれています",
+      "checkedAt": "2026-11-04"
+    },
+    {
+      "claim": "JR紀伊山田駅から徒歩約60分の距離にある",
+      "source": "https://gururinkansai.com/hitokotonushi-jinja-hashimoto.html",
+      "quote": "JR和歌山線紀伊山田駅から徒歩約60分",
+      "checkedAt": "2026-11-04"
+    },
+    {
+      "claim": "主祭神は一言主大神（ひとことぬしのおおかみ）",
+      "source": "https://gururinkansai.com/hitokotonushi-jinja-hashimoto.html",
+      "quote": "主祭神は一言主大神",
+      "checkedAt": "2026-11-04"
+    },
+    {
+      "claim": "一言主大神のほか天忍穂耳命をはじめとする18柱の祭神が祀られている",
+      "source": "https://gururinkansai.com/hitokotonushi-jinja-hashimoto.html",
+      "quote": "天忍穂耳命をはじめとする18柱の祭神が合祀されています",
+      "checkedAt": "2026-11-04"
+    }
+  ],
+  "sources": [
+    {
+      "label": "公式サイト",
+      "url": "https://gururinkansai.com/hitokotonushi-jinja-hashimoto.html"
+    },
+    {
+      "label": "Google マップ",
+      "url": "https://maps.google.com/?cid=9101954195237302964"
+    }
+  ],
+  "notes": "automation/v2/write.mjs が 2026-11-04 に claude -p --model sonnet で作成。事実の裏取り: 7/7 件(quote が出どころの内容に合うもの。言い換え可)。裏取りに通らなかった facts は載せていない。"
+}

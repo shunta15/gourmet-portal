@@ -4015,11 +4015,59 @@ export const GEO: Record<string, GeoPoint> = {
     "src": "maps",
     "precision": "exact"
   },
+  "r866": {
+    "lat": 34.358632,
+    "lng": 135.246695,
+    "src": "maps",
+    "precision": "exact"
+  },
+  "r867": {
+    "lat": 34.493892,
+    "lng": 133.951949,
+    "src": "maps",
+    "precision": "exact"
+  },
+  "r868": {
+    "lat": 34.319321,
+    "lng": 134.178611,
+    "src": "maps",
+    "precision": "exact"
+  },
+  "r869": {
+    "lat": 31.580161,
+    "lng": 131.400527,
+    "src": "maps",
+    "precision": "exact"
+  },
   "r87": {
     "lat": 35.189724,
     "lng": 136.890762,
     "src": "gsi",
     "precision": "block"
+  },
+  "r870": {
+    "lat": 34.410023,
+    "lng": 131.405089,
+    "src": "maps",
+    "precision": "exact"
+  },
+  "r871": {
+    "lat": 35.190089,
+    "lng": 133.730742,
+    "src": "maps",
+    "precision": "exact"
+  },
+  "r872": {
+    "lat": 32.809008,
+    "lng": 130.759358,
+    "src": "maps",
+    "precision": "exact"
+  },
+  "r873": {
+    "lat": 35.083093,
+    "lng": 136.250399,
+    "src": "maps",
+    "precision": "exact"
   },
   "r88": {
     "lat": 34.854294,
