@@ -37,7 +37,7 @@ export default function Top({ shops }: { shops: LShop[] }) {
     <div className="lf-top">
       <Header variant="a" current="top" />
 
-      <section className="tp-hero" aria-label="マチノワライフ">
+      <section className="tp-hero" aria-label="マチノワライフ" data-mo-live="kb">
         <img className="tp-hero-img" src={`${IMG}t-hero.webp`} alt="石畳の参道と鳥居の見える、神社の境内" width={1898} height={1537} fetchPriority="high" />
         <p className="tp-hero-cap">
           地域の
@@ -53,17 +53,17 @@ export default function Top({ shops }: { shops: LShop[] }) {
           <i />
           <span>まちと、つながる。</span>
         </p>
-        <div className="tp-panel">
-          <h1>
+        <div className="tp-panel" data-mo-group="110">
+          <h1 data-mo="wipe">
             暮らしのそばに、
             <br />
             いい出会い。
           </h1>
-          <svg className="tp-swirl" viewBox="0 0 180 30" fill="none" aria-hidden="true">
-            <path d="M2 14c28-6 52-8 80-2 26 5 44 9 70 5 10-1 18-4 26-9" stroke="#a8352c" strokeWidth="1.300" strokeLinecap="round" />
+          <svg className="tp-swirl" viewBox="0 0 180 30" fill="none" aria-hidden="true" data-mo="draw">
+            <path pathLength={1} d="M2 14c28-6 52-8 80-2 26 5 44 9 70 5 10-1 18-4 26-9" stroke="#a8352c" strokeWidth="1.300" strokeLinecap="round" />
             <path d="M70 12c20-8 40-6 52 6-12-2-30-2-52-6Z" fill="#a8352c" opacity=".9" />
           </svg>
-          <p className="tp-lead">
+          <p className="tp-lead" data-mo="up">
             まちには、まだ知らない
             <br />
             素敵な場所や人、文化がある。
@@ -76,11 +76,11 @@ export default function Top({ shops }: { shops: LShop[] }) {
             <br />
             ローカルな場所のポータルサイトです。
           </p>
-          <p className="tp-find">
+          <p className="tp-find" data-mo="up">
             <IcPin className="tp-find-i" />
             場所を探す
           </p>
-          <form className="tp-form" action={LFL.search} role="search">
+          <form className="tp-form" action={LFL.search} role="search" data-mo="up">
             <IcPinLine className="tp-form-pin" />
             <input name="q" type="search" placeholder="エリア・市区町村を入力" aria-label="エリア・市区町村を入力" />
             <button type="submit" aria-label="検索">
@@ -89,7 +89,7 @@ export default function Top({ shops }: { shops: LShop[] }) {
           </form>
           <ul className="tp-chips">
             {KINDS.map((k) => (
-              <li key={k.slug}>
+              <li key={k.slug} data-mo="pop">
                 <Link href={LFL.searchWith({ kind: k.slug })}>
                   <k.Icon className="tp-chip-i" />
                   <span>
@@ -107,12 +107,12 @@ export default function Top({ shops }: { shops: LShop[] }) {
         </div>
       </section>
 
-      <ul className="tp-kinds" aria-label="種類から探す">
+      <ul className="tp-kinds" aria-label="種類から探す" data-mo-group="80">
         {KINDS.map((k) => {
           const s = kindShop(k.slug);
           return (
-            <li key={k.slug}>
-              <Link href={LFL.searchWith({ kind: k.slug })}>
+            <li key={k.slug} data-mo="pop" data-mo-hover="zoom tilt">
+              <Link href={LFL.searchWith({ kind: k.slug })} data-mo-press>
                 {s ? <Photo s={s} /> : null}
                 <span className="tp-kind-tx">
                   <b>
@@ -130,8 +130,8 @@ export default function Top({ shops }: { shops: LShop[] }) {
         })}
       </ul>
 
-      <section className="tp-sp" aria-label="特集">
-        <div className="tp-sp-l">
+      <section className="tp-sp" aria-label="特集" data-mo-group="100">
+        <div className="tp-sp-l" data-mo="left">
           <p className="tp-sp-k">
             <IcTorii className="tp-sp-ki" />
             特集
@@ -152,7 +152,7 @@ export default function Top({ shops }: { shops: LShop[] }) {
           </Link>
         </div>
         {feat[0] ? (
-          <Link href={feat[0].href} className="tp-sp-big">
+          <Link href={feat[0].href} className="tp-sp-big" data-mo="up" data-mo-hover="zoom">
             <Photo s={feat[0]} />
             <span className="tp-sp-box">
               <span className="lf-tagchip">{feat[0].kind}</span>
@@ -170,7 +170,7 @@ export default function Top({ shops }: { shops: LShop[] }) {
         ) : null}
         <div className="tp-sp-r">
           {feat.slice(1).map((s) => (
-            <Link key={s.id} href={s.href} className="tp-sp-sm">
+            <Link key={s.id} href={s.href} className="tp-sp-sm" data-mo="up" data-mo-hover="zoom">
               <span className="tp-sp-sm-ph">
                 <Photo s={s} />
               </span>
@@ -202,10 +202,10 @@ export default function Top({ shops }: { shops: LShop[] }) {
             <IcArrow />
           </Link>
         </div>
-        <ul className="tp-new-l">
+        <ul className="tp-new-l" data-mo-group="80">
           {ordered.slice(0, 4).map((s) => (
-            <li key={s.id}>
-              <Link href={s.href}>
+            <li key={s.id} data-mo="up">
+              <Link href={s.href} data-mo-hover="lift zoom">
                 <span className="tp-new-ph">
                   <Photo s={s} />
                 </span>
@@ -238,9 +238,9 @@ export default function Top({ shops }: { shops: LShop[] }) {
             <IcArrow />
           </Link>
         </div>
-        <ul className="tp-area-r">
+        <ul className="tp-area-r" data-mo-group="80">
           {AREAS.map((a) => (
-            <li key={a.pref}>
+            <li key={a.pref} data-mo="up" data-mo-hover="zoom">
               <Link href={LFL.searchWith({ pref: a.pref })}>
                 <img className="lf-ph" src={`${IMG}${a.img}`} alt={`${a.name}の風景`} loading="lazy" decoding="async" />
                 <b>{a.name}</b>

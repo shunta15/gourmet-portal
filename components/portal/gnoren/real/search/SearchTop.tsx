@@ -46,22 +46,22 @@ export default function SearchTop({ total, regionCount, cuisineCount }: { total:
         <img className="gn-search-town" src={`${IMG}/townscape.webp`} alt="" aria-hidden="true" width={788} height={148} />
         <span className="gn-search-stats-line" aria-hidden="true" />
         <p className="gn-search-stats-cap">マチノワ グルメで見つかる</p>
-        <dl className="gn-search-stats-list">
-          <div className="gn-search-stat gn-search-stat-1">
+        <dl className="gn-search-stats-list" data-mo-group="110">
+          <div className="gn-search-stat gn-search-stat-1" data-mo="pop">
             <dt>
               <b>{total}</b>
               <span>店舗</span>
             </dt>
             <dd>掲載している飲食店</dd>
           </div>
-          <div className="gn-search-stat gn-search-stat-2">
+          <div className="gn-search-stat gn-search-stat-2" data-mo="pop">
             <dt>
               <b>{regionCount}</b>
               <span>エリア</span>
             </dt>
             <dd>店のある地域</dd>
           </div>
-          <div className="gn-search-stat gn-search-stat-3">
+          <div className="gn-search-stat gn-search-stat-3" data-mo="pop">
             <dt>
               <b>{cuisineCount}</b>
               <span>料理分類</span>

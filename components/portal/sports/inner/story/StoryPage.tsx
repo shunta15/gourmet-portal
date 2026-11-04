@@ -33,7 +33,7 @@ export default function StoryPage({ v }: { v: StoryView }) {
         ))}
       </nav>
 
-      <header className="s2b-st-title">
+      <header className="s2b-st-title" data-mo="wipe">
         <p className="s2b-sh-kicker">{v.kicker}</p>
         <h1>{v.title}</h1>
         <p className="s2b-sh-loc">
@@ -51,24 +51,24 @@ export default function StoryPage({ v }: { v: StoryView }) {
 
       {v.lead ? (
         <section className="s2b-st-lead" aria-label="導入">
-          <div className="s2b-st-in">
-            <p className="s2b-lab"><span>INTRODUCTION</span><i /></p>
-            <p className="s2b-st-p">{v.lead}</p>
+          <div className="s2b-st-in" data-mo-group="110">
+            <p className="s2b-lab" data-mo="left"><span>INTRODUCTION</span><i /></p>
+            <p className="s2b-st-p" data-mo="up">{v.lead}</p>
           </div>
         </section>
       ) : null}
 
       {v.sections.map((s, i) => (
         <section key={i} className="s2b-st-sec" data-alt={i % 2} aria-label={s.heading}>
-          <div className="s2b-st-in">
-            <p className="s2b-lab"><span>{s.label}</span><i /></p>
-            <h2>{s.heading}</h2>
-            {s.photo ? <div className="s2b-st-ph" style={{ aspectRatio: `${Math.min(Math.max(s.photo.w / Math.max(1, s.photo.h), 1.1), 2)}` }}><Photo p={s.photo} /></div> : null}
+          <div className="s2b-st-in" data-mo-group="110">
+            <p className="s2b-lab" data-mo="left"><span>{s.label}</span><i /></p>
+            <h2 data-mo="wipe">{s.heading}</h2>
+            {s.photo ? <div className="s2b-st-ph" data-mo="wipe" data-mo-hover="zoom" style={{ aspectRatio: `${Math.min(Math.max(s.photo.w / Math.max(1, s.photo.h), 1.1), 2)}` }}><Photo p={s.photo} /></div> : null}
             {s.paras.map((t, j) => (
-              <p key={j} className="s2b-st-p">{t}</p>
+              <p key={j} className="s2b-st-p" data-mo="up">{t}</p>
             ))}
             {s.specs && s.specs.length > 0 ? (
-              <dl className="s2b-st-specs">
+              <dl className="s2b-st-specs" data-mo="up">
                 {s.specs.map((x) => (
                   <div key={x.k}>
                     <dt>{x.k}</dt>
@@ -80,14 +80,14 @@ export default function StoryPage({ v }: { v: StoryView }) {
             {s.extra && s.extra.length > 0 ? (
               <ul className="s2b-st-extra">
                 {s.extra.map((e) => (
-                  <li key={e.src}><Photo p={e} /></li>
+                  <li key={e.src} data-mo="pop" data-mo-hover="zoom"><Photo p={e} /></li>
                 ))}
               </ul>
             ) : null}
             {s.stores && s.stores.length > 0 ? (
               <ul className="s2b-st-stores" aria-label="この節に出てくる店">
                 {s.stores.map((x) => (
-                  <li key={x.id}>
+                  <li key={x.id} data-mo="pop">
                     <Link href={x.href} className="s2b-tag">{x.name}</Link>
                   </li>
                 ))}
@@ -99,9 +99,9 @@ export default function StoryPage({ v }: { v: StoryView }) {
 
       {v.closing ? (
         <section className="s2b-st-lead s2b-st-closing" aria-label="結び">
-          <div className="s2b-st-in">
-            <p className="s2b-lab"><span>CLOSING</span><i /></p>
-            <p className="s2b-st-p">{v.closing}</p>
+          <div className="s2b-st-in" data-mo-group="110">
+            <p className="s2b-lab" data-mo="left"><span>CLOSING</span><i /></p>
+            <p className="s2b-st-p" data-mo="up">{v.closing}</p>
           </div>
         </section>
       ) : null}
@@ -116,10 +116,10 @@ export default function StoryPage({ v }: { v: StoryView }) {
             <i aria-hidden="true" />
             <Link href="/sports/shop">VIEW ALL<ArrowShort className="s2b-sh-rel-va" /></Link>
           </div>
-          <ul className="s2b-sp-shops s2b-st-shops">
+          <ul className="s2b-sp-shops s2b-st-shops" data-mo-group="80">
             {v.stores.map((s) => (
-              <li key={s.id}>
-                <Link href={s.href}>
+              <li key={s.id} data-mo="up">
+                <Link href={s.href} data-mo-hover="zoom lift">
                   <span className="s2b-sp-shop-ph">{s.photo ? <Photo p={s.photo} /> : null}<em>{s.kind}</em></span>
                   <b>{s.name}</b>
                   <span className="s2b-sp-shop-loc"><Pin className="s2b-ci" />{s.area}</span>
@@ -139,10 +139,10 @@ export default function StoryPage({ v }: { v: StoryView }) {
             <i aria-hidden="true" />
             <Link href={v.relatedHead.all.href}>{v.relatedHead.all.label}<ArrowShort className="s2b-sh-rel-va" /></Link>
           </div>
-          <ul className="s2b-sh-rel-l">
+          <ul className="s2b-sh-rel-l" data-mo-group="100">
             {v.related.map((r) => (
-              <li key={r.href}>
-                <Link href={r.href}>
+              <li key={r.href} data-mo="up">
+                <Link href={r.href} data-mo-hover="zoom lift">
                   <span className="s2b-sh-rel-ph">{r.photo ? <Photo p={r.photo} /> : null}</span>
                   <em className={`s2b-tag${r.tag === "特集" ? " is-sp" : ""}`}>{r.tag}</em>
                   <span className="s2b-sh-rel-t">{r.title}</span>

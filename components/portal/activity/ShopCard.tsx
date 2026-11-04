@@ -34,7 +34,7 @@ export default function ShopCard({ s, variant = "feat", note, href }: { s: CardS
   // note = 日付で絞り込んだとき、営業日が案内から分からない店に出す「営業日は店に確認」
   const meta = note ? { Ic: IcCal, t: note } : s.hours ? { Ic: IcClock, t: s.hours } : s.phone ? { Ic: IcPhone, t: s.phone } : null;
   return (
-    <Link href={href ?? aLinks.shop(s.id)} className={`apa-card apa-card-${variant}`} data-region={s.region} data-kind={s.kind}>
+    <Link href={href ?? aLinks.shop(s.id)} className={`apa-card apa-card-${variant}`} data-region={s.region} data-kind={s.kind} data-mo="up" data-mo-hover="zoom lift" data-mo-press>
       <span className="apa-card-ph">
         <img src={s.src} alt={s.alt} loading="lazy" />
       </span>

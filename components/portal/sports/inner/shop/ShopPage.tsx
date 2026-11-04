@@ -26,20 +26,20 @@ export function Sources({ items, checkedAt }: { items: Array<{ label: string; ur
 /** 青い帯「FACILITY INFO」(所在地・カテゴリ・営業時間・公式サイトを見る)。店の特集記事のページでも同じものを使う */
 export function InfoBand({ area, kind, hours, official }: { area: string; kind: string; hours: string[]; official: string | null }) {
   return (
-      <section className="s2b-sh-info" aria-label="施設情報">
+      <section className="s2b-sh-info" aria-label="施設情報" data-mo-group="110">
         <p className="s2b-sh-info-h">FACILITY INFO</p>
         <i className="s2b-sh-info-vl" aria-hidden="true" />
-        <dl className="s2b-sh-info-c s2b-sh-info-c1">
+        <dl className="s2b-sh-info-c s2b-sh-info-c1" data-mo="up">
           <Pin className="s2b-sh-info-ic s2b-sh-ic-pin" />
           <dt>所在地</dt>
           <dd>{area}</dd>
         </dl>
-        <dl className="s2b-sh-info-c s2b-sh-info-c2">
+        <dl className="s2b-sh-info-c s2b-sh-info-c2" data-mo="up">
           <Dumbbell className="s2b-sh-info-ic s2b-sh-ic-db" />
           <dt>カテゴリ</dt>
           <dd>{kind}</dd>
         </dl>
-        <dl className="s2b-sh-info-c s2b-sh-info-c3">
+        <dl className="s2b-sh-info-c s2b-sh-info-c3" data-mo="up">
           <Clock className="s2b-sh-info-ic s2b-sh-ic-ck" />
           <dt>営業時間</dt>
           <dd className={hours.length > 1 ? "is-multi" : undefined}>
@@ -77,10 +77,10 @@ export default function ShopPage({ v }: { v: ShopView }) {
         <span>{p.name}</span>
       </nav>
 
-      <section className="s2b-sh-title" aria-label={`${p.name} 店舗紹介`}>
-        <p className="s2b-sh-kicker">{c.kicker}</p>
-        <h1>{p.name}</h1>
-        <p className="s2b-sh-loc">
+      <section className="s2b-sh-title" aria-label={`${p.name} 店舗紹介`} data-mo-group="110">
+        <p className="s2b-sh-kicker" data-mo="up">{c.kicker}</p>
+        <h1 data-mo="wipe">{p.name}</h1>
+        <p className="s2b-sh-loc" data-mo="up">
           <i aria-hidden="true" />
           <Pin className="s2b-ci" />
           <span>{v.area}</span>
@@ -89,24 +89,24 @@ export default function ShopPage({ v }: { v: ShopView }) {
       </section>
 
       <section className="s2b-sh-hero">
-        <div className="s2b-sh-h-main"><Ph photos={photos} slot={sl.heroMain} eager /></div>
-        <div className="s2b-sh-h-top"><Ph photos={photos} slot={sl.heroTop} eager /></div>
-        <div className="s2b-sh-h-bot"><Ph photos={photos} slot={sl.heroBottom} eager /></div>
+        <div className="s2b-sh-h-main" data-mo-hover="zoom"><Ph photos={photos} slot={sl.heroMain} eager /></div>
+        <div className="s2b-sh-h-top" data-mo="wipe" data-mo-delay="150" data-mo-hover="zoom"><Ph photos={photos} slot={sl.heroTop} eager /></div>
+        <div className="s2b-sh-h-bot" data-mo="wipe" data-mo-delay="300" data-mo-hover="zoom"><Ph photos={photos} slot={sl.heroBottom} eager /></div>
       </section>
 
-      <section className="s2b-sh-about">
-        <p className="s2b-lab"><span>ABOUT</span><i /></p>
-        <h2>{c.about.h.map((l, i) => <span key={i}>{l}</span>)}</h2>
-        <p className="s2b-sh-about-p">{c.about.p}</p>
+      <section className="s2b-sh-about" data-mo-group="110">
+        <p className="s2b-lab" data-mo="left"><span>ABOUT</span><i /></p>
+        <h2 data-mo="up">{c.about.h.map((l, i) => <span key={i}>{l}</span>)}</h2>
+        <p className="s2b-sh-about-p" data-mo="up">{c.about.p}</p>
         {/* eslint-disable-next-line @next/next/no-img-element */}
-        <img className="s2b-sh-script" src="/_portal/sports/inner/script-more.webp" alt="More Fitness More Yourself" width={175} height={62} />
-        <i className="s2b-sh-vline" aria-hidden="true" />
-        <p className="s2b-sh-about-r">カラダを動かすことが、<br />きっと、<br />日常を変えていく。</p>
+        <img className="s2b-sh-script" data-mo-live="float" src="/_portal/sports/inner/script-more.webp" alt="More Fitness More Yourself" width={175} height={62} />
+        <i className="s2b-sh-vline" aria-hidden="true" data-mo="wipe" />
+        <p className="s2b-sh-about-r" data-mo="up">カラダを動かすことが、<br />きっと、<br />日常を変えていく。</p>
       </section>
 
       <section className="s2b-sh-f1">
-        <div className="s2b-sh-f1-ph"><Ph photos={photos} slot={sl.f1} /></div>
-        <div className="s2b-sh-f1-tx">
+        <div className="s2b-sh-f1-ph" data-mo="fade" data-mo-hover="zoom"><Ph photos={photos} slot={sl.f1} /></div>
+        <div className="s2b-sh-f1-tx" data-mo="left">
           <p className="s2b-lab"><span>FEATURE 01</span><i /></p>
           <h2 style={{ ["--hs" as string]: c.f1.h.length > 11 ? 24 : 28 }}>{c.f1.h}</h2>
           <p className="s2b-sh-f-p">{c.f1.p}</p>
@@ -115,8 +115,8 @@ export default function ShopPage({ v }: { v: ShopView }) {
       </section>
 
       <section className="s2b-sh-f2">
-        <div className="s2b-sh-f2-ph"><Ph photos={photos} slot={sl.f2} /></div>
-        <div className="s2b-sh-f2-tx">
+        <div className="s2b-sh-f2-ph" data-mo="fade" data-mo-hover="zoom"><Ph photos={photos} slot={sl.f2} /></div>
+        <div className="s2b-sh-f2-tx" data-mo="right">
           <p className="s2b-lab"><span>FEATURE 02</span><i /></p>
           <h2 style={{ ["--hs" as string]: c.f2.h.length > 11 ? 24 : c.f2.h.length > 9 ? 25 : 28 }}>{c.f2.h}</h2>
           <p className="s2b-sh-f-p">{c.f2.p}</p>
@@ -133,10 +133,10 @@ export default function ShopPage({ v }: { v: ShopView }) {
           <i aria-hidden="true" />
           <Link href={SPL.special}>VIEW ALL<ArrowShort className="s2b-sh-rel-va" /></Link>
         </div>
-        <ul className="s2b-sh-rel-l">
+        <ul className="s2b-sh-rel-l" data-mo-group="100">
           {v.rel.map((r, i) => (
-            <li key={r.href}>
-              <Link href={r.href}>
+            <li key={r.href} data-mo="up">
+              <Link href={r.href} data-mo-hover="zoom lift">
                 <span className="s2b-sh-rel-ph"><Ph photos={photos} slot={sl.rel[i] ?? sl.rel[0]} /></span>
                 <em className={`s2b-tag${r.tag === "特集" ? " is-sp" : ""}`}>{r.tag}</em>
                 <span className="s2b-sh-rel-t">{r.title}</span>

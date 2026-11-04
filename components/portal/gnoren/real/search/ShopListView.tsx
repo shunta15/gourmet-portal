@@ -31,7 +31,7 @@ export default function ShopListView({
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img className="gn-search-r-lhead-town" src="/_portal/gnoren/search/townscape.webp" alt="" aria-hidden="true" width={788} height={148} />
         <div className="gn-search-r-lhead-in">
-          <h1 id="gn-search-r-lh" className="gn-search-h1">
+          <h1 id="gn-search-r-lh" className="gn-search-h1" data-mo="up">
             店舗紹介
           </h1>
           <p className="gn-search-r-lhead-n">

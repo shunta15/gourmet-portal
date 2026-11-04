@@ -110,7 +110,7 @@ function Chapter({ c, i }: { c: Chapter; i: number }) {
   const cols2 = rest.length >= 2 && restChars > (n === 0 ? 100 : 240); // 写真の無い章は、残りを 2 段に広げて右の空きを減らす(段落が 1 つだけなら 2 段に割れず片側が空くので広げない)
   const hid = `gn-feat-r-h${i}`;
   const fig = (p: { src: string; alt: string }, k: number, w: number, sizes: string) => (
-    <figure key={k} className="gn-feat-r-fig" data-k={k} data-rv>
+    <figure key={k} className="gn-feat-r-fig" data-k={k} data-rv data-mo-hover="zoom">
       <Photo p={p} w={w} sizes={sizes} />
     </figure>
   );
@@ -266,7 +266,7 @@ export default function ArticleView({ vm, links = GN_LIVE_LINKS }: { vm: GnArtic
       {/* ───────── ヒーロー ───────── */}
       <header className="gn-feat-r-hero">
         {vm.hero ? (
-          <div className="gn-feat-r-hero-bg">
+          <div className="gn-feat-r-hero-bg" data-mo-live="kb">
             <Photo p={vm.hero} w={1600} sizes="(max-width: 768px) 100vw, 938px" eager />
           </div>
         ) : (
@@ -409,8 +409,8 @@ export default function ArticleView({ vm, links = GN_LIVE_LINKS }: { vm: GnArtic
               <GoLink href={vm.shop.href}>店舗の詳細を見る</GoLink>
             </div>
           )}
-          <img className="gn-feat-r-leaf gn-feat-r-leaf-tr" src={`${IMG}/leaf-tr.webp`} alt="" aria-hidden="true" width={202} height={280} />
-          <img className="gn-feat-r-leaf gn-feat-r-leaf-bl" src={`${IMG}/leaf-bl.webp`} alt="" aria-hidden="true" width={140} height={256} />
+          <img className="gn-feat-r-leaf gn-feat-r-leaf-tr" data-mo-live="float" src={`${IMG}/leaf-tr.webp`} alt="" aria-hidden="true" width={202} height={280} />
+          <img className="gn-feat-r-leaf gn-feat-r-leaf-bl" data-mo-live="float" data-mo-live-delay="1.5" src={`${IMG}/leaf-bl.webp`} alt="" aria-hidden="true" width={140} height={256} />
         </section>
       )}
 

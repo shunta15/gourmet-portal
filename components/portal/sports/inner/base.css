@@ -99,3 +99,8 @@ body:has(.s2b-root) { cursor: auto; }
   .s2b-src ul { gap: 4px 14px; margin-top: 8px; }
   .s2b-src a { font-size: 12.5px; }
 }
+
+/* 動き(2026-11-05) 特集のスマホは番号が文の上に縦に並ぶので、視差で動かさない */
+@container (max-width: 759px) {
+  .s2b-sp-num[data-mo-px] { translate: none; }
+}

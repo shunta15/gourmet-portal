@@ -25,7 +25,7 @@ export default function HeroSearch({ areas }: { areas: string[] }) {
   const [when, setWhen] = useState<"" | "weekend" | "nextweekend">("");
   const href = searchUrl({ scene: scene ? [scene] : [], region: area ? regionArg(area) : [], when: when || undefined });
   return (
-    <div className="t-search apa-ab">
+    <div className="t-search apa-ab" data-mo="up">
       <div className="t-search-box" />
       <span className="t-search-label">アクティビティをさがす</span>
       <div className="t-tabs" role="tablist">
@@ -85,7 +85,7 @@ export default function HeroSearch({ areas }: { areas: string[] }) {
           アクティビティを検索
         </Link>
       </div>
-      <Stamp id="find" className="t-search-stamp" ring="FIND YOUR ACTIVITY" lines={["FIND", "YOUR", "ACTIVITY"]} mountain={false} />
+      <Stamp data-mo="pop" data-mo-delay="300" id="find" className="t-search-stamp" ring="FIND YOUR ACTIVITY" lines={["FIND", "YOUR", "ACTIVITY"]} mountain={false} />
       <Waves className="t-search-waves" />
     </div>
   );

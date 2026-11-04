@@ -1,6 +1,7 @@
 import { assertPortalLive } from "@/lib/portal/launch";
 import { jp, min, logo, lab, script } from "./top/fonts";
 import "./top/a.css";
+import PageMotion from "@/components/portal/motion/PageMotion";
 
 /**
  * スポーツの最初のページ・探すページの外枠(サーバー。見本2の「トップ」「探す」)。書体 4 つの変数をつける。公開スイッチ OFF のあいだは 404(ほかの新業種の外枠と同じ)。
@@ -10,6 +11,7 @@ export default function TopFrame({ children }: { children: React.ReactNode }) {
   assertPortalLive();
   return (
     <div className={`s2-root ${jp.variable} ${min.variable} ${logo.variable} ${lab.variable} ${script.variable}`}>
+      <PageMotion />
       {children}
     </div>
   );

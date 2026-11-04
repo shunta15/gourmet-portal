@@ -130,3 +130,6 @@
   .gn-fl-r-grid { grid-template-columns: repeat(2, 1fr); gap: 28px 18px; }
   .gn-fl-r-grid-5 { display: flex; }
 }
+
+/* 動き(2026-11-05) インスタント写真の sway(ゆらゆら)。写真は自分の transform: rotate(-5.5deg) を中心で回している(位置を変えないため、揺れも中心のまま) */
+.gn-fl-r-pola[data-mo-live="sway"] { transform-origin: 50% 50%; }

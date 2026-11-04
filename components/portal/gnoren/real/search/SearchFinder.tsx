@@ -173,11 +173,11 @@ export default function SearchFinder({ data }: { data: SearchData }) {
         </div>
 
         {/* 料理 */}
-        <div className="gn-search-lab gn-search-lab-1">
+        <div className="gn-search-lab gn-search-lab-1" data-mo="left">
           <DishMark />
           <h2>料理から探す</h2>
         </div>
-        <div className="gn-search-noren-row" role="group" aria-label="料理から探す">
+        <div className="gn-search-noren-row" role="group" aria-label="料理から探す" data-mo="left" data-mo-delay="80">
           {data.cuisines.map((c) => {
             const look = CUISINE_LOOK[c.key] ?? CUISINE_LOOK.wa;
             const on = broad?.key === c.key;
@@ -203,8 +203,8 @@ export default function SearchFinder({ data }: { data: SearchData }) {
         </div>
 
         {/* エリア */}
-        <span className="gn-search-rule gn-search-rule-1" aria-hidden="true" />
-        <div className="gn-search-lab gn-search-lab-2 gn-search-r-lab2">
+        <span className="gn-search-rule gn-search-rule-1" aria-hidden="true" data-mo="left" data-mo-delay="160" />
+        <div className="gn-search-lab gn-search-lab-2 gn-search-r-lab2" data-mo="left" data-mo-delay="200">
           <PinIcon />
           <h2>エリアから探す</h2>
         </div>
@@ -220,7 +220,7 @@ export default function SearchFinder({ data }: { data: SearchData }) {
           </select>
           <ChevronDown />
         </label>
-        <div className="gn-search-area-row" role="group" aria-label="エリアから探す">
+        <div className="gn-search-area-row" role="group" aria-label="エリアから探す" data-mo="left" data-mo-delay="280">
           {data.areas.map((a, i) => {
             const on = cur.region === a.key;
             return (
@@ -248,12 +248,12 @@ export default function SearchFinder({ data }: { data: SearchData }) {
         </div>
 
         {/* シーン */}
-        <span className="gn-search-rule gn-search-rule-2" aria-hidden="true" />
-        <div className="gn-search-lab gn-search-lab-3">
+        <span className="gn-search-rule gn-search-rule-2" aria-hidden="true" data-mo="left" data-mo-delay="340" />
+        <div className="gn-search-lab gn-search-lab-3" data-mo="left" data-mo-delay="380">
           <CupIcon />
           <h2>シーンから探す</h2>
         </div>
-        <div className="gn-search-scene-row" role="group" aria-label="シーンから探す">
+        <div className="gn-search-scene-row" role="group" aria-label="シーンから探す" data-mo="left" data-mo-delay="440">
           {data.scenes.map((s, i) => {
             const on = cur.scene === s.slug;
             return (
@@ -287,7 +287,7 @@ export default function SearchFinder({ data }: { data: SearchData }) {
 
       {/* ───── 検索結果 ───── */}
       <section className="gn-search-results" id="gn-search-results" aria-label="検索結果" ref={resultsRef}>
-        <div className="gn-search-rhead">
+        <div className="gn-search-rhead" data-mo="up">
           <h2 className="gn-search-rtitle">
             <span className="gn-search-rtitle-l">検索結果</span>
             <b aria-live="polite">{count}</b>

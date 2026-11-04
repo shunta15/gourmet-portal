@@ -30,34 +30,34 @@ export default function SpecialPage({ v }: { v: SpecialView }) {
     <div className="lf-special">
       <Header variant="d" current="special" />
 
-      <section className="sp-hero" aria-label="暮らしを彩る、街の文化。">
+      <section className="sp-hero" aria-label="暮らしを彩る、街の文化。" data-mo-group="110">
         <img className="sp-hero-img" src={`${IMG}c-hero.webp`} alt="" width={2880} height={1080} fetchPriority="high" aria-hidden="true" />
-        <p className="sp-cap sp-cap1" aria-hidden="true">人の営みが、<br />まちをつくる。</p>
-        <p className="sp-cap sp-cap2" aria-hidden="true">伝統が、<br />いまの暮らしを<br />豊かにする。</p>
-        <h1>暮らしを彩る、街の文化。</h1>
-        <p className="sp-sub">出会うのは、日々を少し豊かにする、まちのたからもの。</p>
+        <p className="sp-cap sp-cap1" aria-hidden="true" data-mo="left">人の営みが、<br />まちをつくる。</p>
+        <p className="sp-cap sp-cap2" aria-hidden="true" data-mo="right">伝統が、<br />いまの暮らしを<br />豊かにする。</p>
+        <h1 data-mo="wipe">暮らしを彩る、街の文化。</h1>
+        <p className="sp-sub" data-mo="up">出会うのは、日々を少し豊かにする、まちのたからもの。</p>
       </section>
 
       {c1 ? (
         <section className="sp-b sp-b1" aria-label="特集 1">
-          <img className="sp-b-img" src={`${IMG}c-b1.webp`} alt="" width={1167} height={891} loading="lazy" decoding="async" aria-hidden="true" />
-          <p className="sp-vcap" aria-hidden="true">つくる時間が、<br />暮らしを深める。</p>
-          <div className="sp-b-tx">
-            <p className="sp-no sp-no--red">
+          <img className="sp-b-img" src={`${IMG}c-b1.webp`} alt="" width={1167} height={891} loading="lazy" decoding="async" aria-hidden="true" data-mo="fade" />
+          <p className="sp-vcap" aria-hidden="true" data-mo="fade">つくる時間が、<br />暮らしを深める。</p>
+          <div className="sp-b-tx" data-mo-group="110">
+            <p className="sp-no sp-no--red" data-mo="left">
               特集 <b>1</b>
             </p>
-            <h2>
+            <h2 data-mo="left">
               <Title t={c1.title} />
             </h2>
-            <p className="sp-lead">{c1.lead}</p>
-            <Link href={c1.href} className="sp-btn sp-btn--red">
+            <p className="sp-lead" data-mo="left">{c1.lead}</p>
+            <Link href={c1.href} className="sp-btn sp-btn--red" data-mo="left">
               特集を見る
               <IcArrow />
             </Link>
           </div>
-          <ul className="sp-tiles">
+          <ul className="sp-tiles" data-mo-group="80">
             {v.tiles.map((t, i) => (
-              <li key={t.label}>
+              <li key={t.label} data-mo="pop">
                 <Link href={LFL.searchWith({ kind: KIND_SLUG[i] })}>
                   <span className="sp-tile-ph">
                     <Ph p={t.photo} />
@@ -73,21 +73,21 @@ export default function SpecialPage({ v }: { v: SpecialView }) {
 
       {c2 ? (
         <section className="sp-b sp-b2" aria-label="特集 2">
-          <img className="sp-b-img" src={`${IMG}c-b2.webp`} alt="" width={1035} height={586} loading="lazy" decoding="async" aria-hidden="true" />
-          <div className="sp-b-tx">
-            <p className="sp-no sp-no--navy">
+          <img className="sp-b-img" src={`${IMG}c-b2.webp`} alt="" width={1035} height={586} loading="lazy" decoding="async" aria-hidden="true" data-mo="fade" />
+          <div className="sp-b-tx" data-mo-group="110">
+            <p className="sp-no sp-no--navy" data-mo="left">
               特集 <b>2</b>
             </p>
-            <h2>
+            <h2 data-mo="left">
               <Title t={c2.title} />
             </h2>
-            <p className="sp-lead">{c2.lead}</p>
-            <Link href={c2.href} className="sp-btn sp-btn--navy">
+            <p className="sp-lead" data-mo="left">{c2.lead}</p>
+            <Link href={c2.href} className="sp-btn sp-btn--navy" data-mo="left">
               特集を見る
               <IcArrow />
             </Link>
           </div>
-          <div className="sp-check">
+          <div className="sp-check" data-mo="right">
             <p>こんなところをチェック</p>
             <ul>
               {CHECKS.map((c) => (
@@ -105,16 +105,16 @@ export default function SpecialPage({ v }: { v: SpecialView }) {
 
       {c3 ? (
         <section className="sp-b sp-b3" aria-label="特集 3">
-          <img className="sp-b-img" src={`${IMG}c-b3.webp`} alt="" width={1221} height={411} loading="lazy" decoding="async" aria-hidden="true" />
-          <div className="sp-b-tx">
-            <p className="sp-no sp-no--brown">
+          <img className="sp-b-img" src={`${IMG}c-b3.webp`} alt="" width={1221} height={411} loading="lazy" decoding="async" aria-hidden="true" data-mo="fade" />
+          <div className="sp-b-tx" data-mo-group="110">
+            <p className="sp-no sp-no--brown" data-mo="left">
               特集 <b>3</b>
             </p>
-            <h2>
+            <h2 data-mo="left">
               <Title t={c3.title} />
             </h2>
-            <p className="sp-lead">{c3.lead}</p>
-            <Link href={c3.href} className="sp-more" aria-label={`${c3.title}を見る`}>
+            <p className="sp-lead" data-mo="left">{c3.lead}</p>
+            <Link href={c3.href} className="sp-more" data-mo="right" aria-label={`${c3.title}を見る`}>
               <span>
                 週末、
                 <br />
@@ -139,10 +139,10 @@ export default function SpecialPage({ v }: { v: SpecialView }) {
             <IcArrow />
           </Link>
         </div>
-        <ul>
+        <ul data-mo-group="80">
           {v.shops.map((s) => (
-            <li key={s.id}>
-              <Link href={s.href}>
+            <li key={s.id} data-mo="up">
+              <Link href={s.href} data-mo-hover="zoom lift">
                 <span className="sp-sh-ph">
                   <Ph p={s.photo} />
                   <i className="lf-tagchip">{s.kindName}</i>
@@ -162,7 +162,7 @@ export default function SpecialPage({ v }: { v: SpecialView }) {
         </ul>
       </section>
 
-      <footer className="sp-ft">
+      <footer className="sp-ft" data-mo="fade">
         <Link href={LFL.top} className="sp-ft-logo" aria-label="マチノワライフ トップへ">
           <svg viewBox="0 0 60 60" aria-hidden="true">
             <rect x="8" y="8" width="44" height="44" fill="none" stroke="#e9e1d3" strokeWidth="2.400" />

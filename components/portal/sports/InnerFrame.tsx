@@ -2,6 +2,7 @@ import type { ReactNode } from "react";
 import { assertPortalLive } from "@/lib/portal/launch";
 import { jp, sf, en, cz, bl } from "./inner/fonts";
 import "./inner/base.css";
+import PageMotion from "@/components/portal/motion/PageMotion";
 
 /**
  * スポーツの店舗紹介・店舗紹介の一覧・特集・記事・404 の外枠(サーバー。見本2の「店舗紹介」「特集」)。
@@ -13,6 +14,7 @@ export default function InnerFrame({ children }: { children: ReactNode }) {
   return (
     <div className={`s2b-root ${jp.variable} ${sf.variable} ${en.variable} ${cz.variable} ${bl.variable}`}>
       <div className="s2b-box">
+        <PageMotion />
         {children}
       </div>
     </div>

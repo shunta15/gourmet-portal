@@ -19,7 +19,7 @@ function pageNums(pages: number, cur: number): number[] {
 
 function Card({ s, big }: { s: SShop; big?: boolean }) {
   return (
-    <Link href={s.href} className={`s2-rc s2-rc-${s.kindSlug}${big ? " s2-rc-big" : ""}`}>
+    <Link href={s.href} className={`s2-rc s2-rc-${s.kindSlug}${big ? " s2-rc-big" : ""}`} data-mo="up" data-mo-hover="zoom">
       <span className="s2-rc-lab">
         <span>{VLAB[s.kindSlug] ?? s.kindEn}</span>
       </span>
@@ -72,7 +72,7 @@ export default function Search({
         <img className="s2-banner" src={`${P}s-banner.webp`} alt="気になる場所を、探しにいこう。ジム・フィットネス、格闘技・武道、ゴルフ。あなたのまちのスポーツ施設を見つけて、新しい一歩をはじめよう。" width={1024} height={327} />
       </h1>
 
-      <div className="s2-bar">
+      <div className="s2-bar" data-mo="up">
         <form className="s2-bar-f" action={S} method="get" role="search">
           <IcSearch className="s2-bar-ic" />
           <input type="text" name="q" defaultValue={args.q} aria-label="エリア・駅名・施設名で検索" placeholder="エリア・駅名・施設名で検索" />
@@ -80,9 +80,9 @@ export default function Search({
         </form>
       </div>
 
-      <nav className="s2-kinds" aria-label="カテゴリから探す">
+      <nav className="s2-kinds" aria-label="カテゴリから探す" data-mo-group="100">
         {KINDS.map((k, i) => (
-          <Link key={k.slug} href={SPL.searchWith({ kind: k.slug })} className={`s2-kinds-i s2-kinds-${k.slug}`}>
+          <Link key={k.slug} href={SPL.searchWith({ kind: k.slug })} className={`s2-kinds-i s2-kinds-${k.slug}`} data-mo="pop" data-mo-hover="lift">
             <i className="s2-kic" aria-hidden="true">{KIND_ICONS[i]}</i>
             <span>
               <b>{k.name}</b>
@@ -94,7 +94,7 @@ export default function Search({
       </nav>
 
       <div className="s2-main">
-        <form className="s2-flt" action={S} method="get">
+        <form className="s2-flt" action={S} method="get" data-mo="left">
           <h2>条件で絞り込む</h2>
           <div className="s2-flt-b">
             <h3>
@@ -171,8 +171,8 @@ export default function Search({
           </div>
         </form>
 
-        <section className="s2-res" aria-label="検索結果">
-          <div className="s2-res-hd">
+        <section className="s2-res" aria-label="検索結果" data-mo-group="90">
+          <div className="s2-res-hd" data-mo="wipe">
             <h2>
               検索結果<b>{total}</b>件
             </h2>
@@ -181,7 +181,7 @@ export default function Search({
             {first ? <Card s={first} big /> : <p className="s2-empty">条件に合う施設はありません。条件をリセットしてもう一度お試しください。</p>}
           </div>
           <div className="s2-res-r">
-            <div className="s2-map">
+            <div className="s2-map" data-mo="fade">
               <FindMap />
             </div>
             {others.map((s) => (
@@ -201,7 +201,7 @@ export default function Search({
       </div>
 
       <div className="s2-bottom">
-        <img src={`${P}s-bottom.webp`} alt="動く人が、まちをおもしろくする。スポーツがあると、日常がちょっと変わる。新しい自分に出会ったり、まちで仲間ができたり。マチノワスポーツは、地域のスポーツシーンを応援します。" width={1024} height={319} />
+        <img data-mo="fade" src={`${P}s-bottom.webp`} alt="動く人が、まちをおもしろくする。スポーツがあると、日常がちょっと変わる。新しい自分に出会ったり、まちで仲間ができたり。マチノワスポーツは、地域のスポーツシーンを応援します。" width={1024} height={319} />
       </div>
     </main>
   );

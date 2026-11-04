@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { assertPortalLive } from "@/lib/portal/launch";
 import { hand, jp, lab, maru } from "./fonts";
+import PageMotion from "@/components/portal/motion/PageMotion";
 import Header from "./Header";
 import "./a-base.css";
 import "./a-banner.css";
@@ -28,6 +29,7 @@ export default function ActivityFrame({ children }: { children: React.ReactNode 
             <feDisplacementMap in="SourceGraphic" in2="n" scale="6" xChannelSelector="R" yChannelSelector="G" />
           </filter>
         </svg>
+        <PageMotion />
         <Header />
         {children}
         <footer className="apa-foot">

@@ -36,12 +36,12 @@ export default function ShopList({ shops, page, pages, total }: { shops: AShop[]
             <span>景色に、</span>
             <span>会いにいこう。</span>
           </figcaption>
-          <Stamp id="slw" className="f-woman-stamp" ring="MACHINOWA ACTIVITY" mountain wave />
+          <Stamp data-mo="pop" data-mo-delay="300" id="slw" className="f-woman-stamp" ring="MACHINOWA ACTIVITY" mountain wave />
           <Pine className="f-woman-pine f-woman-pine-1" />
           <Pine className="f-woman-pine f-woman-pine-2" />
         </figure>
 
-        <div className="f-ticket">
+        <div className="f-ticket" data-mo="pop">
           <div className="f-ticket-in">
             <p className="f-ticket-lab">MACHINOWA SHOPS</p>
             <h1 className="f-ticket-h1">
@@ -65,14 +65,14 @@ export default function ShopList({ shops, page, pages, total }: { shops: AShop[]
         </div>
         <Waves className="f-hero-waves" />
 
-        <figure className="f-p f-p1">
+        <figure className="f-p f-p1" data-mo="pop" data-mo-delay="100">
           <img src={`${IMG}ar-hero-lake.webp`} alt="" />
           <figcaption className="apa-hand">
             <span>どこへ行く?</span>
             <span>気になる店は?</span>
           </figcaption>
         </figure>
-        <figure className="f-p f-p2">
+        <figure className="f-p f-p2" data-mo="pop" data-mo-delay="160">
           <img src={`${IMG}ar-hero-spring.webp`} alt="" />
           <figcaption className="apa-hand">
             <span>店ごとの紹介を</span>
@@ -80,14 +80,14 @@ export default function ShopList({ shops, page, pages, total }: { shops: AShop[]
           </figcaption>
         </figure>
         <span className="f-ticket-tab">TICKET</span>
-        <figure className="f-p f-p3">
+        <figure className="f-p f-p3" data-mo="pop" data-mo-delay="220">
           <img src={`${IMG}ar-hero-kayak.webp`} alt="" />
           <figcaption className="apa-hand">
             <span>きっと、</span>
             <span>好きな体験が見つかる。</span>
           </figcaption>
         </figure>
-        <figure className="f-p f-p4">
+        <figure className="f-p f-p4" data-mo="pop" data-mo-delay="280">
           <img src={`${IMG}ar-hero-pottery.webp`} alt="" />
           <figcaption className="apa-hand">
             <span>はじめてでも</span>
@@ -106,7 +106,7 @@ export default function ShopList({ shops, page, pages, total }: { shops: AShop[]
           <Pines className="s-res-pines" />
         </div>
         {shops.length > 0 ? (
-          <div className="s-grid">
+          <div className="s-grid" data-mo-group="80">
             {shops.map((s) => (
               <ShopCard key={s.id} s={toCard(s)} variant="list" href={aLinks.shop(s.id)} />
             ))}

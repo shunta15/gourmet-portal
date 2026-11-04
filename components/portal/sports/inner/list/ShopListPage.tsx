@@ -28,7 +28,7 @@ export default function ShopListPage({ shops, total, page, pages }: { shops: Liv
         <span className="s2b-st-crumb-i"><Chevron className="s2b-ci" /><span aria-current="page">店舗紹介</span></span>
       </nav>
 
-      <header className="s2b-st-title">
+      <header className="s2b-st-title" data-mo="wipe">
         <p className="s2b-sh-kicker">SHOP LIST</p>
         <h1>店舗紹介</h1>
         <p className="s2b-sh-loc">
@@ -46,10 +46,10 @@ export default function ShopListPage({ shops, total, page, pages }: { shops: Liv
           <Link href={SPL.search}>施設を探す<ArrowShort className="s2b-sh-rel-va" /></Link>
         </div>
         {shops.length > 0 ? (
-          <ul className="s2b-sp-shops s2b-st-shops">
+          <ul className="s2b-sp-shops s2b-st-shops" data-mo-group="80">
             {shops.map((s) => (
-              <li key={s.id}>
-                <Link href={SPL.shop(s.id)}>
+              <li key={s.id} data-mo="up">
+                <Link href={SPL.shop(s.id)} data-mo-hover="zoom lift">
                   <span className="s2b-sp-shop-ph">
                     {s.photo ? <img className="s2b-ph" src={s.photo.src} width={s.photo.w} height={s.photo.h} alt={s.photo.alt} loading="lazy" decoding="async" /> : null}
                     <em>{s.kindName}</em>

@@ -21,7 +21,7 @@ export default function ShopListPage({ shops, total, page, pages }: { shops: Liv
         <span aria-hidden="true">&gt;</span>
         <span aria-current="page">店舗紹介</span>
       </nav>
-      <header className="ls-title">
+      <header className="ls-title" data-mo="wipe">
         <p className="sh-kicker">
           <i aria-hidden="true" />
           店舗紹介
@@ -38,10 +38,10 @@ export default function ShopListPage({ shops, total, page, pages }: { shops: Liv
           </Link>
         </div>
         {shops.length > 0 ? (
-          <ul>
+          <ul data-mo-group="80">
             {shops.map((s) => (
-              <li key={s.id}>
-                <Link href={LFL.shop(s.id)}>
+              <li key={s.id} data-mo="up">
+                <Link href={LFL.shop(s.id)} data-mo-hover="zoom" data-mo-press>
                   {s.photo ? <img className="lf-ph" src={s.photo.src} width={s.photo.w} height={s.photo.h} alt={s.photo.alt} loading="lazy" decoding="async" /> : null}
                   <span className="sh-o-tx">
                     <em>

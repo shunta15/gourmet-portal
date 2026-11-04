@@ -3,19 +3,21 @@ import type { CSSProperties, ReactNode } from "react";
 /** A組の試作の飾り(松・山・波線・飛行機・切手の丸いスタンプ・旗の番号・アイコン)。全部 SVG。色は currentColor か CSS 変数 */
 
 type P = { className?: string; style?: CSSProperties };
+/** 動きの data-mo-* 属性をそのまま svg に渡す(components/portal/motion) */
+type D = { [k: `data-${string}`]: string | undefined };
 
-export function Pine({ className, style }: P) {
+export function Pine({ className, style, ...d }: P & D) {
   return (
-    <svg className={className} style={style} viewBox="0 0 20 40" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+    <svg className={className} style={style} {...d} viewBox="0 0 20 40" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
       <path d="M10 2 5 13h4L3 23h5L1 33h18l-7-10h5l-6-10h4Z" />
       <path d="M10 33v6" />
     </svg>
   );
 }
 
-export function Pines({ className, style }: P) {
+export function Pines({ className, style, ...d }: P & D) {
   return (
-    <svg className={className} style={style} viewBox="0 0 64 40" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+    <svg className={className} style={style} {...d} viewBox="0 0 64 40" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
       <g transform="translate(0 4) scale(.85)">
         <path d="M10 2 5 13h4L3 23h5L1 33h18l-7-10h5l-6-10h4Z" />
         <path d="M10 33v6" />
@@ -61,9 +63,9 @@ export function Plane({ className, style }: P) {
 }
 
 /** 切手風の丸いスタンプ。外の輪の文字(ring)・中の 1〜2 行(lines)・山の絵(mountain) */
-export function Stamp({ className, style, ring, lines, mountain = true, wave = false, id }: P & { ring?: string; lines?: string[]; mountain?: boolean; wave?: boolean; id: string }) {
+export function Stamp({ className, style, ring, lines, mountain = true, wave = false, id, ...d }: P & D & { ring?: string; lines?: string[]; mountain?: boolean; wave?: boolean; id: string }) {
   return (
-    <svg className={className} style={style} viewBox="0 0 100 100" fill="none" stroke="currentColor" aria-hidden="true">
+    <svg className={className} style={style} {...d} viewBox="0 0 100 100" fill="none" stroke="currentColor" aria-hidden="true">
       <circle cx="50" cy="50" r="47" strokeWidth="2.4" />
       <circle cx="50" cy="50" r="40" strokeWidth="1" strokeDasharray="1.5 2.2" />
       <defs>

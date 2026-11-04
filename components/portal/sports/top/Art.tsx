@@ -5,9 +5,9 @@
  */
 
 /** 「Category」+「から探す」。筆記体の Web フォント + 少し斜めの小さなゴシック。viewBox は元の画像(100x62)と同じ */
-export function CatScript({ className }: { className?: string }) {
+export function CatScript({ className, mo }: { className?: string; mo?: string }) {
   return (
-    <svg className={className} viewBox="0 0 100 62" role="img" aria-label="Category から探す" xmlns="http://www.w3.org/2000/svg">
+    <svg className={className} data-mo={mo} viewBox="0 0 100 62" role="img" aria-label="Category から探す" xmlns="http://www.w3.org/2000/svg">
       <text className="s2-art-script" x="9" y="29.8" fontSize="26.6" textLength="86" transform="skewX(-5) translate(0 0)" lengthAdjust="spacingAndGlyphs" fill="#26241a">
         Category
       </text>

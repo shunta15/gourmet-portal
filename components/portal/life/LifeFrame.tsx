@@ -1,5 +1,6 @@
 import type { ReactNode } from "react";
 import { assertPortalLive } from "@/lib/portal/launch";
+import PageMotion from "@/components/portal/motion/PageMotion";
 import { sm, ns, en } from "./fonts";
 import "./base.css";
 import "./top.css";
@@ -15,7 +16,10 @@ export default function LifeFrame({ children }: { children: ReactNode }) {
   assertPortalLive();
   return (
     <div className={`lf-root ${sm.variable} ${ns.variable} ${en.variable}`}>
-      <div className="lf-box">{children}</div>
+      <div className="lf-box">
+        <PageMotion />
+        {children}
+      </div>
     </div>
   );
 }

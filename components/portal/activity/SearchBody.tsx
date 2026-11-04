@@ -174,7 +174,7 @@ export default function SearchBody({ shops, courses, init, prefNames }: { shops:
   return (
     <div className="s-body">
       <aside className="s-side" aria-label="絞り込み検索">
-        <details className="s-side-d" open={open}>
+        <details className="s-side-d" open={open} data-mo-group="100">
           <summary
             className="s-side-sum"
             onClick={(e) => {
@@ -185,7 +185,7 @@ export default function SearchBody({ shops, courses, init, prefNames }: { shops:
             <span className="s-side-title">絞り込み検索</span>
           </summary>
           <Stamp id="lets" className="s-side-stamp" lines={["LET'S", "EXPLORE"]} mountain={false} />
-          <div className="s-fac s-fac-area" id="fac-area">
+          <div data-mo="left" className="s-fac s-fac-area" id="fac-area">
             <h3>
               <IcPin /> エリア
             </h3>
@@ -224,7 +224,7 @@ export default function SearchBody({ shops, courses, init, prefNames }: { shops:
               </ul>
             ) : null}
           </div>
-          <div className="s-fac s-fac-date" id="fac-date">
+          <div data-mo="left" className="s-fac s-fac-date" id="fac-date">
             <h3>
               <IcCal /> 日付
             </h3>
@@ -265,7 +265,7 @@ export default function SearchBody({ shops, courses, init, prefNames }: { shops:
               ) : null}
             </ul>
           </div>
-          <div className="s-fac s-fac-genre" id="fac-genre">
+          <div data-mo="left" className="s-fac s-fac-genre" id="fac-genre">
             <h3>
               <IcHiker /> ジャンル
             </h3>
@@ -283,7 +283,7 @@ export default function SearchBody({ shops, courses, init, prefNames }: { shops:
               ))}
             </ul>
           </div>
-          <div className="s-fac s-fac-style" id="fac-style">
+          <div data-mo="left" className="s-fac s-fac-style" id="fac-style">
             <h3>
               <IcGroup /> 体験スタイル
             </h3>
@@ -354,7 +354,7 @@ export default function SearchBody({ shops, courses, init, prefNames }: { shops:
         ) : null}
 
         {showFavWait ? null : pageList.length > 0 ? (
-          <div className="s-grid">
+          <div className="s-grid" data-mo-group="80">
             {pageList.map((s) => (
               <ShopCard key={s.id} s={s} variant="list" />
             ))}
@@ -375,7 +375,7 @@ export default function SearchBody({ shops, courses, init, prefNames }: { shops:
               営業日は店に確認<small>({unknown.length}件)</small>
             </h2>
             <p className="s-unk-p">営業時間・定休日の案内から、この日に営業するかどうかを決められなかった体験です。上の件数には入れていません。店の公式サイトなどで確かめてください。</p>
-            <div className="s-grid">
+            <div className="s-grid" data-mo-group="80">
               {unknown.map((s) => (
                 <ShopCard key={s.id} s={s} variant="list" note="営業日は店に確認" />
               ))}
@@ -395,10 +395,10 @@ export default function SearchBody({ shops, courses, init, prefNames }: { shops:
               もっと見る <IcArrow />
             </Link>
           </div>
-          <ul className="s-course-list">
+          <ul className="s-course-list" data-mo-group="100">
             {courses.map((c) => (
-              <li key={c.id}>
-                <Link href={aLinks.shop(c.id)} className="s-course-card">
+              <li key={c.id} data-mo="pop">
+                <Link href={aLinks.shop(c.id)} className="s-course-card" data-mo-hover="zoom lift">
                   <span className="s-course-ph">
                     <img className="s-course-a" src={c.a} alt={c.altA} loading="lazy" />
                     <img className="s-course-b" src={c.b} alt={c.altB} loading="lazy" />

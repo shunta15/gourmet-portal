@@ -65,7 +65,7 @@ const GUIDE_ALT = "はじめての体験が、きっと好きになる。 はじ
 
 function Head({ n, t, en, sub, more }: { n: string; t: string; en: string; sub?: string; more?: boolean }) {
   return (
-    <div className="t-head">
+    <div className="t-head" data-mo="left">
       <Flag n={n} className="t-head-flag" />
       <h2 className="t-head-t">{t}</h2>
       <p className="t-head-en">{en}</p>
@@ -114,7 +114,7 @@ export default function Top({ shops, videos, guide }: { shops: AShop[]; videos: 
           <img src={`${IMG}top-hero-kayak.webp`} alt="漕ぎ出そう、いつもの毎日から。 ACTIVITY ACTIVITY" />
         </figure>
 
-        <div className="t-ticket">
+        <div className="t-ticket" data-mo="pop">
           <div className="t-ticket-in">
             <p className="t-ticket-lab">MACHINOWA ACTIVITY</p>
             <h1 className="t-ticket-h1">
@@ -137,11 +137,11 @@ export default function Top({ shops, videos, guide }: { shops: AShop[]; videos: 
               GOOD LIFE
             </span>
           </div>
-          <Stamp id="tk" className="t-ticket-stamp" mountain wave={false} />
+          <Stamp data-mo="pop" data-mo-delay="300" id="tk" className="t-ticket-stamp" mountain wave={false} />
         </div>
 
-        {TILES.map((t) => (
-          <Link key={t.k} href={t.to} className={`t-tile t-tile-${t.k}`}>
+        {TILES.map((t, i) => (
+          <Link key={t.k} href={t.to} className={`t-tile t-tile-${t.k}`} data-mo="pop" data-mo-delay={200 + i * 80} data-mo-hover="tilt zoom">
             <figure className="t-tile-ph">
               <img src={`${IMG}${t.img}`} alt={t.alt} />
             </figure>
@@ -163,7 +163,7 @@ export default function Top({ shops, videos, guide }: { shops: AShop[]; videos: 
           <Pines className="t-feat-pines" />
           <Mountain className="t-feat-mtn" />
         </div>
-        <div className="t-cards">
+        <div className="t-cards" data-mo-group="80">
           {pickShops(shops, PICKS.top).map((s) => (
             <ShopCard key={s.id} s={toCard(s)} />
           ))}
@@ -177,11 +177,11 @@ export default function Top({ shops, videos, guide }: { shops: AShop[]; videos: 
           <Pine className="t-area-pine" />
           <Mountain className="t-area-mtn" />
         </div>
-        <div className="t-area-cards">
+        <div className="t-area-cards" data-mo-group="80">
           {AREAS.map((a) => {
             const info = areaOf(a.group);
             return (
-              <Link key={a.slot} href={searchUrl({ region: regionArg(a.group) })} className={`t-area-card t-area-${a.slot}`}>
+              <Link key={a.slot} href={searchUrl({ region: regionArg(a.group) })} className={`t-area-card t-area-${a.slot}`} data-mo="pop" data-mo-hover="zoom lift">
                 <img src={`${IMG}${a.img}`} alt="" loading="lazy" />
                 <span className="t-area-txt">
                   <b>{info.name}</b>
@@ -195,12 +195,12 @@ export default function Top({ shops, videos, guide }: { shops: AShop[]; videos: 
             );
           })}
         </div>
-        <div className="t-area-map" aria-hidden="true">
+        <div className="t-area-map" aria-hidden="true" data-mo="fade">
           <img className="t-area-map-img" src={`${IMG}top-map.svg`} alt="" />
-          <Stamp id="jp" className="t-area-map-stamp" ring="EXPLORE OF JAPAN" mountain={false} />
-          <Pine className="t-area-mp1" />
-          <Pine className="t-area-mp2" />
-          <Pine className="t-area-mp3" />
+          <Stamp data-mo="pop" data-mo-delay="300" id="jp" className="t-area-map-stamp" ring="EXPLORE OF JAPAN" mountain={false} />
+          <Pine className="t-area-mp1" data-mo-live="float" />
+          <Pine className="t-area-mp2" data-mo-live="float" data-mo-live-delay="1.5" />
+          <Pine className="t-area-mp3" data-mo-live="float" data-mo-live-delay="3" />
         </div>
         <Link href={aLinks.search} className="t-area-all">
           エリア一覧を見る <IcArrow />
@@ -211,10 +211,10 @@ export default function Top({ shops, videos, guide }: { shops: AShop[]; videos: 
       <section className="t-theme" aria-labelledby="t-theme-h">
         <div className="t-theme-l">
           <Head n="02" t="アクティビティのテーマ" en="ACTIVITY THEMED" sub="気になるテーマから、やってみたい体験を見つけよう" more />
-          <ul className="t-theme-list">
+          <ul className="t-theme-list" data-mo-group="80">
             {THEMES.map((t) => (
-              <li key={t.k}>
-                <Link href={t.to} className="t-theme-it">
+              <li key={t.k} data-mo="pop">
+                <Link href={t.to} className="t-theme-it" data-mo-hover="lift">
                   <img src={`${IMG}top-theme-${t.k}.webp`} alt="" loading="lazy" />
                   <span>
                     {t.t.map((l) => (
@@ -226,7 +226,7 @@ export default function Top({ shops, videos, guide }: { shops: AShop[]; videos: 
             ))}
           </ul>
         </div>
-        <div className="t-guide">
+        <div className="t-guide" data-mo="right">
           <Flag n="04" className="t-guide-flag" />
           <h2 className="t-guide-t">はじめての方へ</h2>
           <p className="t-guide-en">BEGINNER&apos;S GUIDE</p>
@@ -267,9 +267,9 @@ export default function Top({ shops, videos, guide }: { shops: AShop[]; videos: 
           <Link href={aLinks.search} className="t-ig-follow">
             体験を探す
           </Link>
-          <div className="t-ig-grid">
+          <div className="t-ig-grid" data-mo-group="80">
             {grid.map((g, i) => (
-              <img key={g.id} className={`t-ig-${i + 1}`} src={g.src} alt={g.alt} loading="lazy" />
+              <img key={g.id} data-mo="pop" className={`t-ig-${i + 1}`} src={g.src} alt={g.alt} loading="lazy" />
             ))}
           </div>
           <p className="t-ig-hand apa-hand">

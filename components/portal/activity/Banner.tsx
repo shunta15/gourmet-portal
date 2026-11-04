@@ -25,7 +25,7 @@ export default function Banner({ v, href, external }: { v: V; href: string; exte
   if (v === "top") {
     return (
       <section className="apa-banner apa-banner-top is-pic" aria-label="アクティビティをさがす">
-        <div className="b-pic">
+        <div className="b-pic" data-mo="fade">
           <img className="b-img" src={`${IMG}top-bottom-banner.webp`} alt={TOP_ALT} />
           <Link className="b-hit" href={href} aria-label="アクティビティをさがす" />
         </div>
@@ -46,7 +46,7 @@ export default function Banner({ v, href, external }: { v: V; href: string; exte
     </>
   );
   return (
-    <section className={`apa-banner apa-banner-${v}`} aria-label="アクティビティをさがす">
+    <section className={`apa-banner apa-banner-${v}`} aria-label="アクティビティをさがす" data-mo="fade">
       <img className="b-img" src={`${IMG}${c.img}`} alt="" />
       <p className="b-left apa-hand">{c.left}</p>
       {external ? (

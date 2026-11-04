@@ -37,10 +37,10 @@ export default function Search({ shops, init }: { shops: AShop[]; init: SearchIn
             <span>やってみたいが、</span>
             <span>きっと見つかる。</span>
           </figcaption>
-          <Stamp id="sfind" className="s-hero-stamp" lines={["FIND", "ACTIVITY"]} mountain={false} />
+          <Stamp data-mo="pop" data-mo-delay="300" id="sfind" className="s-hero-stamp" lines={["FIND", "ACTIVITY"]} mountain={false} />
           <Pines className="s-hero-stamp-pines" />
         </figure>
-        <div className="s-ticket">
+        <div className="s-ticket" data-mo="pop" data-mo-delay="100">
           <div className="s-ticket-in">
             <p className="s-ticket-lab">MACHINOWA ACTIVITY</p>
             <h1 className="s-ticket-h1">
@@ -52,28 +52,28 @@ export default function Search({ shops, init }: { shops: AShop[]; init: SearchIn
             <Pines className="s-ticket-pines" />
             <Mountain className="s-ticket-mtn" />
           </div>
-          <Stamp id="stk" className="s-ticket-stamp" mountain wave={false} />
+          <Stamp data-mo="pop" data-mo-delay="300" id="stk" className="s-ticket-stamp" mountain wave={false} />
         </div>
-        <figure className="s-hero-kayak">
+        <figure className="s-hero-kayak" data-mo="up" data-mo-delay="180">
           <img src={`${IMG}se-hero-kayak.webp`} alt="" />
           <figcaption className="apa-hand">
             <span>あの景色に、</span>
             <span>会いにいこう。</span>
           </figcaption>
         </figure>
-        <figure className="s-hero-pottery">
+        <figure className="s-hero-pottery" data-mo="up" data-mo-delay="260">
           <img src={`${IMG}se-hero-pottery.webp`} alt="" />
           <figcaption className="apa-hand">
             <span>つくる時間が、</span>
             <span>思い出になる。</span>
           </figcaption>
         </figure>
-        <Stamp id="stj" className="s-hero-travel" ring="TRAVEL" lines={["JAPAN"]} mountain />
+        <Stamp data-mo="pop" data-mo-delay="300" id="stj" className="s-hero-travel" ring="TRAVEL" lines={["JAPAN"]} mountain />
         <Pine className="s-hero-pine s-hero-pine-1" />
         <Pine className="s-hero-pine s-hero-pine-2" />
       </section>
 
-      <nav className="s-tabs" aria-label="探し方">
+      <nav className="s-tabs" aria-label="探し方" data-mo="up">
         {TABS.map(({ t, s, Ic, on, to }, i) => (
           <a key={t} href={to} className={`s-tab s-tab-${i}${on ? " is-on" : ""}`}>
             <Ic className="s-tab-ic" />

@@ -33,7 +33,7 @@ const ROW_IC = { address: IcPin, phone: IcPhone, hours: IcClock, holidays: IcCal
 
 function Rows({ rows, map }: { rows: ARow[]; map: string | null }) {
   return (
-    <dl className="h-rows">
+    <dl className="h-rows" data-mo="up">
       {rows.map((r) => {
         const Ic = ROW_IC[r.k];
         return (
@@ -125,7 +125,7 @@ export default function Shop({ shop, others }: { shop: AShop; others: AShop[] })
         <Pine className="h-pine h-pine-a" />
         <Pine className="h-pine h-pine-b" />
 
-        <div className="h-panel">
+        <div className="h-panel" data-mo="right">
           <div className="h-panel-in">
             <p className="h-loc">
               {shop.prefName}
@@ -172,22 +172,22 @@ export default function Shop({ shop, others }: { shop: AShop; others: AShop[] })
           </div>
           <Pines className="h-panel-pines" />
         </div>
-        <Stamp id="hs" className="h-pref-stamp" ring={shop.prefEn} mountain={true} />
+        <Stamp data-mo="pop" data-mo-delay="300" id="hs" className="h-pref-stamp" ring={shop.prefEn} mountain={true} />
         <Waves className="h-panel-waves" />
 
-        <figure className="h-tiltA">
+        <figure className="h-tiltA" data-mo="pop" data-mo-delay="100">
           <img src={ph.tiltA.src} alt={ph.tiltA.alt} />
           <figcaption className="apa-hand">{ph.tiltA.cap}</figcaption>
         </figure>
-        <figure className="h-tiltB">
+        <figure className="h-tiltB" data-mo="pop" data-mo-delay="180">
           <img src={ph.tiltB.src} alt={ph.tiltB.alt} />
           <figcaption className="apa-hand">{ph.tiltB.cap}</figcaption>
           <Pines className="h-tiltB-pines" />
         </figure>
 
-        <div className="h-strip">
+        <div className="h-strip" data-mo-group="80">
           {ph.stamps.map((p, i) => (
-            <figure key={p.src + i} className={`h-st h-st-${i + 1}`}>
+            <figure key={p.src + i} className={`h-st h-st-${i + 1}`} data-mo="pop">
               <img src={p.src} alt={p.alt} loading="lazy" />
               {p.cap ? <figcaption className="apa-hand">{p.cap}</figcaption> : null}
             </figure>
@@ -206,7 +206,7 @@ export default function Shop({ shop, others }: { shop: AShop; others: AShop[] })
             <small>ABOUT US</small>
           </header>
           <h3 className="h-about-name">{shop.name}</h3>
-          <div className="h-about-ph">
+          <div className="h-about-ph" data-mo="right">
             <img src={ph.about.src} alt={ph.about.alt} loading="lazy" />
             {shop.ledeLong || shop.ledeShort ? <p className="h-about-p">{shop.ledeLong || shop.ledeShort}</p> : null}
           </div>
@@ -225,9 +225,9 @@ export default function Shop({ shop, others }: { shop: AShop; others: AShop[] })
               </a>
             ) : null}
           </header>
-          <ul className="h-plan-list">
+          <ul className="h-plan-list" data-mo-group="80">
             {shop.plans.map((pl) => (
-              <li key={pl.name} className="h-plan">
+              <li key={pl.name} className="h-plan" data-mo="up" data-mo-hover="zoom lift" data-mo-press>
                 <span className="h-plan-ph">
                   <img src={pl.photo.src} alt={pl.photo.alt} loading="lazy" />
                 </span>
@@ -248,11 +248,11 @@ export default function Shop({ shop, others }: { shop: AShop; others: AShop[] })
               </li>
             ))}
           </ul>
-          <div className={`h-boxes h-boxes-${shop.blocks.length}`}>
+          <div className={`h-boxes h-boxes-${shop.blocks.length}`} data-mo-group="80">
             {shop.blocks.map((b) => {
               const st = BOX_STYLE[b.key];
               return (
-                <section key={b.key} className={`h-box h-box-${st.cls}`}>
+                <section key={b.key} className={`h-box h-box-${st.cls}`} data-mo="up">
                   <header>
                     <span className="h-box-ic">
                       <st.Ic />
@@ -293,11 +293,11 @@ export default function Shop({ shop, others }: { shop: AShop; others: AShop[] })
               記事を読む <IcArrow />
             </Link>
             <Pines className="h-feat-pines" />
-            <figure className="h-feat-a">
+            <figure className="h-feat-a" data-mo="up">
               <img src={ph.feat[0].src} alt={ph.feat[0].alt} loading="lazy" />
               {ph.feat[0].cap ? <figcaption className="apa-hand">{ph.feat[0].cap}</figcaption> : null}
             </figure>
-            <figure className="h-feat-b">
+            <figure className="h-feat-b" data-mo="up" data-mo-delay="120">
               <img src={ph.feat[1].src} alt={ph.feat[1].alt} loading="lazy" />
               {ph.feat[1].cap ? <figcaption className="apa-hand">{ph.feat[1].cap}</figcaption> : null}
             </figure>

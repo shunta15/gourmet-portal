@@ -22,10 +22,10 @@ export default function MovieList({ items }: { items: MovieItem[] }) {
   }, [cur]);
   return (
     <>
-      <ul className="t-movie-list">
+      <ul className="t-movie-list" data-mo-group="80">
         {items.map((m) => (
-          <li key={m.id}>
-            <button type="button" className="t-movie-it apa-btn-reset" onClick={() => setCur(m)} aria-label={`${m.title}の動画を再生`}>
+          <li key={m.id} data-mo="up">
+            <button type="button" className="t-movie-it apa-btn-reset" data-mo-hover="zoom" data-mo-press onClick={() => setCur(m)} aria-label={`${m.title}の動画を再生`}>
               <span className="t-movie-ph">
                 <img src={m.poster} alt="" loading="lazy" />
                 <span className="t-movie-play">

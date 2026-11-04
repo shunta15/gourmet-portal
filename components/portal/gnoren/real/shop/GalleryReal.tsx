@@ -53,9 +53,9 @@ export default function GalleryReal({ items }: { items: GalleryItem[] }) {
   if (n === 0) return null;
   return (
     <>
-      <ul className={`gn-shop-gal gn-shop-gal-n${n}`}>
+      <ul className={`gn-shop-gal gn-shop-gal-n${n}`} data-mo-group="80">
         {items.map((g, i) => (
-          <li key={g.full} className={`gn-shop-gal-i gn-shop-gal-${i + 1}`}>
+          <li key={g.full} data-mo="up" className={`gn-shop-gal-i gn-shop-gal-${i + 1}`}>
             <button
               type="button"
               className="gn-shop-gal-btn"

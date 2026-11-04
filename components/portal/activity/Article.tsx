@@ -74,12 +74,12 @@ export default function Article({ shops, editorial }: { shops: AShop[]; editoria
             <span>景色に、</span>
             <span>会いにいこう。</span>
           </figcaption>
-          <Stamp id="fw" className="f-woman-stamp" ring="MACHINOWA ACTIVITY" mountain wave />
+          <Stamp data-mo="pop" data-mo-delay="300" id="fw" className="f-woman-stamp" ring="MACHINOWA ACTIVITY" mountain wave />
           <Pine className="f-woman-pine f-woman-pine-1" />
           <Pine className="f-woman-pine f-woman-pine-2" />
         </figure>
 
-        <div className="f-ticket">
+        <div className="f-ticket" data-mo="pop">
           <div className="f-ticket-in">
             <p className="f-ticket-lab">MACHINOWA SPECIAL</p>
             <h1 className="f-ticket-h1">
@@ -102,17 +102,17 @@ export default function Article({ shops, editorial }: { shops: AShop[]; editoria
             <Mountain className="f-ticket-mtn f-ticket-mtn-2" />
           </div>
         </div>
-        <Stamp id="fs" className="f-special" ring="SPECIAL" lines={["SPECIAL"]} mountain={false} />
+        <Stamp data-mo="pop" data-mo-delay="300" id="fs" className="f-special" ring="SPECIAL" lines={["SPECIAL"]} mountain={false} />
         <Waves className="f-hero-waves" />
 
-        <figure className="f-p f-p1">
+        <figure className="f-p f-p1" data-mo="pop" data-mo-delay="100">
           <img src={`${IMG}ar-hero-lake.webp`} alt="" />
           <figcaption className="apa-hand">
             <span>だれと行く?</span>
             <span>どんなふうに楽しむ?</span>
           </figcaption>
         </figure>
-        <figure className="f-p f-p2">
+        <figure className="f-p f-p2" data-mo="pop" data-mo-delay="160">
           <img src={`${IMG}ar-hero-spring.webp`} alt="" />
           <figcaption className="apa-hand">
             <span>季節ごとの</span>
@@ -120,14 +120,14 @@ export default function Article({ shops, editorial }: { shops: AShop[]; editoria
           </figcaption>
         </figure>
         <span className="f-ticket-tab">TICKET</span>
-        <figure className="f-p f-p3">
+        <figure className="f-p f-p3" data-mo="pop" data-mo-delay="220">
           <img src={`${IMG}ar-hero-kayak.webp`} alt="" />
           <figcaption className="apa-hand">
             <span>きっと、</span>
             <span>好きな体験が見つかる。</span>
           </figcaption>
         </figure>
-        <figure className="f-p f-p4">
+        <figure className="f-p f-p4" data-mo="pop" data-mo-delay="280">
           <img src={`${IMG}ar-hero-pottery.webp`} alt="" />
           <figcaption className="apa-hand">
             <span>はじめてでも</span>
@@ -148,10 +148,10 @@ export default function Article({ shops, editorial }: { shops: AShop[]; editoria
           <br />
           過ごしたい?
         </p>
-        <ul className="f-cards">
+        <ul data-mo-group="80" className="f-cards">
           {SCENES.map((s, i) => (
-            <li key={s.k} className={`f-c f-c-${i + 1}`}>
-              <Link href={searchUrl({ scene: [s.slug] })} className="f-c-a">
+            <li key={s.k} data-mo="up" className={`f-c f-c-${i + 1}`}>
+              <Link href={searchUrl({ scene: [s.slug] })} className="f-c-a" data-mo-hover="zoom lift">
                 <span className="f-c-ph">
                   <img src={`${IMG}ar-scene-${s.k}.webp`} alt="" loading="lazy" />
                 </span>
@@ -179,10 +179,10 @@ export default function Article({ shops, editorial }: { shops: AShop[]; editoria
           <br />
           あそぶ?
         </p>
-        <ul className="f-cards">
+        <ul data-mo-group="80" className="f-cards">
           {GENRES.map((s, i) => (
-            <li key={s.k} className={`f-c f-g f-c-${i + 1}`}>
-              <Link href={s.to} className="f-c-a">
+            <li key={s.k} data-mo="up" className={`f-c f-g f-c-${i + 1}`}>
+              <Link href={s.to} className="f-c-a" data-mo-hover="zoom lift">
                 <span className="f-c-ph">
                   <img src={`${IMG}${s.img}`} alt="" loading="lazy" />
                   <span className="f-g-t">{s.t}</span>
@@ -203,10 +203,10 @@ export default function Article({ shops, editorial }: { shops: AShop[]; editoria
       <section className="f-sec f-s03" aria-label="季節の特集">
         <div className="f-card-bg" />
         <Head n="03" t="季節の特集" sub="季節ごとの営業と開催の期間から、体験を探そう。" />
-        <ul className="f-cards f-seasons">
+        <ul data-mo-group="80" className="f-cards f-seasons">
           {seasons.map((s, i) => (
-            <li key={s.id} className={`f-c f-se f-c-${i + 1}`}>
-              <Link href={aLinks.season(s.id)} className="f-c-a">
+            <li key={s.id} data-mo="up" className={`f-c f-se f-c-${i + 1}`}>
+              <Link href={aLinks.season(s.id)} className="f-c-a" data-mo-hover="zoom lift">
                 <span className="f-c-ph">
                   <img src={s.imageFile} alt="" loading="lazy" />
                   <span className={`f-se-c f-se-${s.id}`}>{SEASON_CHAR[s.id]}</span>
@@ -226,8 +226,8 @@ export default function Article({ shops, editorial }: { shops: AShop[]; editoria
           ))}
         </ul>
         <div className="f-jp" aria-hidden="true">
-          <Pines className="f-jp-pines" />
-          <Pine className="f-jp-pine" />
+          <Pines className="f-jp-pines" data-mo-live="float" />
+          <Pine className="f-jp-pine" data-mo-live="float" data-mo-live-delay="2" />
           <Stamp id="ss" className="f-jp-stamp" ring="SEASONAL SPECIAL" mountain={false} />
           <img className="f-jp-map" src={`${IMG}ar-map.svg`} alt="" />
           <p className="f-jp-hand apa-hand">
@@ -240,7 +240,7 @@ export default function Article({ shops, editorial }: { shops: AShop[]; editoria
 
       {/* ---- 04 はじめての方へ ・ 05 読みもの ---- */}
       <section className="f-s45" aria-label="はじめての方へ・読みもの">
-        <div className="f-guide">
+        <div className="f-guide" data-mo="right">
           <div className="f-card-bg" />
           <Head n="04" t="はじめての方へ" sub="初めての人向けに、アクティビティの基本と楽しみ方をガイド。" />
           <i className="f-guide-yel" />
@@ -278,9 +278,9 @@ export default function Article({ shops, editorial }: { shops: AShop[]; editoria
           <Link href={aLinks.magazine} className="f-more f-mag-more">
             もっと見る <IcArrow />
           </Link>
-          <ul className="f-mag-list">
+          <ul className="f-mag-list" data-mo-group="80">
             {mags.map((m, i) => (
-              <li key={m.id} className={`f-m f-m-${i + 1}`}>
+              <li key={m.id} data-mo="up" className={`f-m f-m-${i + 1}`}>
                 <Link href={aLinks.mag(m.id)} className="f-m-a">
                   <span className="f-m-ph">
                     <img src={m.imageFile} alt="" loading="lazy" />
@@ -310,10 +310,10 @@ export default function Article({ shops, editorial }: { shops: AShop[]; editoria
         <Link href={aLinks.search} className="f-more f-s06-more">
           もっと見る <IcArrow />
         </Link>
-        <ul className="f-cards f-feats">
+        <ul data-mo-group="80" className="f-cards f-feats">
           {feats.map((s, i) => (
-            <li key={s.id} className={`f-c f-ft f-c-${i + 1}`}>
-              <Link href={aLinks.story(s.id)} className="f-c-a">
+            <li key={s.id} data-mo="up" className={`f-c f-ft f-c-${i + 1}`}>
+              <Link href={aLinks.story(s.id)} className="f-c-a" data-mo-hover="zoom lift">
                 <span className="f-c-ph">
                   <img src={s.photoList[0].src} alt={s.photoList[0].alt} loading="lazy" />
                 </span>

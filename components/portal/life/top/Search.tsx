@@ -24,7 +24,7 @@ export default function Search({ shops, total, all, args, pages }: { shops: LSho
 
       <div className="sr-band">
         <img className="sr-band-img" src={`${IMG}s-band.webp`} alt="" width={1488} height={246} aria-hidden="true" />
-        <div className="sr-band-tx">
+        <div className="sr-band-tx" data-mo="left">
           <IcBrand className="sr-band-i" />
           <h1>場所を探す</h1>
           <p>まちの暮らしや文化に出会える、全国のスポットを探せます。</p>
@@ -33,7 +33,7 @@ export default function Search({ shops, total, all, args, pages }: { shops: LSho
 
       <div className="sr-body">
         <aside className="sr-side" aria-label="検索条件">
-          <form className="sr-form" action={LFL.search} method="get">
+          <form className="sr-form" action={LFL.search} method="get" data-mo-group="100">
             <p className="sr-form-h">
               <IcPin className="sr-form-i" />
               <span>
@@ -41,7 +41,7 @@ export default function Search({ shops, total, all, args, pages }: { shops: LSho
                 <small>SEARCH</small>
               </span>
             </p>
-            <fieldset>
+            <fieldset data-mo="left">
               <legend>カテゴリーで絞り込む</legend>
               {kinds.map((g) => (
                 <label key={g.slug} className="sr-ck">
@@ -53,7 +53,7 @@ export default function Search({ shops, total, all, args, pages }: { shops: LSho
                 </label>
               ))}
             </fieldset>
-            <fieldset>
+            <fieldset data-mo="left">
               <legend>エリアで絞り込む</legend>
               {AREA_OPTIONS.map((a) => (
                 <label key={a.slug} className="sr-ck">
@@ -66,7 +66,7 @@ export default function Search({ shops, total, all, args, pages }: { shops: LSho
                 <span>すべてのエリア</span>
               </label>
             </fieldset>
-            <fieldset>
+            <fieldset data-mo="left">
               <legend>キーワードで探す</legend>
               <span className="sr-kw">
                 <input type="search" name="q" defaultValue={args.q} placeholder="キーワードを入力" aria-label="キーワード" />
@@ -79,7 +79,7 @@ export default function Search({ shops, total, all, args, pages }: { shops: LSho
               <IcArrow />
             </button>
           </form>
-          <div className="sr-deco">
+          <div className="sr-deco" data-mo="fade">
             <img src={`${IMG}s-bird.webp`} alt="" width={689} height={436} aria-hidden="true" />
             <p className="sr-deco-h">
               まちの中に、
@@ -104,10 +104,10 @@ export default function Search({ shops, total, all, args, pages }: { shops: LSho
 
         <main className="sr-main">
           <div className="sr-top">
-            <p className="sr-count">
+            <p className="sr-count" data-mo="up">
               検索結果 <b>{total}</b> 件
             </p>
-            <div className="sr-mapimg">
+            <div className="sr-mapimg" data-mo="fade">
               <img src={`${IMG}s-map.svg`} alt="日本地図" width={498} height={430} loading="lazy" decoding="async" />
               {/* 「東北」「関東」「関西」と引き出し線はコードで重ねる(位置は地図の 498×430 に対する %) */}
               <span className="sr-ml-ln" style={{ left: "72.3%", top: "41.4%", width: "9%" }} aria-hidden="true" />
@@ -122,17 +122,17 @@ export default function Search({ shops, total, all, args, pages }: { shops: LSho
           {shops.length === 0 ? (
             <p className="sr-empty">条件に合う場所が見つかりませんでした。条件を変えて、もう一度探してみてください。</p>
           ) : (
-            <ol className="sr-list">
+            <ol className="sr-list" data-mo-group="100">
               {shops.map((s, i) => {
                 const side = PHOTO_SIDE[(first + i) % 4];
                 const text = SHOP_COPY[s.id]?.introP ?? s.blurb;
                 return (
-                  <li key={s.id} className={`sr-row sr-row--${side}`}>
+                  <li key={s.id} className={`sr-row sr-row--${side}`} data-mo={side === "l" ? "left" : "right"}>
                     <p className="sr-no">
                       <span>{String(first + i + 1).padStart(2, "0")}</span>
                       <i aria-hidden="true" />
                     </p>
-                    <Link href={s.href} className="sr-card">
+                    <Link href={s.href} className="sr-card" data-mo-hover="zoom lift">
                       <span className="sr-ph">{s.photo ? <img className="lf-ph" src={s.photo} alt={`${s.name}の写真`} style={{ objectPosition: s.pos }} loading="lazy" decoding="async" /> : null}</span>
                       <span className="sr-tx">
                         <em className="sr-kind">{s.kind}</em>
@@ -154,7 +154,7 @@ export default function Search({ shops, total, all, args, pages }: { shops: LSho
           )}
 
           {pages > 1 ? (
-            <nav className="sr-pager" aria-label="ページ送り">
+            <nav className="sr-pager" aria-label="ページ送り" data-mo="up">
               {Array.from({ length: pages }, (_, i) => i + 1).map((n) => (
                 <Link key={n} href={hrefOf(n)} prefetch={false} aria-current={n === args.page ? "page" : undefined} aria-label={`${n}ページ`}>
                   {n}
@@ -165,7 +165,7 @@ export default function Search({ shops, total, all, args, pages }: { shops: LSho
         </main>
       </div>
 
-      <footer className="sr-ft">
+      <footer className="sr-ft" data-mo="fade">
         <Link href={LFL.top} className="sr-ft-logo" aria-label="マチノワライフ トップへ">
           <svg viewBox="0 0 60 60" aria-hidden="true">
             <circle cx="30" cy="30" r="28" fill="none" stroke="#e9dfcc" strokeWidth="1.500" />

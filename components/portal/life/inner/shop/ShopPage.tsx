@@ -44,9 +44,9 @@ export default function ShopPage({ v }: { v: ShopView }) {
     <div className="lf-shop">
       <Header variant="c" current="shops" />
 
-      <section className="sh-hero" aria-label={place.name}>
+      <section className="sh-hero" aria-label={place.name} data-mo-live="kb">
         <Ph p={v.hero} eager />
-        <div className="sh-card">
+        <div className="sh-card" data-mo="left" data-mo-delay="200">
           <p className="sh-kicker">
             <i aria-hidden="true" />
             {v.kindName}
@@ -73,35 +73,35 @@ export default function ShopPage({ v }: { v: ShopView }) {
 
       <div className="sh-body">
         <article className="sh-art">
-          <div className="sh-intro">
-            <h2>
+          <div className="sh-intro" data-mo-group="110">
+            <h2 data-mo="wipe">
               {copy.introH[0]}
               <br />
               {copy.introH[1]}
             </h2>
-            <p>{copy.introP}</p>
+            <p data-mo="up">{copy.introP}</p>
           </div>
 
-          <section className="sh-f sh-f1">
-            <div className="sh-f-ph"><Ph p={v.feats[0].photo} /></div>
-            <div className="sh-f-tx">
+          <section className="sh-f sh-f1" data-mo-group="110">
+            <div className="sh-f-ph" data-mo="wipe" data-mo-hover="zoom"><Ph p={v.feats[0].photo} /></div>
+            <div className="sh-f-tx" data-mo="up">
               <h3>{v.feats[0].h}</h3>
               <p>{v.feats[0].p}</p>
             </div>
           </section>
-          <section className="sh-f sh-f2">
-            <div className="sh-f-tx">
+          <section className="sh-f sh-f2" data-mo-group="110">
+            <div className="sh-f-tx" data-mo="up">
               <h3>
                 <i aria-hidden="true" />
                 {v.feats[1].h}
               </h3>
               <p>{v.feats[1].p}</p>
             </div>
-            <div className="sh-f-ph"><Ph p={v.feats[1].photo} /></div>
+            <div className="sh-f-ph" data-mo="wipe" data-mo-hover="zoom"><Ph p={v.feats[1].photo} /></div>
           </section>
-          <section className="sh-f sh-f3">
-            <div className="sh-f-ph"><Ph p={v.feats[2].photo} /></div>
-            <div className="sh-f-tx">
+          <section className="sh-f sh-f3" data-mo-group="110">
+            <div className="sh-f-ph" data-mo="wipe" data-mo-hover="zoom"><Ph p={v.feats[2].photo} /></div>
+            <div className="sh-f-tx" data-mo="up">
               <h3>
                 <i aria-hidden="true" />
                 {v.feats[2].h}
@@ -120,14 +120,14 @@ export default function ShopPage({ v }: { v: ShopView }) {
           ) : null}
         </article>
 
-        <aside className="sh-side" aria-label="店舗情報">
+        <aside className="sh-side" aria-label="店舗情報" data-mo-group="80">
           <p className="sh-side-k">
             <i aria-hidden="true" />
             店舗情報
           </p>
           <h2>{place.name}</h2>
-          <div className="sh-side-ph"><Ph p={v.side} /></div>
-          <dl className="sh-dl">
+          <div className="sh-side-ph" data-mo="up" data-mo-hover="zoom"><Ph p={v.side} /></div>
+          <dl className="sh-dl" data-mo="up">
             <div>
               <dt>
                 <IcPinLine className="lf-ico" />
@@ -151,13 +151,13 @@ export default function ShopPage({ v }: { v: ShopView }) {
             </div>
           </dl>
           {v.official ? (
-            <a className="sh-official" href={v.official} target="_blank" rel="noopener noreferrer nofollow">
+            <a className="sh-official" data-mo-press data-mo-hover="sweep" href={v.official} target="_blank" rel="noopener noreferrer nofollow">
               公式サイトを見る
               <IcExt className="lf-ico" />
             </a>
           ) : null}
           {hasMap ? (
-            <div className="sh-map">
+            <div className="sh-map" data-mo="fade">
               <iframe title={`${place.name}の地図`} src={mapSrc(place.lat as number, place.lng as number)} loading="lazy" referrerPolicy="no-referrer" />
             </div>
           ) : null}
@@ -167,7 +167,7 @@ export default function ShopPage({ v }: { v: ShopView }) {
               <IcExt className="lf-ico" />
             </a>
           ) : null}
-          <div className="sh-side-ph sh-side-ph2"><Ph p={v.side2} /></div>
+          <div className="sh-side-ph sh-side-ph2" data-mo="up" data-mo-hover="zoom"><Ph p={v.side2} /></div>
         </aside>
       </div>
 
@@ -179,10 +179,10 @@ export default function ShopPage({ v }: { v: ShopView }) {
             <IcArrow />
           </Link>
         </div>
-        <ul>
+        <ul data-mo-group="80">
           {v.others.map((o) => (
-            <li key={o.id}>
-              <Link href={o.href}>
+            <li key={o.id} data-mo="up">
+              <Link href={o.href} data-mo-hover="zoom">
                 <Ph p={o.photo} />
                 <span className="sh-o-tx">
                   <em>

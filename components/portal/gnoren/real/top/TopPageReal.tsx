@@ -42,24 +42,24 @@ export default function TopPageReal({ data, links }: { data: TopData; links: GnL
       <div className="gn-top-in">
         {/* ───────── ヒーロー ───────── */}
         <section className="gn-top-hero" aria-label="マチノワ グルメ">
-          <div className="gn-top-hero-bg" aria-hidden="true">
+          <div className="gn-top-hero-bg" aria-hidden="true" data-mo-live="kb">
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img src={`${IMG}/hero.webp`} alt="" width={2172} height={856} fetchPriority="high" />
           </div>
-          <div className="gn-top-hero-copy">
-            <h1 className="gn-top-h1" aria-label={ENTRANCE_H1}>
+          <div className="gn-top-hero-copy" data-mo-group="110">
+            <h1 className="gn-top-h1" aria-label={ENTRANCE_H1} data-mo="up">
               <span>{h1a}</span>
               <span>{h1b}</span>
             </h1>
-            <p className="gn-top-lead">
+            <p className="gn-top-lead" data-mo="up">
               <span>{ENTRANCE_LEAD}</span>
             </p>
-            <Link href={links.search} className="gn-top-cta">
+            <Link href={links.search} className="gn-top-cta" data-mo="up">
               <span>店をさがす</span>
               <ArrowRight className="gn-top-cta-ar" />
             </Link>
           </div>
-          <div className="gn-top-gallery" aria-hidden="true">
+          <div className="gn-top-gallery" aria-hidden="true" data-mo="fade" data-mo-delay="450">
             <span className="gn-script gn-top-gallery-script">Noren Gallery</span>
             <span className="gn-top-gallery-s">
               MACHINOWA GOURMET
@@ -79,22 +79,22 @@ export default function TopPageReal({ data, links }: { data: TopData; links: GnL
             <path d="M980 11C1020 8 1060 6 1086 7" fill="none" stroke="#e1d7ca" strokeWidth="1" />
           </svg>
           <p className="gn-top-stats-cap">マチノワ グルメの掲載数</p>
-          <ul className="gn-top-stats-list">
-            <li className="gn-top-stat gn-top-stat-1">
+          <ul className="gn-top-stats-list" data-mo-group="110">
+            <li className="gn-top-stat gn-top-stat-1" data-mo="pop">
               <p className="gn-top-stat-main">
                 <b className="gn-top-num">{stats.shops}</b>
                 <span className="gn-top-unit">店舗</span>
               </p>
               <p className="gn-top-stat-sub">掲載中の飲食店</p>
             </li>
-            <li className="gn-top-stat gn-top-stat-2">
+            <li className="gn-top-stat gn-top-stat-2" data-mo="pop">
               <p className="gn-top-stat-main">
                 <b className="gn-top-num">{stats.areas}</b>
                 <span className="gn-top-unit">エリア</span>
               </p>
               <p className="gn-top-stat-sub">店のある地域</p>
             </li>
-            <li className="gn-top-stat gn-top-stat-3">
+            <li className="gn-top-stat gn-top-stat-3" data-mo="pop">
               <p className="gn-top-stat-main">
                 <b className="gn-top-num">{stats.cuisines}</b>
                 <span className="gn-top-unit">料理分類</span>
@@ -115,12 +115,12 @@ export default function TopPageReal({ data, links }: { data: TopData; links: GnL
             href={searchAll}
           />
           <h2 id="gn-top-cat-h" className="gn-top-sr">料理から探す</h2>
-          <ul className="gn-top-cat-track">
+          <ul className="gn-top-cat-track" data-mo-group="80">
             {cats.map((c, i) => {
               const Icon = CAT_ICONS[i];
               return (
-                <li key={c.key} className="gn-top-cat-li" style={{ "--x": CAT_X[i] } as CSSProperties}>
-                  <Link href={c.href} className={`gn-top-noren is-${CAT_TONES[i % CAT_TONES.length]}`} aria-label={`${c.label}のお店をさがす`}>
+                <li key={c.key} data-mo="up" className="gn-top-cat-li" style={{ "--x": CAT_X[i] } as CSSProperties}>
+                  <Link href={c.href} className={`gn-top-noren is-${CAT_TONES[i % CAT_TONES.length]}`} data-mo-hover="zoom" aria-label={`${c.label}のお店をさがす`}>
                     <span className="gn-top-cloth gn-linen" aria-hidden="true" />
                     <Icon className="gn-top-noren-ic" />
                     <span className="gn-top-noren-label">{c.label}</span>
@@ -145,10 +145,10 @@ export default function TopPageReal({ data, links }: { data: TopData; links: GnL
             href={searchAll}
           />
           <h2 id="gn-top-area-h" className="gn-top-sr">エリアから探す</h2>
-          <ul className="gn-top-area-track">
+          <ul className="gn-top-area-track" data-mo-group="80">
             {areas.map((a, i) => (
-              <li key={a.key} className="gn-top-area-li" style={{ "--x": AREA_X[i] } as CSSProperties}>
-                <Link href={a.href} className="gn-top-banner is-light" aria-label={`${a.name}のお店をさがす`}>
+              <li key={a.key} data-mo="up" className="gn-top-area-li" style={{ "--x": AREA_X[i] } as CSSProperties}>
+                <Link href={a.href} className="gn-top-banner is-light" data-mo-hover="zoom" aria-label={`${a.name}のお店をさがす`}>
                   <span className="gn-top-banner-rod" aria-hidden="true" />
                   {a.photo ? (
                     <span className="gn-top-banner-ph">
@@ -185,10 +185,10 @@ export default function TopPageReal({ data, links }: { data: TopData; links: GnL
             href={searchAll}
           />
           <h2 id="gn-top-scene-h" className="gn-top-sr">シーンから探す</h2>
-          <ul className="gn-top-scene-list">
+          <ul className="gn-top-scene-list" data-mo-group="80">
             {scenes.map((s, i) => (
-              <li key={s.slug} className="gn-top-scene-li" style={{ "--x": SCENE_X[i] } as CSSProperties}>
-                <Link href={s.href} className="gn-top-scene-card">
+              <li key={s.slug} data-mo="up" className="gn-top-scene-li" style={{ "--x": SCENE_X[i] } as CSSProperties}>
+                <Link href={s.href} className="gn-top-scene-card" data-mo-hover="lift zoom">
                   <span className="gn-top-scene-ph">{s.photo ? <Photo p={s.photo} w={308} h={170} /> : null}</span>
                   <span className="gn-top-scene-t">{s.name}</span>
                   <span className="gn-top-scene-d">
@@ -210,10 +210,10 @@ export default function TopPageReal({ data, links }: { data: TopData; links: GnL
             href={links.feature}
           />
           <h2 id="gn-top-feat-h" className="gn-top-sr">特集から読む</h2>
-          <ul className="gn-top-feat-list">
+          <ul className="gn-top-feat-list" data-mo-group="80">
             {features.map((f, i) => (
-              <li key={f.id} className="gn-top-feat-li" style={{ "--x": FEAT_X[i] } as CSSProperties}>
-                <Link href={f.href} className={`gn-top-fcard is-light${i === 0 ? " is-big" : ""}`}>
+              <li key={f.id} data-mo="up" className="gn-top-feat-li" style={{ "--x": FEAT_X[i] } as CSSProperties}>
+                <Link href={f.href} className={`gn-top-fcard is-light${i === 0 ? " is-big" : ""}`} data-mo-hover="lift zoom tilt">
                   {f.photo ? (
                     // eslint-disable-next-line @next/next/no-img-element
                     <img className="gn-top-fcard-img" src={f.photo.src} srcSet={f.photo.srcSet} sizes={f.photo.sizes} alt="" width={476} height={300} loading="lazy" decoding="async" />

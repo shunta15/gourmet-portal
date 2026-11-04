@@ -43,24 +43,24 @@ export default function Top({ shops, specials }: { shops: SShop[]; specials: SSp
 
       <section className="s2-hero" aria-label="今日のわたしに、運動を。">
         <img className="s2-hero-bg" src={`${P}t-hero.webp`} alt="" width={1024} height={409} />
-        <div className="s2-hero-tx">
+        <div className="s2-hero-tx" data-mo-group="110">
           <ul className="s2-hero-en" aria-hidden="true">
-            <li>CITY</li>
-            <li>FITNESS</li>
-            <li>CULTURE</li>
-            <li>MAGAZINE</li>
+            <li data-mo="up">CITY</li>
+            <li data-mo="up">FITNESS</li>
+            <li data-mo="up">CULTURE</li>
+            <li data-mo="up">MAGAZINE</li>
           </ul>
-          <h1>
+          <h1 data-mo="wipe">
             <span>今日の</span>
             <span>わたしに、</span>
             <span>運動を。</span>
           </h1>
-          <p className="s2-hero-sub">
+          <p className="s2-hero-sub" data-mo="up">
             見つかる、続けられる。
             <br />
             あなたのまちのフィットネス・スポーツ施設。
           </p>
-          <form className="s2-hero-form" action={S} method="get" role="search">
+          <form className="s2-hero-form" action={S} method="get" role="search" data-mo="up">
             <IcPin className="s2-hero-pin" />
             <input type="text" name="q" aria-label="エリア・駅名で探す" placeholder="エリア・駅名で探す　例：名古屋市、所沢市" />
             <button type="submit" aria-label="検索">
@@ -69,7 +69,7 @@ export default function Top({ shops, specials }: { shops: SShop[]; specials: SSp
           </form>
           <ul className="s2-hero-chips">
             {chips(shops).map(([t, h]) => (
-              <li key={t}>
+              <li key={t} data-mo="pop">
                 <Link href={h}>{t}</Link>
               </li>
             ))}
@@ -79,10 +79,10 @@ export default function Top({ shops, specials }: { shops: SShop[]; specials: SSp
         <Link className="s2-hero-l s2-hero-l2" href={kindHref("gym")} aria-label="FITNESS 続く、変わる。" />
       </section>
 
-      <section className="s2-cat" aria-label="カテゴリから探す">
-        <CatScript className="s2-cat-sc" />
+      <section className="s2-cat" aria-label="カテゴリから探す" data-mo-group="100">
+        <CatScript className="s2-cat-sc" mo="left" />
         {CATS.map((c) => (
-          <Link key={c.kind.slug} href={kindHref(c.kind.slug)} className="s2-cat-i">
+          <Link key={c.kind.slug} href={kindHref(c.kind.slug)} className="s2-cat-i" data-mo="pop" data-mo-hover="lift">
             <img src={`${P}${c.img}.webp`} alt="" width={72} height={72} />
             <span>
               <b>{c.kind.name}</b>
@@ -93,9 +93,9 @@ export default function Top({ shops, specials }: { shops: SShop[]; specials: SSp
         ))}
       </section>
 
-      <section className="s2-tiles" aria-label="目的から探す">
+      <section className="s2-tiles" aria-label="目的から探す" data-mo-group="90">
         {TILES.map(([k, label, h]) => (
-          <Link key={k} href={h} className={`s2-tile s2-${k}`} aria-label={label}>
+          <Link key={k} href={h} className={`s2-tile s2-${k}`} aria-label={label} data-mo="up" data-mo-hover="zoom tilt" data-mo-press>
             <img src={`${P}t-${k}.webp`} alt="" width={347} height={191} />
           </Link>
         ))}
@@ -103,16 +103,16 @@ export default function Top({ shops, specials }: { shops: SShop[]; specials: SSp
 
       <section className="s2-pick" aria-label="注目の施設">
         <div className="s2-pick-hd">
-          <p>PICK UP</p>
-          <h2>注目の施設</h2>
+          <p data-mo="up">PICK UP</p>
+          <h2 data-mo="wipe" data-mo-delay="110">注目の施設</h2>
           <Link href={S} className="s2-pick-go" aria-label="施設をもっと見る">
             <IcChev />
           </Link>
         </div>
-        <ul className="s2-pick-ls">
+        <ul className="s2-pick-ls" data-mo-group="100">
           {shops.slice(0, 3).map((s) => (
-            <li key={s.id}>
-              <Link href={s.href} className="s2-pc">
+            <li key={s.id} data-mo="up">
+              <Link href={s.href} className="s2-pc" data-mo-hover="zoom lift">
                 <span className="s2-pc-ph">
                   {s.photo ? <img src={s.photo} alt={s.name} style={{ objectPosition: s.pos }} loading="lazy" /> : null}
                 </span>
@@ -130,17 +130,17 @@ export default function Top({ shops, specials }: { shops: SShop[]; specials: SSp
         </ul>
       </section>
 
-      <section className="s2-sp" aria-label="特集">
-        <Link href={sp(0)} className="s2-sp-big" aria-label="特集　運動があると、このまちが好きになる。">
+      <section className="s2-sp" aria-label="特集" data-mo-group="100">
+        <Link href={sp(0)} className="s2-sp-big" data-mo="pop" data-mo-hover="zoom" aria-label="特集　運動があると、このまちが好きになる。">
           <img src={`${P}t-sp-big.webp`} alt="" width={619} height={337} />
         </Link>
-        <Link href={sp(1)} className="s2-sp-s1" aria-label="このまちで見つける、わたしのフィットネス。">
+        <Link href={sp(1)} className="s2-sp-s1" data-mo="pop" data-mo-hover="zoom" aria-label="このまちで見つける、わたしのフィットネス。">
           <img src={`${P}t-sp-s1.webp`} alt="" width={204} height={151} />
         </Link>
-        <Link href={sp(2)} className="s2-sp-s2" aria-label="通いたくなる理由が、きっと見つかる。">
+        <Link href={sp(2)} className="s2-sp-s2" data-mo="pop" data-mo-hover="zoom" aria-label="通いたくなる理由が、きっと見つかる。">
           <img src={`${P}t-sp-s2.webp`} alt="" width={204} height={185} />
         </Link>
-        <Link href={SPL.special} className="s2-sp-r" aria-label="運動のある暮らしで、まちはもっと楽しくなる。">
+        <Link href={SPL.special} className="s2-sp-r" data-mo="pop" data-mo-hover="zoom" aria-label="運動のある暮らしで、まちはもっと楽しくなる。">
           <img src={`${P}t-sp-r.webp`} alt="" width={200} height={337} />
         </Link>
         <Link href={sp(0)} className="s2-sp-btn" aria-label="特集記事を読む" />

@@ -1,0 +1,120 @@
+/*
+ * ページの動き(PageMotion が data 属性を見て動かす)。使い方は README.md。
+ * 個別プロパティ(opacity / translate / scale / clip-path / filter / rotate)で動かし、transform は tilt 以外では使わない
+ * (既存 CSS の transform: rotate() 等と衝突させないため。個別プロパティは transform と合成される)。
+ * 既存デザインの filter(紙の縁など)・clip-path(斜めの写真)・scale を消さないよう、それを使う種類(blur / wipe / zoom・pop)だけが戻す。
+ */
+
+/* ---------- 1. 出現(data-mo)。JS が動くとき・動きを減らす設定でないときだけ最初は隠す ---------- */
+@media (scripting: enabled) and (prefers-reduced-motion: no-preference) {
+  [data-mo] {
+    --mo-ty: 16px; /* 上下の移動量 */
+    --mo-tx: 20px; /* 左右の移動量 */
+    --mo-tr: opacity 0.8s ease var(--mo-d, 0ms), translate 0.9s cubic-bezier(0.22, 0.7, 0.2, 1) var(--mo-d, 0ms);
+    opacity: 0;
+    translate: 0 var(--mo-ty);
+    transition: var(--mo-tr);
+  }
+  [data-mo="fade"] { translate: none; }
+  [data-mo="left"] { translate: calc(var(--mo-tx) * -1) 0; }
+  [data-mo="right"] { translate: var(--mo-tx) 0; }
+  [data-mo="zoom"] {
+    translate: none;
+    scale: 0.96;
+    --mo-tr: opacity 0.8s ease var(--mo-d, 0ms), scale 0.9s cubic-bezier(0.22, 0.7, 0.2, 1) var(--mo-d, 0ms);
+  }
+  /* ポップイン(オーバーシュート) */
+  [data-mo="pop"] {
+    translate: none;
+    scale: 0.88;
+    --mo-tr: opacity 0.7s ease var(--mo-d, 0ms), scale 0.7s cubic-bezier(0.34, 1.56, 0.64, 1) var(--mo-d, 0ms);
+  }
+  /* マスクリビール(見出し・写真用)。opacity は動かさない。自分の clip-path を持つ要素には付けない */
+  [data-mo="wipe"] {
+    opacity: 1;
+    translate: none;
+    clip-path: inset(-48px -48px calc(100% - 1px) -48px); /* 影(box-shadow)を切らないよう周り 48px は見せたまま、上から下へ。上端 1px を残すのは、Chrome の IntersectionObserver が clip-path で全部切れた要素を「見えていない」と判定し、出現が起きないため(PageMotion は wipe を閾値 0 で観察する) */
+    --mo-tr: clip-path 0.9s cubic-bezier(0.2, 0.8, 0.2, 1) var(--mo-d, 0ms);
+  }
+  /* ぼけて現れる */
+  [data-mo="blur"] {
+    translate: none;
+    filter: blur(8px);
+    --mo-tr: opacity 0.9s ease var(--mo-d, 0ms), filter 0.9s ease var(--mo-d, 0ms);
+  }
+  /* ラインドロー(stroke の SVG。path に pathLength="1" が要る)。入れ物自体は動かさない */
+  [data-mo="draw"] { opacity: 1; translate: none; transition: none; }
+  [data-mo="draw"] path { stroke-dasharray: 1; stroke-dashoffset: 1; transition: stroke-dashoffset 1.3s cubic-bezier(0.3, 0.6, 0.3, 1) var(--mo-d, 0ms); }
+  [data-mo="draw"].is-in path { stroke-dashoffset: 0; }
+
+  /* 出たあと。clip-path / filter / scale は、それを使う種類だけ戻す(要素が元々持つ filter・clip-path・scale を消さないため) */
+  [data-mo].is-in { opacity: 1; translate: none; }
+  [data-mo="zoom"].is-in, [data-mo="pop"].is-in { scale: none; }
+  [data-mo="wipe"].is-in { clip-path: inset(-48px); }
+  [data-mo="blur"].is-in { filter: none; }
+
+  /* 触る反応と同じ要素に付いたとき: 出現の transition と触る反応の transition を両方持たせる */
+  [data-mo][data-mo-hover~="tilt"] { transition: var(--mo-tr), transform 0.25s ease; }
+  [data-mo][data-mo-press] { transition: var(--mo-tr), scale 0.18s ease; }
+}
+@media (scripting: enabled) and (prefers-reduced-motion: no-preference) and (max-width: 768px) {
+  [data-mo] { --mo-ty: 12px; --mo-tx: 14px; }
+}
+
+/* ---------- 2. スクロール連動(data-mo と同じ要素に付けない。translate を取り合う) ---------- */
+[data-mo-px] { translate: 0 var(--mo-y, 0px); }
+/* 入れ物(data-mo-p="zoom")に overflow: hidden が要る */
+[data-mo-p="zoom"] > img { scale: calc(1 + var(--mo-p, 0) * 0.06); }
+
+/* ---------- 3. 触ったときの反応 ---------- */
+/* lift / sweep: data-mo の無い要素は 0.35s。data-mo のある要素は出現の transition(0.9s)が優先され、hover 中だけ 0.35s になる */
+:where([data-mo-hover~="lift"], [data-mo-hover~="sweep"]) { transition: translate 0.35s ease, filter 0.35s ease; }
+@media (hover: hover) {
+  [data-mo-hover~="lift"]:hover { translate: 0 -3px; transition: translate 0.35s ease, filter 0.35s ease; }
+  /* sweep: 光の帯は足さず、明るさだけ上げる(背景・疑似要素・レイアウトに触れない)。自分の filter を持つ要素には付けない */
+  [data-mo-hover~="sweep"]:hover { filter: brightness(1.06); transition: translate 0.35s ease, filter 0.35s ease; }
+}
+/* zoom: 中の img が寄る。入れ物に overflow: hidden が要る。既に hover で拡大する img には付けない */
+[data-mo-hover~="zoom"] img { transition: scale 0.6s cubic-bezier(0.2, 0.7, 0.2, 1); }
+@media (hover: hover) {
+  [data-mo-hover~="zoom"]:hover img { scale: 1.045; }
+}
+/* tilt: PageMotion が --mo-rx / --mo-ry を書く。ここだけ transform を使う(既に transform のある要素には付けない)。
+   待機中は transform を持たせない(3D の transform や will-change は合成レイヤーを作り、文字の描画が僅かに変わるため。hover 中だけ掛ける) */
+@media (hover: hover) and (pointer: fine) {
+  [data-mo-hover~="tilt"] { transition: transform 0.25s ease; }
+  [data-mo-hover~="tilt"]:hover { transform: perspective(900px) rotateX(var(--mo-rx, 0deg)) rotateY(var(--mo-ry, 0deg)); }
+}
+/* 押したとき(スマホのタップ用。常に有効)。scale を使う pop / zoom と同じ要素には付けない */
+:where([data-mo-press]) { transition: scale 0.18s ease; }
+[data-mo-press]:active { scale: 0.97; }
+
+/* ---------- 4. ずっと動く物(data-mo-live) ---------- */
+@keyframes mo-kb { from { scale: 1; } to { scale: 1.06; } }
+@keyframes mo-float { from { translate: 0 0; } to { translate: 0 -5px; } }
+@keyframes mo-sway { from { rotate: -0.8deg; } to { rotate: 0.8deg; } }
+/* kb: 写真のゆっくりした寄り。入れ物に overflow: hidden が要る。delay は親から継承(animation-delay: inherit) */
+[data-mo-live="kb"] > img, img[data-mo-live="kb"] { animation: mo-kb 18s ease-in-out infinite alternate; animation-delay: inherit; }
+[data-mo-live="float"] { animation: mo-float 5.5s ease-in-out infinite alternate; }
+[data-mo-live="sway"] { animation: mo-sway 7s ease-in-out infinite alternate; transform-origin: 50% 0; }
+/* 画面の外・非表示タブでは止める(PageMotion が is-off / data-mo-hidden を付ける) */
+[data-mo-live].is-off, [data-mo-live].is-off > img { animation-play-state: paused !important; }
+html[data-mo-hidden] [data-mo-live], html[data-mo-hidden] [data-mo-live] > img { animation-play-state: paused !important; }
+
+/* ---------- 5. 動きを減らす設定: すべて表示済み・止める ---------- */
+@media (prefers-reduced-motion: reduce) {
+  [data-mo] { opacity: 1 !important; translate: none !important; transition: none !important; }
+  [data-mo="zoom"], [data-mo="pop"] { scale: none !important; }
+  [data-mo="wipe"] { clip-path: none !important; }
+  [data-mo="blur"] { filter: none !important; }
+  [data-mo="draw"] path { stroke-dasharray: none !important; stroke-dashoffset: 0 !important; transition: none !important; }
+  [data-mo-live], [data-mo-live] > img { animation: none !important; }
+  [data-mo-px] { translate: none !important; }
+  [data-mo-p="zoom"] > img { scale: none !important; }
+  [data-mo-hover~="lift"]:hover { translate: none !important; }
+  [data-mo-hover~="sweep"]:hover { filter: none !important; }
+  [data-mo-hover~="zoom"]:hover img { scale: none !important; }
+  [data-mo-hover~="lift"], [data-mo-hover~="sweep"], [data-mo-hover~="zoom"] img, [data-mo-hover~="tilt"], [data-mo-press] { transition: none !important; }
+  [data-mo-hover~="tilt"] { transform: none !important; }
+  [data-mo-press]:active { scale: none !important; }
+}

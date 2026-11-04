@@ -86,10 +86,10 @@ export default function Story({ d }: { d: StoryData }) {
                   ))}
                 </figcaption>
               ) : null}
-              <Stamp id="story" className="y-stamp" ring="MACHINOWA ACTIVITY" mountain wave />
+              <Stamp data-mo="pop" data-mo-delay="300" id="story" className="y-stamp" ring="MACHINOWA ACTIVITY" mountain wave />
             </figure>
           ) : null}
-          <div className={`y-panel${d.photo ? "" : " is-solo"}${d.actionsFirst ? " is-act-top" : ""}`}>
+          <div className={`y-panel${d.photo ? "" : " is-solo"}${d.actionsFirst ? " is-act-top" : ""}`} data-mo="right">
             <p className="y-tag">
               <span>{d.tag}</span>
               <small>{d.tagEn}</small>
@@ -161,13 +161,13 @@ export default function Story({ d }: { d: StoryData }) {
           const side = !s.photo && nCards > 0 && nCards <= 2;
           return (
           <section key={s.no + s.heading} className={`y-sec${i % 2 === 1 ? " is-flip" : ""}`} id={s.id} aria-labelledby={`${s.id ?? `y-s${i}`}-h`}>
-            <header className="y-sec-h">
+            <header className="y-sec-h" data-mo="left">
               <Flag n={s.no} className="y-flag" />
               <h2 id={`${s.id ?? `y-s${i}`}-h`}>{s.heading}</h2>
               {i === 0 ? <Mountain className="y-sec-deco" /> : null}
             </header>
             <div className={`y-sec-b${s.photo ? " has-ph" : ""}${side ? " has-cards" : ""}`}>
-              <div className="y-sec-t">
+              <div className="y-sec-t" data-mo="up" data-mo-delay="220">
                 {s.paras.map((p) => (
                   <p key={p}>{p}</p>
                 ))}
@@ -196,12 +196,12 @@ export default function Story({ d }: { d: StoryData }) {
                 ) : null}
               </div>
               {s.photo ? (
-                <figure className="y-sec-ph">
+                <figure className="y-sec-ph" data-mo="up" data-mo-delay="110" data-mo-hover="zoom">
                   <Photo p={s.photo} />
                 </figure>
               ) : null}
               {side ? (
-                <div className="s-grid y-cards" style={{ ["--c" as string]: nCards } as CSSProperties}>
+                <div className="s-grid y-cards" data-mo-group="80" style={{ ["--c" as string]: nCards } as CSSProperties}>
                   {s.cards!.map((c) => (
                     <ShopCard key={c.id} s={c} variant="list" />
                   ))}
@@ -218,7 +218,7 @@ export default function Story({ d }: { d: StoryData }) {
               </div>
             ) : null}
             {!side && nCards > 0 ? (
-              <div className="s-grid y-cards">
+              <div className="s-grid y-cards" data-mo-group="80">
                 {s.cards!.map((c) => (
                   <ShopCard key={c.id} s={c} variant="list" />
                 ))}
@@ -259,7 +259,7 @@ export default function Story({ d }: { d: StoryData }) {
               <h2>{d.more.heading}</h2>
               <small>{d.more.en}</small>
             </header>
-            <div className="s-grid y-cards">
+            <div className="s-grid y-cards" data-mo-group="80">
               {d.more.cards.map((c) => (
                 <ShopCard key={c.id} s={c} variant="list" href={d.more!.hrefOf(c.id)} />
               ))}

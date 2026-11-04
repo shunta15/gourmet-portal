@@ -412,3 +412,6 @@
   .gn-feat-r-hero-bg { -webkit-mask-image: linear-gradient(90deg, transparent, #000 72px); mask-image: linear-gradient(90deg, transparent, #000 72px); }
   .gn-feat-r .gn-feat-r-panel-bg { -webkit-mask-image: linear-gradient(90deg, #000 calc(100% - 72px), transparent); mask-image: linear-gradient(90deg, #000 calc(100% - 72px), transparent); }
 }
+
+/* 動き(2026-11-05) ヒーロー写真の kb(ゆっくり寄る)用。hero-bg の中身は img(100%×100%)だけで、はみ出す物は無い */
+.gn-feat-r-hero-bg { overflow: hidden; }

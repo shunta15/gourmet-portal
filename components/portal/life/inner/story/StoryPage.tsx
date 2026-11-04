@@ -15,9 +15,9 @@ export default function StoryPage({ v }: { v: StoryView }) {
     <div className="lf-shop lf-story">
       <Header variant="c" current={v.nav === "shops" ? "shops" : "special"} />
 
-      <section className="sh-hero st-hero" aria-label={v.title}>
+      <section className="sh-hero st-hero" aria-label={v.title} data-mo-live="kb">
         <Img p={v.hero} eager />
-        <div className="sh-card st-card">
+        <div className="sh-card st-card" data-mo="up">
           <p className="sh-kicker">
             <i aria-hidden="true" />
             {v.kicker}
@@ -42,24 +42,24 @@ export default function StoryPage({ v }: { v: StoryView }) {
             <p className="st-lead">{v.lead}</p>
           </div>
           {v.sections.map((s, i) => (
-            <section key={i} className="st-sec">
-              <p className="st-label">{s.label}</p>
-              <h2>
+            <section key={i} className="st-sec" data-mo-group="110">
+              <p className="st-label" data-mo="left">{s.label}</p>
+              <h2 data-mo="wipe">
                 <i aria-hidden="true" />
                 {s.heading}
               </h2>
               {s.paras.map((t, j) => (
-                <p key={j} className="st-p">
+                <p key={j} className="st-p" data-mo="up" data-mo-delay={j === 0 ? undefined : 0}>
                   {t}
                 </p>
               ))}
               {s.photo ? (
-                <div className="st-ph">
+                <div className="st-ph" data-mo="wipe" data-mo-delay={0} data-mo-hover="zoom">
                   <Img p={s.photo} />
                 </div>
               ) : null}
               {s.specs && s.specs.length ? (
-                <dl className="st-specs">
+                <dl className="st-specs" data-mo="up" data-mo-delay={0}>
                   {s.specs.map((x, k) => (
                     <div key={k}>
                       <dt>{x.k}</dt>
@@ -71,16 +71,16 @@ export default function StoryPage({ v }: { v: StoryView }) {
               {s.extra && s.extra.length ? (
                 <div className="st-extra">
                   {s.extra.map((e, k) => (
-                    <div key={k} className="st-ph st-ph-s">
+                    <div key={k} className="st-ph st-ph-s" data-mo="wipe" data-mo-delay={0} data-mo-hover="zoom">
                       <Img p={e} />
                     </div>
                   ))}
                 </div>
               ) : null}
               {s.stores && s.stores.length ? (
-                <ul className="st-stores">
+                <ul className="st-stores" data-mo-group="80">
                   {s.stores.map((x) => (
-                    <li key={x.id}>
+                    <li key={x.id} data-mo="pop">
                       <Link href={x.href}>
                         {x.name}
                         <IcArrow />
@@ -141,10 +141,10 @@ export default function StoryPage({ v }: { v: StoryView }) {
                 <i aria-hidden="true" />
                 この記事に出てくる店
               </p>
-              <ul className="st-ss">
+              <ul className="st-ss" data-mo-group="80">
                 {v.stores.map((x) => (
-                  <li key={x.id}>
-                    <Link href={x.href}>
+                  <li key={x.id} data-mo="up">
+                    <Link href={x.href} data-mo-hover="zoom">
                       <span className="st-ss-ph">
                         <Img p={x.photo} />
                       </span>
@@ -171,10 +171,10 @@ export default function StoryPage({ v }: { v: StoryView }) {
               <IcArrow />
             </Link>
           </div>
-          <ul>
+          <ul data-mo-group="80">
             {v.related.map((r) => (
-              <li key={r.href}>
-                <Link href={r.href}>
+              <li key={r.href} data-mo="up">
+                <Link href={r.href} data-mo-hover="zoom">
                   <Img p={r.photo} />
                   <span className="sh-o-tx">
                     <em>

@@ -70,7 +70,7 @@ function Strip({ t, label, count }: { t: GnFlTheme | null; label: string; count:
   const slot = t ? THEMES.find((x) => x.key === t.slot) : null;
   const Ic = t ? FL_ICONS[t.icon] : null;
   return (
-    <div className={`gn-fl-r-hd gn-fl-tone-${slot?.tone ?? "linen"}`}>
+    <div className={`gn-fl-r-hd gn-fl-tone-${slot?.tone ?? "linen"}`} data-mo="left">
       {Ic ? <Ic className="gn-fl-r-hd-ic" /> : null}
       <h2 className="gn-fl-r-hd-t gn-mincho">{label}</h2>
       <span className="gn-fl-r-hd-ct">{count} 本</span>
@@ -130,7 +130,7 @@ export default function FeatureListReal({ vm }: { vm: GnFlVM }) {
           <div className="gn-fl-side" aria-hidden="true">
             <p className="gn-fl-pul gn-mincho">PICK UP<br />FEATURE</p>
             {polaroid ? (
-              <span className="gn-fl-pola gn-fl-r-pola">
+              <span className="gn-fl-pola gn-fl-r-pola" data-mo-live="sway">
                 <img {...polaroid} sizes="136px" alt="" loading="lazy" decoding="async" />
               </span>
             ) : null}
@@ -140,7 +140,7 @@ export default function FeatureListReal({ vm }: { vm: GnFlVM }) {
               ご紹介。<br />
               {pick.date}
             </p>
-            <img src={`${IMG}/leaf.webp`} alt="" width={256} height={352} className="gn-fl-leaf" />
+            <img src={`${IMG}/leaf.webp`} alt="" width={256} height={352} className="gn-fl-leaf" data-mo-live="float" />
           </div>
         ) : null}
       </section>
@@ -185,7 +185,7 @@ export default function FeatureListReal({ vm }: { vm: GnFlVM }) {
       </section>
 
       {/* ───── キーワード(旧 /feature/search の入口。見本に無い唯一の追加の 1 つ) ───── */}
-      <section className="gn-fl-r-find" aria-label="キーワードで探す">
+      <section className="gn-fl-r-find" aria-label="キーワードで探す" data-mo="left">
         <form action="/feature" method="get" role="search" className="gn-fl-r-form">
           <label htmlFor="gn-fl-q" className="gn-fl-r-form-l gn-mincho">キーワードで探す</label>
           <input id="gn-fl-q" name="q" type="search" defaultValue={result?.q ?? ""} maxLength={60} placeholder="題・副題・テーマ" className="gn-fl-r-form-i" />
@@ -262,10 +262,10 @@ export default function FeatureListReal({ vm }: { vm: GnFlVM }) {
       )}
 
       {/* ───── 下の帯 ───── */}
-      <section className="gn-fl-band" aria-label="すべての特集へ">
+      <section className="gn-fl-band" aria-label="すべての特集へ" data-mo-group="110">
         <img src={`${IMG}/band.webp`} alt="" className="gn-fl-band-bg" loading="lazy" />
-        <h2 className="gn-fl-band-t gn-mincho">特集 {counts.total} 本を、<br />一覧で読む。</h2>
-        <p className="gn-fl-band-s">{FEATURE_KIND_ROUNDUP} {counts.scene} 本・{FEATURE_ROUNDUP_WALK} {counts.walk} 本。</p>
+        <h2 className="gn-fl-band-t gn-mincho" data-mo="left">特集 {counts.total} 本を、<br />一覧で読む。</h2>
+        <p className="gn-fl-band-s" data-mo="up">{FEATURE_KIND_ROUNDUP} {counts.scene} 本・{FEATURE_ROUNDUP_WALK} {counts.walk} 本。</p>
         <Link href={allHref} className="gn-fl-band-btn">
           すべての特集を見る
           <ArrowRight />

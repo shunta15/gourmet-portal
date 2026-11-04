@@ -91,13 +91,13 @@ export default function ShopPageReal({ shop: s }: { shop: GnShopVM }) {
         <div className="gn-shop-r-stage">
           {s.hero ? (
             // eslint-disable-next-line @next/next/no-img-element
-            <img className="gn-shop-herobg gn-shop-r-herophoto" {...s.hero} alt={`${s.name} の写真`} width={1800} height={1000} fetchPriority="high" decoding="async" />
+            <img className="gn-shop-herobg gn-shop-r-herophoto" {...s.hero} alt={`${s.name} の写真`} width={1800} height={1000} fetchPriority="high" decoding="async" data-mo-live="kb" />
           ) : (
             <Townscape className="gn-shop-r-town" />
           )}
           {s.hero ? <div className="gn-shop-r-wash" aria-hidden="true" /> : null}
 
-          <div className="gn-shop-r-cloth" style={clothStyle} aria-hidden="true">
+          <div className="gn-shop-r-cloth" style={clothStyle} aria-hidden="true" data-mo-live="sway">
             <span className="gn-shop-r-rod" />
             <span className="gn-shop-r-panel gn-shop-r-panel-1" />
             <span className="gn-shop-r-panel gn-shop-r-panel-2" />
@@ -119,9 +119,9 @@ export default function ShopPageReal({ shop: s }: { shop: GnShopVM }) {
           </div>
 
           {s.strips.length > 0 ? (
-            <ul className="gn-shop-r-strips">
+            <ul className="gn-shop-r-strips" data-mo-group="110">
               {s.strips.map((t, i) => (
-                <li key={t} className={`gn-shop-r-strip gn-shop-r-strip-${i + 1} gn-mincho`}>
+                <li key={t} className={`gn-shop-r-strip gn-shop-r-strip-${i + 1} gn-mincho`} data-mo="pop">
                   <span>{t}</span>
                 </li>
               ))}
@@ -160,7 +160,7 @@ export default function ShopPageReal({ shop: s }: { shop: GnShopVM }) {
                 })}
               </ul>
             ) : null}
-            <h1 className="gn-shop-h1 gn-shop-r-h1 gn-mincho" style={nameStyle}>
+            <h1 className="gn-shop-h1 gn-shop-r-h1 gn-mincho" style={nameStyle} data-mo="wipe">
               {s.name}
             </h1>
             {s.desc.length > 0 ? (
@@ -181,11 +181,11 @@ export default function ShopPageReal({ shop: s }: { shop: GnShopVM }) {
           {s.picks.length > 0 ? (
             <section className="gn-shop-menu gn-shop-r-picks" aria-labelledby="gn-shop-menu-h">
               <div className="gn-shop-head">
-                <h2 id="gn-shop-menu-h" className="gn-shop-h2 gn-mincho">この店のおすすめ</h2>
+                <h2 id="gn-shop-menu-h" className="gn-shop-h2 gn-mincho" data-mo="wipe">この店のおすすめ</h2>
               </div>
-              <ul className="gn-shop-menu-list">
+              <ul className="gn-shop-menu-list" data-mo-group="80">
                 {s.picks.map((m, i) => (
-                  <li key={`${m.name}${m.desc}`} className={`gn-shop-item gn-shop-item-${i + 1}${m.img ? "" : " gn-shop-r-item-text"}`}>
+                  <li key={`${m.name}${m.desc}`} data-mo="up" data-mo-hover="zoom" className={`gn-shop-item gn-shop-item-${i + 1}${m.img ? "" : " gn-shop-r-item-text"}`}>
                     {m.img ? (
                       <div className="gn-shop-item-ph">
                         {/* eslint-disable-next-line @next/next/no-img-element */}
@@ -204,7 +204,7 @@ export default function ShopPageReal({ shop: s }: { shop: GnShopVM }) {
           {s.gallery.length > 0 ? (
             <section className="gn-shop-gallery" aria-labelledby="gn-shop-gal-h">
               <div className="gn-shop-head gn-shop-head-gal">
-                <h2 id="gn-shop-gal-h" className="gn-shop-h2 gn-mincho">お店の写真</h2>
+                <h2 id="gn-shop-gal-h" className="gn-shop-h2 gn-mincho" data-mo="wipe">お店の写真</h2>
               </div>
               <GalleryReal items={s.gallery} />
             </section>
@@ -212,10 +212,10 @@ export default function ShopPageReal({ shop: s }: { shop: GnShopVM }) {
           {/* ───── こんなシーンにおすすめ ───── */}
           {s.scenes.length > 0 ? (
             <section className="gn-shop-scenes gn-shop-r-scenes" aria-labelledby="gn-shop-sc-h">
-              <h2 id="gn-shop-sc-h" className="gn-shop-h2 gn-mincho">こんなシーンにおすすめ</h2>
-              <ul className="gn-shop-sc-list">
+              <h2 id="gn-shop-sc-h" className="gn-shop-h2 gn-mincho" data-mo="wipe">こんなシーンにおすすめ</h2>
+              <ul className="gn-shop-sc-list" data-mo-group="80">
                 {s.scenes.map((sc) => (
-                  <li key={sc.slug} className={`gn-shop-sc${sc.img ? "" : " gn-shop-r-sc-plain"}`}>
+                  <li key={sc.slug} data-mo="up" data-mo-hover="zoom" className={`gn-shop-sc${sc.img ? "" : " gn-shop-r-sc-plain"}`}>
                     {sc.img ? (
                       // eslint-disable-next-line @next/next/no-img-element
                       <img {...sc.img} alt="" aria-hidden="true" loading="lazy" decoding="async" />
@@ -235,10 +235,10 @@ export default function ShopPageReal({ shop: s }: { shop: GnShopVM }) {
           {/* ───── 関連記事(対の特集記事が先頭) ───── */}
           {s.related.length > 0 ? (
             <section className="gn-shop-r-rel" aria-labelledby="gn-shop-rel-h">
-              <h2 id="gn-shop-rel-h" className="gn-shop-h2 gn-mincho">関連記事</h2>
-              <ul className="gn-shop-r-rel-list">
+              <h2 id="gn-shop-rel-h" className="gn-shop-h2 gn-mincho" data-mo="wipe">関連記事</h2>
+              <ul className="gn-shop-r-rel-list" data-mo-group="80">
                 {s.related.map((f) => (
-                  <li key={f.id} className="gn-shop-r-rel-i">
+                  <li key={f.id} data-mo="up" className="gn-shop-r-rel-i">
                     <a href={f.href} className="gn-shop-r-rel-a">
                       {f.img ? (
                         <span className="gn-shop-r-rel-ph">

@@ -5,8 +5,8 @@ import { Pin, ArrowShort } from "../Icons";
 import "./special.css";
 import type { SpecialView, SpCard, Photo } from "./data";
 
-const Arrow = ({ cls }: { cls?: string }) => (
-  <svg className={`s2b-arrow${cls ? ` ${cls}` : ""}`} viewBox="0 0 70 8" fill="none" aria-hidden="true">
+const Arrow = ({ cls, mo }: { cls?: string; mo?: string }) => (
+  <svg className={`s2b-arrow${cls ? ` ${cls}` : ""}`} data-mo={mo} viewBox="0 0 70 8" fill="none" aria-hidden="true">
     <path d="M0 4.5h68M63 1l5 3.5L63 8" stroke="currentColor" strokeWidth="0.9" />
   </svg>
 );
@@ -26,14 +26,14 @@ const Lines = ({ t }: { t: string }) => (
 
 function Block({ c, n, cls }: { c: SpCard; n: string; cls: string }) {
   return (
-    <section className={`s2b-sp-b ${cls}`}>
-      <div className="s2b-sp-b-ph"><Img p={c.photo} /></div>
+    <section className={`s2b-sp-b ${cls}`} data-mo-group="110">
+      <div className="s2b-sp-b-ph" data-mo="fade"><Img p={c.photo} /></div>
       <i className="s2b-sp-deco s2b-sp-deco--a" aria-hidden="true" />
       <i className="s2b-sp-deco s2b-sp-deco--b" aria-hidden="true" />
-      <span className="s2b-sp-num" aria-hidden="true">{n}</span>
-      <h2>{c.title}</h2>
-      <p className="s2b-sp-lead">{c.lead}</p>
-      <Arrow cls="s2b-sp-barrow" />
+      <span className="s2b-sp-num" aria-hidden="true" data-mo-px="0.06">{n}</span>
+      <h2 data-mo="left">{c.title}</h2>
+      <p className="s2b-sp-lead" data-mo="left">{c.lead}</p>
+      <Arrow cls="s2b-sp-barrow" mo="left" />
       <Link href={c.href} className="s2b-sp-cover" aria-label={`${c.title} を読む`} />
     </section>
   );
@@ -53,42 +53,42 @@ export default function SpecialPage({ v }: { v: SpecialView }) {
         <img src="/_portal/sports/inner/special-hero.webp" alt="" width={937} height={502} />
       </section>
 
-      <div className="s2b-sp-th">
+      <div className="s2b-sp-th" data-mo="up">
         <span className="s2b-sp-th-en">THEMED CONTENT</span>
         <span className="s2b-sp-th-ja">街で楽しむスポーツのこと、くわしく。</span>
         <span className="s2b-sp-th-r">FEATURES<br />FOR AN ACTIVE LIFE</span>
       </div>
 
       {c1 ? (
-        <section className="s2b-sp-b1">
-          <div className="s2b-sp-b1-ph"><Img p={c1.photo} /></div>
-          <i className="s2b-sp-deco s2b-sp-deco--a" aria-hidden="true" />
-          <i className="s2b-sp-deco s2b-sp-deco--b" aria-hidden="true" />
-          <span className="s2b-sp-num" aria-hidden="true">01</span>
-          <p className="s2b-sp-cap" aria-hidden="true"><Lines t={SIDE_EN[0]} /></p>
-          <h2>{c1.title}</h2>
-          <p className="s2b-sp-lead">{c1.lead}</p>
-          <Arrow cls="s2b-sp-barrow" />
+        <section className="s2b-sp-b1" data-mo-group="90">
+          <div className="s2b-sp-b1-ph" data-mo="fade"><Img p={c1.photo} /></div>
+          <i className="s2b-sp-deco s2b-sp-deco--a" aria-hidden="true" data-mo-px="0.05" />
+          <i className="s2b-sp-deco s2b-sp-deco--b" aria-hidden="true" data-mo-px="0.05" />
+          <span className="s2b-sp-num" aria-hidden="true" data-mo-px="0.06">01</span>
+          <p className="s2b-sp-cap" aria-hidden="true" data-mo="left"><Lines t={SIDE_EN[0]} /></p>
+          <h2 data-mo="left">{c1.title}</h2>
+          <p className="s2b-sp-lead" data-mo="left">{c1.lead}</p>
+          <Arrow cls="s2b-sp-barrow" mo="left" />
           <Link href={c1.href} className="s2b-sp-cover s2b-sp-cover--b1" aria-label={`${c1.title} を読む`} />
           {v.tiles.map((t, i) => (
-            <div key={i} className={`s2b-sp-tile s2b-sp-tile--${i}`}>
+            <div key={i} className={`s2b-sp-tile s2b-sp-tile--${i}`} data-mo="pop" data-mo-delay={400 + i * 100}>
               <Img p={t.photo} />
               <p><b>{t.label}</b><span>{t.sub}</span></p>
             </div>
           ))}
-          <ol className="s2b-sp-idx">
+          <ol className="s2b-sp-idx" data-mo-group="80">
             {titles.map((t, i) => (
-              <li key={i}>
+              <li key={i} data-mo="up">
                 <Link href={v.cards[i].href}><em>{`0${i + 1}`}</em><span>{t}</span></Link>
               </li>
             ))}
             {v.more.map((m, i) => (
-              <li key={m.slug}>
+              <li key={m.slug} data-mo="up">
                 <Link href={m.href}><em>{`0${i + 4}`}</em><span>{m.title}</span></Link>
               </li>
             ))}
           </ol>
-          <i className="s2b-sp-deco s2b-sp-deco--r" aria-hidden="true" />
+          <i className="s2b-sp-deco s2b-sp-deco--r" aria-hidden="true" data-mo-px="0.05" />
         </section>
       ) : null}
 
@@ -104,11 +104,11 @@ export default function SpecialPage({ v }: { v: SpecialView }) {
         <h2>スポーツの店を探す</h2>
         <p className="s2b-sp-pick-d">街で見つかる、注目のスポーツ施設。</p>
         <Link href={SPL.shops} className="s2b-sp-pick-all">すべての店舗を見る<ArrowShort className="s2b-sp-pick-aa" /></Link>
-        <i className="s2b-sp-pick-line" aria-hidden="true" />
-        <ul className="s2b-sp-shops">
+        <i className="s2b-sp-pick-line" aria-hidden="true" data-mo="wipe" />
+        <ul className="s2b-sp-shops" data-mo-group="100">
           {v.shops.map((s) => (
-            <li key={s.id}>
-              <Link href={s.href}>
+            <li key={s.id} data-mo="up">
+              <Link href={s.href} data-mo-hover="zoom lift">
                 <span className="s2b-sp-shop-ph"><Img p={s.photo} /><em>{s.kindName}</em></span>
                 <b>{s.name}</b>
                 <span className="s2b-sp-shop-loc"><Pin className="s2b-ci" />{s.area}</span>
