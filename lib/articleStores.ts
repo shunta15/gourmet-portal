@@ -20729,6 +20729,55 @@ export const ARTICLE_STORES: Restaurant[] = [
       "ランチ"
     ],
     "featureId": "酒処朧"
+  },
+  {
+    "id": "r878",
+    "name": "SUNSET",
+    "cuisine": "居酒屋",
+    "area": "三重県・桑名市",
+    "region": "mie",
+    "shape": "square",
+    "image": "/restaurants/teleapo-SUNSET/hero.jpg",
+    "heroImages": [
+      "/restaurants/teleapo-SUNSET/hero.jpg",
+      "/restaurants/teleapo-SUNSET/point1.jpg",
+      "/restaurants/teleapo-SUNSET/point2.jpg",
+      "/restaurants/teleapo-SUNSET/point3.jpg",
+      "/restaurants/teleapo-SUNSET/point4.jpg"
+    ],
+    "gallery": [
+      "/restaurants/teleapo-SUNSET/hero.jpg",
+      "/restaurants/teleapo-SUNSET/point1.jpg",
+      "/restaurants/teleapo-SUNSET/point2.jpg",
+      "/restaurants/teleapo-SUNSET/point3.jpg",
+      "/restaurants/teleapo-SUNSET/point4.jpg"
+    ],
+    "desc": "三重県桑名市の居酒屋。",
+    "address": "三重県桑名市桑名476-56 1番街アーケード内",
+    "hours": "火〜土 17:30–23:00",
+    "closed": "月曜・日曜",
+    "seats": "38席（ソファー席・カウンター3席・テーブル席）",
+    "nearest": "—",
+    "phone": "0594-88-5507",
+    "source": {
+      "label": "Google ビジネスプロフィール",
+      "url": "https://maps.google.com/?cid=2567780193717669507"
+    },
+    "body": [
+      "SUNSETは、三重県桑名市にあるお店です。業態は「居酒屋」、所在地は三重県桑名市桑名476-56 1番街アーケード内です。マチノワ編集部の特集記事では、「黒毛和牛ローストビーフと「至高のひとくち」」・「ナポリピッツァとチーズ料理」などを取り上げています。",
+      "営業時間は火〜土 17:30–23:00、定休日は月曜・日曜です（Googleマップの営業時間による）。席は38席（ソファー席・カウンター3席・テーブル席）。営業時間や価格は変わることがあるため、訪問前に公式サイトやSNS、お電話でご確認ください。"
+    ],
+    "highlights": [
+      "黒毛和牛ローストビーフと「至高のひとくち」",
+      "ナポリピッツァとチーズ料理",
+      "世界のワインと自家熟成ハイボール",
+      "ソファー席とカウンター、貸切対応の店内"
+    ],
+    "tags": [
+      "居酒屋",
+      "桑名市"
+    ],
+    "featureId": "SUNSET"
   }
 ];
 
@@ -21167,7 +21216,8 @@ export const ARTICLE_STORE_FEATURE_IDS: Record<string, string> = {
   "r874": "善",
   "r875": "パン工房すわかりんの木",
   "r876": "イザカヤちりえーじょ",
-  "r877": "酒処朧"
+  "r877": "酒処朧",
+  "r878": "SUNSET"
 };
 
 /** 特集記事ID → 店舗ID */
@@ -21605,5 +21655,6 @@ export const ARTICLE_STORE_ID_BY_FEATURE: Record<string, string> = {
   "善": "r874",
   "パン工房すわかりんの木": "r875",
   "イザカヤちりえーじょ": "r876",
-  "酒処朧": "r877"
+  "酒処朧": "r877",
+  "SUNSET": "r878"
 };

@@ -1,0 +1,19 @@
+{
+  "commit": "9b2583f8f80e93772375c9dc72af8b1af0b966be",
+  "source": "/Users/shunta/claude/gp-k-auto2",
+  "count": 1,
+  "added": [
+    {
+      "row": 397,
+      "name": "SUNSET 肉×ワイン×チーズ",
+      "key": "lk-gourmet-397",
+      "vertical": "グルメ",
+      "id": "r878",
+      "articleId": "SUNSET",
+      "shopUrl": "https://machinowa.tokyo/restaurant/r878",
+      "articleUrl": "https://machinowa.tokyo/feature/SUNSET",
+      "sheetUrl": "https://machinowa.tokyo/feature/SUNSET"
+    }
+  ],
+  "skipped": []
+}
