@@ -1,0 +1,40 @@
+{
+  "tab": "トリニティアポ",
+  "tabEn": "tri-life",
+  "row": 380,
+  "sheet": {
+    "name": "HARRRYS",
+    "address": "",
+    "url": "https://www.google.com/maps/search/?api=1&query=HARRRYS%20070-6549-4320%20%E5%A4%A7%E9%98%AA%E5%BA%9C%E5%A4%A7%E9%98%AA%E5%B8%82%E5%B9%B3%E9%87%8E%E5%8C%BA%E7%93%9C%E7%A0%B42-3-21JoieMaison1F",
+    "type": "シルバー、革製品オーダーメイド",
+    "d1": "",
+    "d2": ""
+  },
+  "urlKind": "mapsApi",
+  "route": "第1段(verify-gbp.mjs)で確認済み",
+  "verdict": "一致",
+  "verdictReason": "手がかり: 店名＋住所(番地まで)。電話がちがう(シート 070-6549-4320 / マップ 080-4395-7477)／店名: contains(シート「HARRRYS」/ マップ「ハリーズ/Harrry,s」)／住所(シート): exact・町名・番地とも一致",
+  "place": {
+    "name": "ハリーズ/Harrry,s",
+    "address": "大阪府大阪市平野区瓜破２丁目３−２１ Ｊｏｉｅ Ｍａｉｓｏｎ 1F テナント",
+    "category": "ファッション アクセサリー店",
+    "lat": 34.6088046,
+    "lng": 135.5553724,
+    "gbpUrl": "https://maps.google.com/?cid=16187968444359880330",
+    "phone": "080-4395-7477",
+    "website": null,
+    "hours": {
+      "月": "11:00–20:00",
+      "火": "11:00–20:00",
+      "水": "11:00–20:00",
+      "木": "定休日",
+      "金": "11:00–20:00",
+      "土": "11:00–20:00",
+      "日": "11:00–20:00"
+    },
+    "reserveLinks": [],
+    "statusSignals": [],
+    "closedSignal": false
+  },
+  "fetchedAt": "2026-11-04T08:42:28.584Z"
+}

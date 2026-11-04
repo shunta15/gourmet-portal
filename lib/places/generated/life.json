@@ -23799,6 +23799,134 @@
         ],
         "checkedAt": "2026-11-04"
       }
+    },
+    {
+      "id": "li0160",
+      "vertical": "life",
+      "category": "fashion-craft",
+      "name": "ハリーズ/Harrry,s",
+      "pref": "osaka",
+      "cityName": "大阪市平野区",
+      "address": "大阪府大阪市平野区瓜破2丁目3-21 Joie Maison 1F テナント",
+      "lat": 34.6088046,
+      "lng": 135.5553724,
+      "hours": "月-水金-日 11:00 - 20:00",
+      "holidays": "木曜",
+      "phone": "080-4395-7477",
+      "mapUrl": "https://maps.google.com/?cid=16187968444359880330",
+      "image": "/_portal/vshops/tri-life-380/g01.jpg",
+      "images": [
+        "/_portal/vshops/tri-life-380/g01.jpg",
+        "/_portal/vshops/tri-life-380/g02.jpg",
+        "/_portal/vshops/tri-life-380/g03.jpg",
+        "/_portal/vshops/tri-life-380/g04.jpg",
+        "/_portal/vshops/tri-life-380/g05.jpg",
+        "/_portal/vshops/tri-life-380/g06.jpg",
+        "/_portal/vshops/tri-life-380/g07.jpg",
+        "/_portal/vshops/tri-life-380/g08.jpg",
+        "/_portal/vshops/tri-life-380/g09.jpg",
+        "/_portal/vshops/tri-life-380/g10.jpg"
+      ],
+      "photos": [
+        {
+          "path": "/_portal/vshops/tri-life-380/g01.jpg",
+          "what": "「Harrry,s」の文字が入ったガラス扉の店舗外観",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-life-380/g02.jpg",
+          "what": "木製テーブルが置かれた明るい店内",
+          "kind": "common",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-life-380/g03.jpg",
+          "what": "オレンジ色のレザーカードホルダー2点",
+          "kind": "meal",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-life-380/g04.jpg",
+          "what": "ロゴ入りのレザーキーホルダーと金属製リング",
+          "kind": "meal",
+          "width": 1200,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-life-380/g05.jpg",
+          "what": "アクセサリー類と植物が並ぶ店内の棚",
+          "kind": "common",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-life-380/g06.jpg",
+          "what": "黒い壁に吊るされたシルバーネックレスの展示",
+          "kind": "common",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-life-380/g07.jpg",
+          "what": "「OPEN」の案内が出た店舗外観",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-life-380/g08.jpg",
+          "what": "「SILVER LEATHER」の文字が入ったガラス扉",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-life-380/g09.jpg",
+          "what": "夜の店舗外観とガラス越しに見える店内",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-life-380/g10.jpg",
+          "what": "レザー素材が広がる作業台",
+          "kind": "common",
+          "width": 1200,
+          "height": 900
+        }
+      ],
+      "tags": [
+        "駅近"
+      ],
+      "article": {
+        "headline": "大阪市平野区瓜破のJoie Maison 1Fテナントにある「ハリーズ/Harrry,s」。シルバーアクセサリーとレザー製品を販売・製作している。",
+        "lede": "大阪市平野区にある「ハリーズ/Harrry,s」です。大阪市営地下鉄谷町線「喜連瓜破駅」4番出口から徒歩約5分の場所にあり、シルバーアクセサリーとレザー製品の販売と製作をしています。",
+        "sections": [
+          {
+            "heading": "場所とアクセス",
+            "body": "住所は大阪市平野区瓜破2丁目3-21、Joie Maison 1Fテナントです。大阪市営地下鉄谷町線「喜連瓜破駅」4番出口から徒歩約5分の場所にあります。電話番号は080-4395-7477です。月・火・水・金・土・日曜は11時から20時まで営業しており、木曜が定休日です。"
+          },
+          {
+            "heading": "シルバーアクセサリーとレザー製品",
+            "body": "シルバーアクセサリーとレザー製品の販売と製作をしています。シルバーとレザーの2つのジャンルを手がけており、オンラインストア(https://harrrys.theshop.jp/)でも商品を展開しています。"
+          }
+        ],
+        "sources": [
+          {
+            "label": "公式サイト(ABOUT)",
+            "url": "https://harrrys.theshop.jp/about"
+          },
+          {
+            "label": "Google マップ",
+            "url": "https://maps.google.com/?cid=16187968444359880330"
+          }
+        ],
+        "checkedAt": "2026-11-04"
+      }
     }
   ]
 }

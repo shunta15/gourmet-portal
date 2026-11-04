@@ -1,0 +1,19 @@
+{
+  "commit": "2be10da95a3935cec6c58b9925140aac697b4bdc",
+  "source": "/Users/shunta/claude/gp-k-auto2",
+  "count": 1,
+  "added": [
+    {
+      "row": 380,
+      "name": "HARRRYS",
+      "key": "tri-life-380",
+      "vertical": "くらし",
+      "id": "li0160",
+      "articleId": "li0160",
+      "shopUrl": "https://machinowa.tokyo/life/shop/li0160",
+      "articleUrl": "https://machinowa.tokyo/life/article/li0160",
+      "sheetUrl": "https://machinowa.tokyo/life/article/li0160"
+    }
+  ],
+  "skipped": []
+}

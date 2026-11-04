@@ -1,0 +1,83 @@
+{
+  "key": "tri-life-380",
+  "headline": "大阪市平野区瓜破のJoie Maison 1Fテナントにある「ハリーズ/Harrry,s」。シルバーアクセサリーとレザー製品を販売・製作している。",
+  "lede": "大阪市平野区にある「ハリーズ/Harrry,s」です。大阪市営地下鉄谷町線「喜連瓜破駅」4番出口から徒歩約5分の場所にあり、シルバーアクセサリーとレザー製品の販売と製作をしています。",
+  "sections": [
+    {
+      "heading": "場所とアクセス",
+      "body": "住所は大阪市平野区瓜破2丁目3-21、Joie Maison 1Fテナントです。大阪市営地下鉄谷町線「喜連瓜破駅」4番出口から徒歩約5分の場所にあります。電話番号は080-4395-7477です。月・火・水・金・土・日曜は11時から20時まで営業しており、木曜が定休日です。"
+    },
+    {
+      "heading": "シルバーアクセサリーとレザー製品",
+      "body": "シルバーアクセサリーとレザー製品の販売と製作をしています。シルバーとレザーの2つのジャンルを手がけており、オンラインストア(https://harrrys.theshop.jp/)でも商品を展開しています。"
+    }
+  ],
+  "menus": [],
+  "tags": [
+    {
+      "tag": "駅近",
+      "factIndex": 5
+    }
+  ],
+  "facts": [
+    {
+      "claim": "店の住所は大阪市平野区瓜破２丁目３−２１ Joie Maison 1Fテナント",
+      "source": "https://maps.google.com/?cid=16187968444359880330",
+      "quote": "平野区瓜破２丁目３−２１",
+      "checkedAt": "2026-11-04"
+    },
+    {
+      "claim": "電話番号は080-4395-7477",
+      "source": "https://maps.google.com/?cid=16187968444359880330",
+      "quote": "080-4395-7477",
+      "checkedAt": "2026-11-04"
+    },
+    {
+      "claim": "月・火・水・金・土・日曜は11:00から20:00まで営業",
+      "source": "https://maps.google.com/?cid=16187968444359880330",
+      "quote": "月: 11:00–20:00",
+      "checkedAt": "2026-11-04"
+    },
+    {
+      "claim": "木曜は定休日",
+      "source": "https://maps.google.com/?cid=16187968444359880330",
+      "quote": "木: 定休日",
+      "checkedAt": "2026-11-04"
+    },
+    {
+      "claim": "Googleマップの業種表示はファッション アクセサリー店",
+      "source": "https://maps.google.com/?cid=16187968444359880330",
+      "quote": "ファッション アクセサリー店",
+      "checkedAt": "2026-11-04"
+    },
+    {
+      "claim": "大阪市営地下鉄谷町線「喜連瓜破駅」4番出口から徒歩約5分",
+      "source": "https://harrrys.theshop.jp/about",
+      "quote": "喜連瓜破駅4番出口より徒歩5分",
+      "checkedAt": "2026-11-04"
+    },
+    {
+      "claim": "シルバーアクセサリーとレザー製品の販売と製作をしている",
+      "source": "https://harrrys.theshop.jp/about",
+      "quote": "Silver & Leather",
+      "checkedAt": "2026-11-04"
+    },
+    {
+      "claim": "オンラインストアをhttps://harrrys.theshop.jpで展開している",
+      "source": "https://harrrys.theshop.jp/about",
+      "quote": "Harrry,s powered by BASE",
+      "checkedAt": "2026-11-04"
+    }
+  ],
+  "sources": [
+    {
+      "label": "公式サイト(ABOUT)",
+      "url": "https://harrrys.theshop.jp/about"
+    },
+    {
+      "label": "Google マップ",
+      "url": "https://maps.google.com/?cid=16187968444359880330"
+    }
+  ],
+  "notes": "automation/v2/write.mjs が 2026-11-04 に claude -p --model sonnet で作成。事実の裏取り: 8/8 件(quote が出どころの内容に合うもの。言い換え可)。裏取りに通らなかった facts は載せていない。"
+}
