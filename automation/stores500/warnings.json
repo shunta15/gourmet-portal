@@ -3411,5 +3411,27 @@
       "desc は lede から事実の文を選べず、事実から作った定型文",
       "cuisine は GBPカテゴリ"
     ]
+  },
+  "r879": {
+    "articleId": "石挽そばやわかばOyakicafeほうろくや",
+    "name": "石挽そばや わかば Oyaki cafe ほうろくや",
+    "warnings": [
+      "cuisine は GBPカテゴリ"
+    ]
+  },
+  "r880": {
+    "articleId": "チャイナハウス古丹",
+    "name": "チャイナハウス古丹",
+    "warnings": [
+      "cuisine は GBPカテゴリ"
+    ]
+  },
+  "r881": {
+    "articleId": "ニュー藤駒",
+    "name": "ニュー藤駒",
+    "warnings": [
+      "desc は lede から事実の文を選べず、事実から作った定型文",
+      "cuisine は GBPカテゴリ"
+    ]
   }
 }

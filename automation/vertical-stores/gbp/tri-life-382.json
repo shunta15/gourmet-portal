@@ -1,0 +1,32 @@
+{
+  "tab": "トリニティアポ",
+  "tabEn": "tri-life",
+  "row": 382,
+  "sheet": {
+    "name": "潮音寺",
+    "address": "",
+    "url": "https://www.google.com/maps/search/?api=1&query=%E6%BD%AE%E9%9F%B3%E5%AF%BA%20046-534-0385%20%E3%80%92250-0055%20%E7%A5%9E%E5%A5%88%E5%B7%9D%E7%9C%8C%E5%B0%8F%E7%94%B0%E5%8E%9F%E5%B8%82%E4%B9%85%E9%87%8E%EF%BC%95%EF%BC%91%EF%BC%91",
+    "type": "寺",
+    "d1": "",
+    "d2": ""
+  },
+  "urlKind": "mapsApi",
+  "route": "第1段(verify-gbp.mjs)で確認済み",
+  "verdict": "一致",
+  "verdictReason": "手がかり: 店名＋電話＋住所(番地まで)。電話が一致／店名: exact(シート「潮音寺」/ マップ「潮音寺」)／住所(シート): exact・町名・番地とも一致",
+  "place": {
+    "name": "潮音寺",
+    "address": "神奈川県小田原市久野５１１",
+    "category": "仏教寺院",
+    "lat": 35.2740852,
+    "lng": 139.15211,
+    "gbpUrl": "https://maps.google.com/?cid=549663510048712103",
+    "phone": "0465-34-0385",
+    "website": "https://choonji.housecom.jp/",
+    "hours": null,
+    "reserveLinks": [],
+    "statusSignals": [],
+    "closedSignal": false
+  },
+  "fetchedAt": "2026-11-05T04:04:40.588Z"
+}

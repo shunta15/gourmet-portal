@@ -2193,5 +2193,20 @@
     "articleId": "SUNSET",
     "sheetName": "SUNSET 肉×ワイン×チーズ",
     "mapsUrl": "https://maps.google.com/?cid=2567780193717669507"
+  },
+  {
+    "articleId": "石挽そばやわかばOyakicafeほうろくや",
+    "sheetName": "石挽そばや わかば Oyaki cafe ほうろくや",
+    "mapsUrl": "https://maps.google.com/?cid=5316601405919373047"
+  },
+  {
+    "articleId": "チャイナハウス古丹",
+    "sheetName": "チャイナハウス古丹",
+    "mapsUrl": "https://maps.google.com/?cid=11367028634444309715"
+  },
+  {
+    "articleId": "ニュー藤駒",
+    "sheetName": "ニュー藤駒",
+    "mapsUrl": "https://maps.google.com/?cid=15108326067345415595"
   }
 ]

@@ -1,0 +1,32 @@
+{
+  "tab": "トリニティアポ",
+  "tabEn": "tri-life",
+  "row": 386,
+  "sheet": {
+    "name": "觀音寺（観音寺）",
+    "address": "",
+    "url": "https://www.google.com/maps/search/?api=1&query=%E8%A7%80%E9%9F%B3%E5%AF%BA%EF%BC%88%E8%A6%B3%E9%9F%B3%E5%AF%BA%EF%BC%89%20075-841-7096%20%E3%80%92602-8358%20%E4%BA%AC%E9%83%BD%E5%BA%9C%E4%BA%AC%E9%83%BD%E5%B8%82%E4%B8%8A%E4%BA%AC%E5%8C%BA%20%E4%B8%83%E6%9C%AC%E6%9D%BE%E5%87%BA%E6%B0%B4%E4%B8%8B%E4%B8%89%E7%95%AA%EF%BC%92%EF%BC%98%EF%BC%90",
+    "type": "寺",
+    "d1": "",
+    "d2": ""
+  },
+  "urlKind": "mapsApi",
+  "route": "第1段(verify-gbp.mjs)で確認済み",
+  "verdict": "一致",
+  "verdictReason": "手がかり: 電話＋住所(番地まで)。電話が一致／店名: different(シート「觀音寺（観音寺）」/ マップ「慈眼山 観音寺」)／住所(シート): exact・町名・番地とも一致",
+  "place": {
+    "name": "慈眼山 観音寺",
+    "address": "京都府京都市上京区 七本松出水下三番２８０",
+    "category": "仏教寺院",
+    "lat": 35.0215077,
+    "lng": 135.7391541,
+    "gbpUrl": "https://maps.google.com/?cid=15560549285570051304",
+    "phone": "075-841-7096",
+    "website": "https://www.instagram.com/yonakijizo_kannonji/",
+    "hours": null,
+    "reserveLinks": [],
+    "statusSignals": [],
+    "closedSignal": false
+  },
+  "fetchedAt": "2026-11-05T04:06:45.137Z"
+}

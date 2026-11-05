@@ -1,0 +1,96 @@
+{
+  "commit": "954888d54378b294fe9923c32010c5a5890a75a5",
+  "source": "/Users/shunta/claude/gp-k-auto2",
+  "count": 8,
+  "added": [
+    {
+      "row": 398,
+      "name": "石挽そばや わかば Oyaki cafe ほうろくや",
+      "key": "lk-gourmet-398",
+      "vertical": "グルメ",
+      "id": "r879",
+      "articleId": "石挽そばやわかばOyakicafeほうろくや",
+      "shopUrl": "https://machinowa.tokyo/restaurant/r879",
+      "articleUrl": "https://machinowa.tokyo/feature/石挽そばやわかばOyakicafeほうろくや",
+      "sheetUrl": "https://machinowa.tokyo/feature/石挽そばやわかばOyakicafeほうろくや"
+    },
+    {
+      "row": 399,
+      "name": "チャイナハウス古丹",
+      "key": "lk-gourmet-399",
+      "vertical": "グルメ",
+      "id": "r880",
+      "articleId": "チャイナハウス古丹",
+      "shopUrl": "https://machinowa.tokyo/restaurant/r880",
+      "articleUrl": "https://machinowa.tokyo/feature/チャイナハウス古丹",
+      "sheetUrl": "https://machinowa.tokyo/feature/チャイナハウス古丹"
+    },
+    {
+      "row": 381,
+      "name": "ニュー藤駒",
+      "key": "tri-gourmet-381",
+      "vertical": "グルメ",
+      "id": "r881",
+      "articleId": "ニュー藤駒",
+      "shopUrl": "https://machinowa.tokyo/restaurant/r881",
+      "articleUrl": "https://machinowa.tokyo/feature/ニュー藤駒",
+      "sheetUrl": "https://machinowa.tokyo/feature/ニュー藤駒"
+    },
+    {
+      "row": 382,
+      "name": "潮音寺",
+      "key": "tri-life-382",
+      "vertical": "くらし",
+      "id": "li0161",
+      "articleId": "li0161",
+      "shopUrl": "https://machinowa.tokyo/life/shop/li0161",
+      "articleUrl": "https://machinowa.tokyo/life/article/li0161",
+      "sheetUrl": "https://machinowa.tokyo/life/article/li0161"
+    },
+    {
+      "row": 383,
+      "name": "福勝寺",
+      "key": "tri-life-383",
+      "vertical": "くらし",
+      "id": "li0162",
+      "articleId": "li0162",
+      "shopUrl": "https://machinowa.tokyo/life/shop/li0162",
+      "articleUrl": "https://machinowa.tokyo/life/article/li0162",
+      "sheetUrl": "https://machinowa.tokyo/life/article/li0162"
+    },
+    {
+      "row": 385,
+      "name": "恵運寺",
+      "key": "tri-life-385",
+      "vertical": "くらし",
+      "id": "li0163",
+      "articleId": "li0163",
+      "shopUrl": "https://machinowa.tokyo/life/shop/li0163",
+      "articleUrl": "https://machinowa.tokyo/life/article/li0163",
+      "sheetUrl": "https://machinowa.tokyo/life/article/li0163"
+    },
+    {
+      "row": 386,
+      "name": "觀音寺（観音寺）",
+      "key": "tri-life-386",
+      "vertical": "くらし",
+      "id": "li0164",
+      "articleId": "li0164",
+      "shopUrl": "https://machinowa.tokyo/life/shop/li0164",
+      "articleUrl": "https://machinowa.tokyo/life/article/li0164",
+      "sheetUrl": "https://machinowa.tokyo/life/article/li0164"
+    },
+    {
+      "row": 387,
+      "name": "龍岳院",
+      "key": "tri-life-387",
+      "vertical": "くらし",
+      "id": "li0165",
+      "articleId": "li0165",
+      "shopUrl": "https://machinowa.tokyo/life/shop/li0165",
+      "articleUrl": "https://machinowa.tokyo/life/article/li0165",
+      "sheetUrl": "https://machinowa.tokyo/life/article/li0165"
+    }
+  ],
+  "skipped": []
+}

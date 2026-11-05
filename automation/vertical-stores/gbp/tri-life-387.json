@@ -1,0 +1,32 @@
+{
+  "tab": "トリニティアポ",
+  "tabEn": "tri-life",
+  "row": 387,
+  "sheet": {
+    "name": "龍岳院",
+    "address": "",
+    "url": "https://www.google.com/maps/search/?api=1&query=%E9%BE%8D%E5%B2%B3%E9%99%A2%20053-622-1844%20%E3%80%92441-1331%20%E6%84%9B%E7%9F%A5%E7%9C%8C%E6%96%B0%E5%9F%8E%E5%B8%82%E5%BA%AD%E9%87%8E%E5%8D%97%E6%A4%8D%E7%94%B0%EF%BC%92%EF%BC%91%E2%88%92%EF%BC%91",
+    "type": "院",
+    "d1": "",
+    "d2": ""
+  },
+  "urlKind": "mapsApi",
+  "route": "第1段(verify-gbp.mjs)で確認済み",
+  "verdict": "一致",
+  "verdictReason": "手がかり: 店名＋電話＋住所(番地まで)。電話が一致／店名: exact(シート「龍岳院」/ マップ「龍岳院」)／住所(シート): exact・町名・番地とも一致",
+  "place": {
+    "name": "龍岳院",
+    "address": "愛知県新城市庭野南植田２１−１",
+    "category": "仏教寺院",
+    "lat": 34.884581,
+    "lng": 137.495235,
+    "gbpUrl": "https://maps.google.com/?cid=3991021923873811273",
+    "phone": "0536-22-1844",
+    "website": "https://ryugakuin.com/",
+    "hours": null,
+    "reserveLinks": [],
+    "statusSignals": [],
+    "closedSignal": false
+  },
+  "fetchedAt": "2026-11-05T04:07:22.840Z"
+}

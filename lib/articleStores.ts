@@ -20778,6 +20778,153 @@ export const ARTICLE_STORES: Restaurant[] = [
       "桑名市"
     ],
     "featureId": "SUNSET"
+  },
+  {
+    "id": "r879",
+    "name": "石挽そばや わかば Oyaki cafe ほうろくや",
+    "cuisine": "蕎麦店",
+    "area": "長野県・岡谷市",
+    "region": "nagano",
+    "shape": "square",
+    "image": "/restaurants/teleapo-石挽そばやわかばOyakicafeほうろくや/hero.jpg",
+    "heroImages": [
+      "/restaurants/teleapo-石挽そばやわかばOyakicafeほうろくや/hero.jpg",
+      "/restaurants/teleapo-石挽そばやわかばOyakicafeほうろくや/point1.jpg",
+      "/restaurants/teleapo-石挽そばやわかばOyakicafeほうろくや/point2.jpg",
+      "/restaurants/teleapo-石挽そばやわかばOyakicafeほうろくや/point3.jpg",
+      "/restaurants/teleapo-石挽そばやわかばOyakicafeほうろくや/point4.jpg"
+    ],
+    "gallery": [
+      "/restaurants/teleapo-石挽そばやわかばOyakicafeほうろくや/hero.jpg",
+      "/restaurants/teleapo-石挽そばやわかばOyakicafeほうろくや/point1.jpg",
+      "/restaurants/teleapo-石挽そばやわかばOyakicafeほうろくや/point2.jpg",
+      "/restaurants/teleapo-石挽そばやわかばOyakicafeほうろくや/point3.jpg",
+      "/restaurants/teleapo-石挽そばやわかばOyakicafeほうろくや/point4.jpg"
+    ],
+    "desc": "2022年2月には、隣接する建物で米粉OYAKI（おやき）の店「ほうろくや」を立ち上げ、蕎麦と並んで信州の郷土の味を提供するようになった。",
+    "address": "長野県岡谷市長地小萩1丁目5-43",
+    "hours": "毎日 11:00–14:00",
+    "closed": "なし（Googleマップの営業時間による）",
+    "seats": "—（訪問前に公式確認）",
+    "nearest": "—",
+    "phone": "070-8487-8878",
+    "source": {
+      "label": "Google ビジネスプロフィール",
+      "url": "https://maps.google.com/?cid=5316601405919373047"
+    },
+    "body": [
+      "石挽そばや わかば Oyaki cafe ほうろくやは、長野県岡谷市にあるお店です。業態は「蕎麦店」、所在地は長野県岡谷市長地小萩1丁目5-43です。マチノワ編集部の特集記事では、「八ヶ岳産玄そばを石臼で自家製粉した手打ち二八蕎麦」・「くるみだれと安曇野わさびが並ぶメニューの組み立て」などを取り上げています。",
+      "営業時間は毎日 11:00–14:00で、定休日はありません（Googleマップの営業時間による）。営業時間や価格は変わることがあるため、訪問前に公式サイトやSNS、お電話でご確認ください。"
+    ],
+    "highlights": [
+      "八ヶ岳産玄そばを石臼で自家製粉した手打ち二八蕎麦",
+      "くるみだれと安曇野わさびが並ぶメニューの組み立て",
+      "米粉生地に包んだ信州ジビエのおやき「ほうろくや」",
+      "店の成り立ちと囲炉裏がある建物"
+    ],
+    "tags": [
+      "蕎麦店",
+      "そば",
+      "岡谷市",
+      "ランチ"
+    ],
+    "featureId": "石挽そばやわかばOyakicafeほうろくや"
+  },
+  {
+    "id": "r880",
+    "name": "チャイナハウス古丹",
+    "cuisine": "ラーメン屋",
+    "area": "新潟県・五泉市",
+    "region": "niigata",
+    "shape": "square",
+    "image": "/restaurants/teleapo-チャイナハウス古丹/hero.jpg",
+    "heroImages": [
+      "/restaurants/teleapo-チャイナハウス古丹/hero.jpg",
+      "/restaurants/teleapo-チャイナハウス古丹/point1.jpg",
+      "/restaurants/teleapo-チャイナハウス古丹/point2.jpg",
+      "/restaurants/teleapo-チャイナハウス古丹/point3.jpg"
+    ],
+    "gallery": [
+      "/restaurants/teleapo-チャイナハウス古丹/hero.jpg",
+      "/restaurants/teleapo-チャイナハウス古丹/point1.jpg",
+      "/restaurants/teleapo-チャイナハウス古丹/point2.jpg",
+      "/restaurants/teleapo-チャイナハウス古丹/point3.jpg"
+    ],
+    "desc": "新潟県五泉市宮野下は、村松公園のほど近くに位置する住宅地である。チャイナハウス古丹は、この地で自家製麺と手づくりにこだわるラーメン・中華料理店として営業している。",
+    "address": "新潟県五泉市宮野下6026",
+    "hours": "月・水〜日 11:00–15:00, 17:00–20:00",
+    "closed": "火曜日",
+    "seats": "—（訪問前に公式確認）",
+    "nearest": "—",
+    "phone": "0250-58-8287",
+    "source": {
+      "label": "Google ビジネスプロフィール",
+      "url": "https://maps.google.com/?cid=11367028634444309715"
+    },
+    "body": [
+      "チャイナハウス古丹は、新潟県五泉市にあるお店です。業態は「ラーメン屋」、所在地は新潟県五泉市宮野下6026です。マチノワ編集部の特集記事では、「手もみ自家製麺と煮干し出汁のスープ」・「3種の味噌と十数種類の調味料で仕立てた自家製タレ」などを取り上げています。",
+      "営業時間は月・水〜日 11:00–15:00, 17:00–20:00、定休日は火曜日です（Googleマップの営業時間による）。営業時間や価格は変わることがあるため、訪問前に公式サイトやSNS、お電話でご確認ください。"
+    ],
+    "highlights": [
+      "手もみ自家製麺と煮干し出汁のスープ",
+      "3種の味噌と十数種類の調味料で仕立てた自家製タレ",
+      "ラーメンから中華定食・餃子まで揃うメニュー構成"
+    ],
+    "tags": [
+      "ラーメン屋",
+      "五泉市",
+      "ランチ"
+    ],
+    "featureId": "チャイナハウス古丹"
+  },
+  {
+    "id": "r881",
+    "name": "ニュー藤駒",
+    "cuisine": "焼き鳥店",
+    "area": "岩手県・奥州市",
+    "region": "iwate",
+    "shape": "square",
+    "image": "/restaurants/teleapo-ニュー藤駒/hero.jpg",
+    "heroImages": [
+      "/restaurants/teleapo-ニュー藤駒/hero.jpg",
+      "/restaurants/teleapo-ニュー藤駒/point1.jpg",
+      "/restaurants/teleapo-ニュー藤駒/point2.jpg",
+      "/restaurants/teleapo-ニュー藤駒/point3.jpg",
+      "/restaurants/teleapo-ニュー藤駒/point4.jpg"
+    ],
+    "gallery": [
+      "/restaurants/teleapo-ニュー藤駒/hero.jpg",
+      "/restaurants/teleapo-ニュー藤駒/point1.jpg",
+      "/restaurants/teleapo-ニュー藤駒/point2.jpg",
+      "/restaurants/teleapo-ニュー藤駒/point3.jpg",
+      "/restaurants/teleapo-ニュー藤駒/point4.jpg"
+    ],
+    "desc": "岩手県奥州市の焼き鳥店。",
+    "address": "岩手県奥州市水沢寺小路2",
+    "hours": "月〜土 17:30–23:00",
+    "closed": "日曜日",
+    "seats": "カウンター8席",
+    "nearest": "—",
+    "phone": "0197-25-5188",
+    "source": {
+      "label": "Google ビジネスプロフィール",
+      "url": "https://maps.google.com/?cid=15108326067345415595"
+    },
+    "body": [
+      "ニュー藤駒は、岩手県奥州市にあるお店です。業態は「焼き鳥店」、所在地は岩手県奥州市水沢寺小路2です。マチノワ編集部の特集記事では、「特製の自家製タレで焼く串と、塩の選択」・「先代の孫も認める白みそのもつ煮込み」などを取り上げています。",
+      "営業時間は月〜土 17:30–23:00、定休日は日曜日です（Googleマップの営業時間による）。席はカウンター8席。営業時間や価格は変わることがあるため、訪問前に公式サイトやSNS、お電話でご確認ください。"
+    ],
+    "highlights": [
+      "特製の自家製タレで焼く串と、塩の選択",
+      "先代の孫も認める白みそのもつ煮込み",
+      "店主セレクトの日本酒と飲み物の組み合わせ",
+      "カウンター8席、一人でも女性でも使いやすい大衆の店"
+    ],
+    "tags": [
+      "焼き鳥店",
+      "奥州市"
+    ],
+    "featureId": "ニュー藤駒"
   }
 ];
 
@@ -21217,7 +21364,10 @@ export const ARTICLE_STORE_FEATURE_IDS: Record<string, string> = {
   "r875": "パン工房すわかりんの木",
   "r876": "イザカヤちりえーじょ",
   "r877": "酒処朧",
-  "r878": "SUNSET"
+  "r878": "SUNSET",
+  "r879": "石挽そばやわかばOyakicafeほうろくや",
+  "r880": "チャイナハウス古丹",
+  "r881": "ニュー藤駒"
 };
 
 /** 特集記事ID → 店舗ID */
@@ -21656,5 +21806,8 @@ export const ARTICLE_STORE_ID_BY_FEATURE: Record<string, string> = {
   "パン工房すわかりんの木": "r875",
   "イザカヤちりえーじょ": "r876",
   "酒処朧": "r877",
-  "SUNSET": "r878"
+  "SUNSET": "r878",
+  "石挽そばやわかばOyakicafeほうろくや": "r879",
+  "チャイナハウス古丹": "r880",
+  "ニュー藤駒": "r881"
 };

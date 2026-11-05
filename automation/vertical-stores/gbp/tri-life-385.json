@@ -1,0 +1,32 @@
+{
+  "tab": "トリニティアポ",
+  "tabEn": "tri-life",
+  "row": 385,
+  "sheet": {
+    "name": "恵運寺",
+    "address": "",
+    "url": "https://www.google.com/maps/search/?api=1&query=%E6%81%B5%E9%81%8B%E5%AF%BA%20073-424-7633%20%E3%80%92640-8137%20%E5%92%8C%E6%AD%8C%E5%B1%B1%E7%9C%8C%E5%92%8C%E6%AD%8C%E5%B1%B1%E5%B8%82%E5%90%B9%E4%B8%8A%EF%BC%93%E4%B8%81%E7%9B%AE%EF%BC%91%E2%88%92%EF%BC%96%EF%BC%96",
+    "type": "寺",
+    "d1": "",
+    "d2": ""
+  },
+  "urlKind": "mapsApi",
+  "route": "第1段(verify-gbp.mjs)で確認済み",
+  "verdict": "一致",
+  "verdictReason": "手がかり: 店名＋電話＋住所(番地まで)。電話が一致／店名: exact(シート「恵運寺」/ マップ「恵運寺」)／住所(シート): exact・町名・番地とも一致",
+  "place": {
+    "name": "恵運寺",
+    "address": "和歌山県和歌山市吹上３丁目１−６６",
+    "category": "仏教寺院",
+    "lat": 34.2193601,
+    "lng": 135.1716484,
+    "gbpUrl": "https://maps.google.com/?cid=18144504414785752101",
+    "phone": "073-424-7633",
+    "website": "https://www.eunji.info/",
+    "hours": null,
+    "reserveLinks": [],
+    "statusSignals": [],
+    "closedSignal": false
+  },
+  "fetchedAt": "2026-11-05T04:05:54.041Z"
+}

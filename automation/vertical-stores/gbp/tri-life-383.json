@@ -1,0 +1,40 @@
+{
+  "tab": "トリニティアポ",
+  "tabEn": "tri-life",
+  "row": 383,
+  "sheet": {
+    "name": "福勝寺",
+    "address": "",
+    "url": "https://www.google.com/maps/search/?api=1&query=%E7%A6%8F%E5%8B%9D%E5%AF%BA%20075-841-5818%20%E3%80%92602-8359%20%E4%BA%AC%E9%83%BD%E5%BA%9C%E4%BA%AC%E9%83%BD%E5%B8%82%E4%B8%8A%E4%BA%AC%E5%8C%BA%E4%B8%83%E7%95%AA%E7%94%BA%EF%BC%93%EF%BC%92%EF%BC%93%E2%88%92%EF%BC%91",
+    "type": "寺",
+    "d1": "",
+    "d2": ""
+  },
+  "urlKind": "mapsApi",
+  "route": "第1段(verify-gbp.mjs)で確認済み",
+  "verdict": "一致",
+  "verdictReason": "手がかり: 店名＋電話＋住所(番地まで)。電話が一致／店名: exact(シート「福勝寺」/ マップ「福勝寺」)／住所(シート): exact・町名・番地とも一致",
+  "place": {
+    "name": "福勝寺",
+    "address": "京都府京都市上京区七番町３２３−１",
+    "category": "仏教寺院",
+    "lat": 35.0216941,
+    "lng": 135.7413073,
+    "gbpUrl": "https://maps.google.com/?cid=17671340862876917997",
+    "phone": "075-841-5818",
+    "website": "https://fukushoji-kyoto.jp/",
+    "hours": {
+      "月": "08:30–16:30",
+      "火": "08:30–16:30",
+      "水": "08:30–16:30",
+      "木": "08:30–16:30",
+      "金": "08:30–16:30",
+      "土": "08:30–16:30",
+      "日": "08:30–16:30"
+    },
+    "reserveLinks": [],
+    "statusSignals": [],
+    "closedSignal": false
+  },
+  "fetchedAt": "2026-11-05T04:05:13.749Z"
+}
