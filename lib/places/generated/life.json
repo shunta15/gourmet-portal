@@ -25636,6 +25636,401 @@
         ],
         "checkedAt": "2026-11-06"
       }
+    },
+    {
+      "id": "li0170",
+      "vertical": "life",
+      "category": "shrine-temple",
+      "name": "泉秋寺",
+      "pref": "kanagawa",
+      "cityName": "藤沢市",
+      "address": "神奈川県藤沢市大庭5042-4",
+      "lat": 35.3543236,
+      "lng": 139.4426243,
+      "phone": "0466-87-3358",
+      "mapUrl": "https://maps.google.com/?cid=14057375949031667215",
+      "image": "/_portal/vshops/tri-life-392/g01.jpg",
+      "images": [
+        "/_portal/vshops/tri-life-392/g01.jpg",
+        "/_portal/vshops/tri-life-392/g02.jpg",
+        "/_portal/vshops/tri-life-392/g03.jpg",
+        "/_portal/vshops/tri-life-392/g04.jpg",
+        "/_portal/vshops/tri-life-392/g05.jpg",
+        "/_portal/vshops/tri-life-392/g06.jpg",
+        "/_portal/vshops/tri-life-392/g07.jpg",
+        "/_portal/vshops/tri-life-392/g08.jpg",
+        "/_portal/vshops/tri-life-392/g09.jpg",
+        "/_portal/vshops/tri-life-392/g10.jpg"
+      ],
+      "photos": [
+        {
+          "path": "/_portal/vshops/tri-life-392/g01.jpg",
+          "what": "木々に囲まれた本堂と整えられた庭園",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-life-392/g02.jpg",
+          "what": "石造りの観音像が立つ境内",
+          "kind": "exterior",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-life-392/g03.jpg",
+          "what": "石造りの階段と擁壁が続く参道",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 801
+        },
+        {
+          "path": "/_portal/vshops/tri-life-392/g04.jpg",
+          "what": "寺号が刻まれた石柱",
+          "kind": "exterior",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-life-392/g05.jpg",
+          "what": "境内に咲く桜と建物",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 675
+        },
+        {
+          "path": "/_portal/vshops/tri-life-392/g06.jpg",
+          "what": "藤の花と観音像が並ぶ境内",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-life-392/g07.jpg",
+          "what": "石段と墓地が広がる境内の奥",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-life-392/g08.jpg",
+          "what": "藤棚の下にベンチが置かれた境内の一角",
+          "kind": "common",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-life-392/g09.jpg",
+          "what": "桜の木と本堂が見える境内",
+          "kind": "exterior",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-life-392/g10.jpg",
+          "what": "寺号が書かれた扁額がかかる山門",
+          "kind": "exterior",
+          "width": 900,
+          "height": 1200
+        }
+      ],
+      "tags": [
+        "駐車場あり"
+      ],
+      "article": {
+        "headline": "藤沢市大庭に建つ、元和年間創建の曹洞宗寺院。山号は城光山。",
+        "lede": "藤沢市にある「泉秋寺」（せんしゅうじ）です。山号を城光山といい、元和年間（1615〜1624年）頃に快翁によって開山された曹洞宗の寺院です。かつては大庭城下にありましたが、地区開発にともなって現在地の大庭小糸に移転し、今日に至ります。本尊は聖観音で、通称「覆面観音」と呼ばれる独自の伝承をもつ仏像を安置しています。境内には駐車場が備わり、御朱印の対応も行っています。相模国準四国八十八箇所の第八十七番札所にもなっており、巡礼地としての側面も持ちます。",
+        "sections": [
+          {
+            "heading": "由緒・歴史",
+            "body": "泉秋寺は元和年間（1615〜1624年）頃、快翁によって開山されたとされる曹洞宗の寺院です。創建当初は大庭城下に位置していましたが、その後の地区開発により現在地である藤沢市大庭の小糸へと移転しました。山号「城光山」はかつての大庭城との関わりを今に伝えています。約400年の歴史を積み重ねてきた寺院であり、地域の信仰と供養の場として機能し続けています。"
+          },
+          {
+            "heading": "内容（商品・サービス・教え）",
+            "body": "本尊の聖観音は「覆面観音」の通称で知られています。門前を通る武士が落馬することがあったため、その威光を和らげるために顔を半分覆い隠しているという伝承があります。また、伝承では徳川家光の守り本尊であったとされます。像の総高は32.3センチメートルで、宋風の一木造・金色相、桃山時代ころの作とされています。御朱印の授与も行っており、相模国準四国八十八箇所の第八十七番札所として、巡礼者も参拝に訪れます。おみくじも体験できます。"
+          },
+          {
+            "heading": "設備・場所の特徴",
+            "body": "境内には駐車場が整備されており、約7台を駐車できます。トイレも備わっています。住宅地のなかに静かな境内が広がっており、石造りの参道と観音像が境内の趣を添えています。"
+          },
+          {
+            "heading": "行き方と使い方",
+            "body": "最寄り駅はJR東海道本線辻堂駅で、駅からは直線で約2.1キロメートルの距離にあります。バスを利用する場合は、神奈川中央交通の「西高校前」バス停が最寄りのバス停です。境内に駐車場（約7台）があるため、車での参拝も可能です。御朱印の授与については、事前に寺院へ電話で確認のうえ参拝することをお勧めします。"
+          }
+        ],
+        "sources": [
+          {
+            "label": "Weblio辞書",
+            "url": "https://www.weblio.jp/content/%E6%B3%89%E7%A7%8B%E5%AF%BA"
+          },
+          {
+            "label": "ホトカミ",
+            "url": "https://hotokami.jp/area/kanagawa/Hkyty/Hkytyty/Dprat/54573/"
+          },
+          {
+            "label": "Google マップ",
+            "url": "https://maps.google.com/?cid=14057375949031667215"
+          }
+        ],
+        "checkedAt": "2026-11-06"
+      }
+    },
+    {
+      "id": "li0171",
+      "vertical": "life",
+      "category": "car-repair",
+      "name": "横浜大興美装",
+      "pref": "kanagawa",
+      "cityName": "横浜市泉区",
+      "address": "神奈川県横浜市泉区上飯田町2890-73",
+      "lat": 35.4303085,
+      "lng": 139.4768954,
+      "phone": "080-3394-0051",
+      "url": "https://www.yokohamadaiko.com/daikobisou/",
+      "website": "https://www.yokohamadaiko.com/daikobisou/",
+      "mapUrl": "https://maps.google.com/?cid=15992377757523542489",
+      "image": "/_portal/vshops/tri-life-395/g01.jpg",
+      "images": [
+        "/_portal/vshops/tri-life-395/g01.jpg",
+        "/_portal/vshops/tri-life-395/g02.jpg",
+        "/_portal/vshops/tri-life-395/g03.jpg",
+        "/_portal/vshops/tri-life-395/g04.jpg",
+        "/_portal/vshops/tri-life-395/g05.jpg",
+        "/_portal/vshops/tri-life-395/g07.jpg",
+        "/_portal/vshops/tri-life-395/g08.jpg",
+        "/_portal/vshops/tri-life-395/g09.jpg",
+        "/_portal/vshops/tri-life-395/g10.jpg",
+        "/_portal/vshops/tri-life-395/s02.jpg",
+        "/_portal/vshops/tri-life-395/s03.jpg",
+        "/_portal/vshops/tri-life-395/s04.jpg",
+        "/_portal/vshops/tri-life-395/s05.jpg",
+        "/_portal/vshops/tri-life-395/s06.jpg",
+        "/_portal/vshops/tri-life-395/s07.jpg",
+        "/_portal/vshops/tri-life-395/s08.jpg",
+        "/_portal/vshops/tri-life-395/s14.jpg",
+        "/_portal/vshops/tri-life-395/s15.jpg",
+        "/_portal/vshops/tri-life-395/s16.jpg",
+        "/_portal/vshops/tri-life-395/s17.jpg",
+        "/_portal/vshops/tri-life-395/s18.jpg"
+      ],
+      "photos": [
+        {
+          "path": "/_portal/vshops/tri-life-395/g01.jpg",
+          "what": "養生シートをかけた施工中の建物外観",
+          "kind": "exterior",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-life-395/g02.jpg",
+          "what": "足場上で外壁を施工する作業員",
+          "kind": "exterior",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-life-395/g03.jpg",
+          "what": "足場が組まれた施工中の建物外観",
+          "kind": "exterior",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-life-395/g04.jpg",
+          "what": "外壁塗装の施工前後を並べた比較写真",
+          "kind": "exterior",
+          "width": 1024,
+          "height": 1024
+        },
+        {
+          "path": "/_portal/vshops/tri-life-395/g05.jpg",
+          "what": "道路沿いに足場を組んだ施工中の建物",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-life-395/g07.jpg",
+          "what": "外壁塗装が完了した戸建て住宅の外観",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 676
+        },
+        {
+          "path": "/_portal/vshops/tri-life-395/g08.jpg",
+          "what": "足場を組んで施工中の建物外観",
+          "kind": "exterior",
+          "width": 676,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-life-395/g09.jpg",
+          "what": "道路沿いで足場施工中の建物",
+          "kind": "exterior",
+          "width": 676,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-life-395/g10.jpg",
+          "what": "破風・軒天まわりの塗装仕上がりのクローズアップ",
+          "kind": "exterior",
+          "width": 676,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-life-395/s02.jpg",
+          "what": "外壁塗装の施工前後写真とサービス説明を並べた一覧",
+          "kind": "exterior",
+          "width": 1280,
+          "height": 853
+        },
+        {
+          "path": "/_portal/vshops/tri-life-395/s03.jpg",
+          "what": "外壁塗装の塗り替えイメージ・施工前後の比較",
+          "kind": "exterior",
+          "width": 1280,
+          "height": 853
+        },
+        {
+          "path": "/_portal/vshops/tri-life-395/s04.jpg",
+          "what": "屋根塗装の施工前後を並べた比較写真",
+          "kind": "exterior",
+          "width": 1280,
+          "height": 853
+        },
+        {
+          "path": "/_portal/vshops/tri-life-395/s05.jpg",
+          "what": "ベランダ防水工事の施工前後を並べた比較写真",
+          "kind": "exterior",
+          "width": 1280,
+          "height": 853
+        },
+        {
+          "path": "/_portal/vshops/tri-life-395/s06.jpg",
+          "what": "破風板塗装のビフォーアフター写真",
+          "kind": "exterior",
+          "width": 1280,
+          "height": 1024
+        },
+        {
+          "path": "/_portal/vshops/tri-life-395/s07.jpg",
+          "what": "木部アク洗いの施工前後を並べた比較写真",
+          "kind": "common",
+          "width": 1280,
+          "height": 853
+        },
+        {
+          "path": "/_portal/vshops/tri-life-395/s08.jpg",
+          "what": "内装リフォームの施工前後写真と説明",
+          "kind": "common",
+          "width": 1280,
+          "height": 853
+        },
+        {
+          "path": "/_portal/vshops/tri-life-395/s14.jpg",
+          "what": "施工事例・外壁塗装の仕上がりを示す複数写真",
+          "kind": "exterior",
+          "width": 1280,
+          "height": 853
+        },
+        {
+          "path": "/_portal/vshops/tri-life-395/s15.jpg",
+          "what": "施工事例の複数写真を並べたコラージュ",
+          "kind": "exterior",
+          "width": 1280,
+          "height": 853
+        },
+        {
+          "path": "/_portal/vshops/tri-life-395/s16.jpg",
+          "what": "和室の柱・建具まわりの木部内装",
+          "kind": "room",
+          "width": 1280,
+          "height": 853
+        },
+        {
+          "path": "/_portal/vshops/tri-life-395/s17.jpg",
+          "what": "アク洗い後の明るく整えた木部内装",
+          "kind": "room",
+          "width": 1280,
+          "height": 853
+        },
+        {
+          "path": "/_portal/vshops/tri-life-395/s18.jpg",
+          "what": "屋根塗装の施工事例・ビフォーアフター写真",
+          "kind": "exterior",
+          "width": 1280,
+          "height": 853
+        }
+      ],
+      "tags": [],
+      "article": {
+        "headline": "横浜市泉区を拠点に、1990年創業。外壁・屋根・木部まで対応する自社施工の塗装店。",
+        "lede": "横浜市泉区に拠点を置く「横浜大興美装」です。1990年の創業以来、30年以上にわたって横浜市内の住宅塗装・補修工事に携わってきた自社施工の塗装店で、外壁塗装・屋根塗装・防水工事・木部塗装・鉄部塗装・内装塗装まで幅広く対応しています。代表は平山 隆氏。泉区・瀬谷区・旭区・戸塚区を中心に、大和市・藤沢市・鎌倉市など神奈川県内各地へも対応エリアを広げています。現地調査・点検・お見積りはすべて無料で、建物の状態を写真とともに説明したうえで必要な工事のみを提案するスタイルをとっています。",
+        "sections": [
+          {
+            "heading": "内容（商品・サービス・教え）",
+            "body": "主な施工メニューは外壁塗装・塗り替え、屋根塗装、防水工事（ベランダ・屋上の雨漏り対策）、木部・鉄部塗装（破風・軒天・手すり・階段・門扉など）、内装塗装（壁・天井・ドア・建具・巾木）の5分野。外壁塗装は高圧洗浄・ひび割れ補修・下地調整・下塗り・中塗り・上塗り・最終点検・足場解体の12工程で進める。屋根はスレート系のカラーコロニアルやガルバリウム鋼板への張り替えにも対応し、カワラU屋根の劣化が進んだケースにも対応実績がある。内装塗装では、戸建て・マンション・アパートに加え店舗・事務所の室内空間にも施工できる。一部屋の壁・天井塗装は1〜2日程度が目安となっている。賃貸物件の退去前の原状回復工事にも対応している。"
+          },
+          {
+            "heading": "成り立ちと人",
+            "body": "1990年に創業し、以来30年以上横浜を中心に住宅の塗装・補修工事に携わってきた。代表の平山 隆氏は「ごまかさず、分かりやすく、責任を持つこと」を施工の基本姿勢として掲げる。現地調査から施工まで下請け業者に丸投げせず自社で対応する体制をとり、工事中も作業の進捗をその都度施主へ報告している。施工後も気になることがあれば連絡を受け付ける仕組みを設けており、地域密着の事業者として工事後のお付き合いも継続することを方針としている。建物状態を確認した結果、まだ塗り替えが不要と判断した場合はそのことも伝えるとしている。"
+          },
+          {
+            "heading": "設備・場所の特徴",
+            "body": "注目サービスとして、和室の柱・鴨居・敷居・窓枠・板の間といった木部に蓄積した汚れ・アク・黒ずみ・シミを、塗りつぶすのではなく洗浄・漂白で除去する「木部漂白・アク洗い・白木洗い」がある。南京張り板など伝統的な日本家屋の木部のアク抜き施工経験もある。木の種類・経年劣化・シミの深さ・過去の薬剤使用状況によって落ち方や仕上がりが異なるため、まず現地で状態を確認したうえで施工方法を説明するスタイルをとっている。写真でのご相談も受け付けている。自治体や工事内容によっては補助制度が利用できる可能性がある場合も、工事内容を確認しながら一緒に整理している。"
+          },
+          {
+            "heading": "行き方と使い方",
+            "body": "相談・見積りは電話（080-3394-0051）またはLINEで受け付けている。現地調査・点検・お見積りはすべて無料で、工事をするかどうかは点検後に判断できる。外壁塗装の一般的な戸建て住宅の工事期間は10日〜14日前後が目安で、屋根塗装のみの場合は5日〜7日程度が目安。工事中は施主が不在でも作業可能で、近隣への挨拶は施工前に行う。外壁と屋根を同時施工した場合は足場を共用できる。対応エリアは横浜市全域（泉区・瀬谷区・戸塚区・旭区・保土ケ谷区など）に加え、大和市・藤沢市・鎌倉市・海老名市・厚木市など神奈川県内各地。"
+          }
+        ],
+        "menus": [
+          {
+            "name": "外壁塗装・塗り替え"
+          },
+          {
+            "name": "屋根塗装"
+          },
+          {
+            "name": "防水工事・雨漏り対策"
+          },
+          {
+            "name": "木部・鉄部塗装"
+          },
+          {
+            "name": "木部漂白・アク洗い・白木洗い"
+          },
+          {
+            "name": "内装塗装・住宅リフォーム"
+          },
+          {
+            "name": "屋根張り替え工事"
+          }
+        ],
+        "sources": [
+          {
+            "label": "公式サイト（トップ）",
+            "url": "https://www.yokohamadaiko.com/daikobisou/"
+          },
+          {
+            "label": "公式サイト（外壁塗装）",
+            "url": "https://www.yokohamadaiko.com/daikobisou/gaiheki/"
+          },
+          {
+            "label": "公式サイト（屋根塗装）",
+            "url": "https://www.yokohamadaiko.com/daikobisou/yane/"
+          },
+          {
+            "label": "公式サイト（内装塗装）",
+            "url": "https://www.yokohamadaiko.com/daikobisou/naisou/"
+          },
+          {
+            "label": "Google マップ",
+            "url": "https://maps.google.com/?cid=15992377757523542489"
+          }
+        ],
+        "checkedAt": "2026-11-06"
+      }
     }
   ]
 }

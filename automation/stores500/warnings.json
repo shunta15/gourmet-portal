@@ -3440,5 +3440,66 @@
     "warnings": [
       "cuisine は GBPカテゴリ"
     ]
+  },
+  "r883": {
+    "articleId": "炭火焼肉バルTAISEI",
+    "name": "炭火焼肉バル TAISEI",
+    "warnings": [
+      "desc は lede から事実の文を選べず、事実から作った定型文",
+      "cuisine は GBPカテゴリ"
+    ]
+  },
+  "r884": {
+    "articleId": "創作イタリアンカフェTalpa(タルパ)",
+    "name": "創作イタリアン&カフェTalpa (タルパ)",
+    "warnings": [
+      "desc は lede から事実の文を選べず、事実から作った定型文",
+      "cuisine は GBPカテゴリ"
+    ]
+  },
+  "r885": {
+    "articleId": "かなゑ",
+    "name": "かなゑ",
+    "warnings": [
+      "desc は lede から事実の文を選べず、事実から作った定型文",
+      "cuisine は GBPカテゴリ"
+    ]
+  },
+  "r886": {
+    "articleId": "鉄板バル剛鉄",
+    "name": "鉄板バル 剛鉄",
+    "warnings": [
+      "cuisine は GBPカテゴリ"
+    ]
+  },
+  "r888": {
+    "articleId": "パン工房うたかの",
+    "name": "パン工房うたかの",
+    "warnings": [
+      "desc は lede から事実の文を選べず、事実から作った定型文",
+      "cuisine は GBPカテゴリ"
+    ]
+  },
+  "r887": {
+    "articleId": "かざはな",
+    "name": "かざはな",
+    "warnings": [
+      "desc は lede から事実の文を選べず、事実から作った定型文",
+      "cuisine は GBPカテゴリ"
+    ]
+  },
+  "r889": {
+    "articleId": "菓子ko-boモチフミ",
+    "name": "菓子ko-bo モチフミ",
+    "warnings": [
+      "cuisine は GBPカテゴリ"
+    ]
+  },
+  "r890": {
+    "articleId": "松阪豚専門店まつぶた",
+    "name": "松阪豚専門店まつぶた",
+    "warnings": [
+      "cuisine は GBPカテゴリ"
+    ]
   }
 }

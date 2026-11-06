@@ -1,0 +1,118 @@
+{
+  "commit": "4e509098622fe784db9b3ddb1237b68c27ffa53c",
+  "source": "/Users/shunta/claude/gp-k-auto2",
+  "count": 10,
+  "added": [
+    {
+      "row": 395,
+      "name": "炭火焼肉バル taisei",
+      "key": "lk-gourmet-395",
+      "vertical": "グルメ",
+      "id": "r883",
+      "articleId": "炭火焼肉バルTAISEI",
+      "shopUrl": "https://machinowa.tokyo/restaurant/r883",
+      "articleUrl": "https://machinowa.tokyo/feature/炭火焼肉バルTAISEI",
+      "sheetUrl": "https://machinowa.tokyo/feature/炭火焼肉バルTAISEI"
+    },
+    {
+      "row": 401,
+      "name": "創作イタリアン&カフェTalpa (タルパ)",
+      "key": "lk-gourmet-401",
+      "vertical": "グルメ",
+      "id": "r884",
+      "articleId": "創作イタリアンカフェTalpa(タルパ)",
+      "shopUrl": "https://machinowa.tokyo/restaurant/r884",
+      "articleUrl": "https://machinowa.tokyo/feature/創作イタリアンカフェTalpa(タルパ)",
+      "sheetUrl": "https://machinowa.tokyo/feature/創作イタリアンカフェTalpa(タルパ)"
+    },
+    {
+      "row": 402,
+      "name": "かなゑ",
+      "key": "lk-gourmet-402",
+      "vertical": "グルメ",
+      "id": "r885",
+      "articleId": "かなゑ",
+      "shopUrl": "https://machinowa.tokyo/restaurant/r885",
+      "articleUrl": "https://machinowa.tokyo/feature/かなゑ",
+      "sheetUrl": "https://machinowa.tokyo/feature/かなゑ"
+    },
+    {
+      "row": 403,
+      "name": "鉄板バル 剛鉄",
+      "key": "lk-gourmet-403",
+      "vertical": "グルメ",
+      "id": "r886",
+      "articleId": "鉄板バル剛鉄",
+      "shopUrl": "https://machinowa.tokyo/restaurant/r886",
+      "articleUrl": "https://machinowa.tokyo/feature/鉄板バル剛鉄",
+      "sheetUrl": "https://machinowa.tokyo/feature/鉄板バル剛鉄"
+    },
+    {
+      "row": 388,
+      "name": "パン工房うたかの",
+      "key": "tri-gourmet-388",
+      "vertical": "グルメ",
+      "id": "r888",
+      "articleId": "パン工房うたかの",
+      "shopUrl": "https://machinowa.tokyo/restaurant/r888",
+      "articleUrl": "https://machinowa.tokyo/feature/パン工房うたかの",
+      "sheetUrl": "https://machinowa.tokyo/feature/パン工房うたかの"
+    },
+    {
+      "row": 405,
+      "name": "かざはな",
+      "key": "lk-gourmet-405",
+      "vertical": "グルメ",
+      "id": "r887",
+      "articleId": "かざはな",
+      "shopUrl": "https://machinowa.tokyo/restaurant/r887",
+      "articleUrl": "https://machinowa.tokyo/feature/かざはな",
+      "sheetUrl": "https://machinowa.tokyo/feature/かざはな"
+    },
+    {
+      "row": 392,
+      "name": "泉秋寺",
+      "key": "tri-life-392",
+      "vertical": "くらし",
+      "id": "li0170",
+      "articleId": "li0170",
+      "shopUrl": "https://machinowa.tokyo/life/shop/li0170",
+      "articleUrl": "https://machinowa.tokyo/life/article/li0170",
+      "sheetUrl": "https://machinowa.tokyo/life/article/li0170"
+    },
+    {
+      "row": 393,
+      "name": "菓子ko-bo モチフミ",
+      "key": "tri-gourmet-393",
+      "vertical": "グルメ",
+      "id": "r889",
+      "articleId": "菓子ko-boモチフミ",
+      "shopUrl": "https://machinowa.tokyo/restaurant/r889",
+      "articleUrl": "https://machinowa.tokyo/feature/菓子ko-boモチフミ",
+      "sheetUrl": "https://machinowa.tokyo/feature/菓子ko-boモチフミ"
+    },
+    {
+      "row": 395,
+      "name": "ゴミ片付け隊 ダイコー",
+      "key": "tri-life-395",
+      "vertical": "くらし",
+      "id": "li0171",
+      "articleId": "li0171",
+      "shopUrl": "https://machinowa.tokyo/life/shop/li0171",
+      "articleUrl": "https://machinowa.tokyo/life/article/li0171",
+      "sheetUrl": "https://machinowa.tokyo/life/article/li0171"
+    },
+    {
+      "row": 397,
+      "name": "MB デリカテッセン＆ダイナー",
+      "key": "tri-gourmet-397",
+      "vertical": "グルメ",
+      "id": "r890",
+      "articleId": "松阪豚専門店まつぶた",
+      "shopUrl": "https://machinowa.tokyo/restaurant/r890",
+      "articleUrl": "https://machinowa.tokyo/feature/松阪豚専門店まつぶた",
+      "sheetUrl": "https://machinowa.tokyo/feature/松阪豚専門店まつぶた"
+    }
+  ],
+  "skipped": []
+}
