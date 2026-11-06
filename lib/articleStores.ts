@@ -21714,6 +21714,394 @@ export const ARTICLE_STORES: Restaurant[] = [
       "ランチ"
     ],
     "featureId": "フールアボワ"
+  },
+  {
+    "id": "r898",
+    "name": "美味館 滝の水店",
+    "cuisine": "台湾料理店",
+    "area": "愛知県・名古屋市緑区",
+    "region": "nagoya",
+    "shape": "square",
+    "image": "/restaurants/teleapo-美味館滝の水店/hero.jpg",
+    "heroImages": [
+      "/restaurants/teleapo-美味館滝の水店/hero.jpg",
+      "/restaurants/teleapo-美味館滝の水店/point1.jpg",
+      "/restaurants/teleapo-美味館滝の水店/point2.jpg",
+      "/restaurants/teleapo-美味館滝の水店/point3.jpg"
+    ],
+    "gallery": [
+      "/restaurants/teleapo-美味館滝の水店/hero.jpg",
+      "/restaurants/teleapo-美味館滝の水店/point1.jpg",
+      "/restaurants/teleapo-美味館滝の水店/point2.jpg",
+      "/restaurants/teleapo-美味館滝の水店/point3.jpg"
+    ],
+    "desc": "愛知県名古屋市緑区の台湾料理店。",
+    "address": "愛知県名古屋市緑区上旭1丁目608-102",
+    "hours": "毎日 11:00–14:00, 17:00–23:00",
+    "closed": "なし（Googleマップの営業時間による）",
+    "seats": "60席",
+    "nearest": "—",
+    "phone": "052-895-0736",
+    "source": {
+      "label": "Google ビジネスプロフィール",
+      "url": "https://maps.google.com/?cid=10993478477821350429"
+    },
+    "body": [
+      "美味館 滝の水店は、愛知県名古屋市緑区にあるお店です。業態は「台湾料理店」、所在地は愛知県名古屋市緑区上旭1丁目608-102です。マチノワ編集部の特集記事では、「看板の台湾ラーメンと、焼き餃子・水餃子」・「ランチのセットメニューと日替わりランチ」などを取り上げています。",
+      "営業時間は毎日 11:00–14:00, 17:00–23:00で、定休日はありません（Googleマップの営業時間による）。席は60席。営業時間や価格は変わることがあるため、訪問前に公式サイトやSNS、お電話でご確認ください。"
+    ],
+    "highlights": [
+      "看板の台湾ラーメンと、焼き餃子・水餃子",
+      "ランチのセットメニューと日替わりランチ",
+      "60席のフロアと夜の飲み放題プラン"
+    ],
+    "tags": [
+      "台湾料理店",
+      "緑区",
+      "ランチ"
+    ],
+    "featureId": "美味館滝の水店"
+  },
+  {
+    "id": "r899",
+    "name": "メキシカンダイニング Gracinitas",
+    "cuisine": "メキシコ料理店",
+    "area": "大阪府・大阪市東住吉区",
+    "region": "osaka",
+    "shape": "square",
+    "image": "/restaurants/teleapo-メキシカンダイニングGracinitas/hero.jpg",
+    "heroImages": [
+      "/restaurants/teleapo-メキシカンダイニングGracinitas/hero.jpg",
+      "/restaurants/teleapo-メキシカンダイニングGracinitas/point1.jpg",
+      "/restaurants/teleapo-メキシカンダイニングGracinitas/point2.jpg",
+      "/restaurants/teleapo-メキシカンダイニングGracinitas/point3.jpg",
+      "/restaurants/teleapo-メキシカンダイニングGracinitas/point4.jpg"
+    ],
+    "gallery": [
+      "/restaurants/teleapo-メキシカンダイニングGracinitas/hero.jpg",
+      "/restaurants/teleapo-メキシカンダイニングGracinitas/point1.jpg",
+      "/restaurants/teleapo-メキシカンダイニングGracinitas/point2.jpg",
+      "/restaurants/teleapo-メキシカンダイニングGracinitas/point3.jpg",
+      "/restaurants/teleapo-メキシカンダイニングGracinitas/point4.jpg"
+    ],
+    "desc": "大阪府大阪市東住吉区のメキシコ料理店。",
+    "address": "大阪府大阪市東住吉区東田辺1丁目19-10 駒川ビル 1階",
+    "hours": "火〜土 17:00–00:00 / 日 11:00–15:00, 17:00–00:00",
+    "closed": "月曜日",
+    "seats": "20席（カウンター4席・テーブル4卓）",
+    "nearest": "—",
+    "phone": "06-6625-8722",
+    "source": {
+      "label": "Google ビジネスプロフィール",
+      "url": "https://maps.google.com/?cid=8827597040991691272"
+    },
+    "body": [
+      "メキシカンダイニング Gracinitasは、大阪府大阪市東住吉区にあるお店です。業態は「メキシコ料理店」、所在地は大阪府大阪市東住吉区東田辺1丁目19-10 駒川ビル 1階です。マチノワ編集部の特集記事では、「豚バラを6〜7時間煮込むカルニタスタコス」・「20種類以上のテキーラとメスカル」などを取り上げています。",
+      "営業時間は火〜土 17:00–00:00 / 日 11:00–15:00, 17:00–00:00、定休日は月曜日です（Googleマップの営業時間による）。席は20席（カウンター4席・テーブル4卓）。営業時間や価格は変わることがあるため、訪問前に公式サイトやSNS、お電話でご確認ください。"
+    ],
+    "highlights": [
+      "豚バラを6〜7時間煮込むカルニタスタコス",
+      "20種類以上のテキーラとメスカル",
+      "マスカルポーネ入りの手作りフランとデザート",
+      "カウンター4席と掘りごたつのテーブル席、全席禁煙"
+    ],
+    "tags": [
+      "メキシコ料理店",
+      "東住吉区",
+      "ランチ",
+      "深夜営業"
+    ],
+    "featureId": "メキシカンダイニングGracinitas"
+  },
+  {
+    "id": "r900",
+    "name": "TT\" a Little Knowledge Store",
+    "cuisine": "レストラン",
+    "area": "愛知県・名古屋市千種区",
+    "region": "nagoya",
+    "shape": "square",
+    "image": "/restaurants/teleapo-TTaLittleKnowledgeStore/hero.jpg",
+    "heroImages": [
+      "/restaurants/teleapo-TTaLittleKnowledgeStore/hero.jpg",
+      "/restaurants/teleapo-TTaLittleKnowledgeStore/point1.jpg",
+      "/restaurants/teleapo-TTaLittleKnowledgeStore/point2.jpg",
+      "/restaurants/teleapo-TTaLittleKnowledgeStore/point3.jpg",
+      "/restaurants/teleapo-TTaLittleKnowledgeStore/point4.jpg"
+    ],
+    "gallery": [
+      "/restaurants/teleapo-TTaLittleKnowledgeStore/hero.jpg",
+      "/restaurants/teleapo-TTaLittleKnowledgeStore/point1.jpg",
+      "/restaurants/teleapo-TTaLittleKnowledgeStore/point2.jpg",
+      "/restaurants/teleapo-TTaLittleKnowledgeStore/point3.jpg",
+      "/restaurants/teleapo-TTaLittleKnowledgeStore/point4.jpg"
+    ],
+    "desc": "愛知県名古屋市千種区のレストラン。",
+    "address": "愛知県名古屋市千種区星が丘元町16-50 星が丘テラス EAST4F",
+    "hours": "毎日 11:00–22:00",
+    "closed": "なし（Googleマップの営業時間による）",
+    "seats": "—（訪問前に公式確認）",
+    "nearest": "—",
+    "phone": "052-753-5147",
+    "source": {
+      "label": "Google ビジネスプロフィール",
+      "url": "https://maps.google.com/?cid=14495350286288730602"
+    },
+    "body": [
+      "TT\" a Little Knowledge Storeは、愛知県名古屋市千種区にあるお店です。業態は「レストラン」、所在地は愛知県名古屋市千種区星が丘元町16-50 星が丘テラス EAST4Fです。マチノワ編集部の特集記事では、「管理栄養士とフードスタイリストが組む料理」・「野菜たっぷりの定食・カレーと夜の一汁五菜コース」などを取り上げています。",
+      "営業時間は毎日 11:00–22:00で、定休日はありません（Googleマップの営業時間による）。営業時間や価格は変わることがあるため、訪問前に公式サイトやSNS、お電話でご確認ください。"
+    ],
+    "highlights": [
+      "管理栄養士とフードスタイリストが組む料理",
+      "野菜たっぷりの定食・カレーと夜の一汁五菜コース",
+      "農家と自社農園を軸にした素材の仕入れ",
+      "高天井の開放的な空間とイベント・ケータリング対応"
+    ],
+    "tags": [
+      "レストラン",
+      "千種区",
+      "ランチ"
+    ],
+    "featureId": "TTaLittleKnowledgeStore"
+  },
+  {
+    "id": "r901",
+    "name": "Shaka Shaka",
+    "cuisine": "ライブ会場",
+    "area": "愛媛県・新居浜市",
+    "region": "ehime",
+    "shape": "square",
+    "image": "/restaurants/teleapo-ShakaShaka/hero.jpg",
+    "heroImages": [
+      "/restaurants/teleapo-ShakaShaka/hero.jpg",
+      "/restaurants/teleapo-ShakaShaka/point1.jpg",
+      "/restaurants/teleapo-ShakaShaka/point2.jpg"
+    ],
+    "gallery": [
+      "/restaurants/teleapo-ShakaShaka/hero.jpg",
+      "/restaurants/teleapo-ShakaShaka/point1.jpg",
+      "/restaurants/teleapo-ShakaShaka/point2.jpg"
+    ],
+    "desc": "愛媛県新居浜市のライブ会場。",
+    "address": "愛媛県新居浜市徳常町5-47 サンシャインビル 1階",
+    "hours": "月〜土 16:00–01:00",
+    "closed": "日曜日",
+    "seats": "—（訪問前に公式確認）",
+    "nearest": "—",
+    "phone": "070-2002-6061",
+    "source": {
+      "label": "Google ビジネスプロフィール",
+      "url": "https://maps.google.com/?cid=15828328397874271317"
+    },
+    "body": [
+      "Shaka Shakaは、愛媛県新居浜市にあるお店です。業態は「ライブ会場」、所在地は愛媛県新居浜市徳常町5-47 サンシャインビル 1階です。マチノワ編集部の特集記事では、「ステージを備えた店内とライブイベント」・「カウンター席、テーブル席、ソファ席と持ち込み可の空間」などを取り上げています。",
+      "営業時間は月〜土 16:00–01:00、定休日は日曜日です（Googleマップの営業時間による）。営業時間や価格は変わることがあるため、訪問前に公式サイトやSNS、お電話でご確認ください。"
+    ],
+    "highlights": [
+      "ステージを備えた店内とライブイベント",
+      "カウンター席、テーブル席、ソファ席と持ち込み可の空間",
+      "パスタ・カレー・おつまみのフードとビールからワインまでのドリンク"
+    ],
+    "tags": [
+      "ライブ会場",
+      "新居浜市",
+      "深夜営業"
+    ],
+    "featureId": "ShakaShaka"
+  },
+  {
+    "id": "r902",
+    "name": "一一 かずいち",
+    "cuisine": "純和食店",
+    "area": "東京都・港区",
+    "region": "tokyo",
+    "shape": "square",
+    "image": "/restaurants/teleapo-一一かずいち/hero.jpg",
+    "heroImages": [
+      "/restaurants/teleapo-一一かずいち/hero.jpg",
+      "/restaurants/teleapo-一一かずいち/point1.jpg",
+      "/restaurants/teleapo-一一かずいち/point2.jpg",
+      "/restaurants/teleapo-一一かずいち/point3.jpg",
+      "/restaurants/teleapo-一一かずいち/point4.jpg"
+    ],
+    "gallery": [
+      "/restaurants/teleapo-一一かずいち/hero.jpg",
+      "/restaurants/teleapo-一一かずいち/point1.jpg",
+      "/restaurants/teleapo-一一かずいち/point2.jpg",
+      "/restaurants/teleapo-一一かずいち/point3.jpg",
+      "/restaurants/teleapo-一一かずいち/point4.jpg"
+    ],
+    "desc": "東京都港区の純和食店。",
+    "address": "東京都港区西新橋1丁目11-6 IT1ビル 1階",
+    "hours": "月〜金 11:30–13:30, 17:30–23:00",
+    "closed": "土曜・日曜",
+    "seats": "—（訪問前に公式確認）",
+    "nearest": "—",
+    "phone": "03-6206-6826",
+    "source": {
+      "label": "Google ビジネスプロフィール",
+      "url": "https://maps.google.com/?cid=12707469343351323901"
+    },
+    "body": [
+      "一一 かずいちは、東京都港区にあるお店です。業態は「純和食店」、所在地は東京都港区西新橋1丁目11-6 IT1ビル 1階です。マチノワ編集部の特集記事では、「愛媛・宇和島産の真鯛を使った活締め鯛茶漬け」・「仙台牛もも肉のローストビーフと稲庭素麺の御膳」などを取り上げています。",
+      "営業時間は月〜金 11:30–13:30, 17:30–23:00、定休日は土曜・日曜です（Googleマップの営業時間による）。営業時間や価格は変わることがあるため、訪問前に公式サイトやSNS、お電話でご確認ください。"
+    ],
+    "highlights": [
+      "愛媛・宇和島産の真鯛を使った活締め鯛茶漬け",
+      "仙台牛もも肉のローストビーフと稲庭素麺の御膳",
+      "9品構成の柚コース、すっぽん・ふぐ・葵の特別コース",
+      "カウンター6席と奥の個室、10名強の小さな割烹"
+    ],
+    "tags": [
+      "純和食店",
+      "港区",
+      "ランチ"
+    ],
+    "featureId": "一一かずいち"
+  },
+  {
+    "id": "r903",
+    "name": "BAR BEARS",
+    "cuisine": "バー",
+    "area": "大阪府・枚方市",
+    "region": "osaka",
+    "shape": "square",
+    "image": "/restaurants/teleapo-BARBEARS/hero.jpg",
+    "heroImages": [
+      "/restaurants/teleapo-BARBEARS/hero.jpg",
+      "/restaurants/teleapo-BARBEARS/point1.jpg",
+      "/restaurants/teleapo-BARBEARS/point2.jpg",
+      "/restaurants/teleapo-BARBEARS/point3.jpg"
+    ],
+    "gallery": [
+      "/restaurants/teleapo-BARBEARS/hero.jpg",
+      "/restaurants/teleapo-BARBEARS/point1.jpg",
+      "/restaurants/teleapo-BARBEARS/point2.jpg",
+      "/restaurants/teleapo-BARBEARS/point3.jpg"
+    ],
+    "desc": "大阪府枚方市のバー。",
+    "address": "大阪府枚方市上島町8-12 Kプラザ 4F401",
+    "hours": "月〜木 22:00–03:00 / 金・土 22:00–05:00",
+    "closed": "日曜日",
+    "seats": "10席",
+    "nearest": "—",
+    "phone": "090-8657-7580",
+    "source": {
+      "label": "Google ビジネスプロフィール",
+      "url": "https://maps.google.com/?cid=4384246566703790636"
+    },
+    "body": [
+      "BAR BEARSは、大阪府枚方市にあるお店です。業態は「バー」、所在地は大阪府枚方市上島町8-12 Kプラザ 4F401です。マチノワ編集部の特集記事では、「カラオケ完備の深夜バー」・「国産・海外産ウイスキーの幅広いラインナップ」などを取り上げています。",
+      "営業時間は月〜木 22:00–03:00 / 金・土 22:00–05:00、定休日は日曜日です（Googleマップの営業時間による）。席は10席。営業時間や価格は変わることがあるため、訪問前に公式サイトやSNS、お電話でご確認ください。"
+    ],
+    "highlights": [
+      "カラオケ完備の深夜バー",
+      "国産・海外産ウイスキーの幅広いラインナップ",
+      "カクテル・ジン・シャンパンと多彩なドリンク"
+    ],
+    "tags": [
+      "バー",
+      "枚方市",
+      "貸切可",
+      "深夜営業"
+    ],
+    "featureId": "BARBEARS"
+  },
+  {
+    "id": "r904",
+    "name": "さなえ食堂",
+    "cuisine": "カレー店",
+    "area": "岐阜県・岐阜市",
+    "region": "gifu",
+    "shape": "square",
+    "image": "/restaurants/teleapo-さなえ食堂/hero.jpg",
+    "heroImages": [
+      "/restaurants/teleapo-さなえ食堂/hero.jpg",
+      "/restaurants/teleapo-さなえ食堂/point1.jpg",
+      "/restaurants/teleapo-さなえ食堂/point2.jpg",
+      "/restaurants/teleapo-さなえ食堂/point3.jpg",
+      "/restaurants/teleapo-さなえ食堂/point4.jpg"
+    ],
+    "gallery": [
+      "/restaurants/teleapo-さなえ食堂/hero.jpg",
+      "/restaurants/teleapo-さなえ食堂/point1.jpg",
+      "/restaurants/teleapo-さなえ食堂/point2.jpg",
+      "/restaurants/teleapo-さなえ食堂/point3.jpg",
+      "/restaurants/teleapo-さなえ食堂/point4.jpg"
+    ],
+    "desc": "岐阜県岐阜市のカレー店。",
+    "address": "岐阜県岐阜市美殿町49",
+    "hours": "月〜水・金・土 11:00–17:00 / 日 11:00–16:00",
+    "closed": "木曜日",
+    "seats": "6席（カウンターのみ）",
+    "nearest": "—",
+    "phone": "080-2661-6255",
+    "source": {
+      "label": "Google ビジネスプロフィール",
+      "url": "https://maps.google.com/?cid=10862020182984484376"
+    },
+    "body": [
+      "さなえ食堂は、岐阜県岐阜市にあるお店です。業態は「カレー店」、所在地は岐阜県岐阜市美殿町49です。マチノワ編集部の特集記事では、「金華山カレー——岐阜の地形を皿に描いた看板料理」・「9種類のスパイスと岐阜産米——素材と作り方」などを取り上げています。",
+      "営業時間は月〜水・金・土 11:00–17:00 / 日 11:00–16:00、定休日は木曜日です（Googleマップの営業時間による）。席は6席（カウンターのみ）。営業時間や価格は変わることがあるため、訪問前に公式サイトやSNS、お電話でご確認ください。"
+    ],
+    "highlights": [
+      "金華山カレー——岐阜の地形を皿に描いた看板料理",
+      "9種類のスパイスと岐阜産米——素材と作り方",
+      "サラマンドルからヴォルケーノまで——メニューの組み立て",
+      "3.3坪の店内と夫婦二人の営業"
+    ],
+    "tags": [
+      "カレー店",
+      "岐阜市",
+      "ランチ"
+    ],
+    "featureId": "さなえ食堂"
+  },
+  {
+    "id": "r905",
+    "name": "コルテージュ",
+    "cuisine": "カフェ・喫茶",
+    "area": "山梨県・富士吉田市",
+    "region": "yamanashi",
+    "shape": "square",
+    "image": "/restaurants/teleapo-コルテージュ/hero.jpg",
+    "heroImages": [
+      "/restaurants/teleapo-コルテージュ/hero.jpg",
+      "/restaurants/teleapo-コルテージュ/point1.jpg",
+      "/restaurants/teleapo-コルテージュ/point2.jpg",
+      "/restaurants/teleapo-コルテージュ/point3.jpg"
+    ],
+    "gallery": [
+      "/restaurants/teleapo-コルテージュ/hero.jpg",
+      "/restaurants/teleapo-コルテージュ/point1.jpg",
+      "/restaurants/teleapo-コルテージュ/point2.jpg",
+      "/restaurants/teleapo-コルテージュ/point3.jpg"
+    ],
+    "desc": "富士吉田市旭は、かつて織物産業が盛んだった富士吉田の市街地に位置する。コルテージュは、その地にあった織物工場を改装して作られたカフェ兼婦人服ショップである。",
+    "address": "山梨県富士吉田市旭3丁目3-1",
+    "hours": "月・火・金〜日 12:00–18:00",
+    "closed": "水曜・木曜",
+    "seats": "26席（テーブル席20席・カウンター席6席）",
+    "nearest": "—",
+    "phone": "090-8872-4007",
+    "source": {
+      "label": "Google ビジネスプロフィール",
+      "url": "https://maps.google.com/?cid=2357419052693193659"
+    },
+    "body": [
+      "コルテージュは、山梨県富士吉田市にあるお店です。業態は「カフェ・喫茶」、所在地は山梨県富士吉田市旭3丁目3-1です。マチノワ編集部の特集記事では、「サンドイッチとパスタを中心にしたランチメニュー」・「コーヒーの香りが立ち込める木のぬくもりの店内」などを取り上げています。",
+      "営業時間は月・火・金〜日 12:00–18:00、定休日は水曜・木曜です（Googleマップの営業時間による）。席は26席（テーブル席20席・カウンター席6席）。営業時間や価格は変わることがあるため、訪問前に公式サイトやSNS、お電話でご確認ください。"
+    ],
+    "highlights": [
+      "サンドイッチとパスタを中心にしたランチメニュー",
+      "コーヒーの香りが立ち込める木のぬくもりの店内",
+      "カフェと婦人服ショップが一体になった複合の場"
+    ],
+    "tags": [
+      "カフェ・喫茶",
+      "富士吉田市",
+      "ランチ"
+    ],
+    "featureId": "コルテージュ"
   }
 ];
 
@@ -22172,7 +22560,15 @@ export const ARTICLE_STORE_FEATURE_IDS: Record<string, string> = {
   "r894": "cafevinoBLANCO",
   "r895": "アンシャーリーハウス",
   "r896": "サニーハウス",
-  "r897": "フールアボワ"
+  "r897": "フールアボワ",
+  "r898": "美味館滝の水店",
+  "r899": "メキシカンダイニングGracinitas",
+  "r900": "TTaLittleKnowledgeStore",
+  "r901": "ShakaShaka",
+  "r902": "一一かずいち",
+  "r903": "BARBEARS",
+  "r904": "さなえ食堂",
+  "r905": "コルテージュ"
 };
 
 /** 特集記事ID → 店舗ID */
@@ -22630,5 +23026,13 @@ export const ARTICLE_STORE_ID_BY_FEATURE: Record<string, string> = {
   "cafevinoBLANCO": "r894",
   "アンシャーリーハウス": "r895",
   "サニーハウス": "r896",
-  "フールアボワ": "r897"
+  "フールアボワ": "r897",
+  "美味館滝の水店": "r898",
+  "メキシカンダイニングGracinitas": "r899",
+  "TTaLittleKnowledgeStore": "r900",
+  "ShakaShaka": "r901",
+  "一一かずいち": "r902",
+  "BARBEARS": "r903",
+  "さなえ食堂": "r904",
+  "コルテージュ": "r905"
 };

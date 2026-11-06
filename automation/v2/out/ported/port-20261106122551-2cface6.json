@@ -1,0 +1,118 @@
+{
+  "commit": "2cface61e4c1b03451067c8fe1471164444852f1",
+  "source": "/Users/shunta/claude/gp-k-auto2",
+  "count": 10,
+  "added": [
+    {
+      "row": 419,
+      "name": "美味館滝の水店",
+      "key": "tri-gourmet-419",
+      "vertical": "グルメ",
+      "id": "r898",
+      "articleId": "美味館滝の水店",
+      "shopUrl": "https://machinowa.tokyo/restaurant/r898",
+      "articleUrl": "https://machinowa.tokyo/feature/美味館滝の水店",
+      "sheetUrl": "https://machinowa.tokyo/feature/美味館滝の水店"
+    },
+    {
+      "row": 420,
+      "name": "メキシカンダイニングGracinitas",
+      "key": "tri-gourmet-420",
+      "vertical": "グルメ",
+      "id": "r899",
+      "articleId": "メキシカンダイニングGracinitas",
+      "shopUrl": "https://machinowa.tokyo/restaurant/r899",
+      "articleUrl": "https://machinowa.tokyo/feature/メキシカンダイニングGracinitas",
+      "sheetUrl": "https://machinowa.tokyo/feature/メキシカンダイニングGracinitas"
+    },
+    {
+      "row": 421,
+      "name": "TT”aLittleKnowledgeStore",
+      "key": "tri-gourmet-421",
+      "vertical": "グルメ",
+      "id": "r900",
+      "articleId": "TTaLittleKnowledgeStore",
+      "shopUrl": "https://machinowa.tokyo/restaurant/r900",
+      "articleUrl": "https://machinowa.tokyo/feature/TTaLittleKnowledgeStore",
+      "sheetUrl": "https://machinowa.tokyo/feature/TTaLittleKnowledgeStore"
+    },
+    {
+      "row": 422,
+      "name": "Shaka Shaka",
+      "key": "tri-gourmet-422",
+      "vertical": "グルメ",
+      "id": "r901",
+      "articleId": "ShakaShaka",
+      "shopUrl": "https://machinowa.tokyo/restaurant/r901",
+      "articleUrl": "https://machinowa.tokyo/feature/ShakaShaka",
+      "sheetUrl": "https://machinowa.tokyo/feature/ShakaShaka"
+    },
+    {
+      "row": 424,
+      "name": "一一 かずいち",
+      "key": "tri-gourmet-424",
+      "vertical": "グルメ",
+      "id": "r902",
+      "articleId": "一一かずいち",
+      "shopUrl": "https://machinowa.tokyo/restaurant/r902",
+      "articleUrl": "https://machinowa.tokyo/feature/一一かずいち",
+      "sheetUrl": "https://machinowa.tokyo/feature/一一かずいち"
+    },
+    {
+      "row": 425,
+      "name": "フットケアカルム",
+      "key": "tri-beauty-425",
+      "vertical": "ビューティー",
+      "id": "be0114",
+      "articleId": null,
+      "shopUrl": "https://machinowa.tokyo/beauty/shop/be0114",
+      "articleUrl": null,
+      "sheetUrl": "https://machinowa.tokyo/beauty/shop/be0114"
+    },
+    {
+      "row": 427,
+      "name": "BAR BEARS",
+      "key": "tri-gourmet-427",
+      "vertical": "グルメ",
+      "id": "r903",
+      "articleId": "BARBEARS",
+      "shopUrl": "https://machinowa.tokyo/restaurant/r903",
+      "articleUrl": "https://machinowa.tokyo/feature/BARBEARS",
+      "sheetUrl": "https://machinowa.tokyo/feature/BARBEARS"
+    },
+    {
+      "row": 428,
+      "name": "さなえ食堂",
+      "key": "tri-gourmet-428",
+      "vertical": "グルメ",
+      "id": "r904",
+      "articleId": "さなえ食堂",
+      "shopUrl": "https://machinowa.tokyo/restaurant/r904",
+      "articleUrl": "https://machinowa.tokyo/feature/さなえ食堂",
+      "sheetUrl": "https://machinowa.tokyo/feature/さなえ食堂"
+    },
+    {
+      "row": 429,
+      "name": "ヒマラヤンSweet Cat Room",
+      "key": "tri-life-429",
+      "vertical": "くらし",
+      "id": "li0179",
+      "articleId": "li0179",
+      "shopUrl": "https://machinowa.tokyo/life/shop/li0179",
+      "articleUrl": "https://machinowa.tokyo/life/article/li0179",
+      "sheetUrl": "https://machinowa.tokyo/life/article/li0179"
+    },
+    {
+      "row": 430,
+      "name": "コルテージュ",
+      "key": "tri-gourmet-430",
+      "vertical": "グルメ",
+      "id": "r905",
+      "articleId": "コルテージュ",
+      "shopUrl": "https://machinowa.tokyo/restaurant/r905",
+      "articleUrl": "https://machinowa.tokyo/feature/コルテージュ",
+      "sheetUrl": "https://machinowa.tokyo/feature/コルテージュ"
+    }
+  ],
+  "skipped": []
+}

@@ -1,0 +1,40 @@
+{
+  "tab": "トリニティアポ",
+  "tabEn": "tri-beauty",
+  "row": 425,
+  "sheet": {
+    "name": "フットケアカルム",
+    "address": "",
+    "url": "https://www.google.com/maps/search/?api=1&query=%E3%83%95%E3%83%83%E3%83%88%E3%82%B1%E3%82%A2%E3%82%AB%E3%83%AB%E3%83%A0%20090-2095-9820%20",
+    "type": "美容",
+    "d1": "",
+    "d2": ""
+  },
+  "urlKind": "mapsApi",
+  "route": "第1段(verify-gbp.mjs)で確認済み",
+  "verdict": "一致",
+  "verdictReason": "手がかり: 店名＋住所(番地まで)。電話がちがう(シート 090-2095-9820 / マップ 082-249-1541)／店名: exact(シート「フットケアカルム」/ マップ「フットケア カルム(calme)」)／住所(シート): exact・町名・番地とも一致",
+  "place": {
+    "name": "フットケア カルム(calme)",
+    "address": "広島県広島市中区本通８−１３ 301",
+    "category": "フットケア",
+    "lat": 34.3927135,
+    "lng": 132.4589725,
+    "gbpUrl": "https://maps.google.com/?cid=1752455284869045112",
+    "phone": "082-249-1541",
+    "website": "https://beauty.hotpepper.jp/kr/slnH000055523/",
+    "hours": {
+      "月": "定休日",
+      "火": "10:00–19:30",
+      "水": "10:00–19:30",
+      "木": "10:00–19:30",
+      "金": "10:00–19:30",
+      "土": "10:00–19:30",
+      "日": "10:00–17:00"
+    },
+    "reserveLinks": [],
+    "statusSignals": [],
+    "closedSignal": false
+  },
+  "fetchedAt": "2026-11-06T12:15:05.962Z"
+}

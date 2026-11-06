@@ -165,6 +165,14 @@ export const ONE_PAGE_UNLISTED_SHOP_OF_FEATURE: Readonly<Record<string, string>>
   "アンシャーリーハウス": "r895", // アン シャーリー ハウス
   "サニーハウス": "r896", // サニーハウス
   "フールアボワ": "r897", // フール ア ボワ
+  "美味館滝の水店": "r898", // 美味館 滝の水店
+  "メキシカンダイニングGracinitas": "r899", // メキシカンダイニング Gracinitas
+  "TTaLittleKnowledgeStore": "r900", // TT" a Little Knowledge Store
+  "ShakaShaka": "r901", // Shaka Shaka
+  "一一かずいち": "r902", // 一一 かずいち
+  "BARBEARS": "r903", // BAR BEARS
+  "さなえ食堂": "r904", // さなえ食堂
+  "コルテージュ": "r905", // コルテージュ
 };
 
 const NFC = (s: string) => s.normalize("NFC");

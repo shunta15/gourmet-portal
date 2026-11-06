@@ -1,0 +1,40 @@
+{
+  "tab": "トリニティアポ",
+  "tabEn": "tri-life",
+  "row": 429,
+  "sheet": {
+    "name": "ヒマラヤンSweet Cat Room",
+    "address": "",
+    "url": "https://www.google.com/maps/search/?api=1&query=%E3%83%92%E3%83%9E%E3%83%A9%E3%83%A4%E3%83%B3Sweet%20Cat%20Room%20090-9754-7577%20%E3%80%92435-0001%20%E9%9D%99%E5%B2%A1%E7%9C%8C%E6%B5%9C%E6%9D%BE%E5%B8%82%E4%B8%AD%E5%A4%AE%E5%8C%BA%E4%B8%8A%E7%9F%B3%E7%94%B0%E7%94%BA1727%E3%83%BC1",
+    "type": "ライフスタイル",
+    "d1": "",
+    "d2": ""
+  },
+  "urlKind": "mapsApi",
+  "route": "第1段(verify-gbp.mjs)で確認済み",
+  "verdict": "一致",
+  "verdictReason": "手がかり: 店名＋電話＋住所(番地まで)。電話が一致／店名: contains(シート「ヒマラヤンSweet Cat Room」/ マップ「Sweet Cat Room「猫舎MIZUHO Angels」」)／住所(シート): exact・町名・番地とも一致",
+  "place": {
+    "name": "Sweet Cat Room「猫舎MIZUHO Angels」",
+    "address": "静岡県浜松市中央区上石田町1727ー1",
+    "category": "猫ブリーダー",
+    "lat": 34.7484444,
+    "lng": 137.7825829,
+    "gbpUrl": "https://maps.google.com/?cid=12576700952645394499",
+    "phone": "090-9754-7577",
+    "website": "https://sweet-catroom.net/",
+    "hours": {
+      "月": "13:00–16:00",
+      "火": "13:00–16:00",
+      "水": "13:00–16:00",
+      "木": "13:00–16:00",
+      "金": "13:00–16:00",
+      "土": "16:00–17:00",
+      "日": "13:00–16:00"
+    },
+    "reserveLinks": [],
+    "statusSignals": [],
+    "closedSignal": false
+  },
+  "fetchedAt": "2026-11-06T12:16:54.626Z"
+}

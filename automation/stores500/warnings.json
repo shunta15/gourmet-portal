@@ -3554,5 +3554,68 @@
     "warnings": [
       "cuisine は GBPカテゴリ"
     ]
+  },
+  "r898": {
+    "articleId": "美味館滝の水店",
+    "name": "美味館 滝の水店",
+    "warnings": [
+      "desc は lede から事実の文を選べず、事実から作った定型文",
+      "cuisine は GBPカテゴリ"
+    ]
+  },
+  "r899": {
+    "articleId": "メキシカンダイニングGracinitas",
+    "name": "メキシカンダイニング Gracinitas",
+    "warnings": [
+      "desc は lede から事実の文を選べず、事実から作った定型文",
+      "cuisine は GBPカテゴリ"
+    ]
+  },
+  "r900": {
+    "articleId": "TTaLittleKnowledgeStore",
+    "name": "TT\" a Little Knowledge Store",
+    "warnings": [
+      "desc は lede から事実の文を選べず、事実から作った定型文",
+      "cuisine は GBPカテゴリ"
+    ]
+  },
+  "r901": {
+    "articleId": "ShakaShaka",
+    "name": "Shaka Shaka",
+    "warnings": [
+      "desc は lede から事実の文を選べず、事実から作った定型文",
+      "cuisine は GBPカテゴリ"
+    ]
+  },
+  "r902": {
+    "articleId": "一一かずいち",
+    "name": "一一 かずいち",
+    "warnings": [
+      "desc は lede から事実の文を選べず、事実から作った定型文",
+      "cuisine は GBPカテゴリ"
+    ]
+  },
+  "r903": {
+    "articleId": "BARBEARS",
+    "name": "BAR BEARS",
+    "warnings": [
+      "desc は lede から事実の文を選べず、事実から作った定型文",
+      "cuisine は GBPカテゴリ"
+    ]
+  },
+  "r904": {
+    "articleId": "さなえ食堂",
+    "name": "さなえ食堂",
+    "warnings": [
+      "desc は lede から事実の文を選べず、事実から作った定型文",
+      "cuisine は GBPカテゴリ"
+    ]
+  },
+  "r905": {
+    "articleId": "コルテージュ",
+    "name": "コルテージュ",
+    "warnings": [
+      "cuisine は GBPカテゴリ"
+    ]
   }
 }
