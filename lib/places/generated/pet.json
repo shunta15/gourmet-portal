@@ -2242,6 +2242,280 @@
         ],
         "checkedAt": "2026-10-27"
       }
+    },
+    {
+      "id": "pe0024",
+      "vertical": "pet",
+      "category": "pet-shop",
+      "name": "パピーランドシェリエ",
+      "pref": "saitama",
+      "cityName": "深谷市",
+      "address": "埼玉県深谷市東大沼332-1",
+      "lat": 36.1999965,
+      "lng": 139.279661,
+      "hours": "月火木-日 11:00 - 19:00",
+      "holidays": "水曜",
+      "phone": "090-8598-8263",
+      "url": "https://puppyland-cherie.jp/",
+      "website": "https://puppyland-cherie.jp/",
+      "mapUrl": "https://maps.google.com/?cid=14405998343719783179",
+      "image": "/_portal/vshops/tri-pet-400/g01.jpg",
+      "images": [
+        "/_portal/vshops/tri-pet-400/g01.jpg",
+        "/_portal/vshops/tri-pet-400/g03.jpg",
+        "/_portal/vshops/tri-pet-400/g04.jpg",
+        "/_portal/vshops/tri-pet-400/g05.jpg",
+        "/_portal/vshops/tri-pet-400/g07.jpg",
+        "/_portal/vshops/tri-pet-400/g08.jpg",
+        "/_portal/vshops/tri-pet-400/g09.jpg",
+        "/_portal/vshops/tri-pet-400/g10.jpg",
+        "/_portal/vshops/tri-pet-400/s01.jpg",
+        "/_portal/vshops/tri-pet-400/s02.jpg",
+        "/_portal/vshops/tri-pet-400/s03.jpg",
+        "/_portal/vshops/tri-pet-400/s04.jpg",
+        "/_portal/vshops/tri-pet-400/s05.jpg",
+        "/_portal/vshops/tri-pet-400/s06.jpg",
+        "/_portal/vshops/tri-pet-400/s07.jpg",
+        "/_portal/vshops/tri-pet-400/s08.jpg",
+        "/_portal/vshops/tri-pet-400/s09.jpg",
+        "/_portal/vshops/tri-pet-400/s10.jpg",
+        "/_portal/vshops/tri-pet-400/s11.jpg",
+        "/_portal/vshops/tri-pet-400/s12.jpg",
+        "/_portal/vshops/tri-pet-400/s13.jpg",
+        "/_portal/vshops/tri-pet-400/s15.jpg"
+      ],
+      "photos": [
+        {
+          "path": "/_portal/vshops/tri-pet-400/g01.jpg",
+          "what": "白黒の猫とトロフィーが並ぶ室内",
+          "kind": "common",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-pet-400/g03.jpg",
+          "what": "クリーム色のチワワの子犬アップ",
+          "kind": "meal",
+          "width": 1200,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-pet-400/g04.jpg",
+          "what": "クリーム色のフレンチブルドッグ系子犬アップ",
+          "kind": "meal",
+          "width": 1200,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-pet-400/g05.jpg",
+          "what": "白い子猫のアップ",
+          "kind": "meal",
+          "width": 1200,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-pet-400/g07.jpg",
+          "what": "白いチワワ系子犬のアップ",
+          "kind": "meal",
+          "width": 960,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-pet-400/g08.jpg",
+          "what": "黒いフレンチブルドッグ系子犬のアップ",
+          "kind": "meal",
+          "width": 720,
+          "height": 896
+        },
+        {
+          "path": "/_portal/vshops/tri-pet-400/g09.jpg",
+          "what": "白と茶色の子犬2匹が並ぶ",
+          "kind": "meal",
+          "width": 960,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-pet-400/g10.jpg",
+          "what": "黒茶色の子犬2匹が並ぶ",
+          "kind": "meal",
+          "width": 960,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-pet-400/s01.jpg",
+          "what": "白いベッドの上に子猫2匹が座っている",
+          "kind": "common",
+          "width": 1280,
+          "height": 720
+        },
+        {
+          "path": "/_portal/vshops/tri-pet-400/s02.jpg",
+          "what": "グレー系の子猫2匹が並んで座っている",
+          "kind": "meal",
+          "width": 1280,
+          "height": 720
+        },
+        {
+          "path": "/_portal/vshops/tri-pet-400/s03.jpg",
+          "what": "タビー模様の子猫のアップ",
+          "kind": "meal",
+          "width": 1280,
+          "height": 720
+        },
+        {
+          "path": "/_portal/vshops/tri-pet-400/s04.jpg",
+          "what": "チョコタン色のチワワ系子犬2匹が並ぶ",
+          "kind": "meal",
+          "width": 1280,
+          "height": 720
+        },
+        {
+          "path": "/_portal/vshops/tri-pet-400/s05.jpg",
+          "what": "黒ベースの子猫3匹が並ぶ",
+          "kind": "meal",
+          "width": 1280,
+          "height": 720
+        },
+        {
+          "path": "/_portal/vshops/tri-pet-400/s06.jpg",
+          "what": "グレー系の子猫1匹がベッドの上にいる",
+          "kind": "meal",
+          "width": 1280,
+          "height": 720
+        },
+        {
+          "path": "/_portal/vshops/tri-pet-400/s07.jpg",
+          "what": "薄グレーの子猫のアップ",
+          "kind": "meal",
+          "width": 1280,
+          "height": 720
+        },
+        {
+          "path": "/_portal/vshops/tri-pet-400/s08.jpg",
+          "what": "茶タビー模様の子猫のアップ",
+          "kind": "meal",
+          "width": 1280,
+          "height": 720
+        },
+        {
+          "path": "/_portal/vshops/tri-pet-400/s09.jpg",
+          "what": "黒系の子猫が手の上にいる",
+          "kind": "meal",
+          "width": 1280,
+          "height": 720
+        },
+        {
+          "path": "/_portal/vshops/tri-pet-400/s10.jpg",
+          "what": "チワワ系の子犬が手の上にいる",
+          "kind": "meal",
+          "width": 1280,
+          "height": 720
+        },
+        {
+          "path": "/_portal/vshops/tri-pet-400/s11.jpg",
+          "what": "チワワの子犬が手の上にいる",
+          "kind": "meal",
+          "width": 1280,
+          "height": 720
+        },
+        {
+          "path": "/_portal/vshops/tri-pet-400/s12.jpg",
+          "what": "チワワの子犬2匹の顔アップ",
+          "kind": "meal",
+          "width": 1280,
+          "height": 720
+        },
+        {
+          "path": "/_portal/vshops/tri-pet-400/s13.jpg",
+          "what": "チワワの子犬が手の上にいる",
+          "kind": "meal",
+          "width": 1280,
+          "height": 720
+        },
+        {
+          "path": "/_portal/vshops/tri-pet-400/s15.jpg",
+          "what": "三毛模様の猫のアップ",
+          "kind": "meal",
+          "width": 1280,
+          "height": 853
+        }
+      ],
+      "tags": [],
+      "article": {
+        "headline": "埼玉県深谷市のブリーダー。チワワをはじめとする小型犬と、マンチカン・ミヌエットなどの子猫を一般家庭の環境で育て、直販している。",
+        "lede": "深谷市にある「パピーランドシェリエ」です。動物取扱責任者・木部泉が2007年6月4日に開業し、ロングコートチワワを中心とした小型犬と、マンチカン・ミヌエット・ブリティッシュショートヘア・ラグドールなどの子猫を一般家庭の環境で飼育・販売しています。ブリーダー直販のため、子犬・子猫の成長過程を写真や動画でお迎え前から共有し、生まれた直後からの様子をLINEで送っています。お引き渡し後も、LINEを通じてブリーダーが継続してサポートを行います。見学は完全予約制で、1家族ずつ個別に対応しています。",
+        "sections": [
+          {
+            "heading": "対象の動物",
+            "body": "犬はロングコートチワワを中心に、トイプードル・フレンチブルドッグ・ビションフリーゼ・豆柴・ボストンテリア・ペキニーズなどの小型犬を扱っています。猫はマンチカン・ミヌエット・ペルシャ・アメリカンショートヘア・ブリティッシュショートヘア・ラグドールなどを飼育しています。いずれも血統書の発行申請と簡易健康診断・糞便検査がお迎え時に行われます。お引き渡しから30日以内に先天性の疾病で死亡した場合、同ランクの代犬・代猫での生命保証が付いています。"
+          },
+          {
+            "heading": "サービスの内容",
+            "body": "子犬・子猫の紹介ページには、直近1週間の様子を目安にした最新の写真が掲載されています。遠方のお客様向けには、LINEのビデオ通話（iPhoneはFaceTimeも可）によるオンライン見学を受け付けています。対面見学は1家族ごとの完全予約制で、見学時間は1時間まで、見学できるのは最大2頭までです。動物愛護法の規定により、見学またはお引き渡しのいずれか一度は事業所への来所が必要です。トリミングとペット用品販売も行っており、アイペット・アニコム・プリズムの動物保険代理店でもあります。"
+          },
+          {
+            "heading": "スタッフ",
+            "body": "動物取扱責任者の木部泉を中心に、スタッフ全員が動物飼育に携わっています。一般家庭での小規模なブリーディングを方針とし、各子犬・子猫を毎日個別に観察しながら育てています。健康に課題を抱える子犬にはスタッフが24時間体制でケアを施す体制をとっています。毎日の体調管理と細かな変化への対応を重視し、成長の各段階で写真を記録して飼い主に共有します。お迎え後もLINEで相談を受け付け、長期にわたるサポートを継続します。"
+          },
+          {
+            "heading": "行き方と使い方",
+            "body": "JR高崎線深谷駅が最寄り駅で、徒歩10分程度の距離にあります。タクシーを利用した場合はワンメーター程度です。車での来店は深谷警察署入口の交差点から約2分、敷地内に駐車場が1台分あります。見学の予約は電話・公式SNS・公式LINEで受け付けており、電話は営業時間内のみ、SNSとLINEはいつでも送信できます。見学前に外の犬舎・猫舎やペットショップへの立ち寄りは避けるよう案内されています。"
+          }
+        ],
+        "menus": [
+          {
+            "name": "子犬販売（ロングコートチワワ）"
+          },
+          {
+            "name": "子犬販売（トイプードル）"
+          },
+          {
+            "name": "子犬販売（フレンチブルドッグ）"
+          },
+          {
+            "name": "子犬販売（ビションフリーゼ）"
+          },
+          {
+            "name": "子猫販売（マンチカン）"
+          },
+          {
+            "name": "子猫販売（ミヌエット）"
+          },
+          {
+            "name": "子猫販売（ブリティッシュショートヘア）"
+          },
+          {
+            "name": "トリミング"
+          }
+        ],
+        "sources": [
+          {
+            "label": "公式サイト",
+            "url": "https://puppyland-cherie.jp/"
+          },
+          {
+            "label": "公式サイト(店舗概要)",
+            "url": "https://puppyland-cherie.jp/shop/"
+          },
+          {
+            "label": "公式サイト(コンセプト)",
+            "url": "https://puppyland-cherie.jp/concept/"
+          },
+          {
+            "label": "公式サイト(当店の特徴)",
+            "url": "https://puppyland-cherie.jp/feature/"
+          },
+          {
+            "label": "ペットステーション",
+            "url": "https://www.petstation.jp/shop/3214"
+          },
+          {
+            "label": "Google マップ",
+            "url": "https://maps.google.com/?cid=14405998343719783179"
+          }
+        ],
+        "checkedAt": "2026-11-06"
+      }
     }
   ]
 }

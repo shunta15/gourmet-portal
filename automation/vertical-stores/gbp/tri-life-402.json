@@ -1,0 +1,32 @@
+{
+  "tab": "トリニティアポ",
+  "tabEn": "tri-life",
+  "row": 402,
+  "sheet": {
+    "name": "香春神社",
+    "address": "",
+    "url": "https://www.google.com/maps/search/?api=1&query=%E9%A6%99%E6%98%A5%E7%A5%9E%E7%A4%BE%20094-732-2868%20%E3%80%92822-1406%20%E7%A6%8F%E5%B2%A1%E7%9C%8C%E7%94%B0%E5%B7%9D%E9%83%A1%E9%A6%99%E6%98%A5%E7%94%BA%E9%A6%99%E6%98%A5%EF%BC%97%EF%BC%93%EF%BC%93",
+    "type": "神社",
+    "d1": "",
+    "d2": ""
+  },
+  "urlKind": "mapsApi",
+  "route": "第1段(verify-gbp.mjs)で確認済み",
+  "verdict": "一致",
+  "verdictReason": "手がかり: 店名＋電話＋住所(番地まで)。電話が一致／店名: exact(シート「香春神社」/ マップ「香春神社」)／住所(シート): exact・町名・番地とも一致",
+  "place": {
+    "name": "香春神社",
+    "address": "福岡県田川郡香春町香春７３３",
+    "category": "神社",
+    "lat": 33.6697247,
+    "lng": 130.8401208,
+    "gbpUrl": "https://maps.google.com/?cid=16980094862037634654",
+    "phone": "0947-32-2868",
+    "website": null,
+    "hours": null,
+    "reserveLinks": [],
+    "statusSignals": [],
+    "closedSignal": false
+  },
+  "fetchedAt": "2026-11-06T11:06:05.910Z"
+}

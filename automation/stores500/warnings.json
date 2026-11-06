@@ -3501,5 +3501,44 @@
     "warnings": [
       "cuisine は GBPカテゴリ"
     ]
+  },
+  "r891": {
+    "articleId": "レインボー",
+    "name": "レインボー",
+    "warnings": [
+      "desc は lede から事実の文を選べず、事実から作った定型文",
+      "cuisine は GBPカテゴリ"
+    ]
+  },
+  "r892": {
+    "articleId": "秀珍",
+    "name": "秀珍",
+    "warnings": [
+      "desc は lede から事実の文を選べず、事実から作った定型文",
+      "cuisine は GBPカテゴリ"
+    ]
+  },
+  "r893": {
+    "articleId": "ラーメンほうらん鉾田家",
+    "name": "ラーメンほうらん 鉾田家",
+    "warnings": [
+      "desc は lede から事実の文を選べず、事実から作った定型文",
+      "cuisine は GBPカテゴリ"
+    ]
+  },
+  "r894": {
+    "articleId": "cafevinoBLANCO",
+    "name": "cafe&vino BLANCO",
+    "warnings": [
+      "desc は lede から事実の文を選べず、事実から作った定型文",
+      "cuisine は GBPカテゴリ"
+    ]
+  },
+  "r895": {
+    "articleId": "アンシャーリーハウス",
+    "name": "アン シャーリー ハウス",
+    "warnings": [
+      "cuisine は GBPカテゴリ"
+    ]
   }
 }

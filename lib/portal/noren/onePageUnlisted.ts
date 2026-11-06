@@ -158,6 +158,11 @@ export const ONE_PAGE_UNLISTED_SHOP_OF_FEATURE: Readonly<Record<string, string>>
   "かざはな": "r887", // かざはな
   "菓子ko-boモチフミ": "r889", // 菓子ko-bo モチフミ
   "松阪豚専門店まつぶた": "r890", // 松阪豚専門店まつぶた
+  "レインボー": "r891", // レインボー
+  "秀珍": "r892", // 秀珍
+  "ラーメンほうらん鉾田家": "r893", // ラーメンほうらん 鉾田家
+  "cafevinoBLANCO": "r894", // cafe&vino BLANCO
+  "アンシャーリーハウス": "r895", // アン シャーリー ハウス
 };
 
 const NFC = (s: string) => s.normalize("NFC");

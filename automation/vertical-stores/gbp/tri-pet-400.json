@@ -1,0 +1,40 @@
+{
+  "tab": "トリニティアポ",
+  "tabEn": "tri-pet",
+  "row": 400,
+  "sheet": {
+    "name": "パピーランドシェリエ",
+    "address": "",
+    "url": "https://www.google.com/maps/search/?api=1&query=%E3%83%91%E3%83%94%E3%83%BC%E3%83%A9%E3%83%B3%E3%83%89%E3%82%B7%E3%82%A7%E3%83%AA%E3%82%A8%20090-8598-8263%20",
+    "type": "ペット",
+    "d1": "",
+    "d2": ""
+  },
+  "urlKind": "mapsApi",
+  "route": "第1段(verify-gbp.mjs)で確認済み",
+  "verdict": "一致",
+  "verdictReason": "手がかり: 店名＋電話。電話が一致／店名: exact(シート「パピーランドシェリエ」/ マップ「パピーランドシェリエ」)",
+  "place": {
+    "name": "パピーランドシェリエ",
+    "address": "埼玉県深谷市東大沼３３２−１",
+    "category": "犬のブリーダー",
+    "lat": 36.1999965,
+    "lng": 139.279661,
+    "gbpUrl": "https://maps.google.com/?cid=14405998343719783179",
+    "phone": "090-8598-8263",
+    "website": "https://puppyland-cherie.jp/?utm_source=GBP&utm_medium=GBP&utm_term=GBP&utm_content=GBP&utm_campaign=GBP",
+    "hours": {
+      "月": "11:00–19:00",
+      "火": "11:00–19:00",
+      "水": "定休日",
+      "木": "11:00–19:00",
+      "金": "11:00–19:00",
+      "土": "11:00–19:00",
+      "日": "11:00–19:00"
+    },
+    "reserveLinks": [],
+    "statusSignals": [],
+    "closedSignal": false
+  },
+  "fetchedAt": "2026-11-06T11:04:29.559Z"
+}

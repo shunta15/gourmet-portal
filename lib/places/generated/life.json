@@ -26031,6 +26031,160 @@
         ],
         "checkedAt": "2026-11-06"
       }
+    },
+    {
+      "id": "li0172",
+      "vertical": "life",
+      "category": "shrine-temple",
+      "name": "香春神社",
+      "pref": "fukuoka",
+      "cityName": "香春町",
+      "address": "福岡県田川郡香春町香春733",
+      "lat": 33.6697247,
+      "lng": 130.8401208,
+      "phone": "0947-32-2868",
+      "mapUrl": "https://maps.google.com/?cid=16980094862037634654",
+      "image": "/_portal/vshops/tri-life-402/g01.jpg",
+      "images": [
+        "/_portal/vshops/tri-life-402/g01.jpg",
+        "/_portal/vshops/tri-life-402/g02.jpg",
+        "/_portal/vshops/tri-life-402/g03.jpg",
+        "/_portal/vshops/tri-life-402/g04.jpg",
+        "/_portal/vshops/tri-life-402/g05.jpg",
+        "/_portal/vshops/tri-life-402/g06.jpg",
+        "/_portal/vshops/tri-life-402/g07.jpg",
+        "/_portal/vshops/tri-life-402/g08.jpg",
+        "/_portal/vshops/tri-life-402/g09.jpg",
+        "/_portal/vshops/tri-life-402/g10.jpg"
+      ],
+      "photos": [
+        {
+          "path": "/_portal/vshops/tri-life-402/g01.jpg",
+          "what": "拝殿正面の外観と注連縄",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-life-402/g02.jpg",
+          "what": "冬枯れの木立と境内の鳥居",
+          "kind": "exterior",
+          "width": 675,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-life-402/g03.jpg",
+          "what": "参道入口の鳥居と社殿",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 800
+        },
+        {
+          "path": "/_portal/vshops/tri-life-402/g04.jpg",
+          "what": "石畳の参道と石鳥居",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-life-402/g05.jpg",
+          "what": "春の桜と鳥居が並ぶ参道",
+          "kind": "exterior",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-life-402/g06.jpg",
+          "what": "境内に祀られた巨岩・山王石",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-life-402/g07.jpg",
+          "what": "「香春神社」と刻まれた石碑",
+          "kind": "exterior",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-life-402/g08.jpg",
+          "what": "彫刻が施された拝殿の軒と回廊",
+          "kind": "exterior",
+          "width": 675,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-life-402/g09.jpg",
+          "what": "境内の大木",
+          "kind": "exterior",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-life-402/g10.jpg",
+          "what": "桜が咲く参道と奥に続く鳥居",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 900
+        }
+      ],
+      "tags": [
+        "駐車場あり"
+      ],
+      "article": {
+        "headline": "福岡県田川郡香春町、香春岳一ノ岳の麓に鎮座する県社。延喜式神名帳に「豊前国田川郡三座」として記された古社で、境内には昭和14年に岳から落下した巨岩「山王石」が祀られている。",
+        "lede": "田川郡香春町にある「香春神社」です。香春岳の一ノ岳、二ノ岳、三ノ岳にそれぞれ分祀されていた三柱の神を、和銅2年（709年）に一ノ岳の南麓に合祀して香春宮と称したのが始まりとされます。平安時代の延喜7年（927年）に完成した『延喜式神名帳』には「豊前国田川郡三座」の「香春社」として記載されており、豊前国を代表する格式高い神社のひとつです。明治4年に郷社に列し、明治6年7月には県社に列せられました。春には参道に並ぶ約20本の桜が咲き、花見の場としても地域に親しまれています。境内に祀られた「山王石」とよばれる巨岩や、彫刻を施した総欅造の本殿など、見どころが境内に点在しています。",
+        "sections": [
+          {
+            "heading": "由緒・歴史",
+            "body": "香春神社の三柱の祭神は、辛国息長大姫大自命（からくにおきながおおひめおおじのみこと）・忍骨命（おしほねのみこと）・豊比売命（とよひめのみこと）です。もともとは香春岳の一ノ岳・二ノ岳・三ノ岳のそれぞれの山頂に鎮座していた三神を、和銅2年（709年）に一ノ岳南麓に一社を建立して合祀し、香春宮と称したと伝わります。祭神のひとつ辛国息長大姫大自命は新羅からの渡来神とされています。平安時代の延喜式神名帳には豊前国の神社として記録され、戦国期には豊臣秀吉の九州平定に伴い社領が没収されて衰退しましたが、その後は小笠原藩によって再興されました。本殿は文化年間（1804〜1818年頃）に建立された総欅造で、拝殿と東西回廊も同時期の建築です。2013年9月26日、本殿・拝殿・東回廊・石垣が福岡県指定有形文化財に指定されています。"
+          },
+          {
+            "heading": "境内の特徴",
+            "body": "境内でとくに目を引くのが「山王石」とよばれる巨岩です。高さ約4メートル、周囲約15メートル60センチ、重さ約86トンの石灰岩で、昭和14年（1939年）6月30日に香春岳一ノ岳の採石場から落下しました。東廊の角柱を損傷したのみで大きな被害が出なかったことから、神の霊験とされ境内に祀られています。石の上には小さな白い鳥居が置かれており、石を投げてその鳥居をくぐると願いが叶うとの言い伝えがあります。拝殿は左右に回廊を備えた珍しい造りで、豪華な彫刻が施されています。"
+          },
+          {
+            "heading": "神幸祭と桜",
+            "body": "毎年5月3日・4日には神幸祭が行われます。氏子の神輿と子どもの神輿が町内を練り歩き、五穀豊穣を祈る神事です。神輿は御旅所に一泊してから神社に戻り、この神事の後に田植えが行われるのが地域の慣わしとなっています。香春町は複数の神社が神幸祭を開催することで知られ、「神幸祭の郷」としても知られています。春には参道に約20本の桜が並び、3月下旬から4月上旬にかけて花が開きます。一ノ鳥居から拝殿まで続く約200メートルの石段沿いに桜が連なり、地域の花見スポットになっています。"
+          },
+          {
+            "heading": "行き方と使い方",
+            "body": "JR日田英彦山線の香春駅から徒歩約25分です。境内に無料駐車場があります。参拝は自由にできます。神幸祭など行事についての問い合わせは、香春町観光協会（0947-85-8035）に確認するとよいでしょう。"
+          }
+        ],
+        "sources": [
+          {
+            "label": "Shrine Heritager（香春神社）",
+            "url": "https://shrineheritager.com/kawara-shrine-3/"
+          },
+          {
+            "label": "歴研ブログ（香春神社）",
+            "url": "https://rekiken.hateblo.jp/entry/2019/10/17/121157"
+          },
+          {
+            "label": "9navi（香春神社）",
+            "url": "https://www.9navi.jp/kawara-shrine.html"
+          },
+          {
+            "label": "クロスロードふくおか（香春神社）",
+            "url": "https://www.crossroadfukuoka.jp/spot/13053"
+          },
+          {
+            "label": "香春町観光協会（香春神社）",
+            "url": "https://kawara-kankoh.com/spot/shrine/1121.html"
+          },
+          {
+            "label": "香春町公式サイト（神社）",
+            "url": "https://www.town.kawara.fukuoka.jp/s044/010/020/070/20171105222221.html"
+          },
+          {
+            "label": "Google マップ",
+            "url": "https://maps.google.com/?cid=16980094862037634654"
+          }
+        ],
+        "checkedAt": "2026-11-06"
+      }
     }
   ]
 }

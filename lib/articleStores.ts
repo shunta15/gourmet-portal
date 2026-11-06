@@ -21375,6 +21375,247 @@ export const ARTICLE_STORES: Restaurant[] = [
       "ランチ"
     ],
     "featureId": "松阪豚専門店まつぶた"
+  },
+  {
+    "id": "r891",
+    "name": "レインボー",
+    "cuisine": "クレープ店",
+    "area": "大阪府・泉大津市",
+    "region": "osaka",
+    "shape": "square",
+    "image": "/restaurants/teleapo-レインボー/hero.jpg",
+    "heroImages": [
+      "/restaurants/teleapo-レインボー/hero.jpg",
+      "/restaurants/teleapo-レインボー/point1.jpg",
+      "/restaurants/teleapo-レインボー/point2.jpg",
+      "/restaurants/teleapo-レインボー/point3.jpg"
+    ],
+    "gallery": [
+      "/restaurants/teleapo-レインボー/hero.jpg",
+      "/restaurants/teleapo-レインボー/point1.jpg",
+      "/restaurants/teleapo-レインボー/point2.jpg",
+      "/restaurants/teleapo-レインボー/point3.jpg"
+    ],
+    "desc": "大阪府泉大津市のクレープ店。",
+    "address": "大阪府泉大津市田中町9-21 泉大津中央商店街角",
+    "hours": "水 16:00–20:00 / 木 12:30–19:00 / 金 12:30–20:00 / 土・日 12:30–20:30",
+    "closed": "月曜・火曜",
+    "seats": "—（訪問前に公式確認）",
+    "nearest": "—",
+    "phone": "0725-32-0530",
+    "instagram": "https://www.instagram.com/creperainbow",
+    "source": {
+      "label": "Google ビジネスプロフィール",
+      "url": "https://maps.google.com/?cid=43294069316901280"
+    },
+    "body": [
+      "レインボーは、大阪府泉大津市にあるお店です。業態は「クレープ店」、所在地は大阪府泉大津市田中町9-21 泉大津中央商店街角です。マチノワ編集部の特集記事では、「160を超えるメニューと定番のフルーツクレープ」・「クリーム総量2L超えの7色かちあい盛りクレープ」などを取り上げています。",
+      "営業時間は水 16:00–20:00 / 木 12:30–19:00 / 金 12:30–20:00 / 土・日 12:30–20:30、定休日は月曜・火曜です（Googleマップの営業時間による）。営業時間や価格は変わることがあるため、訪問前に公式サイトやSNS、お電話でご確認ください。"
+    ],
+    "highlights": [
+      "160を超えるメニューと定番のフルーツクレープ",
+      "クリーム総量2L超えの7色かちあい盛りクレープ",
+      "キャッシュレス決済とデリバリー対応"
+    ],
+    "tags": [
+      "クレープ店",
+      "泉大津市",
+      "ランチ"
+    ],
+    "featureId": "レインボー"
+  },
+  {
+    "id": "r892",
+    "name": "秀珍",
+    "cuisine": "中華料理店",
+    "area": "長崎県・雲仙市",
+    "region": "nagasaki",
+    "shape": "square",
+    "image": "/restaurants/teleapo-秀珍/hero.jpg",
+    "heroImages": [
+      "/restaurants/teleapo-秀珍/hero.jpg",
+      "/restaurants/teleapo-秀珍/point1.jpg",
+      "/restaurants/teleapo-秀珍/point2.jpg",
+      "/restaurants/teleapo-秀珍/point3.jpg"
+    ],
+    "gallery": [
+      "/restaurants/teleapo-秀珍/hero.jpg",
+      "/restaurants/teleapo-秀珍/point1.jpg",
+      "/restaurants/teleapo-秀珍/point2.jpg",
+      "/restaurants/teleapo-秀珍/point3.jpg"
+    ],
+    "desc": "長崎県雲仙市の中華料理店。",
+    "address": "長崎県雲仙市吾妻町平江名72-1",
+    "hours": "毎日 11:00–14:00, 18:00–20:00",
+    "closed": "なし（Googleマップの営業時間による）",
+    "seats": "17席（カウンター×5席、小上がり座敷4人テーブル×3席）",
+    "nearest": "—",
+    "phone": "0957-38-2577",
+    "source": {
+      "label": "Google ビジネスプロフィール",
+      "url": "https://maps.google.com/?cid=11104622526096987812"
+    },
+    "body": [
+      "秀珍は、長崎県雲仙市にあるお店です。業態は「中華料理店」、所在地は長崎県雲仙市吾妻町平江名72-1です。マチノワ編集部の特集記事では、「1杯に牡蠣がゴロゴロと入るカキちゃんぽん」・「辛さを調整できる坦々ちゃんぽん」などを取り上げています。",
+      "営業時間は毎日 11:00–14:00, 18:00–20:00で、定休日はありません（Googleマップの営業時間による）。席は17席（カウンター×5席、小上がり座敷4人テーブル×3席）。営業時間や価格は変わることがあるため、訪問前に公式サイトやSNS、お電話でご確認ください。"
+    ],
+    "highlights": [
+      "1杯に牡蠣がゴロゴロと入るカキちゃんぽん",
+      "辛さを調整できる坦々ちゃんぽん",
+      "ちゃんぽん以外の一品料理と定食"
+    ],
+    "tags": [
+      "中華料理店",
+      "雲仙市",
+      "宴会",
+      "ランチ"
+    ],
+    "featureId": "秀珍"
+  },
+  {
+    "id": "r893",
+    "name": "ラーメンほうらん 鉾田家",
+    "cuisine": "ラーメン屋",
+    "area": "茨城県・鉾田市",
+    "region": "ibaraki",
+    "shape": "square",
+    "image": "/restaurants/teleapo-ラーメンほうらん鉾田家/hero.jpg",
+    "heroImages": [
+      "/restaurants/teleapo-ラーメンほうらん鉾田家/hero.jpg",
+      "/restaurants/teleapo-ラーメンほうらん鉾田家/point1.jpg",
+      "/restaurants/teleapo-ラーメンほうらん鉾田家/point2.jpg",
+      "/restaurants/teleapo-ラーメンほうらん鉾田家/point3.jpg",
+      "/restaurants/teleapo-ラーメンほうらん鉾田家/point4.jpg"
+    ],
+    "gallery": [
+      "/restaurants/teleapo-ラーメンほうらん鉾田家/hero.jpg",
+      "/restaurants/teleapo-ラーメンほうらん鉾田家/point1.jpg",
+      "/restaurants/teleapo-ラーメンほうらん鉾田家/point2.jpg",
+      "/restaurants/teleapo-ラーメンほうらん鉾田家/point3.jpg",
+      "/restaurants/teleapo-ラーメンほうらん鉾田家/point4.jpg"
+    ],
+    "desc": "茨城県鉾田市のラーメン屋。",
+    "address": "茨城県鉾田市汲上1218-2",
+    "hours": "月・木・金 11:00–14:30, 17:30–20:00 / 火 11:00–14:30 / 土・日 11:00–20:00",
+    "closed": "水曜日",
+    "seats": "カウンター11席・テーブル1卓・小上がり1卓",
+    "nearest": "—",
+    "phone": "080-7067-6367",
+    "source": {
+      "label": "Google ビジネスプロフィール",
+      "url": "https://maps.google.com/?cid=501786705173279742"
+    },
+    "body": [
+      "ラーメンほうらん 鉾田家は、茨城県鉾田市にあるお店です。業態は「ラーメン屋」、所在地は茨城県鉾田市汲上1218-2です。マチノワ編集部の特集記事では、「仙台味噌をあおり炒めで仕立てる看板の一杯」・「店主の祖母が宮城県で開いた「奉蘭」の流れを汲む」などを取り上げています。",
+      "営業時間は月・木・金 11:00–14:30, 17:30–20:00 / 火 11:00–14:30 / 土・日 11:00–20:00、定休日は水曜日です（Googleマップの営業時間による）。席はカウンター11席・テーブル1卓・小上がり1卓。営業時間や価格は変わることがあるため、訪問前に公式サイトやSNS、お電話でご確認ください。"
+    ],
+    "highlights": [
+      "仙台味噌をあおり炒めで仕立てる看板の一杯",
+      "店主の祖母が宮城県で開いた「奉蘭」の流れを汲む",
+      "鹿島灘のハマグリと干し芋を使う鉾田チャンポン",
+      "食券制のカウンターと小上がり、大型車も停まれる駐車場"
+    ],
+    "tags": [
+      "ラーメン屋",
+      "鉾田市",
+      "ランチ"
+    ],
+    "featureId": "ラーメンほうらん鉾田家"
+  },
+  {
+    "id": "r894",
+    "name": "cafe&vino BLANCO",
+    "cuisine": "カフェ・喫茶",
+    "area": "新潟県・糸魚川市",
+    "region": "niigata",
+    "shape": "square",
+    "image": "/restaurants/teleapo-cafevinoBLANCO/hero.jpg",
+    "heroImages": [
+      "/restaurants/teleapo-cafevinoBLANCO/hero.jpg",
+      "/restaurants/teleapo-cafevinoBLANCO/point1.jpg",
+      "/restaurants/teleapo-cafevinoBLANCO/point2.jpg",
+      "/restaurants/teleapo-cafevinoBLANCO/point3.jpg"
+    ],
+    "gallery": [
+      "/restaurants/teleapo-cafevinoBLANCO/hero.jpg",
+      "/restaurants/teleapo-cafevinoBLANCO/point1.jpg",
+      "/restaurants/teleapo-cafevinoBLANCO/point2.jpg",
+      "/restaurants/teleapo-cafevinoBLANCO/point3.jpg"
+    ],
+    "desc": "新潟県糸魚川市のカフェ・喫茶。",
+    "address": "新潟県糸魚川市大町1丁目4-13",
+    "hours": "毎日 09:30–22:30",
+    "closed": "なし（Googleマップの営業時間による）",
+    "seats": "15席（カウンター席あり）",
+    "nearest": "—",
+    "phone": "025-553-2233",
+    "source": {
+      "label": "Google ビジネスプロフィール",
+      "url": "https://maps.google.com/?cid=2318934102339395763"
+    },
+    "body": [
+      "cafe&vino BLANCOは、新潟県糸魚川市にあるお店です。業態は「カフェ・喫茶」、所在地は新潟県糸魚川市大町1丁目4-13です。マチノワ編集部の特集記事では、「パスタ・カレー・スイーツをそろえる食事メニュー」・「ワイン・焼酎・日本酒を幅広くそろえた飲み物」などを取り上げています。",
+      "営業時間は毎日 09:30–22:30で、定休日はありません（Googleマップの営業時間による）。席は15席（カウンター席あり）。営業時間や価格は変わることがあるため、訪問前に公式サイトやSNS、お電話でご確認ください。"
+    ],
+    "highlights": [
+      "パスタ・カレー・スイーツをそろえる食事メニュー",
+      "ワイン・焼酎・日本酒を幅広くそろえた飲み物",
+      "英語対応と子連れ利用も可能な使い勝手"
+    ],
+    "tags": [
+      "カフェ・喫茶",
+      "糸魚川市",
+      "ランチ"
+    ],
+    "featureId": "cafevinoBLANCO"
+  },
+  {
+    "id": "r895",
+    "name": "アン シャーリー ハウス",
+    "cuisine": "カフェ・喫茶",
+    "area": "長崎県・雲仙市",
+    "region": "nagasaki",
+    "shape": "square",
+    "image": "/restaurants/teleapo-アンシャーリーハウス/hero.jpg",
+    "heroImages": [
+      "/restaurants/teleapo-アンシャーリーハウス/hero.jpg",
+      "/restaurants/teleapo-アンシャーリーハウス/point1.jpg",
+      "/restaurants/teleapo-アンシャーリーハウス/point2.jpg",
+      "/restaurants/teleapo-アンシャーリーハウス/point3.jpg"
+    ],
+    "gallery": [
+      "/restaurants/teleapo-アンシャーリーハウス/hero.jpg",
+      "/restaurants/teleapo-アンシャーリーハウス/point1.jpg",
+      "/restaurants/teleapo-アンシャーリーハウス/point2.jpg",
+      "/restaurants/teleapo-アンシャーリーハウス/point3.jpg"
+    ],
+    "desc": "アン シャーリー ハウスは、1986年の創業から店を構えるカフェで、店名は『赤毛のアン』の主人公アン・シャーリーにちなむ。",
+    "address": "長崎県雲仙市小浜町北本町219",
+    "hours": "月・木〜日 11:30–17:30",
+    "closed": "火曜・水曜",
+    "seats": "29席",
+    "nearest": "—",
+    "phone": "0957-74-4123",
+    "instagram": "https://www.instagram.com/anneshirley_house",
+    "source": {
+      "label": "Google ビジネスプロフィール",
+      "url": "https://maps.google.com/?cid=14408999357803286894"
+    },
+    "body": [
+      "アン シャーリー ハウスは、長崎県雲仙市にあるお店です。業態は「カフェ・喫茶」、所在地は長崎県雲仙市小浜町北本町219です。マチノワ編集部の特集記事では、「赤毛のアンにちなんだ手作りメニュー」・「橘湾を一望する窓辺の席と絵本の空間」などを取り上げています。",
+      "営業時間は月・木〜日 11:30–17:30、定休日は火曜・水曜です（Googleマップの営業時間による）。席は29席。営業時間や価格は変わることがあるため、訪問前に公式サイトやSNS、お電話でご確認ください。"
+    ],
+    "highlights": [
+      "赤毛のアンにちなんだ手作りメニュー",
+      "橘湾を一望する窓辺の席と絵本の空間",
+      "1986年創業、赤毛のアンを愛する店主の一軒"
+    ],
+    "tags": [
+      "カフェ・喫茶",
+      "雲仙市",
+      "ランチ"
+    ],
+    "featureId": "アンシャーリーハウス"
   }
 ];
 
@@ -21826,7 +22067,12 @@ export const ARTICLE_STORE_FEATURE_IDS: Record<string, string> = {
   "r887": "かざはな",
   "r888": "パン工房うたかの",
   "r889": "菓子ko-boモチフミ",
-  "r890": "松阪豚専門店まつぶた"
+  "r890": "松阪豚専門店まつぶた",
+  "r891": "レインボー",
+  "r892": "秀珍",
+  "r893": "ラーメンほうらん鉾田家",
+  "r894": "cafevinoBLANCO",
+  "r895": "アンシャーリーハウス"
 };
 
 /** 特集記事ID → 店舗ID */
@@ -22277,5 +22523,10 @@ export const ARTICLE_STORE_ID_BY_FEATURE: Record<string, string> = {
   "かざはな": "r887",
   "パン工房うたかの": "r888",
   "菓子ko-boモチフミ": "r889",
-  "松阪豚専門店まつぶた": "r890"
+  "松阪豚専門店まつぶた": "r890",
+  "レインボー": "r891",
+  "秀珍": "r892",
+  "ラーメンほうらん鉾田家": "r893",
+  "cafevinoBLANCO": "r894",
+  "アンシャーリーハウス": "r895"
 };

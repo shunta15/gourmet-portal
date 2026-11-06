@@ -2253,5 +2253,30 @@
     "articleId": "松阪豚専門店まつぶた",
     "sheetName": "MB デリカテッセン＆ダイナー",
     "mapsUrl": "https://maps.google.com/?cid=5800330440558982396"
+  },
+  {
+    "articleId": "レインボー",
+    "sheetName": "レインボー",
+    "mapsUrl": "https://maps.google.com/?cid=43294069316901280"
+  },
+  {
+    "articleId": "秀珍",
+    "sheetName": "秀珍",
+    "mapsUrl": "https://maps.google.com/?cid=11104622526096987812"
+  },
+  {
+    "articleId": "ラーメンほうらん鉾田家",
+    "sheetName": "ラーメンほうらん 鉾田家",
+    "mapsUrl": "https://maps.google.com/?cid=501786705173279742"
+  },
+  {
+    "articleId": "cafevinoBLANCO",
+    "sheetName": "cafe&vino BLANCO",
+    "mapsUrl": "https://maps.google.com/?cid=2318934102339395763"
+  },
+  {
+    "articleId": "アンシャーリーハウス",
+    "sheetName": "アン シャーリー ハウス",
+    "mapsUrl": "https://maps.google.com/?cid=14408999357803286894"
   }
 ]

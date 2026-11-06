@@ -1,0 +1,40 @@
+{
+  "tab": "トリニティアポ",
+  "tabEn": "tri-activity",
+  "row": 401,
+  "sheet": {
+    "name": "ひみぷりん",
+    "address": "",
+    "url": "https://www.google.com/maps/search/?api=1&query=%E3%81%B2%E3%81%BF%E3%81%B7%E3%82%8A%E3%82%93%20070-1304-6487%20%E3%80%92935-0004%20%E5%AF%8C%E5%B1%B1%E7%9C%8C%E6%B0%B7%E8%A6%8B%E5%B8%82%E5%8C%97%E5%A4%A7%E7%94%BA%EF%BC%92%EF%BC%95%E2%88%92%EF%BC%95",
+    "type": "レジャー",
+    "d1": "",
+    "d2": ""
+  },
+  "urlKind": "mapsApi",
+  "route": "第1段(verify-gbp.mjs)で確認済み",
+  "verdict": "一致",
+  "verdictReason": "手がかり: 店名＋電話＋住所(番地まで)。電話が一致／店名: exact(シート「ひみぷりん」/ マップ「ひみぷりん（道の駅 氷見）」)／住所(シート): exact・町名・番地とも一致",
+  "place": {
+    "name": "ひみぷりん（道の駅 氷見）",
+    "address": "富山県氷見市北大町２５−５",
+    "category": "スイーツ店",
+    "lat": 36.8644606,
+    "lng": 136.9869945,
+    "gbpUrl": "https://maps.google.com/?cid=12577156402817546670",
+    "phone": "070-1304-6487",
+    "website": "https://www.himi-purin.com/",
+    "hours": {
+      "月": "08:30–17:00",
+      "火": "08:30–17:00",
+      "水": "08:30–17:00",
+      "木": "08:30–17:00",
+      "金": "08:30–17:00",
+      "土": "08:30–17:30",
+      "日": "08:30–17:30"
+    },
+    "reserveLinks": [],
+    "statusSignals": [],
+    "closedSignal": false
+  },
+  "fetchedAt": "2026-11-06T11:05:21.821Z"
+}

@@ -1,0 +1,118 @@
+{
+  "commit": "cef493765850b70a64c7a0f1c6e28927d218bef5",
+  "source": "/Users/shunta/claude/gp-k-auto2",
+  "count": 10,
+  "added": [
+    {
+      "row": 406,
+      "name": "レインボー",
+      "key": "lk-gourmet-406",
+      "vertical": "グルメ",
+      "id": "r891",
+      "articleId": "レインボー",
+      "shopUrl": "https://machinowa.tokyo/restaurant/r891",
+      "articleUrl": "https://machinowa.tokyo/feature/レインボー",
+      "sheetUrl": "https://machinowa.tokyo/feature/レインボー"
+    },
+    {
+      "row": 407,
+      "name": "秀珍",
+      "key": "lk-gourmet-407",
+      "vertical": "グルメ",
+      "id": "r892",
+      "articleId": "秀珍",
+      "shopUrl": "https://machinowa.tokyo/restaurant/r892",
+      "articleUrl": "https://machinowa.tokyo/feature/秀珍",
+      "sheetUrl": "https://machinowa.tokyo/feature/秀珍"
+    },
+    {
+      "row": 408,
+      "name": "ラーメンほうらん 鉾田家",
+      "key": "lk-gourmet-408",
+      "vertical": "グルメ",
+      "id": "r893",
+      "articleId": "ラーメンほうらん鉾田家",
+      "shopUrl": "https://machinowa.tokyo/restaurant/r893",
+      "articleUrl": "https://machinowa.tokyo/feature/ラーメンほうらん鉾田家",
+      "sheetUrl": "https://machinowa.tokyo/feature/ラーメンほうらん鉾田家"
+    },
+    {
+      "row": 409,
+      "name": "cafe&vino BLANCO",
+      "key": "lk-gourmet-409",
+      "vertical": "グルメ",
+      "id": "r894",
+      "articleId": "cafevinoBLANCO",
+      "shopUrl": "https://machinowa.tokyo/restaurant/r894",
+      "articleUrl": "https://machinowa.tokyo/feature/cafevinoBLANCO",
+      "sheetUrl": "https://machinowa.tokyo/feature/cafevinoBLANCO"
+    },
+    {
+      "row": 410,
+      "name": "アン シャーリー ハウス",
+      "key": "lk-gourmet-410",
+      "vertical": "グルメ",
+      "id": "r895",
+      "articleId": "アンシャーリーハウス",
+      "shopUrl": "https://machinowa.tokyo/restaurant/r895",
+      "articleUrl": "https://machinowa.tokyo/feature/アンシャーリーハウス",
+      "sheetUrl": "https://machinowa.tokyo/feature/アンシャーリーハウス"
+    },
+    {
+      "row": 398,
+      "name": "松島 Seaside Base",
+      "key": "tri-activity-398",
+      "vertical": "アクティビティ",
+      "id": "ac0041",
+      "articleId": "ac0041",
+      "shopUrl": "https://machinowa.tokyo/activity/shop/ac0041",
+      "articleUrl": "https://machinowa.tokyo/activity/article/ac0041",
+      "sheetUrl": "https://machinowa.tokyo/activity/article/ac0041"
+    },
+    {
+      "row": 399,
+      "name": "090-6737-3232",
+      "key": "tri-beauty-399",
+      "vertical": "ビューティー",
+      "id": "be0113",
+      "articleId": null,
+      "shopUrl": "https://machinowa.tokyo/beauty/shop/be0113",
+      "articleUrl": null,
+      "sheetUrl": "https://machinowa.tokyo/beauty/shop/be0113"
+    },
+    {
+      "row": 400,
+      "name": "パピーランドシェリエ",
+      "key": "tri-pet-400",
+      "vertical": "ペット",
+      "id": "pe0024",
+      "articleId": null,
+      "shopUrl": "https://machinowa.tokyo/pet/shop/pe0024",
+      "articleUrl": null,
+      "sheetUrl": "https://machinowa.tokyo/pet/shop/pe0024"
+    },
+    {
+      "row": 401,
+      "name": "ひみぷりん",
+      "key": "tri-activity-401",
+      "vertical": "アクティビティ",
+      "id": "ac0042",
+      "articleId": "ac0042",
+      "shopUrl": "https://machinowa.tokyo/activity/shop/ac0042",
+      "articleUrl": "https://machinowa.tokyo/activity/article/ac0042",
+      "sheetUrl": "https://machinowa.tokyo/activity/article/ac0042"
+    },
+    {
+      "row": 402,
+      "name": "香春神社",
+      "key": "tri-life-402",
+      "vertical": "くらし",
+      "id": "li0172",
+      "articleId": "li0172",
+      "shopUrl": "https://machinowa.tokyo/life/shop/li0172",
+      "articleUrl": "https://machinowa.tokyo/life/article/li0172",
+      "sheetUrl": "https://machinowa.tokyo/life/article/li0172"
+    }
+  ],
+  "skipped": []
+}

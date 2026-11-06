@@ -1,0 +1,32 @@
+{
+  "tab": "トリニティアポ",
+  "tabEn": "tri-beauty",
+  "row": 399,
+  "sheet": {
+    "name": "090-6737-3232",
+    "address": "",
+    "url": "https://www.google.com/maps/search/?api=1&query=090-6737-3232%20090-6737-3232%20%E3%80%92664-0885%20%E5%85%B5%E5%BA%AB%E7%9C%8C%E4%BC%8A%E4%B8%B9%E5%B8%82%E6%98%86%E9%99%BD%E6%B3%89%E7%94%BA%EF%BC%91%E4%B8%81%E7%9B%AE4%E2%88%92%EF%BC%95",
+    "type": "美容",
+    "d1": "",
+    "d2": ""
+  },
+  "urlKind": "mapsApi",
+  "route": "第1段(verify-gbp.mjs)で確認済み",
+  "verdict": "一致",
+  "verdictReason": "手がかり: 電話＋住所(番地まで)。電話が一致／店名: n/a(シート「090-6737-3232」/ マップ「アンジェリーヌマミー ル・リーヌ」)／住所(シート): exact・町名・番地とも一致",
+  "place": {
+    "name": "アンジェリーヌマミー ル・リーヌ",
+    "address": "兵庫県伊丹市昆陽泉町１丁目4−５",
+    "category": "エステティック サロン",
+    "lat": 34.7742066,
+    "lng": 135.4008517,
+    "gbpUrl": "https://maps.google.com/?cid=12277144776037550350",
+    "phone": "090-6737-3232",
+    "website": "https://angele-angeline.com/info.aspx",
+    "hours": null,
+    "reserveLinks": [],
+    "statusSignals": [],
+    "closedSignal": false
+  },
+  "fetchedAt": "2026-11-06T11:03:51.641Z"
+}

@@ -1,0 +1,40 @@
+{
+  "tab": "トリニティアポ",
+  "tabEn": "tri-activity",
+  "row": 398,
+  "sheet": {
+    "name": "松島 Seaside Base",
+    "address": "",
+    "url": "https://www.google.com/maps/search/?api=1&query=%E6%9D%BE%E5%B3%B6%20Seaside%20Base%20070-9032-2323%20%E3%80%92981-0101%20%E5%AE%AE%E5%9F%8E%E7%9C%8C%E5%AE%AE%E5%9F%8E%E9%83%A1%E5%88%A9%E5%BA%9C%E7%94%BA%E8%B5%A4%E6%B2%BC%E6%B5%9C%E7%94%B0%EF%BC%91%EF%BC%90%EF%BC%90%E2%88%92%EF%BC%99%EF%BC%90",
+    "type": "体験",
+    "d1": "",
+    "d2": ""
+  },
+  "urlKind": "mapsApi",
+  "route": "第1段(verify-gbp.mjs)で確認済み",
+  "verdict": "一致",
+  "verdictReason": "手がかり: 店名＋電話＋住所(番地まで)。電話が一致／店名: contains(シート「松島 Seaside Base」/ マップ「松島 Seaside Base | シーサイドベース」)／住所(シート): exact・町名・番地とも一致",
+  "place": {
+    "name": "松島 Seaside Base | シーサイドベース",
+    "address": "宮城県宮城郡利府町赤沼浜田１００−９０",
+    "category": "スポーツ複合施設",
+    "lat": 38.347087,
+    "lng": 141.0425774,
+    "gbpUrl": "https://maps.google.com/?cid=4507117047618761715",
+    "phone": "070-9032-2323",
+    "website": "https://seasidebase.com/",
+    "hours": {
+      "月": "定休日",
+      "火": "定休日",
+      "水": "定休日",
+      "木": "定休日",
+      "金": "定休日",
+      "土": "09:30–16:00",
+      "日": "09:30–16:00"
+    },
+    "reserveLinks": [],
+    "statusSignals": [],
+    "closedSignal": false
+  },
+  "fetchedAt": "2026-11-06T11:03:14.378Z"
+}

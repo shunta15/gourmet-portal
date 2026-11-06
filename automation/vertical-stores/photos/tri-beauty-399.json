@@ -1,0 +1,66 @@
+{
+  "key": "tri-beauty-399",
+  "images": [
+    {
+      "path": "/_portal/vshops/tri-beauty-399/s08.jpg",
+      "imageUrl": "https://angele-angeline.com/Up_Img/739/xcrduvn4.jpg",
+      "pageUrl": "https://angele-angeline.com/info.aspx",
+      "what": "複数の音叉が並べられたアロマ音叉の道具",
+      "kind": "meal",
+      "width": 1280,
+      "height": 720,
+      "source": "公式サイト"
+    },
+    {
+      "path": "/_portal/vshops/tri-beauty-399/s12.jpg",
+      "imageUrl": "https://angele-angeline.com/Up_Img/739/y45duz2m.jpg",
+      "pageUrl": "https://angele-angeline.com/site3.aspx",
+      "what": "うさぎの衣装を着たリボーンドール（赤ちゃん人形）が並ぶ",
+      "kind": "common",
+      "width": 1024,
+      "height": 682,
+      "source": "公式サイト"
+    },
+    {
+      "path": "/_portal/vshops/tri-beauty-399/s13.jpg",
+      "imageUrl": "https://angele-angeline.com/Up_Img/739/cajeqyaw.jpg",
+      "pageUrl": "https://angele-angeline.com/site3.aspx",
+      "what": "doTERRAのエッセンシャルオイルボトルと音叉が台の上に並ぶ",
+      "kind": "meal",
+      "width": 1024,
+      "height": 682,
+      "source": "公式サイト"
+    },
+    {
+      "path": "/_portal/vshops/tri-beauty-399/s14.jpg",
+      "imageUrl": "https://angele-angeline.com/Up_Img/739/2wgajhuf.jpg",
+      "pageUrl": "https://angele-angeline.com/site3.aspx",
+      "what": "施術者が横たわる人のお腹付近に手を当てて整体を行うシーン",
+      "kind": "room",
+      "width": 1024,
+      "height": 682,
+      "source": "公式サイト"
+    },
+    {
+      "path": "/_portal/vshops/tri-beauty-399/s15.jpg",
+      "imageUrl": "https://angele-angeline.com/Up_Img/739/lmqqukl2.jpg",
+      "pageUrl": "https://angele-angeline.com/site3.aspx",
+      "what": "金属器具（MORACT）で腕に施術を行うシーン",
+      "kind": "room",
+      "width": 1024,
+      "height": 576,
+      "source": "公式サイト"
+    },
+    {
+      "path": "/_portal/vshops/tri-beauty-399/s16.jpg",
+      "imageUrl": "https://angele-angeline.com/Up_Img/739/p0ukkqgx.jpg",
+      "pageUrl": "https://angele-angeline.com/site3.aspx",
+      "what": "施術者がうつ伏せの人の背中に手を当ててケアを行うシーン",
+      "kind": "room",
+      "width": 1024,
+      "height": 682,
+      "source": "公式サイト"
+    }
+  ],
+  "note": "automation/v2/write.mjs が 2026-11-06T11:13:33.532Z に取得。店の実写だけ(AI 画像・汎用画像・地図・ロゴ・顔が大きい画像は除外)。"
+}
