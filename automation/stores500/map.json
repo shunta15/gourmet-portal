@@ -2278,5 +2278,15 @@
     "articleId": "アンシャーリーハウス",
     "sheetName": "アン シャーリー ハウス",
     "mapsUrl": "https://maps.google.com/?cid=14408999357803286894"
+  },
+  {
+    "articleId": "サニーハウス",
+    "sheetName": "サニーハウス",
+    "mapsUrl": "https://maps.google.com/?cid=13075569320751438257"
+  },
+  {
+    "articleId": "フールアボワ",
+    "sheetName": "フール ア ボワ",
+    "mapsUrl": "https://maps.google.com/?cid=16712733943471056117"
   }
 ]

@@ -1,0 +1,40 @@
+{
+  "tab": "トリニティアポ",
+  "tabEn": "tri-life",
+  "row": 406,
+  "sheet": {
+    "name": "円龍寺",
+    "address": "",
+    "url": "https://www.google.com/maps/search/?api=1&query=%E5%86%86%E9%BE%8D%E5%AF%BA%20052-621-3005%20%E3%80%92458-0801%20%E6%84%9B%E7%9F%A5%E7%9C%8C%E5%90%8D%E5%8F%A4%E5%B1%8B%E5%B8%82%E7%B7%91%E5%8C%BA%E9%B3%B4%E6%B5%B7%E7%94%BA%E6%9C%AC%E7%94%BA%EF%BC%91%EF%BC%91%E2%88%92%EF%BC%91",
+    "type": "寺",
+    "d1": "",
+    "d2": ""
+  },
+  "urlKind": "mapsApi",
+  "route": "第1段(verify-gbp.mjs)で確認済み",
+  "verdict": "一致",
+  "verdictReason": "手がかり: 電話＋住所(番地まで)。電話が一致／店名: different(シート「円龍寺」/ マップ「真宗大谷派 竹林山 圓龍寺」)／住所(シート): exact・町名・番地とも一致",
+  "place": {
+    "name": "真宗大谷派 竹林山 圓龍寺",
+    "address": "愛知県名古屋市緑区鳴海町本町１１−１",
+    "category": "仏教寺院",
+    "lat": 35.0808739,
+    "lng": 136.951697,
+    "gbpUrl": "https://maps.google.com/?cid=4769318962709808541",
+    "phone": "052-621-3005",
+    "website": null,
+    "hours": {
+      "月": "09:00–19:00",
+      "火": "09:00–19:00",
+      "水": "09:00–19:00",
+      "木": "09:00–19:00",
+      "金": "09:00–19:00",
+      "土": "09:00–19:00",
+      "日": "09:00–19:00"
+    },
+    "reserveLinks": [],
+    "statusSignals": [],
+    "closedSignal": false
+  },
+  "fetchedAt": "2026-11-06T11:43:13.414Z"
+}

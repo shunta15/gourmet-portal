@@ -1,0 +1,40 @@
+{
+  "tab": "トリニティアポ",
+  "tabEn": "tri-life",
+  "row": 405,
+  "sheet": {
+    "name": "天恩寺",
+    "address": "",
+    "url": "https://www.google.com/maps/search/?api=1&query=%E5%A4%A9%E6%81%A9%E5%AF%BA%20056-482-2433%20%E3%80%92444-3616%20%E6%84%9B%E7%9F%A5%E7%9C%8C%E5%B2%A1%E5%B4%8E%E5%B8%82%E7%89%87%E5%AF%84%E7%94%BA%E5%B1%B1%E4%B8%8B%EF%BC%95%EF%BC%99",
+    "type": "神社",
+    "d1": "",
+    "d2": ""
+  },
+  "urlKind": "mapsApi",
+  "route": "第1段(verify-gbp.mjs)で確認済み",
+  "verdict": "一致",
+  "verdictReason": "手がかり: 店名＋電話＋住所(番地まで)。電話が一致／店名: exact(シート「天恩寺」/ マップ「天恩寺」)／住所(シート): exact・町名・番地とも一致",
+  "place": {
+    "name": "天恩寺",
+    "address": "愛知県岡崎市片寄町山下５９",
+    "category": "仏教寺院",
+    "lat": 34.924096,
+    "lng": 137.3142252,
+    "gbpUrl": "https://maps.google.com/?cid=1393510638409578582",
+    "phone": "0564-82-2433",
+    "website": null,
+    "hours": {
+      "月": "24時間営業",
+      "火": "24時間営業",
+      "水": "24時間営業",
+      "木": "24時間営業",
+      "金": "24時間営業",
+      "土": "24時間営業",
+      "日": "24時間営業"
+    },
+    "reserveLinks": [],
+    "statusSignals": [],
+    "closedSignal": false
+  },
+  "fetchedAt": "2026-11-06T11:42:37.790Z"
+}

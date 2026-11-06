@@ -1,0 +1,40 @@
+{
+  "tab": "トリニティアポ",
+  "tabEn": "tri-life",
+  "row": 407,
+  "sheet": {
+    "name": "塗装屋雄組",
+    "address": "",
+    "url": "https://www.google.com/maps/search/?api=1&query=%E5%A1%97%E8%A3%85%E5%B1%8B%E9%9B%84%E7%B5%84%20014-477-7143%20%E3%80%92059-1271%20%E5%8C%97%E6%B5%B7%E9%81%93%E8%8B%AB%E5%B0%8F%E7%89%A7%E5%B8%82%E6%BE%84%E5%B7%9D%E7%94%BA%EF%BC%96%E4%B8%81%E7%9B%AE%EF%BC%91%EF%BC%90%E2%88%92%EF%BC%92%EF%BC%93",
+    "type": "ライフスタイル",
+    "d1": "",
+    "d2": ""
+  },
+  "urlKind": "mapsApi",
+  "route": "第1段(verify-gbp.mjs)で確認済み",
+  "verdict": "一致",
+  "verdictReason": "手がかり: 電話＋住所(番地まで)。電話が一致／店名: different(シート「塗装屋雄組」/ マップ「外壁塗装・屋根塗装専門店塗装屋ユウグミ」)／住所(シート): exact・町名・番地とも一致",
+  "place": {
+    "name": "外壁塗装・屋根塗装専門店塗装屋ユウグミ",
+    "address": "北海道苫小牧市澄川町６丁目１０−２３",
+    "category": "塗装工",
+    "lat": 42.6226059,
+    "lng": 141.5103672,
+    "gbpUrl": "https://maps.google.com/?cid=8503639461378687376",
+    "phone": "0144-77-7143",
+    "website": "https://line.me/R/ti/p/@916bogqe",
+    "hours": {
+      "月": "08:00–19:00",
+      "火": "08:00–19:00",
+      "水": "08:00–19:00",
+      "木": "08:00–19:00",
+      "金": "08:00–19:00",
+      "土": "08:30–18:00",
+      "日": "定休日"
+    },
+    "reserveLinks": [],
+    "statusSignals": [],
+    "closedSignal": false
+  },
+  "fetchedAt": "2026-11-06T11:43:46.950Z"
+}

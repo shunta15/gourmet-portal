@@ -1,0 +1,32 @@
+{
+  "tab": "トリニティアポ",
+  "tabEn": "tri-stay",
+  "row": 403,
+  "sheet": {
+    "name": "RYOKAN優勝館",
+    "address": "",
+    "url": "https://www.google.com/maps/search/?api=1&query=RYOKAN%E5%84%AA%E5%8B%9D%E9%A4%A8%2006-6997-3556%20",
+    "type": "宿泊",
+    "d1": "",
+    "d2": ""
+  },
+  "urlKind": "mapsApi",
+  "route": "第1段(verify-gbp.mjs)で確認済み",
+  "verdict": "一致",
+  "verdictReason": "手がかり: 店名＋電話。電話が一致／店名: exact(シート「RYOKAN優勝館」/ マップ「RYOKAN優勝館」)",
+  "place": {
+    "name": "RYOKAN優勝館",
+    "address": "大阪府守口市南寺方東通２丁目１−１３",
+    "category": null,
+    "lat": 34.7206994,
+    "lng": 135.5719806,
+    "gbpUrl": "https://maps.google.com/?cid=16633824850190868802",
+    "phone": "06-6997-3556",
+    "website": "https://yuusyoukan.hp.peraichi.com/",
+    "hours": null,
+    "reserveLinks": [],
+    "statusSignals": [],
+    "closedSignal": false
+  },
+  "fetchedAt": "2026-11-06T11:40:44.038Z"
+}

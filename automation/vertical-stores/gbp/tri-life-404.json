@@ -1,0 +1,40 @@
+{
+  "tab": "トリニティアポ",
+  "tabEn": "tri-life",
+  "row": 404,
+  "sheet": {
+    "name": "妙照寺",
+    "address": "",
+    "url": "https://www.google.com/maps/search/?api=1&query=%E5%A6%99%E7%85%A7%E5%AF%BA%20077-222-2996%20%E3%80%92626-0029%20%E4%BA%AC%E9%83%BD%E5%BA%9C%E5%AE%AE%E6%B4%A5%E5%B8%82%E9%87%91%E5%B1%8B%E8%B0%B7%EF%BC%98%EF%BC%98%EF%BC%93",
+    "type": "寺",
+    "d1": "",
+    "d2": ""
+  },
+  "urlKind": "mapsApi",
+  "route": "第1段(verify-gbp.mjs)で確認済み",
+  "verdict": "一致",
+  "verdictReason": "手がかり: 店名＋電話＋住所(番地まで)。電話が一致／店名: contains(シート「妙照寺」/ マップ「功徳山 妙照寺」)／住所(シート): exact・町名・番地とも一致",
+  "place": {
+    "name": "功徳山 妙照寺",
+    "address": "京都府宮津市金屋谷８８３",
+    "category": "仏教寺院",
+    "lat": 35.5341468,
+    "lng": 135.1902434,
+    "gbpUrl": "https://maps.google.com/?cid=15287262409815314761",
+    "phone": "0772-22-2996",
+    "website": "https://easier.jp/vqgNUjDN#1726",
+    "hours": {
+      "月": "24時間営業",
+      "火": "24時間営業",
+      "水": "24時間営業",
+      "木": "24時間営業",
+      "金": "24時間営業",
+      "土": "24時間営業",
+      "日": "24時間営業"
+    },
+    "reserveLinks": [],
+    "statusSignals": [],
+    "closedSignal": false
+  },
+  "fetchedAt": "2026-11-06T11:41:49.329Z"
+}

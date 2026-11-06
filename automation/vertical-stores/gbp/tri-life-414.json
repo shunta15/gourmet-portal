@@ -1,0 +1,32 @@
+{
+  "tab": "トリニティアポ",
+  "tabEn": "tri-life",
+  "row": 414,
+  "sheet": {
+    "name": "太岳院",
+    "address": "",
+    "url": "https://www.google.com/maps/search/?api=1&query=%E5%A4%AA%E5%B2%B3%E9%99%A2%20046-381-0845%20%E3%80%92257-0014%20%E7%A5%9E%E5%A5%88%E5%B7%9D%E7%9C%8C%E7%A7%A6%E9%87%8E%E5%B8%82%E4%BB%8A%E6%B3%89%EF%BC%93%EF%BC%99%EF%BC%91",
+    "type": "寺",
+    "d1": "",
+    "d2": ""
+  },
+  "urlKind": "mapsApi",
+  "route": "第1段(verify-gbp.mjs)で確認済み",
+  "verdict": "一致",
+  "verdictReason": "手がかり: 店名＋電話＋住所(番地まで)。電話が一致／店名: exact(シート「太岳院」/ マップ「太岳院」)／住所(シート): exact・町名・番地とも一致",
+  "place": {
+    "name": "太岳院",
+    "address": "神奈川県秦野市今泉３９１",
+    "category": "仏教寺院",
+    "lat": 35.3677479,
+    "lng": 139.2237345,
+    "gbpUrl": "https://maps.google.com/?cid=16054780617578347143",
+    "phone": "0463-81-0845",
+    "website": "https://www.hiratsuka-kankou.com/spot/33koumyouji.html",
+    "hours": null,
+    "reserveLinks": [],
+    "statusSignals": [],
+    "closedSignal": false
+  },
+  "fetchedAt": "2026-11-06T11:44:56.407Z"
+}

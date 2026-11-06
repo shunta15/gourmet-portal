@@ -21616,6 +21616,104 @@ export const ARTICLE_STORES: Restaurant[] = [
       "ランチ"
     ],
     "featureId": "アンシャーリーハウス"
+  },
+  {
+    "id": "r896",
+    "name": "サニーハウス",
+    "cuisine": "コーヒーショップ・喫茶店",
+    "area": "兵庫県・西宮市",
+    "region": "hyogo",
+    "shape": "square",
+    "image": "/restaurants/teleapo-サニーハウス/hero.jpg",
+    "heroImages": [
+      "/restaurants/teleapo-サニーハウス/hero.jpg",
+      "/restaurants/teleapo-サニーハウス/point1.jpg",
+      "/restaurants/teleapo-サニーハウス/point2.jpg",
+      "/restaurants/teleapo-サニーハウス/point3.jpg"
+    ],
+    "gallery": [
+      "/restaurants/teleapo-サニーハウス/hero.jpg",
+      "/restaurants/teleapo-サニーハウス/point1.jpg",
+      "/restaurants/teleapo-サニーハウス/point2.jpg",
+      "/restaurants/teleapo-サニーハウス/point3.jpg"
+    ],
+    "desc": "2017年6月、マスターが退職を機に自宅の2階を改装して開いた古本屋併設カフェで、店名をサニーハウスという。",
+    "address": "兵庫県西宮市甲子園三番町4-13 2F",
+    "hours": "水〜土 10:00–17:00",
+    "closed": "月曜・火曜・日曜",
+    "seats": "7席（禁煙）",
+    "nearest": "—",
+    "phone": "0798-47-0918",
+    "source": {
+      "label": "Google ビジネスプロフィール",
+      "url": "https://maps.google.com/?cid=13075569320751438257"
+    },
+    "body": [
+      "サニーハウスは、兵庫県西宮市にあるお店です。業態は「コーヒーショップ・喫茶店」、所在地は兵庫県西宮市甲子園三番町4-13 2Fです。マチノワ編集部の特集記事では、「注文後に仕上げるポークソーセージトーストとフレンチトーストサンド」・「手淹れコーヒーと「復刻ブレンド」、アルコールも揃える飲み物」などを取り上げています。",
+      "営業時間は水〜土 10:00–17:00、定休日は月曜・火曜・日曜です（Googleマップの営業時間による）。席は7席（禁煙）。営業時間や価格は変わることがあるため、訪問前に公式サイトやSNS、お電話でご確認ください。"
+    ],
+    "highlights": [
+      "注文後に仕上げるポークソーセージトーストとフレンチトーストサンド",
+      "手淹れコーヒーと「復刻ブレンド」、アルコールも揃える飲み物",
+      "本棚に囲まれた1人席とテラス、子ども向けの個室"
+    ],
+    "tags": [
+      "コーヒーショップ・喫茶店",
+      "西宮市",
+      "ランチ"
+    ],
+    "featureId": "サニーハウス"
+  },
+  {
+    "id": "r897",
+    "name": "フール ア ボワ",
+    "cuisine": "ベーカリー",
+    "area": "群馬県・前橋市",
+    "region": "gunma",
+    "shape": "square",
+    "image": "/restaurants/teleapo-フールアボワ/hero.jpg",
+    "heroImages": [
+      "/restaurants/teleapo-フールアボワ/hero.jpg",
+      "/restaurants/teleapo-フールアボワ/point1.jpg",
+      "/restaurants/teleapo-フールアボワ/point2.jpg",
+      "/restaurants/teleapo-フールアボワ/point3.jpg",
+      "/restaurants/teleapo-フールアボワ/point4.jpg"
+    ],
+    "gallery": [
+      "/restaurants/teleapo-フールアボワ/hero.jpg",
+      "/restaurants/teleapo-フールアボワ/point1.jpg",
+      "/restaurants/teleapo-フールアボワ/point2.jpg",
+      "/restaurants/teleapo-フールアボワ/point3.jpg",
+      "/restaurants/teleapo-フールアボワ/point4.jpg"
+    ],
+    "desc": "2019年4月20日、薪窯パン工房「フール ア ボワ」がオープンした。",
+    "address": "群馬県前橋市敷島町240-86",
+    "hours": "水〜日 10:30–16:30",
+    "closed": "月曜・火曜",
+    "seats": "—（訪問前に公式確認）",
+    "nearest": "—",
+    "phone": "080-3414-0908",
+    "source": {
+      "label": "Google ビジネスプロフィール",
+      "url": "https://maps.google.com/?cid=16712733943471056117"
+    },
+    "body": [
+      "フール ア ボワは、群馬県前橋市にあるお店です。業態は「ベーカリー」、所在地は群馬県前橋市敷島町240-86です。マチノワ編集部の特集記事では、「フランス製薪窯で焼き上げるハード系パン」・「プレッツェル、マカダミアリュスティック、フーガスなど約20種」などを取り上げています。",
+      "営業時間は水〜日 10:30–16:30、定休日は月曜・火曜です（Googleマップの営業時間による）。営業時間や価格は変わることがあるため、訪問前に公式サイトやSNS、お電話でご確認ください。"
+    ],
+    "highlights": [
+      "フランス製薪窯で焼き上げるハード系パン",
+      "プレッツェル、マカダミアリュスティック、フーガスなど約20種",
+      "グランボワが手がける薪窯工房、フリッツ・アートセンターの前庭",
+      "敷島公園隣接のテイクアウト専門、窓口スタイルの購入"
+    ],
+    "tags": [
+      "ベーカリー",
+      "パン",
+      "前橋市",
+      "ランチ"
+    ],
+    "featureId": "フールアボワ"
   }
 ];
 
@@ -22072,7 +22170,9 @@ export const ARTICLE_STORE_FEATURE_IDS: Record<string, string> = {
   "r892": "秀珍",
   "r893": "ラーメンほうらん鉾田家",
   "r894": "cafevinoBLANCO",
-  "r895": "アンシャーリーハウス"
+  "r895": "アンシャーリーハウス",
+  "r896": "サニーハウス",
+  "r897": "フールアボワ"
 };
 
 /** 特集記事ID → 店舗ID */
@@ -22528,5 +22628,7 @@ export const ARTICLE_STORE_ID_BY_FEATURE: Record<string, string> = {
   "秀珍": "r892",
   "ラーメンほうらん鉾田家": "r893",
   "cafevinoBLANCO": "r894",
-  "アンシャーリーハウス": "r895"
+  "アンシャーリーハウス": "r895",
+  "サニーハウス": "r896",
+  "フールアボワ": "r897"
 };

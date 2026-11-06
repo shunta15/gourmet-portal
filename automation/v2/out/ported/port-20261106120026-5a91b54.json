@@ -1,0 +1,118 @@
+{
+  "commit": "5a91b546da349dc912163a78695e1f45cbe0b48e",
+  "source": "/Users/shunta/claude/gp-k-auto2",
+  "count": 10,
+  "added": [
+    {
+      "row": 403,
+      "name": "RYOKAN優勝館",
+      "key": "tri-stay-403",
+      "vertical": "ステイ",
+      "id": "st0026",
+      "articleId": "st0026",
+      "shopUrl": "https://machinowa.tokyo/stay/shop/st0026",
+      "articleUrl": "https://machinowa.tokyo/stay/article/st0026",
+      "sheetUrl": "https://machinowa.tokyo/stay/article/st0026"
+    },
+    {
+      "row": 404,
+      "name": "妙照寺",
+      "key": "tri-life-404",
+      "vertical": "くらし",
+      "id": "li0173",
+      "articleId": "li0173",
+      "shopUrl": "https://machinowa.tokyo/life/shop/li0173",
+      "articleUrl": "https://machinowa.tokyo/life/article/li0173",
+      "sheetUrl": "https://machinowa.tokyo/life/article/li0173"
+    },
+    {
+      "row": 405,
+      "name": "天恩寺",
+      "key": "tri-life-405",
+      "vertical": "くらし",
+      "id": "li0174",
+      "articleId": "li0174",
+      "shopUrl": "https://machinowa.tokyo/life/shop/li0174",
+      "articleUrl": "https://machinowa.tokyo/life/article/li0174",
+      "sheetUrl": "https://machinowa.tokyo/life/article/li0174"
+    },
+    {
+      "row": 406,
+      "name": "円龍寺",
+      "key": "tri-life-406",
+      "vertical": "くらし",
+      "id": "li0175",
+      "articleId": "li0175",
+      "shopUrl": "https://machinowa.tokyo/life/shop/li0175",
+      "articleUrl": "https://machinowa.tokyo/life/article/li0175",
+      "sheetUrl": "https://machinowa.tokyo/life/article/li0175"
+    },
+    {
+      "row": 407,
+      "name": "塗装屋雄組",
+      "key": "tri-life-407",
+      "vertical": "くらし",
+      "id": "li0176",
+      "articleId": "li0176",
+      "shopUrl": "https://machinowa.tokyo/life/shop/li0176",
+      "articleUrl": "https://machinowa.tokyo/life/article/li0176",
+      "sheetUrl": "https://machinowa.tokyo/life/article/li0176"
+    },
+    {
+      "row": 412,
+      "name": "サニーハウス",
+      "key": "tri-gourmet-412",
+      "vertical": "グルメ",
+      "id": "r896",
+      "articleId": "サニーハウス",
+      "shopUrl": "https://machinowa.tokyo/restaurant/r896",
+      "articleUrl": "https://machinowa.tokyo/feature/サニーハウス",
+      "sheetUrl": "https://machinowa.tokyo/feature/サニーハウス"
+    },
+    {
+      "row": 414,
+      "name": "太岳院",
+      "key": "tri-life-414",
+      "vertical": "くらし",
+      "id": "li0177",
+      "articleId": "li0177",
+      "shopUrl": "https://machinowa.tokyo/life/shop/li0177",
+      "articleUrl": "https://machinowa.tokyo/life/article/li0177",
+      "sheetUrl": "https://machinowa.tokyo/life/article/li0177"
+    },
+    {
+      "row": 415,
+      "name": "山荘やなはら",
+      "key": "tri-stay-415",
+      "vertical": "ステイ",
+      "id": "st0027",
+      "articleId": "st0027",
+      "shopUrl": "https://machinowa.tokyo/stay/shop/st0027",
+      "articleUrl": "https://machinowa.tokyo/stay/article/st0027",
+      "sheetUrl": "https://machinowa.tokyo/stay/article/st0027"
+    },
+    {
+      "row": 416,
+      "name": "フール ア ボワ",
+      "key": "tri-gourmet-416",
+      "vertical": "グルメ",
+      "id": "r897",
+      "articleId": "フールアボワ",
+      "shopUrl": "https://machinowa.tokyo/restaurant/r897",
+      "articleUrl": "https://machinowa.tokyo/feature/フールアボワ",
+      "sheetUrl": "https://machinowa.tokyo/feature/フールアボワ"
+    },
+    {
+      "row": 418,
+      "name": "宝菩提院願徳寺",
+      "key": "tri-life-418",
+      "vertical": "くらし",
+      "id": "li0178",
+      "articleId": "li0178",
+      "shopUrl": "https://machinowa.tokyo/life/shop/li0178",
+      "articleUrl": "https://machinowa.tokyo/life/article/li0178",
+      "sheetUrl": "https://machinowa.tokyo/life/article/li0178"
+    }
+  ],
+  "skipped": []
+}

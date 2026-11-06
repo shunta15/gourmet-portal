@@ -26185,6 +26185,982 @@
         ],
         "checkedAt": "2026-11-06"
       }
+    },
+    {
+      "id": "li0173",
+      "vertical": "life",
+      "category": "shrine-temple",
+      "name": "功徳山 妙照寺",
+      "pref": "kyoto",
+      "cityName": "宮津市",
+      "address": "京都府宮津市金屋谷883",
+      "lat": 35.5341468,
+      "lng": 135.1902434,
+      "phone": "0772-22-2996",
+      "url": "https://easier.jp/vqgNUjDN#1726",
+      "website": "https://easier.jp/vqgNUjDN#1726",
+      "mapUrl": "https://maps.google.com/?cid=15287262409815314761",
+      "image": "/_portal/vshops/tri-life-404/g01.jpg",
+      "images": [
+        "/_portal/vshops/tri-life-404/g01.jpg",
+        "/_portal/vshops/tri-life-404/g02.jpg",
+        "/_portal/vshops/tri-life-404/g03.jpg",
+        "/_portal/vshops/tri-life-404/g04.jpg",
+        "/_portal/vshops/tri-life-404/g05.jpg",
+        "/_portal/vshops/tri-life-404/g06.jpg",
+        "/_portal/vshops/tri-life-404/g07.jpg",
+        "/_portal/vshops/tri-life-404/g08.jpg",
+        "/_portal/vshops/tri-life-404/g09.jpg",
+        "/_portal/vshops/tri-life-404/g10.jpg",
+        "/_portal/vshops/tri-life-404/s02.jpg",
+        "/_portal/vshops/tri-life-404/s03.jpg",
+        "/_portal/vshops/tri-life-404/s04.jpg",
+        "/_portal/vshops/tri-life-404/s05.jpg",
+        "/_portal/vshops/tri-life-404/s06.jpg",
+        "/_portal/vshops/tri-life-404/s07.jpg",
+        "/_portal/vshops/tri-life-404/s08.jpg",
+        "/_portal/vshops/tri-life-404/s09.jpg",
+        "/_portal/vshops/tri-life-404/s10.jpg",
+        "/_portal/vshops/tri-life-404/s12.jpg"
+      ],
+      "photos": [
+        {
+          "path": "/_portal/vshops/tri-life-404/g01.jpg",
+          "what": "石塀と木々に囲まれた山門外観",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-life-404/g02.jpg",
+          "what": "本堂内部の仏壇と装飾",
+          "kind": "common",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-life-404/g03.jpg",
+          "what": "本堂正面の外観",
+          "kind": "exterior",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-life-404/g04.jpg",
+          "what": "夕暮れの境内と木々",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-life-404/g05.jpg",
+          "what": "山門と本堂のある境内全景",
+          "kind": "exterior",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-life-404/g06.jpg",
+          "what": "本堂の廊下と縁側",
+          "kind": "common",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-life-404/g07.jpg",
+          "what": "本堂の正面と扁額",
+          "kind": "exterior",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-life-404/g08.jpg",
+          "what": "雪が積もる境内と建物",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-life-404/g09.jpg",
+          "what": "夜の境内と吊り灯籠",
+          "kind": "exterior",
+          "width": 676,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-life-404/g10.jpg",
+          "what": "本堂内部の仏具と装飾",
+          "kind": "common",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-life-404/s02.jpg",
+          "what": "山門と本堂のある境内",
+          "kind": "exterior",
+          "width": 1280,
+          "height": 640
+        },
+        {
+          "path": "/_portal/vshops/tri-life-404/s03.jpg",
+          "what": "金色の装飾細工のクローズアップ",
+          "kind": "common",
+          "width": 1280,
+          "height": 373
+        },
+        {
+          "path": "/_portal/vshops/tri-life-404/s04.jpg",
+          "what": "本堂で手を合わせる参拝者",
+          "kind": "common",
+          "width": 1280,
+          "height": 960
+        },
+        {
+          "path": "/_portal/vshops/tri-life-404/s05.jpg",
+          "what": "古い文書・墨書の一葉",
+          "kind": "common",
+          "width": 1280,
+          "height": 960
+        },
+        {
+          "path": "/_portal/vshops/tri-life-404/s06.jpg",
+          "what": "本堂内部の仏壇と天蓋",
+          "kind": "common",
+          "width": 1280,
+          "height": 960
+        },
+        {
+          "path": "/_portal/vshops/tri-life-404/s07.jpg",
+          "what": "境内で合掌する僧侶の後ろ姿",
+          "kind": "exterior",
+          "width": 1280,
+          "height": 853
+        },
+        {
+          "path": "/_portal/vshops/tri-life-404/s08.jpg",
+          "what": "石畳の参道と境内の建物",
+          "kind": "exterior",
+          "width": 1280,
+          "height": 853
+        },
+        {
+          "path": "/_portal/vshops/tri-life-404/s09.jpg",
+          "what": "緑の山並みと青空の景色",
+          "kind": "view",
+          "width": 1280,
+          "height": 853
+        },
+        {
+          "path": "/_portal/vshops/tri-life-404/s10.jpg",
+          "what": "「功徳山 妙照寺」と刻まれた石碑",
+          "kind": "exterior",
+          "width": 1280,
+          "height": 720
+        },
+        {
+          "path": "/_portal/vshops/tri-life-404/s12.jpg",
+          "what": "横長の境内全景と山門",
+          "kind": "exterior",
+          "width": 1280,
+          "height": 645
+        }
+      ],
+      "tags": [
+        "駐車場あり"
+      ],
+      "article": {
+        "headline": "宮津市金屋谷の寺町に建つ、日蓮宗の古刹。1444年の創建から580年余の歴史をもち、市指定文化財の日蓮上人坐像を納める。",
+        "lede": "宮津市にある「功徳山 妙照寺（みょうしょうじ）」です。日蓮宗総本山である身延山久遠寺の直末寺として、文安元年（1444年）に日養上人によって丹後府中の地に創建されました。永正4年（1507年）、一色氏と若狭武田氏の戦いによって兵火に遭い、翌5年（1508年）に一色義有によって現在の金屋谷に移転。以来、金屋谷の寺町において最も古い由緒をもつ寺院として、地域の信仰とともに歩んできました。境内は山門・本堂・庫裡で構成され、本堂東側には加藤清正を祀る清正堂を付設します。高台からは日本三景・天橋立を望む景色が広がり、四季折々の自然の中で静かにお参りできる場所です。現住職は森淳亮（もり じゅんりょう）師で、2000年に住職職を継承しています。",
+        "sections": [
+          {
+            "heading": "由緒・歴史",
+            "body": "妙照寺の始まりは、文安元年（1444年）9月、日養上人が丹後府中の地に創建したことに遡ります。日養上人は身延山から丹後へ来て法華経を広めた人物で、その折に随持してきた日蓮上人坐像を安置したと伝わります。永正4年（1507年）、若狭武田氏の侵入に際して兵火に遭い、翌永正5年（1508年）、一色義有によって現在の金屋谷の地に移転しました。江戸時代には地域の中心的な寺院として発展し、明治の廃仏毀釈の困難を乗り越え、信仰を守り続けました。平成30年（2018年）には永代供養塔を設置し、現代のニーズにも対応しています。日蓮宗総本山・身延山久遠寺の直末寺であり、宮津寺町の寺院の中で最も古い由緒をもちます。"
+          },
+          {
+            "heading": "内容（商品・サービス・教え）",
+            "body": "妙照寺では、永代供養の合同納骨プランを設けています。跡継ぎの有無にかかわらず、寺が責任をもって永代にわたり遺骨を管理・供養する仕組みです。宗旨・宗派を問わず申し込むことができ、生前からの申し込みにも対応しています。お申し込みの流れは、まず電話またはお問い合わせフォームで連絡し、実際に境内や永代供養塔を見学した上で契約、その後希望の日程で納骨法要を執り行います。納骨後は、寺が永代にわたり供養を担います。また、開門時間中はいつでも自由にお参りができます。日常の法要相談は電話（0772-22-2996）やお問い合わせフォームから受け付けています。"
+          },
+          {
+            "heading": "設備・場所の特徴",
+            "body": "境内は山門・本堂・庫裡で構成されています。本堂は入母屋造瓦葺の建築で、18世紀半ばの建立と考えられています。本堂東側には清正堂を付設し、日蓮宗の信仰と縁深い加藤清正を祀ります。境内には永代供養塔があり、常に清掃が行き届いています。春は桜、秋は紅葉と、四季ごとに異なる風景が広がる静かな供養の場です。また、高台から日本三景・天橋立を望むことができ、心穏やかな時間を過ごせる環境です。駐車場を完備しており、車でのアクセスも便利です。"
+          },
+          {
+            "heading": "行き方と使い方",
+            "body": "北近畿タンゴ鉄道宮豊線・宮舞線の宮津駅から徒歩約14分の距離にあります。境内には駐車場を完備しており、車でも訪れることができます。永代供養やお参りの相談は、まず電話（0772-22-2996）またはお問い合わせフォームから連絡し、見学の日程を調整します。なお、市指定文化財の日蓮上人坐像は毎月第1日曜日の午前中のみ開帳されます。法要などで対応できない場合もあるため、訪問前に電話で確認することをおすすめします。"
+          }
+        ],
+        "sources": [
+          {
+            "label": "公式サイト",
+            "url": "https://easier.jp/vqgNUjDN"
+          },
+          {
+            "label": "宮津市ホームページ",
+            "url": "https://www.city.miyazu.kyoto.jp/soshiki/17/4861.html"
+          },
+          {
+            "label": "ホトカミ",
+            "url": "https://hotokami.jp/area/kyoto/Hmptg/Hmptgtk/Dgzty/5299/"
+          },
+          {
+            "label": "宮津市ホームページ（寺町記事）",
+            "url": "https://www.city.miyazu.kyoto.jp/site/citypro/5105.html"
+          },
+          {
+            "label": "Google マップ",
+            "url": "https://maps.google.com/?cid=15287262409815314761"
+          }
+        ],
+        "checkedAt": "2026-11-06"
+      }
+    },
+    {
+      "id": "li0174",
+      "vertical": "life",
+      "category": "shrine-temple",
+      "name": "天恩寺",
+      "pref": "aichi",
+      "cityName": "岡崎市",
+      "address": "愛知県岡崎市片寄町山下59",
+      "lat": 34.924096,
+      "lng": 137.3142252,
+      "phone": "0564-82-2433",
+      "mapUrl": "https://maps.google.com/?cid=1393510638409578582",
+      "image": "/_portal/vshops/tri-life-405/g01.jpg",
+      "images": [
+        "/_portal/vshops/tri-life-405/g01.jpg",
+        "/_portal/vshops/tri-life-405/g02.jpg",
+        "/_portal/vshops/tri-life-405/g03.jpg",
+        "/_portal/vshops/tri-life-405/g04.jpg",
+        "/_portal/vshops/tri-life-405/g05.jpg",
+        "/_portal/vshops/tri-life-405/g06.jpg",
+        "/_portal/vshops/tri-life-405/g07.jpg",
+        "/_portal/vshops/tri-life-405/g08.jpg",
+        "/_portal/vshops/tri-life-405/g09.jpg",
+        "/_portal/vshops/tri-life-405/g10.jpg"
+      ],
+      "photos": [
+        {
+          "path": "/_portal/vshops/tri-life-405/g01.jpg",
+          "what": "瓦屋根の山門と砂利の境内",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-life-405/g02.jpg",
+          "what": "木々に囲まれた石橋と参道",
+          "kind": "exterior",
+          "width": 675,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-life-405/g03.jpg",
+          "what": "石積みの壁と山門",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-life-405/g04.jpg",
+          "what": "石垣と石段、奥に建物",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-life-405/g05.jpg",
+          "what": "石仏が立つ境内の景色",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 800
+        },
+        {
+          "path": "/_portal/vshops/tri-life-405/g06.jpg",
+          "what": "大きな杉の木が立つ境内",
+          "kind": "exterior",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-life-405/g07.jpg",
+          "what": "本堂と庭の全景",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 675
+        },
+        {
+          "path": "/_portal/vshops/tri-life-405/g08.jpg",
+          "what": "苔むした長い石段",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-life-405/g09.jpg",
+          "what": "石橋と池の景観",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-life-405/g10.jpg",
+          "what": "石灯籠が並ぶ屋根付きの堂",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 900
+        }
+      ],
+      "tags": [
+        "駐車場あり"
+      ],
+      "article": {
+        "headline": "貞治元年（1362年）創建、足利尊氏ゆかりの臨済宗妙心寺派の古刹。国指定重要文化財の仏殿と山門を境内に持つ。",
+        "lede": "岡崎市にある「天恩寺」は、廣澤山を山号とする臨済宗妙心寺派の寺院です。貞治元年（1362年）、室町幕府第3代将軍・足利義満が、父・足利尊氏の遺命を受けて建立したと伝わります。尊氏は矢作川の戦い（1336年）の際にこの地へ逃れ、本尊の延命地蔵菩薩に戦勝を祈願。翌日の戦いで勝利を収めたものの、寺院建立の約束を果たすことができないまま世を去り、義満がその遺言を受け継いで伽藍を整えました。三河地方における臨済宗妙心寺派の中心的な寺院として歩みを続け、戦国期には徳川家康とも深いかかわりを持ちました。境内には国の重要文化財に指定された仏殿と山門が現存し、600年以上の歴史を今に伝えています。",
+        "sections": [
+          {
+            "heading": "由緒・歴史",
+            "body": "天恩寺の創建は貞治元年（1362年）で、足利義満が尊氏の遺命により建立したとされます。1382年には義満自筆の山号・寺号が下付され、1423年には第4代将軍・足利義持が祈願所に定めました。応仁の乱などで室町幕府が衰退すると寺の勢力も低迷しましたが、戦国期に額田を治めた奥平氏の庇護を受けて再興しました。江戸時代に入ると、1602年に徳川家康から片寄村79石余の寄進を受け、寺域が整えられました。境内の石垣は慶長から元和にかけて造られたとされ、「整層礁石積み」と呼ばれる工法が用いられています。石段から山門をくぐると杉の老木が枝を広げ、石牛池を望む深山幽谷の趣が漂います。"
+          },
+          {
+            "heading": "国指定重要文化財の仏殿と山門",
+            "body": "境内には国の重要文化財に指定された建造物が2棟あります。仏殿は桁行3間・梁間3間の入母屋造で、檜皮葺の屋根を持ち、室町初期の造営と考えられています。禅宗様建築の様式で建てられており、内部には来迎柱・鏡天井・須弥壇が設けられています。山門は一間一戸の薬医門でこけら葺の屋根を持ち、室町後期の建立とされます。笈形には雲状の立体彫刻が施されており、日本最古の薬医門として知られています。苔むした50段余の石段を上った先に両建物が並び、室町時代の禅宗建築の姿を今に伝えています。"
+          },
+          {
+            "heading": "見返りの大杉と家康の逸話",
+            "body": "境内には「見返りの大杉」と呼ばれる老杉が現存しています。天正3年（1575年）、長篠の戦いに向かう徳川家康がこの天恩寺を宿所としました。翌朝、家康が大杉の下を通りかかると、本尊の延命地蔵菩薩が呼び止め、大杉の影に潜んでいた敵の刺客から身を守ることができたと伝わります。家康はその後、幾度も大杉を振り返りながら長篠へ向かったとされ、このことから「見返りの大杉」と呼ばれるようになりました。この杉は樹齢約450年の天然記念物で、今も境内に立っています。境内には松の木も植えられており、岡崎市の「故郷の銘木」に選ばれています。"
+          },
+          {
+            "heading": "行き方と使い方",
+            "body": "天恩寺へは、名鉄本線「本宿駅」から名鉄バスのくらがり渓谷行きに乗り「片寄」バス停で下車し、徒歩7分ほどで到着します。お車の場合は岡崎東ICから約10分で、境内に50台分の駐車場があります。境内は随時参拝できます。御朱印の授与は、事前に電話（0564-82-2433）での確認が案内されています。法要や行事については寺務所へお問い合わせください。"
+          }
+        ],
+        "sources": [
+          {
+            "label": "ホトカミ",
+            "url": "https://hotokami.jp/area/aichi/Hmrts/Hmrtstm/Dktttz/72907/"
+          },
+          {
+            "label": "愛知県歴史観光ガイド",
+            "url": "https://rekishi-kanko.pref.aichi.jp/place/place133-2.html"
+          },
+          {
+            "label": "旅マグ",
+            "url": "https://tabi-mag.jp/ai0457/"
+          },
+          {
+            "label": "甲信寺社宝鑑",
+            "url": "https://www.hineriman.work/entry/2020/11/01/063000"
+          },
+          {
+            "label": "岡崎おでかけナビ（ニュース）",
+            "url": "https://okazaki-kanko.jp/news/944"
+          },
+          {
+            "label": "Google マップ",
+            "url": "https://maps.google.com/?cid=1393510638409578582"
+          }
+        ],
+        "checkedAt": "2026-11-06"
+      }
+    },
+    {
+      "id": "li0175",
+      "vertical": "life",
+      "category": "shrine-temple",
+      "name": "真宗大谷派 竹林山 圓龍寺",
+      "pref": "aichi",
+      "cityName": "名古屋市緑区",
+      "address": "愛知県名古屋市緑区鳴海町本町11-1",
+      "lat": 35.0808739,
+      "lng": 136.951697,
+      "hours": "毎日 09:00 - 19:00",
+      "phone": "052-621-3005",
+      "mapUrl": "https://maps.google.com/?cid=4769318962709808541",
+      "image": "/_portal/vshops/tri-life-406/g01.jpg",
+      "images": [
+        "/_portal/vshops/tri-life-406/g01.jpg",
+        "/_portal/vshops/tri-life-406/g02.jpg",
+        "/_portal/vshops/tri-life-406/g03.jpg",
+        "/_portal/vshops/tri-life-406/g04.jpg",
+        "/_portal/vshops/tri-life-406/g05.jpg",
+        "/_portal/vshops/tri-life-406/g07.jpg",
+        "/_portal/vshops/tri-life-406/g08.jpg",
+        "/_portal/vshops/tri-life-406/g09.jpg"
+      ],
+      "photos": [
+        {
+          "path": "/_portal/vshops/tri-life-406/g01.jpg",
+          "what": "山門正面の外観",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-life-406/g02.jpg",
+          "what": "「竹林山 圓龍寺」と刻まれた寺号標と本堂外観",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-life-406/g03.jpg",
+          "what": "鐘楼に懸かる青銅製の梵鐘",
+          "kind": "exterior",
+          "width": 560,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-life-406/g04.jpg",
+          "what": "鐘楼の全景",
+          "kind": "exterior",
+          "width": 675,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-life-406/g05.jpg",
+          "what": "本堂内部の様子",
+          "kind": "common",
+          "width": 1200,
+          "height": 600
+        },
+        {
+          "path": "/_portal/vshops/tri-life-406/g07.jpg",
+          "what": "境内の石碑",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-life-406/g08.jpg",
+          "what": "本堂内の仏壇と仏具",
+          "kind": "common",
+          "width": 989,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-life-406/g09.jpg",
+          "what": "名古屋市が設置した圓龍寺の案内板",
+          "kind": "exterior",
+          "width": 800,
+          "height": 1067
+        }
+      ],
+      "tags": [
+        "駐車場あり"
+      ],
+      "article": {
+        "headline": "名古屋市緑区鳴海町、東海道鳴海宿に建つ真宗大谷派の古刹。約700年以上の歴史をもち、東海道鳴海宿十一ヶ寺巡りの朱印請所のひとつ。",
+        "lede": "名古屋市緑区にある「竹林山 圓龍寺」は、真宗大谷派に属する仏教寺院です。東海道の宿場町として栄えた鳴海宿の一角、鳴海廃寺の跡地に立ち、700年以上の歴史を刻んできました。もとは天台宗の「善正寺」と称し、嘉禎年中（1235〜1238年）に僧・善念によって真宗に改められたと伝わります。その後、永禄3年（1560年）の桶狭間の戦いで伽藍を焼失。複数の場所を経由して現在地に移転し、寺宝である秘仏の薬師如来像が龍の蓮華台座に立つことから「圓龍寺」と称するようになりました。境内には本堂・鐘楼・梵鐘が整えられ、東海道鳴海宿十一ヶ寺巡りの朱印請所としても機能しています。名鉄名古屋本線・鳴海駅から徒歩6分ほどの場所にあり、境内南側に駐車場を備えています。",
+        "sections": [
+          {
+            "heading": "由緒・歴史",
+            "body": "圓龍寺の起源は700年以上前にさかのぼります。はじめは天台宗の「善正寺」として、この地を守護してきました。嘉禎年中（1235〜1238年）、親鸞聖人が関東からの帰洛の途中に善正寺に立ち寄り、当時の住職が他力念仏の法を聴いて聖人の弟子となり、浄土真宗へと改宗したと伝わります。法名を善念と賜り、寺名も善照寺と改めました。永禄3年（1560年）の桶狭間の戦いで伽藍が焼失した後、現在地（かつて花井屋敷と呼ばれた土地）に落ち着き、寺宝の秘仏・薬師如来像の龍座にちなんで「圓龍寺」の寺号を使うようになりました。この地は鳴海廃寺の跡地でもあり、軒丸瓦の出土が確認されています。"
+          },
+          {
+            "heading": "内容（商品・サービス・教え）",
+            "body": "圓龍寺の本尊は阿弥陀如来像です。寺宝として伝恵心僧都作とされる秘仏の薬師如来像を蔵しており、龍の蓮華台座に立つ姿が特徴的で、寺の名の由来となっています。境内には宝暦7年（1757年）建立の旧本堂の面影を受け継ぐ本堂（昭和60年・1985年に建て替え）と、鐘楼および梵鐘が備わります。東海道鳴海宿十一ヶ寺巡りの朱印請所のひとつとして機能しており、御朱印は「鳴海宿十一ヶ寺巡りの朱印帳」のみへの対応となっています。真宗大谷派の本山である東本願寺（京都）を総本山とし、日々の勤行や法要を通じて浄土真宗の教えを伝えています。"
+          },
+          {
+            "heading": "設備・場所の特徴",
+            "body": "圓龍寺の境内は、鳴海城跡にほど近い高台に位置しています。本堂の前面には駐車場が設けられており、高台の地形を活かした造りが特徴です。鐘楼には青銅製の梵鐘が懸けられ、境内に落ち着いた雰囲気をもたらしています。境内南側には駐車場があり、車での参拝も可能です。東海道の旧宿場町・鳴海宿に建ち、周辺には成海神社や天神社、鳴海城跡など歴史的なスポットが集まっており、まとめて散策することができます。"
+          },
+          {
+            "heading": "行き方と使い方",
+            "body": "名鉄名古屋本線「鳴海」駅から徒歩約6分でアクセスできます。鳴海駅の改札を出て、三菱UFJ銀行鳴海支店の裏手に進むと圓龍寺の山門が見えてきます。車での来寺には境内南側の駐車場をご利用ください。御朱印を希望する場合は、東海道鳴海宿十一ヶ寺巡りの朱印帳が必要です。朱印帳は桂林寺など周辺の寺院でも入手できます。法要や供養については、直接寺院にお問い合わせください。"
+          }
+        ],
+        "sources": [
+          {
+            "label": "ホトカミ",
+            "url": "https://hotokami.jp/area/aichi/Hmrtk/Hmrtkkm/Damyg/72351/"
+          },
+          {
+            "label": "名古屋市公式ウェブサイト（緑区・鳴海周辺のみどころ）",
+            "url": "https://www.city.nagoya.jp/midori/miryoku/1024793/1024801/1024802.html"
+          },
+          {
+            "label": "アメブロ（鳴海エリア史跡・神社・寺院）",
+            "url": "https://ameblo.jp/indyaki12/entry-12827656933.html"
+          },
+          {
+            "label": "Google マップ",
+            "url": "https://maps.google.com/?cid=4769318962709808541"
+          }
+        ],
+        "checkedAt": "2026-11-06"
+      }
+    },
+    {
+      "id": "li0176",
+      "vertical": "life",
+      "category": "car-repair",
+      "name": "外壁塗装・屋根塗装専門店塗装屋ユウグミ",
+      "pref": "hokkaido",
+      "cityName": "苫小牧市",
+      "address": "北海道苫小牧市澄川町6丁目10-23",
+      "lat": 42.6226059,
+      "lng": 141.5103672,
+      "hours": "月-金 08:00 - 19:00 / 土 08:30 - 18:00",
+      "holidays": "日曜",
+      "phone": "0144-77-7143",
+      "line": "https://line.me/R/ti/p/@916bogqe",
+      "mapUrl": "https://maps.google.com/?cid=8503639461378687376",
+      "image": "/_portal/vshops/tri-life-407/g01.jpg",
+      "images": [
+        "/_portal/vshops/tri-life-407/g01.jpg",
+        "/_portal/vshops/tri-life-407/g02.jpg",
+        "/_portal/vshops/tri-life-407/g03.jpg",
+        "/_portal/vshops/tri-life-407/g04.jpg",
+        "/_portal/vshops/tri-life-407/g05.jpg",
+        "/_portal/vshops/tri-life-407/g06.jpg",
+        "/_portal/vshops/tri-life-407/g07.jpg",
+        "/_portal/vshops/tri-life-407/g08.jpg",
+        "/_portal/vshops/tri-life-407/g10.jpg"
+      ],
+      "photos": [
+        {
+          "path": "/_portal/vshops/tri-life-407/g01.jpg",
+          "what": "施工後の屋根（黒い金属屋根を斜め上から捉えた写真）",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-life-407/g02.jpg",
+          "what": "外壁塗装のビフォーアフター（茶系からダーク系への塗り替え）",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 800
+        },
+        {
+          "path": "/_portal/vshops/tri-life-407/g03.jpg",
+          "what": "足場を組んだ施工中の建物と店の看板",
+          "kind": "exterior",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-life-407/g04.jpg",
+          "what": "足場を組んだ施工中の建物外観",
+          "kind": "exterior",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-life-407/g05.jpg",
+          "what": "白と黒のツートンカラーに塗り替えられた戸建て外壁",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-life-407/g06.jpg",
+          "what": "赤い屋根にローラーで塗装している作業の様子",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-life-407/g07.jpg",
+          "what": "足場を組んだ施工中の建物と看板",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-life-407/g08.jpg",
+          "what": "白く塗り替えられた戸建て外壁の施工後",
+          "kind": "exterior",
+          "width": 1080,
+          "height": 1080
+        },
+        {
+          "path": "/_portal/vshops/tri-life-407/g10.jpg",
+          "what": "外壁塗装のビフォーアフター（薄茶系から濃茶系への塗り替え）",
+          "kind": "exterior",
+          "width": 512,
+          "height": 512
+        }
+      ],
+      "tags": [],
+      "article": {
+        "headline": "苫小牧市を拠点に外壁・屋根塗装を手がける専門店。代表が自ら現場に立ち、下塗り・中塗り・上塗りの3回塗り施工を徹底する。",
+        "lede": "苫小牧市にある「外壁塗装・屋根塗装専門店 塗装屋ユウグミ」（塗装屋雄組）です。代表の鈴木雄大さんが2025年1月に立ち上げた塗装専門店で、業界歴7年以上の経験をもとに、完全自社施工で外壁・屋根の塗装工事を行います。「ゼンリョク・ムダゼロ・マジメ」をモットーに掲げ、下請けに出さず代表自らが現場に立ち会う体制を貫いています。苫小牧市を中心に、白老町・千歳市・恵庭市・厚真町・むかわ町・登別市・室蘭市・札幌市など北海道内の広いエリアに対応しています。見積もりと現地調査は無料で、公式LINEとInstagramからも相談を受け付けています。",
+        "sections": [
+          {
+            "heading": "内容（サービス・施工内容）",
+            "body": "外壁塗装・屋根塗装を主軸に、シーリング工事（建物のつなぎ目補修）・外壁洗浄・外壁張り替え・防水工事・付帯部塗装（破風・軒天・雨樋）まで幅広く対応します。橋梁塗装やプラント塗装工事も手がけています。塗装工程は高圧洗浄から始まり、下地処理・補修のうえで下塗り・中塗り・上塗りの3回塗りを施工します。使用する塗料は関西ペイント・日本ペイント・KFケミカルのものが中心で、無機塗料やラジカル制御型塗料など耐久性の高い製品を採用しています。メーカーと自社の保証を合わせ最大20年の保証がつきます。賃貸物件やアパートオーナー向けのリフォーム工事にも対応しています。"
+          },
+          {
+            "heading": "成り立ちと人",
+            "body": "塗装屋雄組は、代表の鈴木雄大さんが2025年1月6日に設立しました。鈴木さんは業界歴7年以上の経験を持つ塗装職人で、「施工品質は誰が塗るかで決まる」という考えのもと、完全自社施工にこだわっています。下請け業者に任せず、代表自らが現場に立ち会い責任を持って施工する体制を整えています。「ゼンリョク・ムダゼロ・マジメ」のモットーは、全力で取り組み、無駄な工程や手抜きをなくし、誠実に向き合うという姿勢を表しています。外壁塗装・屋根塗装に関して、苫小牧市を中心とした胆振・道央エリアで地域に密着した施工を続けています。"
+          },
+          {
+            "heading": "利用の流れ",
+            "body": "まず無料の現地調査と見積もりから始まります。現地確認のうえで施工プランと仕様を提案し、工事日程を決めます。工事は高圧洗浄→下地処理・補修→下塗り→中塗り→上塗りの順で進め、コーキング工事が必要な箇所はあわせて対応します。工事完了後はメーカー保証と自社保証が適用されます。相談・問い合わせは電話のほか、公式LINEとInstagramでも受け付けています。"
+          },
+          {
+            "heading": "行き方と使い方",
+            "body": "苫小牧駅から車で約10分の距離にあります。相談の窓口は電話のほか、公式LINEアカウントとInstagramからメッセージで問い合わせることができます。現地調査と見積もりは無料なので、外壁や屋根の状態を確かめたいときはまず連絡して調査を依頼するのが最初のステップです。施工エリアは苫小牧市を中心に白老町・千歳市・恵庭市・室蘭市・登別市・厚真町・むかわ町・札幌市など広く対応しています。"
+          }
+        ],
+        "menus": [
+          {
+            "name": "外壁塗装"
+          },
+          {
+            "name": "屋根塗装"
+          },
+          {
+            "name": "シーリング工事"
+          },
+          {
+            "name": "外壁洗浄"
+          },
+          {
+            "name": "外壁張り替え"
+          },
+          {
+            "name": "防水工事"
+          },
+          {
+            "name": "付帯部塗装"
+          },
+          {
+            "name": "橋梁・プラント塗装"
+          }
+        ],
+        "sources": [
+          {
+            "label": "公式サイト",
+            "url": "https://tosouya-yuugumi.com/"
+          },
+          {
+            "label": "外壁塗装マッチング",
+            "url": "https://gaiheki-match.com/company/1283"
+          },
+          {
+            "label": "Google マップ",
+            "url": "https://maps.google.com/?cid=8503639461378687376"
+          }
+        ],
+        "checkedAt": "2026-11-06"
+      }
+    },
+    {
+      "id": "li0177",
+      "vertical": "life",
+      "category": "shrine-temple",
+      "name": "太岳院",
+      "pref": "kanagawa",
+      "cityName": "秦野市",
+      "address": "神奈川県秦野市今泉391",
+      "lat": 35.3677479,
+      "lng": 139.2237345,
+      "phone": "0463-81-0845",
+      "url": "https://www.hiratsuka-kankou.com/spot/33koumyouji.html",
+      "website": "https://www.hiratsuka-kankou.com/spot/33koumyouji.html",
+      "mapUrl": "https://maps.google.com/?cid=16054780617578347143",
+      "image": "/_portal/vshops/tri-life-414/g01.jpg",
+      "images": [
+        "/_portal/vshops/tri-life-414/g01.jpg",
+        "/_portal/vshops/tri-life-414/g02.jpg",
+        "/_portal/vshops/tri-life-414/g03.jpg",
+        "/_portal/vshops/tri-life-414/g05.jpg",
+        "/_portal/vshops/tri-life-414/g06.jpg",
+        "/_portal/vshops/tri-life-414/g07.jpg",
+        "/_portal/vshops/tri-life-414/g08.jpg",
+        "/_portal/vshops/tri-life-414/g09.jpg",
+        "/_portal/vshops/tri-life-414/g10.jpg",
+        "/_portal/vshops/tri-life-414/s02.jpg",
+        "/_portal/vshops/tri-life-414/s06.jpg"
+      ],
+      "photos": [
+        {
+          "path": "/_portal/vshops/tri-life-414/g01.jpg",
+          "what": "山門正面と参道の様子",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-life-414/g02.jpg",
+          "what": "石仏と境内の石造物",
+          "kind": "exterior",
+          "width": 901,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-life-414/g03.jpg",
+          "what": "石仏が並ぶ境内の一角",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-life-414/g05.jpg",
+          "what": "石碑と木立が並ぶ境内の景色",
+          "kind": "exterior",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-life-414/g06.jpg",
+          "what": "観音像の石像が立つ境内",
+          "kind": "exterior",
+          "width": 568,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-life-414/g07.jpg",
+          "what": "ガラス張りの現代的な本堂外観",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-life-414/g08.jpg",
+          "what": "十一面観音菩薩立像の説明板",
+          "kind": "common",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-life-414/g09.jpg",
+          "what": "石灯篭と境内の参道",
+          "kind": "exterior",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-life-414/g10.jpg",
+          "what": "駐車場と本堂の全景",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-life-414/s02.jpg",
+          "what": "木造十一面観音菩薩立像（市重要文化財）",
+          "kind": "common",
+          "width": 853,
+          "height": 1280
+        },
+        {
+          "path": "/_portal/vshops/tri-life-414/s06.jpg",
+          "what": "山門脇の扁額と木組みの様子",
+          "kind": "exterior",
+          "width": 1022,
+          "height": 1023
+        }
+      ],
+      "tags": [
+        "駐車場あり"
+      ],
+      "article": {
+        "headline": "神奈川県秦野市今泉に建つ曹洞宗の寺院。室町時代創建で、本堂は建築家・安藤忠雄の設計。",
+        "lede": "秦野市にある「太岳院」です。正式名称は亀王山太岳院（きおうざん たいがくいん）といい、曹洞宗に属する寺院です。巡礼歌には「中尾山 清き流れをたずぬれば いつも たえせぬ谷川の音」と詠まれています。本尊は釈迦牟尼仏のほか、千手観世音菩薩・十一面観世音菩薩を祀ります。相模新西国観音霊場の第32番・第33番札所として巡礼者も訪れる寺院で、平安時代後期の木造十一面観音菩薩立像を所蔵します。この像は秦野市の重要文化財に指定されており、一木造りで高さは142.5センチメートルあります。平成19年（2007年）に完成した本堂は、建築家・安藤忠雄の設計によるもので、コンクリートとガラスを組み合わせたモダンな建物です。境内に隣接する今泉名水桜公園とあわせ、寺の静けさと湧水・桜を一度に楽しめる場所となっています。",
+        "sections": [
+          {
+            "heading": "由緒・歴史",
+            "body": "太岳院の起源は室町時代の天文10年（1541年）に遡ります。もとは今泉村にあった薬師堂を基に、今泉村の土豪であった小林氏が蔵林寺3世を招いて開いたのが始まりです。以来、曹洞宗の寺として今泉の地に根ざしてきました。境内には山門と鐘楼が残り、伝統的な伽藍の面影を伝えています。また、関東大震災後の本堂再建の歴史が石碑に刻まれており、地域の復興とともに歩んできた寺であることが分かります。南秦野七福神めぐりの「福禄寿」と「亀」のスタンプ地点にもなっており、地域の信仰の場としての役割を担っています。"
+          },
+          {
+            "heading": "本堂と境内の特徴",
+            "body": "平成19年（2007年）に完成した現在の本堂は、建築家・安藤忠雄の設計によります。鉄筋コンクリートとガラスを組み合わせたモダンな建物で、堂の周囲には水が配され、建物の姿を水面に映し出します。本堂の真西の方角には富士山があり、障子を開けると本堂の中から富士を望むことができます。境内に隣接する今泉名水桜公園は2007年2月に整備されたもので、かつて「太岳院の池」と呼ばれた今泉湧水池を有します。公園には18種類の桜が植えられており、年間を通じて桜が楽しめます。吉野桜の見ごろは3月下旬から4月上旬です。"
+          },
+          {
+            "heading": "文化財と巡礼",
+            "body": "太岳院が所蔵する木造十一面観音菩薩立像は、昭和46年（1971年）に秦野市重要文化財に指定されました。平安時代後期の作とされ、高さ142.5センチメートルの一木造りです。彫りの目（彫眼）の像で、高い宝髻を結い、動きの少ない直立した立ち姿が特徴とされています。顔はやや面長で目を伏せ気味にしており、円みのある肩と穏やかな雰囲気に平安彫刻の特質が表れています。当寺は相模新西国観音霊場の第32番・第33番の札所でもあり、12年に一度の御開帳（丑年）には観音像を拝観することができます。御朱印は第32番・第33番の2種類に対応しています。"
+          },
+          {
+            "heading": "行き方と使い方",
+            "body": "小田急線秦野駅南口から徒歩約4〜5分の場所にあります。駅南口を出て南へ400メートルほど進むと境内の入口に到着します。境内に駐車場があります。御朱印は相模新西国観音霊場第32番・第33番の2種に対応しています。境内に隣接する今泉名水桜公園とあわせて訪れると、湧水池と桜の景色も楽しめます。"
+          }
+        ],
+        "sources": [
+          {
+            "label": "平塚市観光協会（湘南ひらつかナビ）",
+            "url": "https://www.hiratsuka-kankou.com/spot/33koumyouji.html"
+          },
+          {
+            "label": "秦野市観光協会",
+            "url": "https://www.kankou-hadano.org/pointinformation/pointinformationguide/point_taigakuin.html"
+          },
+          {
+            "label": "ホトカミ",
+            "url": "https://hotokami.jp/area/kanagawa/Hkytz/Hkytzty/Dagkk/54988/"
+          },
+          {
+            "label": "伝統の日本紀行",
+            "url": "https://www.visiting-japan.com/ja/articles/kanagawa/j14hd-taigakuin.htm"
+          },
+          {
+            "label": "秦野市公式ホームページ（文化財）",
+            "url": "https://www.city.hadano.kanagawa.jp/soshiki/4/1019/8/5/3/3/223.html"
+          },
+          {
+            "label": "Google マップ",
+            "url": "https://maps.google.com/?cid=16054780617578347143"
+          }
+        ],
+        "checkedAt": "2026-11-06"
+      }
+    },
+    {
+      "id": "li0178",
+      "vertical": "life",
+      "category": "shrine-temple",
+      "name": "宝菩提院 願徳寺",
+      "pref": "kyoto",
+      "cityName": "京都市西京区",
+      "address": "京都府京都市西京区大原野南春日町1223-2",
+      "lat": 34.960965,
+      "lng": 135.652303,
+      "phone": "075-331-3823",
+      "mapUrl": "https://maps.google.com/?cid=11748723116965836778",
+      "image": "/_portal/vshops/tri-life-418/g01.jpg",
+      "images": [
+        "/_portal/vshops/tri-life-418/g01.jpg",
+        "/_portal/vshops/tri-life-418/g02.jpg",
+        "/_portal/vshops/tri-life-418/g03.jpg",
+        "/_portal/vshops/tri-life-418/g04.jpg",
+        "/_portal/vshops/tri-life-418/g05.jpg",
+        "/_portal/vshops/tri-life-418/g06.jpg",
+        "/_portal/vshops/tri-life-418/g07.jpg",
+        "/_portal/vshops/tri-life-418/g08.jpg",
+        "/_portal/vshops/tri-life-418/g09.jpg",
+        "/_portal/vshops/tri-life-418/g10.jpg"
+      ],
+      "photos": [
+        {
+          "path": "/_portal/vshops/tri-life-418/g01.jpg",
+          "what": "木製の山門（正面外観）",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-life-418/g02.jpg",
+          "what": "石積みの塀と秋の紅葉に包まれた境内入口",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-life-418/g03.jpg",
+          "what": "茅葺き屋根の木製鐘楼門",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 800
+        },
+        {
+          "path": "/_portal/vshops/tri-life-418/g04.jpg",
+          "what": "石畳の参道と木々に囲まれた本堂へのアプローチ",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-life-418/g05.jpg",
+          "what": "木製の扉と「宝菩提院願徳寺」と書かれた掲示板",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 800
+        },
+        {
+          "path": "/_portal/vshops/tri-life-418/g06.jpg",
+          "what": "石積みの塀と桜の花が咲く春の境内外壁",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 801
+        },
+        {
+          "path": "/_portal/vshops/tri-life-418/g07.jpg",
+          "what": "刈り込まれた植木と石組みの枯山水庭園",
+          "kind": "common",
+          "width": 1200,
+          "height": 802
+        },
+        {
+          "path": "/_portal/vshops/tri-life-418/g08.jpg",
+          "what": "桜の花と本堂の屋根が重なる春景色",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-life-418/g09.jpg",
+          "what": "苔むした石燈籠と案内板",
+          "kind": "exterior",
+          "width": 788,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-life-418/g10.jpg",
+          "what": "苔と落ち葉に覆われた渓谷状の境内地形",
+          "kind": "view",
+          "width": 900,
+          "height": 1200
+        }
+      ],
+      "tags": [
+        "駐車場あり"
+      ],
+      "article": {
+        "headline": "京都市西京区大原野に佇む、国宝の如意輪観音菩薩半跏像を本尊とする天台宗の小寺。白鳳8年（679年）に持統天皇の勅願で創建された、1300年以上の歴史を持つ。",
+        "lede": "京都市西京区大原野に「宝菩提院 願徳寺」があります。正式名称は「仏華林山 宝菩提院 願徳寺」で、天台宗の寺院です。本尊は国宝の如意輪観世音菩薩半跏像で、像高88.2cm、榧材の一木造り。平安時代初期の渡来仏か渡来人の作とされ、1957年に国宝指定を受けました。境内は仏像拝観のみで庭園はなく、京都でも有数の小規模な拝観寺院として知られています。勝持寺に隣接した山中に位置し、参拝者の少ない静かな環境の中で国宝の仏像と向き合うことができます。洛西観音霊場の第三十三番札所でもあり、御朱印の授与も行っています。",
+        "sections": [
+          {
+            "heading": "由緒・歴史",
+            "body": "白鳳8年（679年）、持統天皇の勅願によって現在の向日市寺戸に創建されたのが願徳寺の始まりとされます。創建当時の伽藍は東西約1300m、南北約800mに及ぶ大規模なものでした。平安時代には平教盛の子・忠快法印が東山三条にあった宝菩提院をこの寺に移転させ、天台密教の大寺院として栄えました。しかし応仁の乱と織田信長の兵火により諸堂が焼失。江戸時代に徳川家康の庇護を受けたものの衰退が続き、昭和37年（1962年）には本尊が隣の勝持寺へ移されました。その後、昭和48年（1973年）に現在の大原野南春日町に本堂と庫裏が再建され、平成8年（1996年）12月に本尊の如意輪観世音菩薩半跏像が願徳寺に帰座しました。2004年の発掘調査では境内から平安時代前期のものとみられる浴場遺跡が発見され、国内最古とされる施設の存在が明らかになっています。"
+          },
+          {
+            "heading": "内容（国宝の仏像と寺宝）",
+            "body": "本尊の如意輪観世音菩薩半跏像は、像高88.2cm、榧材の一木造りで、素木にわずかな彩色の痕跡が残ります。平安時代初期の渡来仏か渡来人の作とされており、顔の相や衣の表現は唐様式です。頭の宝髻は高く開いて中央で束ねられ、眼は二重瞼で瞳には黒曜石がはめ込まれています。額には水晶がはめ込まれた白毫があります。左手は施無畏印、右手は与願印という通常とは反対の手印を結び、後頭部の内部に阿弥陀如来像が納められています。右足を下げる半跏踏み下げのかたちは独尊像としては珍しいもので、本来は三尊の左脇侍像の形式です。本尊のほかに、木造薬師如来立像（重要文化財）および聖徳太子二歳像（京都府文化財）も所蔵しています。"
+          },
+          {
+            "heading": "利用の流れ",
+            "body": "拝観は仏像拝観のみで、庭園の公開はありません。参拝の際は扉脇のインターホンを押して申し出てから境内に入ります。拝観時間は9時30分から16時までで、2月は閉寺となります。御朱印の授与も行っており、洛西観音霊場第三十三番札所としての御朱印を受けることができます。枯山水庭園が庫裏前にあります。"
+          },
+          {
+            "heading": "行き方と使い方",
+            "body": "阪急京都線東向日駅から阪急バスに乗り南春日町バス停で下車後、西へ徒歩約20分で到着します。阪急桂駅西口からのバス利用も可能です。阪急洛西口駅や桂駅から市バスを利用し洛西高校前停留所で下車して西へ向かう経路もあります。参拝者用の駐車場があります。境内は小規模で、隣接する勝持寺とあわせて訪ねることができます。"
+          }
+        ],
+        "sources": [
+          {
+            "label": "ホトカミ",
+            "url": "https://hotokami.jp/area/kyoto/Hmpty/Hmptytk/Dktssa/4767/"
+          },
+          {
+            "label": "京都通百科事典",
+            "url": "https://www.kyototuu.jp/Temple/GantokuJi.html"
+          },
+          {
+            "label": "京都一小さな拝観寺院・宝菩提院願徳寺",
+            "url": "https://kyototwo.jp/post/attractions/8730/"
+          },
+          {
+            "label": "inishiejapan",
+            "url": "https://inishiejapan.jp/%E5%AE%9D%E8%8F%A9%E6%8F%90%E9%99%A2-%E9%A1%98%E5%BE%B3%E5%AF%BA/"
+          },
+          {
+            "label": "gururinkansai",
+            "url": "https://gururinkansai.com/gantokuji.html"
+          },
+          {
+            "label": "願徳寺・勝持寺 国宝",
+            "url": "https://kokuho.tabibun.net/4/26/2633/"
+          },
+          {
+            "label": "Google マップ",
+            "url": "https://maps.google.com/?cid=11748723116965836778"
+          }
+        ],
+        "checkedAt": "2026-11-06"
+      }
     }
   ]
 }

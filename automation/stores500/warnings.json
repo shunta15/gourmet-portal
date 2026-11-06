@@ -3540,5 +3540,19 @@
     "warnings": [
       "cuisine は GBPカテゴリ"
     ]
+  },
+  "r896": {
+    "articleId": "サニーハウス",
+    "name": "サニーハウス",
+    "warnings": [
+      "cuisine は GBPカテゴリ"
+    ]
+  },
+  "r897": {
+    "articleId": "フールアボワ",
+    "name": "フール ア ボワ",
+    "warnings": [
+      "cuisine は GBPカテゴリ"
+    ]
   }
 }

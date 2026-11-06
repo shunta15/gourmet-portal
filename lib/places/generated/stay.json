@@ -4797,6 +4797,493 @@
           "グループ和室"
         ]
       }
+    },
+    {
+      "id": "st0026",
+      "vertical": "stay",
+      "category": "ryokan",
+      "name": "RYOKAN優勝館",
+      "pref": "osaka",
+      "cityName": "守口市",
+      "address": "大阪府守口市南寺方東通2丁目1-13",
+      "lat": 34.7206994,
+      "lng": 135.5719806,
+      "phone": "06-6997-3556",
+      "url": "https://yuusyoukan.hp.peraichi.com/",
+      "website": "https://yuusyoukan.hp.peraichi.com/",
+      "mapUrl": "https://maps.google.com/?cid=16633824850190868802",
+      "image": "/_portal/vshops/tri-stay-403/g01.jpg",
+      "images": [
+        "/_portal/vshops/tri-stay-403/g01.jpg",
+        "/_portal/vshops/tri-stay-403/g02.jpg",
+        "/_portal/vshops/tri-stay-403/g03.jpg",
+        "/_portal/vshops/tri-stay-403/g04.jpg",
+        "/_portal/vshops/tri-stay-403/g05.jpg",
+        "/_portal/vshops/tri-stay-403/g06.jpg",
+        "/_portal/vshops/tri-stay-403/g07.jpg",
+        "/_portal/vshops/tri-stay-403/g08.jpg",
+        "/_portal/vshops/tri-stay-403/g09.jpg",
+        "/_portal/vshops/tri-stay-403/s01.jpg",
+        "/_portal/vshops/tri-stay-403/s03.jpg",
+        "/_portal/vshops/tri-stay-403/s04.jpg",
+        "/_portal/vshops/tri-stay-403/s05.jpg",
+        "/_portal/vshops/tri-stay-403/s06.jpg",
+        "/_portal/vshops/tri-stay-403/s07.jpg",
+        "/_portal/vshops/tri-stay-403/s09.jpg",
+        "/_portal/vshops/tri-stay-403/s10.jpg",
+        "/_portal/vshops/tri-stay-403/s13.jpg",
+        "/_portal/vshops/tri-stay-403/s14.jpg",
+        "/_portal/vshops/tri-stay-403/s15.jpg",
+        "/_portal/vshops/tri-stay-403/s16.jpg",
+        "/_portal/vshops/tri-stay-403/s17.jpg",
+        "/_portal/vshops/tri-stay-403/s18.jpg"
+      ],
+      "photos": [
+        {
+          "path": "/_portal/vshops/tri-stay-403/g01.jpg",
+          "what": "石段と木造の門構えが見える旅館の外観",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 904
+        },
+        {
+          "path": "/_portal/vshops/tri-stay-403/g02.jpg",
+          "what": "テーブルに和食の料理が並ぶ食事の様子",
+          "kind": "meal",
+          "width": 675,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-stay-403/g03.jpg",
+          "what": "ベッドが置かれた洋室風の客室",
+          "kind": "room",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-stay-403/g04.jpg",
+          "what": "木の浴槽と蛇口が並ぶ檜の貸切風呂",
+          "kind": "bath",
+          "width": 1200,
+          "height": 904
+        },
+        {
+          "path": "/_portal/vshops/tri-stay-403/g05.jpg",
+          "what": "枯山水の石組みと植栽が配された日本庭園",
+          "kind": "view",
+          "width": 1200,
+          "height": 904
+        },
+        {
+          "path": "/_portal/vshops/tri-stay-403/g06.jpg",
+          "what": "長テーブルと椅子が並ぶ広間の食事スペース",
+          "kind": "common",
+          "width": 1200,
+          "height": 904
+        },
+        {
+          "path": "/_portal/vshops/tri-stay-403/g07.jpg",
+          "what": "皿に盛られた刺身や野菜の和食料理",
+          "kind": "meal",
+          "width": 1200,
+          "height": 904
+        },
+        {
+          "path": "/_portal/vshops/tri-stay-403/g08.jpg",
+          "what": "和室の畳に布団が敷かれた客室",
+          "kind": "room",
+          "width": 1200,
+          "height": 675
+        },
+        {
+          "path": "/_portal/vshops/tri-stay-403/g09.jpg",
+          "what": "小鉢や椀が並ぶ和食の朝食または会席料理",
+          "kind": "meal",
+          "width": 1200,
+          "height": 904
+        },
+        {
+          "path": "/_portal/vshops/tri-stay-403/s01.jpg",
+          "what": "公式サイトのトップに掲載された旅館外観と案内文",
+          "kind": "exterior",
+          "width": 1209,
+          "height": 678
+        },
+        {
+          "path": "/_portal/vshops/tri-stay-403/s03.jpg",
+          "what": "枝垂れ紅葉と石灯篭が配された日本庭園",
+          "kind": "view",
+          "width": 1280,
+          "height": 964
+        },
+        {
+          "path": "/_portal/vshops/tri-stay-403/s04.jpg",
+          "what": "白いベッドカバーが敷かれた洋室の客室",
+          "kind": "room",
+          "width": 960,
+          "height": 1280
+        },
+        {
+          "path": "/_portal/vshops/tri-stay-403/s05.jpg",
+          "what": "木の壁と天井が見える室内廊下",
+          "kind": "common",
+          "width": 964,
+          "height": 1280
+        },
+        {
+          "path": "/_portal/vshops/tri-stay-403/s06.jpg",
+          "what": "木造の玄関または館内入口",
+          "kind": "exterior",
+          "width": 964,
+          "height": 1280
+        },
+        {
+          "path": "/_portal/vshops/tri-stay-403/s07.jpg",
+          "what": "白いベッドカバーが掛かったベッドのある客室",
+          "kind": "room",
+          "width": 960,
+          "height": 1280
+        },
+        {
+          "path": "/_portal/vshops/tri-stay-403/s09.jpg",
+          "what": "椅子とテーブルが並ぶ広間の室内",
+          "kind": "common",
+          "width": 964,
+          "height": 1280
+        },
+        {
+          "path": "/_portal/vshops/tri-stay-403/s10.jpg",
+          "what": "畳と小さな机が置かれた和室",
+          "kind": "room",
+          "width": 964,
+          "height": 1280
+        },
+        {
+          "path": "/_portal/vshops/tri-stay-403/s13.jpg",
+          "what": "掛け軸と花が飾られた和室の床の間",
+          "kind": "room",
+          "width": 1280,
+          "height": 964
+        },
+        {
+          "path": "/_portal/vshops/tri-stay-403/s14.jpg",
+          "what": "伊勢海老や刺身などが並ぶ豪華な和会席料理",
+          "kind": "meal",
+          "width": 1280,
+          "height": 851
+        },
+        {
+          "path": "/_portal/vshops/tri-stay-403/s15.jpg",
+          "what": "小鉢や焼き魚など複数の皿が並ぶ和食料理",
+          "kind": "meal",
+          "width": 1280,
+          "height": 851
+        },
+        {
+          "path": "/_portal/vshops/tri-stay-403/s16.jpg",
+          "what": "刺身や野菜料理など複数の皿が並ぶ和会席",
+          "kind": "meal",
+          "width": 1280,
+          "height": 960
+        },
+        {
+          "path": "/_portal/vshops/tri-stay-403/s17.jpg",
+          "what": "鍋と蟹の脚が盛られた料理",
+          "kind": "meal",
+          "width": 1280,
+          "height": 960
+        },
+        {
+          "path": "/_portal/vshops/tri-stay-403/s18.jpg",
+          "what": "霜降りの牛肉のスライスが並ぶ皿",
+          "kind": "meal",
+          "width": 857,
+          "height": 1280
+        }
+      ],
+      "tags": [
+        "素泊まり"
+      ],
+      "article": {
+        "headline": "大阪府守口市、旧京街道の宿場町に佇む旅館。築約50年の宮大工建築をリノベーションし、大浴場・檜の貸切風呂・枯山水の日本庭園を備える。",
+        "lede": "守口市にある「RYOKAN優勝館」です。旧京街道の宿場町に位置し、2025年5月に正式オープンした旅館です。香川県のこんぴら温泉郷で長年温泉旅館を営んできた館主が、守口市に新たに開いた宿で、築約50年の宮大工が建てた施設を現代風にリノベーションしています。大浴場と檜の貸切風呂、枯山水の日本庭園が宿泊者を出迎えます。客室は和室と和洋室があり、全4室でゆったりと過ごせる環境を整えています。夕食は館主こだわりの食材を使った和会席コースを提供し、野球部をはじめとするスポーツ合宿にも約25年の実績があります。",
+        "sections": [
+          {
+            "heading": "客室の種類と数",
+            "body": "客室は和室と和洋室の2種類があり、全部で4室です。和洋室の201号室からは日本庭園を一望できます。建物は2階建てで、2階の梁は太さ50cm以上の丸太を使用しています。大黒柱は直径30cm角あり、築約50年の宮大工による建物の風格を随所に感じられます。1階の広間は京間の作りで、欄間や雪見障子が施されています。食事は1階大広間を襖で完全に間仕切りし個室として使え、家族やグループだけで夕食・朝食を楽しめます。浴衣の貸出やアメニティも備えています。"
+          },
+          {
+            "heading": "風呂",
+            "body": "大浴場と、檜の貸切風呂の2種類があります。大浴場は男女入替え時間制で、日によって部屋ごとの貸切時間制になることもあります。大浴場と貸切風呂は玄関より下駄に履き替え、敷地内の別棟まで徒歩すぐのところにあります。大きな外庭には枯山水の日本庭園が広がり、珍しい枝垂れ紅葉や立派な雪見灯篭が配されています。"
+          },
+          {
+            "heading": "食事",
+            "body": "夕食と朝食は館主こだわりの食材を活かした和会席コースです。産地直送の伊勢海老や活け鮑、鮮魚や最高牛のヘレ肉などの食材を取りそろえています。食事場所は1階大広間を襖で完全間仕切りした個室として利用でき、家族やグループだけで食事を楽しめます。ランチは水曜から日曜に営業しており、和牛じゃがコロッケランチ、ぶっかけ鶏天讃岐うどん、海鮮丼、ガッツリ優勝館御膳、黒毛和牛＆鮑の鉄板焼ランチなど複数のメニューがあります。ディナーは夕方から夜にかけて本格和会席を楽しめます。法要や祝い事の際には個室として対応します。"
+          },
+          {
+            "heading": "行き方と使い方",
+            "body": "京阪守口市駅からは、西口の守口市バス停で京阪バス（守口南部線）の世木公園方面行きに乗り17分、世木公園バス停で降りてから徒歩4分です。地下鉄今里線清水駅からは徒歩約16分（1.2km）、地下鉄長堀鶴見緑地駅からは徒歩約22分（2.1km）です。車の場合、阪神高速森小路ICから約6分、近畿道摂津南ICから約15分、第二京阪道路第二京阪門真ICから約10分です。駐車場があり、晴れた日はスロープ上の駐車場、雨天時はアスファルトの駐車場を利用します。チェックインは16時から、チェックアウトは10時です。予約は電話または公式サイトの予約ページから行えます。野球部を中心とした高校生の合宿にも対応しており、スポーツ合宿や勉強合宿も受け入れています。"
+          }
+        ],
+        "menus": [
+          {
+            "name": "和会席コース（夕食）"
+          },
+          {
+            "name": "和会席コース（朝食）"
+          },
+          {
+            "name": "和牛じゃがコロッケランチ"
+          },
+          {
+            "name": "ぶっかけ鶏天讃岐うどん"
+          },
+          {
+            "name": "海鮮丼"
+          },
+          {
+            "name": "ガッツリ優勝館御膳"
+          },
+          {
+            "name": "黒毛和牛＆鮑の鉄板焼ランチ"
+          },
+          {
+            "name": "忘新年会プラン"
+          }
+        ],
+        "sources": [
+          {
+            "label": "公式サイト",
+            "url": "https://yuusyoukan.hp.peraichi.com/"
+          },
+          {
+            "label": "守口・門真つーしん（施設レポート）",
+            "url": "https://www.morikado2.jp/special/yuusyokan-20250930.html"
+          },
+          {
+            "label": "守口・門真つーしん（オープン記事）",
+            "url": "https://www.morikado2.jp/open-close/yuushoukan-20250809.html"
+          },
+          {
+            "label": "moriguchikadoma.goguynet.jp（ランチ記事）",
+            "url": "https://moriguchikadoma.goguynet.jp/2025/11/19/yu-shoukan-2/"
+          },
+          {
+            "label": "じゃらんnet",
+            "url": "https://www.jalan.net/yad350770/"
+          },
+          {
+            "label": "Google マップ",
+            "url": "https://maps.google.com/?cid=16633824850190868802"
+          }
+        ],
+        "checkedAt": "2026-11-06"
+      },
+      "attributes": {
+        "roomTypes": [
+          "和室",
+          "和洋室"
+        ]
+      }
+    },
+    {
+      "id": "st0027",
+      "vertical": "stay",
+      "category": "pension",
+      "name": "山荘やなはら",
+      "pref": "okayama",
+      "cityName": "美咲町",
+      "address": "岡山県久米郡美咲町柵原728-10",
+      "lat": 34.9631139,
+      "lng": 134.056683,
+      "phone": "0868-62-0181",
+      "url": "http://sansoyanahara.com/",
+      "website": "http://sansoyanahara.com/",
+      "mapUrl": "https://maps.google.com/?cid=10659989270496983427",
+      "image": "/_portal/vshops/tri-stay-415/g01.jpg",
+      "images": [
+        "/_portal/vshops/tri-stay-415/g01.jpg",
+        "/_portal/vshops/tri-stay-415/g02.jpg",
+        "/_portal/vshops/tri-stay-415/g03.jpg",
+        "/_portal/vshops/tri-stay-415/g04.jpg",
+        "/_portal/vshops/tri-stay-415/g05.jpg",
+        "/_portal/vshops/tri-stay-415/g06.jpg",
+        "/_portal/vshops/tri-stay-415/g07.jpg",
+        "/_portal/vshops/tri-stay-415/g08.jpg",
+        "/_portal/vshops/tri-stay-415/g09.jpg",
+        "/_portal/vshops/tri-stay-415/g10.jpg",
+        "/_portal/vshops/tri-stay-415/s18.jpg"
+      ],
+      "photos": [
+        {
+          "path": "/_portal/vshops/tri-stay-415/g01.jpg",
+          "what": "青空のもとに立つログハウス風の建物と駐車スペース",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-stay-415/g02.jpg",
+          "what": "木製天井とベッドがある客室",
+          "kind": "room",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-stay-415/g03.jpg",
+          "what": "複数の皿に盛られた会席料理",
+          "kind": "meal",
+          "width": 1200,
+          "height": 878
+        },
+        {
+          "path": "/_portal/vshops/tri-stay-415/g04.jpg",
+          "what": "丼と味噌汁が並ぶ定食",
+          "kind": "meal",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-stay-415/g05.jpg",
+          "what": "ツインベッドとソファがある洋室",
+          "kind": "room",
+          "width": 550,
+          "height": 412
+        },
+        {
+          "path": "/_portal/vshops/tri-stay-415/g06.jpg",
+          "what": "黒い外壁に三角屋根のログハウスコテージの外観",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-stay-415/g07.jpg",
+          "what": "平屋の本館外観と前の駐車スペース",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-stay-415/g08.jpg",
+          "what": "緑の木立に囲まれたログハウスの外観",
+          "kind": "exterior",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-stay-415/g09.jpg",
+          "what": "池と木々がある庭園の景色",
+          "kind": "view",
+          "width": 1200,
+          "height": 675
+        },
+        {
+          "path": "/_portal/vshops/tri-stay-415/g10.jpg",
+          "what": "魚料理・ご飯・小鉢が並ぶ定食",
+          "kind": "meal",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-stay-415/s18.jpg",
+          "what": "ランプとベッドがある落ち着いた客室",
+          "kind": "room",
+          "width": 800,
+          "height": 450
+        }
+      ],
+      "tags": [],
+      "article": {
+        "headline": "岡山県久米郡美咲町柵原にある、旧小・中学校の校舎跡をリノベーションした宿。全7室と1棟のログハウスコテージを備え、美咲町産の食材を使った手作り料理を出す。",
+        "lede": "久米郡美咲町にある「山荘やなはら」です。周辺に建物のない大自然に囲まれた立地で、かつて南和気第2小学校と吉岡中学校分校だった校舎跡をリノベーションして作られた宿です。館内にはその学校の面影が今も残っています。客室は洋室・和室の全7室に加え、別棟にログハウスのコテージが1棟あります。浴室内に2釜、露天に1釜の五右衛門風呂を2021年1月に開設し、貸切で利用できます。食事は美咲町産の食材をできるだけ使用した手作り料理で、地元の柵原鉱山の坑道内で光を浴びずに育った黄ニラや、京鴨を使った会席コースを出しています。運動部合宿や音楽合宿、ビジネス利用にも対応しており、椅子100席を設置できるイベントホールも備えています。PayPayが利用できます。",
+        "sections": [
+          {
+            "heading": "客室の種類と数",
+            "body": "客室は洋室と和室の全7室で、洋室はカップルや仕事利用に、和室は友人同士や家族に向いています。別棟には本格的なログハウスのコテージが1棟あります。コテージには冷蔵庫・調理器具一式・食器一式・湯沸かしポット・鍋等が備わっており、冬には薪ストーブの火を囲んで囲炉裏料理も楽しめます。コテージのお風呂は本館の浴室を使います。パジャマはお持ち込みが必要です。ラウンジにはキッチン・冷蔵庫・レンジ・トースター・TV・漫画・囲碁・麻雀が揃っています。宿全体の定員は40名です。"
+          },
+          {
+            "heading": "風呂",
+            "body": "2021年1月にオープンした五右衛門風呂は、浴室内に2釜、露天に1釜の合計3釜を備えています。すべて貸切でのみ利用でき、プライベートな空間でゆっくりと入浴できます。利用時間は15:00から21:00までです。昔懐かしい五右衛門風呂の形で、露天では自然の中で入浴できます。"
+          },
+          {
+            "heading": "食事",
+            "body": "食事は美咲町産の天然物をできるだけ使用した手作り料理で、料理長が腕を振るいます。地元・柵原の鉱山坑道内で光を当てずに育てた黄ニラは、脳の老化を防ぐとされる「アホエン」を多く含む美咲町の名産です。宿泊者向けのコースには、彩りとボリュームを重視した「華会席」、岡山和牛ステーキと小鍋がつく「福会席」、囲炉裏を囲む冬季限定の「囲炉裏会席」「京鴨囲炉裏会席」があります。冬以外の時期は庭のBBQテラスでバーベキューも楽しめます。BBQセットはお肉200g・おにぎり・野菜の構成です。平日（月・火・木・金曜日）は日帰りランチも提供しており、1日15食限定で11:00から14:00まで営業しています。宴会・団体以外の宿泊者の夕食・朝食は、四季の景色を望むレストランで提供しています。"
+          },
+          {
+            "heading": "行き方と使い方",
+            "body": "車の場合、中国自動車道・津山ICから約20分、美作ICから約30分、山陽自動車道・和気ICから約40分です。JR岡山駅からは車で約1時間、JR津山駅からは車で約20分です。公共交通機関では、JR津山駅から中鉄バスの吉ヶ原または高下行きに乗り、「火田城橋」で下車後、徒歩10分です。送迎バスの手配も可能です（有料）。駐車場は30台分あります。チェックインは15:00から、チェックアウトは11:00までです。宴会場は和室宴会場（24名・掘りごたつ）と洋室宴会場（40名・テーブル）があり、イベントホールは最大80名で使用でき、ダンスや吹奏楽の練習・雨天時の催し物にも対応しています。予約は公式サイトまたは電話で受け付けています。"
+          }
+        ],
+        "menus": [
+          {
+            "name": "京鴨ハンバーグ"
+          },
+          {
+            "name": "華会席"
+          },
+          {
+            "name": "福会席"
+          },
+          {
+            "name": "囲炉裏会席"
+          },
+          {
+            "name": "京鴨囲炉裏会席"
+          },
+          {
+            "name": "BBQ"
+          },
+          {
+            "name": "手作り松花堂弁当"
+          },
+          {
+            "name": "山荘御前"
+          }
+        ],
+        "sources": [
+          {
+            "label": "公式サイト",
+            "url": "https://sansoyanahara.com/"
+          },
+          {
+            "label": "公式サイト(お部屋・館内)",
+            "url": "https://sansoyanahara.com/facility.html"
+          },
+          {
+            "label": "公式サイト(お料理)",
+            "url": "https://sansoyanahara.com/cuisine.html"
+          },
+          {
+            "label": "公式サイト(アクセス)",
+            "url": "https://sansoyanahara.com/access.html"
+          },
+          {
+            "label": "公式サイト(宴会・会議)",
+            "url": "https://sansoyanahara.com/banquet.html"
+          },
+          {
+            "label": "JAPAN 47 GO",
+            "url": "https://www.japan47go.travel/ja/detail/75b2a448-9458-49a5-8de0-10895924fe97"
+          },
+          {
+            "label": "じゃらんnet",
+            "url": "https://www.jalan.net/yad368666/plan/"
+          },
+          {
+            "label": "Google マップ",
+            "url": "https://maps.google.com/?cid=10659989270496983427"
+          }
+        ],
+        "checkedAt": "2026-11-06"
+      },
+      "attributes": {
+        "roomTypes": [
+          "洋室",
+          "和室",
+          "コテージ"
+        ]
+      }
     }
   ]
 }
