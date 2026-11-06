@@ -49,6 +49,9 @@
 .gt-type { display: flex; flex-direction: column; height: 100%; border-radius: 8px; background: #fff; box-shadow: 0 1px 7px rgba(40, 50, 40, 0.1); overflow: hidden; }
 .gt-type-ph { display: block; height: 76px; flex: none; }
 .gt-type-ph img { width: 100%; height: 100%; object-fit: cover; }
+/* 差し替えた写真(2026-11-07)で顔が切れないよう、見せる位置を上に寄せる */
+.gt-type-ph img[src$="/type1.webp"] { object-position: 50% 15%; }
+.gt-type-ph img[src$="/type2.webp"] { object-position: 50% 30%; }
 .gt-type-b { display: flex; align-items: center; justify-content: space-between; gap: 6px; flex: 1; min-height: 53px; padding: 6px 11px 6px 14px; }
 .gt-type-t { min-width: 0; }
 .gt-type-t b { display: block; font-size: 13.4px; font-weight: 700; letter-spacing: 0.04em; line-height: 17px; color: #1f2421; overflow-wrap: anywhere; }
