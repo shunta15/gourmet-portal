@@ -1,0 +1,19 @@
+{
+  "commit": "0bf27b51e2037dbb91c4a1c181a26302f3afcef4",
+  "source": "/Users/shunta/claude/gp-k-auto2",
+  "count": 1,
+  "added": [
+    {
+      "row": 432,
+      "name": "DIY WORKS KYOTO（ディアイワイワークスキョウト）",
+      "key": "tri-life-432",
+      "vertical": "くらし",
+      "id": "li0186",
+      "articleId": "li0186",
+      "shopUrl": "https://machinowa.tokyo/life/shop/li0186",
+      "articleUrl": "https://machinowa.tokyo/life/article/li0186",
+      "sheetUrl": "https://machinowa.tokyo/life/article/li0186"
+    }
+  ],
+  "skipped": []
+}
