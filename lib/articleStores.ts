@@ -22102,6 +22102,53 @@ export const ARTICLE_STORES: Restaurant[] = [
       "ランチ"
     ],
     "featureId": "コルテージュ"
+  },
+  {
+    "id": "r906",
+    "name": "あっぷっる りんご飴専門店",
+    "cuisine": "テイクアウト",
+    "area": "大阪府・大阪市生野区",
+    "region": "osaka",
+    "shape": "square",
+    "image": "/restaurants/teleapo-あっぷっるりんご飴専門店/hero.jpg",
+    "heroImages": [
+      "/restaurants/teleapo-あっぷっるりんご飴専門店/hero.jpg",
+      "/restaurants/teleapo-あっぷっるりんご飴専門店/point1.jpg",
+      "/restaurants/teleapo-あっぷっるりんご飴専門店/point2.jpg",
+      "/restaurants/teleapo-あっぷっるりんご飴専門店/point3.jpg"
+    ],
+    "gallery": [
+      "/restaurants/teleapo-あっぷっるりんご飴専門店/hero.jpg",
+      "/restaurants/teleapo-あっぷっるりんご飴専門店/point1.jpg",
+      "/restaurants/teleapo-あっぷっるりんご飴専門店/point2.jpg",
+      "/restaurants/teleapo-あっぷっるりんご飴専門店/point3.jpg"
+    ],
+    "desc": "大阪府大阪市生野区のテイクアウト。",
+    "address": "大阪府大阪市生野区桃谷2丁目9-14",
+    "hours": "月・木〜日 12:00–17:00",
+    "closed": "火曜・水曜",
+    "seats": "—（訪問前に公式確認）",
+    "nearest": "—",
+    "instagram": "https://www.instagram.com/appuru0717",
+    "source": {
+      "label": "Google ビジネスプロフィール",
+      "url": "https://maps.google.com/?cid=13131260062276303985"
+    },
+    "body": [
+      "あっぷっる りんご飴専門店は、大阪府大阪市生野区にあるお店です。業態は「テイクアウト」、所在地は大阪府大阪市生野区桃谷2丁目9-14です。マチノワ編集部の特集記事では、「季節ごとに産地・品種を変えるりんご飴」・「手作りフロランタンを使ったりんご飴と、アールグレイフレーバー」などを取り上げています。",
+      "営業時間は月・木〜日 12:00–17:00、定休日は火曜・水曜です（Googleマップの営業時間による）。営業時間や価格は変わることがあるため、訪問前に公式サイトやSNS、お電話でご確認ください。"
+    ],
+    "highlights": [
+      "季節ごとに産地・品種を変えるりんご飴",
+      "手作りフロランタンを使ったりんご飴と、アールグレイフレーバー",
+      "スパイラルアップルパイと冷凍フルーツスティック"
+    ],
+    "tags": [
+      "テイクアウト",
+      "生野区",
+      "ランチ"
+    ],
+    "featureId": "あっぷっるりんご飴専門店"
   }
 ];
 
@@ -22568,7 +22615,8 @@ export const ARTICLE_STORE_FEATURE_IDS: Record<string, string> = {
   "r902": "一一かずいち",
   "r903": "BARBEARS",
   "r904": "さなえ食堂",
-  "r905": "コルテージュ"
+  "r905": "コルテージュ",
+  "r906": "あっぷっるりんご飴専門店"
 };
 
 /** 特集記事ID → 店舗ID */
@@ -23034,5 +23082,6 @@ export const ARTICLE_STORE_ID_BY_FEATURE: Record<string, string> = {
   "一一かずいち": "r902",
   "BARBEARS": "r903",
   "さなえ食堂": "r904",
-  "コルテージュ": "r905"
+  "コルテージュ": "r905",
+  "あっぷっるりんご飴専門店": "r906"
 };

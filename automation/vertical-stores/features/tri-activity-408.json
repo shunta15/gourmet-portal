@@ -1,0 +1,401 @@
+{
+  "key": "tri-activity-408",
+  "vertical": "activity",
+  "storeName": "天草釣堀レジャーランド",
+  "article": {
+    "id": "天草釣堀レジャーランド",
+    "no": "",
+    "articleType": "guide",
+    "kicker": "AMAKUSA TSURI-BORI LEISURE LAND OYANO",
+    "title": "熊本県上天草市、無人島「権兵島」の海上釣り堀。釣り・潮干狩り・バーベキューの体験の流れと準備",
+    "titleHTML": "熊本県上天草市、無人島「権兵島」の海上釣り堀<br><em>天草釣堀レジャーランド</em>の体験の流れと準備",
+    "subtitle": "釣り堀 / 熊本県上天草市 / 釣り・潮干狩り・バーベキュー",
+    "lede": "天草釣堀レジャーランドは、熊本県上天草市大矢野町にある海上釣り堀だ。天草の無人島「権兵島」を利用して作られた、自然の状態に近い釣り堀で、真鯛・チヌ・ヒラメ・ブリ・カンパチ・石鯛など多様な魚が放流されている。駐車場から渡し船で島へ渡り、ウキを使った1本バリ仕掛けで楽しむ。レンタル釣り竿は仕掛け調整済みで、はじめての方にはスタッフが指導する。3月から6月の期間は砂浜でのアサリ・ハマグリ採りの潮干狩りも楽しめ、バーベキューセットの貸し出しも行っている。",
+    "date": "2026-11-06",
+    "reading": "",
+    "author": "マチノワ編集部",
+    "heroImage": "/_portal/vshops/tri-activity-408/s12.jpg",
+    "ogImage": "/_portal/vshops/tri-activity-408/s12.jpg",
+    "ranking": [
+      {
+        "rank": "POINT 01",
+        "rankNum": 1,
+        "name": "島への渡り方と釣り堀の流れ",
+        "cuisine": "釣り堀体験",
+        "area": "上天草市",
+        "purpose": "初めて訪れる方が島への行き方と当日の流れを知りたいとき",
+        "desc": "釣り場は駐車場から渡し船で渡った無人島「権兵島」の中にある。駐車場に着いたら、西大維橋手前の港に設置されている旗を振ると、迎えの船がやってくる。島に渡ったら受付を済ませ、釣り堀へ向かう。釣り堀は予約なしで利用できる。釣り方はウキを使った1本バリ仕掛けのみで、まき餌・2本以上の針が付いた仕掛け（胴付き仕掛け・サビキ）・ルアーは禁止だ。釣り竿はレンタルが可能で、仕掛けが調整済みのものを借りればすぐに釣り始められる。はじめての方にはスタッフが釣り方を丁寧に指導する。釣った魚はすべて持ち帰ることができる。",
+        "images": [
+          "/_portal/vshops/tri-activity-408/g04.jpg"
+        ],
+        "specs": [
+          {
+            "k": "予約",
+            "v": "釣り堀は予約不要（荒天時は要問い合わせ）"
+          },
+          {
+            "k": "釣り方",
+            "v": "ウキ釣り1本バリ仕掛けのみ。まき餌・ルアー禁止"
+          }
+        ]
+      },
+      {
+        "rank": "POINT 02",
+        "rankNum": 2,
+        "name": "釣れる魚の種類と季節",
+        "cuisine": "放流魚種",
+        "area": "上天草市",
+        "purpose": "どんな魚が釣れるか・いつ行けばいいかを知りたいとき",
+        "desc": "釣り堀には真鯛・チヌ（クロダイ）・クロ（メジナ）・ヒラメ・ブリ・ハマチ・カンパチ・石鯛・シマアジ・イサキ・アジなど多様な魚が放流されている。真鯛・チヌ・クロ・ヒラメは年間を通じて狙える。ブリ・ハマチは主に11月から3月の間に放流され、カンパチは主に4月から11月の間に放流される。石鯛は放流時期が不定期だ。真鯛を狙う際は、釣り堀の水深がおよそ3〜5メートルあるため、底から20センチほどのタナを狙うのが基本になる。タナが10センチ違うだけで釣果に大きな差が出る場合がある。たくさん釣れて持ち帰れない場合は、キープシステムを利用して次回来場時に同サイズの魚を受け取ることができる。",
+        "images": [
+          "/_portal/vshops/tri-activity-408/g05.jpg"
+        ],
+        "specs": [
+          {
+            "k": "年中狙える魚",
+            "v": "真鯛・チヌ（クロダイ）・クロ（メジナ）・ヒラメ"
+          },
+          {
+            "k": "釣り堀の水深",
+            "v": "およそ3〜5メートル"
+          }
+        ]
+      },
+      {
+        "rank": "POINT 03",
+        "rankNum": 3,
+        "name": "潮干狩りとバーベキューの準備",
+        "cuisine": "潮干狩り・バーベキュー",
+        "area": "上天草市",
+        "purpose": "潮干狩りやバーベキューの持ち物・段取りを知りたいとき",
+        "desc": "潮干狩りは3月から6月の期間のみ営業で、釣り堀の横にある砂浜で楽しめる。アサリやハマグリなどの貝類を採ることができ、貝掘り用のくまでとざるは施設から貸し出される。満潮時には潮干狩りができないため、干潮時の前後3時間ほどが適した時間帯だ。各日の潮干狩り可能時間は公式サイトの時間表で確認できる。バーベキューセット（コンロ・ネット・トング・木炭）は施設から貸し出しており、3名以上から受け付けている。1区画で6名まで利用できる。釣った魚以外の食材（肉類・野菜類）は持ち込みとなり、飲み物は施設内の自動販売機を利用できる。食器類（割り箸・紙コップ・紙皿）は各自で準備する。バーベキューセットには数に限りがあるため、前日までに予約が必要だ。",
+        "images": [
+          "/_portal/vshops/tri-activity-408/s02.jpg"
+        ],
+        "specs": [
+          {
+            "k": "潮干狩り期間",
+            "v": "3月〜6月（干潮時間帯のみ）"
+          },
+          {
+            "k": "BBQ",
+            "v": "3名以上・1区画6名まで・前日までに予約"
+          }
+        ]
+      }
+    ],
+    "sideArticles": [],
+    "quote": "天草の無人島「権兵島」の海上釣り堀で、真鯛からブリ・カンパチまで年間を通して多様な魚を狙える。渡し船で島へ渡り、仕掛け調整済みのレンタル竿を借りれば手ぶらで釣り始められる。3月から6月には砂浜での潮干狩りも楽しめる。",
+    "quoteCite": "マチノワ編集部",
+    "closing": "九州自動車道の御船ICから国道57号線経由で約80分、松橋ICから国道266号線経由で約70分。西大維橋手前の港にある旗を振ると渡し船が来る。釣り堀はご予約なしで利用できる。バーベキューセットの貸し出しは前日までに電話で予約が必要で、潮干狩りの可能時間は公式サイトの時間表で確認できる。"
+  },
+  "summary": "天草釣堀レジャーランドの体験情報をまとめた特集。島への渡り方、釣り堀のルールとコース、潮干狩りの期間と道具、バーベキューの流れと持ち込み、アクセスを整理した。",
+  "tags": [
+    "海・川",
+    "上天草市"
+  ],
+  "charCount": 1332,
+  "facts": [
+    {
+      "claim": "施設の住所は熊本県上天草市大矢野町中5697-1 権兵島",
+      "source": "https://maps.google.com/?cid=5668696149945129123",
+      "quote": "熊本県上天草市大矢野町中5697-1",
+      "checkedAt": "2026-11-06"
+    },
+    {
+      "claim": "子どもたちや女性も安心して遊べる施設として案内されている",
+      "source": "https://turiland.jp/",
+      "quote": "子どもたちや女性も安心して遊べる！釣れる！！ご家族・団体で一日中遊べるシーサイドアウトドア",
+      "checkedAt": "2026-11-06"
+    },
+    {
+      "claim": "はじめての方や不慣れな方にはスタッフが丁寧に指導する",
+      "source": "https://turiland.jp/",
+      "quote": "はじめての方や不慣れな方はスタッフが丁寧に指導いたします",
+      "checkedAt": "2026-11-06"
+    },
+    {
+      "claim": "レンタル釣り竿があるため手ぶらで来場できる",
+      "source": "https://turiland.jp/",
+      "quote": "レンタル釣り具もございますので手ぶらでご来場も可能です",
+      "checkedAt": "2026-11-06"
+    },
+    {
+      "claim": "天草の無人島に作られた自然の状態に近い釣り堀である",
+      "source": "https://turiland.jp/",
+      "quote": "自然豊かな天草の無人島に作られた自然の状態に近い釣堀",
+      "checkedAt": "2026-11-06"
+    },
+    {
+      "claim": "釣った魚はすべて持ち帰ることができる",
+      "source": "https://turiland.jp/fishpond.shtml",
+      "quote": "釣った魚はすべて持ち帰り無料！！",
+      "checkedAt": "2026-11-06"
+    },
+    {
+      "claim": "釣り堀の水深はおよそ3〜5メートルある",
+      "source": "https://turiland.jp/fishpond.shtml",
+      "quote": "釣堀の水深はおよそ3～5mあります",
+      "checkedAt": "2026-11-06"
+    },
+    {
+      "claim": "真鯛を狙うときは底から20センチほどのタナを狙うと良い",
+      "source": "https://turiland.jp/fishpond.shtml",
+      "quote": "真鯛を狙うときは、底から20cmほどの棚を狙ってください",
+      "checkedAt": "2026-11-06"
+    },
+    {
+      "claim": "タナが10センチ違うだけで釣果に大きな差が出る場合がある",
+      "source": "https://turiland.jp/fishpond.shtml",
+      "quote": "棚が10cm違うだけで釣果に大きな差が出る場合があります",
+      "checkedAt": "2026-11-06"
+    },
+    {
+      "claim": "釣り堀はご予約なしで利用できる（荒天時は問い合わせが必要）",
+      "source": "https://turiland.jp/fishpond.shtml",
+      "quote": "釣堀はご予約無しでご利用いただけます。ただし荒天時はお問い合わせください",
+      "checkedAt": "2026-11-06"
+    },
+    {
+      "claim": "仕掛けが調整済みのレンタル竿ですぐに釣ることができる",
+      "source": "https://turiland.jp/fishpond.shtml",
+      "quote": "仕掛け調整済みの竿ですぐに釣ることができます",
+      "checkedAt": "2026-11-06"
+    },
+    {
+      "claim": "タモ網・スカリは釣り場に用意されており自由に使える",
+      "source": "https://turiland.jp/fishpond.shtml",
+      "quote": "タモ網、スカリ等は釣り場にご用意しております。ご自由にお使いください",
+      "checkedAt": "2026-11-06"
+    },
+    {
+      "claim": "まき餌・2本以上の針が付いた仕掛け・ルアー釣り・ウキなしの仕掛けは禁止",
+      "source": "https://turiland.jp/fishpond.shtml",
+      "quote": "マキ餌 / 2本以上の針が付いた仕掛け（胴付仕掛け・サビキ等）/ ルアー釣り（ワーム・ジグ含む）/ ウキ無しの仕掛け",
+      "checkedAt": "2026-11-06"
+    },
+    {
+      "claim": "キープシステムがあり、次回来場時に前回釣った魚と同サイズのものを受け取れる",
+      "source": "https://turiland.jp/fishpond.shtml",
+      "quote": "次回来た時に、前回釣った魚と同サイズのものをお渡しいたします",
+      "checkedAt": "2026-11-06"
+    },
+    {
+      "claim": "釣れる魚は真鯛・チヌ（クロダイ）・クロ（メジナ）・ヒラメ・ブリ・ハマチ・カンパチ・石鯛・シマアジ・イサキ・アジなど",
+      "source": "https://turiland.jp/fishpond.shtml",
+      "quote": "真鯛 / チヌ（クロダイ）/ クロ（メジナ）/ ヒラメ / ブリ・ハマチ / カンパチ / 石鯛 / シマアジ・イサキ・アジなど",
+      "checkedAt": "2026-11-06"
+    },
+    {
+      "claim": "ブリ・ハマチは主に11月から3月の間に放流される",
+      "source": "https://turiland.jp/fishpond.shtml",
+      "quote": "主に11月～3月の間に放流します",
+      "checkedAt": "2026-11-06"
+    },
+    {
+      "claim": "カンパチは主に4月から11月の間に放流される",
+      "source": "https://turiland.jp/fishpond.shtml",
+      "quote": "主に4月～11月の間に放流します",
+      "checkedAt": "2026-11-06"
+    },
+    {
+      "claim": "潮干狩りは3月から6月の期間のみ営業",
+      "source": "https://turiland.jp/clumhant.shtml",
+      "quote": "3月から6月までの期間のみの営業となります",
+      "checkedAt": "2026-11-06"
+    },
+    {
+      "claim": "潮干狩りではアサリやハマグリなどの貝類が採れる",
+      "source": "https://turiland.jp/clumhant.shtml",
+      "quote": "アサリやハマグリなどの貝類がたくさん！",
+      "checkedAt": "2026-11-06"
+    },
+    {
+      "claim": "潮干狩りに必要な道具（貝掘り用くまで・ざる）は施設から貸し出される",
+      "source": "https://turiland.jp/clumhant.shtml",
+      "quote": "潮干狩りに必要な道具も無料で貸し出しております / 貝掘り用くまで / ザル",
+      "checkedAt": "2026-11-06"
+    },
+    {
+      "claim": "満潮時の潮干狩りはできず、干潮時の前後3時間あたりが潮干狩りの適した時間帯",
+      "source": "https://turiland.jp/clumhant.shtml",
+      "quote": "満潮時の潮干狩りは出来ません。干潮時の前後3時間あたりが潮干狩りの頃合いです",
+      "checkedAt": "2026-11-06"
+    },
+    {
+      "claim": "バーベキューセット（コンロ・ネット・トング・木炭）は施設から貸し出している",
+      "source": "https://turiland.jp/barbecue.shtml",
+      "quote": "当施設で貸し出す物 / バーベキューコンロ / ネット / トング（食材挟み用）/ 木炭",
+      "checkedAt": "2026-11-06"
+    },
+    {
+      "claim": "バーベキューは3名以上から受け付け、1区画6名まで利用できる",
+      "source": "https://turiland.jp/barbecue.shtml",
+      "quote": "3名以上から承っております / 1区画6名様までご利用いただけます",
+      "checkedAt": "2026-11-06"
+    },
+    {
+      "claim": "バーベキューセットには数に限りがあるため前日までに予約が必要",
+      "source": "https://turiland.jp/barbecue.shtml",
+      "quote": "バーベキューセットは数に限りがあります。前日までに必ずご予約ください",
+      "checkedAt": "2026-11-06"
+    },
+    {
+      "claim": "釣った魚以外の食材（肉類・野菜類）は持ち込みとなる",
+      "source": "https://turiland.jp/barbecue.shtml",
+      "quote": "釣った魚以外の食材（肉類・野菜類）などは持ち込みとなります",
+      "checkedAt": "2026-11-06"
+    },
+    {
+      "claim": "施設内に自動販売機がある",
+      "source": "https://turiland.jp/barbecue.shtml",
+      "quote": "お飲み物（自動販売機もございます）",
+      "checkedAt": "2026-11-06"
+    },
+    {
+      "claim": "九州自動車道御船ICから国道57号線経由で約80分",
+      "source": "https://turiland.jp/access.shtml",
+      "quote": "九州自動車道 御船ICから国道57号線経由…約80分",
+      "checkedAt": "2026-11-06"
+    },
+    {
+      "claim": "九州自動車道松橋ICから国道266号線経由で約70分",
+      "source": "https://turiland.jp/access.shtml",
+      "quote": "九州自動車道 松橋ICから国道266号線経由…約70分",
+      "checkedAt": "2026-11-06"
+    },
+    {
+      "claim": "西大維橋手前右側の港に釣り堀の旗があり、振ると迎えの船が来る",
+      "source": "https://turiland.jp/access.shtml",
+      "quote": "西大維橋手前右側に港があります。そこに釣堀の旗がありますので、振ってください。迎えの船がやってまいります",
+      "checkedAt": "2026-11-06"
+    },
+    {
+      "claim": "施設はLINE公式アカウント（@093cnolq）を開設している",
+      "source": "https://turiland.jp/",
+      "quote": "LINE公式アカウントはじめました @093cnolq",
+      "checkedAt": "2026-11-06"
+    }
+  ],
+  "images": [
+    {
+      "path": "/_portal/vshops/tri-activity-408/g02.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9QhAsHbjjQ_zRC1qYxvwZ1kAulfH4N8tEnSXbw2NQhpNMJZ6LQlyS0R-zUFnPnreTYpx_4SpmwDgVO0PVqsHmflCgTE-xUeJFgC9ogD9UkWfBG-qURu-V7xYNeWko9jK7ZkUTTmkQ=s1200",
+      "pageUrl": "https://maps.google.com/?cid=5668696149945129123",
+      "what": "海上の釣り堀桟橋と対岸の木々"
+    },
+    {
+      "path": "/_portal/vshops/tri-activity-408/g03.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9SsyJd3ws5sftKxJQuO6FmFjIW7Mhxu6pspZHBCh88gLh29cPswadguVF5hXyTY_TTzfHKFE79xekdb6c1zWQvvs7ZaBSb7USAc9T8q6jdi5l34PGPrk-H622_CbhXF38Lw2hIYmg=s1200",
+      "pageUrl": "https://maps.google.com/?cid=5668696149945129123",
+      "what": "砂浜で潮干狩りをする大勢の人たち"
+    },
+    {
+      "path": "/_portal/vshops/tri-activity-408/g04.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9QHBfhZnMGJh5DoP_GFN899zLH_JVLkxn3Ti8jdtsFMZIhLwyUO2CGwKh7Ss_qm9lzRwqYxsr8nmLtlXxFY0T-7_-28Q33slDOpxoW1WxJFZUDGOdkgTti_kRMdQYGqo6NQjYOC=s1200",
+      "pageUrl": "https://maps.google.com/?cid=5668696149945129123",
+      "what": "海上に張られた釣り堀の仕切りと青空"
+    },
+    {
+      "path": "/_portal/vshops/tri-activity-408/g05.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9R_6OnvKosqM1sVbab_XOoExO7YW2RNLrIsm_dPlHR1-fM00MdPO5I4YIVr5vl3-gCAVOzkeAtR6ZLEB0lvM8E30ObYivsTRqqY6jzn7D81v4g3lcRAgbqMPNwqgStDKiGtvSilXumurP5a=s1200",
+      "pageUrl": "https://maps.google.com/?cid=5668696149945129123",
+      "what": "網の上に並ぶ複数の赤い魚"
+    },
+    {
+      "path": "/_portal/vshops/tri-activity-408/g06.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9TsLJUkkIBlwHdR4T4SL904KGosVPc14OejQcgxtVuK45c5JvUaJWU3bBUEVYALEAAzcnAHiOKP8--0CBjLT5hNj1NV22wZ67a8ADhRUWDQPxTZ9JCU0wbbQDwoYt3mIs6NSZaL=s1200",
+      "pageUrl": "https://maps.google.com/?cid=5668696149945129123",
+      "what": "ライフジャケットを着た人が大型魚を持ち上げている"
+    },
+    {
+      "path": "/_portal/vshops/tri-activity-408/g07.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9QtZ0QgX55LKNJ0zO-uT27NXcrpq3Xw8RvY3YS4u-MGgeZgAc0LoAbK6CKt9X4F9Vq_fYwsJzR0qPH8nuuWfT71IA3XCrSsFyZHKVmHEZPFI2ZlrYAVcBaVgukIou69lQ8omJmfmAGFn9Xk=s1200",
+      "pageUrl": "https://maps.google.com/?cid=5668696149945129123",
+      "what": "釣り堀の桟橋にくまモンのぬいぐるみと立つ女性"
+    },
+    {
+      "path": "/_portal/vshops/tri-activity-408/g08.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9Qzo8MuldKpbZ0DQIctuHKKiIsXaTwmTUvPaZ1daNgQZH8SPAAoe5MChApwc4kX2BbzPAb2rn9e2HGno_OFl_CTFK5nVVruo9jkxZyu2-IXKPqAZlfkqiwD-iUSNhW73rD5MJL1NQ=s1200",
+      "pageUrl": "https://maps.google.com/?cid=5668696149945129123",
+      "what": "島を囲む青緑の海と釣り堀の桟橋"
+    },
+    {
+      "path": "/_portal/vshops/tri-activity-408/g09.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9RCZrF3_AwBxLQkOAnpY2SrMixNN-RoM8XZUAsQwrrWHoH2UX4_28A6yWDEADoc33v2WBJYlJhow4-W9InVLoqJSrNu41yQXbobQxjyR4A6tKCax4PSK0vXZjjVwZRTXVj907XX=s1200",
+      "pageUrl": "https://maps.google.com/?cid=5668696149945129123",
+      "what": "桟橋の上で釣り上げた魚と並ぶ3人"
+    },
+    {
+      "path": "/_portal/vshops/tri-activity-408/g10.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9SdMT8CXHso7Jrf_9BBY7fFqS5vhiyxEctBHXje6hed4I84pWHYq6e5t6fJplYHVO07QiCrsGeZTiCzUiyYh9zG3T1A_JJ-b5VsrXkBhLaqyXv-2iNSHsftWgJLnz5hCC07aoKu1g=s1200",
+      "pageUrl": "https://maps.google.com/?cid=5668696149945129123",
+      "what": "発泡スチロールのクーラーに入った釣り上げた魚"
+    },
+    {
+      "path": "/_portal/vshops/tri-activity-408/s01.jpg",
+      "imageUrl": "https://turiland.jp/images/top/tsuribori.jpg",
+      "pageUrl": "https://turiland.jp/",
+      "what": "島全体と釣り堀桟橋を望む全景"
+    },
+    {
+      "path": "/_portal/vshops/tri-activity-408/s02.jpg",
+      "imageUrl": "https://turiland.jp/images/top/shiohigari.jpg",
+      "pageUrl": "https://turiland.jp/",
+      "what": "砂浜でしゃがんで潮干狩りをする子ども"
+    },
+    {
+      "path": "/_portal/vshops/tri-activity-408/s03.jpg",
+      "imageUrl": "https://turiland.jp/images/top/bbq.jpg",
+      "pageUrl": "https://turiland.jp/",
+      "what": "バーベキューコンロを囲む家族グループ"
+    },
+    {
+      "path": "/_portal/vshops/tri-activity-408/s09.jpg",
+      "imageUrl": "https://turiland.jp/images/access/kanban.jpg",
+      "pageUrl": "https://turiland.jp/access.shtml",
+      "what": "「天草釣堀レジャーランド 第一駐車場」と書かれた看板"
+    },
+    {
+      "path": "/_portal/vshops/tri-activity-408/s12.jpg",
+      "imageUrl": "https://turiland.jp/images/fishpond/fish01.jpg",
+      "pageUrl": "https://turiland.jp/fishpond.shtml",
+      "what": "海上の釣り堀桟橋に並ぶ釣り人たち"
+    }
+  ],
+  "sources": [
+    {
+      "label": "公式サイト",
+      "url": "https://turiland.jp/"
+    },
+    {
+      "label": "公式サイト(釣堀)",
+      "url": "https://turiland.jp/fishpond.shtml"
+    },
+    {
+      "label": "公式サイト(潮干狩り)",
+      "url": "https://turiland.jp/clumhant.shtml"
+    },
+    {
+      "label": "公式サイト(バーベキュー)",
+      "url": "https://turiland.jp/barbecue.shtml"
+    },
+    {
+      "label": "公式サイト(交通アクセス)",
+      "url": "https://turiland.jp/access.shtml"
+    },
+    {
+      "label": "釣りニュース",
+      "url": "https://tsurinews.jp/3594/"
+    },
+    {
+      "label": "釣り堀ネット",
+      "url": "https://tsuribori.net/introduce/amakusa-turibori/"
+    },
+    {
+      "label": "Google マップ",
+      "url": "https://maps.google.com/?cid=5668696149945129123"
+    }
+  ],
+  "notes": "automation/v2/write.mjs が 2026-11-06 に作成。"
+}

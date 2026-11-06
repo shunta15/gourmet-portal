@@ -1,0 +1,40 @@
+{
+  "tab": "トリニティアポ",
+  "tabEn": "tri-activity",
+  "row": 411,
+  "sheet": {
+    "name": "TukTukGO",
+    "address": "",
+    "url": "https://www.google.com/maps/search/?api=1&query=TukTukGO%20098-043-8415%20%E3%80%92905-0206%20%E6%B2%96%E7%B8%84%E7%9C%8C%E5%9B%BD%E9%A0%AD%E9%83%A1%E6%9C%AC%E9%83%A8%E7%94%BA%E7%9F%B3%E5%B7%9D%EF%BC%98%EF%BC%90%EF%BC%91%E2%88%92%EF%BC%91%EF%BC%90",
+    "type": "その他",
+    "d1": "",
+    "d2": ""
+  },
+  "urlKind": "mapsApi",
+  "route": "第1段(verify-gbp.mjs)で確認済み",
+  "verdict": "一致",
+  "verdictReason": "手がかり: 店名＋電話＋住所(番地まで)。電話が一致／店名: exact(シート「TukTukGO」/ マップ「TukTukGO」)／住所(シート): exact・町名・番地とも一致",
+  "place": {
+    "name": "TukTukGO",
+    "address": "沖縄県国頭郡本部町石川８０１−１０",
+    "category": "レンタカー",
+    "lat": 26.692964,
+    "lng": 127.8817686,
+    "gbpUrl": "https://maps.google.com/?cid=14994524022095911196",
+    "phone": "0980-43-8415",
+    "website": "https://tuktukgo.jp/",
+    "hours": {
+      "月": "09:00–18:00",
+      "火": "09:00–18:00",
+      "水": "09:00–18:00",
+      "木": "09:00–18:00",
+      "金": "09:00–18:00",
+      "土": "09:00–18:00",
+      "日": "09:00–18:00"
+    },
+    "reserveLinks": [],
+    "statusSignals": [],
+    "closedSignal": false
+  },
+  "fetchedAt": "2026-11-06T12:59:42.999Z"
+}

@@ -663,6 +663,178 @@
         ],
         "checkedAt": "2026-11-02"
       }
+    },
+    {
+      "id": "sp0007",
+      "vertical": "sports",
+      "category": "gym",
+      "name": "FIT INGRAVITY",
+      "pref": "iwate",
+      "cityName": "盛岡市",
+      "address": "岩手県盛岡市中央通2丁目8-23 プランタンおがさわら 1F",
+      "lat": 39.7057352,
+      "lng": 141.1447015,
+      "hours": "毎日 05:00 - 09:50, 10:00 - 00:00",
+      "phone": "070-4420-2781",
+      "url": "https://www.fit-ingravity.com/",
+      "website": "https://www.fit-ingravity.com/",
+      "mapUrl": "https://maps.google.com/?cid=3053099244282803747",
+      "image": "/_portal/vshops/tri-sports-417/g01.jpg",
+      "images": [
+        "/_portal/vshops/tri-sports-417/g01.jpg",
+        "/_portal/vshops/tri-sports-417/g02.jpg",
+        "/_portal/vshops/tri-sports-417/g03.jpg",
+        "/_portal/vshops/tri-sports-417/g04.jpg",
+        "/_portal/vshops/tri-sports-417/g05.jpg",
+        "/_portal/vshops/tri-sports-417/g07.jpg",
+        "/_portal/vshops/tri-sports-417/g08.jpg",
+        "/_portal/vshops/tri-sports-417/g09.jpg",
+        "/_portal/vshops/tri-sports-417/g10.jpg"
+      ],
+      "photos": [
+        {
+          "path": "/_portal/vshops/tri-sports-417/g01.jpg",
+          "what": "FIT INGRAVITYと書かれたガラス扉の入口",
+          "kind": "exterior",
+          "width": 904,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-sports-417/g02.jpg",
+          "what": "ダンベルラックとトレーニング器具が並ぶジム内",
+          "kind": "common",
+          "width": 1080,
+          "height": 1080
+        },
+        {
+          "path": "/_portal/vshops/tri-sports-417/g03.jpg",
+          "what": "ベンチとトレーニング器具が置かれた明るいジム内",
+          "kind": "common",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-sports-417/g04.jpg",
+          "what": "スミスマシンとウェイトラックが設置されたトレーニングエリア",
+          "kind": "common",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-sports-417/g05.jpg",
+          "what": "植物が置かれたジムの入口外観",
+          "kind": "exterior",
+          "width": 904,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-sports-417/g07.jpg",
+          "what": "プロテインの袋が置かれたトレーニングエリア",
+          "kind": "common",
+          "width": 904,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-sports-417/g08.jpg",
+          "what": "パーソナルトレーニングジムと書かれた看板が立つ外観",
+          "kind": "exterior",
+          "width": 904,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-sports-417/g09.jpg",
+          "what": "観葉植物と椅子が置かれた明るいジム内エントランス",
+          "kind": "common",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-sports-417/g10.jpg",
+          "what": "バーベルラックが並ぶ広いトレーニングスペース",
+          "kind": "common",
+          "width": 904,
+          "height": 1200
+        }
+      ],
+      "tags": [
+        "体験あり"
+      ],
+      "article": {
+        "headline": "盛岡市中央通にあるパーソナルジム。マンツーマン指導とレンタルジムの両方を提供する",
+        "lede": "盛岡市にある「FIT INGRAVITY」です。盛岡中央通りのプランタンおがさわら1Fに構えるパーソナルジムで、パーソナルトレーニングとレンタルジムの2つの利用形態を設けています。コンセプトはStrength and Conditioning。ダイエット・減量から競技力向上まで、目的に合わせたトレーニングと食事評価・食事指導をマンツーマンで提供します。スミスマシンやダンベルを使ったウェイトトレーニング、高負荷インターバルトレーニング（HIIT）、エアロバイクを使った有酸素運動など、複数の手法を組み合わせてプログラムを組みます。トレーナーは仙台大学体育学部出身で、コーチング理論・運動生理学・解剖学・栄養学を学び、大学ではバスケットボール部に所属していました。",
+        "sections": [
+          {
+            "heading": "設備と広さ",
+            "body": "ジムにはスミスマシン、ダンベル、エアロバイク、フォームローラーが備わっています。更衣室とロッカーを完備しており、仕事帰りや通学前後に立ち寄りやすい環境が整っています。HIITで短時間での効率的なカロリー燃焼、スミスマシンやダンベルを使ったウェイトトレーニングで筋肉の増強、自重トレーニングで体のコンディションを整える、エアロバイクや有酸素運動で脂肪燃焼するという形で、目的に応じて器具を使い分けます。ストレッチングではスタティックストレッチ、ダイナミックストレッチ、PNFストレッチングの3種に対応しており、PNFストレッチングはトレーナーの協力が必要な手法です。フォームローラーやボールを使った筋膜リリースにも対応しています。"
+          },
+          {
+            "heading": "利用区分",
+            "body": "利用区分はパーソナルトレーニングとレンタルジムの2種類です。パーソナルトレーニングは、個人の目的・目標設定に合わせてメニューを作成し、マンツーマンで指導します。メニュー作成と食事評価・食事指導、30分以上のアセスメントを含むコースを提供しています。コースはペアで月8回の形も選べます。レンタルジムは早朝の時間帯に貸し出しを行っており、自己トレーニングに活用できます。いずれも定休日は不定休で、予約カレンダーで営業状況を確認できます。"
+          },
+          {
+            "heading": "指導者",
+            "body": "トレーナーは仙台大学体育学部出身で、コーチング理論・運動生理学・解剖学・栄養学を習得しています。大学ではバスケットボール部に所属していました。指導の対象はダイエット・栄養指導・競技力向上と幅広く、フィットネス初心者から競技経験者まで対応します。また、第70回岩手県高等学校新人バスケットボール大会に外部コーチとして参加し、県立盛岡南高等学校男子バスケットボール部の部活動に帯同した実績があります。"
+          },
+          {
+            "heading": "行き方と使い方",
+            "body": "JR山田線の上盛岡駅から徒歩13分、JR東北本線の盛岡駅から徒歩15分の距離です。バスを利用する場合は、バス停「中央通二丁目」または「中央通三丁目」から徒歩すぐの場所にあります。予約は公式サイトの予約カレンダーから行えます。体験トレーニングも受け付けており、公式サイトの予約ページから申し込めます。問い合わせはメールやフォームでも対応しています。"
+          }
+        ],
+        "menus": [
+          {
+            "name": "ダイエット・脂肪燃焼メニュー"
+          },
+          {
+            "name": "ボディメイクメニュー"
+          },
+          {
+            "name": "競技力向上メニュー"
+          },
+          {
+            "name": "腰痛・肩こり解消メニュー"
+          },
+          {
+            "name": "パーソナルトレーニング 月8回コース"
+          },
+          {
+            "name": "ペアトレーニング 月8回コース"
+          },
+          {
+            "name": "レンタルジム"
+          }
+        ],
+        "sources": [
+          {
+            "label": "公式サイト",
+            "url": "https://www.fit-ingravity.com/"
+          },
+          {
+            "label": "公式サイト(ダイエットメニュー)",
+            "url": "https://www.fit-ingravity.com/services-1"
+          },
+          {
+            "label": "公式サイト(ボディメイクメニュー)",
+            "url": "https://www.fit-ingravity.com/%E8%A4%87%E8%A3%BD-%E3%83%80%E3%82%A4%E3%82%A8%E3%83%83%E3%83%88%E3%83%A1%E3%83%8B%E3%83%A5%E3%83%BC%E3%81%AE%E7%B4%B9%E4%BB%8B"
+          },
+          {
+            "label": "公式サイト(競技力向上メニュー)",
+            "url": "https://www.fit-ingravity.com/%E8%A4%87%E8%A3%BD-%E3%83%9C%E3%83%87%E3%82%A3%E3%83%A1%E3%82%A4%E3%82%AF%E3%81%AE%E3%83%A1%E3%83%8B%E3%83%A5%E3%83%BC%E7%B4%B9%E4%BB%8B"
+          },
+          {
+            "label": "公式サイト(腰痛・肩こり解消メニュー)",
+            "url": "https://www.fit-ingravity.com/%E8%A4%87%E8%A3%BD-%E7%AB%B6%E6%8A%80%E5%8A%9B%E5%90%91%E4%B8%8A%E3%81%AE%E3%83%A1%E3%83%8B%E3%83%A5%E3%83%BC%E7%B4%B9%E4%BB%8B"
+          },
+          {
+            "label": "公式サイト(部活動帯同報告)",
+            "url": "https://www.fit-ingravity.com/post/%E9%83%A8%E6%B4%BB%E5%8B%95%E5%B8%AF%E5%90%8C%E6%B4%BB%E5%8B%95%E3%81%AE%E3%81%94%E5%A0%B1%E5%91%8A"
+          },
+          {
+            "label": "Google マップ",
+            "url": "https://maps.google.com/?cid=3053099244282803747"
+          }
+        ],
+        "checkedAt": "2026-11-06"
+      }
     }
   ]
 }

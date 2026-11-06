@@ -3617,5 +3617,13 @@
     "warnings": [
       "cuisine は GBPカテゴリ"
     ]
+  },
+  "r906": {
+    "articleId": "あっぷっるりんご飴専門店",
+    "name": "あっぷっる りんご飴専門店",
+    "warnings": [
+      "desc は lede から事実の文を選べず、事実から作った定型文",
+      "cuisine は GBPカテゴリ"
+    ]
   }
 }

@@ -1,0 +1,118 @@
+{
+  "commit": "24fc893478a060997eba870ee8cb8087ebf019ee",
+  "source": "/Users/shunta/claude/gp-k-auto2",
+  "count": 10,
+  "added": [
+    {
+      "row": 389,
+      "name": "酒のしのだ",
+      "key": "tri-life-389",
+      "vertical": "くらし",
+      "id": "li0182",
+      "articleId": "li0182",
+      "shopUrl": "https://machinowa.tokyo/life/shop/li0182",
+      "articleUrl": "https://machinowa.tokyo/life/article/li0182",
+      "sheetUrl": "https://machinowa.tokyo/life/article/li0182"
+    },
+    {
+      "row": 394,
+      "name": "子供のアトリエ",
+      "key": "tri-life-394",
+      "vertical": "くらし",
+      "id": "li0183",
+      "articleId": "li0183",
+      "shopUrl": "https://machinowa.tokyo/life/shop/li0183",
+      "articleUrl": "https://machinowa.tokyo/life/article/li0183",
+      "sheetUrl": "https://machinowa.tokyo/life/article/li0183"
+    },
+    {
+      "row": 396,
+      "name": "Shine Up",
+      "key": "tri-life-396",
+      "vertical": "くらし",
+      "id": "li0184",
+      "articleId": "li0184",
+      "shopUrl": "https://machinowa.tokyo/life/shop/li0184",
+      "articleUrl": "https://machinowa.tokyo/life/article/li0184",
+      "sheetUrl": "https://machinowa.tokyo/life/article/li0184"
+    },
+    {
+      "row": 408,
+      "name": "天草釣堀レジャーランド",
+      "key": "tri-activity-408",
+      "vertical": "アクティビティ",
+      "id": "ac0043",
+      "articleId": "ac0043",
+      "shopUrl": "https://machinowa.tokyo/activity/shop/ac0043",
+      "articleUrl": "https://machinowa.tokyo/activity/article/ac0043",
+      "sheetUrl": "https://machinowa.tokyo/activity/article/ac0043"
+    },
+    {
+      "row": 409,
+      "name": "岩橋康子フラワーデザインスクール",
+      "key": "tri-life-409",
+      "vertical": "くらし",
+      "id": "li0185",
+      "articleId": "li0185",
+      "shopUrl": "https://machinowa.tokyo/life/shop/li0185",
+      "articleUrl": "https://machinowa.tokyo/life/article/li0185",
+      "sheetUrl": "https://machinowa.tokyo/life/article/li0185"
+    },
+    {
+      "row": 410,
+      "name": "ＳＡＳＡＹＡ",
+      "key": "tri-stay-410",
+      "vertical": "ステイ",
+      "id": "st0028",
+      "articleId": "st0028",
+      "shopUrl": "https://machinowa.tokyo/stay/shop/st0028",
+      "articleUrl": "https://machinowa.tokyo/stay/article/st0028",
+      "sheetUrl": "https://machinowa.tokyo/stay/article/st0028"
+    },
+    {
+      "row": 411,
+      "name": "TukTukGO",
+      "key": "tri-activity-411",
+      "vertical": "アクティビティ",
+      "id": "ac0044",
+      "articleId": "ac0044",
+      "shopUrl": "https://machinowa.tokyo/activity/shop/ac0044",
+      "articleUrl": "https://machinowa.tokyo/activity/article/ac0044",
+      "sheetUrl": "https://machinowa.tokyo/activity/article/ac0044"
+    },
+    {
+      "row": 413,
+      "name": "侍SAMURAI",
+      "key": "tri-activity-413",
+      "vertical": "アクティビティ",
+      "id": "ac0045",
+      "articleId": "ac0045",
+      "shopUrl": "https://machinowa.tokyo/activity/shop/ac0045",
+      "articleUrl": "https://machinowa.tokyo/activity/article/ac0045",
+      "sheetUrl": "https://machinowa.tokyo/activity/article/ac0045"
+    },
+    {
+      "row": 417,
+      "name": "FIT INGRAVITY",
+      "key": "tri-sports-417",
+      "vertical": "スポーツ",
+      "id": "sp0007",
+      "articleId": "sp0007",
+      "shopUrl": "https://machinowa.tokyo/sports/shop/sp0007",
+      "articleUrl": "https://machinowa.tokyo/sports/article/sp0007",
+      "sheetUrl": "https://machinowa.tokyo/sports/article/sp0007"
+    },
+    {
+      "row": 423,
+      "name": "あっぷっる",
+      "key": "tri-gourmet-423",
+      "vertical": "グルメ",
+      "id": "r906",
+      "articleId": "あっぷっるりんご飴専門店",
+      "shopUrl": "https://machinowa.tokyo/restaurant/r906",
+      "articleUrl": "https://machinowa.tokyo/feature/あっぷっるりんご飴専門店",
+      "sheetUrl": "https://machinowa.tokyo/feature/あっぷっるりんご飴専門店"
+    }
+  ],
+  "skipped": []
+}

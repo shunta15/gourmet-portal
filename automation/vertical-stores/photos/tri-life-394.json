@@ -1,0 +1,56 @@
+{
+  "key": "tri-life-394",
+  "images": [
+    {
+      "path": "/_portal/vshops/tri-life-394/g01.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9RGk2og06N4KFVOuLPPqk5T1IYy2LhRUHQT299f9l7I3gBhdZyaggtrxbEEjvc5e5I2ybEGP_9lbt8zO5tMafTR1ZhubHgkrzUely3Spu83aJa3pZofkVzrrwGcSCK2yHQx8jj0=s1200",
+      "pageUrl": "https://maps.google.com/?cid=5606807773626087268",
+      "what": "赤と緑の屋根を持つ家型の工作をそばで確認する様子",
+      "kind": "common",
+      "width": 900,
+      "height": 1200,
+      "source": "Google マップ"
+    },
+    {
+      "path": "/_portal/vshops/tri-life-394/g02.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9S5yjSDVcZJ5R_boRXszq7eszl58AAADvBN4n647-emb4WZVLi6OO0cUUzR3Q2IuPA5xKfXLy91HJN20rF4Iq7mSWPj0p5ob8xLFpCkGLZZSqp4RteGCbw6o-CoK0pBp-i9eMDJ=s1200",
+      "pageUrl": "https://maps.google.com/?cid=5606807773626087268",
+      "what": "テーブルに材料を並べてお菓子の家を組み立てている子ども",
+      "kind": "common",
+      "width": 1200,
+      "height": 675,
+      "source": "Google マップ"
+    },
+    {
+      "path": "/_portal/vshops/tri-life-394/g03.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9TdXG7KRmIw2EjwhTKzTow9cg-gPN6OGZVUyH7wrhutivPN7zgMwbFaCtk0Yt-EciFZY8DH1bPXCMsF1vrZxzb8ph9tJUYOsUNf0OL_El1_JTGex9NXdVC41d_X7RO4LqONadpKwg=s1200",
+      "pageUrl": "https://maps.google.com/?cid=5606807773626087268",
+      "what": "テーブルに粘土や材料を広げて作業している子どもたちの手元",
+      "kind": "common",
+      "width": 1200,
+      "height": 900,
+      "source": "Google マップ"
+    },
+    {
+      "path": "/_portal/vshops/tri-life-394/g04.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9T_zvRJoRq6IaES-nRpIU131mmNYNGyv41MsbbfLgieIbYhlSp-MvPMSt8-a2_h1uAIolams4tXr9Cy5YBVP43nLHZLbCj3nx9oakEBwgi-eZmjJyQXPmfjrdUpj2jNXDtnpLsa=s1200",
+      "pageUrl": "https://maps.google.com/?cid=5606807773626087268",
+      "what": "新聞紙を敷いたテーブルで絵の制作に取り組む子ども",
+      "kind": "common",
+      "width": 1200,
+      "height": 900,
+      "source": "Google マップ"
+    },
+    {
+      "path": "/_portal/vshops/tri-life-394/g05.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9TuPtnxdbZOgdDY5A625eAl3HqtxyOP7GEQnNfPYZRB3uMRtty0GJ-mOqse41zb5ibr_O5ZdH0BxJmgy8MJvb25lbNpeVE5KGrDUZubz53ymwfMLUTD5n3qxjvMhb4gb52Cy_Lf=s1200",
+      "pageUrl": "https://maps.google.com/?cid=5606807773626087268",
+      "what": "壁に作品を飾った教室で工作をする子どもの様子",
+      "kind": "common",
+      "width": 1200,
+      "height": 300,
+      "source": "Google マップ"
+    }
+  ],
+  "note": "automation/v2/write.mjs が 2026-11-06T13:10:29.193Z に取得。店の実写だけ(AI 画像・汎用画像・地図・ロゴ・顔が大きい画像は除外)。"
+}

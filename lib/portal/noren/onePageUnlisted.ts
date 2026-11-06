@@ -173,6 +173,7 @@ export const ONE_PAGE_UNLISTED_SHOP_OF_FEATURE: Readonly<Record<string, string>>
   "BARBEARS": "r903", // BAR BEARS
   "さなえ食堂": "r904", // さなえ食堂
   "コルテージュ": "r905", // コルテージュ
+  "あっぷっるりんご飴専門店": "r906", // あっぷっる りんご飴専門店
 };
 
 const NFC = (s: string) => s.normalize("NFC");

@@ -1,0 +1,313 @@
+{
+  "key": "tri-sports-417",
+  "vertical": "sports",
+  "storeName": "FIT INGRAVITY",
+  "article": {
+    "id": "FITINGRAVITY",
+    "no": "",
+    "articleType": "guide",
+    "kicker": "FIT INGRAVITY MORIOKA",
+    "title": "盛岡中央通のパーソナルジム。FIT INGRAVITYの4つのトレーニングメニューと食事指導",
+    "titleHTML": "盛岡中央通のパーソナルジム。<br><em>FIT INGRAVITY</em>の4つのトレーニングメニューと食事指導",
+    "subtitle": "パーソナルジム / 岩手県盛岡市 / マンツーマン指導・食事指導込み",
+    "lede": "目的別のトレーニングメニューと食事指導をマンツーマンで提供するパーソナルジムだ。FIT INGRAVITYは岩手県盛岡市中央通2丁目、プランタンおがさわら1Fにある。コンセプトはStrength and Conditioning。ダイエット・ボディメイク・競技力向上・腰痛解消という4つの目的別にメニューを構成しており、それぞれにトレーニングの組み立て方と食事評価・食事指導が組み合わさる。各メニューで使われる器具と手法は異なり、目的に応じてスミスマシン・エアロバイク・フォームローラーを使い分ける。トレーナーは仙台大学体育学部出身で、コーチング理論・運動生理学・解剖学・栄養学を学んでいる。",
+    "date": "2026-11-06",
+    "reading": "",
+    "author": "マチノワ編集部",
+    "heroImage": "/_portal/vshops/tri-sports-417/g03.jpg",
+    "ogImage": "/_portal/vshops/tri-sports-417/g03.jpg",
+    "ranking": [
+      {
+        "rank": "POINT 01",
+        "rankNum": 1,
+        "name": "HIITとウェイトトレーニングでダイエット・脂肪燃焼を目指す",
+        "cuisine": "ダイエットメニュー",
+        "area": "盛岡市",
+        "purpose": "効率よく脂肪を落としたい人へ",
+        "desc": "ダイエット・脂肪燃焼メニューでは、筋量アップ・代謝アップ・カロリーコントロールの3要素を組み合わせる。筋量を増やすにはダンベルなどのおもりを使った重量トレーニングと自重トレーニングを用いる。代謝アップには、HIIT（高負荷インターバルトレーニング）によって呼吸器系と心臓血管系の能力を向上させ、筋量増加による基礎代謝の向上をねらう。食事指導ではPFCバランスを考慮し、個人の目標・目的に応じた食事評価をおこなって制限や推奨を提案する形だ。食事指導は必要に応じて個人別に適切な期間と内容を合意のうえで進める。",
+        "images": [
+          "/_portal/vshops/tri-sports-417/g02.jpg"
+        ],
+        "specs": [
+          {
+            "k": "主な手法",
+            "v": "HIIT・ウェイトトレーニング・自重トレーニング・食事指導"
+          },
+          {
+            "k": "食事指導",
+            "v": "PFCバランスを考慮した食事評価・制限・推奨の提案"
+          }
+        ]
+      },
+      {
+        "rank": "POINT 02",
+        "rankNum": 2,
+        "name": "部位別筋トレとスミスマシンでボディメイクを進める",
+        "cuisine": "ボディメイクメニュー",
+        "area": "盛岡市",
+        "purpose": "筋力アップや増量を目指したい人へ",
+        "desc": "ボディメイクメニューでは、部位別筋トレ・有酸素運動・食事指導の3本柱で取り組む。部位別筋トレでは目的に応じてスミスマシンやフリーウェイトを用い、大胸筋にはベンチプレス、大腿四頭筋にはスクワットやデッドリフトを割り当てるなど、肩・背中・腕・ハムストリング・ふくらはぎ・体幹と部位ごとに異なるアプローチをとる。有酸素運動にはHIITとエアロバイクを使い、個人の心拍数などをもとに運動強度と継続時間を定めてメニューを作成する。食事指導ではタンパク質・炭水化物・ビタミン・ミネラル・水分補給・全体のカロリー調整を評価して指導する。",
+        "images": [
+          "/_portal/vshops/tri-sports-417/g04.jpg"
+        ],
+        "specs": [
+          {
+            "k": "使用器具",
+            "v": "スミスマシン・フリーウェイト・エアロバイク"
+          },
+          {
+            "k": "食事指導",
+            "v": "タンパク質・炭水化物・ビタミン・ミネラル・カロリー調整"
+          }
+        ]
+      },
+      {
+        "rank": "POINT 03",
+        "rankNum": 3,
+        "name": "筋力・筋持久力・可動域の3要素で競技力向上を図る",
+        "cuisine": "競技力向上メニュー",
+        "area": "盛岡市",
+        "purpose": "スポーツのパフォーマンスを上げたい人へ",
+        "desc": "競技力向上メニューでは筋力アップ・筋持久力アップ・可動域アップの3要素を組み合わせる。筋力アップにはフリーウェイトやマシンを使ったレジスタンストレーニングで適切な負荷をかけ、負荷の強度と回復期間の設定を重視する。筋持久力アップには低負荷・高回数のトレーニングとサーキットトレーニングを用いて筋肉と心肺機能の両方の向上を目指す。可動域アップにはスタティックストレッチとダイナミックストレッチ、フォームローラーやボールを使った筋膜リリース、ヨガやピラティスの要素を取り入れた柔軟性向上、筋力トレーニングによる姿勢矯正を組み合わせる。トレーナーは高校バスケットボールの部活動に外部コーチとして帯同した実績も持つ。",
+        "images": [
+          "/_portal/vshops/tri-sports-417/g10.jpg"
+        ],
+        "specs": [
+          {
+            "k": "主な手法",
+            "v": "レジスタンストレーニング・サーキットトレーニング・ストレッチング"
+          },
+          {
+            "k": "可動域改善",
+            "v": "フォームローリング・ヨガやピラティスの要素・姿勢矯正"
+          }
+        ]
+      }
+    ],
+    "sideArticles": [],
+    "quote": "目的別に4つのメニューを用意し、マンツーマンで食事評価・食事指導を組み合わせて指導する。トレーナーは仙台大学体育学部出身で、コーチング理論・運動生理学・解剖学・栄養学を学んでいる。",
+    "quoteCite": "マチノワ編集部",
+    "closing": "JR山田線の上盛岡駅から徒歩13分、JR東北本線の盛岡駅から徒歩15分の距離にある。バス停「中央通二丁目」または「中央通三丁目」からはすぐの場所だ。予約は公式サイトの予約カレンダーから行える。体験トレーニングも公式サイトの予約ページから申し込める。"
+  },
+  "summary": "岩手県盛岡市中央通のパーソナルジム・FIT INGRAVITY。ダイエット・ボディメイク・競技力向上・腰痛解消の4メニュー、使用器具、食事指導の内容と予約の方法をまとめた特集。",
+  "tags": [
+    "ジム・フィットネス",
+    "盛岡市"
+  ],
+  "charCount": 1324,
+  "facts": [
+    {
+      "claim": "店名はFIT INGRAVITYで、岩手県盛岡市中央通2丁目8-23 プランタンおがさわら1Fに所在する",
+      "source": "https://maps.google.com/?cid=3053099244282803747",
+      "quote": "岩手県盛岡市中央通２丁目８−２３ プランタンおがさわら 1F",
+      "checkedAt": "2026-11-06"
+    },
+    {
+      "claim": "電話番号は070-4420-2781である",
+      "source": "https://maps.google.com/?cid=3053099244282803747",
+      "quote": "070-4420-2781",
+      "checkedAt": "2026-11-06"
+    },
+    {
+      "claim": "パーソナルトレーニングの営業時間は日曜日〜月曜日 10:00〜24:00で、不定休",
+      "source": "https://www.fit-ingravity.com/",
+      "quote": "■パーソナルトレーニング 営業時間：日曜日～月曜日 10:00～24:00 不定休 ※予約カレンダーでお知らせ",
+      "checkedAt": "2026-11-06"
+    },
+    {
+      "claim": "レンタルジムの貸出時間は日曜日〜月曜日 5:00〜9:50で運営している",
+      "source": "https://www.fit-ingravity.com/",
+      "quote": "■レンタルジム 貸出時間：日曜日～月曜日 5:00～9:50",
+      "checkedAt": "2026-11-06"
+    },
+    {
+      "claim": "JR山田線の上盛岡駅から徒歩13分の距離にある",
+      "source": "https://www.fit-ingravity.com/",
+      "quote": "JR山田線 / 上盛岡駅 徒歩13分",
+      "checkedAt": "2026-11-06"
+    },
+    {
+      "claim": "JR東北本線の盛岡駅から徒歩15分の距離にある",
+      "source": "https://www.fit-ingravity.com/",
+      "quote": "JR東北本線 / 盛岡駅 徒歩15分",
+      "checkedAt": "2026-11-06"
+    },
+    {
+      "claim": "バス停「中央通二丁目」「中央通三丁目」からすぐの場所にある",
+      "source": "https://www.fit-ingravity.com/",
+      "quote": "バス停 中央通二丁目、三丁目からすぐ",
+      "checkedAt": "2026-11-06"
+    },
+    {
+      "claim": "コンセプトはStrength and Conditioningで、日常をより健康に・より元気にすることを目指している",
+      "source": "https://www.fit-ingravity.com/",
+      "quote": "当パーソナルジムのコンセプト、、、Strength and Conditioning フィットネスで、日常を「より健康に、より元気に！」",
+      "checkedAt": "2026-11-06"
+    },
+    {
+      "claim": "マンツーマンの指導・支援によりSelf-improvement（自己研鑽）をサポートする",
+      "source": "https://www.fit-ingravity.com/",
+      "quote": "マンツーマンの指導、支援により困難な目標でもSelf-improvement=「自己研鑽」をお手伝いします",
+      "checkedAt": "2026-11-06"
+    },
+    {
+      "claim": "スミスマシンとダンベルを使ったウェイトトレーニングで筋肉の増強を行う",
+      "source": "https://www.fit-ingravity.com/",
+      "quote": "スミスマシン、ダンベルを使ったウェイトトレーニングで筋肉の増強",
+      "checkedAt": "2026-11-06"
+    },
+    {
+      "claim": "HIIT（高負荷インターバルトレーニング）で短時間で効率の良いカロリー燃焼効果を得る",
+      "source": "https://www.fit-ingravity.com/",
+      "quote": "高負荷インターバルトレーニング（HIIT）で短時間で効率の良いカロリー燃焼効果を得る",
+      "checkedAt": "2026-11-06"
+    },
+    {
+      "claim": "更衣室とロッカーを完備している",
+      "source": "https://www.fit-ingravity.com/",
+      "quote": "更衣室、ロッカーあり",
+      "checkedAt": "2026-11-06"
+    },
+    {
+      "claim": "体験トレーニングを受け付けており、公式サイトの予約ページから申し込める",
+      "source": "https://www.fit-ingravity.com/",
+      "quote": "無料体験/トレーニング予約はこちら",
+      "checkedAt": "2026-11-06"
+    },
+    {
+      "claim": "ダイエットメニューでは食事評価を行い、PFCバランスを考慮した食事指導を提供する",
+      "source": "https://www.fit-ingravity.com/services-1",
+      "quote": "PFCバランスを考慮した上で、個々の目標、目的に応じた減量の度合いに応じて、食事評価を行い制限や推奨を提案します",
+      "checkedAt": "2026-11-06"
+    },
+    {
+      "claim": "腰痛・肩こり解消メニューではPNFストレッチングを取り入れており、通常はトレーナーの協力が必要な手法である",
+      "source": "https://www.fit-ingravity.com/%E8%A4%87%E8%A3%BD-%E7%AB%B6%E6%8A%80%E5%8A%9B%E5%90%91%E4%B8%8A%E3%81%AE%E3%83%A1%E3%83%8B%E3%83%A5%E3%83%BC%E7%B4%B9%E4%BB%8B",
+      "quote": "PNFストレッチング：緊張とリラックスを相互に繰り返し、筋肉、関節の柔軟性を向上させる手法です。これは一人で行う事が困難な為に通常はトレーナーの協力が必要です",
+      "checkedAt": "2026-11-06"
+    },
+    {
+      "claim": "競技力向上メニューではサーキットトレーニングで筋肉と心肺機能の両方の向上を目指す",
+      "source": "https://www.fit-ingravity.com/%E8%A4%87%E8%A3%BD-%E3%83%9C%E3%83%87%E3%82%A3%E3%83%A1%E3%82%A4%E3%82%AF%E3%81%AE%E3%83%A1%E3%83%8B%E3%83%A5%E3%83%BC%E7%B4%B9%E4%BB%8B",
+      "quote": "サーキットトレーニングで筋肉と心肺機能の両方の向上を目指す",
+      "checkedAt": "2026-11-06"
+    },
+    {
+      "claim": "トレーナーは仙台大学体育学部出身で、コーチング理論・運動生理学・解剖学・栄養学を学んだ",
+      "source": "https://www.fit-ingravity.com/%E3%83%88%E3%83%AC%E3%83%BC%E3%83%8A%E3%83%BC%E7%B4%B9%E4%BB%8B",
+      "quote": "仙台大学体育学部卒業 コーチング理論を専攻 運動生理学・解剖学・栄養学",
+      "checkedAt": "2026-11-06"
+    },
+    {
+      "claim": "トレーナーは大学時代にバスケットボール部に所属していた",
+      "source": "https://www.fit-ingravity.com/%E3%83%88%E3%83%AC%E3%83%BC%E3%83%8A%E3%83%BC%E7%B4%B9%E4%BB%8B",
+      "quote": "バスケットボール部",
+      "checkedAt": "2026-11-06"
+    },
+    {
+      "claim": "第70回岩手県高等学校新人バスケットボール大会に外部コーチとして参加し、県立盛岡南高等学校男子バスケットボール部を帯同した",
+      "source": "https://www.fit-ingravity.com/post/%E9%83%A8%E6%B4%BB%E5%8B%95%E5%B8%AF%E5%90%8C%E6%B4%BB%E5%8B%95%E3%81%AE%E3%81%94%E5%A0%B1%E5%91%8A",
+      "quote": "1/17（金）~1/20（月）の期間で第70回岩手県高等学校新人バスケットボール大会に外部コーチとして参加致しました 県立盛岡南高等学校男子バスケットボール部",
+      "checkedAt": "2026-11-06"
+    },
+    {
+      "claim": "フォームローラーやボールを使った筋膜リリースによる筋肉の緊張をほぐすアプローチも行う",
+      "source": "https://www.fit-ingravity.com/%E8%A4%87%E8%A3%BD-%E7%AB%B6%E6%8A%80%E5%8A%9B%E5%90%91%E4%B8%8A%E3%81%AE%E3%83%A1%E3%83%8B%E3%83%A5%E3%83%BC%E7%B4%B9%E4%BB%8B",
+      "quote": "フォームローリング：フォームローラーやボールを使用して、筋膜リリースなどで筋肉の緊張をほぐします",
+      "checkedAt": "2026-11-06"
+    },
+    {
+      "claim": "競技力向上メニューではヨガやピラティスの要素を取り入れて柔軟性を向上させる",
+      "source": "https://www.fit-ingravity.com/%E8%A4%87%E8%A3%BD-%E3%83%9C%E3%83%87%E3%82%A3%E3%83%A1%E3%82%A4%E3%82%AF%E3%81%AE%E3%83%A1%E3%83%8B%E3%83%A5%E3%83%BC%E7%B4%B9%E4%BB%8B",
+      "quote": "ヨガやピラティス：これらの要素を取り入れて柔軟性を向上させます",
+      "checkedAt": "2026-11-06"
+    }
+  ],
+  "images": [
+    {
+      "path": "/_portal/vshops/tri-sports-417/g01.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9RsPWGlEz26QoIVDepKMBn5aKuA8h11BwdJcMoQewsyunVasESMc7i9oFm00BH4b6f72i7F3vzgOunGNcypI5D-aDTLg6DxUfXLQFs_CL2uKVcS3k358i7Et-NHJmv7CkTttzHX=s1200",
+      "pageUrl": "https://maps.google.com/?cid=3053099244282803747",
+      "what": "FIT INGRAVITYと書かれたガラス扉の入口"
+    },
+    {
+      "path": "/_portal/vshops/tri-sports-417/g02.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9ScwIpAvqgHJxUAX1zSxDPG86HwoJs4zuW0RwcJ2bILem03SDfeqa79lBZ-7x1xRTY8VJ1zqva9hStxhIa0ewh9QujnSORACJB-PKsIlyQ_4RdZ82dInbhp2ctDT10bmJ5gC9iuqDj01uWk=s1200",
+      "pageUrl": "https://maps.google.com/?cid=3053099244282803747",
+      "what": "ダンベルラックとトレーニング器具が並ぶジム内"
+    },
+    {
+      "path": "/_portal/vshops/tri-sports-417/g03.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9Q7gaPIVX9PQ4tDJrhntkum4v0CSajI7bDhd6sU5vEZog3aQUAueFc9_6duE7WYdoz4nxWWQFKTVS0H31GoIxXotyYOSXHZnSkIAh4UMY7qeG7uqjkyUbNjtVwPLydBW0Ast8mU=s1200",
+      "pageUrl": "https://maps.google.com/?cid=3053099244282803747",
+      "what": "ベンチとトレーニング器具が置かれた明るいジム内"
+    },
+    {
+      "path": "/_portal/vshops/tri-sports-417/g04.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9S0reo8ubY140Rjof3zuJXg8FoZLuso5wrLNJKqfpK5bSkMvGVb2a2rQVQAqoOMHonYLW9SUzjyD1loIEhXgLecb2P7xLMqnbINQtQM7g_GMT6s1oVx5cizGyndl4R8NVzGOwk=s1200",
+      "pageUrl": "https://maps.google.com/?cid=3053099244282803747",
+      "what": "スミスマシンとウェイトラックが設置されたトレーニングエリア"
+    },
+    {
+      "path": "/_portal/vshops/tri-sports-417/g05.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9RN-6RxHjE3Pz9CrpgJ37nvdRp2TQallQScQPz2uBe-PpO5OQfJEyHC3hLsVA7K1NPgcMZGREpq7E6UEn0rG9PGo-2VsRLxcc_yJzSCtQUlUzWTw-0KGm42e-odoUMlRQ5hcNKi_AVw28vN=s1200",
+      "pageUrl": "https://maps.google.com/?cid=3053099244282803747",
+      "what": "植物が置かれたジムの入口外観"
+    },
+    {
+      "path": "/_portal/vshops/tri-sports-417/g07.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9R_pXtOp_zh5nmeYaeH8FQcH76uZltMSPVDLNkD-F5JUaZLsC1wWtXjiOUmTMgx0gZBH2gDv6TUEHUh8221PAOqR9l9TgQXWXMK0LNJXlnTo8kT5mtdx9VOUoOmnyiby3toF2x_=s1200",
+      "pageUrl": "https://maps.google.com/?cid=3053099244282803747",
+      "what": "プロテインの袋が置かれたトレーニングエリア"
+    },
+    {
+      "path": "/_portal/vshops/tri-sports-417/g08.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9SlBR-EcP0WhCcBx1WKDepmWLLduD_WhXdZFbBahuQg4Aj1qbWlB1rhtu0LDHAN4AZA_Nq0FSl_Bni5EOS7n2_LElptzciQEQykZRQ2UBCAK8SavrJ3Pxs3zWC5kZM7psA-JXbE=s1200",
+      "pageUrl": "https://maps.google.com/?cid=3053099244282803747",
+      "what": "パーソナルトレーニングジムと書かれた看板が立つ外観"
+    },
+    {
+      "path": "/_portal/vshops/tri-sports-417/g09.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9Tcan1bi_DR5W4IKYlJPlqWUOzYEQ5G1u2CdOZZpuvvPutUQPf7euU8AS6NnxRiSaUMQVHMKXKKM3UH3Kx5FfJbDHulgSuOUDqmi_2990bn3sPKTBw1MIzLJom_CnOvucB-1CxHLYNrmot5=s1200",
+      "pageUrl": "https://maps.google.com/?cid=3053099244282803747",
+      "what": "観葉植物と椅子が置かれた明るいジム内エントランス"
+    },
+    {
+      "path": "/_portal/vshops/tri-sports-417/g10.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9SFxal0VYUKUK8kPEv_w9uzybpfSObeqDno1LhHBOjIy0L3QHEbSMomnK60eN9u0oDpIyfi6x0S7ARnlaSgSXMEyRQUCR2-FN1bmt5k51EMdvpVu0vHRuegL_Gh6S5gQiVJ6CNNAGAuiyC1=s1200",
+      "pageUrl": "https://maps.google.com/?cid=3053099244282803747",
+      "what": "バーベルラックが並ぶ広いトレーニングスペース"
+    }
+  ],
+  "sources": [
+    {
+      "label": "公式サイト",
+      "url": "https://www.fit-ingravity.com/"
+    },
+    {
+      "label": "公式サイト(ダイエットメニュー)",
+      "url": "https://www.fit-ingravity.com/services-1"
+    },
+    {
+      "label": "公式サイト(ボディメイクメニュー)",
+      "url": "https://www.fit-ingravity.com/%E8%A4%87%E8%A3%BD-%E3%83%80%E3%82%A4%E3%82%A8%E3%83%83%E3%83%88%E3%83%A1%E3%83%8B%E3%83%A5%E3%83%BC%E3%81%AE%E7%B4%B9%E4%BB%8B"
+    },
+    {
+      "label": "公式サイト(競技力向上メニュー)",
+      "url": "https://www.fit-ingravity.com/%E8%A4%87%E8%A3%BD-%E3%83%9C%E3%83%87%E3%82%A3%E3%83%A1%E3%82%A4%E3%82%AF%E3%81%AE%E3%83%A1%E3%83%8B%E3%83%A5%E3%83%BC%E7%B4%B9%E4%BB%8B"
+    },
+    {
+      "label": "公式サイト(腰痛・肩こり解消メニュー)",
+      "url": "https://www.fit-ingravity.com/%E8%A4%87%E8%A3%BD-%E7%AB%B6%E6%8A%80%E5%8A%9B%E5%90%91%E4%B8%8A%E3%81%AE%E3%83%A1%E3%83%8B%E3%83%A5%E3%83%BC%E7%B4%B9%E4%BB%8B"
+    },
+    {
+      "label": "公式サイト(部活動帯同報告)",
+      "url": "https://www.fit-ingravity.com/post/%E9%83%A8%E6%B4%BB%E5%8B%95%E5%B8%AF%E5%90%8C%E6%B4%BB%E5%8B%95%E3%81%AE%E3%81%94%E5%A0%B1%E5%91%8A"
+    },
+    {
+      "label": "Google マップ",
+      "url": "https://maps.google.com/?cid=3053099244282803747"
+    }
+  ],
+  "notes": "automation/v2/write.mjs が 2026-11-06 に作成。"
+}

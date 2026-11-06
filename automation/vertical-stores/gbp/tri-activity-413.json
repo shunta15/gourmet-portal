@@ -1,0 +1,32 @@
+{
+  "tab": "トリニティアポ",
+  "tabEn": "tri-activity",
+  "row": 413,
+  "sheet": {
+    "name": "侍SAMURAI",
+    "address": "",
+    "url": "https://www.google.com/maps/search/?api=1&query=%E4%BE%8DSAMURAI%20055-573-9407%20%E3%80%92401-0310%20%E5%B1%B1%E6%A2%A8%E7%9C%8C%E5%8D%97%E9%83%BD%E7%95%99%E9%83%A1%E5%AF%8C%E5%A3%AB%E6%B2%B3%E5%8F%A3%E6%B9%96%E7%94%BA%E5%8B%9D%E5%B1%B1%EF%BC%94%EF%BC%91%EF%BC%96%EF%BC%93%E2%88%92%EF%BC%91",
+    "type": "教室",
+    "d1": "",
+    "d2": ""
+  },
+  "urlKind": "mapsApi",
+  "route": "第1段(verify-gbp.mjs)で確認済み",
+  "verdict": "一致",
+  "verdictReason": "手がかり: 電話＋住所(番地まで)。電話が一致／店名: different(シート「侍SAMURAI」/ マップ「体験食館 侍」)／住所(シート): exact・町名・番地とも一致",
+  "place": {
+    "name": "体験食館 侍",
+    "address": "山梨県南都留郡富士河口湖町勝山４１６３−１",
+    "category": "料理教室",
+    "lat": 35.5031393,
+    "lng": 138.7397333,
+    "gbpUrl": "https://maps.google.com/?cid=17143336642076677053",
+    "phone": "0555-73-9407",
+    "website": "http://r.goope.jp/samurai",
+    "hours": null,
+    "reserveLinks": [],
+    "statusSignals": [],
+    "closedSignal": false
+  },
+  "fetchedAt": "2026-11-06T13:00:47.092Z"
+}

@@ -6808,6 +6808,665 @@
         ],
         "checkedAt": "2026-11-06"
       }
+    },
+    {
+      "id": "ac0043",
+      "vertical": "activity",
+      "category": "sea-river",
+      "name": "天草釣堀レジャーランド",
+      "pref": "kumamoto",
+      "cityName": "上天草市",
+      "address": "熊本県上天草市大矢野町中5697-1 権兵島",
+      "lat": 32.5658138,
+      "lng": 130.4534716,
+      "hours": "月火金-日 08:00 - 16:00",
+      "holidays": "水曜・木曜",
+      "phone": "0964-59-0188",
+      "url": "https://turiland.jp/",
+      "website": "https://turiland.jp/",
+      "mapUrl": "https://maps.google.com/?cid=5668696149945129123",
+      "image": "/_portal/vshops/tri-activity-408/g02.jpg",
+      "images": [
+        "/_portal/vshops/tri-activity-408/g02.jpg",
+        "/_portal/vshops/tri-activity-408/g03.jpg",
+        "/_portal/vshops/tri-activity-408/g04.jpg",
+        "/_portal/vshops/tri-activity-408/g05.jpg",
+        "/_portal/vshops/tri-activity-408/g06.jpg",
+        "/_portal/vshops/tri-activity-408/g07.jpg",
+        "/_portal/vshops/tri-activity-408/g08.jpg",
+        "/_portal/vshops/tri-activity-408/g09.jpg",
+        "/_portal/vshops/tri-activity-408/g10.jpg",
+        "/_portal/vshops/tri-activity-408/s01.jpg",
+        "/_portal/vshops/tri-activity-408/s02.jpg",
+        "/_portal/vshops/tri-activity-408/s03.jpg",
+        "/_portal/vshops/tri-activity-408/s09.jpg",
+        "/_portal/vshops/tri-activity-408/s12.jpg"
+      ],
+      "photos": [
+        {
+          "path": "/_portal/vshops/tri-activity-408/g02.jpg",
+          "what": "海上の釣り堀桟橋と対岸の木々",
+          "kind": "common",
+          "width": 675,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-408/g03.jpg",
+          "what": "砂浜で潮干狩りをする大勢の人たち",
+          "kind": "common",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-408/g04.jpg",
+          "what": "海上に張られた釣り堀の仕切りと青空",
+          "kind": "common",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-408/g05.jpg",
+          "what": "網の上に並ぶ複数の赤い魚",
+          "kind": "meal",
+          "width": 1200,
+          "height": 678
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-408/g06.jpg",
+          "what": "ライフジャケットを着た人が大型魚を持ち上げている",
+          "kind": "common",
+          "width": 1024,
+          "height": 640
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-408/g07.jpg",
+          "what": "釣り堀の桟橋にくまモンのぬいぐるみと立つ女性",
+          "kind": "common",
+          "width": 1024,
+          "height": 769
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-408/g08.jpg",
+          "what": "島を囲む青緑の海と釣り堀の桟橋",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-408/g09.jpg",
+          "what": "桟橋の上で釣り上げた魚と並ぶ3人",
+          "kind": "common",
+          "width": 1024,
+          "height": 640
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-408/g10.jpg",
+          "what": "発泡スチロールのクーラーに入った釣り上げた魚",
+          "kind": "meal",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-408/s01.jpg",
+          "what": "島全体と釣り堀桟橋を望む全景",
+          "kind": "exterior",
+          "width": 1280,
+          "height": 676
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-408/s02.jpg",
+          "what": "砂浜でしゃがんで潮干狩りをする子ども",
+          "kind": "common",
+          "width": 1280,
+          "height": 676
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-408/s03.jpg",
+          "what": "バーベキューコンロを囲む家族グループ",
+          "kind": "common",
+          "width": 1280,
+          "height": 676
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-408/s09.jpg",
+          "what": "「天草釣堀レジャーランド 第一駐車場」と書かれた看板",
+          "kind": "exterior",
+          "width": 1280,
+          "height": 850
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-408/s12.jpg",
+          "what": "海上の釣り堀桟橋に並ぶ釣り人たち",
+          "kind": "common",
+          "width": 1280,
+          "height": 720
+        }
+      ],
+      "tags": [
+        "子連れ",
+        "初心者歓迎",
+        "手ぶらでOK"
+      ],
+      "article": {
+        "headline": "熊本県上天草市大矢野町、無人島「権兵島」に作られた海上釣り堀。釣り・潮干狩り・バーベキューが楽しめるシーサイドアウトドア施設です。",
+        "lede": "上天草市にある「天草釣堀レジャーランド」です。天草の無人島「権兵島」を利用して作られた、自然の状態に近い海上釣り堀で、初心者から家族連れまで安全に釣りを楽しめる施設です。島内の釣り堀では、真鯛・チヌ・クロ・ヒラメ・ブリ・カンパチ・石鯛など多様な魚が放流されており、釣った魚はすべて持ち帰ることができます。レンタル釣り竿と仕掛けが調整済みで用意されているため手ぶらで訪れることができ、はじめての方にはスタッフが丁寧に指導します。釣りのほかに、3月から6月の期間は砂浜での潮干狩り、バーベキューセットを借りての浜辺での食事も楽しめます。島への移動は渡し船で行い、駐車場に設置された旗を振ると迎えの船がやってきます。",
+        "sections": [
+          {
+            "heading": "体験の内容と流れ",
+            "body": "釣り堀は予約なしで利用できます。駐車場に到着したら、設置された旗を振ると迎えの船が来て、権兵島まで渡ります。島内の釣り堀は水深がおよそ3〜5メートルあり、ウキを使った1本バリ仕掛けのみで楽しみます。真鯛を狙う場合は底から20センチほどのタナを狙うのが基本で、タナが10センチ違うだけで釣果に大きな差が出ることがあります。まき餌、2本以上の針が付いた仕掛け（胴付き仕掛け・サビキ等）、ルアー釣りは禁止です。タモ網やスカリは釣り場に用意されており自由に使えます。釣った魚はすべて持ち帰ることができ、たくさん釣れて持ち帰れない場合はキープシステムを利用できます。キープシステムでは、次回来場時に前回釣った魚と同サイズのものを受け取ることができます。"
+          },
+          {
+            "heading": "対象と季節",
+            "body": "子どもたちや女性も安心して遊べることを前面に出した施設で、家族や団体での利用を想定しています。釣り堀は年間を通じて営業しており、真鯛・チヌ（クロダイ）・クロ（メジナ）・ヒラメは年中狙えます。ブリ・ハマチは主に11月から3月の間に放流され、カンパチは主に4月から11月の間に放流されます。石鯛は放流時期が不定期です。シマアジ・イサキ・アジなども放流されています。また、3月から6月の期間は釣り堀の横にある砂浜で潮干狩りも楽しめます。潮干狩りエリアではアサリやハマグリなどの貝を採ることができ、必要な道具（貝掘り用くまで・ざる）は貸し出されています。"
+          },
+          {
+            "heading": "安全と注意",
+            "body": "釣りをする際には必ず帽子をかぶり、定期的に水分補給を行うよう案内しています。針先には十分な注意が必要で、周囲の利用者の迷惑になる釣り方は控えるよう求めています。バーベキューでは釣った魚に加え、肉類・野菜など食材を持ち込むことができます。バーベキューセット（コンロ・ネット・トング・木炭）は施設で貸し出しており、3名以上から受け付け、1区画6名まで利用できます。バーベキューセットには数に限りがあるため、前日までに予約が必要です。屋外のため、強風等の悪天候により急遽営業を中止する場合があります。荒天時は事前にお問い合わせください。"
+          },
+          {
+            "heading": "行き方と使い方",
+            "body": "九州自動車道の御船ICから国道57号線経由で約80分、松橋ICから国道266号線経由で約70分です。国道266号線を道なりに約10分走るとショッピングプラザ キャモンの十字路交差点に着きます。交差点を左折（本渡方面からは右折）し、水田沿いの道を約3キロ進むと上天草高校があります。高校を通過した三叉路を左折し、道なりに進むと左手側に駐車場の看板が現れます。西大維橋の手前右側にある港が乗船場所で、そこに釣り堀の旗があるので振ると迎えの船がやってきます。釣り堀はご予約なしで利用できます。予約が必要なバーベキューセットの貸し出しについては、前日までに電話でお問い合わせください。"
+          }
+        ],
+        "menus": [
+          {
+            "name": "釣堀"
+          },
+          {
+            "name": "潮干狩り"
+          },
+          {
+            "name": "バーベキュー"
+          }
+        ],
+        "sources": [
+          {
+            "label": "公式サイト",
+            "url": "https://turiland.jp/"
+          },
+          {
+            "label": "公式サイト(釣堀)",
+            "url": "https://turiland.jp/fishpond.shtml"
+          },
+          {
+            "label": "公式サイト(潮干狩り)",
+            "url": "https://turiland.jp/clumhant.shtml"
+          },
+          {
+            "label": "公式サイト(バーベキュー)",
+            "url": "https://turiland.jp/barbecue.shtml"
+          },
+          {
+            "label": "公式サイト(交通アクセス)",
+            "url": "https://turiland.jp/access.shtml"
+          },
+          {
+            "label": "釣りニュース",
+            "url": "https://tsurinews.jp/3594/"
+          },
+          {
+            "label": "釣り堀ネット",
+            "url": "https://tsuribori.net/introduce/amakusa-turibori/"
+          },
+          {
+            "label": "Google マップ",
+            "url": "https://maps.google.com/?cid=5668696149945129123"
+          }
+        ],
+        "checkedAt": "2026-11-06"
+      }
+    },
+    {
+      "id": "ac0044",
+      "vertical": "activity",
+      "category": "sightseeing",
+      "name": "TukTukGO",
+      "pref": "okinawa",
+      "cityName": "本部町",
+      "address": "沖縄県国頭郡本部町石川801-10",
+      "lat": 26.692964,
+      "lng": 127.8817686,
+      "hours": "毎日 09:00 - 18:00",
+      "phone": "0980-43-8415",
+      "url": "https://tuktukgo.jp/",
+      "website": "https://tuktukgo.jp/",
+      "mapUrl": "https://maps.google.com/?cid=14994524022095911196",
+      "image": "/_portal/vshops/tri-activity-411/g01.jpg",
+      "images": [
+        "/_portal/vshops/tri-activity-411/g01.jpg",
+        "/_portal/vshops/tri-activity-411/g02.jpg",
+        "/_portal/vshops/tri-activity-411/g05.jpg",
+        "/_portal/vshops/tri-activity-411/g06.jpg",
+        "/_portal/vshops/tri-activity-411/g08.jpg",
+        "/_portal/vshops/tri-activity-411/g09.jpg",
+        "/_portal/vshops/tri-activity-411/g10.jpg",
+        "/_portal/vshops/tri-activity-411/s04.jpg",
+        "/_portal/vshops/tri-activity-411/s05.jpg",
+        "/_portal/vshops/tri-activity-411/s06.jpg",
+        "/_portal/vshops/tri-activity-411/s08.jpg",
+        "/_portal/vshops/tri-activity-411/s09.jpg",
+        "/_portal/vshops/tri-activity-411/s10.jpg",
+        "/_portal/vshops/tri-activity-411/s11.jpg",
+        "/_portal/vshops/tri-activity-411/s12.jpg",
+        "/_portal/vshops/tri-activity-411/s13.jpg",
+        "/_portal/vshops/tri-activity-411/s14.jpg",
+        "/_portal/vshops/tri-activity-411/s16.jpg"
+      ],
+      "photos": [
+        {
+          "path": "/_portal/vshops/tri-activity-411/g01.jpg",
+          "what": "海沿いの道路脇に停まる青色のトゥクトゥクと人物",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 670
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-411/g02.jpg",
+          "what": "海の前に停車した青色のトゥクトゥク",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-411/g05.jpg",
+          "what": "白い壁の建物の前に停まる青色のトゥクトゥク",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 676
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-411/g06.jpg",
+          "what": "エメラルドグリーンの海に架かる橋の眺め",
+          "kind": "view",
+          "width": 664,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-411/g08.jpg",
+          "what": "海沿いの道路を走る青色のトゥクトゥクの車内と景色",
+          "kind": "common",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-411/g09.jpg",
+          "what": "青色のトゥクトゥクの後部座席から見た車内",
+          "kind": "common",
+          "width": 675,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-411/g10.jpg",
+          "what": "橋の上から見たエメラルドグリーンの海の眺め",
+          "kind": "view",
+          "width": 675,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-411/s04.jpg",
+          "what": "海沿いの道路脇に人物と停車した青色のトゥクトゥク",
+          "kind": "exterior",
+          "width": 1280,
+          "height": 714
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-411/s05.jpg",
+          "what": "海を背景に複数人が並ぶ青色のトゥクトゥク",
+          "kind": "exterior",
+          "width": 1280,
+          "height": 714
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-411/s06.jpg",
+          "what": "海沿いの道路に停車した青色のトゥクトゥクと人物",
+          "kind": "exterior",
+          "width": 1280,
+          "height": 714
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-411/s08.jpg",
+          "what": "海の前に停車した飾り付きの青色トゥクトゥクと複数人",
+          "kind": "exterior",
+          "width": 1280,
+          "height": 853
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-411/s09.jpg",
+          "what": "木の前に停車した青色のトゥクトゥクと人物",
+          "kind": "exterior",
+          "width": 1280,
+          "height": 714
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-411/s10.jpg",
+          "what": "海沿いの道路に停車した青色のトゥクトゥクと子連れの家族",
+          "kind": "exterior",
+          "width": 830,
+          "height": 680
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-411/s11.jpg",
+          "what": "エメラルドグリーンの海に架かる長い橋の眺め",
+          "kind": "view",
+          "width": 1280,
+          "height": 517
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-411/s12.jpg",
+          "what": "青空と海を背景に停車した青色のトゥクトゥクと男性",
+          "kind": "exterior",
+          "width": 1280,
+          "height": 714
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-411/s13.jpg",
+          "what": "海沿いの駐車スペースに停まる青色のトゥクトゥクと人物",
+          "kind": "exterior",
+          "width": 1280,
+          "height": 714
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-411/s14.jpg",
+          "what": "青空と海を背景に停車した青色のトゥクトゥクと家族",
+          "kind": "exterior",
+          "width": 1280,
+          "height": 714
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-411/s16.jpg",
+          "what": "海沿いの道路に停車した青色のトゥクトゥクと複数人",
+          "kind": "exterior",
+          "width": 1280,
+          "height": 543
+        }
+      ],
+      "tags": [
+        "子連れ",
+        "初心者歓迎",
+        "手ぶらでOK",
+        "雨の日"
+      ],
+      "article": {
+        "headline": "沖縄県国頭郡本部町にあるトゥクトゥクレンタル専門店。4人乗りと7人乗りの2タイプを備え、美ら海水族館すぐそばを拠点に古宇利島・瀬底島・備瀬フクギ並木などの沖縄北部を自分で走れる。",
+        "lede": "国頭郡本部町にある「TukTukGO」です。美ら海水族館のすぐ近く、「かりゆしの家」1階を拠点とするトゥクトゥクレンタル専門店で、沖縄北部の観光動線に特化したサービスを展開しています。タイなど東南アジアで広く利用されている屋根付き三輪車のトゥクトゥクを、自分でハンドルを握って走れます。車両は4人乗りと7人乗りの2タイプを保有しており、カップルや少人数の旅行から家族・グループ旅行まで対応しています。窓もドアもない開放的な構造で、沖縄の潮の香り・風・太陽光を直接感じながらドライブできるのが特徴です。普通自動車免許（AT限定可）があれば運転でき、出発前に15分程度の集中レクチャーを受けてから公道に出ます。雨の日はキャンセルが可能で、小雨であれば専用のレインシートを下ろして走行を続けられます。",
+        "sections": [
+          {
+            "heading": "体験の内容と流れ",
+            "body": "レンタルの流れは、予約・来店・受付（免許確認）・レクチャー・出発の順で進みます。受付に5分、操作解説の動画が6.5分、スタッフが横に付いての個別レクチャーが3分で、合計15分足らずで出発できます。操作はアクセルとブレーキの2つで、オートマ車と同じ感覚で扱えます。走行中は帽子が飛びやすいため、紐付きのものか走行中は脱いでおくことを店側が案内しています。座席はビニール製で、水着のまま乗車することもできます。荷物は足元や座席下に小さめのバッグを置けますが、大きなスーツケースはレンタル中に店で預かります。電子タバコのみ可で、紙巻きたばこは走行中の風で灰が飛びシートに穴が開く恐れがあるため不可です。"
+          },
+          {
+            "heading": "コースと所要時間",
+            "body": "レンタルは最短3時間から利用でき、3時間・5時間・8時間・24時間のパックと2日間乗り放題のプランがあります。3時間プランは瀬底島周辺のドライブに適しており、全長760mの瀬底大橋を渡りアンチ浜へ立ち寄るコースが代表的です。5時間プランは古宇利島と今帰仁周辺を巡る構成で、8時間プランでは古宇利島・備瀬フクギ並木・瀬底島の3つを1日で回ることができます。8時間の場合の一例は、出発後に瀬底島→備瀬フクギ並木→古宇利島（全長約2kmの古宇利大橋）→リカリカワルミ展望台→本部町内の順で巡る流れです。高速道路の走行は不可で、一般道のみの走行となります。"
+          },
+          {
+            "heading": "対象",
+            "body": "普通自動車免許（AT限定可）を持つ方であれば運転できます。子どもは走行中に立ち上がらずに座っていられることを目安としており、隣に大人のサポートがあれば乗車できます。抱っこでの乗車は道路交通法上不可です。保険は対人・対物無制限の保険に加入しており、免責補償制度により事故の場合のお客様負担は最大7万円までです。本部町エリアに限り送迎に対応しており、バス停やホテルへの迎車もリクエストできます。"
+          },
+          {
+            "heading": "行き方と使い方",
+            "body": "店舗はバス停「記念公園前（美ら海水族館）」から徒歩8分です。車での来店も可能で、駐車スペースがあります。ただし、1台のレンタルにつき2台以上の車で来店する場合は事前に連絡が必要です。予約はウェブの予約フォームから空き状況を確認して申し込む形で、スタッフが在庫を確認した上でご予約が確定します。当日の電話予約も受け付けており、LINE での問い合わせにも対応しています。事前決済はクレジットカードで、当日の現地払いは現金・クレジットカード・QR決済・交通系ICに対応しています。"
+          }
+        ],
+        "menus": [
+          {
+            "name": "3時間プラン（4人乗り）"
+          },
+          {
+            "name": "5時間プラン（4人乗り）"
+          },
+          {
+            "name": "8時間プラン（4人乗り）"
+          },
+          {
+            "name": "24時間パック（4人乗り）"
+          },
+          {
+            "name": "2日間乗り放題（4人乗り）"
+          },
+          {
+            "name": "3時間プラン（7人乗り）"
+          },
+          {
+            "name": "7人乗りプラン（5時間〜）"
+          }
+        ],
+        "sources": [
+          {
+            "label": "公式サイト",
+            "url": "https://tuktukgo.jp/"
+          },
+          {
+            "label": "公式サイト(アクセス)",
+            "url": "https://tuktukgo.jp/access/"
+          },
+          {
+            "label": "公式サイト(料金・プラン)",
+            "url": "https://tuktukgo.jp/price/"
+          },
+          {
+            "label": "公式サイト(ドライブコース)",
+            "url": "https://tuktukgo.jp/okinawa-north-drive-course/"
+          },
+          {
+            "label": "公式サイト(レンタルガイド)",
+            "url": "https://tuktukgo.jp/tuktuk-rental-guide/"
+          },
+          {
+            "label": "本部観光協会",
+            "url": "https://www.motobu-ka.com/shopping/tuktuk-go/"
+          },
+          {
+            "label": "いこーよ",
+            "url": "https://iko-yo.net/facilities/186762"
+          },
+          {
+            "label": "沖縄観光情報WEBサイト おきなわ物語",
+            "url": "https://www.okinawastory.jp/spot/600022807"
+          },
+          {
+            "label": "Google マップ",
+            "url": "https://maps.google.com/?cid=14994524022095911196"
+          }
+        ],
+        "checkedAt": "2026-11-06"
+      }
+    },
+    {
+      "id": "ac0045",
+      "vertical": "activity",
+      "category": "craft",
+      "name": "体験食館 侍",
+      "pref": "yamanashi",
+      "cityName": "富士河口湖町",
+      "address": "山梨県南都留郡富士河口湖町勝山4163-1",
+      "lat": 35.5031393,
+      "lng": 138.7397333,
+      "phone": "0555-73-9407",
+      "url": "http://r.goope.jp/samurai",
+      "website": "http://r.goope.jp/samurai",
+      "mapUrl": "https://maps.google.com/?cid=17143336642076677053",
+      "image": "/_portal/vshops/tri-activity-413/g01.jpg",
+      "images": [
+        "/_portal/vshops/tri-activity-413/g01.jpg",
+        "/_portal/vshops/tri-activity-413/g02.jpg",
+        "/_portal/vshops/tri-activity-413/g03.jpg",
+        "/_portal/vshops/tri-activity-413/g04.jpg",
+        "/_portal/vshops/tri-activity-413/g05.jpg",
+        "/_portal/vshops/tri-activity-413/g06.jpg",
+        "/_portal/vshops/tri-activity-413/g07.jpg",
+        "/_portal/vshops/tri-activity-413/g08.jpg",
+        "/_portal/vshops/tri-activity-413/g09.jpg",
+        "/_portal/vshops/tri-activity-413/g10.jpg",
+        "/_portal/vshops/tri-activity-413/s01.jpg",
+        "/_portal/vshops/tri-activity-413/s02.jpg"
+      ],
+      "photos": [
+        {
+          "path": "/_portal/vshops/tri-activity-413/g01.jpg",
+          "what": "「お食事処」の旗が立つ施設の外観",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 675
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-413/g02.jpg",
+          "what": "刺身の盛り合わせ",
+          "kind": "meal",
+          "width": 1200,
+          "height": 675
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-413/g03.jpg",
+          "what": "天ぷらや揚げ物などを盛り合わせた弁当箱スタイルの料理",
+          "kind": "meal",
+          "width": 1200,
+          "height": 675
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-413/g04.jpg",
+          "what": "プリンのような丸いデザート",
+          "kind": "meal",
+          "width": 1200,
+          "height": 675
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-413/g05.jpg",
+          "what": "うどんと副菜が並ぶ定食",
+          "kind": "meal",
+          "width": 1200,
+          "height": 675
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-413/g06.jpg",
+          "what": "「侍」の看板がかかった施設の外観",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 675
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-413/g07.jpg",
+          "what": "シングルベッドが2台置かれた客室",
+          "kind": "room",
+          "width": 1200,
+          "height": 675
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-413/g08.jpg",
+          "what": "バルコニーにテーブルと椅子が置かれたテラス",
+          "kind": "common",
+          "width": 1200,
+          "height": 675
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-413/g09.jpg",
+          "what": "和室に木製のテーブルと椅子が置かれた部屋",
+          "kind": "room",
+          "width": 1200,
+          "height": 675
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-413/g10.jpg",
+          "what": "赤いソファが2台置かれた洋室",
+          "kind": "room",
+          "width": 1200,
+          "height": 675
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-413/s01.jpg",
+          "what": "ざるそばと小鉢が並ぶ定食",
+          "kind": "meal",
+          "width": 1280,
+          "height": 720
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-413/s02.jpg",
+          "what": "かぼちゃや野菜が入ったほうとう鍋",
+          "kind": "meal",
+          "width": 1280,
+          "height": 853
+        }
+      ],
+      "tags": [
+        "子連れ",
+        "初心者歓迎",
+        "駐車場あり"
+      ],
+      "article": {
+        "headline": "山梨県南都留郡富士河口湖町勝山にある、食に関わる体験教室。ほうとう・そば・吉田のうどん・寿司・珈琲焙煎・山菜採りなど複数の体験プログラムを用意している。",
+        "lede": "南都留郡富士河口湖町にある「体験食館 侍」です。山梨の郷土料理を中心に、食にまつわる体験プログラムを複数取りそろえた体験教室で、代表者は斉木一郎さんです。ほうとう作り体験、そば打ち体験、吉田のうどん体験、寿司握り体験、珈琲焙煎体験、山菜採りガイドサービスなど、食に関わる各種体験を開催しています。1開催につき1組限定の貸切で体験できるため、小さな子どもも一緒に参加しやすい環境です。対象年齢は3歳から75歳まで、2名から予約を受け付けており、前日までの予約が必要です。富士急行線河口湖駅からバスで勝山バス停まで行き、徒歩3分の場所にあります。",
+        "sections": [
+          {
+            "heading": "体験の内容と流れ",
+            "body": "ほうとう作り体験は所要時間2時間で、体験の流れは集合・手洗い・ほうとう作り・実食・解散の順に進みます。小麦粉をこねて麺棒で延ばし、太めに切って、かぼちゃ・大根・人参などの野菜をたっぷり使ったみそ味のつゆで煮込みます。武田信玄の野戦食として広まったとされる山梨を代表する郷土料理で、ほうとうの歴史や特徴の解説も体験中に行います。一度体験するとご家庭でも手打ちほうとうを再現できます。そば打ち体験では、そばの打ち方を一から丁寧にわかりやすく教えてもらえます。そばの歴史や「もりそば」と「ざるそば」の違いについての解説もあります。吉田のうどん体験、寿司握り体験、珈琲焙煎体験なども提供しており、作る・食べる・学ぶが一度にできる内容になっています。"
+          },
+          {
+            "heading": "コースと所要時間",
+            "body": "ほうとう作り体験の所要時間は2時間で、開催時間は10:00〜11:45、11:00〜12:45、12:00〜13:45、13:00〜14:45の4枠から選べます。そば打ち体験の所要時間は約1時間45分で、開催時間はほうとうと同じ4枠です。2名から16名まで対応しており、31名以上の団体は別会場での実施になります。体験後は作ったほうとうをその場で食べることができます。山菜採りガイドサービスは、担当スタッフが同行して案内するプログラムです。すべての体験は2名以上、前日までの予約制で実施しています。5名以上のそば打ち体験については電話での相談が必要です。"
+          },
+          {
+            "heading": "対象",
+            "body": "ほうとう作り体験の対象年齢は3歳から75歳までで、18歳未満の方は保護者の同伴または同意が必要です。1開催1組限定の貸切で体験できるため、小さな子どもを連れた家族や、子ども会・団体のグループでも参加しやすい体制になっています。ほうとう作り体験は2名から30名まで対応しており、31名以上の団体は別会場での実施になります。そば打ち体験は2名から4名まで対応しています。電話番号は0555-73-9407で、担当は斉木さんです。携帯電話090-2629-5964でも受け付けています。"
+          },
+          {
+            "heading": "行き方と使い方",
+            "body": "富士急行線河口湖駅から路線バス（西湖民宿村行きまたは新富士駅行きなど）に乗り、勝山バス停で下車して徒歩3分の場所にあります。車の場合は中央道河口湖インターチェンジから6kmです。予約はオンライン予約（アソビュー！などのプラットフォーム）または電話（0555-73-9407）で受け付けています。前日までの予約が必要です。メールでの問い合わせは返信に1週間程度かかる場合があるため、電話での問い合わせが推奨されています。"
+          }
+        ],
+        "menus": [
+          {
+            "name": "ほうとう作り体験"
+          },
+          {
+            "name": "そば打ち体験"
+          },
+          {
+            "name": "吉田のうどん体験"
+          },
+          {
+            "name": "寿司握り体験"
+          },
+          {
+            "name": "珈琲焙煎体験"
+          },
+          {
+            "name": "山菜採りガイドサービス"
+          },
+          {
+            "name": "出張ほうとう体験サービス"
+          }
+        ],
+        "sources": [
+          {
+            "label": "公式サイト",
+            "url": "https://r.goope.jp/samurai/"
+          },
+          {
+            "label": "公式サイト(基本情報)",
+            "url": "https://r.goope.jp/samurai/about"
+          },
+          {
+            "label": "公式サイト(ほうとう作り体験)",
+            "url": "https://r.goope.jp/samurai/free/detail1540501084"
+          },
+          {
+            "label": "公式サイト(お知らせ)",
+            "url": "https://r.goope.jp/samurai/info"
+          },
+          {
+            "label": "アソビュー！",
+            "url": "https://www.asoview.com/item/activity/pln3000024195/"
+          },
+          {
+            "label": "じゃらんnet",
+            "url": "https://www.jalan.net/kankou/spt_guide000000184673/"
+          },
+          {
+            "label": "Google マップ",
+            "url": "https://maps.google.com/?cid=17143336642076677053"
+          }
+        ],
+        "checkedAt": "2026-11-06"
+      }
     }
   ]
 }

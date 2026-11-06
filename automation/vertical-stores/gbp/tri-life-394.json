@@ -1,0 +1,40 @@
+{
+  "tab": "トリニティアポ",
+  "tabEn": "tri-life",
+  "row": 394,
+  "sheet": {
+    "name": "子供のアトリエ",
+    "address": "",
+    "url": "https://www.google.com/maps/search/?api=1&query=%E5%AD%90%E4%BE%9B%E3%81%AE%E3%82%A2%E3%83%88%E3%83%AA%E3%82%A8%20080-6621-4297%20%E3%80%92301-0033%20%E8%8C%A8%E5%9F%8E%E7%9C%8C%E9%BE%8D%E3%82%B1%E5%B4%8E%E5%B8%82%E5%B8%82%E4%BD%90%E8%B2%AB%E7%94%BA%EF%BC%99%EF%BC%92%EF%BC%99%E2%88%92%EF%BC%97%EF%BC%97",
+    "type": "教室",
+    "d1": "",
+    "d2": ""
+  },
+  "urlKind": "mapsApi",
+  "route": "第1段(verify-gbp.mjs)で確認済み",
+  "verdict": "一致",
+  "verdictReason": "手がかり: 店名＋電話。電話が一致／店名: exact(シート「子供のアトリエ」/ マップ「子供のアトリエ」)／住所(シート): none・町名までがちがう（シート:茨城県竜ケ崎市市佐貫町 / マップ:茨城県竜ケ崎市佐貫町）",
+  "place": {
+    "name": "子供のアトリエ",
+    "address": "茨城県龍ケ崎市佐貫町９２９−７７",
+    "category": "カルチャー スクール",
+    "lat": 35.9376838,
+    "lng": 140.1353408,
+    "gbpUrl": "https://maps.google.com/?cid=5606807773626087268",
+    "phone": "080-6621-4297",
+    "website": null,
+    "hours": {
+      "月": "14:10–05:30",
+      "火": "14:30–17:30",
+      "水": "定休日",
+      "木": "定休日",
+      "金": "02:00–06:00",
+      "土": "10:00–14:30",
+      "日": "09:30–11:00"
+    },
+    "reserveLinks": [],
+    "statusSignals": [],
+    "closedSignal": false
+  },
+  "fetchedAt": "2026-11-06T12:56:01.955Z"
+}

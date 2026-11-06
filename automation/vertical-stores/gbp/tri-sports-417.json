@@ -1,0 +1,40 @@
+{
+  "tab": "トリニティアポ",
+  "tabEn": "tri-sports",
+  "row": 417,
+  "sheet": {
+    "name": "FIT INGRAVITY",
+    "address": "",
+    "url": "https://www.google.com/maps/search/?api=1&query=FIT%20INGRAVITY%20070-4420-2781%20%E3%80%92020-0021%20%E5%B2%A9%E6%89%8B%E7%9C%8C%E7%9B%9B%E5%B2%A1%E5%B8%82%E4%B8%AD%E5%A4%AE%E9%80%9A%EF%BC%92%E4%B8%81%E7%9B%AE%EF%BC%98%E2%88%92%EF%BC%92%EF%BC%93%20%E3%83%97%E3%83%A9%E3%83%B3%E3%82%BF%E3%83%B3%E3%81%8A%E3%81%8C%E3%81%95%E3%82%8F%E3%82%89%201F",
+    "type": "筋トレ",
+    "d1": "",
+    "d2": ""
+  },
+  "urlKind": "mapsApi",
+  "route": "第1段(verify-gbp.mjs)で確認済み",
+  "verdict": "一致",
+  "verdictReason": "手がかり: 店名＋電話＋住所(番地まで)。電話が一致／店名: exact(シート「FIT INGRAVITY」/ マップ「FIT INGRAVITY」)／住所(シート): exact・町名・番地とも一致",
+  "place": {
+    "name": "FIT INGRAVITY",
+    "address": "岩手県盛岡市中央通２丁目８−２３ プランタンおがさわら 1F",
+    "category": "パーソナル トレーナー",
+    "lat": 39.7057352,
+    "lng": 141.1447015,
+    "gbpUrl": "https://maps.google.com/?cid=3053099244282803747",
+    "phone": "070-4420-2781",
+    "website": "https://www.fit-ingravity.com/",
+    "hours": {
+      "月": "05:00–09:50, 10:00–00:00",
+      "火": "05:00–09:50, 10:00–00:00",
+      "水": "05:00–09:50, 10:00–00:00",
+      "木": "05:00–09:50, 10:00–00:00",
+      "金": "05:00–09:50, 10:00–00:00",
+      "土": "05:00–09:50, 10:00–00:00",
+      "日": "05:00–09:50, 10:00–00:00"
+    },
+    "reserveLinks": [],
+    "statusSignals": [],
+    "closedSignal": false
+  },
+  "fetchedAt": "2026-11-06T13:01:27.354Z"
+}

@@ -1,0 +1,32 @@
+{
+  "tab": "トリニティアポ",
+  "tabEn": "tri-stay",
+  "row": 410,
+  "sheet": {
+    "name": "ＳＡＳＡＹＡ",
+    "address": "",
+    "url": "https://www.google.com/maps/search/?api=1&query=%EF%BC%B3%EF%BC%A1%EF%BC%B3%EF%BC%A1%EF%BC%B9%EF%BC%A1%20079-696-0246%20%E3%80%92667-1344%20%E5%85%B5%E5%BA%AB%E7%9C%8C%E7%BE%8E%E6%96%B9%E9%83%A1%E9%A6%99%E7%BE%8E%E7%94%BA%E6%9D%91%E5%B2%A1%E5%8C%BA%E5%A4%A7%E7%AC%B9%EF%BC%96%EF%BC%98%EF%BC%97%E2%88%92%EF%BC%91",
+    "type": "その他",
+    "d1": "",
+    "d2": ""
+  },
+  "urlKind": "mapsApi",
+  "route": "第1段(verify-gbp.mjs)で確認済み",
+  "verdict": "一致",
+  "verdictReason": "手がかり: 店名＋電話＋住所(番地まで)。電話が一致／店名: exact(シート「ＳＡＳＡＹＡ」/ マップ「SASAYA」)／住所(シート): exact・町名・番地とも一致",
+  "place": {
+    "name": "SASAYA",
+    "address": "兵庫県美方郡香美町村岡区大笹６８７−１",
+    "category": null,
+    "lat": 35.4050729,
+    "lng": 134.5595742,
+    "gbpUrl": "https://maps.google.com/?cid=2431968063548763806",
+    "phone": "0796-96-0246",
+    "website": "http://www.h-sasaya.com/",
+    "hours": null,
+    "reserveLinks": [],
+    "statusSignals": [],
+    "closedSignal": false
+  },
+  "fetchedAt": "2026-11-06T12:58:53.098Z"
+}

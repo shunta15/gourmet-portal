@@ -5284,6 +5284,230 @@
           "コテージ"
         ]
       }
+    },
+    {
+      "id": "st0028",
+      "vertical": "stay",
+      "category": "ryokan",
+      "name": "SASAYA",
+      "pref": "hyogo",
+      "cityName": "香美町",
+      "address": "兵庫県美方郡香美町村岡区大笹687-1",
+      "lat": 35.4050729,
+      "lng": 134.5595742,
+      "phone": "0796-96-0246",
+      "url": "http://www.h-sasaya.com/",
+      "website": "http://www.h-sasaya.com/",
+      "mapUrl": "https://maps.google.com/?cid=2431968063548763806",
+      "image": "/_portal/vshops/tri-stay-410/g01.jpg",
+      "images": [
+        "/_portal/vshops/tri-stay-410/g01.jpg",
+        "/_portal/vshops/tri-stay-410/g03.jpg",
+        "/_portal/vshops/tri-stay-410/g04.jpg",
+        "/_portal/vshops/tri-stay-410/g05.jpg",
+        "/_portal/vshops/tri-stay-410/g06.jpg",
+        "/_portal/vshops/tri-stay-410/g07.jpg",
+        "/_portal/vshops/tri-stay-410/g08.jpg",
+        "/_portal/vshops/tri-stay-410/g09.jpg",
+        "/_portal/vshops/tri-stay-410/g10.jpg",
+        "/_portal/vshops/tri-stay-410/s07.jpg",
+        "/_portal/vshops/tri-stay-410/s08.jpg",
+        "/_portal/vshops/tri-stay-410/s09.jpg",
+        "/_portal/vshops/tri-stay-410/s10.jpg",
+        "/_portal/vshops/tri-stay-410/s11.jpg"
+      ],
+      "photos": [
+        {
+          "path": "/_portal/vshops/tri-stay-410/g01.jpg",
+          "what": "雪の中に建つピンク色の建物の外観",
+          "kind": "exterior",
+          "width": 732,
+          "height": 504
+        },
+        {
+          "path": "/_portal/vshops/tri-stay-410/g03.jpg",
+          "what": "白いタイル張りの洗面台が3つ並ぶ洗面所",
+          "kind": "common",
+          "width": 1200,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-stay-410/g04.jpg",
+          "what": "ズワイガニが盛られた料理の皿",
+          "kind": "meal",
+          "width": 1200,
+          "height": 1197
+        },
+        {
+          "path": "/_portal/vshops/tri-stay-410/g05.jpg",
+          "what": "鍋料理と複数の副菜が並んだ食事のテーブル",
+          "kind": "meal",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-stay-410/g06.jpg",
+          "what": "薄切りの牛肉が皿に盛られたすき焼きの材料",
+          "kind": "meal",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-stay-410/g07.jpg",
+          "what": "焼き魚が盛られた料理",
+          "kind": "meal",
+          "width": 675,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-stay-410/g08.jpg",
+          "what": "刺身や海老が盛られた料理の皿",
+          "kind": "meal",
+          "width": 1200,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-stay-410/g09.jpg",
+          "what": "牛肉と副菜が並んだ鍋料理のセット",
+          "kind": "meal",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-stay-410/g10.jpg",
+          "what": "木のカウンターと間接照明があるバースペース",
+          "kind": "common",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-stay-410/s07.jpg",
+          "what": "スキー場のゲレンデと雪山の景色",
+          "kind": "view",
+          "width": 940,
+          "height": 400
+        },
+        {
+          "path": "/_portal/vshops/tri-stay-410/s08.jpg",
+          "what": "冬の雪に囲まれた旅館の建物外観",
+          "kind": "exterior",
+          "width": 940,
+          "height": 400
+        },
+        {
+          "path": "/_portal/vshops/tri-stay-410/s09.jpg",
+          "what": "白いタイル張りの浴槽と洗い場が並ぶ内湯",
+          "kind": "bath",
+          "width": 940,
+          "height": 400
+        },
+        {
+          "path": "/_portal/vshops/tri-stay-410/s10.jpg",
+          "what": "赤いソファとツインベッドがある特別室の洋室",
+          "kind": "room",
+          "width": 940,
+          "height": 400
+        },
+        {
+          "path": "/_portal/vshops/tri-stay-410/s11.jpg",
+          "what": "緑の草原と青空が広がるハチ北高原の景色",
+          "kind": "view",
+          "width": 940,
+          "height": 400
+        }
+      ],
+      "tags": [
+        "温泉",
+        "一人旅",
+        "素泊まり"
+      ],
+      "article": {
+        "headline": "兵庫県美方郡香美町、ハチ北高原にある家族経営の旅館。ラドン温泉の内湯と、但馬牛すき焼きをはじめとした鍋料理を出す宿",
+        "lede": "美方郡香美町にある「ハチ北高原 旅館 ささや」です。標高1221mの鉢伏山北側に広がるハチ北高原に位置し、登行リフトの乗り場が目の前にある旅館です。客室は13室・収容人数40名で、落ち着いた和室を中心に、トイレとバスルームつきの特別室（洋室ツイン）も備えています。内湯には世界でも珍しいラドン温泉を引いており、近くのハチ北温泉と同じ成分とされます。食事は但馬牛や旬の食材を使った鍋料理が中心で、自家栽培のお米とともに提供します。スタッフは、植物を専門とする大女将、スキーインストラクターの資格を持つ若女将、トレッキングを得意とするオーナー、ノルディックウォークの資格を持つ若旦那という4人で構成されており、ハチ北高原の案内人としても活動しています。",
+        "sections": [
+          {
+            "heading": "客室の種類と数",
+            "body": "客室は13室・収容人数40名です。和室8畳と和室6畳の純和風の部屋が中心で、冬はこたつを備えます。トイレとバスルームがついた特別室（洋室ツイン）もあり、ソファベッドを利用すれば3名での利用が可能です。各部屋にはバスタオル・フェイスタオル・歯ブラシを用意しています。フロント横にはゲストルーム（コミュニティースペース）があり、グループや家族、カップルがくつろげるスペースです。さらに若旦那が運営するBARスペースでは、昔バーテンダーをしていた経験を活かし、但馬の地酒や洋酒・カクテルなどを取り揃えています。フロント横のゲストルームには24時間コーヒーを飲めるスペースも設けており、周囲の景色を見ながらくつろげます。Wi-Fiはフロントと客室で利用できます。"
+          },
+          {
+            "heading": "風呂",
+            "body": "1階に内湯温泉があります。泉質はラドン温泉で、世界でも珍しいとされる成分を含んでいます。神経痛・筋肉痛・冷え性などに効能が期待されるとされており、疲労回復にも効果が期待される温泉です。近くのハチ北温泉と同じ成分とされます。浴室は男女各1室ずつあります。浴室にはシャンプー・リンス・ボディーソープ・ドライヤーを備え付けており、手ぶらで訪れても利用できます。客室にはバスタオル・フェイスタオル・歯ブラシも用意しています。入浴時間は16時から21時（混雑時は22時まで）です。"
+          },
+          {
+            "heading": "食事",
+            "body": "食事は鍋料理を中心に、但馬の豊かな食材と自家栽培のお米で提供します。メインの鍋料理は、但馬牛すき焼き（スタンダード・グレードアップの2種）、スタミナキムチ鍋、豚みそ鍋、豚水炊きがあります。すき焼きはSASAYAの一番人気メニューとされており、グレードアップは特選但馬牛を使い200gのボリュームです。豚みそ鍋はニンニクとしょうが入りのみそ鍋で、豚水炊きは上質の豚ロース肉をポン酢で食べる鍋です。スタミナキムチ鍋はピリッと辛いキムチ味のスープに豚肉と野菜をたっぷり入れた鍋です。地酒・女将特製の果実酒・洋酒・カクテルなどのアルコール類も豊富に揃えています。朝食のみのプランや素泊まりプランも用意しています。"
+          },
+          {
+            "heading": "行き方と使い方",
+            "body": "車の場合、大阪からは中国道・福崎ICまたは舞鶴道・春日ICを経由して北近畿豊岡道・八鹿氷ノ山ICで下り、国道9号線を鳥取方面へ進みます。大阪から約2時間40分、鳥取から約1時間です。駐車場は目の前に大型の共同駐車場があります。公共交通機関の場合は、JR山陰本線の八鹿駅から全但バスでハチ北口バス停まで行き、タクシーで10分、またはハチ北行きの路線バスに乗り換えます。大阪阪急三番街や神戸三宮からの湯村温泉行き特急バスも同様にハチ北口で下車できます。チェックインは15時から、チェックアウトは10時までです。予約は電話またはFAXで受け付けており、1名からでも宿泊できます。トレッキング・ノルディックウォーク・ハイキングなどの体験は予約制です。"
+          }
+        ],
+        "menus": [
+          {
+            "name": "但馬牛すき焼き（スタンダード）"
+          },
+          {
+            "name": "但馬牛すき焼き（グレードアップ）"
+          },
+          {
+            "name": "スタミナキムチ鍋"
+          },
+          {
+            "name": "豚みそ鍋"
+          },
+          {
+            "name": "豚水炊き"
+          },
+          {
+            "name": "1泊朝食付プラン"
+          },
+          {
+            "name": "素泊まり"
+          }
+        ],
+        "sources": [
+          {
+            "label": "公式サイト",
+            "url": "http://www.h-sasaya.com/"
+          },
+          {
+            "label": "公式サイト(施設のご案内)",
+            "url": "http://www.h-sasaya.com/facility.html"
+          },
+          {
+            "label": "公式サイト(料理)",
+            "url": "http://www.h-sasaya.com/plan/"
+          },
+          {
+            "label": "公式サイト(アクセス)",
+            "url": "http://www.h-sasaya.com/access.html"
+          },
+          {
+            "label": "楽天トラベル(温泉情報)",
+            "url": "https://travel.rakuten.co.jp/HOTEL/140996/140996_onsen.html"
+          },
+          {
+            "label": "ハチ北高原公式サイト",
+            "url": "https://hachikita.jp/yado/sasaya/"
+          },
+          {
+            "label": "香美町観光ナビ",
+            "url": "https://www.kami-tourism.com/booking/detail_10236.html"
+          },
+          {
+            "label": "Google マップ",
+            "url": "https://maps.google.com/?cid=2431968063548763806"
+          }
+        ],
+        "checkedAt": "2026-11-06"
+      },
+      "attributes": {
+        "roomTypes": [
+          "和室8畳",
+          "和室6畳",
+          "特別室（洋室ツイン）"
+        ]
+      }
     }
   ]
 }

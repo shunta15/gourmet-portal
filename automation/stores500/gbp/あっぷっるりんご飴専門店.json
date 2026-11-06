@@ -1,0 +1,22 @@
+{
+  "name": "あっぷっる りんご飴専門店",
+  "address": "大阪府大阪市生野区桃谷２丁目９−１４",
+  "lat": 34.6606036,
+  "lng": 135.533658,
+  "category": "テイクアウト",
+  "hours": {
+    "月": "12:00–17:00",
+    "火": "定休日",
+    "水": "定休日",
+    "木": "12:00–17:00",
+    "金": "12:00–17:00",
+    "土": "12:00–17:00",
+    "日": "12:00–17:00"
+  },
+  "phone": null,
+  "website": "https://www.instagram.com/appuru0717?igsh=bHlhNnk0dHR1ZGZx&utm_source=qr",
+  "priceRange": null,
+  "status": null,
+  "gbpUrl": "https://maps.google.com/?cid=13131260062276303985",
+  "fetchedAt": "2026-11-06T13:02:13.413Z"
+}

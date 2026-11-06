@@ -1,0 +1,40 @@
+{
+  "tab": "トリニティアポ",
+  "tabEn": "tri-life",
+  "row": 389,
+  "sheet": {
+    "name": "酒のしのだ",
+    "address": "",
+    "url": "https://www.google.com/maps/search/?api=1&query=%E9%85%92%E3%81%AE%E3%81%97%E3%81%AE%E3%81%A0%20024-746-2106%20%E3%80%92963-5118%20%E7%A6%8F%E5%B3%B6%E7%9C%8C%E6%9D%B1%E7%99%BD%E5%B7%9D%E9%83%A1%E7%9F%A2%E7%A5%AD%E7%94%BA%E6%9D%B1%E8%88%98%E7%89%9B%E5%B0%8F%E8%B7%AF%EF%BC%91%EF%BC%95%E2%88%92%EF%BC%91",
+    "type": "その他",
+    "d1": "",
+    "d2": ""
+  },
+  "urlKind": "mapsApi",
+  "route": "第1段(verify-gbp.mjs)で確認済み",
+  "verdict": "一致",
+  "verdictReason": "手がかり: 店名＋電話＋住所(番地まで)。電話が一致／店名: exact(シート「酒のしのだ」/ マップ「酒のしのだ」)／住所(シート): exact・町名・番地とも一致",
+  "place": {
+    "name": "酒のしのだ",
+    "address": "福島県東白川郡矢祭町東舘牛小路１５−１",
+    "category": "酒店",
+    "lat": 36.8784269,
+    "lng": 140.4219608,
+    "gbpUrl": "https://maps.google.com/?cid=16496165555851342321",
+    "phone": "0247-46-2106",
+    "website": "https://sake-no-shinoda.com/",
+    "hours": {
+      "月": "09:00–19:00",
+      "火": "09:00–19:00",
+      "水": "09:00–19:00",
+      "木": "09:00–19:00",
+      "金": "09:00–19:00",
+      "土": "09:00–19:00",
+      "日": "09:00–19:00"
+    },
+    "reserveLinks": [],
+    "statusSignals": [],
+    "closedSignal": false
+  },
+  "fetchedAt": "2026-11-06T12:55:20.780Z"
+}
