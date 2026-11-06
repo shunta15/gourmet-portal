@@ -27452,6 +27452,398 @@
         ],
         "checkedAt": "2026-11-06"
       }
+    },
+    {
+      "id": "li0180",
+      "vertical": "life",
+      "category": "shrine-temple",
+      "name": "臨済宗妙心寺派 天徳山 龍門寺",
+      "pref": "hyogo",
+      "cityName": "姫路市",
+      "address": "兵庫県姫路市網干区浜田812",
+      "lat": 34.780133,
+      "lng": 134.5751347,
+      "hours": "毎日 09:00 - 16:00",
+      "phone": "079-272-1276",
+      "url": "http://www.ryomonji.jp/",
+      "website": "http://www.ryomonji.jp/",
+      "mapUrl": "https://maps.google.com/?cid=7796687502945090174",
+      "image": "/_portal/vshops/tri-life-431/g01.jpg",
+      "images": [
+        "/_portal/vshops/tri-life-431/g01.jpg",
+        "/_portal/vshops/tri-life-431/g02.jpg",
+        "/_portal/vshops/tri-life-431/g03.jpg",
+        "/_portal/vshops/tri-life-431/g04.jpg",
+        "/_portal/vshops/tri-life-431/g05.jpg",
+        "/_portal/vshops/tri-life-431/g06.jpg",
+        "/_portal/vshops/tri-life-431/g07.jpg",
+        "/_portal/vshops/tri-life-431/g09.jpg",
+        "/_portal/vshops/tri-life-431/g10.jpg",
+        "/_portal/vshops/tri-life-431/s02.jpg"
+      ],
+      "photos": [
+        {
+          "path": "/_portal/vshops/tri-life-431/g01.jpg",
+          "what": "境内全景と複数の堂宇が並ぶ様子",
+          "kind": "exterior",
+          "width": 904,
+          "height": 535
+        },
+        {
+          "path": "/_portal/vshops/tri-life-431/g02.jpg",
+          "what": "重厚な屋根を持つ本堂の正面外観",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-life-431/g03.jpg",
+          "what": "砂利敷きの参道と松の木が整然と並ぶ境内",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-life-431/g04.jpg",
+          "what": "石像と供花が置かれた供養塔",
+          "kind": "exterior",
+          "width": 675,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-life-431/g05.jpg",
+          "what": "白い石像と緑の木々が広がる境内の一角",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 600
+        },
+        {
+          "path": "/_portal/vshops/tri-life-431/g06.jpg",
+          "what": "紅葉と大木が並ぶ境内の秋の景色",
+          "kind": "view",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-life-431/g07.jpg",
+          "what": "木造の山門をくぐった先に広がる境内と石像",
+          "kind": "exterior",
+          "width": 675,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-life-431/g09.jpg",
+          "what": "木製の門越しに見える境内の堂宇と庭",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-life-431/g10.jpg",
+          "what": "木々に囲まれた境内の小堂と石灯籠",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 752
+        },
+        {
+          "path": "/_portal/vshops/tri-life-431/s02.jpg",
+          "what": "寺院の瓦屋根を接写した様子",
+          "kind": "exterior",
+          "width": 904,
+          "height": 430
+        }
+      ],
+      "tags": [
+        "体験あり",
+        "駐車場あり"
+      ],
+      "article": {
+        "headline": "姫路市網干区に建つ、寛文元年（1661年）創建の臨済宗妙心寺派の禅寺。盤珪永琢国師の根本道場として知られ、江戸時代の建物17棟が姫路市指定文化財となっている。",
+        "lede": "姫路市網干区にある「龍門寺」（天徳山龍門寺）です。臨済宗妙心寺派の禅寺で、「不生禅」を説いた盤珪永琢国師（1622〜1693年）の根本道場として、寛文元年（1661年）に創建されました。創建時の遺構をほぼそのままに伝え、300年以上の法灯を持続しています。丸亀藩主・京極高豊と地元網干の豪商・灘屋の三兄弟の援助により建立された播磨屈指の禅宗寺院で、江戸時代中期の建物17棟が姫路市指定文化財に指定されています。境内には盤珪国師を祀る開山堂のほか、県指定重要文化財の仏像3体、江戸木挽町の狩野常信ら狩野派が描いた43面の大方丈襖絵（姫路市指定文化財）など、多くの文化財を有しています。ペット納骨供養塔、永代供養塔・永安廟など供養の場としても機能しており、毎月・毎年にわたる多彩な行事や、一般向けの坐禅会も開かれています。",
+        "sections": [
+          {
+            "heading": "由緒・歴史",
+            "body": "龍門寺は、「不生禅」という独自の禅思想を唱えた盤珪永琢国師（1622〜1693年）の根本道場として、寛文元年（1661年）に創建されました。盤珪国師は17歳で出家し、厳しい修行を経て不生禅の境地を開いた江戸時代初期の禅僧です。存命中に廃寺を復興した寺47ヶ寺、開山した寺150ヶ寺、出家の弟子400余名、在家の弟子5万余名に及んだとされます。龍門寺は丸亀藩主・京極高豊と地元網干の豪商・灘屋の三兄弟の支援を受けて建立されました。大規模な禅宗伽藍としては珍しく仏殿・法堂を持たず、建物の配置が不整形で独特の構成を持っています。これは盤珪国師の意向によるものとされます。境内には盤珪国師を祀る開山堂があり、今も国師の遺徳を偲ぶ空間が維持されています。毎年11月3日に開山忌が執り行われます。"
+          },
+          {
+            "heading": "内容（文化財と寺宝）",
+            "body": "龍門寺は多くの文化財を境内に有しています。県指定重要文化財には十一面観世音菩薩坐像をはじめとする仏像3体が指定されています。大方丈の室内には狩野派による43面の襖絵があり、うち16面は江戸木挽町の絵師・狩野常信（狩野養朴常信）による龍の絵で、降龍・昇龍を大胆な筆致で描いています。これらの襖絵は姫路市指定文化財（絵画工芸品の部）となっています。また、盤珪国師に関する資料103点も保存されています。寺宝として大涅槃図があり、毎年2月15日の涅槃会にかざられます。境内には陶芸家・和田究一が手がける「龍門寺窯」の作品も展示販売しており、河野太通老師が一品一品に禅の言葉を書いた器を龍門寺とあぼしまち交流館で購入できます。"
+          },
+          {
+            "heading": "内容（年間行事と坐禅会）",
+            "body": "龍門寺では年間を通じてさまざまな行事が行われています。元日から3日の大般若会では大般若経六百巻を転読し、家内安全・無病息災・世界平和等を祈念します。2月15日の涅槃会には寺宝の大涅槃図をかざります。春分の日には春季彼岸会、5月5日には花まつり（灌仏会）、7月15日には孟蘭盆施食会、8月13日から15日は献灯会（梵鐘の撞き開放）、秋分の日には秋季彼岸会、12月8日には成道会を執り行います。12月29日には餅撒きが行われ、12月31日午後11時半から除夜の鐘を撞きます。月例行事としては、毎月第4土曜日（1月・6月は休み、12月は臘八接心と兼ねる）の午後6時から坐禅会が開かれており、一般の方も参加できます。坐禅や禅録講義、作務を含む大衆禅道場も設けられています。また毎月18日は作務（草抜き・庭掃除）の日、毎月28日午前10時からは不動祭が行われます。"
+          },
+          {
+            "heading": "行き方と使い方",
+            "body": "山陽電鉄網干線「山陽網干駅」から徒歩約10分の場所にあります。JR「網干駅」からはタクシーで約13分です。境内には駐車場があります。坐禅会などの行事は、日程が変更になることがあるため、事前に電話かLINEで確認することが求められています。御朱印は12種類が確認されています。ペット納骨供養塔や永代供養塔・永安廟の利用、龍門寺窯の器の問い合わせは、電話（079-272-1276）または公式サイトから受け付けています。「龍門寺を興す会」への入会も受け付けており、事務局は龍門寺内に置かれています。"
+          }
+        ],
+        "sources": [
+          {
+            "label": "公式サイト",
+            "url": "http://www.ryomonji.jp/"
+          },
+          {
+            "label": "姫路市観光情報",
+            "url": "https://www.himeji-kanko.jp/spot/122/"
+          },
+          {
+            "label": "姫路市（龍門寺伽藍内建築）",
+            "url": "https://www.city.himeji.lg.jp/kanko/0000001964.html"
+          },
+          {
+            "label": "姫路市（龍門寺大方丈襖絵）",
+            "url": "https://www.city.himeji.lg.jp/kanko/0000002084.html"
+          },
+          {
+            "label": "ホトカミ",
+            "url": "https://hotokami.jp/area/hyogo/Hmzts/Hmztstk/Dyygz/10563/"
+          },
+          {
+            "label": "宿坊研究会",
+            "url": "https://shukuken.com/ryomonji"
+          },
+          {
+            "label": "Google マップ",
+            "url": "https://maps.google.com/?cid=7796687502945090174"
+          }
+        ],
+        "checkedAt": "2026-11-06"
+      }
+    },
+    {
+      "id": "li0181",
+      "vertical": "life",
+      "category": "shrine-temple",
+      "name": "氷室神社",
+      "pref": "hyogo",
+      "cityName": "神戸市兵庫区",
+      "address": "兵庫県神戸市兵庫区氷室町2丁目15-1",
+      "lat": 34.6877014,
+      "lng": 135.1558997,
+      "phone": "078-531-2833",
+      "url": "http://himurojinja.or.jp/",
+      "website": "http://himurojinja.or.jp/",
+      "mapUrl": "https://maps.google.com/?cid=8992790518642019796",
+      "image": "/_portal/vshops/tri-life-433/g01.jpg",
+      "images": [
+        "/_portal/vshops/tri-life-433/g01.jpg",
+        "/_portal/vshops/tri-life-433/g02.jpg",
+        "/_portal/vshops/tri-life-433/g03.jpg",
+        "/_portal/vshops/tri-life-433/g04.jpg",
+        "/_portal/vshops/tri-life-433/g05.jpg",
+        "/_portal/vshops/tri-life-433/g06.jpg",
+        "/_portal/vshops/tri-life-433/g07.jpg",
+        "/_portal/vshops/tri-life-433/g08.jpg",
+        "/_portal/vshops/tri-life-433/g09.jpg",
+        "/_portal/vshops/tri-life-433/g10.jpg",
+        "/_portal/vshops/tri-life-433/s02.jpg",
+        "/_portal/vshops/tri-life-433/s03.jpg",
+        "/_portal/vshops/tri-life-433/s04.jpg",
+        "/_portal/vshops/tri-life-433/s06.jpg",
+        "/_portal/vshops/tri-life-433/s07.jpg",
+        "/_portal/vshops/tri-life-433/s09.jpg",
+        "/_portal/vshops/tri-life-433/s10.jpg",
+        "/_portal/vshops/tri-life-433/s11.jpg",
+        "/_portal/vshops/tri-life-433/s12.jpg",
+        "/_portal/vshops/tri-life-433/s13.jpg"
+      ],
+      "photos": [
+        {
+          "path": "/_portal/vshops/tri-life-433/g01.jpg",
+          "what": "赤い鳥居と参道の入口",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-life-433/g02.jpg",
+          "what": "社務所と境内入口付近の建物",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 675
+        },
+        {
+          "path": "/_portal/vshops/tri-life-433/g03.jpg",
+          "what": "石鳥居と参道に並ぶ旗",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-life-433/g04.jpg",
+          "what": "岩の洞窟（氷室の旧跡）",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-life-433/g05.jpg",
+          "what": "拝殿と狛犬が並ぶ境内",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-life-433/g06.jpg",
+          "what": "赤い着物姿の人形立て看板",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-life-433/g07.jpg",
+          "what": "参道の石畳と旗が並ぶ景観",
+          "kind": "exterior",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-life-433/g08.jpg",
+          "what": "石造りの社殿と扁額",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 675
+        },
+        {
+          "path": "/_portal/vshops/tri-life-433/g09.jpg",
+          "what": "石段と境内へ続く参道",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-life-433/g10.jpg",
+          "what": "木々に囲まれた境内奥の景観",
+          "kind": "view",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-life-433/s02.jpg",
+          "what": "本殿前の社殿（正面）",
+          "kind": "exterior",
+          "width": 1280,
+          "height": 829
+        },
+        {
+          "path": "/_portal/vshops/tri-life-433/s03.jpg",
+          "what": "絵馬や授与品が並ぶ社務所前",
+          "kind": "common",
+          "width": 1280,
+          "height": 960
+        },
+        {
+          "path": "/_portal/vshops/tri-life-433/s04.jpg",
+          "what": "境内に置かれた像と飾り",
+          "kind": "exterior",
+          "width": 1280,
+          "height": 960
+        },
+        {
+          "path": "/_portal/vshops/tri-life-433/s06.jpg",
+          "what": "境内の一角と建物外壁",
+          "kind": "exterior",
+          "width": 1280,
+          "height": 768
+        },
+        {
+          "path": "/_portal/vshops/tri-life-433/s07.jpg",
+          "what": "石鳥居と拝殿正面",
+          "kind": "exterior",
+          "width": 1280,
+          "height": 960
+        },
+        {
+          "path": "/_portal/vshops/tri-life-433/s09.jpg",
+          "what": "岩壁沿いの境内奥の通路",
+          "kind": "exterior",
+          "width": 1280,
+          "height": 960
+        },
+        {
+          "path": "/_portal/vshops/tri-life-433/s10.jpg",
+          "what": "苔むした石碑と境内の樹木",
+          "kind": "exterior",
+          "width": 1280,
+          "height": 960
+        },
+        {
+          "path": "/_portal/vshops/tri-life-433/s11.jpg",
+          "what": "石柱と水場のある境内の一角",
+          "kind": "exterior",
+          "width": 1280,
+          "height": 960
+        },
+        {
+          "path": "/_portal/vshops/tri-life-433/s12.jpg",
+          "what": "小祠と石像が並ぶ境内の一角",
+          "kind": "exterior",
+          "width": 1280,
+          "height": 960
+        },
+        {
+          "path": "/_portal/vshops/tri-life-433/s13.jpg",
+          "what": "境内奥の岩壁と小祠",
+          "kind": "exterior",
+          "width": 1280,
+          "height": 960
+        }
+      ],
+      "tags": [],
+      "article": {
+        "headline": "神戸市兵庫区の夢野に鎮座する、約1800年の歴史と源平ゆかりの縁結びの社。",
+        "lede": "神戸市兵庫区にある「氷室神社」です。夢野の地に鎮座し、約1800年の歴史を持つ社で、縁結び・厄除け・商売繁盛・病気平癒・入試合格・就職祈願など幅広い御神徳で知られています。御祭神は大國主大神・仁徳天皇・市杵島姫命（れんあいべんてん）の3柱で、特に縁結びの神として信仰を集めています。境内には本殿前に「愛のポスト」が設けられており、想いを手紙に書いてポストに投函するという参拝の作法が全国から人を集めています。また、神社の奥には「氷室」の旧跡が残り、神社名の由来となった氷を貯えた室を今も見ることができます。境内には明治8年に京都伏見稲荷大社より勧請された氷室稲荷神社もあり、宇迦之御魂神を祀っています。",
+        "sections": [
+          {
+            "heading": "由緒・歴史",
+            "body": "神社が鎮座する夢野の地は元来「禁野」と呼ばれ、皇室の御料地として殺生禁断の地でした。仲哀天皇の時代（西暦200年頃）に麛坂皇子・忍熊皇子がこの地で狩りを行い、麛坂皇子は猪に襲われて亡くなり、この地に墳墓が築かれたと伝わります。仁徳天皇の時代（西暦374年）に額田大中彦皇子がこの地で氷室を発見し、その氷を毎年天皇に献上するようになったことが神社名の由来とされます。平安時代には平清盛が広島厳島神社より市杵島姫命（れんあいべんてん）を奉斎し、兵庫七辨天の一社として祀りました。源平合戦の際には神社の清水が「陣場の井」と呼ばれ、平通盛と妻小宰相が今生の名残を惜しんだ地でもあります（平家物語）。神社の西には源義経が駆け下った「鵯越の逆落とし」の地があります。鎌倉時代末期には湊川合戦の際に楠木正成が社家小林氏を訪れ、会下山に砦を築いたと伝わります。明治8年には京都伏見稲荷大社より稲荷神社が勧請されました。"
+          },
+          {
+            "heading": "縁結びと「愛のポスト」",
+            "body": "氷室神社は「れんあいべんてん」として知られる市杵島姫命を祀り、縁結びの社として広く信仰されています。本殿前に設けられた「愛のポスト」は、平通盛が小宰相へ3年間愛の手紙を送り続けて結婚に至ったという史話に由来する参拝の形です。結ばれたい人の名前やこれから出会いたい人の特徴をしたためた「愛の手紙」を書いてポストに投函するという作法で知られています。大國主大神も縁結びの御神徳を持ち、御神徳には縁結び・就職祈願・交通安全・子宝安産・厄除け・病気平癒・家内安全・地鎮祭・商売繁盛・健康長寿・開運招福・入試合格・芸能上達・出世成功・会社清祓なども含まれます。"
+          },
+          {
+            "heading": "境内の特徴",
+            "body": "境内の奥には神社名の由来となった「氷室」の旧跡があります。冬の氷を夏まで貯えておくために造られた室で、洞窟の形で現存しています。本殿には仁徳天皇が、境内社として氷室稲荷神社に宇迦之御魂神が祀られています。摂社古殿神社はかつて額田大中彦皇子を祀り、麛坂皇子の墳墓といわれる「御塚」の上に鎮座していたと伝わります。神社の社家は闘鶏稲置大山主を先祖とする小林氏です。御祭礼は6月1日11時の例大祭、10月1日11時の秋祭、2月の初午の日11時の初午祭（氷室稲荷神社）の3つがあります。境内には問い合わせフォームを備えた公式サイトが開設されており、各種ご祈願・神社参拝のアクセスに関する質問を受け付けています。"
+          },
+          {
+            "heading": "行き方と使い方",
+            "body": "神戸市営地下鉄「湊川公園」駅または神戸電鉄「湊川」駅から市バス⑪板宿行きに乗り「夢野町3丁目」バス停で下車、徒歩5分です。JR・阪神・阪急「三宮駅」から市バス⑦神戸駅前行きで「石井町」バス停下車、徒歩10分でも到達できます。JR「神戸駅」からは市バス⑪板宿行きで「夢野町3丁目」下車、徒歩5分のルートもあります。駐車場はありません。社務所の受付は8時から18時です。ご参拝・ご祈祷・その他のお問い合わせは、公式サイトのお問い合わせフォームから受け付けています。"
+          }
+        ],
+        "sources": [
+          {
+            "label": "公式サイト",
+            "url": "https://himurojinja.or.jp/"
+          },
+          {
+            "label": "公式サイト（氷室神社について）",
+            "url": "https://himurojinja.or.jp/about/"
+          },
+          {
+            "label": "公式サイト（アクセス）",
+            "url": "https://himurojinja.or.jp/access/"
+          },
+          {
+            "label": "公式サイト（お問い合わせ）",
+            "url": "https://himurojinja.or.jp/contact/"
+          },
+          {
+            "label": "kisspress（地域情報サイト）",
+            "url": "https://kisspress.jp/articles/39754/"
+          },
+          {
+            "label": "ホトカミ",
+            "url": "https://hotokami.jp/area/hyogo/Hmztk/Hmztkkt/Datta/144873/"
+          },
+          {
+            "label": "Google マップ",
+            "url": "https://maps.google.com/?cid=8992790518642019796"
+          }
+        ],
+        "checkedAt": "2026-11-06"
+      }
     }
   ]
 }

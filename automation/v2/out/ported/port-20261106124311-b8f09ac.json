@@ -1,0 +1,30 @@
+{
+  "commit": "b8f09ac2bb39da65589eb056d660ac67706b3069",
+  "source": "/Users/shunta/claude/gp-k-auto2",
+  "count": 2,
+  "added": [
+    {
+      "row": 431,
+      "name": "龍門寺",
+      "key": "tri-life-431",
+      "vertical": "くらし",
+      "id": "li0180",
+      "articleId": "li0180",
+      "shopUrl": "https://machinowa.tokyo/life/shop/li0180",
+      "articleUrl": "https://machinowa.tokyo/life/article/li0180",
+      "sheetUrl": "https://machinowa.tokyo/life/article/li0180"
+    },
+    {
+      "row": 433,
+      "name": "氷室神社氷室神社",
+      "key": "tri-life-433",
+      "vertical": "くらし",
+      "id": "li0181",
+      "articleId": "li0181",
+      "shopUrl": "https://machinowa.tokyo/life/shop/li0181",
+      "articleUrl": "https://machinowa.tokyo/life/article/li0181",
+      "sheetUrl": "https://machinowa.tokyo/life/article/li0181"
+    }
+  ],
+  "skipped": []
+}

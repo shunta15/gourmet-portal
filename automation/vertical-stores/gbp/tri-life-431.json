@@ -1,0 +1,40 @@
+{
+  "tab": "トリニティアポ",
+  "tabEn": "tri-life",
+  "row": 431,
+  "sheet": {
+    "name": "龍門寺",
+    "address": "",
+    "url": "https://www.google.com/maps/search/?api=1&query=%E9%BE%8D%E9%96%80%E5%AF%BA%20079-272-1276%20%E3%80%92671-1242%20%E5%85%B5%E5%BA%AB%E7%9C%8C%E5%A7%AB%E8%B7%AF%E5%B8%82%E7%B6%B2%E5%B9%B2%E5%8C%BA%E6%B5%9C%E7%94%B0%EF%BC%98%EF%BC%91%EF%BC%92",
+    "type": "寺",
+    "d1": "",
+    "d2": ""
+  },
+  "urlKind": "mapsApi",
+  "route": "第1段(verify-gbp.mjs)で確認済み",
+  "verdict": "一致",
+  "verdictReason": "手がかり: 店名＋電話＋住所(番地まで)。電話が一致／店名: contains(シート「龍門寺」/ マップ「臨済宗妙心寺派 天徳山 龍門寺」)／住所(シート): exact・町名・番地とも一致",
+  "place": {
+    "name": "臨済宗妙心寺派 天徳山 龍門寺",
+    "address": "兵庫県姫路市網干区浜田８１２",
+    "category": "仏教寺院",
+    "lat": 34.780133,
+    "lng": 134.5751347,
+    "gbpUrl": "https://maps.google.com/?cid=7796687502945090174",
+    "phone": "079-272-1276",
+    "website": "http://www.ryomonji.jp/",
+    "hours": {
+      "月": "09:00–16:00",
+      "火": "09:00–16:00",
+      "水": "09:00–16:00",
+      "木": "09:00–16:00",
+      "金": "09:00–16:00",
+      "土": "09:00–16:00",
+      "日": "09:00–16:00"
+    },
+    "reserveLinks": [],
+    "statusSignals": [],
+    "closedSignal": false
+  },
+  "fetchedAt": "2026-11-06T12:34:52.089Z"
+}

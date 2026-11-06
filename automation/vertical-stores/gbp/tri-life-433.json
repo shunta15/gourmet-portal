@@ -1,0 +1,32 @@
+{
+  "tab": "トリニティアポ",
+  "tabEn": "tri-life",
+  "row": 433,
+  "sheet": {
+    "name": "氷室神社氷室神社",
+    "address": "",
+    "url": "https://www.google.com/maps/search/?api=1&query=%E6%B0%B7%E5%AE%A4%E7%A5%9E%E7%A4%BE%E6%B0%B7%E5%AE%A4%E7%A5%9E%E7%A4%BE%20078-531-2833%20%E5%85%B5%E5%BA%AB%E7%9C%8C%E7%A5%9E%E6%88%B8%E5%B8%82%E5%85%B5%E5%BA%AB%E5%8C%BA%E6%B0%B7%E5%AE%A4%E7%94%BA%EF%BC%92%E4%B8%81%E7%9B%AE%EF%BC%91%EF%BC%95%E2%88%92%EF%BC%91",
+    "type": "神社",
+    "d1": "",
+    "d2": ""
+  },
+  "urlKind": "mapsApi",
+  "route": "第1段(verify-gbp.mjs)で確認済み",
+  "verdict": "一致",
+  "verdictReason": "手がかり: 店名＋電話＋住所(番地まで)。電話が一致／店名: contains(シート「氷室神社氷室神社」/ マップ「氷室神社」)／住所(シート): exact・町名・番地とも一致",
+  "place": {
+    "name": "氷室神社",
+    "address": "兵庫県神戸市兵庫区氷室町２丁目１５−１",
+    "category": "神社",
+    "lat": 34.6877014,
+    "lng": 135.1558997,
+    "gbpUrl": "https://maps.google.com/?cid=8992790518642019796",
+    "phone": "078-531-2833",
+    "website": "http://himurojinja.or.jp/",
+    "hours": null,
+    "reserveLinks": [],
+    "statusSignals": [],
+    "closedSignal": false
+  },
+  "fetchedAt": "2026-11-06T12:35:33.593Z"
+}
