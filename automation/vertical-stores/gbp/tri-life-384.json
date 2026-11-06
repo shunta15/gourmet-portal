@@ -1,0 +1,32 @@
+{
+  "tab": "トリニティアポ",
+  "tabEn": "tri-life",
+  "row": 384,
+  "sheet": {
+    "name": "白山神社",
+    "address": "",
+    "url": "https://www.google.com/maps/search/?api=1&query=%E7%99%BD%E5%B1%B1%E7%A5%9E%E7%A4%BE%20057-255-3771%20%E3%80%92509-5104%20%E5%B2%90%E9%98%9C%E7%9C%8C%E5%9C%9F%E5%B2%90%E5%B8%82%E6%B3%89%E4%B8%AD%E7%AA%AF%E7%94%BA%EF%BC%91%E4%B8%81%E7%9B%AE%EF%BC%93%EF%BC%98",
+    "type": "神社",
+    "d1": "",
+    "d2": ""
+  },
+  "urlKind": "mapsApi",
+  "route": "第1段(verify-gbp.mjs)で確認済み",
+  "verdict": "一致",
+  "verdictReason": "手がかり: 店名＋電話＋住所(番地まで)。電話が一致／店名: exact(シート「白山神社」/ マップ「白山神社(大富白山神社)」)／住所(シート): exact・町名・番地とも一致",
+  "place": {
+    "name": "白山神社(大富白山神社)",
+    "address": "岐阜県土岐市泉中窯町１丁目３８",
+    "category": "神社",
+    "lat": 35.3693901,
+    "lng": 137.1879139,
+    "gbpUrl": "https://maps.google.com/?cid=9953648716885370710",
+    "phone": "0572-55-3771",
+    "website": "https://toki-ootomi.com/jinja/",
+    "hours": null,
+    "reserveLinks": [],
+    "statusSignals": [],
+    "closedSignal": false
+  },
+  "fetchedAt": "2026-11-06T10:15:52.766Z"
+}

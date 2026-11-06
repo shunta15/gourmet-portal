@@ -20925,6 +20925,57 @@ export const ARTICLE_STORES: Restaurant[] = [
       "奥州市"
     ],
     "featureId": "ニュー藤駒"
+  },
+  {
+    "id": "r882",
+    "name": "二代目 お好み焼 よち坊",
+    "cuisine": "お好み焼き店",
+    "area": "福岡県・中間市",
+    "region": "fukuoka",
+    "shape": "square",
+    "image": "/restaurants/teleapo-二代目お好み焼よち坊/hero.jpg",
+    "heroImages": [
+      "/restaurants/teleapo-二代目お好み焼よち坊/hero.jpg",
+      "/restaurants/teleapo-二代目お好み焼よち坊/point1.jpg",
+      "/restaurants/teleapo-二代目お好み焼よち坊/point2.jpg",
+      "/restaurants/teleapo-二代目お好み焼よち坊/point3.jpg",
+      "/restaurants/teleapo-二代目お好み焼よち坊/point4.jpg"
+    ],
+    "gallery": [
+      "/restaurants/teleapo-二代目お好み焼よち坊/hero.jpg",
+      "/restaurants/teleapo-二代目お好み焼よち坊/point1.jpg",
+      "/restaurants/teleapo-二代目お好み焼よち坊/point2.jpg",
+      "/restaurants/teleapo-二代目お好み焼よち坊/point3.jpg",
+      "/restaurants/teleapo-二代目お好み焼よち坊/point4.jpg"
+    ],
+    "desc": "中間市中尾は、ハローデイ中尾店が面する住宅地の一角である。二代目 お好み焼 よち坊は、その敷地内に2023年7月に開いたお好み焼き店で、八幡西区船越に構える本店「よち坊」の2代目にあたる。",
+    "address": "福岡県中間市中尾2丁目14-17",
+    "hours": "火〜日 11:00–14:30, 17:00–21:00",
+    "closed": "月曜日",
+    "seats": "17席（カウンター1名×7・掘りごたつ5名×2）",
+    "nearest": "—",
+    "phone": "093-701-7169",
+    "source": {
+      "label": "Google ビジネスプロフィール",
+      "url": "https://maps.google.com/?cid=8299160063115008918"
+    },
+    "body": [
+      "二代目 お好み焼 よち坊は、福岡県中間市にあるお店です。業態は「お好み焼き店」、所在地は福岡県中間市中尾2丁目14-17です。マチノワ編集部の特集記事では、「特製よち坊焼き——2つのスタイルを選べるお好み焼き」・「野菜と海鮮の仕入れ——若松塩キャベツと朝倉の博多万能ねぎ」などを取り上げています。",
+      "営業時間は火〜日 11:00–14:30, 17:00–21:00、定休日は月曜日です（Googleマップの営業時間による）。席は17席（カウンター1名×7・掘りごたつ5名×2）。営業時間や価格は変わることがあるため、訪問前に公式サイトやSNS、お電話でご確認ください。"
+    ],
+    "highlights": [
+      "特製よち坊焼き——2つのスタイルを選べるお好み焼き",
+      "野菜と海鮮の仕入れ——若松塩キャベツと朝倉の博多万能ねぎ",
+      "ミスジステーキと鉄板料理——お好み焼きと並ぶもう一本の柱",
+      "17席の店内と宴会・貸切——1人から19人まで"
+    ],
+    "tags": [
+      "お好み焼き店",
+      "中間市",
+      "貸切可",
+      "ランチ"
+    ],
+    "featureId": "二代目お好み焼よち坊"
   }
 ];
 
@@ -21367,7 +21418,8 @@ export const ARTICLE_STORE_FEATURE_IDS: Record<string, string> = {
   "r878": "SUNSET",
   "r879": "石挽そばやわかばOyakicafeほうろくや",
   "r880": "チャイナハウス古丹",
-  "r881": "ニュー藤駒"
+  "r881": "ニュー藤駒",
+  "r882": "二代目お好み焼よち坊"
 };
 
 /** 特集記事ID → 店舗ID */
@@ -21809,5 +21861,6 @@ export const ARTICLE_STORE_ID_BY_FEATURE: Record<string, string> = {
   "SUNSET": "r878",
   "石挽そばやわかばOyakicafeほうろくや": "r879",
   "チャイナハウス古丹": "r880",
-  "ニュー藤駒": "r881"
+  "ニュー藤駒": "r881",
+  "二代目お好み焼よち坊": "r882"
 };

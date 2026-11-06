@@ -1,0 +1,40 @@
+{
+  "tab": "トリニティアポ",
+  "tabEn": "tri-life",
+  "row": 390,
+  "sheet": {
+    "name": "名古屋東照宮",
+    "address": "",
+    "url": "https://www.google.com/maps/search/?api=1&query=%E5%90%8D%E5%8F%A4%E5%B1%8B%E6%9D%B1%E7%85%A7%E5%AE%AE%20052-231-4010%20%E3%80%92460-0002%20%E6%84%9B%E7%9F%A5%E7%9C%8C%E5%90%8D%E5%8F%A4%E5%B1%8B%E5%B8%82%E4%B8%AD%E5%8C%BA%E4%B8%B8%E3%81%AE%E5%86%85%EF%BC%92%E4%B8%81%E7%9B%AE%EF%BC%93%E2%88%92%EF%BC%93%EF%BC%97",
+    "type": "神社",
+    "d1": "",
+    "d2": ""
+  },
+  "urlKind": "mapsApi",
+  "route": "第1段(verify-gbp.mjs)で確認済み",
+  "verdict": "一致",
+  "verdictReason": "手がかり: 店名＋電話＋住所(番地まで)。電話が一致／店名: exact(シート「名古屋東照宮」/ マップ「名古屋東照宮」)／住所(シート): exact・町名・番地とも一致",
+  "place": {
+    "name": "名古屋東照宮",
+    "address": "愛知県名古屋市中区丸の内２丁目３−３７",
+    "category": "神社",
+    "lat": 35.177553,
+    "lng": 136.8993108,
+    "gbpUrl": "https://maps.google.com/?cid=3184631309174977801",
+    "phone": "052-231-4010",
+    "website": "https://nagoyatoshogu.com/",
+    "hours": {
+      "月": "09:00–17:00",
+      "火": "09:00–17:00",
+      "水": "09:00–17:00",
+      "木": "09:00–17:00",
+      "金": "09:00–17:00",
+      "土": "09:00–17:00",
+      "日": "09:00–17:00"
+    },
+    "reserveLinks": [],
+    "statusSignals": [],
+    "closedSignal": false
+  },
+  "fetchedAt": "2026-11-06T10:17:06.945Z"
+}

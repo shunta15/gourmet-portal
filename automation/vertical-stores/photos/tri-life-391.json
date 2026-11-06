@@ -1,0 +1,76 @@
+{
+  "key": "tri-life-391",
+  "images": [
+    {
+      "path": "/_portal/vshops/tri-life-391/g01.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9QJQ8K43G9IponLxBffgj0kLMS6j2K0a3uP510vLOJV6af5vYaZirwkvBImoLBgWZ3h10nhBGs_ZYUt6243VUOHDXxi9tTUWX8z3TZwQK9ch_s76nFdmf3x8fk1GbuJv9EgroI=s1200",
+      "pageUrl": "https://maps.google.com/?cid=4780902210714794014",
+      "what": "布忍神社の拝殿正面と狛犬",
+      "kind": "exterior",
+      "width": 1200,
+      "height": 900,
+      "source": "Google マップ"
+    },
+    {
+      "path": "/_portal/vshops/tri-life-391/g02.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9QDZVM5O91INw8QCvidfKqF9OKjkK_C2oja85iA-BFUsS970DpmRg12Of7VMNu698aJo2iZHDQfIqvPyyII3051Skpfrh1Xld6c8KcQVZutvpKxDWns99xa1vdwSaV8vRkPPGA=s1200",
+      "pageUrl": "https://maps.google.com/?cid=4780902210714794014",
+      "what": "石鳥居と参道の景色",
+      "kind": "exterior",
+      "width": 1200,
+      "height": 675,
+      "source": "Google マップ"
+    },
+    {
+      "path": "/_portal/vshops/tri-life-391/g03.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9T97t3GZYZ43qY5z04gXh8sNzNd1w0PPurKZSCpJnVwfRvJPO4sJ8n3MN5V-3rwhlLNyBBUJbXDAPALMcLo_MF27HRh7C2-HdlqXIbMyu8XrhGrsm8-0Rv8NBvRwIsGFhMcthY=s1200",
+      "pageUrl": "https://maps.google.com/?cid=4780902210714794014",
+      "what": "「布忍宮」と刻まれた石柱と案内板",
+      "kind": "exterior",
+      "width": 1200,
+      "height": 900,
+      "source": "Google マップ"
+    },
+    {
+      "path": "/_portal/vshops/tri-life-391/g04.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9QL16SEuknU22o7KwUqwoa2MhH-TkCYhHxKIuH7ctwDBHyxzjKw5P2ir5g8o6WsxDiRTLzo-__FKnNLADaRlPQpkVQLC4cBvjIBbp1FBNPwKvhmezwW-QXL0QfvKAm3OyQYBduSzHpI61r_=s1200",
+      "pageUrl": "https://maps.google.com/?cid=4780902210714794014",
+      "what": "赤い欄干の橋と神社建物",
+      "kind": "exterior",
+      "width": 900,
+      "height": 1200,
+      "source": "Google マップ"
+    },
+    {
+      "path": "/_portal/vshops/tri-life-391/g05.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9QZA0T2qv6HCK0tuPtZ92BKVzJaxn-6Pr0K4969cAdRUuYI7y2C1mclWoYWvg94wc6Zz05DJ8TeyxcX3cCAQ7oeW7XgkFrWDWMJYogzs6pcz-rs-WqeN3MCIOvW8MyqvfkPh-9JUMeQqpSt=s1200",
+      "pageUrl": "https://maps.google.com/?cid=4780902210714794014",
+      "what": "夕暮れの境内と木々",
+      "kind": "exterior",
+      "width": 1200,
+      "height": 900,
+      "source": "Google マップ"
+    },
+    {
+      "path": "/_portal/vshops/tri-life-391/g08.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9TdwSdlFFc0ucZ_IbKCPXDuboTLGIBis_-Ie4WSI8ffu_GrnSS38WH1UeJ_sVVEaTXGs0m5m4AbL1xSMPRI3bWwOTE7COCr7bavcTE72fCzTEMj06-ST_sAnfycnpUJr0_JF8ZppA=s1200",
+      "pageUrl": "https://maps.google.com/?cid=4780902210714794014",
+      "what": "神社の由緒や文化財情報が記された案内板",
+      "kind": "exterior",
+      "width": 1200,
+      "height": 900,
+      "source": "Google マップ"
+    },
+    {
+      "path": "/_portal/vshops/tri-life-391/g09.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9StduOuYc5whmnEQXPEduqHPyI-y1M5FUkYsUeZ7ibFb-g8qBiC33qY-bkQ8GmpevOvwcYV_8vgA6eLpGmuyKPeoBxy63I2mkhdVynzAec4DJJupVY7TFfDQRD50kDFaZTjV9h3=s1200",
+      "pageUrl": "https://maps.google.com/?cid=4780902210714794014",
+      "what": "石鳥居と参道の奥の様子",
+      "kind": "exterior",
+      "width": 901,
+      "height": 1200,
+      "source": "Google マップ"
+    }
+  ],
+  "note": "automation/v2/write.mjs が 2026-11-06T10:25:29.113Z に取得。店の実写だけ(AI 画像・汎用画像・地図・ロゴ・顔が大きい画像は除外)。"
+}

@@ -149,6 +149,7 @@ export const ONE_PAGE_UNLISTED_SHOP_OF_FEATURE: Readonly<Record<string, string>>
   "石挽そばやわかばOyakicafeほうろくや": "r879", // 石挽そばや わかば Oyaki cafe ほうろくや
   "チャイナハウス古丹": "r880", // チャイナハウス古丹
   "ニュー藤駒": "r881", // ニュー藤駒
+  "二代目お好み焼よち坊": "r882", // 二代目 お好み焼 よち坊
 };
 
 const NFC = (s: string) => s.normalize("NFC");

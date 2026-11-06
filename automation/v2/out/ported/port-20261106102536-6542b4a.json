@@ -1,0 +1,63 @@
+{
+  "commit": "6542b4a24e3053aab7adabaa1e0ac6f97487e7a8",
+  "source": "/Users/shunta/claude/gp-k-auto2",
+  "count": 5,
+  "added": [
+    {
+      "row": 343,
+      "name": "大漸寺",
+      "key": "tri-life-343",
+      "vertical": "くらし",
+      "id": "li0166",
+      "articleId": "li0166",
+      "shopUrl": "https://machinowa.tokyo/life/shop/li0166",
+      "articleUrl": "https://machinowa.tokyo/life/article/li0166",
+      "sheetUrl": "https://machinowa.tokyo/life/article/li0166"
+    },
+    {
+      "row": 404,
+      "name": "二代目 お好み焼 よち坊",
+      "key": "lk-gourmet-404",
+      "vertical": "グルメ",
+      "id": "r882",
+      "articleId": "二代目お好み焼よち坊",
+      "shopUrl": "https://machinowa.tokyo/restaurant/r882",
+      "articleUrl": "https://machinowa.tokyo/feature/二代目お好み焼よち坊",
+      "sheetUrl": "https://machinowa.tokyo/feature/二代目お好み焼よち坊"
+    },
+    {
+      "row": 384,
+      "name": "白山神社",
+      "key": "tri-life-384",
+      "vertical": "くらし",
+      "id": "li0167",
+      "articleId": "li0167",
+      "shopUrl": "https://machinowa.tokyo/life/shop/li0167",
+      "articleUrl": "https://machinowa.tokyo/life/article/li0167",
+      "sheetUrl": "https://machinowa.tokyo/life/article/li0167"
+    },
+    {
+      "row": 390,
+      "name": "名古屋東照宮",
+      "key": "tri-life-390",
+      "vertical": "くらし",
+      "id": "li0168",
+      "articleId": "li0168",
+      "shopUrl": "https://machinowa.tokyo/life/shop/li0168",
+      "articleUrl": "https://machinowa.tokyo/life/article/li0168",
+      "sheetUrl": "https://machinowa.tokyo/life/article/li0168"
+    },
+    {
+      "row": 391,
+      "name": "布忍神社",
+      "key": "tri-life-391",
+      "vertical": "くらし",
+      "id": "li0169",
+      "articleId": "li0169",
+      "shopUrl": "https://machinowa.tokyo/life/shop/li0169",
+      "articleUrl": "https://machinowa.tokyo/life/article/li0169",
+      "sheetUrl": "https://machinowa.tokyo/life/article/li0169"
+    }
+  ],
+  "skipped": []
+}

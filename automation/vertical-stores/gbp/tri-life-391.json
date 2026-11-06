@@ -1,0 +1,32 @@
+{
+  "tab": "トリニティアポ",
+  "tabEn": "tri-life",
+  "row": 391,
+  "sheet": {
+    "name": "布忍神社",
+    "address": "",
+    "url": "https://www.google.com/maps/search/?api=1&query=%E5%B8%83%E5%BF%8D%E7%A5%9E%E7%A4%BE%20072-334-7634%20%E3%80%92580-0025%20%E5%A4%A7%E9%98%AA%E5%BA%9C%E6%9D%BE%E5%8E%9F%E5%B8%82%E5%8C%97%E6%96%B0%E7%94%BA%EF%BC%92%E4%B8%81%E7%9B%AE%EF%BC%94%E2%88%92%EF%BC%91%EF%BC%91",
+    "type": "神社",
+    "d1": "",
+    "d2": ""
+  },
+  "urlKind": "mapsApi",
+  "route": "第1段(verify-gbp.mjs)で確認済み",
+  "verdict": "一致",
+  "verdictReason": "手がかり: 店名＋電話＋住所(番地まで)。電話が一致／店名: contains(シート「布忍神社」/ マップ「布忍神社本殿」)／住所(シート): exact・町名・番地とも一致",
+  "place": {
+    "name": "布忍神社本殿",
+    "address": "大阪府松原市北新町２丁目４−１１ 布忍神社",
+    "category": "史跡",
+    "lat": 34.5790545,
+    "lng": 135.536444,
+    "gbpUrl": "https://maps.google.com/?cid=4780902210714794014",
+    "phone": "072-334-7634",
+    "website": "https://www.city.matsubara.lg.jp/docs/page3008.html",
+    "hours": null,
+    "reserveLinks": [],
+    "statusSignals": [],
+    "closedSignal": false
+  },
+  "fetchedAt": "2026-11-06T10:17:56.681Z"
+}

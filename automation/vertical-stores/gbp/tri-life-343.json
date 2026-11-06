@@ -1,0 +1,32 @@
+{
+  "tab": "トリニティアポ",
+  "tabEn": "tri-life",
+  "row": 343,
+  "sheet": {
+    "name": "大漸寺",
+    "address": "",
+    "url": "https://www.google.com/maps/search/?api=1&query=%E5%A4%A7%E6%BC%B8%E5%AF%BA%20075-532-2235%20%E3%80%92605-0862%20%E4%BA%AC%E9%83%BD%E5%BA%9C%E4%BA%AC%E9%83%BD%E5%B8%82%E6%9D%B1%E5%B1%B1%E5%8C%BA%E6%B8%85%E6%B0%B4%EF%BC%94%E4%B8%81%E7%9B%AE%EF%BC%91%EF%BC%95%EF%BC%96",
+    "type": "お寺",
+    "d1": "",
+    "d2": ""
+  },
+  "urlKind": "mapsApi",
+  "route": "第1段(verify-gbp.mjs)で確認済み",
+  "verdict": "一致",
+  "verdictReason": "手がかり: 店名＋電話＋住所(番地まで)。電話が一致／店名: exact(シート「大漸寺」/ マップ「大漸寺」)／住所(シート): exact・町名・番地とも一致",
+  "place": {
+    "name": "大漸寺",
+    "address": "京都府京都市東山区清水４丁目１５６",
+    "category": "仏教寺院",
+    "lat": 34.9978967,
+    "lng": 135.7788109,
+    "gbpUrl": "https://maps.google.com/?cid=18215159616196194436",
+    "phone": "075-532-2235",
+    "website": "http://temple.nichiren.or.jp/5011098-daizenji/",
+    "hours": null,
+    "reserveLinks": [],
+    "statusSignals": [],
+    "closedSignal": false
+  },
+  "fetchedAt": "2026-11-06T10:15:06.624Z"
+}

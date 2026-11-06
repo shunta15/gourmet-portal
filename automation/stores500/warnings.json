@@ -3433,5 +3433,12 @@
       "desc は lede から事実の文を選べず、事実から作った定型文",
       "cuisine は GBPカテゴリ"
     ]
+  },
+  "r882": {
+    "articleId": "二代目お好み焼よち坊",
+    "name": "二代目 お好み焼 よち坊",
+    "warnings": [
+      "cuisine は GBPカテゴリ"
+    ]
   }
 }
