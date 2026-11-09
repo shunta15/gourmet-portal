@@ -3656,5 +3656,12 @@
       "desc は lede から事実の文を選べず、事実から作った定型文",
       "cuisine は GBPカテゴリ"
     ]
+  },
+  "r911": {
+    "articleId": "そば茶屋吉酔",
+    "name": "そば茶屋 吉酔",
+    "warnings": [
+      "cuisine は GBPカテゴリ"
+    ]
   }
 }

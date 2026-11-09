@@ -22341,6 +22341,57 @@ export const ARTICLE_STORES: Restaurant[] = [
       "ランチ"
     ],
     "featureId": "天よし亭"
+  },
+  {
+    "id": "r911",
+    "name": "そば茶屋 吉酔",
+    "cuisine": "蕎麦店",
+    "area": "茨城県・守谷市",
+    "region": "ibaraki",
+    "shape": "square",
+    "image": "/restaurants/teleapo-そば茶屋吉酔/hero.jpg",
+    "heroImages": [
+      "/restaurants/teleapo-そば茶屋吉酔/hero.jpg",
+      "/restaurants/teleapo-そば茶屋吉酔/point1.jpg",
+      "/restaurants/teleapo-そば茶屋吉酔/point2.jpg",
+      "/restaurants/teleapo-そば茶屋吉酔/point3.jpg",
+      "/restaurants/teleapo-そば茶屋吉酔/point4.jpg"
+    ],
+    "gallery": [
+      "/restaurants/teleapo-そば茶屋吉酔/hero.jpg",
+      "/restaurants/teleapo-そば茶屋吉酔/point1.jpg",
+      "/restaurants/teleapo-そば茶屋吉酔/point2.jpg",
+      "/restaurants/teleapo-そば茶屋吉酔/point3.jpg",
+      "/restaurants/teleapo-そば茶屋吉酔/point4.jpg"
+    ],
+    "desc": "守谷市松並は、つくばエクスプレスと関東常総線が交わる守谷駅の西側に広がる住宅地である。そば茶屋 吉酔は、この松並の一角に構える手打ちそば店で、東京の老舗で5年の修行を積んだ主人が1993年に独立し、以来この地で蕎麦を打ち続けている。",
+    "address": "茨城県守谷市松並2050-97",
+    "hours": "月・火・木・金 11:00–14:30, 17:00–20:00 / 土・日 10:30–14:30, 17:00–20:30",
+    "closed": "水曜日",
+    "seats": "22席",
+    "nearest": "—",
+    "phone": "0297-48-1303",
+    "source": {
+      "label": "Google ビジネスプロフィール",
+      "url": "https://maps.google.com/?cid=7379061359752586689"
+    },
+    "body": [
+      "そば茶屋 吉酔は、茨城県守谷市にあるお店です。業態は「蕎麦店」、所在地は茨城県守谷市松並2050-97です。マチノワ編集部の特集記事では、「石臼挽きの自家製粉と2018年開始の自家栽培蕎麦粉」・「国産の鰹節・鯖節・北海道産昆布で引くそばつゆと生本わさび」などを取り上げています。",
+      "営業時間は月・火・木・金 11:00–14:30, 17:00–20:00 / 土・日 10:30–14:30, 17:00–20:30、定休日は水曜日です（Googleマップの営業時間による）。席は22席。営業時間や価格は変わることがあるため、訪問前に公式サイトやSNS、お電話でご確認ください。"
+    ],
+    "highlights": [
+      "石臼挽きの自家製粉と2018年開始の自家栽培蕎麦粉",
+      "国産の鰹節・鯖節・北海道産昆布で引くそばつゆと生本わさび",
+      "天せいろう・鴨せいろう・せいろうを中心に、韃靼そばやにしん蕎麦も",
+      "22席の店内と守谷駅西口から徒歩8分の立地"
+    ],
+    "tags": [
+      "蕎麦店",
+      "そば",
+      "守谷市",
+      "ランチ"
+    ],
+    "featureId": "そば茶屋吉酔"
   }
 ];
 
@@ -22812,7 +22863,8 @@ export const ARTICLE_STORE_FEATURE_IDS: Record<string, string> = {
   "r907": "TESORO",
   "r908": "焼き鳥えにし",
   "r909": "Loiseau(ロワゾー)",
-  "r910": "天よし亭"
+  "r910": "天よし亭",
+  "r911": "そば茶屋吉酔"
 };
 
 /** 特集記事ID → 店舗ID */
@@ -23283,5 +23335,6 @@ export const ARTICLE_STORE_ID_BY_FEATURE: Record<string, string> = {
   "TESORO": "r907",
   "焼き鳥えにし": "r908",
   "Loiseau(ロワゾー)": "r909",
-  "天よし亭": "r910"
+  "天よし亭": "r910",
+  "そば茶屋吉酔": "r911"
 };

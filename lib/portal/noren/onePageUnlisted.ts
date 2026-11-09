@@ -178,6 +178,7 @@ export const ONE_PAGE_UNLISTED_SHOP_OF_FEATURE: Readonly<Record<string, string>>
   "焼き鳥えにし": "r908", // 焼き鳥 えにし
   "Loiseau(ロワゾー)": "r909", // L'oiseau(ロワゾー)
   "天よし亭": "r910", // 天よし亭
+  "そば茶屋吉酔": "r911", // そば茶屋 吉酔
 };
 
 const NFC = (s: string) => s.normalize("NFC");

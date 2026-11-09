@@ -1,0 +1,19 @@
+{
+  "commit": "fa9785b69aef69d64bf40c52cd32b8bfeb286911",
+  "source": "/Users/shunta/claude/gp-k-auto2",
+  "count": 1,
+  "added": [
+    {
+      "row": 412,
+      "name": "そば茶屋 吉酔",
+      "key": "lk-gourmet-412",
+      "vertical": "グルメ",
+      "id": "r911",
+      "articleId": "そば茶屋吉酔",
+      "shopUrl": "https://machinowa.tokyo/restaurant/r911",
+      "articleUrl": "https://machinowa.tokyo/feature/そば茶屋吉酔",
+      "sheetUrl": "https://machinowa.tokyo/feature/そば茶屋吉酔"
+    }
+  ],
+  "skipped": []
+}
