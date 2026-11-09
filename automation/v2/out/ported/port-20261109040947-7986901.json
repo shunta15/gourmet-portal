@@ -1,0 +1,74 @@
+{
+  "commit": "79869019a21d9981fe7093ecacb422cead7771b1",
+  "source": "/Users/shunta/claude/gp-k-auto2",
+  "count": 6,
+  "added": [
+    {
+      "row": 434,
+      "name": "フジヤホテル",
+      "key": "tri-stay-434",
+      "vertical": "ステイ",
+      "id": "st0029",
+      "articleId": "st0029",
+      "shopUrl": "https://machinowa.tokyo/stay/shop/st0029",
+      "articleUrl": "https://machinowa.tokyo/stay/article/st0029",
+      "sheetUrl": "https://machinowa.tokyo/stay/article/st0029"
+    },
+    {
+      "row": 435,
+      "name": "045-531-2370",
+      "key": "tri-life-435",
+      "vertical": "くらし",
+      "id": "li0187",
+      "articleId": "li0187",
+      "shopUrl": "https://machinowa.tokyo/life/shop/li0187",
+      "articleUrl": "https://machinowa.tokyo/life/article/li0187",
+      "sheetUrl": "https://machinowa.tokyo/life/article/li0187"
+    },
+    {
+      "row": 436,
+      "name": "多賀神社",
+      "key": "tri-life-436",
+      "vertical": "くらし",
+      "id": "li0188",
+      "articleId": "li0188",
+      "shopUrl": "https://machinowa.tokyo/life/shop/li0188",
+      "articleUrl": "https://machinowa.tokyo/life/article/li0188",
+      "sheetUrl": "https://machinowa.tokyo/life/article/li0188"
+    },
+    {
+      "row": 437,
+      "name": "守居神社",
+      "key": "tri-life-437",
+      "vertical": "くらし",
+      "id": "li0189",
+      "articleId": "li0189",
+      "shopUrl": "https://machinowa.tokyo/life/shop/li0189",
+      "articleUrl": "https://machinowa.tokyo/life/article/li0189",
+      "sheetUrl": "https://machinowa.tokyo/life/article/li0189"
+    },
+    {
+      "row": 439,
+      "name": "巽神社",
+      "key": "tri-life-439",
+      "vertical": "くらし",
+      "id": "li0190",
+      "articleId": "li0190",
+      "shopUrl": "https://machinowa.tokyo/life/shop/li0190",
+      "articleUrl": "https://machinowa.tokyo/life/article/li0190",
+      "sheetUrl": "https://machinowa.tokyo/life/article/li0190"
+    },
+    {
+      "row": 440,
+      "name": "七宮神社",
+      "key": "tri-life-440",
+      "vertical": "くらし",
+      "id": "li0191",
+      "articleId": "li0191",
+      "shopUrl": "https://machinowa.tokyo/life/shop/li0191",
+      "articleUrl": "https://machinowa.tokyo/life/article/li0191",
+      "sheetUrl": "https://machinowa.tokyo/life/article/li0191"
+    }
+  ],
+  "skipped": []
+}

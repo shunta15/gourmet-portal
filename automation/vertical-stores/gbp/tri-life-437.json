@@ -1,0 +1,32 @@
+{
+  "tab": "トリニティアポ",
+  "tabEn": "tri-life",
+  "row": 437,
+  "sheet": {
+    "name": "守居神社",
+    "address": "",
+    "url": "https://www.google.com/maps/search/?api=1&query=%E5%AE%88%E5%B1%85%E7%A5%9E%E7%A4%BE%2006-6991-0419%20",
+    "type": "その他",
+    "d1": "",
+    "d2": ""
+  },
+  "urlKind": "mapsApi",
+  "route": "第1段(verify-gbp.mjs)で確認済み",
+  "verdict": "一致",
+  "verdictReason": "手がかり: 店名＋電話＋住所(番地まで)。電話が一致／店名: exact(シート「守居神社」/ マップ「守居神社」)／住所(シート): exact・町名・番地とも一致",
+  "place": {
+    "name": "守居神社",
+    "address": "大阪府守口市土居町２−２２",
+    "category": "神社",
+    "lat": 34.732158,
+    "lng": 135.5589793,
+    "gbpUrl": "https://maps.google.com/?cid=8614782056725573563",
+    "phone": "06-6991-0419",
+    "website": "https://www.moriijinjya.com/",
+    "hours": null,
+    "reserveLinks": [],
+    "statusSignals": [],
+    "closedSignal": false
+  },
+  "fetchedAt": "2026-11-09T04:03:52.045Z"
+}

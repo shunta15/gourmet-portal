@@ -40,7 +40,8 @@ export const UNLISTED_PLACE_IDS: Readonly<Record<string, readonly string[]>> = {
     "st0025",
     "st0026",
     "st0027",
-    "st0028"
+    "st0028",
+    "st0029"
   ],
   "beauty": [
     "be0106",
@@ -284,7 +285,12 @@ export const UNLISTED_PLACE_IDS: Readonly<Record<string, readonly string[]>> = {
     "li0183",
     "li0184",
     "li0185",
-    "li0186"
+    "li0186",
+    "li0187",
+    "li0188",
+    "li0189",
+    "li0190",
+    "li0191"
   ]
 };
 

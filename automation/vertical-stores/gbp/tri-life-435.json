@@ -1,0 +1,40 @@
+{
+  "tab": "トリニティアポ",
+  "tabEn": "tri-life",
+  "row": 435,
+  "sheet": {
+    "name": "045-531-2370",
+    "address": "",
+    "url": "https://www.google.com/maps/search/?api=1&query=045-531-2370%20045-531-2370%20%E3%80%92223-0057%20%E7%A5%9E%E5%A5%88%E5%B7%9D%E7%9C%8C%E6%A8%AA%E6%B5%9C%E5%B8%82%E6%B8%AF%E5%8C%97%E5%8C%BA%E6%96%B0%E7%BE%BD%E7%94%BA%EF%BC%92%EF%BC%95%EF%BC%98%EF%BC%96",
+    "type": "寺",
+    "d1": "",
+    "d2": ""
+  },
+  "urlKind": "mapsApi",
+  "route": "第1段(verify-gbp.mjs)で確認済み",
+  "verdict": "一致",
+  "verdictReason": "手がかり: 電話＋住所(番地まで)。電話が一致／店名: n/a(シート「045-531-2370」/ マップ「西方寺」)／住所(シート): exact・町名・番地とも一致",
+  "place": {
+    "name": "西方寺",
+    "address": "神奈川県横浜市港北区新羽町２５８６",
+    "category": "仏教寺院",
+    "lat": 35.5276893,
+    "lng": 139.6070732,
+    "gbpUrl": "https://maps.google.com/?cid=5323189156766403328",
+    "phone": "045-531-2370",
+    "website": "https://saihouji-yokohama.com/",
+    "hours": {
+      "月": "09:00–17:00",
+      "火": "09:00–17:00",
+      "水": "09:00–17:00",
+      "木": "09:00–17:00",
+      "金": "09:00–17:00",
+      "土": "09:00–17:00",
+      "日": "09:00–17:00"
+    },
+    "reserveLinks": [],
+    "statusSignals": [],
+    "closedSignal": false
+  },
+  "fetchedAt": "2026-11-09T04:02:27.973Z"
+}

@@ -1,0 +1,208 @@
+{
+  "key": "tri-stay-434",
+  "headline": "兵庫県丹波市春日町、JR黒井駅から徒歩5分にある宿泊施設。洋室・和室の14室を持ち、自家農園の素材を使った手作り料理と1階大宴会場を備える。",
+  "lede": "丹波市にある「フジヤホテル」です。JR福知山線の黒井駅から徒歩5分、舞鶴若狭自動車道の春日ICから車5分という立地にあります。客室は洋室シングルと和室を合わせて14室で、最大35人が宿泊できます。自家農園で育てた旬の素材を使った手作り料理を出しており、朝食には和食セットと洋食セットの2種類があります。周辺にはゴルフ場・温泉・釣堀りなどの娯楽施設が多数あり、大阪・神戸から車で約90分の位置にあるため、家族や仲間との宿泊に使われます。駐車場は40台分を確保しており、バスでの来館にも対応しています。",
+  "sections": [
+    {
+      "heading": "客室の種類と数",
+      "body": "客室は全14室で、最大35人が宿泊できます。洋室シングルはユニットバス・トイレ付きです。和室は8〜9畳タイプで、バス・トイレは共用です。全室に冷暖房・テレビ・衛星放送・お茶セットが備わっており、無線LANによるインターネット接続も可能です。ドライヤーは貸出対応です。"
+    },
+    {
+      "heading": "食事",
+      "body": "朝食は和食セットと洋食セットの2種類があります。夕食はボリュームたっぷりの内容で、自家農園で育てた旬の素材を使った手作り料理が中心です。宴会のプランも用意しており、1階の大宴会場では忘年会・新年会・歓送迎会・結婚式2次会などのパーティーが開けます。大宴会場の収容は最大35人です。"
+    },
+    {
+      "heading": "館内",
+      "body": "館内には大小のお風呂が1つずつあります。ご利用状況によって、どちらかの浴場に案内されるか、グループによる貸切風呂での入浴が可能です。コインランドリーも設置されており、連泊での利用に便利です。駐車場は40台分で、観光バスも駐車できます。"
+    },
+    {
+      "heading": "行き方と使い方",
+      "body": "最寄り駅はJR福知山線の黒井駅で、徒歩5分です。車の場合は舞鶴若狭自動車道の春日ICから5分です。大阪・神戸からは車で約90分の距離です。周辺にはゴルフ場・温泉・釣堀りなどの娯楽施設が多数あります。近くには黒井城跡の高石垣・七間堀、春日局生誕地の碑、興禅寺といった史跡もあります。チェックインは16:00から、チェックアウトは10:00までです。予約は公式サイトから行えます。"
+    }
+  ],
+  "rooms": [
+    {
+      "name": "洋室シングル（ユニットバス・トイレ付）"
+    },
+    {
+      "name": "和室8〜9畳（バス・トイレなし）"
+    }
+  ],
+  "menus": [
+    {
+      "name": "朝食（和食セット）"
+    },
+    {
+      "name": "朝食（洋食セット）"
+    },
+    {
+      "name": "夕食"
+    }
+  ],
+  "tags": [],
+  "facts": [
+    {
+      "claim": "住所は兵庫県丹波市春日町黒井489-3",
+      "source": "https://maps.google.com/?cid=17661439792507018440",
+      "quote": "兵庫県丹波市春日町黒井４８９−３",
+      "checkedAt": "2026-11-09"
+    },
+    {
+      "claim": "電話番号は0795-74-0029",
+      "source": "https://maps.google.com/?cid=17661439792507018440",
+      "quote": "0795-74-0029",
+      "checkedAt": "2026-11-09"
+    },
+    {
+      "claim": "JR福知山線の黒井駅から徒歩5分",
+      "source": "http://fujiya-htl.com/",
+      "quote": "JR福知山線 黒井駅下車 徒歩5分",
+      "checkedAt": "2026-11-09"
+    },
+    {
+      "claim": "舞鶴若狭自動車道の春日ICから車5分",
+      "source": "http://fujiya-htl.com/",
+      "quote": "舞鶴若狭自動車道 春日ICより5分",
+      "checkedAt": "2026-11-09"
+    },
+    {
+      "claim": "客室は14室で最大35人が宿泊できる",
+      "source": "https://www.tambacity-kankou.jp/shop/shop-1315/",
+      "quote": "１4室　[収容]　３５人",
+      "checkedAt": "2026-11-09"
+    },
+    {
+      "claim": "洋室シングルはユニットバス・トイレ付き",
+      "source": "https://hotel.travel.rakuten.co.jp/hotelinfo/plan/7882",
+      "quote": "洋室シングル（ユニットバス・トイレ付）",
+      "checkedAt": "2026-11-09"
+    },
+    {
+      "claim": "和室は8〜9畳でバス・トイレなし",
+      "source": "https://hotel.travel.rakuten.co.jp/hotelinfo/plan/7882",
+      "quote": "和室8〜9畳（バス・トイレなし）",
+      "checkedAt": "2026-11-09"
+    },
+    {
+      "claim": "全室に無線LANによるインターネット接続が可能",
+      "source": "https://onsen.nifty.com/tanba-onsen/onsen022712/",
+      "quote": "テレビ、衛星放送、有線、電話、無線LAN、お茶セット",
+      "checkedAt": "2026-11-09"
+    },
+    {
+      "claim": "ドライヤーは貸出対応",
+      "source": "https://onsen.nifty.com/tanba-onsen/onsen022712/",
+      "quote": "ドライヤー（貸出）",
+      "checkedAt": "2026-11-09"
+    },
+    {
+      "claim": "朝食は和食セットと洋食セットの2種類がある",
+      "source": "http://fujiya-htl.com/",
+      "quote": "朝食（洋食セット）　朝食（和食セット）",
+      "checkedAt": "2026-11-09"
+    },
+    {
+      "claim": "夕食はボリュームたっぷりの内容",
+      "source": "http://fujiya-htl.com/",
+      "quote": "ボリュームたっぷりの夕食",
+      "checkedAt": "2026-11-09"
+    },
+    {
+      "claim": "自家農園の旬素材を使った手作り料理を提供している",
+      "source": "https://www.tambacity-kankou.jp/shop/shop-1315/",
+      "quote": "自家農園の旬素材で手作りしたお料理が好評",
+      "checkedAt": "2026-11-09"
+    },
+    {
+      "claim": "1階大宴会場で忘年会・新年会・歓送迎会・パーティーに対応している",
+      "source": "https://www.tambacity-kankou.jp/shop/shop-1315/",
+      "quote": "各種宴会（忘年会・新年会・歓送迎会）・パーティー（結婚式2次会）などを1階大宴会場にてご利用いただけます",
+      "checkedAt": "2026-11-09"
+    },
+    {
+      "claim": "大小のお風呂が1つずつあり、貸切風呂での入浴も可能",
+      "source": "https://hotel.travel.rakuten.co.jp/hotelinfo/plan/7882",
+      "quote": "大小のお風呂が１つずつございます。ご利用状況により、どちらかの浴場をご案内または、グループによる【貸切風呂】のご入浴が可能",
+      "checkedAt": "2026-11-09"
+    },
+    {
+      "claim": "コインランドリーがある",
+      "source": "https://onsen.nifty.com/tanba-onsen/onsen022712/",
+      "quote": "コインランドリー（有料）",
+      "checkedAt": "2026-11-09"
+    },
+    {
+      "claim": "駐車場は40台でバスも駐車可能",
+      "source": "https://www.tambacity-kankou.jp/shop/shop-1315/",
+      "quote": "駐車場：40台（バス可）",
+      "checkedAt": "2026-11-09"
+    },
+    {
+      "claim": "周辺にゴルフ場・温泉・釣堀りなどの娯楽施設が多数ある",
+      "source": "http://fujiya-htl.com/",
+      "quote": "周辺にはゴルフ場・温泉・釣堀りなど、娯楽施設が多数",
+      "checkedAt": "2026-11-09"
+    },
+    {
+      "claim": "近くに黒井城跡の高石垣・七間堀がある",
+      "source": "https://jp.trip.com/hotels/tanba-hotel-detail-17514823/fujiya-hotel/",
+      "quote": "高石垣・七間堀",
+      "checkedAt": "2026-11-09"
+    },
+    {
+      "claim": "大阪・神戸から車で約90分",
+      "source": "https://hotel.travel.rakuten.co.jp/hotelinfo/plan/7882",
+      "quote": "大阪・神戸から約90分",
+      "checkedAt": "2026-11-09"
+    },
+    {
+      "claim": "チェックインは16:00から",
+      "source": "https://onsen.nifty.com/tanba-onsen/onsen022712/",
+      "quote": "チェックイン16:00",
+      "checkedAt": "2026-11-09"
+    },
+    {
+      "claim": "チェックアウトは10:00まで",
+      "source": "https://onsen.nifty.com/tanba-onsen/onsen022712/",
+      "quote": "チェックアウト10:00",
+      "checkedAt": "2026-11-09"
+    },
+    {
+      "claim": "公式サイトから予約できる",
+      "source": "http://fujiya-htl.com/",
+      "quote": "丹波でのご宿泊はフジヤホテルで",
+      "checkedAt": "2026-11-09"
+    }
+  ],
+  "sources": [
+    {
+      "label": "公式サイト",
+      "url": "http://fujiya-htl.com/"
+    },
+    {
+      "label": "丹波市観光協会",
+      "url": "https://www.tambacity-kankou.jp/shop/shop-1315/"
+    },
+    {
+      "label": "楽天トラベル",
+      "url": "https://hotel.travel.rakuten.co.jp/hotelinfo/plan/7882"
+    },
+    {
+      "label": "ニフティ温泉",
+      "url": "https://onsen.nifty.com/tanba-onsen/onsen022712/"
+    },
+    {
+      "label": "Trip.com",
+      "url": "https://jp.trip.com/hotels/tanba-hotel-detail-17514823/fujiya-hotel/"
+    },
+    {
+      "label": "じゃらんnet",
+      "url": "https://www.jalan.net/yad380950/"
+    },
+    {
+      "label": "Google マップ",
+      "url": "https://maps.google.com/?cid=17661439792507018440"
+    }
+  ],
+  "notes": "automation/v2/write.mjs が 2026-11-09 に claude -p --model sonnet で作成。事実の裏取り: 22/24 件(quote が出どころの内容に合うもの。言い換え可)。裏取りに通らなかった facts は載せていない。"
+}

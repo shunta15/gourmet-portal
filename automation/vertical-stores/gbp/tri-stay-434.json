@@ -1,0 +1,32 @@
+{
+  "tab": "トリニティアポ",
+  "tabEn": "tri-stay",
+  "row": 434,
+  "sheet": {
+    "name": "フジヤホテル",
+    "address": "",
+    "url": "https://www.google.com/maps/search/?api=1&query=%E3%83%95%E3%82%B8%E3%83%A4%E3%83%9B%E3%83%86%E3%83%AB%20079-574-0029%20",
+    "type": "宿泊",
+    "d1": "",
+    "d2": ""
+  },
+  "urlKind": "mapsApi",
+  "route": "第1段(verify-gbp.mjs)で確認済み",
+  "verdict": "一致",
+  "verdictReason": "手がかり: 店名＋電話。電話が一致／店名: exact(シート「フジヤホテル」/ マップ「フジヤホテル」)",
+  "place": {
+    "name": "フジヤホテル",
+    "address": "兵庫県丹波市春日町黒井４８９−３",
+    "category": null,
+    "lat": 35.171793,
+    "lng": 135.096049,
+    "gbpUrl": "https://maps.google.com/?cid=17661439792507018440",
+    "phone": "0795-74-0029",
+    "website": "http://fujiya-htl.com/",
+    "hours": null,
+    "reserveLinks": [],
+    "statusSignals": [],
+    "closedSignal": false
+  },
+  "fetchedAt": "2026-11-09T04:01:46.687Z"
+}

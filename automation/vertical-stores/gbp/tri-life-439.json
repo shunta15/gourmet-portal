@@ -1,0 +1,32 @@
+{
+  "tab": "トリニティアポ",
+  "tabEn": "tri-life",
+  "row": 439,
+  "sheet": {
+    "name": "巽神社",
+    "address": "",
+    "url": "https://www.google.com/maps/search/?api=1&query=%E5%B7%BD%E7%A5%9E%E7%A4%BE%2006-6757-0545%20",
+    "type": "その他",
+    "d1": "",
+    "d2": ""
+  },
+  "urlKind": "mapsApi",
+  "route": "第1段(verify-gbp.mjs)で確認済み",
+  "verdict": "一致",
+  "verdictReason": "手がかり: 店名＋電話＋住所(番地まで)。電話が一致／店名: exact(シート「巽神社」/ マップ「巽神社」)／住所(シート): exact・町名・番地とも一致",
+  "place": {
+    "name": "巽神社",
+    "address": "大阪府大阪市生野区巽南３丁目１７−１９",
+    "category": "神社",
+    "lat": 34.64176,
+    "lng": 135.5540339,
+    "gbpUrl": "https://maps.google.com/?cid=5025439553211726622",
+    "phone": "06-6757-0545",
+    "website": "http://www7b.biglobe.ne.jp/tatsumi_jinja/",
+    "hours": null,
+    "reserveLinks": [],
+    "statusSignals": [],
+    "closedSignal": false
+  },
+  "fetchedAt": "2026-11-09T04:04:36.223Z"
+}

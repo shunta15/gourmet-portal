@@ -1,0 +1,40 @@
+{
+  "tab": "トリニティアポ",
+  "tabEn": "tri-life",
+  "row": 436,
+  "sheet": {
+    "name": "多賀神社",
+    "address": "",
+    "url": "https://www.google.com/maps/search/?api=1&query=%E5%A4%9A%E8%B3%80%E7%A5%9E%E7%A4%BE%20089-522-3444%20%E3%80%92798-0010%20%E6%84%9B%E5%AA%9B%E7%9C%8C%E5%AE%87%E5%92%8C%E5%B3%B6%E5%B8%82%E8%97%A4%E6%B1%9F%EF%BC%91%EF%BC%93%EF%BC%94%EF%BC%90",
+    "type": "神社",
+    "d1": "",
+    "d2": ""
+  },
+  "urlKind": "mapsApi",
+  "route": "第1段(verify-gbp.mjs)で確認済み",
+  "verdict": "一致",
+  "verdictReason": "手がかり: 電話＋住所(番地まで)。電話が一致／店名: different(シート「多賀神社」/ マップ「凸凹神堂」)／住所(シート): exact・町名・番地とも一致",
+  "place": {
+    "name": "凸凹神堂",
+    "address": "愛媛県宇和島市藤江１３４０",
+    "category": "博物館",
+    "lat": 33.2289051,
+    "lng": 132.5619075,
+    "gbpUrl": "https://maps.google.com/?cid=3222356541904809087",
+    "phone": "0895-22-3444",
+    "website": null,
+    "hours": {
+      "月": "08:00–17:00",
+      "火": "08:00–17:00",
+      "水": "08:00–17:00",
+      "木": "08:00–17:00",
+      "金": "08:00–17:00",
+      "土": "08:00–17:00",
+      "日": "08:00–17:00"
+    },
+    "reserveLinks": [],
+    "statusSignals": [],
+    "closedSignal": false
+  },
+  "fetchedAt": "2026-11-09T04:03:15.093Z"
+}

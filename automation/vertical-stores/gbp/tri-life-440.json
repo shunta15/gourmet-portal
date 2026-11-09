@@ -1,0 +1,40 @@
+{
+  "tab": "トリニティアポ",
+  "tabEn": "tri-life",
+  "row": 440,
+  "sheet": {
+    "name": "七宮神社",
+    "address": "",
+    "url": "https://www.google.com/maps/search/?api=1&query=%E4%B8%83%E5%AE%AE%E7%A5%9E%E7%A4%BE%20078-671-3338%20%E3%80%92652-0831%20%E5%85%B5%E5%BA%AB%E7%9C%8C%E7%A5%9E%E6%88%B8%E5%B8%82%E5%85%B5%E5%BA%AB%E5%8C%BA%E4%B8%83%E5%AE%AE%E7%94%BA%EF%BC%92%E4%B8%81%E7%9B%AE%EF%BC%93%E2%88%92%EF%BC%92%EF%BC%91",
+    "type": "神社",
+    "d1": "",
+    "d2": ""
+  },
+  "urlKind": "mapsApi",
+  "route": "第1段(verify-gbp.mjs)で確認済み",
+  "verdict": "一致",
+  "verdictReason": "手がかり: 店名＋電話＋住所(番地まで)。電話が一致／店名: exact(シート「七宮神社」/ マップ「七宮神社」)／住所(シート): exact・町名・番地とも一致",
+  "place": {
+    "name": "七宮神社",
+    "address": "兵庫県神戸市兵庫区七宮町２丁目３−２１",
+    "category": "神社",
+    "lat": 34.6718862,
+    "lng": 135.175826,
+    "gbpUrl": "https://maps.google.com/?cid=8875780242098537245",
+    "phone": "078-671-3338",
+    "website": "https://tabiiro.jp/leisure/s/215885-kobe-shitinomiya/",
+    "hours": {
+      "月": "09:00–16:30",
+      "火": "09:00–16:30",
+      "水": "09:00–16:30",
+      "木": "09:00–16:30",
+      "金": "09:00–16:30",
+      "土": "09:00–16:30",
+      "日": "09:00–16:30"
+    },
+    "reserveLinks": [],
+    "statusSignals": [],
+    "closedSignal": false
+  },
+  "fetchedAt": "2026-11-09T04:05:23.603Z"
+}
