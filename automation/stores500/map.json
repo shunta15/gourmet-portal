@@ -2333,5 +2333,25 @@
     "articleId": "あっぷっるりんご飴専門店",
     "sheetName": "あっぷっる",
     "mapsUrl": "https://maps.google.com/?cid=13131260062276303985"
+  },
+  {
+    "articleId": "TESORO",
+    "sheetName": "TESORO",
+    "mapsUrl": "https://maps.google.com/?cid=10739798661183322787"
+  },
+  {
+    "articleId": "焼き鳥えにし",
+    "sheetName": "焼き鳥 えにし",
+    "mapsUrl": "https://maps.google.com/?cid=17061863411974127681"
+  },
+  {
+    "articleId": "Loiseau(ロワゾー)",
+    "sheetName": "L'oiseau(ロワゾー)",
+    "mapsUrl": "https://maps.google.com/?cid=3085129619803155715"
+  },
+  {
+    "articleId": "天よし亭",
+    "sheetName": "天よし亭",
+    "mapsUrl": "https://maps.google.com/?cid=8565161143799349232"
   }
 ]

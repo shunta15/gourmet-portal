@@ -3625,5 +3625,36 @@
       "desc は lede から事実の文を選べず、事実から作った定型文",
       "cuisine は GBPカテゴリ"
     ]
+  },
+  "r907": {
+    "articleId": "TESORO",
+    "name": "TESORO",
+    "warnings": [
+      "desc は lede から事実の文を選べず、事実から作った定型文",
+      "cuisine は GBPカテゴリ"
+    ]
+  },
+  "r908": {
+    "articleId": "焼き鳥えにし",
+    "name": "焼き鳥 えにし",
+    "warnings": [
+      "cuisine は GBPカテゴリ"
+    ]
+  },
+  "r909": {
+    "articleId": "Loiseau(ロワゾー)",
+    "name": "L'oiseau(ロワゾー)",
+    "warnings": [
+      "desc は lede から事実の文を選べず、事実から作った定型文",
+      "cuisine は GBPカテゴリ"
+    ]
+  },
+  "r910": {
+    "articleId": "天よし亭",
+    "name": "天よし亭",
+    "warnings": [
+      "desc は lede から事実の文を選べず、事実から作った定型文",
+      "cuisine は GBPカテゴリ"
+    ]
   }
 }

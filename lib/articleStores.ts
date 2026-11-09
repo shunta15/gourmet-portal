@@ -22149,6 +22149,198 @@ export const ARTICLE_STORES: Restaurant[] = [
       "ランチ"
     ],
     "featureId": "あっぷっるりんご飴専門店"
+  },
+  {
+    "id": "r907",
+    "name": "TESORO",
+    "cuisine": "イタリア料理店",
+    "area": "神奈川県・横浜市中区",
+    "region": "kanagawa",
+    "shape": "square",
+    "image": "/restaurants/teleapo-TESORO/hero.jpg",
+    "heroImages": [
+      "/restaurants/teleapo-TESORO/hero.jpg",
+      "/restaurants/teleapo-TESORO/point1.jpg",
+      "/restaurants/teleapo-TESORO/point2.jpg",
+      "/restaurants/teleapo-TESORO/point3.jpg"
+    ],
+    "gallery": [
+      "/restaurants/teleapo-TESORO/hero.jpg",
+      "/restaurants/teleapo-TESORO/point1.jpg",
+      "/restaurants/teleapo-TESORO/point2.jpg",
+      "/restaurants/teleapo-TESORO/point3.jpg"
+    ],
+    "desc": "神奈川県横浜市中区のイタリア料理店。",
+    "address": "神奈川県横浜市中区弁天通3丁目41 横浜エクセレント2 101",
+    "hours": "月〜金 17:30–23:30 / 土 12:00–15:00, 17:30–23:30 / 日 12:00–15:00, 17:30–22:30",
+    "closed": "なし（Googleマップの営業時間による）",
+    "seats": "—（訪問前に公式確認）",
+    "nearest": "—",
+    "instagram": "https://www.instagram.com/tesoro.bashamichi",
+    "source": {
+      "label": "Google ビジネスプロフィール",
+      "url": "https://maps.google.com/?cid=10739798661183322787"
+    },
+    "body": [
+      "TESOROは、神奈川県横浜市中区にあるお店です。業態は「イタリア料理店」、所在地は神奈川県横浜市中区弁天通3丁目41 横浜エクセレント2 101です。マチノワ編集部の特集記事では、「月替わりのコース料理と神奈川県産食材」・「湘南みやじ豚の自家製グアンチャーレと黒トリュフのカルボナーラ」などを取り上げています。",
+      "営業時間は月〜金 17:30–23:30 / 土 12:00–15:00, 17:30–23:30 / 日 12:00–15:00, 17:30–22:30で、定休日はありません（Googleマップの営業時間による）。営業時間や価格は変わることがあるため、訪問前に公式サイトやSNS、お電話でご確認ください。"
+    ],
+    "highlights": [
+      "月替わりのコース料理と神奈川県産食材",
+      "湘南みやじ豚の自家製グアンチャーレと黒トリュフのカルボナーラ",
+      "1人で運営するカウンターの1日3組限定"
+    ],
+    "tags": [
+      "イタリア料理店",
+      "中区",
+      "ランチ"
+    ],
+    "featureId": "TESORO"
+  },
+  {
+    "id": "r908",
+    "name": "焼き鳥 えにし",
+    "cuisine": "焼き鳥店",
+    "area": "大分県・中津市",
+    "region": "oita",
+    "shape": "square",
+    "image": "/restaurants/teleapo-焼き鳥えにし/hero.jpg",
+    "heroImages": [
+      "/restaurants/teleapo-焼き鳥えにし/hero.jpg",
+      "/restaurants/teleapo-焼き鳥えにし/point1.jpg",
+      "/restaurants/teleapo-焼き鳥えにし/point2.jpg",
+      "/restaurants/teleapo-焼き鳥えにし/point3.jpg"
+    ],
+    "gallery": [
+      "/restaurants/teleapo-焼き鳥えにし/hero.jpg",
+      "/restaurants/teleapo-焼き鳥えにし/point1.jpg",
+      "/restaurants/teleapo-焼き鳥えにし/point2.jpg",
+      "/restaurants/teleapo-焼き鳥えにし/point3.jpg"
+    ],
+    "desc": "大分県中津市の中央町は、JR中津駅から徒歩圏内に飲食店が集まる一帯である。焼き鳥 えにしは、この中央町1丁目に構える焼き鳥店で、カウンター6席と小上がりテーブル2卓という小ぢんまりとした店内で串を出している。",
+    "address": "大分県中津市中央町1丁目4-24",
+    "hours": "月・火・木〜日 17:30–00:00",
+    "closed": "水曜日",
+    "seats": "カウンター6席、小上がりテーブル2卓",
+    "nearest": "—",
+    "phone": "0979-24-8560",
+    "source": {
+      "label": "Google ビジネスプロフィール",
+      "url": "https://maps.google.com/?cid=17061863411974127681"
+    },
+    "body": [
+      "焼き鳥 えにしは、大分県中津市にあるお店です。業態は「焼き鳥店」、所在地は大分県中津市中央町1丁目4-24です。マチノワ編集部の特集記事では、「手ごねつくねと炭火の串」・「山芋の唐揚げとしらすピザ」などを取り上げています。",
+      "営業時間は月・火・木〜日 17:30–00:00、定休日は水曜日です（Googleマップの営業時間による）。席はカウンター6席、小上がりテーブル2卓。営業時間や価格は変わることがあるため、訪問前に公式サイトやSNS、お電話でご確認ください。"
+    ],
+    "highlights": [
+      "手ごねつくねと炭火の串",
+      "山芋の唐揚げとしらすピザ",
+      "カウンター6席と小上がり2卓の小さな店内"
+    ],
+    "tags": [
+      "焼き鳥店",
+      "中津市",
+      "深夜営業"
+    ],
+    "featureId": "焼き鳥えにし"
+  },
+  {
+    "id": "r909",
+    "name": "L'oiseau(ロワゾー)",
+    "cuisine": "焼き鳥店",
+    "area": "東京都・中央区",
+    "region": "tokyo",
+    "shape": "square",
+    "image": "/restaurants/teleapo-Loiseau(ロワゾー)/hero.jpg",
+    "heroImages": [
+      "/restaurants/teleapo-Loiseau(ロワゾー)/hero.jpg",
+      "/restaurants/teleapo-Loiseau(ロワゾー)/point1.jpg",
+      "/restaurants/teleapo-Loiseau(ロワゾー)/point2.jpg",
+      "/restaurants/teleapo-Loiseau(ロワゾー)/point3.jpg",
+      "/restaurants/teleapo-Loiseau(ロワゾー)/point4.jpg"
+    ],
+    "gallery": [
+      "/restaurants/teleapo-Loiseau(ロワゾー)/hero.jpg",
+      "/restaurants/teleapo-Loiseau(ロワゾー)/point1.jpg",
+      "/restaurants/teleapo-Loiseau(ロワゾー)/point2.jpg",
+      "/restaurants/teleapo-Loiseau(ロワゾー)/point3.jpg",
+      "/restaurants/teleapo-Loiseau(ロワゾー)/point4.jpg"
+    ],
+    "desc": "東京都中央区の焼き鳥店。",
+    "address": "東京都中央区日本橋蛎殻町1丁目24-4 井川ビル 1F",
+    "hours": "月〜金 11:30–13:30, 18:00–23:00 / 土 17:00–23:00",
+    "closed": "日曜日",
+    "seats": "—（訪問前に公式確認）",
+    "nearest": "—",
+    "phone": "03-6264-8077",
+    "source": {
+      "label": "Google ビジネスプロフィール",
+      "url": "https://maps.google.com/?cid=3085129619803155715"
+    },
+    "body": [
+      "L'oiseau(ロワゾー)は、東京都中央区にあるお店です。業態は「焼き鳥店」、所在地は東京都中央区日本橋蛎殻町1丁目24-4 井川ビル 1Fです。マチノワ編集部の特集記事では、「天城軍鶏を国産備長炭で串打ちする焼き鳥」・「フレンチの技法で仕上げるシャルキュトリーと鶏料理」などを取り上げています。",
+      "営業時間は月〜金 11:30–13:30, 18:00–23:00 / 土 17:00–23:00、定休日は日曜日です（Googleマップの営業時間による）。営業時間や価格は変わることがあるため、訪問前に公式サイトやSNS、お電話でご確認ください。"
+    ],
+    "highlights": [
+      "天城軍鶏を国産備長炭で串打ちする焼き鳥",
+      "フレンチの技法で仕上げるシャルキュトリーと鶏料理",
+      "月替わりの自然派ワインと仁井田本家の日本酒",
+      "カウンター6席とテーブル席、コースと平日ランチ"
+    ],
+    "tags": [
+      "焼き鳥店",
+      "中央区",
+      "貸切可",
+      "ランチ"
+    ],
+    "featureId": "Loiseau(ロワゾー)"
+  },
+  {
+    "id": "r910",
+    "name": "天よし亭",
+    "cuisine": "和食店",
+    "area": "富山県・射水市",
+    "region": "toyama",
+    "shape": "square",
+    "image": "/restaurants/teleapo-天よし亭/hero.jpg",
+    "heroImages": [
+      "/restaurants/teleapo-天よし亭/hero.jpg",
+      "/restaurants/teleapo-天よし亭/point1.jpg",
+      "/restaurants/teleapo-天よし亭/point2.jpg",
+      "/restaurants/teleapo-天よし亭/point3.jpg"
+    ],
+    "gallery": [
+      "/restaurants/teleapo-天よし亭/hero.jpg",
+      "/restaurants/teleapo-天よし亭/point1.jpg",
+      "/restaurants/teleapo-天よし亭/point2.jpg",
+      "/restaurants/teleapo-天よし亭/point3.jpg"
+    ],
+    "desc": "富山県射水市の和食店。",
+    "address": "富山県射水市八塚225-1",
+    "hours": "月〜水・金〜日 11:30–14:00, 17:00–21:00",
+    "closed": "木曜日",
+    "seats": "100席",
+    "nearest": "—",
+    "phone": "050-5890-8558",
+    "source": {
+      "label": "Google ビジネスプロフィール",
+      "url": "https://maps.google.com/?cid=8565161143799349232"
+    },
+    "body": [
+      "天よし亭は、富山県射水市にあるお店です。業態は「和食店」、所在地は富山県射水市八塚225-1です。マチノワ編集部の特集記事では、「富山湾・氷見産の魚介を使う天ぷら、刺身、うなぎ」・「宴会コースと個室の椅子席」などを取り上げています。",
+      "営業時間は月〜水・金〜日 11:30–14:00, 17:00–21:00、定休日は木曜日です（Googleマップの営業時間による）。席は100席。営業時間や価格は変わることがあるため、訪問前に公式サイトやSNS、お電話でご確認ください。"
+    ],
+    "highlights": [
+      "富山湾・氷見産の魚介を使う天ぷら、刺身、うなぎ",
+      "宴会コースと個室の椅子席",
+      "地酒の品揃え"
+    ],
+    "tags": [
+      "和食店",
+      "射水市",
+      "ランチ"
+    ],
+    "featureId": "天よし亭"
   }
 ];
 
@@ -22616,7 +22808,11 @@ export const ARTICLE_STORE_FEATURE_IDS: Record<string, string> = {
   "r903": "BARBEARS",
   "r904": "さなえ食堂",
   "r905": "コルテージュ",
-  "r906": "あっぷっるりんご飴専門店"
+  "r906": "あっぷっるりんご飴専門店",
+  "r907": "TESORO",
+  "r908": "焼き鳥えにし",
+  "r909": "Loiseau(ロワゾー)",
+  "r910": "天よし亭"
 };
 
 /** 特集記事ID → 店舗ID */
@@ -23083,5 +23279,9 @@ export const ARTICLE_STORE_ID_BY_FEATURE: Record<string, string> = {
   "BARBEARS": "r903",
   "さなえ食堂": "r904",
   "コルテージュ": "r905",
-  "あっぷっるりんご飴専門店": "r906"
+  "あっぷっるりんご飴専門店": "r906",
+  "TESORO": "r907",
+  "焼き鳥えにし": "r908",
+  "Loiseau(ロワゾー)": "r909",
+  "天よし亭": "r910"
 };

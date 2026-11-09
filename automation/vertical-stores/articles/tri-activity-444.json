@@ -1,0 +1,242 @@
+{
+  "key": "tri-activity-444",
+  "headline": "愛知県犬山市の入鹿池畔にある、創業90年のレンタルボート店。ボートを借りてわかさぎ釣りやブラックバス釣りが楽しめる",
+  "lede": "犬山市にある「見晴茶屋」です。入鹿池のほとりに位置し、創業90年の歴史を持つレンタルボート店です。入鹿池ではわかさぎ釣りとブラックバス釣りの2種類が楽しめます。ボートは2人乗りの手漕ぎタイプとエレキ対応タイプ、3人乗りタイプのほか、寒冷期に使えるカバー付きの小型ドーム船もそろっています。竿やエサを含む釣り道具は一式レンタルできるため、手ぶらで訪れることができます。入鹿池を一望できる食事処も併設しており、釣りのあとに犬山名物のでんがくや菜めしでんがく定食などを楽しむことができます。",
+  "sections": [
+    {
+      "heading": "体験の内容と流れ",
+      "body": "ボートに乗って入鹿池に出艇し、わかさぎ釣りまたはブラックバス釣りを楽しむスタイルです。わかさぎ釣りのシーズンは毎年10月から3月まで。釣れたわかさぎは持ち帰ることができ、天ぷらや唐揚げとして調理できます。ブラックバス釣りは仕掛けで狙うスタイルで、釣り場ごとのポイントマップが店内に掲示されています。撒き餌とガソリン船外機は禁止です。乗船中はライフジャケットの着用が必須で、ボート内での立ち上がりも禁止されています。ラダーとメジャーボードは数量限定で貸し出しがあります。"
+    },
+    {
+      "heading": "対象と準備",
+      "body": "竿・仕掛け・エサを含む釣り道具はすべてレンタルできるため、初心者でも手ぶらで参加できます。3人乗りボートにエレキモーターを取り付ける場合は小型船舶免許が必要ですが、2人乗りの手漕ぎボートや11フィートのエレキ専用艇（32艇）は免許不要で利用できます。小型ドーム船は大人3名と小学生以下1名、または大人2名と小学生以下2名の定員で、最大総重量は240kgです。寒冷期でも船内から釣りができるカバー付きの構造になっています。"
+    },
+    {
+      "heading": "集合場所と行き方",
+      "body": "入鹿池のわかさぎ釣りは毎年10月から3月が最盛期です。春は桜が入鹿池周辺を彩り、ブラックバス釣りも盛んになります。店内では四季折々の入鹿池の風景を眺めながら食事もできます。女将特製の出汁が効いたカレーうどんや五平餅も提供しています。"
+    },
+    {
+      "heading": "行き方と使い方",
+      "body": "車でお越しの場合、中央自動車道・小牧東ICから約3kmで到着します。犬山駅からは車で尾張パークウェイ経由で約20分です。名古屋方面からは高速経由で約40分、一般道で約1時間が目安です。バスを利用する場合は、犬山駅東口から明治村行きの岐阜バスコミュニティに乗り、神尾バス停または明治村バス停で下車後、徒歩で約10分です。店舗の西側（明治村側）と東側に駐車場があり、繁忙期には臨時駐車場も開設されます。ボートの予約は電話にて受け付けており、WEB予約も公式サイトから利用できます。"
+    }
+  ],
+  "menus": [
+    {
+      "name": "2人乗り手漕ぎボート"
+    },
+    {
+      "name": "2人乗りエレキ対応ボート"
+    },
+    {
+      "name": "3人乗りボート"
+    },
+    {
+      "name": "小型ドーム船"
+    },
+    {
+      "name": "わかさぎ釣り"
+    },
+    {
+      "name": "ブラックバス釣り"
+    },
+    {
+      "name": "菜めしでんがく定食"
+    },
+    {
+      "name": "女将特製カレーうどん"
+    }
+  ],
+  "tags": [
+    {
+      "tag": "子連れ",
+      "factIndex": 8
+    },
+    {
+      "tag": "初心者歓迎",
+      "factIndex": 9
+    },
+    {
+      "tag": "手ぶらでOK",
+      "factIndex": 10
+    },
+    {
+      "tag": "駐車場あり",
+      "factIndex": 6
+    }
+  ],
+  "facts": [
+    {
+      "claim": "見晴茶屋は愛知県犬山市堤下60にある",
+      "source": "https://maps.google.com/?cid=17841837331151065805",
+      "quote": "愛知県犬山市堤下60",
+      "checkedAt": "2026-11-09"
+    },
+    {
+      "claim": "電話番号は0568-67-0705",
+      "source": "https://maps.google.com/?cid=17841837331151065805",
+      "quote": "0568-67-0705",
+      "checkedAt": "2026-11-09"
+    },
+    {
+      "claim": "定休日は不定休",
+      "source": "https://miharashichaya.com/about/",
+      "quote": "定休日 不定休",
+      "checkedAt": "2026-11-09"
+    },
+    {
+      "claim": "中央自動車道・小牧東ICから約3km",
+      "source": "https://miharashichaya.com/about/",
+      "quote": "中央自動車道:小牧東ICから約3Km",
+      "checkedAt": "2026-11-09"
+    },
+    {
+      "claim": "犬山駅東口から車で尾張パークウェイ経由で約20分",
+      "source": "https://miharashichaya.com/access/",
+      "quote": "犬山駅から車で尾張パークウェイ経由で約20分で到着",
+      "checkedAt": "2026-11-09"
+    },
+    {
+      "claim": "名古屋から高速経由で約40分、一般道で約1時間",
+      "source": "https://miharashichaya.com/access/",
+      "quote": "名古屋駅から車で高速経由で約40分、一般道で約1時間で到着",
+      "checkedAt": "2026-11-09"
+    },
+    {
+      "claim": "店舗西側（明治村側）と東側に駐車場があり、繁忙期には臨時駐車場を開設する",
+      "source": "https://miharashichaya.com/about/",
+      "quote": "店舗西側駐車場（明治村側） 店舗東側駐車場 繁忙期については、臨時駐車場を開設",
+      "checkedAt": "2026-11-09"
+    },
+    {
+      "claim": "岐阜バスコミュニティ（犬山駅東口から明治村行き）の神尾バス停または明治村バス停で下車後、徒歩約10分",
+      "source": "https://miharashichaya.com/about/",
+      "quote": "犬山駅東口駅より明治村行バス神尾バス停、明治村バス停下車徒歩約10分",
+      "checkedAt": "2026-11-09"
+    },
+    {
+      "claim": "小型ドーム船の定員は大人3名＋小学生以下1名、または大人2名＋小学生以下2名で最大総重量240kg",
+      "source": "https://miharashichaya.com/rental-items/",
+      "quote": "定員：大人3名+小学生以下1名、または大人2名+小学生以下2名 最大総重量：240kg",
+      "checkedAt": "2026-11-09"
+    },
+    {
+      "claim": "2人乗り手漕ぎボートと11フィートエレキ専用艇は免許不要で利用できる",
+      "source": "https://reserver.co.jp/shop/miharashi/",
+      "quote": "11フィートエレキ専用艇（32艇）：免許不要",
+      "checkedAt": "2026-11-09"
+    },
+    {
+      "claim": "釣り道具は一式レンタルできるため手ぶらで参加できる",
+      "source": "https://miharashichaya.com/wakasagi-tsuri/",
+      "quote": "手ぶらでお越しいただいても大丈夫",
+      "checkedAt": "2026-11-09"
+    },
+    {
+      "claim": "創業90年のレンタルボート店",
+      "source": "https://reserver.co.jp/shop/miharashi/",
+      "quote": "創業90年営業しているレンタルボート店",
+      "checkedAt": "2026-11-09"
+    },
+    {
+      "claim": "わかさぎ釣りのシーズンは毎年10月から3月まで",
+      "source": "https://miharashichaya.com/wakasagi-tsuri/",
+      "quote": "毎年10月から3月まで、愛知県犬山市の入鹿池ではワカサギ釣りが楽しめます",
+      "checkedAt": "2026-11-09"
+    },
+    {
+      "claim": "釣れたわかさぎは持ち帰り可能で、天ぷらや唐揚げとして調理できる",
+      "source": "https://inuyama.gr.jp/experience/detail/30/",
+      "quote": "釣ったワカサギは持ち帰り可能で、家庭で天ぷらや唐揚げとして調理できます",
+      "checkedAt": "2026-11-09"
+    },
+    {
+      "claim": "仕掛けの例として1号・6本針が使われ、エサは紅サシが一般的",
+      "source": "https://miharashichaya.com/choka/%e9%88%b4%e6%9c%a8%e3%81%95%e3%82%93%e3%81%a8%e5%b2%a1%e7%94%b0%e3%81%95%e3%82%93%ef%bc%88%e3%82%a4%e3%82%b7%e3%82%b0%e3%83%ad%e5%a4%a7%e6%a8%b9%e5%af%ba%e5%ba%97%e3%81%95%e3%82%93%ef%bc%89/",
+      "quote": "仕掛け 1号・6本針 えさ 紅サシ",
+      "checkedAt": "2026-11-09"
+    },
+    {
+      "claim": "小型ドーム船は寒冷期でも船内から釣りができるカバー付きの構造",
+      "source": "https://miharashichaya.com/rental-items/",
+      "quote": "寒くても安心のカバー付きで船内から釣りが可能",
+      "checkedAt": "2026-11-09"
+    },
+    {
+      "claim": "3人乗りボートにエレキモーターを取り付ける場合は小型船舶免許が必要",
+      "source": "https://miharashichaya.com/rental-items/",
+      "quote": "3人乗りボートのエレキセット利用には小型船舶免許が必要",
+      "checkedAt": "2026-11-09"
+    },
+    {
+      "claim": "撒き餌とガソリン船外機は禁止",
+      "source": "https://miharashichaya.com/rental-items/",
+      "quote": "撒き餌とガソリン船外機は禁止",
+      "checkedAt": "2026-11-09"
+    },
+    {
+      "claim": "乗船中はライフジャケットの着用が必須で、ボート内での立ち上がりは禁止",
+      "source": "https://miharashichaya.com/rental-items/",
+      "quote": "ライフジャケット着用必須 立ち上がり厳禁",
+      "checkedAt": "2026-11-09"
+    },
+    {
+      "claim": "入鹿池を一望できる食事処を併設し、犬山名物のでんがくや菜めしでんがく定食などを提供している",
+      "source": "https://miharashichaya.com/foods/",
+      "quote": "入鹿池を一望していただけます。犬山名物のでんがくと菜めしごはんの定食",
+      "checkedAt": "2026-11-09"
+    },
+    {
+      "claim": "女将特製の出汁が効いたカレーうどんとリピーター続出の五平餅も提供している",
+      "source": "https://miharashichaya.com/foods/",
+      "quote": "女将特製の出汁が効いたカレーうどん リピーター続出の五平餅",
+      "checkedAt": "2026-11-09"
+    },
+    {
+      "claim": "WEB予約を公式サイトから受け付けており、電話予約も利用できる",
+      "source": "https://miharashichaya.com/",
+      "quote": "WEB予約 calendar_month WEB予約",
+      "checkedAt": "2026-11-09"
+    },
+    {
+      "claim": "11フィートエレキ専用艇は32艇が用意されている",
+      "source": "https://reserver.co.jp/shop/miharashi/",
+      "quote": "11フィートエレキ専用艇（32艇）",
+      "checkedAt": "2026-11-09"
+    }
+  ],
+  "sources": [
+    {
+      "label": "公式サイト",
+      "url": "https://miharashichaya.com/"
+    },
+    {
+      "label": "公式サイト(お食事)",
+      "url": "https://miharashichaya.com/foods/"
+    },
+    {
+      "label": "公式サイト(見晴茶屋について)",
+      "url": "https://miharashichaya.com/about/"
+    },
+    {
+      "label": "公式サイト(アクセス)",
+      "url": "https://miharashichaya.com/access/"
+    },
+    {
+      "label": "公式サイト(レンタルボート&アイテム)",
+      "url": "https://miharashichaya.com/rental-items/"
+    },
+    {
+      "label": "犬山市観光協会",
+      "url": "https://inuyama.gr.jp/experience/detail/30/"
+    },
+    {
+      "label": "RESERVER",
+      "url": "https://reserver.co.jp/shop/miharashi/"
+    },
+    {
+      "label": "Google マップ",
+      "url": "https://maps.google.com/?cid=17841837331151065805"
+    }
+  ],
+  "notes": "automation/v2/write.mjs が 2026-11-09 に claude -p --model sonnet で作成。事実の裏取り: 23/24 件(quote が出どころの内容に合うもの。言い換え可)。裏取りに通らなかった facts は載せていない。"
+}

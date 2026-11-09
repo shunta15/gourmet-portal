@@ -1,0 +1,40 @@
+{
+  "tab": "トリニティアポ",
+  "tabEn": "tri-life",
+  "row": 449,
+  "sheet": {
+    "name": "日々神社",
+    "address": "",
+    "url": "https://www.google.com/maps/search/?api=1&query=%E6%97%A5%E3%80%85%E7%A5%9E%E7%A4%BE%20042-713-3788%20%E3%80%92252-0135%20%E7%A5%9E%E5%A5%88%E5%B7%9D%E7%9C%8C%E7%9B%B8%E6%A8%A1%E5%8E%9F%E5%B8%82%E7%B7%91%E5%8C%BA%E5%A4%A7%E5%B3%B6%EF%BC%92%EF%BC%92%EF%BC%95%EF%BC%90",
+    "type": "神社",
+    "d1": "",
+    "d2": ""
+  },
+  "urlKind": "mapsApi",
+  "route": "第1段(verify-gbp.mjs)で確認済み",
+  "verdict": "一致",
+  "verdictReason": "手がかり: 店名＋電話＋住所(番地まで)。電話が一致／店名: exact(シート「日々神社」/ マップ「日々神社」)／住所(シート): exact・町名・番地とも一致",
+  "place": {
+    "name": "日々神社",
+    "address": "神奈川県相模原市緑区大島２２５０",
+    "category": "神社",
+    "lat": 35.5698736,
+    "lng": 139.324042,
+    "gbpUrl": "https://maps.google.com/?cid=20799582091630562",
+    "phone": "042-713-3788",
+    "website": "http://www.hibijinja.or.jp/",
+    "hours": {
+      "月": "09:00–16:00",
+      "火": "09:00–16:00",
+      "水": "09:00–16:00",
+      "木": "09:00–16:00",
+      "金": "09:00–16:00",
+      "土": "09:00–16:00",
+      "日": "09:00–16:00"
+    },
+    "reserveLinks": [],
+    "statusSignals": [],
+    "closedSignal": false
+  },
+  "fetchedAt": "2026-11-09T08:11:45.187Z"
+}

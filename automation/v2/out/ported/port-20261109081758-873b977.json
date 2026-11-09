@@ -1,0 +1,107 @@
+{
+  "commit": "873b977a072db3a96666a983bc27f1cd2ecfbec4",
+  "source": "/Users/shunta/claude/gp-k-auto2",
+  "count": 9,
+  "added": [
+    {
+      "row": 411,
+      "name": "TESORO",
+      "key": "lk-gourmet-411",
+      "vertical": "グルメ",
+      "id": "r907",
+      "articleId": "TESORO",
+      "shopUrl": "https://machinowa.tokyo/restaurant/r907",
+      "articleUrl": "https://machinowa.tokyo/feature/TESORO",
+      "sheetUrl": "https://machinowa.tokyo/feature/TESORO"
+    },
+    {
+      "row": 442,
+      "name": "ノアノアチョークアート　ワークス大阪校【NOANOACHALKARTWORKS】",
+      "key": "tri-activity-442",
+      "vertical": "アクティビティ",
+      "id": "ac0046",
+      "articleId": "ac0046",
+      "shopUrl": "https://machinowa.tokyo/activity/shop/ac0046",
+      "articleUrl": "https://machinowa.tokyo/activity/article/ac0046",
+      "sheetUrl": "https://machinowa.tokyo/activity/article/ac0046"
+    },
+    {
+      "row": 443,
+      "name": "長尾天満宮",
+      "key": "tri-life-443",
+      "vertical": "くらし",
+      "id": "li0192",
+      "articleId": "li0192",
+      "shopUrl": "https://machinowa.tokyo/life/shop/li0192",
+      "articleUrl": "https://machinowa.tokyo/life/article/li0192",
+      "sheetUrl": "https://machinowa.tokyo/life/article/li0192"
+    },
+    {
+      "row": 444,
+      "name": "見晴茶屋",
+      "key": "tri-activity-444",
+      "vertical": "アクティビティ",
+      "id": "ac0047",
+      "articleId": "ac0047",
+      "shopUrl": "https://machinowa.tokyo/activity/shop/ac0047",
+      "articleUrl": "https://machinowa.tokyo/activity/article/ac0047",
+      "sheetUrl": "https://machinowa.tokyo/activity/article/ac0047"
+    },
+    {
+      "row": 445,
+      "name": "焼き鳥 えにし",
+      "key": "tri-gourmet-445",
+      "vertical": "グルメ",
+      "id": "r908",
+      "articleId": "焼き鳥えにし",
+      "shopUrl": "https://machinowa.tokyo/restaurant/r908",
+      "articleUrl": "https://machinowa.tokyo/feature/焼き鳥えにし",
+      "sheetUrl": "https://machinowa.tokyo/feature/焼き鳥えにし"
+    },
+    {
+      "row": 446,
+      "name": "L'oiseau(ロワゾー)",
+      "key": "tri-gourmet-446",
+      "vertical": "グルメ",
+      "id": "r909",
+      "articleId": "Loiseau(ロワゾー)",
+      "shopUrl": "https://machinowa.tokyo/restaurant/r909",
+      "articleUrl": "https://machinowa.tokyo/feature/Loiseau(ロワゾー)",
+      "sheetUrl": "https://machinowa.tokyo/feature/Loiseau(ロワゾー)"
+    },
+    {
+      "row": 447,
+      "name": "三津厳島神社",
+      "key": "tri-life-447",
+      "vertical": "くらし",
+      "id": "li0193",
+      "articleId": "li0193",
+      "shopUrl": "https://machinowa.tokyo/life/shop/li0193",
+      "articleUrl": "https://machinowa.tokyo/life/article/li0193",
+      "sheetUrl": "https://machinowa.tokyo/life/article/li0193"
+    },
+    {
+      "row": 448,
+      "name": "天よし亭",
+      "key": "tri-gourmet-448",
+      "vertical": "グルメ",
+      "id": "r910",
+      "articleId": "天よし亭",
+      "shopUrl": "https://machinowa.tokyo/restaurant/r910",
+      "articleUrl": "https://machinowa.tokyo/feature/天よし亭",
+      "sheetUrl": "https://machinowa.tokyo/feature/天よし亭"
+    },
+    {
+      "row": 449,
+      "name": "日々神社",
+      "key": "tri-life-449",
+      "vertical": "くらし",
+      "id": "li0194",
+      "articleId": "li0194",
+      "shopUrl": "https://machinowa.tokyo/life/shop/li0194",
+      "articleUrl": "https://machinowa.tokyo/life/article/li0194",
+      "sheetUrl": "https://machinowa.tokyo/life/article/li0194"
+    }
+  ],
+  "skipped": []
+}

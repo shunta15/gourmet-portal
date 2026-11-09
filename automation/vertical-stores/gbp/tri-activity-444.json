@@ -1,0 +1,40 @@
+{
+  "tab": "トリニティアポ",
+  "tabEn": "tri-activity",
+  "row": 444,
+  "sheet": {
+    "name": "見晴茶屋",
+    "address": "",
+    "url": "https://www.google.com/maps/search/?api=1&query=%E8%A6%8B%E6%99%B4%E8%8C%B6%E5%B1%8B%20056-867-0705%20%E3%80%92484-0023%20%E6%84%9B%E7%9F%A5%E7%9C%8C%E7%8A%AC%E5%B1%B1%E5%B8%82%E5%A0%A4%E4%B8%8B%EF%BC%96%EF%BC%90",
+    "type": "レジャー",
+    "d1": "",
+    "d2": ""
+  },
+  "urlKind": "mapsApi",
+  "route": "第1段(verify-gbp.mjs)で確認済み",
+  "verdict": "一致",
+  "verdictReason": "手がかり: 店名＋電話＋住所(番地まで)。電話が一致／店名: exact(シート「見晴茶屋」/ マップ「見晴茶屋」)／住所(シート): exact・町名・番地とも一致",
+  "place": {
+    "name": "見晴茶屋",
+    "address": "愛知県犬山市堤下６０",
+    "category": "レンタルボート",
+    "lat": 35.3384583,
+    "lng": 136.9910368,
+    "gbpUrl": "https://maps.google.com/?cid=17841837331151065805",
+    "phone": "0568-67-0705",
+    "website": "http://miharashichaya.com/",
+    "hours": {
+      "月": "06:30–16:30",
+      "火": "06:30–16:30",
+      "水": "06:30–16:30",
+      "木": "06:30–16:30",
+      "金": "06:30–16:30",
+      "土": "06:30–16:30",
+      "日": "06:30–16:30"
+    },
+    "reserveLinks": [],
+    "statusSignals": [],
+    "closedSignal": false
+  },
+  "fetchedAt": "2026-11-09T08:08:27.517Z"
+}

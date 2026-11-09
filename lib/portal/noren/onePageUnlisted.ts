@@ -174,6 +174,10 @@ export const ONE_PAGE_UNLISTED_SHOP_OF_FEATURE: Readonly<Record<string, string>>
   "さなえ食堂": "r904", // さなえ食堂
   "コルテージュ": "r905", // コルテージュ
   "あっぷっるりんご飴専門店": "r906", // あっぷっる りんご飴専門店
+  "TESORO": "r907", // TESORO
+  "焼き鳥えにし": "r908", // 焼き鳥 えにし
+  "Loiseau(ロワゾー)": "r909", // L'oiseau(ロワゾー)
+  "天よし亭": "r910", // 天よし亭
 };
 
 const NFC = (s: string) => s.normalize("NFC");

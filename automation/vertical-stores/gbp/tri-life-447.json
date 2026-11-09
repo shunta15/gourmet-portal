@@ -1,0 +1,40 @@
+{
+  "tab": "トリニティアポ",
+  "tabEn": "tri-life",
+  "row": 447,
+  "sheet": {
+    "name": "三津厳島神社",
+    "address": "",
+    "url": "https://www.google.com/maps/search/?api=1&query=%E4%B8%89%E6%B4%A5%E5%8E%B3%E5%B3%B6%E7%A5%9E%E7%A4%BE%20089-951-1471%20%E3%80%92791-8063%20%E6%84%9B%E5%AA%9B%E7%9C%8C%E6%9D%BE%E5%B1%B1%E5%B8%82%E7%A5%9E%E7%94%B0%E7%94%BA%EF%BC%91%E2%88%92%EF%BC%97",
+    "type": "神社",
+    "d1": "",
+    "d2": ""
+  },
+  "urlKind": "mapsApi",
+  "route": "第1段(verify-gbp.mjs)で確認済み",
+  "verdict": "一致",
+  "verdictReason": "手がかり: 店名＋電話＋住所(番地まで)。電話が一致／店名: exact(シート「三津厳島神社」/ マップ「三津厳島神社」)／住所(シート): exact・町名・番地とも一致",
+  "place": {
+    "name": "三津厳島神社",
+    "address": "愛媛県松山市神田町１−７",
+    "category": "神社",
+    "lat": 33.8609844,
+    "lng": 132.718512,
+    "gbpUrl": "https://maps.google.com/?cid=2453073972751578817",
+    "phone": "089-951-1471",
+    "website": "https://itsukusima.com/",
+    "hours": {
+      "月": "09:00–16:30",
+      "火": "09:00–16:30",
+      "水": "09:00–16:30",
+      "木": "09:00–16:30",
+      "金": "09:00–16:30",
+      "土": "09:00–16:30",
+      "日": "09:00–16:30"
+    },
+    "reserveLinks": [],
+    "statusSignals": [],
+    "closedSignal": false
+  },
+  "fetchedAt": "2026-11-09T08:10:23.244Z"
+}

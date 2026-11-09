@@ -1,0 +1,40 @@
+{
+  "tab": "トリニティアポ",
+  "tabEn": "tri-activity",
+  "row": 442,
+  "sheet": {
+    "name": "ノアノアチョークアート　ワークス大阪校【NOANOACHALKARTWORKS】",
+    "address": "",
+    "url": "https://www.google.com/maps/search/?api=1&query=%E3%83%8E%E3%82%A2%E3%83%8E%E3%82%A2%E3%83%81%E3%83%A7%E3%83%BC%E3%82%AF%E3%82%A2%E3%83%BC%E3%83%88%E3%80%80%E3%83%AF%E3%83%BC%E3%82%AF%E3%82%B9%E5%A4%A7%E9%98%AA%E6%A0%A1%E3%80%90NOANOACHALKARTWORKS%E3%80%91%20090-6577-4470%20%E3%80%92561-0871%20%E5%A4%A7%E9%98%AA%E5%BA%9C%E8%B1%8A%E4%B8%AD%E5%B8%82%E6%9D%B1%E5%AF%BA%E5%86%85%E7%94%BA%EF%BC%91%EF%BC%90%E2%88%92%EF%BC%91%EF%BC%90",
+    "type": "体験",
+    "d1": "",
+    "d2": ""
+  },
+  "urlKind": "mapsApi",
+  "route": "第1段(verify-gbp.mjs)で確認済み",
+  "verdict": "一致",
+  "verdictReason": "手がかり: 店名＋電話＋住所(番地まで)。電話が一致／店名: contains(シート「ノアノアチョークアート　ワークス大阪校【NOANOACHALKARTWORKS】」/ マップ「ノアノアチョークアートワークス」)／住所(シート): exact・町名・番地とも一致",
+  "place": {
+    "name": "ノアノアチョークアートワークス",
+    "address": "大阪府豊中市東寺内町１０−１０",
+    "category": "絵画教室",
+    "lat": 34.7729428,
+    "lng": 135.4956967,
+    "gbpUrl": "https://maps.google.com/?cid=11628554632950173093",
+    "phone": "090-6577-4470",
+    "website": "http://noanoa.saloon.jp/",
+    "hours": {
+      "月": "10:00–17:00",
+      "火": "10:00–17:00",
+      "水": "10:00–17:00",
+      "木": "10:00–17:00",
+      "金": "10:00–17:00",
+      "土": "10:00–17:00",
+      "日": "10:00–17:00"
+    },
+    "reserveLinks": [],
+    "statusSignals": [],
+    "closedSignal": false
+  },
+  "fetchedAt": "2026-11-09T08:07:00.948Z"
+}
