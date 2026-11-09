@@ -30433,6 +30433,1203 @@
         ],
         "checkedAt": "2026-11-09"
       }
+    },
+    {
+      "id": "li0195",
+      "vertical": "life",
+      "category": "shrine-temple",
+      "name": "滝の観世音 円通寺",
+      "pref": "fukuoka",
+      "cityName": "嘉麻市",
+      "address": "福岡県嘉麻市中益26",
+      "lat": 33.5432216,
+      "lng": 130.7549377,
+      "phone": "0948-57-2290",
+      "mapUrl": "https://maps.google.com/?cid=5814085499233284684",
+      "image": "/_portal/vshops/tri-life-450/g01.jpg",
+      "images": [
+        "/_portal/vshops/tri-life-450/g01.jpg",
+        "/_portal/vshops/tri-life-450/g02.jpg",
+        "/_portal/vshops/tri-life-450/g03.jpg",
+        "/_portal/vshops/tri-life-450/g04.jpg",
+        "/_portal/vshops/tri-life-450/g05.jpg",
+        "/_portal/vshops/tri-life-450/g06.jpg",
+        "/_portal/vshops/tri-life-450/g07.jpg",
+        "/_portal/vshops/tri-life-450/g08.jpg",
+        "/_portal/vshops/tri-life-450/g09.jpg",
+        "/_portal/vshops/tri-life-450/g10.jpg"
+      ],
+      "photos": [
+        {
+          "path": "/_portal/vshops/tri-life-450/g01.jpg",
+          "what": "木造本堂の正面外観と周囲の木々",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-life-450/g02.jpg",
+          "what": "杉林の参道に赤い幟旗「遍照金剛」が立ち並ぶ",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 675
+        },
+        {
+          "path": "/_portal/vshops/tri-life-450/g03.jpg",
+          "what": "石段が続く参道と周囲の杉林",
+          "kind": "exterior",
+          "width": 901,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-life-450/g04.jpg",
+          "what": "岩壁沿いの細い山道と灯籠",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 899
+        },
+        {
+          "path": "/_portal/vshops/tri-life-450/g05.jpg",
+          "what": "屋根付き山門の正面と周囲の木々",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-life-450/g06.jpg",
+          "what": "石垣と杉林に赤い幟旗が立つ参道",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-life-450/g07.jpg",
+          "what": "石仏と灯籠が並ぶ場所に赤い幟旗が立つ",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-life-450/g08.jpg",
+          "what": "岩壁に設けられた小さな祠と石仏、幟旗",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 675
+        },
+        {
+          "path": "/_portal/vshops/tri-life-450/g09.jpg",
+          "what": "岩壁を背景に多数の石仏が並ぶ境内",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-life-450/g10.jpg",
+          "what": "本堂内部と扁額が見える",
+          "kind": "common",
+          "width": 1200,
+          "height": 900
+        }
+      ],
+      "tags": [
+        "駐車場あり"
+      ],
+      "article": {
+        "headline": "益富山の中腹に佇む真言宗の古刹。筑前国中三十三観音霊場の第28番札所として、安産祈願でも知られる",
+        "lede": "嘉麻市にある「滝の観世音 円通寺」です。益富山（ますとみやま）の中腹に伽藍を構える真言宗高野山の寺院で、山号を益富山といいます。元和3年（1617年）、益富城の廃城後に麟翁寺の末寺として建立されたとされ、400年以上の歴史を持ちます。御本尊は聖観世音菩薩で、現在は筑前国中三十三観音霊場の第28番札所に数えられます。麓の駐車場から長い参道を歩いて登った先に本堂があり、本堂の奥には滝があります。昭和63年（1988年）に高野山での修行経歴を持つ橋本孝聖尼が住職として入山し、寺の復興を担ってきました。",
+        "sections": [
+          {
+            "heading": "由緒・歴史",
+            "body": "円通寺は元和3年（1617年）、益富城廃城の後に麟翁寺の末寺として建立されたとされます。御本尊の聖観音像は、安永年間（1772〜1781年）に疫病が流行した際、福岡市西区にある小田（こた）の観音から分祀されたものです。大正2年（1913年）の火災で本堂は焼失しましたが、御本尊は炭化した状態で残り、以来、晒布を白衣として厨子に安置されています。7年ごとに新しい晒布に衣替えし、古い布は小さく切って安産のお守りとして配布するしきたりが続いています。平成6年（1994年）には前立ち観音が建立されました。長らく無住の寺でしたが、昭和63年（1988年）に橋本孝聖尼が住職として入山し、寺の維持と復興にあたっています。"
+          },
+          {
+            "heading": "設備・場所の特徴",
+            "body": "境内は益富山の中腹に位置し、麓に駐車場があります。駐車場から長い参道を歩いて登ると本堂に至り、本堂の奥には滝があります。参道には赤い幟旗が立ち並び、杉林の中を石段が続きます。岩壁を背景に石仏や灯籠が配された場所もあり、山中の寺院らしい景観が広がります。御朱印を授与しています。"
+          },
+          {
+            "heading": "内容（商品・サービス・教え）",
+            "body": "聖観世音菩薩を御本尊とし、安産祈願をはじめとした祈願の場として地域の人々に親しまれてきました。7年ごとに行われる御本尊の衣替えの際に配布される晒布の安産お守りは、この寺ならではの授与品として伝わっています。筑前国中三十三観音霊場の第28番札所として、霊場巡りの参拝者も訪れます。御朱印の授与も行っています。"
+          },
+          {
+            "heading": "行き方と使い方",
+            "body": "車でのアクセスは、八木山バイパス筑穂東インターチェンジからおよそ29分です。麓に駐車場があり、そこから参道を歩いて本堂まで向かいます。最寄り駅はJR後藤寺線の下鴨生駅で、公共交通機関を使う場合は駅からの移動手段を別途ご確認ください。"
+          }
+        ],
+        "sources": [
+          {
+            "label": "ホトカミ",
+            "url": "https://hotokami.jp/area/fukuoka/Hytta/Hyttatm/Dpkpr/157129/"
+          },
+          {
+            "label": "ホトカミ 投稿",
+            "url": "https://hotokami.jp/area/fukuoka/Hytta/Hyttatm/Dpkpr/157129/173294/"
+          },
+          {
+            "label": "ブログ「団塊世代 お一人様スタイル」",
+            "url": "https://dannkai.blog.jp/archives/5685892.html"
+          },
+          {
+            "label": "Google マップ",
+            "url": "https://maps.google.com/?cid=5814085499233284684"
+          }
+        ],
+        "checkedAt": "2026-11-10"
+      }
+    },
+    {
+      "id": "li0196",
+      "vertical": "life",
+      "category": "shrine-temple",
+      "name": "大社神社",
+      "pref": "aichi",
+      "cityName": "豊川市",
+      "address": "愛知県豊川市国府町流霞5",
+      "lat": 34.8388765,
+      "lng": 137.3234924,
+      "hours": "毎日 09:30 - 17:00",
+      "phone": "0533-88-9622",
+      "url": "http://www.ooyasiro-jinjya.com/",
+      "website": "http://www.ooyasiro-jinjya.com/",
+      "mapUrl": "https://maps.google.com/?cid=17462724532424977911",
+      "image": "/_portal/vshops/tri-life-451/g01.jpg",
+      "images": [
+        "/_portal/vshops/tri-life-451/g01.jpg",
+        "/_portal/vshops/tri-life-451/g02.jpg",
+        "/_portal/vshops/tri-life-451/g03.jpg",
+        "/_portal/vshops/tri-life-451/g04.jpg",
+        "/_portal/vshops/tri-life-451/g05.jpg",
+        "/_portal/vshops/tri-life-451/g06.jpg",
+        "/_portal/vshops/tri-life-451/g07.jpg",
+        "/_portal/vshops/tri-life-451/g08.jpg",
+        "/_portal/vshops/tri-life-451/g09.jpg",
+        "/_portal/vshops/tri-life-451/g10.jpg"
+      ],
+      "photos": [
+        {
+          "path": "/_portal/vshops/tri-life-451/g01.jpg",
+          "what": "木造の拝殿正面外観",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-life-451/g02.jpg",
+          "what": "日の丸が掲げられた石造りの鳥居",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 675
+        },
+        {
+          "path": "/_portal/vshops/tri-life-451/g03.jpg",
+          "what": "参道と石造りの鳥居、紅葉した木",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-life-451/g04.jpg",
+          "what": "石段と鳥居、白い土塀が続く境内入口",
+          "kind": "exterior",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-life-451/g05.jpg",
+          "what": "赤い鳥居と境内の木々",
+          "kind": "exterior",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-life-451/g06.jpg",
+          "what": "狛犬を両脇に従えた本殿正面",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 675
+        },
+        {
+          "path": "/_portal/vshops/tri-life-451/g07.jpg",
+          "what": "白壁の末社建物",
+          "kind": "exterior",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-life-451/g08.jpg",
+          "what": "夜の境内で炎を上げる手筒花火と見物客",
+          "kind": "view",
+          "width": 675,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-life-451/g09.jpg",
+          "what": "石造りの鳥居と大きなクスの木",
+          "kind": "exterior",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-life-451/g10.jpg",
+          "what": "夕闇の境内で炎を上げる手筒花火",
+          "kind": "view",
+          "width": 1200,
+          "height": 900
+        }
+      ],
+      "tags": [
+        "駐車場あり"
+      ],
+      "article": {
+        "headline": "平安時代中頃の創建と伝わる、三河国府の総鎮守。大国主命を祀り、縁結びのご利益で知られる出雲大社の分社。",
+        "lede": "豊川市国府町にある「大社神社」です。平安時代の天元・永観年間（978〜985年）に、当時の三河国国司・大江定基が国の安泰を祈念して出雲大社から大国主命の分霊を迎え入れたことが始まりとされています。明治5年（1872年）には国府村の総氏神となりました。祭神の大国主命は、男女の縁だけでなく人と人とのあらゆる縁を司る神様とされ、縁結び・良縁成就のご利益を求める参拝者が訪れます。境内には身代わり大国様の石像をはじめ複数の末社が並び、毎年夏には手筒花火や歌舞伎行列が繰り広げられる国府夏まつりの舞台ともなります。ハローキティやリラックマなどのキャラクターお守り、「穂の国とよかわ神玉巡拝」の神玉も授与しており、幅広い参拝者に親しまれています。",
+        "sections": [
+          {
+            "heading": "由緒・歴史",
+            "body": "社伝では、978〜985年の天元・永観年間に国司・大江定基が出雲国大社から大国主命を勧請したことを始まりとしています。応永7年（1400年）に奉納された大般若経典書には「奉再興杜宮大社大神奉拝600年」と記されており、正式な勧請以前からこの地に堂宇が存在していたと考えられています。慶応元年（1865年）には第14代将軍・徳川家茂が長州征伐に際して戦勝祈願に立ち寄り、その際に奉納された短刀が社宝として伝わります。神社を囲む約100メートルに及ぶ石垣と白い土塀は、寛政6年（1794年）に田沼陣屋の石材を移築して構築されたものです。60年ごとに大遷宮が行われ、直近では2013年に平成の大遷宮が実施されました。"
+          },
+          {
+            "heading": "境内と見どころ",
+            "body": "本殿左側には身代わり大国様の石像が祀られています。ひしゃくで水をすくい、体の具合の悪い箇所にかけるとご利益があるとされ、石像の正面は出雲大社の方向を向いています。御神木はクスの巨木で、境内に存在感を放っています。拝殿の編額には打ち出の小づちが彫りつけられています。境内社として、素戔嗚尊と櫛稲田姫を祀る進雄神社、天照坐皇大御神・宇賀御魂神・豊受大神を祀る御鍬稲荷神社、秋葉神社、金比羅宮が並んでいます。授与品には、ハローキティやリラックマなどのキャラクターお守り、豊川市のキャラクター「いなりん」シリーズのお守りがあります。「穂の国とよかわ神玉巡拝」では打ち出の小づちをデザインした神玉を授与しています。御朱印は直書きと書置きの両方に対応しています。"
+          },
+          {
+            "heading": "国府夏まつり",
+            "body": "毎年夏に開催される「国府夏まつり」は、大社神社の祭礼として行われる地域の大型行事です。地元の4町内がそれぞれ山車をひき、「太閤記」や「忠臣蔵」などの演目に扮した若者たちによる歌舞伎行列が町中を練り歩きます。夜の手筒奉納では手筒煙火が境内で次々に奉納され、炎の直撃を受けた狛犬が赤茶色に変色しているほどです。大筒煙火や仕掛け花火も奉納されます。また境内では「輪くぐり神事」や「国府祭」も催行されており、夏のほかにも12月15日に例祭が行われます。"
+          },
+          {
+            "heading": "行き方と使い方",
+            "body": "名鉄名古屋本線「国府」駅から徒歩約10分です。車では東名高速「音羽蒲郡IC」から約10分で、駐車場があります。御朱印は社務所で直書きと書置きの両方に対応しています。公式サイトおよびInstagramの公式アカウント（@ooyasiro_jinjya）では、行事や授与品の最新情報を案内しています。"
+          }
+        ],
+        "menus": [
+          {
+            "name": "身代わり大国様（石像への水かけ）"
+          },
+          {
+            "name": "縁結び・良縁成就の御守"
+          },
+          {
+            "name": "キャラクターお守り（ハローキティ・リラックマ）"
+          },
+          {
+            "name": "いなりんシリーズお守り"
+          },
+          {
+            "name": "穂の国とよかわ神玉（打ち出の小づちデザイン）"
+          },
+          {
+            "name": "御朱印（直書き・書置き）"
+          }
+        ],
+        "sources": [
+          {
+            "label": "公式サイト",
+            "url": "https://ooyasiro-jinjya.com/"
+          },
+          {
+            "label": "東三河を歩こう（大社神社）",
+            "url": "https://www.net-plaza.org/KANKO/toyokawa/jinjya/ooyashiro/index.html"
+          },
+          {
+            "label": "TASUKI（大社神社紹介記事）",
+            "url": "https://tasuki-inc.com/toyokawa-ooyasiro-jinjya/"
+          },
+          {
+            "label": "ホトカミ（大社神社）",
+            "url": "https://hotokami.jp/area/aichi/Hmrtp/Hmrtptm/Draaa/92037/"
+          },
+          {
+            "label": "豊川市観光マップ（大社神社）",
+            "url": "https://www.toyokawa-map.net/spot/000280.html"
+          },
+          {
+            "label": "アメブロ（大社神社 豊川市国府町）",
+            "url": "https://ameblo.jp/zonebalance/entry-12124388422.html"
+          },
+          {
+            "label": "Yahoo!ニュース（穂の国とよかわ神玉巡拝）",
+            "url": "https://news.yahoo.co.jp/expert/articles/cc17a25efe588a8faa3a39f666ed2fe30f031392"
+          },
+          {
+            "label": "Google マップ",
+            "url": "https://maps.google.com/?cid=17462724532424977911"
+          }
+        ],
+        "checkedAt": "2026-11-10"
+      }
+    },
+    {
+      "id": "li0197",
+      "vertical": "life",
+      "category": "shrine-temple",
+      "name": "久尻神社",
+      "pref": "gifu",
+      "cityName": "土岐市",
+      "address": "岐阜県土岐市泉町久尻784",
+      "lat": 35.3586138,
+      "lng": 137.173574,
+      "hours": "毎日 09:00 - 16:00",
+      "phone": "0572-55-3995",
+      "url": "http://www.gifu-jinjacho.jp/syosai.php?shrno=2321",
+      "website": "http://www.gifu-jinjacho.jp/syosai.php?shrno=2321",
+      "mapUrl": "https://maps.google.com/?cid=5422700305325033415",
+      "image": "/_portal/vshops/tri-life-452/g01.jpg",
+      "images": [
+        "/_portal/vshops/tri-life-452/g01.jpg",
+        "/_portal/vshops/tri-life-452/g02.jpg",
+        "/_portal/vshops/tri-life-452/g03.jpg",
+        "/_portal/vshops/tri-life-452/g04.jpg",
+        "/_portal/vshops/tri-life-452/g05.jpg",
+        "/_portal/vshops/tri-life-452/g06.jpg",
+        "/_portal/vshops/tri-life-452/g07.jpg",
+        "/_portal/vshops/tri-life-452/g08.jpg",
+        "/_portal/vshops/tri-life-452/g09.jpg",
+        "/_portal/vshops/tri-life-452/g10.jpg"
+      ],
+      "photos": [
+        {
+          "path": "/_portal/vshops/tri-life-452/g01.jpg",
+          "what": "白壁の拝殿正面外観と石段",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-life-452/g02.jpg",
+          "what": "鳥居と狛犬・のぼり旗が並ぶ参道",
+          "kind": "exterior",
+          "width": 675,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-life-452/g03.jpg",
+          "what": "赤白の拝殿正面（近景）",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-life-452/g04.jpg",
+          "what": "木立に囲まれた鳥居と石碑",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-life-452/g05.jpg",
+          "what": "広い境内と拝殿・鳥居の全景",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-life-452/g06.jpg",
+          "what": "境内に置かれた石造りの狛犬",
+          "kind": "exterior",
+          "width": 675,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-life-452/g07.jpg",
+          "what": "赤と木目の拝殿内部",
+          "kind": "common",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-life-452/g08.jpg",
+          "what": "石段と鳥居が続く参道",
+          "kind": "exterior",
+          "width": 675,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-life-452/g09.jpg",
+          "what": "広い境内の全景と木々",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 675
+        },
+        {
+          "path": "/_portal/vshops/tri-life-452/g10.jpg",
+          "what": "赤い鳥居と「久尻神社」ののぼり旗",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 900
+        }
+      ],
+      "tags": [],
+      "article": {
+        "headline": "岐阜県土岐市泉町久尻に鎮座する神社。古代から陶器の産地として知られる久尻の地名を冠し、昭和43年に創建された。",
+        "lede": "土岐市にある「久尻神社」（くじりじんじゃ）です。岐阜県土岐市泉町久尻784番地に鎮座し、美濃焼・久尻焼の産地として古くから知られるこの地の名を社名に冠しています。境内には弓道場「弦武館」があり、10月第2日曜日の例祭では弓道大会、節分祭では弓矢で邪気を祓う追儺式が行われます。夏には地元の陶芸愛好家が手づくりした美濃焼の風鈴344個が境内に飾られ、地域の人々が集う場として機能しています。7柱の祭神を祀り、1969年（昭和44年）に岐阜県神社庁から金幣社の指定を受けた神社です。",
+        "sections": [
+          {
+            "heading": "由緒・歴史",
+            "body": "久尻神社は、江戸時代初期の霊元天皇の御代に創建されたとされる津島神社（祭神：建速須佐之男命）と、中御門天皇の享保12年（1727年）に創建された日吉神社（祭神：大山咋命）、さらに諏訪神社（祭神：建御名方命）・北野神社（祭神：菅原道真）の4社を合わせたものです。明治百年の記念事業として、旧日吉神社の境内を拡張整備し、大国魂神・事代主神・明治天皇を新たに合祀。昭和43年（1968年）10月18日に「久尻神社」として創建されました。社名は、古代から陶器の産地として名高い久尻焼・美濃焼の産地の地名に由来します。翌1969年（昭和44年）10月1日には、岐阜県神社庁より金幣社（県神社庁長参向指定神社）の指定を受けています。"
+          },
+          {
+            "heading": "内容（神事・設備）",
+            "body": "境内には平成7年（1995年）3月に完成した弓道場「弦武館」があります。毎年10月第2日曜日の例祭では弦武館で弓道大会が行われ、節分祭では弓矢で邪気を祓う追儺式が執り行われます。夏には、地域の人たちが交流する場をつくる目的で、美濃焼の風鈴が境内に飾られます。地元の陶芸愛好家で構成する華陶会と陶寿会が、形や釉薬の異なる風鈴を制作し、2025年には344個が飾られました。近隣の泉西小学校の全校児童約300人が短冊に願い事を書いて奉納するのも、この催しの特徴です。境内には久尻稲荷神社・諏訪神社の境内社もあります。御朱印は社務所で直書きにて受けられます。"
+          },
+          {
+            "heading": "行き方と使い方",
+            "body": "JR中央本線・土岐市駅から徒歩約11分（約867m）の距離にあります。土岐市民バス「泉ヶ丘線」を利用する場合は、「緑ヶ丘」バス停が最寄りで徒歩約1分です。境内は広く、高台に位置しています。御朱印は左手の社務所で受け付けており、参拝の際にお声がけください。"
+          }
+        ],
+        "sources": [
+          {
+            "label": "公式サイト（岐阜県神社庁）",
+            "url": "http://www.gifu-jinjacho.jp/syosai.php?shrno=2321"
+          },
+          {
+            "label": "中日新聞",
+            "url": "https://www.chunichi.co.jp/article/1095507"
+          },
+          {
+            "label": "やおかみ",
+            "url": "https://yaokami.jp/1211313/"
+          },
+          {
+            "label": "ホトカミ",
+            "url": "https://hotokami.jp/area/gifu/Hmktr/Hmktrtk/Dppaz/100195/"
+          },
+          {
+            "label": "Google マップ",
+            "url": "https://maps.google.com/?cid=5422700305325033415"
+          }
+        ],
+        "checkedAt": "2026-11-10"
+      }
+    },
+    {
+      "id": "li0198",
+      "vertical": "life",
+      "category": "shrine-temple",
+      "name": "浄土宗 三哲山 龍岸寺",
+      "pref": "kyoto",
+      "cityName": "京都市下京区",
+      "address": "京都府京都市下京区塩小路通大宮東入八条坊門町564",
+      "lat": 34.9868702,
+      "lng": 135.7499271,
+      "hours": "毎日 09:30 - 16:00",
+      "phone": "075-371-0370",
+      "url": "http://ryuganji.jp/",
+      "website": "http://ryuganji.jp/",
+      "mapUrl": "https://maps.google.com/?cid=3264978770477922364",
+      "image": "/_portal/vshops/tri-life-453/g01.jpg",
+      "images": [
+        "/_portal/vshops/tri-life-453/g01.jpg",
+        "/_portal/vshops/tri-life-453/g02.jpg",
+        "/_portal/vshops/tri-life-453/g03.jpg",
+        "/_portal/vshops/tri-life-453/g04.jpg",
+        "/_portal/vshops/tri-life-453/g05.jpg",
+        "/_portal/vshops/tri-life-453/g06.jpg",
+        "/_portal/vshops/tri-life-453/g07.jpg",
+        "/_portal/vshops/tri-life-453/g09.jpg",
+        "/_portal/vshops/tri-life-453/g10.jpg",
+        "/_portal/vshops/tri-life-453/s02.jpg",
+        "/_portal/vshops/tri-life-453/s03.jpg",
+        "/_portal/vshops/tri-life-453/s04.jpg",
+        "/_portal/vshops/tri-life-453/s05.jpg",
+        "/_portal/vshops/tri-life-453/s06.jpg",
+        "/_portal/vshops/tri-life-453/s10.jpg",
+        "/_portal/vshops/tri-life-453/s11.jpg",
+        "/_portal/vshops/tri-life-453/s16.jpg"
+      ],
+      "photos": [
+        {
+          "path": "/_portal/vshops/tri-life-453/g01.jpg",
+          "what": "龍岸寺の山門正面外観",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-life-453/g02.jpg",
+          "what": "山門と白壁が連なる境内入口",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 675
+        },
+        {
+          "path": "/_portal/vshops/tri-life-453/g03.jpg",
+          "what": "金色の装飾が施された本堂内陣",
+          "kind": "common",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-life-453/g04.jpg",
+          "what": "境内の白壁と建物の一角",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 675
+        },
+        {
+          "path": "/_portal/vshops/tri-life-453/g05.jpg",
+          "what": "「浄土宗 三哲山 龍岸寺」と書かれた看板と駐車場案内",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-life-453/g06.jpg",
+          "what": "白壁の山門と木々",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-life-453/g07.jpg",
+          "what": "本堂内部と仏壇の様子",
+          "kind": "common",
+          "width": 1200,
+          "height": 675
+        },
+        {
+          "path": "/_portal/vshops/tri-life-453/g09.jpg",
+          "what": "本堂内に安置されている仏像群",
+          "kind": "common",
+          "width": 1200,
+          "height": 675
+        },
+        {
+          "path": "/_portal/vshops/tri-life-453/g10.jpg",
+          "what": "石段と山門へのアプローチ、石柱が並ぶ境内入口",
+          "kind": "exterior",
+          "width": 1024,
+          "height": 768
+        },
+        {
+          "path": "/_portal/vshops/tri-life-453/s02.jpg",
+          "what": "金色の仏像と装飾が施された本堂内陣",
+          "kind": "common",
+          "width": 1100,
+          "height": 620
+        },
+        {
+          "path": "/_portal/vshops/tri-life-453/s03.jpg",
+          "what": "永代供養墓「星月墓」と書かれた案内と墓地の様子",
+          "kind": "exterior",
+          "width": 1100,
+          "height": 620
+        },
+        {
+          "path": "/_portal/vshops/tri-life-453/s04.jpg",
+          "what": "提灯が並ぶ本堂での行事の様子",
+          "kind": "common",
+          "width": 1100,
+          "height": 620
+        },
+        {
+          "path": "/_portal/vshops/tri-life-453/s05.jpg",
+          "what": "文字とイラストが入ったブログ記事のビジュアル",
+          "kind": "common",
+          "width": 1100,
+          "height": 620
+        },
+        {
+          "path": "/_portal/vshops/tri-life-453/s06.jpg",
+          "what": "荘厳な飾りつけがされた本堂内陣の全景",
+          "kind": "common",
+          "width": 1100,
+          "height": 620
+        },
+        {
+          "path": "/_portal/vshops/tri-life-453/s10.jpg",
+          "what": "光を放つドローン仏が浮かぶ様子",
+          "kind": "common",
+          "width": 1200,
+          "height": 675
+        },
+        {
+          "path": "/_portal/vshops/tri-life-453/s11.jpg",
+          "what": "夜空と満月を背景にしたイベントのビジュアル",
+          "kind": "common",
+          "width": 1200,
+          "height": 663
+        },
+        {
+          "path": "/_portal/vshops/tri-life-453/s16.jpg",
+          "what": "龍岸寺の外観と白壁の全景",
+          "kind": "exterior",
+          "width": 600,
+          "height": 400
+        }
+      ],
+      "tags": [
+        "体験あり",
+        "駐車場あり",
+        "予約制"
+      ],
+      "article": {
+        "headline": "京都市下京区にある浄土宗の寺院。元和2年（1616）開基、江戸幕府初代天文方・渋川春海の屋敷跡に建つ。",
+        "lede": "京都市下京区にある「龍岸寺（りゅうがんじ）」です。正式名称は浄土宗 三哲山 一条院 龍岸寺で、元和2年（1616）に僧 三哲（安井算哲）によって開かれました。安井算哲の長子が、江戸幕府の初代天文方をつとめた渋川春海（算哲）で、貞享元年（1684）に天文方となり江戸に移住した際に、屋敷跡がお寺として整備されました。本堂は江戸時代中期、貞享年間（1684〜1688）の棟札を持ち、ご本尊として阿弥陀如来を祀っています。現在は第二十四世住職・池口龍法のもと、伝統的な法要を営むかたわら、テクノロジーを用いた「ドローン仏」や仏具職人との共同イベントなど、お寺文化の発信に力を入れています。",
+        "sections": [
+          {
+            "heading": "由緒・歴史",
+            "body": "龍岸寺は、寺史によれば元和2年（1616）（一説には元和3年（1617））に、僧 三哲（安井算哲／源蓮社長誉三哲和尚）により開かれました。安井算哲は僧侶としては無名ですが、碁方として歴史に名を遺した人物で、現存する位牌には正保4年（1648）を没年としますが、一般的には慶安5年（1652）に入寂したとされています。安井算哲の長子が、江戸幕府の初代天文方をつとめた渋川春海（算哲）です。寛永16年（1639）に生まれ、正徳5年（1715）に没しています。自作の暦が幕府に採用されて貞享元年（1684）に天文方となり江戸に移住するとともに、屋敷跡がお寺として整備されました。本堂は江戸時代中期、貞享年間（1684〜1688）の棟札を持ち、客殿はやや遅れて享保年間（1716〜1736）に建立されています。ご本尊まわりの極彩色の装飾と、欄間彫刻の大威徳明王が荘厳さを漂わせています。"
+          },
+          {
+            "heading": "内容（取り組みと体験）",
+            "body": "龍岸寺では、伝統的な法要や行事に加え、現代的なお寺体験を多数実施しています。なかでも、仏師・三浦耀山師との共同プロジェクト「ドローン仏」が広く知られています。2018年の超十夜祭で、ドローン3体による立体的な「極楽来迎図」の再現に成功し、以後も編隊飛行の規模を拡大してきました。仏師・三浦耀山師による1日仏像彫刻教室も開催しており、定員12名で、あらかじめ大きく荒彫りした木曽ヒノキに彫刻刀を当てながら「木のわらべ地蔵」を1日で彫り上げます。小学5年生以上のお子さまも体験でき、小学生の場合は保護者の付き添いが必要です。また、仏具職人がつくるユニット「佛佛部」のフェスや、瞑想体験など、多彩な催しが年間を通じて行われています。毎月門前掲示板に仏教的な問いを書き、その回答となる法話と、法話にちなんだ限定御朱印を授与しています。"
+          },
+          {
+            "heading": "成り立ちと人",
+            "body": "現在の住職は第二十四世・池口龍法師です。大乗仏教の教えをベースに、あらゆる人々が手をとりあって心の平穏・家庭の安心・社会の平和を築いていくことを理念に掲げています。お盆・彼岸などの定例法要を営むほか、京都の職人や学生と積極的にコラボレーションを進め、お寺からの文化発信に力を尽くしています。法事等の供養は随時承っており（事前の連絡が必要）、四十九日・一周忌・三回忌等の年忌法要を本堂またはご自宅で執り行います。本堂での法事の場合、開始時刻の30分前から控室を用意しています。所要時間は1時間程度（読経・法話・墓前供養）です。境内墓地への和型石塔の建立、後継ぎのない方向けの永代供養墓「星月墓」への結縁も受け付けています。"
+          },
+          {
+            "heading": "行き方と使い方",
+            "body": "JR京都駅から徒歩10分、または京都市バス「七条大宮」バス停から徒歩5分でアクセスできます。駐車場があります。境内拝観の際、本堂の拝観・ドローン仏の参拝・瞑想体験などを希望する場合は、公式サイトの予約ページから事前予約が必要です。仏像彫刻教室など各種イベントへの参加申込みも公式サイトから受け付けています。法事・葬儀・お墓のご相談は電話または公式サイトのお問合せフォームへ。信仰問題に関するご相談や新しいコラボレーションの提案も随時受け付けています。"
+          }
+        ],
+        "menus": [
+          {
+            "name": "1日仏像彫刻教室（木のわらべ地蔵）"
+          },
+          {
+            "name": "ドローン仏参拝"
+          },
+          {
+            "name": "瞑想体験"
+          },
+          {
+            "name": "四十九日・年忌法要（本堂またはご自宅）"
+          },
+          {
+            "name": "永代供養墓「星月墓」"
+          },
+          {
+            "name": "御朱印（月替わり限定御朱印あり）"
+          }
+        ],
+        "sources": [
+          {
+            "label": "公式サイト",
+            "url": "https://ryuganji.jp/"
+          },
+          {
+            "label": "公式サイト（お寺について）",
+            "url": "https://ryuganji.jp/about/"
+          },
+          {
+            "label": "公式サイト（アクセス）",
+            "url": "https://ryuganji.jp/access/"
+          },
+          {
+            "label": "公式サイト（ご供養）",
+            "url": "https://ryuganji.jp/memorial-services/"
+          },
+          {
+            "label": "公式サイト（仏像彫刻教室）",
+            "url": "https://ryuganji.jp/events/8362/"
+          },
+          {
+            "label": "ホトカミ",
+            "url": "https://hotokami.jp/area/kyoto/Hmptp/Hmptpty/Dppta/4021/"
+          },
+          {
+            "label": "京都風光",
+            "url": "https://kyotofukoh.jp/report1964.html"
+          },
+          {
+            "label": "Google マップ",
+            "url": "https://maps.google.com/?cid=3264978770477922364"
+          }
+        ],
+        "checkedAt": "2026-11-10"
+      }
+    },
+    {
+      "id": "li0199",
+      "vertical": "life",
+      "category": "shrine-temple",
+      "name": "時宗浄光寺",
+      "pref": "kanagawa",
+      "cityName": "横浜市南区",
+      "address": "神奈川県横浜市南区中村町1丁目37-2",
+      "lat": 35.4350782,
+      "lng": 139.6360618,
+      "hours": "毎日 09:00 - 16:00",
+      "phone": "045-261-7976",
+      "url": "https://tesshow.jp/kanagawa/fujisawa/temple_yugyo.html",
+      "website": "https://tesshow.jp/kanagawa/fujisawa/temple_yugyo.html",
+      "mapUrl": "https://maps.google.com/?cid=11759729801644432404",
+      "image": "/_portal/vshops/tri-life-455/g01.jpg",
+      "images": [
+        "/_portal/vshops/tri-life-455/g01.jpg",
+        "/_portal/vshops/tri-life-455/g02.jpg",
+        "/_portal/vshops/tri-life-455/g03.jpg",
+        "/_portal/vshops/tri-life-455/g04.jpg",
+        "/_portal/vshops/tri-life-455/g05.jpg",
+        "/_portal/vshops/tri-life-455/g06.jpg",
+        "/_portal/vshops/tri-life-455/g07.jpg",
+        "/_portal/vshops/tri-life-455/g08.jpg",
+        "/_portal/vshops/tri-life-455/g09.jpg",
+        "/_portal/vshops/tri-life-455/g10.jpg"
+      ],
+      "photos": [
+        {
+          "path": "/_portal/vshops/tri-life-455/g01.jpg",
+          "what": "緑の屋根の本堂外観と境内",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 801
+        },
+        {
+          "path": "/_portal/vshops/tri-life-455/g02.jpg",
+          "what": "山門入口と石柱の寺号標",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-life-455/g03.jpg",
+          "what": "境内の供養塔と石像",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-life-455/g04.jpg",
+          "what": "境内に残る大きな楠の木",
+          "kind": "exterior",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-life-455/g05.jpg",
+          "what": "室内での法要・集会の様子",
+          "kind": "common",
+          "width": 1200,
+          "height": 541
+        },
+        {
+          "path": "/_portal/vshops/tri-life-455/g06.jpg",
+          "what": "境内の小堂と石灯籠",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-life-455/g07.jpg",
+          "what": "本堂内部の畳の間と仏壇",
+          "kind": "common",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-life-455/g08.jpg",
+          "what": "本堂内部の金色の仏壇と装飾",
+          "kind": "common",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-life-455/g09.jpg",
+          "what": "境内の石灯籠と庭木",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-life-455/g10.jpg",
+          "what": "境内の楠と石像が並ぶ様子",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 900
+        }
+      ],
+      "tags": [],
+      "article": {
+        "headline": "横浜市南区中村町、遊行坂の中ほどに立つ時宗寺院。藤澤山無量院浄光寺という正式名称を持つ。",
+        "lede": "横浜市南区にある「浄光寺」は、時宗の寺院です。正式名称は藤澤山無量院浄光寺といい、時宗の総本山・清浄光寺（遊行寺）と同じ「藤澤山」という山号を持ちます。明治5年（1872年）、総本山清淨光寺第五十九世の他阿尊教上人が横浜での布教を開始したことが始まりで、明治6年には中村町の田辺新六・郷左衛門の土地を借用して本堂と庫裡を建立し、説教所を開設しました。明治15年（1882年）に藤澤山浄光寺として公称するに至りました。本尊は阿弥陀如来坐像で、地域からは「横浜の遊行寺さん」と親しまれてきました。門前の坂道は「遊行坂」と呼ばれ、地名のひとつとして定着しています。",
+        "sections": [
+          {
+            "heading": "由緒・歴史",
+            "body": "浄光寺は明治5年（1872年）、横浜が開港してまだ間もない時代に、時宗総本山・清浄光寺の第五十九世他阿尊教上人によって布教が開始されたことに始まります。翌明治6年、中村の田辺新六と郷左衛門の所有地を借用し、本堂と庫裡を建立して説教所が開設されました。明治15年（1882年）に本山の直末寺院として藤澤山浄光寺を公称するようになりました。大正12年（1923年）の関東大震災では堂宇の倒壊や火災の難を免れましたが、昭和20年（1945年）5月29日の横浜大空襲により堂宇が灰燼に帰しました。その後、檀信徒の協力により昭和32年（1957年）5月26日に現在の本堂が復興落慶しました。現本堂は浅間神社から移築した建物で、横幅が広く天井が低い木造建築です。"
+          },
+          {
+            "heading": "境内の特徴",
+            "body": "境内には阿弥陀如来坐像を安置する本堂のほか、鉄筋コンクリート造の客殿・庫裡・位牌堂があります。境内にはかつて横浜市の名木古木に指定されたツゲとスタジイの木がありましたが、現在は枯れています。一方、大きな楠の木が今も境内に残り、緑の空間を作っています。また境内には供養塔や馬頭観音などの石像も配置されています。御朱印は寺務所にて授与しています。"
+          },
+          {
+            "heading": "成り立ちと人",
+            "body": "浄光寺の正式名称「藤澤山無量院浄光寺」は、総本山・清浄光寺の山号「藤澤山」、院号「無量光院」、寺号「清浄光寺」をそれぞれ1字ずつ縮めた形になっています。これは時宗総本山が明治の文明開化の地・横浜に設けた施設であることを示す関係性です。開山となった他阿尊教上人は清浄光寺第五十九世の僧侶で、明治11年（1878年）には森證善が担任教師として着任し、寺院としての体制が整えられていきました。"
+          },
+          {
+            "heading": "行き方と使い方",
+            "body": "横浜市営地下鉄ブルーライン「伊勢佐木長者町駅」から徒歩約9分の場所にあります。JR「石川町駅」元町口（南口）から川沿いを歩いて徒歩約11分でも到達できます。門前の坂道「遊行坂」を上がった中ほどに位置しています。御朱印の授与は寺務所にて対応しています。法事や年忌法要など供養の際は事前に寺務所へお問い合わせください。"
+          }
+        ],
+        "sources": [
+          {
+            "label": "猫の足あと（横浜市南区の寺院）",
+            "url": "https://tesshow.jp/yokohama/minami/temple_nakamra_joko.html"
+          },
+          {
+            "label": "ホトカミ",
+            "url": "https://hotokami.jp/area/kanagawa/Hkytr/Hkytkty/Dayy/53661/"
+          },
+          {
+            "label": "フォートラベル",
+            "url": "https://4travel.jp/travelogue/11633889"
+          },
+          {
+            "label": "Google マップ",
+            "url": "https://maps.google.com/?cid=11759729801644432404"
+          }
+        ],
+        "checkedAt": "2026-11-10"
+      }
+    },
+    {
+      "id": "li0200",
+      "vertical": "life",
+      "category": "shrine-temple",
+      "name": "岩殿寺",
+      "pref": "kanagawa",
+      "cityName": "逗子市",
+      "address": "神奈川県逗子市久木5丁目7-11",
+      "lat": 35.3045301,
+      "lng": 139.572362,
+      "hours": "毎日 09:00 - 16:00",
+      "phone": "046-871-2268",
+      "url": "https://bandou.gr.jp/temple/%E6%B5%B7%E9%9B%B2%E5%B1%B1-%E5%B2%A9%E6%AE%BF%E5%AF%BA%EF%BC%88%E5%B2%A9%E6%AE%BF%E8%A6%B3%E9%9F%B3%EF%BC%89/",
+      "website": "https://bandou.gr.jp/temple/%E6%B5%B7%E9%9B%B2%E5%B1%B1-%E5%B2%A9%E6%AE%BF%E5%AF%BA%EF%BC%88%E5%B2%A9%E6%AE%BF%E8%A6%B3%E9%9F%B3%EF%BC%89/",
+      "mapUrl": "https://maps.google.com/?cid=8899242507340918874",
+      "image": "/_portal/vshops/tri-life-456/g01.jpg",
+      "images": [
+        "/_portal/vshops/tri-life-456/g01.jpg",
+        "/_portal/vshops/tri-life-456/g02.jpg",
+        "/_portal/vshops/tri-life-456/g03.jpg",
+        "/_portal/vshops/tri-life-456/g04.jpg",
+        "/_portal/vshops/tri-life-456/g05.jpg",
+        "/_portal/vshops/tri-life-456/g06.jpg",
+        "/_portal/vshops/tri-life-456/g07.jpg",
+        "/_portal/vshops/tri-life-456/g08.jpg",
+        "/_portal/vshops/tri-life-456/g09.jpg",
+        "/_portal/vshops/tri-life-456/g10.jpg"
+      ],
+      "photos": [
+        {
+          "path": "/_portal/vshops/tri-life-456/g01.jpg",
+          "what": "石段と木々に囲まれた本堂の外観",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 800
+        },
+        {
+          "path": "/_portal/vshops/tri-life-456/g02.jpg",
+          "what": "緑に覆われた参道の石段",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 675
+        },
+        {
+          "path": "/_portal/vshops/tri-life-456/g03.jpg",
+          "what": "山門（木造の門、扁額あり）",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-life-456/g04.jpg",
+          "what": "木々に囲まれた本堂の正面外観",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-life-456/g05.jpg",
+          "what": "赤い幟旗が並ぶ参道の石段",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 675
+        },
+        {
+          "path": "/_portal/vshops/tri-life-456/g06.jpg",
+          "what": "石柱の寺号標と石垣、参道入口",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 801
+        },
+        {
+          "path": "/_portal/vshops/tri-life-456/g07.jpg",
+          "what": "木々の中に建つ観音堂と赤い欄干",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-life-456/g08.jpg",
+          "what": "石段と山門、境内入口の全景",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-life-456/g09.jpg",
+          "what": "緑のトンネルになった参道の石段",
+          "kind": "exterior",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-life-456/g10.jpg",
+          "what": "木々の奥に見える観音堂への参道",
+          "kind": "exterior",
+          "width": 900,
+          "height": 1200
+        }
+      ],
+      "tags": [
+        "駐車場あり"
+      ],
+      "article": {
+        "headline": "神奈川県逗子市久木にある曹洞宗の古刹。坂東三十三観音霊場の第2番札所で、養老五年（721年）の開創と伝わる。",
+        "lede": "逗子市にある「岩殿寺」（がんでんじ）です。山号は海雲山護國院、本尊は十一面観世音菩薩。大和長谷寺の徳道上人が養老五年（721年）に瑞光を発する峰を見つけて読経したところ岩肌に十一面観音が現れたと伝わり、翌養老六年に行基菩薩が十一面観音像を彫って安置したことで開創とされています。坂東三十三観音霊場のなかで唯一の曹洞宗寺院でもあります。元はこの地にある寺は真言宗の海前山という山号でしたが、天正十九年（1591年）の中興時に曹洞宗となり、山号を海雲山に改めました。鎌倉時代には源頼朝が毎月欠かさず参詣を重ねたとされ、源実朝ら源氏一族の信仰を受けた寺として知られます。近代には小説家・泉鏡花が愛した寺としても知られており、1906年の小説「春昼」の主要舞台になっています。",
+        "sections": [
+          {
+            "heading": "由緒・歴史",
+            "body": "岩殿寺の開創は養老五年（721年）とされます。大和長谷寺の開山・徳道上人が霊験ある峰を見つけて読経した際、岩肌に十一面観音が現れたと伝わり、翌年に行基菩薩が十一面観音像を彫って安置したことで正式な開創とされました。平安時代には花山法皇と後白河法皇が来山し、後白河法皇によって坂東三十三観音霊場の第2番札所に定められたとされています。鎌倉時代には源頼朝が毎月欠かさず参詣を重ね、当時は七堂伽藍を備えるほどの高い寺格を誇ったと伝わります。その後、徳川家康の命で曹洞宗として中興された際、鎌倉の英勝寺建立時に作られた六観音の一つが寄進されました。元禄頃の記録には「実朝公坂東三十三番札所建立」と明記されています。"
+          },
+          {
+            "heading": "境内と見どころ",
+            "body": "山肌に造営された伽藍を持つ境内は、参道から本堂、そして急な石段を上った先の観音堂まで、いくつかの見どころが続きます。本堂には十一面観世音菩薩を安置し、そこから130段の石段を上がった高台に観音堂があります。観音堂は享保十三年（1728年）に再建された建築で、密教本堂形式を受け継ぎながら禅宗様の要素も取り入れた建築として逗子市の指定有形文化財に指定されています。観音堂の裏手の岩窟には奥の院があり、行基が彫ったと伝わる石造の十一面観音像が祀られています。境内には八角堂の利生堂（幸福観音安置）、坐禅堂として機能する三昧堂もあります。また観音堂の近くには、泉鏡花が寄進したとされる「鏡花の池」があり、山門の脇には泉鏡花の句碑が立っています。参道沿いには坂東三十三観音霊場の御詠歌碑が並んでいます。"
+          },
+          {
+            "heading": "季節の花と巡礼の案内",
+            "body": "境内は四季を通じて様々な花が咲く場所としても知られています。春は馬酔木・木瓜・沈丁花・水仙、夏は紫陽花・蓮、秋はコスモス、冬は蝋梅・梅と、季節ごとに境内が彩られます。初夏には山門の参道沿いを多くのあじさいが飾ります。坂東三十三観音霊場の巡礼者は、本堂向拝で納札と写経を納め、お灯明・線香・賽銭をあげてご本尊を念じたあと、納経所で朱印帳などに納経宝印（ご朱印）を受けることができます。ご朱印の納経時間は8:00〜17:00です。毎月1日は十五日祝祷会、毎月18日は観音会、毎月第二日曜日は寶心会が行われています。12年に一度、午歳の秋には本尊の十一面観音菩薩像の特別ご開帳があり、2026年は9月18日から11月18日まで開帳されています。"
+          },
+          {
+            "heading": "行き方と使い方",
+            "body": "JR横須賀線逗子駅から北西へ徒歩約15分の場所にあります。車の場合は横浜横須賀道路の朝比奈ICから約15分（約5.5km）です。境内には普通車対応の駐車場があります。納経所で朱印帳にご朱印を受けることができ、納経時間は8:00〜17:00です。毎月・年間を通じた行事（観音会・高祖降誕祭・仏誕生会・鏡花祭など）が定期的に行われており、参拝と合わせて確認できます。"
+          }
+        ],
+        "sources": [
+          {
+            "label": "公式サイト（坂東三十三観音）",
+            "url": "https://bandou.gr.jp/temple/%E6%B5%B7%E9%9B%B2%E5%B1%B1-%E5%B2%A9%E6%AE%BF%E5%AF%BA%EF%BC%88%E5%B2%A9%E6%AE%BF%E8%A6%B3%E9%9F%B3%EF%BC%89/"
+          },
+          {
+            "label": "湘南鎌倉寺社巡礼",
+            "url": "https://omairi.info/gandenji-tpl/"
+          },
+          {
+            "label": "パークストーリーkanagawa",
+            "url": "https://kanagawa.yokohama-lifeplan.com/zushi-gandenji/"
+          },
+          {
+            "label": "visiting-japan",
+            "url": "https://www.visiting-japan.com/ja/articles/kanagawa/j14zs-gandenji.htm"
+          },
+          {
+            "label": "タウンニュース",
+            "url": "https://www.townnews.co.jp/0503/2026/09/25/854086.html"
+          },
+          {
+            "label": "神奈川県観光協会",
+            "url": "https://www.kanagawa-kankou.or.jp/spot/1776"
+          },
+          {
+            "label": "三浦半島観光（逗子市）",
+            "url": "https://zushi.miurahantourism.jp/gandenji/"
+          },
+          {
+            "label": "Google マップ",
+            "url": "https://maps.google.com/?cid=8899242507340918874"
+          }
+        ],
+        "checkedAt": "2026-11-10"
+      }
+    },
+    {
+      "id": "li0201",
+      "vertical": "life",
+      "category": "shrine-temple",
+      "name": "駒形神社",
+      "pref": "iwate",
+      "cityName": "奥州市",
+      "address": "岩手県奥州市水沢中上野町1-83",
+      "lat": 39.1365328,
+      "lng": 141.1380231,
+      "hours": "毎日 09:00 - 17:00",
+      "phone": "0197-23-2851",
+      "url": "http://komagata.iwate.jp/",
+      "website": "http://komagata.iwate.jp/",
+      "mapUrl": "https://maps.google.com/?cid=4061007022371617763",
+      "image": "/_portal/vshops/tri-life-458/g01.jpg",
+      "images": [
+        "/_portal/vshops/tri-life-458/g01.jpg",
+        "/_portal/vshops/tri-life-458/g02.jpg",
+        "/_portal/vshops/tri-life-458/g03.jpg",
+        "/_portal/vshops/tri-life-458/g04.jpg",
+        "/_portal/vshops/tri-life-458/g05.jpg",
+        "/_portal/vshops/tri-life-458/g06.jpg",
+        "/_portal/vshops/tri-life-458/g07.jpg",
+        "/_portal/vshops/tri-life-458/g08.jpg",
+        "/_portal/vshops/tri-life-458/g09.jpg",
+        "/_portal/vshops/tri-life-458/g10.jpg"
+      ],
+      "photos": [
+        {
+          "path": "/_portal/vshops/tri-life-458/g01.jpg",
+          "what": "桜に囲まれた本殿を上空から望む境内",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-life-458/g02.jpg",
+          "what": "「駒形神社」と記された社号標と参道",
+          "kind": "exterior",
+          "width": 675,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-life-458/g03.jpg",
+          "what": "参道の正面と本殿への石畳",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-life-458/g04.jpg",
+          "what": "注連縄が張られた鳥居と「駒形神社」の提灯",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-life-458/g05.jpg",
+          "what": "石鳥居と参道、杉の老樹が並ぶ境内",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-life-458/g06.jpg",
+          "what": "「駒形神社」と書かれた扁額が掲げられた拝殿内部",
+          "kind": "common",
+          "width": 1200,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-life-458/g07.jpg",
+          "what": "絵馬が並ぶ境内の掛け場",
+          "kind": "common",
+          "width": 904,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-life-458/g08.jpg",
+          "what": "色とりどりのお守りが並ぶ授与所",
+          "kind": "common",
+          "width": 1200,
+          "height": 675
+        },
+        {
+          "path": "/_portal/vshops/tri-life-458/g09.jpg",
+          "what": "本殿と前庭の全景",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-life-458/g10.jpg",
+          "what": "境内の小祠と「駒形神社」の幟旗",
+          "kind": "exterior",
+          "width": 900,
+          "height": 1200
+        }
+      ],
+      "tags": [
+        "駐車場あり"
+      ],
+      "article": {
+        "headline": "岩手県奥州市水沢公園内に鎮座する陸中一宮。約1,500年の歴史を持ち、御祈祷・神前結婚式・奥宮登拝祭など多彩な行事を執り行う。",
+        "lede": "奥州市にある「駒形神社」です。陸中一宮として知られるこの神社は、約1,500年前に焼石連峰の駒ヶ岳山頂に祀られたことを起源とし、明治36年（1903年）に現在地・水沢公園内に遷座しました。ご祭神は天照大御神をはじめとする六柱で、産業開発（社業繁栄）・交通安全・必勝祈願・合格祈願・方位除け・家内安全・良縁祈願・厄除け・心願成就の御神徳があるとされています。境内は桜と杉の老樹に囲まれており、水沢公園の桜とともにヒガン系桜群として岩手県の天然記念物に指定されています。正月三が日には延べ12万人が参拝に訪れる、地域を代表する神社です。",
+        "sections": [
+          {
+            "heading": "由緒・歴史",
+            "body": "駒形神社の創祀は、雄略天皇の御代（456年頃）とされます。第十代崇神天皇の末裔である上毛野胆沢公が、胆沢平野から望む駒ヶ岳山頂に駒形大神を奉祀したのが始まりと伝わります。850年には慈覚大師によるものとされる社殿が駒ヶ岳山頂に建立され、862年には東北地方で最高階位の神格を得ました。927年の延喜式神名帳にも記載された「式内社」であり、全国の分社は東北各県から関東にわたり、百余社に及ぶとされています。坂上田村麻呂征夷大将軍は蝦夷のアテルイとの和解の後、幾度も駒形神社の神階昇格を朝廷に申し出ました。奥州藤原氏も篤く崇敬し、ご神霊を前沢の束稲山（駒形山）にも奉祀しました。藩政期には伊達仙台藩と南部盛岡藩の両藩より守護され、約20年ごとに山頂社殿が造り替えられました。明治36年（1903年）に現在地への遷座を経て、現在に至ります。"
+          },
+          {
+            "heading": "内容（祈願・行事・施設）",
+            "body": "御祈祷は家内安全・交通安全・必勝祈願・厄年祓い・除災開運・安産祈願・初宮詣・七五三詣・合格祈願など多岐にわたり、随時受け付けています。神前結婚式は最大100名程度まで参列でき、式次第は参進・修祓・祝詞奏上・三々九度・誓詞奏上・玉串奉奠・指輪交換・親族固めの盃などで構成され、所要時間は約40分です。雅楽は生演奏またはCD演奏から選択できます。境内施設として龍昇殿（1階100畳・フローリング、2階120畳・畳）と斎館（1・2階各50畳・畳）があり、結婚披露宴や研修会・お花見などに利用できます。御守・絵馬・おみくじのほか、御朱印（直書き・書き置き）も受け付けており、駒形神社・駒形神社奥宮・塩竈神社の3種類があります。毎年5月3日の奉遷記念大祭では「子供騎馬武者行列」が行われ、子どもたちが武者姿で水沢市街を巡行します。どんと祭は毎年成人の日と1月15日に斎行し、古い神札やお守りのお焚き上げを行います。"
+          },
+          {
+            "heading": "成り立ちと人",
+            "body": "駒形神社ゆかりの人物として、当地水沢出身の後藤新平氏がいます。後藤氏は台湾総督・鉄道総裁・ボーイスカウト総裁・東京市長を歴任し、関東大震災後には復興院を創設した人物で、駒形神社を大切にしたとされています。同じく水沢出身の第30代内閣総理大臣・齋藤實氏も駒形神社を敬ったとされています。崇敬会は平成18年（2006年）に設立され、敬神崇祖・日本の心を涵養し社会に貢献することを旨として活動を続けています。毎年8月1日から2日にかけて行われる「奥宮登拝祭」では、崇敬会員らが駒ヶ岳山頂の奥宮まで登拝し、みちのくの五穀豊穣・国土安寧・登拝者の繁栄を祈ります。現在も奥宮は岩手県胆沢郡金ヶ崎町西根駒ヶ岳山頂に、里宮は金ヶ崎町と北上市に鎮座しています。"
+          },
+          {
+            "heading": "行き方と使い方",
+            "body": "JR水沢駅から徒歩10分、東北道・奥州スマートインターから車で7分、東北道・水沢インターから車で12分です。境内駐車場は30台（元日は利用不可）で、近隣のZプラザアテルイ駐車場（神社北西・乗用車150台）も利用できます。お札・お守・御朱印の受付は9時から17時頃まで、御祈祷の受付は9時30分から16時30分頃まで（時間外はご相談）です。元旦は0時より受け付けます。神前結婚式・施設利用・奥宮登拝祭への参加申し込みは、社務所（電話0197-23-2851、フリーダイヤル0120-48-2851）へ問い合わせください。"
+          }
+        ],
+        "menus": [
+          {
+            "name": "御祈祷（家内安全・交通安全・合格祈願・厄除けなど）"
+          },
+          {
+            "name": "神前結婚式"
+          },
+          {
+            "name": "御朱印（駒形神社・駒形神社奥宮・塩竈神社）"
+          },
+          {
+            "name": "奥宮登拝祭"
+          },
+          {
+            "name": "子供騎馬武者行列（5月3日）"
+          },
+          {
+            "name": "どんと祭（成人の日・1月15日）"
+          },
+          {
+            "name": "龍昇殿・斎館（結婚披露宴・研修会・お花見）"
+          }
+        ],
+        "sources": [
+          {
+            "label": "公式サイト",
+            "url": "https://komagata.iwate.jp/"
+          },
+          {
+            "label": "公式サイト（駒形神社について）",
+            "url": "https://komagata.iwate.jp/about/"
+          },
+          {
+            "label": "公式サイト（アクセス）",
+            "url": "https://komagata.iwate.jp/about/access.html"
+          },
+          {
+            "label": "公式サイト（施設のご案内）",
+            "url": "https://komagata.iwate.jp/about/facility.html"
+          },
+          {
+            "label": "公式サイト（初詣・どんと祭）",
+            "url": "https://komagata.iwate.jp/about/hatsumoude.html"
+          },
+          {
+            "label": "公式サイト（神前結婚式）",
+            "url": "https://komagata.iwate.jp/shinzen/"
+          },
+          {
+            "label": "いわて旅",
+            "url": "https://iwatetabi.jp/spots/4342/"
+          },
+          {
+            "label": "ホトカミ",
+            "url": "https://hotokami.jp/area/iwate/Htrtr/Htrtrtm/Dgysm/106060/"
+          },
+          {
+            "label": "Google マップ",
+            "url": "https://maps.google.com/?cid=4061007022371617763"
+          }
+        ],
+        "checkedAt": "2026-11-10"
+      }
     }
   ]
 }

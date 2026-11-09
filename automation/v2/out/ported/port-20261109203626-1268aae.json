@@ -1,0 +1,118 @@
+{
+  "commit": "1268aaec76b3a15327521039b691962710cdf421",
+  "source": "/Users/shunta/claude/gp-k-auto2",
+  "count": 10,
+  "added": [
+    {
+      "row": 450,
+      "name": "滝の観世音円通寺",
+      "key": "tri-life-450",
+      "vertical": "くらし",
+      "id": "li0195",
+      "articleId": "li0195",
+      "shopUrl": "https://machinowa.tokyo/life/shop/li0195",
+      "articleUrl": "https://machinowa.tokyo/life/article/li0195",
+      "sheetUrl": "https://machinowa.tokyo/life/article/li0195"
+    },
+    {
+      "row": 451,
+      "name": "大社神社",
+      "key": "tri-life-451",
+      "vertical": "くらし",
+      "id": "li0196",
+      "articleId": "li0196",
+      "shopUrl": "https://machinowa.tokyo/life/shop/li0196",
+      "articleUrl": "https://machinowa.tokyo/life/article/li0196",
+      "sheetUrl": "https://machinowa.tokyo/life/article/li0196"
+    },
+    {
+      "row": 452,
+      "name": "久尻神社",
+      "key": "tri-life-452",
+      "vertical": "くらし",
+      "id": "li0197",
+      "articleId": "li0197",
+      "shopUrl": "https://machinowa.tokyo/life/shop/li0197",
+      "articleUrl": "https://machinowa.tokyo/life/article/li0197",
+      "sheetUrl": "https://machinowa.tokyo/life/article/li0197"
+    },
+    {
+      "row": 453,
+      "name": "龍岸寺",
+      "key": "tri-life-453",
+      "vertical": "くらし",
+      "id": "li0198",
+      "articleId": "li0198",
+      "shopUrl": "https://machinowa.tokyo/life/shop/li0198",
+      "articleUrl": "https://machinowa.tokyo/life/article/li0198",
+      "sheetUrl": "https://machinowa.tokyo/life/article/li0198"
+    },
+    {
+      "row": 454,
+      "name": "手打ちうどん次男坊亭",
+      "key": "tri-gourmet-454",
+      "vertical": "グルメ",
+      "id": "r912",
+      "articleId": "手打ちうどん次男坊亭",
+      "shopUrl": "https://machinowa.tokyo/restaurant/r912",
+      "articleUrl": "https://machinowa.tokyo/feature/手打ちうどん次男坊亭",
+      "sheetUrl": "https://machinowa.tokyo/feature/手打ちうどん次男坊亭"
+    },
+    {
+      "row": 455,
+      "name": "浄光寺",
+      "key": "tri-life-455",
+      "vertical": "くらし",
+      "id": "li0199",
+      "articleId": "li0199",
+      "shopUrl": "https://machinowa.tokyo/life/shop/li0199",
+      "articleUrl": "https://machinowa.tokyo/life/article/li0199",
+      "sheetUrl": "https://machinowa.tokyo/life/article/li0199"
+    },
+    {
+      "row": 456,
+      "name": "岩殿寺",
+      "key": "tri-life-456",
+      "vertical": "くらし",
+      "id": "li0200",
+      "articleId": "li0200",
+      "shopUrl": "https://machinowa.tokyo/life/shop/li0200",
+      "articleUrl": "https://machinowa.tokyo/life/article/li0200",
+      "sheetUrl": "https://machinowa.tokyo/life/article/li0200"
+    },
+    {
+      "row": 457,
+      "name": "まぐろ節中華そば 温知",
+      "key": "tri-gourmet-457",
+      "vertical": "グルメ",
+      "id": "r913",
+      "articleId": "まぐろ節中華そば温知",
+      "shopUrl": "https://machinowa.tokyo/restaurant/r913",
+      "articleUrl": "https://machinowa.tokyo/feature/まぐろ節中華そば温知",
+      "sheetUrl": "https://machinowa.tokyo/feature/まぐろ節中華そば温知"
+    },
+    {
+      "row": 458,
+      "name": "駒形神社",
+      "key": "tri-life-458",
+      "vertical": "くらし",
+      "id": "li0201",
+      "articleId": "li0201",
+      "shopUrl": "https://machinowa.tokyo/life/shop/li0201",
+      "articleUrl": "https://machinowa.tokyo/life/article/li0201",
+      "sheetUrl": "https://machinowa.tokyo/life/article/li0201"
+    },
+    {
+      "row": 461,
+      "name": "ブーランジェ　D316CASA",
+      "key": "tri-gourmet-461",
+      "vertical": "グルメ",
+      "id": "r914",
+      "articleId": "ブーランジェD316CASA",
+      "shopUrl": "https://machinowa.tokyo/restaurant/r914",
+      "articleUrl": "https://machinowa.tokyo/feature/ブーランジェD316CASA",
+      "sheetUrl": "https://machinowa.tokyo/feature/ブーランジェD316CASA"
+    }
+  ],
+  "skipped": []
+}

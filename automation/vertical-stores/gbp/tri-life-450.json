@@ -1,0 +1,32 @@
+{
+  "tab": "トリニティアポ",
+  "tabEn": "tri-life",
+  "row": 450,
+  "sheet": {
+    "name": "滝の観世音円通寺",
+    "address": "",
+    "url": "https://www.google.com/maps/search/?api=1&query=%E6%BB%9D%E3%81%AE%E8%A6%B3%E4%B8%96%E9%9F%B3%E5%86%86%E9%80%9A%E5%AF%BA%20094-857-2290%20%E3%80%92820-0303%20%E7%A6%8F%E5%B2%A1%E7%9C%8C%E5%98%89%E9%BA%BB%E5%B8%82%E4%B8%AD%E7%9B%8A%EF%BC%92%EF%BC%96",
+    "type": "寺",
+    "d1": "",
+    "d2": ""
+  },
+  "urlKind": "mapsApi",
+  "route": "第1段(verify-gbp.mjs)で確認済み",
+  "verdict": "一致",
+  "verdictReason": "手がかり: 店名＋電話＋住所(番地まで)。電話が一致／店名: exact(シート「滝の観世音円通寺」/ マップ「滝の観世音 円通寺」)／住所(シート): exact・町名・番地とも一致",
+  "place": {
+    "name": "滝の観世音 円通寺",
+    "address": "福岡県嘉麻市中益２６",
+    "category": "仏教寺院",
+    "lat": 33.5432216,
+    "lng": 130.7549377,
+    "gbpUrl": "https://maps.google.com/?cid=5814085499233284684",
+    "phone": "0948-57-2290",
+    "website": null,
+    "hours": null,
+    "reserveLinks": [],
+    "statusSignals": [],
+    "closedSignal": false
+  },
+  "fetchedAt": "2026-11-09T20:21:29.693Z"
+}

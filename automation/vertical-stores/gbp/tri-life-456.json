@@ -1,0 +1,40 @@
+{
+  "tab": "トリニティアポ",
+  "tabEn": "tri-life",
+  "row": 456,
+  "sheet": {
+    "name": "岩殿寺",
+    "address": "",
+    "url": "https://www.google.com/maps/search/?api=1&query=%E5%B2%A9%E6%AE%BF%E5%AF%BA%20046-871-2268%20%E3%80%92249-0001%20%E7%A5%9E%E5%A5%88%E5%B7%9D%E7%9C%8C%E9%80%97%E5%AD%90%E5%B8%82%E4%B9%85%E6%9C%A8%EF%BC%95%E4%B8%81%E7%9B%AE%EF%BC%97%E2%88%92%EF%BC%91%EF%BC%91",
+    "type": "お寺",
+    "d1": "",
+    "d2": ""
+  },
+  "urlKind": "mapsApi",
+  "route": "第1段(verify-gbp.mjs)で確認済み",
+  "verdict": "一致",
+  "verdictReason": "手がかり: 店名＋電話＋住所(番地まで)。電話が一致／店名: exact(シート「岩殿寺」/ マップ「岩殿寺」)／住所(シート): exact・町名・番地とも一致",
+  "place": {
+    "name": "岩殿寺",
+    "address": "神奈川県逗子市久木５丁目７−１１",
+    "category": "仏教寺院",
+    "lat": 35.3045301,
+    "lng": 139.572362,
+    "gbpUrl": "https://maps.google.com/?cid=8899242507340918874",
+    "phone": "046-871-2268",
+    "website": "https://bandou.gr.jp/temple/%E6%B5%B7%E9%9B%B2%E5%B1%B1-%E5%B2%A9%E6%AE%BF%E5%AF%BA%EF%BC%88%E5%B2%A9%E6%AE%BF%E8%A6%B3%E9%9F%B3%EF%BC%89/",
+    "hours": {
+      "月": "09:00–16:00",
+      "火": "09:00–16:00",
+      "水": "09:00–16:00",
+      "木": "09:00–16:00",
+      "金": "09:00–16:00",
+      "土": "09:00–16:00",
+      "日": "09:00–16:00"
+    },
+    "reserveLinks": [],
+    "statusSignals": [],
+    "closedSignal": false
+  },
+  "fetchedAt": "2026-11-09T20:25:21.375Z"
+}

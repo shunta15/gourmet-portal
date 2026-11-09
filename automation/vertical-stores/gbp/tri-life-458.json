@@ -1,0 +1,40 @@
+{
+  "tab": "トリニティアポ",
+  "tabEn": "tri-life",
+  "row": 458,
+  "sheet": {
+    "name": "駒形神社",
+    "address": "",
+    "url": "https://www.google.com/maps/search/?api=1&query=%E9%A7%92%E5%BD%A2%E7%A5%9E%E7%A4%BE%20019-723-2851%20%E3%80%92023-0857%20%E5%B2%A9%E6%89%8B%E7%9C%8C%E5%A5%A5%E5%B7%9E%E5%B8%82%E6%B0%B4%E6%B2%A2%E4%B8%AD%E4%B8%8A%E9%87%8E%E7%94%BA%EF%BC%91%E2%88%92%EF%BC%98%EF%BC%93",
+    "type": "その他",
+    "d1": "",
+    "d2": ""
+  },
+  "urlKind": "mapsApi",
+  "route": "第1段(verify-gbp.mjs)で確認済み",
+  "verdict": "一致",
+  "verdictReason": "手がかり: 店名＋電話＋住所(番地まで)。電話が一致／店名: exact(シート「駒形神社」/ マップ「駒形神社」)／住所(シート): exact・町名・番地とも一致",
+  "place": {
+    "name": "駒形神社",
+    "address": "岩手県奥州市水沢中上野町１−８３",
+    "category": "神社",
+    "lat": 39.1365328,
+    "lng": 141.1380231,
+    "gbpUrl": "https://maps.google.com/?cid=4061007022371617763",
+    "phone": "0197-23-2851",
+    "website": "http://komagata.iwate.jp/",
+    "hours": {
+      "月": "09:00–17:00",
+      "火": "09:00–17:00",
+      "水": "09:00–17:00",
+      "木": "09:00–17:00",
+      "金": "09:00–17:00",
+      "土": "09:00–17:00",
+      "日": "09:00–17:00"
+    },
+    "reserveLinks": [],
+    "statusSignals": [],
+    "closedSignal": false
+  },
+  "fetchedAt": "2026-11-09T20:26:36.783Z"
+}

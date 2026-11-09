@@ -22392,6 +22392,159 @@ export const ARTICLE_STORES: Restaurant[] = [
       "ランチ"
     ],
     "featureId": "そば茶屋吉酔"
+  },
+  {
+    "id": "r912",
+    "name": "手打ちうどん次男坊亭",
+    "cuisine": "うどん屋",
+    "area": "新潟県・東蒲原郡阿賀町",
+    "region": "niigata",
+    "shape": "square",
+    "image": "/restaurants/teleapo-手打ちうどん次男坊亭/hero.jpg",
+    "heroImages": [
+      "/restaurants/teleapo-手打ちうどん次男坊亭/hero.jpg",
+      "/restaurants/teleapo-手打ちうどん次男坊亭/point1.jpg",
+      "/restaurants/teleapo-手打ちうどん次男坊亭/point2.jpg",
+      "/restaurants/teleapo-手打ちうどん次男坊亭/point3.jpg",
+      "/restaurants/teleapo-手打ちうどん次男坊亭/point4.jpg"
+    ],
+    "gallery": [
+      "/restaurants/teleapo-手打ちうどん次男坊亭/hero.jpg",
+      "/restaurants/teleapo-手打ちうどん次男坊亭/point1.jpg",
+      "/restaurants/teleapo-手打ちうどん次男坊亭/point2.jpg",
+      "/restaurants/teleapo-手打ちうどん次男坊亭/point3.jpg",
+      "/restaurants/teleapo-手打ちうどん次男坊亭/point4.jpg"
+    ],
+    "desc": "新潟県東蒲原郡阿賀町平堀は、福島県境へと続く国道49号が走る山あいの地区である。手打ちうどん次男坊亭は、この国道49号沿いに昭和60年から店を構える手打ちうどんの店だ。",
+    "address": "新潟県東蒲原郡阿賀町平堀1153-1",
+    "hours": "毎日 10:30–19:00",
+    "closed": "なし（Googleマップの営業時間による）",
+    "seats": "48席",
+    "nearest": "—",
+    "phone": "0254-92-4888",
+    "source": {
+      "label": "Google ビジネスプロフィール",
+      "url": "https://maps.google.com/?cid=11807356856069590004"
+    },
+    "body": [
+      "手打ちうどん次男坊亭は、新潟県東蒲原郡阿賀町にあるお店です。業態は「うどん屋」、所在地は新潟県東蒲原郡阿賀町平堀1153-1です。マチノワ編集部の特集記事では、「琴平清水と米粉ブレンドで作る手打ち麺」・「3種の鰹節と煮干し、昆布・椎茸で引くつゆ」などを取り上げています。",
+      "営業時間は毎日 10:30–19:00で、定休日はありません（Googleマップの営業時間による）。席は48席。営業時間や価格は変わることがあるため、訪問前に公式サイトやSNS、お電話でご確認ください。"
+    ],
+    "highlights": [
+      "琴平清水と米粉ブレンドで作る手打ち麺",
+      "3種の鰹節と煮干し、昆布・椎茸で引くつゆ",
+      "うどん・そば・ラーメンと丼ものを組み合わせるメニュー",
+      "店の成り立ちと阿部夫妻の歩み"
+    ],
+    "tags": [
+      "うどん屋",
+      "うどん",
+      "阿賀町",
+      "ランチ"
+    ],
+    "featureId": "手打ちうどん次男坊亭"
+  },
+  {
+    "id": "r913",
+    "name": "まぐろ節中華そば 温知",
+    "cuisine": "ラーメン屋",
+    "area": "新潟県・新潟市東区",
+    "region": "niigata",
+    "shape": "square",
+    "image": "/restaurants/teleapo-まぐろ節中華そば温知/hero.jpg",
+    "heroImages": [
+      "/restaurants/teleapo-まぐろ節中華そば温知/hero.jpg",
+      "/restaurants/teleapo-まぐろ節中華そば温知/point1.jpg",
+      "/restaurants/teleapo-まぐろ節中華そば温知/point2.jpg",
+      "/restaurants/teleapo-まぐろ節中華そば温知/point3.jpg",
+      "/restaurants/teleapo-まぐろ節中華そば温知/point4.jpg"
+    ],
+    "gallery": [
+      "/restaurants/teleapo-まぐろ節中華そば温知/hero.jpg",
+      "/restaurants/teleapo-まぐろ節中華そば温知/point1.jpg",
+      "/restaurants/teleapo-まぐろ節中華そば温知/point2.jpg",
+      "/restaurants/teleapo-まぐろ節中華そば温知/point3.jpg",
+      "/restaurants/teleapo-まぐろ節中華そば温知/point4.jpg"
+    ],
+    "desc": "新潟市東区太平は、新潟空港に隣接した国道113号沿いにある。まぐろ節中華そば 温知（おんち）は、このエリアに2021年12月16日にグランドオープンしたラーメン店である。",
+    "address": "新潟県新潟市東区太平2丁目2-1 レストランルックアイランド",
+    "hours": "月・火・木〜日 11:00–15:20, 17:30–21:20",
+    "closed": "水曜日",
+    "seats": "31席",
+    "nearest": "—",
+    "phone": "025-383-8833",
+    "instagram": "https://www.instagram.com/onchi.maguro",
+    "source": {
+      "label": "Google ビジネスプロフィール",
+      "url": "https://maps.google.com/?cid=2691476835366398416"
+    },
+    "body": [
+      "まぐろ節中華そば 温知は、新潟県新潟市東区にあるお店です。業態は「ラーメン屋」、所在地は新潟県新潟市東区太平2丁目2-1 レストランルックアイランドです。マチノワ編集部の特集記事では、「まぐろ節が生み出す塩・醤油のスープ」・「へぎそばをイメージした自家製麺と昆布水のつけそば」などを取り上げています。",
+      "営業時間は月・火・木〜日 11:00–15:20, 17:30–21:20、定休日は水曜日です（Googleマップの営業時間による）。席は31席。営業時間や価格は変わることがあるため、訪問前に公式サイトやSNS、お電話でご確認ください。"
+    ],
+    "highlights": [
+      "まぐろ節が生み出す塩・醤油のスープ",
+      "へぎそばをイメージした自家製麺と昆布水のつけそば",
+      "洋食の技法から生まれたチャーシューとサイドメニュー",
+      "31席の小上がり多めの店内と10台の駐車場"
+    ],
+    "tags": [
+      "ラーメン屋",
+      "東区",
+      "ランチ"
+    ],
+    "featureId": "まぐろ節中華そば温知"
+  },
+  {
+    "id": "r914",
+    "name": "ブーランジェ D316 CASA",
+    "cuisine": "ベーカリー",
+    "area": "神奈川県・横浜市青葉区",
+    "region": "kanagawa",
+    "shape": "square",
+    "image": "/restaurants/teleapo-ブーランジェD316CASA/hero.jpg",
+    "heroImages": [
+      "/restaurants/teleapo-ブーランジェD316CASA/hero.jpg",
+      "/restaurants/teleapo-ブーランジェD316CASA/point1.jpg",
+      "/restaurants/teleapo-ブーランジェD316CASA/point2.jpg",
+      "/restaurants/teleapo-ブーランジェD316CASA/point3.jpg",
+      "/restaurants/teleapo-ブーランジェD316CASA/point4.jpg"
+    ],
+    "gallery": [
+      "/restaurants/teleapo-ブーランジェD316CASA/hero.jpg",
+      "/restaurants/teleapo-ブーランジェD316CASA/point1.jpg",
+      "/restaurants/teleapo-ブーランジェD316CASA/point2.jpg",
+      "/restaurants/teleapo-ブーランジェD316CASA/point3.jpg",
+      "/restaurants/teleapo-ブーランジェD316CASA/point4.jpg"
+    ],
+    "desc": "2020年5月23日に、東京都大田区下丸子に本店を持つブーランジェ D316の2号店として開いた。",
+    "address": "神奈川県横浜市青葉区青葉台1丁目19-1",
+    "hours": "毎日 09:00–18:30",
+    "closed": "なし（Googleマップの営業時間による）",
+    "seats": "—（訪問前に公式確認）",
+    "nearest": "—",
+    "phone": "045-295-4637",
+    "source": {
+      "label": "Google ビジネスプロフィール",
+      "url": "https://maps.google.com/?cid=15869847023283649406"
+    },
+    "body": [
+      "ブーランジェ D316 CASAは、神奈川県横浜市青葉区にあるお店です。業態は「ベーカリー」、所在地は神奈川県横浜市青葉区青葉台1丁目19-1です。マチノワ編集部の特集記事では、「看板の食パン「D316」と発酵バターのクロワッサン」・「生地を支える素材と製法のこだわり」などを取り上げています。",
+      "営業時間は毎日 09:00–18:30で、定休日はありません（Googleマップの営業時間による）。営業時間や価格は変わることがあるため、訪問前に公式サイトやSNS、お電話でご確認ください。"
+    ],
+    "highlights": [
+      "看板の食パン「D316」と発酵バターのクロワッサン",
+      "生地を支える素材と製法のこだわり",
+      "ランチ向けのピザやサンドから定番の菓子パンまで",
+      "元住居兼自転車屋を改装した木のぬくもりある空間"
+    ],
+    "tags": [
+      "ベーカリー",
+      "パン",
+      "青葉区",
+      "ランチ"
+    ],
+    "featureId": "ブーランジェD316CASA"
   }
 ];
 
@@ -22864,7 +23017,10 @@ export const ARTICLE_STORE_FEATURE_IDS: Record<string, string> = {
   "r908": "焼き鳥えにし",
   "r909": "Loiseau(ロワゾー)",
   "r910": "天よし亭",
-  "r911": "そば茶屋吉酔"
+  "r911": "そば茶屋吉酔",
+  "r912": "手打ちうどん次男坊亭",
+  "r913": "まぐろ節中華そば温知",
+  "r914": "ブーランジェD316CASA"
 };
 
 /** 特集記事ID → 店舗ID */
@@ -23336,5 +23492,8 @@ export const ARTICLE_STORE_ID_BY_FEATURE: Record<string, string> = {
   "焼き鳥えにし": "r908",
   "Loiseau(ロワゾー)": "r909",
   "天よし亭": "r910",
-  "そば茶屋吉酔": "r911"
+  "そば茶屋吉酔": "r911",
+  "手打ちうどん次男坊亭": "r912",
+  "まぐろ節中華そば温知": "r913",
+  "ブーランジェD316CASA": "r914"
 };

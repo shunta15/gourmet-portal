@@ -3663,5 +3663,26 @@
     "warnings": [
       "cuisine は GBPカテゴリ"
     ]
+  },
+  "r912": {
+    "articleId": "手打ちうどん次男坊亭",
+    "name": "手打ちうどん次男坊亭",
+    "warnings": [
+      "cuisine は GBPカテゴリ"
+    ]
+  },
+  "r913": {
+    "articleId": "まぐろ節中華そば温知",
+    "name": "まぐろ節中華そば 温知",
+    "warnings": [
+      "cuisine は GBPカテゴリ"
+    ]
+  },
+  "r914": {
+    "articleId": "ブーランジェD316CASA",
+    "name": "ブーランジェ D316 CASA",
+    "warnings": [
+      "cuisine は GBPカテゴリ"
+    ]
   }
 }

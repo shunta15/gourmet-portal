@@ -179,6 +179,9 @@ export const ONE_PAGE_UNLISTED_SHOP_OF_FEATURE: Readonly<Record<string, string>>
   "Loiseau(ロワゾー)": "r909", // L'oiseau(ロワゾー)
   "天よし亭": "r910", // 天よし亭
   "そば茶屋吉酔": "r911", // そば茶屋 吉酔
+  "手打ちうどん次男坊亭": "r912", // 手打ちうどん次男坊亭
+  "まぐろ節中華そば温知": "r913", // まぐろ節中華そば 温知
+  "ブーランジェD316CASA": "r914", // ブーランジェ D316 CASA
 };
 
 const NFC = (s: string) => s.normalize("NFC");

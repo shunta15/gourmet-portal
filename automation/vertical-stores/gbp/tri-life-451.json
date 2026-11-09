@@ -1,0 +1,40 @@
+{
+  "tab": "トリニティアポ",
+  "tabEn": "tri-life",
+  "row": 451,
+  "sheet": {
+    "name": "大社神社",
+    "address": "",
+    "url": "https://www.google.com/maps/search/?api=1&query=%E5%A4%A7%E7%A4%BE%E7%A5%9E%E7%A4%BE%20053-388-9622%20%E3%80%92442-0854%20%E6%84%9B%E7%9F%A5%E7%9C%8C%E8%B1%8A%E5%B7%9D%E5%B8%82%E5%9B%BD%E5%BA%9C%E7%94%BA%E6%B5%81%E9%9C%9E%EF%BC%95",
+    "type": "神社",
+    "d1": "",
+    "d2": ""
+  },
+  "urlKind": "mapsApi",
+  "route": "第1段(verify-gbp.mjs)で確認済み",
+  "verdict": "一致",
+  "verdictReason": "手がかり: 店名＋電話＋住所(番地まで)。電話が一致／店名: exact(シート「大社神社」/ マップ「大社神社」)／住所(シート): exact・町名・番地とも一致",
+  "place": {
+    "name": "大社神社",
+    "address": "愛知県豊川市国府町流霞５",
+    "category": "神社",
+    "lat": 34.8388765,
+    "lng": 137.3234924,
+    "gbpUrl": "https://maps.google.com/?cid=17462724532424977911",
+    "phone": "0533-88-9622",
+    "website": "http://www.ooyasiro-jinjya.com/",
+    "hours": {
+      "月": "09:30–17:00",
+      "火": "09:30–17:00",
+      "水": "09:30–17:00",
+      "木": "09:30–17:00",
+      "金": "09:30–17:00",
+      "土": "09:30–17:00",
+      "日": "09:30–17:00"
+    },
+    "reserveLinks": [],
+    "statusSignals": [],
+    "closedSignal": false
+  },
+  "fetchedAt": "2026-11-09T20:22:06.220Z"
+}

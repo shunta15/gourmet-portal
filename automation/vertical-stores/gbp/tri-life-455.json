@@ -1,0 +1,40 @@
+{
+  "tab": "トリニティアポ",
+  "tabEn": "tri-life",
+  "row": 455,
+  "sheet": {
+    "name": "浄光寺",
+    "address": "",
+    "url": "https://www.google.com/maps/search/?api=1&query=%E6%B5%84%E5%85%89%E5%AF%BA%20045-261-7976%20%E3%80%92232-0033%20%E7%A5%9E%E5%A5%88%E5%B7%9D%E7%9C%8C%E6%A8%AA%E6%B5%9C%E5%B8%82%E5%8D%97%E5%8C%BA%E4%B8%AD%E6%9D%91%E7%94%BA%EF%BC%91%E4%B8%81%E7%9B%AE%EF%BC%93%EF%BC%97%E2%88%92%EF%BC%92",
+    "type": "寺",
+    "d1": "",
+    "d2": ""
+  },
+  "urlKind": "mapsApi",
+  "route": "第1段(verify-gbp.mjs)で確認済み",
+  "verdict": "一致",
+  "verdictReason": "手がかり: 店名＋電話＋住所(番地まで)。電話が一致／店名: contains(シート「浄光寺」/ マップ「時宗浄光寺」)／住所(シート): exact・町名・番地とも一致",
+  "place": {
+    "name": "時宗浄光寺",
+    "address": "神奈川県横浜市南区中村町１丁目３７−２",
+    "category": "仏教寺院",
+    "lat": 35.4350782,
+    "lng": 139.6360618,
+    "gbpUrl": "https://maps.google.com/?cid=11759729801644432404",
+    "phone": "045-261-7976",
+    "website": "https://tesshow.jp/kanagawa/fujisawa/temple_yugyo.html",
+    "hours": {
+      "月": "09:00–16:00",
+      "火": "09:00–16:00",
+      "水": "09:00–16:00",
+      "木": "09:00–16:00",
+      "金": "09:00–16:00",
+      "土": "09:00–16:00",
+      "日": "09:00–16:00"
+    },
+    "reserveLinks": [],
+    "statusSignals": [],
+    "closedSignal": false
+  },
+  "fetchedAt": "2026-11-09T20:24:39.423Z"
+}

@@ -1,0 +1,40 @@
+{
+  "tab": "トリニティアポ",
+  "tabEn": "tri-life",
+  "row": 452,
+  "sheet": {
+    "name": "久尻神社",
+    "address": "",
+    "url": "https://www.google.com/maps/search/?api=1&query=%E4%B9%85%E5%B0%BB%E7%A5%9E%E7%A4%BE%20057-255-3995%20%E3%80%92509-5142%20%E5%B2%90%E9%98%9C%E7%9C%8C%E5%9C%9F%E5%B2%90%E5%B8%82%E6%B3%89%E7%94%BA%E4%B9%85%E5%B0%BB%EF%BC%97%EF%BC%98%EF%BC%94",
+    "type": "神社",
+    "d1": "",
+    "d2": ""
+  },
+  "urlKind": "mapsApi",
+  "route": "第1段(verify-gbp.mjs)で確認済み",
+  "verdict": "一致",
+  "verdictReason": "手がかり: 店名＋電話＋住所(番地まで)。電話が一致／店名: exact(シート「久尻神社」/ マップ「久尻神社」)／住所(シート): exact・町名・番地とも一致",
+  "place": {
+    "name": "久尻神社",
+    "address": "岐阜県土岐市泉町久尻７８４",
+    "category": "神社",
+    "lat": 35.3586138,
+    "lng": 137.173574,
+    "gbpUrl": "https://maps.google.com/?cid=5422700305325033415",
+    "phone": "0572-55-3995",
+    "website": "http://www.gifu-jinjacho.jp/syosai.php?shrno=2321",
+    "hours": {
+      "月": "09:00–16:00",
+      "火": "09:00–16:00",
+      "水": "09:00–16:00",
+      "木": "09:00–16:00",
+      "金": "09:00–16:00",
+      "土": "09:00–16:00",
+      "日": "09:00–16:00"
+    },
+    "reserveLinks": [],
+    "statusSignals": [],
+    "closedSignal": false
+  },
+  "fetchedAt": "2026-11-09T20:22:40.382Z"
+}
