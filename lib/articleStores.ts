@@ -22747,6 +22747,53 @@ export const ARTICLE_STORES: Restaurant[] = [
       "ランチ"
     ],
     "featureId": "五果苑"
+  },
+  {
+    "id": "r919",
+    "name": "寿司処 なら",
+    "cuisine": "寿司店",
+    "area": "神奈川県・藤沢市",
+    "region": "kanagawa",
+    "shape": "square",
+    "image": "/restaurants/teleapo-寿司処なら/hero.jpg",
+    "heroImages": [
+      "/restaurants/teleapo-寿司処なら/hero.jpg",
+      "/restaurants/teleapo-寿司処なら/point1.jpg",
+      "/restaurants/teleapo-寿司処なら/point2.jpg",
+      "/restaurants/teleapo-寿司処なら/point3.jpg"
+    ],
+    "gallery": [
+      "/restaurants/teleapo-寿司処なら/hero.jpg",
+      "/restaurants/teleapo-寿司処なら/point1.jpg",
+      "/restaurants/teleapo-寿司処なら/point2.jpg",
+      "/restaurants/teleapo-寿司処なら/point3.jpg"
+    ],
+    "desc": "神奈川県藤沢市の寿司店。",
+    "address": "神奈川県藤沢市藤沢1064 天野ビル 2階",
+    "hours": "毎日 18:00–00:00",
+    "closed": "なし（Googleマップの営業時間による）",
+    "seats": "12席（カウンター8席・テーブル4席）",
+    "nearest": "—",
+    "phone": "080-6534-5105",
+    "source": {
+      "label": "Google ビジネスプロフィール",
+      "url": "https://maps.google.com/?cid=14734653235508044632"
+    },
+    "body": [
+      "寿司処 ならは、神奈川県藤沢市にあるお店です。業態は「寿司店」、所在地は神奈川県藤沢市藤沢1064 天野ビル 2階です。マチノワ編集部の特集記事では、「旬の魚を生かしたつまみと握り」・「自家製からすみ」などを取り上げています。",
+      "営業時間は毎日 18:00–00:00で、定休日はありません（Googleマップの営業時間による）。席は12席（カウンター8席・テーブル4席）。営業時間や価格は変わることがあるため、訪問前に公式サイトやSNS、お電話でご確認ください。"
+    ],
+    "highlights": [
+      "旬の魚を生かしたつまみと握り",
+      "自家製からすみ",
+      "カウンター8席、一人でも使いやすい構成"
+    ],
+    "tags": [
+      "寿司店",
+      "藤沢市",
+      "深夜営業"
+    ],
+    "featureId": "寿司処なら"
   }
 ];
 
@@ -23226,7 +23273,8 @@ export const ARTICLE_STORE_FEATURE_IDS: Record<string, string> = {
   "r915": "沖縄酒場すけまる",
   "r916": "原始焼き酒場さくら井",
   "r917": "へんじんもっこ（ソーセージ・サラミ製造直売所）",
-  "r918": "五果苑"
+  "r918": "五果苑",
+  "r919": "寿司処なら"
 };
 
 /** 特集記事ID → 店舗ID */
@@ -23705,5 +23753,6 @@ export const ARTICLE_STORE_ID_BY_FEATURE: Record<string, string> = {
   "沖縄酒場すけまる": "r915",
   "原始焼き酒場さくら井": "r916",
   "へんじんもっこ（ソーセージ・サラミ製造直売所）": "r917",
-  "五果苑": "r918"
+  "五果苑": "r918",
+  "寿司処なら": "r919"
 };

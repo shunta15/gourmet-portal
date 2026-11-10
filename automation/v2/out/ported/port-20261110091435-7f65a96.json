@@ -1,0 +1,19 @@
+{
+  "commit": "7f65a96bb9655751f119f7dcfb8f79294e72686b",
+  "source": "/Users/shunta/claude/gp-k-auto2",
+  "count": 1,
+  "added": [
+    {
+      "row": 413,
+      "name": "寿司処 なら",
+      "key": "lk-gourmet-41301",
+      "vertical": "グルメ",
+      "id": "r919",
+      "articleId": "寿司処なら",
+      "shopUrl": "https://machinowa.tokyo/restaurant/r919",
+      "articleUrl": "https://machinowa.tokyo/feature/寿司処なら",
+      "sheetUrl": "https://machinowa.tokyo/feature/寿司処なら"
+    }
+  ],
+  "skipped": []
+}
