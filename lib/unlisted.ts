@@ -106,7 +106,9 @@ export const UNLISTED_PLACE_IDS: Readonly<Record<string, readonly string[]>> = {
     "ac0055",
     "ac0056",
     "ac0057",
-    "ac0058"
+    "ac0058",
+    "ac0059",
+    "ac0060"
   ],
   "sports": [
     "sp0004",
@@ -374,7 +376,9 @@ export const UNLISTED_PLACE_FEATURE_IDS: Readonly<Record<string, readonly string
     "焚火屋（takibiya）",
     "彦次郎丸",
     "タイル工房HYGGE",
-    "天然シーグラス専門店A-GLASS"
+    "天然シーグラス専門店A-GLASS",
+    "ひょうたん窯",
+    "Biwako＋Art"
   ],
   "sports": [
     "FITINGRAVITY"

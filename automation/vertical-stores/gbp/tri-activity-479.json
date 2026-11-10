@@ -1,0 +1,40 @@
+{
+  "tab": "トリニティアポ",
+  "tabEn": "tri-activity",
+  "row": 479,
+  "sheet": {
+    "name": "ひょうたん窯",
+    "address": "",
+    "url": "https://www.google.com/maps/search/?api=1&query=%E3%81%B2%E3%82%87%E3%81%86%E3%81%9F%E3%82%93%E7%AA%AF%20080-1627-5666%20%E3%80%92413-0234%20%E9%AB%98%E5%8E%9F-6-%EF%BC%91%EF%BC%93%EF%BC%94%20%E5%A4%A7%E5%AE%A4%2C%20%E4%BC%8A%E6%9D%B1%E5%B8%82%20%E9%9D%99%E5%B2%A1%E7%9C%8C",
+    "type": "その他",
+    "d1": "",
+    "d2": ""
+  },
+  "urlKind": "mapsApi",
+  "route": "第1段(verify-gbp.mjs)で確認済み",
+  "verdict": "一致",
+  "verdictReason": "手がかり: 店名＋電話＋住所(番地まで)。電話が一致／店名: exact(シート「ひょうたん窯」/ マップ「ひょうたん窯」)／住所(シート): exact・町名・番地とも一致",
+  "place": {
+    "name": "ひょうたん窯",
+    "address": "高原-6-１３４ 大室, 伊東市 静岡県 413-0234",
+    "category": "陶器専門店",
+    "lat": 34.9004513,
+    "lng": 139.1010971,
+    "gbpUrl": "https://maps.google.com/?cid=155869295682998041",
+    "phone": "080-1627-5666",
+    "website": "https://hyoutangama.net/",
+    "hours": {
+      "月": "09:00–18:00",
+      "火": "09:00–18:00",
+      "水": "09:00–18:00",
+      "木": "13:00–18:00",
+      "金": "09:00–18:00",
+      "土": "09:00–18:00",
+      "日": "09:00–18:00"
+    },
+    "reserveLinks": [],
+    "statusSignals": [],
+    "closedSignal": false
+  },
+  "fetchedAt": "2026-11-10T08:38:31.119Z"
+}

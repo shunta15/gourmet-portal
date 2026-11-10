@@ -1,0 +1,40 @@
+{
+  "tab": "トリニティアポ",
+  "tabEn": "tri-activity",
+  "row": 484,
+  "sheet": {
+    "name": "Biwako＋Art",
+    "address": "",
+    "url": "https://www.google.com/maps/search/?api=1&query=Biwako%EF%BC%8BArt%20070-1763-0808%20%E3%80%92520-0833%20%E6%BB%8B%E8%B3%80%E7%9C%8C%E5%A4%A7%E6%B4%A5%E5%B8%82%E6%99%B4%E5%B5%90%EF%BC%91%E4%B8%81%E7%9B%AE%EF%BC%91%EF%BC%95%E2%88%92%EF%BC%99%20%E5%BF%A0%E5%85%B5%E8%A1%9B%E3%83%93%E3%83%AB%E6%99%B4%E5%B5%90%20203%E5%8F%B7%E5%AE%A4",
+    "type": "その他",
+    "d1": "",
+    "d2": ""
+  },
+  "urlKind": "mapsApi",
+  "route": "第1段(verify-gbp.mjs)で確認済み",
+  "verdict": "一致",
+  "verdictReason": "手がかり: 店名＋電話＋住所(番地まで)。電話が一致／店名: exact(シート「Biwako＋Art」/ マップ「Biwako＋Art」)／住所(シート): exact・町名・番地とも一致",
+  "place": {
+    "name": "Biwako＋Art",
+    "address": "滋賀県大津市晴嵐１丁目１５−９ 忠兵衛ビル晴嵐 203号室",
+    "category": "アート ギャラリー",
+    "lat": 34.9817874,
+    "lng": 135.9042624,
+    "gbpUrl": "https://maps.google.com/?cid=12587808006513501589",
+    "phone": "070-1763-0808",
+    "website": "https://www.counseling-realize.com/",
+    "hours": {
+      "月": "09:00–18:00",
+      "火": "09:00–18:00",
+      "水": "09:00–18:00",
+      "木": "09:00–18:00",
+      "金": "09:00–18:00",
+      "土": "09:00–18:00",
+      "日": "09:00–18:00"
+    },
+    "reserveLinks": [],
+    "statusSignals": [],
+    "closedSignal": false
+  },
+  "fetchedAt": "2026-11-10T09:29:24.016Z"
+}

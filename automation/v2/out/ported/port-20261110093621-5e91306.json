@@ -1,0 +1,30 @@
+{
+  "commit": "5e913060f7b755c1b428cb4c7119a3b5bf2f0297",
+  "source": "/Users/shunta/claude/gp-k-auto2",
+  "count": 2,
+  "added": [
+    {
+      "row": 479,
+      "name": "ひょうたん窯",
+      "key": "tri-activity-479",
+      "vertical": "アクティビティ",
+      "id": "ac0059",
+      "articleId": "ac0059",
+      "shopUrl": "https://machinowa.tokyo/activity/shop/ac0059",
+      "articleUrl": "https://machinowa.tokyo/activity/article/ac0059",
+      "sheetUrl": "https://machinowa.tokyo/activity/article/ac0059"
+    },
+    {
+      "row": 484,
+      "name": "Biwako＋Art",
+      "key": "tri-activity-484",
+      "vertical": "アクティビティ",
+      "id": "ac0060",
+      "articleId": "ac0060",
+      "shopUrl": "https://machinowa.tokyo/activity/shop/ac0060",
+      "articleUrl": "https://machinowa.tokyo/activity/article/ac0060",
+      "sheetUrl": "https://machinowa.tokyo/activity/article/ac0060"
+    }
+  ],
+  "skipped": []
+}

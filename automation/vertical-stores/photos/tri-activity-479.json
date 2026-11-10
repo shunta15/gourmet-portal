@@ -1,0 +1,46 @@
+{
+  "key": "tri-activity-479",
+  "images": [
+    {
+      "path": "/_portal/vshops/tri-activity-479/g01.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9RvE6GCiC4JTgSZFm2KJS8LHm1odhs8bJo9GeGE9vosLsgIf7jVMTaQynVbc4dKskYvXNEJ8MX-cn-jRw2jx3kkNGErguuu_vb82a-GJwX4eTGFxrcf7AFauw1j-r1gTZVWRMoh=s1200",
+      "pageUrl": "https://maps.google.com/?cid=155869295682998041",
+      "what": "作業台に置かれた赤茶色の手ひねりマグカップ",
+      "kind": "common",
+      "width": 675,
+      "height": 1200,
+      "source": "Google マップ"
+    },
+    {
+      "path": "/_portal/vshops/tri-activity-479/g02.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9TSVD2wkvpXgoh_5s2TPHtuOPW8qXVTzKW-OnHDYKXij-nxN8ocDVpbjddlwHywrLFtkyapV2j4rVRAUlx4eOAZU7PkpxFNUUIlRur4WM3vmGmaLPQmyxkNPKXoWixPm009SODUNA=s1200",
+      "pageUrl": "https://maps.google.com/?cid=155869295682998041",
+      "what": "作業台に並ぶ複数の茶碗とマグカップの陶器作品",
+      "kind": "meal",
+      "width": 675,
+      "height": 1200,
+      "source": "Google マップ"
+    },
+    {
+      "path": "/_portal/vshops/tri-activity-479/g03.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9TuP4GWOkUZ4nf1ajfLUEsr8q48UzYkH-lXMu2mQBA0JHDzNYycAcOmJLTIt4MPr4Cfn7pvoVfp3hdOgDkyePSp6Dec-e2h5Rln7DluwlyQtqFaKA2qT37mDJku46FOUF1x7FE=s1200",
+      "pageUrl": "https://maps.google.com/?cid=155869295682998041",
+      "what": "段ボール箱に梱包された陶器作品",
+      "kind": "meal",
+      "width": 900,
+      "height": 1200,
+      "source": "Google マップ"
+    },
+    {
+      "path": "/_portal/vshops/tri-activity-479/s01.jpg",
+      "imageUrl": "https://hyoutangama.net/wp-content/uploads/2019/01/53.png",
+      "pageUrl": "https://hyoutangama.net/",
+      "what": "草の上に並ぶ様々な色の陶器作品群",
+      "kind": "meal",
+      "width": 640,
+      "height": 480,
+      "source": "公式サイト"
+    }
+  ],
+  "note": "automation/v2/write.mjs が 2026-11-10T09:35:31.638Z に取得。店の実写だけ(AI 画像・汎用画像・地図・ロゴ・顔が大きい画像は除外)。"
+}
