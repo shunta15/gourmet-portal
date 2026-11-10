@@ -1,0 +1,40 @@
+{
+  "tab": "トリニティアポ",
+  "tabEn": "tri-activity",
+  "row": 441,
+  "sheet": {
+    "name": "つりぼり喜水園",
+    "address": "",
+    "url": "https://www.google.com/maps/search/?api=1&query=%E3%81%A4%E3%82%8A%E3%81%BC%E3%82%8A%E5%96%9C%E6%B0%B4%E5%9C%92%20058-382-6255%20%E3%80%92504-0934%20%E5%B2%90%E9%98%9C%E7%9C%8C%E5%90%84%E5%8B%99%E5%8E%9F%E5%B8%82%E5%A4%A7%E9%87%8E%E7%94%BA%EF%BC%95%E4%B8%81%E7%9B%AE%EF%BC%92%EF%BC%96",
+    "type": "その他",
+    "d1": "",
+    "d2": ""
+  },
+  "urlKind": "mapsApi",
+  "route": "第1段(verify-gbp.mjs)で確認済み",
+  "verdict": "一致",
+  "verdictReason": "手がかり: 店名＋電話＋住所(番地まで)。電話が一致／店名: exact(シート「つりぼり喜水園」/ マップ「つりぼり喜水園」)／住所(シート): exact・町名・番地とも一致",
+  "place": {
+    "name": "つりぼり喜水園",
+    "address": "岐阜県各務原市大野町５丁目２６",
+    "category": "釣り堀",
+    "lat": 35.3882771,
+    "lng": 136.8265854,
+    "gbpUrl": "https://maps.google.com/?cid=555021010430148084",
+    "phone": "058-382-6255",
+    "website": "http://www.kisuien.info/",
+    "hours": {
+      "月": "09:00–18:00",
+      "火": "定休日",
+      "水": "09:00–18:00",
+      "木": "09:00–18:00",
+      "金": "09:00–18:00",
+      "土": "09:00–18:00",
+      "日": "09:00–18:00"
+    },
+    "reserveLinks": [],
+    "statusSignals": [],
+    "closedSignal": false
+  },
+  "fetchedAt": "2026-11-10T04:03:14.536Z"
+}

@@ -1,0 +1,40 @@
+{
+  "tab": "トリニティアポ",
+  "tabEn": "tri-life",
+  "row": 466,
+  "sheet": {
+    "name": "興導寺",
+    "address": "",
+    "url": "https://www.google.com/maps/search/?api=1&query=%E8%88%88%E5%B0%8E%E5%AF%BA%20097-872-0585%20%E3%80%92873-0503%20%E5%A4%A7%E5%88%86%E7%9C%8C%E5%9B%BD%E6%9D%B1%E5%B8%82%E5%9B%BD%E6%9D%B1%E7%94%BA%E9%B6%B4%E5%B7%9D%EF%BC%91%EF%BC%98%EF%BC%92%EF%BC%97",
+    "type": "寺",
+    "d1": "",
+    "d2": ""
+  },
+  "urlKind": "mapsApi",
+  "route": "第1段(verify-gbp.mjs)で確認済み",
+  "verdict": "一致",
+  "verdictReason": "手がかり: 店名＋電話＋住所(番地まで)。電話が一致／店名: exact(シート「興導寺」/ マップ「興導寺」)／住所(シート): exact・町名・番地とも一致",
+  "place": {
+    "name": "興導寺",
+    "address": "大分県国東市国東町鶴川１８２７",
+    "category": "仏教寺院",
+    "lat": 33.5597444,
+    "lng": 131.7343,
+    "gbpUrl": "https://maps.google.com/?cid=10973437880603547446",
+    "phone": "0978-72-0585",
+    "website": null,
+    "hours": {
+      "月": "09:00–16:00",
+      "火": "09:00–16:00",
+      "水": "09:00–16:00",
+      "木": "09:00–16:00",
+      "金": "09:00–16:00",
+      "土": "09:00–16:30",
+      "日": "09:00–16:30"
+    },
+    "reserveLinks": [],
+    "statusSignals": [],
+    "closedSignal": false
+  },
+  "fetchedAt": "2026-11-10T04:07:04.737Z"
+}

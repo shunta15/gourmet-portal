@@ -1,0 +1,32 @@
+{
+  "tab": "トリニティアポ",
+  "tabEn": "tri-activity",
+  "row": 462,
+  "sheet": {
+    "name": "Kinu&Kukai",
+    "address": "",
+    "url": "https://www.google.com/maps/search/?api=1&query=Kinu%26Kukai%20080-5405-7424%20%E3%80%92620-1301%20%E4%BA%AC%E9%83%BD%E5%BA%9C%E7%A6%8F%E7%9F%A5%E5%B1%B1%E5%B8%82%E4%B8%89%E5%92%8C%E7%94%BA%E5%A4%A7%E5%8E%9F",
+    "type": "体験",
+    "d1": "",
+    "d2": ""
+  },
+  "urlKind": "mapsApi",
+  "route": "第1段(verify-gbp.mjs)で確認済み",
+  "verdict": "一致",
+  "verdictReason": "手がかり: 店名＋電話。電話が一致／店名: exact(シート「Kinu&Kukai」/ マップ「Kinu & Kukai」)／住所(シート): coarse・シートの住所に番地なし（町名まで一致）",
+  "place": {
+    "name": "Kinu & Kukai",
+    "address": "京都府福知山市三和町大原",
+    "category": "観光名所",
+    "lat": 35.2431065,
+    "lng": 135.2956787,
+    "gbpUrl": "https://maps.google.com/?cid=16171209846297744097",
+    "phone": "080-5405-7424",
+    "website": "https://yoko57kobayashi.wixsite.com/kinu---kukai",
+    "hours": null,
+    "reserveLinks": [],
+    "statusSignals": [],
+    "closedSignal": false
+  },
+  "fetchedAt": "2026-11-10T04:05:31.616Z"
+}

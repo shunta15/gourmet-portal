@@ -7874,6 +7874,570 @@
         ],
         "checkedAt": "2026-11-09"
       }
+    },
+    {
+      "id": "ac0048",
+      "vertical": "activity",
+      "category": "sea-river",
+      "name": "九十九里海釣センター",
+      "pref": "chiba",
+      "cityName": "九十九里町",
+      "address": "千葉県山武郡九十九里町細屋敷663-5",
+      "lat": 35.514495,
+      "lng": 140.43899,
+      "hours": "月水-日 08:00 - 15:00",
+      "holidays": "火曜",
+      "phone": "0475-76-8678",
+      "url": "http://xn--nbk4em1stb5747d2j8b.com/",
+      "website": "http://xn--nbk4em1stb5747d2j8b.com/",
+      "mapUrl": "https://maps.google.com/?cid=2504499547672238760",
+      "image": "/_portal/vshops/tri-activity-438/g01.jpg",
+      "images": [
+        "/_portal/vshops/tri-activity-438/g01.jpg",
+        "/_portal/vshops/tri-activity-438/g02.jpg",
+        "/_portal/vshops/tri-activity-438/g04.jpg",
+        "/_portal/vshops/tri-activity-438/g05.jpg",
+        "/_portal/vshops/tri-activity-438/g06.jpg",
+        "/_portal/vshops/tri-activity-438/g07.jpg",
+        "/_portal/vshops/tri-activity-438/g09.jpg",
+        "/_portal/vshops/tri-activity-438/g10.jpg",
+        "/_portal/vshops/tri-activity-438/s01.jpg"
+      ],
+      "photos": [
+        {
+          "path": "/_portal/vshops/tri-activity-438/g01.jpg",
+          "what": "青空のもとに広がる釣り堀の池と桟橋",
+          "kind": "common",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-438/g02.jpg",
+          "what": "釣り上げられたマダイを手に持つ様子",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-438/g04.jpg",
+          "what": "スカリに入った大きなマダイ",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-438/g05.jpg",
+          "what": "「海釣りセンター」と書かれた看板のある建物外観",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 675
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-438/g06.jpg",
+          "what": "池に向かって仕掛けを垂らす釣り竿が並ぶ様子",
+          "kind": "common",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-438/g07.jpg",
+          "what": "釣り上げた魚を手で持って並べた様子",
+          "width": 1062,
+          "height": 1062
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-438/g09.jpg",
+          "what": "子どもと大人が一緒に釣り上げた大きな魚を持つ様子",
+          "width": 675,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-438/g10.jpg",
+          "what": "釣り座と桟橋が並ぶ池の全景",
+          "kind": "common",
+          "width": 1200,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-438/s01.jpg",
+          "what": "スタッフがイセエビを持って立つ様子",
+          "width": 960,
+          "height": 1280
+        }
+      ],
+      "tags": [
+        "子連れ",
+        "初心者歓迎",
+        "手ぶらでOK"
+      ],
+      "article": {
+        "headline": "千葉県山武郡九十九里町にある陸上型の海釣り堀。横幅30m・縦幅70m・深さ最大3.5mの池に、日本各地から集めた50種以上の海水魚を放流している",
+        "lede": "山武郡九十九里町にある「九十九里海釣センター」です。九十九里浜のほぼ中央に位置し、陸上の池に海水を引き込んで海水魚を放流した釣り堀です。池は横幅30m・縦幅70m・深さ最大3.5m、水量は最大9,500tと関東最大級の規模を誇ります。マダイ・ヒラメ・カンパチ・シマアジ・イセエビをはじめ、青物・底物・根魚など50種以上の魚が泳いでおり、釣った魚はすべて持ち帰ることができます。予約は不要で、釣り竿のレンタルも用意しているため手ぶらで参加できます。火曜日が定休日（祝日の場合は営業）で、月・水〜日は終日営業しています。",
+        "sections": [
+          {
+            "heading": "体験の内容と流れ",
+            "body": "釣り堀に入場後、池の周囲に設けられた釣り座から、海水を循環させた池に向かって釣りを開始します。エサはオキアミ・青イソメ・イワシを販売しており、仕掛けは現地で購入できます。1日コースは開園から閉園（15時）まで、短時間コースは受付した時刻から15時までの中で最長4時間の利用になります。釣れた魚は個人ごとにカゴ（スカリ）に入れて管理し、グループでの合算精算はできません。1人につき魚種問わず20枚まで釣り放題で、釣れた魚はその日に持ち帰ります。万が一1枚も釣れなかった場合は、マダイを1尾サービスしています。"
+          },
+          {
+            "heading": "対象",
+            "body": "子どもから大人まで参加できます。陸上の池での釣りのため、船酔いの心配がなく、波や風の影響を受けません。釣り竿のレンタルがあり、エサも現地で入手できるため釣り道具を持っていなくても参加できます。年齢制限については4歳以上を対象とした初心者向けのプランも設けられており（アソビュー経由の予約が必要）、ファミリーでの利用にも対応しています。"
+          },
+          {
+            "heading": "季節と準備",
+            "body": "通年営業で、季節に応じて放流する魚種が変わります。イセエビや大型の青物（カンパチ・ヒラマサなど）が放流される時期があります。釣竿レンタルと発泡スチロールの箱が現地で用意されており、手ぶらで来場できます。釣り上げた魚は現地で活〆も可能です。なお、施設内へのリリース・園内譲渡はいずれもできません。"
+          },
+          {
+            "heading": "行き方と使い方",
+            "body": "車の場合、東金ICから国道126号線を経由し、九十九里有料道路「九十九里IC」（サンライズ九十九里前）を下車して信号を左折すると、3分ほどで右手に施設が見えます。横浜・川崎方面からは東京湾アクアライン経由で圏央道・東金ICを利用します。公共交通機関を使う場合は、JR総武線千葉駅東口4番乗り場から「白子中里行き」バスに乗り、サンライズ九十九里で下車します（所要約50分）。JR外房線大網駅2番乗り場からは「サンライズ九十九里行き」で終点まで約35分です。予約不要で当日直接入場できます。初心者向けのプランはアソビューの予約ページから事前予約が必要です。"
+          }
+        ],
+        "menus": [
+          {
+            "name": "1日コース"
+          },
+          {
+            "name": "短時間コース（最長4時間）"
+          },
+          {
+            "name": "釣竿レンタル（仕掛けつき）"
+          }
+        ],
+        "sources": [
+          {
+            "label": "公式サイト",
+            "url": "http://xn--nbk4em1stb5747d2j8b.com/"
+          },
+          {
+            "label": "公式サイト(施設について)",
+            "url": "http://xn--nbk4em1stb5747d2j8b.com/about/"
+          },
+          {
+            "label": "公式サイト(アクセス)",
+            "url": "http://xn--nbk4em1stb5747d2j8b.com/access/"
+          },
+          {
+            "label": "公式サイト(お知らせ・初心者プラン)",
+            "url": "http://xn--nbk4em1stb5747d2j8b.com/info/2024/10/02/28391/"
+          },
+          {
+            "label": "釣りニュース",
+            "url": "https://tsurinews.jp/68005/"
+          },
+          {
+            "label": "海上釣り堀情報",
+            "url": "https://www.kaijo-turibori.info/spot/kujukuriumituricenter/"
+          },
+          {
+            "label": "tsurihack",
+            "url": "https://tsurihack.com/2645"
+          },
+          {
+            "label": "Google マップ",
+            "url": "https://maps.google.com/?cid=2504499547672238760"
+          }
+        ],
+        "checkedAt": "2026-11-10"
+      }
+    },
+    {
+      "id": "ac0049",
+      "vertical": "activity",
+      "category": "sea-river",
+      "name": "つりぼり喜水園",
+      "pref": "gifu",
+      "cityName": "各務原市",
+      "address": "岐阜県各務原市大野町5丁目26",
+      "lat": 35.3882771,
+      "lng": 136.8265854,
+      "hours": "月水-日 09:00 - 18:00",
+      "holidays": "火曜",
+      "phone": "058-382-6255",
+      "url": "http://www.kisuien.info/",
+      "website": "http://www.kisuien.info/",
+      "mapUrl": "https://maps.google.com/?cid=555021010430148084",
+      "image": "/_portal/vshops/tri-activity-441/g01.jpg",
+      "images": [
+        "/_portal/vshops/tri-activity-441/g01.jpg",
+        "/_portal/vshops/tri-activity-441/g02.jpg",
+        "/_portal/vshops/tri-activity-441/g03.jpg",
+        "/_portal/vshops/tri-activity-441/g04.jpg",
+        "/_portal/vshops/tri-activity-441/g05.jpg",
+        "/_portal/vshops/tri-activity-441/g06.jpg",
+        "/_portal/vshops/tri-activity-441/g07.jpg",
+        "/_portal/vshops/tri-activity-441/g08.jpg",
+        "/_portal/vshops/tri-activity-441/g09.jpg",
+        "/_portal/vshops/tri-activity-441/g10.jpg",
+        "/_portal/vshops/tri-activity-441/s05.jpg",
+        "/_portal/vshops/tri-activity-441/s06.jpg",
+        "/_portal/vshops/tri-activity-441/s07.jpg",
+        "/_portal/vshops/tri-activity-441/s08.jpg",
+        "/_portal/vshops/tri-activity-441/s09.jpg",
+        "/_portal/vshops/tri-activity-441/s10.jpg",
+        "/_portal/vshops/tri-activity-441/s12.jpg"
+      ],
+      "photos": [
+        {
+          "path": "/_portal/vshops/tri-activity-441/g01.jpg",
+          "what": "網の中に複数の鯉が入っている",
+          "kind": "common",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-441/g02.jpg",
+          "what": "網の中で泳ぐ鯉",
+          "kind": "common",
+          "width": 1200,
+          "height": 675
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-441/g03.jpg",
+          "what": "子どもが竿を持って池で釣りをしている",
+          "kind": "common",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-441/g04.jpg",
+          "what": "室内の水槽で金魚釣りをしている様子",
+          "kind": "common",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-441/g05.jpg",
+          "what": "駐車場と建物の外観",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-441/g06.jpg",
+          "what": "池の中で泳ぐ複数の鯉",
+          "kind": "common",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-441/g07.jpg",
+          "what": "池の中の大きなオレンジ色の鯉",
+          "kind": "common",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-441/g08.jpg",
+          "what": "池の中に泳ぐ複数の鯉",
+          "kind": "common",
+          "width": 675,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-441/g09.jpg",
+          "what": "「つりぼり 喜水園」と書かれた看板のある建物正面",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-441/g10.jpg",
+          "what": "透明な袋の中に入った鯉",
+          "kind": "common",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-441/s05.jpg",
+          "what": "池と建物が見える施設の外観",
+          "kind": "exterior",
+          "width": 1000,
+          "height": 750
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-441/s06.jpg",
+          "what": "池の中で泳ぐ色鮮やかな鯉",
+          "kind": "common",
+          "width": 1000,
+          "height": 750
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-441/s07.jpg",
+          "what": "緑色の水面が広がる池と建物の外観",
+          "kind": "exterior",
+          "width": 1280,
+          "height": 960
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-441/s08.jpg",
+          "what": "建物と池が並ぶ施設全体の外観",
+          "kind": "exterior",
+          "width": 1000,
+          "height": 750
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-441/s09.jpg",
+          "what": "池の水面に鯉が泳いでいる様子",
+          "kind": "common",
+          "width": 1000,
+          "height": 750
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-441/s10.jpg",
+          "what": "池の中にたくさんの鯉が泳いでいる",
+          "kind": "common",
+          "width": 1000,
+          "height": 750
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-441/s12.jpg",
+          "what": "室内の池で金魚と鯉が泳いでいる",
+          "kind": "common",
+          "width": 1000,
+          "height": 750
+        }
+      ],
+      "tags": [
+        "初心者歓迎",
+        "雨の日",
+        "駐車場あり"
+      ],
+      "article": {
+        "headline": "岐阜県各務原市大野町にある釣り堀。大池・小池・室内つりぼりの3つのコースを備え、初心者から上級者まで楽しめます。",
+        "lede": "各務原市にある「つりぼり喜水園」です。大池コース・小池コース・室内つりぼりの3つのコースがあり、初心者から上級者まで、小さなお子様から大人まで幅広く楽しめる釣り堀です。大池には60センチ以上の大鯉も入っており、上級者向きのコースです。小池は初心者・中級者向きで、小さなお子様でも楽しめます。室内つりぼりは金魚を浮き釣りで楽しめるコースで、エアコンを完備しています。屋外の大池と小池にはひさし屋根があるため、多少の雨でも利用できます。支払いは現金のみです。",
+        "sections": [
+          {
+            "heading": "体験の内容と流れ",
+            "body": "大池コースは上級者向きの池で、60センチ以上の大鯉も入っています。1時間単位で利用でき、貸し竿1本と最初の餌1個が含まれます。30分延長ごとに追加できます。65センチ以上の大鯉を釣り上げると1時間の利用券がもらえます。ただし、針が魚の口以外に刺さったスレや、ウキが寝た状態でのヒット、竿のトップより内側で釣った場合は無効です。My竿（竿と仕掛けのフルセット持参）での利用も可能です。小池コースは初心者・中級者向きで、1時間単位で利用できます。貸し竿1本と最初の餌1個が含まれます。室内つりぼりは金魚を浮きを見ながら釣る浮き釣りで、エアコンを完備しています。"
+          },
+          {
+            "heading": "対象",
+            "body": "小池コースは初心者・中級者向きで、小さなお子様から大人まで楽しめます。大池コースは上級者向きです。室内つりぼりは金魚の浮き釣りで、子どもから大人まで楽しめます。初めて利用する方は、受付にて各コースの釣り方と注意事項を確認します。混雑時は入場者を竿1本につき2名様まで対応しています。魚の持ち帰りはできません。"
+          },
+          {
+            "heading": "安全と注意",
+            "body": "各コースとも、返しの付いた針の使用は禁止で、スレバリを使います。大池コースのMy竿では8尺（2.4メートル）から10尺（3.0メートル）までの延べ竿を使います。小池コースのMy竿では5尺（1.5メートル）から7尺（2.1メートル）までの延べ竿を使います。ルアーロッドは利用できません。餌の持ち込みは禁止です。大池コースでは道糸1.5号から3号、ハリスは0.8号から2.5号（冬季は細めがおすすめ）が目安で、1本針仕掛けで利用します。大池では定期的に釣り大会も開催されており、参加定員は15名で先着順、釣った重量で競います。"
+          },
+          {
+            "heading": "行き方と使い方",
+            "body": "駐車場は30台分を備えています。各務原市のふれあいバス川島線「東大野」バス停から徒歩約1分でアクセスできます。名鉄新那加駅からは徒歩約19分です。予約は不要で、当日受付にて利用します。初めて利用する方は受付で釣り方と注意事項を確認します。X（旧Twitter）で臨時休業や大会情報を随時配信しています。"
+          }
+        ],
+        "menus": [
+          {
+            "name": "大池コース"
+          },
+          {
+            "name": "小池コース"
+          },
+          {
+            "name": "室内つりぼり"
+          },
+          {
+            "name": "大池釣り大会"
+          }
+        ],
+        "sources": [
+          {
+            "label": "公式サイト",
+            "url": "http://www.kisuien.info/"
+          },
+          {
+            "label": "公式サイト(大池コース)",
+            "url": "http://www.kisuien.info/ooike/ooike.html"
+          },
+          {
+            "label": "公式サイト(小池コース)",
+            "url": "http://www.kisuien.info/syouike/syouike.html"
+          },
+          {
+            "label": "各務原市観光協会",
+            "url": "https://kakamigahara-kankou.jp/tourism/4126"
+          },
+          {
+            "label": "釣り堀情報サイト(tsuribori.net)",
+            "url": "https://tsuribori.net/introduce/kisuien/"
+          },
+          {
+            "label": "Google マップ",
+            "url": "https://maps.google.com/?cid=555021010430148084"
+          }
+        ],
+        "checkedAt": "2026-11-10"
+      }
+    },
+    {
+      "id": "ac0050",
+      "vertical": "activity",
+      "category": "mountain-sky",
+      "name": "Kinu & Kukai",
+      "pref": "kyoto",
+      "cityName": "福知山市",
+      "address": "京都府福知山市三和町大原",
+      "lat": 35.2431065,
+      "lng": 135.2956787,
+      "phone": "080-5405-7424",
+      "url": "https://yoko57kobayashi.wixsite.com/kinu---kukai",
+      "website": "https://yoko57kobayashi.wixsite.com/kinu---kukai",
+      "mapUrl": "https://maps.google.com/?cid=16171209846297744097",
+      "image": "/_portal/vshops/tri-activity-462/g01.jpg",
+      "images": [
+        "/_portal/vshops/tri-activity-462/g01.jpg",
+        "/_portal/vshops/tri-activity-462/g02.jpg",
+        "/_portal/vshops/tri-activity-462/g03.jpg",
+        "/_portal/vshops/tri-activity-462/g05.jpg",
+        "/_portal/vshops/tri-activity-462/g06.jpg",
+        "/_portal/vshops/tri-activity-462/g07.jpg",
+        "/_portal/vshops/tri-activity-462/g08.jpg",
+        "/_portal/vshops/tri-activity-462/g09.jpg",
+        "/_portal/vshops/tri-activity-462/g10.jpg"
+      ],
+      "photos": [
+        {
+          "path": "/_portal/vshops/tri-activity-462/g01.jpg",
+          "what": "川の中で遊ぶ人たち",
+          "kind": "view",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-462/g02.jpg",
+          "what": "岩と草木に囲まれた渓流",
+          "kind": "view",
+          "width": 675,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-462/g03.jpg",
+          "what": "緑に囲まれたテントサウナの設備",
+          "kind": "view",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-462/g05.jpg",
+          "what": "山を背景にした木造校舎と前庭",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-462/g06.jpg",
+          "what": "草木に囲まれた木造校舎の外壁",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-462/g07.jpg",
+          "what": "石積みの壁沿いを流れる清流",
+          "kind": "view",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-462/g08.jpg",
+          "what": "校舎脇の駐車スペースと車",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-462/g09.jpg",
+          "what": "川べりに設置されたテントサウナと椅子",
+          "kind": "common",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-462/g10.jpg",
+          "what": "木々に囲まれた分校への小道",
+          "kind": "view",
+          "width": 900,
+          "height": 1200
+        }
+      ],
+      "tags": [
+        "子連れ",
+        "駐車場あり"
+      ],
+      "article": {
+        "headline": "京都府福知山市三和町、丹波の里山に残る木造校舎を舞台にしたアクティビティ拠点。テントサウナ・川遊び・キャンプなどの体験を提供する旧川合小学校大原分教場。",
+        "lede": "福知山市三和町にある「Kinu & Kukai」です。50年前に閉校となった旧川合小学校大原分教場を舞台に、テントサウナ・川遊び・キャンプ・自然農など、里山の自然を使った多彩な体験を提供しています。管理人は大原分校の最後の卒業生である小林洋子さんで、廃校後は集会所として使われてきた木造校舎を、イベント・体験の場として活用しています。校舎・前庭・裏庭・裏山をまるごと使えるのが特徴で、グループや家族単位での貸し切り利用も受け付けています。利用希望日の1週間前までにメール（kinukukai@gmail.com）またはLINE公式アカウントから問い合わせることができます。",
+        "sections": [
+          {
+            "heading": "体験の内容と流れ",
+            "body": "テントサウナは、分校の下を流れる戸津川に設置されています。志質鍾乳洞から流れ出る冷たい清流を水風呂として使い、杉林の中で整いの時間を過ごす形です。川遊びは、暖かい川合川と冷たい戸津川が合流する地点の橋の下を中心に、複数の小川を遡って楽しめます。そのほか、餅つき・ピザ窯料理・猪鍋・山菜採り・自然農・星空観賞・ヨガレッスン・卓球・バドミントンなど、食べる・遊ぶ・学ぶ・くつろぐの4つにわたる体験が用意されています。里山サマーキャンプや冬籠り林間学校など、季節ごとに企画が立ち上がります。"
+          },
+          {
+            "heading": "対象",
+            "body": "子どもから大人まで参加できるイベントが多く、里山サマーキャンプでは未就学児も参加対象に含まれます。グループでのキャンプ・家族単位での宿泊・ワーケーション・合宿・同窓会・手作り結婚式と披露宴など、目的に合わせた貸し切り利用も可能です。収容人数は1名から50名まで対応しています。テントサウナは貸し切りイベントとして募集されており、イベントオーナーとして企画を持ち込む形でも利用できます。"
+          },
+          {
+            "heading": "集合場所と行き方",
+            "body": "施設の住所は京都府福知山市三和町大原276（大原公民館・旧川合小学校大原分教場）です。公共交通機関を使う場合は、JR山陰線「綾部駅」で下車し、駅前南側ロータリーから福知山バスに乗って約15分でバス停「大原（おおばら）」に到着します。バスには停車ボタンも車内アナウンスもないため、乗車時に運転手へ大原で降りる旨を伝える必要があります。車の場合、京都縦貫道「京丹波みずほIC」から173号線を綾部方向に約20分です。駐車場があります。予約はイベントごとに公式サイトまたはメールで受け付けており、前日・当日のキャンセルはキャンセル料が発生します。"
+          }
+        ],
+        "menus": [
+          {
+            "name": "テントサウナ体験"
+          },
+          {
+            "name": "川遊び"
+          },
+          {
+            "name": "里山サマーキャンプ"
+          },
+          {
+            "name": "冬籠り林間学校"
+          },
+          {
+            "name": "分校まるごと貸し切り"
+          },
+          {
+            "name": "自然農体験"
+          },
+          {
+            "name": "山菜採り"
+          }
+        ],
+        "sources": [
+          {
+            "label": "公式サイト",
+            "url": "https://yoko57kobayashi.wixsite.com/kinu---kukai"
+          },
+          {
+            "label": "公式サイト(大原分校)",
+            "url": "https://yoko57kobayashi.wixsite.com/kinu---kukai/about-1"
+          },
+          {
+            "label": "公式サイト(ようこそ)",
+            "url": "https://yoko57kobayashi.wixsite.com/kinu---kukai/yokoso"
+          },
+          {
+            "label": "公式サイト(行き方)",
+            "url": "https://yoko57kobayashi.wixsite.com/smile/access"
+          },
+          {
+            "label": "公式サイト(里山Summer Camp 2025)",
+            "url": "https://yoko57kobayashi.wixsite.com/my-site-3/event-details/satoyamasummer-camp-2025"
+          },
+          {
+            "label": "Kinu & Kukai公式サイト(体験・遊び)",
+            "url": "https://kinu-kukai.com/activity-2/"
+          },
+          {
+            "label": "いこーよ(旧川合小学校大原分校)",
+            "url": "https://iko-yo.net/facilities/178971"
+          },
+          {
+            "label": "じゃらん遊び体験",
+            "url": "https://www.jalan.net/kankou/spt_guide000000223155/activity/l00004F373/"
+          },
+          {
+            "label": "Google マップ",
+            "url": "https://maps.google.com/?cid=16171209846297744097"
+          }
+        ],
+        "checkedAt": "2026-11-10"
+      }
     }
   ]
 }

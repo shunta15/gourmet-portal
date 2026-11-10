@@ -1,0 +1,40 @@
+{
+  "tab": "トリニティアポ",
+  "tabEn": "tri-life",
+  "row": 459,
+  "sheet": {
+    "name": "M-TecBase",
+    "address": "",
+    "url": "https://www.google.com/maps/search/?api=1&query=M-TecBase%20090-7739-8401%20",
+    "type": "クリーニング業者",
+    "d1": "",
+    "d2": ""
+  },
+  "urlKind": "mapsApi",
+  "route": "第1段(verify-gbp.mjs)で確認済み",
+  "verdict": "一致",
+  "verdictReason": "手がかり: 店名＋電話＋住所(番地まで)。電話が一致／店名: exact(シート「M-TecBase」/ マップ「M-TecBase」)／住所(シート): exact・町名・番地とも一致",
+  "place": {
+    "name": "M-TecBase",
+    "address": "長野県上田市真田町長３２０",
+    "category": "配管工",
+    "lat": 36.4750113,
+    "lng": 138.3455929,
+    "gbpUrl": "https://maps.google.com/?cid=4106855449652299111",
+    "phone": "090-7739-8401",
+    "website": "https://lit.link/M-TecBase",
+    "hours": {
+      "月": "24時間営業",
+      "火": "24時間営業",
+      "水": "24時間営業",
+      "木": "24時間営業",
+      "金": "24時間営業",
+      "土": "24時間営業",
+      "日": "24時間営業"
+    },
+    "reserveLinks": [],
+    "statusSignals": [],
+    "closedSignal": false
+  },
+  "fetchedAt": "2026-11-10T04:04:01.855Z"
+}

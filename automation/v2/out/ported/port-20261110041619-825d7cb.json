@@ -1,0 +1,85 @@
+{
+  "commit": "825d7cb46096394ae8b7942f1c4b2b20f2316b50",
+  "source": "/Users/shunta/claude/gp-k-auto2",
+  "count": 7,
+  "added": [
+    {
+      "row": 438,
+      "name": "九十九里海釣センター",
+      "key": "tri-activity-438",
+      "vertical": "アクティビティ",
+      "id": "ac0048",
+      "articleId": "ac0048",
+      "shopUrl": "https://machinowa.tokyo/activity/shop/ac0048",
+      "articleUrl": "https://machinowa.tokyo/activity/article/ac0048",
+      "sheetUrl": "https://machinowa.tokyo/activity/article/ac0048"
+    },
+    {
+      "row": 441,
+      "name": "つりぼり喜水園",
+      "key": "tri-activity-441",
+      "vertical": "アクティビティ",
+      "id": "ac0049",
+      "articleId": "ac0049",
+      "shopUrl": "https://machinowa.tokyo/activity/shop/ac0049",
+      "articleUrl": "https://machinowa.tokyo/activity/article/ac0049",
+      "sheetUrl": "https://machinowa.tokyo/activity/article/ac0049"
+    },
+    {
+      "row": 459,
+      "name": "M-TecBase",
+      "key": "tri-life-459",
+      "vertical": "くらし",
+      "id": "li0202",
+      "articleId": "li0202",
+      "shopUrl": "https://machinowa.tokyo/life/shop/li0202",
+      "articleUrl": "https://machinowa.tokyo/life/article/li0202",
+      "sheetUrl": "https://machinowa.tokyo/life/article/li0202"
+    },
+    {
+      "row": 460,
+      "name": "オタルムーン stay and wellness",
+      "key": "tri-stay-460",
+      "vertical": "ステイ",
+      "id": "st0030",
+      "articleId": "st0030",
+      "shopUrl": "https://machinowa.tokyo/stay/shop/st0030",
+      "articleUrl": "https://machinowa.tokyo/stay/article/st0030",
+      "sheetUrl": "https://machinowa.tokyo/stay/article/st0030"
+    },
+    {
+      "row": 462,
+      "name": "Kinu&Kukai",
+      "key": "tri-activity-462",
+      "vertical": "アクティビティ",
+      "id": "ac0050",
+      "articleId": "ac0050",
+      "shopUrl": "https://machinowa.tokyo/activity/shop/ac0050",
+      "articleUrl": "https://machinowa.tokyo/activity/article/ac0050",
+      "sheetUrl": "https://machinowa.tokyo/activity/article/ac0050"
+    },
+    {
+      "row": 464,
+      "name": "常幸院",
+      "key": "tri-life-464",
+      "vertical": "くらし",
+      "id": "li0203",
+      "articleId": "li0203",
+      "shopUrl": "https://machinowa.tokyo/life/shop/li0203",
+      "articleUrl": "https://machinowa.tokyo/life/article/li0203",
+      "sheetUrl": "https://machinowa.tokyo/life/article/li0203"
+    },
+    {
+      "row": 466,
+      "name": "興導寺",
+      "key": "tri-life-466",
+      "vertical": "くらし",
+      "id": "li0204",
+      "articleId": "li0204",
+      "shopUrl": "https://machinowa.tokyo/life/shop/li0204",
+      "articleUrl": "https://machinowa.tokyo/life/article/li0204",
+      "sheetUrl": "https://machinowa.tokyo/life/article/li0204"
+    }
+  ],
+  "skipped": []
+}

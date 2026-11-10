@@ -1,0 +1,40 @@
+{
+  "tab": "トリニティアポ",
+  "tabEn": "tri-activity",
+  "row": 438,
+  "sheet": {
+    "name": "九十九里海釣センター",
+    "address": "",
+    "url": "https://www.google.com/maps/search/?api=1&query=%E4%B9%9D%E5%8D%81%E4%B9%9D%E9%87%8C%E6%B5%B7%E9%87%A3%E3%82%BB%E3%83%B3%E3%82%BF%E3%83%BC%20047-576-8678%20%E3%80%92283-0111%20%E5%8D%83%E8%91%89%E7%9C%8C%E5%B1%B1%E6%AD%A6%E9%83%A1%E4%B9%9D%E5%8D%81%E4%B9%9D%E9%87%8C%E7%94%BA%E7%B4%B0%E5%B1%8B%E6%95%B7%EF%BC%96%EF%BC%96%EF%BC%93%E2%88%92%EF%BC%95",
+    "type": "その他",
+    "d1": "",
+    "d2": ""
+  },
+  "urlKind": "mapsApi",
+  "route": "第1段(verify-gbp.mjs)で確認済み",
+  "verdict": "一致",
+  "verdictReason": "手がかり: 店名＋電話＋住所(番地まで)。電話が一致／店名: exact(シート「九十九里海釣センター」/ マップ「九十九里海釣センター」)／住所(シート): exact・町名・番地とも一致",
+  "place": {
+    "name": "九十九里海釣センター",
+    "address": "千葉県山武郡九十九里町細屋敷６６３−５",
+    "category": "釣り堀",
+    "lat": 35.514495,
+    "lng": 140.43899,
+    "gbpUrl": "https://maps.google.com/?cid=2504499547672238760",
+    "phone": "0475-76-8678",
+    "website": "http://xn--nbk4em1stb5747d2j8b.com/",
+    "hours": {
+      "月": "08:00–15:00",
+      "火": "定休日",
+      "水": "08:00–15:00",
+      "木": "08:00–15:00",
+      "金": "08:00–15:00",
+      "土": "08:00–15:00",
+      "日": "08:00–15:00"
+    },
+    "reserveLinks": [],
+    "statusSignals": [],
+    "closedSignal": false
+  },
+  "fetchedAt": "2026-11-10T04:02:27.839Z"
+}

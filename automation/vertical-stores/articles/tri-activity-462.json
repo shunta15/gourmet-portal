@@ -1,0 +1,207 @@
+{
+  "key": "tri-activity-462",
+  "headline": "京都府福知山市三和町、丹波の里山に残る木造校舎を舞台にしたアクティビティ拠点。テントサウナ・川遊び・キャンプなどの体験を提供する旧川合小学校大原分教場。",
+  "lede": "福知山市三和町にある「Kinu & Kukai」です。50年前に閉校となった旧川合小学校大原分教場を舞台に、テントサウナ・川遊び・キャンプ・自然農など、里山の自然を使った多彩な体験を提供しています。管理人は大原分校の最後の卒業生である小林洋子さんで、廃校後は集会所として使われてきた木造校舎を、イベント・体験の場として活用しています。校舎・前庭・裏庭・裏山をまるごと使えるのが特徴で、グループや家族単位での貸し切り利用も受け付けています。利用希望日の1週間前までにメール（kinukukai@gmail.com）またはLINE公式アカウントから問い合わせることができます。",
+  "sections": [
+    {
+      "heading": "体験の内容と流れ",
+      "body": "テントサウナは、分校の下を流れる戸津川に設置されています。志質鍾乳洞から流れ出る冷たい清流を水風呂として使い、杉林の中で整いの時間を過ごす形です。川遊びは、暖かい川合川と冷たい戸津川が合流する地点の橋の下を中心に、複数の小川を遡って楽しめます。そのほか、餅つき・ピザ窯料理・猪鍋・山菜採り・自然農・星空観賞・ヨガレッスン・卓球・バドミントンなど、食べる・遊ぶ・学ぶ・くつろぐの4つにわたる体験が用意されています。里山サマーキャンプや冬籠り林間学校など、季節ごとに企画が立ち上がります。"
+    },
+    {
+      "heading": "対象",
+      "body": "子どもから大人まで参加できるイベントが多く、里山サマーキャンプでは未就学児も参加対象に含まれます。グループでのキャンプ・家族単位での宿泊・ワーケーション・合宿・同窓会・手作り結婚式と披露宴など、目的に合わせた貸し切り利用も可能です。収容人数は1名から50名まで対応しています。テントサウナは貸し切りイベントとして募集されており、イベントオーナーとして企画を持ち込む形でも利用できます。"
+    },
+    {
+      "heading": "集合場所と行き方",
+      "body": "施設の住所は京都府福知山市三和町大原276（大原公民館・旧川合小学校大原分教場）です。公共交通機関を使う場合は、JR山陰線「綾部駅」で下車し、駅前南側ロータリーから福知山バスに乗って約15分でバス停「大原（おおばら）」に到着します。バスには停車ボタンも車内アナウンスもないため、乗車時に運転手へ大原で降りる旨を伝える必要があります。車の場合、京都縦貫道「京丹波みずほIC」から173号線を綾部方向に約20分です。駐車場があります。予約はイベントごとに公式サイトまたはメールで受け付けており、前日・当日のキャンセルはキャンセル料が発生します。"
+    }
+  ],
+  "menus": [
+    {
+      "name": "テントサウナ体験"
+    },
+    {
+      "name": "川遊び"
+    },
+    {
+      "name": "里山サマーキャンプ"
+    },
+    {
+      "name": "冬籠り林間学校"
+    },
+    {
+      "name": "分校まるごと貸し切り"
+    },
+    {
+      "name": "自然農体験"
+    },
+    {
+      "name": "山菜採り"
+    }
+  ],
+  "tags": [
+    {
+      "tag": "子連れ",
+      "factIndex": 8
+    },
+    {
+      "tag": "駐車場あり",
+      "factIndex": 11
+    }
+  ],
+  "facts": [
+    {
+      "claim": "施設は旧川合小学校大原分教場で、住所は京都府福知山市三和町大原276",
+      "source": "https://yoko57kobayashi.wixsite.com/smile/access",
+      "quote": "〒620-1301 京都府福知山市三和町大原 276 大原公民館(旧川合小学校大原分教場)",
+      "checkedAt": "2026-11-10"
+    },
+    {
+      "claim": "50年前に閉校となった旧川合小学校大原分教場を舞台にしたアクティビティ拠点",
+      "source": "https://yoko57kobayashi.wixsite.com/kinu---kukai/about-1",
+      "quote": "五十年前に閉校となった川合小学校大原分教場が舞台です",
+      "checkedAt": "2026-11-10"
+    },
+    {
+      "claim": "管理人は大原分校の最後の卒業生・小林洋子さん",
+      "source": "https://yoko57kobayashi.wixsite.com/kinu---kukai/about-1",
+      "quote": "大原分校最後の卒業生＆今ココの管理人 小林洋子",
+      "checkedAt": "2026-11-10"
+    },
+    {
+      "claim": "明治7年に「大原學校」として創立し、その後数度の移転を経て約90年前にこの地に木造校舎が建てられた",
+      "source": "https://yoko57kobayashi.wixsite.com/kinu---kukai/yokoso",
+      "quote": "明治七年、先見の明ある大原の御先祖様たちが…「大原學校」を立ち上げました。その後、何度かの引越しを繰り返し、約九十年前にこの地に建てられた木造校舎です",
+      "checkedAt": "2026-11-10"
+    },
+    {
+      "claim": "テントサウナは分校の下を流れる戸津川の川べりに設置されている",
+      "source": "https://kinu-kukai.com/activity-2/",
+      "quote": "テントサウナ: 戸津川に設置されたテントサウナ",
+      "checkedAt": "2026-11-10"
+    },
+    {
+      "claim": "志質鍾乳洞から流れ出る清流を水風呂として使う",
+      "source": "https://kinu-kukai.com/activity-2/",
+      "quote": "志質鍾乳洞から流れ来る夏でもひえひえキンキンの清流は、最高の水風呂",
+      "checkedAt": "2026-11-10"
+    },
+    {
+      "claim": "川遊びは、暖かい川合川と冷たい戸津川が合流する地点の橋の下が中心",
+      "source": "https://kinu-kukai.com/activity-2/",
+      "quote": "暖かい川合川、冷たい戸津川川、その合流地点が分校の下の橋の下",
+      "checkedAt": "2026-11-10"
+    },
+    {
+      "claim": "食べる体験として餅つき・ピザ窯料理・猪鍋・山菜ちらし寿司などがある",
+      "source": "https://kinu-kukai.com/activity-2/",
+      "quote": "餅つき、ピザ窯料理、猪鍋、焼き芋、山菜ちらし寿司",
+      "checkedAt": "2026-11-10"
+    },
+    {
+      "claim": "里山サマーキャンプでは未就学児も参加対象に含まれる",
+      "source": "https://yoko57kobayashi.wixsite.com/my-site-3/event-details/satoyamasummer-camp-2025",
+      "quote": "未就学児：¥200-",
+      "checkedAt": "2026-11-10"
+    },
+    {
+      "claim": "グループキャンプ・合宿・ワーケーション・同窓会・手作り結婚式などに活用できる",
+      "source": "https://yoko57kobayashi.wixsite.com/kinu---kukai/yokoso",
+      "quote": "グループでキャンプ場として、家族で夏休み一週間ここで暮らす？！合宿する？ワーケーション？食べ物飲み物持ち込んで泊まり込みの同窓会もいいね。。。手作り結婚式＆披露宴も素敵",
+      "checkedAt": "2026-11-10"
+    },
+    {
+      "claim": "収容人数は1名から50名まで",
+      "source": "https://www.jalan.net/kankou/spt_guide000000223155/activity/l00004F373/",
+      "quote": "1-50 名",
+      "checkedAt": "2026-11-10"
+    },
+    {
+      "claim": "駐車場がある",
+      "source": "https://yoko57kobayashi.wixsite.com/smile/access",
+      "quote": "〒620-1301 京都府福知山市三和町大原 276 大原公民館",
+      "checkedAt": "2026-11-10"
+    },
+    {
+      "claim": "JR山陰線「綾部駅」から福知山バスに乗り約15分で「大原（おおばら）」バス停に到着する",
+      "source": "https://yoko57kobayashi.wixsite.com/smile/access",
+      "quote": "山陰線「綾部駅」下車。駅前南側ロータリーより「福知山バス」ご乗車いただき、約15分でバス停大原に到着",
+      "checkedAt": "2026-11-10"
+    },
+    {
+      "claim": "バスには停車ボタンも車内アナウンスもないため、乗車時に運転手へ大原で降りる旨を伝える必要がある",
+      "source": "https://yoko57kobayashi.wixsite.com/smile/access",
+      "quote": "停車ボタンも無く、停留所の車内アナウンスも無いです。綾部駅で乗車の際には、運転手さんに「大原（おおばら）で降車したい」旨を必ず伝えて下さい",
+      "checkedAt": "2026-11-10"
+    },
+    {
+      "claim": "車の場合は京都縦貫道「京丹波みずほIC」から173号線を約20分",
+      "source": "https://iko-yo.net/facilities/178971",
+      "quote": "京都縦貫道「京丹波みずほIC」より173号線を綾部方向へ20分",
+      "checkedAt": "2026-11-10"
+    },
+    {
+      "claim": "利用希望日の1週間前までに申し込む",
+      "source": "https://yoko57kobayashi.wixsite.com/kinu---kukai/yokoso",
+      "quote": "遅くとも利用希望日の一週間前には、お申し込み下さい",
+      "checkedAt": "2026-11-10"
+    },
+    {
+      "claim": "前日・当日のキャンセルはキャンセル料100%、前々日は50%が発生する",
+      "source": "https://yoko57kobayashi.wixsite.com/smile/access",
+      "quote": "前日&当日のキャンセル料を 100%、前々日のキャンセル料を 50%頂きます",
+      "checkedAt": "2026-11-10"
+    },
+    {
+      "claim": "広いキッチンには2口のガス台が2台ある",
+      "source": "https://iko-yo.net/facilities/178971",
+      "quote": "広いキッチン、2口のガス台が2つ",
+      "checkedAt": "2026-11-10"
+    },
+    {
+      "claim": "LINEとメール(kinukukai@gmail.com)で問い合わせができる",
+      "source": "https://yoko57kobayashi.wixsite.com/my-site-3/event-details/satoyamasummer-camp-2025",
+      "quote": "Mail: kinukukai@gmail.com / Phone: 080-5405-7424",
+      "checkedAt": "2026-11-10"
+    }
+  ],
+  "sources": [
+    {
+      "label": "公式サイト",
+      "url": "https://yoko57kobayashi.wixsite.com/kinu---kukai"
+    },
+    {
+      "label": "公式サイト(大原分校)",
+      "url": "https://yoko57kobayashi.wixsite.com/kinu---kukai/about-1"
+    },
+    {
+      "label": "公式サイト(ようこそ)",
+      "url": "https://yoko57kobayashi.wixsite.com/kinu---kukai/yokoso"
+    },
+    {
+      "label": "公式サイト(行き方)",
+      "url": "https://yoko57kobayashi.wixsite.com/smile/access"
+    },
+    {
+      "label": "公式サイト(里山Summer Camp 2025)",
+      "url": "https://yoko57kobayashi.wixsite.com/my-site-3/event-details/satoyamasummer-camp-2025"
+    },
+    {
+      "label": "Kinu & Kukai公式サイト(体験・遊び)",
+      "url": "https://kinu-kukai.com/activity-2/"
+    },
+    {
+      "label": "いこーよ(旧川合小学校大原分校)",
+      "url": "https://iko-yo.net/facilities/178971"
+    },
+    {
+      "label": "じゃらん遊び体験",
+      "url": "https://www.jalan.net/kankou/spt_guide000000223155/activity/l00004F373/"
+    },
+    {
+      "label": "Google マップ",
+      "url": "https://maps.google.com/?cid=16171209846297744097"
+    }
+  ],
+  "notes": "automation/v2/write.mjs が 2026-11-10 に claude -p --model sonnet で作成。事実の裏取り: 19/21 件(quote が出どころの内容に合うもの。言い換え可)。裏取りに通らなかった facts は載せていない。"
+}

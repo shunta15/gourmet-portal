@@ -1,0 +1,36 @@
+{
+  "key": "tri-stay-460",
+  "images": [
+    {
+      "path": "/_portal/vshops/tri-stay-460/g01.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9SEEyRLzQOl_m9g_HM2d4ka2gd8dFtwYkHFgCrX8D3OgOrz0R8NX8DGub9Xe3O-LN2x-Zte3HYYO6z0CjXOBBW-ZJdP3VSD25LdpiK8UYwEpF-pRd9mIYqh-jxUlNf9M13OlVxAyzWbKYj6=s1200",
+      "pageUrl": "https://maps.google.com/?cid=7096041978865114801",
+      "what": "白いタオルが置かれた施術台がある施術室",
+      "kind": "room",
+      "width": 993,
+      "height": 1000,
+      "source": "Google マップ"
+    },
+    {
+      "path": "/_portal/vshops/tri-stay-460/g04.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9QoOZq34xVlDUoisH7ZQ-EDnPuWztgoAFtEIJBtcp7d7YTI0tPq8ZpMnXyDoYB2Yrq4IrbTzVgz9HLbeOvRWq1hT-aZPc7elOV12f7tve8p1F9lehTmcs-VHCNKuC9pbLu3s9upqoHgC1ey=s1200",
+      "pageUrl": "https://maps.google.com/?cid=7096041978865114801",
+      "what": "施術台がある部屋の内部と小樽の海を望む景色",
+      "kind": "room",
+      "width": 800,
+      "height": 1200,
+      "source": "Google マップ"
+    },
+    {
+      "path": "/_portal/vshops/tri-stay-460/g09.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9QmW9MUYsuhyRD58PfivnTY8YYamr8QGH-TZnKh7aHONB7Al0bCN69xEl8ROYP3_QGQTzLs3dNTOcZpMnTkq9HQiTNSLmD-n5xQDfa4oRHiG4PzMn8uQ19hURNXH785TzhGEqHUAA=s1200",
+      "pageUrl": "https://maps.google.com/?cid=7096041978865114801",
+      "what": "透明パックとヘアクリップが置かれた施術用品",
+      "kind": "common",
+      "width": 750,
+      "height": 1000,
+      "source": "Google マップ"
+    }
+  ],
+  "note": "automation/v2/write.mjs が 2026-11-10T04:16:04.835Z に取得。店の実写だけ(AI 画像・汎用画像・地図・ロゴ・顔が大きい画像は除外)。"
+}

@@ -41,7 +41,8 @@ export const UNLISTED_PLACE_IDS: Readonly<Record<string, readonly string[]>> = {
     "st0026",
     "st0027",
     "st0028",
-    "st0029"
+    "st0029",
+    "st0030"
   ],
   "beauty": [
     "be0106",
@@ -94,7 +95,10 @@ export const UNLISTED_PLACE_IDS: Readonly<Record<string, readonly string[]>> = {
     "ac0044",
     "ac0045",
     "ac0046",
-    "ac0047"
+    "ac0047",
+    "ac0048",
+    "ac0049",
+    "ac0050"
   ],
   "sports": [
     "sp0004",
@@ -302,7 +306,10 @@ export const UNLISTED_PLACE_IDS: Readonly<Record<string, readonly string[]>> = {
     "li0198",
     "li0199",
     "li0200",
-    "li0201"
+    "li0201",
+    "li0202",
+    "li0203",
+    "li0204"
   ]
 };
 
@@ -342,7 +349,10 @@ export const UNLISTED_PLACE_FEATURE_IDS: Readonly<Record<string, readonly string
     "TukTukGO",
     "体験食館侍",
     "ノアノアチョークアートワークス",
-    "見晴茶屋"
+    "見晴茶屋",
+    "九十九里海釣センター",
+    "つりぼり喜水園",
+    "Kinu&Kukai"
   ],
   "sports": [
     "FITINGRAVITY"

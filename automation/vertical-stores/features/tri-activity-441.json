@@ -1,0 +1,345 @@
+{
+  "key": "tri-activity-441",
+  "vertical": "activity",
+  "storeName": "つりぼり喜水園",
+  "article": {
+    "id": "つりぼり喜水園",
+    "no": "",
+    "articleType": "guide",
+    "kicker": "TSURIBORI KISUIEN KAKAMIGAHARA",
+    "title": "岐阜県各務原市の釣り堀。大池・小池・室内の3コース、初心者から上級者まで対応",
+    "titleHTML": "岐阜県各務原市の釣り堀<br><em>つりぼり喜水園</em>の3つのコースと利用の流れ",
+    "subtitle": "釣り堀 / 岐阜県各務原市 / 大池コース・小池コース・室内つりぼり",
+    "lede": "つりぼり喜水園は、岐阜県各務原市大野町にある釣り堀だ。大池コース・小池コース・室内つりぼりの3つのコースを備え、初心者から上級者まで対応している。大池には60センチ以上の大鯉が入っており、小池は初心者・中級者向きで小さなお子様も楽しめる。室内つりぼりでは金魚を浮き釣りで楽しめ、エアコンを完備している。屋外の大池と小池にはひさし屋根があるため、多少の雨でも利用できる。",
+    "date": "2026-11-10",
+    "reading": "",
+    "author": "マチノワ編集部",
+    "heroImage": "/_portal/vshops/tri-activity-441/g09.jpg",
+    "ogImage": "/_portal/vshops/tri-activity-441/g09.jpg",
+    "ranking": [
+      {
+        "rank": "POINT 01",
+        "rankNum": 1,
+        "name": "大池コース：上級者向けの60センチ超の大鯉",
+        "cuisine": "大池コース",
+        "area": "各務原市",
+        "purpose": "大鯉を釣りたい上級者向けのコースを知りたい人へ",
+        "desc": "大池コースは上級者向きで、60センチ以上の大鯉も入っている。1時間単位で利用でき、貸し竿1本と最初の餌1個が含まれる。30分延長ごとに追加できる。大池で65センチ以上の大鯉を釣り上げると1時間の利用券がもらえる。ただし、針が魚の口以外に刺さったスレ、ウキが寝た状態でのヒット、竿のトップより内側で釣った場合は無効となる。My竿（竿と仕掛けのフルセット持参）での利用も可能で、使える竿の長さは8尺（2.4メートル）から10尺（3.0メートル）までの延べ竿に限られる。道糸は1.5号から3号、ハリスは0.8号から2.5号（冬季は細めを推奨）が目安で、1本針仕掛けを使う。ルアーロッドと餌の持ち込みは禁止。返しの付いた針の使用も禁止で、スレバリの7号以下のものを使う。",
+        "images": [
+          "/_portal/vshops/tri-activity-441/g07.jpg"
+        ],
+        "specs": [
+          {
+            "k": "対象",
+            "v": "上級者向き"
+          },
+          {
+            "k": "My竿の竿の長さ",
+            "v": "8尺(2.4m)～10尺(3.0m)の延べ竿"
+          }
+        ]
+      },
+      {
+        "rank": "POINT 02",
+        "rankNum": 2,
+        "name": "小池コースと室内つりぼり：初心者・子ども向けの2コース",
+        "cuisine": "小池コース・室内つりぼり",
+        "area": "各務原市",
+        "purpose": "初めて釣りをする人や子どもと楽しめるコースを知りたい人へ",
+        "desc": "小池コースは初心者・中級者向きで、小さなお子様から大人まで楽しめる。1時間単位で利用でき、貸し竿1本と最初の餌1個が含まれる。My竿での利用も可能で、使える竿の長さは5尺（1.5メートル）から7尺（2.1メートル）までの延べ竿に限られる。返しの付いた針の使用は禁止で、スレバリの7号以下のものを使う。ルアーロッドと餌の持ち込みは禁止。室内つりぼりでは金魚を浮きを見ながら釣る浮き釣りで楽しめる。エアコンを完備しており、天候に左右されずに釣りができる。初めての方は受付にて釣り方と注意事項を確認する。",
+        "images": [
+          "/_portal/vshops/tri-activity-441/g03.jpg"
+        ],
+        "specs": [
+          {
+            "k": "対象",
+            "v": "初心者・中級者向き、小さなお子様から大人まで"
+          },
+          {
+            "k": "室内設備",
+            "v": "エアコン完備"
+          }
+        ]
+      },
+      {
+        "rank": "POINT 03",
+        "rankNum": 3,
+        "name": "大池釣り大会：ほぼ毎月開催、定員15名の重量制競技",
+        "cuisine": "釣り大会",
+        "area": "各務原市",
+        "purpose": "大会への参加方法を知りたい人へ",
+        "desc": "大池ではほぼ毎月1回、釣り大会を開催している。参加定員は15名で先着順となり、受付は朝8時30分までに行う必要がある。大会は朝9時から2時間（途中休憩10分）で、釣った重量で競い合う。大会の詳細日程はX（旧Twitter）で配信している。大会のほかにも、X（旧Twitter）では大鯉が釣れた情報や臨時休業、ガチャガチャ新商品の入荷情報なども配信している。",
+        "images": [
+          "/_portal/vshops/tri-activity-441/g08.jpg"
+        ],
+        "specs": [
+          {
+            "k": "定員",
+            "v": "15名（先着順）"
+          },
+          {
+            "k": "大会時間",
+            "v": "9:00から2時間（途中休憩10分）"
+          }
+        ]
+      }
+    ],
+    "sideArticles": [],
+    "quote": "大池コースは上級者向きで60センチ超の大鯉を狙える一方、小池は初心者・お子様向き、室内では金魚の浮き釣りと、3つのコースで幅広い層が楽しめる釣り堀だ。",
+    "quoteCite": "マチノワ編集部",
+    "closing": "駐車場は30台分を備えており、各務原市のふれあいバス川島線「東大野」バス停から徒歩約1分でアクセスできる。名鉄新那加駅からは徒歩約19分。予約は不要で、当日受付にて利用する。初めて利用する場合は受付で各コースの釣り方と注意事項を確認する。"
+  },
+  "summary": "つりぼり喜水園の3コースの内容と利用の流れをまとめた特集。大池・小池の対象レベル、My竿のルール、室内つりぼりの金魚浮き釣り、大会情報とアクセスを整理。",
+  "tags": [
+    "海・川",
+    "各務原市"
+  ],
+  "charCount": 1136,
+  "facts": [
+    {
+      "claim": "店名は「つりぼり喜水園」で、住所は岐阜県各務原市大野町5-26",
+      "source": "https://maps.google.com/?cid=555021010430148084",
+      "quote": "岐阜県各務原市大野町5-26",
+      "checkedAt": "2026-11-10"
+    },
+    {
+      "claim": "大池コースは上級者向きで、60センチ以上の大鯉も入っている",
+      "source": "http://www.kisuien.info/ooike/ooike.html",
+      "quote": "大池=上級者向き / 60ｃｍ以上の大鯉も入っています",
+      "checkedAt": "2026-11-10"
+    },
+    {
+      "claim": "初心者・中級者向きのコースがある",
+      "source": "http://www.kisuien.info/syouike/syouike.html",
+      "quote": "小池=初心者＋中級者向き",
+      "checkedAt": "2026-11-10"
+    },
+    {
+      "claim": "室内つりぼりでは金魚を浮き釣りで楽しめる",
+      "source": "http://www.kisuien.info/index.html",
+      "quote": "金魚が釣れます。浮きを見て釣っていただく浮き釣りです",
+      "checkedAt": "2026-11-10"
+    },
+    {
+      "claim": "室内つりぼりはエアコンを完備している",
+      "source": "http://www.kisuien.info/index.html",
+      "quote": "エアコン完備",
+      "checkedAt": "2026-11-10"
+    },
+    {
+      "claim": "屋外の大池と小池にはひさし屋根があり、多少の雨でも利用できる",
+      "source": "http://www.kisuien.info/index.html",
+      "quote": "屋外の大池と小池はひさし屋根がありますので多少の雨でしたらご利用可能です",
+      "checkedAt": "2026-11-10"
+    },
+    {
+      "claim": "大池で65センチ以上の大鯉を釣り上げると1時間の利用券がもらえる",
+      "source": "http://www.kisuien.info/ooike/ooike.html",
+      "quote": "大池で65センチ以上の大鯉を釣り上げると１時間の無料券をプレゼント",
+      "checkedAt": "2026-11-10"
+    },
+    {
+      "claim": "大池コースのMy竿は8尺(2.4m)から10尺(3.0m)までの延べ竿が使える",
+      "source": "http://www.kisuien.info/ooike/ooike.html",
+      "quote": "ご利用いただける長さは「８尺(2.4ｍ)～10尺(3.0ｍ)」までの 延べ竿",
+      "checkedAt": "2026-11-10"
+    },
+    {
+      "claim": "大池コースの道糸は1.5号から3号、ハリスは0.8号から2.5号（冬季は細めがおすすめ）",
+      "source": "http://www.kisuien.info/ooike/ooike.html",
+      "quote": "道糸 1.5～3号 / ハリス 0.8～2.5号（冬季は細めの糸がおすすめです）",
+      "checkedAt": "2026-11-10"
+    },
+    {
+      "claim": "駐車場は30台分がある",
+      "source": "https://kakamigahara-kankou.jp/tourism/4126",
+      "quote": "駐車場は30台分あります",
+      "checkedAt": "2026-11-10"
+    },
+    {
+      "claim": "各務原市のふれあいバス川島線「東大野」バス停から徒歩約1分でアクセスできる",
+      "source": "https://www.navitime.co.jp/poi?spot=02022-10031941",
+      "quote": "東大野バス停から徒歩1分",
+      "checkedAt": "2026-11-10"
+    },
+    {
+      "claim": "名鉄新那加駅から徒歩約19分（1.5km）",
+      "source": "https://www.navitime.co.jp/poi?spot=02022-10031941",
+      "quote": "新那加駅から徒歩19分（1.5km）",
+      "checkedAt": "2026-11-10"
+    },
+    {
+      "claim": "大池コースはルアーロッドは利用できず、返しの付いた針は禁止で1本針仕掛けを使う",
+      "source": "http://www.kisuien.info/ooike/ooike.html",
+      "quote": "ルアーロッドは利用できません / 返しの付いた針は使用禁止です / １本針仕掛けで",
+      "checkedAt": "2026-11-10"
+    },
+    {
+      "claim": "小池コースのMy竿は5尺(1.5m)から7尺(2.1m)までの延べ竿が使える",
+      "source": "http://www.kisuien.info/syouike/syouike.html",
+      "quote": "竿の長さは「5尺（1.5ｍ）～7尺（2.1ｍ）」までの 延べ竿",
+      "checkedAt": "2026-11-10"
+    },
+    {
+      "claim": "混雑時は入場者を竿1本につき2名様まで対応している",
+      "source": "http://www.kisuien.info/index.html",
+      "quote": "混雑時は入場者を竿１本につき２名様まで可と",
+      "checkedAt": "2026-11-10"
+    },
+    {
+      "claim": "魚の持ち帰りはできない",
+      "source": "http://www.kisuien.info/index.html",
+      "quote": "当店は魚のお持ち帰りはございません",
+      "checkedAt": "2026-11-10"
+    },
+    {
+      "claim": "支払いは現金のみ",
+      "source": "http://www.kisuien.info/index.html",
+      "quote": "お支払いは現金のみです",
+      "checkedAt": "2026-11-10"
+    },
+    {
+      "claim": "X（旧Twitter）で臨時休業や大会情報、ガチャガチャ新商品入荷情報を配信している",
+      "source": "http://www.kisuien.info/index.html",
+      "quote": "Xから大鯉釣れました～や臨時営業や休業、ガチャガチャ新商品入荷などを配信しています",
+      "checkedAt": "2026-11-10"
+    },
+    {
+      "claim": "初めて利用する方は受付にて各コースの釣り方と注意事項を確認する",
+      "source": "http://www.kisuien.info/index.html",
+      "quote": "当店を初めてご利用のお客様は、受付にて「各コースの釣り方」と「注意事項」のご確認をお願いします",
+      "checkedAt": "2026-11-10"
+    }
+  ],
+  "images": [
+    {
+      "path": "/_portal/vshops/tri-activity-441/g01.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9RobTFrRKqJS6qmIo7kAJMrYW1HnXlu5FNNWRrBNg6-_Gi-BT1hqPxZfkM_U8jRXuG4gmmLy8jGOPKdEWkMyctlI4dhfyxuHDsYCKPFGnlTxUCzZXT0serZXxWTKXQPDpEvekHlSEAa-OEa=s1200",
+      "pageUrl": "https://maps.google.com/?cid=555021010430148084",
+      "what": "網の中に複数の鯉が入っている"
+    },
+    {
+      "path": "/_portal/vshops/tri-activity-441/g02.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9SzhhSf3vPp597A8AQ9R__S5cDvKH5FphyHeEG0_gTUE-iQbqHPfrHQR_ENE45TLPycwbWon5G6T3ptpCxbbAuK_E98S6FgsDxju9yfB8AHNqqDl3MeMZ_T7tFQcFn90qUAoWVG_wsxq3fh=s1200",
+      "pageUrl": "https://maps.google.com/?cid=555021010430148084",
+      "what": "網の中で泳ぐ鯉"
+    },
+    {
+      "path": "/_portal/vshops/tri-activity-441/g03.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9THe0HHqcBcKyENBMunpTr9q92Jvass1Pv1znTyX0-fM1-1jiGgS3Lx0dVB2FQTliIK03_RZVErul8bXKjIhmUIrrNspyTyJ-m-Wg6mVdxZH08zn7-4naRIq9BTcT22kTgQCarP=s1200",
+      "pageUrl": "https://maps.google.com/?cid=555021010430148084",
+      "what": "子どもが竿を持って池で釣りをしている"
+    },
+    {
+      "path": "/_portal/vshops/tri-activity-441/g04.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9SfmSWdWTizemulaUp8mrSC5BOS_uAMjgMl7_HMyRZUJF_Bd060MVdwGUoODYCeujmoCYpGOz7_TGVqcQ-6crL-qFp0PCE8KtzAjQ88t7_rwKZaCBwDPsd5VLT30dWew5OFqlmV=s1200",
+      "pageUrl": "https://maps.google.com/?cid=555021010430148084",
+      "what": "室内の水槽で金魚釣りをしている様子"
+    },
+    {
+      "path": "/_portal/vshops/tri-activity-441/g05.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9RxCwnwxuR5lXyYZmMwseWwjpDcIV6aR3eYC-S2Y9qvKjp-Oy3GGiTkQWwESbPaR7oC_qJEyW5-qCMHwrWes7y3KLTHva16HP1XG_VOUq5AdDcMwt0YoaYhTt8eLz3mVfKkIHxO=s1200",
+      "pageUrl": "https://maps.google.com/?cid=555021010430148084",
+      "what": "駐車場と建物の外観"
+    },
+    {
+      "path": "/_portal/vshops/tri-activity-441/g06.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9RLN-32B1mCqUooG7JbCyq-d8rtULORkSqv-LnjJRigsJFJmuBgv7a7HqpKON2dDw8XebSwoQ99ESCipEysrUHOOLQOEo0RmNHrhPh7vv5W7hLSAHqTpE6rv7XnQkZypEyn45G4rA=s1200",
+      "pageUrl": "https://maps.google.com/?cid=555021010430148084",
+      "what": "池の中で泳ぐ複数の鯉"
+    },
+    {
+      "path": "/_portal/vshops/tri-activity-441/g07.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9S2iIfcBmjYsRfqO7vv_JWSIsoBU3yTxrW6nmthA0OlZp8e7RHzTVBtzbHw5GTPjwEUKnT2WP3EPzrpq96HWKB2qSb5ZrXOJRxyqiT6R_1pDVSdlTvEsQtdZLyGdvkfwWUCpRJo=s1200",
+      "pageUrl": "https://maps.google.com/?cid=555021010430148084",
+      "what": "池の中の大きなオレンジ色の鯉"
+    },
+    {
+      "path": "/_portal/vshops/tri-activity-441/g08.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9RrclVJdCvA1pxT2Y-8E0lLeG7WdQSDSIJhCHG4EQgednHL_U2dZcyXeDtsMkMGY785-uhjargoiRyME1da3aJx_BLrtG6wGhzyvOHMFQL2d0lF5kPRAeNn7NRWruJaqxIulzp6jJEJ_LOP=s1200",
+      "pageUrl": "https://maps.google.com/?cid=555021010430148084",
+      "what": "池の中に泳ぐ複数の鯉"
+    },
+    {
+      "path": "/_portal/vshops/tri-activity-441/g09.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9SYWkmlPZ8Q1Ad7beF8Vfvrm-UYMwC4wqkEka7aswrd2Xcv0joK1W-RpuQjiyeCOhpNwtOJWyaUj7TdHl5RwavMBYO_6bgvZxm58Wr7XxeFwrKl0R0TsufL9oqh1bw97-Ksn9Uu=s1200",
+      "pageUrl": "https://maps.google.com/?cid=555021010430148084",
+      "what": "「つりぼり 喜水園」と書かれた看板のある建物正面"
+    },
+    {
+      "path": "/_portal/vshops/tri-activity-441/g10.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9SLLVmRPN_W7nEgl1QpOT3gjfQlYJWVa4WTX2RbLVi6DKoThvS6wBGZgtCQFn6hUMr9S5FGFB2SDViixS92sKxhoHp23JHgdsAsVgc1HG9Mjx010DDcuB5zjKzpOhMgReM1xes=s1200",
+      "pageUrl": "https://maps.google.com/?cid=555021010430148084",
+      "what": "透明な袋の中に入った鯉"
+    },
+    {
+      "path": "/_portal/vshops/tri-activity-441/s05.jpg",
+      "imageUrl": "http://www.kisuien.info/_src/32/image0.jpg?v=1793436764522",
+      "pageUrl": "http://www.kisuien.info/",
+      "what": "池と建物が見える施設の外観"
+    },
+    {
+      "path": "/_portal/vshops/tri-activity-441/s06.jpg",
+      "imageUrl": "http://www.kisuien.info/_src/33/8fbb03bd-a504-4055-aa06-73d1fd37215b.jpg?v=1793436764522",
+      "pageUrl": "http://www.kisuien.info/",
+      "what": "池の中で泳ぐ色鮮やかな鯉"
+    },
+    {
+      "path": "/_portal/vshops/tri-activity-441/s07.jpg",
+      "imageUrl": "http://www.kisuien.info/_src/34/0ae5a270-36c7-49c1-b42f-ad0786abf030.jpg?v=1793436764522",
+      "pageUrl": "http://www.kisuien.info/",
+      "what": "緑色の水面が広がる池と建物の外観"
+    },
+    {
+      "path": "/_portal/vshops/tri-activity-441/s08.jpg",
+      "imageUrl": "http://www.kisuien.info/_src/35/42ade610-2769-4966-8d6a-7f170067552c.jpg?v=1793436764522",
+      "pageUrl": "http://www.kisuien.info/",
+      "what": "建物と池が並ぶ施設全体の外観"
+    },
+    {
+      "path": "/_portal/vshops/tri-activity-441/s09.jpg",
+      "imageUrl": "http://www.kisuien.info/_src/36/image0_%283%29.jpg?v=1793436764522",
+      "pageUrl": "http://www.kisuien.info/",
+      "what": "池の水面に鯉が泳いでいる様子"
+    },
+    {
+      "path": "/_portal/vshops/tri-activity-441/s10.jpg",
+      "imageUrl": "http://www.kisuien.info/_src/24/image0_%282%29.jpg?v=1793436764522",
+      "pageUrl": "http://www.kisuien.info/",
+      "what": "池の中にたくさんの鯉が泳いでいる"
+    },
+    {
+      "path": "/_portal/vshops/tri-activity-441/s12.jpg",
+      "imageUrl": "http://www.kisuien.info/_src/29/558c694e-f3b8-477a-af73-262cc482dfb3.jpg?v=1793436764522",
+      "pageUrl": "http://www.kisuien.info/",
+      "what": "室内の池で金魚と鯉が泳いでいる"
+    }
+  ],
+  "sources": [
+    {
+      "label": "公式サイト",
+      "url": "http://www.kisuien.info/"
+    },
+    {
+      "label": "公式サイト(大池コース)",
+      "url": "http://www.kisuien.info/ooike/ooike.html"
+    },
+    {
+      "label": "公式サイト(小池コース)",
+      "url": "http://www.kisuien.info/syouike/syouike.html"
+    },
+    {
+      "label": "各務原市観光協会",
+      "url": "https://kakamigahara-kankou.jp/tourism/4126"
+    },
+    {
+      "label": "釣り堀情報サイト(tsuribori.net)",
+      "url": "https://tsuribori.net/introduce/kisuien/"
+    },
+    {
+      "label": "Google マップ",
+      "url": "https://maps.google.com/?cid=555021010430148084"
+    }
+  ],
+  "notes": "automation/v2/write.mjs が 2026-11-10 に作成。"
+}

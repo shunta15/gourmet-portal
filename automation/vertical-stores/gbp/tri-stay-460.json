@@ -1,0 +1,32 @@
+{
+  "tab": "トリニティアポ",
+  "tabEn": "tri-stay",
+  "row": 460,
+  "sheet": {
+    "name": "オタルムーン stay and wellness",
+    "address": "",
+    "url": "https://www.google.com/maps/search/?api=1&query=%E3%82%AA%E3%82%BF%E3%83%AB%E3%83%A0%E3%83%BC%E3%83%B3%20stay%20and%20wellness%20090-9517-2639%20%E3%80%92047-0032%20%E5%8C%97%E6%B5%B7%E9%81%93%E5%B0%8F%E6%A8%BD%E5%B8%82%E7%A8%B2%E7%A9%82%EF%BC%95%E4%B8%81%E7%9B%AE%EF%BC%92%EF%BC%98%E2%88%92%EF%BC%94",
+    "type": "美容・宿泊",
+    "d1": "",
+    "d2": ""
+  },
+  "urlKind": "mapsApi",
+  "route": "第1段(verify-gbp.mjs)で確認済み",
+  "verdict": "一致",
+  "verdictReason": "手がかり: 店名＋電話＋住所(番地まで)。電話が一致／店名: exact(シート「オタルムーン stay and wellness」/ マップ「オタルムーン stay and wellness」)／住所(シート): exact・町名・番地とも一致",
+  "place": {
+    "name": "オタルムーン stay and wellness",
+    "address": "北海道小樽市稲穂５丁目２８−４",
+    "category": "エステティック サロン",
+    "lat": 43.2044796,
+    "lng": 140.9893562,
+    "gbpUrl": "https://maps.google.com/?cid=7096041978865114801",
+    "phone": "090-9517-2639",
+    "website": "https://otaru.mypl.net/shop/00000359151/",
+    "hours": null,
+    "reserveLinks": [],
+    "statusSignals": [],
+    "closedSignal": false
+  },
+  "fetchedAt": "2026-11-10T04:04:47.278Z"
+}

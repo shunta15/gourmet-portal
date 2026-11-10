@@ -1,0 +1,40 @@
+{
+  "tab": "トリニティアポ",
+  "tabEn": "tri-life",
+  "row": 464,
+  "sheet": {
+    "name": "常幸院",
+    "address": "",
+    "url": "https://www.google.com/maps/search/?api=1&query=%E5%B8%B8%E5%B9%B8%E9%99%A2%20055-636-0536%20%E3%80%92409-2936%20%E5%B1%B1%E6%A2%A8%E7%9C%8C%E5%8D%97%E5%B7%A8%E6%91%A9%E9%83%A1%E8%BA%AB%E5%BB%B6%E7%94%BA%E5%B8%B8%E8%91%89%EF%BC%94%EF%BC%93%EF%BC%99",
+    "type": "寺",
+    "d1": "",
+    "d2": ""
+  },
+  "urlKind": "mapsApi",
+  "route": "第1段(verify-gbp.mjs)で確認済み",
+  "verdict": "一致",
+  "verdictReason": "手がかり: 店名＋電話＋住所(番地まで)。電話が一致／店名: contains(シート「常幸院」/ マップ「曹洞宗 常幸院」)／住所(シート): exact・町名・番地とも一致",
+  "place": {
+    "name": "曹洞宗 常幸院",
+    "address": "山梨県南巨摩郡身延町常葉４３９",
+    "category": "仏教寺院",
+    "lat": 35.448801,
+    "lng": 138.4807676,
+    "gbpUrl": "https://maps.google.com/?cid=14190822412686140098",
+    "phone": "0556-36-0536",
+    "website": "http://xn--rutnfr13o.com/",
+    "hours": {
+      "月": "07:00–19:00",
+      "火": "07:00–19:00",
+      "水": "07:00–19:00",
+      "木": "07:00–19:00",
+      "金": "07:00–19:00",
+      "土": "07:00–19:00",
+      "日": "07:00–19:00"
+    },
+    "reserveLinks": [],
+    "statusSignals": [],
+    "closedSignal": false
+  },
+  "fetchedAt": "2026-11-10T04:06:18.604Z"
+}
