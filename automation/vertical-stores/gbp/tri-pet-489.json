@@ -1,0 +1,40 @@
+{
+  "tab": "トリニティアポ",
+  "tabEn": "tri-pet",
+  "row": 489,
+  "sheet": {
+    "name": "わんにゃんSpot リアン",
+    "address": "",
+    "url": "https://www.google.com/maps/search/?api=1&query=%E3%82%8F%E3%82%93%E3%81%AB%E3%82%83%E3%82%93Spot%20%E3%83%AA%E3%82%A2%E3%83%B3%20055-939-7433%20%E3%80%92411-0917%20%E9%9D%99%E5%B2%A1%E7%9C%8C%E9%A7%BF%E6%9D%B1%E9%83%A1%E6%B8%85%E6%B0%B4%E7%94%BA%E5%BE%B3%E5%80%89%EF%BC%91%EF%BC%96%EF%BC%90%EF%BC%94%E2%88%92%EF%BC%94",
+    "type": "ペット",
+    "d1": "",
+    "d2": ""
+  },
+  "urlKind": "mapsApi",
+  "route": "第1段(verify-gbp.mjs)で確認済み",
+  "verdict": "一致",
+  "verdictReason": "手がかり: 店名＋電話＋住所(番地まで)。電話が一致／店名: exact(シート「わんにゃんSpot リアン」/ マップ「わんにゃんSpot リアン」)／住所(シート): exact・町名・番地とも一致",
+  "place": {
+    "name": "わんにゃんSpot リアン",
+    "address": "静岡県駿東郡清水町徳倉１６０４−４",
+    "category": "ペットショップ",
+    "lat": 35.0878492,
+    "lng": 138.898892,
+    "gbpUrl": "https://maps.google.com/?cid=10589393212900567276",
+    "phone": "055-939-7433",
+    "website": "https://wannyanlien.xsrv.jp/index.html",
+    "hours": {
+      "月": "09:00–19:00",
+      "火": "定休日",
+      "水": "09:00–19:00",
+      "木": "09:00–19:00",
+      "金": "09:00–19:00",
+      "土": "09:00–19:00",
+      "日": "09:00–19:00"
+    },
+    "reserveLinks": [],
+    "statusSignals": [],
+    "closedSignal": false
+  },
+  "fetchedAt": "2026-11-10T14:12:30.060Z"
+}

@@ -1,0 +1,207 @@
+{
+  "key": "tri-pet-489",
+  "headline": "静岡県駿東郡清水町にある多目的総合ペットショップ。犬・猫の販売に加え、トリミング・ペットホテル・ドッグラン・予防接種も行う。",
+  "lede": "駿東郡清水町にある「わんにゃんSpot リアン」です。静岡県東部に位置し、清水町防災センターの南側、天神下バス停の目の前に立地します。店名の「リアン」はフランス語で「絆」を意味し、飼い主とペットをつなぐ絆、そして店と客との絆を大切にしたいという思いから付けられた名前です。犬・猫の販売からご購入後のペットライフまでをトータルでサポートすることを目指しており、シャンプー＆トリミング、ペットホテル、店舗内ドッグラン、予防接種、グッズ販売まで多目的に対応しています。店舗正面には8台分の駐車場を備えています。",
+  "sections": [
+    {
+      "heading": "対象の動物",
+      "body": "犬と猫の両方を取り扱う総合ペットショップです。販売する犬種はトイ・プードル、マルチーズ、チワワ、ポメラニアン、ゴールデン・レトリーバー、柴犬、フレンチ・ブルドッグ、パグ、ミニチュア・ダックスフント、ミニチュア・シュナウザーなど多岐にわたります。猫はスコティッシュ・フォールド、アメリカン・ショートヘア、ラグドール、ベンガル、ノルウェージャン・フォレスト・キャットなど多品種を扱っています。購入後のしつけやお手入れ方法についても、経験豊富なスタッフがサポートします。ペット用のフード類やケア用品といったグッズ販売も行っています。動物取扱業者として販売（第227119001号）・保管（第227119002号）の登録を受けており、動物取扱責任者は野口博史氏です。"
+    },
+    {
+      "heading": "サービスの内容",
+      "body": "シャンプー＆トリミングは資格保有のトリマーが常駐して対応します。爪切りや耳掃除のみの施術も受け付けており、ブラッシングやシャンプーに関する相談にも応じます。ペットホテルは個室のケージではなく広いスペースを用意しており、1日2回の散歩が付いています。雨の日は店舗内のドッグランを使って遊ぶことができます。ペットホテルの利用には混合ワクチン（犬は5種以上、猫は3種以上）と狂犬病予防接種の接種済み、ノミ・ダニ駆除済みであることが条件です。予防接種（ワクチン接種）も予約制で行っており、薬に関する相談も受け付けています。なお、獣医は常駐していません。"
+    },
+    {
+      "heading": "設備",
+      "body": "店舗内にドッグランを設置しており、ノーリードで犬を自由に走らせられます。運動不足やストレスの解消に、また雨の日の散歩代わりとしても利用できます。店内と店舗前には会員向けのドッグランがあり、会員はいつでも利用できます。店舗正面に8台分の駐車場を備えており、クレジットカード（VISA・Master・JCBなど）が利用できます。"
+    },
+    {
+      "heading": "行き方と使い方",
+      "body": "JR沼津駅から車で約15分です。バスを利用する場合は天神下バス停が最寄りで、バス停の目の前に店舗があります。清水町防災センターの南側が目印です。シャンプー＆トリミングとペットホテルは完全予約制で、電話やメールで予約を受け付けています。メールでの問い合わせには24時間以内に返信します。"
+    }
+  ],
+  "menus": [
+    {
+      "name": "犬・猫の販売"
+    },
+    {
+      "name": "シャンプー＆トリミング"
+    },
+    {
+      "name": "ペットホテル"
+    },
+    {
+      "name": "ドッグラン"
+    },
+    {
+      "name": "予防接種"
+    },
+    {
+      "name": "グッズ販売"
+    }
+  ],
+  "tags": [],
+  "facts": [
+    {
+      "claim": "店名「リアン」はフランス語で「絆」を意味する",
+      "source": "https://wannyanlien.xsrv.jp/greeting.html",
+      "quote": "【リアン】とはフランス語で「絆（きずな）」という意味です",
+      "checkedAt": "2026-11-10"
+    },
+    {
+      "claim": "静岡県東部にある多目的総合ペットショップである",
+      "source": "https://wannyanlien.xsrv.jp/index.html",
+      "quote": "わんにゃんＳｐｏｔ リアンは 静岡県東部にある 多目的用途 総合ペットショップです",
+      "checkedAt": "2026-11-10"
+    },
+    {
+      "claim": "清水町防災センターの南側に立地する",
+      "source": "https://wannyanlien.xsrv.jp/store.html",
+      "quote": "清水町防災センター南側にあります",
+      "checkedAt": "2026-11-10"
+    },
+    {
+      "claim": "店舗正面に8台分の駐車場がある",
+      "source": "https://wannyanlien.xsrv.jp/store.html",
+      "quote": "有（店舗正面に８台）",
+      "checkedAt": "2026-11-10"
+    },
+    {
+      "claim": "動物取扱業者として販売（第227119001号）・保管（第227119002号）の登録を受けている",
+      "source": "https://wannyanlien.xsrv.jp/store.html",
+      "quote": "販売：第 227119001 号 保管：第 227119002 号",
+      "checkedAt": "2026-11-10"
+    },
+    {
+      "claim": "動物取扱責任者は野口博史氏",
+      "source": "https://wannyanlien.xsrv.jp/store.html",
+      "quote": "動物取扱責任者：野口 博史",
+      "checkedAt": "2026-11-10"
+    },
+    {
+      "claim": "店長（野口氏）は大型ペットショップで18年間店長として勤務した実績がある",
+      "source": "https://wannyanlien.xsrv.jp/greeting.html",
+      "quote": "大型ペットショップにて18年店長として勤務実績あり",
+      "checkedAt": "2026-11-10"
+    },
+    {
+      "claim": "店長は愛玩動物飼養管理士1級の資格を持つ",
+      "source": "https://wannyanlien.xsrv.jp/greeting.html",
+      "quote": "店長：野口（愛玩動物飼養管理士１級）",
+      "checkedAt": "2026-11-10"
+    },
+    {
+      "claim": "シャンプー＆トリミングは資格保有のトリマーが常駐して担当する",
+      "source": "https://wannyanlien.xsrv.jp/service.html",
+      "quote": "資格保有トリマーが常駐。優しく丁寧にトリミング致します",
+      "checkedAt": "2026-11-10"
+    },
+    {
+      "claim": "爪切りや耳掃除のみのサービスも受け付けている",
+      "source": "https://wannyanlien.xsrv.jp/service.html",
+      "quote": "爪切りや耳掃除のみも承ります",
+      "checkedAt": "2026-11-10"
+    },
+    {
+      "claim": "ペットホテルの宿泊はケージではなく広いスペースを用意する",
+      "source": "https://wannyanlien.xsrv.jp/service.html",
+      "quote": "宿泊はゲージではなくスペースをご用意",
+      "checkedAt": "2026-11-10"
+    },
+    {
+      "claim": "ペットホテルでは1日2回の散歩がある",
+      "source": "https://wannyanlien.xsrv.jp/service.html",
+      "quote": "お散歩も１日２回と充実",
+      "checkedAt": "2026-11-10"
+    },
+    {
+      "claim": "雨の日はペットホテルの犬が店舗内のドッグランで遊べる",
+      "source": "https://wannyanlien.xsrv.jp/service.html",
+      "quote": "雨の日でも店舗内のドッグランで遊べます",
+      "checkedAt": "2026-11-10"
+    },
+    {
+      "claim": "店舗内にドッグランを設置しノーリードで利用できる",
+      "source": "https://wannyanlien.xsrv.jp/service.html",
+      "quote": "店舗内にドッグランを設置しております。ノーリードで運動不足やストレスの解消に",
+      "checkedAt": "2026-11-10"
+    },
+    {
+      "claim": "予防接種は予約制で行い、獣医は常駐していない",
+      "source": "https://wannyanlien.xsrv.jp/service.html",
+      "quote": "獣医は常駐しておりません。予約制となります",
+      "checkedAt": "2026-11-10"
+    },
+    {
+      "claim": "ペットホテル利用には混合ワクチン（犬5種以上・猫3種以上）と狂犬病予防接種が必要",
+      "source": "https://wannyanlien.xsrv.jp/hotel.html",
+      "quote": "混合ワクチン(犬5種以上、猫3種以上)、狂犬病予防接種が必要",
+      "checkedAt": "2026-11-10"
+    },
+    {
+      "claim": "JR沼津駅から車で約15分",
+      "source": "https://mishima.mypl.net/shop/00000357890/",
+      "quote": "JR沼津駅より車で15分",
+      "checkedAt": "2026-11-10"
+    },
+    {
+      "claim": "会員向けに店内と店舗前のドッグランをいつでも利用できるサービスがある",
+      "source": "https://mishima.mypl.net/shop/00000357890/",
+      "quote": "会員様用のワンちゃんが自由に走り回れるドッグランを設けており、会員様はお好きな時にご利用できます",
+      "checkedAt": "2026-11-10"
+    },
+    {
+      "claim": "クレジットカード（VISA・Master・JCBなど）が利用できる",
+      "source": "https://mishima.mypl.net/shop/00000357890/",
+      "quote": "クレジットカード利用可（VISA、Master、JCB等）",
+      "checkedAt": "2026-11-10"
+    },
+    {
+      "claim": "店舗の開業登録年月日は平成31年4月11日",
+      "source": "https://wannyanlien.xsrv.jp/store.html",
+      "quote": "登録年月日：平成31年4月11日",
+      "checkedAt": "2026-11-10"
+    },
+    {
+      "claim": "シャンプー＆トリミングとペットホテルの予約はメールでも受け付け、24時間以内に返信する",
+      "source": "https://wannyanlien.xsrv.jp/contact.html",
+      "quote": "メールは内容を確認次第、24時間以内に折り返しご連絡させていただきます",
+      "checkedAt": "2026-11-10"
+    }
+  ],
+  "sources": [
+    {
+      "label": "公式サイト",
+      "url": "https://wannyanlien.xsrv.jp/index.html"
+    },
+    {
+      "label": "公式サイト(サービス案内)",
+      "url": "https://wannyanlien.xsrv.jp/service.html"
+    },
+    {
+      "label": "公式サイト(店舗情報・アクセス)",
+      "url": "https://wannyanlien.xsrv.jp/store.html"
+    },
+    {
+      "label": "公式サイト(ごあいさつ)",
+      "url": "https://wannyanlien.xsrv.jp/greeting.html"
+    },
+    {
+      "label": "公式サイト(お問い合わせ)",
+      "url": "https://wannyanlien.xsrv.jp/contact.html"
+    },
+    {
+      "label": "公式サイト(ペットホテル)",
+      "url": "https://wannyanlien.xsrv.jp/hotel.html"
+    },
+    {
+      "label": "まいぷれ三島",
+      "url": "https://mishima.mypl.net/shop/00000357890/"
+    },
+    {
+      "label": "Google マップ",
+      "url": "https://maps.google.com/?cid=10589393212900567276"
+    }
+  ],
+  "notes": "automation/v2/write.mjs が 2026-11-10 に claude -p --model sonnet で作成。事実の裏取り: 21/22 件(quote が出どころの内容に合うもの。言い換え可)。裏取りに通らなかった facts は載せていない。"
+}

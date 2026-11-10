@@ -1,0 +1,40 @@
+{
+  "tab": "トリニティアポ",
+  "tabEn": "tri-activity",
+  "row": 487,
+  "sheet": {
+    "name": "tome cruise",
+    "address": "",
+    "url": "https://www.google.com/maps/search/?api=1&query=tome%20cruise%20090-2967-0722%20%E3%80%92891-9307%20%E9%B9%BF%E5%85%90%E5%B3%B6%E7%9C%8C%E5%A4%A7%E5%B3%B6%E9%83%A1%E4%B8%8E%E8%AB%96%E7%94%BA%E5%8F%A4%E9%87%8C%E5%A4%A7%E9%87%91%E4%B9%85%E6%B5%B7%E5%B2%B8",
+    "type": "ツアー会社",
+    "d1": "",
+    "d2": ""
+  },
+  "urlKind": "mapsApi",
+  "route": "第1段(verify-gbp.mjs)で確認済み",
+  "verdict": "一致",
+  "verdictReason": "手がかり: 店名＋電話。電話が一致／店名: exact(シート「tome cruise」/ マップ「Tome Cruise」)／住所(シート): coarse・シートの住所に番地なし（町名まで一致）",
+  "place": {
+    "name": "Tome Cruise",
+    "address": "鹿児島県大島郡与論町古里大金久海岸",
+    "category": "観光ツアー代理店",
+    "lat": 27.0360701,
+    "lng": 128.4536059,
+    "gbpUrl": "https://maps.google.com/?cid=6121046913148774238",
+    "phone": "090-2967-0722",
+    "website": "https://tomecruise.crayonsite.com/",
+    "hours": {
+      "月": "08:00–17:00",
+      "火": "08:00–17:00",
+      "水": "08:00–17:00",
+      "木": "08:00–17:00",
+      "金": "08:00–17:00",
+      "土": "08:00–17:00",
+      "日": "08:00–17:00"
+    },
+    "reserveLinks": [],
+    "statusSignals": [],
+    "closedSignal": false
+  },
+  "fetchedAt": "2026-11-10T14:11:11.624Z"
+}

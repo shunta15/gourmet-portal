@@ -187,6 +187,8 @@ export const ONE_PAGE_UNLISTED_SHOP_OF_FEATURE: Readonly<Record<string, string>>
   "へんじんもっこ（ソーセージ・サラミ製造直売所）": "r917", // へんじんもっこ（ソーセージ・サラミ製造直売所）
   "五果苑": "r918", // 五果苑
   "寿司処なら": "r919", // 寿司処 なら
+  "浅草ロゼ": "r920", // 浅草ロゼ
+  "フルサト": "r921", // フルサト
 };
 
 const NFC = (s: string) => s.normalize("NFC");

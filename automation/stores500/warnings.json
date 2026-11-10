@@ -3724,5 +3724,20 @@
       "desc は lede から事実の文を選べず、事実から作った定型文",
       "cuisine は GBPカテゴリ"
     ]
+  },
+  "r920": {
+    "articleId": "浅草ロゼ",
+    "name": "浅草ロゼ",
+    "warnings": [
+      "desc は lede から事実の文を選べず、事実から作った定型文",
+      "cuisine は GBPカテゴリ"
+    ]
+  },
+  "r921": {
+    "articleId": "フルサト",
+    "name": "フルサト",
+    "warnings": [
+      "cuisine は GBPカテゴリ"
+    ]
   }
 }

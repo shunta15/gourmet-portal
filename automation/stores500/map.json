@@ -2398,5 +2398,15 @@
     "articleId": "寿司処なら",
     "sheetName": "寿司処 なら",
     "mapsUrl": "https://maps.google.com/?cid=14734653235508044632"
+  },
+  {
+    "articleId": "浅草ロゼ",
+    "sheetName": "カフェバー浅草ロゼ",
+    "mapsUrl": "https://maps.google.com/?cid=9529815308659665449"
+  },
+  {
+    "articleId": "フルサト",
+    "sheetName": "自家焙煎珈琲 フルサト",
+    "mapsUrl": "https://maps.google.com/?cid=13976622715455852140"
   }
 ]

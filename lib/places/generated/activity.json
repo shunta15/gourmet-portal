@@ -10193,6 +10193,466 @@
         ],
         "checkedAt": "2026-11-10"
       }
+    },
+    {
+      "id": "ac0061",
+      "vertical": "activity",
+      "category": "sea-river",
+      "name": "Tome Cruise",
+      "pref": "kagoshima",
+      "cityName": "与論町",
+      "address": "鹿児島県大島郡与論町古里大金久海岸",
+      "lat": 27.0360701,
+      "lng": 128.4536059,
+      "hours": "毎日 08:00 - 17:00",
+      "phone": "090-2967-0722",
+      "url": "https://tomecruise.crayonsite.com/",
+      "website": "https://tomecruise.crayonsite.com/",
+      "mapUrl": "https://maps.google.com/?cid=6121046913148774238",
+      "image": "/_portal/vshops/tri-activity-487/g01.jpg",
+      "images": [
+        "/_portal/vshops/tri-activity-487/g01.jpg",
+        "/_portal/vshops/tri-activity-487/g02.jpg",
+        "/_portal/vshops/tri-activity-487/g03.jpg",
+        "/_portal/vshops/tri-activity-487/g04.jpg",
+        "/_portal/vshops/tri-activity-487/g05.jpg",
+        "/_portal/vshops/tri-activity-487/g06.jpg",
+        "/_portal/vshops/tri-activity-487/g07.jpg",
+        "/_portal/vshops/tri-activity-487/g08.jpg",
+        "/_portal/vshops/tri-activity-487/g09.jpg",
+        "/_portal/vshops/tri-activity-487/g10.jpg",
+        "/_portal/vshops/tri-activity-487/s01.jpg",
+        "/_portal/vshops/tri-activity-487/s15.jpg",
+        "/_portal/vshops/tri-activity-487/s16.jpg",
+        "/_portal/vshops/tri-activity-487/s17.jpg"
+      ],
+      "photos": [
+        {
+          "path": "/_portal/vshops/tri-activity-487/g01.jpg",
+          "what": "海岸に立つ複数の人と緑色のグラスボート",
+          "kind": "exterior",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-487/g02.jpg",
+          "what": "白砂の砂浜に停泊する緑色のグラスボート",
+          "kind": "exterior",
+          "width": 675,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-487/g03.jpg",
+          "what": "エメラルドグリーンの海と白い砂浜の百合ヶ浜",
+          "kind": "view",
+          "width": 1200,
+          "height": 675
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-487/g04.jpg",
+          "what": "青空のもとに広がるエメラルドグリーンの海と砂浜",
+          "kind": "view",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-487/g05.jpg",
+          "what": "浅瀬を泳ぐウミガメ",
+          "kind": "view",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-487/g06.jpg",
+          "what": "海の中を泳ぐウミガメとシュノーケラー",
+          "kind": "view",
+          "width": 800,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-487/g07.jpg",
+          "what": "白い砂紋が広がる浅瀬の砂浜",
+          "kind": "view",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-487/g08.jpg",
+          "what": "上空から見た砂浜と海のグラデーション",
+          "kind": "view",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-487/g09.jpg",
+          "what": "砂浜沖に停泊するグラスボートと遠くの人々",
+          "kind": "view",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-487/g10.jpg",
+          "what": "浅いエメラルドの海に立つ水着姿の人",
+          "kind": "view",
+          "width": 675,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-487/s01.jpg",
+          "what": "上空から見た百合ヶ浜の砂浜とグラスボート",
+          "kind": "view",
+          "width": 1000,
+          "height": 750
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-487/s15.jpg",
+          "what": "青空と白い雲を背景にした百合ヶ浜の砂浜",
+          "kind": "view",
+          "width": 850,
+          "height": 637
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-487/s16.jpg",
+          "what": "グラスボートの船上から百合ヶ浜を眺める人",
+          "kind": "view",
+          "width": 850,
+          "height": 566
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-487/s17.jpg",
+          "what": "砂浜に停泊する緑色のグラスボートと青い海",
+          "kind": "exterior",
+          "width": 637,
+          "height": 850
+        }
+      ],
+      "tags": [
+        "駐車場あり"
+      ],
+      "article": {
+        "headline": "鹿児島県大島郡与論町、大金久海岸を拠点とする海のツアー。グラスボートで百合ヶ浜へ渡り、シュノーケリングや亀との遊泳を案内する",
+        "lede": "大島郡与論町にある「Tome Cruise（トメ クルーズ）」です。与論島東側の大金久海岸を出発地とし、グラスボートを使って沖合1.5キロの百合ヶ浜へ案内するほか、赤崎サンゴの森でのシュノーケリングや亀との遊泳ツアーを提供しています。ショップ名は船長・福留氏の「トメ」に由来しており、福留氏が直接案内を担当しています。百合ヶ浜は大潮の干潮時に姿を現す砂浜で、春から夏にかけて出現率が高くなります。百合ヶ浜では年齢の数だけ星砂を拾えば幸せになれるという言い伝えがあります。受付は08:00から21:00まで対応しており、年中無休で営業しています。",
+        "sections": [
+          {
+            "heading": "体験の内容と流れ",
+            "body": "大金久海岸からグラスボート「tome circle 号」に乗り込み、百合ヶ浜への渡し船ツアーが基本のコースです。グラスボートは海中を透過して見られる構造のため、乗船中も海の中を観察できます。百合ヶ浜は潮が満ちてくると波の下に隠れてしまうため、案内の時間は大潮・中潮の干潮に合わせて毎日変わります。天候によってグラスボートが運航できない日があり、出発時間は事前に電話で確認が必要です。亀とのシュノーケリングは日にち関係なく案内でき、赤崎サンゴの森でのシュノーケリングと組み合わせたコースも用意しています。百合ヶ浜での遊びと赤崎サンゴの森シュノーケリング、亀との遊泳を一度に体験するコースもあります。海で拾ったサンゴや星砂は持ち帰りができないため、帰りに海へ戻すルールがあります。"
+          },
+          {
+            "heading": "コースと所要時間",
+            "body": "コースは「百合ヶ浜遊び」「赤崎サンゴの森シュノーケリング」「百合ヶ浜遊び＆赤崎サンゴの森シュノーケリング」「朝日グラスボート」「赤崎サンゴの森＆亀とシュノーケリング＆百合ヶ浜」など複数のプランがあります。シュノーケリングを含むコースの所要時間は3時間以上です。シュノーケリング器材はレンタルが可能で、シャワー・トイレ・更衣室を利用できます。ウェディングプランとして百合ヶ浜での案内も受け付けており、詳細は問い合わせが必要です。"
+          },
+          {
+            "heading": "対象",
+            "body": "年齢制限の指定はなく、幅広い世代が参加できます。百合ヶ浜ツアーは家族連れやカップルなど、海が初めての方も利用できる内容です。亀とのシュノーケリングはシュノーケリングの経験を問わず案内しており、日程を問わず出発できます。お客様の要望に合わせてコースをカスタマイズできます。"
+          },
+          {
+            "heading": "集合場所と行き方",
+            "body": "大金久海岸の町営駐車場に車を停め、ビーチへ向かうのが基本のアクセスです。海岸に緑色の「tome circle 号」が待機しており、海岸にいない場合は携帯電話へ連絡します。与論空港・与論港から車で15分の距離にあります。与論島へは那覇空港から飛行機で約40分、鹿児島空港から飛行機で約1時間15分でアクセスできます。予約は電話（090-2967-0722）のほか、じゃらん・アソビューなどのオンライン予約サービスからも受け付けています。決済は現金とPayPayに対応しています。"
+          }
+        ],
+        "menus": [
+          {
+            "name": "百合ヶ浜遊び"
+          },
+          {
+            "name": "赤崎サンゴの森シュノーケリング"
+          },
+          {
+            "name": "百合ヶ浜遊び＆赤崎サンゴの森シュノーケリング"
+          },
+          {
+            "name": "朝日グラスボート"
+          },
+          {
+            "name": "赤崎サンゴの森＆亀とシュノーケリング＆百合ヶ浜"
+          },
+          {
+            "name": "亀とのシュノーケリング"
+          },
+          {
+            "name": "ウェディングプラン"
+          }
+        ],
+        "sources": [
+          {
+            "label": "公式サイト",
+            "url": "https://tomecruise.crayonsite.com/"
+          },
+          {
+            "label": "公式サイト（サービスメニュー・スタッフ紹介）",
+            "url": "https://tomecruise.crayonsite.com/p/2/"
+          },
+          {
+            "label": "与論島観光情報サイト",
+            "url": "https://www.yorontou.info/spot/5205.html"
+          },
+          {
+            "label": "アソビュー",
+            "url": "https://www.asoview.com/base/152335/"
+          },
+          {
+            "label": "Google マップ",
+            "url": "https://maps.google.com/?cid=6121046913148774238"
+          }
+        ],
+        "checkedAt": "2026-11-10"
+      }
+    },
+    {
+      "id": "ac0062",
+      "vertical": "activity",
+      "category": "craft",
+      "name": "染め屋 貴久 KIKYU",
+      "pref": "osaka",
+      "cityName": "池田市",
+      "address": "大阪府池田市栄町6",
+      "lat": 34.8234148,
+      "lng": 135.425418,
+      "hours": "火木土日 11:00 - 17:00",
+      "holidays": "月曜・水曜・金曜",
+      "phone": "072-703-7016",
+      "url": "https://someyakikyu.com/",
+      "website": "https://someyakikyu.com/",
+      "mapUrl": "https://maps.google.com/?cid=9387566492919883026",
+      "image": "/_portal/vshops/tri-activity-490/g01.jpg",
+      "images": [
+        "/_portal/vshops/tri-activity-490/g01.jpg",
+        "/_portal/vshops/tri-activity-490/g03.jpg",
+        "/_portal/vshops/tri-activity-490/g04.jpg",
+        "/_portal/vshops/tri-activity-490/g05.jpg",
+        "/_portal/vshops/tri-activity-490/g06.jpg",
+        "/_portal/vshops/tri-activity-490/g07.jpg",
+        "/_portal/vshops/tri-activity-490/g08.jpg",
+        "/_portal/vshops/tri-activity-490/g09.jpg",
+        "/_portal/vshops/tri-activity-490/g10.jpg",
+        "/_portal/vshops/tri-activity-490/s01.jpg",
+        "/_portal/vshops/tri-activity-490/s04.jpg",
+        "/_portal/vshops/tri-activity-490/s05.jpg",
+        "/_portal/vshops/tri-activity-490/s08.jpg",
+        "/_portal/vshops/tri-activity-490/s10.jpg",
+        "/_portal/vshops/tri-activity-490/s11.jpg",
+        "/_portal/vshops/tri-activity-490/s12.jpg",
+        "/_portal/vshops/tri-activity-490/s13.jpg",
+        "/_portal/vshops/tri-activity-490/s14.jpg",
+        "/_portal/vshops/tri-activity-490/s15.jpg"
+      ],
+      "photos": [
+        {
+          "path": "/_portal/vshops/tri-activity-490/g01.jpg",
+          "what": "池田出灯籠店街と書かれた看板のある商店街の外観",
+          "kind": "exterior",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-490/g03.jpg",
+          "what": "幾何学模様に染められた布を広げる3人",
+          "kind": "common",
+          "width": 1200,
+          "height": 800
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-490/g04.jpg",
+          "what": "草木染めで染めた花柄模様のトートバッグ",
+          "kind": "meal",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-490/g05.jpg",
+          "what": "色塗り作業中と書かれたカードを持つ染め作業のようす",
+          "kind": "common",
+          "width": 1080,
+          "height": 1080
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-490/g06.jpg",
+          "what": "ベンガラ染めで染めた幾何学模様の布",
+          "kind": "meal",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-490/g07.jpg",
+          "what": "染め作業をする人物のようす",
+          "kind": "common",
+          "width": 675,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-490/g08.jpg",
+          "what": "藍染めの布を染料に浸している作業のようす",
+          "kind": "common",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-490/g09.jpg",
+          "what": "Open と書かれた黒板と染め体験の案内板",
+          "kind": "exterior",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-490/g10.jpg",
+          "what": "店内に吊るされた藍染めのトートバッグや染め布",
+          "kind": "common",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-490/s01.jpg",
+          "what": "染め作業をする職人の手元",
+          "kind": "common",
+          "width": 1024,
+          "height": 769
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-490/s04.jpg",
+          "what": "公園で染め体験をする子どもと大人",
+          "kind": "common",
+          "width": 960,
+          "height": 1280
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-490/s05.jpg",
+          "what": "SOMEYA KIKYUと書かれた店の看板と染め布の展示",
+          "kind": "exterior",
+          "width": 905,
+          "height": 1280
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-490/s08.jpg",
+          "what": "草木染めカラー全11色のTシャツのラインナップ",
+          "kind": "meal",
+          "width": 1200,
+          "height": 400
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-490/s10.jpg",
+          "what": "藍染めで染められた布地が折り重なった作品",
+          "kind": "meal",
+          "width": 1280,
+          "height": 715
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-490/s11.jpg",
+          "what": "ベンガラ染めの絞り染め作品が広がるようす",
+          "kind": "meal",
+          "width": 1280,
+          "height": 715
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-490/s12.jpg",
+          "what": "藍色に染められたTシャツとブログ記事の画像",
+          "kind": "meal",
+          "width": 1280,
+          "height": 720
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-490/s13.jpg",
+          "what": "染め直し前後のジャケットの比較写真",
+          "kind": "meal",
+          "width": 1280,
+          "height": 720
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-490/s14.jpg",
+          "what": "幾何学模様の染め布が並ぶようす",
+          "kind": "meal",
+          "width": 1088,
+          "height": 608
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-490/s15.jpg",
+          "what": "夏物をしまう前に染め直すという文字と畳まれた衣類",
+          "kind": "meal",
+          "width": 1088,
+          "height": 608
+        }
+      ],
+      "tags": [
+        "子連れ",
+        "手ぶらでOK"
+      ],
+      "article": {
+        "headline": "大阪府池田市栄町商店街にある染め屋。草木染め・藍染め・ベンガラ染めの体験と、衣服の染め直しを手がける。",
+        "lede": "池田市にある「染め屋 貴久 KIKYU」です。池田栄町商店街の2階に構え、天然染料を使った染め体験・染め直し・染料の販売を行っています。体験で使う染料は、柿渋・茜・柘榴・五倍子・矢車附子・楊梅・インド藍など、古代から使われてきた植物由来のものです。手ぶらで参加できるコースでは、店がトートバッグとTシャツを用意しています。自分の衣類を持ち込む場合は、綿・麻などの天然繊維に限り1点まで対応しています。代表は貴村隆久氏で、2015年に京都の染工房で天然染料に出会い、草木染め特有のくすみのある深い色合いに魅力を感じて染めを始めました。草木染めのカラーは全11色で、染め直しサービスでは色褪せや色抜けしたアイテムを天然染料で染め直します。",
+        "sections": [
+          {
+            "heading": "体験の内容と流れ",
+            "body": "体験は4種類あります。「藍染め体験」は、インド藍の液に布を浸して空気に触れさせる工程を繰り返し、色を重ねていくものです。液から引き上げた直後は緑がかった色で、空気に触れると藍色に変わります。「ベンガラ板締め絞り体験」は、江戸時代からの伝統技法で、伊勢木綿の手ぬぐいを板で挟んで絞り、麻の葉・七宝などの模様をつけます。板を外して広げる瞬間に模様が現れます。「ベンガラ染め体験」は、複数の色から選んで持ち込み品を染めるコースです。「お手軽ベンガラ染めハンカチ・巾着体験」は、浸染染めで手ぬぐいやハンカチを染める初心者向けのコースです。ベンガラ染めは水だけで染めることができ、土から採取した顔料を使います。藍染めでは、液に繰り返し浸すことで色を重ね、濃さを調整します。染めた作品はその日に持ち帰ることができます。"
+          },
+          {
+            "heading": "コースと所要時間",
+            "body": "藍染め体験の所要時間は90分から120分で、2名以上15名まで参加できます。ベンガラ板締め絞り体験とベンガラ染め体験は90分から120分で、1名から15名まで対応しています。ベンガラ染め体験は持ち込み品1点まで参加でき、素材は綿・麻などの天然繊維に限り、200gまでの布製品が対象です。ポリエステルなどの合成繊維は染めることができません。染め直しサービスでは、草木染めおよび藍染めによる染め替えを受け付けており、色褪せや色抜けしたアイテムを天然染料で染め直します。草木染めのカラーは全11色のラインナップです。藍染めは単色のインド藍で染めますが、ベンガラ染めは複数の色から選べます。初めて草木染めをしたい人向けに「初めての草木染めセット」と「ベンガラ染めお試し」のセット企画も販売しています。"
+          },
+          {
+            "heading": "対象",
+            "body": "体験は8歳から参加できます。藍染め体験・ベンガラ板締め絞り体験・ベンガラ染め体験は子どもから大人まで幅広い年代に対応しています。小学4年生の子どもと保護者3人がベンガラ板締め絞り体験に参加した事例があります。海外からの観光客も訪れており、オーストラリアからの旅行者の参加例があります。梅田から電車で約20分の池田市にあり、近くにはカップヌードルミュージアム大阪池田と、ウォンバットが見られる五月山動物園があります。染め体験・染め直しのほか、染料のセット企画もオンラインショップで取り扱っており、自宅で染めに挑戦したい人にも対応しています。"
+          },
+          {
+            "heading": "行き方と使い方",
+            "body": "阪急宝塚線 池田駅から徒歩3分。梅田から電車で約20分です。池田栄町商店街の中、池田振興組合の2階にあります。予約は公式サイトのお問い合わせページ、または染め体験の予約サイト（reserva.be）からオンラインでできます。電話（072-703-7016）でも受け付けています。アソビュー!など外部予約サイトからの申し込みにも対応しています。染料やキット類はオンラインショップ（kikyu.shop）でも販売しています。"
+          }
+        ],
+        "menus": [
+          {
+            "name": "藍染め体験（持ち込みOK）"
+          },
+          {
+            "name": "ベンガラ板締め絞り体験"
+          },
+          {
+            "name": "ベンガラ染め体験（持ち込みOK）"
+          },
+          {
+            "name": "お手軽ベンガラ染めハンカチ・巾着体験"
+          },
+          {
+            "name": "草木染め・藍染めによる染め直し・染め替え"
+          }
+        ],
+        "sources": [
+          {
+            "label": "公式サイト",
+            "url": "https://someyakikyu.com/"
+          },
+          {
+            "label": "公式サイト(会社概要)",
+            "url": "https://someyakikyu.com/company/"
+          },
+          {
+            "label": "公式サイト(染め体験)",
+            "url": "https://someyakikyu.com/sometaiken/"
+          },
+          {
+            "label": "公式サイト(藍染め体験)",
+            "url": "https://someyakikyu.com/osaka-aizome-experience/"
+          },
+          {
+            "label": "公式サイト(体験の選び方)",
+            "url": "https://someyakikyu.com/first-dyeing-experience-how-to-choose/"
+          },
+          {
+            "label": "公式サイト(池田体験)",
+            "url": "https://someyakikyu.com/ikedataiken/"
+          },
+          {
+            "label": "アソビュー",
+            "url": "https://www.asoview.com/base/157452/"
+          },
+          {
+            "label": "予約サイト",
+            "url": "https://reserva.be/kikyu/reserve"
+          },
+          {
+            "label": "Google マップ",
+            "url": "https://maps.google.com/?cid=9387566492919883026"
+          }
+        ],
+        "checkedAt": "2026-11-10"
+      }
     }
   ]
 }

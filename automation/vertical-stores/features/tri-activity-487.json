@@ -1,0 +1,353 @@
+{
+  "key": "tri-activity-487",
+  "vertical": "activity",
+  "storeName": "Tome Cruise",
+  "article": {
+    "id": "TomeCruise",
+    "no": "",
+    "articleType": "guide",
+    "kicker": "TOME CRUISE YORON OKINAKUSA",
+    "title": "与論島・大金久海岸発、グラスボートで渡る百合ヶ浜と赤崎のシュノーケリング。Tome Cruiseのコースと当日の流れ",
+    "titleHTML": "与論島・大金久海岸発、グラスボートで渡る百合ヶ浜<br><em>Tome Cruise</em>のコースと当日の流れ",
+    "subtitle": "海のアクティビティ / 鹿児島県大島郡与論町 / 百合ヶ浜・シュノーケリング・亀との遊泳",
+    "lede": "Tome Cruise（トメ クルーズ）は、鹿児島県大島郡与論町の大金久海岸を拠点とする海のツアー事業者だ。グラスボートで沖合1.5キロの百合ヶ浜へ渡る「百合ヶ浜遊び」を軸に、赤崎サンゴの森でのシュノーケリング、亀との遊泳を組み合わせた複数のコースを設けている。百合ヶ浜は大潮・中潮の干潮時に姿を現す砂浜で、潮が満ちると海面下に沈む。案内の時間は日によって変わり、事前に電話で確認が必要だ。船長の福留氏が直接案内を担当する。",
+    "date": "2026-11-10",
+    "reading": "",
+    "author": "マチノワ編集部",
+    "heroImage": "/_portal/vshops/tri-activity-487/s01.jpg",
+    "ogImage": "/_portal/vshops/tri-activity-487/s01.jpg",
+    "ranking": [
+      {
+        "rank": "POINT 01",
+        "rankNum": 1,
+        "name": "グラスボートで渡る百合ヶ浜の仕組み",
+        "cuisine": "百合ヶ浜ツアー",
+        "area": "与論町",
+        "purpose": "百合ヶ浜ツアーの内容を知りたい人へ",
+        "desc": "百合ヶ浜は与論島東側の大金久海岸から沖合1.5キロの位置にある。春から夏にかけて、大潮・中潮の干潮の時間帯にのみ砂浜が姿を現し、潮が満ちると再び波の下に隠れる。大金久海岸からグラスボート「tome circle 号」に乗り込み、百合ヶ浜まで渡る。グラスボートは底が透明な構造で、乗船中も海中を観察できる。百合ヶ浜の出現時間・位置・大きさは日ごとに異なり、天候によっては運航できない日もある。案内時間・出発時間は日によって変わるため、事前に電話で確認する。百合ヶ浜では年齢の数だけ星砂を拾えば幸せになれるという言い伝えがある。海で拾ったサンゴや星砂は持ち帰りができないため、帰りに海へ戻す決まりがある。",
+        "images": [
+          "/_portal/vshops/tri-activity-487/g02.jpg"
+        ],
+        "specs": [
+          {
+            "k": "出発地",
+            "v": "大金久海岸"
+          },
+          {
+            "k": "百合ヶ浜まで",
+            "v": "沖合1.5キロ"
+          }
+        ]
+      },
+      {
+        "rank": "POINT 02",
+        "rankNum": 2,
+        "name": "赤崎サンゴの森シュノーケリングと亀との遊泳",
+        "cuisine": "シュノーケリング",
+        "area": "与論町",
+        "purpose": "シュノーケリングの内容と亀との遊泳を知りたい人へ",
+        "desc": "赤崎サンゴの森でのシュノーケリングは、南国らしい熱帯魚や亀を見ながら海中を散策するコースだ。亀とのシュノーケリングは日にち関係なく案内でき、赤崎サンゴの森でのシュノーケリングと百合ヶ浜遊びを組み合わせたコースも設けている。シュノーケリングを含むコースは所要時間3時間以上となる。シュノーケリング器材はレンタルが可能で、シャワー・トイレ・更衣室を利用できる。",
+        "images": [
+          "/_portal/vshops/tri-activity-487/g06.jpg"
+        ],
+        "specs": [
+          {
+            "k": "所要時間",
+            "v": "3時間以上（シュノーケリング含むコース）"
+          },
+          {
+            "k": "設備",
+            "v": "シャワー・トイレ・更衣室あり"
+          }
+        ]
+      },
+      {
+        "rank": "POINT 03",
+        "rankNum": 3,
+        "name": "集合場所と与論島へのアクセス",
+        "cuisine": "アクセス",
+        "area": "与論町",
+        "purpose": "集合場所と与論島への行き方を知りたい人へ",
+        "desc": "大金久海岸には町営の駐車場があり、車を停めてビーチへ向かう。大金久海岸に緑色のグラスボート「tome circle 号」が待機しており、海岸にいない場合は携帯電話へ連絡する。与論空港・与論港からは車で15分の距離にある。与論島へは那覇空港から飛行機で約40分、鹿児島空港から飛行機で約1時間15分でアクセスできる。予約は電話（090-2967-0722）のほか、じゃらん・アソビューなどのオンライン予約サービスからも受け付けている。決済は現金とPayPayに対応している。",
+        "images": [
+          "/_portal/vshops/tri-activity-487/g09.jpg"
+        ],
+        "specs": [
+          {
+            "k": "駐車場",
+            "v": "大金久海岸に町営駐車場あり"
+          },
+          {
+            "k": "与論空港・与論港から",
+            "v": "車で15分"
+          }
+        ]
+      }
+    ],
+    "sideArticles": [],
+    "quote": "与論島の大金久海岸を拠点に、グラスボートで沖合の百合ヶ浜へ渡る。赤崎サンゴの森のシュノーケリングや亀との遊泳と組み合わせた複数のコースがあり、百合ヶ浜の出現時間は日ごとに変わるため事前の確認が必要だ。",
+    "quoteCite": "マチノワ編集部",
+    "closing": "集合場所は大金久海岸で、町営の駐車場を利用する。海岸に緑色のグラスボート「tome circle 号」が待機しており、不在時は携帯電話へ連絡する。与論空港・与論港から車で15分。予約は電話（090-2967-0722）やじゃらん・アソビューのオンライン予約でも受け付けている。百合ヶ浜の案内時間は大潮・中潮の干潮に合わせて変わるため、出発前に確認するとよい。"
+  },
+  "summary": "Tome Cruiseの体験内容を整理。グラスボートで渡る百合ヶ浜の仕組み、赤崎シュノーケリングと亀との遊泳コースの組み合わせ、当日の流れと集合場所をまとめた特集。",
+  "tags": [
+    "海・川",
+    "大島郡与論町"
+  ],
+  "charCount": 1197,
+  "facts": [
+    {
+      "claim": "店名は船長・福留氏の「トメ」に由来する",
+      "source": "https://tomecruise.crayonsite.com/p/2/",
+      "quote": "船の名前はトム クルーズじゃなく フクドメのトメ クルーズです",
+      "checkedAt": "2026-11-10"
+    },
+    {
+      "claim": "百合ヶ浜は大金久海岸の沖合1.5キロの場所にある",
+      "source": "https://tomecruise.crayonsite.com/",
+      "quote": "島の東側にある、大金久海岸の沖合い1.5キロの場所",
+      "checkedAt": "2026-11-10"
+    },
+    {
+      "claim": "百合ヶ浜は春から夏にかけて大潮の干潮時に姿を現す",
+      "source": "https://tomecruise.crayonsite.com/",
+      "quote": "例年だと春から夏にかけて、大潮の干潮の時間帯にその姿を現します",
+      "checkedAt": "2026-11-10"
+    },
+    {
+      "claim": "百合ヶ浜は日によって現れる時間・位置・大きさが異なる",
+      "source": "https://tomecruise.crayonsite.com/",
+      "quote": "百合ヶ浜は日によって現れる時間、位置や大きさが違い",
+      "checkedAt": "2026-11-10"
+    },
+    {
+      "claim": "潮が満ちてくると百合ヶ浜は波の下に隠れる",
+      "source": "https://tomecruise.crayonsite.com/",
+      "quote": "潮が満ちてくるとまた波の下に隠れてしまいます",
+      "checkedAt": "2026-11-10"
+    },
+    {
+      "claim": "百合ヶ浜では年齢の数だけ星砂を拾えば幸せになれるという言い伝えがある",
+      "source": "https://tomecruise.crayonsite.com/",
+      "quote": "百合ヶ浜で年齢の数だけ星砂を拾えば幸せになれるという言い伝えがあります",
+      "checkedAt": "2026-11-10"
+    },
+    {
+      "claim": "海で拾ったサンゴ・星砂は持ち帰りができないため帰りに海へ戻すルールがある",
+      "source": "https://tomecruise.crayonsite.com/",
+      "quote": "海で拾ったサンゴ、星砂などは持ち帰り出来ませんので帰りには戻すようお願い致します",
+      "checkedAt": "2026-11-10"
+    },
+    {
+      "claim": "海岸から百合ヶ浜まで風や波の安全のためグラスボートで案内している",
+      "source": "https://tomecruise.crayonsite.com/",
+      "quote": "海岸から百合ヶ浜までは風や波などがあると危険な為、グラスボートで案内をしています",
+      "checkedAt": "2026-11-10"
+    },
+    {
+      "claim": "天候によってグラスボートが運航できない日があり、案内時間は事前に電話で確認が必要",
+      "source": "https://tomecruise.crayonsite.com/",
+      "quote": "天候によってグラスボートが運航出来ない日があります。お電話でお問い合わせ下さい",
+      "checkedAt": "2026-11-10"
+    },
+    {
+      "claim": "亀とのシュノーケリングは日にち関係なく案内できる",
+      "source": "https://tomecruise.crayonsite.com/",
+      "quote": "亀とのシュノーケリング は日にち関係なく案内出来ます",
+      "checkedAt": "2026-11-10"
+    },
+    {
+      "claim": "グラスボートの名前は「tome circle 号」",
+      "source": "https://tomecruise.crayonsite.com/",
+      "quote": "海岸に緑色のtome circle 号でお待ちしてます",
+      "checkedAt": "2026-11-10"
+    },
+    {
+      "claim": "大金久海岸に町営の駐車場がある",
+      "source": "https://tomecruise.crayonsite.com/",
+      "quote": "大金久海岸に町営無料駐車場がありますので車を停めて",
+      "checkedAt": "2026-11-10"
+    },
+    {
+      "claim": "受付は08:00から21:00まで対応、不定休",
+      "source": "https://tomecruise.crayonsite.com/",
+      "quote": "受付 08:00～21:00 / 不定休業",
+      "checkedAt": "2026-11-10"
+    },
+    {
+      "claim": "コースに「百合ヶ浜遊び」「赤崎サンゴの森シュノーケリング」「百合ヶ浜遊び＆赤崎サンゴの森シュノーケリング」「朝日グラスボート」「赤崎サンゴの森＆亀とシュノーケリング＆百合ヶ浜」がある",
+      "source": "https://tomecruise.crayonsite.com/",
+      "quote": "百合ヶ浜遊び / 赤崎サンゴの森シュノーケリング / 百合ヶ浜遊び＆赤崎サンゴの森シュノーケリング / 朝日グラスボート / 赤崎サンゴの 森& 亀とシュノーケリング ＆百合ヶ浜",
+      "checkedAt": "2026-11-10"
+    },
+    {
+      "claim": "ウェディングプランとして百合ヶ浜での案内を提供している",
+      "source": "https://tomecruise.crayonsite.com/",
+      "quote": "ウェディングプラン",
+      "checkedAt": "2026-11-10"
+    },
+    {
+      "claim": "海中公園コース（南国らしい魚や亀を見ながら散策）がある",
+      "source": "https://tomecruise.crayonsite.com/p/2/",
+      "quote": "海中公園遊び 南国らしい魚や亀を見ながら散策",
+      "checkedAt": "2026-11-10"
+    },
+    {
+      "claim": "2号艇「丸福丸（まるふくまる）」がありグラスボートのメンテナンス時などに活躍する",
+      "source": "https://tomecruise.crayonsite.com/p/2/",
+      "quote": "丸福丸 (まるふくまる) tomecruise の2号艇 グラスボートなどメンテナンスなど行う際活躍する2号艇",
+      "checkedAt": "2026-11-10"
+    },
+    {
+      "claim": "シュノーケリングを含むコースの所要時間は3時間以上",
+      "source": "https://www.asoview.com/base/152335/",
+      "quote": "3時間～",
+      "checkedAt": "2026-11-10"
+    },
+    {
+      "claim": "シャワー・トイレ・更衣室を利用できる",
+      "source": "https://www.asoview.com/base/152335/",
+      "quote": "シャワー、トイレ、更衣室",
+      "checkedAt": "2026-11-10"
+    },
+    {
+      "claim": "与論空港・与論港から車で15分の距離にある",
+      "source": "https://www.yorontou.info/spot/5205.html",
+      "quote": "与論空港・与論港より車で15分",
+      "checkedAt": "2026-11-10"
+    },
+    {
+      "claim": "決済は現金とPayPayに対応している",
+      "source": "https://www.yorontou.info/spot/5205.html",
+      "quote": "現金・PayPay対応",
+      "checkedAt": "2026-11-10"
+    },
+    {
+      "claim": "予約はじゃらん・アソビューのオンライン予約でも受け付けている",
+      "source": "https://www.yorontou.info/spot/5205.html",
+      "quote": "電話、メール、じゃらん、アソビュー！での予約可能",
+      "checkedAt": "2026-11-10"
+    },
+    {
+      "claim": "与論島へは那覇空港から飛行機で約40分でアクセスできる",
+      "source": "https://www.travel.co.jp/guide/article/46405/",
+      "quote": "沖縄・那覇空港から与論空港までは約40分",
+      "checkedAt": "2026-11-10"
+    },
+    {
+      "claim": "与論島へは鹿児島空港から飛行機で約1時間15分でアクセスできる",
+      "source": "https://www.tabikobo.com/tabi-pocket/japan/kagoshima/article62310.html",
+      "quote": "鹿児島空港から約1時間15分",
+      "checkedAt": "2026-11-10"
+    }
+  ],
+  "images": [
+    {
+      "path": "/_portal/vshops/tri-activity-487/g01.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9Tex9nXt9UUCv3rk9IadBKW07OqGI35XZKJoXWSyDtqSNDQ01lZ47DD1AxXY_0_GqgaZrnSC8hxhBpzPAVmNqLTPbOz9lN_M7sfR3wfvPu82b83iZWmeMivQFViATKuU6Ebz467rohryigK=s1200",
+      "pageUrl": "https://maps.google.com/?cid=6121046913148774238",
+      "what": "海岸に立つ複数の人と緑色のグラスボート"
+    },
+    {
+      "path": "/_portal/vshops/tri-activity-487/g02.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9Tf6Q1fXisF4_TzxQyzgNd5CMC1WQfaSyI7s9bcrsxnM7a-JLa0WatQ1w6hMdSxIbpgx_ssHMQ_TsAfQn6Z2JJel3Cumzju82w3TUWZvqNds7MfaJ4KSdpiUuGHtBsBj26-fm9S=s1200",
+      "pageUrl": "https://maps.google.com/?cid=6121046913148774238",
+      "what": "白砂の砂浜に停泊する緑色のグラスボート"
+    },
+    {
+      "path": "/_portal/vshops/tri-activity-487/g03.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9ROJHjoTfuW_lLhK4bM5IHMYl8lpPHn_Fo0efiq86nMHWT95wO92QaRXz8O-dNln0nWHJL3qx65T9AxpDQt61aSfBSSnlroSPlTLoQ28skV4ZhlOKZ1r_OlALDFF6Yr2xkesPxumiQS-b0=s1200",
+      "pageUrl": "https://maps.google.com/?cid=6121046913148774238",
+      "what": "エメラルドグリーンの海と白い砂浜の百合ヶ浜"
+    },
+    {
+      "path": "/_portal/vshops/tri-activity-487/g04.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9TeFOSvm70nN1SIvQn7tNJaqhUOdb5mIgG2nkarBTVE-RlCFg4FN4V3bnFxRyMHiKRFZWogi47LbWRY5WMiiE0j-UKGy0Ou3KqgtgdCWhCe_1JW8bf82KTmaQ0YoWjlIaiitpPqMfWil3U=s1200",
+      "pageUrl": "https://maps.google.com/?cid=6121046913148774238",
+      "what": "青空のもとに広がるエメラルドグリーンの海と砂浜"
+    },
+    {
+      "path": "/_portal/vshops/tri-activity-487/g05.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9QfuFhAVO4N50cXgwisio_0rqQSKZyKAYDGLJ_XsNHm07ih8IK7s2UTvmf3X83Wgk8p-lUvdTdoM0fmwGDicaveWLByGY-VOXs8vI3RMF9vbP7AIacQ2MV7ozwWNjI3fcdsR8JJhyRRIM8=s1200",
+      "pageUrl": "https://maps.google.com/?cid=6121046913148774238",
+      "what": "浅瀬を泳ぐウミガメ"
+    },
+    {
+      "path": "/_portal/vshops/tri-activity-487/g06.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9TVlmGwaN9kMavpIY7Nnjsl2Ad-DPvnZgQ8CvrG5fw-LZCldHGKPUN-AE6M_ZFhEmJ8SnoUv8doWPWCx2snfBPqm2cXpTnPqce6su6ymRxGk8NlHVNYvWKjtvjYe1c-hiYsIYC9edjltYAw=s1200",
+      "pageUrl": "https://maps.google.com/?cid=6121046913148774238",
+      "what": "海の中を泳ぐウミガメとシュノーケラー"
+    },
+    {
+      "path": "/_portal/vshops/tri-activity-487/g07.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9Qv8yXASP_5mUz8jNctSp8hChW36ZRg5QtuzNT9QzS3dLMQDoB62Iyc_hWt7EuTa4ph-NrFDMSLxkwiEQh4Ujg59MTVpWrTB8DYEv-EUfyIZ63ckO1v3Eqd7wndf7HoXvOirxA=s1200",
+      "pageUrl": "https://maps.google.com/?cid=6121046913148774238",
+      "what": "白い砂紋が広がる浅瀬の砂浜"
+    },
+    {
+      "path": "/_portal/vshops/tri-activity-487/g08.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9RSQW7dJkyWOD4DWya1PtTwPpXirrixSxzErLBhgIHXUE23KQ3XC8Xn4y3qQKZ1hKupph6EwEL9XCa7Uy2iMamkmTmB88ixyLlIjFwf_Dvtz6aT18KP0lZnBm1C7NwCy2NNTn7WTg=s1200",
+      "pageUrl": "https://maps.google.com/?cid=6121046913148774238",
+      "what": "上空から見た砂浜と海のグラデーション"
+    },
+    {
+      "path": "/_portal/vshops/tri-activity-487/g09.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9R0yRplsx4U6pL0ITvVwnb6PbUX_uBwlhUlPnuZG1HpIwrGuouE5XDgusQ8vBREHAy5_8hIe-jGi06V5kKzUkbEgHw66NquXzsd9xrBGX_GcgSbHcmWqfPM3MzEUrKfal4OKhLm=s1200",
+      "pageUrl": "https://maps.google.com/?cid=6121046913148774238",
+      "what": "砂浜沖に停泊するグラスボートと遠くの人々"
+    },
+    {
+      "path": "/_portal/vshops/tri-activity-487/g10.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9RSLwEAtzC0UoMIjQis7XXRWPXkJwupiZaBuXDa_zjpYI6UukktunTKzqhAUPop6deNZNf05wlnj-b2RUdO_7UfkRtftGbkCNir0mnd3SyqW9dpGmg9YhY82yXeGu-m4AYMaf-jTAs_bHo=s1200",
+      "pageUrl": "https://maps.google.com/?cid=6121046913148774238",
+      "what": "浅いエメラルドの海に立つ水着姿の人"
+    },
+    {
+      "path": "/_portal/vshops/tri-activity-487/s01.jpg",
+      "imageUrl": "https://crayonimg.e-shops.jp/cms-dimg/1012634/1708332/1000_750.jpg",
+      "pageUrl": "https://tomecruise.crayonsite.com/",
+      "what": "上空から見た百合ヶ浜の砂浜とグラスボート"
+    },
+    {
+      "path": "/_portal/vshops/tri-activity-487/s15.jpg",
+      "imageUrl": "https://crayonimg.e-shops.jp/cms-dimg/1012634/1172346/850_637.jpg",
+      "pageUrl": "https://tomecruise.crayonsite.com/",
+      "what": "青空と白い雲を背景にした百合ヶ浜の砂浜"
+    },
+    {
+      "path": "/_portal/vshops/tri-activity-487/s16.jpg",
+      "imageUrl": "https://crayonimg.e-shops.jp/cms-dimg/1012634/1141804/850_566.jpg",
+      "pageUrl": "https://tomecruise.crayonsite.com/p/2/",
+      "what": "グラスボートの船上から百合ヶ浜を眺める人"
+    },
+    {
+      "path": "/_portal/vshops/tri-activity-487/s17.jpg",
+      "imageUrl": "https://crayonimg.e-shops.jp/cms-dimg/1012634/1138847/637_850.jpg",
+      "pageUrl": "https://tomecruise.crayonsite.com/p/2/",
+      "what": "砂浜に停泊する緑色のグラスボートと青い海"
+    }
+  ],
+  "sources": [
+    {
+      "label": "公式サイト",
+      "url": "https://tomecruise.crayonsite.com/"
+    },
+    {
+      "label": "公式サイト（サービスメニュー・スタッフ紹介）",
+      "url": "https://tomecruise.crayonsite.com/p/2/"
+    },
+    {
+      "label": "与論島観光情報サイト",
+      "url": "https://www.yorontou.info/spot/5205.html"
+    },
+    {
+      "label": "アソビュー",
+      "url": "https://www.asoview.com/base/152335/"
+    },
+    {
+      "label": "Google マップ",
+      "url": "https://maps.google.com/?cid=6121046913148774238"
+    }
+  ],
+  "notes": "automation/v2/write.mjs が 2026-11-10 に作成。"
+}

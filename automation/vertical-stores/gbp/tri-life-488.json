@@ -1,0 +1,32 @@
+{
+  "tab": "トリニティアポ",
+  "tabEn": "tri-life",
+  "row": 488,
+  "sheet": {
+    "name": "貞宗寺",
+    "address": "",
+    "url": "https://www.google.com/maps/search/?api=1&query=%E8%B2%9E%E5%AE%97%E5%AF%BA%20046-746-5341%20%E3%80%92247-0073%20%E7%A5%9E%E5%A5%88%E5%B7%9D%E7%9C%8C%E9%8E%8C%E5%80%89%E5%B8%82%E6%A4%8D%E6%9C%A8%EF%BC%96%EF%BC%95%EF%BC%96",
+    "type": "寺",
+    "d1": "",
+    "d2": ""
+  },
+  "urlKind": "mapsApi",
+  "route": "第1段(verify-gbp.mjs)で確認済み",
+  "verdict": "一致",
+  "verdictReason": "手がかり: 店名＋電話＋住所(番地まで)。電話が一致／店名: exact(シート「貞宗寺」/ マップ「貞宗寺」)／住所(シート): exact・町名・番地とも一致",
+  "place": {
+    "name": "貞宗寺",
+    "address": "神奈川県鎌倉市植木６５６",
+    "category": "仏教寺院",
+    "lat": 35.3483969,
+    "lng": 139.5124998,
+    "gbpUrl": "https://maps.google.com/?cid=17309908123555030924",
+    "phone": "0467-46-5341",
+    "website": "https://www.trip-kamakura.com/place/200.html",
+    "hours": null,
+    "reserveLinks": [],
+    "statusSignals": [],
+    "closedSignal": false
+  },
+  "fetchedAt": "2026-11-10T14:11:55.092Z"
+}

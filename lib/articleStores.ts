@@ -22794,6 +22794,100 @@ export const ARTICLE_STORES: Restaurant[] = [
       "深夜営業"
     ],
     "featureId": "寿司処なら"
+  },
+  {
+    "id": "r920",
+    "name": "浅草ロゼ",
+    "cuisine": "バー",
+    "area": "東京都・台東区",
+    "region": "tokyo",
+    "shape": "square",
+    "image": "/restaurants/teleapo-浅草ロゼ/hero.jpg",
+    "heroImages": [
+      "/restaurants/teleapo-浅草ロゼ/hero.jpg",
+      "/restaurants/teleapo-浅草ロゼ/point1.jpg",
+      "/restaurants/teleapo-浅草ロゼ/point2.jpg",
+      "/restaurants/teleapo-浅草ロゼ/point3.jpg"
+    ],
+    "gallery": [
+      "/restaurants/teleapo-浅草ロゼ/hero.jpg",
+      "/restaurants/teleapo-浅草ロゼ/point1.jpg",
+      "/restaurants/teleapo-浅草ロゼ/point2.jpg",
+      "/restaurants/teleapo-浅草ロゼ/point3.jpg"
+    ],
+    "desc": "東京都台東区のバー。",
+    "address": "東京都台東区西浅草2丁目2-1 201",
+    "hours": "火・木・金・日 19:00–00:00 / 土 20:00–00:00",
+    "closed": "月曜・水曜",
+    "seats": "—（訪問前に公式確認）",
+    "nearest": "—",
+    "phone": "03-6802-8514",
+    "source": {
+      "label": "Google ビジネスプロフィール",
+      "url": "https://maps.google.com/?cid=9529815308659665449"
+    },
+    "body": [
+      "浅草ロゼは、東京都台東区にあるお店です。業態は「バー」、所在地は東京都台東区西浅草2丁目2-1 201です。マチノワ編集部の特集記事では、「カラオケにフルート即興演奏が重なる体験」・「LGBTカップルが営む、女性が一人でも入りやすい空間」などを取り上げています。",
+      "営業時間は火・木・金・日 19:00–00:00 / 土 20:00–00:00、定休日は月曜・水曜です（Googleマップの営業時間による）。営業時間や価格は変わることがあるため、訪問前に公式サイトやSNS、お電話でご確認ください。"
+    ],
+    "highlights": [
+      "カラオケにフルート即興演奏が重なる体験",
+      "LGBTカップルが営む、女性が一人でも入りやすい空間",
+      "カウンター中心の小さな店内で、カラオケを楽しめる空間"
+    ],
+    "tags": [
+      "バー",
+      "台東区",
+      "深夜営業"
+    ],
+    "featureId": "浅草ロゼ"
+  },
+  {
+    "id": "r921",
+    "name": "フルサト",
+    "cuisine": "カフェ・喫茶",
+    "area": "奈良県・天理市",
+    "region": "nara",
+    "shape": "square",
+    "image": "/restaurants/teleapo-フルサト/hero.jpg",
+    "heroImages": [
+      "/restaurants/teleapo-フルサト/hero.jpg",
+      "/restaurants/teleapo-フルサト/point1.jpg",
+      "/restaurants/teleapo-フルサト/point2.jpg",
+      "/restaurants/teleapo-フルサト/point3.jpg"
+    ],
+    "gallery": [
+      "/restaurants/teleapo-フルサト/hero.jpg",
+      "/restaurants/teleapo-フルサト/point1.jpg",
+      "/restaurants/teleapo-フルサト/point2.jpg",
+      "/restaurants/teleapo-フルサト/point3.jpg"
+    ],
+    "desc": "天理市川原城町は、天理駅を起点とする天理本通り商店街が通る一帯である。フルサトは、このアーケード商店街に入ってすぐの場所にある自家焙煎珈琲専門店で、天理駅から徒歩4分の位置に立つ。",
+    "address": "奈良県天理市川原城町697",
+    "hours": "月・火・木〜日 08:00–19:30",
+    "closed": "水曜日",
+    "seats": "—（訪問前に公式確認）",
+    "nearest": "—",
+    "phone": "0743-63-6878",
+    "source": {
+      "label": "Google ビジネスプロフィール",
+      "url": "https://maps.google.com/?cid=13976622715455852140"
+    },
+    "body": [
+      "フルサトは、奈良県天理市にあるお店です。業態は「カフェ・喫茶」、所在地は奈良県天理市川原城町697です。マチノワ編集部の特集記事では、「珈琲豆を生鮮食品として扱う自家焙煎」・「モーニングとパフェを中心に揃うメニュー構成」などを取り上げています。",
+      "営業時間は月・火・木〜日 08:00–19:30、定休日は水曜日です（Googleマップの営業時間による）。営業時間や価格は変わることがあるため、訪問前に公式サイトやSNS、お電話でご確認ください。"
+    ],
+    "highlights": [
+      "珈琲豆を生鮮食品として扱う自家焙煎",
+      "モーニングとパフェを中心に揃うメニュー構成",
+      "テーブル席・ソファ席・カウンター席が揃う店内"
+    ],
+    "tags": [
+      "カフェ・喫茶",
+      "天理市",
+      "ランチ"
+    ],
+    "featureId": "フルサト"
   }
 ];
 
@@ -23274,7 +23368,9 @@ export const ARTICLE_STORE_FEATURE_IDS: Record<string, string> = {
   "r916": "原始焼き酒場さくら井",
   "r917": "へんじんもっこ（ソーセージ・サラミ製造直売所）",
   "r918": "五果苑",
-  "r919": "寿司処なら"
+  "r919": "寿司処なら",
+  "r920": "浅草ロゼ",
+  "r921": "フルサト"
 };
 
 /** 特集記事ID → 店舗ID */
@@ -23754,5 +23850,7 @@ export const ARTICLE_STORE_ID_BY_FEATURE: Record<string, string> = {
   "原始焼き酒場さくら井": "r916",
   "へんじんもっこ（ソーセージ・サラミ製造直売所）": "r917",
   "五果苑": "r918",
-  "寿司処なら": "r919"
+  "寿司処なら": "r919",
+  "浅草ロゼ": "r920",
+  "フルサト": "r921"
 };

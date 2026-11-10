@@ -1,0 +1,85 @@
+{
+  "commit": "17af6b290083fe0845aef83a2235c1b59400f2b6",
+  "source": "/Users/shunta/claude/gp-k-auto2",
+  "count": 7,
+  "added": [
+    {
+      "row": 485,
+      "name": "カフェバー浅草ロゼ",
+      "key": "tri-gourmet-485",
+      "vertical": "グルメ",
+      "id": "r920",
+      "articleId": "浅草ロゼ",
+      "shopUrl": "https://machinowa.tokyo/restaurant/r920",
+      "articleUrl": "https://machinowa.tokyo/feature/浅草ロゼ",
+      "sheetUrl": "https://machinowa.tokyo/feature/浅草ロゼ"
+    },
+    {
+      "row": 487,
+      "name": "tome cruise",
+      "key": "tri-activity-487",
+      "vertical": "アクティビティ",
+      "id": "ac0061",
+      "articleId": "ac0061",
+      "shopUrl": "https://machinowa.tokyo/activity/shop/ac0061",
+      "articleUrl": "https://machinowa.tokyo/activity/article/ac0061",
+      "sheetUrl": "https://machinowa.tokyo/activity/article/ac0061"
+    },
+    {
+      "row": 488,
+      "name": "貞宗寺",
+      "key": "tri-life-488",
+      "vertical": "くらし",
+      "id": "li0211",
+      "articleId": "li0211",
+      "shopUrl": "https://machinowa.tokyo/life/shop/li0211",
+      "articleUrl": "https://machinowa.tokyo/life/article/li0211",
+      "sheetUrl": "https://machinowa.tokyo/life/article/li0211"
+    },
+    {
+      "row": 489,
+      "name": "わんにゃんSpot リアン",
+      "key": "tri-pet-489",
+      "vertical": "ペット",
+      "id": "pe0025",
+      "articleId": null,
+      "shopUrl": "https://machinowa.tokyo/pet/shop/pe0025",
+      "articleUrl": null,
+      "sheetUrl": "https://machinowa.tokyo/pet/shop/pe0025"
+    },
+    {
+      "row": 490,
+      "name": "染め屋 貴久 KIKYU",
+      "key": "tri-activity-490",
+      "vertical": "アクティビティ",
+      "id": "ac0062",
+      "articleId": "ac0062",
+      "shopUrl": "https://machinowa.tokyo/activity/shop/ac0062",
+      "articleUrl": "https://machinowa.tokyo/activity/article/ac0062",
+      "sheetUrl": "https://machinowa.tokyo/activity/article/ac0062"
+    },
+    {
+      "row": 491,
+      "name": "自家焙煎珈琲 フルサト",
+      "key": "tri-gourmet-491",
+      "vertical": "グルメ",
+      "id": "r921",
+      "articleId": "フルサト",
+      "shopUrl": "https://machinowa.tokyo/restaurant/r921",
+      "articleUrl": "https://machinowa.tokyo/feature/フルサト",
+      "sheetUrl": "https://machinowa.tokyo/feature/フルサト"
+    },
+    {
+      "row": 492,
+      "name": "ねこオアシスオハナ",
+      "key": "tri-pet-492",
+      "vertical": "ペット",
+      "id": "pe0026",
+      "articleId": null,
+      "shopUrl": "https://machinowa.tokyo/pet/shop/pe0026",
+      "articleUrl": null,
+      "sheetUrl": "https://machinowa.tokyo/pet/shop/pe0026"
+    }
+  ],
+  "skipped": []
+}
