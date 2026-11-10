@@ -1,0 +1,19 @@
+{
+  "commit": "76f896f3c81c195e48887e91e02b76c19bfc8049",
+  "source": "/Users/shunta/claude/gp-k-auto2",
+  "count": 1,
+  "added": [
+    {
+      "row": 486,
+      "name": "しんごさんのぶどう直売所 mashiro",
+      "key": "tri-life-486",
+      "vertical": "くらし",
+      "id": "li0212",
+      "articleId": "li0212",
+      "shopUrl": "https://machinowa.tokyo/life/shop/li0212",
+      "articleUrl": "https://machinowa.tokyo/life/article/li0212",
+      "sheetUrl": "https://machinowa.tokyo/life/article/li0212"
+    }
+  ],
+  "skipped": []
+}

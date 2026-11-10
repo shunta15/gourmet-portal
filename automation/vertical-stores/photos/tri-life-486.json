@@ -1,0 +1,46 @@
+{
+  "key": "tri-life-486",
+  "images": [
+    {
+      "path": "/_portal/vshops/tri-life-486/s01.jpg",
+      "imageUrl": "http://www.cek.ne.jp/~es-ochi/img/budoumaki.jpg",
+      "pageUrl": "http://www.cek.ne.jp/~es-ochi/index.html",
+      "what": "白と赤のぶどうの房が並ぶ写真",
+      "kind": "meal",
+      "width": 1092,
+      "height": 741,
+      "source": "公式サイト"
+    },
+    {
+      "path": "/_portal/vshops/tri-life-486/s12.jpg",
+      "imageUrl": "http://www.cek.ne.jp/~es-ochi/img/maki9601.jpg",
+      "pageUrl": "http://www.cek.ne.jp/~es-ochi/maki.html",
+      "what": "屋外に積み上げられた薪の山",
+      "kind": "meal",
+      "width": 640,
+      "height": 960,
+      "source": "公式サイト"
+    },
+    {
+      "path": "/_portal/vshops/tri-life-486/s13.jpg",
+      "imageUrl": "http://www.cek.ne.jp/~es-ochi/img/maki9602.jpg",
+      "pageUrl": "http://www.cek.ne.jp/~es-ochi/maki.html",
+      "what": "袋に入った薪",
+      "kind": "meal",
+      "width": 640,
+      "height": 960,
+      "source": "公式サイト"
+    },
+    {
+      "path": "/_portal/vshops/tri-life-486/s14.jpg",
+      "imageUrl": "http://www.cek.ne.jp/~es-ochi/img/maki9603.jpg",
+      "pageUrl": "http://www.cek.ne.jp/~es-ochi/maki.html",
+      "what": "地面に積まれた薪の山",
+      "kind": "meal",
+      "width": 640,
+      "height": 960,
+      "source": "公式サイト"
+    }
+  ],
+  "note": "automation/v2/write.mjs が 2026-11-10T14:48:18.443Z に取得。店の実写だけ(AI 画像・汎用画像・地図・ロゴ・顔が大きい画像は除外)。"
+}

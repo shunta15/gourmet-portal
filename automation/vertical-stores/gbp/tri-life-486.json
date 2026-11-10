@@ -1,0 +1,40 @@
+{
+  "tab": "トリニティアポ",
+  "tabEn": "tri-life",
+  "row": 486,
+  "sheet": {
+    "name": "しんごさんのぶどう直売所 mashiro",
+    "address": "",
+    "url": "https://www.google.com/maps/search/?api=1&query=%E3%81%97%E3%82%93%E3%81%94%E3%81%95%E3%82%93%E3%81%AE%E3%81%B6%E3%81%A9%E3%81%86%E7%9B%B4%E5%A3%B2%E6%89%80%20mashiro%20090-8771-8115%20",
+    "type": "その他",
+    "d1": "",
+    "d2": ""
+  },
+  "urlKind": "mapsApi",
+  "route": "第1段(verify-gbp.mjs)で確認済み",
+  "verdict": "一致",
+  "verdictReason": "手がかり: 店名＋電話＋住所(番地まで)。電話が一致／店名: exact(シート「しんごさんのぶどう直売所 mashiro」/ マップ「しんごさんのぶどう直売所 mashiro」)／住所(シート): exact・町名・番地とも一致",
+  "place": {
+    "name": "しんごさんのぶどう直売所 mashiro",
+    "address": "長野県駒ヶ根市東伊那５５２８",
+    "category": "ファーマーズ マーケット",
+    "lat": 35.7619079,
+    "lng": 137.9788175,
+    "gbpUrl": "https://maps.google.com/?cid=11342240864125600759",
+    "phone": "090-8771-8115",
+    "website": "http://www.cek.ne.jp/~es-ochi/index.html",
+    "hours": {
+      "月": "11:00–17:00",
+      "火": "11:00–17:00",
+      "水": "11:00–17:00",
+      "木": "11:00–17:00",
+      "金": "11:00–17:00",
+      "土": "11:00–17:00",
+      "日": "11:00–17:00"
+    },
+    "reserveLinks": [],
+    "statusSignals": [],
+    "closedSignal": false
+  },
+  "fetchedAt": "2026-11-10T14:43:51.200Z"
+}
