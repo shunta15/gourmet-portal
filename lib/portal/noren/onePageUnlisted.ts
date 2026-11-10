@@ -185,6 +185,7 @@ export const ONE_PAGE_UNLISTED_SHOP_OF_FEATURE: Readonly<Record<string, string>>
   "沖縄酒場すけまる": "r915", // 沖縄酒場 すけまる
   "原始焼き酒場さくら井": "r916", // 原始焼き酒場 さくら井
   "へんじんもっこ（ソーセージ・サラミ製造直売所）": "r917", // へんじんもっこ（ソーセージ・サラミ製造直売所）
+  "五果苑": "r918", // 五果苑
 };
 
 const NFC = (s: string) => s.normalize("NFC");

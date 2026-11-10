@@ -1,0 +1,32 @@
+{
+  "tab": "トリニティアポ",
+  "tabEn": "tri-activity",
+  "row": 471,
+  "sheet": {
+    "name": "彦次郎丸",
+    "address": "",
+    "url": "https://www.google.com/maps/search/?api=1&query=%E5%BD%A6%E6%AC%A1%E9%83%8E%E4%B8%B8%20080-4137-1320%20%E3%80%92299-1607%20%E5%8D%83%E8%91%89%E7%9C%8C%E5%AF%8C%E6%B4%A5%E5%B8%82%E6%B9%8A%EF%BC%93%EF%BC%91%EF%BC%96",
+    "type": "その他",
+    "d1": "",
+    "d2": ""
+  },
+  "urlKind": "mapsApi",
+  "route": "第1段(verify-gbp.mjs)で確認済み",
+  "verdict": "一致",
+  "verdictReason": "手がかり: 店名＋住所(番地まで)。電話がちがう(シート 080-4137-1320 / マップ 0439-67-0808)／店名: exact(シート「彦次郎丸」/ マップ「彦次郎丸」)／住所(シート): exact・町名・番地とも一致",
+  "place": {
+    "name": "彦次郎丸",
+    "address": "千葉県富津市湊３１６",
+    "category": "釣船チャーター",
+    "lat": 35.2182864,
+    "lng": 139.867342,
+    "gbpUrl": "https://maps.google.com/?cid=13721479096070948092",
+    "phone": "0439-67-0808",
+    "website": "https://hikojiroumaru.com/",
+    "hours": null,
+    "reserveLinks": [],
+    "statusSignals": [],
+    "closedSignal": false
+  },
+  "fetchedAt": "2026-11-10T08:36:46.932Z"
+}

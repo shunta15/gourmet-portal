@@ -1,0 +1,275 @@
+{
+  "key": "tri-activity-469",
+  "vertical": "activity",
+  "storeName": "焚火屋（takibiya）",
+  "article": {
+    "id": "焚火屋（takibiya）",
+    "no": "",
+    "articleType": "guide",
+    "kicker": "TAKIBIYA HIDA FURUKAWA",
+    "title": "飛騨市古川町のE-bikeレンタルと体験工房。電動アシスト自転車で巡る飛騨古川と宇津江四十八滝",
+    "titleHTML": "飛騨市古川町のE-bikeレンタルと体験工房<br><em>焚火屋（takibiya）</em>で巡る飛騨古川と里山サイクリング",
+    "subtitle": "自転車レンタル / 岐阜県飛騨市古川町 / E-bikeレンタル・作って食べる体験工房",
+    "lede": "焚火屋（takibiya）は、岐阜県飛騨市古川町上町にあるE-bikeレンタルと体験工房の施設だ。2018年3月にオープンし、電動アシスト付き自転車のレンタルと、たい焼き・五平餅・自家焙煎コーヒー・もなかを作って食べる体験を組み合わせて提供している。E-bikeは1台から4台まで台数別にレンタルでき、古川町と国府町の一部エリアには配達・回収にも対応している。飛騨古川の町並み散策から宇津江四十八滝方面や高山方面へのサイクリングに使われており、電動アシスト機能があるため飛騨の起伏のある道でも走りやすい。",
+    "date": "2026-11-10",
+    "reading": "",
+    "author": "マチノワ編集部",
+    "heroImage": "/_portal/vshops/tri-activity-469/g03.jpg",
+    "ogImage": "/_portal/vshops/tri-activity-469/g03.jpg",
+    "ranking": [
+      {
+        "rank": "POINT 01",
+        "rankNum": 1,
+        "name": "E-bikeレンタルと配達サービス",
+        "cuisine": "E-bikeレンタル",
+        "area": "飛騨市古川町",
+        "purpose": "電動アシスト自転車でどこまで行けるか知りたい人へ",
+        "desc": "E-bikeは電動アシスト付き自転車で、1台から4台まで台数別にレンタルできる。電動アシスト機能が飛騨の坂道や起伏のある道での走行を助けるため、体力に不安がある場合にも対応できる。飛騨古川の町並み散策だけでなく、宇津江四十八滝や高山方面へのサイクリングにも利用されている。配達・回収サービスは古川町と国府町の一部エリアが対象で、利用には電話での事前予約が必要だ。対応エリアかどうかは予約時に確認できる。",
+        "images": [
+          "/_portal/vshops/tri-activity-469/g01.jpg"
+        ],
+        "specs": [
+          {
+            "k": "台数",
+            "v": "1台〜4台"
+          },
+          {
+            "k": "配達・回収",
+            "v": "古川町・国府町の一部エリアに対応"
+          }
+        ]
+      },
+      {
+        "rank": "POINT 02",
+        "rankNum": 2,
+        "name": "たい焼き・五平餅・コーヒーの体験工房",
+        "cuisine": "体験工房",
+        "area": "飛騨市古川町",
+        "purpose": "体験工房でどんな体験ができるか知りたい人へ",
+        "desc": "体験工房では鉄器を使った一丁焼きのたい焼き作り、飛騨名産のあぶらえ（エゴマ）を使った五平餅作り、自家焙煎コーヒー、パリパリもなか作りの4種類を用意している。たい焼き＆もなか作りのコースと、珈琲焙煎・和のスイーツのコースに分けて受け付けており、作ったものはその場で食べられる。ファミリー向けの内容で、前日までに電話予約が必要だ。",
+        "images": [
+          "/_portal/vshops/tri-activity-469/g06.jpg"
+        ],
+        "specs": [
+          {
+            "k": "体験メニュー",
+            "v": "たい焼き作り・五平餅作り・珈琲焙煎・もなか作り"
+          },
+          {
+            "k": "予約",
+            "v": "前日までに電話予約が必要"
+          }
+        ]
+      },
+      {
+        "rank": "POINT 03",
+        "rankNum": 3,
+        "name": "集合場所と行き方",
+        "cuisine": "アクセス",
+        "area": "飛騨市古川町",
+        "purpose": "焚火屋への行き方と予約方法を知りたい人へ",
+        "desc": "焚火屋は飛騨古川駅から車で6分の場所にある。E-bikeレンタルと体験工房はいずれも電話での事前予約が必要で、体験工房の予約は前日までに受け付けている。E-bikeレンタルの配達・回収サービスを希望する場合は、古川町と国府町の一部エリアが対象になるため、予約時に対応エリアを確認する。",
+        "images": [
+          "/_portal/vshops/tri-activity-469/g10.jpg"
+        ],
+        "specs": [
+          {
+            "k": "アクセス",
+            "v": "飛騨古川駅から車で6分"
+          },
+          {
+            "k": "予約",
+            "v": "電話での事前予約が必要"
+          }
+        ]
+      }
+    ],
+    "sideArticles": [],
+    "quote": "E-bikeの電動アシスト機能で飛騨の坂道も走りやすい。たい焼き・五平餅・自家焙煎コーヒーを作って食べる体験工房も設けており、サイクリングと体験の両方を提供している施設だ。",
+    "quoteCite": "マチノワ編集部",
+    "closing": "店舗は飛騨古川駅から車で6分の場所にある。E-bikeレンタルと体験工房はいずれも電話（070-4074-8911）での事前予約が必要だ。配達・回収サービスを利用する場合は、古川町と国府町の一部エリアが対象になるため、予約時に確認する。体験工房の予約は前日までに受け付けている。"
+  },
+  "summary": "焚火屋（takibiya）の情報を整理。E-bikeレンタルの台数・配達サービス・対応エリア、たい焼きや五平餅の体験工房の内容と予約方法、飛騨古川駅からのアクセスをまとめた特集。",
+  "tags": [
+    "観光・見学",
+    "飛騨市"
+  ],
+  "charCount": 983,
+  "facts": [
+    {
+      "claim": "住所は岐阜県飛騨市古川町上町619-3",
+      "source": "https://maps.google.com/?cid=16399950852253514936",
+      "quote": "岐阜県飛騨市古川町上町619-3",
+      "checkedAt": "2026-11-10"
+    },
+    {
+      "claim": "電話番号は070-4074-8911",
+      "source": "https://maps.google.com/?cid=16399950852253514936",
+      "quote": "070-4074-8911",
+      "checkedAt": "2026-11-10"
+    },
+    {
+      "claim": "飛騨古川駅から車で6分",
+      "source": "https://www.kankou-gifu.jp/spot/detail_6847.html",
+      "quote": "飛騨古川駅から車で6分",
+      "checkedAt": "2026-11-10"
+    },
+    {
+      "claim": "2018年3月にオープンした",
+      "source": "https://www.jalan.net/kankou/spt_guide000000192722/",
+      "quote": "2018年3月オープン",
+      "checkedAt": "2026-11-10"
+    },
+    {
+      "claim": "E-bike（電動アシスト付き自転車）のレンタルを提供している",
+      "source": "https://www.kankou-gifu.jp/spot/detail_9937.html",
+      "quote": "飛騨古川でE-bikeレンタル 焚火屋",
+      "checkedAt": "2026-11-10"
+    },
+    {
+      "claim": "電動アシスト機能があるため飛騨の坂道でも快適に走れる",
+      "source": "https://www.kankou-gifu.jp/spot/detail_9937.html",
+      "quote": "電動アシスト機能により飛騨の坂道も快適",
+      "checkedAt": "2026-11-10"
+    },
+    {
+      "claim": "宇津江四十八滝や高山方面へのサイクリングに対応している",
+      "source": "https://www.kankou-gifu.jp/spot/detail_9937.html",
+      "quote": "宇津江四十八滝や高山方面へのサイクリングにおすすめ",
+      "checkedAt": "2026-11-10"
+    },
+    {
+      "claim": "配達・回収サービスがある（古川町と国府町の一部エリアが対象）",
+      "source": "https://www.kankou-gifu.jp/spot/detail_9937.html",
+      "quote": "配達と回収は古川町と国府町の一部エリアに対応",
+      "checkedAt": "2026-11-10"
+    },
+    {
+      "claim": "E-bikeレンタルは電話での事前予約が必要",
+      "source": "https://www.kankou-gifu.jp/spot/detail_9937.html",
+      "quote": "ご利用は電話での事前予約が必要",
+      "checkedAt": "2026-11-10"
+    },
+    {
+      "claim": "体験工房では鉄器を使った一丁焼きのたい焼きを作って食べられる",
+      "source": "https://www.kankou-gifu.jp/spot/detail_6847.html",
+      "quote": "鉄器でつくる一丁焼きのたい焼き",
+      "checkedAt": "2026-11-10"
+    },
+    {
+      "claim": "飛騨名産のあぶらえ（エゴマ）を使った五平餅を作って食べられる",
+      "source": "https://www.kankou-gifu.jp/spot/detail_6847.html",
+      "quote": "飛騨名産のあぶらえ(エゴマ)の五平餅",
+      "checkedAt": "2026-11-10"
+    },
+    {
+      "claim": "自家焙煎コーヒーの体験ができる",
+      "source": "https://www.kankou-gifu.jp/spot/detail_6847.html",
+      "quote": "自家焙煎コーヒー",
+      "checkedAt": "2026-11-10"
+    },
+    {
+      "claim": "パリパリもなかを作る体験ができる",
+      "source": "https://www.kankou-gifu.jp/spot/detail_6847.html",
+      "quote": "パリパリもなか",
+      "checkedAt": "2026-11-10"
+    },
+    {
+      "claim": "たい焼き＆モナカ作り体験コースと珈琲焙煎・和のスイーツ体験コースがある",
+      "source": "https://www.jalan.net/kankou/spt_guide000000192722/",
+      "quote": "たい焼き＆モナカ作り体験・珈琲焙煎・和のスイーツ体験",
+      "checkedAt": "2026-11-10"
+    },
+    {
+      "claim": "ファミリー向けの体験工房として知られている",
+      "source": "https://www.jalan.net/kankou/spt_guide000000192722/",
+      "quote": "ファミリーにオススメ",
+      "checkedAt": "2026-11-10"
+    }
+  ],
+  "images": [
+    {
+      "path": "/_portal/vshops/tri-activity-469/g01.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9Suiay80lJizjqLBm59QnoZYXxEO9ZtTlhTWaeZAiP4H_LasvCR7ySROchNMLetZdOwPvRo7ZgW7MTnTN9kq9SA4_z03wHsv0FEj88r65zBVc-JtlIs_Gwjhn0t_uKVcIQfQXqWZAj6R0fj=s1200",
+      "pageUrl": "https://maps.google.com/?cid=16399950852253514936",
+      "what": "案内板の前に停められた自転車2台と人2人"
+    },
+    {
+      "path": "/_portal/vshops/tri-activity-469/g02.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9TPA23vTVFveRr-UvykBskGeLCPDjZQg3I7iSApviw3FVWitvwVQJVR-Yvl_H41TK-4iNaLRQr0Ym0vNDKAgxcF07ClcA4wSoYJVut35VUugmuIYIlfosBlxlbD8NOVExTC78MW=s1200",
+      "pageUrl": "https://maps.google.com/?cid=16399950852253514936",
+      "what": "焚火屋と書かれたメニュー看板"
+    },
+    {
+      "path": "/_portal/vshops/tri-activity-469/g03.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9Tt_TwTMoaGhjYe4pwZ02gjZxfZAKTowR_udb2-cci89BuinLIPkA_J992e5gVCioUE7rUu9gIGsfRpLd9vj9xn6AJ5RPYpe98m0Pr20JPNYunoRLaF4K_wp3C7NtR-K3y-KhPNw9kUVSZ5=s1200",
+      "pageUrl": "https://maps.google.com/?cid=16399950852253514936",
+      "what": "緑の山を背景に自転車3台と人3人"
+    },
+    {
+      "path": "/_portal/vshops/tri-activity-469/g04.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9S6u4OCjKFj8-pP7zF4j8owmglh_6nL0aVPre9vWOm5tPKl09Q5jquumAF0Hlsx8z1w9vDvvDsNF-MI5uvQ2sW7y4KsE2jzsQkLhFrtDJUQLnIpDORRdba2GlI2g9zpsqnm_5lmGA=s1200",
+      "pageUrl": "https://maps.google.com/?cid=16399950852253514936",
+      "what": "鉄板の上で焼かれている串もの"
+    },
+    {
+      "path": "/_portal/vshops/tri-activity-469/g05.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9SQLvrYNP_kBXb7GwTO_XV0DL96S5TacURJZ19fuiiubyl0rGluDXn7ok9ioKS-LlpF3c_clA6TgioXUc4Ge_Agt0vFPTIFSxc19YC5HoJa-S4lPTFibN-9L81EZBpAlis3dkJ_BHWUqpw=s1200",
+      "pageUrl": "https://maps.google.com/?cid=16399950852253514936",
+      "what": "駐車場に並んだ自転車と座る人"
+    },
+    {
+      "path": "/_portal/vshops/tri-activity-469/g06.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9T6SOtflggH1_pMJ2cTzqmJQdwTfLpfuPppTBjoZh-3Nk43e-3WFbRFz3yWY79whOqM2dlfYtaN076aZx6cZ5vzpaCirS29IFK8rkCscPHd1KAej_2hPdHppduEdwuwJQthF_FU=s1200",
+      "pageUrl": "https://maps.google.com/?cid=16399950852253514936",
+      "what": "竹ざるに乗ったたい焼き2個"
+    },
+    {
+      "path": "/_portal/vshops/tri-activity-469/g07.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9Ri5GgmO-9pjQfQwJoR3kmi5yn9EfC_3vj9mbGprgL1xYCd7-JV6NA0ls0a8AEmXx2Mnelqlw3wA-OBfdTN8GmygEWMgR-bN8xs0R9KD26MObjpl7OLRU8YzKHGE1LW51U7c7FM17OTZxic=s1200",
+      "pageUrl": "https://maps.google.com/?cid=16399950852253514936",
+      "what": "花が咲く里山の緑の風景"
+    },
+    {
+      "path": "/_portal/vshops/tri-activity-469/g08.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9SQU1IQFV16TZJHCXMfPY0YkSaFku25_vlXVWVUW_WWGeG-mOi9u8XE3sMtoCet_7ah4w_EHgNhUkeZPhr9kTEQstmPU6R4E0IZRkAZZzRmh7fvaU1ZEC0VdHCoh671P6b8eLd-=s1200",
+      "pageUrl": "https://maps.google.com/?cid=16399950852253514936",
+      "what": "壁に掛けられたメニュー表のプリント"
+    },
+    {
+      "path": "/_portal/vshops/tri-activity-469/g09.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9SpFeWaJkvMTLh0ncZx6oV6Z77WYoqESPGrZQ6-_OLzEOvxd9bNGFbeGMLGngXuI0myXemlf2gkKD5Yzb_2tdpVaytCCeQzamQNPGUNNicIv2eZZTeAIgF60xc0rW6K0debPzeMpQ=s1200",
+      "pageUrl": "https://maps.google.com/?cid=16399950852253514936",
+      "what": "焚き火台で串を焼く人の手"
+    },
+    {
+      "path": "/_portal/vshops/tri-activity-469/g10.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9RTi6yzPLktoWOIoHc_aJzoixWh0EtVDukKl249mjT0DY7FJLjL_6EjVu7cTcjnOEBrzb03nqWTZPefto_SCJsT3lr_bB3TzEVIL7AOlhSKAbG6usRZDazL72A03A5iC51LEzEh=s1200",
+      "pageUrl": "https://maps.google.com/?cid=16399950852253514936",
+      "what": "CLOSEDの看板が出た店舗外観とテーブル・椅子"
+    }
+  ],
+  "sources": [
+    {
+      "label": "岐阜県観光公式サイト（焚火屋）",
+      "url": "https://www.kankou-gifu.jp/spot/detail_6847.html"
+    },
+    {
+      "label": "岐阜県観光公式サイト（飛騨古川でE-bikeレンタル）",
+      "url": "https://www.kankou-gifu.jp/spot/detail_9937.html"
+    },
+    {
+      "label": "飛騨市観光協会",
+      "url": "https://www.hida-kankou.jp/spot/375"
+    },
+    {
+      "label": "じゃらんnet",
+      "url": "https://www.jalan.net/kankou/spt_guide000000192722/"
+    },
+    {
+      "label": "Google マップ",
+      "url": "https://maps.google.com/?cid=16399950852253514936"
+    }
+  ],
+  "notes": "automation/v2/write.mjs が 2026-11-10 に作成。"
+}

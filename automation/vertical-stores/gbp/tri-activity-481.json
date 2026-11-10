@@ -1,0 +1,40 @@
+{
+  "tab": "トリニティアポ",
+  "tabEn": "tri-activity",
+  "row": 481,
+  "sheet": {
+    "name": "タイル工房HYGGE",
+    "address": "",
+    "url": "https://www.google.com/maps/search/?api=1&query=%E3%82%BF%E3%82%A4%E3%83%AB%E5%B7%A5%E6%88%BFHYGGE%20080-8982-5199%20%E3%80%92192-0032%20%E6%9D%B1%E4%BA%AC%E9%83%BD%E5%85%AB%E7%8E%8B%E5%AD%90%E5%B8%82%E7%9F%B3%E5%B7%9D%E7%94%BA%EF%BC%92%EF%BC%99%EF%BC%95%EF%BC%95%E2%88%92%EF%BC%91%EF%BC%96%20%E4%B8%B2%E7%94%B0%E3%83%93%E3%83%AB%20202",
+    "type": "体験",
+    "d1": "",
+    "d2": ""
+  },
+  "urlKind": "mapsApi",
+  "route": "第1段(verify-gbp.mjs)で確認済み",
+  "verdict": "一致",
+  "verdictReason": "手がかり: 店名＋電話＋住所(番地まで)。電話が一致／店名: exact(シート「タイル工房HYGGE」/ マップ「タイル工房HYGGE」)／住所(シート): exact・町名・番地とも一致",
+  "place": {
+    "name": "タイル工房HYGGE",
+    "address": "東京都八王子市石川町２９５５−１６ 串田ビル 202",
+    "category": "タイル専門店",
+    "lat": 35.6690826,
+    "lng": 139.3619046,
+    "gbpUrl": "https://maps.google.com/?cid=7974342133929235333",
+    "phone": "080-8982-5199",
+    "website": "http://tile-hygge.pages.dev/",
+    "hours": {
+      "月": "定休日",
+      "火": "定休日",
+      "水": "10:00–18:00",
+      "木": "10:00–18:00",
+      "金": "10:00–18:00",
+      "土": "10:00–18:00",
+      "日": "10:00–18:00"
+    },
+    "reserveLinks": [],
+    "statusSignals": [],
+    "closedSignal": false
+  },
+  "fetchedAt": "2026-11-10T08:39:54.926Z"
+}

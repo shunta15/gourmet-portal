@@ -9134,6 +9134,766 @@
         ],
         "checkedAt": "2026-11-10"
       }
+    },
+    {
+      "id": "ac0055",
+      "vertical": "activity",
+      "category": "sightseeing",
+      "name": "焚火屋（takibiya）",
+      "pref": "gifu",
+      "cityName": "飛騨市",
+      "address": "岐阜県飛騨市古川町上町619-3",
+      "lat": 36.2229377,
+      "lng": 137.1948829,
+      "phone": "070-4074-8911",
+      "url": "https://www.youtube.com/watch?v=UtPoYAVaih0&t=55s",
+      "website": "https://www.youtube.com/watch?v=UtPoYAVaih0&t=55s",
+      "mapUrl": "https://maps.google.com/?cid=16399950852253514936",
+      "image": "/_portal/vshops/tri-activity-469/g01.jpg",
+      "images": [
+        "/_portal/vshops/tri-activity-469/g01.jpg",
+        "/_portal/vshops/tri-activity-469/g02.jpg",
+        "/_portal/vshops/tri-activity-469/g03.jpg",
+        "/_portal/vshops/tri-activity-469/g04.jpg",
+        "/_portal/vshops/tri-activity-469/g05.jpg",
+        "/_portal/vshops/tri-activity-469/g06.jpg",
+        "/_portal/vshops/tri-activity-469/g07.jpg",
+        "/_portal/vshops/tri-activity-469/g08.jpg",
+        "/_portal/vshops/tri-activity-469/g09.jpg",
+        "/_portal/vshops/tri-activity-469/g10.jpg"
+      ],
+      "photos": [
+        {
+          "path": "/_portal/vshops/tri-activity-469/g01.jpg",
+          "what": "案内板の前に停められた自転車2台と人2人",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 966
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-469/g02.jpg",
+          "what": "焚火屋と書かれたメニュー看板",
+          "kind": "common",
+          "width": 904,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-469/g03.jpg",
+          "what": "緑の山を背景に自転車3台と人3人",
+          "kind": "view",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-469/g04.jpg",
+          "what": "鉄板の上で焼かれている串もの",
+          "kind": "meal",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-469/g05.jpg",
+          "what": "駐車場に並んだ自転車と座る人",
+          "kind": "common",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-469/g06.jpg",
+          "what": "竹ざるに乗ったたい焼き2個",
+          "kind": "meal",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-469/g07.jpg",
+          "what": "花が咲く里山の緑の風景",
+          "kind": "view",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-469/g08.jpg",
+          "what": "壁に掛けられたメニュー表のプリント",
+          "kind": "common",
+          "width": 904,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-469/g09.jpg",
+          "what": "焚き火台で串を焼く人の手",
+          "kind": "meal",
+          "width": 1200,
+          "height": 904
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-469/g10.jpg",
+          "what": "CLOSEDの看板が出た店舗外観とテーブル・椅子",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 904
+        }
+      ],
+      "tags": [
+        "子連れ",
+        "初心者歓迎"
+      ],
+      "article": {
+        "headline": "岐阜県飛騨市古川町にある体験工房。E-bikeレンタルと、たい焼き・五平餅・自家焙煎コーヒーを作って食べる体験を提供している",
+        "lede": "飛騨市にある「焚火屋（takibiya）」です。E-bikeレンタルと作って食べる体験工房を組み合わせた施設で、2018年3月にオープンしました。電動アシスト付き自転車（E-bike）を借りて飛騨古川の町並みや周辺の里山を巡るサイクリングができます。電動アシスト機能があるため、飛騨の坂道でも快適にペダルをこげます。体験工房では、鉄器を使った一丁焼きのたい焼き、飛騨名産のあぶらえ（エゴマ）を使った五平餅、自家焙煎コーヒー、パリパリもなかを作って食べることができます。ファミリー向けの内容として知られています。",
+        "sections": [
+          {
+            "heading": "体験の内容と流れ",
+            "body": "体験工房では4種類のメニューを用意しています。鉄器を使った一丁焼きのたい焼き作りは、レトロな金型を使ってひとつずつ焼き上げます。飛騨名産のあぶらえ（エゴマ）を使った五平餅作りでは、エゴマのタレを合わせた一品を仕上げます。自家焙煎コーヒーは焙煎の工程から体験できます。パリパリもなか作りも用意しており、作り終えたものはその場で食べられます。たい焼き＆もなか作りのコースと、珈琲焙煎・和のスイーツのコースに分けて体験を受け付けています。いずれも前日までに予約が必要です。"
+          },
+          {
+            "heading": "コースと所要時間",
+            "body": "E-bikeレンタルでは、飛騨古川の町並み散策から周辺の里山へのサイクリングまで対応しています。電動アシスト機能があるため起伏のある飛騨の道でも体への負担が少なく、宇津江四十八滝や高山方面へのサイクリングにも利用されています。自転車は1台から4台まで台数に応じてレンタルできます。配達・回収サービスも対応しており、古川町と国府町の一部エリアが対象です。利用には電話での事前予約が必要です。"
+          },
+          {
+            "heading": "対象",
+            "body": "E-bikeレンタルはファミリーやグループでの利用ができます。電動アシスト機能があるため体力に自信がない方や坂道が多い飛騨でのサイクリングにも対応します。体験工房はファミリー向けの内容で、子ども連れの来場にも対応しています。たい焼き＆もなか作り体験は、レトロな道具を使って一から作る工程を親子で体験できます。"
+          },
+          {
+            "heading": "行き方と使い方",
+            "body": "飛騨古川駅から車で6分の場所にあります。E-bikeレンタルは電話（070-4074-8911）での事前予約が必要です。体験工房の予約も前日までに同じ電話番号で受け付けています。配達・回収サービスを利用する場合は、対応エリア（古川町・国府町の一部）かどうかを予約時に確認できます。"
+          }
+        ],
+        "menus": [
+          {
+            "name": "E-bikeレンタル（1台）"
+          },
+          {
+            "name": "E-bikeレンタル（2台）"
+          },
+          {
+            "name": "E-bikeレンタル（3台）"
+          },
+          {
+            "name": "E-bikeレンタル（4台）"
+          },
+          {
+            "name": "たい焼き＆モナカ作り体験"
+          },
+          {
+            "name": "珈琲焙煎・和のスイーツ体験"
+          }
+        ],
+        "sources": [
+          {
+            "label": "岐阜県観光公式サイト（焚火屋）",
+            "url": "https://www.kankou-gifu.jp/spot/detail_6847.html"
+          },
+          {
+            "label": "岐阜県観光公式サイト（飛騨古川でE-bikeレンタル）",
+            "url": "https://www.kankou-gifu.jp/spot/detail_9937.html"
+          },
+          {
+            "label": "飛騨市観光協会",
+            "url": "https://www.hida-kankou.jp/spot/375"
+          },
+          {
+            "label": "じゃらんnet",
+            "url": "https://www.jalan.net/kankou/spt_guide000000192722/"
+          },
+          {
+            "label": "Google マップ",
+            "url": "https://maps.google.com/?cid=16399950852253514936"
+          }
+        ],
+        "checkedAt": "2026-11-10"
+      }
+    },
+    {
+      "id": "ac0056",
+      "vertical": "activity",
+      "category": "sea-river",
+      "name": "彦次郎丸",
+      "pref": "chiba",
+      "cityName": "富津市",
+      "address": "千葉県富津市湊316",
+      "lat": 35.2182864,
+      "lng": 139.867342,
+      "phone": "0439-67-0808",
+      "url": "https://hikojiroumaru.com/",
+      "website": "https://hikojiroumaru.com/",
+      "mapUrl": "https://maps.google.com/?cid=13721479096070948092",
+      "image": "/_portal/vshops/tri-activity-471/g01.jpg",
+      "images": [
+        "/_portal/vshops/tri-activity-471/g01.jpg",
+        "/_portal/vshops/tri-activity-471/g02.jpg",
+        "/_portal/vshops/tri-activity-471/g03.jpg",
+        "/_portal/vshops/tri-activity-471/g04.jpg",
+        "/_portal/vshops/tri-activity-471/g05.jpg",
+        "/_portal/vshops/tri-activity-471/g06.jpg",
+        "/_portal/vshops/tri-activity-471/g07.jpg",
+        "/_portal/vshops/tri-activity-471/g08.jpg",
+        "/_portal/vshops/tri-activity-471/g09.jpg",
+        "/_portal/vshops/tri-activity-471/g10.jpg",
+        "/_portal/vshops/tri-activity-471/s01.jpg",
+        "/_portal/vshops/tri-activity-471/s06.jpg",
+        "/_portal/vshops/tri-activity-471/s09.jpg",
+        "/_portal/vshops/tri-activity-471/s12.jpg",
+        "/_portal/vshops/tri-activity-471/s18.jpg"
+      ],
+      "photos": [
+        {
+          "path": "/_portal/vshops/tri-activity-471/g01.jpg",
+          "what": "港に停泊した船体の彦次郎丸",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 675
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-471/g02.jpg",
+          "what": "海上を進む船の後方から見た波と対岸の景色",
+          "kind": "view",
+          "width": 1200,
+          "height": 675
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-471/g03.jpg",
+          "what": "釣り上げたカワハギを手に持つ様子",
+          "width": 1200,
+          "height": 675
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-471/g04.jpg",
+          "what": "船の操舵室と船内から見た海の景色",
+          "kind": "common",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-471/g05.jpg",
+          "what": "船の甲板からの眺めと海上の景色",
+          "kind": "view",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-471/g06.jpg",
+          "what": "「第六彦次郎丸 天羽港」と書かれた船体側面",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 675
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-471/g07.jpg",
+          "what": "夕方の港に停泊するボートと周辺の景色",
+          "kind": "view",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-471/g08.jpg",
+          "what": "港の桟橋で釣り準備をする人たちの様子",
+          "kind": "common",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-471/g09.jpg",
+          "what": "船上から釣り竿を並べて釣りをする様子",
+          "kind": "common",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-471/g10.jpg",
+          "what": "船上から釣り竿を出して海を眺める様子",
+          "kind": "common",
+          "width": 1200,
+          "height": 675
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-471/s01.jpg",
+          "what": "海上を走る彦次郎丸の船体全景",
+          "kind": "exterior",
+          "width": 1280,
+          "height": 576
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-471/s06.jpg",
+          "what": "タイラバ・ルアー等の釣り道具が並ぶ様子",
+          "width": 1000,
+          "height": 752
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-471/s09.jpg",
+          "what": "釣り上げた魚を手に持つ釣り人の様子",
+          "width": 1000,
+          "height": 400
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-471/s12.jpg",
+          "what": "釣り上げたカワハギを3人で持って見せる様子",
+          "width": 1000,
+          "height": 400
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-471/s18.jpg",
+          "what": "船内の甲板と釣り座の設備が並ぶ様子",
+          "kind": "common",
+          "width": 800,
+          "height": 500
+        }
+      ],
+      "tags": [
+        "初心者歓迎",
+        "手ぶらでOK",
+        "駐車場あり"
+      ],
+      "article": {
+        "headline": "千葉県富津市湊、上総湊港を出船する釣り船。東京湾・内房の海でタイラバ・タイジグのマダイ釣りを中心に、カワハギ・アオリイカ・マダコなど四季の釣りを案内する。乗合と仕立の2つのプランがある",
+        "lede": "富津市にある「彦次郎丸」です。千葉県富津市湊の上総湊港を拠点に、東京湾・内房の海へ出船する遊漁船です。内房名物「シャクリマダイ」から進化したタイラバ・タイジグのマダイ釣りを看板に、カワハギ、アオリイカ、マダコなど季節に応じたターゲットを年間を通じて案内しています。運航は第三彦次郎丸と第六彦次郎丸の2隻体制で、いずれも全長15m・重量4.9t・最大乗船21名の船です。個室トイレとイケスを装備しており、女性や初心者でも安心して乗船できる環境を整えています。船長は代々漁師の家系に生まれ育った畑中功さんで、現役の漁師として内房の海を知り尽くした経験から、釣り方のアドバイスも丁寧に行っています。道具のレンタルも用意しているため、手ぶらでの参加も可能です。",
+        "sections": [
+          {
+            "heading": "体験の内容と流れ",
+            "body": "彦次郎丸では、個別に予約した方が同じ船に乗り合わせる「乗合プラン」と、複数人で船を貸し切る「仕立プラン」の2種類を提供しています。乗合プランで対応するターゲットはマダイ、カワハギ、アオリイカ、マダコの4種類です。当日は乗船前に乗船名簿へ必要事項を記入し、乗船中は救命胴衣の着用が必須となります。救命胴衣を持参していない場合は船で貸し出します。乗船中に体調が悪くなった場合は早めに船長に伝えるよう案内があります。釣り終了後は帰港し、港の手洗い場で後片付けをして解散という流れです。ゴミは各自持ち帰りのルールとなっています。乗合プランで出船するカワハギは最低2名以上の予約が必要で、マダイ・アオリイカ・マダコは1名から出船します。"
+          },
+          {
+            "heading": "コースと所要時間",
+            "body": "乗合のマダイ釣りプランはタイラバまたはタイジグを使って狙います。タイラバやタイジグは、手バネやシャクリ釣りでは届かない深い水深にも対応できる点が特徴です。カワハギ釣りプランではエサにアサリのむき身を使用するため、アオイソメが苦手な方でも参加しやすい内容です。30cm級の大型カワハギも出る釣り場で、一年中カワハギを釣ることができます。アオリイカ釣りプランではエギと呼ばれる疑似餌を使ってイカを誘います。シャクリ釣りで大型アオリイカを狙いたい場合は、予約時に手バネを用いた方法を申し付ける形です。マダコ釣りプランも同様にエギを使用します。各プランの出船時刻は7:30が基本で、帰港は14:00を目安としています（時期や釣り場により前後します）。仕立のカワハギプランは20名まで乗船でき、仕立のアオリイカプランは10名までが定員です。"
+          },
+          {
+            "heading": "対象と準備",
+            "body": "彦次郎丸は初心者・女性・家族連れを歓迎しており、釣り道具を持っていなくてもレンタルが用意されています。カワハギ用の竿と手巻きリールのセット、シャクリ釣り用の手バネ道具セットのレンタルがあります。ただし、仕掛けやオモリは各自で事前に購入する必要があります。オモリの重さや針の号数についてはあらかじめ電話で確認できます。タイラバ・タイジグを使うマダイ釣りは、ルアーフィッシングとして楽しみたい方にも対応しています。乗船時に氷を受け取ることができ、持ち帰り用のクーラーボックスを持参する形です。スパイクブーツやフェルトスパイクでの乗船は船へのダメージを防ぐため断られます。乗船前日は十分な睡眠をとることが呼びかけられています。"
+          },
+          {
+            "heading": "行き方と使い方",
+            "body": "JR内房線「上総湊駅」を下車して徒歩約10分で港に到着します。車の場合は館山自動車道「富津中央IC」から約5kmです。駐車場は港に用意されています。予約は電話（0439-67-0808）で受け付けており、受付時間は7:00から20:00です。公式サイトの予約カレンダーからも予約状況を確認・予約できます。また、最新の釣果情報は公式LINEで配信しています。仕立プランで10月から1月の土日祝に出船する場合、カワハギは10名以上での受付が条件となります。"
+          }
+        ],
+        "menus": [
+          {
+            "name": "乗合マダイ釣りプラン（タイラバ・タイジグ）"
+          },
+          {
+            "name": "乗合カワハギ釣りプラン"
+          },
+          {
+            "name": "乗合アオリイカ釣りプラン"
+          },
+          {
+            "name": "乗合マダコ釣りプラン（エギタコ）"
+          },
+          {
+            "name": "仕立マダイ釣りプラン（タイラバ・タイジグ）"
+          },
+          {
+            "name": "仕立カワハギ釣りプラン"
+          },
+          {
+            "name": "仕立アオリイカ釣りプラン"
+          },
+          {
+            "name": "仕立マダコ釣りプラン（エギダコ）"
+          }
+        ],
+        "sources": [
+          {
+            "label": "公式サイト",
+            "url": "https://hikojiroumaru.com/"
+          },
+          {
+            "label": "公式サイト（彦次郎丸について）",
+            "url": "https://hikojiroumaru.com/about.html"
+          },
+          {
+            "label": "公式サイト（釣りプラン）",
+            "url": "https://hikojiroumaru.com/plan.html"
+          },
+          {
+            "label": "公式サイト（アクセス）",
+            "url": "https://hikojiroumaru.com/access.html"
+          },
+          {
+            "label": "釣割",
+            "url": "https://www.chowari.jp/ship/00986/"
+          },
+          {
+            "label": "富津市ブログ",
+            "url": "https://futtsu.blog/hikojiroumaru2022/"
+          },
+          {
+            "label": "Google マップ",
+            "url": "https://maps.google.com/?cid=13721479096070948092"
+          }
+        ],
+        "checkedAt": "2026-11-10"
+      }
+    },
+    {
+      "id": "ac0057",
+      "vertical": "activity",
+      "category": "craft",
+      "name": "タイル工房HYGGE",
+      "pref": "tokyo",
+      "cityName": "八王子市",
+      "address": "東京都八王子市石川町2955-16 串田ビル 202",
+      "lat": 35.6690826,
+      "lng": 139.3619046,
+      "hours": "水-日 10:00 - 18:00",
+      "holidays": "月曜・火曜",
+      "phone": "080-8982-5199",
+      "url": "http://tile-hygge.pages.dev/",
+      "website": "http://tile-hygge.pages.dev/",
+      "mapUrl": "https://maps.google.com/?cid=7974342133929235333",
+      "image": "/_portal/vshops/tri-activity-481/g01.jpg",
+      "images": [
+        "/_portal/vshops/tri-activity-481/g01.jpg",
+        "/_portal/vshops/tri-activity-481/g02.jpg",
+        "/_portal/vshops/tri-activity-481/g04.jpg",
+        "/_portal/vshops/tri-activity-481/g07.jpg",
+        "/_portal/vshops/tri-activity-481/g08.jpg",
+        "/_portal/vshops/tri-activity-481/g09.jpg",
+        "/_portal/vshops/tri-activity-481/g10.jpg",
+        "/_portal/vshops/tri-activity-481/s01.jpg",
+        "/_portal/vshops/tri-activity-481/s04.jpg",
+        "/_portal/vshops/tri-activity-481/s09.jpg",
+        "/_portal/vshops/tri-activity-481/s10.jpg",
+        "/_portal/vshops/tri-activity-481/s11.jpg"
+      ],
+      "photos": [
+        {
+          "path": "/_portal/vshops/tri-activity-481/g01.jpg",
+          "what": "串田ビルが入る建物の外観",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-481/g02.jpg",
+          "what": "「タイル工房HYGGE」と書かれたタイル製の看板",
+          "kind": "exterior",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-481/g04.jpg",
+          "what": "RUIと書かれた肉球のモザイクタイル作品",
+          "kind": "meal",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-481/g07.jpg",
+          "what": "緑と青の葉・実の模様が入ったモザイクタイルのコースター",
+          "kind": "meal",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-481/g08.jpg",
+          "what": "壁掛けタイル作品の制作過程と完成品が並ぶ写真",
+          "kind": "meal",
+          "width": 960,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-481/g09.jpg",
+          "what": "かごの中に並んだカラフルなタイルの卵形作品",
+          "kind": "meal",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-481/g10.jpg",
+          "what": "明るい窓辺にタイル作品が置かれた作業テーブルのある室内",
+          "kind": "common",
+          "width": 675,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-481/s01.jpg",
+          "what": "天然石タイルで作られた招き猫の立体作品3体",
+          "kind": "meal",
+          "width": 720,
+          "height": 540
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-481/s04.jpg",
+          "what": "天然石タイルで作られた招き猫の立体作品1体",
+          "kind": "meal",
+          "width": 856,
+          "height": 1210
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-481/s09.jpg",
+          "what": "「タイル工房HYGGE」と書かれたLEDライト看板",
+          "kind": "exterior",
+          "width": 1215,
+          "height": 1273
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-481/s10.jpg",
+          "what": "「HYGGE タイル工房」と書かれた縦型のタイル看板",
+          "kind": "exterior",
+          "width": 631,
+          "height": 1280
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-481/s11.jpg",
+          "what": "天然石タイルで作られた招き猫の立体作品3体（別アングル）",
+          "kind": "meal",
+          "width": 856,
+          "height": 448
+        }
+      ],
+      "tags": [
+        "手ぶらでOK",
+        "初心者歓迎",
+        "子連れ"
+      ],
+      "article": {
+        "headline": "東京都八王子市石川町、JR八高線北八王子駅から徒歩3分のタイルクラフト教室。天然石タイルのモザイク作品と絵付けタイルの2種類の体験を提供している。",
+        "lede": "八王子市にある「タイル工房HYGGE」（ヒュッゲ）です。2025年9月に北八王子に開いた小さなタイルクラフト教室で、天然石タイルのモザイク作品と絵付けタイルの2種類の体験メニューを用意しています。道具も素材もすべて教室にそろっているので、初めての方も手ぶらで参加できます。予約制で土日も営業しており、明るい窓辺の作業テーブルで自分のペースで作品づくりに向き合えます。看板犬のルイはミニチュアシュナウザーの女の子で、犬が苦手な方は予約時に申し出ることができます。",
+        "sections": [
+          {
+            "heading": "体験の内容と流れ",
+            "body": "体験は大きく2種類に分かれています。タイルクラフト（モザイク）では、天然石タイルを一枚ずつ並べてコースターや壁掛け、鍋敷き、立体のふくろうや招き猫、ティッシュケース、ウェルカムボードなどを制作できます。立体の小鳥・ふくろうは目安4〜5時間、ティッシュケースは目安5〜6時間、立体の招き猫・熊やウェルカムボード（A4）は目安12時間かかる作品で、時間のかかる作品は何度でも通って仕上げられます。絵付けタイルでは、スペイン製または国産の白いタイルに絵を描き、講師が教室の窯で焼き上げます。焼き上がりまで約1週間かかり、教室での受け取りか郵送を選べます。制作した作品は完成後にminne（ミンネ）でも販売しています。"
+          },
+          {
+            "heading": "対象と予約の方法",
+            "body": "はじめての方も歓迎しており、お席に余裕があれば小さなお子さまとの参加もできます。体験はすべて予約制です。予約はInstagramのDM、電話、メールで受け付けており、希望の日時を伝えて日程を調整します。出張レッスンも対応しており、絵付けタイル（10cm角限定）を6〜8名で楽しめます。出張レッスンの所要時間は2〜3時間で、当日キャンセルは全額負担となります。講師がそばで丁寧にサポートするため、初心者でも安心して参加できます。"
+          },
+          {
+            "heading": "集合場所と行き方",
+            "body": "JR八高線北八王子駅から徒歩3分の串田ビル2階（202号室）が教室です。予約はInstagramのDM、電話（080-8982-5199）、またはメール（tile.hygge@icloud.com）で受け付けています。希望の日時を伝えて日程を調整するかたちで、予約が確定してから当日手ぶらで来場します。道具・素材は教室で用意されているので、持参物は不要です。"
+          }
+        ],
+        "menus": [
+          {
+            "name": "コースター（2枚）"
+          },
+          {
+            "name": "天然石タイルの壁掛け 150×150"
+          },
+          {
+            "name": "鍋敷き"
+          },
+          {
+            "name": "立体の小鳥またはふくろう"
+          },
+          {
+            "name": "天然石タイルのティッシュケース"
+          },
+          {
+            "name": "立体の招き猫または熊"
+          },
+          {
+            "name": "天然石タイルのウェルカムボード（A4）"
+          },
+          {
+            "name": "絵付けタイル"
+          }
+        ],
+        "sources": [
+          {
+            "label": "公式サイト",
+            "url": "https://tile-hygge.pages.dev/"
+          },
+          {
+            "label": "8dabe.com（2026年1月記事）",
+            "url": "https://8dabe.com/2026/01/05/tile-hygge-2/"
+          },
+          {
+            "label": "8dabe.com（2025年10月記事）",
+            "url": "https://8dabe.com/2025/10/09/tile-hygge/"
+          },
+          {
+            "label": "Google マップ",
+            "url": "https://maps.google.com/?cid=7974342133929235333"
+          }
+        ],
+        "checkedAt": "2026-11-10"
+      }
+    },
+    {
+      "id": "ac0058",
+      "vertical": "activity",
+      "category": "craft",
+      "name": "天然 シーグラス専門店 A-GLASS",
+      "pref": "kanagawa",
+      "cityName": "大和市",
+      "address": "神奈川県大和市福田3591-10",
+      "lat": 35.4382157,
+      "lng": 139.459081,
+      "hours": "火木-土 10:00 - 18:00",
+      "holidays": "月曜・水曜・日曜",
+      "phone": "046-216-9160",
+      "url": "https://a-glass.site/",
+      "website": "https://a-glass.site/",
+      "mapUrl": "https://maps.google.com/?cid=12242935735331153221",
+      "image": "/_portal/vshops/tri-activity-482/g01.jpg",
+      "images": [
+        "/_portal/vshops/tri-activity-482/g01.jpg",
+        "/_portal/vshops/tri-activity-482/g02.jpg",
+        "/_portal/vshops/tri-activity-482/g03.jpg",
+        "/_portal/vshops/tri-activity-482/g04.jpg",
+        "/_portal/vshops/tri-activity-482/g05.jpg",
+        "/_portal/vshops/tri-activity-482/g06.jpg",
+        "/_portal/vshops/tri-activity-482/g07.jpg",
+        "/_portal/vshops/tri-activity-482/g08.jpg",
+        "/_portal/vshops/tri-activity-482/g09.jpg",
+        "/_portal/vshops/tri-activity-482/g10.jpg"
+      ],
+      "photos": [
+        {
+          "path": "/_portal/vshops/tri-activity-482/g01.jpg",
+          "what": "「A-GLASS」と書かれた看板が掲げられた店舗外観",
+          "kind": "exterior",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-482/g02.jpg",
+          "what": "店内でワークショップに取り組む子どもと大人",
+          "kind": "common",
+          "width": 1200,
+          "height": 675
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-482/g03.jpg",
+          "what": "店内でシーグラスのパーツを選ぶ子ども",
+          "kind": "common",
+          "width": 1200,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-482/g04.jpg",
+          "what": "天然シーグラスを使って作られた作品",
+          "kind": "meal",
+          "width": 750,
+          "height": 1000
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-482/g05.jpg",
+          "what": "天然シーグラスを使ったフォトフレームの完成品",
+          "kind": "meal",
+          "width": 1200,
+          "height": 800
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-482/g06.jpg",
+          "what": "店内に並ぶシーグラスや貝殻などのパーツ類",
+          "kind": "common",
+          "width": 640,
+          "height": 480
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-482/g07.jpg",
+          "what": "天然シーグラスを使って作られた様々なハンドメイド作品",
+          "kind": "meal",
+          "width": 1000,
+          "height": 666
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-482/g08.jpg",
+          "what": "「A-GLASS OPEN」と書かれた看板が貼られた店舗ドア",
+          "kind": "exterior",
+          "width": 800,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-482/g09.jpg",
+          "what": "ワークショップで作品を制作している様子",
+          "kind": "common",
+          "width": 1200,
+          "height": 800
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-482/g10.jpg",
+          "what": "天然シーグラスで作ったリースのような丸型の作品",
+          "kind": "meal",
+          "width": 1200,
+          "height": 800
+        }
+      ],
+      "tags": [
+        "子連れ",
+        "初心者歓迎"
+      ],
+      "article": {
+        "headline": "神奈川県大和市の千本桜商店街にある、日本初の天然シーグラス専門店。天然シーグラスを使ったものづくり体験を常時開催している。",
+        "lede": "大和市にある「天然シーグラス専門店 A-GLASS」です。2021年11月20日に千本桜商店街内にオープンした、日本初の天然シーグラスを専門に扱う実店舗です。シーグラスとは、海に漂ううちに波と砂に磨かれて角が取れ、表面が擦りガラスのようになったガラス片のことで、自然が時間をかけて作り上げたものです。店内では、天然シーグラスやハンドメイドアイテムの販売に加え、実際に天然シーグラスを使って世界に一つだけの作品を作るワークショップを常時開催しています。ハワイアン音楽がゆったりと流れる店内で、カラーサンドや貝殻などの豊富なパーツと天然シーグラスを組み合わせて、自由に作品づくりに取り組めます。店舗スタッフがサポートするため、ハンドメイドが初めての方や小さなお子様も安心して参加できます。",
+        "sections": [
+          {
+            "heading": "体験の内容と流れ",
+            "body": "ワークショップは、まずメニューの中から体験内容を選ぶところから始まります。フォトフレーム（ミニ正方形・ミニ長方形・通常サイズ）、インテリアプレート、キャンドルホルダー、万華鏡、オリジナル置時計（四角・丸型）、水中アート、ボールペン、キーホルダー、絵馬作り、光るキラキラジェルアート作り、コースターなど、15種類以上のメニューがあります。体験内容を選んだあとは、店内に用意されているカラーサンド・貝殻・天然シーグラスなどのパーツを自由に組み合わせて作品を仕上げます。作品はその日にお持ち帰りいただけます。"
+          },
+          {
+            "heading": "コースと所要時間",
+            "body": "各メニューの所要時間は作品の種類によって異なります。簡単コースターは約15分、キーホルダー・ミニフォトフレーム・ボールペン・キラキラジェルアート・レジンキーホルダーは約20〜30分、フォトフレーム・万華鏡・絵馬作りは約40分、インテリアプレートと水中アートは約60分、オリジナル置時計（四角・丸型）は約90分が目安です。ワークショップの最終受付は17:30です。なお、ウェブ予約を受け付けているほか、電話でも予約が可能です。"
+          },
+          {
+            "heading": "対象",
+            "body": "ワークショップは子どもから大人まで参加できます。小さなお子様の場合はご両親と一緒に作ることも可能です。ハンドメイドに慣れている方はもちろん、初めてハンドメイドに挑戦する方も大歓迎です。また、大切な方へのプレゼントを作る場としても利用されています。店内には天然シーグラス素材の販売コーナーもあり、ウランガラス（光るシーグラス）やおはじきシーグラス、ビー玉など、専門店ならではのラインナップがそろっています。"
+          },
+          {
+            "heading": "行き方と使い方",
+            "body": "店舗は千本桜商店街内にあります。最寄り駅は小田急江ノ島線「高座渋谷駅」で、徒歩15分です。バスを利用する場合は、神川中央交通バス「丘01」（桜ヶ丘駅〜綾瀬車庫間）または「長33」（長後駅〜桜ヶ丘駅間）で「千本桜商店街」バス停下車、徒歩1分です。コミュニティバス「のろっと」南部ルートを使う場合は、小田急江ノ島線「大和駅」発で「千本桜商店街」下車、徒歩1分です。駐車場はなく、近隣のコインパーキングを利用します。予約は公式サイトのウェブ予約ページから申し込めます。"
+          }
+        ],
+        "menus": [
+          {
+            "name": "光る！キラキラジェルアート作り"
+          },
+          {
+            "name": "フォトフレーム"
+          },
+          {
+            "name": "インテリアプレート"
+          },
+          {
+            "name": "水中アート"
+          },
+          {
+            "name": "万華鏡"
+          },
+          {
+            "name": "キャンドルホルダー"
+          },
+          {
+            "name": "オリジナル置時計（四角）"
+          },
+          {
+            "name": "オリジナル置時計（丸型）"
+          }
+        ],
+        "sources": [
+          {
+            "label": "公式サイト",
+            "url": "https://a-glass.site/"
+          },
+          {
+            "label": "公式サイト（店舗情報）",
+            "url": "https://a-glass.site/shopinfo"
+          },
+          {
+            "label": "公式サイト（アクセス）",
+            "url": "https://a-glass.site/access"
+          },
+          {
+            "label": "公式サイト（ワークショップ）",
+            "url": "https://a-glass.site/wspricelist"
+          },
+          {
+            "label": "公式サイト（ギャラリー）",
+            "url": "https://a-glass.site/archives/gallery"
+          },
+          {
+            "label": "大和とぴっく（やまとぴ）",
+            "url": "https://www.yamatopi.jp/open-close/aglass-20220226.html"
+          },
+          {
+            "label": "Google マップ",
+            "url": "https://maps.google.com/?cid=12242935735331153221"
+          }
+        ],
+        "checkedAt": "2026-11-10"
+      }
     }
   ]
 }

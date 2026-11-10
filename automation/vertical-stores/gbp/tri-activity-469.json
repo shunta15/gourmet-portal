@@ -1,0 +1,32 @@
+{
+  "tab": "トリニティアポ",
+  "tabEn": "tri-activity",
+  "row": 469,
+  "sheet": {
+    "name": "焚火屋",
+    "address": "",
+    "url": "https://www.google.com/maps/search/?api=1&query=%E7%84%9A%E7%81%AB%E5%B1%8B%20070-4074-8911%20%E3%80%92509-4254%20%E5%B2%90%E9%98%9C%E7%9C%8C%E9%A3%9B%E9%A8%A8%E5%B8%82%E5%8F%A4%E5%B7%9D%E7%94%BA%E4%B8%8A%E7%94%BA%EF%BC%96%EF%BC%91%EF%BC%99%E2%88%92%EF%BC%93",
+    "type": "その他",
+    "d1": "",
+    "d2": ""
+  },
+  "urlKind": "mapsApi",
+  "route": "第1段(verify-gbp.mjs)で確認済み",
+  "verdict": "一致",
+  "verdictReason": "手がかり: 店名＋電話＋住所(番地まで)。電話が一致／店名: exact(シート「焚火屋」/ マップ「焚火屋（takibiya）」)／住所(シート): exact・町名・番地とも一致",
+  "place": {
+    "name": "焚火屋（takibiya）",
+    "address": "岐阜県飛騨市古川町上町６１９−３",
+    "category": "自転車レンタル サービス",
+    "lat": 36.2229377,
+    "lng": 137.1948829,
+    "gbpUrl": "https://maps.google.com/?cid=16399950852253514936",
+    "phone": "070-4074-8911",
+    "website": "https://www.youtube.com/watch?v=UtPoYAVaih0&t=55s",
+    "hours": null,
+    "reserveLinks": [],
+    "statusSignals": [],
+    "closedSignal": false
+  },
+  "fetchedAt": "2026-11-10T08:36:10.371Z"
+}

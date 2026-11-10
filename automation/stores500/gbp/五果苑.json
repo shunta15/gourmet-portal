@@ -1,0 +1,22 @@
+{
+  "name": "五果苑",
+  "address": "岡山県岡山市北区芳賀５３８５−６",
+  "lat": 34.7264021,
+  "lng": 133.8759593,
+  "category": "果樹園",
+  "hours": {
+    "月": "10:00–16:30",
+    "火": "10:00–16:30",
+    "水": "定休日",
+    "木": "10:00–16:30",
+    "金": "10:00–16:30",
+    "土": "10:00–16:30",
+    "日": "10:00–16:30"
+  },
+  "phone": "080-6261-8910",
+  "website": "https://www.instagram.com/yondaime_gokaen?igsh=MWFsdXlmcGYyMHYzNw%3D%3D&utm_source=qr",
+  "priceRange": null,
+  "status": null,
+  "gbpUrl": "https://maps.google.com/?cid=9304296082687067151",
+  "fetchedAt": "2026-11-10T08:37:57.550Z"
+}

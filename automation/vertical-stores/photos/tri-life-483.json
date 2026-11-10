@@ -1,0 +1,66 @@
+{
+  "key": "tri-life-483",
+  "images": [
+    {
+      "path": "/_portal/vshops/tri-life-483/g02.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9SiBEUPKNxXWx0skzRG98E1Zawiq2WuMLi0G2Yv-nllrILzZ6qF3QJY6dvPUHOcfwTxt0iXJ28GVTxVD3rr1y8nP4C_ujFoYtdI-fzRKFKHXDJaH2-AB-7EWDHUMD6ZtGx8OQ=s1200",
+      "pageUrl": "https://maps.google.com/?cid=17845648148425251872",
+      "what": "格子戸のある京町家風の建物外観",
+      "kind": "exterior",
+      "width": 901,
+      "height": 1200,
+      "source": "Google マップ"
+    },
+    {
+      "path": "/_portal/vshops/tri-life-483/g03.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9T4xqveHzACoYlxAPMPwfOcHAN9TIt8bZWj_BzL199SoVaBqg8VScFd6-LoWPfj5KrSTC_jp_piPT6LzikJWbBW5PVhkftq0jIaS2-KCA_oJNjNZEo8oiyLm0QD426UM6fGwxn_=s1200",
+      "pageUrl": "https://maps.google.com/?cid=17845648148425251872",
+      "what": "畳の上に茶道具（鉄瓶・茶碗・棗）が台に乗せて並ぶ稽古室",
+      "kind": "common",
+      "width": 1200,
+      "height": 901,
+      "source": "Google マップ"
+    },
+    {
+      "path": "/_portal/vshops/tri-life-483/g04.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9SdbdjQ23Mn8rxamVexGD8DFjPgZlMV3sBpdnAUJ1EvOBWNY670jqL3K4Lw520TWkGJcJzr27f8d-TbsMyxLg-pgKFI6OCyOfoahXebSHqiWHi-w4ZGdUZY6sQVSy5rpg=s1200",
+      "pageUrl": "https://maps.google.com/?cid=17845648148425251872",
+      "what": "床の間に掛け軸「織部流扶桑派」と花が飾られた和室",
+      "kind": "common",
+      "width": 1200,
+      "height": 901,
+      "source": "Google マップ"
+    },
+    {
+      "path": "/_portal/vshops/tri-life-483/g05.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9TrSxBImBG6Fiv2UC6wZz7Ieh5FsXLtnrR98q001j_M0QPkaJXWiQbwu-JU1nzaOpu7WL1Ka02wz4snr1F7uBxJxDpk7FUF6uBeBs9q5A1sLPDofdzY4iOwmser6nGloaUxlMgK=s1200",
+      "pageUrl": "https://maps.google.com/?cid=17845648148425251872",
+      "what": "竹の柄杓と蹲踞（つくばい）がある庭の水場",
+      "kind": "view",
+      "width": 1200,
+      "height": 901,
+      "source": "Google マップ"
+    },
+    {
+      "path": "/_portal/vshops/tri-life-483/g06.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9SPmMMPu2WsScembxBpf1TMF7VoXK6ZcRIzuAYGshrTOE4Th_UHH7ySZxn7sWKgJKLVWeiy0WhuORt8f0SaDo2btpuHCZdpizT8ROayRLNNCkfwxAGtnQhobOSr9_zUCReDVm5_OA=s1200",
+      "pageUrl": "https://maps.google.com/?cid=17845648148425251872",
+      "what": "赤い盆に乗せた抹茶茶碗と和菓子",
+      "kind": "meal",
+      "width": 1200,
+      "height": 901,
+      "source": "Google マップ"
+    },
+    {
+      "path": "/_portal/vshops/tri-life-483/g07.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9TArx8qdM0Mnqmn-CbVdMk3qlcqFU5srbOaykNEKHgtggFkqZhJyza-0eaqj4p7d_qmcv3mP5mi69F8yiFDwQXnFImFCiQEeqOOjsEdYOPTBa-c3ihbPlkdhpGvkCogoVMRmQl0UA=s1200",
+      "pageUrl": "https://maps.google.com/?cid=17845648148425251872",
+      "what": "竹の柄杓と手水鉢に水が流れる庭の手水",
+      "kind": "view",
+      "width": 1200,
+      "height": 901,
+      "source": "Google マップ"
+    }
+  ],
+  "note": "automation/v2/write.mjs が 2026-11-10T08:54:12.448Z に取得。店の実写だけ(AI 画像・汎用画像・地図・ロゴ・顔が大きい画像は除外)。"
+}

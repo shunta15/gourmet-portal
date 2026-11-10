@@ -1,0 +1,96 @@
+{
+  "commit": "a275c979a1ca6934f40de1b87ee3ef522a62de1e",
+  "source": "/Users/shunta/claude/gp-k-auto2",
+  "count": 8,
+  "added": [
+    {
+      "row": 469,
+      "name": "焚火屋",
+      "key": "tri-activity-469",
+      "vertical": "アクティビティ",
+      "id": "ac0055",
+      "articleId": "ac0055",
+      "shopUrl": "https://machinowa.tokyo/activity/shop/ac0055",
+      "articleUrl": "https://machinowa.tokyo/activity/article/ac0055",
+      "sheetUrl": "https://machinowa.tokyo/activity/article/ac0055"
+    },
+    {
+      "row": 471,
+      "name": "彦次郎丸",
+      "key": "tri-activity-471",
+      "vertical": "アクティビティ",
+      "id": "ac0056",
+      "articleId": "ac0056",
+      "shopUrl": "https://machinowa.tokyo/activity/shop/ac0056",
+      "articleUrl": "https://machinowa.tokyo/activity/article/ac0056",
+      "sheetUrl": "https://machinowa.tokyo/activity/article/ac0056"
+    },
+    {
+      "row": 473,
+      "name": "実季楽農園",
+      "key": "tri-life-473",
+      "vertical": "くらし",
+      "id": "li0208",
+      "articleId": "li0208",
+      "shopUrl": "https://machinowa.tokyo/life/shop/li0208",
+      "articleUrl": "https://machinowa.tokyo/life/article/li0208",
+      "sheetUrl": "https://machinowa.tokyo/life/article/li0208"
+    },
+    {
+      "row": 476,
+      "name": "五果苑",
+      "key": "tri-gourmet-476",
+      "vertical": "グルメ",
+      "id": "r918",
+      "articleId": "五果苑",
+      "shopUrl": "https://machinowa.tokyo/restaurant/r918",
+      "articleUrl": "https://machinowa.tokyo/feature/五果苑",
+      "sheetUrl": "https://machinowa.tokyo/feature/五果苑"
+    },
+    {
+      "row": 480,
+      "name": "彩 Aya Irodori",
+      "key": "tri-life-480",
+      "vertical": "くらし",
+      "id": "li0209",
+      "articleId": "li0209",
+      "shopUrl": "https://machinowa.tokyo/life/shop/li0209",
+      "articleUrl": "https://machinowa.tokyo/life/article/li0209",
+      "sheetUrl": "https://machinowa.tokyo/life/article/li0209"
+    },
+    {
+      "row": 481,
+      "name": "タイル工房HYGGE",
+      "key": "tri-activity-481",
+      "vertical": "アクティビティ",
+      "id": "ac0057",
+      "articleId": "ac0057",
+      "shopUrl": "https://machinowa.tokyo/activity/shop/ac0057",
+      "articleUrl": "https://machinowa.tokyo/activity/article/ac0057",
+      "sheetUrl": "https://machinowa.tokyo/activity/article/ac0057"
+    },
+    {
+      "row": 482,
+      "name": "天然 シーグラス専門店 A-GLASS",
+      "key": "tri-activity-482",
+      "vertical": "アクティビティ",
+      "id": "ac0058",
+      "articleId": "ac0058",
+      "shopUrl": "https://machinowa.tokyo/activity/shop/ac0058",
+      "articleUrl": "https://machinowa.tokyo/activity/article/ac0058",
+      "sheetUrl": "https://machinowa.tokyo/activity/article/ac0058"
+    },
+    {
+      "row": 483,
+      "name": "茶道 織部流扶桑派",
+      "key": "tri-life-483",
+      "vertical": "くらし",
+      "id": "li0210",
+      "articleId": "li0210",
+      "shopUrl": "https://machinowa.tokyo/life/shop/li0210",
+      "articleUrl": "https://machinowa.tokyo/life/article/li0210",
+      "sheetUrl": "https://machinowa.tokyo/life/article/li0210"
+    }
+  ],
+  "skipped": []
+}

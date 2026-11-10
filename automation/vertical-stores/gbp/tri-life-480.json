@@ -1,0 +1,40 @@
+{
+  "tab": "トリニティアポ",
+  "tabEn": "tri-life",
+  "row": 480,
+  "sheet": {
+    "name": "彩 Aya Irodori",
+    "address": "",
+    "url": "https://www.google.com/maps/search/?api=1&query=%E5%BD%A9%20Aya%20Irodori%20052-621-6820%20%E3%80%92458-0924%20%E6%84%9B%E7%9F%A5%E7%9C%8C%E5%90%8D%E5%8F%A4%E5%B1%8B%E5%B8%82%E7%B7%91%E5%8C%BA%E6%9C%89%E6%9D%BE%EF%BC%98%EF%BC%90%EF%BC%97%E2%88%92%EF%BC%91",
+    "type": "布",
+    "d1": "",
+    "d2": ""
+  },
+  "urlKind": "mapsApi",
+  "route": "第1段(verify-gbp.mjs)で確認済み",
+  "verdict": "一致",
+  "verdictReason": "手がかり: 店名＋電話＋住所(番地まで)。電話が一致／店名: exact(シート「彩 Aya Irodori」/ マップ「彩 Aya Irodori」)／住所(シート): exact・町名・番地とも一致",
+  "place": {
+    "name": "彩 Aya Irodori",
+    "address": "愛知県名古屋市緑区有松８０７−１",
+    "category": "衣料品店",
+    "lat": 35.0683783,
+    "lng": 136.9675322,
+    "gbpUrl": "https://maps.google.com/?cid=7230866867748865660",
+    "phone": "052-621-6820",
+    "website": "http://www.ayaosuka.com/",
+    "hours": {
+      "月": "10:00–16:00",
+      "火": "10:00–16:00",
+      "水": "定休日",
+      "木": "定休日",
+      "金": "10:00–16:00",
+      "土": "10:00–16:00",
+      "日": "10:00–16:00"
+    },
+    "reserveLinks": [],
+    "statusSignals": [],
+    "closedSignal": false
+  },
+  "fetchedAt": "2026-11-10T08:39:09.520Z"
+}

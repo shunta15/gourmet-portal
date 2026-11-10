@@ -1,0 +1,32 @@
+{
+  "tab": "トリニティアポ",
+  "tabEn": "tri-life",
+  "row": 473,
+  "sheet": {
+    "name": "実季楽農園",
+    "address": "",
+    "url": "https://www.google.com/maps/search/?api=1&query=%E5%AE%9F%E5%AD%A3%E6%A5%BD%E8%BE%B2%E5%9C%92%20080-5418-4861%20%E3%80%92410-3402%20%E9%9D%99%E5%B2%A1%E7%9C%8C%E6%B2%BC%E6%B4%A5%E5%B8%82%E6%88%B8%E7%94%B0%EF%BC%91%EF%BC%92%EF%BC%98%EF%BC%91",
+    "type": "その他",
+    "d1": "",
+    "d2": ""
+  },
+  "urlKind": "mapsApi",
+  "route": "第1段(verify-gbp.mjs)で確認済み",
+  "verdict": "一致",
+  "verdictReason": "手がかり: 店名＋住所(番地まで)。マップに電話の表示なし／店名: exact(シート「実季楽農園」/ マップ「実季楽農園」)／住所(シート): exact・町名・番地とも一致",
+  "place": {
+    "name": "実季楽農園",
+    "address": "静岡県沼津市戸田１２８１",
+    "category": "農場",
+    "lat": 34.9706712,
+    "lng": 138.7880364,
+    "gbpUrl": "https://maps.google.com/?cid=4817919263280700445",
+    "phone": null,
+    "website": null,
+    "hours": null,
+    "reserveLinks": [],
+    "statusSignals": [],
+    "closedSignal": false
+  },
+  "fetchedAt": "2026-11-10T08:37:29.819Z"
+}

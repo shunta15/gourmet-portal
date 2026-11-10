@@ -1,0 +1,40 @@
+{
+  "tab": "トリニティアポ",
+  "tabEn": "tri-life",
+  "row": 483,
+  "sheet": {
+    "name": "茶道 織部流扶桑派",
+    "address": "",
+    "url": "https://www.google.com/maps/search/?api=1&query=%E8%8C%B6%E9%81%93%20%E7%B9%94%E9%83%A8%E6%B5%81%E6%89%B6%E6%A1%91%E6%B4%BE%20075-821-1610%20%E3%80%92602-8155%20%E4%BA%AC%E9%83%BD%E5%BA%9C%E4%BA%AC%E9%83%BD%E5%B8%82%E4%B8%8A%E4%BA%AC%E5%8C%BA%E4%B8%BB%E7%A8%8E%E7%94%BA1062%E7%95%AA%E5%9C%B0",
+    "type": "レジャー体験",
+    "d1": "",
+    "d2": ""
+  },
+  "urlKind": "mapsApi",
+  "route": "第1段(verify-gbp.mjs)で確認済み",
+  "verdict": "一致",
+  "verdictReason": "手がかり: 店名＋電話＋住所(番地まで)。電話が一致／店名: exact(シート「茶道 織部流扶桑派」/ マップ「茶道 織部流扶桑派」)／住所(シート): exact・町名・番地とも一致",
+  "place": {
+    "name": "茶道 織部流扶桑派",
+    "address": "京都府京都市上京区主税町1062番地",
+    "category": "カルチャー スクール",
+    "lat": 35.017648,
+    "lng": 135.7438876,
+    "gbpUrl": "https://maps.google.com/?cid=17845648148425251872",
+    "phone": "075-821-1610",
+    "website": "https://www.fusouan.com/",
+    "hours": {
+      "月": "09:00–22:00",
+      "火": "09:00–22:00",
+      "水": "09:00–22:00",
+      "木": "09:00–22:00",
+      "金": "09:00–22:00",
+      "土": "09:00–22:00",
+      "日": "09:00–22:00"
+    },
+    "reserveLinks": [],
+    "statusSignals": [],
+    "closedSignal": false
+  },
+  "fetchedAt": "2026-11-10T08:41:31.549Z"
+}

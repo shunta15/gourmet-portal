@@ -22696,6 +22696,57 @@ export const ARTICLE_STORES: Restaurant[] = [
       "ランチ"
     ],
     "featureId": "へんじんもっこ（ソーセージ・サラミ製造直売所）"
+  },
+  {
+    "id": "r918",
+    "name": "五果苑",
+    "cuisine": "果樹園",
+    "area": "岡山県・岡山市北区",
+    "region": "okayama",
+    "shape": "square",
+    "image": "/restaurants/teleapo-五果苑/hero.jpg",
+    "heroImages": [
+      "/restaurants/teleapo-五果苑/hero.jpg",
+      "/restaurants/teleapo-五果苑/point1.jpg",
+      "/restaurants/teleapo-五果苑/point2.jpg",
+      "/restaurants/teleapo-五果苑/point3.jpg",
+      "/restaurants/teleapo-五果苑/point4.jpg"
+    ],
+    "gallery": [
+      "/restaurants/teleapo-五果苑/hero.jpg",
+      "/restaurants/teleapo-五果苑/point1.jpg",
+      "/restaurants/teleapo-五果苑/point2.jpg",
+      "/restaurants/teleapo-五果苑/point3.jpg",
+      "/restaurants/teleapo-五果苑/point4.jpg"
+    ],
+    "desc": "岡山県岡山市北区の果樹園。",
+    "address": "岡山県岡山市北区芳賀5385-6",
+    "hours": "月・火・木〜日 10:00–16:30",
+    "closed": "水曜日",
+    "seats": "—（訪問前に公式確認）",
+    "nearest": "—",
+    "phone": "080-6261-8910",
+    "instagram": "https://www.instagram.com/yondaime_gokaen",
+    "source": {
+      "label": "Google ビジネスプロフィール",
+      "url": "https://maps.google.com/?cid=9304296082687067151"
+    },
+    "body": [
+      "五果苑は、岡山県岡山市北区にあるお店です。業態は「果樹園」、所在地は岡山県岡山市北区芳賀5385-6です。マチノワ編集部の特集記事では、「自園の白桃と葡萄を使ったフルーツスイーツ」・「氷温保存で通年供給するシャインマスカット」などを取り上げています。",
+      "営業時間は月・火・木〜日 10:00–16:30、定休日は水曜日です（Googleマップの営業時間による）。営業時間や価格は変わることがあるため、訪問前に公式サイトやSNS、お電話でご確認ください。"
+    ],
+    "highlights": [
+      "自園の白桃と葡萄を使ったフルーツスイーツ",
+      "氷温保存で通年供給するシャインマスカット",
+      "カフェ横のブドウ棚でシャインマスカット摘み取り体験",
+      "テラス席とフルーツ直売"
+    ],
+    "tags": [
+      "果樹園",
+      "北区",
+      "ランチ"
+    ],
+    "featureId": "五果苑"
   }
 ];
 
@@ -23174,7 +23225,8 @@ export const ARTICLE_STORE_FEATURE_IDS: Record<string, string> = {
   "r914": "ブーランジェD316CASA",
   "r915": "沖縄酒場すけまる",
   "r916": "原始焼き酒場さくら井",
-  "r917": "へんじんもっこ（ソーセージ・サラミ製造直売所）"
+  "r917": "へんじんもっこ（ソーセージ・サラミ製造直売所）",
+  "r918": "五果苑"
 };
 
 /** 特集記事ID → 店舗ID */
@@ -23652,5 +23704,6 @@ export const ARTICLE_STORE_ID_BY_FEATURE: Record<string, string> = {
   "ブーランジェD316CASA": "r914",
   "沖縄酒場すけまる": "r915",
   "原始焼き酒場さくら井": "r916",
-  "へんじんもっこ（ソーセージ・サラミ製造直売所）": "r917"
+  "へんじんもっこ（ソーセージ・サラミ製造直売所）": "r917",
+  "五果苑": "r918"
 };
