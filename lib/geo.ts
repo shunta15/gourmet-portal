@@ -4339,6 +4339,24 @@ export const GEO: Record<string, GeoPoint> = {
     "src": "maps",
     "precision": "exact"
   },
+  "r915": {
+    "lat": 35.431532,
+    "lng": 139.557608,
+    "src": "maps",
+    "precision": "exact"
+  },
+  "r916": {
+    "lat": 41.820658,
+    "lng": 140.692967,
+    "src": "maps",
+    "precision": "exact"
+  },
+  "r917": {
+    "lat": 38.011724,
+    "lng": 138.416525,
+    "src": "maps",
+    "precision": "exact"
+  },
   "r92": {
     "lat": 35.561993,
     "lng": 139.713943,

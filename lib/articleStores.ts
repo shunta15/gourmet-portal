@@ -22545,6 +22545,157 @@ export const ARTICLE_STORES: Restaurant[] = [
       "ランチ"
     ],
     "featureId": "ブーランジェD316CASA"
+  },
+  {
+    "id": "r915",
+    "name": "沖縄酒場 すけまる",
+    "cuisine": "居酒屋",
+    "area": "神奈川県・横浜市戸塚区",
+    "region": "kanagawa",
+    "shape": "square",
+    "image": "/restaurants/teleapo-沖縄酒場すけまる/hero.jpg",
+    "heroImages": [
+      "/restaurants/teleapo-沖縄酒場すけまる/hero.jpg",
+      "/restaurants/teleapo-沖縄酒場すけまる/point1.jpg",
+      "/restaurants/teleapo-沖縄酒場すけまる/point2.jpg",
+      "/restaurants/teleapo-沖縄酒場すけまる/point3.jpg",
+      "/restaurants/teleapo-沖縄酒場すけまる/point4.jpg"
+    ],
+    "gallery": [
+      "/restaurants/teleapo-沖縄酒場すけまる/hero.jpg",
+      "/restaurants/teleapo-沖縄酒場すけまる/point1.jpg",
+      "/restaurants/teleapo-沖縄酒場すけまる/point2.jpg",
+      "/restaurants/teleapo-沖縄酒場すけまる/point3.jpg",
+      "/restaurants/teleapo-沖縄酒場すけまる/point4.jpg"
+    ],
+    "desc": "神奈川県横浜市戸塚区の居酒屋。",
+    "address": "神奈川県横浜市戸塚区品濃町538-9 1F",
+    "hours": "月・火・木〜日 17:00–23:00",
+    "closed": "水曜日",
+    "seats": "28席（テーブル・お座敷・テラス）",
+    "nearest": "—",
+    "phone": "045-443-9992",
+    "source": {
+      "label": "Google ビジネスプロフィール",
+      "url": "https://maps.google.com/?cid=799226154152444302"
+    },
+    "body": [
+      "沖縄酒場 すけまるは、神奈川県横浜市戸塚区にあるお店です。業態は「居酒屋」、所在地は神奈川県横浜市戸塚区品濃町538-9 1Fです。マチノワ編集部の特集記事では、「ゴーヤチャンプルー、ソーキ煮込み、中味汁——定番の沖縄料理」・「島もずくの天ぷら、自家製タコスミートのシーザーサラダ——創作の一面」などを取り上げています。",
+      "営業時間は月・火・木〜日 17:00–23:00、定休日は水曜日です（Googleマップの営業時間による）。席は28席（テーブル・お座敷・テラス）。営業時間や価格は変わることがあるため、訪問前に公式サイトやSNS、お電話でご確認ください。"
+    ],
+    "highlights": [
+      "ゴーヤチャンプルー、ソーキ煮込み、中味汁——定番の沖縄料理",
+      "島もずくの天ぷら、自家製タコスミートのシーザーサラダ——創作の一面",
+      "泡盛40種類以上とオリオンビール——沖縄の酒",
+      "28席のテーブル・お座敷・テラス——席の使い分け"
+    ],
+    "tags": [
+      "居酒屋",
+      "戸塚区",
+      "宴会",
+      "貸切可"
+    ],
+    "featureId": "沖縄酒場すけまる"
+  },
+  {
+    "id": "r916",
+    "name": "原始焼き酒場 さくら井",
+    "cuisine": "居酒屋",
+    "area": "北海道・北斗市",
+    "region": "hokkaido",
+    "shape": "square",
+    "image": "/restaurants/teleapo-原始焼き酒場さくら井/hero.jpg",
+    "heroImages": [
+      "/restaurants/teleapo-原始焼き酒場さくら井/hero.jpg",
+      "/restaurants/teleapo-原始焼き酒場さくら井/point1.jpg",
+      "/restaurants/teleapo-原始焼き酒場さくら井/point2.jpg",
+      "/restaurants/teleapo-原始焼き酒場さくら井/point3.jpg",
+      "/restaurants/teleapo-原始焼き酒場さくら井/point4.jpg"
+    ],
+    "gallery": [
+      "/restaurants/teleapo-原始焼き酒場さくら井/hero.jpg",
+      "/restaurants/teleapo-原始焼き酒場さくら井/point1.jpg",
+      "/restaurants/teleapo-原始焼き酒場さくら井/point2.jpg",
+      "/restaurants/teleapo-原始焼き酒場さくら井/point3.jpg",
+      "/restaurants/teleapo-原始焼き酒場さくら井/point4.jpg"
+    ],
+    "desc": "北海道北斗市の居酒屋。",
+    "address": "北海道北斗市七重浜8丁目3-5",
+    "hours": "月〜水・金〜日 11:00–14:00, 17:00–23:00",
+    "closed": "木曜日",
+    "seats": "79席",
+    "nearest": "—",
+    "phone": "0138-83-5505",
+    "source": {
+      "label": "Google ビジネスプロフィール",
+      "url": "https://maps.google.com/?cid=16940815734010254779"
+    },
+    "body": [
+      "原始焼き酒場 さくら井は、北海道北斗市にあるお店です。業態は「居酒屋」、所在地は北海道北斗市七重浜8丁目3-5です。マチノワ編集部の特集記事では、「遠火で強火の炭火、逆さ立てで焼く原始焼き」・「桜姫鶏のとり串、北海道産豚の精肉串」などを取り上げています。",
+      "営業時間は月〜水・金〜日 11:00–14:00, 17:00–23:00、定休日は木曜日です（Googleマップの営業時間による）。席は79席。営業時間や価格は変わることがあるため、訪問前に公式サイトやSNS、お電話でご確認ください。"
+    ],
+    "highlights": [
+      "遠火で強火の炭火、逆さ立てで焼く原始焼き",
+      "桜姫鶏のとり串、北海道産豚の精肉串",
+      "宴会コースと道産ウイスキーを含む飲み物",
+      "1階カウンター・テーブル・小上がり、2階は宴会対応"
+    ],
+    "tags": [
+      "居酒屋",
+      "北斗市",
+      "ランチ"
+    ],
+    "featureId": "原始焼き酒場さくら井"
+  },
+  {
+    "id": "r917",
+    "name": "へんじんもっこ（ソーセージ・サラミ製造直売所）",
+    "cuisine": "ハム専門店",
+    "area": "新潟県・佐渡市",
+    "region": "niigata",
+    "shape": "square",
+    "image": "/restaurants/teleapo-へんじんもっこ（ソーセージ・サラミ製造直売所）/hero.jpg",
+    "heroImages": [
+      "/restaurants/teleapo-へんじんもっこ（ソーセージ・サラミ製造直売所）/hero.jpg",
+      "/restaurants/teleapo-へんじんもっこ（ソーセージ・サラミ製造直売所）/point1.jpg",
+      "/restaurants/teleapo-へんじんもっこ（ソーセージ・サラミ製造直売所）/point2.jpg",
+      "/restaurants/teleapo-へんじんもっこ（ソーセージ・サラミ製造直売所）/point3.jpg",
+      "/restaurants/teleapo-へんじんもっこ（ソーセージ・サラミ製造直売所）/point4.jpg"
+    ],
+    "gallery": [
+      "/restaurants/teleapo-へんじんもっこ（ソーセージ・サラミ製造直売所）/hero.jpg",
+      "/restaurants/teleapo-へんじんもっこ（ソーセージ・サラミ製造直売所）/point1.jpg",
+      "/restaurants/teleapo-へんじんもっこ（ソーセージ・サラミ製造直売所）/point2.jpg",
+      "/restaurants/teleapo-へんじんもっこ（ソーセージ・サラミ製造直売所）/point3.jpg",
+      "/restaurants/teleapo-へんじんもっこ（ソーセージ・サラミ製造直売所）/point4.jpg"
+    ],
+    "desc": "新潟県佐渡市のハム専門店。",
+    "address": "新潟県佐渡市新穂大野1184-1",
+    "hours": "月〜土 09:00–17:00",
+    "closed": "日曜日",
+    "seats": "—（訪問前に公式確認）",
+    "nearest": "—",
+    "phone": "0259-22-2204",
+    "source": {
+      "label": "Google ビジネスプロフィール",
+      "url": "https://maps.google.com/?cid=12309172820005016148"
+    },
+    "body": [
+      "へんじんもっこ（ソーセージ・サラミ製造直売所）は、新潟県佐渡市にあるお店です。業態は「ハム専門店」、所在地は新潟県佐渡市新穂大野1184-1です。マチノワ編集部の特集記事では、「日本でここだけの「たまとろサラミ」とドイツ伝統製法が生む多彩な商品」・「新潟県産豚肉と佐渡の野草が原料、防腐剤・着色料を使わないドイツ伝統製法」などを取り上げています。",
+      "営業時間は月〜土 09:00–17:00、定休日は日曜日です（Googleマップの営業時間による）。営業時間や価格は変わることがあるため、訪問前に公式サイトやSNS、お電話でご確認ください。"
+    ],
+    "highlights": [
+      "日本でここだけの「たまとろサラミ」とドイツ伝統製法が生む多彩な商品",
+      "新潟県産豚肉と佐渡の野草が原料、防腐剤・着色料を使わないドイツ伝統製法",
+      "佐渡の野草をおよそ8種類使う「ワイルドハーブソーセージ」と多彩な商品構成",
+      "60年以上の肉屋の歴史が生んだ製造直売所と、直営レストランde Vinco"
+    ],
+    "tags": [
+      "ハム専門店",
+      "佐渡市",
+      "ランチ"
+    ],
+    "featureId": "へんじんもっこ（ソーセージ・サラミ製造直売所）"
   }
 ];
 
@@ -23020,7 +23171,10 @@ export const ARTICLE_STORE_FEATURE_IDS: Record<string, string> = {
   "r911": "そば茶屋吉酔",
   "r912": "手打ちうどん次男坊亭",
   "r913": "まぐろ節中華そば温知",
-  "r914": "ブーランジェD316CASA"
+  "r914": "ブーランジェD316CASA",
+  "r915": "沖縄酒場すけまる",
+  "r916": "原始焼き酒場さくら井",
+  "r917": "へんじんもっこ（ソーセージ・サラミ製造直売所）"
 };
 
 /** 特集記事ID → 店舗ID */
@@ -23495,5 +23649,8 @@ export const ARTICLE_STORE_ID_BY_FEATURE: Record<string, string> = {
   "そば茶屋吉酔": "r911",
   "手打ちうどん次男坊亭": "r912",
   "まぐろ節中華そば温知": "r913",
-  "ブーランジェD316CASA": "r914"
+  "ブーランジェD316CASA": "r914",
+  "沖縄酒場すけまる": "r915",
+  "原始焼き酒場さくら井": "r916",
+  "へんじんもっこ（ソーセージ・サラミ製造直売所）": "r917"
 };

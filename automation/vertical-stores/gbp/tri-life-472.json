@@ -1,0 +1,40 @@
+{
+  "tab": "トリニティアポ",
+  "tabEn": "tri-life",
+  "row": 472,
+  "sheet": {
+    "name": "長慶院",
+    "address": "",
+    "url": "https://www.google.com/maps/search/?api=1&query=%E9%95%B7%E6%85%B6%E9%99%A2%20075-463-0958%20%E3%80%92616-8036%20%E4%BA%AC%E9%83%BD%E5%BA%9C%E4%BA%AC%E9%83%BD%E5%B8%82%E5%8F%B3%E4%BA%AC%E5%8C%BA%E8%8A%B1%E5%9C%92%E5%AF%BA%E3%83%8E%E4%B8%AD%E7%94%BA%EF%BC%98%E2%88%92%EF%BC%91",
+    "type": "寺",
+    "d1": "",
+    "d2": ""
+  },
+  "urlKind": "mapsApi",
+  "route": "第1段(verify-gbp.mjs)で確認済み",
+  "verdict": "一致",
+  "verdictReason": "手がかり: 店名＋電話＋住所(番地まで)。電話が一致／店名: exact(シート「長慶院」/ マップ「長慶院」)／住所(シート): exact・町名・番地とも一致",
+  "place": {
+    "name": "長慶院",
+    "address": "京都府京都市右京区花園寺ノ中町８−１",
+    "category": "仏教寺院",
+    "lat": 35.0253648,
+    "lng": 135.722441,
+    "gbpUrl": "https://maps.google.com/?cid=17021878329550286284",
+    "phone": "075-463-0958",
+    "website": "http://www.facebook.com/chokay.in.myoshinji/",
+    "hours": {
+      "月": "09:00–17:00",
+      "火": "09:00–17:00",
+      "水": "09:00–17:00",
+      "木": "09:00–17:00",
+      "金": "09:00–17:00",
+      "土": "09:00–17:00",
+      "日": "09:00–17:00"
+    },
+    "reserveLinks": [],
+    "statusSignals": [],
+    "closedSignal": false
+  },
+  "fetchedAt": "2026-11-10T08:08:58.298Z"
+}

@@ -1,0 +1,40 @@
+{
+  "tab": "トリニティアポ",
+  "tabEn": "tri-activity",
+  "row": 467,
+  "sheet": {
+    "name": "富士見つり堀",
+    "address": "",
+    "url": "https://www.google.com/maps/search/?api=1&query=%E5%AF%8C%E5%A3%AB%E8%A6%8B%E3%81%A4%E3%82%8A%E5%A0%80%20055-524-2121%20%E3%80%92403-0032%20%E5%B1%B1%E6%A2%A8%E7%9C%8C%E5%AF%8C%E5%A3%AB%E5%90%89%E7%94%B0%E5%B8%82%E4%B8%8A%E5%90%89%E7%94%B0%E6%9D%B1%EF%BC%97%E4%B8%81%E7%9B%AE%EF%BC%92%EF%BC%98%E2%88%92%EF%BC%92%EF%BC%90",
+    "type": "その他",
+    "d1": "",
+    "d2": ""
+  },
+  "urlKind": "mapsApi",
+  "route": "第1段(verify-gbp.mjs)で確認済み",
+  "verdict": "一致",
+  "verdictReason": "手がかり: 店名＋電話＋住所(番地まで)。電話が一致／店名: exact(シート「富士見つり堀」/ マップ「富士見つり堀」)／住所(シート): exact・町名・番地とも一致",
+  "place": {
+    "name": "富士見つり堀",
+    "address": "山梨県富士吉田市上吉田東７丁目２８−２０",
+    "category": "釣り堀",
+    "lat": 35.4600752,
+    "lng": 138.805805,
+    "gbpUrl": "https://maps.google.com/?cid=16897168260314626807",
+    "phone": "0555-24-2121",
+    "website": null,
+    "hours": {
+      "月": "10:00–16:30",
+      "火": "10:00–16:30",
+      "水": "10:00–16:30",
+      "木": "10:00–16:30",
+      "金": "10:00–16:30",
+      "土": "10:00–16:30",
+      "日": "10:00–16:30"
+    },
+    "reserveLinks": [],
+    "statusSignals": [],
+    "closedSignal": false
+  },
+  "fetchedAt": "2026-11-10T08:06:42.722Z"
+}

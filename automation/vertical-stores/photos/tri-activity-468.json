@@ -1,0 +1,63 @@
+{
+  "key": "tri-activity-468",
+  "images": [
+    {
+      "path": "/_portal/vshops/tri-activity-468/g03.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9S-PvWSyt2uH8u6zaj0j8YpqMeiiaW1QwxrRXUS4CcdOm0lifSq43gfYPmorWuniMxjFFRoXA3hWg8X73iJJPFFATlMnR0MXkOJ9G5hwpW-iUXlYb-X4xdgjeCqPG5hUQapOfeWl8HPKWdD=s1200",
+      "pageUrl": "https://maps.google.com/?cid=12336115527396973699",
+      "what": "白いクルーザーが海に浮かぶ外観",
+      "kind": "exterior",
+      "width": 1125,
+      "height": 605,
+      "source": "Google マップ"
+    },
+    {
+      "path": "/_portal/vshops/tri-activity-468/g04.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9TtWE5JnenOYAaEfC8X4s_kBbVYsLqUuaces-bMqmCP3GAlt1fxg1f-9PNW9F_jwJYjli8e0tWmdZc3vyswrVyZ3ktjG28xxNdkotGmsSwjmirdflqwGNSpjjt4ntqB1JBlkSuv0aIJmeIq=s1200",
+      "pageUrl": "https://maps.google.com/?cid=12336115527396973699",
+      "what": "夕日を背景に船上でテーブルを囲む参加者たち",
+      "kind": "common",
+      "width": 1200,
+      "height": 900,
+      "source": "Google マップ"
+    },
+    {
+      "path": "/_portal/vshops/tri-activity-468/g06.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9S52Xv3ohT0iykDhqk4BxXTqJ0VAKf_7t0g1usaywnscVnQD8vwsrrxYB449AATJiBu3ASgOUVzbf1KzsqNnDdVxttouo8nwWhKjRZxjSeF7KfYY3tAxTzXb0G068MOeYnZbAfuyvkNOtM=s1200",
+      "pageUrl": "https://maps.google.com/?cid=12336115527396973699",
+      "what": "釣り上げた魚を手に持つ2人の女性",
+      "width": 1200,
+      "height": 800,
+      "source": "Google マップ"
+    },
+    {
+      "path": "/_portal/vshops/tri-activity-468/g07.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9RLM1BgDuSC_Z1Mdg9NUuL_UzBz44Vc5PpoXwO1sMPUCNg_ofmbJSbb9FRnqMEeEiWkyCi-txddQA80QfSkW4h63mZknL6JIdo5-9Y7nlSle9D9dGj52Sdo4MrtYLZthuStvMZIqRklODpn=s1200",
+      "pageUrl": "https://maps.google.com/?cid=12336115527396973699",
+      "what": "ライフジャケットを着た子ども2人と大人が船上に並ぶ",
+      "kind": "common",
+      "width": 1200,
+      "height": 800,
+      "source": "Google マップ"
+    },
+    {
+      "path": "/_portal/vshops/tri-activity-468/g08.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9ROaoSDvNWKchIVoUOWxOyHRS_CzS_KkNO5bcOEspsw3V3J3gUDO3uXfDP50gH725Ika4JwPycOCLktTq1CjmEYjq3AzdxsIlYkdiAX8D_HSxSjnA2YaKhVfG3IM1dpIY3ZDs5q0LaMQhI=s1200",
+      "pageUrl": "https://maps.google.com/?cid=12336115527396973699",
+      "what": "釣り竿を持ちながら釣果の魚を掲げる女性",
+      "width": 900,
+      "height": 1200,
+      "source": "Google マップ"
+    },
+    {
+      "path": "/_portal/vshops/tri-activity-468/g09.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9Svc5c8NnW6lEhdQqjLMR6SSrRRmJHQREa0sjs__4e8Nd7antElKSbfiVozJV_WFjhYe__naGGT6QmHqedainJ1JumFHMi2iitXuayE3wPLm460Nw20pzhriQ5dK39y0R64-lGX2O-PfmTp=s1200",
+      "pageUrl": "https://maps.google.com/?cid=12336115527396973699",
+      "what": "海上で釣り竿を持ちながら釣果の魚を見せる男性",
+      "width": 900,
+      "height": 1200,
+      "source": "Google マップ"
+    }
+  ],
+  "note": "automation/v2/write.mjs が 2026-11-10T08:21:39.850Z に取得。店の実写だけ(AI 画像・汎用画像・地図・ロゴ・顔が大きい画像は除外)。"
+}

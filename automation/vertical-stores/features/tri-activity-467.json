@@ -1,0 +1,273 @@
+{
+  "key": "tri-activity-467",
+  "vertical": "activity",
+  "storeName": "富士見つり堀",
+  "article": {
+    "id": "富士見つり堀",
+    "no": "",
+    "articleType": "guide",
+    "kicker": "FUJIMI TSURIBORI FUJIYOSHIDA",
+    "title": "山梨県富士吉田市の釣り堀。ニジマス釣り・コイ釣り・つかみ取りの3体験と、釣った魚の塩焼き",
+    "titleHTML": "山梨県富士吉田市の釣り堀<br><em>富士見つり堀</em>のニジマス釣り・コイ釣り・つかみ取り体験",
+    "subtitle": "釣り堀 / 山梨県富士吉田市 / ニジマス釣り・コイ釣り・つかみ取り・塩焼き",
+    "lede": "富士見つり堀は、山梨県富士吉田市上吉田東にある釣り堀だ。ニジマス釣り・コイ釣り・ニジマスのつかみ取りの3つの体験を提供しており、釣り具はすべて店が貸し出している。チーズをエサにするニジマス釣りは50分の時間制、コイ釣りは時間無制限、つかみ取りは最大5匹まで捕獲できる体験だ。釣った魚はその場で内臓処理と塩焼きの調理を依頼でき、捕獲から食事まで一つの場所で完結する。バーベキュー施設も併設されており、グループ利用に対応している。",
+    "date": "2026-11-10",
+    "reading": "",
+    "author": "マチノワ編集部",
+    "heroImage": "/_portal/vshops/tri-activity-467/g01.jpg",
+    "ogImage": "/_portal/vshops/tri-activity-467/g01.jpg",
+    "ranking": [
+      {
+        "rank": "POINT 01",
+        "rankNum": 1,
+        "name": "ニジマス釣りとコイ釣りの体験",
+        "cuisine": "釣り体験",
+        "area": "富士吉田市",
+        "purpose": "釣りの体験内容と流れを知りたい人へ",
+        "desc": "ニジマス釣りはエサにチーズを使う。チーズはパチンコ玉より小さめに丸めて針につけるのが釣りやすく、池の中央に向けて投げて使う。ニジマス釣りは50分の時間制で行われる。コイ釣りは時間無制限で、ニジマスより大型の魚に挑戦できる。釣り竿と針を外す道具はすべて店が貸し出しているため、道具を持参する必要はない。釣りが初めての参加者でもスタッフが釣り方のコツを教えており、初心者でも体験できる内容だ。",
+        "images": [
+          "/_portal/vshops/tri-activity-467/g08.jpg"
+        ],
+        "specs": [
+          {
+            "k": "ニジマス釣り",
+            "v": "50分・チーズをエサに使用"
+          },
+          {
+            "k": "コイ釣り",
+            "v": "時間無制限"
+          }
+        ]
+      },
+      {
+        "rank": "POINT 02",
+        "rankNum": 2,
+        "name": "ニジマスのつかみ取りと塩焼き",
+        "cuisine": "つかみ取り",
+        "area": "富士吉田市",
+        "purpose": "つかみ取り体験の内容と食べ方を知りたい人へ",
+        "desc": "ニジマスのつかみ取りは最大5匹まで捕獲できる体験だ。水中の籠を使って魚を追い込む方法が効果的だ。捕獲したニジマスはその場で内臓処理と塩焼きの調理を依頼できる。内臓処理を自分で行う場合は焼き代のみの対応となる。釣り体験で釣ったニジマスも同様に塩焼きにしてもらうことができ、捕獲・調理・食事をこの施設の中で完結できる。",
+        "images": [
+          "/_portal/vshops/tri-activity-467/g06.jpg"
+        ],
+        "specs": [
+          {
+            "k": "捕獲上限",
+            "v": "最大5匹"
+          },
+          {
+            "k": "塩焼き調理",
+            "v": "内臓処理込みで依頼可。自分で処理した場合は焼き代のみ"
+          }
+        ]
+      },
+      {
+        "rank": "POINT 03",
+        "rankNum": 3,
+        "name": "バーベキュー施設の利用",
+        "cuisine": "バーベキュー",
+        "area": "富士吉田市",
+        "purpose": "グループや家族での利用方法を知りたい人へ",
+        "desc": "釣り堀に隣接してバーベキュー施設を備えており、炭火と鉄板焼きの2種類の調理方法がある。屋内と野外の両方でバーベキューを楽しめる設備があり、2名以上30名以下のグループに対応している。家族・カップル・サークルでの利用ができる。釣り体験とバーベキューを組み合わせた利用が可能で、釣り堀で捕獲した魚をバーベキューで食べることもできる。",
+        "images": [
+          "/_portal/vshops/tri-activity-467/g07.jpg"
+        ],
+        "specs": [
+          {
+            "k": "対応人数",
+            "v": "2名以上30名以下"
+          },
+          {
+            "k": "設備",
+            "v": "炭火・鉄板焼き。屋内・野外の両方に対応"
+          }
+        ]
+      }
+    ],
+    "sideArticles": [],
+    "quote": "ニジマス釣り・コイ釣り・ニジマスのつかみ取りの3つの体験ができる釣り堀。釣り道具はすべて貸し出しのため手ぶらで参加でき、釣った魚をその場で塩焼きにして食べるところまで楽しめる。バーベキュー施設も備えており、グループでの利用にも対応している。",
+    "quoteCite": "マチノワ編集部",
+    "closing": "富士急行線富士山駅からバスを利用してセメ草バス停下車後、徒歩約5分の場所にある。車の場合は中央自動車道河口湖ICから約12分で、駐車場を備えている。道の駅富士吉田のすぐそばに位置している。予約は不要だが、事前に電話で確認することが推奨されている。"
+  },
+  "summary": "富士見つり堀の情報を整理。ニジマス釣り・コイ釣り・ニジマスのつかみ取りの3体験の内容と流れ、釣った魚の塩焼き、バーベキュー施設、アクセス方法をまとめた特集。",
+  "tags": [
+    "海・川",
+    "富士吉田市"
+  ],
+  "charCount": 971,
+  "facts": [
+    {
+      "claim": "施設の住所は山梨県富士吉田市上吉田東7-28-20、電話は0555-24-2121",
+      "source": "https://maps.google.com/?cid=16897168260314626807",
+      "quote": "山梨県富士吉田市上吉田東7-28-20 / 0555-24-2121",
+      "checkedAt": "2026-11-10"
+    },
+    {
+      "claim": "ニジマス釣り・コイ釣り・ニジマスのつかみ取りの3つの体験を提供している",
+      "source": "https://www.fujiyama-navi.jp/spots/JXNs3",
+      "quote": "ニジマス・コイ釣りが楽しめ、マスのつかみ取りもあります",
+      "checkedAt": "2026-11-10"
+    },
+    {
+      "claim": "釣り具はすべて店が貸し出しており、道具を持参する必要がない",
+      "source": "https://www.fujiyama-navi.jp/spots/JXNs3",
+      "quote": "釣り具等は当店にて支度してあります",
+      "checkedAt": "2026-11-10"
+    },
+    {
+      "claim": "ニジマス釣りは50分の時間制で行われる",
+      "source": "https://chocomama.info/life/fujimi-tsuribori-in-yamanashi/",
+      "quote": "1,500円で50分間",
+      "checkedAt": "2026-11-10"
+    },
+    {
+      "claim": "コイ釣りは時間無制限で体験できる",
+      "source": "https://chocomama.info/life/fujimi-tsuribori-in-yamanashi/",
+      "quote": "2,300円で時間無制限",
+      "checkedAt": "2026-11-10"
+    },
+    {
+      "claim": "ニジマスのつかみ取りは最大5匹まで捕獲できる",
+      "source": "https://chocomama.info/life/fujimi-tsuribori-in-yamanashi/",
+      "quote": "最大5匹まで捕獲できます",
+      "checkedAt": "2026-11-10"
+    },
+    {
+      "claim": "自分で内臓処理をした場合は焼き代のみの対応となる",
+      "source": "https://ameblo.jp/momokanashizue/entry-12373386169.html",
+      "quote": "自分で処理する場合：焼き代のみ50円",
+      "checkedAt": "2026-11-10"
+    },
+    {
+      "claim": "バーベキュー施設を併設しており、炭火と鉄板焼きの両方に対応している",
+      "source": "https://www.fujiyama-navi.jp/spots/JXNs3",
+      "quote": "バーベキューは炭火と鉄板焼きでボリュームたっぷり",
+      "checkedAt": "2026-11-10"
+    },
+    {
+      "claim": "バーベキューは屋内・野外の両方で利用できる",
+      "source": "https://www.fujiyama-navi.jp/spots/JXNs3",
+      "quote": "屋内・野外でバーベキューが楽しめます",
+      "checkedAt": "2026-11-10"
+    },
+    {
+      "claim": "バーベキュー施設の対応人数は2名以上30名以下",
+      "source": "https://chocomama.info/life/fujimi-tsuribori-in-yamanashi/",
+      "quote": "2人以上30人まで",
+      "checkedAt": "2026-11-10"
+    },
+    {
+      "claim": "道の駅富士吉田のすぐ近くに位置している",
+      "source": "https://resort-estate.com/info/931/",
+      "quote": "道の駅富士吉田 すぐ近くで気軽にニジマス釣り『富士見釣り堀』",
+      "checkedAt": "2026-11-10"
+    },
+    {
+      "claim": "チーズはパチンコ玉より小さめに丸めて使うのがニジマス釣りのコツ",
+      "source": "https://chocomama.info/life/fujimi-tsuribori-in-yamanashi/",
+      "quote": "チーズ餌は「パチンコ玉より小さめ」に丸めるのがコツ",
+      "checkedAt": "2026-11-10"
+    },
+    {
+      "claim": "予約は不要だが事前に電話で確認することが推奨されている",
+      "source": "https://chocomama.info/life/fujimi-tsuribori-in-yamanashi/",
+      "quote": "予約：不要（ただし事前電話推奨）",
+      "checkedAt": "2026-11-10"
+    },
+    {
+      "claim": "釣り経験のない初心者でも釣り方のコツをスタッフが教えてくれる",
+      "source": "https://www.jalan.net/kankou/spt_guide000000192013/kuchikomi/",
+      "quote": "釣り方やコツを教えてくださるので初心者にも心強く",
+      "checkedAt": "2026-11-10"
+    }
+  ],
+  "images": [
+    {
+      "path": "/_portal/vshops/tri-activity-467/g01.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9TGJZRE1fVQSRL8ubLbyIfRIRRCQshxjqiEv0rSOdZOgnOiGV6p42mTN3iTIvJQ0Cq6jwDyEQizcwJxrufZ94rom6cePjtGhz5Cfwx63Nuul5WnkKz1zgkm4_YDPOmK5tEvGytYHA=s1200",
+      "pageUrl": "https://maps.google.com/?cid=16897168260314626807",
+      "what": "緑に囲まれた広い釣り池の全景"
+    },
+    {
+      "path": "/_portal/vshops/tri-activity-467/g02.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9T6OBFXSuPNGJVnk_DEZdzD37lLdkRqMRHZLfAfOXpnIVJCLUOkb0qGYBzbKKH4QXzLTSS_RZu7EkLupLpaABtfAoyEnVYqzHSDY1SQOeIyiuuZxDLWKHo3VsDptx6yJUlaeuS7xLraczMz=s1200",
+      "pageUrl": "https://maps.google.com/?cid=16897168260314626807",
+      "what": "釣り池と周囲の建物を写した全景"
+    },
+    {
+      "path": "/_portal/vshops/tri-activity-467/g03.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9Rf5SmTJsb5pBeGLu5HlLiHSEpJiYl5PQbCPJvJtVfOwFz8frykjnzZN4dGqxJj1RKj-BNXPrHDH1hFJ_BDy5KVnu3UX5qeMmRsCGM-UZMmeLXQuhlX_BqhxfzK4GE0dIEhjX9C_OXuZm8=s1200",
+      "pageUrl": "https://maps.google.com/?cid=16897168260314626807",
+      "what": "富士山を背景にした釣り池の全景"
+    },
+    {
+      "path": "/_portal/vshops/tri-activity-467/g04.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9TnueSYUqiQjTkcqO8XwBzE9qZ1U1Rk8JMMAeGw1JIC4mx5mQTIRYTgYleYUeRbDGYLCnLpVaUNwIpEcnLINjQvVHcbNjQah94TdW_oAJYqNkoyc5LFmIr5mCShT2McWm-qvmEk=s1200",
+      "pageUrl": "https://maps.google.com/?cid=16897168260314626807",
+      "what": "皿に乗せられた塩焼きのニジマス"
+    },
+    {
+      "path": "/_portal/vshops/tri-activity-467/g05.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9SSr6T42BfeTG11F2n00MlB_TcNvY34zE6mEYkrfWxULUt4DnjiqlINwG67hEqfHaykztSSC6bi6evyWOoQ8PqIxAw8HPCNFhYZqkZcvpXTeDkPMwVXPoLjlxS1RbdKUrmcRtz6=s1200",
+      "pageUrl": "https://maps.google.com/?cid=16897168260314626807",
+      "what": "金属の台に並べられた大きなニジマス2匹"
+    },
+    {
+      "path": "/_portal/vshops/tri-activity-467/g06.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9SMn95d1fXT5rpPVyb6G8xuVTgsHs0oX1a68ub-Y35ghY4zkmTB5dbQxed5jLuR6THo-hlC2iXsseFkYQH6iKE5nPoc_249m_vinT-M-VMcodfOuqULEtvfRqrj6ng_1T1pqImKa1OJ1xLD=s1200",
+      "pageUrl": "https://maps.google.com/?cid=16897168260314626807",
+      "what": "子供がニジマスのつかみ取りをしている様子"
+    },
+    {
+      "path": "/_portal/vshops/tri-activity-467/g07.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9TSKGymwhqtSJJBiaUNSPhtbOb_3mWWYjA90nbh8z9rpy6-IU_Q22t3v9DPNDT4d253OqqtPFr0jFoXBjlJ51e1vmgBBoPoMZq5Be6aqe5gGalNHqWMhkhwxPTcOrbgm1uuRB5mPQ=s1200",
+      "pageUrl": "https://maps.google.com/?cid=16897168260314626807",
+      "what": "竿が並ぶ釣り池の水面"
+    },
+    {
+      "path": "/_portal/vshops/tri-activity-467/g08.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9RmwSjrZzTyR74_591KoY19EztsB6ZXnhJwe3cV0RGzkmLJK9EXWjhfjG35obWwoiz0II0hts61FeJwoMDi1KcwLtNIK5s6C9RK0ANDfcUUFzKchtEGBoava3PSXBUHCzENir73--8q0IOU=s1200",
+      "pageUrl": "https://maps.google.com/?cid=16897168260314626807",
+      "what": "釣り竿が水面に向かって伸びる釣りの様子"
+    },
+    {
+      "path": "/_portal/vshops/tri-activity-467/g09.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9S1PQtvBFA8ZKvMBSDu4-5R1YVv4nMI1cnJutKLIywBWEhIjaVoxSieHzvwZcsc7G2DdKtQKjqrOmPqefeRL9PP2R-Qp6Bul-FosGaKd86iolVkseiQgtSOaBqAF13EpVrBnfkwjjbaBQVa=s1200",
+      "pageUrl": "https://maps.google.com/?cid=16897168260314626807",
+      "what": "子供がかごに魚を入れて運ぶ様子"
+    },
+    {
+      "path": "/_portal/vshops/tri-activity-467/g10.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9RJW_FVCScQSqYg1bY8ZNNdoO9Bgn7l5UfAV2aZ9SZRM6Ne3FSLRyuDlCyLt0cs17B30Vpzy86iqmGoknumLwzvrfCTdGYe6qpDsKRHXkCJ_qQcONikOBcVFeXatNS1H-q_8j0=s1200",
+      "pageUrl": "https://maps.google.com/?cid=16897168260314626807",
+      "what": "「富士見つり堀」と書かれた看板"
+    }
+  ],
+  "sources": [
+    {
+      "label": "富士吉田市観光ガイド",
+      "url": "https://fujiyoshida.net/spot/41"
+    },
+    {
+      "label": "フジヤマNAVI",
+      "url": "https://www.fujiyama-navi.jp/spots/JXNs3"
+    },
+    {
+      "label": "じゃらんnet",
+      "url": "https://www.jalan.net/kankou/spt_guide000000192013/"
+    },
+    {
+      "label": "ちょこままチャンネル",
+      "url": "https://chocomama.info/life/fujimi-tsuribori-in-yamanashi/"
+    },
+    {
+      "label": "アメブロ（訪問ブログ）",
+      "url": "https://ameblo.jp/momokanashizue/entry-12373386169.html"
+    },
+    {
+      "label": "Google マップ",
+      "url": "https://maps.google.com/?cid=16897168260314626807"
+    }
+  ],
+  "notes": "automation/v2/write.mjs が 2026-11-10 に作成。"
+}

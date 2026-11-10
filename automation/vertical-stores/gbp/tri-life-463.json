@@ -1,0 +1,40 @@
+{
+  "tab": "トリニティアポ",
+  "tabEn": "tri-life",
+  "row": 463,
+  "sheet": {
+    "name": "大和温泉",
+    "address": "",
+    "url": "https://www.google.com/maps/search/?api=1&query=%E5%A4%A7%E5%92%8C%E6%B8%A9%E6%B3%89%20076-251-4343%20%E3%80%92920-0831%20%E7%9F%B3%E5%B7%9D%E7%9C%8C%E9%87%91%E6%B2%A2%E5%B8%82%E6%9D%B1%E5%B1%B1%EF%BC%93%E4%B8%81%E7%9B%AE%EF%BC%92%EF%BC%95%E2%88%92%EF%BC%91%EF%BC%97%20%E6%9D%91%E4%B8%8A%E3%83%93%E3%83%AB",
+    "type": "温泉",
+    "d1": "",
+    "d2": ""
+  },
+  "urlKind": "mapsApi",
+  "route": "第1段(verify-gbp.mjs)で確認済み",
+  "verdict": "一致",
+  "verdictReason": "手がかり: 店名＋電話＋住所(番地まで)。電話が一致／店名: exact(シート「大和温泉」/ マップ「大和温泉」)／住所(シート): exact・町名・番地とも一致",
+  "place": {
+    "name": "大和温泉",
+    "address": "石川県金沢市東山３丁目２５−１７ 村上ビル",
+    "category": "銭湯",
+    "lat": 36.576535,
+    "lng": 136.664879,
+    "gbpUrl": "https://maps.google.com/?cid=7889003866529039165",
+    "phone": "076-251-4343",
+    "website": "https://ishikawa1010.com/bath/14/",
+    "hours": {
+      "月": "14:00–23:00",
+      "火": "14:00–23:00",
+      "水": "14:00–23:00",
+      "木": "14:00–23:00",
+      "金": "定休日",
+      "土": "14:00–23:00",
+      "日": "14:00–23:00"
+    },
+    "reserveLinks": [],
+    "statusSignals": [],
+    "closedSignal": false
+  },
+  "fetchedAt": "2026-11-10T08:05:16.220Z"
+}

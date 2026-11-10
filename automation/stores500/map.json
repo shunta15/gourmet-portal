@@ -2373,5 +2373,20 @@
     "articleId": "ブーランジェD316CASA",
     "sheetName": "ブーランジェ　D316CASA",
     "mapsUrl": "https://maps.google.com/?cid=15869847023283649406"
+  },
+  {
+    "articleId": "沖縄酒場すけまる",
+    "sheetName": "沖縄酒場 すけまる",
+    "mapsUrl": "https://maps.google.com/?cid=799226154152444302"
+  },
+  {
+    "articleId": "原始焼き酒場さくら井",
+    "sheetName": "原始焼き酒場 さくら井",
+    "mapsUrl": "https://maps.google.com/?cid=16940815734010254779"
+  },
+  {
+    "articleId": "へんじんもっこ（ソーセージ・サラミ製造直売所）",
+    "sheetName": "へんじんもっこ（ソーセージ・サラミ製造直売所）",
+    "mapsUrl": "https://maps.google.com/?cid=12309172820005016148"
   }
 ]

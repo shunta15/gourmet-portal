@@ -3684,5 +3684,29 @@
     "warnings": [
       "cuisine は GBPカテゴリ"
     ]
+  },
+  "r915": {
+    "articleId": "沖縄酒場すけまる",
+    "name": "沖縄酒場 すけまる",
+    "warnings": [
+      "desc は lede から事実の文を選べず、事実から作った定型文",
+      "cuisine は GBPカテゴリ"
+    ]
+  },
+  "r916": {
+    "articleId": "原始焼き酒場さくら井",
+    "name": "原始焼き酒場 さくら井",
+    "warnings": [
+      "desc は lede から事実の文を選べず、事実から作った定型文",
+      "cuisine は GBPカテゴリ"
+    ]
+  },
+  "r917": {
+    "articleId": "へんじんもっこ（ソーセージ・サラミ製造直売所）",
+    "name": "へんじんもっこ（ソーセージ・サラミ製造直売所）",
+    "warnings": [
+      "desc は lede から事実の文を選べず、事実から作った定型文",
+      "cuisine は GBPカテゴリ"
+    ]
   }
 }

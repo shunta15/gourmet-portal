@@ -1,0 +1,159 @@
+{
+  "key": "tri-activity-467",
+  "headline": "山梨県富士吉田市上吉田東にある釣り堀。ニジマス釣り・コイ釣り・ニジマスのつかみ取り体験ができ、釣った魚をその場で塩焼きにして食べられる",
+  "lede": "富士吉田市にある「富士見つり堀」です。ニジマス釣り・コイ釣り・ニジマスのつかみ取りの3つの体験を用意しており、釣り具はすべて店が貸し出しています。釣ったニジマスやコイはその場で内臓処理と塩焼きの調理を依頼でき、手ぶらで訪れて魚を食べるまで楽しめます。バーベキュー施設も併設されており、グループ利用にも対応しています。道の駅富士吉田のすぐそばに位置し、富士山を背景に緑に囲まれた釣り池で体験できます。",
+  "sections": [
+    {
+      "heading": "体験の内容と流れ",
+      "body": "ニジマス釣りは50分の時間制で、エサはチーズを使います。チーズはパチンコ玉より小さめに丸めて針につけるのが釣りやすく、池の中央に向けて投げます。コイ釣りは時間無制限で、ニジマスより大型の魚に挑戦できます。ニジマスのつかみ取りは最大5匹まで捕獲でき、水中の籠を使って追い込む方法で体験します。いずれの体験も釣り竿や道具は店が用意しており、釣り経験のない初心者にはスタッフが釣り方のコツを教えます。"
+    },
+    {
+      "heading": "対象",
+      "body": "ニジマス釣り・コイ釣り・ニジマスのつかみ取りのいずれも、子供から大人まで体験できます。釣り道具はすべて貸し出しのため、釣り初心者や道具を持っていない方も参加できます。バーベキュー施設の利用は2名以上30名以下で受け付けており、家族・グループ・サークルでの利用に対応しています。"
+    },
+    {
+      "heading": "集合場所と行き方",
+      "body": "富士急行線富士山駅からバス利用でセメ草バス停下車後、徒歩約5分の場所にあります。車の場合は中央自動車道河口湖ICから約12分です。道の駅富士吉田のすぐ近くに位置しており、駐車場を備えています。予約は不要ですが、事前に電話で確認することが推奨されています。"
+    }
+  ],
+  "menus": [
+    {
+      "name": "ニジマス釣り"
+    },
+    {
+      "name": "コイ釣り"
+    },
+    {
+      "name": "ニジマスのつかみ取り"
+    },
+    {
+      "name": "塩焼き"
+    },
+    {
+      "name": "バーベキュー"
+    }
+  ],
+  "tags": [
+    {
+      "tag": "初心者歓迎",
+      "factIndex": 13
+    },
+    {
+      "tag": "手ぶらでOK",
+      "factIndex": 2
+    }
+  ],
+  "facts": [
+    {
+      "claim": "施設の住所は山梨県富士吉田市上吉田東7-28-20、電話は0555-24-2121",
+      "source": "https://maps.google.com/?cid=16897168260314626807",
+      "quote": "山梨県富士吉田市上吉田東7-28-20 / 0555-24-2121",
+      "checkedAt": "2026-11-10"
+    },
+    {
+      "claim": "ニジマス釣り・コイ釣り・ニジマスのつかみ取りの3つの体験を提供している",
+      "source": "https://www.fujiyama-navi.jp/spots/JXNs3",
+      "quote": "ニジマス・コイ釣りが楽しめ、マスのつかみ取りもあります",
+      "checkedAt": "2026-11-10"
+    },
+    {
+      "claim": "釣り具はすべて店が貸し出しており、道具を持参する必要がない",
+      "source": "https://www.fujiyama-navi.jp/spots/JXNs3",
+      "quote": "釣り具等は当店にて支度してあります",
+      "checkedAt": "2026-11-10"
+    },
+    {
+      "claim": "ニジマス釣りは50分の時間制で行われる",
+      "source": "https://chocomama.info/life/fujimi-tsuribori-in-yamanashi/",
+      "quote": "1,500円で50分間",
+      "checkedAt": "2026-11-10"
+    },
+    {
+      "claim": "コイ釣りは時間無制限で体験できる",
+      "source": "https://chocomama.info/life/fujimi-tsuribori-in-yamanashi/",
+      "quote": "2,300円で時間無制限",
+      "checkedAt": "2026-11-10"
+    },
+    {
+      "claim": "ニジマスのつかみ取りは最大5匹まで捕獲できる",
+      "source": "https://chocomama.info/life/fujimi-tsuribori-in-yamanashi/",
+      "quote": "最大5匹まで捕獲できます",
+      "checkedAt": "2026-11-10"
+    },
+    {
+      "claim": "自分で内臓処理をした場合は焼き代のみの対応となる",
+      "source": "https://ameblo.jp/momokanashizue/entry-12373386169.html",
+      "quote": "自分で処理する場合：焼き代のみ50円",
+      "checkedAt": "2026-11-10"
+    },
+    {
+      "claim": "バーベキュー施設を併設しており、炭火と鉄板焼きの両方に対応している",
+      "source": "https://www.fujiyama-navi.jp/spots/JXNs3",
+      "quote": "バーベキューは炭火と鉄板焼きでボリュームたっぷり",
+      "checkedAt": "2026-11-10"
+    },
+    {
+      "claim": "バーベキューは屋内・野外の両方で利用できる",
+      "source": "https://www.fujiyama-navi.jp/spots/JXNs3",
+      "quote": "屋内・野外でバーベキューが楽しめます",
+      "checkedAt": "2026-11-10"
+    },
+    {
+      "claim": "バーベキュー施設の対応人数は2名以上30名以下",
+      "source": "https://chocomama.info/life/fujimi-tsuribori-in-yamanashi/",
+      "quote": "2人以上30人まで",
+      "checkedAt": "2026-11-10"
+    },
+    {
+      "claim": "道の駅富士吉田のすぐ近くに位置している",
+      "source": "https://resort-estate.com/info/931/",
+      "quote": "道の駅富士吉田 すぐ近くで気軽にニジマス釣り『富士見釣り堀』",
+      "checkedAt": "2026-11-10"
+    },
+    {
+      "claim": "チーズはパチンコ玉より小さめに丸めて使うのがニジマス釣りのコツ",
+      "source": "https://chocomama.info/life/fujimi-tsuribori-in-yamanashi/",
+      "quote": "チーズ餌は「パチンコ玉より小さめ」に丸めるのがコツ",
+      "checkedAt": "2026-11-10"
+    },
+    {
+      "claim": "予約は不要だが事前に電話で確認することが推奨されている",
+      "source": "https://chocomama.info/life/fujimi-tsuribori-in-yamanashi/",
+      "quote": "予約：不要（ただし事前電話推奨）",
+      "checkedAt": "2026-11-10"
+    },
+    {
+      "claim": "釣り経験のない初心者でも釣り方のコツをスタッフが教えてくれる",
+      "source": "https://www.jalan.net/kankou/spt_guide000000192013/kuchikomi/",
+      "quote": "釣り方やコツを教えてくださるので初心者にも心強く",
+      "checkedAt": "2026-11-10"
+    }
+  ],
+  "sources": [
+    {
+      "label": "富士吉田市観光ガイド",
+      "url": "https://fujiyoshida.net/spot/41"
+    },
+    {
+      "label": "フジヤマNAVI",
+      "url": "https://www.fujiyama-navi.jp/spots/JXNs3"
+    },
+    {
+      "label": "じゃらんnet",
+      "url": "https://www.jalan.net/kankou/spt_guide000000192013/"
+    },
+    {
+      "label": "ちょこままチャンネル",
+      "url": "https://chocomama.info/life/fujimi-tsuribori-in-yamanashi/"
+    },
+    {
+      "label": "アメブロ（訪問ブログ）",
+      "url": "https://ameblo.jp/momokanashizue/entry-12373386169.html"
+    },
+    {
+      "label": "Google マップ",
+      "url": "https://maps.google.com/?cid=16897168260314626807"
+    }
+  ],
+  "notes": "automation/v2/write.mjs が 2026-11-10 に claude -p --model sonnet で作成。事実の裏取り: 14/20 件(quote が出どころの内容に合うもの。言い換え可)。裏取りに通らなかった facts は載せていない。"
+}

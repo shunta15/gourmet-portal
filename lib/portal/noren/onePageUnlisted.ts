@@ -182,6 +182,9 @@ export const ONE_PAGE_UNLISTED_SHOP_OF_FEATURE: Readonly<Record<string, string>>
   "手打ちうどん次男坊亭": "r912", // 手打ちうどん次男坊亭
   "まぐろ節中華そば温知": "r913", // まぐろ節中華そば 温知
   "ブーランジェD316CASA": "r914", // ブーランジェ D316 CASA
+  "沖縄酒場すけまる": "r915", // 沖縄酒場 すけまる
+  "原始焼き酒場さくら井": "r916", // 原始焼き酒場 さくら井
+  "へんじんもっこ（ソーセージ・サラミ製造直売所）": "r917", // へんじんもっこ（ソーセージ・サラミ製造直売所）
 };
 
 const NFC = (s: string) => s.normalize("NFC");

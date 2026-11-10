@@ -1,0 +1,22 @@
+{
+  "name": "沖縄酒場 すけまる",
+  "address": "神奈川県横浜市戸塚区品濃町５３８−９ 1F",
+  "lat": 35.4315316,
+  "lng": 139.5576083,
+  "category": "居酒屋",
+  "hours": {
+    "月": "17:00–23:00",
+    "火": "17:00–23:00",
+    "水": "定休日",
+    "木": "17:00–23:00",
+    "金": "17:00–23:00",
+    "土": "17:00–23:00",
+    "日": "17:00–23:00"
+  },
+  "phone": "045-443-9992",
+  "website": "https://www.youtube.com/@okinawan_cuisine_sukemaru/featured",
+  "priceRange": null,
+  "status": null,
+  "gbpUrl": "https://maps.google.com/?cid=799226154152444302",
+  "fetchedAt": "2026-11-10T08:04:48.425Z"
+}

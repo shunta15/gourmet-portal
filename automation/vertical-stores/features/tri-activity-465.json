@@ -1,0 +1,329 @@
+{
+  "key": "tri-activity-465",
+  "vertical": "activity",
+  "storeName": "釣堀センター 菊水",
+  "article": {
+    "id": "釣堀センター菊水",
+    "no": "",
+    "articleType": "guide",
+    "kicker": "TSURI-BORI CENTER KIKUSUI IWADE",
+    "title": "和歌山県岩出市の、へらぶな専門管理釣り場。ハチミツ景品と季節大会、網池・めだかコーナーの使い方",
+    "titleHTML": "和歌山県岩出市のへらぶな専門管理釣り場<br><em>釣堀センター 菊水</em>のハチミツ景品と季節大会、体験の流れ",
+    "subtitle": "釣り堀 / 和歌山県岩出市 / ヘラブナ釣り・網池・めだかすくい",
+    "lede": "釣堀センター 菊水は、和歌山県岩出市にあるヘラブナ専門の管理釣り場だ。谷間を堰き止めて作られた池に、山々の湧き水が注がれており、平均水深4メートルと深い。放流されるヘラブナのほとんどが30センチ以上で、最大50センチを超える大型も入っている。桟橋が大きく架けられており、約100人が同時に釣りを楽しめる規模を持つ。毎日開催のハチミツカップや定期大会があり、ベテランからファミリーまで幅広い層が訪れる釣り場だ。",
+    "date": "2026-11-10",
+    "reading": "",
+    "author": "マチノワ編集部",
+    "heroImage": "/_portal/vshops/tri-activity-465/g01.jpg",
+    "ogImage": "/_portal/vshops/tri-activity-465/g01.jpg",
+    "ranking": [
+      {
+        "rank": "POINT 01",
+        "rankNum": 1,
+        "name": "ヘラブナ釣りのルールとタックル",
+        "cuisine": "へらぶな釣り",
+        "area": "岩出市",
+        "purpose": "釣り方やルールを事前に知りたい人へ",
+        "desc": "竿は7尺以上が使用ルールとなっている。タナ（狙う深さ）は自由に設定できるため、浅いダナから底釣りまで対応できる。えさは生き餌以外であれば自由で、一発・角麩は禁止となっている。例会以外ではフラシの使用も禁止だ。池は谷間を堰き止めて作られた管理池で、平均水深は4メートル。桟橋は池全体に大きく架けられており、約100人が同時に釣りを楽しめる規模がある。放流されるヘラブナのほとんどが30センチ以上で、最大50センチを超える大型も入っている。大型狙いのベテランが遠方からも訪れる釣り場だ。",
+        "images": [
+          "/_portal/vshops/tri-activity-465/g08.jpg"
+        ],
+        "specs": [
+          {
+            "k": "竿規定",
+            "v": "7尺から"
+          },
+          {
+            "k": "えさ規定",
+            "v": "生き餌以外自由。一発・角麩禁止"
+          }
+        ]
+      },
+      {
+        "rank": "POINT 02",
+        "rankNum": 2,
+        "name": "毎日開催のハチミツカップと季節大会",
+        "cuisine": "景品・大会",
+        "area": "岩出市",
+        "purpose": "景品システムや大会の仕組みを知りたい人へ",
+        "desc": "毎日開催のハチミツカップでは、41センチ以上のへらぶなを釣り上げると梅田養蜂場のはちみつが景品として贈られる。41センチ以上で百花蜜100グラム、46センチ以上でみかん蜜200グラムが対象だ。女性・小学生以下は40センチでハチミツゲットの対象となる。さらに、20名以上の来場で釣寸大会が開催される。菊水主催の定期大会として第3日曜日の長寸大会もある。年間を通じてハニーフェスティバルが複数回開催される。",
+        "images": [
+          "/_portal/vshops/tri-activity-465/g02.jpg"
+        ],
+        "specs": [
+          {
+            "k": "はちみつ対象",
+            "v": "41cm以上（女性・小学生以下は40cm）"
+          },
+          {
+            "k": "大会開催条件",
+            "v": "20名以上来場で自動開催"
+          }
+        ]
+      },
+      {
+        "rank": "POINT 03",
+        "rankNum": 3,
+        "name": "初心者・ファミリー向けの網池とめだかコーナー",
+        "cuisine": "初心者体験",
+        "area": "岩出市",
+        "purpose": "子供や初心者でも楽しめるか知りたい人へ",
+        "desc": "冬季限定の網池釣りは初心者・お子様連れ・カップルを歓迎するコーナーだ。貸し竿とえさが付いており、道具を持参しなくても参加できる。41センチ以上を釣り上げるとハチミツが贈られ、菊水主催の大会への参加もできる。めだかすくいのコーナーも設けられており、小さなお子様も楽しめる。子供用の貸し竿もあり、ファミリーでの来場に対応している。中学生以下と女性は専用の区分での参加が用意されている。施設にはトイレ（洋式・和式・ウォシュレット・女性専用）が完備されている。",
+        "images": [
+          "/_portal/vshops/tri-activity-465/g05.jpg"
+        ],
+        "specs": [
+          {
+            "k": "網池釣り",
+            "v": "冬季限定・貸し竿えさ付き"
+          },
+          {
+            "k": "対象",
+            "v": "初心者・お子様連れ・カップル大歓迎"
+          }
+        ]
+      }
+    ],
+    "sideArticles": [],
+    "quote": "ヘラブナ専門の管理釣り場で、平均水深4メートルの池には30センチ超の大型が多い。毎日のハチミツ景品や定期大会があり、冬季限定の網池釣りやめだかすくいでファミリーも楽しめる。",
+    "quoteCite": "マチノワ編集部",
+    "closing": "京奈和道路の岩出根来インターチェンジから車で5分の立地で、大阪方面・奈良方面からアクセスしやすい。駐車場を完備している。予約・問い合わせは電話で受け付けており、放流・釣果情報を随時更新している。来場前に最新の放流情報や大会予定を確認してから訪れるとよい。"
+  },
+  "summary": "釣堀センター菊水の情報を整理。ヘラブナ釣りのルールとタックル設定、毎日のハチミツ景品システム、季節大会の仕組み、初心者向けの網池・めだかコーナーと、岩出根来ICからのアクセスをまとめた特集。",
+  "tags": [
+    "海・川",
+    "岩出市"
+  ],
+  "charCount": 1084,
+  "facts": [
+    {
+      "claim": "谷間を堰き止めて作られた池を利用した管理池である",
+      "source": "https://koi3849.wixsite.com/kikusui",
+      "quote": "谷間を堰き止めて作られた池を利用した管理池です",
+      "checkedAt": "2026-11-10"
+    },
+    {
+      "claim": "山々が育んだ酸素たっぷりの湧き水が池に注がれており水位も安定している",
+      "source": "https://koi3849.wixsite.com/kikusui",
+      "quote": "山々が育んだ酸素たっぷりの湧き水が池に注がれており水位も安定し",
+      "checkedAt": "2026-11-10"
+    },
+    {
+      "claim": "池の平均水深は4メートルと深い",
+      "source": "https://koi3849.wixsite.com/kikusui",
+      "quote": "平均水深4ｍと深いのが特徴です",
+      "checkedAt": "2026-11-10"
+    },
+    {
+      "claim": "大阪方面・奈良方面からアクセスしやすい立地条件にある",
+      "source": "https://koi3849.wixsite.com/kikusui",
+      "quote": "大阪方面、奈良方面からもアクセスし易い立地条件",
+      "checkedAt": "2026-11-10"
+    },
+    {
+      "claim": "へらぶなを対象とした管理釣り場である",
+      "source": "https://koi3849.wixsite.com/kikusui",
+      "quote": "へらぶなを対象とした 管理釣り場 『釣堀センター 菊水』 です",
+      "checkedAt": "2026-11-10"
+    },
+    {
+      "claim": "釣果として50.0センチが記録されている",
+      "source": "https://koi3849.wixsite.com/kikusui",
+      "quote": "釣果 50.0cm",
+      "checkedAt": "2026-11-10"
+    },
+    {
+      "claim": "景品として梅田養蜂場のはちみつが使われている",
+      "source": "https://koi3849.wixsite.com/kikusui",
+      "quote": "景品にもなっている梅田養蜂場のはちみつ",
+      "checkedAt": "2026-11-10"
+    },
+    {
+      "claim": "施設にはお弁当の用意ができる（午前10時までの受付・要事前連絡または当日受付時予約）",
+      "source": "https://koi3849.wixsite.com/kikusui/blank-c1nm0",
+      "quote": "お弁当のご用意できます。午前10時までの受付でお願いします",
+      "checkedAt": "2026-11-10"
+    },
+    {
+      "claim": "京奈和道路の岩出根来インターチェンジから車で5分",
+      "source": "https://koi3849.wixsite.com/kikusui/contact",
+      "quote": "京奈和道路 岩出根来ICより車で5分",
+      "checkedAt": "2026-11-10"
+    },
+    {
+      "claim": "予約・問い合わせは電話で受け付けている（担当：梅田）",
+      "source": "https://koi3849.wixsite.com/kikusui/contact",
+      "quote": "ご予約・お問合せはお電話にてお気軽にお問合せ下さい",
+      "checkedAt": "2026-11-10"
+    },
+    {
+      "claim": "子供用の貸し竿があり、ファミリーでの来場を歓迎している",
+      "source": "https://koi3849.wixsite.com/kikusui/blank-cx3a",
+      "quote": "子供用の貸し竿も始めました。ご家族を連れての釣りも大歓迎です",
+      "checkedAt": "2026-11-10"
+    },
+    {
+      "claim": "冬季限定の網池釣りは貸し竿えさ付きで初心者・お子様連れ・カップルを歓迎している",
+      "source": "https://koi3849.wixsite.com/kikusui/blank-cx3a",
+      "quote": "冬季限定ハチミツゲットのチャンスあり！初心者向け網池釣り！ お子様連れ・カップル・初心者大歓迎",
+      "checkedAt": "2026-11-10"
+    },
+    {
+      "claim": "竿の規定は7尺以上。えさは生き餌以外自由で一発・角麩は禁止",
+      "source": "https://koi3849.wixsite.com/kikusui/blank-cx3a",
+      "quote": "【竿規定】: 7尺から 【えさ規定】: 生き餌以外自由、一発・角麩禁止",
+      "checkedAt": "2026-11-10"
+    },
+    {
+      "claim": "例会以外ではフラシの使用が禁止されている",
+      "source": "https://koi3849.wixsite.com/kikusui/blank-cx3a",
+      "quote": "【その他】: 例会以外フラシ禁止",
+      "checkedAt": "2026-11-10"
+    },
+    {
+      "claim": "20名以上の来場で釣寸大会が開催され、1位から3位まで賞品がある（60名以上で1位から5位まで）",
+      "source": "https://koi3849.wixsite.com/kikusui/blank-cx3a",
+      "quote": "20名以上の来場の時点から大会開催 1～3位まで賞品（60名以上で1～5位まで賞品）",
+      "checkedAt": "2026-11-10"
+    },
+    {
+      "claim": "毎日41センチ以上のへらぶなを釣ると百花蜜100グラム、46センチ以上でみかん蜜200グラムが贈られる",
+      "source": "https://koi3849.wixsite.com/kikusui/blank-c1dfn",
+      "quote": "■41.0cm～ 百花蜜100g ■46.0cm～ みかん蜜200g",
+      "checkedAt": "2026-11-10"
+    },
+    {
+      "claim": "池全体に大きな桟橋が架けられており約100人の釣り人が同時に楽しめる",
+      "source": "https://tsurinews.jp/74572/",
+      "quote": "山に囲まれた水質のいいこの池は、大きな桟橋が架けられており、100人近くの釣り人が楽しむ事ができる",
+      "checkedAt": "2026-11-10"
+    },
+    {
+      "claim": "放流されるへらぶなのほとんどが30センチ以上で、最大50センチを超える大型も入っている",
+      "source": "https://tsurinews.jp/74572/",
+      "quote": "特に放流されるヘラブナは大型が多く、ほとんどが30cm以上で、最大では50cm超も入っているとのこと",
+      "checkedAt": "2026-11-10"
+    },
+    {
+      "claim": "女性・小学生以下は40センチでハチミツゲットの対象となる",
+      "source": "https://koi3849.wixsite.com/kikusui/blank-cx3a",
+      "quote": "女性・小学生以下は40cmでハチミツゲット！",
+      "checkedAt": "2026-11-10"
+    },
+    {
+      "claim": "ファミリー向けのレンタル道具が完備されている",
+      "source": "https://koi3849.wixsite.com/kikusui/blank-cx3a",
+      "quote": "ファミリー向けのレンタル道具も完備させて頂いております",
+      "checkedAt": "2026-11-10"
+    },
+    {
+      "claim": "第3日曜日に長寸大会を開催している",
+      "source": "https://koi3849.wixsite.com/kikusui/blank-cx3a",
+      "quote": "第3日曜日長寸大会",
+      "checkedAt": "2026-11-10"
+    },
+    {
+      "claim": "ハニーフェスティバルが年間複数回開催される",
+      "source": "https://koi3849.wixsite.com/kikusui/blank-c1dfn",
+      "quote": "年間 ハニーフェスティバル(1回～4回)激戦中！",
+      "checkedAt": "2026-11-10"
+    }
+  ],
+  "images": [
+    {
+      "path": "/_portal/vshops/tri-activity-465/g01.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9SIAjuvB6sPs_ra8lBxnTplADczXFkiU_xaQm-hJG4oToa5SQCc5DF0kz4KTw6UmliNe4yiZCAW4GR1cqEoTTr2RRpXlBf4jAcmaWi2UcshBgtZY7sWCk53ZIhsRziCNHSXQW9fOQ=s1200",
+      "pageUrl": "https://maps.google.com/?cid=13925675520298152126",
+      "what": "山に囲まれた管理池と長い桟橋の全景"
+    },
+    {
+      "path": "/_portal/vshops/tri-activity-465/g02.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9QziFYwrQuogWAm8mAFRlFdyy4UigBaEhUyFEbU7PgydluKxJg-Tr9StnH9Nj9a0Bmu3FspaM5buRMxR-p_cqoB5kIl05s2gEp1hy60-lb8wM_STQpaxpWStiDxq2mejnCNuNpw=s1200",
+      "pageUrl": "https://maps.google.com/?cid=13925675520298152126",
+      "what": "玉網に収まったへらぶな"
+    },
+    {
+      "path": "/_portal/vshops/tri-activity-465/g03.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9QG4Um5JRDdhbWW1VwliBxtAXBXao2t1kTtrabNu3ic_Dca5LQmwUGGXPYgwrBGHY1xzcOR9BQCJrLdk4db7Vfq-qnV1uKC_4pEi8Y95FKWUGllPKLkKjM6ty3ro41Ny6p4VVaXrg=s1200",
+      "pageUrl": "https://maps.google.com/?cid=13925675520298152126",
+      "what": "池の桟橋に並ぶ釣り人たちと管理棟"
+    },
+    {
+      "path": "/_portal/vshops/tri-activity-465/g04.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9SFbFXHm2F4TVtWyHZpHgJIDy3w5-qFjqcDSILJrhFc6A1gD5tkNrUOyNIsTWjUwWEkWURMcImWbx87lHp2_zBLZdJ6P0krLPE4HtoPmdnUCYRq4o_0KVL8V--ZnjMGsY94wAVbWg=s1200",
+      "pageUrl": "https://maps.google.com/?cid=13925675520298152126",
+      "what": "山の斜面と池・桟橋の全景"
+    },
+    {
+      "path": "/_portal/vshops/tri-activity-465/g05.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9T0ycGVQwNKhCAqhvpzx3CYCkn6tc7AT7Tjk4XnG4T_oe9kPmH7ShGXhyVvC7_gyJKoes_Im3QXCfx2rJCywo7gqXezRg_GmBZztlo4fem9x0rB43Zt9IVuA7j7vui6il-xoRE=s1200",
+      "pageUrl": "https://maps.google.com/?cid=13925675520298152126",
+      "what": "釣り上げたへらぶなを手に持つ釣り人"
+    },
+    {
+      "path": "/_portal/vshops/tri-activity-465/g06.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9QxT1NVEw5CMqGFhxfETaTccyynjvCzeDLr1Z-6YxiwD8oq1_iZv_yRZugyI8tHlDsMvVmcz7Nl8yJkUKBJ-bPTe1jv49l7euAZF632Hr2Y0lAJIa7A20DGmM4waKPD2-k_s2h9=s1200",
+      "pageUrl": "https://maps.google.com/?cid=13925675520298152126",
+      "what": "桟橋で釣りを楽しむ複数の釣り人"
+    },
+    {
+      "path": "/_portal/vshops/tri-activity-465/g07.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9SZ5fvTP3XwWFfaZ6P_GQOGDNWNe77dlg7t24acc__Phss9Yvs3sBxu4onxgRpiWgLUVefxgLmAlANVNa4lhKJFwf6zAOH21zNXDRpbXM9qtyZ9jbS5xesiMtT2UkqkDmbb-UkFsA=s1200",
+      "pageUrl": "https://maps.google.com/?cid=13925675520298152126",
+      "what": "池の奥に広がる桜の木"
+    },
+    {
+      "path": "/_portal/vshops/tri-activity-465/g08.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9TYPz-zLISqY34fXIWOps3H9psxBUzd3g4j8IFpSXaIuKJuEczpCrcpSy_MzjqVTZtSngMmZU9huZnXpUkywP8IDBCF-qK_9cbFhskn79x6invr5eEfZmwUDdcjHAzNAN1dG_AN=s1200",
+      "pageUrl": "https://maps.google.com/?cid=13925675520298152126",
+      "what": "池の桟橋で釣りをする人たちの様子"
+    },
+    {
+      "path": "/_portal/vshops/tri-activity-465/g09.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9TM3GLNGqH505aFn5zD-LKmg4qy6pzElNV9ieCoOsOBfZYfZu1y-ASgsDqlPAuKqvjAnPqFlVcGZpPUpzLDrFKmd3aX6_14WIP9MSqfXrJcz7GZY4USbyQswLjD9V77pO24WperBg=s1200",
+      "pageUrl": "https://maps.google.com/?cid=13925675520298152126",
+      "what": "「釣堀センター菊水」と書かれた看板"
+    },
+    {
+      "path": "/_portal/vshops/tri-activity-465/g10.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9T1HH1FpUF0n_Wgv1biw0T3HOXMhKneHpm6kHxH9hsQg-4AdasldE3hTM5vKpS5jRJyqlClLOkA6C4Mpo2-IdjUkID9sZn-Uay2djpovHenwuYj58Jstgi2sjEIZMsPDR6VU4Q=s1200",
+      "pageUrl": "https://maps.google.com/?cid=13925675520298152126",
+      "what": "玉網に入った2匹のへらぶな"
+    }
+  ],
+  "sources": [
+    {
+      "label": "公式サイト",
+      "url": "https://koi3849.wixsite.com/kikusui"
+    },
+    {
+      "label": "公式サイト(施設・設備)",
+      "url": "https://koi3849.wixsite.com/kikusui/blank-c1nm0"
+    },
+    {
+      "label": "公式サイト(お問合せ・アクセス)",
+      "url": "https://koi3849.wixsite.com/kikusui/contact"
+    },
+    {
+      "label": "公式サイト(料金・ルール等)",
+      "url": "https://koi3849.wixsite.com/kikusui/blank-cx3a"
+    },
+    {
+      "label": "公式サイト(放流・釣果情報)",
+      "url": "https://koi3849.wixsite.com/kikusui/blank-c1dfn"
+    },
+    {
+      "label": "釣りニュース",
+      "url": "https://tsurinews.jp/74572/"
+    },
+    {
+      "label": "へら鮒天国",
+      "url": "https://tsuribori.net/introduce/kikusui/"
+    },
+    {
+      "label": "Google マップ",
+      "url": "https://maps.google.com/?cid=13925675520298152126"
+    }
+  ],
+  "notes": "automation/v2/write.mjs が 2026-11-10 に作成。"
+}

@@ -8438,6 +8438,702 @@
         ],
         "checkedAt": "2026-11-10"
       }
+    },
+    {
+      "id": "ac0051",
+      "vertical": "activity",
+      "category": "sea-river",
+      "name": "釣堀センター 菊水",
+      "pref": "wakayama",
+      "cityName": "岩出市",
+      "address": "和歌山県岩出市東坂本947",
+      "lat": 34.2881594,
+      "lng": 135.3329936,
+      "hours": "毎日 07:00 - 16:00",
+      "phone": "090-5249-7812",
+      "url": "http://koi3849.wixsite.com/kikusui",
+      "website": "http://koi3849.wixsite.com/kikusui",
+      "mapUrl": "https://maps.google.com/?cid=13925675520298152126",
+      "image": "/_portal/vshops/tri-activity-465/g01.jpg",
+      "images": [
+        "/_portal/vshops/tri-activity-465/g01.jpg",
+        "/_portal/vshops/tri-activity-465/g02.jpg",
+        "/_portal/vshops/tri-activity-465/g03.jpg",
+        "/_portal/vshops/tri-activity-465/g04.jpg",
+        "/_portal/vshops/tri-activity-465/g05.jpg",
+        "/_portal/vshops/tri-activity-465/g06.jpg",
+        "/_portal/vshops/tri-activity-465/g07.jpg",
+        "/_portal/vshops/tri-activity-465/g08.jpg",
+        "/_portal/vshops/tri-activity-465/g09.jpg",
+        "/_portal/vshops/tri-activity-465/g10.jpg"
+      ],
+      "photos": [
+        {
+          "path": "/_portal/vshops/tri-activity-465/g01.jpg",
+          "what": "山に囲まれた管理池と長い桟橋の全景",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-465/g02.jpg",
+          "what": "玉網に収まったへらぶな",
+          "kind": "meal",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-465/g03.jpg",
+          "what": "池の桟橋に並ぶ釣り人たちと管理棟",
+          "kind": "common",
+          "width": 1200,
+          "height": 675
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-465/g04.jpg",
+          "what": "山の斜面と池・桟橋の全景",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-465/g05.jpg",
+          "what": "釣り上げたへらぶなを手に持つ釣り人",
+          "kind": "common",
+          "width": 1200,
+          "height": 675
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-465/g06.jpg",
+          "what": "桟橋で釣りを楽しむ複数の釣り人",
+          "kind": "common",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-465/g07.jpg",
+          "what": "池の奥に広がる桜の木",
+          "kind": "view",
+          "width": 1200,
+          "height": 675
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-465/g08.jpg",
+          "what": "池の桟橋で釣りをする人たちの様子",
+          "kind": "common",
+          "width": 1200,
+          "height": 675
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-465/g09.jpg",
+          "what": "「釣堀センター菊水」と書かれた看板",
+          "kind": "exterior",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-465/g10.jpg",
+          "what": "玉網に入った2匹のへらぶな",
+          "kind": "meal",
+          "width": 900,
+          "height": 1200
+        }
+      ],
+      "tags": [
+        "子連れ",
+        "初心者歓迎",
+        "手ぶらでOK"
+      ],
+      "article": {
+        "headline": "和歌山県岩出市にある、へらぶな専門の管理釣り場。谷間を堰き止めた池で、初心者から経験者まで楽しめる",
+        "lede": "岩出市にある「釣堀センター 菊水」です。谷間を堰き止めて作られた池を利用した管理釣り場で、ヘラブナ釣りを専門としています。山々が育んだ酸素たっぷりの湧き水が池に注がれており、水位が安定しています。平均水深4メートルと深いのが特徴で、池全体に大きな桟橋が架けられており、約100人の釣り人が同時に楽しめます。放流されるヘラブナのほとんどが30センチ以上で、最大50センチを超える大型も入っています。大阪方面・奈良方面からアクセスしやすい立地条件で、ファミリーから大会常連のベテランまで幅広い層が訪れます。",
+        "sections": [
+          {
+            "heading": "体験の内容と流れ",
+            "body": "メインの池ではヘラブナ釣りを楽しめます。竿は7尺以上が必要で、タナ（狙う深さ）は自由に設定できます。えさは生き餌以外であれば自由に使えますが、一発・角麩は禁止です。例会以外ではフラシの使用も禁止となっています。レンタル道具がファミリー向けに完備されており、子供用の貸し竿もあります。冬季限定の網池釣りでは初心者・お子様連れ・カップルを歓迎しており、貸し竿とえさが付いたプランで楽しめます。めだかすくいのコーナーも設けられており、小さなお子様も遊べます。"
+          },
+          {
+            "heading": "対象",
+            "body": "ヘラブナ釣りの本池は、7尺以上の竿を使う釣り人が対象です。中学生以下と女性は専用の区分での参加が用意されており、ファミリーでの利用に対応しています。冬季限定の網池釣りは初心者・お子様連れ・カップルを歓迎しており、道具の持参が不要です。20名以上の来場で釣寸大会が開催されます。60名以上の場合は大会の対象範囲が広がります。"
+          },
+          {
+            "heading": "季節と準備",
+            "body": "毎日開催のハチミツカップでは、41センチ以上のへらぶなを釣り上げると梅田養蜂場のはちみつが景品として贈られます。41センチ以上で百花蜜100グラム、46センチ以上でみかん蜜200グラムがもらえます。菊水主催の大会として、第3日曜日の長寸大会が定期的に開催されています。ハニーフェスティバルは年間を通じて複数回開催される季節企画です。施設では午前10時までの受付でお弁当の用意もできます（要予約または事前連絡）。"
+          },
+          {
+            "heading": "行き方と使い方",
+            "body": "京奈和道路の岩出根来インターチェンジから車で5分の立地です。大阪方面・奈良方面からアクセスしやすい位置にあります。駐車場を完備しており、事務所・レストハウス・自動販売機・えさ販売・トイレ（洋式・和式・ウォシュレット・女性専用）が揃っています。予約・問い合わせは電話で受け付けており、放流・釣果情報を随時更新しています。"
+          }
+        ],
+        "menus": [
+          {
+            "name": "ヘラブナ釣り（1日）"
+          },
+          {
+            "name": "ヘラブナ釣り（半日）"
+          },
+          {
+            "name": "網池釣り（冬季限定・貸し竿えさ付き）"
+          },
+          {
+            "name": "めだかすくい"
+          }
+        ],
+        "sources": [
+          {
+            "label": "公式サイト",
+            "url": "https://koi3849.wixsite.com/kikusui"
+          },
+          {
+            "label": "公式サイト(施設・設備)",
+            "url": "https://koi3849.wixsite.com/kikusui/blank-c1nm0"
+          },
+          {
+            "label": "公式サイト(お問合せ・アクセス)",
+            "url": "https://koi3849.wixsite.com/kikusui/contact"
+          },
+          {
+            "label": "公式サイト(料金・ルール等)",
+            "url": "https://koi3849.wixsite.com/kikusui/blank-cx3a"
+          },
+          {
+            "label": "公式サイト(放流・釣果情報)",
+            "url": "https://koi3849.wixsite.com/kikusui/blank-c1dfn"
+          },
+          {
+            "label": "釣りニュース",
+            "url": "https://tsurinews.jp/74572/"
+          },
+          {
+            "label": "へら鮒天国",
+            "url": "https://tsuribori.net/introduce/kikusui/"
+          },
+          {
+            "label": "Google マップ",
+            "url": "https://maps.google.com/?cid=13925675520298152126"
+          }
+        ],
+        "checkedAt": "2026-11-10"
+      }
+    },
+    {
+      "id": "ac0052",
+      "vertical": "activity",
+      "category": "sea-river",
+      "name": "富士見つり堀",
+      "pref": "yamanashi",
+      "cityName": "富士吉田市",
+      "address": "山梨県富士吉田市上吉田東7丁目28-20",
+      "lat": 35.4600752,
+      "lng": 138.805805,
+      "hours": "毎日 10:00 - 16:30",
+      "phone": "0555-24-2121",
+      "mapUrl": "https://maps.google.com/?cid=16897168260314626807",
+      "image": "/_portal/vshops/tri-activity-467/g01.jpg",
+      "images": [
+        "/_portal/vshops/tri-activity-467/g01.jpg",
+        "/_portal/vshops/tri-activity-467/g02.jpg",
+        "/_portal/vshops/tri-activity-467/g03.jpg",
+        "/_portal/vshops/tri-activity-467/g04.jpg",
+        "/_portal/vshops/tri-activity-467/g05.jpg",
+        "/_portal/vshops/tri-activity-467/g06.jpg",
+        "/_portal/vshops/tri-activity-467/g07.jpg",
+        "/_portal/vshops/tri-activity-467/g08.jpg",
+        "/_portal/vshops/tri-activity-467/g09.jpg",
+        "/_portal/vshops/tri-activity-467/g10.jpg"
+      ],
+      "photos": [
+        {
+          "path": "/_portal/vshops/tri-activity-467/g01.jpg",
+          "what": "緑に囲まれた広い釣り池の全景",
+          "kind": "common",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-467/g02.jpg",
+          "what": "釣り池と周囲の建物を写した全景",
+          "kind": "common",
+          "width": 1200,
+          "height": 675
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-467/g03.jpg",
+          "what": "富士山を背景にした釣り池の全景",
+          "kind": "common",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-467/g04.jpg",
+          "what": "皿に乗せられた塩焼きのニジマス",
+          "kind": "meal",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-467/g05.jpg",
+          "what": "金属の台に並べられた大きなニジマス2匹",
+          "kind": "meal",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-467/g06.jpg",
+          "what": "子供がニジマスのつかみ取りをしている様子",
+          "kind": "common",
+          "width": 675,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-467/g07.jpg",
+          "what": "竿が並ぶ釣り池の水面",
+          "kind": "common",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-467/g08.jpg",
+          "what": "釣り竿が水面に向かって伸びる釣りの様子",
+          "kind": "common",
+          "width": 675,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-467/g09.jpg",
+          "what": "子供がかごに魚を入れて運ぶ様子",
+          "kind": "common",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-467/g10.jpg",
+          "what": "「富士見つり堀」と書かれた看板",
+          "kind": "exterior",
+          "width": 900,
+          "height": 1200
+        }
+      ],
+      "tags": [
+        "初心者歓迎",
+        "手ぶらでOK"
+      ],
+      "article": {
+        "headline": "山梨県富士吉田市上吉田東にある釣り堀。ニジマス釣り・コイ釣り・ニジマスのつかみ取り体験ができ、釣った魚をその場で塩焼きにして食べられる",
+        "lede": "富士吉田市にある「富士見つり堀」です。ニジマス釣り・コイ釣り・ニジマスのつかみ取りの3つの体験を用意しており、釣り具はすべて店が貸し出しています。釣ったニジマスやコイはその場で内臓処理と塩焼きの調理を依頼でき、手ぶらで訪れて魚を食べるまで楽しめます。バーベキュー施設も併設されており、グループ利用にも対応しています。道の駅富士吉田のすぐそばに位置し、富士山を背景に緑に囲まれた釣り池で体験できます。",
+        "sections": [
+          {
+            "heading": "体験の内容と流れ",
+            "body": "ニジマス釣りは50分の時間制で、エサはチーズを使います。チーズはパチンコ玉より小さめに丸めて針につけるのが釣りやすく、池の中央に向けて投げます。コイ釣りは時間無制限で、ニジマスより大型の魚に挑戦できます。ニジマスのつかみ取りは最大5匹まで捕獲でき、水中の籠を使って追い込む方法で体験します。いずれの体験も釣り竿や道具は店が用意しており、釣り経験のない初心者にはスタッフが釣り方のコツを教えます。"
+          },
+          {
+            "heading": "対象",
+            "body": "ニジマス釣り・コイ釣り・ニジマスのつかみ取りのいずれも、子供から大人まで体験できます。釣り道具はすべて貸し出しのため、釣り初心者や道具を持っていない方も参加できます。バーベキュー施設の利用は2名以上30名以下で受け付けており、家族・グループ・サークルでの利用に対応しています。"
+          },
+          {
+            "heading": "集合場所と行き方",
+            "body": "富士急行線富士山駅からバス利用でセメ草バス停下車後、徒歩約5分の場所にあります。車の場合は中央自動車道河口湖ICから約12分です。道の駅富士吉田のすぐ近くに位置しており、駐車場を備えています。予約は不要ですが、事前に電話で確認することが推奨されています。"
+          }
+        ],
+        "menus": [
+          {
+            "name": "ニジマス釣り"
+          },
+          {
+            "name": "コイ釣り"
+          },
+          {
+            "name": "ニジマスのつかみ取り"
+          },
+          {
+            "name": "塩焼き"
+          },
+          {
+            "name": "バーベキュー"
+          }
+        ],
+        "sources": [
+          {
+            "label": "富士吉田市観光ガイド",
+            "url": "https://fujiyoshida.net/spot/41"
+          },
+          {
+            "label": "フジヤマNAVI",
+            "url": "https://www.fujiyama-navi.jp/spots/JXNs3"
+          },
+          {
+            "label": "じゃらんnet",
+            "url": "https://www.jalan.net/kankou/spt_guide000000192013/"
+          },
+          {
+            "label": "ちょこままチャンネル",
+            "url": "https://chocomama.info/life/fujimi-tsuribori-in-yamanashi/"
+          },
+          {
+            "label": "アメブロ（訪問ブログ）",
+            "url": "https://ameblo.jp/momokanashizue/entry-12373386169.html"
+          },
+          {
+            "label": "Google マップ",
+            "url": "https://maps.google.com/?cid=16897168260314626807"
+          }
+        ],
+        "checkedAt": "2026-11-10"
+      }
+    },
+    {
+      "id": "ac0053",
+      "vertical": "activity",
+      "category": "sea-river",
+      "name": "琉球釣り物語",
+      "pref": "okinawa",
+      "cityName": "那覇市",
+      "address": "沖縄県那覇市西3丁目17-20",
+      "lat": 26.2197597,
+      "lng": 127.6644064,
+      "hours": "毎日 09:00 - 12:00, 14:00 - 17:00",
+      "url": "https://ryukyu-fishing.jp/",
+      "website": "https://ryukyu-fishing.jp/",
+      "mapUrl": "https://maps.google.com/?cid=12336115527396973699",
+      "image": "/_portal/vshops/tri-activity-468/g03.jpg",
+      "images": [
+        "/_portal/vshops/tri-activity-468/g03.jpg",
+        "/_portal/vshops/tri-activity-468/g04.jpg",
+        "/_portal/vshops/tri-activity-468/g06.jpg",
+        "/_portal/vshops/tri-activity-468/g07.jpg",
+        "/_portal/vshops/tri-activity-468/g08.jpg",
+        "/_portal/vshops/tri-activity-468/g09.jpg"
+      ],
+      "photos": [
+        {
+          "path": "/_portal/vshops/tri-activity-468/g03.jpg",
+          "what": "白いクルーザーが海に浮かぶ外観",
+          "kind": "exterior",
+          "width": 1125,
+          "height": 605
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-468/g04.jpg",
+          "what": "夕日を背景に船上でテーブルを囲む参加者たち",
+          "kind": "common",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-468/g06.jpg",
+          "what": "釣り上げた魚を手に持つ2人の女性",
+          "width": 1200,
+          "height": 800
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-468/g07.jpg",
+          "what": "ライフジャケットを着た子ども2人と大人が船上に並ぶ",
+          "kind": "common",
+          "width": 1200,
+          "height": 800
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-468/g08.jpg",
+          "what": "釣り竿を持ちながら釣果の魚を掲げる女性",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-468/g09.jpg",
+          "what": "海上で釣り竿を持ちながら釣果の魚を見せる男性",
+          "width": 900,
+          "height": 1200
+        }
+      ],
+      "tags": [
+        "子連れ",
+        "初心者歓迎",
+        "手ぶらでOK"
+      ],
+      "article": {
+        "headline": "沖縄県那覇市西、三重城港を主な拠点とする釣船チャーターサービス。乗合の五目釣りから貸切チャーターまで複数のコースを用意している。",
+        "lede": "那覇市にある「琉球釣り物語」です。三重城港（那覇市辻）と宜野湾マリーナを拠点に、釣船チャーターサービスを提供しています。45フィートのクルーザーを使用し、道具・エサ・仕掛け・氷・ライフジャケットはすべて用意されているため手ぶらで参加できます。乗合の五目釣りコースは1名から参加でき、対象年齢は3歳から80歳まで。船長が乗船中にレクチャーとサポートを行うため、初めて船釣りをする方も参加できます。釣った魚は近隣の店で処理してもらうことが可能です。",
+        "sections": [
+          {
+            "heading": "体験の内容と流れ",
+            "body": "乗合フィッシングは五目釣りのコースで、所要時間は3時間です。グルクン・ミーバイ・ハタ・フエフキダイ・ベラ類など沖縄の海に生息する魚を対象に、複数種類を狙います。船長が乗船中にレクチャーとサポートを行うため、初めての方でも釣り方を覚えながら参加できます。乗合コースはウェルカムドリンクが付き、スタッフが撮影した写真データも提供されます。天候の条件が整った場合はドローン撮影にも対応しています。乗合コースは1名から参加でき、貸切チャーターは1艇あたり1名から14名まで乗船できます。"
+          },
+          {
+            "heading": "コースと所要時間",
+            "body": "コースは大きく4つに分かれています。乗合フィッシング五目釣りは3時間で、出港時間は午前8時50分と午後1時50分の2便です。完全貸切チャーター五目釣りも3時間で、1艇を貸し切って利用します。チャーター釣り＆船上BBQは300分（5時間）のコースで、釣りのあとに船上でBBQを楽しみます。サンセットクルーズ＆BBQは釣りなしのプランで、1艇あたり1名から6名まで対応しています。道具・エサ・仕掛け・氷・ライフジャケットはすべて用意されており、手ぶらで参加できます。"
+          },
+          {
+            "heading": "対象",
+            "body": "乗合フィッシング五目釣りの対象年齢は3歳から80歳までです。未就学児は保護者の同伴が必要です。道具はすべて用意されているため、釣り道具を持参する必要はありません。船にはトイレが備わっており、乗船中も安心して利用できます。1名から参加できるため、一人旅でも参加できます。"
+          },
+          {
+            "heading": "行き方と使い方",
+            "body": "乗合フィッシングと貸切チャーターの集合場所は三重城港待合室前（那覇市辻3丁目3-3）です。那覇空港から車で約10分の距離にあります。サンセットクルーズ＆BBQコースの集合場所は宜野湾マリーナ（宜野湾市真志喜4丁目2-1）で、那覇空港から車で約30分です。予約は公式LINE、アクティビティジャパン、じゃらん、VELTRAなどの予約サービスから受け付けています。"
+          }
+        ],
+        "menus": [
+          {
+            "name": "乗合フィッシング五目釣り（3時間）"
+          },
+          {
+            "name": "完全貸切チャーター五目釣り（3時間）"
+          },
+          {
+            "name": "チャーター釣り＆船上BBQ（300分）"
+          },
+          {
+            "name": "サンセットクルーズ＆BBQ"
+          }
+        ],
+        "sources": [
+          {
+            "label": "公式サイト",
+            "url": "https://ryukyu-fishing.jp/"
+          },
+          {
+            "label": "沖楽（三重城港乗合プラン）",
+            "url": "https://oki-raku.net/activity/detail-9112/"
+          },
+          {
+            "label": "楽天トラベル体験（三重城港五目釣り）",
+            "url": "https://experiences.travel.rakuten.co.jp/experiences/60444"
+          },
+          {
+            "label": "Google マップ",
+            "url": "https://maps.google.com/?cid=12336115527396973699"
+          }
+        ],
+        "checkedAt": "2026-11-10"
+      }
+    },
+    {
+      "id": "ac0054",
+      "vertical": "activity",
+      "category": "craft",
+      "name": "食品サンプル教室 アトリエステラ☆体験、制作、オーダー、出張講座",
+      "pref": "kanagawa",
+      "cityName": "相模原市中央区",
+      "address": "神奈川県相模原市中央区中央2丁目13-19 末広マンション 1B",
+      "lat": 35.5725148,
+      "lng": 139.3737169,
+      "hours": "毎日 10:00 - 16:30",
+      "phone": "090-8961-4455",
+      "url": "http://satomi-stella.work/",
+      "website": "http://satomi-stella.work/",
+      "mapUrl": "https://maps.google.com/?cid=6126986425923102452",
+      "image": "/_portal/vshops/tri-activity-470/g01.jpg",
+      "images": [
+        "/_portal/vshops/tri-activity-470/g01.jpg",
+        "/_portal/vshops/tri-activity-470/g02.jpg",
+        "/_portal/vshops/tri-activity-470/g03.jpg",
+        "/_portal/vshops/tri-activity-470/g04.jpg",
+        "/_portal/vshops/tri-activity-470/g05.jpg",
+        "/_portal/vshops/tri-activity-470/g06.jpg",
+        "/_portal/vshops/tri-activity-470/g07.jpg",
+        "/_portal/vshops/tri-activity-470/g08.jpg",
+        "/_portal/vshops/tri-activity-470/g09.jpg",
+        "/_portal/vshops/tri-activity-470/g10.jpg",
+        "/_portal/vshops/tri-activity-470/s02.jpg",
+        "/_portal/vshops/tri-activity-470/s05.jpg",
+        "/_portal/vshops/tri-activity-470/s06.jpg",
+        "/_portal/vshops/tri-activity-470/s07.jpg",
+        "/_portal/vshops/tri-activity-470/s08.jpg",
+        "/_portal/vshops/tri-activity-470/s12.jpg"
+      ],
+      "photos": [
+        {
+          "path": "/_portal/vshops/tri-activity-470/g01.jpg",
+          "what": "食品サンプル作品が並ぶ明るい室内",
+          "kind": "common",
+          "width": 1200,
+          "height": 736
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-470/g02.jpg",
+          "what": "末広マンションの外観",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-470/g03.jpg",
+          "what": "マンション入口へのアプローチ",
+          "kind": "exterior",
+          "width": 675,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-470/g04.jpg",
+          "what": "フルーツを飾ったパンケーキの食品サンプル",
+          "kind": "meal",
+          "width": 970,
+          "height": 878
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-470/g05.jpg",
+          "what": "丸パンを使った食品サンプル2個",
+          "kind": "meal",
+          "width": 1158,
+          "height": 1039
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-470/g06.jpg",
+          "what": "オレンジのツリー型食品サンプルを制作している手元",
+          "kind": "meal",
+          "width": 725,
+          "height": 700
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-470/g07.jpg",
+          "what": "テーブルに並んで食品サンプルを制作する参加者たち",
+          "kind": "common",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-470/g08.jpg",
+          "what": "たこ焼き風の食品サンプル",
+          "kind": "meal",
+          "width": 1200,
+          "height": 979
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-470/g09.jpg",
+          "what": "和菓子セットの食品サンプル",
+          "kind": "meal",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-470/g10.jpg",
+          "what": "ハロウィン仕様のかぼちゃ型食品サンプル",
+          "kind": "meal",
+          "width": 1079,
+          "height": 1079
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-470/s02.jpg",
+          "what": "フルーツを飾った時計型の食品サンプル作品",
+          "kind": "meal",
+          "width": 1200,
+          "height": 1185
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-470/s05.jpg",
+          "what": "苔と動物フィギュアを組み合わせた食品サンプル作品",
+          "kind": "meal",
+          "width": 768,
+          "height": 822
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-470/s06.jpg",
+          "what": "たい焼き風の食品サンプル作品",
+          "kind": "meal",
+          "width": 768,
+          "height": 822
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-470/s07.jpg",
+          "what": "和菓子風の食品サンプル作品",
+          "kind": "meal",
+          "width": 768,
+          "height": 822
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-470/s08.jpg",
+          "what": "海藻風の食品サンプル作品",
+          "kind": "meal",
+          "width": 768,
+          "height": 822
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-470/s12.jpg",
+          "what": "くまのフィギュアとパンケーキを組み合わせた食品サンプル作品",
+          "kind": "meal",
+          "width": 1280,
+          "height": 874
+        }
+      ],
+      "tags": [
+        "子連れ",
+        "初心者歓迎",
+        "雨の日"
+      ],
+      "article": {
+        "headline": "神奈川県相模原市中央区にある食品サンプル制作の体験教室。1DAY講座・こども講座から定期講座・講師認定まで幅広いコースを用意している。",
+        "lede": "フェイクフードクリエーターの北島さとみが主宰する、相模原市中央区の食品サンプル制作体験教室です。蝋ではなく樹脂を使って食品サンプルを制作します。未就学児から大人まで参加でき、ほとんどの方が一人で参加しています。グループでの申し込みの場合は貸切に対応しています。まず体験したい方は1DAY体験講座を、高校生以下のお子さんにはこども講座を用意しています。資格取得を目指す方には初級・中級・上級の各コース（各10回・計30回）を経て講師認定まで進めるコース体系があります。完全予約制で、RESERVA・アソビュー・じゃらんから予約できます。",
+        "sections": [
+          {
+            "heading": "体験の内容と流れ",
+            "body": "教室では昔ながらの蝋ではなく樹脂を素材に使います。着色や型への流し込み、デコレーション・盛り付けなど、一連の工程を順に体験します。同じ材料を使っても作る人によって仕上がりが変わるため、参加者それぞれが異なる作品に仕上げます。作った作品は当日持ち帰ることができます。置物として飾るだけでなく、キーホルダーやアクセサリー、マグネット、スマホスタンド、時計など様々な用途に加工できます。持ち物はエプロン・使い捨て手袋・ハサミ・カッター・筆記用具です。"
+          },
+          {
+            "heading": "コースと所要時間",
+            "body": "コースは大きく3種類あります。こども講座は高校生まで対象で、所要時間は60〜120分です。1DAY体験講座は単発受講で、趣味として楽しみたい方から定期講座を検討している方まで参加できます。定期講座は初級・中級・上級の3コース（各10回・計30回）で構成され、基本材料の取り扱い方、着色方法、デコレーション・盛り付けの方法、アクセサリー加工、様々なドリンクの作り方、麺・米の取り扱い方、シリコン型の作り方などを学びます。定期講座修了者向けに趣味の講座もあり、指定課題の提出で講師認定を受けることもできます。"
+          },
+          {
+            "heading": "対象",
+            "body": "未就学児から大人まで参加できます。こども講座は高校生まで対象です。1DAY体験講座はグループなら最大10名まで対応しています。ほとんどの参加者が一人で訪れており、ご家族・友人グループ・デートでの利用もあります。企業・学校・団体の出張講座にも対応しており、桜美林大学の留学生向け授業や青山学院大学相模原キャンパスでの出張実績があります。企業の福利厚生やレクリエーション、学校行事、地域イベントへの出張講座を受け付けています。企業や店舗のメニューを食品サンプルにするコラボ企画も承っています。"
+          },
+          {
+            "heading": "行き方と使い方",
+            "body": "JR横浜線相模原駅南口から徒歩17分です。バスを利用する場合は、相模原駅南口から市役所前バス停まで乗車時間約5分（徒歩3分）です。相12・相21・相25など複数の路線が利用できます。車では相模原市役所第1駐車場が便利で、出口近くに停めると目の前のマンションです。完全予約制で、全講座はRESERVAから予約できます。こども講座と1DAY体験講座はアソビューとじゃらんからも予約可能です。"
+          }
+        ],
+        "menus": [
+          {
+            "name": "1DAY体験講座"
+          },
+          {
+            "name": "こども講座"
+          },
+          {
+            "name": "初級コース（全10回）"
+          },
+          {
+            "name": "中級コース（全10回）"
+          },
+          {
+            "name": "上級コース（全10回）"
+          },
+          {
+            "name": "趣味の講座"
+          },
+          {
+            "name": "講師認定"
+          },
+          {
+            "name": "出張講座"
+          }
+        ],
+        "sources": [
+          {
+            "label": "公式サイト",
+            "url": "https://www.satomi-stella.work/wp/"
+          },
+          {
+            "label": "公式サイト（講座案内）",
+            "url": "https://www.satomi-stella.work/wp/lesson/"
+          },
+          {
+            "label": "公式サイト（アクセスマップ）",
+            "url": "https://www.satomi-stella.work/wp/accessmap/"
+          },
+          {
+            "label": "公式サイト（2回目以降メニュー）",
+            "url": "https://www.satomi-stella.work/wp/menu-kids/"
+          },
+          {
+            "label": "趣味なび（アトリエステラ☆）",
+            "url": "https://coto.shuminavi.net/i5ef-0181/school/s728-b59d-cbc6"
+          },
+          {
+            "label": "Google マップ",
+            "url": "https://maps.google.com/?cid=6126986425923102452"
+          }
+        ],
+        "checkedAt": "2026-11-10"
+      }
     }
   ]
 }

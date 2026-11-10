@@ -1,0 +1,40 @@
+{
+  "tab": "トリニティアポ",
+  "tabEn": "tri-life",
+  "row": 478,
+  "sheet": {
+    "name": "原田神社",
+    "address": "",
+    "url": "https://www.google.com/maps/search/?api=1&query=%E5%8E%9F%E7%94%B0%E7%A5%9E%E7%A4%BE%2006-6852-4732%20%E3%80%92561-0881%20%E5%A4%A7%E9%98%AA%E5%BA%9C%E8%B1%8A%E4%B8%AD%E5%B8%82%E4%B8%AD%E6%A1%9C%E5%A1%9A%EF%BC%91%E4%B8%81%E7%9B%AE%EF%BC%92%E2%88%92%EF%BC%91%EF%BC%98",
+    "type": "神社",
+    "d1": "",
+    "d2": ""
+  },
+  "urlKind": "mapsApi",
+  "route": "第1段(verify-gbp.mjs)で確認済み",
+  "verdict": "一致",
+  "verdictReason": "手がかり: 店名＋電話＋住所(番地まで)。電話が一致／店名: exact(シート「原田神社」/ マップ「原田神社」)／住所(シート): exact・町名・番地とも一致",
+  "place": {
+    "name": "原田神社",
+    "address": "大阪府豊中市中桜塚１丁目２−１８",
+    "category": "神社",
+    "lat": 34.7794278,
+    "lng": 135.4659435,
+    "gbpUrl": "https://maps.google.com/?cid=16133718650416554372",
+    "phone": "06-6852-4732",
+    "website": "https://www.haradajinja.or.jp/",
+    "hours": {
+      "月": "08:00–16:00",
+      "火": "08:00–16:00",
+      "水": "08:00–16:00",
+      "木": "08:00–16:00",
+      "金": "08:00–16:00",
+      "土": "08:00–16:00",
+      "日": "08:00–16:00"
+    },
+    "reserveLinks": [],
+    "statusSignals": [],
+    "closedSignal": false
+  },
+  "fetchedAt": "2026-11-10T08:10:50.969Z"
+}

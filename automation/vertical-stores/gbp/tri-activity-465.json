@@ -1,0 +1,40 @@
+{
+  "tab": "トリニティアポ",
+  "tabEn": "tri-activity",
+  "row": 465,
+  "sheet": {
+    "name": "釣堀センター 菊水",
+    "address": "",
+    "url": "https://www.google.com/maps/search/?api=1&query=%E9%87%A3%E5%A0%80%E3%82%BB%E3%83%B3%E3%82%BF%E3%83%BC%20%E8%8F%8A%E6%B0%B4%20090-5249-7812%20%E3%80%92649-6211%20%E5%92%8C%E6%AD%8C%E5%B1%B1%E7%9C%8C%E5%B2%A9%E5%87%BA%E5%B8%82%E6%9D%B1%E5%9D%82%E6%9C%AC%EF%BC%99%EF%BC%94%EF%BC%97",
+    "type": "その他",
+    "d1": "",
+    "d2": ""
+  },
+  "urlKind": "mapsApi",
+  "route": "第1段(verify-gbp.mjs)で確認済み",
+  "verdict": "一致",
+  "verdictReason": "手がかり: 店名＋電話＋住所(番地まで)。電話が一致／店名: exact(シート「釣堀センター 菊水」/ マップ「釣堀センター 菊水」)／住所(シート): exact・町名・番地とも一致",
+  "place": {
+    "name": "釣堀センター 菊水",
+    "address": "和歌山県岩出市東坂本９４７",
+    "category": "釣り堀",
+    "lat": 34.2881594,
+    "lng": 135.3329936,
+    "gbpUrl": "https://maps.google.com/?cid=13925675520298152126",
+    "phone": "090-5249-7812",
+    "website": "http://koi3849.wixsite.com/kikusui",
+    "hours": {
+      "月": "07:00–16:00",
+      "火": "07:00–16:00",
+      "水": "07:00–16:00",
+      "木": "07:00–16:00",
+      "金": "07:00–16:00",
+      "土": "07:00–16:00",
+      "日": "07:00–16:00"
+    },
+    "reserveLinks": [],
+    "statusSignals": [],
+    "closedSignal": false
+  },
+  "fetchedAt": "2026-11-10T08:05:56.307Z"
+}

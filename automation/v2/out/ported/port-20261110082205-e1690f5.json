@@ -1,0 +1,118 @@
+{
+  "commit": "e1690f501ed529f7d71b8d19381a8625fa1149ad",
+  "source": "/Users/shunta/claude/gp-k-auto2",
+  "count": 10,
+  "added": [
+    {
+      "row": 413,
+      "name": "沖縄酒場 すけまる",
+      "key": "lk-gourmet-413",
+      "vertical": "グルメ",
+      "id": "r915",
+      "articleId": "沖縄酒場すけまる",
+      "shopUrl": "https://machinowa.tokyo/restaurant/r915",
+      "articleUrl": "https://machinowa.tokyo/feature/沖縄酒場すけまる",
+      "sheetUrl": "https://machinowa.tokyo/feature/沖縄酒場すけまる"
+    },
+    {
+      "row": 463,
+      "name": "大和温泉",
+      "key": "tri-life-463",
+      "vertical": "くらし",
+      "id": "li0205",
+      "articleId": "li0205",
+      "shopUrl": "https://machinowa.tokyo/life/shop/li0205",
+      "articleUrl": "https://machinowa.tokyo/life/article/li0205",
+      "sheetUrl": "https://machinowa.tokyo/life/article/li0205"
+    },
+    {
+      "row": 465,
+      "name": "釣堀センター 菊水",
+      "key": "tri-activity-465",
+      "vertical": "アクティビティ",
+      "id": "ac0051",
+      "articleId": "ac0051",
+      "shopUrl": "https://machinowa.tokyo/activity/shop/ac0051",
+      "articleUrl": "https://machinowa.tokyo/activity/article/ac0051",
+      "sheetUrl": "https://machinowa.tokyo/activity/article/ac0051"
+    },
+    {
+      "row": 467,
+      "name": "富士見つり堀",
+      "key": "tri-activity-467",
+      "vertical": "アクティビティ",
+      "id": "ac0052",
+      "articleId": "ac0052",
+      "shopUrl": "https://machinowa.tokyo/activity/shop/ac0052",
+      "articleUrl": "https://machinowa.tokyo/activity/article/ac0052",
+      "sheetUrl": "https://machinowa.tokyo/activity/article/ac0052"
+    },
+    {
+      "row": 468,
+      "name": "琉球釣り物語",
+      "key": "tri-activity-468",
+      "vertical": "アクティビティ",
+      "id": "ac0053",
+      "articleId": "ac0053",
+      "shopUrl": "https://machinowa.tokyo/activity/shop/ac0053",
+      "articleUrl": "https://machinowa.tokyo/activity/article/ac0053",
+      "sheetUrl": "https://machinowa.tokyo/activity/article/ac0053"
+    },
+    {
+      "row": 470,
+      "name": "食品サンプル教室 アトリエステラ",
+      "key": "tri-activity-470",
+      "vertical": "アクティビティ",
+      "id": "ac0054",
+      "articleId": "ac0054",
+      "shopUrl": "https://machinowa.tokyo/activity/shop/ac0054",
+      "articleUrl": "https://machinowa.tokyo/activity/article/ac0054",
+      "sheetUrl": "https://machinowa.tokyo/activity/article/ac0054"
+    },
+    {
+      "row": 472,
+      "name": "長慶院",
+      "key": "tri-life-472",
+      "vertical": "くらし",
+      "id": "li0206",
+      "articleId": "li0206",
+      "shopUrl": "https://machinowa.tokyo/life/shop/li0206",
+      "articleUrl": "https://machinowa.tokyo/life/article/li0206",
+      "sheetUrl": "https://machinowa.tokyo/life/article/li0206"
+    },
+    {
+      "row": 475,
+      "name": "原始焼き酒場 さくら井",
+      "key": "tri-gourmet-475",
+      "vertical": "グルメ",
+      "id": "r916",
+      "articleId": "原始焼き酒場さくら井",
+      "shopUrl": "https://machinowa.tokyo/restaurant/r916",
+      "articleUrl": "https://machinowa.tokyo/feature/原始焼き酒場さくら井",
+      "sheetUrl": "https://machinowa.tokyo/feature/原始焼き酒場さくら井"
+    },
+    {
+      "row": 477,
+      "name": "へんじんもっこ（ソーセージ・サラミ製造直売所）",
+      "key": "tri-gourmet-477",
+      "vertical": "グルメ",
+      "id": "r917",
+      "articleId": "へんじんもっこ（ソーセージ・サラミ製造直売所）",
+      "shopUrl": "https://machinowa.tokyo/restaurant/r917",
+      "articleUrl": "https://machinowa.tokyo/feature/へんじんもっこ（ソーセージ・サラミ製造直売所）",
+      "sheetUrl": "https://machinowa.tokyo/feature/へんじんもっこ（ソーセージ・サラミ製造直売所）"
+    },
+    {
+      "row": 478,
+      "name": "原田神社",
+      "key": "tri-life-478",
+      "vertical": "くらし",
+      "id": "li0207",
+      "articleId": "li0207",
+      "shopUrl": "https://machinowa.tokyo/life/shop/li0207",
+      "articleUrl": "https://machinowa.tokyo/life/article/li0207",
+      "sheetUrl": "https://machinowa.tokyo/life/article/li0207"
+    }
+  ],
+  "skipped": []
+}
