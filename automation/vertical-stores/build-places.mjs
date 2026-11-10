@@ -196,18 +196,13 @@ export function normalizeAddress(raw) {
 
 const DOUBLE_SHI = new Set(["四日市", "廿日市", "野々市"]);
 
-/** 住所から 都道府県（lib/areas の slug）と 市区町村名 を決める。決められなければ null（推測しない） */
-export function areaOfAddress(address) {
-  const a = normalizeAddress(address).replace(/^〒?\s*\d{3}-?\d{4}\s*/, "");
-  const pref = PREFS.find((p) => a.startsWith(p.name));
-  if (!pref) return null;
-  const rest = a.slice(pref.name.length);
+function cityOf(rest, slug) {
   let city = "";
   const des = DESIGNATED.find((c) => rest.startsWith(c));
   if (des) {
     const w = /^.+?区/.exec(rest.slice(des.length));
     city = des + (w ? w[0] : "");
-  } else if (pref.slug === "tokyo" && TOKYO_WARDS.some((w) => rest.startsWith(w))) {
+  } else if (slug === "tokyo" && TOKYO_WARDS.some((w) => rest.startsWith(w))) {
     city = TOKYO_WARDS.find((w) => rest.startsWith(w));
   } else {
     const gun = /^(.+?郡)(.+?[町村])/.exec(rest);
@@ -220,7 +215,28 @@ export function areaOfAddress(address) {
       if (cho) city = cho[1];
     }
   }
-  return { pref: pref.slug, prefName: pref.name, cityName: city || undefined };
+  return city;
+}
+
+/** 住所から 都道府県（lib/areas の slug）と 市区町村名 を決める。決められなければ null（推測しない）。
+ *  ふつうは「県 市 町 番地」の順(先頭が県名)。Google マップが「番地 町, 市 県 郵便番号」と逆順に返す店
+ *  (ひょうたん窯 2026-11-10)は、先頭が県名でなく、郵便番号を除いた末尾が県名のときだけ、末尾の県名と、その直前の市区町村を使う。 */
+export function areaOfAddress(address) {
+  const a = normalizeAddress(address).replace(/^〒?\s*\d{3}-?\d{4}\s*/, "");
+  let pref = PREFS.find((p) => a.startsWith(p.name));
+  if (!pref) {
+    const t = a.replace(/[\s,、]*〒?\s*\d{3}-?\d{4}\s*$/, "").replace(/[\s,、]+$/, "");
+    pref = PREFS.find((p) => t.endsWith(p.name));
+    if (!pref) return null;
+    const before = t.slice(0, -pref.name.length).replace(/[\s,、]+$/, "");
+    const tok = before.split(/[\s,、]+/).filter(Boolean);
+    let last = tok[tok.length - 1] || "";
+    // 政令市の区は「区, 市」の順で並ぶことがある(例: 中央区, 浜松市)→ 市+区 にそろえる
+    if (DESIGNATED.includes(last) && /区$/.test(tok[tok.length - 2] || "")) last = last + tok[tok.length - 2];
+    return { pref: pref.slug, prefName: pref.name, cityName: cityOf(last, pref.slug) || undefined };
+  }
+  const rest = a.slice(pref.name.length);
+  return { pref: pref.slug, prefName: pref.name, cityName: cityOf(rest, pref.slug) || undefined };
 }
 
 // ------------------------------------------------------------------ 種類（発注者が決めた基準）
