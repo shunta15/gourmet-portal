@@ -1,0 +1,22 @@
+{
+  "name": "ぱろぱとBAKERY",
+  "address": "新潟県新発田市城北町２丁目５−５",
+  "lat": 37.9592225,
+  "lng": 139.3254559,
+  "category": "ベーカリー",
+  "hours": {
+    "月": "定休日",
+    "火": "定休日",
+    "水": "10:00–18:00",
+    "木": "10:00–18:00",
+    "金": "10:00–18:00",
+    "土": "10:00–18:00",
+    "日": "定休日"
+  },
+  "phone": "0254-37-3358",
+  "website": "https://www.instagram.com/paropatobakery/",
+  "priceRange": null,
+  "status": null,
+  "gbpUrl": "https://maps.google.com/?cid=3463944215698753854",
+  "fetchedAt": "2026-11-11T04:11:55.375Z"
+}

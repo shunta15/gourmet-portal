@@ -3739,5 +3739,37 @@
     "warnings": [
       "cuisine は GBPカテゴリ"
     ]
+  },
+  "r922": {
+    "articleId": "ナチュランド",
+    "name": "ナチュランド",
+    "warnings": [
+      "desc は lede から事実の文を選べず、事実から作った定型文",
+      "cuisine は GBPカテゴリ"
+    ]
+  },
+  "r923": {
+    "articleId": "まんま亭・武藤",
+    "name": "まんま亭・武藤",
+    "warnings": [
+      "desc は lede から事実の文を選べず、事実から作った定型文",
+      "cuisine は GBPカテゴリ"
+    ]
+  },
+  "r924": {
+    "articleId": "フルーツワイナリーエスプリ(東根フルーツワイン)",
+    "name": "フルーツワイナリーエスプリ(東根フルーツワイン)",
+    "warnings": [
+      "desc は lede から事実の文を選べず、事実から作った定型文",
+      "cuisine は GBPカテゴリ"
+    ]
+  },
+  "r925": {
+    "articleId": "ぱろぱとBAKERY",
+    "name": "ぱろぱとBAKERY",
+    "warnings": [
+      "desc は lede から事実の文を選べず、事実から作った定型文",
+      "cuisine は GBPカテゴリ"
+    ]
   }
 }

@@ -33405,6 +33405,501 @@
         ],
         "checkedAt": "2026-11-10"
       }
+    },
+    {
+      "id": "li0213",
+      "vertical": "life",
+      "category": "shrine-temple",
+      "name": "充国寺",
+      "pref": "miyagi",
+      "cityName": "仙台市青葉区",
+      "address": "宮城県仙台市青葉区新坂町17-1",
+      "lat": 38.2796565,
+      "lng": 140.856609,
+      "phone": "022-234-1271",
+      "url": "https://jukokuji.jp/",
+      "website": "https://jukokuji.jp/",
+      "mapUrl": "https://maps.google.com/?cid=13129537961285037812",
+      "image": "/_portal/vshops/tri-life-495/g01.jpg",
+      "images": [
+        "/_portal/vshops/tri-life-495/g01.jpg",
+        "/_portal/vshops/tri-life-495/g02.jpg",
+        "/_portal/vshops/tri-life-495/g03.jpg",
+        "/_portal/vshops/tri-life-495/g04.jpg",
+        "/_portal/vshops/tri-life-495/g05.jpg",
+        "/_portal/vshops/tri-life-495/g06.jpg",
+        "/_portal/vshops/tri-life-495/g07.jpg",
+        "/_portal/vshops/tri-life-495/g08.jpg",
+        "/_portal/vshops/tri-life-495/g09.jpg",
+        "/_portal/vshops/tri-life-495/g10.jpg",
+        "/_portal/vshops/tri-life-495/s02.jpg",
+        "/_portal/vshops/tri-life-495/s03.jpg",
+        "/_portal/vshops/tri-life-495/s04.jpg",
+        "/_portal/vshops/tri-life-495/s17.jpg",
+        "/_portal/vshops/tri-life-495/s18.jpg"
+      ],
+      "photos": [
+        {
+          "path": "/_portal/vshops/tri-life-495/g01.jpg",
+          "what": "境内に立つ緑のトピアリー2本と石燈籠",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-life-495/g02.jpg",
+          "what": "山門外観と木々に囲まれた参道",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 675
+        },
+        {
+          "path": "/_portal/vshops/tri-life-495/g03.jpg",
+          "what": "本堂正面外観",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-life-495/g04.jpg",
+          "what": "山門（仁王門）正面と石塀",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-life-495/g05.jpg",
+          "what": "本堂内部の椅子席が並ぶ様子",
+          "kind": "common",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-life-495/g06.jpg",
+          "what": "仙台市保存樹木のクロマツと青空",
+          "kind": "exterior",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-life-495/g07.jpg",
+          "what": "石段と彼岸花が咲く境内の様子",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-life-495/g08.jpg",
+          "what": "本堂内の仏壇と位牌が並ぶ様子",
+          "kind": "common",
+          "width": 1200,
+          "height": 675
+        },
+        {
+          "path": "/_portal/vshops/tri-life-495/g09.jpg",
+          "what": "境内の紅葉した木々",
+          "kind": "view",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-life-495/g10.jpg",
+          "what": "池に咲く蓮の花",
+          "kind": "view",
+          "width": 903,
+          "height": 508
+        },
+        {
+          "path": "/_portal/vshops/tri-life-495/s02.jpg",
+          "what": "本堂外観と白い蓮の花",
+          "kind": "exterior",
+          "width": 1280,
+          "height": 723
+        },
+        {
+          "path": "/_portal/vshops/tri-life-495/s03.jpg",
+          "what": "境内のトピアリーと石仏",
+          "kind": "exterior",
+          "width": 1280,
+          "height": 723
+        },
+        {
+          "path": "/_portal/vshops/tri-life-495/s04.jpg",
+          "what": "着物姿の人が茶室で稽古をしている様子",
+          "kind": "common",
+          "width": 1280,
+          "height": 723
+        },
+        {
+          "path": "/_portal/vshops/tri-life-495/s17.jpg",
+          "what": "境内の参道と石仏・石像が並ぶ様子",
+          "kind": "exterior",
+          "width": 1280,
+          "height": 964
+        },
+        {
+          "path": "/_portal/vshops/tri-life-495/s18.jpg",
+          "what": "本堂内で法要が行われている様子",
+          "kind": "common",
+          "width": 1280,
+          "height": 960
+        }
+      ],
+      "tags": [
+        "駐車場あり",
+        "体験あり"
+      ],
+      "article": {
+        "headline": "仙台市青葉区新坂町にある浄土宗の寺院。慶長9年（1604年）に現在地に移転し、お墓・永代供養・茶道教室・各種催し物を通じて地域に開かれた寺院として運営している。",
+        "lede": "仙台市青葉区にある「充国寺」です。正式名称は宝嶺山源樹院充国寺といい、浄土宗の寺院として慶長9年（1604年）に伊達政宗のまちづくり事業の一環で国分町から新坂町の現在地に移転しました。本尊は阿弥陀如来で、脇侍に観音菩薩と勢至菩薩、両大師に善導大師と法然上人を安置しています。境内には仙台市保存樹木に指定された推定樹齢400年のクロマツがあり、1945年7月10日の仙台空襲で伽藍のほとんどが焼失した際にも戦禍を免れ、現在も参詣者を迎えています。また仙台三十三観音霊場の第2番札所として、千手観世音（別名：子安観音）をお祀りしており、御朱印は2種類授けています。",
+        "sections": [
+          {
+            "heading": "由緒・歴史",
+            "body": "充国寺の開創は慶長9年（1604年）以前にさかのぼります。開基は加藤越後廣影（旧仙台ホテル大泉家祖先）と木口八郎兵衛實行（旧菊平旅館菊地家祖先）の両人で、新寺の成覺寺第2世良清上人が開山しました。開山以前は国分町にあり、寺号は「住国寺」と伝わります。国分町の住人が菩提寺として建てたことがその名の由来です。その後、政宗公のまちづくりの一環として1604年に新坂町へ移転し、寺号も「充国寺」と改められました。境内には会津藩士・遠藤敬止（1851〜1904年）の墓があります。遠藤は七十七銀行の第二代・四代頭取を務め、仙台商工会議所の初代会頭でもありました。明治23年に払い下げが決まった鶴ヶ城跡を購入し、旧会津藩主・松平容大に献納した人物です。千手観世音は弘法大師空海作と伝わるもので、かつては大崎八幡宮別当・龍宝寺の塔頭「観瀧庵」に祀られていましたが、1868年の廃仏毀釈で観瀧庵が廃寺となり、2015年から充国寺が後を引き継いでお祀りしています。"
+          },
+          {
+            "heading": "内容（供養・お墓）",
+            "body": "充国寺では家族墓・一般墓・永代供養墓・個別永代供養墓・合葬墓・ペット供養墓など多様なお墓を境内に整備しています。宗旨宗派を問わず利用でき、生前の相談や見学にも対応しています。個別永代供養墓は4人程度の納骨が可能で、個別に花や線香をあげてお参りできます。屋内に設けられた納骨堂は気候や天候に関わらずお参りでき、銘板や法要スペースが併設されています。ご供養は49日・100ヶ日・1周忌等の年忌法要や命日の法要のほか、災厄消除・家内安全・病気平癒・心願成就・初参り・七五三などの祈願も承っています。結婚式も執り行っています。法要や祈願はあらかじめ電話で予約が必要です。年中行事として、1月初旬の修正会、3月の春彼岸法要、8月11日のお盆法要、9月の秋彼岸法要を行っており、法要後には新年会や茶話会の場も設けています。"
+          },
+          {
+            "heading": "内容（茶道教室・催し物）",
+            "body": "境内に茶室があり、遠州流茶道の教室を開催しています。遠州流は小堀遠州によって創始された流派で、指導は上席家元師範代の三浦宗啓が担当しています。開催は第2・第4日曜日と第2・第4月曜日の各10:00〜14:00です。また写経会では筆ペンでも参加でき、初めての方には用紙や作法の案内があります。念仏会では「南無阿弥陀仏」とお称えしながら木魚を打ち、終了後に茶話会も開いています。年に一度「寺ジャズ」を開催しており、本堂をステージにプロのジャズミュージシャンが演奏します。2024年9月29日に開催された回には地域住民やジャズファンら約120人が集まり、サックスやピアノの演奏が本堂に響きました。そのほか過去にはフラダンス・ハンドベル・ヴァイオリン演奏・社交ダンス・居合道などさまざまな催しを行っています。"
+          },
+          {
+            "heading": "行き方と使い方",
+            "body": "JR仙山線北山駅から徒歩15分、または「輪王寺前」バス停から徒歩5分です。境内に普通車20台分の駐車場があります。御朱印は本尊の阿弥陀如来と、仙台三十三観音第2番札所の千手観世音の2種類を授けており、朱印帳を忘れた方向けに紙の御朱印も用意しています。茶道教室・写経会・念仏会などへの参加や、お墓・永代供養の相談は電話（022-234-1271）でお問い合わせください。法要・祈願はあらかじめ電話で予約が必要です。"
+          }
+        ],
+        "menus": [
+          {
+            "name": "家族墓"
+          },
+          {
+            "name": "一般墓"
+          },
+          {
+            "name": "永代供養墓"
+          },
+          {
+            "name": "個別永代供養墓"
+          },
+          {
+            "name": "合葬墓"
+          },
+          {
+            "name": "ペット供養墓"
+          },
+          {
+            "name": "茶道教室（遠州流）"
+          },
+          {
+            "name": "写経会"
+          }
+        ],
+        "sources": [
+          {
+            "label": "公式サイト",
+            "url": "https://jukokuji.jp/"
+          },
+          {
+            "label": "公式サイト（お寺の様子）",
+            "url": "https://jukokuji.jp/about"
+          },
+          {
+            "label": "公式サイト（お墓）",
+            "url": "https://jukokuji.jp/tomb"
+          },
+          {
+            "label": "公式サイト（年中行事）",
+            "url": "https://jukokuji.jp/schedule"
+          },
+          {
+            "label": "公式サイト（催し物）",
+            "url": "https://jukokuji.jp/event"
+          },
+          {
+            "label": "公式サイト（茶道教室）",
+            "url": "https://jukokuji.jp/teaceremony"
+          },
+          {
+            "label": "河北新報",
+            "url": "https://kahoku.news/articles/20240929khn000021.html"
+          },
+          {
+            "label": "hasunoha",
+            "url": "https://hasunoha.jp/temples/10244"
+          },
+          {
+            "label": "Google マップ",
+            "url": "https://maps.google.com/?cid=13129537961285037812"
+          }
+        ],
+        "checkedAt": "2026-11-11"
+      }
+    },
+    {
+      "id": "li0214",
+      "vertical": "life",
+      "category": "shrine-temple",
+      "name": "御津宮 (御津八幡宮)",
+      "pref": "osaka",
+      "cityName": "大阪市中央区",
+      "address": "大阪府大阪市中央区西心斎橋2丁目10-7",
+      "lat": 34.6713314,
+      "lng": 135.4992746,
+      "hours": "毎日 09:00 - 12:15, 13:00 - 17:00",
+      "phone": "06-6211-8655",
+      "url": "https://mitsugu.org/",
+      "website": "https://mitsugu.org/",
+      "mapUrl": "https://maps.google.com/?cid=12445833186097700796",
+      "image": "/_portal/vshops/tri-life-497/g01.jpg",
+      "images": [
+        "/_portal/vshops/tri-life-497/g01.jpg",
+        "/_portal/vshops/tri-life-497/g02.jpg",
+        "/_portal/vshops/tri-life-497/g03.jpg",
+        "/_portal/vshops/tri-life-497/g04.jpg",
+        "/_portal/vshops/tri-life-497/g05.jpg",
+        "/_portal/vshops/tri-life-497/g06.jpg",
+        "/_portal/vshops/tri-life-497/g07.jpg",
+        "/_portal/vshops/tri-life-497/g08.jpg",
+        "/_portal/vshops/tri-life-497/g09.jpg",
+        "/_portal/vshops/tri-life-497/g10.jpg",
+        "/_portal/vshops/tri-life-497/s04.jpg",
+        "/_portal/vshops/tri-life-497/s05.jpg",
+        "/_portal/vshops/tri-life-497/s06.jpg",
+        "/_portal/vshops/tri-life-497/s07.jpg",
+        "/_portal/vshops/tri-life-497/s08.jpg",
+        "/_portal/vshops/tri-life-497/s10.jpg",
+        "/_portal/vshops/tri-life-497/s11.jpg",
+        "/_portal/vshops/tri-life-497/s15.jpg",
+        "/_portal/vshops/tri-life-497/s17.jpg",
+        "/_portal/vshops/tri-life-497/s18.jpg"
+      ],
+      "photos": [
+        {
+          "path": "/_portal/vshops/tri-life-497/g01.jpg",
+          "what": "白い壁の拝殿正面外観",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 857
+        },
+        {
+          "path": "/_portal/vshops/tri-life-497/g02.jpg",
+          "what": "拝殿正面とその扉",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 675
+        },
+        {
+          "path": "/_portal/vshops/tri-life-497/g03.jpg",
+          "what": "拝殿を正面やや引いた角度から捉えた外観",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 866
+        },
+        {
+          "path": "/_portal/vshops/tri-life-497/g04.jpg",
+          "what": "鳥居と拝殿が見える境内入口",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 800
+        },
+        {
+          "path": "/_portal/vshops/tri-life-497/g05.jpg",
+          "what": "赤い鳥居と境内の様子",
+          "kind": "exterior",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-life-497/g06.jpg",
+          "what": "石造りの鳥居と白壁の拝殿",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-life-497/g07.jpg",
+          "what": "境内に置かれた白い石造りの像",
+          "kind": "common",
+          "width": 1000,
+          "height": 1000
+        },
+        {
+          "path": "/_portal/vshops/tri-life-497/g08.jpg",
+          "what": "境内入口付近の外観と周辺の街並み",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 675
+        },
+        {
+          "path": "/_portal/vshops/tri-life-497/g09.jpg",
+          "what": "ペット型絵馬が並ぶ絵馬掛け",
+          "kind": "common",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-life-497/g10.jpg",
+          "what": "境内の小祠（石宮社）",
+          "kind": "common",
+          "width": 1200,
+          "height": 800
+        },
+        {
+          "path": "/_portal/vshops/tri-life-497/s04.jpg",
+          "what": "白い拝殿と青空の外観",
+          "kind": "exterior",
+          "width": 1280,
+          "height": 853
+        },
+        {
+          "path": "/_portal/vshops/tri-life-497/s05.jpg",
+          "what": "ペット型絵馬が並ぶ絵馬掛けのアップ",
+          "kind": "common",
+          "width": 1280,
+          "height": 853
+        },
+        {
+          "path": "/_portal/vshops/tri-life-497/s06.jpg",
+          "what": "境内の通路と白壁の外観",
+          "kind": "exterior",
+          "width": 1280,
+          "height": 853
+        },
+        {
+          "path": "/_portal/vshops/tri-life-497/s07.jpg",
+          "what": "赤いはっぴ姿の担ぎ手による神輿渡御の様子",
+          "kind": "common",
+          "width": 1280,
+          "height": 853
+        },
+        {
+          "path": "/_portal/vshops/tri-life-497/s08.jpg",
+          "what": "亀の形をした台石（撫で亀）",
+          "kind": "common",
+          "width": 1280,
+          "height": 853
+        },
+        {
+          "path": "/_portal/vshops/tri-life-497/s10.jpg",
+          "what": "犬の顔を描いたペット型絵馬",
+          "kind": "meal",
+          "width": 600,
+          "height": 600
+        },
+        {
+          "path": "/_portal/vshops/tri-life-497/s11.jpg",
+          "what": "「御津八幡宮」と書かれた御朱印",
+          "kind": "common",
+          "width": 865,
+          "height": 1280
+        },
+        {
+          "path": "/_portal/vshops/tri-life-497/s15.jpg",
+          "what": "赤いはっぴを着た担ぎ手が神輿を担ぐ秋祭の様子",
+          "kind": "common",
+          "width": 1280,
+          "height": 546
+        },
+        {
+          "path": "/_portal/vshops/tri-life-497/s17.jpg",
+          "what": "複数のお守りが並ぶ授与品の様子",
+          "kind": "meal",
+          "width": 1280,
+          "height": 719
+        },
+        {
+          "path": "/_portal/vshops/tri-life-497/s18.jpg",
+          "what": "複数のペット型絵馬が並ぶ様子",
+          "kind": "common",
+          "width": 1280,
+          "height": 394
+        }
+      ],
+      "tags": [
+        "子ども向け",
+        "駅近"
+      ],
+      "article": {
+        "headline": "大阪・心斎橋の繁華街に鎮座する、天平勝寶元年（749）創建の八幡宮。ミナミの産土の社として、季節ごとの祭礼や月替わり御朱印で多くの参拝者を迎える。",
+        "lede": "大阪市中央区にある「御津宮（御津八幡宮）」です。心斎橋・アメリカ村エリアの一角、御堂筋から一本入った「八幡筋」沿いに境内を構え、現在の心斎橋一帯の産土の社として知られています。孝謙天皇の天平勝寶元年（749）、奈良の手向山八幡宮が東大寺の守護神として宇佐神宮（大分県）から勧請された折、宇佐からの神輿がこの地に上陸・一時安置され、後にこれを御津八幡宮と改めたと伝えられています。御祭神は応神天皇・仲哀天皇・比咩大神（神功皇后）の三柱で、御神徳は厄除開運・安産守護・必勝祈願です。境内は約400坪とコンパクトながら、常時参拝者が訪れ、今も神社前を東西に伸びる街路は「八幡筋」という名で呼ばれています。",
+        "sections": [
+          {
+            "heading": "由緒・歴史",
+            "body": "御津宮（御津八幡宮）は、江戸時代初期以来、全国有数の商業の街として発展してきた心斎橋一帯の産土の社です。石清水八幡宮（京都府）が源氏の氏神として勢力を伸ばした時代には、当宮もこの地に広大な社領を有していました。境内には後鳥羽上皇（第82代天皇）による勅願所碑があり、古くから朝廷との深い縁を持ちます。勅願所碑は亀の形をした台石（亀趺・きふ）の上に載る形で、寛政年間（1790年代）刊行の「攝津名所圖會」にも描かれた史跡です。昭和20年（1945）の大阪大空襲で本殿・拝殿全てが焼失しましたが、昭和35年（1960）に再建されました。狛犬は本殿再建に合わせて昭和37年（1962）に奉納されたものです。当宮に伝わる古文書「御津八幡宮文書」一括1,695点は、平成29年（2017）に大阪市指定有形文化財に指定されています。"
+          },
+          {
+            "heading": "内容（商品・サービス・教え）",
+            "body": "御津宮では、季節に合わせた「月替わり印」を入れた御朱印を授与しています。月替わり印は1月の「日の出」から始まり、2月「豆まき」、3月「ひな祭」、4月「桜」、5月「兜」、6月「アジサイ」、7月「七夕」、8月「ひまわり」、9月「お月見」、10月「おみこし」、11月「七五三」、12月「かまくら」と年間を通じてデザインが変わります。神職が御朱印帳へ直書きで授与するのが通常の形で、不在の際は書き置きで対応します。授与品はお札・お守り・絵馬・おみくじなど多種にわたり、お守りは健康守・安産守・交通安全守・学業成就守・ペット守・えんむすび守など複数の種類があります。絵馬はペットの顔を自分で描けるペット型絵馬をはじめ、縁結び用のハート型絵馬なども用意しています。おみくじは英文訳付きです。ホームページ上には「WEB絵馬堂」が設けられており、奉納されたペット型絵馬をオンラインで展示しています。"
+          },
+          {
+            "heading": "利用の流れ",
+            "body": "各種御祈祷と出張祭は要予約です。予約は事前にお電話かご来社の上で受け付けています。本殿祈祷では初宮詣・七五三詣・厄除け・家内安全・商売繁盛・開業開店祈願など個人・法人を問わず対応します。出張祭は地鎮祭・上棟祭・竣工祭・事務所開き・開店清祓なども受け付けています。月ごとの定例行事として、毎月1日に月旦祭、毎月15日に月次祭が行われます。年間の主な行事は、1月1日の歳旦祭、1月15日のとんど（しめ縄や古いお札の焚き上げ）、節分当日夜の節分祭追儺神事（豆まき）、4月上旬の観桜会、6月15日の例祭、6月30日の夏越の大祓、7月14日・15日の夏祭、10月の秋祭（神輿渡御）、12月31日の年越の大祓です。節分祭では総数約5,000個の福豆が配られ、午後7時から15分おきに午後8時30分まで計7回の豆まきが行われます。境内には氏子より奉納されたソメイヨシノが4本あり、満開の時期に合わせて観桜会を開いています。"
+          },
+          {
+            "heading": "行き方と使い方",
+            "body": "OsakaMetro御堂筋線・長堀鶴見緑地線「心斎橋」駅7番出口から、御堂筋を南（難波方面）へ約250m進み、「御堂筋八幡町」の交差点を右（西）へ曲がって約70mです。駐車場はありません。お車でお越しの際は周辺の有料駐車場をご利用ください。御朱印・お守りなどの授与所は午前9時から午後0時15分、午後1時から午後5時まで開いています。御祈祷・出張祭の予約は電話（06-6211-8655）またはご来社で受け付けています。境内への入門は午前7時から開いており、閉門は午後6時です。"
+          }
+        ],
+        "menus": [
+          {
+            "name": "御朱印（月替わり印入り）"
+          },
+          {
+            "name": "ペット型絵馬"
+          },
+          {
+            "name": "ハート型縁結び絵馬"
+          },
+          {
+            "name": "開運招福・諸願成就絵馬"
+          },
+          {
+            "name": "健康守"
+          },
+          {
+            "name": "安産守"
+          },
+          {
+            "name": "えんむすび守"
+          },
+          {
+            "name": "ペット守"
+          }
+        ],
+        "sources": [
+          {
+            "label": "公式サイト",
+            "url": "https://mitsugu.org/"
+          },
+          {
+            "label": "公式サイト（御津宮について）",
+            "url": "https://mitsugu.org/about/"
+          },
+          {
+            "label": "公式サイト（ギャラリー）",
+            "url": "https://mitsugu.org/gallery/"
+          },
+          {
+            "label": "公式サイト（御朱印）",
+            "url": "https://mitsugu.org/stamp/"
+          },
+          {
+            "label": "公式サイト（御祈祷・祭典）",
+            "url": "https://mitsugu.org/prayer/"
+          },
+          {
+            "label": "大阪観光局",
+            "url": "https://osaka-info.jp/spot/mitsugu/"
+          },
+          {
+            "label": "Google マップ",
+            "url": "https://maps.google.com/?cid=12445833186097700796"
+          }
+        ],
+        "checkedAt": "2026-11-11"
+      }
     }
   ]
 }

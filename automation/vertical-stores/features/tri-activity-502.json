@@ -1,0 +1,301 @@
+{
+  "key": "tri-activity-502",
+  "vertical": "activity",
+  "storeName": "たけの花 takenohana",
+  "article": {
+    "id": "たけの花takenohana",
+    "no": "",
+    "articleType": "guide",
+    "kicker": "TAKENOHANA KAIYO-CHO TOKUSHIMA",
+    "title": "徳島県海陽町の竹あかり工房。竹あかりづくり体験の流れと、素材・デザインのこだわり",
+    "titleHTML": "徳島県海陽町の竹あかり工房<br><em>たけの花 takenohana</em>の竹あかりづくり体験と素材のこだわり",
+    "subtitle": "ものづくり体験 / 徳島県海部郡海陽町 / 竹あかりづくり・空間装飾",
+    "lede": "たけの花 takenohanaは、徳島県海部郡海陽町吉野に工房を構える竹あかりの制作工房だ。2018年に大阪から移住した桧垣健さんとフランス出身のフローレンスさんが運営している。竹の表面に型紙を貼り、ドリルで穴を開けることで光が透けるランプシェードを制作する。工房では約40種類のデザインコレクションを持ち、竹あかりの販売、体験ワークショップ、イベントや式場などへの空間装飾を手がけている。2025年8月には長崎で開催されたMISIA CANDLE NIGHT 2025のステージ装飾も担当した。",
+    "date": "2026-11-11",
+    "reading": "",
+    "author": "マチノワ編集部",
+    "heroImage": "/_portal/vshops/tri-activity-502/g01.jpg",
+    "ogImage": "/_portal/vshops/tri-activity-502/g01.jpg",
+    "ranking": [
+      {
+        "rank": "POINT 01",
+        "rankNum": 1,
+        "name": "竹あかりづくり体験の工程と所要時間",
+        "cuisine": "体験の流れ",
+        "area": "海部郡海陽町",
+        "purpose": "体験の流れを知りたい人へ",
+        "desc": "竹あかりづくり体験は約2時間で完結する。まず自分好みの竹を選ぶところから始まる。竹はどれ一つ同じ形がないため、形や太さを見比べながら選ぶ。次に約50種類の型紙から好きなデザインを組み合わせ、型紙を竹に貼ってドリルで穴を開けていく。穴開け作業は講師がサポートし、小学生以上であれば参加できる。低学年の子どもは保護者同伴が必要だ。最後に講師が竹を火で炙り、中にライトを入れて完成する。体験ではゴム付き手袋と上履きを持参することが推奨されている。",
+        "images": [
+          "/_portal/vshops/tri-activity-502/g09.jpg"
+        ],
+        "specs": [
+          {
+            "k": "所要時間",
+            "v": "約2時間"
+          },
+          {
+            "k": "対象",
+            "v": "小学生以上（低学年は保護者同伴）"
+          }
+        ]
+      },
+      {
+        "rank": "POINT 02",
+        "rankNum": 2,
+        "name": "素材と制作技術のこだわり",
+        "cuisine": "素材と技術",
+        "area": "海部郡海陽町",
+        "purpose": "竹あかりがどのように作られるかを知りたい人へ",
+        "desc": "竹あかりは、竹の表面に設計図を貼り、ドリルで穴を開けて制作する。フローレンスさんが主にデザインを担当し、健さんとイメージをすり合わせながら仕上げる。デザインは曼荼羅模様など自然からの影響を受けたものが中心で、工房には約40種類のデザインコレクションがある。素材の竹は3〜4年の乾燥が必要で、割れ防止のため事前に裏側を割く処理をする。放置竹林の伐採竹を使っており、桧垣夫妻が海陽町の竹林に自ら切りに行っている。",
+        "images": [
+          "/_portal/vshops/tri-activity-502/g05.jpg"
+        ],
+        "specs": [
+          {
+            "k": "デザイン数",
+            "v": "約40種類"
+          },
+          {
+            "k": "竹の乾燥期間",
+            "v": "3〜4年"
+          }
+        ]
+      },
+      {
+        "rank": "POINT 03",
+        "rankNum": 3,
+        "name": "グループ体験の条件と予約",
+        "cuisine": "コースと所要時間",
+        "area": "海部郡海陽町",
+        "purpose": "グループで予約したい人へ",
+        "desc": "竹あかりづくり体験は完全予約制で、4名以上20名以下のグループを対象としている。個人での飛び込み参加はできない。体験は小学生以上が参加でき、低学年の場合は保護者同伴が必要だ。型紙は約50種類から選べるため、同じグループでも参加者それぞれが異なるデザインの竹あかりを作ることができる。体験3日前の17:00までキャンセルが可能だ。予約はじゃらん遊び体験のページからネット予約ができる。",
+        "images": [
+          "/_portal/vshops/tri-activity-502/g03.jpg"
+        ],
+        "specs": [
+          {
+            "k": "参加人数",
+            "v": "4名以上20名以下"
+          },
+          {
+            "k": "キャンセル期限",
+            "v": "体験3日前の17:00まで"
+          }
+        ]
+      }
+    ],
+    "sideArticles": [],
+    "quote": "桧垣夫妻が海陽町の竹林から自ら切ってきた竹に、ドリルで穴を開けて制作する竹あかり。約50種類の型紙から選んで約2時間で自分だけの一点を仕上げる体験ワークショップを、4名以上のグループに提供している。",
+    "quoteCite": "マチノワ編集部",
+    "closing": "工房は海陽町吉野にあり、徳島ICから国道11号線と国道55号線を経由して室戸方面へ約2時間の場所に位置する。体験は完全予約制で、じゃらん遊び体験のページからネット予約ができる。体験3日前の17:00までキャンセルが可能だ。"
+  },
+  "summary": "たけの花 takenohanaの竹あかりづくり体験を整理。型紙選びから穴開け・仕上げまでの工程、素材となる竹のこだわり、完全予約制のグループ体験の内容をまとめた特集。",
+  "tags": [
+    "ものづくり体験",
+    "海部郡海陽町"
+  ],
+  "charCount": 1069,
+  "facts": [
+    {
+      "claim": "体験ワークショップは完全予約制で4名以上20名以下のグループを対象とする",
+      "source": "https://www.kaiyo-kankou.jp/spots/spots-1121/",
+      "quote": "対象人数: 4～20人",
+      "checkedAt": "2026-11-11"
+    },
+    {
+      "claim": "体験の所要時間は約2時間",
+      "source": "https://www.kaiyo-kankou.jp/spots/spots-1121/",
+      "quote": "所要時間: 約2時間",
+      "checkedAt": "2026-11-11"
+    },
+    {
+      "claim": "体験は小学生以上が参加でき、低学年は保護者同伴が必要",
+      "source": "https://aitripper.jp/tokushimasouth/minami/activity/f51917c7-0517-58b8-a6d9-280121a3018d",
+      "quote": "小学生以上。低学年は保護者同伴が必要",
+      "checkedAt": "2026-11-11"
+    },
+    {
+      "claim": "体験の工程は竹選び・型紙選び・ドリルで穴開け・火で炙って仕上げ・ライトを入れて完成の順で進む",
+      "source": "https://aitripper.jp/tokushimasouth/minami/activity/f51917c7-0517-58b8-a6d9-280121a3018d",
+      "quote": "竹を選ぶ→デザイン決定→穴開け作業→仕上げ(火で炙りライトを入れて完成)",
+      "checkedAt": "2026-11-11"
+    },
+    {
+      "claim": "型紙は約50種類から選べる",
+      "source": "https://aitripper.jp/tokushimasouth/minami/activity/f51917c7-0517-58b8-a6d9-280121a3018d",
+      "quote": "約50種類の型紙から好きに組み合わせて選択",
+      "checkedAt": "2026-11-11"
+    },
+    {
+      "claim": "体験ではゴム付き手袋と上履きを持参することが推奨されている",
+      "source": "https://aitripper.jp/tokushimasouth/minami/activity/f51917c7-0517-58b8-a6d9-280121a3018d",
+      "quote": "持ち物: ゴム付き手袋、上履き（推奨）",
+      "checkedAt": "2026-11-11"
+    },
+    {
+      "claim": "桧垣健さんとフランス出身のフローレンスさん夫妻が運営している",
+      "source": "https://tokushima.goguynet.jp/2022/10/19/takeakaria-telisutotakenohanatakeakariibento/",
+      "quote": "桧垣（ひがき）ご夫妻で構成。健（たけし）さんとフローレンスさんが大阪から海部郡海陽町へ移住",
+      "checkedAt": "2026-11-11"
+    },
+    {
+      "claim": "2018年に大阪から海陽町へ移住した",
+      "source": "https://www.kaiyo-kankou.jp/spots/spots-1121/",
+      "quote": "2018年に海陽町へ移住",
+      "checkedAt": "2026-11-11"
+    },
+    {
+      "claim": "フローレンスさんが主にデザインを担当し、健さんとイメージをすり合わせながら制作する",
+      "source": "https://tokushima.goguynet.jp/2022/10/19/takeakaria-telisutotakenohanatakeakariibento/",
+      "quote": "フローレンスさんがデザインを主に担当し、健さんとイメージをすり合わせながら制作",
+      "checkedAt": "2026-11-11"
+    },
+    {
+      "claim": "デザインは曼荼羅模様など自然からの影響を受けたものが多く、約40種類のデザインコレクションがある",
+      "source": "https://tokushima.goguynet.jp/2022/10/19/takeakaria-telisutotakenohanatakeakariibento/",
+      "quote": "40種類ほどのデザインコレクション",
+      "checkedAt": "2026-11-11"
+    },
+    {
+      "claim": "放置竹林から伐採した竹を活用しており、海陽町の竹を桧垣夫妻が自ら切りに行っている",
+      "source": "https://www.t-tokushima.jp/feature/active/bamboo",
+      "quote": "海陽町の竹を使い、実際にお2人で切りに行かれている",
+      "checkedAt": "2026-11-11"
+    },
+    {
+      "claim": "工房では竹あかりの販売・ワークショップ・空間装飾を手がけている",
+      "source": "https://www.kaiyo-kankou.jp/spots/spots-1121/",
+      "quote": "竹灯りの販売、ワークショップ、空間装飾",
+      "checkedAt": "2026-11-11"
+    },
+    {
+      "claim": "2025年8月に長崎の稲佐山公園野外ステージで開催されたMISIA CANDLE NIGHT 2025のステージ装飾を担当した",
+      "source": "https://www.thefirsttimes.jp/report/0000670600/",
+      "quote": "MISIA CANDLE NIGHT 2025で竹灯り「たけの花」の作品がステージ装飾として使用された",
+      "checkedAt": "2026-11-11"
+    },
+    {
+      "claim": "2017年10月に海陽町の常楽寺でのパフォーマンスで照明を担当したことをきっかけに竹灯り制作を始めた",
+      "source": "https://tokushima.goguynet.jp/2022/10/19/takeakaria-telisutotakenohanatakeakariibento/",
+      "quote": "海陽町の常楽寺でのパフォーマンスで照明担当、約20個の竹灯りを制作",
+      "checkedAt": "2026-11-11"
+    },
+    {
+      "claim": "工房名「たけの花」は竹に120年に一度咲く花の現象に由来する",
+      "source": "https://tokushima.goguynet.jp/2022/10/19/takeakaria-telisutotakenohanatakeakariibento/",
+      "quote": "「たけの花」という名称は竹に咲く花が120年に一度咲く現象に由来",
+      "checkedAt": "2026-11-11"
+    },
+    {
+      "claim": "体験キャンセルは3日前の17:00まで可能",
+      "source": "https://www.jalan.net/kankou/spt_guide000000217190/activity/l00003EEE4/",
+      "quote": "キャンセルは体験3日前の17:00まで可能",
+      "checkedAt": "2026-11-11"
+    },
+    {
+      "claim": "徳島ICから国道11号線と国道55号線を経由して室戸方面へ約2時間の場所にある",
+      "source": "https://www.kaiyo-kankou.jp/spots/spots-1121/",
+      "quote": "徳島ICから国道11号線（徳島市内経由）、国道55号線で室戸方面へ約2時間",
+      "checkedAt": "2026-11-11"
+    },
+    {
+      "claim": "じゃらん遊び体験のページからネット予約が可能",
+      "source": "https://www.jalan.net/kankou/spt_guide000000217190/activity/l00003EEE4/",
+      "quote": "ネット予約OK",
+      "checkedAt": "2026-11-11"
+    },
+    {
+      "claim": "工房の営業時間はAM9:00～PM5:00、定休日は不定休",
+      "source": "https://www.kaiyo-kankou.jp/spots/spots-1121/",
+      "quote": "営業時間: AM9:00～PM5:00、定休日: 不定休",
+      "checkedAt": "2026-11-11"
+    }
+  ],
+  "images": [
+    {
+      "path": "/_portal/vshops/tri-activity-502/g01.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9RmfZkfAqgLyX-YdxWHXT5Akin6N7XHSXTcB3CGe5RVFCM3IBd1UuzUHO1JBm-d08BqKOrl5hvsVxCy6_aDkVIb9qJpV6UFqyfczRaWs-kQTNsQmQaTk-IDcmm5T2LaGpUDSGT7=s1200",
+      "pageUrl": "https://maps.google.com/?cid=10901699324380872302",
+      "what": "壁に飾られた曼荼羅模様の円形竹あかり作品"
+    },
+    {
+      "path": "/_portal/vshops/tri-activity-502/g03.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9Sq4qwKrpdNi8wSEZnNJN5ly0MIA69BEacHEhiB3VOmb8V64dw5r3T7RxgjjamV_pcb7Hz3S_5jEH1AmA1VzKESLXDvkNhpIGPRrBulOEoXeK0INOZuHevdCh7l6FQy8tu-YnEvRg=s1200",
+      "pageUrl": "https://maps.google.com/?cid=10901699324380872302",
+      "what": "野外ステージに設置された大型の竹あかり装飾"
+    },
+    {
+      "path": "/_portal/vshops/tri-activity-502/g04.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9R2Ehx36upTWbRHatuh-6fNbYiPqrTo-0npTDbXdR0Tzi628fil-GQIXeGgLhFyfxzWjZLptBn0QsbqSlWTjbE8w4738WzUWHDeRCKNZd0qXxs9cg_KokHzLYC_sk6hsIPQ1phHrA=s1200",
+      "pageUrl": "https://maps.google.com/?cid=10901699324380872302",
+      "what": "大型の円形竹あかり作品の前で作業する人物"
+    },
+    {
+      "path": "/_portal/vshops/tri-activity-502/g05.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9SF-AZczPiOWAoF8PNKc_jY6UqpEbnWsxlvVmmesIFMugKPkSLuGGfNNFRh6OfiZ1rtNVzca5gApjM7mzjvlAmneAXoenjjGzyzGr0eokjjiHCkWdJLMws7KMi6wZHP9_K4yabLiQ=s1200",
+      "pageUrl": "https://maps.google.com/?cid=10901699324380872302",
+      "what": "室内に展示された曼荼羅模様の竹あかりを見る子ども"
+    },
+    {
+      "path": "/_portal/vshops/tri-activity-502/g06.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9Q9QCgu4pU6Vc26NreNRYni4uZXYvRAujyzBPXr21TIBNIDKA62Td2EiQhwi3hMlIqFixjPNYgENbWcmnTJTJrQf-6TkbpmUEgW-trFT6L3VZ6J8mgc6LoUyNOT15RYXqecFAmZ=s1200",
+      "pageUrl": "https://maps.google.com/?cid=10901699324380872302",
+      "what": "イベント会場に設置されたアーチ状の竹あかり空間装飾"
+    },
+    {
+      "path": "/_portal/vshops/tri-activity-502/g07.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9Qr6LPmpOeEepJjH2bl4BOwwaO1ABJNM5RM7B87EIbXKmWaxPv-pJ9IXCoAe33y5kfEbyEqFvNwvPTezNE7k3zIrFGNiNSvwFJiZI4zNY22o2B7Qnu9LyM8qptqXazdvRb3ciehJA=s1200",
+      "pageUrl": "https://maps.google.com/?cid=10901699324380872302",
+      "what": "野外に立てられた円柱状の竹あかり作品"
+    },
+    {
+      "path": "/_portal/vshops/tri-activity-502/g08.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9QMku8wqJUyXMGhxUQhvSXLDE3WNQbF2LNW7PIaeTzAPVDxojVJh9XIjFpu9qi7unoCAPRdEgMICE0O5aSduThfZtulaMrHNe6W-EujqXoga3zGPHm9LP60KVmhF-HjHWwvwOo=s1200",
+      "pageUrl": "https://maps.google.com/?cid=10901699324380872302",
+      "what": "夕暮れの屋外に展示された大型竹あかりオブジェ"
+    },
+    {
+      "path": "/_portal/vshops/tri-activity-502/g09.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9QxlTGtiMFU_t6aDotAGEqedZCfsal2lE8ZLpFM7KoMwI_jw1HTTAJD6x69p1b8eTRnoKDnHEueQk_ZZhR2qJiBF4uSXD8XS_EmC-9kUV9f1eKIz6QSpaAm3OUNlFr3QQz8ro4rNA=s1200",
+      "pageUrl": "https://maps.google.com/?cid=10901699324380872302",
+      "what": "テーブルと道具が並ぶ竹あかり体験ワークショップの室内"
+    },
+    {
+      "path": "/_portal/vshops/tri-activity-502/g10.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9SzprHGN1tKC4fKYdxhplGqkEVmY0ej5tITcIqRv0vAc4vW5OAMvb0ILrAypPNN08cfjoxHMXKfSvj_ODrzKr5RYjtnOdKs6wS1XEbwoI6YiThjab1CGesK5iCol0SXJnPD1Tyn=s1200",
+      "pageUrl": "https://maps.google.com/?cid=10901699324380872302",
+      "what": "夜の野外に並んだ竹あかりの列"
+    }
+  ],
+  "sources": [
+    {
+      "label": "海陽町観光協会",
+      "url": "https://www.kaiyo-kankou.jp/spots/spots-1121/"
+    },
+    {
+      "label": "じゃらん遊び体験",
+      "url": "https://www.jalan.net/kankou/spt_guide000000217190/activity/l00003EEE4/"
+    },
+    {
+      "label": "aitripper 竹あかりづくり体験",
+      "url": "https://aitripper.jp/tokushimasouth/minami/activity/f51917c7-0517-58b8-a6d9-280121a3018d"
+    },
+    {
+      "label": "徳島観光情報サイト(t-tokushima)",
+      "url": "https://www.t-tokushima.jp/feature/active/bamboo"
+    },
+    {
+      "label": "tokushima.goguynet インタビュー記事",
+      "url": "https://tokushima.goguynet.jp/2022/10/19/takeakaria-telisutotakenohanatakeakariibento/"
+    },
+    {
+      "label": "THE FIRST TIMES MISIA CANDLE NIGHT 2025ライブレポート",
+      "url": "https://www.thefirsttimes.jp/report/0000670600/"
+    },
+    {
+      "label": "Google マップ",
+      "url": "https://maps.google.com/?cid=10901699324380872302"
+    }
+  ],
+  "notes": "automation/v2/write.mjs が 2026-11-11 に作成。"
+}

@@ -1,0 +1,40 @@
+{
+  "tab": "トリニティアポ",
+  "tabEn": "tri-activity",
+  "row": 501,
+  "sheet": {
+    "name": "Flowersalon Topaz",
+    "address": "",
+    "url": "https://www.google.com/maps/search/?api=1&query=Flowersalon%20Topaz%20090-3377-9889%20%E3%80%92730-0805%20%E5%BA%83%E5%B3%B6%E7%9C%8C%E5%BA%83%E5%B3%B6%E5%B8%82%E4%B8%AD%E5%8C%BA%E5%8D%81%E6%97%A5%E5%B8%82%E7%94%BA%EF%BC%92%E4%B8%81%E7%9B%AE%EF%BC%95%E2%88%92%EF%BC%92%EF%BC%94%20%E3%82%A2%E3%83%B3%E3%83%97%E3%83%AC%E3%83%83%E3%82%B7%E3%82%AA%E3%83%B3%E5%8D%81%E6%97%A5%E5%B8%82",
+    "type": "体験",
+    "d1": "",
+    "d2": ""
+  },
+  "urlKind": "mapsApi",
+  "route": "第1段(verify-gbp.mjs)で確認済み",
+  "verdict": "一致",
+  "verdictReason": "手がかり: 電話＋住所(番地まで)。電話が一致／店名: different(シート「Flowersalon Topaz」/ マップ「フラワーサロン トパーズ fowersalonTopaz」)／住所(シート): exact・町名・番地とも一致",
+  "place": {
+    "name": "フラワーサロン トパーズ fowersalonTopaz",
+    "address": "広島県広島市中区十日市町２丁目５−２４ アンプレッシオン十日市",
+    "category": "フラワーデザイナー",
+    "lat": 34.399255,
+    "lng": 132.4492257,
+    "gbpUrl": "https://maps.google.com/?cid=7691206612312998803",
+    "phone": "090-3377-9889",
+    "website": "https://flowersalontopaz.com/",
+    "hours": {
+      "月": "09:00–17:00",
+      "火": "09:00–17:00",
+      "水": "09:00–17:00",
+      "木": "09:00–17:00",
+      "金": "09:00–17:00",
+      "土": "09:00–17:00",
+      "日": "09:00–17:00"
+    },
+    "reserveLinks": [],
+    "statusSignals": [],
+    "closedSignal": false
+  },
+  "fetchedAt": "2026-11-11T04:12:25.751Z"
+}

@@ -189,6 +189,10 @@ export const ONE_PAGE_UNLISTED_SHOP_OF_FEATURE: Readonly<Record<string, string>>
   "寿司処なら": "r919", // 寿司処 なら
   "浅草ロゼ": "r920", // 浅草ロゼ
   "フルサト": "r921", // フルサト
+  "ナチュランド": "r922", // ナチュランド
+  "まんま亭・武藤": "r923", // まんま亭・武藤
+  "フルーツワイナリーエスプリ(東根フルーツワイン)": "r924", // フルーツワイナリーエスプリ(東根フルーツワイン)
+  "ぱろぱとBAKERY": "r925", // ぱろぱとBAKERY
 };
 
 const NFC = (s: string) => s.normalize("NFC");

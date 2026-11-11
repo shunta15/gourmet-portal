@@ -10653,6 +10653,754 @@
         ],
         "checkedAt": "2026-11-10"
       }
+    },
+    {
+      "id": "ac0063",
+      "vertical": "activity",
+      "category": "sea-river",
+      "name": "EVERGREEN奄美🌱照井農園",
+      "pref": "kagoshima",
+      "cityName": "奄美市",
+      "address": "鹿児島県奄美市笠利町大字手花部3151-1",
+      "lat": 28.4442447,
+      "lng": 129.6611043,
+      "hours": "月-土 08:00 - 21:00 / 日 09:00 - 21:00",
+      "phone": "080-3907-7850",
+      "url": "https://evergreen-amami.com/",
+      "website": "https://evergreen-amami.com/",
+      "mapUrl": "https://maps.google.com/?cid=17641909341940733295",
+      "image": "/_portal/vshops/tri-activity-494/g01.jpg",
+      "images": [
+        "/_portal/vshops/tri-activity-494/g01.jpg",
+        "/_portal/vshops/tri-activity-494/g02.jpg",
+        "/_portal/vshops/tri-activity-494/g03.jpg",
+        "/_portal/vshops/tri-activity-494/g04.jpg",
+        "/_portal/vshops/tri-activity-494/g05.jpg",
+        "/_portal/vshops/tri-activity-494/g06.jpg",
+        "/_portal/vshops/tri-activity-494/g07.jpg",
+        "/_portal/vshops/tri-activity-494/g08.jpg",
+        "/_portal/vshops/tri-activity-494/g09.jpg",
+        "/_portal/vshops/tri-activity-494/g10.jpg",
+        "/_portal/vshops/tri-activity-494/s07.jpg",
+        "/_portal/vshops/tri-activity-494/s10.jpg",
+        "/_portal/vshops/tri-activity-494/s11.jpg",
+        "/_portal/vshops/tri-activity-494/s12.jpg",
+        "/_portal/vshops/tri-activity-494/s15.jpg",
+        "/_portal/vshops/tri-activity-494/s16.jpg"
+      ],
+      "photos": [
+        {
+          "path": "/_portal/vshops/tri-activity-494/g01.jpg",
+          "what": "緑に囲まれた滝と澄んだ滝壺",
+          "kind": "view",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-494/g02.jpg",
+          "what": "奄美大島北部の海岸線と緑の丘の遠景",
+          "kind": "view",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-494/g03.jpg",
+          "what": "マングローブの水路を進む赤いカヌー",
+          "kind": "view",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-494/g04.jpg",
+          "what": "亜熱帯の森に広がる大きなシダ植物と木々",
+          "kind": "view",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-494/g05.jpg",
+          "what": "マングローブの中を進む参加者のカヌー群",
+          "kind": "view",
+          "width": 1200,
+          "height": 675
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-494/g06.jpg",
+          "what": "地面にいる小動物（アマミノクロウサギとみられる）",
+          "kind": "view",
+          "width": 901,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-494/g07.jpg",
+          "what": "奄美大島の緑の山々と湾の風景",
+          "kind": "view",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-494/g08.jpg",
+          "what": "奄美大島の深い緑の山並みを俯瞰した景色",
+          "kind": "view",
+          "width": 1200,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-494/g09.jpg",
+          "what": "岩場の海岸に立つ2人と広がる海",
+          "kind": "view",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-494/g10.jpg",
+          "what": "緑に囲まれた奄美大島の湾の風景",
+          "kind": "view",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-494/s07.jpg",
+          "what": "白い雲と青い海・砂浜が広がる奄美の海岸",
+          "kind": "view",
+          "width": 960,
+          "height": 1280
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-494/s10.jpg",
+          "what": "マングローブの水路を漕ぐカヌーの後ろ姿",
+          "kind": "view",
+          "width": 1280,
+          "height": 801
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-494/s11.jpg",
+          "what": "奄美大島の緑の丘と青空の風景",
+          "kind": "view",
+          "width": 960,
+          "height": 1280
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-494/s12.jpg",
+          "what": "山に囲まれた奄美の静かな湾の風景",
+          "kind": "view",
+          "width": 960,
+          "height": 1280
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-494/s15.jpg",
+          "what": "緑の木々に囲まれた滝壺で過ごす様子",
+          "kind": "view",
+          "width": 960,
+          "height": 1280
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-494/s16.jpg",
+          "what": "深い緑の中に流れ落ちる細い滝",
+          "kind": "view",
+          "width": 720,
+          "height": 1280
+        }
+      ],
+      "tags": [
+        "初心者歓迎"
+      ],
+      "article": {
+        "headline": "鹿児島県奄美市笠利町を拠点に、マングローブカヌー・滝ツアー・ナイトツアーなど奄美大島の大自然を案内するプライベートツアー。奄美移住20年の農家ガイドが少人数制で運営する。",
+        "lede": "奄美市にある「EVERGREEN奄美」です。奄美移住20年のネイチャーガイド・照井朗が代表を務め、マングローブカヌー・滝ツアー・金作原原生林散策・ナイトツアー・絶景名所巡りなど複数のプランを提供しています。すべてプライベート貸切制で、2名以上7名以下の少人数で催行されます。照井は日本エコツーリズム協会会員であり、奄美群島認定エコツアーガイドの資格を持ちます。上級救急救命講習も修了しており、安全管理を重視した案内を行っています。東京都町田市出身で、サーフィン・バイク旅・登山などで自然に親しんだのち、自然農と出会い2003年に奄美へ移住しました。ツアーのほかに照井農園を経営し、パッション・たんかん・レモン・ハーブティーを栽培・販売しています。奄美群島eしまギフト（旅先納税）加盟店です。",
+        "sections": [
+          {
+            "heading": "体験の内容と流れ",
+            "body": "マングローブカヌーは住用にあるマングローブ原生林の中を、ガイドとしか入れない小道をカヌーで進むツアーです。体験時間は約2時間で、午前は9:30にカヌー乗り場に集合して11:30まで、午後は13:30集合で15:30まで行われます。半日ツアーの場合は現地集合となり、送迎が必要な場合は事前相談が必要です。滝ツアーには「滝散歩」と「滝浸かる」の2種類があります。滝散歩は亜熱帯原生林の中をゆっくり歩いてガイドブックに載っていない秘境の滝へ向かい、滝壺でリラックスしながら季節のハーブティーを飲んだり瞑想したりする体験です。滝浸かるは澄んだ水の滝壺で泳いだり飛び込んだりして遊ぶ体験で、体が冷えたらハーブティーで温まります。どちらも所要時間は約2時間で、午前は9:00に長浜みなと公園に集合して9:30に現地到着・11:30終了、午後は13:30集合・14:00現地到着・16:00終了です。"
+          },
+          {
+            "heading": "コースと所要時間",
+            "body": "半日プランと1日プランの両方があります。半日プランはマングローブカヌー（約2時間）・滝散歩（約2時間）・滝浸かる（約2時間）の3種類で、単独でも参加できます。1日満喫プランは半日ツアーを2つ組み合わせた内容で、マングローブカヌー＆滝散歩、マングローブカヌー＆滝浸かる、マングローブカヌー＆周辺巡り、金作原原生林散策＆マングローブカヌー、島名所巡り、湯湾岳原生林トレッキング＆周辺巡りなど複数のコースを用意しています。金作原原生林散策は世界自然遺産エリアにある原生林で、認定ガイドと同伴でなければ入れないエリアです。湯湾岳トレッキングは南西諸島最高峰の山へ登るコースで、山頂まで簡単なボードウォークが整備されており、世界遺産登録地域の原生林の雰囲気を楽しめます。ナイトツアーは約3時間で、アマミノクロウサギをはじめ、ケナガネズミ・リュウキュウコノハズク・ハブなど奄美固有の生き物を夜の森で観察します。1日1組限定のプライベート貸切で催行されます。"
+          },
+          {
+            "heading": "対象と準備",
+            "body": "マングローブカヌーの持ち物は雨具・飲み物・帽子・タオル・サンダル・着替えで、足元が濡れるためサンダルが推奨されています。多少水に濡れてもよい服装が必要で、雨具がない場合は現地でレンタルできます。滝散歩の持ち物は飲み物・おやつ・歩きやすいサンダルです。滝浸かるは水着着用のうえ参加し、持ち物は飲み物・着替え・タオル・サンダルです。滝の水温は低いため、夏場でもラッシュガードがあると快適です。山には蚊やブヨがいるため、肌が弱い方は虫よけスプレーか肌を露出しない服装が推奨されています。滝ツアーへの参加は小学生以上が対象です。気象状況によって中止になる場合があります。支払いは現金のみです。"
+          },
+          {
+            "heading": "行き方と使い方",
+            "body": "事務所は奄美市笠利町手花部にあり、奄美空港から車で約12分の距離です。北部から名瀬市街地（ルート内）への送迎に対応していますが、瀬戸内・宇検村・大和村エリアは送迎対象外です。半日ツアーは現地集合が基本となり、滝ツアーは長浜みなと公園、マングローブカヌーはカヌー乗り場が集合場所です。予約は公式サイトの予約・お問合せページから受け付けています。ベルトラ・じゃらんからも予約できます。ふるさと納税の旅先納税サービス「奄美群島eしまギフト」が使えます。"
+          }
+        ],
+        "menus": [
+          {
+            "name": "マングローブカヌー（半日）"
+          },
+          {
+            "name": "滝散歩（半日）"
+          },
+          {
+            "name": "滝浸かる（半日）"
+          },
+          {
+            "name": "マングローブカヌー＆滝散歩（1日）"
+          },
+          {
+            "name": "マングローブカヌー＆滝浸かる（1日）"
+          },
+          {
+            "name": "金作原原生林散策＆マングローブカヌー（1日）"
+          },
+          {
+            "name": "湯湾岳原生林トレッキング＆周辺巡り（1日）"
+          },
+          {
+            "name": "ナイトツアー（アマミノクロウサギ観察）"
+          }
+        ],
+        "sources": [
+          {
+            "label": "公式サイト",
+            "url": "https://evergreen-amami.com/"
+          },
+          {
+            "label": "公式サイト（1日満喫プラン）",
+            "url": "https://evergreen-amami.com/1day/"
+          },
+          {
+            "label": "公式サイト（マングローブカヌー）",
+            "url": "https://evergreen-amami.com/manguro-bukanu/"
+          },
+          {
+            "label": "公式サイト（滝ツアー）",
+            "url": "http://evergreen-amami.com/taki/"
+          },
+          {
+            "label": "ベルトラ（ナイトツアー）",
+            "url": "https://www.veltra.com/jp/japan/amamioshima/a/182595"
+          },
+          {
+            "label": "ベルトラ（滝散歩ツアー）",
+            "url": "https://www.veltra.com/jp/japan/amamioshima/a/182614"
+          },
+          {
+            "label": "amamitabi.com",
+            "url": "https://amamitabi.com/evergreen-amami/"
+          },
+          {
+            "label": "Google マップ",
+            "url": "https://maps.google.com/?cid=17641909341940733295"
+          }
+        ],
+        "checkedAt": "2026-11-11"
+      }
+    },
+    {
+      "id": "ac0064",
+      "vertical": "activity",
+      "category": "craft",
+      "name": "正藍染 小原屋",
+      "pref": "shizuoka",
+      "cityName": "御殿場市",
+      "address": "静岡県御殿場市萩原676",
+      "lat": 35.3048761,
+      "lng": 138.9297881,
+      "hours": "毎日 08:00 - 17:00",
+      "phone": "0550-82-0511",
+      "mapUrl": "https://maps.google.com/?cid=12456179994637738633",
+      "image": "/_portal/vshops/tri-activity-499/g01.jpg",
+      "images": [
+        "/_portal/vshops/tri-activity-499/g01.jpg",
+        "/_portal/vshops/tri-activity-499/g02.jpg",
+        "/_portal/vshops/tri-activity-499/g03.jpg",
+        "/_portal/vshops/tri-activity-499/g04.jpg",
+        "/_portal/vshops/tri-activity-499/g05.jpg",
+        "/_portal/vshops/tri-activity-499/g06.jpg",
+        "/_portal/vshops/tri-activity-499/g07.jpg",
+        "/_portal/vshops/tri-activity-499/g08.jpg",
+        "/_portal/vshops/tri-activity-499/g09.jpg",
+        "/_portal/vshops/tri-activity-499/g10.jpg"
+      ],
+      "photos": [
+        {
+          "path": "/_portal/vshops/tri-activity-499/g01.jpg",
+          "what": "藍染めのTシャツや着物が並ぶ工房内の様子",
+          "kind": "common",
+          "width": 1200,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-499/g02.jpg",
+          "what": "織り機や染め道具が並ぶ工房内の作業スペース",
+          "kind": "common",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-499/g03.jpg",
+          "what": "棚に並ぶ藍染めの反物と工房内の様子",
+          "kind": "common",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-499/g04.jpg",
+          "what": "藍染めの着物が吊り下げられて展示されている様子",
+          "kind": "common",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-499/g05.jpg",
+          "what": "「正藍染 小原屋」と書かれた看板のある建物外観",
+          "kind": "exterior",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-499/g06.jpg",
+          "what": "藍染めの日傘が2本、テーブルの上に広げられている",
+          "kind": "meal",
+          "width": 1200,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-499/g07.jpg",
+          "what": "藍染めの大きな布作品が壁に展示されている",
+          "kind": "common",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-499/g08.jpg",
+          "what": "藍染めののれんが展示されている様子",
+          "kind": "common",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-499/g09.jpg",
+          "what": "藍染めで染められたストールや布が並べられている様子",
+          "kind": "meal",
+          "width": 1200,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-499/g10.jpg",
+          "what": "藍染めの布や作品が飾られた工房の展示スペース",
+          "kind": "common",
+          "width": 900,
+          "height": 1200
+        }
+      ],
+      "tags": [
+        "子連れ",
+        "初心者歓迎",
+        "駐車場あり"
+      ],
+      "article": {
+        "headline": "静岡県御殿場市萩原にある藍染工房。文久年間創業で、化学薬品を一切使わない正藍染めの体験ができる",
+        "lede": "御殿場市にある「正藍染 小原屋」です。文久年間に創業し、江戸時代から受け継がれた正藍染めの技法を守り続ける工房です。現在の経営者は4代目の小原博康氏で、現在は5代目となる弟子が修行中です。化学薬品を一切使わず、徳島県産の阿波藍だけを原料とし、灰汁・石灰・麩・日本酒を加えて発酵させる「灰汁発酵建て」という伝統技法で藍液を仕込みます。朝夜1日2回かき混ぜる工程を1週間から1カ月続けて染液を整えます。この工房で染められた製品は「みくりや染織」として静岡県の郷土工芸品に指定されています。御殿場市内でこの技法を守る工房は現在ここだけです。",
+        "sections": [
+          {
+            "heading": "体験の内容と流れ",
+            "body": "体験では、ストール・手ぬぐい・マスクの3種類から染めるものを選びます。ストールはオリジナルの正藍染めで仕上げる体験で、手ぬぐいは日本の伝統技法を使った体験です。マスクは藍の殺菌効果を持つ染め体験です。体験は約90分で完結します。工房内では4代目の職人から正藍染めについての話も聞けます。藍染めの特性として、防虫・殺菌・消臭・保温・紫外線防止の効果がある。化学薬品を使わないことで、糸や布が5割以上に強く丈夫になるとも伝わります。"
+          },
+          {
+            "heading": "対象と催行人数",
+            "body": "体験の対象は6歳以上です。催行人数は2名から10名で、小グループでの体験となります。体験中は汚れてもよい服装での参加が推奨されます。工房には和室があり、おむつ交換台と授乳スペースにも対応しています。雨天時も体験を実施しており、天候を問わず参加できます。トイレの設備があります。"
+          },
+          {
+            "heading": "行き方と使い方",
+            "body": "JR御殿場駅から徒歩約10分の位置にあります。車では東名自動車道「御殿場IC」から約10分、「足柄スマートIC」から約15分です。駐車場を数台分備えています。体験の申し込みは7日前までが必要で、アソビューなどの予約サイトから申し込めます。工房ではのれんや浴衣をはじめとする藍染め製品の販売も行っており、体験後に製品を購入することもできます。"
+          }
+        ],
+        "menus": [
+          {
+            "name": "オリジナルストール藍染め体験"
+          },
+          {
+            "name": "手ぬぐい藍染め体験"
+          },
+          {
+            "name": "マスク藍染め体験"
+          }
+        ],
+        "sources": [
+          {
+            "label": "アソビュー",
+            "url": "https://www.asoview.com/base/157419/"
+          },
+          {
+            "label": "いこーよ",
+            "url": "https://iko-yo.net/facilities/171726"
+          },
+          {
+            "label": "テレしずWasabee",
+            "url": "https://wasabee.media/articles/18675217/"
+          },
+          {
+            "label": "静岡郷土工芸品振興会",
+            "url": "https://www.shizuoka-kougei.jp/craft/mikuriya/"
+          },
+          {
+            "label": "地域振興交流協会ブログ",
+            "url": "https://lns-nihon.jp/2021/10/07/%E6%AD%A3%E8%97%8D%E6%9F%93%E5%B0%8F%E5%8E%9F%E5%B1%8B%E3%81%AB%E3%81%A6%E8%97%8D%E6%9F%93%E4%BD%93%E9%A8%93%E3%82%A4%E3%83%99%E3%83%B3%E3%83%88%E3%82%92%E9%96%8B%E5%82%AC%E3%81%97%E3%81%BE%E3%81%99/"
+          },
+          {
+            "label": "Google マップ",
+            "url": "https://maps.google.com/?cid=12456179994637738633"
+          }
+        ],
+        "checkedAt": "2026-11-11"
+      }
+    },
+    {
+      "id": "ac0065",
+      "vertical": "activity",
+      "category": "craft",
+      "name": "フラワーサロン トパーズ fowersalonTopaz",
+      "pref": "hiroshima",
+      "cityName": "広島市中区",
+      "address": "広島県広島市中区十日市町2丁目5-24 アンプレッシオン十日市",
+      "lat": 34.399255,
+      "lng": 132.4492257,
+      "hours": "毎日 09:00 - 17:00",
+      "phone": "090-3377-9889",
+      "url": "https://flowersalontopaz.com/",
+      "website": "https://flowersalontopaz.com/",
+      "mapUrl": "https://maps.google.com/?cid=7691206612312998803",
+      "image": "/_portal/vshops/tri-activity-501/g01.jpg",
+      "images": [
+        "/_portal/vshops/tri-activity-501/g01.jpg",
+        "/_portal/vshops/tri-activity-501/g02.jpg",
+        "/_portal/vshops/tri-activity-501/g04.jpg",
+        "/_portal/vshops/tri-activity-501/g05.jpg",
+        "/_portal/vshops/tri-activity-501/g06.jpg",
+        "/_portal/vshops/tri-activity-501/g07.jpg",
+        "/_portal/vshops/tri-activity-501/g08.jpg",
+        "/_portal/vshops/tri-activity-501/g09.jpg",
+        "/_portal/vshops/tri-activity-501/g10.jpg",
+        "/_portal/vshops/tri-activity-501/s07.jpg",
+        "/_portal/vshops/tri-activity-501/s10.jpg"
+      ],
+      "photos": [
+        {
+          "path": "/_portal/vshops/tri-activity-501/g01.jpg",
+          "what": "鏡の前にピンクや赤の花を使ったアレンジメントが飾られた店内",
+          "kind": "common",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-501/g02.jpg",
+          "what": "黄色と緑の花のアレンジメントのクローズアップ",
+          "kind": "meal",
+          "width": 675,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-501/g04.jpg",
+          "what": "ピンクや白の花を使ったバスケットアレンジメント2点",
+          "kind": "meal",
+          "width": 1200,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-501/g05.jpg",
+          "what": "ピンクのバラをまとめたボール型のフラワーアレンジメント",
+          "kind": "meal",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-501/g06.jpg",
+          "what": "女性が花を使って作業している様子",
+          "kind": "common",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-501/g07.jpg",
+          "what": "青い花を中心にした縦長のフラワーアレンジメント",
+          "kind": "meal",
+          "width": 960,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-501/g08.jpg",
+          "what": "緑・ピンク・白の花を使ったフラワーアレンジメント",
+          "kind": "meal",
+          "width": 675,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-501/g09.jpg",
+          "what": "オレンジの蘭を中心に緑の植物を組み合わせたアレンジメント",
+          "kind": "meal",
+          "width": 1200,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-501/g10.jpg",
+          "what": "白いティーポットにオレンジや黄色の花を活けたアレンジメント",
+          "kind": "meal",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-501/s07.jpg",
+          "what": "光の差し込む大きな木の風景",
+          "kind": "view",
+          "width": 1279,
+          "height": 1279
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-501/s10.jpg",
+          "what": "ピンクの花とティーカップが並ぶテーブルセッティング",
+          "kind": "common",
+          "width": 960,
+          "height": 1280
+        }
+      ],
+      "tags": [
+        "初心者歓迎"
+      ],
+      "article": {
+        "headline": "広島市中区十日市町、広島電鉄十日市町駅から徒歩約5分にあるフラワーサロン。パリスタイルのフラワーアレンジメントや龍体文字など複数の体験・講座を提供している",
+        "lede": "広島市中区にある「フラワーサロン トパーズ」です。広島電鉄十日市町駅から徒歩約5分の場所に位置し、シャンデリアのある40畳の広い教室でレッスンを開催しています。代表の大澤香里さんは2015年にフランス・パリでミュリエル・ルク氏に師事し、帰国後に広島市でパリスタイルフラワーの認定校として教室を主宰しています。フロラリー認定講師のほか、龍体フトマニ書の会の上席講師「龍師」、アロマニストとしての資格も持ちます。現在は20代から70代まで幅広い層が通っており、完全予約制で生徒の都合に合わせた日程でレッスンを受けられます。どの講座も終了後にコーヒーまたは紅茶とスイーツを提供しています。",
+        "sections": [
+          {
+            "heading": "体験の内容と流れ",
+            "body": "パリスタイルのフラワーアレンジメント体験（フロラリー）では、お花を組み合わせて作品を1個制作し、その日のうちに持ち帰れます。所要時間は約120分です。ボタニカルキャンドルホルダー作りでは、好みの花材を詰め込んでキャンドルホルダーを制作します。ティーライトキャンドルを入れて灯すと花の影がふんわりと浮かびあがります。中のキャンドルを交換すれば繰り返し使用できます。酵素ジュース作りでは、季節のフルーツを使った発酵酵素フルーツジュースを制作します。春はイチゴや青梅、夏はスイカや桃、秋から冬にかけては柑橘類、春と秋には新しょうがを使います。完成後は常温で3か月、シェイクしながら発酵を進めます。龍体文字講座「花龍」では、推定5,600年前に編纂されたと伝わる神代文字の一種・龍体文字を書く体験ができます。千龍図を完成した方は講師認定証を取得し、講師として活動することもできます。"
+          },
+          {
+            "heading": "コースと所要時間",
+            "body": "フロラリー（パリスタイルフラワーアレンジメント）コースは、初心者から始められる体制で複数のコースが設けられています。デビュタン準備コース、デビュタンⅠ・Ⅱ（各14回）、季節のお花のコース、コンフィルメ（12回）、スペリユール（8回）、コンペタンス（8回）と段階的に進み、コンペタンスコースを修了した方はフロラリー認定講師資格試験を受験できます。認定講師になるとフランスのトレンドを発信できる花教室を開講できます。龍体文字講座では、千龍図を完成した方がさらに上級の「龍師」資格を目指すことが可能です。フロラリーはフランスの最新デザインを取り入れたコースで、コース修了後にはディプロマ（認定証）が発行されます。フラワーサロン トパーズはフロラリー公認校であり、日本でルク氏主宰のスクール「MultiEthnies（ミュルチェッニー）」のディプロマも取得できます。"
+          },
+          {
+            "heading": "対象",
+            "body": "フラワーアレンジメント体験（フロラリー体験）は参加年齢制限がなく、全くの初心者も歓迎しています。現在は20代から70代まで幅広い年代が通っており、コースを継続して通う方だけでなく、単発受講や季節イベント（母の日・クリスマス・正月）のみ参加する方も利用しています。フラワーアレンジメント体験をアソビュー経由で予約する場合は2名から12名のグループで予約が必要です。各参加者の進度に合わせてレッスンが進み、お花とシャンパンの会は基本的に毎月第3土曜日に開催されています。"
+          },
+          {
+            "heading": "行き方と使い方",
+            "body": "広島電鉄十日市町駅から徒歩約5分で到着できます。レッスンは完全予約制で、前月に都合の良い日程を伝えると開催日程を組んでもらえます。日曜日・祝日は基本的に休業です。公式サイトのお問い合わせページから予約・相談ができます。フラワーアレンジメント体験はアソビュー経由でもネット予約が可能です。"
+          }
+        ],
+        "menus": [
+          {
+            "name": "パリスタイルフラワーアレンジメント体験（フロラリー体験）"
+          },
+          {
+            "name": "ボタニカルキャンドルホルダー作り"
+          },
+          {
+            "name": "酵素ジュース作り"
+          },
+          {
+            "name": "龍体文字講座（花龍）"
+          },
+          {
+            "name": "フラワーセラピー"
+          },
+          {
+            "name": "フロラリー認定講師コース"
+          },
+          {
+            "name": "小筆教室"
+          },
+          {
+            "name": "カンティアーモ（歌の集い）"
+          }
+        ],
+        "sources": [
+          {
+            "label": "公式サイト",
+            "url": "https://flowersalontopaz.com/"
+          },
+          {
+            "label": "公式サイト(フロラリー)",
+            "url": "https://flowersalontopaz.com/florary/"
+          },
+          {
+            "label": "公式サイト(その他レッスン)",
+            "url": "https://flowersalontopaz.com/otherlesson/"
+          },
+          {
+            "label": "公式サイト(花龍)",
+            "url": "https://flowersalontopaz.com/hanaryu/"
+          },
+          {
+            "label": "公式サイト(概要)",
+            "url": "https://flowersalontopaz.com/flower-salon-topaz/"
+          },
+          {
+            "label": "アソビュー",
+            "url": "https://www.asoview.com/base/154555/"
+          },
+          {
+            "label": "アソビュー(体験プラン)",
+            "url": "https://www.asoview.com/item/activity/pln3000029860/"
+          },
+          {
+            "label": "Google マップ",
+            "url": "https://maps.google.com/?cid=7691206612312998803"
+          }
+        ],
+        "checkedAt": "2026-11-11"
+      }
+    },
+    {
+      "id": "ac0066",
+      "vertical": "activity",
+      "category": "craft",
+      "name": "たけの花 takenohana",
+      "pref": "tokushima",
+      "cityName": "海陽町",
+      "address": "徳島県海部郡海陽町吉野字144番地",
+      "lat": 33.6111073,
+      "lng": 134.3322756,
+      "phone": "0884-70-1615",
+      "mapUrl": "https://maps.google.com/?cid=10901699324380872302",
+      "image": "/_portal/vshops/tri-activity-502/g01.jpg",
+      "images": [
+        "/_portal/vshops/tri-activity-502/g01.jpg",
+        "/_portal/vshops/tri-activity-502/g03.jpg",
+        "/_portal/vshops/tri-activity-502/g04.jpg",
+        "/_portal/vshops/tri-activity-502/g05.jpg",
+        "/_portal/vshops/tri-activity-502/g06.jpg",
+        "/_portal/vshops/tri-activity-502/g07.jpg",
+        "/_portal/vshops/tri-activity-502/g08.jpg",
+        "/_portal/vshops/tri-activity-502/g09.jpg",
+        "/_portal/vshops/tri-activity-502/g10.jpg"
+      ],
+      "photos": [
+        {
+          "path": "/_portal/vshops/tri-activity-502/g01.jpg",
+          "what": "壁に飾られた曼荼羅模様の円形竹あかり作品",
+          "kind": "meal",
+          "width": 1200,
+          "height": 1199
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-502/g03.jpg",
+          "what": "野外ステージに設置された大型の竹あかり装飾",
+          "kind": "view",
+          "width": 1200,
+          "height": 899
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-502/g04.jpg",
+          "what": "大型の円形竹あかり作品の前で作業する人物",
+          "kind": "meal",
+          "width": 1085,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-502/g05.jpg",
+          "what": "室内に展示された曼荼羅模様の竹あかりを見る子ども",
+          "kind": "common",
+          "width": 1200,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-502/g06.jpg",
+          "what": "イベント会場に設置されたアーチ状の竹あかり空間装飾",
+          "kind": "view",
+          "width": 800,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-502/g07.jpg",
+          "what": "野外に立てられた円柱状の竹あかり作品",
+          "kind": "meal",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-502/g08.jpg",
+          "what": "夕暮れの屋外に展示された大型竹あかりオブジェ",
+          "kind": "view",
+          "width": 960,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-502/g09.jpg",
+          "what": "テーブルと道具が並ぶ竹あかり体験ワークショップの室内",
+          "kind": "common",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-502/g10.jpg",
+          "what": "夜の野外に並んだ竹あかりの列",
+          "kind": "view",
+          "width": 404,
+          "height": 300
+        }
+      ],
+      "tags": [
+        "子連れ",
+        "初心者歓迎"
+      ],
+      "article": {
+        "headline": "徳島県海部郡海陽町にある竹あかり制作工房。桧垣健・フローレンス夫妻が運営し、竹あかりの販売・ワークショップ・空間装飾を手がける",
+        "lede": "海部郡海陽町にある「たけの花 takenohana」です。2018年に大阪から海陽町へ移住した桧垣健さんとフランス出身のフローレンスさん夫妻が運営する竹あかりの工房です。竹の表面に型紙を貼り、ドリルで穴を開けることで光が透けて見える竹灯りを制作しています。工房では竹あかりの販売に加え、参加者が自分で竹あかりを作るワークショップと、イベントや式場などへの空間装飾を手がけています。工房の名称「たけの花」は、竹に120年に一度咲くという花に由来し、次の世代へのバトンタッチを意味しています。放置竹林から伐採した竹を活用しており、素材は海陽町の竹を桧垣夫妻自身が切りに行くというこだわりがあります。",
+        "sections": [
+          {
+            "heading": "体験の内容と流れ",
+            "body": "竹あかりづくり体験は完全予約制で、4名以上20名までのグループを対象としています。体験は約2時間で、小学生以上が参加できます。低学年の子どもは保護者同伴が必要です。まず参加者が竹を選びます。どれ一つ同じ形はないため、好みの竹を探すところから始まります。次に約50種類の型紙から好きなデザインを組み合わせて選び、型紙を竹に貼った後、ドリルで穴を開けていきます。穴開け作業は講師がサポートします。最後に講師が竹を火で炙って仕上げ、中にライトを入れて完成です。ゴム付き手袋と上履きを持参することが推奨されています。"
+          },
+          {
+            "heading": "竹あかりの特徴と素材",
+            "body": "竹あかりは、竹の表面に穴の位置と大きさが書かれた設計図を貼り、ドリルで穴を開けることで制作します。フローレンスさんが主にデザインを担当し、健さんとイメージをすり合わせながら制作します。作品のデザインは曼荼羅模様など自然からの影響を受けたものが多く、約40種類のデザインコレクションがあります。素材となる竹は3〜4年の乾燥が必要で、割れ防止のため事前に竹の裏側を割く処理をします。放置竹林の伐採竹を活用しており、海陽町の竹を桧垣夫妻が自ら切りに行っています。2025年8月には長崎の稲佐山公園野外ステージで開催されたMISIA CANDLE NIGHT 2025のステージ装飾として竹あかりが使用されました。"
+          },
+          {
+            "heading": "成り立ちと活動",
+            "body": "桧垣健さんは2017年10月、海陽町の常楽寺でのパフォーマンスで照明を担当したことをきっかけに、約20個の竹灯りを制作しました。その後フローレンスさんとともに竹あかり制作を本業とし、2018年に海陽町へ移住しました。工房では竹あかりの販売、体験ワークショップ、イベントや空間の装飾を行っています。InstagramはID「takenohana_」で、Facebookページ「takenohana.japan」でも活動を発信しています。"
+          },
+          {
+            "heading": "行き方と使い方",
+            "body": "徳島ICから国道11号線(徳島市内方面)を経由し、国道55号線を室戸方面へ約2時間で到着します。体験は完全予約制で、じゃらん遊び体験のページからネット予約ができます。体験3日前の17:00までキャンセルができます。"
+          }
+        ],
+        "menus": [
+          {
+            "name": "竹あかりづくり体験"
+          },
+          {
+            "name": "竹あかり販売"
+          },
+          {
+            "name": "空間装飾"
+          }
+        ],
+        "sources": [
+          {
+            "label": "海陽町観光協会",
+            "url": "https://www.kaiyo-kankou.jp/spots/spots-1121/"
+          },
+          {
+            "label": "じゃらん遊び体験",
+            "url": "https://www.jalan.net/kankou/spt_guide000000217190/activity/l00003EEE4/"
+          },
+          {
+            "label": "aitripper 竹あかりづくり体験",
+            "url": "https://aitripper.jp/tokushimasouth/minami/activity/f51917c7-0517-58b8-a6d9-280121a3018d"
+          },
+          {
+            "label": "徳島観光情報サイト(t-tokushima)",
+            "url": "https://www.t-tokushima.jp/feature/active/bamboo"
+          },
+          {
+            "label": "tokushima.goguynet インタビュー記事",
+            "url": "https://tokushima.goguynet.jp/2022/10/19/takeakaria-telisutotakenohanatakeakariibento/"
+          },
+          {
+            "label": "THE FIRST TIMES MISIA CANDLE NIGHT 2025ライブレポート",
+            "url": "https://www.thefirsttimes.jp/report/0000670600/"
+          },
+          {
+            "label": "Google マップ",
+            "url": "https://maps.google.com/?cid=10901699324380872302"
+          }
+        ],
+        "checkedAt": "2026-11-11"
+      }
     }
   ]
 }

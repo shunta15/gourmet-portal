@@ -1,0 +1,40 @@
+{
+  "tab": "トリニティアポ",
+  "tabEn": "tri-life",
+  "row": 497,
+  "sheet": {
+    "name": "御津八幡宮",
+    "address": "",
+    "url": "https://www.google.com/maps/search/?api=1&query=%E5%BE%A1%E6%B4%A5%E5%85%AB%E5%B9%A1%E5%AE%AE%2006-6211-8655%20%E3%80%92542-0086%20%E5%A4%A7%E9%98%AA%E5%BA%9C%E5%A4%A7%E9%98%AA%E5%B8%82%E4%B8%AD%E5%A4%AE%E5%8C%BA%E8%A5%BF%E5%BF%83%E6%96%8E%E6%A9%8B%EF%BC%92%E4%B8%81%E7%9B%AE%EF%BC%91%EF%BC%90%E2%88%92%EF%BC%97",
+    "type": "神社",
+    "d1": "",
+    "d2": ""
+  },
+  "urlKind": "mapsApi",
+  "route": "第1段(verify-gbp.mjs)で確認済み",
+  "verdict": "一致",
+  "verdictReason": "手がかり: 店名＋電話＋住所(番地まで)。電話が一致／店名: contains(シート「御津八幡宮」/ マップ「御津宮 (御津八幡宮)」)／住所(シート): exact・町名・番地とも一致",
+  "place": {
+    "name": "御津宮 (御津八幡宮)",
+    "address": "大阪府大阪市中央区西心斎橋２丁目１０−７",
+    "category": "神社",
+    "lat": 34.6713314,
+    "lng": 135.4992746,
+    "gbpUrl": "https://maps.google.com/?cid=12445833186097700796",
+    "phone": "06-6211-8655",
+    "website": "https://mitsugu.org/",
+    "hours": {
+      "月": "09:00–12:15, 13:00–17:00",
+      "火": "09:00–12:15, 13:00–17:00",
+      "水": "09:00–12:15, 13:00–17:00",
+      "木": "09:00–12:15, 13:00–17:00",
+      "金": "09:00–12:15, 13:00–17:00",
+      "土": "09:00–12:15, 13:00–17:00",
+      "日": "09:00–12:15, 13:00–17:00"
+    },
+    "reserveLinks": [],
+    "statusSignals": [],
+    "closedSignal": false
+  },
+  "fetchedAt": "2026-11-11T04:09:39.884Z"
+}

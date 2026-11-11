@@ -1,0 +1,118 @@
+{
+  "commit": "095ef1eec5eda206e4803cbb7a83175b34c99796",
+  "source": "/Users/shunta/claude/gp-k-auto2",
+  "count": 10,
+  "added": [
+    {
+      "row": 415,
+      "name": "ナチュランド",
+      "key": "lk-gourmet-415",
+      "vertical": "グルメ",
+      "id": "r922",
+      "articleId": "ナチュランド",
+      "shopUrl": "https://machinowa.tokyo/restaurant/r922",
+      "articleUrl": "https://machinowa.tokyo/feature/ナチュランド",
+      "sheetUrl": "https://machinowa.tokyo/feature/ナチュランド"
+    },
+    {
+      "row": 494,
+      "name": "EVERGREEN奄美",
+      "key": "tri-activity-494",
+      "vertical": "アクティビティ",
+      "id": "ac0063",
+      "articleId": "ac0063",
+      "shopUrl": "https://machinowa.tokyo/activity/shop/ac0063",
+      "articleUrl": "https://machinowa.tokyo/activity/article/ac0063",
+      "sheetUrl": "https://machinowa.tokyo/activity/article/ac0063"
+    },
+    {
+      "row": 495,
+      "name": "充国寺",
+      "key": "tri-life-495",
+      "vertical": "くらし",
+      "id": "li0213",
+      "articleId": "li0213",
+      "shopUrl": "https://machinowa.tokyo/life/shop/li0213",
+      "articleUrl": "https://machinowa.tokyo/life/article/li0213",
+      "sheetUrl": "https://machinowa.tokyo/life/article/li0213"
+    },
+    {
+      "row": 496,
+      "name": "まんま亭 武藤",
+      "key": "tri-gourmet-496",
+      "vertical": "グルメ",
+      "id": "r923",
+      "articleId": "まんま亭・武藤",
+      "shopUrl": "https://machinowa.tokyo/restaurant/r923",
+      "articleUrl": "https://machinowa.tokyo/feature/まんま亭・武藤",
+      "sheetUrl": "https://machinowa.tokyo/feature/まんま亭・武藤"
+    },
+    {
+      "row": 497,
+      "name": "御津八幡宮",
+      "key": "tri-life-497",
+      "vertical": "くらし",
+      "id": "li0214",
+      "articleId": "li0214",
+      "shopUrl": "https://machinowa.tokyo/life/shop/li0214",
+      "articleUrl": "https://machinowa.tokyo/life/article/li0214",
+      "sheetUrl": "https://machinowa.tokyo/life/article/li0214"
+    },
+    {
+      "row": 498,
+      "name": "フルーツワイナリーエスプリ",
+      "key": "tri-gourmet-498",
+      "vertical": "グルメ",
+      "id": "r924",
+      "articleId": "フルーツワイナリーエスプリ(東根フルーツワイン)",
+      "shopUrl": "https://machinowa.tokyo/restaurant/r924",
+      "articleUrl": "https://machinowa.tokyo/feature/フルーツワイナリーエスプリ(東根フルーツワイン)",
+      "sheetUrl": "https://machinowa.tokyo/feature/フルーツワイナリーエスプリ(東根フルーツワイン)"
+    },
+    {
+      "row": 499,
+      "name": "正藍染 小原屋",
+      "key": "tri-activity-499",
+      "vertical": "アクティビティ",
+      "id": "ac0064",
+      "articleId": "ac0064",
+      "shopUrl": "https://machinowa.tokyo/activity/shop/ac0064",
+      "articleUrl": "https://machinowa.tokyo/activity/article/ac0064",
+      "sheetUrl": "https://machinowa.tokyo/activity/article/ac0064"
+    },
+    {
+      "row": 500,
+      "name": "ぱろぱとBAKERY",
+      "key": "tri-gourmet-500",
+      "vertical": "グルメ",
+      "id": "r925",
+      "articleId": "ぱろぱとBAKERY",
+      "shopUrl": "https://machinowa.tokyo/restaurant/r925",
+      "articleUrl": "https://machinowa.tokyo/feature/ぱろぱとBAKERY",
+      "sheetUrl": "https://machinowa.tokyo/feature/ぱろぱとBAKERY"
+    },
+    {
+      "row": 501,
+      "name": "Flowersalon Topaz",
+      "key": "tri-activity-501",
+      "vertical": "アクティビティ",
+      "id": "ac0065",
+      "articleId": "ac0065",
+      "shopUrl": "https://machinowa.tokyo/activity/shop/ac0065",
+      "articleUrl": "https://machinowa.tokyo/activity/article/ac0065",
+      "sheetUrl": "https://machinowa.tokyo/activity/article/ac0065"
+    },
+    {
+      "row": 502,
+      "name": "たけの花",
+      "key": "tri-activity-502",
+      "vertical": "アクティビティ",
+      "id": "ac0066",
+      "articleId": "ac0066",
+      "shopUrl": "https://machinowa.tokyo/activity/shop/ac0066",
+      "articleUrl": "https://machinowa.tokyo/activity/article/ac0066",
+      "sheetUrl": "https://machinowa.tokyo/activity/article/ac0066"
+    }
+  ],
+  "skipped": []
+}

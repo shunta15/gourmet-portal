@@ -1,0 +1,377 @@
+{
+  "key": "tri-activity-494",
+  "vertical": "activity",
+  "storeName": "EVERGREEN奄美🌱照井農園",
+  "article": {
+    "id": "EVERGREEN奄美🌱照井農園",
+    "no": "",
+    "articleType": "guide",
+    "kicker": "EVERGREEN AMAMI TERUI FARM KASARI",
+    "title": "奄美市笠利町発、プライベート貸切のマングローブカヌー・滝ツアー・ナイトツアー。奄美群島認定ガイドが案内するEVERGREEN奄美の体験",
+    "titleHTML": "奄美市笠利町発、プライベート貸切で巡る<br><em>EVERGREEN奄美</em>のマングローブカヌー・滝・ナイトツアー",
+    "subtitle": "ツアー業者 / 鹿児島県奄美市 / マングローブカヌー・滝ツアー・ナイトツアー",
+    "lede": "EVERGREEN奄美は、鹿児島県奄美市笠利町を拠点とするプライベート貸切ツアーだ。奄美移住20年の農家ガイド・照井朗が代表を務め、奄美群島認定エコツアーガイドとして島の大自然を案内している。すべて2名以上7名以下の少人数制で、マングローブカヌー・滝ツアー・金作原原生林散策・ナイトツアー・絶景名所巡りなど複数のプランを用意する。照井は日本エコツーリズム協会会員で上級救急救命講習を修了しており、東京都町田市出身でサーフィン・バイク旅・登山などを経て2003年に奄美へ移住した。照井農園ではパッション・たんかん・レモン・ハーブティーを栽培・販売しており、ツアーでもハーブティーを提供している。",
+    "date": "2026-11-11",
+    "reading": "",
+    "author": "マチノワ編集部",
+    "heroImage": "/_portal/vshops/tri-activity-494/g01.jpg",
+    "ogImage": "/_portal/vshops/tri-activity-494/g01.jpg",
+    "ranking": [
+      {
+        "rank": "POINT 01",
+        "rankNum": 1,
+        "name": "マングローブカヌー：住用の原生林を少人数で進む",
+        "cuisine": "マングローブカヌー",
+        "area": "奄美市",
+        "purpose": "マングローブカヌーの内容と流れを知りたい人へ",
+        "desc": "マングローブカヌーは、住用にあるマングローブ原生林の中をガイドとしか入れない小道を進む体験だ。体験時間は約2時間で、午前は9:30にカヌー乗り場に集合して11:30まで、午後は13:30集合で15:30まで行われる。参加は2名以上7名以下の少人数制プライベートで、お客様の体力に合わせてコースを選ぶ。世界遺産登録後、繁忙期には大変混雑するマングローブを、混雑を避けてゆっくり楽しめるよう案内する点が特徴だ。半日ツアーの場合は現地集合となり、送迎が必要な方は事前に相談が必要だ。住用方面まで行くため、滝ツアーと組み合わせた1日プランも勧められている。持ち物は雨具・飲み物・帽子・タオル・サンダル・着替えで、足元は濡れるためサンダルがよい。",
+        "images": [
+          "/_portal/vshops/tri-activity-494/g05.jpg"
+        ],
+        "specs": [
+          {
+            "k": "体験時間",
+            "v": "約2時間（半日）"
+          },
+          {
+            "k": "参加人数",
+            "v": "2名以上7名以下"
+          }
+        ]
+      },
+      {
+        "rank": "POINT 02",
+        "rankNum": 2,
+        "name": "滝ツアー：秘境の滝での森林浴と滝浸かり体験",
+        "cuisine": "滝ツアー",
+        "area": "奄美市",
+        "purpose": "滝ツアーの2種類の違いを知りたい人へ",
+        "desc": "滝ツアーは「滝散歩」と「滝浸かる」の2種類がある。滝散歩は亜熱帯原生林の中をゆっくり森林浴しながら歩き、ガイドブックに載っていない秘境の滝へ向かうコースだ。滝壺でリラックスしながら季節のハーブティーを飲んだり瞑想したりする。滝浸かるは澄んだ滝壺で泳いだり飛び込んだりして遊ぶコースで、体が冷えたらハーブティーで温まる。滝の水温は低いため、夏場でもラッシュガードがあると快適だ。どちらも所要時間は約2時間で、午前は9:00に長浜みなと公園に集合して9:30に現地到着・11:30終了、午後は13:30集合・14:00現地到着・16:00終了となる。ツアー参加は小学生以上が対象で、滝周辺は手つかずの自然のため、生き物や植物を採取する行為は禁止されている。",
+        "images": [
+          "/_portal/vshops/tri-activity-494/s15.jpg"
+        ],
+        "specs": [
+          {
+            "k": "集合場所",
+            "v": "長浜みなと公園"
+          },
+          {
+            "k": "体験時間",
+            "v": "約2時間（半日）"
+          }
+        ]
+      },
+      {
+        "rank": "POINT 03",
+        "rankNum": 3,
+        "name": "ナイトツアー：アマミノクロウサギをはじめとする奄美固有の生き物を観察",
+        "cuisine": "ナイトツアー",
+        "area": "奄美市",
+        "purpose": "ナイトツアーの内容と観察できる生き物を知りたい人へ",
+        "desc": "ナイトツアーは1日1組限定のプライベート貸切で行われ、所要時間は約3時間だ。アマミノクロウサギをはじめ、ケナガネズミ・リュウキュウコノハズク・ハブなど奄美固有の希少な生き物を夜の森で観察する。奄美群島認定エコツアーガイドの照井が案内する。参加は1名以上7名以下で対応している。北部から名瀬市街地エリアへの送迎も可能で、瀬戸内・宇検村・大和村エリアは送迎対象外となる。",
+        "images": [
+          "/_portal/vshops/tri-activity-494/g06.jpg"
+        ],
+        "specs": [
+          {
+            "k": "所要時間",
+            "v": "約3時間"
+          },
+          {
+            "k": "催行",
+            "v": "1日1組限定プライベート貸切"
+          }
+        ]
+      }
+    ],
+    "sideArticles": [],
+    "quote": "奄美移住20年の農家ガイド・照井朗が、マングローブカヌー・滝ツアー・ナイトツアーなどをプライベート貸切で案内する。奄美群島認定エコツアーガイドと上級救急救命講習修了という資格のもと、少人数制で大自然を安全に楽しめる。",
+    "quoteCite": "マチノワ編集部",
+    "closing": "拠点は奄美市笠利町手花部で、奄美空港から車で約12分の距離にある。北部から名瀬市街地（ルート内）への送迎に対応している。半日ツアーは現地集合が基本で、滝ツアーの集合場所は長浜みなと公園、マングローブカヌーはカヌー乗り場となる。予約は公式サイトの予約・お問合せページのほか、ベルトラ・じゃらんからも受け付けている。"
+  },
+  "summary": "EVERGREEN奄美の体験内容を整理。マングローブカヌーの集合場所と流れ、滝散歩・滝浸かるの2種類の滝ツアー、アマミノクロウサギを観察するナイトツアー、金作原・湯湾岳を巡る1日プランをまとめた。",
+  "tags": [
+    "海・川",
+    "奄美市"
+  ],
+  "charCount": 1387,
+  "facts": [
+    {
+      "claim": "代表は照井朗（てるい・あきら）で、奄美群島認定エコツアーガイドの資格を持つ",
+      "source": "https://evergreen-amami.com/",
+      "quote": "奄美群島認定エコツアーガイド",
+      "checkedAt": "2026-11-11"
+    },
+    {
+      "claim": "日本エコツーリズム協会の会員である",
+      "source": "https://evergreen-amami.com/",
+      "quote": "日本エコツーリズム協会会員",
+      "checkedAt": "2026-11-11"
+    },
+    {
+      "claim": "上級救急救命講習を修了している",
+      "source": "https://evergreen-amami.com/",
+      "quote": "上級救急救命講習修了",
+      "checkedAt": "2026-11-11"
+    },
+    {
+      "claim": "お客様の体力に合わせてコースを選ぶ少人数制プライベートツアーを提供している",
+      "source": "https://evergreen-amami.com/manguro-bukanu/",
+      "quote": "お客様の体力に合わせてコースをチョイスしますのでご安心ください",
+      "checkedAt": "2026-11-11"
+    },
+    {
+      "claim": "東京都町田市出身で、2003年に奄美へ移住した",
+      "source": "https://evergreen-amami.com/",
+      "quote": "東京町田出身 … 2003年奄美移住",
+      "checkedAt": "2026-11-11"
+    },
+    {
+      "claim": "照井農園の代表として、パッション・たんかん・レモン・ハーブティーを取り扱っている",
+      "source": "https://evergreen-amami.com/",
+      "quote": "パッション・たんかん・レモン・ハーブティーetc取り扱っております",
+      "checkedAt": "2026-11-11"
+    },
+    {
+      "claim": "マングローブカヌーは住用にあるマングローブ原生林の中をガイドとしか入れない小道を進む体験で、体験時間は約2時間",
+      "source": "https://evergreen-amami.com/manguro-bukanu/",
+      "quote": "住用にあるマングローブ原生林の中 ガイドとしか行けない小道を 小人数制にてご案内します … 体験時間 約2時間",
+      "checkedAt": "2026-11-11"
+    },
+    {
+      "claim": "マングローブカヌーの午前の集合時間は9:30（カヌー乗り場）、終了は11:30",
+      "source": "https://evergreen-amami.com/manguro-bukanu/",
+      "quote": "午前 9：30 カヌー乗り場集合、ツアー開始 →11：30 ツアー終了",
+      "checkedAt": "2026-11-11"
+    },
+    {
+      "claim": "マングローブカヌーの午後の集合時間は13:30（カヌー乗り場）、終了は15:30",
+      "source": "https://evergreen-amami.com/manguro-bukanu/",
+      "quote": "午後 1：30 カヌー乗り場集合、ツアー開始 →3：30 ツアー終了",
+      "checkedAt": "2026-11-11"
+    },
+    {
+      "claim": "マングローブカヌーの参加は2名以上7名以下",
+      "source": "https://evergreen-amami.com/manguro-bukanu/",
+      "quote": "大人2～7名様",
+      "checkedAt": "2026-11-11"
+    },
+    {
+      "claim": "マングローブカヌーの持ち物は雨具・飲み物・帽子・タオル・サンダル・着替え",
+      "source": "https://evergreen-amami.com/manguro-bukanu/",
+      "quote": "【持ち物】雨具・飲み物・帽子・タオル・足元が濡れますのでサンダルがベスト、万が一の着替え",
+      "checkedAt": "2026-11-11"
+    },
+    {
+      "claim": "滝ツアー「滝散歩」は亜熱帯原生林を歩いてガイドブックに載っていない秘境の滝へ行き、所要時間は約2時間",
+      "source": "http://evergreen-amami.com/taki/",
+      "quote": "EVERGREENの森を ゆっくり森林浴しながら歩き ガイドブックに載っていない 秘境の滝まで行きます … 所要時間 約2時間",
+      "checkedAt": "2026-11-11"
+    },
+    {
+      "claim": "滝散歩では滝壺でリラックスしながら季節のハーブティーを飲んだり瞑想したりできる",
+      "source": "http://evergreen-amami.com/taki/",
+      "quote": "美しい滝壺でリラックス 季節のハーブティを飲んだり 瞑想 音を奏でたり",
+      "checkedAt": "2026-11-11"
+    },
+    {
+      "claim": "滝ツアー「滝浸かる」は神秘の滝壺で泳いだり飛び込んだりして遊ぶ体験で、所要時間は約2時間",
+      "source": "http://evergreen-amami.com/taki/",
+      "quote": "映画のワンシーンに出てくるような 神秘の滝の滝壺で遊びます … 所要時間 約2時間",
+      "checkedAt": "2026-11-11"
+    },
+    {
+      "claim": "滝ツアーの集合場所は長浜みなと公園で、午前は9:00集合・9:30現地到着・11:30終了、午後は13:30集合・14:00現地到着・16:00終了",
+      "source": "http://evergreen-amami.com/taki/",
+      "quote": "午前 9：00 長浜みなと公園集合→ 9：30 現地到着ツアー開始→ 11：30ツアー終了 … 午後 1：30 長浜みなと公園集合→ 2：00 現地到着ツアー開始→ 4：00ツアー終了",
+      "checkedAt": "2026-11-11"
+    },
+    {
+      "claim": "滝ツアーの参加は小学生以上が対象",
+      "source": "http://evergreen-amami.com/taki/",
+      "quote": "ツアー参加は小学生以上となります",
+      "checkedAt": "2026-11-11"
+    },
+    {
+      "claim": "滝の水温は低いため、夏場でもラッシュガードがあると快適",
+      "source": "http://evergreen-amami.com/taki/",
+      "quote": "滝の水温は低いので 夏場でもラッシュガードなどあるとベストです",
+      "checkedAt": "2026-11-11"
+    },
+    {
+      "claim": "山には蚊やブヨがいるため、肌が弱い方は虫よけスプレーか肌を露出しない服装が推奨されている",
+      "source": "http://evergreen-amami.com/taki/",
+      "quote": "山には蚊やブヨなどの虫がいるため、肌が弱い方は虫よけスプレーもしくは、肌を露出しない服装でお越しください",
+      "checkedAt": "2026-11-11"
+    },
+    {
+      "claim": "奄美空港から車で約12分の距離にある",
+      "source": "https://amamitabi.com/evergreen-amami/",
+      "quote": "奄美空港から車で約12分",
+      "checkedAt": "2026-11-11"
+    },
+    {
+      "claim": "金作原原生林散策は認定ガイドと同伴でなければ入れない世界自然遺産エリアで行われる",
+      "source": "https://evergreen-amami.com/1day/",
+      "quote": "世界自然遺産エリアで認定ガイドと一緒でなければはいれない金作原原生林を散策します",
+      "checkedAt": "2026-11-11"
+    },
+    {
+      "claim": "湯湾岳原生林トレッキングは南西諸島最高峰の山へ登るコースで、山頂まで簡単なボードウォークが整備されている",
+      "source": "https://evergreen-amami.com/1day/",
+      "quote": "南西諸島最高峰の山、湯湾岳に登り … 山頂までは簡単なボードウォークになります",
+      "checkedAt": "2026-11-11"
+    },
+    {
+      "claim": "ナイトツアーではアマミノクロウサギをはじめ、ケナガネズミ・リュウキュウコノハズク・ハブなど奄美固有の希少な生き物を観察する",
+      "source": "https://www.veltra.com/jp/japan/amamioshima/a/182595",
+      "quote": "アマミノクロウサギをはじめ、ケナガネズミやリュウキュウコノハズク、ハブなど奄美でしか出会えない様々な生き物",
+      "checkedAt": "2026-11-11"
+    },
+    {
+      "claim": "北部から名瀬市街地（ルート内）への送迎に対応しているが、瀬戸内・宇検村・大和村は対象外",
+      "source": "https://www.veltra.com/jp/japan/amamioshima/a/182595",
+      "quote": "北部～名瀬市街エリアのみ対応（瀬戸内、宇検村、大和村は不可）",
+      "checkedAt": "2026-11-11"
+    },
+    {
+      "claim": "奄美群島eしまギフト（旅先納税）の加盟店",
+      "source": "https://evergreen-amami.com/",
+      "quote": "いますぐ使えるふるさと納税 奄美群島eしまギフト加盟店です",
+      "checkedAt": "2026-11-11"
+    }
+  ],
+  "images": [
+    {
+      "path": "/_portal/vshops/tri-activity-494/g01.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9TQOEscrlX6LCi6cBcHmMelFW3aJgcHfZBlTmi6J7vQyddlZlH_BNn3_i57IsYeMOilif78kz2CUHmnf-Gywro0_RgY4hX-8H2FLRulFHvMX5rvHlLvpKp0a_06hUBVtBLzNy1PK12Ksmd0=s1200",
+      "pageUrl": "https://maps.google.com/?cid=17641909341940733295",
+      "what": "緑に囲まれた滝と澄んだ滝壺"
+    },
+    {
+      "path": "/_portal/vshops/tri-activity-494/g02.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9T8P7AjTSYxjFcnw7Pg1D19MHrXuua1Y-klsZWFiupOcRvTV6BjuJkdQ0A4ZAZ25g_iXcEBnIVIsp0zd6T1Yo6spIhejz-AvS9BgFUnnBLA1hxhbuyDWKUV9aGG9jpSo7F5qhmr0Y5R5hNx=s1200",
+      "pageUrl": "https://maps.google.com/?cid=17641909341940733295",
+      "what": "奄美大島北部の海岸線と緑の丘の遠景"
+    },
+    {
+      "path": "/_portal/vshops/tri-activity-494/g03.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9Sd7MH0WHEf3LyccatsHYncJDFOy6ueWce6X-ryPU0DgpfKNIg7eBHY5NUk7t0_F9wkFYwnOlxmbX4A8XIxLHQLPR_VwmWLumnm9u9CtyhZvp-IM_xt0WbOhFRfq-1WVJR7Y1ZBYkyZ6a56=s1200",
+      "pageUrl": "https://maps.google.com/?cid=17641909341940733295",
+      "what": "マングローブの水路を進む赤いカヌー"
+    },
+    {
+      "path": "/_portal/vshops/tri-activity-494/g04.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9Qji-JGRPOOD4Olu6NaEfrDe-HqvI7q1Xiha5S0o3rznKVRPawTdxZgB6HOs_QLtfrNOZCBQFRjB67N2tK7rDwmt0giq_jl4ukwzMAOd-EnfdF1nMudHLGwUDhBVG_yrm7-OI6m1Ce-AaI=s1200",
+      "pageUrl": "https://maps.google.com/?cid=17641909341940733295",
+      "what": "亜熱帯の森に広がる大きなシダ植物と木々"
+    },
+    {
+      "path": "/_portal/vshops/tri-activity-494/g05.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9TuGPi3kfFpsWPunworBSrqnNh9qQBFBx1-M4jfUammJKZW09HLIsrL_57UYpi0XS7pj3RwGtdea4ECJ5dgHJVVauEsrnHPUlu3XekKIbzHnKI_0NkDPCVa1Xu7twduFzVd6FNDRh09zau7=s1200",
+      "pageUrl": "https://maps.google.com/?cid=17641909341940733295",
+      "what": "マングローブの中を進む参加者のカヌー群"
+    },
+    {
+      "path": "/_portal/vshops/tri-activity-494/g06.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9TnfJvqWG6egsdB-mhUoGFAupTxtvc4PxFmrIZ__vB173oJuR_CtSDVMIIXORaGGjKzSdFtAGmZXgyFYxLmamw4YcbSteg3VVustda1Awcw3R23NGUIuai447F6eYyvkUlCoNEvTO26kpqu=s1200",
+      "pageUrl": "https://maps.google.com/?cid=17641909341940733295",
+      "what": "地面にいる小動物（アマミノクロウサギとみられる）"
+    },
+    {
+      "path": "/_portal/vshops/tri-activity-494/g07.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9SZnCRuzMUuG4i3973vkfRHyhPj_3Twh_6h6cyqbTHBzEvoh5J8-HjRxODicI6LuOg8H57BGBYBGycKHAYFlsG-RWLs1PvrI0diqLDWVdcjhR4foyUsSQEV2LDMU2W7LPW9xgWkkg=s1200",
+      "pageUrl": "https://maps.google.com/?cid=17641909341940733295",
+      "what": "奄美大島の緑の山々と湾の風景"
+    },
+    {
+      "path": "/_portal/vshops/tri-activity-494/g08.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9R5Yv7DeeSgyArYF7JWfXOedEN22rmS4WNO8w6dY-exKJy_bEhjCHybbfwMISqKOd35PiNREf2z1IW7NEtxCrENBYCkH4Zhm9DUQbWV7cMIPKf48ajsPZ6SDOZs7nEIlpkDocs3=s1200",
+      "pageUrl": "https://maps.google.com/?cid=17641909341940733295",
+      "what": "奄美大島の深い緑の山並みを俯瞰した景色"
+    },
+    {
+      "path": "/_portal/vshops/tri-activity-494/g09.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9SPgdzJLH-idaQB2qAzQ9lpxboR2SW3WPc_8snQiDBxOYHIefTe6OvmQL-MaLowvJj1JQwsKqFb2kXoX1tiMFmpp21eo1Z1y8dYQvTLYo9VEmT06kWhT1fnmOKY464wuXUokQ=s1200",
+      "pageUrl": "https://maps.google.com/?cid=17641909341940733295",
+      "what": "岩場の海岸に立つ2人と広がる海"
+    },
+    {
+      "path": "/_portal/vshops/tri-activity-494/g10.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9R-7bmV2uwguInrLmVwRvPmxgz6ftJgOAzCAWD1YXJZvhTJhnGqHqazETHNMuKqnCLbLs80-NqC1Xn1l8_g2p9VyQx6HENrY_VbzNuC2W37uQGASydXzCaOBWq17IHIQMg9qAWTuQ=s1200",
+      "pageUrl": "https://maps.google.com/?cid=17641909341940733295",
+      "what": "緑に囲まれた奄美大島の湾の風景"
+    },
+    {
+      "path": "/_portal/vshops/tri-activity-494/s07.jpg",
+      "imageUrl": "https://evergreen-amami.com/wp-content/uploads/2023/08/IMG_0337-2-scaled.jpg",
+      "pageUrl": "https://evergreen-amami.com/1day/",
+      "what": "白い雲と青い海・砂浜が広がる奄美の海岸"
+    },
+    {
+      "path": "/_portal/vshops/tri-activity-494/s10.jpg",
+      "imageUrl": "https://evergreen-amami.com/wp-content/uploads/2023/08/4887707903098794204.e08479df7b614c6b9fbeeb34be3c58be.23052909-1-fotor-20230805115044.jpg",
+      "pageUrl": "https://evergreen-amami.com/manguro-bukanu/",
+      "what": "マングローブの水路を漕ぐカヌーの後ろ姿"
+    },
+    {
+      "path": "/_portal/vshops/tri-activity-494/s11.jpg",
+      "imageUrl": "https://evergreen-amami.com/wp-content/uploads/2023/08/IMG_1038-fotor-20230805121353-2.jpg",
+      "pageUrl": "https://evergreen-amami.com/manguro-bukanu/",
+      "what": "奄美大島の緑の丘と青空の風景"
+    },
+    {
+      "path": "/_portal/vshops/tri-activity-494/s12.jpg",
+      "imageUrl": "https://evergreen-amami.com/wp-content/uploads/2023/08/IMG_5880-fotor-20230805121011-1.jpg",
+      "pageUrl": "https://evergreen-amami.com/manguro-bukanu/",
+      "what": "山に囲まれた奄美の静かな湾の風景"
+    },
+    {
+      "path": "/_portal/vshops/tri-activity-494/s15.jpg",
+      "imageUrl": "https://evergreen-amami.com/wp-content/uploads/2023/08/IMG_2794-scaled.jpg",
+      "pageUrl": "http://evergreen-amami.com/taki/",
+      "what": "緑の木々に囲まれた滝壺で過ごす様子"
+    },
+    {
+      "path": "/_portal/vshops/tri-activity-494/s16.jpg",
+      "imageUrl": "https://evergreen-amami.com/wp-content/uploads/2023/08/IMG_2173-scaled.jpg",
+      "pageUrl": "http://evergreen-amami.com/taki/",
+      "what": "深い緑の中に流れ落ちる細い滝"
+    }
+  ],
+  "sources": [
+    {
+      "label": "公式サイト",
+      "url": "https://evergreen-amami.com/"
+    },
+    {
+      "label": "公式サイト（1日満喫プラン）",
+      "url": "https://evergreen-amami.com/1day/"
+    },
+    {
+      "label": "公式サイト（マングローブカヌー）",
+      "url": "https://evergreen-amami.com/manguro-bukanu/"
+    },
+    {
+      "label": "公式サイト（滝ツアー）",
+      "url": "http://evergreen-amami.com/taki/"
+    },
+    {
+      "label": "ベルトラ（ナイトツアー）",
+      "url": "https://www.veltra.com/jp/japan/amamioshima/a/182595"
+    },
+    {
+      "label": "ベルトラ（滝散歩ツアー）",
+      "url": "https://www.veltra.com/jp/japan/amamioshima/a/182614"
+    },
+    {
+      "label": "amamitabi.com",
+      "url": "https://amamitabi.com/evergreen-amami/"
+    },
+    {
+      "label": "Google マップ",
+      "url": "https://maps.google.com/?cid=17641909341940733295"
+    }
+  ],
+  "notes": "automation/v2/write.mjs が 2026-11-11 に作成。"
+}

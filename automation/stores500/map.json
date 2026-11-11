@@ -2408,5 +2408,25 @@
     "articleId": "フルサト",
     "sheetName": "自家焙煎珈琲 フルサト",
     "mapsUrl": "https://maps.google.com/?cid=13976622715455852140"
+  },
+  {
+    "articleId": "ナチュランド",
+    "sheetName": "ナチュランド",
+    "mapsUrl": "https://maps.google.com/?cid=6604147092685319284"
+  },
+  {
+    "articleId": "まんま亭・武藤",
+    "sheetName": "まんま亭 武藤",
+    "mapsUrl": "https://maps.google.com/?cid=1864546673451282882"
+  },
+  {
+    "articleId": "フルーツワイナリーエスプリ(東根フルーツワイン)",
+    "sheetName": "フルーツワイナリーエスプリ",
+    "mapsUrl": "https://maps.google.com/?cid=8683325171300393683"
+  },
+  {
+    "articleId": "ぱろぱとBAKERY",
+    "sheetName": "ぱろぱとBAKERY",
+    "mapsUrl": "https://maps.google.com/?cid=3463944215698753854"
   }
 ]

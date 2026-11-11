@@ -1,0 +1,40 @@
+{
+  "tab": "トリニティアポ",
+  "tabEn": "tri-activity",
+  "row": 494,
+  "sheet": {
+    "name": "EVERGREEN奄美",
+    "address": "",
+    "url": "https://www.google.com/maps/search/?api=1&query=EVERGREEN%E5%A5%84%E7%BE%8E%20080-3907-7850%20%E3%80%92894-0506%20%E9%B9%BF%E5%85%90%E5%B3%B6%E7%9C%8C%E5%A5%84%E7%BE%8E%E5%B8%82%E7%AC%A0%E5%88%A9%E7%94%BA%E5%A4%A7%E5%AD%97%E6%89%8B%E8%8A%B1%E9%83%A8%EF%BC%93%EF%BC%91%EF%BC%95%EF%BC%91%E2%88%92%EF%BC%91%20%E9%9B%BB%E8%A9%B1%E7%95%AA%E5%8F%B7%EF%BC%9A-7850",
+    "type": "ツアー",
+    "d1": "",
+    "d2": ""
+  },
+  "urlKind": "mapsApi",
+  "route": "第1段(verify-gbp.mjs)で確認済み",
+  "verdict": "一致",
+  "verdictReason": "手がかり: 店名＋電話＋住所(番地まで)。電話が一致／店名: contains(シート「EVERGREEN奄美」/ マップ「EVERGREEN奄美🌱照井農園」)／住所(シート): exact・町名・番地とも一致",
+  "place": {
+    "name": "EVERGREEN奄美🌱照井農園",
+    "address": "鹿児島県奄美市笠利町大字手花部３１５１−１",
+    "category": "ツアー業者",
+    "lat": 28.4442447,
+    "lng": 129.6611043,
+    "gbpUrl": "https://maps.google.com/?cid=17641909341940733295",
+    "phone": "080-3907-7850",
+    "website": "https://evergreen-amami.com/",
+    "hours": {
+      "月": "08:00–21:00",
+      "火": "08:00–21:00",
+      "水": "08:00–21:00",
+      "木": "08:00–21:00",
+      "金": "08:00–21:00",
+      "土": "08:00–21:00",
+      "日": "09:00–21:00"
+    },
+    "reserveLinks": [],
+    "statusSignals": [],
+    "closedSignal": false
+  },
+  "fetchedAt": "2026-11-11T04:07:23.220Z"
+}

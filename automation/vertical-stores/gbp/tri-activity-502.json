@@ -1,0 +1,32 @@
+{
+  "tab": "トリニティアポ",
+  "tabEn": "tri-activity",
+  "row": 502,
+  "sheet": {
+    "name": "たけの花",
+    "address": "",
+    "url": "https://www.google.com/maps/search/?api=1&query=%E3%81%9F%E3%81%91%E3%81%AE%E8%8A%B1%20088-470-1615%20",
+    "type": "体験",
+    "d1": "",
+    "d2": ""
+  },
+  "urlKind": "mapsApi",
+  "route": "第1段(verify-gbp.mjs)で確認済み",
+  "verdict": "一致",
+  "verdictReason": "手がかり: 店名＋電話。電話が一致／店名: contains(シート「たけの花」/ マップ「たけの花 takenohana」)／住所(シート): none・町名までがちがう（シート:徳島県海部郡海陽町吉野字コカロト / マップ:徳島県海部郡海陽町吉野字）",
+  "place": {
+    "name": "たけの花 takenohana",
+    "address": "徳島県海部郡海陽町吉野字144番地",
+    "category": "工芸品店",
+    "lat": 33.6111073,
+    "lng": 134.3322756,
+    "gbpUrl": "https://maps.google.com/?cid=10901699324380872302",
+    "phone": "0884-70-1615",
+    "website": null,
+    "hours": null,
+    "reserveLinks": [],
+    "statusSignals": [],
+    "closedSignal": false
+  },
+  "fetchedAt": "2026-11-11T04:13:12.314Z"
+}

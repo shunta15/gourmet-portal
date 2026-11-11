@@ -1,0 +1,40 @@
+{
+  "tab": "トリニティアポ",
+  "tabEn": "tri-activity",
+  "row": 499,
+  "sheet": {
+    "name": "正藍染 小原屋",
+    "address": "",
+    "url": "https://www.google.com/maps/search/?api=1&query=%E6%AD%A3%E8%97%8D%E6%9F%93%20%E5%B0%8F%E5%8E%9F%E5%B1%8B%20055-082-0511%20%E3%80%92412-0042%20%E9%9D%99%E5%B2%A1%E7%9C%8C%E5%BE%A1%E6%AE%BF%E5%A0%B4%E5%B8%82%E8%90%A9%E5%8E%9F%EF%BC%96%EF%BC%97%EF%BC%96",
+    "type": "藍染",
+    "d1": "",
+    "d2": ""
+  },
+  "urlKind": "mapsApi",
+  "route": "第1段(verify-gbp.mjs)で確認済み",
+  "verdict": "一致",
+  "verdictReason": "手がかり: 店名＋電話＋住所(番地まで)。電話が一致／店名: exact(シート「正藍染 小原屋」/ マップ「正藍染 小原屋」)／住所(シート): exact・町名・番地とも一致",
+  "place": {
+    "name": "正藍染 小原屋",
+    "address": "静岡県御殿場市萩原６７６",
+    "category": "カルチャー スクール",
+    "lat": 35.3048761,
+    "lng": 138.9297881,
+    "gbpUrl": "https://maps.google.com/?cid=12456179994637738633",
+    "phone": "0550-82-0511",
+    "website": null,
+    "hours": {
+      "月": "08:00–17:00",
+      "火": "08:00–17:00",
+      "水": "08:00–17:00",
+      "木": "08:00–17:00",
+      "金": "08:00–17:00",
+      "土": "08:00–17:00",
+      "日": "08:00–17:00"
+    },
+    "reserveLinks": [],
+    "statusSignals": [],
+    "closedSignal": false
+  },
+  "fetchedAt": "2026-11-11T04:11:22.519Z"
+}

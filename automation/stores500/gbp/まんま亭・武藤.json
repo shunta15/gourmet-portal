@@ -1,0 +1,22 @@
+{
+  "name": "まんま亭・武藤",
+  "address": "宮城県伊具郡丸森町町東６９",
+  "lat": 37.9131863,
+  "lng": 140.7622964,
+  "category": "和食店",
+  "hours": {
+    "月": "11:00–14:30",
+    "火": "11:00–14:30",
+    "水": "11:00–14:30",
+    "木": "定休日",
+    "金": "11:00–14:30",
+    "土": "11:00–14:30",
+    "日": "11:00–14:30"
+  },
+  "phone": "0224-72-1733",
+  "website": "https://manmatei-muto.com/?utm_source=GBP&utm_medium=GBP&utm_term=GBP&utm_content=GBP&utm_campaign=GBP",
+  "priceRange": null,
+  "status": null,
+  "gbpUrl": "https://maps.google.com/?cid=1864546673451282882",
+  "fetchedAt": "2026-11-11T04:08:51.317Z"
+}

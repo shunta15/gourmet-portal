@@ -22888,6 +22888,205 @@ export const ARTICLE_STORES: Restaurant[] = [
       "ランチ"
     ],
     "featureId": "フルサト"
+  },
+  {
+    "id": "r922",
+    "name": "ナチュランド",
+    "cuisine": "ケーキ屋",
+    "area": "東京都・多摩市",
+    "region": "tokyo",
+    "shape": "square",
+    "image": "/restaurants/teleapo-ナチュランド/hero.jpg",
+    "heroImages": [
+      "/restaurants/teleapo-ナチュランド/hero.jpg",
+      "/restaurants/teleapo-ナチュランド/point1.jpg",
+      "/restaurants/teleapo-ナチュランド/point2.jpg",
+      "/restaurants/teleapo-ナチュランド/point3.jpg"
+    ],
+    "gallery": [
+      "/restaurants/teleapo-ナチュランド/hero.jpg",
+      "/restaurants/teleapo-ナチュランド/point1.jpg",
+      "/restaurants/teleapo-ナチュランド/point2.jpg",
+      "/restaurants/teleapo-ナチュランド/point3.jpg"
+    ],
+    "desc": "東京都多摩市のケーキ屋。",
+    "address": "東京都多摩市永山6丁目9-3",
+    "hours": "火〜土 10:00–18:00",
+    "closed": "月曜・日曜",
+    "seats": "—（訪問前に公式確認）",
+    "nearest": "—",
+    "phone": "042-337-1020",
+    "source": {
+      "label": "Google ビジネスプロフィール",
+      "url": "https://maps.google.com/?cid=6604147092685319284"
+    },
+    "body": [
+      "ナチュランドは、東京都多摩市にあるお店です。業態は「ケーキ屋」、所在地は東京都多摩市永山6丁目9-3です。マチノワ編集部の特集記事では、「国産素材を組み合わせる、添加物不使用のハンドメイドケーキ」・「かぼちゃのモンブランとアップルパイ——季節の生菓子」などを取り上げています。",
+      "営業時間は火〜土 10:00–18:00、定休日は月曜・日曜です（Googleマップの営業時間による）。営業時間や価格は変わることがあるため、訪問前に公式サイトやSNS、お電話でご確認ください。"
+    ],
+    "highlights": [
+      "国産素材を組み合わせる、添加物不使用のハンドメイドケーキ",
+      "かぼちゃのモンブランとアップルパイ——季節の生菓子",
+      "クッキー、マドレーヌ、スコーン——ギフトにも使える焼き菓子"
+    ],
+    "tags": [
+      "ケーキ屋",
+      "多摩市",
+      "ランチ"
+    ],
+    "featureId": "ナチュランド"
+  },
+  {
+    "id": "r923",
+    "name": "まんま亭・武藤",
+    "cuisine": "和食店",
+    "area": "宮城県・伊具郡丸森町",
+    "region": "miyagi",
+    "shape": "square",
+    "image": "/restaurants/teleapo-まんま亭・武藤/hero.jpg",
+    "heroImages": [
+      "/restaurants/teleapo-まんま亭・武藤/hero.jpg",
+      "/restaurants/teleapo-まんま亭・武藤/point1.jpg",
+      "/restaurants/teleapo-まんま亭・武藤/point2.jpg",
+      "/restaurants/teleapo-まんま亭・武藤/point3.jpg",
+      "/restaurants/teleapo-まんま亭・武藤/point4.jpg"
+    ],
+    "gallery": [
+      "/restaurants/teleapo-まんま亭・武藤/hero.jpg",
+      "/restaurants/teleapo-まんま亭・武藤/point1.jpg",
+      "/restaurants/teleapo-まんま亭・武藤/point2.jpg",
+      "/restaurants/teleapo-まんま亭・武藤/point3.jpg",
+      "/restaurants/teleapo-まんま亭・武藤/point4.jpg"
+    ],
+    "desc": "宮城県伊具郡丸森町の和食店。",
+    "address": "宮城県伊具郡丸森町町東69",
+    "hours": "月〜水・金〜日 11:00–14:30",
+    "closed": "木曜日",
+    "seats": "32席（団体20席まで可）",
+    "nearest": "—",
+    "phone": "0224-72-1733",
+    "source": {
+      "label": "Google ビジネスプロフィール",
+      "url": "https://maps.google.com/?cid=1864546673451282882"
+    },
+    "body": [
+      "まんま亭・武藤は、宮城県伊具郡丸森町にあるお店です。業態は「和食店」、所在地は宮城県伊具郡丸森町町東69です。マチノワ編集部の特集記事では、「週替わりの松花堂会席弁当と土鍋ご飯」・「丸森産コシヒカリと朝採れ地元野菜」などを取り上げています。",
+      "営業時間は月〜水・金〜日 11:00–14:30、定休日は木曜日です（Googleマップの営業時間による）。席は32席（団体20席まで可）。営業時間や価格は変わることがあるため、訪問前に公式サイトやSNS、お電話でご確認ください。"
+    ],
+    "highlights": [
+      "週替わりの松花堂会席弁当と土鍋ご飯",
+      "丸森産コシヒカリと朝採れ地元野菜",
+      "丸森ブラックラーメンと唎酒師が選ぶ日本酒",
+      "32席の木の空間と、仕出し・テイクアウト"
+    ],
+    "tags": [
+      "和食店",
+      "丸森町",
+      "ランチ"
+    ],
+    "featureId": "まんま亭・武藤"
+  },
+  {
+    "id": "r924",
+    "name": "フルーツワイナリーエスプリ(東根フルーツワイン)",
+    "cuisine": "ワイナリー",
+    "area": "山形県・天童市",
+    "region": "yamagata",
+    "shape": "square",
+    "image": "/restaurants/teleapo-フルーツワイナリーエスプリ(東根フルーツワイン)/hero.jpg",
+    "heroImages": [
+      "/restaurants/teleapo-フルーツワイナリーエスプリ(東根フルーツワイン)/hero.jpg",
+      "/restaurants/teleapo-フルーツワイナリーエスプリ(東根フルーツワイン)/point1.jpg",
+      "/restaurants/teleapo-フルーツワイナリーエスプリ(東根フルーツワイン)/point2.jpg",
+      "/restaurants/teleapo-フルーツワイナリーエスプリ(東根フルーツワイン)/point3.jpg",
+      "/restaurants/teleapo-フルーツワイナリーエスプリ(東根フルーツワイン)/point4.jpg"
+    ],
+    "gallery": [
+      "/restaurants/teleapo-フルーツワイナリーエスプリ(東根フルーツワイン)/hero.jpg",
+      "/restaurants/teleapo-フルーツワイナリーエスプリ(東根フルーツワイン)/point1.jpg",
+      "/restaurants/teleapo-フルーツワイナリーエスプリ(東根フルーツワイン)/point2.jpg",
+      "/restaurants/teleapo-フルーツワイナリーエスプリ(東根フルーツワイン)/point3.jpg",
+      "/restaurants/teleapo-フルーツワイナリーエスプリ(東根フルーツワイン)/point4.jpg"
+    ],
+    "desc": "山形県天童市のワイナリー。",
+    "address": "山形県天童市老野森1丁目15-20",
+    "hours": "毎日 09:00–17:00",
+    "closed": "なし（Googleマップの営業時間による）",
+    "seats": "—（訪問前に公式確認）",
+    "nearest": "—",
+    "phone": "023-608-1186",
+    "source": {
+      "label": "Google ビジネスプロフィール",
+      "url": "https://maps.google.com/?cid=8683325171300393683"
+    },
+    "body": [
+      "フルーツワイナリーエスプリ(東根フルーツワイン)は、山形県天童市にあるお店です。業態は「ワイナリー」、所在地は山形県天童市老野森1丁目15-20です。マチノワ編集部の特集記事では、「山形県産さくらんぼ100%のフルーツワイン」・「収穫から2日以内、無添加・独自醸造法」などを取り上げています。",
+      "営業時間は毎日 09:00–17:00で、定休日はありません（Googleマップの営業時間による）。営業時間や価格は変わることがあるため、訪問前に公式サイトやSNS、お電話でご確認ください。"
+    ],
+    "highlights": [
+      "山形県産さくらんぼ100%のフルーツワイン",
+      "収穫から2日以内、無添加・独自醸造法",
+      "ラインナップと成分分析の公開",
+      "醸造所併設の試飲・直売店舗"
+    ],
+    "tags": [
+      "ワイナリー",
+      "天童市",
+      "ランチ"
+    ],
+    "featureId": "フルーツワイナリーエスプリ(東根フルーツワイン)"
+  },
+  {
+    "id": "r925",
+    "name": "ぱろぱとBAKERY",
+    "cuisine": "ベーカリー",
+    "area": "新潟県・新発田市",
+    "region": "niigata",
+    "shape": "square",
+    "image": "/restaurants/teleapo-ぱろぱとBAKERY/hero.jpg",
+    "heroImages": [
+      "/restaurants/teleapo-ぱろぱとBAKERY/hero.jpg",
+      "/restaurants/teleapo-ぱろぱとBAKERY/point1.jpg",
+      "/restaurants/teleapo-ぱろぱとBAKERY/point2.jpg",
+      "/restaurants/teleapo-ぱろぱとBAKERY/point3.jpg",
+      "/restaurants/teleapo-ぱろぱとBAKERY/point4.jpg"
+    ],
+    "gallery": [
+      "/restaurants/teleapo-ぱろぱとBAKERY/hero.jpg",
+      "/restaurants/teleapo-ぱろぱとBAKERY/point1.jpg",
+      "/restaurants/teleapo-ぱろぱとBAKERY/point2.jpg",
+      "/restaurants/teleapo-ぱろぱとBAKERY/point3.jpg",
+      "/restaurants/teleapo-ぱろぱとBAKERY/point4.jpg"
+    ],
+    "desc": "新潟県新発田市のベーカリー。",
+    "address": "新潟県新発田市城北町2丁目5-5",
+    "hours": "水〜土 10:00–18:00",
+    "closed": "月曜・火曜・日曜",
+    "seats": "—（訪問前に公式確認）",
+    "nearest": "—",
+    "phone": "0254-37-3358",
+    "instagram": "https://www.instagram.com/paropatobakery",
+    "source": {
+      "label": "Google ビジネスプロフィール",
+      "url": "https://maps.google.com/?cid=3463944215698753854"
+    },
+    "body": [
+      "ぱろぱとBAKERYは、新潟県新発田市にあるお店です。業態は「ベーカリー」、所在地は新潟県新発田市城北町2丁目5-5です。マチノワ編集部の特集記事では、「7種の小麦粉を使い分けるハード系パン」・「2種の食パン「ぱろ食パン」と「ぱと食パン」」などを取り上げています。",
+      "営業時間は水〜土 10:00–18:00、定休日は月曜・火曜・日曜です（Googleマップの営業時間による）。営業時間や価格は変わることがあるため、訪問前に公式サイトやSNS、お電話でご確認ください。"
+    ],
+    "highlights": [
+      "7種の小麦粉を使い分けるハード系パン",
+      "2種の食パン「ぱろ食パン」と「ぱと食パン」",
+      "東京のベーカリーで経験を積んだ店主と、イラストレーターの妻がつくる店",
+      "木のカウンターが並ぶ店内と、4台分の駐車場"
+    ],
+    "tags": [
+      "ベーカリー",
+      "パン",
+      "新発田市",
+      "ランチ"
+    ],
+    "featureId": "ぱろぱとBAKERY"
   }
 ];
 
@@ -23370,7 +23569,11 @@ export const ARTICLE_STORE_FEATURE_IDS: Record<string, string> = {
   "r918": "五果苑",
   "r919": "寿司処なら",
   "r920": "浅草ロゼ",
-  "r921": "フルサト"
+  "r921": "フルサト",
+  "r922": "ナチュランド",
+  "r923": "まんま亭・武藤",
+  "r924": "フルーツワイナリーエスプリ(東根フルーツワイン)",
+  "r925": "ぱろぱとBAKERY"
 };
 
 /** 特集記事ID → 店舗ID */
@@ -23852,5 +24055,9 @@ export const ARTICLE_STORE_ID_BY_FEATURE: Record<string, string> = {
   "五果苑": "r918",
   "寿司処なら": "r919",
   "浅草ロゼ": "r920",
-  "フルサト": "r921"
+  "フルサト": "r921",
+  "ナチュランド": "r922",
+  "まんま亭・武藤": "r923",
+  "フルーツワイナリーエスプリ(東根フルーツワイン)": "r924",
+  "ぱろぱとBAKERY": "r925"
 };
