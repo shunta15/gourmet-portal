@@ -1,0 +1,118 @@
+{
+  "commit": "ebebb83eaa9114216775ac5f0d994e1994093533",
+  "source": "/Users/shunta/claude/gp-k-auto2",
+  "count": 10,
+  "added": [
+    {
+      "row": 509,
+      "name": "おさかなつりとと",
+      "key": "tri-activity-509",
+      "vertical": "アクティビティ",
+      "id": "ac0070",
+      "articleId": "ac0070",
+      "shopUrl": "https://machinowa.tokyo/activity/shop/ac0070",
+      "articleUrl": "https://machinowa.tokyo/activity/article/ac0070",
+      "sheetUrl": "https://machinowa.tokyo/activity/article/ac0070"
+    },
+    {
+      "row": 510,
+      "name": "潯陽楼",
+      "key": "tri-stay-510",
+      "vertical": "ステイ",
+      "id": "st0031",
+      "articleId": "st0031",
+      "shopUrl": "https://machinowa.tokyo/stay/shop/st0031",
+      "articleUrl": "https://machinowa.tokyo/stay/article/st0031",
+      "sheetUrl": "https://machinowa.tokyo/stay/article/st0031"
+    },
+    {
+      "row": 511,
+      "name": "割烹系居酒屋 築輪",
+      "key": "tri-gourmet-511",
+      "vertical": "グルメ",
+      "id": "r931",
+      "articleId": "築輪",
+      "shopUrl": "https://machinowa.tokyo/restaurant/r931",
+      "articleUrl": "https://machinowa.tokyo/feature/築輪",
+      "sheetUrl": "https://machinowa.tokyo/feature/築輪"
+    },
+    {
+      "row": 512,
+      "name": "松島温泉ホテルマリンヒルズ",
+      "key": "tri-stay-512",
+      "vertical": "ステイ",
+      "id": "st0032",
+      "articleId": "st0032",
+      "shopUrl": "https://machinowa.tokyo/stay/shop/st0032",
+      "articleUrl": "https://machinowa.tokyo/stay/article/st0032",
+      "sheetUrl": "https://machinowa.tokyo/stay/article/st0032"
+    },
+    {
+      "row": 513,
+      "name": "心華寺金港辯財天",
+      "key": "tri-life-513",
+      "vertical": "くらし",
+      "id": "li0217",
+      "articleId": "li0217",
+      "shopUrl": "https://machinowa.tokyo/life/shop/li0217",
+      "articleUrl": "https://machinowa.tokyo/life/article/li0217",
+      "sheetUrl": "https://machinowa.tokyo/life/article/li0217"
+    },
+    {
+      "row": 514,
+      "name": "レーブルアンドボン",
+      "key": "tri-gourmet-514",
+      "vertical": "グルメ",
+      "id": "r932",
+      "articleId": "LEVREandBONレーブルアンドボン",
+      "shopUrl": "https://machinowa.tokyo/restaurant/r932",
+      "articleUrl": "https://machinowa.tokyo/feature/LEVREandBONレーブルアンドボン",
+      "sheetUrl": "https://machinowa.tokyo/feature/LEVREandBONレーブルアンドボン"
+    },
+    {
+      "row": 515,
+      "name": "着物レンタル 折り鶴",
+      "key": "tri-life-515",
+      "vertical": "くらし",
+      "id": "li0218",
+      "articleId": "li0218",
+      "shopUrl": "https://machinowa.tokyo/life/shop/li0218",
+      "articleUrl": "https://machinowa.tokyo/life/article/li0218",
+      "sheetUrl": "https://machinowa.tokyo/life/article/li0218"
+    },
+    {
+      "row": 516,
+      "name": "HAKODATE CRAFT ローハイド",
+      "key": "tri-activity-516",
+      "vertical": "アクティビティ",
+      "id": "ac0071",
+      "articleId": "ac0071",
+      "shopUrl": "https://machinowa.tokyo/activity/shop/ac0071",
+      "articleUrl": "https://machinowa.tokyo/activity/article/ac0071",
+      "sheetUrl": "https://machinowa.tokyo/activity/article/ac0071"
+    },
+    {
+      "row": 517,
+      "name": "レザークラフト シーレム",
+      "key": "tri-activity-517",
+      "vertical": "アクティビティ",
+      "id": "ac0072",
+      "articleId": "ac0072",
+      "shopUrl": "https://machinowa.tokyo/activity/shop/ac0072",
+      "articleUrl": "https://machinowa.tokyo/activity/article/ac0072",
+      "sheetUrl": "https://machinowa.tokyo/activity/article/ac0072"
+    },
+    {
+      "row": 518,
+      "name": "Sweetmom(スイートマム)",
+      "key": "tri-life-518",
+      "vertical": "くらし",
+      "id": "li0219",
+      "articleId": "li0219",
+      "shopUrl": "https://machinowa.tokyo/life/shop/li0219",
+      "articleUrl": "https://machinowa.tokyo/life/article/li0219",
+      "sheetUrl": "https://machinowa.tokyo/life/article/li0219"
+    }
+  ],
+  "skipped": []
+}

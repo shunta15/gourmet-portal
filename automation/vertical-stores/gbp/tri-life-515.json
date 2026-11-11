@@ -1,0 +1,40 @@
+{
+  "tab": "トリニティアポ",
+  "tabEn": "tri-life",
+  "row": 515,
+  "sheet": {
+    "name": "着物レンタル 折り鶴",
+    "address": "",
+    "url": "https://www.google.com/maps/search/?api=1&query=%E7%9D%80%E7%89%A9%E3%83%AC%E3%83%B3%E3%82%BF%E3%83%AB%20%E6%8A%98%E3%82%8A%E9%B6%B4%20078-600-2156%20%E3%80%92651-1401%20%E5%85%B5%E5%BA%AB%E7%9C%8C%E7%A5%9E%E6%88%B8%E5%B8%82%E5%8C%97%E5%8C%BA%E6%9C%89%E9%A6%AC%E7%94%BA%EF%BC%91%EF%BC%92%EF%BC%94%EF%BC%99%E2%88%92%EF%BC%97",
+    "type": "着物販売店",
+    "d1": "",
+    "d2": ""
+  },
+  "urlKind": "mapsApi",
+  "route": "第1段(verify-gbp.mjs)で確認済み",
+  "verdict": "一致",
+  "verdictReason": "手がかり: 店名＋電話＋住所(番地まで)。電話が一致／店名: contains(シート「着物レンタル 折り鶴」/ マップ「折り鶴」)／住所(シート): exact・町名・番地とも一致",
+  "place": {
+    "name": "折り鶴",
+    "address": "兵庫県神戸市北区有馬町１２４９−７",
+    "category": "着物販売店",
+    "lat": 34.8013196,
+    "lng": 135.2465357,
+    "gbpUrl": "https://maps.google.com/?cid=6182401088082065208",
+    "phone": "078-600-2156",
+    "website": "https://kimono-orizuru.hp.peraichi.com/arima?_gl=1*18zthcf*_gcl_au*MTU0MjU3NDg4Mi4xNzY4ODAxMDUzLjI0MDQ1NDcwNC4xNzcyNDQxNzg1LjE3NzI0NDE4ODg.&_ga=2.141853684.770308801.1772682467-613835612.1768801054",
+    "hours": {
+      "月": "定休日",
+      "火": "定休日",
+      "水": "定休日",
+      "木": "定休日",
+      "金": "10:00–17:00",
+      "土": "10:00–17:00",
+      "日": "10:00–17:00"
+    },
+    "reserveLinks": [],
+    "statusSignals": [],
+    "closedSignal": false
+  },
+  "fetchedAt": "2026-11-11T11:09:12.981Z"
+}

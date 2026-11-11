@@ -1,0 +1,326 @@
+{
+  "key": "tri-activity-509",
+  "vertical": "activity",
+  "storeName": "おさかなつりとと",
+  "article": {
+    "id": "おさかなつりとと",
+    "no": "",
+    "articleType": "guide",
+    "kicker": "OSAKANATSURITOTO SHOWA YAMANASHI",
+    "title": "山梨県昭和町の管理釣り場。6種類の釣り池で楽しむエサ釣りとルアーフィッシング",
+    "titleHTML": "山梨県昭和町の管理釣り場<br><em>おさかなつりとと</em>の6種類の釣り池とルアー専用エリア",
+    "subtitle": "釣り堀 / 山梨県中巨摩郡昭和町 / エサ釣り・ルアーフィッシング",
+    "lede": "おさかなつりととは、山梨県中巨摩郡昭和町にある管理釣り場だ。ルアーフィッシングとエサ釣りを合わせて全部で6種類の釣り池があり、ニジマス・金魚・錦鯉・コイ・ハヤ・ザリガニを対象にした釣りが楽しめる。屋内と屋外に池が設けられており、湧水を使用しているためCATルアーエリアは一年中水温が安定している。ルアーフィッシング専用のCATエリアは手前と右奥の2セクションに分かれており、右奥は安全確保のため付き添いの方は入場できない。釣り竿のレンタルがあり、手ぶらで訪問できる。",
+    "date": "2026-11-11",
+    "reading": "",
+    "author": "マチノワ編集部",
+    "heroImage": "/_portal/vshops/tri-activity-509/g05.jpg",
+    "ogImage": "/_portal/vshops/tri-activity-509/g05.jpg",
+    "ranking": [
+      {
+        "rank": "POINT 01",
+        "rankNum": 1,
+        "name": "CATルアー専用エリアの構成と特徴",
+        "cuisine": "ルアーフィッシング",
+        "area": "昭和町",
+        "purpose": "ルアーフィッシングのエリア詳細を知りたい人へ",
+        "desc": "CATはルアー専用キャスティングエリアで、手前と右奥の2セクションがある。右奥エリアは安全確保のため、見学者や付き添いの方は入場できない設定になっている。池の最深部は約2メートルで、底地は砂質だ。湧水を使用しているため一年中水温が安定しており、真夏や冬でも釣りができる。対象魚はニジマスで、使用ロッドは6.4フィート以下と定められている。釣った魚はポイントに換算され、景品と交換できる仕組みがある。",
+        "images": [
+          "/_portal/vshops/tri-activity-509/g10.jpg"
+        ],
+        "specs": [
+          {
+            "k": "ロッド制限",
+            "v": "6.4フィート以下"
+          },
+          {
+            "k": "池の最深部",
+            "v": "約2メートル（砂質）"
+          }
+        ]
+      },
+      {
+        "rank": "POINT 02",
+        "rankNum": 2,
+        "name": "エサ釣りエリアと釣れる魚の種類",
+        "cuisine": "エサ釣り",
+        "area": "昭和町",
+        "purpose": "エサ釣りでどんな魚が釣れるか知りたい人へ",
+        "desc": "エサ釣りでは金魚・小コイ・ニジマス・錦鯉・ハヤ・ザリガニが対象魚となっている。全部で6種類の池は移動自由で、池ごとに異なる魚種を狙える。エサには練り餌を使用する。釣り竿はレンタルがあり手ぶらで参加できる。スタッフがエサのつけ方や竿の使い方を教えてくれるため、釣りがはじめての人でも体験できる。屋内に設けられた池では雨の日でも釣りができる。",
+        "images": [
+          "/_portal/vshops/tri-activity-509/s04.jpg"
+        ],
+        "specs": [
+          {
+            "k": "対象魚",
+            "v": "ニジマス・金魚・錦鯉・コイ・ハヤ・ザリガニ"
+          }
+        ]
+      },
+      {
+        "rank": "POINT 03",
+        "rankNum": 3,
+        "name": "施設の設備と対象者",
+        "cuisine": "設備・対象",
+        "area": "昭和町",
+        "purpose": "子連れや初心者が利用できるか知りたい人へ",
+        "desc": "施設全体が子どもにやさしい造りになっており、ファミリーでの利用に対応している。車椅子スロープが設置されており、補助犬の同伴にも対応している。犬連れでの来場もでき、わんちゃんと一緒に釣りが楽しめる。駐車場は7台分ある。トイレが1か所設けられている。友人グループやカップルでの利用もできる屋外の遊び場として運営されている。",
+        "images": [
+          "/_portal/vshops/tri-activity-509/g03.jpg"
+        ],
+        "specs": [
+          {
+            "k": "駐車場",
+            "v": "7台"
+          }
+        ]
+      }
+    ],
+    "sideArticles": [],
+    "quote": "6種類の釣り池を移動しながら、エサ釣りとルアーフィッシングの両方が楽しめる。湧水を使ったCATルアーエリアは水温が安定しており、一年中ニジマスを狙える。子連れ・初心者・犬連れにも対応している。",
+    "quoteCite": "マチノワ編集部",
+    "closing": "中央自動車道・甲府昭和ICから車で約10分の距離にある。駐車場は7台分ある。カーナビでは別の場所に案内されることがあるため、場所名で検索するとよい。じゃらんnetからも予約ができる。"
+  },
+  "summary": "おさかなつりととの特集。6種類の池の構成、CATルアー専用エリアの詳細、対象者と設備、甲府昭和ICからのアクセスを整理した。",
+  "tags": [
+    "海・川"
+  ],
+  "charCount": 947,
+  "facts": [
+    {
+      "claim": "山梨県中巨摩郡昭和町紙漉阿原1969にある管理釣り場",
+      "source": "https://maps.google.com/?cid=1046344024489592648",
+      "quote": "〒409-3861 山梨県中巨摩郡昭和町紙漉阿原1969",
+      "checkedAt": "2026-11-11"
+    },
+    {
+      "claim": "電話番号は055-275-0111",
+      "source": "https://maps.google.com/?cid=1046344024489592648",
+      "quote": "TEL: 055-275-0111",
+      "checkedAt": "2026-11-11"
+    },
+    {
+      "claim": "受付終了は16:00",
+      "source": "http://www.toto-yamanashi.com/access/",
+      "quote": "9:00〜ラスト (受付終了16:00)",
+      "checkedAt": "2026-11-11"
+    },
+    {
+      "claim": "釣り竿のレンタルがあり手ぶらで参加できる",
+      "source": "https://tsuribori.net/introduce/osakanaturitoto/",
+      "quote": "貸し竿とエサが料金に含まれています",
+      "checkedAt": "2026-11-11"
+    },
+    {
+      "claim": "ルアーフィッシングとエサ釣りを合わせて全部で6種類の釣り池がある",
+      "source": "https://tsuribori.net/introduce/osakanaturitoto/",
+      "quote": "ルアーフィッシングとエサ釣りと合わせて全部で6種類の釣り池があります",
+      "checkedAt": "2026-11-11"
+    },
+    {
+      "claim": "施設全体が子どもにやさしい造りになっている",
+      "source": "https://anglers-net.com/post-2173/",
+      "quote": "施設全体がお子様にやさしいつくりになっています",
+      "checkedAt": "2026-11-11"
+    },
+    {
+      "claim": "釣れる魚はニジマス・金魚・錦鯉・コイ・ハヤ・ザリガニ",
+      "source": "https://tsuribori.net/introduce/osakanaturitoto/",
+      "quote": "ニジマス（レインボートラウト）、金魚、錦鯉、鯉、ハヤ（ウグイ）、ザリガニが対象魚です",
+      "checkedAt": "2026-11-11"
+    },
+    {
+      "claim": "6種類の池は移動自由で利用できる",
+      "source": "https://www.jalan.net/kankou/spt_guide000000207107/",
+      "quote": "大小合わせて６種類の釣り池を移動自由で楽しめます",
+      "checkedAt": "2026-11-11"
+    },
+    {
+      "claim": "右奥エリアは安全確保のため見学者・付き添いの方は入場できない",
+      "source": "http://www.toto-yamanashi.com/cat/",
+      "quote": "キャストスペースの確保と安全の為、見学者や付き添いの方の入場はできません",
+      "checkedAt": "2026-11-11"
+    },
+    {
+      "claim": "湧水を使用しているためCATエリアは一年中水温が安定している",
+      "source": "http://www.toto-yamanashi.com/cat/",
+      "quote": "湧水をふんだんに使っているので一年中水温が安定",
+      "checkedAt": "2026-11-11"
+    },
+    {
+      "claim": "ルアーフィッシングには6.4フィート以下のロッドが必要",
+      "source": "http://www.toto-yamanashi.com/cat/",
+      "quote": "ロッド制限：6.4フィート以下",
+      "checkedAt": "2026-11-11"
+    },
+    {
+      "claim": "釣った魚はポイントに換算され景品と交換できる",
+      "source": "http://www.toto-yamanashi.com/cat/",
+      "quote": "釣った魚はポイント換算され、景品と交換できます",
+      "checkedAt": "2026-11-11"
+    },
+    {
+      "claim": "犬連れでの来場ができる",
+      "source": "http://www.toto-yamanashi.com/index.php?q=%E6%96%B0%E7%9D%80%E6%83%85%E5%A0%B1",
+      "quote": "わんちゃんも一緒（犬連れ）にお魚釣りができますよ",
+      "checkedAt": "2026-11-11"
+    },
+    {
+      "claim": "カーナビを使うと別の場所に案内されることがある",
+      "source": "http://www.toto-yamanashi.com/access/",
+      "quote": "カーナビだと別の場所に連れて行かれることがあります",
+      "checkedAt": "2026-11-11"
+    },
+    {
+      "claim": "じゃらんnetからも予約ができる",
+      "source": "https://www.jalan.net/kankou/spt_guide000000207107/",
+      "quote": "じゃらんnetにページがあり予約対応",
+      "checkedAt": "2026-11-11"
+    },
+    {
+      "claim": "友人同士やカップルでも楽しめる屋外の遊び場として運営されている",
+      "source": "http://www.toto-yamanashi.com/",
+      "quote": "友達同士やカップルで楽しめるレジャー（デート）スポット",
+      "checkedAt": "2026-11-11"
+    }
+  ],
+  "images": [
+    {
+      "path": "/_portal/vshops/tri-activity-509/g01.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9RDKYF3tIrvtiS0qHYbArpaTYQjpked5vT7jyvVEY8X_HLFLtf51p0-XYKQqkQ7Rwl-8GmdU95tbKHaf3pTlIWLrGkxIaji5xKmPk5E8h1zMA6zIgP6VtUePODUxUGHa_e_Jfw=s1200",
+      "pageUrl": "https://maps.google.com/?cid=1046344024489592648",
+      "what": "網にかかった魚のアップ"
+    },
+    {
+      "path": "/_portal/vshops/tri-activity-509/g02.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9Q6qU8Kl_ix_SZ3VsP5Yr8llW7L-8mGF7zOcRdffhSus5ER8uhH4S0E4pPD-Ltt_qsal5IV2mUNHdDvE8cMzt9K1oCYFAFIQVSt-9Wu331DUY9_wSka04i8GjlaI6pMHck5eJHM=s1200",
+      "pageUrl": "https://maps.google.com/?cid=1046344024489592648",
+      "what": "タモ網で取り込まれた魚"
+    },
+    {
+      "path": "/_portal/vshops/tri-activity-509/g03.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9TbdVx1CzOcnac3jma2nTY9ZHRKWNXUwB2FccDDomKSAXXHHl9j1TbNIbtmnrCheGEVxWkh8kAS94TQaNXN6m7BoAzLC1omxi0uKUUhvfDg6cPeD30kIWdm5jwiiBC7cNYBG5VCEw=s1200",
+      "pageUrl": "https://maps.google.com/?cid=1046344024489592648",
+      "what": "池の前で釣りをする人"
+    },
+    {
+      "path": "/_portal/vshops/tri-activity-509/g04.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9QYUuAfqCHjZAAbNjPu6Wzo_R-VMVbkAVLH9tP1L8NQPVYRrDJCM8hiDG6BW7YQwoNd4-w4Ocw43jY9WDsbATpKtirU1OkaaPCIG-nGMBiNYGPOi17eQiy7YvpmG4oogWDZVhgosw=s1200",
+      "pageUrl": "https://maps.google.com/?cid=1046344024489592648",
+      "what": "タモ網で取り込んだ魚"
+    },
+    {
+      "path": "/_portal/vshops/tri-activity-509/g05.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9ReE2sG-7js5o4iNV7ScNJ-SI_L7cmi6t--oeXWdeIPuufmSR2qX_wp3mE0RZGDvV55vMBRVL2xJSfyqvM9QUOjIpd5IAJyaSwASEPUI3833-ow_TSXEEiBO48EMAzBVLP1uvI=s1200",
+      "pageUrl": "https://maps.google.com/?cid=1046344024489592648",
+      "what": "青空のもとに広がる釣り堀の池と施設全景"
+    },
+    {
+      "path": "/_portal/vshops/tri-activity-509/g06.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9SA2ulu6v2nKbAdPTzldVQlypeykMtDbmSzgvQ_h8Z4KoB2kvdsbx8hEZHja5o2_fFZcZll-IwhivWNlUcdwM0XVWdME3nIOnhOB2jj7ZJKWTmXqsVg6bJ9YgA_FCTUbQyOlyo=s1200",
+      "pageUrl": "https://maps.google.com/?cid=1046344024489592648",
+      "what": "池の縁で釣りをする人の手元"
+    },
+    {
+      "path": "/_portal/vshops/tri-activity-509/g07.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9Tx--XRmrd1ahbD3wqnwA6DPlUEEop0L40mORtAVLqzUn6PhPO7UBp1jq77WJN8ZPkMUYzwBSf88Rd6eECnDqvo-IPwx7Hid5p3be7m0UGz50VyvhH_6YNeMCqXXurQLfi3EhCgrQ=s1200",
+      "pageUrl": "https://maps.google.com/?cid=1046344024489592648",
+      "what": "池の水面と釣り場の様子"
+    },
+    {
+      "path": "/_portal/vshops/tri-activity-509/g08.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9Q5apmF6CmV3-nvfGPxgfrw01pXjOaW_vyMv_cJmjg3C7JVEQZF6mAGFizmf2BBOVw2dS8LVdJJPgKQne-58BkcpltDtITIkE6_pDLbvbxEM_W7n6qQ_I__BjD05V6cJ0FrV43TDeKwR30I=s1200",
+      "pageUrl": "https://maps.google.com/?cid=1046344024489592648",
+      "what": "池に浮かぶボートと周辺の様子"
+    },
+    {
+      "path": "/_portal/vshops/tri-activity-509/g09.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9TWz9amrwrBF6IwcTlt73bJQ56VV8CjP2Atq2tit4f8Jm5snqpbYUapZ2twBTzOxTU04moR_GylAY-qWvWTtACo-KdSLeQyyqGNOPSRhVx_R-0s-vTvxUCfLHtMhquQWN_6PA5lDA=s1200",
+      "pageUrl": "https://maps.google.com/?cid=1046344024489592648",
+      "what": "池の水中を泳ぐ大きな魚"
+    },
+    {
+      "path": "/_portal/vshops/tri-activity-509/g10.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9QaVk46UCrJcD_ZUxtFR1Y-VFwldxAaxMsD4c2y-r3jDHABDiuThqeVactpGeyaOSsN86cj245nhMTh0uS978YUJEEiErlBrO82g-5No3zSgGMa05VYWJc9XEA3LGQZSGozi7Nl=s1200",
+      "pageUrl": "https://maps.google.com/?cid=1046344024489592648",
+      "what": "池の前で釣り竿を持つ人と釣り場全体"
+    },
+    {
+      "path": "/_portal/vshops/tri-activity-509/s01.jpg",
+      "imageUrl": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjzrJRpeEzTWPjR5vOHUoOZLlC9ptrhS3fM0LhZEQHi8CmZ-nY4o9zcMk_c8MgirllyfWun9Yixws7fHVesLp0GyRzLErkBozH3DVhv_eJs620xMLD5eWSKsxZJRHvpyslk-ADTGEeJfM08lWJiDYMThADhiXvw3turLLYliH8Q2HDrrs5vChFhWtnEUAM/w640-h480/IMG_7444.jpeg",
+      "pageUrl": "http://www.toto-yamanashi.com/",
+      "what": "草地の前で釣り竿を持つ子どもと大人"
+    },
+    {
+      "path": "/_portal/vshops/tri-activity-509/s02.jpg",
+      "imageUrl": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg0c5UGNCChxykHTm32zjgYmllQwv1ccj5zkXxwzh_JSjBJ-ChUvZFnJrksBop3ulcNRx7rhKJmkCZIcVZEuEXTpUs-2X5FKe4FL7CLnB-dFXVPCrFmIEgj4IOkSe0-eYcfRsnGyYEp1QYqL-Yyd8_tEfWV5Yoww6p0RoH7qyH3bjIAP7mPHGhlabFr8IM/w640-h480/IMG_7340.jpeg",
+      "pageUrl": "http://www.toto-yamanashi.com/",
+      "what": "岩の前でタモ網を持つ人"
+    },
+    {
+      "path": "/_portal/vshops/tri-activity-509/s03.jpg",
+      "imageUrl": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi7KfdOTIOB_HEDC88lz98YS47tQBUZ6Rbq41EHy2sKiI-u3Dr6WiEdbOjUodVDgQVbY9MUC7tX0eYAuFWVD9ycjtyfploJovoXjA2lS7UbxYVAmM8jf1a4yMShzxOgZJgejSGQZHuIv1DjQI83oMeDuNkK6tN1LlVJTjqIA6vkrpWQAtg0VRrhmae_G1s/w640-h480/IMG_6847.jpeg",
+      "pageUrl": "http://www.toto-yamanashi.com/",
+      "what": "池の縁に並んで釣りをする人たち"
+    },
+    {
+      "path": "/_portal/vshops/tri-activity-509/s04.jpg",
+      "imageUrl": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjurl2sM-SNnRvLRjex9Va-oASwhaB90inkha193UpYOJjTOA4HfiPrnZRNTulW9iA7n8OUzi2ohx8-jHUaPeIGBv5M_rpW-JJT0qAtrduXQUy1QAIocuEEBLvBCLuveoG7fQptEpHG4QGcuAsSh24OMc0VXA_1Fzv9UZM3EwLH80SYTqaQqzS_2phVvQ8/w640-h480/IMG_6434.jpeg",
+      "pageUrl": "http://www.toto-yamanashi.com/",
+      "what": "笑顔で大きなコイを持ち上げる人"
+    },
+    {
+      "path": "/_portal/vshops/tri-activity-509/s08.jpg",
+      "imageUrl": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEijvkHnGEN7r3qL59lXHDwgQ1xKGKcS78KscZTsodAja8Syc6-76sI_gxyMKHSGZ009yptaOOs2oAgy-YeYWYrHVrsLHQ34rIrJuJB9cEePibkv1O2dB-Q1lCFt5S5kzPoCJazetWxFGuI/s600/B5FE3598-ED74-4599-9C8E-9CA5E7D4CA49.jpeg",
+      "pageUrl": "http://www.toto-yamanashi.com/",
+      "what": "タモ網で魚を取り込む子ども"
+    },
+    {
+      "path": "/_portal/vshops/tri-activity-509/s09.jpg",
+      "imageUrl": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj6ti1fz6o2C2LzN_6LdHFBUnFuzZm3Vs3lnDX0UOuxkpm96P-aASvkbtEBSM9pFvgXISeo30yfDvvN-mtVCNZig5Sfv5Z5z-5Pz_547AYQyHlLDrK3x8Aq_ezoDjUGDxGpu3K13FZ6x5Jyr_IZkb3cYS6ogFWMP-48oERrc3-uvRV6whD0Ejp7ydE44bY/s600/IMG_2884.jpeg",
+      "pageUrl": "http://www.toto-yamanashi.com/",
+      "what": "施設の前に立つグループ"
+    },
+    {
+      "path": "/_portal/vshops/tri-activity-509/s17.jpg",
+      "imageUrl": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj9NKf8kTeJTIr-IlCE_loDRfosW7LdOGpv9mm3H9S7uZcCvy7hybvsDJ8rUNfs-Tcki7ZWuZVPxEsUpqUsj52-5TDeQt8WiVrx2rR2pZEI2s-GieRCSi99LsglJWMUlqspPQAUBuZtZrXE_b80iyG1ZI6Xfa8fk5AB9_wuMbLrofYOAtDT1QrgckgC7E0/s600/IMG_4253.jpeg",
+      "pageUrl": "http://www.toto-yamanashi.com/index.php?q=%E6%96%B0%E7%9D%80%E6%83%85%E5%A0%B1",
+      "what": "芝生の前に座る犬"
+    }
+  ],
+  "sources": [
+    {
+      "label": "公式サイト",
+      "url": "http://www.toto-yamanashi.com/"
+    },
+    {
+      "label": "公式サイト(アクセス)",
+      "url": "http://www.toto-yamanashi.com/access/"
+    },
+    {
+      "label": "公式サイト(CATエリア)",
+      "url": "http://www.toto-yamanashi.com/cat/"
+    },
+    {
+      "label": "公式サイト(新着情報)",
+      "url": "http://www.toto-yamanashi.com/index.php?q=%E6%96%B0%E7%9D%80%E6%83%85%E5%A0%B1"
+    },
+    {
+      "label": "管理釣り場情報サイト",
+      "url": "https://tsuribori.net/introduce/osakanaturitoto/"
+    },
+    {
+      "label": "じゃらんnet",
+      "url": "https://www.jalan.net/kankou/spt_guide000000207107/"
+    },
+    {
+      "label": "Anglers-net",
+      "url": "https://anglers-net.com/post-2173/"
+    },
+    {
+      "label": "Google マップ",
+      "url": "https://maps.google.com/?cid=1046344024489592648"
+    }
+  ],
+  "notes": "automation/v2/write.mjs が 2026-11-11 に作成。"
+}

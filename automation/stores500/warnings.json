@@ -3808,5 +3808,20 @@
     "warnings": [
       "cuisine は GBPカテゴリ"
     ]
+  },
+  "r931": {
+    "articleId": "築輪",
+    "name": "築輪",
+    "warnings": [
+      "desc は lede から事実の文を選べず、事実から作った定型文",
+      "cuisine は GBPカテゴリ"
+    ]
+  },
+  "r932": {
+    "articleId": "LEVREandBONレーブルアンドボン",
+    "name": "LEVRE and BONレーブルアンドボン",
+    "warnings": [
+      "cuisine は GBPカテゴリ"
+    ]
   }
 }

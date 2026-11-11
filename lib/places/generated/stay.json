@@ -5802,6 +5802,493 @@
           "洋室"
         ]
       }
+    },
+    {
+      "id": "st0031",
+      "vertical": "stay",
+      "category": "ryokan",
+      "name": "潯陽楼",
+      "pref": "hyogo",
+      "cityName": "丹波篠山市",
+      "address": "兵庫県丹波篠山市二階町79",
+      "lat": 35.0768137,
+      "lng": 135.215949,
+      "phone": "079-552-0021",
+      "url": "https://tourism.sasayama.jp/jinyoro/",
+      "website": "https://tourism.sasayama.jp/jinyoro/",
+      "mapUrl": "https://maps.google.com/?cid=17162415835474956993",
+      "image": "/_portal/vshops/tri-stay-510/g01.jpg",
+      "images": [
+        "/_portal/vshops/tri-stay-510/g01.jpg",
+        "/_portal/vshops/tri-stay-510/g02.jpg",
+        "/_portal/vshops/tri-stay-510/g03.jpg",
+        "/_portal/vshops/tri-stay-510/g04.jpg",
+        "/_portal/vshops/tri-stay-510/g05.jpg",
+        "/_portal/vshops/tri-stay-510/g06.jpg",
+        "/_portal/vshops/tri-stay-510/g07.jpg",
+        "/_portal/vshops/tri-stay-510/g08.jpg",
+        "/_portal/vshops/tri-stay-510/g09.jpg",
+        "/_portal/vshops/tri-stay-510/g10.jpg",
+        "/_portal/vshops/tri-stay-510/s14.jpg",
+        "/_portal/vshops/tri-stay-510/s17.jpg"
+      ],
+      "photos": [
+        {
+          "path": "/_portal/vshops/tri-stay-510/g01.jpg",
+          "what": "白壁と木の格子が並ぶ旅館の外観",
+          "kind": "exterior",
+          "width": 500,
+          "height": 390
+        },
+        {
+          "path": "/_portal/vshops/tri-stay-510/g02.jpg",
+          "what": "松の木と看板が並ぶ潯陽楼の玄関外観",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 904
+        },
+        {
+          "path": "/_portal/vshops/tri-stay-510/g03.jpg",
+          "what": "白菜とネギが入った鍋料理",
+          "kind": "meal",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-stay-510/g04.jpg",
+          "what": "牛肉と小鉢が並ぶ和食膳",
+          "kind": "meal",
+          "width": 1200,
+          "height": 901
+        },
+        {
+          "path": "/_portal/vshops/tri-stay-510/g05.jpg",
+          "what": "とろろ料理と小鉢が並ぶ膳",
+          "kind": "meal",
+          "width": 675,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-stay-510/g06.jpg",
+          "what": "生の肉と野菜が盛られた鍋の素材",
+          "kind": "meal",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-stay-510/g07.jpg",
+          "what": "白と緑の野菜が盛られた和皿の料理",
+          "kind": "meal",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-stay-510/g08.jpg",
+          "what": "小鉢が複数並んだ和食の膳",
+          "kind": "meal",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-stay-510/g09.jpg",
+          "what": "薄切りの猪肉が円状に並べられた皿",
+          "kind": "meal",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-stay-510/g10.jpg",
+          "what": "卵黄をのせた丼ぶり料理",
+          "kind": "meal",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-stay-510/s14.jpg",
+          "what": "白壁の建物が並ぶ城下町の通り沿いの外観",
+          "kind": "exterior",
+          "width": 844,
+          "height": 844
+        },
+        {
+          "path": "/_portal/vshops/tri-stay-510/s17.jpg",
+          "what": "白壁の蔵が続く城下町の石畳の通り",
+          "kind": "view",
+          "width": 768,
+          "height": 512
+        }
+      ],
+      "tags": [
+        "一人旅"
+      ],
+      "article": {
+        "headline": "兵庫県丹波篠山市、篠山城下町の中心部にある料理旅館。明治40年の創業で、和室5室・洋室8室を持ち、丹波篠山の郷土料理を出す。",
+        "lede": "丹波篠山市にある「潯陽楼」です。明治40年の創業で、篠山城下町の中心部、二階町に位置します。「丹波篠山むぎとろ御膳」発祥の老舗料理旅館で、山の芋をすりおろしたとろろを麦ご飯に合わせた元祖の味を出し続けています。ぼたん鍋・すき焼き・山家料理など、丹波篠山の特産品や地物を使った本格的な郷土料理が食事の中心です。ビジネス利用の一人旅から、ファミリー、40名前後の宴会まで、幅広い形で利用できます。屋号は初代店主が好んでいた謡曲「猩々」の一節「潯陽の江のほとりにて…」に由来し、地酒と料理を夜が更けるのを忘れて味わってほしいという思いが込められていると伝わります。宿の各所には能面や能の絵画が飾られ、屋号の由来となった能の雰囲気を感じることができます。",
+        "sections": [
+          {
+            "heading": "客室の種類と数",
+            "body": "客室は全13室で、和室5室と洋室8室があります。和室は10〜12畳で、1〜6名まで利用できます。洋室はツインタイプで、1〜3名に対応しています。すべての客室にバス・トイレが付いており、全室禁煙です。ビジネスでの一人泊から家族連れ、団体旅行まで、利用人数に合わせて客室が用意されています。最大宿泊人数は39名です。"
+          },
+          {
+            "heading": "食事",
+            "body": "食事は丹波篠山の名産と地物を多く使った郷土料理が中心です。この宿が発祥の「丹波篠山むぎとろ御膳」は、丹波篠山産の山の芋をすりおろしたとろろと麦ご飯を組み合わせた一品で、100年前と変わらない味を出しています。ぼたん鍋は秘伝の合わせ味噌で仕上げる猪肉の鍋で、販売時期は11月から3月です。猪の炭火焼肉（焼きぼたん）も提供しています。ほかにすき焼き・国産牛しゃぶしゃぶ・山家料理があり、黒豆・とろろ和え・丹波篠山牛など地元の素材を使った料理が揃います。宴会や会食にも対応しており、宴会場は120名収容、椅子席は60名収容です。予約なしでランチ利用もできます。"
+          },
+          {
+            "heading": "館内",
+            "body": "内湯は男女各1つあります。温泉ではありませんが、入浴時間は16時から23時まで設けられています。館内には宴会場のほか、会議室、売店、自動販売機があります。支払いは現金のみです。駐車場は11台分あります。"
+          },
+          {
+            "heading": "行き方と使い方",
+            "body": "JR福知山線「篠山口駅」から篠山市内行きバスで10分、「二階町バス停」で下車して西へ徒歩1分です。車の場合は、舞鶴若狭自動車道の丹南篠山口ICから丹波篠山市街へ向かいます。チェックインは16時から、チェックアウトは10時までです。じゃらんnetや楽天トラベルなどの宿泊予約サイトから予約できます。"
+          }
+        ],
+        "menus": [
+          {
+            "name": "丹波篠山むぎとろ御膳"
+          },
+          {
+            "name": "ぼたん鍋"
+          },
+          {
+            "name": "猪の炭火焼肉（焼きぼたん）"
+          },
+          {
+            "name": "すき焼き"
+          },
+          {
+            "name": "国産牛しゃぶしゃぶ"
+          },
+          {
+            "name": "山家料理"
+          }
+        ],
+        "sources": [
+          {
+            "label": "公式サイト（丹波篠山市観光サイト）",
+            "url": "https://tourism.sasayama.jp/jinyoro/"
+          },
+          {
+            "label": "楽天トラベル",
+            "url": "https://hotel.travel.rakuten.co.jp/hotelinfo/plan/18267"
+          },
+          {
+            "label": "トクー！",
+            "url": "https://www.tocoo.jp/detail/4001671"
+          },
+          {
+            "label": "駅探",
+            "url": "https://ekitan.com/local-info/lodging/spot/spid-07d218dcf623ca1d854fcd632a75de12"
+          },
+          {
+            "label": "Google マップ",
+            "url": "https://maps.google.com/?cid=17162415835474956993"
+          }
+        ],
+        "checkedAt": "2026-11-11"
+      },
+      "attributes": {
+        "roomTypes": [
+          "和室10〜12畳",
+          "ツイン"
+        ]
+      }
+    },
+    {
+      "id": "st0032",
+      "vertical": "stay",
+      "category": "hotel",
+      "name": "松島温泉ホテルマリンヒルズ",
+      "pref": "kumamoto",
+      "cityName": "上天草市",
+      "address": "熊本県上天草市松島町合津6137",
+      "lat": 32.5253872,
+      "lng": 130.4268024,
+      "phone": "0969-52-8720",
+      "url": "https://marine-hills.com/",
+      "website": "https://marine-hills.com/",
+      "mapUrl": "https://maps.google.com/?cid=2695928813216333853",
+      "image": "/_portal/vshops/tri-stay-512/g01.jpg",
+      "images": [
+        "/_portal/vshops/tri-stay-512/g01.jpg",
+        "/_portal/vshops/tri-stay-512/g02.jpg",
+        "/_portal/vshops/tri-stay-512/g03.jpg",
+        "/_portal/vshops/tri-stay-512/g04.jpg",
+        "/_portal/vshops/tri-stay-512/g05.jpg",
+        "/_portal/vshops/tri-stay-512/g06.jpg",
+        "/_portal/vshops/tri-stay-512/g07.jpg",
+        "/_portal/vshops/tri-stay-512/g08.jpg",
+        "/_portal/vshops/tri-stay-512/g09.jpg",
+        "/_portal/vshops/tri-stay-512/s01.jpg",
+        "/_portal/vshops/tri-stay-512/s02.jpg",
+        "/_portal/vshops/tri-stay-512/s04.jpg",
+        "/_portal/vshops/tri-stay-512/s05.jpg",
+        "/_portal/vshops/tri-stay-512/s06.jpg",
+        "/_portal/vshops/tri-stay-512/s07.jpg",
+        "/_portal/vshops/tri-stay-512/s09.jpg",
+        "/_portal/vshops/tri-stay-512/s10.jpg",
+        "/_portal/vshops/tri-stay-512/s11.jpg",
+        "/_portal/vshops/tri-stay-512/s12.jpg",
+        "/_portal/vshops/tri-stay-512/s13.jpg",
+        "/_portal/vshops/tri-stay-512/s14.jpg",
+        "/_portal/vshops/tri-stay-512/s15.jpg",
+        "/_portal/vshops/tri-stay-512/s16.jpg",
+        "/_portal/vshops/tri-stay-512/s17.jpg",
+        "/_portal/vshops/tri-stay-512/s18.jpg"
+      ],
+      "photos": [
+        {
+          "path": "/_portal/vshops/tri-stay-512/g01.jpg",
+          "what": "ベッドと窓のある明るい洋室客室",
+          "kind": "room",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-stay-512/g02.jpg",
+          "what": "ベッドと窓のある洋室ツイン客室",
+          "kind": "room",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-stay-512/g03.jpg",
+          "what": "バスタブと洗面台があるユニットバスルーム",
+          "kind": "room",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-stay-512/g04.jpg",
+          "what": "清潔なトイレ室",
+          "kind": "room",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-stay-512/g05.jpg",
+          "what": "ベッドと窓のある洋室客室",
+          "kind": "room",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-stay-512/g06.jpg",
+          "what": "木床の広い共用スペース",
+          "kind": "common",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-stay-512/g07.jpg",
+          "what": "「男」の暖簾がかかった大浴場の入口",
+          "kind": "bath",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-stay-512/g08.jpg",
+          "what": "清潔な廊下が続くホテルの館内",
+          "kind": "common",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-stay-512/g09.jpg",
+          "what": "洗面台と鏡のある客室の洗面スペース",
+          "kind": "room",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-stay-512/s01.jpg",
+          "what": "タイル張りの浴槽と窓がある天然温泉の大浴場",
+          "kind": "bath",
+          "width": 1280,
+          "height": 853
+        },
+        {
+          "path": "/_portal/vshops/tri-stay-512/s02.jpg",
+          "what": "畳と座卓がある和室客室",
+          "kind": "room",
+          "width": 1280,
+          "height": 853
+        },
+        {
+          "path": "/_portal/vshops/tri-stay-512/s04.jpg",
+          "what": "海沿いに設けられたウッドデッキ",
+          "kind": "view",
+          "width": 1200,
+          "height": 800
+        },
+        {
+          "path": "/_portal/vshops/tri-stay-512/s05.jpg",
+          "what": "海と島が見える松島周辺の景色と船",
+          "kind": "view",
+          "width": 1200,
+          "height": 800
+        },
+        {
+          "path": "/_portal/vshops/tri-stay-512/s06.jpg",
+          "what": "海面でイルカが泳ぐ様子",
+          "kind": "view",
+          "width": 1200,
+          "height": 800
+        },
+        {
+          "path": "/_portal/vshops/tri-stay-512/s07.jpg",
+          "what": "天草四郎の銅像と青空",
+          "kind": "view",
+          "width": 1200,
+          "height": 800
+        },
+        {
+          "path": "/_portal/vshops/tri-stay-512/s09.jpg",
+          "what": "ベッドとテレビがある明るい洋室客室",
+          "kind": "room",
+          "width": 1200,
+          "height": 720
+        },
+        {
+          "path": "/_portal/vshops/tri-stay-512/s10.jpg",
+          "what": "ベッドと窓のある白を基調とした洋室客室",
+          "kind": "room",
+          "width": 1200,
+          "height": 720
+        },
+        {
+          "path": "/_portal/vshops/tri-stay-512/s11.jpg",
+          "what": "バスタブと洗面台があるバスルーム",
+          "kind": "room",
+          "width": 1200,
+          "height": 720
+        },
+        {
+          "path": "/_portal/vshops/tri-stay-512/s12.jpg",
+          "what": "木製の洗面台がある洗面スペース",
+          "kind": "room",
+          "width": 1200,
+          "height": 720
+        },
+        {
+          "path": "/_portal/vshops/tri-stay-512/s13.jpg",
+          "what": "清潔なトイレ室",
+          "kind": "room",
+          "width": 1200,
+          "height": 720
+        },
+        {
+          "path": "/_portal/vshops/tri-stay-512/s14.jpg",
+          "what": "ベッドが2台並ぶ洋室ツイン客室",
+          "kind": "room",
+          "width": 1200,
+          "height": 720
+        },
+        {
+          "path": "/_portal/vshops/tri-stay-512/s15.jpg",
+          "what": "ベッドが3台並ぶ広い洋室客室",
+          "kind": "room",
+          "width": 1200,
+          "height": 720
+        },
+        {
+          "path": "/_portal/vshops/tri-stay-512/s16.jpg",
+          "what": "ベッド2台と窓のある白い洋室客室",
+          "kind": "room",
+          "width": 1200,
+          "height": 720
+        },
+        {
+          "path": "/_portal/vshops/tri-stay-512/s17.jpg",
+          "what": "ベッドと窓のある洋室客室",
+          "kind": "room",
+          "width": 1200,
+          "height": 720
+        },
+        {
+          "path": "/_portal/vshops/tri-stay-512/s18.jpg",
+          "what": "ベッドとテレビがある洋室客室",
+          "kind": "room",
+          "width": 1200,
+          "height": 720
+        }
+      ],
+      "tags": [
+        "温泉",
+        "一人旅",
+        "素泊まり"
+      ],
+      "article": {
+        "headline": "熊本県上天草市松島町にある、天然温泉の大浴場とサウナを備えたホテル。和室・洋室・バンガロー・グループバンガローと多様な客室タイプがそろい、ビジネスから観光、長期滞在まで対応しています。",
+        "lede": "上天草市にある「松島温泉ホテルマリンヒルズ」です。熊本県の天草地方の玄関口にあたる松島町合津に位置し、ナトリウム塩化物泉の天然温泉を引いた大浴場とサウナを男女別に備えています。客室は洋室シングル・洋室ツイン・ダブル・8畳和室・和室ツイン・バンガロー・グループバンガローと7タイプがそろい、1名のビジネス利用から家族・グループの観光まで幅広い利用形態に対応しています。館内にはWi-Fi、ランドリー（有料）、自動販売機などを完備し、25台分の駐車場も設けています。チェックイン前から大浴場を利用することも可能で、観光やドライブの途中に日帰り入浴で立ち寄ることもできます。",
+        "sections": [
+          {
+            "heading": "客室の種類と数",
+            "body": "客室は全17室で、洋室シングル・洋室ツイン・ダブル・8畳和室・和室ツイン（10.5畳・10畳・8畳）・バンガロー・グループバンガローの7タイプが用意されています。洋室シングルはセミダブルベッドとユニットバスを備え、1名のビジネス・一人旅向けです。洋室ツインはセミダブルベッド2台、バス・トイレが分かれた1〜2名向けの客室です。ダブルは9畳の畳の上にダブルベッドを置き、バス・トイレが別になっています。8畳和室は洗面・トイレ付きで1〜4名が利用できます。和室ツインはユニットバス付き2室とトイレ・洗面付き1室があり、いずれもシングルベッド2台を備えています。バンガローは約10畳の和室にバス・トイレ・冷蔵庫・ケトル・エアコンを備え1〜4名向け、グループバンガローは2棟で合わせて6名まで対応します。全客室にフェイスタオル・歯ブラシセット・バスタオル・シャンプー・リンス・ボディソープ・ドライヤー・湯沸かしポット・冷蔵庫のアメニティが備わっています。"
+          },
+          {
+            "heading": "風呂",
+            "body": "天草松島温泉の湯を引いた男女別の大浴場を備えています。泉質はナトリウム塩化物泉（循環ろ過）で、湯冷めしにくく体を芯からじんわりと温める特長があります。神経痛・筋肉痛・関節痛・疲労回復・冷え性・皮膚乾燥症などに適応症が示されています。大浴場にはサウナも併設されており、落ち着いた空間でゆっくりと過ごすことができます。チェックイン前でも大浴場を利用することができます。日帰り入浴は観光やドライブの合間、ビジネス終わりなどに気軽に立ち寄ることができ、利用時間は13:00〜21:00です。"
+          },
+          {
+            "heading": "館内",
+            "body": "館内にはロビー、フロント、自動販売機、洗濯乾燥機（有料）が設けられています。Wi-Fiは館内全体で利用できます。駐車場は25台分が用意されています。周辺には、海外リゾート感のある複合施設「リゾラテラス天草」が近くにあり、海に浮かぶ水族館「海中水族館シードーナツ」もあります。「シークルーズ」では天草五橋めぐりやイルカウォッチングのクルージングを楽しめます。天草四郎時貞にちなんだ「天草四郎公園」は国道266号線沿いにあります。"
+          },
+          {
+            "heading": "行き方と使い方",
+            "body": "九州自動車道の松橋ICから天草方面へ車で約60分です。最寄り駅はJR三角線の三角駅で、車で約25分の距離にあります。最寄りバス停は「リゾラテラス天草」停留所で、徒歩約4分です。宿泊予約は公式サイトのオンライン予約ページから行えます。長期滞在向けの連泊プランも用意されています。ビジネス利用や観光の拠点として、また長期滞在にも対応しています。"
+          }
+        ],
+        "sources": [
+          {
+            "label": "公式サイト",
+            "url": "https://marine-hills.com/"
+          },
+          {
+            "label": "公式サイト(客室)",
+            "url": "https://marine-hills.com/rooms.php"
+          },
+          {
+            "label": "公式サイト(温泉)",
+            "url": "https://marine-hills.com/onsen.php"
+          },
+          {
+            "label": "公式サイト(ご宿泊)",
+            "url": "https://marine-hills.com/stay.php"
+          },
+          {
+            "label": "公式サイト(アクセス・周辺)",
+            "url": "https://marine-hills.com/access.php"
+          },
+          {
+            "label": "楽天トラベル",
+            "url": "https://travel.rakuten.co.jp/HOTEL/201733/201733.html"
+          },
+          {
+            "label": "楽天トラベル(プラン一覧)",
+            "url": "https://hotel.travel.rakuten.co.jp/hotelinfo/plan/201733"
+          },
+          {
+            "label": "ゆる～と",
+            "url": "https://yuru-to.net/detail.php?oid=57796"
+          },
+          {
+            "label": "Google マップ",
+            "url": "https://maps.google.com/?cid=2695928813216333853"
+          }
+        ],
+        "checkedAt": "2026-11-11"
+      },
+      "attributes": {
+        "roomTypes": [
+          "洋室シングル",
+          "洋室ツイン",
+          "ダブル",
+          "8畳和室",
+          "和室ツイン",
+          "バンガロー",
+          "グループバンガロー"
+        ]
+      }
     }
   ]
 }

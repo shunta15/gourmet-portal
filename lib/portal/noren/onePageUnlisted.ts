@@ -198,6 +198,8 @@ export const ONE_PAGE_UNLISTED_SHOP_OF_FEATURE: Readonly<Record<string, string>>
   "ウィステリア": "r928", // ウィステリア
   "お食事処ななら": "r929", // お食事処ななら
   "洋食工房モリスケ": "r930", // 洋食工房モリスケ
+  "築輪": "r931", // 築輪
+  "LEVREandBONレーブルアンドボン": "r932", // LEVRE and BONレーブルアンドボン
 };
 
 const NFC = (s: string) => s.normalize("NFC");

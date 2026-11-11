@@ -23335,6 +23335,105 @@ export const ARTICLE_STORES: Restaurant[] = [
       "ランチ"
     ],
     "featureId": "洋食工房モリスケ"
+  },
+  {
+    "id": "r931",
+    "name": "築輪",
+    "cuisine": "居酒屋",
+    "area": "岐阜県・多治見市",
+    "region": "gifu",
+    "shape": "square",
+    "image": "/restaurants/teleapo-築輪/hero.jpg",
+    "heroImages": [
+      "/restaurants/teleapo-築輪/hero.jpg",
+      "/restaurants/teleapo-築輪/point1.jpg",
+      "/restaurants/teleapo-築輪/point2.jpg",
+      "/restaurants/teleapo-築輪/point3.jpg"
+    ],
+    "gallery": [
+      "/restaurants/teleapo-築輪/hero.jpg",
+      "/restaurants/teleapo-築輪/point1.jpg",
+      "/restaurants/teleapo-築輪/point2.jpg",
+      "/restaurants/teleapo-築輪/point3.jpg"
+    ],
+    "desc": "岐阜県多治見市の居酒屋。",
+    "address": "岐阜県多治見市金山町28-2",
+    "hours": "火〜土 17:00–01:00",
+    "closed": "月曜・日曜",
+    "seats": "—（訪問前に公式確認）",
+    "nearest": "—",
+    "phone": "080-1236-4917",
+    "source": {
+      "label": "Google ビジネスプロフィール",
+      "url": "https://maps.google.com/?cid=18002575710558417475"
+    },
+    "body": [
+      "築輪は、岐阜県多治見市にあるお店です。業態は「居酒屋」、所在地は岐阜県多治見市金山町28-2です。マチノワ編集部の特集記事では、「銀座・京都で磨いた技術で仕上げる海鮮料理と一品」・「通常メニューの2〜3倍に及ぶ季節限定メニュー」などを取り上げています。",
+      "営業時間は火〜土 17:00–01:00、定休日は月曜・日曜です（Googleマップの営業時間による）。営業時間や価格は変わることがあるため、訪問前に公式サイトやSNS、お電話でご確認ください。"
+    ],
+    "highlights": [
+      "銀座・京都で磨いた技術で仕上げる海鮮料理と一品",
+      "通常メニューの2〜3倍に及ぶ季節限定メニュー",
+      "日本酒・焼酎・地酒が揃うしっぽり飲める空間"
+    ],
+    "tags": [
+      "居酒屋",
+      "多治見市",
+      "宴会",
+      "深夜営業"
+    ],
+    "featureId": "築輪"
+  },
+  {
+    "id": "r932",
+    "name": "LEVRE and BONレーブルアンドボン",
+    "cuisine": "ベーカリー",
+    "area": "長野県・上田市",
+    "region": "nagano",
+    "shape": "square",
+    "image": "/restaurants/teleapo-LEVREandBONレーブルアンドボン/hero.jpg",
+    "heroImages": [
+      "/restaurants/teleapo-LEVREandBONレーブルアンドボン/hero.jpg",
+      "/restaurants/teleapo-LEVREandBONレーブルアンドボン/point1.jpg",
+      "/restaurants/teleapo-LEVREandBONレーブルアンドボン/point2.jpg",
+      "/restaurants/teleapo-LEVREandBONレーブルアンドボン/point3.jpg",
+      "/restaurants/teleapo-LEVREandBONレーブルアンドボン/point4.jpg"
+    ],
+    "gallery": [
+      "/restaurants/teleapo-LEVREandBONレーブルアンドボン/hero.jpg",
+      "/restaurants/teleapo-LEVREandBONレーブルアンドボン/point1.jpg",
+      "/restaurants/teleapo-LEVREandBONレーブルアンドボン/point2.jpg",
+      "/restaurants/teleapo-LEVREandBONレーブルアンドボン/point3.jpg",
+      "/restaurants/teleapo-LEVREandBONレーブルアンドボン/point4.jpg"
+    ],
+    "desc": "LEVRE and BON（レーブルアンドボン）は、パン職人（ブーランジェ）と洋菓子職人（パティシエ）がともに厨房に立ち、天然酵母パンとスイーツを一つの店で揃えるフランススタイルのベーカリー＆パティスリーである。",
+    "address": "長野県上田市神畑281-20",
+    "hours": "水〜日 09:00–19:00",
+    "closed": "月曜・火曜",
+    "seats": "—（訪問前に公式確認）",
+    "nearest": "—",
+    "phone": "0268-71-7796",
+    "source": {
+      "label": "Google ビジネスプロフィール",
+      "url": "https://maps.google.com/?cid=9063738942888621410"
+    },
+    "body": [
+      "LEVRE and BONレーブルアンドボンは、長野県上田市にあるお店です。業態は「ベーカリー」、所在地は長野県上田市神畑281-20です。マチノワ編集部の特集記事では、「あこ天然酵母を使い、パン生地に卵・牛乳を使わないパン」・「信州・布引いちご園のいちごを使ったロールケーキ」などを取り上げています。",
+      "営業時間は水〜日 09:00–19:00、定休日は月曜・火曜です（Googleマップの営業時間による）。営業時間や価格は変わることがあるため、訪問前に公式サイトやSNS、お電話でご確認ください。"
+    ],
+    "highlights": [
+      "あこ天然酵母を使い、パン生地に卵・牛乳を使わないパン",
+      "信州・布引いちご園のいちごを使ったロールケーキ",
+      "金・土限定の夜パフェと、店内外のイートインスペース",
+      "東御市から上田市へ、パティシエとパン職人が並ぶ店の成り立ち"
+    ],
+    "tags": [
+      "ベーカリー",
+      "パン",
+      "上田市",
+      "ランチ"
+    ],
+    "featureId": "LEVREandBONレーブルアンドボン"
   }
 ];
 
@@ -23826,7 +23925,9 @@ export const ARTICLE_STORE_FEATURE_IDS: Record<string, string> = {
   "r927": "マルサーラ",
   "r928": "ウィステリア",
   "r929": "お食事処ななら",
-  "r930": "洋食工房モリスケ"
+  "r930": "洋食工房モリスケ",
+  "r931": "築輪",
+  "r932": "LEVREandBONレーブルアンドボン"
 };
 
 /** 特集記事ID → 店舗ID */
@@ -24317,5 +24418,7 @@ export const ARTICLE_STORE_ID_BY_FEATURE: Record<string, string> = {
   "マルサーラ": "r927",
   "ウィステリア": "r928",
   "お食事処ななら": "r929",
-  "洋食工房モリスケ": "r930"
+  "洋食工房モリスケ": "r930",
+  "築輪": "r931",
+  "LEVREandBONレーブルアンドボン": "r932"
 };

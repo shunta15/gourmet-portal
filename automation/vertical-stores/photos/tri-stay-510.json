@@ -1,0 +1,126 @@
+{
+  "key": "tri-stay-510",
+  "images": [
+    {
+      "path": "/_portal/vshops/tri-stay-510/g01.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-proxy/ALd4DhH7m4WJA5bWGDw9Evo4bEXfbzIgoKuMS1SZQt-EdLJBVBquSou3c6qHgzOn6vu_540Tgra76Q-MTwgowjyKXgzzUbp5QAOfw58doN2MV8KSDGdf0v-tuNW0rDx5RJ8ELWd4lU_poPz7fUaH3BaPmYb0DfZ-UfwtN_pHZ94EbYefhK-JxNcJalcBUQ=s1200",
+      "pageUrl": "https://maps.google.com/?cid=17162415835474956993",
+      "what": "白壁と木の格子が並ぶ旅館の外観",
+      "kind": "exterior",
+      "width": 500,
+      "height": 390,
+      "source": "Google マップ"
+    },
+    {
+      "path": "/_portal/vshops/tri-stay-510/g02.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9QS2c7qHUpMu2tR0GAqVcgc3Cmu5rnwNhtbok4OwS5q9ScUUAVAaAKpstvgdK5qRuopzydy6Fp3s2Ly87wp3n0nthhGavmPCOkE8wUCA-jsxZjd635IXQaoL96p2UEPd5yxrCX5=s1200",
+      "pageUrl": "https://maps.google.com/?cid=17162415835474956993",
+      "what": "松の木と看板が並ぶ潯陽楼の玄関外観",
+      "kind": "exterior",
+      "width": 1200,
+      "height": 904,
+      "source": "Google マップ"
+    },
+    {
+      "path": "/_portal/vshops/tri-stay-510/g03.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9TVWppQIFpIPoo58Ji0zu1fzLpDpX8hLXWVlTe8Lzlu9yoyvS3M6wQAweSs_8ueMLLqUNLxQ6ZPKj0Q3DJS_s-2gYXgCQo5MjSYcc0yC3f-JECchMUnWyidynLnj4Q8pb6kuy9T=s1200",
+      "pageUrl": "https://maps.google.com/?cid=17162415835474956993",
+      "what": "白菜とネギが入った鍋料理",
+      "kind": "meal",
+      "width": 900,
+      "height": 1200,
+      "source": "Google マップ"
+    },
+    {
+      "path": "/_portal/vshops/tri-stay-510/g04.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9TcvBn0WCalRtaFd6WIEZrPIRL4kTGxDcoZthNdpOicShUq-6SHRRHp4bgaS4JePJkgZBKfoRS4KVEmlSWdOcd1-qn7WGKlnWeMIqtIZ5seRQUojxQ8N2kNpJaZuR84r4GgPnuoxGSNBrns=s1200",
+      "pageUrl": "https://maps.google.com/?cid=17162415835474956993",
+      "what": "牛肉と小鉢が並ぶ和食膳",
+      "kind": "meal",
+      "width": 1200,
+      "height": 901,
+      "source": "Google マップ"
+    },
+    {
+      "path": "/_portal/vshops/tri-stay-510/g05.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9QQvpqKYealTpHtLLxV1uBI-wgfTZY3T03hdg7vzkKVl8AUda3K0kATcz_WaKXLbIhykJ22cWoiL9ecjL1vG8Ivq3GI-_N2F8xZN3ePMjMPNS_BNM00m-qP0CKk86TYW0O-T_e1=s1200",
+      "pageUrl": "https://maps.google.com/?cid=17162415835474956993",
+      "what": "とろろ料理と小鉢が並ぶ膳",
+      "kind": "meal",
+      "width": 675,
+      "height": 1200,
+      "source": "Google マップ"
+    },
+    {
+      "path": "/_portal/vshops/tri-stay-510/g06.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9TQdxGYPXvFa5A1pF6tGYkl7AhLGKMeYVdh1OlgEQ6KEYMToumrItA78MngwctRFmMR7PZc6z2Wp3sh00l_g2cCfH4PdWac9-VtrYi_CM76-hm3yNtipYP_Mlvc4WEVJ3ZL_WLj=s1200",
+      "pageUrl": "https://maps.google.com/?cid=17162415835474956993",
+      "what": "生の肉と野菜が盛られた鍋の素材",
+      "kind": "meal",
+      "width": 900,
+      "height": 1200,
+      "source": "Google マップ"
+    },
+    {
+      "path": "/_portal/vshops/tri-stay-510/g07.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9RhspRjgiCydzJt02K0Im1pdnqMUtYn6Pax8tTEqL8FXcfoLz5H4JANSt9LevBiV0uj0_6gDh-5lDp9TnXaYjMiE-J5YCo5_IJm8uVxBEqY0YFuH-_iUZvGzo80MvhixDDDtRQ=s1200",
+      "pageUrl": "https://maps.google.com/?cid=17162415835474956993",
+      "what": "白と緑の野菜が盛られた和皿の料理",
+      "kind": "meal",
+      "width": 1200,
+      "height": 900,
+      "source": "Google マップ"
+    },
+    {
+      "path": "/_portal/vshops/tri-stay-510/g08.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9ToVwPXZcgO7Oh8y7uPgJ2okXcRDrmY9E4mqISJ2e0JygdQXk9H6O9i43VR5QRIP078tNwitwBXwy6K4SVcEJVy3jidAplFRZODhP7hkLHvZZPL3n0OmwkwNuXfNi-FXmPP6wuH=s1200",
+      "pageUrl": "https://maps.google.com/?cid=17162415835474956993",
+      "what": "小鉢が複数並んだ和食の膳",
+      "kind": "meal",
+      "width": 900,
+      "height": 1200,
+      "source": "Google マップ"
+    },
+    {
+      "path": "/_portal/vshops/tri-stay-510/g09.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9R3TGqd23eJjdBm4_6VwA_7lEbuGzPcBQ0rmPaxUEcsSJKVluok0Zb-BR6ajT088_RSMsqueLxL9mFwj4YSXYqTlFPokPv2bK3DU8CPzP3FK2NEFbWkiVbwucw_RSKrBjk2Yt43=s1200",
+      "pageUrl": "https://maps.google.com/?cid=17162415835474956993",
+      "what": "薄切りの猪肉が円状に並べられた皿",
+      "kind": "meal",
+      "width": 900,
+      "height": 1200,
+      "source": "Google マップ"
+    },
+    {
+      "path": "/_portal/vshops/tri-stay-510/g10.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9TIdtuenD3yAF_RaD9lwJr-9fDdk9UPVvVqUbjMz1alWU8waCsUPy1jx-rNHzQg-L8sZmMjgf-b8PRfvRR-q1XfUMv4NXY0UA1IDPbIi5MWRotWBbx8Q034lSjHIxerRhIF8Nvg=s1200",
+      "pageUrl": "https://maps.google.com/?cid=17162415835474956993",
+      "what": "卵黄をのせた丼ぶり料理",
+      "kind": "meal",
+      "width": 900,
+      "height": 1200,
+      "source": "Google マップ"
+    },
+    {
+      "path": "/_portal/vshops/tri-stay-510/s14.jpg",
+      "imageUrl": "https://tourism.sasayama.jp/wp-content/uploads/2026/06/3f4da943bb562de14c5131ccfe29f6fe.jpg",
+      "pageUrl": "https://tourism.sasayama.jp/jinyoro/",
+      "what": "白壁の建物が並ぶ城下町の通り沿いの外観",
+      "kind": "exterior",
+      "width": 844,
+      "height": 844,
+      "source": "公式サイト"
+    },
+    {
+      "path": "/_portal/vshops/tri-stay-510/s17.jpg",
+      "imageUrl": "https://tourism.sasayama.jp/wp-content/uploads/2021/09/f9b47a303f8920214e8e37b139906776-768x512.jpg",
+      "pageUrl": "https://tourism.sasayama.jp/jinyoro/",
+      "what": "白壁の蔵が続く城下町の石畳の通り",
+      "kind": "view",
+      "width": 768,
+      "height": 512,
+      "source": "公式サイト"
+    }
+  ],
+  "note": "automation/v2/write.mjs が 2026-11-11T11:20:18.072Z に取得。店の実写だけ(AI 画像・汎用画像・地図・ロゴ・顔が大きい画像は除外)。"
+}

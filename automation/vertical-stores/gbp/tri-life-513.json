@@ -1,0 +1,40 @@
+{
+  "tab": "トリニティアポ",
+  "tabEn": "tri-life",
+  "row": 513,
+  "sheet": {
+    "name": "心華寺金港辯財天",
+    "address": "",
+    "url": "https://www.google.com/maps/search/?api=1&query=%E5%BF%83%E8%8F%AF%E5%AF%BA%E9%87%91%E6%B8%AF%E8%BE%AF%E8%B2%A1%E5%A4%A9%20077-444-5380%20%E3%80%92611-0025%20%E4%BA%AC%E9%83%BD%E5%BA%9C%E5%AE%87%E6%B2%BB%E5%B8%82%E7%A5%9E%E6%98%8E%E7%9F%B3%E5%A1%9A%EF%BC%96%EF%BC%96",
+    "type": "お寺",
+    "d1": "",
+    "d2": ""
+  },
+  "urlKind": "mapsApi",
+  "route": "第1段(verify-gbp.mjs)で確認済み",
+  "verdict": "一致",
+  "verdictReason": "手がかり: 店名＋電話＋住所(番地まで)。電話が一致／店名: contains(シート「心華寺金港辯財天」/ マップ「心華寺金港辯財天 Shingeji Kinkoubenzaiten Temple（Dharma Lamp Temple）」)／住所(シート): exact・町名・番地とも一致",
+  "place": {
+    "name": "心華寺金港辯財天 Shingeji Kinkoubenzaiten Temple（Dharma Lamp Temple）",
+    "address": "京都府宇治市神明石塚６６",
+    "category": "仏教寺院",
+    "lat": 34.8820062,
+    "lng": 135.7850973,
+    "gbpUrl": "https://maps.google.com/?cid=5298131793229352790",
+    "phone": "0774-44-5380",
+    "website": "https://itlearningskill.my.canva.site/singeji",
+    "hours": {
+      "月": "07:00–17:00",
+      "火": "07:00–17:00",
+      "水": "07:00–17:00",
+      "木": "07:00–17:00",
+      "金": "07:00–17:00",
+      "土": "07:00–17:00",
+      "日": "07:00–17:00"
+    },
+    "reserveLinks": [],
+    "statusSignals": [],
+    "closedSignal": false
+  },
+  "fetchedAt": "2026-11-11T11:07:57.417Z"
+}

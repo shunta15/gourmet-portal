@@ -1,0 +1,40 @@
+{
+  "tab": "トリニティアポ",
+  "tabEn": "tri-activity",
+  "row": 509,
+  "sheet": {
+    "name": "おさかなつりとと",
+    "address": "",
+    "url": "https://www.google.com/maps/search/?api=1&query=%E3%81%8A%E3%81%95%E3%81%8B%E3%81%AA%E3%81%A4%E3%82%8A%E3%81%A8%E3%81%A8%20055-275-0111%20%E3%80%92409-3861%20%E5%B1%B1%E6%A2%A8%E7%9C%8C%E4%B8%AD%E5%B7%A8%E6%91%A9%E9%83%A1%E7%B4%99%E6%BC%89%E9%98%BF%E5%8E%9F%EF%BC%91%EF%BC%99%EF%BC%96%EF%BC%99Showa",
+    "type": "釣り堀",
+    "d1": "",
+    "d2": ""
+  },
+  "urlKind": "mapsApi",
+  "route": "第1段(verify-gbp.mjs)で確認済み",
+  "verdict": "一致",
+  "verdictReason": "手がかり: 店名＋電話＋住所(番地まで)。電話が一致／店名: exact(シート「おさかなつりとと」/ マップ「おさかなつりとと」)／住所(シート): exact・町名・番地とも一致",
+  "place": {
+    "name": "おさかなつりとと",
+    "address": "山梨県中巨摩郡紙漉阿原１９６９Showa",
+    "category": "釣り堀",
+    "lat": 35.6222789,
+    "lng": 138.5422578,
+    "gbpUrl": "https://maps.google.com/?cid=1046344024489592648",
+    "phone": "055-275-0111",
+    "website": "http://www.toto-yamanashi.com/",
+    "hours": {
+      "月": "09:00–14:00",
+      "火": "定休日",
+      "水": "09:00–17:00",
+      "木": "09:00–17:00",
+      "金": "09:00–17:00",
+      "土": "09:00–17:00",
+      "日": "09:00–17:00"
+    },
+    "reserveLinks": [],
+    "statusSignals": [],
+    "closedSignal": false
+  },
+  "fetchedAt": "2026-11-11T11:04:33.708Z"
+}

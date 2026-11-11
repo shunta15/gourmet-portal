@@ -11982,6 +11982,676 @@
         ],
         "checkedAt": "2026-11-11"
       }
+    },
+    {
+      "id": "ac0070",
+      "vertical": "activity",
+      "category": "sea-river",
+      "name": "おさかなつりとと",
+      "pref": "yamanashi",
+      "address": "山梨県中巨摩郡紙漉阿原1969Showa",
+      "lat": 35.6222789,
+      "lng": 138.5422578,
+      "hours": "月 09:00 - 14:00 / 水-日 09:00 - 17:00",
+      "holidays": "火曜",
+      "phone": "055-275-0111",
+      "url": "http://www.toto-yamanashi.com/",
+      "website": "http://www.toto-yamanashi.com/",
+      "mapUrl": "https://maps.google.com/?cid=1046344024489592648",
+      "image": "/_portal/vshops/tri-activity-509/g01.jpg",
+      "images": [
+        "/_portal/vshops/tri-activity-509/g01.jpg",
+        "/_portal/vshops/tri-activity-509/g02.jpg",
+        "/_portal/vshops/tri-activity-509/g03.jpg",
+        "/_portal/vshops/tri-activity-509/g04.jpg",
+        "/_portal/vshops/tri-activity-509/g05.jpg",
+        "/_portal/vshops/tri-activity-509/g06.jpg",
+        "/_portal/vshops/tri-activity-509/g07.jpg",
+        "/_portal/vshops/tri-activity-509/g08.jpg",
+        "/_portal/vshops/tri-activity-509/g09.jpg",
+        "/_portal/vshops/tri-activity-509/g10.jpg",
+        "/_portal/vshops/tri-activity-509/s01.jpg",
+        "/_portal/vshops/tri-activity-509/s02.jpg",
+        "/_portal/vshops/tri-activity-509/s03.jpg",
+        "/_portal/vshops/tri-activity-509/s04.jpg",
+        "/_portal/vshops/tri-activity-509/s08.jpg",
+        "/_portal/vshops/tri-activity-509/s09.jpg",
+        "/_portal/vshops/tri-activity-509/s17.jpg"
+      ],
+      "photos": [
+        {
+          "path": "/_portal/vshops/tri-activity-509/g01.jpg",
+          "what": "網にかかった魚のアップ",
+          "width": 1200,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-509/g02.jpg",
+          "what": "タモ網で取り込まれた魚",
+          "width": 1200,
+          "height": 675
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-509/g03.jpg",
+          "what": "池の前で釣りをする人",
+          "kind": "common",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-509/g04.jpg",
+          "what": "タモ網で取り込んだ魚",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-509/g05.jpg",
+          "what": "青空のもとに広がる釣り堀の池と施設全景",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-509/g06.jpg",
+          "what": "池の縁で釣りをする人の手元",
+          "kind": "common",
+          "width": 675,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-509/g07.jpg",
+          "what": "池の水面と釣り場の様子",
+          "kind": "common",
+          "width": 1200,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-509/g08.jpg",
+          "what": "池に浮かぶボートと周辺の様子",
+          "kind": "exterior",
+          "width": 675,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-509/g09.jpg",
+          "what": "池の水中を泳ぐ大きな魚",
+          "width": 1200,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-509/g10.jpg",
+          "what": "池の前で釣り竿を持つ人と釣り場全体",
+          "kind": "common",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-509/s01.jpg",
+          "what": "草地の前で釣り竿を持つ子どもと大人",
+          "kind": "exterior",
+          "width": 640,
+          "height": 480
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-509/s02.jpg",
+          "what": "岩の前でタモ網を持つ人",
+          "width": 640,
+          "height": 480
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-509/s03.jpg",
+          "what": "池の縁に並んで釣りをする人たち",
+          "kind": "common",
+          "width": 640,
+          "height": 480
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-509/s04.jpg",
+          "what": "笑顔で大きなコイを持ち上げる人",
+          "width": 640,
+          "height": 480
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-509/s08.jpg",
+          "what": "タモ網で魚を取り込む子ども",
+          "width": 600,
+          "height": 450
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-509/s09.jpg",
+          "what": "施設の前に立つグループ",
+          "kind": "exterior",
+          "width": 600,
+          "height": 450
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-509/s17.jpg",
+          "what": "芝生の前に座る犬",
+          "kind": "exterior",
+          "width": 600,
+          "height": 450
+        }
+      ],
+      "tags": [
+        "子連れ",
+        "手ぶらでOK"
+      ],
+      "article": {
+        "headline": "山梨県中巨摩郡昭和町にある管理釣り場。ルアーエリアとエサ釣りエリアを合わせて6種類の釣り池があり、初心者から上級者まで楽しめる",
+        "lede": "中巨摩郡昭和町にある「おさかなつりとと」です。ルアーフィッシングとエサ釣りを合わせて全部で6種類の釣り池があり、釣れる魚はニジマス・金魚・錦鯉・コイ・ハヤ・ザリガニと多彩です。屋内と屋外にそれぞれ池があり、雨の日でも楽しめる構成になっています。釣り竿のレンタルもあり、手ぶらで訪問できます。スタッフがエサのつけ方や竿の使い方を教えてくれるため、釣りをはじめて体験する人でも安心して参加できます。犬を連れての来場もできるペット対応の釣り場です。",
+        "sections": [
+          {
+            "heading": "体験の内容と流れ",
+            "body": "釣り体験はエサ釣りとルアーフィッシングの2スタイルから選べます。6種類の池は移動自由で利用でき、池ごとに異なる魚種を狙えます。エサ釣りでは金魚・小コイ・ニジマスなどが対象で、エサには練り餌を使用します。ルアーフィッシングはCATと呼ぶルアー専用キャスティングエリアで楽しめます。CATエリアは手前と右奥の2セクションに分かれており、右奥は安全確保のため見学者・付き添いの方は入場できない設定になっています。池の最深部は約2メートルで底地は砂質です。湧水を使用しているため一年中水温が安定しており、季節を問わず釣りができます。ルアーフィッシングには6.4フィート以下のロッドが必要です。釣った魚はポイントに換算され、景品と交換できます。"
+          },
+          {
+            "heading": "対象",
+            "body": "小さな子どもから大人まで利用できる施設です。施設全体が子どもにやさしい造りになっており、ファミリーでの利用に対応しています。友人同士やカップルでの来場もできます。犬連れでの来場も可能で、わんちゃんと一緒に釣りを楽しめます。車椅子スロープが設置されており、車椅子での参加や補助犬の同伴にも対応しています。ルアーフィッシングでは初心者向けのプランがあり、付き添い・レンタル・放流がセットで提供されるため、ルアーでの釣りがはじめての方でも参加できます。"
+          },
+          {
+            "heading": "集合場所と行き方",
+            "body": "所在地は山梨県中巨摩郡昭和町紙漉阿原1969です。中央自動車道・甲府昭和ICから車で約10分の距離にあります。駐車場は7台分あります。カーナビを使うと別の場所に案内されることがあるため、場所名で検索するとよい。じゃらんnetからも予約ができます。"
+          }
+        ],
+        "menus": [
+          {
+            "name": "エサ釣り体験"
+          },
+          {
+            "name": "ルアーフィッシング（CATエリア）"
+          },
+          {
+            "name": "金魚・小コイ釣り"
+          },
+          {
+            "name": "ニジマスエサ釣り"
+          }
+        ],
+        "sources": [
+          {
+            "label": "公式サイト",
+            "url": "http://www.toto-yamanashi.com/"
+          },
+          {
+            "label": "公式サイト(アクセス)",
+            "url": "http://www.toto-yamanashi.com/access/"
+          },
+          {
+            "label": "公式サイト(CATエリア)",
+            "url": "http://www.toto-yamanashi.com/cat/"
+          },
+          {
+            "label": "公式サイト(新着情報)",
+            "url": "http://www.toto-yamanashi.com/index.php?q=%E6%96%B0%E7%9D%80%E6%83%85%E5%A0%B1"
+          },
+          {
+            "label": "管理釣り場情報サイト",
+            "url": "https://tsuribori.net/introduce/osakanaturitoto/"
+          },
+          {
+            "label": "じゃらんnet",
+            "url": "https://www.jalan.net/kankou/spt_guide000000207107/"
+          },
+          {
+            "label": "Anglers-net",
+            "url": "https://anglers-net.com/post-2173/"
+          },
+          {
+            "label": "Google マップ",
+            "url": "https://maps.google.com/?cid=1046344024489592648"
+          }
+        ],
+        "checkedAt": "2026-11-11"
+      }
+    },
+    {
+      "id": "ac0071",
+      "vertical": "activity",
+      "category": "craft",
+      "name": "CRAFT HANDS ローハイド",
+      "pref": "hokkaido",
+      "cityName": "函館市",
+      "address": "北海道函館市東山2丁目1-33",
+      "lat": 41.805038,
+      "lng": 140.774198,
+      "hours": "毎日 10:00 - 18:00",
+      "phone": "0138-56-1564",
+      "url": "http://rawhide.co.jp/",
+      "website": "http://rawhide.co.jp/",
+      "mapUrl": "https://maps.google.com/?cid=10989883574796428322",
+      "image": "/_portal/vshops/tri-activity-516/g01.jpg",
+      "images": [
+        "/_portal/vshops/tri-activity-516/g01.jpg",
+        "/_portal/vshops/tri-activity-516/g02.jpg",
+        "/_portal/vshops/tri-activity-516/g03.jpg",
+        "/_portal/vshops/tri-activity-516/g04.jpg",
+        "/_portal/vshops/tri-activity-516/g05.jpg",
+        "/_portal/vshops/tri-activity-516/g06.jpg",
+        "/_portal/vshops/tri-activity-516/g07.jpg",
+        "/_portal/vshops/tri-activity-516/g08.jpg",
+        "/_portal/vshops/tri-activity-516/g09.jpg"
+      ],
+      "photos": [
+        {
+          "path": "/_portal/vshops/tri-activity-516/g01.jpg",
+          "what": "工具や材料が棚にびっしりと並ぶ店内",
+          "kind": "common",
+          "width": 1200,
+          "height": 675
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-516/g02.jpg",
+          "what": "革財布・小銭入れ・カメラケースなど複数の革小物が並ぶ",
+          "kind": "meal",
+          "width": 800,
+          "height": 533
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-516/g03.jpg",
+          "what": "緑色の本革二つ折り財布",
+          "kind": "meal",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-516/g04.jpg",
+          "what": "手で持った黒い本革二つ折り財布",
+          "kind": "meal",
+          "width": 800,
+          "height": 533
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-516/g05.jpg",
+          "what": "棚に並んだ染料缶や工具類",
+          "kind": "common",
+          "width": 800,
+          "height": 533
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-516/g06.jpg",
+          "what": "HAKODATECRAFTのロゴスタンプが押された革製品のアップ",
+          "kind": "meal",
+          "width": 1200,
+          "height": 1075
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-516/g07.jpg",
+          "what": "スナップボタン付きの小さな革コインケース",
+          "kind": "meal",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-516/g08.jpg",
+          "what": "工具が整然と並ぶ棚が広がる店内",
+          "kind": "common",
+          "width": 800,
+          "height": 533
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-516/g09.jpg",
+          "what": "革ロールと棚が並ぶ店内全体の様子",
+          "kind": "common",
+          "width": 1200,
+          "height": 675
+        }
+      ],
+      "tags": [],
+      "article": {
+        "headline": "北海道函館市東山にあるレザークラフト用品店。革素材・工具・染料の販売と、初心者向けの1日体験から講師資格取得コースまで複数の教室を開いている。",
+        "lede": "函館市にある「CRAFT HANDS ローハイド」です。北海道・東北地方で最大クラスのレザークラフト用品の品揃えを誇り、牛・羊・豚などの革からコードバンまで幅広い革素材を取り揃えています。工具・スタンプ・染料・メンテナンス用品も充実しており、初心者からベテランまで必要な材料をそろえることができます。店内には有限会社ローハイドの代表・明本修一さんが手がけるHAKODATE CRAFTブランドの革小物も展示販売しており、財布・小銭入れ・印鑑ケース・カードケース・ブックカバーなどのオーダーメイドにも対応しています。",
+        "sections": [
+          {
+            "heading": "体験の内容と流れ",
+            "body": "1日体験コースでは、キーホルダーやネームタグ、コインケース、キーケースなどの革小物を手づくりします。開催時間は11:00から21:00の間で、所要時間は3時間です。基本的な道具は貸し出しており、参加は個人でもグループでも対応しており、予約制で受け付けています。"
+          },
+          {
+            "heading": "コースと所要時間",
+            "body": "教室は3つのコースを設けています。1日体験コースのほか、手縫いコースは第1・3火曜日に11:00から15:00の4時間で開催し、キーケース・コインケース・財布・携帯カバーなどの手縫い革小物を作ります。講師資格取得コースでは、スタンピング・染色・レースかがり・手縫い仕立て・カービングなどの技術を習得でき、昼間は第2・4木曜日の10:30から15:00、夜間は月2回18:30から21:00に開催しています。教室スペースの定員は最大10名です。"
+          },
+          {
+            "heading": "対象",
+            "body": "1日体験コースは初心者・個人・グループいずれにも対応しています。手縫いコースも初心者向けに設計されており、革に触れたことがない方から丁寧に教えてもらえます。講師資格取得コースは資格取得を目指す方が対象で、スタンピングやカービングといった本格的な技術を段階的に学ぶことができます。材料の購入のみでも来店できます。"
+          },
+          {
+            "heading": "行き方と使い方",
+            "body": "JR函館本線五稜郭駅から車で約15分の距離にあります。函館市東山2丁目、交番そばの道を入った先に店舗があります。体験・教室への参加はメールまたは電話での予約が必要です。革材料・工具のネット通販も行っており、全国への発送に対応しています。"
+          }
+        ],
+        "menus": [
+          {
+            "name": "1日体験コース（キーホルダー・ネームタグ）"
+          },
+          {
+            "name": "1日体験コース（コインケース・キーケース）"
+          },
+          {
+            "name": "手縫いコース"
+          },
+          {
+            "name": "講師資格取得コース"
+          }
+        ],
+        "sources": [
+          {
+            "label": "公式サイト(店舗案内)",
+            "url": "https://www.rawhide.co.jp/shop.html"
+          },
+          {
+            "label": "公式サイト(教室案内)",
+            "url": "https://www.rawhide.co.jp/school.html"
+          },
+          {
+            "label": "公式サイト(特定商取引法)",
+            "url": "https://www.rawhide.co.jp/info.html"
+          },
+          {
+            "label": "地域ブログ(ojamap)",
+            "url": "https://ojamap.wixsite.com/oja-blog/single-post/2020/02/21/craft-hands-%E3%83%AD%E3%83%BC%E3%83%8F%E3%82%A4%E3%83%89%EF%BC%88%E5%87%BD%E9%A4%A8%E5%B8%82%E6%9D%B1%E5%B1%B1%EF%BC%89"
+          },
+          {
+            "label": "Google マップ",
+            "url": "https://maps.google.com/?cid=10989883574796428322"
+          }
+        ],
+        "checkedAt": "2026-11-11"
+      }
+    },
+    {
+      "id": "ac0072",
+      "vertical": "activity",
+      "category": "craft",
+      "name": "レザークラフト シーレム",
+      "pref": "kyoto",
+      "cityName": "京丹後市",
+      "address": "京都府京丹後市網野町高橋834",
+      "lat": 35.6613134,
+      "lng": 135.0308758,
+      "hours": "月-水土日 10:00 - 18:00",
+      "holidays": "木曜・金曜",
+      "phone": "0772-72-1827",
+      "url": "https://www.c-rem.net/",
+      "website": "https://www.c-rem.net/",
+      "mapUrl": "https://maps.google.com/?cid=4967652759875059076",
+      "image": "/_portal/vshops/tri-activity-517/g01.jpg",
+      "images": [
+        "/_portal/vshops/tri-activity-517/g01.jpg",
+        "/_portal/vshops/tri-activity-517/g02.jpg",
+        "/_portal/vshops/tri-activity-517/g03.jpg",
+        "/_portal/vshops/tri-activity-517/g04.jpg",
+        "/_portal/vshops/tri-activity-517/g05.jpg",
+        "/_portal/vshops/tri-activity-517/g06.jpg",
+        "/_portal/vshops/tri-activity-517/g07.jpg",
+        "/_portal/vshops/tri-activity-517/g08.jpg",
+        "/_portal/vshops/tri-activity-517/g09.jpg",
+        "/_portal/vshops/tri-activity-517/g10.jpg",
+        "/_portal/vshops/tri-activity-517/s05.jpg",
+        "/_portal/vshops/tri-activity-517/s06.jpg",
+        "/_portal/vshops/tri-activity-517/s08.jpg",
+        "/_portal/vshops/tri-activity-517/s09.jpg",
+        "/_portal/vshops/tri-activity-517/s10.jpg",
+        "/_portal/vshops/tri-activity-517/s11.jpg",
+        "/_portal/vshops/tri-activity-517/s12.jpg",
+        "/_portal/vshops/tri-activity-517/s13.jpg",
+        "/_portal/vshops/tri-activity-517/s14.jpg",
+        "/_portal/vshops/tri-activity-517/s15.jpg",
+        "/_portal/vshops/tri-activity-517/s16.jpg",
+        "/_portal/vshops/tri-activity-517/s17.jpg",
+        "/_portal/vshops/tri-activity-517/s18.jpg"
+      ],
+      "photos": [
+        {
+          "path": "/_portal/vshops/tri-activity-517/g01.jpg",
+          "what": "「Leather Craft」と書かれた看板のある店舗外観",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-517/g02.jpg",
+          "what": "色とりどりの革素材が棚に並ぶ店内",
+          "kind": "common",
+          "width": 675,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-517/g03.jpg",
+          "what": "革製品が並ぶ店内のディスプレイ棚",
+          "kind": "common",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-517/g04.jpg",
+          "what": "ダークブラウンの長財布",
+          "kind": "meal",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-517/g05.jpg",
+          "what": "革ひも付きのブレスレット状の革小物",
+          "kind": "meal",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-517/g06.jpg",
+          "what": "木造の店舗外観と看板",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 675
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-517/g07.jpg",
+          "what": "色別に並べられた革素材の棚",
+          "kind": "common",
+          "width": 675,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-517/g08.jpg",
+          "what": "バイクが停まる店舗外観",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 675
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-517/g09.jpg",
+          "what": "革製のイヤリングやアクセサリー",
+          "kind": "meal",
+          "width": 1125,
+          "height": 828
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-517/g10.jpg",
+          "what": "赤い革製の人形のような革小物",
+          "kind": "meal",
+          "width": 675,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-517/s05.jpg",
+          "what": "丘の上の風景と革製品の合成写真",
+          "kind": "view",
+          "width": 700,
+          "height": 650
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-517/s06.jpg",
+          "what": "革ひも付きコインケース（キャメル色）",
+          "kind": "meal",
+          "width": 640,
+          "height": 620
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-517/s08.jpg",
+          "what": "グレーのボックスコインケース（ヌバック）",
+          "kind": "meal",
+          "width": 640,
+          "height": 640
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-517/s09.jpg",
+          "what": "グリーンの長財布",
+          "kind": "meal",
+          "width": 640,
+          "height": 640
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-517/s10.jpg",
+          "what": "ブラックの長財布",
+          "kind": "meal",
+          "width": 640,
+          "height": 640
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-517/s11.jpg",
+          "what": "キャメル色のキーケース",
+          "kind": "meal",
+          "width": 640,
+          "height": 640
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-517/s12.jpg",
+          "what": "バナナ型のイエローのキーケース",
+          "kind": "meal",
+          "width": 640,
+          "height": 640
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-517/s13.jpg",
+          "what": "キャメルブラウンの長財布",
+          "kind": "meal",
+          "width": 640,
+          "height": 640
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-517/s14.jpg",
+          "what": "ダークブラウンの長財布",
+          "kind": "meal",
+          "width": 640,
+          "height": 640
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-517/s15.jpg",
+          "what": "ライトブラウンの長財布（ヌバック素材）",
+          "kind": "meal",
+          "width": 640,
+          "height": 640
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-517/s16.jpg",
+          "what": "ピンクの長財布",
+          "kind": "meal",
+          "width": 640,
+          "height": 640
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-517/s17.jpg",
+          "what": "レッドのペンケース",
+          "kind": "meal",
+          "width": 640,
+          "height": 640
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-517/s18.jpg",
+          "what": "グリーンのスマホショルダー",
+          "kind": "meal",
+          "width": 640,
+          "height": 640
+        }
+      ],
+      "tags": [
+        "子連れ",
+        "初心者歓迎",
+        "手ぶらでOK",
+        "駐車場あり"
+      ],
+      "article": {
+        "headline": "京都府京丹後市網野町にある革製品専門店。日本海沿いの自然豊かな町で、革職人によるレザークラフト体験を提供している。",
+        "lede": "京丹後市にある「レザークラフト シーレム」です。日本海沿いの自然豊かな網野町で、オーナーご夫婦が革小物の製作販売とレザークラフト体験を行っています。体験では革の色やアルファベット・数字・模様の刻印を選んで、自分だけのオリジナルのレザーキーホルダーまたはブレスレットを作ります。作品は当日持ち帰ることができます。製品にはヌメ革や栃木レザーなどを使用し、使い込むほどに光沢や風合いが変わっていく素材の特性を大切にしています。財布・キーケース・コインケース・カードケースなど多彩な革小物を店頭とオンラインショップで販売しているほか、オーダー品の製作にも対応しています。",
+        "sections": [
+          {
+            "heading": "体験の内容と流れ",
+            "body": "体験の流れは、集合・制作の説明・色選び・レザーキーホルダーまたはブレスレット作り・終了・解散という順で進みます。11色の革からお好みの色を選び、アルファベット・数字・模様の刻印を入れて、自分だけの革小物を仕上げます。所要時間は約1時間で、持ち物は不要です。作品はその日のうちに持ち帰ることができます。体験はオーナーご夫婦である革職人が指導します。"
+          },
+          {
+            "heading": "対象と予約",
+            "body": "体験の対象は6歳以上で、2名から6名のグループで参加できます。開始時間は10:00から16:00の間で希望の時間を選べます。予約の締め切りは開催日の5日前の12:00です。じゃらん遊び体験・アソビュー・海の京都観光圏のサイトから予約できます。定休日は毎週木曜日と金曜日です。"
+          },
+          {
+            "heading": "店の革製品とオーダー",
+            "body": "店では財布・キーケース・キーホルダー・コインケース・カードケース・かばんなど多彩な革小物を製作・販売しています。ヌメ革・栃木レザー・イタリアンレザー・ヌバック（牛革を起毛させた素材）など複数の素材を使い分けています。栃木レザーのヴォーノオイルは、ヌメ革にアニリンと呼ばれる水性合成染料で染色しオイルを含ませて仕上げたものです。ベルト・長財布・キーケースなど、カスタマイズを希望する場合はオーダーにも対応しています。オンラインショップでの購入も可能です。"
+          },
+          {
+            "heading": "行き方と使い方",
+            "body": "店の住所は京都府京丹後市網野町高橋834で、網野駅出口から徒歩約14分です。駐車場があります。体験の集合場所は店舗です。予約はじゃらん遊び体験・アソビュー・海の京都観光圏のサイトから行えます。メール（info@c-rem.net）でも問い合わせが可能です。"
+          }
+        ],
+        "menus": [
+          {
+            "name": "レザーキーホルダー体験"
+          },
+          {
+            "name": "レザーブレスレット体験"
+          },
+          {
+            "name": "革ひも付きコインケース"
+          },
+          {
+            "name": "ボックスコインケース（イタリアレザー／ヌバック）"
+          },
+          {
+            "name": "柔らかい革の長財布"
+          },
+          {
+            "name": "オーダーベルト"
+          },
+          {
+            "name": "スマホショルダー"
+          }
+        ],
+        "sources": [
+          {
+            "label": "公式サイト",
+            "url": "https://www.c-rem.net/"
+          },
+          {
+            "label": "公式サイト(ABOUT)",
+            "url": "https://www.c-rem.net/about"
+          },
+          {
+            "label": "公式サイト(BLOG)",
+            "url": "https://www.c-rem.net/blog"
+          },
+          {
+            "label": "公式サイト(革ひも付きコインケース)",
+            "url": "https://www.c-rem.net/items/145093636"
+          },
+          {
+            "label": "公式サイト(ボックスコインケース)",
+            "url": "https://www.c-rem.net/items/97737673"
+          },
+          {
+            "label": "アソビュー",
+            "url": "https://www.asoview.com/item/activity/pln3000021929/"
+          },
+          {
+            "label": "海の京都観光圏",
+            "url": "https://www.uminokyoto.jp/experience/detail.php?exid=168"
+          },
+          {
+            "label": "minne(CREM'S GALLERY)",
+            "url": "https://minne.com/@crem/profile"
+          },
+          {
+            "label": "Google マップ",
+            "url": "https://maps.google.com/?cid=4967652759875059076"
+          }
+        ],
+        "checkedAt": "2026-11-11"
+      }
     }
   ]
 }

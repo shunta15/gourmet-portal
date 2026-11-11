@@ -1,0 +1,40 @@
+{
+  "tab": "トリニティアポ",
+  "tabEn": "tri-activity",
+  "row": 516,
+  "sheet": {
+    "name": "HAKODATE CRAFT ローハイド",
+    "address": "",
+    "url": "https://www.google.com/maps/search/?api=1&query=HAKODATE%20CRAFT%20%E3%83%AD%E3%83%BC%E3%83%8F%E3%82%A4%E3%83%89%20013-856-1564%20%E3%80%92041-0835%20%E5%8C%97%E6%B5%B7%E9%81%93%E5%87%BD%E9%A4%A8%E5%B8%82%E6%9D%B1%E5%B1%B1%EF%BC%92%E4%B8%81%E7%9B%AE%EF%BC%91%E2%88%92%EF%BC%93%EF%BC%93",
+    "type": "その他",
+    "d1": "",
+    "d2": ""
+  },
+  "urlKind": "mapsApi",
+  "route": "第1段(verify-gbp.mjs)で確認済み",
+  "verdict": "一致",
+  "verdictReason": "手がかり: 電話＋住所(番地まで)。電話が一致／店名: different(シート「HAKODATE CRAFT ローハイド」/ マップ「CRAFT HANDS ローハイド」)／住所(シート): exact・町名・番地とも一致",
+  "place": {
+    "name": "CRAFT HANDS ローハイド",
+    "address": "北海道函館市東山２丁目１−３３",
+    "category": "ファッション アクセサリー店",
+    "lat": 41.805038,
+    "lng": 140.774198,
+    "gbpUrl": "https://maps.google.com/?cid=10989883574796428322",
+    "phone": "0138-56-1564",
+    "website": "http://rawhide.co.jp/",
+    "hours": {
+      "月": "10:00–18:00",
+      "火": "10:00–18:00",
+      "水": "10:00–18:00",
+      "木": "10:00–18:00",
+      "金": "10:00–18:00",
+      "土": "10:00–18:00",
+      "日": "10:00–18:00"
+    },
+    "reserveLinks": [],
+    "statusSignals": [],
+    "closedSignal": false
+  },
+  "fetchedAt": "2026-11-11T11:09:55.027Z"
+}

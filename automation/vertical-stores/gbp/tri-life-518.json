@@ -1,0 +1,40 @@
+{
+  "tab": "トリニティアポ",
+  "tabEn": "tri-life",
+  "row": 518,
+  "sheet": {
+    "name": "Sweetmom(スイートマム)",
+    "address": "",
+    "url": "https://www.google.com/maps/search/?api=1&query=Sweetmom%28%E3%82%B9%E3%82%A4%E3%83%BC%E3%83%88%E3%83%9E%E3%83%A0%29%20080-2090-7138%20%E3%80%92400-0031%20%E5%B1%B1%E6%A2%A8%E7%9C%8C%E7%94%B2%E5%BA%9C%E5%B8%82%E4%B8%B8%E3%81%AE%E5%86%85%EF%BC%91%E4%B8%81%E7%9B%AE%EF%BC%91%EF%BC%95%E2%88%92%EF%BC%91%EF%BC%90%20Diana%E5%86%85%202%E9%9A%8E",
+    "type": "教室",
+    "d1": "",
+    "d2": ""
+  },
+  "urlKind": "mapsApi",
+  "route": "第1段(verify-gbp.mjs)で確認済み",
+  "verdict": "一致",
+  "verdictReason": "手がかり: 店名＋電話＋住所(番地まで)。電話が一致／店名: exact(シート「Sweetmom(スイートマム)」/ マップ「Sweetmom(スイートマム)」)／住所(シート): exact・町名・番地とも一致",
+  "place": {
+    "name": "Sweetmom(スイートマム)",
+    "address": "山梨県甲府市丸の内１丁目１５−１０ Diana内 2階",
+    "category": "花屋",
+    "lat": 35.6627833,
+    "lng": 138.5705143,
+    "gbpUrl": "https://maps.google.com/?cid=1844549714936733741",
+    "phone": "080-2090-7138",
+    "website": "https://sweetmom.net/contact/",
+    "hours": {
+      "月": "定休日",
+      "火": "定休日",
+      "水": "定休日",
+      "木": "定休日",
+      "金": "定休日",
+      "土": "11:00–17:00",
+      "日": "11:00–17:00"
+    },
+    "reserveLinks": [],
+    "statusSignals": [],
+    "closedSignal": false
+  },
+  "fetchedAt": "2026-11-11T11:11:19.784Z"
+}
