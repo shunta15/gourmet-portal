@@ -1,0 +1,40 @@
+{
+  "tab": "トリニティアポ",
+  "tabEn": "tri-activity",
+  "row": 508,
+  "sheet": {
+    "name": "宏昌丸",
+    "address": "",
+    "url": "https://www.google.com/maps/search/?api=1&query=%E5%AE%8F%E6%98%8C%E4%B8%B8%20080-4140-4258%20%E3%80%92299-5232%20%E5%8D%83%E8%91%89%E7%9C%8C%E5%8B%9D%E6%B5%A6%E5%B8%82%E5%B7%9D%E6%B4%A5%EF%BC%91%EF%BC%94%EF%BC%97%EF%BC%93",
+    "type": "その他",
+    "d1": "",
+    "d2": ""
+  },
+  "urlKind": "mapsApi",
+  "route": "第1段(verify-gbp.mjs)で確認済み",
+  "verdict": "一致",
+  "verdictReason": "手がかり: 店名＋住所(番地まで)。電話がちがう(シート 080-4140-4258 / マップ 0470-73-1082)／店名: exact(シート「宏昌丸」/ マップ「宏昌丸」)／住所(シート): exact・町名・番地とも一致",
+  "place": {
+    "name": "宏昌丸",
+    "address": "千葉県勝浦市川津１４７３",
+    "category": "レンタルボート",
+    "lat": 35.1447936,
+    "lng": 140.3253726,
+    "gbpUrl": "https://maps.google.com/?cid=4897328175915154293",
+    "phone": "0470-73-1082",
+    "website": "http://kosyo-maru.jp/",
+    "hours": {
+      "月": "06:00–20:00",
+      "火": "06:00–20:00",
+      "水": "06:00–20:00",
+      "木": "06:00–20:00",
+      "金": "06:00–20:00",
+      "土": "06:00–20:00",
+      "日": "06:00–20:00"
+    },
+    "reserveLinks": [],
+    "statusSignals": [],
+    "closedSignal": false
+  },
+  "fetchedAt": "2026-11-11T08:13:25.423Z"
+}

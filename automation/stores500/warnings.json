@@ -3771,5 +3771,42 @@
       "desc は lede から事実の文を選べず、事実から作った定型文",
       "cuisine は GBPカテゴリ"
     ]
+  },
+  "r926": {
+    "articleId": "にのみや",
+    "name": "にのみや",
+    "warnings": [
+      "desc は lede から事実の文を選べず、事実から作った定型文",
+      "cuisine は GBPカテゴリ"
+    ]
+  },
+  "r927": {
+    "articleId": "マルサーラ",
+    "name": "マルサーラ",
+    "warnings": [
+      "desc は lede から事実の文を選べず、事実から作った定型文",
+      "cuisine は GBPカテゴリ"
+    ]
+  },
+  "r928": {
+    "articleId": "ウィステリア",
+    "name": "ウィステリア",
+    "warnings": [
+      "cuisine は GBPカテゴリ"
+    ]
+  },
+  "r929": {
+    "articleId": "お食事処ななら",
+    "name": "お食事処ななら",
+    "warnings": [
+      "cuisine は GBPカテゴリ"
+    ]
+  },
+  "r930": {
+    "articleId": "洋食工房モリスケ",
+    "name": "洋食工房モリスケ",
+    "warnings": [
+      "cuisine は GBPカテゴリ"
+    ]
   }
 }

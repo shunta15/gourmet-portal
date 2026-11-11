@@ -23087,6 +23087,254 @@ export const ARTICLE_STORES: Restaurant[] = [
       "ランチ"
     ],
     "featureId": "ぱろぱとBAKERY"
+  },
+  {
+    "id": "r926",
+    "name": "にのみや",
+    "cuisine": "蕎麦店",
+    "area": "新潟県・五泉市",
+    "region": "niigata",
+    "shape": "square",
+    "image": "/restaurants/teleapo-にのみや/hero.jpg",
+    "heroImages": [
+      "/restaurants/teleapo-にのみや/hero.jpg",
+      "/restaurants/teleapo-にのみや/point1.jpg",
+      "/restaurants/teleapo-にのみや/point2.jpg",
+      "/restaurants/teleapo-にのみや/point3.jpg",
+      "/restaurants/teleapo-にのみや/point4.jpg"
+    ],
+    "gallery": [
+      "/restaurants/teleapo-にのみや/hero.jpg",
+      "/restaurants/teleapo-にのみや/point1.jpg",
+      "/restaurants/teleapo-にのみや/point2.jpg",
+      "/restaurants/teleapo-にのみや/point3.jpg",
+      "/restaurants/teleapo-にのみや/point4.jpg"
+    ],
+    "desc": "新潟県五泉市の蕎麦店。",
+    "address": "新潟県五泉市本町3丁目2-15",
+    "hours": "火〜日 11:30–14:00, 17:30–23:00",
+    "closed": "月曜日",
+    "seats": "—（訪問前に公式確認）",
+    "nearest": "—",
+    "phone": "0250-42-2210",
+    "source": {
+      "label": "Google ビジネスプロフィール",
+      "url": "https://maps.google.com/?cid=16522968994500278510"
+    },
+    "body": [
+      "にのみやは、新潟県五泉市にあるお店です。業態は「蕎麦店」、所在地は新潟県五泉市本町3丁目2-15です。マチノワ編集部の特集記事では、「北海道産石臼引きそば粉と五泉の名水で打つ十割蕎麦」・「五泉の特産品・里いもを練りこんだ里いも麺」などを取り上げています。",
+      "営業時間は火〜日 11:30–14:00, 17:30–23:00、定休日は月曜日です（Googleマップの営業時間による）。営業時間や価格は変わることがあるため、訪問前に公式サイトやSNS、お電話でご確認ください。"
+    ],
+    "highlights": [
+      "北海道産石臼引きそば粉と五泉の名水で打つ十割蕎麦",
+      "五泉の特産品・里いもを練りこんだ里いも麺",
+      "昼のそばランチから夜の割烹料理・地酒まで",
+      "二階の座敷で少人数から28名の宴会まで"
+    ],
+    "tags": [
+      "蕎麦店",
+      "そば",
+      "五泉市",
+      "ランチ"
+    ],
+    "featureId": "にのみや"
+  },
+  {
+    "id": "r927",
+    "name": "マルサーラ",
+    "cuisine": "日本式洋食レストラン",
+    "area": "茨城県・北茨城市",
+    "region": "ibaraki",
+    "shape": "square",
+    "image": "/restaurants/teleapo-マルサーラ/hero.jpg",
+    "heroImages": [
+      "/restaurants/teleapo-マルサーラ/hero.jpg",
+      "/restaurants/teleapo-マルサーラ/point1.jpg",
+      "/restaurants/teleapo-マルサーラ/point2.jpg",
+      "/restaurants/teleapo-マルサーラ/point3.jpg",
+      "/restaurants/teleapo-マルサーラ/point4.jpg"
+    ],
+    "gallery": [
+      "/restaurants/teleapo-マルサーラ/hero.jpg",
+      "/restaurants/teleapo-マルサーラ/point1.jpg",
+      "/restaurants/teleapo-マルサーラ/point2.jpg",
+      "/restaurants/teleapo-マルサーラ/point3.jpg",
+      "/restaurants/teleapo-マルサーラ/point4.jpg"
+    ],
+    "desc": "茨城県北茨城市の日本式洋食レストラン。",
+    "address": "茨城県北茨城市大津町字五浦2丁目164",
+    "hours": "月・水〜日 11:30–14:30, 18:00–20:30",
+    "closed": "火曜日",
+    "seats": "40席（個室あり・貸切可）",
+    "nearest": "—",
+    "phone": "0293-46-1877",
+    "source": {
+      "label": "Google ビジネスプロフィール",
+      "url": "https://maps.google.com/?cid=13341096235534841064"
+    },
+    "body": [
+      "マルサーラは、茨城県北茨城市にあるお店です。業態は「日本式洋食レストラン」、所在地は茨城県北茨城市大津町字五浦2丁目164です。マチノワ編集部の特集記事では、「料理コンテスト優勝の牛スジのデミグラスソース煮込み シチリア風」・「天使のフワフワオムライスと米米ピラフ」などを取り上げています。",
+      "営業時間は月・水〜日 11:30–14:30, 18:00–20:30、定休日は火曜日です（Googleマップの営業時間による）。席は40席（個室あり・貸切可）。営業時間や価格は変わることがあるため、訪問前に公式サイトやSNS、お電話でご確認ください。"
+    ],
+    "highlights": [
+      "料理コンテスト優勝の牛スジのデミグラスソース煮込み シチリア風",
+      "天使のフワフワオムライスと米米ピラフ",
+      "太平洋を眺める店内と、ペット同伴可のテラス席",
+      "六角堂と天心記念五浦美術館に隣接する立地"
+    ],
+    "tags": [
+      "日本式洋食レストラン",
+      "北茨城市",
+      "個室",
+      "貸切可",
+      "ランチ"
+    ],
+    "featureId": "マルサーラ"
+  },
+  {
+    "id": "r928",
+    "name": "ウィステリア",
+    "cuisine": "洋食レストラン",
+    "area": "兵庫県・加東市",
+    "region": "hyogo",
+    "shape": "square",
+    "image": "/restaurants/teleapo-ウィステリア/hero.jpg",
+    "heroImages": [
+      "/restaurants/teleapo-ウィステリア/hero.jpg",
+      "/restaurants/teleapo-ウィステリア/point1.jpg",
+      "/restaurants/teleapo-ウィステリア/point2.jpg",
+      "/restaurants/teleapo-ウィステリア/point3.jpg",
+      "/restaurants/teleapo-ウィステリア/point4.jpg"
+    ],
+    "gallery": [
+      "/restaurants/teleapo-ウィステリア/hero.jpg",
+      "/restaurants/teleapo-ウィステリア/point1.jpg",
+      "/restaurants/teleapo-ウィステリア/point2.jpg",
+      "/restaurants/teleapo-ウィステリア/point3.jpg",
+      "/restaurants/teleapo-ウィステリア/point4.jpg"
+    ],
+    "desc": "加東市家原は、JR加古川線の社町駅から北に歩いて千鳥川を越えた先に広がる住宅街である。ウィステリアは、その閑静な一画にあるピンク色の建物の洋食レストランだ。",
+    "address": "兵庫県加東市家原813-4",
+    "hours": "火〜日 11:30–14:30, 17:00–21:00",
+    "closed": "月曜日",
+    "seats": "36席（カウンター6席・テーブル・ソファー・個室）",
+    "nearest": "—",
+    "phone": "0795-21-1424",
+    "source": {
+      "label": "Google ビジネスプロフィール",
+      "url": "https://maps.google.com/?cid=4401685659083644439"
+    },
+    "body": [
+      "ウィステリアは、兵庫県加東市にあるお店です。業態は「洋食レストラン」、所在地は兵庫県加東市家原813-4です。マチノワ編集部の特集記事では、「看板の「社町ビフカツ」と10年継ぎ足すデミグラスソース」・「自家栽培の米と野菜、専門業者から調達する厳選素材」などを取り上げています。",
+      "営業時間は火〜日 11:30–14:30, 17:00–21:00、定休日は月曜日です（Googleマップの営業時間による）。席は36席（カウンター6席・テーブル・ソファー・個室）。営業時間や価格は変わることがあるため、訪問前に公式サイトやSNS、お電話でご確認ください。"
+    ],
+    "highlights": [
+      "看板の「社町ビフカツ」と10年継ぎ足すデミグラスソース",
+      "自家栽培の米と野菜、専門業者から調達する厳選素材",
+      "ランチからディナーコース、テイクアウト弁当まで揃うメニュー構成",
+      "36席の店内と個室、一人からパーティーまで対応"
+    ],
+    "tags": [
+      "洋食レストラン",
+      "加東市",
+      "個室",
+      "ランチ"
+    ],
+    "featureId": "ウィステリア"
+  },
+  {
+    "id": "r929",
+    "name": "お食事処ななら",
+    "cuisine": "和食店",
+    "area": "茨城県・守谷市",
+    "region": "ibaraki",
+    "shape": "square",
+    "image": "/restaurants/teleapo-お食事処ななら/hero.jpg",
+    "heroImages": [
+      "/restaurants/teleapo-お食事処ななら/hero.jpg",
+      "/restaurants/teleapo-お食事処ななら/point1.jpg",
+      "/restaurants/teleapo-お食事処ななら/point2.jpg",
+      "/restaurants/teleapo-お食事処ななら/point3.jpg"
+    ],
+    "gallery": [
+      "/restaurants/teleapo-お食事処ななら/hero.jpg",
+      "/restaurants/teleapo-お食事処ななら/point1.jpg",
+      "/restaurants/teleapo-お食事処ななら/point2.jpg",
+      "/restaurants/teleapo-お食事処ななら/point3.jpg"
+    ],
+    "desc": "守谷市大柏は、つくばエクスプレス守谷駅から南に約1.8キロ離れた住宅地である。お食事処ななら は、2026年1月9日にこの地区にオープンした食堂で、岩手県から移築した古民家の建物を使っている。",
+    "address": "茨城県守谷市大柏885-3",
+    "hours": "月・水〜金 11:00–14:30, 16:00–20:00 / 土・日 11:00–20:00",
+    "closed": "火曜日",
+    "seats": "—（訪問前に公式確認）",
+    "nearest": "—",
+    "phone": "050-8885-7990",
+    "source": {
+      "label": "Google ビジネスプロフィール",
+      "url": "https://maps.google.com/?cid=14278562030644601263"
+    },
+    "body": [
+      "お食事処なならは、茨城県守谷市にあるお店です。業態は「和食店」、所在地は茨城県守谷市大柏885-3です。マチノワ編集部の特集記事では、「もつ煮込みを軸に絞り込んだ3種のメニュー」・「岩手県から移築した古民家の建物と開放的な空間」などを取り上げています。",
+      "営業時間は月・水〜金 11:00–14:30, 16:00–20:00 / 土・日 11:00–20:00、定休日は火曜日です（Googleマップの営業時間による）。営業時間や価格は変わることがあるため、訪問前に公式サイトやSNS、お電話でご確認ください。"
+    ],
+    "highlights": [
+      "もつ煮込みを軸に絞り込んだ3種のメニュー",
+      "岩手県から移築した古民家の建物と開放的な空間",
+      "PayPay対応と公式Instagramでの情報発信"
+    ],
+    "tags": [
+      "和食店",
+      "守谷市",
+      "ランチ"
+    ],
+    "featureId": "お食事処ななら"
+  },
+  {
+    "id": "r930",
+    "name": "洋食工房モリスケ",
+    "cuisine": "洋食レストラン",
+    "area": "宮城県・岩沼市",
+    "region": "miyagi",
+    "shape": "square",
+    "image": "/restaurants/teleapo-洋食工房モリスケ/hero.jpg",
+    "heroImages": [
+      "/restaurants/teleapo-洋食工房モリスケ/hero.jpg",
+      "/restaurants/teleapo-洋食工房モリスケ/point1.jpg",
+      "/restaurants/teleapo-洋食工房モリスケ/point2.jpg",
+      "/restaurants/teleapo-洋食工房モリスケ/point3.jpg"
+    ],
+    "gallery": [
+      "/restaurants/teleapo-洋食工房モリスケ/hero.jpg",
+      "/restaurants/teleapo-洋食工房モリスケ/point1.jpg",
+      "/restaurants/teleapo-洋食工房モリスケ/point2.jpg",
+      "/restaurants/teleapo-洋食工房モリスケ/point3.jpg"
+    ],
+    "desc": "岩沼市館下1丁目は、JR東北本線・常磐線の岩沼駅東口から徒歩2分の場所にある。洋食工房モリスケは、2026年10月にこの地でオープンした洋食店で、フランス料理やイタリア料理で経験を積んだ店主と、その配偶者の2人で営む。",
+    "address": "宮城県岩沼市館下1丁目5-26 森高マンション 102",
+    "hours": "毎日 11:00–15:00, 17:30–20:00",
+    "closed": "なし（Googleマップの営業時間による）",
+    "seats": "21席（カウンター7席・テーブル14席）",
+    "nearest": "—",
+    "phone": "0223-20-0415",
+    "source": {
+      "label": "Google ビジネスプロフィール",
+      "url": "https://maps.google.com/?cid=15347713326362054490"
+    },
+    "body": [
+      "洋食工房モリスケは、宮城県岩沼市にあるお店です。業態は「洋食レストラン」、所在地は宮城県岩沼市館下1丁目5-26 森高マンション 102です。マチノワ編集部の特集記事では、「特製デミグラスハンバーグと厚切りポークステーキ」・「フレンチ・イタリアンの経験を持つ店主と、ソムリエ資格が選ぶワイン」などを取り上げています。",
+      "営業時間は毎日 11:00–15:00, 17:30–20:00で、定休日はありません（Googleマップの営業時間による）。席は21席（カウンター7席・テーブル14席）。営業時間や価格は変わることがあるため、訪問前に公式サイトやSNS、お電話でご確認ください。"
+    ],
+    "highlights": [
+      "特製デミグラスハンバーグと厚切りポークステーキ",
+      "フレンチ・イタリアンの経験を持つ店主と、ソムリエ資格が選ぶワイン",
+      "カウンター7席とテーブル14席、子ども連れにも対応"
+    ],
+    "tags": [
+      "洋食レストラン",
+      "岩沼市",
+      "ランチ"
+    ],
+    "featureId": "洋食工房モリスケ"
   }
 ];
 
@@ -23573,7 +23821,12 @@ export const ARTICLE_STORE_FEATURE_IDS: Record<string, string> = {
   "r922": "ナチュランド",
   "r923": "まんま亭・武藤",
   "r924": "フルーツワイナリーエスプリ(東根フルーツワイン)",
-  "r925": "ぱろぱとBAKERY"
+  "r925": "ぱろぱとBAKERY",
+  "r926": "にのみや",
+  "r927": "マルサーラ",
+  "r928": "ウィステリア",
+  "r929": "お食事処ななら",
+  "r930": "洋食工房モリスケ"
 };
 
 /** 特集記事ID → 店舗ID */
@@ -24059,5 +24312,10 @@ export const ARTICLE_STORE_ID_BY_FEATURE: Record<string, string> = {
   "ナチュランド": "r922",
   "まんま亭・武藤": "r923",
   "フルーツワイナリーエスプリ(東根フルーツワイン)": "r924",
-  "ぱろぱとBAKERY": "r925"
+  "ぱろぱとBAKERY": "r925",
+  "にのみや": "r926",
+  "マルサーラ": "r927",
+  "ウィステリア": "r928",
+  "お食事処ななら": "r929",
+  "洋食工房モリスケ": "r930"
 };

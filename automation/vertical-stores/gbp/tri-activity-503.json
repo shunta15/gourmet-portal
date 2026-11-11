@@ -1,0 +1,40 @@
+{
+  "tab": "トリニティアポ",
+  "tabEn": "tri-activity",
+  "row": 503,
+  "sheet": {
+    "name": "La belle voile",
+    "address": "",
+    "url": "https://www.google.com/maps/search/?api=1&query=La%20belle%20voile%20090-5499-8794%20%E3%80%92656-0131%20%E5%85%B5%E5%BA%AB%E7%9C%8C%E5%8D%97%E3%81%82%E3%82%8F%E3%81%98%E5%B8%82%E5%BA%83%E7%94%B0%E4%B8%AD%E7%AD%8B",
+    "type": "体験",
+    "d1": "",
+    "d2": ""
+  },
+  "urlKind": "mapsApi",
+  "route": "第1段(verify-gbp.mjs)で確認済み",
+  "verdict": "一致",
+  "verdictReason": "手がかり: 店名＋電話。電話が一致／店名: contains(シート「La belle voile」/ マップ「La belle voile | ポーセラーツ教室」)／住所(シート): coarse・シートの住所に番地なし（町名まで一致）",
+  "place": {
+    "name": "La belle voile | ポーセラーツ教室",
+    "address": "兵庫県南あわじ市広田中筋",
+    "category": "アートスタジオ",
+    "lat": 34.3216737,
+    "lng": 134.8364929,
+    "gbpUrl": "https://maps.google.com/?cid=3673494148540329550",
+    "phone": "090-5499-8794",
+    "website": null,
+    "hours": {
+      "月": "10:00–17:00",
+      "火": "定休日",
+      "水": "10:00–17:00",
+      "木": "定休日",
+      "金": "10:00–17:00",
+      "土": "14:00–17:00",
+      "日": "定休日"
+    },
+    "reserveLinks": [],
+    "statusSignals": [],
+    "closedSignal": false
+  },
+  "fetchedAt": "2026-11-11T08:10:35.159Z"
+}

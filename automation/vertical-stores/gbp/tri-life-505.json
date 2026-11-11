@@ -1,0 +1,40 @@
+{
+  "tab": "トリニティアポ",
+  "tabEn": "tri-life",
+  "row": 505,
+  "sheet": {
+    "name": "茂右衛門",
+    "address": "",
+    "url": "https://www.google.com/maps/search/?api=1&query=%E8%8C%82%E5%8F%B3%E8%A1%9B%E9%96%80%20077-829-0030%20%E3%80%92916-1102%20%E7%A6%8F%E4%BA%95%E7%9C%8C%E9%AF%96%E6%B1%9F%E5%B8%82%E5%A4%A7%E9%87%8E%E7%94%BA29-21",
+    "type": "カフェ、農場",
+    "d1": "",
+    "d2": ""
+  },
+  "urlKind": "mapsApi",
+  "route": "第1段(verify-gbp.mjs)で確認済み",
+  "verdict": "一致",
+  "verdictReason": "手がかり: 電話＋住所(番地まで)。電話が一致／店名: different(シート「茂右衛門」/ マップ「もうえもん農場」)／住所(シート): exact・町名・番地とも一致",
+  "place": {
+    "name": "もうえもん農場",
+    "address": "福井県鯖江市大野町２９−２１",
+    "category": "農場",
+    "lat": 35.973094,
+    "lng": 136.2337262,
+    "gbpUrl": "https://maps.google.com/?cid=13310583307100701942",
+    "phone": "0778-29-0030",
+    "website": "http://www.komeyasan.jp/",
+    "hours": {
+      "月": "10:00–12:00, 13:00–15:00",
+      "火": "10:00–12:00, 13:00–15:00",
+      "水": "10:00–12:00, 13:00–15:00",
+      "木": "10:00–12:00, 13:00–15:00",
+      "金": "10:00–12:00, 13:00–15:00",
+      "土": "定休日",
+      "日": "定休日"
+    },
+    "reserveLinks": [],
+    "statusSignals": [],
+    "closedSignal": false
+  },
+  "fetchedAt": "2026-11-11T08:12:02.440Z"
+}

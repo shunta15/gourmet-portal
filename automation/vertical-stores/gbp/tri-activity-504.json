@@ -1,0 +1,32 @@
+{
+  "tab": "トリニティアポ",
+  "tabEn": "tri-activity",
+  "row": 504,
+  "sheet": {
+    "name": "ぽにぃている",
+    "address": "",
+    "url": "https://www.google.com/maps/search/?api=1&query=%E3%81%BD%E3%81%AB%E3%81%83%E3%81%A6%E3%81%84%E3%82%8B%2005088885958%20%E3%80%92250-0862%20%E7%A5%9E%E5%A5%88%E5%B7%9D%E7%9C%8C%E8%B6%B3%E6%9F%84%E4%B8%8A%E9%83%A1%E6%9D%BE%E7%94%B0%E7%94%BA%E5%AF%84%EF%BC%95%EF%BC%92%EF%BC%93%EF%BC%99",
+    "type": "その他",
+    "d1": "",
+    "d2": ""
+  },
+  "urlKind": "mapsApi",
+  "route": "第1段(verify-gbp.mjs)で確認済み",
+  "verdict": "一致",
+  "verdictReason": "手がかり: 店名＋電話＋住所(番地まで)。電話が一致／店名: contains(シート「ぽにぃている」/ マップ「キャンプ牧場 ぽにぃている」)／住所(シート): exact・町名・番地とも一致",
+  "place": {
+    "name": "キャンプ牧場 ぽにぃている",
+    "address": "神奈川県足柄上郡松田町寄５２３９",
+    "category": "ポニー乗馬サービス",
+    "lat": 35.3895381,
+    "lng": 139.1332033,
+    "gbpUrl": "https://maps.google.com/?cid=16914705335754982633",
+    "phone": "050-8888-5958",
+    "website": "https://ponny-tale.com/",
+    "hours": null,
+    "reserveLinks": [],
+    "statusSignals": [],
+    "closedSignal": false
+  },
+  "fetchedAt": "2026-11-11T08:11:08.741Z"
+}

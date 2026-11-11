@@ -1,0 +1,40 @@
+{
+  "tab": "トリニティアポ",
+  "tabEn": "tri-life",
+  "row": 506,
+  "sheet": {
+    "name": "姫路駅南 人形のかきうち",
+    "address": "",
+    "url": "https://www.google.com/maps/search/?api=1&query=%E5%A7%AB%E8%B7%AF%E9%A7%85%E5%8D%97%20%E4%BA%BA%E5%BD%A2%E3%81%AE%E3%81%8B%E3%81%8D%E3%81%86%E3%81%A1%20079-281-8606%20",
+    "type": "人形",
+    "d1": "",
+    "d2": ""
+  },
+  "urlKind": "mapsApi",
+  "route": "第1段(verify-gbp.mjs)で確認済み",
+  "verdict": "一致",
+  "verdictReason": "手がかり: 電話＋住所(番地まで)。電話が一致／店名: different(シート「姫路駅南 人形のかきうち」/ マップ「かきうち駅南人形」)／住所(シート): exact・町名・番地とも一致",
+  "place": {
+    "name": "かきうち駅南人形",
+    "address": "兵庫県姫路市東延末３丁目３５",
+    "category": "人形店",
+    "lat": 34.8219612,
+    "lng": 134.6884386,
+    "gbpUrl": "https://maps.google.com/?cid=8260587814984689136",
+    "phone": "079-281-8606",
+    "website": "https://www.kakiuchi-ekiminami-doll.com/",
+    "hours": {
+      "月": "10:00–18:00",
+      "火": "10:00–18:00",
+      "水": "10:00–18:00",
+      "木": "定休日",
+      "金": "10:00–18:00",
+      "土": "10:00–18:00",
+      "日": "10:00–18:00"
+    },
+    "reserveLinks": [],
+    "statusSignals": [],
+    "closedSignal": false
+  },
+  "fetchedAt": "2026-11-11T08:12:36.518Z"
+}

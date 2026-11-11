@@ -1,0 +1,118 @@
+{
+  "commit": "b5ab5801312ca68fc1cfb15571ab1bbcc68ef6ca",
+  "source": "/Users/shunta/claude/gp-k-auto2",
+  "count": 10,
+  "added": [
+    {
+      "row": 416,
+      "name": "にのみや",
+      "key": "lk-gourmet-416",
+      "vertical": "グルメ",
+      "id": "r926",
+      "articleId": "にのみや",
+      "shopUrl": "https://machinowa.tokyo/restaurant/r926",
+      "articleUrl": "https://machinowa.tokyo/feature/にのみや",
+      "sheetUrl": "https://machinowa.tokyo/feature/にのみや"
+    },
+    {
+      "row": 417,
+      "name": "マルサーラ",
+      "key": "lk-gourmet-417",
+      "vertical": "グルメ",
+      "id": "r927",
+      "articleId": "マルサーラ",
+      "shopUrl": "https://machinowa.tokyo/restaurant/r927",
+      "articleUrl": "https://machinowa.tokyo/feature/マルサーラ",
+      "sheetUrl": "https://machinowa.tokyo/feature/マルサーラ"
+    },
+    {
+      "row": 418,
+      "name": "ウィステリア",
+      "key": "lk-gourmet-418",
+      "vertical": "グルメ",
+      "id": "r928",
+      "articleId": "ウィステリア",
+      "shopUrl": "https://machinowa.tokyo/restaurant/r928",
+      "articleUrl": "https://machinowa.tokyo/feature/ウィステリア",
+      "sheetUrl": "https://machinowa.tokyo/feature/ウィステリア"
+    },
+    {
+      "row": 419,
+      "name": "お食事処ななら",
+      "key": "lk-gourmet-419",
+      "vertical": "グルメ",
+      "id": "r929",
+      "articleId": "お食事処ななら",
+      "shopUrl": "https://machinowa.tokyo/restaurant/r929",
+      "articleUrl": "https://machinowa.tokyo/feature/お食事処ななら",
+      "sheetUrl": "https://machinowa.tokyo/feature/お食事処ななら"
+    },
+    {
+      "row": 420,
+      "name": "洋食工房モリスケ",
+      "key": "lk-gourmet-420",
+      "vertical": "グルメ",
+      "id": "r930",
+      "articleId": "洋食工房モリスケ",
+      "shopUrl": "https://machinowa.tokyo/restaurant/r930",
+      "articleUrl": "https://machinowa.tokyo/feature/洋食工房モリスケ",
+      "sheetUrl": "https://machinowa.tokyo/feature/洋食工房モリスケ"
+    },
+    {
+      "row": 503,
+      "name": "La belle voile",
+      "key": "tri-activity-503",
+      "vertical": "アクティビティ",
+      "id": "ac0067",
+      "articleId": "ac0067",
+      "shopUrl": "https://machinowa.tokyo/activity/shop/ac0067",
+      "articleUrl": "https://machinowa.tokyo/activity/article/ac0067",
+      "sheetUrl": "https://machinowa.tokyo/activity/article/ac0067"
+    },
+    {
+      "row": 504,
+      "name": "ぽにぃている",
+      "key": "tri-activity-504",
+      "vertical": "アクティビティ",
+      "id": "ac0068",
+      "articleId": "ac0068",
+      "shopUrl": "https://machinowa.tokyo/activity/shop/ac0068",
+      "articleUrl": "https://machinowa.tokyo/activity/article/ac0068",
+      "sheetUrl": "https://machinowa.tokyo/activity/article/ac0068"
+    },
+    {
+      "row": 505,
+      "name": "茂右衛門",
+      "key": "tri-life-505",
+      "vertical": "くらし",
+      "id": "li0215",
+      "articleId": "li0215",
+      "shopUrl": "https://machinowa.tokyo/life/shop/li0215",
+      "articleUrl": "https://machinowa.tokyo/life/article/li0215",
+      "sheetUrl": "https://machinowa.tokyo/life/article/li0215"
+    },
+    {
+      "row": 506,
+      "name": "姫路駅南 人形のかきうち",
+      "key": "tri-life-506",
+      "vertical": "くらし",
+      "id": "li0216",
+      "articleId": "li0216",
+      "shopUrl": "https://machinowa.tokyo/life/shop/li0216",
+      "articleUrl": "https://machinowa.tokyo/life/article/li0216",
+      "sheetUrl": "https://machinowa.tokyo/life/article/li0216"
+    },
+    {
+      "row": 508,
+      "name": "宏昌丸",
+      "key": "tri-activity-508",
+      "vertical": "アクティビティ",
+      "id": "ac0069",
+      "articleId": "ac0069",
+      "shopUrl": "https://machinowa.tokyo/activity/shop/ac0069",
+      "articleUrl": "https://machinowa.tokyo/activity/article/ac0069",
+      "sheetUrl": "https://machinowa.tokyo/activity/article/ac0069"
+    }
+  ],
+  "skipped": []
+}

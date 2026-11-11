@@ -1,0 +1,16 @@
+{
+  "key": "tri-life-505",
+  "images": [
+    {
+      "path": "/_portal/vshops/tri-life-505/g01.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9QnzcAoxuIaXqoDrXJlR9qvBISVadT6_pvdCiYFWV9Fn7K7yUO0BhX5KmIAow6btT22TNEp9aDmGQIUeuN_TSva80WO2s9tQJF3qt9ORu7HHjQwSFx5Tm4akA4d827KZZLC7qGn=s1200",
+      "pageUrl": "https://maps.google.com/?cid=13310583307100701942",
+      "what": "山を背景に緑の稲が育つ田んぼの風景",
+      "kind": "view",
+      "width": 1200,
+      "height": 800,
+      "source": "Google マップ"
+    }
+  ],
+  "note": "automation/v2/write.mjs が 2026-11-11T08:26:29.040Z に取得。店の実写だけ(AI 画像・汎用画像・地図・ロゴ・顔が大きい画像は除外)。"
+}
