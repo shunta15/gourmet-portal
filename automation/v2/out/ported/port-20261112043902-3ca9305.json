@@ -1,0 +1,118 @@
+{
+  "commit": "3ca93050a4a2ac3b8e06678dbf1584336ed4f039",
+  "source": "/Users/shunta/claude/gp-k-auto2",
+  "count": 10,
+  "added": [
+    {
+      "row": 377,
+      "name": "コーヒー研究所・Ｍ",
+      "key": "lk-gourmet-377",
+      "vertical": "グルメ",
+      "id": "r933",
+      "articleId": "コーヒー研究所・M",
+      "shopUrl": "https://machinowa.tokyo/restaurant/r933",
+      "articleUrl": "https://machinowa.tokyo/feature/コーヒー研究所・M",
+      "sheetUrl": "https://machinowa.tokyo/feature/コーヒー研究所・M"
+    },
+    {
+      "row": 422,
+      "name": "魚彦",
+      "key": "lk-gourmet-422",
+      "vertical": "グルメ",
+      "id": "r934",
+      "articleId": "魚彦",
+      "shopUrl": "https://machinowa.tokyo/restaurant/r934",
+      "articleUrl": "https://machinowa.tokyo/feature/魚彦",
+      "sheetUrl": "https://machinowa.tokyo/feature/魚彦"
+    },
+    {
+      "row": 519,
+      "name": "ぽっぽ",
+      "key": "tri-gourmet-519",
+      "vertical": "グルメ",
+      "id": "r935",
+      "articleId": "ぽっぽ",
+      "shopUrl": "https://machinowa.tokyo/restaurant/r935",
+      "articleUrl": "https://machinowa.tokyo/feature/ぽっぽ",
+      "sheetUrl": "https://machinowa.tokyo/feature/ぽっぽ"
+    },
+    {
+      "row": 520,
+      "name": "オトギノハコ",
+      "key": "tri-gourmet-520",
+      "vertical": "グルメ",
+      "id": "r936",
+      "articleId": "オトギノハコOTOGINOHAKO",
+      "shopUrl": "https://machinowa.tokyo/restaurant/r936",
+      "articleUrl": "https://machinowa.tokyo/feature/オトギノハコOTOGINOHAKO",
+      "sheetUrl": "https://machinowa.tokyo/feature/オトギノハコOTOGINOHAKO"
+    },
+    {
+      "row": 521,
+      "name": "K-one Leather Craft",
+      "key": "tri-activity-521",
+      "vertical": "アクティビティ",
+      "id": "ac0073",
+      "articleId": "ac0073",
+      "shopUrl": "https://machinowa.tokyo/activity/shop/ac0073",
+      "articleUrl": "https://machinowa.tokyo/activity/article/ac0073",
+      "sheetUrl": "https://machinowa.tokyo/activity/article/ac0073"
+    },
+    {
+      "row": 522,
+      "name": "芳丸",
+      "key": "tri-activity-522",
+      "vertical": "アクティビティ",
+      "id": "ac0074",
+      "articleId": "ac0074",
+      "shopUrl": "https://machinowa.tokyo/activity/shop/ac0074",
+      "articleUrl": "https://machinowa.tokyo/activity/article/ac0074",
+      "sheetUrl": "https://machinowa.tokyo/activity/article/ac0074"
+    },
+    {
+      "row": 523,
+      "name": "妙願寺（浄土真宗本願寺派）",
+      "key": "tri-life-523",
+      "vertical": "くらし",
+      "id": "li0220",
+      "articleId": "li0220",
+      "shopUrl": "https://machinowa.tokyo/life/shop/li0220",
+      "articleUrl": "https://machinowa.tokyo/life/article/li0220",
+      "sheetUrl": "https://machinowa.tokyo/life/article/li0220"
+    },
+    {
+      "row": 524,
+      "name": "湯浅大宮 顯國神社",
+      "key": "tri-life-524",
+      "vertical": "くらし",
+      "id": "li0221",
+      "articleId": "li0221",
+      "shopUrl": "https://machinowa.tokyo/life/shop/li0221",
+      "articleUrl": "https://machinowa.tokyo/life/article/li0221",
+      "sheetUrl": "https://machinowa.tokyo/life/article/li0221"
+    },
+    {
+      "row": 525,
+      "name": "ＰＥＯＰＬＥＳ＿ＣＯＦＦＥＥ",
+      "key": "tri-gourmet-525",
+      "vertical": "グルメ",
+      "id": "r937",
+      "articleId": "PEOPLESCOFFEE",
+      "shopUrl": "https://machinowa.tokyo/restaurant/r937",
+      "articleUrl": "https://machinowa.tokyo/feature/PEOPLESCOFFEE",
+      "sheetUrl": "https://machinowa.tokyo/feature/PEOPLESCOFFEE"
+    },
+    {
+      "row": 526,
+      "name": "ハーバリウム専門店 ラ・エレガントフラワー",
+      "key": "tri-life-526",
+      "vertical": "くらし",
+      "id": "li0222",
+      "articleId": "li0222",
+      "shopUrl": "https://machinowa.tokyo/life/shop/li0222",
+      "articleUrl": "https://machinowa.tokyo/life/article/li0222",
+      "sheetUrl": "https://machinowa.tokyo/life/article/li0222"
+    }
+  ],
+  "skipped": []
+}

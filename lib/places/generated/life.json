@@ -34740,6 +34740,706 @@
         ],
         "checkedAt": "2026-11-11"
       }
+    },
+    {
+      "id": "li0220",
+      "vertical": "life",
+      "category": "shrine-temple",
+      "name": "妙願寺（浄土真宗本願寺派）",
+      "pref": "wakayama",
+      "cityName": "日高町",
+      "address": "和歌山県日高郡日高町志賀2988",
+      "lat": 33.9339277,
+      "lng": 135.1034867,
+      "hours": "毎日 07:00 - 17:00",
+      "phone": "0738-64-2402",
+      "url": "https://myoganji.webu.jp/",
+      "website": "https://myoganji.webu.jp/",
+      "mapUrl": "https://maps.google.com/?cid=929588366559165600",
+      "image": "/_portal/vshops/tri-life-523/g01.jpg",
+      "images": [
+        "/_portal/vshops/tri-life-523/g01.jpg",
+        "/_portal/vshops/tri-life-523/g02.jpg",
+        "/_portal/vshops/tri-life-523/g03.jpg",
+        "/_portal/vshops/tri-life-523/g04.jpg",
+        "/_portal/vshops/tri-life-523/g05.jpg",
+        "/_portal/vshops/tri-life-523/g06.jpg",
+        "/_portal/vshops/tri-life-523/g07.jpg",
+        "/_portal/vshops/tri-life-523/g08.jpg",
+        "/_portal/vshops/tri-life-523/g09.jpg",
+        "/_portal/vshops/tri-life-523/g10.jpg",
+        "/_portal/vshops/tri-life-523/s06.jpg",
+        "/_portal/vshops/tri-life-523/s07.jpg",
+        "/_portal/vshops/tri-life-523/s08.jpg",
+        "/_portal/vshops/tri-life-523/s09.jpg",
+        "/_portal/vshops/tri-life-523/s10.jpg",
+        "/_portal/vshops/tri-life-523/s11.jpg",
+        "/_portal/vshops/tri-life-523/s12.jpg",
+        "/_portal/vshops/tri-life-523/s13.jpg",
+        "/_portal/vshops/tri-life-523/s15.jpg",
+        "/_portal/vshops/tri-life-523/s16.jpg",
+        "/_portal/vshops/tri-life-523/s17.jpg"
+      ],
+      "photos": [
+        {
+          "path": "/_portal/vshops/tri-life-523/g01.jpg",
+          "what": "本堂内陣の仏壇と飾りが見える内部",
+          "kind": "common",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-life-523/g02.jpg",
+          "what": "石鉢と植物が並ぶ境内の一角",
+          "kind": "exterior",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-life-523/g03.jpg",
+          "what": "本堂の外観と青瓦の屋根",
+          "kind": "exterior",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-life-523/g04.jpg",
+          "what": "内陣の阿弥陀如来像と金色の装飾",
+          "kind": "common",
+          "width": 986,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-life-523/g05.jpg",
+          "what": "境内の建物と庭の様子",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-life-523/g06.jpg",
+          "what": "鐘楼と青空の風景",
+          "kind": "exterior",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-life-523/g07.jpg",
+          "what": "花が咲く境内の一角",
+          "kind": "exterior",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-life-523/g08.jpg",
+          "what": "山門と石段の外観",
+          "kind": "exterior",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-life-523/g09.jpg",
+          "what": "石鉢に浮かぶ蓮の葉と花",
+          "kind": "exterior",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-life-523/g10.jpg",
+          "what": "内陣の扉と金色の装飾",
+          "kind": "common",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-life-523/s06.jpg",
+          "what": "「妙願寺プロモーションビデオ」と書かれた本堂外観の画像",
+          "kind": "exterior",
+          "width": 853,
+          "height": 1280
+        },
+        {
+          "path": "/_portal/vshops/tri-life-523/s07.jpg",
+          "what": "本堂内部の障子と木製建具",
+          "kind": "common",
+          "width": 810,
+          "height": 1080
+        },
+        {
+          "path": "/_portal/vshops/tri-life-523/s08.jpg",
+          "what": "境内の建物と植栽の外観",
+          "kind": "exterior",
+          "width": 810,
+          "height": 1080
+        },
+        {
+          "path": "/_portal/vshops/tri-life-523/s09.jpg",
+          "what": "本堂内部の廊下と仏壇への入口",
+          "kind": "common",
+          "width": 810,
+          "height": 1080
+        },
+        {
+          "path": "/_portal/vshops/tri-life-523/s10.jpg",
+          "what": "本堂内でギターを演奏する人と集まった参加者",
+          "kind": "common",
+          "width": 960,
+          "height": 786
+        },
+        {
+          "path": "/_portal/vshops/tri-life-523/s11.jpg",
+          "what": "本堂前で記念撮影する参加者の集合写真",
+          "kind": "exterior",
+          "width": 960,
+          "height": 720
+        },
+        {
+          "path": "/_portal/vshops/tri-life-523/s12.jpg",
+          "what": "境内でバーベキューをする様子",
+          "kind": "exterior",
+          "width": 1000,
+          "height": 750
+        },
+        {
+          "path": "/_portal/vshops/tri-life-523/s13.jpg",
+          "what": "書の掛け軸",
+          "kind": "common",
+          "width": 1000,
+          "height": 750
+        },
+        {
+          "path": "/_portal/vshops/tri-life-523/s15.jpg",
+          "what": "田んぼを背景にした本堂と境内の全景",
+          "kind": "exterior",
+          "width": 1000,
+          "height": 746
+        },
+        {
+          "path": "/_portal/vshops/tri-life-523/s16.jpg",
+          "what": "雪が降る冬の本堂外観",
+          "kind": "exterior",
+          "width": 1000,
+          "height": 746
+        },
+        {
+          "path": "/_portal/vshops/tri-life-523/s17.jpg",
+          "what": "雪景色の中の鐘楼と境内",
+          "kind": "exterior",
+          "width": 1000,
+          "height": 750
+        }
+      ],
+      "tags": [
+        "体験あり"
+      ],
+      "article": {
+        "headline": "和歌山県日高郡日高町志賀の山村にある、慶安３年（1650年）創建の浄土真宗本願寺派の寺院。地域に開かれた活動を続け、日曜学校や「大人の寺子屋」など多彩な行事を通じてお年寄りから子どもまでが境内に集う場を整えています。",
+        "lede": "日高郡日高町にある「妙願寺」です。正式名は功徳聚山妙願寺（こうとくじゅさんみょうがんじ）といい、浄土真宗本願寺派に属します。由良湾にほど近い柏峠を越えた山村、志賀谷の最奥部に位置する静かな境内を持つ寺院です。慶安３年（1650年）の創建から370年以上にわたり、地域住民の信仰の場として歩んできました。現在の住職は第16世・楠原晃紹（くすはら こうしょう）師で、龍谷大学文学部仏教学科を卒業後、1989年に法灯を継職しました。「あなたの居場所があるお寺」をテーマに掲げ、日曜学校や「大人の寺子屋」など多彩な活動を通じて、お年寄りから子どもまでが境内に集う場を整えています。葬儀や年回忌法要、仏壇じまい・墓じまいといった仏事の相談も受け付けています。",
+        "sections": [
+          {
+            "heading": "由緒・歴史",
+            "body": "妙願寺は慶安３年（1650年）2月、浄土真宗に深く帰依した六郷左衛門という人物が紀州日高郡志賀村に隠遁し、一宇を建立したことに始まります。初代住職了宗法師を迎え、惣道場として出発しました。その後、正徳５年（1716年）2月29日に阿弥陀如来木像が本山から下付され、功徳聚山妙願寺という寺号公称の許可を得ました。現在の本堂は文化３年（1806年）に第９代住職瑞洞法師のときに再建されており、昭和59年4月には大屋根の修復が行われました。第９代瑞洞法師は医学にも精通した人物でした。太平洋戦争で供出された梵鐘は、昭和30年4月に先代清徹師とご門徒らによって再鋳されました。境内の地蔵堂には、かつて上志賀17曲がりの山道に祀られていた地蔵さんを含む合計9体が安置されています。昔、上志賀から由良町阿戸に越す山道の17曲がりに魔物が出没して行路人を困らせたため、通行人を守るために祀ったのが起源であると伝わります。地元の皆さんにより生花が絶えることなく供えられており、往時を偲ぶ縁の場となっています。"
+          },
+          {
+            "heading": "内容（活動・行事）",
+            "body": "妙願寺では年間を通じて多彩な行事が行われています。恒例法要として、1月の修正会・元旦会・宗祖御正忌報恩講、2月の門徒物故者追悼法要、3月の春季彼岸会、4月の宗祖降誕会、8月の盂蘭盆会・地蔵盆、9月の秋季彼岸会、11月の在家報恩講、12月の除夜会があります。毎年8月末には上志賀区主催の地蔵盆も行われています。また、仏教を身近に学ぶ場として「大人の寺子屋」を開催しています。年間4回を予定しており、全員でお勤めをした後に仏教のテーマに沿った講義と座談会が行われます。2016年に始まったこの講座は興味のある方であれば参加できます。さらに大晦日には境内で夕方の鐘つき大会を開催しており、小さな子どもを持つ家族も参加しやすいよう、深夜の除夜の鐘とは別に夕暮れ時に行われています。仏教婦人会（60名）・仏教壮年会・日曜学校なども活動しています。"
+          },
+          {
+            "heading": "成り立ちと人",
+            "body": "現住職の楠原晃紹師は1967年佐賀県生まれで、和歌山県立新宮高校を経て龍谷大学文学部仏教学科を卒業しました。1989年に妙願寺第16世住職の法灯を継職。福祉の分野でも幅広く活動し、1991年から老人福祉施設での相談援助・介護支援業務に携わりました。2006年から2021年までは居宅介護支援事業所「妙願寺ケアサポートともしび」を運営し、仏教の福祉理念「ビハーラ」に基づく支援を住職自身がケアマネージャーとして担いました。2019年6月から2025年3月まで和歌山教区の過疎対応支援員も務め、過疎化が進む山村地域における寺院の役割と地域課題に向き合い続けてきました。日高保護司会会員（2010年5月〜）・日高町人権擁護委員（2007年1月〜）としても活動しています。"
+          },
+          {
+            "heading": "行き方と使い方",
+            "body": "公共交通機関を利用する場合はJRきのくに線・紀伊内原駅から車で7分（8km）です。車では湯浅御坊道路・川辺ICより約10分で到着します。葬儀・年回忌法要・各種法要のほか、仏壇じまい・墓じまい・地蔵じまいなどの相談は電話（0738-64-2402）で受け付けています。お地蔵さんの永代供養（安置）については、管理が難しくなったお地蔵さんを住職が現地へ出向いて法要を行った上で妙願寺境内に迎え、永代にわたって安置するサービスも行っています。対応地域は関西一円です。大人の寺子屋など各種行事の案内は公式サイトや公式LINEで発信されています。"
+          }
+        ],
+        "menus": [
+          {
+            "name": "葬儀・年回忌法要"
+          },
+          {
+            "name": "仏壇じまい・墓じまい・地蔵じまい"
+          },
+          {
+            "name": "お地蔵さん永代供養（安置）"
+          },
+          {
+            "name": "大人の寺子屋"
+          },
+          {
+            "name": "日曜学校"
+          },
+          {
+            "name": "宿泊体験（本堂での一泊体験）"
+          }
+        ],
+        "sources": [
+          {
+            "label": "公式サイト",
+            "url": "https://myoganji.webu.jp/"
+          },
+          {
+            "label": "公式サイト・沿革",
+            "url": "https://myoganji.webu.jp/about.html"
+          },
+          {
+            "label": "公式サイト・住職あいさつ",
+            "url": "https://myoganji.webu.jp/greetings.html"
+          },
+          {
+            "label": "公式サイト・活動紹介",
+            "url": "https://myoganji.webu.jp/outline/"
+          },
+          {
+            "label": "公式サイト・大人の寺子屋",
+            "url": "https://myoganji.webu.jp/outline/myoganji/7928/"
+          },
+          {
+            "label": "公式サイト・お地蔵さん永代供養",
+            "url": "https://myoganji.webu.jp/sankotsu/"
+          },
+          {
+            "label": "公式サイト・地図アクセス",
+            "url": "https://myoganji.webu.jp/map.html"
+          },
+          {
+            "label": "お寺ナビ",
+            "url": "https://oteranavi.com/2019/09/25/%E2%96%A0%E5%A6%99%E9%A1%98%E5%AF%BA-%E6%B5%84%E5%9C%9F%E7%9C%9F%E5%AE%97%EF%BC%88%E6%9C%AC%E9%A1%98%E5%AF%BA%E6%B4%BE%EF%BC%89/"
+          },
+          {
+            "label": "Google マップ",
+            "url": "https://maps.google.com/?cid=929588366559165600"
+          }
+        ],
+        "checkedAt": "2026-11-12"
+      }
+    },
+    {
+      "id": "li0221",
+      "vertical": "life",
+      "category": "shrine-temple",
+      "name": "顯国神社",
+      "pref": "wakayama",
+      "cityName": "湯浅町",
+      "address": "和歌山県有田郡湯浅町湯浅1914",
+      "lat": 34.0390841,
+      "lng": 135.1847213,
+      "phone": "0737-62-2405",
+      "url": "http://www.kenkoku.sakura.ne.jp/",
+      "website": "http://www.kenkoku.sakura.ne.jp/",
+      "mapUrl": "https://maps.google.com/?cid=7472978035543357216",
+      "image": "/_portal/vshops/tri-life-524/g01.jpg",
+      "images": [
+        "/_portal/vshops/tri-life-524/g01.jpg",
+        "/_portal/vshops/tri-life-524/g02.jpg",
+        "/_portal/vshops/tri-life-524/g03.jpg",
+        "/_portal/vshops/tri-life-524/g04.jpg",
+        "/_portal/vshops/tri-life-524/g05.jpg",
+        "/_portal/vshops/tri-life-524/g06.jpg",
+        "/_portal/vshops/tri-life-524/g07.jpg",
+        "/_portal/vshops/tri-life-524/g08.jpg",
+        "/_portal/vshops/tri-life-524/g09.jpg",
+        "/_portal/vshops/tri-life-524/g10.jpg"
+      ],
+      "photos": [
+        {
+          "path": "/_portal/vshops/tri-life-524/g01.jpg",
+          "what": "緑に囲まれた社殿の外観",
+          "kind": "exterior",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-life-524/g02.jpg",
+          "what": "えびす祭の授与所で福娘が縁起物を並べている",
+          "kind": "common",
+          "width": 1200,
+          "height": 675
+        },
+        {
+          "path": "/_portal/vshops/tri-life-524/g03.jpg",
+          "what": "顯國神社の鳥居と社号標の正面外観",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-life-524/g04.jpg",
+          "what": "提灯が並ぶ参道から拝殿への通路",
+          "kind": "exterior",
+          "width": 1023,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-life-524/g05.jpg",
+          "what": "白装束の人々が牛車を引く武者行列の様子",
+          "kind": "exterior",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-life-524/g06.jpg",
+          "what": "境内に置かれた馬の像",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-life-524/g07.jpg",
+          "what": "境内に建つ小社（摂末社）",
+          "kind": "exterior",
+          "width": 541,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-life-524/g08.jpg",
+          "what": "「御神璽」と書かれた扁額が並ぶ授与所内部",
+          "kind": "common",
+          "width": 1200,
+          "height": 675
+        },
+        {
+          "path": "/_portal/vshops/tri-life-524/g09.jpg",
+          "what": "拝殿の正面外観",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 800
+        },
+        {
+          "path": "/_portal/vshops/tri-life-524/g10.jpg",
+          "what": "境内の木々と石塀の風景",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 900
+        }
+      ],
+      "tags": [
+        "駐車場あり"
+      ],
+      "article": {
+        "headline": "和歌山県有田郡湯浅町に鎮座する「湯浅大宮」。醤油醸造発祥の地・湯浅の総鎮守として、地域の人々に広く信仰されてきた神社です。",
+        "lede": "有田郡湯浅町にある「顯國神社」です。「大宮さん」の通称を持ち、湯浅の総鎮守として醤油醸造業者をはじめとする町の人々が商売繁盛や日々の暮らしの安寧を祈願してきました。祭礼の三面獅子舞と本殿・祝詞殿・拝殿・手水鉢は、醤油醸造の発祥地として平成29年（2017年）4月28日に日本遺産に認定された「紀州湯浅」の構成文化財として文化庁から認定されています。初宮詣・七五三詣・安産祈願・厄祓・合格祈願・地鎮祭・結婚式・神葬祭など、人生の節目の祈祷を幅広く受け付けています。また、神棚やひな人形・五月人形・ぬいぐるみなどのお焚き上げ（人形供養）も行っています。",
+        "sections": [
+          {
+            "heading": "由緒・歴史",
+            "body": "延暦20年（801年）に坂上田村麻呂が紀伊国有田郡の地で神々を祀ったのが創建と伝わります。天養元年（1144年）10月、湯浅城主土豪・湯浅権守藤原宗重が現在地に顯國大明神を遷座させ、有田郡の総鎮守大社として崇敬されました。寛文8年（1668年）には紀州藩主・徳川頼宣が「顯國大明神」の社号を授け、藩儒の李梅渓に鳥居の扁額を書かせました。紀州徳川家の歴代藩主が崇敬した神社であることから「湯浅の大宮さん」と呼ばれ続けてきました。主祭神は大國主命・須佐男命・櫛名田姫命・建御名方命・沼川姫命の5柱で、配祀神として金山彦命・菅原道真・住吉神など多数の神々が祀られています。若宮社・若恵比須社・神明社・稲荷社の摂末社があります。"
+          },
+          {
+            "heading": "祭礼と文化財",
+            "body": "毎年10月18日以降の最初の日曜日に例大祭（秋祭り）が開催されます。祭りでは武者行列と三面獅子舞が奉納されます。三面獅子舞は、オニとワニが獅子を退治するという独特の形式で、和歌山県無形民俗文化財に指定されています。本殿・祝詞殿・拝殿は湯浅町指定文化財（建造物）です。拝殿は元文2年（1737年）の建築で、正面入母屋造・背面切妻造・本瓦葺という構造です。祝詞殿は明治21年（1888年）の建立です。7月18日には若宮祭が行われ、獅子舞の奉納と夜店が出ます。初午祭では初午の日に稲荷社で祭典が執り行われ、地元では餅投げも行われます。"
+          },
+          {
+            "heading": "御祈祷と人形供養",
+            "body": "初宮詣・七五三詣・安産祈願・交通安全・厄祓・地鎮祭・合格祈願・家内安全・職場安全・大漁祈願・海上安全・商売繁盛・学業成就・旅行安全・必勝祈願・病気平癒・結婚式・上棟祭・竣工祭・神葬祭・祖霊祭と幅広い御祈祷を受け付けています。人形供養（お焚き上げ）では、神棚・ひな人形・五月人形・結納品・縁起物・日本人形・ぬいぐるみなどを対象としています。祈祷の流れは、社務所で受付後に拝殿へ上がり、修祓・祝詞奏上・玉串奉奠の順に進み、最後に焼納場でお焚き上げを行います。令和6年（2024年）には、明治40年の合祀以来70年ぶりに「十日えびす（若恵比須祭）」を復活し、以降毎年1月9日・10日に斎行しています。"
+          },
+          {
+            "heading": "行き方と使い方",
+            "body": "JRきのくに線・湯浅駅から徒歩約10分の距離にあります。車の場合は湯浅御坊道路・湯浅ICから約5分です。駐車場があります（約4台）。御祈祷の受付は社務所で行い、各種祈祷票に記入して申し込みます。人形供養でお焚き上げの量が多い場合は、事前に神社へ問い合わせが必要です。公式サイト（http://www.kenkoku.sakura.ne.jp/）に各祭礼や祈祷の案内が掲載されています。"
+          }
+        ],
+        "menus": [
+          {
+            "name": "初宮詣"
+          },
+          {
+            "name": "七五三詣"
+          },
+          {
+            "name": "安産祈願"
+          },
+          {
+            "name": "厄祓"
+          },
+          {
+            "name": "合格祈願"
+          },
+          {
+            "name": "地鎮祭"
+          },
+          {
+            "name": "人形供養（お焚き上げ）"
+          },
+          {
+            "name": "若恵比須祭（十日えびす）"
+          }
+        ],
+        "sources": [
+          {
+            "label": "公式サイト",
+            "url": "http://www.kenkoku.sakura.ne.jp/"
+          },
+          {
+            "label": "神社巡遊録",
+            "url": "https://jun-yu-roku.com/kii-arida-yuasa-kenkoku/"
+          },
+          {
+            "label": "ぐるわか",
+            "url": "https://www.guruwaka.com/kenkoku-jinjya/"
+          },
+          {
+            "label": "湯浅町観光協会",
+            "url": "https://www.yuasa-kankokyokai.com/spot/2135/"
+          },
+          {
+            "label": "有田観光サイト 山海あおし 遊ぼよありだ",
+            "url": "https://asoboyo-arida.com/spot/%E9%A1%AF%E5%9C%8B%E7%A5%9E%E7%A4%BE/"
+          },
+          {
+            "label": "八百万の神",
+            "url": "https://yaokami.jp/1300331/"
+          },
+          {
+            "label": "Google マップ",
+            "url": "https://maps.google.com/?cid=7472978035543357216"
+          }
+        ],
+        "checkedAt": "2026-11-12"
+      }
+    },
+    {
+      "id": "li0222",
+      "vertical": "life",
+      "category": "flower-farm",
+      "name": "ラ・エレガントフラワー",
+      "pref": "nagano",
+      "cityName": "佐久穂町",
+      "address": "長野県南佐久郡佐久穂町高野町501ー1",
+      "lat": 36.1625841,
+      "lng": 138.4831071,
+      "hours": "月-金 10:00 - 16:00",
+      "holidays": "土曜・日曜",
+      "url": "http://leelegantflower.com/",
+      "website": "http://leelegantflower.com/",
+      "mapUrl": "https://maps.google.com/?cid=8571208746337984580",
+      "image": "/_portal/vshops/tri-life-526/g01.jpg",
+      "images": [
+        "/_portal/vshops/tri-life-526/g01.jpg",
+        "/_portal/vshops/tri-life-526/g02.jpg",
+        "/_portal/vshops/tri-life-526/g03.jpg",
+        "/_portal/vshops/tri-life-526/g04.jpg",
+        "/_portal/vshops/tri-life-526/g05.jpg",
+        "/_portal/vshops/tri-life-526/g06.jpg",
+        "/_portal/vshops/tri-life-526/s02.jpg",
+        "/_portal/vshops/tri-life-526/s03.jpg",
+        "/_portal/vshops/tri-life-526/s04.jpg",
+        "/_portal/vshops/tri-life-526/s06.jpg",
+        "/_portal/vshops/tri-life-526/s09.jpg",
+        "/_portal/vshops/tri-life-526/s10.jpg",
+        "/_portal/vshops/tri-life-526/s11.jpg",
+        "/_portal/vshops/tri-life-526/s12.jpg",
+        "/_portal/vshops/tri-life-526/s13.jpg",
+        "/_portal/vshops/tri-life-526/s14.jpg",
+        "/_portal/vshops/tri-life-526/s17.jpg",
+        "/_portal/vshops/tri-life-526/s18.jpg"
+      ],
+      "photos": [
+        {
+          "path": "/_portal/vshops/tri-life-526/g01.jpg",
+          "what": "「ラ・エレガントフラワー」と書かれた看板のある建物外観",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-life-526/g02.jpg",
+          "what": "店内の棚に並ぶカラフルな花雑貨",
+          "kind": "common",
+          "width": 1125,
+          "height": 829
+        },
+        {
+          "path": "/_portal/vshops/tri-life-526/g03.jpg",
+          "what": "お花をあしらったカップケーキ型のフラワーアレンジ作品が並ぶ",
+          "kind": "meal",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-life-526/g04.jpg",
+          "what": "赤・黄・紫など鮮やかな花材を使ったフラワーアレンジ作品",
+          "kind": "meal",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-life-526/g05.jpg",
+          "what": "白い花とグリーンを合わせたFlowerVaseのアレンジ作品",
+          "kind": "meal",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-life-526/g06.jpg",
+          "what": "JHAシーズンデザイン「Gift」と書かれた花雑貨の作品",
+          "kind": "meal",
+          "width": 1081,
+          "height": 969
+        },
+        {
+          "path": "/_portal/vshops/tri-life-526/s02.jpg",
+          "what": "花材を並べた横長のバナー画像",
+          "kind": "common",
+          "width": 1280,
+          "height": 310
+        },
+        {
+          "path": "/_portal/vshops/tri-life-526/s03.jpg",
+          "what": "ハーバリウム作品を並べた横長のバナー画像",
+          "kind": "common",
+          "width": 1280,
+          "height": 310
+        },
+        {
+          "path": "/_portal/vshops/tri-life-526/s04.jpg",
+          "what": "色とりどりの花材を使ったハーバリウム作品",
+          "kind": "meal",
+          "width": 1280,
+          "height": 310
+        },
+        {
+          "path": "/_portal/vshops/tri-life-526/s06.jpg",
+          "what": "lefcandleと書かれたお花入りキャンドルの作品3点",
+          "kind": "meal",
+          "width": 800,
+          "height": 500
+        },
+        {
+          "path": "/_portal/vshops/tri-life-526/s09.jpg",
+          "what": "透明なボトルに花材を入れたハーバリウムボトルの制作過程",
+          "kind": "meal",
+          "width": 800,
+          "height": 500
+        },
+        {
+          "path": "/_portal/vshops/tri-life-526/s10.jpg",
+          "what": "白い花とグリーンを合わせたFlowerVaseのアレンジ作品（Eternity）",
+          "kind": "meal",
+          "width": 1200,
+          "height": 750
+        },
+        {
+          "path": "/_portal/vshops/tri-life-526/s11.jpg",
+          "what": "JHAシーズンデザイン「Gift」の花雑貨作品",
+          "kind": "meal",
+          "width": 1200,
+          "height": 750
+        },
+        {
+          "path": "/_portal/vshops/tri-life-526/s12.jpg",
+          "what": "試験管状のボトルに入ったカラフルなハーバリウム5本",
+          "kind": "meal",
+          "width": 800,
+          "height": 500
+        },
+        {
+          "path": "/_portal/vshops/tri-life-526/s13.jpg",
+          "what": "白い花のピアスをつけた女性のアクセサリー着用イメージ",
+          "kind": "meal",
+          "width": 1200,
+          "height": 750
+        },
+        {
+          "path": "/_portal/vshops/tri-life-526/s14.jpg",
+          "what": "花柄のデザインが施されたハーバリウムボールペン",
+          "kind": "meal",
+          "width": 800,
+          "height": 500
+        },
+        {
+          "path": "/_portal/vshops/tri-life-526/s17.jpg",
+          "what": "細長いボトルに入ったハーバリウム作品2本",
+          "kind": "meal",
+          "width": 800,
+          "height": 600
+        },
+        {
+          "path": "/_portal/vshops/tri-life-526/s18.jpg",
+          "what": "お皿の上に置かれたお花入りキャンドル（lefcandle）",
+          "kind": "meal",
+          "width": 800,
+          "height": 600
+        }
+      ],
+      "tags": [
+        "体験あり",
+        "子ども向け",
+        "予約制"
+      ],
+      "article": {
+        "headline": "長野県佐久穂町にある、ハーバリウムとフラワーインテリア雑貨の専門店。体験レッスンから資格取得コースまで対応している。",
+        "lede": "南佐久郡佐久穂町にある「ラ・エレガントフラワー」は、ハーバリウムをはじめとするフラワーインテリア雑貨の販売と制作レッスンを手がける専門店です。店主の丸山亜壽果さんはFM佐久平でも紹介されるなど、地域で活動するハーバリウム作家です。ハーバリウムボトル制作、キャンドル制作、アクセサリー制作、ハーバリウムボールペン制作と、扱うアイテムの幅が広く、はじめて花雑貨に触れる方から資格取得を目指す方まで受け入れています。予約はオンラインのほか、電話・メール・店頭でも受け付けており、当日お持ち帰りが可能な体験レッスンも用意しています。オンラインレッスンにも対応しているため、遠方からの受講も可能です。",
+        "sections": [
+          {
+            "heading": "内容（商品・サービス・教え）",
+            "body": "ラ・エレガントフラワーでは、ハーバリウムボトル制作コース、お花で作るアクセサリーコース、ハーバリウムボールペン制作コース、そしてお花の入ったキャンドルを作る「lefcandle basic認定講座」の4種類を中心にレッスンを提供しています。ハーバリウムの体験レッスンは対象年齢5歳以上、その他の制作コースは中学生以上を対象としており、3名まで同時受講が可能です。1名での予約の場合は相席になることもあります。lefcandle basic認定講座は所要時間約3時間で、植物入りキャンドルの作り方の基礎から道具・芯の選び方・色付け・香り付けまでを学ぶ内容で、最短約15分で固めて当日持ち帰れます。受講後は認定講師として本講座の開講や販売、ワークショップ開催が可能となります。また、ステンドグラス風に仕上げるガラスアート「LinoGlass」の体験レッスンも提供しており、所要時間は約90分です。"
+          },
+          {
+            "heading": "成り立ちと人",
+            "body": "店主の丸山亜壽果さんは長野県出身で、ハーバリウム専門店を運営するかたわら、FM佐久平（76.5MHz）の番組にも出演するなど地域に根ざした活動を続けています。日本ハーバリウム協会（JHA）の認定講師資格を持ち、JHA認定のディプロマ資格取得コースを開講しています。また、お花の入ったキャンドルを作るlefcandleの代表講師を務めており、このプログラムの認定講師は全国各地に広がっています。丸山さん自身が「jewelrystones」という鉱石のような見た目のキャンドルデザインを考案するなど、講座の開発にも取り組んでいます。"
+          },
+          {
+            "heading": "利用の流れ",
+            "body": "体験レッスンは完全予約制で、オンライン予約サイトのほか、電話・メール・店頭でも申し込みを受け付けています。対面レッスンの場所は佐久市中込1-19-10の2Fにある店舗で、ハーバリウムボトル制作をはじめとする各体験コースに対応しています。オンラインレッスンはメールまたはLINEで申し込み可能で、ハーバリウムレッスンとハーバリウムボールレッスンがオンラインにも対応しています。希望日は7日前以上先の日程を記載するよう案内されています。各コース共に30分単位で延長が可能です。lefcandle basic認定講座はInstagramのメッセージまたは公式LINEから問い合わせを受け付けています。なお、他の協会のキャンドルコースに所属している場合は受講できません。"
+          },
+          {
+            "heading": "行き方と使い方",
+            "body": "JR小海線「羽黒下駅」から徒歩約10分の場所に位置しています。対面レッスンの会場は佐久市中込1-19-10の2Fで、公式サイトの予約ページから各コースを選んで申し込みができます。じゃらんの遊び体験ページからもネット予約が可能です。問い合わせは公式サイトのお問い合わせフォームのほか、InstagramのメッセージやLINEでも受け付けています。"
+          }
+        ],
+        "menus": [
+          {
+            "name": "ハーバリウムボトル制作コース（体験レッスン）"
+          },
+          {
+            "name": "lefcandle basic認定講座"
+          },
+          {
+            "name": "LinoGlass体験レッスン"
+          },
+          {
+            "name": "お花で作るアクセサリーコース（アジサイコース）"
+          },
+          {
+            "name": "ハーバリウムボールペン制作コース"
+          },
+          {
+            "name": "JHAディプロマ資格取得コース"
+          },
+          {
+            "name": "FlowerVaseディプロマ取得コース"
+          },
+          {
+            "name": "JHA Season Designフリーレッスン"
+          }
+        ],
+        "sources": [
+          {
+            "label": "公式サイト",
+            "url": "https://leelegantflower.com/"
+          },
+          {
+            "label": "公式サイト・レッスン一覧",
+            "url": "https://leelegantflower.com/data/"
+          },
+          {
+            "label": "公式サイト・オンラインレッスン",
+            "url": "https://leelegantflower.com/data/onlinelesson"
+          },
+          {
+            "label": "じゃらん遊び体験",
+            "url": "https://www.jalan.net/kankou/spt_guide000000207784/activity/l00003AAC5/"
+          },
+          {
+            "label": "YouTube（FM佐久平紹介動画）",
+            "url": "https://www.youtube.com/watch?v=-dPe5AbtBs4"
+          },
+          {
+            "label": "Google マップ",
+            "url": "https://maps.google.com/?cid=8571208746337984580"
+          }
+        ],
+        "checkedAt": "2026-11-12"
+      }
     }
   ]
 }

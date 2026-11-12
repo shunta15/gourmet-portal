@@ -1,0 +1,40 @@
+{
+  "tab": "トリニティアポ",
+  "tabEn": "tri-life",
+  "row": 526,
+  "sheet": {
+    "name": "ハーバリウム専門店 ラ・エレガントフラワー",
+    "address": "",
+    "url": "https://www.google.com/maps/search/?api=1&query=%E3%83%8F%E3%83%BC%E3%83%90%E3%83%AA%E3%82%A6%E3%83%A0%E5%B0%82%E9%96%80%E5%BA%97%20%E3%83%A9%E3%83%BB%E3%82%A8%E3%83%AC%E3%82%AC%E3%83%B3%E3%83%88%E3%83%95%E3%83%A9%E3%83%AF%E3%83%BC%20090-9358-0727%20%E3%80%92384-0613%20%E9%95%B7%E9%87%8E%E7%9C%8C%E5%8D%97%E4%BD%90%E4%B9%85%E9%83%A1%E4%BD%90%E4%B9%85%E7%A9%82%E7%94%BA%E9%AB%98%E9%87%8E%E7%94%BA501%EF%BD%B01",
+    "type": "その他",
+    "d1": "",
+    "d2": ""
+  },
+  "urlKind": "mapsApi",
+  "route": "第1段(verify-gbp.mjs)で確認済み",
+  "verdict": "一致",
+  "verdictReason": "手がかり: 店名＋住所(番地まで)。マップに電話の表示なし／店名: contains(シート「ハーバリウム専門店 ラ・エレガントフラワー」/ マップ「ラ・エレガントフラワー」)／住所(シート): exact・町名・番地とも一致",
+  "place": {
+    "name": "ラ・エレガントフラワー",
+    "address": "長野県南佐久郡佐久穂町高野町501ｰ1",
+    "category": "雑貨店",
+    "lat": 36.1625841,
+    "lng": 138.4831071,
+    "gbpUrl": "https://maps.google.com/?cid=8571208746337984580",
+    "phone": null,
+    "website": "http://leelegantflower.com/",
+    "hours": {
+      "月": "10:00–16:00",
+      "火": "10:00–16:00",
+      "水": "10:00–16:00",
+      "木": "10:00–16:00",
+      "金": "10:00–16:00",
+      "土": "定休日",
+      "日": "定休日"
+    },
+    "reserveLinks": [],
+    "statusSignals": [],
+    "closedSignal": false
+  },
+  "fetchedAt": "2026-11-12T04:28:32.317Z"
+}

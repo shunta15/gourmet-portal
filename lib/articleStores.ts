@@ -23434,6 +23434,252 @@ export const ARTICLE_STORES: Restaurant[] = [
       "ランチ"
     ],
     "featureId": "LEVREandBONレーブルアンドボン"
+  },
+  {
+    "id": "r933",
+    "name": "コーヒー研究所・Ｍ",
+    "cuisine": "コーヒーショップ・喫茶店",
+    "area": "高知県・高知市",
+    "region": "kochi",
+    "shape": "square",
+    "image": "/restaurants/teleapo-コーヒー研究所・M/hero.jpg",
+    "heroImages": [
+      "/restaurants/teleapo-コーヒー研究所・M/hero.jpg",
+      "/restaurants/teleapo-コーヒー研究所・M/point1.jpg",
+      "/restaurants/teleapo-コーヒー研究所・M/point2.jpg",
+      "/restaurants/teleapo-コーヒー研究所・M/point3.jpg",
+      "/restaurants/teleapo-コーヒー研究所・M/point4.jpg"
+    ],
+    "gallery": [
+      "/restaurants/teleapo-コーヒー研究所・M/hero.jpg",
+      "/restaurants/teleapo-コーヒー研究所・M/point1.jpg",
+      "/restaurants/teleapo-コーヒー研究所・M/point2.jpg",
+      "/restaurants/teleapo-コーヒー研究所・M/point3.jpg",
+      "/restaurants/teleapo-コーヒー研究所・M/point4.jpg"
+    ],
+    "desc": "高知県高知市のコーヒーショップ・喫茶店。",
+    "address": "高知県高知市大津甲372-2",
+    "hours": "月・水〜日 09:00–16:00",
+    "closed": "火曜日",
+    "seats": "20席（カウンター3席）",
+    "nearest": "—",
+    "phone": "088-866-4550",
+    "instagram": "https://www.instagram.com/coffee_m17",
+    "source": {
+      "label": "Google ビジネスプロフィール",
+      "url": "https://maps.google.com/?cid=14783913017069175681"
+    },
+    "body": [
+      "コーヒー研究所・Ｍは、高知県高知市にあるお店です。業態は「コーヒーショップ・喫茶店」、所在地は高知県高知市大津甲372-2です。マチノワ編集部の特集記事では、「好みを聞いてから淹れる、その人だけの一杯」・「高知県産コーヒー豆「はちきんコーヒー」の栽培と収穫」などを取り上げています。",
+      "営業時間は月・水〜日 09:00–16:00、定休日は火曜日です（Googleマップの営業時間による）。席は20席（カウンター3席）。営業時間や価格は変わることがあるため、訪問前に公式サイトやSNS、お電話でご確認ください。"
+    ],
+    "highlights": [
+      "好みを聞いてから淹れる、その人だけの一杯",
+      "高知県産コーヒー豆「はちきんコーヒー」の栽培と収穫",
+      "約8種類のモーニング。クルミ入りホットサンドが多くの客に選ばれる",
+      "一面ガラス張りの店内と20席、路面電車の見える窓際"
+    ],
+    "tags": [
+      "コーヒーショップ・喫茶店",
+      "高知市",
+      "ランチ"
+    ],
+    "featureId": "コーヒー研究所・M"
+  },
+  {
+    "id": "r934",
+    "name": "魚彦",
+    "cuisine": "会席・懐石料理店",
+    "area": "茨城県・つくばみらい市",
+    "region": "ibaraki",
+    "shape": "square",
+    "image": "/restaurants/teleapo-魚彦/hero.jpg",
+    "heroImages": [
+      "/restaurants/teleapo-魚彦/hero.jpg",
+      "/restaurants/teleapo-魚彦/point1.jpg",
+      "/restaurants/teleapo-魚彦/point2.jpg",
+      "/restaurants/teleapo-魚彦/point3.jpg"
+    ],
+    "gallery": [
+      "/restaurants/teleapo-魚彦/hero.jpg",
+      "/restaurants/teleapo-魚彦/point1.jpg",
+      "/restaurants/teleapo-魚彦/point2.jpg",
+      "/restaurants/teleapo-魚彦/point3.jpg"
+    ],
+    "desc": "茨城県つくばみらい市の会席・懐石料理店。",
+    "address": "茨城県つくばみらい市細代758",
+    "hours": "火〜日 11:30–13:30, 17:00–21:00",
+    "closed": "月曜日",
+    "seats": "48席（全室個室）",
+    "nearest": "—",
+    "phone": "0297-52-1677",
+    "source": {
+      "label": "Google ビジネスプロフィール",
+      "url": "https://maps.google.com/?cid=13467206403329356827"
+    },
+    "body": [
+      "魚彦は、茨城県つくばみらい市にあるお店です。業態は「会席・懐石料理店」、所在地は茨城県つくばみらい市細代758です。マチノワ編集部の特集記事では、「築地・銀座で11年修行した店主のとらふぐ料理」・「会席コースと多彩な鍋物・常陸牛料理」などを取り上げています。",
+      "営業時間は火〜日 11:30–13:30, 17:00–21:00、定休日は月曜日です（Googleマップの営業時間による）。席は48席（全室個室）。営業時間や価格は変わることがあるため、訪問前に公式サイトやSNS、お電話でご確認ください。"
+    ],
+    "highlights": [
+      "築地・銀座で11年修行した店主のとらふぐ料理",
+      "会席コースと多彩な鍋物・常陸牛料理",
+      "1階テーブル個室と2階座敷、最大40名の全室個室"
+    ],
+    "tags": [
+      "会席・懐石料理店",
+      "つくばみらい市",
+      "個室",
+      "ランチ"
+    ],
+    "featureId": "魚彦"
+  },
+  {
+    "id": "r935",
+    "name": "ぽっぽ",
+    "cuisine": "豆腐店",
+    "area": "新潟県・長岡市",
+    "region": "niigata",
+    "shape": "square",
+    "image": "/restaurants/teleapo-ぽっぽ/hero.jpg",
+    "heroImages": [
+      "/restaurants/teleapo-ぽっぽ/hero.jpg",
+      "/restaurants/teleapo-ぽっぽ/point1.jpg",
+      "/restaurants/teleapo-ぽっぽ/point2.jpg",
+      "/restaurants/teleapo-ぽっぽ/point3.jpg",
+      "/restaurants/teleapo-ぽっぽ/point4.jpg"
+    ],
+    "gallery": [
+      "/restaurants/teleapo-ぽっぽ/hero.jpg",
+      "/restaurants/teleapo-ぽっぽ/point1.jpg",
+      "/restaurants/teleapo-ぽっぽ/point2.jpg",
+      "/restaurants/teleapo-ぽっぽ/point3.jpg",
+      "/restaurants/teleapo-ぽっぽ/point4.jpg"
+    ],
+    "desc": "新潟県長岡市の豆腐店。",
+    "address": "新潟県長岡市栃尾大野町4丁目6-2400",
+    "hours": "毎日 09:00–18:00",
+    "closed": "なし（Googleマップの営業時間による）",
+    "seats": "7席",
+    "nearest": "—",
+    "phone": "0258-52-1172",
+    "source": {
+      "label": "Google ビジネスプロフィール",
+      "url": "https://maps.google.com/?cid=13650301947414752311"
+    },
+    "body": [
+      "ぽっぽは、新潟県長岡市にあるお店です。業態は「豆腐店」、所在地は新潟県長岡市栃尾大野町4丁目6-2400です。マチノワ編集部の特集記事では、「伝統の二度揚げ、一枚一枚手作りの栃尾油揚げ」・「守門岳の伏流水と厳選大豆へのこだわり」などを取り上げています。",
+      "営業時間は毎日 09:00–18:00で、定休日はありません（Googleマップの営業時間による）。席は7席。営業時間や価格は変わることがあるため、訪問前に公式サイトやSNS、お電話でご確認ください。"
+    ],
+    "highlights": [
+      "伝統の二度揚げ、一枚一枚手作りの栃尾油揚げ",
+      "守門岳の伏流水と厳選大豆へのこだわり",
+      "はさみ揚げとあぶらあげドック、店で食べるセットメニュー",
+      "通販と道の駅での購入"
+    ],
+    "tags": [
+      "豆腐店",
+      "長岡市",
+      "ランチ"
+    ],
+    "featureId": "ぽっぽ"
+  },
+  {
+    "id": "r936",
+    "name": "オトギノハコ OTOGINOHAKO",
+    "cuisine": "イベント企画サービス",
+    "area": "富山県・氷見市",
+    "region": "toyama",
+    "shape": "square",
+    "image": "/restaurants/teleapo-オトギノハコOTOGINOHAKO/hero.jpg",
+    "heroImages": [
+      "/restaurants/teleapo-オトギノハコOTOGINOHAKO/hero.jpg",
+      "/restaurants/teleapo-オトギノハコOTOGINOHAKO/point1.jpg",
+      "/restaurants/teleapo-オトギノハコOTOGINOHAKO/point2.jpg",
+      "/restaurants/teleapo-オトギノハコOTOGINOHAKO/point3.jpg",
+      "/restaurants/teleapo-オトギノハコOTOGINOHAKO/point4.jpg"
+    ],
+    "gallery": [
+      "/restaurants/teleapo-オトギノハコOTOGINOHAKO/hero.jpg",
+      "/restaurants/teleapo-オトギノハコOTOGINOHAKO/point1.jpg",
+      "/restaurants/teleapo-オトギノハコOTOGINOHAKO/point2.jpg",
+      "/restaurants/teleapo-オトギノハコOTOGINOHAKO/point3.jpg",
+      "/restaurants/teleapo-オトギノハコOTOGINOHAKO/point4.jpg"
+    ],
+    "desc": "富山県氷見市のイベント企画サービス。",
+    "address": "富山県氷見市加納445-3",
+    "hours": "火〜日 11:00–16:00",
+    "closed": "月曜日",
+    "seats": "—（訪問前に公式確認）",
+    "nearest": "—",
+    "phone": "070-8598-5677",
+    "source": {
+      "label": "Google ビジネスプロフィール",
+      "url": "https://maps.google.com/?cid=1372605131160437162"
+    },
+    "body": [
+      "オトギノハコ OTOGINOHAKOは、富山県氷見市にあるお店です。業態は「イベント企画サービス」、所在地は富山県氷見市加納445-3です。マチノワ編集部の特集記事では、「閉店後に少量ずつ焙煎する「Cafe moca」のコーヒー」・「ふわもちワッフルと県産コシヒカリの米粉マフィン」などを取り上げています。",
+      "営業時間は火〜日 11:00–16:00、定休日は月曜日です（Googleマップの営業時間による）。営業時間や価格は変わることがあるため、訪問前に公式サイトやSNS、お電話でご確認ください。"
+    ],
+    "highlights": [
+      "閉店後に少量ずつ焙煎する「Cafe moca」のコーヒー",
+      "ふわもちワッフルと県産コシヒカリの米粉マフィン",
+      "アロマショップ・委託販売コーナー・レンタルスペース",
+      "マルシェ主催から生まれたカフェ——東海夕奈さんの開業"
+    ],
+    "tags": [
+      "イベント企画サービス",
+      "氷見市",
+      "ランチ"
+    ],
+    "featureId": "オトギノハコOTOGINOHAKO"
+  },
+  {
+    "id": "r937",
+    "name": "PEOPLES COFFEE",
+    "cuisine": "コーヒーショップ・喫茶店",
+    "area": "沖縄県・中頭郡読谷村",
+    "region": "okinawa",
+    "shape": "square",
+    "image": "/restaurants/teleapo-PEOPLESCOFFEE/hero.jpg",
+    "heroImages": [
+      "/restaurants/teleapo-PEOPLESCOFFEE/hero.jpg",
+      "/restaurants/teleapo-PEOPLESCOFFEE/point1.jpg",
+      "/restaurants/teleapo-PEOPLESCOFFEE/point2.jpg",
+      "/restaurants/teleapo-PEOPLESCOFFEE/point3.jpg"
+    ],
+    "gallery": [
+      "/restaurants/teleapo-PEOPLESCOFFEE/hero.jpg",
+      "/restaurants/teleapo-PEOPLESCOFFEE/point1.jpg",
+      "/restaurants/teleapo-PEOPLESCOFFEE/point2.jpg",
+      "/restaurants/teleapo-PEOPLESCOFFEE/point3.jpg"
+    ],
+    "desc": "PEOPLES COFFEEは、2024年8月8日に読谷村の地でコーヒーとファラフェルを軸に開業したカフェだ。",
+    "address": "沖縄県中頭郡読谷村波平2136",
+    "hours": "月〜木・土 07:00–16:00 / 日 07:30–16:00",
+    "closed": "金曜日",
+    "seats": "—（訪問前に公式確認）",
+    "nearest": "—",
+    "instagram": "https://www.instagram.com/peoples_coffee_yomitan",
+    "source": {
+      "label": "Google ビジネスプロフィール",
+      "url": "https://maps.google.com/?cid=2735438257638790692"
+    },
+    "body": [
+      "PEOPLES COFFEEは、沖縄県中頭郡読谷村にあるお店です。業態は「コーヒーショップ・喫茶店」、所在地は沖縄県中頭郡読谷村波平2136です。マチノワ編集部の特集記事では、「オーストラリア経験を背景にしたエスプレッソ中心のコーヒー」・「朝のスコーンプレートとアボカドトースト」などを取り上げています。",
+      "営業時間は月〜木・土 07:00–16:00 / 日 07:30–16:00、定休日は金曜日です（Googleマップの営業時間による）。営業時間や価格は変わることがあるため、訪問前に公式サイトやSNS、お電話でご確認ください。"
+    ],
+    "highlights": [
+      "オーストラリア経験を背景にしたエスプレッソ中心のコーヒー",
+      "朝のスコーンプレートとアボカドトースト",
+      "15時以降に始まる中東料理：ファラフェルとバルク"
+    ],
+    "tags": [
+      "コーヒーショップ・喫茶店",
+      "読谷村",
+      "ランチ"
+    ],
+    "featureId": "PEOPLESCOFFEE"
   }
 ];
 
@@ -23927,7 +24173,12 @@ export const ARTICLE_STORE_FEATURE_IDS: Record<string, string> = {
   "r929": "お食事処ななら",
   "r930": "洋食工房モリスケ",
   "r931": "築輪",
-  "r932": "LEVREandBONレーブルアンドボン"
+  "r932": "LEVREandBONレーブルアンドボン",
+  "r933": "コーヒー研究所・M",
+  "r934": "魚彦",
+  "r935": "ぽっぽ",
+  "r936": "オトギノハコOTOGINOHAKO",
+  "r937": "PEOPLESCOFFEE"
 };
 
 /** 特集記事ID → 店舗ID */
@@ -24420,5 +24671,10 @@ export const ARTICLE_STORE_ID_BY_FEATURE: Record<string, string> = {
   "お食事処ななら": "r929",
   "洋食工房モリスケ": "r930",
   "築輪": "r931",
-  "LEVREandBONレーブルアンドボン": "r932"
+  "LEVREandBONレーブルアンドボン": "r932",
+  "コーヒー研究所・M": "r933",
+  "魚彦": "r934",
+  "ぽっぽ": "r935",
+  "オトギノハコOTOGINOHAKO": "r936",
+  "PEOPLESCOFFEE": "r937"
 };

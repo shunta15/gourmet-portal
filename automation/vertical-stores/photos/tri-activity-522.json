@@ -1,0 +1,36 @@
+{
+  "key": "tri-activity-522",
+  "images": [
+    {
+      "path": "/_portal/vshops/tri-activity-522/g01.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9SVI2nCxfAaXgoDh1lWnbkiM4tSZdJ9JZ3s-tboB_v2yGKVsgzFhh0uvwuexrs-j0LA5XTScy2mKmOoDhdAvAkeQO15UzvfwFBHDkCbg6IO7NAnayNW5jDiLceeuMPQBQJG3S5IKw=s1200",
+      "pageUrl": "https://maps.google.com/?cid=11819549613517983496",
+      "what": "陸揚げされた白い遊漁船の船体を横から見た外観",
+      "kind": "exterior",
+      "width": 1200,
+      "height": 900,
+      "source": "Google マップ"
+    },
+    {
+      "path": "/_portal/vshops/tri-activity-522/s01.jpg",
+      "imageUrl": "https://yoshi-maru.net/assets/img/theme/hero_dt.jpg",
+      "pageUrl": "https://yoshi-maru.net/",
+      "what": "陸揚げされた白い遊漁船の船体と船着き場の建物",
+      "kind": "exterior",
+      "width": 1280,
+      "height": 576,
+      "source": "公式サイト"
+    },
+    {
+      "path": "/_portal/vshops/tri-activity-522/s09.jpg",
+      "imageUrl": "https://yoshi-maru.net/assets/img/theme/about_ship.jpg",
+      "pageUrl": "https://yoshi-maru.net/about.html",
+      "what": "陸揚げされた遊漁船の前方デッキと船体全体を人物と比較した外観",
+      "kind": "exterior",
+      "width": 800,
+      "height": 500,
+      "source": "公式サイト"
+    }
+  ],
+  "note": "automation/v2/write.mjs が 2026-11-12T04:38:44.106Z に取得。店の実写だけ(AI 画像・汎用画像・地図・ロゴ・顔が大きい画像は除外)。"
+}

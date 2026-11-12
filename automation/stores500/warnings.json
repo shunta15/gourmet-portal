@@ -3823,5 +3823,44 @@
     "warnings": [
       "cuisine は GBPカテゴリ"
     ]
+  },
+  "r933": {
+    "articleId": "コーヒー研究所・M",
+    "name": "コーヒー研究所・Ｍ",
+    "warnings": [
+      "desc は lede から事実の文を選べず、事実から作った定型文",
+      "cuisine は GBPカテゴリ"
+    ]
+  },
+  "r934": {
+    "articleId": "魚彦",
+    "name": "魚彦",
+    "warnings": [
+      "desc は lede から事実の文を選べず、事実から作った定型文",
+      "cuisine は GBPカテゴリ"
+    ]
+  },
+  "r935": {
+    "articleId": "ぽっぽ",
+    "name": "ぽっぽ",
+    "warnings": [
+      "desc は lede から事実の文を選べず、事実から作った定型文",
+      "cuisine は GBPカテゴリ"
+    ]
+  },
+  "r936": {
+    "articleId": "オトギノハコOTOGINOHAKO",
+    "name": "オトギノハコ OTOGINOHAKO",
+    "warnings": [
+      "desc は lede から事実の文を選べず、事実から作った定型文",
+      "cuisine は GBPカテゴリ"
+    ]
+  },
+  "r937": {
+    "articleId": "PEOPLESCOFFEE",
+    "name": "PEOPLES COFFEE",
+    "warnings": [
+      "cuisine は GBPカテゴリ"
+    ]
   }
 }

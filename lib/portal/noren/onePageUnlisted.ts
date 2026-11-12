@@ -200,6 +200,11 @@ export const ONE_PAGE_UNLISTED_SHOP_OF_FEATURE: Readonly<Record<string, string>>
   "洋食工房モリスケ": "r930", // 洋食工房モリスケ
   "築輪": "r931", // 築輪
   "LEVREandBONレーブルアンドボン": "r932", // LEVRE and BONレーブルアンドボン
+  "コーヒー研究所・M": "r933", // コーヒー研究所・Ｍ
+  "魚彦": "r934", // 魚彦
+  "ぽっぽ": "r935", // ぽっぽ
+  "オトギノハコOTOGINOHAKO": "r936", // オトギノハコ OTOGINOHAKO
+  "PEOPLESCOFFEE": "r937", // PEOPLES COFFEE
 };
 
 const NFC = (s: string) => s.normalize("NFC");

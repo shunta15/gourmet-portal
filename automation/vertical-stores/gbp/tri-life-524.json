@@ -1,0 +1,32 @@
+{
+  "tab": "トリニティアポ",
+  "tabEn": "tri-life",
+  "row": 524,
+  "sheet": {
+    "name": "湯浅大宮 顯國神社",
+    "address": "",
+    "url": "https://www.google.com/maps/search/?api=1&query=%E6%B9%AF%E6%B5%85%E5%A4%A7%E5%AE%AE%20%E9%A1%AF%E5%9C%8B%E7%A5%9E%E7%A4%BE%20073-762-2405%20%E3%80%92643-0004%20%E5%92%8C%E6%AD%8C%E5%B1%B1%E7%9C%8C%E6%9C%89%E7%94%B0%E9%83%A1%E6%B9%AF%E6%B5%85%E7%94%BA%E6%B9%AF%E6%B5%85%EF%BC%91%EF%BC%99%EF%BC%91%EF%BC%94",
+    "type": "神社",
+    "d1": "",
+    "d2": ""
+  },
+  "urlKind": "mapsApi",
+  "route": "第1段(verify-gbp.mjs)で確認済み",
+  "verdict": "一致",
+  "verdictReason": "手がかり: 電話＋住所(番地まで)。電話が一致／店名: different(シート「湯浅大宮 顯國神社」/ マップ「顯国神社」)／住所(シート): exact・町名・番地とも一致",
+  "place": {
+    "name": "顯国神社",
+    "address": "和歌山県有田郡湯浅町湯浅１９１４",
+    "category": "神社",
+    "lat": 34.0390841,
+    "lng": 135.1847213,
+    "gbpUrl": "https://maps.google.com/?cid=7472978035543357216",
+    "phone": "0737-62-2405",
+    "website": "http://www.kenkoku.sakura.ne.jp/",
+    "hours": null,
+    "reserveLinks": [],
+    "statusSignals": [],
+    "closedSignal": false
+  },
+  "fetchedAt": "2026-11-12T04:27:21.373Z"
+}

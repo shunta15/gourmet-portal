@@ -1,0 +1,40 @@
+{
+  "tab": "トリニティアポ",
+  "tabEn": "tri-life",
+  "row": 523,
+  "sheet": {
+    "name": "妙願寺（浄土真宗本願寺派）",
+    "address": "",
+    "url": "https://www.google.com/maps/search/?api=1&query=%E5%A6%99%E9%A1%98%E5%AF%BA%EF%BC%88%E6%B5%84%E5%9C%9F%E7%9C%9F%E5%AE%97%E6%9C%AC%E9%A1%98%E5%AF%BA%E6%B4%BE%EF%BC%89%20073-864-2402%20%E3%80%92649-1221%20%E5%92%8C%E6%AD%8C%E5%B1%B1%E7%9C%8C%E6%97%A5%E9%AB%98%E9%83%A1%E6%97%A5%E9%AB%98%E7%94%BA%E5%BF%97%E8%B3%80%EF%BC%92%EF%BC%99%EF%BC%98%EF%BC%98",
+    "type": "寺",
+    "d1": "",
+    "d2": ""
+  },
+  "urlKind": "mapsApi",
+  "route": "第1段(verify-gbp.mjs)で確認済み",
+  "verdict": "一致",
+  "verdictReason": "手がかり: 店名＋電話＋住所(番地まで)。電話が一致／店名: exact(シート「妙願寺（浄土真宗本願寺派）」/ マップ「妙願寺（浄土真宗本願寺派）」)／住所(シート): exact・町名・番地とも一致",
+  "place": {
+    "name": "妙願寺（浄土真宗本願寺派）",
+    "address": "和歌山県日高郡日高町志賀２９８８",
+    "category": "仏教寺院",
+    "lat": 33.9339277,
+    "lng": 135.1034867,
+    "gbpUrl": "https://maps.google.com/?cid=929588366559165600",
+    "phone": "0738-64-2402",
+    "website": "https://myoganji.webu.jp/",
+    "hours": {
+      "月": "07:00–17:00",
+      "火": "07:00–17:00",
+      "水": "07:00–17:00",
+      "木": "07:00–17:00",
+      "金": "07:00–17:00",
+      "土": "07:00–17:00",
+      "日": "07:00–17:00"
+    },
+    "reserveLinks": [],
+    "statusSignals": [],
+    "closedSignal": false
+  },
+  "fetchedAt": "2026-11-12T04:26:31.918Z"
+}

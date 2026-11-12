@@ -1,0 +1,40 @@
+{
+  "tab": "トリニティアポ",
+  "tabEn": "tri-activity",
+  "row": 522,
+  "sheet": {
+    "name": "芳丸",
+    "address": "",
+    "url": "https://www.google.com/maps/search/?api=1&query=%E8%8A%B3%E4%B8%B8%20080-6314-8390%20%E3%80%92734-0057%20%E5%BA%83%E5%B3%B6%E7%9C%8C%E5%BA%83%E5%B3%B6%E5%B8%82%E5%8D%97%E5%8C%BA%E4%BB%81%E4%BF%9D%E6%B2%96%E7%94%BA%EF%BC%92",
+    "type": "その他",
+    "d1": "",
+    "d2": ""
+  },
+  "urlKind": "mapsApi",
+  "route": "第1段(verify-gbp.mjs)で確認済み",
+  "verdict": "一致",
+  "verdictReason": "手がかり: 電話＋住所(番地まで)。電話が一致／店名: different(シート「芳丸」/ マップ「遊漁船 芳丸」)／住所(シート): exact・町名・番地とも一致",
+  "place": {
+    "name": "遊漁船 芳丸",
+    "address": "広島県広島市南区仁保沖町２",
+    "category": "釣船チャーター",
+    "lat": 34.3622508,
+    "lng": 132.4805411,
+    "gbpUrl": "https://maps.google.com/?cid=11819549613517983496",
+    "phone": "080-6314-8390",
+    "website": "https://yoshi-maru.net/",
+    "hours": {
+      "月": "07:00–20:00",
+      "火": "07:00–20:00",
+      "水": "07:00–20:00",
+      "木": "07:00–20:00",
+      "金": "07:00–20:00",
+      "土": "07:00–20:00",
+      "日": "07:00–20:00"
+    },
+    "reserveLinks": [],
+    "statusSignals": [],
+    "closedSignal": false
+  },
+  "fetchedAt": "2026-11-12T04:25:55.964Z"
+}

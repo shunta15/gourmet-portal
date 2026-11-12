@@ -1,0 +1,40 @@
+{
+  "tab": "トリニティアポ",
+  "tabEn": "tri-activity",
+  "row": 521,
+  "sheet": {
+    "name": "K-one Leather Craft",
+    "address": "",
+    "url": "https://www.google.com/maps/search/?api=1&query=K-one%20Leather%20Craft%20090-1095-2069%20%E3%80%92454-0946%20%E6%84%9B%E7%9F%A5%E7%9C%8C%E5%90%8D%E5%8F%A4%E5%B1%8B%E5%B8%82%E4%B8%AD%E5%B7%9D%E5%8C%BA%E4%B8%80%E8%89%B2%E6%96%B0%E7%94%BA%EF%BC%92%E4%B8%81%E7%9B%AE%EF%BC%95%EF%BC%90%EF%BC%91%E2%88%92%EF%BC%94",
+    "type": "体験",
+    "d1": "",
+    "d2": ""
+  },
+  "urlKind": "mapsApi",
+  "route": "第1段(verify-gbp.mjs)で確認済み",
+  "verdict": "一致",
+  "verdictReason": "手がかり: 店名＋電話＋住所(番地まで)。電話が一致／店名: exact(シート「K-one Leather Craft」/ マップ「K-one Leather Craft」)／住所(シート): exact・町名・番地とも一致",
+  "place": {
+    "name": "K-one Leather Craft",
+    "address": "愛知県名古屋市中川区一色新町２丁目５０１−４",
+    "category": "手芸教室",
+    "lat": 35.1306914,
+    "lng": 136.8270139,
+    "gbpUrl": "https://maps.google.com/?cid=13086115634714242447",
+    "phone": "090-1095-2069",
+    "website": "https://www.k-one.nagoya/",
+    "hours": {
+      "月": "09:00–21:30",
+      "火": "09:00–21:30",
+      "水": "09:00–21:30",
+      "木": "09:00–21:30",
+      "金": "09:00–21:30",
+      "土": "19:00–21:30",
+      "日": "09:00–21:30"
+    },
+    "reserveLinks": [],
+    "statusSignals": [],
+    "closedSignal": false
+  },
+  "fetchedAt": "2026-11-12T04:25:18.226Z"
+}

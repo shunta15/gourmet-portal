@@ -1,0 +1,66 @@
+{
+  "key": "tri-activity-521",
+  "images": [
+    {
+      "path": "/_portal/vshops/tri-activity-521/g01.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9QAnxoz1JNmh_Q1dKY3uY2pptTV7BJ3LU1W3yTlFiX4RdzkegYWguIeXZbCV7bbU6Pe8DPXxApV3-9_I07iMHZiHIH5suXZtbM99QzSkZeVrAsqwTlKxvwWAsXzHXojzmVfjGSwP2lsq9W9=s1200",
+      "pageUrl": "https://maps.google.com/?cid=13086115634714242447",
+      "what": "カービング模様が施された革製品の制作作業",
+      "kind": "meal",
+      "width": 900,
+      "height": 1200,
+      "source": "Google マップ"
+    },
+    {
+      "path": "/_portal/vshops/tri-activity-521/s01.jpg",
+      "imageUrl": "https://k-one.nagoya/main_5P.png",
+      "pageUrl": "https://k-one.nagoya/",
+      "what": "カービング模様の入ったコースターと六角形の革製品",
+      "kind": "meal",
+      "width": 960,
+      "height": 448,
+      "source": "公式サイト"
+    },
+    {
+      "path": "/_portal/vshops/tri-activity-521/s02.jpg",
+      "imageUrl": "https://k-one.nagoya/main_5p_09.png",
+      "pageUrl": "https://k-one.nagoya/",
+      "what": "緑・赤・黒のカラーバリエーションの財布と小物",
+      "kind": "meal",
+      "width": 960,
+      "height": 448,
+      "source": "公式サイト"
+    },
+    {
+      "path": "/_portal/vshops/tri-activity-521/s03.jpg",
+      "imageUrl": "https://k-one.nagoya/main_5p_08.png",
+      "pageUrl": "https://k-one.nagoya/",
+      "what": "カービング模様入りのブリーフケース型バッグと黒いバッグ",
+      "kind": "meal",
+      "width": 960,
+      "height": 448,
+      "source": "公式サイト"
+    },
+    {
+      "path": "/_portal/vshops/tri-activity-521/s04.jpg",
+      "imageUrl": "https://k-one.nagoya/main_5p_06.png",
+      "pageUrl": "https://k-one.nagoya/",
+      "what": "カービング模様入りのショルダーバッグとベルト",
+      "kind": "meal",
+      "width": 960,
+      "height": 448,
+      "source": "公式サイト"
+    },
+    {
+      "path": "/_portal/vshops/tri-activity-521/s05.jpg",
+      "imageUrl": "https://k-one.nagoya/main_5p_04.png",
+      "pageUrl": "https://k-one.nagoya/",
+      "what": "カービング模様入りのトートバッグ3点",
+      "kind": "meal",
+      "width": 960,
+      "height": 448,
+      "source": "公式サイト"
+    }
+  ],
+  "note": "automation/v2/write.mjs が 2026-11-12T04:38:43.077Z に取得。店の実写だけ(AI 画像・汎用画像・地図・ロゴ・顔が大きい画像は除外)。"
+}
