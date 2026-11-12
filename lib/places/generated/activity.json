@@ -13211,6 +13211,308 @@
         ],
         "checkedAt": "2026-11-12"
       }
+    },
+    {
+      "id": "ac0076",
+      "vertical": "activity",
+      "category": "sightseeing",
+      "name": "太陽ハーモニーファーム",
+      "pref": "fukuoka",
+      "cityName": "豊前市",
+      "address": "福岡県豊前市四郎丸2024-1",
+      "lat": 33.5977269,
+      "lng": 131.0821863,
+      "hours": "毎日 09:00 - 16:00",
+      "phone": "0979-83-4622",
+      "url": "http://www.buzenfruitland.com/",
+      "website": "http://www.buzenfruitland.com/",
+      "mapUrl": "https://maps.google.com/?cid=10832325984903699295",
+      "image": "/_portal/vshops/tri-activity-533/g01.jpg",
+      "images": [
+        "/_portal/vshops/tri-activity-533/g01.jpg",
+        "/_portal/vshops/tri-activity-533/g03.jpg",
+        "/_portal/vshops/tri-activity-533/g04.jpg",
+        "/_portal/vshops/tri-activity-533/g06.jpg",
+        "/_portal/vshops/tri-activity-533/g07.jpg",
+        "/_portal/vshops/tri-activity-533/g08.jpg",
+        "/_portal/vshops/tri-activity-533/g09.jpg",
+        "/_portal/vshops/tri-activity-533/g10.jpg",
+        "/_portal/vshops/tri-activity-533/s01.jpg",
+        "/_portal/vshops/tri-activity-533/s03.jpg",
+        "/_portal/vshops/tri-activity-533/s04.jpg",
+        "/_portal/vshops/tri-activity-533/s05.jpg",
+        "/_portal/vshops/tri-activity-533/s06.jpg",
+        "/_portal/vshops/tri-activity-533/s07.jpg",
+        "/_portal/vshops/tri-activity-533/s08.jpg",
+        "/_portal/vshops/tri-activity-533/s09.jpg",
+        "/_portal/vshops/tri-activity-533/s10.jpg",
+        "/_portal/vshops/tri-activity-533/s11.jpg",
+        "/_portal/vshops/tri-activity-533/s12.jpg",
+        "/_portal/vshops/tri-activity-533/s14.jpg",
+        "/_portal/vshops/tri-activity-533/s15.jpg",
+        "/_portal/vshops/tri-activity-533/s16.jpg",
+        "/_portal/vshops/tri-activity-533/s17.jpg",
+        "/_portal/vshops/tri-activity-533/s18.jpg"
+      ],
+      "photos": [
+        {
+          "path": "/_portal/vshops/tri-activity-533/g01.jpg",
+          "what": "親子がいちごを摘む収穫体験の様子",
+          "kind": "common",
+          "width": 1200,
+          "height": 800
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-533/g03.jpg",
+          "what": "赤く実ったいちごのアップ",
+          "kind": "meal",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-533/g04.jpg",
+          "what": "いちごハウス内に並ぶ苗の列",
+          "kind": "common",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-533/g06.jpg",
+          "what": "屋根付きの屋外テーブルスペース",
+          "kind": "common",
+          "width": 1200,
+          "height": 800
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-533/g07.jpg",
+          "what": "農場施設の屋根付き建物の外観",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 800
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-533/g08.jpg",
+          "what": "農地に広がる作物の畝",
+          "kind": "view",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-533/g09.jpg",
+          "what": "屋根付きBBQスペースの内部",
+          "kind": "common",
+          "width": 1200,
+          "height": 800
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-533/g10.jpg",
+          "what": "紫色に熟したぶどうの房",
+          "kind": "meal",
+          "width": 1200,
+          "height": 800
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-533/s01.jpg",
+          "what": "施設案内看板の前に立つ子ども連れの家族",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 675
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-533/s03.jpg",
+          "what": "緑に広がる農地と農場の全景",
+          "kind": "view",
+          "width": 1150,
+          "height": 690
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-533/s04.jpg",
+          "what": "BBQ用の肉・野菜の盛り合わせ食材",
+          "kind": "meal",
+          "width": 1150,
+          "height": 690
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-533/s05.jpg",
+          "what": "グリルの上で焼かれる食材",
+          "kind": "meal",
+          "width": 1150,
+          "height": 690
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-533/s06.jpg",
+          "what": "赤く熟したいちごを手で摘む様子",
+          "kind": "common",
+          "width": 1150,
+          "height": 690
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-533/s07.jpg",
+          "what": "農場施設の建物外観",
+          "kind": "exterior",
+          "width": 1150,
+          "height": 690
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-533/s08.jpg",
+          "what": "農場施設の別角度からの外観",
+          "kind": "exterior",
+          "width": 1150,
+          "height": 690
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-533/s09.jpg",
+          "what": "大ぶりないちごを手に持つクローズアップ",
+          "kind": "meal",
+          "width": 1150,
+          "height": 690
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-533/s10.jpg",
+          "what": "いちご狩りエリアで収穫を楽しむ様子",
+          "kind": "common",
+          "width": 1150,
+          "height": 690
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-533/s11.jpg",
+          "what": "貸切ホールの室内空間",
+          "kind": "room",
+          "width": 1150,
+          "height": 690
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-533/s12.jpg",
+          "what": "屋根付きBBQスペースの全景",
+          "kind": "common",
+          "width": 1150,
+          "height": 690
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-533/s14.jpg",
+          "what": "皿に盛られた肉料理のアップ",
+          "kind": "meal",
+          "width": 706,
+          "height": 428
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-533/s15.jpg",
+          "what": "いちごの果実のアップ",
+          "kind": "meal",
+          "width": 706,
+          "height": 428
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-533/s16.jpg",
+          "what": "いちごの果実のアップ",
+          "kind": "meal",
+          "width": 706,
+          "height": 428
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-533/s17.jpg",
+          "what": "高台から望む広大な景色",
+          "kind": "view",
+          "width": 706,
+          "height": 428
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-533/s18.jpg",
+          "what": "いちごの葉の間に実るいちご",
+          "kind": "meal",
+          "width": 706,
+          "height": 428
+        }
+      ],
+      "tags": [
+        "子連れ",
+        "初心者歓迎",
+        "手ぶらでOK",
+        "雨の日"
+      ],
+      "article": {
+        "headline": "福岡県豊前市四郎丸にある体験型観光農園。周防灘を一望できる高台で、いちご狩り・みかん狩り・いも掘りなど四季折々の収穫体験とBBQ・ドッグランを楽しめます。",
+        "lede": "豊前市にある「太陽ハーモニーファーム（豊前フルーツランド）」です。周防灘を一望できる高台に位置する体験型観光施設で、運営は有限会社太陽牧場が行っています。いちご狩り・ぶどう狩り・みかん狩り・いも掘り・栗拾いなど、ほぼ一年を通じて季節ごとの収穫体験が楽しめます。みかん狩りでは10の品種を食べ比べられ、いちご狩りは30分の食べ放題制です。BBQエリアは屋根付きスペースに各テーブルへのグリル設置があり、コンロ・炭・着火剤まですべて用意されているため手ぶらで利用できます。広大な自然の中に愛犬と入れるドッグランも備えており、家族連れから犬連れの来園者まで幅広く受け入れています。",
+        "sections": [
+          {
+            "heading": "体験の内容と流れ",
+            "body": "収穫体験は季節ごとに内容が変わります。いちご狩りは2月上旬から4月下旬にかけて行われ、30分の食べ放題制です。ぶどう狩りは9月上旬から10月上旬、栗拾いは9月中旬から10月上旬、みかん狩りは10月中旬から11月中旬、さつまいも掘りは9月上旬から11月中旬を目安に受け付けています。みかん狩りでは樹上完熟の10品種を食べ比べることができます。いも掘りは自分の手で大地から掘り出す体験で、収穫した芋をお持ち帰りすることもできます。各体験は入園後に収穫エリアマップを参照しながら、園内各エリアへ向かう形で進めます。BBQは屋根付きスペースに炭・コンロ・着火剤・カトラリーセットがすべて用意されており、雨天時も利用できます。"
+          },
+          {
+            "heading": "対象",
+            "body": "収穫体験は入園料が3歳以上に設定されており、小さな子どもを連れた家族も参加できます。BBQエリアには授乳室と清潔なトイレのほか、ブランコやジャングルジムなどの屋外遊具も設置されています。愛犬と一緒に来園できるドッグランも備えており、広大な自然の中で犬と過ごせます。ドッグランは安全な環境で他の犬との交流も楽しめる空間です。団体利用にも対応しています。太陽ハーモニーホールでは完全予約制・貸し切りのプライベート空間で、地元の「うどん豊前屋 官べえ」の料理を楽しめる宴会プランも提供しています。"
+          },
+          {
+            "heading": "季節と準備",
+            "body": "体験内容はシーズンによって異なるため、来園前に公式サイトで受付中のアクティビティを確認することをお勧めします。収穫体験ごとの受付状況はWEB予約フォームから確認・申し込みができます。電話予約は0979-83-4622で9:00〜16:00の間に受け付けています。BBQプランはじゃらんからのWEB予約にも対応しています。収穫体験は収穫物の数量がなくなり次第終了となる場合があるため、特にみかん狩りなど人気体験は早めの予約が確実です。"
+          },
+          {
+            "heading": "行き方と使い方",
+            "body": "車でのアクセスは、東九州自動車道の椎田南IC（ハーフインター）から国道10号線経由で約6km・約20分、大分方面からは豊前ICから国道10号線経由で約15分です。JRを利用の場合は、JR宇島駅からタクシーで約10〜15分かかります。駐車場は80台収容です。予約はWEB予約フォームまたは電話（0979-83-4622）で受け付けています。LINEでの問い合わせにも対応しています。"
+          }
+        ],
+        "menus": [
+          {
+            "name": "いちご狩り体験（30分食べ放題）"
+          },
+          {
+            "name": "ぶどう狩り体験"
+          },
+          {
+            "name": "みかん狩り体験（10品種食べ比べ）"
+          },
+          {
+            "name": "いも掘り体験"
+          },
+          {
+            "name": "栗拾い体験"
+          },
+          {
+            "name": "ハーモニーBBQプラン"
+          },
+          {
+            "name": "ハーモニードッグラン"
+          },
+          {
+            "name": "太陽ハーモニーホール（貸切宴会プラン）"
+          }
+        ],
+        "sources": [
+          {
+            "label": "公式サイト",
+            "url": "https://www.taiyoharmonyfarm.com/"
+          },
+          {
+            "label": "公式サイト(アクティビティ一覧)",
+            "url": "https://www.taiyoharmonyfarm.com/activity/"
+          },
+          {
+            "label": "公式サイト(BBQプラン)",
+            "url": "https://www.taiyoharmonyfarm.com/bbq/"
+          },
+          {
+            "label": "るるぶ&more.",
+            "url": "https://rurubu.jp/andmore/spot/80038456"
+          },
+          {
+            "label": "いこーよ",
+            "url": "https://iko-yo.net/facilities/5250"
+          },
+          {
+            "label": "クロスロードふくおか",
+            "url": "https://www.crossroadfukuoka.jp/experience/13128"
+          },
+          {
+            "label": "公式サイト(観光農園ぶぜんフルーツランド)",
+            "url": "https://www.taiyoharmonyfarm.com/fruitsland/"
+          },
+          {
+            "label": "Google マップ",
+            "url": "https://maps.google.com/?cid=10832325984903699295"
+          }
+        ],
+        "checkedAt": "2026-11-12"
+      }
     }
   ]
 }

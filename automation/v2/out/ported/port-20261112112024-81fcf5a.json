@@ -1,0 +1,118 @@
+{
+  "commit": "81fcf5a77c1c04a0a20f240a4b7a95d1c98ff2fb",
+  "source": "/Users/shunta/claude/gp-k-auto2",
+  "count": 10,
+  "added": [
+    {
+      "row": 427,
+      "name": "アメリカンダイナー ラ・ブーム",
+      "key": "lk-gourmet-42701",
+      "vertical": "グルメ",
+      "id": "r943",
+      "articleId": "アメリカンダイナーラ・ブーム",
+      "shopUrl": "https://machinowa.tokyo/restaurant/r943",
+      "articleUrl": "https://machinowa.tokyo/feature/アメリカンダイナーラ・ブーム",
+      "sheetUrl": "https://machinowa.tokyo/feature/アメリカンダイナーラ・ブーム"
+    },
+    {
+      "row": 532,
+      "name": "焼き鳥りょうちゃん",
+      "key": "tri-gourmet-532",
+      "vertical": "グルメ",
+      "id": "r944",
+      "articleId": "焼き鳥りょうちゃん甲府",
+      "shopUrl": "https://machinowa.tokyo/restaurant/r944",
+      "articleUrl": "https://machinowa.tokyo/feature/焼き鳥りょうちゃん甲府",
+      "sheetUrl": "https://machinowa.tokyo/feature/焼き鳥りょうちゃん甲府"
+    },
+    {
+      "row": 533,
+      "name": "太陽ハーモニーファーム",
+      "key": "tri-activity-533",
+      "vertical": "アクティビティ",
+      "id": "ac0076",
+      "articleId": "ac0076",
+      "shopUrl": "https://machinowa.tokyo/activity/shop/ac0076",
+      "articleUrl": "https://machinowa.tokyo/activity/article/ac0076",
+      "sheetUrl": "https://machinowa.tokyo/activity/article/ac0076"
+    },
+    {
+      "row": 535,
+      "name": "良圓寺",
+      "key": "tri-life-535",
+      "vertical": "くらし",
+      "id": "li0227",
+      "articleId": "li0227",
+      "shopUrl": "https://machinowa.tokyo/life/shop/li0227",
+      "articleUrl": "https://machinowa.tokyo/life/article/li0227",
+      "sheetUrl": "https://machinowa.tokyo/life/article/li0227"
+    },
+    {
+      "row": 536,
+      "name": "北斗宮",
+      "key": "tri-life-536",
+      "vertical": "くらし",
+      "id": "li0228",
+      "articleId": "li0228",
+      "shopUrl": "https://machinowa.tokyo/life/shop/li0228",
+      "articleUrl": "https://machinowa.tokyo/life/article/li0228",
+      "sheetUrl": "https://machinowa.tokyo/life/article/li0228"
+    },
+    {
+      "row": 537,
+      "name": "妙本寺",
+      "key": "tri-life-537",
+      "vertical": "くらし",
+      "id": "li0229",
+      "articleId": "li0229",
+      "shopUrl": "https://machinowa.tokyo/life/shop/li0229",
+      "articleUrl": "https://machinowa.tokyo/life/article/li0229",
+      "sheetUrl": "https://machinowa.tokyo/life/article/li0229"
+    },
+    {
+      "row": 538,
+      "name": "Ｓｕｉｔｅｂｌｉｎｋ",
+      "key": "tri-beauty-538",
+      "vertical": "ビューティー",
+      "id": "be0115",
+      "articleId": null,
+      "shopUrl": "https://machinowa.tokyo/beauty/shop/be0115",
+      "articleUrl": null,
+      "sheetUrl": "https://machinowa.tokyo/beauty/shop/be0115"
+    },
+    {
+      "row": 539,
+      "name": "おじぎ茶屋",
+      "key": "tri-gourmet-539",
+      "vertical": "グルメ",
+      "id": "r945",
+      "articleId": "おじぎ茶屋",
+      "shopUrl": "https://machinowa.tokyo/restaurant/r945",
+      "articleUrl": "https://machinowa.tokyo/feature/おじぎ茶屋",
+      "sheetUrl": "https://machinowa.tokyo/feature/おじぎ茶屋"
+    },
+    {
+      "row": 540,
+      "name": "ネイルサロンNAIL221B",
+      "key": "tri-beauty-540",
+      "vertical": "ビューティー",
+      "id": "be0116",
+      "articleId": null,
+      "shopUrl": "https://machinowa.tokyo/beauty/shop/be0116",
+      "articleUrl": null,
+      "sheetUrl": "https://machinowa.tokyo/beauty/shop/be0116"
+    },
+    {
+      "row": 541,
+      "name": "小田山神社",
+      "key": "tri-life-541",
+      "vertical": "くらし",
+      "id": "li0230",
+      "articleId": "li0230",
+      "shopUrl": "https://machinowa.tokyo/life/shop/li0230",
+      "articleUrl": "https://machinowa.tokyo/life/article/li0230",
+      "sheetUrl": "https://machinowa.tokyo/life/article/li0230"
+    }
+  ],
+  "skipped": []
+}

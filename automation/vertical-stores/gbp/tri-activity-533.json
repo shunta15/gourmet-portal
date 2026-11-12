@@ -1,0 +1,40 @@
+{
+  "tab": "トリニティアポ",
+  "tabEn": "tri-activity",
+  "row": 533,
+  "sheet": {
+    "name": "太陽ハーモニーファーム",
+    "address": "",
+    "url": "https://www.google.com/maps/search/?api=1&query=%E5%A4%AA%E9%99%BD%E3%83%8F%E3%83%BC%E3%83%A2%E3%83%8B%E3%83%BC%E3%83%95%E3%82%A1%E3%83%BC%E3%83%A0%20097-983-4622%20%E7%A6%8F%E5%B2%A1%E7%9C%8C%E8%B1%8A%E5%89%8D%E5%B8%82%E5%B7%9D%E5%86%853739-3",
+    "type": "その他",
+    "d1": "",
+    "d2": ""
+  },
+  "urlKind": "mapsApi",
+  "route": "第1段(verify-gbp.mjs)で確認済み",
+  "verdict": "一致",
+  "verdictReason": "手がかり: 店名＋電話。電話が一致／店名: exact(シート「太陽ハーモニーファーム」/ マップ「太陽ハーモニーファーム」)／住所(シート): none・町名までがちがう（シート:福岡県豊前市川内 / マップ:福岡県豊前市四郎丸）",
+  "place": {
+    "name": "太陽ハーモニーファーム",
+    "address": "福岡県豊前市四郎丸２０２４−１",
+    "category": "農場",
+    "lat": 33.5977269,
+    "lng": 131.0821863,
+    "gbpUrl": "https://maps.google.com/?cid=10832325984903699295",
+    "phone": "0979-83-4622",
+    "website": "http://www.buzenfruitland.com/",
+    "hours": {
+      "月": "09:00–16:00",
+      "火": "09:00–16:00",
+      "水": "09:00–16:00",
+      "木": "09:00–16:00",
+      "金": "09:00–16:00",
+      "土": "09:00–16:00",
+      "日": "09:00–16:00"
+    },
+    "reserveLinks": [],
+    "statusSignals": [],
+    "closedSignal": false
+  },
+  "fetchedAt": "2026-11-12T11:06:33.515Z"
+}

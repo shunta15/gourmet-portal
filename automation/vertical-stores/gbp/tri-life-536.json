@@ -1,0 +1,40 @@
+{
+  "tab": "トリニティアポ",
+  "tabEn": "tri-life",
+  "row": 536,
+  "sheet": {
+    "name": "北斗宮",
+    "address": "",
+    "url": "https://www.google.com/maps/search/?api=1&query=%E5%8C%97%E6%96%97%E5%AE%AE%20094-857-0701%20%E3%80%92820-0302%20%E7%A6%8F%E5%B2%A1%E7%9C%8C%E5%98%89%E9%BA%BB%E5%B8%82%E5%A4%A7%E9%9A%88%E7%94%BA%EF%BC%99%EF%BC%98%EF%BC%98",
+    "type": "神社",
+    "d1": "",
+    "d2": ""
+  },
+  "urlKind": "mapsApi",
+  "route": "第1段(verify-gbp.mjs)で確認済み",
+  "verdict": "一致",
+  "verdictReason": "手がかり: 店名＋電話＋住所(番地まで)。電話が一致／店名: exact(シート「北斗宮」/ マップ「北斗宮」)／住所(シート): exact・町名・番地とも一致",
+  "place": {
+    "name": "北斗宮",
+    "address": "福岡県嘉麻市大隈町９８８",
+    "category": "神社",
+    "lat": 33.5484613,
+    "lng": 130.7458343,
+    "gbpUrl": "https://maps.google.com/?cid=16333827647249559012",
+    "phone": "0948-57-0701",
+    "website": null,
+    "hours": {
+      "月": "09:00–17:00",
+      "火": "09:00–17:00",
+      "水": "09:00–17:00",
+      "木": "09:00–17:00",
+      "金": "09:00–17:00",
+      "土": "09:00–17:00",
+      "日": "09:00–17:00"
+    },
+    "reserveLinks": [],
+    "statusSignals": [],
+    "closedSignal": false
+  },
+  "fetchedAt": "2026-11-12T11:08:01.615Z"
+}

@@ -23925,6 +23925,143 @@ export const ARTICLE_STORES: Restaurant[] = [
       "ランチ"
     ],
     "featureId": "炭火焼肉釜山稲沢"
+  },
+  {
+    "id": "r943",
+    "name": "アメリカンダイナー ラ・ブーム",
+    "cuisine": "ハンバーガー店",
+    "area": "東京都・羽村市",
+    "region": "tokyo",
+    "shape": "square",
+    "image": "/restaurants/teleapo-アメリカンダイナーラ・ブーム/hero.jpg",
+    "heroImages": [
+      "/restaurants/teleapo-アメリカンダイナーラ・ブーム/hero.jpg",
+      "/restaurants/teleapo-アメリカンダイナーラ・ブーム/point1.jpg",
+      "/restaurants/teleapo-アメリカンダイナーラ・ブーム/point2.jpg",
+      "/restaurants/teleapo-アメリカンダイナーラ・ブーム/point3.jpg"
+    ],
+    "gallery": [
+      "/restaurants/teleapo-アメリカンダイナーラ・ブーム/hero.jpg",
+      "/restaurants/teleapo-アメリカンダイナーラ・ブーム/point1.jpg",
+      "/restaurants/teleapo-アメリカンダイナーラ・ブーム/point2.jpg",
+      "/restaurants/teleapo-アメリカンダイナーラ・ブーム/point3.jpg"
+    ],
+    "desc": "アメリカンダイナー ラ・ブームは、2022年6月にオープンしたアメリカンダイナーである。",
+    "address": "東京都羽村市五ノ神4丁目15-11 シティプラザはむら 102号",
+    "hours": "火〜金 11:00–15:00, 17:00–22:00 / 土・日 11:00–22:00",
+    "closed": "月曜日",
+    "seats": "—（訪問前に公式確認）",
+    "nearest": "—",
+    "phone": "042-533-4548",
+    "source": {
+      "label": "Google ビジネスプロフィール",
+      "url": "https://maps.google.com/?cid=17767862678530907041"
+    },
+    "body": [
+      "アメリカンダイナー ラ・ブームは、東京都羽村市にあるお店です。業態は「ハンバーガー店」、所在地は東京都羽村市五ノ神4丁目15-11 シティプラザはむら 102号です。マチノワ編集部の特集記事では、「脂分量を指定した100%ビーフの自家製パティ」・「アメリカ産プライム肩ロースのステーキ丼と自家製パスタ」などを取り上げています。",
+      "営業時間は火〜金 11:00–15:00, 17:00–22:00 / 土・日 11:00–22:00、定休日は月曜日です（Googleマップの営業時間による）。営業時間や価格は変わることがあるため、訪問前に公式サイトやSNS、お電話でご確認ください。"
+    ],
+    "highlights": [
+      "脂分量を指定した100%ビーフの自家製パティ",
+      "アメリカ産プライム肩ロースのステーキ丼と自家製パスタ",
+      "リキテンスタインのリトグラフとプレスリーの装飾が並ぶ店内"
+    ],
+    "tags": [
+      "ハンバーガー店",
+      "羽村市",
+      "ランチ"
+    ],
+    "featureId": "アメリカンダイナーラ・ブーム"
+  },
+  {
+    "id": "r944",
+    "name": "焼き鳥りょうちゃん甲府",
+    "cuisine": "焼き鳥店",
+    "area": "山梨県・甲府市",
+    "region": "yamanashi",
+    "shape": "square",
+    "image": "/restaurants/teleapo-焼き鳥りょうちゃん甲府/hero.jpg",
+    "heroImages": [
+      "/restaurants/teleapo-焼き鳥りょうちゃん甲府/hero.jpg"
+    ],
+    "gallery": [
+      "/restaurants/teleapo-焼き鳥りょうちゃん甲府/hero.jpg"
+    ],
+    "desc": "焼き鳥りょうちゃん甲府は、2026年6月3日に店舗をオープンした焼き鳥店で、もともとキッチンカーで山梨県内を巡回していた移動販売から始まった店である。",
+    "address": "山梨県甲府市中央1丁目12-13",
+    "hours": "火〜木 18:00–23:00 / 金・土 17:00–23:00",
+    "closed": "月曜・日曜",
+    "seats": "—（訪問前に公式確認）",
+    "nearest": "—",
+    "phone": "070-5509-8883",
+    "source": {
+      "label": "Google ビジネスプロフィール",
+      "url": "https://maps.google.com/?cid=2894182877130245901"
+    },
+    "body": [
+      "焼き鳥りょうちゃん甲府は、山梨県甲府市にあるお店です。業態は「焼き鳥店」、所在地は山梨県甲府市中央1丁目12-13です。マチノワ編集部の特集記事では、「国産ひな鶏とコーチンを中心に据えた看板の焼き鳥」・「多彩な部位と豚串が並ぶメニューの組み立て」などを取り上げています。",
+      "営業時間は火〜木 18:00–23:00 / 金・土 17:00–23:00、定休日は月曜・日曜です（Googleマップの営業時間による）。営業時間や価格は変わることがあるため、訪問前に公式サイトやSNS、お電話でご確認ください。"
+    ],
+    "highlights": [
+      "国産ひな鶏とコーチンを中心に据えた看板の焼き鳥",
+      "多彩な部位と豚串が並ぶメニューの組み立て",
+      "キッチンカーから店舗へ、カウンター主体の小さな空間"
+    ],
+    "tags": [
+      "焼き鳥店",
+      "甲府市"
+    ],
+    "featureId": "焼き鳥りょうちゃん甲府"
+  },
+  {
+    "id": "r945",
+    "name": "おじぎ茶屋",
+    "cuisine": "レストラン",
+    "area": "東京都・葛飾区",
+    "region": "tokyo",
+    "shape": "square",
+    "image": "/restaurants/teleapo-おじぎ茶屋/hero.jpg",
+    "heroImages": [
+      "/restaurants/teleapo-おじぎ茶屋/hero.jpg",
+      "/restaurants/teleapo-おじぎ茶屋/point1.jpg",
+      "/restaurants/teleapo-おじぎ茶屋/point2.jpg",
+      "/restaurants/teleapo-おじぎ茶屋/point3.jpg",
+      "/restaurants/teleapo-おじぎ茶屋/point4.jpg"
+    ],
+    "gallery": [
+      "/restaurants/teleapo-おじぎ茶屋/hero.jpg",
+      "/restaurants/teleapo-おじぎ茶屋/point1.jpg",
+      "/restaurants/teleapo-おじぎ茶屋/point2.jpg",
+      "/restaurants/teleapo-おじぎ茶屋/point3.jpg",
+      "/restaurants/teleapo-おじぎ茶屋/point4.jpg"
+    ],
+    "desc": "東京都葛飾区のレストラン。",
+    "address": "東京都葛飾区柴又7丁目1-4",
+    "hours": "月・火・木 10:30–17:00",
+    "closed": "水曜・金曜・土曜・日曜",
+    "seats": "—（訪問前に公式確認）",
+    "nearest": "—",
+    "phone": "03-6806-9227",
+    "source": {
+      "label": "Google ビジネスプロフィール",
+      "url": "https://maps.google.com/?cid=11003962618120875220"
+    },
+    "body": [
+      "おじぎ茶屋は、東京都葛飾区にあるお店です。業態は「レストラン」、所在地は東京都葛飾区柴又7丁目1-4です。マチノワ編集部の特集記事では、「食べ歩きを支える串・揚げ物の顔ぶれ」・「冬季限定の「もつ煮」と定食の組み立て」などを取り上げています。",
+      "営業時間は月・火・木 10:30–17:00、定休日は水曜・金曜・土曜・日曜です（Googleマップの営業時間による）。営業時間や価格は変わることがあるため、訪問前に公式サイトやSNS、お電話でご確認ください。"
+    ],
+    "highlights": [
+      "食べ歩きを支える串・揚げ物の顔ぶれ",
+      "冬季限定の「もつ煮」と定食の組み立て",
+      "おじぎハイボールと7色のクリームソーダ",
+      "店内16席とテラス20席、落語イベントも開く"
+    ],
+    "tags": [
+      "レストラン",
+      "葛飾区",
+      "ランチ"
+    ],
+    "featureId": "おじぎ茶屋"
   }
 ];
 
@@ -24428,7 +24565,10 @@ export const ARTICLE_STORE_FEATURE_IDS: Record<string, string> = {
   "r939": "いわぬま蓑寿司",
   "r940": "中華料理龍芳",
   "r941": "とんかつ美沢",
-  "r942": "炭火焼肉釜山稲沢"
+  "r942": "炭火焼肉釜山稲沢",
+  "r943": "アメリカンダイナーラ・ブーム",
+  "r944": "焼き鳥りょうちゃん甲府",
+  "r945": "おじぎ茶屋"
 };
 
 /** 特集記事ID → 店舗ID */
@@ -24931,5 +25071,8 @@ export const ARTICLE_STORE_ID_BY_FEATURE: Record<string, string> = {
   "いわぬま蓑寿司": "r939",
   "中華料理龍芳": "r940",
   "とんかつ美沢": "r941",
-  "炭火焼肉釜山稲沢": "r942"
+  "炭火焼肉釜山稲沢": "r942",
+  "アメリカンダイナーラ・ブーム": "r943",
+  "焼き鳥りょうちゃん甲府": "r944",
+  "おじぎ茶屋": "r945"
 };

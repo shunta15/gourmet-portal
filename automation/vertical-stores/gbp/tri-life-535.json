@@ -1,0 +1,32 @@
+{
+  "tab": "トリニティアポ",
+  "tabEn": "tri-life",
+  "row": 535,
+  "sheet": {
+    "name": "良圓寺",
+    "address": "",
+    "url": "https://www.google.com/maps/search/?api=1&query=%E8%89%AF%E5%9C%93%E5%AF%BA%20055-662-1239%20%E3%80%92409-2532%20%E5%B1%B1%E6%A2%A8%E7%9C%8C%E5%8D%97%E5%B7%A8%E6%91%A9%E9%83%A1%E8%BA%AB%E5%BB%B6%E7%94%BA%E5%A4%A7%E9%87%8E%EF%BC%98%EF%BC%93%EF%BC%99",
+    "type": "寺",
+    "d1": "",
+    "d2": ""
+  },
+  "urlKind": "mapsApi",
+  "route": "第1段(verify-gbp.mjs)で確認済み",
+  "verdict": "一致",
+  "verdictReason": "手がかり: 店名＋電話＋住所(番地まで)。電話が一致／店名: exact(シート「良圓寺」/ マップ「良圓寺」)／住所(シート): exact・町名・番地とも一致",
+  "place": {
+    "name": "良圓寺",
+    "address": "山梨県南巨摩郡身延町大野８３９",
+    "category": "仏教寺院",
+    "lat": 35.3617802,
+    "lng": 138.4461417,
+    "gbpUrl": "https://maps.google.com/?cid=13850335699289859854",
+    "phone": "0556-62-1239",
+    "website": null,
+    "hours": null,
+    "reserveLinks": [],
+    "statusSignals": [],
+    "closedSignal": false
+  },
+  "fetchedAt": "2026-11-12T11:07:22.384Z"
+}

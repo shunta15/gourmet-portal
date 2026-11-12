@@ -210,6 +210,9 @@ export const ONE_PAGE_UNLISTED_SHOP_OF_FEATURE: Readonly<Record<string, string>>
   "中華料理龍芳": "r940", // 中華料理 龍芳
   "とんかつ美沢": "r941", // とんかつ美沢
   "炭火焼肉釜山稲沢": "r942", // 炭火焼肉釜山稲沢
+  "アメリカンダイナーラ・ブーム": "r943", // アメリカンダイナー ラ・ブーム
+  "焼き鳥りょうちゃん甲府": "r944", // 焼き鳥りょうちゃん甲府
+  "おじぎ茶屋": "r945", // おじぎ茶屋
 };
 
 const NFC = (s: string) => s.normalize("NFC");

@@ -1,0 +1,40 @@
+{
+  "tab": "トリニティアポ",
+  "tabEn": "tri-beauty",
+  "row": 538,
+  "sheet": {
+    "name": "Ｓｕｉｔｅｂｌｉｎｋ",
+    "address": "",
+    "url": "https://www.google.com/maps/search/?api=1&query=%EF%BC%B3%EF%BD%95%EF%BD%89%EF%BD%94%EF%BD%85%EF%BD%82%EF%BD%8C%EF%BD%89%EF%BD%8E%EF%BD%8B%20090-4514-4305%20",
+    "type": "眉サロン",
+    "d1": "",
+    "d2": ""
+  },
+  "urlKind": "mapsApi",
+  "route": "第1段(verify-gbp.mjs)で確認済み",
+  "verdict": "一致",
+  "verdictReason": "手がかり: 店名＋住所(番地まで)。電話がちがう(シート 090-4514-4305 / マップ 050-8881-5435)／店名: contains(シート「Ｓｕｉｔｅｂｌｉｎｋ」/ マップ「Suite blink(スイート ブリンク)【まつげパーマ/まつ毛パーマ/マツエク/眉毛専門店】天文館」)／住所(シート): exact・町名・番地とも一致",
+  "place": {
+    "name": "Suite blink(スイート ブリンク)【まつげパーマ/まつ毛パーマ/マツエク/眉毛専門店】天文館",
+    "address": "鹿児島県鹿児島市金生町７−９ TMビル 201",
+    "category": "まつげサロン",
+    "lat": 31.5925805,
+    "lng": 130.5577851,
+    "gbpUrl": "https://maps.google.com/?cid=15541511103011842665",
+    "phone": "050-8881-5435",
+    "website": "https://beauty.hotpepper.jp/kr/slnH000765146/?cstt=1&wak=KPSC400401_s_Link_salonto",
+    "hours": {
+      "月": "定休日",
+      "火": "09:30–19:00",
+      "水": "09:30–19:00",
+      "木": "09:30–19:00",
+      "金": "09:30–19:00",
+      "土": "09:30–19:00",
+      "日": "09:30–19:00"
+    },
+    "reserveLinks": [],
+    "statusSignals": [],
+    "closedSignal": false
+  },
+  "fetchedAt": "2026-11-12T11:09:12.867Z"
+}

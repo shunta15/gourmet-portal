@@ -3898,5 +3898,27 @@
     "warnings": [
       "cuisine は GBPカテゴリ"
     ]
+  },
+  "r943": {
+    "articleId": "アメリカンダイナーラ・ブーム",
+    "name": "アメリカンダイナー ラ・ブーム",
+    "warnings": [
+      "cuisine は GBPカテゴリ"
+    ]
+  },
+  "r944": {
+    "articleId": "焼き鳥りょうちゃん甲府",
+    "name": "焼き鳥りょうちゃん甲府",
+    "warnings": [
+      "cuisine は GBPカテゴリ"
+    ]
+  },
+  "r945": {
+    "articleId": "おじぎ茶屋",
+    "name": "おじぎ茶屋",
+    "warnings": [
+      "desc は lede から事実の文を選べず、事実から作った定型文",
+      "cuisine は GBPカテゴリ"
+    ]
   }
 }

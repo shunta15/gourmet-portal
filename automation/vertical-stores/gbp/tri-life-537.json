@@ -1,0 +1,32 @@
+{
+  "tab": "トリニティアポ",
+  "tabEn": "tri-life",
+  "row": 537,
+  "sheet": {
+    "name": "妙本寺",
+    "address": "",
+    "url": "https://www.google.com/maps/search/?api=1&query=%E5%A6%99%E6%9C%AC%E5%AF%BA%20055-252-5585%20%E5%B1%B1%E6%A2%A8%E7%9C%8C%E7%94%B2%E5%BA%9C%E5%B8%82%E6%9C%9D%E6%97%A5%EF%BC%93%E4%B8%81%E7%9B%AE%EF%BC%92%E2%88%92%EF%BC%91%EF%BC%98",
+    "type": "寺",
+    "d1": "",
+    "d2": ""
+  },
+  "urlKind": "mapsApi",
+  "route": "第1段(verify-gbp.mjs)で確認済み",
+  "verdict": "一致",
+  "verdictReason": "手がかり: 店名＋電話＋住所(番地まで)。電話が一致／店名: contains(シート「妙本寺」/ マップ「日蓮宗 妙本寺」)／住所(シート): exact・町名・番地とも一致",
+  "place": {
+    "name": "日蓮宗 妙本寺",
+    "address": "山梨県甲府市朝日３丁目２−１８",
+    "category": "仏教寺院",
+    "lat": 35.6691519,
+    "lng": 138.5621439,
+    "gbpUrl": "https://maps.google.com/?cid=15391735340530316708",
+    "phone": "055-252-5585",
+    "website": null,
+    "hours": null,
+    "reserveLinks": [],
+    "statusSignals": [],
+    "closedSignal": false
+  },
+  "fetchedAt": "2026-11-12T11:08:36.899Z"
+}

@@ -36490,6 +36490,571 @@
         ],
         "checkedAt": "2026-11-12"
       }
+    },
+    {
+      "id": "li0227",
+      "vertical": "life",
+      "category": "shrine-temple",
+      "name": "良圓寺",
+      "pref": "yamanashi",
+      "cityName": "身延町",
+      "address": "山梨県南巨摩郡身延町大野839",
+      "lat": 35.3617802,
+      "lng": 138.4461417,
+      "phone": "0556-62-1239",
+      "mapUrl": "https://maps.google.com/?cid=13850335699289859854",
+      "image": "/_portal/vshops/tri-life-535/g01.jpg",
+      "images": [
+        "/_portal/vshops/tri-life-535/g01.jpg",
+        "/_portal/vshops/tri-life-535/g02.jpg",
+        "/_portal/vshops/tri-life-535/g03.jpg",
+        "/_portal/vshops/tri-life-535/g04.jpg",
+        "/_portal/vshops/tri-life-535/g05.jpg",
+        "/_portal/vshops/tri-life-535/g06.jpg",
+        "/_portal/vshops/tri-life-535/g07.jpg",
+        "/_portal/vshops/tri-life-535/g08.jpg",
+        "/_portal/vshops/tri-life-535/g09.jpg",
+        "/_portal/vshops/tri-life-535/g10.jpg"
+      ],
+      "photos": [
+        {
+          "path": "/_portal/vshops/tri-life-535/g01.jpg",
+          "what": "石畳の境内に建つ本堂の外観",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-life-535/g02.jpg",
+          "what": "赤い門の内側に安置された仁王像",
+          "kind": "exterior",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-life-535/g03.jpg",
+          "what": "境内に色づいた紅葉の木",
+          "kind": "view",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-life-535/g04.jpg",
+          "what": "満開の桜越しに望む本堂",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-life-535/g05.jpg",
+          "what": "石灯籠が並ぶ参道",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-life-535/g06.jpg",
+          "what": "黄色い銀杏の落ち葉が敷き詰められた石段",
+          "kind": "view",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-life-535/g07.jpg",
+          "what": "落ち葉に覆われた石段",
+          "kind": "view",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-life-535/g08.jpg",
+          "what": "赤い壁の山門外観",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-life-535/g09.jpg",
+          "what": "桜の花が咲く春の境内",
+          "kind": "view",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-life-535/g10.jpg",
+          "what": "緑に囲まれた長い石段",
+          "kind": "exterior",
+          "width": 900,
+          "height": 1200
+        }
+      ],
+      "tags": [],
+      "article": {
+        "headline": "山梨県身延町、日蓮宗本遠寺の境内に唯一残る塔頭。慶長15年（1610年）創立の日蓮宗寺院。",
+        "lede": "南巨摩郡身延町にある「良圓寺」（りょうえんじ）です。大野山本遠寺の境内に現存する唯一の塔頭（寺中）で、山号を含む正式名を「大野山一老良圓寺」といいます。慶長15年（1610年）3月5日、紀伊家の家老・三浦長門守為春を開基、その妻である長円院妙祖日明大禅尼を開山として建立されました。元々は良円庵という塔頭として存在し、時代とともに他の末寺と統合され現在の良圓寺となりました。境内には庫裏のそばに鹿威しが置かれており、静かな庭園の風情を伝えています。御首題（御朱印）を受け付けており、参拝者が訪れています。",
+        "sections": [
+          {
+            "heading": "由緒・歴史",
+            "body": "良圓寺は、慶長15年（1610年）に創立された日蓮宗の寺院です。開基は紀伊家の家老・三浦長門守為春、開山はその妻である長円院妙祖日明大禅尼です。もともと大野山本遠寺の塔頭「良円庵」として建立され、その後他の末寺と統合されて現在の良圓寺になりました。本遠寺は、徳川家康の側室・養珠院お万の方の帰依を受けて慶長14年（1609年）に創建された日蓮宗の本山で、良圓寺はその境内に唯一残る塔頭として今日まで続いています。「大野山一老良圓寺」という扁額を掲げており、本遠寺の一角に静かにたたずむ寺院です。"
+          },
+          {
+            "heading": "境内の特徴",
+            "body": "良圓寺の境内は、本遠寺の敷地内に位置しています。庫裏のそばには鹿威しが設けられており、水音が境内に静けさをもたらしています。石段や石灯籠が並ぶ参道があり、秋には銀杏の落ち葉が石段を覆う景観が見られます。春には桜が咲き、境内は四季折々の表情を見せます。仁王像が祀られた門もあり、訪れる参拝者を迎えています。"
+          },
+          {
+            "heading": "利用の流れ",
+            "body": "良圓寺では御首題（日蓮宗の御朱印）を授与しています。参拝の際は本堂でのお参りのあと、御首題を受けることができます。"
+          },
+          {
+            "heading": "行き方と使い方",
+            "body": "JR身延線の塩之沢駅から徒歩でアクセスできます。良圓寺は本遠寺の境内に位置しているため、本遠寺の山門を目指して進むと良圓寺にたどり着けます。身延駅からも徒歩25分の距離にあり、山梨交通の大野バス停からは徒歩15分です。"
+          }
+        ],
+        "sources": [
+          {
+            "label": "ホトカミ",
+            "url": "https://hotokami.jp/area/yamanashi/Hkgty/Hkgtytm/Dysyk/64610/"
+          },
+          {
+            "label": "Google マップ",
+            "url": "https://maps.google.com/?cid=13850335699289859854"
+          }
+        ],
+        "checkedAt": "2026-11-12"
+      }
+    },
+    {
+      "id": "li0228",
+      "vertical": "life",
+      "category": "shrine-temple",
+      "name": "北斗宮",
+      "pref": "fukuoka",
+      "cityName": "嘉麻市",
+      "address": "福岡県嘉麻市大隈町988",
+      "lat": 33.5484613,
+      "lng": 130.7458343,
+      "hours": "毎日 09:00 - 17:00",
+      "phone": "0948-57-0701",
+      "mapUrl": "https://maps.google.com/?cid=16333827647249559012",
+      "image": "/_portal/vshops/tri-life-536/g01.jpg",
+      "images": [
+        "/_portal/vshops/tri-life-536/g01.jpg",
+        "/_portal/vshops/tri-life-536/g02.jpg",
+        "/_portal/vshops/tri-life-536/g03.jpg",
+        "/_portal/vshops/tri-life-536/g04.jpg",
+        "/_portal/vshops/tri-life-536/g05.jpg",
+        "/_portal/vshops/tri-life-536/g06.jpg",
+        "/_portal/vshops/tri-life-536/g07.jpg",
+        "/_portal/vshops/tri-life-536/g08.jpg",
+        "/_portal/vshops/tri-life-536/g09.jpg",
+        "/_portal/vshops/tri-life-536/g10.jpg"
+      ],
+      "photos": [
+        {
+          "path": "/_portal/vshops/tri-life-536/g01.jpg",
+          "what": "社殿正面の外観と向拝",
+          "kind": "exterior",
+          "width": 901,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-life-536/g02.jpg",
+          "what": "石鳥居と参道",
+          "kind": "exterior",
+          "width": 540,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-life-536/g03.jpg",
+          "what": "石灯籠と鳥居が並ぶ境内",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 678
+        },
+        {
+          "path": "/_portal/vshops/tri-life-536/g04.jpg",
+          "what": "「北斗宮の大クス」と書かれた説明板と大樟",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-life-536/g05.jpg",
+          "what": "赤い幟旗と大クスを見上げた境内",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-life-536/g06.jpg",
+          "what": "「奉献」と刻まれた石造狛犬",
+          "kind": "exterior",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-life-536/g07.jpg",
+          "what": "本殿と境内の全景",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-life-536/g08.jpg",
+          "what": "石鳥居と参道の全景",
+          "kind": "exterior",
+          "width": 675,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-life-536/g09.jpg",
+          "what": "石造狛犬と杉木立",
+          "kind": "exterior",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-life-536/g10.jpg",
+          "what": "本殿向拝天井の彫刻装飾",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 900
+        }
+      ],
+      "tags": [
+        "駐車場あり"
+      ],
+      "article": {
+        "headline": "福岡県嘉麻市大隈町に鎮座する、北斗七星の信仰に基づいて創建された古社。天之御中主神・伊邪那岐神・伊邪那美神の3柱を祀り、境内には市指定天然記念物の大クスがそびえる。",
+        "lede": "嘉麻市にある「北斗宮」です。天智天皇九年（671年）、若木連という人物が北斗大明神として北斗七星を益富山に勧請したことに始まる神社で、旧社格は県社です。祭神は天之御中主神・伊邪那岐神・伊邪那美神の3柱で、延命長寿と縁結びの神として古くから地域の信仰を集めてきました。境内には嘉麻市指定天然記念物の大クス（樹高約45m・胸高周囲5.80m・樹齢約600年）がそびえ立ち、神域の奥に社殿へ続く参道と石造りの鳥居が並びます。春と秋の大祭、7月30日の大祓・茅の輪くぐりをはじめとする年間行事が今も続けられています。",
+        "sections": [
+          {
+            "heading": "由緒・歴史",
+            "body": "北斗宮の創建は天智天皇九年（671年）、若木連という人物が北斗大明神を勧請したことに始まると伝わります。天正六年（1578年）、龍造寺隆信と大友宗麟との兵乱によって社殿が焼失しましたが、御神体は境内の大楠の下に遷されて保護されました。天正八年（1580年）、秋月藩主・秋月種実によって現在の社殿が建立されています。慶長五年（1600年）に黒田長政が筑前福岡藩主となると、当社は筑前十五神の中の一宮と定められ、歴代藩主から保護を受けました。近代には明治四年（1871年）に「下益神社」と改称し、昭和八年（1933年）に県社へ昇格。昭和四十二年（1967年）に現在の社名「北斗宮」に改称しました。"
+          },
+          {
+            "heading": "境内の特徴",
+            "body": "社殿は三間社流造の本殿を持ちます。境内でひときわ目を引くのが、嘉麻市指定天然記念物に指定されている大クスです。樹高約45m・胸高周囲5.80m・樹齢約600年のこの大楠は、江戸期に先代の大楠が焼失した後に育ったものと伝わります。かつて先代の大楠の内部には大楠神社の祠が祀られており、社殿焼失時には御神体もこの楠の下で守られました。境内には狛犬や石灯籠が並ぶ参道があり、本殿の向拝天井には彫刻が施されています。"
+          },
+          {
+            "heading": "授与品と年間行事",
+            "body": "授与品として、北斗七星を中央に描いた青色の星祈願絵馬があります。御朱印も授与しており、北斗七星と花のデザインが入っています。年間行事は、1月1日の元旦祭、4月21日から22日にかけての春季神幸大祭、7月30日の大祓・茅の輪くぐり、10月21日の秋季大祭が執り行われています。祈祷・おみくじ・お守りの授与も行っています。宮司は一名で対応しているため、祈祷などは事前に電話で連絡することが求められています。"
+          },
+          {
+            "heading": "行き方と使い方",
+            "body": "最寄りのバス停は大隈バス停で、そこから徒歩約3分です。JR筑豊本線・下鴨生駅からは徒歩で1時間以上かかるため、バスの利用が便利です。駐車場は社務所裏にあります。境内への参拝は自由です。本殿へは急な階段と坂道の2つの経路があります。祈祷などで宮司への連絡が必要な場合は、電話（0948-57-0701）での事前連絡が推奨されています。"
+          }
+        ],
+        "sources": [
+          {
+            "label": "産土神名帳",
+            "url": "https://jinmyocho.jpn.org/jinja/03_fukuoka_chikuhou/0621/0621.html"
+          },
+          {
+            "label": "ホトカミ",
+            "url": "https://hotokami.jp/area/fukuoka/Hytta/Hyttatm/Dyaaa/151457/"
+          },
+          {
+            "label": "筑豊情報マガジンWING",
+            "url": "https://wing-r.com/hokutogu/"
+          },
+          {
+            "label": "八百万の神",
+            "url": "https://yaokami.jp/1402272/"
+          },
+          {
+            "label": "嘉麻市移住サイト",
+            "url": "https://iju.kamastyle.co.jp/%E5%98%89%E9%BA%BB%E5%B8%82%E3%81%AE%E6%96%BD%E8%A8%AD%E7%B4%B9%E4%BB%8B/1224/"
+          },
+          {
+            "label": "KBC九州朝日放送ジモタイムズ",
+            "url": "https://kbc.co.jp/wish/article/39766/"
+          },
+          {
+            "label": "Google マップ",
+            "url": "https://maps.google.com/?cid=16333827647249559012"
+          }
+        ],
+        "checkedAt": "2026-11-12"
+      }
+    },
+    {
+      "id": "li0229",
+      "vertical": "life",
+      "category": "shrine-temple",
+      "name": "日蓮宗 妙本寺",
+      "pref": "yamanashi",
+      "cityName": "甲府市",
+      "address": "山梨県甲府市朝日3丁目2-18",
+      "lat": 35.6691519,
+      "lng": 138.5621439,
+      "phone": "055-252-5585",
+      "mapUrl": "https://maps.google.com/?cid=15391735340530316708",
+      "image": "/_portal/vshops/tri-life-537/g01.jpg",
+      "images": [
+        "/_portal/vshops/tri-life-537/g01.jpg",
+        "/_portal/vshops/tri-life-537/g02.jpg",
+        "/_portal/vshops/tri-life-537/g04.jpg",
+        "/_portal/vshops/tri-life-537/g05.jpg",
+        "/_portal/vshops/tri-life-537/g06.jpg",
+        "/_portal/vshops/tri-life-537/g07.jpg",
+        "/_portal/vshops/tri-life-537/g08.jpg",
+        "/_portal/vshops/tri-life-537/g09.jpg",
+        "/_portal/vshops/tri-life-537/g10.jpg"
+      ],
+      "photos": [
+        {
+          "path": "/_portal/vshops/tri-life-537/g01.jpg",
+          "what": "石灯籠が並ぶ山門正面の外観",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-life-537/g02.jpg",
+          "what": "「妙本寺」と記された扁額がある赤い山門と寺号標",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-life-537/g04.jpg",
+          "what": "木々に囲まれた寺院入口付近の景観",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 801
+        },
+        {
+          "path": "/_portal/vshops/tri-life-537/g05.jpg",
+          "what": "幟旗が立つ参道の様子",
+          "kind": "exterior",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-life-537/g06.jpg",
+          "what": "赤い楼門形式の山門と石の寺号標",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 801
+        },
+        {
+          "path": "/_portal/vshops/tri-life-537/g07.jpg",
+          "what": "寺院の案内が書かれた説明板",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-life-537/g08.jpg",
+          "what": "緑の木々に囲まれた本堂の屋根と奥の山並み",
+          "kind": "exterior",
+          "width": 1138,
+          "height": 795
+        },
+        {
+          "path": "/_portal/vshops/tri-life-537/g09.jpg",
+          "what": "木々に囲まれた境内の様子",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 545
+        },
+        {
+          "path": "/_portal/vshops/tri-life-537/g10.jpg",
+          "what": "緑豊かな境内の墓域の様子",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 545
+        }
+      ],
+      "tags": [],
+      "article": {
+        "headline": "甲府市朝日にある日蓮宗の寺院。甲府駅から徒歩約9分の場所に本堂と山門が立つ。",
+        "lede": "甲府市にある「妙本寺」は、山梨県甲府市朝日3丁目に位置する日蓮宗の寺院です。甲府市の朝日地区は、廣正寺・浄興寺・清運寺・法光寺など複数の寺院が集まるエリアで、妙本寺はその一つとして日蓮宗全寺院マップにも収録されています。赤い楼門形式の山門と「妙本寺」と記された扁額、石の寺号標が参道のそばに立ち、両脇に石灯籠が並ぶ境内が広がっています。甲府駅北口から徒歩約9分（約657m）という市街地の立地にあり、地域の法要・祈願・墓参りの場として利用されています。境内には本堂、緑に囲まれた墓域が広がり、甲府盆地を囲む山々を背景にした静かな空間が保たれています。",
+        "sections": [
+          {
+            "heading": "由緒・歴史",
+            "body": "妙本寺は日蓮宗の寺院として、山梨県甲府市朝日の地に建つ寺院です。甲府市の朝日地区には廣正寺・浄興寺・清運寺・法光寺など複数の寺院が集まり、古くから信仰の集まる寺院が点在してきた地域です。甲斐国（現在の山梨県）には多くの日蓮宗寺院が開かれており、妙本寺は山梨県内の日蓮宗寺院の一つとして、地域の人々の信仰の場となってきました。山門に掲げられた扁額には「妙本寺」の寺号が記されており、寺号標が山門のそばに設けられています。境内には由緒に関する案内板も掲示されています。朝日地区のこの寺域は、甲府市内で寺院が連なる地域の一角に位置しています。"
+          },
+          {
+            "heading": "境内の特徴",
+            "body": "妙本寺の境内に入ると、正面に本堂が立ち、参道の両脇に石灯籠が並ぶ構成です。山門は赤く塗られた楼門形式で、「日蓮宗 妙本寺」と記された扁額と石の寺号標が並んで立っています。本堂は切妻造りの屋根を持ち、緑豊かな木々に囲まれた落ち着いた境内が広がっています。境内の一角には墓域があり、甲府盆地を囲む山々を背景に静かな空間が保たれています。参道には幟旗が掲げられることもあり、地域の信仰の場として利用されています。朝日地区には複数の寺院が集まるため、甲府市内のなかでも寺院が連なる地域の一角を形成しています。"
+          },
+          {
+            "heading": "行き方と使い方",
+            "body": "JR甲府駅北口から徒歩約9分（約657m）の場所にあります。甲府市朝日3丁目の住宅地の中に位置し、周辺には複数の寺院が点在しています。法要・祈願・墓参りなどの用件は、事前に電話（055-252-5585）で連絡して確認するとよいでしょう。甲府市内の日蓮宗寺院として、地域の檀家を対象とした法事・法要・供養の対応を行っています。甲府市の中心市街地に位置するため、公共交通機関での訪問もしやすい立地です。"
+          }
+        ],
+        "sources": [
+          {
+            "label": "NAVITIME 甲府市朝日の寺院一覧",
+            "url": "https://www.navitime.co.jp/category/0705001/19201005000/"
+          },
+          {
+            "label": "日蓮宗全寺院マップ 山梨県甲府市",
+            "url": "https://www.nichiren.or.jp/temple/map/hokuriku/yamanashi/kofu-shi/"
+          },
+          {
+            "label": "Google マップ",
+            "url": "https://maps.google.com/?cid=15391735340530316708"
+          }
+        ],
+        "checkedAt": "2026-11-12"
+      }
+    },
+    {
+      "id": "li0230",
+      "vertical": "life",
+      "category": "shrine-temple",
+      "name": "小田山神社",
+      "pref": "fukuoka",
+      "cityName": "北九州市若松区",
+      "address": "福岡県北九州市若松区深町1丁目17-27",
+      "lat": 33.917513,
+      "lng": 130.799636,
+      "phone": "093-771-4134",
+      "mapUrl": "https://maps.google.com/?cid=2193343628262468351",
+      "image": "/_portal/vshops/tri-life-541/g01.jpg",
+      "images": [
+        "/_portal/vshops/tri-life-541/g01.jpg",
+        "/_portal/vshops/tri-life-541/g02.jpg",
+        "/_portal/vshops/tri-life-541/g03.jpg",
+        "/_portal/vshops/tri-life-541/g04.jpg",
+        "/_portal/vshops/tri-life-541/g05.jpg",
+        "/_portal/vshops/tri-life-541/g06.jpg",
+        "/_portal/vshops/tri-life-541/g07.jpg",
+        "/_portal/vshops/tri-life-541/g08.jpg",
+        "/_portal/vshops/tri-life-541/g09.jpg",
+        "/_portal/vshops/tri-life-541/g10.jpg"
+      ],
+      "photos": [
+        {
+          "path": "/_portal/vshops/tri-life-541/g01.jpg",
+          "what": "朱色の幟旗が並ぶ石段の参道",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 901
+        },
+        {
+          "path": "/_portal/vshops/tri-life-541/g02.jpg",
+          "what": "樹木に囲まれた朱色の拝殿正面",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 675
+        },
+        {
+          "path": "/_portal/vshops/tri-life-541/g03.jpg",
+          "what": "紙垂が下がる鈴と拝殿の外観",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-life-541/g04.jpg",
+          "what": "木々に囲まれた朱色の鳥居",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 675
+        },
+        {
+          "path": "/_portal/vshops/tri-life-541/g05.jpg",
+          "what": "石仏と小社が並ぶ境内の一角",
+          "kind": "common",
+          "width": 1200,
+          "height": 901
+        },
+        {
+          "path": "/_portal/vshops/tri-life-541/g06.jpg",
+          "what": "木々に挟まれた石段と石灯籠",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 675
+        },
+        {
+          "path": "/_portal/vshops/tri-life-541/g07.jpg",
+          "what": "境内に立つ石碑と朱色の社殿",
+          "kind": "common",
+          "width": 1200,
+          "height": 675
+        },
+        {
+          "path": "/_portal/vshops/tri-life-541/g08.jpg",
+          "what": "石碑と木々の向こうに広がる洞海湾の眺め",
+          "kind": "view",
+          "width": 1200,
+          "height": 675
+        },
+        {
+          "path": "/_portal/vshops/tri-life-541/g09.jpg",
+          "what": "赤い壁を背に並ぶ石仏群",
+          "kind": "common",
+          "width": 1200,
+          "height": 675
+        },
+        {
+          "path": "/_portal/vshops/tri-life-541/g10.jpg",
+          "what": "木々の間から望む市街地と海の眺望",
+          "kind": "view",
+          "width": 1200,
+          "height": 675
+        }
+      ],
+      "tags": [
+        "駐車場あり"
+      ],
+      "article": {
+        "headline": "北九州市若松区深町の高台に鎮座する、御嶽教若松教会の神社。国常立之命・大己貴命・少彦名命・笠森稲荷大明神・白髭大神を祀る",
+        "lede": "北九州市若松区にある「小田山神社」です。若松区深町1丁目の小田山丘陵に位置し、御嶽教若松教会として木曽御嶽山を本山とする神社です。もとは若戸橋たもとの連歌町付近にあった稲荷社が起源で、大正11年（1922年）に道路拡張による区画調整を経て現在地に移転しました。境内の背後には6世紀後半に造られた小田山古墳群が広がり、昭和46年（1971年）に古墳公園として整備されています。鳥居をくぐった先には洞海湾を望む眺めがあり、高台ならではの景観を持つ神社です。御朱印は印刷を一切使用せず、全て一つ一つ手書きで奉製しており、季節ごとの限定御朱印を出しています。参道沿いには駐車場が15台分あります。",
+        "sections": [
+          {
+            "heading": "由緒・歴史",
+            "body": "小田山神社は、若松区原町（連歌町付近）にあった稲荷社を起源とし、地域の商売繁盛と幸福を祈願する場として信仰を集めてきました。大正時代の道路拡張による区画調整に伴い、大正11年（1922年）に現在の深町1丁目へ移転しました。御嶽教若松教会として、信州霊峰・木曽御嶽山を本山とする教会神社です。御嶽教は明治15年（1882年）5月17日に明治天皇の勅令によって設立された神道系の教派で、標高3,067メートルの木曽御嶽山に総本山を置きます。境内の背後には市指定史跡である小田山古墳群があり、6世紀後半に造られた横穴式石室を持つ円墳が、指定範囲内に13基残っています。大正初期には50基以上存在したと伝わる古墳群で、昭和46年（1971年）に古墳公園として整備されました。"
+          },
+          {
+            "heading": "御祭神と境内",
+            "body": "小田山神社に祀られる御祭神は、国常立之命・大己貴命・少彦名命・笠森稲荷大明神・白髭大神の5柱です。石段を上がると拝殿に至り、境内には複数の石仏とお地蔵様が祀られています。境内の奥まった位置に白髭大神が鎮座します。高台に位置するため、鳥居の先には洞海湾の眺めがあります。周囲の小田山丘陵は標高35〜55メートルで、かつては響灘を一望できる地形でした。社殿は近代的な造りで、石段の参道と朱色の社殿が境内の特徴的な景観を形成しています。例祭は毎年10月17日に執り行われています。"
+          },
+          {
+            "heading": "御朱印",
+            "body": "小田山神社の御朱印は、印刷を一切使用せず、全て一つ一つ手書きで奉製しています。通年の御朱印（直書き・書置き）に加え、季節ごとの限定御朱印を出しており、各シーズンに合わせた図柄で提供されます。限定御朱印は数量が少なく、早期になくなることがあります。御朱印の受付時間は毎日10時から15時で、インターフォンを鳴らして対応を求めます。郵送対応も可能で、公式SMS（電話番号宛てのショートメッセージ）または電話で相談できます。"
+          },
+          {
+            "heading": "行き方と使い方",
+            "body": "JR鹿児島本線戸畑駅から北九州市営バスを利用し、栄盛川バス停で下車後、徒歩約15分で到着します。車の場合は参道沿いに駐車場が15台分あります。境内は24時間参拝可能です。御朱印の受付は毎日10時から15時の間で、インターフォンを鳴らして対応を受けます。郵送対応を希望する場合は、公式SMS（093-771-4134宛て）または電話にて事前に相談します。"
+          }
+        ],
+        "sources": [
+          {
+            "label": "ホトカミ",
+            "url": "https://hotokami.jp/area/fukuoka/Hytts/Hyttstr/Dktpam/167100/"
+          },
+          {
+            "label": "アメブロ（限定御朱印紹介）",
+            "url": "https://ameblo.jp/sakurazaka128/entry-12880199605.html"
+          },
+          {
+            "label": "アメブロ（参拝記）",
+            "url": "https://ameblo.jp/osugi2028/entry-12767564927.html"
+          },
+          {
+            "label": "北九州市（小田山古墳群）",
+            "url": "https://www.city.kitakyushu.lg.jp/contents/02100252.html"
+          },
+          {
+            "label": "日々の楽しいをみつけるブログ（小田山古墳群）",
+            "url": "https://www.ku-hibino.com/entry/2017/12/23/151852"
+          },
+          {
+            "label": "kt-hub（例祭情報）",
+            "url": "https://kt-hub.com/34016/odasanshinsha/"
+          },
+          {
+            "label": "Google マップ",
+            "url": "https://maps.google.com/?cid=2193343628262468351"
+          }
+        ],
+        "checkedAt": "2026-11-12"
+      }
     }
   ]
 }

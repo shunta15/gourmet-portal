@@ -1,0 +1,32 @@
+{
+  "tab": "トリニティアポ",
+  "tabEn": "tri-life",
+  "row": 541,
+  "sheet": {
+    "name": "小田山神社",
+    "address": "",
+    "url": "https://www.google.com/maps/search/?api=1&query=%E5%B0%8F%E7%94%B0%E5%B1%B1%E7%A5%9E%E7%A4%BE%20070-2347-6767%20%E3%80%92808-0012%20%E7%A6%8F%E5%B2%A1%E7%9C%8C%E5%8C%97%E4%B9%9D%E5%B7%9E%E5%B8%82%E8%8B%A5%E6%9D%BE%E5%8C%BA%E6%B7%B1%E7%94%BA%EF%BC%91%E4%B8%81%E7%9B%AE%EF%BC%91%EF%BC%97%E2%88%92%EF%BC%92%EF%BC%97",
+    "type": "神社",
+    "d1": "",
+    "d2": ""
+  },
+  "urlKind": "mapsApi",
+  "route": "第1段(verify-gbp.mjs)で確認済み",
+  "verdict": "一致",
+  "verdictReason": "手がかり: 店名＋住所(番地まで)。電話がちがう(シート 070-2347-6767 / マップ 093-771-4134)／店名: exact(シート「小田山神社」/ マップ「小田山神社」)／住所(シート): exact・町名・番地とも一致",
+  "place": {
+    "name": "小田山神社",
+    "address": "福岡県北九州市若松区深町１丁目１７−２７",
+    "category": "神社",
+    "lat": 33.917513,
+    "lng": 130.799636,
+    "gbpUrl": "https://maps.google.com/?cid=2193343628262468351",
+    "phone": "093-771-4134",
+    "website": null,
+    "hours": null,
+    "reserveLinks": [],
+    "statusSignals": [],
+    "closedSignal": false
+  },
+  "fetchedAt": "2026-11-12T11:11:22.581Z"
+}
