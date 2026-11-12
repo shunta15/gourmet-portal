@@ -1,0 +1,40 @@
+{
+  "tab": "トリニティアポ",
+  "tabEn": "tri-life",
+  "row": 529,
+  "sheet": {
+    "name": "五所八幡宮",
+    "address": "",
+    "url": "https://www.google.com/maps/search/?api=1&query=%E4%BA%94%E6%89%80%E5%85%AB%E5%B9%A1%E5%AE%AE%20090-4992-0096%20%E3%80%92144-0043%20%E7%A6%8F%E5%B2%A1%E7%9C%8C%E5%8F%A4%E8%B3%80%E5%B8%82%E9%9D%92%E6%9F%B3%EF%BC%91%EF%BC%96%EF%BC%98%EF%BC%97%E2%88%92%EF%BC%91",
+    "type": "神社",
+    "d1": "",
+    "d2": ""
+  },
+  "urlKind": "mapsApi",
+  "route": "第1段(verify-gbp.mjs)で確認済み",
+  "verdict": "一致",
+  "verdictReason": "手がかり: 店名＋電話＋住所(番地まで)。電話が一致／店名: contains(シート「五所八幡宮」/ マップ「五所八幡宮本殿」)／住所(シート): exact・町名・番地とも一致",
+  "place": {
+    "name": "五所八幡宮本殿",
+    "address": "福岡県古賀市青柳１６８７−１",
+    "category": "神社",
+    "lat": 33.7083904,
+    "lng": 130.4785429,
+    "gbpUrl": "https://maps.google.com/?cid=6992672327609923091",
+    "phone": "090-4992-0096",
+    "website": "https://gosho-hachimangu.jp/",
+    "hours": {
+      "月": "09:00–17:00",
+      "火": "09:00–17:00",
+      "水": "09:00–17:00",
+      "木": "09:00–17:00",
+      "金": "09:00–17:00",
+      "土": "09:00–17:00",
+      "日": "09:00–17:00"
+    },
+    "reserveLinks": [],
+    "statusSignals": [],
+    "closedSignal": false
+  },
+  "fetchedAt": "2026-11-12T08:12:36.288Z"
+}

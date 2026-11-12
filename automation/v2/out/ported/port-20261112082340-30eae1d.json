@@ -1,0 +1,118 @@
+{
+  "commit": "30eae1dd3fe8c98da7c2d297d2b29cded36aa5bb",
+  "source": "/Users/shunta/claude/gp-k-auto2",
+  "count": 10,
+  "added": [
+    {
+      "row": 423,
+      "name": "crepe ON SUNDAYS",
+      "key": "lk-gourmet-423",
+      "vertical": "グルメ",
+      "id": "r938",
+      "articleId": "crepeONSUNDAYS",
+      "shopUrl": "https://machinowa.tokyo/restaurant/r938",
+      "articleUrl": "https://machinowa.tokyo/feature/crepeONSUNDAYS",
+      "sheetUrl": "https://machinowa.tokyo/feature/crepeONSUNDAYS"
+    },
+    {
+      "row": 424,
+      "name": "いわぬま蓑寿司",
+      "key": "lk-gourmet-424",
+      "vertical": "グルメ",
+      "id": "r939",
+      "articleId": "いわぬま蓑寿司",
+      "shopUrl": "https://machinowa.tokyo/restaurant/r939",
+      "articleUrl": "https://machinowa.tokyo/feature/いわぬま蓑寿司",
+      "sheetUrl": "https://machinowa.tokyo/feature/いわぬま蓑寿司"
+    },
+    {
+      "row": 425,
+      "name": "中華料理 龍芳",
+      "key": "lk-gourmet-425",
+      "vertical": "グルメ",
+      "id": "r940",
+      "articleId": "中華料理龍芳",
+      "shopUrl": "https://machinowa.tokyo/restaurant/r940",
+      "articleUrl": "https://machinowa.tokyo/feature/中華料理龍芳",
+      "sheetUrl": "https://machinowa.tokyo/feature/中華料理龍芳"
+    },
+    {
+      "row": 426,
+      "name": "とんかつ美沢",
+      "key": "lk-gourmet-426",
+      "vertical": "グルメ",
+      "id": "r941",
+      "articleId": "とんかつ美沢",
+      "shopUrl": "https://machinowa.tokyo/restaurant/r941",
+      "articleUrl": "https://machinowa.tokyo/feature/とんかつ美沢",
+      "sheetUrl": "https://machinowa.tokyo/feature/とんかつ美沢"
+    },
+    {
+      "row": 427,
+      "name": "炭火焼肉釜山稲沢",
+      "key": "lk-gourmet-427",
+      "vertical": "グルメ",
+      "id": "r942",
+      "articleId": "炭火焼肉釜山稲沢",
+      "shopUrl": "https://machinowa.tokyo/restaurant/r942",
+      "articleUrl": "https://machinowa.tokyo/feature/炭火焼肉釜山稲沢",
+      "sheetUrl": "https://machinowa.tokyo/feature/炭火焼肉釜山稲沢"
+    },
+    {
+      "row": 527,
+      "name": "かおりキャンドル工房",
+      "key": "tri-activity-527",
+      "vertical": "アクティビティ",
+      "id": "ac0075",
+      "articleId": "ac0075",
+      "shopUrl": "https://machinowa.tokyo/activity/shop/ac0075",
+      "articleUrl": "https://machinowa.tokyo/activity/article/ac0075",
+      "sheetUrl": "https://machinowa.tokyo/activity/article/ac0075"
+    },
+    {
+      "row": 528,
+      "name": "丹徳庭園",
+      "key": "tri-life-528",
+      "vertical": "くらし",
+      "id": "li0223",
+      "articleId": "li0223",
+      "shopUrl": "https://machinowa.tokyo/life/shop/li0223",
+      "articleUrl": "https://machinowa.tokyo/life/article/li0223",
+      "sheetUrl": "https://machinowa.tokyo/life/article/li0223"
+    },
+    {
+      "row": 529,
+      "name": "五所八幡宮",
+      "key": "tri-life-529",
+      "vertical": "くらし",
+      "id": "li0224",
+      "articleId": "li0224",
+      "shopUrl": "https://machinowa.tokyo/life/shop/li0224",
+      "articleUrl": "https://machinowa.tokyo/life/article/li0224",
+      "sheetUrl": "https://machinowa.tokyo/life/article/li0224"
+    },
+    {
+      "row": 530,
+      "name": "志紀長吉神社",
+      "key": "tri-life-530",
+      "vertical": "くらし",
+      "id": "li0225",
+      "articleId": "li0225",
+      "shopUrl": "https://machinowa.tokyo/life/shop/li0225",
+      "articleUrl": "https://machinowa.tokyo/life/article/li0225",
+      "sheetUrl": "https://machinowa.tokyo/life/article/li0225"
+    },
+    {
+      "row": 531,
+      "name": "廣國神社",
+      "key": "tri-life-531",
+      "vertical": "くらし",
+      "id": "li0226",
+      "articleId": "li0226",
+      "shopUrl": "https://machinowa.tokyo/life/shop/li0226",
+      "articleUrl": "https://machinowa.tokyo/life/article/li0226",
+      "sheetUrl": "https://machinowa.tokyo/life/article/li0226"
+    }
+  ],
+  "skipped": []
+}

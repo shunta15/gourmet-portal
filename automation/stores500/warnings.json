@@ -3862,5 +3862,41 @@
     "warnings": [
       "cuisine は GBPカテゴリ"
     ]
+  },
+  "r938": {
+    "articleId": "crepeONSUNDAYS",
+    "name": "crepe ON SUNDAYS",
+    "warnings": [
+      "cuisine は GBPカテゴリ"
+    ]
+  },
+  "r939": {
+    "articleId": "いわぬま蓑寿司",
+    "name": "いわぬま蓑寿司",
+    "warnings": [
+      "cuisine は GBPカテゴリ"
+    ]
+  },
+  "r940": {
+    "articleId": "中華料理龍芳",
+    "name": "中華料理 龍芳",
+    "warnings": [
+      "desc は lede から事実の文を選べず、事実から作った定型文",
+      "cuisine は GBPカテゴリ"
+    ]
+  },
+  "r941": {
+    "articleId": "とんかつ美沢",
+    "name": "とんかつ美沢",
+    "warnings": [
+      "cuisine は GBPカテゴリ"
+    ]
+  },
+  "r942": {
+    "articleId": "炭火焼肉釜山稲沢",
+    "name": "炭火焼肉釜山稲沢",
+    "warnings": [
+      "cuisine は GBPカテゴリ"
+    ]
   }
 }

@@ -2488,5 +2488,30 @@
     "articleId": "PEOPLESCOFFEE",
     "sheetName": "ＰＥＯＰＬＥＳ＿ＣＯＦＦＥＥ",
     "mapsUrl": "https://maps.google.com/?cid=2735438257638790692"
+  },
+  {
+    "articleId": "crepeONSUNDAYS",
+    "sheetName": "crepe ON SUNDAYS",
+    "mapsUrl": "https://maps.google.com/?cid=4677009372440577630"
+  },
+  {
+    "articleId": "いわぬま蓑寿司",
+    "sheetName": "いわぬま蓑寿司",
+    "mapsUrl": "https://maps.google.com/?cid=11323268657348866105"
+  },
+  {
+    "articleId": "中華料理龍芳",
+    "sheetName": "中華料理 龍芳",
+    "mapsUrl": "https://maps.google.com/?cid=9807089259340168905"
+  },
+  {
+    "articleId": "とんかつ美沢",
+    "sheetName": "とんかつ美沢",
+    "mapsUrl": "https://maps.google.com/?cid=4686368007998676956"
+  },
+  {
+    "articleId": "炭火焼肉釜山稲沢",
+    "sheetName": "炭火焼肉釜山稲沢",
+    "mapsUrl": "https://maps.google.com/?cid=2671389687492885120"
   }
 ]

@@ -1,0 +1,32 @@
+{
+  "tab": "トリニティアポ",
+  "tabEn": "tri-activity",
+  "row": 527,
+  "sheet": {
+    "name": "かおりキャンドル工房",
+    "address": "",
+    "url": "https://www.google.com/maps/search/?api=1&query=%E3%81%8B%E3%81%8A%E3%82%8A%E3%82%AD%E3%83%A3%E3%83%B3%E3%83%89%E3%83%AB%E5%B7%A5%E6%88%BF%20042-831-8300%20%E3%80%92198-0023%20%E6%9D%B1%E4%BA%AC%E9%83%BD%E9%9D%92%E6%A2%85%E5%B8%82%E4%BB%8A%E4%BA%95%EF%BC%93%E4%B8%81%E7%9B%AE%EF%BC%93%EF%BC%91%E2%88%92%EF%BC%95%EF%BC%93",
+    "type": "レジャー",
+    "d1": "",
+    "d2": ""
+  },
+  "urlKind": "mapsApi",
+  "route": "第1段(verify-gbp.mjs)で確認済み",
+  "verdict": "一致",
+  "verdictReason": "手がかり: 店名＋電話＋住所(番地まで)。電話が一致／店名: exact(シート「かおりキャンドル工房」/ マップ「かおりキャンドル工房」)／住所(シート): exact・町名・番地とも一致",
+  "place": {
+    "name": "かおりキャンドル工房",
+    "address": "東京都青梅市今井３丁目３１−５３",
+    "category": "カルチャー スクール",
+    "lat": 35.8004309,
+    "lng": 139.3117953,
+    "gbpUrl": "https://maps.google.com/?cid=9151476184377924401",
+    "phone": "0428-31-8300",
+    "website": "http://www.kaoricandle.jp/",
+    "hours": null,
+    "reserveLinks": [],
+    "statusSignals": [],
+    "closedSignal": false
+  },
+  "fetchedAt": "2026-11-12T08:10:58.613Z"
+}

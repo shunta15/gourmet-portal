@@ -1,0 +1,32 @@
+{
+  "tab": "トリニティアポ",
+  "tabEn": "tri-life",
+  "row": 531,
+  "sheet": {
+    "name": "廣國神社",
+    "address": "",
+    "url": "https://www.google.com/maps/search/?api=1&query=%E5%BB%A3%E5%9C%8B%E7%A5%9E%E7%A4%BE%20072-285-0295%20%E3%80%92599-8112%20%E5%A4%A7%E9%98%AA%E5%BA%9C%E5%A0%BA%E5%B8%82%E6%9D%B1%E5%8C%BA%E6%97%A5%E7%BD%AE%E8%8D%98%E5%8E%9F%E5%AF%BA%E7%94%BA%EF%BC%97%EF%BC%95%E2%88%92%EF%BC%91",
+    "type": "神社",
+    "d1": "",
+    "d2": ""
+  },
+  "urlKind": "mapsApi",
+  "route": "第1段(verify-gbp.mjs)で確認済み",
+  "verdict": "一致",
+  "verdictReason": "手がかり: 電話＋住所(番地まで)。電話が一致／店名: different(シート「廣國神社」/ マップ「萩原神社(萩原天神)」)／住所(シート): exact・町名・番地とも一致",
+  "place": {
+    "name": "萩原神社(萩原天神)",
+    "address": "大阪府堺市東区日置荘原寺町７５−１",
+    "category": "神社",
+    "lat": 34.5375081,
+    "lng": 135.5327658,
+    "gbpUrl": "https://maps.google.com/?cid=3220459700648782170",
+    "phone": "072-285-0295",
+    "website": "http://www.hagi10.sakura.ne.jp/",
+    "hours": null,
+    "reserveLinks": [],
+    "statusSignals": [],
+    "closedSignal": false
+  },
+  "fetchedAt": "2026-11-12T08:14:06.909Z"
+}

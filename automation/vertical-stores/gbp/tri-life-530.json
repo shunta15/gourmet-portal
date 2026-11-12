@@ -1,0 +1,40 @@
+{
+  "tab": "トリニティアポ",
+  "tabEn": "tri-life",
+  "row": 530,
+  "sheet": {
+    "name": "志紀長吉神社",
+    "address": "",
+    "url": "https://www.google.com/maps/search/?api=1&query=%E5%BF%97%E7%B4%80%E9%95%B7%E5%90%89%E7%A5%9E%E7%A4%BE%2006-6709-1757%20%E3%80%92547-0016%20%E5%A4%A7%E9%98%AA%E5%BA%9C%E5%A4%A7%E9%98%AA%E5%B8%82%E5%B9%B3%E9%87%8E%E5%8C%BA%E9%95%B7%E5%90%89%E9%95%B7%E5%8E%9F%EF%BC%92%E4%B8%81%E7%9B%AE%EF%BC%98%E2%88%92%EF%BC%92%EF%BC%93",
+    "type": "神社",
+    "d1": "",
+    "d2": ""
+  },
+  "urlKind": "mapsApi",
+  "route": "第1段(verify-gbp.mjs)で確認済み",
+  "verdict": "一致",
+  "verdictReason": "手がかり: 店名＋電話＋住所(番地まで)。電話が一致／店名: exact(シート「志紀長吉神社」/ マップ「志紀長吉神社」)／住所(シート): exact・町名・番地とも一致",
+  "place": {
+    "name": "志紀長吉神社",
+    "address": "大阪府大阪市平野区長吉長原２丁目８−２３",
+    "category": "神社",
+    "lat": 34.6040922,
+    "lng": 135.5705783,
+    "gbpUrl": "https://maps.google.com/?cid=9712253623954292979",
+    "phone": "06-6709-1757",
+    "website": "https://www.shikinagayoshi-jinjya.org/",
+    "hours": {
+      "月": "09:00–17:00",
+      "火": "09:00–17:00",
+      "水": "09:00–17:00",
+      "木": "09:00–17:00",
+      "金": "09:00–17:00",
+      "土": "09:00–17:00",
+      "日": "09:00–17:00"
+    },
+    "reserveLinks": [],
+    "statusSignals": [],
+    "closedSignal": false
+  },
+  "fetchedAt": "2026-11-12T08:13:24.343Z"
+}

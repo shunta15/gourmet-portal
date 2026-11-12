@@ -205,6 +205,11 @@ export const ONE_PAGE_UNLISTED_SHOP_OF_FEATURE: Readonly<Record<string, string>>
   "ぽっぽ": "r935", // ぽっぽ
   "オトギノハコOTOGINOHAKO": "r936", // オトギノハコ OTOGINOHAKO
   "PEOPLESCOFFEE": "r937", // PEOPLES COFFEE
+  "crepeONSUNDAYS": "r938", // crepe ON SUNDAYS
+  "いわぬま蓑寿司": "r939", // いわぬま蓑寿司
+  "中華料理龍芳": "r940", // 中華料理 龍芳
+  "とんかつ美沢": "r941", // とんかつ美沢
+  "炭火焼肉釜山稲沢": "r942", // 炭火焼肉釜山稲沢
 };
 
 const NFC = (s: string) => s.normalize("NFC");

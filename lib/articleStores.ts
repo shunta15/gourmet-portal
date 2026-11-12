@@ -23680,6 +23680,251 @@ export const ARTICLE_STORES: Restaurant[] = [
       "ランチ"
     ],
     "featureId": "PEOPLESCOFFEE"
+  },
+  {
+    "id": "r938",
+    "name": "crepe ON SUNDAYS",
+    "cuisine": "クレープ店",
+    "area": "茨城県・常陸大宮市",
+    "region": "ibaraki",
+    "shape": "square",
+    "image": "/restaurants/teleapo-crepeONSUNDAYS/hero.jpg",
+    "heroImages": [
+      "/restaurants/teleapo-crepeONSUNDAYS/hero.jpg",
+      "/restaurants/teleapo-crepeONSUNDAYS/point1.jpg",
+      "/restaurants/teleapo-crepeONSUNDAYS/point2.jpg",
+      "/restaurants/teleapo-crepeONSUNDAYS/point3.jpg"
+    ],
+    "gallery": [
+      "/restaurants/teleapo-crepeONSUNDAYS/hero.jpg",
+      "/restaurants/teleapo-crepeONSUNDAYS/point1.jpg",
+      "/restaurants/teleapo-crepeONSUNDAYS/point2.jpg",
+      "/restaurants/teleapo-crepeONSUNDAYS/point3.jpg"
+    ],
+    "desc": "常陸大宮市石沢は、常陸大宮駅から北に14分ほど歩いた地区である。crepe ON SUNDAYSは、2023年9月13日にこの地でオープンした直火焼きクレープの専門店だ。",
+    "address": "茨城県常陸大宮市石沢1840",
+    "hours": "月・火・木〜日 11:00–19:00",
+    "closed": "水曜日",
+    "seats": "—（訪問前に公式確認）",
+    "nearest": "—",
+    "phone": "050-8889-4375",
+    "instagram": "https://www.instagram.com/onsundays_2023",
+    "source": {
+      "label": "Google ビジネスプロフィール",
+      "url": "https://maps.google.com/?cid=4677009372440577630"
+    },
+    "body": [
+      "crepe ON SUNDAYSは、茨城県常陸大宮市にあるお店です。業態は「クレープ店」、所在地は茨城県常陸大宮市石沢1840です。マチノワ編集部の特集記事では、「直火の鉄板で焼く、もちもちとした香ばしい生地」・「甘い定番からお食事系まで、季節限定も加わるメニュー」などを取り上げています。",
+      "営業時間は月・火・木〜日 11:00–19:00、定休日は水曜日です（Googleマップの営業時間による）。営業時間や価格は変わることがあるため、訪問前に公式サイトやSNS、お電話でご確認ください。"
+    ],
+    "highlights": [
+      "直火の鉄板で焼く、もちもちとした香ばしい生地",
+      "甘い定番からお食事系まで、季節限定も加わるメニュー",
+      "木製デッキつきの小さな店舗、駐車場3〜4台"
+    ],
+    "tags": [
+      "クレープ店",
+      "常陸大宮市",
+      "ランチ"
+    ],
+    "featureId": "crepeONSUNDAYS"
+  },
+  {
+    "id": "r939",
+    "name": "いわぬま蓑寿司",
+    "cuisine": "寿司店",
+    "area": "宮城県・岩沼市",
+    "region": "miyagi",
+    "shape": "square",
+    "image": "/restaurants/teleapo-いわぬま蓑寿司/hero.jpg",
+    "heroImages": [
+      "/restaurants/teleapo-いわぬま蓑寿司/hero.jpg",
+      "/restaurants/teleapo-いわぬま蓑寿司/point1.jpg",
+      "/restaurants/teleapo-いわぬま蓑寿司/point2.jpg",
+      "/restaurants/teleapo-いわぬま蓑寿司/point3.jpg"
+    ],
+    "gallery": [
+      "/restaurants/teleapo-いわぬま蓑寿司/hero.jpg",
+      "/restaurants/teleapo-いわぬま蓑寿司/point1.jpg",
+      "/restaurants/teleapo-いわぬま蓑寿司/point2.jpg",
+      "/restaurants/teleapo-いわぬま蓑寿司/point3.jpg"
+    ],
+    "desc": "岩沼市中央は、JR東北本線・常磐線の岩沼駅から徒歩12分ほどの市街地にある。いわぬま蓑寿司は、この地で2001年に開いた寿司店である。",
+    "address": "宮城県岩沼市中央1丁目2-11-1",
+    "hours": "火〜日 11:30–14:00, 17:00–22:00",
+    "closed": "月曜日",
+    "seats": "—（訪問前に公式確認）",
+    "nearest": "—",
+    "phone": "0223-23-2667",
+    "source": {
+      "label": "Google ビジネスプロフィール",
+      "url": "https://maps.google.com/?cid=11323268657348866105"
+    },
+    "body": [
+      "いわぬま蓑寿司は、宮城県岩沼市にあるお店です。業態は「寿司店」、所在地は宮城県岩沼市中央1丁目2-11-1です。マチノワ編集部の特集記事では、「握り・ちらし・丼と揃う、幅広いメニュー構成」・「うな重とあなご重、蒲焼きのメニュー」などを取り上げています。",
+      "営業時間は火〜日 11:30–14:00, 17:00–22:00、定休日は月曜日です（Googleマップの営業時間による）。営業時間や価格は変わることがあるため、訪問前に公式サイトやSNS、お電話でご確認ください。"
+    ],
+    "highlights": [
+      "握り・ちらし・丼と揃う、幅広いメニュー構成",
+      "うな重とあなご重、蒲焼きのメニュー",
+      "出前と持ち帰りで岩沼市内全域に対応"
+    ],
+    "tags": [
+      "寿司店",
+      "岩沼市",
+      "ランチ"
+    ],
+    "featureId": "いわぬま蓑寿司"
+  },
+  {
+    "id": "r940",
+    "name": "中華料理 龍芳",
+    "cuisine": "中華料理店",
+    "area": "大阪府・泉大津市",
+    "region": "osaka",
+    "shape": "square",
+    "image": "/restaurants/teleapo-中華料理龍芳/hero.jpg",
+    "heroImages": [
+      "/restaurants/teleapo-中華料理龍芳/hero.jpg",
+      "/restaurants/teleapo-中華料理龍芳/point1.jpg",
+      "/restaurants/teleapo-中華料理龍芳/point2.jpg",
+      "/restaurants/teleapo-中華料理龍芳/point3.jpg",
+      "/restaurants/teleapo-中華料理龍芳/point4.jpg"
+    ],
+    "gallery": [
+      "/restaurants/teleapo-中華料理龍芳/hero.jpg",
+      "/restaurants/teleapo-中華料理龍芳/point1.jpg",
+      "/restaurants/teleapo-中華料理龍芳/point2.jpg",
+      "/restaurants/teleapo-中華料理龍芳/point3.jpg",
+      "/restaurants/teleapo-中華料理龍芳/point4.jpg"
+    ],
+    "desc": "大阪府泉大津市の中華料理店。",
+    "address": "大阪府泉大津市東雲町6-48",
+    "hours": "月・木〜土 11:00–14:00, 17:00–22:00 / 日 11:00–21:00",
+    "closed": "火曜・水曜",
+    "seats": "90席",
+    "nearest": "—",
+    "phone": "0725-58-6169",
+    "source": {
+      "label": "Google ビジネスプロフィール",
+      "url": "https://maps.google.com/?cid=9807089259340168905"
+    },
+    "body": [
+      "中華料理 龍芳は、大阪府泉大津市にあるお店です。業態は「中華料理店」、所在地は大阪府泉大津市東雲町6-48です。マチノワ編集部の特集記事では、「創業以来45年変わらぬ酢豚と天津飯」・「A・B・C定食と日替わりランチ」などを取り上げています。",
+      "営業時間は月・木〜土 11:00–14:00, 17:00–22:00 / 日 11:00–21:00、定休日は火曜・水曜です（Googleマップの営業時間による）。席は90席。営業時間や価格は変わることがあるため、訪問前に公式サイトやSNS、お電話でご確認ください。"
+    ],
+    "highlights": [
+      "創業以来45年変わらぬ酢豚と天津飯",
+      "A・B・C定食と日替わりランチ",
+      "飲み放題コースと夜のせんべろセット",
+      "1階カウンター・テーブルから2階座敷まで90席"
+    ],
+    "tags": [
+      "中華料理店",
+      "泉大津市",
+      "ランチ"
+    ],
+    "featureId": "中華料理龍芳"
+  },
+  {
+    "id": "r941",
+    "name": "とんかつ美沢",
+    "cuisine": "とんかつ店",
+    "area": "茨城県・小美玉市",
+    "region": "ibaraki",
+    "shape": "square",
+    "image": "/restaurants/teleapo-とんかつ美沢/hero.jpg",
+    "heroImages": [
+      "/restaurants/teleapo-とんかつ美沢/hero.jpg",
+      "/restaurants/teleapo-とんかつ美沢/point1.jpg",
+      "/restaurants/teleapo-とんかつ美沢/point2.jpg",
+      "/restaurants/teleapo-とんかつ美沢/point3.jpg",
+      "/restaurants/teleapo-とんかつ美沢/point4.jpg"
+    ],
+    "gallery": [
+      "/restaurants/teleapo-とんかつ美沢/hero.jpg",
+      "/restaurants/teleapo-とんかつ美沢/point1.jpg",
+      "/restaurants/teleapo-とんかつ美沢/point2.jpg",
+      "/restaurants/teleapo-とんかつ美沢/point3.jpg",
+      "/restaurants/teleapo-とんかつ美沢/point4.jpg"
+    ],
+    "desc": "茨城県小美玉市川戸は、茨城空港から車で5分の位置にある。とんかつ美沢は、この地に28年前に開いたとんかつ専門店である。",
+    "address": "茨城県小美玉市川戸650-2",
+    "hours": "月・水〜日 11:30–14:00, 17:30–21:00",
+    "closed": "火曜日",
+    "seats": "—（訪問前に公式確認）",
+    "nearest": "—",
+    "phone": "0299-58-6716",
+    "source": {
+      "label": "Google ビジネスプロフィール",
+      "url": "https://maps.google.com/?cid=4686368007998676956"
+    },
+    "body": [
+      "とんかつ美沢は、茨城県小美玉市にあるお店です。業態は「とんかつ店」、所在地は茨城県小美玉市川戸650-2です。マチノワ編集部の特集記事では、「水戸のとんかつ店で修行した店主と28年の歴史」・「茨城の銘柄豚ローズポークと、地元農家直送の朝取れニラ」などを取り上げています。",
+      "営業時間は月・水〜日 11:30–14:00, 17:30–21:00、定休日は火曜日です（Googleマップの営業時間による）。営業時間や価格は変わることがあるため、訪問前に公式サイトやSNS、お電話でご確認ください。"
+    ],
+    "highlights": [
+      "水戸のとんかつ店で修行した店主と28年の歴史",
+      "茨城の銘柄豚ローズポークと、地元農家直送の朝取れニラ",
+      "看板のにらメンチと、とんかつ・ラーメンを組み合わせたAランチ",
+      "座敷と小上がり、全国通販への展開"
+    ],
+    "tags": [
+      "とんかつ店",
+      "小美玉市",
+      "ランチ"
+    ],
+    "featureId": "とんかつ美沢"
+  },
+  {
+    "id": "r942",
+    "name": "炭火焼肉釜山稲沢",
+    "cuisine": "焼肉店",
+    "area": "愛知県・稲沢市",
+    "region": "nagoya",
+    "shape": "square",
+    "image": "/restaurants/teleapo-炭火焼肉釜山稲沢/hero.jpg",
+    "heroImages": [
+      "/restaurants/teleapo-炭火焼肉釜山稲沢/hero.jpg",
+      "/restaurants/teleapo-炭火焼肉釜山稲沢/point1.jpg",
+      "/restaurants/teleapo-炭火焼肉釜山稲沢/point2.jpg",
+      "/restaurants/teleapo-炭火焼肉釜山稲沢/point3.jpg",
+      "/restaurants/teleapo-炭火焼肉釜山稲沢/point4.jpg"
+    ],
+    "gallery": [
+      "/restaurants/teleapo-炭火焼肉釜山稲沢/hero.jpg",
+      "/restaurants/teleapo-炭火焼肉釜山稲沢/point1.jpg",
+      "/restaurants/teleapo-炭火焼肉釜山稲沢/point2.jpg",
+      "/restaurants/teleapo-炭火焼肉釜山稲沢/point3.jpg",
+      "/restaurants/teleapo-炭火焼肉釜山稲沢/point4.jpg"
+    ],
+    "desc": "炭火焼肉釜山稲沢店は、愛知県を中心に複数の店舗を展開する釜山グループの一店で、炭火焼肉の香りと旨みを引き出す焼き方を軸に据えている。",
+    "address": "愛知県稲沢市井之口柿ノ木町171-2 稲沢市井ノ口柿ノ木町171-2",
+    "hours": "月・水〜金 17:00–22:30 / 土・日 12:00–22:30",
+    "closed": "火曜日",
+    "seats": "102席",
+    "nearest": "—",
+    "phone": "0587-96-7729",
+    "source": {
+      "label": "Google ビジネスプロフィール",
+      "url": "https://maps.google.com/?cid=2671389687492885120"
+    },
+    "body": [
+      "炭火焼肉釜山稲沢は、愛知県稲沢市にあるお店です。業態は「焼肉店」、所在地は愛知県稲沢市井之口柿ノ木町171-2 稲沢市井ノ口柿ノ木町171-2です。マチノワ編集部の特集記事では、「宮崎牛A5ランクと黒毛和牛A5ランクの希少部位」・「添加物なし、全品店内で仕込む自家製タレ」などを取り上げています。",
+      "営業時間は月・水〜金 17:00–22:30 / 土・日 12:00–22:30、定休日は火曜日です（Googleマップの営業時間による）。席は102席。営業時間や価格は変わることがあるため、訪問前に公式サイトやSNS、お電話でご確認ください。"
+    ],
+    "highlights": [
+      "宮崎牛A5ランクと黒毛和牛A5ランクの希少部位",
+      "添加物なし、全品店内で仕込む自家製タレ",
+      "スタンダードからデラックスまで3段階のコース",
+      "102席、個室と掘りごたつを備えた店内"
+    ],
+    "tags": [
+      "焼肉店",
+      "稲沢市",
+      "ランチ"
+    ],
+    "featureId": "炭火焼肉釜山稲沢"
   }
 ];
 
@@ -24178,7 +24423,12 @@ export const ARTICLE_STORE_FEATURE_IDS: Record<string, string> = {
   "r934": "魚彦",
   "r935": "ぽっぽ",
   "r936": "オトギノハコOTOGINOHAKO",
-  "r937": "PEOPLESCOFFEE"
+  "r937": "PEOPLESCOFFEE",
+  "r938": "crepeONSUNDAYS",
+  "r939": "いわぬま蓑寿司",
+  "r940": "中華料理龍芳",
+  "r941": "とんかつ美沢",
+  "r942": "炭火焼肉釜山稲沢"
 };
 
 /** 特集記事ID → 店舗ID */
@@ -24676,5 +24926,10 @@ export const ARTICLE_STORE_ID_BY_FEATURE: Record<string, string> = {
   "魚彦": "r934",
   "ぽっぽ": "r935",
   "オトギノハコOTOGINOHAKO": "r936",
-  "PEOPLESCOFFEE": "r937"
+  "PEOPLESCOFFEE": "r937",
+  "crepeONSUNDAYS": "r938",
+  "いわぬま蓑寿司": "r939",
+  "中華料理龍芳": "r940",
+  "とんかつ美沢": "r941",
+  "炭火焼肉釜山稲沢": "r942"
 };

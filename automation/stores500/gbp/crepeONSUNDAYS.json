@@ -1,0 +1,22 @@
+{
+  "name": "crepe ON SUNDAYS",
+  "address": "茨城県常陸大宮市石沢１８４０",
+  "lat": 36.5391987,
+  "lng": 140.412105,
+  "category": "クレープ店",
+  "hours": {
+    "月": "11:00–19:00",
+    "火": "11:00–19:00",
+    "水": "定休日",
+    "木": "11:00–19:00",
+    "金": "11:00–19:00",
+    "土": "11:00–19:00",
+    "日": "11:00–19:00"
+  },
+  "phone": "050-8889-4375",
+  "website": "https://www.instagram.com/onsundays_2023?igsh=MTJ2dG8yMHR3YWNxNw==",
+  "priceRange": null,
+  "status": null,
+  "gbpUrl": "https://maps.google.com/?cid=4677009372440577630",
+  "fetchedAt": "2026-11-12T08:07:48.699Z"
+}
