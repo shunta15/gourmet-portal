@@ -24062,6 +24062,107 @@ export const ARTICLE_STORES: Restaurant[] = [
       "ランチ"
     ],
     "featureId": "おじぎ茶屋"
+  },
+  {
+    "id": "r946",
+    "name": "本格手打ちうどん亭なべきち",
+    "cuisine": "うどん屋",
+    "area": "東京都・清瀬市",
+    "region": "tokyo",
+    "shape": "square",
+    "image": "/restaurants/teleapo-本格手打ちうどん亭なべきち/hero.jpg",
+    "heroImages": [
+      "/restaurants/teleapo-本格手打ちうどん亭なべきち/hero.jpg",
+      "/restaurants/teleapo-本格手打ちうどん亭なべきち/point1.jpg",
+      "/restaurants/teleapo-本格手打ちうどん亭なべきち/point2.jpg",
+      "/restaurants/teleapo-本格手打ちうどん亭なべきち/point3.jpg",
+      "/restaurants/teleapo-本格手打ちうどん亭なべきち/point4.jpg"
+    ],
+    "gallery": [
+      "/restaurants/teleapo-本格手打ちうどん亭なべきち/hero.jpg",
+      "/restaurants/teleapo-本格手打ちうどん亭なべきち/point1.jpg",
+      "/restaurants/teleapo-本格手打ちうどん亭なべきち/point2.jpg",
+      "/restaurants/teleapo-本格手打ちうどん亭なべきち/point3.jpg",
+      "/restaurants/teleapo-本格手打ちうどん亭なべきち/point4.jpg"
+    ],
+    "desc": "東京都清瀬市のうどん屋。",
+    "address": "東京都清瀬市竹丘2丁目2-26 ガーデンハウス",
+    "hours": "水〜日 10:00–14:00",
+    "closed": "月曜・火曜",
+    "seats": "—（訪問前に公式確認）",
+    "nearest": "—",
+    "phone": "042-493-0155",
+    "source": {
+      "label": "Google ビジネスプロフィール",
+      "url": "https://maps.google.com/?cid=9919755792288005372"
+    },
+    "body": [
+      "本格手打ちうどん亭なべきちは、東京都清瀬市にあるお店です。業態は「うどん屋」、所在地は東京都清瀬市竹丘2丁目2-26 ガーデンハウスです。マチノワ編集部の特集記事では、「群馬・長野の地粉を3日かけて足踏みで打つうどん」・「豚バラ肉が入る肉汁と、無添加の出汁」などを取り上げています。",
+      "営業時間は水〜日 10:00–14:00、定休日は月曜・火曜です（Googleマップの営業時間による）。営業時間や価格は変わることがあるため、訪問前に公式サイトやSNS、お電話でご確認ください。"
+    ],
+    "highlights": [
+      "群馬・長野の地粉を3日かけて足踏みで打つうどん",
+      "豚バラ肉が入る肉汁と、無添加の出汁",
+      "量を選べる「もりもりうどん」と「レディースセット」",
+      "カウンター・テーブル2卓・奥座敷、約50人を収容"
+    ],
+    "tags": [
+      "うどん屋",
+      "うどん",
+      "清瀬市",
+      "ランチ"
+    ],
+    "featureId": "本格手打ちうどん亭なべきち"
+  },
+  {
+    "id": "r947",
+    "name": "レストランアップルミント",
+    "cuisine": "居酒屋",
+    "area": "広島県・竹原市",
+    "region": "hiroshima",
+    "shape": "square",
+    "image": "/restaurants/teleapo-レストランアップルミント/hero.jpg",
+    "heroImages": [
+      "/restaurants/teleapo-レストランアップルミント/hero.jpg",
+      "/restaurants/teleapo-レストランアップルミント/point1.jpg",
+      "/restaurants/teleapo-レストランアップルミント/point2.jpg",
+      "/restaurants/teleapo-レストランアップルミント/point3.jpg",
+      "/restaurants/teleapo-レストランアップルミント/point4.jpg"
+    ],
+    "gallery": [
+      "/restaurants/teleapo-レストランアップルミント/hero.jpg",
+      "/restaurants/teleapo-レストランアップルミント/point1.jpg",
+      "/restaurants/teleapo-レストランアップルミント/point2.jpg",
+      "/restaurants/teleapo-レストランアップルミント/point3.jpg",
+      "/restaurants/teleapo-レストランアップルミント/point4.jpg"
+    ],
+    "desc": "広島県竹原市の居酒屋。",
+    "address": "広島県竹原市中央2丁目7-18",
+    "hours": "月・火 11:30–15:00 / 金〜日 11:30–15:00, 18:00–22:00",
+    "closed": "水曜・木曜",
+    "seats": "22席",
+    "nearest": "—",
+    "phone": "090-8365-7000",
+    "source": {
+      "label": "Google ビジネスプロフィール",
+      "url": "https://maps.google.com/?cid=15613126175457725119"
+    },
+    "body": [
+      "レストランアップルミントは、広島県竹原市にあるお店です。業態は「居酒屋」、所在地は広島県竹原市中央2丁目7-18です。マチノワ編集部の特集記事では、「数々のメディアに取り上げられた「黄金のオムライス」」・「峠下牛の赤身ステーキと瀬戸内の魚介を使った料理」などを取り上げています。",
+      "営業時間は月・火 11:30–15:00 / 金〜日 11:30–15:00, 18:00–22:00、定休日は水曜・木曜です（Googleマップの営業時間による）。席は22席。営業時間や価格は変わることがあるため、訪問前に公式サイトやSNS、お電話でご確認ください。"
+    ],
+    "highlights": [
+      "数々のメディアに取り上げられた「黄金のオムライス」",
+      "峠下牛の赤身ステーキと瀬戸内の魚介を使った料理",
+      "ランチから宴会まで対応するコースとアラカルトの組み立て",
+      "DIY内装の22席と日本酒・カクテルを含む豊富なドリンク"
+    ],
+    "tags": [
+      "居酒屋",
+      "竹原市",
+      "ランチ"
+    ],
+    "featureId": "レストランアップルミント"
   }
 ];
 
@@ -24568,7 +24669,9 @@ export const ARTICLE_STORE_FEATURE_IDS: Record<string, string> = {
   "r942": "炭火焼肉釜山稲沢",
   "r943": "アメリカンダイナーラ・ブーム",
   "r944": "焼き鳥りょうちゃん甲府",
-  "r945": "おじぎ茶屋"
+  "r945": "おじぎ茶屋",
+  "r946": "本格手打ちうどん亭なべきち",
+  "r947": "レストランアップルミント"
 };
 
 /** 特集記事ID → 店舗ID */
@@ -25074,5 +25177,7 @@ export const ARTICLE_STORE_ID_BY_FEATURE: Record<string, string> = {
   "炭火焼肉釜山稲沢": "r942",
   "アメリカンダイナーラ・ブーム": "r943",
   "焼き鳥りょうちゃん甲府": "r944",
-  "おじぎ茶屋": "r945"
+  "おじぎ茶屋": "r945",
+  "本格手打ちうどん亭なべきち": "r946",
+  "レストランアップルミント": "r947"
 };

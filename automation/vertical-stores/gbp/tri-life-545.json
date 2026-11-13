@@ -1,0 +1,40 @@
+{
+  "tab": "トリニティアポ",
+  "tabEn": "tri-life",
+  "row": 545,
+  "sheet": {
+    "name": "富戸三島神社",
+    "address": "",
+    "url": "https://www.google.com/maps/search/?api=1&query=%E5%AF%8C%E6%88%B8%E4%B8%89%E5%B3%B6%E7%A5%9E%E7%A4%BE%20055-751-2114%20%E9%9D%99%E5%B2%A1%E7%9C%8C%E4%BC%8A%E6%9D%B1%E5%B8%82%E5%AF%8C%E6%88%B8%EF%BC%96%EF%BC%98%EF%BC%96",
+    "type": "その他",
+    "d1": "",
+    "d2": ""
+  },
+  "urlKind": "mapsApi",
+  "route": "第1段(verify-gbp.mjs)で確認済み",
+  "verdict": "一致",
+  "verdictReason": "手がかり: 店名＋電話＋住所(番地まで)。電話が一致／店名: exact(シート「富戸三島神社」/ マップ「富戸三島神社」)／住所(シート): exact・町名・番地とも一致",
+  "place": {
+    "name": "富戸三島神社",
+    "address": "静岡県伊東市富戸６８６",
+    "category": "神社",
+    "lat": 34.9063276,
+    "lng": 139.1337542,
+    "gbpUrl": "https://maps.google.com/?cid=10766146327175793143",
+    "phone": "0557-51-2114",
+    "website": "http://shizuoka-jinjacho.or.jp/shokai/jinja.php?id=4402298",
+    "hours": {
+      "月": "24時間営業",
+      "火": "24時間営業",
+      "水": "24時間営業",
+      "木": "24時間営業",
+      "金": "24時間営業",
+      "土": "24時間営業",
+      "日": "24時間営業"
+    },
+    "reserveLinks": [],
+    "statusSignals": [],
+    "closedSignal": false
+  },
+  "fetchedAt": "2026-11-13T04:08:21.245Z"
+}

@@ -1,0 +1,156 @@
+{
+  "key": "tri-life-548",
+  "images": [
+    {
+      "path": "/_portal/vshops/tri-life-548/g01.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9T10cZvYW-3VmlokfPfnrxdLCX7P1Azg2y6pPYH2Wb4ORvVAjo2PTkAmY0_-OxNshdEwZ7HW7YA9cEKt5eG9JuDJTnCtXoIunEG8e1QKfvlV-segFRm6jb8iLgJMf4e8nlUCzNwSa0uPKp4=s1200",
+      "pageUrl": "https://maps.google.com/?cid=14758955296639466",
+      "what": "防護服を着た作業員が室内で作業している様子",
+      "kind": "common",
+      "width": 900,
+      "height": 1200,
+      "source": "Google マップ"
+    },
+    {
+      "path": "/_portal/vshops/tri-life-548/g02.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9SGZerwQpvWHWaxmldkuknS6076QxCzv11NPdRWgu-XeB6cpn6EA_i6cve0gHz2S75Dfq1k0H_AT9niISN96GgdEdI8wozo-3H1n3IvO3NO0GhcAok6amVjCfMvVwUnhKZFYWeiY1weGTs=s1200",
+      "pageUrl": "https://maps.google.com/?cid=14758955296639466",
+      "what": "片付け前の室内に養生シートが張られた状態",
+      "kind": "common",
+      "width": 675,
+      "height": 1200,
+      "source": "Google マップ"
+    },
+    {
+      "path": "/_portal/vshops/tri-life-548/g03.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9TcNGGDRwTodEh0Ay949-xIi5iZBNUVF_TYm2uRQUNjTaA_TU08PMON6zAxwRzhB7__OYaTMLvg-T6yg-6W9Y4DbUYxtTQdyJ4-dthRYXKEOKf7mVdbiYH7axygYHYjwHIgjchR=s1200",
+      "pageUrl": "https://maps.google.com/?cid=14758955296639466",
+      "what": "防護服の作業員が大きな段ボール箱を運んでいる",
+      "kind": "common",
+      "width": 900,
+      "height": 1200,
+      "source": "Google マップ"
+    },
+    {
+      "path": "/_portal/vshops/tri-life-548/s01.jpg",
+      "imageUrl": "https://liferecycleassociation.com/wp-content/uploads/2025/03/img_top_about01.jpg",
+      "pageUrl": "https://liferecycleassociation.com/",
+      "what": "江戸・明治期の古文書が広げられた様子",
+      "kind": "common",
+      "width": 1200,
+      "height": 675,
+      "source": "公式サイト"
+    },
+    {
+      "path": "/_portal/vshops/tri-life-548/s02.jpg",
+      "imageUrl": "https://liferecycleassociation.com/wp-content/uploads/2025/11/IMG_38071-1-e1763970550428.jpg",
+      "pageUrl": "https://liferecycleassociation.com/",
+      "what": "整理後の空になった明るい室内",
+      "kind": "common",
+      "width": 866,
+      "height": 1280,
+      "source": "公式サイト"
+    },
+    {
+      "path": "/_portal/vshops/tri-life-548/s03.jpg",
+      "imageUrl": "https://liferecycleassociation.com/wp-content/uploads/2025/06/IMG_08871.jpg",
+      "pageUrl": "https://liferecycleassociation.com/",
+      "what": "屋外の草が茂る敷地の様子",
+      "kind": "view",
+      "width": 720,
+      "height": 1280,
+      "source": "公式サイト"
+    },
+    {
+      "path": "/_portal/vshops/tri-life-548/s04.jpg",
+      "imageUrl": "https://liferecycleassociation.com/wp-content/uploads/2025/06/IMG_1304.jpeg",
+      "pageUrl": "https://liferecycleassociation.com/",
+      "what": "作業員が古文書を広げて確認している様子",
+      "kind": "common",
+      "width": 960,
+      "height": 1280,
+      "source": "公式サイト"
+    },
+    {
+      "path": "/_portal/vshops/tri-life-548/s11.jpg",
+      "imageUrl": "https://liferecycleassociation.com/wp-content/uploads/2025/11/IMG_37581-e1763290391699.jpg",
+      "pageUrl": "https://liferecycleassociation.com/",
+      "what": "「それを『帆跡』と呼びます。」と書かれた文字入り写真",
+      "kind": "common",
+      "width": 1166,
+      "height": 614,
+      "source": "公式サイト"
+    },
+    {
+      "path": "/_portal/vshops/tri-life-548/s12.jpg",
+      "imageUrl": "https://liferecycleassociation.com/wp-content/uploads/2025/05/IMG_1425-scaled-e1747742037972.jpeg",
+      "pageUrl": "https://liferecycleassociation.com/",
+      "what": "防護服を着た複数の作業員が特殊清掃を行っている様子",
+      "kind": "common",
+      "width": 1280,
+      "height": 955,
+      "source": "公式サイト"
+    },
+    {
+      "path": "/_portal/vshops/tri-life-548/s13.jpg",
+      "imageUrl": "https://liferecycleassociation.com/wp-content/uploads/2025/05/IMG_1977-e1747740208881.jpg",
+      "pageUrl": "https://liferecycleassociation.com/",
+      "what": "防護服の作業員が室内で清掃作業をしている",
+      "kind": "common",
+      "width": 1168,
+      "height": 1177,
+      "source": "公式サイト"
+    },
+    {
+      "path": "/_portal/vshops/tri-life-548/s14.jpg",
+      "imageUrl": "https://liferecycleassociation.com/wp-content/uploads/2025/11/IMG_37561-e1763289565186.jpg",
+      "pageUrl": "https://liferecycleassociation.com/",
+      "what": "整理中の倉庫に金属類や物品が並んでいる様子",
+      "kind": "common",
+      "width": 1170,
+      "height": 995,
+      "source": "公式サイト"
+    },
+    {
+      "path": "/_portal/vshops/tri-life-548/s15.jpg",
+      "imageUrl": "https://liferecycleassociation.com/wp-content/uploads/2025/05/IMG_13641-e1763289425846.jpg",
+      "pageUrl": "https://liferecycleassociation.com/",
+      "what": "屋外で廃材や金属スクラップが積み重なった様子",
+      "kind": "view",
+      "width": 1280,
+      "height": 1127,
+      "source": "公式サイト"
+    },
+    {
+      "path": "/_portal/vshops/tri-life-548/s16.jpg",
+      "imageUrl": "https://liferecycleassociation.com/wp-content/uploads/2025/06/IMG_15701.jpg",
+      "pageUrl": "https://liferecycleassociation.com/",
+      "what": "整理された室内に複数の掛け軸や書画が並んでいる",
+      "kind": "common",
+      "width": 960,
+      "height": 1280,
+      "source": "公式サイト"
+    },
+    {
+      "path": "/_portal/vshops/tri-life-548/s17.jpg",
+      "imageUrl": "https://liferecycleassociation.com/wp-content/uploads/2025/06/IMG_12761-2.jpg",
+      "pageUrl": "https://liferecycleassociation.com/",
+      "what": "巻物状の掛け軸が複数並んでいる様子",
+      "kind": "common",
+      "width": 960,
+      "height": 1280,
+      "source": "公式サイト"
+    },
+    {
+      "path": "/_portal/vshops/tri-life-548/s18.jpg",
+      "imageUrl": "https://liferecycleassociation.com/wp-content/uploads/2025/06/IMG_12361.jpg",
+      "pageUrl": "https://liferecycleassociation.com/",
+      "what": "木製の箱に収められた巻物や文書が並んでいる様子",
+      "kind": "common",
+      "width": 960,
+      "height": 1280,
+      "source": "公式サイト"
+    }
+  ],
+  "note": "automation/v2/write.mjs が 2026-11-13T04:25:37.174Z に取得。店の実写だけ(AI 画像・汎用画像・地図・ロゴ・顔が大きい画像は除外)。"
+}

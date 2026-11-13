@@ -1,0 +1,40 @@
+{
+  "tab": "トリニティアポ",
+  "tabEn": "tri-activity",
+  "row": 552,
+  "sheet": {
+    "name": "竹林広場",
+    "address": "",
+    "url": "https://www.google.com/maps/search/?api=1&query=%E7%AB%B9%E6%9E%97%E5%BA%83%E5%A0%B4%20090-3718-2820%20%E3%80%92610-1153%20%E4%BA%AC%E9%83%BD%E5%BA%9C%E4%BA%AC%E9%83%BD%E5%B8%82%E8%A5%BF%E4%BA%AC%E5%8C%BA%E5%A4%A7%E5%8E%9F%E9%87%8E%E5%8D%97%E6%98%A5%E6%97%A5%E7%94%BA",
+    "type": "体験",
+    "d1": "",
+    "d2": ""
+  },
+  "urlKind": "mapsApi",
+  "route": "第1段(verify-gbp.mjs)で確認済み",
+  "verdict": "一致",
+  "verdictReason": "手がかり: 店名＋電話。電話が一致／店名: exact(シート「竹林広場」/ マップ「竹林広場(バンブーフィールド)」)／住所(シート): coarse・シートの住所に番地なし（町名まで一致）",
+  "place": {
+    "name": "竹林広場(バンブーフィールド)",
+    "address": "京都府京都市西京区大原野南春日町",
+    "category": "バーベキュー場",
+    "lat": 34.9562075,
+    "lng": 135.6513499,
+    "gbpUrl": "https://maps.google.com/?cid=10315793526726200164",
+    "phone": "090-3718-2820",
+    "website": null,
+    "hours": {
+      "月": "10:00–15:00",
+      "火": "10:00–15:00",
+      "水": "10:00–15:00",
+      "木": "10:00–15:00",
+      "金": "10:00–15:00",
+      "土": "10:00–15:00",
+      "日": "10:00–15:00"
+    },
+    "reserveLinks": [],
+    "statusSignals": [],
+    "closedSignal": false
+  },
+  "fetchedAt": "2026-11-13T04:13:37.012Z"
+}

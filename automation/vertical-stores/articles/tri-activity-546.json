@@ -1,0 +1,173 @@
+{
+  "key": "tri-activity-546",
+  "headline": "神奈川県鎌倉市雪ノ下にある、だるま絵付けと数珠ブレスレット作りの体験工房。JR鎌倉駅から約15分の歴史ある雪ノ下エリアに構える。",
+  "lede": "鎌倉市にある「DARUMA LAB.KAMAKURA」です。だるまへの絵付け体験と、天然石・木玉を使った数珠ブレスレット作り体験を提供している工房で、鎌倉の静かな雰囲気の中で日本の伝統的なものづくりにふれられます。体験は毎日7枠設けており、持ち物は不要で手ぶらで参加できます。完成した作品はその場で持ち帰ることができます。少人数グループでの共有セッション形式で、1枠に同時6名まで参加できます。予約はBókunのオンライン予約システムから受け付けています。",
+  "sections": [
+    {
+      "heading": "体験の内容と流れ",
+      "body": "体験は「だるま絵付け」と「数珠作り」の2種類から選べます。だるま絵付けは、真っ白なだるまに自由にデザインを描く体験で、所要時間は60〜90分です。だるまはサイズ違いで小・中・大の3種類から選べます。数珠作りは、厳選された天然石や木玉の中から好みのビーズを選び、自分だけの数珠ブレスレットを仕上げる体験で、所要時間は約60分です。ビーズの種類は24種類または48種類のコースから選べます。いずれの体験も、スタッフが作り方を案内したあとに制作を楽しむ流れで進みます。完成した作品はその場で持ち帰れます。"
+    },
+    {
+      "heading": "対象と準備",
+      "body": "特別な持ち物は不要で、手ぶらで参加できます。当日の店頭払いに対応しています。貸切予約には対応しておらず、少人数のグループが混在する共有セッション形式で開催しています。1枠あたりの定員は同時6名です。バスや車でのアクセスも可能で、公共交通機関でも来店できます。キャンセル条件はBókun予約画面で確認できます。体験はだるま絵付けと数珠作りの2種類あり、当日に希望する体験を選ぶのではなく、予約時にあらかじめ体験と日時・人数を選んでBókunから予約します。"
+    },
+    {
+      "heading": "集合場所と行き方",
+      "body": "工房はJR鎌倉駅から約15分の、鎌倉の歴史ある雪ノ下エリアにあります。公共交通機関のほか、バスや車でのアクセスも可能です。予約はBókunのオンライン予約ページから受け付けています。毎日9:00・10:30・12:00・13:30・15:00・16:30・18:00の7つの枠が設けられており、18:00の枠は最長19:30まで対応しています。体験と日時・人数を選択してBókunから予約します。予約の際にキャンセル条件を確認でき、当日は手ぶらで来店して、店頭で支払いをすれば体験を始められます。"
+    }
+  ],
+  "menus": [
+    {
+      "name": "だるま絵付け(小)"
+    },
+    {
+      "name": "だるま絵付け(中)"
+    },
+    {
+      "name": "だるま絵付け(大)"
+    },
+    {
+      "name": "数珠作り(24種類)"
+    },
+    {
+      "name": "数珠作り(48種類)"
+    }
+  ],
+  "tags": [
+    {
+      "tag": "手ぶらでOK",
+      "factIndex": 5
+    }
+  ],
+  "facts": [
+    {
+      "claim": "だるま絵付け体験の所要時間は60〜90分",
+      "source": "https://darumalabkamakura.wixsite.com/daruma-labkamakura",
+      "quote": "所要時間：60〜90分",
+      "checkedAt": "2026-11-13"
+    },
+    {
+      "claim": "数珠作り体験の所要時間は約60分",
+      "source": "https://darumalabkamakura.wixsite.com/daruma-labkamakura",
+      "quote": "所要時間：約60分",
+      "checkedAt": "2026-11-13"
+    },
+    {
+      "claim": "体験は毎日9:00・10:30・12:00・13:30・15:00・16:30・18:00の7枠で開催",
+      "source": "https://darumalabkamakura.wixsite.com/daruma-labkamakura/reservation",
+      "quote": "毎日 9:00 / 10:30 / 12:00 / 13:30 / 15:00 / 16:30 / 18:00",
+      "checkedAt": "2026-11-13"
+    },
+    {
+      "claim": "1枠あたり同時6名まで参加できる",
+      "source": "https://darumalabkamakura.wixsite.com/daruma-labkamakura/reservation",
+      "quote": "同時6名",
+      "checkedAt": "2026-11-13"
+    },
+    {
+      "claim": "18:00の枠は最長19:30まで対応",
+      "source": "https://darumalabkamakura.wixsite.com/daruma-labkamakura/reservation",
+      "quote": "18時枠は最長19:30まで",
+      "checkedAt": "2026-11-13"
+    },
+    {
+      "claim": "特別な持ち物は不要で手ぶらで参加できる",
+      "source": "https://darumalabkamakura.wixsite.com/daruma-labkamakura",
+      "quote": "特に必要な持ち物はありません。手ぶらでお越しください。",
+      "checkedAt": "2026-11-13"
+    },
+    {
+      "claim": "体験の内容はスタッフが案内してから制作が始まる",
+      "source": "https://darumalabkamakura.wixsite.com/daruma-labkamakura",
+      "quote": "作り方をご案内したあと、だるまの絵付けや数珠作りを楽しんでいただきます",
+      "checkedAt": "2026-11-13"
+    },
+    {
+      "claim": "完成した作品は持ち帰ることができる",
+      "source": "https://darumalabkamakura.wixsite.com/daruma-labkamakura",
+      "quote": "完成した作品はお持ち帰りいただけます",
+      "checkedAt": "2026-11-13"
+    },
+    {
+      "claim": "少人数グループでの共有セッション形式で、貸切予約には対応していない",
+      "source": "https://darumalabkamakura.wixsite.com/daruma-labkamakura",
+      "quote": "現在は少人数のグループで体験をご案内しています。貸切予約には対応していません。",
+      "checkedAt": "2026-11-13"
+    },
+    {
+      "claim": "当日店頭払いに対応している",
+      "source": "https://darumalabkamakura.wixsite.com/daruma-labkamakura/reservation",
+      "quote": "当日店頭払い",
+      "checkedAt": "2026-11-13"
+    },
+    {
+      "claim": "予約はBókunのオンライン予約システムで行う",
+      "source": "https://darumalabkamakura.wixsite.com/daruma-labkamakura/reservation",
+      "quote": "体験と日時・人数を選択して、Bókunからご予約ください",
+      "checkedAt": "2026-11-13"
+    },
+    {
+      "claim": "キャンセル条件はBókun予約画面で確認できる",
+      "source": "https://darumalabkamakura.wixsite.com/daruma-labkamakura",
+      "quote": "キャンセル条件はBókun予約画面でご確認ください",
+      "checkedAt": "2026-11-13"
+    },
+    {
+      "claim": "工房はJR鎌倉駅から約15分の雪ノ下エリアにある",
+      "source": "https://darumalabkamakura.wixsite.com/daruma-labkamakura",
+      "quote": "JR鎌倉駅から約15分。歴史ある雪ノ下エリアにある工房です。",
+      "checkedAt": "2026-11-13"
+    },
+    {
+      "claim": "バスや車でのアクセスも可能",
+      "source": "https://darumalabkamakura.wixsite.com/daruma-labkamakura",
+      "quote": "バスやお車でもお越しいただけます。",
+      "checkedAt": "2026-11-13"
+    },
+    {
+      "claim": "数珠作り体験では天然石と木玉の中からビーズを選ぶ",
+      "source": "https://darumalabkamakura.wixsite.com/daruma-labkamakura",
+      "quote": "厳選された天然石や木玉を選び、あなただけの数珠ブレスレットを作ります",
+      "checkedAt": "2026-11-13"
+    },
+    {
+      "claim": "数珠作りのビーズは24種類または48種類のコースがある",
+      "source": "https://darumalabkamakura.wixsite.com/daruma-labkamakura/reservation",
+      "quote": "24種類 / 48種類",
+      "checkedAt": "2026-11-13"
+    },
+    {
+      "claim": "だるま絵付けはサイズが小・中・大の3種類ある",
+      "source": "https://darumalabkamakura.wixsite.com/daruma-labkamakura/reservation",
+      "quote": "小 / 中 / 大",
+      "checkedAt": "2026-11-13"
+    },
+    {
+      "claim": "工房は公共交通機関でもアクセスできる",
+      "source": "https://darumalabkamakura.wixsite.com/daruma-labkamakura",
+      "quote": "公共交通機関でお越しいただけます",
+      "checkedAt": "2026-11-13"
+    },
+    {
+      "claim": "工房ではビーズの一粒ひと粒に願いを込めることを大切にしている",
+      "source": "https://darumalabkamakura.wixsite.com/daruma-labkamakura",
+      "quote": "筆のひと塗りや数珠の一粒ひと粒に、願いを込めることを大切にしています",
+      "checkedAt": "2026-11-13"
+    }
+  ],
+  "sources": [
+    {
+      "label": "公式サイト",
+      "url": "https://darumalabkamakura.wixsite.com/daruma-labkamakura"
+    },
+    {
+      "label": "公式サイト(予約ページ)",
+      "url": "https://darumalabkamakura.wixsite.com/daruma-labkamakura/reservation"
+    },
+    {
+      "label": "Google マップ",
+      "url": "https://maps.google.com/?cid=13467051271012484143"
+    }
+  ],
+  "notes": "automation/v2/write.mjs が 2026-11-13 に claude -p --model sonnet で作成。事実の裏取り: 19/19 件(quote が出どころの内容に合うもの。言い換え可)。裏取りに通らなかった facts は載せていない。"
+}

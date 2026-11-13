@@ -37055,6 +37055,529 @@
         ],
         "checkedAt": "2026-11-12"
       }
+    },
+    {
+      "id": "li0231",
+      "vertical": "life",
+      "category": "shrine-temple",
+      "name": "富戸三島神社",
+      "pref": "shizuoka",
+      "cityName": "伊東市",
+      "address": "静岡県伊東市富戸686",
+      "lat": 34.9063276,
+      "lng": 139.1337542,
+      "phone": "0557-51-2114",
+      "url": "http://shizuoka-jinjacho.or.jp/shokai/jinja.php?id=4402298",
+      "website": "http://shizuoka-jinjacho.or.jp/shokai/jinja.php?id=4402298",
+      "mapUrl": "https://maps.google.com/?cid=10766146327175793143",
+      "image": "/_portal/vshops/tri-life-545/g01.jpg",
+      "images": [
+        "/_portal/vshops/tri-life-545/g01.jpg",
+        "/_portal/vshops/tri-life-545/g02.jpg",
+        "/_portal/vshops/tri-life-545/g03.jpg",
+        "/_portal/vshops/tri-life-545/g04.jpg",
+        "/_portal/vshops/tri-life-545/g05.jpg",
+        "/_portal/vshops/tri-life-545/g06.jpg",
+        "/_portal/vshops/tri-life-545/g07.jpg",
+        "/_portal/vshops/tri-life-545/g09.jpg",
+        "/_portal/vshops/tri-life-545/g10.jpg",
+        "/_portal/vshops/tri-life-545/s08.jpg",
+        "/_portal/vshops/tri-life-545/s09.jpg",
+        "/_portal/vshops/tri-life-545/s10.jpg"
+      ],
+      "photos": [
+        {
+          "path": "/_portal/vshops/tri-life-545/g01.jpg",
+          "what": "石段と鳥居が見える神社の正面外観",
+          "kind": "exterior",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-life-545/g02.jpg",
+          "what": "白装束の踊り手による鹿島踊りの奉納",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 675
+        },
+        {
+          "path": "/_portal/vshops/tri-life-545/g03.jpg",
+          "what": "木造社殿の正面と注連縄",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-life-545/g04.jpg",
+          "what": "参道入口と鳥居",
+          "kind": "exterior",
+          "width": 1142,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-life-545/g05.jpg",
+          "what": "境内に立つ狛犬",
+          "kind": "exterior",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-life-545/g06.jpg",
+          "what": "社殿向拝部分の精緻な木彫り装飾",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-life-545/g07.jpg",
+          "what": "社殿内部と大太鼓",
+          "kind": "common",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-life-545/g09.jpg",
+          "what": "境内の石柱と木々",
+          "kind": "exterior",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-life-545/g10.jpg",
+          "what": "社殿内部の祭壇と扁額",
+          "kind": "common",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-life-545/s08.jpg",
+          "what": "緑に囲まれた朱色と木造の社殿",
+          "kind": "exterior",
+          "width": 1152,
+          "height": 642
+        },
+        {
+          "path": "/_portal/vshops/tri-life-545/s09.jpg",
+          "what": "木造社殿の屋根と緑の木々",
+          "kind": "exterior",
+          "width": 1152,
+          "height": 642
+        },
+        {
+          "path": "/_portal/vshops/tri-life-545/s10.jpg",
+          "what": "境内に並ぶ絵馬や白い奉納物",
+          "kind": "exterior",
+          "width": 1152,
+          "height": 642
+        }
+      ],
+      "tags": [],
+      "article": {
+        "headline": "伊東市富戸に鎮座する、奈良時代の棟札が残る古社。源頼朝ゆかりの伝承と、10月の例大祭で奉納される鹿島踊りで知られる。",
+        "lede": "伊東市にある「富戸三島神社」です。伊豆急行線富戸駅から徒歩約10分、富戸の集落に鎮座する神社で、現存する最古の棟札に奈良時代の天平年間（729〜749年）の記録が残る古社です。主祭神は積羽八重事代主命（コトシロヌシ）で、三島大神が伊豆七島を開拓したのち賀茂郡から田方郡へ巡幸する途中、富戸の地が神徳を受けたことから奉斎されたと伝わります。境内には若宮八幡宮を相殿に祀り、この社は平安時代に伊豆に流された源頼朝と伊東祐親の三女・八重姫の間に生まれた千鶴丸を祀ります。千鶴丸は幼くして命を絶たれ、その遺体が富戸の海岸に流れ着き、村人が手厚く葬ったと伝わります。毎年10月には例大祭が開かれ、鹿島踊り・神楽・万灯など複数の保存会が関わる祭礼が行われます。",
+        "sections": [
+          {
+            "heading": "由緒・歴史",
+            "body": "富戸三島神社はかつて「元御島神社」とも称されていました。創建年代は不詳ですが、現存する最古の棟札に天平年間（729〜749年）の記録があり、約1,300年前の奈良時代には既に存在していた古社です。延喜式神名帳の式内社「許志伎命神社」の参考社に比定されており、旧社格は村社です。主祭神の積羽八重事代主命は三島大神とも呼ばれ、伊豆七島を開拓したのちに賀茂郡白浜村から田方郡三島町へ巡幸した際、途中の富戸で神徳をもたらしたと伝わります。平安時代、伊豆に配流されていた源頼朝と伊東祐親の三女・八重姫の間に生まれた千鶴丸は、外祖父・祐親の命により殺害されました。その遺体が富戸の宇根の海岸に流れ着き、村人の甚之右衛門が着衣から高貴な身分と察して手厚く葬ったと伝えられています。その後、千鶴丸は若宮八幡宮として当社の相殿に祀られました。"
+          },
+          {
+            "heading": "社殿と境内",
+            "body": "現在の本殿は享和3年（1803年）に建造された二間社流造という珍しい形式です。一つの棟の中に右側に三島神社、左側に若宮八幡宮を別々に祀る造りとなっています。社殿は総ケヤキ造・柿葺き屋根で、向拝柱・向拝虹梁・蟇股などの構造材に精密な彫刻装飾が施されています。大工の棟梁は田子村（現在の西伊豆町）の土屋左七が務めたと棟札に記録されています。この棟札2枚は伊東市の有形文化財に指定されています。境内には御神木のタブノキがあり、伊東市の名木にも指定されています。また、不漁時の祈願のために奉納された石を保存する「おこもり石（参籠石）」も境内に残されています。千鶴丸が富戸の海岸に流れ着いた際、その手にはタチバナの小枝が握られていたと伝わります。"
+          },
+          {
+            "heading": "例大祭と鹿島踊り",
+            "body": "毎年10月29日に例大祭が行われます。祭礼には鹿島踊り・下方（シャギリ）・神楽・万灯の各保存会が関わります。神輿の担ぎ手は鹿島踊りの舞人12名が務め、決して声を発することがないよう口に口紙を銜えます。神輿が境内広場に下りると、下方（シャギリ）のお囃子に合わせて縦横無尽に練り回します。神輿渡御の際には「神輿に鎮座する御祭神が外の景色を見たいと言い、鳥居をくぐらせまいとする里人のせめぎ合い」を表現する所作が行われます。万灯は力自慢の若衆が奉納し、神楽では剣の舞が演じられます。祭礼当日は老若男女が大勢集まり、露店も出る盛況となります。"
+          },
+          {
+            "heading": "行き方と使い方",
+            "body": "伊豆急行線の富戸駅から徒歩約10分です。駅から海岸方面へ南下し、県道109号沿いに鎮座しています。神社は24時間参拝できます。境内から海岸方面へさらに下ると、千鶴丸の伝承にちなんだ「産衣石」がある龍宮神社付近に至ります。産衣石は富戸駅から徒歩約15分の距離にあります。富戸は伊豆高原エリアに位置しており、城ヶ崎海岸などの観光地とあわせて訪れることができます。"
+          }
+        ],
+        "sources": [
+          {
+            "label": "公式サイト（静岡県神社庁）",
+            "url": "http://shizuoka-jinjacho.or.jp/shokai/jinja.php?id=4402298"
+          },
+          {
+            "label": "Shrine-heritager 富戸三島神社",
+            "url": "https://shrineheritager.com/mishima-shrine/"
+          },
+          {
+            "label": "神社と古事記 三島神社（伊東市富戸）",
+            "url": "https://www.buccyake-kojiki.com/archives/1064505651.html"
+          },
+          {
+            "label": "湘南鎌倉ひとり旅 富戸三島神社",
+            "url": "https://boccitabi.yokohama/futo-mishimajinjya/"
+          },
+          {
+            "label": "Google マップ",
+            "url": "https://maps.google.com/?cid=10766146327175793143"
+          }
+        ],
+        "checkedAt": "2026-11-13"
+      }
+    },
+    {
+      "id": "li0232",
+      "vertical": "life",
+      "category": "car-repair",
+      "name": "合同会社 LRA association 金属スクラップ買取 生前、遺品整理 特殊清掃",
+      "pref": "hokkaido",
+      "cityName": "伊達市",
+      "address": "北海道伊達市北黄金町57-5",
+      "lat": 42.418216,
+      "lng": 140.9015423,
+      "hours": "毎日 08:00 - 17:00",
+      "phone": "0143-84-5134",
+      "url": "https://liferecycleassociation.com/",
+      "website": "https://liferecycleassociation.com/",
+      "mapUrl": "https://maps.google.com/?cid=14758955296639466",
+      "image": "/_portal/vshops/tri-life-548/g01.jpg",
+      "images": [
+        "/_portal/vshops/tri-life-548/g01.jpg",
+        "/_portal/vshops/tri-life-548/g02.jpg",
+        "/_portal/vshops/tri-life-548/g03.jpg",
+        "/_portal/vshops/tri-life-548/s01.jpg",
+        "/_portal/vshops/tri-life-548/s02.jpg",
+        "/_portal/vshops/tri-life-548/s03.jpg",
+        "/_portal/vshops/tri-life-548/s04.jpg",
+        "/_portal/vshops/tri-life-548/s11.jpg",
+        "/_portal/vshops/tri-life-548/s12.jpg",
+        "/_portal/vshops/tri-life-548/s13.jpg",
+        "/_portal/vshops/tri-life-548/s14.jpg",
+        "/_portal/vshops/tri-life-548/s15.jpg",
+        "/_portal/vshops/tri-life-548/s16.jpg",
+        "/_portal/vshops/tri-life-548/s17.jpg",
+        "/_portal/vshops/tri-life-548/s18.jpg"
+      ],
+      "photos": [
+        {
+          "path": "/_portal/vshops/tri-life-548/g01.jpg",
+          "what": "防護服を着た作業員が室内で作業している様子",
+          "kind": "common",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-life-548/g02.jpg",
+          "what": "片付け前の室内に養生シートが張られた状態",
+          "kind": "common",
+          "width": 675,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-life-548/g03.jpg",
+          "what": "防護服の作業員が大きな段ボール箱を運んでいる",
+          "kind": "common",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-life-548/s01.jpg",
+          "what": "江戸・明治期の古文書が広げられた様子",
+          "kind": "common",
+          "width": 1200,
+          "height": 675
+        },
+        {
+          "path": "/_portal/vshops/tri-life-548/s02.jpg",
+          "what": "整理後の空になった明るい室内",
+          "kind": "common",
+          "width": 866,
+          "height": 1280
+        },
+        {
+          "path": "/_portal/vshops/tri-life-548/s03.jpg",
+          "what": "屋外の草が茂る敷地の様子",
+          "kind": "view",
+          "width": 720,
+          "height": 1280
+        },
+        {
+          "path": "/_portal/vshops/tri-life-548/s04.jpg",
+          "what": "作業員が古文書を広げて確認している様子",
+          "kind": "common",
+          "width": 960,
+          "height": 1280
+        },
+        {
+          "path": "/_portal/vshops/tri-life-548/s11.jpg",
+          "what": "「それを『帆跡』と呼びます。」と書かれた文字入り写真",
+          "kind": "common",
+          "width": 1166,
+          "height": 614
+        },
+        {
+          "path": "/_portal/vshops/tri-life-548/s12.jpg",
+          "what": "防護服を着た複数の作業員が特殊清掃を行っている様子",
+          "kind": "common",
+          "width": 1280,
+          "height": 955
+        },
+        {
+          "path": "/_portal/vshops/tri-life-548/s13.jpg",
+          "what": "防護服の作業員が室内で清掃作業をしている",
+          "kind": "common",
+          "width": 1168,
+          "height": 1177
+        },
+        {
+          "path": "/_portal/vshops/tri-life-548/s14.jpg",
+          "what": "整理中の倉庫に金属類や物品が並んでいる様子",
+          "kind": "common",
+          "width": 1170,
+          "height": 995
+        },
+        {
+          "path": "/_portal/vshops/tri-life-548/s15.jpg",
+          "what": "屋外で廃材や金属スクラップが積み重なった様子",
+          "kind": "view",
+          "width": 1280,
+          "height": 1127
+        },
+        {
+          "path": "/_portal/vshops/tri-life-548/s16.jpg",
+          "what": "整理された室内に複数の掛け軸や書画が並んでいる",
+          "kind": "common",
+          "width": 960,
+          "height": 1280
+        },
+        {
+          "path": "/_portal/vshops/tri-life-548/s17.jpg",
+          "what": "巻物状の掛け軸が複数並んでいる様子",
+          "kind": "common",
+          "width": 960,
+          "height": 1280
+        },
+        {
+          "path": "/_portal/vshops/tri-life-548/s18.jpg",
+          "what": "木製の箱に収められた巻物や文書が並んでいる様子",
+          "kind": "common",
+          "width": 960,
+          "height": 1280
+        }
+      ],
+      "tags": [],
+      "article": {
+        "headline": "北海道伊達市を拠点に、遺品整理・生前整理・特殊清掃・金属スクラップ買取を手がける合同会社LRA association。故人の「人生の軌跡」を丁寧に辿りながら、歴史的価値のある資料の救出にも取り組む。",
+        "lede": "伊達市にある「合同会社LRA association（ライフリサイクルアソシエーション）」です。遺品整理・生前整理・特殊清掃を中心に、金属スクラップ買取・不用品回収・現状復帰リフォーム工事まで幅広く対応します。代表の田澤恵司は遺品整理士（認定第IS62755号）の資格を持ち、単なる片付けにとどまらず、廃棄されそうな品々の中から歴史的価値を見極める「軌跡の遺品整理」を掲げています。伊達市・室蘭市・登別市をはじめとする胆振全域を対応エリアとし、遠方からの依頼も受け付けています。古物商（機械工具商）および特定金属買受業の許可を北海道公安委員会から取得しており、金属買取や不用品の資源化にも正式に対応できる体制を整えています。",
+        "sections": [
+          {
+            "heading": "内容（サービスと取り組み）",
+            "body": "提供するサービスは、遺品整理・生前整理・ゴミ屋敷清掃・不用品回収、特殊清掃、現状復帰とリフォーム工事、そして金属スクラップ買取の4つが柱です。整理作業では、保管するもの・買取するもの・処分するもの・リサイクルするものを一つひとつ丁寧に仕分けます。金属買取では、アルミ・銅・ステンレスなどの非鉄金属のほか、台所のお鍋やスプーンまで買取対象とし、20年以上培ってきた目利きによる査定を行います。整理作業から生じた金属類の資源化還元によって整理費用の負担軽減につなげる仕組みを持ちます。国内メーカーとの取引・提携による資源化ルートも活用しています。支払いは現金または銀行振込に対応しています。"
+          },
+          {
+            "heading": "成り立ちと人",
+            "body": "代表社員CEO田澤恵司は室蘭大谷高等学校を卒業後、遺品整理から歴史保全を提唱する「LRAモデル」を考案しました。遺品整理士として遺品整理認定協会の地区統括会員でもあります。特定金属買受業許可（金）第101210000022号および機械工具商許可（古物全般）第101210000257号を北海道公安委員会から取得しています。司法書士伊奈綾事務所（登別）・泉秀夫司法書士事務所（室蘭）と提携し、法律関係の相談にも対応できる体制を整えています。解体・建設・土木・運輸業などの複数の事業者とも提携しており、幅広い作業に柔軟に対応します。"
+          },
+          {
+            "heading": "由緒・歴史",
+            "body": "2023年11月、伊達市松ヶ枝町での遺品整理作業中に、江戸末期から明治初期にかけての文書122点を発見・救出しました。有珠会所や亘理伊達家に関連するこれらの資料には、アイヌ民族に関する記録や松浦武四郎関連の記述が含まれており、2024年9月に伊達市教育委員会が記者会見を開き、室蘭民報・北海道新聞・NHK・読売新聞が報道しました。2024年10月には、伊達市内の作業現場から維新三傑の一人・木戸孝允（桂小五郎）の書を含む掛け軸・書画類20点余りを救出しています。救出した資料はウポポイ（アイヌ民族博物館）や滝上教育委員会などの公的機関・専門機関へ繋ぎ、適切な保存・継承を進めています。歴史的資料の確認・救出については、整理作業の費用に含まれて対応します。"
+          },
+          {
+            "heading": "行き方と使い方",
+            "body": "事務所は伊達市北黄金町にあります。電話またはウェブサイトのメールフォームから問い合わせると、スタッフが内容を確認し、現地確認を経て見積もりを提示します。その後、顧客の都合に合わせて作業日を決定し、現地作業を実施します。生前整理を第三者から依頼する場合は、ご本人の了解が必要です。伊達市・室蘭市・登別市など胆振全域に対応しており、遠方の場合も問い合わせを受け付けています。公式サイトのお問い合わせページからメールでの相談も可能です。"
+          }
+        ],
+        "menus": [
+          {
+            "name": "遺品整理・生前整理"
+          },
+          {
+            "name": "ゴミ屋敷清掃・不用品回収"
+          },
+          {
+            "name": "特殊清掃"
+          },
+          {
+            "name": "現状復帰・リフォーム工事"
+          },
+          {
+            "name": "金属スクラップ買取"
+          },
+          {
+            "name": "事前相談"
+          }
+        ],
+        "sources": [
+          {
+            "label": "公式サイト",
+            "url": "https://liferecycleassociation.com/"
+          },
+          {
+            "label": "公式サイト（当社について）",
+            "url": "https://liferecycleassociation.com/about/"
+          },
+          {
+            "label": "公式サイト（サービス紹介）",
+            "url": "https://liferecycleassociation.com/service/"
+          },
+          {
+            "label": "公式サイト（アクセス）",
+            "url": "https://liferecycleassociation.com/access/"
+          },
+          {
+            "label": "公式サイト（無料相談）",
+            "url": "https://liferecycleassociation.com/service_post/01/"
+          },
+          {
+            "label": "公式サイト（歴史資料救出実績）",
+            "url": "https://liferecycleassociation.com/case/%E6%AD%B4%E5%8F%B2%E8%B3%87%E6%96%99%E3%83%BB%E8%A8%98%E9%8C%B2%E8%B3%87%E6%96%99%E3%81%AE%E6%95%91%E5%87%BA%E5%AE%9F%E7%B8%BE/"
+          },
+          {
+            "label": "公式サイト（よくある質問）",
+            "url": "https://liferecycleassociation.com/faq/"
+          },
+          {
+            "label": "Google マップ",
+            "url": "https://maps.google.com/?cid=14758955296639466"
+          }
+        ],
+        "checkedAt": "2026-11-13"
+      }
+    },
+    {
+      "id": "li0233",
+      "vertical": "life",
+      "category": "car-repair",
+      "name": "深谷パソコン修理",
+      "pref": "saitama",
+      "cityName": "深谷市",
+      "address": "埼玉県深谷市原郷2116-1",
+      "lat": 36.1943591,
+      "lng": 139.29359,
+      "hours": "月火木金 09:00 - 20:00 / 日 14:00 - 20:00",
+      "holidays": "水曜・土曜",
+      "phone": "090-3508-4150",
+      "url": "https://www.internetbenriya.com/",
+      "website": "https://www.internetbenriya.com/",
+      "mapUrl": "https://maps.google.com/?cid=1255921091885761308",
+      "image": "/_portal/vshops/tri-life-551/g01.jpg",
+      "images": [
+        "/_portal/vshops/tri-life-551/g01.jpg",
+        "/_portal/vshops/tri-life-551/g02.jpg",
+        "/_portal/vshops/tri-life-551/g03.jpg",
+        "/_portal/vshops/tri-life-551/g04.jpg",
+        "/_portal/vshops/tri-life-551/g05.jpg",
+        "/_portal/vshops/tri-life-551/g06.jpg"
+      ],
+      "photos": [
+        {
+          "path": "/_portal/vshops/tri-life-551/g01.jpg",
+          "what": "店内の作業テーブルと奥で作業する人物",
+          "kind": "common",
+          "width": 1200,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-life-551/g02.jpg",
+          "what": "マザーボードをテスターで計測している手元",
+          "kind": "common",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-life-551/g03.jpg",
+          "what": "ノートパソコンとタブレットが置かれた机",
+          "kind": "common",
+          "width": 1200,
+          "height": 800
+        },
+        {
+          "path": "/_portal/vshops/tri-life-551/g04.jpg",
+          "what": "複数台のパソコンが並ぶ店内の棚",
+          "kind": "common",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-life-551/g05.jpg",
+          "what": "赤いレンガ造りの建物外観と周辺道路",
+          "kind": "exterior",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-life-551/g06.jpg",
+          "what": "店舗建物を丸印で示した周辺の住宅街",
+          "kind": "exterior",
+          "width": 571,
+          "height": 416
+        }
+      ],
+      "tags": [],
+      "article": {
+        "headline": "埼玉県深谷市原郷にある、パソコン整備士二級の資格を持つ技師が直接対応するパソコン修理店。修理に成功したときだけ費用が発生する成功報酬制を採用している。",
+        "lede": "深谷市にある「深谷パソコン修理」です。代表の森泰文が店主を務め、パソコン整備士二級（2017年11月取得）の資格を持つ技師が直接対応します。パソコン・スマートフォン・タブレットの修理・設定・データ復旧など、パソコン関連のトラブルをまとめて相談できます。修理費用は修理に成功したときだけ発生する成功報酬制で、深谷市内の方には出張診断をしても診断料はかかりません。設定込みの中古パソコン販売も行っており、新しい端末の購入から設定まで一か所で対応します。公式LINEアカウント（ID：@708unjkw）を開設しており、やり取りしながら修理を進めることができます。2024年6月10日にはFMふっかちゃんにも出演しました。",
+        "sections": [
+          {
+            "heading": "内容（サービス・対応範囲）",
+            "body": "パソコンが起動しない・インターネットにつながらない・ログインパスワードが分からない・メールの送受信ができない・印刷ができないといったトラブルへの修理対応に加え、Windowsのクリーンインストールや初期化・リカバリー、ウイルス駆除、データ復旧・バックアップにも対応しています。スマートフォンのデータ復旧や光回線の導入サポートも扱います。設定込みの中古パソコン販売も行っており、端末の購入後にそのまま初期設定を依頼することができます。修理後に同一原因の不具合が発生した場合の保証期間は1か月で、SSD換装時のSSD故障およびリユースPCの保証は1年間です。回収・引き取りパソコンのデータはNIST方式で完全消去したうえで処分します。"
+          },
+          {
+            "heading": "利用の流れ",
+            "body": "まず電話または公式LINEで相談します。どのようなトラブルかを伝えると、来店か訪問かを決めて診断・見積りに進みます。店舗にパソコンを持ち込んで診断を受けることも、ネットワークトラブルなど現場への訪問診断を依頼することも可能です。見積りの内容に同意したら作業開始となり、公式LINEまたは電話でやり取りしながら進みます。深谷市内の方は出張診断料がかかりません。熊谷市・本庄市・伊勢崎市・太田市・嵐山町・美里町・寄居町など深谷市以外の方が訪問を依頼する場合は出張診断料が別途必要です。修理完了後は速やかに引き取りの連絡をする必要があります。"
+          },
+          {
+            "heading": "成り立ちと人",
+            "body": "代表の森泰文は2017年11月にパソコン整備士二級を取得し、2019年9月には古物商の許可も取得しています。古物商の許可により中古パソコンの販売にも対応できる体制を整えています。「くらしのマーケット」「MeetsMore」「便利屋.com」とも提携しており、複数の経路から依頼することができます。"
+          },
+          {
+            "heading": "行き方と使い方",
+            "body": "店舗はJR高崎線深谷駅の北口から車で約10分、深谷市原郷にあります。まずは電話（090-3508-4150）か公式LINE（ID：@708unjkw）で相談することを勧めています。持ち込みでの来店も、訪問診断の依頼も受け付けています。出張エリアは深谷市のほか、熊谷市・本庄市・伊勢崎市・太田市・嵐山町・美里町・寄居町まで対応しています。"
+          }
+        ],
+        "menus": [
+          {
+            "name": "パソコン修理（起動しない・インターネット接続不具合など）"
+          },
+          {
+            "name": "データ復旧・バックアップ"
+          },
+          {
+            "name": "Windows クリーンインストール・初期化"
+          },
+          {
+            "name": "パソコン初期設定"
+          },
+          {
+            "name": "スマートフォンのデータ復旧"
+          },
+          {
+            "name": "設定込み中古パソコン販売"
+          },
+          {
+            "name": "光回線導入サポート"
+          },
+          {
+            "name": "パソコン・ソフト操作方法説明"
+          }
+        ],
+        "sources": [
+          {
+            "label": "公式サイト",
+            "url": "https://www.internetbenriya.com/"
+          },
+          {
+            "label": "公式サイト（料金詳細）",
+            "url": "https://www.internetbenriya.com/post/_%E6%96%99%E9%87%91%E8%A9%B3%E7%B4%B0"
+          },
+          {
+            "label": "公式サイト（バッテリー交換）",
+            "url": "https://www.internetbenriya.com/post/battery_exchange"
+          },
+          {
+            "label": "Wantedly（森泰文プロフィール）",
+            "url": "https://www.wantedly.com/id/yasufumi_mori_a"
+          },
+          {
+            "label": "Google マップ",
+            "url": "https://maps.google.com/?cid=1255921091885761308"
+          }
+        ],
+        "checkedAt": "2026-11-13"
+      }
     }
   ]
 }

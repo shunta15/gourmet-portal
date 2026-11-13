@@ -1,0 +1,66 @@
+{
+  "key": "tri-life-551",
+  "images": [
+    {
+      "path": "/_portal/vshops/tri-life-551/g01.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9QtgCmmCWWByIIBC4YWBPN8OPUjcse_RojuhMFe9bswfWUhZ_-08tGTqCp85Gr5Z5IKo6qrvL_5kv0exHtqgOknn6v8Z3R5yN5t60Pl-DmJsxNKAOBesqH8Ca7HOHhJmwV58cVHQw=s1200",
+      "pageUrl": "https://maps.google.com/?cid=1255921091885761308",
+      "what": "店内の作業テーブルと奥で作業する人物",
+      "kind": "common",
+      "width": 1200,
+      "height": 1200,
+      "source": "Google マップ"
+    },
+    {
+      "path": "/_portal/vshops/tri-life-551/g02.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9R3DFJmWrvIk5Eqz6_YAWGKdzZlZ3K8iM8HOvCvYDojKbIYmnZdaceXBIQJfVfQu8yrQJS8Qc-7CIGEpgHwURF3chkuMU5yM0z11XRXcJCA2-UP8_-LJaqcm04-3XYtgwsBKOLM=s1200",
+      "pageUrl": "https://maps.google.com/?cid=1255921091885761308",
+      "what": "マザーボードをテスターで計測している手元",
+      "kind": "common",
+      "width": 1200,
+      "height": 900,
+      "source": "Google マップ"
+    },
+    {
+      "path": "/_portal/vshops/tri-life-551/g03.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9T-0k1ZjUbIW2wSYcK2tfyR09X2JxbvOTQ57cgVv5jngCozHwolMyNVqogwXoiK_1yM1rijAAJXUDf9UehsgJvv1C3_n5xOhQAlDpwQiC_UokvZVvFNOX1NB1VImLklaeFwrv2J=s1200",
+      "pageUrl": "https://maps.google.com/?cid=1255921091885761308",
+      "what": "ノートパソコンとタブレットが置かれた机",
+      "kind": "common",
+      "width": 1200,
+      "height": 800,
+      "source": "Google マップ"
+    },
+    {
+      "path": "/_portal/vshops/tri-life-551/g04.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9TiGhyj9-Z_qzMgseOBIaTepAH03J1yfdsnq1LMv_66bttz0zvauGixoYXXscYCKY_mdcN3TZyH1jxxxfu1kgDdbNbi6HiUMO17Rltg6jwu8ZbSP0INZxFW2Kr-ujMmvNAi5qo=s1200",
+      "pageUrl": "https://maps.google.com/?cid=1255921091885761308",
+      "what": "複数台のパソコンが並ぶ店内の棚",
+      "kind": "common",
+      "width": 1200,
+      "height": 900,
+      "source": "Google マップ"
+    },
+    {
+      "path": "/_portal/vshops/tri-life-551/g05.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9Rs6-ExqLpGKlk3E-PI74OqhQ7ufkZtezzBQxvqMCECYhHni7HndoaXQ_ijMKopPA9OB5Y4gMvJ33Eh66gkRsvU7qej6w0Q_jKdAt5lckKnlDkALt_v7XZCwNA_n6ChOeqB3DEy=s1200",
+      "pageUrl": "https://maps.google.com/?cid=1255921091885761308",
+      "what": "赤いレンガ造りの建物外観と周辺道路",
+      "kind": "exterior",
+      "width": 900,
+      "height": 1200,
+      "source": "Google マップ"
+    },
+    {
+      "path": "/_portal/vshops/tri-life-551/g06.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9RUgo5ogzfeK3O1Oef4NCkDLmzAwXb9a3LP0m3CnQh56sWkmlY1T25F9297C9PJkbYYehWTeBQP2UfMcAx9AQv9gPg4NHpfrLQjHtMzQ0ilpH1oJpCE64_4kjrBygj7GntNgTN29g=s1200",
+      "pageUrl": "https://maps.google.com/?cid=1255921091885761308",
+      "what": "店舗建物を丸印で示した周辺の住宅街",
+      "kind": "exterior",
+      "width": 571,
+      "height": 416,
+      "source": "Google マップ"
+    }
+  ],
+  "note": "automation/v2/write.mjs が 2026-11-13T04:25:40.083Z に取得。店の実写だけ(AI 画像・汎用画像・地図・ロゴ・顔が大きい画像は除外)。"
+}

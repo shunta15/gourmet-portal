@@ -1,0 +1,283 @@
+{
+  "key": "tri-stay-550",
+  "headline": "東京都青梅市御岳山にある宿坊。多摩産材100%の総ヒノキ造りで2024年8月にリニューアルし、1日2組限定で宿泊を受け入れています。",
+  "lede": "青梅市にある「うつぼや荘」です。御岳山山頂付近に位置する宿坊で、武蔵御嶽神社の御師（おし）の家系である靭矢（うつぼや）家が代々受け継いできた宿坊です。元の建物は明治時代の築120年超の建築でしたが、老朽化に伴い2024年8月に全館を建て直してリニューアルオープンしました。多摩産材のみを使った総ヒノキ造りで、山上では大型重機が使えないため、セメント練りや資材の運搬をすべて人力で行った建物です。おもてなしを大切にするため1日2組限定での受け入れとしており、御嶽神社の御霊を祀った「神前の間」を館内に備えた宿坊らしい空間が整っています。各種キャッシュレス決済に対応しており、対面決済とオンライン決済の両方が使えます。",
+  "sections": [
+    {
+      "heading": "客室の種類と数",
+      "body": "客室は2部屋あります。「和洋室」は洋室部分にベッド2台とソファーベッド、和室部分に布団を敷いて最大5名まで宿泊できる広さです。「洋室」は1〜2名向けのプライベート空間で、霊峰御岳山での静かな時間が過ごせます。どちらの客室にもエアコン、冷蔵庫、お手洗い、洗面台、ケトル、ドライヤー、お茶セットが備わっています。客室の冷蔵庫には地元・多摩のクラフトビールが入っており、1人1本サービスで自由に利用できます。タオル類は青梅市のホットマン株式会社製の1秒タオルを用意しており、フェイスタオルはお持ち帰りいただけます。作務衣も用意されています。宿全体でWi-Fiが利用できます。"
+    },
+    {
+      "heading": "風呂",
+      "body": "お風呂は貸し切り式で、ヒノキの香りが漂う浴室です。脱衣場に内鍵がかかる仕組みで、プライベートな時間を確保できます。入浴時間は16時から22時と、翌朝5時から9時の2つの時間帯です。アメニティにはボディソープ、シャンプー、コンディショナー、ドライヤー、綿棒や化粧水などを含むアメニティセットが用意されています。"
+    },
+    {
+      "heading": "食事",
+      "body": "食事は宿坊らしさを大切にした、地元の食材を使った内容です。宿の畑で育てた自家製野菜をはじめ、御岳山のこんにゃくや周辺で採れた川魚を使った料理を提供しています。女将が手作りするこんにゃくは、生芋をすりおろして練り上げる製法で仕上げています。朝食も提供しており、素泊まり・朝食のみのプランでは、チェックインを19時まで延長できます。オプションとして秋川牛をメイン食材に使ったBBQセットも用意しており、希望するゲストは宿に相談して手配できます。食事は館内の食事処「気まぐれぼーや」に隣接する食事処でいただきます。カフェ「気まぐれぼーや」では不定期営業でコーヒー、サイダー、奥多摩のクラフトビール（VERTERE）、生ビールのほか、御嶽汁、おにぎり、いなり、ちまきなどの軽食を提供しています。11月から1月の期間はおしるこも提供します。"
+    },
+    {
+      "heading": "行き方と使い方",
+      "body": "JR御嶽駅からバスでケーブルカー「滝本駅」へ移動し、御岳山登山鉄道のケーブルカーに乗って「御岳山駅」で下車した後、徒歩約9〜10分で到着します。ケーブルカーの時刻表は御岳山登山鉄道の公式ホームページで確認できます。車でお越しの場合は、圏央道・青梅ICまたは日の出ICから約40分、中央道・八王子ICから約60分が目安で、駐車場は御岳山ケーブルカー滝本駅の駐車場を利用します。チェックインは15時から17時まで（素泊まり・朝食のみの場合は19時まで）、チェックアウトは10時までです。予約は公式サイトのほか、じゃらん・楽天トラベルなどの宿泊予約サイトからも行えます。2食付き＋ご祈祷体験付きのプランも用意されており、朝食前に武蔵御嶽神社でのご祈祷を奉仕しています。カフェは屋根付きテラスがペット同伴可能で、犬用メニューも用意されています。"
+    }
+  ],
+  "rooms": [
+    {
+      "name": "和洋室"
+    },
+    {
+      "name": "洋室"
+    }
+  ],
+  "menus": [
+    {
+      "name": "2食付き宿泊"
+    },
+    {
+      "name": "朝食付き宿泊"
+    },
+    {
+      "name": "素泊まり"
+    },
+    {
+      "name": "2食付き＋ご祈祷体験"
+    },
+    {
+      "name": "BBQセット（オプション）"
+    }
+  ],
+  "tags": [
+    {
+      "tag": "ペット同伴",
+      "factIndex": 20
+    },
+    {
+      "tag": "素泊まり",
+      "factIndex": 21
+    }
+  ],
+  "facts": [
+    {
+      "claim": "御岳山山頂付近に位置する宿坊",
+      "source": "https://mitakesan-utuboyasou.com/",
+      "quote": "そんな御岳山にある宿坊です",
+      "checkedAt": "2026-11-13"
+    },
+    {
+      "claim": "1日2組限定で宿泊を受け入れている",
+      "source": "https://mitakesan-utuboyasou.com/",
+      "quote": "おもてなしを大切にしたいため、１日２組限定",
+      "checkedAt": "2026-11-13"
+    },
+    {
+      "claim": "2024年8月に全館を建て直してリニューアルオープンした",
+      "source": "https://omegocoti.com/utsuboyasou/",
+      "quote": "2024年8月にリニューアルオープンした",
+      "checkedAt": "2026-11-13"
+    },
+    {
+      "claim": "元の建物は明治時代の築120年超の建築だった",
+      "source": "https://omegocoti.com/utsuboyasou/",
+      "quote": "元の宿坊は明治建築で築120年超でしたが、老朽化に伴い建て直されました",
+      "checkedAt": "2026-11-13"
+    },
+    {
+      "claim": "多摩産材のみを使った総ヒノキ造りの建物",
+      "source": "https://omegocoti.com/utsuboyasou/",
+      "quote": "多摩産材のみで建てられた総ヒノキ造り",
+      "checkedAt": "2026-11-13"
+    },
+    {
+      "claim": "山上では大型重機が使えないため人力でセメント練りや資材運搬を行った",
+      "source": "https://omegocoti.com/utsuboyasou/",
+      "quote": "山上での建設は大型重機が使用できないため、人力によるセメント練りと資材運搬",
+      "checkedAt": "2026-11-13"
+    },
+    {
+      "claim": "靭矢（うつぼや）家が代々受け継いできた御師の宿坊",
+      "source": "https://omegocoti.com/utsuboyasou/",
+      "quote": "靭矢（うつぼや）家の14、15代目当主で、江戸時代にさかのぼる家系",
+      "checkedAt": "2026-11-13"
+    },
+    {
+      "claim": "御嶽神社の御霊を祀った「神前の間」を館内に備えている",
+      "source": "https://mitakesan-utuboyasou.com/facilities.html",
+      "quote": "御嶽神社の御霊を祀ったお社です",
+      "checkedAt": "2026-11-13"
+    },
+    {
+      "claim": "客室は2部屋ある",
+      "source": "https://omegocoti.com/utsuboyasou/",
+      "quote": "客室は2部屋で",
+      "checkedAt": "2026-11-13"
+    },
+    {
+      "claim": "和洋室はベッド2台とソファーベッド、和室に布団を敷いて最大5名宿泊可能",
+      "source": "https://mitakesan-utuboyasou.com/facilities.html",
+      "quote": "ベッド２台とソファーベット、和室にお布団を敷いて、最大5名様までお泊まりいただけます",
+      "checkedAt": "2026-11-13"
+    },
+    {
+      "claim": "洋室は1〜2名向けの客室",
+      "source": "https://omegocoti.com/utsuboyasou/",
+      "quote": "１-２名用の洋室",
+      "checkedAt": "2026-11-13"
+    },
+    {
+      "claim": "客室にはエアコン、冷蔵庫、お手洗い、洗面台、ケトル、ドライヤー、お茶セットが備わっている",
+      "source": "https://mitakesan-utuboyasou.com/facilities.html",
+      "quote": "エアコン、冷蔵庫、お手洗い、洗面台、ケトル、ドライヤー、お茶セット",
+      "checkedAt": "2026-11-13"
+    },
+    {
+      "claim": "客室冷蔵庫に地元・多摩のクラフトビールが入っており1人1本サービス",
+      "source": "https://mitakesan-utuboyasou.com/facilities.html",
+      "quote": "客室冷蔵庫内には地元多摩のクラフトビールが入っていて、お1人様1本サービス",
+      "checkedAt": "2026-11-13"
+    },
+    {
+      "claim": "タオルは青梅市のホットマン株式会社製の1秒タオルでフェイスタオルはお持ち帰り可",
+      "source": "https://mitakesan-utuboyasou.com/facilities.html",
+      "quote": "青梅市にあるホットマン株式会社製の吸水性抜群な1秒タオルです。お持ち帰りできます",
+      "checkedAt": "2026-11-13"
+    },
+    {
+      "claim": "お風呂は貸し切り式で入浴時間は16時から22時と翌朝5時から9時",
+      "source": "https://mitakesan-utuboyasou.com/facilities.html",
+      "quote": "お風呂は貸し切り。16：00 ～ 22：00／05：00 ～ 09：00",
+      "checkedAt": "2026-11-13"
+    },
+    {
+      "claim": "風呂のアメニティにボディソープ、シャンプー、コンディショナー、ドライヤー、アメニティセット（綿棒や化粧水など）がある",
+      "source": "https://mitakesan-utuboyasou.com/facilities.html",
+      "quote": "ボディソープ、シャンプー、コンディショナー、ドライヤー、アメニティセット（綿棒や化粧水など）",
+      "checkedAt": "2026-11-13"
+    },
+    {
+      "claim": "宿の畑で育てた自家製野菜を使った料理を提供している",
+      "source": "https://mitakesan-utuboyasou.com/meals.html",
+      "quote": "自家製野菜の新鮮さや滋味あふれる旬の味覚をご賞味ください",
+      "checkedAt": "2026-11-13"
+    },
+    {
+      "claim": "御岳山のこんにゃくと周辺で採れた川魚を使った料理を出している",
+      "source": "https://mitakesan-utuboyasou.com/meals.html",
+      "quote": "御岳山の名物のこんにゃくはもちろん、御岳山の近くで採れた川魚をお召し上がりください",
+      "checkedAt": "2026-11-13"
+    },
+    {
+      "claim": "女将が生芋をすりおろして練り上げる手作りこんにゃくを提供している",
+      "source": "https://omegocoti.com/utsuboyasou/",
+      "quote": "女将が仕込む「手作りこんにゃく」は特に評判で、「生芋をすりおろして練り上げる特別な製法」",
+      "checkedAt": "2026-11-13"
+    },
+    {
+      "claim": "オプションとして秋川牛をメイン食材に使ったBBQセットがある",
+      "source": "https://mitakesan-utuboyasou.com/meals.html",
+      "quote": "秋川牛をメイン食材のBBQセット",
+      "checkedAt": "2026-11-13"
+    },
+    {
+      "claim": "カフェのテラスはペット同伴可能で犬用メニューも用意されている",
+      "source": "https://mitakesan-utuboyasou.com/facilities.html",
+      "quote": "屋根付きテラスはペット連れOK！わんちゃん用メニューもご用意してあります",
+      "checkedAt": "2026-11-13"
+    },
+    {
+      "claim": "素泊まりと朝食のみのプランはチェックインを19時まで延長できる",
+      "source": "https://mitakesan-utuboyasou.com/access.html",
+      "quote": "素泊まり、朝食のみの場合は〜１９：００",
+      "checkedAt": "2026-11-13"
+    },
+    {
+      "claim": "カフェ「気まぐれぼーや」でコーヒー、サイダー、奥多摩のクラフトビール（VERTERE）、生ビール、御嶽汁、おにぎり、いなり、ちまきなどを提供している",
+      "source": "https://mitakesan-utuboyasou.com/facilities.html",
+      "quote": "コーヒー、サイダー、バテレクラフトビール、生ビール、御嶽汁、おにぎり、いなり、ちまきなど",
+      "checkedAt": "2026-11-13"
+    },
+    {
+      "claim": "カフェは11月から1月の期間限定でおしるこも提供する",
+      "source": "https://mitakesan-utuboyasou.com/facilities.html",
+      "quote": "11月～1月の期間限定でおしるこも販売します",
+      "checkedAt": "2026-11-13"
+    },
+    {
+      "claim": "2食付き＋ご祈祷体験付きプランがあり、朝食前に武蔵御嶽神社でのご祈祷を奉仕する",
+      "source": "https://www.jalan.net/yad365624/plan/",
+      "quote": "2食付き＋体験付きプラン、霊峰御岳山でご祈祷体験",
+      "checkedAt": "2026-11-13"
+    },
+    {
+      "claim": "JR御嶽駅からバスでケーブルカー滝本駅へ移動し、ケーブルカーで御岳山駅下車後徒歩約9〜10分",
+      "source": "https://mitakesan-utuboyasou.com/access.html",
+      "quote": "JR御嶽駅よりバス・ケーブルカー・リフトを乗り継いで御岳山へ",
+      "checkedAt": "2026-11-13"
+    },
+    {
+      "claim": "圏央道・青梅ICまたは日の出ICから約40分、中央道・八王子ICから約60分",
+      "source": "https://mitakesan-utuboyasou.com/access.html",
+      "quote": "圏央道 青梅ICもしくは日の出ICより約40分、中央道 八王子ICより約60分",
+      "checkedAt": "2026-11-13"
+    },
+    {
+      "claim": "駐車場は御岳山ケーブルカー滝本駅の駐車場を利用する",
+      "source": "https://mitakesan-utuboyasou.com/access.html",
+      "quote": "駐車場は御岳山ケーブルカー滝本駅駐車場をご利用ください",
+      "checkedAt": "2026-11-13"
+    },
+    {
+      "claim": "チェックインは15時から17時まで、チェックアウトは10時まで",
+      "source": "https://mitakesan-utuboyasou.com/",
+      "quote": "チェックイン15：00～17：00、チェックアウト～10：00",
+      "checkedAt": "2026-11-13"
+    },
+    {
+      "claim": "各種キャッシュレス決済に対応（対面決済・オンライン決済・ブラウザ決済・請求書決済）",
+      "source": "https://mitakesan-utuboyasou.com/",
+      "quote": "各種キャッシュレス決済対応、対面決済・オンライン決済・ブラウザ決済・請求書決済",
+      "checkedAt": "2026-11-13"
+    },
+    {
+      "claim": "宿全体でWi-Fiが利用できる",
+      "source": "https://omegocoti.com/utsuboyasou/",
+      "quote": "Wi-Fi完備",
+      "checkedAt": "2026-11-13"
+    },
+    {
+      "claim": "作務衣が用意されている",
+      "source": "https://omegocoti.com/utsuboyasou/",
+      "quote": "作務衣",
+      "checkedAt": "2026-11-13"
+    }
+  ],
+  "sources": [
+    {
+      "label": "公式サイト",
+      "url": "https://mitakesan-utuboyasou.com/"
+    },
+    {
+      "label": "公式サイト(施設案内)",
+      "url": "https://mitakesan-utuboyasou.com/facilities.html"
+    },
+    {
+      "label": "公式サイト(お食事)",
+      "url": "https://mitakesan-utuboyasou.com/meals.html"
+    },
+    {
+      "label": "公式サイト(アクセス)",
+      "url": "https://mitakesan-utuboyasou.com/access.html"
+    },
+    {
+      "label": "omegocoti.com",
+      "url": "https://omegocoti.com/utsuboyasou/"
+    },
+    {
+      "label": "じゃらんnet",
+      "url": "https://www.jalan.net/yad365624/plan/"
+    },
+    {
+      "label": "Google マップ",
+      "url": "https://maps.google.com/?cid=12833418365049704387"
+    }
+  ],
+  "notes": "automation/v2/write.mjs が 2026-11-13 に claude -p --model sonnet で作成。事実の裏取り: 32/32 件(quote が出どころの内容に合うもの。言い換え可)。裏取りに通らなかった facts は載せていない。"
+}

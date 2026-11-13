@@ -1,0 +1,118 @@
+{
+  "commit": "02afa170b1b9c82fbbd41428269b9584b50a7a5a",
+  "source": "/Users/shunta/claude/gp-k-auto2",
+  "count": 10,
+  "added": [
+    {
+      "row": 429,
+      "name": "本格手打ちうどん亭なべきち",
+      "key": "lk-gourmet-429",
+      "vertical": "グルメ",
+      "id": "r946",
+      "articleId": "本格手打ちうどん亭なべきち",
+      "shopUrl": "https://machinowa.tokyo/restaurant/r946",
+      "articleUrl": "https://machinowa.tokyo/feature/本格手打ちうどん亭なべきち",
+      "sheetUrl": "https://machinowa.tokyo/feature/本格手打ちうどん亭なべきち"
+    },
+    {
+      "row": 544,
+      "name": "レストランアップルミント",
+      "key": "tri-gourmet-544",
+      "vertical": "グルメ",
+      "id": "r947",
+      "articleId": "レストランアップルミント",
+      "shopUrl": "https://machinowa.tokyo/restaurant/r947",
+      "articleUrl": "https://machinowa.tokyo/feature/レストランアップルミント",
+      "sheetUrl": "https://machinowa.tokyo/feature/レストランアップルミント"
+    },
+    {
+      "row": 545,
+      "name": "富戸三島神社",
+      "key": "tri-life-545",
+      "vertical": "くらし",
+      "id": "li0231",
+      "articleId": "li0231",
+      "shopUrl": "https://machinowa.tokyo/life/shop/li0231",
+      "articleUrl": "https://machinowa.tokyo/life/article/li0231",
+      "sheetUrl": "https://machinowa.tokyo/life/article/li0231"
+    },
+    {
+      "row": 546,
+      "name": "DARUMA LAB.KAMAKURA",
+      "key": "tri-activity-546",
+      "vertical": "アクティビティ",
+      "id": "ac0077",
+      "articleId": "ac0077",
+      "shopUrl": "https://machinowa.tokyo/activity/shop/ac0077",
+      "articleUrl": "https://machinowa.tokyo/activity/article/ac0077",
+      "sheetUrl": "https://machinowa.tokyo/activity/article/ac0077"
+    },
+    {
+      "row": 547,
+      "name": "ビリヤードWIND",
+      "key": "tri-activity-547",
+      "vertical": "アクティビティ",
+      "id": "ac0078",
+      "articleId": "ac0078",
+      "shopUrl": "https://machinowa.tokyo/activity/shop/ac0078",
+      "articleUrl": "https://machinowa.tokyo/activity/article/ac0078",
+      "sheetUrl": "https://machinowa.tokyo/activity/article/ac0078"
+    },
+    {
+      "row": 548,
+      "name": "合同会社 LRA association",
+      "key": "tri-life-548",
+      "vertical": "くらし",
+      "id": "li0232",
+      "articleId": "li0232",
+      "shopUrl": "https://machinowa.tokyo/life/shop/li0232",
+      "articleUrl": "https://machinowa.tokyo/life/article/li0232",
+      "sheetUrl": "https://machinowa.tokyo/life/article/li0232"
+    },
+    {
+      "row": 549,
+      "name": "おきわくガイド",
+      "key": "tri-activity-549",
+      "vertical": "アクティビティ",
+      "id": "ac0079",
+      "articleId": "ac0079",
+      "shopUrl": "https://machinowa.tokyo/activity/shop/ac0079",
+      "articleUrl": "https://machinowa.tokyo/activity/article/ac0079",
+      "sheetUrl": "https://machinowa.tokyo/activity/article/ac0079"
+    },
+    {
+      "row": 550,
+      "name": "うつぼや荘",
+      "key": "tri-stay-550",
+      "vertical": "ステイ",
+      "id": "st0033",
+      "articleId": "st0033",
+      "shopUrl": "https://machinowa.tokyo/stay/shop/st0033",
+      "articleUrl": "https://machinowa.tokyo/stay/article/st0033",
+      "sheetUrl": "https://machinowa.tokyo/stay/article/st0033"
+    },
+    {
+      "row": 551,
+      "name": "深谷パソコン修理",
+      "key": "tri-life-551",
+      "vertical": "くらし",
+      "id": "li0233",
+      "articleId": "li0233",
+      "shopUrl": "https://machinowa.tokyo/life/shop/li0233",
+      "articleUrl": "https://machinowa.tokyo/life/article/li0233",
+      "sheetUrl": "https://machinowa.tokyo/life/article/li0233"
+    },
+    {
+      "row": 552,
+      "name": "竹林広場",
+      "key": "tri-activity-552",
+      "vertical": "アクティビティ",
+      "id": "ac0080",
+      "articleId": "ac0080",
+      "shopUrl": "https://machinowa.tokyo/activity/shop/ac0080",
+      "articleUrl": "https://machinowa.tokyo/activity/article/ac0080",
+      "sheetUrl": "https://machinowa.tokyo/activity/article/ac0080"
+    }
+  ],
+  "skipped": []
+}

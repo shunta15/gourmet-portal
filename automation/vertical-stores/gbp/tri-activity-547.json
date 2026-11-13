@@ -1,0 +1,40 @@
+{
+  "tab": "トリニティアポ",
+  "tabEn": "tri-activity",
+  "row": 547,
+  "sheet": {
+    "name": "ビリヤードWIND",
+    "address": "",
+    "url": "https://www.google.com/maps/search/?api=1&query=%E3%83%93%E3%83%AA%E3%83%A4%E3%83%BC%E3%83%89WIND%20048-487-2801%20%E3%80%92353-0004%20%E5%9F%BC%E7%8E%89%E7%9C%8C%E5%BF%97%E6%9C%A8%E5%B8%82%E6%9C%AC%E7%94%BA%EF%BC%95%E4%B8%81%E7%9B%AE%EF%BC%92%EF%BC%90%E2%88%92%EF%BC%91%EF%BC%92",
+    "type": "レジャー",
+    "d1": "",
+    "d2": ""
+  },
+  "urlKind": "mapsApi",
+  "route": "第1段(verify-gbp.mjs)で確認済み",
+  "verdict": "一致",
+  "verdictReason": "手がかり: 店名＋電話＋住所(番地まで)。電話が一致／店名: exact(シート「ビリヤードWIND」/ マップ「ビリヤードWIND」)／住所(シート): exact・町名・番地とも一致",
+  "place": {
+    "name": "ビリヤードWIND",
+    "address": "埼玉県志木市本町５丁目２０−１２",
+    "category": "ビリヤード場",
+    "lat": 35.8257431,
+    "lng": 139.5755562,
+    "gbpUrl": "https://maps.google.com/?cid=1487917357687463794",
+    "phone": "048-487-2801",
+    "website": "http://b-wind.jp/",
+    "hours": {
+      "月": "10:00–03:00",
+      "火": "10:00–03:00",
+      "水": "10:00–03:00",
+      "木": "10:00–03:00",
+      "金": "10:00–03:00",
+      "土": "10:00–03:00",
+      "日": "10:00–03:00"
+    },
+    "reserveLinks": [],
+    "statusSignals": [],
+    "closedSignal": false
+  },
+  "fetchedAt": "2026-11-13T04:09:42.666Z"
+}

@@ -1,0 +1,32 @@
+{
+  "tab": "トリニティアポ",
+  "tabEn": "tri-activity",
+  "row": 546,
+  "sheet": {
+    "name": "DARUMA LAB.KAMAKURA",
+    "address": "",
+    "url": "https://www.google.com/maps/search/?api=1&query=DARUMA%20LAB.KAMAKURA%20090-5621-8464%20%E3%80%92248-0005%20%E7%A5%9E%E5%A5%88%E5%B7%9D%E7%9C%8C%E9%8E%8C%E5%80%89%E5%B8%82%E9%9B%AA%E3%83%8E%E4%B8%8B%EF%BC%93%E4%B8%81%E7%9B%AE%EF%BC%92%E2%88%92%EF%BC%97",
+    "type": "体験",
+    "d1": "",
+    "d2": ""
+  },
+  "urlKind": "mapsApi",
+  "route": "第1段(verify-gbp.mjs)で確認済み",
+  "verdict": "一致",
+  "verdictReason": "手がかり: 店名＋電話＋住所(番地まで)。電話が一致／店名: exact(シート「DARUMA LAB.KAMAKURA」/ マップ「DARUMA LAB.KAMAKURA」)／住所(シート): exact・町名・番地とも一致",
+  "place": {
+    "name": "DARUMA LAB.KAMAKURA",
+    "address": "神奈川県鎌倉市雪ノ下３丁目２−７",
+    "category": "イベント会場",
+    "lat": 35.3241034,
+    "lng": 139.5572419,
+    "gbpUrl": "https://maps.google.com/?cid=13467051271012484143",
+    "phone": "090-5621-8464",
+    "website": "https://darumalabkamakura.wixsite.com/daruma-labkamakura",
+    "hours": null,
+    "reserveLinks": [],
+    "statusSignals": [],
+    "closedSignal": false
+  },
+  "fetchedAt": "2026-11-13T04:09:06.222Z"
+}

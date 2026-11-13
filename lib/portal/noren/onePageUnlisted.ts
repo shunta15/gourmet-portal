@@ -213,6 +213,8 @@ export const ONE_PAGE_UNLISTED_SHOP_OF_FEATURE: Readonly<Record<string, string>>
   "アメリカンダイナーラ・ブーム": "r943", // アメリカンダイナー ラ・ブーム
   "焼き鳥りょうちゃん甲府": "r944", // 焼き鳥りょうちゃん甲府
   "おじぎ茶屋": "r945", // おじぎ茶屋
+  "本格手打ちうどん亭なべきち": "r946", // 本格手打ちうどん亭なべきち
+  "レストランアップルミント": "r947", // レストランアップルミント
 };
 
 const NFC = (s: string) => s.normalize("NFC");

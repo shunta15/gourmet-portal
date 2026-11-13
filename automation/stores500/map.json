@@ -2528,5 +2528,15 @@
     "articleId": "おじぎ茶屋",
     "sheetName": "おじぎ茶屋",
     "mapsUrl": "https://maps.google.com/?cid=11003962618120875220"
+  },
+  {
+    "articleId": "本格手打ちうどん亭なべきち",
+    "sheetName": "本格手打ちうどん亭なべきち",
+    "mapsUrl": "https://maps.google.com/?cid=9919755792288005372"
+  },
+  {
+    "articleId": "レストランアップルミント",
+    "sheetName": "レストランアップルミント",
+    "mapsUrl": "https://maps.google.com/?cid=15613126175457725119"
   }
 ]

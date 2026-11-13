@@ -1,0 +1,40 @@
+{
+  "tab": "トリニティアポ",
+  "tabEn": "tri-life",
+  "row": 548,
+  "sheet": {
+    "name": "合同会社 LRA association",
+    "address": "",
+    "url": "https://www.google.com/maps/search/?api=1&query=%E5%90%88%E5%90%8C%E4%BC%9A%E7%A4%BE%20LRA%20association%20014-384-5134%20%E3%80%92059-0272%20%E5%8C%97%E6%B5%B7%E9%81%93%E4%BC%8A%E9%81%94%E5%B8%82%E5%8C%97%E9%BB%84%E9%87%91%E7%94%BA%EF%BC%95%EF%BC%97%E2%88%92%EF%BC%95",
+    "type": "清掃",
+    "d1": "",
+    "d2": ""
+  },
+  "urlKind": "mapsApi",
+  "route": "第1段(verify-gbp.mjs)で確認済み",
+  "verdict": "一致",
+  "verdictReason": "手がかり: 店名＋電話＋住所(番地まで)。電話が一致／店名: contains(シート「合同会社 LRA association」/ マップ「合同会社 LRA association 金属スクラップ買取 生前、遺品整理 特殊清掃」)／住所(シート): exact・町名・番地とも一致",
+  "place": {
+    "name": "合同会社 LRA association 金属スクラップ買取 生前、遺品整理 特殊清掃",
+    "address": "北海道伊達市北黄金町５７−５",
+    "category": "清掃業",
+    "lat": 42.418216,
+    "lng": 140.9015423,
+    "gbpUrl": "https://maps.google.com/?cid=14758955296639466",
+    "phone": "0143-84-5134",
+    "website": "https://liferecycleassociation.com/",
+    "hours": {
+      "月": "08:00–17:00",
+      "火": "08:00–17:00",
+      "水": "08:00–17:00",
+      "木": "08:00–17:00",
+      "金": "08:00–17:00",
+      "土": "08:00–17:00",
+      "日": "08:00–17:00"
+    },
+    "reserveLinks": [],
+    "statusSignals": [],
+    "closedSignal": false
+  },
+  "fetchedAt": "2026-11-13T04:10:33.418Z"
+}

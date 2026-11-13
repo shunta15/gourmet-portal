@@ -1,0 +1,40 @@
+{
+  "tab": "トリニティアポ",
+  "tabEn": "tri-life",
+  "row": 551,
+  "sheet": {
+    "name": "深谷パソコン修理",
+    "address": "",
+    "url": "https://www.google.com/maps/search/?api=1&query=%E6%B7%B1%E8%B0%B7%E3%83%91%E3%82%BD%E3%82%B3%E3%83%B3%E4%BF%AE%E7%90%86%20090-3508-4150%20%E3%80%92366-0035%20%E5%9F%BC%E7%8E%89%E7%9C%8C%E6%B7%B1%E8%B0%B7%E5%B8%82%E5%8E%9F%E9%83%B7%EF%BC%92%EF%BC%91%EF%BC%91%EF%BC%96%E2%88%92%EF%BC%91",
+    "type": "修理",
+    "d1": "",
+    "d2": ""
+  },
+  "urlKind": "mapsApi",
+  "route": "第1段(verify-gbp.mjs)で確認済み",
+  "verdict": "一致",
+  "verdictReason": "手がかり: 店名＋電話＋住所(番地まで)。電話が一致／店名: exact(シート「深谷パソコン修理」/ マップ「深谷パソコン修理」)／住所(シート): exact・町名・番地とも一致",
+  "place": {
+    "name": "深谷パソコン修理",
+    "address": "埼玉県深谷市原郷２１１６−１",
+    "category": "パソコン修理店",
+    "lat": 36.1943591,
+    "lng": 139.29359,
+    "gbpUrl": "https://maps.google.com/?cid=1255921091885761308",
+    "phone": "090-3508-4150",
+    "website": "https://www.internetbenriya.com/?utm_source=google&utm_medium=wix_google_business_profile&utm_campaign=278000851857334060",
+    "hours": {
+      "月": "09:00–20:00",
+      "火": "09:00–20:00",
+      "水": "定休日",
+      "木": "09:00–20:00",
+      "金": "09:00–20:00",
+      "土": "定休日",
+      "日": "14:00–20:00"
+    },
+    "reserveLinks": [],
+    "statusSignals": [],
+    "closedSignal": false
+  },
+  "fetchedAt": "2026-11-13T04:12:52.367Z"
+}

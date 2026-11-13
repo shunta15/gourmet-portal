@@ -6289,6 +6289,258 @@
           "グループバンガロー"
         ]
       }
+    },
+    {
+      "id": "st0033",
+      "vertical": "stay",
+      "category": "ryokan",
+      "name": "うつぼや荘",
+      "pref": "tokyo",
+      "cityName": "青梅市",
+      "address": "東京都青梅市御岳山50",
+      "lat": 35.786395,
+      "lng": 139.151142,
+      "phone": "0428-78-8462",
+      "url": "https://mitakesan-utuboyasou.com/",
+      "website": "https://mitakesan-utuboyasou.com/",
+      "mapUrl": "https://maps.google.com/?cid=12833418365049704387",
+      "image": "/_portal/vshops/tri-stay-550/g01.jpg",
+      "images": [
+        "/_portal/vshops/tri-stay-550/g01.jpg",
+        "/_portal/vshops/tri-stay-550/g02.jpg",
+        "/_portal/vshops/tri-stay-550/g03.jpg",
+        "/_portal/vshops/tri-stay-550/g04.jpg",
+        "/_portal/vshops/tri-stay-550/g05.jpg",
+        "/_portal/vshops/tri-stay-550/g06.jpg",
+        "/_portal/vshops/tri-stay-550/g07.jpg",
+        "/_portal/vshops/tri-stay-550/g08.jpg",
+        "/_portal/vshops/tri-stay-550/g09.jpg",
+        "/_portal/vshops/tri-stay-550/g10.jpg",
+        "/_portal/vshops/tri-stay-550/s01.jpg",
+        "/_portal/vshops/tri-stay-550/s02.jpg",
+        "/_portal/vshops/tri-stay-550/s03.jpg",
+        "/_portal/vshops/tri-stay-550/s04.jpg",
+        "/_portal/vshops/tri-stay-550/s05.jpg",
+        "/_portal/vshops/tri-stay-550/s06.jpg",
+        "/_portal/vshops/tri-stay-550/s11.jpg",
+        "/_portal/vshops/tri-stay-550/s12.jpg",
+        "/_portal/vshops/tri-stay-550/s15.jpg"
+      ],
+      "photos": [
+        {
+          "path": "/_portal/vshops/tri-stay-550/g01.jpg",
+          "what": "「うつぼや荘」と書かれた看板のある宿坊の外観",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-stay-550/g02.jpg",
+          "what": "ベッドとソファーが置かれた木のぬくもりある和洋室",
+          "kind": "room",
+          "width": 1200,
+          "height": 675
+        },
+        {
+          "path": "/_portal/vshops/tri-stay-550/g03.jpg",
+          "what": "小鉢が並ぶ宿坊の夕食膳",
+          "kind": "meal",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-stay-550/g04.jpg",
+          "what": "焼き魚と小鉢が並ぶ朝食膳",
+          "kind": "meal",
+          "width": 1200,
+          "height": 675
+        },
+        {
+          "path": "/_portal/vshops/tri-stay-550/g05.jpg",
+          "what": "木の壁と窓のある明るい共用スペース",
+          "kind": "common",
+          "width": 500,
+          "height": 375
+        },
+        {
+          "path": "/_portal/vshops/tri-stay-550/g06.jpg",
+          "what": "木製のテーブルと椅子が並ぶ食事処",
+          "kind": "common",
+          "width": 500,
+          "height": 375
+        },
+        {
+          "path": "/_portal/vshops/tri-stay-550/g07.jpg",
+          "what": "ヒノキの浴槽がある貸切風呂",
+          "kind": "bath",
+          "width": 500,
+          "height": 375
+        },
+        {
+          "path": "/_portal/vshops/tri-stay-550/g08.jpg",
+          "what": "窓から緑が見える広い浴室",
+          "kind": "bath",
+          "width": 500,
+          "height": 375
+        },
+        {
+          "path": "/_portal/vshops/tri-stay-550/g09.jpg",
+          "what": "木の壁に囲まれた浴室と浴槽",
+          "kind": "bath",
+          "width": 500,
+          "height": 375
+        },
+        {
+          "path": "/_portal/vshops/tri-stay-550/g10.jpg",
+          "what": "和室と掘りごたつのある共用スペース",
+          "kind": "common",
+          "width": 500,
+          "height": 375
+        },
+        {
+          "path": "/_portal/vshops/tri-stay-550/s01.jpg",
+          "what": "ベッドが2台置かれた洋室の客室",
+          "kind": "room",
+          "width": 990,
+          "height": 680
+        },
+        {
+          "path": "/_portal/vshops/tri-stay-550/s02.jpg",
+          "what": "「うつぼや荘」と書かれた看板のある建物外観",
+          "kind": "exterior",
+          "width": 720,
+          "height": 1280
+        },
+        {
+          "path": "/_portal/vshops/tri-stay-550/s03.jpg",
+          "what": "畳と障子のある和室スペース",
+          "kind": "room",
+          "width": 720,
+          "height": 1280
+        },
+        {
+          "path": "/_portal/vshops/tri-stay-550/s04.jpg",
+          "what": "苔と岩の間を流れる滝がある周辺の渓流",
+          "kind": "view",
+          "width": 720,
+          "height": 1280
+        },
+        {
+          "path": "/_portal/vshops/tri-stay-550/s05.jpg",
+          "what": "杉林の間から差し込む光が見える御岳山の森",
+          "kind": "view",
+          "width": 720,
+          "height": 1280
+        },
+        {
+          "path": "/_portal/vshops/tri-stay-550/s06.jpg",
+          "what": "緑の木々が広がる御岳山の山の景色",
+          "kind": "view",
+          "width": 720,
+          "height": 1280
+        },
+        {
+          "path": "/_portal/vshops/tri-stay-550/s11.jpg",
+          "what": "木の壁と照明のある広い食事処の内観",
+          "kind": "common",
+          "width": 1280,
+          "height": 567
+        },
+        {
+          "path": "/_portal/vshops/tri-stay-550/s12.jpg",
+          "what": "木製の折り畳み椅子が並ぶテラスのカフェスペース",
+          "kind": "common",
+          "width": 750,
+          "height": 650
+        },
+        {
+          "path": "/_portal/vshops/tri-stay-550/s15.jpg",
+          "what": "小鉢と川魚が並ぶ宿坊の食事膳",
+          "kind": "meal",
+          "width": 1100,
+          "height": 680
+        }
+      ],
+      "tags": [
+        "ペット同伴",
+        "素泊まり"
+      ],
+      "article": {
+        "headline": "東京都青梅市御岳山にある宿坊。多摩産材100%の総ヒノキ造りで2024年8月にリニューアルし、1日2組限定で宿泊を受け入れています。",
+        "lede": "青梅市にある「うつぼや荘」です。御岳山山頂付近に位置する宿坊で、武蔵御嶽神社の御師（おし）の家系である靭矢（うつぼや）家が代々受け継いできた宿坊です。元の建物は明治時代の築120年超の建築でしたが、老朽化に伴い2024年8月に全館を建て直してリニューアルオープンしました。多摩産材のみを使った総ヒノキ造りで、山上では大型重機が使えないため、セメント練りや資材の運搬をすべて人力で行った建物です。おもてなしを大切にするため1日2組限定での受け入れとしており、御嶽神社の御霊を祀った「神前の間」を館内に備えた宿坊らしい空間が整っています。各種キャッシュレス決済に対応しており、対面決済とオンライン決済の両方が使えます。",
+        "sections": [
+          {
+            "heading": "客室の種類と数",
+            "body": "客室は2部屋あります。「和洋室」は洋室部分にベッド2台とソファーベッド、和室部分に布団を敷いて最大5名まで宿泊できる広さです。「洋室」は1〜2名向けのプライベート空間で、霊峰御岳山での静かな時間が過ごせます。どちらの客室にもエアコン、冷蔵庫、お手洗い、洗面台、ケトル、ドライヤー、お茶セットが備わっています。客室の冷蔵庫には地元・多摩のクラフトビールが入っており、1人1本サービスで自由に利用できます。タオル類は青梅市のホットマン株式会社製の1秒タオルを用意しており、フェイスタオルはお持ち帰りいただけます。作務衣も用意されています。宿全体でWi-Fiが利用できます。"
+          },
+          {
+            "heading": "風呂",
+            "body": "お風呂は貸し切り式で、ヒノキの香りが漂う浴室です。脱衣場に内鍵がかかる仕組みで、プライベートな時間を確保できます。入浴時間は16時から22時と、翌朝5時から9時の2つの時間帯です。アメニティにはボディソープ、シャンプー、コンディショナー、ドライヤー、綿棒や化粧水などを含むアメニティセットが用意されています。"
+          },
+          {
+            "heading": "食事",
+            "body": "食事は宿坊らしさを大切にした、地元の食材を使った内容です。宿の畑で育てた自家製野菜をはじめ、御岳山のこんにゃくや周辺で採れた川魚を使った料理を提供しています。女将が手作りするこんにゃくは、生芋をすりおろして練り上げる製法で仕上げています。朝食も提供しており、素泊まり・朝食のみのプランでは、チェックインを19時まで延長できます。オプションとして秋川牛をメイン食材に使ったBBQセットも用意しており、希望するゲストは宿に相談して手配できます。食事は館内の食事処「気まぐれぼーや」に隣接する食事処でいただきます。カフェ「気まぐれぼーや」では不定期営業でコーヒー、サイダー、奥多摩のクラフトビール（VERTERE）、生ビールのほか、御嶽汁、おにぎり、いなり、ちまきなどの軽食を提供しています。11月から1月の期間はおしるこも提供します。"
+          },
+          {
+            "heading": "行き方と使い方",
+            "body": "JR御嶽駅からバスでケーブルカー「滝本駅」へ移動し、御岳山登山鉄道のケーブルカーに乗って「御岳山駅」で下車した後、徒歩約9〜10分で到着します。ケーブルカーの時刻表は御岳山登山鉄道の公式ホームページで確認できます。車でお越しの場合は、圏央道・青梅ICまたは日の出ICから約40分、中央道・八王子ICから約60分が目安で、駐車場は御岳山ケーブルカー滝本駅の駐車場を利用します。チェックインは15時から17時まで（素泊まり・朝食のみの場合は19時まで）、チェックアウトは10時までです。予約は公式サイトのほか、じゃらん・楽天トラベルなどの宿泊予約サイトからも行えます。2食付き＋ご祈祷体験付きのプランも用意されており、朝食前に武蔵御嶽神社でのご祈祷を奉仕しています。カフェは屋根付きテラスがペット同伴可能で、犬用メニューも用意されています。"
+          }
+        ],
+        "menus": [
+          {
+            "name": "2食付き宿泊"
+          },
+          {
+            "name": "朝食付き宿泊"
+          },
+          {
+            "name": "素泊まり"
+          },
+          {
+            "name": "2食付き＋ご祈祷体験"
+          },
+          {
+            "name": "BBQセット（オプション）"
+          }
+        ],
+        "sources": [
+          {
+            "label": "公式サイト",
+            "url": "https://mitakesan-utuboyasou.com/"
+          },
+          {
+            "label": "公式サイト(施設案内)",
+            "url": "https://mitakesan-utuboyasou.com/facilities.html"
+          },
+          {
+            "label": "公式サイト(お食事)",
+            "url": "https://mitakesan-utuboyasou.com/meals.html"
+          },
+          {
+            "label": "公式サイト(アクセス)",
+            "url": "https://mitakesan-utuboyasou.com/access.html"
+          },
+          {
+            "label": "omegocoti.com",
+            "url": "https://omegocoti.com/utsuboyasou/"
+          },
+          {
+            "label": "じゃらんnet",
+            "url": "https://www.jalan.net/yad365624/plan/"
+          },
+          {
+            "label": "Google マップ",
+            "url": "https://maps.google.com/?cid=12833418365049704387"
+          }
+        ],
+        "checkedAt": "2026-11-13"
+      },
+      "attributes": {
+        "roomTypes": [
+          "和洋室",
+          "洋室"
+        ]
+      }
     }
   ]
 }
