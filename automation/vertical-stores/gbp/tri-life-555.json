@@ -1,0 +1,40 @@
+{
+  "tab": "トリニティアポ",
+  "tabEn": "tri-life",
+  "row": 555,
+  "sheet": {
+    "name": "亀山八幡宮（久保八幡神社）",
+    "address": "",
+    "url": "https://www.google.com/maps/search/?api=1&query=%E4%BA%80%E5%B1%B1%E5%85%AB%E5%B9%A1%E5%AE%AE%EF%BC%88%E4%B9%85%E4%BF%9D%E5%85%AB%E5%B9%A1%E7%A5%9E%E7%A4%BE%EF%BC%89%20084-837-4317%20%E3%80%92722-0044%20%E5%BA%83%E5%B3%B6%E7%9C%8C%E5%B0%BE%E9%81%93%E5%B8%82%E8%A5%BF%E4%B9%85%E4%BF%9D%E7%94%BA%EF%BC%92%E2%88%92%EF%BC%91",
+    "type": "神社",
+    "d1": "",
+    "d2": ""
+  },
+  "urlKind": "mapsApi",
+  "route": "第1段(verify-gbp.mjs)で確認済み",
+  "verdict": "一致",
+  "verdictReason": "手がかり: 店名＋電話＋住所(番地まで)。電話が一致／店名: exact(シート「亀山八幡宮（久保八幡神社）」/ マップ「亀山八幡宮（久保八幡神社）」)／住所(シート): exact・町名・番地とも一致",
+  "place": {
+    "name": "亀山八幡宮（久保八幡神社）",
+    "address": "広島県尾道市西久保町２−１",
+    "category": "神社",
+    "lat": 34.413467,
+    "lng": 133.205447,
+    "gbpUrl": "https://maps.google.com/?cid=15658763223210877390",
+    "phone": "0848-37-4317",
+    "website": null,
+    "hours": {
+      "月": "24時間営業",
+      "火": "24時間営業",
+      "水": "24時間営業",
+      "木": "24時間営業",
+      "金": "24時間営業",
+      "土": "24時間営業",
+      "日": "24時間営業"
+    },
+    "reserveLinks": [],
+    "statusSignals": [],
+    "closedSignal": false
+  },
+  "fetchedAt": "2026-11-13T19:08:16.238Z"
+}

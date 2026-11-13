@@ -1,0 +1,40 @@
+{
+  "tab": "トリニティアポ",
+  "tabEn": "tri-life",
+  "row": 560,
+  "sheet": {
+    "name": "小名浜諏訪神社 ～海の鎮守様～",
+    "address": "",
+    "url": "https://www.google.com/maps/search/?api=1&query=%E5%B0%8F%E5%90%8D%E6%B5%9C%E8%AB%8F%E8%A8%AA%E7%A5%9E%E7%A4%BE%20%EF%BD%9E%E6%B5%B7%E3%81%AE%E9%8E%AE%E5%AE%88%E6%A7%98%EF%BD%9E%20024-692-2656%20",
+    "type": "神社",
+    "d1": "",
+    "d2": ""
+  },
+  "urlKind": "mapsApi",
+  "route": "第1段(verify-gbp.mjs)で確認済み",
+  "verdict": "一致",
+  "verdictReason": "手がかり: 店名＋電話。電話が一致／店名: contains(シート「小名浜諏訪神社 ～海の鎮守様～」/ マップ「小名浜諏訪神社」)",
+  "place": {
+    "name": "小名浜諏訪神社",
+    "address": "福島県いわき市小名浜諏訪町２３−１",
+    "category": "神社",
+    "lat": 36.9538537,
+    "lng": 140.9081899,
+    "gbpUrl": "https://maps.google.com/?cid=243634495158612530",
+    "phone": "0246-92-2656",
+    "website": "https://onahamasuwa.jp/",
+    "hours": {
+      "月": "09:00–17:00",
+      "火": "09:00–17:00",
+      "水": "09:00–17:00",
+      "木": "09:00–17:00",
+      "金": "09:00–17:00",
+      "土": "09:00–17:00",
+      "日": "09:00–17:00"
+    },
+    "reserveLinks": [],
+    "statusSignals": [],
+    "closedSignal": false
+  },
+  "fetchedAt": "2026-11-13T19:11:15.416Z"
+}

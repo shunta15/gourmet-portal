@@ -835,6 +835,256 @@
         ],
         "checkedAt": "2026-11-06"
       }
+    },
+    {
+      "id": "sp0008",
+      "vertical": "sports",
+      "category": "martial-arts",
+      "name": "FIELD-RING キックボクシング・ボクシング・ブラジリアン柔術",
+      "pref": "chiba",
+      "cityName": "千葉市美浜区",
+      "address": "千葉県千葉市美浜区高洲3丁目11-3 並木ビル 3階",
+      "lat": 35.627568,
+      "lng": 140.0705551,
+      "hours": "月-金 10:00 - 14:00, 17:00 - 22:00 / 土日 10:00 - 17:00",
+      "phone": "043-270-2497",
+      "url": "https://field-ring.online/",
+      "website": "https://field-ring.online/",
+      "mapUrl": "https://maps.google.com/?cid=9732905882338064507",
+      "image": "/_portal/vshops/tri-sports-562/g01.jpg",
+      "images": [
+        "/_portal/vshops/tri-sports-562/g01.jpg",
+        "/_portal/vshops/tri-sports-562/g02.jpg",
+        "/_portal/vshops/tri-sports-562/g03.jpg",
+        "/_portal/vshops/tri-sports-562/g04.jpg",
+        "/_portal/vshops/tri-sports-562/g05.jpg",
+        "/_portal/vshops/tri-sports-562/g06.jpg",
+        "/_portal/vshops/tri-sports-562/g07.jpg",
+        "/_portal/vshops/tri-sports-562/g08.jpg",
+        "/_portal/vshops/tri-sports-562/g09.jpg",
+        "/_portal/vshops/tri-sports-562/g10.jpg",
+        "/_portal/vshops/tri-sports-562/s01.jpg",
+        "/_portal/vshops/tri-sports-562/s02.jpg",
+        "/_portal/vshops/tri-sports-562/s03.jpg",
+        "/_portal/vshops/tri-sports-562/s04.jpg",
+        "/_portal/vshops/tri-sports-562/s05.jpg",
+        "/_portal/vshops/tri-sports-562/s06.jpg",
+        "/_portal/vshops/tri-sports-562/s07.jpg"
+      ],
+      "photos": [
+        {
+          "path": "/_portal/vshops/tri-sports-562/g01.jpg",
+          "what": "リングとサンドバッグが並ぶジム内でトレーニングする複数の人",
+          "kind": "common",
+          "width": 705,
+          "height": 414
+        },
+        {
+          "path": "/_portal/vshops/tri-sports-562/g02.jpg",
+          "what": "サンドバッグを打つ練習をする複数の会員",
+          "kind": "common",
+          "width": 1000,
+          "height": 750
+        },
+        {
+          "path": "/_portal/vshops/tri-sports-562/g03.jpg",
+          "what": "床でブラジリアン柔術の技を練習する2人",
+          "kind": "common",
+          "width": 858,
+          "height": 913
+        },
+        {
+          "path": "/_portal/vshops/tri-sports-562/g04.jpg",
+          "what": "ジム入口付近の壁沿いに植物が置かれた明るい店内",
+          "kind": "common",
+          "width": 1000,
+          "height": 750
+        },
+        {
+          "path": "/_portal/vshops/tri-sports-562/g05.jpg",
+          "what": "グローブをつけてミット打ちの練習をする人",
+          "kind": "common",
+          "width": 1000,
+          "height": 750
+        },
+        {
+          "path": "/_portal/vshops/tri-sports-562/g06.jpg",
+          "what": "フリーウェイトや有酸素マシンが並ぶトレーニングスペース",
+          "kind": "common",
+          "width": 1000,
+          "height": 750
+        },
+        {
+          "path": "/_portal/vshops/tri-sports-562/g07.jpg",
+          "what": "トレーナーがキックボクシングの技を指導する様子",
+          "kind": "common",
+          "width": 1000,
+          "height": 750
+        },
+        {
+          "path": "/_portal/vshops/tri-sports-562/g08.jpg",
+          "what": "サンドバッグにキックを放つ練習をする人",
+          "kind": "common",
+          "width": 750,
+          "height": 1000
+        },
+        {
+          "path": "/_portal/vshops/tri-sports-562/g09.jpg",
+          "what": "赤いマットが敷かれた広いジムのフロア全体",
+          "kind": "common",
+          "width": 1000,
+          "height": 750
+        },
+        {
+          "path": "/_portal/vshops/tri-sports-562/g10.jpg",
+          "what": "バランスボールを使ったトレーニングをする人",
+          "kind": "common",
+          "width": 1000,
+          "height": 750
+        },
+        {
+          "path": "/_portal/vshops/tri-sports-562/s01.jpg",
+          "what": "ジム入口付近の受付スペースと植物の置かれた明るいエントランス",
+          "kind": "common",
+          "width": 1280,
+          "height": 960
+        },
+        {
+          "path": "/_portal/vshops/tri-sports-562/s02.jpg",
+          "what": "バランスボールやマットを使ったクラスの様子",
+          "kind": "common",
+          "width": 1280,
+          "height": 964
+        },
+        {
+          "path": "/_portal/vshops/tri-sports-562/s03.jpg",
+          "what": "ロッカーが並ぶ更衣室",
+          "kind": "room",
+          "width": 1280,
+          "height": 960
+        },
+        {
+          "path": "/_portal/vshops/tri-sports-562/s04.jpg",
+          "what": "個室タイプのシャワー室または更衣ブース",
+          "kind": "room",
+          "width": 1280,
+          "height": 960
+        },
+        {
+          "path": "/_portal/vshops/tri-sports-562/s05.jpg",
+          "what": "タイル張りのシャワー室",
+          "kind": "room",
+          "width": 960,
+          "height": 1280
+        },
+        {
+          "path": "/_portal/vshops/tri-sports-562/s06.jpg",
+          "what": "壁一面にロッカーが並ぶ更衣室",
+          "kind": "room",
+          "width": 1195,
+          "height": 896
+        },
+        {
+          "path": "/_portal/vshops/tri-sports-562/s07.jpg",
+          "what": "「酸素カプセル・ボクシング」と書かれた看板の前に置かれた酸素ボックス",
+          "kind": "common",
+          "width": 1280,
+          "height": 960
+        }
+      ],
+      "tags": [
+        "初心者歓迎",
+        "体験あり",
+        "子ども向け"
+      ],
+      "article": {
+        "headline": "千葉市美浜区、稲毛海岸駅から徒歩5分のキックボクシング・ボクシング・ブラジリアン柔術ジム。会員の95％以上が未経験からスタートしている。",
+        "lede": "千葉市美浜区にある「FIELD-RING キックボクシング・ボクシング・ブラジリアン柔術」です。JR京葉線稲毛海岸駅南口から徒歩5分、並木ビル3階に位置するジムで、キックボクシング・ボクシング・ブラジリアン柔術の3種目を提供しています。代表は打越昌弘で、全日本スーパーバンタム級新人王を獲得した経歴を持ちます。ジムには13名の指導者が在籍し、元日本チャンピオンや全日本ランカー経験を持つトレーナーが複数名を占めます。会員の95％以上が未経験から始めており、子どもクラスやレディースクラスを含む多様なクラスを設けています。",
+        "sections": [
+          {
+            "heading": "設備と広さ",
+            "body": "ジム内にはリング、サンドバッグ、フリーウェイト、有酸素マシン、マットスペースを備えています。設備として男性更衣室・女性更衣室・男女別シャワー室・ロッカー(ロッカーには利用の種別あり)・酸素ボックスがあります。酸素ボックスは同ジムのウェブサイトに専用のページが設けられているほど特徴的な設備です。駐車場も利用できます。"
+          },
+          {
+            "heading": "教室・体験",
+            "body": "キックボクシングでは初心者クラス・レディースクラス・キッズクラス・テクニカルクラスなど複数のクラスを開いています。子どもクラスは小学1年生以上を対象に、縄跳びと基本的なパンチ・キックを指導します。レディースクラスはアップテンポの音楽に合わせたパンチとキックのトレーニングです。体幹クラスや筋トレクラスも設けており、初心者から上級者まで対応します。ブラジリアン柔術は月・水曜日の20:00〜21:30のクラスがあります。アマチュア大会出場やプロを目指す会員への指導にも対応しています。体験レッスンの申込みは公式サイトのフォームから、またはLINEから可能です。"
+          },
+          {
+            "heading": "指導者",
+            "body": "代表の打越昌弘は帝拳ジム出身で、全日本スーパーバンタム級新人王(1987年度)を獲得したボクサーです。戦績は17勝11KO・2敗1分で、日本スーパーバンタム級・フェザー級・スーパーフェザー級の3階級を経験しています。在籍する13名のトレーナーには伊藤辰史・田中佳斗・新開実・森脇健太・成瀬晴規・海野智裕・山田隆博ら元チャンピオン・ランカーが名を連ねています。技術と経験を積んだトレーナーが一人ひとりの希望に沿って対応します。"
+          },
+          {
+            "heading": "行き方と使い方",
+            "body": "JR京葉線稲毛海岸駅南口から徒歩5分の並木ビル3階です。祝日は自主練習として利用でき、定休日はありません。会員種別はマスター・平日フリー・平日午前・ホリデー・小中高生・柔術ONLYから選べます。入会前に体験レッスンを受けることができ、申込みは公式サイトのフォームまたはLINEから可能です。"
+          }
+        ],
+        "menus": [
+          {
+            "name": "キックボクシングクラス"
+          },
+          {
+            "name": "ボクシングクラス"
+          },
+          {
+            "name": "ブラジリアン柔術クラス"
+          },
+          {
+            "name": "レディースクラス"
+          },
+          {
+            "name": "キッズクラス"
+          },
+          {
+            "name": "体幹クラス"
+          },
+          {
+            "name": "パーソナルコース"
+          }
+        ],
+        "sources": [
+          {
+            "label": "公式サイト",
+            "url": "https://field-ring.online/"
+          },
+          {
+            "label": "公式サイト(会員種別・料金)",
+            "url": "https://field-ring.online/price/"
+          },
+          {
+            "label": "公式サイト(アクセス)",
+            "url": "https://field-ring.online/access/"
+          },
+          {
+            "label": "公式サイト(設備)",
+            "url": "https://field-ring.online/facilities/"
+          },
+          {
+            "label": "公式サイト(体験レッスン申込み)",
+            "url": "https://field-ring.online/contact/"
+          },
+          {
+            "label": "まいぷれ千葉市美浜区",
+            "url": "https://mihama-chiba.mypl.net/shop/00000365332/"
+          },
+          {
+            "label": "THE GYMS",
+            "url": "https://thegyms.jp/chiba/area01/durogym-inagekaigan/"
+          },
+          {
+            "label": "FIGHTSPACE",
+            "url": "https://fightspace.jp/gym/513/"
+          },
+          {
+            "label": "ボクシング図書館",
+            "url": "https://boxinglib.com/boxingmeikan/archive/5306/0"
+          },
+          {
+            "label": "Google マップ",
+            "url": "https://maps.google.com/?cid=9732905882338064507"
+          }
+        ],
+        "checkedAt": "2026-11-14"
+      }
     }
   ]
 }

@@ -1,0 +1,40 @@
+{
+  "tab": "トリニティアポ",
+  "tabEn": "tri-life",
+  "row": 558,
+  "sheet": {
+    "name": "定福寺",
+    "address": "",
+    "url": "https://www.google.com/maps/search/?api=1&query=%E5%AE%9A%E7%A6%8F%E5%AF%BA%20025-657-2137%20%E3%80%92959-1512%20%E6%96%B0%E6%BD%9F%E7%9C%8C%E5%8D%97%E8%92%B2%E5%8E%9F%E9%83%A1%E7%94%B0%E4%B8%8A%E7%94%BA%E7%BE%BD%E7%94%9F%E7%94%B0%E4%B9%99587",
+    "type": "寺",
+    "d1": "",
+    "d2": ""
+  },
+  "urlKind": "mapsApi",
+  "route": "第1段(verify-gbp.mjs)で確認済み",
+  "verdict": "一致",
+  "verdictReason": "手がかり: 店名＋電話＋住所(番地まで)。電話が一致／店名: contains(シート「定福寺」/ マップ「羽生山 定福寺」)／住所(シート): exact・町名・番地とも一致",
+  "place": {
+    "name": "羽生山 定福寺",
+    "address": "新潟県南蒲原郡田上町羽生田乙587",
+    "category": "仏教寺院",
+    "lat": 37.6876995,
+    "lng": 139.0609627,
+    "gbpUrl": "https://maps.google.com/?cid=17795943772358515608",
+    "phone": "0256-57-2137",
+    "website": "https://jofukuji-tagami.com/",
+    "hours": {
+      "月": "10:00–11:30, 13:00–16:00",
+      "火": "10:00–11:30, 13:00–16:00",
+      "水": "10:00–11:30, 13:00–16:00",
+      "木": "10:00–11:30, 13:00–16:00",
+      "金": "10:00–11:30, 13:00–16:00",
+      "土": "定休日",
+      "日": "定休日"
+    },
+    "reserveLinks": [],
+    "statusSignals": [],
+    "closedSignal": false
+  },
+  "fetchedAt": "2026-11-13T19:10:00.605Z"
+}

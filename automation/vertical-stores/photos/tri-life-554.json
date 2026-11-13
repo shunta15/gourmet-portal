@@ -1,0 +1,66 @@
+{
+  "key": "tri-life-554",
+  "images": [
+    {
+      "path": "/_portal/vshops/tri-life-554/g01.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9R_cHoGDb_X2tju4F1kV8OMrE5zOtQ6Iy4G1p7LC7uyv-qPpO5DoncVr6COLUnbT_9RacHR3B_jrrhv6E1mPXLpt61Q7QWuTveuoQ4piAZrJjzEd2yaR3NmUlmZSm_8ANQwi0hzq6H1fYUb=s1200",
+      "pageUrl": "https://maps.google.com/?cid=15845651438759710378",
+      "what": "仏像と位牌が並ぶ納骨堂の内部",
+      "kind": "common",
+      "width": 900,
+      "height": 1200,
+      "source": "Google マップ"
+    },
+    {
+      "path": "/_portal/vshops/tri-life-554/g02.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9ROhd2lcZLsgVi1qxk-RjjjqqMRu-LTbUnUZ-4KXJNpgjVPsV5-v3zyaQTpIBomJNkPoXSxS5mqnjhk3jwOkgBjbhX2htZOm2eFS8uO8IGQ9kX_S0rVXwItnwfrUfdHYwspFaIbfYQTyj_w=s1200",
+      "pageUrl": "https://maps.google.com/?cid=15845651438759710378",
+      "what": "八角形の納骨堂内部と正面の仏像・位牌",
+      "kind": "common",
+      "width": 1200,
+      "height": 900,
+      "source": "Google マップ"
+    },
+    {
+      "path": "/_portal/vshops/tri-life-554/g03.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9T_qiBgZ0SfVGyE6LuWQyB7sRtn57W8TuG_M7g0J9GTJFuDKab15fdKOCxuXiKC6oUooSzS1-w8YB0cSeXhFj07Frke_4o5-dmzjiPKG4saM2KIxihw1-6u1vO0NEtPq5cvs7RJbwg_CX3R=s1200",
+      "pageUrl": "https://maps.google.com/?cid=15845651438759710378",
+      "what": "納骨堂の正面祭壇と仏像",
+      "kind": "common",
+      "width": 900,
+      "height": 1200,
+      "source": "Google マップ"
+    },
+    {
+      "path": "/_portal/vshops/tri-life-554/g04.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9RFAYnWwx3aSo_-QOVFIuY9DPnqy4T1nI1Y5BzAKUvyRmnd7kZrVum_A1X0EQx5t0B08BpDTBlHRHkfIMGXq48hzVwwQ7RaSEQCrO58P66YtmoFv0nhHPsnsoWUiQ4eE95glfYMEkZwvCUm=s1200",
+      "pageUrl": "https://maps.google.com/?cid=15845651438759710378",
+      "what": "石垣と木々に囲まれた境内の外観",
+      "kind": "exterior",
+      "width": 900,
+      "height": 1200,
+      "source": "Google マップ"
+    },
+    {
+      "path": "/_portal/vshops/tri-life-554/s03.jpg",
+      "imageUrl": "https://suwa-jumokusou.com/img/jm2.jpg",
+      "pageUrl": "https://suwa-jumokusou.com/jumoku-sou",
+      "what": "名前が彫刻された樹木葬用の墓石プレート",
+      "kind": "exterior",
+      "width": 1024,
+      "height": 767,
+      "source": "公式サイト"
+    },
+    {
+      "path": "/_portal/vshops/tri-life-554/s05.jpg",
+      "imageUrl": "https://suwa-jumokusou.com/img/jm4.jpg",
+      "pageUrl": "https://suwa-jumokusou.com/jumoku-sou",
+      "what": "バリアフリー対応の樹木葬霊園と車椅子",
+      "kind": "common",
+      "width": 731,
+      "height": 548,
+      "source": "公式サイト"
+    }
+  ],
+  "note": "automation/v2/write.mjs が 2026-11-13T19:22:18.991Z に取得。店の実写だけ(AI 画像・汎用画像・地図・ロゴ・顔が大きい画像は除外)。"
+}

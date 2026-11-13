@@ -1,0 +1,40 @@
+{
+  "tab": "トリニティアポ",
+  "tabEn": "tri-beauty",
+  "row": 553,
+  "sheet": {
+    "name": "Beaurishネイルスクール＆サロン",
+    "address": "",
+    "url": "https://www.google.com/maps/search/?api=1&query=Beaurish%E3%83%8D%E3%82%A4%E3%83%AB%E3%82%B9%E3%82%AF%E3%83%BC%E3%83%AB%EF%BC%86%E3%82%B5%E3%83%AD%E3%83%B3%20048-297-7779%20%E3%80%92333-0831%20%E5%9F%BC%E7%8E%89%E7%9C%8C%E5%B7%9D%E5%8F%A3%E5%B8%82%E6%9C%A8%E6%9B%BD%E5%91%82%EF%BC%98%EF%BC%96%EF%BC%96%E2%88%92%EF%BC%97",
+    "type": "美容",
+    "d1": "",
+    "d2": ""
+  },
+  "urlKind": "mapsApi",
+  "route": "第1段(verify-gbp.mjs)で確認済み",
+  "verdict": "一致",
+  "verdictReason": "手がかり: 店名＋電話＋住所(番地まで)。電話が一致／店名: exact(シート「Beaurishネイルスクール＆サロン」/ マップ「Beaurishネイルスクール＆サロン」)／住所(シート): exact・町名・番地とも一致",
+  "place": {
+    "name": "Beaurishネイルスクール＆サロン",
+    "address": "埼玉県川口市木曽呂８６６−７",
+    "category": "ネイルサロン",
+    "lat": 35.8611731,
+    "lng": 139.7216828,
+    "gbpUrl": "https://maps.google.com/?cid=15166469503462395395",
+    "phone": "048-297-7779",
+    "website": "http://www.beaurish.com/",
+    "hours": {
+      "月": "10:00–21:00",
+      "火": "10:00–21:00",
+      "水": "10:00–21:00",
+      "木": "10:00–21:00",
+      "金": "10:00–21:00",
+      "土": "10:00–21:00",
+      "日": "定休日"
+    },
+    "reserveLinks": [],
+    "statusSignals": [],
+    "closedSignal": false
+  },
+  "fetchedAt": "2026-11-13T19:07:02.422Z"
+}

@@ -1,0 +1,118 @@
+{
+  "commit": "0f312a03844f510d5b2a097ea98e045bca8197c2",
+  "source": "/Users/shunta/claude/gp-k-auto2",
+  "count": 10,
+  "added": [
+    {
+      "row": 553,
+      "name": "Beaurishネイルスクール＆サロン",
+      "key": "tri-beauty-553",
+      "vertical": "ビューティー",
+      "id": "be0117",
+      "articleId": null,
+      "shopUrl": "https://machinowa.tokyo/beauty/shop/be0117",
+      "articleUrl": null,
+      "sheetUrl": "https://machinowa.tokyo/beauty/shop/be0117"
+    },
+    {
+      "row": 554,
+      "name": "仏法紹隆寺",
+      "key": "tri-life-554",
+      "vertical": "くらし",
+      "id": "li0234",
+      "articleId": "li0234",
+      "shopUrl": "https://machinowa.tokyo/life/shop/li0234",
+      "articleUrl": "https://machinowa.tokyo/life/article/li0234",
+      "sheetUrl": "https://machinowa.tokyo/life/article/li0234"
+    },
+    {
+      "row": 555,
+      "name": "亀山八幡宮（久保八幡神社）",
+      "key": "tri-life-555",
+      "vertical": "くらし",
+      "id": "li0235",
+      "articleId": "li0235",
+      "shopUrl": "https://machinowa.tokyo/life/shop/li0235",
+      "articleUrl": "https://machinowa.tokyo/life/article/li0235",
+      "sheetUrl": "https://machinowa.tokyo/life/article/li0235"
+    },
+    {
+      "row": 556,
+      "name": "開運稲荷神社",
+      "key": "tri-life-556",
+      "vertical": "くらし",
+      "id": "li0236",
+      "articleId": "li0236",
+      "shopUrl": "https://machinowa.tokyo/life/shop/li0236",
+      "articleUrl": "https://machinowa.tokyo/life/article/li0236",
+      "sheetUrl": "https://machinowa.tokyo/life/article/li0236"
+    },
+    {
+      "row": 557,
+      "name": "向東八幡宮",
+      "key": "tri-life-557",
+      "vertical": "くらし",
+      "id": "li0237",
+      "articleId": "li0237",
+      "shopUrl": "https://machinowa.tokyo/life/shop/li0237",
+      "articleUrl": "https://machinowa.tokyo/life/article/li0237",
+      "sheetUrl": "https://machinowa.tokyo/life/article/li0237"
+    },
+    {
+      "row": 558,
+      "name": "定福寺",
+      "key": "tri-life-558",
+      "vertical": "くらし",
+      "id": "li0238",
+      "articleId": "li0238",
+      "shopUrl": "https://machinowa.tokyo/life/shop/li0238",
+      "articleUrl": "https://machinowa.tokyo/life/article/li0238",
+      "sheetUrl": "https://machinowa.tokyo/life/article/li0238"
+    },
+    {
+      "row": 559,
+      "name": "西泉寺",
+      "key": "tri-life-559",
+      "vertical": "くらし",
+      "id": "li0239",
+      "articleId": "li0239",
+      "shopUrl": "https://machinowa.tokyo/life/shop/li0239",
+      "articleUrl": "https://machinowa.tokyo/life/article/li0239",
+      "sheetUrl": "https://machinowa.tokyo/life/article/li0239"
+    },
+    {
+      "row": 560,
+      "name": "小名浜諏訪神社 ～海の鎮守様～",
+      "key": "tri-life-560",
+      "vertical": "くらし",
+      "id": "li0240",
+      "articleId": "li0240",
+      "shopUrl": "https://machinowa.tokyo/life/shop/li0240",
+      "articleUrl": "https://machinowa.tokyo/life/article/li0240",
+      "sheetUrl": "https://machinowa.tokyo/life/article/li0240"
+    },
+    {
+      "row": 561,
+      "name": "春日神社（小野原鎮座）",
+      "key": "tri-life-561",
+      "vertical": "くらし",
+      "id": "li0241",
+      "articleId": "li0241",
+      "shopUrl": "https://machinowa.tokyo/life/shop/li0241",
+      "articleUrl": "https://machinowa.tokyo/life/article/li0241",
+      "sheetUrl": "https://machinowa.tokyo/life/article/li0241"
+    },
+    {
+      "row": 562,
+      "name": "FIELD-RING キックボクシング・ボクシング・ブラジリアン柔術",
+      "key": "tri-sports-562",
+      "vertical": "スポーツ",
+      "id": "sp0008",
+      "articleId": "sp0008",
+      "shopUrl": "https://machinowa.tokyo/sports/shop/sp0008",
+      "articleUrl": "https://machinowa.tokyo/sports/article/sp0008",
+      "sheetUrl": "https://machinowa.tokyo/sports/article/sp0008"
+    }
+  ],
+  "skipped": []
+}

@@ -1,0 +1,40 @@
+{
+  "tab": "トリニティアポ",
+  "tabEn": "tri-life",
+  "row": 557,
+  "sheet": {
+    "name": "向東八幡宮",
+    "address": "",
+    "url": "https://www.google.com/maps/search/?api=1&query=%E5%90%91%E6%9D%B1%E5%85%AB%E5%B9%A1%E5%AE%AE%20084-844-0305%20%E3%80%92722-0062%20%E5%BA%83%E5%B3%B6%E7%9C%8C%E5%B0%BE%E9%81%93%E5%B8%82",
+    "type": "神社",
+    "d1": "",
+    "d2": ""
+  },
+  "urlKind": "mapsApi",
+  "route": "第1段(verify-gbp.mjs)で確認済み",
+  "verdict": "一致",
+  "verdictReason": "手がかり: 店名＋電話。電話が一致／店名: exact(シート「向東八幡宮」/ マップ「向東八幡宮」)／住所(シート): coarse・シートの住所に番地なし（町名まで一致）",
+  "place": {
+    "name": "向東八幡宮",
+    "address": "広島県尾道市",
+    "category": "神社",
+    "lat": 34.396603,
+    "lng": 133.213829,
+    "gbpUrl": "https://maps.google.com/?cid=13094540247005596498",
+    "phone": "0848-44-0305",
+    "website": "https://sites.google.com/view/higashi80k",
+    "hours": {
+      "月": "24時間営業",
+      "火": "24時間営業",
+      "水": "24時間営業",
+      "木": "24時間営業",
+      "金": "24時間営業",
+      "土": "24時間営業",
+      "日": "24時間営業"
+    },
+    "reserveLinks": [],
+    "statusSignals": [],
+    "closedSignal": false
+  },
+  "fetchedAt": "2026-11-13T19:09:27.028Z"
+}

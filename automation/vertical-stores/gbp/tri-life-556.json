@@ -1,0 +1,32 @@
+{
+  "tab": "トリニティアポ",
+  "tabEn": "tri-life",
+  "row": 556,
+  "sheet": {
+    "name": "開運稲荷神社",
+    "address": "",
+    "url": "https://www.google.com/maps/search/?api=1&query=%E9%96%8B%E9%81%8B%E7%A8%B2%E8%8D%B7%E7%A5%9E%E7%A4%BE%20025-222-9445%20%E3%80%92951-8078%20%E6%96%B0%E6%BD%9F%E7%9C%8C%E6%96%B0%E6%BD%9F%E5%B8%82%E4%B8%AD%E5%A4%AE%E5%8C%BA%E5%9B%9B%E3%83%83%E5%B1%8B%E7%94%BA%EF%BC%93%E4%B8%81%E7%9B%AE%EF%BC%95%EF%BC%91%EF%BC%93%EF%BC%92%20%E9%96%8B%E9%81%8B%E7%A8%B2%E8%8D%B7%E7%A5%9E%E7%A4%BE",
+    "type": "神社",
+    "d1": "",
+    "d2": ""
+  },
+  "urlKind": "mapsApi",
+  "route": "第1段(verify-gbp.mjs)で確認済み",
+  "verdict": "一致",
+  "verdictReason": "手がかり: 店名＋電話＋住所(番地まで)。電話が一致／店名: exact(シート「開運稲荷神社」/ マップ「開運稲荷神社」)／住所(シート): exact・町名・番地とも一致",
+  "place": {
+    "name": "開運稲荷神社",
+    "address": "新潟県新潟市中央区四ッ屋町３丁目５１３２ 開運稲荷神社",
+    "category": "神社",
+    "lat": 37.9347838,
+    "lng": 139.047157,
+    "gbpUrl": "https://maps.google.com/?cid=6099819648138204387",
+    "phone": "025-222-9445",
+    "website": null,
+    "hours": null,
+    "reserveLinks": [],
+    "statusSignals": [],
+    "closedSignal": false
+  },
+  "fetchedAt": "2026-11-13T19:08:52.326Z"
+}

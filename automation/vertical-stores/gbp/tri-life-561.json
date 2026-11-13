@@ -1,0 +1,40 @@
+{
+  "tab": "トリニティアポ",
+  "tabEn": "tri-life",
+  "row": 561,
+  "sheet": {
+    "name": "春日神社（小野原鎮座）",
+    "address": "",
+    "url": "https://www.google.com/maps/search/?api=1&query=%E6%98%A5%E6%97%A5%E7%A5%9E%E7%A4%BE%EF%BC%88%E5%B0%8F%E9%87%8E%E5%8E%9F%E9%8E%AE%E5%BA%A7%EF%BC%89%20072-729-8268%20%E3%80%92562-0032%20%E5%A4%A7%E9%98%AA%E5%BA%9C%E7%AE%95%E9%9D%A2%E5%B8%82%E5%B0%8F%E9%87%8E%E5%8E%9F%E8%A5%BF%EF%BC%95%E4%B8%81%E7%9B%AE%EF%BC%93%E2%88%92%EF%BC%91%EF%BC%91",
+    "type": "神社",
+    "d1": "",
+    "d2": ""
+  },
+  "urlKind": "mapsApi",
+  "route": "第1段(verify-gbp.mjs)で確認済み",
+  "verdict": "一致",
+  "verdictReason": "手がかり: 店名＋電話＋住所(番地まで)。電話が一致／店名: exact(シート「春日神社（小野原鎮座）」/ マップ「春日神社」)／住所(シート): exact・町名・番地とも一致",
+  "place": {
+    "name": "春日神社",
+    "address": "大阪府箕面市小野原西５丁目３−１１",
+    "category": "神社",
+    "lat": 34.8313761,
+    "lng": 135.5114319,
+    "gbpUrl": "https://maps.google.com/?cid=7885746707880305374",
+    "phone": "072-729-8268",
+    "website": "https://kasuga-jinja.or.jp/",
+    "hours": {
+      "月": "24時間営業",
+      "火": "24時間営業",
+      "水": "24時間営業",
+      "木": "24時間営業",
+      "金": "24時間営業",
+      "土": "24時間営業",
+      "日": "24時間営業"
+    },
+    "reserveLinks": [],
+    "statusSignals": [],
+    "closedSignal": false
+  },
+  "fetchedAt": "2026-11-13T19:11:48.472Z"
+}

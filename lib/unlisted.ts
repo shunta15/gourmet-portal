@@ -57,7 +57,8 @@ export const UNLISTED_PLACE_IDS: Readonly<Record<string, readonly string[]>> = {
     "be0113",
     "be0114",
     "be0115",
-    "be0116"
+    "be0116",
+    "be0117"
   ],
   "pet": [
     "pe0021",
@@ -141,7 +142,8 @@ export const UNLISTED_PLACE_IDS: Readonly<Record<string, readonly string[]>> = {
     "sp0004",
     "sp0005",
     "sp0006",
-    "sp0007"
+    "sp0007",
+    "sp0008"
   ],
   "bodycare": [
     "bo0114",
@@ -375,7 +377,15 @@ export const UNLISTED_PLACE_IDS: Readonly<Record<string, readonly string[]>> = {
     "li0230",
     "li0231",
     "li0232",
-    "li0233"
+    "li0233",
+    "li0234",
+    "li0235",
+    "li0236",
+    "li0237",
+    "li0238",
+    "li0239",
+    "li0240",
+    "li0241"
   ]
 };
 
@@ -451,7 +461,8 @@ export const UNLISTED_PLACE_FEATURE_IDS: Readonly<Record<string, readonly string
     "竹林広場(バンブーフィールド)"
   ],
   "sports": [
-    "FITINGRAVITY"
+    "FITINGRAVITY",
+    "FIELD-RINGキックボクシング・ボクシング・ブラジリアン柔術"
   ]
 };
 
