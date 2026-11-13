@@ -215,6 +215,7 @@ export const ONE_PAGE_UNLISTED_SHOP_OF_FEATURE: Readonly<Record<string, string>>
   "おじぎ茶屋": "r945", // おじぎ茶屋
   "本格手打ちうどん亭なべきち": "r946", // 本格手打ちうどん亭なべきち
   "レストランアップルミント": "r947", // レストランアップルミント
+  "麺や虎": "r949", // 麺や虎
 };
 
 const NFC = (s: string) => s.normalize("NFC");

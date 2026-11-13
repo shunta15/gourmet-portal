@@ -1,0 +1,30 @@
+{
+  "commit": "db188ca12b2ca46192467cea7f1bb3a67bd259e1",
+  "source": "/Users/shunta/claude/gp-k-auto2",
+  "count": 2,
+  "added": [
+    {
+      "row": 430,
+      "name": "カフェ・リバーサイドオリエンタル",
+      "key": "lk-gourmet-430",
+      "vertical": "グルメ",
+      "id": "r948",
+      "articleId": "カフェ・リバーサイドオリエンタル",
+      "shopUrl": "https://machinowa.tokyo/restaurant/r948",
+      "articleUrl": "https://machinowa.tokyo/feature/カフェ・リバーサイドオリエンタル",
+      "sheetUrl": "https://machinowa.tokyo/feature/カフェ・リバーサイドオリエンタル"
+    },
+    {
+      "row": 431,
+      "name": "麺や虎",
+      "key": "lk-gourmet-431",
+      "vertical": "グルメ",
+      "id": "r949",
+      "articleId": "麺や虎",
+      "shopUrl": "https://machinowa.tokyo/restaurant/r949",
+      "articleUrl": "https://machinowa.tokyo/feature/麺や虎",
+      "sheetUrl": "https://machinowa.tokyo/feature/麺や虎"
+    }
+  ],
+  "skipped": []
+}

@@ -24163,6 +24163,100 @@ export const ARTICLE_STORES: Restaurant[] = [
       "ランチ"
     ],
     "featureId": "レストランアップルミント"
+  },
+  {
+    "id": "r948",
+    "name": "カフェ・リバーサイドオリエンタル",
+    "cuisine": "コーヒーショップ・喫茶店",
+    "area": "山形県・寒河江市",
+    "region": "yamagata",
+    "shape": "square",
+    "image": "/restaurants/_placeholder/feature-hero.jpg",
+    "heroImages": [
+      "/restaurants/_placeholder/feature-hero.jpg"
+    ],
+    "gallery": [
+      "/restaurants/_placeholder/feature-hero.jpg",
+      "/restaurants/_placeholder/feature-point.jpg",
+      "/restaurants/_placeholder/feature-og.jpg"
+    ],
+    "desc": "山形県寒河江市のコーヒーショップ・喫茶店。",
+    "address": "山形県寒河江市慈恩寺377-18",
+    "hours": "毎日 11:00–19:00",
+    "closed": "なし（Googleマップの営業時間による）",
+    "seats": "—（訪問前に公式確認）",
+    "nearest": "—",
+    "phone": "0237-87-1112",
+    "source": {
+      "label": "Google ビジネスプロフィール",
+      "url": "https://maps.google.com/?cid=7701971352310138137"
+    },
+    "body": [
+      "カフェ・リバーサイドオリエンタルは、山形県寒河江市にあるお店です。業態は「コーヒーショップ・喫茶店」、所在地は山形県寒河江市慈恩寺377-18です。マチノワ編集部の特集記事では、「グランドピアノと庭園を持つ和モダンの店内」・「コーヒーとうどんを出す喫茶と軽食の組み合わせ」などを取り上げています。",
+      "営業時間は毎日 11:00–19:00で、定休日はありません（Googleマップの営業時間による）。営業時間や価格は変わることがあるため、訪問前に公式サイトやSNS、お電話でご確認ください。"
+    ],
+    "highlights": [
+      "グランドピアノと庭園を持つ和モダンの店内",
+      "コーヒーとうどんを出す喫茶と軽食の組み合わせ",
+      "慈恩寺の門前、川沿いの隠れ家という立地"
+    ],
+    "tags": [
+      "コーヒーショップ・喫茶店",
+      "寒河江市",
+      "ランチ"
+    ],
+    "featureId": "カフェ・リバーサイドオリエンタル"
+  },
+  {
+    "id": "r949",
+    "name": "麺や虎",
+    "cuisine": "ラーメン屋",
+    "area": "山形県・寒河江市",
+    "region": "yamagata",
+    "shape": "square",
+    "image": "/restaurants/teleapo-麺や虎/hero.jpg",
+    "heroImages": [
+      "/restaurants/teleapo-麺や虎/hero.jpg",
+      "/restaurants/teleapo-麺や虎/point1.jpg",
+      "/restaurants/teleapo-麺や虎/point2.jpg",
+      "/restaurants/teleapo-麺や虎/point3.jpg",
+      "/restaurants/teleapo-麺や虎/point4.jpg"
+    ],
+    "gallery": [
+      "/restaurants/teleapo-麺や虎/hero.jpg",
+      "/restaurants/teleapo-麺や虎/point1.jpg",
+      "/restaurants/teleapo-麺や虎/point2.jpg",
+      "/restaurants/teleapo-麺や虎/point3.jpg",
+      "/restaurants/teleapo-麺や虎/point4.jpg"
+    ],
+    "desc": "山形県寒河江市のラーメン屋。",
+    "address": "山形県寒河江市寒河江塩水10-1",
+    "hours": "水〜日 07:00–09:30, 11:00–14:00",
+    "closed": "月曜・火曜",
+    "seats": "—（訪問前に公式確認）",
+    "nearest": "—",
+    "phone": "080-1848-4423",
+    "instagram": "https://www.instagram.com/menya.tora",
+    "source": {
+      "label": "Google ビジネスプロフィール",
+      "url": "https://maps.google.com/?cid=6153489348306562934"
+    },
+    "body": [
+      "麺や虎は、山形県寒河江市にあるお店です。業態は「ラーメン屋」、所在地は山形県寒河江市寒河江塩水10-1です。マチノワ編集部の特集記事では、「国産鶏を使った醤油スープと自家製太中縮れ麺」・「台湾風まぜそばと辛さ調整」などを取り上げています。",
+      "営業時間は水〜日 07:00–09:30, 11:00–14:00、定休日は月曜・火曜です（Googleマップの営業時間による）。営業時間や価格は変わることがあるため、訪問前に公式サイトやSNS、お電話でご確認ください。"
+    ],
+    "highlights": [
+      "国産鶏を使った醤油スープと自家製太中縮れ麺",
+      "台湾風まぜそばと辛さ調整",
+      "朝7時から開く朝ラーメン営業",
+      "卵かけご飯と炙り焼豚飯"
+    ],
+    "tags": [
+      "ラーメン屋",
+      "寒河江市",
+      "ランチ"
+    ],
+    "featureId": "麺や虎"
   }
 ];
 
@@ -24671,7 +24765,9 @@ export const ARTICLE_STORE_FEATURE_IDS: Record<string, string> = {
   "r944": "焼き鳥りょうちゃん甲府",
   "r945": "おじぎ茶屋",
   "r946": "本格手打ちうどん亭なべきち",
-  "r947": "レストランアップルミント"
+  "r947": "レストランアップルミント",
+  "r948": "カフェ・リバーサイドオリエンタル",
+  "r949": "麺や虎"
 };
 
 /** 特集記事ID → 店舗ID */
@@ -25179,5 +25275,7 @@ export const ARTICLE_STORE_ID_BY_FEATURE: Record<string, string> = {
   "焼き鳥りょうちゃん甲府": "r944",
   "おじぎ茶屋": "r945",
   "本格手打ちうどん亭なべきち": "r946",
-  "レストランアップルミント": "r947"
+  "レストランアップルミント": "r947",
+  "カフェ・リバーサイドオリエンタル": "r948",
+  "麺や虎": "r949"
 };

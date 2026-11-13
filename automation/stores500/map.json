@@ -2538,5 +2538,15 @@
     "articleId": "レストランアップルミント",
     "sheetName": "レストランアップルミント",
     "mapsUrl": "https://maps.google.com/?cid=15613126175457725119"
+  },
+  {
+    "articleId": "カフェ・リバーサイドオリエンタル",
+    "sheetName": "カフェ・リバーサイドオリエンタル",
+    "mapsUrl": "https://maps.google.com/?cid=7701971352310138137"
+  },
+  {
+    "articleId": "麺や虎",
+    "sheetName": "麺や虎",
+    "mapsUrl": "https://maps.google.com/?cid=6153489348306562934"
   }
 ]
