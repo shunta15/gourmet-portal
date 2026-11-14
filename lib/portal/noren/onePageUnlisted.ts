@@ -217,6 +217,7 @@ export const ONE_PAGE_UNLISTED_SHOP_OF_FEATURE: Readonly<Record<string, string>>
   "レストランアップルミント": "r947", // レストランアップルミント
   "麺や虎": "r949", // 麺や虎
   "やきにく処談": "r950", // やきにく処 談
+  "中華そば栃木阿波家": "r951", // 中華そば栃木阿波家
 };
 
 const NFC = (s: string) => s.normalize("NFC");

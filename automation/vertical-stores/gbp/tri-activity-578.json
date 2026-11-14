@@ -1,0 +1,40 @@
+{
+  "tab": "トリニティアポ",
+  "tabEn": "tri-activity",
+  "row": 578,
+  "sheet": {
+    "name": "フィッシュランド丸宮",
+    "address": "",
+    "url": "https://www.google.com/maps/search/?api=1&query=%E3%83%95%E3%82%A3%E3%83%83%E3%82%B7%E3%83%A5%E3%83%A9%E3%83%B3%E3%83%89%E4%B8%B8%E5%AE%AE%20043-950-3355%20%E3%80%92299-1163%20%E5%8D%83%E8%91%89%E7%9C%8C%E5%90%9B%E6%B4%A5%E5%B8%82%E6%9D%A2%E5%B8%AB%EF%BC%91%E4%B8%81%E7%9B%AE%EF%BC%91%EF%BC%91%E2%88%92%EF%BC%91",
+    "type": "釣り場",
+    "d1": "",
+    "d2": ""
+  },
+  "urlKind": "mapsApi",
+  "route": "第1段(verify-gbp.mjs)で確認済み",
+  "verdict": "一致",
+  "verdictReason": "手がかり: 店名＋電話＋住所(番地まで)。電話が一致／店名: exact(シート「フィッシュランド丸宮」/ マップ「フィッシュランド丸宮」)／住所(シート): exact・町名・番地とも一致",
+  "place": {
+    "name": "フィッシュランド丸宮",
+    "address": "千葉県君津市杢師１丁目１１−１",
+    "category": "釣り堀",
+    "lat": 35.3254867,
+    "lng": 139.9083922,
+    "gbpUrl": "https://maps.google.com/?cid=6737562823814383130",
+    "phone": "0439-50-3355",
+    "website": "http://www.fish-land.jp/",
+    "hours": {
+      "月": "09:00–18:00",
+      "火": "定休日",
+      "水": "定休日",
+      "木": "09:00–18:00",
+      "金": "09:00–18:00",
+      "土": "09:00–18:00",
+      "日": "09:00–18:00"
+    },
+    "reserveLinks": [],
+    "statusSignals": [],
+    "closedSignal": false
+  },
+  "fetchedAt": "2026-11-14T08:03:48.767Z"
+}

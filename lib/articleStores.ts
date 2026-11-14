@@ -24303,6 +24303,57 @@ export const ARTICLE_STORES: Restaurant[] = [
       "敦賀市"
     ],
     "featureId": "やきにく処談"
+  },
+  {
+    "id": "r951",
+    "name": "中華そば栃木阿波家",
+    "cuisine": "ラーメン屋",
+    "area": "栃木県・栃木市",
+    "region": "tochigi",
+    "shape": "square",
+    "image": "/restaurants/teleapo-中華そば栃木阿波家/hero.jpg",
+    "heroImages": [
+      "/restaurants/teleapo-中華そば栃木阿波家/hero.jpg",
+      "/restaurants/teleapo-中華そば栃木阿波家/point1.jpg",
+      "/restaurants/teleapo-中華そば栃木阿波家/point2.jpg",
+      "/restaurants/teleapo-中華そば栃木阿波家/point3.jpg",
+      "/restaurants/teleapo-中華そば栃木阿波家/point4.jpg"
+    ],
+    "gallery": [
+      "/restaurants/teleapo-中華そば栃木阿波家/hero.jpg",
+      "/restaurants/teleapo-中華そば栃木阿波家/point1.jpg",
+      "/restaurants/teleapo-中華そば栃木阿波家/point2.jpg",
+      "/restaurants/teleapo-中華そば栃木阿波家/point3.jpg",
+      "/restaurants/teleapo-中華そば栃木阿波家/point4.jpg"
+    ],
+    "desc": "栃木県栃木市のラーメン屋。",
+    "address": "栃木県栃木市尻内町284-1",
+    "hours": "火〜金 11:00–15:00, 17:30–20:00 / 土・日 10:00–15:00, 17:30–20:00",
+    "closed": "月曜日",
+    "seats": "—（訪問前に公式確認）",
+    "nearest": "—",
+    "phone": "080-1184-8035",
+    "instagram": "https://www.instagram.com/awaya0628",
+    "source": {
+      "label": "Google ビジネスプロフィール",
+      "url": "https://maps.google.com/?cid=1374031827609259590"
+    },
+    "body": [
+      "中華そば栃木阿波家は、栃木県栃木市にあるお店です。業態は「ラーメン屋」、所在地は栃木県栃木市尻内町284-1です。マチノワ編集部の特集記事では、「宮崎・徳島産の地鶏3種で引く黄金色のスープ」・「北海道産小麦100%の自家製麺、細麺と中太麺から選ぶ」などを取り上げています。",
+      "営業時間は火〜金 11:00–15:00, 17:30–20:00 / 土・日 10:00–15:00, 17:30–20:00、定休日は月曜日です（Googleマップの営業時間による）。営業時間や価格は変わることがあるため、訪問前に公式サイトやSNS、お電話でご確認ください。"
+    ],
+    "highlights": [
+      "宮崎・徳島産の地鶏3種で引く黄金色のスープ",
+      "北海道産小麦100%の自家製麺、細麺と中太麺から選ぶ",
+      "塩ラーメンから土日限定とんこつ、地鶏タタキ丼まで広がるメニュー",
+      "のれん分けで2021年開店、伊勢崎の祥秀を源流にもつ店"
+    ],
+    "tags": [
+      "ラーメン屋",
+      "栃木市",
+      "ランチ"
+    ],
+    "featureId": "中華そば栃木阿波家"
   }
 ];
 
@@ -24814,7 +24865,8 @@ export const ARTICLE_STORE_FEATURE_IDS: Record<string, string> = {
   "r947": "レストランアップルミント",
   "r948": "カフェ・リバーサイドオリエンタル",
   "r949": "麺や虎",
-  "r950": "やきにく処談"
+  "r950": "やきにく処談",
+  "r951": "中華そば栃木阿波家"
 };
 
 /** 特集記事ID → 店舗ID */
@@ -25325,5 +25377,6 @@ export const ARTICLE_STORE_ID_BY_FEATURE: Record<string, string> = {
   "レストランアップルミント": "r947",
   "カフェ・リバーサイドオリエンタル": "r948",
   "麺や虎": "r949",
-  "やきにく処談": "r950"
+  "やきにく処談": "r950",
+  "中華そば栃木阿波家": "r951"
 };

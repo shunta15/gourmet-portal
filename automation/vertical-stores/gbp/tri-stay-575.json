@@ -1,0 +1,32 @@
+{
+  "tab": "トリニティアポ",
+  "tabEn": "tri-stay",
+  "row": 575,
+  "sheet": {
+    "name": "モリソンヴィラ 石垣のログハウス",
+    "address": "",
+    "url": "https://www.google.com/maps/search/?api=1&query=%E3%83%A2%E3%83%AA%E3%82%BD%E3%83%B3%E3%83%B4%E3%82%A3%E3%83%A9%20%E7%9F%B3%E5%9E%A3%E3%81%AE%E3%83%AD%E3%82%B0%E3%83%8F%E3%82%A6%E3%82%B9%20090-2357-6116%20%E3%80%92671-4141%20%E5%85%B5%E5%BA%AB%E7%9C%8C%E5%AE%8D%E7%B2%9F%E5%B8%82%E4%B8%80%E5%AE%AE%E7%94%BA%E6%9D%B1%E6%B2%B3%E5%86%85%EF%BC%96%EF%BC%93%EF%BC%98%E2%88%92%EF%BC%96%EF%BC%96%EF%BC%97",
+    "type": "宿",
+    "d1": "",
+    "d2": ""
+  },
+  "urlKind": "mapsApi",
+  "route": "第1段(verify-gbp.mjs)で確認済み",
+  "verdict": "一致",
+  "verdictReason": "手がかり: 店名＋電話＋住所(番地まで)。電話が一致／店名: exact(シート「モリソンヴィラ 石垣のログハウス」/ マップ「モリソンヴィラ 石垣のログハウス」)／住所(シート): exact・町名・番地とも一致",
+  "place": {
+    "name": "モリソンヴィラ 石垣のログハウス",
+    "address": "兵庫県宍粟市一宮町東河内６３８−６６７",
+    "category": null,
+    "lat": 35.1298339,
+    "lng": 134.6317017,
+    "gbpUrl": "https://maps.google.com/?cid=3326105396055132846",
+    "phone": "090-2357-6116",
+    "website": "https://morison-villa.com/",
+    "hours": null,
+    "reserveLinks": [],
+    "statusSignals": [],
+    "closedSignal": false
+  },
+  "fetchedAt": "2026-11-14T08:01:27.358Z"
+}

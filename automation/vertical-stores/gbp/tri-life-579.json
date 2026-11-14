@@ -1,0 +1,32 @@
+{
+  "tab": "トリニティアポ",
+  "tabEn": "tri-life",
+  "row": 579,
+  "sheet": {
+    "name": "閼伽井坊",
+    "address": "",
+    "url": "https://www.google.com/maps/search/?api=1&query=%E9%96%BC%E4%BC%BD%E4%BA%95%E5%9D%8A%20083-344-8409%20%E3%80%92744-0024%20%E5%B1%B1%E5%8F%A3%E7%9C%8C%E4%B8%8B%E6%9D%BE%E5%B8%82%E6%9C%AB%E6%AD%A6%E4%B8%8A%EF%BC%93%EF%BC%99%EF%BC%98",
+    "type": "寺",
+    "d1": "",
+    "d2": ""
+  },
+  "urlKind": "mapsApi",
+  "route": "第1段(verify-gbp.mjs)で確認済み",
+  "verdict": "一致",
+  "verdictReason": "手がかり: 店名＋電話＋住所(番地まで)。電話が一致／店名: exact(シート「閼伽井坊」/ マップ「閼伽井坊」)／住所(シート): exact・町名・番地とも一致",
+  "place": {
+    "name": "閼伽井坊",
+    "address": "山口県下松市末武上３９８",
+    "category": "仏教寺院",
+    "lat": 34.0381306,
+    "lng": 131.8715368,
+    "gbpUrl": "https://maps.google.com/?cid=4127621155414552316",
+    "phone": "0833-44-8409",
+    "website": "http://www.akaibou.or.jp/",
+    "hours": null,
+    "reserveLinks": [],
+    "statusSignals": [],
+    "closedSignal": false
+  },
+  "fetchedAt": "2026-11-14T08:04:31.937Z"
+}

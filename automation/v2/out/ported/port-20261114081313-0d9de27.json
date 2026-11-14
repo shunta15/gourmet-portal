@@ -1,0 +1,85 @@
+{
+  "commit": "0d9de273a62775b8f3b8980ad6ddfd768b203e28",
+  "source": "/Users/shunta/claude/gp-k-auto2",
+  "count": 7,
+  "added": [
+    {
+      "row": 574,
+      "name": "金刀比羅神社",
+      "key": "tri-life-574",
+      "vertical": "くらし",
+      "id": "li0246",
+      "articleId": "li0246",
+      "shopUrl": "https://machinowa.tokyo/life/shop/li0246",
+      "articleUrl": "https://machinowa.tokyo/life/article/li0246",
+      "sheetUrl": "https://machinowa.tokyo/life/article/li0246"
+    },
+    {
+      "row": 575,
+      "name": "モリソンヴィラ 石垣のログハウス",
+      "key": "tri-stay-575",
+      "vertical": "ステイ",
+      "id": "st0035",
+      "articleId": "st0035",
+      "shopUrl": "https://machinowa.tokyo/stay/shop/st0035",
+      "articleUrl": "https://machinowa.tokyo/stay/article/st0035",
+      "sheetUrl": "https://machinowa.tokyo/stay/article/st0035"
+    },
+    {
+      "row": 576,
+      "name": "中華そば栃木阿波家",
+      "key": "tri-gourmet-576",
+      "vertical": "グルメ",
+      "id": "r951",
+      "articleId": "中華そば栃木阿波家",
+      "shopUrl": "https://machinowa.tokyo/restaurant/r951",
+      "articleUrl": "https://machinowa.tokyo/feature/中華そば栃木阿波家",
+      "sheetUrl": "https://machinowa.tokyo/feature/中華そば栃木阿波家"
+    },
+    {
+      "row": 577,
+      "name": "童学寺",
+      "key": "tri-life-577",
+      "vertical": "くらし",
+      "id": "li0247",
+      "articleId": "li0247",
+      "shopUrl": "https://machinowa.tokyo/life/shop/li0247",
+      "articleUrl": "https://machinowa.tokyo/life/article/li0247",
+      "sheetUrl": "https://machinowa.tokyo/life/article/li0247"
+    },
+    {
+      "row": 578,
+      "name": "フィッシュランド丸宮",
+      "key": "tri-activity-578",
+      "vertical": "アクティビティ",
+      "id": "ac0082",
+      "articleId": "ac0082",
+      "shopUrl": "https://machinowa.tokyo/activity/shop/ac0082",
+      "articleUrl": "https://machinowa.tokyo/activity/article/ac0082",
+      "sheetUrl": "https://machinowa.tokyo/activity/article/ac0082"
+    },
+    {
+      "row": 579,
+      "name": "閼伽井坊",
+      "key": "tri-life-579",
+      "vertical": "くらし",
+      "id": "li0248",
+      "articleId": "li0248",
+      "shopUrl": "https://machinowa.tokyo/life/shop/li0248",
+      "articleUrl": "https://machinowa.tokyo/life/article/li0248",
+      "sheetUrl": "https://machinowa.tokyo/life/article/li0248"
+    },
+    {
+      "row": 580,
+      "name": "天然酵母パン焼き教室ナブル",
+      "key": "tri-activity-580",
+      "vertical": "アクティビティ",
+      "id": "ac0083",
+      "articleId": "ac0083",
+      "shopUrl": "https://machinowa.tokyo/activity/shop/ac0083",
+      "articleUrl": "https://machinowa.tokyo/activity/article/ac0083",
+      "sheetUrl": "https://machinowa.tokyo/activity/article/ac0083"
+    }
+  ],
+  "skipped": []
+}

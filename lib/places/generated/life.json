@@ -39691,6 +39691,539 @@
         ],
         "checkedAt": "2026-11-14"
       }
+    },
+    {
+      "id": "li0246",
+      "vertical": "life",
+      "category": "shrine-temple",
+      "name": "金刀比羅神社",
+      "pref": "saga",
+      "cityName": "佐賀市",
+      "address": "佐賀県佐賀市金立町3349",
+      "lat": 33.3303024,
+      "lng": 130.2995587,
+      "hours": "毎日 09:00 - 17:00",
+      "phone": "0952-98-1237",
+      "url": "http://konpirajinjya.jp/",
+      "website": "http://konpirajinjya.jp/",
+      "mapUrl": "https://maps.google.com/?cid=6248511411946258524",
+      "image": "/_portal/vshops/tri-life-574/g01.jpg",
+      "images": [
+        "/_portal/vshops/tri-life-574/g01.jpg",
+        "/_portal/vshops/tri-life-574/g02.jpg",
+        "/_portal/vshops/tri-life-574/g03.jpg",
+        "/_portal/vshops/tri-life-574/g04.jpg",
+        "/_portal/vshops/tri-life-574/g05.jpg",
+        "/_portal/vshops/tri-life-574/g06.jpg",
+        "/_portal/vshops/tri-life-574/g07.jpg",
+        "/_portal/vshops/tri-life-574/g08.jpg",
+        "/_portal/vshops/tri-life-574/g09.jpg",
+        "/_portal/vshops/tri-life-574/g10.jpg"
+      ],
+      "photos": [
+        {
+          "path": "/_portal/vshops/tri-life-574/g01.jpg",
+          "what": "入母屋造りの拝殿正面",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-life-574/g02.jpg",
+          "what": "しめ縄が掛かる鳥居と参道",
+          "kind": "exterior",
+          "width": 675,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-life-574/g03.jpg",
+          "what": "石段と鳥居が連なる参道",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-life-574/g04.jpg",
+          "what": "社殿入口の鳥居と木々",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-life-574/g05.jpg",
+          "what": "幟旗が立つ急な石段の参道",
+          "kind": "exterior",
+          "width": 674,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-life-574/g06.jpg",
+          "what": "木々に囲まれた小祠と石碑が並ぶ境内",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 675
+        },
+        {
+          "path": "/_portal/vshops/tri-life-574/g07.jpg",
+          "what": "境内の博打木と石灯籠",
+          "kind": "exterior",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-life-574/g08.jpg",
+          "what": "石造りの鳥居と展望台からの景色",
+          "kind": "view",
+          "width": 480,
+          "height": 640
+        },
+        {
+          "path": "/_portal/vshops/tri-life-574/g09.jpg",
+          "what": "「金刀比羅神社」と刻まれた石碑",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 902
+        },
+        {
+          "path": "/_portal/vshops/tri-life-574/g10.jpg",
+          "what": "社務所と拝殿が見える境内",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 675
+        }
+      ],
+      "tags": [
+        "駐車場あり",
+        "予約制"
+      ],
+      "article": {
+        "headline": "佐賀市金立町の金刀比羅山頂上近くに鎮座する崇敬神社。神産巣日大神・大国主大神など7柱の神様を祀り、御祈祷・神前式・出張祭に対応する。",
+        "lede": "佐賀市にある「金刀比羅神社」です。正式名称は「肥前國総座 金刀比羅神社」。天平宝字8年（764年）、肥前国の国司が四国・金刀比羅宮の御分神を奉祀して以来、「肥前國金刀比羅の宮総座・金刀比羅大将大権現」と尊称されてきたと伝わります。天正5年（1577年）には竜造寺隆信が社殿を再建し、その後も竜造寺家・鍋島家の直願神社として崇敬を集めました。享保17年（1735年）、鍋島藩6代目藩主・宗教公の大病平癒祈願奉賛のため、現在の金刀比羅山に荘厳な社殿が建立されました。境内からは佐賀平野と有明海が一望でき、夜間は神社全体がライトアップされます。宮司は古川勝茂氏が務めます。",
+        "sections": [
+          {
+            "heading": "由緒・歴史",
+            "body": "金刀比羅神社はもともと有明海の沿岸で、海上安全と良質な海苔の豊作を願って神様を祀ったことに始まると伝わります。やがて海が引いて平野となり、現在は豊作の神様としても広く参拝されています。天正3年（1575年）には数々の戦禍によって社殿が灰塵に帰しましたが、天正5年（1577年）に竜造寺隆信によって再建されました。摂社の宮地嶽神社は天保13年（1842年）に福岡県から御分神を合祀し、末社の松乃盛稲荷神社は五穀豊穣と商売繁盛の神として祀られています。境内の「博打木（ばくちの木）」はバラ科の常緑高木で、毎年5月ごろに樹皮がうろこ状にはがれ落ちます。大正2年に台湾旅行の記念に持参した20cmほどの苗木を植栽したものと伝わり、はがれ落ちた樹皮を財布に入れると勝負事に負けないという言い伝えがあります。"
+          },
+          {
+            "heading": "内容（御祭神と御祈祷）",
+            "body": "神産巣日大神・大国主大神・多紀理津毘売神・少名彦大神・事代主大神・建御名方大神・金山彦大神の7柱が祀られています。主神の大国主大神は国づくりの神様で、縁結び・農業・商業・医療の神として知られています。御祈祷は海上安全祈願・大漁祈願・海苔豊作祈願・商業繁栄祈願・五穀豊作祈願をはじめ、家内安全・交通安全・車祓い・病気平癒・旅行安全・初宮参り・七五三・必勝祈願・厄祓いに対応しています。神前式も執り行っており、雅楽の演奏とともに行われます。宮司の古川勝茂氏は宮内庁認定の雅楽講師資格を持ち、祈願や祭事の際に雅楽を演奏するほか、近隣小学校での雅楽体験活動も実施しています。出張祭として地鎮祭・解体祭・新室祭にも対応し、事前連絡のうえ現地に赴いて神事を執り行います。"
+          },
+          {
+            "heading": "設備・場所の特徴",
+            "body": "金刀比羅神社は、金立町大門の金刀比羅山の頂上近くに鎮座しています。入母屋造りの拝殿と本殿が建立されており、本殿のおみくじには開運を招く8体の縁起物の御守りのいずれかが入っています。境内では授与品として、伊勢神宮大麻・錦守り各種（安産御守・厄除開運御守・勝守）・キャラクター御守り（ハローキティ・マイメロディ・リラックマ・ウルトラマン・ウルトラマンセブン）を用意しています。駐車場を境内に備えており、展望台に隣接しています。夜間は神社全体がライトアップされ、展望台から夜景を眺めることができます。年間行事として1月10日の初釜鳴神事・十日恵比須、5月10日の春季大祭（例大祭）、6月の月次祭・大祓い、8月10日の不知火祭、11月10日の秋季大祭（例大祭）、12月の月次祭・大祓いを執り行っています。釜鳴神事は、釜の上に蒸篭を置いてお米を入れ、蓋を乗せた状態で炊いたときに鳴る音の強弱・長短などで吉凶を占う特殊神事で、毎月10日の月次祭でも執り行われ、参列は自由です。"
+          },
+          {
+            "heading": "行き方と使い方",
+            "body": "金刀比羅神社は、長崎自動車道大和ICの東北東方向、弘学館高校の西南西約200mに鎮座しています。県道31号線沿いの「正規神社入口」交差点を北上し、長崎道高架下を過ぎた先の金刀比羅山頂上近くに位置します。境内に駐車場を備えているため、お車でのご参拝が便利です（道幅が広くないため、離合の際にはご注意ください）。御祈祷・神前式は事前の予約が必要で、電話（0952-98-1237）またはメールで受け付けています。希望の日程に対応できない場合もあるため、早めの連絡が勧められています。御朱印は本殿にて直書きで対応しています。"
+          }
+        ],
+        "menus": [
+          {
+            "name": "初宮参り"
+          },
+          {
+            "name": "七五三"
+          },
+          {
+            "name": "厄祓い"
+          },
+          {
+            "name": "必勝祈願"
+          },
+          {
+            "name": "海上安全祈願・大漁祈願"
+          },
+          {
+            "name": "神前式（結婚式）"
+          },
+          {
+            "name": "地鎮祭・解体祭・新室祭（出張祭）"
+          },
+          {
+            "name": "御朱印"
+          }
+        ],
+        "sources": [
+          {
+            "label": "公式サイト",
+            "url": "https://konpirajinjya.jp/"
+          },
+          {
+            "label": "公式サイト（由緒）",
+            "url": "https://konpirajinjya.jp/shrine/"
+          },
+          {
+            "label": "公式サイト（御祭神）",
+            "url": "https://konpirajinjya.jp/about/"
+          },
+          {
+            "label": "公式サイト（御祈祷）",
+            "url": "https://konpirajinjya.jp/about/pray/"
+          },
+          {
+            "label": "公式サイト（ご案内）",
+            "url": "https://konpirajinjya.jp/access/"
+          },
+          {
+            "label": "公式サイト（年間行事）",
+            "url": "https://konpirajinjya.jp/annual-events/"
+          },
+          {
+            "label": "佐賀の神社巡り",
+            "url": "https://hiracat.com/saga/kinryu-konpira-shrine/"
+          },
+          {
+            "label": "Google マップ",
+            "url": "https://maps.google.com/?cid=6248511411946258524"
+          }
+        ],
+        "checkedAt": "2026-11-14"
+      }
+    },
+    {
+      "id": "li0247",
+      "vertical": "life",
+      "category": "shrine-temple",
+      "name": "童学寺",
+      "pref": "tokushima",
+      "cityName": "石井町",
+      "address": "徳島県名西郡石井町石井城ノ内605",
+      "lat": 34.0584566,
+      "lng": 134.4277346,
+      "hours": "毎日 07:00 - 17:00",
+      "phone": "088-674-0138",
+      "url": "http://dougakuji.com/",
+      "website": "http://dougakuji.com/",
+      "mapUrl": "https://maps.google.com/?cid=12417686623821190734",
+      "image": "/_portal/vshops/tri-life-577/g01.jpg",
+      "images": [
+        "/_portal/vshops/tri-life-577/g01.jpg",
+        "/_portal/vshops/tri-life-577/g02.jpg",
+        "/_portal/vshops/tri-life-577/g03.jpg",
+        "/_portal/vshops/tri-life-577/g04.jpg",
+        "/_portal/vshops/tri-life-577/g05.jpg",
+        "/_portal/vshops/tri-life-577/g06.jpg",
+        "/_portal/vshops/tri-life-577/g07.jpg",
+        "/_portal/vshops/tri-life-577/g08.jpg",
+        "/_portal/vshops/tri-life-577/g09.jpg",
+        "/_portal/vshops/tri-life-577/g10.jpg"
+      ],
+      "photos": [
+        {
+          "path": "/_portal/vshops/tri-life-577/g01.jpg",
+          "what": "木造瓦屋根の本堂外観",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-life-577/g02.jpg",
+          "what": "白壁の山門（正面斜め）",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 675
+        },
+        {
+          "path": "/_portal/vshops/tri-life-577/g03.jpg",
+          "what": "白壁の山門（正面）",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-life-577/g04.jpg",
+          "what": "藤棚と境内の建物",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-life-577/g05.jpg",
+          "what": "カラフルな千本幡が並ぶ回廊",
+          "kind": "common",
+          "width": 1200,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-life-577/g06.jpg",
+          "what": "「童寺」と刻まれた境内の巨岩",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-life-577/g07.jpg",
+          "what": "石段と本堂の外観",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-life-577/g08.jpg",
+          "what": "桜が咲く境内の庭の景色",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 675
+        },
+        {
+          "path": "/_portal/vshops/tri-life-577/g09.jpg",
+          "what": "弘法大師の石像",
+          "kind": "exterior",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-life-577/g10.jpg",
+          "what": "池に映る木々と伽藍の景色",
+          "kind": "view",
+          "width": 900,
+          "height": 1200
+        }
+      ],
+      "tags": [
+        "駐車場あり"
+      ],
+      "article": {
+        "headline": "徳島県石井町にある真言宗善通寺派の寺院。弘法大師空海が幼少期に学問と修行に励んだ地として、四国別格二十霊場第2番札所に位置づけられる。",
+        "lede": "名西郡石井町にある「童学寺」です。山号を東明山といい、真言宗善通寺派の別格本山として知られます。飛鳥時代に行基が開創したと伝わる古刹で、弘法大師空海が7歳から15歳まで当寺に滞在し、書道や密教を学んだと伝わります。空海はこの地で「いろは歌」を創作し、児童教育に活用したと伝わっており、その由来から「童学寺」という寺号が定まったと伝わります。本尊は国の重要文化財に指定された木造薬師如来坐像で、空海が彫刻したと伝えられています。四国別格二十霊場第2番札所、四国三十六不動尊霊場第11番札所でもあり、学業成就の寺として多くの参拝者が訪れます。春には境内の藤の古木が花を咲かせ、藤の名所としても知られています。",
+        "sections": [
+          {
+            "heading": "由緒・歴史",
+            "body": "童学寺は飛鳥時代に行基が開創したと伝わり、奈良時代前期の寺院跡「石井廃寺跡」が前身と伝わります。弘法大師空海は7歳から15歳まで当寺に長く滞在し、学問と修行に専念したと伝わります。その後、空海は42歳のときに再び当寺を訪れ、伽藍を整備したと伝わります。天正年間には長曾我部元親の兵火によって伽藍が全焼しましたが、元禄年間に肥後国から来た僧・観禮によって再建されたと伝わります。平成29年（2017年）3月には漏電が原因とみられる火災で本堂が全焼しましたが、本尊の木造薬師如来坐像は難を逃れました。現在は本堂再建に向けた取り組みが進められており、歓喜天堂が仮本堂として使われています。"
+          },
+          {
+            "heading": "内容（商品・サービス・教え）",
+            "body": "童学寺では参拝・納経のほか、ペットの葬儀・供養・納骨を受け付ける「動物供養のお堂 友愛堂」を境内に設けています。友愛堂では大切な動物の法要を執り行い、納骨にも対応しています。また、境内では「いろは手作り市」が開催されており、ハンドメイド作品の出展者が集まるイベントです。第22回（2026年）は11月3日に開催され、10時30分から15時30分まで行われました。境内にはミニ別格二十霊場とミニ西国三十三観音霊場も設置されており、巡拝もできます。"
+          },
+          {
+            "heading": "設備・場所の特徴",
+            "body": "境内には見どころが複数あります。本堂裏手の「お筆の御加持水」は、空海が硯の水として求めたと伝わる湧水で、現在も絶えることなく湧き続けています。硯に使えば筆達者になり、飲めば諸病が治るという霊水として伝えられています。境内裏手には石井町指定名勝の回遊式庭園「逍遥園」があります。春には藤の古木が花を咲かせ、4月下旬から5月上旬が見頃です。境内には江戸時代寛永年間（1624〜1644年）に奉納された切支丹灯籠があり、竿石に十字形が彫られた石井町有形文化財として指定されています。観音堂には長曾我部元親が切りつけたと伝わる刃傷のついた柱が残されています。境内駐車場は普通車10台、マイクロバス5台分があります。"
+          },
+          {
+            "heading": "行き方と使い方",
+            "body": "JR徳島線「石井駅」から徒歩30分、またはタクシーで約15分です。徳島バス鴨島行きを利用する場合は「城ノ内」バス停で下車し、徒歩15分です。四国別格二十霊場第2番札所として納経も受け付けています。ペットの供養・納骨については、友愛堂の公式サイト（pet.dougakuji.com）から詳細を確認できます。"
+          }
+        ],
+        "sources": [
+          {
+            "label": "公式サイト",
+            "url": "https://www.dougakuji.com/"
+          },
+          {
+            "label": "四国別格二十霊場公式",
+            "url": "https://www.bekkaku.com/?page_id=12"
+          },
+          {
+            "label": "四国遍路情報サイト",
+            "url": "https://pilgrim-shikoku.net/dogakuji-specialexceptional2"
+          },
+          {
+            "label": "阿波ナビ",
+            "url": "https://www.awanavi.jp/archives/spot/2779"
+          },
+          {
+            "label": "阿波ナビ（童学寺のふじ）",
+            "url": "https://www.awanavi.jp/archives/spot/2718"
+          },
+          {
+            "label": "巡縁",
+            "url": "https://jyun-en.jp/temple/%E7%AB%A5%E5%AD%A6%E5%AF%BA/"
+          },
+          {
+            "label": "PR TIMES",
+            "url": "https://prtimes.jp/main/html/rd/p/000000001.000070418.html"
+          },
+          {
+            "label": "Google マップ",
+            "url": "https://maps.google.com/?cid=12417686623821190734"
+          }
+        ],
+        "checkedAt": "2026-11-14"
+      }
+    },
+    {
+      "id": "li0248",
+      "vertical": "life",
+      "category": "shrine-temple",
+      "name": "閼伽井坊",
+      "pref": "yamaguchi",
+      "cityName": "下松市",
+      "address": "山口県下松市末武上398",
+      "lat": 34.0381306,
+      "lng": 131.8715368,
+      "phone": "0833-44-8409",
+      "url": "http://www.akaibou.or.jp/",
+      "website": "http://www.akaibou.or.jp/",
+      "mapUrl": "https://maps.google.com/?cid=4127621155414552316",
+      "image": "/_portal/vshops/tri-life-579/g01.jpg",
+      "images": [
+        "/_portal/vshops/tri-life-579/g01.jpg",
+        "/_portal/vshops/tri-life-579/g02.jpg",
+        "/_portal/vshops/tri-life-579/g03.jpg",
+        "/_portal/vshops/tri-life-579/g04.jpg",
+        "/_portal/vshops/tri-life-579/g05.jpg",
+        "/_portal/vshops/tri-life-579/g06.jpg",
+        "/_portal/vshops/tri-life-579/g07.jpg",
+        "/_portal/vshops/tri-life-579/g08.jpg",
+        "/_portal/vshops/tri-life-579/g09.jpg",
+        "/_portal/vshops/tri-life-579/g10.jpg",
+        "/_portal/vshops/tri-life-579/s01.jpg",
+        "/_portal/vshops/tri-life-579/s02.jpg",
+        "/_portal/vshops/tri-life-579/s03.jpg",
+        "/_portal/vshops/tri-life-579/s04.jpg"
+      ],
+      "photos": [
+        {
+          "path": "/_portal/vshops/tri-life-579/g01.jpg",
+          "what": "赤い本堂と水盤が並ぶ境内の全景",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 800
+        },
+        {
+          "path": "/_portal/vshops/tri-life-579/g02.jpg",
+          "what": "堂内の柱と垂れ下がる装飾",
+          "kind": "common",
+          "width": 675,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-life-579/g03.jpg",
+          "what": "赤い布をかけた石仏像",
+          "kind": "exterior",
+          "width": 904,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-life-579/g04.jpg",
+          "what": "赤い鳥居と朱塗りの正門",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 800
+        },
+        {
+          "path": "/_portal/vshops/tri-life-579/g05.jpg",
+          "what": "境内の建物と岩・木が並ぶ景色",
+          "kind": "exterior",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-life-579/g06.jpg",
+          "what": "堂内の金色の仏像と供物",
+          "kind": "common",
+          "width": 1200,
+          "height": 800
+        },
+        {
+          "path": "/_portal/vshops/tri-life-579/g07.jpg",
+          "what": "畳敷きの大広間（大師会館内部）",
+          "kind": "room",
+          "width": 1200,
+          "height": 800
+        },
+        {
+          "path": "/_portal/vshops/tri-life-579/g08.jpg",
+          "what": "苔むした石碑のある境内",
+          "kind": "exterior",
+          "width": 600,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-life-579/g09.jpg",
+          "what": "石段と鳥居が続く参道",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-life-579/g10.jpg",
+          "what": "木々に囲まれた石段の参道",
+          "kind": "exterior",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-life-579/s01.jpg",
+          "what": "色鮮やかな幟が並ぶ行事の様子",
+          "kind": "exterior",
+          "width": 960,
+          "height": 400
+        },
+        {
+          "path": "/_portal/vshops/tri-life-579/s02.jpg",
+          "what": "「閼伽井坊塔婆（多宝塔）」と書かれた看板と多宝塔",
+          "kind": "exterior",
+          "width": 960,
+          "height": 400
+        },
+        {
+          "path": "/_portal/vshops/tri-life-579/s03.jpg",
+          "what": "灯籠に照らされた観音像",
+          "kind": "exterior",
+          "width": 960,
+          "height": 400
+        },
+        {
+          "path": "/_portal/vshops/tri-life-579/s04.jpg",
+          "what": "「大師会館」と書かれた建物の外観",
+          "kind": "exterior",
+          "width": 960,
+          "height": 400
+        }
+      ],
+      "tags": [
+        "駐車場あり"
+      ],
+      "article": {
+        "headline": "山口県下松市、花岡八幡宮の境内に建つ真言宗御室派の寺院。国指定重要文化財の多宝塔をはじめ、周防国三十三観音霊場の第12番札所として知られる。",
+        "lede": "下松市にある「閼伽井坊（あかいぼう）」です。山号を華岳山といい、真言宗御室派に属する寺院です。和銅二年（709年）に宇佐八幡の分霊を祀った花岡八幡宮の社坊九ヶ寺のうち、現存する唯一の寺として今に続いています。境内には国指定重要文化財の多宝塔がそびえ、周防国三十三観音霊場の第12番札所でもあります。また、周南地方の真言宗七ヶ寺がまつる「周南七福神」の一つとして、長寿の神・寿老神を祀っています。「閼伽」とは仏様に供える清浄な水のことで、魔耶窟の入り口には今も閼伽の水が湧き出ています。境内は年中無休で拝観でき、駐車場を利用する場合は大師会館を利用します。",
+        "sections": [
+          {
+            "heading": "由緒・歴史",
+            "body": "閼伽井坊は、和銅二年（709年）に豊前国・宇佐八幡宮の御分霊を勧請した花岡八幡宮の社坊九ヶ寺の一つです。九ヶ寺のうち現存するのは閼伽井坊だけです。「閼伽」とは仏様に供える清浄な水を指し、古くは花岡八幡宮や上下行の殿様の御用水であったと伝わります。また、この水を加持してもらえば万病に効くと伝わり、今も魔耶窟の入り口に湧き出ています。多宝塔は藤原鎌足の創建した日本十六塔の一つと伝わりますが、現在の建物は構造手法から室町末期の建築と推定されています。昭和三年に解体修理が行われ、相輪の補修は昭和四十年に実施されました。"
+          },
+          {
+            "heading": "内容（商品・サービス・教え）",
+            "body": "閼伽井坊では、毎月・毎年を通じてさまざまな行事が行われています。一月の吉祥日には厄除大護摩が修法され、厄除・家内安全・商売繁盛・交通安全のお札を授けます。二月二日の節分には星祭りとして九曜星のお札を授け、七月の土用丑の日には真言秘法により加持したきゅうりに病を封じて川に流す「きゅうり加持」が行われます。四月二十九日の土砂加持法要では、真言秘法により加持した土砂で先祖・水子を供養し、人形供養も実施します。毎月十七日には観音護摩修法による家内安全・病気平癒・諸願成就の祈願、二十日には弘法大師のご縁日にあたる大師講が開かれています。また、周防国三十三観音霊場の第12番札所として十一面千手観音を本尊としており、周南七福神の一寺として寿老神を祀っています。"
+          },
+          {
+            "heading": "設備・場所の特徴",
+            "body": "境内には国指定重要文化財の多宝塔（閼伽井坊塔婆）がそびえています。総高13.7mで、こけら葺（桧の板で葺）の屋根をもち、上重の軒先が強く反り返る軽快な姿が特徴です。鏡天井をもつ内部の須弥壇には金剛界大日如来が祀られています。多宝塔の重要文化財指定は明治四十年（1907年）五月二十七日です。本堂には総高2.4mの虚空蔵菩薩像が祀られています。桧寄木造で切金細工極彩色仕上げの尊像で、京仏師北宗俊師の作です。境内は年中無休で、駐車場は大師会館を利用します。毎年一回「あかい坊通信」を発行し、年間行事・月行事の日程やレポートを案内しています。"
+          },
+          {
+            "heading": "行き方と使い方",
+            "body": "JR岩徳線・周防花岡駅から徒歩約10分でアクセスできます。車の場合は徳山東ICから約10分です。境内への入場は年中無休です。各種祈願・法要・行事への参加や御朱印については、寺に直接お問い合わせください。電話番号は0833-44-8409です。周南七福神の巡拝バスが正月・五月・九月に運行されており、七福神めぐりのルートに閼伽井坊も含まれています。"
+          }
+        ],
+        "sources": [
+          {
+            "label": "公式サイト",
+            "url": "https://www.akaibou.or.jp/"
+          },
+          {
+            "label": "公式サイト・行事日程",
+            "url": "https://www.akaibou.or.jp/yearly_event.html"
+          },
+          {
+            "label": "公式サイト・多宝塔",
+            "url": "https://www.akaibou.or.jp/tahoutou.html"
+          },
+          {
+            "label": "文化遺産オンライン",
+            "url": "https://online.bunka.go.jp/heritages/detail/148431"
+          },
+          {
+            "label": "下松観光情報",
+            "url": "https://kudamatsu-kanko.jp/akaiboutahoutou/"
+          },
+          {
+            "label": "Google マップ",
+            "url": "https://maps.google.com/?cid=4127621155414552316"
+          }
+        ],
+        "checkedAt": "2026-11-14"
+      }
     }
   ]
 }

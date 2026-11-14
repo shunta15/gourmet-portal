@@ -1,0 +1,40 @@
+{
+  "tab": "トリニティアポ",
+  "tabEn": "tri-life",
+  "row": 577,
+  "sheet": {
+    "name": "童学寺",
+    "address": "",
+    "url": "https://www.google.com/maps/search/?api=1&query=%E7%AB%A5%E5%AD%A6%E5%AF%BA%20088-674-0138%20%E3%80%92779-3232%20%E5%BE%B3%E5%B3%B6%E7%9C%8C%E5%90%8D%E8%A5%BF%E9%83%A1%E7%9F%B3%E4%BA%95%E7%94%BA%E7%9F%B3%E4%BA%95%E5%9F%8E%E3%83%8E%E5%86%85%EF%BC%96%EF%BC%90%EF%BC%95",
+    "type": "寺",
+    "d1": "",
+    "d2": ""
+  },
+  "urlKind": "mapsApi",
+  "route": "第1段(verify-gbp.mjs)で確認済み",
+  "verdict": "一致",
+  "verdictReason": "手がかり: 店名＋電話＋住所(番地まで)。電話が一致／店名: exact(シート「童学寺」/ マップ「童学寺」)／住所(シート): exact・町名・番地とも一致",
+  "place": {
+    "name": "童学寺",
+    "address": "徳島県名西郡石井町石井城ノ内６０５",
+    "category": "仏教寺院",
+    "lat": 34.0584566,
+    "lng": 134.4277346,
+    "gbpUrl": "https://maps.google.com/?cid=12417686623821190734",
+    "phone": "088-674-0138",
+    "website": "http://dougakuji.com/",
+    "hours": {
+      "月": "07:00–17:00",
+      "火": "07:00–17:00",
+      "水": "07:00–17:00",
+      "木": "07:00–17:00",
+      "金": "07:00–17:00",
+      "土": "07:00–17:00",
+      "日": "07:00–17:00"
+    },
+    "reserveLinks": [],
+    "statusSignals": [],
+    "closedSignal": false
+  },
+  "fetchedAt": "2026-11-14T08:03:05.897Z"
+}

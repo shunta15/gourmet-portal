@@ -14431,6 +14431,416 @@
         ],
         "checkedAt": "2026-11-14"
       }
+    },
+    {
+      "id": "ac0082",
+      "vertical": "activity",
+      "category": "sea-river",
+      "name": "フィッシュランド丸宮",
+      "pref": "chiba",
+      "cityName": "君津市",
+      "address": "千葉県君津市杢師1丁目11-1",
+      "lat": 35.3254867,
+      "lng": 139.9083922,
+      "hours": "月木-日 09:00 - 18:00",
+      "holidays": "火曜・水曜",
+      "phone": "0439-50-3355",
+      "url": "http://www.fish-land.jp/",
+      "website": "http://www.fish-land.jp/",
+      "mapUrl": "https://maps.google.com/?cid=6737562823814383130",
+      "image": "/_portal/vshops/tri-activity-578/g01.jpg",
+      "images": [
+        "/_portal/vshops/tri-activity-578/g01.jpg",
+        "/_portal/vshops/tri-activity-578/g02.jpg",
+        "/_portal/vshops/tri-activity-578/g03.jpg",
+        "/_portal/vshops/tri-activity-578/g04.jpg",
+        "/_portal/vshops/tri-activity-578/g05.jpg",
+        "/_portal/vshops/tri-activity-578/g06.jpg",
+        "/_portal/vshops/tri-activity-578/g07.jpg",
+        "/_portal/vshops/tri-activity-578/g08.jpg",
+        "/_portal/vshops/tri-activity-578/g09.jpg",
+        "/_portal/vshops/tri-activity-578/g10.jpg"
+      ],
+      "photos": [
+        {
+          "path": "/_portal/vshops/tri-activity-578/g01.jpg",
+          "what": "ドーム型施設内に広がる大きな釣り池の全景",
+          "kind": "common",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-578/g02.jpg",
+          "what": "アクアショップに並ぶ水槽の棚",
+          "kind": "common",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-578/g03.jpg",
+          "what": "黄色い壁にFish Landと書かれた施設の外観",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-578/g04.jpg",
+          "what": "竿と網で鯉を釣り上げているところ",
+          "kind": "common",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-578/g05.jpg",
+          "what": "子どもが竿を持って池で釣りをしている様子",
+          "kind": "common",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-578/g06.jpg",
+          "what": "池の中で泳ぐ錦鯉と金魚のクローズアップ",
+          "kind": "common",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-578/g07.jpg",
+          "what": "アクアショップに設置された魚が泳ぐ水槽",
+          "kind": "common",
+          "width": 1200,
+          "height": 675
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-578/g08.jpg",
+          "what": "竿が並ぶ釣り池の様子",
+          "kind": "common",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-578/g09.jpg",
+          "what": "金魚や錦鯉が泳ぐ小池の様子",
+          "kind": "common",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-578/g10.jpg",
+          "what": "ドーム内に椅子が並ぶ釣り池の通路",
+          "kind": "common",
+          "width": 900,
+          "height": 1200
+        }
+      ],
+      "tags": [
+        "手ぶらでOK",
+        "駐車場あり"
+      ],
+      "article": {
+        "headline": "千葉県君津市杢師にある屋内ドーム型の釣り堀。大池・小池・MIX池の3面を備え、初心者から上級者まで利用できる。",
+        "lede": "君津市にある「フィッシュランド丸宮」です。ドーム型の屋内施設のため、雨の日や夏の暑い日でも天候を気にせず釣りを楽しめます。場内には大池・小池・MIX池の3面の釣り池を設け、小型の金魚や鯉が泳ぐ小池から、40cm前後の鯉や70cmオーバーの巨鯉、ナマズが泳ぐ大池まで、難易度の異なる池を選べます。場内では金魚釣り・金魚すくい・鯉のエサやり体験なども楽しめます。施設に隣接してアクアショップも構えており、熱帯魚・錦鯉・金魚・らんちゅうの販売や飼育用品の取り扱いもあります。運営は丸宮産業株式会社です。",
+        "sections": [
+          {
+            "heading": "体験の内容と流れ",
+            "body": "釣り池は大池・小池・MIX池の3面に分かれており、それぞれ釣れる魚の種類とサイズが異なります。小池には小型の鯉や金魚・草魚が泳ぎ、子どもや釣り初心者でも数を釣りやすい池です。MIX池には小池よりやや大きな魚が中心で、金魚・黒鯉・草魚・うぐいなどが混在しています。大池は水深1.6mで、40cm前後の黒鯉を中心に70cmオーバーの巨鯉・ナマズ・草魚・錦鯉も泳いでいます。錦鯉は持ち帰りができません。釣り上げた魚の重量に応じてポイントが加算されるポイントサービスがあり、大池では3kgごとに1ポイント、小池では1kgごとに1ポイントが付きます。ポイントサービスカードはアクアショップと釣り堀で共通利用できます。"
+          },
+          {
+            "heading": "対象",
+            "body": "釣り堀は子どもから釣り愛好家まで幅広い層が利用できます。小池や金魚釣りコーナーは特に子ども向けに設けられており、初めて釣りを体験する方でも楽しめる池です。金魚釣りは30分間で可愛い金魚が釣れ、釣った金魚は大きさに応じて1〜2匹持ち帰ることができます。金魚すくいはすくった金魚1匹の持ち帰りが可能で、1回または2回の選択ができます。鯉のエサやり体験は大型の鯉から小さな錦鯉まで様々なサイズの魚に餌を与えられます。上級者向けには釣り会員制度があり、マイロッドの使用や市販の練エサの使用が可能になります。土日祝日には季節限定でかき氷やチョコバナナの販売・体験イベントも開催されます。"
+          },
+          {
+            "heading": "安全と注意",
+            "body": "竿のルールとして、使用可能な竿は2.7mまでで、金針および2本の針は禁止されています。針はかえしのないスレ針を使用することが定められています。これらのルールは釣り会員が独自の道具を持ち込む際にも適用されます。釣り堀を団体で利用する場合は、事前に電話での予約が必要です。メールによる予約は受け付けていません。受付の締め切りは16時50分です。"
+          },
+          {
+            "heading": "行き方と使い方",
+            "body": "高速をご利用の場合は、木更津南ICまたは君津ICを下り、国道127号線のすき家を曲がって君津駅方面へ約2km進みます。君津ICからは車で約5分です。駐車場を約40台分完備しています。団体での釣り堀利用は電話にて予約できます。ポイントサービスカードはアクアショップと釣り堀で共通利用でき、20ポイントで商品券として使えます。"
+          }
+        ],
+        "menus": [
+          {
+            "name": "大池釣り"
+          },
+          {
+            "name": "小池釣り"
+          },
+          {
+            "name": "MIX池釣り"
+          },
+          {
+            "name": "金魚釣り"
+          },
+          {
+            "name": "金魚すくい"
+          },
+          {
+            "name": "鯉のエサやり体験"
+          }
+        ],
+        "sources": [
+          {
+            "label": "公式サイト",
+            "url": "https://www.fish-land.jp/"
+          },
+          {
+            "label": "公式サイト(アクセス・営業時間)",
+            "url": "https://www.fish-land.jp/info/index.html"
+          },
+          {
+            "label": "公式サイト(釣り料金)",
+            "url": "https://www.fish-land.jp/price/"
+          },
+          {
+            "label": "公式サイト(お問い合わせ)",
+            "url": "https://www.fish-land.jp/info/contact.html"
+          },
+          {
+            "label": "公式サイト(釣り池紹介)",
+            "url": "https://www.fish-land.jp/tsuriike/"
+          },
+          {
+            "label": "公式サイト(金魚釣り・金魚すくい)",
+            "url": "https://www.fish-land.jp/tsuriike/kingyo.html"
+          },
+          {
+            "label": "房総タウン",
+            "url": "https://bosotown.com/archives/62718"
+          },
+          {
+            "label": "chiba-style",
+            "url": "https://chiba-style.com/park/388/"
+          },
+          {
+            "label": "君津ナビ",
+            "url": "https://www.kiminavi.jp/detail/155/index.html"
+          },
+          {
+            "label": "Google マップ",
+            "url": "https://maps.google.com/?cid=6737562823814383130"
+          }
+        ],
+        "checkedAt": "2026-11-14"
+      }
+    },
+    {
+      "id": "ac0083",
+      "vertical": "activity",
+      "category": "craft",
+      "name": "天然酵母パン焼き教室ナブル",
+      "pref": "tokyo",
+      "cityName": "目黒区",
+      "address": "東京都目黒区平町1丁目26-18",
+      "lat": 35.6177239,
+      "lng": 139.6766878,
+      "hours": "月-水土 10:00 - 12:00, 13:00 - 15:00 / 木 10:00 - 12:00 / 金 10:00 - 12:00, 13:00 - 20:00",
+      "holidays": "日曜",
+      "phone": "03-3723-2723",
+      "url": "https://nable-cook.com/",
+      "website": "https://nable-cook.com/",
+      "mapUrl": "https://maps.google.com/?cid=12861443671231998694",
+      "image": "/_portal/vshops/tri-activity-580/g01.jpg",
+      "images": [
+        "/_portal/vshops/tri-activity-580/g01.jpg",
+        "/_portal/vshops/tri-activity-580/g02.jpg",
+        "/_portal/vshops/tri-activity-580/g03.jpg",
+        "/_portal/vshops/tri-activity-580/g04.jpg",
+        "/_portal/vshops/tri-activity-580/g05.jpg",
+        "/_portal/vshops/tri-activity-580/g06.jpg",
+        "/_portal/vshops/tri-activity-580/g07.jpg",
+        "/_portal/vshops/tri-activity-580/g08.jpg",
+        "/_portal/vshops/tri-activity-580/g09.jpg",
+        "/_portal/vshops/tri-activity-580/g10.jpg",
+        "/_portal/vshops/tri-activity-580/s09.jpg",
+        "/_portal/vshops/tri-activity-580/s13.jpg",
+        "/_portal/vshops/tri-activity-580/s14.jpg",
+        "/_portal/vshops/tri-activity-580/s15.jpg",
+        "/_portal/vshops/tri-activity-580/s18.jpg"
+      ],
+      "photos": [
+        {
+          "path": "/_portal/vshops/tri-activity-580/g01.jpg",
+          "what": "色とりどりのパンが並ぶトレイと果物",
+          "kind": "meal",
+          "width": 1200,
+          "height": 887
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-580/g02.jpg",
+          "what": "丸くて緑色の天然酵母パンが2個並ぶ",
+          "kind": "meal",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-580/g03.jpg",
+          "what": "木のトレイに並んだ焼き上がったパンの数々",
+          "kind": "meal",
+          "width": 806,
+          "height": 475
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-580/g04.jpg",
+          "what": "ごまがたっぷりついた長細いパン",
+          "kind": "meal",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-580/g05.jpg",
+          "what": "食パントーストと目玉焼き・ハムの朝食",
+          "kind": "meal",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-580/g06.jpg",
+          "what": "生地を丸める手元のレッスン作業",
+          "kind": "common",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-580/g07.jpg",
+          "what": "丸いクグロフ型のパン",
+          "kind": "meal",
+          "width": 1200,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-580/g08.jpg",
+          "what": "かごに入った白い食パン",
+          "kind": "meal",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-580/g09.jpg",
+          "what": "ごまのかかった大きな丸パンとグリッシーニ",
+          "kind": "meal",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-580/g10.jpg",
+          "what": "「Nable」と書かれた看板が入口に立つ外観",
+          "kind": "exterior",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-580/s09.jpg",
+          "what": "「天然酵母と素材にこだわったパン教室Nable」と書かれたバナー画像",
+          "width": 1200,
+          "height": 500
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-580/s13.jpg",
+          "what": "テーブルに並んだ複数種類のパンとコーヒーカップ",
+          "kind": "meal",
+          "width": 767,
+          "height": 1024
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-580/s14.jpg",
+          "what": "バゲットや丸パンなど複数のパンが並ぶ",
+          "kind": "meal",
+          "width": 877,
+          "height": 579
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-580/s15.jpg",
+          "what": "丸い形の様々な種類のパンが並ぶ",
+          "kind": "meal",
+          "width": 600,
+          "height": 400
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-580/s18.jpg",
+          "what": "エプロン姿の講師がバゲットを持って立つ",
+          "width": 666,
+          "height": 957
+        }
+      ],
+      "tags": [
+        "子連れ",
+        "初心者歓迎"
+      ],
+      "article": {
+        "headline": "東京都目黒区にある天然酵母パン焼き教室。東急東横線都立大学駅から徒歩1分の教室で、基礎から師範まで6つのコースを用意している",
+        "lede": "目黒区にある「天然酵母パン焼き教室ナブル」です。東急東横線都立大学駅を出て徒歩1分の場所にある、光が差し込む広い教室でパン作りを学べます。北海道産小麦を使用し、添加物を一切使わない素材だけでパンを作るのが特徴で、体験レッスンから開業を目指すコースまで、目的に合わせて選べるクラスを用意しています。少人数制で1クラス最大6名まで。すべてのレッスンを講師の伊藤香並が担当します。20代から80代まで幅広い年代が通い、女性・男性・親子・外国人と多様な受講者が在籍しています。",
+        "sections": [
+          {
+            "heading": "体験の内容と流れ",
+            "body": "体験レッスンは約2時間から2時間半のレッスンで、バジルパン・チョコレートミニ食パン・ピザパンを作ります。パン生地のこね方から成形・焼き上げまでを実際に手を動かして体験し、焼き上がったパンはその場で試食します。試食時にはオリジナルのハーブティーを合わせます。体験レッスンでは焼き上がったパンの試食と持ち帰りはありますが、こねたパン生地の持ち帰りはありません。持参するものはエプロンと、焼き上がったパンを入れる袋です。服装は普段着で参加できます。"
+          },
+          {
+            "heading": "コースと所要時間",
+            "body": "天然酵母パンのコースは、基礎クラス・初級クラス・中級クラス・上級クラス・専科クラス・師範クラスの順番で受講する構成で、各クラスは全6回です。開業を目指す方向けのコースも用意しています。基礎クラス以上の通常クラスでは、1回のレッスンで2種類のパンを作ります。レッスン終了後には、こねたパン生地を持ち帰ることができ、自宅でも同じパンを作って復習できます。また、自家製天然酵母・ホシノ天然酵母・白神こだま天然酵母の3種類の天然酵母から自分で選んで使えます。予定に合わせて好きな日時に予約を入れられ、短期集中でも月1回ペースでも自分のペースで通える仕組みになっています。"
+          },
+          {
+            "heading": "対象",
+            "body": "体験レッスンの対象は12歳から80歳です。初心者を中心に、天然酵母パンに興味のある方、パン屋やカフェ・パン教室を開きたい方など幅広い目的の方が通っています。男性受講者も多く、男性が通いやすいクラスを用意しています。全素材に有機素材を使用しているため、子どもも安心して食べることができます。外国人の方も参加可能です。"
+          },
+          {
+            "heading": "行き方と使い方",
+            "body": "東急東横線都立大学駅を出て徒歩1分の場所にあります。住所は東京都目黒区平町1-26-18 第一ベルハウス302です。予約はじゃらんnetなどのオンライン予約サイトから申し込めます。レッスン開始日はいつからでも可能で、都合がつかなくなった場合は3日前の午前中までに連絡すれば振り替えができます。"
+          }
+        ],
+        "menus": [
+          {
+            "name": "体験レッスン"
+          },
+          {
+            "name": "自家製天然酵母・天然酵母基礎クラス【全6回】"
+          },
+          {
+            "name": "自家製天然酵母・天然酵母初級クラス【全6回】"
+          },
+          {
+            "name": "自家製天然酵母・天然酵母中級クラス【全6回】"
+          },
+          {
+            "name": "天然酵母・自家製酵母上級クラス【全6回】"
+          },
+          {
+            "name": "天然酵母・自家製酵母師範クラス【全6回】"
+          },
+          {
+            "name": "開業したい人へ"
+          },
+          {
+            "name": "親子パン教室"
+          }
+        ],
+        "sources": [
+          {
+            "label": "公式サイト",
+            "url": "https://nable-cook.com/"
+          },
+          {
+            "label": "公式サイト(パン教室について)",
+            "url": "https://nable-cook.com/about/"
+          },
+          {
+            "label": "公式サイト(各クラス紹介)",
+            "url": "https://nable-cook.com/menu/"
+          },
+          {
+            "label": "公式サイト(体験レッスン)",
+            "url": "https://nable-cook.com/menu/183/"
+          },
+          {
+            "label": "アソビュー",
+            "url": "https://www.asoview.com/item/activity/pln3000034090/"
+          },
+          {
+            "label": "Google マップ",
+            "url": "https://maps.google.com/?cid=12861443671231998694"
+          }
+        ],
+        "checkedAt": "2026-11-14"
+      }
     }
   ]
 }

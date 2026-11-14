@@ -6821,6 +6821,285 @@
           "スーペリア"
         ]
       }
+    },
+    {
+      "id": "st0035",
+      "vertical": "stay",
+      "category": "rental",
+      "name": "モリソンヴィラ 石垣のログハウス",
+      "pref": "hyogo",
+      "cityName": "宍粟市",
+      "address": "兵庫県宍粟市一宮町東河内638-667",
+      "lat": 35.1298339,
+      "lng": 134.6317017,
+      "phone": "090-2357-6116",
+      "url": "https://morison-villa.com/",
+      "website": "https://morison-villa.com/",
+      "mapUrl": "https://maps.google.com/?cid=3326105396055132846",
+      "image": "/_portal/vshops/tri-stay-575/g01.jpg",
+      "images": [
+        "/_portal/vshops/tri-stay-575/g01.jpg",
+        "/_portal/vshops/tri-stay-575/g02.jpg",
+        "/_portal/vshops/tri-stay-575/g03.jpg",
+        "/_portal/vshops/tri-stay-575/g04.jpg",
+        "/_portal/vshops/tri-stay-575/g05.jpg",
+        "/_portal/vshops/tri-stay-575/g06.jpg",
+        "/_portal/vshops/tri-stay-575/g07.jpg",
+        "/_portal/vshops/tri-stay-575/g08.jpg",
+        "/_portal/vshops/tri-stay-575/g09.jpg",
+        "/_portal/vshops/tri-stay-575/g10.jpg",
+        "/_portal/vshops/tri-stay-575/s01.jpg",
+        "/_portal/vshops/tri-stay-575/s02.jpg",
+        "/_portal/vshops/tri-stay-575/s03.jpg",
+        "/_portal/vshops/tri-stay-575/s04.jpg",
+        "/_portal/vshops/tri-stay-575/s05.jpg",
+        "/_portal/vshops/tri-stay-575/s06.jpg",
+        "/_portal/vshops/tri-stay-575/s07.jpg",
+        "/_portal/vshops/tri-stay-575/s08.jpg",
+        "/_portal/vshops/tri-stay-575/s09.jpg",
+        "/_portal/vshops/tri-stay-575/s11.jpg",
+        "/_portal/vshops/tri-stay-575/s12.jpg",
+        "/_portal/vshops/tri-stay-575/s13.jpg",
+        "/_portal/vshops/tri-stay-575/s14.jpg",
+        "/_portal/vshops/tri-stay-575/s17.jpg",
+        "/_portal/vshops/tri-stay-575/s18.jpg"
+      ],
+      "photos": [
+        {
+          "path": "/_portal/vshops/tri-stay-575/g01.jpg",
+          "what": "赤いドアと木製テラスのあるログハウス外観",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-stay-575/g02.jpg",
+          "what": "木製の床と低いテーブルが並ぶ寝室",
+          "kind": "room",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-stay-575/g03.jpg",
+          "what": "丸太の壁と洗面台があるバスルーム",
+          "kind": "bath",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-stay-575/g04.jpg",
+          "what": "赤いクッションと木製テーブルがあるリビング",
+          "kind": "room",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-stay-575/g05.jpg",
+          "what": "紅葉に囲まれた石垣の上に建つログハウスの外観",
+          "kind": "exterior",
+          "width": 718,
+          "height": 756
+        },
+        {
+          "path": "/_portal/vshops/tri-stay-575/g06.jpg",
+          "what": "丸太の壁とエアコンがある明るい室内",
+          "kind": "common",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-stay-575/g07.jpg",
+          "what": "冷蔵庫と調理家電が並ぶキッチン",
+          "kind": "common",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-stay-575/g08.jpg",
+          "what": "丸太の壁と暖炉風のテレビ台がある室内",
+          "kind": "room",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-stay-575/g09.jpg",
+          "what": "コンロと調理道具が置かれたキッチンカウンター",
+          "kind": "common",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-stay-575/g10.jpg",
+          "what": "赤いクッションと低いテーブルが置かれた室内",
+          "kind": "room",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-stay-575/s01.jpg",
+          "what": "夜の灯りに照らされた木々とログハウスの外観",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 630
+        },
+        {
+          "path": "/_portal/vshops/tri-stay-575/s02.jpg",
+          "what": "石垣の上に建つログハウスと紅葉した木々",
+          "kind": "exterior",
+          "width": 1280,
+          "height": 960
+        },
+        {
+          "path": "/_portal/vshops/tri-stay-575/s03.jpg",
+          "what": "木製のピクニックテーブルが置かれたテラス",
+          "kind": "common",
+          "width": 1280,
+          "height": 962
+        },
+        {
+          "path": "/_portal/vshops/tri-stay-575/s04.jpg",
+          "what": "赤いクッションと木製テーブルが並ぶリビング",
+          "kind": "room",
+          "width": 1280,
+          "height": 960
+        },
+        {
+          "path": "/_portal/vshops/tri-stay-575/s05.jpg",
+          "what": "赤いクッションと低いテーブルがある木の室内",
+          "kind": "room",
+          "width": 1280,
+          "height": 960
+        },
+        {
+          "path": "/_portal/vshops/tri-stay-575/s06.jpg",
+          "what": "ベッドが並ぶ木の壁に囲まれた寝室",
+          "kind": "room",
+          "width": 1280,
+          "height": 962
+        },
+        {
+          "path": "/_portal/vshops/tri-stay-575/s07.jpg",
+          "what": "丸太の天井と照明が美しい室内",
+          "kind": "room",
+          "width": 960,
+          "height": 1280
+        },
+        {
+          "path": "/_portal/vshops/tri-stay-575/s08.jpg",
+          "what": "テラスのデッキと紅葉した木々の眺め",
+          "kind": "view",
+          "width": 1024,
+          "height": 1280
+        },
+        {
+          "path": "/_portal/vshops/tri-stay-575/s09.jpg",
+          "what": "雪に覆われた山並みと澄んだ青空の景色",
+          "kind": "view",
+          "width": 1280,
+          "height": 1280
+        },
+        {
+          "path": "/_portal/vshops/tri-stay-575/s11.jpg",
+          "what": "夜の灯りに照らされた緑の木々に囲まれたログハウス",
+          "kind": "exterior",
+          "width": 1280,
+          "height": 960
+        },
+        {
+          "path": "/_portal/vshops/tri-stay-575/s12.jpg",
+          "what": "デッキチェアが置かれた木製テラスと木々の景色",
+          "kind": "view",
+          "width": 960,
+          "height": 1280
+        },
+        {
+          "path": "/_portal/vshops/tri-stay-575/s13.jpg",
+          "what": "食材や食器が並ぶテラスのピクニックテーブル",
+          "kind": "common",
+          "width": 1280,
+          "height": 960
+        },
+        {
+          "path": "/_portal/vshops/tri-stay-575/s14.jpg",
+          "what": "川辺で遊ぶ人と緑の木々に囲まれた清流",
+          "kind": "view",
+          "width": 960,
+          "height": 1280
+        },
+        {
+          "path": "/_portal/vshops/tri-stay-575/s17.jpg",
+          "what": "木の壁に囲まれたシングルベッドが並ぶ寝室",
+          "kind": "room",
+          "width": 1280,
+          "height": 962
+        },
+        {
+          "path": "/_portal/vshops/tri-stay-575/s18.jpg",
+          "what": "食材とサラダが並ぶ木製テーブルの食卓",
+          "kind": "meal",
+          "width": 1280,
+          "height": 962
+        }
+      ],
+      "tags": [],
+      "article": {
+        "headline": "兵庫県宍粟市、石垣の上に建つ一棟貸しのログハウス。1日1組限定のプライベートステイで、丸太に囲まれたリビング・2階の寝室・テラスを1棟まるごと使える",
+        "lede": "宍粟市にある「モリソンヴィラ 石垣のログハウス」です。兵庫県宍粟市一宮町、木々に囲まれた石垣の上に建つ一棟貸しのログハウスで、受け入れは1日1組限定です。合同会社モリソンが運営し、簡易宿所営業許可（兵庫県指令 西播(龍健)第923-11号）を取得して2024年7月に開業しました。リビング、2階の寝室、1階と2階のテラス、キッチン、バス・洗面室がそろった1棟を、1組でまるごと使えます。食事の提供はなく、食材・飲み物・食器類は持参する素泊まりスタイルです。夏は近くの川遊び、冬は白い雪景色など、宍粟の自然を季節ごとに楽しめる立地にあります。",
+        "sections": [
+          {
+            "heading": "客室の種類と数",
+            "body": "ログハウスは1棟のみで、1日1組だけが滞在します。2階の寝室にシングルベッドが5台あり、4台を並べると幅4メートルになります。丸太に囲まれた1階のリビングは、テーブルを囲んでくつろぐ場所として使えます。ロフト構造のため、1階から2階への移動は階段を使います。コップや食器の備え付けはなく、持参が必要です。"
+          },
+          {
+            "heading": "館内",
+            "body": "設備はWi-Fi、テレビ、Alexa、エアコン、洗浄機付きトイレがあります。キッチンには冷蔵庫、電子レンジ、炊飯器、オーブントースター、ポット、ホットプレートがそろっています。1階と2階それぞれにテラスがあり、2階テラスにはピクニックテーブルを置いています。テラスでのホットプレート利用はできますが、炭火の使用はできません。タオル・歯ブラシ・寝具類は持参が必要です。"
+          },
+          {
+            "heading": "周辺と行き方",
+            "body": "夏は近くの川で川遊びができます。冬は一面の雪景色が広がります。周辺には体育館、テニスコート、パターゴルフといったスポーツ施設があり、近くの温泉施設でくつろぐこともできます。食材の買い出しには近くのマックスバリューを使えます。公共交通機関でのアクセスは不便なため、車での来訪が前提です。中国自動車道「山崎IC」から国道29号を北上して約20km、約30分で到着します。大阪・神戸方面からも山崎ICを経由するルートを使います。敷地前に3台分の駐車スペースがあります。"
+          },
+          {
+            "heading": "予約・チェックイン",
+            "body": "予約は公式サイトの空室確認・予約ページから行えます。楽天トラベル・じゃらんnet・Airbnbにも掲載されています。チェックインは15:00から20:00の間で、到着が遅れる場合は事前に連絡が必要です。チェックアウトは11:00までです。1棟の収容は5名で、2階のシングルベッドが5台あります。キャンセルポリシーは28日前から段階的に設定されています。"
+          }
+        ],
+        "sources": [
+          {
+            "label": "公式サイト",
+            "url": "https://morison-villa.com/"
+          },
+          {
+            "label": "公式サイト(お部屋・設備)",
+            "url": "https://morison-villa.com/facility/"
+          },
+          {
+            "label": "公式サイト(過ごし方)",
+            "url": "https://morison-villa.com/enjoy/"
+          },
+          {
+            "label": "公式サイト(アクセス)",
+            "url": "https://morison-villa.com/access/"
+          },
+          {
+            "label": "公式サイト(宿泊料金)",
+            "url": "https://morison-villa.com/pricing/"
+          },
+          {
+            "label": "楽天トラベル",
+            "url": "https://travel.rakuten.co.jp/HOTEL/192094/192094.html"
+          },
+          {
+            "label": "Google マップ",
+            "url": "https://maps.google.com/?cid=3326105396055132846"
+          }
+        ],
+        "checkedAt": "2026-11-14"
+      },
+      "attributes": {
+        "roomTypes": [
+          "一棟貸しログハウス"
+        ]
+      }
     }
   ]
 }
