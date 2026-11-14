@@ -1,0 +1,85 @@
+{
+  "commit": "edd8da208e29334d3bbcea905cb5ca953f334cea",
+  "source": "/Users/shunta/claude/gp-k-auto2",
+  "count": 7,
+  "added": [
+    {
+      "row": 563,
+      "name": "東勝寺",
+      "key": "tri-life-563",
+      "vertical": "くらし",
+      "id": "li0242",
+      "articleId": "li0242",
+      "shopUrl": "https://machinowa.tokyo/life/shop/li0242",
+      "articleUrl": "https://machinowa.tokyo/life/article/li0242",
+      "sheetUrl": "https://machinowa.tokyo/life/article/li0242"
+    },
+    {
+      "row": 565,
+      "name": "Lucky Village",
+      "key": "tri-life-565",
+      "vertical": "くらし",
+      "id": "li0243",
+      "articleId": "li0243",
+      "shopUrl": "https://machinowa.tokyo/life/shop/li0243",
+      "articleUrl": "https://machinowa.tokyo/life/article/li0243",
+      "sheetUrl": "https://machinowa.tokyo/life/article/li0243"
+    },
+    {
+      "row": 566,
+      "name": "SKゴルフセンター",
+      "key": "tri-activity-566",
+      "vertical": "アクティビティ",
+      "id": "ac0081",
+      "articleId": "ac0081",
+      "shopUrl": "https://machinowa.tokyo/activity/shop/ac0081",
+      "articleUrl": "https://machinowa.tokyo/activity/article/ac0081",
+      "sheetUrl": "https://machinowa.tokyo/activity/article/ac0081"
+    },
+    {
+      "row": 567,
+      "name": "彦根レイクサイドリゾート KOMOREVILLAGO",
+      "key": "tri-stay-567",
+      "vertical": "ステイ",
+      "id": "st0034",
+      "articleId": "st0034",
+      "shopUrl": "https://machinowa.tokyo/stay/shop/st0034",
+      "articleUrl": "https://machinowa.tokyo/stay/article/st0034",
+      "sheetUrl": "https://machinowa.tokyo/stay/article/st0034"
+    },
+    {
+      "row": 569,
+      "name": "天高市神社",
+      "key": "tri-life-569",
+      "vertical": "くらし",
+      "id": "li0244",
+      "articleId": "li0244",
+      "shopUrl": "https://machinowa.tokyo/life/shop/li0244",
+      "articleUrl": "https://machinowa.tokyo/life/article/li0244",
+      "sheetUrl": "https://machinowa.tokyo/life/article/li0244"
+    },
+    {
+      "row": 572,
+      "name": "善念寺",
+      "key": "tri-life-572",
+      "vertical": "くらし",
+      "id": "li0245",
+      "articleId": "li0245",
+      "shopUrl": "https://machinowa.tokyo/life/shop/li0245",
+      "articleUrl": "https://machinowa.tokyo/life/article/li0245",
+      "sheetUrl": "https://machinowa.tokyo/life/article/li0245"
+    },
+    {
+      "row": 573,
+      "name": "やきにく処 談",
+      "key": "tri-gourmet-573",
+      "vertical": "グルメ",
+      "id": "r950",
+      "articleId": "やきにく処談",
+      "shopUrl": "https://machinowa.tokyo/restaurant/r950",
+      "articleUrl": "https://machinowa.tokyo/feature/やきにく処談",
+      "sheetUrl": "https://machinowa.tokyo/feature/やきにく処談"
+    }
+  ],
+  "skipped": []
+}

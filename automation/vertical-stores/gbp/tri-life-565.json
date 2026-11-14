@@ -1,0 +1,40 @@
+{
+  "tab": "トリニティアポ",
+  "tabEn": "tri-life",
+  "row": 565,
+  "sheet": {
+    "name": "Lucky Village",
+    "address": "",
+    "url": "https://www.google.com/maps/search/?api=1&query=Lucky%20Village%20080-9688-3323%20%E3%80%92326-0327%20%E6%A0%83%E6%9C%A8%E7%9C%8C%E8%B6%B3%E5%88%A9%E5%B8%82%E7%BE%BD%E5%88%88%E7%94%BA%EF%BC%96%EF%BC%92%EF%BC%95%E2%88%92%EF%BC%93",
+    "type": "車修理",
+    "d1": "",
+    "d2": ""
+  },
+  "urlKind": "mapsApi",
+  "route": "第1段(verify-gbp.mjs)で確認済み",
+  "verdict": "一致",
+  "verdictReason": "手がかり: 店名＋電話＋住所(番地まで)。電話が一致／店名: exact(シート「Lucky Village」/ マップ「Lucky Village」)／住所(シート): exact・町名・番地とも一致",
+  "place": {
+    "name": "Lucky Village",
+    "address": "栃木県足利市羽刈町６２５−３",
+    "category": "カーラッピング サービス",
+    "lat": 36.2780184,
+    "lng": 139.4664926,
+    "gbpUrl": "https://maps.google.com/?cid=13107169930210374634",
+    "phone": "080-9688-3323",
+    "website": "https://luckyvillage.jp/",
+    "hours": {
+      "月": "09:00–19:30",
+      "火": "09:00–19:30",
+      "水": "09:00–19:30",
+      "木": "09:00–19:30",
+      "金": "09:00–19:30",
+      "土": "09:30–18:30",
+      "日": "09:30–18:30"
+    },
+    "reserveLinks": [],
+    "statusSignals": [],
+    "closedSignal": false
+  },
+  "fetchedAt": "2026-11-14T04:01:55.169Z"
+}

@@ -1,0 +1,166 @@
+{
+  "key": "tri-life-565",
+  "images": [
+    {
+      "path": "/_portal/vshops/tri-life-565/g01.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9SOOdtfq966q3HeeEI3uqk0--imZV5jsohPAomf6Jjb57Wzq0EAfCpc4eD6Z_dQ1rLvOOV2kdBY6SMs-G84PBlfc2qwqWvc5WbjivoTtKCYmaO967564T9RTG4eZGljlfGlM-4=s1200",
+      "pageUrl": "https://maps.google.com/?cid=13107169930210374634",
+      "what": "店舗外観と敷地前に停まる車",
+      "kind": "exterior",
+      "width": 900,
+      "height": 1200,
+      "source": "Google マップ"
+    },
+    {
+      "path": "/_portal/vshops/tri-life-565/g02.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9RtDnr2GLORwRH7MAkqv2VNbqefVAgqhsb0n3s25JutI4SL2pT6FYqjC4mcJkTcWc4viy9JMRy-NsGksYqSCeBGkyEZGrPBapKuSNO3U5B9uiwVLRwY7zgN2kxLT1hR4w2eBBKnuUghQxiQ=s1200",
+      "pageUrl": "https://maps.google.com/?cid=13107169930210374634",
+      "what": "白いカーテンで囲まれた施工スペースの内部",
+      "kind": "common",
+      "width": 900,
+      "height": 1200,
+      "source": "Google マップ"
+    },
+    {
+      "path": "/_portal/vshops/tri-life-565/g03.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9TvrqCqe3bnyK-tuAC-1EZ1Ms9Nz6Cd4NzWmu-UzAqNu-map30TBP4j80VAFuEFFxtDGcfqygE0zKyva-R7F9KY_6Powwy9Q6AO97VeV_Q_khMUyNZvno3lFzkdXDZ1yn6uqgXDUI48ujxZ=s1200",
+      "pageUrl": "https://maps.google.com/?cid=13107169930210374634",
+      "what": "施工エリアの白いカーテンと床面",
+      "kind": "common",
+      "width": 900,
+      "height": 1200,
+      "source": "Google マップ"
+    },
+    {
+      "path": "/_portal/vshops/tri-life-565/g04.jpg",
+      "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9TBfAb3lIMOH1pmoRKjkRw2zfaEWToSIIE67VUDpnBN8ZD0sRwnnQUCRNvhdD2fKtA5jozi7Kv-1VN6PbBbLxKW0J0dU2pyh5a1r5cnGX4wK-6oAC0CdsiFtywIN8K5SgAlQ3c=s1200",
+      "pageUrl": "https://maps.google.com/?cid=13107169930210374634",
+      "what": "建物全景と施工スペース入口",
+      "kind": "exterior",
+      "width": 900,
+      "height": 1200,
+      "source": "Google マップ"
+    },
+    {
+      "path": "/_portal/vshops/tri-life-565/s02.jpg",
+      "imageUrl": "https://luckyvillage.jp/_img/ja/cms/44345/image/_/",
+      "pageUrl": "https://luckyvillage.jp/",
+      "what": "グローブをはめた手がフィルムをボディに貼る施工シーン",
+      "kind": "common",
+      "width": 1280,
+      "height": 855,
+      "source": "公式サイト"
+    },
+    {
+      "path": "/_portal/vshops/tri-life-565/s03.jpg",
+      "imageUrl": "https://luckyvillage.jp/_img/ja/cms/44346/image/_/",
+      "pageUrl": "https://luckyvillage.jp/",
+      "what": "ミラー付近のラッピングフィルムを施工する様子",
+      "kind": "common",
+      "width": 1280,
+      "height": 853,
+      "source": "公式サイト"
+    },
+    {
+      "path": "/_portal/vshops/tri-life-565/s04.jpg",
+      "imageUrl": "https://luckyvillage.jp/_img/ja/cms/44347/image/_/",
+      "pageUrl": "https://luckyvillage.jp/",
+      "what": "ポリッシャーを使ったコーティング作業の様子",
+      "kind": "common",
+      "width": 1280,
+      "height": 850,
+      "source": "公式サイト"
+    },
+    {
+      "path": "/_portal/vshops/tri-life-565/s08.jpg",
+      "imageUrl": "https://luckyvillage.jp/_img/ja/cms/44389/image/_/",
+      "pageUrl": "https://luckyvillage.jp/",
+      "what": "卓上に置かれた赤い車のミニチュアと複数のコイン",
+      "kind": "common",
+      "width": 1280,
+      "height": 854,
+      "source": "公式サイト"
+    },
+    {
+      "path": "/_portal/vshops/tri-life-565/s09.jpg",
+      "imageUrl": "https://luckyvillage.jp/_img/ja/article/889/image/___//",
+      "pageUrl": "https://luckyvillage.jp/",
+      "what": "オレンジ色のSUVが屋外に停車している様子",
+      "kind": "meal",
+      "width": 1280,
+      "height": 855,
+      "source": "公式サイト"
+    },
+    {
+      "path": "/_portal/vshops/tri-life-565/s10.jpg",
+      "imageUrl": "https://luckyvillage.jp/_img/ja/article/890/image/___//",
+      "pageUrl": "https://luckyvillage.jp/",
+      "what": "青いSUVが芝生の前に停車している様子",
+      "kind": "meal",
+      "width": 726,
+      "height": 484,
+      "source": "公式サイト"
+    },
+    {
+      "path": "/_portal/vshops/tri-life-565/s12.jpg",
+      "imageUrl": "https://luckyvillage.jp/_img/ja/article/1425/image/___//",
+      "pageUrl": "https://luckyvillage.jp/",
+      "what": "白いアルファード系ミニバンの側面",
+      "kind": "meal",
+      "width": 1280,
+      "height": 791,
+      "source": "公式サイト"
+    },
+    {
+      "path": "/_portal/vshops/tri-life-565/s13.jpg",
+      "imageUrl": "https://luckyvillage.jp/_img/ja/article/1426/image/___//",
+      "pageUrl": "https://luckyvillage.jp/",
+      "what": "駐車場に停まる黒いスーパーカーの前面",
+      "kind": "meal",
+      "width": 1280,
+      "height": 853,
+      "source": "公式サイト"
+    },
+    {
+      "path": "/_portal/vshops/tri-life-565/s14.jpg",
+      "imageUrl": "https://luckyvillage.jp/_img/ja/cms/44490/image/___/",
+      "pageUrl": "https://luckyvillage.jp/",
+      "what": "夕日を背景に並ぶ複数の車",
+      "kind": "meal",
+      "width": 1280,
+      "height": 853,
+      "source": "公式サイト"
+    },
+    {
+      "path": "/_portal/vshops/tri-life-565/s15.jpg",
+      "imageUrl": "https://luckyvillage.jp/_img/ja/cms/44491/image/___/",
+      "pageUrl": "https://luckyvillage.jp/",
+      "what": "赤いSUVが道路脇に停車している様子",
+      "kind": "meal",
+      "width": 1280,
+      "height": 853,
+      "source": "公式サイト"
+    },
+    {
+      "path": "/_portal/vshops/tri-life-565/s16.jpg",
+      "imageUrl": "https://luckyvillage.jp/_img/ja/cms/44492/image/___/",
+      "pageUrl": "https://luckyvillage.jp/",
+      "what": "グレーのアメ車旧車の側面",
+      "kind": "meal",
+      "width": 1280,
+      "height": 853,
+      "source": "公式サイト"
+    },
+    {
+      "path": "/_portal/vshops/tri-life-565/s17.jpg",
+      "imageUrl": "https://luckyvillage.jp/_img/ja/cms/44493/image/___/",
+      "pageUrl": "https://luckyvillage.jp/",
+      "what": "岩山を背景に停まる赤いスポーツカー",
+      "kind": "meal",
+      "width": 1280,
+      "height": 863,
+      "source": "公式サイト"
+    }
+  ],
+  "note": "automation/v2/write.mjs が 2026-11-14T04:13:42.916Z に取得。店の実写だけ(AI 画像・汎用画像・地図・ロゴ・顔が大きい画像は除外)。"
+}

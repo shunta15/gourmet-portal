@@ -6541,6 +6541,286 @@
           "洋室"
         ]
       }
+    },
+    {
+      "id": "st0034",
+      "vertical": "stay",
+      "category": "glamping",
+      "name": "KOMOREVILLAGO コモレヴィラーゴ",
+      "pref": "shiga",
+      "cityName": "彦根市",
+      "address": "滋賀県彦根市新海町2194",
+      "lat": 35.2185375,
+      "lng": 136.1332363,
+      "phone": "0749-32-9006",
+      "url": "https://komorevillago.com/",
+      "website": "https://komorevillago.com/",
+      "mapUrl": "https://maps.google.com/?cid=13850723071454525732",
+      "image": "/_portal/vshops/tri-stay-567/g01.jpg",
+      "images": [
+        "/_portal/vshops/tri-stay-567/g01.jpg",
+        "/_portal/vshops/tri-stay-567/g02.jpg",
+        "/_portal/vshops/tri-stay-567/g03.jpg",
+        "/_portal/vshops/tri-stay-567/g04.jpg",
+        "/_portal/vshops/tri-stay-567/g05.jpg",
+        "/_portal/vshops/tri-stay-567/g06.jpg",
+        "/_portal/vshops/tri-stay-567/g07.jpg",
+        "/_portal/vshops/tri-stay-567/g08.jpg",
+        "/_portal/vshops/tri-stay-567/g09.jpg",
+        "/_portal/vshops/tri-stay-567/g10.jpg",
+        "/_portal/vshops/tri-stay-567/s03.jpg",
+        "/_portal/vshops/tri-stay-567/s04.jpg",
+        "/_portal/vshops/tri-stay-567/s06.jpg",
+        "/_portal/vshops/tri-stay-567/s08.jpg",
+        "/_portal/vshops/tri-stay-567/s09.jpg",
+        "/_portal/vshops/tri-stay-567/s13.jpg",
+        "/_portal/vshops/tri-stay-567/s14.jpg",
+        "/_portal/vshops/tri-stay-567/s15.jpg",
+        "/_portal/vshops/tri-stay-567/s16.jpg",
+        "/_portal/vshops/tri-stay-567/s17.jpg",
+        "/_portal/vshops/tri-stay-567/s18.jpg"
+      ],
+      "photos": [
+        {
+          "path": "/_portal/vshops/tri-stay-567/g01.jpg",
+          "what": "夜の焚き火エリアとウッドデッキが並ぶ施設の外観",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 801
+        },
+        {
+          "path": "/_portal/vshops/tri-stay-567/g02.jpg",
+          "what": "白を基調とした清潔感のあるバスルームと洗面台",
+          "kind": "room",
+          "width": 1200,
+          "height": 800
+        },
+        {
+          "path": "/_portal/vshops/tri-stay-567/g03.jpg",
+          "what": "夕暮れの空と湖を背景にウッドデッキとテント型ヴィラ",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 800
+        },
+        {
+          "path": "/_portal/vshops/tri-stay-567/g04.jpg",
+          "what": "芝生の広場に並ぶウッドデッキと複数のヴィラ棟",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-stay-567/g05.jpg",
+          "what": "芝生に描かれた円形のデザインと広大なドッグランスペース",
+          "kind": "common",
+          "width": 1200,
+          "height": 801
+        },
+        {
+          "path": "/_portal/vshops/tri-stay-567/g06.jpg",
+          "what": "焚き火の炎が揺れるキャンプファイヤースペース",
+          "kind": "common",
+          "width": 1080,
+          "height": 720
+        },
+        {
+          "path": "/_portal/vshops/tri-stay-567/g07.jpg",
+          "what": "木製トレーに並んだ近江牛や野菜など食材の盛り付け",
+          "kind": "meal",
+          "width": 1200,
+          "height": 800
+        },
+        {
+          "path": "/_portal/vshops/tri-stay-567/g08.jpg",
+          "what": "グラスに注がれたクラフトビールと琥珀色のドリンク",
+          "kind": "meal",
+          "width": 1080,
+          "height": 720
+        },
+        {
+          "path": "/_portal/vshops/tri-stay-567/g09.jpg",
+          "what": "串に刺した白いマシュマロを焚き火で焼いている場面",
+          "kind": "meal",
+          "width": 1080,
+          "height": 720
+        },
+        {
+          "path": "/_portal/vshops/tri-stay-567/g10.jpg",
+          "what": "グリルや野菜・肉料理などが並ぶアウトドアクッキングの料理",
+          "kind": "meal",
+          "width": 1200,
+          "height": 800
+        },
+        {
+          "path": "/_portal/vshops/tri-stay-567/s03.jpg",
+          "what": "琵琶湖の上でSUPボードに乗る人たちの様子",
+          "kind": "view",
+          "width": 1280,
+          "height": 720
+        },
+        {
+          "path": "/_portal/vshops/tri-stay-567/s04.jpg",
+          "what": "グリルの上でソーセージや肉を焼いているBBQの場面",
+          "kind": "meal",
+          "width": 1280,
+          "height": 720
+        },
+        {
+          "path": "/_portal/vshops/tri-stay-567/s06.jpg",
+          "what": "夜のテラスに並ぶ彦根麦酒のボトルとグラス",
+          "kind": "meal",
+          "width": 1280,
+          "height": 720
+        },
+        {
+          "path": "/_portal/vshops/tri-stay-567/s08.jpg",
+          "what": "ウッドデッキに並んだ近江牛や野菜など夕食の食材と料理",
+          "kind": "meal",
+          "width": 1280,
+          "height": 756
+        },
+        {
+          "path": "/_portal/vshops/tri-stay-567/s09.jpg",
+          "what": "グリルで肉を焼くアウトドアクッキングの場面",
+          "kind": "meal",
+          "width": 1200,
+          "height": 643
+        },
+        {
+          "path": "/_portal/vshops/tri-stay-567/s13.jpg",
+          "what": "鍋に入ったすき焼きや肉・野菜のアップ",
+          "kind": "meal",
+          "width": 1280,
+          "height": 520
+        },
+        {
+          "path": "/_portal/vshops/tri-stay-567/s14.jpg",
+          "what": "木製トレーに並んだ焼肉や副菜などのセットメニュー",
+          "kind": "meal",
+          "width": 1280,
+          "height": 853
+        },
+        {
+          "path": "/_portal/vshops/tri-stay-567/s15.jpg",
+          "what": "スキレットに入ったチーズフォンデュ",
+          "kind": "meal",
+          "width": 1000,
+          "height": 667
+        },
+        {
+          "path": "/_portal/vshops/tri-stay-567/s16.jpg",
+          "what": "ホイル焼きにした魚料理と野菜の盛り付け",
+          "kind": "meal",
+          "width": 1000,
+          "height": 667
+        },
+        {
+          "path": "/_portal/vshops/tri-stay-567/s17.jpg",
+          "what": "深めの鍋に牡蠣と野菜が入った鍋料理",
+          "kind": "meal",
+          "width": 1000,
+          "height": 667
+        },
+        {
+          "path": "/_portal/vshops/tri-stay-567/s18.jpg",
+          "what": "鍋に入った肉と白菜など野菜のしゃぶしゃぶ",
+          "kind": "meal",
+          "width": 1000,
+          "height": 667
+        }
+      ],
+      "tags": [
+        "ペット同伴",
+        "記念日"
+      ],
+      "article": {
+        "headline": "滋賀県彦根市、琵琶湖の岸から徒歩30秒の湖畔に立つグランピングリゾート。ラグジュアリー・エグゼクティブ・スーペリアの3タイプ、全9棟の一棟貸しヴィラ",
+        "lede": "彦根市にある「KOMOREVILLAGO（コモレヴィラーゴ）」です。2026年4月25日に開業した、琵琶湖の岸から徒歩30秒の湖畔に立つグランピングリゾートです。施設への入口は木のトンネルになっており、くぐり抜けると湖畔の景色が広がります。客室はすべて一棟貸しの独立したヴィラで、ラグジュアリー・エグゼクティブ・スーペリアの3タイプ全9棟から選べます。全室にウッドデッキと個室のバス＆トイレを完備し、夕食・朝食をアウトドア形式で楽しめます。大型犬を含む犬との宿泊にも対応しており、各棟にプライベートドッグランを備えています。宿泊のほかにキャンプサイト、車中泊スペース、日帰りBBQエリアも敷地内に設けられています。",
+        "sections": [
+          {
+            "heading": "客室の種類と数",
+            "body": "客室は全3タイプ、計9棟の一棟貸しヴィラです。最も広い「ラグジュアリー」は面積121.2㎡で定員2〜6名。2つの宿泊部屋と共有の中央ウッドデッキで構成され、シングルベッド4台・ソファベッド2台を備えます。駐車場は4台分あり、ドッグランスペースは約316㎡です。「エグゼクティブ」は面積64.5㎡で定員2〜5名。居住空間と水回りがセパレートになった構成で、シングルベッド4台・ソファベッド1台を備えます。駐車場は2台、ドッグランスペースは約230㎡です。「スーペリア」は面積50.5㎡で定員2〜3名。ご夫婦やカップル、少人数での滞在に向く客室で、シングルベッド2台・ソファベッド1台を備えます。駐車場は2台、ドッグランスペースは約216㎡です。全室共通の客室設備としてBBQコンロ・暖炉・お風呂・洗面所・洗浄機能付きトイレ・電子レンジ・電気ケトル・冷蔵庫・トースター・空気清浄機・冷暖房エアコン・AIコンシェルジュタブレットがあります。バスアメニティにはシャンプー・リンス・ボディーソープ・タオル・バスタオル・歯磨きセット・くし・ドライヤー・髭剃りが揃います。チェックインは15:00〜18:00、チェックアウトは8:00〜10:00です。"
+          },
+          {
+            "heading": "食事",
+            "body": "夕食は「アウトドア・オーベルジュ」形式で提供されます。下ごしらえした食材を、ゲスト自らがグリルやスキレットで仕上げるスタイルです。メニューは4コースから選べます。「木漏れ日コース」は滋賀の地元素材を使ったコースで、前菜のチーズフォンデュ、ケイジャンチキン、ビワマスと茸のホイル焼き、鮎の土鍋ご飯、牡蠣と秋冬野菜のアヒージョ、ロメインレタスのシーザーサラダ、デザートの焼き芋バニラアイス添えで構成されます（秋冬コレクション）。「選べる鍋コース」は近江牛しゃぶしゃぶ・ジビエ鍋・スタンダード鍋・近江牛もつ鍋・牡蠣と秋冬野菜のお鍋から選択でき、出汁を5種から2つ、〆を3種から1つ選べます。「近江牛焼肉セット」では希少部位5種食べ比べ・ホルモン3種食べ比べ・タン・ハラミ・ステーキを、「スタンダード焼肉セット」では国産鶏肉・国産豚バラ・牛タン・牛カルビ・ソーセージを楽しめます。朝食はモーニングセットで、塩パン・お米パン・アサイーヨーグルト・ポテトサラダ・コーヒー・アールグレイが提供されます。"
+          },
+          {
+            "heading": "館内",
+            "body": "敷地内には宿泊棟のほか、キャンプサイト、車中泊エリア、日帰りBBQエリア（1日8組限定）が設けられています。BBQエリアでは手ぶらプランのほか、自分で食材や機材を持ち込むセルフスタイルも選べます。カフェ&バー「MOLA café & BAR」が敷地内にあり、昼はアサイーボウルなどヘルシーなメニューを、夜はバーとして利用できます。夏季限定でヴィンテージトレーラー「BAR SPARTAN」を使ったビアガーデンを開催しており、彦根麦酒や限定おつまみを提供します（予約不要）。オプションとしてテントサウナと焼きマシュマロセットを用意しており、テントサウナはスタッフが設営・火おこし・撤収まで行います。SUPとカヤックのアクティビティも用意されており、湖上での体験ができます。冷蔵庫にはミネラルウォーターとお茶パックをフリードリンクとして人数分用意しています。"
+          },
+          {
+            "heading": "行き方と使い方",
+            "body": "最寄り駅はJR琵琶湖線の能登川駅で、タクシーで約11分です。JR京都駅から能登川駅まで新快速で約35分、JR大阪駅からは新快速で約65分でアクセスできます。車の場合、名神高速道路「彦根IC」から県道25号線（さざなみ街道）を南下して約30分、「八日市IC」から県道559号線（さざなみ街道）方面へ約30分、「竜王IC」から国道8号線・県道2号線を経由して約35分です。大阪・名古屋からいずれも約1時間30分の距離にあります。予約はオンラインのみで受け付けており、2日前までに行う必要があります。宿泊当日の予約はできません。受付時間は8:00〜22:00です。周辺には彦根城（車で約25分）、安土城跡（車で約15分）、能登川水車とカヌーランド（車で約10分）、道の駅「せせらぎの里こうら」（車で約25分）があります。"
+          }
+        ],
+        "menus": [
+          {
+            "name": "木漏れ日コース"
+          },
+          {
+            "name": "選べる鍋コース"
+          },
+          {
+            "name": "近江牛焼肉セット"
+          },
+          {
+            "name": "スタンダード焼肉セット"
+          },
+          {
+            "name": "モーニングセット"
+          },
+          {
+            "name": "BBQ（日帰りBBQエリア）"
+          }
+        ],
+        "sources": [
+          {
+            "label": "公式サイト",
+            "url": "https://komorevillago.com/"
+          },
+          {
+            "label": "公式サイト(客室)",
+            "url": "https://komorevillago.com/room"
+          },
+          {
+            "label": "公式サイト(お食事)",
+            "url": "https://komorevillago.com/food-2026fw"
+          },
+          {
+            "label": "公式サイト(アクセス)",
+            "url": "https://komorevillago.com/access"
+          },
+          {
+            "label": "公式サイト(アクティビティ・周辺情報)",
+            "url": "https://komorevillago.com/activity"
+          },
+          {
+            "label": "公式サイト(Q&A)",
+            "url": "https://komorevillago.com/q-a"
+          },
+          {
+            "label": "PRTimes プレスリリース",
+            "url": "https://prtimes.jp/main/html/rd/p/000000002.000180616.html"
+          },
+          {
+            "label": "lantern.camp",
+            "url": "https://www.lantern.camp/?p=144456"
+          },
+          {
+            "label": "Google マップ",
+            "url": "https://maps.google.com/?cid=13850723071454525732"
+          }
+        ],
+        "checkedAt": "2026-11-14"
+      },
+      "attributes": {
+        "roomTypes": [
+          "ラグジュアリー",
+          "エグゼクティブ",
+          "スーペリア"
+        ]
+      }
     }
   ]
 }

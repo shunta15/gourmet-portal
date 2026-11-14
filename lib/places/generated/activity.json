@@ -14244,6 +14244,193 @@
         ],
         "checkedAt": "2026-11-13"
       }
+    },
+    {
+      "id": "ac0081",
+      "vertical": "activity",
+      "category": "sightseeing",
+      "name": "SKゴルフセンター",
+      "pref": "aichi",
+      "cityName": "愛西市",
+      "address": "愛知県愛西市西保町南川原23",
+      "lat": 35.1364559,
+      "lng": 136.7052991,
+      "hours": "月-金 07:30 - 22:00 / 土日 07:00 - 22:00",
+      "phone": "0567-25-2580",
+      "url": "http://www1.clovernet.ne.jp/skgolfcenter/",
+      "website": "http://www1.clovernet.ne.jp/skgolfcenter/",
+      "mapUrl": "https://maps.google.com/?cid=3910945594957666749",
+      "image": "/_portal/vshops/tri-activity-566/g01.jpg",
+      "images": [
+        "/_portal/vshops/tri-activity-566/g01.jpg",
+        "/_portal/vshops/tri-activity-566/g02.jpg",
+        "/_portal/vshops/tri-activity-566/g03.jpg",
+        "/_portal/vshops/tri-activity-566/g04.jpg",
+        "/_portal/vshops/tri-activity-566/g05.jpg",
+        "/_portal/vshops/tri-activity-566/g06.jpg",
+        "/_portal/vshops/tri-activity-566/g07.jpg",
+        "/_portal/vshops/tri-activity-566/g08.jpg",
+        "/_portal/vshops/tri-activity-566/g09.jpg",
+        "/_portal/vshops/tri-activity-566/g10.jpg",
+        "/_portal/vshops/tri-activity-566/s04.jpg",
+        "/_portal/vshops/tri-activity-566/s05.jpg"
+      ],
+      "photos": [
+        {
+          "path": "/_portal/vshops/tri-activity-566/g01.jpg",
+          "what": "芝の広がる練習場のフェアウェイエリア",
+          "kind": "common",
+          "width": 1200,
+          "height": 675
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-566/g02.jpg",
+          "what": "打席でスイングする人物",
+          "kind": "common",
+          "width": 675,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-566/g03.jpg",
+          "what": "打席が並ぶ練習場エリアの遠景",
+          "kind": "common",
+          "width": 675,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-566/g04.jpg",
+          "what": "「SK GOLF center」と書かれた看板の前でスイングする人物",
+          "kind": "exterior",
+          "width": 939,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-566/g05.jpg",
+          "what": "芝の練習エリアと防球ネットの全景",
+          "kind": "common",
+          "width": 1200,
+          "height": 675
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-566/g06.jpg",
+          "what": "駐車場と練習場の看板が見える外観",
+          "kind": "exterior",
+          "width": 675,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-566/g07.jpg",
+          "what": "緑に囲まれた練習場の建物外観",
+          "kind": "exterior",
+          "width": 1200,
+          "height": 675
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-566/g08.jpg",
+          "what": "練習場施設と周辺の建物の外観",
+          "kind": "exterior",
+          "width": 675,
+          "height": 1200
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-566/g09.jpg",
+          "what": "芝のフィールドで2人がゴルフを練習している様子",
+          "kind": "common",
+          "width": 1179,
+          "height": 871
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-566/g10.jpg",
+          "what": "バケツに入った複数のゴルフボール",
+          "kind": "common",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-566/s04.jpg",
+          "what": "打席エリアとアプローチ練習エリアの設備",
+          "kind": "common",
+          "width": 1110,
+          "height": 834
+        },
+        {
+          "path": "/_portal/vshops/tri-activity-566/s05.jpg",
+          "what": "室内のパター練習エリアと窓から見える練習場",
+          "kind": "common",
+          "width": 640,
+          "height": 480
+        }
+      ],
+      "tags": [
+        "初心者歓迎",
+        "手ぶらでOK",
+        "駐車場あり"
+      ],
+      "article": {
+        "headline": "愛知県愛西市にある、50打席・150ヤードの屋外ゴルフ練習場。天然芝からのアプローチ練習と、現役プロによるレッスンが受けられる",
+        "lede": "愛西市にある「SKゴルフセンター」です。50打席・150ヤードの2階建て屋外練習場で、田舎ならではのどかで落ち着いた環境の中で練習できます。打席エリアに加え、天然芝からのアプローチ練習ができるエリアと、300cm×300cmのパター練習エリアを備えています。初心者から上級者まで幅広く対応しており、現役のシニアプロと現役ツアープロの2名がレッスンを担当しています。夏場は扇風機、冬場はストーブを設置しており、季節を問わず練習に集中できる環境が整っています。貸しクラブは用意されており、手ぶらでの来場も可能です。",
+        "sections": [
+          {
+            "heading": "体験の内容と流れ",
+            "body": "練習場の打席は50席あり、ボールを購入して自分のペースで打ち込めます。平日と土日祝で打ち放題の時間設定が異なり、平日は17時以降に2時間打ち放題のプランがあります。土日祝は17時前に3時間打ち放題、17時以降は2時間打ち放題のプランを用意しています。SKサブスク（フリーパス）は30日間のプランで、1日1カゴ（150球）と1日3カゴ（450球）の2種類があります。打席エリアのほかに、天然芝を使ったアプローチ練習エリアがあり、コース感覚でショートゲームの練習ができます。さらに300cm×300cmのパター練習エリアも設けています。"
+          },
+          {
+            "heading": "対象",
+            "body": "初心者から上級者まで幅広く受け入れており、ゴルフ経験を問わず利用できます。練習場の距離は150ヤードと短く、球筋が見やすいため、スイングの確認がしやすい環境です。レッスンを希望する場合は、現役シニアプロの荒木東海男（SKゴルフセンター所属）と、現役ツアープロの荒木義和（桑名カントリーCC所属）の2名が担当します。荒木義和プロは令和4年（2022年）に大学在学中でPGAプロゴルフ認定試験に合格し、令和5年（2023年）のイングオープンプロで初優勝を果たしています。グループレッスンと個人レッスンの両方を受け付けています。"
+          },
+          {
+            "heading": "集合場所と行き方",
+            "body": "名鉄尾西線「五ノ三駅」から徒歩約17分の位置にあります。車でのアクセスは、東名阪自動車道「弥富IC」から2.3kmほどです。駐車場は35台分を備えています。予約や問い合わせは公式サイトの問い合わせページから連絡できます。"
+          }
+        ],
+        "menus": [
+          {
+            "name": "天然芝アプローチ練習"
+          },
+          {
+            "name": "パター練習"
+          },
+          {
+            "name": "打ち放題（平日・土日祝）"
+          },
+          {
+            "name": "SKサブスク（フリーパス・30日）"
+          },
+          {
+            "name": "個人レッスン"
+          },
+          {
+            "name": "グループレッスン"
+          }
+        ],
+        "sources": [
+          {
+            "label": "公式サイト",
+            "url": "http://www1.clovernet.ne.jp/skgolfcenter/"
+          },
+          {
+            "label": "公式サイト（設備）",
+            "url": "http://www1.clovernet.ne.jp/skgolfcenter/custom2.html"
+          },
+          {
+            "label": "公式サイト（メニュー）",
+            "url": "http://www1.clovernet.ne.jp/skgolfcenter/custom6.html"
+          },
+          {
+            "label": "公式サイト（スタッフ紹介）",
+            "url": "http://www1.clovernet.ne.jp/skgolfcenter/custom1.html"
+          },
+          {
+            "label": "ゴルフメドレー",
+            "url": "https://golf-medley.com/practice_facilities/1087"
+          },
+          {
+            "label": "Google マップ",
+            "url": "https://maps.google.com/?cid=3910945594957666749"
+          }
+        ],
+        "checkedAt": "2026-11-14"
+      }
     }
   ]
 }

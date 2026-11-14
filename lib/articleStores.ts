@@ -24257,6 +24257,52 @@ export const ARTICLE_STORES: Restaurant[] = [
       "ランチ"
     ],
     "featureId": "麺や虎"
+  },
+  {
+    "id": "r950",
+    "name": "やきにく処 談",
+    "cuisine": "焼肉店",
+    "area": "福井県・敦賀市",
+    "region": "fukui",
+    "shape": "square",
+    "image": "/restaurants/teleapo-やきにく処談/hero.jpg",
+    "heroImages": [
+      "/restaurants/teleapo-やきにく処談/hero.jpg",
+      "/restaurants/teleapo-やきにく処談/point1.jpg",
+      "/restaurants/teleapo-やきにく処談/point2.jpg",
+      "/restaurants/teleapo-やきにく処談/point3.jpg"
+    ],
+    "gallery": [
+      "/restaurants/teleapo-やきにく処談/hero.jpg",
+      "/restaurants/teleapo-やきにく処談/point1.jpg",
+      "/restaurants/teleapo-やきにく処談/point2.jpg",
+      "/restaurants/teleapo-やきにく処談/point3.jpg"
+    ],
+    "desc": "福井県敦賀市の焼肉店。",
+    "address": "福井県敦賀市本町1丁目2-1",
+    "hours": "月・火・木〜日 17:00–22:00",
+    "closed": "水曜日",
+    "seats": "—（訪問前に公式確認）",
+    "nearest": "—",
+    "phone": "080-5857-1601",
+    "source": {
+      "label": "Google ビジネスプロフィール",
+      "url": "https://maps.google.com/?cid=9333723516866212361"
+    },
+    "body": [
+      "やきにく処 談は、福井県敦賀市にあるお店です。業態は「焼肉店」、所在地は福井県敦賀市本町1丁目2-1です。マチノワ編集部の特集記事では、「生肉を皿に盛って供する焼肉スタイル」・「夜のみ営業、水曜定休でPayPayが使える」などを取り上げています。",
+      "営業時間は月・火・木〜日 17:00–22:00、定休日は水曜日です（Googleマップの営業時間による）。営業時間や価格は変わることがあるため、訪問前に公式サイトやSNS、お電話でご確認ください。"
+    ],
+    "highlights": [
+      "生肉を皿に盛って供する焼肉スタイル",
+      "夜のみ営業、水曜定休でPayPayが使える",
+      "格子戸の外観と、たぬきが迎える店構え"
+    ],
+    "tags": [
+      "焼肉店",
+      "敦賀市"
+    ],
+    "featureId": "やきにく処談"
   }
 ];
 
@@ -24767,7 +24813,8 @@ export const ARTICLE_STORE_FEATURE_IDS: Record<string, string> = {
   "r946": "本格手打ちうどん亭なべきち",
   "r947": "レストランアップルミント",
   "r948": "カフェ・リバーサイドオリエンタル",
-  "r949": "麺や虎"
+  "r949": "麺や虎",
+  "r950": "やきにく処談"
 };
 
 /** 特集記事ID → 店舗ID */
@@ -25277,5 +25324,6 @@ export const ARTICLE_STORE_ID_BY_FEATURE: Record<string, string> = {
   "本格手打ちうどん亭なべきち": "r946",
   "レストランアップルミント": "r947",
   "カフェ・リバーサイドオリエンタル": "r948",
-  "麺や虎": "r949"
+  "麺や虎": "r949",
+  "やきにく処談": "r950"
 };

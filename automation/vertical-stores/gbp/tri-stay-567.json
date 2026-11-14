@@ -1,0 +1,32 @@
+{
+  "tab": "トリニティアポ",
+  "tabEn": "tri-stay",
+  "row": 567,
+  "sheet": {
+    "name": "彦根レイクサイドリゾート KOMOREVILLAGO",
+    "address": "",
+    "url": "https://www.google.com/maps/search/?api=1&query=%E5%BD%A6%E6%A0%B9%E3%83%AC%E3%82%A4%E3%82%AF%E3%82%B5%E3%82%A4%E3%83%89%E3%83%AA%E3%82%BE%E3%83%BC%E3%83%88%20KOMOREVILLAGO%20074-932-9006%20%E3%80%92521-1135%20%E6%BB%8B%E8%B3%80%E7%9C%8C%E5%BD%A6%E6%A0%B9%E5%B8%82%E6%96%B0%E6%B5%B7%E7%94%BA2194%E7%95%AA%E5%9C%B0",
+    "type": "宿　ヴィラ",
+    "d1": "",
+    "d2": ""
+  },
+  "urlKind": "mapsApi",
+  "route": "第1段(verify-gbp.mjs)で確認済み",
+  "verdict": "一致",
+  "verdictReason": "手がかり: 電話＋住所(番地まで)。電話が一致／店名: different(シート「彦根レイクサイドリゾート KOMOREVILLAGO」/ マップ「KOMOREVILLAGO コモレヴィラーゴ」)／住所(シート): exact・町名・番地とも一致",
+  "place": {
+    "name": "KOMOREVILLAGO コモレヴィラーゴ",
+    "address": "滋賀県彦根市新海町２１９４",
+    "category": null,
+    "lat": 35.2185375,
+    "lng": 136.1332363,
+    "gbpUrl": "https://maps.google.com/?cid=13850723071454525732",
+    "phone": "0749-32-9006",
+    "website": "https://komorevillago.com/",
+    "hours": null,
+    "reserveLinks": [],
+    "statusSignals": [],
+    "closedSignal": false
+  },
+  "fetchedAt": "2026-11-14T04:03:22.413Z"
+}

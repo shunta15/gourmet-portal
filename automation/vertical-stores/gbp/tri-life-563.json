@@ -1,0 +1,40 @@
+{
+  "tab": "トリニティアポ",
+  "tabEn": "tri-life",
+  "row": 563,
+  "sheet": {
+    "name": "東勝寺",
+    "address": "",
+    "url": "https://www.google.com/maps/search/?api=1&query=%E6%9D%B1%E5%8B%9D%E5%AF%BA%20046-644-0451%20",
+    "type": "寺",
+    "d1": "",
+    "d2": ""
+  },
+  "urlKind": "mapsApi",
+  "route": "第1段(verify-gbp.mjs)で確認済み",
+  "verdict": "一致",
+  "verdictReason": "手がかり: 店名＋電話。電話が一致／店名: exact(シート「東勝寺」/ マップ「東勝寺」)",
+  "place": {
+    "name": "東勝寺",
+    "address": "神奈川県藤沢市高倉２５８",
+    "category": "仏教寺院",
+    "lat": 35.4039549,
+    "lng": 139.4731418,
+    "gbpUrl": "https://maps.google.com/?cid=11810634699465542750",
+    "phone": "0466-44-0451",
+    "website": "http://toushouji.jp/",
+    "hours": {
+      "月": "24時間営業",
+      "火": "24時間営業",
+      "水": "24時間営業",
+      "木": "24時間営業",
+      "金": "24時間営業",
+      "土": "24時間営業",
+      "日": "24時間営業"
+    },
+    "reserveLinks": [],
+    "statusSignals": [],
+    "closedSignal": false
+  },
+  "fetchedAt": "2026-11-14T04:00:41.856Z"
+}

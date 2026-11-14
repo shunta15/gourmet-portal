@@ -1,0 +1,40 @@
+{
+  "tab": "トリニティアポ",
+  "tabEn": "tri-activity",
+  "row": 566,
+  "sheet": {
+    "name": "SKゴルフセンター",
+    "address": "",
+    "url": "https://www.google.com/maps/search/?api=1&query=SK%E3%82%B4%E3%83%AB%E3%83%95%E3%82%BB%E3%83%B3%E3%82%BF%E3%83%BC%20056-725-2580%20%E3%80%92496-0911%20%E6%84%9B%E7%9F%A5%E7%9C%8C%E6%84%9B%E8%A5%BF%E5%B8%82%E8%A5%BF%E4%BF%9D%E7%94%BA%E5%8D%97%E5%B7%9D%E5%8E%9F23",
+    "type": "レジャー",
+    "d1": "",
+    "d2": ""
+  },
+  "urlKind": "mapsApi",
+  "route": "第1段(verify-gbp.mjs)で確認済み",
+  "verdict": "一致",
+  "verdictReason": "手がかり: 店名＋電話＋住所(番地まで)。電話が一致／店名: exact(シート「SKゴルフセンター」/ マップ「SKゴルフセンター」)／住所(シート): exact・町名・番地とも一致",
+  "place": {
+    "name": "SKゴルフセンター",
+    "address": "愛知県愛西市西保町南川原23",
+    "category": "ゴルフ練習場",
+    "lat": 35.1364559,
+    "lng": 136.7052991,
+    "gbpUrl": "https://maps.google.com/?cid=3910945594957666749",
+    "phone": "0567-25-2580",
+    "website": "http://www1.clovernet.ne.jp/skgolfcenter/",
+    "hours": {
+      "月": "07:30–22:00",
+      "火": "07:30–22:00",
+      "水": "07:30–22:00",
+      "木": "07:30–22:00",
+      "金": "07:30–22:00",
+      "土": "07:00–22:00",
+      "日": "07:00–22:00"
+    },
+    "reserveLinks": [],
+    "statusSignals": [],
+    "closedSignal": false
+  },
+  "fetchedAt": "2026-11-14T04:02:42.386Z"
+}

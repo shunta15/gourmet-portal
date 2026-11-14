@@ -1,0 +1,32 @@
+{
+  "tab": "トリニティアポ",
+  "tabEn": "tri-life",
+  "row": 572,
+  "sheet": {
+    "name": "善念寺",
+    "address": "",
+    "url": "https://www.google.com/maps/search/?api=1&query=%E5%96%84%E5%BF%B5%E5%AF%BA%20027-324-5527%20%E3%80%92370-0057%20%E7%BE%A4%E9%A6%AC%E7%9C%8C%E9%AB%98%E5%B4%8E%E5%B8%82%E5%85%83%E7%B4%BA%E5%B1%8B%E7%94%BA%EF%BC%92%EF%BC%91",
+    "type": "その他",
+    "d1": "",
+    "d2": ""
+  },
+  "urlKind": "mapsApi",
+  "route": "第1段(verify-gbp.mjs)で確認済み",
+  "verdict": "一致",
+  "verdictReason": "手がかり: 店名＋電話＋住所(番地まで)。電話が一致／店名: exact(シート「善念寺」/ マップ「善念寺」)／住所(シート): exact・町名・番地とも一致",
+  "place": {
+    "name": "善念寺",
+    "address": "群馬県高崎市元紺屋町２１",
+    "category": "仏教寺院",
+    "lat": 36.3272865,
+    "lng": 139.0076209,
+    "gbpUrl": "https://maps.google.com/?cid=17541373714946759682",
+    "phone": "027-324-5527",
+    "website": null,
+    "hours": null,
+    "reserveLinks": [],
+    "statusSignals": [],
+    "closedSignal": false
+  },
+  "fetchedAt": "2026-11-14T04:06:13.312Z"
+}
