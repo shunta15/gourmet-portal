@@ -1,0 +1,32 @@
+{
+  "tab": "トリニティアポ",
+  "tabEn": "tri-life",
+  "row": 581,
+  "sheet": {
+    "name": "聖王寺",
+    "address": "",
+    "url": "https://www.google.com/maps/search/?api=1&query=%E8%81%96%E7%8E%8B%E5%AF%BA%20027-637-0633%20%E3%80%92373-0052%20%E7%BE%A4%E9%A6%AC%E7%9C%8C%E5%A4%AA%E7%94%B0%E5%B8%82%E5%AF%BA%E4%BA%95%E7%94%BA%EF%BC%96%EF%BC%99%EF%BC%93",
+    "type": "寺",
+    "d1": "",
+    "d2": ""
+  },
+  "urlKind": "mapsApi",
+  "route": "第1段(verify-gbp.mjs)で確認済み",
+  "verdict": "一致",
+  "verdictReason": "手がかり: 店名＋電話＋住所(番地まで)。電話が一致／店名: exact(シート「聖王寺」/ マップ「聖王寺」)／住所(シート): exact・町名・番地とも一致",
+  "place": {
+    "name": "聖王寺",
+    "address": "群馬県太田市寺井町６９３",
+    "category": "仏教寺院",
+    "lat": 36.3291056,
+    "lng": 139.3371943,
+    "gbpUrl": "https://maps.google.com/?cid=13416528661733204742",
+    "phone": "0276-37-0633",
+    "website": "https://shououji.jp/",
+    "hours": null,
+    "reserveLinks": [],
+    "statusSignals": [],
+    "closedSignal": false
+  },
+  "fetchedAt": "2026-11-14T11:00:44.744Z"
+}

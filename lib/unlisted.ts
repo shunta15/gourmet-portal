@@ -397,7 +397,8 @@ export const UNLISTED_PLACE_IDS: Readonly<Record<string, readonly string[]>> = {
     "li0245",
     "li0246",
     "li0247",
-    "li0248"
+    "li0248",
+    "li0249"
   ]
 };
 

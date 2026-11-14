@@ -1,0 +1,19 @@
+{
+  "commit": "c882eeadf6d7b493edcba19ef8235cd0682c6938",
+  "source": "/Users/shunta/claude/gp-k-auto2",
+  "count": 1,
+  "added": [
+    {
+      "row": 581,
+      "name": "聖王寺",
+      "key": "tri-life-581",
+      "vertical": "くらし",
+      "id": "li0249",
+      "articleId": "li0249",
+      "shopUrl": "https://machinowa.tokyo/life/shop/li0249",
+      "articleUrl": "https://machinowa.tokyo/life/article/li0249",
+      "sheetUrl": "https://machinowa.tokyo/life/article/li0249"
+    }
+  ],
+  "skipped": []
+}
